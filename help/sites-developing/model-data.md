@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
-David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. David is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Opslagplaats van de Inhoud van Java™ (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
+David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. David is nu een man en vicevoorzitter van Enterprise Technology in Adobe en leidt ook de ontwikkeling van JSR-170, de Java™ Content Repository (JCR) application programming interface (API), de technologiestandaard voor contentbeheer.
 
 De verdere updates kunnen ook op [ https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel ](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel) worden gezien.
 
@@ -73,8 +73,6 @@ Persoonlijk, verkies ik hiërarchische overeenkomsten over het knoop die systeem
 >[!CAUTION]
 >
 >De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1&#39;000 moeten overschrijden.
->
->Zie [ hoeveel gegevens CRX behandelen?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Voorbeeld {#example-2}
 
@@ -175,7 +173,7 @@ Ik denk dat er gevallen zijn waarin een systeem echt niet werkt als een verwijzi
 
 Als een inhoudsmodel iets blootstelt dat zelfs ver als een dossier of een omslag ruikt, probeer ik te gebruiken (of zich uit) `nt:file`, `nt:folder`, en `nt:resource` uit te breiden.
 
-In mijn ervaring, staan vele generische toepassingen interactie met nt:omslag en niet:dossiers impliciet toe en weten hoe te om die gebeurtenissen te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Bijvoorbeeld, wordt een directe interactie met de implementaties van de dossierserver zoals CIF of WebDAV die bovenop JCR zitten impliciet.
+In mijn ervaring, staan vele generische toepassingen interactie met nt:omslag en niet:dossiers impliciet toe en weten hoe te om die gebeurtenissen te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Bijvoorbeeld, wordt een directe interactie met de implementaties van de dossierserver zoals CIFS of WebDAV die bovenop JCR zitten impliciet.
 
 Ik denk dat als goede duimregel het volgende kan worden gebruikt: als u de bestandsnaam en het mime-type moet opslaan, is `nt:file`/ `nt:resource` een goede overeenkomst. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
 

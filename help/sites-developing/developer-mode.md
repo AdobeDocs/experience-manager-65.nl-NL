@@ -10,7 +10,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -56,8 +56,8 @@ Deze hulp een ontwikkelaar om:
 >
 >Zie het volgende:
 >
->* Het artikel van de Kennisbank, [ het Oplossen van problemen AEM kwesties TouchUI ](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
->* AEM Gems zitting over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=nl-NL).
+>* Het artikel van de Kennisbank, [ de kwesties van AEM TouchUI van het Oplossen van problemen ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
+>* De zitting van AEM Gems over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Ontwerpmodus openen {#opening-developer-mode}
@@ -83,7 +83,7 @@ Dit toont een componentenboom die:
 * Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails, zoals:
 
    * Pad naar opslagplaats
-   * Koppelingen naar scripts (geopend in CRXDE Lite)
+   * Koppelingen naar scripts (toegankelijk in CRXDE Lite)
 
 * Geselecteerde componenten (in de inhoudsstroom, aangegeven door een blauwe rand) worden gemarkeerd in de inhoudsstructuur (en omgekeerd).
 
@@ -106,7 +106,7 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
 * **geef Manuscript** uit: een verbinding die:
 
-   * Hiermee wordt het componentscript in CRXDE Lite geopend.
+   * Hiermee opent u het componentscript in CRXDE Lite.
 
 * Door een componentitem uit te vouwen (pijlkop) kunt u ook het volgende weergeven:
 
@@ -125,7 +125,7 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
 Hopelijk zal het **lusje van Fouten** altijd leeg zijn (zoals hierboven), maar wanneer de problemen voorkomen worden de volgende details getoond voor elke component:
 
-* Een waarschuwing als de component een ingang aan het foutenlogboek, samen met details van de fout en directe verbindingen aan de aangewezen code binnen CRXDE Lite schrijft.
+* Een waarschuwing als de component een vermelding naar het foutenlogboek schrijft, samen met details van de fout en directe verbindingen aan de aangewezen code binnen CRXDE Lite.
 * Een waarschuwing als de component een beheersessie opent.
 
 Bijvoorbeeld, in een situatie waar een ongedefinieerde methode wordt geroepen, wordt de resulterende fout getoond in het **lusje van Fouten**:

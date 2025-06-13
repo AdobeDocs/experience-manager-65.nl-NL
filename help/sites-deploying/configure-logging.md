@@ -9,16 +9,16 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 # Logboekregistratie{#logging}
 
-AEM biedt u de mogelijkheid om te vormen:
+AEM biedt u de mogelijkheid om:
 
 * globale parameters voor de centrale houtkapdienst
 * verzoek gegevensregistreren; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
@@ -32,7 +32,7 @@ Dit zijn alle [ configuraties OSGi ](/help/sites-deploying/configuring-osgi.md).
 
 ## Globale logboekregistratie {#global-logging}
 
-[ Apache Sling Logging Configuratie ](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het wortelregistreerapparaat te vormen. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
+[ Apache Sling Logging Configuratie ](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het wortelregistreerapparaat te vormen. Hiermee worden de algemene instellingen voor aanmelding bij AEM gedefinieerd:
 
 * het registratieniveau
 * de locatie van het centrale logbestand
@@ -40,13 +40,9 @@ Dit zijn alle [ configuraties OSGi ](/help/sites-deploying/configuring-osgi.md).
 * versieomwenteling; of maximumgrootte of een tijdinterval
 * de indeling die moet worden gebruikt bij het schrijven van de logberichten
 
->[!NOTE]
->
->Dit [ artikel van de Kennisbank ](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) verklaart hoe te om de request.log en access.log dossiers te roteren.
-
 ## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
-Naast de globale registrerenmontages, AEM kunt u specifieke montages voor de individuele dienst vormen:
+Naast de globale registrerenmontages, laat AEM u specifieke montages voor de individuele dienst vormen:
 
 * het specifieke registratieniveau
 * de locatie van het individuele logbestand
@@ -83,7 +79,7 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
-Bepaalde loggers en schrijvers zijn opgenomen in een standaard AEM installatie.
+Bepaalde Loggers en Schrijvers zijn inbegrepen in een standaardinstallatie van AEM.
 
 Het eerste is een speciaal geval omdat het zowel de `request.log` als `access.log` bestanden bestuurt:
 

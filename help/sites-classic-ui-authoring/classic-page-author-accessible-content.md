@@ -10,9 +10,9 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Omdat de klassieke gebruikersinterface in AEM 6.4 is vervangen, is de inhoud op deze pagina niet bijgewerkt voor WCAG 2.1.
+>Omdat de klassieke gebruikersinterface is afgekeurd in AEM 6.4, is de inhoud op deze pagina niet bijgewerkt voor WCAG 2.1.
 >
 >Raadpleeg de volgende pagina&#39;s voor meer informatie over AEM en WCAG 2.1:
 >
@@ -83,13 +83,13 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0&rbrace; Alt &lbrace;:**
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0} Alt {:**
 
 >[!NOTE]
 >
->Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer het uitvoeren van versies van deze componenten voor uw AEM instantie, zou uw ontwikkelingsteam dergelijke componenten moeten vormen om het `alt` attribuut te steunen. Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
+>Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer u versies van deze componenten voor uw AEM-instantie implementeert, moet uw ontwikkelingsteam dergelijke componenten configureren ter ondersteuning van het attribuut `alt` . Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
 
-Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
+Het **gebied van de Tekst van 0} Alt {is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
 
 ![ geeft dialoog van de component van het Beeld in klassieke UI uit; toont het gebied van de Tekst van Alt.](assets/chlimage_1-17a.png)
 
@@ -97,15 +97,15 @@ AEM voegt een **Tekst van Alt** aan uw beelden door gebrek toe. Voor klassieke U
 
 * Bestand:
 
-  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **&#x200B;**&#x200B;gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
+  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **** gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
 
 * Element:
 
-  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3&rbrace; waarden van de Tekst van Alt &lbrace;voor dat beeld genomen van de meta-gegevens voor dat beeld.**
+  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3} waarden van de Tekst van Alt {voor dat beeld genomen van de meta-gegevens voor dat beeld.**
 
 >[!NOTE]
 >
->In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0&rbrace; Alt &lbrace;niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
+>In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0} Alt {niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het 
 * Als de niet-tekstuele inhoud zich in een knopelement bevindt en er geen tekst bestaat die deel uitmaakt van dezelfde knop, moet de alternatieve tekst van de afbeelding de functionaliteit van de knop aangeven en de afbeelding niet beschrijven.
 * Het is acceptabel dat aan een afbeelding lege (null) alternatieve tekst wordt gegeven, maar alleen als de afbeelding geen alternatieve tekst heeft. Het is bijvoorbeeld een zuiver decoratieve afbeelding. Of als de equivalente tekst al in de paginatekst staat.
 
-Het [ WW3C- ontwerp: HTML5 Technieken voor het verstrekken van nuttige tekstalternatieven ](https://html.spec.whatwg.org/multipage/images.html#alt) heeft meer details en voorbeelden van aangewezen alternatieve tekstvoorziening voor beelden van verschillende types.
+Het [ WW3C- ontwerp: De Technieken van HTML5 om nuttige tekstopties ](https://html.spec.whatwg.org/multipage/images.html#alt) te verstrekken heeft meer details en voorbeelden van aangewezen alternatieve tekstvoorziening voor beelden van verschillende types.
 
 Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn onder meer:
 
@@ -140,7 +140,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Grafieken en grafieken:
 
-  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1&rbrace; gebied van de Beschrijving &lbrace;op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
+  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1} gebied van de Beschrijving {op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
 
   ![ Voorbeeld van een grafiek. Hieronder is de beste benadering om een alternatief te verstrekken.](assets/chlimage_1-2a.jpeg)
 
@@ -156,11 +156,11 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
   >
   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **component van het Beeld**, eerder dan de `img src` hierboven gebruikte verwijzing.
 
-  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3&rbrace; gebieden van de Beschrijving in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
+  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3} gebieden van de Beschrijving {in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
-  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3&rbrace; gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
+  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3} gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
 
 * CAPTCHA&#39;s:
 
@@ -174,7 +174,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Achtergrondafbeeldingen:
 
-  Deze afbeeldingen worden bereikt met CSS (Cascading Style Sheets) in plaats van met HTML. Het is niet mogelijk om een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld.
+  Deze afbeeldingen worden gemaakt met CSS (Cascading Style Sheets) in plaats van met HTML. Het is niet mogelijk om een alternatieve tekstwaarde op te geven. Achtergrondafbeeldingen mogen daarom geen belangrijke tekstgegevens opleveren. Als dat het geval is, moet deze informatie ook in de paginatekst worden vermeld.
 
   Het is echter belangrijk dat een andere achtergrond wordt weergegeven wanneer de afbeelding niet kan worden weergegeven.
 
@@ -186,7 +186,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * [ Begrijpend Criteria 1.1.1 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [ hoe te om Criteria 1.1.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
-* [ W3C: HTML5 Technieken voor het verstrekken van nuttige tekstalternatieven ](https://html.spec.whatwg.org/multipage/images.html#alt)
+* [ W3C: Technieken HTML5 om nuttige tekstopties te verstrekken ](https://html.spec.whatwg.org/multipage/images.html#alt)
 * [ W3C verklaring van en alternatieven aan CAPTCHAs ](https://www.w3.org/TR/turingtest/)
 
 ### Op tijd gebaseerde media (1.2) {#time-based-media}
@@ -212,7 +212,7 @@ Toegankelijkheidsproblemen voor video en audio kunnen worden ondervonden door:
 * personen met een slechthorende werking of doof zijn, die de soundtrack niet kunnen horen;
 * Mensen die de soundtrack kunnen horen, maar niet begrijpen wat er wordt gesproken (bijvoorbeeld omdat het in een taal staat die ze niet begrijpen).
 
-Video of audio is mogelijk ook niet beschikbaar voor gebruikers die browsers gebruiken of apparaten die het afspelen van inhoud in specifieke media-indelingen, zoals Adobe Flash, niet ondersteunen.
+Video of audio is mogelijk ook niet beschikbaar voor mensen die browsers gebruiken of apparaten die het afspelen van inhoud in specifieke media-indelingen, zoals Adobe Flash, niet ondersteunen.
 
 Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio voor video zonder audio), kunt u deze toegankelijk maken voor mensen die geen toegang hebben tot de oorspronkelijke inhoud.
 
@@ -233,7 +233,7 @@ Als u deze informatie in een andere indeling verstrekt, zoals tekst (of audio vo
 >
 >Als de audio- of video-inhoud wordt aangeboden als alternatief voor inhoud die in een andere indeling op een webpagina bestaat, hoeven de bovenstaande vereisten niet te worden nageleefd. Als een video bijvoorbeeld een lijst met tekstinstructies illustreert, vereist deze video geen alternatief omdat de tekstinstructies al als alternatief voor de video fungeren.
 
-Het invoegen van multimedia, met name inhoud van Flash, in uw AEM webpagina&#39;s lijkt op het invoegen van een afbeelding. Aangezien multimedia-inhoud echter veel meer is dan een stilstaand beeld, zijn er verschillende instellingen en opties om te bepalen hoe multimedia wordt afgespeeld.
+Het invoegen van multimedia, met name Flash-inhoud, in uw AEM-webpagina&#39;s lijkt op het invoegen van een afbeelding. Aangezien multimedia-inhoud echter veel meer is dan een stilstaand beeld, zijn er verschillende instellingen en opties om te bepalen hoe multimedia wordt afgespeeld.
 
 >[!NOTE]
 >
@@ -306,13 +306,13 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
 
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. In voorkomend geval moet daarin worden vermeld wie het woord voert, een beschrijving van de instelling, mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, moet u een koppeling naar de transcriptie naast de video of animatie opgeven.
 
-Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere producten van de Adobe kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>` .
+Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste plug-in te downloaden en een alternatief tekstveld te bieden via het element `<noscript>` .
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
 * [ Begrip Criteria 1.2.3 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [ hoe te om Criteria 1.2.3 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [ Adobe Encore CS5 ](https://helpx.adobe.com/nl/premiere-pro/using/whats-new.html)
+* [ Encore CS5 van Adobe ](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Bijschriften (live) (1.2.4)  {#captions-live}
 
@@ -328,10 +328,9 @@ Dit succescriterium is identiek aan [ (pre-Opgenomen) Bijschriften ](#captions-p
 
 Volg de begeleiding die voor [ wordt verstrekt (pre-Opgenomen) ](#captions-pre-recorded) hierboven. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
 
-Gedetailleerde instructies vallen buiten het bereik van dit document, maar de volgende bronnen bieden nuttige informatie:
+De gedetailleerde instructies zijn voorbij het werkingsgebied van dit document, maar het volgende middel verstrekt nuttige informatie:
 
 * [ WebAIM: Echt - tijd het Behouden ](https://webaim.org/techniques/captions/realtime)
-* [ AccessIT (Universiteit van Washington): Kunnen de titels automatisch worden geproduceerd gebruikend toespraakerkenning?](https://www.washington.edu/doit/programs/accessit?1209)
 
 #### Meer informatie - Bijschriften (live) (1.2.4) {#more-information-captions-live}
 
@@ -377,11 +376,11 @@ Dit richtsnoer heeft betrekking op de vereisten die nodig zijn ter ondersteuning
 
 Veel ondersteunende hulpmiddelen die door mensen met een handicap worden gebruikt, vertrouwen op structurele informatie om inhoud effectief weer te geven of uit te voeren. Deze structuurinformatie kan de vorm hebben van paginakoppen, tabelrij- en kolomkoppen en lijsttypen. Een schermlezer kan een gebruiker bijvoorbeeld in staat stellen van kop naar kop door een pagina te navigeren. Wanneer pagina-inhoud echter alleen via visuele opmaak lijkt te zijn gestructureerd in plaats van via de onderliggende HTML, is er geen structurele informatie beschikbaar voor ondersteunende hulpmiddelen, waardoor deze minder geschikt zijn om eenvoudiger te kunnen bladeren.
 
-Dit succescriterium bestaat erin ervoor te zorgen dat dergelijke structurele informatie via HTML wordt verstrekt, zodat browsers en ondersteunende hulpmiddelen toegang hebben tot de informatie en deze kunnen benutten.
+Dit succescriterium bestaat erin ervoor te zorgen dat dergelijke structurele informatie via HTML wordt verstrekt, zodat browsers en ondersteunende hulpmiddelen toegang kunnen krijgen tot de informatie en deze kunnen benutten.
 
 #### Hoe te om te ontmoeten - Informatie en Verband (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM maakt het eenvoudig om webpagina&#39;s samen te stellen met de juiste HTML-elementen. Open uw paginainhoud in RTE (een component van de Tekst), en gebruik het **menu van het Formaat** om het aangewezen structurele element (bijvoorbeeld, paragraaf, en rubriek) te specificeren.
+AEM maakt het eenvoudig om webpagina&#39;s samen te stellen met behulp van de juiste HTML-elementen. Open uw paginainhoud in RTE (een component van de Tekst), en gebruik het **menu van het Formaat** om het aangewezen structurele element (bijvoorbeeld, paragraaf, en rubriek) te specificeren.
 
 In de volgende afbeelding ziet u tekst die is opgemaakt als alineatekst. In de broncodeweergave die wordt gebruikt, wordt aangegeven dat de tekst de juiste openings- en sluitingstags &lt;p> en &lt;/p> heeft.
 
@@ -391,7 +390,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **Gebruikend rubrieken:**
 
-  Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [ AEM en Toegankelijkheid ](/help/sites-administering/rte-accessible-content.md)), AEM biedt drie niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
+  Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [ AEM en Toegankelijkheid ](/help/sites-administering/rte-accessible-content.md)), biedt AEM drie niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
 
   In de volgende afbeelding ziet u een voorbeeld van de verschillende typen koppen.
 
@@ -406,7 +405,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  >RTE in een standaard AEM installatie is opstelling aan gebruik:
+  >RTE in een standaard installatie van AEM is opstelling aan gebruik:
   >
   >* &lt;b> for &lt;strong>
   >* &lt;i> voor &lt;em>
@@ -431,7 +430,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **de lijsten van het Gebruik**:
 
-  Gegevenstabellen moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
+  Tabellen met gegevens moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
 
    * element one `<table>`
    * a `<tr>` -element voor elke rij van de tabel
@@ -450,7 +449,7 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de dialoogvakje van de Eigenschappen van de Lijst toe te voegen** (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de eigenschappen van de Lijst** dialoogvakje toe te voegen (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   Wanneer het toevoegen van a **Lijst**, kunt u **eigenschappen van de Lijst** vormen gebruikend de dialoog.
 
@@ -657,7 +656,7 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, geef d
 
 #### Doel - Afbeeldingen van tekst (1.4.5) {#purpose-images-of-text}
 
-Afbeeldingen van tekst worden vaak gebruikt wanneer de voorkeur wordt gegeven aan een bepaalde tekststijl, bijvoorbeeld een logo of tekst die is gegenereerd vanuit een andere bron (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken tekstafbeeldingen echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
+Afbeeldingen van tekst worden vaak gebruikt wanneer de voorkeur wordt gegeven aan een bepaalde tekststijl, bijvoorbeeld een logo of tekst die is gegenereerd vanuit een andere bron (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst die in HTML wordt weergegeven en die is opgemaakt met CSS, beschikken afbeeldingen van tekst echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
 
 #### Procedure - Afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
 
@@ -705,7 +704,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 * Biedt een manier om schuivende inhoud te pauzeren zodat gebruikers voldoende tijd hebben om deze te lezen. Bijvoorbeeld nieuwstickers of automatisch bijgewerkte tekst.
 * Zorg ervoor dat de inhoud die knippert na vijf seconden stopt met knipperen.
-* Gebruik de juiste technologieën om knipperende inhoud weer te geven die door de browser kan worden uitgeschakeld. Bijvoorbeeld Graphics Interchange Format (GIF) of Geanimeerde Portable Network Graphics (APNG)-bestanden.
+* Gebruik de juiste technologieën om knipperende inhoud weer te geven die door de browser kan worden uitgeschakeld. Bijvoorbeeld Graphics Interchange Format (GIF)- of APNG-bestanden (Animated Portable Network Graphics).
 * Geef een formulierbesturingselement op de webpagina zodat de gebruiker alle knipperende inhoud op de pagina kan uitschakelen.
 * Als een van de bovenstaande opties niet mogelijk is, geeft u een koppeling op naar een pagina die alle inhoud bevat, maar zonder knippering.
 
@@ -718,28 +717,28 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 [ Richtsnoer 2.3 Convulsies: Ontwerp geen inhoud op een manier die gekend om convulsies te veroorzaken.](https://www.w3.org/TR/WCAG20/#seizure)
 
-### Drie Flash of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
+### Drie instanties of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
 
 * Succescriterium 2.3.1
 * Niveau A
-* Drie Flash of onder Drempel: de Web-pagina&#39;s bevatten niets die meer dan drie keer in om het even welke één-tweede periode knippert, of de flits is onder de algemene flits en rode flitsdrempels.
+* Drie instanties van Flash of onder de drempelwaarde: webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flitser is lager dan de algemene flash- en rode flitsdrempels.
 
 >[!NOTE]
 >
 >Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [ Vereiste van de Conformiteit 5: Niet-interferentie ](https://www.w3.org/TR/WCAG20/#cc5).
 
-#### Doel - Drie Flash of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
+#### Doel - Drie instanties of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
 In bepaalde gevallen kan knipperende inhoud fotosensitieve aanvallen veroorzaken. Aan de hand van dit succescriterium kunnen dergelijke gebruikers toegang krijgen tot alle inhoud en deze beleven zonder zich zorgen te maken over knipperende inhoud.
 
-#### Hoe te om te ontmoeten - Drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### Hoe te om te ontmoeten - Drie Vlamjes of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toegepast:
 
 * ervoor zorgen dat de onderdelen gedurende een periode van één seconde niet meer dan drie keer knipperen;
 * Als de bovengenoemde voorwaarde niet kan worden voldaan aan, dan vertoning het opvlammen inhoud binnen a *klein veilig gebied* in pixel op het scherm. Dit gebied wordt berekend gebruikend een complexe formule, die in [ G176 wordt behandeld: Het houden van het opvlammende gebied klein genoeg ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), zodat zou deze techniek slechts moeten worden gevolgd als het opvlammen inhoud noodzakelijk is.
 
-#### Meer informatie - drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
+#### Meer informatie - Drie instanties of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [ Begrijpend criterium van het Succes 2.3.1 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
 * [ hoe te om Criterium 2.3.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
@@ -756,9 +755,9 @@ Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud 
 
 #### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
 
-Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel de inhoud van de pagina correct beschrijft, zodat bezoekers snel kunnen zien of de inhoud relevant is voor hun behoeften.
+Wanneer in AEM een nieuwe HTML-pagina wordt gemaakt, kunt u de paginatitel opgeven. Zorg ervoor dat de titel de inhoud van de pagina correct beschrijft, zodat bezoekers snel kunnen zien of de inhoud relevant is voor hun behoeften.
 
-U kunt de paginatitel ook uitgeven wanneer het uitgeven van een pagina, die door **Sidekick** toegankelijk is - **Pagina** tabel - **Eigenschappen van de Pagina..**
+U kunt de paginatitel ook uitgeven wanneer het uitgeven van een pagina, die door **Sidekick** - **pagina** tabel - **Eigenschappen van de Pagina...** toegankelijk is.
 
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
@@ -814,7 +813,7 @@ John Smith's publications
 >
 >Het bovengenoemde fragment is een illustratie, wordt het geadviseerd om de **component van het Beeld** te gebruiken.
 
-Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. De vrij verbindingen van de context kunnen in de volgende gevallen worden gebruikt, waarvan de voorbeelden van HTML in [ worden gevonden hoe te om het Criterium 2.4.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
+Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. De vrije verbindingen van de context kunnen in de volgende gevallen worden gebruikt, waarvan de voorbeelden van HTML in [ kunnen worden gevonden hoe te om het Criterium 2.4.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
 * Waar de koppelingstekst deel uitmaakt van een lijst met nauw verwante koppelingen en wanneer het lijstitem dat de koppeling omsluit voldoende context biedt.
 * Waar het doel van een verbinding duidelijk van de *voorafgaande* (niet het volgende) paragraaftekst kan worden geïdentificeerd.
@@ -910,7 +909,7 @@ Op dezelfde manier kan de browser een ongewoon woord of ongebruikelijke woordgro
 >
 >Het is niet noodzakelijk om dit succescriterium te volgen wanneer het omvatten van namen of steden in verschillende talen, of wanneer het gebruiken van leningswoorden of uitdrukkingen die algemeen in de standaardtaal (zoals *schadenfreude* in het Engels) zijn geworden.
 
-Om het spanwijdtelement, met een aangewezen taal toe te voegen, kunt u uw prijsverhoging van de HTML op de bron uitgeven wijze van RTE zodat het zoals hierboven leest. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Meer informatie - Taal van onderdelen (3.1.2) {#more-information-language-of-parts}
 
@@ -951,7 +950,7 @@ Waar er een groep verwante controles, zoals **Groep van de Radio** is, kan een t
 
 ![ Toevoegend punten aan de radiagroep. De groepstitel is &#39;Contact me door&#39; - bepaald op het gebied van de Titel.](assets/chlimage_1-24a.png)
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset` - en `legend` -tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in de **dialoog van de Eigenschappen van het Gebied** verschijnen (zie [ Toevoegend Steun voor Extra Elementen en Attributen van de HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset` - en `legend` -tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in de **dialoog van de Eigenschappen van het Gebied** verschijnen (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 

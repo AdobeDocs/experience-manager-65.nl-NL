@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '3651'
+source-wordcount: '3630'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,10 @@ Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machi
 | **Platform** | **Niveau van de Steun** | **Verbinding** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | Z: Niet ondersteund `[1]` |
-| Oracle Java™ SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java™ SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java™ SE 10 JDK | Z: Niet ondersteund `[1]` |
 | Oracle Java™ SE 9 JDK | Z: Niet ondersteund `[1]` |
-| Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | IBM® J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |
 | IBM® J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |
 | Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` | |
@@ -244,7 +244,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -254,7 +254,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -466,11 +466,11 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -518,7 +518,7 @@ Voor Windows x86:
 >
 >Daarnaast
 >
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
@@ -526,7 +526,7 @@ Voor Windows x86:
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
@@ -554,7 +554,7 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
 
 * **Werkende Systemen:**
 
-   * Linux® (32-bits en 32-bits toepassingsondersteuning op 64-bits systemen). Voor stappen om cliëntbibliotheken met 32 bits te installeren, zie [ hoe te de extractie van XMP en schrijven-terug op Rode Hoed® Linux® met 64 bits ](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) toelaten.
+   * Linux® (32-bits en 32-bits toepassingsondersteuning op 64-bits systemen).
 
    * Windows Server
    * macOS X (64-bits)

@@ -10,9 +10,9 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4828'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Wanneer u begint om nieuwe componenten te ontwikkelen, moet u de grondbeginselen van hun structuur en configuratie begrijpen.
 
-Dit proces omvat het lezen van de theorie en het bekijken van de brede waaier van componentenimplementaties in een standaard AEM instantie. Deze laatste benadering wordt enigszins gecompliceerd door het feit dat hoewel AEM is verschoven naar een nieuwe standaard, moderne, aanraakinterface, deze de klassieke UI blijft ondersteunen.
+Dit proces omvat het lezen van de theorie en het bekijken van het brede scala aan componentimplementaties in een standaard AEM-instantie. Deze laatste aanpak wordt enigszins gecompliceerd door het feit dat, hoewel AEM is verschoven naar een nieuwe standaard, moderne, aanraakinterface, deze de klassieke gebruikersinterface blijft ondersteunen.
 
 ## Overzicht {#overview}
 
@@ -35,7 +35,7 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
    * Een duidelijke specificatie helpt in alle stadia van ontwikkeling, het testen, en overdracht. De details kunnen in tijd veranderen, maar de specificatie kan worden bijgewerkt (hoewel de veranderingen ook zouden moeten worden gedocumenteerd).
 * Moet u een geheel nieuwe component maken of kunt u de basisbeginselen overnemen van een bestaande component?
    * Het is niet nodig het wiel opnieuw uit te vinden.
-   * Er zijn verscheidene mechanismen die door AEM worden verstrekt dat u gegevens van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel ](/help/sites-developing/sling-resource-merger.md) laat erven en uitbreiden.
+   * Er zijn verscheidene mechanismen die door AEM worden verstrekt die u toestaan en details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel 1} erven uitbreiden.](/help/sites-developing/sling-resource-merger.md)
 * Heeft uw component logica nodig voor het selecteren of bewerken van de inhoud?
    * De logica moet gescheiden worden gehouden van de gebruikersinterfacelaag. HTL is ontworpen om ervoor te zorgen dat dit gebeurt.
 * Heeft uw component CSS-opmaak nodig?
@@ -52,7 +52,7 @@ Voordat een serieuze discussie begint over het ontwikkelen van componenten, moet
 * **Klassieke UI**
 Gebruikersinterface gebaseerd op ExtJS-technologie die is vervangen door AEM 6.4.
 
-Zie [ Interface Recommendations UI voor Klanten ](/help/sites-deploying/ui-recommendations.md) voor meer details.
+Zie {de Aanbevelingen van de Interface 0} UI voor Klanten ](/help/sites-deploying/ui-recommendations.md) voor meer details.[
 
 Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface met aanraakbediening, de klassieke interface of beide. Wanneer het bekijken van een standaardinstantie zult u ook uit-van-de-dooscomponenten zien die oorspronkelijk voor klassieke UI, of aanraking-toegelaten UI, of allebei werden ontworpen.
 
@@ -60,21 +60,21 @@ De grondbeginselen van beide zijn op deze pagina besproken, en hoe te om hen te 
 
 >[!NOTE]
 >
->Adobe raadt aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [ AEM Moderniseringshulpmiddelen ](modernization-tools.md) kan een migratie gemakkelijker maken.
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [ de Moderniseringshulpmiddelen van AEM ](modernization-tools.md) kunnen een migratie gemakkelijker maken.
 
 ### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
 Adobe raadt aan de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt gesteund door [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL), een het malplaatjetaal die opzettelijk wordt beperkt om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt gesteund door [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), een het malplaatjetaal die opzettelijk wordt beperkt om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme benadrukt de code die voor een bepaalde mening wordt geroepen en, indien nodig, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTL is een HTML sjabloontaal die is geïntroduceerd met AEM 6.0.
+HTML is een HTML-sjabloontaal die is geïntroduceerd met AEM 6.0.
 
-De bespreking van of om [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) of JSP (de Pagina&#39;s van de Server Java™) te gebruiken wanneer het ontwikkelen van uw eigen componenten zou ongecompliceerd moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
+De bespreking van of om [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) of JSP (de Pagina&#39;s van de Server Java™) te gebruiken wanneer het ontwikkelen van uw eigen componenten duidelijk zou moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
 
-Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn in AEM opgenomen over ongeveer dezelfde periode. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
+Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn in ongeveer dezelfde periode in AEM opgenomen. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
 
 >[!NOTE]
 >
@@ -84,20 +84,20 @@ Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten v
 
 Zie (na het lezen van deze pagina) voor het maken van uw eigen componenten voor de juiste interface:
 
-* [Componenten AEM voor de interface met aanraakbediening](/help/sites-developing/developing-components.md)
-* [Componenten AEM voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md)
+* [AEM-componenten voor de interface met aanraakbediening](/help/sites-developing/developing-components.md)
+* [AEM-componenten voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md)
 
 U kunt snel aan de slag door een bestaande component te kopiëren en vervolgens de gewenste wijzigingen aan te brengen. Zie voor meer informatie over het maken van uw eigen componenten en het toevoegen van deze componenten aan het alineasysteem:
 
 * [ het Ontwikkelen Componenten ](/help/sites-developing/developing-components-samples.md) (die op aanraking-toegelaten UI worden geconcentreerd)
 
-### Componenten verplaatsen naar de Publish-instantie {#moving-components-to-the-publish-instance}
+### Componenten verplaatsen naar de instantie Publiceren {#moving-components-to-the-publish-instance}
 
-De componenten die inhoud teruggeven moeten op de zelfde AEM instantie worden opgesteld zoals de inhoud. Daarom moeten alle componenten die voor creatie en het teruggeven van pagina&#39;s op de auteursinstantie worden gebruikt op worden opgesteld publiceert instantie. Bij implementatie zijn de componenten beschikbaar voor het renderen van geactiveerde pagina&#39;s.
+De componenten die inhoud renderen, moeten op dezelfde AEM-instantie als de inhoud worden geïmplementeerd. Daarom moeten alle componenten die voor creatie en het teruggeven van pagina&#39;s op de auteursinstantie worden gebruikt op worden opgesteld publiceert instantie. Bij implementatie zijn de componenten beschikbaar voor het renderen van geactiveerde pagina&#39;s.
 
 Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instantie te verplaatsen:
 
-* [ Manager van het Pakket van het Gebruik ](/help/sites-administering/package-manager.md) om uw componenten aan een pakket toe te voegen en hen te bewegen naar een andere AEM instantie.
+* [ Manager van het Pakket van het Gebruik ](/help/sites-administering/package-manager.md) om uw componenten aan een pakket toe te voegen en hen te bewegen naar een andere instantie van AEM.
 * [ Gebruik het Activate hulpmiddel van de Boomreplicatie ](/help/sites-authoring/publishing-pages.md#manage-publication) om de componenten te herhalen.
 
 >[!NOTE]
@@ -121,7 +121,7 @@ Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instanti
 
 ## Structuur {#structure}
 
-De structuur van een AEM is krachtig en flexibel, en de belangrijkste overwegingen zijn:
+De structuur van een AEM-component is krachtig en flexibel en de belangrijkste overwegingen zijn:
 
 * Resourcetype
 * Componentdefinitie
@@ -146,8 +146,8 @@ Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en he
 
 De definitie van een component kan als volgt worden uitgesplitst:
 
-* AEM componenten zijn gebaseerd op [ het Schuiven ](https://sling.apache.org/documentation.html).
-* AEM onderdelen bevinden zich (gewoonlijk) onder:
+* De componenten van AEM zijn gebaseerd op [ het Verdelen ](https://sling.apache.org/documentation.html).
+* AEM-componenten bevinden zich (gewoonlijk) onder:
 
    * HTML: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -156,7 +156,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `/apps/<myApp>/components`
 
-* AEM standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
+* AEM-standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
 
    * jcr-eigenschappen:
 
@@ -189,9 +189,9 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 * **Vital de Nodes van het Kind**:
 
-   * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en laat de component toe om in browser of de Sidekick van Componenten te verschijnen.
+   * `cq:editConfig (cq:EditConfig)` - Definieert de bewerkingseigenschappen van de component en stelt de component in staat om in de browser Components of Sidekick te worden weergegeven.
 
-     Opmerking: als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser of Sidekick Componenten, zelfs als cq:editConfig niet bestaat.
+     Opmerking: als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de Componentbrowser of Sidekick, zelfs als cq:editConfig niet bestaat.
 
    * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de gebruikersinterface-aspecten van de auteur voor onderliggende componenten die hun eigen `cq:editConfig` niet definiëren.
    * Interface voor aanraakbediening:
@@ -209,7 +209,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
 1. `cq:icon` - het bezit van het Koord dat aan een standaardpictogram in de [ Coral UI bibliotheek ](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) richt om in componentenbrowser te tonen
-   * Gebruik de waarde van het kenmerk HTML van het pictogram Koraal.
+   * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
    * De afkorting moet worden beperkt tot twee tekens.
    * Als u een lege tekenreeks opgeeft, wordt de afkorting opgebouwd van de eerste twee tekens van de eigenschap `jcr:title` .
@@ -314,7 +314,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Indien ingesteld, wordt deze eigenschap gebruikt als cel-id. Voor meer informatie, zie het artikel van de Kennisbank <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html"> hoe wordt gebouwde Identiteitskaart van de Cel van het Ontwerp </a>.<br /> </td>
+   <td>Indien geplaatst, wordt dit bezit genomen als identiteitskaart van de Cel.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -339,12 +339,12 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>cq:template</code></td>
    <td><code>nt:unstructured</code></td>
-   <td>Indien gevonden, wordt dit knooppunt gebruikt als een inhoudssjabloon wanneer de component vanuit de Componentbrowser of -Sidekick wordt toegevoegd.</td>
+   <td>Indien gevonden, wordt dit knooppunt gebruikt als een inhoudssjabloon wanneer de component vanuit de Componentbrowser of Sidekick wordt toegevoegd.</td>
   </tr>
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Pad naar een knooppunt dat als inhoudssjabloon moet worden gebruikt wanneer de component vanuit de browser of Sidekick van Componenten wordt toegevoegd. Dit moet een absoluut pad zijn, niet ten opzichte van het componentknooppunt.<br /> Tenzij u inhoud die al elders beschikbaar is, opnieuw wilt gebruiken, is dit niet vereist en is <code>cq:template</code> voldoende (zie hieronder).</td>
+   <td>Pad naar een knooppunt dat als inhoudssjabloon moet worden gebruikt wanneer de component vanuit de browser Components of Sidekick wordt toegevoegd. Dit moet een absoluut pad zijn, niet ten opzichte van het componentknooppunt.<br /> Tenzij u inhoud die al elders beschikbaar is, opnieuw wilt gebruiken, is dit niet vereist en is <code>cq:template</code> voldoende (zie hieronder).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -416,7 +416,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
    * `dialog` ( `cq:Dialog` ) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` ( `cq:Dialog` ) - geeft de opties voor het bewerken van ontwerpen voor deze component op
    * `icon.png` - afbeeldingsbestand dat moet worden gebruikt als pictogram voor de component in de Sidekick
-   * `thumbnail.png` - afbeeldingsbestand dat moet worden gebruikt als miniatuur voor de component terwijl deze uit de Sidekick wordt gesleept
+   * `thumbnail.png` - afbeeldingsbestand dat moet worden gebruikt als miniatuur voor de component terwijl het uit de Sidekick wordt gesleept
 
 ### Dialoogvensters {#dialogs}
 
@@ -429,7 +429,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
 >[!NOTE]
 >
 >* Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
->* De [ AEM Moderniseringshulpmiddelen ](/help/sites-developing/modernization-tools.md) worden ook verstrekt om u te helpen componenten uitbreiden/omzetten die slechts dialogen hebben die voor klassieke UI worden bepaald.
+>* De [ Hulpmiddelen van de Modernisering van AEM ](/help/sites-developing/modernization-tools.md) worden ook verstrekt om u uit te breiden/componenten om te zetten die slechts dialogen hebben die voor klassieke UI worden bepaald.
 >
 
 * Interface met aanraakbediening
@@ -481,7 +481,7 @@ Het ontwerpdialoog voor het paragraafsysteem (bijvoorbeeld, parsys) is een speci
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een alineasysteem, kunt u:
 
-1. Open [&#128279;](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0&rbrace; &lbrace;voor een pagina en laat de vereiste component toe.
+1. Open ](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0} {voor een pagina en laat de vereiste component toe.[
 1. Voeg de vereiste componenten onder aan de eigenschap `components` van uw sjabloondefinitie toe:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
@@ -521,7 +521,7 @@ De gedefinieerde eigenschappen zijn afhankelijk van de afzonderlijke definities.
 
 ## Componenthiërarchie en Overerving {#component-hierarchy-and-inheritance}
 
-Componenten binnen AEM zijn onderhevig aan drie verschillende hiërarchieën:
+Componenten in AEM zijn onderhevig aan drie verschillende hiërarchieën:
 
 * **Hiërarchie van het Type van Middel**
 
@@ -595,11 +595,11 @@ Het bewerkgedrag van een component wordt geconfigureerd door het toevoegen van e
 
 Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar specifieke eigenschappen of kindknopen zoeken:
 
-* Om een bezit van de `cq:editConfig` knoop, bijvoorbeeld, `cq:actions` te zoeken, kunt u het hulpmiddel van de Vraag in **CRXDE Lite** en onderzoek met het volgende XPath vraagkoord gebruiken:
+* Om een bezit van de `cq:editConfig` knoop, bijvoorbeeld, `cq:actions` te zoeken, kunt u het hulpmiddel van de Vraag in **CRXDE Lite** en onderzoek met het volgende de vraagkoord van XPath gebruiken:
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in **&#x200B; CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
+* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in** CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -623,7 +623,7 @@ Het standaard HTML-script dat de bovenstaande tijdelijke aanduiding HTML rendert
 
 In het vorige voorbeeld is `isEmpty` een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
 
-Om herhaling te vermijden, adviseert de Adobe dat de uitvoerders van componenten een malplaatje HTML voor deze placeholders gebruiken, [ als verstrekt door de Componenten van de Kern.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Om herhaling te vermijden, adviseert Adobe dat de uitvoerders van componenten een malplaatje HTML voor deze placeholders gebruiken, [ als die door de Componenten van de Kern wordt verstrekt.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de volgende lijn van HTML:
 
@@ -923,8 +923,8 @@ Het knooppunt `cq:inplaceEditing` (knooppunttype `cq:InplaceEditingConfig` ) def
    <td><code>editorType</code></td>
    <td><p>(<code>String</code>) Type editor. De beschikbare typen zijn:</p>
     <ul>
-     <li>plaintext: te gebruiken voor niet-HTML inhoud.<br /> </li>
-     <li>titel: is een verbeterde plaintext editor die grafische titels omzet in een gewone tekst voordat het bewerken begint. Gebruikt door de component van de Geometrixx titel.<br /> </li>
+     <li>plaintext: te gebruiken voor niet-HTML-inhoud.<br /> </li>
+     <li>titel: is een verbeterde plaintext editor die grafische titels omzet in een gewone tekst voordat het bewerken begint. Gebruikt door de titelcomponent van Geometrixx.<br /> </li>
      <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li>
     </ul> </td>
   </tr>

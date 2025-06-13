@@ -1,5 +1,5 @@
 ---
-title: Gebruikersinterface Recommendations voor klanten
+title: Aanbevelingen voor gebruikersinterface voor klanten
 description: Een lijst met aanbevelingen voor de klassieke en geoptimaliseerde gebruikersinterfaces.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# Gebruikersinterface Recommendations voor klanten{#user-interface-recommendations-for-customers}
+# Aanbevelingen voor gebruikersinterface voor klanten{#user-interface-recommendations-for-customers}
 
-Adobe Experience Manager wordt geleverd met twee UI&#39;s: de interface voor één Experience Cloud (ook wel de interface met aanraakbediening genoemd) en de klassieke UI.
+Adobe Experience Manager wordt geleverd met twee UI&#39;s: de Unified Experience Cloud UI (ook wel de interface met aanraakbediening genoemd) en de klassieke UI.
 
 Dit document is bedoeld om klanten te helpen een keuze te maken over welke interface ze moeten gebruiken, afhankelijk van hun situatie.
 
@@ -45,15 +45,15 @@ Mogelijkheid om informatie over de bezoeker samen te voegen en voor verschillend
 
 ## Algemeen {#general}
 
-In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. De gebruikers over de oplossingen van de Experience Cloud genieten een verenigbare ervaring met gemeenschappelijke patronen op hoe te om de toepassingen te gebruiken en in werking te stellen. Met elke versie, heeft de Adobe zijn gebruikersinterface verfijnd die op terugkoppelen van klanten wordt gebaseerd die over de diverse oplossingen werken.
+In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. Gebruikers in de Experience Cloud-oplossingen genieten van een consistente ervaring met gangbare patronen voor het gebruik en het gebruik van de toepassingen. Bij elke release heeft Adobe zijn gebruikersinterface verfijnd op basis van feedback van klanten die verschillende oplossingen gebruiken.
 
-De oorspronkelijke gebruikersinterface voor Adobe Experience Manager (voorheen CQ5 genoemd), die in 2008 werd geïntroduceerd en door klanten met versies 5.0-5.6.1 werd gebruikt, staat in AEM 6.5. Dit garandeert dat klanten een update naar versie 6.5 kunnen uitvoeren en kunnen profiteren van een bijgewerkt platform met nieuwe mogelijkheden en dezelfde gebruikersinterface kunnen blijven gebruiken.
+De oorspronkelijke gebruikersinterface voor Adobe Experience Manager (voorheen CQ5 genoemd), die in 2008 werd geïntroduceerd en door klanten met versies 5.0-5.6.1 werd gebruikt, is aanwezig in AEM 6.5. Dit garandeert dat klanten een update naar versie 6.5 kunnen uitvoeren en kunnen profiteren van een bijgewerkt platform met nieuwe mogelijkheden en dezelfde gebruikersinterface kunnen blijven gebruiken.
 
-Adobe raadt klanten aan om in 2018/2019 over te schakelen op de nieuwe interface. Dit kan of tijdens de update aan 6.5 - of in een afzonderlijke projecten na de update worden gedaan, die de noodzakelijke aanpassingen aan de aanpassingen en componentendialogen zou omvatten.
+Adobe raadt klanten aan om in 2018/2019 over te schakelen op de nieuwe gebruikersinterface. Dit kan of tijdens de update aan 6.5 - of in een afzonderlijke projecten na de update worden gedaan, die de noodzakelijke aanpassingen aan de aanpassingen en componentendialogen zou omvatten.
 
-De klassieke gebruikersinterface is vervangen door AEM 6.4 en de Adobe is niet van plan verdere verbeteringen aan te brengen in de klassieke gebruikersinterface. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd.
+De klassieke gebruikersinterface is vervangen door AEM 6.4 en Adobe is niet van plan om verdere verbeteringen aan te brengen in de klassieke gebruikersinterface. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd.
 
-### Regels en Recommendations {#rules-and-recommendations}
+### Regels en aanbevelingen {#rules-and-recommendations}
 
 Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Experience Manager 6.5:
 
@@ -61,7 +61,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
  <tbody>
   <tr>
    <th>Mijn project...</th>
-   <th>Recommendations</th>
+   <th>Aanbevelingen</th>
   </tr>
   <tr>
    <td>Adobe Experience Manager begint net te gebruiken.</td>
@@ -76,11 +76,11 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui"> Selecterend Uw UI </a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. De Adobe adviseert gebruikend <a href="/help/sites-developing/modernization-tools.md"> AEM ModerniseringsHulpmiddelen </a> om de componenten bij te werken.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe adviseert het gebruiken van <a href="/help/sites-developing/modernization-tools.md"> Hulpmiddelen van de Modernisering van AEM </a> om de componenten bij te werken.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Heeft een plaats gebouwd die de ClientContext met integratie gebruikt.<br /> </td>
+   <td>Heeft een plaats gebouwd die ClientContext met integratie gebruikt.<br /> </td>
    <td>
     <ol>
      <li>Bijwerken naar 6.5</li>
@@ -88,8 +88,8 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui"> Selecterend Uw UI </a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. De Adobe adviseert gebruikend <a href="/help/sites-developing/modernization-tools.md"> AEM ModerniseringsHulpmiddelen </a> om de componenten bij te werken.</li>
-     <li>Vorm ContextHub (de vervanging voor de ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. ContextHub heeft een verenigbaarheidswijze die het laden van de opslag van de douaneClientContext toestaat.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe adviseert het gebruiken van <a href="/help/sites-developing/modernization-tools.md"> Hulpmiddelen van de Modernisering van AEM </a> om de componenten bij te werken.</li>
+     <li>Vorm ContextHub (de vervanging voor ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. ContextHub heeft een verenigbaarheidswijze die het laden van de opslag van douaneClientContext toestaat.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -99,19 +99,15 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
  </tbody>
 </table>
 
-### Veelgestelde vragen {#faq}
-
-Zie het artikel van de Kennisbank, [ Aanraakinterface Authoring FAQ ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor details; met inbegrip van om het even welke informatie over het afbraakprogramma voor klassieke UI.
-
 ### Gebruikersinterface selecteren {#selecting-your-ui}
 
 Zie [ Selecterend Uw UI ](/help/sites-authoring/select-ui.md) voor informatie over het vormen van uw systeem zoals vereist.
 
 ### UI-status voor aanraking {#touch-enabled-ui-status}
 
-Voor details van de verhogingen die aan aanraking-toegelaten UI in AEM 6.5 worden aangebracht zien [ wat ](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
+Voor details van de verhogingen die aan touch-Toegelaten UI in AEM 6.5 worden aangebracht zie [ wat ](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
 
-Een volledig overzicht ziet de [&#128279;](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0&rbrace; Aanraakinterface
+Een volledig overzicht ziet de ](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0} Aanraakinterface[
 
 ### Hulpbronnen {#resources-to-help}
 
@@ -122,7 +118,7 @@ Voor achtergrondinformatie over basisverwerking:
 Voor gedetailleerde ontwikkelingsinformatie:
 
 * [ Aanraakgevoelige architectuur UI ](/help/sites-developing/touch-ui-concepts.md).
-* Gebruik de [ AEM Hulpmiddelen van de Modernisering ](/help/sites-developing/modernization-tools.md) om component uit te zetten geeft dialogen van klassieke UI in aanraking-toegelaten UI uit.
+* Gebruik de [ Hulpmiddelen van de Modernisering van AEM ](/help/sites-developing/modernization-tools.md) om component uit te zetten geeft dialogen van klassieke UI in aanraking-toegelaten UI uit.
 
 * [ Structuur van aanraking-toegelaten UI ](/help/sites-developing/touch-ui-structure.md).
 
@@ -130,4 +126,4 @@ Voor gedetailleerde ontwikkelingsinformatie:
 
 * [ het Aanpassen van pagina authoring in touch-enabled UI ](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
 
-* {de documentatie van 0} granite UI [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* {de documentatie van 0} granite UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).[

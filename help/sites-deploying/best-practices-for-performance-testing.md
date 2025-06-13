@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Het testen van prestaties is een belangrijk deel van om het even welke AEM plaatsing. Afhankelijk van de vereisten van de klant kunnen de prestaties worden getest op de publicatie-instanties, de auteur-instanties of beide.
+Prestatietests vormen een belangrijk onderdeel van elke AEM-implementatie. Afhankelijk van de vereisten van de klant kunnen de prestaties worden getest op de publicatie-instanties, de auteur-instanties of beide.
 
-In deze documentatie worden algemene strategieën en methodologieën beschreven voor het uitvoeren van prestatietests en een aantal van de hulpmiddelen die door de Adobe beschikbaar worden gesteld om het proces te helpen. Tot slot lees een analyse van de hulpmiddelen die in AEM 6 beschikbaar zijn om met prestaties het stemmen, zowel vanuit een codeanalyse als perspectief van de systeemconfiguratie te helpen.
+In deze documentatie worden algemene strategieën en methodologieën beschreven voor het uitvoeren van prestatietests en een aantal van de hulpmiddelen die door Adobe beschikbaar worden gesteld om het proces te helpen. Tot slot lees een analyse van de hulpmiddelen die in AEM 6 beschikbaar zijn om met prestaties het stemmen, zowel vanuit een codeanalyse als perspectief van de systeemconfiguratie te helpen.
 
 ### Realiteit simuleren {#simulating-reality}
 
@@ -34,7 +34,7 @@ Veel prestatiemetingen in AEM, zoals de tijd van de vraagreactie, kunnen door de
 
 * Productiecode
 
-De AEM versie en hotfixes die in productie worden ingezet, moeten in de testomgeving hetzelfde zijn. Het is ook belangrijk om op de versie van de code te testen die aan productie wordt opgesteld.
+De AEM-versie en de in productie genomen hotfixes moeten in de testomgeving hetzelfde zijn. Het is ook belangrijk om op de versie van de code te testen die aan productie wordt opgesteld.
 
 * Productieachtige hardware en netwerkconfiguratie
 
@@ -54,12 +54,10 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 #### Testgereedschappen {#testing-tools}
 
-* Adobe **Tough het hulpmiddel van Dag** kan worden gebruikt om lading op AEM instanties te produceren en prestatiesgegevens te verzamelen. Het technische team van de Adobe gebruikt AEM het gereedschap om het AEM product zelf te testen. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [ documentatie van de Dag van de Hoek ](/help/sites-developing/tough-day.md).
+* Het hulpmiddel van de Dag van de Tough van Adobe **** kan worden gebruikt om lading op de instanties van AEM te produceren en prestatiesgegevens te verzamelen. Het technische team van Adobe AEM gebruikt het gereedschap voor het testen van de belasting van het AEM-product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [ documentatie van de Dag van de Hoek ](/help/sites-developing/tough-day.md).
 
-* AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken, en foutenmeldingen snel te zien. Voor meer informatie, zie de [ sectie van Hulpmiddelen van de Diagnose ](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het Dashboard van Verrichtingen.
+* AEM biedt de vakgereedschappen uit om snel problematische query&#39;s, verzoeken en foutberichten weer te geven. Voor meer informatie, zie de [ sectie van Hulpmiddelen van de Diagnose ](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het Dashboard van Verrichtingen.
 * Apache verstrekt een product genoemd **JMeter** dat voor prestaties en lading het testen, en functioneel gedrag kan worden gebruikt. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter kan op de website van Apache in [ https://jmeter.apache.org/ ](https://jmeter.apache.org/) worden gevonden
-
-* **Laad Runner** is een ladingstestproduct van de ondernemingsrang. Er is een gratis evaluatieversie beschikbaar. Meer informatie kan in [ https://www.microfocus.com/en-us/portfolio/performance-engineering/overview ](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview) worden gevonden
 
 * Het laden van de website testende hulpmiddelen zoals [ Vercara ](https://vercara.com/website-performance-management) kan ook worden gebruikt.
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
@@ -75,15 +73,15 @@ De [ documentatie van de Prestaties van de Controle ](/help/sites-deploying/moni
 
 **de Wijze van de Ontwikkelaar in Aanraak UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=nl-NL).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Gebruikend rlog.jar om de verzoeklogboeken** te lezen
 
-Voor een uitgebreidere analyse van de aanvraag meldt u zich aan bij een AEM, kunt u `rlog.jar` gebruiken om de `request.log` -bestanden die AEM genereren, te doorzoeken en te sorteren. Dit jar-bestand wordt samen met een AEM-installatie in de map `/crx-quickstart/opt/helpers` opgenomen. Voor meer informatie over logboekhulpmiddel en het verzoeklogboek over het algemeen, zie [ Controle en het Onderhouden van ](/help/sites-deploying/monitoring-and-maintaining.md) documentatie.
+Voor een uitgebreidere analyse van de aanvraag kunt u `rlog.jar` gebruiken om de `request.log` -bestanden te doorzoeken en te sorteren die AEM genereert. Dit jar-bestand wordt opgenomen in een AEM-installatie in de map `/crx-quickstart/opt/helpers` . Voor meer informatie over logboekhulpmiddel en het verzoeklogboek over het algemeen, zie [ Controle en het Onderhouden van ](/help/sites-deploying/monitoring-and-maintaining.md) documentatie.
 
 **het Uitleg Hulpmiddel van de Vraag**
 
-Het [ Verklaar hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM Hulpmiddelen kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit hulpmiddel is nuttig wanneer het optimaliseren van langzaam lopende vragen.
+Het [ Verklaar hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM Tools kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit hulpmiddel is nuttig wanneer het optimaliseren van langzaam lopende vragen.
 
 **PageSpeed Hulpmiddelen**
 
@@ -108,7 +106,7 @@ Op systemen met de steunen MongoDB, verstrekt AEM verscheidene [ JMX ](/help/sit
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Voor het geheime voorgeheugen genoemd **document-Afschuiving**, zou het slagtarief over `.90` moeten zijn. Als de raaksnelheid lager is dan 90%, is het waarschijnlijk dat u de `DocumentNodeStoreService` -configuratie moet bewerken. Ondersteuning van Adoben van producten kan aanbevolen worden voor optimale instellingen voor uw omgeving.
+Voor het geheime voorgeheugen genoemd **document-Afschuiving**, zou het slagtarief over `.90` moeten zijn. Als de raaksnelheid lager is dan 90%, is het waarschijnlijk dat u de `DocumentNodeStoreService` -configuratie moet bewerken. Ondersteuning van Adobe-producten kan optimale instellingen voor uw omgeving aanbevelen.
 
 * De **Statistieken van de Bewaarplaats van Oak** boon. Het kan direct worden betreden door te gaan:
 
@@ -120,11 +118,11 @@ De **ObservationQueueMaxLength** sectie toont het aantal gebeurtenissen in de de
 1. Plaats de toepassing onder de map /crx-quickstart/install.
 
 >[!NOTE]
->Zie [AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
+>Zie [ AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 De standaardinstelling is 10.000, maar de meeste implementaties moeten deze verhogen tot 20.000 of 50.000.
 
-## Publish-omgeving {#publish-environment}
+## Publicatie-omgeving {#publish-environment}
 
 ### Tests uitvoeren {#performing-tests-1}
 
@@ -148,11 +146,11 @@ Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen 
 * Bekijk het foutenlogboek voor fouten of waarschuwingen. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
 * Hardwarebronnen van het systeem controleren, zoals geheugen- en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten.
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan.
-* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL) documentatie.
+* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) documentatie.
 
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Dit geeft een indeling van elk inhoudsgebied op de pagina en de laadtijd.
 * Alle JS en CSS op de site miniaturen. Zie dit [ blogbericht ](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Elimineer ingesloten CSS en JS uit de componenten. Ze moeten worden opgenomen in en geminiateerd bij de bibliotheken aan de clientzijde om het aantal aanvragen te minimaliseren dat vereist is om de pagina weer te geven.
 * Om de serververzoeken te inspecteren en te zien welke het langst nemen, gebruik browser hulpmiddelen zoals het lusje van het Netwerk van Chrome.
 
-Als probleemgebieden zijn geïdentificeerd, kan de toepassingscode worden gecontroleerd op optimalisatie van de prestaties. Om het even welke uit de doos AEM eigenschappen die niet behoorlijk presteren kunnen met de Steun van de Adobe worden behandeld.
+Als probleemgebieden zijn geïdentificeerd, kan de toepassingscode worden gecontroleerd op optimalisatie van de prestaties. Alle AEM-functies in de verpakking die niet correct werken, kunnen worden verwerkt met ondersteuning voor Adobe.

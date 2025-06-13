@@ -9,9 +9,9 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om insta
 
 ## De optie Uitvouwen gebruiken {#using-the-verbose-option}
 
-Wanneer u AEM WCM begint, kunt u - v (verbose) optie aan de bevellijn toevoegen zoals in: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+Wanneer u AEM WCM start, kunt u de optie -v (verbose) toevoegen aan de opdrachtregel zoals in: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 De verbose optie toont sommige van de het logboekoutput van Quickstart op de console, zodat kan het voor het oplossen van problemen worden gebruikt.
 
@@ -55,8 +55,8 @@ Aangezien de jar dossiers het overal formaat van het ZIP gebruiken, kunnen sommi
 Ga als volgt te werk om problemen op te lossen:
 
 * Controleer nogmaals of u ten minste Java™ versie 1.6 hebt geïnstalleerd.
-* Probeer een contextmenu (gewoonlijk klik met de rechtermuisknop) op AEM WCM QuickStart, en selecteer &quot;Open met...&quot;
-* Controleer of Java™ of Sun Java™ wordt vermeld en probeer er AEM WCM mee uit te voeren. Als u meerdere Java™-versies hebt geïnstalleerd, selecteert u de ondersteunde versie.
+* Probeer een contextmenu (meestal klikken met de rechtermuisknop) op de AEM WCM QuickStart en selecteer &quot;Openen met...&quot;
+* Controleer of Java™ of Sun Java™ wordt vermeld en probeer AEM WCM hiermee uit te voeren. Als u meerdere Java™-versies hebt geïnstalleerd, selecteert u de ondersteunde versie.
 
   Als deze stap is geslaagd en uw besturingssysteem de optie heeft om altijd het geselecteerde programma te gebruiken om de .jar-bestanden uit te voeren, selecteert u deze optie. Dubbelklikken moet vanaf nu werken.
 
@@ -67,20 +67,20 @@ Ga als volgt te werk om problemen op te lossen:
 
 >[!NOTE]
 >
->Zie ook [ Geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL) analyseren.
+>Zie ook [ Geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html) analyseren.
 
 
 CRX zelf heeft een laag geheugenverbruik. Als de toepassing die in CRX wordt uitgevoerd grotere geheugenvereisten heeft of geheugenintensieve bewerkingen aanvraagt (bijvoorbeeld grote transacties), moet de JVM-instantie waarin CRX wordt uitgevoerd, worden gestart met de juiste geheugeninstellingen.
 
-Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&ast;.jar om de heapsize in te stellen op 512 MB).
+Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&amp;ast;.jar om de heapsize in te stellen op 512 MB).
 
-Geef de optie voor het instellen van het geheugen op terwijl u AEM WCM start vanaf de opdrachtregel. De AEM WCM start/stop manuscripten of de douanescripten voor het beheren van AEM opstarten WCM kunnen ook worden gewijzigd om de vereiste geheugenmontages te bepalen.
+Geef de optie voor het instellen van het geheugen op terwijl u AEM WCM start vanaf de opdrachtregel. De AEM WCM-start/stop-scripts of aangepaste scripts voor het beheren van AEM WCM-opstarten kunnen ook worden gewijzigd om de vereiste geheugeninstellingen te definiëren.
 
 Als u reeds uw heapsize aan 512 MB hebt bepaald, kunt u de geheugenkwestie verder willen analyseren door een heapstortplaats te creëren.
 
 Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschikbaar is, gebruikt u de volgende opdracht:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
 Deze methode produceert een dossier van de heapstortplaats (**java_...hprof**) wanneer het proces uit geheugen loopt. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd.
 
@@ -97,21 +97,21 @@ Deze kunnen worden vergeleken om de wijzigingen te zien en hoe objecten geheugen
 >
 >Als u dergelijke informatie regelmatig verzamelt, of ervaring hebt met het lezen van heap-dumps, kan één heap-dump-bestand voldoende zijn om het probleem te analyseren.
 
-### Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
+### Het AEM-welkomstscherm wordt niet in de browser weergegeven nadat u op AEM Quickstart hebt dubbelgeklikt {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 In bepaalde situaties worden de AEM WCM-welkomstschermen niet automatisch weergegeven, ook al is de gegevensopslagruimte zelf in orde. Dit probleem kan afhankelijk zijn van de installatie van het besturingssysteem, de configuratie van de browser of vergelijkbare factoren.
 
-Het gebruikelijke symptoom is dat het AEM WCM QuickStart venster &quot;AEM WCM die op serveropstarten wachten...&quot; toont. Als dat bericht relatief lang wordt weergegeven, voert u de AEM WCM-URL handmatig in in het browservenster met de standaard 4502-poort of de poort waarop de instantie wordt uitgevoerd: http://localhost:4502/.
+Het gebruikelijke symptoom is dat het AEM WCM QuickStart-venster &quot;AEM WCM opstarten, wachten op opstarten van server...&quot; toont. Als dat bericht relatief lang wordt weergegeven, voert u de AEM WCM-URL handmatig in in het browservenster met de standaard 4502-poort of de poort waarop de instantie wordt uitgevoerd: http://localhost:4502/.
 
 Bovendien kunnen logboeken de reden onthullen waarom de browser niet is gestart.
 
-Soms heeft het AEM WCM QuickStart-venster het bericht &quot;AEM WCM wordt uitgevoerd op http://localhost:port/&quot; en wordt de browser niet automatisch gestart. Klik in dit geval op de URL in het venster AEM WCM QuickStart (het is een hyperlink) of voer de URL handmatig in de browser in.
+Soms heeft het AEM WCM QuickStart-venster het bericht &quot;AEM WCM wordt uitgevoerd op http://localhost:port/&quot; en wordt de browser niet automatisch gestart. Klik in dit geval op de URL in het AEM WCM QuickStart-venster (het is een hyperlink) of voer de URL handmatig in de browser in.
 
 Als alles anders ontbreekt, controleer de logboeken om te weten te komen wat is gebeurd.
 
 ### De website laadt niet of mislukt soms met Java™ 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java™ 11 waarbij de website mogelijk niet met tussenpozen wordt geladen of gezakt.
+Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java™ 11 waarbij de website niet met tussenpozen wordt geladen of gezakt.
 
 Ga als volgt te werk als dit probleem zich voordoet:
 
@@ -134,27 +134,22 @@ Ga als volgt te werk als dit probleem zich voordoet:
 
 Wanneer een verzoek aan geometrixx-outdoor/en pagina 404 (Pagina niet Gevonden) terugkeert, kunt u opnieuw controleren dat u het extra bezit van de helling in het sling.properties- dossier nodig voor deze specifieke Servers van de Toepassing hebt geplaatst.
 
-Zie in *opstellen AEM Webtoepassing* stappen voor de details.
+Zie in *AEM Webtoepassing* stappen voor de details opstellen.
 
 ### De grootte van de reactiekop kan groter zijn dan 4 KB {#response-header-size-can-be-greater-than-kb}
 
-502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4 KB kan overschrijden.
+502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kan HTTP-antwoordheaders genereren die cookies van meer dan 4 KB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4 KB kan overschrijden.
 
-Bijvoorbeeld, voor Tomcat 7.0, de attributen maxHttpHeaderSize van de [&#128279;](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controles van de Schakelaar van 0&rbrace; HTTP &lbrace;op kopbalgrootte.
+Bijvoorbeeld, voor Tomcat 7.0, de attributen maxHttpHeaderSize van de ](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controles van de Schakelaar van 0} HTTP {op kopbalgrootte.[
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 
-Aangezien AEM in één map installeert, is een hulpprogramma voor verwijderen niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, maar hoe u de installatiemap verwijdert, hangt AEM af van wat u wilt bereiken en van welke permanente opslag u gebruikt.
+Aangezien AEM in één map installeert, is een hulpprogramma voor het verwijderen van de installatie niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, bijvoorbeeld wanneer u de gehele installatiemap verwijdert. De manier waarop u AEM verwijdert, hangt echter af van wat u wilt bereiken en van de permanente opslag die u gebruikt.
 
 Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de standaard-TarPM-installatie, worden bij het verwijderen van mappen ook gegevens verwijderd.
 
 >[!NOTE]
 >
->Adobe raadt u aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u ook de repository. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
+>Adobe raadt u aan een back-up van uw opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u ook de repository. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
 
-Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.
-
-### JSP-bestanden worden niet gecompileerd op JBoss® {#jsp-files-are-not-compiled-on-jboss}
-
-Als u JSP-bestanden installeert of bijwerkt naar Experience Manager op JBoss® en de bijbehorende servlets niet worden gecompileerd, moet u ervoor zorgen dat de JBoss® JSP-compiler correct is geconfigureerd. Zie voor meer informatie de
-[ JSP de Kwesties van de Compilatie in JBoss® ](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artikel.
+Als bij de installatie van AEM bijvoorbeeld externe opslag wordt gebruikt, wordt bij het verwijderen van een map de gegevens niet automatisch verwijderd, maar wordt de opslagconfiguratie verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.

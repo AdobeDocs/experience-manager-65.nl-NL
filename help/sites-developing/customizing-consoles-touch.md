@@ -1,6 +1,6 @@
 ---
 title: De consoles aanpassen
-description: AEM biedt verschillende mechanismen waarmee u de consoles van de ontwerpinstantie kunt aanpassen
+description: AEM biedt verschillende mechanismen waarmee u de consoles van uw ontwerpinstantie kunt aanpassen
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionalitei
 * Bedekkingen
 Bedekkingen zijn gebaseerd op knooppuntdefinities en u kunt de standaardfunctionaliteit (in `/libs` ) bedekken met uw eigen aangepaste functionaliteit (in `/apps` ). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
-Deze kunnen op vele manieren worden gebruikt om uw AEM te uitbreiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
+Deze kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te breiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ De volgende locatie in de `/libs` -structuur kan bijvoorbeeld worden bedekt:
 
 >[!NOTE]
 >
->Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM kwesties TouchUI ](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
+>Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM TouchUI ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
 ### Nieuwe handeling toevoegen aan de werkbalk {#add-new-action-to-the-toolbar}
 
-1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld, bevorderen a **aan Twitter** actie bij:
+1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld, a **bevordert aan Twitter** actie bij:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 1. Optioneel:
 
    * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
-
      `pageInfoProviderType` eigenschap.
 
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).

@@ -10,9 +10,9 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen b
 
 >[!NOTE]
 >
->Als u het oplossen van problemen authoring kwesties in AEM bent, zie [ het Oplossen van problemen voor Auteurs.](/help/sites-authoring/troubleshooting.md)
+>Als u het oplossen van problemenauteurskwesties in AEM bent, zie [ het Oplossen van problemen voor Auteurs.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen
   </tr>
   <tr>
    <td><p>Systeembeheerder</p> </td>
-   <td><p>Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM CM QuickStart</p> </td>
+   <td><p>Het AEM-welkomstscherm wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM CM QuickStart</p> </td>
   </tr>
   <tr>
    <td><p>Systeembeheerder</p> <p>beheerder</p> </td>
@@ -64,21 +64,21 @@ De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen
 
 ## Installatieproblemen {#installation-issues}
 
-Zie {de Kwesties van de Installatie 0} Gemeenschappelijke [&#128279;](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:
+Zie {de Kwesties van de Installatie 0} Gemeenschappelijke ](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:[
 
 * Dubbelklikken op de Quickstart-strip heeft geen effect op het JAR-bestand met een ander programma (zoals archiefbeheer).
 * Toepassingen die op CRX worden uitgevoerd, genereren fouten die zich buiten het geheugen bevinden.
-* Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart.
+* Het welkomstscherm van AEM wordt niet weergegeven in de browser nadat u op AEM QuickStart hebt gedubbelgeklikt.
 
 ## Methoden voor de Analyse van het Oplossen van problemen {#methods-for-troubleshooting-analysis}
 
 ### Een Thread Dump maken {#making-a-thread-dump}
 
-De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zijn. Als AEM niet behoorlijk antwoordt, kan de draadstortplaats u helpen kastjes of andere problemen identificeren.
+De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zijn. Als AEM niet behoorlijk antwoordt, kan de draadstortplaats u helpen die knallen of andere problemen identificeren.
 
 ### Dumper met slingerdraad gebruiken {#using-sling-thread-dumper}
 
-1. Open de **AEM Console van het Web**; bijvoorbeeld, bij `https://localhost:4502/system/console/`.
+1. Open de **Console van het Web van AEM**; bijvoorbeeld, bij `https://localhost:4502/system/console/`.
 1. Selecteer **Threads** onder **Status** tabel.
 
 ![ screen_shot_2012-02-13at43925pm ](assets/screen_shot_2012-02-13at43925pm.png)
@@ -101,23 +101,23 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL) documentatie voor meer informatie te nemen
+Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentatie voor meer informatie te nemen
 
 ### Controleren op niet-afgesloten JCR-sessies {#checking-for-unclosed-jcr-sessions}
 
-Wanneer de functionaliteit voor AEM WCM wordt ontwikkeld, kunnen de zittingen van JCR worden geopend (vergelijkbaar met het openen van een gegevensbestandverbinding). Als de geopende sessies nooit gesloten zijn, kan uw systeem de volgende symptomen ervaren:
+Wanneer functionaliteit is ontwikkeld voor AEM WCM, kunnen JCR-sessies worden geopend (vergelijkbaar met het openen van een databaseverbinding). Als de geopende sessies nooit gesloten zijn, kan uw systeem de volgende symptomen ervaren:
 
 * Het systeem wordt langzamer.
 * U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) toont het aantal geheime voorgeheugens, elke zitting opent verscheidene geheime voorgeheugens.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
-Om unclosed zittingen te analyseren en te weten te komen welke code geen zitting sluit, zie het artikel van de Kennisbank [ Niet-gesloten zittingen ](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html) analyseren.
+Beginnen unclosed zittingen te analyseren, zie het artikel van de Kennisbank [ Unclosed Resolver van het Middel ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### De Adobe Experience Manager-webconsole gebruiken {#using-the-adobe-experience-manager-web-console}
 
 De status van de OSGi-bundels kan ook een vroege indicatie geven van mogelijke problemen.
 
-1. Open de **AEM Console van het Web**; bijvoorbeeld, bij `https://localhost:4502/system/console/`.
+1. Open de **Console van het Web van AEM**; bijvoorbeeld, bij `https://localhost:4502/system/console/`.
 1. Selecteer **Bundels** onder **OSGI** tabel.
 1. Controleren:
 

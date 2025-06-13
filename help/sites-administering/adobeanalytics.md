@@ -10,10 +10,10 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 19%
+source-wordcount: '249'
+ht-degree: 20%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 19%
 
 Door Adobe Analytics en AEM te integreren, kunt u de activiteiten van uw webpagina volgen:
 
-* Met een Adobe Analytics-configuratie kunnen AEM verifiëren met Adobe Analytics.
+* Met een Adobe Analytics-configuratie kan AEM verifiëren met Adobe Analytics.
 * Een framework geeft de gegevens aan die naar uw Adobe Analytics-rapportenpakket worden verzonden.
 
 De gegevens bevatten pagina- en gebruikersgegevens, bijvoorbeeld:
 
-* gegevens die AEM componenten verzamelen
+* gegevens die door AEM-componenten worden verzameld
 * koppelingsklikken
 * videogebruiksinformatie
 * het aantal pagina-bezoeken van Adobe Analytics
@@ -43,22 +43,21 @@ U kunt [ Opt-binnen tovenaar ](/help/sites-administering/opt-in.md) ook gebruike
 
 >[!NOTE]
 >
->Zie ook hoe te artikel: [ Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Zie ook hoe te artikel: [ Integrating AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Aanvullende informatie {#further-information}
 
 Zie:
 
 * [ Uitbreidend de Integratie van Adobe Analytics ](/help/sites-developing/extending-analytics.md) voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het kader van Adobe Analytics aanpassen.
-* Het artikel van de kennisbasis, [ integratie van Adobe Analytics - het oplossen van problemenkwesties ](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen uw integratie van Adobe Analytics.
 
 >[!NOTE]
 >
 >Als u Adobe Analytics gebruikt met een aangepaste proxyconfiguratie, moet u [twee OSGi-bundels configureren](/help/sites-deploying/configuring-osgi.md) (bijvoorbeeld met de webconsole) die voor de **Apache HTTP Client**-proxyconfiguraties vereist zijn. Beide zijn vereist omdat sommige functies van AEM de 3.x-API&#39;s gebruiken, terwijl andere de 4.x-API&#39;s gebruiken. Configureren:
 >
 >* **Cliënt 3.1 van HTTP van de Commons van de Dag 3.x** om 3.x API te vormen;
->  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  >  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache de Configuratie van de Volmacht van HTTP Componenten** om 4.x API te vormen;
->  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  >  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

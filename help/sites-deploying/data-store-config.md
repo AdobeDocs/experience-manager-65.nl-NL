@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 0%
@@ -27,18 +27,18 @@ Zowel kunnen de gegevensopslag als de knoopopslag worden gevormd gebruikend conf
 
 Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
-1. Kopieer het JAR-bestand met de AEM QuickStart naar de installatiemap.
+1. Kopieer het JAR-bestand voor AEM quickstart naar de installatiemap.
 1. Maak een map `crx-quickstart/install` in de installatiemap.
 1. Eerst, vorm de knoopopslag door een configuratiedossier met de naam van de optie van de knoopopslag te creëren u in de `crx-quickstart/install` folder wilt gebruiken.
 
-   Het bestand `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` wordt bijvoorbeeld gebruikt in het archief met Document-knooppunten (dat de basis vormt voor het AEM van de MongoMK-implementatie).
+   Het bestand `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` wordt bijvoorbeeld gebruikt in het archief met documentknooppunten (dat de basis vormt voor de AEM MongoMK-implementatie).
 
 1. Bewerk het bestand en stel de configuratieopties in.
 1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken. Bewerk het bestand om de configuratieopties in te stellen.
 
    >[!NOTE]
    >
-   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.
+   >Zie {de Configuraties van de Opslag van 0} Knoop ](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.[
 
 1. Start AEM.
 
@@ -52,7 +52,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 ### Segmentknooppuntarchief {#segment-node-store}
 
-De opslag van de segmentknoop is de basis van de implementatie TarMK van de Adobe in AEM6. De `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID wordt gebruikt voor configuratie.
+De opslag van segmentknooppunten is de basis van de Adobe TarMK-implementatie in AEM6. De `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID wordt gebruikt voor configuratie.
 
 >[!CAUTION]
 >
@@ -80,7 +80,7 @@ customBlobStore=B"true"
 
 #### Document Node Store {#document-node-store}
 
-De opslag van de documentknoop is de basis van AEM implementatie MongoMK. Het gebruikt `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. De volgende configuratieopties zijn beschikbaar:
+De opslag van documentknooppunten is de basis van de AEM MongoMK-implementatie. Het gebruikt `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. De volgende configuratieopties zijn beschikbaar:
 
 * `mongouri`: [ MongoURI ](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
 
@@ -137,17 +137,17 @@ Deze configuratieopties zijn beschikbaar:
 
 ## Amazon S3 Data Store {#amazon-s-data-store}
 
-AEM kunnen worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage Service (S3). De `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID wordt gebruikt voor configuratie.
+AEM kan worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage Service (S3). De `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID wordt gebruikt voor configuratie.
 
 >[!NOTE]
 >
->AEM 6.5 ondersteunt het opslaan van gegevens in Amazon S3, maar de ondersteuning wordt niet uitgebreid tot het opslaan van gegevens in andere platforms, waarvan de leveranciers mogelijk hun eigen implementaties van Amazon S3 API&#39;s hebben.
+>AEM 6.5 biedt ondersteuning voor het opslaan van gegevens in Amazon S3, maar de ondersteuning wordt niet uitgebreid tot het opslaan van gegevens op andere platformen, waarvan de leveranciers hun eigen implementaties van Amazon S3 API&#39;s hebben.
 
-Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [ Bewaarplaats van de Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.10.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.10.0.zip). Ook, moet u het recentste AEM de dienstpak downloaden en installeren zoals die op [ AEM 6.5 de Nota&#39;s van de Versie ](/help/release-notes/release-notes.md) wordt vermeld pagina.
+Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.10.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.10.0.zip). Ook, moet u het recentste de dienstpak van AEM downloaden en installeren zoals vermeld op [ AEM 6.5 de Nota&#39;s van de Versie ](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
 >
->Wanneer u AEM gebruikt met TarMK, worden binaire getallen standaard opgeslagen in de `FileDataStore` . Als u TarMK met de S3 Datastore wilt gebruiken, moet u beginnen AEM de runmode `crx3tar-nofds` te gebruiken, bijvoorbeeld:
+>Wanneer u AEM gebruikt met TarMK, worden binaire bestanden standaard opgeslagen in de `FileDataStore` . Als u TarMK wilt gebruiken met de S3 Datastore, moet u AEM starten met de runmode `crx3tar-nofds` , bijvoorbeeld:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -191,9 +191,9 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 
 Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
 
-1. Stop de AEM instantie.
+1. Stop de AEM-instantie.
 
-1. Navigeer naar `<aem-install>/crx-quickstart/install/15` in de installatiemap AEM en maak een back-up van de inhoud ervan.
+1. Navigeer naar `<aem-install>/crx-quickstart/install/15` in de installatiemap van AEM en maak een back-up van de inhoud ervan.
 1. Na de steun, schrap de oude versie van de S3 Schakelaar en zijn gebiedsdelen door alle jar dossiers in de `<aem-install>/crx-quickstart/install/15` omslag te schrappen, bijvoorbeeld:
 
    * **eiken-blob-wolk-1.6.1.jar**
@@ -203,9 +203,9 @@ Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-conn
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de recentste versie van het 1.10.x eigenschappak van de [ Bewaarplaats van de Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download de recentste versie van het 1.10.x eigenschappak van het [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Pak de inhoud uit en ga vervolgens naar `jcr_root/libs/system/install/15` .
-1. Kopieer de jar dossiers aan **&lt;aem-install>**/crx-quickstart/install/15 in de AEM installatiemap.
+1. Kopieer de jar dossiers aan **&lt;aem-install>**/crx-quickstart/install/15 in de installatiemap van AEM.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
 
 U kunt het configuratiebestand gebruiken met de opties die hieronder worden beschreven.
@@ -329,7 +329,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 1. Installeer de auteur en publiceer instanties en zorg ervoor zij behoorlijk begonnen zijn.
 1. Ga naar de montages van de replicatieagent, door een pagina aan *https://localhost:4502/etc/replication/agents.author/publish.html* te openen.
 1. Druk **uitgeven** knoop in de **sectie van Montages**.
-1. Verander de **typeoptie van de Serienummering** &lbrace;in **Binair minder**.
+1. Verander de **typeoptie van de Serienummering** {in **Binair minder**.
 
 1. Voeg de parameter &quot; `binaryless`= `true`&quot; toe aan de transporturi. Na de wijziging moet de uri er ongeveer als volgt uitzien:
 
@@ -343,7 +343,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
    `java -jar cq-quickstart.jar -unpack`
 
-1. Nadat het AEM is leeggemaakt, creeer een omslag binnen de installatiemap *crx-quickstart*/*installeert*.
+1. Nadat AEM is leeggemaakt, creeer een omslag binnen de installatiemap *crx-quickstart*/*installeert*.
 
 1. Maak deze twee bestanden in de map `crx-quickstart` :
 
@@ -355,12 +355,12 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 1. Installeer de twee bundels die vereist zijn voor de opslag van S3-gegevens, zoals hierboven beschreven.
 1. Controleer of MongoDB is geïnstalleerd en of een instantie van `mongod` wordt uitgevoerd.
-1. Begin AEM met de volgende opdracht:
+1. Start AEM met de volgende opdracht:
 
    `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
-1. Herhaal stap 1 tot en met 4 voor de tweede AEM.
-1. Start de tweede AEM.
+1. Herhaal stap 1 tot en met 4 voor de tweede AEM-instantie.
+1. Start de tweede AEM-instantie.
 
 #### Een gedeelde gegevensopslag configureren {#configuring-a-shared-data-store}
 
@@ -389,12 +389,12 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
    >[ https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >Afhankelijk van de Oak-versie die u gebruikt bij de installatie van de AEM, moeten verschillende versies van het gereedschap worden gebruikt. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
+   >Afhankelijk van de Oak-versie die u gebruikt bij de AEM-installatie, moeten verschillende versies van het gereedschap worden gebruikt. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
    >
    >
    >
    >    * Voor de versies van Oak **1.2.x** gebruik Oak-looppas **1.2.12 of nieuwer**
-   >    * Voor de versies van Oak **nieuwer dan hierboven**, gebruik de versie van Oak-looppas die de kern van Oak van uw AEM installatie aanpast.
+   >    * Voor de versies van Oak **nieuwer dan hierboven**, gebruik de versie van Oak-looppas die de kern van Oak van uw installatie van AEM aanpast.
    >
    >
 
@@ -409,13 +409,13 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 ## Azure Data Store {#azure-data-store}
 
-AEM kunnen worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. De `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID wordt gebruikt voor configuratie.
+AEM kan worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. De `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID wordt gebruikt voor configuratie.
 
-Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [ Bewaarplaats van de Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de recentste versie van 1.6.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de recentste versie van 1.6.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Wanneer het gebruiken van AEM met TarMK, worden de binaire getallen opgeslagen door gebrek in FileDataStore. Als u TarMK wilt gebruiken met de Azure DataStore, moet u AEM beginnen met de runmode `crx3tar-nofds` , bijvoorbeeld:
+>Wanneer u AEM gebruikt met TarMK, worden binaire bestanden standaard opgeslagen in de FileDataStore. Als u TarMK wilt gebruiken met de Azure DataStore, moet u AEM starten met de runmode `crx3tar-nofds` , bijvoorbeeld:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -445,7 +445,7 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
 * azureSas=&quot;&quot;: in versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **als zowel SAS als opslaggeloofsbrieven in het configuratiedossier bestaan, heeft SAS prioriteit.** voor meer informatie over SAS zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Het Azure Blob Endpoint. Bijvoorbeeld https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [ officiële documentatie ](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * SECTKey=&quot;&quot;: de toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 * container=&quot;&quot;: De naam van de Microsoft® Azure blob opslagcontainer. De container is een groepering van een set bollen. Voor extra details, lees de [ officiële documentatie ](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
@@ -501,9 +501,9 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 >
 >Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. U kunt BlobTracker op alle auteur uitschakelen en instanties publiceren door het volgende te doen:
 >
->1. Stop de AEM Instance.
+>1. Stop de AEM-instantie.
 >2. Voeg de parameter `blobTrackSnapshotIntervalInSecs=L"0"` toe in het `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` -bestand. Voor deze parameter is Oak 1.12.0, 1.10.2 of hoger vereist.
->3. Start de AEM opnieuw.
+>3. Start de AEM-instantie opnieuw.
 
 Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoonfunctie van gegevensopslaggegevens uit te voeren in een gedeelde gegevensopslag:
 

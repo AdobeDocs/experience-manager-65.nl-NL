@@ -126,7 +126,7 @@ U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoeko
 
 U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Voor gedetailleerde info, zie [ onderzoek in  [!DNL Experience Manager] ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3444067/?quality=6&captions=dut)
 
 *Video: Begrijp hoe de onderzoeksresultaten gerangschikt zijn en hoe de rang kan worden beïnvloed.*
 

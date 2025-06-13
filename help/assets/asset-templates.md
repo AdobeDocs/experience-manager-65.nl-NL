@@ -124,7 +124,7 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
    >
    >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
    >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs de ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
    >
 

@@ -243,7 +243,7 @@ Bij het repliceren van elementen naar een groot aantal publicatie-instanties, bi
 
 ## Indexen zoeken {#search-indexes}
 
-Installeer [ de recentste Packs van de Dienst ](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [ prestaties het stemmen uiteinden ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) voor sommige indexoptimalisaties.
+Installeer [ de recentste Packs van de Dienst ](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [ prestaties het stemmen uiteinden ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) voor sommige indexoptimalisaties.
 
 Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie de [ methodologie voor het analyseren van langzame vragen ](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [ crefting douaneindexen ](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

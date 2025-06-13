@@ -38,7 +38,7 @@ Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aan
 
   Een ondergroep van configuraties OSGi is beschikbaar in de bewaarplaats. Dit zorgt ervoor dat het kopiëren, of het repliceren, de inhoud van de bewaarplaats identieke configuraties ontspannen. U kunt ook uw eigen configuraties, afhankelijk van de uitvoeringsmodus, aan de opslagplaats toevoegen.
 
-  Zie {Configuratie 0} OSGi in de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) en in het bijzonder [ Toevoegend een Nieuwe Configuratie aan de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) voor verdere details.[
+  Zie {Configuratie 0} OSGi in de Bewaarplaats [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) en in het bijzonder [ Toevoegend een Nieuwe Configuratie aan de Bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) voor verdere details.
 
 * **systeem van het Dossier**
 
@@ -111,7 +111,7 @@ In een standaardinstallatie maakt AEM een versie van een pagina of knooppunt wan
 
 Deze versies worden nooit gewist, zodat de grootte van de opslagplaats in tijd groeit en daarom moet worden beheerd.
 
-Zie ](/help/sites-deploying/version-purging.md) het Schrappen van de Versie 1} voor volledige details, in het bijzonder [ Manager van de Versie ](/help/sites-deploying/version-purging.md#version-manager) voor details van hoe te om AEM te vormen om oudere versies te zuiveren wanneer een nieuwe versie wordt gecreeerd.[
+Zie [&#128279;](/help/sites-deploying/version-purging.md) het Schrappen van de Versie 1&rbrace; voor volledige details, in het bijzonder [ Manager van de Versie ](/help/sites-deploying/version-purging.md#version-manager) voor details van hoe te om AEM te vormen om oudere versies te zuiveren wanneer een nieuwe versie wordt gecreeerd.
 
 ### Logboekregistratie {#logging}
 
@@ -297,7 +297,7 @@ Zie [ Vormend E-mailBericht ](/help/sites-administering/notification.md) voor ve
 
 ### Paginaafdrukken inschakelen {#enabling-page-impressions}
 
-De impressies van de pagina worden getoond in de **1} kolom van Impressies {van de klassieke console van UI plaatsadmin.** U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
+De impressies van de pagina worden getoond in de **1&rbrace; kolom van Impressies &lbrace;van de klassieke console van UI plaatsadmin.** U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
 
 * Op de publicatie-instantie:
 

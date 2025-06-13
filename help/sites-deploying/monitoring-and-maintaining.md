@@ -114,7 +114,7 @@ Ga als volgt te werk om versies van een website te wissen:
 
    ![ voeg de Woorden van de Versie toe ](assets/version-purge-add-new-task.png)
 
-1. De **taak van de Woorden van 0} Versie wordt toegevoegd.** Met de kaartacties kunt u:
+1. De **taak van de Woorden van 0&rbrace; Versie wordt toegevoegd.** Met de kaartacties kunt u:
    * Selecteren - hiermee worden extra acties op de bovenste werkbalk weergegeven
    * Uitvoeren - om de gevormde zuivering onmiddellijk in werking te stellen
    * Configureren - voor het configureren van de wekelijkse zuiveringstaak
@@ -150,7 +150,7 @@ Stel de maximale versiepagina in dagen in (voor elk knooppunt) die u wilt behoud
 
    Dan **sparen**.
 
-1. Navigeer/terugkeer aan het **venster van het Onderhoud van 0} Wekelijks {en selecteer** Looppas **om het proces onmiddellijk te lanceren.**
+1. Navigeer/terugkeer aan het **venster van het Onderhoud van 0&rbrace; Wekelijks &lbrace;en selecteer** Looppas **om het proces onmiddellijk te lanceren.**
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ Informatie over Revisie-journalistiek.
 
 >[!NOTE]
 >
->De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u problemen met [!DNL Dynamic Media] ondervindt, voegt u voor ondersteuningsdoeleinden de logboeken ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
+>De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig &#x200B;** pakket dat van het **systeem/console/status-Bundlelist &#x200B;** pagina wordt geproduceerd. Als u problemen met [!DNL Dynamic Media] ondervindt, voegt u voor ondersteuningsdoeleinden de logboeken ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 

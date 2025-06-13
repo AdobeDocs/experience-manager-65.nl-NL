@@ -157,9 +157,11 @@ Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Ver
      ```
 
    * Declaraties van variabelen met subset van gegevens:
+
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * De controleparameters van de lijst en van de herhaling: begin, stap, eind:
+
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Id&#39;s voor terugloop van gegevensdoorhaling:
@@ -180,7 +182,7 @@ Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Ver
    * Creeer en geef malplaatjes voor enig-pagina apps uit die JS SDK (ook genoemd Redacteur van het KUUROORD) gebruiken
 
 * De Plaats van de verwijzing wij.Retail 4.0, zie [ GitHub voor versienota&#39;s ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Toolkit om bestaande plaatsen te bevorderen om de recentste redacteursmogelijkheden te gebruiken, zie ](https://github.com/adobe/aem-modernize-tools) bewaarplaats GitHub [
+* Toolkit om bestaande plaatsen te bevorderen om de recentste redacteursmogelijkheden te gebruiken, zie [&#128279;](https://github.com/adobe/aem-modernize-tools) bewaarplaats GitHub 
 
 >[!CAUTION]
 >
@@ -199,8 +201,8 @@ Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Ver
 
 #### Inhoudsfragmenten en editor {#content-fragments-amp-editor}
 
-* Nieuwe ](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) spoorstaaf 0} Annotaties {in de Redacteur van het Fragment van de Inhoud om algemene commentaren te maken en commentaren te zien die binnen de tekst (ook verschijnen in spoorstaaf van de Chronologie) worden gemaakt[
-* Mogelijkheid om het standaardinhoudstype van een multi-line tekstelement in het model van het Fragment van de Inhoud van a [ ](/help/assets/content-fragments/content-fragments-models.md) aan eenvoudige tekst, rijke tekst, of prijsdaling te plaatsen
+* Nieuwe [&#128279;](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) spoorstaaf 0&rbrace; Annotaties &lbrace;in de Redacteur van het Fragment van de Inhoud om algemene commentaren te maken en commentaren te zien die binnen de tekst (ook verschijnen in spoorstaaf van de Chronologie) worden gemaakt
+* Mogelijkheid om het standaardinhoudstype van een multi-line tekstelement in het model van het Fragment van de Inhoud van a [&#128279;](/help/assets/content-fragments/content-fragments-models.md) aan eenvoudige tekst, rijke tekst, of prijsdaling te plaatsen
 * Voeg [ commentaar/annotaties ](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) toe door tekst in RTE (het volledig-schermmening) te selecteren
 * [ vergelijk versies ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) van een Fragment van de Inhoud zij aan zij via spoorstaaf van de Verwijzing
 * In het rapport Downloaden van middelen worden nu inhoudsfragmenten dienovereenkomstig weergegeven
@@ -388,7 +390,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ##### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] -viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Voor extra details, zie {de Gids van de Verwijzing van 0} Kijkers ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).[
+[!DNL Dynamic Media] -viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Voor extra details, zie {de Gids van de Verwijzing van 0} Kijkers [&#128279;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 #### Verbeterde zoekervaring {#experience-enhancement-for-searching}
 

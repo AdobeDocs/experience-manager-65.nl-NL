@@ -573,7 +573,7 @@ Als u WMWare ESX gebruikt om uw gevirtualiseerde milieu&#39;s te beheren en op t
 
 ### Amazon Web Services {#amazon-web-services}
 
-Voor documentatie op hoe te opstelling MongoDB met Amazon Web Services, controleer het [ vormt de 1} artikel van de Integratie van AWS op de website MongoDB.](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/)
+Voor documentatie op hoe te opstelling MongoDB met Amazon Web Services, controleer het [ vormt de 1&rbrace; artikel van de Integratie van AWS op de website MongoDB.](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/)
 
 ## MongoDB beveiligen voor implementatie {#securing-mongodb-before-deployment}
 

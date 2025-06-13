@@ -73,7 +73,7 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 **het Tijdelijke Systeem van het Dossier** Een langzaam lokaal dossiersysteem kan interactieve prestatiesproblemen veroorzaken, vooral wanneer het zoeken, omdat de onderzoeksindexen op de lokale schijf worden opgeslagen. Het kan ook problemen met de middelenverwerking veroorzaken als het opdrachtregelproces wordt gebruikt.
 
-**Interactieve prestatiesproblemen van de Finder van 0} AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
+**Interactieve prestatiesproblemen van de Finder van 0&rbrace; AEM DAM**, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van CPU toe te schrijven aan vele gezamenlijke gebruikers of andere CPU-consumerende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge CPU-belasting wordt veroorzaakt door middelenverwerking en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
 
 **AEM DAM van het Werkschema** Lange-lopende werkschemaprocessen tijdens activaopname veroorzaken de prestatieproblemen van de activaverwerking. Afhankelijk van het type activa dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
 
@@ -81,7 +81,7 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 De redenen voor slechte latentie en productie in NAS zijn netwerktopologie of NAS overgebruik door andere diensten.
 
-{de 1} over-gebruikte netwerk-in bijlage van het 0} Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:****
+{de 1} over-gebruikte netwerk-in bijlage van het 0&rbrace; Netwerk In bijlage opslagsystemen kunnen een serie van problemen veroorzaken:**&#x200B;**
 
 * Weinig schijfruimte is een vaak aangetroffen probleem dat kan worden voorkomen door een DAM-project naar behoren te rangschikken.
 * De hoge schijflatentie verspreidt zich in langzame toegangstijden voor CRX en kan in interactieve prestatiesproblemen resulteren.

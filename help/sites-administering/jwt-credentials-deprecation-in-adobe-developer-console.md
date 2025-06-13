@@ -35,7 +35,7 @@ AEM-klanten gebruiken de AEM om integratie met alle andere Adobe-oplossingen te 
 
 ![ Integrerend AEM met andere oplossingen ](/help/sites-administering/assets/jwt-deprecation.png)
 
-Zie {de Integraties IMS van de Opstelling voor AEM ](/help/sites-administering/setting-up-ims-integrations-for-aem.md) voor details van hoe te:[
+Zie &lbrace;de Integraties IMS van de Opstelling voor AEM [&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md) voor details van hoe te:
 
 * configuraties maken met OAuth-gebruikersgegevens
 * migreer configuraties, die met geloofsbrieven JWT werden gecreeerd, om geloofsbrieven te gebruiken OAuth

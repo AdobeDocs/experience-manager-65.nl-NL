@@ -35,7 +35,7 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
    * Een duidelijke specificatie helpt in alle stadia van ontwikkeling, het testen, en overdracht. De details kunnen in tijd veranderen, maar de specificatie kan worden bijgewerkt (hoewel de veranderingen ook zouden moeten worden gedocumenteerd).
 * Moet u een geheel nieuwe component maken of kunt u de basisbeginselen overnemen van een bestaande component?
    * Het is niet nodig het wiel opnieuw uit te vinden.
-   * Er zijn verscheidene mechanismen die door AEM worden verstrekt die u toestaan en details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel 1} erven uitbreiden.](/help/sites-developing/sling-resource-merger.md)
+   * Er zijn verscheidene mechanismen die door AEM worden verstrekt die u toestaan en details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [ Verzameling van het Middel 1&rbrace; erven uitbreiden.](/help/sites-developing/sling-resource-merger.md)
 * Heeft uw component logica nodig voor het selecteren of bewerken van de inhoud?
    * De logica moet gescheiden worden gehouden van de gebruikersinterfacelaag. HTL is ontworpen om ervoor te zorgen dat dit gebeurt.
 * Heeft uw component CSS-opmaak nodig?
@@ -52,7 +52,7 @@ Voordat een serieuze discussie begint over het ontwikkelen van componenten, moet
 * **Klassieke UI**
 Gebruikersinterface gebaseerd op ExtJS-technologie die is vervangen door AEM 6.4.
 
-Zie {de Aanbevelingen van de Interface 0} UI voor Klanten ](/help/sites-deploying/ui-recommendations.md) voor meer details.[
+Zie {de Aanbevelingen van de Interface 0} UI voor Klanten [&#128279;](/help/sites-deploying/ui-recommendations.md) voor meer details.
 
 Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface met aanraakbediening, de klassieke interface of beide. Wanneer het bekijken van een standaardinstantie zult u ook uit-van-de-dooscomponenten zien die oorspronkelijk voor klassieke UI, of aanraking-toegelaten UI, of allebei werden ontworpen.
 
@@ -481,7 +481,7 @@ Het ontwerpdialoog voor het paragraafsysteem (bijvoorbeeld, parsys) is een speci
 
 Nadat een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een alineasysteem, kunt u:
 
-1. Open ](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0} {voor een pagina en laat de vereiste component toe.[
+1. Open [&#128279;](/help/sites-authoring/default-components-designmode.md) Wijze van het Ontwerp 0&rbrace; &lbrace;voor een pagina en laat de vereiste component toe.
 1. Voeg de vereiste componenten onder aan de eigenschap `components` van uw sjabloondefinitie toe:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
@@ -599,7 +599,7 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in** CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
+* Als u bijvoorbeeld naar een onderliggend knooppunt van `cq:editConfig` wilt zoeken, kunt u zoeken naar `cq:dropTargets` . Dit is van het type `cq:DropTargetConfig` . U kunt het gereedschap Query gebruiken in **&#x200B; CRXDE Lite** en zoeken met de volgende XPath-queryreeks:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

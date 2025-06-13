@@ -64,7 +64,7 @@ De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen
 
 ## Installatieproblemen {#installation-issues}
 
-Zie {de Kwesties van de Installatie 0} Gemeenschappelijke ](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:[
+Zie {de Kwesties van de Installatie 0} Gemeenschappelijke [&#128279;](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:
 
 * Dubbelklikken op de Quickstart-strip heeft geen effect op het JAR-bestand met een ander programma (zoals archiefbeheer).
 * Toepassingen die op CRX worden uitgevoerd, genereren fouten die zich buiten het geheugen bevinden.

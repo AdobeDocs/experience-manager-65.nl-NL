@@ -72,7 +72,7 @@ Ga als volgt te werk om problemen op te lossen:
 
 CRX zelf heeft een laag geheugenverbruik. Als de toepassing die in CRX wordt uitgevoerd grotere geheugenvereisten heeft of geheugenintensieve bewerkingen aanvraagt (bijvoorbeeld grote transacties), moet de JVM-instantie waarin CRX wordt uitgevoerd, worden gestart met de juiste geheugeninstellingen.
 
-Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&amp;ast;.jar om de heapsize in te stellen op 512 MB).
+Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&ast;.jar om de heapsize in te stellen op 512 MB).
 
 Geef de optie voor het instellen van het geheugen op terwijl u AEM WCM start vanaf de opdrachtregel. De AEM WCM-start/stop-scripts of aangepaste scripts voor het beheren van AEM WCM-opstarten kunnen ook worden gewijzigd om de vereiste geheugeninstellingen te definiëren.
 
@@ -80,7 +80,7 @@ Als u reeds uw heapsize aan 512 MB hebt bepaald, kunt u de geheugenkwestie verde
 
 Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschikbaar is, gebruikt u de volgende opdracht:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&ast;.jar
 
 Deze methode produceert een dossier van de heapstortplaats (**java_...hprof**) wanneer het proces uit geheugen loopt. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd.
 
@@ -140,7 +140,7 @@ Zie in *AEM Webtoepassing* stappen voor de details opstellen.
 
 502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kan HTTP-antwoordheaders genereren die cookies van meer dan 4 KB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4 KB kan overschrijden.
 
-Bijvoorbeeld, voor Tomcat 7.0, de attributen maxHttpHeaderSize van de ](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controles van de Schakelaar van 0} HTTP {op kopbalgrootte.[
+Bijvoorbeeld, voor Tomcat 7.0, de attributen maxHttpHeaderSize van de [&#128279;](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controles van de Schakelaar van 0&rbrace; HTTP &lbrace;op kopbalgrootte.
 
 ## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
 

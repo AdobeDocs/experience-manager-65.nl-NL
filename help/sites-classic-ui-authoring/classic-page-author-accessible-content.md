@@ -83,13 +83,13 @@ Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstue
 
 #### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0} Alt {:**
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Deze methode wordt gedaan op het **gebied van de Tekst van 0&rbrace; Alt &lbrace;:**
 
 >[!NOTE]
 >
 >Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer u versies van deze componenten voor uw AEM-instantie implementeert, moet uw ontwikkelingsteam dergelijke componenten configureren ter ondersteuning van het attribuut `alt` . Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
 
-Het **gebied van de Tekst van 0} Alt {is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
+Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
 
 ![ geeft dialoog van de component van het Beeld in klassieke UI uit; toont het gebied van de Tekst van Alt.](assets/chlimage_1-17a.png)
 
@@ -97,15 +97,15 @@ AEM voegt een **Tekst van Alt** aan uw beelden door gebrek toe. Voor klassieke U
 
 * Bestand:
 
-  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **** gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
+  Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een beeldcomponent aan een pagina toevoegt en dan een beeld van uw harde aandrijving, of een andere bron kiest, is de standaardwaarde voor **de Tekst van Alt** `file`. Deze waarde moet op het **Geavanceerde** beeld eigenschappen tabel worden veranderd. Nogmaals, wordt deze waarde niet getoond op het **&#x200B;**&#x200B;gebied van de Tekst van Alt, maar wanneer de waarde wordt veranderd, wordt de nieuwe waarde getoond op het gebied.
 
 * Element:
 
-  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3} waarden van de Tekst van Alt {voor dat beeld genomen van de meta-gegevens voor dat beeld.**
+  Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een beeld van de digitale activabewaarplaats aan een Web-pagina sleept, dan worden de **Titel** en **de 3&rbrace; waarden van de Tekst van Alt &lbrace;voor dat beeld genomen van de meta-gegevens voor dat beeld.**
 
 >[!NOTE]
 >
->In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0} Alt {niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
+>In beide bovengenoemde scenario&#39;s, is de standaard **waarde van de Tekst van 0&rbrace; Alt &lbrace;niet zichtbaar in de** Geavanceerde Eigenschappen van het Beeld **tabel.** Om de standaardwaarde te veranderen, ga eenvoudig een nieuwe waarde op het **Gebied van de Tekst van Alt** in.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Grafieken en grafieken:
 
-  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1} gebied van de Beschrijving {op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
+  Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1&rbrace; gebied van de Beschrijving &lbrace;op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
 
   ![ Voorbeeld van een grafiek. Hieronder is de beste benadering om een alternatief te verstrekken.](assets/chlimage_1-2a.jpeg)
 
@@ -156,11 +156,11 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
   >
   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **component van het Beeld**, eerder dan de `img src` hierboven gebruikte verwijzing.
 
-  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3} gebieden van de Beschrijving {in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
+  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3&rbrace; gebieden van de Beschrijving &lbrace;in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
-  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3} gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
+  Voor afbeeldingen die ruimtelijke gegevens leveren (bijvoorbeeld om beschrijvende relaties tussen objecten of een proces te ondersteunen), zorgt u ervoor dat het sleutelbericht in tekstopmaak wordt weergegeven. Voor kaarten, die een volledig tekstequivalent verstrekken zal waarschijnlijk onpraktisch zijn, maar als de kaart als manier wordt verstrekt om mensen te helpen hun manier aan een bepaalde plaats vinden, dan kan de alternatieve tekst van het kaartafbeelding *Kaart van X* kort wijzen, dan richtingen aan die plaats elders in de pagina of door het **3&rbrace; gebied van de Beschrijving in het** Geavanceerde **lusje van de** component verstrekken **.**
 
 * CAPTCHA&#39;s:
 

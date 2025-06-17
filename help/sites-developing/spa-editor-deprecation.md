@@ -3,13 +3,14 @@ title: Veroudering van SPA-editor
 description: Alhoewel de Redacteur van het KUUROORD door Adobe wordt gesteund, leer wat zijn veroudering aan uw project betekent en welke opties u voor toekomstige projecten hebt.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%
 
 ---
-
 
 # Veroudering van SPA-editor {#spa-editor-deprecation}
 
@@ -50,7 +51,7 @@ De meest geschikte vervanging voor de Redacteur van het KUUROORD hangt van uw pr
 
 * **[de Universele Redacteur](/help/sites-developing/universal-editor/introduction.md)** is de beste directe vervanging voor de Redacteur van het KUUROORD.
    * De Universele Redacteur is ook een visuele redacteur en werd ontworpen specifiek voor losgemaakte implementaties, die alle ervaring van Adobe van de Redacteur van het KUUROORD opnemen.
-   * De Universele Redacteur is ook [ vrijgegeven voor AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) en steunt daarom AMS en gebruiksgevallen op prem naast de Diensten van de Wolk.
+   * De Universele Redacteur is ook [ vrijgegeven voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) en steunt daarom AMS en gebruiksgevallen op prem naast de Diensten van de Wolk.
 * **[de Redacteur van het Fragment van de Inhoud](/help/sites-developing/universal-editor/introduction.md)** is een alternatief voor hen die een op vorm-gebaseerde redacteur verkiezen.
    * De Inhoudsfragmenteditor is het meest geschikt wanneer de inhoud is gestructureerd als Inhoudsfragmenten en niet als pagina&#39;s.
 
@@ -64,7 +65,7 @@ De Universele Redacteur biedt vele voordelen aan, die migratie tot het een grote
 * **Toekomst-Bewijs:** roadmap van AEM geeft voorrang aan de Universele Redacteur als visuele redacteur. Als u het aanneemt, hebt u toegang tot de nieuwste innovaties en verbeteringen.
 * **Eenvoudigere Integratie:** Geen AEM-specifieke SDK wordt vereist om de Universele Redacteur te gebruiken, verminderend technologiestapelslot-binnen.
 * **breng Uw Eigen Toepassing:** De Universele Redacteur steunt om het even welk Webkader of architectuur, die goedkeuring toestaat zonder het vereisen van complex refactoring.
-* **Uitbreidbaarheid:** de Universele Redacteur profiteert van een robuust [ uitbreidingskader, ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) met inbegrip van integratie met GenAI, Workfront, en meer.
+* **Uitbreidbaarheid:** de Universele Redacteur profiteert van een robuust [ uitbreidingskader, ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) met inbegrip van integratie met GenAI, Workfront, en meer.
 
 Er is geen directe migratieweg van de Redacteur van het KUUROORD aan de Universele Redacteur. Dit is te wijten aan fundamentele verschillen in de twee technologieën.
 

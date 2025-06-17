@@ -1,11 +1,12 @@
 ---
 title: De RemotePage-component
-description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
+description: De component RemotePage is een component van de douanepagina voor het uitgeven van ver React SPA binnen AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -15,19 +16,19 @@ ht-degree: 0%
 
 # De RemotePage-component {#remote-page-component}
 
-Wanneer u bepaalt welk integratieniveau u tussen uw externe SPA en AEM wilt hebben, is het vaak duidelijk dat u de SPA binnen AEM moet kunnen bekijken en bewerken. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
+Wanneer het beslissen welk niveau van integratie u tussen uw externe SPA en AEM zou willen hebben, is het vaak duidelijk dat u het KUUROORD binnen AEM moet kunnen bekijken en uitgeven. De component RemotePage is alleen voor dit doel een aangepaste pagina-component.
 
 {{ue-over-spa}}
 
 ## Overzicht {#overview}
 
-De component RemotePage haalt alle noodzakelijke activa van de geproduceerde toepassing `asset-manifest.json` en gebruikt dit voor het teruggeven van de SPA binnen AEM.
+De component RemotePage haalt alle noodzakelijke activa van de geproduceerde toepassing `asset-manifest.json` en gebruikt dit voor het teruggeven van het KUUROORD binnen AEM.
 
-* Met de RemotePage kunt u de scripts en stijlpagina&#39;s van een SPA in de hoofdtekst van een AEM Page-component injecteren.
-* Met de Virtual Front Components kunt u secties markeren als bewerkbaar in AEM SPA Editor.
-* Een SPA die op een ander domein wordt gehost, kan samen in AEM bewerkbaar worden gemaakt.
+* Met RemotePage kunt u de scripts en opmaakmodellen van een SPA in de hoofdtekst van een AEM Page-component injecteren.
+* Met de Virtual Front Components kunt u secties markeren als bewerkbaar in de AEM SPA Editor.
+* Samen, kan een SPA die op een verschillend domein wordt ontvangen editable in AEM worden gemaakt.
 
-Zie het artikel [ Uitgevend een Externe SPA binnen AEM ](spa-edit-external.md) voor meer details over editable, externe SPA in AEM.
+Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](spa-edit-external.md) voor meer details over editable, externe SPAs in AEM.
 
 ## Vereisten {#requirements}
 
@@ -46,8 +47,8 @@ Zie het artikel [ Uitgevend een Externe SPA binnen AEM ](spa-edit-external.md) v
 ## Beperkingen {#limitations}
 
 * De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [ verstrekt.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage is echter alleen getest om te werken met het React-framework (en Next.js via de volgende component op afstand) en biedt daarom geen ondersteuning voor het extern laden van toepassingen vanuit andere frameworks, zoals Angular.
-* Interne CSS die is gedefinieerd in het hoofdbestand van de HTML van de toepassing en inline CSS op het basisknooppunt DOM zijn niet beschikbaar bij externe rendering in AEM.
+* Interne CSS die is gedefinieerd in het HTML-hoofdbestand van de toepassing en inline CSS op het DOM-hoofdknooppunt zijn niet beschikbaar bij externe rendering in AEM.
 
 ## Technische details {#technical-details}
 
-Net als de rest van het AEM SPA-project is de RemotePage-component een open bron. Voor de volledige technische details van de Component RemotePage, [ zie de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Zoals de rest van het project van AEM SPA, is de Component RemotePage open bron. Voor de volledige technische details van de Component RemotePage, [ zie de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

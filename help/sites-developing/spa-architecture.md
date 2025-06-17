@@ -135,7 +135,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
    Zodra de componenten worden overeengekomen en het model JSON op zijn plaats is, is de front-end ontwikkelaar vrij om het KUUROORD te ontwikkelen en kan eenvoudig tot het model JSON via `this.props.cqModel` toegang hebben.
 
-1. `render()` methode van de component van 0} uitvoeren ****
+1. `render()` methode van de component van 0&rbrace; uitvoeren **&#x200B;**
 
    De front-end ontwikkelaar implementeert de `render()` -methode naar eigen inzicht en kan de velden van de `cqModel` -eigenschap gebruiken. Hiermee worden de DOM- en HTML-fragmenten uitgevoerd die in de pagina worden ingevoegd. Dit is de standaardmanier om een app te maken in React.
 
@@ -230,4 +230,4 @@ Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [ Begonnen het
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt, zie het artikel [ Dynamisch Model aan Component Mapping voor SPAs ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het ](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0} SPA {ziet.[
+Als u wenst om SPAs in AEM voor een kader buiten Reageren of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor de werken van AEM, het [&#128279;](/help/sites-developing/spa-blueprint.md) artikel van het Blauwdruk van 0&rbrace; SPA &lbrace;ziet.

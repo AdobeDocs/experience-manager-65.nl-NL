@@ -48,7 +48,7 @@ De analyse is gebaseerd op de standaardfunctionaliteit van AEM en de steekproefW
 >
 >Dit document gebruikt [ app van het Project van de SPUL WKND ](https://github.com/adobe/aem-guides-wknd-spa) voor demonstratiedoeleinden slechts. Niet gebruiken voor projectwerk.
 >
->Om het even welk project van AEM zou het [ Archetype van het Project van AEM moeten gebruiken, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+>Om het even welk project van AEM zou het [ Archetype van het Project van AEM moeten gebruiken, ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 

@@ -28,7 +28,7 @@ Onderdruk zich in de ontwikkeling van het KUUROORD met dit multi-part leerprogra
 
 Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwen die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de WKND KUUROPleidingen:
 
-* [ Begonnen het worden met de Redacteur van AEM SPA en Angular ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [ Begonnen het worden met de Redacteur van AEM SPA en Angular ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=nl-NL)
+* [ Begonnen het Worden met de Redacteur van AEM SPA en Reageer ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=nl-NL)
 
 Alvorens u met uw eigen project van het KUUROORD voor AEM begint echter, ben zeker om [ het Ontwikkelen SPAs voor AEM ](/help/sites-developing/spa-architecture.md) document ook te herzien.

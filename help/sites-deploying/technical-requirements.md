@@ -248,7 +248,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -258,7 +258,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -470,11 +470,11 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
+   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
+   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -522,7 +522,7 @@ Voor Windows x86:
 >
 >Daarnaast
 >
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
@@ -530,7 +530,7 @@ Voor Windows x86:
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.

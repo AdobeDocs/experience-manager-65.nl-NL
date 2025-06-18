@@ -210,7 +210,7 @@ Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals 
 >* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
 >* Sluit alle dialoogvensters die worden weergegeven na de installatie van Adobe Acrobat en software van derden voor alle gebruikers die zijn geconfigureerd voor het gebruik van de PDF Generator-service.
 >* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd om de PDF Generator-service te gebruiken.
->* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
+>* [ de vervaldatum van de Controle van uw serienummers van Adobe Acrobat ](https://helpx.adobe.com/nl/enterprise/kb/volume-license-expiration-check.html) en reeks een datum om vergunning bij te werken of [ migreer uw serienummer ](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) dat op de vervaldatum wordt gebaseerd.
 
 Open Microsoft® Word nadat u Acrobat hebt geïnstalleerd. Op het **Acrobat** lusje, klik **creeer PDF** en zet een .doc of .docx dossier beschikbaar op uw machine in een Document van PDF om. Als de conversie succesvol is, is AEM Forms klaar om Acrobat te gebruiken met de PDF Generator-service.
 
@@ -393,10 +393,10 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artikel.
+   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) artikel.
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om het AEM-exemplaar opnieuw te starten. **stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer in het bestand `[AEM-Installation-Directory]/crx-quickstart/logs/error` .log worden weergegeven en het logbestand stabiel is.
 

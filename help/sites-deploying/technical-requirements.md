@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3688'
 ht-degree: 0%
 
 ---
@@ -129,19 +129,21 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
 | IBM® DB2® 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[5]` |
 | Oracle Database 12c (12.1.x) | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
+| Oracle Database 19c | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
 | Microsoft® SQL Server 2016 | Forms-database | A: Ondersteund |
+| Microsoft® SQL Server 2019 (afgekeurd) | Forms-database | A: Ondersteund |
+| Microsoft® SQL Server 2022 | Forms-database | A: Ondersteund |
 | **Apache Lucene (ingebouwde QuickStart)** | Zoekservice | A: Ondersteund |
 | Apache Solr | Zoekservice | A: Ondersteund |
 
 1. &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Omvat de technologie van de netwerkopslag. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. Laad test AEM met het netwerk/externe bestandssysteem.
-1. Voor MongoDB Enterprise versie 4.2 en 4.4 is minimaal AEM 6.5 SP9 vereist.
-1. Delen via MongoDB wordt niet ondersteund in AEM.
-1. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
-1. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.
-1. Alleen van toepassing op AEM Forms:
+2. Voor MongoDB Enterprise versie 4.2 en 4.4 is minimaal AEM 6.5 SP9 vereist.
+3. Delen via MongoDB wordt niet ondersteund in AEM.
+4. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
+5. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.
+6. Alleen van toepassing op AEM Forms:
    * Verwijderde ondersteuning voor Oracle Database 12c en extra ondersteuning voor Oracle Database 19c.
-   * Verwijderde ondersteuning voor Microsoft® SQL Server 2016 en toegevoegde ondersteuning voor Microsoft® SQL Server 2019.
-1. Niet ondersteund voor AEM Forms.
+   * Verwijderde ondersteuning voor Microsoft® SQL Server 2016 en toegevoegde ondersteuning voor Microsoft® SQL Server 2019 en Microsoft® SQL Server 2022.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ De minimaal vereiste Servlet API-versie is Servlet 3.1
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) met Web Profile 7.0 en IBM® JRE 1.8 | R: Beperkte ondersteuning voor nieuwe contracten `[2]` |
 | IBM® WebSphere® Application Server 9.0 en IBM® JRE 1.8 | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
+| IBM® WebSphere® Application Server 9.0.0.10 | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Beperkte ondersteuning voor nieuwe contracten `[2]` |
 | JBoss® EAP 7.2.x met JBoss® Application Server | Z: Niet ondersteund |
 | JBoss® EAP 7.1.4 met JBoss® Application Server | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
 | JBoss® EAP 7.0.x met JBoss® Application Server | Z: Niet ondersteund |
+| JBoss® EAP 7.4 met de Server van de Toepassing JBoss® <sup>[ 2 ] [ 3 ] [ 7 ] | A: Ondersteund |
 
 1. Aanbevolen voor implementaties met AEM Forms.
-1. Als u AEM 6.5-implementaties start op toepassingsservers, gaat u naar Beperkte ondersteuning. Bestaande klanten kunnen upgraden naar AEM 6.5 en blijven toepassingsservers gebruiken. Voor nieuwe klanten wordt het geleverd met steuncriteria en een steunprogramma zoals die in de hierboven beschreven Niveau-R beschrijving worden vermeld.
-1. Alleen van toepassing op AEM Forms:
+2. Als u AEM 6.5-implementaties start op toepassingsservers, gaat u naar Beperkte ondersteuning. Bestaande klanten kunnen upgraden naar AEM 6.5 en blijven toepassingsservers gebruiken. Voor nieuwe klanten wordt het geleverd met steuncriteria en een steunprogramma zoals die in de hierboven beschreven Niveau-R beschrijving worden vermeld.
+3. Alleen van toepassing op AEM Forms:
    * Verwijderde ondersteuning voor JBoss® EAP 7.1.4 en extra ondersteuning voor JBoss® EAP 7.4.10.
 
 ### Serverbesturingssystemen {#server-operating-systems}
@@ -202,15 +206,15 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Linux®, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[1]` `[2]` |
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
 | Microsoft® Windows Server 2022 | R: Beperkte ondersteuning |
-| Microsoft® Windows Server 2019 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (vervangen) | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Niet ondersteund |
 | Oracle Solaris™ 11 | Z: Niet ondersteund |
 | IBM® AIX® 7.2 | Z: Niet ondersteund |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x en 6. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund op Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
-1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
-1. Linux®-distributie ondersteund door Adobe Managed Services.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x en 9. x bevat derivaten van Red Hat®-distributie, waaronder Red Hat® Enterprise Linux®, Oracle Linux® en Amazon Linux®. AEM Forms-add-onfuncties worden alleen ondersteund op Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 en Red Hat® Enterprise Linux® 9.
+2. AEM Forms wordt ondersteund op Ubuntu 20.04 en SUSE® Linux® Enterprise Server 15 SP6 (64-bits).
+3. Linux®-distributie ondersteund door Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
    *voor Installatie OpenSSL 3: De bibliotheken libcrypto.so.3 en libssl.so.3 moeten in de standaardbibliotheekweg beschikbaar zijn die door de LD_LIBRARY_PATH milieuvariabele wordt vertegenwoordigd. Als zij in een niet standaardplaats geïnstalleerd zijn, zorg ervoor dat dit weg aan LD_LIBRARY_PATH alvorens de server te beginnen wordt toegevoegd.*
 
-1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
-1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
-1. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
+4. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
+5. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
+6. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
 
 >[!NOTE]
 >
@@ -244,7 +248,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -254,7 +258,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -466,11 +470,11 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -518,7 +522,7 @@ Voor Windows x86:
 >
 >Daarnaast
 >
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
 >* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
@@ -526,7 +530,7 @@ Voor Windows x86:
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
 >* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.

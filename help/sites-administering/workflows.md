@@ -9,9 +9,9 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren. 
 
    * Elke stap voert een afzonderlijke activiteit uit, zoals het wachten op gebruikersinvoer, het activeren van een pagina of het verzenden van een e-mailbericht.
 
-* Kan communiceren met middelen in de gegevensopslagruimte, gebruikersaccounts en AEM services.
+* Kan communiceren met middelen in de repository, gebruikersaccounts en AEM services.
 * Kan ingewikkelde activiteiten coördineren waarbij elk aspect van AEM betrokken is.
 
-De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#39;s worden vertegenwoordigd. Het publicatieproces van website-inhoud omvat bijvoorbeeld doorgaans stappen zoals goedkeuring en aftekening door verschillende belanghebbenden. Deze processen kunnen worden geïmplementeerd als AEM workflows en worden toegepast op inhoudspagina&#39;s en elementen.
+De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#39;s worden vertegenwoordigd. Het publicatieproces van website-inhoud omvat bijvoorbeeld doorgaans stappen zoals goedkeuring en aftekening door verschillende belanghebbenden. Deze processen kunnen worden geïmplementeerd als AEM-workflows en worden toegepast op inhoudspagina&#39;s en elementen.
 
 * [Workflows starten](/help/sites-administering/workflows-starting.md)
 * [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md)
@@ -55,7 +55,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen van Werkschema&#39;s ](/help/sites-developing/workflows.md#model) voor verdere details.
+>De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen en het Uitbreiden Workflows - Modellen ](/help/sites-developing/workflows.md#model) voor verdere details.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 
@@ -63,14 +63,14 @@ De instanties van het werkschema vorderen door de volgende levenscyclus:
 
    1. De lading van de werkschemainstantie wordt geïdentificeerd wanneer het model wordt begonnen.
    1. De instantie is in feite een kopie van het model (zoals op het moment van het maken).
-   1. AEM auteurs, beheerders of services kunnen workflowmodellen starten.
+   1. AEM-auteurs, -beheerders of -services kunnen workflowmodellen starten.
 
 1. De eerste stap van het workflowmodel wordt uitgevoerd.
 1. De stap is voltooid en de workflowengine gebruikt het model om te bepalen welke volgende stap moet worden uitgevoerd.
 1. De volgende stappen in het workflowmodel worden uitgevoerd en voltooid.
 1. Wanneer de laatste stap is voltooid, wordt de werkstroominstantie voltooid en daarom gearchiveerd.
 
-Veel handige workflowmodellen worden AEM. Bovendien kunnen de ontwikkelaars in uw organisatie modellen van het douanewerkschema tot stand brengen, die aan de specifieke behoeften van uw bedrijfsprocessen worden aangepast.
+AEM biedt veel handige workflowmodellen. Bovendien kunnen de ontwikkelaars in uw organisatie modellen van het douanewerkschema tot stand brengen, die aan de specifieke behoeften van uw bedrijfsprocessen worden aangepast.
 
 ## Workflowstappen {#workflow-steps}
 

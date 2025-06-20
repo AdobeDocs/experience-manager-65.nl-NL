@@ -41,7 +41,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 #### Branding {#branding}
 
-Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 
 * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
    * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
@@ -95,7 +95,7 @@ Bijvoorbeeld, als de URL van de Vanity aan `welcome` aan de pagina wordt geplaat
 >* Geen ondersteuning voor regex-patronen.
 >* Deze mag niet op een bestaande pagina worden ingesteld.
 
-Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
+Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
 
 * **voeg** toe - Tik of klik om een ijdelheid URL toe te voegen.
 * **verwijder** - Tik of klik om een ijdelheid URL te verwijderen.
@@ -195,7 +195,7 @@ Selecteer a [ Merk om een werkingsgebied voor het richten te specificeren.](/hel
 
 ### Machtigingen {#permissions}
 
-Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) tot de pagina kunnen toegang hebben en/of wijzigen.
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
 
 * [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
 * [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)

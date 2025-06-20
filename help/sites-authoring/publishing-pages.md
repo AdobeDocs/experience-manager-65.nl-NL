@@ -5,9 +5,9 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1701'
 ht-degree: 5%
 
 ---
@@ -24,14 +24,14 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >Bepaalde termen met betrekking tot publicatie kunnen worden verward:
 >
->* **Publish/Unpublish**
->  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
+>* **publiceren/unpublish**
+>  >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
 >
 >* **activeert/deactiveert**
->  Deze termen zijn synoniem met publiceren/verwijderen.
+>  >  Deze termen zijn synoniem met publiceren/verwijderen.
 >
 >* **Replicatie/Replicatie**
->  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
+>  >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
 
 ## Onvoldoende rechten {#insufficient-privileges}
 
@@ -52,22 +52,22 @@ Afhankelijk van uw locatie kunt u publiceren:
 
 Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
-1. Selecteer het **pictogram van de Informatie van de Pagina** om het menu en toen de **pagina van Publish** optie te openen.
+1. Selecteer het **pictogram van de Informatie van de Pagina** om het menu te openen en dan de **publiceer de optie van de Pagina**.
 
    ![ screen_shot_2018-03-21at152734 ](assets/screen_shot_2018-03-21at152734.png)
 
 1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
+   * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in **worden vermeld publiceert** tovenaar, waar u of kunt:
 
-      * Specificeer welke van de activa of de markeringen, u samen met de pagina wilt publiceren, dan gebruik **Publish** om het proces te voltooien.
+      * Specificeer welke van de activa of de markeringen, u samen met de pagina wilt publiceren, dan gebruik **publiceren** om het proces te voltooien.
 
       * Het gebruik **annuleert** om de actie af te breken.
 
    ![ chlimage_1 ](assets/chlimage_1.png)
 
-1. Het selecteren van **Publish** zal de pagina aan het publicatiemilieu herhalen. In de paginaredacteur, wordt een informatiebanner getoond die de publicatieactie bevestigen.
+1. Het selecteren **publiceert** zal de pagina aan het publicatiemilieu herhalen. In de paginaredacteur, wordt een informatiebanner getoond die de publicatieactie bevestigen.
 
    ![ screen_shot_2018-03-21at152840 ](assets/screen_shot_2018-03-21at152840.png)
 
@@ -81,26 +81,26 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
 >[!NOTE]
 >
->De pagina&#39;s die door [ aliassen ](/help/sites-authoring/editing-page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden gepubliceerd. Publish-opties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+>De pagina&#39;s die door [ aliassen ](/help/sites-authoring/editing-page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
 ### Publiceren vanuit de console {#publishing-from-the-console}
 
 In de siteconsole zijn er twee opties voor publiceren:
 
-* [Quick Publish](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Snel publiceren](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Publicatie beheren](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Quick Publish {#quick-publish}
+#### Snel publiceren {#quick-publish}
 
-**Snelle Publish** is voor eenvoudige gevallen en publiceert de geselecteerde pagina(s) onmiddellijk zonder enige verdere interactie. Daarom worden niet-gepubliceerde verwijzingen ook automatisch gepubliceerd.
+**Snel publiceren** is voor eenvoudige gevallen en publiceert de geselecteerde pagina(s) onmiddellijk zonder enige verdere interactie. Daarom worden niet-gepubliceerde verwijzingen ook automatisch gepubliceerd.
 
-Een pagina publiceren met Quick Publish:
+Een pagina publiceren met Snel publiceren:
 
-1. Selecteer de pagina of de pagina&#39;s in de plaatsenconsole en klik de **Snelle knoop van Publish**.
+1. Selecteer de pagina of de pagina&#39;s in de plaatsenconsole en klik **Snel publiceren** knoop.
 
    ![ pp-02 ](assets/pp-02.png)
 
-1. In de Snelle dialoog van Publish, bevestig de publicatie door op **Publish** te klikken of annuleer door op **te klikken annuleert**. Onthoud dat niet-gepubliceerde verwijzingen automatisch ook worden gepubliceerd.
+1. In Snel publiceer dialoog, bevestig de publicatie door op **te klikken publiceert** of annuleert door op **te klikken annuleert**. Onthoud dat niet-gepubliceerde verwijzingen automatisch ook worden gepubliceerd.
 
    ![ chlimage_1-1 ](assets/chlimage_1-1.png)
 
@@ -108,11 +108,11 @@ Een pagina publiceren met Quick Publish:
 
 >[!NOTE]
 >
->Quick Publish is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
+>Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
 
 #### Publicatie beheren {#manage-publication}
 
-**beheer Publicatie** aanbiedingen meer opties dan Snelle Publish, die voor de opneming van kindpagina&#39;s, aanpassing van de verwijzingen, en het beginnen van om het even welke toepasselijke werkschema&#39;s toestaan en de optie aanbieden om op een recentere datum te publiceren.
+**beheer Publicatie** aanbiedingen meer opties dan Snelle Publicatie, die voor de opneming van kindpagina&#39;s, aanpassing van de verwijzingen, en het beginnen van om het even welke toepasselijke werkschema&#39;s toestaan en de optie aanbieden om op een recentere datum te publiceren.
 
 Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beheren:
 
@@ -141,7 +141,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Het klikken van de Add knoop van de Inhoud begint [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) om inhoudselectie toe te staan.
 
-   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel &#x200B;** om de selectie te annuleren en aan de tovenaar terug te keren.
+   Selecteer de vereiste pagina&#39;s en klik dan **Uitgezocht** om de inhoud aan de tovenaar toe te voegen of **Cancel **om de selectie te annuleren en aan de tovenaar terug te keren.
 
    Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
 
@@ -175,7 +175,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![ pp-05 ](assets/pp-05.png)
 
-1. Klik **Publish** om te voltooien.
+1. Klik **publiceren** om te voltooien.
 
    Terug in de plaatsenconsole zal een berichtbericht de publicatie bevestigen.
 
@@ -197,6 +197,10 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![ chlimage_1-4 ](assets/chlimage_1-4.png)
 
+>[!TIP]
+>
+>Door inhoud te plannen voor publicatie worden de workflows voor de publicatie van inhoud gerepliceerd en worden de publicatieworkflows gerespecteerd. Als u wenst om reeds gepubliceerde inhoud tijdelijk te verbergen zonder unpublishing, overweeg [**op Tijd** en **van Tijd** beschikbaar in de paginaeigenschappen.](/help/sites-authoring/editing-page-properties.md#on-time)
+
 ## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
 Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatieomgeving, zodat deze niet langer beschikbaar is voor uw lezers.
@@ -212,7 +216,7 @@ Wanneer het uitgeven van een pagina, als u wenst om die pagina ongedaan te maken
 
 >[!NOTE]
 >
->De pagina&#39;s die door [ aliassen ](/help/sites-authoring/editing-page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden ongepubliceerd. Publish-opties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+>De pagina&#39;s die door [ aliassen ](/help/sites-authoring/editing-page-properties.md#advanced) in de redacteur worden betreden kunnen niet worden ongepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
 
 ### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
 
@@ -250,7 +254,7 @@ U kunt [ gebruiken beheert Publicatie ](/help/sites-authoring/publishing-pages.m
 
    ![ chlimage_1-7 ](assets/chlimage_1-7.png)
 
-1. De **beheert 1&rbrace; tovenaar van de Publicatie &lbrace;maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
+1. De **beheert 1} tovenaar van de Publicatie {maakt een lijst van de inhoud van de boom voor overzicht.** U kunt de selectie verder aanpassen door extra pagina&#39;s toe te voegen of geselecteerde pagina&#39;s te verwijderen.
 
    ![ screen_shot_2018-03-21at154237 ](assets/screen_shot_2018-03-21at154237.png)
 

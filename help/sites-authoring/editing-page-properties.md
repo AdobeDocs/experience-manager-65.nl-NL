@@ -1,16 +1,18 @@
 ---
-title: Eigenschappen van inhoudspagina bewerken
+title: Pagina-eigenschappen bewerken
 description: Definieer de vereiste eigenschappen voor een pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+mini-toc-levels: 2
+source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '2477'
 ht-degree: 1%
 
 ---
+
 
 # Pagina-eigenschappen bewerken{#editing-page-properties}
 
@@ -22,237 +24,226 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 ### Basis {#basic}
 
-* **Titel**
+#### Titel en tags {#tile}
 
-  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
-
-  Dit is een verplicht veld.
-
-* **Markeringen**
-
-  Hier kunt u codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken:
-
+* **Titel** - de titel van de pagina wordt getoond in diverse plaatsen
+   * Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
+   * Dit is een verplicht veld.
+* **Markeringen** - hier kunt u markeringen toevoegen of verwijderen uit de pagina door de lijst in de selectievak bij te werken.
    * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
    * U kunt een nieuwe tag invoeren door de naam in een leeg selectievak te typen.
-
       * De nieuwe tag wordt gemaakt wanneer u op Enter drukt.
       * De nieuwe tag wordt weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
-
-   * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
+   * In de vervolgkeuzelijst kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
+   * Voor meer informatie over markeringen, zie [ Gebruikend Markeringen.](/help/sites-authoring/tags.md)
+* **Verbergen in Navigatie** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
 
-  Voor meer informatie over markeringen, zie [ Gebruikend Markeringen ](/help/sites-authoring/tags.md).
+#### Branding {#branding}
 
-* **Verbergen in Navigatie**
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-  Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
+* **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
+   * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
+* **Waarde van de Overschrijving** - de tekst van de merkslogan die aan de paginatitel moet worden toegevoegd
+   * De waarde wordt aan de paginatitel toegevoegd na een pipe-teken, zoals `Cycling Tuscany | Always ready for the WKND`
 
-* **Branding**
+#### Meer titels en beschrijving {#more}
 
-  Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* **Titel van de Pagina** - een titel die op de pagina moet worden gebruikt
+   * Doorgaans gebruikt door titelcomponenten
+   * Als leeg, wordt de **Titel** gebruikt.
+* **Titel van de Navigatie** - U kunt een afzonderlijke titel voor gebruik in de navigatie (bijvoorbeeld, specificeren als u iets beknopter wilt).
+   * Als leeg, wordt de **Titel** gebruikt.
+* **Ondertitel** - een ondertitel voor gebruik op de pagina
+* **Beschrijving** - Uw beschrijving van de pagina, zijn doel, of een andere details u wilt toevoegen
 
-   * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
-      * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
-   * **waarde van de Overschrijving** - de tekst van de merkschuine streep die aan de paginatitel moet worden toegevoegd.
-      * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
-* **Titel van de Pagina**
+#### Aan/UitTime {#on-time}
 
-  Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als leeg, wordt de **Titel** gebruikt.
+De aan/uit-tijd voor een pagina is een handige manier om inhoud die al is gepubliceerd, tijdelijk te verbergen. De inhoud blijft op de publicatie-instantie staan wanneer deze is uitgeschakeld. Als u een pagina uitschakelt, wordt de publicatie van de inhoud niet ongedaan gemaakt.
 
-* **Titel van de Navigatie**
+* **op Tijd** - de datum en de tijd waarop de gepubliceerde pagina zichtbaar (teruggegeven) op het publicatiemilieu wordt gemaakt. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
-  U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als leeg, wordt de **Titel** gebruikt.
+   * Als reeds [ gepubliceerd, ](/help/sites-authoring/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
+   * Als niet gepubliceerd en [ voor auto-replicatie wordt gevormd, ](/help/sites-deploying/replication.md) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
+   * Als niet gepubliceerd en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
 
-* **Ondertitel**
+* **Van Tijd** - Gelijkaardig aan en vaak gebruikt in combinatie met **op Tijd**, bepaalt dit de tijd waarbij de gepubliceerde pagina op het publicatiemilieu wordt verborgen.
 
-  Een ondertitel voor gebruik op de pagina.
+Verlaat deze gebieden (**op Tijd** en **van Tijd**) leeg voor pagina&#39;s u wilt publiceren en beschikbaar hebben onmiddellijk en beschikbaar op publiceer milieu tot zij (het normale scenario) worden gedeactiveerd.
 
-* **Beschrijving**
+>[!NOTE]
+>Als of **op Tijd** of **van Tijd** in het verleden is, en de automatische replicatie wordt gevormd, dan wordt de relevante actie onmiddellijk teweeggebracht.
 
-  Uw beschrijving van de pagina, het doel of andere details die u wilt toevoegen.
+>[!TIP]
+>
+>Aan/uit-tijden hebben uitsluitend betrekking op inhoud die al is gepubliceerd (handmatig of via automatische replicatie). Daarom hebben publicatieworkflows, zoals die voor het goedkeuren van inhoud, geen invloed op de publicatiestatus van de pagina als gevolg van aan-/uittijden en aan/uit-tijden. Daarom zijn aan/uit-tijden het meest geschikt voor het tijdelijk tonen/verbergen van inhoud die al is goedgekeurd en gepubliceerd.
+>
+>Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [ het leiden van uw publicatie.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-* **op Tijd**
+#### Vanity URL {#vanity-url}
 
-  De datum en tijd waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+Voer een vanity-URL voor deze pagina in, zodat u een kortere en/of meer expressieve URL kunt gebruiken.
 
-  Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
+Bijvoorbeeld, als de URL van de Vanity aan `welcome` aan de pagina wordt geplaatst die door de weg `/v1.0/startpage` voor de website `http://example.com,` wordt geïdentificeerd dan `http://example.com/welcome` zou ijdelheid URL van `http://example.com/content/v1.0/startpage` zijn
 
-* **Van Tijd**
+>[!CAUTION]
+>
+>Vanity-URL&#39;s:
+>
+>* Moet uniek zijn.
+>* Geen ondersteuning voor regex-patronen.
+>* Deze mag niet op een bestaande pagina worden ingesteld.
 
-  De tijd waarop de gepubliceerde pagina wordt gedeactiveerd.
+Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
 
-  Laat deze velden weer leeg voor directe actie.
-
-* **Vanity URL**
-
-  Voer een vanity-URL voor deze pagina in, zodat u een kortere en/of meer expressieve URL kunt gebruiken.
-
-  Bijvoorbeeld, als de URL van de Vanity aan `welcome` aan de pagina wordt geplaatst die door de weg `/v1.0/startpage` voor de website `http://example.com,` wordt geïdentificeerd dan `http://example.com/welcome` zou ijdelheid URL van `http://example.com/content/v1.0/startpage` zijn
-
-  >[!CAUTION]
-  >
-  >Vanity-URL&#39;s:
-  >
-  >* Moet uniek zijn. Zorg ervoor dat de waarde nog niet door een andere pagina wordt gebruikt.
-  >* Geen ondersteuning voor regex-patronen.
-  >* Deze mag niet op een bestaande pagina worden ingesteld.
-  >
-
-  Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
-
-* **Redirect Vanity URL**
-
-  Hiermee geeft u aan of u wilt dat de pagina de vanity-URL gebruikt.
+* **voeg** toe - Tik of klik om een ijdelheid URL toe te voegen.
+* **verwijder** - Tik of klik om een ijdelheid URL te verwijderen.
+  **Redirect Vanity URL** - wijst erop of u de pagina de ijdelheid URL wilt gebruiken of aan daadwerkelijke URL van de pagina opnieuw richten
 
 ### Geavanceerd {#advanced}
 
-* **Taal**
+#### Instellingen {#settings}
 
-  De paginataal.
-
-* **Wortel van de Taal**
-
-  Moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is.
-
-* **opnieuw richten**
-
-  Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
-
-* **Ontwerp**
-
-  Wijs op het [ ontwerp ](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
-
-* **Alias**
-
-  Geef een alias op die voor deze pagina moet worden gebruikt.
-
+* **Taal** - de paginataal
+* **Wortel van de Taal** - moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is
+* **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch zou moeten opnieuw richten
+* **Ontwerp** - wijst op het [ ontwerp ](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
+* **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
    * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
    * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
-   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ de opties van Publish ](/help/sites-authoring/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-authoring/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
    * Voor verdere details, zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Geërft van &lt;*weg* >**
+#### Configuratie {#configuration}
 
-  Geeft aan of de pagina wordt overgeërfd. en waar van.
+* **Geërft van &lt;*weg* >** - laat/maakt overerving van de **Configuratie van de Wolk** voor de pagina toe
+* **Configuratie van de Wolk** - de weg aan de configuratie
 
-* **Configuratie van de Wolk**
+#### Sjablooninstellingen {#templates}
 
-  Het pad naar de configuratie.
+* **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-authoring/templates.md#allowingatemplate) binnen deze subtak beschikbaar zijn
 
-* **Toegestane Malplaatjes**
+#### Verificatievereiste {#authentication}
 
-  [ bepaalt de lijst van malplaatjes die ](/help/sites-authoring/templates.md#allowingatemplate) binnen deze subtak beschikbaar zijn.
+* **laat** toe - laat (of maak onbruikbaar) het gebruik van authentificatie toe zodat kunt u tot de pagina toegang hebben
+* **Login Pagina** - de pagina die voor login moet worden gebruikt
 
-* **laat** toe (het Vereiste van de Authentificatie)
+>[!NOTE]
+>
+>De gesloten gebruikersgroepen voor de pagina worden bepaald op de **[Toestemmingen](/help/sites-authoring/editing-page-properties.md#permissions)** tabel.
 
-  Schakel het gebruik van verificatie in (of uit), zodat u toegang kunt krijgen tot de pagina.
+>[!CAUTION]
+>
+>Het **[lusje van Toestemmingen](#permissions)** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengen worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond onder **de Vereiste van de Authentificatie** en de optie is niet editable, noch zijn de [ Toestemmingen ](/help/sites-authoring/editing-page-properties.md#permissions) editable.
+>
+>
+>In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
 
-  >[!NOTE]
-  >
-  >De gesloten gebruikersgroepen voor de pagina worden bepaald op de **[Toestemmingen](/help/sites-authoring/editing-page-properties.md#permissions)** tabel.
+#### Exporteren {#export}
 
-  >[!CAUTION]
-  >
-  >Het **[lusje van Toestemmingen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengen worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond onder **de Vereiste van de Authentificatie** en de optie is niet editable, noch zijn de [ Toestemmingen ](/help/sites-authoring/editing-page-properties.md#permissions) editable.
-  >
-  >
-  >In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
+* **Configuratie** - specificeert een de uitvoerconfiguratie
 
-* **Login Pagina**
+#### SEO {#seo}
 
-  De pagina die voor login moet worden gebruikt.
+* **Canonical Url** - die wordt gebruikt om canonical URL van de pagina te beschrijven
+   * Als de URL van de pagina leeg wordt gelaten, is deze de canonieke URL.
+* **Codes Robots** - gebruik dropdown om de robots markeringen te selecteren om het gedrag van de kruipende zoekmachine te controleren
+   * Sommige opties zijn in strijd met elkaar, in welk geval de meer permissieve optie voorrang krijgt.
+* **produceer Sitemap** - wanneer geselecteerd, wordt a `sitemap.xml` geproduceerd voor deze pagina, en zijn nakomelingen.
 
-* **de Configuratie van de Uitvoer**
+### Afbeeldingen {#images}
 
-  Geef een exportconfiguratie op.
+#### Aanbevolen afbeelding {#featured-image}
 
-### Miniatuur {#thumbnail}
+Deze sectie wordt gebruikt om het beeld te selecteren en te vormen om te omvatten. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
+* **Beeld** - u kunt **** een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
+* **Alternatieve Tekst** - Tekst die wordt gebruikt om de betekenis en/of functie van het beeld te vertegenwoordigen, algemeen gebruikt door het schermlezers
+* **erven - Waarde die van de activa DAM** wordt genomen - wanneer gecontroleerd, wordt de alternatieve tekst bevolkt met de waarde van de `dc:description` meta-gegevens in DAM.
 
-* **produceer Voorproef**
+#### Miniatuur {#thumbnail}
 
-  Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken.
+STthis section is used to select and configure the image thumbnail for the page. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-* **upload Beeld**
+* **produceer Voorproef** - produceert een voorproef van de pagina die u als duimnagel wilt gebruiken
+* **uploadt Beeld** - uploadt een beeld dat u als duimnagel wilt gebruiken
+* **Uitgezochte Beeld** - Selecteert een bestaand Activum dat u als duimnagel wilt gebruiken
+* **terugkeren** - deze optie wordt beschikbaar nadat u de duimnagel hebt veranderd. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
 
-  Upload een afbeelding die u als miniatuur wilt gebruiken.
+### Cloud Services {#cloud-services}
 
-* **Uitgezochte Beeld**
-
-  Selecteer een bestaand element dat u als miniatuur wilt gebruiken.
-
-* **terugkeren**
-
-  Deze optie wordt beschikbaar nadat u de miniatuur hebt gewijzigd. Als u de wijziging niet wilt behouden, kunt u die wijziging herstellen voordat u de wijziging opslaat.
-
-### Sociale media {#social-media}
-
-* **Sociale Media die** delen
-
-  Definieert de opties voor delen die beschikbaar zijn op de pagina. Toont de opties die aan [ beschikbaar zijn delend kerncomponent ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=nl-NL).
-
-   * **laat gebruiker toe delend voor Facebook**
-   * **laat gebruiker toe delend voor Pinterest**
-   * **VoorkeurXF variatie**
-Variatie van ervaringsfragment definiëren die wordt gebruikt voor het genereren van metagegevens voor een pagina
-
-### Cloud Servicen {#cloud-services}
-
-* **Cloud Servicen**
-
-  Bepaal eigenschappen voor [ wolkendiensten ](/help/sites-developing/extending-cloud-config.md).
+* **de Configuraties van Cloud Service** - bepaalt welke configuratie voor de wolkendiensten voor de pagina wordt gebruikt
+* **die van** wordt overgeërfd - voor Levende Exemplaren en de Kopieën van de Taal, worden de wolkenconfiguraties door gebrek geërfd van de Vervaging.
+   * Uitschakelen om overerving te overschrijven
 
 ### Personalization {#personalization}
 
-* **Configuraties ContextHub**
+#### ContextHub-configuraties {#contexthub}
 
-  Selecteer de [ Configuratie ContextHub ](/help/sites-developing/ch-configuring.md) en [ Weg van Segmenten ](/help/sites-administering/segmentation.md).
+* **Geërft van** - configuraties ContextHub worden door gebrek geërft van de ouderpagina.
+   * Schakel de optie uit om overerving te overschrijven.
+* **ContextHub Weg** - Selecteert de [ Configuratie ContextHub ](/help/sites-developing/ch-configuring.md)
+* **Weg van Segmenten** - selecteert de [ Weg van Segmenten ](/help/sites-administering/segmentation.md).
 
-* **richtend Configuratie**
+#### Doelconfiguratie {#targeting}
 
-  Selecteer a [ Merk om een werkingsgebied voor het richten ](/help/sites-authoring/target-adobe-campaign.md) te specificeren.
+Selecteer a [ Merk om een werkingsgebied voor het richten te specificeren.](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >Deze optie vereist de gebruikersrekening om in de `Target Adminstrators` groep te zijn.
+>[!NOTE]
+>Deze optie vereist de gebruikersrekening om in de `Target Adminstrators` groep te zijn.
 
 ### Machtigingen {#permissions}
 
-* **Toestemmingen**
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) tot de pagina kunnen toegang hebben en/of wijzigen.
 
-  Op dit tabblad kunt u het volgende doen:
+* [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
+* [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* Bekijk de [ Effectieve Toestemmingen ](/help/sites-administering/user-group-ac-admin.md)
 
-   * [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
-   * [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>Het **lusje van Toestemmingen** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengeling worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond en de toestemmingen van de CUG zijn niet editable, noch is het Vereiste van de Authentificatie op het [ Geavanceerde ](/help/sites-authoring/editing-page-properties.md#advanced) lusje editable.
+>
+>
+>In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
 
-   * Bekijk de [ Effectieve Toestemmingen ](/help/sites-administering/user-group-ac-admin.md)
-
-  >[!CAUTION]
-  >
-  >Het **lusje van Toestemmingen** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengeling worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond en de toestemmingen van de CUG zijn niet editable, noch is het Vereiste van de Authentificatie op het [ Geavanceerde ](/help/sites-authoring/editing-page-properties.md#advanced) lusje editable.
-  >
-  >
-  >In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
-
-  >[!NOTE]
-  >
-  >Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Hiervoor moet CRX Explorer worden gebruikt. Zie het document [ Gebruiker, Groep, en Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
+>[!NOTE]
+>
+>Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Hiervoor moet CRX Explorer worden gebruikt. Zie het document [ Gebruiker, Groep, en Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
 
 ### Blauwdruk {#blueprint}
 
-* **Vervaging**
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [ Multisite Beheer.](/help/sites-administering/msm.md)
 
-  Bepaal eigenschappen voor een pagina van de Vervaging binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+* **Uitvoer** - stelt een uitrol van blauwdrukinhoud aan Levende Exemplaren in werking
+* **Levend Overzicht van het Exemplaar** - opent een venster om de Levende de paginastructuur van het Exemplaar te doorbladeren
+* **Huidige Levende Kopieën** - een lijst van pagina&#39;s die op (namelijk Levende Kopieën van) worden gebaseerd de geselecteerde blauwdrukpagina
+* **Configuratie van de Output** - bepaalt de rollout configuratie voor de pagina
 
 ### Live kopie {#live-copy}
 
-* **Livecopy**
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [ blauwdrukken, ](#blueprint) Levende Exemplaren deel van [ Multisite Beheer zijn.](/help/sites-administering/msm.md)
 
-  Bepaal eigenschappen voor een Levende pagina van het Exemplaar binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven vanuit het deelvenster Vervagen.
+* **synchroniseer** - synchroniseert Levend Exemplaar met blauwdruk, die lokale aanpassingen houden
+* **Teruggestelde** - stelt Levend Exemplaar aan staat van blauwdruk terug, verwijderend lokale wijzigingen
+* **Onderbreek** - onderbreekt Levend Exemplaar van verdere rollout wijzigingen
+* **losmaken** - ontkoppelt Levend Exemplaar van blauwdruk
 
-### Sitestructuur {#site-structure}
+#### Source {#source}
 
-* Verstrek verbindingen aan pagina&#39;s die plaats-brede functionaliteit, zoals **pagina van de Aantekening**, **Off-line Pagina**, onder anderen verstrekken.
+* Hiermee geeft u het pad van de blauwdruk voor deze actieve kopie weer
+
+#### Status {#status}
+
+* Hiermee geeft u de huidige status van Live kopie van de pagina weer
+
+#### Configuratie {#live-copy-config}
+
+* **Levende Overerving van het Exemplaar** - als gecontroleerd, is de Levende configuratie van het Exemplaar efficiënt op alle kinderen.
+* **erven de Vorm van de Output van het Overerven van Bovenliggend** - als gecontroleerd, wordt de rollout configuratie geërft van de ouder van de pagina.
+* **kies Configuratie van de Uitvoer** - bepaalt de omstandigheden waaronder de wijzigingen van het Vervagen en slechts beschikbaar worden verspreid wanneer **Inherit de Vorm van de Uitvoer van Bovenliggend** niet wordt geselecteerd
+* **Lijst van uitgesloten wegen**
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 

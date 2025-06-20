@@ -27,7 +27,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 #### Titel en tags {#tile}
 
 * **Titel** - de titel van de pagina wordt getoond in diverse plaatsen
-   * Bijvoorbeeld, de **het tablijst van Websites** en de **3} kaart/lijstmeningen van Plaatsen {.**
+   * Bijvoorbeeld, de **het tablijst van Websites** en de **3&rbrace; kaart/lijstmeningen van Plaatsen &lbrace;.**
    * Dit is een verplicht veld.
 * **Markeringen** - hier kunt u markeringen toevoegen of verwijderen uit de pagina door de lijst in de selectievak bij te werken.
    * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
@@ -158,7 +158,7 @@ Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ To
 
 Deze sectie wordt gebruikt om het beeld te selecteren en te vormen om te omvatten. Dit wordt gebruikt in componenten die verwijzen naar de pagina, bijvoorbeeld stramienen, paginalijsten, enzovoort.
 
-* **Beeld** - u kunt **** een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
+* **Beeld** - u kunt **&#x200B;**&#x200B;een activa kiezen, of voor een dossier doorbladeren om te uploaden, dan **uitgeven**, of **ontruimen** het geselecteerde beeld.
 * **Alternatieve Tekst** - Tekst die wordt gebruikt om de betekenis en/of functie van het beeld te vertegenwoordigen, algemeen gebruikt door het schermlezers
 * **erven - Waarde die van de activa DAM** wordt genomen - wanneer gecontroleerd, wordt de alternatieve tekst bevolkt met de waarde van de `dc:description` meta-gegevens in DAM.
 

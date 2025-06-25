@@ -4,24 +4,47 @@ description: Functieschakeloptie is een functionaliteit in AEM waarmee beheerder
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 # Functie in Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
-Functieschakeloptie is een functionaliteit in AEM waarmee beheerders specifieke functies dynamisch kunnen in- of uitschakelen. Dit vermogen is met name nuttig om **Vroege eigenschappen van de Ontvanger** en **eigenschappen van de pre-uitgave** te beheren zonder belangrijke plaatsingen of veranderingen in codebase te vereisen. Het verzekert flexibiliteit en controle over welke eigenschappen in een AEM milieu toegankelijk zijn.
+In AEM is de functie In-/uitschakelen een functionaliteit waarmee beheerders bepaalde functies dynamisch kunnen in- of uitschakelen. Dit vermogen is met name nuttig om **Vroege eigenschappen van de Ontvanger** en **eigenschappen van de pre-uitgave** te beheren zonder belangrijke plaatsingen of veranderingen in codebase te vereisen. Het zorgt voor flexibiliteit en controle over welke functies in een AEM-omgeving toegankelijk zijn.
+
+## Waarom de Toggles van de Eigenschap van het Gebruik in AEM 6.5 Opstelling?
+
+Als u werkt in een AEM 6.5-configuratie, kunt u met de functie schakelen naar:
+
+* Het testen van experimentele functies veilig.
+
+* Nieuwe onderdelen in fasen implementeren.
+
+* Eén codebase behouden in meerdere omgevingen.
+
+* Risico&#39;s verminderen tijdens implementaties en upgrades.
+
+## Vereisten
+
+Controleer het volgende voordat u functieschakelingen inschakelt in de AEM 6.5-installatie:
+
+* Gebruiker is lid van de `forms-users` -groep.
+
+* Navigeer naar `http://<author-instance-url>:portnumber/system/console/bundles` en controleer of **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundel aanwezig is of niet. Voor het geval dat het niet aanwezig [ is download de bundel van de verbinding ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+
+  ![ Toggle van de Eigenschap ](/help/forms/using/assets/feature-toggle-6.5.png)
 
 ## Functie in-/uitschakelen {#enable-feature-toggle-65}
 
-De Toggles van de eigenschap voor vroege adopters of nieuwe eigenschappen kunnen door de **AEM Console van het Web** worden gevormd door de hieronder stappen te volgen:
+De Toggles van de eigenschap voor vroege adopters of nieuwe eigenschappen kunnen door de **Console van het Web van AEM** worden gevormd door de hieronder stappen te volgen:
 
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
-3. Onderzoek naar **de Dynamische Leverancier van de Toggle van de Adobe Granite** in de Manager van de Configuratie.
+3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
 4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. In de [!UICONTROL Enabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
 6. Voeg de functie-schakelings-id toe voor de functie, zoals in de onderstaande afbeelding wordt getoond.
@@ -39,7 +62,7 @@ Voer de onderstaande stappen uit om de functieschakeloptie(s) uit te schakelen v
 
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
-3. Onderzoek naar **de Dynamische Leverancier van de Toggle van de Adobe Granite** in de Manager van de Configuratie.
+3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
 4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. In de [!UICONTROL Disabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
 6. Voeg het wisselnummer toe voor de functie die moet worden uitgeschakeld.

@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
 workflow-type: tm+mt
-source-wordcount: '6416'
+source-wordcount: '6615'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,11 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits) 
 
-* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+
+* FORMS-20533: AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u [ kunt downloaden en installeren ](/help/release-notes/aem-forms-hotfix.md) om steun voor de recentste versie van Struts toe te voegen.
+
+* FORMS-20532: AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de uitvoercomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u [ kunt downloaden en installeren ](/help/release-notes/aem-forms-hotfix.md) om steun voor de recentste versie van Struts toe te voegen.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +219,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -253,7 +257,7 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
 
 
 ### [!DNL Forms]{#forms-6523}
@@ -473,7 +477,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -527,7 +531,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -672,7 +676,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
 
@@ -680,9 +684,9 @@ Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor e
 >
 > Upgrade niet naar Service Pack 6.5.23.0 voor problemen waarvoor geen hotfixes beschikbaar zijn, omdat dit tot onverwachte fouten kan leiden. Voer pas een upgrade uit naar Service Pack 6.5.23.0 nadat de vereiste hotfixes zijn uitgebracht.
 
-* Wanneer een gebruiker Struts van AEM Service Pack 2.5.x aan AEM Forms Service Pack 6.x bevordert, ontbreekt UI van het Beleid om alle configuraties, zoals de optie te tonen om een watermerk toe te voegen. (FORMS-20203)
+* Wanneer een gebruiker Struts van AEM Service Pack 2.5.x aan AEM Forms Service Pack 6.x bevordert, ontbreekt UI van het Beleid om alle configuraties, zoals de optie te tonen om een watermerk toe te voegen. U kunt [ downloaden en Hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren de oplossingkwestie.  (FORMS-20203)
 * Na de upgrade naar AEM Forms Service Pack 6.5.23.0 mislukt de conversieservice ImageToPDF met de fout (FORMS-20360):
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` u kunt [ downloaden en Hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren de los kwestie.
 
 * Nadat u AEM Forms JEE Service Pack 21 (6.5.21.0) hebt geïnstalleerd, voert u de volgende stappen uit om het probleem op te lossen als u dubbele vermeldingen van Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de map `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926) vindt:
 
@@ -716,6 +720,8 @@ Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor e
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
+* FORMS-20478: Wanneer u probeert TIFF-bestanden van type 7/8 om te zetten in PDF, mislukt het conversieproces met de fout &quot;ALC-PDG-001-000-Image2Pdf conversion failed, veroorzaakt door: com/sun/image/codec/jpeg/JPEGCodec&quot; en &quot;ALC-PDG-016-000000000 3-Er is een onbekende/onverwachte fout opgetreden tijdens de nabewerking van PDF.&quot; Het systeem probeert opnieuw te proberen met TM ImageIO TIFF-decoder, maar uiteindelijk kan de taak niet worden voltooid. U kunt [ downloaden en hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren om de kwestie te bevestigen.
+
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
@@ -729,10 +735,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)

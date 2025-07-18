@@ -5,24 +5,24 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
 # Status van TouchUI-functie {#touch-ui-feature-status}
 
-Adobe Experience Manager (AEM) 6.4 vanaf [ Klassieke UI wordt afgekeurd ](../release-notes/deprecated-removed-features.md). Adobe maakt geen verdere verhogingen aan Klassieke UI en de gebruikers worden aangemoedigd om de krachtige nieuwe eigenschappen te gebruiken beschikbaar in touch-Toegelaten UI.
+Adobe Experience Manager (AEM) 6.4 vanaf [ Klassieke UI wordt afgekeurd ](../release-notes/deprecated-removed-features.md). Adobe maakt geen verdere verbeteringen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies in de interface met aanraakbediening te gebruiken.
 
-Vanaf versie 6.0 werd AEM een nieuwe gebruikersinterface geïntroduceerd die de &#39;aanraakinterface&#39; (de zogenaamde &#39;aanraakinterface&#39;) wordt genoemd en die is uitgelijnd op de [!DNL Adobe Experience Cloud] en de algemene richtlijnen voor de gebruikersinterface van de Adobe. Met bijna bereikte eigenschappariteit, is dit standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI wordt bedoeld.
+Vanaf versie 6.0 introduceerde AEM een nieuwe gebruikersinterface die de &#39;touch-interface&#39; (de zogenaamde &#39;touch-interface&#39;) wordt genoemd en die is uitgelijnd op de [!DNL Adobe Experience Cloud] en de algemene Adobe-richtlijnen voor de gebruikersinterface. Met bijna eigenschappariteit bereikt, is dit de standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI&quot;wordt bedoeld.
 
 Hoewel de meeste mogelijkheden aanwezig zijn in de interface met aanraakbediening, zijn er functies die nog niet zijn voltooid en in toekomstige versies zullen worden toegevoegd.
 
-In de volgende lijst wordt de status van de mogelijkheden weergegeven, zoals geïmplementeerd in AEM 6.5.
+In de volgende lijst ziet u de status van de mogelijkheden zoals die in AEM 6.5 zijn geïmplementeerd.
 
-Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie {de aanbevelingen van het 0} gebruikersinterface voor klanten [&#128279;](/help/sites-deploying/ui-recommendations.md).
+Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie {de aanbevelingen van het 0} gebruikersinterface voor klanten [.](/help/sites-deploying/ui-recommendations.md)
 
 >[!NOTE]
 >
@@ -57,10 +57,10 @@ Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder (`/siteadmi
 | Zoeken | Voltooid |  |
 | Pagina kopiëren en plakken (dupliceren) | Voltooid |  |
 | Pagina&#39;s verplaatsen | Voltooid |  |
-| Publish-pagina&#39;s | Voltooid |  |
-| Publish-pagina&#39;s zonder replicatierechten | Voltooid |  |
-| Publish later | Voltooid |  |
-| Publish tree | Voltooid |  |
+| Pagina&#39;s publiceren | Voltooid |  |
+| Pagina&#39;s zonder replicatierechten publiceren | Voltooid |  |
+| Later publiceren | Voltooid |  |
+| Boomstructuur publiceren | Voltooid |  |
 | Publicatie van pagina&#39;s ongedaan maken | Voltooid |  |
 | Publicatie van pagina&#39;s zonder replicatierechten ongedaan maken | Voltooid |  |
 | Later verwijderen | Voltooid |  |
@@ -76,7 +76,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder (`/siteadmi
 | Zie taalkopieën | Voltooid |  |
 | Zoeken en vervangen | Ontbreekt | Klassieke gebruikersinterface gebruiken. |
 | Melding in vak (JCR-gebeurtenissen) | Ontbreekt | Klassieke gebruikersinterface gebruiken. In de toekomst vervangen door een andere implementatie. |
-| Verwijzingen | Voltooid | Weergave van inkomende paginakoppelingen toegevoegd aan AEM 6.5. |
+| Verwijzingen | Voltooid | Weergave van inkomende paginakoppelingen die aan AEM 6.5 zijn toegevoegd. Alleen directe koppelingen naar de pagina worden weergegeven om redenen van prestaties. |
 
 ## Functiestatus: Pagina-editor {#feature-status-page-editor}
 
@@ -103,7 +103,7 @@ Dit is een lijst van mogelijkheden de klassieke Redacteur van de Pagina UI (`/cf
 | Workflow starten en weergeven | Voltooid |  |
 | Workflowpakket-verwerking | Meestal | Toegankelijk in de interface met aanraakbediening. De veelvoudige werkschemalading die nog in klassieke UI wordt voorgesteld. |
 | Pagina vergrendelen/ontgrendelen | Voltooid |  |
-| Publish-pagina | Voltooid |  |
+| Pagina publiceren | Voltooid |  |
 | Publicatie van pagina ongedaan maken | Voltooid |  |
 | Pagina kopiëren | Verwijderd | Admin van de Plaats van het gebruik aan [ exemplaarpagina&#39;s ](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Pagina verplaatsen | Verwijderd | Plaats Admin van het gebruik aan [ bewegingspagina&#39;s ](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |

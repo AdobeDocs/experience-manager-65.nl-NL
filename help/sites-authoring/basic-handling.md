@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 1%
 
 ---
@@ -24,16 +24,16 @@ ht-degree: 1%
 >* Deze pagina is ontworpen om een overzicht te geven van de basisverwerking bij gebruik van de Adobe Experience Manager (AEM) Author-omgeving. Het gebruikt de **console van Plaatsen** als basis.
 >
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
->* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [ het gebruiken consoles ](/help/sites-authoring/keyboard-shortcuts.md) en [ het uitgeven pagina&#39;s ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Sneltoetsen zijn beschikbaar in AEM. Met name wanneer [ het gebruiken consoles ](/help/sites-authoring/keyboard-shortcuts.md) en [ het uitgeven pagina&#39;s ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Aan de slag {#getting-started}
 
 ### Een interface met aanraakbediening {#a-touch-enabled-ui}
 
-AEM gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u via aanraking met de software communiceren, bijvoorbeeld door middel van bewegingen voor selecteren, aanraken en vasthouden en vegen. Dit staat in contrast met de manier waarop een traditionele bureaubladinterface werkt met muishandelingen zoals klikken, dubbelklikken, met de rechtermuisknop klikken en mouseover.
+De AEM-gebruikersinterface is ingeschakeld voor aanraking. Met een interface met aanraakbediening kunt u via aanraking met de software communiceren, bijvoorbeeld door middel van bewegingen voor selecteren, aanraken en vasthouden en vegen. Dit staat in contrast met de manier waarop een traditionele bureaubladinterface werkt met muishandelingen zoals klikken, dubbelklikken, met de rechtermuisknop klikken en mouseover.
 
-Aangezien de AEM UI aanraking-toegelaten is, kunt u de aanrakingsgebaren op uw aanrakingsapparaten (bijvoorbeeld, mobiel of tablet) en de muisacties op een traditioneel Desktopapparaat gebruiken.
+Aangezien de gebruikersinterface van de AEM aanraakbediening is, kunt u de aanraakbewegingen op uw aanraakapparaten (bijvoorbeeld mobiel of tablet) en de muishandelingen op een traditioneel desktopapparaat gebruiken.
 
 ### Eerste stappen {#first-steps}
 
@@ -49,7 +49,7 @@ Onmiddellijk na het programma openen komt u op het [ paneel van de Navigatie ](#
 
 ### Productnavigatie {#product-navigation}
 
-Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Klik erdoor zodat krijgt u een goed overzicht van de basisbehandeling van AEM.
+Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Klik hier om een goed overzicht te krijgen van de basisafhandeling van AEM.
 
 ![ Navigatie van het Product ](assets/bh-02.png)
 
@@ -78,7 +78,7 @@ De opties in deze deelvensters worden hieronder beschreven.
 
 ### Deelvenster Navigatie {#navigation-panel}
 
-Het navigatievenster biedt toegang tot de AEM consoles:
+Via het navigatievenster hebt u toegang tot de AEM-consoles:
 
 ![ Navigatie ](assets/bh-01.png)
 
@@ -94,7 +94,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Deze consoles laten u invoeren en <a href="/help/assets/assets.md"> digitale activa </a> zoals beelden, video's, documenten, en audiodossiers beheren. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
+   <td>Deze consoles laten u invoeren en <a href="/help/assets/assets.md"> digitale activa </a> zoals beelden, video's, documenten, en audiodossiers beheren. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM-exemplaar wordt uitgevoerd. </td>
   </tr>
   <tr>
    <td>Gemeenschappen</td>
@@ -122,11 +122,11 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=nl-NL"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>De consoles van Plaatsen laten u <a href="/help/sites-authoring/page-authoring.md"> websites </a> creëren, bekijken en beheren die op uw AEM instantie lopen. Via deze consoles kunt u websitepagina's maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina's publiceren.<br /> </td>
+   <td>De consoles van Plaatsen laten u <a href="/help/sites-authoring/page-authoring.md"> websites </a> creëren, bekijken en beheren die op uw instantie van AEM lopen. Via deze consoles kunt u websitepagina's maken, bewerken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina's publiceren.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -171,7 +171,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   >[!NOTE]
   >
-  >Uit-van-de-doos AEM wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [ Uw Inbox - uit-van-de-doos Administratieve Taken ](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) voor details.
+  >AEM wordt vooraf geladen met beheertaken die zijn toegewezen aan de beheerdersgebruikersgroep. Zie [ Uw Inbox - uit-van-de-doos Administratieve Taken ](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) voor details.
 
 * [Gebruikerseigenschappen](/help/sites-authoring/user-properties.md)
 
@@ -209,7 +209,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Weergaven](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  Het weergavepictogram bevindt zich helemaal rechts van de AEM werkbalk. De huidige weergave wordt ook gewijzigd. Bijvoorbeeld, in de standaardmening, **Mening van de Kolom** het toont:
+  Het weergavepictogram bevindt zich helemaal rechts van de werkbalk van AEM. De huidige weergave wordt ook gewijzigd. Bijvoorbeeld, in de standaardmening, **Mening van de Kolom** het toont:
 
   ![ Mening van de Kolom ](assets/bh-07.png)
 
@@ -237,7 +237,7 @@ Er zijn verschillende beschikbare Help-bronnen:
 
 * **Navigatie**
 
-  De eerste keer u het systeem navigeert, [ een reeks dia&#39;s introduceert AEM navigatie ](/help/sites-authoring/basic-handling.md#product-navigation).
+  De eerste keer u het systeem navigeert, [ een reeks dia&#39;s introduceert de navigatie van AEM ](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Redacteur van de Pagina**
 
@@ -568,15 +568,16 @@ Deze opties zijn toegankelijk als chevron naast het **gebied van de Commentaar**
 
 ### Verwijzingen {#references}
 
-**Verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console [ verwijzingen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) van de Plaatsen** &lbrace;voor pagina&#39;s toont:
+**Verwijzingen** tonen verbindingen aan het geselecteerde middel. Bijvoorbeeld, in de **console** verwijzingen [ van de Plaatsen ](/help/sites-authoring/author-environment-tools.md#showingpagereferences) {voor pagina&#39;s toont:
 
+* [Blauwdrukken](/help/sites-administering/msm.md)
 * [Lanceringen](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live kopieën](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Taalkopieën](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
 
-   * koppelingen van andere pagina&#39;s naar de geselecteerde pagina
-   * inhoud die door de component Reference van de geselecteerde pagina is geleend of geleend, of beide
+   * Directe koppelingen van andere pagina&#39;s naar de geselecteerde pagina
+   * Inhoud die door de component Reference is geleend van, geleend aan of beide op de geselecteerde pagina
 
 ![ bh-28 ](assets/bh-28.png)
 

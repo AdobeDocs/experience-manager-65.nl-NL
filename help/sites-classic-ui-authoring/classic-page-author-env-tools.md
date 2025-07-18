@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Diverse **Hulp** middelen kunnen van binnen AEM direct worden betreden:
 
 Naast de toegang tot van [ hulp van de consolesoolbars ](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), kunt u tot de hulp van sidekick ook toegang hebben (gebruikend? pictogram) bij het bewerken van een pagina:
 
-![ samengevouwen Sidekick ](do-not-localize/sidekick-collapsed-2.png)
+![ Samengevouwen Sidekick ](do-not-localize/sidekick-collapsed-2.png)
 
 Of door de **knoop van de Hulp** in te gebruiken geef dialoog van specifieke componenten uit; dit zal contextgevoelige hulp tonen.
 
@@ -60,7 +60,7 @@ U kunt de zoekfunctie voor inhoud gebruiken om een reeks bronnen te zoeken. U ku
 * [Afbeeldingen](#finding-images)
 * [Documenten](#finding-documents)
 * [Films](#finding-movies)
-* [Dynamic Media-browser](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamische mediasbrowser](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Pagina&#39;s](#finding-pages)
 
 * [Alinea&#39;s](#referencing-paragraphs-from-other-pages)
@@ -156,7 +156,7 @@ u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 
 Met AEM kunt u zien welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
-Verwijzingen naar directe pagina&#39;s weergeven:
+Paginaverwijzingen weergeven:
 
 1. In sidekick, selecteer het **pictogram van het het lusje van de Pagina**.
 
@@ -166,7 +166,11 @@ Verwijzingen naar directe pagina&#39;s weergeven:
 
    ![ screen_shot_2012-02-16at83311pm ](assets/screen_shot_2012-02-16at83311pm.png)
 
-In bepaalde situaties zijn verdere acties beschikbaar bij de Sidekick, waaronder:
+In AEM worden alle pagina&#39;s weergegeven die rechtstreeks naar de geselecteerde pagina verwijzen, evenals alle indirecte referenties. Dit is handig als u alle koppelingen begrijpt die worden bijgewerkt als u de pagina wilt verplaatsen of verwijderen.
+
+## Aanvullende Sidekick-handelingen {#additional-actions}
+
+In bepaalde situaties zijn verdere acties beschikbaar op Sidekick, waaronder:
 
 * [Lanceringen](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Actieve kopieën](/help/sites-administering/msm.md)

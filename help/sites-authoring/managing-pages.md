@@ -5,16 +5,16 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2476'
 ht-degree: 1%
 
 ---
 
 # Pagina&#39;s maken en ordenen {#creating-and-organizing-pages}
 
-Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud [&#128279;](/help/sites-authoring/editing-content.md) op die pagina&#39;s kunt dan  tot stand brengen.
+Deze sectie beschrijft om pagina&#39;s met Adobe Experience Manager (AEM) tot stand te brengen en te beheren zodat u inhoud [ op die pagina&#39;s kunt dan ](/help/sites-authoring/editing-content.md) tot stand brengen.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ In het volgende voorbeeld ziet u een voorbeeld van de website Web.Retail, waar e
 * Auteursomgeving
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Publish omgeving
+* Publicatie-omgeving
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Afhankelijk van de configuratie van uw instantie kan het gebruik van `/content` optioneel zijn in de publicatieomgeving.
@@ -107,7 +107,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Wanneer het creëren van een pagina, AEM [ bevestigt de paginanaam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
+Wanneer het creëren van een pagina, bevestigt AEM [ de paginanaam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
 De minimaal toegestane tekens zijn:
 
@@ -121,11 +121,11 @@ De volledige details van alle toegestane karakters kunnen in [ worden gevonden d
 
 >[!NOTE]
 >
->Als AEM op de plaatsing van de a [ persistentiemanager MongoMK ](/help/sites-deploying/recommended-deploys.md) loopt, zijn de paginanamen beperkt tot 150 karakters.
+>Als AEM op a [ MongoMK persistence manager plaatsing ](/help/sites-deploying/recommended-deploys.md) loopt, zijn de paginanamen beperkt tot 150 karakters.
 
 #### Titel {#title}
 
-Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, AEM leidt de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. A **gebied van de Titel van 0&rbrace; dat ongeldige karakters bevat zal worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben.** Bijvoorbeeld:
+Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt, leidt AEM de pagina **Naam** van dit koord af en [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. A **gebied van de Titel van 0} dat ongeldige karakters bevat zal worden goedgekeurd, maar de afgeleide naam zal de ongeldige karakters vervangen hebben.** Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -134,7 +134,7 @@ Als u slechts een pagina **Titel** wanneer het creëren van een pagina verstrekt
 
 #### Naam {#name}
 
-Wanneer u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. U kunt geen ongeldige karakters op het **gebied van de Naam** voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
+Wanneer u een pagina **Naam** wanneer het creëren van een pagina levert, bevestigt AEM [ de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. U kunt geen ongeldige karakters op het **gebied van de Naam** voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![ caop-02 ](assets/caop-02.png)
 
@@ -150,7 +150,7 @@ In AEM geeft een sjabloon een speciaal type pagina op. Een sjabloon wordt gebrui
 
 De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. De malplaatjes worden samengesteld uit [ componenten ](#components).
 
-AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
+AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
 
 * **Titel**
 De titel die op de resulterende webpagina wordt weergegeven.
@@ -167,7 +167,7 @@ Een lijst met sjablonen die u kunt gebruiken bij het genereren van de nieuwe pag
 
 ### Onderdelen {#components}
 
-Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke typen inhoud kunt toevoegen. AEM komt met een waaier van [ uit-van-de-doos componenten ](/help/sites-authoring/default-components-console.md) die uitvoerige functionaliteit verstrekken. Deze omvatten:
+Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM komt met een waaier van [ uit-van-de-doos componenten ](/help/sites-authoring/default-components-console.md) die uitvoerige functionaliteit verstrekken. Deze omvatten:
 
 * Tekst
 * Afbeelding
@@ -187,7 +187,7 @@ Zodra u hebt gecreeerd en een pagina geopend kunt u [ inhoud toevoegen gebruiken
 
 Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Open de console van Plaatsen (bijvoorbeeld, [ https://localhost:4502/sites.html/content ](https://localhost:4502/sites.html/content)).
+1. Open de console van Plaatsen (bijvoorbeeld, [ https://localhost :4502 /sites.html/content ](https://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
 1. Open de drop-down selecteur gebruikend **creeer** in de toolbar, dan selecteer **Pagina** van de lijst:
 
@@ -216,7 +216,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u een pagina **Naam** wanneer het creëren van een pagina levert, AEM [ bevestigt de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
+      * Als u een pagina **Naam** wanneer het creëren van een pagina levert, bevestigt AEM [ de naam volgens de overeenkomsten ](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
       * U **kunt geen ongeldige karakters** op het **gebied van de Naam** voorleggen. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
@@ -228,7 +228,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
    ![ caop-05 ](assets/caop-05.png)
 
-1. Het gebruik **creeert** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog zal vragen of u **&#x200B;**&#x200B;de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**):
+1. Het gebruik **creeert** om het proces te voltooien en uw nieuwe pagina tot stand te brengen. De bevestigingsdialoog zal vragen of u **** de pagina onmiddellijk wilt openen of aan de console terugkeren (**Gedaan**):
 
    ![ chlimage_1-118 ](assets/chlimage_1-118.png)
 
@@ -275,7 +275,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de toolbar
 
-   En toen het **1&rbrace; paginapictogram van het Exemplaar &lbrace;:**
+   En toen het **1} paginapictogram van het Exemplaar {:**
 
    ![ screen_shot_2018-03-22at105425 ](assets/screen_shot_2018-03-22at105425.png)
 
@@ -289,7 +289,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    ![ Deeg ](assets/paste-without-children.png)
 
    U kunt:
-   * Selecteer het **paginapictogram van het Deeg** &lbrace;zelf: Een exemplaar van de originele pagina en om het even welke kind-pagina&#39;s zullen bij deze plaats worden gecreeerd.
+   * Selecteer het **paginapictogram van het Deeg** {zelf: Een exemplaar van de originele pagina en om het even welke kind-pagina&#39;s zullen bij deze plaats worden gecreeerd.
    * Selecteer de drop-down pijl om **Deeg zonder kinderen** optie te openbaren. Op deze locatie wordt een kopie van de originele pagina gemaakt. Onderliggende pagina&#39;s worden niet gekopieerd.
 
    >[!NOTE]
@@ -320,16 +320,15 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [ wijze van de Selectie ](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de toolbar
 
-   En selecteer dan het **1&rbrace; paginapictogram van de Beweging &lbrace;:**
+   En selecteer dan het **1} paginapictogram van de Beweging {:**
 
    ![ screen_shot_2018-03-22at105534 ](assets/screen_shot_2018-03-22at105534.png)
 
    Hiermee opent u de wizard Verplaatsen pagina.
 
-1. Van **anders noem** stadium van de tovenaar u één van beide kunt:
+1. **noem** stap van de tovenaar anders noemt verstrekt u **Informatie** over de pagina met inbegrip van creatieve datum, weg, en aantal directe verwijzingen. Van hier kunt u:
 
    * Specificeer de naam u de pagina wilt hebben nadat het wordt bewogen, dan klik **daarna** te werk te gaan.
-
    * **annuleert** om het proces af te breken.
 
    ![ caop-07 ](assets/caop-07.png)
@@ -365,7 +364,8 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
+   >* Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
+   >* In deze stap worden zowel directe als indirecte verwijzingen vermeld. Dit kan van het bedrag verschillen dat op **wordt gemeld anders noemt** stap van de tovenaar evenals de verwijzingen die door de verwijzingenspoorstaaf worden gemeld, allebei waarvan slechts directe verwijzingen om prestatiesredenen rapporteren.
 
    ![ caop-09 ](assets/caop-09.png)
 
@@ -384,12 +384,12 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwerkt, zodat de gebruiker de bewerkingen in de gebruikersinterface ongehinderd kan voortzetten.
 
 * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
-   * **&#x200B;**&#x200B;begint nu de uitvoering van de asynchrone baan onmiddellijk.
+   * **** begint nu de uitvoering van de asynchrone baan onmiddellijk.
    * **later** staat de gebruiker toe om te bepalen wanneer de asynchrone baan zal beginnen.
 
   ![ Asynchrone paginabeweging ](assets/asynchronous-page-move.png)
 
-Het statuut van asynchrone banen kan in het **dashboard van de Banen van 0&rbrace; Async [&#128279;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) bij** Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen **&#x200B;**
+Het statuut van asynchrone banen kan in het [**dashboard van de Banen van 0} Async** bij ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) Globale Navigatie **worden gecontroleerd >** Hulpmiddelen **>** Verrichtingen **>** Banen ****
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 >
 
 1. Open de **console van Plaatsen** en navigeer aan de vereiste plaats.
-1. Om de optielijst te openen, creeer **&#x200B;**&#x200B;van de toolbar
+1. Om de optielijst te openen, creeer **** van de toolbar
 1. Selecteer **Omslag** om de dialoog te openen. Hier kunt u de **Naam** ingaan en **Titel**:
 
    ![ chlimage_1-119 ](assets/chlimage_1-119.png)

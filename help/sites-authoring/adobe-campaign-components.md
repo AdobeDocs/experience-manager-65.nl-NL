@@ -133,7 +133,7 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt {op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
+>Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt &lbrace;op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -237,7 +237,7 @@ Hiermee stelt u de hoogte en breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Het **gebied van de Tekst van 0} Alt {op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
+>Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

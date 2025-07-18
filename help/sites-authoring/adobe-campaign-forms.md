@@ -52,7 +52,7 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 
 >[!NOTE]
 >
->Zorg ervoor het **acMapping** bezit op de 2} jcr van de pagina **knoop {aan:content** mapRecipient **of** profiel **wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk wordt geplaatst**
+>Zorg ervoor het **acMapping** bezit op de 2&rbrace; jcr van de pagina **knoop &lbrace;aan:content** mapRecipient **of** profiel **wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk wordt geplaatst**
 >
 
 1. Navigeer in AEM in Sites naar de plaats waar u een pagina wilt maken.

@@ -1,5 +1,5 @@
 ---
-title: Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten
+title: Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten
 description: Een aangepaste paginasjabloon maken waarin Adobe Campaign-formuliercomponenten worden gebruikt
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,29 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
-# Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [&#128279;](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0&rbrace; Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.
+# Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
->[!NOTE]
->
->[ E-mail en vormsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
+Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [ componenten gebruikt van de Vorm van 0} Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (](/help/sites-authoring/adobe-campaign-components.md)) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.`/apps/geometrixx-outdoors/components/page_campaign_profile`
 
 >[!CAUTION]
 >
->De AEM e-mailcomponenten zijn vervangen. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
+>De e-mailcomponenten van AEM zijn vervangen. Door de aard van e-mail, die inhoud en stijl samenvoegt, worden de e-mailcomponenten die door AEM buiten de doos worden verstrekt van beperkte hergebruik voor klanten wegens de behoefte om douanestijlen in om het even welke componenten uit te voeren die voor projecten worden vereist.
 >
->E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
+>E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM-e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
 
 
-Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formuliercomponenten, moet u het volgende doen:
+Als u een aangepaste AEM-paginasjabloon wilt maken met Adobe Campaign-formuliercomponenten, moet u het volgende doen:
 
 1. **Correct resourceSuperType**
 
@@ -44,7 +42,7 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
    ![ chlimage_1-201 ](assets/chlimage_1-201.png)
 
-1. **de Montages van de ClientContext**
+1. **de Montages van ClientContext**
 
    Wanneer u de clientcontext-instellingen ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile` ) bekijkt, ziet u de volgende instellingen:
 

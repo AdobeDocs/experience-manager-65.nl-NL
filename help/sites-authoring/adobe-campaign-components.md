@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2855'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Campaign-componenten{#adobe-campaign-components}
 
@@ -23,20 +25,20 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 
 >[!CAUTION]
 >
->De AEM e-mailcomponenten zijn vervangen. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
+>De e-mailcomponenten van AEM zijn vervangen. Door de aard van e-mail, die inhoud en stijl samenvoegt, worden de e-mailcomponenten die door AEM buiten de doos worden verstrekt van beperkte hergebruik voor klanten wegens de behoefte om douanestijlen in om het even welke componenten uit te voeren die voor projecten worden vereist.
 >
->E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
+>E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM-e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
 
 ## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
-Alle componenten van de Campagne volgen de beste praktijken die in [ worden geschetst Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van de Adobe [ HTML ](https://helpx.adobe.com/nl/experience-manager/htl/using/overview.html).
+Alle componenten van de Campagne volgen de beste praktijken die in [ worden geschetst Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van Adobe [ HTML ](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
 Wanneer u een nieuwsbrief/e-mail opent die om met Adobe Campaign wordt gevormd te integreren, zou u de volgende componenten in de **Newsletter van Adobe Campaign** sectie moeten zien:
 
 * Kop (campagne)
 * Afbeelding (campagne)
 * Koppeling (campagne)
-* Scene7-afbeeldingssjabloon (campagne)
+* Scene7 het Malplaatje van het Beeld (Campagne)
 * Gerichte referentie (campagne)
 * Tekst en afbeelding (campagne)
 * Tekst en Personalization (campagne)
@@ -64,7 +66,7 @@ U kunt het volgende configureren:
 Als u een andere naam dan de paginatitel wilt gebruiken, voert u deze hier in.
 
 * **Kop niveau (1, 2, 3, 4)**
-Het niveau van de rubriek op basis van de grootten 1-4 van de rubriek HTML.
+Het kopniveau op basis van de HTML-rubrieken 1-4.
 
 In het volgende voorbeeld ziet u een component Kop (Campagne) die wordt weergegeven.
 
@@ -131,7 +133,7 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt &lbrace;op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
+>Ga informatie op het **Geavanceerd** gebied van de Tekst van Alt {op het **Geavanceerde** lusje in, of het beeld kan niet opslaan en u ziet het volgende foutenbericht:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -171,13 +173,13 @@ In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergeg
 
 ### Dynamic Media Classic (Scene7)-afbeeldingssjabloon (campagne) {#scene-image-template-campaign}
 
-Dynamic Media Classic (Scene7)-afbeeldingssjablonen zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Bovendien kunt u de metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
+De Malplaatjes van het Beeld van Dynamic Media Classic (Scene7) zijn gelaagde beelddossiers, waar de inhoud en de eigenschappen voor variabiliteit kunnen worden bepaald. Met de component **[!UICONTROL Image template]** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Bovendien kunt u de metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
 
 ![ chlimage_1-49 ](assets/chlimage_1-49.png)
 
-Klik **uitgeven** om de component te vormen. U kunt de instellingen configureren die in deze sectie worden beschreven. Dit malplaatje van het Beeld van Scene7 wordt in detail beschreven in [ de component van het Malplaatje van het Beeld van Scene7 ](/help/assets/scene7.md#image-template).
+Klik **uitgeven** om de component te vormen. U kunt de instellingen configureren die in deze sectie worden beschreven. Dit malplaatje van het Beeld Scene7 wordt beschreven in detail in [ de component van het Malplaatje van het Beeld Scene7 ](/help/assets/scene7.md#image-template).
 
-Daarnaast bevat het parametervenster alle sjabloonparameters die zijn gedefinieerd voor de sjabloon in Scene7. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
+Bovendien maakt het parameterpaneel een lijst van alle malplaatjeparameters die voor het malplaatje in Scene7 zijn bepaald. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
 
 ![ chlimage_1-50 ](assets/chlimage_1-50.png)
 
@@ -235,7 +237,7 @@ Hiermee stelt u de hoogte en breedte van de afbeelding in.
 
 >[!NOTE]
 >
->Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
+>Het **gebied van de Tekst van 0} Alt {op het** Geavanceerde **lusje wordt vereist of de component kan niet opslaan en u ziet het volgende foutenbericht:**
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -246,7 +248,7 @@ In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die w
 
 ### Tekst en Personalization (campagne) {#text-personalization-campaign}
 
-De component van de Tekst &amp; van Personalization (Campagne) laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [ Rich redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Bovendien laat deze component u contextgebieden en verpersoonlijkingsblokken beschikbaar van Adobe Campaign gebruiken; zie ook [ het Opnemen van Personalization ](/help/sites-authoring/campaign.md#inserting-personalization).
+De component van de Tekst &amp; van Personalization (Campagne) laat u een tekstblok ingaan gebruikend een redacteur van WYSIWYG, met functionaliteit die door de [ Rich redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Bovendien laat deze component u contextgebieden en verpersoonlijkingsblokken beschikbaar van Adobe Campaign gebruiken; zie ook [ het Opnemen van Personalization ](/help/sites-authoring/campaign.md#inserting-personalization).
 
 Met de selectie van pictogrammen kunt u de tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing. De functionaliteit is fundamenteel het zelfde in [ beide UIs ](/help/sites-authoring/editing-content.md), hoewel het blik-en-gevoel verschillend is:
 
@@ -265,7 +267,7 @@ In de Inplace redacteur kunt u tekst toevoegen, de rechtvaardiging veranderen, v
 
 >[!NOTE]
 >
->Slechts worden de gebieden die in **worden bepaald nms:seedMember** schema of één van zijn uitbreidingen in aanmerking genomen. De attributen van de lijsten verbonden aan **nms:seedMember** zijn niet beschikbaar.
+>Slechts worden de gebieden die in het **worden bepaald nms:seedMember** schema of één van zijn uitbreidingen in aanmerking genomen. De attributen van de lijsten verbonden aan **nms:seedMember** zijn niet beschikbaar.
 
 ## Adobe Campaign-formuliercomponenten {#adobe-campaign-form-components}
 

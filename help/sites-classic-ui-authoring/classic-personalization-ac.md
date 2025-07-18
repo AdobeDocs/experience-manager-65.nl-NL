@@ -9,9 +9,9 @@ exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -35,5 +35,5 @@ U moet eerder [ geïntegreerde AEM met Adobe Campaign ](/help/sites-administerin
 
 Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 
-* [Aangepaste extensies maken](/help/sites-developing/extending-campaign-extensions.md)
+* [Aangepaste Adobe Campaign-extensies](/help/sites-developing/extending-campaign-extensions.md)
 * [Aangepaste formuliertoewijzingen maken](/help/sites-developing/extending-campaign-form-mapping.md)

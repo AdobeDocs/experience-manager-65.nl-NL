@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -22,13 +23,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Dit artikel is op de afgekeurde Componenten van de Stichting van toepassing die AEM e-mailcomponenten worden gebaseerd.
+>Dit artikel is op de afgekeurde componenten van de Stichting van toepassing die AEM e-mailcomponenten baseren.
 >
->De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)
+>De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 
-De demo-campagne in AEM volgt al deze beste praktijken. Hoe de beste praktijken in de demo campagne worden uitgevoerd wordt beschreven voor elke beste praktijken.
+De demo-campagne in AEM volgt al deze best practices. Hoe de beste praktijken in de demo campagne worden uitgevoerd wordt beschreven voor elke beste praktijken.
 
 Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
@@ -46,7 +47,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 >[!NOTE]
 >
->Wanneer het creëren van een postmalplaatje voor Adobe Campaign, moet u het bezit **acMapping** met de waarde **mapRecipient** in **jcr omvatten:content** knoop van het malplaatje. Als u niet, kunt u niet het malplaatje van Adobe Campaign in **Eigenschappen van de Pagina** van Experience Manager (het gebied is gehandicapt) selecteren.
+>Wanneer het creëren van een postmalplaatje voor Adobe Campaign, moet u het bezit **acMapping** met de waarde **mapRecipient** in de **jcr:content** knoop van het malplaatje omvatten. Als u niet, kunt u niet het malplaatje van Adobe Campaign in **Eigenschappen van de Pagina** van Experience Manager (het gebied is gehandicapt) selecteren.
 
 ## Sjabloon/pagina-component {#template-page-component}
 
@@ -59,7 +60,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
    <td><strong>Implementatie</strong></td>
   </tr>
   <tr>
-   <td><p>Geef het documenttype op zodat u een consistente rendering garandeert.</p> <p>DOCTYPE toevoegen aan het begin (HTML of XHTML)</p> </td>
+   <td><p>Geef het documenttype op zodat u een consistente rendering garandeert.</p> <p>DOCTYPE aan het begin toevoegen (HTML of XHTML)</p> </td>
    <td><p>Is configureerbaar door ontwerp veranderend <i> cq:doctype </i> bezit in <i>"/etc/designs/default/jcr:content/campagne_newsletterpage"</i></p> <p>De standaardwaarde is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kan worden gewijzigd in "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
@@ -80,7 +81,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
   </tr>
   <tr>
    <td>Inline CSS is beter dan het plaatsen van alle CSS aan het begin.</td>
-   <td><p>Om de onderliggende structuur van de HTML beter aan te tonen en de mogelijkheid om de nieuwsbrief-structuur aan te passen te vereenvoudigen, zijn slechts enkele CSS-definities gealigneerd.</p> <p>Basisstijlen en sjabloonvariaties zijn geëxtraheerd naar een stijlblok in de &lt;head&gt; van de pagina. Bij de definitieve indiening van de nieuwsbrief worden deze CSS-definities in de HTML gealigneerd. Een automatisch inlijningsmechanisme is gepland, maar is momenteel niet beschikbaar.</p> </td>
+   <td><p>Om de onderliggende HTML-structuur beter aan te tonen en de mogelijkheid om de nieuwsbrief-structuur aan te passen te vereenvoudigen, zijn slechts enkele CSS-definities gealigneerd.</p> <p>Basisstijlen en sjabloonvariaties zijn geëxtraheerd naar een stijlblok in de &lt;head&gt; van de pagina. Bij de definitieve indiening van de nieuwsbrief zijn deze CSS-definities in de HTML opgenomen. Een automatisch inlijningsmechanisme is gepland, maar is momenteel niet beschikbaar.</p> </td>
   </tr>
   <tr>
    <td>Houd uw CSS eenvoudig. Gebruik geen samengestelde stijldeclaraties, stenocode, CSS-lay-outeigenschappen, complexe kiezers en pseudo-elementen.</td>
@@ -100,7 +101,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 | **Beste praktijken** | **Implementatie** |
 |---|---|
 | Voeg *alt* attributen aan beelden toe | Het *alt* attribuut is bepaald als verplicht voor de beeldcomponent. |
-| Gebruik *jpg* in plaats van *png* formaat voor beelden | Afbeeldingen worden altijd als JPG weergegeven door de afbeeldingscomponent. |
+| Gebruik *jpg* in plaats van *png* formaat voor beelden | Afbeeldingen worden altijd door de afbeeldingscomponent als JPG gebruikt. |
 | Gebruik het element `<img>` in plaats van achtergrondafbeeldingen in een tabel. | Er worden geen achtergrondafbeeldingsgegevens gebruikt in de sjablonen. |
 | Kenmerkstijl=&quot;weergaveblok&quot; toevoegen aan afbeeldingen. Als u dit doet, kunnen ze goed worden weergegeven op Gmail. | Alle beelden bevatten per gebrek *style= &quot;vertoningsblok&quot;* attributen. |
 
@@ -130,12 +131,12 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 | **Beste praktijken** | **Implementatie** |
 |---|---|
 | Gebruik W3C-validatie om de HTML-code te corrigeren. Zorg ervoor dat alle open labels goed zijn gesloten. | Code is gevalideerd. Alleen voor XHTML-overgangsdocumenttype ontbreekt het ontbrekende xmlns-kenmerk voor het `<html>` -element. |
-| Vermijd het gebruik van JavaScript of Flash. Deze technologieën worden vaak niet ondersteund door e-mailclients. | JavaScript of Flash wordt niet gebruikt in de nieuwsbrief sjabloon. |
+| Vermijd het gebruik van JavaScript of Flash. Deze technologieën worden vaak niet ondersteund door e-mailclients. | JavaScript of Flash wordt niet gebruikt in de sjabloon voor nieuwsbrieven. |
 | Voeg een gewone tekstversie toe voor het verzenden van meerdere onderdelen. | Er is een nieuwe widget ingebouwd in de pagina-eigenschappen om eenvoudig een plaintekstversie uit de pagina-inhoud te extraheren. U kunt deze gebruiken als beginpunt voor de laatste plaintext-versie. |
 
 ## Sjablonen en voorbeelden voor nieuwsbrieven voor campagnes {#campaign-newsletter-templates-and-examples}
 
-AEM wordt geleverd met verschillende sjablonen en componenten uit de doos die u kunt gebruiken om campagnebulletins te maken. U kunt deze sjablonen en componenten gebruiken om uw aangepaste nieuwsbrieven te maken.
+AEM wordt geleverd met verschillende sjablonen en componenten uit de verpakking die u kunt gebruiken voor het maken van nieuwsbrieven voor campagnes. U kunt deze sjablonen en componenten gebruiken om uw aangepaste nieuwsbrieven te maken.
 
 ### Sjablonen {#templates}
 
@@ -147,7 +148,7 @@ Al hebben a **kopbal**, a **footer**, en a **lichaam** sectie. Onder de lichaams
 
 ### Onderdelen {#components}
 
-Er zijn momenteel [ zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes ](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de de prijsverhogingstaal van de Adobe **HTML**.
+Er zijn momenteel [ zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes ](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de prijsverhogingstaal van Adobe **HTML**.
 
 | **de naam van de Component** | **de weg van de Component** |
 |---|---|

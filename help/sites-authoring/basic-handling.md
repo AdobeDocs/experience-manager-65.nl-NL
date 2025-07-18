@@ -122,7 +122,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=nl-NL"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
   </tr>
   <tr>
    <td>Sites</td>

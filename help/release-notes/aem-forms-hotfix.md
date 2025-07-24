@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
 >
 > De hotfixes zijn cumulatief ontworpen en omvatten alle voorafgaande fixes. Wanneer u de nieuwste hotfix toepast op een release, wordt niet alleen het meest recente probleem opgelost, maar worden ook alle eerdere correcties en verbeteringen aangebracht.
 
-## Hotfixes voor adaptieve Forms {#hotfix-for-adaptive-forms}
+## Hotfixes voor AEM Forms {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -46,7 +46,16 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     </td>
     <td>
     <ul>
-    <li>SP23 Hotfix voor AEM Forms op JEE</li>
+    <li><strong> dit hotfix bevestigt het volgende:</strong>
+      <ul>
+        <li><strong> FORMS-20533:</strong> AEM Forms omvat nu een verbetering van de versie van Struts van 2.5.33 aan 6.x voor de vormencomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De ondersteuning is toegevoegd via een hotfix die u kunt downloaden en installeren om ondersteuning toe te voegen voor de nieuwste versie van Struts.</li>
+        <li><strong> FORMS-20532:</strong> AEM Forms omvat nu een verbetering van de versie van Struts van 2.5.33 aan 6.x voor de outputcomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De ondersteuning is toegevoegd via een hotfix die u kunt downloaden en installeren om ondersteuning toe te voegen voor de nieuwste versie van Struts.</li>
+        <li><strong> FORMS-20203:</strong> wanneer een gebruiker steunen van AEM Service Pack 2.5.x aan AEM Forms Service Pack 6.x bevordert, ontbreekt UI van het Beleid om alle configuraties, zoals de optie te tonen om een watermerk toe te voegen. U kunt de hotfix downloaden en installeren om dit probleem op te lossen.</li>
+        <li><strong> FORMS-20360:</strong> Na bevordering aan AEM Forms Service Pack 6.5.23.0, ontbreekt de de omzettingsdienst ImageToPDF met de fout:<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        U kunt de hotfix downloaden en installeren om dit probleem op te lossen.</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>

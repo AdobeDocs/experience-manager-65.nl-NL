@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
+source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,67 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td><strong>Opgeloste problemen</strong></td>
   </tr>
   <tr>
-    <td>SP23 Hotfix-</td>
+    <td>
+      <strong> aug 05, 2025 </strong><br>
+      <em> is op van toepassing:</em> AEM 6.5 Forms Service Pack 23 <br>
+      <em> instructies van de Opstelling:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
+        XE-, configuratie- en externe code-uitvoering beperken (CVE-2025-49533)-kwetsbaarheden voor AEM Forms op JEE
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Reliëf:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Vensters voor server JBoss JEE </a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Linux voor server JBoss JEE </a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Vensters voor de server van de Weblogic JEE </a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Linux voor de server van de Weblogic JEE </a></li>
+    <li><strong>Websfeer:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Vensters voor de server van JEE Websphere </a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip"> Hotfix2 voor AEM Service Pack 6.5.23.0 op Linux voor de server van Websphere JEE </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Verbeterde beveiliging door een RCE-kwetsbaarheid (Remote Code Execution) in Adobe Experience Manager (AEM) Forms aan te pakken. De kwestie hield verband met de ontwikkelingswijze van Struts in het admin gebruikersinterface (UI), die willekeurige voorwerp-Grafiek de Taal van de Navigatie (OGNL) beoordeling door zuivert functionaliteit toeliet. Deze moeilijke situatie zorgt ervoor dat de de ontwikkelingswijze van Struts wordt onbruikbaar gemaakt en de aangewezen veiligheidsfilters worden toegepast om onbevoegde toegang te verhinderen.</li>
+    <li>Verbeterde bescherming tegen XE-kwetsbaarheden (Extensible Markup Language) in de module Electronic Document Component (EDC) van Adobe Experience Manager (AEM) Forms. De kwetsbaarheden zijn veroorzaakt door een onjuiste verwerking van XML-documenten zonder XXE-beveiliging, wat kan leiden tot het lezen van lokale bestanden. De oplossing omvat:
+      <ul>
+        <li>Ervoor zorgen dat DocumentBuilderFactory in de klasse SecurityCheckHandler wordt gebruikt wordt gevormd om aanvallen van XXE te verhinderen.</li>
+        <li>De EDC-webservice bijwerken om XML-documenten veilig te verwerken, zodat onbevoegde toegang tot lokale bestanden wordt voorkomen.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <strong> aug 05, 2025 </strong><br>
+      <em> is op van toepassing:</em> AEM 6.5 Forms Service Pack 18 - 22 <br>
+      <em> instructies van de Opstelling:</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
+        Handmatige hotfix-installatie voor servicepacks 18-22
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">Reparatie voor AEM 6.5 Forms Service Pack 18 - AEM 6.5 Forms Service Pack 22 </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>Verbeterde beveiliging door een RCE-kwetsbaarheid (Remote Code Execution) in Adobe Experience Manager (AEM) Forms aan te pakken. De kwestie hield verband met de ontwikkelingswijze van Struts in het admin gebruikersinterface (UI), die willekeurige voorwerp-Grafiek de Taal van de Navigatie (OGNL) beoordeling door zuivert functionaliteit toeliet. Deze moeilijke situatie zorgt ervoor dat de de ontwikkelingswijze van Struts wordt onbruikbaar gemaakt en de aangewezen veiligheidsfilters worden toegepast om onbevoegde toegang te verhinderen.</li>
+    <li>Verbeterde bescherming tegen XE-kwetsbaarheden (Extensible Markup Language) in de documentbeveiligingsmodule van Adobe Experience Manager (AEM) Forms. De kwetsbaarheden zijn veroorzaakt door een onjuiste verwerking van XML-documenten zonder XXE-beveiliging, wat kan leiden tot het lezen van lokale bestanden. De oplossing omvat:
+      <ul>
+        <li>Ervoor zorgen dat DocumentBuilderFactory in de klasse SecurityCheckHandler wordt gebruikt wordt gevormd om aanvallen van XXE te verhinderen.</li>
+        <li>De documentbeveiligingswebservice bijwerken om XML-documenten veilig te verwerken, zodat onbevoegde toegang tot lokale bestanden wordt voorkomen.</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>10 jul. 2025-</td>
     <td>
     <ul>
     <li><strong>Reliëf:</strong></li>
@@ -192,7 +252,7 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
   <tbody>
 </table>
 
-## Een hotfix downloaden en installeren {#download-install-hotfix}
+## Een OSGi Hotfix downloaden en installeren {#download-install-hotfix}
 
 Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 
@@ -200,6 +260,10 @@ Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
 1. Upload en installeer het pakket (.zip) via de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Open de bundels voor configuratiebeheer `https://server:host/system/console/bundles`, upload en installeer de bundel (.jar). De hotfix is geïnstalleerd.
+
+## Een JEE-patch installeren {#download-install-jee-patch}
+
+Voor instructies om een flard te installeren JEE, zie de [ documentatie van de Installateur van de Reparatie van AEM Forms JEE ](/help/release-notes/jee-patch-installer-65.md).
 
 
 ## Hotfix downloaden en installeren voor conceptversie van brief {#install-hotfix}

@@ -265,4 +265,4 @@ Als u Documentbeveiliging gebruikt (voorheen Rights Management), stelt u de volg
 - [ CWE-611: Onjuiste Beperking van de Verwijzing van de Entiteit van XML Externe ](https://cwe.mitre.org/data/definitions/611.html)
 - [ CWE-16: Configuratie ](https://cwe.mitre.org/data/definitions/16.html)
 - [ OWASP XXE Preventie het Blad ](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
+- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL)

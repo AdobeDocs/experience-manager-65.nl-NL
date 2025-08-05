@@ -9,9 +9,9 @@ role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: cacad43c2c32a1a14de0ea5f845818018ba8b2ec
+source-git-commit: 9be9bfc9e20a151afdb9ae2cddcc39b4d2701c1b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '675'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
 ### Optie 2: (Voor gebruikers met 6.5.18.0 - 6.5.22.0) Handmatige hotfix-installatie
 
-+++Handmatige hotfix-installatie voor 6.5.18.0 - 6.5.22.0
++++Handmatige hotfix-installatie voor 6.5.18.0 via 6.5.22.0
 
 **Stap 1: De download en trekt het Hotfix Pakket** uit
 
@@ -260,4 +260,4 @@ Als u Documentbeveiliging gebruikt (voorheen Rights Management), stelt u de volg
 - [ CWE-611: Onjuiste Beperking van de Verwijzing van de Entiteit van XML Externe ](https://cwe.mitre.org/data/definitions/611.html)
 - [ CWE-16: Configuratie ](https://cwe.mitre.org/data/definitions/16.html)
 - [ OWASP XXE Preventie het Blad ](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL)
+- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)

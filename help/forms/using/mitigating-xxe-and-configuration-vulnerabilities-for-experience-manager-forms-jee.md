@@ -6,16 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-exl-id: c8f3e7c1-d5a2-4e2f-8b9c-1a8d7f8e2a9b
+exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
+source-git-commit: 8420597b7ee09b15a7f0004acc64e3625771a4d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
-
 
 # Beperkende RCE (CVE-2025-49533), standaard-ontwikkelmodus configuratie (CVE-2025-54253), XXE (CVE-2025-54254) en kwetsbaarheden voor AEM Forms op JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
@@ -67,22 +66,18 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 ### Optie 1: (Voor gebruikers op versie 6.5.23.0) Nieuwste hotfix installeren
 
 1. [ Download hotfix voor 6.5.23.0](/help/release-notes/aem-forms-hotfix.md).
-2. Volg standaard [ hotfix/flardinstallatie instructies ](/help/release-notes/jee-patch-installer-65.md)
-3. Als u Documentbeveiliging (voorheen Rights Management) gebruikt op IBM WebSphere of Oracle WebLogic, stelt u de volgende Java-systeemeigenschap (JVM-argument) in voordat u de AEM Forms-server start:
+1. Volg standaard [ hotfix/flardinstallatie instructies ](/help/release-notes/jee-patch-installer-65.md)
+1. Als u Documentbeveiliging (voorheen Rights Management) gebruikt op IBM WebSphere of Oracle WebLogic, stelt u de volgende Java-systeemeigenschap (JVM-argument) in voordat u de AEM Forms-server start:
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
    ```
 
-4. De toepassingsserver opnieuw starten
-
-</details>
+1. De toepassingsserver opnieuw starten
 
 ### Optie 2: (Voor gebruikers met 6.5.18.0 - 6.5.22.0) Handmatige hotfix-installatie
 
-
-<details>
-<summary><b> Hand Hotfix Installatie voor 6.5.18.0 - 6.5.22.0 </b></summary>
++++<b> Handmatige hotfix-installatie voor 6.5.18.0 - 6.5.22.0</b>
 
 **Stap 1: De download en trekt het Hotfix Pakket** uit
 
@@ -125,7 +120,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/jboss/adminui.war`
 
-2. Ga in de `adobe-core-jboss.ear` naar de `lib/` map en vervang `adobe-uisupport.jar` door:
+1. Ga in de `adobe-core-jboss.ear` naar de `lib/` map en vervang `adobe-uisupport.jar` door:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -133,10 +128,10 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
+1. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
 
 
-4. `adobe-edcserver-jboss.ear` vervangen door
+1. `adobe-edcserver-jboss.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-edcserver-jboss.ear
@@ -144,7 +139,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/jboss/adobe-edcserver-jboss.ear`
 
-5. `adobe-forms-jboss.ear` vervangen door
+1. `adobe-forms-jboss.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-forms-jboss.ear
@@ -164,7 +159,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/weblogic/adminui.war`
 
-2. In de `adobe-core-weblogic.ear` vervangt u `adobe-uisupport.jar` door:
+1. In de `adobe-core-weblogic.ear` vervangt u `adobe-uisupport.jar` door:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -172,10 +167,10 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
+1. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
 
 
-4. `adobe-edcserver-weblogic.ear` vervangen door
+1. `adobe-edcserver-weblogic.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-edcserver-weblogic.ear
@@ -183,7 +178,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/weblogic/adobe-edcserver-weblogic.ear`
 
-5. `adobe-forms-weblogic.ear` vervangen door
+1. `adobe-forms-weblogic.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-forms-weblogic.ear
@@ -201,7 +196,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/websphere/adminui.war`
 
-2. In de `adobe-core-websphere.ear` vervangt u `adobe-uisupport.jar` door:
+1. In de `adobe-core-websphere.ear` vervangt u `adobe-uisupport.jar` door:
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -209,10 +204,10 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
+1. Sla het EAU op. Controleer of de wijzigingen correct zijn opgeslagen.
 
 
-4. `adobe-edcserver-websphere.ear` vervangen door
+1. `adobe-edcserver-websphere.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-edcserver-websphere.ear
@@ -220,7 +215,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
    Bijvoorbeeld: `adobe-xxe-configuration-hotfix/SP20/websphere/adobe-edcserver-websphere.ear`
 
-5. `adobe-forms-websphere.ear` vervangen door
+1. `adobe-forms-websphere.ear` vervangen door
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-forms-websphere.ear
@@ -253,16 +248,16 @@ Als u Documentbeveiliging gebruikt (voorheen Rights Management), stelt u de volg
 
 - Start de configuratiemanager om het bijgewerkte EAR opnieuw te implementeren en de hotfix toe te passen
 
-</details>
++++
 
 ### Optie 3: (Voor gebruikers op 6.5.17.0 en eerder) Upgradepad
 
 1. [Upgrade naar een ondersteunde versie van Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-2. Optie 1 of Optie 2 volgen op basis van uw nieuwe versie
+1. Optie 1 of Optie 2 volgen op basis van uw nieuwe versie
 
 ## Verwijzingen
 
 - [ CWE-611: Onjuiste Beperking van de Verwijzing van de Entiteit van XML Externe ](https://cwe.mitre.org/data/definitions/611.html)
 - [ CWE-16: Configuratie ](https://cwe.mitre.org/data/definitions/16.html)
 - [ OWASP XXE Preventie het Blad ](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL)
+- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)

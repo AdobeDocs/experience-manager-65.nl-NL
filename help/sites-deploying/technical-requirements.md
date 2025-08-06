@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fd54e28f5d774ca7ef42f2c81a7b57e125fdb1be
+source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
 workflow-type: tm+mt
-source-wordcount: '3706'
+source-wordcount: '3539'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machi
 | Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` | |
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10, en Java™ 12 zijn niet-LTS versies door Oracle (zie [ Oracle Java™ SE steunroadmap ](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in een productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. De ondersteuning en distributie van de Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt rechtstreeks door Adobe ondersteund voor alle AEM-klanten die de Oracle Java™ SE-technologie gebruiken. Zie het [ Java™ steunbeleid voor Adobe Experience Manager ](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Belangrijk: Oracle Java™ 11 wordt gesteund tot minstens september 2026. Oracle Java™ 17 en 21 worden gesteund op [ AEM 6.5 LTS ](https://experienceleague.adobe.com/nl/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Belangrijk: Oracle Java™ 11 wordt gesteund tot minstens september 2026. Oracle Java™ 17 en 21 worden gesteund op [ AEM 6.5 LTS ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE wordt alleen ondersteund in combinatie met WebSphere® Application Server.
 
@@ -250,7 +250,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=nl-NL) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -260,7 +260,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -461,9 +461,7 @@ Voor Windows x86:
 * 10.9.x en hoger
 * Alleen ondersteund voor proefversie en demo-doeleinden
 
-### Eisen voor AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
-
-### Softwareondersteuning voor PDF Generator {#software-support-for-pdf-generator}
+### Overwegingen voor PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -472,70 +470,36 @@ Voor Windows x86:
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2020 het klassieke spoor </a> recentste versie</td>
-   <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat Pro DC </a> recentste versie</td>
+   <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML en HTM</td>
   </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html"> Acrobat 2017 klassieke spoorversie </a> (Vervangen)</td>
-   <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
+
+<tr>
+   <td>Microsoft® Office 2021 Professional Plus-, retail- en volumelicenties</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (afgekeurd)</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
+   <td>
+    <strong> OpenOffice 4.1.15 </strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM F en TXT<br>
+
+</td>
   </tr>
-  <tr>
-   <td>WordPerfect 2020 <br /> </td>
-   <td>WP, WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office Visio 2016 (Afgekeurd) <br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019 <br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (Afgekeurd) <br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (Afgekeurd) <br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM F en TXT</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (afgekeurd)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM F en TXT</td>
-  </tr>  
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
->
->Daarnaast
->
->* PDF Generator vereist een versie met 32 bits van [ Acrobat 2020 klassieke spoorversie 20.004.30006 ](https://helpx.adobe.com/nl/acrobat/release-note/release-notes-acrobat-reader.html) om de omzetting uit te voeren.
+>* PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+>* Voor PDF Generator is Adobe Acrobat Pro DC (32-bits) vereist om de conversie uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie.
->* De Microsoft® Office Professional Plus-installatie kan gebruikmaken van een volumelicentie op basis van Retail of MAK/KMS/AD.
 >* Als een Microsoft® Office-installatie om welke reden dan ook gedeactiveerd of zonder licentie wordt, zoals een installatie met volumelicentie die binnen een bepaalde periode geen KMS-host kan vinden, kunnen conversies mislukken totdat de installatie opnieuw in licentie wordt gegeven en opnieuw wordt geactiveerd.
->* PDF Generator ondersteunt de 32-bits versie van OpenOffice op het Linux®-besturingssysteem.
 >* PDF Generator ondersteunt Microsoft® Office 365 niet.
 >* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
->* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. Programmaticaal toegang tot de gebundelde versie alleen met AEM Forms, tijdens de looptijd van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Premise ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 10.
->* PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019.
->* PDF Generator kan bestanden niet converteren met Microsoft® Project 2019.
+>* Een versie van Acrobat wordt meegeleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. De gebundelde versie mag tijdens de looptijd van de AEM Forms-licentie alleen via programmacode met AEM Forms worden geopend, alleen voor gebruik met AEM Forms PDF Generator. Voor meer informatie, zie het productbeschrijving van AEM Forms zoals per uw plaatsing ([ op-Woonplaats ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [ Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* PDF Generator service biedt geen ondersteuning voor Microsoft® Windows 11.
 
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 

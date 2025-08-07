@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '9894'
+source-wordcount: '9928'
 ht-degree: 0%
 
 ---
@@ -254,6 +254,12 @@ Het installatieproces voor Adobe Acrobat Pro DC voor Microsoft Office-installati
 
 Elk tabblad bevat op maat gemaakte instructies die zijn geoptimaliseerd voor uw specifieke installatie, zodat u configuratieproblemen kunt voorkomen en ervoor kunt zorgen dat de licenties op de juiste wijze worden nageleefd.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>De video demonstreert het installatieproces voor een Retail-licentie - Single User-configuratie. Voor andere plaatsingsscenario&#39;s (Detailhandel - Veelvoudige Gebruikers, Vergunning van het Volume - Enige Gebruiker, of Vergunning van het Volume - Veelvoudige Gebruikers), verwijs naar de specifieke stap 9 instructies in de overeenkomstige lusjes hieronder om behoorlijk serveropstarten en vergunningsactivering voor uw plaatsingstype te verzekeren.
+
 >[!BEGINTABS]
 
 >[!TAB  Detailhandel Vergunning - Enige Gebruiker ]
@@ -269,13 +275,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -419,13 +425,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -575,13 +581,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -701,7 +707,7 @@ Nadat u de vorige versie hebt verwijderd, moet u een compatibele versie van Adob
 Nadat u alle processen hebt voltooid, voert u een snelle actietest uit om te bevestigen dat de installatie geldig is:
 
 1. Gebruik RDP (Remote Desktop) om u aan te melden bij de server en AEM Forms-server te starten met services.
-2. Gebruik RDP (Remote Desktop) om u aan te melden bij de server en de AEM Forms-server te starten met Windows Services. Sluit het RDP-venster niet als de server eenmaal is gestart. In plaats daarvan, duidelijk teken uit door de gebruiker te registreren - dit verzekert de zitting schoon beëindigt terwijl de dienst op de achtergrond blijft lopen.
+2. Sluit het RDP-venster niet als de server eenmaal is gestart. In plaats daarvan, duidelijk teken uit door de gebruiker te registreren - dit verzekert de zitting schoon beëindigt terwijl de dienst op de achtergrond blijft lopen.
 
 ###### Stap 10: Test de PDF Generator-service
 
@@ -732,13 +738,13 @@ Deze stappen moeten met *toegang van de Beheerder van het Systeem* tot Adobe Adm
 ###### Stap 1: Aanmelden bij de Adobe Admin Console
 
 1. Open Webbrowser en navigeer aan [ Adobe Admin Console ](https://adminconsole.adobe.com/)
-1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0&rbrace; Systeem.*
+1. Login gebruikend een rekening met *voorrechten van de Beheerder van het 0} Systeem.*
 1. (Optioneel) Als uw organisatie toegang heeft tot meerdere IMS-besturingssystemen, gebruikt u de optie voor het selecteren van organisaties in de rechterbovenhoek van de Admin Console om de juiste organisatie te kiezen. In de meeste klantenscenario&#39;s, zou dit reeds aan het gebrek van uw organisatie worden geplaatst, aangezien de gebruikers typisch toegang tot slechts hun eigen Org hebben.
 
 ###### Stap 2: Maak het FRL-pakket
 
 1. Navigeer in de Admin Console naar het tabblad &quot;Pakketten&quot;. Dit is een Adobe Admin Console-pakket, geen AEM-pakket.
-1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0&rbrace; en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
+1. Selecteer de **kaart van de Vergunning Beperkte van de Eigenschap 0} en klik** krijgen Begonnen **knoop.** Zorg ervoor dat u het juiste type licentie selecteert.
 1. Voor **creeer een pakket** scherm, vorm de pakketmontages:
 
    | Instelling | Aanbevolen waarde | Notities |
@@ -890,7 +896,7 @@ Voer de volgende stappen uit:
 1. Open **de Acrobaat van Adobe Pro gelijkstroom** op de server.
 2. Ga naar **Menu** > **Voorkeur**.
 3. In het venster van de Voorkeur, uitgezochte **(Uitgebreide) Veiligheid** van de linkerruit.
-4. Onder de **sectie van de Beschermingen Sandbox 0&rbrace;,** uncheck **de optie** &quot;laat Beveiligde Wijze bij opstarten toe&quot;**.**
+4. Onder de **sectie van de Beschermingen Sandbox 0},** uncheck **de optie** &quot;laat Beveiligde Wijze bij opstarten toe&quot;**.**
 5. Klik **ja** als ertoe aangezet voor bevestiging.
 6. Klik **O.K.** om uw veranderingen te bewaren en het venster van de Voorkeur te sluiten.
 7. Start Adobe Acrobat Pro DC opnieuw om de wijzigingen van kracht te laten worden.
@@ -1392,7 +1398,7 @@ Alvorens de volgende controles uit te voeren, zorg ervoor dat [ Hulpmiddel van d
 
 +++
 
-+++ HTML naar PDF conversieproblemen
+++ + HTML naar PDF conversieproblemen
 
 * Zorg ervoor dat de mappen met fonts worden toegevoegd in de PDF Generator config-gebruikersinterface.
 

@@ -5,9 +5,9 @@ landing-page-description: Meer informatie over de Adobe Experience Hub, een cent
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
+source-git-commit: b7977fcc76a3d8b4ec9e8d9e8ae8622ff13a441a
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-De **sectie van Milieu&#39;s van de Authoring** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
+De **sectie van Milieu&#39;s van de Authoring** {toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
@@ -75,7 +75,7 @@ De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een l
 
 ![ Snelle Kortere weg van Experience Hub ](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
 
-Als er geen productie-AEM Cloud Service of Managed Services-omgevingen bestaan, worden de selectieopties grijs en niet beschikbaar weergegeven.
+Als er geen productie-AEM Cloud Service of Managed Services-omgevingen bestaan, worden de selectieopties grijs weergegeven (niet beschikbaar).
 
 ![ Experience Hub op productiemilieu&#39;s ](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 

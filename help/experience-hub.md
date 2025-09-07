@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 276b7bb5462e4dd0dfbb27c94f759a89afb815cf
+source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub introduceert een gecentraliseerd beginpunt voor het beheer van in
 
 Bekijk een snelle rondleiding door de opnieuw bedacht AEM Experience Hub-werkruimte (4 minuten, 9 seconden).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471447?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -66,7 +66,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-De **sectie van Milieu&#39;s van de Authoring** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
+De **sectie van Milieu&#39;s van de Authoring** {toont alle milieu&#39;s van AEM toegankelijk voor u, met specifieke kortere weg voor de oplossingen en de pagina&#39;s beschikbaar voor hen ook latend u specifieke milieu&#39;s vastzetten die u bij de bovenkant van de lijst wilt tonen.
 
 De **sectie van Recenten**, die in het beeld hieronder wordt gezien, maakt een lijst van pagina&#39;s u onlangs in AEM bezocht. Afhankelijk van het licentiebeleid van uw huurder, kan de widget items bevatten zoals Programma, Uitvoering van pijplijn, Assets, Pagina-editor en Formuliereditor.
 
@@ -82,4 +82,4 @@ Als er geen productie-AEM Cloud Service of Managed Services-omgevingen bestaan, 
 
 ## AI Assistant in AEM
 
-Voor klanten die [ voltooide noodzakelijke criteria ](/help/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/ai-assistant-in-aem.md).
+Voor klanten die [ voltooide noodzakelijke criteria ](/help/ai-assistant-in-aem.md#get-access) hebben, is de Medewerker van AI in AEM beschikbaar aan gebruikers van hun organisatie. Zie [ Medewerker AI in AEM ](/help/ai-assistant-in-aem.md).

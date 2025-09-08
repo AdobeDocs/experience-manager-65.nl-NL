@@ -35,7 +35,7 @@ Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub,
 
 De volgende 3 minuten, 39 seconden video levert een geleidelijke analyse van AI Medewerker in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470361?learn=on&captions=dut)
 
 ## Toegang tot AI Assistant in AEM{#get-access}
 

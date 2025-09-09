@@ -233,11 +233,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -271,7 +271,7 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
 
 
 ### [!DNL Forms]{#forms-6523}
@@ -491,7 +491,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]

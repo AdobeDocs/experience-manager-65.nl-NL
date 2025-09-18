@@ -104,7 +104,7 @@ Het artikel van de verwijzing: [ wijst douanetoestemmingen aan het nieuwe produc
 
    ![ Gebruikersgroepen ](/help/assets/assets-ai/ai-assistant-user-groups.png)
 
-1. Op de **pagina van de Groepen van de Gebruiker 0} {, klik** Nieuwe gebruikersgroep **.**
+1. Op de **pagina van de Groepen van de Gebruiker 0&rbrace; &lbrace;, klik** Nieuwe gebruikersgroep **.**
 
    ![ Nieuwe knoop van de gebruikersgroep op de pagina van de Gebruikersgroepen ](/help/assets/assets-ai/ai-assistant-new-user-group.png)
 
@@ -131,7 +131,7 @@ U kunt een bestaande AEM-gebruikersgroep gebruiken als deze voldoet aan de verei
 
 >[!BEGINTABS]
 
->[!TAB  voeg individuele gebruikers ] toe
+>[!TAB voeg individuele gebruikers  toe]
 
 1. Op de **pagina van de Gebruikersgroepen**, in de **naam van de Groep** lijst, klik de naam van de gebruikersgroep die u, of een bestaande naam van de gebruikersgroep onlangs creeerde.
 
@@ -174,7 +174,7 @@ Het artikel van de verwijzing: [ beheert productprofielen voor ondernemingsgebru
 
    ![ de &quot;Assign producten en profielen&quot;pagina, die de &quot;Uitgezochte productprofielen&quot;dialoogdoos toont, en het &quot;AI Medewerker&quot;geselecteerde productprofiel ](/help/assets/assets-ai/ai-assistant-select-product-profile.png)
 
-1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **** toe.
+1. Vlak de laag-juiste hoek van de dialoogdoos, past de klik **&#x200B;**&#x200B;toe.
 1. Vlak de laag-juiste hoek van **wijs producten en profielen** pagina toe, klik **sparen**.
 
    {het profiel van het 0} AI Hulpproduct dat aan AI Medewerker in de gebruikersgroep van AEM wordt toegewezen ![](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)

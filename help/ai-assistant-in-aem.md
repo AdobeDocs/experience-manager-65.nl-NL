@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 646816ab50c432c86772c228878f8114854c320f
+source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1311'
 ht-degree: 2%
 
 ---
@@ -35,32 +35,27 @@ Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub,
 
 De volgende 3 minuten, 39 seconden video levert een geleidelijke analyse van AI Medewerker in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470361?learn=on&captions=dut)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Toegang tot AI Assistant in AEM{#get-access}
 
-Om gebruikers toegang tot AI Medewerker in AEM te verlenen, moet uw Admin van Adobe de volgende douanetoestemmingen voor de profielen vormen die toegang in **Adobe Admin Console** vereisen:
+Klanten moeten het volgende hebben om toegang te krijgen tot AI Assistant in AEM:
 
-* **AI Hulp toegang** - Toestemming om AI Medewerker in AEM voor productkennis te gebruiken, die gebruikers toestaat om op product betrekking hebbende vragen in AI HulpChat te stellen. Deze machtiging moet zijn ingeschakeld.
-* **toegang van de Steun** - de gebruikers moeten ook toestemming hebben om steunkaartjes te openen, die de **rol van Admin van de Steun** vereist.
+* Toestemming om AI Assistant te gebruiken in AEM for Product Knowledge. Met deze machtiging kunt u productgerelateerde vragen stellen in AI Assistant-chat. Deze machtiging moet zijn ingeschakeld.
+* Toestemming om steunkaartjes te openen, die de **rol van Admin van de Steun** vereist.
 
-AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [ overzicht van de Diensten van Adobe Identity Management ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [ overzicht van de Diensten van Adobe Identity Management ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **om toegang tot AI Medewerker in AEM te krijgen:**
 
 1. Klanten moeten een aanvullende overeenkomst hebben om toegang te krijgen tot de meeste door AI aangedreven en agentische mogelijkheden in Adobe Experience Manager. Neem contact op met uw Adobe-vertegenwoordiger voor meer informatie.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. Als u AI Assistant in AEM wilt gebruiken, is toestemming voor toegang tot productkennis via de AI Assistant verplicht. Deze machtiging is standaard ingeschakeld.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   Als u wilt controleren wie tot de Kennis van het Product toegang heeft, verzend een e-mail naar [ aemaiassistant@adobe.com ](mailto:aemaiassistant@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Adobe kan toegangsbeheer op gebruikersniveau inschakelen. Wanneer het wordt toegelaten, kan uw Admin toegang op gebruikersniveau verlenen door de stappen in [ te volgen AI Medewerker in AEM ](/help/ai-assistant-in-aem-admin.md) vormen.
 
-1. AEM Admin vormt AI Medewerker voor gebruik in hun organisatie. Zie [ AI Medewerker in AEM ](/help/ai-assistant-in-aem-admin.md) vormen.
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Scope {#scope}
 
@@ -93,7 +88,7 @@ De productkennis omvat concepten en onderwerpen die uit de documentatie van de L
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
-| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen &#x200B;**<br>**Voorbeelden** |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
 | Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
 | Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 

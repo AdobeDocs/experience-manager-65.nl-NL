@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # AEM Developer Tools for Eclipse {#aem-developer-tools-for-eclipse}
 
-![ Experience Manager Developer Tools for Eclipse logo ](assets/eclipse-logo.png)
+![&#x200B; Experience Manager Developer Tools for Eclipse logo &#x200B;](assets/eclipse-logo.png)
 
 ## Overzicht {#overview}
 
-_Experience Manager de Hulpmiddelen van de Ontwikkelaar voor Verduistering_ is een stop van de Verduistering die op de [ wordt gebaseerd de stop van de Verduistering voor Apache die ](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache.
+_Experience Manager de Hulpmiddelen van de Ontwikkelaar voor Verduistering_ is een stop van de Verduistering die op de [&#x200B; wordt gebaseerd de stop van de Verduistering voor Apache die &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache.
 
 Het biedt verschillende functies die de ontwikkeling van AEM vereenvoudigen:
 
@@ -37,9 +37,9 @@ Het biedt verschillende functies die de ontwikkeling van AEM vereenvoudigen:
 
 Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* De download en installeert [ winde van de Verduistering voor Onderneming Java en de Ontwikkelaars van het Web.](https://www.eclipse.org/downloads/packages/)
+* De download en installeert [&#x200B; winde van de Verduistering voor Onderneming Java en de Ontwikkelaars van het Web.](https://www.eclipse.org/downloads/packages/)
    * Versie 1.4.0 van de AEM Developer Tools for Eclipse is compatibel met Eclipse 2022-12 (4.26) of hoger en vereist dat Java 17 of hoger wordt uitgevoerd.
-* Vorm uw installatie van de Verduistering om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier zoals die in [ wordt beschreven Veelgestelde vragen van de Verduistering hebt.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
+* Vorm uw installatie van de Verduistering om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier zoals die in [&#x200B; wordt beschreven Veelgestelde vragen van de Verduistering hebt.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
@@ -47,9 +47,9 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
 ## AEM Developer Tools for Eclipse installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de stop van ontwikkelaarshulpmiddelen als volgt installeren:
+Wanneer u aan de [&#x200B; vereisten &#x200B;](#requirements) hierboven hebt voldaan, kunt u de stop van ontwikkelaarshulpmiddelen als volgt installeren:
 
-1. Open de [ Website van de Hulpmiddelen van de Ontwikkelaar van AEM.](https://eclipse.adobe.com/)
+1. Open de [&#x200B; Website van de Hulpmiddelen van de Ontwikkelaar van AEM.](https://eclipse.adobe.com/)
 
 1. Kopieer de **Verbinding van de Installatie**.
 
@@ -72,34 +72,34 @@ Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de 
 
 ## Het AEM-perspectief {#the-aem-perspective}
 
-In Verduistering, bepaalt het a **Perspectief** de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over vooruitzichten, zie de [ documentatie van de Verduistering.](https://help.eclipse.org/latest/index.jsp).
+In Verduistering, bepaalt het a **Perspectief** de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over vooruitzichten, zie de [&#x200B; documentatie van de Verduistering.](https://help.eclipse.org/latest/index.jsp).
 
 De _Hulpmiddelen van de Ontwikkeling van Experience Manager voor Verduistering_ verstrekken een perspectief van AEM dat u volledige controle over uw projecten en instanties van AEM aanbiedt. Het AEM-perspectief openen:
 
 1. Van de het menubar van de Verduistering, uitgezocht **Venster** Perspectief **>** Open Perspectief **>** Andere **.**
 1. Selecteer **AEM** in de dialoog en klik **Open**.
 
-![ het perspectief van AEM in Verduistering ](assets/eclipse-aem-perspective.png)
+![&#x200B; het perspectief van AEM in Verduistering &#x200B;](assets/eclipse-aem-perspective.png)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De _Hulpmiddelen van de Ontwikkelaar van Experience Manager voor Verduistering_ komen met een steekproef multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het dient ook als best-practice gids aan verscheidene eigenschappen van AEM, leveraging het [ Archetype van het Project van AEM.](https://github.com/adobe/aem-project-archetype)
+De _Hulpmiddelen van de Ontwikkelaar van Experience Manager voor Verduistering_ komen met een steekproef multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het dient ook als best-practice gids aan verscheidene eigenschappen van AEM, leveraging het [&#x200B; Archetype van het Project van AEM.](https://github.com/adobe/aem-project-archetype)
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
 1. In het **Dossier** > **Nieuw** > **het menu van het Project**, doorblader aan de **sectie van AEM** en selecteer **de Steekproef van AEM Multi-Module Project**.
 
-   ![ de Steekproef van AEM Multi-Module Project ](assets/aem-sample-project.png)
+   ![&#x200B; de Steekproef van AEM Multi-Module Project &#x200B;](assets/aem-sample-project.png)
 
 1. Klik op **Next**.
 
    >[!NOTE]
    >
-   >Deze stap zou een ogenblik kunnen nemen omdat [ m2eclipse ](https://eclipse.dev/m2e/) de archetype catalogi moet aftasten.
+   >Deze stap zou een ogenblik kunnen nemen omdat [&#x200B; m2eclipse &#x200B;](https://eclipse.dev/m2e/) de archetype catalogi moet aftasten.
 
 1. `com.adobe.aem : aem-project-archetype : <highest-number>` zou automatisch in **Archetype** drop-down moeten worden geselecteerd. Selecteer desgewenst een vorige versie. Klik op **Next**.
 
-   ![ Uitgezochte archetype versie ](assets/select-archetype.png)
+   ![&#x200B; Uitgezochte archetype versie &#x200B;](assets/select-archetype.png)
 
 1. Geef de volgende velden op voor het voorbeeldproject:
 
@@ -110,13 +110,13 @@ Ga als volgt te werk om het voorbeeldproject te maken:
    * **appTitle** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
    * **Pakket** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
 
-   ![ bepaalt archetype eigenschappen ](assets/archetype-properties.png)
+   ![&#x200B; bepaalt archetype eigenschappen &#x200B;](assets/archetype-properties.png)
 
 1. Klik op **Next**.
 
 1. Vorm een server van AEM waaraan de Verduistering door **de nieuwe server van de Opstelling te selecteren** verbindt en een servernaam en de noodzakelijke verbindingsdetails te verstrekken.
 
-   ![ verbind met de server van AEM ](assets/connect-server.png)
+   ![&#x200B; verbind met de server van AEM &#x200B;](assets/connect-server.png)
 
    * Als u de functie voor foutopsporing wilt gebruiken, moet u AEM starten in de foutopsporingsmodus door de parameter `-agentlib` op te geven, bijvoorbeeld:
 
@@ -126,7 +126,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!TIP]
    >
-   >Voor meer details bij het zuiveren van uw project dat op lokale AEM SDK loopt, gelieve het document [ Verre het zuiveren van AEM SDK te zien.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Voor meer details bij het zuiveren van uw project dat op lokale AEM SDK loopt, gelieve het document [&#x200B; Verre het zuiveren van AEM SDK te zien.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Klik **Afwerking**.
 
@@ -134,13 +134,13 @@ De projectstructuur wordt gemaakt. Het kan even duren om de noodzakelijke artefa
 
 >[!NOTE]
 >
->Op een nieuwe installatie of wanneer de Geweven gebiedsdelen niet eerder zijn gedownload, kan Eclipse melden dat het project met fouten werd gecreeerd. In dit geval, volg de procedure die in de sectie [ wordt beschreven het Oplossen van Ongeldige Definitie van het Project.](#resolving-invalid-project-definition)
+>Op een nieuwe installatie of wanneer de Geweven gebiedsdelen niet eerder zijn gedownload, kan Eclipse melden dat het project met fouten werd gecreeerd. In dit geval, volg de procedure die in de sectie [&#x200B; wordt beschreven het Oplossen van Ongeldige Definitie van het Project.](#resolving-invalid-project-definition)
 
 ## Bestaande projecten importeren {#how-to-import-existing-projects}
 
 Gebruik de **Nieuwe eigenschap van het Project** om de basisprojectstructuur tot stand te brengen.
 
-1. Volg de instructies om a [ Monster te creëren Multi-Module Project, ](#sample-multi-module-project) dat tot een basisprojectstructuur met een gezonde scheiding van zorgen leidt:
+1. Volg de instructies om a [&#x200B; Monster te creëren Multi-Module Project, &#x200B;](#sample-multi-module-project) dat tot een basisprojectstructuur met een gezonde scheiding van zorgen leidt:
 
    * `PROJECT.ui.apps` voor `/apps` en `/etc` inhoud
    * `PROJECT.ui.content` for `/content` dat is gemaakt
@@ -237,12 +237,12 @@ Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
 Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige aanvullende informatie:
 
-* De [**Apache het Verdelen hulpmiddelen van winde voor de Gids van de Gebruiker van de Verduistering** ](https://sling.apache.org/documentation/development/ide-tooling.html) begeleidt u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van AEM worden gesteund.
-* [ het Oplossen van problemen Apache het Verdelen van het hulpmiddel van winde ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
-* [ Bekende kwesties lijst ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
+* De [**Apache het Verdelen hulpmiddelen van winde voor de Gids van de Gebruiker van de Verduistering** &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) begeleidt u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van AEM worden gesteund.
+* [&#x200B; het Oplossen van problemen Apache het Verdelen van het hulpmiddel van winde &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [&#x200B; Bekende kwesties lijst &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
-De volgende officiële [ documentatie van de Verduistering ](https://www.eclipse.org/) kan helpen aan opstelling uw milieu:
+De volgende officiële [&#x200B; documentatie van de Verduistering &#x200B;](https://www.eclipse.org/) kan helpen aan opstelling uw milieu:
 
-* [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
-* [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)
-* [ Gemaakt Integratie (m2eclipse) ](https://www.eclipse.org/m2e/)
+* [&#x200B; Begonnen het worden met Verduistering &#x200B;](https://eclipseide.org/getting-started/)
+* [&#x200B; Eclipse Luna Help System &#x200B;](https://help.eclipse.org/latest/index.jsp)
+* [&#x200B; Gemaakt Integratie (m2eclipse) &#x200B;](https://www.eclipse.org/m2e/)

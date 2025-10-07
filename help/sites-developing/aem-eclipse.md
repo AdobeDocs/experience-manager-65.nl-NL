@@ -9,117 +9,215 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 172b8667b1ff0bd533a035b21c316e2e66721bf8
+source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
-# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![&#x200B; Cirkelvormig beeldmotief voor de Hulpmiddelen van de Ontwikkelaar van AEM voor Verduistering.](do-not-localize/chlimage_1-9.png)
+# AEM Developer Tools for Eclipse {#aem-developer-tools-for-eclipse}
+
+![ Experience Manager Developer Tools for Eclipse logo ](assets/eclipse-logo.png)
 
 ## Overzicht {#overview}
 
-&quot;De Hulpmiddelen van de Ontwikkelaar van AEM&quot;is een elektrisch toestel Eclipse dat op de [&#x200B; insteekmodule Eclipse voor Apache wordt gebaseerd die &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache.
+_Experience Manager de Hulpmiddelen van de Ontwikkelaar voor Verduistering_ is een stop van de Verduistering die op de [ wordt gebaseerd de stop van de Verduistering voor Apache die ](https://sling.apache.org/documentation/development/ide-tooling.html) onder Vergunning 2 wordt vrijgegeven Apache.
 
 Het biedt verschillende functies die de ontwikkeling van AEM vereenvoudigen:
 
-* Naadloze integratie met AEM-instanties via Eclipse Server Connector.
-* Synchronisatie voor inhoud en OSGI-bundels.
-* Ondersteuning voor foutopsporing met de functie voor hot-swapping van code.
-* Eenvoudige Bootstrap van AEM-projecten via een specifieke wizard voor het maken van projecten.
-* Het gemakkelijk uitgeven van eigenschappen JCR.
+* Naadloze integratie met AEM-instanties via Eclipse Server Connector
+* Synchronisatie voor zowel inhoud als OSGi-bundels
+* Ondersteuning voor foutopsporing met functie voor hot-swapping van code
+* Eenvoudige Bootstrap van AEM-projecten via een specifieke wizard voor het maken van projecten
+* Eenvoudig bewerken van JCR-eigenschappen
 
 ## Vereisten {#requirements}
 
-Ga als volgt te werk voordat u de AEM Developer Tools gebruikt:
+Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 
-* Download en installeer [&#x200B; Eclipse winde voor de Ontwikkelaars van Java™ EE &#x200B;](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools ondersteunt momenteel Eclipse Kepler of nieuwer
-
-* Kan worden gebruikt met AEM versie 5.6.1 of hoger
-* Vorm uw eclipse installatie om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier te uitgeven zoals die in [&#x200B; wordt beschreven Veelgestelde Veelgestelde vragen van de Verduistering &#x200B;](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) hebt.
+* De download en installeert [ winde van de Verduistering voor Onderneming Java en de Ontwikkelaars van het Web.](https://www.eclipse.org/downloads/packages/)
+   * Versie 1.4.0 van de AEM Developer Tools for Eclipse is compatibel met Eclipse 2022-12 (4.26) of hoger en vereist dat Java 17 of hoger wordt uitgevoerd.
+* Vorm uw installatie van de Verduistering om ervoor te zorgen dat u minstens 1 GB van heapgeheugen door uw `eclipse.ini` configuratiedossier zoals die in [ wordt beschreven Veelgestelde vragen van de Verduistering hebt.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
->Op macOS, klik **Eclipse.app** met de rechtermuisknop aan, en selecteer dan **tonen de Inhoud van het Pakket** om uw `eclipse.ini` te vinden.
+>Op macOS, moet u **Eclipse.app** met de rechtermuisknop aanklikken, en dan selecteren **toont de Inhoud van het Pakket** om uw `eclipse.ini` te vinden.
 
 ## AEM Developer Tools for Eclipse installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Zodra u aan de [&#x200B; vereisten &#x200B;](#requirements) hierboven hebt voldaan, kunt u de stop als volgt installeren:
+Wanneer u aan de [ vereisten ](#requirements) hierboven hebt voldaan, kunt u de stop van ontwikkelaarshulpmiddelen als volgt installeren:
 
-1. Open de [&#x200B; Website van de Hulpmiddelen van de Ontwikkelaar van AEM &#x200B;](https://eclipse.adobe.com/).
+1. Open de [ Website van de Hulpmiddelen van de Ontwikkelaar van AEM.](https://eclipse.adobe.com/)
 
 1. Kopieer de **Verbinding van de Installatie**.
 
-   U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Zo kunt u offline installeren, maar u kunt automatische updatemeldingen niet uitvoeren.
+   * U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken.
+   * Deze methode staat offlineinstallatie toe maar u ontvangt geen automatische updatedeclaraties.
 
 1. In Verduistering, open het **menu van de Hulp**.
 1. Klik **installeer Nieuwe Software**.
 1. Klik **toevoegen...**.
-1. In **Naam** type AEM Developer Tools.
-1. In **Plaats** kopieert installatie URL.
-1. Klik **OK**.
+1. Op het **gebied van de Naam**, ga `AEM Developer Tools` in.
+1. Op het **gebied van de Plaats**, kopieer de installatie URL.
+1. Klik **toevoegen**.
 1. Controle zowel **AEM** als **het Verdelen** stoppen.
 1. Klik op **Next**.
-1. Klik op **Next**.
-1. Accepteer de lincese overeenkomsten en klik **Afwerking**.
-1. Klik **ja** om Eclipse opnieuw te beginnen.
-
-## Bestaande projecten importeren {#how-to-import-existing-projects}
-
->[!NOTE]
->
->Zie [&#x200B; hoe te met een bundel in Eclipse te werken toen het van AEM &#x200B;](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407) werd gedownload.
+1. In het **installeer Details** venster, herzie de te installeren punten en klik **daarna** opnieuw.
+1. Accepteer de vergunningsovereenkomsten en klik **Afwerking**.
+1. In de **dialoog van de Autoriteiten van het Vertrouwen** die verschijnt, selecteer het gezag/de plaats `https://eclipse.adobe.com` en klik **Geselecteerd Vertrouwen**.
+1. In de **dialoog van het Vertrouwen** die verschijnt, selecteer de codeondertekenaars en klik **Geselecteerd Vertrouwen**.
+1. Klik **RestartNow** om Eclipse opnieuw te beginnen.
 
 ## Het AEM-perspectief {#the-aem-perspective}
 
-De AEM Development Tools for Eclipse wordt geleverd met een perspectief dat u volledige controle biedt over uw AEM-projecten en -instanties.
+In Verduistering, bepaalt het a **Perspectief** de acties en de meningen beschikbaar binnen een venster en laat taakgerichte interactie met middelen in Verduistering toe. Voor meer details over vooruitzichten, zie de [ documentatie van de Verduistering.](https://help.eclipse.org/latest/index.jsp).
 
-![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2a.jpeg)
+De _Hulpmiddelen van de Ontwikkeling van Experience Manager voor Verduistering_ verstrekken een perspectief van AEM dat u volledige controle over uw projecten en instanties van AEM aanbiedt. Het AEM-perspectief openen:
+
+1. Van de het menubar van de Verduistering, uitgezocht **Venster** Perspectief **>** Open Perspectief **>** Andere **.**
+1. Selecteer **AEM** in de dialoog en klik **Open**.
+
+![ het perspectief van AEM in Verduistering ](assets/eclipse-aem-perspective.png)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De &quot;Hulpmiddelen van de Ontwikkelaar van AEM&quot;omvatten een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt te krijgen. Het fungeert ook als gids voor beste praktijken voor verschillende functies van AEM. [&#x200B; leer meer over het Archetype van het Project &#x200B;](https://github.com/adobe/aem-project-archetype).
+De _Hulpmiddelen van de Ontwikkelaar van Experience Manager voor Verduistering_ komen met een steekproef multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt omhoog krijgen. Het dient ook als best-practice gids aan verscheidene eigenschappen van AEM, leveraging het [ Archetype van het Project van AEM.](https://github.com/adobe/aem-project-archetype)
 
-Voer de volgende stappen uit om het voorbeeldproject te maken:
+Ga als volgt te werk om het voorbeeldproject te maken:
 
 1. In het **Dossier** > **Nieuw** > **het menu van het Project**, doorblader aan de **sectie van AEM** en selecteer **de Steekproef van AEM Multi-Module Project**.
 
-   ![&#x200B; chlimage_1-69 &#x200B;](assets/chlimage_1-69a.png)
+   ![ de Steekproef van AEM Multi-Module Project ](assets/aem-sample-project.png)
 
 1. Klik op **Next**.
 
    >[!NOTE]
    >
-   >Deze stap kan even duren omdat m2eclipse de archetype catalogi moet aftasten.
+   >Deze stap zou een ogenblik kunnen nemen omdat [ m2eclipse ](https://eclipse.dev/m2e/) de archetype catalogi moet aftasten.
 
-   ![&#x200B; chlimage_1-70 &#x200B;](assets/chlimage_1-70a.png)
+1. `com.adobe.aem : aem-project-archetype : <highest-number>` zou automatisch in **Archetype** drop-down moeten worden geselecteerd. Selecteer desgewenst een vorige versie. Klik op **Next**.
 
-1. Kies **com.adobe.granite.archetypes : steekproef-project-archetype: (hoogste aantal)** van het menu, dan klik **daarna**.
+   ![ Uitgezochte archetype versie ](assets/select-archetype.png)
 
-   ![&#x200B; chlimage_1-71 &#x200B;](assets/chlimage_1-71a.png)
+1. Geef de volgende velden op voor het voorbeeldproject:
 
-1. Vul a **Naam**, **identiteitskaart van de Groep**, en a **Artifact identiteitskaart** voor het steekproefproject in. U kunt ook bepaalde geavanceerde eigenschappen instellen.
+   * **Naam**
+   * **Identiteitskaart van de Groep**
+   * **Artefact identiteitskaart**
+   * **appId** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
+   * **appTitle** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
+   * **Pakket** - u kunt de **Geavanceerde** opties moeten uitbreiden om deze waarde te plaatsen.
 
-   ![&#x200B; chlimage_1-72 &#x200B;](assets/chlimage_1-72a.png)
+   ![ bepaalt archetype eigenschappen ](assets/archetype-properties.png)
 
-1. Configureer nu een AEM-server waarmee Eclipse verbinding kan maken.
+1. Klik op **Next**.
 
-   Om de debugger eigenschap te gebruiken, ben zeker u AEM op zuivert wijze begon, die kan worden bereikt door het volgende aan de bevellijn toe te voegen:
+1. Vorm een server van AEM waaraan de Verduistering door **de nieuwe server van de Opstelling te selecteren** verbindt en een servernaam en de noodzakelijke verbindingsdetails te verstrekken.
 
+   ![ verbind met de server van AEM ](assets/connect-server.png)
+
+   * Als u de functie voor foutopsporing wilt gebruiken, moet u AEM starten in de foutopsporingsmodus door de parameter `-agentlib` op te geven, bijvoorbeeld:
+
+   ```text
+   $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar
    ```
-       -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
-   ```
 
-   ![&#x200B; chlimage_1-73 &#x200B;](assets/chlimage_1-73a.png)
-
-1. Klik **Afwerking**. De projectstructuur wordt gemaakt.
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >Op een nieuwe installatie (meer specifiek: wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval, volg de procedure die in [&#x200B; wordt beschreven het Oplossen van Ongeldige Definitie van het Project &#x200B;](#resolving-invalid-project-definition).
+   >Voor meer details bij het zuiveren van uw project dat op lokale AEM SDK loopt, gelieve het document [ Verre het zuiveren van AEM SDK te zien.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+
+1. Klik **Afwerking**.
+
+De projectstructuur wordt gemaakt. Het kan even duren om de noodzakelijke artefacten aan het project te downloaden.
+
+>[!NOTE]
+>
+>Op een nieuwe installatie of wanneer de Geweven gebiedsdelen niet eerder zijn gedownload, kan Eclipse melden dat het project met fouten werd gecreeerd. In dit geval, volg de procedure die in de sectie [ wordt beschreven het Oplossen van Ongeldige Definitie van het Project.](#resolving-invalid-project-definition)
+
+## Bestaande projecten importeren {#how-to-import-existing-projects}
+
+Gebruik de **Nieuwe eigenschap van het Project** om de basisprojectstructuur tot stand te brengen.
+
+1. Volg de instructies om a [ Monster te creëren Multi-Module Project, ](#sample-multi-module-project) dat tot een basisprojectstructuur met een gezonde scheiding van zorgen leidt:
+
+   * `PROJECT.ui.apps` voor `/apps` en `/etc` inhoud
+   * `PROJECT.ui.content` for `/content` dat is gemaakt
+   * `PROJECT.core` voor Java-pakketten
+   * `PROJECT.it.launcher` en `PROJECT.it.tests` voor integratietests
+
+1. Vervang de inhoud van het `PROJECT.ui.apps` -project door de mappen `apps` en `etc` van het pakket:
+
+   1. In het **paneel van de Ontdekkingsreiziger van het Project**, breid `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps` uit.
+   1. Klik met de rechtermuisknop op de `apps` omslag en kies **Tonen in** > **Ontdekkingsreiziger van het Systeem**.
+   1. Verwijder de mappen `apps` en `etc` .
+   1. Plaats de mappen `apps` en `etc` van het inhoudspakket op dezelfde locatie.
+   1. In Verduistering, klik het `PROJECT.ui.apps` project met de rechtermuisknop aan en kies **verfrissen**.
+
+1. Doe dan het zelfde voor `PROJECT.ui.content` en vervang zijn inhoudsomslag met één van uw pakketten:
+
+   1. In het **paneel van de Ontdekkingsreiziger van het Project**, breid `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content` uit.
+   1. Klik de diepere inhoudsomslag met de rechtermuisknop aan en kies **Tonen in** > **Ontdekkingsreiziger van het Systeem**.
+   1. Verwijder de inhoudsmap daar.
+   1. Plaats de inhoudsmap van het inhoudspakket op dezelfde locatie.
+   1. In Verduistering, klik het `PROJECT.ui.content` project met de rechtermuisknop aan en kies **verfrissen**.
+
+1. Werk de `filter.xml` bestanden van deze twee projecten bij zodat ze overeenkomen met de inhoud van het inhoudspakket door het `META-INF/vault/filter.xml` -bestand van het inhoudspakket te openen in een aparte tekst-/code-editor.
+
+   * Dit is een voorbeeld van hoe uw `filter.xml` -bestand eruit kan zien:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       <filter root="/apps/foo"/>
+       <filter root="/apps/foundation/components/bar"/>
+       <filter root="/etc/designs/foo"/>
+       <filter root="/content/foo"/>
+       <filter root="/content/dam/foo"/>
+       <filter root="/content/usergenerated/content/foo"/>
+   </workspaceFilter>
+   ```
+
+1. Wat de inhoud van het pakket betreft dat in twee projecten is gesplitst, moet u deze filterregels ook in twee splitsen en de `filter.xml` -bestanden van de twee projecten dienovereenkomstig bijwerken.
+
+   1. Open `PROJECT.ui.apps/src/main/content/META-INF/filter.xml` in Eclipse.
+   1. Vervang de inhoud van het element `<workspaceFilter>` door de regels van het pakket die beginnen met `/apps` en `/etc`
+      * Bijvoorbeeld:
+
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
+   1. Open vervolgens `PROJECT.ui.content/src/main/content/META-INF/filter.xml` .
+   1. Vervang de regels door de regels in het pakket die beginnen met `/content` .
+      * Bijvoorbeeld:
+
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
+
+1. Zorg ervoor dat u al uw wijzigingen opslaat. U kunt deze nieuwe inhoud nu synchroniseren met uw AEM-exemplaar.
+
+1. In het **paneel van Servers**, zorg ervoor dat uw verbinding is begonnen, en als, niet het begint.
+
+1. Klik **Schoon en publiceer** pictogram.
+
+Als u klaar bent, moet het pakket op uw exemplaar worden uitgevoerd. Bij het opslaan worden wijzigingen automatisch gesynchroniseerd met de instantie.
+
+Als u een pakket uit uw project wilt re-bouwen, klik `PROJECT.ui.apps` of `PROJECT.ui.content` met de rechtermuisknop aan en kies **Looppas zoals** > **Gemaakt installeert**.
+
+Er is nu een doelmap gemaakt met de pakketmap in die map (bijvoorbeeld `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip` genoemd).
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -128,36 +226,23 @@ Voer de volgende stappen uit om het voorbeeldproject te maken:
 Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 1. Selecteer alle gemaakte projecten.
-1. Klik met de rechtermuisknop. In menu **Gemaakt**, uitgezochte **Projecten van de Update**.
+1. Klik met de rechtermuisknop.
+1. In het contextmenu, uitgezochte **Gemaakt** > **Projecten van de Update**.
 1. Controle **de Updates van de Kracht van Momentopname/Versies**.
-1. Klik **OK**. Eclipse probeert de vereiste afhankelijkheden te downloaden.
+1. Klik **OK**.
 
-### Automatisch aanvullen van tagbibliotheek inschakelen in JSP-bestanden {#enabling-tag-library-autocompletion-in-jsp-files}
-
-Automatisch aanvullen van de tagbibliotheek werkt buiten het vak, aangezien de juiste afhankelijkheden aan het project worden toegevoegd. Er is één bekend probleem wanneer u de AEM Uber Jar gebruikt, dat niet de benodigde tld- en TagExtraInfo-bestanden bevat.
-
-Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.scripting.jsp.taglib zich in het klassepad vóór de AEM Uber Jar bevindt. Voor Geweven projecten, plaats het volgende gebiedsdeel in pom.xml vóór Uber Jar.
-
-```xml
-<dependency>
-  <groupId>org.apache.sling</groupId>
-  <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
-  <scope>provided</scope>
-</dependency>
-```
-
-Voeg de juiste versie voor uw implementatie van AEM toe.
+Eclipse downloadt de vereiste afhankelijkheden. Dit kan even duren.
 
 ## Meer informatie {#more-information}
 
-Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informatie:
+Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige aanvullende informatie:
 
-* [**Apache het Verdelen van winde tooling voor de Gids van de Gebruiker van de Verduistering** &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van AEM worden gesteund.
-* De [&#x200B; sectie van het Oplossen van problemen &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* De [&#x200B; Bekende lijst van kwesties &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* De [**Apache het Verdelen hulpmiddelen van winde voor de Gids van de Gebruiker van de Verduistering** ](https://sling.apache.org/documentation/development/ide-tooling.html) begeleidt u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van AEM worden gesteund.
+* [ het Oplossen van problemen Apache het Verdelen van het hulpmiddel van winde ](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [ Bekende kwesties lijst ](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
-De volgende officiële [&#x200B; documentatie van de Verduistering &#x200B;](https://www.eclipse.org/) kan helpen aan opstelling uw milieu:
+De volgende officiële [ documentatie van de Verduistering ](https://www.eclipse.org/) kan helpen aan opstelling uw milieu:
 
-* [&#x200B; Begonnen het worden met Verduistering &#x200B;](https://eclipseide.org/getting-started/)
-* [&#x200B; Eclipse Luna Help System &#x200B;](https://help.eclipse.org/latest/index.jsp)
-* [&#x200B; Gemaakt Integratie (m2eclipse) &#x200B;](https://www.eclipse.org/m2e/)
+* [ Begonnen het worden met Verduistering ](https://eclipseide.org/getting-started/)
+* [ Eclipse Luna Help System ](https://help.eclipse.org/latest/index.jsp)
+* [ Gemaakt Integratie (m2eclipse) ](https://www.eclipse.org/m2e/)

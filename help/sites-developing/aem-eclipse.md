@@ -126,7 +126,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!TIP]
    >
-   >Voor meer details bij het zuiveren van uw project dat op lokale AEM SDK loopt, gelieve het document [&#x200B; Verre het zuiveren van AEM SDK te zien.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Voor meer details bij het zuiveren van uw project dat op lokale AEM SDK loopt, gelieve het document [&#x200B; Verre het zuiveren van AEM SDK te zien.](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Klik **Afwerking**.
 

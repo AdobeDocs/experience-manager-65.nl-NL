@@ -46,13 +46,13 @@ Deze workflows worden gemaakt in AEM en zijn te vinden op:
 
 Het volgende is het model van de Werknemers van de Werknemers van Web die in dit document wordt gevolgd.
 
-![ wij-financiën-werknemer-het rekruteren-werkschema ](assets/we-finance-employee-recruiting-workflow.png)
+![&#x200B; wij-financiën-werknemer-het rekruteren-werkschema &#x200B;](assets/we-finance-employee-recruiting-workflow.png)
 
 #### We financieren werknemers die de Post Interview-workflow herstellen {#we-finance-employee-recruiting-post-interview-workflow}
 
 Hier volgt het model van de Post Interview Recruiting-workflow voor webwerknemers.
 
-![ wij-financiën-werknemer-wervende-post-interview-werkschema ](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![&#x200B; wij-financiën-werknemer-wervende-post-interview-werkschema &#x200B;](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personas {#personas}
 
@@ -67,17 +67,17 @@ Het scenario omvat de volgende personen:
 
 Sarah Rose zoekt een baan in de organisatie. Ze bezoekt hun webportaal en verkent de vacatures die op de pagina Career staan vermeld. Ze vindt een overeenkomende functielijst en vraagt om deze.
 
-![ homepage ](assets/home-page.png)
+![&#x200B; homepage &#x200B;](assets/home-page.png)
 
 We.Startpagina voor financiën
 
-![ carrière-pagina ](assets/career-page.png)
+![&#x200B; carrière-pagina &#x200B;](assets/career-page.png)
 
 We.Pagina met carrière financieren
 
 Sarah klikt op Toepassen op een baan posten. Het taaktoepassingsformulier wordt geopend. Zij vult alle details in de aanvraag in en dient deze in.
 
-![ baan-toepassing-vorm ](assets/job-application-form.png)
+![&#x200B; baan-toepassing-vorm &#x200B;](assets/job-application-form.png)
 
 ### Hoe werkt het {#how-it-works}
 
@@ -93,11 +93,11 @@ Zorg ervoor dat u een geldige e-mailid opgeeft in de toepassing omdat de communi
 
 De organisatie ontvangt de sollicitatie van Sarah. John Jacobs, een rekruteur, heeft de taak gekregen om Sarah&#39;s profiel te herzien. John evalueert de taak in zijn AEM Inbox, vindt het profiel dat aan het baanvereiste beantwoordt, en klikt Kortere lijst. Sarah&#39;s profiel wordt doorgestuurd naar Gloria Rios, de huurmanager, voor haar goedkeuring.
 
-![ jjacobs-inbox-1 ](assets/jjacobs-inbox-1.png)
+![&#x200B; jjacobs-inbox-1 &#x200B;](assets/jjacobs-inbox-1.png)
 
 John&#39;s AEM Inbox
 
-![ kandidaat-shortlist ](assets/candidate-shortlist.png)
+![&#x200B; kandidaat-shortlist &#x200B;](assets/candidate-shortlist.png)
 
 John Jacobs verkiest het profiel van Sarah Rose voor de screening van de huurmanager
 
@@ -113,11 +113,11 @@ Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.
 
 Gloria, de huurmanager, ontvangt het geshortlist profiel als taak in haar AEM Inbox. Ze bestudeert het en keurt de kandidaat, Sarah Rose, goed voor het interview.
 
-![ gloriainbox ](assets/gloriainbox.png)
+![&#x200B; gloriainbox &#x200B;](assets/gloriainbox.png)
 
 Gloria&#39;s AEM Inbox
 
-![ gloriaschedulesinterview ](assets/gloriaschedulesinterview.png)
+![&#x200B; gloriaschedulesinterview &#x200B;](assets/gloriaschedulesinterview.png)
 
 Gloria keurt Sarah Rose goed voor een interview
 
@@ -135,11 +135,11 @@ Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.
 
 John Doe krijgt de taak om een interview te plannen in zijn inbox. John Doe selecteert en opent de taak en bepaalt de interviewdatum, -tijd, -locatie en -persoon die verantwoordelijk is voor het interview als John Jacob. John Doe klikt op Uitnodiging-e-mail verzenden. Er wordt een e-mail verzonden naar Sarah en er wordt een taak toegewezen aan Gloria, de huurmanager, voor het interviewen van Sarah.
 
-![ johnjacobsaeminbox ](assets/johnjacobsaeminbox.png)
+![&#x200B; johnjacobsaeminbox &#x200B;](assets/johnjacobsaeminbox.png)
 
 John Doe&#39;s AEM Inbox
 
-![ johndoescheduleinterview ](assets/johndoescheduleinterview.png)
+![&#x200B; johndoescheduleinterview &#x200B;](assets/johndoescheduleinterview.png)
 
 John Doe plant het interview en stuurt de details naar Sarah Rose
 
@@ -147,7 +147,7 @@ John Doe plant het interview en stuurt de details naar Sarah Rose
 
 Sarah Rose ontvangt de e-mail met interviewplanning, locatie en andere details. Sarah klikt Accepteren om te verklaren dat zij OK met het interviewschema en de plaats is. Zoals de exacte informatie ons laat zien, maakt Sarah het aan de interviews.
 
-![ sarahroseinterviewemail ](assets/sarahroseinterviewemail.png)
+![&#x200B; sarahroseinterviewemail &#x200B;](assets/sarahroseinterviewemail.png)
 
 Sarah Rose ontvangt het interviewschema
 
@@ -155,11 +155,11 @@ Sarah Rose ontvangt het interviewschema
 
 Nadat Sarah Rose door de interviews gaat en hen ontruimt, opent Gloria Rios, de Manager van de Verhuur, de Kandidaatselectietaak van haar inbox en klikt Uitgezocht. Het besluit van Gloria Rios wordt voor verdere verwerking doorgezonden naar de HR-persoon, John Doe.
 
-![ gloriariosinboxaanbieding ](assets/gloriariosinboxoffer.png)
+![&#x200B; gloriariosinboxaanbieding &#x200B;](assets/gloriariosinboxoffer.png)
 
 Gloria&#39;s AEM Inbox
 
-![ gloriariosselectCandin ](assets/gloriariosselectcandidate.png)
+![&#x200B; gloriariosselectCandin &#x200B;](assets/gloriariosselectcandidate.png)
 
 Gloria Rios selecteert Sarah Rose na de interviews
 
@@ -167,7 +167,7 @@ Gloria Rios selecteert Sarah Rose na de interviews
 
 Voordat een kandidaat wordt gevraagd om deel te nemen aan de organisatie, moet de achtergrond van Sarah worden gecontroleerd. John Doe opent en bekijkt de details van de geselecteerde aanvrager en constateert dat sommige van haar gegevens over werkgelegenheid en onderwijs nog niet zijn ingevuld. John Doe klikt heeft Meer Informatie nodig.
 
-![ johndoeinbox ](assets/johndoeinbox.png) ![ johndoeneedmoreinformation ](assets/johndoeneedmoreinformation.png)
+![&#x200B; johndoeinbox &#x200B;](assets/johndoeinbox.png) ![&#x200B; johndoeneedmoreinformation &#x200B;](assets/johndoeneedmoreinformation.png)
 
 John Doe vraagt om meer informatie van Sarah Rose over haar opleiding en werkervaring
 
@@ -175,17 +175,17 @@ John Doe vraagt om meer informatie van Sarah Rose over haar opleiding en werkerv
 
 Sarah Rose ontvangt een e-mail met de kennisgeving dat er meer informatie nodig is voor de behandeling van haar sollicitatie. Het e-mailbericht bevat een koppeling naar het formulier voor het invullen van de vereiste gegevens.
 
-![ sarahroseemailmoredetails ](assets/sarahroseemailmoredetails.png)
+![&#x200B; sarahroseemailmoredetails &#x200B;](assets/sarahroseemailmoredetails.png)
 
 Sarah Rose ontvangt een e-mail met de kennisgeving dat er meer informatie nodig is voor de verwerking van haar sollicitatie.
 
 Sarah klikt op de koppeling Details verstrekken in de e-mail. Er wordt een formulier weergegeven. Sarah vult de vereiste onderwijs- en werkgelegenheidsdetails op zoals gevraagd door Jan Smit en klikt op Indienen.
 
-![ extra information1 ](assets/additionalinformation1.png)
+![&#x200B; extra information1 &#x200B;](assets/additionalinformation1.png)
 
 Sarah opent het formulier met aanvullende informatie door op de koppeling in de e-mail te klikken
 
-![ extra information2 ](assets/additionalinformation2.png)
+![&#x200B; extra information2 &#x200B;](assets/additionalinformation2.png)
 
 Sarah vult aanvullende informatie in zoals gevraagd door Jan Smit en klikt op Verzenden
 
@@ -193,11 +193,11 @@ Sarah vult aanvullende informatie in zoals gevraagd door Jan Smit en klikt op Ve
 
 John Doe selecteert het verzoek van de kandidaat-beoordeling en opent het. John Doe vindt dat Sarah alle benodigde informatie heeft ingevuld. Nadat u de toepassing hebt gecontroleerd, klikt u op Goedkeuren. Na goedkeuring door John Doe wordt het verzoek om een achtergrondcontrole op Sarah Rose uit te voeren doorgestuurd naar John Jacobs.
 
-![ johndoeadditionainformationinbox ](assets/johndoeadditionainformationinbox.png)
+![&#x200B; johndoeadditionainformationinbox &#x200B;](assets/johndoeadditionainformationinbox.png)
 
 John Doe&#39;s AEM Inbox
 
-![ johndoeadditionalinformationreview-copy ](assets/johndoeadditionalinformationreview-copy.png)
+![&#x200B; johndoeadditionalinformationreview-copy &#x200B;](assets/johndoeadditionalinformationreview-copy.png)
 
 John Doe bestudeert de aanvullende informatie die Sarah heeft verstrekt en keurt deze goed
 
@@ -205,11 +205,11 @@ John Doe bestudeert de aanvullende informatie die Sarah heeft verstrekt en keurt
 
 John Jacobs ziet het verzoek van de achtergrondcontrole in zijn inbox. John Jacobs opent de taak en bekijkt de informatie van Sarah Rose. Nadat John Jacobs een achtergrondcontrole heeft uitgevoerd, klikt u op Vooruit om aan te geven dat de achtergrondcontrole is gelukt.
 
-![ johnjacobsbackgroundcheckinbox ](assets/johnjacobsbackgroundcheckinbox.png)
+![&#x200B; johnjacobsbackgroundcheckinbox &#x200B;](assets/johnjacobsbackgroundcheckinbox.png)
 
 John Jacobs AEM Inbox
 
-![ johnjacobsbackgroundcheckahead ](assets/johnjacobsbackgroundcheckgoahead.png)
+![&#x200B; johnjacobsbackgroundcheckahead &#x200B;](assets/johnjacobsbackgroundcheckgoahead.png)
 
 Als John Jacobs de achtergrondcontrole heeft uitgevoerd, klikt u op Vooruit
 
@@ -217,11 +217,11 @@ Als John Jacobs de achtergrondcontrole heeft uitgevoerd, klikt u op Vooruit
 
 John Doe ontvangt een verzoek in zijn AEM Inbox voor het verzenden van de aansluitende brief. John opent het verzoek en bekijkt de details. John Doe voegt de bij elkaar liggende letter PDF toe en klikt vervolgens op Bijvoegen en Joining Letter verzenden.
 
-![ johndoejoiningletterinbox ](assets/johndoejoiningletterinbox.png)
+![&#x200B; johndoejoiningletterinbox &#x200B;](assets/johndoejoiningletterinbox.png)
 
 John Doe&#39;s AEM Inbox
 
-![ johndoejoiningletterattachandsend ](assets/johndoejoiningletterattachandsend.png)
+![&#x200B; johndoejoiningletterattachandsend &#x200B;](assets/johndoejoiningletterattachandsend.png)
 
 John Doe verzendt de gezamenlijke brief voor ondertekening
 
@@ -229,16 +229,16 @@ John Doe verzendt de gezamenlijke brief voor ondertekening
 
 Sarah Rose ontvangt de aansluitende brief voor ondertekening. Sarah klikt hier om een brief te bekijken en te ondertekenen. De PDF van de samengevoegde letter wordt geopend met een veld om het document te ondertekenen.
 
-![ sarahrosejoiningletteremail ](assets/sarahrosejoiningletteremail.png)
+![&#x200B; sarahrosejoiningletteremail &#x200B;](assets/sarahrosejoiningletteremail.png)
 
 Sarah Rose ontvangt de aansluitende brief voor ondertekening
 
 Sarah kan kiezen of ze wil intypen, tekenen om te schrijven, een afbeelding van een handtekening in te voegen of het touchscreen van haar mobiele telefoon gebruiken om haar handtekening te tekenen. Sarah typt haar naam, klikt op Klik om te ondertekenen en downloadt de ondertekende kopie van de bij elkaar horende brief.
 
-![ sarahrosejoininglettersign ](assets/sarahrosejoininglettersign.png)
+![&#x200B; sarahrosejoininglettersign &#x200B;](assets/sarahrosejoininglettersign.png)
 
 Sarah typt in haar naam de aansluitende brief te ondertekenen
 
-![ sarahrosejoininglettersign2 ](assets/sarahrosejoininglettersign2.png)
+![&#x200B; sarahrosejoininglettersign2 &#x200B;](assets/sarahrosejoininglettersign2.png)
 
 Sarah klikt op Ondertekenen om de ondertekening van de aansluitende brief te voltooien

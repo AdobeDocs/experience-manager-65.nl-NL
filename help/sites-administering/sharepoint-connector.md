@@ -34,7 +34,7 @@ Alle functies worden geïmplementeerd met de native SharePoint-webservices als d
 >
 >SharePoint Connector wordt ook ondersteund met AEM 6.1 service pack 2. De connector ondersteunt geen virtuele opslagplaats meer en kan daarom niet worden gemonteerd. Als u toegang wilt krijgen tot de SharePoint-opslagplaats met Java API&#39;s, gebruikt u de JCR-opslagfunctie van de SharePoint-connector in uw project.
 >
->Installatie-, configuratie-, beheer- en IT-bewerkingen van de SharePoint-server en de bijbehorende IT-infrastructuur vallen buiten het bereik van dit document. Zie verkopersdocumentatie op [ SharePoint ](https://www.microsoft.com/sharepoint) voor informatie over deze onderwerpen. De aansluiting vereist dat deze delen van de infrastructuur correct worden geïnstalleerd, geconfigureerd en gebruikt.
+>Installatie-, configuratie-, beheer- en IT-bewerkingen van de SharePoint-server en de bijbehorende IT-infrastructuur vallen buiten het bereik van dit document. Zie verkopersdocumentatie op [&#x200B; SharePoint &#x200B;](https://www.microsoft.com/sharepoint) voor informatie over deze onderwerpen. De aansluiting vereist dat deze delen van de infrastructuur correct worden geïnstalleerd, geconfigureerd en gebruikt.
 >
 
 ## Aan de slag {#getting-started}
@@ -64,7 +64,7 @@ De schakelaar vereist het volgende:
 * Gebruikersreferenties en machtigingen voor CRX- en SharePoint-opslagruimten
 * [Ondersteunde platforms](#supported-platforms)
 
-De schakelaar van SharePoint is beschikbaar voor het downloaden van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+De schakelaar van SharePoint is beschikbaar voor het downloaden van [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Ondersteunde platforms {#supported-platforms}
 
@@ -83,11 +83,11 @@ De schakelaar steunt het volgende:
 
 >[!NOTE]
 >
->De connector ondersteunt alleen configuraties die officieel door Microsoft worden ondersteund. Zie [ MOSS 2010 ](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) en [ MOSS 2013 ](https://technet.microsoft.com/en-us/library/cc262485.aspx) systeemvereisten.
+>De connector ondersteunt alleen configuraties die officieel door Microsoft worden ondersteund. Zie [&#x200B; MOSS 2010 &#x200B;](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) en [&#x200B; MOSS 2013 &#x200B;](https://technet.microsoft.com/en-us/library/cc262485.aspx) systeemvereisten.
 
 ### Standaardinstallatie {#standard-installation}
 
-Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Voor details, zie de [ documentatie van de Distributie van de Software ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL#software-distribution).
+Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Voor details, zie de [&#x200B; documentatie van de Distributie van de Software &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=nl-NL#software-distribution).
 
 
 #### Integreren met AEM {#integrating-with-aem}
@@ -113,13 +113,13 @@ Stel de URL van de SharePoint-server in om de JCR-compatibiliteit van uw SharePo
 
 Voer de volgende stappen uit om de URL van de SharePoint-server en de geavanceerde opties in te stellen:
 
-1. Navigeer aan de Console van het Beheer OSGi: [ http://localhost:4502/system/console/configMgr ](http://localhost:4502/system/console/configMgr).
+1. Navigeer aan de Console van het Beheer OSGi: [&#x200B; http://localhost:4502/system/console/configMgr &#x200B;](http://localhost:4502/system/console/configMgr).
 1. Onderzoek naar de **Schakelaar van JCR van de Dag voor Microsoft SharePoint** bundel.
 1. Bewerk de configuratiewaarden.
 1. Plaats URL van de Server van SharePoint als waarde van **Werkruimten**.
 1. Klik **sparen**.
 
-![ chlimage_1-62 ](assets/chlimage_1-62.png)
+![&#x200B; chlimage_1-62 &#x200B;](assets/chlimage_1-62.png)
 
 Parameters Workspaces en Default Workspace Name:
 
@@ -140,13 +140,13 @@ Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 1. `com.day.cq.dam.cq-dam-jcr-connectors` toevoegen in standaardbundels whitelist
 1. Klik op Opslaan.
 
-![ chlimage_1-82 ](assets/chlimage_1-82a.png)
+![&#x200B; chlimage_1-82 &#x200B;](assets/chlimage_1-82a.png)
 
 >[!NOTE]
 >
 >Als u meerdere werkruimten configureert, geeft u de naam van de standaardwerkruimte op in de parameter Standaard Workspace-naam.
 
-Voor extra informatie rond authentificatie-verwante parameters, zie [ Authentificatie ](/help/sites-administering/sharepoint-connector.md#configuring-authentication).
+Voor extra informatie rond authentificatie-verwante parameters, zie [&#x200B; Authentificatie &#x200B;](/help/sites-administering/sharepoint-connector.md#configuring-authentication).
 
 ### De installatie van SharePoint controleren {#verifying-the-sharepoint-setup}
 
@@ -160,7 +160,7 @@ Nadat u de schakelaar vormt, verifieer het volgende:
 
 Voer de volgende stappen uit om de SharePoint Assets met AEM te synchroniseren:
 
-1. Navigeer aan de Console van het Beheer OSGi: [ http://localhost:4502/system/console/configMgr ](http://localhost:4502/system/console/configMgr).
+1. Navigeer aan de Console van het Beheer OSGi: [&#x200B; http://localhost:4502/system/console/configMgr &#x200B;](http://localhost:4502/system/console/configMgr).
 1. Zoek naar de service &quot;Default DAMAssetSynchronization&quot;.
 1. Bewerk de configuratiewaarden.
 1. Stel de gebruikersnaam en het bijbehorende wachtwoord in van de gebruiker die toegang heeft tot de SharePoint-site.
@@ -168,13 +168,13 @@ Voer de volgende stappen uit om de SharePoint Assets met AEM te synchroniseren:
 
 Schakel de DAM Sync Service in, die standaard is uitgeschakeld:
 
-1. Navigeer aan de Componenten van de Console van OSGi van het Web: [ http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
+1. Navigeer aan de Componenten van de Console van OSGi van het Web: [&#x200B; http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 1. Zoek naar &quot;com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService.&quot;
 1. Klik op Inschakelen.
 
 Naar keuze, kunt u de vertraging van de Synchronisatie tussen verschillende synchronisatiecycli vormen:
 
-1. Navigeer aan de Console van het Beheer OSGi: [ http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+1. Navigeer aan de Console van het Beheer OSGi: [&#x200B; http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 1. Zoek naar &quot;DAY CQ DAM JCR Connector Asset Synchronization Service.&quot;
 1. Bewerk de configuratiewaarden.
 1. Stel de waarde van de synchronisatieperiode in (in seconden).
@@ -201,7 +201,7 @@ De AEM JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013
 
 **Vormend Forms Gebaseerde Authentificatie**
 
-Ga naar: [ http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+Ga naar: [&#x200B; http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Klik op OSGI > Configuration
 1. Zoeken naar &quot;Day JCR Connector for Microsoft Sharepoint&quot;
@@ -211,8 +211,8 @@ Ga naar: [ http://localhost:4502/system/console/bundles](http://localhost:4502/s
 
 **Vormend BasisAuthentificatie (Vensters)**
 
-1. [ maak Symbolische Authentificatie ](#disable-token-authentication) onbruikbaar.
-1. Ga naar [ http://localhost:4502/system/console/bundles ](http://localhost:4502/system/console/bundles).
+1. [&#x200B; maak Symbolische Authentificatie &#x200B;](#disable-token-authentication) onbruikbaar.
+1. Ga naar [&#x200B; http://localhost:4502/system/console/bundles &#x200B;](http://localhost:4502/system/console/bundles).
 1. Klik op OSGI > Configuratie.
 1. Onderzoek naar **Schakelaar van JCR van de Dag voor Microsoft Sharepoint**.
 1. Klik op `Edit the configuration values`.
@@ -255,7 +255,7 @@ De gebruiker toevoegen in de beheergroep:
 
 #### Verschillende verificatiemethoden van de SharePoint-server worden ondersteund {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-In zijn standaardversie, steunt de schakelaar de standaardIIS **authentificatie van Vensters** (Basis) en op Forms-Gebaseerde authentificatie (op teken gebaseerd). De [ andere authentificatiemethodes ](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen door het rekbaarheidsmechanisme worden gesteund.
+In zijn standaardversie, steunt de schakelaar de standaardIIS **authentificatie van Vensters** (Basis) en op Forms-Gebaseerde authentificatie (op teken gebaseerd). De [&#x200B; andere authentificatiemethodes &#x200B;](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen door het rekbaarheidsmechanisme worden gesteund.
 
 De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardverificatie ter ondersteuning van verschillende verificatiemethoden van de SharePoint-server:
 

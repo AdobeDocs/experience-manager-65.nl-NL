@@ -38,7 +38,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
    >[!NOTE]
    >
-   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [ Configuraties van de Opslag van Gegevens ](#data-store-configurations) voor configuratieopties.
+   >Zie {de Configuraties van de Opslag van 0} Knoop [&#128279;](#node-store-configurations) en [&#x200B; Configuraties van de Opslag van Gegevens &#x200B;](#data-store-configurations) voor configuratieopties.
 
 1. Start AEM.
 
@@ -46,7 +46,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 >[!CAUTION]
 >
->De nieuwere versies van Oak gebruiken een nieuw noemend regeling en formaat voor OSGi configuratiedossiers. Het nieuwe noemende schema vereist dat het configuratiedossier **.config** wordt genoemd en het nieuwe formaat vereist dat de waarden worden getypt. Voor details zie [ het Apache Sling Provisioning Model en Apache SlingStart - het StandaardFormaat van de Configuratie ](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>De nieuwere versies van Oak gebruiken een nieuw noemend regeling en formaat voor OSGi configuratiedossiers. Het nieuwe noemende schema vereist dat het configuratiedossier **.config** wordt genoemd en het nieuwe formaat vereist dat de waarden worden getypt. Voor details zie [&#x200B; het Apache Sling Provisioning Model en Apache SlingStart - het StandaardFormaat van de Configuratie &#x200B;](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Als u van een oudere versie van Oak bevordert, zorg ervoor dat u eerst een steun van de `crx-quickstart/install` omslag maakt. Na de verbetering, herstel de inhoud van de omslag aan de promotieinstallatie en wijzig de uitbreiding van de configuratiedossiers van **.cfg** aan **.config**.
 
@@ -82,7 +82,7 @@ customBlobStore=B"true"
 
 De opslag van documentknooppunten is de basis van de AEM MongoMK-implementatie. Het gebruikt `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. De volgende configuratieopties zijn beschikbaar:
 
-* `mongouri`: [ MongoURI ](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
+* `mongouri`: [&#x200B; MongoURI &#x200B;](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
 
 * `db`: naam van de Mongo-database. Het gebrek is **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standaardgegevensbestandnaam.
 
@@ -117,11 +117,11 @@ De details over de verschillende gegevensopslag en configuraties worden hieronde
 
 >[!NOTE]
 >
->Om de Opslag van douaneGegevens toe te laten, moet u ervoor zorgen dat `customBlobStore` aan `true` in het respectieve de configuratiedossier van de Opslag van de Knoop van de Knoop ([ de opslag van de segmentknoop ](/help/sites-deploying/data-store-config.md#segment-node-store) of [ opslag van de documentknoop ](/help/sites-deploying/data-store-config.md#document-node-store)) wordt geplaatst.
+>Om de Opslag van douaneGegevens toe te laten, moet u ervoor zorgen dat `customBlobStore` aan `true` in het respectieve de configuratiedossier van de Opslag van de Knoop van de Knoop ([&#x200B; de opslag van de segmentknoop &#x200B;](/help/sites-deploying/data-store-config.md#segment-node-store) of [&#x200B; opslag van de documentknoop &#x200B;](/help/sites-deploying/data-store-config.md#document-node-store)) wordt geplaatst.
 
 ### Bestandsgegevensopslag {#file-data-store}
 
-Dit is de implementatie van [ FileDataStore ](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) huidig in Jackrabbit 2. Hiermee kunt u de binaire gegevens opslaan als normale bestanden in het bestandssysteem. De `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID wordt gebruikt.
+Dit is de implementatie van [&#x200B; FileDataStore &#x200B;](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) huidig in Jackrabbit 2. Hiermee kunt u de binaire gegevens opslaan als normale bestanden in het bestandssysteem. De `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID wordt gebruikt.
 
 Deze configuratieopties zijn beschikbaar:
 
@@ -143,7 +143,7 @@ AEM kan worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage S
 >
 >AEM 6.5 biedt ondersteuning voor het opslaan van gegevens in Amazon S3, maar de ondersteuning wordt niet uitgebreid tot het opslaan van gegevens op andere platformen, waarvan de leveranciers hun eigen implementaties van Amazon S3 API&#39;s hebben.
 
-Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.10.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.10.0.zip). Ook, moet u het recentste de dienstpak van AEM downloaden en installeren zoals vermeld op [ AEM 6.5 de Nota&#39;s van de Versie ](/help/release-notes/release-notes.md) pagina.
+Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [&#x200B; Bewaarplaats van Adobe &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de recentste versie van 1.10.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.s3connector-1.10.0.zip). Ook, moet u het recentste de dienstpak van AEM downloaden en installeren zoals vermeld op [&#x200B; AEM 6.5 de Nota&#39;s van de Versie &#x200B;](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-conn
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de recentste versie van het 1.10.x eigenschappak van het [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download de recentste versie van het 1.10.x eigenschappak van het [&#x200B; Bewaarplaats van Adobe &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Pak de inhoud uit en ga vervolgens naar `jcr_root/libs/system/install/15` .
 1. Kopieer de jar dossiers aan **&lt;aem-install>**/crx-quickstart/install/15 in de installatiemap van AEM.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
@@ -230,7 +230,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 
 >[!NOTE]
 >
->De S3 schakelaar steunt zowel IAM gebruikersauthentificatie als IAM rolauthentificatie. Als u IAM-rolverificatie wilt gebruiken, laat u de waarden `accessKey` en `secretKey` weg uit het configuratiebestand. De S3 schakelaar zal dan aan de [ IAM rol ](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) in gebreke blijven die aan de instantie wordt toegewezen.
+>De S3 schakelaar steunt zowel IAM gebruikersauthentificatie als IAM rolauthentificatie. Als u IAM-rolverificatie wilt gebruiken, laat u de waarden `accessKey` en `secretKey` weg uit het configuratiebestand. De S3 schakelaar zal dan aan de [&#x200B; IAM rol &#x200B;](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) in gebreke blijven die aan de instantie wordt toegewezen.
 
 | Sleutel | Beschrijving | Standaard | Vereist |
 | --- | --- | --- | --- |
@@ -247,7 +247,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 | proxyPort | Stel de optionele proxypoort in waarmee de client verbinding maakt. | | Nee. |
 | s3Bucket | Naam van het S3 emmertje. | | Ja |
 | s3EndPoint | S3 REST API-eindpunt. | | Nee. |
-| s3Region | Regio waar de emmer zich bevindt. Zie deze [ pagina ](https://docs.aws.amazon.com/general/latest/gr/s3.html) voor meer details. | Regio waar AWS-instantie wordt uitgevoerd. | Nee. |
+| s3Region | Regio waar de emmer zich bevindt. Zie deze [&#x200B; pagina &#x200B;](https://docs.aws.amazon.com/general/latest/gr/s3.html) voor meer details. | Regio waar AWS-instantie wordt uitgevoerd. | Nee. |
 | socketTimeout | Stel in hoeveel tijd (in milliseconden) moet worden gewacht voordat gegevens via een gevestigde, open verbinding worden overgebracht en deze verbinding wordt gesloten. | 50000 | Nee. |
 | stagingPurgeInterval | Het interval (in seconden) voor het leegmaken van voltooide uploads vanaf de testcache. | 300 | Nee. |
 | stagingRetryInterval | Het interval (in seconden) om mislukte uploads opnieuw te proberen. | 600 | Nee. |
@@ -304,7 +304,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 
 Wanneer u een upgrade uitvoert vanaf een oudere cache-implementatie (vóór Oak 1.6), is er een verschil in de structuur van de cachemap van het lokale bestandssysteem. In de oude cachestructuur werden zowel de gedownloade als de geüploade bestanden rechtstreeks onder het cachepad geplaatst. De nieuwe structuur segregeert de downloads en uploadt deze en slaat ze op in twee mappen met de naam `upload` en `download` onder het cachepad. Het upgradeproces moet naadloos zijn en alle uploads die in behandeling zijn, moeten worden gepland voor uploaden en alle eerder gedownloade bestanden in de cache worden bij initialisatie in de cache geplaatst.
 
-U kunt de cache ook offline upgraden met behulp van de opdracht `datastorecacheupgrade` voor het uitvoeren van een eiken. Voor details op hoe te om het bevel uit te voeren, controleer [ readme ](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) voor de eiken-looppas module.
+U kunt de cache ook offline upgraden met behulp van de opdracht `datastorecacheupgrade` voor het uitvoeren van een eiken. Voor details op hoe te om het bevel uit te voeren, controleer [&#x200B; readme &#x200B;](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) voor de eiken-looppas module.
 
 Het geheime voorgeheugen heeft een groottegrens en het kan worden gevormd door de cacheSize parameter te gebruiken.
 
@@ -370,7 +370,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
    * Als u S3 gebruikt als gegevensopslagruimte, maakt u een bestand met de naam `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` in de map `<aem-install>/crx-quickstart/install` , zoals hierboven.
 
-1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie zodat richten zij aan de zelfde gegevensopslag. Voor meer informatie, zie [ Configuraties van de Opslag van Gegevens ](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie zodat richten zij aan de zelfde gegevensopslag. Voor meer informatie, zie [&#x200B; Configuraties van de Opslag van Gegevens &#x200B;](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Als de instantie is gekloond vanaf een bestaande server, moet u de `clusterId` van de nieuwe instantie verwijderen met het nieuwste hulpprogramma voor het uitvoeren van een eiken terwijl de opslagplaats offline is. De opdracht die u moet uitvoeren is:
 
    ```xml
@@ -379,14 +379,14 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
    >[!NOTE]
    >
-   >Als een de knoopopslag van het Segment wordt gevormd, dan moet de bewaarplaatspad worden gespecificeerd. Door gebrek, is de weg `<aem-install-folder>/crx-quickstart/repository/segmentstore.` als een de knoopopslag van het Document wordt gevormd u het Koord URI van de Verbinding van het a [ Mongo ](https://docs.mongodb.org/manual/reference/connection-string/) kunt gebruiken.
+   >Als een de knoopopslag van het Segment wordt gevormd, dan moet de bewaarplaatspad worden gespecificeerd. Door gebrek, is de weg `<aem-install-folder>/crx-quickstart/repository/segmentstore.` als een de knoopopslag van het Document wordt gevormd u het Koord URI van de Verbinding van het a [&#x200B; Mongo &#x200B;](https://docs.mongodb.org/manual/reference/connection-string/) kunt gebruiken.
 
    >[!NOTE]
    >
    >U kunt het gereedschap Oak-run downloaden van de volgende locatie:
    >
    >
-   >[ https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
+   >[&#x200B; https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
    >Afhankelijk van de Oak-versie die u gebruikt bij de AEM-installatie, moeten verschillende versies van het gereedschap worden gebruikt. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
@@ -411,7 +411,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 AEM kan worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. De `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID wordt gebruikt voor configuratie.
 
-Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [ Bewaarplaats van Adobe ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de recentste versie van 1.6.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [&#x200B; Bewaarplaats van Adobe &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de recentste versie van 1.6.x versies van het eigenschappak (bijvoorbeeld, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
@@ -442,13 +442,13 @@ Na het downloaden kunt u de Azure-connector als volgt installeren en configurere
 
 U kunt het configuratiebestand gebruiken met de volgende opties:
 
-* azureSas=&quot;&quot;: in versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **als zowel SAS als opslaggeloofsbrieven in het configuratiedossier bestaan, heeft SAS prioriteit.** voor meer informatie over SAS zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
+* azureSas=&quot;&quot;: in versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **als zowel SAS als opslaggeloofsbrieven in het configuratiedossier bestaan, heeft SAS prioriteit.** voor meer informatie over SAS zie de [&#x200B; officiële documentatie &#x200B;](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Het Azure Blob Endpoint. Bijvoorbeeld https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [ officiële documentatie ](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer details over Microsoft® Azure authentificatiegeloofsbrieven, zie de [&#x200B; officiële documentatie &#x200B;](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * SECTKey=&quot;&quot;: de toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
-* container=&quot;&quot;: De naam van de Microsoft® Azure blob opslagcontainer. De container is een groepering van een set bollen. Voor extra details, lees de [ officiële documentatie ](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* container=&quot;&quot;: De naam van de Microsoft® Azure blob opslagcontainer. De container is een groepering van een set bollen. Voor extra details, lees de [&#x200B; officiële documentatie &#x200B;](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot;: het gelijktijdige aantal gelijktijdige aanvragen per bewerking. De standaardwaarde is 1.
 * maxErrorRetry=&quot;&quot;: aantal pogingen per aanvraag. De standaardwaarde is 3.
 * socketTimeout=&quot;&quot;: het time-outinterval, in milliseconden, dat wordt gebruikt voor de aanvraag. De standaardwaarde is 5 minuten.
@@ -485,7 +485,7 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 1. De rol aan het eind van de pagina, en klikt **startDataStoreGC (booleaanse markOnly)** verbinding.
 1. In de volgende dialoog, ga `false` voor de `markOnly` parameter in, dan klik **aanhalen**:
 
-   ![ chlimage_1-9 ](assets/chlimage_1-9.png)
+   ![&#x200B; chlimage_1-9 &#x200B;](assets/chlimage_1-9.png)
 
    >[!NOTE]
    >
@@ -508,9 +508,9 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoonfunctie van gegevensopslaggegevens uit te voeren in een gedeelde gegevensopslag:
 
 1. Zorg ervoor dat om het even welke onderhoudstaken die voor de inzameling van huisvuil van de gegevensopslag worden gevormd op alle bewaarplaats instanties onbruikbaar worden gemaakt die de gegevensopslag delen.
-1. Voer de stappen in werking die in [ worden vermeld Binaire Inzameling van het Afval ](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individueel op **alle** bewaarplaats instanties die de gegevensopslag delen. Zorg er echter voor dat u `true` voor de parameter `markOnly` opgeeft voordat u op de knop Invoke klikt:
+1. Voer de stappen in werking die in [&#x200B; worden vermeld Binaire Inzameling van het Afval &#x200B;](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individueel op **alle** bewaarplaats instanties die de gegevensopslag delen. Zorg er echter voor dat u `true` voor de parameter `markOnly` opgeeft voordat u op de knop Invoke klikt:
 
-   ![ chlimage_1-10 ](assets/chlimage_1-10.png)
+   ![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10.png)
 
 1. Na de voltooiing van de bovengenoemde procedure op alle instanties, stel het huisvuil van de gegevensopslag opnieuw van **in werking om het even welk** van de instanties:
 

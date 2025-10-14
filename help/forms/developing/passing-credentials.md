@@ -41,4 +41,4 @@ Om dit document optimaal te benutten, hebt u een goed begrip nodig van de AEM Fo
 
 >[!MORELIKETHIS]
 >
->* [ het overgaan geloofsbrieven gebruikend WS-Veiligheid kopballen ](assets/passing-credentials-using-ws-security-headers.pdf)
+>* [&#x200B; het overgaan geloofsbrieven gebruikend WS-Veiligheid kopballen &#x200B;](assets/passing-credentials-using-ws-security-headers.pdf)

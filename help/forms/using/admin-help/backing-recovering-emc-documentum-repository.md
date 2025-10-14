@@ -235,11 +235,11 @@ Er wordt een apparaat toegevoegd waarop de back-upbestanden worden opgeslagen. U
 
 ## Back-up maken van de EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie [ Steunend de AEM vormengegevens ](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie [&#x200B; Steunend de AEM vormengegevens &#x200B;](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [ creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [&#x200B; creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning &#x200B;](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Open een opdrachtprompt en ga naar `[NetWorker_root]\Legato\nsr\bin` .
 1. Voer de volgende opdracht uit:
@@ -250,11 +250,11 @@ Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergeg
 
 ## De EMC Documentum Content Server herstellen {#restore-the-emc-documentum-content-server}
 
-Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [ Herstellend de AEM vormengegevens ](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [&#x200B; Herstellend de AEM vormengegevens &#x200B;](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [ creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [&#x200B; creeerde het Voorbereiden van de EMC Server van de Inhoud van het Document voor steun en terugwinning &#x200B;](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Stop de Docbase-service die u wilt herstellen.
 1. Begin het nut van de Gebruiker NetWorker voor uw gegevensbestandmodule (bijvoorbeeld, *Gebruiker NetWorker voor SQL Server*).

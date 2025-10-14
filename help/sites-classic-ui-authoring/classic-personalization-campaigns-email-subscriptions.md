@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >De Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->De aanbeveling moet [ Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) gebruiken.
+>De aanbeveling moet [&#x200B; Adobe Campaign en zijn AEM integratie &#x200B;](/help/sites-administering/campaign.md) gebruiken.
 
 De gebruikers kunnen worden gevraagd om aan **het posteren lijsten 1&rbrace; van de E-mailDienstverlener {met hulp van de** 3} component in te tekenen van de Vorm &lbrace;die op een AEM Web-pagina wordt gebruikt. **&#x200B;**&#x200B;Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
@@ -34,7 +34,7 @@ Een AEM pagina configureren:
 
 1. Selecteer **Cloud Servicen** toen **de Dienst** toevoegen. Selecteer een configuratie in de lijst met beschikbare configuraties.
 
-   ![ chlimage_1-164 ](assets/chlimage_1-164.png)
+   ![&#x200B; chlimage_1-164 &#x200B;](assets/chlimage_1-164.png)
 
 1. Klik **OK**.
 
@@ -51,7 +51,7 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 1. Bij de bodem van de dialoogdoos, open de **drop-down Configuratie van de Actie**, die u één of meerdere abonnementslijsten laat selecteren.
 1. In de **Uitgezochte lijst**, selecteer de lijst u gebruikers wilt intekenen aan. U kunt veelvoudige lijsten toevoegen door de plus knoop te gebruiken (**voeg Punt** toe).
 
-   ![ chlimage_1-10 ](assets/chlimage_1-10.jpeg)
+   ![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10.jpeg)
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 
    >[!NOTE]
    >
-   >Om de functie van het vormabonnement correct te maken, [ encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie ](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
+   >Om de functie van het vormabonnement correct te maken, [&#x200B; encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie &#x200B;](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
 
 ## Toetsen van auteur exporteren en importeren bij publicatie {#exporting-keys-from-author-and-importing-on-publish}
 
@@ -86,7 +86,7 @@ Gebruikers afmelden bij lijsten:
 1. Terwijl het vormen van de component, selecteer de actie **E-mailDienst**: **Unsubscribe gebruiker van lijst.**
 1. Selecteer in het keuzemenu de lijst waaruit de gebruiker bij het afmelden wordt verwijderd.
 
-   ![ chlimage_1-11 ](assets/chlimage_1-11.jpeg)
+   ![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.jpeg)
 
 1. Exporteer de sleutels van de auteur om te publiceren.
 
@@ -114,6 +114,6 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 
    >[!NOTE]
    >
-   >Om de correcte toepassing van het sign-up formulierabonnement te maken, [ encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie ](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
+   >Om de correcte toepassing van het sign-up formulierabonnement te maken, [&#x200B; encryptiesleutels van auteur moeten worden uitgevoerd en op publiceer instantie &#x200B;](#exporting-keys-from-author-and-importing-on-publish) worden ingevoerd.
 
-   ![ chlimage_1-12 ](assets/chlimage_1-12.jpeg)
+   ![&#x200B; chlimage_1-12 &#x200B;](assets/chlimage_1-12.jpeg)

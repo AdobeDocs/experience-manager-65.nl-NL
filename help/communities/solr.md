@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Solr voor AEM Platform {#solr-for-aem-platform}
 
-Een [ installatie van Apache Solr ](https://solr.apache.org/) kan tussen de [ knoopopslag ](../../help/sites-deploying/data-store-config.md) (Oak) en [ gemeenschappelijke opslag ](working-with-srp.md) (SRP) worden gedeeld door verschillende inzamelingen te gebruiken.
+Een [&#x200B; installatie van Apache Solr &#x200B;](https://solr.apache.org/) kan tussen de [&#x200B; knoopopslag &#x200B;](../../help/sites-deploying/data-store-config.md) (Oak) en [&#x200B; gemeenschappelijke opslag &#x200B;](working-with-srp.md) (SRP) worden gedeeld door verschillende inzamelingen te gebruiken.
 
 Als zowel de Oak als SRP inzamelingen intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
@@ -30,14 +30,14 @@ Voor productiemilieu&#39;s, [&#128279;](#solrcloud-mode) de wijze van SolrCloud 
 
 Download en installeer Apache Solr:
 
-* [ Versie 7.0 ](https://archive.apache.org/dist/lucene/solr/7.0.0/)
+* [&#x200B; Versie 7.0 &#x200B;](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
 * Solr vereist Java™ 1.7 of hoger
 * Er is geen service nodig
 * Keuze van uitvoeringsmodi:
 
    * Stand-alone modus
-   * [ wijze SolrCloud ](#solrcloud-mode) (geadviseerd voor productiemilieu&#39;s)
+   * [&#x200B; wijze SolrCloud &#x200B;](#solrcloud-mode) (geadviseerd voor productiemilieu&#39;s)
 
 * Keuze van meertalig zoeken (MLS)
 
@@ -68,7 +68,7 @@ Wanneer de installatie van MLS wordt uitgevoerd in de SolrCloud-modus, zijn het 
 #### 1. Upload een configuratie aan ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referentie:
-[ https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#x200B; https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Gebruik:
 sh./scripts/cloud-scripts/zkcli.sh \
@@ -81,7 +81,7 @@ sh./scripts/cloud-scripts/zkcli.sh \
 #### 2. Een verzameling maken {#create-a-collection}
 
 Referentie:
-[ https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
+[&#x200B; https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Gebruik:
 ./bin/solr create \
@@ -97,7 +97,7 @@ Gebruik:
 Koppel een verzameling aan een configuratie die al is geüpload naar ZooKeeper.
 
 Referentie:
-[ https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#x200B; https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Gebruik:
 sh./scripts/cloud-scripts/zkcli.sh \
@@ -144,7 +144,7 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 **Nota**: AEM 6.1 verwijst naar AEM 6.1 Gemeenschappen FP3 en vroeger.
 
-![ vergelijking-solr-mls ](assets/compare-solr-mls.png)
+![&#x200B; vergelijking-solr-mls &#x200B;](assets/compare-solr-mls.png)
 
 ### Standaard MLS installeren {#installing-standard-mls}
 
@@ -190,11 +190,11 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 
    1. Kopieer gedownloade **schema.xml** en **solrconfig.xml** aan *nieuw-config-dir* om bestaande dossiers te beschrijven.
 
-1. [ upload de nieuwe configuratie ](#upload-a-configuration-to-zookeeper) aan ZooKeeper.
-1. [ creeer een inzameling ](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
-1. Als de configuratienaam *not *provided tijdens verwezenlijking van de inzameling was, [ verbind deze pas gecreëerde inzameling ](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
+1. [&#x200B; upload de nieuwe configuratie &#x200B;](#upload-a-configuration-to-zookeeper) aan ZooKeeper.
+1. [&#x200B; creeer een inzameling &#x200B;](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
+1. Als de configuratienaam *not *provided tijdens verwezenlijking van de inzameling was, [&#x200B; verbind deze pas gecreëerde inzameling &#x200B;](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](msrp.md#msrp-reindex-tool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [&#x200B; het Hulpmiddel van de Reindex MSRP &#x200B;](msrp.md#msrp-reindex-tool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Standaard MLS {#standalone-mode-standard-mls}
 
@@ -212,13 +212,13 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Kopieer gedownloade **schema.xml** en **solrconfig.xml** aan die zelfde folder.
 
 1. Start Solr opnieuw.
-1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](#msrpreindextool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [&#x200B; het Hulpmiddel van de Reindex MSRP &#x200B;](#msrpreindextool), tenzij deze installatie nieuw is.
 
 ### Geavanceerde MLS installeren {#installing-advanced-mls}
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde MLS te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload. Bovendien is een installatiescript inbegrepen voor gebruik wanneer Solr op standalone wijze wordt opgesteld.
 
-Om het Geavanceerde pakket te verkrijgen MLS, zie [ AEM Geavanceerde MLS ](deploy-communities.md#aem-advanced-mls) in opstellen sectie van de documentatie.
+Om het Geavanceerde pakket te verkrijgen MLS, zie [&#x200B; AEM Geavanceerde MLS &#x200B;](deploy-communities.md#aem-advanced-mls) in opstellen sectie van de documentatie.
 
 Ga als volgt te werk om aan de slag te gaan met de installatie voor de zelfstandige of SolrCloud-modus:
 
@@ -254,7 +254,7 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
    1. Voor Solr5: Kopiëren `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` naar `new-config-dir/lang/`
    1. Kopieer de gehaalde **stopwords/** omslag aan *nieuw-config-dir* resulterend in `new-config-dir/stopwords/*.txt`
 
-1. [ uploadt de nieuwe configuratie ](#upload-a-configuration-to-zookeeper) aan ZooKeeper
+1. [&#x200B; uploadt de nieuwe configuratie &#x200B;](#upload-a-configuration-to-zookeeper) aan ZooKeeper
 1. Kopieer de nieuwe **profielen/** omslag..
 
    * Voor Solr4: Kopiëren naar bronnen/map van elk knooppunt
@@ -274,10 +274,10 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
    * *solr-install-dir/contrib/analysis-extras/lib/*.jar
    * *solr-install-dir/contrib/analysis-extras/lucene-libs/*.jar
 
-1. [ creeer een inzameling ](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
-1. Als de configuratienaam ** niet tijdens verwezenlijking van de inzameling werd verstrekt, [ verbind deze pas gecreëerde inzameling ](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
+1. [&#x200B; creeer een inzameling &#x200B;](#create-a-collection) specificerend de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
+1. Als de configuratienaam ** niet tijdens verwezenlijking van de inzameling werd verstrekt, [&#x200B; verbind deze pas gecreëerde inzameling &#x200B;](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [ het Hulpmiddel van de Reindex MSRP ](#msrpreindextool), tenzij deze installatie nieuw is.
+1. Voor MSRP, looppas [&#x200B; het Hulpmiddel van de Reindex MSRP &#x200B;](#msrpreindextool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Geavanceerde MLS {#standalone-mode-advanced-mls}
 

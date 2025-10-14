@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
 In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de besturingssystemen Adaptive Form Editor, Theme Editor, Content Browser en Correspondence Management voor Windows en Macintosh.
 
@@ -86,8 +86,8 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor voor Correspondentiebeheer. U kunt deze sneltoetsen gebruiken als u:
 
-* Het creëren van of het uitgeven van a [ Tekst ](texts-interactive-communications.md) activa
-* Het uitgeven van een tekstmodule na het tikken van het relevante Edit pictogram ( ![ edittextmodule ](assets/edittextmodule.png)) wanneer [ creërend een correspondentie ](/help/forms/using/create-correspondence.md).
+* Het creëren van of het uitgeven van a [&#x200B; Tekst &#x200B;](texts-interactive-communications.md) activa
+* Het uitgeven van een tekstmodule na het tikken van het relevante Edit pictogram ( ![&#x200B; edittextmodule &#x200B;](assets/edittextmodule.png)) wanneer [&#x200B; creërend een correspondentie &#x200B;](/help/forms/using/create-correspondence.md).
 
 ### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}
 

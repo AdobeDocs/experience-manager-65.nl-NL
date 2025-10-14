@@ -32,13 +32,13 @@ Met AEM, kunt u met de volgende niet Adobe producten uit de doos integreren:
 * YouTube - video delen
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-Bovendien kunt u AEM met [ Adobe Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md) integreren.
+Bovendien kunt u AEM met [&#x200B; Adobe Creative Cloud &#x200B;](/help/assets/aem-cc-integration-best-practices.md) integreren.
 
 ## Integratie met Salesforce {#integrating-with-salesforce}
 
 Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de Social Enterprise leidt.
 
-Voor informatie over het integreren van uw AEM plaats en Salesforce, zie [ Integrerend met Salesforce ](/help/sites-administering/salesforce.md).
+Voor informatie over het integreren van uw AEM plaats en Salesforce, zie [&#x200B; Integrerend met Salesforce &#x200B;](/help/sites-administering/salesforce.md).
 
 <!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
@@ -55,14 +55,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om zeer gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
 
-Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [ het Vormen ExactTarget ](/help/sites-administering/exacttarget.md).
+Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [&#x200B; het Vormen ExactTarget &#x200B;](/help/sites-administering/exacttarget.md).
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook en Twitter zijn populaire sociale netwerkdiensten. AEM integratie met Facebook en Twitter biedt organisaties de mogelijkheid om een aanmeldingsoptie voor Facebook of Twitter te bieden voor digitale eigenschappen die in eigendom zijn, en om de gebruikerservaring aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
 
-Zie [ Sociale Login ](/help/communities/social-login.md) voor meer informatie.
+Zie [&#x200B; Sociale Login &#x200B;](/help/communities/social-login.md) voor meer informatie.
 
 ## Integreren met andere providers {#integrating-with-other-providers}
 
-AEM laat u met andere externe leveranciers met het Fragment van Analytics van a [ Generic verbinden.](/help/sites-administering/external-providers.md)
+AEM laat u met andere externe leveranciers met het Fragment van Analytics van a [&#x200B; Generic verbinden.](/help/sites-administering/external-providers.md)

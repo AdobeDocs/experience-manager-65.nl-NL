@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Houd u vertrouwd met concepten als documentbeveiliging, Reader-extensie en de programmeertaal Java om de documenten die met beveiligingsbeleid zijn beveiligd, door het document uit te breiden met PDF.
 
-Met documentbeveiliging kunt u de toegang van specifieke PDF-documenten beperken tot alleen geautoriseerde gebruikers. U kunt ook bepalen hoe een ontvanger een beveiligd document kan gebruiken. U kunt bijvoorbeeld opgeven of ontvangers tekst van een document dat met een beveiligingsbeleid is beveiligd, kunnen afdrukken, kopiëren of bewerken. Meer over documentveiligheid leren, zie [ over documentveiligheid ](/help/forms/using/admin-help/document-security.md).
+Met documentbeveiliging kunt u de toegang van specifieke PDF-documenten beperken tot alleen geautoriseerde gebruikers. U kunt ook bepalen hoe een ontvanger een beveiligd document kan gebruiken. U kunt bijvoorbeeld opgeven of ontvangers tekst van een document dat met een beveiligingsbeleid is beveiligd, kunnen afdrukken, kopiëren of bewerken. Meer over documentveiligheid leren, zie [&#x200B; over documentveiligheid &#x200B;](/help/forms/using/admin-help/document-security.md).
 
-Met Reader-extensies kunt u interactieve functies in Adobe PDF-documenten inschakelen via Acrobat Reader. Deze interactieve functies zijn normaal alleen beschikbaar via Adobe Acrobat Professional en Standard. Om over de interactieve eigenschappen te leren die de lezeruitbreiding kan toelaten, zie [ de dienst van Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
+Met Reader-extensies kunt u interactieve functies in Adobe PDF-documenten inschakelen via Acrobat Reader. Deze interactieve functies zijn normaal alleen beschikbaar via Adobe Acrobat Professional en Standard. Om over de interactieve eigenschappen te leren die de lezeruitbreiding kan toelaten, zie [&#x200B; de dienst van Adobe Experience Manager Forms DocAssurance &#x200B;](/help/forms/using/overview-aem-document-services.md)**.**
 
 U kunt de draagbare beveiligingsbibliotheek gebruiken om beleid toe te passen op het document zonder dat u documenten hoeft te lezen via het netwerk. Slechts reizen de veiligheidsgeloofsbrieven en bescherming-beleid details over het netwerk. Het document zelf laat de client nooit over en het beveiligingsbeleid wordt lokaal op de client toegepast.
 

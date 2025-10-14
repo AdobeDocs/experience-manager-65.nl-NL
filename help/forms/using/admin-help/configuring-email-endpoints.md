@@ -36,7 +36,7 @@ Alle e-maileindpunten zijn geconfigureerd met een geoorloofde gebruikersnaam en 
 
 Als uw gebruikers documenten met West-Europese taalkarakters in dossier en omzettingswegnamen verzenden, moeten zij een e-mailtoepassing gebruiken die de vereiste het coderen types (Latin1 [ ISO-8859-1 ], West-Europese [ Vensters ], of UTF-8) steunt. Voor meer informatie, zie *het Installeren van en het Opstellen van AEM vormen* document voor uw toepassingsserver.
 
-Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [ de montages van het standaard e-maileindpunt ](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De de configuratieparameters van de E-mail dienst hebben twee doeleinden:
+Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [&#x200B; de montages van het standaard e-maileindpunt &#x200B;](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De de configuratieparameters van de E-mail dienst hebben twee doeleinden:
 
 * Om attributen te vormen die voor alle e-maileindpunten gemeenschappelijk zijn
 * Standaardwaarden opgeven voor alle e-maileindpunten
@@ -65,7 +65,7 @@ U kunt POP3, IMAP, of SMTP vormen om de Veilige Laag van Contactdozen (SSL) voor
 
 U kunt de pagina van het Beheer van de Dienst gebruiken om attributen te vormen die voor alle e-maileindpunten gemeenschappelijk zijn, en standaardwaarden voor alle e-maileindpunten te verstrekken.
 
-Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruikers ontvangt en afhandelt, moet u een e-maileindpunt voor de service Volledige taak maken. Dit e-maileindpunt vereist extra montages, zoals die in [ worden beschreven leidt tot een E-mail eindpunt voor de Volledige dienst van de Taak ](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
+Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruikers ontvangt en afhandelt, moet u een e-maileindpunt voor de service Volledige taak maken. Dit e-maileindpunt vereist extra montages, zoals die in [&#x200B; worden beschreven leidt tot een E-mail eindpunt voor de Volledige dienst van de Taak &#x200B;](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
 ### De standaardwaarden voor e-maileindpunten wijzigen {#change-the-default-values-for-email-endpoints}
 

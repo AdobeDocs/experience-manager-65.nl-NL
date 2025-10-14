@@ -83,7 +83,7 @@ Paden in het JCR mogen geen spaties bevatten, maar de aanwezigheid ervan mag er 
 
 ### Gebruik de XSS API en/of HTML om tegen cross-site scripting aanvallen te beschermen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM verstrekt een XSS API om parameters gemakkelijk schoon te maken en veiligheid van dwars-plaats scripting aanvallen te verzekeren. Bovendien heeft HTL deze beschermingen direct in de sjabloontaal ingebouwd. Een API bedriegblad is beschikbaar voor download bij [ Ontwikkeling - Richtlijnen en Beste praktijken ](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM verstrekt een XSS API om parameters gemakkelijk schoon te maken en veiligheid van dwars-plaats scripting aanvallen te verzekeren. Bovendien heeft HTL deze beschermingen direct in de sjabloontaal ingebouwd. Een API bedriegblad is beschikbaar voor download bij [&#x200B; Ontwikkeling - Richtlijnen en Beste praktijken &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Pas het aangewezen registreren toe {#implement-appropriate-logging}
 

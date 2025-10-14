@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Forms-elementen en -documenten migreren{#migrate-aem-forms-assets-and-documents}
 
-Het nut van de Migratie zet de [ Aangepaste activa van Forms ](../../forms/using/introduction-forms-authoring.md), [ wolkenconfiguraties ](/help/sites-developing/extending-cloud-config.md) om, en [ de activa van het Beheer van de Correspondentie ](/help/forms/using/cm-overview.md) van het formaat dat in de vroegere versies aan het formaat wordt gebruikt in Adobe Experience Manager (AEM) 6.5 Forms. Wanneer u het migratiehulpprogramma uitvoert, wordt het volgende gemigreerd:
+Het nut van de Migratie zet de [&#x200B; Aangepaste activa van Forms &#x200B;](../../forms/using/introduction-forms-authoring.md), [&#x200B; wolkenconfiguraties &#x200B;](/help/sites-developing/extending-cloud-config.md) om, en [&#x200B; de activa van het Beheer van de Correspondentie &#x200B;](/help/forms/using/cm-overview.md) van het formaat dat in de vroegere versies aan het formaat wordt gebruikt in Adobe Experience Manager (AEM) 6.5 Forms. Wanneer u het migratiehulpprogramma uitvoert, wordt het volgende gemigreerd:
 
 * Aangepaste componenten voor aangepaste formulieren
 * Aangepaste formulieren en correspondentiebeheersjablonen
@@ -33,21 +33,21 @@ Het nut van de Migratie zet de [ Aangepaste activa van Forms ](../../forms/using
 
 ## Migratieaanpak {#approach-to-migration}
 
-U kunt [ bevorderen ](../../forms/using/upgrade.md) aan de recentste versie van AEM Forms 6.5 van AEM Forms 6.4, 6.3, of 6.2, of een nieuwe installatie. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
+U kunt [&#x200B; bevorderen &#x200B;](../../forms/using/upgrade.md) aan de recentste versie van AEM Forms 6.5 van AEM Forms 6.4, 6.3, of 6.2, of een nieuwe installatie. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
 **als er een verbetering op zijn plaats** is
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Nochtans, alvorens u de activa en de documenten kunt gebruiken, moet u het [&#x200B; pakket van de Verenigbaarheid AEMFD &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren
 
-Dan moet u de activa en de documenten door [ bijwerken die het nut van de Migratie ](#runningmigrationutility) in werking stellen.
+Dan moet u de activa en de documenten door [&#x200B; bijwerken die het nut van de Migratie &#x200B;](#runningmigrationutility) in werking stellen.
 
 **als er een uit-van-plaats installatie** is
 
-Als het een uit plaats (verse) installatie is, alvorens u de activa en de documenten kunt gebruiken, moet u het [ pakket van de Verenigbaarheid AEMFD ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
+Als het een uit plaats (verse) installatie is, alvorens u de activa en de documenten kunt gebruiken, moet u het [&#x200B; pakket van de Verenigbaarheid AEMFD &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) (omvat het pakket van de Verenigbaarheid van het Beheer van de Correspondentie) installeren.
 
-Dan moet u uw activapakket (ZIP of cmp) op de nieuwe opstelling invoeren en dan de activa en de documenten bijwerken door [ in werking te stellen het nut van de Migratie ](#runningmigrationutility). Adobe raadt u aan alleen na het uitvoeren van het migratiehulpprogramma middelen op de nieuwe installatie te maken.
+Dan moet u uw activapakket (ZIP of cmp) op de nieuwe opstelling invoeren en dan de activa en de documenten bijwerken door [&#x200B; in werking te stellen het nut van de Migratie &#x200B;](#runningmigrationutility). Adobe raadt u aan alleen na het uitvoeren van het migratiehulpprogramma middelen op de nieuwe installatie te maken.
 
-Wegens [ achterwaartse op verenigbaarheid-verwant ](/help/sites-deploying/backward-compatibility.md) veranderingen, worden de plaatsen van een paar omslagen in crx-bewaarplaats veranderd. Exporteer en importeer afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie handmatig naar een nieuwe omgeving.
+Wegens [&#x200B; achterwaartse op verenigbaarheid-verwant &#x200B;](/help/sites-deploying/backward-compatibility.md) veranderingen, worden de plaatsen van een paar omslagen in crx-bewaarplaats veranderd. Exporteer en importeer afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie handmatig naar een nieuwe omgeving.
 
 ## Voordat u verdergaat met de migratie {#prerequisites}
 
@@ -62,7 +62,7 @@ Voor Correspondentenbeheermiddelen:
 * De status Klaar voor Publish is afgekeurd sinds AEM 6.1 Forms. Alle elementen in de status Klaar voor Publish worden dus gewijzigd in Gewijzigde status.
 * Aangezien de gebruikersinterface in AEM Forms 6.3 wordt bijgewerkt, zijn de stappen voor het uitvoeren van de aanpassingen ook verschillend. Als u migreert van een versie die ouder is dan versie 6.3, voert u de aanpassing opnieuw uit.
 * Layoutfragmenten worden verplaatst van `/content/apps/cm/layouts/fragmentlayouts/1001` naar `/content/apps/cm/modules/fragmentlayouts` . De verwijzing van het Woordenboek van gegevens in activa toont de weg van het Woordenboek van Gegevens in plaats van zijn naam.
-* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Voor meer informatie, zie [ Correspondentiebeheer - Gebruikend lusje het uit elkaar plaatsen voor het schikken van tekst ](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Voor meer informatie, zie [&#x200B; Correspondentiebeheer - Gebruikend lusje het uit elkaar plaatsen voor het schikken van tekst &#x200B;](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 * Configuraties van de middelencomposer veranderen in Correspondence Management-configuraties.
 * Assets wordt onder mappen geplaatst met namen zoals Bestaande tekst en Bestaande lijst.
 
@@ -103,7 +103,7 @@ Wanneer u het migratiehulpprogramma voor het eerst uitvoert, wordt een logboek g
 
    >[!NOTE]
    >
-   >Tijdens de migratie van middelen vindt u mogelijk waarschuwingsberichten zoals &quot;Conflict gevonden voor...&quot;. Dergelijke berichten geven aan dat de regels voor sommige componenten in adaptieve formulieren niet kunnen worden gemigreerd. Als de component bijvoorbeeld een gebeurtenis met zowel regels als scripts had, als regels optreden nadat een script is uitgevoerd, worden de regels voor de component niet gemigreerd. U kunt [ dergelijke regels migreren door de regelredacteur ](#migrate-rules) in het adaptieve vormontwerp te openen.
+   >Tijdens de migratie van middelen vindt u mogelijk waarschuwingsberichten zoals &quot;Conflict gevonden voor...&quot;. Dergelijke berichten geven aan dat de regels voor sommige componenten in adaptieve formulieren niet kunnen worden gemigreerd. Als de component bijvoorbeeld een gebeurtenis met zowel regels als scripts had, als regels optreden nadat een script is uitgevoerd, worden de regels voor de component niet gemigreerd. U kunt [&#x200B; dergelijke regels migreren door de regelredacteur &#x200B;](#migrate-rules) in het adaptieve vormontwerp te openen.
 
    * Om adaptieve componenten van de vormdouane te migreren, selecteer **Aangepaste Migratie van de Componenten van Forms van de Douane** en in de pagina van de Migratie van de Componenten van de Douane, de uitgezochte **Migratie van het Begin**. De volgende code wordt gemigreerd:
 
@@ -148,7 +148,7 @@ Wanneer u het migratiehulpprogramma voor het eerst uitvoert, wordt een logboek g
    * **voegt de markeringen aan de activa** toe: Voegt de markering &quot;Correspondence Management toe: Gemigreerde Assets&quot; / &quot;Aangepaste Forms: Gemigreerde Assets&quot;. naar de gemigreerde elementen, zodat de gebruikers de gemigreerde elementen kunnen identificeren. Wanneer u het migratiehulpprogramma uitvoert, worden alle bestaande elementen in het systeem gemarkeerd als Gemigreerd.
    * **produceert markeringen**: De categorieën en subcategorieën die in het vorige systeem aanwezig zijn worden gecreeerd als markeringen, en dan worden deze markeringen geassocieerd met de relevante activa van het Beheer van de Correspondentie in AEM. Een categorie (claims) en een subcategorie (claims) van een lettertypesjabloon worden bijvoorbeeld gegenereerd als tags.
 
-1. Nadat het nut van de Migratie eindigt lopend, ga aan de [ huishouden taken ](#housekeepingtasks) te werk.
+1. Nadat het nut van de Migratie eindigt lopend, ga aan de [&#x200B; huishouden taken &#x200B;](#housekeepingtasks) te werk.
 
 #### Regels migreren met de regeleditor {#migrate-rules}
 
@@ -172,11 +172,11 @@ Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudel
 
 1. Zorg ervoor dat de XFA-versie van lay-outs en fragmentlay-outs 3.3 of hoger is. Als u lay-outs en fragmentlay-outs van een oudere versie gebruikt, kunnen er problemen optreden bij het renderen van de letter. Voer de volgende stappen uit om een versie van een oudere XFA bij te werken naar de meest recente versie:
 
-   1. [ Download XFA als zip dossier ](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) van het gebruikersinterface van Forms.
+   1. [&#x200B; Download XFA als zip dossier &#x200B;](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) van het gebruikersinterface van Forms.
    1. Extraheer het bestand.
    1. Open het XFA-bestand in de nieuwste Designer en sla het op. De versie van XFA wordt bijgewerkt naar de nieuwste versie.
    1. Upload de XFA in de Forms-gebruikersinterface.
 
 1. Publish alle middelen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij in de instantie Auteur en als u de elementen wilt bijwerken in de Publish-instanties, moet u de elementen publiceren.
 
-1. In AEM Forms 6.4 en 6.5 zijn enkele rechten van de gebruikersgroepen gewijzigd. Als u wilt dat gebruikers XDP&#39;s en Adaptive Forms met scripts kunnen uploaden of een code-editor kunnen gebruiken, moet u ze toevoegen aan de gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen een code-editor gebruiken door deze toe te voegen aan de af-template-script-writers-groep. Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ het Leiden Gebruikers en de Groepen van de Gebruiker ](/help/communities/users.md).
+1. In AEM Forms 6.4 en 6.5 zijn enkele rechten van de gebruikersgroepen gewijzigd. Als u wilt dat gebruikers XDP&#39;s en Adaptive Forms met scripts kunnen uploaden of een code-editor kunnen gebruiken, moet u ze toevoegen aan de gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen een code-editor gebruiken door deze toe te voegen aan de af-template-script-writers-groep. Voor instructies bij het toevoegen van gebruikers aan groepen, zie [&#x200B; het Leiden Gebruikers en de Groepen van de Gebruiker &#x200B;](/help/communities/users.md).

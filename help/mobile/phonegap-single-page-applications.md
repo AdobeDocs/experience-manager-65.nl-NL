@@ -20,11 +20,11 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-[ Toepassingen van één pagina ](https://en.wikipedia.org/wiki/Single-page_application) (SPA) hebben kritieke massa bereikt, wijd beschouwd als het meest efficiënte patroon voor de bouw van naadloze ervaringen met Webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
+[&#x200B; Toepassingen van één pagina &#x200B;](https://en.wikipedia.org/wiki/Single-page_application) (SPA) hebben kritieke massa bereikt, wijd beschouwd als het meest efficiënte patroon voor de bouw van naadloze ervaringen met Webtechnologie. Door een SPA te volgen kunt u een toepassing maken die dezelfde prestaties levert als een bureaubladtoepassing of mobiele toepassing, maar die een groot aantal apparaatplatforms en formulierfactoren bereikt vanwege de basis in open webstandaarden.
 
 Over het algemeen, SPA lijken krachtiger dan traditionele op pagina-gebaseerde websites omdat zij typisch een volledige pagina van de HTML **slechts eenmaal** (met inbegrip van CSS, JS, en het steunen doopvontinhoud) laden, en dan slechts precies laden wat noodzakelijk is telkens als een verandering van staat in app voorkomt. Wat nodig is voor deze verandering van staat kan variëren gebaseerd op de gekozen reeks technologieën, maar omvat typisch één enkel fragment van HTML om de bestaande &quot;mening&quot;te vervangen, en de uitvoering van een blok van code JS om de nieuwe mening omhoog te telegraferen en om het even welke cliënt-zijmalplaatje uit te voeren die noodzakelijk kan zijn. De snelheid van deze statuswijziging kan zelfs nog verder worden verbeterd door mechanismen voor het in cache plaatsen van sjablonen te ondersteunen, of zelfs offline toegang tot sjablooninhoud als Adobe PhoneGap wordt gebruikt.
 
-AEM 6.1 ondersteunt de bouw en het beheer van SPA via AEM Apps. Dit artikel verstrekt een inleiding aan de concepten achter de SPA en hoe zij [ AngularJS ](https://angularjs.org/) gebruiken om uw merk aan App Store en Google Play te brengen.
+AEM 6.1 ondersteunt de bouw en het beheer van SPA via AEM Apps. Dit artikel verstrekt een inleiding aan de concepten achter de SPA en hoe zij [&#x200B; AngularJS &#x200B;](https://angularjs.org/) gebruiken om uw merk aan App Store en Google Play te brengen.
 
 ## SPA in AEM apps {#spa-in-aem-apps}
 
@@ -36,7 +36,7 @@ AEM Apps behandelt veel van de configuratie AngularJS voor u, met inbegrip van h
 
 Een deel van de initialisatie van uw app bestaat uit het opgeven van welke AngularJS-modules de toepassing afhankelijk is. De lijst met modules die door uw app worden gebruikt, is opgegeven door een script op /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp en kan worden bedekt door de paginacomponent van uw eigen apps om extra AngularJS-modules in te schakelen die uw app nodig heeft. Als voorbeeld, vergelijk het bovengenoemde manuscript met de implementatie van de Geometrixx (die in /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp wordt gevestigd).
 
-Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Voor een voorbeeld van hoe dit in praktijk kijkt, bekijk het angular-app-module manuscript door de Geometrixx Outdoors wordt geproduceerd app steekproef: (de verbinding vereist een lokale instantie) [ http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js ](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw top-level app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst van $routeProvider van Angular te vormen. Voor een voorbeeld van hoe dit in praktijk kijkt, bekijk het angular-app-module manuscript door de Geometrixx Outdoors wordt geproduceerd app steekproef: (de verbinding vereist een lokale instantie) [&#x200B; http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js &#x200B;](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Door in te schrijven naar de gegenereerde AEMAngularApp, ziet u een reeks routes die als volgt worden opgegeven:
 
@@ -54,7 +54,7 @@ Het malplaatje te laden wanneer deze route wordt gevraagd wordt gespecificeerd d
 
 ## Paginacontrollers {#page-controllers}
 
-In de eigen woorden van Angulars, &quot;is een Controlemechanisme een de aannemersfunctie van JavaScript die wordt gebruikt om het Toepassingsgebied van de Angular te verhogen.&quot; ([ bron ](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM App wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welk controlemechanisme kan worden uitgebreid dat a `frameworkType` van `angular` specificeert. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
+In de eigen woorden van Angulars, &quot;is een Controlemechanisme een de aannemersfunctie van JavaScript die wordt gebruikt om het Toepassingsgebied van de Angular te verhogen.&quot; ([&#x200B; bron &#x200B;](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM App wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welk controlemechanisme kan worden uitgebreid dat a `frameworkType` van `angular` specificeert. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
 
 Voor een complexer controllervoorbeeld opent u het script ng-template-page controller.jsp (op /apps/geometrixx-outdoor-app/components/angular/ng-template-page). Van bijzonder belang is de JavaScript-code die wordt gegenereerd wanneer deze wordt uitgevoerd, die als volgt wordt weergegeven:
 
@@ -85,4 +85,4 @@ Er zijn hier ook twee componenten aan het werk: ng-product vergroot het werkings
 
 ## De volgende stappen {#the-next-steps}
 
-Zodra u over de Enige Toepassingen van de Pagina hebt geleerd, zie [ Ontwikkelend Toepassingen met CLI PhoneGap ](/help/mobile/phonegap-apps-pg-cli.md).
+Zodra u over de Enige Toepassingen van de Pagina hebt geleerd, zie [&#x200B; Ontwikkelend Toepassingen met CLI PhoneGap &#x200B;](/help/mobile/phonegap-apps-pg-cli.md).

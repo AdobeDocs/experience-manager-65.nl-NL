@@ -67,7 +67,7 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Controleer of MongoDB is geïnstalleerd en of een instantie van `mongod` wordt uitgevoerd. Voor meer info, zie [ Installerend MongoDB ](https://docs.mongodb.org/manual/installation/).
+1. Controleer of MongoDB is geïnstalleerd en of een instantie van `mongod` wordt uitgevoerd. Voor meer info, zie [&#x200B; Installerend MongoDB &#x200B;](https://docs.mongodb.org/manual/installation/).
 1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
 1. Vorm de knoopopslag door een configuratiedossier met de naam van de configuratie te creëren die u in de `crx-quickstart\install` folder wilt gebruiken.
 
@@ -75,13 +75,13 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
 
 1. Bewerk het bestand en stel de configuratieopties in. De volgende opties zijn beschikbaar:
 
-   * `mongouri`: [ MongoURI ](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
+   * `mongouri`: [&#x200B; MongoURI &#x200B;](https://docs.mongodb.org/manual/reference/connection-string/) wordt vereist om met het Gegevensbestand van Mongo te verbinden dat. De standaardwaarde is `mongodb://localhost:27017`
    * `db`: naam van de Mongo-database. Door gebrek gebruiken nieuwe AEM 6 installaties **aem-auteur** als gegevensbestandnaam.
    * `cache`: De cachegrootte in megabytes. Deze cachegrootte wordt verdeeld over verschillende caches die in DocumentNodeStore worden gebruikt. De standaardwaarde is 256.
    * `changesSize`: Grootte in MB van de afgetopte inzameling die in Mongo voor caching van de diff output wordt gebruikt. De standaardwaarde is 256.
    * `customBlobStore`: Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is false.
 
-1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Voor meer info, zie [ het Vormen de Opslag van de Knoop en de Opslag van Gegevens ](/help/sites-deploying/data-store-config.md).
+1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Voor meer info, zie [&#x200B; het Vormen de Opslag van de Knoop en de Opslag van Gegevens &#x200B;](/help/sites-deploying/data-store-config.md).
 
 1. Start de AEM 6-jar met een MongoDB-opslagback-end door deze uit te voeren:
 
@@ -118,10 +118,10 @@ Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transpa
 >
 >Raadpleeg de volgende bronnen:
 >
->* Voor meer informatie betreffende de Transparante Pagina&#39;s van de Groot van de Lezing op Red Hat® Linux®, raadpleeg het volgende artikel van het Portaal van de Klant Red Hat®: [ gebruiken, controleren, en onbruikbaar maken transparante gezoempagina&#39;s in de Onderneming Linux 6, 7 en 8 van Red Hat?](https://access.redhat.com/solutions/46111)
->* Voor Linux® het stemmen uiteinden, zie [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md).
+>* Voor meer informatie betreffende de Transparante Pagina&#39;s van de Groot van de Lezing op Red Hat® Linux®, raadpleeg het volgende artikel van het Portaal van de Klant Red Hat®: [&#x200B; gebruiken, controleren, en onbruikbaar maken transparante gezoempagina&#39;s in de Onderneming Linux 6, 7 en 8 van Red Hat?](https://access.redhat.com/solutions/46111)
+>* Voor Linux® het stemmen uiteinden, zie [&#x200B; Optimalisering van Prestaties &#x200B;](/help/sites-deploying/configuring-performance.md).
 >
 
 ## Behoud van de opslagplaats {#maintaining-the-repository}
 
-Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van de opslagplaats te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het correctiemechanisme van de Herziening wint schijfruimte terug door verouderde gegevens uit de bewaarplaats te verwijderen. Voor verdere details over de Opruiming van de Revisie, lees de [ pagina van de Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md).
+Bij elke update van de opslagplaats wordt een inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van de opslagplaats te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het correctiemechanisme van de Herziening wint schijfruimte terug door verouderde gegevens uit de bewaarplaats te verwijderen. Voor verdere details over de Opruiming van de Revisie, lees de [&#x200B; pagina van de Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md).

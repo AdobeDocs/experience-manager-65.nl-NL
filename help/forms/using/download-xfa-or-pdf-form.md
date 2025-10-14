@@ -35,7 +35,7 @@ Naast deze elementen kunt u het type `Resource` element downloaden als dit in ee
 
 1. Navigeer naar de locatie van het element dat u wilt downloaden.
 
-1. Selecteer het element. Klik het **[!UICONTROL Download]** ![ aem6forms_download ](assets/aem6forms_download.png) pictogram in de toolbar.
+1. Selecteer het element. Klik het **[!UICONTROL Download]** ![&#x200B; aem6forms_download &#x200B;](assets/aem6forms_download.png) pictogram in de toolbar.
 
    >[!NOTE]
    >

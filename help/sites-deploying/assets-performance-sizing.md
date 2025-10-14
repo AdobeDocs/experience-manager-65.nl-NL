@@ -61,7 +61,7 @@ De DAM-processen zijn zeer geschikt om in grote hoeveelheden parallel te worden 
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB van hoop toe en vorm het [!UICONTROL DAM Update Asset] werkschema om het [ pakket van Camera Raw ](/help/assets/camera-raw.md) voor de opname van ruwe beelden te gebruiken.
+Wijs minstens 16 GB van hoop toe en vorm het [!UICONTROL DAM Update Asset] werkschema om het [&#x200B; pakket van Camera Raw &#x200B;](/help/assets/camera-raw.md) voor de opname van ruwe beelden te gebruiken.
 
 ## Het systeem begrijpen {#understanding-the-system}
 

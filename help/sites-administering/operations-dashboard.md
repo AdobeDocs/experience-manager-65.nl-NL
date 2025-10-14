@@ -34,7 +34,7 @@ Het kan door naar **Hulpmiddelen** te gaan worden betreden - **Verrichtingen** v
 
 >[!NOTE]
 >
->Om tot het Dashboard van Verrichtingen toegang te hebben, moet de het programma geopende gebruiker deel van de &quot;Exploitanten&quot;gebruikersgroep uitmaken. Voor meer info, zie documentatie over [ Gebruiker, Groep, en Recht Beleid van de Toegang ](/help/sites-administering/user-group-ac-admin.md).
+>Om tot het Dashboard van Verrichtingen toegang te hebben, moet de het programma geopende gebruiker deel van de &quot;Exploitanten&quot;gebruikersgroep uitmaken. Voor meer info, zie documentatie over [&#x200B; Gebruiker, Groep, en Recht Beleid van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md).
 
 ## Gezondheidsrapportage {#health-reports}
 
@@ -44,17 +44,17 @@ Het heeft verschillende functies, die hieronder worden beschreven.
 
 ## Gezondheidscontroles {#health-checks}
 
-De **Rapporten van de Gezondheid** zijn een systeem van kaarten die op goede of slechte gezondheid over een specifiek productgebied wijzen. Deze kaarten zijn visualisaties van de Sling Health Checks, die gegevens van JMX en andere bronnen samenvoegen en verwerkte informatie opnieuw blootstellen als MBans. Deze MBeans kunnen ook in de [ JMX Webconsole ](/help/sites-administering/jmx-console.md), onder het **org.apache.sling.health check** domein worden geïnspecteerd.
+De **Rapporten van de Gezondheid** zijn een systeem van kaarten die op goede of slechte gezondheid over een specifiek productgebied wijzen. Deze kaarten zijn visualisaties van de Sling Health Checks, die gegevens van JMX en andere bronnen samenvoegen en verwerkte informatie opnieuw blootstellen als MBans. Deze MBeans kunnen ook in de [&#x200B; JMX Webconsole &#x200B;](/help/sites-administering/jmx-console.md), onder het **org.apache.sling.health check** domein worden geïnspecteerd.
 
 De interface van de Rapporten van de Gezondheid kan door **Hulpmiddelen** worden betreden - **Verrichtingen** - **het menu van de Gezondheidsrapporten** op het AEM Welkomstscherm, of direct door volgende URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
-![ chlimage_1-116 ](assets/chlimage_1-116.png)
+![&#x200B; chlimage_1-116 &#x200B;](assets/chlimage_1-116.png)
 
 Het kaartsysteem stelt drie mogelijke staten bloot: **O.K.**, **WAARSCHUWING** en **KRITIEK**. De staten zijn het resultaat van regels en drempels, die kunnen worden gevormd door de muis over de kaart te bewegen en dan het tandwielpictogram in de actiebar te klikken:
 
-![ chlimage_1-117 ](assets/chlimage_1-117.png)
+![&#x200B; chlimage_1-117 &#x200B;](assets/chlimage_1-117.png)
 
 ### Typen health check {#health-check-types}
 
@@ -77,7 +77,7 @@ In het vectordashboard kunt u het resultaat van zowel individuele als samengeste
 
 Het maken van een individuele Health Check omvat twee stappen: het implementeren van een Sling Health Check en het toevoegen van een item voor de Health Check in de configuratieknooppunten van het dashboard.
 
-1. Als u een Sling Health Check wilt maken, maakt u een OSGI-component die de Sling HealthCheck-interface implementeert. Voeg deze component in een bundel toe. De eigenschappen van de component identificeren de Health Check volledig. Nadat de component is geïnstalleerd, wordt er automatisch een JMX MBean voor de Health Check gemaakt. Zie de [ Verschuivende Documentatie van de Controle van de Gezondheid ](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) voor meer informatie.
+1. Als u een Sling Health Check wilt maken, maakt u een OSGI-component die de Sling HealthCheck-interface implementeert. Voeg deze component in een bundel toe. De eigenschappen van de component identificeren de Health Check volledig. Nadat de component is geïnstalleerd, wordt er automatisch een JMX MBean voor de Health Check gemaakt. Zie de [&#x200B; Verschuivende Documentatie van de Controle van de Gezondheid &#x200B;](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) voor meer informatie.
 
    Voorbeeld van een component Sling Health Check, geschreven met aantekeningen van de component OSGI-service:
 
@@ -143,7 +143,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
 1. Onderzoek naar de ingang genoemd **Apache Sling Composite Health Check**. Nadat u het vindt, merk op dat er twee configuraties reeds beschikbaar zijn: voor de Controles van het Systeem en andere voor de Controles van de Veiligheid.
 1. Creeer een configuratie door &quot;+&quot;knoop op de rechterkant van de configuratie te drukken. Er wordt een nieuw venster weergegeven, zoals hieronder wordt getoond:
 
-   ![ chlimage_1-23 ](assets/chlimage_1-23.jpeg)
+   ![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23.jpeg)
 
 1. Een configuratie maken en opslaan. Een boon wordt gecreeerd met de nieuwe configuratie.
 
@@ -329,7 +329,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
 
 Door gebrek, voor een uit-van-de-doos AEM instantie, lopen de gezondheidscontroles om de 60 seconden.
 
-U kunt de **Periode** met de [ configuratie vormen OSGi ](/help/sites-deploying/configuring-osgi.md) **Configuratie van de Controle van de Gezondheid van de Vraag** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
+U kunt de **Periode** met de [&#x200B; configuratie vormen OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) **Configuratie van de Controle van de Gezondheid van de Vraag** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
 ## Controle met externe services {#monitoring-with-external-services}
 
@@ -347,7 +347,7 @@ De belangrijkste kenmerken zijn:
 
 U kunt het scherm van de Hulpmiddelen van de Diagnose bereiken door naar **Hulpmiddelen te gaan - Verrichtingen - Diagnose** van het AEM Welkome scherm. U kunt het scherm ook openen door de volgende URL rechtstreeks te openen: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
-![ chlimage_1-120 ](assets/chlimage_1-120.png)
+![&#x200B; chlimage_1-120 &#x200B;](assets/chlimage_1-120.png)
 
 ### Logberichten {#log-messages}
 
@@ -364,7 +364,7 @@ Voorbeelden:
 
 * Als u alle berichten wilt vastleggen die afkomstig zijn uit een bepaald pakket (bijvoorbeeld com.adobe.granite), moet de naam van het logger worden ingesteld op: &quot;com.adobe.granite&quot;. En, het logboekniveau dat aan wordt geplaatst: **DEBUG** (doet dit vangt alle **FOUT**, **WARN**, **INFO**, en **DEBUG** berichten), zoals aangetoond in het beeld hieronder.
 
-![ chlimage_1-121 ](assets/chlimage_1-121.png)
+![&#x200B; chlimage_1-121 &#x200B;](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
@@ -376,7 +376,7 @@ Voorbeelden:
 
 >[!NOTE]
 >
->De instellingen op de diagnospagina hebben geen invloed op wat wordt geregistreerd voor de logbestanden en omgekeerd. Zo, terwijl het foutenlogboek de berichten van INFO zou kunnen vangen, zou u hen niet in de logboekberichten UI kunnen zien. Ook, door UI is het mogelijk om DEBUG- berichten van bepaalde pakketten te vangen zonder het het foutenlogboek beïnvloedt. Voor meer informatie over hoe te om de logboekdossiers te vormen, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
+>De instellingen op de diagnospagina hebben geen invloed op wat wordt geregistreerd voor de logbestanden en omgekeerd. Zo, terwijl het foutenlogboek de berichten van INFO zou kunnen vangen, zou u hen niet in de logboekberichten UI kunnen zien. Ook, door UI is het mogelijk om DEBUG- berichten van bepaalde pakketten te vangen zonder het het foutenlogboek beïnvloedt. Voor meer informatie over hoe te om de logboekdossiers te vormen, zie [&#x200B; het Registreren &#x200B;](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >
@@ -397,7 +397,7 @@ De pagina van de Prestaties van het Verzoek staat de analyse van de langzaamste 
 1. Verzoeken om bronnen te openen onder `/etc/design`
 1. Verzoeken om de extensie `".html"`
 
-![ chlimage_1-122 ](assets/chlimage_1-122.png)
+![&#x200B; chlimage_1-122 &#x200B;](assets/chlimage_1-122.png)
 
 De pagina wordt weergegeven:
 
@@ -419,7 +419,7 @@ De pagina wordt weergegeven:
 * De instructie van de query
 * De duur in milliseconden
 
-![ chlimage_1-123 ](assets/chlimage_1-123.png)
+![&#x200B; chlimage_1-123 &#x200B;](assets/chlimage_1-123.png)
 
 ### Query uitvoeren {#explain-query}
 
@@ -438,7 +438,7 @@ De Uitleg Vraag is een hulpmiddel dat verklaart hoe Oak een vraag uitvoert. Het 
 
 Nadat u in de Verklaar Vraag UI bent, ga de vraag in, en druk **verklaart** knoop:
 
-![ chlimage_1-124 ](assets/chlimage_1-124.png)
+![&#x200B; chlimage_1-124 &#x200B;](assets/chlimage_1-124.png)
 
 De eerste ingang in de sectie van de Verklaring van de Vraag is de daadwerkelijke verklaring. De verklaring toont het type van index dat werd gebruikt om de vraag uit te voeren.
 
@@ -446,7 +446,7 @@ De tweede vermelding is het uitvoeringsplan.
 
 Het schoppen van **omvat uitvoeringstijd** doos alvorens de vraag in werking te stellen toont ook de hoeveelheid tijd de vraag binnen werd in werking gesteld. De **Include optie van de Telling van de Knoop** meldt de knooptelling. Het rapport staat voor meer informatie toe die voor het optimaliseren van de indexen voor uw toepassing of plaatsing kan worden gebruikt.
 
-![ chlimage_1-125 ](assets/chlimage_1-125.png)
+![&#x200B; chlimage_1-125 &#x200B;](assets/chlimage_1-125.png)
 
 ### Indexbeheer {#the-index-manager}
 
@@ -456,7 +456,7 @@ Het kan worden betreden door naar **Hulpmiddelen te gaan - Verrichtingen - Diagn
 
 U kunt het bestand ook rechtstreeks openen via de volgende URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![ index_manager ](assets/index_manager.png)
+![&#x200B; index_manager &#x200B;](assets/index_manager.png)
 
 De interface kan worden gebruikt om indexen in de tabel te filteren door de filtercriteria in het zoekvak linksboven in het scherm te typen.
 
@@ -466,7 +466,7 @@ Deze actie activeert de download van een postcode die nuttige informatie over de
 
 In dit venster kunt u selecteren wat u wilt exporteren (logbestanden en of thread-dumps) en het aantal dagen logbestanden dat is opgenomen in de download ten opzichte van de huidige datum.
 
-![ download_status_zip ](assets/download_status_zip.png)
+![&#x200B; download_status_zip &#x200B;](assets/download_status_zip.png)
 
 ### Thread Dump downloaden {#download-thread-dump}
 
@@ -499,7 +499,7 @@ De standaardtiming voor het dagelijkse onderhoudsvenster is 2:00 A.M. door 5:00 
 
 U kunt de timing ook configureren door op het tandwielpictogram te drukken op een van de twee onderhoudskaarten:
 
-![ chlimage_1-126 ](assets/chlimage_1-126.png)
+![&#x200B; chlimage_1-126 &#x200B;](assets/chlimage_1-126.png)
 
 >[!NOTE]
 >
@@ -507,7 +507,7 @@ U kunt de timing ook configureren door op het tandwielpictogram te drukken op ee
 
 ### Opschonen van revisie {#revision-clean-up}
 
-Voor meer informatie, zie [ Overzichtsopruiming ](/help/sites-deploying/revision-cleanup.md).
+Voor meer informatie, zie [&#x200B; Overzichtsopruiming &#x200B;](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -533,24 +533,24 @@ Workflows kunnen ook worden gewist vanaf het onderhouddashboard. Voer de volgend
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie over het Onderhoud van het Werkschema, zie [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Voor meer gedetailleerde informatie over het Onderhoud van het Werkschema, zie [&#x200B; het Beheer de Instanties van het Werkschema &#x200B;](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Controle van logboekonderhoud {#audit-log-maintenance}
 
-Voor het Onderhoud van het Logboek van de Controle, zie de [ afzonderlijke documentatiepagina.](/help/sites-administering/operations-audit-log.md)
+Voor het Onderhoud van het Logboek van de Controle, zie de [&#x200B; afzonderlijke documentatiepagina.](/help/sites-administering/operations-audit-log.md)
 
 ### Versie wissen {#version-purge}
 
-U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Deze actie minimaliseert de behoefte om de [ hulpmiddelen van de Leegmaken van de Versie ](/help/sites-deploying/version-purging.md) manueel te gebruiken. U kunt de taak van de Opruiming van de Versie plannen en vormen door tot **Hulpmiddelen > Verrichtingen > Onderhoud > Wekelijks Venster van het Onderhoud** toegang te hebben en deze stappen te volgen:
+U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Deze actie minimaliseert de behoefte om de [&#x200B; hulpmiddelen van de Leegmaken van de Versie &#x200B;](/help/sites-deploying/version-purging.md) manueel te gebruiken. U kunt de taak van de Opruiming van de Versie plannen en vormen door tot **Hulpmiddelen > Verrichtingen > Onderhoud > Wekelijks Venster van het Onderhoud** toegang te hebben en deze stappen te volgen:
 
 1. Klik **toevoegen**.
 1. Kies **Woorden van de Versie** van het drop-down menu.
 
-   ![ version_purge_maintenancetask ](assets/version_purge_maintenancetask.png)
+   ![&#x200B; version_purge_maintenancetask &#x200B;](assets/version_purge_maintenancetask.png)
 
 1. Om de taak van de Opruiming van de Versie te vormen, klik het **gears** pictogram op de pas gecreëerde het onderhoudskaart van de Opruiming van de Versie.
 
-   ![ version_purge_taskconfiguration ](assets/version_purge_taskconfiguration.png)
+   ![&#x200B; version_purge_taskconfiguration &#x200B;](assets/version_purge_taskconfiguration.png)
 
 **met AEM 6.4**, kunt u de het onderhoudstaak van de Woorden van de Versie als volgt tegenhouden:
 
@@ -632,7 +632,7 @@ De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi.
 
 Naast de bovenstaande service-eigenschappen moet de `process()` -methode van de `JobConsumer` -interface worden geïmplementeerd door de code toe te voegen die voor de onderhoudstaak moet worden uitgevoerd. De geleverde `JobExecutionContext` kan worden gebruikt om statusinformatie uit te voeren, te controleren of de taak door de gebruiker is gestopt en een resultaat te maken (geslaagd of mislukt).
 
-In situaties waarin een onderhoudstaak niet op alle installaties moet worden uitgevoerd (bijvoorbeeld alleen op de publicatie-instantie), kunt u voor de service een configuratie nodig maken die actief moet zijn door `@Component(policy=ConfigurationPolicy.REQUIRE)` toe te voegen. U kunt de volgens configuratie dan als in werking gestelde wijze afhankelijk in de bewaarplaats merken. Voor meer informatie, zie [ het Vormen OSGi ](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+In situaties waarin een onderhoudstaak niet op alle installaties moet worden uitgevoerd (bijvoorbeeld alleen op de publicatie-instantie), kunt u voor de service een configuratie nodig maken die actief moet zijn door `@Component(policy=ConfigurationPolicy.REQUIRE)` toe te voegen. U kunt de volgens configuratie dan als in werking gestelde wijze afhankelijk in de bewaarplaats merken. Voor meer informatie, zie [&#x200B; het Vormen OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
 Hieronder ziet u een voorbeeld van een aangepaste onderhoudstaak waarmee bestanden uit een configureerbare tijdelijke map worden verwijderd die in de afgelopen 24 uur zijn gewijzigd:
 
@@ -646,11 +646,11 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[ ervaring-java-maintenancetask-sample ](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample) - [ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java ](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[&#x200B; ervaring-java-maintenancetask-sample &#x200B;](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample) - [&#x200B; src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java &#x200B;](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
 Nadat de dienst wordt opgesteld, wordt het blootgesteld aan het Dashboard UI van Verrichtingen. U kunt deze toevoegen aan een van de beschikbare onderhoudsplannen:
 
-![ chlimage_1-127 ](assets/chlimage_1-127.png)
+![&#x200B; chlimage_1-127 &#x200B;](assets/chlimage_1-127.png)
 
 Deze actie voegt een overeenkomstige middel bij /apps/granite/operations/config/Maintenance/`schedule`/`taskname` toe. Als de taak in werking stelt afhankelijk is van wijze, moet het bezit granite.operations.conditions.runmode op die knoop met de waarden van de looppaswijzen worden geplaatst die voor deze onderhoudstaak actief moeten zijn.
 
@@ -660,13 +660,13 @@ Het **Overzicht Dashboard van het Systeem** toont een overzicht op hoog niveau v
 
 >[!NOTE]
 >
->U kunt [ deze video ](https://video.tv.adobe.com/v/21340) voor een inleiding aan het het Overzicht Dashboard van het Systeem ook letten.
+>U kunt [&#x200B; deze video &#x200B;](https://video.tv.adobe.com/v/21340) voor een inleiding aan het het Overzicht Dashboard van het Systeem ook letten.
 
 ### Toegang verkrijgen {#how-to-access}
 
 Om tot het Dashboard van het Overzicht van het Systeem toegang te hebben, navigeer aan **Hulpmiddelen > Verrichtingen > Overzicht van het Systeem**.
 
-![ system_overview_dashboard ](assets/system_overview_dashboard.png)
+![&#x200B; system_overview_dashboard &#x200B;](assets/system_overview_dashboard.png)
 
 ### Uitleg systeemoverzicht dashboard {#system-overview-dashboard-explained}
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 De klassieke gebruikersinterface is de bureaubladgeoriënteerde gebruikersinterface die beschikbaar was sinds CQ5 (de predecessory naar AEM). De volgende documentatie over creatie is geconcentreerd op deze UI.
 
-De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor AEM, die is ontworpen voor zowel touch- als desktopapparaten. Zie de [ standaard auteursdocumentatie ](/help/sites-authoring/author.md) voor meer informatie.
+De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor AEM, die is ontworpen voor zowel touch- als desktopapparaten. Zie de [&#x200B; standaard auteursdocumentatie &#x200B;](/help/sites-authoring/author.md) voor meer informatie.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor
 
 ## Concept of Authoring (en publicatie) {#concept-of-authoring-and-publishing}
 
-Ongeacht de keus van UI, zijn er bepaalde concepten en ideeën gemeenschappelijk aan creatie, die goed beschreven [ hier in de standaard auteursdocumentatie ](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) zijn.
+Ongeacht de keus van UI, zijn er bepaalde concepten en ideeën gemeenschappelijk aan creatie, die goed beschreven [&#x200B; hier in de standaard auteursdocumentatie &#x200B;](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) zijn.

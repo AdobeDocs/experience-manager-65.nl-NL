@@ -38,15 +38,15 @@ Deze formulieren definiëren een URL-parameter die de gecodeerde primaire sleute
 
 Hoewel u deze formulieren onafhankelijk maakt, genereert u doorgaans een gepersonaliseerde koppeling naar een formulierpagina in de nieuwsbrief, zodat ontvangers de koppeling kunnen openen en hun profielgegevens kunnen aanpassen (of ze zich niet abonneren, zich abonneren of hun profiel bijwerken).
 
-Het formulier wordt automatisch bijgewerkt op basis van de gebruiker. Zie [ het Uitgeven van de Inhoud van de Vorm ](#editing-form-content) voor meer informatie.
+Het formulier wordt automatisch bijgewerkt op basis van de gebruiker. Zie [&#x200B; het Uitgeven van de Inhoud van de Vorm &#x200B;](#editing-form-content) voor meer informatie.
 
 ## Een sjabloon beschikbaar maken {#making-a-template-available}
 
 Voordat u formulieren kunt maken die specifiek zijn voor Adobe Campaign, moet u de verschillende sjablonen beschikbaar stellen in de AEM toepassing.
 
-Om dit te doen, zie de [ documentatie van Malplaatjes ](/help/sites-developing/page-templates-static.md#templateavailability).
+Om dit te doen, zie de [&#x200B; documentatie van Malplaatjes &#x200B;](/help/sites-developing/page-templates-static.md#templateavailability).
 
-Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanties en Adobe Campaign werkt. Zie [ Integrerend met Adobe Campaign Standard ](/help/sites-administering/campaignstandard.md) of [ Integrerend met Adobe Campaign 6.1 ](/help/sites-administering/campaignonpremise.md).
+Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanties en Adobe Campaign werkt. Zie [&#x200B; Integrerend met Adobe Campaign Standard &#x200B;](/help/sites-administering/campaignstandard.md) of [&#x200B; Integrerend met Adobe Campaign 6.1 &#x200B;](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
@@ -62,13 +62,13 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 
    >[!NOTE]
    >
-   >Als het malplaatje niet beschikbaar is, zie [ het Maken van een malplaatje beschikbaar ](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) sectie.
+   >Als het malplaatje niet beschikbaar is, zie [&#x200B; het Maken van een malplaatje beschikbaar &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) sectie.
 
 1. Klik **creëren** om de vorm tot stand te brengen.
 
-   ![ chlimage_1-187 ](assets/chlimage_1-187.png)
+   ![&#x200B; chlimage_1-187 &#x200B;](assets/chlimage_1-187.png)
 
-   U kunt dan [ uitgeven en de inhoud van uw vorm vormen ](#editing-form-content).
+   U kunt dan [&#x200B; uitgeven en de inhoud van uw vorm vormen &#x200B;](#editing-form-content).
 
 ## Formulierinhoud bewerken {#editing-form-content}
 
@@ -76,13 +76,13 @@ Forms gewijd aan Adobe Campaign heeft specifieke componenten. Deze componenten h
 
 >[!NOTE]
 >
->Als het gewenste malplaatje niet beschikbaar is, zie [ het Maken van een malplaatje beschikbaar ](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+>Als het gewenste malplaatje niet beschikbaar is, zie [&#x200B; het Maken van een malplaatje beschikbaar &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Voor meer informatie over een meer algemeen overzicht van hoe te om vormen in Adobe Experience Manager te gebruiken, zie [ componenten Editmode ](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
+In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Voor meer informatie over een meer algemeen overzicht van hoe te om vormen in Adobe Experience Manager te gebruiken, zie [&#x200B; componenten Editmode &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Navigeer naar het formulier dat u wilt bewerken.
 1. In toolbox, gaat de uitgezochte **Pagina** > **Eigenschappen van de Pagina..** dan naar het **Cloud Servicen** lusje van het pop-up venster.
-1. Voeg de dienst van Adobe Campaign toe door **te klikken voegt de dienst** toe, en dan het selecteren van de configuratie die aan uw instantie van Adobe Campaign in de drop-down lijst van de dienst beantwoordt. Deze configuratie wordt uitgevoerd wanneer vestiging de verbinding tussen uw instanties. Voor meer informatie, zie [ Verbindend AEM met Adobe Campaign ](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Voeg de dienst van Adobe Campaign toe door **te klikken voegt de dienst** toe, en dan het selecteren van de configuratie die aan uw instantie van Adobe Campaign in de drop-down lijst van de dienst beantwoordt. Deze configuratie wordt uitgevoerd wanneer vestiging de verbinding tussen uw instanties. Voor meer informatie, zie [&#x200B; Verbindend AEM met Adobe Campaign &#x200B;](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
 1. Voeg de geselecteerde componenten toe door deze vanuit de gereedschapset te slepen en neer te zetten op het formulier. Voor meer informatie over de beschikbare specifieke componenten van Adobe Campaign, zie {de Componenten van de Vorm van 0} Adobe [&#128279;](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
-   ![ chlimage_1-188 ](assets/chlimage_1-188.png)
+   ![&#x200B; chlimage_1-188 &#x200B;](assets/chlimage_1-188.png)
 
 1. Configureer de toegevoegde velden door erop te dubbelklikken. Het **Adobe Campaign** lusje laat u het gebied met een gebied in de ontvankelijke lijst van Adobe Campaign verbinden. U kunt ook opgeven of het veld deel uitmaakt van de afstemmingssleutel waarmee ontvangers die al in de Adobe Campaign-database aanwezig zijn, kunnen worden herkend.
 

@@ -59,7 +59,7 @@ Verklaar **alle** vragen en zorg ervoor dat hun vraagplannen niet **bevatten/&as
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Dit bericht wordt slechts geregistreerd als geen index beschikbaar is, en als de vraag potentieel vele knopen oversteekt. De berichten worden niet geregistreerd als een index beschikbaar is, maar het bedrag aan het oversteken is klein, en zo snel.
 
-* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) de verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die traversal of geen verklaringen van de indexvraag zoeken.
+* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) de verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [&#x200B; verklaar &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die traversal of geen verklaringen van de indexvraag zoeken.
 
 ### Slecht beperkte query&#39;s detecteren {#detecting-poorly-restricted-queries}
 
@@ -124,7 +124,7 @@ En zonder een extra indexregel voor de eigenschap `cq:tags` zou zelfs een fullTe
 
 Een andere oorzaak van post-index-filtreren is de Lijsten van het Toegangsbeheer die vaak tijdens ontwikkeling worden gemist. Controleer of de query geen paden retourneert die ontoegankelijk zijn voor de gebruiker. Dit kan worden gedaan door betere inhoudsstructuur samen met het verstrekken van relevante wegbeperkingen op de vraag te doen.
 
-Een nuttige manier om te identificeren als de index van Lucene vele resultaten terugkeert om een kleine ondergroep als vraagresultaat terug te keren, is het toelaten van logboeken DEBUG voor `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Zo kunt u zien hoeveel documenten uit de index worden geladen. Het aantal uiteindelijke resultaten in vergelijking met het aantal geladen documenten mag niet onevenredig zijn. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
+Een nuttige manier om te identificeren als de index van Lucene vele resultaten terugkeert om een kleine ondergroep als vraagresultaat terug te keren, is het toelaten van logboeken DEBUG voor `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Zo kunt u zien hoeveel documenten uit de index worden geladen. Het aantal uiteindelijke resultaten in vergelijking met het aantal geladen documenten mag niet onevenredig zijn. Voor meer informatie, zie [&#x200B; het Registreren &#x200B;](/help/sites-deploying/configure-logging.md).
 
 #### Post-implementatie {#post-deployment-1}
 
@@ -132,7 +132,7 @@ Een nuttige manier om te identificeren als de index van Lucene vele resultaten t
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [ verklaar ](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen zoekend vraagplannen die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.
+* Bezoek de AEM [&#128279;](/help/sites-administering/operations-dashboard.md#query-performance) verrichtingenconsole van de Prestaties van de Vraag 0&rbrace; &lbrace;en [&#x200B; verklaar &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen zoekend vraagplannen die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.
 
 ### Detecteren van query&#39;s voor grote resultaatsets {#detecting-large-result-set-queries}
 
@@ -161,7 +161,7 @@ Voor AEM 6.0 - 6.2 versies, kunt u de drempel voor knoopsverplaatsing via parame
 
 In AEM 6.3, worden de bovengenoemde twee parameters preconfigured door gebrek, en kunnen via OSGi QueryEngineSettings worden gewijzigd.
 
-Meer informatie beschikbaar onder: [ https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
+Meer informatie beschikbaar onder: [&#x200B; https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Afstemmen van queryprestaties {#query-performance-tuning}
 
@@ -296,7 +296,7 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag omdat het de gemeenschapp
 
 1. ***Deze aanpassing is specifiek van de Bouwer van de Vraag, en is niet op JCR-SQL2 of XPath van toepassing.***
 
-   Het gebruik [ gokTotal van de Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) wanneer de volledige reeks resultaten **niet** onmiddellijk nodig is.
+   Het gebruik [&#x200B; gokTotal van de Bouwer van de Vraag &#x200B;](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) wanneer de volledige reeks resultaten **niet** onmiddellijk nodig is.
 
    * **Niet geoptimaliseerde vraag**
 
@@ -424,12 +424,12 @@ Daarom zorg ervoor dat de indexen vragen tevredenstellen, behalve als de combina
 * **Debugger van de Bouwer van de Vraag**
 
    * Een WebUI voor het uitvoeren van de vragen van de Bouwer van de Vraag en produceren ondersteunend XPath (voor gebruik in Uitdrukkelijke Vraag of de Generator van de Definitie van de Index van Oak).
-   * Op AEM in [ /libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * Op AEM in [&#x200B; /libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - het Hulpmiddel van de Vraag**
 
    * Een WebUI voor het uitvoeren van vragen XPath en JCR-SQL2.
-   * Op AEM bij [ /crx/de/index.jsp ](http://localhost:4502/crx/de/index.jsp) > Hulpmiddelen > Vraag..
+   * Op AEM bij [&#x200B; /crx/de/index.jsp &#x200B;](http://localhost:4502/crx/de/index.jsp) > Hulpmiddelen > Vraag..
 
 * **[verklaart Vraag](/help/sites-administering/operations-dashboard.md#explain-query)**
 
@@ -456,12 +456,12 @@ Daarom zorg ervoor dat de indexen vragen tevredenstellen, behalve als de combina
 * **Apache de Montages OSGi Config van de Motor van de Vraag van het Jasje**
 
    * OSGi configuratie die mislukkingsgedrag voor het oversteken van vragen vormt.
-   * Op AEM bij [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService ](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * Op AEM bij [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService &#x200B;](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX Mbean**
 
    * JMX MBean gebruikt om het aantal knopen in inhoudbomen in AEM te schatten.
-   * Op AEM bij [ /system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter ](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * Op AEM bij [&#x200B; /system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter &#x200B;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Ondersteunde community {#community-supported}
 
@@ -472,4 +472,4 @@ Daarom zorg ervoor dat de indexen vragen tevredenstellen, behalve als de combina
 * **_AEM Chrome Plug-in_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
    * De _AEM Plug-in van Chrome_ is een het Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van looppas vragen en hun vraagplannen, in de browser dev hulpmiddelenconsole blootstelt.
-   * Vereist u om [ het Verschuiven Traceur 1.0.2+ van het Logboek ](https://sling.apache.org/downloads.cgi) op AEM te installeren en toe te laten.
+   * Vereist u om [&#x200B; het Verschuiven Traceur 1.0.2+ van het Logboek &#x200B;](https://sling.apache.org/downloads.cgi) op AEM te installeren en toe te laten.

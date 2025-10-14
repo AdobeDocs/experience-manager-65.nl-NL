@@ -27,40 +27,40 @@ De volgende tabel bevat een lijst met bibliotheken van derden die in de kernbibl
 
 | Bibliotheek | Licentietype |
 |---|---|
-| annogeen | [ Apache ](#apache) |
-| axiom-api | [ Apache ](#apache) |
-| axiom | [ Apache ](#apache) |
-| axiom-impl | [ Apache ](#apache) |
-| axis2-adb | [ Apache ](#apache) |
-| axis2-kernel | [ Apache ](#apache) |
+| annogeen | [&#x200B; Apache &#x200B;](#apache) |
+| axiom-api | [&#x200B; Apache &#x200B;](#apache) |
+| axiom | [&#x200B; Apache &#x200B;](#apache) |
+| axiom-impl | [&#x200B; Apache &#x200B;](#apache) |
+| axis2-adb | [&#x200B; Apache &#x200B;](#apache) |
+| axis2-kernel | [&#x200B; Apache &#x200B;](#apache) |
 | Backport-util-concurrent | Openbaar domein |
-| commons-codec | [ Apache ](#apache) |
-| commons-collections | [ Apache ](#apache) |
-| commons-file uploaden | [ Apache ](#apache) |
-| commons-httpclient | [ Apache ](#apache) |
-| commons-io | [ Apache ](#apache) |
-| commons-lang | [ Apache ](#apache) |
-| gelijktijdige | [ Gelijktijdig ](#concurrent) (Openbaar domein) |
-| geronimo-activation_1.1_spec | [ Apache ](#apache) |
-| geronimo-stax-api_1.0_spec | [ Apache ](#apache) |
-| httpcore | [ Apache ](#apache) |
-| jackrabbit-jcr2spi | [ Apache ](#apache) |
-| jackrabbit-jcr-commons | [ Apache ](#apache) |
-| jubarijn-spi-commons | [ Apache ](#apache) |
-| jangobbyspi | [ Apache ](#apache) |
+| commons-codec | [&#x200B; Apache &#x200B;](#apache) |
+| commons-collections | [&#x200B; Apache &#x200B;](#apache) |
+| commons-file uploaden | [&#x200B; Apache &#x200B;](#apache) |
+| commons-httpclient | [&#x200B; Apache &#x200B;](#apache) |
+| commons-io | [&#x200B; Apache &#x200B;](#apache) |
+| commons-lang | [&#x200B; Apache &#x200B;](#apache) |
+| gelijktijdige | [&#x200B; Gelijktijdig &#x200B;](#concurrent) (Openbaar domein) |
+| geronimo-activation_1.1_spec | [&#x200B; Apache &#x200B;](#apache) |
+| geronimo-stax-api_1.0_spec | [&#x200B; Apache &#x200B;](#apache) |
+| httpcore | [&#x200B; Apache &#x200B;](#apache) |
+| jackrabbit-jcr2spi | [&#x200B; Apache &#x200B;](#apache) |
+| jackrabbit-jcr-commons | [&#x200B; Apache &#x200B;](#apache) |
+| jubarijn-spi-commons | [&#x200B; Apache &#x200B;](#apache) |
+| jangobbyspi | [&#x200B; Apache &#x200B;](#apache) |
 | jaxen | BSD |
-| log4j | [ Apache ](#apache) |
-| luceenkern | [ Apache ](#apache) |
-| neethi | [ Apache ](#apache) |
-| slf4j-api | [ SLF4J.ORG ](#slf-j-org) |
-| slf4j-jdk14 | [ SLF4J.ORG ](#slf-j-org) |
-| stax-api | [ Apache ](#apache) |
-| wsdl4j | [ Apache ](#apache) |
-| wstx-asl | [ Apache ](#apache) |
-| xalan | [ Apache ](#apache) |
-| xbean | [ Apache ](#apache) |
-| xml-apis | [ Apache ](#apache) (bevat die gedeelten door Openbaar Domein en de vergunningen van de Software W3C worden behandeld) |
-| XmlSchema | [ Apache ](#apache) |
+| log4j | [&#x200B; Apache &#x200B;](#apache) |
+| luceenkern | [&#x200B; Apache &#x200B;](#apache) |
+| neethi | [&#x200B; Apache &#x200B;](#apache) |
+| slf4j-api | [&#x200B; SLF4J.ORG &#x200B;](#slf-j-org) |
+| slf4j-jdk14 | [&#x200B; SLF4J.ORG &#x200B;](#slf-j-org) |
+| stax-api | [&#x200B; Apache &#x200B;](#apache) |
+| wsdl4j | [&#x200B; Apache &#x200B;](#apache) |
+| wstx-asl | [&#x200B; Apache &#x200B;](#apache) |
+| xalan | [&#x200B; Apache &#x200B;](#apache) |
+| xbean | [&#x200B; Apache &#x200B;](#apache) |
+| xml-apis | [&#x200B; Apache &#x200B;](#apache) (bevat die gedeelten door Openbaar Domein en de vergunningen van de Software W3C worden behandeld) |
+| XmlSchema | [&#x200B; Apache &#x200B;](#apache) |
 
 ## Overzicht van CRX-bibliotheken van derden {#overview-of-crx-rd-party-libraries}
 

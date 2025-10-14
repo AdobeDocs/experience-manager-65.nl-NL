@@ -47,17 +47,17 @@ En sleep het naar de juiste plaats op een pagina waar de aanbevolen inhoud moet 
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-featured.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Featured Content` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](essentials-featured.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Featured Content` component verschijnt:
 
-![ eigenschap ](assets/featuredcontent.png)
+![&#x200B; eigenschap &#x200B;](assets/featuredcontent.png)
 
 ## Aanbevolen inhoud configureren {#configuring-featured-content}
 
 Selecteer de geplaatste component `Featured Content` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
-![ featuredcontent1 ](assets/featuredcontent1.png)
+![&#x200B; featuredcontent1 &#x200B;](assets/featuredcontent1.png)
 
 ### Het tabblad Instellingen {#settings-tab}
 
@@ -81,18 +81,18 @@ De capaciteit om inhoud als kenmerkende inhoud te markeren vereist moderatorvoor
 
 Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die de nieuwe `Feature` vlag omvat.
 
-![ plaats-bezoeker-ervaring ](assets/site-visitor-experience.png)
+![&#x200B; plaats-bezoeker-ervaring &#x200B;](assets/site-visitor-experience.png)
 
 Nadat deze als een functie is gemarkeerd, verandert de moderatiemarkering in `Unfeature` .
 
 De pagina met de component `Featured Content` bevat nu dit bericht.
 
-![ plaats-bezoeker-ervaring1 ](assets/site-visitor-experience1.png)
+![&#x200B; plaats-bezoeker-ervaring1 &#x200B;](assets/site-visitor-experience1.png)
 
 De `Read More` verwijst naar het daadwerkelijke bericht.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ Aanbevolen pagina van de Inhoud ](essentials-featured.md) voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; Aanbevolen pagina van de Inhoud &#x200B;](essentials-featured.md) voor ontwikkelaars worden gevonden.
 
-Voor het vlaggen van inhoud zoals voorzien, zie [ het Matigen van Gebruiker-Gegenereerde Inhoud ](moderate-ugc.md).
+Voor het vlaggen van inhoud zoals voorzien, zie [&#x200B; het Matigen van Gebruiker-Gegenereerde Inhoud &#x200B;](moderate-ugc.md).

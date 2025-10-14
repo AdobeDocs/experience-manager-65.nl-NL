@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-mpeg is een oplossing voor het omzetten en het stromen audio en video en, wanneer geïnstalleerd, wordt gebruikt voor juiste transcodering van [ videoactiva ](../../help/sites-authoring/default-components-foundation.md#video).
+mpeg is een oplossing voor het omzetten en het stromen audio en video en, wanneer geïnstalleerd, wordt gebruikt voor juiste transcodering van [&#x200B; videoactiva &#x200B;](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Mpeg installeren {#installing-ffmpeg}
 
 mpeg zou op de server(s) moeten worden geïnstalleerd die de AEM *auteur* instantie(s) ontvangen.
 
-1. Ga naar [ https://www.ffmpeg.org ](https://www.ffmpeg.org/).
+1. Ga naar [&#x200B; https://www.ffmpeg.org &#x200B;](https://www.ffmpeg.org/).
 1. Download de nieuwste versie van MPEG voor uw specifieke omgeving (Macintosh, Windows of Linux).
 
    * Het is belangrijk om MPEG up-to-date te houden wegens veiligheidskwetsbaarheden in oudere versies.
@@ -52,14 +52,14 @@ U kunt als volgt de [!UICONTROL DAM Update Asset] -workflow wijzigen en in dit v
 * Zoek **[!UICONTROL DAM Update Asset]** .
 * Dubbelklik om de workflow voor bewerking te openen in de klassieke gebruikersinterface.
 
-  Resulterende plaats: [ http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Resulterende plaats: [&#x200B; http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Dubbelklik op de stap **[!UICONTROL FFmpeg transcoding]** om het dialoogvenster Step Properties te openen.
 * Onder het tabblad **[!UICONTROL Process]** :
 
    * **[!UICONTROL Arugments]**: wis alle items om transcodering van standaardwaarden uit te schakelen: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-  ![ vorm-ffmpeg ](assets/configure-ffmpeg.png)
+  ![&#x200B; vorm-ffmpeg &#x200B;](assets/configure-ffmpeg.png)
 
 * Selecteer **[!UICONTROL OK]** om het dialoogvenster `Step Properties` te sluiten.
 

@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Inhoud maken is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Voor details van deze gebruikerseigenschap, zie [ Afschuiving van de Pagina ](/help/sites-authoring/page-diff.md).
+Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Voor details van deze gebruikerseigenschap, zie [&#x200B; Afschuiving van de Pagina &#x200B;](/help/sites-authoring/page-diff.md).
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wenst te vergelijken, op de achtergrond opnieuw gemaakt door AEM om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [ voor zij aan zij vergelijking ](/help/sites-developing/pagediff.md#operation-details) terug te geven.
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wenst te vergelijken, op de achtergrond opnieuw gemaakt door AEM om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [&#x200B; voor zij aan zij vergelijking &#x200B;](/help/sites-developing/pagediff.md#operation-details) terug te geven.
 
 Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Een beheerder die de gegevensopslagruimte bijvoorbeeld in CRXDE Lite bekijkt, ziet deze opnieuw gemaakte versies echter wel binnen de inhoudsstructuur.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adobe-classificaties{#adobe-classifications}
 
-De classificaties van de Adobe voeren classificatiegegevens naar [ Adobe Analytics ](/help/sites-administering/adobeanalytics.md) op een geplande manier uit. Exporter is een implementatie van a **com.adobe.cq.scheduled.exporter.Exporter**.
+De classificaties van de Adobe voeren classificatiegegevens naar [&#x200B; Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md) op een geplande manier uit. Exporter is een implementatie van a **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Om dit te vormen:
 
@@ -34,11 +34,11 @@ Om dit te vormen:
 
    En klik **creeer**.
 
-   ![ creeer de dialoog van het Kader ](assets/aa-25.png)
+   ![&#x200B; creeer de dialoog van het Kader &#x200B;](assets/aa-25.png)
 
 1. De **dialoog van de Montages van Classificaties** opent voor het uitgeven.
 
-   ![ de dialoog van de Montages van Classificaties ](assets/aa-classifications-settings.png)
+   ![&#x200B; de dialoog van de Montages van Classificaties &#x200B;](assets/aa-classifications-settings.png)
 
    Tot de eigenschappen behoren:
 
@@ -67,7 +67,7 @@ Het paginaformaat wijzigen:
 
 1. Navigeer aan de console OSGI in **https://&lt;host>:&lt;port>/system/console/configMgr** en selecteer **Adobe AEM de Exporter van Classificaties**.
 
-   ![ a-26 ](assets/aa-26.png)
+   ![&#x200B; a-26 &#x200B;](assets/aa-26.png)
 
 1. Werk de **Grootte van de Pagina van de Uitvoer** zoals vereist bij, dan klik **sparen**.
 

@@ -39,9 +39,9 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 >
 >Alvorens u met de Diensten van de Inhoud begint, zorg ervoor dat u de vlag van de Diensten van de Inhoud toelaat. Als u het maken en beheren van modellen in uw app wilt inschakelen, schakelt u gegevensmodellen in de configuratiegrowser in.
 >
->Zie **[het Beheer van de Diensten van de Inhoud](/help/mobile/developing-content-services.md)** en [ Browser van de Configuratie ](/help/sites-administering/configurations.md) documentatie voor meer informatie.
+>Zie **[het Beheer van de Diensten van de Inhoud](/help/mobile/developing-content-services.md)** en [&#x200B; Browser van de Configuratie &#x200B;](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 
-![ chlimage_1-143 ](assets/chlimage_1-143.png)
+![&#x200B; chlimage_1-143 &#x200B;](assets/chlimage_1-143.png)
 
 Nadat u de vlag van de Diensten van de Inhoud, en toegelaten gegevensmodellen in Browser van de Configuratie hebt geplaatst, zie de middelen hieronder om met de Diensten van de Inhoud van AEM Mobile te beginnen. Word vertrouwd met de Concepten van de Diensten van de Inhoud zoals modelbeheer, entiteitbeheer gevolgd door inhoudlevering/het teruggeven voor de Diensten van de Inhoud van AEM Mobile.
 

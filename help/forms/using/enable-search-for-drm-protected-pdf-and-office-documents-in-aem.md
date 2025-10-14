@@ -49,7 +49,7 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
 
 ### AEM Forms Client SDK-bundel configureren met wederzijdse verificatie {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [&#x200B; CAC en Wederzijdse Authentificatie &#x200B;](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
 1. Open AEM configuratiebeheer en meld u aan als beheerder. De standaard-URL is https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Zoek en open de AEM Forms Client SDK-bundel. Geef waarde op voor de volgende eigenschappen:
 

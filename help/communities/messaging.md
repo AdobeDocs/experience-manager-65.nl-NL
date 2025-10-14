@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met de communicatiefunctie voor AEM Communities kunnen bezoekers van de aangemelde site (leden) berichten naar elkaar sturen die toegankelijk zijn wanneer ze zich op de site hebben aangemeld.
 
-Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens [ communautaire plaatsverwezenlijking ](/help/communities/sites-console.md) te controleren.
+Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens [&#x200B; communautaire plaatsverwezenlijking &#x200B;](/help/communities/sites-console.md) te controleren.
 
 Deze pagina bevat informatie over de standaardconfiguratie en mogelijke aanpassingen.
 
@@ -31,15 +31,15 @@ Voor extra informatie voor ontwikkelaars, zie {de Hoofdzaak van het 0} Overseine
 
 ## Service voor berichtenverkeer {#messaging-operations-service}
 
-De configuratie [ Dienst van de Verrichtingen van het Overseinen van AEM Communities ](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identificeert het eindpunt dat overseinen-verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
+De configuratie [&#x200B; Dienst van de Verrichtingen van het Overseinen van AEM Communities &#x200B;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identificeert het eindpunt dat overseinen-verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
 
 Voor gemeenschapssites die zijn gemaakt met de `Communities Sites console` , bestaat een instantie van de service, met de inbox ingesteld op `/mail/inbox` .
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
-Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen die met de [ tovenaar van de plaatsverwezenlijking ](/help/communities/sites-console.md) worden gecreeerd. U kunt de configuratie weergeven of bewerken door het potloodpictogram naast de configuratie te selecteren.
+Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen die met de [&#x200B; tovenaar van de plaatsverwezenlijking &#x200B;](/help/communities/sites-console.md) worden gecreeerd. U kunt de configuratie weergeven of bewerken door het potloodpictogram naast de configuratie te selecteren.
 
-![ overseinen-verrichtingen ](assets/messaging-operations.png)
+![&#x200B; overseinen-verrichtingen &#x200B;](assets/messaging-operations.png)
 
 ### Nieuwe configuratie toevoegen {#add-new-configuration}
 
@@ -119,7 +119,7 @@ Om een configuratie toe te voegen, selecteer plus &quot;**+**&quot;pictogram naa
 
 * **de selecteur van de Dienst**
 
-  (*Vereiste*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen zijn in de *configuratie die van de Wegen van de Uitvoering {van 0} van OSGi config [`Apache Sling Servlet/Script Resolver and Error Handler` ](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), zoals `/bin/`, `/apps/`, en `/services/` plaatst.* Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie [ Eigenschap van het Bericht ](/help/communities/configure-messaging.md)).
+  (*Vereiste*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen zijn in de *configuratie die van de Wegen van de Uitvoering {van 0} van OSGi config [`Apache Sling Servlet/Script Resolver and Error Handler` &#x200B;](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), zoals `/bin/`, `/apps/`, en `/services/` plaatst.* Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie [&#x200B; Eigenschap van het Bericht &#x200B;](/help/communities/configure-messaging.md)).
 
   De standaardwaarde is */bin/messaging* .
 
@@ -142,16 +142,16 @@ Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebr
 
 **Dienst van de Verrichtingen van het Overseinen: sociale console**
 
-![ sociaal-console-op-dienst ](assets/social-console-op-service.png)
+![&#x200B; sociaal-console-op-dienst &#x200B;](assets/social-console-op-service.png)
 
 **Dienst van de Verrichtingen van het Overseinen: sociaal overseinen**
 
-![ sociaal-bericht-op-dienst ](assets/social-message-op-service.png)
+![&#x200B; sociaal-bericht-op-dienst &#x200B;](assets/social-message-op-service.png)
 
 ## Problemen oplossen {#troubleshooting}
 
-Één manier om problemen op te lossen is [ het zuiveren berichten in het logboek toe te laten.](/help/sites-administering/troubleshooting.md)
+Één manier om problemen op te lossen is [&#x200B; het zuiveren berichten in het logboek toe te laten.](/help/sites-administering/troubleshooting.md)
 
-Zie ook [ Loggers en Schrijvers voor de Individuele Diensten ](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+Zie ook [&#x200B; Loggers en Schrijvers voor de Individuele Diensten &#x200B;](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 Het te controleren pakket is `com.adobe.cq.social.messaging`.

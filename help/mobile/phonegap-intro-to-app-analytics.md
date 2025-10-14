@@ -30,7 +30,7 @@ Hoe kunt u uw mobiele toepassingen verfijnen om de beste ervaring voor uw gebrui
 
 Met Adobe Mobile Services kunt u meer inzicht krijgen in hoe uw gebruikers uw mobiele apps gebruiken door gebruik, vastlopen van apps, apparaatdetails en zoveel andere belangrijke meetgegevens voor uw mobiele apps te volgen.
 
-Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobiele Tegel van Metriek** in het dashboard verstrekt Real-Time Analytics voor uw mobiele toepassing, die ontwikkelaars, auteurs, en beheerders toestaat om een snelle glimp van de gezondheid van uw mobiele app te krijgen. Onder de omslagen, is het aandrijven van de analyse de [ Mobiele Analytics van de Adobe ](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. De Adobe Mobile Analytics SDK kan in uw toepassingen worden aangesloten of via een PhoneGap Bridge-plug-in voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze apparaten worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
+Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobiele Tegel van Metriek** in het dashboard verstrekt Real-Time Analytics voor uw mobiele toepassing, die ontwikkelaars, auteurs, en beheerders toestaat om een snelle glimp van de gezondheid van uw mobiele app te krijgen. Onder de omslagen, is het aandrijven van de analyse de [&#x200B; Mobiele Analytics van de Adobe &#x200B;](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. De Adobe Mobile Analytics SDK kan in uw toepassingen worden aangesloten of via een PhoneGap Bridge-plug-in voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze apparaten worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
@@ -41,9 +41,9 @@ Adobe Mobile Analytics SDK biedt het volgende:
 1. **Geolocatieanalyse** - vind waar uw toepassingsgebruikers lanceren en met uw mobiele ervaringen door GPS plaats of punten van belang interactie aangaan.
 1. **de analyse van het Schilderen** - zie hoe de gebruikers door uw app navigeren om te bepalen welke schermen en elementen UI gebruikers in dienst nemen en die gebruikers veroorzaken om weg te vallen.
 
-Deze sectie beschrijft hoe [ AEM de Ontwikkelaars ](#developers) kunnen dan leren hoe te om AEM Mobile apps met analytische het volgen van instrumenten te voorzien.
+Deze sectie beschrijft hoe [&#x200B; AEM de Ontwikkelaars &#x200B;](#developers) kunnen dan leren hoe te om AEM Mobile apps met analytische het volgen van instrumenten te voorzien.
 
-Tot slot [ AEM Beheerders ](#administrators) leren om:
+Tot slot [&#x200B; AEM Beheerders &#x200B;](#administrators) leren om:
 
 * een cloudservice voor de Adobe van mobiele services maken
 * creeer een mobiele dienst config en associeer een rapportreeks
@@ -53,9 +53,9 @@ Tot slot [ AEM Beheerders ](#administrators) leren om:
 
 ## Voor ontwikkelaars - Integreer Analytics in uw app {#for-developers-integrate-analytics-into-your-app}
 
-**Vereiste:** AEM beheerders moeten de de wolk vormen van de Diensten van de Adobe Mobiele, [ zoals hieronder besproken ](#amscloudserviceconfig).
+**Vereiste:** AEM beheerders moeten de de wolk vormen van de Diensten van de Adobe Mobiele, [&#x200B; zoals hieronder besproken &#x200B;](#amscloudserviceconfig).
 
-De ontwikkelaars zijn verantwoordelijk voor [ toevoegend analyses aan een AEM Mobile app ](/help/mobile/phonegap-add-analytics-to-apps.md) zonodig om te volgen, te rapporteren, en te begrijpen hoe uw gebruikers met uw mobiele toepassingsinhoud in dienst nemen en zeer belangrijke levenscyclusmetriek zoals lanceringen, tijd in app, en neerstortingstarief te meten.
+De ontwikkelaars zijn verantwoordelijk voor [&#x200B; toevoegend analyses aan een AEM Mobile app &#x200B;](/help/mobile/phonegap-add-analytics-to-apps.md) zonodig om te volgen, te rapporteren, en te begrijpen hoe uw gebruikers met uw mobiele toepassingsinhoud in dienst nemen en zeer belangrijke levenscyclusmetriek zoals lanceringen, tijd in app, en neerstortingstarief te meten.
 
 ## Voor Beheerders - vorm de Cloud Service van de Diensten van de Adobe Mobiele {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
@@ -63,7 +63,7 @@ Om uit de Mobiele Diensten van de Adobe voordeel te halen, moet u de Cloud Servi
 
 Configureer de cloudservice voor uw mobiele app door te klikken op het tandwielpictogram op de tegel Metrische gegevens analyseren.
 
-![ chlimage_1-125 ](assets/chlimage_1-125.png)
+![&#x200B; chlimage_1-125 &#x200B;](assets/chlimage_1-125.png)
 
 Als u op het tandwielpictogram klikt in de tegel Metrische gegevens analyseren, wordt het modale dialoogvenster &#39;Analyse van mobiele services configureren&#39; geopend. Selecteer uw configuratie van &quot;Selecteer een Mobiele Configuratie van de Dienst&quot;drop-down. Als u een configuratie moet creëren, klik de moersleutelknoop.
 
@@ -71,15 +71,15 @@ Voor het maken van een Adobe Mobile Service Cloud Service zijn twee stappen nodi
 
 Klik om te beginnen op de knop &#39;+&#39; op de tegel Cloud Servicen beheren in het dashboard.
 
-![ chlimage_1-126 ](assets/chlimage_1-126.png)
+![&#x200B; chlimage_1-126 &#x200B;](assets/chlimage_1-126.png)
 
 Na het klikken van &quot;**+**&quot;knoop, **voegt de** tovenaar van de Cloud Service toe wordt getoond.
 
-![ chlimage_1-127 ](assets/chlimage_1-127.png)
+![&#x200B; chlimage_1-127 &#x200B;](assets/chlimage_1-127.png)
 
 Selecteer of maak een configuratie voor mobiele services door de vereiste velden in te vullen, zoals hieronder wordt weergegeven. Uw AEM beheerder vereist deze informatie om de verbinding met Adobe Mobile Services tot stand te brengen.
 
-![ chlimage_1-128 ](assets/chlimage_1-128.png)
+![&#x200B; chlimage_1-128 &#x200B;](assets/chlimage_1-128.png)
 
 Nadat u de accountinstellingen voor mobiele services hebt voltooid, wordt u gevraagd een app te selecteren. Als u dit doet, wordt de Adobe Mobile Service Analytics die rapporteert aan die toepassing verbonden.
 
@@ -87,7 +87,7 @@ Selecteer de gewenste mobiele service en klik op Bijwerken om de configuratie va
 
 Nu u de mobiele service config aan de AEM Mobile-app hebt gekoppeld, begint de tegel de metrische gegevens op te halen en begint de rapportage.
 
-![ chlimage_1-129 ](assets/chlimage_1-129.png)
+![&#x200B; chlimage_1-129 &#x200B;](assets/chlimage_1-129.png)
 
 ### Adobe Mobile Services SDK Config-bestand {#adobe-mobile-services-sdk-config-file}
 
@@ -95,11 +95,11 @@ Op dit moment is uw mobiele toepassing gekoppeld aan een cloudservice, maar de m
 
 Klik in de tegel Metrische gegevens analyseren op het pijlpictogram om de items in het menu AMS SDK Config downloaden/uploaden weer te geven.
 
-![ chlimage_1-130 ](assets/chlimage_1-130.png)
+![&#x200B; chlimage_1-130 &#x200B;](assets/chlimage_1-130.png)
 
 De eerste stap is het verkrijgen van SDK Config van de Adobe Mobiele Diensten. Klik op &#39;AMS SDK Config downloaden&#39; om te worden omgeleid naar de website van Adobe Mobile Services waar u het configuratiebestand kunt downloaden. Nadat u het bestand ADBMobileConfig.json hebt ontvangen, klikt u op &quot;AMS SDK Config uploaden&quot; om het configuratiebestand in AEM te uploaden.
 
-![ chlimage_1-131 ](assets/chlimage_1-131.png)
+![&#x200B; chlimage_1-131 &#x200B;](assets/chlimage_1-131.png)
 
 Klik op de knop &#39;Adobe voor mobiele services uploaden&#39; en blader naar het bestand ADBMobileConfig.json en klik op &#39;Uploaden&#39;.
 

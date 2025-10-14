@@ -24,15 +24,15 @@ AEM biedt WebDAV-ondersteuning waarmee u inhoud in de opslagplaats kunt weergeve
 
 ## Algemeen {#general}
 
-[ Gedetailleerde instructies per werkend systeem ](/help/sites-administering/webdav-access.md#connecting-via-webdav) zijn inbegrepen in dit document, maar hoofdzakelijk om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan de volgende plaats:
+[&#x200B; Gedetailleerde instructies per werkend systeem &#x200B;](/help/sites-administering/webdav-access.md#connecting-via-webdav) zijn inbegrepen in dit document, maar hoofdzakelijk om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan de volgende plaats:
 
 ```xml
 http://localhost:4502
 ```
 
-![ chlimage_1-111 ](assets/chlimage_1-111a.png)
+![&#x200B; chlimage_1-111 &#x200B;](assets/chlimage_1-111a.png)
 
-Deze URL biedt WebDAV-toegang tot de standaardwerkruimte ( `crx.default` ) wanneer deze wordt verbonden vanaf het niveau van het besturingssysteem. Terwijl het eenvoudiger voor de gebruiker is, geeft het hen niet de extra flexibiliteit om werkruimtenamen te specificeren, die kunnen worden verwezenlijkt gebruikend extra [ WebDAV URLs ](/help/sites-administering/webdav-access.md#webdav-urls).
+Deze URL biedt WebDAV-toegang tot de standaardwerkruimte ( `crx.default` ) wanneer deze wordt verbonden vanaf het niveau van het besturingssysteem. Terwijl het eenvoudiger voor de gebruiker is, geeft het hen niet de extra flexibiliteit om werkruimtenamen te specificeren, die kunnen worden verwezenlijkt gebruikend extra [&#x200B; WebDAV URLs &#x200B;](/help/sites-administering/webdav-access.md#webdav-urls).
 
 AEM geeft de inhoud van de opslagplaats als volgt weer:
 
@@ -44,7 +44,7 @@ Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, maakt 
 
 >[!NOTE]
 >
->Alvorens vestiging WebDAV, controleer de [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md#webdav-clients).
+>Alvorens vestiging WebDAV, controleer de [&#x200B; Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## WebDAV-URL&#39;s {#webdav-urls}
 
@@ -97,7 +97,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Verbinding maken via WebDAV {#connecting-via-webdav}
 
-[ Zoals hierboven vermeld ](/help/sites-administering/webdav-access.md#general), om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan uw bewaarplaats. Afhankelijk van uw besturingssysteem verschillen de stappen voor het aansluiten van uw client echter en is er mogelijk een vereiste configuratie van het besturingssysteem vereist.
+[&#x200B; Zoals hierboven vermeld &#x200B;](/help/sites-administering/webdav-access.md#general), om met uw bewaarplaats te verbinden gebruikend het protocol WebDAV, richt u uw cliënt WebDAV aan uw bewaarplaats. Afhankelijk van uw besturingssysteem verschillen de stappen voor het aansluiten van uw client echter en is er mogelijk een vereiste configuratie van het besturingssysteem vereist.
 
 Instructies voor het aansluiten van de volgende besturingssystemen zijn beschikbaar:
 
@@ -133,7 +133,7 @@ Om de registratie bij te werken om basisauthentificatie over een onbeveiligd net
 
 #### Windows 8-configuratie {#windows-configuration}
 
-Voor Vensters 8, verander de registratieingang [ zoals die voor Vensters 7 en groter ](/help/sites-administering/webdav-access.md#windows-and-greater-configuration) wordt beschreven. Nochtans, alvorens u deze taak doet, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
+Voor Vensters 8, verander de registratieingang [&#x200B; zoals die voor Vensters 7 en groter &#x200B;](/help/sites-administering/webdav-access.md#windows-and-greater-configuration) wordt beschreven. Nochtans, alvorens u deze taak doet, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
 
 Om de Ervaring van de Desktop toe te laten, open **de Manager van de Server, toen** Eigenschappen **, dan** voegt Eigenschappen **toe, toen** Ervaring van de Desktop **.**
 
@@ -145,7 +145,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
 1. Open **Ontdekkingsreiziger van Vensters** of **de Ontdekkingsreiziger van het Dossier** en klik **Computer** of **Deze PC**.
 
-   ![ chlimage_1-112 ](assets/chlimage_1-112a.png)
+   ![&#x200B; chlimage_1-112 &#x200B;](assets/chlimage_1-112a.png)
 
 1. Om de tovenaar te beginnen, klik **de netwerkaandrijving van de Kaart**.
 1. Voer de toewijzingsdetails in:
@@ -156,7 +156,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
    Klik op Voltooien
 
-   ![ chlimage_1-113 ](assets/chlimage_1-113a.png)
+   ![&#x200B; chlimage_1-113 &#x200B;](assets/chlimage_1-113a.png)
 
    >[!NOTE]
    >
@@ -164,11 +164,11 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
 1. Voer gebruikersnaam `admin` en wachtwoord `admin` in. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
-   ![ chlimage_1-114 ](assets/chlimage_1-114a.png)
+   ![&#x200B; chlimage_1-114 &#x200B;](assets/chlimage_1-114a.png)
 
 1. De wizard wordt gesloten en het nieuwe toegewezen station wordt geopend in Windows Verkenner of het venster Bestandverkenner.
 
-   ![ chlimage_1-115 ](assets/chlimage_1-115a.png)
+   ![&#x200B; chlimage_1-115 &#x200B;](assets/chlimage_1-115a.png)
 
 Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als elk ander station gebruiken.
 

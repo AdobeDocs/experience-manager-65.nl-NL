@@ -42,17 +42,17 @@ Als u een component `QnA` in de ontwerpmodus aan een pagina wilt toevoegen, gebr
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/qna-essentials.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `QnA` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/qna-essentials.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `QnA` component verschijnt:
 
-![ qna-component ](assets/qna-component.png)
+![&#x200B; qna-component &#x200B;](assets/qna-component.png)
 
 ### QnA configureren {#configuring-qna}
 
 Selecteer de geplaatste component `QnA` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
-![ qna-config ](assets/qna-config.png)
+![&#x200B; qna-config &#x200B;](assets/qna-config.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -100,7 +100,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen (vragen)
 
 * **toestaat na**
 
-  Als gecontroleerd, omvat de volgende eigenschap voor forumposten, die leden [ toestaat om ](/help/communities/notifications.md) van nieuwe posten worden op de hoogte gebracht. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, omvat de volgende eigenschap voor forumposten, die leden [&#x200B; toestaat om &#x200B;](/help/communities/notifications.md) van nieuwe posten worden op de hoogte gebracht. De optie Standaard is uitgeschakeld.
 
 * **het Draaien** toestaan
 
@@ -108,7 +108,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen (vragen)
 
 * **staat E-mailAbonnementen** toe
 
-  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([ abonnement ](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist toestaan na worden gecontroleerd en [ gevormde e-mail ](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([&#x200B; abonnement &#x200B;](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist toestaan na worden gecontroleerd en [&#x200B; gevormde e-mail &#x200B;](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Max de Grootte van het Dossier**
 
@@ -147,11 +147,11 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen (vragen)
   Als deze optie ingeschakeld is, wordt een eerste weergegeven antwoord geselecteerd. De optie Standaard is uitgeschakeld.
 * **Badges van de Vertoning**
 
-  Als gecontroleerd, vertoning verdiende en toegewezen [ badges ](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, vertoning verdiende en toegewezen [&#x200B; badges &#x200B;](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
 
 * **sta Aanbevolen Inhoud** toe
 
-  Als gecontroleerd, is het idee identificeerbaar als [ gekenmerkte inhoud ](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, is het idee identificeerbaar als [&#x200B; gekenmerkte inhoud &#x200B;](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
 * **laat Mentie** toe
 
@@ -167,7 +167,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen (vragen)
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen (vragen) en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen (vragen) en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
 * **ontken Antwoorden**
 
@@ -259,8 +259,8 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte vragen en antwoorde
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ QnA Hoofdzaak ](/help/communities/qna-essentials.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; QnA Hoofdzaak &#x200B;](/help/communities/qna-essentials.md) pagina voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte onderwerpen en commentaren, zie [&#x200B; het Modereren van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van geposte onderwerpen en commentaren, zie [ Tags Gebruiker Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [&#x200B; Tags Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).

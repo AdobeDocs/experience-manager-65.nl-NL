@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ## De prestaties van de Forms-service optimaliseren {#optimizing-the-performance-of-the-forms-service}
 
-Bij het weergeven van een formulier kunt u uitvoeringsopties instellen die de prestaties van de Forms-service optimaliseren. Een andere taak die u kunt uitvoeren om de prestaties van de Forms-service te verbeteren, is het opslaan van XDP-bestanden in de opslagplaats. In deze sectie wordt echter niet beschreven hoe deze taak moet worden uitgevoerd. (Zie [ het Aanhalen van de dienst gebruikend een de cliëntbibliotheek van Java ](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library).)
+Bij het weergeven van een formulier kunt u uitvoeringsopties instellen die de prestaties van de Forms-service optimaliseren. Een andere taak die u kunt uitvoeren om de prestaties van de Forms-service te verbeteren, is het opslaan van XDP-bestanden in de opslagplaats. In deze sectie wordt echter niet beschreven hoe deze taak moet worden uitgevoerd. (Zie [&#x200B; het Aanhalen van de dienst gebruikend een de cliëntbibliotheek van Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -57,7 +57,7 @@ U kunt de volgende uitvoeringsopties voor de prestaties instellen om de prestati
 * **Gelineariseerde PDF**: Een gelineariseerd dossier van PDF wordt georganiseerd om efficiënte stijgende toegang in een netwerkmilieu toe te laten. Het PDF-bestand is in alle opzichten geldig PDF en is compatibel met alle bestaande viewers en andere PDF-toepassingen. Een gelineariseerde PDF kan dus worden weergegeven terwijl het bestand nog wordt gedownload.
 * Deze optie verbetert de prestaties niet wanneer een PDF-formulier op de client wordt gegenereerd.
 * **GuideRSL optie**: Laat (afgekeurde) generatie van de vormengids gebruikend runtime gedeelde bibliotheken toe. Dit betekent het eerste verzoek een kleiner SWF-bestand zal downloaden, plus grotere gedeelde bibliotheken die in het browsercache zijn opgeslagen. Zie RSL in de documentatie van Flex voor meer informatie.
-* U kunt ook de prestaties van de Forms-service verbeteren door een formulier op de client te genereren. (Zie [ teruggevend Forms bij de Cliënt ](/help/forms/developing/rendering-forms-client.md).)
+* U kunt ook de prestaties van de Forms-service verbeteren door een formulier op de client te genereren. (Zie [&#x200B; teruggevend Forms bij de Cliënt &#x200B;](/help/forms/developing/rendering-forms-client.md).)
 
 **geef de vorm** terug
 

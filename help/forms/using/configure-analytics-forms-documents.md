@@ -22,11 +22,11 @@ AEM Forms integreert met Analytics waarmee u prestatiegegevens voor uw gepublice
 
 >[!NOTE]
 >
->De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Voor informatie over het installeren van het toe:voegen-op pakket, zie [ Installerend en het vormen AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md).
+>De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Voor informatie over het installeren van het toe:voegen-op pakket, zie [&#x200B; Installerend en het vormen AEM Forms &#x200B;](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Naast het invoegpakket hebt u een Adobe Analytics-account en beheerdersrechten voor de AEM nodig. Voor informatie over de oplossing, zie [ Adobe Analytics ](https://www.adobe.com/solutions/digital-analytics.html).
+>Naast het invoegpakket hebt u een Adobe Analytics-account en beheerdersrechten voor de AEM nodig. Voor informatie over de oplossing, zie [&#x200B; Adobe Analytics &#x200B;](https://www.adobe.com/solutions/digital-analytics.html).
 
-U kunt ook analyses uitvoeren met de Adobe Launch. Voor meer informatie over hoe te om AEM Forms met de Lancering van de Adobe te integreren, zie [ Analytics gebruikend de Lancering van de Adobe ](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
+U kunt ook analyses uitvoeren met de Adobe Launch. Voor meer informatie over hoe te om AEM Forms met de Lancering van de Adobe te integreren, zie [&#x200B; Analytics gebruikend de Lancering van de Adobe &#x200B;](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Overzicht {#overview}
 
@@ -50,11 +50,11 @@ De analysegegevens worden opgeslagen in klant-specifieke bewaarplaatsen genoemd 
 
 Voer de volgende stappen uit om een rapportsuite te maken.
 
-1. Login bij [ https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+1. Login bij [&#x200B; https://sc.omniture.com/login/](https://sc.omniture.com/login/)
 1. In de Marketing Cloud, uitgezochte **Admin** > **Admin Console** > **de Reeksen van het Rapport**.
 1. Selecteer **creeer Nieuwe** > **Reeks van het Rapport** in de Manager van de Reeks van het Rapport.
 
-   ![ creeer nieuwe Reeks van het Rapport ](assets/newreportsuite_new.png)
+   ![&#x200B; creeer nieuwe Reeks van het Rapport &#x200B;](assets/newreportsuite_new.png)
 
    Nieuwe rapportsuite maken
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 1. Klik **creëren de Reeks van het Rapport**. De pagina wordt vernieuwd met een bericht dat de rapportsuite is gemaakt.
 1. Selecteer de nieuwe rapportsuite. Navigeer aan **uitgeven Montages** > **Algemene** > **Algemene Montages van de Rekening**.
 
-   ![ Algemene Montages van de Rekening ](assets/geographic_settings.png)
+   ![&#x200B; Algemene Montages van de Rekening &#x200B;](assets/geographic_settings.png)
 
    Algemene accountinstellingen
 
@@ -102,7 +102,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 
    >[!NOTE]
    >
-   >Een gebeurtenisaantal en pro aantal dat wordt gebruikt om de analyses van AEM Forms te vormen moet van gebeurtenisaantal en pro-aantal verschillend zijn dat in [ wordt gebruikt AEM analytische ](/help/sites-administering/adobeanalytics.md) configuratie.
+   >Een gebeurtenisaantal en pro aantal dat wordt gebruikt om de analyses van AEM Forms te vormen moet van gebeurtenisaantal en pro-aantal verschillend zijn dat in [&#x200B; wordt gebruikt AEM analytische &#x200B;](/help/sites-administering/adobeanalytics.md) configuratie.
 
 1. Afmelden bij Adobe Marketing Cloud-account.
 
@@ -111,7 +111,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 Configuratie van Cloud Servicen is informatie over uw Adobe Analytics-account. Met de configuratie kan Adobe Experience Manager (AEM) verbinding maken met Adobe Analytics. Maak een aparte configuratie voor elke analytische account die u gebruikt.
 
 1. Meld u als beheerder aan bij de AEM auteur-instantie.
-1. In de top-linkerhoek, klik **Adobe Experience Manager** > **Hulpmiddelen** ![ hamerpictogram ](/help/forms/using/assets/tools.png) > **Cloud Servicen** > **Verouderde Cloud Servicen**.
+1. In de top-linkerhoek, klik **Adobe Experience Manager** > **Hulpmiddelen** ![&#x200B; hamerpictogram &#x200B;](/help/forms/using/assets/tools.png) > **Cloud Servicen** > **Verouderde Cloud Servicen**.
 1. Bepaal de plaats van **Adobe Analytics** pictogram. Klik **tonen Configuraties** en ga dan te werk om **[+]** te klikken om nieuwe configuratie toe te voegen.
 
    Als u een eerste gebruiker bent, klik **nu** vormen.
@@ -134,7 +134,7 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 1. Op de AEM console van de wolkendiensten, klik **tonen configuraties**, onder Adobe Analytics.
 1. Klik op de koppeling **[+]** naast de configuratie Analytics.
 
-   ![ de configuratie van Adobe Analytics ](assets/adobe-analytics-cloud-services.png)
+   ![&#x200B; de configuratie van Adobe Analytics &#x200B;](assets/adobe-analytics-cloud-services.png)
 
    Adobe Analytics-configuratie
 
@@ -142,12 +142,12 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 1. In de sectie van de Reeksen van het Rapport van de zijpeul, klik **Punt** toevoegen, dan gebruik drop-down om identiteitskaart van de Reeks van het Rapport (bijvoorbeeld, JJEsquire) te selecteren waarmee het kader zal communiceren.
 1. Naast de ID van de Reeks van het Rapport, selecteer de serverinstanties die u informatie naar de Reeks van het Rapport wilt verzenden.
 
-   ![ information_to_send_to_report_suite ](assets/information_to_send_to_report_suite.png)
+   ![&#x200B; information_to_send_to_report_suite &#x200B;](assets/information_to_send_to_report_suite.png)
 
 1. Sleep de component van de Analyse van de a **Vorm** van de **andere** categorie van Sidekick op het kader.
 1. Als u analytische variabelen wilt toewijzen aan variabelen die in de component zijn gedefinieerd, sleept u een variabele van AEM Content Finder naar een veld in de component tracking.
 
-   ![ Toewijzing AEM variabelen met de variabelen van Adobe Analytics ](assets/analytics_new.png)
+   ![&#x200B; Toewijzing AEM variabelen met de variabelen van Adobe Analytics &#x200B;](assets/analytics_new.png)
 
 1. Activeer het kader gebruikend het **paginatablad** in sidekick, klik **Activate Kader**.
 
@@ -156,7 +156,7 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 1. Voor auteurinstantie, open AEM Manager van de Configuratie van de Console van het Web bij `https://<server>:<port>;/system/console/configMgr`.
 1. AEM Forms Analytics Configuration zoeken en openen
 
-   ![ de dienst van de Configuratie van de Analyse van AEM Forms ](assets/analytics_configuration.png)
+   ![&#x200B; de dienst van de Configuratie van de Analyse van AEM Forms &#x200B;](assets/analytics_configuration.png)
 
    AEM Forms Analytics Configuration-service
 
@@ -182,10 +182,10 @@ Nu kunt u analyses inschakelen voor formulieren en een analyserapport genereren.
 1. Meld u aan bij AEM portal op `https://[hostname]:'port'` .
 1. Klik **Forms > Forms &amp; Documenten**, selecteer een vorm of een document, en klik **laat Analytics** toe. De analysemogelijkheden zijn ingeschakeld.
 
-   ![ toelatend analyses voor een vorm of een document ](assets/enable-analytics-1.png)
+   ![&#x200B; toelatend analyses voor een vorm of een document &#x200B;](assets/enable-analytics-1.png)
 
    Analyses inschakelen voor een formulier
 
    **A.** laat knoop Analytics **B.** Geselecteerde vorm toe
 
-   Voor gedetailleerde informatie bij het bekijken van de rapporten van de vormenanalyse, zie [ het Bekijken van en het begrip van de analyserapporten van AEM Forms ](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+   Voor gedetailleerde informatie bij het bekijken van de rapporten van de vormenanalyse, zie [&#x200B; het Bekijken van en het begrip van de analyserapporten van AEM Forms &#x200B;](../../forms/using/view-understand-aem-forms-analytics-reports.md).

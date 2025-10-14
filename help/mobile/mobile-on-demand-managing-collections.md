@@ -30,9 +30,9 @@ De inzamelingen vertegenwoordigen een duidelijk bepaalde *emmer* gevuld met inho
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
+>* [&#x200B; overwegingen van het Ontwerp &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ het Leiden Inzamelingen ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-collections.html)
+>* [&#x200B; het Leiden Inzamelingen &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Een verzameling maken {#creating-a-collection}
@@ -46,7 +46,7 @@ De algemene workflow voor het maken van een verzameling is als volgt:
 1. Wanneer klaar, klik **creëren**.
 1. Uw nieuw artikel verschijnt in **leidt de tegel van Inzamelingen**.
 
-![ chlimage_1-1 ](assets/chlimage_1-1.gif)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.gif)
 
 ## Een nieuwe verzameling importeren {#importing-a-new-collection}
 
@@ -134,7 +134,7 @@ Verzamelingen zijn in wezen een categorie met verwante inhoud: ze verzamelen inh
 1. Selecteer een eerder geüploade verzameling in het dialoogvenster.
 1. Klik **Update** om inhoud aan de inzameling toe te voegen.
 
-![ chlimage_1-2 ](assets/chlimage_1-2.gif)
+![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.gif)
 
 ### De volgende stappen {#the-next-steps}
 

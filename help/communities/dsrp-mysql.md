@@ -28,15 +28,15 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
 * [JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Een relationele database:
 
-   * [ MySQL server ](https://dev.mysql.com/downloads/mysql/) versie van de Server van de Gemeenschap 5.6 of later
+   * [&#x200B; MySQL server &#x200B;](https://dev.mysql.com/downloads/mysql/) versie van de Server van de Gemeenschap 5.6 of later
 
       * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
 
-   * [ MySQL werkbank ](https://dev.mysql.com/downloads/tools/workbench/)
+   * [&#x200B; MySQL werkbank &#x200B;](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL installeren {#installing-mysql}
 
-[ MySQL ](https://dev.mysql.com/downloads/mysql/) zou na de instructies voor doelOS moeten worden gedownload en worden geïnstalleerd.
+[&#x200B; MySQL &#x200B;](https://dev.mysql.com/downloads/mysql/) zou na de instructies voor doelOS moeten worden gedownload en worden geïnstalleerd.
 
 ### Tabelnamen met kleine letters {#lower-case-table-names}
 
@@ -78,7 +78,7 @@ MySQL Workbench moet worden gedownload en geïnstalleerd volgens de instructies 
 
 Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere doeleinden wordt gebruikt, worden er nog geen verbindingen weergegeven:
 
-![ mysqlconnection ](assets/mysqlconnection.png)
+![&#x200B; mysqlconnection &#x200B;](assets/mysqlconnection.png)
 
 ### Nieuwe verbindingsinstellingen {#new-connection-settings}
 
@@ -99,17 +99,17 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 **Nota&#39;s**:
 
 * De standaardpoort is `3306`
-* De gekozen Naam van de Verbinding is ingegaan als naam van de gegevensbron in [ configuratie JDBC OSGi ](#configurejdbcconnections)
+* De gekozen Naam van de Verbinding is ingegaan als naam van de gegevensbron in [&#x200B; configuratie JDBC OSGi &#x200B;](#configurejdbcconnections)
 
 #### Nieuwe verbinding met Gemeenschappen {#new-communities-connection}
 
-![ gemeenschap-verbinding ](assets/community-connection.png)
+![&#x200B; gemeenschap-verbinding &#x200B;](assets/community-connection.png)
 
 ## Database instellen {#database-setup}
 
 Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
-![ installeren-gegevensbestand ](assets/install-database.png)
+![&#x200B; installeren-gegevensbestand &#x200B;](assets/install-database.png)
 
 ### Het SQL-script ophalen {#obtain-the-sql-script}
 
@@ -117,12 +117,12 @@ Het SQL-script is afkomstig uit de AEM opslagplaats:
 
 1. Bladeren naar CRXDE Lite
 
-   * Bijvoorbeeld, [ http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Selecteer de map /libs/social/config/datastore/dsrp/schema
 1. Downloaden `init-schema.sql`
 
-   ![ gegevensbestand-schema-crxde ](assets/database-schema-crxde.png)
+   ![&#x200B; gegevensbestand-schema-crxde &#x200B;](assets/database-schema-crxde.png)
 
 Eén methode voor het downloaden van het schema is:
 
@@ -135,7 +135,7 @@ Eén methode voor het downloaden van het schema is:
 
 Voer de onderstaande stappen uit om de database te installeren. De standaardnaam van de database is `communities` .
 
-Als de gegevensbestandnaam in het manuscript wordt veranderd, ben zeker om het in [ te veranderen JDBC config ](#configurejdbcconnections).
+Als de gegevensbestandnaam in het manuscript wordt veranderd, ben zeker om het in [&#x200B; te veranderen JDBC config &#x200B;](#configurejdbcconnections).
 
 #### Stap 1: SQL-bestand openen {#step-open-sql-file}
 
@@ -144,7 +144,7 @@ In MySQL Workbench
 * Selecteer in het keuzemenu Bestand de optie **[!UICONTROL Open SQL Script]**
 * Selecteer het gedownloade `init_schema.sql` script
 
-![ selecteren-sql-manuscript ](assets/select-sql-script.png)
+![&#x200B; selecteren-sql-manuscript &#x200B;](assets/select-sql-script.png)
 
 #### Stap 2: SQL-script uitvoeren {#step-execute-sql-script}
 
@@ -152,13 +152,13 @@ Selecteer in het Workbench-venster voor het bestand dat u in Stap 1 hebt geopend
 
 In de volgende afbeelding kan het `init_schema.sql` -bestand worden uitgevoerd:
 
-![ execute-sql-manuscript ](assets/execute-sql-script.png)
+![&#x200B; execute-sql-manuscript &#x200B;](assets/execute-sql-script.png)
 
 #### Vernieuwen {#refresh}
 
 Nadat het script is uitgevoerd, moet u de sectie `SCHEMAS` van de `Navigator` vernieuwen om de nieuwe database weer te geven. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
-![ verfrissen-schema ](assets/refresh-schema.png)
+![&#x200B; verfrissen-schema &#x200B;](assets/refresh-schema.png)
 
 ## JDBC-verbinding configureren {#configure-jdbc-connection}
 
@@ -170,14 +170,14 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
 * Op elke auteur en publiceer AEM instantie.
 * Aangemeld met beheerdersrechten.
-* Heb toegang tot de [ Webconsole ](../../help/sites-deploying/configuring-osgi.md).
+* Heb toegang tot de [&#x200B; Webconsole &#x200B;](../../help/sites-deploying/configuring-osgi.md).
 
-   * Bijvoorbeeld, [ http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Zoek de `Day Commons JDBC Connections Pool`
 * Selecteer het pictogram `+` om een verbindingsconfiguratie te maken.
 
-  ![ vorm-jdbc-verbinding ](assets/configure-jdbc-connection.png)
+  ![&#x200B; vorm-jdbc-verbinding &#x200B;](assets/configure-jdbc-connection.png)
 
 * Voer de volgende waarden in:
 
@@ -196,6 +196,6 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
      anders ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in.
 
-   * **[!UICONTROL Datasource name]**: naam ingegaan voor de [ verbinding MySQL ](#new-connection-settings), bijvoorbeeld, &quot;gemeenschappen&quot;.
+   * **[!UICONTROL Datasource name]**: naam ingegaan voor de [&#x200B; verbinding MySQL &#x200B;](#new-connection-settings), bijvoorbeeld, &quot;gemeenschappen&quot;.
 
 * Selecteren **[!UICONTROL Save]**

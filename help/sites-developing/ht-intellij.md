@@ -35,15 +35,15 @@ Elke stap wordt meer gedetailleerd uitgelegd in de rest van dit onderwerp.
 
 ### IntelliJ IDEA installeren {#install-intellij-idea}
 
-Download IntelliJ IDEA van [ de pagina van Downloads bij JetBrains ](https://www.jetbrains.com/idea/download/).
+Download IntelliJ IDEA van [&#x200B; de pagina van Downloads bij JetBrains &#x200B;](https://www.jetbrains.com/idea/download/).
 
 Volg vervolgens de installatie-instructies op die pagina.
 
 ### Uw AEM instellen op basis van Maven {#set-up-your-aem-project-based-on-maven}
 
-Daarna, opstelling uw project gebruikend Maven zoals die in [ wordt beschreven hoe te AEM Projecten bouwen gebruikend Apache Maven ](/help/sites-developing/ht-projects-maven.md).
+Daarna, opstelling uw project gebruikend Maven zoals die in [&#x200B; wordt beschreven hoe te AEM Projecten bouwen gebruikend Apache Maven &#x200B;](/help/sites-developing/ht-projects-maven.md).
 
-Om met AEM Projecten in IDEA te beginnen werken IntelliJ, is de basisopstelling in [ Begonnen het worden in 5 Minuten ](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) voldoende.
+Om met AEM Projecten in IDEA te beginnen werken IntelliJ, is de basisopstelling in [&#x200B; Begonnen het worden in 5 Minuten &#x200B;](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) voldoende.
 
 ### JSP-ondersteuning voorbereiden voor IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -52,7 +52,7 @@ IntelliJ IDEA kan steun in het werken met JSP ook verlenen, bijvoorbeeld:
 * tagbibliotheken automatisch invullen
 * bewustzijn van objecten die worden gedefinieerd door `<cq:defineObjects />` en `<sling:defineObjects />`
 
-Voor dat om te werken, volg de instructies op [ hoe te met JSPs ](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [ hoe te om AEM Projecten te bouwen gebruikend Apache Maven ](/help/sites-developing/ht-projects-maven.md).
+Voor dat om te werken, volg de instructies op [&#x200B; hoe te met JSPs &#x200B;](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [&#x200B; hoe te om AEM Projecten te bouwen gebruikend Apache Maven &#x200B;](/help/sites-developing/ht-projects-maven.md).
 
 ### Het Maven-project importeren {#import-the-maven-project}
 
@@ -63,16 +63,16 @@ Voor dat om te werken, volg de instructies op [ hoe te met JSPs ](/help/sites-de
 
 1. Selecteer in het dialoogvenster Importeren het POM-bestand van uw project.
 
-   ![ chlimage_1-45 ](assets/chlimage_1-45a.png)
+   ![&#x200B; chlimage_1-45 &#x200B;](assets/chlimage_1-45a.png)
 
 1. Ga verder met de standaardinstellingen zoals weergegeven in het onderstaande dialoogvenster.
 
-   ![ chlimage_1-46 ](assets/chlimage_1-46a.png)
+   ![&#x200B; chlimage_1-46 &#x200B;](assets/chlimage_1-46a.png)
 
 1. Ga door de volgende dialogen door **Volgende** te klikken en **Afwerking**.
 1. U bent nu opstelling voor AEM Ontwikkeling gebruikend IntelliJ IDEA
 
-   ![ chlimage_1-47 ](assets/chlimage_1-47a.png)
+   ![&#x200B; chlimage_1-47 &#x200B;](assets/chlimage_1-47a.png)
 
 ### Fouten opsporen in JSP&#39;s met IntelliJ IDEA {#debugging-jsps-with-intellij-idea}
 
@@ -92,7 +92,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 1. Klik **+** boven de lijst van modules en selecteer **Web**
 1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder screenshot.
 
-![ chlimage_1-48 ](assets/chlimage_1-48a.png)
+![&#x200B; chlimage_1-48 &#x200B;](assets/chlimage_1-48a.png)
 
 #### Installeer de JSR45 steunstop in {#install-the-jsr-support-plugin}
 
@@ -101,7 +101,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 1. Klik **toepassen**
 1. Start IntelliJ IDEA opnieuw op het verzoek om
 
-![ chlimage_1-49 ](assets/chlimage_1-49a.png)
+![&#x200B; chlimage_1-49 &#x200B;](assets/chlimage_1-49a.png)
 
 #### Een foutopsporingsprofiel configureren {#configure-a-debug-profile}
 
@@ -113,7 +113,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 1. Op de **Startup/Verbinding** ruit, pas de haven, indien nodig aan
 1. Kopieer de opdrachtregelargumenten die IntelliJ IDEA voorstelt
 
-![ chlimage_1-50 ](assets/chlimage_1-50a.png) ![ chlimage_1-51 ](assets/chlimage_1-51a.png)
+![&#x200B; chlimage_1-50 &#x200B;](assets/chlimage_1-50a.png) ![&#x200B; chlimage_1-51 &#x200B;](assets/chlimage_1-51a.png)
 
 #### AEM configureren voor foutopsporingsmodus {#configure-aem-for-debug-mode}
 
@@ -146,8 +146,8 @@ U bent nu allen opstelling voor het zuiveren van uw JSPs in AEM.
 1. Onderbrekingspunten instellen in de componentcode
 1. Een pagina openen in uw browser
 
-![ chlimage_1-52 ](assets/chlimage_1-52a.png)
+![&#x200B; chlimage_1-52 &#x200B;](assets/chlimage_1-52a.png)
 
 ### Fouten opsporen in bundels met IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-De code in bundels kan worden gezuiverd gebruikend standaard generische verre zuivert verbinding. U kunt de [ documentatie van Jetbrain op verre het zuiveren ](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter) volgen.
+De code in bundels kan worden gezuiverd gebruikend standaard generische verre zuivert verbinding. U kunt de [&#x200B; documentatie van Jetbrain op verre het zuiveren &#x200B;](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter) volgen.

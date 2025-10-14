@@ -24,9 +24,9 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 >
->Aangezien deze documenten de [ bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 ](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
+>Aangezien deze documenten de [&#x200B; bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 &#x200B;](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
 >
->Zie [ Vergelijking met WCAG 2.1 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [ Nieuwe Eigenschappen in WCAG 2.2 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Zie [&#x200B; Vergelijking met WCAG 2.1 &#x200B;](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [&#x200B; Nieuwe Eigenschappen in WCAG 2.2 &#x200B;](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webinhoud om ervoor te zorgen dat de middelen die zij produceren zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap; bijvoorbeeld visuele stoornissen, gehoorverlies, leermoeilijkheden, leeftijdsgerelateerde beperkingen, enz.
 

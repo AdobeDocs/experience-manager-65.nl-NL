@@ -132,8 +132,8 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 >[!MORELIKETHIS]
 >
 >* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
->* [ Creërend en het Synchroniseren Actieve Exemplaren ](/help/sites-administering/msm-livecopy.md)
->* [ vorm e-mail in Experience Manager ](/help/sites-administering/notification.md).
->* [ de meta-gegevens van de Activa van de Invoer ](/help/assets/metadata.md#import-metadata).
->* [ de activameta-gegevens van de Uitvoer ](/help/assets/metadata.md#export-metadata).
+>* [&#x200B; Creërend en het Synchroniseren Actieve Exemplaren &#x200B;](/help/sites-administering/msm-livecopy.md)
+>* [&#x200B; vorm e-mail in Experience Manager &#x200B;](/help/sites-administering/notification.md).
+>* [&#x200B; de meta-gegevens van de Activa van de Invoer &#x200B;](/help/assets/metadata.md#import-metadata).
+>* [&#x200B; de activameta-gegevens van de Uitvoer &#x200B;](/help/assets/metadata.md#export-metadata).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).

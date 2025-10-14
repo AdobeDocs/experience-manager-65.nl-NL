@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Aangepaste formuliersjablonen{#adaptive-form-templates}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -72,7 +72,7 @@ U kunt **laag van de Structuur 1&rbrace; of** Aanvankelijke Inhoud **kiezen.** M
 * **de toolbar van de Component:** wanneer u een component selecteert, ziet u een toolbar die u de component laat aanpassen.
 * **Pagina**: Het gebied waar u inhoud toevoegt om het malplaatje tot stand te brengen.
 
-Zie [ Inleiding aan auteursadaptieve vormen ](../../forms/using/introduction-forms-authoring.md) om de redacteur van de Aanraking UI te begrijpen.
+Zie [&#x200B; Inleiding aan auteursadaptieve vormen &#x200B;](../../forms/using/introduction-forms-authoring.md) om de redacteur van de Aanraking UI te begrijpen.
 
 ### Een sjabloon bewerken {#editing-a-template}
 
@@ -87,7 +87,7 @@ De laagkiezer is beschikbaar naast de optie Voorvertoning in de rechterbovenhoek
 
 Wanneer u de structuurlaag selecteert in de Sjablooneditor, ziet u de lay-outcontainers boven en onder de container voor adaptieve formulieren. Auteurs kunnen deze lay-outcontainers voor kopbal en footer gebruiken. U kunt de kop- en voettekst toevoegen, bewerken of aanpassen. Sleep de component Adaptief koptekst van formulier naar de lay-outcontainer boven de container voor adaptieve formulieren om de sjabloonkoptekst aan te passen. Sleep de component Aangepaste formuliervoettekst naar de lay-outcontainer onder de container voor adaptieve formulieren om de sjabloonvoettekst aan te passen.
 
-![ container van de Lay-out in de structuurlaag ](assets/header-layer-selector.png)
+![&#x200B; container van de Lay-out in de structuurlaag &#x200B;](assets/header-layer-selector.png)
 
 Lay-outcontainers in de structuurlaag
 
@@ -97,7 +97,7 @@ Sleep de component Adaptief koptekst van formulier naar de lay-outcontainer bove
 
 Op dezelfde manier kunt u de copyrightinformatie en bedrijfsgegevens opgeven wanneer u de voettekstcomponent in de lay-outcontainer onder de container voor adaptieve formulieren sleept.
 
-![ Kopbal en footer die in de laag van de Structuur wordt toegevoegd ](assets/header-and-footer.png)
+![&#x200B; Kopbal en footer die in de laag van de Structuur wordt toegevoegd &#x200B;](assets/header-and-footer.png)
 
 Koptekst en voettekst toegevoegd aan de laag Structuur
 
@@ -115,16 +115,16 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals het selecteren van een thema en het verzenden van handelingen.
 
-Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Om aan het uitgeven van aanvankelijke inhoud van het vormmalplaatje, vóór Voorproef in de paginagoolbar, uitgezochte ![ canvas-drop-down ](assets/canvas-drop-down.png) **> Aanvankelijke Inhoud** te schakelen.
-![ Aanvankelijke laag van de Inhoud in de Redacteur van het Malplaatje ](assets/initial-content-layer.png)
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Om aan het uitgeven van aanvankelijke inhoud van het vormmalplaatje, vóór Voorproef in de paginagoolbar, uitgezochte ![&#x200B; canvas-drop-down &#x200B;](assets/canvas-drop-down.png) **> Aanvankelijke Inhoud** te schakelen.
+![&#x200B; Aanvankelijke laag van de Inhoud in de Redacteur van het Malplaatje &#x200B;](assets/initial-content-layer.png)
 
 Oorspronkelijke inhoudslaag in de Sjablooneditor met de adaptieve formuliercontainer geselecteerd voor het opgeven van eigenschappen.
 
-![ aanvankelijke inhoud ](assets/initial-content-layer-1.png)
+![&#x200B; aanvankelijke inhoud &#x200B;](assets/initial-content-layer-1.png)
 
 In de laag Begininhoud maakt u de adaptieve formuliersjabloon die uw auteurs als basis gebruiken. Het ontwerpen van een sjabloon lijkt op het ontwerpen van een formulier. U gebruikt de opties in de zijbalk. Sidebar verstrekt inhoud, eigenschappen, activa, en componentenbrowsers.
 
-Zie [ Sidebar ](../../forms/using/introduction-forms-authoring.md#sidebar).
+Zie [&#x200B; Sidebar &#x200B;](../../forms/using/introduction-forms-authoring.md#sidebar).
 
 >[!NOTE]
 >
@@ -146,11 +146,11 @@ Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt onderliggende deelvensters van de `guideRootPanel` toevoegen vanaf de componentwerkbalk.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel` . Selecteer de panelen en selecteer ![ cmp ](assets/cmppr.png) om de eigenschappen in sidebar te openen. Wijzig de elementnamen als `general-info` en `professional-info` , en de titels als Algemene informatie en Professionele informatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel` . In de redacteur, wordt guideRootPanel geselecteerd. Selecteer ![ cmp ](assets/cmppr.png) in de componententoolbar om zijn eigenschappen te openen. Op het gebied van de Lay-out van het Comité, uitgezochte **Lusjes op bovenkant** en selecteer **Gedaan**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel` . Selecteer de panelen en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) om de eigenschappen in sidebar te openen. Wijzig de elementnamen als `general-info` en `professional-info` , en de titels als Algemene informatie en Professionele informatie. Selecteer in het zijpaneel de inhoud die u wilt openen in de inhoudbrowser. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel` . In de redacteur, wordt guideRootPanel geselecteerd. Selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) in de componententoolbar om zijn eigenschappen te openen. Op het gebied van de Lay-out van het Comité, uitgezochte **Lusjes op bovenkant** en selecteer **Gedaan**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
-![ Toevoegend gebieden in het adaptieve vormmalplaatje ](assets/template-edit-initial-content.png)
+![&#x200B; Toevoegend gebieden in het adaptieve vormmalplaatje &#x200B;](assets/template-edit-initial-content.png)
 
 Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een lusje in de redacteur selecteert, kunt u de **componenten van de Belemmering hier** optie zien. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
 
@@ -176,7 +176,7 @@ Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt 
 
 ## Een adaptief formulier maken met behulp van de sjabloon {#creating-an-adaptive-form-using-the-template}
 
-Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in formulierbeheer wanneer u een adaptief formulier maakt. Om een malplaatje te gebruiken en een adaptieve vorm tot stand te brengen, zie [ Creërend een adaptieve vorm ](../../forms/using/creating-adaptive-form.md).
+Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in formulierbeheer wanneer u een adaptief formulier maakt. Om een malplaatje te gebruiken en een adaptieve vorm tot stand te brengen, zie [&#x200B; Creërend een adaptieve vorm &#x200B;](../../forms/using/creating-adaptive-form.md).
 
 ## Weergaveoptie wijzigen van uit de vaksjablonen  {#change-display-option-of-out-of-the-box-templates}
 
@@ -201,4 +201,4 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
 
 * Wanneer u eigenschappen van het formulier in de sjablooneditor wijzigt, gebruikt u de eigenschap BindReference niet.
 * Als u een onderbrekingspunt wilt toevoegen, creeer het wanneer u een adaptieve vormmalplaatje ontwerpt.
-Voor meer informatie over breekpunten, zie [ Responsieve Lay-out ](/help/sites-authoring/responsive-layout.md).
+Voor meer informatie over breekpunten, zie [&#x200B; Responsieve Lay-out &#x200B;](/help/sites-authoring/responsive-layout.md).

@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # Ondersteunde platforms voor AEM-formulieren op OSGi {#supported-platforms}
 
-Voor de steunplatforms voor AEM Forms op OSGi, gelieve te zien de [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md) documentatie.
+Voor de steunplatforms voor AEM Forms op OSGi, gelieve te zien de [&#x200B; Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md) documentatie.

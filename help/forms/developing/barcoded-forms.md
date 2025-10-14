@@ -26,7 +26,7 @@ De service voor streepjescodes automatiseert het vastleggen van gegevens van inv
 
 Met de service voor streepjescodes kunt u eendimensionale en tweedimensionale streepjescodes toevoegen aan interactieve PDF forms. Vervolgens kunt u de formulieren met streepjescodes publiceren naar een website of deze via e-mail of cd verspreiden. Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader, Acrobat Professional of Acrobat Standard, wordt de streepjescode automatisch bijgewerkt om de door de gebruiker opgegeven formuliergegevens te coderen. De gebruiker kan het formulier elektronisch verzenden of afdrukken naar papier en het verzenden per post, fax of hand. U kunt de gebruiker-geleverde gegevens als deel van een geautomatiseerde werkschema later halen, verpletterend de gegevens onder goedkeuringsprocessen en bedrijfssystemen.
 
-Voor meer informatie over de streepjescoded vormendienst, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor meer informatie over de streepjescoded vormendienst, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Gecodeerde formuliergegevens decoderen {#decoding-barcoded-form-data}
 
@@ -34,7 +34,7 @@ U kunt de API van de service voor gecodeerde formulieren gebruiken om gegevens t
 
 >[!NOTE]
 >
->Voor meer informatie over de streepjescoded vormendienst, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de streepjescoded vormendienst, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -60,7 +60,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * xercesImpl.jar (in &lt;install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdParty)
 
-Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBOSS is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBOSS is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een streepjescoded voorwerp van de cliënt API van vormen**
 
@@ -87,7 +87,7 @@ Invoer van tekensets als hexadecimale invoer in de decode-API houdt in dat de in
 
 **zet de gegevens in een gegevensbron van XML** om
 
-Nadat u formuliergegevens hebt gedecodeerd, kunt u deze converteren naar XDP- of XFDF-gegevens. Stel bijvoorbeeld dat u de gegevens in een ander formulier wilt importeren. Als u de gegevens wilt importeren in een XFA-formulier, moet u de gegevens converteren naar XDP-gegevens. Voor informatie, zie [ het Invoeren van de Gegevens van de Vorm ](/help/forms/developing/importing-exporting-data.md#importing-form-data).
+Nadat u formuliergegevens hebt gedecodeerd, kunt u deze converteren naar XDP- of XFDF-gegevens. Stel bijvoorbeeld dat u de gegevens in een ander formulier wilt importeren. Als u de gegevens wilt importeren in een XFA-formulier, moet u de gegevens converteren naar XDP-gegevens. Voor informatie, zie [&#x200B; het Invoeren van de Gegevens van de Vorm &#x200B;](/help/forms/developing/importing-exporting-data.md#importing-form-data).
 
 **Proces de gedecodeerde gegevens**
 
@@ -176,8 +176,8 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de streepjescoded dienst WSDL gebruikt. Voor informatie, zie [ het Aanhalen van AEM Forms gebruikend het coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-   * Verwijs naar de Microsoft .NET cliëntassemblage. Voor informatie, zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Creeer een de cliëntassemblage van Microsoft .NET die de streepjescoded dienst WSDL gebruikt. Voor informatie, zie [&#x200B; het Aanhalen van AEM Forms gebruikend het coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Verwijs naar de Microsoft .NET cliëntassemblage. Voor informatie, zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Een gestreepte API-object voor formulieren maken
 

@@ -70,15 +70,15 @@ Voor de basisconfiguratie:
 1. Van de linkerruit, breid **Configuraties van Cloud Servicen** uit.
 1. Dubbelklik **Generic Fragment van Analytics** om de pagina te openen:
 
-   ![ Generic Fragment van Analytics ](assets/analytics_genericoverview.png)
+   ![&#x200B; Generic Fragment van Analytics &#x200B;](assets/analytics_genericoverview.png)
 
 1. Klik + om een nieuwe configuratie toe te voegen gebruikend de dialoogdoos. Wijs ten minste een naam toe, bijvoorbeeld Googles Analytics:
 
-   ![ creeer configuratie ](assets/analytics_addconfig.png)
+   ![&#x200B; creeer configuratie &#x200B;](assets/analytics_addconfig.png)
 
 1. Klik **creëren**, opent de fragmentdialoog onmiddellijk - kleef het aangewezen fragment van JavaScript in het gebied:
 
-   ![ Uitgevend de component ](assets/analytics_snippet.png)
+   ![&#x200B; Uitgevend de component &#x200B;](assets/analytics_snippet.png)
 
 1. Klik **O.K.** om te bewaren.
 
@@ -90,12 +90,12 @@ Nadat u de de dienstconfiguratie hebt gecreeerd, moet u de vereiste pagina&#39;s
 1. Open de **Eigenschappen van de Pagina** van sidekick, toen de **Cloud Servicen** tabel.
 1. Klik **toevoegen de Dienst**, dan selecteren de vereiste dienst. Bijvoorbeeld, het **Algemene Fragment van Analytics**:
 
-   ![ Toevoegend de wolkendienst ](assets/analytics_selectservice.png)
+   ![&#x200B; Toevoegend de wolkendienst &#x200B;](assets/analytics_selectservice.png)
 
 1. Klik **O.K.** om te bewaren.
 1. U bent teruggekeerd aan de **Cloud Servicen** tabel. Het **Algemene Fragment van Analytics** is nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren. Voorbeeld: google-analytics:
 
-   ![ Toevoegend de configuratie van de wolkendienst ](assets/analytics_selectspecificservice.png)
+   ![&#x200B; Toevoegend de configuratie van de wolkendienst &#x200B;](assets/analytics_selectspecificservice.png)
 
 1. Klik **O.K.** om te bewaren.
 

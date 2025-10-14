@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Uitproberen van ervaringsfragmenten in We.Retail
 
-Een [ Fragment van de Ervaring ](/help/sites-authoring/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien. Ze kunnen elke gewenste component bevatten.
+Een [&#x200B; Fragment van de Ervaring &#x200B;](/help/sites-authoring/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien. Ze kunnen elke gewenste component bevatten.
 
 Hiermee kan een auteur delen van een pagina (een fragment van een ervaring) opnieuw gebruiken zonder dat de inhoud moet worden gekopieerd en geplakt.
 
@@ -37,11 +37,11 @@ Dit steunt het hoofdloze gebruik-geval van het Systeem van het Beheer van de Inh
 
 ## Waar kunt u ervaringsfragmenten maken in We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Selecteer **Fragmenten van de Ervaring** van de Globale Navigatie. Hier vormt u, [ creeert ](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) en [ geeft ](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) uw Fragmenten van de Ervaring uit, en om het even welke verwante [ variaties ](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+Selecteer **Fragmenten van de Ervaring** van de Globale Navigatie. Hier vormt u, [&#x200B; creeert &#x200B;](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) en [&#x200B; geeft &#x200B;](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) uw Fragmenten van de Ervaring uit, en om het even welke verwante [&#x200B; variaties &#x200B;](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
 ## Waar gebruiken de Fragmenten van de Ervaring in Wij.Detailhandel {#where-to-use-experience-fragments-in-we-retail}
 
-U kunt uw [ Fragmenten van de Ervaring ](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (zoals met een andere component) op [ gebruiken om het even welke pagina ](/help/sites-authoring/editing-content.md) onder **Plaatsen** in de Globale Navigatie.
+U kunt uw [&#x200B; Fragmenten van de Ervaring &#x200B;](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (zoals met een andere component) op [&#x200B; gebruiken om het even welke pagina &#x200B;](/help/sites-authoring/editing-content.md) onder **Plaatsen** in de Globale Navigatie.
 
 ## Aanvullende informatie {#further-information}
 

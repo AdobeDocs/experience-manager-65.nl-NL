@@ -22,7 +22,7 @@ Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveilig
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals Mijn SQL, Oracle, MS® SQL Server en IBM® DB2®. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Voor informatie over gegevens die in gebruikersbeheer worden opgeslagen, zie [ Forms Gebruikersbeheer: Behandelend gebruikersgegevens ](/help/forms/using/user-management-handling-user-data.md).
+Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals Mijn SQL, Oracle, MS® SQL Server en IBM® DB2®. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Voor informatie over gegevens die in gebruikersbeheer worden opgeslagen, zie [&#x200B; Forms Gebruikersbeheer: Behandelend gebruikersgegevens &#x200B;](/help/forms/using/user-management-handling-user-data.md).
 
 In de volgende tabel wordt aangegeven hoe gegevens in databasetabellen worden gerangschikt door documentbeveiliging.
 
@@ -125,9 +125,9 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Om gegevens van de `EdcAuditEntity` lijst uit te voeren, gebruik [ EventManager.exportEvents ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [ EventSearchFilter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens uit te voeren die op `principalId` worden gebaseerd, `policyId`, of `licenseId`.
+>Om gegevens van de `EdcAuditEntity` lijst uit te voeren, gebruik [&#x200B; EventManager.exportEvents &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [&#x200B; EventSearchFilter &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens uit te voeren die op `principalId` worden gebaseerd, `policyId`, of `licenseId`.
 
-Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Voor meer informatie, zie [ Forms gebruikersbeheer: Behandelend gebruikersgegevens ](/help/forms/using/user-management-handling-user-data.md).
+Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Voor meer informatie, zie [&#x200B; Forms gebruikersbeheer: Behandelend gebruikersgegevens &#x200B;](/help/forms/using/user-management-handling-user-data.md).
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 
@@ -150,7 +150,7 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
 
    >[!NOTE]
    >
-   >Om gegevens van de `EdcAuditEntity` lijst te schrappen, gebruik [ EventManager.deleteEvents ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [ EventSearchFilter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens te schrappen die op `principalId` worden gebaseerd, `policyId`, of `licenseId`.
+   >Om gegevens van de `EdcAuditEntity` lijst te schrappen, gebruik [&#x200B; EventManager.deleteEvents &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [&#x200B; EventSearchFilter &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens te schrappen die op `principalId` worden gebaseerd, `policyId`, of `licenseId`.
 
 1. XML-bestanden met actief en gearchiveerd beleid worden opgeslagen in respectievelijk de databasetabellen `EdcPolicyXmlEntity` en `EdcPolicyArchiveEntity` . Ga als volgt te werk om gegevens voor een gebruiker uit deze tabellen te verwijderen:
 
@@ -209,5 +209,5 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    >
    >Beheerders kunnen met behulp van beheerconsole gebruikersgegevens zoeken in, benaderen uit en verwijderen uit persoonlijke beleidsregels van andere gebruikers in **[!UICONTROL Services > Document Security > My Policies]** .
 
-1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie [ het Gebruikersbeheer van Forms | Behandeling van gebruikersgegevens ](/help/forms/using/user-management-handling-user-data.md).
+1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie [&#x200B; het Gebruikersbeheer van Forms | Behandeling van gebruikersgegevens &#x200B;](/help/forms/using/user-management-handling-user-data.md).
 1. Start de AEM Forms-server.

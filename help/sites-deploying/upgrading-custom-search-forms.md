@@ -30,7 +30,7 @@ Daarom moeten de formulieren na een upgrade handmatig worden aangepast om te kun
 
 Dit geldt voor de nieuwe Search Forms en standaard Forms die zijn aangepast.
 
-Voor meer informatie, zie de documentatie over [ Gezichten van het Onderzoek ](/help/assets/search-facets.md).
+Voor meer informatie, zie de documentatie over [&#x200B; Gezichten van het Onderzoek &#x200B;](/help/assets/search-facets.md).
 
 ## De eigenschap resourceType wijzigen {#changing-the-resourcetype-property}
 
@@ -39,7 +39,7 @@ Tenzij anders vermeld, vereisen de meeste aanpassingen die na de verbetering moe
 U kunt de eigenschap als volgt wijzigen:
 
 1. CRXDE Lite openen door naar `https://server:port/crx/de/index.jsp` te gaan
-1. Blader naar de plaats van de knoop die moet worden aangepast, zoals die in de Lijst van [ het Onderzoek van de Douane Forms ](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) hieronder wordt gespecificeerd.
+1. Blader naar de plaats van de knoop die moet worden aangepast, zoals die in de Lijst van [&#x200B; het Onderzoek van de Douane Forms &#x200B;](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) hieronder wordt gespecificeerd.
 1. Klik op het knooppunt. In de juiste eigenschappen ruit, klik en wijzig het **verbinden:resourceType** bezit.
 1. Tot slot sparen de veranderingen door **te drukken sparen allen** knoop.
 

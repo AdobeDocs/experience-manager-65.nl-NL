@@ -39,25 +39,25 @@ Met de volgende pagina&#39;s kunt u de integratie configureren:
 * [Video bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe-classificaties](/help/sites-administering/adobeanalytics-classifications.md)
 
-U kunt [ Opt-binnen tovenaar ](/help/sites-administering/opt-in.md) ook gebruiken om de integratie gemakkelijk uit te voeren.
+U kunt [&#x200B; Opt-binnen tovenaar &#x200B;](/help/sites-administering/opt-in.md) ook gebruiken om de integratie gemakkelijk uit te voeren.
 
 >[!NOTE]
 >
->Zie ook hoe te artikel: [ Integrating AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Zie ook hoe te artikel: [&#x200B; Integrating AEM met Adobe Target en Adobe Analytics gebruikend DTM &#x200B;](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Aanvullende informatie {#further-information}
 
 Zie:
 
-* [ Uitbreidend de Integratie van Adobe Analytics ](/help/sites-developing/extending-analytics.md) voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het kader van Adobe Analytics aanpassen.
+* [&#x200B; Uitbreidend de Integratie van Adobe Analytics &#x200B;](/help/sites-developing/extending-analytics.md) voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het kader van Adobe Analytics aanpassen.
 
 >[!NOTE]
 >
 >Als u Adobe Analytics gebruikt met een aangepaste proxyconfiguratie, moet u [twee OSGi-bundels configureren](/help/sites-deploying/configuring-osgi.md) (bijvoorbeeld met de webconsole) die voor de **Apache HTTP Client**-proxyconfiguraties vereist zijn. Beide zijn vereist omdat sommige functies van AEM de 3.x-API&#39;s gebruiken, terwijl andere de 4.x-API&#39;s gebruiken. Configureren:
 >
 >* **Cliënt 3.1 van HTTP van de Commons van de Dag 3.x** om 3.x API te vormen;
->  &#x200B;>  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  &#x200B;>  bijvoorbeeld, [&#x200B; https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache de Configuratie van de Volmacht van HTTP Componenten** om 4.x API te vormen;
->  &#x200B;>  bijvoorbeeld, [ https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  &#x200B;>  bijvoorbeeld, [&#x200B; https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

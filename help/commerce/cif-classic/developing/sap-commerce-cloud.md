@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. Bepaalde details en voorbeelden die hier worden behandeld zien de [ hybris ](https://www.sap.com/products/crm.html) oplossing.
+>Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. Bepaalde details en voorbeelden die hier worden behandeld zien de [&#x200B; hybris &#x200B;](https://www.sap.com/products/crm.html) oplossing.
 
 Het integratieframework bevat een integratielaag met een API. Hiermee kunt u:
 
@@ -28,11 +28,11 @@ Het integratieframework bevat een integratielaag met een API. Hiermee kunt u:
 
 * bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
 
-![ chlimage_1-11 ](/help/sites-developing/assets/chlimage_1-11a.png)
+![&#x200B; chlimage_1-11 &#x200B;](/help/sites-developing/assets/chlimage_1-11a.png)
 
 >[!NOTE]
 >
->[ API documentatie ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
+>[&#x200B; API documentatie &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
 Verscheidene uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
@@ -162,7 +162,7 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 * Bij hybriden is het mogelijk de voederinhoud op declaratieve wijze te specificeren.
 * Het toewijzen van de voederstructuur aan het AEM inhoudsmodel gebeurt in de voederadapter aan de AEM kant.
 
-![ chlimage_1-12 ](/help/sites-developing/assets/chlimage_1-12a.png)
+![&#x200B; chlimage_1-12 &#x200B;](/help/sites-developing/assets/chlimage_1-12a.png)
 
 * De importer (b) wordt gebruikt voor de initiële installatie van de paginaboomstructuur in AEM voor catalogi.
 * Veranderingen in de hybris in de catalogus worden via een diervoeder aan AEM gemeld en vervolgens doorgegeven aan AEM b)
@@ -429,18 +429,18 @@ public class AxisFilter implements VariantFilter {
 * Opslag
 
    * In het hybris-geval is de hybris-server eigenaar van het winkelwagentje.
-   * In het AEM-generische geval, worden de wortels van opgeslagen in de [ ClientContext ](/help/sites-administering/client-context.md).
+   * In het AEM-generische geval, worden de wortels van opgeslagen in de [&#x200B; ClientContext &#x200B;](/help/sites-administering/client-context.md).
 
 **Personalization**
 
-* Stem altijd verpersoonlijking door de [ ClientContext ](/help/sites-administering/client-context.md).
+* Stem altijd verpersoonlijking door de [&#x200B; ClientContext &#x200B;](/help/sites-administering/client-context.md).
 * In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
 
    * Producten moeten met de methode `CommerceSession.addCartEntry()` worden toegevoegd.
 
 * In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext:
 
-![ chlimage_1-13 ](/help/sites-developing/assets/chlimage_1-13a.png)
+![&#x200B; chlimage_1-13 &#x200B;](/help/sites-developing/assets/chlimage_1-13a.png)
 
 #### Architectuur van uitchecken {#architecture-of-checkout}
 
@@ -531,7 +531,7 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 `/libs/commerce/components/search`
 
-![ chlimage_1-14 ](/help/sites-developing/assets/chlimage_1-14a.png)
+![&#x200B; chlimage_1-14 &#x200B;](/help/sites-developing/assets/chlimage_1-14a.png)
 
 Dit gebruikt onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce [&#128279;](#ecommerce-engine-selection)) te vragen:
 
@@ -547,7 +547,7 @@ Het kernproject bevat verschillende algemene klassen/hulpklassen:
 
    Is een hulpprogrammaklasse die één statische methode - `toParams` - verstrekt die voor het produceren van `GET` parameterkoorden van een lijst van facetten en één knevelwaarde wordt gebruikt. Dit is nuttig aan de UI kant, waar u een hyperlink voor elke waarde van elk facet moet tonen, zodat wanneer de gebruiker de hyperlink klikt de respectieve waarde van een knevel wordt voorzien. Als deze optie is geselecteerd, wordt deze uit de query verwijderd, anders toegevoegd. Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
 
-Het ingangspunt voor de zoekAPI is de methode `CommerceService#search` die een `CommerceResult` -object retourneert. Zie de [ API Documentatie ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
+Het ingangspunt voor de zoekAPI is de methode `CommerceService#search` die een `CommerceResult` -object retourneert. Zie de [&#x200B; API Documentatie &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
 
 ### Gebruikersintegratie {#user-integration}
 

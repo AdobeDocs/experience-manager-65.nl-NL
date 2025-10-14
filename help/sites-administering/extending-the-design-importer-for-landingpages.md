@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # De importmodule voor ontwerpen voor bestemmingspagina&#39;s uitbreiden en configureren{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-In deze sectie wordt beschreven hoe u de ontwerpimportmodule voor bestemmingspagina&#39;s configureert en zo nodig uitbreidt. Het werken met het Aanlanden Pagina&#39;s na de invoer wordt behandeld in [ het Aanlanden Pagina&#39;s.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+In deze sectie wordt beschreven hoe u de ontwerpimportmodule voor bestemmingspagina&#39;s configureert en zo nodig uitbreidt. Het werken met het Aanlanden Pagina&#39;s na de invoer wordt behandeld in [&#x200B; het Aanlanden Pagina&#39;s.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
 **makend de ontwerpimporter uw douanecomponent** haalt
 
@@ -41,7 +41,7 @@ Hier volgen de logische stappen waarmee ontwerpimporters uw aangepaste component
 
 >[!CAUTION]
 >
->De importeur van het Ontwerp, die wordt gebruikt om het landen pagina&#39;s in te voeren, [ is afgekeurd met AEM 6.5 ](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>De importeur van het Ontwerp, die wordt gebruikt om het landen pagina&#39;s in te voeren, [&#x200B; is afgekeurd met AEM 6.5 &#x200B;](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## De HTML voorbereiden voor importeren {#preparing-the-html-for-import}
 
@@ -66,7 +66,7 @@ Een voorbeeldlay-out van de ZIP is als volgt:
 * /img > alle afbeeldingen en elementen
 * /js > om in JS clientlib toe te voegen
 
-De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML5 Boilerplate. Lees meer bij [ https://html5boilerplate.com/](https://html5boilerplate.com/)
+De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML5 Boilerplate. Lees meer bij [&#x200B; https://html5boilerplate.com/](https://html5boilerplate.com/)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de op
 
 U doet dit door `data-cq-component` aan de aangewezen component in het dossier toe te voegen van de HTML dat u invoert.
 
-In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zodat u bepaalde delen van de bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. De componenten worden beschreven in detail bij [ Landing de Componenten van Pagina&#39;s ](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zodat u bepaalde delen van de bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. De componenten worden beschreven in detail bij [&#x200B; Landing de Componenten van Pagina&#39;s &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
@@ -443,7 +443,7 @@ Als er geen codering is opgegeven in de geïmporteerde HTML, is UTF-8 de standaa
 
 De sjabloon Lege landingspagina kan worden verwijderd door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
 
-De stappen voor het creëren van een malplaatje in AEM worden verklaard onder [ Malplaatjes ](/help/sites-developing/templates.md).
+De stappen voor het creëren van een malplaatje in AEM worden verklaard onder [&#x200B; Malplaatjes &#x200B;](/help/sites-developing/templates.md).
 
 ### Een component vanuit de bestemmingspagina verwijzen {#referring-a-component-from-landing-page}
 
@@ -457,21 +457,21 @@ Het pad in de data-cq-component moet het resourceType van de component zijn.
 
 Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor componentconversie tijdens het importeren.
 
-| E > F | een onderliggend F-element van een E-element | [ de combinator van het Kind ](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | een onderliggend F-element van een E-element | [&#x200B; de combinator van het Kind &#x200B;](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
-| E + F | een F-element, onmiddellijk voorafgegaan door een E-element | [ Aangrenzende sibling combinator ](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
-| E ~ F | een F-element voorafgegaan door een E-element | [ Algemene sibling combinator ](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root | een E-element, basis van het document | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-onderliggend(n) | een E-element, het n-de onderliggende element van het bovenliggende element | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) | een E-element, het n-de onderliggende element van het bovenliggende element, tellen vanaf het laatste | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-van-type(n) | een E-element, het n-de broedsel van het type | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nde-laatste-van-type(n) | een E-element, het n-de-bros van het type, tellend van het laatste | [ structurele pseudo-klassen ](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E + F | een F-element, onmiddellijk voorafgegaan door een E-element | [&#x200B; Aangrenzende sibling combinator &#x200B;](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
+| E ~ F | een F-element voorafgegaan door een E-element | [&#x200B; Algemene sibling combinator &#x200B;](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
+| E:root | een E-element, basis van het document | [&#x200B; structurele pseudo-klassen &#x200B;](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-onderliggend(n) | een E-element, het n-de onderliggende element van het bovenliggende element | [&#x200B; structurele pseudo-klassen &#x200B;](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | een E-element, het n-de onderliggende element van het bovenliggende element, tellen vanaf het laatste | [&#x200B; structurele pseudo-klassen &#x200B;](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-van-type(n) | een E-element, het n-de broedsel van het type | [&#x200B; structurele pseudo-klassen &#x200B;](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nde-laatste-van-type(n) | een E-element, het n-de-bros van het type, tellend van het laatste | [&#x200B; structurele pseudo-klassen &#x200B;](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 Dit komt omdat er na het importeren extra HTML-elementen zoals de &lt;div>-tag worden toegevoegd aan de gegenereerde HTML.
 
 * Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM componenten.
 * Het gebruik van stijlen op de opmaakcodes voor componentconversie zoals &lt;div data-cq-component=&quot;&ast;&quot;> wordt niet aanbevolen.
-* De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Lees meer over: [ https://html5boilerplate.com/ ](https://html5boilerplate.com/).
+* De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Lees meer over: [&#x200B; https://html5boilerplate.com/ &#x200B;](https://html5boilerplate.com/).
 
 ## OSGI-modules configureren {#configuring-osgi-modules}
 

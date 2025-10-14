@@ -32,12 +32,12 @@ A *veiligheid die* plaatst controleert de veiligheid en de toestemmingen voor do
 
 1. Klik in de beheerconsole op Services > PDF Generator > Beveiligingsinstellingen.
 1. Klik op Nieuw of klik op de naam van een beveiligingsinstelling.
-1. Voer op de pagina Nieuwe beveiligingsinstelling/Beveiligingsinstelling bewerken de vereiste informatie voor de beveiligingsinstelling in. (Zie [ Vormend dossiertype montages ](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
+1. Voer op de pagina Nieuwe beveiligingsinstelling/Beveiligingsinstelling bewerken de vereiste informatie voor de beveiligingsinstelling in. (Zie [&#x200B; Vormend dossiertype montages &#x200B;](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Klik op Opslaan en typ een naam voor de instelling in het dialoogvenster dat wordt weergegeven. Klik vervolgens op OK.
 
 ### Beveiligingsinstellingen {#security-settings}
 
-Met deze instellingen configureert u de compatibiliteit en codering. Voor instructies over de toegang tot van de doopvonten montages, zie [ creeer of geef een veiligheid uit die ](configuring-security-settings.md#create-or-edit-a-security-setting) plaatst.
+Met deze instellingen configureert u de compatibiliteit en codering. Voor instructies over de toegang tot van de doopvonten montages, zie [&#x200B; creeer of geef een veiligheid uit die &#x200B;](configuring-security-settings.md#create-or-edit-a-security-setting) plaatst.
 
 **Verenigbaarheid:** plaatst het type van encryptie voor het openen van een wachtwoord-beschermd document. Bij de optie Acrobat 3.0 en hoger wordt een laag coderingsniveau gebruikt, maar bij de andere opties wordt een hoog coderingsniveau gebruikt:
 

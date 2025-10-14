@@ -213,7 +213,7 @@ Als u de uitnodigen van externe gebruikers-handler wilt implementeren in AEM For
 
 In de volgende afbeelding ziet u de inhoud van het Java-project die is verpakt in het JAR-bestand van de uitnodigingshandler voor externe gebruikers.
 
-![ nodigt gebruikers ](assets/ci_ci_InviteUsers.png) uit
+![&#x200B; nodigt gebruikers &#x200B;](assets/ci_ci_InviteUsers.png) uit
 
 A. Externe JAR-bestanden vereist door component B. JAVA-bestand
 

@@ -35,19 +35,19 @@ Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificat
 1. Klik op Nieuw Enterprise-domein of selecteer een bestaand ondernemingsdomein.
 1. Klik op Map toevoegen.
 1. Typ in het vak Profielnaam een naam om deze map van elkaar te onderscheiden en klik op Volgende.
-1. Configureer de instellingen van de directoryserver. (Zie [ montages van de Folder ](configuring-directories.md#directory-settings).)
+1. Configureer de instellingen van de directoryserver. (Zie [&#x200B; montages van de Folder &#x200B;](configuring-directories.md#directory-settings).)
 1. Klik op Testen om te controleren of er verbinding kan worden gemaakt met de LDAP-server. Als de test ontbreekt, herzie de uitzondering in het het logboekdossier van de Server van de Toepassing om de worteloorzaak van de mislukking te bepalen. Klik op Sluiten en vervolgens op Volgende.
-1. Selecteer Gebruikersinstellingen en configureer de instellingen naar wens. (Zie [ montages van de Folder ](configuring-directories.md#directory-settings).)
+1. Selecteer Gebruikersinstellingen en configureer de instellingen naar wens. (Zie [&#x200B; montages van de Folder &#x200B;](configuring-directories.md#directory-settings).)
 1. Om te verifiëren dat basis DN en andere gevormde attributen de correcte partij van gebruikers verzamelen, klik Test. LDAP probeert de eerste 200 records op te halen met behulp van de opgegeven instellingen (zoals de basis-DN, het zoekfilter en alle kenmerken).
 
    Als gebruikers worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Als de test mislukt vanwege een niet-bestaande servernaam, onjuiste autorisatiegegevens of onjuiste kenmerken, wordt het volgende foutbericht weergegeven: &quot;De opgegeven zoekcriteria hebben geen resultaat geretourneerd&quot;. Om de worteloorzaak van de mislukking te bepalen, herzie de uitzondering in het het logboekdossier van de Server van de Toepassing. Klik op Sluiten en vervolgens op Volgende.
 
-1. Selecteer Groepsinstellingen en configureer de instellingen naar wens. (Zie [ montages van de Folder ](configuring-directories.md#directory-settings).)
+1. Selecteer Groepsinstellingen en configureer de instellingen naar wens. (Zie [&#x200B; montages van de Folder &#x200B;](configuring-directories.md#directory-settings).)
 1. Om te verifiëren dat basis DN en andere gevormde attributen de correcte partij van groepen verzamelen, klik Test. Als groepen worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Klik op Sluiten.
 
 ### Een aangepaste SPI toevoegen {#add-a-custom-spi}
 
-Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [ Programmering met AEM vormen ](https://www.adobe.com/go/learn_aemforms_programming_63). Start de server opnieuw om een nieuw geïmplementeerde aangepaste SPI beschikbaar te maken voor associatie met het domein.
+Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [&#x200B; Programmering met AEM vormen &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63). Start de server opnieuw om een nieuw geïmplementeerde aangepaste SPI beschikbaar te maken voor associatie met het domein.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Nieuw Enterprise-domein of selecteer een bestaand ondernemingsdomein.
@@ -62,7 +62,7 @@ U kunt de details van een folder uitgeven die u eerder vormde.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het juiste domein in de lijst en selecteer op de pagina die wordt weergegeven de juiste map in de lijst.
-1. Configureer de directory-, gebruikers- en groepsinstellingen naar wens. (Zie [ montages van de Folder ](configuring-directories.md#directory-settings).)
+1. Configureer de directory-, gebruikers- en groepsinstellingen naar wens. (Zie [&#x200B; montages van de Folder &#x200B;](configuring-directories.md#directory-settings).)
 1. Klik op OK.
 
 ## Een map verwijderen {#delete-a-directory}
@@ -124,7 +124,7 @@ Als u de Enable verwijzingsoptie in de montages van de Folder selecteerde, plaat
 >
 >Neem de DN van de gebruiker niet op in deze instelling. Gebruik de instelling Zoekfilter om een bepaalde gebruiker te synchroniseren.
 
-Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, mogelijk een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [ het Invoeren en het uitvoeren van het configuratiedossier ](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, mogelijk een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [&#x200B; het Invoeren en het uitvoeren van het configuratiedossier &#x200B;](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 **de Filter van het Onderzoek:** (Verplicht) de onderzoeksfilter om het verslag te gebruiken te vinden dat met de gebruiker wordt geassocieerd. U kunt een zoekopdracht op één niveau of een zoekopdracht op subniveau uitvoeren. (Zie Syntaxis van de Filter van het Onderzoek of RFC 2254.) Aanvullende informatie voor het Microsoft AD-schema, zie Active Directory Schema.
 
@@ -166,7 +166,7 @@ De hoeveelheid ruimte die wordt gebruikt voor het weergeven van de naam van de z
 
 >[!NOTE]
 >
->Om VLV toe te laten, vorm Zon Één. Zie [ Gebruikersbeheer vormen om de Virtuele Mening van de Lijst te gebruiken (VLV) ](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
+>Om VLV toe te laten, vorm Zon Één. Zie [&#x200B; Gebruikersbeheer vormen om de Virtuele Mening van de Lijst te gebruiken (VLV) &#x200B;](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
 **Gebied van de Sortering:** als u Enable Virtuele Controle van de Mening van de Lijst (VLV) selecteerde, specificeer de attributennaam die wordt gebruikt om de index te sorteren. Deze kenmerknaam (zoals uid) is de naam die u hebt opgegeven bij het maken van een index voor VLV op de directoryserver.
 
@@ -180,7 +180,7 @@ De hoeveelheid ruimte die wordt gebruikt voor het weergeven van de naam van de z
 
 **DN van de Basis:** (Verplicht) Distinguished naam van de basis van de folder.
 
-Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [ het Invoeren en het uitvoeren van het configuratiedossier ](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [&#x200B; het Invoeren en het uitvoeren van het configuratiedossier &#x200B;](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 **de Filter van het Onderzoek:** (Verplicht) de onderzoeksfilter om het verslag te gebruiken te vinden dat met de groep wordt geassocieerd. U kunt een zoekopdracht op één niveau of een zoekopdracht op subniveau uitvoeren.
 
@@ -208,7 +208,7 @@ Als DN als uniek herkenningsteken wordt gespecificeerd, te hoeven u niet om het 
 
 >[!NOTE]
 >
->Om VLV toe te laten, vorm Zon Één. Zie [ Gebruikersbeheer vormen om de Virtuele Mening van de Lijst te gebruiken (VLV) ](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
+>Om VLV toe te laten, vorm Zon Één. Zie [&#x200B; Gebruikersbeheer vormen om de Virtuele Mening van de Lijst te gebruiken (VLV) &#x200B;](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
 **de Naam van het Gebied van de Sortering:** als u Enable Virtuele Controle van de Lijstmening (VLV) selecteerde, specificeer de attributennaam die wordt gebruikt om de index te sorteren. Deze kenmerknaam is de naam die u hebt opgegeven bij het maken van een index voor VLV op de directoryserver.
 
@@ -232,9 +232,9 @@ Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepag
 >
 >Deze sectie beschrijft het gebruiken van de controle VLV voor de Server van de Folder van Zon ONE. Nochtans, kunt u deze controle voor om het even welke folderserver gebruiken die controle VLV steunt.
 
-1. Wanneer het vormen van de folder, laat de uitgezochte Virtuele Controle van de Lijstmening (VLV) op zowel de pagina van de Montages van de Gebruiker als de pagina van de Montages van de Groep toe. Wanneer u het selectievakje inschakelt, moet u ook een sorteernaam opgeven in het vak Sorteerveld. De standaardwaarde is uid. (Zie [ Toevoegend folders of douaneSPIs ](configuring-directories.md#adding-directories-or-custom-spis) of [ geef een folder ](configuring-directories.md#edit-a-directory) uit.)
-1. Gebruik Sun ONE-beheerconsole of een opdrachtregelscript om de LDAP VLV-ingangen voor gebruikers en groepen te maken. Als u een opdrachtregelscript gebruikt, kunt u de voorbeeldgebruikers en groepen LDIF-bestanden gebruiken. (Zie [ Vormend de Zon ONE Server van de Folder voor VLV ](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
-1. Stop de server en creeer de vereiste index. (Zie [ de Index van de Server van de Folder voor VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv) tot stand brengen.)
+1. Wanneer het vormen van de folder, laat de uitgezochte Virtuele Controle van de Lijstmening (VLV) op zowel de pagina van de Montages van de Gebruiker als de pagina van de Montages van de Groep toe. Wanneer u het selectievakje inschakelt, moet u ook een sorteernaam opgeven in het vak Sorteerveld. De standaardwaarde is uid. (Zie [&#x200B; Toevoegend folders of douaneSPIs &#x200B;](configuring-directories.md#adding-directories-or-custom-spis) of [&#x200B; geef een folder &#x200B;](configuring-directories.md#edit-a-directory) uit.)
+1. Gebruik Sun ONE-beheerconsole of een opdrachtregelscript om de LDAP VLV-ingangen voor gebruikers en groepen te maken. Als u een opdrachtregelscript gebruikt, kunt u de voorbeeldgebruikers en groepen LDIF-bestanden gebruiken. (Zie [&#x200B; Vormend de Zon ONE Server van de Folder voor VLV &#x200B;](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
+1. Stop de server en creeer de vereiste index. (Zie [&#x200B; de Index van de Server van de Folder voor VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv) tot stand brengen.)
 
 ### De Sun ONE Directory Server voor VLV configureren {#configuring-the-sun-one-directory-server-for-vlv}
 
@@ -279,7 +279,7 @@ Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
    >[!NOTE]
    >
-   >De naam van het vlvIndex-item wordt gewoonlijk ook ingesteld op `lcuser` , maar u kunt het een andere naam geven. Gebruik dezelfde naam in het vlvindex-gereedschap. (Zie [ tot de Index van de Server van de Folder voor VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >De naam van het vlvIndex-item wordt gewoonlijk ook ingesteld op `lcuser` , maar u kunt het een andere naam geven. Gebruik dezelfde naam in het vlvindex-gereedschap. (Zie [&#x200B; tot de Index van de Server van de Folder voor VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Met het gereedschap `ldapmodify` dat bij Sun ONE Server wordt geleverd, maakt u een vergelijkbare vermelding voor groepen met behulp van respectievelijk de Basis-DN van de groep, de Zoekfilter en het Sorteerveld:
 

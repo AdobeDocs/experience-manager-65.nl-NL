@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # Adaptieve Forms synchroniseren met XFA-formuliersjablonen{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Inleiding {#introduction}
 
-U kunt een adaptief formulier maken op basis van een XFA-formuliersjabloon ( `*.XDP` -bestand). Met dit hergebruik kunt u uw investering in bestaande XFA-formulieren behouden. Voor informatie over hoe te om een XFA vormmalplaatje te gebruiken voor het creëren van een adaptieve vorm, [ creeer een AanpassingsVorm die op een malplaatje ](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p) wordt gebaseerd.
+U kunt een adaptief formulier maken op basis van een XFA-formuliersjabloon ( `*.XDP` -bestand). Met dit hergebruik kunt u uw investering in bestaande XFA-formulieren behouden. Voor informatie over hoe te om een XFA vormmalplaatje te gebruiken voor het creëren van een adaptieve vorm, [&#x200B; creeer een AanpassingsVorm die op een malplaatje &#x200B;](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p) wordt gebaseerd.
 
 U kunt velden uit het XDP-bestand opnieuw gebruiken in het aangepaste formulier. Deze velden worden gebonden velden genoemd. De eigenschappen van de gebonden velden (zoals scripts, labels en weergave-indeling) worden uit het XDP-bestand gekopieerd. U kunt er ook voor kiezen de waarde van sommige van deze eigenschappen te overschrijven.
 
 AEM Forms biedt een manier om u te helpen de velden van de adaptieve formulieren synchroon te houden met alle wijzigingen die later worden aangebracht in de corresponderende velden in het XDP-bestand. In dit artikel wordt uitgelegd hoe u deze synchronisatie kunt inschakelen.
 
-![ u kunt gebieden van een vorm XFA aan een adaptieve vorm slepen ](assets/drag-drop-xfa.gif.gif)
+![&#x200B; u kunt gebieden van een vorm XFA aan een adaptieve vorm slepen &#x200B;](assets/drag-drop-xfa.gif.gif)
 
 In de AEM Forms-ontwerpomgeving kunt u velden van een XFA-formulier (links) naar een adaptief formulier slepen (rechts)
 
@@ -39,11 +39,11 @@ Om de informatie in dit artikel te gebruiken, wordt een vertrouwdheid met de vol
 
 * XFA (XML Forms Architecture)
 
-Om de activa te gebruiken verstrekt voor het voorbeeld in het artikel, download het steekproefpakket zoals die in de volgende sectie wordt verklaard, [ pakket van de Steekproef ](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Om de activa te gebruiken verstrekt voor het voorbeeld in het artikel, download het steekproefpakket zoals die in de volgende sectie wordt verklaard, [&#x200B; pakket van de Steekproef &#x200B;](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
 ## Voorbeeldpakket {#sample-package}
 
-In het artikel wordt een voorbeeld gebruikt om te tonen hoe u het aangepaste formulier synchroniseert met een bijgewerkte XFA-formuliersjabloon. De activa die in het voorbeeld worden gebruikt zijn beschikbaar in een pakket, dat van de [ sectie van Downloads ](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in dit artikel kan worden gedownload.
+In het artikel wordt een voorbeeld gebruikt om te tonen hoe u het aangepaste formulier synchroniseert met een bijgewerkte XFA-formuliersjabloon. De activa die in het voorbeeld worden gebruikt zijn beschikbaar in een pakket, dat van de [&#x200B; sectie van Downloads &#x200B;](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in dit artikel kan worden gedownload.
 
 Nadat u het pakket hebt geüpload, kunt u deze elementen weergeven in de gebruikersinterface van AEM Forms.
 
@@ -84,7 +84,7 @@ Laten we het `sample-form.xdp` -bestand bijvoorbeeld als volgt bijwerken:
 
 Als een XDP-bestand wordt bijgewerkt, wordt in de editor een pictogram weergegeven wanneer u de adaptieve formulieren bewerkt op basis van het XDP-bestand. Dit pictogram geeft aan dat het adaptieve formulier niet meer synchroon is met het XDP-bestand. Zie het pictogram naast in het zijpaneel in de volgende afbeelding.
 
-![ Pictogram om te tonen dat de adaptieve vorm uit synchronisatie met het XDP dossier ](assets/sync-af-xfa.png) is
+![&#x200B; Pictogram om te tonen dat de adaptieve vorm uit synchronisatie met het XDP dossier &#x200B;](assets/sync-af-xfa.png) is
 
 ## Aangepaste formulieren synchroniseren met het nieuwste XDP-bestand {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
@@ -94,7 +94,7 @@ Wanneer u op het bericht klikt, worden de velden in het adaptieve formulier gesy
 
 Open `sample-xfa-af` in de ontwerpmodus voor het voorbeeld dat in dit artikel wordt gebruikt. Het bericht wordt onder aan het adaptieve formulier weergegeven.
 
-![ Bericht die u ertoe aanzet om de adaptieve vorm met het XDP dossier te synchroniseren ](assets/sync-af-xfa-1.png)
+![&#x200B; Bericht die u ertoe aanzet om de adaptieve vorm met het XDP dossier te synchroniseren &#x200B;](assets/sync-af-xfa-1.png)
 
 ### De eigenschappen bijwerken {#updating-the-properties}
 
@@ -102,11 +102,11 @@ Alle eigenschappen die van het XDP-bestand naar het adaptieve formulier zijn gek
 
 Als u de eigenschappen in het adaptieve voorbeeldformulier wilt bijwerken, klikt u op de koppeling (met het label `"Click Here"` ) in het bericht. De titel van TextField1 verandert van **Gebied van de Tekst** in **Mijn Gebied van de Tekst**.
 
-![ update-bezit ](assets/update-property.png)
+![&#x200B; update-bezit &#x200B;](assets/update-property.png)
 
 >[!NOTE]
 >
->Het etiketAF Numeriek Gebied werd niet veranderd omdat u dit bezit van de dialoog van componenteneigenschappen met voeten had getreden, zoals die in [ wordt beschreven voegt inhoud aan adaptieve vormen ](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) toe.
+>Het etiketAF Numeriek Gebied werd niet veranderd omdat u dit bezit van de dialoog van componenteneigenschappen met voeten had getreden, zoals die in [&#x200B; wordt beschreven voegt inhoud aan adaptieve vormen &#x200B;](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) toe.
 
 ### Nieuwe velden van XDP-bestand toevoegen aan adaptief formulier   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -126,11 +126,11 @@ De volgende stappen illustreren deze gebruiksstroom voor de elementen in het voo
 
 1. Klik op de koppeling (met het label &quot; `Click Here`&quot;) in het bericht. Er wordt een foutbericht weergegeven met de mededeling dat het veld niet meer bestaat in het XDP-bestand.
 
-![ Fout u ziet wanneer u een element in het XDP dossier ](assets/no-element-xdp.png) schrapt
+![&#x200B; Fout u ziet wanneer u een element in het XDP dossier &#x200B;](assets/no-element-xdp.png) schrapt
 
 Het veld dat is verwijderd, wordt ook gemarkeerd met een pictogram om een fout in het veld aan te geven.
 
-![ pictogram van de Fout op het gebied ](assets/error-field.png)
+![&#x200B; pictogram van de Fout op het gebied &#x200B;](assets/error-field.png)
 
 >[!NOTE]
 >

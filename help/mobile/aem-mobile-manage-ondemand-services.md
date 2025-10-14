@@ -38,11 +38,11 @@ Met de Preflight-app Mobiel op aanvraag kunt u alle projecten weergeven waartoe 
 1. Klik **activeren Preflight** van de dialoog.
 1. Uw app is nu gereed voor voorvertoning op de Preflight-app voor mobiele apparaten op aanvraag.
 
-![ chlimage_1-8 ](assets/chlimage_1-8.gif)
+![&#x200B; chlimage_1-8 &#x200B;](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Om diepgaand over Preflight App te leren, klik [ hier ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren door pagina&#39;s. Om diepgaand over Preflight App te leren, klik [&#x200B; hier &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Aan de slag {#getting-ahead}

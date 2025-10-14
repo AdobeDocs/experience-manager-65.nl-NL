@@ -43,15 +43,15 @@ Als de database in een logmodus wordt uitgevoerd, zoals in de vorige sectie word
 Plaats AEM Forms in de modus voor veilige back-up (momentopname) of in de modus voor rolback-up (continue dekking). Controleer het volgende voordat u AEM Forms instelt op een van de back-upmodi:
 
 * Controleer de systeemversie en registreer de patches of updates die zijn toegepast sinds de laatste volledige back-up van het image van het systeem is uitgevoerd.
-* Als u of het rollen of momentopnamemodesteunen gebruikt, zorg ervoor dat uw gegevensbestand met de correcte logboekmontages wordt gevormd om voor hete steunen van het gegevensbestand toe te staan. (Zie [ gegevensbestand van AEM Forms ](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
+* Als u of het rollen of momentopnamemodesteunen gebruikt, zorg ervoor dat uw gegevensbestand met de correcte logboekmontages wordt gevormd om voor hete steunen van het gegevensbestand toe te staan. (Zie [&#x200B; gegevensbestand van AEM Forms &#x200B;](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Daarnaast moet u de volgende richtlijnen voor het back-up-/herstelproces in acht nemen.
 
-* Maak een back-up van de GDS-map met behulp van een beschikbaar besturingssysteem of een back-uphulpprogramma van derden. (Zie [ GDS plaats ](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
-* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie {de plaats van de Wortel van de Opslag van 0} Inhoud (stand-alone milieu) [&#128279;](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [ de Hoofdplaats van de Opslag van de Inhoud (gegroepeerd milieu) ](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Maak een back-up van de GDS-map met behulp van een beschikbaar besturingssysteem of een back-uphulpprogramma van derden. (Zie [&#x200B; GDS plaats &#x200B;](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
+* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie {de plaats van de Wortel van de Opslag van 0} Inhoud (stand-alone milieu) [&#128279;](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [&#x200B; de Hoofdplaats van de Opslag van de Inhoud (gegroepeerd milieu) &#x200B;](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
 * Terug   auteur- en publicatieinstanties ( crx -repository backup).
 
-  Aan file voert het milieu van de Oplossing van het Beheer van de Correspondentie, de stappen op de auteur uit en publiceert instanties zoals die in [ Steun en herstel ](/help/sites-administering/backup-and-restore.md) worden beschreven.
+  Aan file voert het milieu van de Oplossing van het Beheer van de Correspondentie, de stappen op de auteur uit en publiceert instanties zoals die in [&#x200B; Steun en herstel &#x200B;](/help/sites-administering/backup-and-restore.md) worden beschreven.
 
   Houd rekening met de volgende punten wanneer u een back-up maakt van de auteur en instanties publiceert:
 
@@ -60,14 +60,14 @@ Daarnaast moet u de volgende richtlijnen voor het back-up-/herstelproces in acht
    * Workbench-ontwikkelaars kunnen hun processen lokaal blijven uitvoeren. Tijdens de back-upfase moeten ze geen nieuwe processen implementeren.
    * Het besluit over de lengte van elke back-upsessie (voor de rolmodus) moet gebaseerd zijn op de totale tijd die nodig is om een back-up te maken van alle gegevens in AEM Forms (DB, GDS, AEM opslagplaats en eventuele andere aanvullende aangepaste gegevens).
 
-Maak een back-up van de AEM Forms-database, inclusief transactielogboeken. Zie [ gegevensbestand van AEM Forms ](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
+Maak een back-up van de AEM Forms-database, inclusief transactielogboeken. Zie [&#x200B; gegevensbestand van AEM Forms &#x200B;](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Raadpleeg voor meer informatie het desbetreffende kennisbankartikel voor uw database:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [ Steun en Terugwinning van het Oracle voor AEM Forms ](https://www.adobe.com/go/kb403624)
-* [ Steun MySQL en Terugwinning voor AEM Forms ](https://www.adobe.com/go/kb403625)
-* [ de Steun en Terugwinning van de Server van Microsoft® SQL voor AEM Forms ](https://www.adobe.com/go/kb403623)
-* [ DB2® Steun en Terugwinning voor AEM Forms ](https://www.adobe.com/go/kb403626)
+* [&#x200B; Steun en Terugwinning van het Oracle voor AEM Forms &#x200B;](https://www.adobe.com/go/kb403624)
+* [&#x200B; Steun MySQL en Terugwinning voor AEM Forms &#x200B;](https://www.adobe.com/go/kb403625)
+* [&#x200B; de Steun en Terugwinning van de Server van Microsoft® SQL voor AEM Forms &#x200B;](https://www.adobe.com/go/kb403623)
+* [&#x200B; DB2® Steun en Terugwinning voor AEM Forms &#x200B;](https://www.adobe.com/go/kb403626)
 
 Deze artikelen bieden richtlijnen voor basisdatabasefuncties voor het maken van back-ups en het herstellen van gegevens. Ze zijn niet bedoeld als allesomvattende technische hulplijnen van de back-up- en herstelfunctie van de database van een specifieke leverancier. Ze bevatten opdrachten die nodig zijn om een betrouwbare back-upstrategie voor uw AEM Forms-toepassingsgegevens te maken.
 
@@ -144,7 +144,7 @@ U kunt de opdrachtregelinterface gebruiken om AEM Forms uit de veilige back-upmo
 
    >[!NOTE]
    >
-   >Plaats de folder JAVA_HOME zoals die in het aangewezen hoofdstuk voor uw toepassingsserver in [ wordt beschreven Voorbereidend om AEM Forms ](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63) *te installeren.*
+   >Plaats de folder JAVA_HOME zoals die in het aangewezen hoofdstuk voor uw toepassingsserver in [&#x200B; wordt beschreven Voorbereidend om AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63) *te installeren.*
 
 1. Voer de volgende opdracht op één regel uit:
 

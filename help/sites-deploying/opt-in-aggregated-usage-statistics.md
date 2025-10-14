@@ -29,11 +29,11 @@ U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console 
 >
 >Er zijn verschillende regels inzake gegevensbescherming en privacy, waaronder bijvoorbeeld de GDPR en de CCPA. AEM Sites is klaar om klanten te helpen met hun verplichtingen op het gebied van gegevensbescherming en privacy. Deze pagina begeleidt klanten door de procedures aan opt-in (of uit) van de Geaggregeerde Verzameling van de Statistieken van het Gebruik.
 >
->Voor verdere informatie, zie ook het [ Centrum van de Privacy van de Adobe ](https://www.adobe.com/privacy.html).
+>Voor verdere informatie, zie ook het [&#x200B; Centrum van de Privacy van de Adobe &#x200B;](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->U kunt opt-out op elk ogenblik door of de [ Console van het Web ](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) te gebruiken of door niet de opt-in optie op het AEM opt-in scherm te selecteren.
+>U kunt opt-out op elk ogenblik door of de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) te gebruiken of door niet de opt-in optie op het AEM opt-in scherm te selecteren.
 
 ## Inschakelen via de aanraakinterface {#opt-in-by-using-the-touch-ui}
 
@@ -41,15 +41,15 @@ De eerste keer dat u AEM start, kunt u zich aanmelden via de aanraakinterface:
 
 1. Voor het scherm van de Navigatie van de AEM, klik **Inbox** (bel) pictogram.
 
-   ![ usage_statistics navigationscreen ](assets/usage_statisticsnavigationscreen.png)
+   ![&#x200B; usage_statistics navigationscreen &#x200B;](assets/usage_statisticsnavigationscreen.png)
 
 1. Voor de drop-down lijst, klik &quot;**laat de Geaggregeerde Verzameling van de Statistieken van het Gebruik**&quot;toe.
 
-   ![ usage_statistics navigationscreen2 ](assets/usage_statisticsnavigationscreen2.png)
+   ![&#x200B; usage_statistics navigationscreen2 &#x200B;](assets/usage_statisticsnavigationscreen2.png)
 
 1. Voor het opt-in scherm, selecteer &quot;**toestaat inzameling van samengevoegde gebruiksstatistieken**&quot;.
 
-   ![ usage_statistical sopt-inscreen ](assets/usage_statisticsopt-inscreen.png)
+   ![&#x200B; usage_statistical sopt-inscreen &#x200B;](assets/usage_statisticsopt-inscreen.png)
 
 1. Klik &quot;**Gedaan**&quot;.
 
@@ -59,19 +59,19 @@ U kunt als volgt de optie Aanmelden (of Weigeren) gebruiken met de webconsole:
 
 1. Voor het scherm van de Navigatie van de AEM, klik **Hulpmiddelen** en toen **Verrichtingen**.
 
-   ![ usage_statistics sopsdashboard ](assets/usage_statisticsopsdashboard.png)
+   ![&#x200B; usage_statistics sopsdashboard &#x200B;](assets/usage_statisticsopsdashboard.png)
 
 1. Voor het venster van Verrichtingen, klik **Console van het Web**.
 
-   ![ usage_statistics webconsole ](assets/usage_statisticswebconsole.png)
+   ![&#x200B; usage_statistics webconsole &#x200B;](assets/usage_statisticswebconsole.png)
 
 1. Onderzoek naar &quot;**samengevoegde de Verzameling van de Statistieken van het Gebruik**&quot;.
 1. Klik **uitgeven** pictogram.
 
-   ![ usage_statistical scollectionedit ](assets/usage_statisticscollectionedit.png)
+   ![&#x200B; usage_statistical scollectionedit &#x200B;](assets/usage_statisticscollectionedit.png)
 
 1. Selecteer **Toegelaten** checkbox. U kunt ook het selectievakje uitschakelen als u de verzameling van verbruiksstatistieken wilt uitschakelen.
 
-   ![ usage_statisticalSelect ](assets/usage_statisticsselect.png)
+   ![&#x200B; usage_statisticalSelect &#x200B;](assets/usage_statisticsselect.png)
 
 1. Klik **sparen**.

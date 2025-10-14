@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
 
-In deze sectie, nu het malplaatje opstelling in de [ aanvankelijke toepassing ](initial-app.md) sectie is, en de aanvankelijke pagina&#39;s die in de [ worden gevestigd aanvankelijke inhoud ](initial-content.md) sectie, kunt u de toepassing ontwikkelen. U doet dit door stichtingsmanuscripten te gebruiken die de capaciteit omvatten om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie hebt u een volledig functionele website.
+In deze sectie, nu het malplaatje opstelling in de [&#x200B; aanvankelijke toepassing &#x200B;](initial-app.md) sectie is, en de aanvankelijke pagina&#39;s die in de [&#x200B; worden gevestigd aanvankelijke inhoud &#x200B;](initial-content.md) sectie, kunt u de toepassing ontwikkelen. U doet dit door stichtingsmanuscripten te gebruiken die de capaciteit omvatten om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie hebt u een volledig functionele website.
 
 ## Scripts voor basispagina&#39;s gebruiken {#using-foundation-page-scripts}
 
@@ -42,7 +42,7 @@ CRXDE Lite gebruiken:
 1. Klik op de groene knop **[!UICONTROL +Add]** .
 1. Klik op **[!UICONTROL Save All]**.
 
-   ![ pagina-manuscript ](assets/page-script.png)
+   ![&#x200B; pagina-manuscript &#x200B;](assets/page-script.png)
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
@@ -127,13 +127,13 @@ U zou niet alleen het rubriek **Communautaire Spel** moeten zien, maar ook UI vo
 
 Het zijpaneel van Assets/Component is zichtbaar wanneer zowel het zijpaneel open en het venster wijd genoeg voor zowel de zijinhoud als de pagina inhoud om wordt getoond wordt geschakeld.
 
-![ mening-pagina ](assets/view-page.png)
+![&#x200B; mening-pagina &#x200B;](assets/view-page.png)
 
 * Klassieke gebruikersinterface: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
-![ spel-pagina-mening ](assets/play-page-view.png)
+![&#x200B; spel-pagina-mening &#x200B;](assets/play-page-view.png)
 
 ## Community-componenten {#communities-components}
 
@@ -182,4 +182,4 @@ Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.ht
 
 Nadat de site is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de componenten van Communities SCF moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [ voeg Clientlibs ](add-clientlibs.md) toe
+De laatste stap vóór het spelen met de componenten van Communities SCF moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [&#x200B; voeg Clientlibs &#x200B;](add-clientlibs.md) toe

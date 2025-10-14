@@ -27,9 +27,9 @@ De details van het instellen van de functie worden beschreven op
 
 Deze pagina bevat aanvullende technische gegevens:
 
-* Hoe te [ een badge ](#displaying-badges) als of beeld of tekst tonen
-* Hoe te om uitgebreide [ aan te zetten zuivert registreren ](#debug-log-for-scoring-and-badging)
-* Hoe te [ toegang UGC ](#ugc-for-scoring-and-badging) verwant met het scoren en het intekenen
+* Hoe te [&#x200B; een badge &#x200B;](#displaying-badges) als of beeld of tekst tonen
+* Hoe te om uitgebreide [&#x200B; aan te zetten zuivert registreren &#x200B;](#debug-log-for-scoring-and-badging)
+* Hoe te [&#x200B; toegang UGC &#x200B;](#ugc-for-scoring-and-badging) verwant met het scoren en het intekenen
 
 >[!CAUTION]
 >
@@ -71,13 +71,13 @@ Indien waar (true), geeft `isAssigned` aan dat de badge is toegewezen voor een r
 
 Als de waarde false is, geeft `isAssigned` aan dat de badge is toegekend voor een verdiende score en dat de badge moet worden weergegeven als een afbeelding.
 
-Wijzigingen in dit gedrag moeten worden aangebracht in een aangepast script (overschrijven of bedekken). Zie [ Cliënt-kant Aanpassing ](/help/communities/client-customize.md).
+Wijzigingen in dit gedrag moeten worden aangebracht in een aangepast script (overschrijven of bedekken). Zie [&#x200B; Cliënt-kant Aanpassing &#x200B;](/help/communities/client-customize.md).
 
 ## Foutopsporingslogboek voor score en Badging {#debug-log-for-scoring-and-badging}
 
 Voor foutopsporing in scores en badging kunt u een aangepast logbestand instellen. De inhoud van dit logbestand kan dan aan de klantenondersteuning worden verstrekt als er problemen met de functie worden ondervonden.
 
-Voor gedetailleerde instructies, leidt het bezoek [ tot een Dossier van het Logboek van de Douane ](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Voor gedetailleerde instructies, leidt het bezoek [&#x200B; tot een Dossier van het Logboek van de Douane &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 U kunt als volgt snel een logbestand instellen:
 
@@ -100,7 +100,7 @@ U kunt als volgt snel een logbestand instellen:
 
    1. Selecteer **sparen**
 
-![ debug-scoring-log ](assets/debug-scoring-log.png)
+![&#x200B; debug-scoring-log &#x200B;](assets/debug-scoring-log.png)
 
 Logboekvermeldingen weergeven:
 
@@ -116,17 +116,17 @@ Logboekvermeldingen weergeven:
 
    * Bijvoorbeeld: `.../crx-quickstart/logs/scoring-debug.log`
 
-![ scoring-log ](assets/scoring-log.png)
+![&#x200B; scoring-log &#x200B;](assets/scoring-log.png)
 
 ## UGC voor scores en Badging {#ugc-for-scoring-and-badging}
 
-Het is mogelijk om UGC met betrekking tot het scoring en het aanbrengen van merktekens te bekijken wanneer gekozen SRP of JSRP of MSRP, maar niet ASRP is. (Als niet vertrouwd met deze termijnen, zie [ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) en [ het Overzicht van de Leverancier van het Middel van de Opslag ](/help/communities/srp.md).)
+Het is mogelijk om UGC met betrekking tot het scoring en het aanbrengen van merktekens te bekijken wanneer gekozen SRP of JSRP of MSRP, maar niet ASRP is. (Als niet vertrouwd met deze termijnen, zie [&#x200B; Communautaire Opslag van de Inhoud &#x200B;](/help/communities/working-with-srp.md) en [&#x200B; het Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](/help/communities/srp.md).)
 
-De beschrijvingen voor de toegang tot van het scoren en het merkingsgegevensgebruik JSRP, aangezien UGC gemakkelijk toegankelijk is gebruikend [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
+De beschrijvingen voor de toegang tot van het scoren en het merkingsgegevensgebruik JSRP, aangezien UGC gemakkelijk toegankelijk is gebruikend [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP op auteur**: het experimenteren in het auteursmilieu resulteert in UGC die slechts van het auteursmilieu zichtbaar is.
 
-**JSRP op publiceert**: zo ook, als het testen op het publiceer milieu, is het noodzakelijk om tot CRXDE Lite met administratieve voorrechten op tot te gaan publiceer instantie. Als publiceer instantie op [ productiemodus ](/help/sites-administering/production-ready.md) loopt (nosamplcontent looppas wijze), is het noodzakelijk om [ CRXDE Lite ](/help/sites-administering/enabling-crxde-lite.md) toe te laten.
+**JSRP op publiceert**: zo ook, als het testen op het publiceer milieu, is het noodzakelijk om tot CRXDE Lite met administratieve voorrechten op tot te gaan publiceer instantie. Als publiceer instantie op [&#x200B; productiemodus &#x200B;](/help/sites-administering/production-ready.md) loopt (nosamplcontent looppas wijze), is het noodzakelijk om [&#x200B; CRXDE Lite &#x200B;](/help/sites-administering/enabling-crxde-lite.md) toe te laten.
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/` .
 
@@ -134,10 +134,10 @@ De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/` .
 
 De volgende API&#39;s zijn beschikbaar voor gebruik:
 
-* [ com.adobe.cq.social.scoring.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
-* [ com.adobe.cq.social.badging.api in 6.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
+* [&#x200B; com.adobe.cq.social.scoring.api in 6.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
+* [&#x200B; com.adobe.cq.social.badging.api in 6.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL)
 
-De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [ Gebruikend Gemaakt voor Gemeenschappen: JavaDocs ](/help/communities/maven.md#javadocs).
+De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [&#x200B; Gebruikend Gemaakt voor Gemeenschappen: JavaDocs &#x200B;](/help/communities/maven.md#javadocs).
 
 **de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
@@ -147,7 +147,7 @@ De screenshots van dataopslaggegevens zijn afkomstig van het instellen van scori
 
 1. Een AEM plaats *met* unieke identiteitskaart (communautaire die plaats wordt gecreeerd gebruikend tovenaar):
 
-   * Het gebruiken van het Begonnen Leerprogramma (verbind) plaats die tijdens het [ wordt gecreeerd begonnen leerprogramma ](/help/communities/getting-started.md)
+   * Het gebruiken van het Begonnen Leerprogramma (verbind) plaats die tijdens het [&#x200B; wordt gecreeerd begonnen leerprogramma &#x200B;](/help/communities/getting-started.md)
    * Zoek het knooppunt voor forumpagina
 
      `/content/sites/engage/en/forum/jcr:content`
@@ -177,7 +177,7 @@ De screenshots van dataopslaggegevens zijn afkomstig van het instellen van scori
 
 1. Een AEM plaats *zonder* unieke identiteitskaart:
 
-   * Het gebruiken van de [ gids van Componenten Community ](/help/communities/components-guide.md)
+   * Het gebruiken van de [&#x200B; gids van Componenten Community &#x200B;](/help/communities/components-guide.md)
    * Zoek het knooppunt voor forumpagina
 
      `/content/community-components/en/forum/jcr:content`
@@ -213,7 +213,7 @@ De screenshots van dataopslaggegevens zijn afkomstig van het instellen van scori
 
    Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, verschijnt de gebruiker met zijn forumingang als volgt:
 
-   ![ moderator ](assets/moderator.png)
+   ![&#x200B; moderator &#x200B;](assets/moderator.png)
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ De screenshots van dataopslaggegevens zijn afkomstig van het instellen van scori
 
 ### Toegang tot UGC-score {#access-scoring-ugc}
 
-Het gebruik van [ APIs ](#scoring-and-badging-apis) heeft de voorkeur.
+Het gebruik van [&#x200B; APIs &#x200B;](#scoring-and-badging-apis) heeft de voorkeur.
 
 Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die scores bevat
 
@@ -248,11 +248,11 @@ Voor de Community Components-hulplijnsite bevinden de gebruiker en hun score zic
 
 De score wordt opgeslagen in de eigenschap `scoreValue_tl` die alleen een waarde kan bevatten of indirect naar een atomicCounter kan verwijzen.
 
-![ toegang-scoring-ugc ](assets/access-scoring-ugc.png)
+![&#x200B; toegang-scoring-ugc &#x200B;](assets/access-scoring-ugc.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
-Het gebruik van [ APIs ](#scoring-and-badging-apis) heeft de voorkeur.
+Het gebruik van [&#x200B; APIs &#x200B;](#scoring-and-badging-apis) heeft de voorkeur.
 
 Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die informatie over toegewezen of toegekende badges bevat
 
@@ -264,15 +264,15 @@ Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met 
 
 #### Toegewezen badge {#awarded-badge}
 
-![ verlenen-badging-ugc ](assets/access-badging-ugc.png)
+![&#x200B; verlenen-badging-ugc &#x200B;](assets/access-badging-ugc.png)
 
 #### Toegewezen badge {#assigned-badge}
 
-![ toegewezen-badge ](assets/assigned-badge.png)
+![&#x200B; toegewezen-badge &#x200B;](assets/assigned-badge.png)
 
 ## Aanvullende informatie {#additional-information}
 
 Een gesorteerde lijst met leden weergeven op basis van punten:
 
-* [ functie van Leaderboard ](/help/communities/functions.md#leaderboard-function) voor opneming in een communautaire plaats of groepsmalplaatje.
-* [ component Leaderboard ](/help/communities/enabling-leaderboard.md), de gekenmerkte component van de functie Leaderboard, voor paginacreatie.
+* [&#x200B; functie van Leaderboard &#x200B;](/help/communities/functions.md#leaderboard-function) voor opneming in een communautaire plaats of groepsmalplaatje.
+* [&#x200B; component Leaderboard &#x200B;](/help/communities/enabling-leaderboard.md), de gekenmerkte component van de functie Leaderboard, voor paginacreatie.

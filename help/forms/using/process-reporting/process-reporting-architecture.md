@@ -34,7 +34,7 @@ Procesrapportage bestaat uit de volgende modules:
 
 ## Procesrapporteringsarchitectuur {#process-reporting-architecture-br}
 
-![ verwerkend rapporteringsarchitectuur ](assets/processreportingarchitecture.png)
+![&#x200B; verwerkend rapporteringsarchitectuur &#x200B;](assets/processreportingarchitecture.png)
 
 ## Procesrapporteringsmodules {#process-reporting-modules}
 
@@ -42,13 +42,13 @@ Procesrapportage bestaat uit de volgende modules:
 
 De ProcessDataPublisher-server wordt regelmatig uitgevoerd in de AEM Forms-database en extraheert de gegevens die zijn gewijzigd sinds de laatste uitvoering van de service. De gegevens worden vervolgens gepubliceerd naar de service Gegevensopslag verwerken.
 
-Voor details bij het vormen van de dienst, zie [ de dienst ProcessDataPublisher ](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p) vormen.
+Voor details bij het vormen van de dienst, zie [&#x200B; de dienst ProcessDataPublisher &#x200B;](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p) vormen.
 
 ### ProcessDataStorageProvider-service {#processdatastorageprovider-service-br}
 
 De dienst ProcessDataStorageProvider ontvangt procesgegevens van de dienst ProcessDataPublisher en bewaart de gegevens aan de bewaarplaats van de Rapportering van het Proces.
 
-Voor details bij het vormen van de dienst, zie [ de dienst ProcessDataStorageProvider ](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p) vormen.
+Voor details bij het vormen van de dienst, zie [&#x200B; de dienst ProcessDataStorageProvider &#x200B;](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p) vormen.
 
 ### OSGi-service {#osgi-service-br}
 
@@ -64,7 +64,7 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 
 Het proces dat gebruikersinterface meldt is een browser-gebaseerde interface van het Web. U gebruikt deze interface om proces- en taakinformatie weer te geven die is gepubliceerd vanuit de AEM Forms-database.
 
-Voor een inleiding aan het Proces Meldend gebruikersinterface, zie [ Proces Meldend gebruikersinterface ](/help/forms/using/process-reporting/introduction-process-reporting.md).
+Voor een inleiding aan het Proces Meldend gebruikersinterface, zie [&#x200B; Proces Meldend gebruikersinterface &#x200B;](/help/forms/using/process-reporting/introduction-process-reporting.md).
 
 ### QueryDataServlet-service {#querydataservlet-service-br-1}
 
@@ -76,4 +76,4 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
-Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [ de Rapporten van de Douane in Proces tot stand te brengen die ](/help/forms/using/process-reporting/process-reporting-custom-reports.md) melden.
+Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [&#x200B; de Rapporten van de Douane in Proces tot stand te brengen die &#x200B;](/help/forms/using/process-reporting/process-reporting-custom-reports.md) melden.

@@ -27,11 +27,11 @@ U kunt als volgt de gebruikersinterface van de AEM Forms-werkruimte lokaliseren 
 * U kunt samengevouwen categorieën, wachtrijen en processen lokaliseren.
 * Datumkiezer lokaliseren
 
-Alvorens de bovengenoemde stappen uit te voeren, zorg ervoor dat u de stappen volgt die bij [ worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md).
+Alvorens de bovengenoemde stappen uit te voeren, zorg ervoor dat u de stappen volgt die bij [&#x200B; worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms &#x200B;](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->Om de taal van het login scherm van de werkruimte van AEM Forms te veranderen, zie [ Creërend een login scherm ](../../forms/using/creating-new-login-screen.md).
+>Om de taal van het login scherm van de werkruimte van AEM Forms te veranderen, zie [&#x200B; Creërend een login scherm &#x200B;](../../forms/using/creating-new-login-screen.md).
 
 ## Tekst lokaliseren {#localizing-text}
 
@@ -45,11 +45,11 @@ De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.js
 
    De volgende voorbeelden bevatten het bestand translatie.json voor Engelse en Franse landinstellingen van de AEM Forms-werkruimte.
 
-   ![&#128279;](assets/translation_json_in_en.png)  translatie_json_in_fr ![ ](assets/translation_json_in_fr.png)
+   ![&#128279;](assets/translation_json_in_en.png)  translatie_json_in_fr ![&#x200B; &#x200B;](assets/translation_json_in_fr.png)
 
 ## Samengevouwen categorieën, wachtrijen en processen lokaliseren {#localizing-collapsed-categories-queues-and-processes}
 
-In de AEM Forms-werkruimte worden afbeeldingen gebruikt om koppen van categorieën, wachtrijen en processen weer te geven. U hebt een ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms bouwen.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+In de AEM Forms-werkruimte worden afbeeldingen gebruikt om koppen van categorieën, wachtrijen en processen weer te geven. U hebt een ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [&#x200B; de werkruimtecode van AEM Forms bouwen.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 In de volgende stappen, wordt verondersteld dat de nieuwe gelokaliseerde beelddossiers *Categories_nw.png*, *Queue_nw.png* zijn, en *Processes_nw.png*. De aanbevolen breedte van de afbeeldingen moet op 19 pixels worden ingesteld.
 
@@ -57,7 +57,7 @@ In de volgende stappen, wordt verondersteld dat de nieuwe gelokaliseerde beelddo
 >
 >U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Open `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
-![ doen ineenstorten_panels_image ](assets/collapsing_panels_image.png)
+![&#x200B; doen ineenstorten_panels_image &#x200B;](assets/collapsing_panels_image.png)
 
 Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
@@ -108,9 +108,9 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
 ## Datumkiezer lokaliseren {#localizing-date-picker}
 
-U vereist een ontwikkelingspakket om *datepicker* API te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms van de Bouw ](introduction-customizing-html-workspace.md#building-html-workspace-code).
+U vereist een ontwikkelingspakket om *datepicker* API te lokaliseren. Voor gedetailleerde informatie over het creëren van een ontwikkelingspakket, zie [&#x200B; de werkruimtecode van AEM Forms van de Bouw &#x200B;](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Download en haal het [ pakket jQuery UI ](https://jqueryui.com/download/all/), navigeer aan *&lt;extracted jquery UI package>* \ jquery-ui-1.10.2.zip \ jquery-ui-1.10.2 \ ui \ i18n.
+1. Download en haal het [&#x200B; pakket jQuery UI &#x200B;](https://jqueryui.com/download/all/), navigeer aan *&lt;extracted jquery UI package>* \ jquery-ui-1.10.2.zip \ jquery-ui-1.10.2 \ ui \ i18n.
 1. Kopieer het bestand jquery.ui.datepicker-nw.js voor code van de landinstelling nu naar apps/ws/js/libs/jqueryui en breng wijzigingen aan die specifiek zijn voor de landinstelling.
 1. Navigeer naar `apps/ws/js` en open het `jquery.ui.datepicker-nw.js` -bestand voor bewerking.
 1. Maak in het bestand main.js een alias voor `jquery.ui.datepicker-nw.js.` De code waarmee een alias voor het bestand `jquery.ui.datepicker-nw.js` wordt gemaakt, is:

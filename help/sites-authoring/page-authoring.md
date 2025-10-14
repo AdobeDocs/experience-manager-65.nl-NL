@@ -16,13 +16,13 @@ ht-degree: 0%
 
 Hieronder vindt u twee typen overzicht voor het ontwerpen met AEM:
 
-* [ Eerste Stappen voor Auteurs ](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
+* [&#x200B; Eerste Stappen voor Auteurs &#x200B;](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
 
-* [ Snelle Gids aan de Authoring Pagina&#39;s ](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
+* [&#x200B; Snelle Gids aan de Authoring Pagina&#39;s &#x200B;](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
 
 >[!NOTE]
 >
->In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [ Authoring Gids ](/help/sites-authoring/first-steps.md) wordt behandeld.
+>In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [&#x200B; Authoring Gids &#x200B;](/help/sites-authoring/first-steps.md) wordt behandeld.
 
 ## Snel overzicht van de functies die worden gebruikt voor het ontwerpen van pagina&#39;s {#quick-overview-of-features-used-for-authoring-pages}
 

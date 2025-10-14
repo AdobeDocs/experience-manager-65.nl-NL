@@ -23,7 +23,7 @@ Met de functie Vergelijken in Adaptive Forms Core Components kunnen formulieraut
 
 ## Vereiste {#prerequisite-versioning}
 
-Om eigenschap in een Aangepaste Vorm te gebruiken die op de Componenten van de Kern wordt gebaseerd, zorg ervoor dat de [ Aangepaste Componenten van de Kern van de Vorm ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw AEM 6.5 milieu van Forms wordt toegelaten.
+Om eigenschap in een Aangepaste Vorm te gebruiken die op de Componenten van de Kern wordt gebaseerd, zorg ervoor dat de [&#x200B; Aangepaste Componenten van de Kern van de Vorm &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) op uw AEM 6.5 milieu van Forms wordt toegelaten.
 
 ## Verschillende adaptieve formulieren vergelijken {#compare-af-65}
 
@@ -31,11 +31,11 @@ Als u twee verschillende adaptieve formulieren wilt vergelijken op basis van hun
 
 1. Selecteer aangepaste formulieren en klik op **[!UICONTROL Compare]** .
 
-   ![ vergelijk adaptieve vormen ](/help/forms/using/assets/compare-two-forms.png)
+   ![&#x200B; vergelijk adaptieve vormen &#x200B;](/help/forms/using/assets/compare-two-forms.png)
 
 1. Als u klikt, ziet u twee formulieren in de voorbeeldmodus. Het eerste formulier wordt geselecteerd als het basisformulier dat moet worden vergeleken met het tweede formulier, en de inhoud wordt vergeleken tussen de twee formulieren, die vergelijkbaar en gedifferentieerd zijn. De gedifferentieerde inhoud van het eerste formulier wordt als groen gemarkeerd, zoals in de afbeelding wordt getoond.
 
-   ![ Vergelijkte vormen ](/help/forms/using/assets/compared-forms.png)
+   ![&#x200B; Vergelijkte vormen &#x200B;](/help/forms/using/assets/compared-forms.png)
 
 ## Zie ook
 

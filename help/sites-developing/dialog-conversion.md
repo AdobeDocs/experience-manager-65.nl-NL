@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Het hulpmiddel van de dialoogomzetting wordt verstrekt helpen bestaande componenten uitbreiden die slechts een dialoog hebben die voor klassieke UI (op ExtJS wordt gebaseerd) wordt bepaald of op Granite UI en Koraal 2 wordt gebaseerd. Het gereedschap gebruikt het oorspronkelijke dialoogvenster om een dubbel dialoogvenster te maken dat is ontworpen voor de standaardinterface op basis van de gebruikersinterface van graniet en koraal 3.
 
-Het hulpmiddel van de dialoogomzetting is een deel van de [ Reeks van het Hulpmiddel van de Modernisering van de Adobe ](modernization-tools.md).
+Het hulpmiddel van de dialoogomzetting is een deel van de [&#x200B; Reeks van het Hulpmiddel van de Modernisering van de Adobe &#x200B;](modernization-tools.md).

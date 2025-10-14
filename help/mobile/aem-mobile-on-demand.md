@@ -21,13 +21,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen AEM als uw bron van het inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
+>Als u geen AEM als uw bron van het inhoudsbeheer gebruikt, zie [&#x200B; Hulp van AEM Mobile On-demand Services &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
->Alvorens met AEM Mobile te werken en de stappen binnen deze begonnen gids te volgen, zouden de gebruikers met [ AEM ](/help/sites-deploying/deploy.md) vertrouwd moeten zijn.
+>Alvorens met AEM Mobile te werken en de stappen binnen deze begonnen gids te volgen, zouden de gebruikers met [&#x200B; AEM &#x200B;](/help/sites-deploying/deploy.md) vertrouwd moeten zijn.
 >
->Aan opstelling uw milieu voor AEM Mobile On-demand Services, zie [ Dashboard van de Toepassing van AEM Mobile of het Centrum van de Controle ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Aan opstelling uw milieu voor AEM Mobile On-demand Services, zie [&#x200B; Dashboard van de Toepassing van AEM Mobile of het Centrum van de Controle &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 Een **AEM ontwikkelaar** breidt zich uit en leidt de malplaatjes en de componenten van het douaneWeb om *toe te laten AEM Auteur* om mooie en het in dienst nemen mobiele ervaringen tot stand te brengen. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor de wereld van de mobiele app, maar communiceren zowel naar het apparaat als naar de AEM server (elke externe server) naar de eindpunten van de lokale service. AEM ingebouwde inhoudsredacteur wordt gebruikt door *AEM Auteurs* om rijke en relevante ervaringen binnen app, met inbegrip van integratie met de rest van Adobe Marketing Cloud tot stand te brengen.
 
@@ -37,7 +37,7 @@ Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken va
 * [Mobiel met inhoudssynchronisatie](/help/mobile/mobile-ondemand-contentsync.md)
 * [Eigenschappen van inhoud en Inhoud exporteren](/help/mobile/on-demand-content-properties-exporting.md)
 
-Zie [ het Ontwikkelen van de Diensten van de Inhoud van AEM Mobile ](/help/mobile/developing-content-services.md) voor het ontwikkelen van de Diensten van de Inhoud.
+Zie [&#x200B; het Ontwikkelen van de Diensten van de Inhoud van AEM Mobile &#x200B;](/help/mobile/developing-content-services.md) voor het ontwikkelen van de Diensten van de Inhoud.
 
 >[!NOTE]
 >

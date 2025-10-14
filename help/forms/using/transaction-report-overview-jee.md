@@ -31,7 +31,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
 1. Ga naar **Montages** > **de Montages van het Systeem van de Kern** > **Configuraties**.
 1. Klik checkbox aan **om transactie toe te laten die** rapporteert en **sparen** de montages.
 
-   ![ steekproef-transactie-rapport-jee ](assets/enable-transaction-jee.png)
+   ![&#x200B; steekproef-transactie-rapport-jee &#x200B;](assets/enable-transaction-jee.png)
 
 1. Start de server opnieuw.
 1. Naast de wijzigingen op de server moet u op de client het `adobe-livecycle-client.jar` -bestand in uw project bijwerken als u hetzelfde gebruikt.
@@ -44,7 +44,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
 
 ## Transactierapport weergeven {#view-transaction-report}
 
-Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door het [ transactierapport via dashboard ](#transaction-report-dashboard) en een gedetailleerd [ transactierapport via logboekdossier ](#transaction-report-logfile). Beide worden hieronder uitgelegd:
+Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door het [&#x200B; transactierapport via dashboard &#x200B;](#transaction-report-dashboard) en een gedetailleerd [&#x200B; transactierapport via logboekdossier &#x200B;](#transaction-report-logfile). Beide worden hieronder uitgelegd:
 
 ### Transactierapport via dashboard {#transaction-report-dashboard}
 
@@ -55,7 +55,7 @@ Transactierapport via het dashboard geeft het totale aantal transacties voor elk
 1. Klik op Health Monitor.
 1. Navigeer aan **Reporter van de Transactie** lusje, klik **Totale Transacties** berekent, nu ziet u dat een cirkeldiagram het aantal PDF forms - voorgelegd, teruggegeven, of omgezet vertegenwoordigt.
 
-![ steekproef-transactie-rapport-jee ](assets/transaction-piechart.png)
+![&#x200B; steekproef-transactie-rapport-jee &#x200B;](assets/transaction-piechart.png)
 
 
 ### Transactierapport via logbestand {#transaction-report-logfile}

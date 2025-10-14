@@ -30,7 +30,7 @@ In dit document worden de specifieke configuratievereisten en mogelijke probleem
 
 De AEM Forms op JEE clusterknopen communiceren onder elkaar en delen informatie om de cluster als geheel toe te laten om één enkele verenigbare configuratie en toepassingsstaat te hebben. Het delen van informatie binnen de cluster gebeurt op verschillende manieren gelijktijdig die in verschillende contexten worden gebruikt. De basismethoden voor het delen van informatie worden in onderstaande afbeelding weergegeven:
 
-![ de Cluster van de Server van de Toepassing ](assets/application-server-cluster.jpg)
+![&#x200B; de Cluster van de Server van de Toepassing &#x200B;](assets/application-server-cluster.jpg)
 
 ### Toepassingsservercluster {#application-server-cluster}
 
@@ -56,7 +56,7 @@ Naast deze hoofdgedeelde bronnen zijn er andere items die een specifiek clusterg
 
 Een van de meest frustrerende dingen over het onderhouden of oplossen van problemen van een AEM Forms op een cluster JEE is dat er geen enkele plaats is om positief te kijken om te bevestigen dat de cluster gezond is. Om te bevestigen dat alles goed in de cluster is neemt wat onderzoek en analyse, en er zijn verscheidene wijzen van mislukking voor clusterverrichting, afhankelijk van wat met de clusterconfiguratie verkeerd is. Het cijfer toont hieronder een slecht gevormde cluster waarin verscheidene gedeelde middelen incorrect worden gedeeld.
 
-![ Badly gevormde Cluster ](assets/bad-configuration-cluster.png)
+![&#x200B; Badly gevormde Cluster &#x200B;](assets/bad-configuration-cluster.png)
 
 Begrijp de manier het groeperen werkt en de soorten dingen die u in een cluster kunt zoeken en verifiëren, zelfs als u niet van plan bent om AEM Forms op JEE in een cluster in werking te stellen. De reden hiervoor is dat sommige delen van AEM Forms op JEE hun aanwijzingen over het onjuist werken in een cluster kunnen nemen en het clustergedrag dat u niet verwacht, kunnen overnemen.
 
@@ -224,9 +224,9 @@ Voor een geslaagde AEM Forms in JEE-cluster moet de toepassingsserver zijn gecon
 
 Referenties:
 
-* [ Hoge beschikbaarheid de diensten van de beschikbaarheidsonderneming als clusters JBoss® ](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [&#x200B; Hoge beschikbaarheid de diensten van de beschikbaarheidsonderneming als clusters JBoss® &#x200B;](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [ Oracle WebLogic Server-Gebruikende clusters ](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [&#x200B; Oracle WebLogic Server-Gebruikende clusters &#x200B;](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Hoe kan ik controleren dat JBoss® zich correct groepeert? {#check-jboss-clustering}
 

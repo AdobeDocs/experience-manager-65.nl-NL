@@ -67,7 +67,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
 
 >[!CAUTION]
 >
->Sommige uitvoeringsmodi, waaronder auteur en publicatie, moeten worden ingesteld voordat de AEM voor het eerst wordt gestart en kunnen daarna niet worden gewijzigd. Alvorens vestiging een AEM instantie te vestigen die in productie wordt gebruikt, zie [ looppas wijzedocumentatie ](/help/sites-deploying/configure-runmodes.md) voor details.
+>Sommige uitvoeringsmodi, waaronder auteur en publicatie, moeten worden ingesteld voordat de AEM voor het eerst wordt gestart en kunnen daarna niet worden gewijzigd. Alvorens vestiging een AEM instantie te vestigen die in productie wordt gebruikt, zie [&#x200B; looppas wijzedocumentatie &#x200B;](/help/sites-deploying/configure-runmodes.md) voor details.
 
 ### Windows-platform start.bat-scriptvoorbeeld {#windows-platform-start-bat-script-example}
 
@@ -96,7 +96,7 @@ Voer een van de volgende handelingen uit om AEM te stoppen:
 
 * Als u AEM door het jar dossier tweemaal te klikken begon, klik **&#x200B;**&#x200B;knoop op het startvenster (de knoop verandert dan in **weg**) om de server te sluiten.
 
-  ![ chlimage_1-63 ](assets/chlimage_1-63.png)
+  ![&#x200B; chlimage_1-63 &#x200B;](assets/chlimage_1-63.png)
 
 ## Adobe Experience Manager stoppen vanaf de opdrachtregel {#stopping-adobe-experience-manager-from-the-command-line}
 

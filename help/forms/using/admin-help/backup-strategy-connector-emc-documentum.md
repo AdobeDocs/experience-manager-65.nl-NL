@@ -23,9 +23,9 @@ Als u Connector voor EMC Documentum® hebt geïnstalleerd, naast de instructies 
 Maak een back-up van uw AEM formulieromgeving met behulp van de ECM-opslagplaats en voer de volgende taken uit:
 
 * Maak een back-up AEM formulieren door de instructies in dit document op te volgen.
-* Maak een back-up van uw ECM Documentum® systeem door de instructies in [ Back-up te maken van de EMC Documentum® Content Server ](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server) .
+* Maak een back-up van uw ECM Documentum® systeem door de instructies in [&#x200B; Back-up te maken van de EMC Documentum® Content Server &#x200B;](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server) .
 
 Herstel AEM formulieromgeving met behulp van ECM-opslagruimte en voer de volgende taken uit:
 
-* Herstel uw respectieve ECM systeem door de instructies in [ te volgen herstel de EMC Documentum® Inhoudsserver ](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
+* Herstel uw respectieve ECM systeem door de instructies in [&#x200B; te volgen herstel de EMC Documentum® Inhoudsserver &#x200B;](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
 * U kunt AEM formulieren herstellen door de instructies in dit document op te volgen.

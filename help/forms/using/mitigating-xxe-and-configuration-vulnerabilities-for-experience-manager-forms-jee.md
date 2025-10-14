@@ -22,8 +22,8 @@ ht-degree: 3%
 
 | **Niveau van de Gevolgen** | **beïnvloede Versies** | **Aanbevolen Actie** |
 |---|---|---|
-| **Kritiek** | AEM 6.5 Forms on JEE Service Pack 23 (6.5.23.0) | [ installeer recentste hotfix ](#option-1-for-users-on-version-65230-install-latest-hotfix) |
-| **Kritiek** | AEM 6.5 Forms op JEE Service Pack 18 tot 22 (6.5.18.0 - 6.5.22.0) | [ installeer manueel de moeilijke situaties ](#option-2-for-users-on-65180---65220-manual-hotfix-installation) |
+| **Kritiek** | AEM 6.5 Forms on JEE Service Pack 23 (6.5.23.0) | [&#x200B; installeer recentste hotfix &#x200B;](#option-1-for-users-on-version-65230-install-latest-hotfix) |
+| **Kritiek** | AEM 6.5 Forms op JEE Service Pack 18 tot 22 (6.5.18.0 - 6.5.22.0) | [&#x200B; installeer manueel de moeilijke situaties &#x200B;](#option-2-for-users-on-65180---65220-manual-hotfix-installation) |
 | **Kritiek** | AEM 6.5 Forms on JEE Service Pack 17 (6.5.17.0) of eerder | Voer een upgrade uit naar een ondersteunde versie van Service Pack en pas vervolgens de aanbevolen stappen voor het beperken van uw nieuwe versie toe |
 | **niet Beïnvloed** | AEM Forms op OSGi, Workbench, Cloud Service | Geen actie vereist |
 
@@ -65,8 +65,8 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
 ### Optie 1: (Voor gebruikers op versie 6.5.23.0) Nieuwste hotfix installeren
 
-1. [ Download hotfix voor 6.5.23.0](/help/release-notes/aem-forms-hotfix.md).
-1. Volg standaard [ hotfix/flardinstallatie instructies ](/help/release-notes/jee-patch-installer-65.md)
+1. [&#x200B; Download hotfix voor 6.5.23.0](/help/release-notes/aem-forms-hotfix.md).
+1. Volg standaard [&#x200B; hotfix/flardinstallatie instructies &#x200B;](/help/release-notes/jee-patch-installer-65.md)
 1. Als u Documentbeveiliging (voorheen Rights Management) gebruikt op IBM WebSphere of Oracle WebLogic, stelt u de volgende Java-systeemeigenschap (JVM-argument) in voordat u de AEM Forms-server start:
 
    ```
@@ -81,7 +81,7 @@ Met deze voorzorg kunt u de oorspronkelijke staat herstellen voor het geval u ti
 
 **Stap 1: De download en trekt het Hotfix Pakket** uit
 
-- Download [ hotfix voor 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) van het Portaal van de Distributie van de Software van Adobe
+- Download [&#x200B; hotfix voor 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) van het Portaal van de Distributie van de Software van Adobe
 - Lokaal extraheren
 
 **Stap 2: Navigeer aan de Correcte Omslag van de Versie**
@@ -257,7 +257,7 @@ Als u Documentbeveiliging gebruikt (voorheen Rights Management), stelt u de volg
 
 ## Verwijzingen
 
-- [ CWE-611: Onjuiste Beperking van de Verwijzing van de Entiteit van XML Externe ](https://cwe.mitre.org/data/definitions/611.html)
-- [ CWE-16: Configuratie ](https://cwe.mitre.org/data/definitions/16.html)
-- [ OWASP XXE Preventie het Blad ](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [ Beste praktijken van de Veiligheid van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL)
+- [&#x200B; CWE-611: Onjuiste Beperking van de Verwijzing van de Entiteit van XML Externe &#x200B;](https://cwe.mitre.org/data/definitions/611.html)
+- [&#x200B; CWE-16: Configuratie &#x200B;](https://cwe.mitre.org/data/definitions/16.html)
+- [&#x200B; OWASP XXE Preventie het Blad &#x200B;](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
+- [&#x200B; Beste praktijken van de Veiligheid van Adobe Experience Manager Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=nl-NL)

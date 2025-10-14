@@ -28,7 +28,7 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Users and Groups]** en klik op **[!UICONTROL New User]** .
 .
-1. Geef onder **[!UICONTROL General Settings]** de vereiste informatie op en klik op **[!UICONTROL Next]** . Voor details over de montages, zie [ montages van de Gebruiker ](adding-configuring-users.md#user-settings).
+1. Geef onder **[!UICONTROL General Settings]** de vereiste informatie op en klik op **[!UICONTROL Next]** . Voor details over de montages, zie [&#x200B; montages van de Gebruiker &#x200B;](adding-configuring-users.md#user-settings).
 1. (Optioneel) Als u de gebruiker aan een groep wilt toevoegen, klikt u op **[!UICONTROL Find Groups]** en voert u de volgende taken uit:
 
    * Typ in het vak **[!UICONTROL Find]** de naam van de groep geheel of gedeeltelijk.
@@ -42,7 +42,7 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
 
    >[!NOTE]
    >
-   >Als u om het even welke login kwestie met de gebruiker tegenkomt, zie [ AEM Forms op gebruiker JEE er niet in slaagt op AEM Forms op OSGi zij ](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html) aan te melden.
+   >Als u om het even welke login kwestie met de gebruiker tegenkomt, zie [&#x200B; AEM Forms op gebruiker JEE er niet in slaagt op AEM Forms op OSGi zij &#x200B;](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html) aan te melden.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -74,13 +74,13 @@ Gebruik geen onderstrepingstekens (_) in canonieke namen, bijvoorbeeld `sample_u
 
 **Landinstelling:** de scène van ISO van de Gebruiker
 
-**Bedrijfs Sleutel van de Kalender:** laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [ Toevoegend domeinen ](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Bedrijfs Sleutel van de Kalender:** laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [&#x200B; Toevoegend domeinen &#x200B;](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een agenda voor het bedrijf in de formulierwerkstroom.
 
 Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP. Gebruikersbeheer synchroniseert gebruikersgegevens uit de map met de gebruikersbeheerdatabase. Met deze functie kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Neem bijvoorbeeld een scenario waarin elk gebruikersrecord in uw map een landveld bevat en u bedrijfsplannen wilt toewijzen op basis van het land waar de gebruiker zich bevindt. In dit geval geeft u de naam van het landveld op als de waarde voor de instelling Key Business Calendar. Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het landveld in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow.
 
-Voor extra informatie over bedrijfscalendars, met inbegrip van hoe te om bedrijfskalendersleutels aan bedrijfscalendars in kaart te brengen, zie [ Vormend Bedrijfscalendars ](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
+Voor extra informatie over bedrijfscalendars, met inbegrip van hoe te om bedrijfskalendersleutels aan bedrijfscalendars in kaart te brengen, zie [&#x200B; Vormend Bedrijfscalendars &#x200B;](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
 Beperk de naam tot minder dan 53 tekens. Een kortere naam helpt problemen verhinderen tonend de bedrijfskalendersleutel in de pagina&#39;s van het Beheer van het Proces in beleidsconsole.
 
@@ -96,7 +96,7 @@ Wanneer u SQL Server als uw database gebruikt, kunt u geen gebruikers-id maken d
 
 Wanneer u MySQL gebruikt, kan de gebruikersnaam uitgebreide tekens bevatten. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, zoals abcde en âbcdè, worden deze als hetzelfde beschouwd. Als bij het synchroniseren bijvoorbeeld een nieuwe gebruiker aan de database is toegevoegd, wordt een vergelijking gemaakt om te controleren of een gebruiker met dezelfde gebruikersnaam in de database aanwezig is. Als gebruiker *abcde* in het gegevensbestand bestaat wanneer de nieuwe gebruiker *âbcdè* wordt toegevoegd, kan de vergelijking niet tussen de twee namen onderscheiden. Aangenomen wordt dat de gebruiker in de database bestaat en dat de nieuwe gebruiker wordt genegeerd en niet toegevoegd.
 
-Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taakonderzoeken keert geen resultaten voor die gebruikersnamen terug. (Zie [ Werkend met taken ](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taakonderzoeken keert geen resultaten voor die gebruikersnamen terug. (Zie [&#x200B; Werkend met taken &#x200B;](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
 **Wachtwoord en Bevestig Wachtwoord:** Wachtwoord dat de gebruiker aan login gebruikt. Het moet minimaal acht tekens hebben. Een wachtwoord is niet vereist voor een gebruiker die deel uitmaakt van een hybride domein.
 
@@ -128,7 +128,7 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]** .
 
 1. Klik op de gebruiker die u wilt bewerken.
-1. Voor een gebruiker die deel uitmaakt van een lokaal of hybride domein, bewerkt u op het tabblad **[!UICONTROL Detail]** de **[!UICONTROL General Settings]** en **[!UICONTROL Login Settings]** en klikt u op **[!UICONTROL Save]** . Voor details over de montages, zie [ montages van de Gebruiker ](adding-configuring-users.md#user-settings). U kunt de algemene instellingen en aanmeldingsinstellingen niet bewerken voor een gebruiker die tot een ondernemingsdomein behoort.
+1. Voor een gebruiker die deel uitmaakt van een lokaal of hybride domein, bewerkt u op het tabblad **[!UICONTROL Detail]** de **[!UICONTROL General Settings]** en **[!UICONTROL Login Settings]** en klikt u op **[!UICONTROL Save]** . Voor details over de montages, zie [&#x200B; montages van de Gebruiker &#x200B;](adding-configuring-users.md#user-settings). U kunt de algemene instellingen en aanmeldingsinstellingen niet bewerken voor een gebruiker die tot een ondernemingsdomein behoort.
 1. Als u de groepsinstellingen voor de gebruiker wilt bewerken, klikt u op het tabblad **[!UICONTROL Group Membership]** en voert u de volgende taken uit:
 
    * Klik op **[!UICONTROL Find Group]** en voer de zoekinformatie in.
@@ -176,4 +176,4 @@ Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Voor details op hoe te om de fout behandelende pagina aan te passen, zie [ Aanpassende Pagina&#39;s die door de Handler van de Fout ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=nl-NL) in de documentatie van Adobe Experience Manager worden getoond.
+Voor details op hoe te om de fout behandelende pagina aan te passen, zie [&#x200B; Aanpassende Pagina&#39;s die door de Handler van de Fout &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=nl-NL) in de documentatie van Adobe Experience Manager worden getoond.

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit artikel gaat over het configureren van indexen in AEM 6. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Dit artikel gaat over het configureren van indexen in AEM 6. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [&#x200B; Beste praktijken voor Vragen en het Indexeren &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Inleiding {#introduction}
 
@@ -54,7 +54,7 @@ De **Traversal Index** wordt gebruikt als geen andere indexeerder beschikbaar is
 
 Als de veelvoudige indexeerders voor een vraag beschikbaar zijn, schat elke beschikbare indexeerder de kosten om de vraag uit te voeren. Oak kiest vervolgens de index met de laagste geschatte kosten.
 
-![ chlimage_1-148 ](assets/chlimage_1-148.png)
+![&#x200B; chlimage_1-148 &#x200B;](assets/chlimage_1-148.png)
 
 Het bovenstaande diagram is een weergave op hoog niveau van het mechanisme voor het uitvoeren van query&#39;s van Apache Oak.
 
@@ -66,7 +66,7 @@ Daarna, wordt elke index geraadpleegd om de kosten voor de vraag te schatten. Zo
 
 >[!NOTE]
 >
->Voor een grote opslagplaats is het bouwen van een index een tijdrovende bewerking. Dit geldt zowel voor het eerste ontwerp van een index als voor het opnieuw indexeren (het opnieuw samenstellen van een index nadat de definitie is gewijzigd). Zie ook [ Indexen van Oak van het Oplossen van problemen ](/help/sites-deploying/troubleshooting-oak-indexes.md) en [ Preventing Trage het opnieuw indexeren ](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Voor een grote opslagplaats is het bouwen van een index een tijdrovende bewerking. Dit geldt zowel voor het eerste ontwerp van een index als voor het opnieuw indexeren (het opnieuw samenstellen van een index nadat de definitie is gewijzigd). Zie ook [&#x200B; Indexen van Oak van het Oplossen van problemen &#x200B;](/help/sites-deploying/troubleshooting-oak-indexes.md) en [&#x200B; Preventing Trage het opnieuw indexeren &#x200B;](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Als herindexering nodig is in grote opslagruimten, met name bij gebruik van MongoDB en voor full-text indexen, kunt u de tekst vooraf extraheren en eekuitvoering gebruiken om de eerste index te genereren en opnieuw te indexeren.
 
@@ -103,7 +103,7 @@ De index van het Bezit heeft de volgende configuratieopties:
 
 ### De geordende index {#the-ordered-index}
 
-De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. De indexen van dit type moeten met de [ Index van het Bezit van Lucene ](#the-lucene-property-index) worden vervangen.
+De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. De indexen van dit type moeten met de [&#x200B; Index van het Bezit van Lucene &#x200B;](#the-lucene-property-index) worden vervangen.
 
 ### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
@@ -261,7 +261,7 @@ Voeg de volgende eigenschappen toe wanneer het knooppunt is gemaakt:
 
 >[!NOTE]
 >
->Voor specifiekere informatie over de Index van het Bezit van Lucene, zie [ Apache Jackrabbit Oak Lucene documentatiepagina ](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Voor specifiekere informatie over de Index van het Bezit van Lucene, zie [&#x200B; Apache Jackrabbit Oak Lucene documentatiepagina &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Luceenanalysatoren {#lucene-analyzers}
 
@@ -273,7 +273,7 @@ De analysatoren kunnen worden geconfigureerd via het knooppunt `analyzers` (van 
 
 De standaardanalysator voor een index wordt gevormd in het `default` kind van de analysetknoop.
 
-![ chlimage_1-149 ](assets/chlimage_1-149.png)
+![&#x200B; chlimage_1-149 &#x200B;](assets/chlimage_1-149.png)
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
 
 #### Analysatoren maken door middel van compositie {#creating-analyzers-via-composition}
 
-Analyzers kunnen ook worden samengesteld op basis van `Tokenizers` , `TokenFilters` en `CharFilters` . U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde worden toegepast. Zie ook [ https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analyzers kunnen ook worden samengesteld op basis van `Tokenizers` , `TokenFilters` en `CharFilters` . U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde worden toegepast. Zie ook [&#x200B; https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Bekijk deze knooppuntstructuur als voorbeeld:
 
@@ -374,7 +374,7 @@ Het kan worden gevormd om als verre server met de instantie van AEM te werken.
 
 AEM kan ook worden geconfigureerd voor een externe Solr-serverinstantie:
 
-1. Download en extraheer de nieuwste versie van Solr. Voor meer informatie over hoe te om dit te doen, zie de [ documentatie van de Installatie van Apache Solr ](https://solr.apache.org/guide/6_6/installing-solr.html).
+1. Download en extraheer de nieuwste versie van Solr. Voor meer informatie over hoe te om dit te doen, zie de [&#x200B; documentatie van de Installatie van Apache Solr &#x200B;](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
 
    * Voor de eerste gedeelde map maakt u de map:
@@ -402,7 +402,7 @@ AEM kan ook worden geconfigureerd voor een externe Solr-serverinstantie:
 
    >[!NOTE]
    >
-   >Voor meer info over de configuratie van Solr en ZooKeeper, raadpleeg de [ documentatie van de Configuratie van Solr ](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) en [ ZooKeeper die Begonnen Gids ](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html) worden.
+   >Voor meer info over de configuratie van Solr en ZooKeeper, raadpleeg de [&#x200B; documentatie van de Configuratie van Solr &#x200B;](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) en [&#x200B; ZooKeeper die Begonnen Gids &#x200B;](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html) worden.
 
 1. Begin eerste shard met steun ZooKeeper door naar `aemsolr1\node1` te gaan en het volgende bevel in werking te stellen:
 
@@ -452,7 +452,7 @@ AEM 6.1 integreert ook twee indexeringshulpmiddelen aanwezig in AEM 6.0 als deel
 
 U kunt hen nu bereiken door naar **Hulpmiddelen te gaan - Verrichtingen - Dashboard - Diagnose** van het Welkome scherm van AEM.
 
-Voor meer informatie over hoe te om hen te gebruiken, zie de [ documentatie van het Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md).
+Voor meer informatie over hoe te om hen te gebruiken, zie de [&#x200B; documentatie van het Dashboard van Verrichtingen &#x200B;](/help/sites-administering/operations-dashboard.md).
 
 #### Eigenschapindexen maken met OSGi {#creating-property-indexes-via-osgi}
 
@@ -460,7 +460,7 @@ Het ACS-gemeenschappelijke pakket stelt ook configuraties OSGi bloot die kunnen 
 
 U kunt tot het van de Console van het Web toegang hebben door naar &quot;**te zoeken verzeker de Index van het Bezit van Oak**&quot;.
 
-![ chlimage_1-150 ](assets/chlimage_1-150.png)
+![&#x200B; chlimage_1-150 &#x200B;](assets/chlimage_1-150.png)
 
 ### Problemen met indexering oplossen {#troubleshooting-indexing-issues}
 
@@ -470,7 +470,7 @@ In dit deel wordt een aantal aanbevelingen gedaan over wat er moet gebeuren om d
 
 #### Foutopsporingsinfo voorbereiden voor analyse {#preparing-debugging-info-for-analysis}
 
-De gemakkelijkste manier om de vereiste informatie voor de vraag te krijgen die in werking wordt gesteld is als [ verklaart het hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query). Dit laat u de nauwkeurige informatie verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
+De gemakkelijkste manier om de vereiste informatie voor de vraag te krijgen die in werking wordt gesteld is als [&#x200B; verklaart het hulpmiddel van de Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query). Dit laat u de nauwkeurige informatie verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
 
 Als dit om welke reden dan ook niet mogelijk is, kunt u de indexerende logboeken in één enkel dossier verzamelen en het gebruiken om uw bepaald probleem problemen op te lossen.
 

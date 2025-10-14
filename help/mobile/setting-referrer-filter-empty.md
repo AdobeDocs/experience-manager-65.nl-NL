@@ -24,6 +24,6 @@ Als u wilt dat de Adobe Experience Manager (AEM) Mobile Application Viewer apps 
 
 Als u niet van plan bent de toepassingsviewer te gebruiken om toepassingen in ontwikkelings- en faseringsstaten te bekijken, hoeft u de standaardinstelling van het referentiefilter niet te wijzigen.
 
-Binnen uw lopende instantie van de Auteur van AEM, navigeer aan: [ http://localhost:4502/system/console/configMgr ](http://localhost:4502/system/console/configMgr) en onderzoek naar &quot;de Filter van de Verwijzer van de Verwijzing van Apache&quot;. Klik om het referentiefilter te bewerken en schakel het selectievakje &#39;Lege toestaan&#39; in (zie de afbeelding hieronder). Klik vervolgens op de knop Opslaan en sluit de browserpagina.
+Binnen uw lopende instantie van de Auteur van AEM, navigeer aan: [&#x200B; http://localhost:4502/system/console/configMgr &#x200B;](http://localhost:4502/system/console/configMgr) en onderzoek naar &quot;de Filter van de Verwijzer van de Verwijzing van Apache&quot;. Klik om het referentiefilter te bewerken en schakel het selectievakje &#39;Lege toestaan&#39; in (zie de afbeelding hieronder). Klik vervolgens op de knop Opslaan en sluit de browserpagina.
 
-![ de montages van de Filter van de Verwijzer ](assets/chlimage_1-106.png)
+![&#x200B; de montages van de Filter van de Verwijzer &#x200B;](assets/chlimage_1-106.png)

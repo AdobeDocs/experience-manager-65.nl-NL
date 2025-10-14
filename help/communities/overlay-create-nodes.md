@@ -24,7 +24,7 @@ Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal 
 >
 >De inhoud van de map /libs wordt nooit bewerkt, omdat bij een nieuwe installatie of upgrade de map /libs kan worden verwijderd of vervangen terwijl de inhoud van de map /apps ongewijzigd blijft.
 
-Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md) op een auteursinstantie, begin door een weg in de /apps omslag te creëren die aan de weg aan de beklede componenten in de /libs omslag identiek is.
+Gebruikend [&#x200B; CRXDE Lite &#x200B;](../../help/sites-developing/developing-with-crxde-lite.md) op een auteursinstantie, begin door een weg in de /apps omslag te creëren die aan de weg aan de beklede componenten in de /libs omslag identiek is.
 
 Het pad dat wordt gedupliceerd is:
 
@@ -32,7 +32,7 @@ Het pad dat wordt gedupliceerd is:
 
 Sommige knooppunten in het pad zijn mappen en andere componenten.
 
-1. Blader naar [ http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
+1. Blader naar [&#x200B; http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. Maken `/apps/social` (als deze nog niet bestaat)
    * Knooppunt `/apps` selecteren
    * **[!UICONTROL Create > Folder]**
@@ -92,4 +92,4 @@ De eigen `Type` eigenschap `sling:resourceType` (eigenschap) van de overlay moet
 1. Groen selecteren `[+] Add`
    * Selecteren **[!UICONTROL Save All]**
 
-![ creeer-knopen ](assets/create-nodes.png)
+![&#x200B; creeer-knopen &#x200B;](assets/create-nodes.png)

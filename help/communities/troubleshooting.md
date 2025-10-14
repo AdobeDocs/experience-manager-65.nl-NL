@@ -51,7 +51,7 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 
 De fout is anders bij Auteur en Publish. Op Auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. In Publish wordt de fout op de pagina gegenereerd.
 
-Zie [ com.day.cq.commons.date.RelativeTimeFormat ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie [&#x200B; com.day.cq.commons.date.RelativeTimeFormat &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
 ## Vaak voorkomende problemen {#common-concerns}
 
@@ -61,7 +61,7 @@ Tijdens het opstarten (niet de eerste - maar elke daarna) kan de volgende waarsc
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Deze waarschuwing kan veilig worden genegeerd aangezien `jknack.handlebars.Handlebars`, door [ SCF ](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut komt. Bij opstarten, wordt het vervangen met een AEM-specifieke [ i18n helper ](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd aangezien `jknack.handlebars.Handlebars`, door [&#x200B; SCF &#x200B;](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut komt. Bij opstarten, wordt het vervangen met een AEM-specifieke [&#x200B; i18n helper &#x200B;](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij aanmelden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

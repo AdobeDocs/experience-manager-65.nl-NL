@@ -43,7 +43,7 @@ Dit pakket bevat cloudconfiguratie die de volgende platformversies ondersteunt:
 
 ### Wat bevat dit pakket {#what-does-this-package-include}
 
-Het [ AEM Forms wij.Gov demopakket ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**wij-gov-forms.pkg.all-&lt;version>.zip**) komt als pakket dat verscheidene andere subpakketten en de diensten omvat. Het pakket bevat de volgende modules:
+Het [&#x200B; AEM Forms wij.Gov demopakket &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**wij-gov-forms.pkg.all-&lt;version>.zip**) komt als pakket dat verscheidene andere subpakketten en de diensten omvat. Het pakket bevat de volgende modules:
 
 * **wij-gov-forms.pkg.all-&lt;version>.zip** - *Volledige manifestatiepakket*
 
@@ -82,16 +82,16 @@ Deze sectie bevat informatie over het installeren van het demopakket.
 
 ### Van softwaredistributie {#from-software-distribution}
 
-1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+1. Open [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de sectie **[!UICONTROL Filters]** :
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer **wij-gov-forms.pkg.all-&lt;version>.zip** pakketnaam, selecteer **[!UICONTROL Accept EULA Terms]**, en selecteer **[!UICONTROL Download]**.
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   ![ wij gaan vormenpakket ](assets/wegov_forms_package.jpg)
+   ![&#x200B; wij gaan vormenpakket &#x200B;](assets/wegov_forms_package.jpg)
 
 1. De installatie kan worden voltooid.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* om ervoor te zorgen dat de installatie succesvol was.
@@ -102,13 +102,13 @@ Deze sectie bevat informatie over het installeren van het demopakket.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*.
 1. Selecteer de optie Pakket uploaden.
 
-   ![ uploadt de Optie van het Pakket ](assets/upload_package.jpg)
+   ![&#x200B; uploadt de Optie van het Pakket &#x200B;](assets/upload_package.jpg)
 
 1. Gebruik de bestandsbrowser om naar het gedownloade ZIP-bestand te navigeren en dit te selecteren.
 1. Klik op Openen om te uploaden.
 1. Nadat u het pakket hebt geüpload, selecteert u de optie Installeren om het pakket te installeren.
 
-   ![ installeer het pakket van WebGov Forms ](assets/wegov_forms_package-1.jpg)
+   ![&#x200B; installeer het pakket van WebGov Forms &#x200B;](assets/wegov_forms_package-1.jpg)
 
 1. De installatie kan worden voltooid.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* om ervoor te zorgen dat de installatie succesvol was.
@@ -122,7 +122,7 @@ Voer de stappen in 4.1 en 4.2 uit om een nieuwe pakketversie te installeren. U k
 1. Selecteer de optie Meer.
 1. Selecteer in het vervolgkeuzemenu de optie Verwijderen.
 
-   ![ Uninstall WebGov pakket ](assets/uninstall_wegov_forms_package.jpg)
+   ![&#x200B; Uninstall WebGov pakket &#x200B;](assets/uninstall_wegov_forms_package.jpg)
 
 1. Selecteer bij bevestiging nogmaals &quot;Verwijderen&quot; en sta het verwijderingsproces toe.
 
@@ -141,7 +141,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 1. Type in **wegov** op &quot;Uitgezochte Gebruiker of het gebied van de Groep&quot;.
 1. Selecteer van dropdown &quot;**Wij.Gov de Gebruikers van Forms**&quot;.
 
-   ![ het Uitgeven groepsmontages voor werkschemagebruikers ](assets/edit_group_settings.jpg)
+   ![&#x200B; het Uitgeven groepsmontages voor werkschemagebruikers &#x200B;](assets/edit_group_settings.jpg)
 
 1. Klik op Opslaan en sluiten op de menubalk.
 1. Herhaal stappen 2-7 door &quot;**te zoeken analyseert**&quot;, die de &quot;**Beheerders van Analytics**&quot;groep selecteren, en toevoegend &quot;**Wij.Gov Forms Gebruikers**&quot;groep als lid.
@@ -150,12 +150,12 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 
 ### Configuratie van e-mailserver {#email-server-configuration}
 
-1. De opstellingsdocumentatie van het overzicht [ Vormend E-mailbericht ](/help/sites-administering/notification.md)
+1. De opstellingsdocumentatie van het overzicht [&#x200B; Vormend E-mailbericht &#x200B;](/help/sites-administering/notification.md)
 1. Meld u aan als beheerder voor deze taak.
 1. Navigeer aan *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
 1. Bepaal en klik de **dienst van de Post van 0&rbrace; Dag CQ &lbrace;om te vormen.**
 
-   ![ vorm de Dienst van de Post van de Dag CQ ](assets/day_cq_mail_service.jpg)
+   ![&#x200B; vorm de Dienst van de Post van de Dag CQ &#x200B;](assets/day_cq_mail_service.jpg)
 
 1. Vorm de dienst om met de server SMTP van uw keus te verbinden:
 
@@ -164,7 +164,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
    1. **Gebruiker SMTP:** demo@ &lt;company name> .com
    1. **&quot;Van&quot;Adres**: aemformsdemo@adobe.com
 
-   ![ vorm SMTP ](assets/configure_smtp.jpg)
+   ![&#x200B; vorm SMTP &#x200B;](assets/configure_smtp.jpg)
 
 1. Klik &quot;sparen&quot;om de configuratie te bewaren.
 
@@ -202,7 +202,7 @@ Deze sectie bevat informatie en instructies over de Adobe Sign Cloud Configurati
 
 #### Cloud-configuratie {#cloud-configuration}
 
-1. Controleer de voorwaarden. Zie [ AEM SSL Configuratie ](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) voor vereiste SSL configuratie.
+1. Controleer de voorwaarden. Zie [&#x200B; AEM SSL Configuratie &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) voor vereiste SSL configuratie.
 1. Navigeren naar:
 
    *https://&lt;aemserver>:&lt;port>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
@@ -214,7 +214,7 @@ Deze sectie bevat informatie en instructies over de Adobe Sign Cloud Configurati
 1. Selecteer de configuratie &quot;We.gov Adobe Sign&quot;.
 1. Klik op &quot;Eigenschappen&quot;.
 1. Navigeer naar het tabblad &quot;Instellingen&quot;.
-1. Ga Auth URL bijvoorbeeld in: [ https://secure.na1.echosign.com/public/oauth ](https://secure.na1.echosign.com/public/oauth)
+1. Ga Auth URL bijvoorbeeld in: [&#x200B; https://secure.na1.echosign.com/public/oauth &#x200B;](https://secure.na1.echosign.com/public/oauth)
 1. Verstrek gevormde identiteitskaart van de Cliënt en Geheime cliënt van de gevormde instantie van Adobe Sign.
 1. Klik op &quot;Verbinding maken met Adobe Sign&quot;.
 1. Klik na een geslaagde verbinding op &quot;Opslaan en sluiten&quot; om de integratie te voltooien.
@@ -226,7 +226,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 **Verwijzingen:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [ het Vormen Dynamica Microsoft® voor AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=nl-NL)
+1. [&#x200B; het Vormen Dynamica Microsoft® voor AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=nl-NL)
 
 #### MS® Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
@@ -239,20 +239,20 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 1. Selecteer de configuratie van de &quot;Microsoft® Dynamics OData Cloud Service&quot;.
 1. Klik op &quot;Eigenschappen&quot;.
 
-   ![ Eigenschappen voor de Cloud Service van Microsoft OData ](assets/properties_odata_cloud_service.jpg)
+   ![&#x200B; Eigenschappen voor de Cloud Service van Microsoft OData &#x200B;](assets/properties_odata_cloud_service.jpg)
 
 1. Navigeer naar het tabblad &#39;Verificatie-instellingen&#39;.
 1. Voer de volgende gegevens in:
 
    1. **Wortel van de Dienst:** bijvoorbeeld, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Type van Authentificatie:** OAuth 2.0
-   1. **de Montages van de Authentificatie** (zie [ MS® de montages van de de wolkenconfiguratie van de Dynamica ](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) om deze informatie te verzamelen):
+   1. **de Montages van de Authentificatie** (zie [&#x200B; MS® de montages van de de wolkenconfiguratie van de Dynamica &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) om deze informatie te verzamelen):
 
       1. Client-id - ook wel toepassings-id genoemd
       1. Clientgeheim
-      1. OAuth URL - bijvoorbeeld, [ https://login.microsoftonline.com/common/oauth2/authorize ](https://login.microsoftonline.com/common/oauth2/authorize)
-      1. Vernieuw Symbolische URL - bijvoorbeeld, [ https://login.windows.net/common/oauth2/token ](https://login.windows.net/common/oauth2/token)
-      1. Toegang symbolische URL - bijvoorbeeld, [ https://login.windows.net/common/oauth2/token ](https://login.windows.net/common/oauth2/token)
+      1. OAuth URL - bijvoorbeeld, [&#x200B; https://login.microsoftonline.com/common/oauth2/authorize &#x200B;](https://login.microsoftonline.com/common/oauth2/authorize)
+      1. Vernieuw Symbolische URL - bijvoorbeeld, [&#x200B; https://login.windows.net/common/oauth2/token &#x200B;](https://login.windows.net/common/oauth2/token)
+      1. Toegang symbolische URL - bijvoorbeeld, [&#x200B; https://login.windows.net/common/oauth2/token &#x200B;](https://login.windows.net/common/oauth2/token)
       1. Het Toepassingsgebied van de vergunning - **openid**
       1. De Kopbal van de authentificatie - **Drager van de Vergunning**
       1. Resource - bijvoorbeeld `https://msdynamicsserver.api.crm3.dynamics.com`
@@ -265,7 +265,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 
 De stappen die in dit gedeelte worden beschreven, zijn inbegrepen om u te helpen bij het zoeken naar de client-id, het clientgeheim en details van uw MS® Dynamics Cloud-instantie.
 
-1. Navigeer aan [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
+1. Navigeer aan [&#x200B; https://portal.azure.com/ &#x200B;](https://portal.azure.com/) en login.
 1. Selecteer Alle services in het linkermenu.
 1. Zoek of navigeer naar &quot;Toepassingsregistratie&quot;.
 1. Maak of selecteer een bestaande toepassingsregistratie.
@@ -299,12 +299,12 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
 1. Selecteer &quot;We.gov Microsoft® Dynamics CRM FDM&quot; en selecteer &quot;Eigenschappen&quot;.
 
-   ![ Eigenschappen van Dynamica CRM FDM ](assets/properties_dynamics_crm.jpg)
+   ![&#x200B; Eigenschappen van Dynamica CRM FDM &#x200B;](assets/properties_dynamics_crm.jpg)
 
 1. Navigeer naar het tabblad &quot;Source bijwerken&quot;.
 1. Zorg ervoor dat de &quot;Context-Aware Configuratie&quot;aan &quot;/conf/wij-gov&quot;wordt geplaatst en dat de gevormde gegevensbron &quot;ms-dynamics-odata-cloud-dienst is&quot;.
 
-   ![ Gevormde gegevensbron ](assets/configured_data_source.jpg)
+   ![&#x200B; Gevormde gegevensbron &#x200B;](assets/configured_data_source.jpg)
 
 1. Bewerk het formuliergegevensmodel.
 
@@ -330,17 +330,17 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
 1. Selecteer de **We.gov Inschrijving FDM** en selecteer **Eigenschappen**.
 
-   ![ Eigenschappen van Dynamica CRM FDM ](assets/aftia-enrollment-fdm.jpg)
+   ![&#x200B; Eigenschappen van Dynamica CRM FDM &#x200B;](assets/aftia-enrollment-fdm.jpg)
 
 1. Navigeer aan de **Update Source** tabel.
 
 1. Zorg ervoor dat de **context-bewuste Configuratie** aan `/conf/we-gov` wordt geplaatst en dat de gevormde gegevensbron **Wij.Gov Derby DS** is.
 
-   ![ Eigenschappen van Dynamica CRM FDM ](assets/aftia-update-data-source.jpg)
+   ![&#x200B; Eigenschappen van Dynamica CRM FDM &#x200B;](assets/aftia-update-data-source.jpg)
 
 1. Klik **sparen en Sluiten**.
 
-1. [ Test de diensten ](work-with-form-data-model.md#test-data-model-objects-and-services) om ervoor te zorgen zij met succes met de gevormde Gegevens Source verbinden
+1. [&#x200B; Test de diensten &#x200B;](work-with-form-data-model.md#test-data-model-objects-and-services) om ervoor te zorgen zij met succes met de gevormde Gegevens Source verbinden
 
    * Om de verbinding te testen, selecteer **HOMEMORTGAGEACCOUNT** en geef het de dienst krijgen. Test de dienst en de systeembeheerders kunnen gegevens zien die worden teruggewonnen.
 
@@ -368,13 +368,13 @@ Dit pakket wordt vooraf geconfigureerd voor verbinding met Adobe Analytics. De s
 1. Zoek de sectie Adobe Analytics en selecteer de koppeling &quot;Configuraties tonen&quot;.
 1. Selecteer de configuratie &quot;We.Gov Adobe Analytics (Analytics Configuration)&quot;.
 
-   ![ de wolkendienstconfiguratie van de Analyse ](assets/analytics_config.jpg)
+   ![&#x200B; de wolkendienstconfiguratie van de Analyse &#x200B;](assets/analytics_config.jpg)
 
 1. Klik op de knop Bewerken om de Adobe Analytics-configuratie bij te werken (u moet het Gedeelde geheim opgeven). Klik op &quot;Verbinden met Analytics&quot; om verbinding te maken en op &quot;OK&quot; om de verbinding te voltooien.
 
-   ![ Wij.Gov Adobe Analytics ](assets/wegov_adobe_analytics.jpg)
+   ![&#x200B; Wij.Gov Adobe Analytics &#x200B;](assets/wegov_adobe_analytics.jpg)
 
-1. Van de zelfde pagina, klik &quot;wij.Gov Adobe Analytics Kader (het Kader van Analytics)&quot;als u wenst om de kaderconfiguraties (zie [ toelaten AEM authoring ](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) toe te laten om Authoring toe te laten) bij te werken.
+1. Van de zelfde pagina, klik &quot;wij.Gov Adobe Analytics Kader (het Kader van Analytics)&quot;als u wenst om de kaderconfiguraties (zie [&#x200B; toelaten AEM authoring &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) toe te laten om Authoring toe te laten) bij te werken.
 
 #### Adobe Analytics Locating User Credentials {#analytics-locating-user-credentials}
 
@@ -383,14 +383,14 @@ Als u de gebruikersgegevens van een Adobe Analytics-account wilt zoeken, moet de
 1. Navigeer naar de Adobe Experience Cloud-portal.
    * Aanmelden met uw beheerdersreferenties
 1. Selecteer het Adobe Analytics-pictogram in het hoofddashboard.
-   ![ Snelle Toegang ](assets/aftia-quick-access.jpg)
+   ![&#x200B; Snelle Toegang &#x200B;](assets/aftia-quick-access.jpg)
 1. Navigeer naar het tabblad Beheer en selecteer de optie Gebruikersbeheer (Verouderd)
-   ![ Rapporten ](assets/aftia-reports.jpg)
+   ![&#x200B; Rapporten &#x200B;](assets/aftia-reports.jpg)
 1. Selecteer de **Gebruikers** tabel.
-   ![ Gebruikersbeheer ](assets/aftia-user-management.jpg)
+   ![&#x200B; Gebruikersbeheer &#x200B;](assets/aftia-user-management.jpg)
 1. Selecteer de gewenste gebruiker in de lijst met gebruikers.
 1. Blader naar de onderkant van de pagina en de verificatiegegevens van de gebruikers worden onder aan de pagina weergegeven.
-   ![ beheert Toegang ](assets/aftia-admin-user-access.jpg)
+   ![&#x200B; beheert Toegang &#x200B;](assets/aftia-admin-user-access.jpg)
 1. De gebruikersbenaming en de gedeelde geheime informatie verschijnen op de rechterkant van de toestemmingendoos.
 1. De gebruikersnaam heeft een dubbele punt binnen de naam, alle informatie op de linkerzijde van de dubbele punt is de gebruikersbenaming, en alle informatie op de rechterkant van de dubbele punt zal de bedrijfsnaam zijn.
    * Hier is een voorbeeld van dat: *gebruikersbenaming: bedrijfsnaam*
@@ -409,13 +409,13 @@ Beheerders kunnen gebruikers AEM analysebevoegdheden verlenen door de volgende h
 
 1. Voeg een gebruiker aan het Profiel toe.
 
-   ![ volledige admin toegang van Analytics ](assets/aftia-full-admin-access.jpg)
+   ![&#x200B; volledige admin toegang van Analytics &#x200B;](assets/aftia-full-admin-access.jpg)
 
 1. Klik op het tabblad Machtigingen nadat de gebruiker-id is toegewezen aan het profiel.
 
 1. Controleer of alle machtigingen zijn toegewezen aan het profiel.
 
-   ![ geeft toestemmingen uit ](assets/aftia-admin-access-edit.jpg)
+   ![&#x200B; geeft toestemmingen uit &#x200B;](assets/aftia-admin-access-edit.jpg)
 
 1. Nadat de machtigingen zijn toegewezen over de mogelijkheid dat een gebruiker zich aanmeldt, kan dit enkele uren duren.
 
@@ -431,24 +431,24 @@ Beheerders kunnen gebruikers AEM analysebevoegdheden verlenen door de volgende h
 1. Selecteer de &quot;AEM Forms We.Gov-site&quot; om de sitepagina&#39;s weer te geven.
 1. Selecteer een van de sitepagina&#39;s (bijvoorbeeld Home) en kies &quot;Analytics &amp; Recommendations&quot;.
 
-   ![ Analyse en Recommendations ](assets/analytics_recommendations.jpg)
+   ![&#x200B; Analyse en Recommendations &#x200B;](assets/analytics_recommendations.jpg)
 
 1. Op deze pagina wordt opgehaalde informatie van Adobe Analytics weergegeven die betrekking heeft op de AEM Sites-pagina (opmerking: deze informatie wordt door het ontwerp periodiek vernieuwd vanuit Adobe Analytics en wordt niet in real-time weergegeven).
 
-   ![ de analyse van AEM Sites ](assets/sites_analysis.jpg)
+   ![&#x200B; de analyse van AEM Sites &#x200B;](assets/sites_analysis.jpg)
 
 1. Terug op de pagina van de paginamening (betreden in stap 3.), kunt u de informatie van de paginamening ook bekijken door de vertoning te veranderen die punten in de &quot;Mening van de Lijst&quot;plaatst te bekijken.
 1. Zoek het vervolgkeuzemenu Weergave en selecteer Lijstweergave.
 
-   ![ mening van de Lijst ](assets/list_view.jpg)
+   ![&#x200B; mening van de Lijst &#x200B;](assets/list_view.jpg)
 
 1. Selecteer in hetzelfde menu de optie Weergave-instelling en selecteer de kolommen die u wilt weergeven in de sectie Analytics.
 
-   ![ vorm kolommen ](assets/configure_columns.jpg)
+   ![&#x200B; vorm kolommen &#x200B;](assets/configure_columns.jpg)
 
 1. Klik op &quot;Bijwerken&quot; om de nieuwe kolommen beschikbaar te maken.
 
-   ![ Vertoning van nieuwe kolommen ](assets/new_columns_display.jpg)
+   ![&#x200B; Vertoning van nieuwe kolommen &#x200B;](assets/new_columns_display.jpg)
 
 #### Rapporten van Adobe Analytics-formulieren weergeven {#view-adobe-analytics-forms-reporting}
 
@@ -462,11 +462,11 @@ Beheerders kunnen gebruikers AEM analysebevoegdheden verlenen door de volgende h
 
 1. Selecteer het adaptieve formulier &quot;Inschrijvingsaanvraag voor gezondheidsvoordelen&quot; en selecteer de optie &quot;Analyserapport&quot;.
 
-   ![ Rapport van Analytics ](assets/analytics_report.jpg)
+   ![&#x200B; Rapport van Analytics &#x200B;](assets/analytics_report.jpg)
 
 1. Wacht tot de pagina is geladen en bekijk de gegevens in het Analysapport.
 
-   ![ het rapportgegevens van de Analyse van de Mening ](assets/analytics_report_data.jpg)
+   ![&#x200B; het rapportgegevens van de Analyse van de Mening &#x200B;](assets/analytics_report_data.jpg)
 
 ### Adobe Automated Forms Configuration Enablement {#automated-forms-enablement}
 
@@ -493,11 +493,11 @@ Manager linksboven > Gereedschappen > Beveiliging > Adobe IMS-configuratie.
 
 1. Voer de handelingen uit in de onderstaande afbeelding.
 
-   ![ IMS technische rekeningsconfiguratie ](assets/aftia-technical-account-configuration.jpg)
+   ![&#x200B; IMS technische rekeningsconfiguratie &#x200B;](assets/aftia-technical-account-configuration.jpg)
 
 1. Download het certificaat.
 
-1. Ga niet met de rest van de configuratie te werk - herzie sectie [ Creërend Integratie in Adobe I/O ](#create-integration-adobeio)
+1. Ga niet met de rest van de configuratie te werk - herzie sectie [&#x200B; Creërend Integratie in Adobe I/O &#x200B;](#create-integration-adobeio)
 
 >[!NOTE]
 >
@@ -507,7 +507,7 @@ Manager linksboven > Gereedschappen > Beveiliging > Adobe IMS-configuratie.
 
 Zorg ervoor u de capaciteit hebt om een integratie binnen uw domein van de Adobe tot stand te brengen als u niet uw systeembeheerder contacteert dit.
 
-1. Navigeer aan [ Adobe Developer Console ](https://developer.adobe.com/console/).
+1. Navigeer aan [&#x200B; Adobe Developer Console &#x200B;](https://developer.adobe.com/console/).
 
 1. Klik op Integratie maken.
 
@@ -525,7 +525,7 @@ Zorg ervoor u de capaciteit hebt om een integratie binnen uw domein van de Adobe
 
 1. Selecteer een profiel voor uw automatede form conversion.
 
-   ![ creeer nieuwe integratie ](assets/aftia-create-new-integration.jpg)
+   ![&#x200B; creeer nieuwe integratie &#x200B;](assets/aftia-create-new-integration.jpg)
 
 #### IMS-configuratiedeel 2 maken {#create-ims-config-part-next}
 
@@ -545,11 +545,11 @@ Nu u een integratie hebt gecreeerd laten ons de installatie van de configuratie 
 
 1. Klik op het tabblad JWT in Adobe I/O om de JWT-payload op te halen en plak deze in de payload van de IMS-configuratie.
 
-   ![ IMS configuratie van de Lading ](assets/aftia-payload-ims-config.jpg)
+   ![&#x200B; IMS configuratie van de Lading &#x200B;](assets/aftia-payload-ims-config.jpg)
 
 1. Nadat u de IMS-configuratie hebt gemaakt, klikt u op de IMS-configuratie en selecteert u Health Check. Gebruikers zien dan het volgende resultaat.
 
-   ![ Bevestiging van de Gezondheid ](assets/aftia-health-confirmation.jpg)
+   ![&#x200B; Bevestiging van de Gezondheid &#x200B;](assets/aftia-health-confirmation.jpg)
 
 #### Cloud Configuration (Wij.Gov AFC-productie) configureren {#configure-cloud-configuration}
 
@@ -565,7 +565,7 @@ Nadat de IMS-configuratie is voltooid, kunt u de wolkenconfiguratie in AEM contr
 
 1. Voer de gegevens in de onderstaande schermafbeelding in.
 
-   ![ AFC Productie ](assets/aftia-afc-production.jpg)
+   ![&#x200B; AFC Productie &#x200B;](assets/aftia-afc-production.jpg)
 
 1. Geef de configuratie een titel en een naam.
 
@@ -579,7 +579,7 @@ Nadat de IMS-configuratie is voltooid, kunt u de wolkenconfiguratie in AEM contr
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
 
 #### Cloud Configuration (wij.Finance AFC Production) configureren {#configure-cloud-configuration-wefinance}
 
@@ -595,7 +595,7 @@ Zodra de configuratie IMS volledig is, kunnen wij te werk gaan om de wolkenconfi
 
 1. Voer de gegevens in de onderstaande schermafbeelding in.
 
-   ![ Wij.Financiën AFC Productie ](assets/aftia-wefinance-afc-prod.jpg)
+   ![&#x200B; Wij.Financiën AFC Productie &#x200B;](assets/aftia-wefinance-afc-prod.jpg)
 
 1. Geef de configuratie een titel en een naam.
 
@@ -609,7 +609,7 @@ Zodra de configuratie IMS volledig is, kunnen wij te werk gaan om de wolkenconfi
 
 1. Voor deze configuratie, verlaten wij de twee checkbox waarden leeg.
 
-   * Om meer over deze opties te begrijpen, zie [ de wolkendienst ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
+   * Om meer over deze opties te begrijpen, zie [&#x200B; de wolkendienst &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=nl-NL#configure-the-cloud-service) vormen.
 
 #### De formulierconversie testen (Web.Gov-inschrijvingstoepassing) {#test-forms-conversion}
 
@@ -625,31 +625,31 @@ Wanneer de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF
 
 1. Gebruikers moeten de optie kunnen zien zoals hieronder wordt weergegeven.
 
-   ![ Omgezette adaptieve vorm ](assets/aftia-converted-adaptive-form.jpg)
+   ![&#x200B; Omgezette adaptieve vorm &#x200B;](assets/aftia-converted-adaptive-form.jpg)
 
 1. Zodra de knop is geselecteerd, krijgen gebruikers de volgende opties te zien
 
    * Zorg ervoor dat de gebruikers de {*configuratie 1} van de Productie 0&rbrace; Web.Gov selecteren*
 
-   ![ montages van de Omzetting ](assets/aftia-conversion-settings.jpg)
+   ![&#x200B; montages van de Omzetting &#x200B;](assets/aftia-conversion-settings.jpg)
 
-   ![ Geavanceerde omzettingsmontages ](assets/aftia-conversion-settings-2.jpg)
+   ![&#x200B; Geavanceerde omzettingsmontages &#x200B;](assets/aftia-conversion-settings-2.jpg)
 
 1. Selecteer de beginomzetting nadat u alle opties hebt gevormd die u wilt gebruiken.
 
 1. Wanneer het conversieproces begint, moeten gebruikers het volgende scherm zien:
 
-   ![ montages van de Omzetting ](assets/aftia-conversion-in-progress.jpg)
+   ![&#x200B; montages van de Omzetting &#x200B;](assets/aftia-conversion-in-progress.jpg)
 
 1. Wanneer de conversie is voltooid, zien gebruikers het volgende scherm:
 
-   ![ Omgezette adaptieve vorm ](assets/aftia-converted-adaptive-form-2.jpg)
+   ![&#x200B; Omgezette adaptieve vorm &#x200B;](assets/aftia-converted-adaptive-form-2.jpg)
 
    Klik de **omslag van de Output** om de geproduceerde adaptieve vorm te bekijken.
 
 #### Bekende problemen en notities {#known-issues-notes}
 
-De dienst van de Automatede form conversion omvat bepaalde [ beste praktijken, bekende complexe patronen ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=nl-NL), en [ bekende kwesties ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=nl-NL). Bekijk deze voordat je AEM Forms Automatede form conversion-service gaat gebruiken.
+De dienst van de Automatede form conversion omvat bepaalde [&#x200B; beste praktijken, bekende complexe patronen &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=nl-NL), en [&#x200B; bekende kwesties &#x200B;](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=nl-NL). Bekijk deze voordat je AEM Forms Automatede form conversion-service gaat gebruiken.
 
 1. Genereer het formulier met Aangepaste formulieren genereren zonder gegevensbindingen ingeschakeld als u het formulier na conversie aan een FDM wilt binden.
 
@@ -671,13 +671,13 @@ Deze sjablonen bevatten de sjablonen AEM Site, Adaptief formulier en Interactiev
 
 #### Stijlsysteem {#customizetemplates}
 
-Deze plaats kenmerkt ook cliënt-bibliotheken, waarvan Bootstrap 4 ( [ https://getbootstrap.com/ ](https://getbootstrap.com/)) invoert. Deze clientbibliotheek is beschikbaar op
+Deze plaats kenmerkt ook cliënt-bibliotheken, waarvan Bootstrap 4 ( [&#x200B; https://getbootstrap.com/ &#x200B;](https://getbootstrap.com/)) invoert. Deze clientbibliotheek is beschikbaar op
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/clientlibs/client-lib-base/css/bootstrap*
 
 De bewerkbare sjablonen in dit pakket zijn ook vooraf geconfigureerd met sjabloon-/paginabeleid dat de Bootstrap 4 CSS-klassen gebruikt voor paginering, opmaak enzovoort. Niet alle klassen zijn toegevoegd aan het sjabloonbeleid, maar elke klasse die door Bootstrap 4 wordt ondersteund, kan aan het beleid worden toegevoegd. Zie de pagina Aan de slag voor een lijst met beschikbare klassen:
 
-[ https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+[&#x200B; https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
 Sjablonen in dit pakket ondersteunen ook het stijlsysteem:
 
@@ -691,7 +691,7 @@ Project DAM Assets bevat ook Wij.Gov-logo&#39;s en -afbeeldingen. Deze activa zi
 
 Wanneer u de pagina- en formuliersjablonen bewerkt, kunt u de logo&#39;s van een merk bijwerken door de navigatie- en voettekstcomponenten te bewerken. Deze componenten bieden een configureerbaar merk- en logodialoogvenster dat kan worden gebruikt om logo&#39;s bij te werken:
 
-![ Logo&#39;s van het Malplaatje ](assets/template_logos.jpg)
+![&#x200B; Logo&#39;s van het Malplaatje &#x200B;](assets/template_logos.jpg)
 
 Zie Pagina-inhoud bewerken voor meer informatie:
 
@@ -709,7 +709,7 @@ Pagina&#39;s die in dit pakket zijn opgenomen, ondersteunen ook het stijlsysteem
 
 [Stijlsysteem](../../sites-authoring/style-system.md)
 
-U kunt ook [ het systeem van de de aanpassingsstijl van Malplaatjes ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) voor documentatie op gesteunde stijlen zien.
+U kunt ook [&#x200B; het systeem van de de aanpassingsstijl van Malplaatjes &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) voor documentatie op gesteunde stijlen zien.
 
 ### Aanpassing van adaptieve formulieren {#adaptive-forms-customization}
 
@@ -764,13 +764,13 @@ Nadat de pagina is geïnstalleerd, laadt u de pagina die u wilt testen in de Chr
 
 Nadat het rapport in werking wordt gesteld, kunnen de gebruikers het volgende verwachten te zien:
 
-![ het rapport van de Toegankelijkheid ](assets/aftia-accessibility.jpg)
+![&#x200B; het rapport van de Toegankelijkheid &#x200B;](assets/aftia-accessibility.jpg)
 
 Het nummer dat voor gebruikers wordt weergegeven, is de algemene toegankelijkheidsscore die ze hebben behaald. Er is ook een beschrijving van hoe dit na de score werd berekend.
 
 Als gebruikers dit willen exporteren, kunnen ze op de drie knoppen rechts van het scherm klikken en een van de andere opties selecteren die de plug-in biedt.
 
-![ het rapport van de Toegankelijkheid ](assets/aftia-accessibility-report.jpg)
+![&#x200B; het rapport van de Toegankelijkheid &#x200B;](assets/aftia-accessibility-report.jpg)
 
 ### Ultramarijnthema {#ultramarine-theme}
 
@@ -779,7 +779,7 @@ Het algemeen beschikbare Ultramarinesthema dat door de Adobe wordt onderhouden, 
 
 De Manager van het pakket, de gebruikers kunnen tot het Ultramarine thema in AEM Forms toegang hebben door aan **Forms** te navigeren > **Thema&#39;s** > **Thema&#39;s van de Verwijzing** > **Ultramarine-Toegankelijk**.
 
-![ Ultramarijnthema ](assets/aftia-ultramarine-theme.jpg)
+![&#x200B; Ultramarijnthema &#x200B;](assets/aftia-ultramarine-theme.jpg)
 
 ## Configuratieopties {#configuration-options}
 
@@ -802,10 +802,10 @@ Om hen te vormen om binnen het Werkschema worden toegelaten, moeten de gebruiker
    >
    >Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist aan opstelling een de dienstconfiguratie om met de externe gevraagde diensten te communiceren.
 
-   ![ wij gaan vormenpakket ](assets/aftia-configuration-options.jpg)
+   ![&#x200B; wij gaan vormenpakket &#x200B;](assets/aftia-configuration-options.jpg)
 
 1. Klik op Opslaan als u klaar bent om de instellingen op te slaan.
 
 ## Volgende stappen {#next-steps}
 
-Nu bent u allen klaar om de Web.Gov verwijzingsplaats te onderzoeken. Voor meer informatie over het werkschema en de stappen van de verwijzingsplaats Web.Gov, zie [ Web.Gov de analyse van de verwijzingsplaats ](../../forms/using/forms-gov-reference-site-user-demo.md).
+Nu bent u allen klaar om de Web.Gov verwijzingsplaats te onderzoeken. Voor meer informatie over het werkschema en de stappen van de verwijzingsplaats Web.Gov, zie [&#x200B; Web.Gov de analyse van de verwijzingsplaats &#x200B;](../../forms/using/forms-gov-reference-site-user-demo.md).

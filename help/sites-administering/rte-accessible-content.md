@@ -19,40 +19,40 @@ Adobe Experience Manager ondersteunt de meeste standaardtoegankelijkheidsfunctie
 
 Wanneer het ontwerpen van Web-pagina&#39;s en het toevoegen van inhoud aan de pagina&#39;s, kunnen de inhoudsontwikkelaars en de auteurs eigenschappen van RTE gebruiken om op toegankelijkheid betrekking hebbende informatie te verstrekken. Voeg bijvoorbeeld structuurinformatie toe via koppen en alinea-elementen.
 
-Om deze eigenschappen te vormen en aan te passen, [ vormen de stoppen RTE ](#configure-the-plugin-features) voor de component. Met de insteekmodule `paraformat` kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat wordt ondersteund buiten de standaard `H1` , `H2` en `H3` geboden.
+Om deze eigenschappen te vormen en aan te passen, [&#x200B; vormen de stoppen RTE &#x200B;](#configure-the-plugin-features) voor de component. Met de insteekmodule `paraformat` kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat wordt ondersteund buiten de standaard `H1` , `H2` en `H3` geboden.
 
 RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegelaten gebruikersinterface en het Klassieke gebruikersinterface. Nochtans, is de primaire component om RTE te gebruiken de **&#x200B;**&#x200B;component van de Tekst die voor beide interfaces beschikbaar is. De volgende afbeeldingen tonen de RTE met een bereik van ingeschakelde plug-ins, waaronder `paraformat` :
 
-![ component van de Tekst (RTE) op volledig-scherm-wijze in aanraking-toegelaten UI.](assets/chlimage_1-206.png)
+![&#x200B; component van de Tekst (RTE) op volledig-scherm-wijze in aanraking-toegelaten UI.](assets/chlimage_1-206.png)
 
 *Cijfer: De component van de Tekst in het aanraking-Toegelaten gebruikersinterface.*
 
-![ geef dialoog (RTE) van de tekstcomponent in klassieke UI uit.](assets/chlimage_1-207.png)
+![&#x200B; geef dialoog (RTE) van de tekstcomponent in klassieke UI uit.](assets/chlimage_1-207.png)
 
 *Cijfer: De component van de Tekst in het Klassieke gebruikersinterface.*
 
-Voor de verschillen tussen de eigenschappen RTE beschikbaar in de diverse interfaces, zie [ Insteekmodules en hun eigenschappen ](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Voor de verschillen tussen de eigenschappen RTE beschikbaar in de diverse interfaces, zie [&#x200B; Insteekmodules en hun eigenschappen &#x200B;](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 ## De insteekmodules configureren {#configure-the-plugin-features}
 
-Voor de volledige instructies om RTE te vormen, zie [ de Rijke pagina van de Redacteur van de Tekst ](/help/sites-administering/rich-text-editor.md) vormen. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
+Voor de volledige instructies om RTE te vormen, zie [&#x200B; de Rijke pagina van de Redacteur van de Tekst &#x200B;](/help/sites-administering/rich-text-editor.md) vormen. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
 
-* [ Insteekmodules en de eigenschappen ](/help/sites-administering/rich-text-editor.md#aboutplugins).
-* [ plaatsen van de Configuratie ](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
-* [ activeer een stop en vorm het eigenschapbezit ](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-* [ vormt andere functionaliteit van RTE ](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+* [&#x200B; Insteekmodules en de eigenschappen &#x200B;](/help/sites-administering/rich-text-editor.md#aboutplugins).
+* [&#x200B; plaatsen van de Configuratie &#x200B;](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+* [&#x200B; activeer een stop en vorm het eigenschapbezit &#x200B;](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+* [&#x200B; vormt andere functionaliteit van RTE &#x200B;](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
 Door een plug-in te configureren in de juiste `rtePlugins` -subvertakking in CRXDE Lite, kunt u alle of specifieke functies voor die plug-in activeren.
 
-![ CRXDE Lite die een voorbeeld rtePlugin toont.](assets/chlimage_1-208.png)
+![&#x200B; CRXDE Lite die een voorbeeld rtePlugin toont.](assets/chlimage_1-208.png)
 
 ### Voorbeeld - geef alineaopmaak op die beschikbaar is in het veld RTE-selectie {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld door:
 
-1. Afhankelijk van uw RTE, bepaal en navigeer aan de [ configuratielocatie ](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [ laat het gebied van de paragraafselectie ](/help/sites-administering/rich-text-editor.md) toe; door [ de stop te activeren ](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [ specificeer de formaten u op het de selectiegebied van Alinea ](/help/sites-administering/rich-text-editor.md) beschikbaar wilt hebben.
+1. Afhankelijk van uw RTE, bepaal en navigeer aan de [&#x200B; configuratielocatie &#x200B;](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [&#x200B; laat het gebied van de paragraafselectie &#x200B;](/help/sites-administering/rich-text-editor.md) toe; door [&#x200B; de stop te activeren &#x200B;](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [&#x200B; specificeer de formaten u op het de selectiegebied van Alinea &#x200B;](/help/sites-administering/rich-text-editor.md) beschikbaar wilt hebben.
 1. De paragraafformaten zijn dan beschikbaar aan de inhoudauteur van de selectiegebieden in RTE. Zij kunnen worden betreden:
 
    * Het pictogram voor het schuiven van alinea&#39;s gebruiken in de interface voor aanraakbediening.
@@ -62,7 +62,7 @@ Met de structuurelementen beschikbaar in RTE via de opties van het paragraafform
 
 ## De functie voor bronbewerking gebruiken {#use-of-the-source-edit-feature}
 
-In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met [ bron worden gedaan geeft ](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van RTE uit. U kunt de functie [`sourceedit` opgeven in de `misctools` plug-in ](/help/sites-administering/rich-text-editor.md#aboutplugins) .
+In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met [&#x200B; bron worden gedaan geeft &#x200B;](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van RTE uit. U kunt de functie [`sourceedit` opgeven in de `misctools` plug-in &#x200B;](/help/sites-administering/rich-text-editor.md#aboutplugins) .
 
 >[!CAUTION]
 >
@@ -103,7 +103,7 @@ RTE kan `strong` - en `em` -tags gebruiken in plaats van `b` en `i` . Voeg het v
 
 ### Stapsgewijze instructies {#step-by-step-instructions}
 
-1. Start CRXDE Lite. Bijvoorbeeld: [ http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Start CRXDE Lite. Bijvoorbeeld: [&#x200B; http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopiëren:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -198,5 +198,5 @@ RTE kan `strong` - en `em` -tags gebruiken in plaats van `b` en `i` . Voeg het v
 
 >[!MORELIKETHIS]
 >
->* [ Snelle Gids aan WCAG 2.0 ](/help/managing/qg-wcag.md)
->* [ creeer toegankelijke inhoud (WCAG 2.0 conformiteit) ](/help/sites-authoring/creating-accessible-content.md)
+>* [&#x200B; Snelle Gids aan WCAG 2.0 &#x200B;](/help/managing/qg-wcag.md)
+>* [&#x200B; creeer toegankelijke inhoud (WCAG 2.0 conformiteit) &#x200B;](/help/sites-authoring/creating-accessible-content.md)

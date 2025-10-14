@@ -18,11 +18,11 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
-![ 01-creeer-eerste-adaptief-vorm-held-beeld ](assets/01-create-first-adaptive-form-hero-image.png)
+![&#x200B; 01-creeer-eerste-adaptief-vorm-held-beeld &#x200B;](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## Inleiding {#introduction}
 
@@ -35,7 +35,7 @@ Deze zelfstudie biedt een end-to-end framework voor het maken van een adaptief f
 * Gebruik de adaptieve redacteur van de vormregel om bedrijfsregels te bouwen.
 * Test en publiceer een adaptief formulier.
 
-![ creeer-adaptief-vorm-werkschema ](assets/create-daptive-form-workflow.png)
+![&#x200B; creeer-adaptief-vorm-werkschema &#x200B;](assets/create-daptive-form-workflow.png)
 
 De reis begint met het leren van het gebruiksgeval:
 
@@ -45,19 +45,19 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!
 
 ### Vereiste {#prerequisite}
 
-* Opstelling een [ AEM auteursinstantie ](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=nl-NL#author-and-publish-installs)
-* Installeer [ toe:voegen-on van AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie.
-* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] [ MySQL JDBC gegevensbestandbestuurder ](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Opstelling een [&#x200B; AEM auteursinstantie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=nl-NL#author-and-publish-installs)
+* Installeer [&#x200B; toe:voegen-on van AEM Forms &#x200B;](../../forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie.
+* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] [&#x200B; MySQL JDBC gegevensbestandbestuurder &#x200B;](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database om het gegevensmodel van het formulier en de persistentiemogelijkheden van AEM [!DNL Forms] weer te geven.
 
-![ adaptiveformdata ](assets/adaptiveformdata.png)
+![&#x200B; adaptiveformdata &#x200B;](assets/adaptiveformdata.png)
 
 ## Stap 1: Een adaptief formulier maken {#step-create-an-adaptive-form}
 
-![ 03-create-adaptive-form-main-image_small ](assets/03-create-adaptive-form-main-image_small.png)
+![&#x200B; 03-create-adaptive-form-main-image_small &#x200B;](assets/03-create-adaptive-form-main-image_small.png)
 
-Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM [!DNL Forms] beschikt over een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Voor meer informatie over adaptieve vormen, zie [ Inleiding aan auteursadaptieve vormen ](../../forms/using/introduction-forms-authoring.md).
+Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM [!DNL Forms] beschikt over een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Voor meer informatie over adaptieve vormen, zie [&#x200B; Inleiding aan auteursadaptieve vormen &#x200B;](../../forms/using/introduction-forms-authoring.md).
 
 Doelstellingen:
 
@@ -66,11 +66,11 @@ Doelstellingen:
 * Verzendactie maken om een e-mail met formulierinhoud te verzenden.
 * Een voorbeeld bekijken en een adaptief formulier verzenden.
 
-[![ zie de Gids ](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[![&#x200B; zie de Gids &#x200B;](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
 
-![ 05-create-form-data-model-main_small ](assets/05-create-form-data-model-main_small.png)
+![&#x200B; 05-create-form-data-model-main_small &#x200B;](assets/05-create-form-data-model-main_small.png)
 
 Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief formulier gebruiken om gegevens op te halen, bij te werken, te verwijderen en aan verbonden gegevensbronnen toe te voegen.
 
@@ -82,11 +82,11 @@ Doelstellingen:
 * Configureer lees- en schrijfservices voor het model met formuliergegevens.
 * Het model van vormgegevens en de gevormde diensten van de test met testgegevens.
 
-[![ zie de Gids ](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[![&#x200B; zie de Gids &#x200B;](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Stap 3: Regels toepassen op adaptieve formuliervelden {#step-apply-rules-to-adaptive-form-fields}
 
-![ 07-apply-rules-to-adaptive-form_small ](assets/07-apply-rules-to-adaptive-form_small.png)
+![&#x200B; 07-apply-rules-to-adaptive-form_small &#x200B;](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Met adaptieve formulieren kunt u in een editor regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de nauwkeurigheid en snelheid van het invullen van formulieren gegarandeerd.
 
@@ -95,13 +95,13 @@ Doelstellingen:
 * Maak regels en pas deze toe op adaptieve formuliervelden.
 * Gebruik regels om services van het formuliergegevensmodel te activeren om de gegevens bij te werken naar de database.
 
-[![ zie de Gids ](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![&#x200B; zie de Gids &#x200B;](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Stap 4: Stijl uw adaptieve formulier {#step-style-your-adaptive-form}
 
-![ adapative-form-styling ](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![&#x200B; adapative-form-styling &#x200B;](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-De adaptieve vormen verstrekken thema&#39;s en een [ redacteur ](../../forms/using/themes.md) om thema&#39;s voor de adaptieve vormen tot stand te brengen. Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema in verschillende formulieren opnieuw gebruiken. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier. Adaptieve formulieren ondersteunen ook inline opmaak voor stijlen die specifiek zijn voor een formulier.
+De adaptieve vormen verstrekken thema&#39;s en een [&#x200B; redacteur &#x200B;](../../forms/using/themes.md) om thema&#39;s voor de adaptieve vormen tot stand te brengen. Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema in verschillende formulieren opnieuw gebruiken. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier. Adaptieve formulieren ondersteunen ook inline opmaak voor stijlen die specifiek zijn voor een formulier.
 
 Doelstellingen:
 
@@ -109,13 +109,13 @@ Doelstellingen:
 * Maak een thema voor een adaptief formulier met de themaeditor.
 * Gebruik Webben Fonts in een aangepast thema.
 
-[![ zie de Gids ](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![&#x200B; zie de Gids &#x200B;](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Stap 5: Publish uw adaptieve formulier {#step-publish-your-adaptive-form}
 
-![ 12-publish-your-adaptive-form-_small ](assets/12-publish-your-adaptive-form-_small.png)
+![&#x200B; 12-publish-your-adaptive-form-_small &#x200B;](assets/12-publish-your-adaptive-form-_small.png)
 
-U kunt adaptieve vormen als stand-alone vorm (enige paginatoepassing) publiceren, in AEM [ pagina van Plaatsen ](/help/forms/using/embed-adaptive-form-aem-sites.md) omvatten, of lijst op een AEM [!DNL Site] gebruikend [ Portaal van Forms ](../../forms/using/introduction-publishing-forms.md).
+U kunt adaptieve vormen als stand-alone vorm (enige paginatoepassing) publiceren, in AEM [&#x200B; pagina van Plaatsen &#x200B;](/help/forms/using/embed-adaptive-form-aem-sites.md) omvatten, of lijst op een AEM [!DNL Site] gebruikend [&#x200B; Portaal van Forms &#x200B;](../../forms/using/introduction-publishing-forms.md).
 
 Doelstellingen:
 
@@ -123,4 +123,4 @@ Doelstellingen:
 * Sluit het adaptieve formulier in een AEM [!DNL Sites] pagina in.
 * Sluit het adaptieve formulier in een externe webpagina in (een niet-AEM webpagina die buiten AEM wordt gehost).
 
-[![ zie de Gids ](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![&#x200B; zie de Gids &#x200B;](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

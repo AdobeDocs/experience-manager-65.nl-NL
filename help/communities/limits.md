@@ -24,7 +24,7 @@ Met de functie voor premielimieten kunt u de bijdragen van leden van de gemeensc
 
 Wanneer een lid beperkt is, leidt elke post die het toegestane aantal bijdragen overschrijdt, tot een waarschuwing dat de limiet is overschreden en de post wordt afgewezen. Het lid van de gemeenschap kan dan naar het communautaire berichtcentrum gaan en contact opnemen met een manager van de gemeenschap die de grenzen indien nodig kan verwijderen.
 
-De grenzen van de bijdrage kunnen individueel van de [ console van Leden ](members.md) worden toegelaten en/of worden gevormd om automatisch worden toegelaten wanneer de plaatsbezoekers nieuwe leden worden.
+De grenzen van de bijdrage kunnen individueel van de [&#x200B; console van Leden &#x200B;](members.md) worden toegelaten en/of worden gevormd om automatisch worden toegelaten wanneer de plaatsbezoekers nieuwe leden worden.
 
 Gebruikend de console van Leden, kunnen de bijdragegrenzen proactief voor een lid door een communautaire manager op elk ogenblik worden verwijderd, of reactief worden verwijderd wanneer een lid een bericht naar een communautaire manager verzendt die zulk een verzoek doet.
 
@@ -40,18 +40,18 @@ Om deze configuratie te bereiken OSGi:
 
 * Op de primaire uitgever:
 * Meld u aan met beheerdersrechten.
-* Heb toegang tot de [ Console van het Web ](../../help/sites-deploying/configuring-osgi.md).
+* Heb toegang tot de [&#x200B; Console van het Web &#x200B;](../../help/sites-deploying/configuring-osgi.md).
 
-   * Bijvoorbeeld, [ http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoek `AEM Communities User Generated Content Contribution Limits Configuration` .
 * Selecteer het pictogram Bewerken.
 
-![ vorm-grenzen ](assets/configure-limits.png)
+![&#x200B; vorm-grenzen &#x200B;](assets/configure-limits.png)
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-  Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het communautaire lid en kan van de [ ledenconsole ](members.md) worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een lijst van gewenste personen domeinen hebben nooit een beperking.
+  Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het communautaire lid en kan van de [&#x200B; ledenconsole &#x200B;](members.md) worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een lijst van gewenste personen domeinen hebben nooit een beperking.
 
   De optie Standaard is uitgeschakeld.
 

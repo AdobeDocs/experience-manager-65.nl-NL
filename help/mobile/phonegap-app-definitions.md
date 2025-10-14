@@ -30,13 +30,13 @@ Toepassingsdefinities zijn een manier om te bepalen welke spaties en andere conf
 
 1. Kies **Mobiel** van de Console van de AEM.
 
-   ![ chlimage_1-170 ](assets/chlimage_1-170.png)
+   ![&#x200B; chlimage_1-170 &#x200B;](assets/chlimage_1-170.png)
 
 1. Kies **Apps** van **Mobiel** en klik **creeer.**
 
    Kies **App** aan en ga details in om uw nieuwe app tot stand te brengen.
 
-   ![ chlimage_1-11 ](assets/chlimage_1-11.gif)
+   ![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.gif)
 
 ### De volgende stappen {#the-next-steps}
 

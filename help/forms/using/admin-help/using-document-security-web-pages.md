@@ -26,7 +26,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 >[!NOTE]
 >
->U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw aanmeldingsaccount voor de gebruiker. (Zie [ Toegang van de Opstelling tot documentveiligheid van cliënttoepassingen ](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw aanmeldingsaccount voor de gebruiker. (Zie [&#x200B; Toegang van de Opstelling tot documentveiligheid van cliënttoepassingen &#x200B;](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 

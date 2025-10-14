@@ -25,7 +25,7 @@ In dit document wordt het volgende beschreven:
 
 >[!NOTE]
 >
->Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [ Commons van het Aandeel van Activa ](https://adobe-marketing-cloud.github.io/asset-share-commons/). Het wordt niet officieel gesteund.
+>Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [&#x200B; Commons van het Aandeel van Activa &#x200B;](https://adobe-marketing-cloud.github.io/asset-share-commons/). Het wordt niet officieel gesteund.
 
 ## Waarom de pagina&#39;s van de Redacteur van Activa creëren en vormen? {#why-create-and-configure-asset-editor-pages}
 
@@ -208,15 +208,15 @@ Een pagina voor de Editor van middelen maken:
 1. In het **[!UICONTROL Websites]** lusje, navigeer aan de plaats waar u een pagina van de Redacteur van Activa wilt creëren en **Nieuw** klikken.
 1. Selecteer **de Redacteur van Activa van 0&rbrace; Geometrixx en klik** creeer **.** De nieuwe pagina wordt gecreeerd en de pagina is vermeld in de **Websites** tabel.
 
-![ screen_shot_2012-04-23at15858pm ](assets/screen_shot_2012-04-23at15858pm.png)
+![&#x200B; screen_shot_2012-04-23at15858pm &#x200B;](assets/screen_shot_2012-04-23at15858pm.png)
 
 De basispagina die is gemaakt met de sjabloon Geometrixx Asset Editor ziet er als volgt uit:
 
-![ assetshare5 ](assets/assetshare5.png)
+![&#x200B; assetshare5 &#x200B;](assets/assetshare5.png)
 
 Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina van de Redacteur van Activa die van het **Centrum van de Pers van de Geometrixx** wordt betreden is een aangepaste versie van een pagina die op dit malplaatje wordt gebaseerd:
 
-![ assetshare6 ](assets/assetshare6.png)
+![&#x200B; assetshare6 &#x200B;](assets/assetshare6.png)
 
 #### Een Asset Editor instellen om te openen vanaf een pagina voor het delen van elementen {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -226,13 +226,13 @@ De pagina Asset Editor instellen:
 
 1. In de pagina van het Aandeel van Activa, geeft de klik **&#x200B;**&#x200B;naast de Bouwer van de Vraag uit.
 
-![ screen_shot_2012-04-23at20123pm ](assets/screen_shot_2012-04-23at20123pm.png)
+![&#x200B; screen_shot_2012-04-23at20123pm &#x200B;](assets/screen_shot_2012-04-23at20123pm.png)
 
 1. Klik het **Algemene** lusje als het niet reeds wordt geselecteerd.
 
 1. Op het **Weg van de Redacteur van Activa** gebied, ga de weg aan de Redacteur van Activa in u de pagina van het Aandeel van Activa binnen wilt openen en **O.K.** klikken.
 
-![ screen_shot_2012-04-23at21653pm ](assets/screen_shot_2012-04-23at21653pm.png)
+![&#x200B; screen_shot_2012-04-23at21653pm &#x200B;](assets/screen_shot_2012-04-23at21653pm.png)
 
 #### Elementbewerkingscomponenten toevoegen {#adding-asset-editor-components}
 
@@ -260,89 +260,89 @@ Elementbewerkingscomponenten toevoegen:
 | **[!UICONTROL Thumbnail]** | Toont een duimnagel van het element, zijn filename, en laat u een afwisselende tekst toevoegen. U kunt ook hier de acties in de Asset Editor toevoegen. |
 | **[!UICONTROL Title]** | Hiermee geeft u de titel van het element weer, die kan worden aangepast. |
 
-![ screen_shot_2012-04-23at22743pm ](assets/screen_shot_2012-04-23at22743pm.png)
+![&#x200B; screen_shot_2012-04-23at22743pm &#x200B;](assets/screen_shot_2012-04-23at22743pm.png)
 
 #### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Het metagegevensformulier is een formulier met een begin- en eindactie. In tussen, gaat u **gebieden van de Tekst 0&rbrace; in.** Zie [ Forms ](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie bij het werken met vormen.
+Het metagegevensformulier is een formulier met een begin- en eindactie. In tussen, gaat u **gebieden van de Tekst 0&rbrace; in.** Zie [&#x200B; Forms &#x200B;](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie bij het werken met vormen.
 
 1. Creeer een beginactie door **te klikken geeft** op het gebied van het Begin van de vorm uit. U kunt desgewenst een titel voor een vak invoeren. Door gebrek, is de titel van de Doos **Meta-gegevens**. Schakel het selectievakje Clientvalidatie in als u de JavaScript-clientcode voor validatie wilt genereren.
 
-![ screen_shot_2012-04-23at22911pm ](assets/screen_shot_2012-04-23at22911pm.png)
+![&#x200B; screen_shot_2012-04-23at22911pm &#x200B;](assets/screen_shot_2012-04-23at22911pm.png)
 
 1. Creeer een actie van het Eind door **te klikken geeft** op het gebied van het Eind van de vorm uit. U kunt bijvoorbeeld een **[!UICONTROL Submit]** -optie maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. Naar keuze, kunt u de optie van het Terugstellen van de a **&#x200B;**&#x200B;toevoegen die de meta-gegevens aan zijn originele staat terugstelt.
 
-![ screen_shot_2012-04-23at23138pm ](assets/screen_shot_2012-04-23at23138pm.png)
+![&#x200B; screen_shot_2012-04-23at23138pm &#x200B;](assets/screen_shot_2012-04-23at23138pm.png)
 
 1. In tussen het **Begin van de Vorm** en het **Eind van de Vorm**, sleep de Gebieden van de Tekst van Meta-gegevens aan de vorm. Gebruikers vullen metagegevens in deze tekstvelden in. Deze kunnen worden verzonden of een andere actie uitvoeren.
 
 1. Dubbelklik de gebiedsnaam, bijvoorbeeld, **Titel** om het meta-gegevensgebied te openen en veranderingen aan te brengen. In het **Algemene** lusje van **geeft het venster van de Component** uit, bepaalt u namespace en het gebiedsetiket en type, bijvoorbeeld, `dc:title`.
 
-![ screen_shot_2012-04-23at23305pm ](assets/screen_shot_2012-04-23at23305pm.png)
+![&#x200B; screen_shot_2012-04-23at23305pm &#x200B;](assets/screen_shot_2012-04-23at23305pm.png)
 
-Zie [ Aanpassen en Uitbreidend Assets ](/help/assets/extending-assets.md) voor informatie bij het wijzigen van namespaces beschikbaar in de meta-gegevensvorm.
+Zie [&#x200B; Aanpassen en Uitbreidend Assets &#x200B;](/help/assets/extending-assets.md) voor informatie bij het wijzigen van namespaces beschikbaar in de meta-gegevensvorm.
 
 1. Klik de **Beperkingen** tabel. Hier kunt u selecteren of een veld vereist is en zo nodig beperkingen toevoegen.
 
-![ screen_shot_2012-04-23at23435pm ](assets/screen_shot_2012-04-23at23435pm.png)
+![&#x200B; screen_shot_2012-04-23at23435pm &#x200B;](assets/screen_shot_2012-04-23at23435pm.png)
 
 1. Klik de **Vertoning** tabel. Hier kunt u een nieuwe breedte en een nieuw aantal rijen voor het meta-gegevensgebied ingaan. Selecteer het **Gebied is read slechts** checkbox om gebruikers toe te laten de meta-gegevens uitgeven.
 
-![ screen_shot_2012-04-23at23446pm ](assets/screen_shot_2012-04-23at23446pm.png)
+![&#x200B; screen_shot_2012-04-23at23446pm &#x200B;](assets/screen_shot_2012-04-23at23446pm.png)
 
 Hieronder ziet u een voorbeeld van een metagegevensformulier met verschillende velden:
 
-![ meta-gegevens ](assets/chlimage_1-390.png)
+![&#x200B; meta-gegevens &#x200B;](assets/chlimage_1-390.png)
 
 Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de metagegevensvelden (als deze bewerkbaar zijn) en de eindactie uitvoeren (bijvoorbeeld door de wijzigingen te verzenden).
 
 #### Subactiva {#sub-assets}
 
-In de subcomponent Assets kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder [ belangrijkste activa ](/help/assets/assets.md#what-are-digital-assets) en sub-activa verschijnen.
+In de subcomponent Assets kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder [&#x200B; belangrijkste activa &#x200B;](/help/assets/assets.md#what-are-digital-assets) en sub-activa verschijnen.
 
 Dubbelklik op de component Sub-Assets, zodat u het dialoogvenster met subelementen kunt openen waarin u de titels voor het hoofdelement en eventuele subelementen kunt wijzigen. De standaardwaarden worden onder het desbetreffende veld weergegeven.
 
-![ screen_shot_2012-04-23at23907pm ](assets/screen_shot_2012-04-23at23907pm.png)
+![&#x200B; screen_shot_2012-04-23at23907pm &#x200B;](assets/screen_shot_2012-04-23at23907pm.png)
 
 Hier volgt een voorbeeld van een gevulde Sub-Assets-component:
 
-![ screen_shot_2012-04-23at24442pm ](assets/screen_shot_2012-04-23at24442pm.png)
+![&#x200B; screen_shot_2012-04-23at24442pm &#x200B;](assets/screen_shot_2012-04-23at24442pm.png)
 
 Als u bijvoorbeeld een subelement selecteert, ziet u hoe de component de juiste pagina weergeeft en hoe de titel van het vak verandert van Sub-Assets in Siblings.
 
-![ screen_shot_2012-04-23at24552pm ](assets/screen_shot_2012-04-23at24552pm.png)
+![&#x200B; screen_shot_2012-04-23at24552pm &#x200B;](assets/screen_shot_2012-04-23at24552pm.png)
 
 #### Tags {#tags}
 
 De component Tags is een component waarin gebruikers bestaande tags aan een element kunnen toewijzen. Hierdoor kunnen gebruikers de elementen later ordenen en ophalen. U kunt van deze component alleen-lezen maken, zodat gebruikers geen codes kunnen toevoegen, maar alleen deze weergeven.
 
-![ screen_shot_2012-04-23at25031pm ](assets/screen_shot_2012-04-23at25031pm.png)
+![&#x200B; screen_shot_2012-04-23at25031pm &#x200B;](assets/screen_shot_2012-04-23at25031pm.png)
 
 Dubbelklik op de component Tags, zodat u het dialoogvenster Codes kunt openen waarin u desgewenst de titel van Codes kunt wijzigen en waarin u de toegewezen naamruimten kunt selecteren. Schakel het selectievakje **[!UICONTROL Hide Edit]** uit om dit veld bewerkbaar te maken. Standaard zijn codes bewerkbaar.
 
-![ screen_shot_2012-04-23at24731pm ](assets/screen_shot_2012-04-23at24731pm.png)
+![&#x200B; screen_shot_2012-04-23at24731pm &#x200B;](assets/screen_shot_2012-04-23at24731pm.png)
 
 Als gebruikers tags kunnen bewerken, kunnen ze op het potlood klikken om tags toe te voegen door deze te selecteren in het vervolgkeuzemenu Codes.
 
-![ screen_shot_2012-04-23at25150pm ](assets/screen_shot_2012-04-23at25150pm.png)
+![&#x200B; screen_shot_2012-04-23at25150pm &#x200B;](assets/screen_shot_2012-04-23at25150pm.png)
 
 Hier volgt een gevulde component Tags:
 
-![ screen_shot_2012-04-23at25244pm ](assets/screen_shot_2012-04-23at25244pm.png)
+![&#x200B; screen_shot_2012-04-23at25244pm &#x200B;](assets/screen_shot_2012-04-23at25244pm.png)
 
 #### Miniatuur {#thumbnail}
 
-In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien toont de component filename, en [ acties die u ](/help/assets/assets-finder-editor.md#adding-asset-editor-actions) kunt wijzigen.
+In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien toont de component filename, en [&#x200B; acties die u &#x200B;](/help/assets/assets-finder-editor.md#adding-asset-editor-actions) kunt wijzigen.
 
-![ screen_shot_2012-04-23at25452pm ](assets/screen_shot_2012-04-23at25452pm.png)
+![&#x200B; screen_shot_2012-04-23at25452pm &#x200B;](assets/screen_shot_2012-04-23at25452pm.png)
 
 Dubbelklik op de miniatuurcomponent zodat u het dialoogvenster met miniaturen kunt openen waarin u de alt-tekst kunt wijzigen. Door gebrek, blijft de duimnagel alt tekst **klikken om** activa te downloaden.
 
-![ screen_shot_2012-04-23at25604pm ](assets/screen_shot_2012-04-23at25604pm.png)
+![&#x200B; screen_shot_2012-04-23at25604pm &#x200B;](assets/screen_shot_2012-04-23at25604pm.png)
 
 Hieronder ziet u een voorbeeld van een gevulde miniatuurcomponent:
 
-![ screen_shot_2012-04-23at34815pm ](assets/screen_shot_2012-04-23at34815pm.png)
+![&#x200B; screen_shot_2012-04-23at34815pm &#x200B;](assets/screen_shot_2012-04-23at34815pm.png)
 
 #### Titel {#title}
 
@@ -350,17 +350,17 @@ In de component Title worden de titel van het element en een beschrijving weerge
 
 Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers het bestand niet kunnen bewerken. Om het editable te maken, klik de component tweemaal en ontruim **uitgeeft knoop** checkbox. Voer bovendien een titel in voor meerdere elementen.
 
-![ screen_shot_2012-04-23at35100pm ](assets/screen_shot_2012-04-23at35100pm.png)
+![&#x200B; screen_shot_2012-04-23at35100pm &#x200B;](assets/screen_shot_2012-04-23at35100pm.png)
 
 Als de Titel kan worden uitgegeven, kunt u een titel en een beschrijving toevoegen door het Potlood te klikken om het **venster van de Eigenschappen van 0&rbrace; Activa te openen &lbrace;.** Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
 
 Wanneer het uitgeven van [!UICONTROL Title], kunnen de gebruikers de **Titel**, **Beschrijving** veranderen, en **ingaan** en **van Tijden** om de activa aan en weg te zetten.
 
-![ screen_shot_2012-04-23at35241pm ](assets/screen_shot_2012-04-23at35241pm.png)
+![&#x200B; screen_shot_2012-04-23at35241pm &#x200B;](assets/screen_shot_2012-04-23at35241pm.png)
 
 Hier volgt een voorbeeld van een gevulde component Title:
 
-![ chlimage_1-164 ](assets/chlimage_1-392.png)
+![&#x200B; chlimage_1-164 &#x200B;](assets/chlimage_1-392.png)
 
 #### Acties in de Asset Editor toevoegen {#adding-asset-editor-actions}
 
@@ -370,7 +370,7 @@ Handelingen toevoegen aan de pagina Asset Editor:
 
 1. In de pagina van de Redacteur van Activa die u wilt aanpassen, klik **Redacteur van Activa** in sidekick.
 
-![ screen_shot_2012-04-23at35515pm ](assets/screen_shot_2012-04-23at35515pm.png)
+![&#x200B; screen_shot_2012-04-23at35515pm &#x200B;](assets/screen_shot_2012-04-23at35515pm.png)
 
 De volgende acties zijn beschikbaar:
 
@@ -385,7 +385,7 @@ De volgende acties zijn beschikbaar:
 
 1. Sleep de aangewezen actie aan het **gebied van Acties** op de pagina. Er wordt een optie gemaakt waarmee de handeling wordt uitgevoerd die op de pagina wordt gesleept.
 
-![ chlimage_1-165 ](assets/chlimage_1-393.png)
+![&#x200B; chlimage_1-165 &#x200B;](assets/chlimage_1-393.png)
 
 ## Elementen bewerken via de pagina Asset Editor {#multi-editing-assets-with-the-asset-editor-page}
 

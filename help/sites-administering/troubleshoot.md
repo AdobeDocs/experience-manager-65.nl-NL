@@ -23,11 +23,11 @@ In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen b
 
 >[!NOTE]
 >
->Als u het oplossen van problemenauteurskwesties in AEM bent, zie [ het Oplossen van problemen voor Auteurs.](/help/sites-authoring/troubleshooting.md)
+>Als u het oplossen van problemenauteurskwesties in AEM bent, zie [&#x200B; het Oplossen van problemen voor Auteurs.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Wanneer het ervaren van problemen, is het ook de moeite waard het controleren van de lijst van [ Bekende Kwesties ](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
+>Wanneer het ervaren van problemen, is het ook de moeite waard het controleren van de lijst van [&#x200B; Bekende Kwesties &#x200B;](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
 
 ## Problemen oplossen voor beheerders {#troubleshooting-scenarios-for-administrators}
 
@@ -81,7 +81,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 1. Open de **Console van het Web van AEM**; bijvoorbeeld, bij `https://localhost:4502/system/console/`.
 1. Selecteer **Threads** onder **Status** tabel.
 
-![ screen_shot_2012-02-13at43925pm ](assets/screen_shot_2012-02-13at43925pm.png)
+![&#x200B; screen_shot_2012-02-13at43925pm &#x200B;](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### jstack gebruiken (opdrachtregel) {#using-jstack-command-line}
 
@@ -101,7 +101,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Zie [ hoe te om de Dumpen van de Verbinding van een JVM ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL) documentatie voor meer informatie te nemen
+Zie [&#x200B; hoe te om de Dumpen van de Verbinding van een JVM &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=nl-NL) documentatie voor meer informatie te nemen
 
 ### Controleren op niet-afgesloten JCR-sessies {#checking-for-unclosed-jcr-sessions}
 
@@ -111,7 +111,7 @@ Wanneer functionaliteit is ontwikkeld voor AEM WCM, kunnen JCR-sessies worden ge
 * U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) toont het aantal geheime voorgeheugens, elke zitting opent verscheidene geheime voorgeheugens.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
-Beginnen unclosed zittingen te analyseren, zie het artikel van de Kennisbank [ Unclosed Resolver van het Middel ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Beginnen unclosed zittingen te analyseren, zie het artikel van de Kennisbank [&#x200B; Unclosed Resolver van het Middel &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### De Adobe Experience Manager-webconsole gebruiken {#using-the-adobe-experience-manager-web-console}
 
@@ -124,4 +124,4 @@ De status van de OSGi-bundels kan ook een vroege indicatie geven van mogelijke p
    * de status van de bundels. Als er inactief of ontevreden zijn, probeert u de bundel te stoppen en opnieuw te starten. Als het probleem zich blijft voordoen, kunt u het verder onderzoeken met andere methoden.
    * of een van de bundels afhankelijkheden mist. Dergelijke details kunnen worden gezien door de individuele bundelnaam te klikken, die een verbinding is (het volgende voorbeeld heeft geen kwesties):
 
-![ screen_shot_2012-02-13at44706pm ](assets/screen_shot_2012-02-13at44706pm.png)
+![&#x200B; screen_shot_2012-02-13at44706pm &#x200B;](assets/screen_shot_2012-02-13at44706pm.png)

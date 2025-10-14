@@ -30,8 +30,8 @@ De beginselen die bij de ontwikkeling van de configuraties worden gebruikt, zijn
 * Configuraties (bijvoorbeeld eigenschappen/alinea&#39;s) worden overgeërfd van de bovenliggende elementen.
 * Verwezen van analytische knooppunten naar pad.
 * Gemakkelijk uitbreidbaar.
-* Heeft de flexibiliteit om voor complexere configuraties, zoals [ Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) te behandelen.
-* Steun voor gebiedsdelen (bijvoorbeeld, [ Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) plugins vereist een [ Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuratie).
+* Heeft de flexibiliteit om voor complexere configuraties, zoals [&#x200B; Adobe Analytics &#x200B;](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) te behandelen.
+* Steun voor gebiedsdelen (bijvoorbeeld, [&#x200B; Adobe Analytics &#x200B;](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) plugins vereist een [&#x200B; Adobe Analytics &#x200B;](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuratie).
 
 ## Structuur {#structure}
 
@@ -136,7 +136,7 @@ propertyname
 
 ### API {#api}
 
-Voor verwijzingsdocumentatie op API, zie [ com.day.cq.wcm.webservicesupport ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Voor verwijzingsdocumentatie op API, zie [&#x200B; com.day.cq.wcm.webservicesupport &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM integratie {#aem-integration}
 
@@ -216,7 +216,7 @@ De eigenschap wordt vervolgens automatisch gecodeerd (met de service `CryptoSupp
 
 Deze services worden standaard geleverd:
 
-* [ de Fragmenten van de Beheer ](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
+* [&#x200B; de Fragmenten van de Beheer &#x200B;](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [&amp;Doel testen](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
@@ -224,4 +224,4 @@ Deze services worden standaard geleverd:
 
 >[!NOTE]
 >
->Zie ook [ Creërend een Cloud Service van de Douane ](/help/sites-developing/extending-cloud-config-custom-cloud.md).
+>Zie ook [&#x200B; Creërend een Cloud Service van de Douane &#x200B;](/help/sites-developing/extending-cloud-config-custom-cloud.md).

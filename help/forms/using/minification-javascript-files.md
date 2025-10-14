@@ -26,7 +26,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
 
    >[!NOTE]
    >
-   >Zie [ Inleiding aan het Aanpassen van de werkruimte van AEM Forms ](/help/forms/using/introduction-customizing-html-workspace.md) voor meer details over de pakketten.
+   >Zie [&#x200B; Inleiding aan het Aanpassen van de werkruimte van AEM Forms &#x200B;](/help/forms/using/introduction-customizing-html-workspace.md) voor meer details over de pakketten.
 
 1. Werk paden bij in `main.js` onder client-html/src/main/webapp/js voor toegevoegde/bijgewerkte modellen/weergaven.
 

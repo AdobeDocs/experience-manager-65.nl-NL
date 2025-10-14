@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Een aangepast profiel maken voor HTML5-formulieren {#creating-a-custom-profile-for-html-forms}
 
-Een profiel is een middelknoop in [ Apache Sling ](https://sling.apache.org/). Deze staat voor een aangepaste versie van de renderingsservice voor HTML5-formulieren. U kunt de service Renditie van HTML5-formulieren gebruiken om de weergave, het gedrag en de interacties van de HTML-5-formulieren aan te passen. Er bestaat een profielknooppunt in de `/content` -map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
+Een profiel is een middelknoop in [&#x200B; Apache Sling &#x200B;](https://sling.apache.org/). Deze staat voor een aangepaste versie van de renderingsservice voor HTML5-formulieren. U kunt de service Renditie van HTML5-formulieren gebruiken om de weergave, het gedrag en de interacties van de HTML-5-formulieren aan te passen. Er bestaat een profielknooppunt in de `/content` -map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
 
 De profielknoop heeft **sling:resourceSuperType** bezit en de standaardwaarde is **xfaforms/profiel**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
 
@@ -82,4 +82,4 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 
 1. Open URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html` om te controleren of het profiel is gemaakt.
 
-Om uw vormen te verifiëren, [ voer uw formulieren ](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokaal dossiersysteem in AEM Forms in en [ voorproef de vorm ](/help/forms/using/previewing-forms.md) op AEM instantie van de serverauteur.
+Om uw vormen te verifiëren, [&#x200B; voer uw formulieren &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokaal dossiersysteem in AEM Forms in en [&#x200B; voorproef de vorm &#x200B;](/help/forms/using/previewing-forms.md) op AEM instantie van de serverauteur.

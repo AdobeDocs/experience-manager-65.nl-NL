@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Projecten {#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere die soorten informatie omvatten, zoals in detail in [ wordt beschreven de Tegels van het Project.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere die soorten informatie omvatten, zoals in detail in [&#x200B; wordt beschreven de Tegels van het Project.](#project-tiles)
 
 Als gebruiker kunt u:
 
@@ -35,7 +35,7 @@ De gemakkelijkste manier om dit te doen is de **project-gebruikers** groep te ge
 
 De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 
-![ de Console van Projecten ](assets/screen-shot_2019-03-05at125110.png)
+![&#x200B; de Console van Projecten &#x200B;](assets/screen-shot_2019-03-05at125110.png)
 
 De console van Projecten is gelijkaardig aan andere consoles in AEM, staat verscheidene acties op individuele projecten toe en past uw mening van de projecten aan.
 
@@ -43,7 +43,7 @@ De console van Projecten is gelijkaardig aan andere consoles in AEM, staat versc
 
 U kunt de spoorselecteur gebruiken om tussen consolemodi te veranderen.
 
-![ de selecteur van het spoorspoor ](assets/projects-rail.png)
+![&#x200B; de selecteur van het spoorspoor &#x200B;](assets/projects-rail.png)
 
 #### Alleen inhoud {#content-only}
 
@@ -53,19 +53,19 @@ Alleen inhoud is de standaardmodus bij het openen van de console. Het zal al uw 
 
 In de tijdlijnweergave kunt u een afzonderlijk project selecteren en er activiteiten op weergeven. Gebruik de railkiezer of de sneltoets `alt+1` om naar deze weergave te gaan.
 
-![ wijze van de Chronologie ](assets/project-timeline.png)
+![&#x200B; wijze van de Chronologie &#x200B;](assets/project-timeline.png)
 
 ### Weergave schakelen {#views}
 
 U kunt de weergavekiezer gebruiken om projecten als grote tegels weer te geven (de standaardinstelling), om ze als een lijst of op een kalender weer te geven.
 
-![ Weergaven ](assets/projects-views.png)
+![&#x200B; Weergaven &#x200B;](assets/projects-views.png)
 
 ### De weergave filteren {#filter}
 
 U kunt het filter gebruiken om tussen alle projecten en slechts die van een knevel te voorzien die actief zijn.
 
-![ Filter ](assets/projects-filter.png)
+![&#x200B; Filter &#x200B;](assets/projects-filter.png)
 
 ### Projecten selecteren en weergeven {#selecting}
 
@@ -103,15 +103,15 @@ Klik op de ellipsknop rechtsonder in een tegel om de gegevens van de tegel te op
 
 In de **tegel van 0&rbrace; Assets &lbrace;, kunt u alle activa verzamelen die u voor een bepaald project gebruikt.**
 
-![ de tegel van Assets ](assets/project-tile-assets.png)
+![&#x200B; de tegel van Assets &#x200B;](assets/project-tile-assets.png)
 
 U uploadt elementen rechtstreeks in de tegel.
 
 ### Asset Collections {#asset-collections}
 
-Gelijkaardig aan activa, kunt u [ activa inzamelingen ](/help/assets/manage-collections.md) direct aan uw project toevoegen. U definieert verzamelingen in Assets.
+Gelijkaardig aan activa, kunt u [&#x200B; activa inzamelingen &#x200B;](/help/assets/manage-collections.md) direct aan uw project toevoegen. U definieert verzamelingen in Assets.
 
-![ de inzamelingspijl van Activa ](assets/project-tile-asset-collection.png)
+![&#x200B; de inzamelingspijl van Activa &#x200B;](assets/project-tile-asset-collection.png)
 
 Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
@@ -119,7 +119,7 @@ Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juis
 
 De **tegel van de Ervaring 0&rbrace; laat u een mobiele app, een website, of een publicatie aan het project toevoegen.**
 
-![ de tegel van Ervaring ](assets/project-tile-experiences.png)
+![&#x200B; de tegel van Ervaring &#x200B;](assets/project-tile-experiences.png)
 
 De pictogrammen geven aan welke ervaring wordt weergegeven.
 
@@ -130,7 +130,7 @@ De pictogrammen geven aan welke ervaring wordt weergegeven.
 
 De **tegel van Verbindingen** laat u externe verbindingen met uw project associëren.
 
-![ de tegel van Verbindingen ](assets/project-tile-links.png)
+![&#x200B; de tegel van Verbindingen &#x200B;](assets/project-tile-links.png)
 
 U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur wijzigen.
 
@@ -138,61 +138,61 @@ U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur
 
 De **tegel van de Informatie van het 0&rbrace; Project &lbrace;verstrekt algemene informatie over het project met inbegrip van een beschrijving, projectstatus (inactief of actief), een vervaldatum, en leden.** Bovendien kunt u een projectduimnagel toevoegen, die op de belangrijkste pagina van Projecten wordt getoond.
 
-![ de informatietegel van het Project ](assets/project-tile-info.png)
+![&#x200B; de informatietegel van het Project &#x200B;](assets/project-tile-info.png)
 
 ### Vertaaltaak {#translation-job}
 
 De **tegel van de Baan van 0&rbrace; Vertaling &lbrace;is waar u een vertaling begint en ook waar u het statuut van uw vertalingen ziet.**
 
-![ de baantegel van de Vertaling ](assets/project-tile-translation.png)
+![&#x200B; de baantegel van de Vertaling &#x200B;](assets/project-tile-translation.png)
 
-Aan opstelling uw vertaling, zie het document [ Creërend Vertaalprojecten.](/help/assets/translation-projects.md)
+Aan opstelling uw vertaling, zie het document [&#x200B; Creërend Vertaalprojecten.](/help/assets/translation-projects.md)
 
 ### Team {#team}
 
 In deze tegel, kunt u de leden van het projectteam specificeren. Wanneer het uitgeven, kunt u de naam van het teamlid ingaan en de gebruikersrol toewijzen.
 
-![ de tegel van het Team ](assets/project-tile-team.png)
+![&#x200B; de tegel van het Team &#x200B;](assets/project-tile-team.png)
 
-U kunt teamleden toevoegen en verwijderen uit het team. Bovendien kunt u de [ gebruikersrol ](#userroles) uitgeven die aan het teamlid wordt toegewezen.
+U kunt teamleden toevoegen en verwijderen uit het team. Bovendien kunt u de [&#x200B; gebruikersrol &#x200B;](#userroles) uitgeven die aan het teamlid wordt toegewezen.
 
 ### Openingspagina&#39;s {#landing-pages}
 
 De **het Bestaan van Pagina&#39;s** tegel laat u om een nieuwe het landen pagina verzoeken.
 
-![ het Bestaan paginatielijn ](assets/project-tile-landing.png)
+![&#x200B; het Bestaan paginatielijn &#x200B;](assets/project-tile-landing.png)
 
-Dit werkschema wordt beschreven in het document [ creeer een het Bestaan werkschema van de Pagina.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Dit werkschema wordt beschreven in het document [&#x200B; creeer een het Bestaan werkschema van de Pagina.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### E-mails {#emails}
 
 De **Emails** tegelhulp u verzoeken voor e-mail beheert. Het begint het **Verzoek voor E-mail** werkschema.
 
-![ E-mailtegel ](assets/project-tile-email.png)
+![&#x200B; E-mailtegel &#x200B;](assets/project-tile-email.png)
 
-Meer informatie wordt beschreven in het [ E-mailwerkschema van het Verzoek.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Meer informatie wordt beschreven in het [&#x200B; E-mailwerkschema van het Verzoek.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
 U kunt workflows voor uw project starten. Als om het even welke werkschema&#39;s lopen, hun statusvertoningen in de **tegel van de Werkschema&#39;s**.
 
-![ de tegel van Werkschema&#39;s ](assets/project-tile-workflows.png)
+![&#x200B; de tegel van Werkschema&#39;s &#x200B;](assets/project-tile-workflows.png)
 
 Afhankelijk van welk project u creeert zijn er verschillende beschikbare werkschema&#39;s.
 
-Deze worden beschreven in [ Werkend met de Werkschema&#39;s van het Project.](/help/sites-authoring/projects-with-workflows.md)
+Deze worden beschreven in [&#x200B; Werkend met de Werkschema&#39;s van het Project.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanceringen {#launches}
 
-De **tegel van 0&rbrace; Lanceringen &lbrace;toont om het even welke lanceringen die met het werkschema van de Lancering van het a [ Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)**
+De **tegel van 0&rbrace; Lanceringen &lbrace;toont om het even welke lanceringen die met het werkschema van de Lancering van het a [&#x200B; Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)**
 
-![ de tegel van Lanceringen ](assets/project-tile-launches.png)
+![&#x200B; de tegel van Lanceringen &#x200B;](assets/project-tile-launches.png)
 
 ### Taken {#tasks}
 
-Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. De taken worden behandeld in detail bij [ het Werken met Taken ](/help/sites-authoring/task-content.md).
+Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, controleren. De taken worden behandeld in detail bij [&#x200B; het Werken met Taken &#x200B;](/help/sites-authoring/task-content.md).
 
-![ de tegel van Taken ](assets/project-tile-tasks.png)
+![&#x200B; de tegel van Taken &#x200B;](assets/project-tile-tasks.png)
 
 ## Projectsjablonen {#project-templates}
 
@@ -228,7 +228,7 @@ Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, word
 
 Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **Myproject Eigenaars**, **Mijnproject Editors**, **Myproject Waarnemers** hebben.
 
-Als het project wordt geschrapt, worden die groepen slechts geschrapt als u de aangewezen optie [ wanneer het schrappen van het project selecteert.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Een beheerder kan de groepen in **Hulpmiddelen** ook manueel schrappen > **Veiligheid** > **Groepen**.
+Als het project wordt geschrapt, worden die groepen slechts geschrapt als u de aangewezen optie [&#x200B; wanneer het schrappen van het project selecteert.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Een beheerder kan de groepen in **Hulpmiddelen** ook manueel schrappen > **Veiligheid** > **Groepen**.
 
 ## Aanvullende bronnen {#additional-resources}
 

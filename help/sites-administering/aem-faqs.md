@@ -50,33 +50,33 @@ Zie de volgende aanvullende bronnen voor meer informatie:
 #### Hoe te om AEM mogelijkheden zoals, login pogingen en ACL of toestemmingsveranderingen te controleren? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM heeft de capaciteit geïntroduceerd om administratieve veranderingen voor betere het oplossen van problemen en controle te registreren. Standaard wordt de informatie in het `error.log` -bestand aangemeld. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht.
-Om de output aan een afzonderlijk logboekdossier opnieuw te richten, zie [ hoe te de verrichtingen van het gebruikersbeheer in AEM ](/help/sites-administering/audit-user-management-operations.md) controleren.
+Om de output aan een afzonderlijk logboekdossier opnieuw te richten, zie [&#x200B; hoe te de verrichtingen van het gebruikersbeheer in AEM &#x200B;](/help/sites-administering/audit-user-management-operations.md) controleren.
 
 #### Hoe te om SSL door gebrek toe te laten? {#how-to-enable-ssl-by-default}
 
 Adobe Experience Manager (AEM) 6.4 wordt geleverd met de SSL-wizard en biedt een gebruikersinterface voor het configureren van Jetty- en Granite Jetty SSL-ondersteuning.
 
-Om SSL door gebrek toe te laten, zie [ SSL door gebrek ](/help/sites-administering/ssl-by-default.md).
+Om SSL door gebrek toe te laten, zie [&#x200B; SSL door gebrek &#x200B;](/help/sites-administering/ssl-by-default.md).
 
 #### Wat is de aanbevolen architectuur wanneer u AEM Content Services gebruikt vanuit een mobiele app, idealiter React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 De diensten van de Inhoud zijn gebaseerd op de het Verdelen Modellen en de AEM ontwikkelaars moeten een het Verdelen Model pojo voor elke component verstrekken die wordt uitgevoerd.
 
-Om te begrijpen hoe te om AEM inhoudsdiensten van een React toepassing te verbruiken, zie [ Begonnen krijgen met AEM inhoudsdiensten ](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) leerprogramma.
+Om te begrijpen hoe te om AEM inhoudsdiensten van een React toepassing te verbruiken, zie [&#x200B; Begonnen krijgen met AEM inhoudsdiensten &#x200B;](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) leerprogramma.
 
 Als ontwikkelaars een structuur met componenten willen exporteren, kunnen ze ook de interfaces `ComponentExporter` en `ContainerExporter` implementeren en `ModelFactory` gebruiken om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
 
-[ 1 ] [ Adobe-marketing-Wolk/aem-kern-wcm-componenten ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[ 1 ] [&#x200B; Adobe-marketing-Wolk/aem-kern-wcm-componenten &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[ [ ]  Apache die: Het verdelen Modellen ](https://sling.apache.org/documentation/bundles/models.html)
+[&#x200B; [ ]  Apache die: Het verdelen Modellen &#x200B;](https://sling.apache.org/documentation/bundles/models.html)
 
 #### Hoe te om AEM 6.4 enquête pop-up onbruikbaar te maken? {#how-to-disable-aem-survey-pop-up}
 
-U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console van het Web te gebruiken kiezen. Voor gedetailleerde instructies, zie [ Opting in de inzameling van de bijeengevoegde gebruiksstatistieken ](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console van het Web te gebruiken kiezen. Voor gedetailleerde instructies, zie [&#x200B; Opting in de inzameling van de bijeengevoegde gebruiksstatistieken &#x200B;](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 #### Is er een goede bron die de belangrijkste eigenschappen voor bevordering aan AEM 6.4 benadrukt? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Zie [ Begrijpend Redenen om AEM ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) te bevorderen die de hoogniveaumislukking van zeer belangrijke eigenschappen voor klanten het overwegen van bevordering aan de recentste versie van Adobe Experience Manager beschrijft.
+Zie [&#x200B; Begrijpend Redenen om AEM &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) te bevorderen die de hoogniveaumislukking van zeer belangrijke eigenschappen voor klanten het overwegen van bevordering aan de recentste versie van Adobe Experience Manager beschrijft.
 
 ## Assets {#assets}
 
@@ -101,17 +101,17 @@ Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebrui
 
 #### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
 
-AEM biedt verschillende mechanismen waarmee u de consoles en de functionaliteit voor het schrijven van pagina&#39;s van de ontwerpinstantie kunt aanpassen. Leren hoe te om een douaneconsole tot stand te brengen en een standaardmening voor een console aan te passen, zie [ Aanpassen van de Consoles ](/help/sites-developing/customizing-consoles-touch.md).
+AEM biedt verschillende mechanismen waarmee u de consoles en de functionaliteit voor het schrijven van pagina&#39;s van de ontwerpinstantie kunt aanpassen. Leren hoe te om een douaneconsole tot stand te brengen en een standaardmening voor een console aan te passen, zie [&#x200B; Aanpassen van de Consoles &#x200B;](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Wat is het verschil tussen CoralUI 2 en CoralUI op 3-Gebaseerde componenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Er wordt een nieuwe set Sling-componenten van de Granite UI Foundation gemaakt voor Coral3 en deze bevindt zich onder [ /libs/granite/ui/components/koral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Er is één set voor op CoralUI 2 gebaseerde componenten en één set voor op CoralUI 3 gebaseerde componenten. De nieuwe set is niet alleen een kopie-plakbewerking van de oude set, maar wordt opgeschoond (bijvoorbeeld het stroomlijnen, verwijderen van vervangen functies). Daarom wordt aanbevolen dat een pagina alleen gebruik maakt van op CoralUI 3 gebaseerde of op CoralUI 2 gebaseerde sets.
+Er wordt een nieuwe set Sling-componenten van de Granite UI Foundation gemaakt voor Coral3 en deze bevindt zich onder [&#x200B; /libs/granite/ui/components/koral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Er is één set voor op CoralUI 2 gebaseerde componenten en één set voor op CoralUI 3 gebaseerde componenten. De nieuwe set is niet alleen een kopie-plakbewerking van de oude set, maar wordt opgeschoond (bijvoorbeeld het stroomlijnen, verwijderen van vervangen functies). Daarom wordt aanbevolen dat een pagina alleen gebruik maakt van op CoralUI 3 gebaseerde of op CoralUI 2 gebaseerde sets.
 
-Meer in detail leren, zie [ Gids van de Migratie aan CoralUI 3-Gebaseerde ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Meer in detail leren, zie [&#x200B; Gids van de Migratie aan CoralUI 3-Gebaseerde &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Hoe kan ik de zoekcomponent in AEM Assets aanpassen? {#how-to-customize-the-search-component-in-aem-assets}
 
-Om over onderzoeksverhoging/het rangschikken en verdere implementatieinformatie te leren, zie [ Eenvoudige gids van de onderzoeksimplementatie ](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+Om over onderzoeksverhoging/het rangschikken en verdere implementatieinformatie te leren, zie [&#x200B; Eenvoudige gids van de onderzoeksimplementatie &#x200B;](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
 
 De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek.
 
@@ -119,4 +119,4 @@ De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van 
 
 Ja, een klant die WordPress gebruikt, kan de Adobe Asset Picker gebruiken om afbeeldingen van zijn AEM Assets-server te selecteren en toe te voegen aan advertenties op zijn WordPress-site.
 
-Verwijs naar [ de Selecteur van Activa ](../assets/search-assets.md#assetpicker) voor meer informatie.
+Verwijs naar [&#x200B; de Selecteur van Activa &#x200B;](../assets/search-assets.md#assetpicker) voor meer informatie.

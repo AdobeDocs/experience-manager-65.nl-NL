@@ -40,7 +40,7 @@ De volgende profielinstellingen op uw apparaat beïnvloeden de werking van de AE
 
 * **staat gebruik van camera** in de **functionaliteit van het Apparaat** sectie toe
 
-Als u **toestaat gebruik van camera** onbruikbaar maakt, werkt de camerafunctie van de [ annotatie van de Fotografiek ](/help/forms/using/add-attachments.md) niet. Schakel deze optie in als u de camera in de app wilt gebruiken.
+Als u **toestaat gebruik van camera** onbruikbaar maakt, werkt de camerafunctie van de [&#x200B; annotatie van de Fotografiek &#x200B;](/help/forms/using/add-attachments.md) niet. Schakel deze optie in als u de camera in de app wilt gebruiken.
 
 * **vereisen wachtwoord op apparaat** in de sectie van het Wachtwoordbeleid
 

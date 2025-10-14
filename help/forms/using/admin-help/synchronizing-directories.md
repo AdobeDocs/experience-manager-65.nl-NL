@@ -57,7 +57,7 @@ Gebruikersbeheer voert de volgende stappen uit wanneer de synchronisatie van de 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 2. Schakel het selectievakje Delta Synch in en klik op Opslaan.
-3. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als waarde. Voor details over het uitgeven van ondernemingsdomeinen, zie [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+3. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als waarde. Voor details over het uitgeven van ondernemingsdomeinen, zie [&#x200B; het Uitgeven en het omzetten van bestaande domeinen &#x200B;](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen {#enable-or-disable-detailed-logging-during-synchronization}
 

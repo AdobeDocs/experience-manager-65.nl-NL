@@ -48,7 +48,7 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    In dit geval worden alle pagina&#39;s die met de sjabloon `playpage` zijn gemaakt, gerenderd door de component `an-scf-sandbox/components/playpage` . Standaard is het pad naar de component relatief, zodat Sling eerst naar de bron in de map `/apps` en, indien deze niet wordt gevonden, in de map `/libs` kan zoeken.
 
-   ![ creeer-content-malplaatje ](assets/create-content-template-1.png)
+   ![&#x200B; creeer-content-malplaatje &#x200B;](assets/create-content-template-1.png)
 
 1. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat de waarde voor Type bron geen voorloopspaties of navolgende spaties bevat.
 
@@ -66,7 +66,7 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![ vorm-malplaatje-weg ](assets/configure-template-path.png)
+   ![&#x200B; vorm-malplaatje-weg &#x200B;](assets/configure-template-path.png)
 
 1. Klik op **[!UICONTROL Next]**.
 
@@ -80,11 +80,11 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Klik op **[!UICONTROL Save All]** om de nieuwe sjabloon op te slaan in de repository.
 
-   ![ verifieer-inhoud-malplaatje ](assets/verify-content-template.png)
+   ![&#x200B; verifieer-inhoud-malplaatje &#x200B;](assets/verify-content-template.png)
 
 ### De renderingcomponent van de sjabloon maken {#create-the-template-s-rendering-component}
 
-Creeer de *component* die de inhoud bepaalt en om het even welke gecreeerde pagina&#39;s teruggeeft die op het [ playpage malplaatje ](#createthepagetemplate) worden gebaseerd.
+Creeer de *component* die de inhoud bepaalt en om het even welke gecreeerde pagina&#39;s teruggeeft die op het [&#x200B; playpage malplaatje &#x200B;](#createthepagetemplate) worden gebaseerd.
 
 1. Klik met de rechtermuisknop **`/apps/an-scf-sandbox/components`** in CRXDE Lite en klik op **[!UICONTROL Create > Component]** .
 1. Door de naam van de knoop (Etiket) aan *playpage* te plaatsen, is de weg aan de component
@@ -101,7 +101,7 @@ Creeer de *component* die de inhoud bepaalt en om het even welke gecreeerde pagi
    * Supertype: *&lt;leave blank>*
    * Groep: *&lt;leave blank>*
 
-   ![ creeer-malplaatje-component ](assets/create-template-component.png)
+   ![&#x200B; creeer-malplaatje-component &#x200B;](assets/create-template-component.png)
 
 1. Klik op **[!UICONTROL Next]** totdat het deelvenster **[!UICONTROL Allowed Children]** van het dialoogvenster wordt weergegeven:
 
@@ -114,4 +114,4 @@ Creeer de *component* die de inhoud bepaalt en om het even welke gecreeerde pagi
    >
    >De overeenstemming tussen de weg aan de playpage component en het `sling:resourceType` bezit van het playpage malplaatje is essentieel voor het correcte functioneren van de website.
 
-   ![ verifieer-malplaatje-component ](assets/verify-template-component.png)
+   ![&#x200B; verifieer-malplaatje-component &#x200B;](assets/verify-template-component.png)

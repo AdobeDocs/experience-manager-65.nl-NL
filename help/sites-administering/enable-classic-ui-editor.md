@@ -44,4 +44,4 @@ Om de optie **open in Klassieke UI** in het **menu van de Informatie van de Pagi
 
 1. **Open in Klassieke UI** optie is opnieuw beschikbaar in het **menu van de Informatie van de Pagina** wanneer het uitgeven van pagina&#39;s.
 
-   ![ open in klassieke optie UI van paginainformatie ](assets/syui-03-2019-02-27-15-19-48.png)
+   ![&#x200B; open in klassieke optie UI van paginainformatie &#x200B;](assets/syui-03-2019-02-27-15-19-48.png)

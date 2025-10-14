@@ -35,4 +35,4 @@ In de volgende checklist worden enkele van de belangrijkste problemen beschreven
 
 >[!NOTE]
 >
->U kunt [ het Leiden Projecten - Checklist van Beste praktijken ](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.
+>U kunt [&#x200B; het Leiden Projecten - Checklist van Beste praktijken &#x200B;](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.

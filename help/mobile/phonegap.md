@@ -41,7 +41,7 @@ Zie de volgende bronnen:
 * [Een AEM Mobile-app maken met een wizard maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Om over **Diensten van de Inhoud** te leren, zie [ het Overzicht van de Diensten van de Inhoud ](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
+Om over **Diensten van de Inhoud** te leren, zie [&#x200B; het Overzicht van de Diensten van de Inhoud &#x200B;](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
 
 ## Aanvullende bronnen {#additional-resources}
 

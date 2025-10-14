@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Formulieren maken met herhaalbare secties {#creating-forms-with-repeatable-sections}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Herhaalbare secties zijn deelvensters die dynamisch aan een formulier kunnen worden toegevoegd of eruit kunnen worden verwijderd.
 
@@ -27,7 +27,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 ## Instance Manager gebruiken via scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. Op uitgeeft wijze, selecteer een paneel, dan uitgezochte ![ cmp ](assets/cmppr.png). In sidebar, onder Eigenschappen, laat **toe om Comité te herhalen**. Geef waarden op voor de velden **[!UICONTROL Maximum]** en **[!UICONTROL Minimum]** .
+1. Op uitgeeft wijze, selecteer een paneel, dan uitgezochte ![&#x200B; cmp &#x200B;](assets/cmppr.png). In sidebar, onder Eigenschappen, laat **toe om Comité te herhalen**. Geef waarden op voor de velden **[!UICONTROL Maximum]** en **[!UICONTROL Minimum]** .
 
    In het veld Maximaal wordt het maximale aantal keer opgegeven dat een deelvenster op de pagina kan worden weergegeven. U kunt -1 opgeven in het veld Maximum aantal om het deelvenster een oneindig aantal keren weer te geven.
 
@@ -39,7 +39,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 1. Het bovenliggende element van het deelvenster, dat moet worden herhaald, moet knoppen voor toevoegen en verwijderen bevatten om instanties van de herhaalbare deelvensters te beheren. Voer de volgende stappen uit om knoppen in te voegen in het bovenliggende element en om scripts in de knoppen in te schakelen:
 
-   1. Sleep vanuit het zijpaneel een knopcomponent naar het bovenliggende element van het deelvenster. Selecteer de component en selecteer ![ uitgeven-regels ](assets/edit-rules.png). De regels van de knoop open in de regelredacteur.
+   1. Sleep vanuit het zijpaneel een knopcomponent naar het bovenliggende element van het deelvenster. Selecteer de component en selecteer ![&#x200B; uitgeven-regels &#x200B;](assets/edit-rules.png). De regels van de knoop open in de regelredacteur.
    1. In het venster van de Redacteur van de Regel, leidt de klik **&#x200B;**&#x200B;tot.
 
       Selecteer **Visuele Redacteur** in de rij van Objecten en van Functies van de Vorm.
@@ -47,8 +47,8 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
       1. In het regelgebied, onder WANNEER, wordt de uitgezochte staat **geklikt**.
       1. Onder DAN:
 
-         * Om toe te voegen voeg paneelknoop toe, **voeg Instantie** toe, en belemmering-daling het paneel gebruikend ![ toe knevel-zij-paneel ](assets/toggle-side-panel.png) of selecteer het gebruikend **voorwerp van de Daling of selecteer hier.**
-         * Om tot een schrappingspaneelknoop te leiden, verwijder **Instantie**, en sleep-daling het paneel gebruikend ![ knevel-zij-paneel ](assets/toggle-side-panel.png) of selecteer het gebruikend **voorwerp van de Daling of selecteer hier.**
+         * Om toe te voegen voeg paneelknoop toe, **voeg Instantie** toe, en belemmering-daling het paneel gebruikend ![&#x200B; toe knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png) of selecteer het gebruikend **voorwerp van de Daling of selecteer hier.**
+         * Om tot een schrappingspaneelknoop te leiden, verwijder **Instantie**, en sleep-daling het paneel gebruikend ![&#x200B; knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png) of selecteer het gebruikend **voorwerp van de Daling of selecteer hier.**
 
       Selecteer **Redacteur van de Code** in de rij van Objecten en van Functies van de Vorm. Klik **uitgeven Regels** en in het codegebied:
 
@@ -89,7 +89,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Voor meer informatie, zie: Klasse: InstanceManager#instances in [ AEM Forms Java API verwijzing ](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Voor meer informatie, zie: Klasse: InstanceManager#instances in [&#x200B; AEM Forms Java API verwijzing &#x200B;](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -99,10 +99,10 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 Een deelvenster heeft verschillende lay-outopties. De optie Layout voor accordeonontwerp biedt geen ondersteuning voor herhaalbare deelvensters. Voer de volgende stappen uit naar het herhaalbare deelvenster met de optie Layout voor accordeonontwerp:
 
-1. Op de ouder van paneel dat moet worden herhaald, uitgezochte ![ cmp ](assets/cmppr.png). U kunt de eigenschappen in de zijbalk zien. In de **drop-down Lay-out**, uitgezochte **Accordeon**.
-1. Voor een paneel, dat moet worden herhaald, selecteer ![ cmp ](assets/cmppr.png). U kunt de deelvenstereigenschappen in de zijbalk zien. Laat het **Van het Comité Herhaalbare** tabel maken, en specificeer waarde voor **Maximum** en **Minimum** gebieden.
+1. Op de ouder van paneel dat moet worden herhaald, uitgezochte ![&#x200B; cmp &#x200B;](assets/cmppr.png). U kunt de eigenschappen in de zijbalk zien. In de **drop-down Lay-out**, uitgezochte **Accordeon**.
+1. Voor een paneel, dat moet worden herhaald, selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). U kunt de deelvenstereigenschappen in de zijbalk zien. Laat het **Van het Comité Herhaalbare** tabel maken, en specificeer waarde voor **Maximum** en **Minimum** gebieden.
 
-   Nu, kunt u plus (+) gebruiken en ( ![ schrappen-paneel ](assets/delete-panel.png)) knopen schrappen om de panelen toe te voegen en te verwijderen.
+   Nu, kunt u plus (+) gebruiken en ( ![&#x200B; schrappen-paneel &#x200B;](assets/delete-panel.png)) knopen schrappen om de panelen toe te voegen en te verwijderen.
 
 ## Herhalende subformulieren gebruiken vanuit formuliersjabloon (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
@@ -116,8 +116,8 @@ Herhalbaar subformulier is vergelijkbaar met de herhaalbare deelvensters in Adap
 1. Als u het minimale aantal herhalingen wilt opgeven, selecteert u Min. aantal en typt u een getal in het bijbehorende vak. Als deze optie is ingesteld op 0 en er geen gegevens zijn opgegeven voor de objecten in het subformulier bij het samenvoegen van gegevens, wordt het subformulier niet geplaatst wanneer het formulier wordt gegenereerd.
 1. Als u het maximale aantal herhalingen van subformulieren wilt opgeven, selecteert u Max en typt u een getal in het bijbehorende vak. Als u geen waarde opgeeft in het vak Max, is het aantal herhalingen van het subformulier onbeperkt.
 1. Als u een ingesteld aantal herhalingen van subformulieren wilt opgeven, ongeacht de hoeveelheid gegevens, selecteert u Eerste telling en typt u een getal in het bijbehorende vak. Als u deze optie selecteert en er geen gegevens beschikbaar zijn of er minder gegevensitems zijn dan de opgegeven waarde bij Eerste telling, worden lege exemplaren van het subformulier nog steeds op het formulier geplaatst.
-1. Voeg twee knoppen toe aan het bovenliggende subformulier: een voor het toevoegen van een exemplaar en een andere voor het verwijderen van exemplaren van herhaalbare subformulieren. Voor gedetailleerde stappen, zie [ een actie ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2) bouwen.
-1. Koppel nu de formuliersjabloon aan het adaptieve formulier. Voor gedetailleerde stappen, zie [ een adaptieve vorm creëren die op een malplaatje ](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template) wordt gebaseerd.
+1. Voeg twee knoppen toe aan het bovenliggende subformulier: een voor het toevoegen van een exemplaar en een andere voor het verwijderen van exemplaren van herhaalbare subformulieren. Voor gedetailleerde stappen, zie [&#x200B; een actie &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2) bouwen.
+1. Koppel nu de formuliersjabloon aan het adaptieve formulier. Voor gedetailleerde stappen, zie [&#x200B; een adaptieve vorm creëren die op een malplaatje &#x200B;](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template) wordt gebaseerd.
 1. Gebruik de knoppen die u in stap 9 hebt gemaakt om subformulieren toe te voegen en te verwijderen.
 
 ZIP-bestand dat is gekoppeld, bevat een voorbeeld van een herhaalbaar subformulier.
@@ -126,7 +126,7 @@ ZIP-bestand dat is gekoppeld, bevat een voorbeeld van een herhaalbaar subformuli
 
 ## Herhalingsinstellingen van een XML-schema (XSD) gebruiken {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-U kunt herhaalbare panelen van een Schema van XML en van het minOccurs &amp; maxOccurs bezit van om het even welk complex typeelement tot stand brengen. Voor gedetailleerde informatie over het Schema van XML, zie [ adaptieve vormen creëren gebruikend het Schema van XML als Model van de Vorm ](/help/forms/using/adaptive-form-xml-schema-form-model.md).
+U kunt herhaalbare panelen van een Schema van XML en van het minOccurs &amp; maxOccurs bezit van om het even welk complex typeelement tot stand brengen. Voor gedetailleerde informatie over het Schema van XML, zie [&#x200B; adaptieve vormen creëren gebruikend het Schema van XML als Model van de Vorm &#x200B;](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
 In de volgende code, gebruikt het `SampleType` paneel minOccours &amp; maxOccurs bezit.
 

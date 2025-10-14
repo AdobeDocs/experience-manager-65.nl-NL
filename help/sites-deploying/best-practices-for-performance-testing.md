@@ -54,39 +54,39 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 #### Testgereedschappen {#testing-tools}
 
-* Het hulpmiddel van de Dag van de Tough van Adobe **&#x200B;**&#x200B;kan worden gebruikt om lading op de instanties van AEM te produceren en prestatiesgegevens te verzamelen. Het technische team van Adobe AEM gebruikt het gereedschap voor het testen van de belasting van het AEM-product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [ documentatie van de Dag van de Hoek ](/help/sites-developing/tough-day.md).
+* Het hulpmiddel van de Dag van de Tough van Adobe **&#x200B;**&#x200B;kan worden gebruikt om lading op de instanties van AEM te produceren en prestatiesgegevens te verzamelen. Het technische team van Adobe AEM gebruikt het gereedschap voor het testen van de belasting van het AEM-product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Voor meer informatie, zie de [&#x200B; documentatie van de Dag van de Hoek &#x200B;](/help/sites-developing/tough-day.md).
 
-* AEM biedt de vakgereedschappen uit om snel problematische query&#39;s, verzoeken en foutberichten weer te geven. Voor meer informatie, zie de [ sectie van Hulpmiddelen van de Diagnose ](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het Dashboard van Verrichtingen.
-* Apache verstrekt een product genoemd **JMeter** dat voor prestaties en lading het testen, en functioneel gedrag kan worden gebruikt. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter kan op de website van Apache in [ https://jmeter.apache.org/ ](https://jmeter.apache.org/) worden gevonden
+* AEM biedt de vakgereedschappen uit om snel problematische query&#39;s, verzoeken en foutberichten weer te geven. Voor meer informatie, zie de [&#x200B; sectie van Hulpmiddelen van de Diagnose &#x200B;](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het Dashboard van Verrichtingen.
+* Apache verstrekt een product genoemd **JMeter** dat voor prestaties en lading het testen, en functioneel gedrag kan worden gebruikt. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter kan op de website van Apache in [&#x200B; https://jmeter.apache.org/ &#x200B;](https://jmeter.apache.org/) worden gevonden
 
-* Het laden van de website testende hulpmiddelen zoals [ Vercara ](https://vercara.com/website-performance-management) kan ook worden gebruikt.
+* Het laden van de website testende hulpmiddelen zoals [&#x200B; Vercara &#x200B;](https://vercara.com/website-performance-management) kan ook worden gebruikt.
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
 
-   * **[Voorwaardiger van de Verbinding van het Netwerk ](https://nshipster.com/network-link-conditioner/)** - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Dit omvat versies voor OS X en iOS;
-   * [**Karel** ](https://www.charlesproxy.com/) - een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux®.
+   * **[Voorwaardiger van de Verbinding van het Netwerk &#x200B;](https://nshipster.com/network-link-conditioner/)** - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Dit omvat versies voor OS X en iOS;
+   * [**Karel** &#x200B;](https://www.charlesproxy.com/) - een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux®.
 
 #### Optimalisatieprogramma&#39;s {#optimization-tools}
 
 **Controle**
 
-De [ documentatie van de Prestaties van de Controle ](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) is een goed middel voor hulpmiddelen en methodes die kunnen worden gebruikt om kwestie en puntgebieden voor het stemmen te diagnostiseren.
+De [&#x200B; documentatie van de Prestaties van de Controle &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) is een goed middel voor hulpmiddelen en methodes die kunnen worden gebruikt om kwestie en puntgebieden voor het stemmen te diagnostiseren.
 
 **de Wijze van de Ontwikkelaar in Aanraak UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [ CQ Gems presentatie ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=nl-NL).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface. Zo kunt u de rendertijd voor elk van de componenten op de pagina zien en stacksporen van fouten zien. Voor meer informatie over ontwikkelaarwijze, zie deze [&#x200B; CQ Gems presentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=nl-NL).
 
 **Gebruikend rlog.jar om de verzoeklogboeken** te lezen
 
-Voor een uitgebreidere analyse van de aanvraag kunt u `rlog.jar` gebruiken om de `request.log` -bestanden te doorzoeken en te sorteren die AEM genereert. Dit jar-bestand wordt opgenomen in een AEM-installatie in de map `/crx-quickstart/opt/helpers` . Voor meer informatie over logboekhulpmiddel en het verzoeklogboek over het algemeen, zie [ Controle en het Onderhouden van ](/help/sites-deploying/monitoring-and-maintaining.md) documentatie.
+Voor een uitgebreidere analyse van de aanvraag kunt u `rlog.jar` gebruiken om de `request.log` -bestanden te doorzoeken en te sorteren die AEM genereert. Dit jar-bestand wordt opgenomen in een AEM-installatie in de map `/crx-quickstart/opt/helpers` . Voor meer informatie over logboekhulpmiddel en het verzoeklogboek over het algemeen, zie [&#x200B; Controle en het Onderhouden van &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md) documentatie.
 
 **het Uitleg Hulpmiddel van de Vraag**
 
-Het [ Verklaar hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM Tools kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit hulpmiddel is nuttig wanneer het optimaliseren van langzaam lopende vragen.
+Het [&#x200B; Verklaar hulpmiddel van de Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM Tools kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit hulpmiddel is nuttig wanneer het optimaliseren van langzaam lopende vragen.
 
 **PageSpeed Hulpmiddelen**
 
 De Google PageSpeed-gereedschappen bieden een siteanalyse die voldoet aan de aanbevolen procedures voor paginaprestaties en een insteekmodule die naast de Dispatcher op een Apache-instantie kan worden geïnstalleerd voor extra optimalisaties.
-Zie de [ Website van Hulpmiddelen PageSpeed ](https://developers.google.com/speed).
+Zie de [&#x200B; Website van Hulpmiddelen PageSpeed &#x200B;](https://developers.google.com/speed).
 
 ## Auteursomgeving {#author-environment}
 
@@ -96,11 +96,11 @@ Als u de prestaties wilt testen in de auteursomgeving, is het nodig dat u de erv
 
 Er zijn vele automatiseringskaders beschikbaar die voor prestaties en lading het testen worden ontworpen. Aangepaste scripts kunnen in deze gereedschappen worden opgenomen en vervolgens worden afgespeeld om een piekaantal auteurs te simuleren die tegelijkertijd vergelijkbare activiteiten voor het maken en activeren van inhoud uitvoeren. U wordt aangeraden het gereedschap Onvoldoende dag te gebruiken om activiteiten te simuleren, zoals het uploaden van duizenden elementen of het activeren van een groot aantal pagina&#39;s.
 
-Voor de soorten milieu&#39;s die vereisten van zwaar activa laden of pagina creatie hebben, is het noodzakelijk om hulpmiddelen zoals de Dag van de Stevige te gebruiken. Dit zorgt ervoor dat de omgeving efficiënt werkt bij piekbelasting. [ WebDAV ](/help/sites-administering/webdav-access.md) is een hulpmiddel dat geen scripting vereist en kan ook worden gebruikt om grote hoeveelheden activa te laden.
+Voor de soorten milieu&#39;s die vereisten van zwaar activa laden of pagina creatie hebben, is het noodzakelijk om hulpmiddelen zoals de Dag van de Stevige te gebruiken. Dit zorgt ervoor dat de omgeving efficiënt werkt bij piekbelasting. [&#x200B; WebDAV &#x200B;](/help/sites-administering/webdav-access.md) is een hulpmiddel dat geen scripting vereist en kan ook worden gebruikt om grote hoeveelheden activa te laden.
 
 #### Specifieke stappen van MongoDB {#mongodb-specific-steps}
 
-Op systemen met de steunen MongoDB, verstrekt AEM verscheidene [ JMX ](/help/sites-administering/jmx-console.md) MBeans die moeten worden gecontroleerd wanneer het uitvoeren van lading of prestatietests:
+Op systemen met de steunen MongoDB, verstrekt AEM verscheidene [&#x200B; JMX &#x200B;](/help/sites-administering/jmx-console.md) MBeans die moeten worden gecontroleerd wanneer het uitvoeren van lading of prestatietests:
 
 * De **Geconsolideerde Statistieken van het Geheime voorgeheugen** MBean. Het kan direct worden betreden door te gaan:
 
@@ -118,7 +118,7 @@ De **ObservationQueueMaxLength** sectie toont het aantal gebeurtenissen in de de
 1. Plaats de toepassing onder de map /crx-quickstart/install.
 
 >[!NOTE]
->Zie [ AEM 6.x | Tips voor afstemmen van prestaties ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
+>Zie [&#x200B; AEM 6.x | Tips voor afstemmen van prestaties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
 
 De standaardinstelling is 10.000, maar de meeste implementaties moeten deze verhogen tot 20.000 of 50.000.
 
@@ -134,22 +134,22 @@ De meeste productiewebsites hebben optimalisaties, zoals Dispatcher caching en e
 
 Op een systeem dat geen hoog niveau van verpersoonlijking vereist, zou Dispatcher de meeste verzoeken in het voorgeheugen onder moeten brengen. Als gevolg hiervan moet de belasting op het publicatieexemplaar relatief vlak blijven. Als een hoog niveau van verpersoonlijking wordt vereist, wordt het geadviseerd om technologieën zoals iFrames of AJAX verzoeken om de gepersonaliseerde inhoud te gebruiken om zoveel mogelijk Dispatcher caching toe te staan.
 
-Voor basistests kan Apache Bench worden gebruikt om responstijden van webservers te meten en om belasting te creëren voor het meten van zaken zoals geheugenlekken. Zie het voorbeeld in de [ documentatie van de Controle ](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Voor basistests kan Apache Bench worden gebruikt om responstijden van webservers te meten en om belasting te creëren voor het meten van zaken zoals geheugenlekken. Zie het voorbeeld in de [&#x200B; documentatie van de Controle &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
 ## Problemen met prestaties oplossen {#troubleshooting-performance-issues}
 
 Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen worden onderzocht, gediagnosticeerd en opgelost. U kunt verschillende gereedschappen en technieken gebruiken bij het uitvoeren van analyses en het aanpakken van problemen:
 
-* U kunt het [ logboek van de Prestaties van het Verzoek ](/help/sites-administering/operations-dashboard.md#request-performance) in het Dashboard van Verrichtingen inspecteren. Dit gereedschap kan worden gebruikt om aanvragen voor langzame pagina&#39;s te identificeren
-* Analyseer langzame lopende vragen met het [ hulpmiddel van de Prestaties van de Vraag ](/help/sites-administering/operations-dashboard.md#query-performance)
+* U kunt het [&#x200B; logboek van de Prestaties van het Verzoek &#x200B;](/help/sites-administering/operations-dashboard.md#request-performance) in het Dashboard van Verrichtingen inspecteren. Dit gereedschap kan worden gebruikt om aanvragen voor langzame pagina&#39;s te identificeren
+* Analyseer langzame lopende vragen met het [&#x200B; hulpmiddel van de Prestaties van de Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#query-performance)
 
-* Bekijk het foutenlogboek voor fouten of waarschuwingen. Voor meer informatie, zie [ het Registreren ](/help/sites-deploying/configure-logging.md).
+* Bekijk het foutenlogboek voor fouten of waarschuwingen. Voor meer informatie, zie [&#x200B; het Registreren &#x200B;](/help/sites-deploying/configure-logging.md).
 * Hardwarebronnen van het systeem controleren, zoals geheugen- en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten.
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan.
-* Volg de [ Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) en [ het stemmen van Prestaties uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL) documentatie.
+* Volg de [&#x200B; Optimalisering van Prestaties &#x200B;](/help/sites-deploying/configuring-performance.md) en [&#x200B; het stemmen van Prestaties uiteinden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL) documentatie.
 
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Dit geeft een indeling van elk inhoudsgebied op de pagina en de laadtijd.
-* Alle JS en CSS op de site miniaturen. Zie dit [ blogbericht ](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Alle JS en CSS op de site miniaturen. Zie dit [&#x200B; blogbericht &#x200B;](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Elimineer ingesloten CSS en JS uit de componenten. Ze moeten worden opgenomen in en geminiateerd bij de bibliotheken aan de clientzijde om het aantal aanvragen te minimaliseren dat vereist is om de pagina weer te geven.
 * Om de serververzoeken te inspecteren en te zien welke het langst nemen, gebruik browser hulpmiddelen zoals het lusje van het Netwerk van Chrome.
 

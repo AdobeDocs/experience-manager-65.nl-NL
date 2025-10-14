@@ -22,22 +22,22 @@ ht-degree: 4%
 >
 >Deze pagina gaat over de klassieke gebruikersinterface.
 >
->Zie [ Aanpassen van de Consoles ](/help/sites-developing/customizing-consoles-touch.md) voor details op standaard, aanraking-toegelaten UI.
+>Zie [&#x200B; Aanpassen van de Consoles &#x200B;](/help/sites-developing/customizing-consoles-touch.md) voor details op standaard, aanraking-toegelaten UI.
 
 De welkomstconsole biedt een lijst met koppelingen naar de verschillende consoles en functies in AEM.
 
-![ cq_welcomescreen ](assets/cq_welcomescreen.png)
+![&#x200B; cq_welcomescreen &#x200B;](assets/cq_welcomescreen.png)
 
 Het is mogelijk om de verbindingen te vormen die zichtbaar zijn. Dit kan voor specifieke gebruikers en/of groepen worden bepaald. De te nemen acties zijn afhankelijk van het doeltype (dat met de sectie van de console correleert zij binnen zijn):
 
-* [ Belangrijkste Consoles ](#links-in-main-console-left-pane) - Verbindingen in de belangrijkste console (linkerruit)
-* [ Middelen, Documentatie en Verwijzing, Eigenschappen ](#links-in-sidebar-right-pane) - Verbindingen in sidebar (juiste ruit)
+* [&#x200B; Belangrijkste Consoles &#x200B;](#links-in-main-console-left-pane) - Verbindingen in de belangrijkste console (linkerruit)
+* [&#x200B; Middelen, Documentatie en Verwijzing, Eigenschappen &#x200B;](#links-in-sidebar-right-pane) - Verbindingen in sidebar (juiste ruit)
 
 ## Koppelingen in hoofdconsole (linkerdeelvenster) {#links-in-main-console-left-pane}
 
 Hier worden de belangrijkste consoles van AEM weergegeven.
 
-![ cq_welcomescreenmainconsole ](assets/cq_welcomescreenmainconsole.png)
+![&#x200B; cq_welcomescreenmainconsole &#x200B;](assets/cq_welcomescreenmainconsole.png)
 
 ### Bepalen of hoofdconsolekoppelingen zichtbaar zijn {#configuring-whether-main-console-links-are-visible}
 
@@ -65,11 +65,11 @@ Bijvoorbeeld:
 
   `/libs/wcm/core/content/misc`
 
-Zie de [ sectie van de Veiligheid ](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
+Zie de [&#x200B; sectie van de Veiligheid &#x200B;](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
 ### Koppelingen in zijbalk (rechterdeelvenster) {#links-in-sidebar-right-pane}
 
-![ cq_welcomescreensidebar ](assets/cq_welcomescreensidebar.png)
+![&#x200B; cq_welcomescreensidebar &#x200B;](assets/cq_welcomescreensidebar.png)
 
 Deze verbindingen zijn gebaseerd op het bestaan van *en* lees toegang tot knopen onder de volgende weg:
 
@@ -184,11 +184,11 @@ Bijvoorbeeld:
 
   `/libs/cq/core/content/welcome/features/packages`
 
-Zie de [ sectie van de Veiligheid ](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
+Zie de [&#x200B; sectie van de Veiligheid &#x200B;](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
 ### Selectiemechanisme koppelen {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` gebruik wordt gemaakt van [ ConsoleUtil ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), die een vraag op knopen uitvoert die het bezit hebben:
+In `/libs/cq/core/components/welcome/welcome.jsp` gebruik wordt gemaakt van [&#x200B; ConsoleUtil &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), die een vraag op knopen uitvoert die het bezit hebben:
 
 * `jcr:mixinTypes` met de waarde: `cq:Console`
 
@@ -203,7 +203,7 @@ Wanneer een gebruiker of groep geen leesmachtigingen heeft voor een knooppunt me
 
 ### Een aangepast item toevoegen {#adding-a-custom-item}
 
-Het [ mechanisme van de verbindingsselectie ](#link-selection-mechanism) kan worden gebruikt om uw eigen douanepunt aan de lijst van verbindingen toe te voegen.
+Het [&#x200B; mechanisme van de verbindingsselectie &#x200B;](#link-selection-mechanism) kan worden gebruikt om uw eigen douanepunt aan de lijst van verbindingen toe te voegen.
 
 Voeg uw douanepunt aan de lijst toe door de `cq:Console` mengeling aan uw widget of middel toe te voegen. Hiervoor definieert u de eigenschap:
 

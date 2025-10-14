@@ -41,10 +41,10 @@ Momenteel steunen alle implementaties van het Platform van Java [&#128279;](http
    >
    >Fontbestanden in de gegevensopslagruimte moeten het achtervoegsel `*.ttf` of `*.TTF` hebben.
 
-1. Werk de [ configuratie OSGi ](/help/sites-deploying/configuring-osgi.md) van [ het Fonthelper van de Commons GFX van de Dag ](/help/sites-deploying/osgi-configuration-settings.md) bij. Voeg het pad naar de map met lettertypen toe, dat wil zeggen `/apps/<your-project>/fonts` .
+1. Werk de [&#x200B; configuratie OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) van [&#x200B; het Fonthelper van de Commons GFX van de Dag &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) bij. Voeg het pad naar de map met lettertypen toe, dat wil zeggen `/apps/<your-project>/fonts` .
 
 1. Terug naar CRXDE Lite. Er wordt nu een knooppunt `.fontlist` in uw map weergegeven met de naam van de geïmporteerde lettertypen.
 
    Deze lettertypen kunnen nu worden gebruikt in de Java API.
 
-Voor volledige details van hoe te om de doopvonten met Java API te gebruiken, zie de [ documentatie voor de klasse van de Doopvont van Java API ](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Voor volledige details van hoe te om de doopvonten met Java API te gebruiken, zie de [&#x200B; documentatie voor de klasse van de Doopvont van Java API &#x200B;](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

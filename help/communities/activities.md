@@ -40,19 +40,19 @@ En sleep het naar zijn plaats op een pagina waar de activiteitenstromen zouden m
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-activities.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Activity Streams` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/essentials-activities.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Activity Streams` component verschijnt:
 
-![ activiteit-stromen ](assets/activity-component.png)
+![&#x200B; activiteit-stromen &#x200B;](assets/activity-component.png)
 
 ### Activiteitenstromen configureren {#configuring-activity-streams}
 
 Selecteer de geplaatste component `Activity Streams` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Onder het **lusje van de Activiteiten van de Gebruiker**, specificeer welke activiteiten aan vertoning:
 
-![ gebruiker-activiteiten ](assets/user-activities.png)
+![&#x200B; gebruiker-activiteiten &#x200B;](assets/user-activities.png)
 
 * **Max aantal activiteiten**
 
@@ -76,11 +76,11 @@ Onder het **lusje van de Activiteiten van de Gebruiker**, specificeer welke acti
 
 ### Volgende weergave {#following-view}
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. De eigenschappen die het volgende toestaan zijn [ blog ](/help/communities/blog-feature.md), [ forum ](/help/communities/forum.md), [ QnA ](/help/communities/working-with-qna.md), [ kalender ](/help/communities/calendar.md), [ dossierbibliotheek ](/help/communities/file-library.md), en [ commentaren ](/help/communities/comments.md).
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. De eigenschappen die het volgende toestaan zijn [&#x200B; blog &#x200B;](/help/communities/blog-feature.md), [&#x200B; forum &#x200B;](/help/communities/forum.md), [&#x200B; QnA &#x200B;](/help/communities/working-with-qna.md), [&#x200B; kalender &#x200B;](/help/communities/calendar.md), [&#x200B; dossierbibliotheek &#x200B;](/help/communities/file-library.md), en [&#x200B; commentaren &#x200B;](/help/communities/comments.md).
 
-![ volgend-mening ](assets/following-activities.png)
+![&#x200B; volgend-mening &#x200B;](assets/following-activities.png)
 
-**volgt** knoop een middel om ingangen als activiteiten, [ berichten ](/help/communities/notifications.md), of [ abonnementen ](/help/communities/subscriptions.md) te volgen. Telkens als **volgt** knoop wordt geselecteerd, is het mogelijk om op of van een selectie van een knevel te voorzien. De selectie van `Email Subscriptions` is alleen aanwezig als deze is geconfigureerd.
+**volgt** knoop een middel om ingangen als activiteiten, [&#x200B; berichten &#x200B;](/help/communities/notifications.md), of [&#x200B; abonnementen &#x200B;](/help/communities/subscriptions.md) te volgen. Telkens als **volgt** knoop wordt geselecteerd, is het mogelijk om op of van een selectie van een knevel te voorzien. De selectie van `Email Subscriptions` is alleen aanwezig als deze is geconfigureerd.
 
 Als om het even welke methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak is het mogelijk om `Unfollow All` te selecteren om alle methoden uit te schakelen.
 
@@ -97,4 +97,4 @@ De **volg** knoop verschijnt:
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ pagina van de Hoofdzaak van de Streams van de Activiteit ](/help/communities/essentials-activities.md) voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; pagina van de Hoofdzaak van de Streams van de Activiteit &#x200B;](/help/communities/essentials-activities.md) voor ontwikkelaars worden gevonden.

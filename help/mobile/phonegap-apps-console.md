@@ -22,7 +22,7 @@ ht-degree: 0%
 
 In het AEM ontwikkelingsproces voor mobiele toepassingen wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
 
-![ chlimage_1-10 ](assets/chlimage_1-10.gif)
+![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10.gif)
 
 Op deze pagina wordt informatie weergegeven over het uitvoeren van de markeringstaken. Voor informatie over de taken van de Ontwikkelaar, zie de Toepassingen van PhoneGap van de Bouwstijl.
 
@@ -40,7 +40,7 @@ De hoofdpagina van de mobiele toepassingen die u in AEM maakt, wordt weergegeven
 
 De basispagina wordt opgeslagen onder de eigenschap Doelpad van de toepassing die is opgegeven bij het maken van de toepassing (het standaardpad is /content/phonegap/apps). De paginanaam is het bezit van de Naam van de toepassing. De standaard-URL van de hoofdpagina van de site met de naam `myphonegapapp` is bijvoorbeeld `http://localhost:4502/content/phonegap/apps/myphonegapapp.html` .
 
-![ chlimage_1-146 ](assets/chlimage_1-146.png)
+![&#x200B; chlimage_1-146 &#x200B;](assets/chlimage_1-146.png)
 
 ### De taalvariatie van een PhoneGap-app {#the-language-variation-of-a-phonegap-app}
 
@@ -48,14 +48,14 @@ De eerste onderliggende pagina&#39;s van de basispagina zijn de taalvariaties va
 
 **Nota:** de standaardblauwdruk PhoneGap leidt slechts tot een Engelse toepassing. Uw ontwikkelaar kan de blauwdruk aanpassen zodat deze meer taalvariaties kan maken.
 
-![ chlimage_1-147 ](assets/chlimage_1-147.png)
+![&#x200B; chlimage_1-147 &#x200B;](assets/chlimage_1-147.png)
 
 De taalpagina heeft twee doelen:
 
 * De pagina-inhoud is de spash-pagina voor de taalvariatie van de toepassing.
 * De pagina-eigenschappen beheren verschillende ontwerpaspecten van de toepassing, zoals de URL die moet worden gebruikt voor het aanvragen van updates van inhoud, en informatie over het maken van verbinding met de cloud en de integratie met Adobe Analytics Services.
 
-![ chlimage_1-148 ](assets/chlimage_1-148.png)
+![&#x200B; chlimage_1-148 &#x200B;](assets/chlimage_1-148.png)
 
 ### De startpagina {#the-home-page}
 
@@ -77,7 +77,7 @@ U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Samenstellen: klik hier op Configuraties beheren en stel de service voor het samenstellen van build.phonegap.com in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analytics: Klik beheert configuraties en opstelling uw [ Adobe Mobiele Diensten de clouddienst van SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik beheert configuraties en opstelling uw [&#x200B; Adobe Mobiele Diensten de clouddienst van SDK &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ In de volgende procedure wordt de Touch-gebruikersinterface gebruikt om een mobi
 1. Klik op Apps op de rail.
 1. Klik het Create pictogram.
 
-   ![ het Create pictogram dat door een plusteken binnen een vierkant wordt vermeld.](do-not-localize/chlimage_1-7.png)
+   ![&#x200B; het Create pictogram dat door een plusteken binnen een vierkant wordt vermeld.](do-not-localize/chlimage_1-7.png)
 
 1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig zo nodig de URL van de server.
 1. (Optioneel) Als u PhoneGap Build gebruikt om de toepassing te compileren, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
@@ -111,30 +111,30 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 1. Klik op Apps op de rail.
 1. Selecteer de toepassing die u wilt configureren en klik op het pictogram Pagina-eigenschappen weergeven.
 
-   ![ het pictogram van de Eigenschappen van de Pagina van de Mening die door de brief I binnen een cirkel wordt vermeld.](do-not-localize/chlimage_1-8.png)
+   ![&#x200B; het pictogram van de Eigenschappen van de Pagina van de Mening die door de brief I binnen een cirkel wordt vermeld.](do-not-localize/chlimage_1-8.png)
 
 1. Klik op het pictogram Bewerken om eigenschapswaarden te wijzigen.
 
-   ![ het Edit pictogram dat door een potlood wordt vermeld.](do-not-localize/chlimage_1-9.png)
+   ![&#x200B; het Edit pictogram dat door een potlood wordt vermeld.](do-not-localize/chlimage_1-9.png)
 
 1. Configureer de eigenschappen Standaard en Geavanceerd en klik op het pictogram Gereed.
 
-   ![ het Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](do-not-localize/chlimage_1-10.png)
+   ![&#x200B; het Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](do-not-localize/chlimage_1-10.png)
 
 #### Een taalvariatie van de toepassing configureren {#configure-a-language-variation-of-the-application}
 
 1. Klik op Apps op de rail.
 1. Klik om de mobiele toepassing die u wilt bewerken, in te roepen in de Admin Console apps. Selecteer de taalversie van de toepassing die u wilt configureren en klik op het pictogram Toepassingseigenschappen weergeven.
 
-   ![ het pictogram van de Eigenschappen van de Toepassing van de Mening die door de brief I binnen een cirkel wordt vermeld.](do-not-localize/chlimage_1-11.png)
+   ![&#x200B; het pictogram van de Eigenschappen van de Toepassing van de Mening die door de brief I binnen een cirkel wordt vermeld.](do-not-localize/chlimage_1-11.png)
 
 1. Klik op het pictogram Bewerken om eigenschapswaarden te wijzigen.
 
-   ![ het Edit pictogram dat door een potlood wordt vermeld.](do-not-localize/chlimage_1-12.png)
+   ![&#x200B; het Edit pictogram dat door een potlood wordt vermeld.](do-not-localize/chlimage_1-12.png)
 
 1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik vervolgens op het pictogram Gereed.
 
-   ![ het Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](do-not-localize/chlimage_1-13.png)
+   ![&#x200B; het Gereed pictogram dat door een symbool van het vinkje wordt vermeld.](do-not-localize/chlimage_1-13.png)
 
 ### De inhoud van een mobiele toepassing ontwerpen {#authoring-the-content-of-a-mobile-application}
 
@@ -153,7 +153,7 @@ De cache voor het synchroniseren van inhoud op de AEM-publicatie-instantie wordt
 
 Mobiele toepassingen hebben een opdracht Updates waarmee bijgewerkte toepassingsinhoud wordt gedownload en geïnstalleerd. Wanneer een toepassingsinstantie een updateverzoek verzendt, bepaalt Content Sync welke inhoud is gewijzigd sinds de laatste keer dat de toepassing werd bijgewerkt of geïnstalleerd, en verstrekt de nieuwe inhoud.
 
-![ chlimage_1-149 ](assets/chlimage_1-149.png)
+![&#x200B; chlimage_1-149 &#x200B;](assets/chlimage_1-149.png)
 
 Als u bijgewerkte inhoud beschikbaar wilt maken voor toepassingen, werkt u de cache van Content Sync bij. De eerste keer dat u de cache bijwerkt, wordt alle gepubliceerde inhoud toegevoegd. Bij volgende updates wordt alleen de gepubliceerde inhoud toegevoegd die is gewijzigd sinds de vorige update.
 
@@ -164,7 +164,7 @@ Voer de volgende procedure uit op de instantie waar u het cachegeheugen wilt bij
 1. Klik op Apps (Apps) in de track en klik vervolgens op uw toepassing.
 1. Selecteer de welkomstpagina en klik op het pictogram Cache bijwerken.
 
-   ![ het pictogram van het Geheime voorgeheugen van de Update dat door een gestreept barrell met een recycle symbool over het wordt vermeld.](do-not-localize/chlimage_1-14.png)
+   ![&#x200B; het pictogram van het Geheime voorgeheugen van de Update dat door een gestreept barrell met een recycle symbool over het wordt vermeld.](do-not-localize/chlimage_1-14.png)
 
 ### App-sjablonen gebruiken {#using-app-templates}
 
@@ -182,12 +182,12 @@ Stappen voor het maken van een app op basis van een toepassingssjabloon:
 1. Zorg ervoor dat u het nieuwste AEM Apps 6.1 functiepakket en referentiemonsteringspakketten hebt geïnstalleerd
 1. Klik Apps van de linkerspoorstaaf.
 
-![ chlimage_1-1 ](assets/chlimage_1-1.jpeg)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.jpeg)
 
 1. Klik op de knop + Maken bovenaan en selecteer App maken.
 1. Als u de lijst met App Templates hebt ontvangen, selecteert u een van deze sjablonen:
 
-![ chlimage_1-2 ](assets/chlimage_1-2.jpeg)
+![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.jpeg)
 
 1. Klik op Volgende.
 1. Geef een app-id en -titel op, maar u wilt mogelijk ook een naam en een beschrijving opnemen.
@@ -195,12 +195,12 @@ Stappen voor het maken van een app op basis van een toepassingssjabloon:
    1. U kunt ook een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door AEM elementen te bladeren.
    1. U kunt al deze velden bewerken nadat de app is gemaakt in de tegel App beheren. Met uitzondering van de toepassings-id kunt u deze niet wijzigen nadat de toepassings-id is ingesteld.
 
-![ chlimage_1-150 ](assets/chlimage_1-150.png)
+![&#x200B; chlimage_1-150 &#x200B;](assets/chlimage_1-150.png)
 
 1. Klik op de knop Maken. Er worden twee opties weergegeven: Gereed (ga terug naar de catalogusweergave van apps) of Toepassen beheren (hiermee wordt het dashboard van de app geopend).
 1. Nadat de app is gemaakt, wordt de nieuwe app weergegeven in de App-catalogus:
 
-![ chlimage_1-3 ](assets/chlimage_1-3.jpeg)
+![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.jpeg)
 
 1. Klik op de app om deze te openen. U hebt een nieuwe app gemaakt op basis van de sjabloon van een bestaande app.
 
@@ -286,7 +286,7 @@ De component VeegCarrousel is een hulpmiddel om sitepagina&#39;s weer te geven e
 
 Afbeeldingen worden in de carrousel weergegeven voor pagina&#39;s die op een specifieke manier aan een afbeelding zijn gekoppeld. Wanneer pagina&#39;s niet aan afbeeldingen zijn gekoppeld, wordt alleen de lijst met koppelingen weergegeven.
 
-![ chlimage_1-151 ](assets/chlimage_1-151.png)
+![&#x200B; chlimage_1-151 &#x200B;](assets/chlimage_1-151.png)
 
 **Carousel eigenschappen tabel**
 
@@ -331,7 +331,7 @@ Vul de lijst met de resultaten van een trefwoordzoekopdracht. De zoekopdracht wo
 
 **Geavanceerd Onderzoek**
 
-Vul de lijst gebruikend vraag van de a [ Querybuilder ](/help/sites-developing/querybuilder-api.md).
+Vul de lijst gebruikend vraag van de a [&#x200B; Querybuilder &#x200B;](/help/sites-developing/querybuilder-api.md).
 
 ### Afbeelding {#image}
 
@@ -348,10 +348,10 @@ De component Locaties van de Opslag voorziet gebruikers van hulpmiddelen om bedr
 * Zoeken
 * Een lijst met locaties die dicht bij of ver van de GPS-coördinaten van het apparaat liggen.
 
-De component vereist dat de gegevensopslagruimte locatie locatie-informatie voor elke opslagruimte bevat. De plaatsen van de steekproef zijn geïnstalleerd bij de /etc/commerce/locations/adobe knoop. ![ chlimage_1-152 ](assets/chlimage_1-152.png)
+De component vereist dat de gegevensopslagruimte locatie locatie-informatie voor elke opslagruimte bevat. De plaatsen van de steekproef zijn geïnstalleerd bij de /etc/commerce/locations/adobe knoop. ![&#x200B; chlimage_1-152 &#x200B;](assets/chlimage_1-152.png)
 
 ### Twee kolommen, rij {#two-column-row}
 
 Hiermee kunt u componenten naast elkaar aan een pagina toevoegen.
 
-![ chlimage_1-153 ](assets/chlimage_1-153.png)
+![&#x200B; chlimage_1-153 &#x200B;](assets/chlimage_1-153.png)

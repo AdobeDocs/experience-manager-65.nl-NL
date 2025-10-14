@@ -16,14 +16,14 @@ ht-degree: 0%
 
 AEM Forms biedt OAuth 2.0-ondersteuning voor integratie met Microsoft® Office 365-mailserverprotocollen zodat organisaties zich kunnen houden aan de vereisten voor e-mail. U kunt de Azure Actieve Folder (Azure AD) OAuth 2.0 authentificatieservice gebruiken, om met diverse protocollen zoals IMAP, POP, of SMTP te verbinden en tot e-mailgegevens voor Bureau 365 toegang te hebben gebruikers. Hieronder vindt u stapsgewijze instructies voor het configureren van de Microsoft® Office 365-mailserverprotocollen voor verificatie via de OAuth 2.0-service:
 
-1. Login aan [ https://portal.azure.com/ ](https://portal.azure.com/) en onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat.
-Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
+1. Login aan [&#x200B; https://portal.azure.com/ &#x200B;](https://portal.azure.com/) en onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat.
+Alternatief, kunt u direct aan [&#x200B; https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview &#x200B;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
 1. Klik **toevoegen** > **Registratie van de Toepassing** > **Nieuwe Registratie**.
 
-   ![ de Registratie van de Toepassing ](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
+   ![&#x200B; de Registratie van de Toepassing &#x200B;](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Vul de informatie volgens uw vereisten in, dan klik **Register**.
-   ![ Gesteunde Rekening ](/help/forms/using/assets/azure_suuportedaccountype.png)
+   ![&#x200B; Gesteunde Rekening &#x200B;](/help/forms/using/assets/azure_suuportedaccountype.png)
 In het bovengenoemde geval, **Rekeningen in om het even welke organisatorische folder (Om het even welke Azure folder van de ADVERTENTIE - Multihuurder) en persoonlijke rekeningen Microsoft® (bijvoorbeeld, Skype, Xbox)** optie wordt geselecteerd.
 
    >[!NOTE]
@@ -34,7 +34,7 @@ In het bovengenoemde geval, **Rekeningen in om het even welke organisatorische f
 
 1. Daarna, ga naar **Certificaten en geheimen**, klik **Nieuw cliëntgeheim** en volg de stappen op het scherm om een geheim tot stand te brengen. Let erop dat u deze waarde van het geheim opneemt voor later gebruik.
 
-   ![ Geheime Sleutel ](/help/forms/using/assets/azure_secretkey.png)
+   ![&#x200B; Geheime Sleutel &#x200B;](/help/forms/using/assets/azure_secretkey.png)
 
 1. Voor het toevoegen van toestemmingen, ga naar pas gecreëerde app, en selecteer **API Toestemmingen** > **een Toestemming** toevoegen > **Grafiek Microsoft®** > **Gedelegeerde Toestemmingen**.
 1. Selecteer checkboxes voor de hieronder toestemmingen voor app en klik **toevoegen Toestemming**:
@@ -46,7 +46,7 @@ In het bovengenoemde geval, **Rekeningen in om het even welke organisatorische f
    * `SMTP.Send`
    * `User.Read`
 
-   ![ API Toestemming ](/help/forms/using/assets/azure_apipermission.png)
+   ![&#x200B; API Toestemming &#x200B;](/help/forms/using/assets/azure_apipermission.png)
 
 1. Selecteer **Authentificatie** > **een platform** toevoegen > **Web**, en in de **Redirect Urls** sectie, voeg om het even welke hieronder URIs (Universeel Herkenningsteken van het Middel) toe als:
    * `https://login.microsoftonline.com/common/oauth2/nativeclient`
@@ -55,7 +55,7 @@ In het bovengenoemde geval, **Rekeningen in om het even welke organisatorische f
    In dit geval wordt `https://login.microsoftonline.com/common/oauth2/nativeclient` gebruikt als een omleidings-URI.
 
 1. Klik **vormen** na het toevoegen van elke URL en vorm uw montages volgens uw vereisten.
-   ![ Redirect URI ](/help/forms/using/assets/azure_redirecturi.png)
+   ![&#x200B; Redirect URI &#x200B;](/help/forms/using/assets/azure_redirecturi.png)
 
    >[!NOTE]
    >
@@ -78,11 +78,11 @@ Vervolgens moet u de machtigingscode genereren, zoals in de volgende stappen wor
    > Als er één toepassing voor huurders is, vervangt u `common` door uw `[tenantid]` in de volgende URL voor het genereren van machtigingscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Wanneer u de bovenstaande URL typt, wordt u omgeleid naar het aanmeldingsscherm:
-   ![ Login het Scherm ](/help/forms/using/assets/azure_loginscreen.png)
+   ![&#x200B; Login het Scherm &#x200B;](/help/forms/using/assets/azure_loginscreen.png)
 
 1. Ga e-mail in, klik **daarna** en het toepassingstoestemmingsscherm verschijnt:
 
-   ![ Toestemming ](/help/forms/using/assets/azure_permission.png) toestaan
+   ![&#x200B; Toestemming &#x200B;](/help/forms/using/assets/azure_permission.png) toestaan
 
 1. Wanneer u toestemming toestaat, wordt u omgeleid naar een nieuwe URL als: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
@@ -129,7 +129,7 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
    >* Het protocol van de Veiligheid van het Vervoer heeft de volgende geldige waarden: &quot;leeg&quot;, &quot;SSL&quot;of &quot;TLS&quot;. Plaats waarden van **SMTP de Veiligheid van het Vervoer** en **ontvang de Veiligheid van het Vervoer** aan **TLS** voor het toelaten van de de authentificatiedienst van de Auth.
    >* **POP3 protocol** wordt niet gesteund voor OAuth terwijl het gebruiken van e-maileindpunten.
 
-   ![ de Montages van de Verbinding ](/help/forms/using/assets/oauth_connectionsettings.png)
+   ![&#x200B; de Montages van de Verbinding &#x200B;](/help/forms/using/assets/oauth_connectionsettings.png)
 
 1. Test de toepassing door **te selecteren verzend met Document**.
 1. Verstrek **AAN** en **van** adressen.
@@ -147,11 +147,11 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 1. Kopieer de waarde van het geproduceerde **verfrissen Token**.
 1. Klik **sparen** om de details te bewaren.
 
-   ![ Bericht van de Taak ](/help/forms/using/assets/task_notification.png)
+   ![&#x200B; Bericht van de Taak &#x200B;](/help/forms/using/assets/task_notification.png)
 
    >[!NOTE]
    >
-   > Om meer informatie met betrekking tot taakberichten te kennen, [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL#create-an-email-endpoint-for-the-complete-task-service).
+   > Om meer informatie met betrekking tot taakberichten te kennen, [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Om e-maileindpunt te vormen {#configure_email_endpoint}
 
@@ -161,11 +161,11 @@ Configureer nu de e-mailservice op de nieuwste JEE-server door u aan te melden b
 1. Kopieer de waarde van het geproduceerde **verfrissen Token**.
 1. Klik **sparen** om de details te bewaren.
 
-   ![ de Montages van de Verbinding ](/help/forms/using/assets/oauth_emailendpoint.png)
+   ![&#x200B; de Montages van de Verbinding &#x200B;](/help/forms/using/assets/oauth_emailendpoint.png)
 
    >[!NOTE]
    >
-   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [ een e-maileindpunt ](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL) vormen.
+   > Om meer informatie te kennen bij het vormen van e-maileindpunten, klik [&#x200B; een e-maileindpunt &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=nl-NL) vormen.
 
 ## Problemen oplossen {#troubleshooting}
 

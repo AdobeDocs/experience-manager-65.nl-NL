@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Het Beheer van de correspondentie verstrekt brievenmalplaatjes in het [ toe:voegen-op pakket van AEM Forms ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en zakelijke behoeften. Het pakket bevat de volgende sjablonen:
+Het Beheer van de correspondentie verstrekt brievenmalplaatjes in het [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en zakelijke behoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig
@@ -40,7 +40,7 @@ Hier volgen de veelvoorkomende velden in alle sjablonen in dit pakket:
 * Tekst sluiten
 * Handtekeningtekst
 
-![ Alle vermelde de brievenmalplaatjes van CM ](assets/templatescorrespondence.png)
+![&#x200B; Alle vermelde de brievenmalplaatjes van CM &#x200B;](assets/templatescorrespondence.png)
 
 Nadat u het pakket AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES hebt geïnstalleerd, worden de sjablonen weergegeven in de map templates
 
@@ -48,7 +48,7 @@ Nadat u het pakket AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES hebt geïnstalleerd,
 
 Met een logo bovenaan is de klassieke sjabloon geschikt voor een gewone professionele letter.
 
-![ klassieke ](assets/classic.png)
+![&#x200B; klassieke &#x200B;](assets/classic.png)
 
 PDF voorbeeld van een letter die is gemaakt met de klassieke sjabloon
 
@@ -56,7 +56,7 @@ PDF voorbeeld van een letter die is gemaakt met de klassieke sjabloon
 
 Bevat velden voor het vastleggen van telefoonnummer en e-mailadres. Een klassieke eenvoudige sjabloon lijkt op de klassieke sjabloon, behalve dat er geen velden zijn waarin u het adres van de ontvanger kunt invoeren.
 
-![ fragment van de informatie van het Contact ](assets/classicsimple.png)
+![&#x200B; fragment van de informatie van het Contact &#x200B;](assets/classicsimple.png)
 
 PDF voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
 
@@ -64,7 +64,7 @@ PDF voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
 
 De sjabloon Balanced Left bevat een logo links van de letter.
 
-![ balancedleft ](assets/balancedleft.png)
+![&#x200B; balancedleft &#x200B;](assets/balancedleft.png)
 
 PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
 
@@ -72,7 +72,7 @@ PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
 
 Een evenwichtige rechtersjabloon heeft het bedrijfslogo aan de linkerkant en biedt ruimte voor het invoeren van het geadresseerde adres op de brief zelf. De evenwichtige sjabloon Rechts bevat ook een voettekst die doorloopt wanneer uw brief meerdere pagina&#39;s heeft.
 
-![ balancedright ](assets/balancedright.png)
+![&#x200B; balancedright &#x200B;](assets/balancedright.png)
 
 PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Right
 
@@ -80,7 +80,7 @@ PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Right
 
 Het Visuele Linkermalplaatje heeft een zijhoofd op de linkerzijde van de pagina met het bedrijfsembleem dat over de zijhoofd wordt geplaatst. De visuele Linkermalplaatje heeft een onderwerpgebied maar geen footer.
 
-![ visualleft ](assets/visualleft.png)
+![&#x200B; visualleft &#x200B;](assets/visualleft.png)
 
 PDF voorproef van een gemaakte brief gebruikend het Visuele Linkermalplaatje
 
@@ -88,7 +88,7 @@ PDF voorproef van een gemaakte brief gebruikend het Visuele Linkermalplaatje
 
 Het visuele Bovenste malplaatje heeft visuele marge op de bovenkant. Het Visuele Top malplaatje heeft een gebied om het adres van de ontvanger op de pagina zelf in te gaan. De visuele Top malplaatje heeft het onderwerpgebied en een footer die voor brieven opnieuw stroomt die tot veelvoudige pagina&#39;s uitbreiden.
 
-![ visualtop ](assets/visualtop.png)
+![&#x200B; visualtop &#x200B;](assets/visualtop.png)
 
 PDF voorproef van een gemaakte brief gebruikend het Visuele Top malplaatje
 
@@ -96,6 +96,6 @@ PDF voorproef van een gemaakte brief gebruikend het Visuele Top malplaatje
 
 De visuele Top - de Klassieke malplaatje heeft een kopbal bovenop de pagina met het bedrijfsembleem. De visuele top - Klassieke malplaatje heeft een gebied om een onderwerp maar geen footer in te gaan.
 
-![ visualtopclassic ](assets/visualtopclassic.png)
+![&#x200B; visualtopclassic &#x200B;](assets/visualtopclassic.png)
 
 PDF voorproef van een gemaakte brief gebruikend Visuele Top - Klassieke malplaatje

@@ -27,8 +27,8 @@ De modellen van het werkschema bestaan uit een reeks stappen van diverse types. 
 >
 >Raadpleeg de volgende secties voor modulespecifieke stappen:
 >
->* [ Verwijzing van de Stap van de Werkstroom van AEM Forms ](/help/forms/using/aem-forms-workflow-step-reference.md)
->* [ het Verwerken Assets die de Managers en de Werkschema&#39;s van Media gebruiken ](/help/assets/media-handlers.md)
+>* [&#x200B; Verwijzing van de Stap van de Werkstroom van AEM Forms &#x200B;](/help/forms/using/aem-forms-workflow-step-reference.md)
+>* [&#x200B; het Verwerken Assets die de Managers en de Werkschema&#39;s van Media gebruiken &#x200B;](/help/assets/media-handlers.md)
 >
 
 ## Step Properties {#step-properties}
@@ -47,7 +47,7 @@ Een beschrijving van de stap.
 
 * **Werkgebied van het Werkschema**
 
-  Een drop-down selecteur om a [ Stadium ](/help/sites-developing/workflows.md#workflow-stages) op de stap toe te passen.
+  Een drop-down selecteur om a [&#x200B; Stadium &#x200B;](/help/sites-developing/workflows.md#workflow-stages) op de stap toe te passen.
 
 * **Onderbreking**
 
@@ -76,13 +76,13 @@ De volgende eigenschappen zijn beschikbaar voor vele componenten van de werksche
    * Met een keuzelijst kunt u naar een gebruiker of groep navigeren en deze selecteren.
    * Als u de stap aan een specifieke gebruiker toewijst, dan slechts kan deze gebruiker op de stap handelen.
    * Als u de stap aan een volledige groep toewijst, toen wanneer het werkschema deze stap bereikt, hebben alle gebruikers in deze groep de actie in hun **Inbox van het Werkschema**.
-   * Zie [ Deelnemend in Werkschema&#39;s ](/help/sites-authoring/workflows-participating.md) voor meer informatie.
+   * Zie [&#x200B; Deelnemend in Werkschema&#39;s &#x200B;](/help/sites-authoring/workflows-participating.md) voor meer informatie.
 
 ## EN splitsen {#and-split}
 
 **EN Splitst** leidt tot een spleet in het werkschema, waarna beide takken actief zijn. U voegt workflowstappen naar wens toe aan elke vertakking. Met deze stap kunt u meerdere verwerkingspaden in de workflow opnemen. U kunt bijvoorbeeld toestaan dat bepaalde stappen van de revisie parallel worden uitgevoerd, wat tijd bespaart.
 
-![ wf-26 ](assets/wf-26.png)
+![&#x200B; wf-26 &#x200B;](assets/wf-26.png)
 
 ### EN Splitsen - Configuratie {#and-split-configuration}
 
@@ -95,7 +95,7 @@ De splitsing configureren:
 
 * Voeg zo nodig workflowstappen toe aan de vertakkingen.
 
-  ![ wf-27 ](assets/wf-27.png)
+  ![&#x200B; wf-27 &#x200B;](assets/wf-27.png)
 
 ## Containerstap {#container-step}
 
@@ -103,7 +103,7 @@ Een containerstap start een ander workflowmodel dat wordt uitgevoerd als een ond
 
 Met deze container kunt u workflowmodellen opnieuw gebruiken om algemene stappen te implementeren. Een workflowmodel voor vertaling kan bijvoorbeeld worden gebruikt in meerdere bewerkingsworkflows.
 
-![ wf-28 ](assets/wf-28.png)
+![&#x200B; wf-28 &#x200B;](assets/wf-28.png)
 
 ### Containerstap - Configuratie {#container-step-configuration}
 
@@ -133,7 +133,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
    * **stap van het Doel**: Selecteer de stap na het evalueren van de voorwaarde voor de verpletterende uitdrukking uit te voeren.
    * **Verpletterend Uitdrukking**: Selecteer de Definitie van de Regel, Extern Manuscript, of een manuscript ECMA dat of bepaalt om de **Stap van het Doel** uit te voeren.
 
-      * **Definitie van de Regel:** Gebruik de [ uitdrukkingsredacteur ](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) om de regel te bepalen.
+      * **Definitie van de Regel:** Gebruik de [&#x200B; uitdrukkingsredacteur &#x200B;](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) om de regel te bepalen.
       * **Extern Manuscript:** de weg van het externe manuscript.
       * **Manuscript ECMA**: Het manuscript dat bepaalt of om **te voeren gaat Stap**.
 
@@ -172,13 +172,13 @@ function check(){
 
 ### Simuleren van een lus for met behulp van Regeldefinitie {#simulateforloop}
 
-U kunt ook simuleren voor lijn gebruikend de Definitie van de Regel als verpletterende uitdrukking. [ creeer a **telling** variabele ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) van Lang gegevenstype. De Uitdrukking van het gebruik **als kaartwijze in de**&#x200B;[ Vastgestelde Veranderlijke ](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)**stap om de waarde van de** telling **variabele aan** telling + 1 **op elke uitvoering van de** Vastgestelde Veranderlijke **stap te plaatsen.**
+U kunt ook simuleren voor lijn gebruikend de Definitie van de Regel als verpletterende uitdrukking. [&#x200B; creeer a **telling** variabele &#x200B;](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) van Lang gegevenstype. De Uitdrukking van het gebruik **als kaartwijze in de**&#x200B;[&#x200B; Vastgestelde Veranderlijke &#x200B;](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)**stap om de waarde van de** telling **variabele aan** telling + 1 **op elke uitvoering van de** Vastgestelde Veranderlijke **stap te plaatsen.**
 
-![ Simulerend a voor lijn ](assets/variable_use_case_count_new.png)
+![&#x200B; Simulerend a voor lijn &#x200B;](assets/variable_use_case_count_new.png)
 
 In de **Goto Stap**, gebruik **Vastgestelde Variabele** als **Stap van het Doel** en **telling &lt; 5** als verpletterende uitdrukking.
 
-![ Voorwaarde voor het simuleren van a voor lijn ](assets/variable_use_case_count1_new.png)
+![&#x200B; Voorwaarde voor het simuleren van a voor lijn &#x200B;](assets/variable_use_case_count1_new.png)
 
 De **Vastgestelde Veranderlijke** stap loopt herhaaldelijk, die de waarde van **tellings** variabele door 1 op elke looppas verhogen tot de waarde 5 bereikt.
 
@@ -188,9 +188,9 @@ De **Vastgestelde Veranderlijke** stap loopt herhaaldelijk, die de waarde van **
 
 >[!NOTE]
 >
->Zie [ OF Gesplitste stap ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=nl-NL#use-a-variable)
+>Zie [&#x200B; OF Gesplitste stap &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=nl-NL#use-a-variable)
 
-![ Vertakkend gebruikend OF Gesplitst ](assets/variables_orsplit_new.png)
+![&#x200B; Vertakkend gebruikend OF Gesplitst &#x200B;](assets/variables_orsplit_new.png)
 
 ### OF Splitsen - Configuratie {#or-split-configuration}
 
@@ -222,7 +222,7 @@ De splitsing configureren:
 
   >[!NOTE]
   >
-  >Zie [ het bepalen van een Regel voor OF Splitst ](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >Zie [&#x200B; het bepalen van een Regel voor OF Splitst &#x200B;](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Voeg zo nodig workflowstappen toe aan de vertakkingen.
 
@@ -251,7 +251,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 >[!NOTE]
 >
->Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Om e-mailberichten in AEM te vormen., zie [ het Vormen E-mailBericht ](/help/sites-administering/notification.md#configuringemailnotification).
+>Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Om e-mailberichten in AEM te vormen., zie [&#x200B; het Vormen E-mailBericht &#x200B;](/help/sites-administering/notification.md#configuringemailnotification).
 
 ### Stap deelnemer van dialoogvenster {#dialog-participant-step}
 
@@ -269,14 +269,14 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [Gebruiker/groep](#step-properties-user-group-tab)
 * **Dialoog**
 
-   * **Weg van de Dialoog**: De weg aan de dialoogknoop van de [ dialoog u ](#dialog-participant-step-creating-a-dialog) creeert.
+   * **Weg van de Dialoog**: De weg aan de dialoogknoop van de [&#x200B; dialoog u &#x200B;](#dialog-participant-step-creating-a-dialog) creeert.
 
 #### Stap deelnemer van dialoogvenster - Een dialoogvenster maken {#dialog-participant-step-creating-a-dialog}
 
 Als u een dialoogvenster wilt maken, moet u het dialoogvenster maken:
 
-* Beslis waar het resulterende gegeven [ wordt opgeslagen in de nuttige lading ](#dialog-participant-step-storing-data-in-the-payload).
-* [ bepaalt de dialoog; omvat het bepalen van de gebieden die worden gebruikt om de gegevens ](#dialog-participant-step-dialog-definition) te verzamelen en te bewaren.
+* Beslis waar het resulterende gegeven [&#x200B; wordt opgeslagen in de nuttige lading &#x200B;](#dialog-participant-step-storing-data-in-the-payload).
+* [&#x200B; bepaalt de dialoog; omvat het bepalen van de gebieden die worden gebruikt om de gegevens &#x200B;](#dialog-participant-step-dialog-definition) te verzamelen en te bewaren.
 
 #### Stap van de Deelnemer van de dialoog - het Opslaan van Gegevens in de Lading {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -324,11 +324,11 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
    >[!NOTE]
    >
-   >Zie [ Creërend en Vormend een Dialoog ](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
+   >Zie [&#x200B; Creërend en Vormend een Dialoog &#x200B;](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **Bezit van de Weg van de Dialoog**
 
-   De **Stap van de Deelnemer van de Dialoog** heeft het **bezit van de Weg van de Dialoog** (samen met de eigenschappen van de Stap van de a [ Deelnemer ](#participant-step)). De waarde van het **bezit van de Weg van de Dialoog** is de weg aan de `dialog` knoop van uw dialoog.
+   De **Stap van de Deelnemer van de Dialoog** heeft het **bezit van de Weg van de Dialoog** (samen met de eigenschappen van de Stap van de a [&#x200B; Deelnemer &#x200B;](#participant-step)). De waarde van het **bezit van de Weg van de Dialoog** is de weg aan de `dialog` knoop van uw dialoog.
 
    Het dialoogvenster is bijvoorbeeld opgenomen in een component met de naam `EmailWatch` die is opgeslagen in het knooppunt:
 
@@ -338,7 +338,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
    `/apps/myapp/workflow/dialogs/EmailWatch/cq:dialog`
 
-   ![ wf-30 ](assets/wf-30.png)
+   ![&#x200B; wf-30 &#x200B;](assets/wf-30.png)
 
 1. **Definitie van de Dialoog van het Voorbeeld**
 
@@ -372,7 +372,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
    In de interface met aanraakbediening resulteert dit voorbeeld in een dialoogvenster zoals:
 
-   ![ chlimage_1-70 ](assets/chlimage_1-70.png)
+   ![&#x200B; chlimage_1-70 &#x200B;](assets/chlimage_1-70.png)
 
 ### Dynamische deelnemersstap {#dynamic-participant-step}
 
@@ -387,13 +387,13 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [Vaak](#step-properties-common-tab)
 * **Chooser van de Deelnemer**
 
-   * **Chooser van de Deelnemer**: De naam van de [ deelnemerverkiezer die u ](#developingtheparticipantchooser) creeert.
+   * **Chooser van de Deelnemer**: De naam van de [&#x200B; deelnemerverkiezer die u &#x200B;](#developingtheparticipantchooser) creeert.
    * **Argumenten**: Om het even welke vereiste argumenten.
    * **E-mail**: Of een e-mailbericht naar de gebruiker zou moeten worden verzonden.
 
 * **Dialoog**
 
-   * **Weg van de Dialoog**: De weg aan de dialoogknoop van de [ dialoog u creeert (zoals met de **Stap van de Deelnemer van de Dialoog**) ](#dialog-participant-step-creating-a-dialog).
+   * **Weg van de Dialoog**: De weg aan de dialoogknoop van de [&#x200B; dialoog u creeert (zoals met de **Stap van de Deelnemer van de Dialoog**) &#x200B;](#dialog-participant-step-creating-a-dialog).
 
 #### De dynamische Stap van de Deelnemer - ontwikkelt de deelnemerverkiezer {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -430,7 +430,7 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
 * **dienst OSGi**
 
-  De diensten moeten [ com.day.cq.workflow.exec.ParticipantStepChooser ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface uitvoeren. De interface definieert de volgende leden:
+  De diensten moeten [&#x200B; com.day.cq.workflow.exec.ParticipantStepChooser &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface uitvoeren. De interface definieert de volgende leden:
 
    * `SERVICE_PROPERTY_LABEL` -veld: gebruik dit veld om de naam van de deelnemerkiezer op te geven. De naam verschijnt in een lijst van beschikbare deelnemerverkieskundigen in de **Dynamische eigenschappen van de Stap van de Deelnemer**.
 
@@ -506,7 +506,7 @@ Als u de stap wilt configureren, geeft u de groep of gebruiker op waaraan het we
 
 >[!CAUTION]
 >
->Deze sectie behandelt de [ sectie van Forms van de Componenten van de Stichting voor de Authoring van de Pagina ](/help/sites-authoring/default-components-foundation.md#form).
+>Deze sectie behandelt de [&#x200B; sectie van Forms van de Componenten van de Stichting voor de Authoring van de Pagina &#x200B;](/help/sites-authoring/default-components-foundation.md#form).
 
 #### Stap van de deelnemer van de vorm - Configuratie {#form-participant-step-configuration}
 
@@ -516,7 +516,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [Gebruiker/groep](#step-properties-user-group-tab)
 * **Vorm**
 
-   * **Weg van de Vorm**: De weg aan de [ vorm u ](#form-participant-step-creating-the-form) creeert.
+   * **Weg van de Vorm**: De weg aan de [&#x200B; vorm u &#x200B;](#form-participant-step-creating-the-form) creeert.
 
 #### Stap deelnemer aan formulier - Het formulier maken {#form-participant-step-creating-the-form}
 
@@ -546,7 +546,7 @@ Het formulier kan overal in de gegevensopslagruimte worden gevonden, maar workfl
 
 De **Willekeurige Chooser van de Deelnemer** stap is een deelnemerverkiezer die het geproduceerde het werkpunt aan een gebruiker toewijst die willekeurig uit een lijst wordt geselecteerd.
 
-![ wf-31 ](assets/wf-31.png)
+![&#x200B; wf-31 &#x200B;](assets/wf-31.png)
 
 #### Kiezer voor willekeurige deelnemers - Configuratie {#random-participant-chooser-configuration}
 
@@ -571,7 +571,7 @@ Om de stap te vormen, geef het gebruiken van de volgende lusjes uit:
 
 A **Stap van het Proces** voert een ECMAScript uit of roept de dienst OSGi om automatische verwerking uit te voeren.
 
-![ wf-32 ](assets/wf-32.png)
+![&#x200B; wf-32 &#x200B;](assets/wf-32.png)
 
 ### Processtap - Configuratie {#process-step-configuration}
 
@@ -582,9 +582,9 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
    * **Proces**: De uit te voeren procesimplementatie. Gebruik het drop-down menu om de dienst te selecteren ECMAScript of OSGi. Voor informatie over:
 
-      * De standaardECMAScripts en OSGi diensten, zie [ Ingebouwde Processen voor de Stappen van het Proces ](/help/sites-developing/workflows-process-ref.md).
-      * Creërend ECMAScripts voor een stap van het Proces, zie [ Uitvoerend een Stap van het Proces met ECMAScript ](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creërend de diensten OSGi voor een stap van het Proces, zie [ Uitvoerend een Stap van het Proces met een Klasse Java™ ](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+      * De standaardECMAScripts en OSGi diensten, zie [&#x200B; Ingebouwde Processen voor de Stappen van het Proces &#x200B;](/help/sites-developing/workflows-process-ref.md).
+      * Creërend ECMAScripts voor een stap van het Proces, zie [&#x200B; Uitvoerend een Stap van het Proces met ECMAScript &#x200B;](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * Creërend de diensten OSGi voor een stap van het Proces, zie [&#x200B; Uitvoerend een Stap van het Proces met een Klasse Java™ &#x200B;](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
    * **de Vooruitgang van de Bewerker 0&rbrace;: Selecteer deze optie om het werkschema aan de volgende stap na uitvoering automatisch vooruit te gaan.** Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **Argumenten**: Argumenten die aan het proces moeten worden overgegaan.
@@ -593,7 +593,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 Met de stap Variabele instellen kunt u de waarde van een variabele instellen en de volgorde definiëren waarin de waarden worden ingesteld. De variabele wordt geplaatst in de orde dat de veranderlijke toewijzingen in de Vastgestelde stap van de Variabele vermeld zijn.
 
-![ voeg afbeelding toe om een variabele ](assets/set_variable_addmappingnew.png) te plaatsen
+![&#x200B; voeg afbeelding toe om een variabele &#x200B;](assets/set_variable_addmappingnew.png) te plaatsen
 
 ### Variabele instellen - Configuratie {#setvariable}
 

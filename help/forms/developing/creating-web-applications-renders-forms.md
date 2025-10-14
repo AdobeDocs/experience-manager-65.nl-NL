@@ -27,25 +27,25 @@ U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aa
 
 >[!NOTE]
 >
->In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie [ teruggevend Forms dat op Fragments ](/help/forms/developing/rendering-forms-based-fragments.md) wordt gebaseerd.)
+>In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie [&#x200B; teruggevend Forms dat op Fragments &#x200B;](/help/forms/developing/rendering-forms-based-fragments.md) wordt gebaseerd.)
 
 Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server, waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
 
 In deze sectie wordt besproken hoe u een webtoepassing kunt maken waarmee de gebruiker op Amerika gebaseerde formuliergegevens of op Canada gebaseerde formuliergegevens kan selecteren, zoals in de volgende afbeelding wordt getoond.
 
-![ cw_cw_fragmentwebclient ](assets/cw_cw_fragmentwebclient.png)
+![&#x200B; cw_cw_fragmentwebclient &#x200B;](assets/cw_cw_fragmentwebclient.png)
 
 Het weergegeven formulier is een formulier dat is gebaseerd op fragmenten. Als de gebruiker Amerikaanse gegevens selecteert, gebruikt het geretourneerde formulier fragmenten op basis van Amerikaanse gegevens. De voettekst van het formulier bevat bijvoorbeeld een Amerikaans adres, zoals in de volgende afbeelding wordt getoond.
 
-![ cw_cw_fragementformfooter ](assets/cw_cw_fragementformfooter.png)
+![&#x200B; cw_cw_fragementformfooter &#x200B;](assets/cw_cw_fragementformfooter.png)
 
 Als de gebruiker Canadese gegevens selecteert, bevat het geretourneerde formulier ook een Canadees adres, zoals in de volgende afbeelding wordt getoond.
 
-![ cw_cw_fragementformfootercnd ](assets/cw_cw_fragementformfootercnd.png)
+![&#x200B; cw_cw_fragementformfootercnd &#x200B;](assets/cw_cw_fragementformfootercnd.png)
 
 >[!NOTE]
 >
->Voor informatie over het creëren van vormontwerpen die op fragmenten worden gebaseerd, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Voor informatie over het creëren van vormontwerpen die op fragmenten worden gebaseerd, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Dossiers van de Steekproef**
 
@@ -55,7 +55,7 @@ In deze sectie worden voorbeeldbestanden gebruikt die zich op de volgende locati
 
 waar &lt; *installatiemap*> is de installatiepad. Voor de cliënttoepassing, werd het dossier van de Orde van de Aankoop Dynamic.xdp gekopieerd van deze installatielocatie en opgesteld aan een toepassing van Forms genoemd *Toepassingen/FormsApplication*. Het bestand Purchase Order Dynamic.xdp wordt in een map met de naam FormsFolder geplaatst. Op dezelfde manier worden de fragmenten in de map Fragments geplaatst, zoals in de volgende afbeelding wordt getoond.
 
-![ cw_cw_fragmentsrepository ](assets/cw_cw_fragmentsrepository.png)
+![&#x200B; cw_cw_fragmentsrepository &#x200B;](assets/cw_cw_fragmentsrepository.png)
 
 Als u toegang wilt krijgen tot het formulierontwerp Purchase Order Dynamic.xdp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` op als de formuliernaam (de eerste parameter die aan de methode `renderPDFForm` wordt doorgegeven) en `repository:///` als de URI-waarde van de inhoudsbasis.
 
@@ -63,7 +63,7 @@ De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaa
 
 >[!NOTE]
 >
->Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [ werkbench Hulp ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [&#x200B; werkbench Hulp &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -91,7 +91,7 @@ In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-Voor de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **om een Webproject tot stand te brengen:**
 
@@ -119,7 +119,7 @@ Voor de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van
 
 >[!NOTE]
 >
->Voor informatie over het creëren van de pagina van de HTML die `RenderFormFragment` servlet van Java aanhaalt, zie [ Creërend de Web-pagina ](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Voor informatie over het creëren van de pagina van de HTML die `RenderFormFragment` servlet van Java aanhaalt, zie [&#x200B; Creërend de Web-pagina &#x200B;](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Java-toepassingslogica voor de servlet maken {#creating-java-application-logic-for-the-servlet}
 
@@ -142,9 +142,9 @@ Normaal gesproken plaatst u geen clientcode in een Java-servlet- `doGet` of `doP
 
 Als u een formulier wilt genereren op basis van fragmenten met de API van de Forms-service, voert u de volgende taken uit:
 
-1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Hiermee haalt u de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geeft u aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als Amerikaans wordt voorgelegd, creeer a `com.adobe.idp.Document` dat gegevens in de *Inkooporder US.xml* opslaat. Eveneens, als Canadees, creeer dan a `com.adobe.idp.Document` dat gegevens in het *Inkooporder Canada.xml* dossier opslaat.
-1. Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+1. Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Maak een `FormsServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 1. Maak een `URLSpec` -object dat URI-waarden opslaat met behulp van de constructor.
 1. Roep de methode `setApplicationWebRoot` van het object `URLSpec` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
@@ -154,7 +154,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
    * Een `com.adobe.idp.Document` -object dat gegevens bevat die met het formulier moeten worden samengevoegd (gemaakt in stap 2).
-   * Een `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Voor meer informatie, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Een `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Voor meer informatie, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Een `URLSpec` -object dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
    * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
 
@@ -329,7 +329,7 @@ De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met 
              }
 ```
 
-De volgende HTML-code bevindt zich in het bestand index.html dat tijdens de installatie van de ontwikkelomgeving is gemaakt. (Zie [ Creërend een Webproject ](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+De volgende HTML-code bevindt zich in het bestand index.html dat tijdens de installatie van de ontwikkelomgeving is gemaakt. (Zie [&#x200B; Creërend een Webproject &#x200B;](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

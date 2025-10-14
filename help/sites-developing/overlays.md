@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # Bedekkingen{#overlays}
 
-Adobe Experience Manager (AEM) - en vóór dat, CQ-heeft lang het beginsel van bekledingen gebruikt om u de [ consoles ](/help/sites-developing/customizing-consoles-touch.md) en andere functionaliteit (bijvoorbeeld, [ pagina het auteursrecht ](/help/sites-developing/customizing-page-authoring-touch.md)) uit te breiden en aan te passen.
+Adobe Experience Manager (AEM) - en vóór dat, CQ-heeft lang het beginsel van bekledingen gebruikt om u de [&#x200B; consoles &#x200B;](/help/sites-developing/customizing-consoles-touch.md) en andere functionaliteit (bijvoorbeeld, [&#x200B; pagina het auteursrecht &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md)) uit te breiden en aan te passen.
 
 Bedekking is een term die in veel contexten wordt gebruikt. In deze context (uitbreiding van AEM), betekent een bekleding om de vooraf bepaalde functionaliteit te nemen en uw eigen definities op te leggen over dat (om de standaardfunctionaliteit aan te passen).
 
-In een standaardinstantie blijft de vooraf gedefinieerde functionaliteit onder `/libs` en het wordt aanbevolen de overlay (aanpassingen) onder de `/apps` -vertakking te definiëren. AEM gebruikt een onderzoekspad om een middel te vinden, eerst zoekend `/apps` tak en toen de `/libs` tak (de [ onderzoekspad kan worden gevormd ](#configuring-the-search-paths)). Dit mechanisme betekent dat uw bedekking (en de aanpassingen die daar worden bepaald) prioriteit heeft.
+In een standaardinstantie blijft de vooraf gedefinieerde functionaliteit onder `/libs` en het wordt aanbevolen de overlay (aanpassingen) onder de `/apps` -vertakking te definiëren. AEM gebruikt een onderzoekspad om een middel te vinden, eerst zoekend `/apps` tak en toen de `/libs` tak (de [&#x200B; onderzoekspad kan worden gevormd &#x200B;](#configuring-the-search-paths)). Dit mechanisme betekent dat uw bedekking (en de aanpassingen die daar worden bepaald) prioriteit heeft.
 
 Sinds AEM 6.0 zijn wijzigingen aangebracht in de manier waarop overlays worden geïmplementeerd en gebruikt:
 
-* AEM 6.0 en op - voor [ graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) - verwante overlays (namelijk touch-enabled UI)
+* AEM 6.0 en op - voor [&#x200B; graniet &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) - verwante overlays (namelijk touch-enabled UI)
 
    * Methode
 
       * Reconstrueer de juiste `/libs` -structuur onder `/apps` .
 
-        Dit vereist geen 1:1 exemplaar, wordt de [ Verschuivende Fusie van het Middel ](/help/sites-developing/sling-resource-merger.md) gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen met (het onderscheiden) mechanismen toegang te hebben en samen te voegen.
+        Dit vereist geen 1:1 exemplaar, wordt de [&#x200B; Verschuivende Fusie van het Middel &#x200B;](/help/sites-developing/sling-resource-merger.md) gebruikt om de originele definities van verwijzingen te voorzien die worden vereist. De het Verdelen Fusie van het Middel verleent de diensten om tot middelen met (het onderscheiden) mechanismen toegang te hebben en samen te voegen.
 
       * Breng onder `/apps` eventuele wijzigingen aan.
 
@@ -57,11 +57,11 @@ Sinds AEM 6.0 zijn wijzigingen aangebracht in de manier waarop overlays worden g
 
 >[!CAUTION]
 >
->De [ Verschuivende Fusie van het Middel ](/help/sites-developing/sling-resource-merger.md) en de verwante methodes kunnen slechts met [ Graniet ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) worden gebruikt. Dit betekent dat het maken van een bedekking met een skeletstructuur alleen geschikt is voor de standaardinterface met aanraakbediening.
+>De [&#x200B; Verschuivende Fusie van het Middel &#x200B;](/help/sites-developing/sling-resource-merger.md) en de verwante methodes kunnen slechts met [&#x200B; Graniet &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) worden gebruikt. Dit betekent dat het maken van een bedekking met een skeletstructuur alleen geschikt is voor de standaardinterface met aanraakbediening.
 >
 >Bij overlays voor andere gebieden (inclusief de klassieke UI) worden het juiste knooppunt en de volledige substructuur gekopieerd en worden vervolgens de vereiste wijzigingen aangebracht.
 
-De bekledingen zijn de geadviseerde methode voor vele veranderingen, zoals [ vormend uw consoles ](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) of [ creërend uw selectiecategorie aan activa browser in het zijpaneel ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (gebruikt wanneer het ontwerpen van pagina&#39;s). Zij zijn vereist als:
+De bekledingen zijn de geadviseerde methode voor vele veranderingen, zoals [&#x200B; vormend uw consoles &#x200B;](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) of [&#x200B; creërend uw selectiecategorie aan activa browser in het zijpaneel &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (gebruikt wanneer het ontwerpen van pagina&#39;s). Zij zijn vereist als:
 
 * ***maak geen* veranderingen in de `/libs` tak &#x200B;** Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
 
@@ -75,7 +75,7 @@ De bekledingen zijn de geadviseerde methode voor vele veranderingen, zoals [ vor
 
 Voor bedekkingen is de geleverde bron een aggregaat van de opgehaalde bronnen en eigenschappen, afhankelijk van zoekpaden die kunnen worden gedefinieerd:
 
-* Het middel **Weg van het Onderzoek van de Oplossen** zoals die in de [ configuratie OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Apache het Verdelen van de Factory van de Resolver van het Middel** wordt bepaald.
+* Het middel **Weg van het Onderzoek van de Oplossen** zoals die in de [&#x200B; configuratie OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor de **Apache het Verdelen van de Factory van de Resolver van het Middel** wordt bepaald.
 
    * De top-down orde van onderzoekspaden wijst op hun respectieve prioriteiten.
    * In een standaardinstallatie, zijn de primaire gebreken `/apps`, `/libs` - zo heeft de inhoud van `/apps` een hogere prioriteit dan dat van `/libs` (namelijk het *overlays* het).

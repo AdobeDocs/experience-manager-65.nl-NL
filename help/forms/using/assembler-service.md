@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # De Assembler-service gebruiken{#using-assembler-service}
 
-Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over assembleerdienst, zie [ Overzicht van de Dienst van de Assembler ](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over assembleerdienst, zie [&#x200B; Overzicht van de Dienst van de Assembler &#x200B;](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 U kunt de verzamelservice gebruiken voor de volgende bewerkingen:
 
@@ -30,7 +30,7 @@ Met de Assembler-service kunt u twee of meer PDF-documenten samenvoegen tot éé
 
 In de volgende afbeelding ziet u drie brondocumenten die in één resulterend document worden samengevoegd.
 
-![ samenstellend een eenvoudig document van PDF van veelvoudige documenten van PDF ](assets/as_document_assembly.png)
+![&#x200B; samenstellend een eenvoudig document van PDF van veelvoudige documenten van PDF &#x200B;](assets/as_document_assembly.png)
 
 Een eenvoudig PDF-document samenstellen op basis van meerdere PDF-documenten
 
@@ -87,7 +87,7 @@ Wanneer u een document samenstelt, kunt u Bates-nummering gebruiken om een uniek
 
 In de volgende afbeelding ziet u een PDF-document dat een unieke id bevat in de koptekst van het document.
 
-![ A PDF document dat een uniek herkenningsteken in de kopbal van het document ](do-not-localize/as_batesnumber.png) bevat
+![&#x200B; A PDF document dat een uniek herkenningsteken in de kopbal van het document &#x200B;](do-not-localize/as_batesnumber.png) bevat
 
 Een PDF-document dat een unieke id bevat in de koptekst van het document
 
@@ -111,7 +111,7 @@ Hier volgen enkele voorbeelden van manieren waarop u XDP-documenten kunt samenst
 
 In de volgende afbeelding ziet u drie XDP-brondocumenten die in één resulterend XDP-document worden samengevoegd. Het resulterende XDP-document bevat de drie bron-XDP-documenten inclusief de bijbehorende gegevens. Het resulterende document krijgt basiskenmerken van het basisdocument, het eerste bron-XDP-document.
 
-![ samenstellend een eenvoudig XDP document van veelvoudige XDP documenten ](assets/as_assembler_xdpassembly.png)
+![&#x200B; samenstellend een eenvoudig XDP document van veelvoudige XDP documenten &#x200B;](assets/as_assembler_xdpassembly.png)
 
 Een eenvoudig XDP-document samenstellen op basis van meerdere XDP-documenten
 
@@ -243,7 +243,7 @@ Formulierontwerpers maken met LiveCycle Designer formulierfragmenten. Deze fragm
 
 In de volgende afbeelding ziet u twee XML-formulieren (XFA-sjablonen). Het formulier aan de linkerkant bevat een invoegpunt met de naam myInsertionPoint. Het formulier aan de rechterkant bevat een fragment met de naam myFragment.
 
-![ het Invoegen van vormfragmenten in een vorm XFA ](assets/as_assembler_fragment_assy_assembled.png)
+![&#x200B; het Invoegen van vormfragmenten in een vorm XFA &#x200B;](assets/as_assembler_fragment_assy_assembled.png)
 
 Formulierfragmenten invoegen in een XFA-formulier
 
@@ -283,7 +283,7 @@ U kunt de dienst van de Assembler gebruiken om een document van de PDF te demont
 
 In de volgende afbeelding worden pagina&#39;s 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
 
-![ Uittrekkend specifieke pagina&#39;s van een brondocument ](assets/as_intro_page_extraction.png)
+![&#x200B; Uittrekkend specifieke pagina&#39;s van een brondocument &#x200B;](assets/as_intro_page_extraction.png)
 
 Specifieke pagina&#39;s uit een brondocument extraheren
 
@@ -299,7 +299,7 @@ Het volgende voorbeeld is een DDX-document dat wordt gebruikt om het document te
 
 In de volgende afbeelding wordt DocA verdeeld in meerdere resulterende documenten. De eerste bladwijzer van niveau 1 op een pagina identificeert het begin van een nieuw resulterend document.
 
-![ het Verdelen van een brondocument dat op referenties in veelvoudige documenten wordt gebaseerd ](assets/as_intro_pdfsfrombookmarks.png)
+![&#x200B; het Verdelen van een brondocument dat op referenties in veelvoudige documenten wordt gebaseerd &#x200B;](assets/as_intro_pdfsfrombookmarks.png)
 
 Een brondocument dat is gebaseerd op bladwijzers, opsplitsen in meerdere documenten
 

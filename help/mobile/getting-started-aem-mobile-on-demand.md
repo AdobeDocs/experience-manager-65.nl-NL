@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
+>Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [&#x200B; Hulp van AEM Mobile On-demand Services &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 AEM biedt verschillende gereedschappen waarmee u uw inhoud kunt integreren in mobiele toepassingen.
 
@@ -32,9 +32,9 @@ AEM Preflight-app kan worden beschouwd als een testomgeving voor het voorvertone
 
 >[!NOTE]
 >
->Om diepgaand over Preflight te leren app, zie [ Gebruikend Preflight app van de AEM ](https://helpx.adobe.com/nl/digital-publishing-solution/help/preflight-app.html) in de Hulp van AEM Mobile On-demand Services.
+>Om diepgaand over Preflight te leren app, zie [&#x200B; Gebruikend Preflight app van de AEM &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/preflight-app.html) in de Hulp van AEM Mobile On-demand Services.
 
-![ chlimage_1-171 ](assets/chlimage_1-171.png)
+![&#x200B; chlimage_1-171 &#x200B;](assets/chlimage_1-171.png)
 
 >[!NOTE]
 >
@@ -52,11 +52,11 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 >[!NOTE]
 >
->Voordat u met AEM Mobile gaat werken en de stappen in deze gids voor aan de slag uitvoert, moeten gebruikers vertrouwd zijn met AEM. Leer de grondbeginselen van AEM [ hier ](/help/sites-deploying/deploy.md).
+>Voordat u met AEM Mobile gaat werken en de stappen in deze gids voor aan de slag uitvoert, moeten gebruikers vertrouwd zijn met AEM. Leer de grondbeginselen van AEM [&#x200B; hier &#x200B;](/help/sites-deploying/deploy.md).
 
 ### Het AEM Mobile-toepassingsdashboard begrijpen {#understanding-the-aem-mobile-application-dashboard}
 
-Alvorens de rollen en de verantwoordelijkheden te begrijpen, zou de gebruiker grondige kennis van **het Centrum van de Controle van AEM Mobile** of het **Dashboard van de Toepassing** moeten hebben. Klik [ hier ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor diepgaand begrip.
+Alvorens de rollen en de verantwoordelijkheden te begrijpen, zou de gebruiker grondige kennis van **het Centrum van de Controle van AEM Mobile** of het **Dashboard van de Toepassing** moeten hebben. Klik [&#x200B; hier &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor diepgaand begrip.
 
 ### AEM-beheerder {#aem-administrator}
 
@@ -69,7 +69,7 @@ Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app m
 * [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
 
-Om met de rollen en de verantwoordelijkheden van een Beheerder begonnen te worden, zie [ het Beheer Inhoud om AEM Mobile On-demand Services ](/help/mobile/aem-mobile.md) te gebruiken.
+Om met de rollen en de verantwoordelijkheden van een Beheerder begonnen te worden, zie [&#x200B; het Beheer Inhoud om AEM Mobile On-demand Services &#x200B;](/help/mobile/aem-mobile.md) te gebruiken.
 
 ## AEM Developer {#aem-developer}
 
@@ -82,7 +82,7 @@ Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken va
 * [Eigenschappen van inhoud en inhoud exporteren](/help/mobile/on-demand-content-properties-exporting.md)
 * [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-services.md)
 
-Om met de rollen en de verantwoordelijkheden van de Ontwikkelaar te beginnen, zie [ het Ontwikkelen AEM Inhoud voor AEM Mobile On-demand Services ](/help/mobile/aem-mobile-on-demand.md).
+Om met de rollen en de verantwoordelijkheden van de Ontwikkelaar te beginnen, zie [&#x200B; het Ontwikkelen AEM Inhoud voor AEM Mobile On-demand Services &#x200B;](/help/mobile/aem-mobile-on-demand.md).
 
 >[!NOTE]
 >
@@ -100,8 +100,8 @@ Een AEM auteur moet de volgende onderwerpen begrijpen wanneer hij een app maakt 
 * [Inhoud beheren](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 * [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md)
 
-Om met de rollen en de verantwoordelijkheden van een Auteur begonnen te worden, zie [ Authoring AEM Inhoud voor AEM Mobile On-demand Services App ](/help/mobile/mobile-apps-ondemand.md).
+Om met de rollen en de verantwoordelijkheden van een Auteur begonnen te worden, zie [&#x200B; Authoring AEM Inhoud voor AEM Mobile On-demand Services App &#x200B;](/help/mobile/mobile-apps-ondemand.md).
 
 >[!NOTE]
 >
->Een AEM auteur is ook verantwoordelijk voor het instellen van machtigingen, het maken van kaarten en lay-outs en het verzenden van pushberichten. Ook, voor meer informatie over methodes voor auteursinhoud; het beheren van artikelen en inzamelingen; het creëren van banners, kaarten, en lay-outs in AEM Mobile, zie [ AEM Mobile Portaal On-Demand ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Een AEM auteur is ook verantwoordelijk voor het instellen van machtigingen, het maken van kaarten en lay-outs en het verzenden van pushberichten. Ook, voor meer informatie over methodes voor auteursinhoud; het beheren van artikelen en inzamelingen; het creëren van banners, kaarten, en lay-outs in AEM Mobile, zie [&#x200B; AEM Mobile Portaal On-Demand &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html#dynamicpod_reference_2).

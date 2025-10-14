@@ -24,7 +24,7 @@ Als u een element verwijdert uit de instantie Auteur, wordt het element ook verw
 ## Een formulier verwijderen {#how-to-delete-a-form}
 
 1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://[hostname]:'port'/aem/forms.html.`
-1. Navigeer naar en selecteer het formulier dat u wilt verwijderen. Klik Schrapping ![ aem6forms_delete2 ](assets/aem6forms_delete2.png) van de toolbar en bevestig de schrappingsverrichting.
+1. Navigeer naar en selecteer het formulier dat u wilt verwijderen. Klik Schrapping ![&#x200B; aem6forms_delete2 &#x200B;](assets/aem6forms_delete2.png) van de toolbar en bevestig de schrappingsverrichting.
 
    >[!NOTE]
    >
@@ -44,6 +44,6 @@ Als u een element verwijdert uit de instantie Auteur, wordt het element ook verw
 
 In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
-Het is niet raadzaam een XFA-formulier te verwijderen waarnaar wordt verwezen door een adaptief formulier, omdat het het adaptieve formulier kan beschadigen. Wanneer een adaptief formulier verwijst naar een XFA-formulier, zijn de velden gebonden. Na XFA-verwijdering kan het aangepaste formulier zijn velden niet synchroniseren met de XFA-velden en wordt een foutbericht voor dergelijke velden weergegeven. Om meer over het effect van van referenced XFA schrapping en over vuile AFs te weten, zie [ het Bijwerken van referenced XFA vormen ](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+Het is niet raadzaam een XFA-formulier te verwijderen waarnaar wordt verwezen door een adaptief formulier, omdat het het adaptieve formulier kan beschadigen. Wanneer een adaptief formulier verwijst naar een XFA-formulier, zijn de velden gebonden. Na XFA-verwijdering kan het aangepaste formulier zijn velden niet synchroniseren met de XFA-velden en wordt een foutbericht voor dergelijke velden weergegeven. Om meer over het effect van van referenced XFA schrapping en over vuile AFs te weten, zie [&#x200B; het Bijwerken van referenced XFA vormen &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 
 Als u een dergelijk XFA-formulier wilt verwijderen, werkt u het aangepaste formulier bij en verwijdert u de bindingen met de XFA-velden.

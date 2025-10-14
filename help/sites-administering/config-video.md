@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # De component Video configureren {#configure-the-video-component}
 
-De [ component van de Video ](/help/sites-authoring/default-components-foundation.md#video) laat u vooraf bepaalde, uit-van-de-doos videoactiva op uw pagina plaatsen.
+De [&#x200B; component van de Video &#x200B;](/help/sites-authoring/default-components-foundation.md#video) laat u vooraf bepaalde, uit-van-de-doos videoactiva op uw pagina plaatsen.
 
-Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste transcodering plaatsvindt. Zie [ Mpeg installeren en AEM ](#install-ffmpeg) vormen. De beheerders vormen ook [ Videoprofielen ](#configure-video-profiles) voor gebruik met HTML5 elementen.
+Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste transcodering plaatsvindt. Zie [&#x200B; Mpeg installeren en AEM &#x200B;](#install-ffmpeg) vormen. De beheerders vormen ook [&#x200B; Videoprofielen &#x200B;](#configure-video-profiles) voor gebruik met HTML5 elementen.
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. De Adobe adviseert het gebruiken van de [ Componenten van de Kern Embed Component ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=nl-NL) in plaats daarvan.
+>Deze Foundation-component is vervangen. De Adobe adviseert het gebruiken van de [&#x200B; Componenten van de Kern Embed Component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=nl-NL) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -34,13 +34,13 @@ Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste t
 
 Definieer videoprofielen voor gebruik van HTML5-elementen. De hier gekozen methoden worden op volgorde gebruikt. Om toegang te hebben, gebruik [&#128279;](/help/sites-authoring/default-components-designmode.md) de Wijze van het Ontwerp van 0&rbrace; (Klassieke UI slechts) en selecteer het **[!UICONTROL Profiles]** lusje:
 
-![ chlimage_1-317 ](assets/chlimage_1-317.png)
+![&#x200B; chlimage_1-317 &#x200B;](assets/chlimage_1-317.png)
 
 Vanuit dit dialoogvenster kunt u ook het ontwerp configureren van de component Video en de parameters voor [!UICONTROL Playback] , [!UICONTROL Flash] en [!UICONTROL Advanced] .
 
 ## Mpeg installeren en AEM configureren {#install-ffmpeg}
 
-De videocomponent is voor het transcoderen van video&#39;s afhankelijk van de open-source product-MPEG van derden. Gedownload van [ https://ffmpeg.org/ ](https://ffmpeg.org/). Nadat u MPEG hebt geïnstalleerd, configureert u AEM voor het gebruik van een specifieke audiocodec en specifieke runtime-opties.
+De videocomponent is voor het transcoderen van video&#39;s afhankelijk van de open-source product-MPEG van derden. Gedownload van [&#x200B; https://ffmpeg.org/ &#x200B;](https://ffmpeg.org/). Nadat u MPEG hebt geïnstalleerd, configureert u AEM voor het gebruik van een specifieke audiocodec en specifieke runtime-opties.
 
 Om MPEG op **Vensters** te installeren, volg deze stappen:
 
@@ -51,9 +51,9 @@ Om MPEG op **Vensters** te installeren, volg deze stappen:
 
 Om MPEG op **macOS X** te installeren, volg deze stappen:
 
-1. Installeer Xcode beschikbaar in [ developer.apple.com/xcode ](https://developer.apple.com/xcode/).
-1. Installeer beschikbaar bij [ XQuartz ](https://www.xquartz.org) om [ X11 ](https://support.apple.com/en-us/100724) te krijgen.
-1. Installeer MACPorts beschikbaar in [ www.macports.org ](https://www.macports.org/).
+1. Installeer Xcode beschikbaar in [&#x200B; developer.apple.com/xcode &#x200B;](https://developer.apple.com/xcode/).
+1. Installeer beschikbaar bij [&#x200B; XQuartz &#x200B;](https://www.xquartz.org) om [&#x200B; X11 &#x200B;](https://support.apple.com/en-us/100724) te krijgen.
+1. Installeer MACPorts beschikbaar in [&#x200B; www.macports.org &#x200B;](https://www.macports.org/).
 1. Voer in de console de opdracht `sudo port install ffmpeg` uit en volg de aanwijzingen op het scherm. Zorg ervoor dat het pad van het uitvoerbare bestand van `FFmpeg` wordt toegevoegd aan de systeemvariabele van `PATH` .
 
 Om MPEG op **macOS X 10.6** te installeren, die de pre-gecompileerde versie gebruikt, volg deze stappen:
@@ -68,7 +68,7 @@ Om **te vormen AEM**, volg deze stappen:
 >
 >Deze stappen zijn alleen nodig als de codecs verder moeten worden aangepast.
 
-1. Open [!UICONTROL CRXDE Lite] in uw webbrowser. Toegang [ http://localhost:4502/crx/de ](http://localhost:4502/crx/de).
+1. Open [!UICONTROL CRXDE Lite] in uw webbrowser. Toegang [&#x200B; http://localhost:4502/crx/de &#x200B;](http://localhost:4502/crx/de).
 2. Selecteer het knooppunt `/libs/settings/dam/video/format_aac/jcr:content` en controleer of de eigenschappen van het knooppunt als volgt zijn:
 
    * `audioCodec` is `aac` .

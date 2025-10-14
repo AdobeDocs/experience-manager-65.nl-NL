@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >**Vereiste**:
 >
->Voorafgaand aan leren over het creëren van en het wijzigen van gedeelde middelen, zie [ Synchronisatie van de Inhoud ](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
+>Voorafgaand aan leren over het creëren van en het wijzigen van gedeelde middelen, zie [&#x200B; Synchronisatie van de Inhoud &#x200B;](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
 
 AEM Mobile-gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in Mobile Apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
@@ -34,7 +34,7 @@ In de volgende bronnen wordt beschreven hoe u inhoud uit Adobe Experience Manage
 
 Artikelen hebben inhoud die moet worden geëxporteerd en geüpload. Een deel van deze inhoud kan worden gedeeld tussen artikelen.
 
-Het gebruik [ ContentSync ](/help/mobile/mobile-ondemand-contentsync.md) om de inhoud samen te verzamelen en a ***Gedeelde het pakket van Middelen*** tot stand te brengen.
+Het gebruik [&#x200B; ContentSync &#x200B;](/help/mobile/mobile-ondemand-contentsync.md) om de inhoud samen te verzamelen en a ***Gedeelde het pakket van Middelen*** tot stand te brengen.
 
 De configuratie ContentSync die bij **wordt gevonden &lt;dps-exportTemplate>/dps-article>** zou moeten worden gevormd om alle inhoud en artikel uit te voeren die voor bezit statische teruggeven op apparaat wordt vereist.
 
@@ -50,11 +50,11 @@ De configuratie ContentSync die bij **wordt gevonden &lt;dps-exportTemplate>/dps
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 1. Open CRXDE Lite op uw AEM.
-1. Blader naar dit pad [ /etc/contentSync/templates/dps-we-limited-app/dps-article ](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) om de gedeelde voorbeeldbronnen weer te geven.
+1. Blader naar dit pad [&#x200B; /etc/contentSync/templates/dps-we-limited-app/dps-article &#x200B;](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) om de gedeelde voorbeeldbronnen weer te geven.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
 
-   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
+   ![&#x200B; chlimage_1-134 &#x200B;](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >

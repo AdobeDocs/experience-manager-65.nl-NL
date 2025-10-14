@@ -31,7 +31,7 @@ De algemene toepassing en het proces worden gemaakt buiten het bereik van deze z
 1. Klik met de rechtermuisknop op de toepassing en selecteer **[!UICONTROL New]** . Selecteer **[!UICONTROL Process]** in het menu **[!UICONTROL New]** slide-out. Geef een naam op voor het proces, voeg desgewenst een beschrijving toe en selecteer het pictogram dat u wilt weergeven voor dit proces. In deze zelfstudie hebben we een proces gemaakt met de naam `executeScriptDemoProcess` .
 1. Definieer de beginpunten of kies de eenvoudige optie om de beginpunten later toe te voegen.
 1. Het proces wordt nu gemaakt en wordt automatisch geopend in het [!UICONTROL Process Design] -venster. Klik in dit venster op het pictogram Activiteitenkiezer boven aan het venster Process Design (Process Design) en sleep de nieuwe activiteit naar de zwembaan. Op dit punt wordt [!UICONTROL Define Activity Window] weergegeven (zie onderstaande afbeelding).
-   ![ bepalen Activiteit ](assets/define-activity.jpg)
+   ![&#x200B; bepalen Activiteit &#x200B;](assets/define-activity.jpg)
 1. De service executeScript vindt u onder de set met services van `Foundation` . De naam van de Diensten maakt een lijst van het voorwerp als `Execute Script – 1.0` met de naam van de Verrichting `executeScript`. Klik om dit item te selecteren.
 1. Dit proces moet nu worden gemaakt en het venster [!UICONTROL Process Properties] moet standaard in het linkerdeelvenster worden weergegeven.
 
@@ -42,7 +42,7 @@ Zodra het proces met de &quot;Uitvoeren de bepaalde activiteit van de Dienst van
 1. Navigeer naar het palet [!UICONTROL Process Properties] . Vouw in dit palet de sectie [!UICONTROL Input] uit en klik op het pictogram &quot;...&quot;.
 
 1. Schrijf uw script in het tekstvak dat wordt weergegeven. Wanneer het manuscript is geschreven, druk O.K. (zie hieronder Figuur).
-   ![ voert Manuscript ](assets/execute-script.jpg) uit
+   ![&#x200B; voert Manuscript &#x200B;](assets/execute-script.jpg) uit
 
 ## XML maken met de Scriptservice uitvoeren {#create-xml-execute-script-service}
 
@@ -63,7 +63,7 @@ De klassen Java™ die worden gebruikt om XML-variabelen op te slaan zijn:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl is een subklasse van NodeImpl, zodat kan worden verondersteld dat om het even welke procesvariabele van XML een afleiding NodeImpl is. Zie de documentatie van [ NodeImpl ](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) voor meer details.
+DocumentImpl is een subklasse van NodeImpl, zodat kan worden verondersteld dat om het even welke procesvariabele van XML een afleiding NodeImpl is. Zie de documentatie van [&#x200B; NodeImpl &#x200B;](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) voor meer details.
 
 **de BemonsteringsXML creatie die de Uitvoeren Dienst van het Manuscript gebruikt**
 

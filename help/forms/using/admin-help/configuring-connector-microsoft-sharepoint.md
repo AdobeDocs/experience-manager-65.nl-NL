@@ -23,7 +23,7 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formulieren en Microsoft SharePoint. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formulieren en Microsoft SharePoint. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [&#x200B; Verwijzing van de Diensten &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. Klik in de beheerconsole op Services > Connector voor Microsoft SharePoint.
 2. Geef de volgende instellingen op voor uw SharePoint-server:
@@ -40,7 +40,7 @@ Connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM formu
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service}
 
-Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Voor informatie over imitatierechten, zie [ het Vormen Schakelaar voor Microsoft SharePoint ](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Voer de volgende stappen uit om instellingen op te geven voor `MSSharePointConfigService` :
+Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Voor informatie over imitatierechten, zie [&#x200B; het Vormen Schakelaar voor Microsoft SharePoint &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Voer de volgende stappen uit om instellingen op te geven voor `MSSharePointConfigService` :
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Navigeer in de lijst met services en klik op `MSSharePointConfigService` .

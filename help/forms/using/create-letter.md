@@ -29,11 +29,11 @@ De Correspondentiebeheerworkflow bestaat uit vier fasen:
 
 In de volgende afbeelding ziet u een typische workflow voor het maken van een correspondentiesjabloon.
 
-![ Werkschema voor het creëren van een correspondentiesjabloon ](assets/01.png)
+![&#x200B; Werkschema voor het creëren van een correspondentiesjabloon &#x200B;](assets/01.png)
 
 In deze workflow:
 
-1. Formulierontwerpers maken lay-outs en fragmentlay-outs met behulp van Adobe Forms Designer en uploaden deze naar een CRX-opslagplaats. De indelingen bevatten standaardformuliervelden, indelingsfuncties zoals een kop- en voettekst en lege doelgebieden voor de plaatsing van inhoud. Later, brengen de Specialisten van de Toepassing de inhoud in kaart die voor deze doelgebieden wordt vereist. Meer informatie over [ het ontwerpen van lay-out ](/help/forms/using/layout-design-details.md).
+1. Formulierontwerpers maken lay-outs en fragmentlay-outs met behulp van Adobe Forms Designer en uploaden deze naar een CRX-opslagplaats. De indelingen bevatten standaardformuliervelden, indelingsfuncties zoals een kop- en voettekst en lege doelgebieden voor de plaatsing van inhoud. Later, brengen de Specialisten van de Toepassing de inhoud in kaart die voor deze doelgebieden wordt vereist. Meer informatie over [&#x200B; het ontwerpen van lay-out &#x200B;](/help/forms/using/layout-design-details.md).
 1. Experts op het gebied van Onderwerpen van juridische afdelingen, financiën of marketing maken en uploaden inhoud, zoals disclaimers van tekstclausules, voorwaarden en afbeeldingen, zoals logo&#39;s, die opnieuw worden gebruikt in verschillende correspondentiesjablonen.
 1. Toepassingsspecialisten maken correspondentiesjablonen. De toepassingsspecialist
 
@@ -41,11 +41,11 @@ In deze workflow:
    * Definieert voorwaarden/regels voor het opnemen van inhoud
    * Hiermee bindt u indelingsvelden en variabelen aan onderliggende gegevensmodellen
 
-1. De auteur geeft een voorvertoning van de brief weer en verzendt deze voor nabewerking. Meer informatie over [ postverwerking ](/help/forms/using/submit-letter-topostprocess.md).
+1. De auteur geeft een voorvertoning van de brief weer en verzendt deze voor nabewerking. Meer informatie over [&#x200B; postverwerking &#x200B;](/help/forms/using/submit-letter-topostprocess.md).
 
 #### Het gebruiken van brievenmalplaatjes die met Correspondentenbeheer worden verstrekt {#using-letter-templates-provided-with-correspondence-management}
 
-In plaats van een lay-outsjabloon helemaal zelf te maken, kunt u de sjablonen die Correspondence Management biedt, wijzigen en opnieuw gebruiken. U kunt ontwerper gebruiken om de branding en de gegevens en inhoudsgebieden van de malplaatjes snel te wijzigen om de behoeften van uw organisatie aan te passen. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [ de briefmalplaatjes van de Referentie ](/help/forms/using/reference-cm-layout-templates.md).
+In plaats van een lay-outsjabloon helemaal zelf te maken, kunt u de sjablonen die Correspondence Management biedt, wijzigen en opnieuw gebruiken. U kunt ontwerper gebruiken om de branding en de gegevens en inhoudsgebieden van de malplaatjes snel te wijzigen om de behoeften van uw organisatie aan te passen. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [&#x200B; de briefmalplaatjes van de Referentie &#x200B;](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Document fragment maken {#document-fragment-creation}
 
@@ -67,7 +67,7 @@ De voorwaarden laten u toe om te bepalen welke inhoud inbegrepen bij de tijd van
 
 #### Lay-outfragment {#layout-fragment}
 
-Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDPs) worden gecreeerd in Designer en dan [ geupload aan Forms en Documenten ](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDPs) worden gecreeerd in Designer en dan [&#x200B; geupload aan Forms en Documenten &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Letter maken {#letter-creation}
 
@@ -77,13 +77,13 @@ Er zijn twee manieren om de correspondentie te produceren die naar uw klanten wo
 
 Aan de klant gerichte werknemers zoals schaderegelaars of casewerkers kunnen aangepaste correspondentie maken. Met een eenvoudige en intuïtieve interface voor het vullen van letters kunnen zakelijke gebruikers optionele tekst aan de correspondentie toevoegen, bewerkbare inhoud personaliseren en de correspondentie in real-time voorvertonen. Zij kunnen dan de aangepaste correspondentie aan een achtereind proces voorleggen.
 
-![ gebruiker-gedreven, aangepaste correspondentie ](assets/02.png)
+![&#x200B; gebruiker-gedreven, aangepaste correspondentie &#x200B;](assets/02.png)
 
 #### Systeemgestuurd {#system-driven}
 
 Het genereren van correspondentie wordt geautomatiseerd, gestuurd door gebeurtenistriggers. Een herinnering die bijvoorbeeld naar een burger wordt gestuurd en die haar vraagt om een voorafgaande belastingaangifte, wordt gegenereerd door de vooraf gedefinieerde sjabloon samen te voegen met burgergegevens. De laatste letter kan worden gemaild, afgedrukt, gefaxt of gearchiveerd.
 
-![ systeem-gedreven correspondentie ](assets/us_cm_generate.png)
+![&#x200B; systeem-gedreven correspondentie &#x200B;](assets/us_cm_generate.png)
 
 ### Post-verwerking {#post-processing}
 
@@ -99,13 +99,13 @@ De uiteindelijke correspondentie kan voor nabewerking naar een back-end proces w
 
 De volgende afbeelding biedt een overzicht van een voorbeeldarchitectuur van de Letters Solution.
 
-![ de oplossingsarchitectuur van de Brief ](assets/us_cm_architecture_es3.png)
+![&#x200B; de oplossingsarchitectuur van de Brief &#x200B;](assets/us_cm_architecture_es3.png)
 
 ## Een letter deconstrueren {#deconstructing-a-letter}
 
 Dit annuleringsdocument is een voorbeeld van een gebruikelijke correspondentie:
 
-![ een steekproefbrief van annulering ](assets/5_deconstructingaletter.png)
+![&#x200B; een steekproefbrief van annulering &#x200B;](assets/5_deconstructingaletter.png)
 
 <table> 
  <tbody> 
@@ -226,12 +226,12 @@ In deze tabel vindt u een aantal richtlijnen waarmee u uw letters kunt classific
 
 U hebt eerst het volgende nodig om een correspondentie te maken:
 
-* [ Pakket van de Verenigbaarheid ](compatibility-package.md). Installeer het Pakket van de Verenigbaarheid om de **Brieven** optie op de **Forms** pagina te bekijken.
-* De brief XDP ([ lay-out ](/help/forms/using/document-fragments.md)).
-* Andere XDPs ([ lay-outfragmenten ](document-fragments.md#document-fragments)) die delen van de brief vormen. De Lay-outs XDPs \ worden gecreeerd in [ Designer ](https://www.adobe.com/go/learn_aemforms_designer_65).
-* Het relevante [ gegevenswoordenboek ](/help/forms/using/data-dictionary.md) (Facultatief).
-* De [ gegevensmodules ](/help/forms/using/document-fragments.md) u in de correspondentie wilt gebruiken.
-* [ Gegevens van de Test ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is het dossier van XML met de testgegevens die in het worden uitgevoerd. Testgegevens zijn vereist als u een gegevenswoordenboek gebruikt.
+* [&#x200B; Pakket van de Verenigbaarheid &#x200B;](compatibility-package.md). Installeer het Pakket van de Verenigbaarheid om de **Brieven** optie op de **Forms** pagina te bekijken.
+* De brief XDP ([&#x200B; lay-out &#x200B;](/help/forms/using/document-fragments.md)).
+* Andere XDPs ([&#x200B; lay-outfragmenten &#x200B;](document-fragments.md#document-fragments)) die delen van de brief vormen. De Lay-outs XDPs \ worden gecreeerd in [&#x200B; Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_65).
+* Het relevante [&#x200B; gegevenswoordenboek &#x200B;](/help/forms/using/data-dictionary.md) (Facultatief).
+* De [&#x200B; gegevensmodules &#x200B;](/help/forms/using/document-fragments.md) u in de correspondentie wilt gebruiken.
+* [&#x200B; Gegevens van de Test &#x200B;](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is het dossier van XML met de testgegevens die in het worden uitgevoerd. Testgegevens zijn vereist als u een gegevenswoordenboek gebruikt.
 
 ## Een lettertypesjabloon maken {#create-a-letter-template}
 
@@ -239,13 +239,13 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 1. Selecteer **Forms** > **Brieven**.
 
-1. Selecteer **creeer > Brief**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze lay-outs komen uit Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [ de briefmalplaatjes van de Referentie ](/help/forms/using/reference-cm-layout-templates.md). Om uw eigen lay-outs toe te voegen, creeer XDP (lay-out) dossiers in Designer en dan [ upload hen aan AEM Forms ](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selecteer **creeer > Brief**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze lay-outs komen uit Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [&#x200B; de briefmalplaatjes van de Referentie &#x200B;](/help/forms/using/reference-cm-layout-templates.md). Om uw eigen lay-outs toe te voegen, creeer XDP (lay-out) dossiers in Designer en dan [&#x200B; upload hen aan AEM Forms &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
-   ![ creeer-brief ](assets/create-letter.png)
+   ![&#x200B; creeer-brief &#x200B;](assets/create-letter.png)
 
 1. Selecteer een lay-out door het te tikken en te selecteren **daarna**.
 
-   ![ Uitgezochte lay-out om een brief ](assets/selectlayout.png) te creëren
+   ![&#x200B; Uitgezochte lay-out om een brief &#x200B;](assets/selectlayout.png) te creëren
 
 1. Ga de eigenschappen voor de Correspondentie in en selecteer **sparen:**
 
@@ -256,13 +256,13 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
    * **Markeringen (Facultatief):** selecteer de markeringen om op de correspondentie van toepassing te zijn. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
    * **Proces van Post (Facultatief):** selecteer het postproces dat op het brievenmalplaatje moet worden toegepast. Er zijn geen postprocessen in de doos en degenen u gebruikend AEM, zoals e-mail en druk hebt gecreeerd.
 
-   ![ Eigenschappen van de Correspondentie ](assets/createcorrespondenceproperties.png)
+   ![&#x200B; Eigenschappen van de Correspondentie &#x200B;](assets/createcorrespondenceproperties.png)
 
 1. Het systeem geeft een bericht weer: &quot;Letter created successfully.&quot; (in het waakzame bericht) Uitgezocht **Open** om de gegevensmodules en lay-outfragmenten in het te vormen. Of selecteer **Gereed** om terug naar de vorige pagina te gaan.
 
-   ![ Waakzaam bericht: met succes gecreeerde brief ](assets/createcorrespondencecreated.png)
+   ![&#x200B; Waakzaam bericht: met succes gecreeerde brief &#x200B;](assets/createcorrespondencecreated.png)
 
-   **Volgende**: Wanneer u **Open** selecteert, toont het Beheer van de Correspondentie een vertegenwoordiging van de lay-out met alle vermelde componenten in de lay-out (XDP). Ga met het opnemen van de [ Modules van Gegevens en de Fragmenten van de Lay-out door en het Vormen van hen ](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Volgende**: Wanneer u **Open** selecteert, toont het Beheer van de Correspondentie een vertegenwoordiging van de lay-out met alle vermelde componenten in de lay-out (XDP). Ga met het opnemen van de [&#x200B; Modules van Gegevens en de Fragmenten van de Lay-out door en het Vormen van hen &#x200B;](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Gegevensmodules en lay-outfragmenten in een brief opnemen en hen vormen {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
@@ -274,11 +274,11 @@ Wanneer u een correspondentie hebt gemaakt, selecteert u Openen, wordt in Corres
 
 1. Selecteer **Tussenvoegsel** voor elk van de subformulieren en selecteer de Modules van Gegevens of een Fragment van de Lay-out in elk van de subformulieren op te nemen.
 
-   ![ de gegevensmodules van het Tussenvoegsel en lay-outfragmenten ](assets/insertdmandlf.png)
+   ![&#x200B; de gegevensmodules van het Tussenvoegsel en lay-outfragmenten &#x200B;](assets/insertdmandlf.png)
 
 1. Selecteer Gegevensmodule of Lay-outfragment voor deze opties voor elk van de subformulieren en kies vervolgens de gegevensmodules of de layoutfragmenten die u wilt invoegen. Met een lay-outfragment kunt u verder gegevensmodules of lay-outfragmenten in het fragment invoegen op basis van het ontwerp (maximaal vier niveaus).
 
-   ![ nestedlf ](assets/nestedlf.png)
+   ![&#x200B; nestedlf &#x200B;](assets/nestedlf.png)
 
 1. Als u een indelingsfragment invoegt, wordt de naam van het indelingsfragment in het subformulier weergegeven. En volgens het geselecteerde fragment worden geneste subformulieren weergegeven in het subformulier.
 1. Nadat de gekozen Modules van Gegevens in de lay-out worden opgenomen, kunt u vormen wijze selecteren en het volgende plaatsen nadat het Tikken van het Edit pictogram voor elk van de modules:
@@ -286,11 +286,11 @@ Wanneer u een correspondentie hebt gemaakt, selecteert u Openen, wordt in Corres
    1. **Bewerkbaar**: Wanneer deze optie wordt geselecteerd, kan de inhoud in Create Correspondence gebruikersinterface worden uitgegeven. Inhoud alleen als bewerkbaar markeren als de zakelijke gebruiker deze hoeft te wijzigen (bijvoorbeeld Aanpassingen).
    1. **Verplicht**: Wanneer deze optie wordt geselecteerd, wordt de inhoud vereist in Create Correspondence gebruikersinterface.
    1. **Geselecteerd**: Wanneer deze optie wordt geselecteerd, wordt de inhoud geselecteerd door gebreken in het Create Correspondence gebruikersinterface.
-   1. **Inspringing**: Verhoog of verklein de inspringing van de module/inhoud in de brief. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Voor meer informatie bij het aanpassen van vormen, zie **[!UICONTROL Correspondence Management Configurations]** in [ het werkschema van Forms ](submit-letter-topostprocess.md#formsworkflow).
+   1. **Inspringing**: Verhoog of verklein de inspringing van de module/inhoud in de brief. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Voor meer informatie bij het aanpassen van vormen, zie **[!UICONTROL Correspondence Management Configurations]** in [&#x200B; het werkschema van Forms &#x200B;](submit-letter-topostprocess.md#formsworkflow).
    1. **de onderbreking van de Pagina vóór**: Als u de Onderbreking van de Pagina vóór aan op plaatst, toont de inhoud van DEZE module altijd op een nieuwe pagina.
    1. **de onderbreking van de Pagina na**: Als u de Onderbreking van de Pagina na aan voor een specifieke module plaatst, de inhoud van de Volgende module altijd op een nieuwe pagina tonen.
 
-   ![ Ingevoegde gegevensmodules en lay-outfragmenten ](assets/insertdmandlf2.png)
+   ![&#x200B; Ingevoegde gegevensmodules en lay-outfragmenten &#x200B;](assets/insertdmandlf2.png)
 
 1. Als u een module wilt bewerken, selecteert u het pictogram Bewerken naast de module. Na het uitgeven van de modules, uitgezocht **sparen**.
 
@@ -301,9 +301,9 @@ Wanneer u een correspondentie hebt gemaakt, selecteert u Openen, wordt in Corres
 
    Op deze pagina kunt u ook het volgende doen voor elk element in de subformulieren:
 
-   1. **verander de orde van de activa**: belemmering-en-dalings activa die het herschikkingspictogram voor activa houden ( ![ dragndrop ](assets/dragndrop.png)).
+   1. **verander de orde van de activa**: belemmering-en-dalings activa die het herschikkingspictogram voor activa houden ( ![&#x200B; dragndrop &#x200B;](assets/dragndrop.png)).
    1. **activa van de Schrapping**: Selecteer het pictogram van de Schrapping naast activa om het te schrappen.
-   1. **activa van de Voorproef**: Selecteer het pictogram van de showvoorproef ( ![ showpreview ](assets/showpreview.png)) naast een activa.
+   1. **activa van de Voorproef**: Selecteer het pictogram van de showvoorproef ( ![&#x200B; showpreview &#x200B;](assets/showpreview.png)) naast een activa.
 
 1. Selecteer **daarna**.
 1. Op de gegevenspagina ziet u hoe gegevensvelden en variabelen in de sjabloon worden gebruikt. Gegevens kunnen worden gekoppeld aan gegevensbronnen zoals een gegevenswoordenboek of gebruikersinvoer. Elk veld definieert eigenschappen waarvan gegevens in gegevenswoordenboeken worden toegewezen of welk bijschrift wordt weergegeven voor invoervelden van gebruikers.
@@ -333,23 +333,23 @@ Wanneer u een correspondentie hebt gemaakt, selecteert u Openen, wordt in Corres
    >
    >De validators voor velden en variabelen zijn alleen beschikbaar voor velden of variabelen met het koppelingstype Gebruiker of niet-beveiligde gegevenswoordenboekelementen.
 
-   ![ verbindingen ](assets/linkages.png)
+   ![&#x200B; verbindingen &#x200B;](assets/linkages.png)
 
 1. Na het specificeren van verbinding, selecteer **daarna**. Correspondentiebeheer geeft het scherm Bijlagen weer.
 
 ### De bijlagen instellen {#set-up-the-attachments}
 
 1. Selecteer **Activa** toevoegen.
-1. In het Uitgezochte scherm van Activa, selecteer de activa om met de brief vast te maken en **te selecteren Gedaan**. De elementen moeten eerst naar Assets worden geüpload. U kunt het beste alleen PDF- en Microsoft Office-documenten bijvoegen, maar ook afbeeldingen. Voor meer informatie bij het uploaden van activa in DAM, zie [ Uploading Assets ](/help/assets/manage-assets.md).
+1. In het Uitgezochte scherm van Activa, selecteer de activa om met de brief vast te maken en **te selecteren Gedaan**. De elementen moeten eerst naar Assets worden geüpload. U kunt het beste alleen PDF- en Microsoft Office-documenten bijvoegen, maar ook afbeeldingen. Voor meer informatie bij het uploaden van activa in DAM, zie [&#x200B; Uploading Assets &#x200B;](/help/assets/manage-assets.md).
 1. Om de orde van de activa in de lijst te sluiten zodat de Aanpasser van Vorderingen niet de orde kan veranderen, uitgezochte **Orde van het Slot**. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
-1. Om de orde van de activa te veranderen, sleep-en-dalings activa die het herschikkingspictogram voor activa houden ( ![ dragndrop ](assets/dragndrop.png)).
+1. Om de orde van de activa te veranderen, sleep-en-dalings activa die het herschikkingspictogram voor activa houden ( ![&#x200B; dragndrop &#x200B;](assets/dragndrop.png)).
 1. Selecteer **uitgeven** vóór een gehechtheid en specificeer een gehechtheid zoals Verplicht als u niet de auteur het wilt kunnen schrappen. Specificeer een gehechtheid zoals Geselecteerd als u het in de interface wilt vooraf worden geselecteerd CCR.
 1. Selecteer **Toegang van de Bibliotheek** om de toegang tot de bibliotheek te verlenen. Als Bibliotheektoegang is ingeschakeld, heeft de Aanpasser voor claims toegang tot de inhoudsbibliotheek terwijl een brief wordt gemaakt en bijlagen worden ingevoegd.
 1. Selecteer **Configuratie van Bijlagen** en specificeer het maximumaantal gehechtheid.
 
 1. Selecteer **sparen**. Uw correspondentie wordt gecreeerd en op de pagina van Letters vermeld.
 
-Nadat een brievenmalplaatje in het Beheer van de Correspondentie wordt gecreeerd, kan het eind - gebruiker/agent/bewering aanpast de brief in het gebruikersinterface openen CCR en een correspondentie tot stand brengen door gegevens in te gaan, inhoud te plaatsen, en gehechtheid te beheren. Voor meer informatie, zie [ Correspondentie ](/help/forms/using/create-correspondence.md) creëren.
+Nadat een brievenmalplaatje in het Beheer van de Correspondentie wordt gecreeerd, kan het eind - gebruiker/agent/bewering aanpast de brief in het gebruikersinterface openen CCR en een correspondentie tot stand brengen door gegevens in te gaan, inhoud te plaatsen, en gehechtheid te beheren. Voor meer informatie, zie [&#x200B; Correspondentie &#x200B;](/help/forms/using/create-correspondence.md) creëren.
 
 ## Typen koppelingen beschikbaar voor elk veld {#types-of-linkage-available-for-each-of-the-fields}
 
@@ -471,7 +471,7 @@ De volgende waarden in de tabel
 Met een bestaande lettertypesjabloon kunt u snel een lettertypesjabloon maken met vergelijkbare eigenschappen, inhoud en overgeërfde elementen, zoals documentfragmenten en gegevenswoordenboek. Kopieer en plak een brief om dit te doen.
 
 1. Selecteer een of meer letters op de pagina Letters. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [ Omslagen en het organiseren van activa ](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [&#x200B; Omslagen en het organiseren van activa &#x200B;](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Als u de letters op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van de brief wilt opslaan.
 1. Selecteer Plakken. De kopie van de brief wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in uw nieuwe brief.

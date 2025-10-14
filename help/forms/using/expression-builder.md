@@ -22,9 +22,9 @@ Met de expressiebouwer kunt u expressies of voorwaarden maken waarmee berekening
 
 ## Expressies en externe functies maken met expressiebuilder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Voor meer informatie, zie [ uitdrukkingen van het Voorbeeld ](#exampleexpressions).
+De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Voor meer informatie, zie [&#x200B; uitdrukkingen van het Voorbeeld &#x200B;](#exampleexpressions).
 
-![ Bouwer van de Uitdrukking ](assets/expressionbuilder.png)
+![&#x200B; Bouwer van de Uitdrukking &#x200B;](assets/expressionbuilder.png)
 
 ### Operatoren {#operators}
 
@@ -38,7 +38,7 @@ Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing v
 * Twee tekenreeksen aaneenschakelen: ${str1} $ {str2}
 * Twee getallen vergelijken: ${age &lt; 18}
 
-U kunt meer informatie in de [ JSP EL specificatie ](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf) vinden. De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
+U kunt meer informatie in de [&#x200B; JSP EL specificatie &#x200B;](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf) vinden. De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
 
 * Indexen en kaartsleutels voor verzamelingen (met de notatie [] ) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
 * Hieronder ziet u de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
@@ -69,7 +69,7 @@ U kunt meer informatie in de [ JSP EL specificatie ](https://download.oracle.com
 
 Externe functies bieden de mogelijkheid om aangepaste logica in expressies te gebruiken. U kunt aangepaste logica schrijven voor gebruik in expressie als een methode in Java en dezelfde functie kan worden gebruikt in expressies. Beschikbare externe functies worden weergegeven onder het tabblad &quot;Externe functies&quot; aan de linkerkant van de Expressieeditor.
 
-![ remotefunction ](assets/remotefunction.png)
+![&#x200B; remotefunction &#x200B;](assets/remotefunction.png)
 
 #### Aangepaste externe functies toevoegen {#adding-custom-remote-functions}
 

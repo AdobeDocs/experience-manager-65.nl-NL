@@ -18,13 +18,13 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld, duimnagelgeneratie of meta-gegevensextractie.
 
-Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [ ingebouwde managers ](#default-media-handlers), en de extra degenen kunnen of [ worden ontwikkeld douane ](#creating-a-new-media-handler) of worden bepaald door het proces aan a [ bevel-lijn hulpmiddel ](#command-line-based-media-handler) te delegeren.
+Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [&#x200B; ingebouwde managers &#x200B;](#default-media-handlers), en de extra degenen kunnen of [&#x200B; worden ontwikkeld douane &#x200B;](#creating-a-new-media-handler) of worden bepaald door het proces aan a [&#x200B; bevel-lijn hulpmiddel &#x200B;](#command-line-based-media-handler) te delegeren.
 
 Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer een MP3-audiobestand bijvoorbeeld wordt geüpload naar [!DNL Experience Manager] , wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Mediahandlers worden gebruikt bij workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager] . U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden of te maken, media-handlers uit te breiden of te maken of door media-handlers uit te schakelen en in te schakelen.
 
 >[!NOTE]
 >
->Zie de [ Ondersteunde formaten van Activa ](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
+>Zie de [&#x200B; Ondersteunde formaten van Activa &#x200B;](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
@@ -38,7 +38,7 @@ De volgende media-handlers zijn beschikbaar in [!DNL Assets] en verwerken de mee
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [ verwerkt gebruikend een derdebibliotheek ](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [&#x200B; verwerkt gebruikend een derdebibliotheek &#x200B;](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -61,7 +61,7 @@ De actieve media-handlers weergeven:
 1. Klik op `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Er wordt een lijst weergegeven met alle actieve mediamanagers. Bijvoorbeeld:
 
-![ chlimage_1-437 ](assets/chlimage_1-437.png)
+![&#x200B; chlimage_1-437 &#x200B;](assets/chlimage_1-437.png)
 
 ## Mediahandlers gebruiken in workflows om taken uit te voeren op elementen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
@@ -137,7 +137,7 @@ In deze sectie maakt u een specifieke teksthandler die miniaturen met een waterm
 
 Ga als volgt te werk:
 
-Verwijs naar [ Hulpmiddelen van de Ontwikkeling ](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
+Verwijs naar [&#x200B; Hulpmiddelen van de Ontwikkeling &#x200B;](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
 
 Nadat u de volgende procedure hebt uitgevoerd en een TXT-bestand in [!DNL Experience Manager] uploadt, worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
 
@@ -449,10 +449,10 @@ Met [!DNL Experience Manager] kunt u een opdrachtregelprogramma uitvoeren in een
 
 De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen [!DNL Assets] :
 
-* EPS en AI transformatie die [ ImageMagick ](https://www.imagemagick.org/script/index.php) gebruiken en [ Ghostscript ](https://www.ghostscript.com/).
-* FLV video transcoderen die [ gebruiken mpeg ](https://ffmpeg.org/).
-* MP3 het coderen die [ LAME ](https://lame.sourceforge.io/) gebruiken.
-* Audio verwerkend gebruikend [ SOX ](https://sourceforge.net/projects/sox/).
+* EPS en AI transformatie die [&#x200B; ImageMagick &#x200B;](https://www.imagemagick.org/script/index.php) gebruiken en [&#x200B; Ghostscript &#x200B;](https://www.ghostscript.com/).
+* FLV video transcoderen die [&#x200B; gebruiken mpeg &#x200B;](https://ffmpeg.org/).
+* MP3 het coderen die [&#x200B; LAME &#x200B;](https://lame.sourceforge.io/) gebruiken.
+* Audio verwerkend gebruikend [&#x200B; SOX &#x200B;](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
@@ -476,7 +476,7 @@ Gebruik [!DNL ImageMagick] om dit te doen. [!DNL ImageMagick] is een gratis opdr
 
 Installeer [!DNL ImageMagick] op de schijf die als host fungeert voor de [!DNL Experience Manager] -server:
 
-1. Installeer [!DNL ImageMagick]: Zie [ documentatie ImageMagick ](https://www.imagemagick.org/script/download.php).
+1. Installeer [!DNL ImageMagick]: Zie [&#x200B; documentatie ImageMagick &#x200B;](https://www.imagemagick.org/script/download.php).
 1. Stel het gereedschap zo in dat u `convert` kunt uitvoeren vanaf de opdrachtregel.
 1. Voer de volgende opdracht `convert -h` uit op de opdrachtregel om te zien of het gereedschap correct is geïnstalleerd.
 
@@ -530,4 +530,4 @@ Gebruik de volgende [!UICONTROL Process Arguments] om de voor het web ingeschake
 
 >[!MORELIKETHIS]
 >
->* [ activa van het Proces ](assets-workflow.md)
+>* [&#x200B; activa van het Proces &#x200B;](assets-workflow.md)

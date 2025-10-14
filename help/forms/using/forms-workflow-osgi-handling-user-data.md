@@ -26,7 +26,7 @@ Een op formulieren gerichte workflow kan op een van de volgende manieren worden 
 * Een controlemap gebruiken
 * Een interactieve communicatie of een brief indienen
 
-Voor meer informatie over Forms-centric AEM werkschema&#39;s en mogelijkheden, zie [ Forms-centric werkschema op OSGi ](/help/forms/using/aem-forms-workflow.md).
+Voor meer informatie over Forms-centric AEM werkschema&#39;s en mogelijkheden, zie [&#x200B; Forms-centric werkschema op OSGi &#x200B;](/help/forms/using/aem-forms-workflow.md).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
@@ -99,15 +99,15 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    De volgende query retourneert bijvoorbeeld twee pad naar workflowinstanties van het knooppunt `/var/workflow/instances` waarvan de initiator van de workflow `srose` is.
 
-   ![ werkschema-instantie ](assets/workflow-instance.png)
+   ![&#x200B; werkschema-instantie &#x200B;](assets/workflow-instance.png)
 
 1. Ga naar een pad voor workflowinstanties dat door de query wordt geretourneerd. De statuseigenschap geeft de huidige status van de werkstroominstantie weer.
 
-   ![ status ](assets/status.png)
+   ![&#x200B; status &#x200B;](assets/status.png)
 
 1. Navigeer in het knooppunt voor workflowinstanties naar `data/payload/` . De eigenschap `path` slaat het pad naar de lading voor de werkstroominstantie op. U kunt naar het pad navigeren om toegang te krijgen tot gegevens die zijn opgeslagen in de payload.
 
-   ![ lading-weg ](assets/payload-path.png)
+   ![&#x200B; lading-weg &#x200B;](assets/payload-path.png)
 
 1. Navigeer naar de locaties voor concepten en historie voor de workflowinstantie.
 
@@ -127,7 +127,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
 U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
-1. Volg de instructies in [ gebruikersgegevens van de Toegang ](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) en neem nota van het volgende:
+1. Volg de instructies in [&#x200B; gebruikersgegevens van de Toegang &#x200B;](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) en neem nota van het volgende:
 
    * Paden naar werkstroominstanties die aan de gebruiker zijn gekoppeld
    * Status van de workflowinstanties
@@ -140,7 +140,7 @@ U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
    1. Navigeer naar **[!UICONTROL Tools > Workflow> Instances]** .
    1. Selecteer relevante workflowinstanties voor de gebruiker en selecteer **[!UICONTROL Terminate]** om actieve varianten te beëindigen.
 
-      Voor meer informatie over het werken met werkschemainstanties, zie [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md).
+      Voor meer informatie over het werken met werkschemainstanties, zie [&#x200B; het Beheer de Instanties van het Werkschema &#x200B;](/help/sites-administering/workflows-administering.md).
 
 1. Ga naar de [!DNL CRXDE Lite] -console, navigeer naar het payload-pad voor een workflowinstantie en verwijder het `payload` -knooppunt.
 1. Navigeer naar het pad naar concepten voor een workflowinstantie en verwijder het knooppunt `draft` .
@@ -157,5 +157,5 @@ U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
 U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te verwijderen. Zie de volgende documenten voor meer informatie.
 
 * [Programmatoegang tot het AEM JCR](/help/sites-developing/access-jcr.md)
-* [ het Verwijderen van Knoop en Eigenschappen ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [ API verwijzing ](https://helpx.adobe.com/nl/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [&#x200B; het Verwijderen van Knoop en Eigenschappen &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [&#x200B; API verwijzing &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

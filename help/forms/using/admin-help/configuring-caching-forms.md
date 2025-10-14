@@ -35,7 +35,7 @@ De Forms-service plaatst de volgende items in cache:
 Forms slaat de cache op twee plaatsen op:
 
 * **in geheugen:** de Punten worden opgeslagen in geheugen voor snelle toegang. De cache in het geheugen heeft een beperkte grootte en wordt verwijderd wanneer u de server opnieuw start.
-* **op schijf:** de Punten worden opgeslagen in het het dossiersysteem van de server. De schijfcache heeft een grotere capaciteit dan de cache in het geheugen en deze blijft behouden wanneer u de server opnieuw start. De locatie van de schijfcache is afhankelijk van de toepassingsserver. Voor informatie bij het veranderen van de plaats van het schijfgeheime voorgeheugen, zie [ het Vormen plaatsen voor Forms ](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
+* **op schijf:** de Punten worden opgeslagen in het het dossiersysteem van de server. De schijfcache heeft een grotere capaciteit dan de cache in het geheugen en deze blijft behouden wanneer u de server opnieuw start. De locatie van de schijfcache is afhankelijk van de toepassingsserver. Voor informatie bij het veranderen van de plaats van het schijfgeheime voorgeheugen, zie [&#x200B; het Vormen plaatsen voor Forms &#x200B;](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
 
 ## De cachemodus opgeven {#specifying-the-cache-mode}
 
@@ -44,7 +44,7 @@ Forms biedt ondersteuning voor twee modi voor caching:
 * onvoorwaardelijk
 * het gebruiken van het punt van de geheim voorgeheugencontrole
 
-Als u tussen cachemodi schakelt, start u de Forms-service opnieuw om de wijziging van kracht te laten worden. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [ Begin of stop de diensten verbonden aan AEM vormmodules ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
+Als u tussen cachemodi schakelt, start u de Forms-service opnieuw om de wijziging van kracht te laten worden. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [&#x200B; Begin of stop de diensten verbonden aan AEM vormmodules &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
 De tijd van het punt van de geheim voorgeheugencontrole wordt automatisch teruggesteld wanneer u tussen wijzen schakelt.
 
@@ -94,7 +94,7 @@ Klik in de beheerconsole op Services > Forms om deze instellingen te openen.
 
 ### Algemene cache-instellingen opgeven {#specifying-global-cache-settings}
 
-De montages in het **Globale gebied van de Montages van het Geheime voorgeheugen** beïnvloeden alle soorten geheime voorgeheugens. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [ Begin of stop de diensten verbonden aan AEM vormmodules ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
+De montages in het **Globale gebied van de Montages van het Geheime voorgeheugen** beïnvloeden alle soorten geheime voorgeheugens. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [&#x200B; Begin of stop de diensten verbonden aan AEM vormmodules &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
 **Max de Grootte van het Document van het Geheime voorgeheugen (KB):** de maximumgrootte, in kilobytes, van een vormontwerp of ander middel dat in om het even welk in-geheugengeheime voorgeheugen kan worden opgeslagen. Dit is een algemene instelling die van toepassing is op alle cache in het geheugen. Als een bron groter is dan deze waarde, wordt deze niet in het geheugen opgeslagen. De standaardwaarde is 1024 kilobytes. Deze instelling heeft geen invloed op de cache van de schijf.
 
@@ -104,7 +104,7 @@ De montages in het **Globale gebied van de Montages van het Geheime voorgeheugen
 
 Wanneer de Forms-service een renderaanvraag ontvangt, haalt deze het formulierontwerp op van de gegevensopslagruimte en plaatst deze het in cache. Dit in cache plaatsen verbetert de prestaties, omdat de Forms-service het formulierontwerp ophaalt uit de cache in plaats van uit de opslagplaats.
 
-De Forms-service plaatst formulierontwerpen altijd in cache op schijf. Als formulierontwerpen worden opgeslagen op de server, worden deze bestanden beschouwd als de schijfcache. De dienst van Forms bewaart ook vormontwerpen in geheugen, volgens het plaatsen in **in het Geheime voorgeheugen van het Malplaatje van het Geheugen** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [ Begin of stop de diensten verbonden aan AEM vormmodules ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
+De Forms-service plaatst formulierontwerpen altijd in cache op schijf. Als formulierontwerpen worden opgeslagen op de server, worden deze bestanden beschouwd als de schijfcache. De dienst van Forms bewaart ook vormontwerpen in geheugen, volgens het plaatsen in **in het Geheime voorgeheugen van het Malplaatje van het Geheugen** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [&#x200B; Begin of stop de diensten verbonden aan AEM vormmodules &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
 **Grootte van het Geheime voorgeheugen van de Configuratie van het Malplaatje:** het maximumaantal voorwerpen van de malplaatjeconfiguratie in geheugen te houden. De standaardwaarde is 100. U wordt aangeraden deze waarde groter dan of gelijk aan de waarde voor Grootte sjablooncache in te stellen. Deze instelling heeft geen invloed op de cache van de schijf.
 
@@ -116,7 +116,7 @@ De Forms-service plaatst formulierontwerpen altijd in cache op schijf. Als formu
 
 De Forms-service plaatst gegenereerde formulieren in cache, zodat deze niet hetzelfde formulier hoeven op te lossen en weer te geven in volgende aanvragen. Gegenereerde formulieren worden zowel op de schijf als in het geheugen in cache geplaatst.
 
-Deze montages zijn in het **In het Teruggeven van het Geheime voorgeheugen van de Vorm van het Geheugen** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [ Begin of stop de diensten verbonden aan AEM vormmodules ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
+Deze montages zijn in het **In het Teruggeven van het Geheime voorgeheugen van de Vorm van het Geheugen** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Om deze dienst opnieuw te beginnen, of gebruik Workbench of zie [&#x200B; Begin of stop de diensten verbonden aan AEM vormmodules &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
 **Grootte van het Geheime voorgeheugen:** specificeert het maximumaantal teruggegeven vormen die in het in-geheugengeheime voorgeheugen kunnen verblijven. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
 

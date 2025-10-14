@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Geavanceerde systeemkenmerken configureren {#configure-advanced-system-attributes}
 
-Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om bepaalde montages in het configuratiedossier te wijzigen zonder de behoefte om, het dossier uit te voeren uit te geven en in te voeren. (Zie [ het Invoeren en het uitvoeren van het configuratiedossier ](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om bepaalde montages in het configuratiedossier te wijzigen zonder de behoefte om, het dossier uit te voeren uit te geven en in te voeren. (Zie [&#x200B; het Invoeren en het uitvoeren van het configuratiedossier &#x200B;](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Configuration > Configure Advanced System Attributes]** .
 1. (Optioneel) Wijzig een van de volgende sessiekenmerken:
@@ -35,9 +35,9 @@ Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om be
 
 1. (Optioneel) Wijzig een of meer van de volgende kenmerken voor directorysynchronisatie:
 
-   **Logging van de Statistieken van de Synch:** specificeert of het Beheer van de Gebruiker gedetailleerde statistieken tijdens het synchronisatieproces registreert. (Zie [ toelaten of onbruikbaar maken gedetailleerd registreren tijdens synchronisatie ](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
+   **Logging van de Statistieken van de Synch:** specificeert of het Beheer van de Gebruiker gedetailleerde statistieken tijdens het synchronisatieproces registreert. (Zie [&#x200B; toelaten of onbruikbaar maken gedetailleerd registreren tijdens synchronisatie &#x200B;](/help/forms/using/admin-help/synchronizing-directories.md#enable-or-disable-detailed-logging-during-synchronization).)
 
-   **Uitdrukking van de Uitsnede van de Finisher van de Synch:** het interval waarbij het Beheer van de Gebruiker synchronisaties ontbrak. (Zie [ vormen de optie van de foldersynchronisatie opnieuw probeert ](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
+   **Uitdrukking van de Uitsnede van de Finisher van de Synch:** het interval waarbij het Beheer van de Gebruiker synchronisaties ontbrak. (Zie [&#x200B; vormen de optie van de foldersynchronisatie opnieuw probeert &#x200B;](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option).)
 
    **Onderbreking van het Slot van de Taak van de Cluster in notulen:** Gebruikt in gegroepeerde milieu&#39;s. Als de synchronisatie op één knoop ontbreekt en het clusterslot niet wordt vrijgegeven, specificeert deze waarde het aantal notulen dat een andere knoop wacht alvorens het slot te dwingen. De standaardwaarde is `15` minuten. Geldige waarden zijn `1` tot `1440` minuten.
 
@@ -45,6 +45,6 @@ Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om be
 
    **Controle van de Gebeurtenis van de Manager van de Gebruiker:** selecteer deze optie om controle van de gebeurtenissen van de foldersynchronisatie en van authentificatiegebeurtenissen zoals succes, mislukking, en lockout toe te laten. Deze optie is standaard alleen ingeschakeld als u een onderdeel hebt geïnstalleerd waarvoor controle nodig is, zoals een Rights Management. Met deze instelling wordt de invoersleutel `APSAuditService` in het configuratiebestand bijgewerkt.
 
-   **AutoCreatie van Dynamische Groep:** laat de automatische verwezenlijking van dynamische groepen toe die op e-maildomeinen worden gebaseerd. (Zie [ een dynamische groep ](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group) creëren.)
+   **AutoCreatie van Dynamische Groep:** laat de automatische verwezenlijking van dynamische groepen toe die op e-maildomeinen worden gebaseerd. (Zie [&#x200B; een dynamische groep &#x200B;](/help/forms/using/admin-help/creating-configuring-groups.md#create-a-dynamic-group) creëren.)
 
 U kunt ook terugkeren naar de oorspronkelijke instellingen voor Gebruikersbeheer door op Opnieuw laden te klikken.

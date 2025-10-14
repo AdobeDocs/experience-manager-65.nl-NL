@@ -24,11 +24,11 @@ Graniet UI verstrekt een waaier van componenten die worden ontworpen om in vorme
 
 >[!NOTE]
 >
->Deze graniet UI vormgebieden zijn van bijzonder belang aangezien zij voor [ componentendialogen ](/help/sites-developing/developing-components.md) worden gebruikt.
+>Deze graniet UI vormgebieden zijn van bijzonder belang aangezien zij voor [&#x200B; componentendialogen &#x200B;](/help/sites-developing/developing-components.md) worden gebruikt.
 
 >[!NOTE]
 >
->Voor volledige details over gebieden, zie de [ documentatie van graniet UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Voor volledige details over gebieden, zie de [&#x200B; documentatie van graniet UI &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Gebruik het granite UI Foundation-framework om granitecomponenten te ontwikkelen en/of uit te breiden. Dit heeft twee elementen:
 
@@ -56,7 +56,7 @@ Zie voor voorbeelden:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * verstrekt door de [ Steekproef van de Code ](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * verstrekt door de [&#x200B; Steekproef van de Code &#x200B;](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

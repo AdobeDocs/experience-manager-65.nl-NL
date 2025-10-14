@@ -23,7 +23,7 @@ De Forms-workflow verhoogt de organisatorische efficiëntie door kritieke docume
 
 De AEM Forms-werkruimte is compatibel met meer apparaten en formulierfactoren. Hierdoor is taakbeheer mogelijk voor clients zonder Flash® Player en Adobe® Reader®. Het vergemakkelijkt de uitvoering van HTML Forms naast PDF forms.
 
-![ html-ws ](assets/html-ws.png)
+![&#x200B; html-ws &#x200B;](assets/html-ws.png)
 
 **Zeer belangrijke mogelijkheden**:
 

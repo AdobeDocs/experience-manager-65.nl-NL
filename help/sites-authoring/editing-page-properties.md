@@ -36,12 +36,12 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * De nieuwe tag wordt weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
    * In de vervolgkeuzelijst kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
-   * Voor meer informatie over markeringen, zie [ Gebruikend Markeringen.](/help/sites-authoring/tags.md)
+   * Voor meer informatie over markeringen, zie [&#x200B; Gebruikend Markeringen.](/help/sites-authoring/tags.md)
 * **Verbergen in Navigatie** - wijst erop of de pagina in de paginanavigatie van de resulterende plaats wordt getoond of verborgen
 
 #### Branding {#branding}
 
-Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Deze functionaliteit vereist gebruik van de Component van de Pagina van versie 2.14.0 of later van de [&#x200B; Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 
 * **met voeten treden** - Controle om de merkschuine streep op deze pagina te bepalen.
    * De waarde wordt geërft door om het even welke kindpagina&#39;s tenzij zij ook hun **vastgestelde waarden van de Overschrijving** hebben.
@@ -64,8 +64,8 @@ De aan/uit-tijd voor een pagina is een handige manier om inhoud die al is gepubl
 
 * **op Tijd** - de datum en de tijd waarop de gepubliceerde pagina zichtbaar (teruggegeven) op het publicatiemilieu wordt gemaakt. De pagina moet, of manueel of door pre-gevormde auto-replicatie worden gepubliceerd.
 
-   * Als reeds [ gepubliceerd, ](/help/sites-authoring/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
-   * Als niet gepubliceerd en [ voor auto-replicatie wordt gevormd, ](/help/sites-deploying/replication.md) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
+   * Als reeds [&#x200B; gepubliceerd, &#x200B;](/help/sites-authoring/publishing-pages.md) is deze pagina beschikbaar op publiceer instantie, maar gehouden slapend (verborgen) tot het teruggeven op de gespecificeerde tijd.
+   * Als niet gepubliceerd en [&#x200B; voor auto-replicatie wordt gevormd, &#x200B;](/help/sites-deploying/replication.md) wordt de pagina automatisch gepubliceerd, dan teruggegeven, op de gespecificeerde tijd.
    * Als niet gepubliceerd en niet gevormd voor auto-replicatie, wordt de pagina niet automatisch gepubliceerd, zodat wordt 404 gezien wanneer een poging om tot de pagina toegang te hebben wordt gemaakt.
 
 * **Van Tijd** - Gelijkaardig aan en vaak gebruikt in combinatie met **op Tijd**, bepaalt dit de tijd waarbij de gepubliceerde pagina op het publicatiemilieu wordt verborgen.
@@ -79,7 +79,7 @@ Verlaat deze gebieden (**op Tijd** en **van Tijd**) leeg voor pagina&#39;s u wil
 >
 >Aan/uit-tijden hebben uitsluitend betrekking op inhoud die al is gepubliceerd (handmatig of via automatische replicatie). Daarom hebben publicatieworkflows, zoals die voor het goedkeuren van inhoud, geen invloed op de publicatiestatus van de pagina als gevolg van aan-/uittijden en aan/uit-tijden. Daarom zijn aan/uit-tijden het meest geschikt voor het tijdelijk tonen/verbergen van inhoud die al is goedgekeurd en gepubliceerd.
 >
->Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [ het leiden van uw publicatie.](/help/sites-authoring/publishing-pages.md#manage-publication)
+>Als u wenst om nieuwe inhoud met alle bijbehorende werkschema&#39;s te publiceren of (unpublish inhoud) volledig te verwijderen uit uw plaats, overweeg [&#x200B; het leiden van uw publicatie.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Vanity URL {#vanity-url}
 
@@ -95,7 +95,7 @@ Bijvoorbeeld, als de URL van de Vanity aan `welcome` aan de pagina wordt geplaat
 >* Geen ondersteuning voor regex-patronen.
 >* Deze mag niet op een bestaande pagina worden ingesteld.
 
-Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ Toelatend Toegang tot Vanity URLs ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
+Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [&#x200B; Toelatend Toegang tot Vanity URLs &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#enabling-access-to-vanity-urls-vanity-urls) voor meer details.
 
 * **voeg** toe - Tik of klik om een ijdelheid URL toe te voegen.
 * **verwijder** - Tik of klik om een ijdelheid URL te verwijderen.
@@ -108,12 +108,12 @@ Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ To
 * **Taal** - de paginataal
 * **Wortel van de Taal** - moet worden gecontroleerd als de pagina de wortel van een taalexemplaar is
 * **opnieuw richt** - wijst op de pagina waaraan deze pagina automatisch zou moeten opnieuw richten
-* **Ontwerp** - wijst op het [ ontwerp ](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
+* **Ontwerp** - wijst op het [&#x200B; ontwerp &#x200B;](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
 * **Alias** - specificeert een alias die met deze pagina moet worden gebruikt
    * Als u bijvoorbeeld een alias van `private` voor de pagina `/content/wknd/us/en/magazine/members-only` definieert, kunt u deze pagina ook openen via `/content/wknd/us/en/magazine/private`
    * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld. Dit heeft alleen invloed op de bron, niet op het pad naar de opslagplaats.
-   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [ publiceer opties ](/help/sites-authoring/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
-   * Voor verdere details, zie [ Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL ](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [&#x200B; publiceer opties &#x200B;](/help/sites-authoring/publishing-pages.md) in de redacteur zijn slechts beschikbaar voor pagina&#39;s die via hun daadwerkelijke wegen worden betreden.
+   * Voor verdere details, zie [&#x200B; Gelokaliseerde paginanamen onder SEO en de Beste praktijken van het Beheer URL &#x200B;](/help/managing/seo-and-url-management.md#localized-page-names).
 
 #### Configuratie {#configuration}
 
@@ -122,7 +122,7 @@ Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ To
 
 #### Sjablooninstellingen {#templates}
 
-* **Toegestane Malplaatjes** - [ bepaalt de lijst van malplaatjes die ](/help/sites-authoring/templates.md#allowingatemplate) binnen deze subtak beschikbaar zijn
+* **Toegestane Malplaatjes** - [&#x200B; bepaalt de lijst van malplaatjes die &#x200B;](/help/sites-authoring/templates.md#allowingatemplate) binnen deze subtak beschikbaar zijn
 
 #### Verificatievereiste {#authentication}
 
@@ -135,10 +135,10 @@ Configureer Dispatcher om toegang tot vanity-URL&#39;s in te schakelen. Zie [ To
 
 >[!CAUTION]
 >
->Het **[lusje van Toestemmingen](#permissions)** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengen worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond onder **de Vereiste van de Authentificatie** en de optie is niet editable, noch zijn de [ Toestemmingen ](/help/sites-authoring/editing-page-properties.md#permissions) editable.
+>Het **[lusje van Toestemmingen](#permissions)** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengen worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond onder **de Vereiste van de Authentificatie** en de optie is niet editable, noch zijn de [&#x200B; Toestemmingen &#x200B;](/help/sites-authoring/editing-page-properties.md#permissions) editable.
 >
 >
->In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
+>In zulk een geval moeten de toestemmingen van de KUG in [&#x200B; klassieke UI &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
 
 #### Exporteren {#export}
 
@@ -183,38 +183,38 @@ STthis section is used to select and configure the image thumbnail for the page.
 
 * **Geërft van** - configuraties ContextHub worden door gebrek geërft van de ouderpagina.
    * Schakel de optie uit om overerving te overschrijven.
-* **ContextHub Weg** - Selecteert de [ Configuratie ContextHub ](/help/sites-developing/ch-configuring.md)
-* **Weg van Segmenten** - selecteert de [ Weg van Segmenten ](/help/sites-administering/segmentation.md).
+* **ContextHub Weg** - Selecteert de [&#x200B; Configuratie ContextHub &#x200B;](/help/sites-developing/ch-configuring.md)
+* **Weg van Segmenten** - selecteert de [&#x200B; Weg van Segmenten &#x200B;](/help/sites-administering/segmentation.md).
 
 #### Doelconfiguratie {#targeting}
 
-Selecteer a [ Merk om een werkingsgebied voor het richten te specificeren.](/help/sites-authoring/target-adobe-campaign.md)
+Selecteer a [&#x200B; Merk om een werkingsgebied voor het richten te specificeren.](/help/sites-authoring/target-adobe-campaign.md)
 
 >[!NOTE]
 >Deze optie vereist de gebruikersrekening om in de `Target Adminstrators` groep te zijn.
 
 ### Machtigingen {#permissions}
 
-Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [ gesloten gebruikersgroepen (CUGs) ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
+Gebruik het **lusje van Toestemmingen** om te bepalen welke gebruikers, groepen, of [&#x200B; gesloten gebruikersgroepen (CUGs) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=nl-NL) tot de pagina kunnen toegang hebben en/of wijzigen.
 
 * [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
 * [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
-* Bekijk de [ Effectieve Toestemmingen ](/help/sites-administering/user-group-ac-admin.md)
+* Bekijk de [&#x200B; Effectieve Toestemmingen &#x200B;](/help/sites-administering/user-group-ac-admin.md)
 
 >[!CAUTION]
 >
->Het **lusje van Toestemmingen** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengeling worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond en de toestemmingen van de CUG zijn niet editable, noch is het Vereiste van de Authentificatie op het [ Geavanceerde ](/help/sites-authoring/editing-page-properties.md#advanced) lusje editable.
+>Het **lusje van Toestemmingen** staat het uitgeven van de configuraties van de KUG toe die op de aanwezigheid van de `granite:AuthenticationRequired` mengeling worden gebaseerd. Als de paginamachtigingen gebruikend afgekeurde configuraties van de CUG worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, wordt een waarschuwingsbericht getoond en de toestemmingen van de CUG zijn niet editable, noch is het Vereiste van de Authentificatie op het [&#x200B; Geavanceerde &#x200B;](/help/sites-authoring/editing-page-properties.md#advanced) lusje editable.
 >
 >
->In zulk een geval moeten de toestemmingen van de KUG in [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
+>In zulk een geval moeten de toestemmingen van de KUG in [&#x200B; klassieke UI &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
 
 >[!NOTE]
 >
->Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Hiervoor moet CRX Explorer worden gebruikt. Zie het document [ Gebruiker, Groep, en Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
+>Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Hiervoor moet CRX Explorer worden gebruikt. Zie het document [&#x200B; Gebruiker, Groep, en Beleid van de Rechten van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
 
 ### Blauwdruk {#blueprint}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [ Multisite Beheer.](/help/sites-administering/msm.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren. De blauwdrukken dienen als basis voor Levende Kopieën, en maken deel uit van [&#x200B; Multisite Beheer.](/help/sites-administering/msm.md)
 
 * **Uitvoer** - stelt een uitrol van blauwdrukinhoud aan Levende Exemplaren in werking
 * **Levend Overzicht van het Exemplaar** - opent een venster om de Levende de paginastructuur van het Exemplaar te doorbladeren
@@ -223,7 +223,7 @@ Dit tabblad is alleen zichtbaar voor pagina&#39;s die als blauwdrukken fungeren.
 
 ### Live kopie {#live-copy}
 
-Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [ blauwdrukken, ](#blueprint) Levende Exemplaren deel van [ Multisite Beheer zijn.](/help/sites-administering/msm.md)
+Dit tabblad is alleen zichtbaar voor pagina&#39;s die zijn geconfigureerd als live kopieën. Zoals met [&#x200B; blauwdrukken, &#x200B;](#blueprint) Levende Exemplaren deel van [&#x200B; Multisite Beheer zijn.](/help/sites-administering/msm.md)
 
 * **synchroniseer** - synchroniseert Levend Exemplaar met blauwdruk, die lokale aanpassingen houden
 * **Teruggestelde** - stelt Levend Exemplaar aan staat van blauwdruk terug, verwijderend lokale wijzigingen
@@ -251,7 +251,7 @@ U kunt pagina-eigenschappen definiëren:
 
 * Van de **console van Plaatsen**:
 
-   * [ Creërend een pagina ](/help/sites-authoring/managing-pages.md#creating-a-new-page) (een ondergroep van de eigenschappen)
+   * [&#x200B; Creërend een pagina &#x200B;](/help/sites-authoring/managing-pages.md#creating-a-new-page) (een ondergroep van de eigenschappen)
 
    * Het klikken of het tappen **Eigenschappen**
 
@@ -287,7 +287,7 @@ Wanneer het uitgeven van een pagina, kunt u **Informatie van de Pagina** gebruik
 
 1. Selecteer het **pictogram van de Informatie van de Pagina** om het selectiemenu te openen:
 
-   ![ screen_shot_2018-03-22at095740 ](assets/screen_shot_2018-03-22at095740.png)
+   ![&#x200B; screen_shot_2018-03-22at095740 &#x200B;](assets/screen_shot_2018-03-22at095740.png)
 
 1. Selecteer **Open Eigenschappen** en een dialoogdoos opent het laten u de eigenschappen uitgeven, die door het aangewezen lusje worden gesorteerd. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
 
@@ -302,20 +302,20 @@ Van de **console van Plaatsen**, kunt u verscheidene pagina&#39;s dan gebruiken 
 
 >[!NOTE]
 >
->Bulkbewerking van eigenschappen is ook beschikbaar voor Assets. Het is vergelijkbaar, maar op een paar punten verschilt het. Zie [ het Uitgeven Eigenschappen van Veelvoudige Assets ](/help/assets/metadata.md) voor details.
+>Bulkbewerking van eigenschappen is ook beschikbaar voor Assets. Het is vergelijkbaar, maar op een paar punten verschilt het. Zie [&#x200B; het Uitgeven Eigenschappen van Veelvoudige Assets &#x200B;](/help/assets/metadata.md) voor details.
 >
->Er is ook de [ BulkRedacteur ](/help/sites-administering/bulk-editor.md). Met deze editor kunt u zoeken naar inhoud van meerdere pagina&#39;s met behulp van GQL (Google Query Language) en de inhoud vervolgens rechtstreeks bewerken met de Bulk-editor voordat u de wijzigingen opslaat in de oorspronkelijke pagina&#39;s.
+>Er is ook de [&#x200B; BulkRedacteur &#x200B;](/help/sites-administering/bulk-editor.md). Met deze editor kunt u zoeken naar inhoud van meerdere pagina&#39;s met behulp van GQL (Google Query Language) en de inhoud vervolgens rechtstreeks bewerken met de Bulk-editor voordat u de wijzigingen opslaat in de oorspronkelijke pagina&#39;s.
 
 U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
 
 * Wanneer het doorbladeren van de **console van Plaatsen**
 * Na het gebruiken van **Onderzoek** om van een reeks pagina&#39;s de plaats te bepalen
 
-![ epp-01 ](assets/epp-01.png)
+![&#x200B; epp-01 &#x200B;](assets/epp-01.png)
 
 Na het selecteren van de pagina&#39;s en dan het klikken of het tikken van de **optie van Eigenschappen**, worden de bulkeigenschappen getoond:
 
-![ epp-02 ](assets/epp-02.png)
+![&#x200B; epp-02 &#x200B;](assets/epp-02.png)
 
 U kunt alleen pagina&#39;s bulksgewijs bewerken die:
 
@@ -363,4 +363,4 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u het volgende doen:
 
 >[!NOTE]
 >
->De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie [ Vormend uw pagina voor bulkhet uitgeven van paginaeigenschappen ](/help/sites-developing/bulk-editing.md).
+>De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie [&#x200B; Vormend uw pagina voor bulkhet uitgeven van paginaeigenschappen &#x200B;](/help/sites-developing/bulk-editing.md).

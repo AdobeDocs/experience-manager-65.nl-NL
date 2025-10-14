@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >**Vereiste**:
 >
->Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie [ Synchronisatie van de Inhoud ](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
+>Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie [&#x200B; Synchronisatie van de Inhoud &#x200B;](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
 
 Adobe Experience Manager (AEM) Mobiele gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in mobiele apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
@@ -48,11 +48,11 @@ De configuratie van de Synchronisatie van de Inhoud die bij **wordt gevonden &lt
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 1. Open CRXDE Lite op uw AEM.
-1. Blader naar dit pad *[/etc/contentSync/templates/dps-we-onbeperkt-app/dps-HTMLResources ](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* om de steekproef gedeelde bronnen te bekijken.
+1. Blader naar dit pad *[/etc/contentSync/templates/dps-we-onbeperkt-app/dps-HTMLResources &#x200B;](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* om de steekproef gedeelde bronnen te bekijken.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
 
-   ![ chlimage_1-145 ](assets/chlimage_1-145.png)
+   ![&#x200B; chlimage_1-145 &#x200B;](assets/chlimage_1-145.png)
 
 >[!NOTE]
 >

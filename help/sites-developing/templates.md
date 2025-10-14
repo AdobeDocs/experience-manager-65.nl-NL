@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Sjablonen worden op verschillende punten in AEM gebruikt:
 
-* [ wanneer u een pagina creeert, selecteert u een malplaatje ](#templates-pages). Deze sjabloon wordt gebruikt als basis voor de nieuwe pagina. Het malplaatje bepaalt de structuur van de pagina, om het even welke aanvankelijke inhoud, en de [ componenten ](/help/sites-authoring/default-components.md) die (ontwerpeigenschappen) kunnen worden gebruikt.
+* [&#x200B; wanneer u een pagina creeert, selecteert u een malplaatje &#x200B;](#templates-pages). Deze sjabloon wordt gebruikt als basis voor de nieuwe pagina. Het malplaatje bepaalt de structuur van de pagina, om het even welke aanvankelijke inhoud, en de [&#x200B; componenten &#x200B;](/help/sites-authoring/default-components.md) die (ontwerpeigenschappen) kunnen worden gebruikt.
 
-* [ wanneer u een Fragment van de Inhoud creeert, selecteert u ook een malplaatje ](#templates-content-fragments). Deze sjabloon definieert de structuur, initiële elementen en variaties.
+* [&#x200B; wanneer u een Fragment van de Inhoud creeert, selecteert u ook een malplaatje &#x200B;](#templates-content-fragments). Deze sjabloon definieert de structuur, initiële elementen en variaties.
 
 De volgende sjablonen worden in detail besproken:
 
@@ -46,7 +46,7 @@ Bewerkbare sjablonen worden nu beschouwd als aanbevolen werkwijzen voor het ontw
 
 De voordelen van bewerkbare sjablonen:
 
-* Kan [ worden gecreeerd ](/help/sites-authoring/templates.md#creating-a-new-template-template-author) en [ worden uitgegeven ](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) door uw auteurs.
+* Kan [&#x200B; worden gecreeerd &#x200B;](/help/sites-authoring/templates.md#creating-a-new-template-template-author) en [&#x200B; worden uitgegeven &#x200B;](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) door uw auteurs.
 
 * Er zijn nu regels waarmee u het volgende kunt definiëren voor pagina&#39;s die met de sjabloon zijn gemaakt:
 
@@ -57,11 +57,11 @@ De voordelen van bewerkbare sjablonen:
 * Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Deze verbinding houdt in dat wijzigingen in de sjabloonstructuur worden weerspiegeld op alle pagina&#39;s die met die sjabloon worden gemaakt. Wijzigingen in de oorspronkelijke inhoud worden niet doorgevoerd.
 * Gebruikt het inhoudsbeleid (dat van de malplaatjeredacteur wordt uitgegeven) om de ontwerpeigenschappen (gebruikt niet de wijze van het Ontwerp binnen de paginaredacteur) voort te zetten.
 * Wordt opgeslagen onder `/conf`
-* Zie [ Bewerkbare Malplaatjes ](/help/sites-developing/page-templates-editable.md) voor verdere informatie.
+* Zie [&#x200B; Bewerkbare Malplaatjes &#x200B;](/help/sites-developing/page-templates-editable.md) voor verdere informatie.
 
 >[!NOTE]
 >
->Zie [ Gebruikend Bewerkbare Malplaatjes van de Pagina om een plaats van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL) te ontwikkelen.
+>Zie [&#x200B; Gebruikend Bewerkbare Malplaatjes van de Pagina om een plaats van de Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=nl-NL) te ontwikkelen.
 
 ### Statische sjablonen {#static-templates}
 
@@ -71,15 +71,15 @@ Statische sjablonen:
 * Het oorspronkelijke sjabloonsysteem van AEM dat voor veel versies beschikbaar was.
 * Een statische sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 * Wordt gekopieerd om de pagina te maken. Hierna bestaat geen dynamische verbinding.
-* Gebruikt [ Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) om ontwerpeigenschappen voort te zetten.
+* Gebruikt [&#x200B; Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) om ontwerpeigenschappen voort te zetten.
 * Wordt opgeslagen onder `/apps`
-* Zie [ Statische Malplaatjes ](/help/sites-developing/page-templates-static.md) voor verdere informatie.
+* Zie [&#x200B; Statische Malplaatjes &#x200B;](/help/sites-developing/page-templates-static.md) voor verdere informatie.
 
 >[!NOTE]
 >
 >Vanaf AEM 6.5 wordt het gebruik van statische sjablonen niet als een goede praktijk beschouwd. Gebruik in plaats hiervan Bewerkbare sjablonen.
 >
->[ AEM de hulpmiddelen van de Modernisering ](modernization-tools.md) kunnen u helpen van statisch aan editable malplaatjes migreren.
+>[&#x200B; AEM de hulpmiddelen van de Modernisering &#x200B;](modernization-tools.md) kunnen u helpen van statisch aan editable malplaatjes migreren.
 
 ### Beschikbaarheid sjabloon {#template-availability}
 
@@ -127,7 +127,7 @@ De evaluatie werkt als volgt:
 
 Het volgende diagram toont het sjabloonevaluatieproces:
 
-![ chlimage_1-176 ](assets/chlimage_1-176.png)
+![&#x200B; chlimage_1-176 &#x200B;](assets/chlimage_1-176.png)
 
 #### Sjablonen beperken die worden gebruikt in onderliggende pagina&#39;s {#limiting-templates-used-in-child-pages}
 
@@ -139,4 +139,4 @@ Als u meer beperkingen wilt toevoegen, bijvoorbeeld met betrekking tot de sjablo
 
 ## Sjablonen - Inhoudsfragmenten {#templates-content-fragments}
 
-Zie [ de Malplaatjes van het Fragment van de Inhoud ](/help/sites-developing/content-fragment-templates.md).
+Zie [&#x200B; de Malplaatjes van het Fragment van de Inhoud &#x200B;](/help/sites-developing/content-fragment-templates.md).

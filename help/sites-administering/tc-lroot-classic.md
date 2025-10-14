@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een taalbasis maken met de klassieke gebruikersinterface{#creating-a-language-root-using-the-classic-ui}
 
-De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Voor meer informatie, zie [ Creërend een Wortel van de Taal ](/help/sites-administering/tc-prep.md#creating-a-language-root).
+De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Voor meer informatie, zie [&#x200B; Creërend een Wortel van de Taal &#x200B;](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Voeg een nieuwe kindpagina toe die de taalversie van de plaats vertegenwoordigt:
@@ -28,22 +28,22 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
 
    1. Selecteer de sjabloon en klik op Maken.
 
-   ![ newpagefr ](assets/newpagefr.png)
+   ![&#x200B; newpagefr &#x200B;](assets/newpagefr.png)
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site.
 1. Selecteer Taalkopie in het menu Gereedschappen.
 
-   ![ toolslanguagecopy ](assets/toolslanguagecopy.png)
+   ![&#x200B; toolslanguagecopy &#x200B;](assets/toolslanguagecopy.png)
 
    In het dialoogvenster Taalkopie wordt een matrix weergegeven met beschikbare taalversies en webpagina&#39;s. Een x in een taalkolom betekent dat de pagina in die taal beschikbaar is.
 
-   ![ languageCopydialog ](assets/languagecopydialog.png)
+   ![&#x200B; languageCopydialog &#x200B;](assets/languagecopydialog.png)
 
 1. Als u een bestaande pagina of paginastructuur naar een taalversie wilt kopiëren, selecteert u de cel voor die pagina in de taalkolom. Klik op de pijl en selecteer het type kopie dat u wilt maken.
 
    In het volgende voorbeeld wordt de pagina voor apparatuur/zonnebril/irian gekopieerd naar de Franse taalversie.
 
-   ![ languageCopydilogdropdown ](assets/languagecopydilogdropdown.png)
+   ![&#x200B; languageCopydilogdropdown &#x200B;](assets/languagecopydilogdropdown.png)
 
    | Type taalkopie | Beschrijving |
    |---|---|

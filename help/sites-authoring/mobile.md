@@ -24,9 +24,9 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [ Creërend Levend Exemplaar voor Verschillende Kanalen ](/help/sites-administering/msm-livecopy.md).)
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [&#x200B; Creërend Levend Exemplaar voor Verschillende Kanalen &#x200B;](/help/sites-administering/msm-livecopy.md).)
 >
->AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [ Creërend de Filters van de Groep van het Apparaat ](/help/sites-developing/groupfilters.md).)
+>AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [&#x200B; Creërend de Filters van de Groep van het Apparaat &#x200B;](/help/sites-developing/groupfilters.md).)
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
@@ -39,7 +39,7 @@ Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
 De pagina ziet er ongeveer als volgt uit:
 
-![ mobileipademu ](assets/mobileipademu.png)
+![&#x200B; mobileipademu &#x200B;](assets/mobileipademu.png)
 
 >[!NOTE]
 >

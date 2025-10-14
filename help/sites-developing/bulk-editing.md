@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Pagina configureren voor Bulk bewerken van pagina-eigenschappen {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[ Bulk het uitgeven van paginaeigenschappen ](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
+[&#x200B; Bulk het uitgeven van paginaeigenschappen &#x200B;](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) laat u de eigenschappen van veelvoudige pagina&#39;s in één keer uitgeven.
 
 Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet standaard ingeschakeld voor bulkbewerking. Ze moeten expliciet worden toegestaan (ingeschakeld). Wanneer u de pagina-eigenschappen definieert die beschikbaar moeten zijn voor bulkbewerking, moet u rekening houden met bepaalde implicaties, zoals:
 
@@ -38,7 +38,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 
 >[!NOTE]
 >
->Bulkbewerking is ook beschikbaar voor Assets. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [ het Uitgeven Eigenschappen van Veelvoudige Assets ](/help/assets/metadata.md) voor volledige informatie. U kunt de gebieden in de Bulk redacteur van Meta-gegevens voor Assets aanpassen gebruikend de [ redacteur van het Schema ](/help/assets/metadata-schemas.md).
+>Bulkbewerking is ook beschikbaar voor Assets. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [&#x200B; het Uitgeven Eigenschappen van Veelvoudige Assets &#x200B;](/help/assets/metadata.md) voor volledige informatie. U kunt de gebieden in de Bulk redacteur van Meta-gegevens voor Assets aanpassen gebruikend de [&#x200B; redacteur van het Schema &#x200B;](/help/assets/metadata-schemas.md).
 
 ## Veld inschakelen {#enabling-a-field}
 
@@ -62,7 +62,7 @@ De gebieden worden toegelaten op de paginacomponent (*niet* op het malplaatje):
 
    >[!NOTE]
    >
-   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [ documentatie van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor meer informatie.
+   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [&#x200B; documentatie van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor meer informatie.
 
 1. Navigeer naar het vereiste veld binnen de definitie van `cq:dialog` .
 1. Definieer de volgende eigenschap op het veldknooppunt:
@@ -71,7 +71,7 @@ De gebieden worden toegelaten op de paginacomponent (*niet* op het malplaatje):
    * **Type**: `Boolean`
    * **Waarde**: `true`
 
-   Bijvoorbeeld, voor de standaardpagina [ stichtingscomponent ](/help/sites-authoring/default-components-foundation.md):
+   Bijvoorbeeld, voor de standaardpagina [&#x200B; stichtingscomponent &#x200B;](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 

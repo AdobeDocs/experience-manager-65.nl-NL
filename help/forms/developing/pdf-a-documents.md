@@ -22,12 +22,12 @@ ht-degree: 0%
 
 De DocConverter-service kan PDF-documenten omzetten in PDA/A-documenten. U kunt deze taken uitvoeren met deze service:
 
-* PDF-documenten converteren naar PDF/A-documenten. (Zie [ Omzettend Documenten in Documenten PDF/A ](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
-* Bepaal of PDF-documenten PDF/A-documenten zijn. (Zie [ programmatically het bepalen van PDF/A Complichtigheid ](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+* PDF-documenten converteren naar PDF/A-documenten. (Zie [&#x200B; Omzettend Documenten in Documenten PDF/A &#x200B;](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+* Bepaal of PDF-documenten PDF/A-documenten zijn. (Zie [&#x200B; programmatically het bepalen van PDF/A Complichtigheid &#x200B;](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Documenten converteren naar PDF/A-documenten {#converting-documents-to-pdf-a-documents}
 
@@ -41,7 +41,7 @@ De ondersteunde PDF/A-compatibiliteitsnormen omvatten PDF/A-1a, 1b, 2a, 2b, 3a e
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -66,7 +66,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt DocConvert**
 
@@ -121,7 +121,7 @@ Een PDF-document converteren naar een PDF/A-document met de Java API:
 1. Trackinggegevens instellen
 
    * Maak een `PDFAConversionOptionSpec` -object met behulp van de constructor.
-   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAConversionOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAConversionOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Het document converteren
 
@@ -202,11 +202,11 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
 ## Programmaticaal bepalen van PDF/A-compatibiliteit {#programmatically-determining-pdf-a-compliancy}
 
-U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Voor informatie over een PDF/A- document en hoe te om een document van de PDF in een document van PDF/A om te zetten, zie [ Converterend Documenten in Documenten PDF/A ](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Voor informatie over een PDF/A- document en hoe te om een document van de PDF in een document van PDF/A om te zetten, zie [&#x200B; Converterend Documenten in Documenten PDF/A &#x200B;](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst DocConverter, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -230,7 +230,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt DocConvert**
 
@@ -280,7 +280,7 @@ Bepaal de PDF/A-compatibiliteit met de Java API:
 
    * Maak een `PDFAValidationOptionSpec` -object met behulp van de constructor.
    * Stel het compatibiliteitsniveau in door de methode `setCompliance` van het object `PDFAValidationOptionSpec` aan te roepen en door te geven `PDFAValidationOptionSpec.Compliance.PDFA_1B` .
-   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAValidationOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAValidationOptionSpec` -object `setLogLevel` aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. Geef bijvoorbeeld de waarde `FINE` door. Voor informatie over de verschillende waarden, zie de `setLogLevel` methode in de [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Informatie ophalen over het PDF-document
 

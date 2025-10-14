@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Zelfstudie: sjablonen maken{#tutorial-create-templates}
 
-![ 07-apply-rules-to-adaptive-form_small ](assets/07-apply-rules-to-adaptive-form_small.png)
+![&#x200B; 07-apply-rules-to-adaptive-form_small &#x200B;](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [&#x200B; creeer uw eerste Interactieve Communicatie &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 Om een Interactieve Mededeling tot stand te brengen, moet u malplaatjes beschikbaar op de AEM server voor de Kanalen van de Druk en van het Web hebben.
 
@@ -43,7 +43,7 @@ Creeer en beheer een malplaatje voor het kanaal van de Druk van Interactieve Com
 
 ### Een XDP-sjabloon maken met Forms Designer {#create-xdp-template-using-forms-designer}
 
-Gebaseerd op het [ gebruiksgeval ](/help/forms/using/create-your-first-interactive-communication.md) en [ anatomie ](/help/forms/using/planning-interactive-communications.md), creeer de volgende subforms in het malplaatje XDP:
+Gebaseerd op het [&#x200B; gebruiksgeval &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) en [&#x200B; anatomie &#x200B;](/help/forms/using/planning-interactive-communications.md), creeer de volgende subforms in het malplaatje XDP:
 
 * Bill Details: bevat een documentfragment
 * Klantgegevens: bevat een documentfragment
@@ -53,7 +53,7 @@ Gebaseerd op het [ gebruiksgeval ](/help/forms/using/create-your-first-interacti
 * Nu betalen: neemt een afbeelding op
 * Services voor toegevoegde waarde: bevat een afbeelding
 
-![ create_print_template ](assets/create_print_template.gif)
+![&#x200B; create_print_template &#x200B;](assets/create_print_template.gif)
 
 Deze subformulieren worden weergegeven als doelgebieden in de afdruksjabloon nadat het XDP-bestand naar de Forms-server is geüpload. Alle entiteiten zoals documentfragmenten, grafieken, lay-outfragmenten en afbeeldingen worden aan doelgebieden toegevoegd tijdens het maken van de interactieve communicatie.
 
@@ -72,7 +72,7 @@ Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 
    1. Selecteer **Geen gegevensband** van de **Gegevens die** drop-down lijst binden.
 
-   ![ subform van Designer ](assets/forms_designer_subform_new.png)
+   ![&#x200B; subform van Designer &#x200B;](assets/forms_designer_subform_new.png)
 
 1. Op dezelfde manier selecteer het wortelsubform, selecteer het **Subform** lusje, en selecteer **Overlopen** van de **Inhoud** drop-down lijst. In het **Bindingen** lusje:
 
@@ -80,7 +80,7 @@ Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 
    1. Selecteer **Geen gegevensband** van de **Gegevens die** drop-down lijst binden.
 
-   ![ Subform voor het malplaatje van de Druk ](assets/root_subform_print_template_new.png)
+   ![&#x200B; Subform voor het malplaatje van de Druk &#x200B;](assets/root_subform_print_template_new.png)
 
 1. Herhaal stap 2 tot en met 5 om de volgende subformulieren te maken:
 
@@ -103,7 +103,7 @@ Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 1. Sleep-en-daling het **voorwerp van de Tekst** van de **Bibliotheek van Objecten** aan de vorm en ga **Wijzerplaat XXXX in om** tekst in de doos in te tekenen.
 1. Klik het tekstvoorwerp in de linkerruit met de rechtermuisknop aan, uitgezocht **noem Voorwerp** anders, en ga de naam van het tekstvoorwerp in aangezien **&#x200B;**&#x200B;intekent.
 
-   ![ XDP malplaatje ](assets/print_xdp_template_subform_new.png)
+   ![&#x200B; XDP malplaatje &#x200B;](assets/print_xdp_template_subform_new.png)
 
 1. Selecteer **Dossier** > **sparen als** om het dossier op het lokale dossiersysteem op te slaan:
 
@@ -143,15 +143,15 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
 1. Klik de de tekstgebieden van de Kopbal in de **Mening van Designer** en noem hen **Tijd** anders, **Aantal**, **Duur**, en **Tarieven**.
 
-   ![ fragment van de Lay-out ](assets/layout_fragment_print_new.png)
+   ![&#x200B; fragment van de Lay-out &#x200B;](assets/layout_fragment_print_new.png)
 
 1. Selecteer **Rij 1** van de linkerruit en selecteer **Voorwerp** > **Bindend** > **Herhaal Rij voor Elk Punt van Gegevens**.
 
-   ![ Herhaal eigenschappen voor lay-outfragment ](assets/layout_fragment_print_repeat_new.png)
+   ![&#x200B; Herhaal eigenschappen voor lay-outfragment &#x200B;](assets/layout_fragment_print_repeat_new.png)
 
 1. De belemmering-en-daling de **component van het Gebied van de Tekst van de** Bibliotheek van Objecten **aan de** Mening van Designer **.**
 
-   ![ gebied van de Tekst voor lay-outfragment ](assets/layout_fragment_print_text_field_new.png)
+   ![&#x200B; gebied van de Tekst voor lay-outfragment &#x200B;](assets/layout_fragment_print_text_field_new.png)
 
    Op dezelfde manier belemmering-en-daling de **component van het Gebied van de Tekst** &lbrace;aan de **Tijd**, **Aantal**, **Duur**, en **de rijen van de Laden**.
 
@@ -179,18 +179,18 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 
 Ga als volgt te werk om een map voor de bewerkbare sjablonen te maken:
 
-1. Selecteer **Hulpmiddelen** ![ hammer-pictogram ](assets/hammer-icon.svg) > **Browser van de Configuratie**.
+1. Selecteer **Hulpmiddelen** ![&#x200B; hammer-pictogram &#x200B;](assets/hammer-icon.svg) > **Browser van de Configuratie**.
    * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
 1. In Browser van de Configuratie pagina, creeer de uitgezochte **&#x200B;**.
 1. In **creeer de dialoog van de Configuratie**, specificeer **Create_First_IC_templates** als titel voor de omslag, controleer **Bewerkbare Malplaatjes**, en selecteer **creeer**.
 
-   ![ vorm Webmalplaatjes ](assets/create_first_ic_web_template_new.png)
+   ![&#x200B; vorm Webmalplaatjes &#x200B;](assets/create_first_ic_web_template_new.png)
 
    De **Create_First_IC_templates** omslag wordt gecreeerd en op **Browser van de Configuratie** pagina vermeld.
 
 ### De sjabloon maken {#create-the-template}
 
-Gebaseerd op het [ gebruiksgeval ](/help/forms/using/create-your-first-interactive-communication.md) en [ anatomie ](/help/forms/using/planning-interactive-communications.md), creeer de volgende panelen in het malplaatje van het Web:
+Gebaseerd op het [&#x200B; gebruiksgeval &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) en [&#x200B; anatomie &#x200B;](/help/forms/using/planning-interactive-communications.md), creeer de volgende panelen in het malplaatje van het Web:
 
 * Bill Details: bevat een documentfragment
 * Klantgegevens: bevat een documentfragment
@@ -200,7 +200,7 @@ Gebaseerd op het [ gebruiksgeval ](/help/forms/using/create-your-first-interacti
 * Nu betalen: Omvat a **nu betalen** knoop en een beeld
 * De toegevoegde diensten van de waarde: Omvat een beeld en a **Abonneren** knoop.
 
-![ create_web_template ](assets/create_web_template.gif)
+![&#x200B; create_web_template &#x200B;](assets/create_web_template.gif)
 
 Alle entiteiten zoals documentfragmenten, grafieken, tabellen, afbeeldingen en knoppen worden toegevoegd tijdens het maken van de interactieve communicatie.
 
@@ -216,22 +216,22 @@ Om een malplaatje voor het kanaal van het Web in de **te creëren Create_First_I
 1. Selecteer **Open** om het malplaatje in de malplaatjeredacteur te openen.
 1. Selecteer **Aanvankelijke Inhoud** van de drop-down lijst naast de **optie van de Voorproef**.
 
-   ![ redacteur van het Malplaatje ](assets/template_editor_initial_content_new.png)
+   ![&#x200B; redacteur van het Malplaatje &#x200B;](assets/template_editor_initial_content_new.png)
 
 1. Selecteer **Comité van de Wortel** en selecteer dan **+** om de lijst van componenten te bekijken die u aan het malplaatje kunt toevoegen.
 1. Om een paneel boven het **Comité van de Wortel** toe te voegen, selecteer **Comité** van de lijst.
 1. Selecteer het **lusje van de Inhoud** in de linkerruit. Het nieuwe paneel dat in stap 8 wordt toegevoegd wordt getoond onder het **Comité van de Wortel** in de inhoudsboom.
 
-   ![ de boom van de Inhoud ](assets/content_tree_root_panel_new.png)
+   ![&#x200B; de boom van de Inhoud &#x200B;](assets/content_tree_root_panel_new.png)
 
-1. Selecteer het paneel en selecteer ![ configure_icon ](assets/configure_icon.png) (vorm).
+1. Selecteer het paneel en selecteer ![&#x200B; configure_icon &#x200B;](assets/configure_icon.png) (vorm).
 1. In het deelvenster Eigenschappen:
 
    1. Specificeer **billdetails** op het gebied van de Naam.
    1. Specificeer **Details van de Rekening** op het gebied van de Titel.
    1. Selecteer **1** van het **Aantal Kolommen** drop-down lijst.
 
-   1. Om de eigenschappen te bewaren, uitgezocht ![ sparen ](/help/forms/using/assets/done_icon.png).
+   1. Om de eigenschappen te bewaren, uitgezocht ![&#x200B; sparen &#x200B;](/help/forms/using/assets/done_icon.png).
 
    De naam van het paneel wordt bijgewerkt aan **Details van de Rekening** in de inhoudsboom.
 
@@ -248,7 +248,7 @@ Om een malplaatje voor het kanaal van het Web in de **te creëren Create_First_I
 
    In de volgende afbeelding wordt de inhoudsstructuur weergegeven nadat alle deelvensters aan de sjabloon zijn toegevoegd:
 
-   ![ de boom van de Inhoud voor alle panelen ](assets/content_tree_all_panels_new.png)
+   ![&#x200B; de boom van de Inhoud voor alle panelen &#x200B;](assets/content_tree_all_panels_new.png)
 
 ### De sjabloon inschakelen {#enable-the-template}
 
@@ -256,7 +256,7 @@ Zodra u het malplaatje van het Web hebt gecreeerd, moet u het toelaten om het ma
 
 Ga als volgt te werk om de websjabloon in te schakelen:
 
-1. Selecteer **Hulpmiddelen** ![ hammer-pictogram ](assets/hammer-icon.svg) > **Malplaatjes**.
+1. Selecteer **Hulpmiddelen** ![&#x200B; hammer-pictogram &#x200B;](assets/hammer-icon.svg) > **Malplaatjes**.
 1. Navigeer aan **Create_First_IC_Web_Template** malplaatje, selecteer het, en selecteer **toelaten**.
 1. Selecteer **toelaten** opnieuw om te bevestigen.
 
@@ -269,10 +269,10 @@ Gebaseerd op het gebruiksgeval, moet u **nu betalen** omvatten en **3&rbrace; kn
 1. Selecteer **Structuur** van de drop-down lijst naast de **optie van de Voorproef**.
 1. Selecteer het **wortelpaneel van de Container van het 0&rbrace; Document &lbrace;gebruikend de inhoudsboom en selecteer** Beleid **om de componenten te selecteren die voor gebruik in de Interactieve Mededeling worden toegestaan.**
 
-   ![ vorm beleid ](assets/structure_configure_policy_new.png)
+   ![&#x200B; vorm beleid &#x200B;](assets/structure_configure_policy_new.png)
 
 1. In het **Toegestane lusje van Componenten** van de **sectie van Eigenschappen**, uitgezochte **Knoop** van de **Aangepaste componenten van de Vorm**.
 
-   ![ Toegestane componenten ](assets/allowed_components_af_new.png)
+   ![&#x200B; Toegestane componenten &#x200B;](assets/allowed_components_af_new.png)
 
-1. Om de eigenschappen te bewaren, sparen ![ ](assets/done_icon.png).
+1. Om de eigenschappen te bewaren, sparen ![&#x200B; &#x200B;](assets/done_icon.png).

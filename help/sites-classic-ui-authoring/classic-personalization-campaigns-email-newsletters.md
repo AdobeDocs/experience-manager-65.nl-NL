@@ -22,7 +22,7 @@ U kunt nieuwsbrieven aan de e-maildiensten zoals Ingenieur publiceren ExactTarge
 
 >[!NOTE]
 >
->U moet de serviceprovider configureren voordat u een e-mail kunt maken en publiceren. Zie [ het Vormen ExactTarget ](/help/sites-administering/exacttarget.md) en [ het Vormen SilverpopMogelijkheid ](/help/sites-administering/silverpop.md) voor meer informatie.
+>U moet de serviceprovider configureren voordat u een e-mail kunt maken en publiceren. Zie [&#x200B; het Vormen ExactTarget &#x200B;](/help/sites-administering/exacttarget.md) en [&#x200B; het Vormen SilverpopMogelijkheid &#x200B;](/help/sites-administering/silverpop.md) voor meer informatie.
 
 Voer de volgende stappen uit om uw e-mail naar het e-mailservicebureau te publiceren:
 
@@ -46,7 +46,7 @@ Om een e-mail tot stand te brengen die aan de gevormde e-maildienst wordt gepubl
 1. Klik **creëren**.
 1. Open het gemaakte e-mailbericht.
 1. Schakel over naar de ontwerpmodus om de componenten te selecteren die u wilt weergeven in het hulpgedeelte.
-1. De schakelaar om wijze uit te geven en beginnen inhoud (tekst, beelden, [ e-mailhulpmiddelen ](#adding-exacttarget-email-tools-to-your-email) toe te voegen, [ verpersoonlijkingsvariabelen ](#adding-text-and-personalization-tool-to-your-e-mail), etc.) aan uw e-mail.
+1. De schakelaar om wijze uit te geven en beginnen inhoud (tekst, beelden, [&#x200B; e-mailhulpmiddelen &#x200B;](#adding-exacttarget-email-tools-to-your-email) toe te voegen, [&#x200B; verpersoonlijkingsvariabelen &#x200B;](#adding-text-and-personalization-tool-to-your-e-mail), etc.) aan uw e-mail.
 
 ### ExactTarget-e-mailhulpprogramma&#39;s toevoegen aan uw e-mail {#adding-exacttarget-email-tools-to-your-email}
 
@@ -59,7 +59,7 @@ De **E-mailHulpmiddelen** component voor ExactTarget kan meer e-mailfunctionalit
 1. Open een e-mail die naar ExactTarget moet worden gepubliceerd.
 1. Voeg de component **ET toe - E-mailHulpmiddelen** aan uw pagina gebruikend sidekick. Open de component in de modus Bewerken.
 
-   ![ chlimage_1 ](assets/chlimage_1.gif)
+   ![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.gif)
 
 1. Selecteer een optie van het **menu van Opties**:
 
@@ -98,7 +98,7 @@ De **E-mailHulpmiddelen** component voor ExactTarget kan meer e-mailfunctionalit
 
 >[!NOTE]
 >
->Het **drop-down menu van Opties** is slechts bevolkt als de configuratie ExactTarget op e-mail wordt toegepast. Zie [ Toepassend de Configuratie van de E-mailDienst op E-mailmontages ](#applying-e-mail-service-configuration-to-e-mail-settings) voor meer informatie.
+>Het **drop-down menu van Opties** is slechts bevolkt als de configuratie ExactTarget op e-mail wordt toegepast. Zie [&#x200B; Toepassend de Configuratie van de E-mailDienst op E-mailmontages &#x200B;](#applying-e-mail-service-configuration-to-e-mail-settings) voor meer informatie.
 
 1. Publish de e-mail naar ExactTarget.
 
@@ -116,10 +116,10 @@ De **E-mailHulpmiddelen** component voor ExactTarget kan meer e-mailfunctionalit
 U kunt gepersonaliseerde gebieden in een e-mail toevoegen door de **Tekst en de component van Personalization** aan de pagina toe te voegen:
 
 1. Open de e-mail die u naar uw e-mailservice wilt publiceren.
-1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [ het vormen SilverpopMoeilijke ](/help/sites-administering/silverpop.md) en [ het vormen Exact Doel ](/help/sites-administering/exacttarget.md) voor meer informatie.
+1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [&#x200B; het vormen SilverpopMoeilijke &#x200B;](/help/sites-administering/silverpop.md) en [&#x200B; het vormen Exact Doel &#x200B;](/help/sites-administering/exacttarget.md) voor meer informatie.
 1. Voeg de component **Tekst &amp; Personalization** van sidekick toe. Deze component is het deel van nieuwsbrief groep. Open deze component in de bewerkingsmodus.
 
-   ![ chlimage_1-110 ](assets/chlimage_1-110a.png)
+   ![&#x200B; chlimage_1-110 &#x200B;](assets/chlimage_1-110a.png)
 
 1. Voeg het vereiste gepersonaliseerde gebied aan de tekst toe door het gebied van het drop-down menu te selecteren en **Tussenvoegsel** te klikken.
 1. Klik **O.K.** om te beëindigen.
@@ -133,7 +133,7 @@ Om uw E-maildienstconfiguratie op een nieuwsbrief toe te passen:
 1. Open de e-mail/nieuwsbrief montages door of **Montages** te klikken of door **Eigenschappen van de Pagina in** te klikken sidekick.
 1. Klik **toevoegen de Dienst** in **Cloud Servicen** tabel. U ziet de lijst met services. Selecteer uw vereiste configuratie - of **ExactTarget** of **Silverpop** - van de lijst van de drop-down lijst.
 
-   ![ chlimage_1-5 ](assets/chlimage_1-5a.jpeg)
+   ![&#x200B; chlimage_1-5 &#x200B;](assets/chlimage_1-5a.jpeg)
 
 1. Klik **OK**.
 
@@ -147,11 +147,11 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 1. Vul het **gebied van de Naam van het 0&rbrace; Nieuwsbrief in.** Het e-mailbericht/de nieuwsbrief wordt gepubliceerd aan E-mail Service Provider met deze naam. Als er geen e-mailnaam wordt opgegeven, wordt de e-mail gepubliceerd met de paginanaam van de nieuwsbrief in AEM.
 1. Klik **Publish**.
 
-   ![ chlimage_1-6 ](assets/chlimage_1-6.jpeg)
+   ![&#x200B; chlimage_1-6 &#x200B;](assets/chlimage_1-6.jpeg)
 
    AEM bevestigt dat u de e-mail kunt weergeven in ExactTarget of Silverpop Engage.
 
-   Als er ExactTarget is kan de gepubliceerde e-mail hebben bekeken door **Gepubliceerde E-mail van de Mening te klikken**. Dit neemt u rechtstreeks aan de gepubliceerde nieuwsbrief in ExactTarget ([ https://members.exacttarget.com/ ](https://members.exacttarget.com/).).
+   Als er ExactTarget is kan de gepubliceerde e-mail hebben bekeken door **Gepubliceerde E-mail van de Mening te klikken**. Dit neemt u rechtstreeks aan de gepubliceerde nieuwsbrief in ExactTarget ([&#x200B; https://members.exacttarget.com/ &#x200B;](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

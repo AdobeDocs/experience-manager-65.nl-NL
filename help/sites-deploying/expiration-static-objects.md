@@ -25,7 +25,7 @@ Dit heeft het volgende effect:
 * Offloadt aanvragen van de serverinfrastructuur.
 * Hiermee verbetert u de prestaties van het laden van pagina&#39;s, aangezien de browser objecten in het cachegeheugen van de browser opslaat.
 
-De vervalsingen worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [ RFC 2616 ](https://www.ietf.org/rfc/rfc2616.txt) &quot;Protocol van de Overdracht van de Hypertext — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd; dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole naar de oorspronkelijke server wordt uitgevoerd.
+De vervalsingen worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [&#x200B; RFC 2616 &#x200B;](https://www.ietf.org/rfc/rfc2616.txt) &quot;Protocol van de Overdracht van de Hypertext — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd; dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole naar de oorspronkelijke server wordt uitgevoerd.
 
 >[!NOTE]
 >

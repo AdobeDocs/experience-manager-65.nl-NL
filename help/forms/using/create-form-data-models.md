@@ -19,15 +19,15 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
-![ held-beeld ](do-not-localize/data-integration.png)
+![&#x200B; held-beeld &#x200B;](do-not-localize/data-integration.png)
 
 AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling. U kunt echter wel een formuliergegevensmodel maken met of zonder gegevensbron. Er zijn twee benaderingen om van gegevensmodel afhankelijk van tot stand te brengen of u gegevensbronnen hebt gevormd:
 
-* **Gebruikend preconfigured gegevensbronnen**: Als u gegevensbronnen zoals die in [ worden beschreven vormt gegevensbronnen ](../../forms/using/configure-data-sources.md), kunt u hen selecteren terwijl het creëren van een model van vormgegevens. Hiermee worden alle gegevensmodelobjecten, eigenschappen en services van de geselecteerde gegevensbronnen beschikbaar gemaakt voor gebruik in het formuliergegevensmodel.
+* **Gebruikend preconfigured gegevensbronnen**: Als u gegevensbronnen zoals die in [&#x200B; worden beschreven vormt gegevensbronnen &#x200B;](../../forms/using/configure-data-sources.md), kunt u hen selecteren terwijl het creëren van een model van vormgegevens. Hiermee worden alle gegevensmodelobjecten, eigenschappen en services van de geselecteerde gegevensbronnen beschikbaar gemaakt voor gebruik in het formuliergegevensmodel.
 
 * **Zonder gegevensbronnen**: Als u geen gegevensbronnen voor uw model van vormgegevens hebt gevormd, kunt u het zonder gegevensbronnen nog tot stand brengen. U kunt het gegevensmodel van het formulier gebruiken om adaptieve formulieren en interactieve communicatie te maken en deze te testen met behulp van voorbeeldgegevens. Wanneer gegevensbronnen beschikbaar zijn, kunt u het formuliergegevensmodel binden met gegevensbronnen, die automatisch worden weergegeven in de bijbehorende adaptieve formulieren en interactieve communicatie.
 
@@ -37,7 +37,7 @@ AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het 
 
 ## Formuliergegevensmodel maken {#data-sources}
 
-Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het model van vormgegevens wilt gebruiken zoals die in [ worden beschreven vormt gegevensbronnen ](../../forms/using/configure-data-sources.md). Ga als volgt te werk om een formuliergegevensmodel te maken op basis van geconfigureerde gegevensbronnen:
+Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het model van vormgegevens wilt gebruiken zoals die in [&#x200B; worden beschreven vormt gegevensbronnen &#x200B;](../../forms/using/configure-data-sources.md). Ga als volgt te werk om een formuliergegevensmodel te maken op basis van geconfigureerde gegevensbronnen:
 
 1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms > Data Integrations]** .
 1. Selecteer **[!UICONTROL Create > Form Data Model]** .
@@ -54,7 +54,7 @@ Zorg ervoor dat u de gegevensbronnen hebt gevormd u in het model van vormgegeven
 
 Laten we de verschillende componenten van de gebruikersinterface van de formuliergegevensmodel bekijken.
 
-![ het model van vormgegevens van A met drie gegevensbronnen - de dienst RESTful, AEM gebruikersprofiel, en een RDBMS ](assets/fdm-ui.png)
+![&#x200B; het model van vormgegevens van A met drie gegevensbronnen - de dienst RESTful, AEM gebruikersprofiel, en een RDBMS &#x200B;](assets/fdm-ui.png)
 
 **A. Gegevensbronnen** Maakt een lijst van gegevensbronnen in een model van vormgegevens. Breid een gegevensbron uit om zijn voorwerpen en de diensten van het gegevensmodel te bekijken.
 
@@ -68,7 +68,7 @@ Laten we de verschillende componenten van de gebruikersinterface van de formulie
 
 **F. Voeg Geselecteerde** toe voegt geselecteerde voorwerpen en de diensten van het gegevensmodel aan het model van vormgegevens toe.
 
-Voor meer informatie over de modelredacteur van vormgegevens en hoe u met het kunt werken om het model van vormgegevens uit te geven en te vormen, zie [ Werk met het model van vormgegevens ](../../forms/using/work-with-form-data-model.md).
+Voor meer informatie over de modelredacteur van vormgegevens en hoe u met het kunt werken om het model van vormgegevens uit te geven en te vormen, zie [&#x200B; Werk met het model van vormgegevens &#x200B;](../../forms/using/work-with-form-data-model.md).
 
 ## Gegevensbronnen bijwerken {#update}
 
@@ -86,7 +86,7 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
    * Als u een bestaande gegevensbron wilt vervangen door een andere gegevensbron van hetzelfde type, selecteert u het pictogram **[!UICONTROL Edit]** voor de gegevensbron en kiest u een van de beschikbare gegevensbronnen in de lijst.
    * Als u een bestaande gegevensbron wilt verwijderen, selecteert u het pictogram **[!UICONTROL Delete]** voor de gegevensbron. Het pictogram Verwijderen is uitgeschakeld als een gegevensmodelobject in de gegevensbron wordt toegevoegd aan het formuliergegevensmodel.
 
-   ![ fdm-eigenschappen ](assets/fdm-properties.png)
+   ![&#x200B; fdm-eigenschappen &#x200B;](assets/fdm-properties.png)
 
 1. Selecteer **[!UICONTROL Save & Close]** om de updates op te slaan.
 
@@ -98,4 +98,4 @@ Ga als volgt te werk om gegevensbronnen toe te voegen aan of bij te werken naar 
 
 U hebt nu een formuliergegevensmodel waaraan gegevensbronnen zijn toegevoegd. Vervolgens kunt u het gegevensmodel van het formulier bewerken om gegevensmodelobjecten en -services toe te voegen en te configureren, koppelingen tussen gegevensmodelobjecten toe te voegen, eigenschappen te bewerken, aangepaste gegevensmodelobjecten en -eigenschappen toe te voegen, voorbeeldgegevens te genereren, enzovoort.
 
-Voor meer informatie, zie [ Werk met model van vormgegevens ](../../forms/using/work-with-form-data-model.md).
+Voor meer informatie, zie [&#x200B; Werk met model van vormgegevens &#x200B;](../../forms/using/work-with-form-data-model.md).

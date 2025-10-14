@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] biedt ondersteuning voor een groot aantal bibliotheken met bestandsindelingen van leveranciers en derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde bibliotheken voor Adoben behoren [!DNL Adobe Camera Raw] , Gibson, Adobe PDF Rasterizer en [!DNL Adobe InDesign Server] . Daarnaast biedt [!DNL Experience Manager Assets] ondersteuning voor bibliotheken van derden, zoals [!DNL ImageMagick] , [!DNL TwelveMonkeys] , enzovoort.
 
-Voor de gesteunde dossierformaten, zie [ Assets gesteunde formaten ](/help/assets/assets-formats.md).
+Voor de gesteunde dossierformaten, zie [&#x200B; Assets gesteunde formaten &#x200B;](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ Voor optimale prestaties raadt de Adobe aan [!DNL Adobe Camera Raw] -bibliotheek
 
 [!DNL Adobe Camera Raw] -bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter alleen in de kleurruimte RGB gegenereerd en uitvoer in de indeling JPEG wordt alleen ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
 
-Voor meer informatie, zie [ Camera Raw steun ](/help/assets/camera-raw.md).
+Voor meer informatie, zie [&#x200B; Camera Raw steun &#x200B;](/help/assets/camera-raw.md).
 
 ## Adobe PDF Rasterizer-bibliotheek {#adobe-pdf-rasterizer-library}
 
@@ -43,11 +43,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met de Rasterizer-PDF, zijn
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe raadt u aan [!DNL Adobe InDesign Server] te gebruiken om [!DNL Adobe InDesign] -specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Voor meer informatie, zie [ Toevoegend de activa van de Experience Manager als verwijzingen in Adobe InDesign ](/help/assets/managing-linked-subassets.md#refai).
+Adobe raadt u aan [!DNL Adobe InDesign Server] te gebruiken om [!DNL Adobe InDesign] -specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Voor meer informatie, zie [&#x200B; Toevoegend de activa van de Experience Manager als verwijzingen in Adobe InDesign &#x200B;](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] genereert en levert meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare en voor prestaties geoptimaliseerde netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor details rond het toelaten van [!DNL Dynamic Media], zie [ Vormend Dynamic Media ](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] genereert en levert meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare en voor prestaties geoptimaliseerde netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor details rond het toelaten van [!DNL Dynamic Media], zie [&#x200B; Vormend Dynamic Media &#x200B;](/help/assets/config-dynamic.md).
 
 Op dit moment kan [!DNL Dynamic Media] video&#39;s met maximaal 15 GB aan inhoud per bestand ondersteunen.
 
@@ -60,7 +60,7 @@ De Adobe raadt aan de ImageMagick-bibliotheek in de volgende scenario&#39;s te g
 * De transparantie behouden.
 * PSD- en PSB-bestanden verwerken.
 
-Om te weten hoe te opstelling de [!DNL ImageMagick] bibliotheek in [!DNL Experience Manager], zie [ Gebruikend ImageMagick ](/help/assets/media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik, zie [ Beste praktijken voor het Vormen ImageMagick ](/help/assets/best-practices-for-imagemagick.md).
+Om te weten hoe te opstelling de [!DNL ImageMagick] bibliotheek in [!DNL Experience Manager], zie [&#x200B; Gebruikend ImageMagick &#x200B;](/help/assets/media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik, zie [&#x200B; Beste praktijken voor het Vormen ImageMagick &#x200B;](/help/assets/best-practices-for-imagemagick.md).
 
 ## Bibliotheek voor transformatie van afbeeldingen {#image-transcoding-library}
 
@@ -76,4 +76,4 @@ De Beeldtransformatiebibliotheek ondersteunt de volgende MIME-typen:
 * ICO
 * ICN
 
-Voor details, zie [ Beeldend Transcoding Bibliotheek ](/help/assets/imaging-transcoding-library.md).
+Voor details, zie [&#x200B; Beeldend Transcoding Bibliotheek &#x200B;](/help/assets/imaging-transcoding-library.md).

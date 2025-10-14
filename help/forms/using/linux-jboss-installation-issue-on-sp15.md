@@ -25,7 +25,7 @@ Deze oplossing geldt voor:
 
 >[!NOTE]
 >
-> Zorg ervoor dat AEM Forms JEE 6.5.15.0 de dienstpak op de toepassingsserver minstens eens geïnstalleerd is alvorens de stappen van [ uit te voeren toevoegend het RUP_BOM.xml- dossier aan de folder van XML ](#solution-solution).
+> Zorg ervoor dat AEM Forms JEE 6.5.15.0 de dienstpak op de toepassingsserver minstens eens geïnstalleerd is alvorens de stappen van [&#x200B; uit te voeren toevoegend het RUP_BOM.xml- dossier aan de folder van XML &#x200B;](#solution-solution).
 
 ## Oplossing {#solution}
 
@@ -35,4 +35,4 @@ Als u het installatieprobleem in het AEM Forms JEE 6.5.15.0-servicepack wilt ver
 1. Kopieer het `Resource1.zip` -bestand naar een andere locatie buiten de uitgepakte map en decomprimeer het `Resource1.zip` -bestand.
 1. Navigeer naar `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml` en kopieer het `RUP_BOM.xml` -bestand.
 1. Plak het bestand RUP_BOM.xml in `[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml` .
-1. Installeer opnieuw [ AEM Forms JEE 6.5.15.0 de dienstpak ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
+1. Installeer opnieuw [&#x200B; AEM Forms JEE 6.5.15.0 de dienstpak &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).

@@ -32,23 +32,23 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Dispatcher,
 
 ### Sectie 1 {#section}
 
-![ chlimage_1-103 ](assets/chlimage_1-103.png)
+![&#x200B; chlimage_1-103 &#x200B;](assets/chlimage_1-103.png)
 
 ### Sectie 2 {#section-1}
 
-![ chlimage_1-104 ](assets/chlimage_1-104.png)
+![&#x200B; chlimage_1-104 &#x200B;](assets/chlimage_1-104.png)
 
 ### Afdeling 3 {#section-2}
 
-![ chlimage_1-105 ](assets/chlimage_1-105.png)
+![&#x200B; chlimage_1-105 &#x200B;](assets/chlimage_1-105.png)
 
 ### Sectie 4 {#section-3}
 
-![ chlimage_1-106 ](assets/chlimage_1-106.png)
+![&#x200B; chlimage_1-106 &#x200B;](assets/chlimage_1-106.png)
 
 ### Afdeling 5 {#section-4}
 
-![ chlimage_1-107 ](assets/chlimage_1-107.png)
+![&#x200B; chlimage_1-107 &#x200B;](assets/chlimage_1-107.png)
 
 ## Referentiekoppelingen {#reference-links}
 

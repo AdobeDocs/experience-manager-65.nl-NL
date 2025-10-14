@@ -52,18 +52,18 @@ ht-degree: 6%
 
 Het resulterende `export.csv` -bestand kan worden geopend in Excel of een andere compatibele toepassing.
 
-![ etc-01 ](assets/etc-01.png)
+![&#x200B; etc-01 &#x200B;](assets/etc-01.png)
 
 Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3&rbrace; console van Plaatsen &lbrace;(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
 
-![ etc-02 ](assets/etc-02.png)
+![&#x200B; etc-02 &#x200B;](assets/etc-02.png)
 
 Een CSV-export maken:
 
 1. Open de **console van Plaatsen**, navigeer aan de vereiste plaats indien nodig.
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
-   ![ etc-03 ](assets/etc-03.png)
+   ![&#x200B; etc-03 &#x200B;](assets/etc-03.png)
 
 1. Selecteer de eigenschappen die u wilt exporteren.
 1. Selecteer **creeer**.

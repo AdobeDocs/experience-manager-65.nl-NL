@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM inschakelen om te zoeken naar documenten die zijn beveiligd met PDF{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt het inheemse onderzoek ook uitbreiden om full-text onderzoek op [ PDF Documenten uit te voeren die met AEM veiligheid van het Document ](../../forms/using/admin-help/document-security.md) worden beschermd. Voer de volgende stappen uit om AEM in staat te stellen volledige tekst op dergelijke documenten te zoeken:
+AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschillende veelgebruikte documentindelingen, zoals bestanden met normale tekst, Microsoft Office-documenten en PDF-documenten. U kunt het inheemse onderzoek ook uitbreiden om full-text onderzoek op [&#x200B; PDF Documenten uit te voeren die met AEM veiligheid van het Document &#x200B;](../../forms/using/admin-help/document-security.md) worden beschermd. Voer de volgende stappen uit om AEM in staat te stellen volledige tekst op dergelijke documenten te zoeken:
 
 1. Een veilige verbinding tot stand brengen
 1. Een voorbeelddocument met een door een beleid beveiligde PDF indexeren
@@ -28,7 +28,7 @@ AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschill
 
 * Als u AEM Forms gebruikt op OSGi:
 
-   * Installeer [ het pakket van de Indexer van de Veiligheid van het Document van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
+   * Installeer [&#x200B; het pakket van de Indexer van de Veiligheid van het Document van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) op de server van AEM Forms.
 
    * Controleer of een AEM Forms op de JEE-server actief is en of documentbeveiliging op de overeenkomstige AEM Forms op de JEE-server is geïnstalleerd. Het AEM Formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 
@@ -66,7 +66,7 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 
 #### De SDK-bundel voor client-SDK van Adobe LiveCycle configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [ CAC en Wederzijdse Authentificatie ](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [&#x200B; CAC en Wederzijdse Authentificatie &#x200B;](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
 1. Open AEM webconsole. URL is https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
 1. Zoek en open de **Bundel van de Cliënt SDK van het LiveCycle van de Adobe van 0&rbrace;.** Geef waarde op voor de volgende eigenschappen:
 

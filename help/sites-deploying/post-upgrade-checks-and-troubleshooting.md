@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Controles na upgrade {#post-upgrade-checks}
 
-Na de [ Verbetering op plaats ](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten zouden moeten worden uitgevoerd om de verbetering te voltooien. Men veronderstelt AEM is begonnen met 6.5 jar en dat de promotiecode basis is opgesteld.
+Na de [&#x200B; Verbetering op plaats &#x200B;](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten zouden moeten worden uitgevoerd om de verbetering te voltooien. Men veronderstelt AEM is begonnen met 6.5 jar en dat de promotiecode basis is opgesteld.
 
 * [Logbestanden controleren voor een upgrade](#main-pars-header-290365562)
 
@@ -61,15 +61,15 @@ Hiervoor zijn wijzigingen aangebracht in de manier waarop logbestanden worden ge
 
 Hier is een steekproefrapport dat geen fouten tijdens verbetering toont:
 
-![ 1487887443006 ](assets/1487887443006.png)
+![&#x200B; 1487887443006 &#x200B;](assets/1487887443006.png)
 
 Hier is een steekproefrapport dat een bundel toont die niet tijdens het verbeteringsproces werd geïnstalleerd:
 
-![ 1487887532730 ](assets/1487887532730.png)
+![&#x200B; 1487887532730 &#x200B;](assets/1487887532730.png)
 
 **error.log**
 
-error.log zou zorgvuldig tijdens en na het opstarten van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen, is het best om kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Als de herhaalde fouten en de waarschuwingen hieronder voor [ het Analyseren van Kwesties met de Verbetering ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) voorkomen.
+error.log zou zorgvuldig tijdens en na het opstarten van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen, is het best om kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Als de herhaalde fouten en de waarschuwingen hieronder voor [&#x200B; het Analyseren van Kwesties met de Verbetering &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) voorkomen.
 
 ### OSGi-bundels verifiëren {#verify-osgi-bundles}
 
@@ -81,7 +81,7 @@ Na de verbetering u, zou moeten zien dat de versie van Oak aan **1.10.2** is bij
 
 ### Inspect PreUpgradeBackup-map {#inspect-preupgradebackup-folder}
 
-Tijdens de upgrade probeert AEM back-ups van aanpassingen te maken en deze onder `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` op te slaan. Om deze omslag in CRXDE Lite te bekijken, kunt u [ tijdelijk moeten toelaten CRXDE Lite ](/help/sites-administering/enabling-crxde-lite.md).
+Tijdens de upgrade probeert AEM back-ups van aanpassingen te maken en deze onder `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` op te slaan. Om deze omslag in CRXDE Lite te bekijken, kunt u [&#x200B; tijdelijk moeten toelaten CRXDE Lite &#x200B;](/help/sites-administering/enabling-crxde-lite.md).
 
 De map met het tijdstempel moet een eigenschap met de naam `mergeStatus` hebben met de waarde `COMPLETED` . De **aan-proces** omslag zou leeg moeten zijn en de **beschreven** knoop wijst op welke knopen tijdens de verbetering werden beschreven. Inhoud onder het knooppunt links geeft inhoud aan die niet veilig kan worden samengevoegd tijdens de upgrade. Als uw implementatie afhankelijk is van een van de onderliggende knooppunten (en nog niet is geïnstalleerd door het aangepaste codepakket), moeten deze handmatig worden samengevoegd.
 
@@ -97,13 +97,13 @@ Pas alle relevante AEM 6.5-servicepacks toe als deze zijn vrijgegeven.
 
 ### AEM migreren {#migrate-aem-features}
 
-Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een volledige lijst van deze eigenschappen en stappen om hen in AEM 6.5 te migreren kunnen op de [ Bevorderende Code en de pagina van Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
+Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een volledige lijst van deze eigenschappen en stappen om hen in AEM 6.5 te migreren kunnen op de [&#x200B; Bevorderende Code en de pagina van Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
 
 ### Configuraties voor gepland onderhoud controleren {#verify-scheduled-maintenance-configurations}
 
 #### Opruiming van gegevensopslag inschakelen {#enable-data-store-garbage-collection}
 
-Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-administering/data-store-garbage-collection.md).
+Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst onder [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,11 +111,11 @@ Als het gebruiken van een Opslag van de Gegevens van het Dossier, zorg ervoor da
 
 #### Onlinerevisie-opruiming inschakelen {#enable-online-revision-cleanup}
 
-Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies worden geschetst onder [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md).
+Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, dient u ervoor te zorgen dat de Revision Clean Up-taak is ingeschakeld en toegevoegd aan de lijst Dagelijks onderhoud. De instructies worden geschetst onder [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md).
 
 ### Testplan uitvoeren {#execute-test-plan}
 
-Voer gedetailleerd testplan tegen zoals bepaald [ uit Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) onder de **sectie van de Procedure van de Test**.
+Voer gedetailleerd testplan tegen zoals bepaald [&#x200B; uit Bevorderend Code en Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) onder de **sectie van de Procedure van de Test**.
 
 ### Replication-agents inschakelen {#enable-replication-agents}
 

@@ -36,18 +36,18 @@ AEM Communities maakt de ontwikkeling mogelijk van een relatie met bezoekers van
 * **Meldingen** en **activiteitenstromen**,
 * Staat **etiketterend** (@vermeld) andere geregistreerde leden in Gebruiker-Gegenereerde Inhoud toe, om hun aandacht te vestigen.
 
-De eigenschappen van de gemeenschappen kunnen worden aangetoond gebruikend de [ AEM machine van de Demo ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) openbaar op GitHub.com of met de nieuwe `We.Retail` verwijzingsimplementatie beschikbaar.
+De eigenschappen van de gemeenschappen kunnen worden aangetoond gebruikend de [&#x200B; AEM machine van de Demo &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) openbaar op GitHub.com of met de nieuwe `We.Retail` verwijzingsimplementatie beschikbaar.
 
 ## Communitysites {#community-sites}
 
 Een communitysite is een AEM site die is gemaakt met een eenvoudige wizard die resulteert in een website met veel algemene functies die vooraf zijn getelegrafeerd naar de site.
 
-De [ tovenaar van de plaatsverwezenlijking ](/help/communities/sites-console.md):
+De [&#x200B; tovenaar van de plaatsverwezenlijking &#x200B;](/help/communities/sites-console.md):
 
-* Verzamelt eigenschappen van de plaats, die op het geselecteerde [ malplaatje van de communautaire plaats ](/help/communities/sites.md) wordt gebaseerd die is:
+* Verzamelt eigenschappen van de plaats, die op het geselecteerde [&#x200B; malplaatje van de communautaire plaats &#x200B;](/help/communities/sites.md) wordt gebaseerd die is:
 
-   * gebouwd van [ communautaire functies ](#community-functions)
-   * facultatieve [ communautaire groepen ](#communitygroups) eigenschap
+   * gebouwd van [&#x200B; communautaire functies &#x200B;](#community-functions)
+   * facultatieve [&#x200B; communautaire groepen &#x200B;](#communitygroups) eigenschap
 
 * Gebruikt te configureren instellingen:
 
@@ -57,16 +57,16 @@ De [ tovenaar van de plaatsverwezenlijking ](/help/communities/sites-console.md)
 
 * Biedt essentiële functies:
 
-   * Het responsieve ontwerp: gebruikt [ de thema&#39;s van de Bootstrap van de Twitter ](https://getbootstrap.com)
+   * Het responsieve ontwerp: gebruikt [&#x200B; de thema&#39;s van de Bootstrap van de Twitter &#x200B;](https://getbootstrap.com)
 
-   * Login: zelfregistratie, [ sociale login ](/help/communities/social-login.md), gebruikersprofielen
+   * Login: zelfregistratie, [&#x200B; sociale login &#x200B;](/help/communities/social-login.md), gebruikersprofielen
 
       * Meldingen:
-leden zien gebeurtenissen die voor hen relevant zijn, en door de gebruiker gegenereerde inhoud waar zij [@genoemd ](/help/communities/overview.md#mentionssupport) zijn.
+leden zien gebeurtenissen die voor hen relevant zijn, en door de gebruiker gegenereerde inhoud waar zij [@genoemd &#x200B;](/help/communities/overview.md#mentionssupport) zijn.
 
       * Berichten: leden kunnen berichten verzenden of ontvangen binnen de communitysite.
       * Zoeken: zoekmogelijkheden op de site van de community.
-      * Taalomschakeling: capaciteit om een taal voor a [ meertalige plaats ](/help/sites-administering/translation.md) te selecteren.
+      * Taalomschakeling: capaciteit om een taal voor a [&#x200B; meertalige plaats &#x200B;](/help/sites-administering/translation.md) te selecteren.
 
       * Beheer: toegang voor geautoriseerde leden tot gematigde en beheerde gebruikers binnen de site van de gemeenschap.
 
@@ -75,7 +75,7 @@ leden zien gebeurtenissen die voor hen relevant zijn, en door de gebruiker gegen
    * Branding: optionele upload van een bannerafbeelding voor weergave op alle pagina&#39;s van de gemeenschapssite
    * Navigatiemenu: er zijn navigatiekoppelingen beschikbaar voor de functies die zijn opgenomen in de sjabloon voor de communautaire site.
 
-Om het gemak te ervaren om snel een communautaire plaats tot stand te brengen, bezoek [ Begonnen het worden met AEM Communities ](/help/communities/getting-started.md).
+Om het gemak te ervaren om snel een communautaire plaats tot stand te brengen, bezoek [&#x200B; Begonnen het worden met AEM Communities &#x200B;](/help/communities/getting-started.md).
 
 ## Persistentie van communautaire inhoud {#community-content-persistence}
 
@@ -85,15 +85,15 @@ De communautaire inhoud wordt gemakkelijk betreden door de leverancier van het o
 
 Ga voor meer informatie over de persistentie en aanbevolen implementaties van community-inhoud naar:
 
-* [ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) - bespreekt de beschikbare opslagopties SRP voor UGC.
-* [ geadviseerde Topologieën ](/help/communities/topologies.md) - bespreekt topologieën die op gebruiksgeval en keus SRP worden gebaseerd.
-* [ Bevorderend aan AEM 6.5 Gemeenschappen ](/help/communities/upgrade.md) - verstrekt nuttige informatie betreffende UGC wanneer het bewegen naar AEM 6.5.
+* [&#x200B; Communautaire Opslag van de Inhoud &#x200B;](/help/communities/working-with-srp.md) - bespreekt de beschikbare opslagopties SRP voor UGC.
+* [&#x200B; geadviseerde Topologieën &#x200B;](/help/communities/topologies.md) - bespreekt topologieën die op gebruiksgeval en keus SRP worden gebaseerd.
+* [&#x200B; Bevorderend aan AEM 6.5 Gemeenschappen &#x200B;](/help/communities/upgrade.md) - verstrekt nuttige informatie betreffende UGC wanneer het bewegen naar AEM 6.5.
 
 ## Communityconsoles {#communities-consoles}
 
-In het auteursmilieu, verleent de globale navigatieconsole toegang tot de [ console van Gemeenschappen ](/help/communities/consoles.md), die bevat:
+In het auteursmilieu, verleent de globale navigatieconsole toegang tot de [&#x200B; console van Gemeenschappen &#x200B;](/help/communities/consoles.md), die bevat:
 
-* [ Sites ](/help/communities/sites-console.md) console
+* [&#x200B; Sites &#x200B;](/help/communities/sites-console.md) console
 
    * Site maken
    * Site bewerken
@@ -105,19 +105,19 @@ In het auteursmilieu, verleent de globale navigatieconsole toegang tot de [ cons
    * Gemeenschappelijke bulkmoderatie UI voor de milieu&#39;s van de Auteur en van Publish.
    * Nieuwe filtercriteria.
 
-* [ Leden en Groepen ](/help/communities/members.md) beheersconsoles
+* [&#x200B; Leden en Groepen &#x200B;](/help/communities/members.md) beheersconsoles
 
    * Hiermee kunt u gebruikers (leden) aan de publicatiezijde maken en beheren vanuit de ontwerpomgeving.
    * Hiermee kunt u leden verbieden.
    * Hiermee kunt u gebruikersgroepen (lidgroepen) aan de serverzijde maken en beheren.
 
-* [ Rapporten ](/help/communities/reports.md) console
+* [&#x200B; Rapporten &#x200B;](/help/communities/reports.md) console
 
    * Hiermee kunt u rapporten genereren over toewijzingen, posten en weergaven.
 
 De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van Gemeenschappen:
 
-* [ Sjablonen van de Plaats ](/help/communities/tools.md#sitetemplatesconsole) console
+* [&#x200B; Sjablonen van de Plaats &#x200B;](/help/communities/tools.md#sitetemplatesconsole) console
 
    * Sjablonen voor communitysites maken en beheren.
 
@@ -125,17 +125,17 @@ De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van
 
    * Creëer en beheer communitygroepssjablonen.
 
-* [ Communautaire Functies ](/help/communities/tools.md#communityfunctionsconsole) console
+* [&#x200B; Communautaire Functies &#x200B;](/help/communities/tools.md#communityfunctionsconsole) console
 
    * Creëer en beheer communityfuncties.
 
 * [&#128279;](/help/communities/tools.md#storageconfiguratonconsole) console van de Configuratie van de Opslag 0&rbrace;
 
-   * Selecteer en vorm de [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) voor de plaats.
+   * Selecteer en vorm de [&#x200B; gemeenschappelijke opslag &#x200B;](/help/communities/working-with-srp.md) voor de plaats.
 
 * [Component Guide](/help/communities/components-guide.md)
 
-   * Een steekproefplaats, [ Communautaire Componenten ](https://localhost:4502/editor.html/content/community-components/en.html) verstrekt een steekproef van alle componenten van Gemeenschappen met hun standaardconfiguratie en de capaciteit om met hen te experimenteren.
+   * Een steekproefplaats, [&#x200B; Communautaire Componenten &#x200B;](https://localhost:4502/editor.html/content/community-components/en.html) verstrekt een steekproef van alle componenten van Gemeenschappen met hun standaardconfiguratie en de capaciteit om met hen te experimenteren.
 
 ## Sjablonen voor community-sites {#community-site-templates}
 
@@ -143,7 +143,7 @@ De creatie van de communautaire plaats is gebaseerd op selectie van een malplaat
 
 Een communitysitesjabloon, dat bestaat uit communityfuncties en communitygroepssjablonen, biedt de structuur voor een communitysite. Het omvat login, gebruikersprofielen, overseinen, plaatsmenu, onderzoek, thema, en branding eigenschappen.
 
-Zie de [ console van de Malplaatjes van de Plaats ](/help/communities/sites.md).
+Zie de [&#x200B; console van de Malplaatjes van de Plaats &#x200B;](/help/communities/sites.md).
 
 ## Communautaire functies {#community-functions}
 
@@ -151,27 +151,27 @@ De kenmerken die van een gemeenschapservaring worden verwacht, zijn bekend. In A
 
 Community-functies zijn normale AEM pagina&#39;s bevatten onderdelen die zijn samengevoegd tot een functie die gemakkelijk kan worden opgenomen in een sjabloon voor een community-site.
 
-Zie de [ communautaire console van Functies ](/help/communities/functions.md).
+Zie de [&#x200B; communautaire console van Functies &#x200B;](/help/communities/functions.md).
 
 ## Communautaire groepen en groepssjablonen {#community-groups-and-group-templates}
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers en communityleden van zowel de auteur als publicatiemilieu&#39;s worden gecreeerd.
 
-Van het auteursmilieu, kunnen de communautaire groepen (subCommunities) binnen een bestaande communautaire plaats worden gecreeerd of binnen een bestaande groep worden genesteld, wanneer de structuur van het malplaatje de [ functie van Groepen ](/help/communities/functions.md#groups-function) bevat.
+Van het auteursmilieu, kunnen de communautaire groepen (subCommunities) binnen een bestaande communautaire plaats worden gecreeerd of binnen een bestaande groep worden genesteld, wanneer de structuur van het malplaatje de [&#x200B; functie van Groepen &#x200B;](/help/communities/functions.md#groups-function) bevat.
 
 Voor het maken van een community-groep moet u een community-groepssjabloon selecteren die het ontwerp van de community-groepspagina&#39;s bevat. Wanneer een functie van Groepen aan een malplaatjestructuur wordt toegevoegd, wordt het gevormd om of één groepsmalplaatje te specificeren of een keus van malplaatjes te verstrekken op het tijdstip dat een nieuwe communautaire groep wordt gecreeerd.
 
 Zie ook:
 
-* [ console van de Groepen van de Plaats ](/help/communities/groups.md) voor het creëren van subgemeenschap in het auteursmilieu.
-* [ console van de Malplaatjes van de Groep ](/help/communities/tools-groups.md) voor het creëren van plaatsstructuren voor groepen.
-* [ Begonnen het Worden met AEM Communities ](/help/communities/getting-started.md) voor leerprogramma voor snel het creëren van een communautaire plaats met inbegrip van genestelde groepen.
+* [&#x200B; console van de Groepen van de Plaats &#x200B;](/help/communities/groups.md) voor het creëren van subgemeenschap in het auteursmilieu.
+* [&#x200B; console van de Malplaatjes van de Groep &#x200B;](/help/communities/tools-groups.md) voor het creëren van plaatsstructuren voor groepen.
+* [&#x200B; Begonnen het Worden met AEM Communities &#x200B;](/help/communities/getting-started.md) voor leerprogramma voor snel het creëren van een communautaire plaats met inbegrip van genestelde groepen.
 
 ## Community-componenten {#community-components}
 
-De [ communautaire componenten ](/help/communities/author-communities.md) waarvan een communautaire plaats wordt gebouwd kan worden gebruikt om de eigenschappen van Gemeenschappen aan om het even welke AEM Plaats toe te voegen.
+De [&#x200B; communautaire componenten &#x200B;](/help/communities/author-communities.md) waarvan een communautaire plaats wordt gebouwd kan worden gebruikt om de eigenschappen van Gemeenschappen aan om het even welke AEM Plaats toe te voegen.
 
-De [ communautaire componentengids ](/help/communities/components-guide.md) is beschikbaar voor interactieve exploratie van de componenten.
+De [&#x200B; communautaire componentengids &#x200B;](/help/communities/components-guide.md) is beschikbaar voor interactieve exploratie van de componenten.
 
 ## Gemeenschap voor betrokkenheid {#engagement-community}
 
@@ -195,16 +195,16 @@ Functies van een betrokkenheidsgemeenschap kunnen het volgende omvatten:
 * Scores en badges
 * Analyserapportage
 
-Om het gemak te ervaren om snel een betrokkenheidsgemeenschap tot stand te brengen, bezoek [ Begonnen het worden met AEM Communities ](/help/communities/getting-started.md).
+Om het gemak te ervaren om snel een betrokkenheidsgemeenschap tot stand te brengen, bezoek [&#x200B; Begonnen het worden met AEM Communities &#x200B;](/help/communities/getting-started.md).
 
 ## AEM demo-machine {#aem-demo-machine}
 
-De [ AEM machine van de Demo ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en stelt demo&#39;s voor AEM [ Plaatsen ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [ Assets ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [ Gemeenschappen ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [ Apps ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) en [ Forms ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms) in werking, die vaak meer opstelling dan eenvoudig het lanceren van een instantie QuickStart vereisen. De machine van de AEMDemo plaatst omhoog extra [ infrastructuur ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB, Solr, MySQL, Mpeg, en e-mailservers.
+De [&#x200B; AEM machine van de Demo &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en stelt demo&#39;s voor AEM [&#x200B; Plaatsen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [&#x200B; Assets &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [&#x200B; Gemeenschappen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [&#x200B; Apps &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) en [&#x200B; Forms &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms) in werking, die vaak meer opstelling dan eenvoudig het lanceren van een instantie QuickStart vereisen. De machine van de AEMDemo plaatst omhoog extra [&#x200B; infrastructuur &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB, Solr, MySQL, Mpeg, en e-mailservers.
 
 De AEM demomodus omvat:
 
-* A [ grafisch gebruikersinterface ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
-* Apache WIL manuscripten met configureerbare [ eigenschappen ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) en [ doelstellingen ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
+* A [&#x200B; grafisch gebruikersinterface &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
+* Apache WIL manuscripten met configureerbare [&#x200B; eigenschappen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) en [&#x200B; doelstellingen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
 
 * Te installeren pakketten.
 
@@ -214,11 +214,11 @@ Voor AEM demo-machine is een geldige AEM vereist.
 
 >[!NOTE]
 >
->Bekijk a [ videoinleiding ](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) aan de machine van de AEM (13:26).
+>Bekijk a [&#x200B; videoinleiding &#x200B;](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) aan de machine van de AEM (13:26).
 
 ## AEM Communities-documentatie {#aem-communities-documentation}
 
-* Bezoek [ het Opstellen van Gemeenschappen ](deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
-* Bezoek [ het Beheer Plaatsen van Gemeenschappen ](administer-landing.md) waar u over het creëren van een communautaire plaats kunt leren, toevoegend communautaire groepen, vormend communautaire plaatssjablonen, het modereren van communautaire inhoud, het beheren van leden, het etiketteren, berichten, het scoren, en badges.
-* Bezoek [ het Ontwikkelen van Gemeenschappen ](communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van Gemeenschappen kunt leren.
-* Bezoek [ Authoring Communities Components ](author-communities.md) waar u kunt leren hoe u met componenten van Gemeenschappen ontwerpt en deze configureert.
+* Bezoek [&#x200B; het Opstellen van Gemeenschappen &#x200B;](deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
+* Bezoek [&#x200B; het Beheer Plaatsen van Gemeenschappen &#x200B;](administer-landing.md) waar u over het creëren van een communautaire plaats kunt leren, toevoegend communautaire groepen, vormend communautaire plaatssjablonen, het modereren van communautaire inhoud, het beheren van leden, het etiketteren, berichten, het scoren, en badges.
+* Bezoek [&#x200B; het Ontwikkelen van Gemeenschappen &#x200B;](communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van Gemeenschappen kunt leren.
+* Bezoek [&#x200B; Authoring Communities Components &#x200B;](author-communities.md) waar u kunt leren hoe u met componenten van Gemeenschappen ontwerpt en deze configureert.

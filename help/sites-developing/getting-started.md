@@ -28,22 +28,22 @@ Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren A
 
 ## Zelfstudie voor WKND-ontwikkelaars {#wknd-developer-tutorial}
 
-![ WKND ](assets/screen_shot_2018-11-23at152453.png)
+![&#x200B; WKND &#x200B;](assets/screen_shot_2018-11-23at152453.png)
 
-[ het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
+[&#x200B; het Leerprogramma van de Ontwikkelaar WKND is hier beschikbaar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL) en leidt u door het creëren van een AEM project gebruikend de recentste technologieën en beste praktijken.
 
 ## Basisconcepten {#core-concepts}
 
 De zelfstudie-implementatie gebruikt veel krachtige functies voor AEM. De site wordt geïmplementeerd met:
 
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
-* [ Sling Models ](https://sling.apache.org/documentation/bundles/models.html)
+* [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
+* [&#x200B; Sling Models &#x200B;](https://sling.apache.org/documentation/bundles/models.html)
 * [Aanraakinterface](/help/sites-developing/touch-ui-concepts.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md)
 
 Voortgang door het leerprogramma alvorens in de bovengenoemde concepten in detail te duiken.
 
 ## Volgende stappen {#next-steps}
 
-Zodra u het [ leerprogramma ](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) hebt voltooid, overweeg het herzien van het document [ AEM de Concepten van de Kern ](/help/sites-developing/the-basics.md) om een beter inzicht in enkele onderliggende technologieën en ontwikkelingsparadigma&#39;s van AEM te krijgen.
+Zodra u het [&#x200B; leerprogramma &#x200B;](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) hebt voltooid, overweeg het herzien van het document [&#x200B; AEM de Concepten van de Kern &#x200B;](/help/sites-developing/the-basics.md) om een beter inzicht in enkele onderliggende technologieën en ontwikkelingsparadigma&#39;s van AEM te krijgen.

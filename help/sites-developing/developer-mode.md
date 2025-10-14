@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Modus voor ontwikkelaars{#developer-mode}
 
-Wanneer het uitgeven van pagina&#39;s in Adobe Experience Manager (AEM), verscheidene [ wijzen ](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) beschikbaar, met inbegrip van de wijze van de Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
+Wanneer het uitgeven van pagina&#39;s in Adobe Experience Manager (AEM), verscheidene [&#x200B; wijzen &#x200B;](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) beschikbaar, met inbegrip van de wijze van de Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
 
 * **[Componenten](#components)** voor het bekijken van structuur en prestatiesinformatie.
 * **[Tests](#tests)** voor het runnen van tests en het analyseren van de resultaten.
@@ -56,25 +56,25 @@ Deze hulp een ontwikkelaar om:
 >
 >Zie het volgende:
 >
->* Het artikel van de Kennisbank, [ de kwesties van AEM TouchUI van het Oplossen van problemen ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
->* De zitting van AEM Gems over [ AEM 6.0 de Wijze van de Ontwikkelaar ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=nl-NL).
+>* Het artikel van de Kennisbank, [&#x200B; de kwesties van AEM TouchUI van het Oplossen van problemen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
+>* De zitting van AEM Gems over [&#x200B; AEM 6.0 de Wijze van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=nl-NL).
 >
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
 De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Om het paneel te openen, selecteer **Ontwikkelaar** van de wijzesselecteur in de toolbar van de paginaredacteur:
 
-![ chlimage_1-11 ](assets/chlimage_1-11.png)
+![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.png)
 
 Het deelvenster bestaat uit twee tabbladen:
 
-* **[Componenten](/help/sites-developing/developer-mode.md#components)** - dit toont een componentenboom, gelijkend op de [ inhoudsboom ](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
+* **[Componenten](/help/sites-developing/developer-mode.md#components)** - dit toont een componentenboom, gelijkend op de [&#x200B; inhoudsboom &#x200B;](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
 
 * **[Fouten](/help/sites-developing/developer-mode.md#errors)** - wanneer de problemen voorkomen, worden de details getoond voor elke component.
 
 ### Onderdelen {#components}
 
-![ chlimage_1-12 ](assets/chlimage_1-12.png)
+![&#x200B; chlimage_1-12 &#x200B;](assets/chlimage_1-12.png)
 
 Dit toont een componentenboom die:
 
@@ -95,14 +95,14 @@ Dit kan helpen bij:
 
 Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
-![ chlimage_1-13 ](assets/chlimage_1-13.png)
+![&#x200B; chlimage_1-13 &#x200B;](assets/chlimage_1-13.png)
 
 * **Details van de Mening**: een verbinding aan een lijst die toont:
 
    * alle componentscripts die worden gebruikt om de component te renderen.
    * het inhoudspad van de gegevensopslagruimte voor deze specifieke component.
 
-  ![ chlimage_1-14 ](assets/chlimage_1-14.png)
+  ![&#x200B; chlimage_1-14 &#x200B;](assets/chlimage_1-14.png)
 
 * **geef Manuscript** uit: een verbinding die:
 
@@ -113,15 +113,15 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
    * De hiërarchie binnen de geselecteerde component.
    * Renderingtijden voor de geselecteerde component afzonderlijk, eventuele afzonderlijke componenten die erin zijn genest en het gecombineerde totaal.
 
-  ![ chlimage_1-15 ](assets/chlimage_1-15.png)
+  ![&#x200B; chlimage_1-15 &#x200B;](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Sommige koppelingen verwijzen naar scripts onder `/libs` . Nochtans, zijn deze slechts voor verwijzing, moet u **niets** uitgeven onder `/libs`, aangezien om het even welke veranderingen u aanbrengt kunnen worden verloren. Dit komt doordat deze vertakking mogelijk verandert wanneer u een hotfix of functiepakket bijwerkt of toepast. Breng de gewenste wijzigingen aan onder `/apps` . Zie [ Bekledingen en treedt met voeten ](/help/sites-developing/overlays.md).
+>Sommige koppelingen verwijzen naar scripts onder `/libs` . Nochtans, zijn deze slechts voor verwijzing, moet u **niets** uitgeven onder `/libs`, aangezien om het even welke veranderingen u aanbrengt kunnen worden verloren. Dit komt doordat deze vertakking mogelijk verandert wanneer u een hotfix of functiepakket bijwerkt of toepast. Breng de gewenste wijzigingen aan onder `/apps` . Zie [&#x200B; Bekledingen en treedt met voeten &#x200B;](/help/sites-developing/overlays.md).
 
 ### Fouten {#errors}
 
-![ chlimage_1-16 ](assets/chlimage_1-16.png)
+![&#x200B; chlimage_1-16 &#x200B;](assets/chlimage_1-16.png)
 
 Hopelijk zal het **lusje van Fouten** altijd leeg zijn (zoals hierboven), maar wanneer de problemen voorkomen worden de volgende details getoond voor elke component:
 
@@ -130,7 +130,7 @@ Hopelijk zal het **lusje van Fouten** altijd leeg zijn (zoals hierboven), maar w
 
 Bijvoorbeeld, in een situatie waar een ongedefinieerde methode wordt geroepen, wordt de resulterende fout getoond in het **lusje van Fouten**:
 
-![ chlimage_1-17 ](assets/chlimage_1-17.png)
+![&#x200B; chlimage_1-17 &#x200B;](assets/chlimage_1-17.png)
 
 Het componentitem in de structuur van het tabblad Componenten wordt ook gemarkeerd met een indicator wanneer een fout optreedt.
 
@@ -140,4 +140,4 @@ Het componentitem in de structuur van het tabblad Componenten wordt ook gemarkee
 >
 >In AEM 6.2 werden de testfuncties van de modus Ontwikkelaar opnieuw geïmplementeerd als een zelfstandige toepassing Tools.
 >
->Voor volledige details, zie [ het Testen van Uw UI ](/help/sites-developing/hobbes.md).
+>Voor volledige details, zie [&#x200B; het Testen van Uw UI &#x200B;](/help/sites-developing/hobbes.md).

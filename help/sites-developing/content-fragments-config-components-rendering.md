@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verscheidene [ geavanceerde diensten ](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verscheidene [&#x200B; geavanceerde diensten &#x200B;](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) met betrekking tot het teruggeven van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door de [ Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud ](#osgi-service-content-fragment-component-configuration).
+Dit wordt gedaan door de [&#x200B; Dienst OSGi te vormen - de Configuratie van de Component van het Fragment van de Inhoud &#x200B;](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
->Als u niet de [ gevorderde hieronder beschreven diensten ](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) nodig hebt, kunt u deze configuratie negeren.
+>Als u niet de [&#x200B; gevorderde hieronder beschreven diensten &#x200B;](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) nodig hebt, kunt u deze configuratie negeren.
 
 >[!CAUTION]
 >
@@ -57,11 +57,11 @@ De configuratie moet aan de OSGi dienst **Configuratie van de Component van het 
 
 >[!NOTE]
 >
->Zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor verdere details.
+>Zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor verdere details.
 
 Bijvoorbeeld:
 
-![ cfm-01 ](assets/cfm-01.png)
+![&#x200B; cfm-01 &#x200B;](assets/cfm-01.png)
 
 De configuratie OSGi is:
 

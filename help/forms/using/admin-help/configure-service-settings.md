@@ -25,24 +25,24 @@ ht-degree: 0%
 U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van de diensten te vormen die deel van AEM vormen uitmaken. De beschikbare montages variëren afhankelijk van de dienst die wordt gevormd.
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
-1. Stop de service voordat u deze wijzigt. (Zie [ Beginnend en tegenhoudend de diensten ](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Stop de service voordat u deze wijzigt. (Zie [&#x200B; Beginnend en tegenhoudend de diensten &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Klik de naam van de dienst die u wilt vormen.
 1. Als de dienst een lusje van de Configuratie heeft, gebruik het om de montages voor de dienst te veranderen. Zie de onderstaande lijst met koppelingen voor meer informatie.
 
    >[!NOTE]
    >
-   >Niet hebben alle diensten die op de pagina van het Beheer van de Dienst worden vermeld een Configuratie tabel. Voor processen die u hebt gecreeerd, verschijnt het lusje van de Configuratie slechts als u een configuratieparameter aan het proces in Workbench hebt toegevoegd. (Zie &quot;de parameters van de Configuratie&quot;in de [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >Niet hebben alle diensten die op de pagina van het Beheer van de Dienst worden vermeld een Configuratie tabel. Voor processen die u hebt gecreeerd, verschijnt het lusje van de Configuratie slechts als u een configuratieparameter aan het proces in Workbench hebt toegevoegd. (Zie &quot;de parameters van de Configuratie&quot;in de [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 
-1. Klik op het tabblad Beveiliging en stel de beveiligingsinstellingen voor de service in. Zie [ Wijzigend veiligheidsmontages voor de dienst ](configure-service-settings.md#modifying-security-settings-for-a-service).
-1. Als de dienst een lusje van Eindpunten heeft, gebruik het om de eindpuntmontages te veranderen. Zie [ het Leiden Eindpunten ](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
-1. Klik op het tabblad Pooling en stel de instellingen voor pooling in. Zie [ het Vormen het groeperen voor de dienst ](configure-service-settings.md#configuring-pooling-for-a-service).
+1. Klik op het tabblad Beveiliging en stel de beveiligingsinstellingen voor de service in. Zie [&#x200B; Wijzigend veiligheidsmontages voor de dienst &#x200B;](configure-service-settings.md#modifying-security-settings-for-a-service).
+1. Als de dienst een lusje van Eindpunten heeft, gebruik het om de eindpuntmontages te veranderen. Zie [&#x200B; het Leiden Eindpunten &#x200B;](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
+1. Klik op het tabblad Pooling en stel de instellingen voor pooling in. Zie [&#x200B; het Vormen het groeperen voor de dienst &#x200B;](configure-service-settings.md#configuring-pooling-for-a-service).
 1. Klik op Opslaan om de wijzigingen op te slaan of klik op Annuleren om de wijzigingen te verwijderen.
 1. Schakel het selectievakje naast de servicenaam in en klik op Start om de service opnieuw te starten.
 
 ## Instellingen voor workflowservice controleren {#audit-workflow-service-settings}
 
-Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).) om ruimte op het het dossiersysteem van de Server van Forms te besparen, kunt u de hoeveelheid gegevens van de procesopname beperken die wordt opgeslagen. U kunt de volgende eigenschappen van de service Audit Workflow Service ( `AuditWorkflowService` ) configureren:
+Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).) om ruimte op het het dossiersysteem van de Server van Forms te besparen, kunt u de hoeveelheid gegevens van de procesopname beperken die wordt opgeslagen. U kunt de volgende eigenschappen van de service Audit Workflow Service ( `AuditWorkflowService` ) configureren:
 
 **maxNumberOfRecordingInstances:** het maximumaantal opnamen dat wordt opgeslagen. Wanneer het maximumaantal wordt opgeslagen, wordt de oudste opname verwijderd uit het dossiersysteem wanneer een nieuwe opname wordt gecreeerd. Deze eigenschap is handig als u veel opnamen wilt maken en oude opnamen automatisch wilt verwijderen. De standaardwaarde is 50.
 
@@ -420,7 +420,7 @@ Afhankelijk van de LDAP-server kan de gebruikersnaam een eenvoudige gebruikersna
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service-settings}
 
-Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` kunt u referenties opgeven voor de gebruiker van AEM formulieren die imitatierechten heeft. Voor informatie over imitatierechten, zie [ Vormend de Schakelaar voor Microsoft SharePoint ](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` kunt u referenties opgeven voor de gebruiker van AEM formulieren die imitatierechten heeft. Voor informatie over imitatierechten, zie [&#x200B; Vormend de Schakelaar voor Microsoft SharePoint &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configuratieservice:
 
@@ -526,7 +526,7 @@ De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs
 
 ## Service-instellingen verwijderen {#remoting-service-settings}
 
-De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Voor informatie over (Vervangen voor AEM vormen) AEM vormen het Verwijderen, zie [ Programmerend met AEM vormen ](https://adobe.com/go/learn_aemforms_programming_63).
+De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Voor informatie over (Vervangen voor AEM vormen) AEM vormen het Verwijderen, zie [&#x200B; Programmerend met AEM vormen &#x200B;](https://adobe.com/go/learn_aemforms_programming_63).
 
 De volgende instellingen zijn beschikbaar voor de service Remoting.
 
@@ -696,7 +696,7 @@ Validatie van handtekeningen:** als deze optie is geselecteerd, worden validatie
 
 ## Instellingen voor gecontroleerde mapservice {#watched-folder-service-settings}
 
-Met de service Gecontroleerde map ( `WatchedFolder` ) configureert u kenmerken die algemeen gelden voor alle gecontroleerde eindpunten van mappen. De klasse biedt ook standaardwaarden voor gecontroleerde eindpunten van mappen. (Zie [ Vormend gecontroleerde omslageindpunten ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Het wordt niet aangehaald door externe cliënttoepassingen of gebruikt in processen die in Workbench worden gecreeerd.
+Met de service Gecontroleerde map ( `WatchedFolder` ) configureert u kenmerken die algemeen gelden voor alle gecontroleerde eindpunten van mappen. De klasse biedt ook standaardwaarden voor gecontroleerde eindpunten van mappen. (Zie [&#x200B; Vormend gecontroleerde omslageindpunten &#x200B;](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Het wordt niet aangehaald door externe cliënttoepassingen of gebruikt in processen die in Workbench worden gecreeerd.
 
 De volgende instellingen zijn beschikbaar voor de service Gecontroleerde map.
 
@@ -745,7 +745,7 @@ In een clusterconfiguratie, schrapt de partijgrootte voor een gecontroleerd omsl
 
 Als de waarde op 17 juli 2009 bijvoorbeeld 20:00 is en u geeft `C:/Test/WF0/failure/%Y/%M/%D/%H/` op, is de resultaatmap `C:/Test/WF0/failure/2009/07/17/20` .
 
-Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaakt. Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaakt. Voor meer informatie over dossierpatronen, zie [&#x200B; Ongeveer dossierpatronen &#x200B;](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >

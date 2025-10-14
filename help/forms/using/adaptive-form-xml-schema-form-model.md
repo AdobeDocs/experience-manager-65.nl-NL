@@ -15,14 +15,14 @@ ht-degree: 0%
 
 # Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Vereisten {#prerequisites}
 
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Bovendien wordt aangeraden de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [ schema van XML ](https://www.w3.org/TR/xmlschema-2/)
+* [&#x200B; schema van XML &#x200B;](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
@@ -291,7 +291,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 Wanneer u dubbelklikt op een element in de Inhoudszoeker, wordt in een pop-upvenster een veldnaam en een eigenschap met de naam `bindRef` weergegeven. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
 
-![ het bindref gebied van A van een het schemaelement van XML ](assets/dblclick.png)
+![&#x200B; het bindref gebied van A van een het schemaelement van XML &#x200B;](assets/dblclick.png)
 
 <code> bindRef</code> in het veld wordt de koppeling weergegeven tussen een structuurelement en een element of kenmerk in een schema.
 

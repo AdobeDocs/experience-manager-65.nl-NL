@@ -27,22 +27,22 @@ Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van d
 
 U kunt vanuit een [!DNL Adobe Illustrator] -bestand verwijzen naar bestaande digitale elementen.
 
-1. Gebruikend [[!DNL Experience Manager]  Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL), haal de digitale activa op het lokale filesystem. Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
+1. Gebruikend [[!DNL Experience Manager]  Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL), haal de digitale activa op het lokale filesystem. Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] -bestand.
 
-1. Sparen het [!DNL Illustrator] dossier aan de opgezette aandrijving, of [ uploadt ](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] bewaarplaats.
+1. Sparen het [!DNL Illustrator] dossier aan de opgezette aandrijving, of [&#x200B; uploadt &#x200B;](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] bewaarplaats.
 
 1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande digitale elementen staan onder **[!UICONTROL Dependencies]** in de kolom **[!UICONTROL References]** .
 
-   ![ chlimage_1-84 ](assets/chlimage_1-258.png)
+   ![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-258.png)
 
 1. De middelen waarnaar wordt verwezen die onder **[!UICONTROL Dependencies]** worden weergegeven, kunnen ook worden verwezen door andere bestanden dan de huidige. Als u een lijst wilt weergeven met bestanden die verwijzen naar een element, klikt u op het element onder **[!UICONTROL Dependencies]** .
 
-   ![ chlimage_1-85 ](assets/chlimage_1-259.png)
+   ![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-259.png)
 
 1. Klik op **[!UICONTROL View Properties]** op de werkbalk. Op de pagina [!UICONTROL Properties] wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de kolom **[!UICONTROL References]** op het tabblad **[!UICONTROL Basic]** .
 
-   ![ mening de verwijzingen van Experience Manager Assets in de kolom van Verwijzingen in activadetails ](assets/asset-references.png)
+   ![&#x200B; mening de verwijzingen van Experience Manager Assets in de kolom van Verwijzingen in activadetails &#x200B;](assets/asset-references.png)
 
    *Cijfer: De verwijzingen van activa in activa details.*
 
@@ -50,7 +50,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] -bestand verwijzen naar bestaande dig
 
 Als u vanuit een [!DNL InDesign] -bestand wilt verwijzen naar digitale elementen, sleept u elementen naar het [!DNL InDesign] -bestand of exporteert u het [!DNL InDesign] -bestand als een ZIP-archief.
 
-Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets] . U kunt subassets halen door [ vormend InDesign Server ](indesign.md). Ingesloten elementen in een [!DNL InDesign] -bestand worden geëxtraheerd als subelementen.
+Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets] . U kunt subassets halen door [&#x200B; vormend InDesign Server &#x200B;](indesign.md). Ingesloten elementen in een [!DNL InDesign] -bestand worden geëxtraheerd als subelementen.
 
 >[!NOTE]
 >
@@ -60,26 +60,26 @@ Wanneer een INDD-bestand wordt geüpload, worden de verwijzingen opgehaald door 
 
 ### Verwijzingen maken door elementen te slepen {#create-references-by-dragging-aem-assets}
 
-Deze procedure is gelijkaardig aan [ voeg digitale activa als verwijzingen in Adobe Illustrator ](#refai) toe.
+Deze procedure is gelijkaardig aan [&#x200B; voeg digitale activa als verwijzingen in Adobe Illustrator &#x200B;](#refai) toe.
 
 ### Verwijzingen naar elementen maken door een ZIP-bestand te exporteren {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Voer de stappen in [ uit creeer werkschemamodellen ](/help/sites-developing/workflows-models.md) om een werkschema tot stand te brengen.
-1. Gebruik de [ eigenschap van het Pakket ](https://helpx.adobe.com/nl/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document uit te voeren. [!DNL Adobe InDesign] kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links` -map die submiddelen in het [!DNL InDesign] -bestand bevat. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
+1. Voer de stappen in [&#x200B; uit creeer werkschemamodellen &#x200B;](/help/sites-developing/workflows-models.md) om een werkschema tot stand te brengen.
+1. Gebruik de [&#x200B; eigenschap van het Pakket &#x200B;](https://helpx.adobe.com/nl/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document uit te voeren. [!DNL Adobe InDesign] kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links` -map die submiddelen in het [!DNL InDesign] -bestand bevat. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
 1. Maak een ZIP-bestand en upload het bestand naar de [!DNL Experience Manager] -opslagplaats.
 1. Start de `Unarchiver` -workflow.
-1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Om een lijst van genoemde activa te bekijken, navigeer aan de pagina van activadetails van het [!DNL InDesign] activa en sluit [ Spoorweg ](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Om een lijst van genoemde activa te bekijken, navigeer aan de pagina van activadetails van het [!DNL InDesign] activa en sluit [&#x200B; Spoorweg &#x200B;](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop]: digitale elementen toevoegen als verwijzingen {#refps}
 
-1. Gebruik de bureaubladtoepassing [!DNL Experience Manager] om [!DNL Experience Manager Assets] te openen. Download de bestanden en open ze op het lokale bestandssysteem. Gebruik de functie [!UICONTROL Place Linked] in [!DNL Adobe Photoshop] . Zie [ plaatselementen in Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#place-assets-in-native-documents).
+1. Gebruik de bureaubladtoepassing [!DNL Experience Manager] om [!DNL Experience Manager Assets] te openen. Download de bestanden en open ze op het lokale bestandssysteem. Gebruik de functie [!UICONTROL Place Linked] in [!DNL Adobe Photoshop] . Zie [&#x200B; plaatselementen in Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#place-assets-in-native-documents).
 
-1. Sparen in [!DNL Photoshop] dossier aan de opgezette aandrijving of [ uploadt ](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] bewaarplaats.
+1. Sparen in [!DNL Photoshop] dossier aan de opgezette aandrijving of [&#x200B; uploadt &#x200B;](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] bewaarplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande [!DNL Experience Manager] -elementen weergegeven op de pagina met elementdetails.
 
-   Om de referenced activa te bekijken, sluit het [ Spoorweg ](/help/sites-authoring/basic-handling.md#rail-selector) in de pagina van activadetails.
+   Om de referenced activa te bekijken, sluit het [&#x200B; Spoorweg &#x200B;](/help/sites-authoring/basic-handling.md#rail-selector) in de pagina van activadetails.
 
-1. De middelen waarnaar wordt verwezen, bevatten ook de lijst met elementen waarnaar wordt verwezen. Om een lijst van referenced activa te bekijken, navigeer aan de pagina van activadetails en sluit het [ Spoorweg ](/help/sites-authoring/basic-handling.md#rail-selector).
+1. De middelen waarnaar wordt verwezen, bevatten ook de lijst met elementen waarnaar wordt verwezen. Om een lijst van referenced activa te bekijken, navigeer aan de pagina van activadetails en sluit het [&#x200B; Spoorweg &#x200B;](/help/sites-authoring/basic-handling.md#rail-selector).
 
 >[!NOTE]
 >
@@ -111,21 +111,21 @@ Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word 
 
 ## Subelementen weergeven {#viewing-subassets}
 
-De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. In het upper-left gebied van de pagina, klik ![ Optie om linkerspoor ](assets/do-not-localize/aem_leftrail_contentonly.png) te openen en **[!UICONTROL Subassets]** van de lijst te klikken. Wanneer u **[!UICONTROL Subassets]** selecteert in de lijst. U kunt ook de sneltoets gebruiken `alt + 5` .
+De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. In het upper-left gebied van de pagina, klik ![&#x200B; Optie om linkerspoor &#x200B;](assets/do-not-localize/aem_leftrail_contentonly.png) te openen en **[!UICONTROL Subassets]** van de lijst te klikken. Wanneer u **[!UICONTROL Subassets]** selecteert in de lijst. U kunt ook de sneltoets gebruiken `alt + 5` .
 
-![ subassets van de Mening voor een multi-page activa ](assets/view_subassets_simulation.gif)
+![&#x200B; subassets van de Mening voor een multi-page activa &#x200B;](assets/view_subassets_simulation.gif)
 
 ## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
 U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets] . Open een element met meerdere pagina&#39;s en klik op **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
-![ Mening en zie pagina&#39;s van een multi-page activa ](assets/view_multipage_asset_fmr.gif)
+![&#x200B; Mening en zie pagina&#39;s van een multi-page activa &#x200B;](assets/view_multipage_asset_fmr.gif)
 
 Voor [!DNL InDesign] kunt u pagina&#39;s uitnemen met [!DNL InDesign Server] . Als de voorvertoningen van pagina&#39;s worden opgeslagen tijdens het maken van [!DNL InDesign] -bestanden, is [!DNL InDesign Server] niet vereist voor het uitnemen van pagina&#39;s.
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Desktop Actions]** gebruiken om een specifiek submiddel te openen of weer te geven met de bureaubladtoepassing van [!DNL Experience Manager] . Zie hoe te [ vormen de Acties van de Desktop ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2) als u [!DNL Experience Manager] Desktop app gebruikt.
+* **[!UICONTROL Desktop Actions]** gebruiken om een specifiek submiddel te openen of weer te geven met de bureaubladtoepassing van [!DNL Experience Manager] . Zie hoe te [&#x200B; vormen de Acties van de Desktop &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2) als u [!DNL Experience Manager] Desktop app gebruikt.
 
 * Met de optie **[!UICONTROL Properties]** wordt de pagina [!UICONTROL Properties] van het specifieke subelement geopend.
 
@@ -133,7 +133,7 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 * Met de optie **[!UICONTROL Page Overview]** worden alle subelementen tegelijkertijd weergegeven.
 
-* **[!UICONTROL Timeline]** optie van het linkerspoor na het klikken ![ Optie om linkerspoor ](assets/do-not-localize/aem_leftrail_contentonly.png) te openen toont de activiteitenstroom voor het dossier.
+* **[!UICONTROL Timeline]** optie van het linkerspoor na het klikken ![&#x200B; Optie om linkerspoor &#x200B;](assets/do-not-localize/aem_leftrail_contentonly.png) te openen toont de activiteitenstroom voor het dossier.
 
 ## Beste werkwijzen en beperking {#best-practice-limitation-tips}
 
@@ -141,7 +141,7 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 >[!MORELIKETHIS]
 >
->* [ Desktop app van Adobe Experience Manager van het Gebruik &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL)
->* [ vorm de Acties van de Desktop in Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2)
->* [ creeer Gekoppelde Slimme Voorwerpen in Adobe Photoshop ](https://helpx.adobe.com/nl/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [ grafiek van de Plaats in Adobe InDesign ](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html)
+>* [&#x200B; Desktop app van Adobe Experience Manager van het Gebruik &lbrace;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL)
+>* [&#x200B; vorm de Acties van de Desktop in Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#desktopactions-v2)
+>* [&#x200B; creeer Gekoppelde Slimme Voorwerpen in Adobe Photoshop &#x200B;](https://helpx.adobe.com/nl/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [&#x200B; grafiek van de Plaats in Adobe InDesign &#x200B;](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html)

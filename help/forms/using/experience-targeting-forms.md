@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Met Adobe Target geïntegreerd met AEM kunt u ervaringen creëren die zijn aangepast voor een doelgroep. Met Adobe Target kunt u A/B-tests maken, de reactie van de gebruiker meten en aangepaste webinhoud voor bepaalde gebruikers genereren. U kunt Adobe Target integreren met AEM Forms om afbeeldingscomponenten van adaptieve formulieren en interactieve communicatie als doel in te stellen.
 
-Vorm Adobe Target in AEM om het met adaptieve vormen en interactieve mededelingen te gebruiken, zie [ Creërend een Configuratie van het Doel in AEM ](/help/sites-administering/target.md) en [ voeg een Kader ](/help/sites-administering/target.md) toe.
+Vorm Adobe Target in AEM om het met adaptieve vormen en interactieve mededelingen te gebruiken, zie [&#x200B; Creërend een Configuratie van het Doel in AEM &#x200B;](/help/sites-administering/target.md) en [&#x200B; voeg een Kader &#x200B;](/help/sites-administering/target.md) toe.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 
    U kunt ook vier knoppen weergeven wanneer u de muisaanwijzer op het formulier of het interactieve communicatiepictogram plaatst zonder dat u dit selecteert. U kunt **selecteren geeft** knoop uit die verschijnt, om de vorm op uit te geven wijze te openen.
 
-1. In de paginaboolbar, uitgezochte **![ thema-opties ](assets/theme-options.png) >** Open Eigenschappen **.**
+1. In de paginaboolbar, uitgezochte **![&#x200B; thema-opties &#x200B;](assets/theme-options.png) >** Open Eigenschappen **.**
 1. Op het Algemene lusje, kies een configuratie voor het **Adobe Target** gebied. Selecteer **sparen &amp; Sluiten**.
 
 ## Gecreeerde activiteit toepassen op een adaptieve formulierafbeelding of een interactieve communicatieafbeelding {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
@@ -92,7 +92,7 @@ Uw merk wordt nu vermeld op de pagina Activiteiten.
 1. De schakelaar van **geeft** **het richten** wijze uit. De optie voor het schakelen tussen modi bevindt zich in de rechterbovenhoek.
 1. Selecteer a **BRAND**, selecteer **ACTIVITEIT**, en selecteer **Begin richtend**. Het **publiek** menu verschijnt op rechterkant van de redacteur.
 
-   ![ richten-menu ](assets/targeting-menu.png)
+   ![&#x200B; richten-menu &#x200B;](assets/targeting-menu.png)
 
 1. Selecteer een publiek van het **menu van het publiek** en selecteer het beeld aan doel. Er wordt een menu weergegeven. In het menu, uitgezochte **Doel**. Selecteer het beeld en selecteer **vormen**. Selecteer in het eigenschappenvenster de afbeelding die u voor het geselecteerde publiek wilt weergeven. Herhaal de stap voor alle doelgroepen. De doelgerichte ervaring wordt ingeschakeld voor de afbeelding in de interactieve communicatie of het adaptieve formulier.
 

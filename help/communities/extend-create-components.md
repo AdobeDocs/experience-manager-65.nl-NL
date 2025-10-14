@@ -37,7 +37,7 @@ Deze richtingen specificeren a **waarde van de Groep** buiten `.hidden` zodat ka
 
 Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats daarvan het standaard-HBS-bestand wordt gebruikt.
 
-1. Blader naar **CRXDE|Lite** ([ http://localhost:4502/crx/de/index.jsp ](http://localhost:4502/crx/de/index.jsp))
+1. Blader naar **CRXDE|Lite** ([&#x200B; http://localhost:4502/crx/de/index.jsp &#x200B;](http://localhost:4502/crx/de/index.jsp))
 
 1. Een locatie maken voor aangepaste toepassingen:
 
@@ -70,7 +70,7 @@ Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Selecteren **[!UICONTROL Delete]**
 1. Selecteren **[!UICONTROL Save All]**
 
-![ creeer-component ](assets/create-component.png)
+![&#x200B; creeer-component &#x200B;](assets/create-component.png)
 
 ### De component Onderliggende opmerkingen maken {#create-the-child-comment-component}
 
@@ -100,18 +100,18 @@ Het verwijderen van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Selecteren **[!UICONTROL Delete]**
 1. Selecteren **[!UICONTROL Save All]**
 
-![ creeer-kind-component ](assets/create-child-component.png)
+![&#x200B; creeer-kind-component &#x200B;](assets/create-child-component.png)
 
-![ creeer-component-crxde ](assets/create-component-crxde.png)
+![&#x200B; creeer-component-crxde &#x200B;](assets/create-component-crxde.png)
 
 ### De standaard-HBS-scripts kopiëren en wijzigen {#copy-and-modify-the-default-hbs-scripts}
 
-Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruikend [&#x200B; CRXDE Lite &#x200B;](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Kopiëren `comments.hbs`
 
-   * Van [ /libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * Aan [ /apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+   * Van [&#x200B; /libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
+   * Aan [&#x200B; /apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * Bewerken `comments.hbs` naar:
 
@@ -127,8 +127,8 @@ Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite
 
 * Kopiëren `comment.hbs`
 
-   * Van [ /libs/social/commons/components/hbs/comments/comment ](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * Aan [ /apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+   * Van [&#x200B; /libs/social/commons/components/hbs/comments/comment &#x200B;](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
+   * Aan [&#x200B; /apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
 * Bewerken `comment.hbs` naar:
 
@@ -144,7 +144,7 @@ Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite
 
 Als u wilt voorkomen dat deze clientbibliotheek moet worden opgenomen, kunt u de categoriewaarde voor de clientlib van het standaardopmerkingssysteem gebruiken ( `cq.social.author.hbs.comments`). Nochtans, zou deze clientlib dan voor alle instanties van de standaardcomponent moeten worden omvat, ook.
 
-Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruikend [&#x200B; CRXDE Lite &#x200B;](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Knooppunt `/apps/custom/components/comments` selecteren
 * Selecteren **[!UICONTROL Create Node]**
@@ -166,7 +166,7 @@ Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite
 * Voer &#39;customcommentsystem.js&#39; in als de inhoud van `js.txt`
 * Selecteren **[!UICONTROL Save All]**
 
-![ commentaren-clientlibs ](assets/comments-clientlibs.png)
+![&#x200B; commentaren-clientlibs &#x200B;](assets/comments-clientlibs.png)
 
 ## Het SCF-model en de weergave registreren {#register-the-scf-model-view}
 

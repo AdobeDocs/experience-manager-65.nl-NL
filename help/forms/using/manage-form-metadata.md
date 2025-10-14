@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 ## Overzicht  {#overview-nbsp}
@@ -29,7 +29,7 @@ Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers
 
 AEM Forms biedt standaard een gedefinieerde set metagegevens voor elk elementtype. Naast de standaardmetagegevens kunt u ook aangepaste metagegevens toevoegen aan elk elementtype. AEM Forms biedt u ook de juiste middelen om al deze metagegevens efficiënt voor uw formulieren te maken, te beheren en uit te wisselen.
 
-Als u een ontwikkelaar of site-eigenaar bent, kunt u Forms Portal, de gebruikersinterface voor AEM Forms, aanpassen aan de metagegevens die u in uw organisatie gebruikt. Voor meer informatie over het Portaal van Forms, zie [ Inleiding aan het publiceren van vormen op een portaal ](../../forms/using/introduction-publishing-forms.md).
+Als u een ontwikkelaar of site-eigenaar bent, kunt u Forms Portal, de gebruikersinterface voor AEM Forms, aanpassen aan de metagegevens die u in uw organisatie gebruikt. Voor meer informatie over het Portaal van Forms, zie [&#x200B; Inleiding aan het publiceren van vormen op een portaal &#x200B;](../../forms/using/introduction-publishing-forms.md).
 
 ## Metagegevens in AEM Forms {#metadata-in-aem-forms}
 
@@ -185,21 +185,21 @@ Assets heeft bestaande eigenschapswaarden die kunnen worden weergegeven in de al
 
 1. Open de eigenschappenpagina op een van de volgende manieren:
 
-   1. Klik het pictogram van de Eigenschappen van de Mening ![ e_reviewmode_properties_n ](assets/e_reviewmode_properties_n.png) van Snelle Acties.
+   1. Klik het pictogram van de Eigenschappen van de Mening ![&#x200B; e_reviewmode_properties_n &#x200B;](assets/e_reviewmode_properties_n.png) van Snelle Acties.
 
       >[!NOTE]
       >
       >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
-   1. Selecteer de vorm en klik het pictogram van de Eigenschappen van de Mening ![ e_reviewmode_properties_n ](assets/e_reviewmode_properties_n.png) dat in de toolbar verschijnt.
+   1. Selecteer de vorm en klik het pictogram van de Eigenschappen van de Mening ![&#x200B; e_reviewmode_properties_n &#x200B;](assets/e_reviewmode_properties_n.png) dat in de toolbar verschijnt.
    1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Nu, klik het {![&#128279;](assets/aem6forms_eye_viewon.png) oogpictogram 0} aem6forms_eye_viewon op het hogere recht, en klik dan Eigenschappen in de lijst onder het.
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 
    De eigenschappenpagina heeft een werkbalk met twee actiepictogrammen:
 
-   * Bewerken: ![ aem6forms_edit ](assets/aem6forms_edit.png) geeft de waarden van het meta-gegevensbezit uit
-   * Mening: ![ aem6forms_eye_viewon ](assets/aem6forms_eye_viewon.png) navigeer aan de pagina van de vormdetails, die de vorm op de voorproefwijze opent.
+   * Bewerken: ![&#x200B; aem6forms_edit &#x200B;](assets/aem6forms_edit.png) geeft de waarden van het meta-gegevensbezit uit
+   * Mening: ![&#x200B; aem6forms_eye_viewon &#x200B;](assets/aem6forms_eye_viewon.png) navigeer aan de pagina van de vormdetails, die de vorm op de voorproefwijze opent.
 
    Het inhoudgedeelte wordt in twee delen verdeeld:
 
@@ -214,7 +214,7 @@ U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe
 
 1. Voer de stappen in de vorige sectie uit om de eigenschappenpagina te openen waarop bestaande metagegevens van het geselecteerde formulier kunnen worden weergegeven.
 
-1. Van de toolbar, klik uitgeven pictogram ![ aem6forms_edit ](assets/aem6forms_edit.png) om de wijze van de pagina van read-only te veranderen in lees-schrijf.
+1. Van de toolbar, klik uitgeven pictogram ![&#x200B; aem6forms_edit &#x200B;](assets/aem6forms_edit.png) om de wijze van de pagina van read-only te veranderen in lees-schrijf.
 
 1. De eigenschappenpagina die wordt geopend, bevat een schema dat een combinatie bevat van bewerkbare invoervelden en statische tekst.
 
@@ -224,8 +224,8 @@ U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe
 
    Deze pagina heeft een werkbalk met twee actiepictogrammen die afwijken van die in de weergavemodus:
 
-   * Annuleren: ![ aem6forms_close ](assets/aem6forms_close.svg_w24.png) annuleert om het even welke veranderingen die aan waarden van het meta-gegevensbezit tot nu toe worden aangebracht
-   * Gereed: ![ aem6forms_check ](assets/aem6forms_check.png) sparen alle veranderingen die aan waarden van het meta-gegevensbezit tot dusver worden aangebracht
+   * Annuleren: ![&#x200B; aem6forms_close &#x200B;](assets/aem6forms_close.svg_w24.png) annuleert om het even welke veranderingen die aan waarden van het meta-gegevensbezit tot nu toe worden aangebracht
+   * Gereed: ![&#x200B; aem6forms_check &#x200B;](assets/aem6forms_check.png) sparen alle veranderingen die aan waarden van het meta-gegevensbezit tot dusver worden aangebracht
 
    Met beide handelingen wordt de gebruiker weer naar de alleen-lezen modus geleid van de eigenschappenpagina die de bijgewerkte waarden bevat.
 
@@ -265,11 +265,11 @@ AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen i
 
 1. Elk type element waarop u klikt, opent een lijst met de optie `extendedmetadata` . Bewerk dit schema.
 
-1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![ aem6forms_edit ](assets/aem6forms_edit.png) pictogram dat in de toolbar verschijnt.
+1. Selecteer checkbox naast `extendedmetadata` en klik dan uitgeven ![&#x200B; aem6forms_edit &#x200B;](assets/aem6forms_edit.png) pictogram dat in de toolbar verschijnt.
 
 1. AEM Forms opent de editor/formulierbuilder voor metagegevens van het geselecteerde elementtype (in dit geval adaptief formulier).
 
-   ![ het schemaredacteur van Meta-gegevens voor het Adaptieve type van Vorm ](assets/metadata-schema-editor-for-adaptive-form-type.png)
+   ![&#x200B; het schemaredacteur van Meta-gegevens voor het Adaptieve type van Vorm &#x200B;](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    Metagegevenseditor
 
@@ -304,7 +304,7 @@ AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen i
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 
    1. Vul andere instellingen in op basis van vereisten. Selecteer bijvoorbeeld de optie Vereist als u het veld verplicht wilt maken.
-   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![ schrapping-1 ](assets/delete-1.png) pictogram.
+   1. Om een gebied te schrappen u toevoegde, selecteer het gebied en klik dan schrapping ![&#x200B; schrapping-1 &#x200B;](assets/delete-1.png) pictogram.
 
 1. Voer indien nodig stap 1-3 uit om een andere eigenschap toe te voegen.
 1. Klik **Gedaan** na het aanbrengen van alle veranderingen.

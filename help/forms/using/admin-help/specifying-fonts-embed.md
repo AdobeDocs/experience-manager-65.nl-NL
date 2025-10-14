@@ -26,7 +26,7 @@ U kunt opgeven welke lettertypen altijd worden ingesloten of nooit worden ingesl
 
 >[!NOTE]
 >
->Als u een aangepast XCI-bestand hebt opgegeven voor Forms, overschrijft de optie voor het insluiten van lettertypen in het XCI-bestand deze instellingen. (Zie [ het Vormen plaatsen voor Forms ](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).)
+>Als u een aangepast XCI-bestand hebt opgegeven voor Forms, overschrijft de optie voor het insluiten van lettertypen in het XCI-bestand deze instellingen. (Zie [&#x200B; het Vormen plaatsen voor Forms &#x200B;](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).)
 
 1. Klik in de beheerconsole op **[!UICONTROL Services > Forms]** .
 1. Typ in het vak **[!UICONTROL Always Embed Fonts]** onder **[!UICONTROL Font Embedding Settings]** de namen van de fonts die u wilt insluiten met de formulieren, gescheiden door komma&#39;s. De fonts die u opgeeft, worden alleen ingesloten in het gegenereerde formulier als ze in het formulier worden gebruikt. Deze instelling wordt genegeerd als de optie voor het insluiten van lettertypen is ingeschakeld in het XCI-bestand dat aan de service is doorgegeven, omdat in dat geval alle lettertypen die in de PDF worden gebruikt, altijd worden ingesloten.

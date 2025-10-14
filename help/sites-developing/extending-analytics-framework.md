@@ -22,7 +22,7 @@ Het Adobe Analytics-framework bepaalt welke informatie wordt bijgehouden met Ado
 
 ## Over de gegenereerde JavaScript for Frameworks {#about-the-generated-javascript-for-frameworks}
 
-Wanneer een pagina met een kader van Adobe Analytics wordt geassocieerd, en de pagina [ verwijzingen naar de module van Analytics ](/help/sites-administering/adobeanalytics.md) omvat, wordt een analytics.sitecatalyst.js- dossier automatisch geproduceerd voor de pagina.
+Wanneer een pagina met een kader van Adobe Analytics wordt geassocieerd, en de pagina [&#x200B; verwijzingen naar de module van Analytics &#x200B;](/help/sites-administering/adobeanalytics.md) omvat, wordt een analytics.sitecatalyst.js- dossier automatisch geproduceerd voor de pagina.
 
 JavaScript in de pagina leidt tot een `s_gi` voorwerp (dat de s_code.js Adobe Analytics bibliotheek bepaalt) en wijst waarden aan zijn eigenschappen toe. De naam van de objectinstantie is `s` . In de codevoorbeelden die in deze sectie worden weergegeven, worden verschillende verwijzingen naar deze `s` -variabele gegeven.
 
@@ -64,7 +64,7 @@ Wanneer u aangepaste JavaScript-code gebruikt om het framework aan te passen, wi
 
 Er zijn verscheidene vooraf bepaalde variabelen binnen Adobe Analytics die op een kader configureerbaar zijn. De **charset**, **cookieLifetime**, **currencyCode**, en **trackInlineStats** variabelen zijn inbegrepen in de **Algemene Lijst van de Montages van de Analyse** door gebrek.
 
-![ a-22 ](assets/aa-22.png)
+![&#x200B; a-22 &#x200B;](assets/aa-22.png)
 
 U kunt namen en waarden van variabelen aan de lijst toevoegen. Deze vooraf gedefinieerde variabelen en alle variabelen die u toevoegt, worden gebruikt om de eigenschappen van het object `s` in het bestand analytics.sitecatalyst.js te configureren. In het volgende voorbeeld wordt getoond hoe de toegevoegde `prop10` eigenschap of value `CONSTANT` wordt vertegenwoordigd in de JavaScript-code:
 
@@ -116,7 +116,7 @@ Gebruik de volgende procedure om variabelen aan de lijst toe te voegen:
 
 Vrije-van de doos van JavaScript in het **Algemene gebied van de Montages van de Analyse** laat u douanecode aan een kader van Adobe Analytics toevoegen.
 
-![ a-21 ](assets/aa-21.png)
+![&#x200B; a-21 &#x200B;](assets/aa-21.png)
 
 De code die u toevoegt, wordt toegevoegd aan het bestand analytics.sitecatalyst.js. Daarom hebt u toegang tot de variabele `s` . Dit is een instantie van het `s_gi` JavaScript-object dat is gedefinieerd in `s_code.js` . Het toevoegen van de volgende code is bijvoorbeeld gelijk aan het toevoegen van een variabele met de naam `prop10` of value `CONSTANT` . Dit is het voorbeeld in de vorige sectie:
 
@@ -126,7 +126,7 @@ De code in het {[&#128279;](/help/sites-developing/extending-analytics-component
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-De volgende procedure laat zien hoe u het vak JavaScript gebruikt om het bijhouden van Adobe Analytics aan te passen. Als uw JavaScript de stoppen van Adobe Analytics moet gebruiken, [ integreert hen ](/help/sites-administering/adobeanalytics.md) in AEM.
+De volgende procedure laat zien hoe u het vak JavaScript gebruikt om het bijhouden van Adobe Analytics aan te passen. Als uw JavaScript de stoppen van Adobe Analytics moet gebruiken, [&#x200B; integreert hen &#x200B;](/help/sites-administering/adobeanalytics.md) in AEM.
 
 1. Voeg de volgende JavaScript-code toe aan het vak, zodat `s.doPlugins` wordt uitgevoerd:
 
@@ -168,11 +168,11 @@ Een Adobe Analytics-framework heeft de volgende configuraties:
 
 De volgende waarden worden bijvoorbeeld gegenereerd in Adobe Analytics:
 
-![ a-20 ](assets/aa-20.png)
+![&#x200B; a-20 &#x200B;](assets/aa-20.png)
 
 ### Global Custom Code toevoegen voor alle Adobe Analytics-frameworks {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
-Aangepaste JavaScript-code opgeven die in alle Adobe Analytics-frameworks is geïntegreerd. Wanneer het kader van Adobe Analytics van een pagina geen douane [ vrij-vorm JavaScript ](/help/sites-administering/adobeanalytics.md) bevat, wordt JavaScript dat het manuscript /libs/cq/analytics/components/sitecatalyst/config.js.jsp produceert toegevoegd aan het {[&#128279;](/help/sites-administering/adobeanalytics.md) dossier 2} analytics.sitecatalyst.js.  Het script heeft standaard geen effect omdat het geen opmerkingen bevat. De code stelt ook `s.usePlugins` in op `false` :
+Aangepaste JavaScript-code opgeven die in alle Adobe Analytics-frameworks is geïntegreerd. Wanneer het kader van Adobe Analytics van een pagina geen douane [&#x200B; vrij-vorm JavaScript &#x200B;](/help/sites-administering/adobeanalytics.md) bevat, wordt JavaScript dat het manuscript /libs/cq/analytics/components/sitecatalyst/config.js.jsp produceert toegevoegd aan het {[&#128279;](/help/sites-administering/adobeanalytics.md) dossier 2} analytics.sitecatalyst.js.  Het script heeft standaard geen effect omdat het geen opmerkingen bevat. De code stelt ook `s.usePlugins` in op `false` :
 
 ```
 /* Plugin Config */
@@ -189,7 +189,7 @@ De code in het bestand analytics.sitecatalyst.js (die de inhoud van het bestand 
 
 als (s.usePlugins) s.doPlugins
 
-Daarom moet uw JavaScript `s.usePlugins` instellen op `true` , zodat alle code in de functie `s_doPlugins` wordt uitgevoerd. Als u de code wilt aanpassen, bedekt u het bestand config.js.jsp met een bestand dat gebruikmaakt van uw eigen JavaScript. Als uw JavaScript de stoppen van Adobe Analytics moet gebruiken, [ integreert hen ](/help/sites-administering/adobeanalytics.md) in AEM.
+Daarom moet uw JavaScript `s.usePlugins` instellen op `true` , zodat alle code in de functie `s_doPlugins` wordt uitgevoerd. Als u de code wilt aanpassen, bedekt u het bestand config.js.jsp met een bestand dat gebruikmaakt van uw eigen JavaScript. Als uw JavaScript de stoppen van Adobe Analytics moet gebruiken, [&#x200B; integreert hen &#x200B;](/help/sites-administering/adobeanalytics.md) in AEM.
 
 >[!NOTE]
 >
@@ -267,7 +267,7 @@ De clientbibliotheekmap /libs/cq/analytics/clientlibs/sitecatalyst/plugins bevat
 
 Gebruik de volgende procedure om de map met de clientbibliotheek voor uw plug-ins te maken. U hoeft deze procedure slechts eenmaal uit te voeren. Gebruik de volgende procedure om een plug-in toe te voegen aan de map met clientbibliotheken.
 
-1. Open CRXDE Lite in een webbrowser. ([ http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Open CRXDE Lite in een webbrowser. ([&#x200B; http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Klik met de rechtermuisknop op de map /apps/my-app/clientlibs en klik op Maken > Node maken. Voer de volgende eigenschapswaarden in en klik op OK:
 
@@ -290,7 +290,7 @@ Gebruik de volgende procedure om de map met de clientbibliotheek voor uw plug-in
 
 Gebruik de volgende procedure om de insteekmodulecode op te halen, de code op te slaan in de AEM opslagplaats en de code toe te voegen aan de map met de clientbibliotheek.
 
-1. Login aan [ sc.omniture.com ](https://sc.omniture.com/login/) gebruikend uw rekening van Adobe Analytics.
+1. Login aan [&#x200B; sc.omniture.com &#x200B;](https://sc.omniture.com/login/) gebruikend uw rekening van Adobe Analytics.
 1. Ga op de bestemmingspagina naar Help > Help Home.
 1. Klik in de inhoudsopgave aan de linkerkant op Plug-ins voor implementatie.
 1. Klik op de koppeling naar de plug-in die u wilt toevoegen. Wanneer de pagina wordt geopend, zoekt u de JavaScript-broncode voor de plug-in en selecteert u de code en kopieert u deze.

@@ -28,7 +28,7 @@ Alvorens Inhoudsfragmenten te gebruiken, gebruik Browser van de Configuratie **&
 >Als u niet **Modellen van het Fragment van de Inhoud** toelaat:
 >
 >* **creeer** optie zal niet beschikbaar voor het creëren van modellen zijn.
->* u kunt niet [ de configuratie van Plaatsen selecteren om het verwante eind-punt ](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) tot stand te brengen.
+>* u kunt niet [&#x200B; de configuratie van Plaatsen selecteren om het verwante eind-punt &#x200B;](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) tot stand te brengen.
 
 U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
@@ -37,11 +37,11 @@ U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schak
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Om [ bepaalde functionaliteit van het Fragment van de Inhoud ](#creating-a-content-fragment-model) te gebruiken, moet u **&#x200B;**&#x200B;eerst hen als **Browser van de Configuratie** toelaten:
+Om [&#x200B; bepaalde functionaliteit van het Fragment van de Inhoud &#x200B;](#creating-a-content-fragment-model) te gebruiken, moet u **&#x200B;**&#x200B;eerst hen als **Browser van de Configuratie** toelaten:
 
 >[!NOTE]
 >
->Voor meer informatie, zie [ Browser van de Configuratie:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Voor meer informatie, zie [&#x200B; Browser van de Configuratie:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
@@ -52,7 +52,7 @@ Om [ bepaalde functionaliteit van het Fragment van de Inhoud ](#creating-a-conte
       * **Modellen van contentfragmenten**
       * **de Blijvende Vragen van GraphQL**
 
-      ![ bepaalt configuratie ](assets/cfm-conf-01.png)
+      ![&#x200B; bepaalt configuratie &#x200B;](assets/cfm-conf-01.png)
 
 1. Selecteer **creeer** om de definitie te bewaren.
 
@@ -64,4 +64,4 @@ Wanneer de configuratie **globale** voor de functionaliteit van het inhoudsfragm
 
 Als u andere configuraties (dus exclusief algemene configuraties) wilt gebruiken met een vergelijkbare Assets-map, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
 
-![ pas configuratie ](assets/cfm-conf-02.png) toe
+![&#x200B; pas configuratie &#x200B;](assets/cfm-conf-02.png) toe

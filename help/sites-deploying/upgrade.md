@@ -23,7 +23,7 @@ In dit gedeelte wordt de upgrade van een AEM naar AEM 6.5 beschreven:
 
 * [Uw upgrade plannen](/help/sites-deploying/upgrade-planning.md)
 * [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)
-* [ Achterwaartse Verenigbaarheid in AEM 6.5 ](/help/sites-deploying/backward-compatibility.md)
+* [&#x200B; Achterwaartse Verenigbaarheid in AEM 6.5 &#x200B;](/help/sites-deploying/backward-compatibility.md)
   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md)
 * [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
@@ -47,7 +47,7 @@ Om gemakkelijker te kunnen verwijzen naar de AEM gevallen die bij deze procedure
 
 Hieronder vindt u een aantal belangrijke wijzigingen in de laatste paar versies van AEM:
 
-AEM 6.0 introduceerde de nieuwe Jackrabbit Oak-opslagplaats. De persistentiemanagers werden vervangen door [ Micro Kernels ](/help/sites-deploying/platform.md#contentbody_title_4). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Voor meer informatie, zie [ Gebruikend het Hulpmiddel van de Migratie CRX2OAK ](/help/sites-deploying/using-crx2oak.md).
+AEM 6.0 introduceerde de nieuwe Jackrabbit Oak-opslagplaats. De persistentiemanagers werden vervangen door [&#x200B; Micro Kernels &#x200B;](/help/sites-deploying/platform.md#contentbody_title_4). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Voor meer informatie, zie [&#x200B; Gebruikend het Hulpmiddel van de Migratie CRX2OAK &#x200B;](/help/sites-deploying/using-crx2oak.md).
 
 Als Assets Insights wordt gebruikt en u een upgrade uitvoert van een versie die ouder is dan AEM 6.2, moeten assets worden gemigreerd en id&#39;s laten genereren via een JMX-boon. Voor de interne tests van de Adobe, werden 125K activa op een milieu TarMK gemigreerd in een uur, maar uw resultaten kunnen variëren.
 
@@ -65,7 +65,7 @@ De controles na de upgrade zijn ook automatiseringsvriendelijk gemaakt.
 
 De periodieke vuilinzameling van revisies en de inzameling van het huisvuil van de gegevensopslag zijn nu routinematige onderhoudstaken die periodiek moeten worden uitgevoerd. Met de introductie van AEM 6.3 biedt Adobe ondersteuning voor en raadt u aan om de revisie online op te schonen. Zie [&#128279;](/help/sites-deploying/revision-cleanup.md) van de Opruiming van de Revisie  voor informatie over hoe te om deze taken te vormen.
 
-AEM introduceert onlangs de [ Detector van het Patroon ](/help/sites-deploying/pattern-detector.md) voor beoordeling van ingewikkeldheid van de verbetering aangezien u voor de verbetering begint te plannen. 6.5 heeft ook een sterke nadruk op [ achterwaartse verenigbaarheid ](/help/sites-deploying/backward-compatibility.md) van eigenschappen. Tot slot worden de beste praktijken voor [ duurzame verbeteringen ](/help/sites-deploying/sustainable-upgrades.md) ook toegevoegd.
+AEM introduceert onlangs de [&#x200B; Detector van het Patroon &#x200B;](/help/sites-deploying/pattern-detector.md) voor beoordeling van ingewikkeldheid van de verbetering aangezien u voor de verbetering begint te plannen. 6.5 heeft ook een sterke nadruk op [&#x200B; achterwaartse verenigbaarheid &#x200B;](/help/sites-deploying/backward-compatibility.md) van eigenschappen. Tot slot worden de beste praktijken voor [&#x200B; duurzame verbeteringen &#x200B;](/help/sites-deploying/sustainable-upgrades.md) ook toegevoegd.
 
 Zie de volledige releaseopmerkingen voor meer informatie over wat er in recente AEM is gewijzigd:
 
@@ -75,14 +75,14 @@ Zie de volledige releaseopmerkingen voor meer informatie over wat er in recente 
 
 Het upgraden van AEM is een proces dat uit meerdere stappen bestaat en soms meerdere maanden duurt. Het volgende overzicht is verstrekt als overzicht van wat inbegrepen is in een verbeteringsproject en de inhoud die in deze documentatie is omvat:
 
-![ screen_shot_2018-03-30at80708am ](assets/screen_shot_2018-03-30at80708am.png)
+![&#x200B; screen_shot_2018-03-30at80708am &#x200B;](assets/screen_shot_2018-03-30at80708am.png)
 
 ## Upgradestroom {#upgrade-overview-1}
 
-In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Let op de nieuwe functies die de Adobe heeft geïntroduceerd. De verbetering zou met de Detector van het Patroon moeten beginnen (zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](/help/sites-deploying/pattern-detector.md)) beoordeelt die u zou moeten laten beslissen de weg u voor verenigbaarheid met AEM 6.4 wilt nemen die op de patronen in het geproduceerde rapport wordt gebaseerd.
+In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Let op de nieuwe functies die de Adobe heeft geïntroduceerd. De verbetering zou met de Detector van het Patroon moeten beginnen (zie [&#x200B; die de Complexiteit van de Verbetering met de Detector van het Patroon &#x200B;](/help/sites-deploying/pattern-detector.md)) beoordeelt die u zou moeten laten beslissen de weg u voor verenigbaarheid met AEM 6.4 wilt nemen die op de patronen in het geproduceerde rapport wordt gebaseerd.
 
-Er was een significante nadruk in 6.5 om alle nieuwe eigenschappen achteruit compatibel te houden, maar in gevallen waar u nog enkele achterwaartse verenigbaarheidskwesties ziet, laat de verenigbaarheidswijze u ontwikkeling tijdelijk uitstellen om uw douanecode volgzaam met 6.5 te houden. Deze benadering helpt u ontwikkelingsinspanning onmiddellijk na de verbetering (zie [ Achterwaartse Verenigbaarheid in AEM 6.5 ](/help/sites-deploying/backward-compatibility.md)) vermijden.
+Er was een significante nadruk in 6.5 om alle nieuwe eigenschappen achteruit compatibel te houden, maar in gevallen waar u nog enkele achterwaartse verenigbaarheidskwesties ziet, laat de verenigbaarheidswijze u ontwikkeling tijdelijk uitstellen om uw douanecode volgzaam met 6.5 te houden. Deze benadering helpt u ontwikkelingsinspanning onmiddellijk na de verbetering (zie [&#x200B; Achterwaartse Verenigbaarheid in AEM 6.5 &#x200B;](/help/sites-deploying/backward-compatibility.md)) vermijden.
 
-Tot slot in uw 6.5 ontwikkelingscyclus, helpen de eigenschappen die onder Duurzame Verbeteringen (zie [ Duurzame Verbeteringen ](/help/sites-deploying/sustainable-upgrades.md)) worden geïntroduceerd u beste praktijken volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
+Tot slot in uw 6.5 ontwikkelingscyclus, helpen de eigenschappen die onder Duurzame Verbeteringen (zie [&#x200B; Duurzame Verbeteringen &#x200B;](/help/sites-deploying/sustainable-upgrades.md)) worden geïntroduceerd u beste praktijken volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
 
-![ 6_4_upgrade_overviewflow-newpage3 ](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+![&#x200B; 6_4_upgrade_overviewflow-newpage3 &#x200B;](assets/6_4_upgrade_overviewflowchart-newpage3.png)

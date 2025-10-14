@@ -23,11 +23,11 @@ U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren
 * Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen van `.jpg` aan een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
 
-  Zie [ hoe Adobe Dynamic Media Classic SEO ](/help/assets/assets/s7_seo.pdf) steunt.
+  Zie [&#x200B; hoe Adobe Dynamic Media Classic SEO &#x200B;](/help/assets/assets/s7_seo.pdf) steunt.
 
 * Metagegevens toevoegen aan de URL voor SEO-doeleinden (Search Engine Optimization).
 
-  Zie [ hoe Adobe Dynamic Media Classic SEO ](/help/assets/assets/s7_seo.pdf) steunt.
+  Zie [&#x200B; hoe Adobe Dynamic Media Classic SEO &#x200B;](/help/assets/assets/s7_seo.pdf) steunt.
 
 * Door de positie van de inhoud in te stellen om een download te activeren.
 * Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Draai `rgb{XX,YY,ZZ}` bijvoorbeeld om in RTF-ready `\redXX\greenYY\blueZZ`
@@ -41,14 +41,14 @@ In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem
 >Wees voorzichtig bij het gebruik van linialen; u kunt voorkomen dat dynamische media-inhoud op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regels te maken.
-Zie [ de vastgestelde verwijzing van de Regel ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Zie [&#x200B; de vastgestelde verwijzing van de Regel &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 
 Zorg er ook voor dat u eerst de regel test die is ingesteld in een testomgeving die geen invloed heeft op uw live productieomgeving.
 Productieomgevingen en staging-omgevingen vereisen doorgaans verschillende logins.
 
-Zie de [ Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+Zie de [&#x200B; Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -56,7 +56,7 @@ Zie de [ Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie
 
 **om de regelreeksen van XML op te stellen:**
 
-1. Teken binnen aan uw [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+1. Teken binnen aan uw [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met Customer Support van Adobe als je deze gegevens niet hebt.
 

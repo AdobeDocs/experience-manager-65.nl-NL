@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Het kleurenschema van de interface wijzigen {#changing-the-color-scheme-of-the-interface}
 
-U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, zie [ Algemene stappen voor de de werkruimteaanpassing van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md).
+U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, zie [&#x200B; Algemene stappen voor de de werkruimteaanpassing van AEM Forms &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Bovenste navigatiebalk {#top-navigation-bar}
 
@@ -31,7 +31,7 @@ De navigatiebalk boven in de AEM Forms-werkruimte bijwerken.
 
    >[!NOTE]
    >
-   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
+   >Voor meer informatie, zie [&#x200B; Toegang WebDAV &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
 
 1. Verwijs naar de nieuwe achtergrondafbeelding in /apps/ws/css/newStyle.css door de volgende stijl toe te voegen.
 

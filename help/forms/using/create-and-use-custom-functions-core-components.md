@@ -21,13 +21,13 @@ In dit artikel wordt beschreven hoe u aangepaste functies maakt met de nieuwste 
 * Algemene bereikobjecten en veldobjecten ondersteunen aangepaste functies
 * Ondersteuning voor moderne JavaScript-functies, zoals verlaat- en pijlfuncties (ES10-ondersteuning)
 
-Zorg ervoor om de [ recentste vormversie ](https://github.com/adobe/aem-core-forms-components/tree/release/650) op uw milieu van de Component van de Kern van AEM Forms te plaatsen om de recentste eigenschappen in de Functies van de Douane te gebruiken. </span>
+Zorg ervoor om de [&#x200B; recentste vormversie &#x200B;](https://github.com/adobe/aem-core-forms-components/tree/release/650) op uw milieu van de Component van de Kern van AEM Forms te plaatsen om de recentste eigenschappen in de Functies van de Douane te gebruiken. </span>
 
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | Dit artikel |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
 
 ## Inleiding
 
@@ -83,7 +83,7 @@ De **Parameter** is een lijst van argumenten die door douanefuncties worden gebr
    * date []: Vertegenwoordigt een serie van datumwaarden.
    * array: vertegenwoordigt een algemene array met waarden van verschillende typen.
    * object: vertegenwoordigt een formulierobject dat aan een aangepaste functie wordt doorgegeven in plaats van dat de waarde rechtstreeks wordt doorgegeven.
-   * bereik: vertegenwoordigt het globals object, dat alleen-lezen variabelen bevat, zoals formulierinstanties, doelveldinstanties en methoden voor het uitvoeren van formulierwijzigingen binnen de aangepaste functies. Deze wordt gedeclareerd als de laatste parameter in de JavaScript-annotaties en is niet zichtbaar voor de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking. Voor verdere informatie over het voorwerp van Globals en hoe te om het te gebruiken, [ klik hier ](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+   * bereik: vertegenwoordigt het globals object, dat alleen-lezen variabelen bevat, zoals formulierinstanties, doelveldinstanties en methoden voor het uitvoeren van formulierwijzigingen binnen de aangepaste functies. Deze wordt gedeclareerd als de laatste parameter in de JavaScript-annotaties en is niet zichtbaar voor de regeleditor van een adaptief formulier. De bereikparameter benadert het object van het formulier of de component om de regel of gebeurtenis te activeren die vereist is voor formulierverwerking. Voor verdere informatie over het voorwerp van Globals en hoe te om het te gebruiken, [&#x200B; klik hier &#x200B;](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 Het type van Parameter is **niet case-sensitive** en de ruimten worden niet toegestaan in de parameternaam.
 
@@ -346,17 +346,17 @@ Voordat u een aangepaste functie aan uw Adaptive Forms gaat toevoegen, moet u co
 ## Een aangepaste functie maken {#create-custom-function}
 
 Stappen voor het maken van aangepaste functies zijn:
-1. [ creeer een bibliotheek van de cliëntkant gebruikend het AEM Archetype van het Project en voeg een douanefunctie toe ](#create-client-library-archetype)
+1. [&#x200B; creeer een bibliotheek van de cliëntkant gebruikend het AEM Archetype van het Project en voeg een douanefunctie toe &#x200B;](#create-client-library-archetype)
 OF
-   [ creeer douanefuncties door CRXDE ](#create-add-custom-function)
+   [&#x200B; creeer douanefuncties door CRXDE &#x200B;](#create-add-custom-function)
 1. [Clientbibliotheek toevoegen aan een adaptief formulier](#add-client-library)
 1. [Aangepaste functie gebruiken in een adaptief formulier](#use-custom-functions)
 
 
 ### Een clientbibliotheek maken met het AEM Project Archetype{#create-client-library-archetype}
 
-U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gecreeerde project toe te voegen [ gebruikend het AEM Archetype van het Project ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
-Als u een bestaand project <!--and have already the project structure as shown in the image below,--> hebt kunt u [ douanefuncties ](#create-add-custom-function) aan uw lokaal project direct toevoegen.
+U kunt douanefuncties toevoegen door een cliëntbibliotheek aan het gecreeerde project toe te voegen [&#x200B; gebruikend het AEM Archetype van het Project &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Als u een bestaand project <!--and have already the project structure as shown in the image below,--> hebt kunt u [&#x200B; douanefuncties &#x200B;](#create-add-custom-function) aan uw lokaal project direct toevoegen.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -368,7 +368,7 @@ Om nieuwe omslag van de cliëntbibliotheek aan uw [ AEM projectfolder ] toe te v
 
 1. Open de [ AEM projectfolder ] in een redacteur.
 
-   ![ de omslagstructuur van de douanefunctie ](assets/custom-library-folder-structure.png)
+   ![&#x200B; de omslagstructuur van de douanefunctie &#x200B;](assets/custom-library-folder-structure.png)
 
 1. Zoek `ui.apps` .
 1. Nieuwe map toevoegen. Voeg bijvoorbeeld een map toe met de naam `experience-league` .
@@ -433,7 +433,7 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
 
 1. Sla de bestanden op.
 
-![ de omslagstructuur van de douanefunctie ](assets/custom-function-added-files.png)
+![&#x200B; de omslagstructuur van de douanefunctie &#x200B;](assets/custom-function-added-files.png)
 
 **omvat de nieuwe omslag in filter.xml**:
 
@@ -444,9 +444,9 @@ Voeg het volgende toe aan de toegevoegde omslag van de cliëntbibliotheek:
    `<filter root="/apps/experience-league" />`
 1. Sla het bestand op.
 
-   ![ de filter xml van de douanefunctie &lbrace;](assets/custom-function-filterxml.png)
+   ![&#x200B; de filter xml van de douanefunctie &lbrace;](assets/custom-function-filterxml.png)
 
-1. Bouw de pas gecreëerde omslag van de cliëntbibliotheek aan uw AEM milieu door de stappen te volgen die in [ worden gegeven hoe te sectie ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build) bouwen.
+1. Bouw de pas gecreëerde omslag van de cliëntbibliotheek aan uw AEM milieu door de stappen te volgen die in [&#x200B; worden gegeven hoe te sectie &#x200B;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build) bouwen.
 
 ## Aangepaste functies maken en implementeren via CRXDE{#create-add-custom-function}
 
@@ -461,7 +461,7 @@ Als u de nieuwste invoegtoepassing voor AEM Forms en Forms gebruikt, kunt u een 
 1. Navigeer naar de gemaakte map en maak een knooppunt van het type `cq:ClientLibraryFolder` as `clientlibs` .
 1. Navigeer naar de nieuwe map `clientlibs` en voeg de eigenschappen `allowProxy` en `categories` toe:
 
-   ![ de knoopeigenschappen van de Bibliotheek van de Douane ](/help/forms/using/assets/customlibrary-catproperties.png)
+   ![&#x200B; de knoopeigenschappen van de Bibliotheek van de Douane &#x200B;](/help/forms/using/assets/customlibrary-catproperties.png)
 
    >[!NOTE]
    >
@@ -475,7 +475,7 @@ Als u de nieuwste invoegtoepassing voor AEM Forms en Forms gebruikt, kunt u een 
 1. Sla uw wijzigingen op.
 De gemaakte mapstructuur ziet er als volgt uit:
 
-   ![ creeerde de Omslagstructuur van de Bibliotheek van de Cliënt ](/help/forms/using/assets/clientlibrary_folderstructure.png)
+   ![&#x200B; creeerde de Omslagstructuur van de Bibliotheek van de Cliënt &#x200B;](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Dubbelklik op het `functions.js` -bestand om de editor te openen. Het bestand bevat de code voor een aangepaste functie.
 Voeg de volgende code toe aan het JavaScript-bestand om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD).
 
@@ -511,7 +511,7 @@ Voeg de volgende code toe aan het JavaScript-bestand om de leeftijd te berekenen
 
 1. Sla het `js.txt` -bestand op.
 
-U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/using/assets/customfunction.zip) verwijzen. Download en installeer deze map op uw AEM.
+U kunt naar de volgende [&#x200B; omslag van de douanefunctie &#x200B;](/help/forms/using/assets/customfunction.zip) verwijzen. Download en installeer deze map op uw AEM.
 
 Nu kunt u de aangepaste functie in het adaptieve formulier gebruiken door de clientbibliotheek toe te voegen.
 
@@ -524,19 +524,19 @@ Zodra u uw clientbibliotheek hebt geïmplementeerd in uw AEM Forms-omgeving, geb
 1. Klik op het pictogram Eigenschappen van de container van de hulplijn. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Open het tabblad **[!UICONTROL Basic]** en selecteer de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `customfunctionscategory` ).
 
-   ![ Toevoegend de de cliëntbibliotheek van de douanefunctie ](/help/forms/using//assets/custom-function-category-name-core-component.png)
+   ![&#x200B; Toevoegend de de cliëntbibliotheek van de douanefunctie &#x200B;](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
 1. Klik op **[!UICONTROL Done]**.
 
 Nu, kunt u een regel tot stand brengen om douanefuncties in de regelredacteur te gebruiken:
 
-![ Toevoegend de de cliëntbibliotheek van de douanefunctie ](/help/forms/using//assets/calculateage-customfunction.png)
+![&#x200B; Toevoegend de de cliëntbibliotheek van de douanefunctie &#x200B;](/help/forms/using//assets/calculateage-customfunction.png)
 
-Nu, begrijpen wij hoe te om een douanefunctie te vormen en te gebruiken gebruikend de [ Invoke dienst van de Redacteur van de Regel in AEM Forms 6.5 ](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+Nu, begrijpen wij hoe te om een douanefunctie te vormen en te gebruiken gebruikend de [&#x200B; Invoke dienst van de Redacteur van de Regel in AEM Forms 6.5 &#x200B;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
 
 ## Aangepaste functie gebruiken in een adaptief formulier {#use-custom-functions}
 
-In een AanpassingsVorm, kunt u [ Functies van de Douane binnen de regelredacteur ](/help/forms/using/rule-editor-core-components.md) gebruiken.
+In een AanpassingsVorm, kunt u [&#x200B; Functies van de Douane binnen de regelredacteur &#x200B;](/help/forms/using/rule-editor-core-components.md) gebruiken.
 Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` ) om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD). Maak een aangepaste functie als `calculateAge()` die de geboortedatum als invoer neemt en de leeftijd retourneert:
 
 ```javascript
@@ -564,21 +564,21 @@ Voeg de volgende code toe aan het JavaScript-bestand (`Function.js` ) om de leef
 
 In het bovenstaande voorbeeld wordt de aangepaste functie `calculateAge` aangeroepen en wordt de leeftijd geretourneerd wanneer de gebruiker de geboortedatum in de notatie invoert (JJJJ-MM-DD).
 
-![ berekent de aangepaste functie van de Leeftijd in de Redacteur van de Regel ](/help/forms/using/assets/custom-function-calculate-age.png)
+![&#x200B; berekent de aangepaste functie van de Leeftijd in de Redacteur van de Regel &#x200B;](/help/forms/using/assets/custom-function-calculate-age.png)
 
 Bekijk een voorbeeld van het formulier om te zien hoe de aangepaste functies worden geïmplementeerd via de regeleditor:
 
-![ berekent de aangepaste functie van de Leeftijd in de Voorproef van de Vorm van de Redacteur van de Regel ](/help/forms/using/assets/custom-function-age-calculate-form.png)
+![&#x200B; berekent de aangepaste functie van de Leeftijd in de Voorproef van de Vorm van de Redacteur van de Regel &#x200B;](/help/forms/using/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> U kunt naar de volgende [ omslag van douanefuncties ](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw AEM instantie gebruikend de [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> U kunt naar de volgende [&#x200B; omslag van douanefuncties &#x200B;](/help/forms/using/assets/customfunctions.zip) verwijzen. Download en installeer deze omslag in uw AEM instantie gebruikend de [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Ondersteuning voor asynchrone functies in aangepaste functies {#support-of-async-functions}
 
 De asynchrone douanefuncties verschijnen niet in de lijst van de regelredacteur. Het is echter mogelijk om asynchrone functies aan te roepen binnen aangepaste functies die zijn gemaakt met synchrone functie-expressies.
 
-![ Synchronisatie en async douanefunctie ](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
+![&#x200B; Synchronisatie en async douanefunctie &#x200B;](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
 
 >[!NOTE]
 >
@@ -613,11 +613,11 @@ In het bovenstaande voorbeeld is de functie asyncFunction een `asynchronous func
 
 Om zijn het werken te zien, laten wij een knoop toevoegen en een regel voor de knoop creëren die de asynchrone functie na een knoop klikt.
 
-![ creërend regel voor async functie ](/help/forms/using/assets/rule-for-async-funct.png)
+![&#x200B; creërend regel voor async functie &#x200B;](/help/forms/using/assets/rule-for-async-funct.png)
 
 Raadpleeg de illustratie van het onderstaande consolevenster om aan te tonen dat wanneer de gebruiker op de knop `Fetch` klikt, de aangepaste functie `callAsyncFunction` wordt aangeroepen, die op zijn beurt een asynchrone functie `asyncFunction` aanroept. Inspect het consolevenster om de reactie op de knoop te bekijken klikt:
 
-![ venster van de Console ](/help/forms/using/assets/async-custom-funct-console.png)
+![&#x200B; venster van de Console &#x200B;](/help/forms/using/assets/async-custom-funct-console.png)
 
 Laten we eens kijken naar de functies van aangepaste functies.
 
@@ -657,11 +657,11 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 Laten we leren hoe aangepaste functies veld- en globale objecten gebruiken met behulp van een `Contact Us` -formulier met behulp van verschillende gebruiksmogelijkheden.
 
-![ Vorm van het Contact ons ](/help/forms/using/assets/contact-us-form.png)
+![&#x200B; Vorm van het Contact ons &#x200B;](/help/forms/using/assets/contact-us-form.png)
 
 #### **Geval van het Gebruik**: toon een paneel gebruikend de `SetProperty` regel
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om het vormgebied als `Required` te plaatsen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om het vormgebied als `Required` te plaatsen.
 
 ```javascript
     
@@ -691,19 +691,19 @@ In dit voorbeeld wordt de validatie van het deelvenster `personaldetails` uitgev
 
 Laten we een regel voor de knop `Next` maken, die het deelvenster `personaldetails` valideert en het deelvenster `feedback` zichtbaar maakt wanneer de gebruiker op de knop `Next` klikt.
 
-![ plaats Bezit ](/help/forms/using/assets/custom-function-set-property.png)
+![&#x200B; plaats Bezit &#x200B;](/help/forms/using/assets/custom-function-set-property.png)
 
 Raadpleeg de onderstaande afbeelding om aan te tonen waar het deelvenster `personaldetails` wordt gevalideerd wanneer u op de knop `Next` klikt. Als alle velden in de `personaldetails` worden gevalideerd, wordt het deelvenster `feedback` weergegeven.
 
-![ plaats de Voorproef van de Vorm van het Bezit ](/help/forms/using/assets/set-property-form-preview.png)
+![&#x200B; plaats de Voorproef van de Vorm van het Bezit &#x200B;](/help/forms/using/assets/set-property-form-preview.png)
 
 Als er fouten voorkomen in de velden van het deelvenster `personaldetails` , worden deze in het veld weergegeven wanneer op de knop `Next` wordt geklikt. Het deelvenster `feedback` blijft dan onzichtbaar.
 
-![ plaats de Voorproef van de Vorm van het Bezit ](/help/forms/using/assets/set-property-panel.png)
+![&#x200B; plaats de Voorproef van de Vorm van het Bezit &#x200B;](/help/forms/using/assets/set-property-panel.png)
 
 #### **Geval van het Gebruik**: Valideer het gebied.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om het gebied te bevestigen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om het gebied te bevestigen.
 
 ```javascript
     /**
@@ -726,23 +726,23 @@ Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard cre
 
 In dit voorbeeld wordt een aangepast validatiepatroon toegepast op het veld `contact` . Gebruikers moeten een telefoonnummer invoeren dat begint met `10` gevolgd door `8` cijfers. Als de gebruiker een telefoonnummer invoert dat niet begint met `10` of meer of minder dan `8` cijfers bevat, verschijnt er een foutbericht bij de klik op de knop:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/using/assets/custom-function-validation-pattern.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/using/assets/custom-function-validation-pattern.png)
 
 De volgende stap bestaat uit het maken van een regel voor de knop `Next` die het veld `contact` in het klikveld valideert.
 
-![ Patroon van de Bevestiging ](/help/forms/using/assets/custom-function-validate.png)
+![&#x200B; Patroon van de Bevestiging &#x200B;](/help/forms/using/assets/custom-function-validate.png)
 
 Verwijs naar de illustratie hieronder om aan te tonen dat als de gebruiker een telefoonaantal ingaat dat niet met `10` begint, een foutenmelding op het gebiedsniveau verschijnt:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/using/assets/custom-function-validate-error-message.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/using/assets/custom-function-validate-error-message.png)
 
 Als de gebruiker een geldig telefoonnummer invoert en alle velden in het deelvenster `personaldetails` zijn gevalideerd, wordt het deelvenster `feedback` op het scherm weergegeven:
 
-![ Patroon van de Bevestiging van het E-mailAdres ](/help/forms/using/assets/validate-form-preview-form.png)
+![&#x200B; Patroon van de Bevestiging van het E-mailAdres &#x200B;](/help/forms/using/assets/validate-form-preview-form.png)
 
 #### **Geval van het Gebruik**: Herstel een paneel
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om het paneel terug te stellen.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om het paneel terug te stellen.
 
 ```javascript
     /**
@@ -766,11 +766,11 @@ Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard cre
 
 In dit voorbeeld wordt het deelvenster `personaldetails` opnieuw ingesteld wanneer u op de knop `Clear` klikt. In de volgende stap wordt een regel gemaakt voor de knop `Clear` die het deelvenster opnieuw instelt wanneer op de knop wordt geklikt.
 
-![ Duidelijke knoop ](/help/forms/using/assets/custom-function-reset-field.png)
+![&#x200B; Duidelijke knoop &#x200B;](/help/forms/using/assets/custom-function-reset-field.png)
 
 Zie de onderstaande afbeelding om weer te geven dat als de gebruiker op de knop `clear` klikt, het deelvenster `personaldetails` opnieuw wordt ingesteld:
 
-![ Vorm van het Terugstellen ](assets/custom-function-reset-form.png)
+![&#x200B; Vorm van het Terugstellen &#x200B;](assets/custom-function-reset-form.png)
 
 #### **Geval van het Gebruik**: Om douanebericht op het gebiedsniveau te tonen en het gebied als ongeldig te merken
 
@@ -781,7 +781,7 @@ De syntaxis die wordt gebruikt om het veld als ongeldig te markeren en een aange
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om douanebericht op het gebiedsniveau toe te laten.
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om douanebericht op het gebiedsniveau toe te laten.
 
 ```javascript
     /**
@@ -803,15 +803,15 @@ In dit voorbeeld wordt een aangepast bericht weergegeven op veldniveau als de ge
 
 In de volgende stap wordt een regel voor het veld `comments` gemaakt:
 
-![ gebied van het Teken als Ongeldig ](/help/forms/using/assets/custom-function-invalid-field.png)
+![&#x200B; gebied van het Teken als Ongeldig &#x200B;](/help/forms/using/assets/custom-function-invalid-field.png)
 
 Zie de onderstaande demonstratie om te tonen dat het invoeren van negatieve feedback in het veld `comments` de weergave van een aangepast bericht op veldniveau activeert:
 
-![ gebied van het Teken als Ongeldige vorm van de Voorproef ](/help/forms/using/assets/custom-function-invalidfield-form.png)
+![&#x200B; gebied van het Teken als Ongeldige vorm van de Voorproef &#x200B;](/help/forms/using/assets/custom-function-invalidfield-form.png)
 
 Als de gebruiker meer dan 15 tekens in het tekstvak Opmerkingen invoert, wordt het veld gevalideerd en wordt het formulier verzonden:
 
-![ gebied van het Teken als geldige vorm van de Voorproef ](/help/forms/using/assets/custom-function-validfield-form.png)
+![&#x200B; gebied van het Teken als geldige vorm van de Voorproef &#x200B;](/help/forms/using/assets/custom-function-validfield-form.png)
 
 
 #### **Geval van het Gebruik**: Verzend veranderde gegevens aan de server
@@ -822,7 +822,7 @@ De volgende regel code:
 * Het tweede argument geeft aan of het formulier moet worden gevalideerd voordat het wordt verzonden. Deze is `optional` en wordt standaard ingesteld op `true` .
 * Het derde argument is de `contentType` van de verzending, die ook optioneel is met de standaardwaarde `multipart/form-data` . De andere waarden kunnen `application/json` en `application/x-www-form-urlencoded` zijn.
 
-Voeg de volgende code in de douanefunctie toe zoals die in [ wordt verklaard creeer-douane-functie ](#create-custom-function) sectie, om de gemanipuleerde gegevens bij de server voor te leggen:
+Voeg de volgende code in de douanefunctie toe zoals die in [&#x200B; wordt verklaard creeer-douane-functie &#x200B;](#create-custom-function) sectie, om de gemanipuleerde gegevens bij de server voor te leggen:
 
 ```javascript
     /**
@@ -847,15 +847,15 @@ In dit voorbeeld wordt `NA` verzonden naar de server wanneer de gebruiker het te
 
 Maak nu een regel voor de knop `Submit` die gegevens verzendt:
 
-![ legt gegevens ](/help/forms/using/assets/custom-function-submit-data.png) voor
+![&#x200B; legt gegevens &#x200B;](/help/forms/using/assets/custom-function-submit-data.png) voor
 
 Raadpleeg de illustratie van de onderstaande `console window` om aan te tonen dat als de gebruiker het `comments` textbox leeg laat, de waarde zoals `NA` wordt verzonden op de server:
 
-![ legt gegevens bij het consolevenster voor ](/help/forms/using/assets/custom-function-submit-data-form.png)
+![&#x200B; legt gegevens bij het consolevenster voor &#x200B;](/help/forms/using/assets/custom-function-submit-data-form.png)
 
 U kunt het consolevenster ook inspecteren om de gegevens te bekijken die aan de server worden voorgelegd:
 
-![ gegevens van Inspect bij het consolevenster ](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![&#x200B; gegevens van Inspect bij het consolevenster &#x200B;](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 
@@ -974,13 +974,13 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 De adaptieve Forms voert caching voor douanefuncties uit om reactietijd te verbeteren terwijl het terugwinnen van de lijst van de douanefunctie in de regelredacteur. Er verschijnt een bericht als `Fetched following custom functions list from cache` in het `error.log` -bestand.
 
-![ douanefunctie met geheim voorgeheugensteun ](/help/forms/using/assets/custom-function-cache-error.png)
+![&#x200B; douanefunctie met geheim voorgeheugensteun &#x200B;](/help/forms/using/assets/custom-function-cache-error.png)
 
 Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldig en wordt het geparseerd.
 
 ## Problemen oplossen {#troubleshooting}
 
-* De gebruiker moet ervoor zorgen dat de [ kerncomponent en specificatieversie aan de recentste versie ](https://github.com/adobe/aem-core-forms-components/tree/release/650) worden geplaatst. Voor bestaande AEM projecten en formulieren zijn echter aanvullende stappen nodig:
+* De gebruiker moet ervoor zorgen dat de [&#x200B; kerncomponent en specificatieversie aan de recentste versie &#x200B;](https://github.com/adobe/aem-core-forms-components/tree/release/650) worden geplaatst. Voor bestaande AEM projecten en formulieren zijn echter aanvullende stappen nodig:
 
    * Voor het AEM project moet de gebruiker alle instanties van `submitForm('custom:submitSuccess', 'custom:submitError')` vervangen door `submitForm()` en het project implementeren.
 
@@ -989,11 +989,11 @@ Als de aangepaste functies worden gewijzigd, wordt het in cache plaatsen ongeldi
 
 * Als het JavaScript-bestand met code voor aangepaste functies een fout bevat, worden de aangepaste functies niet vermeld in de regeleditor van een adaptief formulier. Als u de lijst met aangepaste functies wilt controleren, navigeert u naar het `error.log` -bestand voor de fout. In het geval van een fout wordt de lijst met aangepaste functies leeg weergegeven:
 
-  ![ dossier van het foutenlogboek ](/help/forms/using/assets/custom-function-list-error-file.png)
+  ![&#x200B; dossier van het foutenlogboek &#x200B;](/help/forms/using/assets/custom-function-list-error-file.png)
 
   Als er geen fout optreedt, wordt de aangepaste functie opgehaald en in het `error.log` -bestand weergegeven. Er verschijnt een bericht als `Fetched following custom functions list` in het `error.log` -bestand:
 
-  ![ dossier van het foutenlogboek met juiste douanefunctie ](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
+  ![&#x200B; dossier van het foutenlogboek met juiste douanefunctie &#x200B;](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
 
 ## Overwegingen
 

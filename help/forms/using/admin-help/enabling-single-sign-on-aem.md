@@ -36,16 +36,16 @@ Als AEM formulieren een gebruiker niet kunnen verifiëren met een van deze metho
 
 U kunt de Poortconfiguratiepagina gebruiken om enige sign-on (SSO) tussen toepassingen en om het even welke toepassing toe te laten die het overbrengen van de identiteit over een kopbal van HTTP steunt. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
-U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [ SSO toelaten gebruikend SPNEGO ](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
+U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [&#x200B; SSO toelaten gebruikend SPNEGO &#x200B;](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuration > Configure Portal Attributes.
 1. Selecteer Ja om SSO in te schakelen. Als u Nee selecteert, zijn de overige instellingen op de pagina niet beschikbaar.
 1. Stel de resterende opties op de pagina naar wens in en klik op OK:
 
    * **type SSO:** (Verplicht) Uitgezochte Kopbal van HTTP om SSO toe te laten gebruikend de kopballen van HTTP.
-   * **HTTP- kopbal voor herkenningsteken van de gebruiker:** (Verplicht) Naam van de kopbal de waarvan waarde het het programma geopende herkenningsteken van de gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Gebruikersbeheer te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [ montages van de Gebruiker ](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
+   * **HTTP- kopbal voor herkenningsteken van de gebruiker:** (Verplicht) Naam van de kopbal de waarvan waarde het het programma geopende herkenningsteken van de gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Gebruikersbeheer te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [&#x200B; montages van de Gebruiker &#x200B;](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
    * **de waardekaarten van het herkenningsteken aan Gebruiker - identiteitskaart in plaats van unieke herkenningsteken van de gebruiker:** Keert de unieke herkenningstekenwaarde van de gebruiker aan identiteitskaart van de Gebruiker in kaart. Selecteer deze optie als het unieke herkenningsteken van de gebruiker een binaire waarde is die niet gemakkelijk door de kopballen van HTTP kan worden verspreid (bijvoorbeeld, objectGUID als u gebruikers van Actieve Folder synchroniseert).
-   * **HTTP- kopbal voor domein:** (Niet verplicht) Naam van de kopbal de waarvan waarde de domeinnaam bevat. Gebruik deze instelling alleen als geen enkele HTTP-header de gebruiker uniek identificeert. Gebruik deze instelling voor gevallen waarin meerdere domeinen bestaan en de unieke id alleen binnen een domein uniek is. In dit geval geeft u de headernaam op in dit tekstvak en geeft u domeintoewijzing op voor de meerdere domeinen in het vak Domeintoewijzing. (Zie [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
+   * **HTTP- kopbal voor domein:** (Niet verplicht) Naam van de kopbal de waarvan waarde de domeinnaam bevat. Gebruik deze instelling alleen als geen enkele HTTP-header de gebruiker uniek identificeert. Gebruik deze instelling voor gevallen waarin meerdere domeinen bestaan en de unieke id alleen binnen een domein uniek is. In dit geval geeft u de headernaam op in dit tekstvak en geeft u domeintoewijzing op voor de meerdere domeinen in het vak Domeintoewijzing. (Zie [&#x200B; het Uitgeven en het omzetten van bestaande domeinen &#x200B;](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **afbeelding van het Domein:** (Verplicht) specificeert afbeelding voor veelvoudige domeinen in het formaat *kopbal value=domain naam*.
 
      Neem bijvoorbeeld een situatie waarin de HTTP-header voor een domein domain domainName is en waarden van domain1, domain2 of domain3 kan hebben. In dit geval, gebruik domeinafbeelding om de domainName waarden aan de domeinnamen van het Beheer van de Gebruiker in kaart te brengen. Elke toewijzing moet op een andere regel staan:
@@ -58,27 +58,27 @@ U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [ SSO toelaten gebruikend
 
 ### Toegestane verwijzingen configureren {#configure-allowed-referers}
 
-Voor de stappen om toegestane verwijzers te vormen, zie [ toegelaten verwijzers ](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers) vormen.
+Voor de stappen om toegestane verwijzers te vormen, zie [&#x200B; toegelaten verwijzers &#x200B;](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers) vormen.
 
 ### Rollen toewijzen aan gebruikers en groepen
 
-Klik om de stappen te kennen om [ rollen aan gebruikers en groepen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
+Klik om de stappen te kennen om [&#x200B; rollen aan gebruikers en groepen &#x200B;](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
 
 ## SSO inschakelen met SPNEGO {#enable-sso-using-spnego}
 
 U kunt het Eenvoudige en Beschermde Mechanisme van de Onderhandeling van GSSAPI (SPNEGO) gebruiken om enige sign-on (SSO) toe te laten wanneer het gebruiken van Actieve Folder als uw server LDAP in een milieu van Vensters. Als SSO is ingeschakeld, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven.
 
-U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [ SSO gebruikend de kopballen van HTTP ](enabling-single-sign-on-aem.md#enable-sso-using-http-headers) toelaten.)
+U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [&#x200B; SSO gebruikend de kopballen van HTTP &#x200B;](enabling-single-sign-on-aem.md#enable-sso-using-http-headers) toelaten.)
 
 >[!NOTE]
 >
 >AEM Forms op JEE steunt het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
 
 1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM Forms-server en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
-1. In Actieve Folder, creeer een gebruiker die de Server van AEM Forms vertegenwoordigt. (Zie [ een gebruikersrekening ](enabling-single-sign-on-aem.md#create-a-user-account) creëren.) Als u meer dan één domein vormt om SPNEGO te gebruiken, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
-1. Wijs de de dienstbelangrijkste naam toe. (Zie [ een Belangrijkste Naam van de Dienst in kaart brengen (SPN) ](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
-1. Configureer de domeincontroller. (Zie [ verhinderen Kerberos integriteit-controle mislukkingen ](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
-1. Voeg of geef een ondernemingsdomein toe zoals die in [ wordt beschreven Toevoegend domeinen ](/help/forms/using/admin-help/adding-domains.md#adding-domains) of [ het Uitgeven en het omzetten van bestaande domeinen ](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Wanneer u creeert of het ondernemingsdomein uitgeeft, voer deze taken uit:
+1. In Actieve Folder, creeer een gebruiker die de Server van AEM Forms vertegenwoordigt. (Zie [&#x200B; een gebruikersrekening &#x200B;](enabling-single-sign-on-aem.md#create-a-user-account) creëren.) Als u meer dan één domein vormt om SPNEGO te gebruiken, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
+1. Wijs de de dienstbelangrijkste naam toe. (Zie [&#x200B; een Belangrijkste Naam van de Dienst in kaart brengen (SPN) &#x200B;](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
+1. Configureer de domeincontroller. (Zie [&#x200B; verhinderen Kerberos integriteit-controle mislukkingen &#x200B;](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
+1. Voeg of geef een ondernemingsdomein toe zoals die in [&#x200B; wordt beschreven Toevoegend domeinen &#x200B;](/help/forms/using/admin-help/adding-domains.md#adding-domains) of [&#x200B; het Uitgeven en het omzetten van bestaande domeinen &#x200B;](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Wanneer u creeert of het ondernemingsdomein uitgeeft, voer deze taken uit:
 
    * Voeg of geef een folder uit die uw Actieve informatie van de Folder bevat.
    * Voeg LDAP toe als verificatieprovider.
@@ -92,7 +92,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [ SSO gebr
       * **Wachtwoord van de Dienst:** het wachtwoord van de gebruiker van de Dienst. In het eerder gebruikte voorbeeld is het servicewachtwoord `password` .
       * **laat SPNEGO toe:** laat het gebruik van SPNEGO voor enig teken-op (SSO) toe. Selecteer deze optie.
 
-1. Configureer de instellingen van de SPNEGO-clientbrowser. (Zie [ Vormend SPNEGO cliëntbrowser montages ](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
+1. Configureer de instellingen van de SPNEGO-clientbrowser. (Zie [&#x200B; Vormend SPNEGO cliëntbrowser montages &#x200B;](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
 ### Een gebruikersaccount maken {#create-a-user-account}
 
@@ -109,7 +109,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [ SSO gebr
 
 ### Wijs een Belangrijkste Naam van de Dienst (SPN) toe {#map-a-service-principal-name-spn}
 
-1. Haal het hulpprogramma KtPass op. Dit nut wordt gebruikt om SPN aan REALM in kaart te brengen. U kunt het nut KtPass als deel van het pak van het Hulpmiddel van de Server van Vensters of het Uitrusting van het Middel verkrijgen. (Zie [ Server 2003 Service Pack 1 Ondersteuningsmiddelen van Vensters ](https://support.microsoft.com/kb/892777).)
+1. Haal het hulpprogramma KtPass op. Dit nut wordt gebruikt om SPN aan REALM in kaart te brengen. U kunt het nut KtPass als deel van het pak van het Hulpmiddel van de Server van Vensters of het Uitrusting van het Middel verkrijgen. (Zie [&#x200B; Server 2003 Service Pack 1 Ondersteuningsmiddelen van Vensters &#x200B;](https://support.microsoft.com/kb/892777).)
 1. Voer `ktpass` bij een opdrachtprompt uit met de volgende argumenten:
 
    `ktpass -princ HTTP/`*gastheer* `@`*REALM* `-mapuser`*gebruiker*
@@ -180,20 +180,20 @@ Als de server wordt betreden door de computernaam, zoals https://lcserver:8080 t
 
 1. Test de configuratie door de toepassing te openen. De welkomstpagina voor de doeltoepassing moet worden weergegeven.
 
-Klik om de stappen te kennen om [ rollen aan gebruikers en groepen ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
+Klik om de stappen te kennen om [&#x200B; rollen aan gebruikers en groepen &#x200B;](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) toe te wijzen.
 
 ## Rollen toewijzen aan gebruikers en groepen {#assign-roles-to-users-groups}
 
 1. Meld u aan bij uw AEM Forms op JEE Environment.
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Selecteer uw domeinconfiguratie, bijvoorbeeld, LDAP, en klik op het. U vindt alle gecreeerde gebruikers en groepen in de Folder. Indien nodig kunt u nieuwe gebruikers of groepen maken.
-   ![ het beheerspagina van het Domein ](/help/forms/using/assets/domain-mgmt-page.png)
+   ![&#x200B; het beheerspagina van het Domein &#x200B;](/help/forms/using/assets/domain-mgmt-page.png)
 1. Klik op Verificatie en selecteer op de nieuwe pagina een verificatieprovider, zoals LDAP.
 1. Navigeer aan de pagina van het Beheer van het Domein, uitgezochte LDAP, en klik **nu SYN**, om de folder met de authentificatieregeling te synchroniseren u, voor AEM toegang vormde.
-   ![ synchroniseer ldap ](/help/forms/using/assets/sync-ldap.png)
+   ![&#x200B; synchroniseer ldap &#x200B;](/help/forms/using/assets/sync-ldap.png)
 1. Ga naar Gebruikersbeheer en klik op Gebruikers en groepen.
 1. Zoek naar gebruikers of groepen met hun namen, zoals aangetoond in hieronder beeld.
-   ![ de gebruikersgroep van het Onderzoek ](/help/forms/using/assets/search-user-group.png)
+   ![&#x200B; de gebruikersgroep van het Onderzoek &#x200B;](/help/forms/using/assets/search-user-group.png)
 1. Wijs de rollen aan de gebruikers of de groepen toe zoals vereist.
-   ![ de roltaak van de Gebruiker ](/help/forms/using/assets/user-role-assign.png)
+   ![&#x200B; de roltaak van de Gebruiker &#x200B;](/help/forms/using/assets/user-role-assign.png)
 

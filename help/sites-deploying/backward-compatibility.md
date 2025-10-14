@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor een lijst van inhoud en configuratieveranderingen die niet onder het werkingsgebied van het Pakket van de Verenigbaarheid zijn, zie [ Herstructurering van de Bewaarplaats in AEM ](/help/sites-deploying/repository-restructuring.md).
+>Voor een lijst van inhoud en configuratieveranderingen die niet onder het werkingsgebied van het Pakket van de Verenigbaarheid zijn, zie [&#x200B; Herstructurering van de Bewaarplaats in AEM &#x200B;](/help/sites-deploying/repository-restructuring.md).
 
 In Adobe Experience Manager (AEM) 6.5 zijn alle functies ontwikkeld met achterwaartse compatibiliteit voor ogen.
 
@@ -37,7 +37,7 @@ Met het compatibiliteitspakket kunt u AEM uitvoeren in de compatibiliteitsmodus 
 >
 >Het compatibiliteitspakket is slechts een tijdelijke oplossing om de ontwikkeling uit te stellen die nodig is om AEM 6.5-compatibel te zijn. Adobe raadt deze optie alleen als laatste optie aan als u compatibiliteitsproblemen niet direct na de upgrade kunt oplossen via ontwikkeling. Bovendien raadt de Adobe u aan over te schakelen op de native modus en het compatibiliteitspakket te verwijderen wanneer u besluit verder te gaan met aangepaste ontwikkeling op basis van 6.5 en gebruik te maken van de volledige 6.5-functionaliteit.
 
-![ sase ](assets/sase.png)
+![&#x200B; sase &#x200B;](assets/sase.png)
 
 Het pakket van de Verenigbaarheid heeft twee wijzen: **Verpletterend Toegelaten** en **Verpletterend Gehandicapten**.
 
@@ -57,14 +57,14 @@ De Wijze van de verenigbaarheid is voor klanten die aanpassingen van interfaces 
 
 De verouderde wijze is voor klanten die douaneinterfaces hebben die op erfenis of verouderde code van AEM worden gebaseerd die uit in het verenigingspakket is bewogen.
 
-![ sap ](assets/sapte.png)
+![&#x200B; sap &#x200B;](assets/sapte.png)
 
 ## Instellen {#how-to-set-up}
 
-Het **AEM 6.4 Pak van de Verenigbaarheid voor 6.5** kan als pakket worden geïnstalleerd gebruikend de Manager van het Pakket. U kunt het [ AEM 6.4 Pak van de Verenigbaarheid voor 6.5 van de plaats van de Distributie van de Software downloaden ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
+Het **AEM 6.4 Pak van de Verenigbaarheid voor 6.5** kan als pakket worden geïnstalleerd gebruikend de Manager van het Pakket. U kunt het [&#x200B; AEM 6.4 Pak van de Verenigbaarheid voor 6.5 van de plaats van de Distributie van de Software downloaden &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
 
 Zodra het Pakket van de Verenigbaarheid wordt geïnstalleerd, kan het verpletteren worden toegelaten of worden onbruikbaar gemaakt gebruikend een schakelaar in de configuratie OSGI zoals hieronder getoond:
 
-![ Compat Schakelaars ](assets/compat-switches.png)
+![&#x200B; Compat Schakelaars &#x200B;](assets/compat-switches.png)
 
 Nadat het compatibiliteitspakket is geïnstalleerd en ingesteld, worden de functies gebruikt op basis van de gekozen compatibiliteitsmodus.

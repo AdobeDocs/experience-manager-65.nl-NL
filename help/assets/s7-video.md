@@ -66,7 +66,7 @@ Als u een workflow of versie voor uw middelen nodig hebt, uploadt u deze eerst n
 
 Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen naar Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Scene7 (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-files-using-via-ftp).
+1. In Dynamic Media Classic, [&#x200B; opstelling een geplande FTP uploadend en het coderen aan Scene7 (systeem geautomatiseerd) &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-files-using-via-ftp).
 1. In Experience Manager hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Scene7]** van de Inhoudszoeker.
 1. Auteur met de component **[!UICONTROL Scene7 Video]** .
 
@@ -75,7 +75,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen
 1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]** -configuratie en selecteer **[!UICONTROL Edit]** .
 1. Selecteer de tab **[!UICONTROL Video]** .
 
-   ![ chlimage_1-363 ](assets/chlimage_1-363.png)
+   ![&#x200B; chlimage_1-363 &#x200B;](assets/chlimage_1-363.png)
 
    >[!NOTE]
    >
@@ -85,7 +85,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen
 
    >[!NOTE]
    >
-   >Voor meer informatie over wat de video vooraf instelt betekent, zie de [ documentatie van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
+   >Voor meer informatie over wat de video vooraf instelt betekent, zie de [&#x200B; documentatie van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 
@@ -95,7 +95,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen
 
 Als u de voorinstellingen voor de viewer en codering voor video wilt bijwerken omdat de voorinstellingen in Scene7 zijn bijgewerkt, navigeert u naar de Scene7-configuratie in de Cloud Configuration en selecteert u **[!UICONTROL Update the viewer and encoding presets]** .
 
-![ chlimage_1-364 ](assets/chlimage_1-364.png)
+![&#x200B; chlimage_1-364 &#x200B;](assets/chlimage_1-364.png)
 
 ## Upload uw primaire bronvideo naar Scene7 vanaf Adobe DAM {#uploading-your-master-video}
 
@@ -116,7 +116,7 @@ De Scene7-videocomponent werkt alleen voor Scene7-video&#39;s. De stichtingscomp
 
 De volgende matrix legt uit wanneer de component moet worden gebruikt:
 
-![ chlimage_1-365 ](assets/chlimage_1-365.png)
+![&#x200B; chlimage_1-365 &#x200B;](assets/chlimage_1-365.png)
 
 >[!NOTE]
 >
@@ -152,11 +152,11 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 1. Navigeer in de **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
 1. Maak een S7-videoprofiel. In de lus **[!UICONTROL New]** . selecteert u **[!UICONTROL Create Page]** en selecteert u vervolgens de Scene7 Video Profile-sjabloon. Geef de nieuwe pagina met videoprofielen een naam en selecteer **[!UICONTROL Create]** .
 
-   ![ chlimage_1-366 ](assets/chlimage_1-366.png)
+   ![&#x200B; chlimage_1-366 &#x200B;](assets/chlimage_1-366.png)
 
 1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloudconfiguratie. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
 
-   ![ chlimage_1-367 ](assets/chlimage_1-367.png)
+   ![&#x200B; chlimage_1-367 &#x200B;](assets/chlimage_1-367.png)
 
    | Eigenschap | Beschrijving |
    |---|---|

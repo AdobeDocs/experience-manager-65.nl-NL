@@ -24,7 +24,7 @@ Wanneer het gebruiken van de matigingsconsole van a [&#128279;](moderation.md), 
 
 ## Moderatiehandelingen {#moderation-actions}
 
-Bezoek het moderatieoverzicht voor een beschrijving van [ moderatieacties ](moderate-ugc.md#moderation-actions).
+Bezoek het moderatieoverzicht voor een beschrijving van [&#x200B; moderatieacties &#x200B;](moderate-ugc.md#moderation-actions).
 
 ## Moderniseringsinterface {#moderation-ui}
 
@@ -38,13 +38,13 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Gebruikend de [&#128279;](http://localhost:4503/content/sites/engage/en.html) gemaakte plaats van de Bouw van 0&rbrace; Geometrixx &lbrace;wanneer [ Begonnen het worden met AEM Communities ](getting-started.md), is het mogelijk aan opstelling een draad in een forum waarop om diverse matigingsactiviteiten in het milieu van Publish te ervaren.  Zie hieronder.
+Gebruikend de [&#128279;](http://localhost:4503/content/sites/engage/en.html) gemaakte plaats van de Bouw van 0&rbrace; Geometrixx &lbrace;wanneer [&#x200B; Begonnen het worden met AEM Communities &#x200B;](getting-started.md), is het mogelijk aan opstelling een draad in een forum waarop om diverse matigingsactiviteiten in het milieu van Publish te ervaren.  Zie hieronder.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) werd geïdentificeerd als vertrouwd gemeenschapslid door hem toe te voegen aan de gemeenschap-in gesprek-moderatorgroep toen het creëren van de plaats.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) kan als lid van gemeenschap-in dienst neemt-leden groep worden toegevoegd gebruikend de [ console van Leden ](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kan als lid van gemeenschap-in dienst neemt-leden groep worden toegevoegd gebruikend de [&#x200B; console van Leden &#x200B;](members.md).
 
-Voor meer op communautaire gebruikersgroepen, bezoek [ het Leiden Gebruikers en de Groepen van de Gebruiker ](users.md).
+Voor meer op communautaire gebruikersgroepen, bezoek [&#x200B; het Leiden Gebruikers en de Groepen van de Gebruiker &#x200B;](users.md).
 
 ### De forumberichten maken {#create-the-forum-posts}
 
@@ -91,11 +91,11 @@ Hier volgt een weergave van het forum dat wordt weergegeven door een bezoeker va
 
 Een anonieme bezoeker van de site kan alleen het forum bekijken, maar mag geen inhoud plaatsen en geen moderatiehandelingen uitvoeren.
 
-![ gemeenschap-forum-bezoeker ](assets/community-forum-visitor.png)
+![&#x200B; gemeenschap-forum-bezoeker &#x200B;](assets/community-forum-visitor.png)
 
 ### Nieuw lid (#4) {#new-member}
 
-Op auteur, login als admin en voeg Boyd Larsen (boyd.larsen@dodgit.com) als nieuw lid van gemeenschap-in dienst nemend-leden groep toe gebruikend de [ console van Leden ](members.md), dan logout.
+Op auteur, login als admin en voeg Boyd Larsen (boyd.larsen@dodgit.com) als nieuw lid van gemeenschap-in dienst nemend-leden groep toe gebruikend de [&#x200B; console van Leden &#x200B;](members.md), dan logout.
 
 Meld u bij het publiceren aan als Boyd Larsen en open de thread door `Forum` te selecteren en vervolgens `Read more` voor de nummervogel.
 
@@ -109,7 +109,7 @@ Laat Boyd Vlag selecteren om de inhoud te markeren die door Andrew is geplaatst.
 
 Afmelden
 
-![ gemeenschap-forum-lid ](assets/community-forum-member.png)
+![&#x200B; gemeenschap-forum-lid &#x200B;](assets/community-forum-member.png)
 
 ### Beheerder (#3) {#administrator}
 
@@ -120,9 +120,9 @@ Opmerking:
 * Beheerders kunnen vlaggen, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie.
 * Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![ gemeenschap-admin-forum ](assets/community-admin-forum.png)
+![&#x200B; gemeenschap-admin-forum &#x200B;](assets/community-admin-forum.png)
 
-Selecteer het menupunt van het Beleid zodat kunt u tot de [ moderatieconsole ](moderation.md) van het milieu van Publish toegang hebben.
+Selecteer het menupunt van het Beleid zodat kunt u tot de [&#x200B; moderatieconsole &#x200B;](moderation.md) van het milieu van Publish toegang hebben.
 
 Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de de communautaire plaats van de Modus van de Geometrixx.
 
@@ -130,7 +130,7 @@ Het zoekfilter is een zijpaneel dat tussen open en gesloten schakelt.
 
 Afmelden.
 
-![ moderatie-console-publiceer ](assets/moderation-console-publish.png)
+![&#x200B; moderatie-console-publiceer &#x200B;](assets/moderation-console-publish.png)
 
 ### Moderator van de Gemeenschap (#2) {#community-moderator}
 
@@ -143,9 +143,9 @@ Opmerking:
 * Aaron kan het forumonderwerp knippen om het naar een ander forum te verplaatsen waarvoor hij gematigd is.
 * Aaron kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![ gemeenschap-forum-moderator ](assets/community-forum-moderator.png)
+![&#x200B; gemeenschap-forum-moderator &#x200B;](assets/community-forum-moderator.png)
 
-Selecteer het menupunt van het Beleid zodat kunt u tot de [ moderatieconsole ](moderation.md) van het milieu van Publish toegang hebben.
+Selecteer het menupunt van het Beleid zodat kunt u tot de [&#x200B; moderatieconsole &#x200B;](moderation.md) van het milieu van Publish toegang hebben.
 
 Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de de communautaire plaats van de Modus van de Geometrixx is zichtbaar.
 
@@ -153,7 +153,7 @@ Merk op dat de communautaire moderator de zelfde opties zoals de beheerder heeft
 
 Afmelden.
 
-![ moderator-toegang ](assets/moderator-access.png)
+![&#x200B; moderator-toegang &#x200B;](assets/moderator-access.png)
 
 ### Inhoudsauteur (#1) {#content-author}
 
@@ -165,4 +165,4 @@ Opmerking:
 * Rebekah kan ook reageren op andere inhoud of andere inhoud markeren.
 * Rebekah heeft geen toegang tot de moderatieconsole.
 
-![ gemeenschap-forum-auteur ](assets/community-forum-author.png)
+![&#x200B; gemeenschap-forum-auteur &#x200B;](assets/community-forum-author.png)

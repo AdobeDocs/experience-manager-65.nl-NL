@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms heeft dynamische sjablonen geïntroduceerd. U kunt de malplaatjeredacteur van AEM Sites gebruiken [ creeert of dynamische malplaatjes ](../../forms/using/template-editor.md) uitgeeft. De sjablonen die in het onderstaande artikel worden vermeld, zijn statische sjablonen. Deze zijn niet beschikbaar bij een standaardinstallatie. [ installeer het pakket van de Verenigbaarheid ](../../forms/using/compatibility-package.md) om deze malplaatjes op uw milieu te krijgen.
+>AEM Forms heeft dynamische sjablonen geïntroduceerd. U kunt de malplaatjeredacteur van AEM Sites gebruiken [&#x200B; creeert of dynamische malplaatjes &#x200B;](../../forms/using/template-editor.md) uitgeeft. De sjablonen die in het onderstaande artikel worden vermeld, zijn statische sjablonen. Deze zijn niet beschikbaar bij een standaardinstallatie. [&#x200B; installeer het pakket van de Verenigbaarheid &#x200B;](../../forms/using/compatibility-package.md) om deze malplaatjes op uw milieu te krijgen.
 
 ## Vereisten {#prerequisites}
 
-* Het begrip van AEM [ Malplaatje van de Pagina ](/help/sites-authoring/templates.md) en [ Aangepaste Authoring van de Vorm ](https://helpx.adobe.com/nl/aem-forms/6-1/introduction-forms-authoring.html)
+* Het begrip van AEM [&#x200B; Malplaatje van de Pagina &#x200B;](/help/sites-authoring/templates.md) en [&#x200B; Aangepaste Authoring van de Vorm &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Begrip van AEM [ Klantenzijbibliotheken ](/help/sites-developing/clientlibs.md)
+* Begrip van AEM [&#x200B; Klantenzijbibliotheken &#x200B;](/help/sites-developing/clientlibs.md)
 
 ## Adaptief formuliersjabloon {#adaptive-form-template}
 
@@ -42,7 +42,7 @@ AEM QuickStart bevat de volgende adaptieve formuliersjablonen:
 * Eenvoudige inschrijfsjabloon: hiermee kunt u in meerdere stappen een adaptief formulier maken met een wizardindeling. In deze lay-out, kunt u een uitdrukking van de stapvoltooiing voor elke stap specificeren, die wordt bevestigd alvorens de tovenaar aan de volgende stap te werk gaat.
 * Sjabloon voor inschrijving met tabbladen: hiermee kunt u een adaptief formulier met meerdere tabbladen maken in een lay-out die links wordt weergegeven en waarin u tabbladen in willekeurige volgorde kunt bezoeken.
 * Geavanceerd inschrijfsjabloon: hiermee kunt u een formulier maken met meerdere tabbladen en wizard. Er wordt een lay-out met tabs links gebruikt waarmee u tabbladen in willekeurige volgorde kunt bezoeken. Voor ondertekening en verificatie worden Adobe Document Cloud-ontwerpservices gebruikt.
-* Lege sjabloon: hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Het lege malplaatje laat u een vorm tot stand brengen die u [ in AEM pagina&#39;s van de Plaats ](/help/forms/using/embed-adaptive-form-aem-sites.md) kunt inbedden.
+* Lege sjabloon: hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Het lege malplaatje laat u een vorm tot stand brengen die u [&#x200B; in AEM pagina&#39;s van de Plaats &#x200B;](/help/forms/using/embed-adaptive-form-aem-sites.md) kunt inbedden.
 
 Voor deze sjablonen is de eigenschap `sling:resourceType` ingesteld op de overeenkomende pagina-component. De paginacomponent geeft de CQ-pagina weer, die een adaptieve formuliercontainer bevat, die op zijn beurt weer een adaptief formulier maakt.
 
@@ -82,7 +82,7 @@ U kunt de structuur en de initiële inhoud van een adaptief formulier opgeven me
 * Geef een thema op.
 * Geef handelingen op, zoals Verzenden, Herstellen en Navigeren.
 
-Voor meer informatie, zie [ Redacteur van het Malplaatje ](../../forms/using/template-editor.md).
+Voor meer informatie, zie [&#x200B; Redacteur van het Malplaatje &#x200B;](../../forms/using/template-editor.md).
 
 ## Een adaptieve formuliersjabloon maken op basis van CRXDE {#creating-an-adaptive-form-template-from-crxde}
 

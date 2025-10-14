@@ -26,7 +26,7 @@ Om ongeoorloofd gebruik van deze gegevens te voorkomen, kunnen organisaties een 
 
 Om het watermerk in voorproef PDF toe te laten, selecteer **[!UICONTROL Apply Watermark]** tijdens de optie van de Voorproef in **[!UICONTROL Correspondence Management Configurations]** bij https://&#39; [ server ]:[ haven ]&#39;/system/console/configMgr.
 
-![ gebrek-watermerk ](assets/default-watermark.png)
+![&#x200B; gebrek-watermerk &#x200B;](assets/default-watermark.png)
 
 U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het watermerk aan te passen:
 
@@ -79,7 +79,7 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
    </DDX>
    ```
 
-   Voor informatie bij het aanpassen van de watermerkverschijning, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de [ Dienst van de Assembler en het 1&rbrace; document van de Verwijzing DDX.](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)
+   Voor informatie bij het aanpassen van de watermerkverschijning, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de [&#x200B; Dienst van de Assembler en het 1&rbrace; document van de Verwijzing DDX.](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)
 
    >[!NOTE]
    >

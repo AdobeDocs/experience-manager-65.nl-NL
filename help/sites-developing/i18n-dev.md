@@ -25,7 +25,7 @@ Met Java™- en JavaScript API&#39;s kunt u tekenreeksen internationaliseren in 
 * JavaScript in clientbibliotheken of in paginabron.
 * Waarden van eigenschappen van JCR-knooppunten worden gebruikt in dialoogvensters en componentconfiguratie-eigenschappen.
 
-Voor een overzicht van het internationalisatie en localisatieproces, zie [ Internationaliserende Componenten ](/help/sites-developing/i18n.md).
+Voor een overzicht van het internationalisatie en localisatieproces, zie [&#x200B; Internationaliserende Componenten &#x200B;](/help/sites-developing/i18n.md).
 
 ## Internationalisatie van tekenreeksen in Java™- en JSP-code {#internationalizing-strings-in-java-and-jsp-code}
 
@@ -83,7 +83,7 @@ i18n.get("Enter a search keyword");
 
 #### Vertaalhints gebruiken {#using-translation-hints}
 
-Specificeer de [ vertaalwenk ](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) van het geïnternationaliseerde koord om tussen dubbele koorden in het woordenboek te onderscheiden. Gebruik de tweede, optionele parameter van de methode `get` om de vertaalhint op te geven. De vertaalhint moet exact overeenkomen met de eigenschap Opmerking van het item in het woordenboek.
+Specificeer de [&#x200B; vertaalwenk &#x200B;](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) van het geïnternationaliseerde koord om tussen dubbele koorden in het woordenboek te onderscheiden. Gebruik de tweede, optionele parameter van de methode `get` om de vertaalhint op te geven. De vertaalhint moet exact overeenkomen met de eigenschap Opmerking van het item in het woordenboek.
 
 Het woordenboek bevat bijvoorbeeld de tekenreeks `Request` tweemaal: een keer als werkwoord en een keer als zelfstandig naamwoord. De volgende code bevat de vertaaltip als een argument in de methode `get` :
 
@@ -95,7 +95,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Neem variabelen op in de gelokaliseerde tekenreeks om contextuele betekenis in een zin op te nemen. Nadat u zich bijvoorbeeld hebt aangemeld bij een webtoepassing, wordt op de homepage het bericht &quot;Welkom terug Administrator&quot; weergegeven. Je hebt twee berichten in je postvak.&quot; De paginacontext bepaalt de gebruikersnaam en het aantal berichten.
 
-[ in het woordenboek ](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), worden de variabelen vertegenwoordigd in koorden als gehaakte indexen. Geef de waarden van de variabelen op als argumenten van de methode `get` . De argumenten worden na de vertaalhint geplaatst, en de indexen beantwoorden aan de orde van de argumenten:
+[&#x200B; in het woordenboek &#x200B;](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), worden de variabelen vertegenwoordigd in koorden als gehaakte indexen. Geef de waarden van de variabelen op als argumenten van de methode `get` . De argumenten worden na de vertaalhint geplaatst, en de indexen beantwoorden aan de orde van de argumenten:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
@@ -116,9 +116,9 @@ De klasse `I18N` definieert een statische methode `get` die nuttig is wanneer u 
 
 ### Internationalisatie tekenreeksen in JavaScript-code {#internationalizing-strings-in-javascript-code}
 
-Met de JavaScript API kunt u tekenreeksen lokaliseren op de client. Zoals met [ Java™ en JSP ](#internationalizing-strings-in-java-and-jsp-code) code, laat JavaScript API u toe om koorden te identificeren te lokaliseren, lokalisatiewenken te verstrekken, en variabelen in de gelokaliseerde koorden te omvatten.
+Met de JavaScript API kunt u tekenreeksen lokaliseren op de client. Zoals met [&#x200B; Java™ en JSP &#x200B;](#internationalizing-strings-in-java-and-jsp-code) code, laat JavaScript API u toe om koorden te identificeren te lokaliseren, lokalisatiewenken te verstrekken, en variabelen in de gelokaliseerde koorden te omvatten.
 
-De `granite.utils` [ omslag van de cliëntbibliotheek ](/help/sites-developing/clientlibs.md) verstrekt JavaScript API. Neem deze clientbibliotheekmap op de pagina op om de API te gebruiken. Localisatiefuncties gebruiken de naamruimte `Granite.I18n` .
+De `granite.utils` [&#x200B; omslag van de cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md) verstrekt JavaScript API. Neem deze clientbibliotheekmap op de pagina op om de API te gebruiken. Localisatiefuncties gebruiken de naamruimte `Granite.I18n` .
 
 Voordat u gelokaliseerde tekenreeksen weergeeft, stelt u de landinstelling in met behulp van de functie `Granite.I18n.setLocale` . De functie vereist de taalcode van de landinstelling als argument:
 
@@ -165,7 +165,7 @@ In het volgende voorbeeld haalt het JSP-script de eigenschap `jcr:title` op uit 
 
 #### Vertaaltips opgeven voor JCR-knooppunten {#specifying-translation-hints-for-jcr-nodes}
 
-Gelijkaardig aan [ vertaalwenken in Java™ API ](#using-translation-hints), kunt u vertaalwenken verstrekken om dubbele koorden in het woordenboek te onderscheiden. Geef de vertaalhint op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met het achtervoegsel `_commentI18n` :
+Gelijkaardig aan [&#x200B; vertaalwenken in Java™ API &#x200B;](#using-translation-hints), kunt u vertaalwenken verstrekken om dubbele koorden in het woordenboek te onderscheiden. Geef de vertaalhint op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met het achtervoegsel `_commentI18n` :
 
 `${prop}_commentI18n`
 
@@ -179,7 +179,7 @@ Test of u alle tekenreeksen in uw gebruikersinterface hebt geïnternationaliseer
 
 In de volgende afbeelding ziet u de stub-vertaling voor de AEM homepage:
 
-![ chlimage_1 ](assets/chlimage_1a.jpeg)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1a.jpeg)
 
 Om de taal voor de gebruiker te plaatsen, vorm het taalbezit van de voorkeurenknoop voor de gebruikersrekening.
 
@@ -187,4 +187,4 @@ Het voorkeurenknooppunt van een gebruiker heeft een pad als volgt:
 
 `/home/users/<letter>/<hash>/preferences`
 
-![ chlimage_1-1 ](assets/chlimage_1-1a.jpeg)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1a.jpeg)

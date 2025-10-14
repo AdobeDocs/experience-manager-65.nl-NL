@@ -144,7 +144,7 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Ga als volgt te werk om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te verwijderen.
 
-1. Schrap gebruikersgegevens van AEM bewaarplaats, indien van toepassing, zoals die in [ wordt beschreven de gebruikersgegevens van de Schrapping ](/help/forms/using/user-management-handling-user-data.md#delete-aem).
+1. Schrap gebruikersgegevens van AEM bewaarplaats, indien van toepassing, zoals die in [&#x200B; wordt beschreven de gebruikersgegevens van de Schrapping &#x200B;](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Sluit de AEM Forms-server af.
 1. Voer de volgende databaseopdrachten uit, zodat u gegevens voor gebruikersbeheer voor een hoofd-id uit databasetabellen kunt verwijderen. Vervang `<principal_id>` in de opdracht `Delete` door de hoofd-id van de gebruiker wiens gegevens u wilt verwijderen.
 

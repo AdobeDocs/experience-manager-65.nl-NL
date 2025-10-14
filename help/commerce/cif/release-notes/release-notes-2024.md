@@ -21,14 +21,14 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 | Component | Systeemvereisten |
 |:-------|:-----------------------------------------------------------------------------------------------:|
 | CIF | Minimaal: AEM 6.5.18, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
-| CIF kerncomponenten | [ Vereisten van het Systeem ](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| Projectarchetype AEM | [ Vereisten van het Systeem ](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| CIF kerncomponenten | [&#x200B; Vereisten van het Systeem &#x200B;](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| Projectarchetype AEM | [&#x200B; Vereisten van het Systeem &#x200B;](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## Releasedatum: oktober 2024
 
 | Component | Versie | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF kerncomponenten | 2.15.0. | [ GitHub ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
+| CIF kerncomponenten | 2.15.0. | [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
 
 ### Bugfixes {#bug-fixes-October}
 
@@ -39,7 +39,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 | Component | Versie | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF kerncomponenten | 2.14.2. | [ GitHub ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+| CIF kerncomponenten | 2.14.2. | [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
 
 ### Verbeteringen {#improvements-September}
 
@@ -57,7 +57,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
 
 | Component | Versie | Details |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
-| CIF kerncomponenten | 2.12.6. | [ GitHub ](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.6) |
+| CIF kerncomponenten | 2.12.6. | [&#x200B; GitHub &#x200B;](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.12.6) |
 
 ### Bugfixes {#bug-fixes-january}
 

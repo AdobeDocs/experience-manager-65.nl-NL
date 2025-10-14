@@ -22,8 +22,8 @@ ht-degree: 0%
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie. Voor gedetailleerde informatie over het gebruik van tags:
 
-* Zie het document [ Gebruikend Markeringen ](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
-* Zie het document [ Beheersende Markeringen ](/help/sites-administering/tags.md) voor het perspectief van een beheerder over het creëren van en het leiden van markeringen, en waarop inhoudmarkeringen zijn toegepast.
+* Zie het document [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud als inhoudauteur.
+* Zie het document [&#x200B; Beheersende Markeringen &#x200B;](/help/sites-administering/tags.md) voor het perspectief van een beheerder over het creëren van en het leiden van markeringen, en waarop inhoudmarkeringen zijn toegepast.
 
 Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM steunt en hoe te om het als ontwikkelaar te gebruiken.
 
@@ -31,7 +31,7 @@ Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM ste
 
 U kunt als volgt inhoud labelen en de infrastructuur voor AEM tags gebruiken:
 
-* De markering moet als knoop van type `[cq:Tag](#tags-cq-tag-node-type)` onder de [ taxonomy wortelknoop bestaan.](#taxonomy-root-node)
+* De markering moet als knoop van type `[cq:Tag](#tags-cq-tag-node-type)` onder de [&#x200B; taxonomy wortelknoop bestaan.](#taxonomy-root-node)
 
 * In het knooppunt `NodeType` met gecodeerde inhoud moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) -mix zijn opgenomen.
 * [`TagID`](#tagid) wordt toegevoegd aan de eigenschap [`cq:tags`](#tagged-content-cq-tags-property) van het inhoudsknooppunt en wordt omgezet in een knooppunt van het type ` [cq:Tag](#tags-cq-tag-node-type)` .
@@ -51,24 +51,24 @@ Met het coderingsframework kunt u auteurs en sitebezoekers ook beperken tot het 
 ### Tagkenmerken {#tag-characteristics}
 
 * Het knooppunttype is `cq:Tag` n
-* De naam van de knoop is een component van [ TagID ](#tagid).
-* [ TagID ](#tagid) omvat altijd a [ namespace.](#tag-namespace)
+* De naam van de knoop is een component van [&#x200B; TagID &#x200B;](#tagid).
+* [&#x200B; TagID &#x200B;](#tagid) omvat altijd a [&#x200B; namespace.](#tag-namespace)
 * De eigenschap `jcr:title` (de titel die in de gebruikersinterface moet worden weergegeven) is optioneel.
 * De eigenschap `jcr:description` is optioneel.
-* Wanneer het bevatten van kindknopen, wordt de markering bedoeld als a [ containermarkering.](#container-tags)
-* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [ taxonomie wortelknoop.](#taxonomy-root-node)
+* Wanneer het bevatten van kindknopen, wordt de markering bedoeld als a [&#x200B; containermarkering.](#container-tags)
+* De markering wordt opgeslagen in de bewaarplaats onder een basisweg genoemd de [&#x200B; taxonomie wortelknoop.](#taxonomy-root-node)
 
-Omdat de markeringen eenvoudig knopen JCR zijn, moeten de knoopnamen zich aan de [ JCR noemende overeenkomst houden.](naming-conventions.md)
+Omdat de markeringen eenvoudig knopen JCR zijn, moeten de knoopnamen zich aan de [&#x200B; JCR noemende overeenkomst houden.](naming-conventions.md)
 
 ### TagID {#tagid}
 
 Een TagID identificeert een pad dat wordt omgezet naar een tagknooppunt in de opslagplaats.
 
-Typisch, is TagID een steno TagID die met namespace begint of het kan een absolute TagID zijn die van de [ taxonomy wortelknoop begint.](#taxonomy-root-node)
+Typisch, is TagID een steno TagID die met namespace begint of het kan een absolute TagID zijn die van de [&#x200B; taxonomy wortelknoop begint.](#taxonomy-root-node)
 
 Wanneer inhoud wordt gelabeld en nog niet bestaat, wordt de eigenschap `[cq:tags](#tagged-content-cq-tags-property)` toegevoegd aan het inhoudsknooppunt en wordt de tagID toegevoegd aan de arraywaarde van de eigenschap `String` .
 
-TagID bestaat uit a [ namespace ](#tag-namespace) die door lokale TagID wordt gevolgd. [ de markeringen van de Container ](#container-tags) hebben subtags die een hiërarchische orde in de taxonomie vertegenwoordigen. Subtags kunnen worden gebruikt om naar labels te verwijzen op dezelfde manier als elke lokale TagID. Inhoud bijvoorbeeld labelen met `fruit` is toegestaan, zelfs als het een containertag met subtags betreft, zoals `fruit/apple` en `fruit/banana` .
+TagID bestaat uit a [&#x200B; namespace &#x200B;](#tag-namespace) die door lokale TagID wordt gevolgd. [&#x200B; de markeringen van de Container &#x200B;](#container-tags) hebben subtags die een hiërarchische orde in de taxonomie vertegenwoordigen. Subtags kunnen worden gebruikt om naar labels te verwijzen op dezelfde manier als elke lokale TagID. Inhoud bijvoorbeeld labelen met `fruit` is toegestaan, zelfs als het een containertag met subtags betreft, zoals `fruit/apple` en `fruit/banana` .
 
 ### Taxonomy Root Node {#taxonomy-root-node}
 
@@ -80,7 +80,7 @@ In AEM is het basispad `/content/cq:tags` en het basisknooppunt is van het type 
 
 Met naamruimten kunt u items groeperen. Het meest gangbare geval bij gebruik is een naamruimte per site (bijvoorbeeld een openbare, interne en poortindeling) of per grotere toepassing (bijvoorbeeld WCM, Assets, Communities). Maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (dat wil zeggen tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
-De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [ taxonomy wortelknoop ](#taxonomy-root-node) is. Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
+De namespace van de markering is het eerste niveau in taxonomy subtree, die de knoop onmiddellijk onder de [&#x200B; taxonomy wortelknoop &#x200B;](#taxonomy-root-node) is. Een naamruimte is een knooppunt van het type `cq:Tag` waarvan het bovenliggende element geen knooppunttype `cq:Tag` is.
 
 Alle tags hebben een naamruimte. Wanneer geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk TagID `default` met de titel `Standard Tags` , dat wil zeggen `/content/cq:tags/default` .
 
@@ -114,12 +114,12 @@ Wanneer de tag de optionele titeltekenreeks ( `jcr:title` ) bevat, is het mogeli
 
 Raadpleeg de volgende documenten voor meer informatie:
 
-* [ Markeringen in Verschillende Talen ](/help/sites-developing/building.md#tags-in-different-languages), die gebruik van APIs beschrijft
-* [ het Leiden Markeringen in Verschillende Talen ](/help/sites-administering/tags.md#managing-tags-in-different-languages), die gebruik van de het etiketteren console beschrijft
+* [&#x200B; Markeringen in Verschillende Talen &#x200B;](/help/sites-developing/building.md#tags-in-different-languages), die gebruik van APIs beschrijft
+* [&#x200B; het Leiden Markeringen in Verschillende Talen &#x200B;](/help/sites-administering/tags.md#managing-tags-in-different-languages), die gebruik van de het etiketteren console beschrijft
 
 ### Toegangsbeheer {#access-control}
 
-De markeringen bestaan als knopen in de bewaarplaats onder de [ taxonomie wortelknoop ](#taxonomy-root-node). Het toestaan of ontkennen van auteurs en plaatsbezoekers om markeringen in een bepaalde namespace tot stand te brengen kan worden bereikt door aangewezen ACLs in de bewaarplaats te plaatsen.
+De markeringen bestaan als knopen in de bewaarplaats onder de [&#x200B; taxonomie wortelknoop &#x200B;](#taxonomy-root-node). Het toestaan of ontkennen van auteurs en plaatsbezoekers om markeringen in een bepaalde namespace tot stand te brengen kan worden bereikt door aangewezen ACLs in de bewaarplaats te plaatsen.
 
 Door het weigeren van leesmachtigingen voor bepaalde tags of naamruimten, wordt ook de mogelijkheid ingesteld om codes toe te passen op specifieke inhoud.
 
@@ -131,7 +131,7 @@ Een gebruikelijke praktijk omvat:
 
 ## Tagable Content : cq:Tagable Mixin {#taggable-content-cq-taggable-mixin}
 
-Voor toepassingsontwikkelaars om het etiketteren aan een inhoudstype vast te maken, moet de registratie van de knoop ([ CND ](https://jackrabbit.apache.org/jcr/node-type-notation.html)) `cq:Taggable` mengen of `cq:OwnerTaggable` mengen omvatten.
+Voor toepassingsontwikkelaars om het etiketteren aan een inhoudstype vast te maken, moet de registratie van de knoop ([&#x200B; CND &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html)) `cq:Taggable` mengen of `cq:OwnerTaggable` mengen omvatten.
 
 De `cq:OwnerTaggable` -mix, die overerft van `cq:Taggable` , geeft aan dat de inhoud kan worden geclassificeerd door de eigenaar/auteur. In AEM is het alleen een kenmerk van het knooppunt `cq:PageContent` . Het coderingsframework vereist de `cq:OwnerTaggable` -mix niet.
 
@@ -145,7 +145,7 @@ De `cq:OwnerTaggable` -mix, die overerft van `cq:Taggable` , geeft aan dat de in
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
-In de gegevensopslagruimte bestaan definities van knooppunttypen als CND-bestanden. De aantekening CND wordt bepaald als deel van de [ documentatie van het Jasje ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+In de gegevensopslagruimte bestaan definities van knooppunttypen als CND-bestanden. De aantekening CND wordt bepaald als deel van de [&#x200B; documentatie van het Jasje &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 
@@ -174,7 +174,7 @@ De eigenschap `cq:tags` is een `String` -array die wordt gebruikt om een of meer
 
 ## Labels verplaatsen en samenvoegen {#moving-and-merging-tags}
 
-Het volgende is een beschrijving van de gevolgen in de bewaarplaats wanneer het bewegen van of het samenvoegen van markeringen gebruikend de [ etiketterende console ](/help/sites-administering/tags.md):
+Het volgende is een beschrijving van de gevolgen in de bewaarplaats wanneer het bewegen van of het samenvoegen van markeringen gebruikend de [&#x200B; etiketterende console &#x200B;](/help/sites-administering/tags.md):
 
 * Wanneer een tag A onder `/content/cq:tags` wordt verplaatst of samengevoegd met tag B:
 
@@ -225,4 +225,4 @@ Het volgende is een beschrijving van de gevolgen in de bewaarplaats wanneer het 
 
 Sinds Adobe Experience Manager 6.4 worden -tags opgeslagen onder `/content/cq:tags` , terwijl eerdere versies -tags onder `/etc/tags` hebben opgeslagen.
 
-Wanneer u een upgrade uitvoert van een AEM van een eerdere versie dan versie 6.4, moeten de tags worden gemigreerd naar `/content/cq:tags` . Zie [ Gemeenschappelijke Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) voor meer informatie.
+Wanneer u een upgrade uitvoert van een AEM van een eerdere versie dan versie 6.4, moeten de tags worden gemigreerd naar `/content/cq:tags` . Zie [&#x200B; Gemeenschappelijke Herstructurering van de Bewaarplaats in AEM 6.5 &#x200B;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) voor meer informatie.

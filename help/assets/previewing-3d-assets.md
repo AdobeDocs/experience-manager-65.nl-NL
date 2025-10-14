@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
@@ -61,19 +61,19 @@ Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, l
 **aan voorproef 3D activa in Experience Manager:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
-Zie [ Gesteunde formaten voor 3D voorproef ](#supported-3d-previewing-assets) en [ uploadt Assets ](/help/assets/manage-assets.md#uploading-assets).
+Zie [&#x200B; Gesteunde formaten voor 3D voorproef &#x200B;](#supported-3d-previewing-assets) en [&#x200B; uploadt Assets &#x200B;](/help/assets/manage-assets.md#uploading-assets).
 1. Selecteer in Experience Manager op de pagina **[!UICONTROL Navigation]** de optie **[!UICONTROL Assets]** > **[!UICONTROL Files]** .
 
-   ![ pagina van de Navigatie ](/help/assets/assets-dm/navigation-assets.png)
+   ![&#x200B; pagina van de Navigatie &#x200B;](/help/assets/assets-dm/navigation-assets.png)
 
 1. Selecteer in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave de optie **[!UICONTROL Card View]** en navigeer naar een 3D-element waarvan u een voorvertoning wilt weergeven.
 
-   ![ 3D kaart uitgezocht ](/help/assets/assets-dm/3d-card-select.png)
+   ![&#x200B; 3D kaart uitgezocht &#x200B;](/help/assets/assets-dm/3d-card-select.png)
    _in de Mening van de Kaart, selecteer de kaart van 3D activa u voorproef wilt._
 
 1. Selecteer de kaart van het 3D-element.
 
-   ![ Interactieve 3D voorproef ](/help/assets/assets-dm/3d-preview.png)
+   ![&#x200B; Interactieve 3D voorproef &#x200B;](/help/assets/assets-dm/3d-preview.png)
    _Interactieve voorproef van een 3D activa in de pagina van de de meningsmening van activadetails._
 1. Voer een van de volgende handelingen uit op de pagina met de elementdetails voor het 3D-element:
 

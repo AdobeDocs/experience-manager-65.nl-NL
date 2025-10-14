@@ -23,7 +23,7 @@ Modelbeheer omvat het maken en beheren van modellen voor het koppelen aan uitein
 
 Het modelbeheer impliceert de verwezenlijking van **modellen**, **entiteiten**, en **ruimten**. Het volgende diagram illustreert de relatie tussen de AEM Inhoud en de modellen.
 
-![ chlimage_1-81 ](assets/chlimage_1-81.png)
+![&#x200B; chlimage_1-81 &#x200B;](assets/chlimage_1-81.png)
 
 ## Het inhoudsmodel {#the-content-model}
 
@@ -37,7 +37,7 @@ Gebruikers kunnen hun eigen modellen maken. Hierdoor kunnen nieuwe inhoudstypen 
 
 In het volgende diagram ziet u het inhoudsmodel voor AEM Mobile Apps en hoe entiteiten, mappen en spaties worden toegewezen aan een app.
 
-![ chlimage_1-82 ](assets/chlimage_1-82.png)
+![&#x200B; chlimage_1-82 &#x200B;](assets/chlimage_1-82.png)
 
 ### De modellen {#the-models}
 

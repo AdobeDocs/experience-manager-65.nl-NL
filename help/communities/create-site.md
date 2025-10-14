@@ -32,19 +32,19 @@ Ga als volgt te werk om een communitysite te maken:
 
 * Selecteer de knop `Create` .
 
-![ createcommunitysite ](assets/createcommunitysite.png)
+![&#x200B; createcommunitysite &#x200B;](assets/createcommunitysite.png)
 
 ### Stap 1: Sitjabloon {#step-site-template}
 
-![ malplaatje om plaats ](assets/create-site.png) te creëren
+![&#x200B; malplaatje om plaats &#x200B;](assets/create-site.png) te creëren
 
-Voor de [ stap van het Malplaatje van de Plaats ](/help/communities/sites-console.md#step2013asitetemplate), ga een titel, een beschrijving, de naam voor URL in, en selecteer een malplaatje van de communautaire plaats, bijvoorbeeld:
+Voor de [&#x200B; stap van het Malplaatje van de Plaats &#x200B;](/help/communities/sites-console.md#step2013asitetemplate), ga een titel, een beschrijving, de naam voor URL in, en selecteer een malplaatje van de communautaire plaats, bijvoorbeeld:
 
 * **Titel van de Communautaire Plaats**: `Getting Started Tutorial`
 * **Beschrijving van de Communautaire Plaats**: `A site for engaging with the community.`
 * **Hoofdmap van de Communautaire Plaats**: (verlaten leeg voor standaardwortel `/content/sites`)
 * **de Configuraties van de Wolk**: (verlaten leeg als geen wolkenconfiguraties worden gespecificeerd) verstrekken weg aan de gespecificeerde wolkenconfiguraties.
-* **Communautaire Taal van de Basis van de Plaats**: (verlaten onaangeroerd voor enige taal: Engels) gebruik de drop-down lijst om één *of meer* basistalen van beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Één communautaire plaats wordt gecreeerd voor elke toegevoegde taal, en bestaat binnen de zelfde plaatsomslag na de beste praktijken die in [ worden beschreven Vertaalend Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina die wordt genoemd door de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+* **Communautaire Taal van de Basis van de Plaats**: (verlaten onaangeroerd voor enige taal: Engels) gebruik de drop-down lijst om één *of meer* basistalen van beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Één communautaire plaats wordt gecreeerd voor elke toegevoegde taal, en bestaat binnen de zelfde plaatsomslag na de beste praktijken die in [&#x200B; worden beschreven Vertaalend Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina die wordt genoemd door de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
 * **Communautaire Naam van de Plaats**: verbind
 
@@ -69,9 +69,9 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 (Optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en navigatiekoppelingen. De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
-![ gemeenschap-plaats-branding ](assets/community-site-branding.png)
+![&#x200B; gemeenschap-plaats-branding &#x200B;](assets/community-site-branding.png)
 
-![ upload-image-plaats ](assets/upload-image-site.png)
+![&#x200B; upload-image-plaats &#x200B;](assets/upload-image-site.png)
 
 Selecteer **daarna**.
 
@@ -81,7 +81,7 @@ Voor de stap van Montages, alvorens `Next` te selecteren, zijn er zeven secties 
 
 #### Gebruikersbeheer {#user-management}
 
-Controle alle controledozen voor [ Gebruikersbeheer ](/help/communities/sites-console.md#user-management)
+Controle alle controledozen voor [&#x200B; Gebruikersbeheer &#x200B;](/help/communities/sites-console.md#user-management)
 
 * Sitebezoekers toestaan zich te registreren
 * Site-bezoekers toestaan de site weer te geven zonder zich aan te melden
@@ -91,24 +91,24 @@ Controle alle controledozen voor [ Gebruikersbeheer ](/help/communities/sites-co
 
 >[!NOTE]
 >
->Voor een productieomgeving is het nodig om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [ Sociale Login met Facebook en Twitter ](/help/communities/social-login.md).
+>Voor een productieomgeving is het nodig om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [&#x200B; Sociale Login met Facebook en Twitter &#x200B;](/help/communities/social-login.md).
 
-![ montages van de communautaire plaats ](assets/site-settings.png)
+![&#x200B; montages van de communautaire plaats &#x200B;](assets/site-settings.png)
 
 #### TAGS {#tagging}
 
-De markeringen die op communautaire inhoud worden toegepast worden gecontroleerd door AEM te selecteren namespaces die eerder door de [ Tagende Console ](/help/sites-administering/tags.md#tagging-console) worden bepaald (zoals [ Tutorial namespace ](/help/communities/setup.md#create-tutorial-tags)).
+De markeringen die op communautaire inhoud worden toegepast worden gecontroleerd door AEM te selecteren namespaces die eerder door de [&#x200B; Tagende Console &#x200B;](/help/sites-administering/tags.md#tagging-console) worden bepaald (zoals [&#x200B; Tutorial namespace &#x200B;](/help/communities/setup.md#create-tutorial-tags)).
 
 Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
 
 * Tekst `tut`
 * Selecteren `Tutorial`
 
-![ etiketterend ](assets/tagging.png)
+![&#x200B; etiketterend &#x200B;](assets/tagging.png)
 
 #### ROLES {#roles}
 
-[ Communautaire lidrollen ](/help/communities/users.md) worden toegewezen door de montages in de sectie van Rollen.
+[&#x200B; Communautaire lidrollen &#x200B;](/help/communities/users.md) worden toegewezen door de montages in de sectie van Rollen.
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
@@ -119,27 +119,27 @@ Bijvoorbeeld:
 
 >[!NOTE]
 >
->[ de dienst van de Tunnel ](https://helpx.adobe.com/nl/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) staat selectie van leden en groepen toe die slechts in publiceren milieu bestaan.
+>[&#x200B; de dienst van de Tunnel &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) staat selectie van leden en groepen toe die slechts in publiceren milieu bestaan.
 
-![ gebruikersrollen in nieuwe plaats ](assets/site-admin-1.png)
+![&#x200B; gebruikersrollen in nieuwe plaats &#x200B;](assets/site-admin-1.png)
 
 #### MODERING {#moderation}
 
-Accepteer de standaard globale montages voor [ het modereren ](/help/communities/sites-console.md#moderation) gebruiker-geproduceerde inhoud (UGC).
+Accepteer de standaard globale montages voor [&#x200B; het modereren &#x200B;](/help/communities/sites-console.md#moderation) gebruiker-geproduceerde inhoud (UGC).
 
-![ matiging ](assets/moderation1.png)
+![&#x200B; matiging &#x200B;](assets/moderation1.png)
 
 #### ANALYTICA {#analytics}
 
 Als Adobe Analytics een licentie heeft en er een Analytics Cloud-service en -framework zijn geconfigureerd, is het mogelijk om Analytics in te schakelen en het framework te selecteren.
 
-Zie [ Configuratie Analytics voor de Eigenschappen van Gemeenschappen ](/help/communities/analytics.md).
+Zie [&#x200B; Configuratie Analytics voor de Eigenschappen van Gemeenschappen &#x200B;](/help/communities/analytics.md).
 
-![ analytics ](assets/analytics.png)
+![&#x200B; analytics &#x200B;](assets/analytics.png)
 
 #### VERTALING {#translation}
 
-De [ Vertaalmontages ](/help/communities/sites-console.md#translation) specificeren de basistaal voor de plaats en of UGC kan worden vertaald en in welke taal, als zo.
+De [&#x200B; Vertaalmontages &#x200B;](/help/communities/sites-console.md#translation) specificeren de basistaal voor de plaats en of UGC kan worden vertaald en in welke taal, als zo.
 
 * Controle **staat de Vertaling van de Machine toe**
 * Laat standaardtalen geselecteerd blijven voor vertaling door de standaardvertaalservice voor machines
@@ -148,17 +148,17 @@ De [ Vertaalmontages ](/help/communities/sites-console.md#translation) specifice
 * Selecteer **volledige pagina vertalen**
 * De optie Standaardpersistentie behouden
 
-![ vertaling-montages ](assets/translation-settings.png)
+![&#x200B; vertaling-montages &#x200B;](assets/translation-settings.png)
 
 ### Stap 4: Create Communities Site {#step-create-communities-site}
 
 Selecteer **creëren.**
 
-![ creeer-plaats ](assets/create-site2.png)
+![&#x200B; creeer-plaats &#x200B;](assets/create-site2.png)
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities - Sites.
 
-![ communitiessitesconsole ](assets/communitiessitesconsole.png)
+![&#x200B; communitiessitesconsole &#x200B;](assets/communitiessitesconsole.png)
 
 ## Publish the Community Site {#publish-the-community-site}
 
@@ -166,11 +166,11 @@ De gecreeerde plaats zou van de Gemeenschappen - de console van Plaatsen moeten 
 
 Nadat u de map van de communitysite hebt geselecteerd om deze te openen, houdt u de muisaanwijzer boven het sitepictogram, zodat er vier actiepictogrammen worden weergegeven:
 
-![ plaats actionicons-1 ](assets/siteactionicons-1.png)
+![&#x200B; plaats actionicons-1 &#x200B;](assets/siteactionicons-1.png)
 
 Als u het vierde ovalenpictogram selecteert (Meer handelingen), worden de opties Site exporteren en Site verwijderen weergegeven.
 
-![ plaatsen nieuw-1 ](assets/siteactionsnew-1.png)
+![&#x200B; plaatsen nieuw-1 &#x200B;](assets/siteactionsnew-1.png)
 
 Van links naar rechts zijn ze:
 
@@ -188,13 +188,13 @@ Van links naar rechts zijn ze:
 
 * **de Plaats van de Uitvoer**
 
-  Het selecteren van het uitvoerpictogram leidt tot een pakket van de communautaire plaats die zowel in [ Manager van het Pakket ](/help/sites-administering/package-manager.md) wordt opgeslagen en gedownload. UGC is niet opgenomen in het sitepakket.
+  Het selecteren van het uitvoerpictogram leidt tot een pakket van de communautaire plaats die zowel in [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md) wordt opgeslagen en gedownload. UGC is niet opgenomen in het sitepakket.
 
 * **plaats van de Schrapping**
 
   Als u het verwijderpictogram selecteert, wordt de communitysite verwijderd uit **[!UICONTROL Communities > Sites console]** . Deze actie verwijdert alle punten verbonden aan de plaats, zoals UGC, gebruikersgroepen, activa, en gegevensbestandverslagen.
 
-![ plaatsacties ](assets/siteactions.png)
+![&#x200B; plaatsacties &#x200B;](assets/siteactions.png)
 
 >[!NOTE]
 >
@@ -215,15 +215,15 @@ Van links naar rechts zijn ze:
 
 Nadat u ervoor hebt gezorgd dat de publicatieserver actief is, selecteert u het wereldpictogram om de communitysite te publiceren.
 
-![ publiceren-plaats ](assets/publish-site.png)
+![&#x200B; publiceren-plaats &#x200B;](assets/publish-site.png)
 
 Wanneer de communitysite met succes is gepubliceerd, wordt kort het bericht &#39;Site gepubliceerd&#39; weergegeven.
 
 ### Nieuwe gebruikersgroepen in de community {#new-community-user-groups}
 
-Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Voor details, bezoek [ Gebruikersgroepen voor Communautaire Plaatsen ](/help/communities/users.md#usergroupsforcommunitysites).
+Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Voor details, bezoek [&#x200B; Gebruikersgroepen voor Communautaire Plaatsen &#x200B;](/help/communities/users.md#usergroupsforcommunitysites).
 
-Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;in Stap 1, kunnen de vier nieuwe gebruikersgroepen van de [ console van Groepen ](/help/communities/members.md) (globale navigatie: Gemeenschappen, Groepen) worden gezien:
+Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;in Stap 1, kunnen de vier nieuwe gebruikersgroepen van de [&#x200B; console van Groepen &#x200B;](/help/communities/members.md) (globale navigatie: Gemeenschappen, Groepen) worden gezien:
 
 * Community-managers voor community inschakelen
 * Gemeenschapsgroepsbeheerders
@@ -232,21 +232,21 @@ Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;i
 * Geprivilegieerde leden van Community Engineering
 * Community Engineering Site-inhoudsbeheer
 
-[ Aaron McDonald ](/help/communities/tutorials.md#demo-users) is een lid van
+[&#x200B; Aaron McDonald &#x200B;](/help/communities/tutorials.md#demo-users) is een lid van
 
 * Community-managers voor community inschakelen
 * Maatschappelijke experts
 * Community Engage-leden (indirect als lid van de groep Moderatoren)
 
-![ gebruiker-groep ](assets/user-group.png)
+![&#x200B; gebruiker-groep &#x200B;](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![ verbind ](assets/engage.png)
+![&#x200B; verbind &#x200B;](assets/engage.png)
 
 ## Configureren voor verificatiefout {#configure-for-authentication-error}
 
-Zodra een plaats is gevormd en geduwd om te publiceren, [ vormt login afbeelding ](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op publiceer instantie. Het voordeel is dat wanneer de login geloofsbrieven niet correct zijn ingegaan, de authentificatiefout de login van de communautaire plaats pagina met een foutenmelding opnieuw toont.
+Zodra een plaats is gevormd en geduwd om te publiceren, [&#x200B; vormt login afbeelding &#x200B;](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op publiceer instantie. Het voordeel is dat wanneer de login geloofsbrieven niet correct zijn ingegaan, de authentificatiefout de login van de communautaire plaats pagina met een foutenmelding opnieuw toont.
 
 Een `Login Page Mapping` toevoegen als
 
@@ -258,12 +258,12 @@ Een `Login Page Mapping` toevoegen als
 
 Als u met de publicatiesite werkt voor demonstratiedoeleinden, is het handig om de standaardstartpagina te wijzigen in de nieuwe site.
 
-Om dit te doen vereist het gebruiken van [ CRXDE ](https://localhost:4503/crx/de) Lite om de [ middel-afbeelding ](/help/sites-deploying/resource-mapping.md) lijst op uit te geven publiceren.
+Om dit te doen vereist het gebruiken van [&#x200B; CRXDE &#x200B;](https://localhost:4503/crx/de) Lite om de [&#x200B; middel-afbeelding &#x200B;](/help/sites-deploying/resource-mapping.md) lijst op uit te geven publiceren.
 
 Aan de slag:
 
 1. Meld u aan bij een publicatieexemplaar met beheerdersrechten.
-1. Blader naar [ https://localhost:4503/crx/de ](https://localhost:4503/crx/de).
+1. Blader naar [&#x200B; https://localhost:4503/crx/de &#x200B;](https://localhost:4503/crx/de).
 1. Vouw in de projectbrowser uit `/etc/map.`
 1. Selecteer het knooppunt `http` :
 
@@ -272,7 +272,7 @@ Aan de slag:
       * **Naam** localhost.4503
 (gebruik *niet* &#39;:&#39;)
 
-      * **Type** [ helling:Toewijzing ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **Type** [&#x200B; helling:Toewijzing &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Met nieuw gemaakt `localhost.4503` -knooppunt geselecteerd:
 
@@ -299,13 +299,13 @@ Aan de slag:
 >
 >Om onbruikbaar te maken, presteer eenvoudig de `sling:match` bezitswaarde met &quot;x&quot; - `xlocalhost.4503/$` - en **sparen allen**.
 
-![ facultatief-stappen ](assets/optional-steps.png)
+![&#x200B; facultatief-stappen &#x200B;](assets/optional-steps.png)
 
 #### Problemen oplossen: fout bij opslaan kaart {#troubleshooting-error-saving-map}
 
 Als u geen wijzigingen kunt opslaan, moet u ervoor zorgen dat de knooppuntnaam `localhost.4503` is, met een &#39;punt&#39;-scheidingsteken en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat `localhost` geen geldig naamruimtevoorvoegsel is.
 
-![ fout-bericht ](assets/error-message.png)
+![&#x200B; fout-bericht &#x200B;](assets/error-message.png)
 
 #### Problemen oplossen: kan niet worden omgeleid {#troubleshooting-fail-to-redirect}
 
@@ -313,12 +313,12 @@ Het &quot;**$**&quot;aan het eind van het regelmatige uitdrukking `sling:match` 
 
 ### De site wijzigen {#modify-the-site}
 
-Nadat de plaats aanvankelijk is gecreeerd, kunnen de auteurs het [ Open pictogram van de Plaats ](/help/communities/sites-console.md#authoring-site-content) gebruiken om standaard AEM auteursactiviteiten uit te voeren.
+Nadat de plaats aanvankelijk is gecreeerd, kunnen de auteurs het [&#x200B; Open pictogram van de Plaats &#x200B;](/help/communities/sites-console.md#authoring-site-content) gebruiken om standaard AEM auteursactiviteiten uit te voeren.
 
-Bovendien kunnen de beheerders [ gebruiken uitgeven het pictogram van de Plaats ](/help/communities/sites-console.md#modifying-site-properties) om eigenschappen van de plaats, zoals de titel te wijzigen.
+Bovendien kunnen de beheerders [&#x200B; gebruiken uitgeven het pictogram van de Plaats &#x200B;](/help/communities/sites-console.md#modifying-site-properties) om eigenschappen van de plaats, zoals de titel te wijzigen.
 
 Na om het even welke wijziging, herinner aan **sparen** en re- **Publish** de plaats.
 
 >[!NOTE]
 >
->Als niet vertrouwd met AEM, bekijk de documentatie over [ basisbehandeling ](/help/sites-authoring/basic-handling.md) en a [ snelle gids aan auteurspagina&#39;s ](/help/sites-authoring/qg-page-authoring.md).
+>Als niet vertrouwd met AEM, bekijk de documentatie over [&#x200B; basisbehandeling &#x200B;](/help/sites-authoring/basic-handling.md) en a [&#x200B; snelle gids aan auteurspagina&#39;s &#x200B;](/help/sites-authoring/qg-page-authoring.md).

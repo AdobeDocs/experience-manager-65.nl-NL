@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->[ de fragmentmodellen van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) worden geadviseerd voor het creëren van alle nieuwe inhoudsfragmenten.
+>[&#x200B; de fragmentmodellen van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md) worden geadviseerd voor het creëren van alle nieuwe inhoudsfragmenten.
 >
 >Inhoudsfragmentmodellen worden voor alle voorbeelden in WKND gebruikt.
 

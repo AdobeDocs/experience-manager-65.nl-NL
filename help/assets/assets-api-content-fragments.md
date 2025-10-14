@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -27,20 +27,20 @@ Leer over steun voor de Fragments van de Inhoud in Assets HTTP API, een belangri
 
 >[!NOTE]
 >
->[ HTTP API van Assets ](/help/assets/mac-api-assets.md) omvat:
+>[&#x200B; HTTP API van Assets &#x200B;](/help/assets/mac-api-assets.md) omvat:
 >
 >* ASSETS REST API
 >* inclusief ondersteuning voor inhoudsfragmenten
 >
->De huidige implementatie van Assets HTTP API is gebaseerd op de [ REST ](https://en.wikipedia.org/wiki/Representational_state_transfer) architecturale stijl.
+>De huidige implementatie van Assets HTTP API is gebaseerd op de [&#x200B; REST &#x200B;](https://en.wikipedia.org/wiki/Representational_state_transfer) architecturale stijl.
 
-[ Assets REST API ](/help/assets/mac-api-assets.md) staat ontwikkelaars voor Adobe Experience Manager toe om tot inhoud (die in AEM wordt opgeslagen) direct over HTTP API, via CRUD verrichtingen (creeer, Lees, Update, Schrapping) toegang te hebben.
+[&#x200B; Assets REST API &#x200B;](/help/assets/mac-api-assets.md) staat ontwikkelaars voor Adobe Experience Manager toe om tot inhoud (die in AEM wordt opgeslagen) direct over HTTP API, via CRUD verrichtingen (creeer, Lees, Update, Schrapping) toegang te hebben.
 
 Met de API kunt u Adobe Experience Manager gebruiken als een CMS zonder kop (Content Management System) door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
 Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via de HTTP-API wordt aangeboden, vaak in de JSON-indeling.
 
-Terwijl [ AEM de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
+Terwijl [&#x200B; AEM de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke AEM malplaatjes gebaseerd zijn. Niet elke SPA ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
 
 Dit is wanneer de Assets REST API kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
@@ -52,9 +52,9 @@ Met de Assets REST API kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elem
 
 De Assets REST API:
 
-* volgt het [ HATEOAS beginsel ](https://en.wikipedia.org/wiki/HATEOAS)
+* volgt het [&#x200B; HATEOAS beginsel &#x200B;](https://en.wikipedia.org/wiki/HATEOAS)
 
-* voert het [ formaat SIREN ](https://github.com/kevinswiber/siren) uit
+* voert het [&#x200B; formaat SIREN &#x200B;](https://github.com/kevinswiber/siren) uit
 
 ## Vereisten {#prerequisites}
 
@@ -62,7 +62,7 @@ De Assets REST API is beschikbaar voor elke installatie van een recente AEM.
 
 ## Belangrijke concepten {#key-concepts}
 
-Assets REST API biedt [ REST ](https://en.wikipedia.org/wiki/Representational_state_transfer) - stijltoegang tot activa aan die binnen een AEM instantie worden opgeslagen.
+Assets REST API biedt [&#x200B; REST &#x200B;](https://en.wikipedia.org/wiki/Representational_state_transfer) - stijltoegang tot activa aan die binnen een AEM instantie worden opgeslagen.
 
 De methode gebruikt het eindpunt `/api/assets` en vereist het pad van het element om het te openen (zonder de regelafstand `/content/dam` ).
 
@@ -90,7 +90,7 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 >
 >De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; bijvoorbeeld, bepaal dat een omslag of een activa door a **POST** verzoek zou moeten worden gecreeerd.
 
-Het nauwkeurige formaat van gesteunde verzoeken wordt bepaald in de [ API documentatie van de Verwijzing ](/help/assets/assets-api-content-fragments.md#api-reference).
+Het nauwkeurige formaat van gesteunde verzoeken wordt bepaald in de [&#x200B; API documentatie van de Verwijzing &#x200B;](/help/assets/assets-api-content-fragments.md#api-reference).
 
 ### Transactioneel gedrag {#transactional-behavior}
 
@@ -153,20 +153,20 @@ Als de Assets REST API wordt gebruikt binnen een omgeving zonder specifieke veri
 >
 >Zie voor meer informatie:
 >
->* [ verklaarde CORS/AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL)
->* [ Video - het Ontwikkelen voor CORS met AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL)
+>* [&#x200B; verklaarde CORS/AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL)
+>* [&#x200B; Video - het Ontwikkelen voor CORS met AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL)
 >
 
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
 
 ## Beschikbare functies {#available-features}
 
-De Fragmenten van de inhoud zijn een specifiek type van Activa, zie [ Werkend met de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md).
+De Fragmenten van de inhoud zijn een specifiek type van Activa, zie [&#x200B; Werkend met de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md).
 
 Zie voor meer informatie over functies die beschikbaar zijn via de API:
 
-* [ Assets REST API ](/help/assets/mac-api-assets.md)
-* [ Types van Entiteit ](/help/assets/assets-api-content-fragments.md#entity-types), waar de eigenschappen specifiek voor elk gesteund type (zoals relevant voor de Fragmenten van de Inhoud) worden verklaard
+* [&#x200B; Assets REST API &#x200B;](/help/assets/mac-api-assets.md)
+* [&#x200B; Types van Entiteit &#x200B;](/help/assets/assets-api-content-fragments.md#entity-types), waar de eigenschappen specifiek voor elk gesteund type (zoals relevant voor de Fragmenten van de Inhoud) worden verklaard
 
 ### Paginering {#paging}
 
@@ -221,7 +221,7 @@ Assets kan meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven als o
 
 ### Inhoudsfragmenten {#content-fragments}
 
-A [ inhoudsfragment ](/help/assets/content-fragments/content-fragments.md) is een speciaal type van activa. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
+A [&#x200B; inhoudsfragment &#x200B;](/help/assets/content-fragments/content-fragments.md) is een speciaal type van activa. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
 
 Aangezien er verscheidene verschillen aan *standaard* activa (zoals beelden of audio) zijn, zijn sommige extra regels van toepassing op de behandeling van hen.
 
@@ -248,7 +248,7 @@ Gekoppelde inhoud wordt momenteel niet weergegeven.
 
 Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
-* Het wordt sterk geadviseerd dat de verwezenlijking aan een auteursinstantie ([ verbindend is en momenteel is er geen middel om een fragment te herhalen om te publiceren gebruikend dit API ](/help/assets/assets-api-content-fragments.md#limitations)).
+* Het wordt sterk geadviseerd dat de verwezenlijking aan een auteursinstantie ([&#x200B; verbindend is en momenteel is er geen middel om een fragment te herhalen om te publiceren gebruikend dit API &#x200B;](/help/assets/assets-api-content-fragments.md#limitations)).
 * De levering is mogelijk van beide, aangezien AEM gevraagde inhoud in formaat slechts JSON dient.
 
    * Opslag en levering vanuit een AEM auteur-instantie zouden voldoende moeten zijn voor toepassingen achter de firewall, in de mediabibliotheek.
@@ -261,7 +261,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!NOTE]
 >
->Voor verdere details, zie de [ API Verwijzing ](/help/assets/assets-api-content-fragments.md#api-reference). In het bijzonder, [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Voor verdere details, zie de [&#x200B; API Verwijzing &#x200B;](/help/assets/assets-api-content-fragments.md#api-reference). In het bijzonder, [&#x200B; Adobe Experience Manager Assets API - de Fragmenten van de Inhoud &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 
@@ -385,7 +385,7 @@ Geretourneerd wanneer:
 
 Zie hier voor gedetailleerde API-referenties:
 
-* [ Adobe Experience Manager Assets API - de Fragmenten van de Inhoud ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [&#x200B; Adobe Experience Manager Assets API - de Fragmenten van de Inhoud &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [ASSETS HTTP API](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#assets)
@@ -395,4 +395,4 @@ Zie hier voor gedetailleerde API-referenties:
 Zie voor meer informatie:
 
 * [Assets HTTP API-documentatie](/help/assets/mac-api-assets.md)
-* [ AEM de zitting van Gem: OAuth ](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [&#x200B; AEM de zitting van Gem: OAuth &#x200B;](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

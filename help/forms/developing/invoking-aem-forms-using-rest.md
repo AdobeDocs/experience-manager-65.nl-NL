@@ -22,13 +22,13 @@ ht-degree: 0%
 
 De processen die in Workbench worden gecreeerd kunnen worden gevormd zodat u hen door de verzoeken van de Overdracht van de Staat van de Vertegenwoordiging (REST) kunt aanhalen. REST-aanvragen worden verzonden vanaf HTML-pagina&#39;s. Met andere woorden, u kunt een Forms-proces rechtstreeks vanaf een webpagina oproepen met behulp van een REST-aanvraag. U kunt bijvoorbeeld een nieuw exemplaar van een webpagina openen. Vervolgens kunt u een Forms-proces aanroepen en een gerenderd PDF-document laden met gegevens die in een HTTP-POST-aanvraag zijn verzonden.
 
-Er zijn twee typen HTML-clients. De eerste HTML-client is een AJAX client die in JavaScript is geschreven. De tweede client is een HTML-formulier met een verzendknop. Een op HTML gebaseerde clienttoepassing is niet de enige mogelijke REST-client. Om het even welke cliënttoepassing die HTTP- verzoeken steunt kan de dienst aanhalen gebruikend een Oproepen van het REST. U kunt bijvoorbeeld een service aanroepen met behulp van een REST-aanroep vanuit een PDF-formulier. (Zie [ het Aanhalen van het proces MyApplication/EncryptDocument van Acrobat ](#rest-invocation-examples).)
+Er zijn twee typen HTML-clients. De eerste HTML-client is een AJAX client die in JavaScript is geschreven. De tweede client is een HTML-formulier met een verzendknop. Een op HTML gebaseerde clienttoepassing is niet de enige mogelijke REST-client. Om het even welke cliënttoepassing die HTTP- verzoeken steunt kan de dienst aanhalen gebruikend een Oproepen van het REST. U kunt bijvoorbeeld een service aanroepen met behulp van een REST-aanroep vanuit een PDF-formulier. (Zie [&#x200B; het Aanhalen van het proces MyApplication/EncryptDocument van Acrobat &#x200B;](#rest-invocation-examples).)
 
-Als u REST-verzoeken gebruikt, wordt u aangeraden Forms-services niet rechtstreeks aan te roepen. In plaats daarvan, haal processen aan die in Workbench werden gecreeerd. Wanneer het creëren van een proces dat voor de Oproepen van het HERSTEL wordt bedoeld, gebruik een programmatic beginpunt. In deze situatie, wordt het REST eindpunt automatisch toegevoegd. Voor informatie over het creëren van processen in Workbench, zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Als u REST-verzoeken gebruikt, wordt u aangeraden Forms-services niet rechtstreeks aan te roepen. In plaats daarvan, haal processen aan die in Workbench werden gecreeerd. Wanneer het creëren van een proces dat voor de Oproepen van het HERSTEL wordt bedoeld, gebruik een programmatic beginpunt. In deze situatie, wordt het REST eindpunt automatisch toegevoegd. Voor informatie over het creëren van processen in Workbench, zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Wanneer u een service oproept met REST, wordt u gevraagd om een gebruikersnaam en wachtwoord voor AEM formulieren. Als u echter geen gebruikersnaam en wachtwoord wilt opgeven, kunt u de servicebeveiliging uitschakelen.
 
-Om de dienst van Forms aan te halen (een proces wordt de dienst wanneer het proces) gebruikend REST wordt geactiveerd, vorm een REST eindpunt. (Zie &quot;het Leiden Eindpunten&quot;in [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Om de dienst van Forms aan te halen (een proces wordt de dienst wanneer het proces) gebruikend REST wordt geactiveerd, vorm een REST eindpunt. (Zie &quot;het Leiden Eindpunten&quot;in [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 Nadat een REST eindpunt wordt gevormd, kunt u de dienst van Forms aanhalen door een methode van de GET van HTTP of een methode van de POST te gebruiken.
 
@@ -89,7 +89,7 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services worden a
 
 ## Asynchrone aanroepen {#asynchronous-invocations}
 
-Sommige AEM Forms-diensten, zoals menselijke-centrische langlevende processen, hebben lange tijd nodig om te voltooien. Deze diensten kunnen asynchroon op een niet-blokkerende manier worden aangehaald. (Zie [ het aanhalen van mens-Centric langlevende Processen ](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+Sommige AEM Forms-diensten, zoals menselijke-centrische langlevende processen, hebben lange tijd nodig om te voltooien. Deze diensten kunnen asynchroon op een niet-blokkerende manier worden aangehaald. (Zie [&#x200B; het aanhalen van mens-Centric langlevende Processen &#x200B;](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
 Een AEM Forms-service kan asynchroon worden aangeroepen door `services` te vervangen door `async_invoke` in de oproepings-URL, zoals in het volgende voorbeeld wordt getoond.
 
@@ -155,11 +155,11 @@ Om REST-aanroepen te voorzien van een beveiligd transport, kan een beheerder van
 
 Hoewel u aangeraden processen aan te roepen die u met Workbench hebt gemaakt in plaats van rechtstreeks services, zijn er sommige AEM Forms-services die ondersteuning bieden voor het aanroepen van REST. De reden waarom het wordt geadviseerd dat u een proces in tegenstelling tot de dienst direct aanhaalt is omdat het efficiënter is om een proces aan te halen. Overweeg het volgende scenario. Veronderstel dat u een beleid van een cliënt van REST wilt tot stand brengen. Dat wil zeggen dat u wilt dat de REST-client waarden definieert zoals de naam van het beleid, de offline leaseperiode.
 
-Als u een beleid wilt maken, moet u complexe gegevenstypen definiëren, zoals een `PolicyEntry` -object. Een `PolicyEntry` -object definieert kenmerken zoals machtigingen die aan het beleid zijn gekoppeld. (Zie [ Creërend Beleid ](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+Als u een beleid wilt maken, moet u complexe gegevenstypen definiëren, zoals een `PolicyEntry` -object. Een `PolicyEntry` -object definieert kenmerken zoals machtigingen die aan het beleid zijn gekoppeld. (Zie [&#x200B; Creërend Beleid &#x200B;](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
 In plaats van een REST-aanvraag te verzenden om een beleid te maken (zoals het definiëren van complexe gegevenstypen, zoals een `PolicyEntry` -object), maakt u een proces dat een beleid maakt met Workbench. Definieer het proces voor het accepteren van primitieve invoervariabelen, zoals een tekenreekswaarde die de procesnaam definieert of een geheel getal dat de offline leaseperiode definieert.
 
-Op deze manier hoeft u geen REST-oproepverzoek te maken dat complexe gegevenstypen bevat die door de bewerking worden vereist. Het proces bepaalt de complexe gegevenstypes en alles u van de cliënt van REST doet haalt het proces aan en gaat primitieve gegevenstypes over. Voor informatie over het aanhalen van een proces dat REST gebruikt, zie [ het aanhalen van het proces MyApplication/EncryptDocument gebruikend REST ](#rest-invocation-examples).
+Op deze manier hoeft u geen REST-oproepverzoek te maken dat complexe gegevenstypen bevat die door de bewerking worden vereist. Het proces bepaalt de complexe gegevenstypes en alles u van de cliënt van REST doet haalt het proces aan en gaat primitieve gegevenstypes over. Voor informatie over het aanhalen van een proces dat REST gebruikt, zie [&#x200B; het aanhalen van het proces MyApplication/EncryptDocument gebruikend REST &#x200B;](#rest-invocation-examples).
 
 In de volgende lijsten worden de AEM Forms-services opgegeven die directe Oproepen tot REST ondersteunen.
 
@@ -224,7 +224,7 @@ In het volgende HTML-voorbeeld wordt een datumwaarde doorgegeven aan een AEM For
 
 **het overgaan van documenten tot een proces**
 
-In het volgende HTML-voorbeeld wordt een AEM Forms-proces met de naam `MyApplication/EncryptDocument` aangeroepen waarvoor een PDF-document nodig is. Voor informatie over dit proces, zie [ het Aanhalen van AEM Forms gebruikend MTOM ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+In het volgende HTML-voorbeeld wordt een AEM Forms-proces met de naam `MyApplication/EncryptDocument` aangeroepen waarvoor een PDF-document nodig is. Voor informatie over dit proces, zie [&#x200B; het Aanhalen van AEM Forms gebruikend MTOM &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```html
  <html>
@@ -289,7 +289,7 @@ U kunt een kort-levend proces van AEM Forms roepen genoemd *MyApplication/Encryp
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u met Workbench een proces met de naam `MyApplication/EncryptDocument` . (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u met Workbench een proces met de naam `MyApplication/EncryptDocument` . (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -315,7 +315,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 **aanroepend het proces MyApplication/EncryptDocument van Acrobat** {#invoke-process-acrobat}
 
-U kunt een Forms-proces aanroepen vanuit Acrobat met behulp van een REST-aanvraag. Bijvoorbeeld, kunt u het *MyApplication/EncryptDocument* proces aanhalen. Als u een Forms-proces vanuit Acrobat wilt aanroepen, plaatst u een verzendknop op een XDP-bestand in Designer. (Zie [ Hulp van Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).)
+U kunt een Forms-proces aanroepen vanuit Acrobat met behulp van een REST-aanvraag. Bijvoorbeeld, kunt u het *MyApplication/EncryptDocument* proces aanhalen. Als u een Forms-proces vanuit Acrobat wilt aanroepen, plaatst u een verzendknop op een XDP-bestand in Designer. (Zie [&#x200B; Hulp van Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
 Specificeer URL om het proces binnen de knoop *aan te halen voorleggen URL* gebied, zoals aangetoond in de volgende illustratie.
 

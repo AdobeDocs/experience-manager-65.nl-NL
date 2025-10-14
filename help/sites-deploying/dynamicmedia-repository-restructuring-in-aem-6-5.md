@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Zoals beschreven op de ouder [ Herstructurering van de Bewaarplaats in Adobe Experience Manager 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina, zouden de klanten die aan Experience Manager 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatveranderingen die Dynamic Media beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op de ouder [&#x200B; Herstructurering van de Bewaarplaats in Adobe Experience Manager 6.5 &#x200B;](/help/sites-deploying/repository-restructuring.md) pagina, zouden de klanten die aan Experience Manager 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatveranderingen die Dynamic Media beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **vóór toekomstige verbetering**
 

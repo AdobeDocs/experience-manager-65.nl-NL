@@ -19,25 +19,25 @@ ht-degree: 0%
 >
 >De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR en de CCPA.
 
-De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018. Zie de [ pagina GDPR bij het Centrum van de Privacy van de Adobe ](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018. Zie de [&#x200B; pagina GDPR bij het Centrum van de Privacy van de Adobe &#x200B;](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Zie [ AEM GDPR Gereedheid ](/help/managing/data-protection-and-privacy.md) voor verdere details.
+>Zie [&#x200B; AEM GDPR Gereedheid &#x200B;](/help/managing/data-protection-and-privacy.md) voor verdere details.
 
-![ screen_shot_2018-03-22at111606 ](assets/screen_shot_2018-03-22at111606.jpg)
+![&#x200B; screen_shot_2018-03-22at111606 &#x200B;](assets/screen_shot_2018-03-22at111606.jpg)
 
 Met uit-van-de-doos integratie van Commerce van de Adobe, is AEM de ervaringslaag, die de diensten verbruikt en gegevens terug naar het platform van de klantenhandel verzendt dat op een headless wijze loopt.
 
-Voor sommige handelsplatforms, slaat de Adobe profielinformatie ( `/home/users`) en handelstkens (aan login in het handelsplatform) in AEM op. Voor deze gebruiksgevallen, lees [ Behandelende GDPR- Verzoeken naar het AEM Platform ](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Voor sommige handelsplatforms, slaat de Adobe profielinformatie ( `/home/users`) en handelstkens (aan login in het handelsplatform) in AEM op. Voor deze gebruiksgevallen, lees [&#x200B; Behandelende GDPR- Verzoeken naar het AEM Platform &#x200B;](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-![ screen_shot_2018-03-22at111621 ](assets/screen_shot_2018-03-22at111621.jpg)
+![&#x200B; screen_shot_2018-03-22at111621 &#x200B;](assets/screen_shot_2018-03-22at111621.jpg)
 
 ## Afhandeling van GDPR-verzoeken om AEM Commerce {#handling-gdpr-requests-for-aem-commerce}
 
-Voor de integratie van de Salesforce-Commerce Cloud slaat AEM Commerce geen relevante GDPR-informatie op. Door:sturen het verzoek aan de [ Cloud Salesforce ](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
+Voor de integratie van de Salesforce-Commerce Cloud slaat AEM Commerce geen relevante GDPR-informatie op. Door:sturen het verzoek aan de [&#x200B; Cloud Salesforce &#x200B;](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 
-Voor de hybris- en HCL WebSphere® Commerce-integratie zijn er gegevens in AEM. Gebruik de [ instructies van AEM Platform GDPR ](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) en overweeg deze vragen:
+Voor de hybris- en HCL WebSphere® Commerce-integratie zijn er gegevens in AEM. Gebruik de [&#x200B; instructies van AEM Platform GDPR &#x200B;](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) en overweeg deze vragen:
 
 1. **waar wordt mijn gegevens opgeslagen/gebruikt?** Informatie over gebruikersprofielen in de cache, zoals naam, gebruikersnaam, token, wachtwoord en adresgegevens van AEM.
 1. **met wie deel ik de overdekte gegevens GDPR?** Een update van voor GDPR relevante gegevens in AEM Commerce wordt niet opgeslagen (behalve relevante profielinformatie, zoals hierboven vermeld) maar wordt doorgestuurd naar het handelsplatform.
@@ -45,4 +45,4 @@ Voor de hybris- en HCL WebSphere® Commerce-integratie zijn er gegevens in AEM. 
 
 >[!NOTE]
 >
->Heb een blik bij de [ hybris wiki ](https://wiki.hybris.com/) of de [ documentatie van Commerce WebSphere® HCL ](https://help.hcltechsw.com/commerce/index.html), indien nodig.
+>Heb een blik bij de [&#x200B; hybris wiki &#x200B;](https://wiki.hybris.com/) of de [&#x200B; documentatie van Commerce WebSphere® HCL &#x200B;](https://help.hcltechsw.com/commerce/index.html), indien nodig.

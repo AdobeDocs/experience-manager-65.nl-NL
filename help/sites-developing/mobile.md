@@ -22,9 +22,9 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat sjablonen en componenten moeten worden gemaakt. Voor meer details bij het creëren van malplaatjes en componenten, zie de volgende pagina&#39;s: [ Malplaatjes ](/help/sites-developing/templates.md), [ Componenten ](/help/sites-developing/components.md), en [ Begonnen het Ontwikkelen van AEM Sites ](/help/sites-developing/getting-started.md). Het belangrijkste verschil bestaat erin de ingebouwde mobiele functies van Adobe Experience Manager (AEM) binnen de site mogelijk te maken. Dit wordt bereikt door een sjabloon te maken die afhankelijk is van het component voor mobiele pagina.
+Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat sjablonen en componenten moeten worden gemaakt. Voor meer details bij het creëren van malplaatjes en componenten, zie de volgende pagina&#39;s: [&#x200B; Malplaatjes &#x200B;](/help/sites-developing/templates.md), [&#x200B; Componenten &#x200B;](/help/sites-developing/components.md), en [&#x200B; Begonnen het Ontwikkelen van AEM Sites &#x200B;](/help/sites-developing/getting-started.md). Het belangrijkste verschil bestaat erin de ingebouwde mobiele functies van Adobe Experience Manager (AEM) binnen de site mogelijk te maken. Dit wordt bereikt door een sjabloon te maken die afhankelijk is van het component voor mobiele pagina.
 
-Overweeg gebruikend [ ontvankelijk ontwerp ](/help/sites-developing/responsive.md), creërend één enkele plaats die veelvoudige het schermgrootte aanpast.
+Overweeg gebruikend [&#x200B; ontvankelijk ontwerp &#x200B;](/help/sites-developing/responsive.md), creërend één enkele plaats die veelvoudige het schermgrootte aanpast.
 
 Om begonnen te worden, kunt u een blik bij **hebben wij.Retail Mobiele Plaats van de Demo** die in AEM beschikbaar is.
 
@@ -62,17 +62,17 @@ De component voor mobiele pagina ( `/libs/wcm/mobile/components/page`):
 
 ## Een mobiele site maken met beheer van meerdere sites {#creating-a-mobile-site-with-the-multi-site-manager}
 
-Met MSM (Multi Site Manager) kunt u een live mobiele kopie van een standaardsite maken. De standaardsite wordt automatisch getransformeerd naar een mobiele site: de mobiele site heeft alle functies van de mobiele sites (bijvoorbeeld een editie in een emulator) en kan worden beheerd in synchronisatie met de standaardsite. Verwijs naar de sectie [ Creërend Levend Exemplaar voor verschillende Kanalen ](/help/sites-administering/msm.md) in de Multi pagina van de Manager van de Plaats.
+Met MSM (Multi Site Manager) kunt u een live mobiele kopie van een standaardsite maken. De standaardsite wordt automatisch getransformeerd naar een mobiele site: de mobiele site heeft alle functies van de mobiele sites (bijvoorbeeld een editie in een emulator) en kan worden beheerd in synchronisatie met de standaardsite. Verwijs naar de sectie [&#x200B; Creërend Levend Exemplaar voor verschillende Kanalen &#x200B;](/help/sites-administering/msm.md) in de Multi pagina van de Manager van de Plaats.
 
 ## Server-Side Mobile-API {#server-side-mobile-api}
 
 De Java™-pakketten met de mobiele klassen zijn:
 
-* [ com.day.cq.wcm.mobile.api ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - bepaalt MobileConstants.
-* [ com.day.cq.wcm.mobile.api.device ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - bepaalt Apparaat, DeviceGroup, en DeviceGroupList.
-* [ com.day.cq.wcm.mobile.api.device.capabilities ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - bepaalt DeviceCapability.
-* [ com.day.cq.wcm.mobile.api.wurfl ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - bepaalt WurflQueryEngine.
-* [ com.day.cq.wcm.mobile.core ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - bepaalt MobileUtil, die diverse nutsmethodes verstrekt die rond Mobiel WCM draaien.
+* [&#x200B; com.day.cq.wcm.mobile.api &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - bepaalt MobileConstants.
+* [&#x200B; com.day.cq.wcm.mobile.api.device &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - bepaalt Apparaat, DeviceGroup, en DeviceGroupList.
+* [&#x200B; com.day.cq.wcm.mobile.api.device.capabilities &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - bepaalt DeviceCapability.
+* [&#x200B; com.day.cq.wcm.mobile.api.wurfl &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - bepaalt WurflQueryEngine.
+* [&#x200B; com.day.cq.wcm.mobile.core &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - bepaalt MobileUtil, die diverse nutsmethodes verstrekt die rond Mobiel WCM draaien.
 
 ### Mobiele componenten {#mobile-components}
 
@@ -160,13 +160,13 @@ OF
 
 Emulatorgebaseerde authoring biedt auteurs de mogelijkheid om inhoudspagina&#39;s te maken die bedoeld zijn voor mobiele clients. Bij het ontwerpen van mobiele inhoud wordt hetzelfde principe gehanteerd als bij het op locatie bewerken van WYSIWYG. Auteurs kunnen de weergave van de pagina op een mobiel apparaat alleen zien als ze een pagina met mobiele inhoud bewerken met een apparaatemulator.
 
-Mobiele apparaten emulators zijn gebaseerd op het generieke emulatorframework. Voor meer details, zie [ Medewerkers ](/help/sites-developing/emulators.md).
+Mobiele apparaten emulators zijn gebaseerd op het generieke emulatorframework. Voor meer details, zie [&#x200B; Medewerkers &#x200B;](/help/sites-developing/emulators.md).
 
 De apparatenmededinger toont het mobiele apparaat op de pagina terwijl het gebruikelijke uitgeven (parsys, componenten) binnen het scherm van het apparaat voorkomt. De apparaatemulator is afhankelijk van de apparaatgroepen die voor de site zijn geconfigureerd. Verschillende emulators kunnen worden toegewezen aan een apparaatgroep. Alle emulators zijn vervolgens beschikbaar op de inhoudspagina. Standaard wordt de eerste emulator weergegeven die is toegewezen aan de eerste apparaatgroep die aan de site is toegewezen. Emulators kunnen worden geschakeld via de emulatorcarrousel boven aan de pagina of via de bewerkingsknop van de Sidekick.
 
 **Creërend een mededinger**
 
-Om een mededinger tot stand te brengen, zie [ Creërend een Emulator van de Douane Mobiele ](/help/sites-developing/emulators.md) in de generische pagina van Emulators.
+Om een mededinger tot stand te brengen, zie [&#x200B; Creërend een Emulator van de Douane Mobiele &#x200B;](/help/sites-developing/emulators.md) in de generische pagina van Emulators.
 
 **Belangrijkste kenmerken van mobiele mededingers**
 
@@ -183,7 +183,7 @@ Opmerking: hoewel het mogelijk is dat dezelfde emulator tot verschillende appara
 
 ### Apparaatgroepen {#device-groups}
 
-Mobiele apparaatgroepen bieden segmentatie van mobiele apparaten op basis van de mogelijkheden van het apparaat. Een apparaatgroep biedt de informatie die vereist is voor op emulator gebaseerde authoring op de auteurinstantie en voor correcte rendering van inhoud op de publicatie-instantie: zodra auteurs inhoud aan de mobiele pagina hebben toegevoegd en deze hebben gepubliceerd, kan de pagina worden opgevraagd in de publicatie-instantie. In plaats van de emulator-bewerkingsweergave wordt de inhoudspagina weergegeven met een van de geconfigureerde apparaatgroepen. De selectie van de apparatengroep komt voor gebaseerd op [ mobiele apparatenopsporing ](#devicedetection). De passende apparatengroep verstrekt dan de noodzakelijke het stileren informatie.
+Mobiele apparaatgroepen bieden segmentatie van mobiele apparaten op basis van de mogelijkheden van het apparaat. Een apparaatgroep biedt de informatie die vereist is voor op emulator gebaseerde authoring op de auteurinstantie en voor correcte rendering van inhoud op de publicatie-instantie: zodra auteurs inhoud aan de mobiele pagina hebben toegevoegd en deze hebben gepubliceerd, kan de pagina worden opgevraagd in de publicatie-instantie. In plaats van de emulator-bewerkingsweergave wordt de inhoudspagina weergegeven met een van de geconfigureerde apparaatgroepen. De selectie van de apparatengroep komt voor gebaseerd op [&#x200B; mobiele apparatenopsporing &#x200B;](#devicedetection). De passende apparatengroep verstrekt dan de noodzakelijke het stileren informatie.
 
 De groepen van het apparaat worden bepaald als inhoudspagina&#39;s onder `/etc/mobile/devices` en gebruiken het **Mobiele malplaatje van de Groep van het Apparaat**. Het malplaatje van de apparatengroep dient als configuratiemalplaatje voor de definities van de apparatengroep in de vorm van inhoudspagina&#39;s. De belangrijkste kenmerken zijn:
 
@@ -200,7 +200,7 @@ Wanneer u een mobiele site maakt, moet u apparaatgroepen aan uw site toewijzen. 
 
 * **aanraak** telefoons, voor apparaten zoals iPad met volledige steun voor HTML, beelden, JavaScript, en apparatenomwenteling.
 
-Aangezien de mededingers met een apparatengroep kunnen worden geassocieerd (zie de sectie [ Creërend een Groep van het Apparaat ](#creating-a-device-group)), laat het toewijzen van een apparatengroep aan een plaats auteurs toe om tussen de mededingers te selecteren die met de apparatengroep worden geassocieerd om de pagina uit te geven.
+Aangezien de mededingers met een apparatengroep kunnen worden geassocieerd (zie de sectie [&#x200B; Creërend een Groep van het Apparaat &#x200B;](#creating-a-device-group)), laat het toewijzen van een apparatengroep aan een plaats auteurs toe om tussen de mededingers te selecteren die met de apparatengroep worden geassocieerd om de pagina uit te geven.
 
 U kunt als volgt een apparaatgroep aan uw site toewijzen:
 
@@ -231,7 +231,7 @@ Apparaatgroepen kunnen nul of meer filters gebruiken voor capaciteitsdetectie. E
 
 Als de apparatengroep geen filter gebruikt, zijn de geselecteerde mogelijkheden die voor de groep worden gevormd de enige mogelijkheden die een apparaat vereist.
 
-Voor meer informatie, zie [ Creërend de Filters van de Groep van het Apparaat ](/help/sites-developing/groupfilters.md).
+Voor meer informatie, zie [&#x200B; Creërend de Filters van de Groep van het Apparaat &#x200B;](/help/sites-developing/groupfilters.md).
 
 #### Een apparaatgroep maken {#creating-a-device-group}
 
@@ -273,7 +273,7 @@ Op het **Algemene** lusje:
 
 Het dialoogvenster voor de configuratie van groepen mobiele apparaten ziet er als volgt uit:
 
-![ screen_shot_2012-02-01at22043pm ](assets/screen_shot_2012-02-01at22043pm.png)
+![&#x200B; screen_shot_2012-02-01at22043pm &#x200B;](assets/screen_shot_2012-02-01at22043pm.png)
 
 #### Aangepaste CSS per apparaatgroep {#custom-css-per-device-group}
 
@@ -294,11 +294,11 @@ Ontwerp uw filters zodat u combinaties ervan kunt gebruiken om de groepen mogeli
 
 Nadat u een filter creeert, kunt u het in de groepsconfiguratie gebruiken.
 
-Voor informatie, ga [ Creërend de Filters van de Groep van het Apparaat ](/help/sites-developing/groupfilters.md).
+Voor informatie, ga [&#x200B; Creërend de Filters van de Groep van het Apparaat &#x200B;](/help/sites-developing/groupfilters.md).
 
 ### De WURFL™-database gebruiken {#using-the-wurfl-database}
 
-AEM gebruikt een beknot versie van het [ WURFL ](https://wurfl.sourceforge.net/) ™ gegevensbestand aan de mogelijkheden van het vraagapparaat, zoals het schermresolutie of de steun van JavaScript, die op gebruiker-Agent van het apparaat wordt gebaseerd.
+AEM gebruikt een beknot versie van het [&#x200B; WURFL &#x200B;](https://wurfl.sourceforge.net/) ™ gegevensbestand aan de mogelijkheden van het vraagapparaat, zoals het schermresolutie of de steun van JavaScript, die op gebruiker-Agent van het apparaat wordt gebaseerd.
 
 De code van XML van het WURFL™- gegevensbestand wordt vertegenwoordigd als knopen onder `/var/mobile/devicespecs` door het `wurfl.xml` dossier bij `/libs/wcm/mobile/devicespecs/wurfl.xml.` te ontleden de uitbreiding aan knopen voorkomt de eerste keer dat de `cq-mobile-core` bundel wordt begonnen.
 
@@ -307,7 +307,7 @@ Apparaatmogelijkheden worden opgeslagen als knoopeigenschappen en knooppunten ve
 Aangezien het WURFL™ gegevensbestand evolueert, kunt u het moeten aanpassen of vervangen. Als u de database voor mobiele apparaten wilt bijwerken, hebt u de volgende opties:
 
 * Vervang het bestand door de nieuwste versie als u een licentie hebt die dit gebruik toestaat. Zie Een andere WURFL-database installeren.
-* Gebruik de versie die in AEM beschikbaar is en vorm een regexp die uw gebruiker-Agent koorden en punten aan een bestaand apparaat WURFL™ aanpast. Zie [ Toevoegend op regexp-Gebaseerde gebruiker-Agent het Verstemmen ](#adding-a-regexp-based-user-agent-matching).
+* Gebruik de versie die in AEM beschikbaar is en vorm een regexp die uw gebruiker-Agent koorden en punten aan een bestaand apparaat WURFL™ aanpast. Zie [&#x200B; Toevoegend op regexp-Gebaseerde gebruiker-Agent het Verstemmen &#x200B;](#adding-a-regexp-based-user-agent-matching).
 
 #### Het testen van de Afbeelding van een Gebruiker-Agent aan Mogelijkheden WURFL™ {#testing-the-mapping-of-a-user-agent-to-wurfl-capabilities}
 
@@ -358,7 +358,7 @@ AEM ondersteunt apparaatclientdetectie op basis van `BrowserMap` . `BrowserMap` 
 
 >[!NOTE]
 >
->Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [ Gebruikend de Bibliotheken van de HTML van de Cliënt-Kant ](/help/sites-developing/clientlibs.md).
+>Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [&#x200B; Gebruikend de Bibliotheken van de HTML van de Cliënt-Kant &#x200B;](/help/sites-developing/clientlibs.md).
 
 ### Alternatieve koppelingen opgeven {#providing-alternate-links}
 
@@ -377,7 +377,7 @@ Wanneer de waarde van de eigenschap `cq:variantDomain` van een knooppunt `cq:sit
 
 >[!NOTE]
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 ### Een apparaatgroepspecifieke URL definiëren {#defining-a-device-group-specific-url}
 
@@ -387,7 +387,7 @@ BrowserMap is zodanig ontworpen dat de definities van apparaatgroepen kunnen wor
 
 >[!NOTE]
 >
->Voor meer details, zie [ Aangepaste BrowserMap ](#creatingacustomisedbrowsermap).
+>Voor meer details, zie [&#x200B; Aangepaste BrowserMap &#x200B;](#creatingacustomisedbrowsermap).
 
 ### Op kiezers gebaseerde URL&#39;s definiëren {#defining-selector-based-urls}
 
@@ -413,7 +413,7 @@ Bovendien moet u de methode `BrowserMap.forwardRequest()` handmatig in uw `JavaS
 
 >[!NOTE]
 >
->Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [ Gebruikend de Bibliotheken van de HTML van de Cliënt-Kant ](/help/sites-developing/clientlibs.md).
+>Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [&#x200B; Gebruikend de Bibliotheken van de HTML van de Cliënt-Kant &#x200B;](/help/sites-developing/clientlibs.md).
 
 Zodra u uw aangepaste `BrowserMap` cliëntbibliotheek hebt gecreeerd, stelt de Adobe de volgende benadering voor:
 
@@ -563,7 +563,7 @@ De statistieken weergeven:
 
 De **Statistieken** pagina kijkt als volgt:
 
-![ screen_shot_2012-02-01at24353pm ](assets/screen_shot_2012-02-01at24353pm.png)
+![&#x200B; screen_shot_2012-02-01at24353pm &#x200B;](assets/screen_shot_2012-02-01at24353pm.png)
 
 >[!NOTE]
 >

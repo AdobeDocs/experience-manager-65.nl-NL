@@ -22,18 +22,18 @@ ht-degree: 0%
 
 Individuele bezoekers van uw website kunnen alleen worden geïdentificeerd wanneer u hun de mogelijkheid biedt zich aan te melden. Er zijn verschillende redenen waarom u een aanmeldingsfunctie wilt opgeven:
 
-* [ de bezoekers van de Plaats van AEM Communities ](/help/communities/overview.md) worden vereist om binnen aan post inhoud aan de gemeenschap te ondertekenen.
+* [&#x200B; de bezoekers van de Plaats van AEM Communities &#x200B;](/help/communities/overview.md) worden vereist om binnen aan post inhoud aan de gemeenschap te ondertekenen.
 * [Gesloten gebruikersgroepen](/help/sites-administering/cug.md)
 
   Mogelijk moet u de toegang tot uw website (of gedeelten ervan) beperken tot specifieke bezoekers.
 
-* [ Personalization ](/help/sites-administering/personalization.md) Toestaan bezoekers om bepaalde aspecten van te vormen hoe zij tot uw website toegang hebben.
+* [&#x200B; Personalization &#x200B;](/help/sites-administering/personalization.md) Toestaan bezoekers om bepaalde aspecten van te vormen hoe zij tot uw website toegang hebben.
 
-Login (en uit) functionaliteit wordt verstrekt door een [ rekening met a **Profiel**](#profiles-and-user-accounts), dat extra informatie over de geregistreerde bezoeker (gebruiker) houdt. De eigenlijke registratie- en vergunningsprocedures kunnen verschillen:
+Login (en uit) functionaliteit wordt verstrekt door een [&#x200B; rekening met a **Profiel**](#profiles-and-user-accounts), dat extra informatie over de geregistreerde bezoeker (gebruiker) houdt. De eigenlijke registratie- en vergunningsprocedures kunnen verschillen:
 
 * Zelfregistratie vanaf de website
 
-  A [ Communautaire Plaats ](/help/communities/sites-console.md) kan worden gevormd om bezoekers toe te staan om zich te registreren of login met hun rekeningen van Facebook of van de Twitter.
+  A [&#x200B; Communautaire Plaats &#x200B;](/help/communities/sites-console.md) kan worden gevormd om bezoekers toe te staan om zich te registreren of login met hun rekeningen van Facebook of van de Twitter.
 
 * Registratieverzoek van de website
 
@@ -52,22 +52,22 @@ Aanvullende functionaliteit kan worden geconfigureerd of ontwikkeld:
 
 >[!NOTE]
 >
->De informatie die in het profiel wordt gespecificeerd kan ook worden gebruikt om de gebruiker van gerichte inhoud via [ Segmenten ](/help/sites-administering/campaign-segmentation.md) en [ Campagnes ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te voorzien.
+>De informatie die in het profiel wordt gespecificeerd kan ook worden gebruikt om de gebruiker van gerichte inhoud via [&#x200B; Segmenten &#x200B;](/help/sites-administering/campaign-segmentation.md) en [&#x200B; Campagnes &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te voorzien.
 
 ## Registratie Forms {#registration-forms}
 
-A [ vorm ](/help/sites-authoring/default-components.md#form-component) kan worden gebruikt om de registratieinformatie te verzamelen, dan de nieuwe rekening en het profiel te produceren.
+A [&#x200B; vorm &#x200B;](/help/sites-authoring/default-components.md#form-component) kan worden gebruikt om de registratieinformatie te verzamelen, dan de nieuwe rekening en het profiel te produceren.
 
 Gebruikers kunnen bijvoorbeeld een nieuw profiel aanvragen met de pagina Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![ de registratieformulier van de Steekproef ](assets/registerform.png)
+![&#x200B; de registratieformulier van de Steekproef &#x200B;](assets/registerform.png)
 
 Na het verzenden van de aanvraag wordt de profielpagina geopend waar de gebruiker persoonlijke gegevens kan opgeven.
 
-![ pagina van het het profielprofiel van de Steekproef ](assets/profilepage.png)
+![&#x200B; pagina van het het profielprofiel van de Steekproef &#x200B;](assets/profilepage.png)
 
-De nieuwe rekening is ook zichtbaar in de [ console van Gebruikers ](/help/sites-administering/security.md).
+De nieuwe rekening is ook zichtbaar in de [&#x200B; console van Gebruikers &#x200B;](/help/sites-administering/security.md).
 
 ## Aanmelden {#login}
 
@@ -79,7 +79,7 @@ Bijvoorbeeld, kunnen de gebruikers of login, of een rekening tot stand brengen, 
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![ Login van de Steekproef pagina ](assets/login.png)
+![&#x200B; Login van de Steekproef pagina &#x200B;](assets/login.png)
 
 ## Afmelden {#logging-out}
 
@@ -96,7 +96,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 Om de details van uw profiel te zien klik **Mijn Profiel** in de hoogste juiste hoek van om het even welke pagina; bijvoorbeeld, met de `admin` rekening:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-U kunt een ander profiel bekijken gebruikend de [ cliëntcontext ](/help/sites-administering/client-context.md) (op het auteursmilieu en met voldoende voorrechten):
+U kunt een ander profiel bekijken gebruikend de [&#x200B; cliëntcontext &#x200B;](/help/sites-administering/client-context.md) (op het auteursmilieu en met voldoende voorrechten):
 
 1. Open een pagina, bijvoorbeeld de pagina Geometrixx:
 
@@ -106,13 +106,13 @@ U kunt een ander profiel bekijken gebruikend de [ cliëntcontext ](/help/sites-a
 1. Pers **controle-alt-C** om de cliëntcontext te openen.
 1. In hoogste linkerhoek van de cliëntcontext, klik **Laad een knoop van het Profiel**.
 
-   ![ Laad een pictogram van het Profiel ](do-not-localize/loadprofile.png)
+   ![&#x200B; Laad een pictogram van het Profiel &#x200B;](do-not-localize/loadprofile.png)
 
 1. Selecteer een ander profiel van de drop-down lijst in het dialoogvenster; bijvoorbeeld, **de Parker van de Verrichting**.
 1. Klik **OK**.
 1. Klik opnieuw op **Mijn Profiel**. Het formulier wordt bijgewerkt met de gegevens van Alison.
 
-   ![ profiel van de Steekproef van Verkenning ](assets/profilealison.png)
+   ![&#x200B; profiel van de Steekproef van Verkenning &#x200B;](assets/profilealison.png)
 
 1. U kunt **gebruiken uitgeeft Profiel** of **Wachtwoord van de Verandering** nu om de details bij te werken.
 
@@ -136,7 +136,7 @@ U kunt velden toevoegen aan de profieldefinitie. Als u bijvoorbeeld een veld Fav
 
    De volgende keer dat u een profiel weergeeft, kunt u een favoriete kleur selecteren:
 
-   ![ het favoriete gebied van de kleurensteekproef van de Parker van de Verbinding ](assets/aparkerfavcolour.png)
+   ![&#x200B; het favoriete gebied van de kleurensteekproef van de Parker van de Verbinding &#x200B;](assets/aparkerfavcolour.png)
 
    Het gebied zal onder de **profiel** sectie van de relevante gebruikersrekening worden bewaard:
 
@@ -184,11 +184,11 @@ Er is een workflow nodig om de acties met betrekking tot de staten uit te voeren
 
 ## Profielen en gebruikersaccounts {#profiles-and-user-accounts}
 
-De profielen worden opgeslagen in de Inhoudsplaats als deel van [ gebruikersrekening ](/help/sites-administering/user-group-ac-admin.md).
+De profielen worden opgeslagen in de Inhoudsplaats als deel van [&#x200B; gebruikersrekening &#x200B;](/help/sites-administering/user-group-ac-admin.md).
 
 Het profiel is te vinden onder `/home/users/geometrixx` :
 
-![ Profielen zoals die in CRXDE ](assets/chlimage_1-138.png) worden gezien
+![&#x200B; Profielen zoals die in CRXDE &#x200B;](assets/chlimage_1-138.png) worden gezien
 
 Bij een standaardinstallatie (auteur of publicatie) heeft iedereen toegang tot de volledige profielgegevens van alle gebruikers. iedereen is a &quot;*Ingebouwde groep die automatisch alle bestaande gebruikers en groepen bevat. De lijst van leden kan niet worden uitgegeven*&quot;.
 
@@ -205,7 +205,7 @@ Als deze toegang niet geschikt is voor uw installatie, kunt u deze standaardinst
 
 Dit kan worden gedaan gebruikend het **[Controle van de Toegang](/help/sites-administering/user-group-ac-admin.md#access-right-management)** lusje:
 
-![ het Leiden ACLs in CRXDE ](assets/aclmanager.png)
+![&#x200B; het Leiden ACLs in CRXDE &#x200B;](assets/aclmanager.png)
 
 ## Profielcomponenten {#profile-components}
 
@@ -220,22 +220,22 @@ Deze component bevat twee velden voor:
 
 Met standaardinstellingen wordt de component als volgt weergegeven:
 
-![ de dialoog van het Wachtwoord van de Controle ](assets/dc_profiles_checkedpassword.png)
+![&#x200B; de dialoog van het Wachtwoord van de Controle &#x200B;](assets/dc_profiles_checkedpassword.png)
 
 ### Profiel Avatar Photo {#profile-avatar-photo}
 
 Deze component biedt de gebruiker een mechanisme voor het selecteren en uploaden van een Avatar Photo-bestand.
 
-![ Avatar selecteur ](assets/dc_profiles_avatarphoto.png)
+![&#x200B; Avatar selecteur &#x200B;](assets/dc_profiles_avatarphoto.png)
 
 ### Gedetailleerde naam profiel {#profile-detailed-name}
 
 Met deze component kan de gebruiker een gedetailleerde naam invoeren.
 
-![ Gedetailleerde naamdialoog ](assets/dc_profiles_detailedname.png)
+![&#x200B; Gedetailleerde naamdialoog &#x200B;](assets/dc_profiles_detailedname.png)
 
 ### Profiel Geslacht {#profile-gender}
 
 Met deze component kan de gebruiker zijn geslacht invoeren.
 
-![ de selecteur van het Geslacht ](assets/dc_profiles_gender.png)
+![&#x200B; de selecteur van het Geslacht &#x200B;](assets/dc_profiles_gender.png)

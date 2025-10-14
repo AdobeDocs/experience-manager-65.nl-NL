@@ -32,24 +32,24 @@ Voer de volgende stappen uit om een grafiek in een Interactieve Mededeling toe t
    * Kanaal afdrukken: doelgebied of afbeeldingsveld
    * Webkanaal: Deelvenster of Doelgebied
 
-1. Selecteer de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![ configure_icon ](assets/configure_icon.png)) van de toolbar van de Component.
+1. Selecteer de grafiekcomponent in de Interactieve Communicatie redacteur en selecteer **[!UICONTROL Configure (]** ![&#x200B; configure_icon &#x200B;](assets/configure_icon.png)) van de toolbar van de Component.
 
    De grafiekeigenschappen worden in het linkerdeelvenster weergegeven.
 
-   ![ Basis eigenschappen van een grafiek van het lijntype in drukkanaal ](assets/chart_properties_print_new.png)
+   ![&#x200B; Basis eigenschappen van een grafiek van het lijntype in drukkanaal &#x200B;](assets/chart_properties_print_new.png)
 
    Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal
 
-   ![ Basis eigenschappen van een grafiek van het lijntype in Webkanaal ](assets/chart_properties_web_new.png)
+   ![&#x200B; Basis eigenschappen van een grafiek van het lijntype in Webkanaal &#x200B;](assets/chart_properties_web_new.png)
 
    Basiseigenschappen van een lijntekstdiagram in een webkanaal
 
-1. Vorm de [ grafiekeigenschappen ](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) die op het kanaaltype worden gebaseerd.
+1. Vorm de [&#x200B; grafiekeigenschappen &#x200B;](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) die op het kanaaltype worden gebaseerd.
 1. (Alleen kanaal afdrukken) Geef in de **[!UICONTROL Agent Settings]** op of de agent dit diagram moet gebruiken. Als i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** optie niet wordt geselecteerd, kan de agent het oogpictogram voor de grafiek in het **[!UICONTROL Content]** lusje van de UI van de Agent selecteren om de grafiek te tonen of te verbergen.
 
-   ![ chart_agentproperties ](assets/chart_agentproperties.png)
+   ![&#x200B; chart_agentproperties &#x200B;](assets/chart_agentproperties.png)
 
-1. Selecteer ![ done_icon ](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
+1. Selecteer ![&#x200B; done_icon &#x200B;](assets/done_icon.png) om de grafiekeigenschappen te bewaren.
 
    Selecteer **[!UICONTROL Preview]** om de weergave en de gegevens weer te geven die aan het diagram zijn gekoppeld. Selecteer **[!UICONTROL Edit]** om de eigenschappen van het diagram opnieuw te configureren.
 
@@ -184,9 +184,9 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
 
 U kunt een grafiek vormen om statistische functies te gebruiken om waarden van de brongegevens voor het tekenen op de grafiek te berekenen. Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt.
 
-![ Functies in grafieken ](assets/functions_charts_new.png)
+![&#x200B; Functies in grafieken &#x200B;](assets/functions_charts_new.png)
 
-Terwijl de component van de Grafiek met sommige in-gebouwde functies komt, kunt u [ douanefuncties ](#customfunctionsweb) schrijven en hen voor gebruik in de grafiekconfiguratie in het Webkanaal ter beschikking stellen.
+Terwijl de component van de Grafiek met sommige in-gebouwde functies komt, kunt u [&#x200B; douanefuncties &#x200B;](#customfunctionsweb) schrijven en hen voor gebruik in de grafiekconfiguratie in het Webkanaal ter beschikking stellen.
 
 De volgende functies zijn standaard beschikbaar met de component Chart:
 
@@ -206,7 +206,7 @@ De volgende functies zijn standaard beschikbaar met de component Chart:
 
 **de Wijze** keert de waarde met de meeste voorkomen op X of de as van Y voor een bepaalde waarde op de andere as terug.
 
-Voor meer informatie, zie [ Voorbeeld 2: De toepassing van Som en de functies van de Frequentie in een lijngrafiek ](#applicationsumfrequency).
+Voor meer informatie, zie [&#x200B; Voorbeeld 2: De toepassing van Som en de functies van de Frequentie in een lijngrafiek &#x200B;](#applicationsumfrequency).
 
 ### Aangepaste functies in webkanaal {#customfunctionsweb}
 
@@ -226,7 +226,7 @@ Multiply(valueArray, category) {
 
 Zodra u een douanefunctie hebt geschreven, doe het volgende om het voor gebruik in de grafiekconfiguratie beschikbaar te maken:
 
-1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Voor meer informatie, zie [ Vormend de Submit actie ](/help/forms/using/configuring-submit-actions.md) en [ Gebruikend Cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md).
+1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Voor meer informatie, zie [&#x200B; Vormend de Submit actie &#x200B;](/help/forms/using/configuring-submit-actions.md) en [&#x200B; Gebruikend Cliënt-Kant Bibliotheken &#x200B;](/help/sites-developing/clientlibs.md).
 
 1. Als u de aangepaste functie wilt weergeven in de vervolgkeuzelijst Functie, maakt u in CRXDe Lite een knooppunt `nt:unstructured` in de map apps met de volgende eigenschappen:
 
@@ -256,7 +256,7 @@ Hiervoor geeft u de volgende eigenschappen op:
 * **[!UICONTROL Title]** - Geef het type kosten op voor de X-as en de hoeveelheid transacties voor de Y-as.
 * **[!UICONTROL Data Model Objects]** - Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Type kosten) en de Y-as (Hoeveelheid transactie).
 
-![ grafiek van de Kolom in het drukkanaal van een Interactieve Mededeling ](assets/sample_chart_print_column_new.png)
+![&#x200B; grafiek van de Kolom in het drukkanaal van een Interactieve Mededeling &#x200B;](assets/sample_chart_print_column_new.png)
 
 Kolomdiagram in het afdrukkanaal van een interactieve communicatie
 
@@ -270,7 +270,7 @@ Hiervoor geeft u de volgende eigenschappen op:
 * **[!UICONTROL Inner Radius]** - Geef de waarde voor Binnenste straal op als 150 om de straal (in pixels) van de binnenste cirkel in het diagram op te geven.
 * **[!UICONTROL Tooltip]** - gebruik $ {x} ($ {y}) standaardformaat om tooltip te tonen. De knopinfo wordt weergegeven als: Type kosten (transactiebedrag). Voorbeeld: Debit voor bitmap (10000).
 
-![ grafiek van de Donut in het Webkanaal van een Interactieve Mededeling ](assets/sample_chart_web_new.png)
+![&#x200B; grafiek van de Donut in het Webkanaal van een Interactieve Mededeling &#x200B;](assets/sample_chart_web_new.png)
 
 Donut grafiek in het Webkanaal van een Interactieve Mededeling
 
@@ -278,7 +278,7 @@ Donut grafiek in het Webkanaal van een Interactieve Mededeling
 
 Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt. In dit voorbeeld, gebruiken wij een voorbeeld van de creditcardverklaring om te begrijpen hoe de functies van de Som en van de Frequentie op de grafiek kunnen worden toegepast.
 
-![ grafiek van de Lijn zonder een functie met twee &quot;Debit voor transacties AirBnB&quot;](assets/line_chart_web_new.png)
+![&#x200B; grafiek van de Lijn zonder een functie met twee &quot;Debit voor transacties AirBnB&quot;](assets/line_chart_web_new.png)
 
 Regeldiagram zonder functie met twee &quot;Debit for AirBnB&quot;-transacties
 
@@ -288,13 +288,13 @@ U kunt de functie sum toepassen om waarden van meerdere instanties van dezelfde 
 
 De functie van de som kan grafiek nuttiger maken wanneer u som voor vele instanties van het zelfde gegevensbezit wilt sorteren en tonen.
 
-![ de grafieksom van de Lijn ](assets/line_chart_web_sum_new.png)
+![&#x200B; de grafieksom van de Lijn &#x200B;](assets/line_chart_web_sum_new.png)
 
 ### Frequentiefunctie {#frequency-function}
 
 De functie Frequentie retourneert het aantal waarden Y-as voor een bepaalde waarde op de andere as. Met de toepassing van de Frequentiefunctie op de Y-as (Transactiesom) toont de grafiek dat er twee exemplaren van de Debit voor AirBnB-transacties zijn geweest en één exemplaar van de rest van de soorten transacties.
 
-![ frequentie van het het grafiekdiagram van de Lijn ](assets/line_chart_web_functions_frequency_new.png)
+![&#x200B; frequentie van het het grafiekdiagram van de Lijn &#x200B;](assets/line_chart_web_functions_frequency_new.png)
 
 ## Voorbeeld 3: Quadrant-diagram met meerdere reeksen in het web {#example-multi-series-quadrant-chart-in-web}
 
@@ -314,4 +314,4 @@ Hiervoor geeft u de volgende eigenschappen op:
 * Geef de kwadranslabels op voor de kwadranten Linksboven, Rechtsboven, Rechtsonder en Linksonder.
 * Selecteer **tonen legenda** checkbox om de kleurencodes voor de banknamen te tonen.
 
-![ Grafieken van het Kwadrant ](assets/charts_quadrant_example_new.png)
+![&#x200B; Grafieken van het Kwadrant &#x200B;](assets/charts_quadrant_example_new.png)

@@ -30,7 +30,7 @@ HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor inf
 
 De volgende website beschrijft HTTP/2 en de voordelen ervan op een korte en eenvoudige manier:
 
-[ wat u over HTTP/2 ](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) moet weten
+[&#x200B; wat u over HTTP/2 &#x200B;](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) moet weten
 
 ## Wat zijn de belangrijkste voordelen van de overgang naar HTTP/2 voor de levering van inhoud? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -62,7 +62,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch gedaan voor u.
 
-1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [ een steunkaartje ](https://experienceleague.adobe.com/nl?support-solution=General&lang=en&support-tab=home#support) openen.
+1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [&#x200B; een steunkaartje &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&lang=en&support-tab=home#support) openen.
 
    1. Geef de volgende informatie op in uw supportverzoek:
 

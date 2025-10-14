@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud zonder hoofd &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw AEM project zonder titel kunt ontwerpen.
 
@@ -60,14 +60,14 @@ Vervolgens kunt u het navigatievenster gebruiken om toegang te krijgen tot belan
 
 U kunt het navigatievenster openen door het pictogram Adobe linksboven te selecteren, gevolgd door het kleine kompaspictogram:
 
-![ het paneel van de Navigatie ](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+![&#x200B; het paneel van de Navigatie &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
 >Hoewel de Fragmenten van de Inhoud een eigenschap van AEM **Plaatsen** zijn, worden zij gevonden in de **Assets** console. Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
 
 Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navigeren, of de broodkruimels (in de koptekst) om een back-up van de structuur te maken.
 
-![ Broodkruimels ](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![&#x200B; Broodkruimels &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
 ### Handelingen, selecteren, weergeven {#actions-selecting-viewing}
 
@@ -75,19 +75,19 @@ De **console van 0&rbrace; Assets &lbrace;heeft** Toolbars van de Actie **gewijd
 
 De Snelle Acties zijn beschikbaar voor één enkel middel, zie **Bazel** in het voorbeeld hieronder:
 
-![ Snelle Acties ](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+![&#x200B; Snelle Acties &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
 De werkbalk Handelingen biedt toegang tot het volledige scala aan handelingen die voor het huidige scenario gelden. De beschikbare acties kunnen veranderen, bijvoorbeeld afhankelijk van uw locatie of van het feit of u meerdere bronnen hebt geselecteerd:
 
-![ Toolbar van de Actie ](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![&#x200B; Toolbar van de Actie &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 U kunt de indeling voor het weergeven van uw bronnen selecteren met de Weergaveselector:
 
-![ de Selecteur van de Mening ](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+![&#x200B; de Selecteur van de Mening &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
 U kunt aanvullende informatie over items weergeven met de spoorkiezer. Dit geeft ook toegang tot extra acties.
 
-![ Linkerspoor ](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+![&#x200B; Linkerspoor &#x200B;](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
 ## Inhoudsfragmenten ontwerpen {#authoring-content-fragments}
 
@@ -103,11 +103,11 @@ Tenzij u zeer weinig Inhoudsfragmenten hebt, wilt u deze ordenen - zodat u (en a
 
 U kunt dit doen door een reeks omslagen binnen **te creëren Dossiers** sectie van de console van Assets. Selecteer **creeer** optie (hoogste recht), die door **Omslag** wordt gevolgd:
 
-![ creeer de optie van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
+![&#x200B; creeer de optie van de Omslag &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
 Een dialoog opent waar u de details kunt ingaan, dan bevestig met **&#x200B;**&#x200B;creëren:
 
-![ creeer de dialoog van de Omslag ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+![&#x200B; creeer de dialoog van de Omslag &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### Paden en tags gebruiken om de in de map beschikbare modellen van inhoudsfragmenten te beperken {#tags-paths-for-models-in-folder}
 
@@ -117,7 +117,7 @@ Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor 
 
 Na het creëren van uw omslag kunt u de omslag **Eigenschappen** openen. Hier zijn diverse lusjes met informatie, en configuratiedetails, over de omslag. Met name voor de Fragmenten van de Inhoud, kunt u het **lusje van Beleid** gebruiken om specifieke wegen en/of markeringen voor deze omslag te bepalen. Dit beperkt de modellen van het Fragment van de Inhoud beschikbaar voor gebruik in de omslag aangezien het betekent dat de Modellen van het Fragment van de Inhoud aan deze vereisten moeten voldoen alvorens zij kunnen worden gebruikt om fragmenten in deze omslag te produceren.
 
-![ creeer de Eigenschappen van de Omslag - Beleid ](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
+![&#x200B; creeer de Eigenschappen van de Omslag - Beleid &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Alleen voor het geval...
 
 U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit is waarschijnlijk van geen belang u, maar indien nodig kunt u de **Configuratie** in de **Cloud Servicen** van de omslag **Eigenschappen** controleren:
 
-![ creeer de Eigenschappen van de Omslag - Configuratie ](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+![&#x200B; creeer de Eigenschappen van de Omslag - Configuratie &#x200B;](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
@@ -141,15 +141,15 @@ U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aan
 
 Het creëren van een Fragment van de Inhoud is zeer gelijkaardig - u gebruikt enkel de **optie van het Fragment van de Inhoud** in plaats daarvan:
 
-![ creeer de optie van het Fragment van de Inhoud ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![&#x200B; creeer de optie van het Fragment van de Inhoud &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
 Dit keer wordt een wizard geopend. De eerste stap bestaat uit het selecteren van het inhoudsfragmentmodel waarop het fragment wordt gebaseerd:
 
-![ creeer het Fragment van de Inhoud - uitgezocht Model ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![&#x200B; creeer het Fragment van de Inhoud - uitgezocht Model &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
 Na het verdergaan met **daarna** kunt u de details (**Basis** en **Geavanceerd**) voor uw fragment verstrekken:
 
-![ creeer het Fragment van de Inhoud - verstrek Naam ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+![&#x200B; creeer het Fragment van de Inhoud - verstrek Naam &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
 Bevestig met **creeer** en u kunt **dan** uw fragment in de redacteur openen.
 
@@ -169,11 +169,11 @@ Als voorbeelden:
 
 * Een fragment dat alleen meerdere gegevens vereist, waarvan sommige een specifiek type hebben. Voor inhoud zonder kop zijn verwijzingen van essentieel belang. U leert hierover later tijdens uw reis.
 
-  ![ de Redacteur van het Fragment van de Inhoud - Mijn Fragment ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![&#x200B; de Redacteur van het Fragment van de Inhoud - Mijn Fragment &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * Een fragment waarmee u een lang tekstgedeelte kunt schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
 
-  ![ de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![&#x200B; de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -222,17 +222,17 @@ Zodra u uw fragment hebt voltooid kunt u **Publish** het zodat het aan de toepas
 
 De publiceer acties zijn beschikbaar in de redacteur (of van de toolbar van de **Assets** console):
 
-![ de Redacteur van het Fragment van de Inhoud - Mijn Fragment ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+![&#x200B; de Redacteur van het Fragment van de Inhoud - Mijn Fragment &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## Volgende functies {#whats-next}
 
-Nu u de grondbeginselen hebt geleerd, moet de volgende stap [ leren hoe over Verwijzingen ](references.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van creatie voor headless.
+Nu u de grondbeginselen hebt geleerd, moet de volgende stap [&#x200B; leren hoe over Verwijzingen &#x200B;](references.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van creatie voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Concepten ontwerpen](/help/sites-authoring/author.md)
 
-* [ Basis Behandelend ](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
+* [&#x200B; Basis Behandelend &#x200B;](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
 
    * [Deelvenster Navigatie](/help/sites-authoring/basic-handling.md#navigation-panel)
 

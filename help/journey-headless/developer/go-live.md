@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Hoe u met uw headless toepassing kunt gaan werken {#go-live}
 
-In dit deel van de [ AEM Dagboek van de Ontwikkelaar van de Zwaartepunt ](overview.md), leer hoe te om een headless toepassing op te stellen levend.
+In dit deel van de [&#x200B; AEM Dagboek van de Ontwikkelaar van de Zwaartepunt &#x200B;](overview.md), leer hoe te om een headless toepassing op te stellen levend.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM headless reis, [ hoe te om Uw Inhoud via AEM Assets APIs bij te werken ](update-your-content.md) leerde u hoe te om uw bestaande inhoud zonder kop in AEM via API bij te werken en u zou nu moeten:
+In het vorige document van de AEM headless reis, [&#x200B; hoe te om Uw Inhoud via AEM Assets APIs bij te werken &#x200B;](update-your-content.md) leerde u hoe te om uw bestaande inhoud zonder kop in AEM via API bij te werken en u zou nu moeten:
 
 * Begrijp de AEM Assets HTTP API.
 
@@ -107,7 +107,7 @@ Nu is het tijd om uw AEM toepassing zonder koppen klaar te maken voor de introdu
 
 ### Beveilig uw toepassing zonder koppen voordat u de toepassing start {#secure-and-scale-before-launch}
 
-1. Bereid [ Authentificatie ](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) voor uw verzoeken van GraphQL voor
+1. Bereid [&#x200B; Authentificatie &#x200B;](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) voor uw verzoeken van GraphQL voor
 
 ### Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 
@@ -126,7 +126,7 @@ Nu is het tijd om uw AEM toepassing zonder koppen klaar te maken voor de introdu
 
 >[!NOTE]
 >
->Zie [ Extra Middelen ](#additional-resources) voor meer informatie over CDN en caching.
+>Zie [&#x200B; Extra Middelen &#x200B;](#additional-resources) voor meer informatie over CDN en caching.
 
 ### Verbeter de tijd om inhoud zonder kop te downloaden {#improve-download-time}
 
@@ -144,13 +144,13 @@ Het opstellen aan Productie kan afhangen van of u a *traditionele* AEM instantie
 
 ## Distribueren naar productie met Maven {#deploy-to-production-maven}
 
-Voor a *traditionele* plaatsing (niet-AMS) gebruikend Gemaakt, zie het [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=nl-NL#build) voor een overzicht.
+Voor a *traditionele* plaatsing (niet-AMS) gebruikend Gemaakt, zie het [&#x200B; WKND Leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=nl-NL#build) voor een overzicht.
 
 ## Distribueren naar productie met Cloud Manager {#deploy-to-production-cloud-manager}
 
-Als u een klant van AMS gebruikend Cloud Manager bent, nadat u ervoor zorgt dat alles wordt getest en behoorlijk werkt, kunt u uw codeupdates aan a [ gecentraliseerde bewaarplaats van de it in Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=nl-NL) duwen.
+Als u een klant van AMS gebruikend Cloud Manager bent, nadat u ervoor zorgt dat alles wordt getest en behoorlijk werkt, kunt u uw codeupdates aan a [&#x200B; gecentraliseerde bewaarplaats van de it in Cloud Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=nl-NL) duwen.
 
-Nadat de updates aan Cloud Manager zijn geupload, stel hen in om het gebruiken van [ Cloud Manager te AEM CI/CD pijpleiding ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL).
+Nadat de updates aan Cloud Manager zijn geupload, stel hen in om het gebruiken van [&#x200B; Cloud Manager te AEM CI/CD pijpleiding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=nl-NL).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -211,24 +211,24 @@ U hebt uw eerste AEM Headless-project al gestart of u hebt nu alle kennis om dat
 
 ### Toepassingen met één pagina verkennen {#explore-spa}
 
-Het is echter niet nodig om de koploze winkels in AEM te stoppen. In het [ Begonnen deel van de reis ](getting-started.md#integration-levels), besprak het hoe AEM niet alleen hoofdloze levering en traditionele full-stack modellen steunt, maar ook hybride modellen die de voordelen van allebei combineren.
+Het is echter niet nodig om de koploze winkels in AEM te stoppen. In het [&#x200B; Begonnen deel van de reis &#x200B;](getting-started.md#integration-levels), besprak het hoe AEM niet alleen hoofdloze levering en traditionele full-stack modellen steunt, maar ook hybride modellen die de voordelen van allebei combineren.
 
-Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga aan het facultatieve, extra deel van de reis verder, [ hoe te om Enige Toepassingen van de Pagina (SPA) met AEM tot stand te brengen.](create-spa.md)
+Als dit soort flexibiliteit iets is u voor uw project nodig hebt, ga aan het facultatieve, extra deel van de reis verder, [&#x200B; hoe te om Enige Toepassingen van de Pagina (SPA) met AEM tot stand te brengen.](create-spa.md)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ AEM het Ontwikkelen Gids ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=nl-NL)
+* [&#x200B; AEM het Ontwikkelen Gids &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=nl-NL)
 
-* [ WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
+* [&#x200B; WKND Leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
 
-* [ Cloud Manager voor AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
+* [&#x200B; Cloud Manager voor AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 * CDN-cache
 
-   * [ Controlerend een CDN Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#controlling-a-cdn-cache)
+   * [&#x200B; Controlerend een CDN Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#controlling-a-cdn-cache)
 
-   * Het vormen van [ CDN Rewriter ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=nl-NL) (*onderzoek naar CDN Rewriter*)
+   * Het vormen van [&#x200B; CDN Rewriter &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=nl-NL) (*onderzoek naar CDN Rewriter*)
 
 * [Inleiding tot AEM als een CMS zonder kop](/help/sites-developing/headless/introduction.md)
-* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [&#x200B; AEM het Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; Tutorials voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

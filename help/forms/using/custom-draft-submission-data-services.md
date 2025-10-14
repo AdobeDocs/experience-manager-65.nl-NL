@@ -25,14 +25,14 @@ AEM Forms slaat standaard gebruikersgegevens op die zijn gekoppeld aan het conce
 
 AEM Forms Portal-componenten bieden echter gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
-Om de opslag van gebruikersgegevens aan te passen, moet u de [ Gegevens van het Ontwerp ](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) uitvoeren en [ de diensten van de Gegevens van de Verzending ](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Om de opslag van gebruikersgegevens aan te passen, moet u de [&#x200B; Gegevens van het Ontwerp &#x200B;](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) uitvoeren en [&#x200B; de diensten van de Gegevens van de Verzending &#x200B;](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
 ## Vereisten {#prerequisites}
 
-* Laat [ Forms Portal componenten ](/help/forms/using/enabling-forms-portal-components.md) toe
-* Creeer a [ de Portaalpagina van Forms ](/help/forms/using/creating-form-portal-page.md)
-* Laat [ adaptieve vormen voor Forms Portal ](/help/forms/using/draft-submission-component.md) toe
-* Leer [ implementatiedetails van douaneopslag ](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Laat [&#x200B; Forms Portal componenten &#x200B;](/help/forms/using/enabling-forms-portal-components.md) toe
+* Creeer a [&#x200B; de Portaalpagina van Forms &#x200B;](/help/forms/using/creating-form-portal-page.md)
+* Laat [&#x200B; adaptieve vormen voor Forms Portal &#x200B;](/help/forms/using/draft-submission-component.md) toe
+* Leer [&#x200B; implementatiedetails van douaneopslag &#x200B;](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Conceptgegevensservice {#draft-data-service}
 

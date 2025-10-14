@@ -28,7 +28,7 @@ AEM formulieren ondersteunen RSA- en DSA-referenties van maximaal 4096 bits in d
 
 U kunt elk gewenst aantal referenties importeren en exporteren. Als u een verlopen referentie wilt vervangen met dezelfde alias, verwijdert u de referentie en importeert u de nieuwe referentie met dezelfde alias.
 
-Voor informatie en instructies met betrekking tot de Uitbreidingen van Acrobat Reader DC, zie [ Vormende geloofsbrieven voor gebruik met de Uitbreidingen van Acrobat Reader DC ](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Voor informatie en instructies met betrekking tot de Uitbreidingen van Acrobat Reader DC, zie [&#x200B; Vormende geloofsbrieven voor gebruik met de Uitbreidingen van Acrobat Reader DC &#x200B;](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Een referentie importeren {#import-a-credential}
 
@@ -39,7 +39,7 @@ Voor informatie en instructies met betrekking tot de Uitbreidingen van Acrobat R
    * **Credential van de Uitbreidingen van Acrobat Reader DC:** Een digitaal certificaat specifiek voor de Uitbreidingen van Acrobat Reader DC dat Adobe Reader gebruiksrechten toelaat om in de geproduceerde documenten van de PDF worden geactiveerd.
    * **Gebrek:** wijst erop dat dit de standaardreferentie is om met de Uitbreidingen van Acrobat Reader DC te gebruiken.
 
-   Voor informatie over het verkrijgen van referentie, zie [ Voorbereidend om AEM vormen ](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf) te installeren.
+   Voor informatie over het verkrijgen van referentie, zie [&#x200B; Voorbereidend om AEM vormen &#x200B;](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf) te installeren.
 
 1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions en de service Handtekening. Deze alias wordt ook gebruikt om de referentie via programmacode te openen met de AEM formulieren SDK.
 

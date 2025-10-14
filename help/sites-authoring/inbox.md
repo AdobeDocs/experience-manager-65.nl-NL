@@ -33,27 +33,27 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 
 >[!NOTE]
 >
->Uit-van-de-doos AEM wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [ uit-van-de-doos Administratieve Taken ](#out-of-the-box-administrative-tasks) voor details.
+>Uit-van-de-doos AEM wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [&#x200B; uit-van-de-doos Administratieve Taken &#x200B;](#out-of-the-box-administrative-tasks) voor details.
 
 >[!NOTE]
 >
 >Zie ook voor meer informatie over de objecttypen:
 >
->* [ Projecten ](/help/sites-authoring/touch-ui-managing-projects.md)
->* [ Projecten - het werken met Taken ](/help/sites-authoring/task-content.md)
->* [ Werkstromen ](/help/sites-authoring/workflows.md)
->* [ Forms ](/help/forms/using/introduction-aem-forms.md)
+>* [&#x200B; Projecten &#x200B;](/help/sites-authoring/touch-ui-managing-projects.md)
+>* [&#x200B; Projecten - het werken met Taken &#x200B;](/help/sites-authoring/task-content.md)
+>* [&#x200B; Werkstromen &#x200B;](/help/sites-authoring/workflows.md)
+>* [&#x200B; Forms &#x200B;](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
 Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om of snelle toegang tot de pagina&#39;s te verlenen die acties of toegang tot inbox vereisen:
 
-![ wf-80 ](assets/wf-80.png)
+![&#x200B; wf-80 &#x200B;](assets/wf-80.png)
 
 >[!NOTE]
 >
->Bepaalde acties zullen ook in de [ kaartmening van het aangewezen middel ](/help/sites-authoring/basic-handling.md#card-view) worden getoond.
+>Bepaalde acties zullen ook in de [&#x200B; kaartmening van het aangewezen middel &#x200B;](/help/sites-authoring/basic-handling.md#card-view) worden getoond.
 
 ## Administratieve taken buiten de box  {#out-of-the-box-administrative-tasks}
 
@@ -73,9 +73,9 @@ U opent als volgt het AEM-vak:
 1. Selecteer **Alles bekijken**. **AEM Inbox** opent. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
-   Voor beide meningen kunt u [ Montages van de Mening ](#inbox-view-settings) ook bepalen; de beschikbare opties zijn afhankelijk van de huidige mening.
+   Voor beide meningen kunt u [&#x200B; Montages van de Mening &#x200B;](#inbox-view-settings) ook bepalen; de beschikbare opties zijn afhankelijk van de huidige mening.
 
-   ![ wf-79 ](assets/inbox-list-view.png)
+   ![&#x200B; wf-79 &#x200B;](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
@@ -85,13 +85,13 @@ U opent als volgt het AEM-vak:
 
 In deze weergave worden alle items weergegeven, samen met belangrijke relevante informatie:
 
-![ wf-82 ](assets/wf-82.png)
+![&#x200B; wf-82 &#x200B;](assets/wf-82.png)
 
 ### Postvak IN - Kalenderweergave {#inbox-calendar-view}
 
 In deze weergave worden de items weergegeven op basis van hun positie in de kalender en de exacte weergave die u hebt geselecteerd:
 
-![ wf-93 ](assets/wf-93.png)
+![&#x200B; wf-93 &#x200B;](assets/wf-93.png)
 
 U kunt:
 
@@ -102,7 +102,7 @@ U kunt:
 * boor neer voor meer gedetailleerde informatie over een punt
 * Selecteer een datumbereik waarop u de weergave wilt scherpstellen:
 
-![ wf-91 ](assets/wf-91.png)
+![&#x200B; wf-91 &#x200B;](assets/wf-91.png)
 
 ### Postvak IN - Instellingen {#inbox-view-settings}
 
@@ -116,7 +116,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Planning** of **Geen**
    * **Grootte van de Kaart**
 
-  ![ wf-92 ](assets/wf-92.png)
+  ![&#x200B; wf-92 &#x200B;](assets/wf-92.png)
 
 * **de Mening van de Lijst**
 
@@ -125,7 +125,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
    * **Gebied van de Sortering**
    * **de Orde van de Sortering**
 
-  ![ wf-83 ](assets/inbox-settings.png)
+  ![&#x200B; wf-83 &#x200B;](assets/inbox-settings.png)
 
 ### Inbox - Admin Control {#inbox-admin-control}
 
@@ -141,11 +141,11 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep `administrators` 
 
 * **Aanpassing van de Kolom**: Pas een AEM Inbox aan om de standaardtitel van een kolom te veranderen, de positie van een kolom opnieuw te rangschikken, en extra kolommen te tonen die op de gegevens van een werkschema worden gebaseerd.
    * **voeg Kolom** toe: Selecteer een kolom om in AEM Inbox toe te voegen.
-   * **geef Kolom** uit: Beweeg de muis over de kolomtitel en selecteer ![ uitgeven ](assets/edit.svg) pictogram om een naam van de kolomvertoning in te gaan.
-   * **Kolom van de Schrapping**: Selecteer het ![ schrap ](assets/delete_updated.svg) pictogram om de kolom van AEM Inbox te schrappen.
-   * **Kolom van de Beweging**: Sleep het ![ beweging ](assets/move_updated.svg) pictogram om een kolom naar een nieuwe positie in AEM Inbox te bewegen.
+   * **geef Kolom** uit: Beweeg de muis over de kolomtitel en selecteer ![&#x200B; uitgeven &#x200B;](assets/edit.svg) pictogram om een naam van de kolomvertoning in te gaan.
+   * **Kolom van de Schrapping**: Selecteer het ![&#x200B; schrap &#x200B;](assets/delete_updated.svg) pictogram om de kolom van AEM Inbox te schrappen.
+   * **Kolom van de Beweging**: Sleep het ![&#x200B; beweging &#x200B;](assets/move_updated.svg) pictogram om een kolom naar een nieuwe positie in AEM Inbox te bewegen.
 
-  ![ admin-controle ](assets/admin-control-column-customize.png)
+  ![&#x200B; admin-controle &#x200B;](assets/admin-control-column-customize.png)
 
 * **het brandmerken Aanpassing**
 
@@ -166,7 +166,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep `administrators` 
 
 1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 
-   ![ wf-84 ](assets/wf-84.png)
+   ![&#x200B; wf-84 &#x200B;](assets/wf-84.png)
 
    De acties zijn geschikt voor het item en omvatten:
 
@@ -186,7 +186,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep `administrators` 
    >
    >Zie voor meer informatie:
    >
-   >* De punten van het werkschema - [ Deelnemend aan Werkschema&#39;s ](/help/sites-authoring/workflows-participating.md)
+   >* De punten van het werkschema - [&#x200B; Deelnemend aan Werkschema&#39;s &#x200B;](/help/sites-authoring/workflows-participating.md)
 
 1. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
@@ -196,7 +196,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep `administrators` 
 
    Bijvoorbeeld, **wijs** opnieuw toe opent een dialoog:
 
-   ![ wf-85 ](assets/wf-85.png)
+   ![&#x200B; wf-85 &#x200B;](assets/wf-85.png)
 
    Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
@@ -222,19 +222,19 @@ In het Postvak IN kunt u taken maken:
       * **Datum van het Begin**
       * **Vervaldatum**
 
-   ![ wf-86 ](assets/wf-86.png)
+   ![&#x200B; wf-86 &#x200B;](assets/wf-86.png)
 
    * **Geavanceerd**
 
       * **Naam**: dit wordt gebruikt om URL te vormen; als het leeg zal zijn gebaseerd op de **Titel**.
 
-   ![ wf-87 ](assets/wf-87.png)
+   ![&#x200B; wf-87 &#x200B;](assets/wf-87.png)
 
 1. Selecteer **voorleggen**.
 
 ## Een project maken {#creating-a-project}
 
-Voor bepaalde taken kunt u a [ Project ](/help/sites-authoring/projects.md) creëren dat op die taak wordt gebaseerd:
+Voor bepaalde taken kunt u a [&#x200B; Project &#x200B;](/help/sites-authoring/projects.md) creëren dat op die taak wordt gebaseerd:
 
 1. Selecteer de gewenste taak door op de miniatuur te tikken of te klikken.
 
@@ -262,7 +262,7 @@ Voor bepaalde taken kunt u a [ Project ](/help/sites-authoring/projects.md) cre�
 
    >[!NOTE]
    >
-   >Zie [ Creërend een Project ](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) voor volledige informatie.
+   >Zie [&#x200B; Creërend een Project &#x200B;](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) voor volledige informatie.
 
 1. Selecteer **creeer** om de actie te bevestigen.
 
@@ -274,12 +274,12 @@ U kunt de vermelde items filteren:
 
 1. Open de filterkiezer:
 
-   ![ wf-88 ](assets/wf-88.png)
+   ![&#x200B; wf-88 &#x200B;](assets/wf-88.png)
 
 1. U kunt de vermelde items filteren op basis van een reeks criteria, waarvan er vele kunnen worden verfijnd, bijvoorbeeld:
 
-   ![ wf-89 ](assets/wf-89.png)
+   ![&#x200B; wf-89 &#x200B;](assets/wf-89.png)
 
    >[!NOTE]
    >
-   >Met [ Montages van de Mening ](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van de [ Mening van de Lijst ](#inbox-list-view).
+   >Met [&#x200B; Montages van de Mening &#x200B;](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van de [&#x200B; Mening van de Lijst &#x200B;](#inbox-list-view).

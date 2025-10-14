@@ -30,7 +30,7 @@ Wanneer de controlefunctie is ingeschakeld, kunt u met documentbeveiliging bepaa
 >
 >Gebeurtenissen die worden uitgevoerd op een kopie van een document dat met een beleid is beveiligd, worden ook als gebeurtenissen bijgehouden in het originele beveiligde document.
 
-(Zie [ de controleopties van de Gebeurtenis ](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
+(Zie [&#x200B; de controleopties van de Gebeurtenis &#x200B;](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).)
 
 Een mislukte gebeurtenis wordt geregistreerd als een onbevoegde gebruiker probeert om een document te bekijken of probeert om binnen het gebruiken van een onjuiste gebruikersnaam of een wachtwoord te registreren.
 
@@ -46,9 +46,9 @@ Aan deze instellingsvereisten moet worden voldaan om gebeurteniscontrole uit te 
 
 * Het systeem of de beheerder moet het controlevermogen voor de server toelaten.
 
-  (Zie [ het Vormen gebeurtenis controle en privacy montages ](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (Zie [&#x200B; het Vormen gebeurtenis controle en privacy montages &#x200B;](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
-* Voor het beleid dat u gebruikt om het document te beveiligen, moet controle zijn ingeschakeld. (Zie [ Creërend en het uitgeven beleid ](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+* Voor het beleid dat u gebruikt om het document te beveiligen, moet controle zijn ingeschakeld. (Zie [&#x200B; Creërend en het uitgeven beleid &#x200B;](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Zoeken naar een gebeurtenis {#search-for-an-event}
 
@@ -81,7 +81,7 @@ Ik ben een beleidssetcoördinator:** De vastgestelde coördinatoren van het Bele
 1. Klik op Gebeurtenissen op de pagina Documentbeveiliging.
 1. Selecteer in de lijst Zoeken de zoekcriteria die u wilt gebruiken. Afhankelijk van de selectie in de lijst Zoeken wordt een tweede lijst weergegeven met aanvullende zoekcriteria. Typ, indien van toepassing, in het tekstvak de zoekcriteria.
 
-   Voor meer details over de specifieke gebeurtenistypen, zie [ de controleopties van de Gebeurtenis ](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
+   Voor meer details over de specifieke gebeurtenistypen, zie [&#x200B; de controleopties van de Gebeurtenis &#x200B;](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. Selecteer in de lijst Gebruiker het gebruikerstype dat de gebeurtenis heeft uitgevoerd:
 

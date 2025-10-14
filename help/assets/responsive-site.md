@@ -22,19 +22,19 @@ Gebruik de functie Responsieve code wanneer u de code wilt delen voor responsiev
 
 Deze functie is handig als uw website zich op een WCM van derden bevindt. Als uw website zich echter op Adobe Experience Manager bevindt, wordt de afbeelding door een externe afbeeldingsserver gerenderd en aan de webpagina geleverd.
 
-Zie ook [ bed de VideoKijker op een Web-pagina ](embed-code.md) in.
+Zie ook [&#x200B; bed de VideoKijker op een Web-pagina &#x200B;](embed-code.md) in.
 
-Zie ook [ Verbinding URLs aan uw Toepassing van het Web ](linking-urls-to-yourwebapplication.md).
+Zie ook [&#x200B; Verbinding URLs aan uw Toepassing van het Web &#x200B;](linking-urls-to-yourwebapplication.md).
 
 **om geoptimaliseerde beelden voor een ontvankelijke plaats te leveren:**
 
 1. Navigeer naar de afbeelding waarvoor u responsieve code wilt opgeven en selecteer **[!UICONTROL Renditions]** in het keuzemenu.
 
-   ![ chlimage_1-408 ](assets/chlimage_1-408.png)
+   ![&#x200B; chlimage_1-408 &#x200B;](assets/chlimage_1-408.png)
 
 1. Selecteer een responsieve voorinstelling voor de afbeelding. De knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]** worden weergegeven.
 
-   ![ chlimage_1-409 ](assets/chlimage_1-208.png)
+   ![&#x200B; chlimage_1-409 &#x200B;](assets/chlimage_1-208.png)
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Zie ook [ Verbinding URLs aan uw Toepassing van het Web ](linking-urls-to-yourwe
 
 1. Selecteer **[!UICONTROL RESS]** .
 
-   ![ chlimage_1-410 ](assets/chlimage_1-410.png)
+   ![&#x200B; chlimage_1-410 &#x200B;](assets/chlimage_1-410.png)
 
 1. Selecteer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code, kopieer deze en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardonderbrekingspunten in de insluitcode zodat deze overeenkomen met de onderbrekingspunten van de responsieve website, rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
@@ -53,4 +53,4 @@ Zie ook [ Verbinding URLs aan uw Toepassing van het Web ](linking-urls-to-yourwe
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijd biedt.
 
-Zie [ HTTP2 Levering van Inhoud ](http2.md) voor volledige details bij het worden begonnen HTTP/2 met uw rekening van Dynamic Media te gebruiken.
+Zie [&#x200B; HTTP2 Levering van Inhoud &#x200B;](http2.md) voor volledige details bij het worden begonnen HTTP/2 met uw rekening van Dynamic Media te gebruiken.

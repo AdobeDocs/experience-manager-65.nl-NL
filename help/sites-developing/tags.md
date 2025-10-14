@@ -20,11 +20,11 @@ ht-degree: 2%
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie.
 
-* Zie [ het Beheer Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [ Gebruikend Markeringen ](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud.
+* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud.
 
 De volgende informatie is beschikbaar voor ontwikkelaars:
 
-* [ AEM het Etiketteren Kader ](/help/sites-developing/framework.md) - een beschrijving van de knopen en de eigenschappen die voor het etiketteren worden gebruikt
+* [&#x200B; AEM het Etiketteren Kader &#x200B;](/help/sites-developing/framework.md) - een beschrijving van de knopen en de eigenschappen die voor het etiketteren worden gebruikt
 
-* [ Bouw Tagging in een AEM Toepassing ](/help/sites-developing/building.md) - een beschrijving van APIs die met het etiketterende kader van cliëntkant en server zijcode werken
+* [&#x200B; Bouw Tagging in een AEM Toepassing &#x200B;](/help/sites-developing/building.md) - een beschrijving van APIs die met het etiketterende kader van cliëntkant en server zijcode werken

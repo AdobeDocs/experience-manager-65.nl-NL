@@ -32,7 +32,7 @@ Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met 
 
 ## De oplossing {#the-solution}
 
-AEM Forms integreert met [ Adobe Marketing Cloud ](https://www.adobe.com/marketing-cloud.html) oplossingen - [ Adobe Analytics ](https://www.adobe.com/marketing-cloud/web-analytics.html) en [ Adobe Target ](https://www.adobe.com/marketing-cloud/testing-targeting.html) - die u kunnen helpen controleren en analyseren hoe uw vormen presteren en u toelaten om de ervaring te experimenteren en te identificeren die tot betere omzettingspercentage leidt.
+AEM Forms integreert met [&#x200B; Adobe Marketing Cloud &#x200B;](https://www.adobe.com/marketing-cloud.html) oplossingen - [&#x200B; Adobe Analytics &#x200B;](https://www.adobe.com/marketing-cloud/web-analytics.html) en [&#x200B; Adobe Target &#x200B;](https://www.adobe.com/marketing-cloud/testing-targeting.html) - die u kunnen helpen controleren en analyseren hoe uw vormen presteren en u toelaten om de ervaring te experimenteren en te identificeren die tot betere omzettingspercentage leidt.
 
 ## De workflow {#the-workflow}
 
@@ -68,11 +68,11 @@ Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moe
 1. Configuratieservice voor AEM Forms Analytics configureren in AEM
 1. Analyses inschakelen op het formulier in AEM
 
-Voor gedetailleerde stappen, zie [ het Vormen analyses en rapporten voor adaptieve vormen ](../../forms/using/configure-analytics-forms-documents.md).
+Voor gedetailleerde stappen, zie [&#x200B; het Vormen analyses en rapporten voor adaptieve vormen &#x200B;](../../forms/using/configure-analytics-forms-documents.md).
 
 **vorm Doel**
 
-Om A/B tests voor uw adaptieve vormen tot stand te brengen en in werking te stellen, vorm Doel in AEM Forms zoals die in [ wordt beschreven Opstelling en integreer Doel in AEM Forms ](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Om A/B tests voor uw adaptieve vormen tot stand te brengen en in werking te stellen, vorm Doel in AEM Forms zoals die in [&#x200B; wordt beschreven Opstelling en integreer Doel in AEM Forms &#x200B;](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Stap 2: analyserapport weergeven {#step-view-analytics-report-br}
 
@@ -108,9 +108,9 @@ Bovendien krijgt u de volgende details over elk paneel in de vorm:
 
 * **Hulp**: Aantal tijden hebben de gebruikers tot de in-context hulp voor het paneel en zijn gebieden per 1000 vormvertoningen toegang gehad
 
-![ het rapport van de steekproefanalyse van A voor een adaptieve vorm ](assets/summary-report.png)
+![&#x200B; het rapport van de steekproefanalyse van A voor een adaptieve vorm &#x200B;](assets/summary-report.png)
 
-Voor meer details over de rapporten van de vormenanalyse, zie [ het Bekijken van en het begrip van de analyserapporten van AEM Forms ](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Voor meer details over de rapporten van de vormenanalyse, zie [&#x200B; het Bekijken van en het begrip van de analyserapporten van AEM Forms &#x200B;](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -134,9 +134,9 @@ In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht 
 
 Dankzij de integratie van AEM Forms met Target kunnen A/B-tests voor adaptieve formulieren worden gemaakt. In tests A/B, presenteert u willekeurig verschillende ervaringen van een vorm aan uw klanten in echt - tijd om te weten welke ervaring werkt beter of veroorzaakt meer omzettingen. Zodra u significante gegevens hebt die op één ervaring wijzen die betere omzetting levert dan andere, kunt u dat ervaringen als winnaar verklaren, en de toekomst, het wordt de standaardervaring zichtbaar aan alle klanten.
 
-Voor meer informatie over het creëren van een test A/B voor een adaptieve vorm, zie [ het testen A/B van adaptieve vormen ](../../forms/using/ab-testing-adaptive-forms.md).
+Voor meer informatie over het creëren van een test A/B voor een adaptieve vorm, zie [&#x200B; het testen A/B van adaptieve vormen &#x200B;](../../forms/using/ab-testing-adaptive-forms.md).
 
-![ een steekproefsamenvattingsrapport van A/B test voor een adaptieve vorm ](assets/ab-test-report-4.png)
+![&#x200B; een steekproefsamenvattingsrapport van A/B test voor een adaptieve vorm &#x200B;](assets/ab-test-report-4.png)
 
 ## Aanbevolen procedures {#best-practices}
 

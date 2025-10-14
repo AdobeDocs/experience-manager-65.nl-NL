@@ -28,10 +28,10 @@ De starterkit zorgt ervoor dat je snel door de basisbeginselen van AEM Mobile-on
 
 De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitproberen van een AEM Mobile-toepassing met PhoneGap. Het runnen door starterkit en de verwijzingstoepassing geeft een stevig inzicht in de grondbeginselen om rijke Mobiele Toepassingen tot stand te brengen.
 
-* Gebruik [ AEM de Uitrusting van de Aanzet PhoneGap ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) om apps tot stand te brengen geschikt voor de catalogus van AEM Mobile.
-* A [ verwijzings app ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met volledige bron is gecreeerd die vele van de nieuwe eigenschappen in AEM Mobile aantoont, of u een bestaande app in AEM Mobile migreert of vers begint.
-* Alle steekproeven kunnen op github worden gevonden: [ https://github.com/Adobe-Marketing-Cloud-Apps ](https://github.com/Adobe-Marketing-Cloud-Apps) en omvatten bootstrapping uw project met Maven.
-* De meeste conferentiegesprekken gebruiken het [ Keuken leerprogramma van de Sink ](https://github.com/blefebvre/aem-phonegap-kitchen-sink), dat u ook in GitHub kunt vinden en op het gebruik van inheemse rekbaarheid van Apache Cordova geconcentreerd is.
+* Gebruik [&#x200B; AEM de Uitrusting van de Aanzet PhoneGap &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) om apps tot stand te brengen geschikt voor de catalogus van AEM Mobile.
+* A [&#x200B; verwijzings app &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met volledige bron is gecreeerd die vele van de nieuwe eigenschappen in AEM Mobile aantoont, of u een bestaande app in AEM Mobile migreert of vers begint.
+* Alle steekproeven kunnen op github worden gevonden: [&#x200B; https://github.com/Adobe-Marketing-Cloud-Apps &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps) en omvatten bootstrapping uw project met Maven.
+* De meeste conferentiegesprekken gebruiken het [&#x200B; Keuken leerprogramma van de Sink &#x200B;](https://github.com/blefebvre/aem-phonegap-kitchen-sink), dat u ook in GitHub kunt vinden en op het gebruik van inheemse rekbaarheid van Apache Cordova geconcentreerd is.
 
 >[!NOTE]
 >

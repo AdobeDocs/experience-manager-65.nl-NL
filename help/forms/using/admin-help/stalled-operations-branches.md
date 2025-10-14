@@ -86,4 +86,4 @@ Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak nie
 
 Als de escalatiegebruiker wordt geschrapt alvorens de taak wordt geproduceerd (alvorens de Assign verrichting van de Taak uitvoert), wordt de processtalls of de InvalidPrincipal uitzonderingsgebeurtenis geworpen.
 
-Om dit probleem te verhinderen, wanneer u een gebruiker schrapt, onderzoek naar taken die tot die gebruiker behoren en behandelt hen dienovereenkomstig. (Zie [ Werkend met taken ](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Om dit probleem te verhinderen, wanneer u een gebruiker schrapt, onderzoek naar taken die tot die gebruiker behoren en behandelt hen dienovereenkomstig. (Zie [&#x200B; Werkend met taken &#x200B;](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

@@ -47,8 +47,8 @@ Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;
 1. Wanneer auteurs startpagina&#39;s promoten, slaan ze deze op in het workflowpakket.
 1. Start een workflowmodel met het pakket als de payload.
 
-Om een werkschema automatisch te beginnen wanneer de pagina&#39;s worden bevorderd, [ vormt een werkschemalancerer ](/help/sites-administering/workflows-starting.md#workflows-launchers) voor de pakketknoop.
+Om een werkschema automatisch te beginnen wanneer de pagina&#39;s worden bevorderd, [&#x200B; vormt een werkschemalancerer &#x200B;](/help/sites-administering/workflows-starting.md#workflows-launchers) voor de pakketknoop.
 
 U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s voor Starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
-![ chlimage_1-136 ](assets/chlimage_1-136.png)
+![&#x200B; chlimage_1-136 &#x200B;](assets/chlimage_1-136.png)

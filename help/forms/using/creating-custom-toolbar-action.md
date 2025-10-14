@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisite}
 
-Alvorens u een actie van de douanetoolbar creeert, maak me vertrouwd met [ Gebruikend de Bibliotheken van de Kant van de Cliënt ](/help/sites-developing/clientlibs.md) en [ het Ontwikkelen met CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
+Alvorens u een actie van de douanetoolbar creeert, maak me vertrouwd met [&#x200B; Gebruikend de Bibliotheken van de Kant van de Cliënt &#x200B;](/help/sites-developing/clientlibs.md) en [&#x200B; het Ontwikkelen met CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Wat is een handeling {#what-is-an-action-br}
 
 Een adaptief formulier biedt een werkbalk waarmee een auteur van een formulier een set opties kan configureren. Deze opties worden gedefinieerd als handelingen voor het aangepaste formulier. Klik op de knop Bewerken op de werkbalk voor het deelvenster om de acties in te stellen die worden ondersteund door adaptieve formulieren.
 
-![ Standaardtoolbaracties ](assets/default_toolbar_actions.png)
+![&#x200B; Standaardtoolbaracties &#x200B;](assets/default_toolbar_actions.png)
 
 Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een actie toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
 
@@ -40,7 +40,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
 
    De eigenschap `jcr:title` bevat de naam van de handeling die wordt weergegeven in het werkbalkdialoogvenster. De eigenschap `jcr:description` bevat meer informatie die wordt weergegeven wanneer een gebruiker de aanwijzer op de handeling plaatst.
 
-   ![ Hiërarchie van knopen voor aanpassing van toolbar ](assets/action3.png)
+   ![&#x200B; Hiërarchie van knopen voor aanpassing van toolbar &#x200B;](assets/action3.png)
 
 1. Selecteer `cq:template` node in `reviewbeforesubmit` node. Controleer of de waarde van de eigenschap `guideNodeClass` `guideButton` is en wijzig de eigenschap `jcr:title` dienovereenkomstig.
 1. Wijzig de eigenschap type in het knooppunt `cq:Template` . In het huidige voorbeeld wijzigt u de eigenschap type in button.
@@ -49,7 +49,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
 
 1. Selecteer de aangepaste handeling in het dialoogvenster van de werkbalk voor het bewerken van het aangepaste formulier. De knop Revisie wordt weergegeven op de werkbalk voor het deelvenster.
 
-   ![ de actie van de Douane is beschikbaar in de toolbar ](assets/custom_action_available_in_toolbar.png) ![ tonend de douane-gecreeerde toolbaractie ](assets/action7.png)
+   ![&#x200B; de actie van de Douane is beschikbaar in de toolbar &#x200B;](assets/custom_action_available_in_toolbar.png) ![&#x200B; tonend de douane-gecreeerde toolbaractie &#x200B;](assets/action7.png)
 
 1. Om functionaliteit aan de knoop van het Overzicht te verstrekken, voeg sommige JavaScript en CSS code en server-zijcode in het init.jsp- dossier toe, aanwezig binnen de `reviewbeforesubmit` knoop.
 
@@ -181,7 +181,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
    >
    >De `GuideBridge` -bibliotheek wordt niet geladen in de ontwerpmodus. Deze aangepaste handeling werkt dus niet in de ontwerpmodus.
 
-   ![ Demonstratie van de actie van de knoop van de douaneoverzicht ](assets/action9.png)
+   ![&#x200B; Demonstratie van de actie van de knoop van de douaneoverzicht &#x200B;](assets/action9.png)
 
 ## Voorbeelden {#samples}
 

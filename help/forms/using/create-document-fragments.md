@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Zelfstudie: documentfragmenten maken{#tutorial-create-document-fragments}
 
-![ 05-create-form-data-model-main_small ](assets/05-create-form-data-model-main_small.png)
+![&#x200B; 05-create-form-data-model-main_small &#x200B;](assets/05-create-form-data-model-main_small.png)
 
-Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
+Dit leerprogramma is een stap in [&#x200B; creeer uw eerste Interactieve Communicatie &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) reeks. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
 Documentfragmenten zijn herbruikbare componenten van een correspondentie die worden gebruikt om een interactieve communicatie samen te stellen. De documentfragmenten zijn van de volgende typen:
 
@@ -27,13 +27,13 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 * List - List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen.
 * Voorwaarde - De Voorwaarden laten u toe om te bepalen welke inhoud inbegrepen in Interactieve Mededeling wordt gebaseerd op de gegevens die van het Model van de Gegevens van het Vorm worden ontvangen.
 
-Dit leerprogramma begeleidt u door de stappen om veelvoudige die fragmenten tot stand te brengen van het tekstdocument op de anatomie in [ wordt verstrekt Plan de Interactieve Communicatie ](/help/forms/using/planning-interactive-communications.md) sectie die. Aan het einde van deze zelfstudie moet u het volgende kunnen doen:
+Dit leerprogramma begeleidt u door de stappen om veelvoudige die fragmenten tot stand te brengen van het tekstdocument op de anatomie in [&#x200B; wordt verstrekt Plan de Interactieve Communicatie &#x200B;](/help/forms/using/planning-interactive-communications.md) sectie die. Aan het einde van deze zelfstudie moet u het volgende kunnen doen:
 
 * Documentfragmenten maken
 * Variabelen maken
 * Regels maken en toepassen
 
-![ text_document_fragments ](assets/text_document_fragments.gif)
+![&#x200B; text_document_fragments &#x200B;](assets/text_document_fragments.gif)
 
 Hier volgt een lijst met documentfragmenten die in deze zelfstudie worden gemaakt:
 
@@ -42,11 +42,11 @@ Hier volgt een lijst met documentfragmenten die in deze zelfstudie worden gemaak
 * [Overzicht van Bill](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Overzicht van kosten](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Elk documentfragment bevat velden met statische tekst, gegevens die zijn ontvangen van het formuliergegevensmodel en gegevens die zijn ingevoerd met de gebruikersinterface van de agent. Al deze gebieden zijn afgebeeld in het [ Plan de Interactieve Communicatie ](/help/forms/using/planning-interactive-communications.md) sectie.
+Elk documentfragment bevat velden met statische tekst, gegevens die zijn ontvangen van het formuliergegevensmodel en gegevens die zijn ingevoerd met de gebruikersinterface van de agent. Al deze gebieden zijn afgebeeld in het [&#x200B; Plan de Interactieve Communicatie &#x200B;](/help/forms/using/planning-interactive-communications.md) sectie.
 
 Terwijl het creëren van documentfragmenten in dit leerprogramma, worden de variabelen gecreeerd voor gebieden die gegevens gebruikend de Agent UI ontvangen.
 
-Het gebruik **FDM_Create_First_IC**, zoals die in [ wordt beschreven leidt het model van vormgegevens ](../../forms/using/create-form-data-model0.md) sectie, als model van vormgegevens om documentfragmenten in dit leerprogramma tot stand te brengen.
+Het gebruik **FDM_Create_First_IC**, zoals die in [&#x200B; wordt beschreven leidt het model van vormgegevens &#x200B;](../../forms/using/create-form-data-model0.md) sectie, als model van vormgegevens om documentfragmenten in dit leerprogramma tot stand te brengen.
 
 ## Stap 1: Create Bill Details text Document Fragment {#step-create-bill-details-text-document-fragment}
 
@@ -81,14 +81,14 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
    1. Selecteer **Koord** als type.
    1. Selecteer **creeer**.
 
-   ![ creeer variabele van het type van Koord ](assets/variable_create_string_new.png)
+   ![&#x200B; creeer variabele van het type van Koord &#x200B;](assets/variable_create_string_new.png)
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
    * Billperiod: Het type String
    * BillDate: type Date
 
-   ![ de Details van de Rekening ](assets/variable_bill_details_new.png)
+   ![&#x200B; de Details van de Rekening &#x200B;](assets/variable_bill_details_new.png)
 
 1. Maak statische tekst voor de volgende velden met behulp van het rechterdeelvenster:
 
@@ -97,7 +97,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
    * Bill Date
    * Uw abonnement
 
-   ![ Statische teksten ](assets/variable_bill_details_static_text_new.png)
+   ![&#x200B; Statische teksten &#x200B;](assets/variable_bill_details_static_text_new.png)
 
 1. Plaats de curseur naast het **Factuur Nr** gebied en klik de **InvoiceNumber** variabele van het **&#x200B;**&#x200B;lusje van Variabelen &lbrace;in de linkerruit tweemaal.
 1. Plaats de curseur naast het **gebied van de Periode van de Rekening** en klik de **Billperiod** variabele tweemaal.
@@ -105,7 +105,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 1. Selecteer het **ModelVoorwerpen van Gegevens** lusje in de linkerruit.
 1. Plaats de curseur naast het **Uw gebied van het Plan** en klik de **klant** > **klant** bezit tweemaal.
 
-   ![ rekening_details_customerplan_fdm ](assets/bill_details_customerplan_fdm.png)
+   ![&#x200B; rekening_details_customerplan_fdm &#x200B;](assets/bill_details_customerplan_fdm.png)
 
 1. Klik **sparen** om het de tekstfragment van het Document van Details van de Rekening tot stand te brengen.
 
@@ -161,7 +161,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
    * Statuscode
    * Aantal verbindingen
 
-   ![ de details van de Klant statische teksten ](assets/customer_details_static_text_new.png)
+   ![&#x200B; de details van de Klant statische teksten &#x200B;](assets/customer_details_static_text_new.png)
 
 1. Plaats de curseur naast het **Mobiele gebied van het Aantal** en klik de **klant** > **mobiel** bezit tweemaal.
 1. Plaats de curseur naast het **Afwisselende 1&rbrace; gebied van het Aantal van het Contact &lbrace;en klik het** klant **&#x200B; >** afwisselend enumber **bezit tweemaal.**
@@ -170,7 +170,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 1. Plaats de curseur naast het **gebied van de Code van de Staat 0&rbrace; en klik de** **variabele Statecode tweemaal.**
 1. Plaats de curseur naast het **Aantal Verbindingen** gebied en klik de **variabele van Numberconnections** tweemaal.
 
-   ![ de details van de Klant ](assets/customer_details_df2_new.png)
+   ![&#x200B; de details van de Klant &#x200B;](assets/customer_details_df2_new.png)
 
 1. Klik **sparen** om het de tekstfragment van het Document van de Details van de Klant te creëren.
 
@@ -225,7 +225,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
    * Vervaldatum
    * Te late betalingskosten na de vervaldatum zijn $ 20
 
-   ![ de Samenvattende statische tekst van de Rekening ](assets/bill_summary_static_new.png)
+   ![&#x200B; de Samenvattende statische tekst van de Rekening &#x200B;](assets/bill_summary_static_new.png)
 
 1. Plaats de curseur naast het **Vorige gebied van het Saldo** en klik de **Previousbalance** variabele tweemaal.
 1. Plaats de curseur naast het **gebied van Betalingen** en klik de **variabele van Betalingen** tweemaal.
@@ -234,7 +234,7 @@ Ga als volgt te werk om variabelen voor velden te maken met de gebruikersinterfa
 1. Plaats de curseur naast het **Vereiste gebied van de Datum** en klik **duid** variabele tweemaal.
 1. Selecteer het **ModelVoorwerpen van Gegevens** lusje, plaats de curseur naast het **gebied van de laden huidige factureringsperiode** in de juiste ruit, en klik de **rekeningen** tweemaal > **gebruiksheffingen** bezit.
 
-   ![ Overzicht van de Rekening ](assets/bill_summary_static_variables_new.png)
+   ![&#x200B; Overzicht van de Rekening &#x200B;](assets/bill_summary_static_variables_new.png)
 
 1. Klik **sparen** om het de tekstfragment van het Document van de Details van de Klant te creëren.
 
@@ -280,7 +280,7 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
    * Totale kosten
    * TOTAAL BETAALBAAR
 
-   ![ Summiere Tarieven ](assets/summary_charges_static_new.png)
+   ![&#x200B; Summiere Tarieven &#x200B;](assets/summary_charges_static_new.png)
 
 1. Selecteer de **Modelvoorwerpen van Gegevens** tabel.
 1. Plaats de curseur naast het **gebied van de Heffingen van de Vraag** en klik de **rekeningen** > **callladings** bezit tweemaal.
@@ -293,7 +293,7 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
 1. Plaats de curseur naast het **Volledige gebied van Heffingen** en klik de **rekeningen** > **gebruiksheffingen** bezit tweemaal.
 1. Plaats de curseur naast het **TOTALE BETAALBARE** gebied en klik de **rekeningen** > **gebruiksheffingen** bezit tweemaal.
 
-   ![ Samenvatting van Tarieven ](assets/summary_charges_static_fdm_new.png)
+   ![&#x200B; Samenvatting van Tarieven &#x200B;](assets/summary_charges_static_fdm_new.png)
 
 1. Selecteer de tekst in de **rij van de Diensten van de Waarde Toegevoegde** en uitgezocht **creeer Regel** om een voorwaarde tot stand te brengen die op wordt gebaseerd waarop de rij in de Interactieve Mededeling wordt getoond:
 1. Op **creeer regel** pop-up venster:
@@ -305,6 +305,6 @@ Ga als volgt te werk om statische tekst te maken en elementen van het formulierg
 
    Gebaseerd op deze voorwaarde, wordt de rij van de Heffingen van de Diensten van de Waarde Toegevoegde getoond slechts als de waarde voor het gebied van de Heffingen van de Vraag minder dan 60 is.
 
-   ![ create_rules_caption ](assets/create_rules_caption.gif)
+   ![&#x200B; create_rules_caption &#x200B;](assets/create_rules_caption.gif)
 
 1. Klik **sparen** om de Samenvatting van het Fragment van het Document van de ladingstekst tot stand te brengen.

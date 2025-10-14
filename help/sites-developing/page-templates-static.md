@@ -23,12 +23,12 @@ Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welk
 
 Elke Malplaatje stelt u met een selectie van componenten beschikbaar voor gebruik voor.
 
-* De malplaatjes worden opgebouwd van [ Componenten ](/help/sites-developing/components.md);
+* De malplaatjes worden opgebouwd van [&#x200B; Componenten &#x200B;](/help/sites-developing/components.md);
 * Componenten gebruiken widgets en staan toegang tot deze widgets toe. Deze worden gebruikt om de inhoud te renderen.
 
 >[!NOTE]
 >
->[ Bewerkbare malplaatjes ](/help/sites-developing/page-templates-editable.md) zijn ook beschikbaar en zijn het geadviseerde type van malplaatjes voor de meeste flexibiliteit en de nieuwste eigenschappen.
+>[&#x200B; Bewerkbare malplaatjes &#x200B;](/help/sites-developing/page-templates-editable.md) zijn ook beschikbaar en zijn het geadviseerde type van malplaatjes voor de meeste flexibiliteit en de nieuwste eigenschappen.
 
 ## Eigenschappen en onderliggende knooppunten van een sjabloon {#properties-and-child-nodes-of-a-template}
 
@@ -116,7 +116,7 @@ Er zijn twee aspecten die in overweging moeten worden genomen:
 
 Een Malplaatje wordt gecreeerd onder een knoop van type **cq:Malplaatje**.
 
-![ screen_shot_2012-02-13at63646pm ](assets/screen_shot_2012-02-13at63646pm.png)
+![&#x200B; screen_shot_2012-02-13at63646pm &#x200B;](assets/screen_shot_2012-02-13at63646pm.png)
 
 Er kunnen verschillende eigenschappen worden ingesteld, met name:
 
@@ -125,11 +125,11 @@ Er kunnen verschillende eigenschappen worden ingesteld, met name:
 
 Dit knooppunt bevat een knooppunt jcr:content (cq:PageContent) dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s. Deze node verwijst met sling:resourceType naar de component die moet worden gebruikt voor het weergeven van de daadwerkelijke inhoud van een nieuwe pagina.
 
-![ screen_shot_2012-02-13at64010pm ](assets/screen_shot_2012-02-13at64010pm.png)
+![&#x200B; screen_shot_2012-02-13at64010pm &#x200B;](assets/screen_shot_2012-02-13at64010pm.png)
 
 Deze component wordt gebruikt om de structuur en het ontwerp van de inhoud te bepalen wanneer een nieuwe pagina wordt gecreeerd.
 
-![ screen_shot_2012-02-13at64137pm ](assets/screen_shot_2012-02-13at64137pm.png)
+![&#x200B; screen_shot_2012-02-13at64137pm &#x200B;](assets/screen_shot_2012-02-13at64137pm.png)
 
 ### De inhoud die door een sjabloon wordt geproduceerd {#the-content-produced-by-a-template}
 
@@ -164,21 +164,21 @@ Ga als volgt te werk om een lijst met alle sjablonen in de repository weer te ge
 
 1. Klik **uitvoeren**. De lijst wordt weergegeven in het vak Resultaat.
 
-Gewoonlijk gebruikt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [ het Ontwikkelen van de Malplaatjes van de Pagina ](#developing-page-templates) voor meer informatie.
+Gewoonlijk gebruikt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [&#x200B; het Ontwikkelen van de Malplaatjes van de Pagina &#x200B;](#developing-page-templates) voor meer informatie.
 
 Om een bestaand malplaatje voor uw website toe te laten en u het in **wilt worden getoond leidt de dialoog van de Pagina** wanneer het creëren van een paginerecht onder **Websites** van de **&#x200B;**&#x200B;console Websites, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content (/.&#42;)?**
 
 ## Hoe sjabloonontwerpen worden toegepast {#how-template-designs-are-applied}
 
-Wanneer de stijlen in UI gebruikend [ Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) worden bepaald, wordt het ontwerp voortgeduurd bij de nauwkeurige weg van de inhoudsknoop waarvoor de stijl wordt bepaald.
+Wanneer de stijlen in UI gebruikend [&#x200B; Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) worden bepaald, wordt het ontwerp voortgeduurd bij de nauwkeurige weg van de inhoudsknoop waarvoor de stijl wordt bepaald.
 
 >[!CAUTION]
 >
->De Adobe adviseert slechts het toepassen van ontwerpen door [ Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md).
+>De Adobe adviseert slechts het toepassen van ontwerpen door [&#x200B; Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md).
 >
 >Het wijzigen van ontwerpen in CRXDE Lite is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag.
 
-Als de ontwerpen slechts gebruikend de Wijze van het Ontwerp worden toegepast, dan zijn de volgende secties, [ Resolutie van de Weg van het Ontwerp ](/help/sites-developing/page-templates-static.md#design-path-resolution), [ Beslissingsboom ](/help/sites-developing/page-templates-static.md#decision-tree), en het [ Voorbeeld ](/help/sites-developing/page-templates-static.md#example) niet van toepassing.
+Als de ontwerpen slechts gebruikend de Wijze van het Ontwerp worden toegepast, dan zijn de volgende secties, [&#x200B; Resolutie van de Weg van het Ontwerp &#x200B;](/help/sites-developing/page-templates-static.md#design-path-resolution), [&#x200B; Beslissingsboom &#x200B;](/help/sites-developing/page-templates-static.md#decision-tree), en het [&#x200B; Voorbeeld &#x200B;](/help/sites-developing/page-templates-static.md#example) niet van toepassing.
 
 ### Resolutie ontwerppad {#design-path-resolution}
 
@@ -194,9 +194,9 @@ In de laatste twee gevallen, als er meer dan één toepasselijk ontwerp is, gebr
 
 ### Beslissingsboom {#decision-tree}
 
-Dit is een grafische vertegenwoordiging van de [ logica van de Resolutie van de Weg van het Ontwerp ](/help/sites-developing/page-templates-static.md#design-path-resolution).
+Dit is een grafische vertegenwoordiging van de [&#x200B; logica van de Resolutie van de Weg van het Ontwerp &#x200B;](/help/sites-developing/page-templates-static.md#design-path-resolution).
 
-![ design_path_resolution ](assets/design_path_resolution.png)
+![&#x200B; design_path_resolution &#x200B;](assets/design_path_resolution.png)
 
 ### Voorbeeld {#example}
 
@@ -279,7 +279,7 @@ Een sjabloon maken op basis van een bestaande sjabloon:
 
    >[!NOTE]
    >
-   >De lijst met beschikbare sjablonen is afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven. Zie [ Beschikbaarheid van het Malplaatje ](#templateavailibility).
+   >De lijst met beschikbare sjablonen is afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven. Zie [&#x200B; Beschikbaarheid van het Malplaatje &#x200B;](#templateavailibility).
 
 1. Verander **jcr:titel** van de nieuwe malplaatjeknoop om op zijn nieuwe rol te wijzen. U kunt **jcr ook bijwerken:beschrijving** indien aangewezen. Zorg ervoor dat u de sjabloonbeschikbaarheid van de pagina naar wens wijzigt.
 
@@ -287,7 +287,7 @@ Een sjabloon maken op basis van een bestaande sjabloon:
    >
    >Als u uw malplaatje in **wilt worden getoond creeer de dialoog van de Pagina** wanneer het creëren van een paginerecht onder **Websites** van de **Websites** console, plaats het `allowedPaths` bezit van de malplaatjeknoop aan: `/content(/.*)?`
 
-   ![ chlimage_1-88 ](assets/chlimage_1-88.png)
+   ![&#x200B; chlimage_1-88 &#x200B;](assets/chlimage_1-88.png)
 
 1. Kopieer de component waarop het malplaatje (dit wordt vermeld door **sling:resourceType** bezit van **jcr:content** knoop binnen het malplaatje) wordt gebaseerd om een instantie tot stand te brengen.
 
@@ -313,13 +313,13 @@ Een sjabloon maken op basis van een bestaande sjabloon:
 >
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared` , dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared` . Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze te baseren op voorbeeldinhoud, moet u de naamruimte `cq.shared` wel invoegen.
 >
->Zie [ Gebruikend Cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md) voor verdere informatie.
+>Zie [&#x200B; Gebruikend Cliënt-Kant Bibliotheken &#x200B;](/help/sites-developing/clientlibs.md) voor verdere informatie.
 
 ## Een bestaande sjabloon beschikbaar maken {#making-an-existing-template-available}
 
-In dit voorbeeld wordt getoond hoe u een sjabloon kunt gebruiken voor bepaalde inhoudspaden. De malplaatjes die aan de paginaauteur beschikbaar zijn wanneer het creëren van pagina&#39;s worden bepaald door de logica die in [ de Beschikbaarheid van het Malplaatje ](/help/sites-developing/templates.md#template-availability) wordt bepaald.
+In dit voorbeeld wordt getoond hoe u een sjabloon kunt gebruiken voor bepaalde inhoudspaden. De malplaatjes die aan de paginaauteur beschikbaar zijn wanneer het creëren van pagina&#39;s worden bepaald door de logica die in [&#x200B; de Beschikbaarheid van het Malplaatje &#x200B;](/help/sites-developing/templates.md#template-availability) wordt bepaald.
 
 1. Navigeer in CRXDE Lite naar de sjabloon die u voor de pagina wilt gebruiken, bijvoorbeeld de sjabloon Nieuwsbrief.
-1. Verander het `allowedPaths` bezit en andere eigenschappen die voor [ worden gebruikt malplaatjebeschikbaarheid ](/help/sites-developing/templates.md#template-availability). Bijvoorbeeld `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` betekent dat deze sjabloon is toegestaan in een pad onder `/content/geometrixx-outdoors` .
+1. Verander het `allowedPaths` bezit en andere eigenschappen die voor [&#x200B; worden gebruikt malplaatjebeschikbaarheid &#x200B;](/help/sites-developing/templates.md#template-availability). Bijvoorbeeld `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` betekent dat deze sjabloon is toegestaan in een pad onder `/content/geometrixx-outdoors` .
 
-   ![ chlimage_1-89 ](assets/chlimage_1-89.png)
+   ![&#x200B; chlimage_1-89 &#x200B;](assets/chlimage_1-89.png)

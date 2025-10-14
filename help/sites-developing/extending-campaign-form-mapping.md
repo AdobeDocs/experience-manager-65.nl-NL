@@ -29,7 +29,7 @@ U moet het volgende installeren:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Zie [ Integrerend AEM met Adobe Campaign Classic ](/help/sites-administering/campaignonpremise.md) voor meer informatie.
+Zie [&#x200B; Integrerend AEM met Adobe Campaign Classic &#x200B;](/help/sites-administering/campaignonpremise.md) voor meer informatie.
 
 ## Aangepaste formuliertoewijzingen maken {#creating-custom-form-mappings-2}
 
@@ -61,7 +61,7 @@ Nadat u de gebeurtenislijst creeert, stel de **tovenaar van de het gegevensbesta
 
 In Adobe Campaign, voegt de uitgezochte **&#x200B;**&#x200B;toe om een uitbreiding van **te creëren zaadadressen (nms)** lijst.
 
-![ chlimage_1-194 ](assets/chlimage_1-194.png)
+![&#x200B; chlimage_1-194 &#x200B;](assets/chlimage_1-194.png)
 
 Nu, gebruik de gebieden van de **gebeurtenis** lijst om de **zaadlijst** uit te breiden:
 
@@ -84,7 +84,7 @@ In **Beheer van het Beleid/van de Campagne** niet, ga **Toewijzingen van het Doe
 >
 >Zorg ervoor u een betekenisvolle naam voor **Interne naam** gebruikt.
 
-![ chlimage_1-195 ](assets/chlimage_1-195.png)
+![&#x200B; chlimage_1-195 &#x200B;](assets/chlimage_1-195.png)
 
 ### Een aangepaste leveringssjabloon maken {#creating-a-custom-delivery-template}
 
@@ -92,15 +92,15 @@ In deze stap, voegt u een leveringsmalplaatje toe dat de gecreeerde **afbeelding
 
 In **Middelen/Malplaatjes**, navigeer aan het Malplaatje van de Levering en dupliceer de bestaande AEM levering. Wanneer u **aan** klikt, selecteer creeer gebeurtenis **afbeelding van het Doel**.
 
-![ chlimage_1-196 ](assets/chlimage_1-196.png)
+![&#x200B; chlimage_1-196 &#x200B;](assets/chlimage_1-196.png)
 
 ### Het formulier samenstellen in AEM {#building-the-form-in-aem}
 
 In AEM, zorg ervoor u een Cloud Service in **Eigenschappen van de Pagina** hebt gevormd.
 
-Dan, in het **Adobe Campaign** lusje, selecteer de levering die in [ werd gecreeerd Creërend een Malplaatje van de Levering van de Douane ](#creating-a-custom-delivery-template).
+Dan, in het **Adobe Campaign** lusje, selecteer de levering die in [&#x200B; werd gecreeerd Creërend een Malplaatje van de Levering van de Douane &#x200B;](#creating-a-custom-delivery-template).
 
-![ chlimage_1-197 ](assets/chlimage_1-197.png)
+![&#x200B; chlimage_1-197 &#x200B;](assets/chlimage_1-197.png)
 
 Wanneer u de velden configureert, moet u unieke elementnamen opgeven voor de formuliervelden.
 
@@ -108,17 +108,17 @@ Nadat de gebieden worden gevormd, moet u de afbeelding manueel veranderen.
 
 In CRXDE-lijst, ga **jcr:content** (van de pagina) knoop en verander de **acMapping** waarde aan de interne naam van de **afbeelding van het Doel**.
 
-![ chlimage_1-198 ](assets/chlimage_1-198.png)
+![&#x200B; chlimage_1-198 &#x200B;](assets/chlimage_1-198.png)
 
 Controleer in de configuratie van het formulier of u het selectievakje inschakelt om te maken dat het formulier niet bestaat
 
-![ chlimage_1-199 ](assets/chlimage_1-199.png)
+![&#x200B; chlimage_1-199 &#x200B;](assets/chlimage_1-199.png)
 
 ### Het formulier verzenden {#submitting-the-form}
 
 U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarden zijn opgeslagen.
 
-![ chlimage_1-200 ](assets/chlimage_1-200.png)
+![&#x200B; chlimage_1-200 &#x200B;](assets/chlimage_1-200.png)
 
 ## Problemen oplossen {#troubleshooting}
 

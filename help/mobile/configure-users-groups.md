@@ -37,7 +37,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Maak een gebruikersgroep met de naam &#39;app-authors&#39;:
 
-   Navigeer aan de Admin Console van de Gebruiker: [ http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigeer aan de Admin Console van de Gebruiker: [&#x200B; http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Selecteer in de gebruikersgroepconsole de knop &#39;+&#39; om een groep te maken.
 
@@ -45,17 +45,17 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 1. Lid toevoegen aan groep: Auteurs
 
-   ![ chlimage_1-18 ](assets/chlimage_1-18.png)
+   ![&#x200B; chlimage_1-18 &#x200B;](assets/chlimage_1-18.png)
 
    App-auteurs toevoegen aan de groep Auteurs
 
-1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door de [ Admin Console van de Gebruiker ](http://localhost:4502/libs/granite/security/content/useradmin.md) toevoegen.
+1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door de [&#x200B; Admin Console van de Gebruiker &#x200B;](http://localhost:4502/libs/granite/security/content/useradmin.md) toevoegen.
 
-   ![ chlimage_1-19 ](assets/chlimage_1-19.png)
+   ![&#x200B; chlimage_1-19 &#x200B;](assets/chlimage_1-19.png)
 
    Gebruikersgroepen bewerken
 
-1. Navigeer aan de [ console van Toestemmingen ](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
+1. Navigeer aan de [&#x200B; console van Toestemmingen &#x200B;](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
 
    * (Lezen) op /etc/cloudservices
 
@@ -84,9 +84,9 @@ De leden van app-admins groep kunnen toepassingsinhoud met de zelfde toestemming
    * content-authors
    * workflowgebruikers
 
-   ![ chlimage_1-20 ](assets/chlimage_1-20.png)
+   ![&#x200B; chlimage_1-20 &#x200B;](assets/chlimage_1-20.png)
 
-1. Navigeer aan de [ console van Toestemmingen ](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
+1. Navigeer aan de [&#x200B; console van Toestemmingen &#x200B;](http://localhost:4502/useradmin) en voeg toestemmingen toe om cloudservices te beheren
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/mobileservices
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/phonegap-build
@@ -123,4 +123,4 @@ De tegel bevat momenteel geen handelingen waarvoor machtigingen vereist zijn, ma
 
 In de onderstaande afbeelding ziet u de opties voor downloaden en bewerken voor een app:
 
-![ chlimage_1-21 ](assets/chlimage_1-21.png)
+![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-21.png)

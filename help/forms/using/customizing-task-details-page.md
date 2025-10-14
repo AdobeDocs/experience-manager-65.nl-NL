@@ -21,12 +21,12 @@ De pagina met taakdetails bevat informatie over een taak en de bijbehorende proc
 
 U kunt de volgende informatie toevoegen aan de pagina met taakdetails:
 
-* Informatie beschikbaar in het voorwerp JSON van een taak (de sectie van de Taak in [ de werkruimte van AEM Forms JSON de Beschrijving van Objecten ](/help/forms/using/html-workspace-json-object-description.md))
-* Informatie beschikbaar in het voorwerp JSON van een procesinstantie (de instantiesectie van het Proces in [ de werkruimte van AEM Forms JSON de Beschrijving van Objecten ](/help/forms/using/html-workspace-json-object-description.md))
+* Informatie beschikbaar in het voorwerp JSON van een taak (de sectie van de Taak in [&#x200B; de werkruimte van AEM Forms JSON de Beschrijving van Objecten &#x200B;](/help/forms/using/html-workspace-json-object-description.md))
+* Informatie beschikbaar in het voorwerp JSON van een procesinstantie (de instantiesectie van het Proces in [&#x200B; de werkruimte van AEM Forms JSON de Beschrijving van Objecten &#x200B;](/help/forms/using/html-workspace-json-object-description.md))
 
 De pagina met taakdetails aanpassen:
 
-1. Volg [ Algemene stappen voor de werkruimte van AEM Forms aanpassing.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Volg [&#x200B; Algemene stappen voor de werkruimte van AEM Forms aanpassing.](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. Om om het even welke extra informatie te tonen, voeg overeenkomstige zeer belangrijk-waardeparen aan het `translation.json` dossier bij `todo` blok > `details` blok > `app` blok > [`required` blok ] toe.
 
    Het [`required` blok ] verwijst naar beschikbare blokken, zoals het taakblok voor taakinformatie, procesblok voor procesinformatie, en het huidige-pendingtask blok voor hangende taakinformatie.
@@ -85,4 +85,4 @@ De pagina met taakdetails aanpassen:
 >
 >Om de pagina van taakdetails met taken aan te passen die in het **1&rbrace; lusje van het Proces van het Begin van de werkruimte van AEM Forms worden gecreeerd, voeg de nieuwe informatie aan `/apps/ws/js/runtime/templates/startprocess.html` toe.**
 >
->Om nieuwe stijlen voor de informatie toe te voegen die in de detailspagina wordt toegevoegd, wijzig het CSS dossier door de *sectie van de Veranderingen van het gebruikersinterface* in [ Aanpassing van Workspace ](changing-locale-user-interface.md) te gebruiken.
+>Om nieuwe stijlen voor de informatie toe te voegen die in de detailspagina wordt toegevoegd, wijzig het CSS dossier door de *sectie van de Veranderingen van het gebruikersinterface* in [&#x200B; Aanpassing van Workspace &#x200B;](changing-locale-user-interface.md) te gebruiken.

@@ -28,8 +28,8 @@ Het maken van een AEM Mobile On-demand Services-app is niet hetzelfde als het re
 >
 >Zie de volgende bronnen voor meer informatie over plug-ins:
 >
->* [ Gebruikend stop-ins Cordova in AEM Mobile ](https://helpx.adobe.com/nl/digital-publishing-solution/help/cordova-api.html)
->* [ Gebruikend AEM Mobile specifieke Cordova-Toegelaten stop-ins ](https://helpx.adobe.com/nl/digital-publishing-solution/help/app-runtime-api.html)
+>* [&#x200B; Gebruikend stop-ins Cordova in AEM Mobile &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/cordova-api.html)
+>* [&#x200B; Gebruikend AEM Mobile specifieke Cordova-Toegelaten stop-ins &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Sjablonen die plug-infunctionaliteit gebruiken, moeten zo worden geschreven dat ze nog steeds in de browser kunnen worden geschreven, zonder dat de plug-inbridge aanwezig is.
@@ -59,7 +59,7 @@ De volgende richtlijnen helpen bevoegde AEM ontwikkelaars voor sites die sjablon
 
 >[!NOTE]
 >
->U kunt meer in detail over render-blokkerende externe manuscripten [ hier ](https://developers.google.com/speed/docs/insights/BlockingJS) leren.
+>U kunt meer in detail over render-blokkerende externe manuscripten [&#x200B; hier &#x200B;](https://developers.google.com/speed/docs/insights/BlockingJS) leren.
 
 **verkies app-specifieke cliënt-kant JS en CSS bibliotheken over web-specific**
 
@@ -68,13 +68,13 @@ De volgende richtlijnen helpen bevoegde AEM ontwikkelaars voor sites die sjablon
 
 >[!NOTE]
 >
->Om meer diepgaand over jQuery mobiel te leren, klik [ hier ](https://jquerymobile.com/browser-support/1.4/).
+>Om meer diepgaand over jQuery mobiel te leren, klik [&#x200B; hier &#x200B;](https://jquerymobile.com/browser-support/1.4/).
 
 **voorkeur microbibliotheken over volledig-stapel**
 
 * De tijd die nodig is om de inhoud op het glas van het apparaat te krijgen, wordt vertraagd door elke bibliotheek waarvan uw artikelen afhankelijk zijn. Deze vertraging wordt vergroot wanneer een nieuwe webweergave wordt gebruikt om elk artikel te renderen. Elke bibliotheek moet dus opnieuw volledig worden geïnitialiseerd
 * Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen bibliotheek met volledige stapels zoals Angular op te nemen
-* Voorkeur kleinere, enig-doelbibliotheken die helpen interactiviteit toevoegen uw pagina vereist, zoals [ Fastclick ](https://github.com/ftlabs/fastclick) of [ Velocity.js ](https://velocityjs.org)
+* Voorkeur kleinere, enig-doelbibliotheken die helpen interactiviteit toevoegen uw pagina vereist, zoals [&#x200B; Fastclick &#x200B;](https://github.com/ftlabs/fastclick) of [&#x200B; Velocity.js &#x200B;](https://velocityjs.org)
 
 **minimaliseer grootte van artikellading**
 

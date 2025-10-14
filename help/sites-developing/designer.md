@@ -20,25 +20,25 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. De Adobe adviseert gebruikend de recentste AEM technologieën voor uw websites zoals die in detail in artikel [ worden beschreven Begonnen het Ontwikkelen van AEM Sites ](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. De Adobe adviseert gebruikend de recentste AEM technologieën voor uw websites zoals die in detail in artikel [&#x200B; worden beschreven Begonnen het Ontwikkelen van AEM Sites &#x200B;](/help/sites-developing/getting-started.md).
 
-Designer wordt gebruikt om een ontwerp voor uw website tot stand te brengen gebruikend [ Klassieke UI ](/help/release-notes/touch-ui-features-status.md) in AEM.
+Designer wordt gebruikt om een ontwerp voor uw website tot stand te brengen gebruikend [&#x200B; Klassieke UI &#x200B;](/help/release-notes/touch-ui-features-status.md) in AEM.
 
 >[!NOTE]
 >
->Voor meer informatie over de toegankelijkheid van het Web, zie [ AEM en de Richtlijnen van de Toegankelijkheid van het Web ](/help/managing/web-accessibility.md).
+>Voor meer informatie over de toegankelijkheid van het Web, zie [&#x200B; AEM en de Richtlijnen van de Toegankelijkheid van het Web &#x200B;](/help/managing/web-accessibility.md).
 
 ## De Designer gebruiken {#using-the-designer}
 
 Uw ontwerp kan in de **ontwerpen** sectie van de **Hulpmiddelen** tabel worden bepaald:
 
-![ screen_shot_2012-02-01at30237pm ](assets/screen_shot_2012-02-01at30237pm.png)
+![&#x200B; screen_shot_2012-02-01at30237pm &#x200B;](assets/screen_shot_2012-02-01at30237pm.png)
 
 Hier kunt u de structuur maken die nodig is om het ontwerp op te slaan en vervolgens de trapsgewijze stijlpagina&#39;s en de vereiste afbeeldingen uploaden.
 
 Ontwerpen worden opgeslagen onder `/apps/<your-project>` . Het pad naar het ontwerp dat voor een website moet worden gebruikt, wordt opgegeven met de eigenschap `cq:designPath` van het knooppunt `jcr:content` .
 
-![ chlimage_1-74 ](assets/chlimage_1-74a.png)
+![&#x200B; chlimage_1-74 &#x200B;](assets/chlimage_1-74a.png)
 
 >[!NOTE]
 >

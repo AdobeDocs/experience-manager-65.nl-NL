@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Vanaf de Gemeenschappen [ FP1 ](deploy-communities.md#latestfeaturepack), kunnen de communautaire leden met de gemeenschap door e-mail interactie aangaan gebruikend een eigenschap die als abonnementen wordt bedoeld.
+Vanaf de Gemeenschappen [&#x200B; FP1 &#x200B;](deploy-communities.md#latestfeaturepack), kunnen de communautaire leden met de gemeenschap door e-mail interactie aangaan gebruikend een eigenschap die als abonnementen wordt bedoeld.
 
-De abonnementen zijn gelijkaardig aan [ berichten ](notifications.md) aangezien de leden kunnen intekenen wanneer het volgende blogartikelen, forumonderwerpen of vragen QnA.
+De abonnementen zijn gelijkaardig aan [&#x200B; berichten &#x200B;](notifications.md) aangezien de leden kunnen intekenen wanneer het volgende blogartikelen, forumonderwerpen of vragen QnA.
 
 Abonnementen worden onderscheiden van meldingen:
 
@@ -36,15 +36,15 @@ Abonnementen worden onderscheiden van meldingen:
 
 E-mail moet worden gevormd om abonnementen te functioneren en voor leden te antwoorden per e-mail.
 
-Voor instructies bij vestiging e-mail, zie [ het Vormen E-mail ](email.md).
+Voor instructies bij vestiging e-mail, zie [&#x200B; het Vormen E-mail &#x200B;](email.md).
 
 **laat Abonnementen toe en volgt**
 
-De componenten moeten worden gevormd om abonnementen *en* volgend toe te laten. De eigenschappen die abonnementen toestaan zijn [ blog ](blog-feature.md), [ forum ](forum.md) en [ QnA ](working-with-qna.md).
+De componenten moeten worden gevormd om abonnementen *en* volgend toe te laten. De eigenschappen die abonnementen toestaan zijn [&#x200B; blog &#x200B;](blog-feature.md), [&#x200B; forum &#x200B;](forum.md) en [&#x200B; QnA &#x200B;](working-with-qna.md).
 
 ## Abonnementen van volgende {#subscriptions-from-following}
 
-![ abonnement-volgend ](assets/subscription-following.png)
+![&#x200B; abonnement-volgend &#x200B;](assets/subscription-following.png)
 
 **volgt** knoop verstrekt een middel om ingangen als activiteiten, abonnementen en/of berichten te volgen. Telkens als **volgt** knoop wordt geselecteerd, is het mogelijk om op of van een selectie van een knevel te voorzien.
 
@@ -58,12 +58,12 @@ Als om het even welke methode van het volgende wordt geselecteerd, verandert de 
 
 ## Reageren per e-mail {#reply-by-email}
 
-Wanneer e-mail [ voor het antwoorden door e-mail ](email.md#configure-polling-importer) wordt gevormd, zal het lid dat zich abonneert een e-mail met de geposte inhoud en een verbinding aan de online inhoud ontvangen.
+Wanneer e-mail [&#x200B; voor het antwoorden door e-mail &#x200B;](email.md#configure-polling-importer) wordt gevormd, zal het lid dat zich abonneert een e-mail met de geposte inhoud en een verbinding aan de online inhoud ontvangen.
 
 Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord invoeren, online weergegeven als inhoud.
 
-![ e-mail-antwoord ](assets/email-reply.png)
+![&#x200B; e-mail-antwoord &#x200B;](assets/email-reply.png)
 
-De hoeveelheid tijd het voor een te posten antwoord neemt wordt gecontroleerd door het [ pollende de updateinterval van de importeur ](email.md#configure-polling-importer).
+De hoeveelheid tijd het voor een te posten antwoord neemt wordt gecontroleerd door het [&#x200B; pollende de updateinterval van de importeur &#x200B;](email.md#configure-polling-importer).
 
-![ QA ](assets/qa.png)
+![&#x200B; QA &#x200B;](assets/qa.png)

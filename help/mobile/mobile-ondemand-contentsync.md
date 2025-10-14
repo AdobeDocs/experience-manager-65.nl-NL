@@ -75,9 +75,9 @@ Wanneer AEM is geïnstalleerd, kunnen leden van de beheerdersgroep standaard dow
 
 De dienst van de Manager van de Synchronisatie van de Inhoud van de Dag CQ bepaalt toegang tot de Synchronisatie van de Inhoud. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
 
-Als u [ de dienst vormt gebruikend de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
+Als u [&#x200B; de dienst vormt gebruikend de Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
 
-Als u [ vormt in de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), gebruik de volgende informatie over de dienst:
+Als u [&#x200B; vormt in de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), gebruik de volgende informatie over de dienst:
 
 * PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Eigenschapnaam: contentsync.fallback.authorizable
@@ -116,7 +116,7 @@ Verwerking kan variëren van het renderen van eenvoudige JSON tot volledige rend
 
 * **weg** - als de weg aan één enkel dossier richt, slechts wordt het dossier gekopieerd. Als de map naar een map verwijst (inclusief paginaknooppunten), worden alle onderstaande bestanden en mappen gekopieerd.
 
-**inhoud** geeft inhoud terug gebruikend standaard [ het Verschuiven verzoekverwerking ](/help/sites-developing/the-basics.md#sling-request-processing).
+**inhoud** geeft inhoud terug gebruikend standaard [&#x200B; het Verschuiven verzoekverwerking &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing).
 
 * **weg** - Weg aan middel dat output zou moeten zijn.
 * **uitbreiding** - Uitbreiding die in het verzoek zou moeten worden gebruikt. De gemeenschappelijke voorbeelden zijn *html* en *json*, maar een andere uitbreiding is mogelijk.
@@ -168,7 +168,7 @@ Elke eigenschap kan een van de volgende waarden hebben:
 
 * `REWRITE_RELATIVE` : herschrijft het pad met een relatieve positie ten opzichte van het bestand page.html op het bestandssysteem.
 
-* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [ dienst ExternalAlizer ](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [&#x200B; dienst ExternalAlizer &#x200B;](/help/sites-developing/externalizer.md).
 
 De AEM dienst riep **PathRewriterTransformerFactory** laat u de specifieke html attributen vormen die zullen worden herschreven. De service kan worden geconfigureerd in de webconsole en heeft een configuratie voor elke eigenschap van de node `rewrite` : `clientlibs` , `images` en `links` .
 
@@ -214,7 +214,7 @@ Hieronder ziet u een voorbeeldconfiguratie voor Content Sync.
 
 **etc.designs.default en etc.designs.mobile** - De eerste twee ingangen van de configuratie zijn duidelijk. Als u meerdere mobiele pagina&#39;s wilt opnemen, hebt u de bijbehorende ontwerpbestanden nodig onder /etc/designs. En omdat er geen extra verwerkingstijd nodig is, volstaat een kopie.
 
-**events.plist** - Deze ingang is een beetje speciaal. Zoals vermeld in de inleiding, zou de toepassing een kaartweergave van tellers van de plaatsen van de gebeurtenissen moeten verstrekken. De benodigde locatiegegevens worden als een afzonderlijk bestand in PLIST-indeling verstrekt. Dit werkt alleen wanneer de component met de gebeurtenislijst die op de indexpagina wordt gebruikt, een script heeft met de naam plist.jsp. Dit script wordt uitgevoerd wanneer de bron van de component wordt aangevraagd met de `.plist` -extensie. Zoals gebruikelijk, wordt de componentenweg gegeven in het wegbezit en het type wordt geplaatst aan inhoud, omdat u [ het Schuiven verzoekverwerking ](/help/sites-developing/the-basics.md#sling-request-processing) wilt gebruiken.
+**events.plist** - Deze ingang is een beetje speciaal. Zoals vermeld in de inleiding, zou de toepassing een kaartweergave van tellers van de plaatsen van de gebeurtenissen moeten verstrekken. De benodigde locatiegegevens worden als een afzonderlijk bestand in PLIST-indeling verstrekt. Dit werkt alleen wanneer de component met de gebeurtenislijst die op de indexpagina wordt gebruikt, een script heeft met de naam plist.jsp. Dit script wordt uitgevoerd wanneer de bron van de component wordt aangevraagd met de `.plist` -extensie. Zoals gebruikelijk, wordt de componentenweg gegeven in het wegbezit en het type wordt geplaatst aan inhoud, omdat u [&#x200B; het Schuiven verzoekverwerking &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing) wilt gebruiken.
 
 **events.touch.html** - komt dan de daadwerkelijke pagina&#39;s die in app worden getoond. De eigenschap path wordt ingesteld op de hoofdpagina van de gebeurtenis. Alle gebeurtenispagina&#39;s onder die pagina worden ook opgenomen, omdat de eigenschap deep standaard op true wordt ingesteld. U gebruikt pagina&#39;s als configuratietype, zodat alle afbeeldingen of andere bestanden waarnaar kan worden verwezen vanuit een afbeelding of downloadcomponent op een pagina, worden opgenomen. Bovendien geeft het instellen van de aanraakkiezer ons een mobiele versie van de pagina&#39;s. De configuratie in het eigenschappak bevat meer ingangen van dit type, maar zij worden verlaten hier voor eenvoud.
 
@@ -243,7 +243,7 @@ De console is toegankelijk op:
 
 Het ziet er als volgt uit:
 
-![ chlimage_1-50 ](assets/chlimage_1-50.png)
+![&#x200B; chlimage_1-50 &#x200B;](assets/chlimage_1-50.png)
 
 ### Uitbreiding van het raamwerk voor contentsynchronisatie {#extending-the-content-sync-framework}
 
@@ -254,7 +254,7 @@ Voor elk configuratietype, is er de Handler van de Update van de a *Inhoud*, die
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface die alle updatehandlers moeten implementeren
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Een abstracte klasse die het teruggeven van middelen gebruikend het Verkopen vereenvoudigt
 
-Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend de [ Gemaakt SCR gestopt insteekmodule ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) of gebruikend markeringen JavaDoc of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
+Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend de [&#x200B; Gemaakt SCR gestopt insteekmodule &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) of gebruikend markeringen JavaDoc of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
 
 ```java
 /*

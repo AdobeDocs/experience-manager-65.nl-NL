@@ -18,11 +18,11 @@ Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als dee
 
 Gebruikend het **pictogram van de Voorproef**:
 
-![ de Redacteur van het Fragment van de Inhoud - het lusje van de Voorproef ](assets/cfm-preview-01.png)
+![&#x200B; de Redacteur van het Fragment van de Inhoud - het lusje van de Voorproef &#x200B;](assets/cfm-preview-01.png)
 
 U kunt de JSON-weergave van het huidige fragment weergeven. Bijvoorbeeld:
 
-![ de Redacteur van het Fragment van de Inhoud - Voorproef van een Fragment ](assets/cfm-preview-02.png)
+![&#x200B; de Redacteur van het Fragment van de Inhoud - Voorproef van een Fragment &#x200B;](assets/cfm-preview-02.png)
 
 <!--
 **Copy URL** lets you copy to clipboard the URL for either author or publish.

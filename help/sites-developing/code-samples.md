@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Codevoorbeelden{#code-samples}
 
-Het team van de Diensten van Adobe Consulting heeft een reeks van de codesteekproeven van Adobe Experience Manager (AEM) geproduceerd. Deze steekproeven zijn goed-becommentarieerde stukken van code helpen AEM Ontwikkelaars de belangrijkste bouwstenen van AEM begrijpen. De steekproeven zijn hier beschikbaar: [ https://adobe-consulting-services.github.io/acs-aem-samples/ ](https://adobe-consulting-services.github.io/acs-aem-samples/).
+Het team van de Diensten van Adobe Consulting heeft een reeks van de codesteekproeven van Adobe Experience Manager (AEM) geproduceerd. Deze steekproeven zijn goed-becommentarieerde stukken van code helpen AEM Ontwikkelaars de belangrijkste bouwstenen van AEM begrijpen. De steekproeven zijn hier beschikbaar: [&#x200B; https://adobe-consulting-services.github.io/acs-aem-samples/ &#x200B;](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Een meerdelig leerprogramma dat voor ontwikkelaars nieuw wordt ontworpen om fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt, en componentenontwikkeling te AEM behandelen: [ Begonnen het worden met AEM Sites - WKND Leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
+Een meerdelig leerprogramma dat voor ontwikkelaars nieuw wordt ontworpen om fundamentele onderwerpen zoals projectopstelling, de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt, en componentenontwikkeling te AEM behandelen: [&#x200B; Begonnen het worden met AEM Sites - WKND Leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
 
-Een Gemaakt malplaatje om een AEM project als uitgangspunt tot stand te brengen om uw eigen functionaliteit te ontwikkelen is beschikbaar [ op GitHub - AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype).
+Een Gemaakt malplaatje om een AEM project als uitgangspunt tot stand te brengen om uw eigen functionaliteit te ontwikkelen is beschikbaar [&#x200B; op GitHub - AEM Archetype van het Project &#x200B;](https://github.com/adobe/aem-project-archetype).
 
-De standaard, aanraking-toegelaten UI codesteekproeven zijn beschikbaar van [ het Ontwikkelen AEM Componenten ](/help/sites-developing/developing-components.md).
+De standaard, aanraking-toegelaten UI codesteekproeven zijn beschikbaar van [&#x200B; het Ontwikkelen AEM Componenten &#x200B;](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >

@@ -43,14 +43,14 @@ Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of 
 
 ## De status van een gebruiker buiten kantoor wijzigen {#change-a-user-s-out-of-office-status}
 
-1. Vind de gebruiker, zoals die in [ wordt beschreven Mening een gebruiker uit de informatie van het Bureau ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Vind de gebruiker, zoals die in [&#x200B; wordt beschreven Mening een gebruiker uit de informatie van het Bureau &#x200B;](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Klik op de naam van de gebruiker die u wilt wijzigen.
 1. Van de *Naam van de Gebruiker* is momenteel lijst, uitgezocht of in het Bureau of uit het Bureau.
 1. Klik op Opslaan.
 
 ## Voeg een uit de datumwaaier van het Bureau voor een gebruiker toe {#add-an-out-of-office-date-range-for-a-user}
 
-1. Vind de gebruiker, zoals die in [ wordt beschreven Mening een gebruiker uit de informatie van het Bureau ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Vind de gebruiker, zoals die in [&#x200B; wordt beschreven Mening een gebruiker uit de informatie van het Bureau &#x200B;](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Klik op de naam van de gebruiker die u wilt wijzigen.
 1. Klik op Datumbereik toevoegen.
 1. Voer een begintijd en eindtijd in. U kunt op het pictogram Kalender klikken om een datum te selecteren. Als u geen eindtijd specificeert, zal de gebruiker onbeperkt uit bureau worden geplaatst.
@@ -65,7 +65,7 @@ Wanneer een gebruiker buiten het kantoor is, kunt u een of meer gebruikers toewi
 * Wijs een standaardgebruiker toe die de meeste taken van de gebruiker zal ontvangen, maar specificeer dat de taken van bepaalde processen aan andere gebruikers opnieuw worden toegewezen of aan de gebruiker blijven die uit het bureau is toegewezen.
 * Wijs geen standaardgebruiker toe, maar wijs bepaalde taken van bepaalde processen aan specifieke gebruikers toe.
 
-   1. Vind de gebruiker, zoals die in [ wordt beschreven Mening een gebruiker uit de informatie van het Bureau ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+   1. Vind de gebruiker, zoals die in [&#x200B; wordt beschreven Mening een gebruiker uit de informatie van het Bureau &#x200B;](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Klik op de naam van de gebruiker die u wilt wijzigen.
    1. In de StandaardGebruiker voor uit de lijst van Taken van het Bureau, selecteer een gebruiker van de lijst. Als u geen standaardgebruiker wilt aanwijzen om opnieuw toegewezen punten te ontvangen, uitgezocht wijs niet toe.
 

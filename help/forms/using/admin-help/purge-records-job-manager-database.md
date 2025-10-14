@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangeroepen, kunnen te groot worden, wat resulteert in lagere AEM formulierprestaties en het gebruik van overbodige schijfruimte. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
 
-U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methodes om verouderde verslagen te zuiveren worden besproken in [ het zuiveren procesgegevens ](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
+U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methodes om verouderde verslagen te zuiveren worden besproken in [&#x200B; het zuiveren procesgegevens &#x200B;](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **heb toegang tot de pagina van de Planner van de Weigering van de Baan**
 

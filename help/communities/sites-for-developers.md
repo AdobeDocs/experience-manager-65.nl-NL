@@ -61,7 +61,7 @@ Bijvoorbeeld: `/content/sites/engage/en/configuration`
 
 `vertical-sitepage.hbs` is bijvoorbeeld een sitesjabloon dat leidt tot de verticale plaatsing van menukoppelingen links op de pagina in plaats van horizontaal onder de banner.
 
-[ krijgt Dossier ](assets/vertical-sitepage.hbs)
+[&#x200B; krijgt Dossier &#x200B;](assets/vertical-sitepage.hbs)
 Plaats de sjabloon voor de aangepaste site in de overlaymap:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
@@ -70,21 +70,21 @@ Identificeer het douanemalplaatje door een `page-template` bezit aan de configur
 
 `/content/sites/sample/en/configuration`
 
-![ crxde-siteconfiguration ](assets/crxde-siteconfiguration.png)
+![&#x200B; crxde-siteconfiguration &#x200B;](assets/crxde-siteconfiguration.png)
 
 Ben zeker om **te bewaren allen** en douanecode aan alle (AEM) instanties van Adobe Experience Manager te herhalen (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
 
-De geadviseerde praktijk voor het herhalen van douanecode moet [ een pakket ](../../help/sites-administering/package-manager.md#creating-a-new-package) tot stand brengen en het op alle instanties opstellen.
+De geadviseerde praktijk voor het herhalen van douanecode moet [&#x200B; een pakket &#x200B;](../../help/sites-administering/package-manager.md#creating-a-new-package) tot stand brengen en het op alle instanties opstellen.
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
 Wanneer een communitysite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in Package Manager en dat beschikbaar is voor downloaden en uploaden.
 
-Dit is beschikbaar bij de [ console van Plaatsen van Gemeenschappen ](sites-console.md#exporting-the-site).
+Dit is beschikbaar bij de [&#x200B; console van Plaatsen van Gemeenschappen &#x200B;](sites-console.md#exporting-the-site).
 
 UGC en aangepaste code worden niet opgenomen in het pakket met de communitysite.
 
-Om UGC uit te voeren, gebruik het [ Hulpmiddel van de Migratie van AEM Communities UGC ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), een open-bron migratiehulpmiddel beschikbaar op GitHub.
+Om UGC uit te voeren, gebruik het [&#x200B; Hulpmiddel van de Migratie van AEM Communities UGC &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), een open-bron migratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
@@ -114,7 +114,7 @@ U kunt als volgt de unieke site-id identificeren die is gekoppeld aan de communi
 
 Verkrijg het gemeenschap-srp-hulpmiddelen project van GitHub:
 
-* [ https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
+* [&#x200B; https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Dit bevat servlet om al UGC van om het even welk SRP te schrappen.
 
@@ -122,13 +122,13 @@ Alle UGC kan worden verwijderd of voor een specifieke site, bijvoorbeeld:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Hiermee verwijdert u alleen door de gebruiker gegenereerde inhoud (ingevoerd bij publicatie) en geen geschreven inhoud (ingevoerd bij auteur). Daarom [ worden de schaduwknopen ](srp.md#shadownodes) niet beïnvloed.
+Hiermee verwijdert u alleen door de gebruiker gegenereerde inhoud (ingevoerd bij publicatie) en geen geschreven inhoud (ingevoerd bij auteur). Daarom [&#x200B; worden de schaduwknopen &#x200B;](srp.md#shadownodes) niet beïnvloed.
 
 ### Gebruikersgroepen van de Gemeenschap {#community-user-groups}
 
-Op alle auteur en publiceer instanties, van de [ veiligheidsconsole ](../../help/sites-administering/security.md), bepaal de plaats, en verwijder de [ gebruikersgroepen ](users.md) die zijn:
+Op alle auteur en publiceer instanties, van de [&#x200B; veiligheidsconsole &#x200B;](../../help/sites-administering/security.md), bepaal de plaats, en verwijder de [&#x200B; gebruikersgroepen &#x200B;](users.md) die zijn:
 
 * Vooraf ingesteld met `community`
-* Gevolgd door [ unieke plaats identiteitskaart ](#community-unique-site-id)
+* Gevolgd door [&#x200B; unieke plaats identiteitskaart &#x200B;](#community-unique-site-id)
 
 Bijvoorbeeld `community-engage-x0e11-members` .

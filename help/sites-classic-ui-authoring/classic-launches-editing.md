@@ -26,7 +26,7 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud v
 1. Open de pagina voor bewerking.
 1. In Sidekick, selecteer het **Versioning** lusje, breid dan de **Lanceereenheden** groep uit. De titel van de opstart die momenteel wordt bewerkt, gebruikt een vet lettertype.
 
-   ![ chlimage_1-13 ](assets/chlimage_1-13.jpeg)
+   ![&#x200B; chlimage_1-13 &#x200B;](assets/chlimage_1-13.jpeg)
 
 1. Selecteer de lancering die u wilt werken en dan **Schakelaar** klikken.
 1. Bewerken starten.
@@ -39,7 +39,7 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud v
 
 Nadat u een lancering creeert kunt u de lanceringsnaam en de datum van de lancering veranderen. U kunt ook een afbeelding opgeven die u aan het starten wilt koppelen.
 
-1. Open de pagina van het lanceerbeleid ([ http://localhost:4502/libs/launches/content/admin.html ](http://localhost:4502/libs/launches/content/admin.html)).
+1. Open de pagina van het lanceerbeleid ([&#x200B; http://localhost:4502/libs/launches/content/admin.html &#x200B;](http://localhost:4502/libs/launches/content/admin.html)).
 
 1. Selecteer de vereiste lancering en klik **uitgeven** om de dialoog te openen:
 
@@ -49,7 +49,7 @@ Nadat u een lancering creeert kunt u de lanceringsnaam en de datum van de lancer
       * **Levende Datum**: dit is gelijkwaardig aan de lanceringsdatum
       * **Productie Klaar**
 
-     Zie [ Lanceringen - de Orde van Gebeurtenissen ](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van deze gebieden.
+     Zie [&#x200B; Lanceringen - de Orde van Gebeurtenissen &#x200B;](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van deze gebieden.
 
    * In het **Beeld** lusje, kunt u een beelddossier uploaden.
 
@@ -64,4 +64,4 @@ Wanneer u een lancering van een pagina uitgeeft, verschijnt de informatie over d
 * De gebruiker die de laatste wijziging heeft uitgevoerd.
 * De status van de **Klaar 1&rbrace; vlag van de Productie &lbrace;(orange=niet plaats; green=set).**
 
-![ chlimage_1-186 ](assets/chlimage_1-186.png)
+![&#x200B; chlimage_1-186 &#x200B;](assets/chlimage_1-186.png)

@@ -38,13 +38,13 @@ Het grootste voordeel van het gebruik van hashes is dat u wachtwoorden niet rech
 
 >[!NOTE]
 >
->Er zijn enkele bekende beveiligingsproblemen (zogenaamde hash-botsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld. Voor meer informatie, zie de [ Botsing ](https://en.wikipedia.org/wiki/Hash_collision) en [ Regenbooglijst ](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
+>Er zijn enkele bekende beveiligingsproblemen (zogenaamde hash-botsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld. Voor meer informatie, zie de [&#x200B; Botsing &#x200B;](https://en.wikipedia.org/wiki/Hash_collision) en [&#x200B; Regenbooglijst &#x200B;](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
 
 ## Scriptobjecten onderzoeken {#examining-script-objects}
 
 Wanneer u een van de twee beschikbare voorbeelden opent in AEM Forms op JEE Designer, vindt u de vier scriptobjecten in het palet Hiërarchie (zie onderstaande afbeelding).
 
-![ Variabelen ](assets/variables.jpg)
+![&#x200B; Variabelen &#x200B;](assets/variables.jpg)
 
 Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wilt bekijken, selecteert u het scriptobject en bekijkt u de code in de Scripteditor. U kunt zien hoe elk van de volgende knoeiboelfuncties is uitgevoerd:
 
@@ -118,9 +118,9 @@ Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken. 
 
 ## Attributen {#attributions}
 
-* [ Ronald Rivest ](https://en.wikipedia.org/wiki/Ron_Rivest)
-* [ NIST ](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [ botsing van de Hash ](https://en.wikipedia.org/wiki/Hash_collision)
-* [ Regenbooglijst ](https://en.wikipedia.org/wiki/Rainbow_table)
-* [ JavaScript MD5 het projecthuis pagina ](https://pajhome.org.uk/crypt/md5/)
-* [ jsSHA2 het projecthuis pagina ](https://anmar.eu.org/projects/jssha2/)
+* [&#x200B; Ronald Rivest &#x200B;](https://en.wikipedia.org/wiki/Ron_Rivest)
+* [&#x200B; NIST &#x200B;](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
+* [&#x200B; botsing van de Hash &#x200B;](https://en.wikipedia.org/wiki/Hash_collision)
+* [&#x200B; Regenbooglijst &#x200B;](https://en.wikipedia.org/wiki/Rainbow_table)
+* [&#x200B; JavaScript MD5 het projecthuis pagina &#x200B;](https://pajhome.org.uk/crypt/md5/)
+* [&#x200B; jsSHA2 het projecthuis pagina &#x200B;](https://anmar.eu.org/projects/jssha2/)

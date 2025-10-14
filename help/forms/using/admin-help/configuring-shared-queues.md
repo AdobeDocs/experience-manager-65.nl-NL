@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gedeelde wachtrijen configureren{#configuring-shared-queues}
 
-Met gedeelde wachtrijen kunt u gebruikerswachtrijen effectief configureren en beheren. Een gebruikersrij is eenvoudig alle taken die aan een gebruiker worden toegewezen, zie [ om Lijsten ](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) voor meer informatie te doen. U kunt gebruikersrijen toewijzen, ongedaan maken en opnieuw toewijzen, afhankelijk van uw organisatorische behoeften. U kunt Gedeelde wachtrijen op twee manieren beheren:
+Met gedeelde wachtrijen kunt u gebruikerswachtrijen effectief configureren en beheren. Een gebruikersrij is eenvoudig alle taken die aan een gebruiker worden toegewezen, zie [&#x200B; om Lijsten &#x200B;](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) voor meer informatie te doen. U kunt gebruikersrijen toewijzen, ongedaan maken en opnieuw toewijzen, afhankelijk van uw organisatorische behoeften. U kunt Gedeelde wachtrijen op twee manieren beheren:
 
 **beheert toegang tot een gebruiker**
 

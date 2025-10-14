@@ -22,14 +22,14 @@ ht-degree: 0%
 
 ## Adobe Experience Manager-onderdelen (AEM) maken die toegang hebben tot apparaatfuncties {#building-aem-components-that-access-device-features}
 
-De [ AEM opslag van PhoneGap Kitchen ](https://github.com/blefebvre/aem-phonegap-kitchen-sink) GitHub verstrekt ontwikkelaars van een functionele AEM app die het gebruik van verscheidene kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android™ via PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
+De [&#x200B; AEM opslag van PhoneGap Kitchen &#x200B;](https://github.com/blefebvre/aem-phonegap-kitchen-sink) GitHub verstrekt ontwikkelaars van een functionele AEM app die het gebruik van verscheidene kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android™ via PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
 
-![ chlimage_1-107 ](assets/chlimage_1-107.png)
+![&#x200B; chlimage_1-107 &#x200B;](assets/chlimage_1-107.png)
 
-De broncode voor elk van deze apparaat API componenten is [ beschikbaar op GitHub ](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
+De broncode voor elk van deze apparaat API componenten is [&#x200B; beschikbaar op GitHub &#x200B;](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
 Zie de Cordova-insteekmoduledocumentatie (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`) voor meer informatie over het gebruik van elke API.
 
 ## De volgende stappen {#the-next-steps}
 
-Zie [ AppPrestaties van het Spoor met Adobe Mobiele Analytics ](/help/mobile/phonegap-intro-to-app-analytics.md).
+Zie [&#x200B; AppPrestaties van het Spoor met Adobe Mobiele Analytics &#x200B;](/help/mobile/phonegap-intro-to-app-analytics.md).

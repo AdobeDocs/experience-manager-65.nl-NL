@@ -20,21 +20,21 @@ ht-degree: 20%
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U bedt URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Als u Experience Manager als uw WCM gebruikt, [ voegt u de activa direct op uw pagina ](adding-dynamic-media-assets-to-pages.md) toe.
+U bedt URLs slechts als u *niet* gebruikend Adobe Experience Manager als uw WCM bent. Als u Experience Manager als uw WCM gebruikt, [&#x200B; voegt u de activa direct op uw pagina &#x200B;](adding-dynamic-media-assets-to-pages.md) toe.
 
-Zie [ Verbinding URLs aan uw Toepassing van het Web ](linking-urls-to-yourwebapplication.md).
+Zie [&#x200B; Verbinding URLs aan uw Toepassing van het Web &#x200B;](linking-urls-to-yourwebapplication.md).
 
-Zie [ geoptimaliseerde beelden voor een ontvankelijke plaats leveren ](responsive-site.md).
+Zie [&#x200B; geoptimaliseerde beelden voor een ontvankelijke plaats leveren &#x200B;](responsive-site.md).
 
 >[!NOTE]
 >
 >De insluitcode kan pas worden gekopieerd nadat u het geselecteerde element hebt gepubliceerd. Daarnaast moet u ook de voorinstelling van de viewer of de voorinstelling van de afbeelding publiceren.
 >
->Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
+>Zie [&#x200B; de activa van Publish &#x200B;](publishing-dynamicmedia-assets.md).
 >
->Zie [ de Kijker van Publish stelt ](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
+>Zie [&#x200B; de Kijker van Publish stelt &#x200B;](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
 >
->Zie [ het Beeld van Publish vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+>Zie [&#x200B; het Beeld van Publish vooraf instelt &#x200B;](managing-image-presets.md#publishing-image-presets).
 
 **om de Video van Dynamic Media, de kijker van het Beeld, of de Dimensionele kijker op een Web-pagina in te bedden:**
 
@@ -42,11 +42,11 @@ Zie [ geoptimaliseerde beelden voor een ontvankelijke plaats leveren ](responsiv
 
    Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [ de activa van Publish ](publishing-dynamicmedia-assets.md).
+   Zie [&#x200B; de activa van Publish &#x200B;](publishing-dynamicmedia-assets.md).
 
-   Zie [ de Kijker van Publish stelt ](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
+   Zie [&#x200B; de Kijker van Publish stelt &#x200B;](managing-viewer-presets.md#publishing-viewer-presets) vooraf in.
 
-   Zie [ het Beeld van Publish vooraf instelt ](managing-image-presets.md#publishing-image-presets).
+   Zie [&#x200B; het Beeld van Publish vooraf instelt &#x200B;](managing-image-presets.md#publishing-image-presets).
 
 1. Selecteer in de linkertrack het vervolgkeuzemenu en selecteer **[!UICONTROL Viewers]** .
 1. Selecteer in het linkerspoor een naam voor de viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
@@ -58,4 +58,4 @@ Zie [ geoptimaliseerde beelden voor een ontvankelijke plaats leveren ](responsiv
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [ HTTP2 Levering van Inhoud ](http2.md) voor volledige details bij het worden begonnen HTTP/2 met uw rekening van Dynamic Media te gebruiken.
+Zie [&#x200B; HTTP2 Levering van Inhoud &#x200B;](http2.md) voor volledige details bij het worden begonnen HTTP/2 met uw rekening van Dynamic Media te gebruiken.

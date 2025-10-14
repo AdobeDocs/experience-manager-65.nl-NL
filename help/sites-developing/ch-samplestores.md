@@ -110,7 +110,7 @@ De opslag gebruikt een gegevensboom die aan het volgende voorbeeld gelijkaardig 
 
 >[!NOTE]
 >
->Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. AEM forceert daarom https-gebruik voor geolocatie-API-aanroepen als AEM ook over https wordt uitgevoerd. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong. Zie [ dit Google blogbericht ](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer details over de verandering in Chrome.
+>Een veiligheidsbeleid dat in Chrome 50.x wordt geïntroduceerd vereist dat alle aan geolocatie gerelateerde vraag over een beveiligde verbinding wordt gemaakt. AEM forceert daarom https-gebruik voor geolocatie-API-aanroepen als AEM ook over https wordt uitgevoerd. Anders wordt http gebruikt om te voldoen aan het beleid van dezelfde oorsprong. Zie [&#x200B; dit Google blogbericht &#x200B;](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) voor meer details over de verandering in Chrome.
 
 ## contexthub.surferinfo Sample Store Candidate {#contexthub-surferinfo-sample-store-candidate}
 

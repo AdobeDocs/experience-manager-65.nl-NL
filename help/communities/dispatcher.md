@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## AEM Communities {#aem-communities}
 
-Voor AEM Communities, is het noodzakelijk om Dispatcher te vormen om het behoorlijk functioneren van [ communautaire plaatsen ](overview.md#community-sites) te verzekeren. Er zijn aanvullende configuraties nodig wanneer u functies zoals aanmelden via een sociaal netwerk opneemt.
+Voor AEM Communities, is het noodzakelijk om Dispatcher te vormen om het behoorlijk functioneren van [&#x200B; communautaire plaatsen &#x200B;](overview.md#community-sites) te verzekeren. Er zijn aanvullende configuraties nodig wanneer u functies zoals aanmelden via een sociaal netwerk opneemt.
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
-* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support)
+* De Zorg van de Klant van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)
 
-Zie ook de belangrijkste [ documentatie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
+Zie ook de belangrijkste [&#x200B; documentatie van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL).
 
 ## Dispatcher Caching {#dispatcher-caching}
 
@@ -42,8 +42,8 @@ Wanneer dit is geconfigureerd om Dispatcher caching te ondersteunen, wordt een o
 
 ### Vereisten {#requirements}
 
-* Dispatcher versie 4.1.2 of later (zie [ Installing Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL) voor de recentste versie)
-* [ ACS AEM Commons pakket ](https://adobe-consulting-services.github.io/acs-aem-commons/)
+* Dispatcher versie 4.1.2 of later (zie [&#x200B; Installing Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL) voor de recentste versie)
+* [&#x200B; ACS AEM Commons pakket &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versie 3.3.2 of hoger
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi config
@@ -52,14 +52,14 @@ Wanneer dit is geconfigureerd om Dispatcher caching te ondersteunen, wordt een o
 
 De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van Dispatcher - Max Leeftijd** plaatst de vervaldatum van caching pagina&#39;s die onder een gespecificeerde weg verschijnen.
 
-* Van de [ Console van het Web ](../../help/sites-deploying/configuring-osgi.md).
+* Van de [&#x200B; Console van het Web &#x200B;](../../help/sites-deploying/configuring-osgi.md).
 
-   * Bijvoorbeeld, [ http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoeken `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Selecteer het plusteken (+) zodat u een verbindingsconfiguratie kunt tot stand brengen.
 
-  ![ dispatcher ](assets/dispatcher.png)
+  ![&#x200B; dispatcher &#x200B;](assets/dispatcher.png)
 
 * **Patronen van de Filter**
   *(vereist)* Één of meerdere wegen aan communautaire pagina&#39;s. Bijvoorbeeld `/content/sites/engage/(.*)` .
@@ -69,7 +69,7 @@ De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Gehei
 
 ## Dispatcher-filters {#dispatcher-filters}
 
-De /filter sectie van het `dispatcher.any` dossier wordt gedocumenteerd in [ het Vormen Toegang tot Inhoud - /filter ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL).
+De /filter sectie van het `dispatcher.any` dossier wordt gedocumenteerd in [&#x200B; het Vormen Toegang tot Inhoud - /filter &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL).
 
 In deze sectie worden vermeldingen beschreven die waarschijnlijk nodig zijn voor het goed functioneren van functies van Gemeenschappen.
 
@@ -79,7 +79,7 @@ In de volgende voorbeelden worden eigenschapsnamen gebruikt die moeten worden ge
 
 Zie ook:
 
-* [ Controlelijst van de Veiligheid van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL)
+* [&#x200B; Controlelijst van de Veiligheid van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Zie ook:
 
 >[!CAUTION]
 >
->Zie [ Controlelijst van de Veiligheid van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL) voor verdere overwegingen wanneer het beperken van toegang gebruikend Dispatcher. Ook, lees de [ Controlelijst van de Veiligheid AEM ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) voor extra veiligheidsdetails betreffende uw AEM installatie.
+>Zie [&#x200B; Controlelijst van de Veiligheid van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL) voor verdere overwegingen wanneer het beperken van toegang gebruikend Dispatcher. Ook, lees de [&#x200B; Controlelijst van de Veiligheid AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) voor extra veiligheidsdetails betreffende uw AEM installatie.
 >
 
 De volgende ingangen zouden aan het eind van de /filter sectie, vooral na alle ontkende ingangen moeten worden toegevoegd.

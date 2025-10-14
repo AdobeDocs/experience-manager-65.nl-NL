@@ -38,7 +38,7 @@ Voordat u A/B-tests gaat maken en analyseren op adaptieve formulieren, moet u ee
 
 Zorg ervoor dat u een geldig Adobe Target-account hebt om AEM met Target te integreren. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de cliëntcode, e-mail verbonden aan de rekening van het Doel, en wachtwoord nodig om AEM met Doel te verbinden.
 
-De clientcode identificeert de Adobe Target-klantenaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Alvorens te werk te gaan, login aan [ https://experience.adobe.com/ ](https://experience.adobe.com/) en, als u toegang hebt, bekijk de [!DNL Adobe Target] optie in de [!UICONTROL Quick Access] sectie.
+De clientcode identificeert de Adobe Target-klantenaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Alvorens te werk te gaan, login aan [&#x200B; https://experience.adobe.com/ &#x200B;](https://experience.adobe.com/) en, als u toegang hebt, bekijk de [!DNL Adobe Target] optie in de [!UICONTROL Quick Access] sectie.
 
 ### Een actieve doelserver integreren met AEM Forms {#integrate-target-in-aem-forms}
 
@@ -55,7 +55,7 @@ Als u een doel voor het eerst vormt, klik **nu vormen.**
 
 1. Klik **verbinden met Adobe Target** zodat kunt u de verbinding met Doel initialiseren. Als de verbinding succesvol is, wordt het bericht Verbinding succesvol getoond. Klik **O.K.** op het bericht en dan **O.K.** op de dialoog. De doelaccount is geconfigureerd.
 
-1. Creeer een kader van het Doel zoals die in [ wordt beschreven voeg een kader ](/help/sites-administering/target.md) toe.
+1. Creeer een kader van het Doel zoals die in [&#x200B; wordt beschreven voeg een kader &#x200B;](/help/sites-administering/target.md) toe.
 
 1. Ga naar https://&lt;*hostname*>:&lt; *haven*>/system/console/configMgr.
 
@@ -80,7 +80,7 @@ Naast JBoss® server, kunt u - Dabtesting.enabled=true jvm argument in het serve
 
 >[!NOTE]
 >
->Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Voor informatie over het bijwerken van tests A/B, zie [ de test van A/B van de Update ](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Voor informatie over het bijwerken van tests A/B, zie [&#x200B; de test van A/B van de Update &#x200B;](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 >
 
 ## Soorten publiek maken binnen AEM {#create-audiences-within-aem}

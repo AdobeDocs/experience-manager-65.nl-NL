@@ -53,7 +53,7 @@ Ga als volgt te werk, zodat u een aangepaste sjabloon kunt maken voor verschille
    >De titel kan verschillen van de knooppuntnaam van sling:Folder u creeerde.
 
    In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.
-   ![ Creërend een helling:Omslag ](assets/1.png)
+   ![&#x200B; Creërend een helling:Omslag &#x200B;](assets/1.png)
 
 1. Maak een bestandssjabloon.html in deze map zodat deze kan dienen als aangepaste sjabloon.
 1. Schrijf de aangepaste sjabloon en gebruik aangepaste metagegevens zoals hieronder beschreven.
@@ -154,7 +154,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 1. Terwijl het creëren van verbindingen aan open concepten en voorlegging, kunt u **$ {path} $** als waarde van het **href** attribuut voor de ankermarkering specificeren.
 
-![ Concepten en de knoop van de Verzending ](assets/raw-image-with-index.png)
+![&#x200B; Concepten en de knoop van de Verzending &#x200B;](assets/raw-image-with-index.png)
 
 **A**. Containerelement
 

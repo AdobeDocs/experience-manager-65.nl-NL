@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ## SRP {#about-srp}
 
-Alle componenten en eigenschappen van AEM Communities worden voortgebouwd op het [ sociale componentenkader (SCF) ](/help/communities/scf.md), dat sociaalResourceProvider API roept om tot alle gebruiker toegang te hebben geproduceerde inhoud (UGC).
+Alle componenten en eigenschappen van AEM Communities worden voortgebouwd op het [&#x200B; sociale componentenkader (SCF) &#x200B;](/help/communities/scf.md), dat sociaalResourceProvider API roept om tot alle gebruiker toegang te hebben geproduceerde inhoud (UGC).
 
-Alvorens een communautaire plaats wordt gecreeerd, moet de [ leverancier van het opslagmiddel (SRP) ](/help/communities/working-with-srp.md) worden gevormd om een implementatie te selecteren verenigbaar met de onderliggende [ topologie ](/help/communities/topologies.md). De implementatie SRP is gebaseerd op drie opslagopties:
+Alvorens een communautaire plaats wordt gecreeerd, moet de [&#x200B; leverancier van het opslagmiddel (SRP) &#x200B;](/help/communities/working-with-srp.md) worden gevormd om een implementatie te selecteren verenigbaar met de onderliggende [&#x200B; topologie &#x200B;](/help/communities/topologies.md). De implementatie SRP is gebaseerd op drie opslagopties:
 
-1. [ ASRP ](/help/communities/asrp.md) - Adobe opslag op bestelling
-1. [ MSRP ](/help/communities/msrp.md) - MongoDB
-1. [ JSRP ](/help/communities/jsrp.md) - JCR
+1. [&#x200B; ASRP &#x200B;](/help/communities/asrp.md) - Adobe opslag op bestelling
+1. [&#x200B; MSRP &#x200B;](/help/communities/msrp.md) - MongoDB
+1. [&#x200B; JSRP &#x200B;](/help/communities/jsrp.md) - JCR
 
 ## Informatie over UGC-opslag {#about-ugc-storage}
 
-Wat belangrijk is om over opslag van UGC te weten is, wanneer een plaats wordt gevormd om ASRP of MSRP te gebruiken, wordt daadwerkelijke UGC niet opgeslagen in AEM [ knoopopslag ](/help/sites-deploying/data-store-config.md) (JCR).
+Wat belangrijk is om over opslag van UGC te weten is, wanneer een plaats wordt gevormd om ASRP of MSRP te gebruiken, wordt daadwerkelijke UGC niet opgeslagen in AEM [&#x200B; knoopopslag &#x200B;](/help/sites-deploying/data-store-config.md) (JCR).
 
 Hoewel er knooppunten in JCR kunnen zijn die de UGC schaduw geven om nuttige metagegevens te verschaffen, moeten deze knooppunten niet worden verward met de werkelijke UGC.
 
-Zie [ Overzicht van de Leverancier van het Middel van de Opslag.](/help/communities/srp.md)
+Zie [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag.](/help/communities/srp.md)
 
 ## Beste praktijken {#best-practice}
 
@@ -72,8 +72,8 @@ Voor meer informatie, zie {de Hoofdzaak van het 0} Onderzoek [&#128279;](/help/c
 
 ## Bronnen {#resources}
 
-* [ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) - bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
-* [ Overzicht van de Leverancier van het Middel van de Opslag ](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik
-* [ SRP en Hoofdzaak UGC ](/help/communities/srp-and-ugc.md) - de gebruiksmethodes en voorbeelden van SRP
-* [ Hoofdzaak van het Onderzoek ](/help/communities/search-implementation.md) - essentiële informatie voor het zoeken UGC
-* [ SocialUtils die ](/help/communities/socialutils.md) Refactoring - in kaart gebrachte nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [&#x200B; Communautaire Opslag van de Inhoud &#x200B;](/help/communities/working-with-srp.md) - bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
+* [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik
+* [&#x200B; SRP en Hoofdzaak UGC &#x200B;](/help/communities/srp-and-ugc.md) - de gebruiksmethodes en voorbeelden van SRP
+* [&#x200B; Hoofdzaak van het Onderzoek &#x200B;](/help/communities/search-implementation.md) - essentiële informatie voor het zoeken UGC
+* [&#x200B; SocialUtils die &#x200B;](/help/communities/socialutils.md) Refactoring - in kaart gebrachte nutsmethodes aan huidige SRP hulpprogrammamethodes

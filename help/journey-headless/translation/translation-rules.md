@@ -18,7 +18,7 @@ Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze vertaalreis, [ vorm vertaalintegratie ](configure-connector.md) u leerde om uw vertaalintegratie te installeren en te vormen en zou nu moeten:
+In het vorige document van de AEM hoofdloze vertaalreis, [&#x200B; vorm vertaalintegratie &#x200B;](configure-connector.md) u leerde om uw vertaalintegratie te installeren en te vormen en zou nu moeten:
 
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
@@ -49,7 +49,7 @@ Omdat de Modellen van het Fragment van de Inhoud, die de structuur van uw Inhoud
 
 >[!TIP]
 >
->Over het algemeen verstrekt de inhoudarchitect de vertaalspecialist van de **Naam van het Bezit** van alle gebieden nodig voor vertaling. Deze namen zijn nodig om vertaalregels te configureren. Als vertaalspecialist, kunt u [ deze **Naam van het Bezit** ](getting-started.md#content-models) vinden zoals eerder beschreven in deze reis.
+>Over het algemeen verstrekt de inhoudarchitect de vertaalspecialist van de **Naam van het Bezit** van alle gebieden nodig voor vertaling. Deze namen zijn nodig om vertaalregels te configureren. Als vertaalspecialist, kunt u [&#x200B; deze **Naam van het Bezit** &#x200B;](getting-started.md#content-models) vinden zoals eerder beschreven in deze reis.
 
 ## Vertaalregels maken {#creating-rules}
 
@@ -65,21 +65,21 @@ Er is de console van de Configuratie van de a **Vertaling** beschikbaar voor het
 In de **Configuratie van de Vertaling** UI, zijn er verscheidene opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
 
 1. Klik **toevoegen Context**, die u een weg laat toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
-   ![ voeg context ](assets/add-translation-context.png) toe
+   ![&#x200B; voeg context &#x200B;](assets/add-translation-context.png) toe
 1. Gebruik wegbrowser om de vereiste weg te selecteren en **te klikken bevestigen** knoop om te bewaren. Inhoudsfragmenten, die inhoud zonder kop bevatten, bevinden zich doorgaans onder `/content/dam/<your-project>` .
-   ![ selecteer de weg ](assets/select-context.png)
+   ![&#x200B; selecteer de weg &#x200B;](assets/select-context.png)
 1. AEM slaat de configuratie op.
 1. Selecteer de context u creeerde en klik dan **uitgeven**. Dit opent de **Redacteur van de Regels van de Vertaling** om de eigenschappen te vormen.
-   ![ redacteur van de Regels van de Vertaling ](assets/translation-rules-editor.png)
+   ![&#x200B; redacteur van de Regels van de Vertaling &#x200B;](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam` . Schakel de optie **Overnemen van`/content/dam`** uit om extra gebieden aan de configuratie toe te voegen.
-1. Zodra ongecontroleerd, onder de **Algemene** sectie van de lijst, voeg de bezitsnamen van de Model(s) van het Fragment van de Inhoud toe die u [ eerder als gebieden voor vertaling identificeerde.](getting-started.md#content-models)
+1. Zodra ongecontroleerd, onder de **Algemene** sectie van de lijst, voeg de bezitsnamen van de Model(s) van het Fragment van de Inhoud toe die u [&#x200B; eerder als gebieden voor vertaling identificeerde.](getting-started.md#content-models)
    1. Ga de bezitsnaam op het **Nieuwe gebied van het Bezit** in.
    1. De opties **vertalen** en **overerven** worden automatisch gecontroleerd.
    1. Klik **toevoegen**.
    1. Herhaal deze stappen voor alle velden die u moet vertalen.
    1. Klik **sparen**.
 
-      ![ voeg bezit ](assets/add-property.png) toe
+      ![&#x200B; voeg bezit &#x200B;](assets/add-property.png) toe
 
 U hebt nu uw vertaalregels geconfigureerd.
 
@@ -87,7 +87,7 @@ U hebt nu uw vertaalregels geconfigureerd.
 
 Er zijn verscheidene extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
-Zulke eigenschappen zijn over het algemeen niet nodig begonnen uw hoofdloze inhoud te lokaliseren, maar u kunt over hen verder in de [ Aanvullende sectie van Middelen ](#additional-resources) lezen als u geinteresseerd bent.
+Zulke eigenschappen zijn over het algemeen niet nodig begonnen uw hoofdloze inhoud te lokaliseren, maar u kunt over hen verder in de [&#x200B; Aanvullende sectie van Middelen &#x200B;](#additional-resources) lezen als u geinteresseerd bent.
 
 ## Volgende functies {#what-is-next}
 
@@ -96,10 +96,10 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
 
-Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud ](translate-content.md) waar u zult leren hoe uw integratie en regels samenwerken om hoofdloze inhoud te vertalen.
+Bouw op deze kennis voort en zet uw AEM hoofdloze vertaalreis door het document [&#x200B; te herzien vertaalt inhoud &#x200B;](translate-content.md) waar u zult leren hoe uw integratie en regels samenwerken om hoofdloze inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien vertaalt inhoud ](translate-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [&#x200B; te herzien vertaalt inhoud &#x200B;](translate-content.md) beweegt, zijn het volgende sommige extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [ identificerend Inhoud om ](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
+* [&#x200B; identificerend Inhoud om &#x200B;](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.

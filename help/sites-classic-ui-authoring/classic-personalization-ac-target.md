@@ -32,7 +32,7 @@ De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campag
 
 Segmenten maken:
 
-1. Open de [ segmentation console ](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Open de [&#x200B; segmentation console &#x200B;](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
 1. Creeer een pagina en ga een titel in - bijvoorbeeld, **AC Segmenten** - en selecteer het **Segment (Adobe Campaign)** malplaatje.
 1. Selecteer de gemaakte pagina in de structuurweergave aan de linkerkant.
 1. Creeer een segment, bijvoorbeeld, richtend mannelijke gebruikers, door een pagina onder het segment te creëren u genoemd Mannelijk creeerde en het **Segment (Adobe Campaign)** malplaatje selecteert.
@@ -77,7 +77,7 @@ Een nieuwsbrief met doelinhoud maken:
 
    >[!NOTE]
    >
-   >[ E-mailsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md#weretail). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
+   >[&#x200B; E-mailsteekproeven zijn slechts beschikbaar in Geometrixx &#x200B;](/help/sites-developing/we-retail.md#weretail). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
 1. Voeg in de nieuwsbrief een component Text en Personalization toe.
 1. Voeg tekst toe aan de component Text en Personalization, bijvoorbeeld &quot;Dit is de standaardinstelling&quot;.
@@ -91,7 +91,7 @@ Een nieuwsbrief met doelinhoud maken:
 
 1. Klik **Gebrek** en dan de component van de Tekst en van Personalization u toevoegde en u ziet de Bullseye met een pijl in het. Klik op het pictogram om deze component als doel in te stellen.
 
-   ![ chlimage_1-165 ](assets/chlimage_1-165.png)
+   ![&#x200B; chlimage_1-165 &#x200B;](assets/chlimage_1-165.png)
 
 1. Navigeer aan een ander segment (Mannelijk), en klik **voeg aanbieding** toe en klik plus pictogram +. Bewerk vervolgens het voorstel.
 1. Navigeer aan een ander segment (Vrouwelijk) en klik **voeg aanbieding** en plus pictogram + toe. Bewerk dit voorstel vervolgens.
@@ -103,7 +103,7 @@ Een nieuwsbrief met doelinhoud maken:
 
    In de weergave HTML staan de verschillende ervaringen van doelcomponenten in Adobe Campaign-code voor doelcomponenten.
 
-   ![ chlimage_1-166 ](assets/chlimage_1-166.png)
+   ![&#x200B; chlimage_1-166 &#x200B;](assets/chlimage_1-166.png)
 
    >[!NOTE]
    >

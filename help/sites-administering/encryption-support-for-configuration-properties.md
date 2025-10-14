@@ -35,20 +35,20 @@ Deze stappen tonen hoe te om het wachtwoord SMTP voor de dienst van de Post te c
 1. Ga naar de AEM Console van het Web in *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. In de hogere linkerhoek, ga **Hoofd - Crypto Steun**
 
-   ![ chlimage_1-325 ](assets/chlimage_1-325.png)
+   ![&#x200B; chlimage_1-325 &#x200B;](assets/chlimage_1-325.png)
 
 1. De **Crypto van de Console van het Web van Adobe Experience Manager** pagina wordt getoond.
 
-   ![ screen_shot_2018-08-01at113417am ](assets/screen_shot_2018-08-01at113417am.png)
+   ![&#x200B; screen_shot_2018-08-01at113417am &#x200B;](assets/screen_shot_2018-08-01at113417am.png)
 
 1. Op het **gebied van de Tekst van 0&rbrace; Ononderbroken &lbrace;, ga de tekst van de gevoelige gegevens in u wilt beschermen.**
 1. Selecteer **Protect**. De beveiligde tekst wordt weergegeven als gecodeerde tekst.
 
-   ![ screen_shot_2018-08-01at113844am ](assets/screen_shot_2018-08-01at113844am.png)
+   ![&#x200B; screen_shot_2018-08-01at113844am &#x200B;](assets/screen_shot_2018-08-01at113844am.png)
 
 1. Kopieer de beveiligde tekst uit Stap#5 en plak deze in de waarde OSGI-formulier. In dit voorbeeld, wordt het gecrypteerde **wachtwoord SMTP** toegevoegd aan de *Dienst van de Post van CQ van de Dag*.
 
-   ![ screen_shot_2016-12-18at105809pm ](assets/screen_shot_2016-12-18at105809pm.png)
+   ![&#x200B; screen_shot_2016-12-18at105809pm &#x200B;](assets/screen_shot_2016-12-18at105809pm.png)
 
 1. Sla de eigenschappen van de Day CQ Mail Service op. Het SMTP-wachtwoord wordt nu verzonden als een gecodeerde waarde.
 

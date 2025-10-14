@@ -24,7 +24,7 @@ Door gebrek, gebruikt AEM de Symbolische Handler van de Authentificatie om elk v
 
 Dit is van bijzonder belang voor horizontale schaalbaarheid. In een multi-instance opstelling zoals hieronder afgebeeld publiceert landbouwbedrijf, lading het in evenwicht brengen kan niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
 
-![ chlimage_1-33 ](assets/chlimage_1-33a.png)
+![&#x200B; chlimage_1-33 &#x200B;](assets/chlimage_1-33a.png)
 
 Neem het volgende scenario als voorbeeld:
 
@@ -42,7 +42,7 @@ Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze ver
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
-![ chlimage_1-34 ](assets/chlimage_1-34a.png)
+![&#x200B; chlimage_1-34 &#x200B;](assets/chlimage_1-34a.png)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Plak de twee eerder gekopieerde bestanden.
-1. [ verfrist de Bundel van Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
+1. [&#x200B; verfrist de Bundel van Crypto &#x200B;](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 

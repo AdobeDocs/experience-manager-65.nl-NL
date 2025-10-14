@@ -71,7 +71,7 @@ Deze functie is handig wanneer meerdere gebruikers samenwerken en verschillende 
 
 Als deze functie is ingeschakeld, kunt u de verwante versies van een document bekijken vanaf de pagina Documenten.
 
-1. Bekijk de pagina Documentdetails voor een document. (Zie [ informatie van de Mening over een document ](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
+1. Bekijk de pagina Documentdetails voor een document. (Zie [&#x200B; informatie van de Mening over een document &#x200B;](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
 1. Klik op Verwante herhalingen weergeven. De optie is alleen beschikbaar als de functie is ingeschakeld. De lijst met verwante herhalingen wordt weergegeven. Voor elke herhaling kunt u de volgende informatie weergeven:
 
    * **Herhaling:** filename. De naam kan verschillen van de oorspronkelijke bestandsnaam en er wordt een versienummer aan het einde van de naam toegevoegd.

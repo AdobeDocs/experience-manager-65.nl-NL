@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->De [ selecteur van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL) werd genoemd [ plukker van Activa ](https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Experience Manager].
+>De [&#x200B; selecteur van Activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL) werd genoemd [&#x200B; plukker van Activa &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Experience Manager].
 
 Met de elementkiezer kunt u in [!DNL Adobe Experience Manager] Assets door elementen bladeren, zoeken en filteren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 
@@ -49,18 +49,18 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 1. Ga naar `https://[AEM_server]:[port]/aem/assetpicker` als u de interface van de elementenkiezer wilt openen.
 1. Navigeer naar de gewenste map en selecteer een of meer elementen.
 
-   ![ chlimage_1-441 ](assets/chlimage_1-441.png)
+   ![&#x200B; chlimage_1-441 &#x200B;](assets/chlimage_1-441.png)
 
    U kunt ook naar het gewenste element zoeken in het vak Universeel zoeken en het vervolgens selecteren.
 
-   ![ chlimage_1-442 ](assets/chlimage_1-442.png)
+   ![&#x200B; chlimage_1-442 &#x200B;](assets/chlimage_1-442.png)
 
    Als u via het vak UniverseelZoeken naar elementen zoekt, kunt u verschillende filters in het deelvenster **[!UICONTROL Filters]** selecteren om de zoekopdracht te verfijnen.
 
-   ![ chlimage_1-443 ](assets/chlimage_1-443.png)
+   ![&#x200B; chlimage_1-443 &#x200B;](assets/chlimage_1-443.png)
 
 1. Klik op **[!UICONTROL Select]** op de werkbalk.
 
 >[!MORELIKETHIS]
 >
->* [ Micro-Frontend de Selector van Activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL)
+>* [&#x200B; Micro-Frontend de Selector van Activa in AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL)

@@ -32,7 +32,7 @@ Voer de volgende stappen uit om AEM Mobile in te stellen, zodat de gebruiker de 
 
 Om aan de slag te gaan met het instellen van AEM Mobile, moet u:
 
-* **verzoek een API sleutel**: Om tot de On-Demand API van de Diensten toegang te hebben, moet u om een API sleutel verzoeken. Om de API sleutel aan te vragen, voltooi de [ vorm van de PDF ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Verzend de voltooide vorm naar de Steun van Adobe Developer: [ wwds@adobe.com](mailto:wwds@adobe.com)
+* **verzoek een API sleutel**: Om tot de On-Demand API van de Diensten toegang te hebben, moet u om een API sleutel verzoeken. Om de API sleutel aan te vragen, voltooi de [&#x200B; vorm van de PDF &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Verzend de voltooide vorm naar de Steun van Adobe Developer: [&#x200B; wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **produceer identiteitskaart van het Apparaat en Symbolisch van het Apparaat**: Zodra u uw API sleutel hebt ontvangen, kunt u apparatenidentiteitskaart en apparatenteken produceren. Ga naar `https://aex.aemmobile.adobe.com` en voer de volgende handelingen uit:
 
@@ -46,7 +46,7 @@ Als aan alle voorwaarden wordt voldaan, worden een apparaat-id en apparaattoken 
 
 >[!NOTE]
 >
->De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [ Beleid van de Rekening voor AEM Mobile ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
+>De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [&#x200B; Beleid van de Rekening voor AEM Mobile &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
 
 ## Projecten maken voor AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -56,7 +56,7 @@ Voor het maken van een project moet u zich aanmelden bij het portal On-Demand Se
 
 >[!NOTE]
 >
->Meer over het Creëren van Projecten in AEM Mobile leren, klik [ hier ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-projects.html).
+>Meer over het Creëren van Projecten in AEM Mobile leren, klik [&#x200B; hier &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-projects.html).
 
 ## Een AEM Mobile-connector configureren {#configuring-an-aem-mobile-connector}
 
@@ -89,13 +89,13 @@ Voltooi de configuratiestappen voor de integratie van AEM Mobile correct te func
 1. Sla de wijzigingen op.
 1. Hier volgt een voorbeeldconfiguratie:
 
-![ chlimage_1-53 ](assets/chlimage_1-53.png)
+![&#x200B; chlimage_1-53 &#x200B;](assets/chlimage_1-53.png)
 
 ### AEM Mobile On-demand Services CloudService configureren {#configuring-aem-mobile-on-demand-services-cloudservice}
 
 1. Ga naar Cloud Servicen.
 
-   1. AEM > Hulpmiddelen > Plaatsing> [ CloudServices ](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). De rol of het onderzoek naar ***Adobe Experience Manager Mobile On-demand Services***
+   1. AEM > Hulpmiddelen > Plaatsing> [&#x200B; CloudServices &#x200B;](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). De rol of het onderzoek naar ***Adobe Experience Manager Mobile On-demand Services***
 
 1. Selecteer ***nu vormen*** of ***tonen Configuraties*** en selecteren het add configuratiepictogram.
 
@@ -117,13 +117,13 @@ In de ontwikkeling van AEM Mobile-apps bestaan drie verschillende rollen:
 * Developer
 * Auteur
 
-Voor meer informatie bij het creëren van rollen met verschillende toestemmingen zoals voor app het bouwen of voor het creëren van en het publiceren van inhoud, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in de Hulp van AEM Mobile.
+Voor meer informatie bij het creëren van rollen met verschillende toestemmingen zoals voor app het bouwen of voor het creëren van en het publiceren van inhoud, klik [&#x200B; Creërend de Rollen van de Gebruiker en het Verlenen van Toegang &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in de Hulp van AEM Mobile.
 
 >[!NOTE]
 >
 >Voor het beheren van app-inhoud is een gezamenlijke inspanning van ontwikkelaars, auteurs van inhoud en beheerders vereist. Auteurs manipuleren pagina&#39;s, die op hun beurt gebaseerd zijn op sjablonen en componenten die door ontwikkelaars van apps worden gegenereerd. Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud. Het instellen AEM Groepen en Toestemmingen bepaalt hun rollen in het app Dashboard of Controlecentrum.
 >
->Zie [ het Dashboard van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Zie [&#x200B; het Dashboard van AEM Mobile &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 Wanneer u wordt gedaan creërend rollen met verschillende toestemmingen, zoals voor app het bouwen of voor het creëren van en het publiceren van inhoud, zie [**uw Gebruiker en de Groepen van de Gebruiker**](/help/mobile/aem-mobile-configure-users.md) vormen. Zo kunt u uw gebruikers en groepen configureren voor ondersteuning van het ontwerpen en beheren van uw mobiele apps.
 
@@ -136,4 +136,4 @@ Zie de volgende bronnen voor meer informatie over de andere twee rollen en veran
 
 >[!NOTE]
 >
->Om de app inhoud, met inbegrip van doorbladeren pagina&#39;s, en artikelen voor te vertonen, zie [ Voorproef met Preflight ](/help/mobile/aem-mobile-manage-ondemand-services.md).
+>Om de app inhoud, met inbegrip van doorbladeren pagina&#39;s, en artikelen voor te vertonen, zie [&#x200B; Voorproef met Preflight &#x200B;](/help/mobile/aem-mobile-manage-ondemand-services.md).

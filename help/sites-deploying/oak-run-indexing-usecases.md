@@ -109,7 +109,7 @@ Dit hulpmiddel laat het verzamelen van alle vereiste details met betrekking tot 
 
 ## Hoofdlettergebruik 3 - opnieuw indexeren {#usecase3reindexing}
 
-Afhankelijk van de [ scenario&#39;s ](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), soms, moet het opnieuw indexeren worden uitgevoerd. Op dit moment wordt opnieuw indexeren uitgevoerd door de markering `reindex` in te stellen op `true` in het indexdefinitieknooppunt via CRXDE of via de gebruikersinterface van Indexbeheer. Nadat de markering is ingesteld, wordt het opnieuw indexeren asynchroon uitgevoerd.
+Afhankelijk van de [&#x200B; scenario&#39;s &#x200B;](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), soms, moet het opnieuw indexeren worden uitgevoerd. Op dit moment wordt opnieuw indexeren uitgevoerd door de markering `reindex` in te stellen op `true` in het indexdefinitieknooppunt via CRXDE of via de gebruikersinterface van Indexbeheer. Nadat de markering is ingesteld, wordt het opnieuw indexeren asynchroon uitgevoerd.
 
 Enkele punten die u wilt opmerken bij het opnieuw indexeren:
 
@@ -185,7 +185,7 @@ Het verschil tussen deze aanpak en de hierboven beschreven aanpak is dat het mak
 
 In dit geval kunt u opnieuw indexeren op een gekloonde instelling om de invloed op de actieve AEM te minimaliseren:
 
-1. Een controlepunt maken door middel van een JMX-bewerking. U kunt dit doen door naar de [ Console JMX ](/help/sites-administering/jmx-console.md) te gaan en naar `CheckpointManager` te zoeken. Dan, klik **createCheckpoint (lange p1)** verrichting die een hoge waarde voor afloop in seconden gebruikt (bijvoorbeeld, **2592000**).
+1. Een controlepunt maken door middel van een JMX-bewerking. U kunt dit doen door naar de [&#x200B; Console JMX &#x200B;](/help/sites-administering/jmx-console.md) te gaan en naar `CheckpointManager` te zoeken. Dan, klik **createCheckpoint (lange p1)** verrichting die een hoge waarde voor afloop in seconden gebruikt (bijvoorbeeld, **2592000**).
 1. Kopieer de map `crx-quickstart` naar een nieuwe computer
 1. Herindexeren uitvoeren met de opdracht Indexeren op einde
 
@@ -197,7 +197,7 @@ In dit geval wordt aangenomen dat de Data Store toegankelijk is voor een andere 
 
 ## Hoofdlettergebruik 4 - Indexdefinities bijwerken {#usecase4updatingindexdefinitions}
 
-Momenteel, kunt u de veranderingen van de indexdefinitie als [ ACS verschepen verzekeren het pakket van de Index ](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Hierdoor kunnen de indexdefinities worden verzonden door middel van een inhoudspakket, waarvoor later opnieuw indexeren moet worden uitgevoerd door de markering `reindex` in te stellen op `true` .
+Momenteel, kunt u de veranderingen van de indexdefinitie als [&#x200B; ACS verschepen verzekeren het pakket van de Index &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Hierdoor kunnen de indexdefinities worden verzonden door middel van een inhoudspakket, waarvoor later opnieuw indexeren moet worden uitgevoerd door de markering `reindex` in te stellen op `true` .
 
 Dit werkt goed voor kleinere installaties waar het opnieuw indexeren niet lang duurt. Voor grote gegevensbanken gebeurt herindexering echter veel langer. In dergelijke gevallen kunnen we nu de werkset voor indexen die op een eikel worden uitgevoerd, gebruiken.
 

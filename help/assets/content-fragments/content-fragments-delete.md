@@ -25,14 +25,14 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 1. **het Fragment van de Inhoud als één enkele entiteit.**
 
    * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment - **moet uitgeven/bijwerken en een volledig fragment** schrappen.
-   * **Toestemmingen**: De [ schrapping ](/help/sites-administering/security.md#actions) toestemming kan [ door Gebruiker en/of het Beheer van de Groep ](/help/sites-administering/security.md#managing-permissions) worden toegewezen.
+   * **Toestemmingen**: De [&#x200B; schrapping &#x200B;](/help/sites-administering/security.md#actions) toestemming kan [&#x200B; door Gebruiker en/of het Beheer van de Groep &#x200B;](/help/sites-administering/security.md#managing-permissions) worden toegewezen.
 
 2. **de veelvoudige sub-entiteiten die omhoog een inhoudsfragment maken; bijvoorbeeld, variaties, sub-knopen.**
 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **geval van het Gebruik**: Een gebruiker die een inhoudsfragment moet uitgeven/bijwerken - **zonder het worden toegestaan om een volledig fragment** te schrappen.
-   * **Toestemmingen**: Zie [ Toestemmingen die voor de Functionaliteit van de Redacteur slechts ](#permissions-required-for-editor-functionality-only) worden vereist.
+   * **Toestemmingen**: Zie [&#x200B; Toestemmingen die voor de Functionaliteit van de Redacteur slechts &#x200B;](#permissions-required-for-editor-functionality-only) worden vereist.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 >[!NOTE]
 >
->Zie ook [ hoe te de Verrichtingen van het Beheer van de Gebruiker in AEM ](/help/sites-administering/audit-user-management-operations.md) controleren.
+>Zie ook [&#x200B; hoe te de Verrichtingen van het Beheer van de Gebruiker in AEM &#x200B;](/help/sites-administering/audit-user-management-operations.md) controleren.
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
@@ -50,7 +50,7 @@ Bijvoorbeeld bij het manipuleren van variaties, ook bij het bewerken van metageg
 
 >[!NOTE]
 >
->De schrappingstoestemmingen, die worden vereist om een Fragment van de Inhoud uit te geven/bij te werken, zijn inbegrepen in de toestemming van de Schrapping [ die door Gebruiker en/of het Beheer van de Groep ](/help/sites-administering/security.md#managing-permissions) wordt toegewezen.
+>De schrappingstoestemmingen, die worden vereist om een Fragment van de Inhoud uit te geven/bij te werken, zijn inbegrepen in de toestemming van de Schrapping [&#x200B; die door Gebruiker en/of het Beheer van de Groep &#x200B;](/help/sites-administering/security.md#managing-permissions) wordt toegewezen.
 
 De machtigingen die nodig zijn om een fragment te bewerken/bij te werken, moeten worden toegepast op het knooppunt met het inhoudsfragment of op een geschikt bovenliggend knooppunt (op elk niveau onder `/content/dam`). Wanneer toegewezen aan een dergelijk bovenliggend knooppunt, worden de machtigingen toegepast op alle knooppunten in die vertakking.
 
@@ -82,10 +82,10 @@ U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruike
 
    * `jcr:addChildNodes` , `jcr:modifyProperties` and `jcr:removeChildNodes` , `jcr:removeNode`
 
-Deze `remove` voorrechten moeten [ worden beheerd gebruikend de Lijsten van het Toegangsbeheer, binnen CRXDE Lite ](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Deze `remove` voorrechten moeten [&#x200B; worden beheerd gebruikend de Lijsten van het Toegangsbeheer, binnen CRXDE Lite &#x200B;](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 De `add` - en `modify` -rechten kunnen ook worden beheerd in CRXDE Lite of via de gebruikersbeheerconsole.
 
 De definitie van de `remove` bevoegdheden voor een groep `content-authors-no-delete` is bijvoorbeeld:
 
-![ cf-schrapping-03 ](assets/cf-delete-03.png)
+![&#x200B; cf-schrapping-03 &#x200B;](assets/cf-delete-03.png)

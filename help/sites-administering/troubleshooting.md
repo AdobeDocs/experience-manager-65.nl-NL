@@ -25,8 +25,8 @@ Deze sectie omvat gedetailleerde informatie over logboeken beschikbaar om u te h
 >
 >Zie voor meer informatie over logboeken:
 >
->* [ het Onderhoud van het Logboek van de Controle in AEM ](/help/sites-administering/operations-audit-log.md)
->* [ Werkend met de Verslagen van de Controle en de Dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+>* [&#x200B; het Onderhoud van het Logboek van de Controle in AEM &#x200B;](/help/sites-administering/operations-audit-log.md)
+>* [&#x200B; Werkend met de Verslagen van de Controle en de Dossiers van het Logboek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registreert gedetailleerde logbestanden. Nadat u QuickStart hebt uitpakken en gestart, kunt u logbestanden op de volgende locaties vinden:
 

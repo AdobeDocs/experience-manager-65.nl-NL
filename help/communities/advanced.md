@@ -27,15 +27,15 @@ Dit verschil is het gevolg van de scores die zijn gebruikt voor de berekening va
 
 Naast inhoudrelevantie, zijn de het scoren algoritmen rekenschap van lidactiviteiten, zoals het stemmen en percentage van antwoorden. Hoewel deze elementen in de standaardscoring kwantitatief worden opgenomen, worden ze bij geavanceerd scoren op algoritmische wijze gebruikt.
 
-Daarom vereist de geavanceerde scoring-engine voldoende gegevens om de analyse zinvol te maken. De prestatiedrempel voor het worden van een expert wordt constant opnieuw geëvalueerd aangezien het algoritme voortdurend aan het volume en de kwaliteit van gecreeerde inhoud aanpast. Er is ook een concept *verval* van de oudere posten van een lid. Als een deskundige lid ophoudt deelnemend aan het onderwerp waar zij deskundige status, op één of ander vooraf bepaald punt (zie [ het scoren motorconfiguratie ](#configurable-scoring-engine)) kregen konden zij hun status als deskundige verliezen.
+Daarom vereist de geavanceerde scoring-engine voldoende gegevens om de analyse zinvol te maken. De prestatiedrempel voor het worden van een expert wordt constant opnieuw geëvalueerd aangezien het algoritme voortdurend aan het volume en de kwaliteit van gecreeerde inhoud aanpast. Er is ook een concept *verval* van de oudere posten van een lid. Als een deskundige lid ophoudt deelnemend aan het onderwerp waar zij deskundige status, op één of ander vooraf bepaald punt (zie [&#x200B; het scoren motorconfiguratie &#x200B;](#configurable-scoring-engine)) kregen konden zij hun status als deskundige verliezen.
 
 Geavanceerde scoring instellen is vrijwel hetzelfde als basisscoring:
 
-* De basis en de geavanceerde het scoren en het merkteken regels worden [ toegepast op inhoud ](/help/communities/implementing-scoring.md#apply-rules-to-content) op de zelfde manier.
+* De basis en de geavanceerde het scoren en het merkteken regels worden [&#x200B; toegepast op inhoud &#x200B;](/help/communities/implementing-scoring.md#apply-rules-to-content) op de zelfde manier.
 
    * Op dezelfde inhoud kunnen de basisregels en de geavanceerde regels voor scoring en badging worden toegepast.
 
-* [ toelatend badges voor componenten ](/help/communities/implementing-scoring.md#enable-badges-for-component) is generisch.
+* [&#x200B; toelatend badges voor componenten &#x200B;](/help/communities/implementing-scoring.md#enable-badges-for-component) is generisch.
 
 De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
@@ -53,17 +53,17 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 >[!NOTE]
 >
->Om geavanceerde het scoren en het merkwerk mogelijkheden te gebruiken, installeer het [ Deskundige pakket van de Identificatie ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg).
+>Om geavanceerde het scoren en het merkwerk mogelijkheden te gebruiken, installeer het [&#x200B; Deskundige pakket van de Identificatie &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg).
 
 ## Configureerbare scores-engine {#configurable-scoring-engine}
 
 De geavanceerde het schrapen motor verstrekt een configuratie OSGi met parameters die het geavanceerde het schrapen algoritme beïnvloeden.
 
-![ geavanceerd-scoring-motor ](assets/advanced-scoring-engine.png)
+![&#x200B; geavanceerd-scoring-motor &#x200B;](assets/advanced-scoring-engine.png)
 
 * **het Scoren gewichten**
 
-  Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Één of meerdere onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [ Onderwerpen en Verbs ](/help/communities/implementing-scoring.md#topics-and-verbs).
+  Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Één of meerdere onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [&#x200B; Onderwerpen en Verbs &#x200B;](/help/communities/implementing-scoring.md#topics-and-verbs).
 Wordt ingevoerd als `topic,verb` met de komma uit het veld. Bijvoorbeeld:
   `/social/forum/hbs/social/forum\,ADD`
 Het gebrek wordt geplaatst aan ADD werkwoord voor QnA en forumcomponenten.
@@ -99,9 +99,9 @@ Een scoreregel is een set subregels voor scores, die elk de `scoringType` declar
 
 Om de geavanceerde het scoren motor aan te halen, zou `scoringType` aan `advanced` moeten worden geplaatst.
 
-Zie [ het Scoreren Subregels ](/help/communities/implementing-scoring.md#scoring-sub-rules).
+Zie [&#x200B; het Scoreren Subregels &#x200B;](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![ geavanceerd-scoring-type ](assets/advanced-scoring-type.png)
+![&#x200B; geavanceerd-scoring-type &#x200B;](assets/advanced-scoring-type.png)
 
 ### Stopwoorden {#stopwords}
 
@@ -117,11 +117,11 @@ Als het stopwoordenbestand ontbreekt, geeft het geavanceerde scoring-programma e
 
 ## Geavanceerde Badgingregels {#advanced-badging-rules}
 
-De geavanceerde eigenschappen van de merkingsregel verschillen van de [ basismerkingsregeleigenschappen ](/help/communities/implementing-scoring.md#badging-rules).
+De geavanceerde eigenschappen van de merkingsregel verschillen van de [&#x200B; basismerkingsregeleigenschappen &#x200B;](/help/communities/implementing-scoring.md#badging-rules).
 
 In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig om het toegestane aantal experts en het toe te kennen badge-image te identificeren.
 
-![ geavanceerd-badging-regels ](assets/advanced-badging-rules.png)
+![&#x200B; geavanceerd-badging-regels &#x200B;](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -163,7 +163,7 @@ In deze bètaversie is één beloning-gebaseerd deskundige badge opgenomen:
 
   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![ deskundige-badge ](assets/included-badge.png)
+![&#x200B; deskundige-badge &#x200B;](assets/included-badge.png)
 
 Zorg ervoor dat het expertsymbool als beloning voor activiteit wordt weergegeven:
 
@@ -178,7 +178,7 @@ Zie de basisinformatie voor:
 
 ### Inclusief rangtelregels en subregels {#included-scoring-rules-and-sub-rules}
 
-Omvat in de bètaversie zijn twee geavanceerde het scoren regels voor de [ forumfunctie ](/help/communities/functions.md#forum-function) (elk voor het forum en commentaarcomponenten van de forumeigenschap):
+Omvat in de bètaversie zijn twee geavanceerde het scoren regels voor de [&#x200B; forumfunctie &#x200B;](/help/communities/functions.md#forum-function) (elk voor het forum en commentaarcomponenten van de forumeigenschap):
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
@@ -208,7 +208,7 @@ Omvat in de bètaversie zijn twee geavanceerde het scoren regels voor de [ forum
 
 ### Ingesloten Badgingregels {#included-badging-rules}
 
-Omvat in de versie zijn twee geavanceerde merkingsregels die aan de [ geavanceerde forums en commentaren het scoren regels ](#included-scoring-rules-and-sub-rules) beantwoorden.
+Omvat in de versie zijn twee geavanceerde merkingsregels die aan de [&#x200B; geavanceerde forums en commentaren het scoren regels &#x200B;](#included-scoring-rules-and-sub-rules) beantwoorden.
 
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`

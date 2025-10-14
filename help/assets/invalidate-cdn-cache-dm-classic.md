@@ -26,13 +26,13 @@ Dynamic Media-elementen worden door de CDN (Content Delivery Network) in cache g
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn alleen van toepassing op Dynamic Media in Adobe Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) of eerder.<br> als u Dynamic Media in Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) of later gebruikt, de stappen volgen die in [ worden gevonden ongeldig het CDN geheime voorgeheugen als Dynamic Media ](/help/assets/invalidate-cdn-cache-dynamic-media.md).
+>De volgende stappen zijn alleen van toepassing op Dynamic Media in Adobe Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) of eerder.<br> als u Dynamic Media in Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) of later gebruikt, de stappen volgen die in [&#x200B; worden gevonden ongeldig het CDN geheime voorgeheugen als Dynamic Media &#x200B;](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **om het CDN geheime voorgeheugen als Dynamic Media Classic ongeldig te maken:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 

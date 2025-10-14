@@ -22,8 +22,8 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [ het Beheer Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [ Tags voor Ontwikkelaars ](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [&#x200B; Tags voor Ontwikkelaars &#x200B;](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -44,9 +44,9 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
+Om [&#x200B; vooraf bepaalde markeringen &#x200B;](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
-![ Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen ](assets/chlimage_1-41.png) te schrappen
+![&#x200B; Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen &#x200B;](assets/chlimage_1-41.png) te schrappen
 
 ### Codes publiceren {#publishing-tags}
 

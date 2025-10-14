@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gereedschap AEM{#aem-repo-tool}
 
-Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het AEM Hulpmiddel van de Repo is gelijkaardig aan het [ hulpmiddel van FileVault van het Slag ](/help/sites-developing/ht-vlttool.md), maar is sneller, heeft minimale gebiedsdelen, en is een eenvoudig bash manuscript.
+Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het AEM Hulpmiddel van de Repo is gelijkaardig aan het [&#x200B; hulpmiddel van FileVault van het Slag &#x200B;](/help/sites-developing/ht-vlttool.md), maar is sneller, heeft minimale gebiedsdelen, en is een eenvoudig bash manuscript.
 
 Dit hulpmiddel vereenvoudigt de overdracht van dossiers voor de ontwikkelaar en kan ook in IntelliJ en Eclipse worden geïntegreerd om ontwikkeling nog efficiënter te maken.
 
@@ -34,7 +34,7 @@ Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of FileVault-
 
 ## Downloaden en documentatie {#download-and-documentation}
 
-Het [ AEM Hulpmiddel van de Repo is beschikbaar op GitHub via deze verbinding ](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie en gebruiksinstructies.
+Het [&#x200B; AEM Hulpmiddel van de Repo is beschikbaar op GitHub via deze verbinding &#x200B;](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie en gebruiksinstructies.
 
 Als u de bron van het Hulpmiddel van de AEM wilt downloaden, zie het hieronder verbonden project GitHub.
 
@@ -42,5 +42,5 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [ Open hulpmiddelproject op GitHub ](https://github.com/Adobe-Marketing-Cloud/tools)
-* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)
+* [&#x200B; Open hulpmiddelproject op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/tools)
+* Download het project als [&#x200B; een dossier van het PIT &#x200B;](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)

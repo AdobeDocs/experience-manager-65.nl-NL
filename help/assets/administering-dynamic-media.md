@@ -16,18 +16,18 @@ ht-degree: 0%
 
 # Dynamic Media instellen {#setting-up-dynamic-media}
 
-[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 >[!NOTE]
 >
->In deze documentatie worden de Dynamic Media-mogelijkheden beschreven die rechtstreeks in Adobe Experience Manager zijn geïntegreerd. Als u Dynamic Media Classic in Experience Manager geïntegreerd gebruikt, zie [ de integratiedocumentatie van Dynamic Media Classic ](/help/sites-administering/scene7.md).
+>In deze documentatie worden de Dynamic Media-mogelijkheden beschreven die rechtstreeks in Adobe Experience Manager zijn geïntegreerd. Als u Dynamic Media Classic in Experience Manager geïntegreerd gebruikt, zie [&#x200B; de integratiedocumentatie van Dynamic Media Classic &#x200B;](/help/sites-administering/scene7.md).
 >
->Zie [ Dubbel scenario van het Gebruik ](/help/sites-administering/scene7.md#dual-use-scenario) voor tijden wanneer u Experience Manager wilt gebruiken die met Dynamic Media Classic samen met Dynamic Media wordt geïntegreerd.
+>Zie [&#x200B; Dubbel scenario van het Gebruik &#x200B;](/help/sites-administering/scene7.md#dual-use-scenario) voor tijden wanneer u Experience Manager wilt gebruiken die met Dynamic Media Classic samen met Dynamic Media wordt geïntegreerd.
 
 Als u Dynamic Media beheert, zijn de volgende onderwerpen van belang:
 
-* [ vorm Dynamic Media - de wijze van Scene7 ](config-dms7.md) - gebruik deze configuratie als u een nieuwe klant van Dynamic Media bent.
-* [ vorm Dynamic Media - Hybride wijze ](config-dynamic.md) - gebruik deze configuratie als u een bestaande klant van Dynamic Media Experience Manager bevordert.
+* [&#x200B; vorm Dynamic Media - de wijze van Scene7 &#x200B;](config-dms7.md) - gebruik deze configuratie als u een nieuwe klant van Dynamic Media bent.
+* [&#x200B; vorm Dynamic Media - Hybride wijze &#x200B;](config-dynamic.md) - gebruik deze configuratie als u een bestaande klant van Dynamic Media Experience Manager bevordert.
 * [Afbeeldingsvoorinstellingen beheren](managing-image-presets.md)
 * [Voorinstellingen voor viewers beheren](managing-viewer-presets.md)
 * [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)

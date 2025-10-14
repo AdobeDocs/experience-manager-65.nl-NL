@@ -27,22 +27,22 @@ AEM Forms biedt een set formulieren voor het verkrijgen van gegevens van eindgeb
 
 **HTML5 Forms** is de browser-vriendelijke versie van PDF forms. HTML5 Forms is geschikt voor omgevingen die geen PDF-plug-ins ondersteunen. Met HTML5 Forms kunnen op XFA gebaseerde formulieren worden weergegeven op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. Deze formulieren zijn het meest geschikt voor tablets en desktopomgevingen.
 
-AEM Forms is een krachtig platform op bedrijfsniveau en het vastleggen van gegevens (adaptieve formulieren, PDF forms en HTML5 Forms) is slechts één van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [ Inleiding aan AEM Forms ](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau en het vastleggen van gegevens (adaptieve formulieren, PDF forms en HTML5 Forms) is slechts één van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [&#x200B; Inleiding aan AEM Forms &#x200B;](/help/forms/using/introduction-aem-forms.md).
 
 ## Implementatietopologie {#deployment-topology}
 
-AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM auteur en AEM Publish-instantie nodig om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren. De volgende topologie wordt gesuggereerd om AEM Forms AEM Forms gegevens in werking te stellen vangt mogelijkheden. Voor gedetailleerde informatie over de topologie, zie [ Architectuur en plaatsingstopologieën voor AEM Forms ](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM auteur en AEM Publish-instantie nodig om AEM Forms-mogelijkheden voor gegevensvastlegging uit te voeren. De volgende topologie wordt gesuggereerd om AEM Forms AEM Forms gegevens in werking te stellen vangt mogelijkheden. Voor gedetailleerde informatie over de topologie, zie [&#x200B; Architectuur en plaatsingstopologieën voor AEM Forms &#x200B;](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![ geadviseerd-topologie ](assets/recommended-topology.png)
+![&#x200B; geadviseerd-topologie &#x200B;](assets/recommended-topology.png)
 
 ## Systeemvereisten {#system-requirements}
 
 Voordat u de mogelijkheid voor gegevensvastlegging van AEM Forms gaat installeren en configureren, moet u ervoor zorgen dat:
 
-* Hardware- en software-infrastructuur is aanwezig. Voor een gedetailleerde lijst van gesteunde hardware en software, zie [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
+* Hardware- en software-infrastructuur is aanwezig. Voor een gedetailleerde lijst van gesteunde hardware en software, zie [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
 
 * Het installatiepad van de AEM-instantie bevat geen witruimten.
-* Er wordt een AEM-instantie uitgevoerd. Voor de gebruikers van Vensters, installeer de AEM instantie op opgeheven wijze. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U vereist minstens twee [ AEM instanties (één Auteur en één Publish) ](/help/sites-deploying/deploy.md) om de gegevens van AEM Forms in werking te stellen vangen mogelijkheden:
+* Er wordt een AEM-instantie uitgevoerd. Voor de gebruikers van Vensters, installeer de AEM instantie op opgeheven wijze. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U vereist minstens twee [&#x200B; AEM instanties (één Auteur en één Publish) &#x200B;](/help/sites-deploying/deploy.md) om de gegevens van AEM Forms in werking te stellen vangen mogelijkheden:
 
    * **Auteur**: Een AEM die instantie wordt gebruikt om, inhoud tot stand te brengen te uploaden en uit te geven en de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
    * **Publish**: Een AEM instantie die de gepubliceerde inhoud aan het publiek over Internet of een intern netwerk dient.
@@ -52,7 +52,7 @@ Voordat u de mogelijkheid voor gegevensvastlegging van AEM Forms gaat installere
    * 15 GB tijdelijke ruimte voor Microsoft Windows-installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
 
-* De replicatie en omgekeerde replicatie voor de auteur en publiceer instanties worden geplaatst. Voor details, zie [ Replicatie ](/help/sites-deploying/replication.md).
+* De replicatie en omgekeerde replicatie voor de auteur en publiceer instanties worden geplaatst. Voor details, zie [&#x200B; Replicatie &#x200B;](/help/sites-deploying/replication.md).
 * Voor op UNIX gebaseerde systemen:
 
    * Installeer de volgende 32-bits pakketten van de installatiemedia:
@@ -102,23 +102,23 @@ Voordat u de mogelijkheid voor gegevensvastlegging van AEM Forms gaat installere
 
    * libicu
 
-* Installeer [ Microsoft Visual Studio 2019 Redistributable met 32 bits ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+* Installeer [&#x200B; Microsoft Visual Studio 2019 Redistributable met 32 bits &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 
 ## AEM Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat AEM Forms-gegevensvastlegging en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
-1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+1. Open [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de sectie **[!UICONTROL Filters]** :
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
-   U kunt het pakket via de directe verbinding ook downloaden die in het [ wordt vermeld versies van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
+   U kunt het pakket via de directe verbinding ook downloaden die in het [&#x200B; wordt vermeld versies van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **begin niet onmiddellijk de server opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer in het `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` -bestand worden weergegeven en het logbestand stabiel is.
 
    >[!NOTE]
@@ -182,7 +182,7 @@ Voer de volgende stappen uit op alle instanties van de Auteur en van Publish om 
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [ Dispatcher ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [&#x200B; Dispatcher &#x200B;](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -200,7 +200,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverd
 
 Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminderen, en input/output (I/O) snelheden te verbeteren. In de cache van adaptieve formulieren worden alleen de HTML-inhoud en de JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier te genereren, verkort.
 
-* Bij het gebruiken van het adaptieve vormengeheime voorgeheugen, gebruik [ AEM Dispatcher ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html) om cliëntbibliotheken (CSS en JavaScript) van een adaptieve vorm in het voorgeheugen onder te brengen.
+* Bij het gebruiken van het adaptieve vormengeheime voorgeheugen, gebruik [&#x200B; AEM Dispatcher &#x200B;](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/dispatcher-configuration.html) om cliëntbibliotheken (CSS en JavaScript) van een adaptieve vorm in het voorgeheugen onder te brengen.
 * Zorg tijdens het ontwikkelen van aangepaste componenten dat de cache van adaptieve formulieren uitgeschakeld blijft op de server die voor ontwikkeling wordt gebruikt.
 
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
@@ -224,24 +224,24 @@ Adobe Sign maakt workflows voor e-handtekeningen mogelijk voor adaptieve formuli
 
 In een typisch Adobe Sign en adaptief vormenscenario, vult een gebruiker een adaptieve vorm aan **van toepassing is voor de dienst**. Bijvoorbeeld een creditcardaanvraag en een burgerservicepakket. Wanneer een gebruiker het toepassingsformulier invult, verzendt en ondertekent, wordt het formulier naar de serviceprovider verzonden voor verdere actie. De dienstverlener controleert de toepassing en gebruikt Adobe Sign om de goedgekeurde toepassing te merken. Als u vergelijkbare workflows voor elektronische handtekeningen wilt inschakelen, kunt u Adobe Sign integreren met AEM Forms.
 
-Om Adobe Sign met AEM Forms te gebruiken, [ integreer Adobe Sign met AEM Forms ](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+Om Adobe Sign met AEM Forms te gebruiken, [&#x200B; integreer Adobe Sign met AEM Forms &#x200B;](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 #### Adobe Analytics configureren {#configure-adobe-analytics}
 
 AEM Forms is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
-Om Adobe Analytics met AEM Forms te gebruiken, zie [ het Vormen analyses en rapporten ](/help/forms/using/configure-analytics-forms-documents.md).
+Om Adobe Analytics met AEM Forms te gebruiken, zie [&#x200B; het Vormen analyses en rapporten &#x200B;](/help/forms/using/configure-analytics-forms-documents.md).
 
 #### Adobe Target integreren {#integrate-adobe-target}
 
 Uw klanten zullen waarschijnlijk een formulier verlaten als de ervaring die het biedt, niet aantrekkelijk is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
-AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Om Adobe Target aan A/B te gebruiken test adaptieve vormen, [ integreer Adobe Target met AEM Forms ](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Om Adobe Target aan A/B te gebruiken test adaptieve vormen, [&#x200B; integreer Adobe Target met AEM Forms &#x200B;](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 ## Volgende stappen {#next-steps}
 
 U hebt een omgeving geconfigureerd voor het gebruik van AEM Forms-mogelijkheden voor het vastleggen van gegevens. De volgende stappen in de richting van het gebruik van de mogelijkheid zijn:
 
 * [Uw eerste adaptieve formulier maken](/help/forms/using/create-your-first-adaptive-form.md)
-* [ creeer uw eerste vorm van PDF ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [&#x200B; creeer uw eerste vorm van PDF &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Inleiding tot HTML5 Forms](/help/forms/using/introduction.md)

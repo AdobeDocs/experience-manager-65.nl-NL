@@ -33,22 +33,22 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
 
 U kunt een versie van uw bron maken op basis van:
 
-* het [ spoor van de Chronologie ](#creating-a-new-version-timeline)
-* [ creeer ](#creating-a-new-version-create-with-a-selected-resource) optie (wanneer een middel wordt geselecteerd)
+* het [&#x200B; spoor van de Chronologie &#x200B;](#creating-a-new-version-timeline)
+* [&#x200B; creeer &#x200B;](#creating-a-new-version-create-with-a-selected-resource) optie (wanneer een middel wordt geselecteerd)
 
 ### Nieuwe versie maken - tijdlijn {#creating-a-new-version-timeline}
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de **kolom van de Chronologie**.
 1. Klik op de pijlpunt bij het veld Opmerking om de opties weer te geven:
 
-   ![ Chronologie - sparen als Versie ](assets/screen-shot_2019-03-05at112335.png)
+   ![&#x200B; Chronologie - sparen als Versie &#x200B;](assets/screen-shot_2019-03-05at112335.png)
 
 1. Selecteer **sparen als Versie**.
 1. Ga a **Etiket** en **Commentaar** indien nodig in.
 
-   ![ creeer Versie - voeg etiket en commentaar ](assets/chlimage_1-42.png) toe
+   ![&#x200B; creeer Versie - voeg etiket en commentaar &#x200B;](assets/chlimage_1-42.png) toe
 
 1. Bevestig de nieuwe versie met **creeer**.
 
@@ -57,11 +57,11 @@ U kunt een versie van uw bron maken op basis van:
 ### Een nieuwe versie maken - Maken met een geselecteerde bron {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteer **creeer** optie van de toolbar om de dialoog te openen.
 1. In de dialoogdoos, kunt u a **Etiket** en a **Commentaar** ingaan, indien nodig:
 
-   ![ ga een etiket en een commentaar ](assets/screen_shot_2012-02-15at105050am.png) in
+   ![&#x200B; ga een etiket en een commentaar &#x200B;](assets/screen_shot_2012-02-15at105050am.png) in
 
 1. Bevestig de nieuwe versie met **creeer**.
 
@@ -71,11 +71,11 @@ U kunt een versie van uw bron maken op basis van:
 
 Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op verschillende manieren opnieuw installeren:
 
-* **keert aan deze optie van Versie** van de [ Chronologie ](/help/sites-authoring/basic-handling.md#timeline) spoor terug
+* **keert aan deze optie van Versie** van de [&#x200B; Chronologie &#x200B;](/help/sites-authoring/basic-handling.md#timeline) spoor terug
 
   Vorige versie van geselecteerde pagina opnieuw installeren.
 
-* **herstel** opties van de hoogste [ actiestoolbar ](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* **herstel** opties van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **herstelt Versie**
 
@@ -102,11 +102,11 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 Om **terug te keren** de geselecteerde pagina aan een vorige versie:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
-   ![ keert aan deze Versie ](assets/screen-shot_2019-03-05at112505.png) terug
+   ![&#x200B; keert aan deze Versie &#x200B;](assets/screen-shot_2019-03-05at112505.png) terug
 
 1. Selecteer **terugkeren aan deze Versie**. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt.
 
@@ -114,9 +114,9 @@ Om **terug te keren** de geselecteerde pagina aan een vorige versie:
 
 Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. Dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten:
 
-1. Navigeer aan, en [ selecteer ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
+1. Navigeer aan, en [&#x200B; selecteer &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
 
-1. Selecteer **herstellen**, dan **herstelt Versie** van de hoogste [ actiestoolbar ](/help/sites-authoring/basic-handling.md#actions-toolbar).
+1. Selecteer **herstellen**, dan **herstelt Versie** van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -129,15 +129,15 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 1. De beschikbare versies worden weergegeven:
 
-   ![ herstelt Versie - Lijst van alle pagina&#39;s in omslag ](/help/sites-authoring/assets/versions-restore-version-01.png)
+   ![&#x200B; herstelt Versie - Lijst van alle pagina&#39;s in omslag &#x200B;](/help/sites-authoring/assets/versions-restore-version-01.png)
 
 1. Voor een specifieke pagina, gebruik de drop-down selecteur onder **HERSTEL AAN VERSIE** om de vereiste versie voor die pagina te selecteren.
 
-   ![ herstelt Versie - Uitgezochte Versie ](/help/sites-authoring/assets/versions-restore-version-02.png)
+   ![&#x200B; herstelt Versie - Uitgezochte Versie &#x200B;](/help/sites-authoring/assets/versions-restore-version-02.png)
 
 1. Selecteer in het hoofdscherm de pagina die u wilt herstellen:
 
-   ![ herstelt Versie - selecteer Pagina ](/help/sites-authoring/assets/versions-restore-version-03.png)
+   ![&#x200B; herstelt Versie - selecteer Pagina &#x200B;](/help/sites-authoring/assets/versions-restore-version-03.png)
 
 1. Selecteer **Herstel** voor de geselecteerde versie, van de geselecteerde pagina, die als huidige versie moet worden hersteld.
 
@@ -149,11 +149,11 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen; dit kan pagina&#39;s omvatten die eerder zijn geschrapt:
 
-1. Navigeer aan, en [ selecteer ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
+1. Navigeer aan, en [&#x200B; selecteer &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste omslag.
 
-1. Selecteer **herstellen**, dan **herstellen Boom** van de hoogste [ actiestoolbar ](/help/sites-authoring/basic-handling.md#actions-toolbar). De meest recente versie van de boomstructuur wordt weergegeven:
+1. Selecteer **herstellen**, dan **herstellen Boom** van de hoogste [&#x200B; actiestoolbar &#x200B;](/help/sites-authoring/basic-handling.md#actions-toolbar). De meest recente versie van de boomstructuur wordt weergegeven:
 
-   ![ herstelt Boom ](/help/sites-authoring/assets/versions-restore-tree-02.png)
+   ![&#x200B; herstelt Boom &#x200B;](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
 1. Gebruik de datum en tijdselecteur bij **Latest Versies bij Datum** om een andere versie van de boom te selecteren - te herstellen.
 
@@ -170,11 +170,11 @@ Deze methode kan worden gebruikt om een versie van een boom op een gespecificeer
 U kunt een voorvertoning van een specifieke versie weergeven:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
-   ![ selecteer de versie aan voorproef ](assets/screen-shot_2019-03-05at112505-1.png)
+   ![&#x200B; selecteer de versie aan voorproef &#x200B;](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Selecteer **Voorproef**. De pagina wordt weergegeven op een nieuw tabblad.
 
@@ -182,20 +182,20 @@ U kunt een voorvertoning van een specifieke versie weergeven:
    >
    >Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
    >
-   >* Als u problemen met een voorproef ervaart, controleer de [ Chronologie ](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   >* Als u problemen met een voorproef ervaart, controleer de [&#x200B; Chronologie &#x200B;](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 ## Een versie vergelijken met de huidige pagina {#comparing-a-version-with-current-page}
 
 Een vorige versie vergelijken met de huidige pagina:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
-1. Selecteer de pagina op [ selectiemodus ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Selecteer de pagina op [&#x200B; selectiemodus &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
-   ![ Versies van de Pagina vermeld - uitgezochte versie ](assets/screen-shot_2019-03-05at112505-2.png)
+   ![&#x200B; Versies van de Pagina vermeld - uitgezochte versie &#x200B;](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Selecteer **vergelijken met Huidige**. Het [ pagina diff ](/help/sites-authoring/page-diff.md) opent om de verschillen te tonen.
+1. Selecteer **vergelijken met Huidige**. Het [&#x200B; pagina diff &#x200B;](/help/sites-authoring/page-diff.md) opent om de verschillen te tonen.
 
 ## Timewarp {#timewarp}
 
@@ -203,7 +203,7 @@ De tijdverdraaiing is een eigenschap die wordt ontworpen om de *gepubliceerde* s
 
 >[!TIP]
 >
->[ Tijdverdraaiing kan ook met Lanceringen worden gebruikt om toekomstige ](/help/sites-authoring/launches.md) te voorproef wanneer het runnen van AEM 6.5.10.0 of later.
+>[&#x200B; Tijdverdraaiing kan ook met Lanceringen worden gebruikt om toekomstige &#x200B;](/help/sites-authoring/launches.md) te voorproef wanneer het runnen van AEM 6.5.10.0 of later.
 
 Het maken van inhoud is een doorlopend en gezamenlijk proces. Het doel van Timewarp is auteurs toe te staan om de gepubliceerde website in tijd te volgen, om hen te helpen begrijpen hoe de inhoud is veranderd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen:
 
@@ -214,19 +214,19 @@ Het maken van inhoud is een doorlopend en gezamenlijk proces. Het doel van Timew
 
 ### Tijdverdraaiing gebruiken {#using-timewarp}
 
-De tijdverdraaiing is a [ wijze ](/help/sites-authoring/author-environment-tools.md#page-modes) van de paginaredacteur. Om het te beginnen, eenvoudig schakelaar het zoals u een andere wijze.
+De tijdverdraaiing is a [&#x200B; wijze &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) van de paginaredacteur. Om het te beginnen, eenvoudig schakelaar het zoals u een andere wijze.
 
 1. Begin de redacteur voor de pagina waar u wenst om Timewarp te beginnen en dan **Timewarp** op de wijzeselectie te selecteren.
 
-   ![ Uitgezochte Tijdverdraaiing op de wijzeselectie ](assets/wwpv-01.png)
+   ![&#x200B; Uitgezochte Tijdverdraaiing op de wijzeselectie &#x200B;](assets/wwpv-01.png)
 
 1. In de dialoog, plaats een doeldatum en tijd en klik **Vastgestelde Datum**. Als u geen tijd selecteert, wordt de huidige tijd als standaardwaarde genomen.
 
-   ![ plaats Datum ](assets/wwpv-02.png)
+   ![&#x200B; plaats Datum &#x200B;](assets/wwpv-02.png)
 
 1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven via de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk om een nieuwe doeldatum of einddatum voor de tijdverdraaiingsmodus te selecteren.
 
-   ![ de indicator van de Onderbreking ](assets/wwpv-03.png)
+   ![&#x200B; de indicator van de Onderbreking &#x200B;](assets/wwpv-03.png)
 
 ### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
@@ -236,7 +236,7 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **Tijdverdraaiing gebruikt paginaversies** - als u aan een pagina navigeert die is verwijderd/geschrapt uit de bewaarplaats het behoorlijk teruggegeven als de oude versies van de pagina nog in de bewaarplaats beschikbaar zijn.
 * **Verwijderde versies beïnvloeden Timewarp** - als de versies uit de bewaarplaats dan worden verwijderd kan de Timewarp niet de correcte mening tonen.
 
-* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat manueel doen gebruikend [ herstellen ](#reverting-to-a-page-version).
+* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat manueel doen gebruikend [&#x200B; herstellen &#x200B;](#reverting-to-a-page-version).
 
 * **Tijdverdraaiing is slechts gebaseerd op paginacontent** - als de elementen voor het teruggeven van de website zijn veranderd, verschilt de mening van wat het oorspronkelijk was, aangezien die punten niet in de bewaarplaats versioned zijn. Dergelijke elementen zijn onder andere code, css, assets/images.
 

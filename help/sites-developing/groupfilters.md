@@ -26,7 +26,7 @@ Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te 
 
 Ontwerp uw filters zodat u combinaties ervan kunt gebruiken om de groepen mogelijkheden te bepalen. Gewoonlijk zijn de mogelijkheden van verschillende apparaatgroepen elkaar overlappen. Daarom zou u sommige filters met veelvoudige definities van de apparatengroep kunnen gebruiken.
 
-Nadat u een filter creeert, kunt u het in de [ groepsconfiguratie gebruiken.](/help/sites-developing/mobile.md#creating-a-device-group)
+Nadat u een filter creeert, kunt u het in de [&#x200B; groepsconfiguratie gebruiken.](/help/sites-developing/mobile.md#creating-a-device-group)
 
 ## De Filter Java™-klasse {#the-filter-java-class}
 
@@ -107,7 +107,7 @@ Het pakket `org.apache.commons.lang.math` biedt de klasse `NumberUtils` .
 
 >[!NOTE]
 >
->Zorg ervoor dat de WURFL™-database die wordt geïmplementeerd voor AEM de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [ Detectie van het Apparaat ](/help/sites-developing/mobile.md#server-side-device-detection).)
+>Zorg ervoor dat de WURFL™-database die wordt geïmplementeerd voor AEM de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [&#x200B; Detectie van het Apparaat &#x200B;](/help/sites-developing/mobile.md#server-side-device-detection).)
 
 ### Voorbeeldfilter voor schermgrootte {#example-filter-for-screen-size}
 
@@ -164,11 +164,11 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 
 De waarde van het Koord die de methode getTitle terugkeert verschijnt in de drop-down lijst van de eigenschappen van de apparatengroep.
 
-![ filteraddtogroup ](assets/filteraddtogroup.png)
+![&#x200B; filteraddtogroup &#x200B;](assets/filteraddtogroup.png)
 
 De waarden van het Koord die getTitle en getDescription methodes terugkeren zijn inbegrepen bij de bodem van de samenvattingspagina van de apparatengroep.
 
-![ filterdescription ](assets/filterdescription.png)
+![&#x200B; filterdescription &#x200B;](assets/filterdescription.png)
 
 ### Het Maven POM-bestand {#the-maven-pom-file}
 
@@ -188,7 +188,7 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare opslagplaats voor Adoben.
 
-Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. De Console van het Web van de Adobe van het gebruik ([ https://localhost:4502/system/console/bundles ](https://localhost:4502/system/console/bundles)) om dit te verzekeren is de bundelversie die in uw milieu wordt opgesteld.
+Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. De Console van het Web van de Adobe van het gebruik ([&#x200B; https://localhost:4502/system/console/bundles &#x200B;](https://localhost:4502/system/console/bundles)) om dit te verzekeren is de bundelversie die in uw milieu wordt opgesteld.
 
 **POM:** (Uw POM gebruikt een verschillende groupId en een versie.)
 
@@ -255,4 +255,4 @@ Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die 
 </project>
 ```
 
-Voeg het profiel toe dat [ het Verkrijgen van het Pakket van de Inhoud Verzamelde ](/help/sites-developing/vlt-mavenplugin.md) sectie aan uw gegeven montagesdossier verstrekt om de openbare bewaarplaats van de Adobe te gebruiken.
+Voeg het profiel toe dat [&#x200B; het Verkrijgen van het Pakket van de Inhoud Verzamelde &#x200B;](/help/sites-developing/vlt-mavenplugin.md) sectie aan uw gegeven montagesdossier verstrekt om de openbare bewaarplaats van de Adobe te gebruiken.

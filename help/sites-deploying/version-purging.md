@@ -31,10 +31,10 @@ Deze versies worden nooit gewist, zodat de grootte van de opslagplaats in tijd g
 
 AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats te beheren:
 
-* de [ Manager van de Versie ](#version-manager)
+* de [&#x200B; Manager van de Versie &#x200B;](#version-manager)
 Dit kan worden gevormd om oude versies te zuiveren wanneer de nieuwe versies worden gecreeerd.
 
-* het [ hulpmiddel van de Versies van de Woorden ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+* het [&#x200B; hulpmiddel van de Versies van de Woorden &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
 Dit wordt gebruikt als onderdeel van het bewaken en onderhouden van uw opslagplaats.
 Het laat u tussenbeide komen om oude versies van een knoop, of een hiërarchie van knopen, volgens deze parameters te verwijderen:
 
@@ -44,7 +44,7 @@ Wanneer dit aantal wordt overschreden, wordt de oudste versie verwijderd.
    * De maximumleeftijd van versies die in de opslagplaats worden bewaard.
 Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de opslagplaats verwijderd.
 
-* de [ het onderhoudstaak van de Opruiming van de Versie ](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
+* de [&#x200B; het onderhoudstaak van de Opruiming van de Versie &#x200B;](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de o
 
 Naast expliciete zuivering door het zuiveringshulpmiddel te gebruiken, kan de Manager van de Versie worden gevormd om oude versies te zuiveren wanneer de nieuwe versies worden gecreeerd.
 
-Om de Manager van de Versie te vormen, [ creeer een configuratie ](/help/sites-deploying/configuring-osgi.md) voor:
+Om de Manager van de Versie te vormen, [&#x200B; creeer een configuratie &#x200B;](/help/sites-deploying/configuring-osgi.md) voor:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -126,4 +126,4 @@ Als u bijvoorbeeld het maximum EN minimum aantal versies definieert dat behouden
 
 ## Versies wissen {#purge-versions-tool}
 
-Het [ hulpmiddel van de Versies van de Woorden ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) is voorgenomen voor het zuiveren van de versies van een knoop of een hiërarchie van knopen in uw bewaarplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
+Het [&#x200B; hulpmiddel van de Versies van de Woorden &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) is voorgenomen voor het zuiveren van de versies van een knoop of een hiërarchie van knopen in uw bewaarplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.

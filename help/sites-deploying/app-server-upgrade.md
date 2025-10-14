@@ -32,7 +32,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
 1. Verwijder vervolgens AEM 6.4. Dit kan worden gedaan vanuit de TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Om dat te doen, download de recentste versie van crx2oak van [ deze plaats ](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Om dat te doen, download de recentste versie van crx2oak van [&#x200B; deze plaats &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds

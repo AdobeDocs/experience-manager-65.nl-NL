@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Zorg ervoor dat de fonts die in een formulier worden gebruikt, beschikbaar zijn voor gebruik op de J2EE-toepassingsserver waarop AEM formulieren worden gehost. Neem bijvoorbeeld het volgende scenario. Een formulierontwerper voegt een lettertype toe aan de lettertypemap die door Designer wordt gebruikt en maakt een formulier dat dat lettertype gebruikt op een andere computer. Plaats het lettertype in de lettertypenmap van de klant, zodat de Output-service het lettertype kan gebruiken. Als de map met lettertypen van de klant niet bestaat, maakt u een directory op de J2EE-toepassingsserver waarop AEM formulieren worden gehost.
 
-Voor informatie over extra doopvontmontages, zie [ algemene AEM vormmontages ](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings) vormen.
+Voor informatie over extra doopvontmontages, zie [&#x200B; algemene AEM vormmontages &#x200B;](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings) vormen.
 
 **specificeer de plaats van de folder van de doopvonten van de Klant**
 

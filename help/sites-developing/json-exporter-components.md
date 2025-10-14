@@ -22,7 +22,7 @@ Componenten kunnen worden aangepast om JSON-export van hun inhoud te genereren o
 
 ## Overzicht {#overview}
 
-De uitvoer JSON is gebaseerd op [ het Verdelen Modellen ](https://sling.apache.org/documentation/bundles/models.html), en op het [ Verschuiven ModelExporter ](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) kader (dat zelf op [ Jackson annotations ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) vertrouwt).
+De uitvoer JSON is gebaseerd op [&#x200B; het Verdelen Modellen &#x200B;](https://sling.apache.org/documentation/bundles/models.html), en op het [&#x200B; Verschuiven ModelExporter &#x200B;](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) kader (dat zelf op [&#x200B; Jackson annotations &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) vertrouwt).
 
 Dit betekent dat de component een Sling Model moet hebben als het JSON moet uitvoeren. Voer daarom de volgende twee stappen uit om JSON-export voor een willekeurige component mogelijk te maken.
 
@@ -35,7 +35,7 @@ Eerst moet een Sling Model voor de component worden bepaald.
 
 >[!NOTE]
 >
->Voor een voorbeeld om het Verdelen Modellen te gebruiken, zie [ het Ontwikkelen van het Verdelen ModelExporters in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=nl-NL).
+>Voor een voorbeeld om het Verdelen Modellen te gebruiken, zie [&#x200B; het Ontwikkelen van het Verdelen ModelExporters in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=nl-NL).
 
 De implementatieklasse Sling Model moet met het volgende worden geannoteerd:
 
@@ -71,13 +71,13 @@ In een dergelijk geval moet de `model` kiezer echter de eerste kiezer zijn en mo
 
 Om door het kader van de Exporter van JSON in aanmerking te worden genomen, zou de Model interface `ComponentExporter` interface (of `ContainerExporter`, als er een containercomponent is) moeten uitvoeren.
 
-De overeenkomstige het Verdelen Model interface ( `MyComponent`) zou dan worden geannoteerd gebruikend [ de annotaties van Jackson ](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
+De overeenkomstige het Verdelen Model interface ( `MyComponent`) zou dan worden geannoteerd gebruikend [&#x200B; de annotaties van Jackson &#x200B;](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) om te bepalen hoe het (geserialiseerd) zou moeten worden uitgevoerd.
 
 De modelinterface moet behoorlijk worden geannoteerd om te bepalen welke methodes zouden moeten in series worden vervaardigd. Standaard worden alle methoden die de gebruikelijke naamgevingsconventie voor getters respecteren, geserialiseerd en worden hun JSON-eigenschapnamen op natuurlijke wijze afgeleid van de namen van getter. Dit kan worden voorkomen of genegeerd door `@JsonIgnore` of `@JsonProperty` te gebruiken om de naam van de JSON-eigenschap te wijzigen.
 
 ## Voorbeeld {#example}
 
-De Componenten van de Kern hebben de uitvoer JSON sinds versie [ 1.1.0 van de kerncomponenten ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) gesteund en kunnen als verwijzing worden gebruikt.
+De Componenten van de Kern hebben de uitvoer JSON sinds versie [&#x200B; 1.1.0 van de kerncomponenten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) gesteund en kunnen als verwijzing worden gebruikt.
 
 Een voorbeeld vindt u in de implementatie Sling Model van de Image Core-component en de bijbehorende geannoteerde interface.
 
@@ -85,16 +85,16 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [ open aem-kern-wcm-componenten project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
-* Download het project als [ een dossier van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
+* [&#x200B; open aem-kern-wcm-componenten project op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
+* Download het project als [&#x200B; een dossier van het PIT &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
 
 ## Verwante documentatie {#related-documentation}
 
 Raadpleeg de volgende secties voor meer informatie:
 
-* Het [ onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets ](https://helpx.adobe.com/nl/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Het [&#x200B; onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [ component van het Fragment van de Inhoud ](https://helpx.adobe.com/nl/experience-manager/core-components/using/content-fragment-component.html)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [&#x200B; component van het Fragment van de Inhoud &#x200B;](https://helpx.adobe.com/nl/experience-manager/core-components/using/content-fragment-component.html)

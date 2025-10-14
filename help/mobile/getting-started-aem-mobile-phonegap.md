@@ -44,17 +44,17 @@ Voordat u met AEM Mobile gaat werken en de stappen in deze gids voor aan de slag
 
 ## QuickLinks voor auteurs {#quicklinks-for-authors}
 
-Zie [ Authoring voor de Onderneming van Adobe PhoneGap in AEM ](/help/mobile/phonegap.md) over de rollen en de verantwoordelijkheden van een auteur leren.
+Zie [&#x200B; Authoring voor de Onderneming van Adobe PhoneGap in AEM &#x200B;](/help/mobile/phonegap.md) over de rollen en de verantwoordelijkheden van een auteur leren.
 
 ## QuickLinks voor ontwikkelaars {#quicklinks-for-developers}
 
-Er zijn voorbeeldtoepassingen die geïntegreerd zijn met AEM Mobile en die door de ontwikkelaar kunnen worden aangepast. Klik op [ het Ontwikkelen van de Onderneming van Adobe PhoneGap met AEM ](/help/mobile/developing-in-phonegap.md).
+Er zijn voorbeeldtoepassingen die geïntegreerd zijn met AEM Mobile en die door de ontwikkelaar kunnen worden aangepast. Klik op [&#x200B; het Ontwikkelen van de Onderneming van Adobe PhoneGap met AEM &#x200B;](/help/mobile/developing-in-phonegap.md).
 
 In volgende hoofdstukken leert u meer over geavanceerde concepten, zoals Witte labels voor uw toepassing, Lokalisatie, Internationalisatie, ContentSync, Targeting, Analytics en meer.
 
 ## QuickLinks voor beheerders {#quicklinks-for-administrators}
 
-Zie [ het Beheer Inhoud voor de Onderneming van Adobe PhoneGap met AEM ](/help/mobile/administer-phonegap.md) aan opstelling en beheer uw mobiele toepassing.
+Zie [&#x200B; het Beheer Inhoud voor de Onderneming van Adobe PhoneGap met AEM &#x200B;](/help/mobile/administer-phonegap.md) aan opstelling en beheer uw mobiele toepassing.
 
 >[!NOTE]
 >

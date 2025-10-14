@@ -104,7 +104,7 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-[!DNL Assets] heeft verschillende gebruiksgevallen die netwerkprestaties belangrijker maken dan bij veel van onze [!DNL Experience Manager] -projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in het netwerkverbinding van een gebruiker aan [!DNL Experience Manager] bij [ Assets overwegingen voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie ](/help/assets/assets-network-considerations.md) te bepalen.
+[!DNL Assets] heeft verschillende gebruiksgevallen die netwerkprestaties belangrijker maken dan bij veel van onze [!DNL Experience Manager] -projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in het netwerkverbinding van een gebruiker aan [!DNL Experience Manager] bij [&#x200B; Assets overwegingen voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie &#x200B;](/help/assets/assets-network-considerations.md) te bepalen.
 
 ## Beperkingen {#limitations}
 
@@ -124,4 +124,4 @@ Het is moeilijk nauwkeurig de grootte te schatten van het dossier van de TIFF da
 
 ## Omvang van elementen {#size-of-assets}
 
-Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Om zeer grote activa in [!DNL Experience Manager] te uploaden, zie [ Configuratie om zeer grote activa ](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb) te uploaden.
+Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Om zeer grote activa in [!DNL Experience Manager] te uploaden, zie [&#x200B; Configuratie om zeer grote activa &#x200B;](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb) te uploaden.

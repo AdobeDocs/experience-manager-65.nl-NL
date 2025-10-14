@@ -23,12 +23,12 @@ ht-degree: 0%
 1. Selecteer uw nieuwe campagne in de linkerruit, of klik het in de juiste ruit tweemaal.
 1. Selecteer de lijstweergave met het pictogram:
 
-   ![ mening van de Lijst ](do-not-localize/chlimage_1-11.png)
+   ![&#x200B; mening van de Lijst &#x200B;](do-not-localize/chlimage_1-11.png)
 
 1. Klik **Nieuw...**
 1. U kunt de **Titel**, **Naam** en type van te creëren ervaring specificeren; in dit geval, Test&amp;Target Aanbieding.
 
-   ![ chlimage_1-139 ](assets/chlimage_1-139.png)
+   ![&#x200B; chlimage_1-139 &#x200B;](assets/chlimage_1-139.png)
 
 1. Klik **creëren**.
 
@@ -38,4 +38,4 @@ ht-degree: 0%
 
 ## Integreren met Adobe Target {#integrating-with-adobe-target}
 
-Zie [ met Adobe ](/help/sites-administering/target.md) [ Doel ](/help/sites-administering/target.md) voor volledige details integreren.
+Zie [&#x200B; met Adobe &#x200B;](/help/sites-administering/target.md) [&#x200B; Doel &#x200B;](/help/sites-administering/target.md) voor volledige details integreren.

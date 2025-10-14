@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Een adaptief formulier automatisch opslaan {#auto-save-an-adaptive-form}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 U kunt een adaptief formulier zodanig configureren dat de inhoud automatisch wordt opgeslagen op basis van een gebeurtenis of een vooraf gedefinieerd tijdsinterval. Standaard wordt de inhoud van een adaptief formulier opgeslagen op een handeling van de gebruiker, bijvoorbeeld wanneer u op de knop Opslaan drukt. De optie Automatisch opslaan is handig in:
 
@@ -29,7 +29,7 @@ U kunt een adaptief formulier zodanig configureren dat de inhoud automatisch wor
 
 Voor een adaptief formulier is de optie voor automatisch opslaan niet uit het vak ingeschakeld. U kunt de auto sparen optie van **Auto toelaten sparen** sectie in de eigenschappen van een adaptieve vorm. De **Auto sparen** sectie verstrekt ook verscheidene andere configuratieopties. Voer de volgende stappen uit om de optie Automatisch opslaan in te schakelen en te configureren voor een adaptief formulier:
 
-1. Om tot de auto-sparen sectie in de eigenschappen toegang te hebben, selecteer een component, dan ![ gebied-niveau ](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![ cmp ](assets/cmppr.png).
+1. Om tot de auto-sparen sectie in de eigenschappen toegang te hebben, selecteer een component, dan ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 1. In de **[!UICONTROL Auto Save]** sectie, **[!UICONTROL Enable]** de auto-sparen optie.
 1. Geef in het vak **[!UICONTROL Adaptive Form Event]** 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
@@ -42,7 +42,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uit het va
    * Geef een tijdsinterval op als u **[!UICONTROL Time based]** trigger selecteert.
    * Geef een gebeurtenisnaam op als u **[!UICONTROL Event based]** trigger selecteert.
 
-   U kunt ook uw eigen aangepaste strategie aan de lijst toevoegen. Voor details, zie [ een douanestrategie uitvoeren om de vormen ](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p) automatisch te bewaren.
+   U kunt ook uw eigen aangepaste strategie aan de lijst toevoegen. Voor details, zie [&#x200B; een douanestrategie uitvoeren om de vormen &#x200B;](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p) automatisch te bewaren.
 
 1. (Alleen op tijd gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor op tijd gebaseerde automatische opslag te configureren.
 
@@ -50,7 +50,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uit het va
 
 1. (Alleen op gebeurtenissen gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor automatisch opslaan op basis van gebeurtenissen te configureren.
 
-   1. In de **Auto sparen na deze gebeurtenis** doos, specificeer a [ GuideBridge ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
+   1. In de **Auto sparen na deze gebeurtenis** doos, specificeer a [&#x200B; GuideBridge &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
 
 1. (Facultatief) om de inhoud voor anonieme gebruikers automatisch te bewaren, **laat Autosave voor anonieme gebruikers** optie toe, en klik **[!UICONTROL OK]**.
 
@@ -64,7 +64,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uit het va
 
 U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch opslaan te activeren. Voer de volgende stappen uit om de aangepaste gebeurtenis te maken en te implementeren:
 
-1. Maak clientbibliotheek en clientbibliotheekmappen. Voor gedetailleerde stappen, zie [ Gebruikend Cliënt-Kant het document van Bibliotheken ](/help/sites-developing/clientlibs.md).
+1. Maak clientbibliotheek en clientbibliotheekmappen. Voor gedetailleerde stappen, zie [&#x200B; Gebruikend Cliënt-Kant het document van Bibliotheken &#x200B;](/help/sites-developing/clientlibs.md).
 
    Bijvoorbeeld, gebruikt het volgende manuscript de douane `emailFocusChange` gebeurtenis om de autosave functionaliteit teweeg te brengen:
 
@@ -85,6 +85,6 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 
 1. Open het adaptieve formulier in de modus Schrijven.
 
-1. Op geef wijze uit, selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![ cmp ](assets/cmppr.png).
+1. Op geef wijze uit, selecteer een component, dan uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 1. Open de sectie **[!UICONTROL Basic]** in de eigenschappen. Voer in het vak **[!UICONTROL Client Library Category]** de waarde in van de categorie-eigenschap die is gedefinieerd tijdens het maken van de clientbibliotheekmappen.
 1. Open de sectie Automatisch opslaan. Geef in het vak **[!UICONTROL Auto save after this event]** een aangepaste gebeurtenis op die al in de clientbibliotheek is gedefinieerd. Klik op **[!UICONTROL OK]**.

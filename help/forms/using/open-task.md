@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Als de Adobe Experience Manager (AEM) Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd.
 
-Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [ het Opslaan van een ontwerp ](/help/forms/using/save-as-draft.md).
+Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [&#x200B; het Opslaan van een ontwerp &#x200B;](/help/forms/using/save-as-draft.md).
 
 **om een taak** te openen
 

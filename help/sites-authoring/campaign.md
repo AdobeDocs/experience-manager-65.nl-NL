@@ -21,17 +21,17 @@ ht-degree: 0%
 U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails. Daartoe moet u:
 
 1. Maak een nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
-1. Selecteer [ de dienst van Adobe Campaign ](#selecting-the-adobe-campaign-cloud-service-and-template) alvorens de inhoud uit te geven om tot alle functionaliteit toegang te hebben.
+1. Selecteer [&#x200B; de dienst van Adobe Campaign &#x200B;](#selecting-the-adobe-campaign-cloud-service-and-template) alvorens de inhoud uit te geven om tot alle functionaliteit toegang te hebben.
 1. Bewerk de inhoud.
 1. Valideer de inhoud.
 
 Inhoud kan vervolgens worden gesynchroniseerd met een levering in Adobe Campaign. In dit document worden gedetailleerde instructies beschreven.
 
-Zie ook [ Creërend Adobe Campaign Forms in AEM ](/help/sites-authoring/adobe-campaign-forms.md).
+Zie ook [&#x200B; Creërend Adobe Campaign Forms in AEM &#x200B;](/help/sites-authoring/adobe-campaign-forms.md).
 
 >[!NOTE]
 >
->Alvorens u deze functionaliteit kunt gebruiken, moet u AEM vormen om met of [ Adobe Campaign ](/help/sites-administering/campaignonpremise.md) of [ Adobe Campaign Standard ](/help/sites-administering/campaignstandard.md) te integreren.
+>Alvorens u deze functionaliteit kunt gebruiken, moet u AEM vormen om met of [&#x200B; Adobe Campaign &#x200B;](/help/sites-administering/campaignonpremise.md) of [&#x200B; Adobe Campaign Standard &#x200B;](/help/sites-administering/campaignstandard.md) te integreren.
 
 ## E-mailinhoud verzenden via Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
@@ -58,9 +58,9 @@ In dit document worden gedetailleerde instructies beschreven.
 
    >[!NOTE]
    >
-   >[ E-mailsteekproeven zijn slechts beschikbaar in Geometrixx ](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
+   >[&#x200B; E-mailsteekproeven zijn slechts beschikbaar in Geometrixx &#x200B;](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
-   ![ chlimage_1-15 ](assets/chlimage_1-15a.png)
+   ![&#x200B; chlimage_1-15 &#x200B;](assets/chlimage_1-15a.png)
 
 1. Selecteer **creëren** toen **Pagina** creëren.
 1. Selecteer één van de beschikbare malplaatjes specifiek waarmet Adobe Campaign u verbindt, dan klik **daarna**. Er zijn standaard drie sjablonen beschikbaar:
@@ -84,11 +84,11 @@ Van de **pagina van Plaatsen**:
 
 1. In AEM selecteer de e-mailpagina en klik **Eigenschappen van de Mening**.
 
-   ![ chlimage_1-16 ](assets/chlimage_1-16a.png)
+   ![&#x200B; chlimage_1-16 &#x200B;](assets/chlimage_1-16a.png)
 
 1. Selecteer **uitgeven** en dan de **Diensten van de Wolk** tabel en scrol neer aan de bodem en klik + teken om een configuratie toe te voegen en dan **Adobe Campaign** te selecteren.
 
-   ![ chlimage_1-17 ](assets/chlimage_1-17a.png)
+   ![&#x200B; chlimage_1-17 &#x200B;](assets/chlimage_1-17a.png)
 
 1. Selecteer de configuratie die uw instantie van Adobe Campaign van de drop-down lijst aanpast, dan bevestig door **te klikken sparen**.
 1. U kunt het malplaatje bekijken dat e-mail op het heeft toegepast door **Adobe Campaign** tabel te klikken. Als u een andere sjabloon wilt selecteren, hebt u tijdens het bewerken toegang tot de sjabloon in de e-mail.
@@ -97,13 +97,13 @@ Van de **pagina van Plaatsen**:
 
    Welke sjabloon u selecteert, bepaalt welke aanpassingsvelden beschikbaar zijn in Adobe Campaign.
 
-   ![ chlimage_1-18 ](assets/chlimage_1-18a.png)
+   ![&#x200B; chlimage_1-18 &#x200B;](assets/chlimage_1-18a.png)
 
 Van binnen nieuwsbrief/e-mail in ontwerp, zou u niet de configuratie van de de wolkendienst van Adobe Campaign in **Eigenschappen van de Pagina** wegens een lay-outkwestie kunnen kunnen selecteren. U kunt de hier beschreven tijdelijke oplossing gebruiken:
 
 1. In AEM selecteer de e-mailpagina en klik **uitgeven**. Klik **Open Eigenschappen**.
 
-   ![ chlimage_1-19 ](assets/chlimage_1-19a.png)
+   ![&#x200B; chlimage_1-19 &#x200B;](assets/chlimage_1-19a.png)
 
 1. Selecteer **de diensten van de Wolk** en klik **+** om een configuratie toe te voegen. Selecteer om het even welke zichtbare configuratie (maakt niet uit welke). Klik **+** teken om een andere configuratie toe te voegen en dan **Adobe Campaign** te selecteren.
 
@@ -120,7 +120,7 @@ E-mailinhoud bewerken:
 
 1. Open het e-mailbericht en ga standaard naar de modus Bewerken.
 
-   ![ chlimage_1-20 ](assets/chlimage_1-20a.png)
+   ![&#x200B; chlimage_1-20 &#x200B;](assets/chlimage_1-20a.png)
 
 1. Als u het onderwerp van e-mail zou willen veranderen of gewone tekst voor die gebruikers toevoegen die niet e-mail in HTML zullen bekijken, **E-mail** selecteren en een onderwerp en tekst toevoegen. Selecteer het paginapictogram om automatisch een versie van normale tekst te genereren op basis van HTML. Klik op het vinkje als u klaar bent.
 
@@ -130,19 +130,19 @@ E-mailinhoud bewerken:
    >
    >Als de verpersoonlijkingsgebieden in eigenschappen van binnen de redacteur grayed uit zijn, heronderzoek uw configuratie.
 
-   ![ chlimage_1-21 ](assets/chlimage_1-21a.png)
+   ![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-21a.png)
 
 1. Open het componentenpaneel op linkerkant van het scherm en selecteer **Nieuwsbrief van Adobe Campaign** van het drop-down menu om die componenten te vinden.
 
-   ![ chlimage_1-22 ](assets/chlimage_1-22a.png)
+   ![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22a.png)
 
 1. Sleep componenten rechtstreeks naar de pagina en bewerk ze dienovereenkomstig. Bijvoorbeeld, kunt u a **Tekst &amp; Personalization (Campagne)** component slepen en gepersonaliseerde tekst toevoegen.
 
-   ![ chlimage_1-23 ](assets/chlimage_1-23a.png)
+   ![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23a.png)
 
    Zie {de Componenten van 0} Adobe Campaign [&#128279;](/help/sites-authoring/adobe-campaign-components.md) voor een gedetailleerde beschrijving van elke component.
 
-   ![ chlimage_1-24 ](assets/chlimage_1-24a.png)
+   ![&#x200B; chlimage_1-24 &#x200B;](assets/chlimage_1-24a.png)
 
 ### Personalisatie invoegen {#inserting-personalization}
 
@@ -162,31 +162,31 @@ Personalisatie invoegen:
 
 1. Tussenvoegsel een nieuwe **Nieuwsbrief** > **Tekst &amp; Personalization (Campagne)** component door het op de pagina te slepen.
 
-   ![ chlimage_1-25 ](assets/chlimage_1-25a.png)
+   ![&#x200B; chlimage_1-25 &#x200B;](assets/chlimage_1-25a.png)
 
 1. Open de component door op het potloodpictogram te klikken. De editor Inplace wordt geopend.
 
-   ![ chlimage_1-26 ](assets/chlimage_1-26a.png)
+   ![&#x200B; chlimage_1-26 &#x200B;](assets/chlimage_1-26a.png)
 
    >[!NOTE]
    >
    >**voor Adobe Campaign Standard:**
    >
    >* De beschikbare contextgebieden beantwoorden aan **Profielen** richtend afmeting in Adobe Campaign.
-   >* Zie [ Linking een AEM pagina aan een e-mail van Adobe Campaign ](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+   >* Zie [&#x200B; Linking een AEM pagina aan een e-mail van Adobe Campaign &#x200B;](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
    >
    >**voor Adobe Campaign Classic:**
    >
-   >* De beschikbare contextgebieden worden dynamisch teruggekregen van Adobe Campaign **nms:zaadMember** schema. De gegevens van de doelextensie worden dynamisch hersteld vanuit de workflow die de levering bevat die met de inhoud is gesynchroniseerd. (Zie [ Synchronizing inhoud die in AEM met een levering van Adobe Campaign ](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) wordt gecreeerd sectie).
+   >* De beschikbare contextgebieden worden dynamisch teruggekregen van Adobe Campaign **nms:zaadMember** schema. De gegevens van de doelextensie worden dynamisch hersteld vanuit de workflow die de levering bevat die met de inhoud is gesynchroniseerd. (Zie [&#x200B; Synchronizing inhoud die in AEM met een levering van Adobe Campaign &#x200B;](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) wordt gecreeerd sectie).
    >
-   >* Om verpersoonlijkingselementen toe te voegen of te verbergen, zie [ het Leiden verpersoonlijkingsgebieden en blokken ](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   >* Om verpersoonlijkingselementen toe te voegen of te verbergen, zie [&#x200B; het Leiden verpersoonlijkingsgebieden en blokken &#x200B;](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Belangrijk**: Alle gebieden van de zaadlijst moeten ook in de ontvankelijke lijst (of overeenkomstige contactlijst) zijn.
 
 1. Voeg tekst in door te typen. Voeg contextgebieden of verpersoonlijkingsblokken in door de componenten van Adobe Campaign te klikken en hen te selecteren. Selecteer het vinkje als u klaar bent.
 
-   ![ chlimage_1-27 ](assets/chlimage_1-27a.png)
+   ![&#x200B; chlimage_1-27 &#x200B;](assets/chlimage_1-27a.png)
 
-   Nadat u contextvelden of aanpassingsblokken hebt ingevoegd, kunt u een voorvertoning van uw nieuwsbrief bekijken en uw velden testen. Zie [ Previewing een Bulletin ](#previewing-a-newsletter).
+   Nadat u contextvelden of aanpassingsblokken hebt ingevoegd, kunt u een voorvertoning van uw nieuwsbrief bekijken en uw velden testen. Zie [&#x200B; Previewing een Bulletin &#x200B;](#previewing-a-newsletter).
 
 ### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
 
@@ -194,7 +194,7 @@ U kunt voorvertonen hoe de nieuwsbrief eruit zal zien en een voorvertoning van d
 
 1. Met open nieuwsbrief, klik **Voorproef** in de hogere juiste hoek van AEM. AEM toont hoe de nieuwsbrief kijkt wanneer de gebruikers het ontvangen.
 
-   ![ chlimage_1-28 ](assets/chlimage_1-28a.png)
+   ![&#x200B; chlimage_1-28 &#x200B;](assets/chlimage_1-28a.png)
 
    >[!NOTE]
    >
@@ -202,11 +202,11 @@ U kunt voorvertonen hoe de nieuwsbrief eruit zal zien en een voorvertoning van d
 
 1. Om voorproef de verpersoonlijking, open ContextHub door het overeenkomstige pictogram in de toolbar te klikken of te tikken. De codes van het verpersoonlijkingsgebied worden nu vervangen door de zaadgegevens van de geselecteerde verpersoonlijking. Zie hoe de variabelen aanpassen wanneer het schakelen personas in ContextHub.
 
-   ![ chlimage_1-29 ](assets/chlimage_1-29a.png)
+   ![&#x200B; chlimage_1-29 &#x200B;](assets/chlimage_1-29a.png)
 
 1. U kunt de zaadgegevens van Adobe Campaign bekijken die aan de momenteel geselecteerde persoon worden geassocieerd. Om dit te doen, klik de module van Adobe Campaign in de bar ContextHub. Hiermee wordt een dialoogvenster geopend waarin alle zaadgegevens van het huidige profiel worden weergegeven. De gegevens worden opnieuw aangepast wanneer naar een andere persoon wordt overgeschakeld.
 
-   ![ chlimage_1-30 ](assets/chlimage_1-30a.png)
+   ![&#x200B; chlimage_1-30 &#x200B;](assets/chlimage_1-30a.png)
 
 ### Inhoud in AEM goedkeuren {#approving-content-in-aem}
 
@@ -214,21 +214,21 @@ Nadat de inhoud is voltooid, kunt u het goedkeuringsproces starten. Ga naar het 
 
 Deze out-of-the-box werkstroom heeft twee stappen: revisie dan goedkeuring, of revisie dan verwerping. Deze workflow kan echter worden uitgebreid en aangepast aan een complexer proces.
 
-![ chlimage_1-31 ](assets/chlimage_1-31a.png)
+![&#x200B; chlimage_1-31 &#x200B;](assets/chlimage_1-31a.png)
 
 Om inhoud voor Adobe Campaign goed te keuren, pas het werkschema toe door **Werkschema** te selecteren en **te selecteren keur voor Adobe Campaign** goed en klik **Werkschema van het Begin**. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook verwerpen door **te selecteren verwerp** in plaats van **&#x200B;**&#x200B;in de laatste werkschemastap goedkeuren.
 
-![ chlimage_1-32 ](assets/chlimage_1-32a.png)
+![&#x200B; chlimage_1-32 &#x200B;](assets/chlimage_1-32a.png)
 
 Nadat de inhoud is goedgekeurd, wordt deze weergegeven als goedgekeurd in Adobe Campaign. Het e-mailbericht kan vervolgens worden verzonden.
 
 In Adobe Campaign Standard:
 
-![ chlimage_1-33 ](assets/chlimage_1-33a.png)
+![&#x200B; chlimage_1-33 &#x200B;](assets/chlimage_1-33a.png)
 
 In Adobe Campaign Classic:
 
-![ chlimage_1-34 ](assets/chlimage_1-34a.png)
+![&#x200B; chlimage_1-34 &#x200B;](assets/chlimage_1-34a.png)
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ Met Adobe Campaign Standard kunt u inhoud die is gemaakt in AEM herstellen en ko
 
 Zo kunt u de inhoud leveren. U ziet of een nieuwsbrief met één enkele levering door de code verbonden is die op de pagina toont.
 
-![ chlimage_1-35 ](assets/chlimage_1-35a.png)
+![&#x200B; chlimage_1-35 &#x200B;](assets/chlimage_1-35a.png)
 
 >[!NOTE]
 >
@@ -260,13 +260,13 @@ Zo kunt u de inhoud leveren. U ziet of een nieuwsbrief met één enkele levering
 
 Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campaign:
 
-1. Maak een e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Verwijs naar [ Creërend e-mails in Adobe Campaign Standard ](https://helpx.adobe.com/nl/campaign/standard/channels/using/creating-an-email.html) voor meer informatie.
+1. Maak een e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Verwijs naar [&#x200B; Creërend e-mails in Adobe Campaign Standard &#x200B;](https://helpx.adobe.com/nl/campaign/standard/channels/using/creating-an-email.html) voor meer informatie.
 
-   ![ chlimage_1-36 ](assets/chlimage_1-36a.png)
+   ![&#x200B; chlimage_1-36 &#x200B;](assets/chlimage_1-36a.png)
 
 1. Open het **blok van de Inhoud** van het leveringsdashboard.
 
-   ![ chlimage_1-37 ](assets/chlimage_1-37a.png)
+   ![&#x200B; chlimage_1-37 &#x200B;](assets/chlimage_1-37a.png)
 
 1. Selecteer **Verbinding met een inhoud van Adobe Experience Manager** in de toolbar om tot de lijst van inhoud toegang te hebben beschikbaar in AEM.
 
@@ -274,7 +274,7 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
    >
    >Als de **Verbinding met een Adobe Experience Manager** optie niet op de actiebar verschijnt, controleer dat de **Inhoud het uitgeven wijze** correct wordt gevormd geplaatst aan **Adobe Experience Manager** in de e-maileigenschappen.
 
-   ![ chlimage_1-38 ](assets/chlimage_1-38a.png)
+   ![&#x200B; chlimage_1-38 &#x200B;](assets/chlimage_1-38a.png)
 
 1. Selecteer de inhoud die u in uw e-mail wilt gebruiken.
 
@@ -315,7 +315,7 @@ Met Adobe Campaign kunt u inhoud die is gemaakt AEM met:
 
 Als een nieuwsbrief AEM is gekoppeld aan één levering, wordt de leveringscode weergegeven op de pagina.
 
-![ chlimage_1-39 ](assets/chlimage_1-39a.png)
+![&#x200B; chlimage_1-39 &#x200B;](assets/chlimage_1-39a.png)
 
 >[!NOTE]
 >
@@ -329,7 +329,7 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
 1. Creeer een levering of voeg een leveringsactiviteit aan een campagnewerkschema toe door de **E-maillevering met AEM inhoud (mailAEMContent) te selecteren** leveringsmalplaatje.
 
-   ![ chlimage_1-40 ](assets/chlimage_1-40a.png)
+   ![&#x200B; chlimage_1-40 &#x200B;](assets/chlimage_1-40a.png)
 
 1. Selecteer **Synchroniseer** in de toolbar om tot de lijst van inhoud toegang te hebben beschikbaar in AEM.
 
@@ -337,7 +337,7 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
    >
    >Als de **Synchroniseer** optie niet op de toolbar van de levering verschijnt, controleer dat het **Inhoud het uitgeven van wijze** gebied correct in **AEM** door **Eigenschappen** te selecteren > **Geavanceerd** wordt gevormd.
 
-   ![ chlimage_1-41 ](assets/chlimage_1-41a.png)
+   ![&#x200B; chlimage_1-41 &#x200B;](assets/chlimage_1-41a.png)
 
 1. Selecteer de inhoud die u met uw levering wilt synchroniseren.
 
@@ -352,7 +352,7 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
    >
    >Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
 
-   ![ chlimage_1-42 ](assets/chlimage_1-42a.png)
+   ![&#x200B; chlimage_1-42 &#x200B;](assets/chlimage_1-42a.png)
 
 1. Geef de andere parameters van de levering op (doel, enzovoort)
 1. Start zo nodig het goedkeuringsproces voor de levering in Adobe Campaign. De goedkeuring van inhoud in AEM is noodzakelijk naast goedkeuringen die in Adobe Campaign worden gevormd (begroting, doel, etc.). Goedkeuring van inhoud in Adobe Campaign is alleen mogelijk als de inhoud al is goedgekeurd in AEM.

@@ -23,13 +23,13 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 >[!NOTE]
 >
->Buiten het auteursmilieu zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de [ Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) en [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
+>Buiten het auteursmilieu zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de [&#x200B; Bouwer van de Vraag &#x200B;](/help/sites-developing/querybuilder-api.md) en [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Basisinformatie zoeken {#search-basics}
 
 Om tot het onderzoekspaneel toegang te hebben, klik het **lusje van het Onderzoek** bij de bovenkant van de linkerruit van de aangewezen console.
 
-![ chlimage_1-101 ](assets/chlimage_1-101.png)
+![&#x200B; chlimage_1-101 &#x200B;](assets/chlimage_1-101.png)
 
 Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het bevat velden en widgets voor het volgende:
 
@@ -40,14 +40,14 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 
 >[!NOTE]
 >
->Wanneer uw instantie voor [ het onderzoek van Lucene ](/help/sites-deploying/queries-and-indexing.md) wordt gevormd kunt u het volgende in **Fulltext** gebruiken:
+>Wanneer uw instantie voor [&#x200B; het onderzoek van Lucene &#x200B;](/help/sites-deploying/queries-and-indexing.md) wordt gevormd kunt u het volgende in **Fulltext** gebruiken:
 >
->* [ Jokertekens ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
->* [ de Exploitanten van Boole ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+>* [&#x200B; Jokertekens &#x200B;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
+>* [&#x200B; de Exploitanten van Boole &#x200B;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
->* [ Reguliere uitdrukkingen ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
->* [ Gebied groeperen ](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [ het Van een poot &lbrace;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [&#x200B; Reguliere uitdrukkingen &#x200B;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>* [&#x200B; Gebied groeperen &#x200B;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
+>* [&#x200B; het Van een poot &lbrace;](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 Voer het onderzoek uit door **Onderzoek** bij de bodem van de ruit te klikken. Klik **Terugstellen** om de onderzoekscriteria te ontruimen.
@@ -56,7 +56,7 @@ Voer het onderzoek uit door **Onderzoek** bij de bodem van de ruit te klikken. K
 
 Op verschillende locaties kan een filter worden ingesteld (en gewist) om de weergave omlaag te doorlopen en te verfijnen:
 
-![ chlimage_1-102 ](assets/chlimage_1-102.png)
+![&#x200B; chlimage_1-102 &#x200B;](assets/chlimage_1-102.png)
 
 ## Zoeken en vervangen {#find-and-replace}
 
@@ -65,7 +65,7 @@ In de **console van Websites** a **vindt &amp; vervangt** menuoptie laat u naar,
 1. Selecteer de hoofdpagina, of map, waar de zoek- en vervangactie moet plaatsvinden.
 1. Selecteer **toen de Hulpmiddelen van 0&rbrace;** Vondst &amp; vervangt **:**
 
-   ![ screen_shot_2012-02-15at120346pm ](assets/screen_shot_2012-02-15at120346pm.png)
+   ![&#x200B; screen_shot_2012-02-15at120346pm &#x200B;](assets/screen_shot_2012-02-15at120346pm.png)
 
 1. De **Vondst &amp; vervangt** dialoog doet het volgende:
 
@@ -77,7 +77,7 @@ In de **console van Websites** a **vindt &amp; vervangt** menuoptie laat u naar,
 
    Het klikken van **Voorproef** lijsten waar de termijn is gevonden. U kunt specifieke te vervangen exemplaren selecteren/wissen:
 
-   ![ screen_shot_2012-02-15at120719pm ](assets/screen_shot_2012-02-15at120719pm.png)
+   ![&#x200B; screen_shot_2012-02-15at120719pm &#x200B;](assets/screen_shot_2012-02-15at120719pm.png)
 
 1. Klik **vervangen** om eigenlijk alle instanties te vervangen. U wordt gevraagd de actie te bevestigen.
 

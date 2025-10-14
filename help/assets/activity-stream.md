@@ -28,7 +28,7 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 * Afwijzen
 * Verplaatsen
 
-De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald van de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar de logbestanden worden opgeslagen. Bovendien wordt de chronologieactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in [!DNL Experience Manager] gecontroleerd via [ de Verbinding van Activa van de Adobe ](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of [ Desktop app van de Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
+De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald van de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar de logbestanden worden opgeslagen. Bovendien wordt de chronologieactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in [!DNL Experience Manager] gecontroleerd via [&#x200B; de Verbinding van Activa van de Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of [&#x200B; Desktop app van de Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=nl-NL).
 
 >[!NOTE]
 >
@@ -36,11 +36,11 @@ De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden op
 
 Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u vervolgens **[!UICONTROL Timeline]** in de lijst GlobalNav.
 
-![ chronologie-2 ](assets/timeline-2.png)
+![&#x200B; chronologie-2 &#x200B;](assets/timeline-2.png)
 
 De tijdlijn geeft de activiteitsstroom weer voor de bewerkingen die u uitvoert op de elementen.
 
-![ activity_stream ](assets/activity_stream.png)
+![&#x200B; activity_stream &#x200B;](assets/activity_stream.png)
 
 >[!NOTE]
 >

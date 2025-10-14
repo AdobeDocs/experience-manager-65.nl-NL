@@ -18,16 +18,16 @@ ht-degree: 0%
 
 Een cumulatieve lijst van zeer belangrijke eigenschappen en verhogingen in Adobe Experience Manager 6.5 voor de vorige acht versies van het de dienstpak.
 
-Zie ook [ Adobe Experience Manager 6.5 de Latest Nota&#39;s van de Versie van het Pak van de Dienst ](/help/release-notes/release-notes.md).
+Zie ook [&#x200B; Adobe Experience Manager 6.5 de Latest Nota&#39;s van de Versie van het Pak van de Dienst &#x200B;](/help/release-notes/release-notes.md).
 
 
 ## AEM 6.5, Service Pack 23-mei 22, 2025
 
 ### Forms {#forms-sp23}
 
-* [ Toegankelijke Hyperlinks met gemengde tekst die in Statische PDFs ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf) stileert: De hyperlinks die gemengde tekststijlen in statische PDFs bevatten worden nu geëtiketteerd als één enkel toegankelijk element. Deze verbetering vereenvoudigt de codestructuur, verbetert de navigatie van de schermlezer, en steunt betere toegankelijkheidsnaleving.
+* [&#x200B; Toegankelijke Hyperlinks met gemengde tekst die in Statische PDFs &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf) stileert: De hyperlinks die gemengde tekststijlen in statische PDFs bevatten worden nu geëtiketteerd als één enkel toegankelijk element. Deze verbetering vereenvoudigt de codestructuur, verbetert de navigatie van de schermlezer, en steunt betere toegankelijkheidsnaleving.
 
-* [ Bijgewerkte Gesteunde Matrijs van het Platform ](/help/forms/using/aem-forms-jee-supported-platforms.md)
+* [&#x200B; Bijgewerkte Gesteunde Matrijs van het Platform &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
   De nieuwste versie introduceert updates van de ondersteunde platformmatrix, zodat deze compatibel zijn met nieuwere technologieën.
 
@@ -43,13 +43,13 @@ Zie ook [ Adobe Experience Manager 6.5 de Latest Nota&#39;s van de Versie van he
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits)
 
-* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [&#x200B; Verhard component van de dossiergehechtheid &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
 
 ## AEM 6.5, Service Pack 22-november 21, 2024
 
 ### Sites {#sites}
 
-[ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) is nu beschikbaar op AEM 6.5 voor hoofdloze gebruiksgevallen met de toepassing van een eigenschapspak.
+[&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) is nu beschikbaar op AEM 6.5 voor hoofdloze gebruiksgevallen met de toepassing van een eigenschapspak.
 
 ### [!DNL Assets]
 
@@ -59,13 +59,13 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 
 #### Nieuwe GA-functies in AEM Forms {#ga-aem-forms-sp22}
 
-* Toegevoegde steun om doopvont toe te laten die in [ Interactieve Communicatie Band APIs ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDFs die door de Band API wordt geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoerbestanden beter wordt ondersteund.
+* Toegevoegde steun om doopvont toe te laten die in [&#x200B; Interactieve Communicatie Band APIs &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) inbedt - Interactieve Mededelingen omvat nu steun voor het inbedden van de doopvonten van Adobe Ming en van Adobe Myungjo in PDFs die door de Band API wordt geproduceerd. Deze verbetering zorgt voor nauwkeurige tekstrendering in gegenereerde documenten, zelfs bij het gebruik van fontsubsets, waardoor meertalige inhoud in PDF-uitvoerbestanden beter wordt ondersteund.
 
-* [ Inhoudslijst API voor de Toegankelijkheid van PDF ](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - AEM Forms op OSGi steunt nu de nieuwe TOC markering API om PDF voor toegankelijkheidsnormen te verbeteren. PDF&#39;s worden toegankelijker gemaakt voor gebruikers met ondersteunende hulpmiddelen.
+* [&#x200B; Inhoudslijst API voor de Toegankelijkheid van PDF &#x200B;](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - AEM Forms op OSGi steunt nu de nieuwe TOC markering API om PDF voor toegankelijkheidsnormen te verbeteren. PDF&#39;s worden toegankelijker gemaakt voor gebruikers met ondersteunende hulpmiddelen.
 
-* [ de resolutie van het Fragment XDP ](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - AEM Forms op OSGi lost nu Fragment XDPs op die in Primaire XDPs wordt van verwijzingen wordt voorzien en in de Bewaarplaats van AEM CRX wordt opgeslagen.
+* [&#x200B; de resolutie van het Fragment XDP &#x200B;](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - AEM Forms op OSGi lost nu Fragment XDPs op die in Primaire XDPs wordt van verwijzingen wordt voorzien en in de Bewaarplaats van AEM CRX wordt opgeslagen.
 
-* [ PDF/A nalevingsverhogingen ](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - nu kunnen de gebruikers PDFs in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
+* [&#x200B; PDF/A nalevingsverhogingen &#x200B;](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - nu kunnen de gebruikers PDFs in formaten PDF/A (1a, 2a, 3a) voor archiveringsdoeleinden omzetten terwijl het verzekeren van toegankelijkheid en het controleren van naleving van deze normen.
 
 * **Steun voor Auto het Grootte van Doopvont voor Statische documenten van PDF** - AEM Forms Designer, OutputService, en FormsService steunt nu auto het rangschikken van doopvonten voor statische PDFs. Als de gebruiker de fontgrootte 0 instelt voor tekst-, numerieke, wachtwoord- of datetime velden, wordt de fontgrootte automatisch aangepast binnen deze velden zonder de algemene grootte van het veld te wijzigen. Als gebruikers de functie willen gebruiken, geven ze een markering door in de aangepaste XCI: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>` .
 
@@ -73,13 +73,13 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 
 De bètafunctie biedt u een unieke kans om exclusieve toegang te krijgen tot geavanceerde innovaties en om hun ontwikkeling vorm te geven. Wilt u een bètafunctie voor uw omgevingen inschakelen? Verzend een e-mail van uw officiële adres naar aem-forms-ea@adobe.com met de lijst van mogelijkheden die u geinteresseerd bent.
 
-* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [ Cloudflare Turnstile CAPTCHA diensten ](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
+* [&#x200B; hCaptcha &#x200B;](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) en [&#x200B; Cloudflare Turnstile CAPTCHA diensten &#x200B;](/help/forms/using/integrate-adaptive-forms-turnstile.md): AEM Forms steunt de volgende diensten Captcha:
    * Captcha beschermt formulieren tegen bots, spam en automatisch misbruik door gebruikers uit te dagen met een widget selectievakjes. Het zorgt ervoor dat alleen menselijke gebruikers doorgaan, waardoor de beveiliging voor online transacties wordt verbeterd.
    * Cloudflare Turnstile biedt een beveiligingsmaatregel die tot doel heeft formulieren te beschermen tegen geautomatiseerde bots, kwaadaardige aanvallen, spam en ongewenst geautomatiseerd verkeer. Er wordt een selectievakje weergegeven bij het verzenden van formulieren om te controleren of het formulier menselijk is, voordat het formulier kan worden verzonden.
 
 * Adaptieve formulierversie:
-   * [ creeer veelvoudige versies van een AanpassingsVorm ](/help/forms/using/add-versioning-reviews-comments.md) - nu kunnen de gebruikers variaties van bestaande vormen gemakkelijk beheren. Dit proces vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
-   * [ vergelijk Aangepaste Forms ](/help/forms/using/compare-forms-core-components.md): De gebruikers kunnen nu twee vormen gemakkelijk vergelijken om verschillen te identificeren. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
+   * [&#x200B; creeer veelvoudige versies van een AanpassingsVorm &#x200B;](/help/forms/using/add-versioning-reviews-comments.md) - nu kunnen de gebruikers variaties van bestaande vormen gemakkelijk beheren. Dit proces vereenvoudigt versiecontrole en vergemakkelijkt vergelijking voor vormoptimalisering, allen binnen één enkele, gestroomlijnde werkschema.
+   * [&#x200B; vergelijk Aangepaste Forms &#x200B;](/help/forms/using/compare-forms-core-components.md): De gebruikers kunnen nu twee vormen gemakkelijk vergelijken om verschillen te identificeren. Het vergemakkelijkt vlotte samenwerking door teamleden toe te laten om revisies te vergelijken en veranderingen efficiënt te bespreken.
 
 ## AEM 6.5, Service Pack 21-juni 6, 2024
 
@@ -101,11 +101,11 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
    * Ondersteuning voor het implementeren van geneste voorwaarden met `When-then-else` -functionaliteit.
    * Valideer of stel panelen en formulieren, met inbegrip van gebieden opnieuw in.
    * Ondersteuning voor moderne JavaScript-functies zoals let- en pijlfuncties (ES10-ondersteuning) binnen de aangepaste functies.
-* [ AutoTag API voor de Toegankelijkheid van PDF ](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms op OSGi steunt nu nieuwe AutoTag API om PDF voor toegankelijkheidsnormen te verbeteren door markeringen toe te voegen: paragrafen, en lijsten. PDF&#39;s worden toegankelijker gemaakt voor gebruikers met ondersteunende hulpmiddelen.
+* [&#x200B; AutoTag API voor de Toegankelijkheid van PDF &#x200B;](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services): AEM Forms op OSGi steunt nu nieuwe AutoTag API om PDF voor toegankelijkheidsnormen te verbeteren door markeringen toe te voegen: paragrafen, en lijsten. PDF&#39;s worden toegankelijker gemaakt voor gebruikers met ondersteunende hulpmiddelen.
 * **16 beetjePNG steun**: De dienst van PDF Generator ImageToPdf steunt nu omzetting van PNGs met 16 beetjekleurdiepte.
 * **past artefacten op individuele tekstblokken in XDPs** toe: Forms Designer laat nu gebruikers montages op individuele tekstblokken in XDP dossiers vormen. Hierdoor kunt u elementen beheren die in de PDF&#39;s als artefacten worden behandeld. Deze elementen, zoals kop- en voetteksten, zijn toegankelijk voor ondersteunende hulpmiddelen. Tot de belangrijkste functies behoren het markeren van tekstblokken als artefacten en het insluiten van deze instellingen in de XDP-metagegevens. De Forms Output-service past deze instellingen toe tijdens het genereren van PDF, zodat de juiste PDF/UA-codering wordt gegarandeerd.
 * **AEM Forms Designer wordt verklaard met `GB18030:2022` norm**: Met de `GB18030:2022` certificatie, nu steunt Forms Designer de Chinese het karakterreeks van Unicode die u Chinese karakters in alle editable gebieden en dialoogvakjes laat invoeren.
-* [ Steun voor route WebToPDF in de Server van JEE ](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) die de dienst van PDF Generator gebruikt steunt nu de route WebToPDF voor het omzetten van de dossiers van HTML in de documenten van PDF op JEE. Deze steun is naast de bestaande (Vensters slechts) routes Webkit en WebCapture. De WebToPDF-route is al beschikbaar op OSGi en uitgebreid naar JEE. Nu, op zowel platforms JEE als OSGi, steunt de dienst van PDF Generator de volgende routes over verschillende werkende systemen:
+* [&#x200B; Steun voor route WebToPDF in de Server van JEE &#x200B;](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) die de dienst van PDF Generator gebruikt steunt nu de route WebToPDF voor het omzetten van de dossiers van HTML in de documenten van PDF op JEE. Deze steun is naast de bestaande (Vensters slechts) routes Webkit en WebCapture. De WebToPDF-route is al beschikbaar op OSGi en uitgebreid naar JEE. Nu, op zowel platforms JEE als OSGi, steunt de dienst van PDF Generator de volgende routes over verschillende werkende systemen:
    * **Vensters**: Webkit, WebCapture, WebToPDF
    * **Linux®**: Webkit, WebToPDF
 
@@ -114,7 +114,7 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 
 ### [!DNL Assets]
 
-* Dynamic Media ondersteunt nu HEIC-afbeeldingsindeling zonder verlies voor Apple iOS/iPadOS. Zie [ fmt ](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) in het Dynamische Beeld van Media die en API teruggeven dienen.
+* Dynamic Media ondersteunt nu HEIC-afbeeldingsindeling zonder verlies voor Apple iOS/iPadOS. Zie [&#x200B; fmt &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) in het Dynamische Beeld van Media die en API teruggeven dienen.
 * Multisite Manager (MSM) ondersteunt nu de structuren van het Fragment van de Ervaring met inbegrip van omslagen en subfolders, voor efficiënte bulkimplementatie van de Fragmenten van de Ervaring aan Levende Kopieën.
 
 ### [!DNL Forms]
@@ -135,13 +135,13 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 ### [!DNL Forms]
 
 * **Nieuwe Aangepaste Componenten van de Kern van de Vorm**: De verticale lusjes, de Voorwaarden &amp;, en Checkbox worden toegevoegd om scalability van vormen te verbeteren.
-   * **[CheckBox component ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
+   * **[CheckBox component &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
 
-   * **[de component van de Voorwaarden en van de Voorwaarden ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: De op component-gebaseerde Aangepaste Forms van de kern omvat nu een component van de Voorwaarden en van de Voorwaarden. Auteurs van formulieren voegen deze sectie toe om gebruikers de voorwaarden, juridische overeenkomsten of bepalingen voor de service, het product of het platform te laten zien. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
+   * **[de component van de Voorwaarden en van de Voorwaarden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: De op component-gebaseerde Aangepaste Forms van de kern omvat nu een component van de Voorwaarden en van de Voorwaarden. Auteurs van formulieren voegen deze sectie toe om gebruikers de voorwaarden, juridische overeenkomsten of bepalingen voor de service, het product of het platform te laten zien. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
 
-     ![ Verticale lusjes, Voorwaarden en componenten Checkbox ](/help/forms/using/assets/forms-components.png)
+     ![&#x200B; Verticale lusjes, Voorwaarden en componenten Checkbox &#x200B;](/help/forms/using/assets/forms-components.png)
 
-   * **[Verticale de component van lusjes ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. De verticale lusjes in een vorm verbeteren de gebruikerservaring door navigatie te vereenvoudigen en inhoud te organiseren. Ze zijn vooral handig wanneer het formulier meerdere secties of complexe informatie bevat.
+   * **[Verticale de component van lusjes &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. De verticale lusjes in een vorm verbeteren de gebruikerservaring door navigatie te vereenvoudigen en inhoud te organiseren. Ze zijn vooral handig wanneer het formulier meerdere secties of complexe informatie bevat.
 
 * **[met 64 bits versie van AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: De met 64 bits versie van AEM Forms Designer brengt verbeterde prestaties, scalability, en geheugenbeheer om uw ervaring van de vormverwezenlijking te versterken. Met de 64-bits architectuur kunt u nog grotere en complexere projecten eenvoudig aanpakken, zodat u kunt zorgen voor naadloze ontwerpworkflows en geoptimaliseerde efficiëntie. Verhoog uw mogelijkheden voor formulierontwerp en omarm de toekomst van AEM Forms Designer met deze baanbrekende release.
 
@@ -153,7 +153,7 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 
 ## AEM 6.5, Service Pack 18-augustus 24, 2023
 
-* Assets, Dynamische Media - [ Veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamische Media ](/help/assets/video.md#about-msma) — U kunt veelvoudige ondertitels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+* Assets, Dynamische Media - [&#x200B; Veelvoudige titel en audiospoorsteun voor video&#39;s in Dynamische Media &#x200B;](/help/assets/video.md#about-msma) — U kunt veelvoudige ondertitels en veelvoudige audiosporen aan een primaire video nu gemakkelijk toevoegen. Dit betekent dat uw video&#39;s toegankelijk zijn voor een wereldwijd publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 * Assets - In de zoekresultaten kunt u nu naar de maplocatie met een element navigeren, zodat u verschillende taken voor middelenbeheer kunt uitvoeren.
 * De Plukker van Polaris van Plaatsen in de Fragmenten van de Inhoud heeft betere prestaties.
 * Gebruikers van de Sites-pagina-editor/afbeeldingscomponent konden naar elementen van de externe Assets Cloud Service verwijzen.
@@ -162,9 +162,9 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
 
 ### [!DNL Forms]
 
-* **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - u kunt een douanefunctie (gebruikend de Bibliotheek van de Cliënt) nu aanhalen als antwoord op een fout die door de externe dienst is teruggekeerd. En u kunt eindgebruikers een op maat gesneden reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
+* **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - u kunt een douanefunctie (gebruikend de Bibliotheek van de Cliënt) nu aanhalen als antwoord op een fout die door de externe dienst is teruggekeerd. En u kunt eindgebruikers een op maat gesneden reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
 
-* **[Verbeterde stap van het Werkschema van het Ondertekenen van Adobe ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - de het werkschemastap van het Ondertekenen van Adobe in de Werkschema&#39;s van AEM is beschikbaar met de volgende verhogingen.
+* **[Verbeterde stap van het Werkschema van het Ondertekenen van Adobe &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - de het werkschemastap van het Ondertekenen van Adobe in de Werkschema&#39;s van AEM is beschikbaar met de volgende verhogingen.
 
    * **Verbeterde veiligheid met op identiteitskaart-Gebaseerde authentificatie van de overheid voor het Teken van Adobe** - Op identiteitskaart-Gebaseerde Authentificatie van de Regering van Adobe Acrobat Sign biedt een extra laag van controle aan. Het stelt gebruikers in staat hun identiteit te verifiëren met behulp van door de overheid afgegeven id&#39;s (rijbewijs, nationale identiteitskaart, paspoort). Door vertrouwde identificatiedocumenten te gebruiken, voegt deze verbetering een extra niveau van vertrouwen aan het ondertekeningsproces toe, die het ideaal maakt voor scenario&#39;s die verhoogde veiligheid, naleving, en gebruikersbevestiging vereisen.
 
@@ -174,7 +174,7 @@ Het tabblad IPTC ondersteunt nu [!UICONTROL Alt Text] - en [!UICONTROL Extended 
    * **breidde de rollen voor de ontvangers van de Overeenkomst voorbij enkel de Ondertekenaar** uit - Adobe Acrobat Sign laat u de rollen voor de ontvangers van de Overeenkomst voorbij enkel de Ondertekenaar uitbreiden om hun werkschemavereisten beter aan te passen. Wanneer toegelaten, heeft elke ontvanger in een Overeenkomst zijn rol individueel configureerbaar, met Ondertekenaar die het gebrek is.
 
 
-* **[AEM Forms op volledig installatieprogramma JEE ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - het de dienstpak brengt een volledig installatieprogramma voor AEM Forms op JEE die steun voor veelvoudige nieuwe softwarecombinaties, met inbegrip van brengt:
+* **[AEM Forms op volledig installatieprogramma JEE &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - het de dienstpak brengt een volledig installatieprogramma voor AEM Forms op JEE die steun voor veelvoudige nieuwe softwarecombinaties, met inbegrip van brengt:
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C op Windows Server 2022
@@ -194,7 +194,7 @@ Als u de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving installeert of 
   U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
 
 * **de Dynamische Momentopname van Media 1&rbrace; _laat u de bepalingen van het voorproefbeeld en Slimme optimalisaties van het Beeld - zoals output WebP of AVIF, bandbreedte-bewuste compressie, en het schrapen van de Verhouding van het Pixel van het Apparaat - gebruikend testbeelden of Dynamische Media URLs._**&#x200B;Vervolgens kunt u direct vergelijken hoe elke instelling de kwaliteit en de bestandsgrootte beïnvloedt.
-Zie [ Dynamische Momentopname van Media ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+Zie [&#x200B; Dynamische Momentopname van Media &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **DASH die met Dynamische Media** stroomt - Nieuw protocol (DASH - Dynamische Aanpassings het Streamen over HTTP) voor Aanpassings het Streamen in Dynamische Media video levering (met toegelaten CMAF) wordt gelanceerd. Nu beschikbaar voor alle regio&#39;s.
 * **Integratie van Experience Manager Sites en de Fragmenten van de Inhoud met de Dynamische Media van de Volgende-Generatie van Assets** - De gebruikers kunnen hun wolk-ontvangen activa in Experience Manager Sites 6.5 nu gebruiken. Ze kunnen deze middelen op Managed Services- of on-premise instanties ontwerpen en leveren.
 
@@ -219,8 +219,8 @@ Het nieuwe protocol DASH (het Dynamische Aanpassings Streamen over HTTP) lanceer
 
 ### [!DNL Forms]
 
-* [ Koploze Aanpassings Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/overview) laat uw ontwikkelaars toe om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking gestaan.
+* [&#x200B; Koploze Aanpassings Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-headless-adaptive-forms/using/overview) laat uw ontwikkelaars toe om, interactieve vormen tot stand te brengen te publiceren en te beheren die met door APIs, eerder dan door een traditioneel grafisch gebruikersinterface kunnen worden betreden en worden in wisselwerking gestaan.
 
-* [ de Adaptieve Componenten van de Kern van Forms ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) zijn een reeks 24 open-bron, BEM-volgzame componenten die op de stichting van de Componenten van de Kern van Adobe Experience Manager WCM worden voortgebouwd. Deze componenten zijn open-source en bieden ontwikkelaars de mogelijkheid om deze componenten eenvoudig aan te passen en uit te breiden om aan de specifieke behoeften van hun organisatie te voldoen. Iedereen met bestaande vaardigheden om [ componenten van de Kern WCM ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/get-started/authoring) aan te passen kan deze componenten gemakkelijk aanpassen en opmaken.
+* [&#x200B; de Adaptieve Componenten van de Kern van Forms &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) zijn een reeks 24 open-bron, BEM-volgzame componenten die op de stichting van de Componenten van de Kern van Adobe Experience Manager WCM worden voortgebouwd. Deze componenten zijn open-source en bieden ontwikkelaars de mogelijkheid om deze componenten eenvoudig aan te passen en uit te breiden om aan de specifieke behoeften van hun organisatie te voldoen. Iedereen met bestaande vaardigheden om [&#x200B; componenten van de Kern WCM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/get-started/authoring) aan te passen kan deze componenten gemakkelijk aanpassen en opmaken.
 
 * De Reader Extension Service op OSGi biedt nu verschillende opties om invoer- en exportgebruiksrechten op een PDF mogelijk te maken voor het importeren of exporteren van gegevens in Adobe Acrobat Reader.

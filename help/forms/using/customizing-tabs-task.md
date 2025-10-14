@@ -19,7 +19,7 @@ ht-degree: 0%
 
 U kunt tabnamen voor de component `Start Process` aanpassen in de `Start Process` Uberweergave en de component `Task Details` in de `ToDo` Uberweergave.
 
-1. Volg de [ Algemene stappen voor de werkruimte van AEM Forms aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Volg de [&#x200B; Algemene stappen voor de werkruimte van AEM Forms aanpassing &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Wijzig de waarde van `tabname` in het `translation.json` -bestand.
 
    Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels in het volgende.

@@ -31,4 +31,4 @@ Als u de formulierworkflow effectief wilt beheren, moet u de volgende termen en 
 * Een *verrichting* is één stap van een procesdiagram, dat in Workbench door een pictogram in het procesdiagram wordt vertegenwoordigd.
 * A *taak* is een actie die aan een gebruiker is toegewezen. Wanneer de taak in werking wordt gesteld en de verrichting wordt uitgevoerd, wijst de dienst van de Gebruiker een taak aan een gebruiker toe.
 
-Voor meer informatie over deze termijnen, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Voor meer informatie over deze termijnen, zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).

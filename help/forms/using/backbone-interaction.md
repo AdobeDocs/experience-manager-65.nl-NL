@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Backbone-interactie{#backbone-interaction}
 
-Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Voor meer informatie over Backbone, zie [ https://backbonejs.org ](https://backbonejs.org/).
+Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Voor meer informatie over Backbone, zie [&#x200B; https://backbonejs.org &#x200B;](https://backbonejs.org/).
 
 Enkele belangrijke concepten zijn:
 
@@ -46,7 +46,7 @@ In de backboneweergave is er een gebeurteniskaart die de verschillende gebeurten
 
 Wanneer een mening wordt geïnitialiseerd, roept de mening zijn overeenkomstig model om gegevens van server te halen. Zodra alle gegevens die door een mening worden vereist beschikbaar zijn, geeft de mening de gegevens in het formaat terug dat door het malplaatje van de HTML wordt gespecificeerd. Meerdere weergaven kunnen hetzelfde model voor communicatie delen.
 
-![ AEM de mening van de vormenbackbone ](do-not-localize/aem_forms_workflow.png)
+![&#x200B; AEM de mening van de vormenbackbone &#x200B;](do-not-localize/aem_forms_workflow.png)
 
 Een voorbeeld:
 

@@ -32,13 +32,13 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
-* Uw [ bericht ](/help/sites-authoring/inbox.md) indicator (toolbar) zal worden verhoogd:
+* Uw [&#x200B; bericht &#x200B;](/help/sites-authoring/inbox.md) indicator (toolbar) zal worden verhoogd:
 
-  ![ de indicator van het Bericht ](do-not-localize/wf-57.png)
+  ![&#x200B; de indicator van het Bericht &#x200B;](do-not-localize/wf-57.png)
 
-* Het punt zal in uw bericht [ Inbox ](/help/sites-authoring/inbox.md) worden vermeld:
+* Het punt zal in uw bericht [&#x200B; Inbox &#x200B;](/help/sites-authoring/inbox.md) worden vermeld:
 
-  ![ wf-58 ](assets/wf-58.png)
+  ![&#x200B; wf-58 &#x200B;](assets/wf-58.png)
 
 * Wanneer u de pagina-editor gebruikt, wordt de statusbalk weergegeven:
 
@@ -49,7 +49,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Klik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
 
-  ![ wf-59 ](assets/wf-59.png)
+  ![&#x200B; wf-59 &#x200B;](assets/wf-59.png)
 
   >[!NOTE]
   >
@@ -60,7 +60,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * Wanneer **de Chronologie** voor het middel open is, wordt de werkschemastap getoond. Wanneer u op de waakzame banner klikt, zullen de beschikbare acties ook worden getoond:
 
-  ![ scherm-shot_2019-03-05at120453 ](assets/screen-shot_2019-03-05at120453.png)
+  ![&#x200B; scherm-shot_2019-03-05at120453 &#x200B;](assets/screen-shot_2019-03-05at120453.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
@@ -76,7 +76,7 @@ U kunt een deelnemersstap uitvoeren vanuit:
 * [Inbox](#completing-a-participant-step-inbox)
 * [De Pagina-editor](#completing-a-participant-step-page-editor)
 * [Tijdlijn](#completing-a-participant-step-timeline)
-* wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
+* wanneer [&#x200B; het openen van een werkschemapunt om details &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Een deelnemersstap voltooien - Postvak IN {#completing-a-participant-step-inbox}
 
@@ -92,7 +92,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de [ pagina voor het uitgeven ](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open de [&#x200B; pagina voor het uitgeven &#x200B;](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteer **Volledig** van de statusbar bij de bovenkant.
 1. Het **Volledige de dialoogvakje van het Punt van het Werk** opent. Selecteer de **Volgende Stap** van de drop-down selecteur en voeg a **Commentaar** indien nodig toe.
 1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
@@ -103,15 +103,15 @@ U kunt ook de tijdlijn gebruiken om een stap te voltooien en uit te voeren:
 
 1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina):
 
-   ![ scherm-shot_2019-03-05at120744 ](assets/screen-shot_2019-03-05at120744.png)
+   ![&#x200B; scherm-shot_2019-03-05at120744 &#x200B;](assets/screen-shot_2019-03-05at120744.png)
 
 1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Vooruitgang**:
 
-   ![ scherm-shot_2019-03-05at120453-1 ](assets/screen-shot_2019-03-05at120453-1.png)
+   ![&#x200B; scherm-shot_2019-03-05at120453-1 &#x200B;](assets/screen-shot_2019-03-05at120453-1.png)
 
 1. Afhankelijk van de workflow kunt u de volgende stap selecteren:
 
-   ![ scherm-shot_2019-03-05at120905 ](assets/screen-shot_2019-03-05at120905.png)
+   ![&#x200B; scherm-shot_2019-03-05at120905 &#x200B;](assets/screen-shot_2019-03-05at120905.png)
 
 1. Selecteer **Gewenste** om de actie te bevestigen.
 
@@ -135,7 +135,7 @@ U kunt een deelnemersstap delegeren vanuit:
 * [Inbox](#delegating-a-participant-step-inbox)
 * [De Pagina-editor](#delegating-a-participant-step-page-editor)
 * [Tijdlijn](#delegating-a-participant-step-timeline)
-* wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
+* wanneer [&#x200B; het openen van een werkschemapunt om details &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Een deelnemersstap delegeren - Postvak IN {#delegating-a-participant-step-inbox}
 
@@ -151,7 +151,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de [ pagina voor het uitgeven ](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open de [&#x200B; pagina voor het uitgeven &#x200B;](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteer **Afgevaardigde** van de statusbar bij de bovenkant.
 1. Het dialoogvenster wordt geopend. Specificeer de **Gebruiker** van de drop-down selecteur (dit kan ook een groep) zijn en voeg a **Commentaar** indien nodig toe.
 1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
@@ -163,11 +163,11 @@ U kunt de tijdlijn ook gebruiken om een stap te delegeren en/of toe te wijzen:
 1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina).
 1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Toegewezen van de Verandering**:
 
-   ![ scherm-shot_2019-03-05at120453-2 ](assets/screen-shot_2019-03-05at120453-2.png)
+   ![&#x200B; scherm-shot_2019-03-05at120453-2 &#x200B;](assets/screen-shot_2019-03-05at120453-2.png)
 
 1. Geef een nieuwe ontvanger op:
 
-   ![ scherm-shot_2019-03-05at121025 ](assets/screen-shot_2019-03-05at121025.png)
+   ![&#x200B; scherm-shot_2019-03-05at121025 &#x200B;](assets/screen-shot_2019-03-05at121025.png)
 
 1. Selecteer **toewijzen** om de actie te bevestigen.
 
@@ -185,7 +185,7 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 * [Inbox](#performing-step-back-on-a-participant-step-inbox)
 * [De Pagina-editor](#performing-step-back-on-a-participant-step-page-editor)
 * [Tijdlijn](#performing-step-back-on-a-participant-step-timeline)
-* wanneer [ het openen van een werkschemapunt om details ](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
+* wanneer [&#x200B; het openen van een werkschemapunt om details &#x200B;](#opening-a-workflow-item-to-view-details-and-take-actions) te bekijken.
 
 #### Het uitvoeren van Stap terug op een Stap van de Deelnemer - Inbox {#performing-step-back-on-a-participant-step-inbox}
 
@@ -202,7 +202,7 @@ Gebruik de volgende procedure om terug te gaan:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de [ pagina voor het uitgeven ](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open de [&#x200B; pagina voor het uitgeven &#x200B;](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteer **Stap terug** van de statusbar bij de bovenkant.
 1. Specificeer de **Vorige Stap** en voeg a **Commentaar** indien nodig toe.
 1. Gebruik **O.K.** om de stap (of **te voltooien annuleert** om de actie) af te breken.
@@ -214,11 +214,11 @@ U kunt de tijdlijn ook gebruiken om terug te gaan (stap) naar een vorige stap:
 1. Selecteer de vereiste pagina en open **Chronologie** (of open **Chronologie** en selecteer de pagina).
 1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteer **Terugkeer**:
 
-   ![ scherm-shot_2019-03-05at121131 ](assets/screen-shot_2019-03-05at121131.png)
+   ![&#x200B; scherm-shot_2019-03-05at121131 &#x200B;](assets/screen-shot_2019-03-05at121131.png)
 
 1. Geef de stap op waarnaar de workflow moet terugkeren:
 
-   ![ scherm-shot_2019-03-05at121158 ](assets/screen-shot_2019-03-05at121158.png)
+   ![&#x200B; scherm-shot_2019-03-05at121158 &#x200B;](assets/screen-shot_2019-03-05at121158.png)
 
 1. Selecteer **Terugkeer** om de actie te bevestigen.
 
@@ -230,19 +230,19 @@ De workflowdetails worden weergegeven op tabbladen en de juiste acties zijn besc
 
 * **HET WERKITEM** tabel:
 
-  ![ wf-72 ](assets/wf-72.png)
+  ![&#x200B; wf-72 &#x200B;](assets/wf-72.png)
 
 * **DE INFO VAN DE WORKFLOW** tabel:
 
-  ![ wf-73 ](assets/wf-73.png)
+  ![&#x200B; wf-73 &#x200B;](assets/wf-73.png)
 
-  Als [ de Staven van het Werkschema ](/help/sites-developing/workflows.md#workflow-stages) voor het model zijn gevormd, kunt u de vooruitgang volgens deze bekijken:
+  Als [&#x200B; de Staven van het Werkschema &#x200B;](/help/sites-developing/workflows.md#workflow-stages) voor het model zijn gevormd, kunt u de vooruitgang volgens deze bekijken:
 
-  ![ wf-107 ](assets/wf-107.png)
+  ![&#x200B; wf-107 &#x200B;](assets/wf-107.png)
 
 * **COMMENTAAR** tabel:
 
-  ![ wf-75 ](assets/wf-75.png)
+  ![&#x200B; wf-75 &#x200B;](assets/wf-75.png)
 
 U kunt de details van het werkitem openen vanuit:
 
@@ -264,7 +264,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de [ pagina voor het uitgeven ](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+1. Open de [&#x200B; pagina voor het uitgeven &#x200B;](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteer **Details van de Mening** van de statusbar om de informatielusjes te openen.
 
 1. Indien noodzakelijk, selecteer de aangewezen actie, verstrek om het even welke details en bevestig met **O.K.** (of **annuleert**).
@@ -282,6 +282,6 @@ Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
    Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **component van de Definitie van het Middel 0&rbrace; &lbrace;om nieuwe ingangen toe te voegen.**
 
-   ![ wf-78 ](assets/wf-78.png)
+   ![&#x200B; wf-78 &#x200B;](assets/wf-78.png)
 
 1. U kunt de koppelingen gebruiken om de afzonderlijke pagina&#39;s te openen.

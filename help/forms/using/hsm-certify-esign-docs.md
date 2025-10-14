@@ -22,13 +22,13 @@ Hardwarebeveiligingsmodules (HSM) en -netwerken zijn speciale, geharde en tamper
 
 Adobe Experience Manager Forms kan referenties gebruiken die zijn opgeslagen op een HSM of token om serverzijdige digitale handtekeningen elektronisch te ondertekenen of toe te passen op een document. Een HSM- of token-apparaat gebruiken met AEM Forms:
 
-1. [ laat de dienst DocAssurance ](#configuredocassurance) toe.
-1. [ creeer een alias voor HSM of token apparaat in de Console van het AEM Web ](#configuredeviceinaemconsole).
-1. [ gebruik de Dienst DocAssurance APIs om de documenten met digitale sleutels te ondertekenen of te certificeren die op het apparaat ](#programatically) worden opgeslagen.
+1. [&#x200B; laat de dienst DocAssurance &#x200B;](#configuredocassurance) toe.
+1. [&#x200B; creeer een alias voor HSM of token apparaat in de Console van het AEM Web &#x200B;](#configuredeviceinaemconsole).
+1. [&#x200B; gebruik de Dienst DocAssurance APIs om de documenten met digitale sleutels te ondertekenen of te certificeren die op het apparaat &#x200B;](#programatically) worden opgeslagen.
 
 ## Voordat u HSM configureert of de apparaten instelt met AEM Forms {#configurehsmetoken}
 
-* Installeer het [ toe:voegen-op ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) pakket van AEM Forms.
+* Installeer het [&#x200B; toe:voegen-op &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) pakket van AEM Forms.
 * Installeer en configureer HSM of installeer de clientsoftware op dezelfde computer als de AEM. De cliëntsoftware wordt vereist om met HSM en apparaten te communiceren.
 
 ## De DocAssurance-service inschakelen {#configuredocassurance}
@@ -415,4 +415,4 @@ Als u van AEM 6.0 Vorm of AEM 6.1 Forms hebt bevorderd, en u de dienst DocAssura
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Voor gedetailleerde informatie over APIs en steekproefcode van de dienst DocAssurance, zie [ Programmatiatically Gebruikend AEM de Diensten van het Document ](/help/forms/using/aem-document-services-programmatically.md).
+Voor gedetailleerde informatie over APIs en steekproefcode van de dienst DocAssurance, zie [&#x200B; Programmatiatically Gebruikend AEM de Diensten van het Document &#x200B;](/help/forms/using/aem-document-services-programmatically.md).

@@ -153,9 +153,9 @@ Geef ook een geldige landinstellingswaarde op door de methode `setLocale` van he
 
 >[!NOTE]
 >
->Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie [ teruggevend Forms als HTML ](/help/forms/developing/rendering-forms-html.md).)
+>Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie [&#x200B; teruggevend Forms als HTML &#x200B;](/help/forms/developing/rendering-forms-html.md).)
 
-Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 

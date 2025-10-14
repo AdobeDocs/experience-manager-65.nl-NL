@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Indelingsmogelijkheden van adaptieve formulieren{#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -54,7 +54,7 @@ Al deze paneellay-outs worden bepaald in de volgende plaats:
 >
 >Gebruik de ontwerpmodus in AEM om de indeling van een adaptief formulier te wijzigen.
 
-![ Plaats van lay-outs in de bewaarplaats van CRX ](assets/layouts_location_in_crx.png)
+![&#x200B; Plaats van lay-outs in de bewaarplaats van CRX &#x200B;](assets/layouts_location_in_crx.png)
 
 ## Deelvensterlay-out {#panel-layout}
 
@@ -62,7 +62,7 @@ Een auteur van een formulier kan een indeling koppelen aan elk deelvenster van e
 
 De schermindelingen van het deelvenster zijn beschikbaar op de locatie `/libs/fd/af/layouts/panel` .
 
-![ Lijst van paneellay-outs voor wortelpaneel van een adaptieve vorm ](assets/layouts.png)
+![&#x200B; Lijst van paneellay-outs voor wortelpaneel van een adaptieve vorm &#x200B;](assets/layouts.png)
 
 Lijst met deelvensterindelingen in adaptieve formulieren
 
@@ -72,11 +72,11 @@ Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan
 
 Met deze lay-out kunt u meerdere **[!UICONTROL Panel adaptive form]** componenten achter elkaar in het deelvenster plaatsen.
 
-![ Vorm die A ontvankelijke lay-out zoals gezien op een klein scherm ](assets/responsive_layout_seen_on_small_screen.png) gebruikt
+![&#x200B; Vorm die A ontvankelijke lay-out zoals gezien op een klein scherm &#x200B;](assets/responsive_layout_seen_on_small_screen.png) gebruikt
 
 Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm
 
-![ Vorm die A ontvankelijke lay-out zoals gezien op het grote scherm ](assets/responsive_layout_seen_on_large_screen.png) gebruikt
+![&#x200B; Vorm die A ontvankelijke lay-out zoals gezien op het grote scherm &#x200B;](assets/responsive_layout_seen_on_large_screen.png) gebruikt
 
 Een formulier met een responsieve indeling zoals weergegeven op een groot scherm
 
@@ -90,11 +90,11 @@ Gebruik de component `Panel adaptive form` om stapsgewijze navigatie binnen een 
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![ de voltooiingsuitdrukking van de Stap in de lay-out van de Tovenaar voor een multi-step vorm ](assets/layout-sidebar.png)
+![&#x200B; de voltooiingsuitdrukking van de Stap in de lay-out van de Tovenaar voor een multi-step vorm &#x200B;](assets/layout-sidebar.png)
 
 De voltooiingsuitdrukking van de stap in de lay-out van de Tovenaar voor een multi-step vorm
 
-![ Vorm van A gebruikend tovenaar lay-out ](assets/wizard-layout.png)
+![&#x200B; Vorm van A gebruikend tovenaar lay-out &#x200B;](assets/wizard-layout.png)
 
 Een formulier met wizard
 
@@ -104,7 +104,7 @@ Met deze lay-out kunt u de component `Panel adaptive form` plaatsen in een deelv
 
 De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de eindgebruiker in de titel van het geminimaliseerde paneel worden verstrekt.
 
-![ Herhaalbare panelen die de lay-out van de Accordeon in adaptieve vormen gebruiken ](assets/repeatable_panels_using_accordion_layout.png)
+![&#x200B; Herhaalbare panelen die de lay-out van de Accordeon in adaptieve vormen gebruiken &#x200B;](assets/repeatable_panels_using_accordion_layout.png)
 
 Herhaalbare deelvensters die zijn gemaakt met de accordeonindeling
 
@@ -112,7 +112,7 @@ Herhaalbare deelvensters die zijn gemaakt met de accordeonindeling
 
 Met deze indeling kunt u de component `Panel adaptive form` in een deelvenster met tabnavigatie plaatsen. De tabbladen worden links van de inhoud van het deelvenster geplaatst.
 
-![ in de Lay-out met tabs, verschijnen de lusjes op de linkerzijde ](assets/tabbed_layout_left.png)
+![&#x200B; in de Lay-out met tabs, verschijnen de lusjes op de linkerzijde &#x200B;](assets/tabbed_layout_left.png)
 
 Tabs die links van een deelvenster worden weergegeven
 
@@ -120,7 +120,7 @@ Tabs die links van een deelvenster worden weergegeven
 
 Met deze indeling kunt u de component `Panel adaptive form` in een deelvenster met tabnavigatie plaatsen. De tabbladen worden boven op de inhoud van het deelvenster geplaatst.
 
-![ Van labels voorzien lay-out in adaptieve vormen met lusjes op de bovenkant ](assets/tabbed_layout_top.png)
+![&#x200B; Van labels voorzien lay-out in adaptieve vormen met lusjes op de bovenkant &#x200B;](assets/tabbed_layout_top.png)
 
 Tabs die boven in een deelvenster worden weergegeven
 
@@ -132,17 +132,17 @@ Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navig
 
 De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. De volgende mobiele lay-outs zijn standaard beschikbaar in adaptieve formulieren.
 
-![ Lijst van Mobiele Lay-outs in adaptieve vormen ](assets/mobile-navigation.png)
+![&#x200B; Lijst van Mobiele Lay-outs in adaptieve vormen &#x200B;](assets/mobile-navigation.png)
 
 Lijst met mobiele lay-outs in adaptieve formulieren
 
-Wanneer het gebruiken van een mobiele lay-out, is het vormmenu, om tot diverse vormpanelen toegang te hebben, beschikbaar door ![ te tikken aem6forms_form_menu ](assets/aem6forms_form_menu.png) pictogram.
+Wanneer het gebruiken van een mobiele lay-out, is het vormmenu, om tot diverse vormpanelen toegang te hebben, beschikbaar door ![&#x200B; te tikken aem6forms_form_menu &#x200B;](assets/aem6forms_form_menu.png) pictogram.
 
 ### Indeling met titels van deelvensters in de formulierkoptekst {#layout-with-panel-titles-in-the-form-header}
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, deelvenstertitels weergegeven, samen met het navigatiemenu en de navigatiebalk. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 
-![ Mobiele lay-outs met paneeltitels in de vormkopballen ](assets/mobile_layout_with.png)
+![&#x200B; Mobiele lay-outs met paneeltitels in de vormkopballen &#x200B;](assets/mobile_layout_with.png)
 
 Mobiele lay-outs met titels van deelvensters in de formulierkoppen
 
@@ -150,7 +150,7 @@ Mobiele lay-outs met titels van deelvensters in de formulierkoppen
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, alleen het navigatiemenu en de navigatiebalk zonder venstertitels weergegeven. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 
-![ Mobiele lay-outs zonder paneeltitels in de vormkopballen ](assets/mobile_layout_without.png)
+![&#x200B; Mobiele lay-outs zonder paneeltitels in de vormkopballen &#x200B;](assets/mobile_layout_without.png)
 
 Mobiele lay-outs zonder titels in de formulierkoppen
 
@@ -158,7 +158,7 @@ Mobiele lay-outs zonder titels in de formulierkoppen
 
 Met een werkbalkindeling bepaalt u de positie en weergave van alle actieknoppen die u toevoegt aan uw aangepaste formulieren. De indeling kan op formulierniveau of deelvensterniveau worden toegevoegd.
 
-![ een lijst van Toolbar Lay-outs in adaptieve vormen om lay-out van knopen te controleren ](assets/toolbar-layouts.png)
+![&#x200B; een lijst van Toolbar Lay-outs in adaptieve vormen om lay-out van knopen te controleren &#x200B;](assets/toolbar-layouts.png)
 
 Een lijst met werkbalkindelingen in adaptieve formulieren
 
@@ -170,7 +170,7 @@ Deze indeling wordt geselecteerd als de standaardindeling wanneer u actieknoppen
 
 U kunt ook meerdere werkbalken toevoegen die actieknoppen bevatten die zijn geconfigureerd met deze indeling. Een actieknop is gekoppeld aan een formulierbesturingselement. U kunt de werkbalken configureren voor of na een deelvenster.
 
-![ Standaardmening voor toolbar ](assets/toolbar_layout_default.png)
+![&#x200B; Standaardmening voor toolbar &#x200B;](assets/toolbar_layout_default.png)
 
 Standaardweergave voor werkbalk
 
@@ -182,6 +182,6 @@ Voor de computerlay-out kunt u knoppen Handeling toevoegen met behulp van bepaal
 
 Voor de mobiele lay-out kunt u actieknoppen toevoegen met behulp van pictogrammen.
 
-![ Mobiele vaste lay-out voor toolbar ](assets/toolbar_layout_mobile_fixed.png)
+![&#x200B; Mobiele vaste lay-out voor toolbar &#x200B;](assets/toolbar_layout_mobile_fixed.png)
 
 Vaste mobiele lay-out voor werkbalk

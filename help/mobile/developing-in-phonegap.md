@@ -23,7 +23,7 @@ AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM 
 
 >[!NOTE]
 >
->Alvorens u met AEM Mobile begint gebruikend Adobe PhoneGap, zorg ervoor u opstelling uw milieu en begonnen wordt met het [ dashboard van de Toepassing van AEM Mobile ](/help/mobile/phonegap-authoring-apps.md).
+>Alvorens u met AEM Mobile begint gebruikend Adobe PhoneGap, zorg ervoor u opstelling uw milieu en begonnen wordt met het [&#x200B; dashboard van de Toepassing van AEM Mobile &#x200B;](/help/mobile/phonegap-authoring-apps.md).
 
 De volgende bronnen helpen u aan de slag te gaan met AEM Mobile via Adobe PhoneGap:
 
@@ -33,13 +33,13 @@ De volgende bronnen helpen u aan de slag te gaan met AEM Mobile via Adobe PhoneG
 
 * [AEM Mobile Content Services: An Overview](/help/mobile/develop-content-as-a-service.md)
 
-   * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie [ het Beheer de Diensten van de Inhoud ](/help/mobile/developing-content-services.md)
-   * Om over het Creëren van Modellen te leren, zie [ het Ontwikkelen Modellen ](/help/mobile/administer-mobile-apps.md)
-   * Om over het Teruggeven en Levering te leren, zie [ Renderen en Levering van de Diensten van de Inhoud ](/help/mobile/rendering-and-delivery.md)
+   * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie [&#x200B; het Beheer de Diensten van de Inhoud &#x200B;](/help/mobile/developing-content-services.md)
+   * Om over het Creëren van Modellen te leren, zie [&#x200B; het Ontwikkelen Modellen &#x200B;](/help/mobile/administer-mobile-apps.md)
+   * Om over het Teruggeven en Levering te leren, zie [&#x200B; Renderen en Levering van de Diensten van de Inhoud &#x200B;](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Om uw AEM mobiele toepassingen op om het even welk iOS of Android mobiel apparaat in werking te stellen, zie [ Mobiele QuickStart gebruikend AEM verifieer App ](/help/mobile/phonegap-mobile-quickstart.md).
+>Om uw AEM mobiele toepassingen op om het even welk iOS of Android mobiel apparaat in werking te stellen, zie [&#x200B; Mobiele QuickStart gebruikend AEM verifieer App &#x200B;](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Aan de slag {#getting-ahead}
 

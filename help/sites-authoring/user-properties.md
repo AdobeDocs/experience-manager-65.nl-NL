@@ -23,7 +23,7 @@ AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomg
 
 Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de [ optie van de Gebruiker ](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
+Begin door tot de [&#x200B; optie van de Gebruiker &#x200B;](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -31,25 +31,25 @@ Het **de montagedialoog van de Gebruiker** geeft u toegang tot:
 
 * Imiteren als
 
-   * Met [ impersonate als ](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+   * Met [&#x200B; impersonate als &#x200B;](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
 
 * Profiel
 
-   * Biedt een geschikte verbinding aan uw [ gebruikersmontages ](/help/sites-administering/security.md) aan)
+   * Biedt een geschikte verbinding aan uw [&#x200B; gebruikersmontages &#x200B;](/help/sites-administering/security.md) aan)
 
 * [Mijn voorkeuren](/help/sites-authoring/user-properties.md#my-preferences)
 
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
-![ screen_shot_2018-03-20at103808 ](assets/screen_shot_2018-03-20at103808.png)
+![&#x200B; screen_shot_2018-03-20at103808 &#x200B;](assets/screen_shot_2018-03-20at103808.png)
 
 ### Mijn voorkeuren {#my-preferences}
 
-Het **Mijn dialoog van Voorkeur** is toegang via de [ gebruiker ](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal.
+Het **Mijn dialoog van Voorkeur** is toegang via de [&#x200B; gebruiker &#x200B;](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal.
 
 Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
-![ scherm-shot_2019-03-05at100322 ](assets/screen-shot_2019-03-05at100322.png)
+![&#x200B; scherm-shot_2019-03-05at100322 &#x200B;](assets/screen-shot_2019-03-05at100322.png)
 
 * **Taal**
 
@@ -108,7 +108,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **De Klassieke Ervaring van het Gebruik Authoring**
 
-  Deze optie laat [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-Gebaseerde pagina authoring toe. Standaard wordt de standaardinterface gebruikt.
+  Deze optie laat [&#x200B; klassieke UI &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-Gebaseerde pagina authoring toe. Standaard wordt de standaardinterface gebruikt.
 
 * **laat de Homepage van Assets** toe
 
@@ -116,4 +116,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Configuratie van de Beeld**
 
-  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [ integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.
+  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [&#x200B; integratie van Adobe Stock &#x200B;](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.

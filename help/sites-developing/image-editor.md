@@ -22,7 +22,7 @@ De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het b
 
 >[!CAUTION]
 >
->Om de eigenschappen van de Redacteur van het Beeld te gebruiken die in dit artikel wordt beschreven, [ eigenschappak 24267 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) moet worden geïnstalleerd.
+>Om de eigenschappen van de Redacteur van het Beeld te gebruiken die in dit artikel wordt beschreven, [&#x200B; eigenschappak 24267 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) moet worden geïnstalleerd.
 
 ## Relatieve eenheden voor afbeelding met hyperlinks {#relative-units-for-image-map}
 

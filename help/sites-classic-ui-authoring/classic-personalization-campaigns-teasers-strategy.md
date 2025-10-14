@@ -23,7 +23,7 @@ Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment va
 
 >[!NOTE]
 >
->De component Teaser is nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [ component van het Doel ](/help/sites-authoring/content-targeting-touch.md).
+>De component Teaser is nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [&#x200B; component van het Doel &#x200B;](/help/sites-authoring/content-targeting-touch.md).
 
 * **de pagina&#39;s van het Merk** worden opgeslagen binnen de sectie van Campagnes van de website. Een merk bevat de afzonderlijke campagnes.
 * **de pagina&#39;s van de Campagne** worden opgeslagen binnen de sectie van Campagnes van de website. Elke campagne heeft een afzonderlijke pagina waarop de teasdefinities staan. De container, of overzichtspagina, bevat ook bepaalde informatie en statistieken over de afzonderlijke laserpagina&#39;s.
@@ -31,7 +31,7 @@ Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment va
 Teasers binnen AEM bestaan uit verschillende onderdelen:
 
 * **de pagina&#39;s van het Taser** worden opgeslagen onder de aangewezen campagnepagina en houden de definities van de teaser paragrafen beschikbaar voor elke specifieke campagne. Deze definities worden gebruikt bij de weergave van de teasalinea&#39;s; inclusief variaties in de inhoud, het segment dat moet worden gebruikt voor het selecteren van een variatie- en versterkingsfactor.
-* De **component van het Taser** is beschikbaar uit de doos en laat u een geval van uw specifieke teaser paragraaf in een inhoudspagina tot stand brengen. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Nota:** de component van het Teaser wordt nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [ component van het Doel ](/help/sites-authoring/content-targeting-touch.md).
+* De **component van het Taser** is beschikbaar uit de doos en laat u een geval van uw specifieke teaser paragraaf in een inhoudspagina tot stand brengen. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Nota:** de component van het Teaser wordt nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [&#x200B; component van het Doel &#x200B;](/help/sites-authoring/content-targeting-touch.md).
 * **de paragrafen van het Teken** zijn daadwerkelijke instanties van uw gummetje binnen een inhoudspagina. Deze maken een deel van de bezoekers bekend met inhoud die op hun belangen is toegespitst.
 * Pagina&#39;s die de inhoud van de campagne bevatten, hebben de focus op een specifiek bezoekerssegment. Doorgaans leiden de laseralinea&#39;s de bezoeker naar dergelijke pagina&#39;s.
 
@@ -42,10 +42,10 @@ Wanneer het toevoegen van een laserparagraaf aan een pagina, moet u de **Strateg
 Dit is voor het geval dat verscheidene tellers voor selectie beschikbaar zijn aangezien hun toegewezen segmenten allen met succes oplossen. De **Strategie** specificeert dan een extra die criteria worden gebruikt om het getoonde meetapparaat te selecteren:
 
 * **de Score van de KlikStream**, is gebaseerd op de markeringen en verwante markeringsklappen die binnen de de cliëntcontext van de bezoeker worden gehouden (toon hoe vaak een bezoeker pagina&#39;s heeft geklikt die de respectieve markering bevatten). De snelheden voor tags die op de teaspagina zijn gedefinieerd, worden vergeleken.
-* **Willekeurig**, voor &quot;willekeurige&quot;selectie; gebruikt de willekeurige factor die voor een pagina wordt geproduceerd, dit kan met de [ cliëntcontext ](/help/sites-administering/client-context.md) worden gezien.
+* **Willekeurig**, voor &quot;willekeurige&quot;selectie; gebruikt de willekeurige factor die voor een pagina wordt geproduceerd, dit kan met de [&#x200B; cliëntcontext &#x200B;](/help/sites-administering/client-context.md) worden gezien.
 * **eerst** in de lijst van opgeloste segmenten. De volgorde is die van de trapsgewijze elementen op de pagina met de campagneccontainer.
 
-De [ Factor van de Verhoging ](/help/sites-administering/campaign-segmentation.md#boost-factor) van het segment heeft ook een effect op de selectie. Dit is een wegingsfactor die aan een segmentdefinitie wordt toegevoegd om de relatieve waarschijnlijkheid van selectie te vergroten/verkleinen.
+De [&#x200B; Factor van de Verhoging &#x200B;](/help/sites-administering/campaign-segmentation.md#boost-factor) van het segment heeft ook een effect op de selectie. Dit is een wegingsfactor die aan een segmentdefinitie wordt toegevoegd om de relatieve waarschijnlijkheid van selectie te vergroten/verkleinen.
 
 Het proces en de onderlinge relaties van de verschillende selectiecriteria kunnen het best worden geïllustreerd met een voorbeeld (een methode die ook kan worden gebruikt om ervoor te zorgen dat uw theers het vereiste publiek zullen bereiken).
 
@@ -235,12 +235,12 @@ Nadat u uw merk en campagne hebt gemaakt, kunt u uw taservaring maken en instell
 
 >[!NOTE]
 >
->De component Teaser is nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [ component van het Doel ](/help/sites-authoring/content-targeting-touch.md).
+>De component Teaser is nu afgekeurd in AEM 6.2. In plaats daarvan, gebruik de [&#x200B; component van het Doel &#x200B;](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigeer naar de inhoudspagina waar u de tasalinea wilt plaatsen die tot uw campagnepagina zal leiden.
 1. Voeg de component van het a **Taser** (beschikbaar in de **Personalization** sectie van sidekick) in de vereiste positie toe. Wanneer eerst gecreeerd, zal het tonen dat de campagneweg nog niet wordt gevormd:
 
-   ![ chlimage_1 ](assets/chlimage_1.png)
+   ![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.png)
 
 1. Bewerk de lasercomponent om het volgende toe te voegen:
 
@@ -250,15 +250,15 @@ Het pad naar de campagnepagina die de afzonderlijke teaspagina bevat. De segment
    * **[Strategie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Methode die wordt gebruikt voor selectie wanneer de veelvoudige segmenten met succes oplossen.
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1.png)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.png)
 
 1. Klik **O.K.** om te bewaren. Afhankelijk van de segmenten die u hebt ingesteld op het taser en het profiel van de gebruiker die u momenteel als gebruiker bent aangemeld, wordt de juiste inhoud weergegeven:
 
-   ![ chlimage_1-2 ](assets/chlimage_1-2.png)
+   ![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.png)
 
 1. Plaats de muisaanwijzer op de alinea met het gereedschap Taser om het pictogram van het vraagteken weer te geven (rechteronderhoek van de component). Klik op deze optie om de toegepaste segmenten weer te geven en of deze momenteel worden omgezet.
 
-   ![ chlimage_1-3 ](assets/chlimage_1-3.png)
+   ![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.png)
 
 ### Teaseroverzicht {#teaser-overview}
 
@@ -270,4 +270,4 @@ Naast de campagneweergave in de MCM bevat de campagnepagina ook informatie over 
 
    Hier ziet u een overzicht van de definities van de teaser en de weergavestatistieken:
 
-   ![ chlimage_1-4 ](assets/chlimage_1-4.png)
+   ![&#x200B; chlimage_1-4 &#x200B;](assets/chlimage_1-4.png)

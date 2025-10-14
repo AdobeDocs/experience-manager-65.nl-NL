@@ -24,7 +24,7 @@ U kunt uw toepassing en inhoud van mobiele apps beheren vanuit het AEM Mobile-to
 
 U kunt in elke tegel in het Centrum van de Controle boren om details te bekijken of uit te geven door &quot;...&quot;in de bodem juiste hoek te klikken.
 
-![ chlimage_1-54 ](assets/chlimage_1-54.png)
+![&#x200B; chlimage_1-54 &#x200B;](assets/chlimage_1-54.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 * Laatst gewijzigd
 * Laatst gewijzigd door
 
-![ chlimage_1-55 ](assets/chlimage_1-55.png)
+![&#x200B; chlimage_1-55 &#x200B;](assets/chlimage_1-55.png)
 
 ## De verbindingstegel beheren {#the-manage-connection-tile}
 
@@ -58,9 +58,9 @@ Het **beheert de 1&rbrace; tegels van de Verbinding &lbrace;toont de de verbindi
 >
 >Klik op de versnelling rechtsboven om een mobiele configuratie op aanvraag in te stellen.
 >
->Zie [ Vormend Mobiele On-Demand Services ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor details.
+>Zie [&#x200B; Vormend Mobiele On-Demand Services &#x200B;](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor details.
 
-![ chlimage_1-56 ](assets/chlimage_1-56.png)
+![&#x200B; chlimage_1-56 &#x200B;](assets/chlimage_1-56.png)
 
 ## Entiteiten beheren {#managing-entities}
 
@@ -85,7 +85,7 @@ Elke tegel kan worden uitgebreid om een gedetailleerdere lijstmening te verstrek
 
 Het volgende beeld toont **beheert Banners** tegel in het dashboard van de Toepassing van AEM Mobile:
 
-![ chlimage_1-57 ](assets/chlimage_1-57.png)
+![&#x200B; chlimage_1-57 &#x200B;](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ De **beheert Artikelen** tegels laat u de inhoud voor een artikel beheren. De vo
 
 Het volgende beeld toont de **beheert Artikel** tegel in het Dashboard van de Toepassing van AEM Mobile:
 
-![ chlimage_1-58 ](assets/chlimage_1-58.png)
+![&#x200B; chlimage_1-58 &#x200B;](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ De **beheert inzamelingen** tegel laat u de inhoud voor een inzameling beheren. 
 
 Het volgende beeld toont **beheert de tegel van Inzamelingen** in het Dashboard van de Toepassing van AEM Mobile:
 
-![ chlimage_1-59 ](assets/chlimage_1-59.png)
+![&#x200B; chlimage_1-59 &#x200B;](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >

@@ -24,7 +24,7 @@ In het Beheer van de Correspondentie, kunt u een beeld gebruiken om agentenhandt
 
 De agentSignatureImage DDE is een berekende DDE die het de handtekeningbeeld van de agent vertegenwoordigt. De uitdrukking voor dit gegevens verwerkte DDE gebruikt een nieuwe douanefunctie die door de bouwsteen van de Manager van de Uitdrukking wordt blootgesteld. Deze douanefunctie neemt agentID en agentFolder als inputparameters en haalt de beeldinhoud die op deze parameters wordt gebaseerd. Het SystemContext systeemgegevenswoordenboek geeft brieven in het Beheer van de Correspondentie toegang tot informatie in de huidige systeemcontext. De systeemcontext omvat informatie over de momenteel het programma geopende gebruiker en actieve configuratieparameters.
 
-U kunt afbeeldingen toevoegen in de hoofdmap van de hoofdmap. In [ Eigenschappen van de Configuratie van het Beheer van de Correspondentie ](/help/forms/using/cm-configuration-properties.md), gebruikend het bezit van de Wortel van de Gebruiker van cm kunt u de omslag veranderen van waar het beeld van de agentenhandtekening wordt opgepikt.
+U kunt afbeeldingen toevoegen in de hoofdmap van de hoofdmap. In [&#x200B; Eigenschappen van de Configuratie van het Beheer van de Correspondentie &#x200B;](/help/forms/using/cm-configuration-properties.md), gebruikend het bezit van de Wortel van de Gebruiker van cm kunt u de omslag veranderen van waar het beeld van de agentenhandtekening wordt opgepikt.
 
 De waarde van agentFolder DDE wordt genomen van de configuratieparameter CMUserRoot voor de de configuratieeigenschappen van het Beheer van de Correspondentie. Deze configuratieparameter wijst standaard naar de map/content/cmUserRoot in de CRX-opslagplaats. U kunt de waarde van de configuratie CMUserRoot in de Eigenschappen van de Configuratie veranderen.
 U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definiëren voor het ophalen van de afbeelding van de gebruikershandtekening.
@@ -38,13 +38,13 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
    1. Klik met de rechtermuisknop op de **inhoud** omslag en selecteer **creeer** > **creeer Omslag**.
 
-      ![ creeer omslag ](assets/1_createnode_cmuserroot.png)
+      ![&#x200B; creeer omslag &#x200B;](assets/1_createnode_cmuserroot.png)
 
    1. Voer in het dialoogvenster Map maken de naam van de map in als `cmUserRoot` . Klik **sparen allen**.
 
       >[!NOTE]
       >
-      >cmUserRoot is de standaardplaats waar AEM het beeld van de agentenhandtekening zoekt. U kunt, echter, het veranderen door het bezit van de Wortel van de Gebruiker van cm in de [ de configuratieeigenschappen van het Beheer van de Correspondentie ](/help/forms/using/cm-configuration-properties.md) uit te geven.
+      >cmUserRoot is de standaardplaats waar AEM het beeld van de agentenhandtekening zoekt. U kunt, echter, het veranderen door het bezit van de Wortel van de Gebruiker van cm in de [&#x200B; de configuratieeigenschappen van het Beheer van de Correspondentie &#x200B;](/help/forms/using/cm-configuration-properties.md) uit te geven.
 
 1. In de Ontdekkingsreiziger van de Inhoud, navigeer aan de omslag cmUserRoot en voeg het beeld van de agentenhandtekening in het toe.
 
@@ -52,7 +52,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
    1. Klik **Ontdekkingsreiziger van de Inhoud**. De Inhoudsverkenner wordt in een nieuw venster geopend.
    1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de **omslag 0&rbrace; cmUserRoot en selecteer** Nieuwe Knoop **.**
 
-      ![ Nieuwe knoop in cmUserRoot ](assets/2_cmuserroot_newnode.png)
+      ![&#x200B; Nieuwe knoop in cmUserRoot &#x200B;](assets/2_cmuserroot_newnode.png)
 
       Maak de volgende ingangen in de rij voor nieuwe knoop en klik dan het groene vinkje.
 
@@ -68,11 +68,11 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
       Als de eigenschap niet aanwezig is, maakt u eerst een eigenschap met de naam jcr:content.
 
-      ![ jcr:inhoudsbezit ](assets/3_jcrcontentntresource.png)
+      ![&#x200B; jcr:inhoudsbezit &#x200B;](assets/3_jcrcontentntresource.png)
 
       Een van de subeigenschappen van jcr:content is jcr:data, die grijs wordt weergegeven. Dubbelklik op jcr:data. De eigenschap wordt bewerkbaar en de knop Bestand kiezen wordt weergegeven in de vermelding. Klik **kiezen Dossier** en selecteer het beelddossier u als embleem wilt gebruiken. Het afbeeldingsbestand hoeft geen extensie te hebben.
 
-      ![ Gegevens JCR ](assets/5_jcrdata.png)
+      ![&#x200B; Gegevens JCR &#x200B;](assets/5_jcrdata.png)
 
    Klik **sparen allen**.
 
@@ -87,4 +87,4 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
 1. Wanneer de letter wordt gerenderd, ziet u uw handtekening in de lettervoorvertoning in het afbeeldingsveld, afhankelijk van de layout.
 
-   ![ de handtekeningbeeld van de Agent in de brief ](assets/letterwithsignature.png)
+   ![&#x200B; de handtekeningbeeld van de Agent in de brief &#x200B;](assets/letterwithsignature.png)

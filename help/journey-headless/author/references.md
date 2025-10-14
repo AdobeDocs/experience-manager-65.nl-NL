@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud zonder hoofd ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud zonder hoofd &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 U hebt de grondbeginselen van de Authoring van CMS zonder hoofd geleerd, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
 
@@ -38,7 +38,7 @@ Verwijzingen zijn gewoon een mechanisme om uw bronnen aan te sluiten, of het nu 
 
 Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content References en Fragmentverwijzingen), terwijl andere eenvoudig worden toegevoegd als een verwijzing binnen een tekstblok (elementverwijzingen en ad-hocverwijzingen).
 
-![ de Fragmenten van de Inhoud - Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Content References {#content-references}
 
@@ -48,7 +48,7 @@ Content Reference do just that - they lets you reference any other content. Hier
 
 Assets (bijvoorbeeld, beelden of media) kan binnen een blok van de Tekst van verwijzingen worden voorzien door de **activa van het Tussenvoegsel** optie te gebruiken. Hiermee opent u een browser waarin u het element kunt selecteren.
 
-![ de Fragmenten van de Inhoud - Tussenvoegsel Activa ](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![&#x200B; de Fragmenten van de Inhoud - Tussenvoegsel Activa &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentverwijzingen {#fragment-references}
 
@@ -80,7 +80,7 @@ Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (
 
 Het ontwerpen van de Verwijzingen van het Fragment is vrij ongecompliceerd (hoewel gewoonlijk zal het gebied niet als **Verwijzing van het Fragment** worden geëtiketteerd). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
 
-![ de Fragmenten van de Inhoud - Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
@@ -95,17 +95,17 @@ Gebruikend het **lusje van de Boom van de Structuur** van de Redacteur van het F
 >
 >Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
 
-![ de Structuur van het Fragment van de Inhoud Boom ](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![&#x200B; de Structuur van het Fragment van de Inhoud Boom &#x200B;](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Ad-hocverwijzingen {#adhoc-references}
 
 Ad-hocverwijzingen kunnen worden toegevoegd als een eenvoudige koppeling binnen een tekstblok:
 
-![ de Fragmenten van de Inhoud - ad hoc Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![&#x200B; de Fragmenten van de Inhoud - ad hoc Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## Volgende functies {#whats-next}
 
-Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [ leren hoe over Meta-gegevens en het Tags ](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
+Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [&#x200B; leren hoe over Meta-gegevens en het Tags &#x200B;](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
 
 ## Aanvullende bronnen {#additional-resources}
 

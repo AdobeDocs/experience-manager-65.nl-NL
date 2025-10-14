@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Een veilige AEM Forms-app voor iOS maken {#building-a-secure-aem-forms-app-for-ios}
 
-U moet het Xcode-project voor de AEM Forms-app archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Voor meer informatie over het dossier van de bezitslijst, zie [ Ongeveer de Dossiers van de Lijst van het Bezit van de Informatie ](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+U moet het Xcode-project voor de AEM Forms-app archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Voor meer informatie over het dossier van de bezitslijst, zie [&#x200B; Ongeveer de Dossiers van de Lijst van het Bezit van de Informatie &#x200B;](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
 1. Meld u aan bij de volgende website:
 
-   [ https://developer.apple.com/account/ios/identifier/bundle](https://developer.apple.com/account/ios/identifier/bundle)
+   [&#x200B; https://developer.apple.com/account/ios/identifier/bundle](https://developer.apple.com/account/ios/identifier/bundle)
 
-1. Maak een toepassings-id. Voor gedetailleerde stappen om een identiteitskaart van de Toepassing tot stand te brengen, zie [ Creërend en Vormend App IDs ](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
+1. Maak een toepassings-id. Voor gedetailleerde stappen om een identiteitskaart van de Toepassing tot stand te brengen, zie [&#x200B; Creërend en Vormend App IDs &#x200B;](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
 1. Klik op **[!UICONTROL Configure App ID]** om de bundle-id voor de iOS-toepassing voor uw app te configureren.
 1. Selecteer onder aan de webpagina de optie **[!UICONTROL Enable for Data Protection]** . Geef de opties voor gegevensbescherming op.
 
@@ -39,4 +39,4 @@ U moet het Xcode-project voor de AEM Forms-app archiveren om het installatieprog
 1. Vouw in de lijst **[!UICONTROL Settings]** **[!UICONTROL Code Signing]** uit.
 1. Selecteer bij **[!UICONTROL Code Signing Identity]** de juiste handtekening. Zorg ervoor dat dezelfde handtekening is geselecteerd voor **[!UICONTROL Debug]** , **[!UICONTROL Release]** en **[!UICONTROL Any iOS SDK]** .
 1. Selecteer onder **[!UICONTROL PROJECT]** de optie **[!UICONTROL AEM Forms]** en controleer of de juiste handtekening is geselecteerd voor **[!UICONTROL Code Signing Identity]** , **[!UICONTROL Debug]** , **[!UICONTROL Release]** en **[!UICONTROL Any iOS SDK]** .
-1. AEM Forms-app ontwikkelen en distribueren. Voor gedetailleerde instructies om AEM Forms app te bouwen en te verspreiden, zie [ de installateur voor AEM Forms app ](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app) bouwen.
+1. AEM Forms-app ontwikkelen en distribueren. Voor gedetailleerde instructies om AEM Forms app te bouwen en te verspreiden, zie [&#x200B; de installateur voor AEM Forms app &#x200B;](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app) bouwen.

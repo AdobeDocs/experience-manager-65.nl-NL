@@ -25,7 +25,7 @@ De pagina Core Configurations in de beheerconsole biedt instellingen die de syst
 > * Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 > * U wordt aangeraden de SDK opnieuw op te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-Voor informatie over het toelaten van veilige reservewijze, zie [ Toelatend en onbruikbaar makend veilige reservewijze ](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
+Voor informatie over het toelaten van veilige reservewijze, zie [&#x200B; Toelatend en onbruikbaar makend veilige reservewijze &#x200B;](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Voor informatie over het toelaten van veilige reservewijze, zie [ Toelatend en o
 
 
 1. Selecteer **[!UICONTROL Settings > Core System Settings > Configurations]** in de beheerconsole.
-1. Wijzig op de pagina Core Configurations de gewenste opties en selecteer **[!UICONTROL OK]** . Voor details over de opties, zie [ de opties van de Configuraties van de Kern ](configure-general-aem-forms-settings.md#core-configurations-options).
+1. Wijzig op de pagina Core Configurations de gewenste opties en selecteer **[!UICONTROL OK]** . Voor details over de opties, zie [&#x200B; de opties van de Configuraties van de Kern &#x200B;](configure-general-aem-forms-settings.md#core-configurations-options).
 
 
 ## Opties voor Core Configurations {#core-configurations-options}
@@ -71,7 +71,7 @@ Als u geen GDS-hoofdmap opgeeft, wordt de map standaard ingesteld op een toepass
 >
 >Geef niet dezelfde map op voor de tijdelijke map en de GDS-map.
 
-Voor extra informatie over de GDS folder, zie [ Voorbereidend om AEM vormen (Één enkele Server) te installeren ](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Voor extra informatie over de GDS folder, zie [&#x200B; Voorbereidend om AEM vormen (Één enkele Server) te installeren &#x200B;](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 **Plaats van de folder van de Doopvonten van de Server van de Adobe** *ndash; Type de weg aan de folder die de doopvonten van de server van de Adobe bevat. Deze lettertypen worden geïnstalleerd met AEM formulieren. De standaardplaats voor deze doopvonten is de [ aem-vormen wortel ]/de folder van doopvonten. Als deze map niet toegankelijk is, kunt u de lettertypen elders kopiëren en deze instelling gebruiken om de nieuwe locatie op te geven.
 

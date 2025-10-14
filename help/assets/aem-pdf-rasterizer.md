@@ -25,7 +25,7 @@ Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
 Miniaturen en voorvertoningen die worden gegenereerd met de PDF Rasterizer, zijn beter in kwaliteit dan uitvoer vanuit de doos en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversie. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het pakket van Rasterizer van de PDF op uw [!DNL Adobe Experience Manager] plaatsing van [ de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
+1. Installeer het pakket van Rasterizer van de PDF op uw [!DNL Adobe Experience Manager] plaatsing van [&#x200B; de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
@@ -37,15 +37,15 @@ Miniaturen en voorvertoningen die worden gegenereerd met de PDF Rasterizer, zijn
 
    * Open de stap **[!UICONTROL Process Thumbnails]** en voeg `application/pdf` of `application/postscript` toe in het veld **[!UICONTROL Skip Mime Types]** onder het tabblad **[!UICONTROL Thumbnails]** .
 
-   ![ skip_mime_types-2 ](assets/skip_mime_types-2.png)
+   ![&#x200B; skip_mime_types-2 &#x200B;](assets/skip_mime_types-2.png)
 
    * Voeg `application/pdf` of `application/postscript` onder **[!UICONTROL Skip List]** toe op het tabblad **[!UICONTROL Web Enabled Image]** , afhankelijk van uw vereisten.
 
-   ![ Configuratie om duimnagelverwerking voor een beeldformaat over te slaan ](assets/web_enabled_imageskiplist.png)
+   ![&#x200B; Configuratie om duimnagelverwerking voor een beeldformaat over te slaan &#x200B;](assets/web_enabled_imageskiplist.png)
 
 1. Open de stap **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** en verwijder het MIME-type waarvoor u de standaardgeneratie van voorvertoningsafbeeldingsuitvoeringen wilt overslaan. Verwijder bijvoorbeeld het MIME-type `application/pdf` , `application/postscript` of `application/illustrator` uit de lijst **[!UICONTROL MIME Types]** .
 
-   ![ process_arguments ](assets/process_arguments.png)
+   ![&#x200B; process_arguments &#x200B;](assets/process_arguments.png)
 
 1. Sleep de stap **[!UICONTROL PDF Rasterizer Handler]** van het zijpaneel naar onder de stap **[!UICONTROL Process Thumbnails]** .
 1. Configureer de volgende argumenten voor de stap **[!UICONTROL PDF Rasterizer Handler]** :
@@ -69,11 +69,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met de PDF Rasterizer, zijn
 1. Selecteer **[!UICONTROL Delete Generated Rendition]** als u tussenliggende vertoningen wilt verwijderen.
 1. Als u wilt dat PDF Rasterizer webuitvoeringen genereert, selecteert u **[!UICONTROL Generate Web Rendition]** .
 
-   ![ generate_web_renditions1 ](assets/generate_web_renditions1.png)
+   ![&#x200B; generate_web_renditions1 &#x200B;](assets/generate_web_renditions1.png)
 
 1. Geef de instellingen op op het tabblad **[!UICONTROL Web Enabled Image]** .
 
-   ![ web_enabled_image1 ](assets/web_enabled_image1.png)
+   ![&#x200B; web_enabled_image1 &#x200B;](assets/web_enabled_image1.png)
 
 1. Sla de workflow op.
 1. Als u wilt dat PDF Rasterizer PDF-pagina&#39;s kan verwerken met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]** -model via de [!UICONTROL Workflow] -console.
@@ -99,11 +99,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met de PDF Rasterizer, zijn
 1. Selecteer **[!UICONTROL Delete Generated Rendition]** als u tussenliggende vertoningen wilt verwijderen.
 1. Als u wilt dat PDF Rasterizer webuitvoeringen genereert, selecteert u **[!UICONTROL Generate Web Rendition]** .
 
-   ![ generate_web_renditions ](assets/generate_web_renditions.png)
+   ![&#x200B; generate_web_renditions &#x200B;](assets/generate_web_renditions.png)
 
 1. Geef de instellingen op op het tabblad **[!UICONTROL Web Enabled Image]** .
 
-   ![ web_enabled_image-1 ](assets/web_enabled_image-1.png)
+   ![&#x200B; web_enabled_image-1 &#x200B;](assets/web_enabled_image-1.png)
 
 1. Sla de workflow op.
 1. Upload een PDF-bestand of een AI-bestand naar [!DNL Experience Manager Assets] . In de Rasterizer-PDF worden de miniaturen en webrengingen voor het bestand gegenereerd.

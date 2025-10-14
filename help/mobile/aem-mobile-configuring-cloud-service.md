@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit document maakt deel uit van [ Begonnen het Worden met Mobiele (AEM) Gids van Adobe Experience Manager ](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
+>Dit document maakt deel uit van [&#x200B; Begonnen het Worden met Mobiele (AEM) Gids van Adobe Experience Manager &#x200B;](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
 
 Er zijn verschillende stappen die moeten worden samengevoegd voordat inhoudsauteurs gerichte inhoud kunnen gaan genereren voor mobiele apps: gebruikers en groepen krijgen de juiste machtigingen, maken cloudservices, configureren de toepassing voor de activiteit en genereren ten slotte de inhoud.
 
-De veronderstelling die vooruit gaat is dat de [ Hybride Toepassing van de Verwijzing van AEM Mobile ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met succes is opgesteld en toegankelijk door middel van het dashboard van AEM Mobile.
+De veronderstelling die vooruit gaat is dat de [&#x200B; Hybride Toepassing van de Verwijzing van AEM Mobile &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met succes is opgesteld en toegankelijk door middel van het dashboard van AEM Mobile.
 
 ## Machtigingen {#permissions}
 
@@ -42,11 +42,11 @@ Om gerichte inhoud te krijgen die voor mobiele toepassingen werkt, zijn er twee 
 
 Zoek in het AEM Mobile-dashboard de Cloud Servicen voor beheren op en klik op +.
 
-![ chlimage_1-8 ](assets/chlimage_1-8.png)
+![&#x200B; chlimage_1-8 &#x200B;](assets/chlimage_1-8.png)
 
 Selecteer de &quot;Adobe Target&quot;-cloudservicekaart van de wizard Cloud Service toevoegen en klik op Volgende.
 
-![ chlimage_1-9 ](assets/chlimage_1-9.png)
+![&#x200B; chlimage_1-9 &#x200B;](assets/chlimage_1-9.png)
 
 Van Uitgezocht een drop-down Configuratie, kunt u of een configuratie tot stand brengen of van bestaande selecteren. Als u een configuratie wilt maken, selecteert u &quot;Configuratie maken&quot; in het vervolgkeuzemenu. Voer een titel in voor de doelconfiguratie. Voer uw clientcode, e-mail en wachtwoord in die aan uw Target-account zijn gekoppeld. Als u de waarden voor deze velden niet kent, neemt u contact op met de ondersteuning van Adobe Target. Klik op de knop &quot;Verifiëren&quot; om de referenties te valideren. Zodra geverifieerd, klik de Submit knoop om de wolkendienst tot stand te brengen.
 
@@ -54,7 +54,7 @@ De cloudservice die wordt gemaakt, wordt automatisch gekoppeld aan de mobiele to
 
 Nadat de wizard is voltooid, bevat de tegel Cloud Service beheren de doelcloudservice, maar bevat deze een waarschuwing over een ontbrekende account voor de mobiele service van de Adobe.
 
-![ chlimage_1-10 ](assets/chlimage_1-10.png)
+![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10.png)
 
 ## Adobe mobiele service {#adobe-mobile-service}
 
@@ -62,9 +62,9 @@ Het is noodzakelijk om een rekening van de Diensten van de Adobe Mobiele (AMS) a
 
 ### Clientcode {#client-code}
 
-Om aan login aan de diensten van AMS bezoek [ https://mobilemarketing.adobe.com ](https://mobilemarketing.adobe.com/), selecteer de mobiele toepassing, en klik de montages. Zoek het veld SDK-doelopties, plaats de clientcode in het veld en klik op Opslaan.
+Om aan login aan de diensten van AMS bezoek [&#x200B; https://mobilemarketing.adobe.com &#x200B;](https://mobilemarketing.adobe.com/), selecteer de mobiele toepassing, en klik de montages. Zoek het veld SDK-doelopties, plaats de clientcode in het veld en klik op Opslaan.
 
-![ chlimage_1-11 ](assets/chlimage_1-11.png)
+![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.png)
 
 Nu de clientcode aan de mobiele toepassing is gekoppeld, worden de instellingen voor de service-instellingen via het bestand ADBMobileConfig.json geleverd wanneer de AMS-cloudservice via het mobiele dashboard van de Adobe wordt geconfigureerd.
 
@@ -72,21 +72,21 @@ Nu de clientcode aan de mobiele toepassing is gekoppeld, worden de instellingen 
 
 Nu AMS is geconfigureerd, is het tijd om de mobiele toepassing te koppelen in het mobiele dashboard van de Adobe. Zoek in het AEM Mobile-dashboard de Cloud Servicen voor beheren op en klik op +.
 
-![ chlimage_1-12 ](assets/chlimage_1-12.png)
+![&#x200B; chlimage_1-12 &#x200B;](assets/chlimage_1-12.png)
 
 Selecteer de Adobe Mobile Services-kaart en klik op Volgende.
 
-![ chlimage_1-13 ](assets/chlimage_1-13.png)
+![&#x200B; chlimage_1-13 &#x200B;](assets/chlimage_1-13.png)
 
 Van de Create of Uitgezochte tovenaar stap, selecteer de Mobiele drop-down Dienst, en selecteer de Create ingang van de Configuratie. Geef een titel, bedrijf, gebruikersnaam en wachtwoord op en selecteer het juiste datacenter. Als u deze waarden niet kent, contacteer uw beheerder van de Dienst van de Adobe Mobiele om hen te verkrijgen. Nadat alle gebieden worden gevuld, klik **verifieer**. Het verificatieproces gaat naar AMS en verifieert de referenties voor de account. Na een geslaagde validatie wordt een lijst met mobiele toepassingen gevuld. Hierin selecteert u de bijbehorende mobiele toepassing in het vervolgkeuzemenu. Klik op de knop Verzenden om de wizard te voltooien. Het proces kan enige tijd duren om de configuratiegegevens en eventuele bijbehorende analyses voor de toepassing te verkrijgen. Nadat het proces volledig is, klik **Gedaan** van modaal om terug naar het Mobiele Dashboard van de Adobe terug te keren.
 
 Als u terugkeert naar het mobiele dashboard, bevat de titel Cloud Servicen beheren de AMS-cloudservice. Bovendien wordt de tegel Metriek analyseren gevuld met levenscyclusrapporten.
 
-![ chlimage_1-14 ](assets/chlimage_1-14.png)
+![&#x200B; chlimage_1-14 &#x200B;](assets/chlimage_1-14.png)
 
 ## Handlers voor het synchroniseren van doelinhoud {#target-content-sync-handlers}
 
-Om inhoud aan het apparaat van de gebruiker te leveren, wordt de inhoud geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Gebruikend de Hybride Toepassing van de Verwijzing als steekproef, bevat het en (Engelse) inhoudspakket ContentSyncConfig met a [ mobileappoffers ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manager. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit identificeert die voor de toepassing wordt gebruikt.
+Om inhoud aan het apparaat van de gebruiker te leveren, wordt de inhoud geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Gebruikend de Hybride Toepassing van de Verwijzing als steekproef, bevat het en (Engelse) inhoudspakket ContentSyncConfig met a [&#x200B; mobileappoffers &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manager. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit identificeert die voor de toepassing wordt gebruikt.
 
 Bijvoorbeeld, als er een activiteit bij *is/content/campagnes/hybridref*, kopieer deze weg en kleef het als waarde aan het *weg* bezit van de mobileappoffers manager.
 

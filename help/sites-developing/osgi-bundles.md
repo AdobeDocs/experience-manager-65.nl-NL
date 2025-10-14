@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Semantische versienummering gebruiken {#use-semantic-versioning}
 
-Overeengekomen op beste praktijken voor semantische versienummering kunnen in [ https://semver.org/ ](https://semver.org/) worden gevonden.
+Overeengekomen op beste praktijken voor semantische versienummering kunnen in [&#x200B; https://semver.org/ &#x200B;](https://semver.org/) worden gevonden.
 
 ## Sluit niet meer klassen en potten in dan strikt noodzakelijk in bundels OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -42,4 +42,4 @@ Hierdoor kunnen consumenten van uw API samen met u evolueren. Volg daarbij altij
 
 ## Metatype-informatie opnemen als deze wordt weergegeven {#include-metatype-information-where-exposed}
 
-Door betekenisvolle metatype informatie te specificeren, maakt het uw diensten en componenten gemakkelijker te begrijpen in de console van Felix. Een lijst van SCR annotaties en attributen kan in worden gevonden: [ https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Door betekenisvolle metatype informatie te specificeren, maakt het uw diensten en componenten gemakkelijker te begrijpen in de console van Felix. Een lijst van SCR annotaties en attributen kan in worden gevonden: [&#x200B; https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

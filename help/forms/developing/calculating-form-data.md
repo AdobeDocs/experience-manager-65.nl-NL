@@ -30,12 +30,12 @@ De gebruiker voert waarden in het formulier in en klikt op de knop Berekenen om 
 * De gebruiker heeft toegang tot een HTML-pagina met de naam StartLoan.html die fungeert als startpagina van de webtoepassing. Deze pagina roept een Java-server met de naam `GetLoanForm` aan.
 * Het `GetLoanForm` servlet geeft een leningformulier weer. Dit formulier bevat een script, interactieve velden, een knop Berekenen en een knop Verzenden.
 * De gebruiker voert waarden in de velden van het formulier in en klikt op de knop Berekenen. Het formulier wordt verzonden naar de `CalculateData` Java Server waar het script wordt uitgevoerd. Het formulier wordt teruggestuurd naar de gebruiker met de berekeningsresultaten die in het formulier worden weergegeven.
-* De gebruiker gaat verder met het invoeren en berekenen van waarden totdat een bevredigend resultaat wordt weergegeven. Als de gebruiker tevreden is, klikt u op de knop Verzenden om het formulier te verwerken. Het formulier wordt verzonden naar een andere Java-server met de naam `ProcessForm` die verantwoordelijk is voor het ophalen van verzonden gegevens. (Zie [ Behandelend Voorgelegde Forms ](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+* De gebruiker gaat verder met het invoeren en berekenen van waarden totdat een bevredigend resultaat wordt weergegeven. Als de gebruiker tevreden is, klikt u op de knop Verzenden om het formulier te verwerken. Het formulier wordt verzonden naar een andere Java-server met de naam `ProcessForm` die verantwoordelijk is voor het ophalen van verzonden gegevens. (Zie [&#x200B; Behandelend Voorgelegde Forms &#x200B;](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
 Het volgende diagram toont de logische stroom van de toepassing.
 
-![ cf_cf_finsrv_loancalcapp_v1 ](assets/cf_cf_finsrv_loancalcapp_v1.png)
+![&#x200B; cf_cf_finsrv_loancalcapp_v1 &#x200B;](assets/cf_cf_finsrv_loancalcapp_v1.png)
 
 In de volgende tabel worden de stappen in dit diagram beschreven.
 
@@ -74,7 +74,7 @@ Een formulier dat als PDF-inhoud wordt verzonden, bevat doorgaans scripts die op
 
 In deze sectie wordt een eenvoudig interactief formulier met een script dat is geconfigureerd om op de server te worden uitgevoerd, onderzocht om het gebruik van een formulierontwerpscript te illustreren. In het volgende diagram ziet u een formulierontwerp met een script waarmee waarden worden toegevoegd die een gebruiker invoert in de eerste twee velden en het resultaat wordt weergegeven in het derde veld.
 
-![ cf_cf_caldata ](assets/cf_cf_caldata.png)
+![&#x200B; cf_cf_caldata &#x200B;](assets/cf_cf_caldata.png)
 
 **A.** Een gebied genoemd NumericField1 **B.** Een gebied genoemd NumericField2 **C.** Een gebied genoemd NumericField3
 
@@ -88,11 +88,11 @@ In dit formulierontwerp is de knop Berekenen een opdrachtknop en bevindt het scr
 
 >[!NOTE]
 >
->Voor informatie over het creëren van een manuscript van het vormontwerp, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Voor informatie over het creëren van een manuscript van het vormontwerp, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -113,7 +113,7 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 **wint een vorm terug die een berekeningsmanuscript** bevat
 
-U gebruikt de Forms Service Client API om toepassingslogica te maken die een formulier afhandelt dat een script bevat dat is geconfigureerd om op de server te worden uitgevoerd. Het proces is vergelijkbaar met het verwerken van een verzonden formulier. (Zie [ Behandelend Voorgelegde Forms ](/help/forms/developing/handling-submitted-forms.md).)
+U gebruikt de Forms Service Client API om toepassingslogica te maken die een formulier afhandelt dat een script bevat dat is geconfigureerd om op de server te worden uitgevoerd. Het proces is vergelijkbaar met het verwerken van een verzonden formulier. (Zie [&#x200B; Behandelend Voorgelegde Forms &#x200B;](/help/forms/developing/handling-submitted-forms.md).)
 
 Controleer of de verwerkingsstatus van het verzonden formulier `1` `(Calculate)` is. Dit houdt in dat de Forms-service een rekenbewerking uitvoert voor de formuliergegevens en dat de resultaten naar de gebruiker moeten worden teruggeschreven. In deze situatie, wordt een manuscript dat wordt gevormd om op de server in werking te stellen automatisch uitgevoerd.
 
@@ -123,13 +123,13 @@ Nadat u hebt gecontroleerd of de verwerkingsstatus van een verzonden formulier `
 
 **zie ook**
 
-[ Met inbegrip van de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[ berekent vormgegevens gebruikend Java API ](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[ berekent vormgegevens gebruikend de Webdienst API ](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[ Snelle Start van de Dienst API van Forms ](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[ teruggevend Interactieve PDF forms ](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[ Creërend de Toepassingen van het Web die Forms ](/help/forms/developing/creating-web-applications-renders-forms.md) teruggeven
+[&#x200B; Met inbegrip van de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[&#x200B; berekent vormgegevens gebruikend Java API &#x200B;](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[&#x200B; berekent vormgegevens gebruikend de Webdienst API &#x200B;](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[&#x200B; Snelle Start van de Dienst API van Forms &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[&#x200B; teruggevend Interactieve PDF forms &#x200B;](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[&#x200B; Creërend de Toepassingen van het Web die Forms &#x200B;](/help/forms/developing/creating-web-applications-renders-forms.md) teruggeven
 
 ## Formuliergegevens berekenen met de Java API {#calculate-form-data-using-the-java-api}
 
@@ -169,8 +169,8 @@ Formuliergegevens berekenen met de Forms API (Java):
 **zie ook**
 
 
-[ Met inbegrip van de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[&#x200B; Met inbegrip van de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Formuliergegevens berekenen met de API voor webservices {#calculate-form-data-using-the-web-service-api}
 
@@ -220,4 +220,4 @@ Formuliergegevens berekenen met de Forms API (webservice):
    * Roep de methode `write` van het object `javax.servlet.http.HttpServletResponse` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write` .
 
 **zie ook**
-[ Het aanhalen van AEM Forms die Base64 coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) gebruikt
+[&#x200B; Het aanhalen van AEM Forms die Base64 coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) gebruikt

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Een adaptief formulier of interactieve communicatie insluiten in AEM sitepagina {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Met AEM Forms kunnen ontwikkelaars van formulieren adaptieve formulieren en interactieve communicatie naadloos insluiten in een AEM Sites-pagina of een webpagina die buiten AEM wordt gehost. Het ingesloten adaptieve formulier en de interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het formulier of de interactieve communicatie.
 
-Voor informatie over het inbedden van een adaptieve vorm in een externe Web-pagina, zie [ inbedden adaptieve vorm in externe Web-pagina ](/help/forms/using/embed-adaptive-form-external-web-page.md).
+Voor informatie over het inbedden van een adaptieve vorm in een externe Web-pagina, zie [&#x200B; inbedden adaptieve vorm in externe Web-pagina &#x200B;](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Op de AEM Sites-pagina kunt u een adaptief formulier of interactieve communicatie toevoegen met:
 
@@ -41,9 +41,9 @@ Alle formulieren en interactieve communicatie die u maakt, zijn beschikbaar onde
 
 ## Vereisten {#prerequisites}
 
-Als u een adaptief formulier of interactieve communicatie wilt insluiten in een AEM sitepagina die een bewerkbare sjabloon gebruikt, moet u ervoor zorgen dat de AEM formuliercomponent is geconfigureerd als een toegestane component in de bijbehorende sjabloon. Voor meer informatie, zie **Beleid &amp; Eigenschappen (de Container van de Lay-out)** sectie in [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md).
+Als u een adaptief formulier of interactieve communicatie wilt insluiten in een AEM sitepagina die een bewerkbare sjabloon gebruikt, moet u ervoor zorgen dat de AEM formuliercomponent is geconfigureerd als een toegestane component in de bijbehorende sjabloon. Voor meer informatie, zie **Beleid &amp; Eigenschappen (de Container van de Lay-out)** sectie in [&#x200B; Creërend de Malplaatjes van de Pagina &#x200B;](/help/sites-authoring/templates.md).
 
-Als er een pagina van Plaatsen gebruikend een statisch malplaatje is, moet u het in het paragraafsysteem van de plaatspagina vormen. Zie [ Vormende Componenten op de Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) voor meer informatie.
+Als er een pagina van Plaatsen gebruikend een statisch malplaatje is, moet u het in het paragraafsysteem van de plaatspagina vormen. Zie [&#x200B; Vormende Componenten op de Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) voor meer informatie.
 
 ## Een adaptief formulier of interactieve communicatie insluiten {#af-component}
 
@@ -58,7 +58,7 @@ Een adaptief formulier of interactieve communicatie insluiten met AEM Forms Cont
    >
    >Meerdere AEM Forms Container-componenten op een pagina worden niet ondersteund.
 
-1. Selecteer de ingebedde component van de Container van AEM Forms in de plaatspagina, en selecteer dan ![ settings_icon ](assets/settings_icon.png) op de actiebar. Het dialoogvenster **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
+1. Selecteer de ingebedde component van de Container van AEM Forms in de plaatspagina, en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png) op de actiebar. Het dialoogvenster **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
 1. Geef het volgende op in het dialoogvenster AEM Forms-container bewerken.
 
    * **Type van Activa:** selecteer het type van activa om in te bedden. De opties zijn adaptieve vorm en interactieve communicatie

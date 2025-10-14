@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ API documentatie ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
+>[&#x200B; API documentatie &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
 Het integratieframework bevat een integratielaag met een API. Hiermee kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). U kunt hiermee ook de interne CRX-database gebruiken of een eCommerce-systeem aansluiten en productgegevens in AEM opnemen.
 
@@ -327,18 +327,18 @@ public class AxisFilter implements VariantFilter {
 
 * Opslag
 
-   * In het AEM-generische geval, worden de wortels opgeslagen in de [ ClientContext ](/help/sites-administering/client-context.md)
+   * In het AEM-generische geval, worden de wortels opgeslagen in de [&#x200B; ClientContext &#x200B;](/help/sites-administering/client-context.md)
 
 **Personalization**
 
-* Stem altijd verpersoonlijking door de [ ClientContext ](/help/sites-administering/client-context.md).
+* Stem altijd verpersoonlijking door de [&#x200B; ClientContext &#x200B;](/help/sites-administering/client-context.md).
 * In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
 
    * Producten moeten met de methode `CommerceSession.addCartEntry()` worden toegevoegd.
 
 * In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext:
 
-![ chlimage_1-33 ](/help/sites-developing/assets/chlimage_1-33a.png)
+![&#x200B; chlimage_1-33 &#x200B;](/help/sites-developing/assets/chlimage_1-33a.png)
 
 #### Architectuur van uitchecken {#architecture-of-checkout}
 
@@ -404,7 +404,7 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 `/libs/commerce/components/search`
 
-![ chlimage_1-34 ](/help/sites-developing/assets/chlimage_1-34a.png)
+![&#x200B; chlimage_1-34 &#x200B;](/help/sites-developing/assets/chlimage_1-34a.png)
 
 Dit gebruik onderzoek API om de geselecteerde handelingsmotor (zie {de Selectie van de Motor van de Handel 0} eCommerce [&#128279;](#ecommerce-engine-selection)) te vragen:
 

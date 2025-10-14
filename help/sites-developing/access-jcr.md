@@ -18,19 +18,19 @@ ht-degree: 0%
 
 # Programmatoegang tot het AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
-U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Experience Cloud. Gebruik de JCR-API (Java™ Content Repository) om toegang te krijgen tot de CQ-opslagplaats. U kunt de Java™ JCR API gebruiken om (CRUD)-inhoud te maken, te vervangen, bij te werken en te verwijderen in de Adobe CQ-opslagplaats. Voor meer informatie over Java™ JCR API, zie [ https://jackrabbit.apache.org/jcr/jcr-api.html ](https://jackrabbit.apache.org/jcr/jcr-api.html).
+U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Experience Cloud. Gebruik de JCR-API (Java™ Content Repository) om toegang te krijgen tot de CQ-opslagplaats. U kunt de Java™ JCR API gebruiken om (CRUD)-inhoud te maken, te vervangen, bij te werken en te verwijderen in de Adobe CQ-opslagplaats. Voor meer informatie over Java™ JCR API, zie [&#x200B; https://jackrabbit.apache.org/jcr/jcr-api.html &#x200B;](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Dit ontwikkelingsartikel wijzigt de JCR van Adobe CQ van een externe toepassing Java™. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Voor details, zie [ Blijvend CQ- gegevens in de Bewaarplaats van de Inhoud Java™ ](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Dit ontwikkelingsartikel wijzigt de JCR van Adobe CQ van een externe toepassing Java™. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Voor details, zie [&#x200B; Blijvend CQ- gegevens in de Bewaarplaats van de Inhoud Java™ &#x200B;](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->Als u de JCR API wilt gebruiken, voegt u het `jackrabbit-standalone-2.4.0.jar` -bestand toe aan het klassepad van uw Java™-toepassing. U kunt dit JAR dossier van de Java™ JCR API Web-pagina in [ verkrijgen https://jackrabbit.apache.org/jcr/jcr-api.html ](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Als u de JCR API wilt gebruiken, voegt u het `jackrabbit-standalone-2.4.0.jar` -bestand toe aan het klassepad van uw Java™-toepassing. U kunt dit JAR dossier van de Java™ JCR API Web-pagina in [&#x200B; verkrijgen https://jackrabbit.apache.org/jcr/jcr-api.html &#x200B;](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Leren hoe te om Adobe CQ JCR te vragen gebruikend de Vraag JCR API, zie [ het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API ](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>Leren hoe te om Adobe CQ JCR te vragen gebruikend de Vraag JCR API, zie [&#x200B; het Vragen van de Gegevens van Adobe Experience Manager gebruikend JCR API &#x200B;](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Een instantie Repository maken {#create-a-repository-instance}
 
@@ -143,4 +143,4 @@ try {
 
 Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in **[!UICONTROL CRXDE Lite]** bekijken, zoals aangetoond in de volgende afbeelding.
 
-![ chlimage_1-68 ](assets/chlimage_1-68a.png)
+![&#x200B; chlimage_1-68 &#x200B;](assets/chlimage_1-68a.png)

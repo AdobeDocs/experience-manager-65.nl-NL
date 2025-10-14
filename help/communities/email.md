@@ -28,24 +28,24 @@ Standaard is de e-mailfunctie niet functioneel omdat hiervoor een SMTP-server en
 
 >[!CAUTION]
 >
->E-mail voor berichten en abonnementen moet slechts op de [ primaire uitgever ](deploy-communities.md#primary-publisher) worden gevormd.
+>E-mail voor berichten en abonnementen moet slechts op de [&#x200B; primaire uitgever &#x200B;](deploy-communities.md#primary-publisher) worden gevormd.
 
 ## Standaardconfiguratie e-mailservice {#default-mail-service-configuration}
 
 De standaardmailservice is vereist voor zowel meldingen als abonnementen.
 
-* Login aan de primaire uitgever met beheerdervoorrecht en toegang tot de [ Console van het Web ](../../help/sites-deploying/configuring-osgi.md):
+* Login aan de primaire uitgever met beheerdervoorrecht en toegang tot de [&#x200B; Console van het Web &#x200B;](../../help/sites-deploying/configuring-osgi.md):
 
-   * Bijvoorbeeld, [ http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoek de `Day CQ Mail Service` .
 * Selecteer het pictogram Bewerken.
 
-Dit is gebaseerd op de documentatie voor [ het Vormen E-mailBericht ](../../help/sites-administering/notification.md), maar met een verschil op dat het gebied `"From" address` ** vereist is en zou leeg moeten worden verlaten.
+Dit is gebaseerd op de documentatie voor [&#x200B; het Vormen E-mailBericht &#x200B;](../../help/sites-administering/notification.md), maar met een verschil op dat het gebied `"From" address` ** vereist is en zou leeg moeten worden verlaten.
 
 Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
-![ e-mail-config ](assets/email-config.png)
+![&#x200B; e-mail-config &#x200B;](assets/email-config.png)
 
 * **[!UICONTROL SMTP server host name]**
 
@@ -75,27 +75,27 @@ Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
 ## AEM Communities E-mailconfiguratie {#aem-communities-email-configuration}
 
-Zodra de [ standaard postdienst ](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
+Zodra de [&#x200B; standaard postdienst &#x200B;](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
 
 Slechts moet de instantie voor abonnementen verder worden gevormd wanneer het toestaan van antwoord door e-mail.
 
-1. [ E-mail ](#configuration-for-notifications) instantie:
+1. [&#x200B; E-mail &#x200B;](#configuration-for-notifications) instantie:
 
    Voor meldingen, die geen ondersteuning bieden voor e-mailantwoorden, en deze mogen niet worden gewijzigd.
 
-1. [ Subscriptions-email ](#configuration-for-subscriptions) instantie:
+1. [&#x200B; Subscriptions-email &#x200B;](#configuration-for-subscriptions) instantie:
 
    Vereist configuratie om het creëren van post van antwoorde-mail volledig toe te laten.
 
 U bereikt als volgt de e-mailconfiguratieinstanties van de Gemeenschappen:
 
-* Login aan de primaire uitgever met beheerdervoorrecht en toegang tot de [ Console van het Web ](../../help/sites-deploying/configuring-osgi.md)
+* Login aan de primaire uitgever met beheerdervoorrecht en toegang tot de [&#x200B; Console van het Web &#x200B;](../../help/sites-deploying/configuring-osgi.md)
 
-   * Bijvoorbeeld, [ http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld, [&#x200B; http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoek `AEM Communities Email Reply Configuration` .
 
-![ e-mail-antwoord-config ](assets/email-reply-config.png)
+![&#x200B; e-mail-antwoord-config &#x200B;](assets/email-reply-config.png)
 
 ### Configuratie voor meldingen {#configuration-for-notifications}
 
@@ -109,7 +109,7 @@ Wijzig deze configuratie niet.
 
 * Verifieer dat **post van antwoorde-mail** `unchecked` creeert is.
 
-![ vorm-e-mail-antwoord ](assets/configure-email-reply.png)
+![&#x200B; vorm-e-mail-antwoord &#x200B;](assets/configure-email-reply.png)
 
 ### Configuratie voor abonnementen {#configuration-for-subscriptions}
 
@@ -119,7 +119,7 @@ Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om
 * Selecteer het pictogram Bewerken.
 * Verifieer dat de **Naam** `subscriptions-email` is.
 
-  ![ vorm-e-mail-abonnement ](assets/configure-email-subscriptions.png)
+  ![&#x200B; vorm-e-mail-abonnement &#x200B;](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Name]**
 
@@ -170,11 +170,11 @@ Voor de e-mail die naar de gegevensopslagplaats moet worden gebracht, is het noo
 
 * Meld u aan bij de primaire uitgever met beheerdersrechten en blader naar de pollingimporterconsole:
 
-  Bijvoorbeeld, [ http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+  Bijvoorbeeld, [&#x200B; http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
 * Selecteren **[!UICONTROL Add]**
 
-  ![ opiniepeiling-importeur ](assets/polling-importer.png)
+  ![&#x200B; opiniepeiling-importeur &#x200B;](assets/polling-importer.png)
 
 * **[!UICONTROL Type]**
 
@@ -207,15 +207,15 @@ door aan de `postEmails` omslag te doorbladeren en **O.K.** te selecteren.
 
 Nadat de nieuwe opiniepeilingsconfiguratie is opgeslagen, moeten de eigenschappen van de e-mailimportmodule met abonnement verder worden gewijzigd om het protocol te wijzigen van `POP3` in `emailreply` .
 
-Gebruikend [ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruikend [&#x200B; CRXDE Lite &#x200B;](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Login aan de primaire uitgever met beheerdervoorrecht en doorblader aan [ https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling ](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
+* Login aan de primaire uitgever met beheerdervoorrecht en doorblader aan [&#x200B; https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling &#x200B;](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Selecteer de nieuwe configuratie en wijzig de volgende eigenschappen:
 
    * **feedType**: Vervang `pop3s` met **`emailreply`**
    * **bron**: Vervang bronprotocol `pop3s://` met **`emailreply://`**
 
-![ polling-protocol ](assets/polling-protocol.png)
+![&#x200B; polling-protocol &#x200B;](assets/polling-protocol.png)
 
 De rode driehoeken geven de gewijzigde eigenschappen aan. Sla de wijzigingen op:
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Grondbeginselen van sociale grafiek  {#social-graph-essentials}
 
-De capaciteit voor een lid van de Gemeenschap om [ activiteiten ](essentials-activities.md) te volgen en te worden gevolgd wordt gevestigd door twee componenten:
+De capaciteit voor een lid van de Gemeenschap om [&#x200B; activiteiten &#x200B;](essentials-activities.md) te volgen en te worden gevolgd wordt gevestigd door twee componenten:
 
-De `following` component moet met een ander middel worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van Gemeenschappen en eigenschappen in a [ communautaire plaats ](overview.md#communitiessites).
+De `following` component moet met een ander middel worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van Gemeenschappen en eigenschappen in a [&#x200B; communautaire plaats &#x200B;](overview.md#communitiessites).
 
 De component `following` bevat een lijst met de leden die het huidige lid volgen of die door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een site van een community is ingesteld.
 
@@ -82,8 +82,8 @@ De component `following` bevat een lijst met de leden die het huidige lid volgen
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ Sociale Grafiek API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [&#x200B; Sociale Grafiek API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [ Sociale Eindpunten van de Grafiek ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [&#x200B; Sociale Eindpunten van de Grafiek &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Aanpassingen op de server](server-customize.md)

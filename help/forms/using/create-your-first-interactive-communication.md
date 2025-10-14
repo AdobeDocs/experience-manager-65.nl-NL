@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Leer om uw eerste Interactieve Communicatie tot stand te brengen.
 
-![ 01-creeer-eerste-adaptief-vorm-held-beeld ](assets/01-create-first-adaptive-form-hero-image.png)
+![&#x200B; 01-creeer-eerste-adaptief-vorm-held-beeld &#x200B;](assets/01-create-first-adaptive-form-hero-image.png)
 
 De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, marketing post, rekeningen, en welkomstkits. De interactieve Mededelingen kunnen worden geleverd gebruikend twee kanalen: Druk en Web. Het kanaal van de Druk wordt gebruikt om PDF en papiermededelingen tot stand te brengen, terwijl het kanaal van het Web wordt gebruikt om online ervaringen te leveren.
 
@@ -27,7 +27,7 @@ Deze zelfstudie biedt een end-to-end framework voor het maken van interactieve c
 
 De volgende afbeelding illustreert de bouwstenen die nodig zijn om een interactieve communicatie te maken.
 
-![ werkschema ](assets/workflow.gif)
+![&#x200B; werkschema &#x200B;](assets/workflow.gif)
 
 Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -48,13 +48,13 @@ Een telecomoperator stuurt maandelijkse facturen naar de klanten via e-mail. De 
 ## Vereisten {#prerequisites}
 
 * Stel een AEM auteur-instantie in.
-* Installeer [ toe:voegen-aan AEM Forms ](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie
+* Installeer [&#x200B; toe:voegen-aan AEM Forms &#x200B;](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteursinstantie
 * De MYSQL-database instellen
-* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op het gegevensbestand MySQL en gebruiken Oracle [ MySQL JDBC gegevensbestandbestuurder ](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op het gegevensbestand MySQL en gebruiken Oracle [&#x200B; MySQL JDBC gegevensbestandbestuurder &#x200B;](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Stap 1: Plan de interactieve communicatie {#step-plan-the-interactive-communication}
 
-![ 07-apply-rules-to-adaptive-form_small ](assets/07-apply-rules-to-adaptive-form_small.png)
+![&#x200B; 07-apply-rules-to-adaptive-form_small &#x200B;](assets/07-apply-rules-to-adaptive-form_small.png)
 
 De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van de Interactieve Mededeling te voltooien. Nadat de inhoud wordt voltooid, moet u het analyseren om de diverse activatypes te identificeren die worden vereist om de Interactieve Mededeling tot stand te brengen.
 
@@ -72,9 +72,9 @@ Een anatomie maken voor de interactieve communicatie met de volgende gegevensinv
 
 ## Stap 2: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
-![ 03-create-adaptive-form-main-image_small ](assets/03-create-adaptive-form-main-image_small.png)
+![&#x200B; 03-create-adaptive-form-main-image_small &#x200B;](assets/03-create-adaptive-form-main-image_small.png)
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](/help/forms/using/data-integration.md).
+Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful-webservices, SOAP-gebaseerde webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie [&#x200B; de Integratie van Gegevens van AEM Forms &#x200B;](/help/forms/using/data-integration.md).
 
 **Doelen:**
 
@@ -91,7 +91,7 @@ Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden me
 
 ## Stap 3: documentfragmenten maken {#step-create-document-fragments}
 
-![ 05-create-form-data-model-main_small ](assets/05-create-form-data-model-main_small.png)
+![&#x200B; 05-create-form-data-model-main_small &#x200B;](assets/05-create-form-data-model-main_small.png)
 
 Documentfragmenten zijn herbruikbare componenten van een correspondentie die worden gebruikt om een interactieve communicatie samen te stellen. De documentfragmenten zijn van het type Tekst, Lijst en Voorwaarde.
 
@@ -105,7 +105,7 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 
 ## Stap 4: Sjablonen maken {#step-create-templates}
 
-![ 07-apply-rules-to-adaptive-form_small ](assets/07-apply-rules-to-adaptive-form_small.png)
+![&#x200B; 07-apply-rules-to-adaptive-form_small &#x200B;](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Om een Interactieve Mededeling tot stand te brengen, moet u malplaatjes beschikbaar op de AEM server voor de Kanalen van de Druk en van het Web hebben.
 
@@ -123,7 +123,7 @@ De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonaute
 
 ## Stap 5: Maak een interactieve communicatie {#step-create-an-interactive-communication}
 
-![ 09-stijl-uw-adaptief-vorm-klein ](assets/09-style-your-adaptive-form-small.png)
+![&#x200B; 09-stijl-uw-adaptief-vorm-klein &#x200B;](assets/09-style-your-adaptive-form-small.png)
 
 Zodra u alle bouwstenen zoals het model van vormgegevens, documentfragmenten, en malplaatjes voor de Webversie creeert, kunt u beginnen tot een Interactieve Mededeling te leiden.
 
@@ -142,7 +142,7 @@ De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Druk en W
 
 ## Stap 6: Publish uw interactieve communicatie {#step-publish-your-interactive-communication}
 
-![ 12-publish-your-adaptive-form-_small ](assets/12-publish-your-adaptive-form-_small.png)
+![&#x200B; 12-publish-your-adaptive-form-_small &#x200B;](assets/12-publish-your-adaptive-form-_small.png)
 
 Nadat u interactieve communicatie hebt gemaakt en getest met de kanalen Afdrukken en Web, kunt u deze elementen publiceren. Het gebruiksscenario dat in deze zelfstudie wordt beschreven, is gericht op het integreren van deze elementen met een e-mailclient. De e-mailclient fungeert als brug voor het verzenden van interactieve communicatie naar meerdere e-mailadressen.
 

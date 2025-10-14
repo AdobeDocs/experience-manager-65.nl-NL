@@ -38,7 +38,7 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
 1. In de actietoolbar, creeer de uitgezochte **> Dossier** uploadt.
 
-   ![ Dossiers van lokale opslagoptie onder Create ](assets/step.png)
+   ![&#x200B; Dossiers van lokale opslagoptie onder Create &#x200B;](assets/step.png)
 
 1. In het dialoogvenster Formulier of pakketten uploaden kunt u bladeren naar het bestand dat u wilt uploaden en het bestand kiezen. In de bestandsbrowser worden alleen de ondersteunde bestandsindelingen (ZIP, XDP en PDF) weergegeven.
 
@@ -52,11 +52,11 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
    >
    >Voor een ZIP-bestand worden de relatieve paden van alle ondersteunde elementen weergegeven. Niet-ondersteunde elementen in het ZIP-bestand worden genegeerd en niet vermeld. Als het ZIP-archief echter alleen de niet-ondersteunde elementen bevat, wordt een foutbericht weergegeven in plaats van het pop-updialoogvenster.
 
-   ![ uploadt dialoog wanneer het uploaden van een XFA vorm ](assets/upload-scr.png)
+   ![&#x200B; uploadt dialoog wanneer het uploaden van een XFA vorm &#x200B;](assets/upload-scr.png)
 
 1. Als een of meer elementen een ongeldige bestandsnaam hebben, wordt een fout weergegeven. Corrigeer de in rood gemarkeerde bestandsnamen en upload ze opnieuw.
 
-   ![ het bericht van de Fout wanneer het uploaden van een vorm XFA ](assets/upload-scr-err.png)
+   ![&#x200B; het bericht van de Fout wanneer het uploaden van een vorm XFA &#x200B;](assets/upload-scr-err.png)
 
 Wanneer het uploaden is voltooid, genereert een achtergrondworkflow miniaturen voor elk element op basis van de voorvertoning van het element. Nieuwere versies van elementen, indien geüpload, overschrijven de bestaande elementen.
 
@@ -74,15 +74,15 @@ De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde
 
 In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
-Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden aan de velden die beschikbaar zijn in de XFA. Bij het bijwerken van een formuliersjabloon probeert het bijbehorende adaptieve formulier te synchroniseren met de XFA. Voor meer details, zie [ Synchronizing adaptieve vormen met bijbehorende XFA ](../../forms/using/synchronizing-adaptive-forms-xfa.md).
+Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden aan de velden die beschikbaar zijn in de XFA. Bij het bijwerken van een formuliersjabloon probeert het bijbehorende adaptieve formulier te synchroniseren met de XFA. Voor meer details, zie [&#x200B; Synchronizing adaptieve vormen met bijbehorende XFA &#x200B;](../../forms/using/synchronizing-adaptive-forms-xfa.md).
 
 Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formulier of de afhankelijke formuliersjabloon beschadigd. Een dergelijk adaptief formulier wordt soms informeel een vuile vorm genoemd. In de gebruikersinterface van AEM Forms kunt u op de volgende twee manieren de vuile formulieren vinden.
 
 * Er wordt een waarschuwingspictogram weergegeven op de miniatuur van het aangepaste formulier in de lijst met elementen. Het volgende bericht wordt weergegeven wanneer u de aanwijzer boven het waarschuwingspictogram houdt.\
   `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
-![ Waarschuwing voor een uit synchronisatie adaptieve vorm na het bijwerken van bijbehorende XFA ](assets/dirtyaf.png)
+![&#x200B; Waarschuwing voor een uit synchronisatie adaptieve vorm na het bijwerken van bijbehorende XFA &#x200B;](assets/dirtyaf.png)
 
 Er wordt een vlag onderhouden om aan te geven of een adaptief formulier bevuild is. Deze informatie is beschikbaar op de pagina met formuliereigenschappen, naast de metagegevens van het formulier. Alleen voor vuile adaptieve formulieren wordt met de eigenschap metadata `Model Refresh` de waarde `Recommended` weergegeven.
 
-![ Verwijzing van een adaptieve vorm die uit synchronisatie met het model XFA ](assets/model-refresh.png) is
+![&#x200B; Verwijzing van een adaptieve vorm die uit synchronisatie met het model XFA &#x200B;](assets/model-refresh.png) is

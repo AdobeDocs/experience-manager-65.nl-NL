@@ -26,7 +26,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom worden streepjescodes en handtekeningvelden niet in mijn formulier weergegeven?
 
-   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw veld voor het schrijven van handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. Men kan a [ douanewidget ](../../forms/using/custom-widgets.md) voor streepjescodes ook toevoegen en het integreren.
+   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw veld voor het schrijven van handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. Men kan a [&#x200B; douanewidget &#x200B;](../../forms/using/custom-widgets.md) voor streepjescodes ook toevoegen en het integreren.
 
 1. Wordt RTF-tekst ondersteund voor het XFA-tekstveld?
 
@@ -38,7 +38,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    1. Stel het aanvankelijke aantal van het herhaalbare subformulier in op 1.
 
-      ![ eerste-telling ](assets/intial-count.png)
+      ![&#x200B; eerste-telling &#x200B;](assets/intial-count.png)
 
    1. Gebruik de initialisatiegebeurtenis van het formulier om het primaire exemplaar van het subformulier te verbergen. De onderstaande code verbergt bijvoorbeeld het primaire exemplaar van Subform bij initialisatie van het formulier. Het verifieert ook het app type om ervoor te zorgen dat het manuscript slechts op de cliëntkant wordt uitgevoerd:
 
@@ -181,19 +181,19 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
    Antwoord:
 
-   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Voor gedetailleerde informatie, zie [ Steun Scripting ](/help/forms/using/scripting-support.md).
+   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Voor gedetailleerde informatie, zie [&#x200B; Steun Scripting &#x200B;](/help/forms/using/scripting-support.md).
    * $record en $data worden niet ondersteund in clientscripts. Als de scripts echter zijn geschreven in een formReady, layoutReady-blok, werken de scripts nog steeds omdat deze gebeurtenissen op de server worden uitgevoerd.
    * Elementspecifieke scripts van XFA Draw, zoals het wijzigen van de Draw-tekst (of bijschrifttekst als er velden zijn), worden niet ondersteund.
 
 1. Zijn er beperkingen in het gebruik van formCalc?
 
-   Antwoord: momenteel wordt alleen een subset van de FormCalc-scripts geïmplementeerd. Voor gedetailleerde informatie, zie [ Steun Scripting ](/help/forms/using/scripting-support.md).
+   Antwoord: momenteel wordt alleen een subset van de FormCalc-scripts geïmplementeerd. Voor gedetailleerde informatie, zie [&#x200B; Steun Scripting &#x200B;](/help/forms/using/scripting-support.md).
 
 1. Is er een aanbevolen naamgevingsconventie en zijn er gereserveerde trefwoorden die moeten worden vermeden?
 
    Antwoord:
    * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet met een onderstrepingsteken (_) te laten beginnen. Om onderstrepingsteken aan het begin van de naam te gebruiken, voeg een prefix na het onderstrepingsteken,_ &lt;prefix>&lt;objectname> toe.
-   * Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [ HTML5 vormen APIs ](/help/forms/using/scripting-support.md) identiek is.
+   * Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [&#x200B; HTML5 vormen APIs &#x200B;](/help/forms/using/scripting-support.md) identiek is.
 
 1. Biedt HTML5-formulieren ondersteuning voor zwevende velden?
 
@@ -219,4 +219,4 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
 1. Zijn er gereserveerde trefwoorden in HTML5-formulieren?
 
-   Antwoord: Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [ HTML5 vormen APIs ](/help/forms/using/scripting-support.md) identiek is. Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld: `_fpField1`
+   Antwoord: Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Voor douane APIs/functies, gebruik een naam die niet aan [&#x200B; HTML5 vormen APIs &#x200B;](/help/forms/using/scripting-support.md) identiek is. Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld: `_fpField1`

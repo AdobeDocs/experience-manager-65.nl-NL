@@ -30,7 +30,7 @@ Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de la
    >
    >Om het geheime voorgeheugen onbruikbaar te maken, plaats de waarde op het Aantal van het AanpassingsForms gebied aan **0**. De cache wordt opnieuw ingesteld en alle formulieren en documenten worden uit de cache verwijderd wanneer u de cachemonfiguratie uitschakelt of wijzigt.
 
-   ![ de dialoog van de Configuratie voor het adaptieve geheime voorgeheugen van de HTML van vormen ](assets/cache-configuration-edit.png)
+   ![&#x200B; de dialoog van de Configuratie voor het adaptieve geheime voorgeheugen van de HTML van vormen &#x200B;](assets/cache-configuration-edit.png)
 
 1. Klik op **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -43,7 +43,7 @@ U kunt ook adaptieve formulieren in cache plaatsen bij Dispatcher voor een extra
 
 ### Voorwaarden {#pre-requisites}
 
-* Laat [ samen of prefilling gegevens bij de cliënt ](prepopulate-adaptive-form-fields.md#prefill-at-client) optie toe. Hiermee kunt u unieke gegevens samenvoegen voor elk exemplaar van een vooraf ingevuld formulier.
+* Laat [&#x200B; samen of prefilling gegevens bij de cliënt &#x200B;](prepopulate-adaptive-form-fields.md#prefill-at-client) optie toe. Hiermee kunt u unieke gegevens samenvoegen voor elk exemplaar van een vooraf ingevuld formulier.
 
 ### Overwegingen bij het in cache plaatsen van adaptieve formulieren op een Dispatcher {#considerations}
 
@@ -52,18 +52,18 @@ U kunt ook adaptieve formulieren in cache plaatsen bij Dispatcher voor een extra
 * URL&#39;s zonder extensie worden niet in de cache opgeslagen. URL met patroon `/content/forms/[folder-structure]/[form-name].html` wordt bijvoorbeeld in de cache opgeslagen en URL&#39;s met patroon `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content` worden genegeerd in de cache. Gebruik dus URL&#39;s met extensies om de voordelen van caching te benutten.
 * Overwegingen voor gelokaliseerde adaptieve formulieren:
    * Gebruik de URL-indeling `http://host:port/content/forms/af/<afName>.<locale>.html` om een gelokaliseerde versie van een adaptief formulier aan te vragen in plaats van `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [ maak onbruikbaar gebruikend browser scène ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) voor URLs met formaat `http://host:port/content/forms/af/<adaptivefName>.html`.
+   * [&#x200B; maak onbruikbaar gebruikend browser scène &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) voor URLs met formaat `http://host:port/content/forms/af/<adaptivefName>.html`.
    * Wanneer u URL-indeling `http://host:port/content/forms/af/<adaptivefName>.html` gebruikt en **[!UICONTROL Use Browser Locale]** in configuratiebeheer is uitgeschakeld, wordt de niet-gelokaliseerde versie van het adaptieve formulier weergegeven. De niet-gelokaliseerde taal is de taal die wordt gebruikt bij het ontwikkelen van het adaptieve formulier. De landinstelling die is geconfigureerd voor uw browser (landinstelling browser) wordt niet in overweging genomen en er wordt een niet-gelokaliseerde versie van het adaptieve formulier weergegeven.
-   * Wanneer u URL-indeling `http://host:port/content/forms/af/<adaptivefName>.html` gebruikt en **[!UICONTROL Use Browser Locale]** in configuratiebeheer is ingeschakeld, wordt een gelokaliseerde versie van het aangepaste formulier weergegeven, indien beschikbaar. De taal van het gelokaliseerde adaptieve formulier is gebaseerd op de landinstelling die is geconfigureerd voor uw browser (landinstelling browser). Het kan tot [ caching slechts de eerste instantie van een adaptieve vorm ] leiden. Om de kwestie te verhinderen op uw instantie te gebeuren, zie [ het oplossen van problemen ](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Wanneer u URL-indeling `http://host:port/content/forms/af/<adaptivefName>.html` gebruikt en **[!UICONTROL Use Browser Locale]** in configuratiebeheer is ingeschakeld, wordt een gelokaliseerde versie van het aangepaste formulier weergegeven, indien beschikbaar. De taal van het gelokaliseerde adaptieve formulier is gebaseerd op de landinstelling die is geconfigureerd voor uw browser (landinstelling browser). Het kan tot [ caching slechts de eerste instantie van een adaptieve vorm ] leiden. Om de kwestie te verhinderen op uw instantie te gebeuren, zie [&#x200B; het oplossen van problemen &#x200B;](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Het in cache plaatsen van Dispatcher inschakelen
 
 Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen en te configureren op Dispatcher:
 
-1. Open volgende URL voor elk publiceer geval van uw milieu en [ laat flush agent voor toe publiceer instanties van uw milieu ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Open volgende URL voor elk publiceer geval van uw milieu en [&#x200B; laat flush agent voor toe publiceer instanties van uw milieu &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=nl-NL#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [ voeg het volgende aan uw dispatcher.any- dossier ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#automatically-invalidating-cached-files) toe:
+1. [&#x200B; voeg het volgende aan uw dispatcher.any- dossier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#automatically-invalidating-cached-files) toe:
 
    ```JSON
       /invalidate
@@ -91,8 +91,8 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
 
    * Een adaptief formulier blijft in de cache totdat een bijgewerkte versie van het formulier niet wordt gepubliceerd.
 
-   * Wanneer een nieuwere versie van een bron waarnaar in een adaptief formulier wordt verwezen, wordt gepubliceerd, worden de beïnvloede adaptieve formulieren automatisch ongeldig gemaakt. Er zijn enkele uitzonderingen op de automatische ongeldigmaking van bronnen waarnaar wordt verwezen. Voor alternerende actie aan uitzonderingen, zie de [ het oplossen van problemen](#troubleshooting) sectie.
-1. [ voeg hieronder regels dispatcher.any of het dossier van douaneregels ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-documents-to-cache) toe. De URL&#39;s die caching niet ondersteunen, worden uitgesloten. Bijvoorbeeld interactieve communicatie.
+   * Wanneer een nieuwere versie van een bron waarnaar in een adaptief formulier wordt verwezen, wordt gepubliceerd, worden de beïnvloede adaptieve formulieren automatisch ongeldig gemaakt. Er zijn enkele uitzonderingen op de automatische ongeldigmaking van bronnen waarnaar wordt verwezen. Voor alternerende actie aan uitzonderingen, zie de [&#x200B; het oplossen van problemen](#troubleshooting) sectie.
+1. [&#x200B; voeg hieronder regels dispatcher.any of het dossier van douaneregels &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#specifying-the-documents-to-cache) toe. De URL&#39;s die caching niet ondersteunen, worden uitgesloten. Bijvoorbeeld interactieve communicatie.
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
       }
    ```
 
-1. [ voeg de volgende parameters aan de negeer URL parameterlijst ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#ignoring-url-parameters) toe:
+1. [&#x200B; voeg de volgende parameters aan de negeer URL parameterlijst &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#ignoring-url-parameters) toe:
 
    ```JSON
       /ignoreUrlParams {
@@ -126,7 +126,7 @@ Voer de volgende stappen uit om adaptieve formulieren in cache in te schakelen e
       }
    ```
 
-Uw AEM-omgeving is geconfigureerd om adaptieve formulieren in de cache op te slaan. Alle typen adaptieve formulieren worden in het cachegeheugen opgeslagen. Als u een controle van de toestemmingen van de gebruikerstoegang voor een pagina vereist alvorens de caching pagina te leveren, zie [ caching beveiligde inhoud ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL).
+Uw AEM-omgeving is geconfigureerd om adaptieve formulieren in de cache op te slaan. Alle typen adaptieve formulieren worden in het cachegeheugen opgeslagen. Als u een controle van de toestemmingen van de gebruikerstoegang voor een pagina vereist alvorens de caching pagina te leveren, zie [&#x200B; caching beveiligde inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL).
 
 ## Problemen oplossen {#troubleshooting}
 

@@ -24,7 +24,7 @@ Met Correspondence Management kunt u het servicesjabloon van de oplossing herdef
 
 U kunt het logo in de interface Correspondentie maken wijzigen met het logo van uw organisatie.
 
-![ het douanepictogram in Create Correspondence UI ](assets/0_1_introscreenshot.png)
+![&#x200B; het douanepictogram in Create Correspondence UI &#x200B;](assets/0_1_introscreenshot.png)
 
 Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken
 
@@ -32,11 +32,11 @@ Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken
 
 Ga als volgt te werk om een door u gekozen logoafbeelding in te stellen:
 
-1. Creeer de aangewezen [ omslagstructuur in CRX ](#creatingfolderstructure).
-1. [ upload het nieuwe logodossier ](#uploadlogo) in de omslag die u in CRX hebt gecreeerd.
+1. Creeer de aangewezen [&#x200B; omslagstructuur in CRX &#x200B;](#creatingfolderstructure).
+1. [&#x200B; upload het nieuwe logodossier &#x200B;](#uploadlogo) in de omslag die u in CRX hebt gecreeerd.
 
-1. [ opstelling CSS ](#createcss) op CRX om naar het nieuwe embleem te verwijzen.
-1. Wis de browser geschiedenis en [ verfrissen creeer Correspondentie UI ](#refreshccrui).
+1. [&#x200B; opstelling CSS &#x200B;](#createcss) op CRX om naar het nieuwe embleem te verwijzen.
+1. Wis de browser geschiedenis en [&#x200B; verfrissen creeer Correspondentie UI &#x200B;](#refreshccrui).
 
 ## De vereiste mapstructuur maken {#creatingfolderstructure}
 
@@ -59,7 +59,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de `/apps` -vertakkin
 
    1. Klik met de rechtermuisknop op de **css** omslag bij de volgende weg en selecteer **Knoop van de Bedekking**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      ![ knoop van de Bedekking ](assets/1_overlaynode_css.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/1_overlaynode_css.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -69,7 +69,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de `/apps` -vertakkin
 
       **de Types van Knoop van de Gelijke:** Gecontroleerd
 
-      ![ de knoopweg van de Bedekking ](assets/0_1_5ioverlaynodedialog.png)
+      ![&#x200B; de knoopweg van de Bedekking &#x200B;](assets/0_1_5ioverlaynodedialog.png)
 
       >[!NOTE]
       >
@@ -119,11 +119,11 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
-   ![ creeer nieuwe knoop in omslag imgs ](assets/2_contentexplorernewnode.png)
+   ![&#x200B; creeer nieuwe knoop in omslag imgs &#x200B;](assets/2_contentexplorernewnode.png)
 
 1. Voer in het dialoogvenster Bestand maken de naam van het bestand in als CustomLogo.png (of de naam van het logobestand).
 
-   ![ CustomLogo.png als nieuwe knoop ](assets/3_contentexplorernewnode_customlogo.png)
+   ![&#x200B; CustomLogo.png als nieuwe knoop &#x200B;](assets/3_contentexplorernewnode_customlogo.png)
 
 1. Klik **sparen allen**.
 
@@ -133,7 +133,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    jcr:eigenschappen van inhoud worden weergegeven.
 
-   ![ jcrcontentproperties ](assets/jcrcontentproperties.png)
+   ![&#x200B; jcrcontentproperties &#x200B;](assets/jcrcontentproperties.png)
 
 1. Dubbelklik **jcr:gegevens** bezit.
 
@@ -145,7 +145,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt om toegang te krijgen tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
-   ![ Voorbeeld van het dossier van het douaneembleem ](assets/geometrixx-outdoors.png)
+   ![&#x200B; Voorbeeld van het dossier van het douaneembleem &#x200B;](assets/geometrixx-outdoors.png)
 
    Voorbeeld: CustomLogo.png te gebruiken als het aangepaste logo
 
@@ -180,6 +180,6 @@ Gebruik de volgende stappen om de stijlpagina te maken voor het renderen van het
 
 Wis het browsercache en open vervolgens de instantie Correspondentie-UI maken in uw browser, zodat u het aangepaste logo kunt zien.
 
-![ creeer correspondentiegebruikersinterface met douanelogo ](assets/0_1_introscreenshot-1.png)
+![&#x200B; creeer correspondentiegebruikersinterface met douanelogo &#x200B;](assets/0_1_introscreenshot-1.png)
 
 Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken

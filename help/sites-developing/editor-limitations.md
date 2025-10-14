@@ -26,9 +26,9 @@ Een auteur kan de volgende functionele beperkingen tegenkomen wanneer hij de edi
 
 ### Koppelingen niet actief {#links-not-active}
 
-Wanneer [ het uitgeven van een pagina ](/help/sites-authoring/editing-content.md), zijn de verbindingen niet actief.
+Wanneer [&#x200B; het uitgeven van een pagina &#x200B;](/help/sites-authoring/editing-content.md), zijn de verbindingen niet actief.
 
-* [ Schakelaar aan **Voorproef** wijze ](/help/sites-authoring/editing-content.md#preview-mode) om het gebruiken van de verbindingen in uw inhoud te navigeren.
+* [&#x200B; Schakelaar aan **Voorproef** wijze &#x200B;](/help/sites-authoring/editing-content.md#preview-mode) om het gebruiken van de verbindingen in uw inhoud te navigeren.
 
 ### Structuurpagina&#39;s {#structure-pages}
 

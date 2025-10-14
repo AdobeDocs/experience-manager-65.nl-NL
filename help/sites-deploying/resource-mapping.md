@@ -42,7 +42,7 @@ Als de toewijzing het voorvoegsel `/content` automatisch aan `/we-retail/en/prod
 
 >[!NOTE]
 >
->Zie de het Verdelen documentatie, en [ Toewijzingen voor de Resolutie van het Middel ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en [ Middelen ](https://sling.apache.org/documentation/the-sling-engine/resources.html) voor verdere informatie.
+>Zie de het Verdelen documentatie, en [&#x200B; Toewijzingen voor de Resolutie van het Middel &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en [&#x200B; Middelen &#x200B;](https://sling.apache.org/documentation/the-sling-engine/resources.html) voor verdere informatie.
 
 ## Definities voor weergavetoewijzing {#viewing-mapping-definitions}
 
@@ -51,7 +51,7 @@ De toewijzingen uit twee lijsten die de Resolver van het Middel JCR (top-down) e
 Deze lijsten kunnen (samen met configuratieinformatie) onder **JCR ResourceResolver** optie van de console van de Felix worden bekeken; bijvoorbeeld, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * Configuratie
-Toont de huidige configuratie (zoals die voor [ Apache het Verdelen Resolver van het Middel ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) wordt bepaald).
+Toont de huidige configuratie (zoals die voor [&#x200B; Apache het Verdelen Resolver van het Middel &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) wordt bepaald).
 
 * Configuratietest
 Hiermee kunt u een URL of een bronpad invoeren. Klik **oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang zal omzetten.
@@ -86,7 +86,7 @@ Er worden nieuwe toewijzingsdefinities gemaakt in de repository.
 
 >[!NOTE]
 >
->Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen. Bijvoorbeeld, [ https://www.regular-expressions.info/ ](https://www.regular-expressions.info/).
+>Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen. Bijvoorbeeld, [&#x200B; https://www.regular-expressions.info/ &#x200B;](https://www.regular-expressions.info/).
 
 ### Toewijzingsdefinities maken in AEM {#creating-mapping-definitions-in-aem}
 
@@ -134,8 +134,8 @@ is aangevraagd.
 
 >[!NOTE]
 >
->Zie [ Middelen ](https://sling.apache.org/documentation/the-sling-engine/resources.html) in de het Verdelen Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
+>Zie [&#x200B; Middelen &#x200B;](https://sling.apache.org/documentation/the-sling-engine/resources.html) in de het Verdelen Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
 
 >[!NOTE]
 >
->U kunt `/etc/map.publish` gebruiken om de configuraties voor de publicatieomgeving te houden. Deze moeten worden gerepliceerd, en de nieuwe plaats ( `/etc/map.publish`) voor de **Plaats van de Afbeelding** van de [ Apache het Verdelen Resolver van het Middel ](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) van het publicatiemilieu wordt gevormd.
+>U kunt `/etc/map.publish` gebruiken om de configuraties voor de publicatieomgeving te houden. Deze moeten worden gerepliceerd, en de nieuwe plaats ( `/etc/map.publish`) voor de **Plaats van de Afbeelding** van de [&#x200B; Apache het Verdelen Resolver van het Middel &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) van het publicatiemilieu wordt gevormd.

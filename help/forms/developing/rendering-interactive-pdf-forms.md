@@ -25,13 +25,13 @@ De Forms-service rendert interactieve PDF forms naar clientapparaten, meestal we
 
 >[!NOTE]
 >
->Voordat u een formulier kunt genereren met de Forms-service, moet u eerst een formulierontwerp maken. Doorgaans wordt een formulierontwerp gemaakt in Designer en opgeslagen als een XDP-bestand. Voor informatie over het creëren van een vormontwerp, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Voordat u een formulier kunt genereren met de Forms-service, moet u eerst een formulierontwerp maken. Doorgaans wordt een formulierontwerp gemaakt in Designer en opgeslagen als een XDP-bestand. Voor informatie over het creëren van een vormontwerp, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **de lentetoepassing van de steekproef**
 
 Er wordt een voorbeeldtoepassing voor leningen geïntroduceerd om aan te tonen hoe de Forms-service interactieve formulieren gebruikt om informatie van gebruikers te verzamelen. Met deze toepassing kan een gebruiker een formulier invullen met gegevens die nodig zijn om een lening te beveiligen en vervolgens gegevens verzenden naar de Forms-service. In het volgende diagram wordt de logische stroom van de toepassing van de lening weergegeven.
 
-![ ri_ri_finsrv_loanapp_v1 ](assets/ri_ri_finsrv_loanapp_v1.png)
+![&#x200B; ri_ri_finsrv_loanapp_v1 &#x200B;](assets/ri_ri_finsrv_loanapp_v1.png)
 
 In de volgende tabel worden de stappen in dit diagram beschreven.
 
@@ -70,15 +70,15 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
 
 Dit interactieve leningformulier wordt gegenereerd door de Java Servlet van de voorbeeldtoepassing. `GetLoanForm`
 
-![ ri_ri_loanform ](assets/ri_ri_loanform.png)
+![&#x200B; ri_ri_loanform &#x200B;](assets/ri_ri_loanform.png)
 
 **Bevestigingsvorm**
 
 Dit formulier wordt gegenereerd door de Java Servlet van de voorbeeldtoepassing. `HandleData`
 
-![ ri_ri_confirm ](assets/ri_ri_confirm.png)
+![&#x200B; ri_ri_confirm &#x200B;](assets/ri_ri_confirm.png)
 
-Met de Java Server `HandleData` wordt dit formulier vooraf ingevuld met de voor- en achternaam en de hoeveelheid van de gebruiker. Nadat het formulier vooraf is ingevuld, wordt het naar de webbrowser van de client verzonden. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+Met de Java Server `HandleData` wordt dit formulier vooraf ingevuld met de voor- en achternaam en de hoeveelheid van de gebruiker. Nadat het formulier vooraf is ingevuld, wordt het naar de webbrowser van de client verzonden. (Zie [&#x200B; Prepopulating Forms met Stroombare Lay-outs &#x200B;](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Servlets Java**
 
@@ -102,7 +102,7 @@ Normaal gesproken plaatst u de Forms Service Client API-code niet in een Java Se
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Samenvatting van stappen**
 
@@ -127,13 +127,13 @@ Voordat u een Forms Service Client API-bewerking programmatisch kunt uitvoeren, 
 
 U kunt URI-waarden opgeven die de Forms-service nodig heeft om een formulier te genereren. Naar een formulierontwerp dat is opgeslagen als onderdeel van een Forms-toepassing, kan worden verwezen met de URI-waarde van de inhoudsbasis `repository:///` . Bijvoorbeeld, overweeg het volgende vormontwerp genoemd *Loan.xdp* binnen een toepassing van Forms genoemd *FormsApplication* wordt gevestigd:
 
-![ ri_ri_formrepository ](assets/ri_ri_formrepository.png)
+![&#x200B; ri_ri_formrepository &#x200B;](assets/ri_ri_formrepository.png)
 
 Als u toegang wilt tot dit formulierontwerp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` op als de formuliernaam (de eerste parameter die aan de methode `renderPDFForm` wordt doorgegeven) en `repository:///` als de URI-waarde van de inhoudsbasis.
 
 >[!NOTE]
 >
->Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Het pad naar een bron in een Forms-toepassing is:
 
@@ -152,11 +152,11 @@ Wanneer u een interactief formulier genereert, kunt u URI-waarden definiëren, z
 
 Als de doel-URL is gedefinieerd in het formulierontwerp, mag u deze niet overschrijven met de Forms Service Client API. Met andere woorden, als u de doel-URL instelt met de Forms API, wordt de opgegeven URL in het formulierontwerp teruggezet naar de URL die is opgegeven met de API. Als u het PDF-formulier wilt verzenden naar de doel-URL die in het formulierontwerp is opgegeven, stelt u de doel-URL programmatisch in op een lege tekenreeks.
 
-Als u een formulier hebt dat een verzendknop en een berekeningsknop bevat (met een overeenkomstig script dat op de server wordt uitgevoerd), kunt u de URL programmatisch definiëren waarnaar het formulier wordt verzonden om het script uit te voeren. Met de knop Verzenden op het formulierontwerp geeft u de URL op waarnaar de formuliergegevens worden verzonden. (Zie [ Berekend de Gegevens van de Vorm ](/help/forms/developing/calculating-form-data.md).)
+Als u een formulier hebt dat een verzendknop en een berekeningsknop bevat (met een overeenkomstig script dat op de server wordt uitgevoerd), kunt u de URL programmatisch definiëren waarnaar het formulier wordt verzonden om het script uit te voeren. Met de knop Verzenden op het formulierontwerp geeft u de URL op waarnaar de formuliergegevens worden verzonden. (Zie [&#x200B; Berekend de Gegevens van de Vorm &#x200B;](/help/forms/developing/calculating-form-data.md).)
 
 >[!NOTE]
 >
->In plaats van een URL-waarde op te geven die naar een XDP-bestand verwijst, kunt u ook een `com.adobe.idp.Document` -instantie doorgeven aan de Forms-service. Het `com.adobe.idp.Document` -exemplaar bevat een formulierontwerp. (Zie [ het overgaan van Documenten tot de Dienst van Forms ](/help/forms/developing/passing-documents-forms-service.md).)
+>In plaats van een URL-waarde op te geven die naar een XDP-bestand verwijst, kunt u ook een `com.adobe.idp.Document` -instantie doorgeven aan de Forms-service. Het `com.adobe.idp.Document` -exemplaar bevat een formulierontwerp. (Zie [&#x200B; het overgaan van Documenten tot de Dienst van Forms &#x200B;](/help/forms/developing/passing-documents-forms-service.md).)
 
 **maak dossiers aan de vorm** vast
 

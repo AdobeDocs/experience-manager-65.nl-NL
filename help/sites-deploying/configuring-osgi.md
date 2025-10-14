@@ -18,19 +18,19 @@ ht-degree: 0%
 
 # OSGi configureren{#configuring-osgi}
 
-[ OSGi ](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
+[&#x200B; OSGi &#x200B;](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
 OSGi &quot;*verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
 
-Zo kunt u bundels eenvoudig beheren, aangezien ze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie de [ Specificatie OSGi ](https://docs.osgi.org/specification/)) is bevat in één van de diverse bundels.
+Zo kunt u bundels eenvoudig beheren, aangezien ze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie de [&#x200B; Specificatie OSGi &#x200B;](https://docs.osgi.org/specification/)) is bevat in één van de diverse bundels.
 
 U kunt de configuratie-instellingen voor dergelijke bundels beheren door:
 
-* gebruikend de [ console van het Web van Adobe CQ ](#osgi-configuration-with-the-web-console)
-* het gebruiken van [ configuratiedossiers ](#osgi-configuration-with-configuration-files)
-* het vormen [ inhoud-knopen ( `sling:OsgiConfig`) in de bewaarplaats ](#osgi-configuration-in-the-repository)
+* gebruikend de [&#x200B; console van het Web van Adobe CQ &#x200B;](#osgi-configuration-with-the-web-console)
+* het gebruiken van [&#x200B; configuratiedossiers &#x200B;](#osgi-configuration-with-configuration-files)
+* het vormen [&#x200B; inhoud-knopen ( `sling:OsgiConfig`) in de bewaarplaats &#x200B;](#osgi-configuration-in-the-repository)
 
-Één van beide methode kan worden gebruikt hoewel er subtiele verschillen zijn, hoofdzakelijk met betrekking tot [ Wijzen van de Looppas ](/help/sites-deploying/configure-runmodes.md):
+Één van beide methode kan worden gebruikt hoewel er subtiele verschillen zijn, hoofdzakelijk met betrekking tot [&#x200B; Wijzen van de Looppas &#x200B;](/help/sites-deploying/configure-runmodes.md):
 
 * [Adobe CQ-webconsole](#osgi-configuration-with-the-web-console)
 
@@ -48,7 +48,7 @@ U kunt de configuratie-instellingen voor dergelijke bundels beheren door:
 * [content-nodes (sling:osgiConfig) in de repository](#osgi-configuration-in-the-repository)
 
    * Vereist handconfiguratie gebruikend CRXDE Lite.
-   * Wegens de noemende overeenkomsten van de `sling:OsgiConfig` knopen, kunt u de configuratie aan een specifieke [ looppaswijze ](/help/sites-deploying/configure-runmodes.md) binden. U kunt zelfs configuraties voor meer dan één uitvoeringswijze in de zelfde bewaarplaats opslaan.
+   * Wegens de noemende overeenkomsten van de `sling:OsgiConfig` knopen, kunt u de configuratie aan een specifieke [&#x200B; looppaswijze &#x200B;](/help/sites-deploying/configure-runmodes.md) binden. U kunt zelfs configuraties voor meer dan één uitvoeringswijze in de zelfde bewaarplaats opslaan.
    * Eventuele geschikte configuraties worden direct toegepast (afhankelijk van de uitvoeringsmodus).
 
 Welke methode u ook gebruikt, al deze configuratiemethoden:
@@ -60,17 +60,17 @@ Welke methode u ook gebruikt, al deze configuratiemethoden:
 
 >[!NOTE]
 >
->De details van bepaalde belangrijke montages zijn vermeld onder [ de Montages van de Configuratie OSGi.](/help/sites-deploying/osgi-configuration-settings.md)
+>De details van bepaalde belangrijke montages zijn vermeld onder [&#x200B; de Montages van de Configuratie OSGi.](/help/sites-deploying/osgi-configuration-settings.md)
 
 ## OSGi Configuratie met de Console van het Web {#osgi-configuration-with-the-web-console}
 
-De [ console van het Web ](/help/sites-deploying/web-console.md) in AEM verstrekt een gestandaardiseerde interface voor het vormen van de bundels. Het **lusje van de Configuratie** wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen.
+De [&#x200B; console van het Web &#x200B;](/help/sites-deploying/web-console.md) in AEM verstrekt een gestandaardiseerde interface voor het vormen van de bundels. Het **lusje van de Configuratie** wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen.
 
 Eventuele aangebrachte wijzigingen worden onmiddellijk toegepast op de relevante OSGi-configuratie. Er is geen herstart nodig.
 
 >[!NOTE]
 >
->De veranderingen die in de Webconsole worden aangebracht worden bewaard in de bewaarplaats als [ configuratiedossiers ](#osgi-configuration-with-configuration-files). Deze bestanden kunnen worden opgenomen in inhoudspakketten voor hergebruik in verdere installaties.
+>De veranderingen die in de Webconsole worden aangebracht worden bewaard in de bewaarplaats als [&#x200B; configuratiedossiers &#x200B;](#osgi-configuration-with-configuration-files). Deze bestanden kunnen worden opgenomen in inhoudspakketten voor hergebruik in verdere installaties.
 
 >[!NOTE]
 >
@@ -99,11 +99,11 @@ Om een configuratie met de Webconsole bij te werken:
 
 1. Er wordt een dialoogvenster geopend. Hier kunt u desgewenst bewerken. Bijvoorbeeld, plaats het **Niveau van het Logboek** aan `INFO`:
 
-   ![ chlimage_1-140 ](assets/chlimage_1-140.png)
+   ![&#x200B; chlimage_1-140 &#x200B;](assets/chlimage_1-140.png)
 
    >[!NOTE]
    >
-   >De updates worden bewaard in de bewaarplaats als [ configuratiedossiers ](#osgi-configuration-with-configuration-files). Als u deze bestanden achteraf wilt zoeken en wilt opnemen in een inhoudspakket voor gebruik op een andere instantie, noteert u bijvoorbeeld de blijvende identiteit ( `PID` ).
+   >De updates worden bewaard in de bewaarplaats als [&#x200B; configuratiedossiers &#x200B;](#osgi-configuration-with-configuration-files). Als u deze bestanden achteraf wilt zoeken en wilt opnemen in een inhoudspakket voor gebruik op een andere instantie, noteert u bijvoorbeeld de blijvende identiteit ( `PID` ).
 
 1. Klik **sparen**.
 
@@ -111,7 +111,7 @@ Om een configuratie met de Webconsole bij te werken:
 
    >[!NOTE]
    >
-   >U kunt van de verwante [ configuratiedossiers ](#osgi-configuration-with-configuration-files) nu de plaats bepalen. Bijvoorbeeld om op te nemen in een inhoudspakket voor gebruik op een andere instantie.
+   >U kunt van de verwante [&#x200B; configuratiedossiers &#x200B;](#osgi-configuration-with-configuration-files) nu de plaats bepalen. Bijvoorbeeld om op te nemen in een inhoudspakket voor gebruik op een andere instantie.
 
 ## OSGi-configuratie met configuratiebestanden {#osgi-configuration-with-configuration-files}
 
@@ -124,14 +124,14 @@ Deze bestanden kunnen worden opgenomen in inhoudspakketten en opnieuw worden geb
 >[!NOTE]
 >
 >De indeling van de configuratiebestanden is specifiek. Raadpleeg de documentatie bij Sling Apache voor:
->* de volledige details van [ het Model van de Levering Apache Sling en Apache SlingStart ](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->* leerprogramma&#39;s en voorbeelden van [ het Krijgen Middelen en Eigenschappen in het Verdelen ](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
+>* de volledige details van [&#x200B; het Model van de Levering Apache Sling en Apache SlingStart &#x200B;](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* leerprogramma&#39;s en voorbeelden van [&#x200B; het Krijgen Middelen en Eigenschappen in het Verdelen &#x200B;](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Daarom wordt aangeraden het configuratiebestand te maken en te onderhouden door werkelijke wijzigingen aan te brengen in de webconsole.
 
 De console van het Web toont geen aanwijzing van waar in de bewaarplaats dat uw veranderingen zijn bewaard, maar zij kunnen gemakkelijk worden gevestigd:
 
-1. Creeer het configuratiedossier door [ een aanvankelijke verandering in de Webconsole ](#osgi-configuration-with-the-web-console) te maken.
+1. Creeer het configuratiedossier door [&#x200B; een aanvankelijke verandering in de Webconsole &#x200B;](#osgi-configuration-with-the-web-console) te maken.
 1. Open CRXDE Lite.
 1. In het **menu van Hulpmiddelen**, uitgezochte **Vraag...**.
 1. Om naar PID van de configuratie te zoeken die u hebt bijgewerkt, voorlegt een vraag van **Type** `SQL`.
@@ -174,7 +174,7 @@ Aangezien de zelfde configuratieparameter op verscheidene plaatsen is, is het sy
 
 >[!NOTE]
 >
->Lees ook [ hoe te om een op bewaarplaats-gebaseerde configuratie voor een specifieke instantie slechts ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=nl-NL) te bepalen.
+>Lees ook [&#x200B; hoe te om een op bewaarplaats-gebaseerde configuratie voor een specifieke instantie slechts &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=nl-NL) te bepalen.
 
 ### Een nieuwe configuratie toevoegen aan de opslagplaats {#adding-a-new-configuration-to-the-repository}
 
@@ -188,9 +188,9 @@ Om een configuratie aan de bewaarplaats toe te voegen, moet u het volgende weten
 
    Bijvoorbeeld, creeer een knoop `com.day.cq.wcm.core.impl.VersionManagerImpl.` om **AEM de Manager van de Versie van WCM** te vormen.
 
-   ![ chlimage_1-141 ](assets/chlimage_1-141.png)
+   ![&#x200B; chlimage_1-141 &#x200B;](assets/chlimage_1-141.png)
 
-1. Is een specifieke [ looppaswijze ](/help/sites-deploying/configure-runmodes.md) vereist? Maak de map:
+1. Is een specifieke [&#x200B; looppaswijze &#x200B;](/help/sites-deploying/configure-runmodes.md) vereist? Maak de map:
 
    * `config` - voor alle runmodi
    * `config.author` - voor de auteursomgeving
@@ -205,7 +205,7 @@ Om een configuratie aan de bewaarplaats toe te voegen, moet u het volgende weten
    Maak bijvoorbeeld een eigenschap
    `versionmanager.createVersionOnActivation` om **te vormen creeer Versie op Activering**.
 
-   ![ chlimage_1-142 ](assets/chlimage_1-142.png)
+   ![&#x200B; chlimage_1-142 &#x200B;](assets/chlimage_1-142.png)
 
 1. Bestaat er een configuratie in `/libs`? Om van alle configuraties in uw instantie een lijst te maken, gebruik het **hulpmiddel van de Vraag** in CRXDE Lite om de volgende SQL vraag voor te leggen:
 

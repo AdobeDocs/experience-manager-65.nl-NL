@@ -30,11 +30,11 @@ Als u momenteel Forms Workflow gebruikt, kan de AEM Forms-database mogelijk een 
 
 Met de publicatieservices Process Reporting worden alle AEM Forms-gegevens gepubliceerd die momenteel in de database beschikbaar zijn. Het impliceert dat als het gegevensbestand erfenisgegevens bevat waarover u geen rapporten en vragen wilt in werking stellen, al die gegevens ook aan de bewaarplaats zouden worden gepubliceerd hoewel het niet voor rapportering wordt vereist. U wordt aangeraden deze gegevens te wissen voordat u de services uitvoert om de gegevens naar de Process Reporting-opslagplaats te publiceren. Dit verbetert de prestaties van zowel de uitgeversdienst als de dienst die de gegevens voor rapportering vraagt.
 
-Voor details bij het zuiveren van het procesgegevens van AEM Forms, zie [ het Schrappen Gegevens van het Proces ](/help/forms/using/admin-help/purging-process-data.md).
+Voor details bij het zuiveren van het procesgegevens van AEM Forms, zie [&#x200B; het Schrappen Gegevens van het Proces &#x200B;](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Voor de uiteinden en de trucs van het Nut van de Zuivering, zie het artikel van Adobe Developer Connection op [ het Schrappen processen en banen ](/help/forms/using/admin-help/purging-process-data.md).
+>Voor de uiteinden en de trucs van het Nut van de Zuivering, zie het artikel van Adobe Developer Connection op [&#x200B; het Schrappen processen en banen &#x200B;](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Services voor Process Reporting configureren {#configuring-process-reporting-services}
 
@@ -97,7 +97,7 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 1. Klik **sparen** en klik dan **activeren Veranderingen**.
 1. Start de AEM Forms Server-instantie opnieuw.
 
-![ verwerkdatapublisherservice ](assets/processdatapublisherservice.png)
+![&#x200B; verwerkdatapublisherservice &#x200B;](assets/processdatapublisherservice.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ U kunt de console van het Beleid gebruiken om de wortel (**gebrek** te vormen: `
 1. Login aan **Console van het Beleid** met beheerdergeloofsbrieven. De standaard-URL van de beheerconsole is `https://'[server]:[port]'/adminui`
 1. Navigeer aan **Huis** > **de Diensten** > **Toepassingen en de Diensten** > **het Beheer van de Dienst** en open de **dienst ProcessDataStorageProvider**.
 
-   ![ proces-gegeven-opslag-dienst ](assets/process-data-storage-service.png)
+   ![&#x200B; proces-gegeven-opslag-dienst &#x200B;](assets/process-data-storage-service.png)
 
    **RootFolder**
 
@@ -175,7 +175,7 @@ De service ProcessDataPublisher importeert procesgegevens uit de AEM Forms-datab
 
 1. Navigeer aan **Huis** > **de Diensten** > **Toepassingen en de Diensten** > **het Beheer van de Dienst** en open de **ProcessDataPublisher** dienst.
 
-![ verwerkdatapublisherservice-1 ](assets/processdatapublisherservice-1.png)
+![&#x200B; verwerkdatapublisherservice-1 &#x200B;](assets/processdatapublisherservice-1.png)
 
 **Gegevens van Publish**
 
@@ -239,13 +239,13 @@ Om aan login aan de module van de Rapportering van het Proces, specificeer uw ge
 >
 >`PERM_PROCESS_REPORTING_USER`
 
-![ Login aan Proces Meldend ](assets/capture1_new.png)
+![&#x200B; Login aan Proces Meldend &#x200B;](assets/capture1_new.png)
 
 Wanneer u zich aanmeldt bij Process Reporting, wordt het scherm **[!UICONTROL Home]** weergegeven.
 
 ### Process Reporting Home-scherm {#process-reporting-home-screen}
 
-![ proces-rapporterend-huis-scherm ](assets/process-reporting-home-screen.png)
+![&#x200B; proces-rapporterend-huis-scherm &#x200B;](assets/process-reporting-home-screen.png)
 
 **Proces Meldend boommening:** de boommening op de linkerkant van het scherm van het Huis bevat de punten voor het Proces Meldend modules.
 
@@ -253,15 +253,15 @@ De boomstructuurweergave bestaat uit de volgende items op hoofdniveau:
 
 **Rapporten:** Dit punt bevat de uit-van-de-doos rapporten die met het Melden van het Proces verschepen.
 
-Voor details op de vooraf bepaalde rapporten, zie [ Vooraf bepaalde Rapporten in Proces Meldend ](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
+Voor details op de vooraf bepaalde rapporten, zie [&#x200B; Vooraf bepaalde Rapporten in Proces Meldend &#x200B;](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
 
 **Adhoc Vragen:** Dit punt bevat opties om op filter-gebaseerd onderzoek naar processen en taken uit te voeren.
 
-Voor details op ad-hoc vragen, zie [ Ad-hoc Vragen in Proces Meldend ](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
+Voor details op ad-hoc vragen, zie [&#x200B; Ad-hoc Vragen in Proces Meldend &#x200B;](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
 
 **Douane:** de knoopvertoningen van de Douane douanerapporten die u creeert.
 
-Voor de procedure om douanerapporten tot stand te brengen en te tonen, zie [ de Rapporten van de Douane in Proces Meldend ](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Voor de procedure om douanerapporten tot stand te brengen en te tonen, zie [&#x200B; de Rapporten van de Douane in Proces Meldend &#x200B;](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
 **Proces Meldend titelbar:** de bar van de Titel van het Rapport van het Proces bevat sommige generische opties die u kunt gebruiken wanneer het werken in het gebruikersinterface.
 
@@ -273,7 +273,7 @@ Klik op de titel om terug te keren naar het scherm Home.
 
 De laatste tijd van de Update toont de laatste datum en de tijd tot waarvan de gegevensupdates aan de bewaarplaats van de Rapportering van het Proces werden geduwd.
 
-Voor details op de gegevens het publiceren dienst en hoe te om deze dienst te plannen, zie [ het procesgegevens van het Programma het publiceren ](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in het artikel dat met het Melden van het Proces begonnen wordt.
+Voor details op de gegevens het publiceren dienst en hoe te om deze dienst te plannen, zie [&#x200B; het procesgegevens van het Programma het publiceren &#x200B;](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in het artikel dat met het Melden van het Proces begonnen wordt.
 
 **Proces Meldend gebruiker:** de het programma geopende vertoningen van de gebruikersnaam rechts van de Laatste tijd van de Update.
 

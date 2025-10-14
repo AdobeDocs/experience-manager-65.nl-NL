@@ -26,21 +26,21 @@ ht-degree: 0%
 >
 >Het wordt afgeraden de werkelijke componenten die in de fragmenteditor worden gebruikt, uit te breiden of te wijzigen, omdat deze nog steeds kunnen worden gewijzigd.
 
-Zie het [ Beheer API van het Fragment van de Inhoud - cliënt-kant ](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
+Zie het [&#x200B; Beheer API van het Fragment van de Inhoud - cliënt-kant &#x200B;](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
 ## Componenten voor paginaontwerp {#components-for-page-authoring}
 
 >[!CAUTION]
 >
->De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
+>De [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL) wordt nu geadviseerd. Zie [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
 >
 >Deze sectie detailleert de originele die component voor gebruik met inhoudsfragmenten (**wordt geleverd het Fragment van de Inhoud** in de **Algemene** groep).
 
 >[!NOTE]
 >
->Zie ook [ de Fragmenten die van de Inhoud Componenten vormen voor het Teruggeven ](/help/sites-developing/content-fragments-config-components-rendering.md) voor verdere informatie.
+>Zie ook [&#x200B; de Fragmenten die van de Inhoud Componenten vormen voor het Teruggeven &#x200B;](/help/sites-developing/content-fragments-config-components-rendering.md) voor verdere informatie.
 
-Adobe Experience Manager (AEM) inhoudsfragmenten worden [ gecreeerd en geleid als pagina-onafhankelijke activa ](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [ u kunt deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van uw inhoudspagina&#39;s ](/help/sites-authoring/content-fragments.md). U kunt een bestaand element van het inhoudsfragment ook gebruiken door het van activa browser aan pagina [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) te slepen (zoals voor andere op activa-gebaseerde componenten, zoals het Beeld van de stichtingscomponent).  De uit-van-de-doos component van het inhoudsfragment toont slechts één [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het referenced inhoudsfragment. Gebruikend de componentendialoog kunt u het [ element, de variatie en de waaier van fragmentparagrafen ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) bepalen die u op de pagina wilt tonen.
+Adobe Experience Manager (AEM) inhoudsfragmenten worden [&#x200B; gecreeerd en geleid als pagina-onafhankelijke activa &#x200B;](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [&#x200B; u kunt deze fragmenten, en hun variaties dan gebruiken, wanneer het ontwerpen van uw inhoudspagina&#39;s &#x200B;](/help/sites-authoring/content-fragments.md). U kunt een bestaand element van het inhoudsfragment ook gebruiken door het van activa browser aan pagina [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) te slepen (zoals voor andere op activa-gebaseerde componenten, zoals het Beeld van de stichtingscomponent).  De uit-van-de-doos component van het inhoudsfragment toont slechts één [&#x200B; element &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het referenced inhoudsfragment. Gebruikend de componentendialoog kunt u het [&#x200B; element, de variatie en de waaier van fragmentparagrafen &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) bepalen die u op de pagina wilt tonen.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Deze bibliotheek voegt eigenschappen, specifiek voor inhoudsfragmenten, aan de r
 
 ### Tussen inhoud {#in-between-content}
 
-De **Fragmen van de Inhoud** geen component laat u extra componenten binnen-tussen de verschillende paragrafen van het getoonde [ element ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dalen. In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
+De **Fragmen van de Inhoud** geen component laat u extra componenten binnen-tussen de verschillende paragrafen van het getoonde [&#x200B; element &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dalen. In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
 
 Vanuit technisch gezichtspunt, leeft elke paragraaf van het getoonde element in zijn eigen parsys, en elke component die u tussen de paragrafen toevoegt wordt (onder de kap) opgenomen in parsys.
 
@@ -106,13 +106,13 @@ Als u de uit-van-de-doos component van het inhoudsfragment als blauwdruk voor ui
 
    * De listeners `afterinsert`/ `afteredit`/ `afterdelete` worden gebruikt om JS-gebeurtenissen te activeren. Deze gebeurtenissen worden verwerkt in de `cq.authoring.editor.plugin.cfm` clientbibliotheek om de bijbehorende inhoud in het zijpaneel weer te geven.
    * De `cq:dropTargets` zijn geconfigureerd voor het slepen van inhoudsfragmentelementen.
-   * `cq:inplaceEditing` is geconfigureerd voor ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragment op zijn plaats redacteur wordt bepaald in de `cq.authoring.editor.plugin.cfm` cliëntbibliotheek en staat een snelle verbinding toe om het huidige [ element/de variatie ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in de [ fragmentredacteur ](/help/assets/content-fragments/content-fragments-variations.md) te openen.
+   * `cq:inplaceEditing` is geconfigureerd voor ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragment op zijn plaats redacteur wordt bepaald in de `cq.authoring.editor.plugin.cfm` cliëntbibliotheek en staat een snelle verbinding toe om het huidige [&#x200B; element/de variatie &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in de [&#x200B; fragmentredacteur &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) te openen.
 
 ### Herschrijven van element vóór renderen {#asset-rewriting-before-rendering}
 
 Bij Inhoudsfragmentbeheer wordt een intern renderingsproces gebruikt om de uiteindelijke HTML-uitvoer voor een pagina te genereren. Dit wordt intern gebruikt door de component van het Fragment van de Inhoud, maar ook door het achtergrondproces dat referenced fragmenten op het van verwijzingen voorzien pagina&#39;s bijwerkt.
 
-Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke configuratie vindt u in `/libs/dam/config/rewriter/cfm` en kan, indien nodig, worden aangepast. Zie [ Apache Sling Rewriter ](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) voor meer informatie.
+Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke configuratie vindt u in `/libs/dam/config/rewriter/cfm` en kan, indien nodig, worden aangepast. Zie [&#x200B; Apache Sling Rewriter &#x200B;](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) voor meer informatie.
 
 >[!CAUTION]
 >
@@ -131,4 +131,4 @@ De uit-van-de-doos configuratie gebruikt de volgende transformatoren:
 * `transformer-cfm-parfilter` - filtert ongewenste alinea&#39;s uit als er een alineabereik is opgegeven (zoals u kunt doen met de component Content Fragment)
 * `transformer-cfm-assetprocessor` - wordt intern gebruikt voor het ophalen van een lijst met elementen die in het fragment zijn ingesloten
 
-Het renderingsproces wordt blootgesteld door [`com.adobe.cq.dam.cfm.content.FragmentRenderService` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan (bijvoorbeeld) door douanecomponenten, indien nodig worden gebruikt.
+Het renderingsproces wordt blootgesteld door [`com.adobe.cq.dam.cfm.content.FragmentRenderService` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) en kan (bijvoorbeeld) door douanecomponenten, indien nodig worden gebruikt.

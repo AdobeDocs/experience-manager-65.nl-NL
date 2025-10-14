@@ -36,7 +36,7 @@ HTML5 vormen kunnen volgende topologieën gebruiken om met de AEM servers te ver
 * Een topologie waar AEM Server of HTML5 vormen gegevens via POST naar de server verzenden.
 * Een topologie waar de volmachtsserver de gegevens van de POST naar de server verzendt.
 
-![ HTML5 de topologieën van de de dienstvolmacht van vormen ](assets/topology.png)
+![&#x200B; HTML5 de topologieën van de de dienstvolmacht van vormen &#x200B;](assets/topology.png)
 
 HTML5 de volmachtstopologieën van de vormendienst
 

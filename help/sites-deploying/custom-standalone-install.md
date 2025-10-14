@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
-In deze sectie worden de beschikbare opties beschreven voor het installeren van een zelfstandige AEM-instantie. U kunt ook [ Elementen van de Opslag ](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na nieuw het installeren van AEM 6.
+In deze sectie worden de beschikbare opties beschreven voor het installeren van een zelfstandige AEM-instantie. U kunt ook [&#x200B; Elementen van de Opslag &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md) voor meer informatie lezen bij het kiezen van het type van de achterste opslagplaats na nieuw het installeren van AEM 6.
 
 ## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
 
@@ -118,15 +118,15 @@ AEM installeren en starten als Windows-service:
 
    * Klik in het configuratiescherm Services op cq5 en klik op Start.
 
-   ![ chlimage_1-11 ](assets/chlimage_1-11.png)
+   ![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11.png)
 
    * Typ in de opdrachtregel het begin cq5 van het net.
 
-   ![ chlimage_1-12 ](assets/chlimage_1-12.png)
+   ![&#x200B; chlimage_1-12 &#x200B;](assets/chlimage_1-12.png)
 
 1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` , om AEM te gaan gebruiken.
 
-   ![ chlimage_1-13 ](assets/chlimage_1-13.png)
+   ![&#x200B; chlimage_1-13 &#x200B;](assets/chlimage_1-13.png)
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer het installeren van AEM op een Elastic Compute Cloud (EC2) instantie van Amazon, als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [ te volgen die Instanties van de Manager van AEM ](#installinginstancesofaemmanager) installeert; nochtans, wordt de Publish instantie Auteur.
+Wanneer het installeren van AEM op een Elastic Compute Cloud (EC2) instantie van Amazon, als u zowel auteur installeert als op de instantie EC2 publiceert, wordt de instantie van de Auteur geïnstalleerd correct door de procedure op [&#x200B; te volgen die Instanties van de Manager van AEM &#x200B;](#installinginstancesofaemmanager) installeert; nochtans, wordt de Publish instantie Auteur.
 
 Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
 
@@ -328,15 +328,15 @@ De webconsole.
 
 Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
 
-* Raadpleeg [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
-* Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [ Veiligheid en het Beleid van de Gebruiker ](/help/sites-administering/security.md) voor verdere details.
+* Raadpleeg [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md) voor taken die worden vereist om ervoor te zorgen dat uw systeem veilig blijft.
+* Controleer de lijst met standaardgebruikers en -groepen die bij AEM WCM zijn geïnstalleerd. Controle of u actie op een andere rekeningen wilt ondernemen - zie [&#x200B; Veiligheid en het Beleid van de Gebruiker &#x200B;](/help/sites-administering/security.md) voor verdere details.
 
 ## Toegang tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
 Nadat u AEM WCM hebt gestart, hebt u ook toegang tot:
 
-* [ CRXDE Lite ](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
-* [ Console van het Web ](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
+* [&#x200B; CRXDE Lite &#x200B;](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
+* [&#x200B; Console van het Web &#x200B;](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
 
 ### CRXDE Lite openen {#accessing-crxde-lite}
 
@@ -349,7 +349,7 @@ Om CRXDE Lite te openen kunt u **CRXDE Lite** van het welkome scherm selecteren 
 Bijvoorbeeld:
 `https://localhost:4502/crx/de/index.jsp`
 
-![ installcq_crxdelite ](assets/installcq_crxdelite.png)
+![&#x200B; installcq_crxdelite &#x200B;](assets/installcq_crxdelite.png)
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
@@ -364,7 +364,7 @@ Bijvoorbeeld:
 of voor de pagina Bundles
 `https://localhost:4502/system/console/bundles`
 
-![ chlimage_1-14 ](assets/chlimage_1-14.png)
+![&#x200B; chlimage_1-14 &#x200B;](assets/chlimage_1-14.png)
 
 Zie {Configuratie 0} OSGi met de Console van het Web [&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
 

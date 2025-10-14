@@ -21,7 +21,7 @@ ht-degree: 0%
 
 U kunt het lettertype wijzigen dat in de AEM Forms-werkruimte wordt weergegeven. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
 
-Volg de [ Algemene stappen voor de werkruimteaanpassing van AEM Forms ](../../forms/using/generic-steps-html-workspace-customization.md) en afhankelijk van uw vereisten, volg de stappen voor het aanpassen van CSS, HTML, of allebei.
+Volg de [&#x200B; Algemene stappen voor de werkruimteaanpassing van AEM Forms &#x200B;](../../forms/using/generic-steps-html-workspace-customization.md) en afhankelijk van uw vereisten, volg de stappen voor het aanpassen van CSS, HTML, of allebei.
 
 1. Wijzig of voeg de lettertypefamilie toe aan een bestaande stijl.
 1. Wijzig of voeg de lettertypefamilie inline voor het HTML-element toe.
@@ -76,10 +76,10 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
 
 1. Start de werkruimte opnieuw en wis de browsercache zodat de wijzigingen zichtbaar zijn.
 
-![ change_font_before ](assets/change_font_before.png)
+![&#x200B; change_font_before &#x200B;](assets/change_font_before.png)
 
 Bovenste navigatiebalk voor aanpassing van lettertypen
 
-![ change_font_after ](assets/change_font_after.png)
+![&#x200B; change_font_after &#x200B;](assets/change_font_after.png)
 
 Bovenste navigatiebalk na aanpassing van lettertype van eerste tab

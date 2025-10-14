@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Aan de slag met AEM Headless {#getting-started}
 
-In dit deel van de [ AEM Zwaardeloze Reis van de Ontwikkelaar, ](overview.md) leert over wat wordt vereist om uw eigen project te krijgen begonnen met AEM Zwaartepunt.
+In dit deel van de [&#x200B; AEM Zwaardeloze Reis van de Ontwikkelaar, &#x200B;](overview.md) leert over wat wordt vereist om uw eigen project te krijgen begonnen met AEM Zwaartepunt.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze reis, [ Leer over CMS Hoofdloze Ontwikkeling ](learn-about.md) u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
+In het vorige document van de AEM hoofdloze reis, [&#x200B; Leer over CMS Hoofdloze Ontwikkeling &#x200B;](learn-about.md) u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
 
 * Begrijp de basisconcepten en de terminologie van de inhoud zonder kop levering
 * Begrijpen waarom en wanneer een kop zonder kop nodig is
@@ -41,7 +41,7 @@ Voordat u een project zonder kop kunt definiëren binnen AEM, is het belangrijk 
 
 ### Instantie van auteur {#author}
 
-Bij zijn eenvoudigst, bestaat AEM uit een auteursinstantie en a [ publiceer instantie ](#publish) die samenwerken om, uw inhoud tot stand te brengen te beheren en te publiceren.
+Bij zijn eenvoudigst, bestaat AEM uit een auteursinstantie en a [&#x200B; publiceer instantie &#x200B;](#publish) die samenwerken om, uw inhoud tot stand te brengen te beheren en te publiceren.
 
 Inhoud begint op de instantie van de auteur. Op deze manier maken auteurs van inhoud hun inhoud. De auteursomgeving biedt diverse hulpmiddelen voor auteurs aan om hun inhoud tot stand te brengen, te organiseren en opnieuw te gebruiken.
 
@@ -61,7 +61,7 @@ Op het eenvoudigste niveau moeten de volgende stappen worden gezet om digitale e
 1. Wanneer deze inhoud gereed is, wordt deze gerepliceerd naar de publicatie-instantie.
 1. API&#39;s kunnen vervolgens worden aangeroepen om deze inhoud op te halen.
 
-AEM Headless bouwt van deze technische stichting door krachtige hulpmiddelen aan te bieden om hoofdloze inhoud te beheren die [ in de volgende sectie wordt beschreven.](#aem-headless-basics)
+AEM Headless bouwt van deze technische stichting door krachtige hulpmiddelen aan te bieden om hoofdloze inhoud te beheren die [&#x200B; in de volgende sectie wordt beschreven.](#aem-headless-basics)
 
 ## Grondbeginselen AEM {#aem-headless-basics}
 
@@ -84,7 +84,7 @@ AEM biedt twee robuuste API&#39;s om uw inhoud zonder problemen aan te passen.
 * Met de GraphQL API kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten.
 * Met de Assets REST API kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
-U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of, zie de [ extra middelen ](#additional-resources) sectie hieronder voor extra documentatie.
+U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of, zie de [&#x200B; extra middelen &#x200B;](#additional-resources) sectie hieronder voor extra documentatie.
 
 ## Niveaus voor toploze integratie {#integration-levels}
 
@@ -144,7 +144,7 @@ Voor elk succesvol project is het belangrijk niet alleen de eisen van het projec
 
 Het is belangrijk dat er een duidelijk afgebakende draagwijdte voor het project is. Het bereik bevat acceptatiecriteria en u kunt een definitie van &#39;gedaan&#39; vaststellen.
 
-De eerste vraag die je moet stellen is: &quot;Wat probeer ik te bereiken met AEM Headless?&quot; Het antwoord moet in het algemeen zijn dat u een ervaringstoepassing hebt of in de toekomst zult hebben die u met uw eigen ontwikkelingshulpmiddelen niet met AEM hebt gebouwd. Deze ervaringstoepassing kan een mobiele app, een website of een andere eindgebruiker zijn die een ervaringstoepassing moet gebruiken. Het doel om AEM Headless te gebruiken is uw ervaringstoepassing van inhoud te voorzien die wordt gecreeerd, opgeslagen, en beheerd AEM met geavanceerde APIs die AEM Headless zouden roepen om inhoud of zelfs volledig CRUD inhoud rechtstreeks van uw ervaringstoepassing te halen. Als dit niet is wat u wilt doen, wilt u waarschijnlijk [ terug naar de AEM documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) gaan en de sectie vinden die beter past wat u wilt verwezenlijken.
+De eerste vraag die je moet stellen is: &quot;Wat probeer ik te bereiken met AEM Headless?&quot; Het antwoord moet in het algemeen zijn dat u een ervaringstoepassing hebt of in de toekomst zult hebben die u met uw eigen ontwikkelingshulpmiddelen niet met AEM hebt gebouwd. Deze ervaringstoepassing kan een mobiele app, een website of een andere eindgebruiker zijn die een ervaringstoepassing moet gebruiken. Het doel om AEM Headless te gebruiken is uw ervaringstoepassing van inhoud te voorzien die wordt gecreeerd, opgeslagen, en beheerd AEM met geavanceerde APIs die AEM Headless zouden roepen om inhoud of zelfs volledig CRUD inhoud rechtstreeks van uw ervaringstoepassing te halen. Als dit niet is wat u wilt doen, wilt u waarschijnlijk [&#x200B; terug naar de AEM documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) gaan en de sectie vinden die beter past wat u wilt verwezenlijken.
 
 ### Rollen en verantwoordelijkheden {#roles-responsibilities}
 
@@ -161,7 +161,7 @@ De beheerder is verantwoordelijk voor de basisopstelling en configuratie van uw 
 
 Zodra de gebruikers door de beheerder worden gevormd, krijgen zij de toestemmingen om tot alle AEM middelen toegang te hebben om hun werk als contribuanten te verwezenlijken om de ervaringstoepassing te leveren die AEM Headless gebruikt.
 
-De beheerder zou de gebruiker moeten zijn die opstelling AEM en het runtime milieu voorbereidt om [ inhoudsauteurs ](#content-author) toe te laten om inhoud tot stand te brengen en bij te werken en [ ontwikkelaars ](#developer) om APIs te gebruiken die inhoud voor hun ervaringstoepassingen halen of wijzigen.
+De beheerder zou de gebruiker moeten zijn die opstelling AEM en het runtime milieu voorbereidt om [&#x200B; inhoudsauteurs &#x200B;](#content-author) toe te laten om inhoud tot stand te brengen en bij te werken en [&#x200B; ontwikkelaars &#x200B;](#developer) om APIs te gebruiken die inhoud voor hun ervaringstoepassingen halen of wijzigen.
 
 #### Inhoudsauteur {#content-author}
 
@@ -180,18 +180,18 @@ Maak een plan voor wat u nodig hebt voor het vertalen van inhoud.
 
 Wis over uw workflow voor het bijwerken van inhoud. Wat is het goedkeuringsproces dat het systeem moet ondersteunen? Kunnen AEM workflows worden gebruikt om dit proces te automatiseren?
 
-Merk op dat uw [ inhoudshiërarchie ](#content-hierarchy) kan worden gebruikt om vertaling gemakkelijker te maken.
+Merk op dat uw [&#x200B; inhoudshiërarchie &#x200B;](#content-hierarchy) kan worden gebruikt om vertaling gemakkelijker te maken.
 
-Zie de [ extra middelen ](#additional-resources) sectie voor extra documentatie over AEM werkschema&#39;s en vertaalhulpmiddelen met inbegrip van verbindingen aan de AEM Dagloze Vertaal.
+Zie de [&#x200B; extra middelen &#x200B;](#additional-resources) sectie voor extra documentatie over AEM werkschema&#39;s en vertaalhulpmiddelen met inbegrip van verbindingen aan de AEM Dagloze Vertaal.
 
 ##### Gebruikmaken van de inhoudshiërarchie {#content-hierarchy}
 
 Maphiërarchie kan twee belangrijke problemen met betrekking tot inhoudsbeheer aanpakken:
 
-* [ Vertaling ](#translation) - AEM beheert vertaling van inhoud door exemplaren van inhoud in scènespecifieke omslagen te handhaven.
+* [&#x200B; Vertaling &#x200B;](#translation) - AEM beheert vertaling van inhoud door exemplaren van inhoud in scènespecifieke omslagen te handhaven.
 * Organisatie - Mappen worden gebruikt om een inhoudshiërarchie te bepalen die wordt vereist om vertaalbehoeften te steunen en logisch inhoudsfragmenten te beheren.
 
-AEM maakt een flexibele inhoudsstructuur mogelijk en een hiërarchie kan willekeurig groot zijn. Nochtans is het belangrijk om zich te realiseren dat om het even welke veranderingen in omslagstructuur onbedoelde gevolgen voor bestaande vragen kan hebben die [ op de inhoudspad baseren.](#developer) Daarom kan een duidelijk gedefinieerde hiërarchie die vooraf is ingesteld, nuttig zijn voor de auteurs van de inhoud.
+AEM maakt een flexibele inhoudsstructuur mogelijk en een hiërarchie kan willekeurig groot zijn. Nochtans is het belangrijk om zich te realiseren dat om het even welke veranderingen in omslagstructuur onbedoelde gevolgen voor bestaande vragen kan hebben die [&#x200B; op de inhoudspad baseren.](#developer) Daarom kan een duidelijk gedefinieerde hiërarchie die vooraf is ingesteld, nuttig zijn voor de auteurs van de inhoud.
 
 Mappen kunnen ook worden beperkt tot bepaalde typen inhoud (op basis van modellen van inhoudsfragmenten). Het wordt aanbevolen altijd expliciet op te geven welke modellen zijn toegestaan voor alle mappen in de hiërarchie. Toegestane inhoud opgeven voor een bepaalde map:
 
@@ -207,17 +207,17 @@ Namen van inhoudsfragmenten moeten beschrijvend zijn voor inhoudsauteurs. AEM be
 * Ongeldige naam: `cta_btn_1`
 * Goede naam: `Call To Action Button`
 
-Zie de [ extra middelen ](#additional-resources) sectie voor extra documentatie over AEM pagina noemende overeenkomsten.
+Zie de [&#x200B; extra middelen &#x200B;](#additional-resources) sectie voor extra documentatie over AEM pagina noemende overeenkomsten.
 
 ##### Inhoud niet te veel nesten {#content-nesting}
 
-[ de Fragmenten van de Inhoud ](#content-fragments) worden gebruikt in AEM om koploze inhoud tot stand te brengen. AEM ondersteunt tot tien niveaus voor het nesten van inhoud voor Content Fragments. Het is echter belangrijk om in gedachten te houden dat AEM elke verwijzing die in het bovenliggende inhoudsfragment is gedefinieerd, moet oplossen en vervolgens moet controleren of er onderliggende verwijzingen voorkomen op alle locaties op hetzelfde niveau. Deze bewerkingen kunnen snel worden uitgevoerd en zorgen voor de prestaties.
+[&#x200B; de Fragmenten van de Inhoud &#x200B;](#content-fragments) worden gebruikt in AEM om koploze inhoud tot stand te brengen. AEM ondersteunt tot tien niveaus voor het nesten van inhoud voor Content Fragments. Het is echter belangrijk om in gedachten te houden dat AEM elke verwijzing die in het bovenliggende inhoudsfragment is gedefinieerd, moet oplossen en vervolgens moet controleren of er onderliggende verwijzingen voorkomen op alle locaties op hetzelfde niveau. Deze bewerkingen kunnen snel worden uitgevoerd en zorgen voor de prestaties.
 
 Als algemene regel van-duim, zouden de verwijzingen van het Fragment van de Inhoud niet voorbij vijf niveaus moeten worden genesteld.
 
 #### Content Architect {#content-architect}
 
-Inhoudsarchitecten analyseren de vereisten voor de gegevens die zonder kop moeten worden geleverd en definiëren de structuur voor deze gegevens. Deze structuren worden genoemd [ Modellen van het Fragment van de Inhoud ](#content-fragment-models) in AEM. Modellen van inhoudsfragmenten worden gebruikt als basis voor de inhoudsfragmenten die de auteurs van de inhoud maken.
+Inhoudsarchitecten analyseren de vereisten voor de gegevens die zonder kop moeten worden geleverd en definiëren de structuur voor deze gegevens. Deze structuren worden genoemd [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](#content-fragment-models) in AEM. Modellen van inhoudsfragmenten worden gebruikt als basis voor de inhoudsfragmenten die de auteurs van de inhoud maken.
 
 Een handige methode bij het definiëren van modellen van inhoudsfragmenten is het maken van modellen die zijn toegewezen aan de UX-componenten van de toepassingen die de inhoud gebruiken.
 
@@ -232,12 +232,12 @@ GraphQL fungeert als de &quot;lijm&quot; tussen AEM en de consument van inhoud z
 De ontwikkelaars zouden een paar basisaanbevelingen in mening moeten houden aangezien zij hun vragen plannen:
 
 * De vragen zouden niet op een vaste weg (`ByPath`) moeten vertrouwen om de Fragmenten van de Inhoud terug te winnen.
-   * [ de auteurs van de Inhoud hebben volledige controle over de hiërarchie van het inhoudsfragment ](#content-hierarchy) en konden veranderingen aanbrengen die zulk een vraag zouden breken.
+   * [&#x200B; de auteurs van de Inhoud hebben volledige controle over de hiërarchie van het inhoudsfragment &#x200B;](#content-hierarchy) en konden veranderingen aanbrengen die zulk een vraag zouden breken.
    * De vragen zouden in plaats daarvan voor de modelverwijzingen van het inhoudsfragment met dynamische vraagparameters moeten kiezen om de resultaten te filtreren om de gewenste nuttige lading te produceren.
 * Voor beste vraagprestaties, gebruik altijd voortgeduurde vragen in AEM. Deze worden later op de reis besproken.
 * GraphQL is declaratief na het motto &quot;Vraag precies wat u nodig hebt, en krijg precies dat.&quot; Dit betekent dat u bij het maken van GraphQL-query&#39;s altijd query&#39;s van het type `select *` vermijdt die u in een relationele database kunt maken.
 
-Voor a [ typische hoofdloze implementatie gebruikend AEM, ](#level-1) vereist de ontwikkelaar geen codeerkennis van AEM.
+Voor a [&#x200B; typische hoofdloze implementatie gebruikend AEM, &#x200B;](#level-1) vereist de ontwikkelaar geen codeerkennis van AEM.
 
 ### Prestatievereisten {#performance-requirements}
 
@@ -258,7 +258,7 @@ Om verkeer en verkeerspatronen te begrijpen begin met het verzamelen van wat u v
 
 #### Frequentie bijwerken {#update-frequency}
 
-Vaak hebben verschillende secties van ervaringen verschillende frequenties van inhoudsupdates. Het begrip van dit is belangrijk om CDN en geheim voorgeheugenconfiguraties te kunnen verfijnen. Dit is ook belangrijke input voor de [ Architecten van de Inhoud ](#content-architects) aangezien zij modellen ontwerpen om uw inhoud te vertegenwoordigen. Overweeg:
+Vaak hebben verschillende secties van ervaringen verschillende frequenties van inhoudsupdates. Het begrip van dit is belangrijk om CDN en geheim voorgeheugenconfiguraties te kunnen verfijnen. Dit is ook belangrijke input voor de [&#x200B; Architecten van de Inhoud &#x200B;](#content-architects) aangezien zij modellen ontwerpen om uw inhoud te vertegenwoordigen. Overweeg:
 
 * Moeten bepaalde soorten inhoud na een bepaalde periode verlopen?
 * Zijn er elementen die gebruikersspecifiek zijn en dus niet in de cache kunnen worden opgeslagen?
@@ -272,30 +272,30 @@ Nu u dit deel van de AEM Headless Developer Journey hebt voltooid, moet u:
 * Wees op de hoogte van AEM instorting van het integratieniveau zonder kop.
 * U kunt uw project definiëren in termen van bereik.
 
-U zou uw AEM hoofdloze reis door het document [ Weg aan Uw Eerste Ervaring moeten voortzetten Gebruikend AEM Koploze ](path-to-first-experience.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen denken over het modelleren van uw gegevens in AEM.
+U zou uw AEM hoofdloze reis door het document [&#x200B; Weg aan Uw Eerste Ervaring moeten voortzetten Gebruikend AEM Koploze &#x200B;](path-to-first-experience.md) waar u zult leren hoe te opstelling de noodzakelijke hulpmiddelen en hoe te beginnen denken over het modelleren van uw gegevens in AEM.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [ Weg aan Uw Eerste Ervaring te herzien Gebruikend AEM Zwaartepunt, ](path-to-first-experience.md) het volgende is enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de headless ontwikkelingstraject door het document [&#x200B; Weg aan Uw Eerste Ervaring te herzien Gebruikend AEM Zwaartepunt, &#x200B;](path-to-first-experience.md) het volgende is enkele extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document worden vermeld doen, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [ Kopieerbaar en Hoofdloos in AEM ](/help/sites-developing/headful-headless.md) - een volledige bespreking van de hoofdloze integratieniveaus beschikbaar in AEM
+* [&#x200B; Kopieerbaar en Hoofdloos in AEM &#x200B;](/help/sites-developing/headful-headless.md) - een volledige bespreking van de hoofdloze integratieniveaus beschikbaar in AEM
 
-* Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/sites-developing/headless/introduction.md)
+* Een [&#x200B; Inleiding aan AEM als Zwaartepunt CMS &#x200B;](/help/sites-developing/headless/introduction.md)
 
-* [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
+* [&#x200B; AEM Headless Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
 
-* [ AEM Tutorials zonder kop ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
-* [ Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs ](https://experienceleague.adobe.com/nl?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
-* [ AEM Guides WKND - GraphQL ](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
-* [ Authoring Concepts ](/help/sites-authoring/author.md) - Technische documentatie voor het auteursmilieu van AEM met inbegrip van details op auteur-publiceer opstelling
-* [ het Publiceren Pagina&#39;s ](/help/sites-authoring/publishing-pages.md) - Technische documentatie voor het publiceren van inhoud op AEM
-* [ Naming Conventions ](/help/sites-developing/naming-conventions.md) - Technische documentatie van pagina noemende beperkingen in AEM
-* [ de Manager en Vertaling van de Vertaling van de MultiPlaats ](/help/sites-administering/msm-and-translation.md) - Technische documentatie bij AEM krachtige vertaaleigenschappen
-* [ AEM werkschema&#39;s ](/help/sites-authoring/workflows.md) - Technische documentatie over hoe te om werkschema&#39;s in AEM te automatiseren
-* [ de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) - Technische documentatie voor de Fragmenten van de Inhoud.
-* [ Modellen van het Fragment van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie voor de Modellen van het Fragment van de Inhoud.
-* [ GraphQL Technische Documentatie ](https://graphql.org) - de definitie van GraphQL (externe verbinding)
-* [ GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en tevreden Fragments te leveren
-* [ Assets REST API ](/help/assets/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) te creëren en te wijzigen
-* [ Persisted Queries ](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Technische documentatie op gepresteerde vragen in AEM
-* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; AEM Tutorials zonder kop &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - gebruik deze hands-on leerprogramma&#39;s om te onderzoeken hoe te om de diverse opties te gebruiken om inhoud aan headless eindpunten met AEM te leveren en te kiezen wat voor u juist is.
+* [&#x200B; Beheer van de Inhoud zonder hoofd Gebruikend GraphQL APIs &#x200B;](https://experienceleague.adobe.com/nl?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - volg deze cursus voor een overzicht van GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
+* [&#x200B; AEM Guides WKND - GraphQL &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
+* [&#x200B; Authoring Concepts &#x200B;](/help/sites-authoring/author.md) - Technische documentatie voor het auteursmilieu van AEM met inbegrip van details op auteur-publiceer opstelling
+* [&#x200B; het Publiceren Pagina&#39;s &#x200B;](/help/sites-authoring/publishing-pages.md) - Technische documentatie voor het publiceren van inhoud op AEM
+* [&#x200B; Naming Conventions &#x200B;](/help/sites-developing/naming-conventions.md) - Technische documentatie van pagina noemende beperkingen in AEM
+* [&#x200B; de Manager en Vertaling van de Vertaling van de MultiPlaats &#x200B;](/help/sites-administering/msm-and-translation.md) - Technische documentatie bij AEM krachtige vertaaleigenschappen
+* [&#x200B; AEM werkschema&#39;s &#x200B;](/help/sites-authoring/workflows.md) - Technische documentatie over hoe te om werkschema&#39;s in AEM te automatiseren
+* [&#x200B; de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md) - Technische documentatie voor de Fragmenten van de Inhoud.
+* [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie voor de Modellen van het Fragment van de Inhoud.
+* [&#x200B; GraphQL Technische Documentatie &#x200B;](https://graphql.org) - de definitie van GraphQL (externe verbinding)
+* [&#x200B; GraphQL API &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en tevreden Fragments te leveren
+* [&#x200B; Assets REST API &#x200B;](/help/assets/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) te creëren en te wijzigen
+* [&#x200B; Persisted Queries &#x200B;](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Technische documentatie op gepresteerde vragen in AEM
+* Het [&#x200B; AEM Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

@@ -50,6 +50,6 @@ In dit voorbeeld, bent u re-toelatend Klassieke UI voor de console van Plaatsen.
 
 1. De **Klassieke UI** optie is opnieuw beschikbaar als popover optie in de Admin Console.
 
-   ![ klassieke UI popover optie ](assets/syui-01-2019-02-27-15-16-55.png)
+   ![&#x200B; klassieke UI popover optie &#x200B;](assets/syui-01-2019-02-27-15-16-55.png)
 
 Herhaal deze stappen voor elke console waarvoor u toegang tot de Klassieke versie van UI wenst opnieuw toe te laten.

@@ -100,7 +100,7 @@ Regressietests zijn (indien mogelijk) goede kandidaten voor automatisering om er
 
 De lijst met acceptatietests kan een combinatie van tests uit de bovenstaande categorieën bevatten en wordt geselecteerd om te controleren of het project aan de vereisten van de klant voldoet
 
-Zie [ Aanvaarding en Teken-weg ](/help/sites-developing/acceptance-signoff.md) voor meer details.
+Zie [&#x200B; Aanvaarding en Teken-weg &#x200B;](/help/sites-developing/acceptance-signoff.md) voor meer details.
 
 ## Aan de slag {#getting-started}
 
@@ -109,7 +109,7 @@ Voordat u begint met uw gedetailleerde testcase en testplan, kunt u:
 **bepaal de doelstellingen** - bepaal uw doelstellingen op hoog niveau om als uitgangspunt voor verfijnen te handelen aangezien het testen te werk gaat. U wilt:
 
 * Test de functionaliteit volgens de gedetailleerde specificaties.
-* De Prestaties van de test volgens de [ Metriek van het Doel ](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* De Prestaties van de test volgens de [&#x200B; Metriek van het Doel &#x200B;](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 onder andere.
 
@@ -121,4 +121,4 @@ Deze cijfers geven een indicatie van het huidige verkeer (volume en spread) op d
 
 **bevestig de Metriek van het Doel** - de Metriek worden gebruikt om kwantitatieve metingen voor de kwaliteit van de website te bepalen, aangezien zij de prestatiedoelstellingen vertegenwoordigen die moeten worden bereikt.
 
-Zij zouden aan het begin van het project, samen met de klant moeten worden bepaald. Zie [ Metriek van het Doel ](/help/sites-developing/planning.md) voor meer informatie.
+Zij zouden aan het begin van het project, samen met de klant moeten worden bepaald. Zie [&#x200B; Metriek van het Doel &#x200B;](/help/sites-developing/planning.md) voor meer informatie.

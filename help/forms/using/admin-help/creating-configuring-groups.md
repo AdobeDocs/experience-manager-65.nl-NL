@@ -26,7 +26,7 @@ Door groepen gebruikers te maken, kunt u rollen toewijzen aan de groep in plaats
 
 Er zijn twee verschillende typen groepen beschikbaar. U kunt handmatig een groep maken en er gebruikers en andere groepen aan toevoegen. U kunt ook dynamische groepen maken die automatisch alle gebruikers bevatten die aan een opgegeven set regels voldoen.
 
-De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM formulieren zo configureren dat informatie uit bepaalde domeinen vooraf wordt opgehaald. (Zie [ vormen AEM vormen om domeininformatie ](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information) vooraf in te stellen.)
+De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM formulieren zo configureren dat informatie uit bepaalde domeinen vooraf wordt opgehaald. (Zie [&#x200B; vormen AEM vormen om domeininformatie &#x200B;](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information) vooraf in te stellen.)
 
 ## Handmatig een groep maken {#create-a-group-manually}
 

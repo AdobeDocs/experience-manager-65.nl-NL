@@ -30,19 +30,19 @@ En sleep het naar de juiste positie op een pagina, zoals een positie ten opzicht
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-liking.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Liking` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](essentials-liking.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Liking` component verschijnt.
 
-![ houden-component ](assets/liking-component.png)
+![&#x200B; houden-component &#x200B;](assets/liking-component.png)
 
 ## Liking configureren {#configuring-liking}
 
 Selecteer de geplaatste component `Liking` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
 Geef onder het tabblad **[!UICONTROL Texts & Labels]** de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
-![ vormen-houden ](assets/configure-liking.png)
+![&#x200B; vormen-houden &#x200B;](assets/configure-liking.png)
 
 * **[!UICONTROL Positive Response Label]**
 
@@ -68,4 +68,4 @@ Anonieme koppelingen worden niet ondersteund. Site-bezoekers moeten zich registr
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ Vergelijkende Hoofdzaak ](essentials-liking.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; Vergelijkende Hoofdzaak &#x200B;](essentials-liking.md) pagina voor ontwikkelaars worden gevonden.

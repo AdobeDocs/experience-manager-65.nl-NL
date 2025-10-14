@@ -29,26 +29,26 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-Het opstellen van de [ noodzakelijke eCommerce pakketten ](#packages-needed-for-ecommerce-with-hybris) verstrekt de volledige functionaliteit van het kader van eCommerce, samen met een verwijzingsimplementatie van de functionaliteit van eCommerce zoals voorzien van een hybris implementatie (met inbegrip van een demonstratiecatalogus)
+Het opstellen van de [&#x200B; noodzakelijke eCommerce pakketten &#x200B;](#packages-needed-for-ecommerce-with-hybris) verstrekt de volledige functionaliteit van het kader van eCommerce, samen met een verwijzingsimplementatie van de functionaliteit van eCommerce zoals voorzien van een hybris implementatie (met inbegrip van een demonstratiecatalogus)
 
 Dit is beschikbaar onder de Engelse vertakking ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
 
-* [ Informatie van het Product ](#productinformationwithcolorvariants) (met kleurenvarianten waar aangewezen)
+* [&#x200B; Informatie van het Product &#x200B;](#productinformationwithcolorvariants) (met kleurenvarianten waar aangewezen)
 
 * [Overzichten van winkelwagentinhoud](#shoppingcartcontentoverview)
-* [ Klantaanmelding ](#customersignup) en [ Klantaanmelding ](#customersignin)
+* [&#x200B; Klantaanmelding &#x200B;](#customersignup) en [&#x200B; Klantaanmelding &#x200B;](#customersignin)
 
 * [Toegang tot de hybris-beheerconsole](#accesstothehybrismanagementconsole)
 
 ### Technische vereisten - hybrusserver {#technical-requirements-hybris-server}
 
-De hybris uitbreiding van het Kader van de Integratie van de eHandel is bijgewerkt om Hybris 5 (als gebrek) te steunen, terwijl het handhaven van achterwaartse verenigbaarheid met [ Hybris 4 ](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
+De hybris uitbreiding van het Kader van de Integratie van de eHandel is bijgewerkt om Hybris 5 (als gebrek) te steunen, terwijl het handhaven van achterwaartse verenigbaarheid met [&#x200B; Hybris 4 &#x200B;](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* Ondersteunt versies 18.11 en hoger.
->* U hebt Java™ 7 nodig om [ hybris 5 server in werking te stellen.](https://www.sap.com/products/crm.html)
->* De hybris toe:voegen-op, de [ Versneller van Telco ](https://www.sap.com/products/crm.html), wordt niet gesteund door de AEM uitbreiding.
+>* U hebt Java™ 7 nodig om [&#x200B; hybris 5 server in werking te stellen.](https://www.sap.com/products/crm.html)
+>* De hybris toe:voegen-op, de [&#x200B; Versneller van Telco &#x200B;](https://www.sap.com/products/crm.html), wordt niet gesteund door de AEM uitbreiding.
 >
 
 ### Pakketten die nodig zijn voor e-handel met hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -75,22 +75,22 @@ Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
 Voor het installeren van een volledige configuratie (met de demonstratiecatalogus, Geometrixx Outdoors) zijn de basisstappen:
 
-1. [ installeer AEM ](/help/sites-deploying/deploy.md).
+1. [&#x200B; installeer AEM &#x200B;](/help/sites-deploying/deploy.md).
 1. Het Geometrixx-all-pakket installeren
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installeer de pakketten van de demonstratieinhoud gebruikend de [ Manager van het Pakket ](/help/sites-administering/package-manager.md):
+1. Installeer de pakketten van de demonstratieinhoud gebruikend de [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [ Download en bouwt uw hybrisServer ](#download-and-build-your-hybris-server).
+1. [&#x200B; Download en bouwt uw hybrisServer &#x200B;](#download-and-build-your-hybris-server).
 1. Construeer uw catalogus in uw eCommerce-engine:
 
-   1. [ opstelling de Geometrixx Outdooropslag ](#setup-the-geometrixx-outdoors-store).
+   1. [&#x200B; opstelling de Geometrixx Outdooropslag &#x200B;](#setup-the-geometrixx-outdoors-store).
 
-1. [ Auteur ](/help/sites-authoring/qg-page-authoring.md) om het even welke extra pagina&#39;s die u in AEM nodig hebt.
+1. [&#x200B; Auteur &#x200B;](/help/sites-authoring/qg-page-authoring.md) om het even welke extra pagina&#39;s die u in AEM nodig hebt.
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ Voor het installeren van een volledige configuratie (met de demonstratiecatalogu
 
 >[!NOTE]
 >
->Voor ontwikkelaars, [ API documentatie ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar voor download.
+>Voor ontwikkelaars, [&#x200B; API documentatie &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar voor download.
 
 ### Uw computerserver downloaden en samenstellen {#download-and-build-your-hybris-server}
 
@@ -110,7 +110,7 @@ De stappen in deze procedure downloaden en bouwen de hybrisserver. Het maakt ook
 
 >[!NOTE]
 >
->Om dit te voltooien, hebt u [ Groovy ](https://groovy-lang.org/) geïnstalleerd op uw systeem nodig.
+>Om dit te voltooien, hebt u [&#x200B; Groovy &#x200B;](https://groovy-lang.org/) geïnstalleerd op uw systeem nodig.
 
 1. Download de **hybris Commerce Suite** distributie van de hybris downloadplaats.
 
@@ -172,7 +172,7 @@ De stappen in deze procedure downloaden en bouwen de hybrisserver. Het maakt ook
 
 1. In uw browser, navigeer aan de **hybris beleidsconsole** bij:
 
-   [ http://localhost:9002](http://localhost:9002)
+   [&#x200B; http://localhost:9002](http://localhost:9002)
 
 1. Klik **initialiseren** en bevestig dan de initialiseringsactie (aangezien het bestaande gegevens) schrapt.
 
@@ -195,7 +195,7 @@ Deze procedure uploadt en configureert de demonstratiewinkel - Geometrixx Online
 
 1. In uw browser, navigeer aan de **hybris beheersconsole** bij:
 
-   [ https://localhost:9002/backoffice](https://localhost:9002/backoffice)
+   [&#x200B; https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
    Gebruik de volgende referenties:
    * gebruikersnaam: admin
@@ -239,4 +239,4 @@ Deze procedure uploadt en configureert de demonstratiewinkel - Geometrixx Online
 
 1. U kunt nu de cockpit met producten gebruiken om de geïmporteerde catalogi en producten weer te geven:
 
-   [ http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
+   [&#x200B; http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)

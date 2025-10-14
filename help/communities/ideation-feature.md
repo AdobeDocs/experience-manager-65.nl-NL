@@ -43,17 +43,17 @@ En sleep het naar zijn plaats op een pagina waar het idee zou moeten verschijnen
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/ideation.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Ideation` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/ideation.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Ideation` component verschijnt:
 
-![ ideatie ](assets/ideation.png)
+![&#x200B; ideatie &#x200B;](assets/ideation.png)
 
 ### Een idee configureren {#configuring-an-ideation}
 
 Selecteer de geplaatste component `Ideation` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
-![ plaats-montages ](assets/ideation-settings.png)
+![&#x200B; plaats-montages &#x200B;](assets/ideation-settings.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -123,11 +123,11 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 * **toestaat na**
 
-  Als gecontroleerd, omvat de volgende eigenschap voor ideeënposten, die leden [ toestaat om ](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, omvat de volgende eigenschap voor ideeënposten, die leden [&#x200B; toestaat om &#x200B;](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
 
 * **staat E-mailAbonnementen** toe
 
-  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([ abonnement ](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [ gevormde e-mail ](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([&#x200B; abonnement &#x200B;](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [&#x200B; gevormde e-mail &#x200B;](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Toestaan het Stemmen**
 
@@ -135,13 +135,13 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 * **Badges van de Vertoning**
 
-  Als gecontroleerd, vertoning verdiende en toegewezen [ badges ](/help/communities/implementing-scoring.md) met het idee van een lid. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, vertoning verdiende en toegewezen [&#x200B; badges &#x200B;](/help/communities/implementing-scoring.md) met het idee van een lid. De optie Standaard is uitgeschakeld.
 
 * **krijgt geen Antwoorden op het Lijst van Pagina**
 
 * **sta Aanbevolen Inhoud** toe
 
-  Als gecontroleerd, is het idee identificeerbaar als [ gekenmerkte inhoud ](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, is het idee identificeerbaar als [&#x200B; gekenmerkte inhoud &#x200B;](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
 * **laat Mentie** toe
 * **Maximale Onthulpingen**
@@ -149,7 +149,7 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
 * **ontken Post**
 
@@ -215,28 +215,28 @@ Net als bij alle andere communautaire kenmerken kan een bezoeker van de site all
 
 Na aanmelding kan een lid een idee maken.
 
-![ creeer-nieuw-idee ](assets/create-new-idea.png)
+![&#x200B; creeer-nieuw-idee &#x200B;](assets/create-new-idea.png)
 
 Voordat het idee wordt verzonden, kan het lid een concept opslaan.
 
 Door de knop `Save as Draft` te selecteren, wordt een concept opgeslagen.
 
-![ sparen-idee ](assets/save-idea.png)
+![&#x200B; sparen-idee &#x200B;](assets/save-idea.png)
 
 Als u opgeslagen concepten weergeeft op het tabblad `My Drafts` , selecteert u `Read More` om de bewerkingsmodus opnieuw in te schakelen:
 
-![ geef-idee uit ](assets/edit-idea.png)
+![&#x200B; geef-idee uit &#x200B;](assets/edit-idea.png)
 
 #### Feedback geven {#providing-feedback}
 
 Als het idee eenmaal is gepubliceerd, kunnen andere leden zich aanmelden, het idee ( `Read More` ) openen en het idee op deze manier toevoegen, het aantal stemmen verhogen en opmerkingen maken.
 
-![ terugkoppelt ](assets/feedback-idea.png)
+![&#x200B; terugkoppelt &#x200B;](assets/feedback-idea.png)
 
 ### Aanvullende informatie {#additional-information}
 
 Meer informatie kan op de [&#128279;](/help/communities/ideation.md) pagina van de Hoofdzaak van de Ideatie  voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte onderwerpen en commentaren, zie [&#x200B; het Modereren van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van geposte onderwerpen en commentaren, zie [ Tags Gebruiker Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [&#x200B; Tags Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).

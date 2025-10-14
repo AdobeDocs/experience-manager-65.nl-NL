@@ -123,9 +123,9 @@ De implementatie maakt realtime toegang tot productinformatie mogelijk. Dit kan 
 
 >[!NOTE]
 >
->Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Voor meer informatie, zie [ Opstellend eCommerce ](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Voor meer informatie, zie [&#x200B; Opstellend eCommerce &#x200B;](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Voor informatie over het uitbreiden van eCommerce mogelijkheden, zie [ Ontwikkelend eCommerce ](/help/commerce/cif-classic/developing/ecommerce.md).
+>Voor informatie over het uitbreiden van eCommerce mogelijkheden, zie [&#x200B; Ontwikkelend eCommerce &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Belangrijkste functies {#main-features}
 
@@ -140,7 +140,7 @@ AEM eCommerce biedt:
    * Vouchers
    * en andere
 
-  ![ geometrixx componentenvoorbeeld ](/help/sites-administering/assets/chlimage_1-130.png)
+  ![&#x200B; geometrixx componentenvoorbeeld &#x200B;](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
@@ -153,13 +153,13 @@ AEM eCommerce biedt:
    * een zoekopdracht van derden
    * of een combinatie daarvan.
 
-  ![ onderzoeksvoorbeeld ](/help/sites-administering/assets/chlimage_1-131.png)
+  ![&#x200B; onderzoeksvoorbeeld &#x200B;](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Gebruikt de AEM capaciteit om **uw inhoud op veelvoudige kanalen** voor te stellen, om het volledige browser venster of mobiel apparaat te zijn. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
 
-  ![ mobiel meningsvoorbeeld ](/help/sites-administering/assets/chlimage_1-132.png)
+  ![&#x200B; mobiel meningsvoorbeeld &#x200B;](/help/sites-administering/assets/chlimage_1-132.png)
 
-* De capaciteit om **uw eigen integratieimplementatie te ontwikkelen die op het [ AEM eCommerce kader](#the-framework)** wordt gebaseerd.
+* De capaciteit om **uw eigen integratieimplementatie te ontwikkelen die op het [&#x200B; AEM eCommerce kader](#the-framework)** wordt gebaseerd.
 
   De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
 
@@ -170,11 +170,11 @@ AEM eCommerce biedt:
 
   In het onderstaande voorbeeld ziet u een gummetje omdat de inhoud van het karretje minder dan $75 bedraagt:
 
-  ![ het winkelwagentje met cliëntcontext ](/help/sites-administering/assets/chlimage_1-133.png)
+  ![&#x200B; het winkelwagentje met cliëntcontext &#x200B;](/help/sites-administering/assets/chlimage_1-133.png)
 
   Dit kan worden gewijzigd wanneer de inhoud van het winkelwagentje meer dan $75 bedraagt:
 
-  ![ het winkelen karretje met cliëntcontext na verandering ](/help/sites-administering/assets/chlimage_1-134.png)
+  ![&#x200B; het winkelen karretje met cliëntcontext na verandering &#x200B;](/help/sites-administering/assets/chlimage_1-134.png)
 
 * en andere functies, zoals:
 
@@ -184,7 +184,7 @@ AEM eCommerce biedt:
 
 ## Het kader {#the-framework}
 
-De [ Concepten ](/help/commerce/cif-classic/administering/concepts.md) sectie behandelt meer in detail het kader, maar het volgende verstrekt een high-level, hoge snelheidsmening van het kader:
+De [&#x200B; Concepten &#x200B;](/help/commerce/cif-classic/administering/concepts.md) sectie behandelt meer in detail het kader, maar het volgende verstrekt een high-level, hoge snelheidsmening van het kader:
 
 ### Wat? {#what}
 

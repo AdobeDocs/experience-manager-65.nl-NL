@@ -22,11 +22,11 @@ Met uitvoeringsmodi kunt u de AEM voor een bepaald doel instellen, bijvoorbeeld 
 
 U kunt:
 
-* [ bepaalt inzamelingen van configuratieparameters voor elke looppaswijze ](#defining-configuration-properties-for-a-run-mode).
+* [&#x200B; bepaalt inzamelingen van configuratieparameters voor elke looppaswijze &#x200B;](#defining-configuration-properties-for-a-run-mode).
 
   Een basisreeks configuratieparameters wordt toegepast voor alle looppaswijzen, kunt u extra reeksen aan het doel van uw specifiek milieu dan stemmen. Deze worden naar wens toegepast.
 
-* [ bepaalt extra bundels die voor een bepaalde wijze ](#defining-additional-bundles-to-be-installed-for-a-run-mode) moeten worden geïnstalleerd.
+* [&#x200B; bepaalt extra bundels die voor een bepaalde wijze &#x200B;](#defining-additional-bundles-to-be-installed-for-a-run-mode) moeten worden geïnstalleerd.
 
 Alle montages en definities worden opgeslagen in één bewaarplaats en geactiveerd door de **Wijze van de Looppas** te plaatsen.
 
@@ -105,7 +105,7 @@ Zie {Configuratie 0} OSGi in de Bewaarplaats [&#128279;](/help/sites-deploying/c
 
 >[!NOTE]
 >
->Voor [ Wijzen van de Looppas van de Installatie ](#installation-run-modes) (bijvoorbeeld, auteur) kan de looppaswijze niet na installatie worden veranderd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
+>Voor [&#x200B; Wijzen van de Looppas van de Installatie &#x200B;](#installation-run-modes) (bijvoorbeeld, auteur) kan de looppaswijze niet na installatie worden veranderd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
 
 ## Aanvullende bundels definiëren die moeten worden geïnstalleerd voor een uitvoeringsmodus {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -125,7 +125,7 @@ Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepal
 1. [&#128279;](#using-the-r-option)
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
 
-Wanneer u een toepassingsserver gebruikt kunt u ook [ de looppaswijze in web.xml ](#defining-the-run-mode-in-web-xml-with-application-server) bepalen.
+Wanneer u een toepassingsserver gebruikt kunt u ook [&#x200B; de looppaswijze in web.xml &#x200B;](#defining-the-run-mode-in-web-xml-with-application-server) bepalen.
 
 ### Het bestand sling.properties gebruiken {#using-the-sling-properties-file}
 
@@ -182,4 +182,4 @@ in het bestand:
 
 Dit staat in het AEM `war` -bestand en moet worden bijgewerkt voordat het wordt geïmplementeerd.
 
-Zie [ Installerend AEM met een Server van de Toepassing ](/help/sites-deploying/application-server-install.md) voor verdere details.
+Zie [&#x200B; Installerend AEM met een Server van de Toepassing &#x200B;](/help/sites-deploying/application-server-install.md) voor verdere details.

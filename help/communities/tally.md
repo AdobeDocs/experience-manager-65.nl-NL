@@ -22,15 +22,15 @@ Tally is een abstracte klasse die een standaardmethode verstrekt om terugkoppele
 
 Een aangepaste telcomponent kan worden gecreeerd door de abstracte tellingsklasse uit te breiden.
 
-[ het Vergelijken ](essentials-liking.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve mening is.
+[&#x200B; het Vergelijken &#x200B;](essentials-liking.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve mening is.
 
-[ het Stemmen ](essentials-voting.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve of negatieve mening is.
+[&#x200B; het Stemmen &#x200B;](essentials-voting.md) is een implementatie van een bondgenoot die eenvoudige vorm van het uitdrukken van een positieve of negatieve mening is.
 
-[ Rating ](rating-basics.md) is een implementatie van een bondgenoot die een stersysteem gebruikt om een waaier van meningen van positief tot negatief uit te drukken.
+[&#x200B; Rating &#x200B;](rating-basics.md) is een implementatie van een bondgenoot die een stersysteem gebruikt om een waaier van meningen van positief tot negatief uit te drukken.
 
 Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
-[ Revisies ](reviews-basics.md) is een component SCF die een hybride van [ commentaren ](essentials-comments.md) en [ classificatie ](rating-basics.md) is.
+[&#x200B; Revisies &#x200B;](reviews-basics.md) is een component SCF die een hybride van [&#x200B; commentaren &#x200B;](essentials-comments.md) en [&#x200B; classificatie &#x200B;](rating-basics.md) is.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -38,24 +38,24 @@ Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ Tally APIs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [&#x200B; Tally APIs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [ Tally Endpoints ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [&#x200B; Tally Endpoints &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Toegang tot Geposte Tallies (UGC) {#accessing-posted-tallies-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [ het Moderteren van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
+Zie [&#x200B; het Moderteren van Gebruiker Gegenereerde Inhoud &#x200B;](moderate-ugc.md).
 
-Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [&#x200B; gemeenschappelijke opslag &#x200B;](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
-* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
-* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
-* [ SocialUtils Refactoring ](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.
+* [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
+* [&#x200B; SRP en Hoofdzaak UGC &#x200B;](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [&#x200B; die tot UGC met SRP &#x200B;](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
+* [&#x200B; SocialUtils Refactoring &#x200B;](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.

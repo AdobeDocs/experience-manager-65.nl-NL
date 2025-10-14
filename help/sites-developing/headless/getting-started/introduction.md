@@ -26,7 +26,7 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u aan of AEM of zonder kop nieuw bent, zie de [ Dagbladen van de Documentatie zonder Titel ](/help/journey-headless/overview.md) voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
+>Als u aan of AEM of zonder kop nieuw bent, zie de [&#x200B; Dagbladen van de Documentatie zonder Titel &#x200B;](/help/journey-headless/overview.md) voor een inleiding van begin tot eind aan zowel hoofd als hoe AEM het steunt.
 
 ## Publiek {#audience}
 
@@ -42,4 +42,4 @@ Met de hulplijnen Aan de slag zonder kop wordt aangegeven wie de beschreven take
 
 ## Volgende stap {#next-step}
 
-Klaar om meer te leren? Dan begin door het eerste deel van de Koploze Begonnen Gids te lezen: [ Creërend een Configuratie.](create-configuration.md)
+Klaar om meer te leren? Dan begin door het eerste deel van de Koploze Begonnen Gids te lezen: [&#x200B; Creërend een Configuratie.](create-configuration.md)

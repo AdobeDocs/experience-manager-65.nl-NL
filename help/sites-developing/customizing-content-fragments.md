@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Een inhoudsfragment breidt een standaardelement uit. Zie:
 
-* [ Creërend en het Leiden de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) en [ Pagina Authoring met de Fragmenten van de Inhoud ](/help/sites-authoring/content-fragments.md) voor verdere informatie over inhoudsfragmenten.
+* [&#x200B; Creërend en het Leiden de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md) en [&#x200B; Pagina Authoring met de Fragmenten van de Inhoud &#x200B;](/help/sites-authoring/content-fragments.md) voor verdere informatie over inhoudsfragmenten.
 
-* [ het Leiden Assets ](/help/assets/manage-assets.md) en [ het Aanpassen en het Uitbreiden van Assets ](/help/assets/extending-assets.md) voor verdere informatie over standaardactiva.
+* [&#x200B; het Leiden Assets &#x200B;](/help/assets/manage-assets.md) en [&#x200B; het Aanpassen en het Uitbreiden van Assets &#x200B;](/help/assets/extending-assets.md) voor verdere informatie over standaardactiva.
 
 ## Architectuur {#architecture}
 
-De basis [ samenstellende delen ](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
+De basis [&#x200B; samenstellende delen &#x200B;](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
 
 * A *het Fragment van de Inhoud,*
 * die uit één of meerdere *InhoudElement* s bestaan,
@@ -36,7 +36,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 
 >[!CAUTION]
 >
->[ de fragmentmodellen van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) worden geadviseerd voor het creëren van alle nieuwe fragmenten.
+>[&#x200B; de fragmentmodellen van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md) worden geadviseerd voor het creëren van alle nieuwe fragmenten.
 >
 >Modellen van inhoudsfragmenten worden gebruikt voor alle voorbeelden in WKND.
 
@@ -64,7 +64,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Sjablonen definiëren de (basis-, alleen-tekst) structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt. Verdere wijzigingen in de sjabloon worden dus niet weerspiegeld in bestaande fragmenten.
    * Functies om nieuwe variaties toe te voegen, enzovoort, moeten het fragment overeenkomstig bijwerken.
-   * [ het fragmentmalplaatjes van de Inhoud ](/help/sites-developing/content-fragment-templates.md) werken op een verschillende manier aan dat van andere het malplaatjes binnen het AEM ecosysteem (bijvoorbeeld, paginasjablonen, etc.). Daarom moeten zij afzonderlijk worden beschouwd.
+   * [&#x200B; het fragmentmalplaatjes van de Inhoud &#x200B;](/help/sites-developing/content-fragment-templates.md) werken op een verschillende manier aan dat van andere het malplaatjes binnen het AEM ecosysteem (bijvoorbeeld, paginasjablonen, etc.). Daarom moeten zij afzonderlijk worden beschouwd.
    * Wanneer gebaseerd op een malplaatje wordt het MIME type van de inhoud beheerd op de daadwerkelijke inhoud; dit betekent dat elk element en elke variatie een verschillend MIME type kunnen hebben.
 
 ### Integratie met Assets {#integration-with-assets}
@@ -77,7 +77,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 #### Gestructureerde inhoudsfragmenten toewijzen aan Assets {#mapping-structured-content-fragments-to-assets}
 
-![ fragment-aan-activa-gestructureerd ](assets/fragment-to-assets-structured.png)
+![&#x200B; fragment-aan-activa-gestructureerd &#x200B;](assets/fragment-to-assets-structured.png)
 
 Inhoudsfragmenten met gestructureerde inhoud (gebaseerd op een inhoudsfragmentmodel) worden toegewezen aan één element:
 
@@ -98,7 +98,7 @@ Met uitzondering van de titel en beschrijving, die niet als traditionele metageg
 
 #### Eenvoudige inhoudsfragmenten toewijzen aan Assets {#mapping-simple-content-fragments-to-assets}
 
-![ chlimage_1-90 ](assets/chlimage_1-90.png)
+![&#x200B; chlimage_1-90 &#x200B;](assets/chlimage_1-90.png)
 
 Eenvoudige inhoudsfragmenten (gebaseerd op een sjabloon) worden toegewezen aan een samenstelling die bestaat uit een hoofdelement en (optionele) subelementen:
 
@@ -120,7 +120,7 @@ Net als bij standaardelementen wordt een inhoudsfragment opgeslagen onder:
 
 #### Elementmachtigingen {#asset-permissions}
 
-Voor verdere details zie [ het Fragment van de Inhoud - Schrap Overwegingen ](/help/assets/content-fragments/content-fragments-delete.md).
+Voor verdere details zie [&#x200B; het Fragment van de Inhoud - Schrap Overwegingen &#x200B;](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Functie-integratie {#feature-integration}
 
@@ -132,15 +132,15 @@ Voor verdere details zie [ het Fragment van de Inhoud - Schrap Overwegingen ](/h
 
 >[!CAUTION]
 >
->De [ Component van de Kern van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) wordt nu geadviseerd. Zie [ het Ontwikkelen van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
+>De [&#x200B; Component van de Kern van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) wordt nu geadviseerd. Zie [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=nl-NL) voor meer details.
 
-Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **kerncomponent van het Fragment van de Inhoud[*&#128279;*](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) - a [ component die u inhoudsfragmenten op uw pagina&#39;s ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt ook uitbreiden, dit &#x200B;** kerncomponent van het Fragment van 0&rbrace; Inhoud &lbrace;.**
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM verstrekt de **kerncomponent van het Fragment van de Inhoud[*&#128279;*](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) - a [&#x200B; component die u inhoudsfragmenten op uw pagina&#39;s &#x200B;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) laat omvatten. U kunt ook uitbreiden, dit &#x200B;** kerncomponent van het Fragment van 0&rbrace; Inhoud &lbrace;.**
 
 * De component gebruikt de eigenschap `fragmentPath` om naar het daadwerkelijke inhoudsfragment te verwijzen. De eigenschap `fragmentPath` wordt op dezelfde manier afgehandeld als soortgelijke eigenschappen van andere elementtypen, bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
 * Met de component kunt u de variatie selecteren die moet worden weergegeven.
 * Bovendien kunt u een reeks alinea&#39;s selecteren om de uitvoer te beperken. Deze alinea kan bijvoorbeeld worden gebruikt voor uitvoer met meerdere kolommen.
-* De component staat [ binnen-tussen inhoud ](/help/sites-developing/components-content-fragments.md#in-between-content) toe:
+* De component staat [&#x200B; binnen-tussen inhoud &#x200B;](/help/sites-developing/components-content-fragments.md#in-between-content) toe:
 
    * Hier kunt u met de component andere elementen (afbeeldingen, enzovoort) tussen de alinea&#39;s van het fragment waarnaar wordt verwezen plaatsen.
    * Voor tussenliggende inhoud moet u:
@@ -162,7 +162,7 @@ Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 
 De back-endimplementatie van inhoudsfragmenten is bijvoorbeeld verantwoordelijk voor het maken van instanties van een fragment dat wordt gebruikt op een pagina die kan worden doorzocht, of voor het beheren van gemengde media-inhoud. In deze implementatie moet u weten welke componenten worden gebruikt voor het renderen van fragmenten en hoe de parameters van de rendering worden bepaald.
 
-De parameters voor dit kunnen in de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), voor de OSGi bundel **Configuratie van de Component van het Fragment van de Inhoud** worden gevormd.
+De parameters voor dit kunnen in de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), voor de OSGi bundel **Configuratie van de Component van het Fragment van de Inhoud** worden gevormd.
 
 * **types van Middel**
 U kunt een lijst met `sling:resourceTypes` opgeven om componenten te definiëren die worden gebruikt voor het renderen van inhoudsfragmenten en waar de achtergrondverwerking moet worden toegepast.
@@ -176,7 +176,7 @@ Een lijst met eigenschappen kan worden geconfigureerd om op te geven waar de ver
 >
 >AEM gebruikt gewoon de eerste eigenschap die op een alinea staat. U moet de eigenschappen dus zorgvuldig kiezen.
 
-![ screenshot_2019-03-18at100941 ](assets/screenshot_2019-03-18at100941.png)
+![&#x200B; screenshot_2019-03-18at100941 &#x200B;](assets/screenshot_2019-03-18at100941.png)
 
 Er zijn nog enkele richtlijnen die u moet volgen om ervoor te zorgen dat de component compatibel is met de achtergrondverwerking van het inhoudsfragment:
 
@@ -201,7 +201,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-  De Fragmenten van de inhoud zijn volledig geïntegreerd met het [ AEM vertaalwerkschema ](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
+  De Fragmenten van de inhoud zijn volledig geïntegreerd met het [&#x200B; AEM vertaalwerkschema &#x200B;](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten, bijvoorbeeld:
 
@@ -227,13 +227,13 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
   >
   >De AEM vertaalworkflow werkt met `/content` :
   >
-  >* Aangezien de modellen van het inhoudsfragment in `/conf` verblijven, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt [ de koorden UI ](/help/sites-developing/i18n-dev.md) internationaliseren.
+  >* Aangezien de modellen van het inhoudsfragment in `/conf` verblijven, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt [&#x200B; de koorden UI &#x200B;](/help/sites-developing/i18n-dev.md) internationaliseren.
   >
   >* Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
 
 * **schema&#39;s van Meta-gegevens**
 
-   * De fragmenten van de inhoud (re)gebruiken de [ meta-gegevensschema&#39;s ](/help/assets/metadata-schemas.md), die met standaardactiva kunnen worden bepaald.
+   * De fragmenten van de inhoud (re)gebruiken de [&#x200B; meta-gegevensschema&#39;s &#x200B;](/help/assets/metadata-schemas.md), die met standaardactiva kunnen worden bepaald.
    * CFM biedt een eigen, specifiek schema:
 
      `/libs/dam/content/schemaeditors/forms/contentfragment`
@@ -246,7 +246,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebben; zie:
 
-[ com.adobe.cq.dam.cfm ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[&#x200B; com.adobe.cq.dam.cfm &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -256,7 +256,7 @@ U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebbe
 
 De volgende drie interfaces kunnen als ingangspunten dienen:
 
-* **Malplaatje van het Fragment** ([ FragmentTemplate ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Malplaatje van het Fragment** ([&#x200B; FragmentTemplate &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Gebruik `FragmentTemplate.createFragment()` om een fragment te maken.
 
@@ -299,7 +299,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
 
-* **Fragment van de Inhoud** ([ ContentFragment ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragment van de Inhoud** ([&#x200B; ContentFragment &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Met deze interface kunt u op abstracte wijze met een inhoudsfragment werken.
 
@@ -315,7 +315,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Lijstelementen
       * Elementen op naam ophalen
-      * Creeer nieuwe elementen (zie [ Gebieden ](#caveats))
+      * Creeer nieuwe elementen (zie [&#x200B; Gebieden &#x200B;](#caveats))
 
       * Gegevens over toegangselementen (zie `ContentElement`)
 
@@ -331,7 +331,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
   De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
-   * **Element van de Inhoud** ([ ContentElement ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Element van de Inhoud** ([&#x200B; ContentElement &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -339,13 +339,13 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
          * Variaties weergeven
          * Variaties ophalen op naam
-         * Creeer nieuwe variaties (zie [ Gebieden ](#caveats))
-         * Verwijder variaties (zie [ Gebieden ](#caveats))
+         * Creeer nieuwe variaties (zie [&#x200B; Gebieden &#x200B;](#caveats))
+         * Verwijder variaties (zie [&#x200B; Gebieden &#x200B;](#caveats))
          * Toegang krijgen tot variatiegegevens (zie `ContentVariation`)
 
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
 
-   * **de Variatie van de Inhoud** ([ ContentVariation ](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **de Variatie van de Inhoud** ([&#x200B; ContentVariation &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -470,7 +470,7 @@ De mogelijke acties zijn:
 
 * Inhoud wijzigen
 
-   * Wanneer de gebruiker inhoud verandert en er geen is geef zitting aanwezig uit, wordt een nieuwe Edit zitting gecreeerd (zie [ Beginnend een zitting ](#processes)).
+   * Wanneer de gebruiker inhoud verandert en er geen is geef zitting aanwezig uit, wordt een nieuwe Edit zitting gecreeerd (zie [&#x200B; Beginnend een zitting &#x200B;](#processes)).
 
 * Pagina&#39;s verlaten
 
@@ -531,11 +531,11 @@ Als u een auto sparen interval van 5 minuten wilt plaatsen moet u het bezit op u
 
 ## Sjablonen voor inhoudsfragmenten {#content-fragment-templates}
 
-Zie [ de Malplaatjes van het Fragment van de Inhoud ](/help/sites-developing/content-fragment-templates.md) voor volledige informatie.
+Zie [&#x200B; de Malplaatjes van het Fragment van de Inhoud &#x200B;](/help/sites-developing/content-fragment-templates.md) voor volledige informatie.
 
 ## Componenten voor paginaontwerp {#components-for-page-authoring}
 
 Zie voor meer informatie
 
-* [ Componenten van de Kern - de Component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) (geadviseerd)
+* [&#x200B; Componenten van de Kern - de Component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=nl-NL) (geadviseerd)
 * [Componenten van inhoudsfragment - Componenten voor paginaontwerp](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

@@ -36,7 +36,7 @@ Een andere bron van terugwinbare ongewenste details zijn pakketten. Pakketgegeve
 
 ## Hoe werkt de gegevensopslag huisvuilinzameling? {#how-does-data-store-garbage-collection-work}
 
-Als de bewaarplaats met een externe gegevensopslag is gevormd, [ zal de inzameling van de gegevensopslag automatisch ](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) als deel van het Wekelijkse Venster van het Onderhoud lopen. De systeembeheerder kan ook [ de inzameling van de de opslagvuilnisbak manueel ](#running-data-store-garbage-collection) op als zonodig basis in werking stellen. Over het algemeen, wordt geadviseerd dat de inzameling van het huisvuil van de gegevensopslag periodiek wordt uitgevoerd, maar dat de volgende factoren in aanmerking worden genomen bij de planning van huisvuilinzamelingen van de gegevensopslag:
+Als de bewaarplaats met een externe gegevensopslag is gevormd, [&#x200B; zal de inzameling van de gegevensopslag automatisch &#x200B;](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) als deel van het Wekelijkse Venster van het Onderhoud lopen. De systeembeheerder kan ook [&#x200B; de inzameling van de de opslagvuilnisbak manueel &#x200B;](#running-data-store-garbage-collection) op als zonodig basis in werking stellen. Over het algemeen, wordt geadviseerd dat de inzameling van het huisvuil van de gegevensopslag periodiek wordt uitgevoerd, maar dat de volgende factoren in aanmerking worden genomen bij de planning van huisvuilinzamelingen van de gegevensopslag:
 
 * De huisvuilinzamelingen van de opslagplaats van gegevens nemen tijd en kunnen prestaties beïnvloeden, zodat zouden zij dienovereenkomstig moeten worden gepland.
 * Het verwijderen van afvalrecords in de gegevensopslagruimte heeft geen invloed op de normale prestaties, dus dit is geen optimalisatie van de prestaties.
@@ -61,10 +61,10 @@ Deze benadering werkt goed voor één enkel knooppunt met een persoonlijke gegev
 
 Er zijn drie manieren om de inzameling van de huisvuilopslag in werking te stellen, afhankelijk van de opstelling van de gegevensopslag waarop AEM loopt:
 
-1. Via [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md) - een mechanisme van de huisvuilinzameling gewoonlijk gebruikt voor de opruiming van de knoopopslag.
+1. Via [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md) - een mechanisme van de huisvuilinzameling gewoonlijk gebruikt voor de opruiming van de knoopopslag.
 
-1. Via [ de Inzameling van het Afval van de Opslag van Gegevens ](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - een mechanisme van de huisvuilinzameling specifiek voor externe gegevensopslag, beschikbaar op het Dashboard van Verrichtingen.
-1. Via de [ console JMX ](/help/sites-administering/jmx-console.md).
+1. Via [&#x200B; de Inzameling van het Afval van de Opslag van Gegevens &#x200B;](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - een mechanisme van de huisvuilinzameling specifiek voor externe gegevensopslag, beschikbaar op het Dashboard van Verrichtingen.
+1. Via de [&#x200B; console JMX &#x200B;](/help/sites-administering/jmx-console.md).
 
 Als TarMK als zowel knoopopslag als gegevensopslag wordt gebruikt, dan kan de Opruiming van de Revisie voor huisvuilinzameling van zowel knoopopslag als gegevensopslag worden gebruikt. Nochtans als een externe gegevensopslag zoals de Opslag van de Gegevens van het Systeem van het Dossier wordt gevormd, dan moet de inzameling van het huisvuil van de gegevensopslag uitdrukkelijk gescheiden van de Opruiming van de Revisie worden teweeggebracht. De inzameling van het huisvuil van de opslaggegevens kan of via het Dashboard van Verrichtingen of de Console worden teweeggebracht JMX.
 
@@ -102,7 +102,7 @@ De onderstaande lijst toont het type van de huisvuilinzameling van de gegevensop
 
 ### De lopende Inzameling van het huisvuil van de Opslag van Gegevens via het Dashboard van Verrichtingen {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-Het ingebouwde Wekelijkse Venster van het Onderhoud, beschikbaar via het [ Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van het huisvuil van de Opslag van Gegevens bij 1 am op Zondag teweeg te brengen.
+Het ingebouwde Wekelijkse Venster van het Onderhoud, beschikbaar via het [&#x200B; Dashboard van Verrichtingen &#x200B;](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van het huisvuil van de Opslag van Gegevens bij 1 am op Zondag teweeg te brengen.
 
 Als u de inzameling van de opslagvuilnisophaling van gegevens buiten deze tijd moet in werking stellen, kan het manueel via het Dashboard van Verrichtingen worden teweeggebracht.
 
@@ -111,23 +111,23 @@ Voordat u de opschoonfunctie voor gegevensopslag uitvoert, moet u controleren of
 1. Open het Dashboard van Verrichtingen door **Navigatie** > **Hulpmiddelen** > **Verrichtingen** > **Onderhoud**.
 1. Klik het **Wekelijkse Venster van het Onderhoud**.
 
-   ![ chlimage_1-64 ](assets/chlimage_1-64.png)
+   ![&#x200B; chlimage_1-64 &#x200B;](assets/chlimage_1-64.png)
 
 1. Selecteer de **taak van de Inzameling van de Winkel van 0&rbrace; Gegevens &lbrace;en klik dan het** looppas **pictogram.**
 
-   ![ chlimage_1-65 ](assets/chlimage_1-65.png)
+   ![&#x200B; chlimage_1-65 &#x200B;](assets/chlimage_1-65.png)
 
 1. De looppas van de de huisvuilinzameling van de opslaggegevens en zijn status wordt getoond in het dashboard.
 
-   ![ chlimage_1-66 ](assets/chlimage_1-66.png)
+   ![&#x200B; chlimage_1-66 &#x200B;](assets/chlimage_1-66.png)
 
 >[!NOTE]
 >
->De taak van de Inzameling van de Afvalverzameling van de Opslag van Gegevens zal slechts zichtbaar zijn als u een externe opslag van dossiergegevens hebt gevormd. Zie [ het Vormen knoopopslag en gegevensopslag in AEM 6 ](/help/sites-deploying/data-store-config.md#file-data-store) voor informatie over hoe te opstelling een opslag van dossiergegevens.
+>De taak van de Inzameling van de Afvalverzameling van de Opslag van Gegevens zal slechts zichtbaar zijn als u een externe opslag van dossiergegevens hebt gevormd. Zie [&#x200B; het Vormen knoopopslag en gegevensopslag in AEM 6 &#x200B;](/help/sites-deploying/data-store-config.md#file-data-store) voor informatie over hoe te opstelling een opslag van dossiergegevens.
 
 ### Afvalverzameling van gegevensopslag uitvoeren via de JMX-console {#running-data-store-garbage-collection-via-the-jmx-console}
 
-Deze sectie gaat over het handmatig uitvoeren van opschoning van gegevensopslagruimten via de JMX-console. Als uw installatie zonder een externe gegevensopslag is ingesteld, geldt dit niet voor uw installatie. In plaats daarvan zie de instructies op hoe te om Opschoonmaakbeurt van de Revisie in werking te stellen onder [ die de Bewaarplaats ](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository) handhaven.
+Deze sectie gaat over het handmatig uitvoeren van opschoning van gegevensopslagruimten via de JMX-console. Als uw installatie zonder een externe gegevensopslag is ingesteld, geldt dit niet voor uw installatie. In plaats daarvan zie de instructies op hoe te om Opschoonmaakbeurt van de Revisie in werking te stellen onder [&#x200B; die de Bewaarplaats &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository) handhaven.
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ Opschoonfunctie uitvoeren:
 
 >[!NOTE]
 >
->De taak van de huisvuilinzameling van de gegevensopslag zal slechts beginnen als u een externe opslag van dossiergegevens hebt gevormd. Als een externe opslag van bestandsgegevens niet is geconfigureerd, retourneert de taak het bericht `Cannot perform operation: no service of type BlobGCMBean found` na het aanroepen. Zie [ het Vormen knoopopslag en gegevensopslag in AEM 6 ](/help/sites-deploying/data-store-config.md#file-data-store) voor informatie over hoe te opstelling een opslag van dossiergegevens.
+>De taak van de huisvuilinzameling van de gegevensopslag zal slechts beginnen als u een externe opslag van dossiergegevens hebt gevormd. Als een externe opslag van bestandsgegevens niet is geconfigureerd, retourneert de taak het bericht `Cannot perform operation: no service of type BlobGCMBean found` na het aanroepen. Zie [&#x200B; het Vormen knoopopslag en gegevensopslag in AEM 6 &#x200B;](/help/sites-deploying/data-store-config.md#file-data-store) voor informatie over hoe te opstelling een opslag van dossiergegevens.
 
 ## Afvalverzameling van gegevensopslag automatiseren {#automating-data-store-garbage-collection}
 
 Indien mogelijk, zou de inzameling van het huisvuil van de gegevensopslag moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld, in de ochtend is.
 
-Het ingebouwde Wekelijkse Venster van het Onderhoud, beschikbaar via het [ Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van het huisvuil van de Opslag van Gegevens bij 1 am op Zondag teweeg te brengen. U zou ook moeten controleren dat geen steunen op dit ogenblik lopen. Het begin van het onderhoudsvenster kan zo nodig via het dashboard worden aangepast.
+Het ingebouwde Wekelijkse Venster van het Onderhoud, beschikbaar via het [&#x200B; Dashboard van Verrichtingen &#x200B;](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van het huisvuil van de Opslag van Gegevens bij 1 am op Zondag teweeg te brengen. U zou ook moeten controleren dat geen steunen op dit ogenblik lopen. Het begin van het onderhoudsvenster kan zo nodig via het dashboard worden aangepast.
 
 >[!NOTE]
 >

@@ -35,7 +35,7 @@ Naast de hierboven vermelde standaardaanpak is er ook een alternatieve implement
 >
 >Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van gegevens in het formulierportaal in een adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in AEM opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
 >
->Voor meer informatie, zie [ Steekproef voor het integreren van concepten &amp; voorleggingscomponent met gegevensbestand ](/help/forms/using/integrate-draft-submission-database.md).
+>Voor meer informatie, zie [&#x200B; Steekproef voor het integreren van concepten &amp; voorleggingscomponent met gegevensbestand &#x200B;](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Concepten en verzendservices van Forms Portal configureren {#configuring-forms-portal-drafts-and-submissions-services}
 
@@ -107,4 +107,4 @@ In de Configuratie van de Console van het AEM ( `https://[host]:'port'/system/co
 
 >[!NOTE]
 >
->Er is ook een voorbeeldimplementatie beschikbaar voor het opslaan van gebruikersgegevens in een database. Om te begrijpen hoe te om gegevens en de meta-gegevensdiensten te vormen om gebruikersgegevens in een extern gegevensbestand op te slaan, zie [ Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand ](/help/forms/using/integrate-draft-submission-database.md).
+>Er is ook een voorbeeldimplementatie beschikbaar voor het opslaan van gebruikersgegevens in een database. Om te begrijpen hoe te om gegevens en de meta-gegevensdiensten te vormen om gebruikersgegevens in een extern gegevensbestand op te slaan, zie [&#x200B; Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand &#x200B;](/help/forms/using/integrate-draft-submission-database.md).

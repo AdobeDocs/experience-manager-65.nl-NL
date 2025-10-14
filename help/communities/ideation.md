@@ -55,4 +55,4 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 
 ### Idealisatiefunctie {#ideation-function}
 
-Een communautaire plaatsstructuur die de [ functie van de Ideatie ](functions.md#ideation-function) omvat, omvat een gevormde `ideation` component.
+Een communautaire plaatsstructuur die de [&#x200B; functie van de Ideatie &#x200B;](functions.md#ideation-function) omvat, omvat een gevormde `ideation` component.

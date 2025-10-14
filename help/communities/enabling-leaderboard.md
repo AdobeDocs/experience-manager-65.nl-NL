@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Met de component `Leaderboard` krijgt u inzicht in de manier waarop leden binnen de gemeenschap communiceren door leden te rangschikken op basis van verdiende punten (standaardscoring) of hun expertise (geavanceerde scoring).
 
-Alvorens de leaderboard component op een pagina op te nemen, is het noodzakelijk om [ het Scoren Badges van Gemeenschappen te vormen ](/help/communities/implementing-scoring.md).
+Alvorens de leaderboard component op een pagina op te nemen, is het noodzakelijk om [&#x200B; het Scoren Badges van Gemeenschappen te vormen &#x200B;](/help/communities/implementing-scoring.md).
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* Toevoegend de `Leaderboard` component aan a [ communautaire plaats ](/help/communities/overview.md#community-sites).
+* Toevoegend de `Leaderboard` component aan a [&#x200B; communautaire plaats &#x200B;](/help/communities/overview.md#community-sites).
 * Configuration settings for the `Leaderboard` component.
 
 ### Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
@@ -42,15 +42,15 @@ Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![ leaderboard ](assets/leaderboard.png)
+![&#x200B; leaderboard &#x200B;](assets/leaderboard.png)
 
 ### Leaderboard configureren {#configuring-leaderboard}
 
 Selecteer de geplaatste component `Leaderboard` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
-![ vorm-leaderboard ](assets/configure-leaderboard.png)
+![&#x200B; vorm-leaderboard &#x200B;](assets/configure-leaderboard.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -118,7 +118,7 @@ Configuratie van de component Leaderboard:
    * Badging Rule = `/libs/settings/community/badging/rules//reference-badging`
    * Weergavelimiet = `10`
 
-![ deelnemers-leider ](assets/participants-leaderboard.png)
+![&#x200B; deelnemers-leider &#x200B;](assets/participants-leaderboard.png)
 
 ### Voorbeeld: Leaderboard van experts {#example-experts-leaderboard}
 
@@ -141,10 +141,10 @@ Configuratie van de component Leaderboard:
    * Badging Rule = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
-![ expert-leaderboard ](assets/experts-leaderboard.png)
+![&#x200B; expert-leaderboard &#x200B;](assets/experts-leaderboard.png)
 
 ### Aanvullende informatie {#additional-information}
 
 De meer informatie kan op de [&#128279;](/help/communities/leaderboard.md) pagina van de Hoofdzaak van 0&rbrace; worden gevonden Leaderboard &lbrace;voor ontwikkelaars.
 
-De instructies voor het creëren van regels worden verstrekt op de [ Scoring van Gemeenschappen en de pagina van Badges ](/help/communities/implementing-scoring.md) voor beheerders.
+De instructies voor het creëren van regels worden verstrekt op de [&#x200B; Scoring van Gemeenschappen en de pagina van Badges &#x200B;](/help/communities/implementing-scoring.md) voor beheerders.

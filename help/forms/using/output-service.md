@@ -35,7 +35,7 @@ Met uitvoerservice kunt u toepassingen maken waarmee u:
 
 ## Niet-interactieve formulierdocumenten maken {#creating-non-interactive-form-documents}
 
-![ gebruikend output_modified ](assets/usingoutput_modified.png)
+![&#x200B; gebruikend output_modified &#x200B;](assets/usingoutput_modified.png)
 
 Gewoonlijk maakt u sjablonen met AEM Forms Designer. Met de API&#39;s `generatePDFOutput` en `generatePrintedOutput` van de Output-service kunt u deze sjablonen rechtstreeks converteren naar verschillende indelingen, zoals PDF, PostScript, ZPL en PCL.
 

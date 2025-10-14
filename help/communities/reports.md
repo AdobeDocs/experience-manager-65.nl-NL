@@ -25,11 +25,11 @@ Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toe
 
 In het algemeen zijn de verschillende verslagen:
 
-* [ Rapport van Meningen ](#views-report)
+* [&#x200B; Rapport van Meningen &#x200B;](#views-report)
 
   Verstrekt een grafiek van meningen van inhoud door communautaire leden en plaatsbezoekers voor om het even welke communautaire plaats.
 
-* [ het Rapport van Post ](#posts-report)
+* [&#x200B; het Rapport van Post &#x200B;](#posts-report)
 
   Verstrekt een grafiek van diverse soorten posten door communautaire leden aan om het even welke communautaire plaats.
 
@@ -55,13 +55,13 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
       * een rapport genereren voor een geselecteerde Community Site, Type inhoud en Tijdsperiode.
 
-![ rapporten ](assets/reports1.png)
+![&#x200B; rapporten &#x200B;](assets/reports1.png)
 
 ## Rapport Weergaven {#views-report}
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door gemeenschapsfuncties.
 
-![ mening-rapport ](assets/view-report.png)
+![&#x200B; mening-rapport &#x200B;](assets/view-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -84,13 +84,13 @@ Selecteer de criteria voor het rapport:
 
 Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![ produceren-meningen ](assets/generate-views.png)
+![&#x200B; produceren-meningen &#x200B;](assets/generate-views.png)
 
 ## Post Report {#posts-report}
 
 De console van Posten laat rapporten toe om op het aantal posten aan communautaire eigenschappen voor een bepaalde tijdspanne worden geproduceerd.
 
-![ post-rapport ](assets/posts-report.png)
+![&#x200B; post-rapport &#x200B;](assets/posts-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -113,7 +113,7 @@ Selecteer de criteria voor het rapport:
 
 Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![ produceren-rapport ](assets/generate-posts-report.png)
+![&#x200B; produceren-rapport &#x200B;](assets/generate-posts-report.png)
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -125,4 +125,4 @@ Als er geen communitysites worden weergegeven, controleert u of Adobe Analytics 
 
 Als rapporten niet worden weergegeven in de AEM Author-instantie, controleert u of er aanpassingen zijn, zoals URL-toewijzing op de Publish-instantie. Als de afbeelding URL slechts op de AEM instantie van Publish van de communautaire plaats wordt gedaan, zorg ervoor dat het zelfde in de AEM instantie van de Auteur in **de Configuratie van de Factory van de Component van de Tendens van de Plaats van de Steek Sociale van de Component** is gevormd.
 
-![ afbeelding URL op AEM Auteur ](assets/sitetrend.png)
+![&#x200B; afbeelding URL op AEM Auteur &#x200B;](assets/sitetrend.png)

@@ -46,7 +46,7 @@ De geconcentreerde inhoud vormt de diverse ervaringen, die aan de bezoeker bij *
 
    * **Teasers**
 
-     [ de Pagina&#39;s/de Alinea&#39;s van het Taser ](#teasers) worden gebruikt om specifieke bezoekers **Segmenten** aan inhoud te sturen die op hun belangen wordt geconcentreerd.
+     [&#x200B; de Pagina&#39;s/de Alinea&#39;s van het Taser &#x200B;](#teasers) worden gebruikt om specifieke bezoekers **Segmenten** aan inhoud te sturen die op hun belangen wordt geconcentreerd.
 
      Taserpagina&#39;s kunnen:
 
@@ -57,7 +57,7 @@ De geconcentreerde inhoud vormt de diverse ervaringen, die aan de bezoeker bij *
 
    * **Nieuwsbrieven**
 
-     [ E-mailMededelingen ](#emailmarketing) worden gebruikt om gebruikers in dienst te nemen en hen aan te moedigen om uw website te bezoeken. Deze nemen gewoonlijk de vorm van een nieuwsbrief, die naar uw **wordt verzonden leidt** (die in **Lijsten** worden gegroepeerd). **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren. De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
+     [&#x200B; E-mailMededelingen &#x200B;](#emailmarketing) worden gebruikt om gebruikers in dienst te nemen en hen aan te moedigen om uw website te bezoeken. Deze nemen gewoonlijk de vorm van een nieuwsbrief, die naar uw **wordt verzonden leidt** (die in **Lijsten** worden gegroepeerd). **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren. De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
 
    * **Adobe Target**
 
@@ -73,13 +73,13 @@ De geconcentreerde inhoud vormt de diverse ervaringen, die aan de bezoeker bij *
 
   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren.
 
-  De aanbeveling moet [ Adobe Campaign en de integratie aan AEM ](/help/sites-administering/campaign.md) gebruiken.
+  De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM &#x200B;](/help/sites-administering/campaign.md) gebruiken.
 
 * **Lijsten**
 
   Leads worden gegroepeerd in lijsten, zodat u er gezamenlijk actie op kunt ondernemen. Nota: **Nota:** de Adobe is niet van plan om dit vermogen verder te verbeteren.
 
-  De aanbeveling moet [ Adobe Campaign en de integratie aan AEM gebruiken.](/help/sites-administering/campaign.md)
+  De aanbeveling moet [&#x200B; Adobe Campaign en de integratie aan AEM gebruiken.](/help/sites-administering/campaign.md)
 
 * **Segmenten**
 

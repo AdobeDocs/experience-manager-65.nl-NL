@@ -23,7 +23,7 @@ Soms blijven de gegevens in een paar velden ongewijzigd wanneer gebruikers het f
 Voer de volgende stappen uit om een sjabloon te maken:
 
 1. Open een formulier en selecteer of vul de velden in die bijna identieke waarden hebben wanneer u het gebruikt. U kunt een bijlage opnemen met de sjabloon die u gewoonlijk toevoegt wanneer u het formulier invult.
-1. Selecteer **sparen als Malplaatje** ![ save_as_template ](assets/save_as_template.png) pictogram. Er wordt een dialoogvenster weergegeven waarin u de naam van de sjabloon kunt opgeven.
+1. Selecteer **sparen als Malplaatje** ![&#x200B; save_as_template &#x200B;](assets/save_as_template.png) pictogram. Er wordt een dialoogvenster weergegeven waarin u de naam van de sjabloon kunt opgeven.
 1. Specificeer de naam van het malplaatje en selecteer **sparen**. De sjabloon wordt weergegeven in de sjabloonmap.
 
    Als er een sjabloon met dezelfde naam bestaat, wordt er een dialoogvenster weergegeven waarin u kunt bevestigen dat de bestaande sjabloon wordt overschreven. Om het bestaande malplaatje met nieuw malplaatje te vervangen, **ga** of het malplaatje met een verschillende naam voort te bewaren, uitgezocht **annuleert**.

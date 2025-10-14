@@ -28,11 +28,11 @@ Deze pagina beschrijft het volgende:
 * hoe te met het landen van pagina&#39;s in AEM werken
 * mobiele bestemmingspagina&#39;s instellen
 
-Het voorbereiden van het ontwerppakket voor het invoeren wordt behandeld in [ Uitbreidend en het Vormen van de Importeur van het Ontwerp ](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Het integreren met Adobe Analytics wordt behandeld in [ Integrating Landing Pages met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+Het voorbereiden van het ontwerppakket voor het invoeren wordt behandeld in [&#x200B; Uitbreidend en het Vormen van de Importeur van het Ontwerp &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Het integreren met Adobe Analytics wordt behandeld in [&#x200B; Integrating Landing Pages met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
->De importeur van het Ontwerp, die wordt gebruikt om het landen pagina&#39;s in te voeren, [ is afgekeurd met AEM 6.5 ](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>De importeur van het Ontwerp, die wordt gebruikt om het landen pagina&#39;s in te voeren, [&#x200B; is afgekeurd met AEM 6.5 &#x200B;](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ In AEM maakt u bestemmingspagina&#39;s door de volgende stappen uit te voeren:
 
 Een voorbeeldlandingspagina in AEM ziet er als volgt uit:
 
-![ chlimage_1-2 ](assets/chlimage_1-2.jpeg)
+![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.jpeg)
 
 ### Mobiele bestemmingspagina&#39;s {#mobile-landing-pages}
 
@@ -67,7 +67,7 @@ De invoerprocedure voor de landingspagina is dezelfde als die van een normale op
 
 De mobiele openingspagina wordt gemaakt als een onderliggende pagina van de openingspagina van het bureaublad. Navigeer naar de openingspagina in Websites en open de onderliggende pagina om deze te openen.
 
-![ chlimage_1-22 ](assets/chlimage_1-22.png)
+![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22.png)
 
 >[!NOTE]
 >
@@ -92,33 +92,33 @@ Bovendien is het mogelijk om dit uit te breiden en douanecomponenten te steunen.
 
 ### Tekst {#text}
 
-Met de component Text kunt u een tekstblok invoeren met een WYSIWYG-editor. Zie [ component van de Tekst ](/help/sites-authoring/default-components.md#text) voor meer informatie.
+Met de component Text kunt u een tekstblok invoeren met een WYSIWYG-editor. Zie [&#x200B; component van de Tekst &#x200B;](/help/sites-authoring/default-components.md#text) voor meer informatie.
 
-![ chlimage_1-23 ](assets/chlimage_1-23.png)
+![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23.png)
 
 Hieronder ziet u een voorbeeld van een tekstcomponent op een bestemmingspagina:
 
-![ chlimage_1-24 ](assets/chlimage_1-24.png)
+![&#x200B; chlimage_1-24 &#x200B;](assets/chlimage_1-24.png)
 
 #### Titel {#title}
 
 Met de titelcomponent kunt u een titel weergeven en de grootte configureren (h1-6). Zie {de component van de Titel 0} [&#128279;](/help/sites-authoring/default-components.md#title) voor meer informatie.
 
-![ chlimage_1-25 ](assets/chlimage_1-25.png)
+![&#x200B; chlimage_1-25 &#x200B;](assets/chlimage_1-25.png)
 
 Hieronder ziet u een voorbeeld van een titelcomponent op een landingspagina:
 
-![ chlimage_1-26 ](assets/chlimage_1-26.png)
+![&#x200B; chlimage_1-26 &#x200B;](assets/chlimage_1-26.png)
 
 #### Afbeelding {#image}
 
-De afbeeldingscomponent toont een afbeelding die u kunt slepen en neerzetten vanuit de Inhoudszoeker of waarop u kunt klikken om te uploaden. Zie [ beeldcomponent ](/help/sites-authoring/default-components.md) voor meer informatie.
+De afbeeldingscomponent toont een afbeelding die u kunt slepen en neerzetten vanuit de Inhoudszoeker of waarop u kunt klikken om te uploaden. Zie [&#x200B; beeldcomponent &#x200B;](/help/sites-authoring/default-components.md) voor meer informatie.
 
-![ chlimage_1-27 ](assets/chlimage_1-27.png)
+![&#x200B; chlimage_1-27 &#x200B;](assets/chlimage_1-27.png)
 
 Hieronder ziet u een voorbeeld van een afbeeldingscomponent op een landingspagina:
 
-![ chlimage_1-28 ](assets/chlimage_1-28.png)
+![&#x200B; chlimage_1-28 &#x200B;](assets/chlimage_1-28.png)
 
 #### Oproep tot actie (CTA) {#call-to-action-cta}
 
@@ -135,7 +135,7 @@ Beide componenten CTA hebben gelijkaardige opties. De optie Doorklikken via kopp
 
 Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen pagina toe te voegen. Op die koppeling kan worden geklikt om de gebruiker naar de doel-URL te brengen die in de componenteigenschappen is opgegeven. Het maakt deel uit van de &quot;Vraag aan Actie&quot;groep.
 
-![ chlimage_1-29 ](assets/chlimage_1-29.png)
+![&#x200B; chlimage_1-29 &#x200B;](assets/chlimage_1-29.png)
 
 **Etiket** de tekstgebruikers zien. U kunt opmaak wijzigen met de RTF-editor.
 
@@ -154,13 +154,13 @@ Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen p
 
 Hieronder ziet u een voorbeeld van een klik door een koppeling:
 
-![ chlimage_1-30 ](assets/chlimage_1-30.png)
+![&#x200B; chlimage_1-30 &#x200B;](assets/chlimage_1-30.png)
 
 #### Grafische koppeling {#graphical-link}
 
 Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het is een deel van de **Vraag aan de groep van de Actie**.
 
-![ chlimage_1-31 ](assets/chlimage_1-31.png)
+![&#x200B; chlimage_1-31 &#x200B;](assets/chlimage_1-31.png)
 
 **Etiket** de tekstgebruikers zien in grafisch. U kunt opmaak wijzigen met de RTF-editor.
 
@@ -179,7 +179,7 @@ Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbi
 
 Hier volgt een voorbeeld van een grafische koppeling:
 
-![ chlimage_1-32 ](assets/chlimage_1-32.png)
+![&#x200B; chlimage_1-32 &#x200B;](assets/chlimage_1-32.png)
 
 ### Oproep tot actie (CTA) Lead Form {#call-to-action-cta-lead-form}
 
@@ -187,7 +187,7 @@ Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegeve
 
 Een voorbeeld van een CTA-loodformulier ziet er als volgt uit:
 
-![ chlimage_1-33 ](assets/chlimage_1-33.png)
+![&#x200B; chlimage_1-33 &#x200B;](assets/chlimage_1-33.png)
 
 CTA-loodformulieren worden samengesteld uit verschillende onderdelen:
 
@@ -204,7 +204,7 @@ Het voorafgaande toont een voorbeeldvorm; het wordt samengesteld uit de **1&rbra
 
 Van sidekick, zijn de volgende componenten beschikbaar voor de CTA Lood Vorm:
 
-![ chlimage_1-34 ](assets/chlimage_1-34.png)
+![&#x200B; chlimage_1-34 &#x200B;](assets/chlimage_1-34.png)
 
 #### Algemene instellingen voor veel onderdelen van formulieren voor lead {#settings-common-to-many-lead-form-components}
 
@@ -228,7 +228,7 @@ Hiermee geeft u de grootte en opmaak van de velden aan.
 >
 >Welke velden u ziet, is afhankelijk van de afzonderlijke component.
 >
->Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Forms voor meer informatie over deze [ gemeenschappelijke montages ](/help/sites-authoring/default-components.md#formsgroup).
+>Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Forms voor meer informatie over deze [&#x200B; gemeenschappelijke montages &#x200B;](/help/sites-authoring/default-components.md#formsgroup).
 
 #### Voorloopformuliercomponenten {#lead-form-components}
 
@@ -236,35 +236,35 @@ De volgende sectie beschrijft de componenten beschikbaar aan vraag-aan-actie lei
 
 **Ongeveer** laat gebruikers over informatie toevoegen.
 
-![ chlimage_1-35 ](assets/chlimage_1-35.png)
+![&#x200B; chlimage_1-35 &#x200B;](assets/chlimage_1-35.png)
 
 **Gebied van het Adres** staat gebruikers toe om adresinformatie in te gaan. Wanneer u deze component configureert, moet u de elementnaam in het dialoogvenster invoeren. De elementnaam is de naam van het formulierelement. Dit geeft aan waar in de gegevensopslagruimte de gegevens worden opgeslagen.
 
-![ chlimage_1-36 ](assets/chlimage_1-36.png)
+![&#x200B; chlimage_1-36 &#x200B;](assets/chlimage_1-36.png)
 
 **Datum van de Geboortedatum** De gebruikers kunnen datum van geboorteinformatie ingaan.
 
-![ chlimage_1-37 ](assets/chlimage_1-37.png)
+![&#x200B; chlimage_1-37 &#x200B;](assets/chlimage_1-37.png)
 
 **E-mailidentiteitskaart** staat gebruikers toe om een e-mailadres (identificatie) in te gaan.
 
-![ chlimage_1-38 ](assets/chlimage_1-38.png)
+![&#x200B; chlimage_1-38 &#x200B;](assets/chlimage_1-38.png)
 
 **Voornaam** verstrekt een gebied voor gebruikers om hun voornaam in te gaan.
 
-![ chlimage_1-39 ](assets/chlimage_1-39.png)
+![&#x200B; chlimage_1-39 &#x200B;](assets/chlimage_1-39.png)
 
 **De gebruikers van 0&rbrace; Geslacht &lbrace;kunnen hun geslacht van een dropdown lijst selecteren.**
 
-![ chlimage_1-40 ](assets/chlimage_1-40.png)
+![&#x200B; chlimage_1-40 &#x200B;](assets/chlimage_1-40.png)
 
 **de Gebruikers van de Achternaam 0&rbrace; &lbrace;kunnen de informatie van de Familienaam ingaan.**
 
-![ chlimage_1-41 ](assets/chlimage_1-41.png)
+![&#x200B; chlimage_1-41 &#x200B;](assets/chlimage_1-41.png)
 
 **Vorm van de Lood** voegt deze component toe om een loodvorm aan uw het landen pagina toe te voegen. Een lead-formulier bevat automatisch het veld Start of Lead Form en End of Lead Form. Hierna voegt u de in deze sectie beschreven componenten Formulier lead toe.
 
-![ chlimage_1-42 ](assets/chlimage_1-42.png)
+![&#x200B; chlimage_1-42 &#x200B;](assets/chlimage_1-42.png)
 
 De component van de Vorm van het Lood bepaalt zowel het begin als het eind van een vorm gebruikend het **Begin van de Vorm** en **Eind van de Vorm** elementen. Deze worden altijd gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
 
@@ -274,13 +274,13 @@ Nadat u de loodvorm hebt toegevoegd, kunt u het begin van vorm of eind van vorm 
 
 Twee lusjes zijn beschikbaar voor configuratie **Vorm** en **Geavanceerd**:
 
-![ chlimage_1-43 ](assets/chlimage_1-43.png)
+![&#x200B; chlimage_1-43 &#x200B;](assets/chlimage_1-43.png)
 
 **Dank u Pagina** de pagina die moet worden van verwijzingen voorzien om bezoekers voor het verstrekken van hun input te bedanken. Als het formulier leeg blijft, wordt het na verzending opnieuw weergegeven.
 
 **Werkschema van het Begin** bepaalt welk werkschema wordt teweeggebracht zodra een loodvorm wordt voorgelegd.
 
-![ chlimage_1-44 ](assets/chlimage_1-44.png)
+![&#x200B; chlimage_1-44 &#x200B;](assets/chlimage_1-44.png)
 
 **de Opties van Post** De volgende postopties zijn beschikbaar:
 
@@ -310,7 +310,7 @@ Als u het volledige formulier valideert, voert u ook een van de volgende handeli
 
 **Configuratie van de Actie** Afhankelijk van de selectie in de Opties van Post, verandert de Configuratie van de Actie. Als u bijvoorbeeld Lead maken selecteert, kunt u instellen aan welke lijst de lead wordt toegevoegd.
 
-![ chlimage_1-45 ](assets/chlimage_1-45.png)
+![&#x200B; chlimage_1-45 &#x200B;](assets/chlimage_1-45.png)
 
 * **tonen voorleggen Knoop**
 Geeft aan of een knop Verzenden moet worden weergegeven.
@@ -363,28 +363,28 @@ Een openingspagina maken:
 1. Klik **Nieuw** om **te openen creeer het venster van de Pagina**.
 1. Selecteer het **malplaatje van de Pagina van de Importeur** en voeg naar keuze een titel en een naam toe, en klik **creeer**.
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1-1.png)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1-1.png)
 
    De nieuwe importpagina wordt weergegeven.
 
 ### De HTML voorbereiden voor importeren {#preparing-the-html-for-import}
 
-Voordat u het ontwerppakket importeert, moet de HTML worden voorbereid. Zie [ Uitbreidend en Vormend de Invoer van het Ontwerp ](/help/sites-administering/extending-the-design-importer-for-landingpages.md) voor meer informatie.
+Voordat u het ontwerppakket importeert, moet de HTML worden voorbereid. Zie [&#x200B; Uitbreidend en Vormend de Invoer van het Ontwerp &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md) voor meer informatie.
 
 ### Het ontwerppakket importeren {#importing-the-design-package}
 
-Nadat een importerpagina is gemaakt, kunt u een ontwerppakket op deze pagina importeren. De details bij het creëren van het ontwerppakket en zijn geadviseerde structuur worden verklaard in [ Uitbreiden en het Vormen de Invoer van het Ontwerp ](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
+Nadat een importerpagina is gemaakt, kunt u een ontwerppakket op deze pagina importeren. De details bij het creëren van het ontwerppakket en zijn geadviseerde structuur worden verklaard in [&#x200B; Uitbreiden en het Vormen de Invoer van het Ontwerp &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
 Ervan uitgaande dat u het ontwerppakket klaar hebt, wordt in de volgende stappen beschreven hoe u het ontwerppakket op een importerpagina kunt importeren.
 
-1. Open de invoerderpagina u [ vroeger ](#creatingablankcanvaspage) creeerde.
+1. Open de invoerderpagina u [&#x200B; vroeger &#x200B;](#creatingablankcanvaspage) creeerde.
 
-   ![ chlimage_1-46 ](assets/chlimage_1-46.png)
+   ![&#x200B; chlimage_1-46 &#x200B;](assets/chlimage_1-46.png)
 
 1. Sleep het ontwerppakket naar de dropbox. De pijl verandert van richting wanneer een pakket eroverheen wordt gesleept.
 1. Als gevolg van slepen en neerzetten wordt de openingspagina weergegeven in plaats van de pagina Importer. De openingspagina van de HTML is geïmporteerd.
 
-   ![ chlimage_1-2-1 ](assets/chlimage_1-2-1.png)
+   ![&#x200B; chlimage_1-2-1 &#x200B;](assets/chlimage_1-2-1.png)
 
 >[!NOTE]
 >
@@ -392,7 +392,7 @@ Ervan uitgaande dat u het ontwerppakket klaar hebt, wordt in de volgende stappen
 
 >[!NOTE]
 >
->Als u problemen hebt die het ontwerppakket invoeren, zie [ het Oplossen van problemen ](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>Als u problemen hebt die het ontwerppakket invoeren, zie [&#x200B; het Oplossen van problemen &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
 ## Werken met bestemmingspagina&#39;s {#working-with-landing-pages}
 
@@ -412,7 +412,7 @@ In deze sectie wordt beschreven hoe u het volgende kunt doen:
 
 Wanneer u het ontwerppakket invoert, **Duidelijk Ontwerp** en **Geïmporteerde Download Zip** zijn beschikbaar in het montagemenu van de pagina:
 
-![ chlimage_1-3-1 ](assets/chlimage_1-3-1.png)
+![&#x200B; chlimage_1-3-1 &#x200B;](assets/chlimage_1-3-1.png)
 
 ### Het geïmporteerde ontwerppakket downloaden {#downloading-the-imported-design-package}
 
@@ -424,11 +424,11 @@ Om het ingevoerde ontwerppakket te downloaden, klik **het ZIP van de Download** 
 
 U kunt op elk gewenst moment informatie over de laatste importbewerking weergeven door op het blauwe uitroepteken boven aan de bestemmingspagina in de klassieke gebruikersinterface te klikken.
 
-![ chlimage_1-47 ](assets/chlimage_1-47.png)
+![&#x200B; chlimage_1-47 &#x200B;](assets/chlimage_1-47.png)
 
 Als het geïmporteerde ontwerppakket enkele problemen heeft, bijvoorbeeld als het verwijst naar afbeeldingen/scripts die niet in het pakket voorkomen, enzovoort, geeft de ontwerpimportmodule deze problemen weer in de vorm van een lijst. Als u de lijst met problemen wilt weergeven, klikt u in de klassieke gebruikersinterface op de koppeling voor problemen op de werkbalk Openingspagina. In het volgende beeld, opent het klikken op **Kwesties** verbinding het venster van de Kwesties van de Invoer.
 
-![ chlimage_1-3 ](assets/chlimage_1-3.jpeg)
+![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.jpeg)
 
 ### Een openingspagina opnieuw instellen {#resetting-a-landing-page}
 
@@ -448,7 +448,7 @@ Als u componenten aan de bestemmingspagina wilt toevoegen, sleept u componenten 
 
 >[!NOTE]
 >
->Als een component op de landende pagina niet kan worden uitgegeven, moet u het zip dossier opnieuw invoeren nadat [ het wijzigen van het dossier van HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM componenten.
+>Als een component op de landende pagina niet kan worden uitgegeven, moet u het zip dossier opnieuw invoeren nadat [&#x200B; het wijzigen van het dossier van HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM componenten.
 
 ### Een openingspagina verwijderen {#deleting-a-landing-page}
 

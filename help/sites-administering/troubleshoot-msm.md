@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Als u ervaart wat u denkt is onjuist gedrag of een fout in MSM, alvorens en het gedetailleerde oplossen van problemen zeker te zijn:
 
-* Controleer [ Veelgestelde vragen MSM ](#faq) aangezien uw problemen of vragen daar kunnen reeds worden gericht.
-* Controleer het [ MSM beste praktijkartikel ](msm-best-practices.md) aangezien verscheidene uiteinden daar samen met verduidelijkingen van sommige misconcepties worden aangeboden.
+* Controleer [&#x200B; Veelgestelde vragen MSM &#x200B;](#faq) aangezien uw problemen of vragen daar kunnen reeds worden gericht.
+* Controleer het [&#x200B; MSM beste praktijkartikel &#x200B;](msm-best-practices.md) aangezien verscheidene uiteinden daar samen met verduidelijkingen van sommige misconcepties worden aangeboden.
 
 ## Geavanceerde informatie over uw blauwdruk en status van Live Copy zoeken {#advanced-info}
 
@@ -71,7 +71,7 @@ Hier volgen enkele veelgestelde vragen over MSM en Live Copy.
 
 De acties van de synchronisatie MSM zijn hoogst configureerbaar. Welke eigenschappen of componenten tijdens rollouts direct worden gewijzigd hangt van de eigenschappen van die configuraties af.
 
-Zie [ MSM Beste praktijken ](msm-best-practices.md) voor meer informatie over dit onderwerp.
+Zie [&#x200B; MSM Beste praktijken &#x200B;](msm-best-practices.md) voor meer informatie over dit onderwerp.
 
 ### Hoe kan ik rollout toestemmingen voor een groep auteurs verwijderen? {#remove-rollout-permissions}
 
@@ -94,4 +94,4 @@ Als er een &quot;zelfstandige&quot; pagina wordt gevonden, kiest MSM ervoor de n
 
 Zulk een standalone pagina in Levende subtree van het Exemplaar is typisch het resultaat van a **ontkoppel** verrichting, of de vroegere Levende pagina van het Exemplaar werd manueel geschrapt door een auteur en toen opnieuw gecreeerd met de zelfde naam.
 
-Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [ dit artikel worden gevonden.](msm-livecopy.md)
+Om dit te vermijden, gebruik Levend Exemplaar **Uitstel** eigenschap in plaats van **losmaken**. Meer details op **ontkoppelen** actie kan in [&#x200B; dit artikel worden gevonden.](msm-livecopy.md)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Het kan beelden in diverse formaten (meer dan 200) lezen en schrijven met inbegrip van PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
-Gebruik de media-handler [!DNL Adobe Experience Manager] van de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Om met diverse dossierformaten te werken gebruikend ImageMagick, zie [ het dossierformaten van Assets beste praktijken ](/help/assets/assets-file-format-best-practices.md). Om over alle gesteunde dossierformaten te weten, zie [ Assets gesteunde formaten ](/help/assets/assets-formats.md).
+Gebruik de media-handler [!DNL Adobe Experience Manager] van de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Om met diverse dossierformaten te werken gebruikend ImageMagick, zie [&#x200B; het dossierformaten van Assets beste praktijken &#x200B;](/help/assets/assets-file-format-best-practices.md). Om over alle gesteunde dossierformaten te weten, zie [&#x200B; Assets gesteunde formaten &#x200B;](/help/assets/assets-formats.md).
 
 Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u zeer grote bestanden wilt verwerken met ImageMagick, moet u de [!DNL Experience Manager] -server op de juiste wijze als benchmark instellen. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
 
@@ -29,7 +29,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 
 Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor verschillende besturingssystemen. Gebruik de juiste versie voor uw besturingssysteem.
 
-1. Download de aangewezen [ ImageMagick installatiedossiers ](https://www.imagemagick.org/script/download.php) voor uw werkend systeem.
+1. Download de aangewezen [&#x200B; ImageMagick installatiedossiers &#x200B;](https://www.imagemagick.org/script/download.php) voor uw werkend systeem.
 1. Start het installatiebestand om ImageMagick te installeren op de schijf waarop de [!DNL Experience Manager] -server zich bevindt.
 
 1. Plaats de variabele van het wegmilieu aan de installatiemap ImageMagic.
@@ -43,7 +43,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 1. Open vanuit het workflowmodel van **[!UICONTROL DAM Update Asset]** de stap **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** .
 1. Voeg in de **[!UICONTROL Arguments tab]** `image/jpeg` toe aan de lijst **[!UICONTROL Mime Types]** .
 
-   ![ mime_types_jpeg ](assets/mime_types_jpeg.png)
+   ![&#x200B; mime_types_jpeg &#x200B;](assets/mime_types_jpeg.png)
 
 1. Voer in het vak **[!UICONTROL Commands]** de volgende opdracht in:
 
@@ -51,11 +51,11 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
 1. Selecteer de markeringen **[!UICONTROL Delete Generated Rendition]** en **[!UICONTROL Generate Web Rendition]** .
 
-   ![ select_flags ](assets/select_flags.png)
+   ![&#x200B; select_flags &#x200B;](assets/select_flags.png)
 
 1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** de details voor de vertoning op met afmetingen van 1280 x 1280 pixels. Geef bovendien `image/jpeg` op in het vak **[!UICONTROL Mimetype]** .
 
-   ![ web_enabled_image ](assets/web_enabled_image.png)
+   ![&#x200B; web_enabled_image &#x200B;](assets/web_enabled_image.png)
 
 1. Klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
 
@@ -68,11 +68,11 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
 1. Open de stap **[!UICONTROL Process Thumbnails]** en voeg het MIME-type `image/jpeg` onder **[!UICONTROL Skip Mime Types]** toe.
 
-   ![ skip_mime_types ](assets/skip_mime_types.png)
+   ![&#x200B; skip_mime_types &#x200B;](assets/skip_mime_types.png)
 
 1. Voeg op het tabblad **[!UICONTROL Web Enabled Image]** het MIME-type `image/jpeg` onder **[!UICONTROL Skip List]** toe. Klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
 
-   ![ web_enabled ](assets/web_enabled.png)
+   ![&#x200B; web_enabled &#x200B;](assets/web_enabled.png)
 
 1. Sla de workflow op.
 
@@ -86,5 +86,5 @@ Daarnaast zijn verschillende plug-ins voor beeldverwerking afhankelijk van de Im
 
 Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert de Adobe dat u de bekende kwetsbaarheid verlicht door minstens één van de volgende taken (maar bij voorkeur allebei) uit te voeren:
 
-1. Verifieer dat alle beelddossiers met verwachte [ &quot;magische bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) beantwoorden aan de types van beelddossier u steunt alvorens hen naar ImageMagick voor verwerking te verzenden.
+1. Verifieer dat alle beelddossiers met verwachte [&#x200B; &quot;magische bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) beantwoorden aan de types van beelddossier u steunt alvorens hen naar ImageMagick voor verwerking te verzenden.
 1. Gebruik een beleidsdossier om de kwetsbare Codeurs onbruikbaar te maken ImageMagick. Het algemene beleid voor ImageMagick vindt u op `/etc/ImageMagick` .

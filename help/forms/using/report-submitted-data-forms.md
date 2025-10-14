@@ -21,7 +21,7 @@ AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergeg
 
 >[!NOTE]
 >
->De gebruikers die APIs zullen aanhalen moeten aan de recensentengroep worden toegevoegd zoals die in [ wordt beschreven Associerend voorleggingsrecensenten aan een vorm ](/help/forms/using/adding-reviewers-form.md).
+>De gebruikers die APIs zullen aanhalen moeten aan de recensentengroep worden toegevoegd zoals die in [&#x200B; wordt beschreven Associerend voorleggingsrecensenten aan een vorm &#x200B;](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 

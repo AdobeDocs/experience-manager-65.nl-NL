@@ -18,7 +18,7 @@ Als u de AEM SDK opnieuw start door de Java™-processen te stoppen, kan dit lei
 
 `javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
-![ nieuw begin-naam-sdk-fout ](/help/forms/using/assets/restart-sdk-error.png)
+![&#x200B; nieuw begin-naam-sdk-fout &#x200B;](/help/forms/using/assets/restart-sdk-error.png)
 
 ## Oplossing
 

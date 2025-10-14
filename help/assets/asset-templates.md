@@ -45,16 +45,16 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 1. Kies uit de opties **[!UICONTROL Templates]** .
 
-   ![ chlimage_1-101 ](assets/chlimage_1-306.png)
+   ![&#x200B; chlimage_1-101 &#x200B;](assets/chlimage_1-306.png)
 
 1. Selecteer **[!UICONTROL Create]** en kies vervolgens in het menu het element dat u wilt maken. Kies bijvoorbeeld **[!UICONTROL Brochure]** .
 
-   ![ chlimage_1-102 ](assets/chlimage_1-307.png)
+   ![&#x200B; chlimage_1-102 &#x200B;](assets/chlimage_1-307.png)
 
 1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben in [!DNL Experience Manager] . Kies een sjabloon voor de brochure en klik op **[!UICONTROL Next]** .
 1. Geef een naam en een optionele beschrijving voor de brochure op.
 
-   ![ chlimage_1-104 ](assets/chlimage_1-309.png)
+   ![&#x200B; chlimage_1-104 &#x200B;](assets/chlimage_1-309.png)
 
 1. (Optioneel) Klik op **[!UICONTROL Tags]** en selecteer een of meer tags voor de brochure. Klik op **[!UICONTROL Confirm]** om uw selectie te bevestigen.
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik op **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
@@ -63,7 +63,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt het woord [!UICONTROL Brochure] bijvoorbeeld weergegeven op de miniatuur.
 
-   ![ chlimage_1-107 ](assets/chlimage_1-312.png)
+   ![&#x200B; chlimage_1-107 &#x200B;](assets/chlimage_1-312.png)
 
 ## Een hulpstuk bewerken {#editing-a-collateral}
 
@@ -71,7 +71,7 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
 
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
-   * Open het onderpand (brochure in dit geval) u in stap 7 van [ creeerde een onderpandsstuk ](/help/assets/asset-templates.md#creating-a-collateral).
+   * Open het onderpand (brochure in dit geval) u in stap 7 van [&#x200B; creeerde een onderpandsstuk &#x200B;](/help/assets/asset-templates.md#creating-a-collateral).
    * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de [!UICONTROL Edit] snelle actie op de miniatuur van een hulpstuk.
    * Klik op **[!UICONTROL Edit]** op de werkbalk op de elementpagina voor het element.
    * Selecteer het onderpand en klik **[!UICONTROL Edit]** van de toolbar.
@@ -84,31 +84,31 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
 
    Als u de functie voor het zoeken naar elementen wilt gebruiken, kunt u bladeren naar afbeeldingen in [!DNL Experience Manager Assets] en de bewerkbare afbeeldingen in de sjabloon vervangen door afbeeldingen van uw keuze.
 
-   ![ chlimage_1-109 ](assets/chlimage_1-314.png)
+   ![&#x200B; chlimage_1-109 &#x200B;](assets/chlimage_1-314.png)
 
    De bewerkbare afbeeldingen worden rechts weergegeven. Een veld kan alleen worden bewerkt in [!DNL Experience Manager Assets] als het bijbehorende veld in de sjabloon is gelabeld in [!DNL InDesign] . Met andere woorden, ze moeten worden gemarkeerd als bewerkbaar in [!DNL InDesign] .
 
    >[!NOTE]
    >
-   >Integreer uw [!DNL Experience Manager] -implementatie met een [!DNL InDesign Server] zodat [!DNL Experience Manager Assets] gegevens kan extraheren uit de [!DNL InDesign] -sjabloon en deze beschikbaar kan maken voor bewerking. Voor details, zie [ Experience Manager Assets met InDesign Server ](/help/assets/indesign.md) integreren.
+   >Integreer uw [!DNL Experience Manager] -implementatie met een [!DNL InDesign Server] zodat [!DNL Experience Manager Assets] gegevens kan extraheren uit de [!DNL InDesign] -sjabloon en deze beschikbaar kan maken voor bewerking. Voor details, zie [&#x200B; Experience Manager Assets met InDesign Server &#x200B;](/help/assets/indesign.md) integreren.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
-   ![ chlimage_1-111 ](assets/chlimage_1-316.png)
+   ![&#x200B; chlimage_1-111 &#x200B;](assets/chlimage_1-316.png)
 
    U kunt de teksteigenschappen, zoals lettertypestijl, -kleur en -grootte, bewerken met de beschikbare opties.
 
 1. Selecteer **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
-1. Om een beeld te ruilen, selecteer **[!UICONTROL Asset Finder]** ![ chlimage_1-113 ](assets/chlimage_1-318.png).
+1. Om een beeld te ruilen, selecteer **[!UICONTROL Asset Finder]** ![&#x200B; chlimage_1-113 &#x200B;](assets/chlimage_1-318.png).
 
 1. Selecteer het afbeeldingsveld in de lijst met bewerkbare velden en sleep een gewenste afbeelding van de elementkiezer naar het bewerkbare veld.
 
-   ![ chlimage_1-114 ](assets/chlimage_1-319.png)
+   ![&#x200B; chlimage_1-114 &#x200B;](assets/chlimage_1-319.png)
 
    U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door de [!DNL Experience Manager Assets] -opslagplaats bladeren en naar de locatie van de gewenste afbeelding navigeren.
 
-   ![ chlimage_1-115 ](assets/chlimage_1-320.png)
+   ![&#x200B; chlimage_1-115 &#x200B;](assets/chlimage_1-320.png)
 
 1. Selecteer **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 1. Als u een specifieke pagina in een pagina-element wilt bewerken dat uit meerdere pagina&#39;s bestaat, gebruikt u de paginanavigator onderaan.
@@ -124,18 +124,18 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
    >
    >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [ Ongeveer verbindingen en ingebedde grafiek ](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
+   >* Sluit beelden in terwijl het creëren van [!DNL InDesign] malplaatjes (zie [&#x200B; Ongeveer verbindingen en ingebedde grafiek &#x200B;](https://helpx.adobe.com/nl/indesign/using/graphics-links.html)).
    >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs de ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager] .
    >
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]** .
 1. Het hulpstuk wordt gecreeerd in de omslag die u met begon. Als u de vertoningen wilt weergeven, opent u het desbetreffende element en kiest u **[!UICONTROL Renditions]** in de lijst GlobalNav.
 
-   ![ chlimage_1-118 ](assets/chlimage_1-323.png)
+   ![&#x200B; chlimage_1-118 &#x200B;](assets/chlimage_1-323.png)
 
 1. Selecteer de PDF-uitvoering in de lijst met uitvoeringen, zodat u het PDF-bestand kunt downloaden. Open het PDF-bestand om het onderpand te bekijken.
 
-   ![ chlimage_1-119 ](assets/chlimage_1-324.png)
+   ![&#x200B; chlimage_1-119 &#x200B;](assets/chlimage_1-324.png)
 
 ## Zekerheden samenvoegen {#merge-collateral}
 
@@ -145,13 +145,13 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
 
 1. Selecteer **[!UICONTROL Create]** en selecteer vervolgens in het menu **[!UICONTROL Merge]** .
 
-   ![ chlimage_1-120 ](assets/chlimage_1-325.png)
+   ![&#x200B; chlimage_1-120 &#x200B;](assets/chlimage_1-325.png)
 
-1. Van de [!UICONTROL Template Merge] pagina, uitgezochte **[!UICONTROL Merge]** ![ voegt activa ](assets/do-not-localize/assets_add_icon.png) toe.
+1. Van de [!UICONTROL Template Merge] pagina, uitgezochte **[!UICONTROL Merge]** ![&#x200B; voegt activa &#x200B;](assets/do-not-localize/assets_add_icon.png) toe.
 
 1. Navigeer naar de locatie van het hulpstuk dat u wilt samenvoegen, selecteer de miniaturen van het element dat u wilt samenvoegen om deze te selecteren.
 
-   ![ chlimage_1-122 ](assets/chlimage_1-327.png)
+   ![&#x200B; chlimage_1-122 &#x200B;](assets/chlimage_1-327.png)
 
    U kunt ook naar sjablonen zoeken in het vak Onderzoek.
 
@@ -162,11 +162,11 @@ U kunt een hulpstuk direct bewerken nadat u het hebt gemaakt. U kunt het bestand
 1. Selecteer **[!UICONTROL Next]** op de werkbalk.
 1. Wijzig de rangschikking van de sjablonen desgewenst in het scherm **[!UICONTROL Preview & Reorder]** en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Selecteer **[!UICONTROL Next]** in de werkbalk.
 
-   ![ chlimage_1-126 ](assets/chlimage_1-331.png)
+   ![&#x200B; chlimage_1-126 &#x200B;](assets/chlimage_1-331.png)
 
 1. Geef in het scherm [!UICONTROL Configure Template] een naam op voor het element. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in JPG- en [!DNL InDesign] -indeling. Klik op **[!UICONTROL Change Thumbnail]** als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen.
 
-   ![ chlimage_1-127 ](assets/chlimage_1-332.png)
+   ![&#x200B; chlimage_1-127 &#x200B;](assets/chlimage_1-332.png)
 
 1. Selecteer **[!UICONTROL Save]** en sluit het dialoogvenster door **[!UICONTROL OK]** te selecteren. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
 

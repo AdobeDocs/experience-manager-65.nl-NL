@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Component Opmerkingen uitbreiden  {#extend-comments-component}
 
-De bedoeling van [ uitbreidend ](client-customize.md#extensions) een standaardcomponent is de verschijning of het gedrag van een component voor specifiek gebruik te veranderen.
+De bedoeling van [&#x200B; uitbreidend &#x200B;](client-customize.md#extensions) een standaardcomponent is de verschijning of het gedrag van een component voor specifiek gebruik te veranderen.
 
 Het pad naar de component is uniek en verwijst naar de standaardcomponent als een superbrontype. Er is minder risico omdat het bereik beperkt is in vergelijking met het mondiale bereik van een componentoverlay.
 
 >[!NOTE]
 >
->Het uitbreiden van een [ bedekte ](client-customize.md#overlays) component wordt niet gesteund.
+>Het uitbreiden van een [&#x200B; bedekte &#x200B;](client-customize.md#overlays) component wordt niet gesteund.
 
 ## Voorbeeld {#example}
 

@@ -19,7 +19,7 @@ Met het demopakket kunt u Adobe Assets Insights inschakelen om gegevens vast te 
 
 ## [!DNL Use Experience Manager Assets] Inzichten met voorbeeldwebpagina  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Vorm de Inzichten van Assets gebruikend de instructies in [ Vormend de Inzichten van Assets ](configure-asset-insights.md).
+1. Vorm de Inzichten van Assets gebruikend de instructies in [&#x200B; Vormend de Inzichten van Assets &#x200B;](configure-asset-insights.md).
 1. Download het voorbeeld van het Assets-pakket hieronder en installeer het pakket via de CRXDE Package Manager.
 
 [Bestand ophalen](assets/insightsdemo.zip)

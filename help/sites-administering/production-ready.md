@@ -24,11 +24,11 @@ De nieuwe looppaswijze zal niet alleen automatisch de instantie vormen om aan de
 
 >[!NOTE]
 >
->Aangezien, wegens praktische redenen, de AEM Klaar Wijze van de Productie slechts de meeste taken nodig zal behandelen om een geval te beveiligen, adviseert men hoogst u [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) alvorens met uw productiemilieu te leven.
+>Aangezien, wegens praktische redenen, de AEM Klaar Wijze van de Productie slechts de meeste taken nodig zal behandelen om een geval te beveiligen, adviseert men hoogst u [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md) alvorens met uw productiemilieu te leven.
 >
->Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [ toelatend CRXDE Lite in AEM ](/help/sites-administering/enabling-crxde-lite.md).
+>Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [&#x200B; toelatend CRXDE Lite in AEM &#x200B;](/help/sites-administering/enabling-crxde-lite.md).
 
-![ chlimage_1-83 ](assets/chlimage_1-83a.png)
+![&#x200B; chlimage_1-83 &#x200B;](assets/chlimage_1-83a.png)
 
 Als u AEM wilt uitvoeren in de modus gereed voor productie, hoeft u alleen maar de `nosamplecontent` via de `-r` -schakelaar voor de uitvoeringsmodus toe te voegen aan uw bestaande opstartargumenten:
 

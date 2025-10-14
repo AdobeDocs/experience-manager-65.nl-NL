@@ -23,17 +23,17 @@ Deze sectie behandelt diverse stappen die u zou moeten nemen om ervoor te zorgen
 
 >[!NOTE]
 >
->De verdere informatie is ook beschikbaar over de gevaarlijkste veiligheidsbedreigingen zoals gepubliceerd door [ Open Project van de Veiligheid van de Toepassing van het Web (OWASP) ](https://owasp.org/www-project-top-ten/).
+>De verdere informatie is ook beschikbaar over de gevaarlijkste veiligheidsbedreigingen zoals gepubliceerd door [&#x200B; Open Project van de Veiligheid van de Toepassing van het Web (OWASP) &#x200B;](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
->Er zijn sommige extra [ veiligheidsoverwegingen ](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations) toepasselijk bij de ontwikkelingsfase.
+>Er zijn sommige extra [&#x200B; veiligheidsoverwegingen &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations) toepasselijk bij de ontwikkelingsfase.
 
 ## Belangrijkste veiligheidsmaatregelen {#main-security-measures}
 
 ### AEM uitvoeren in de productielodus {#run-aem-in-production-ready-mode}
 
-Voor meer informatie, zie [ lopende AEM in Productie Klaar Wijze ](/help/sites-administering/production-ready.md).
+Voor meer informatie, zie [&#x200B; lopende AEM in Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md).
 
 ### HTTPS inschakelen voor beveiliging van transportlagen {#enable-https-for-transport-layer-security}
 
@@ -41,15 +41,15 @@ Het inschakelen van de HTTPS-transportlaag op zowel auteur- als publicatieinstan
 
 >[!NOTE]
 >
->Zie [ toelatend HTTP over SSL ](/help/sites-administering/ssl-by-default.md) sectie voor meer informatie.
+>Zie [&#x200B; toelatend HTTP over SSL &#x200B;](/help/sites-administering/ssl-by-default.md) sectie voor meer informatie.
 
 ### Beveiligingshotfixes installeren {#install-security-hotfixes}
 
-Zorg ervoor dat u recentste [ Hotfixes van de Veiligheid hebt geïnstalleerd die door Adobe ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL) wordt verstrekt.
+Zorg ervoor dat u recentste [&#x200B; Hotfixes van de Veiligheid hebt geïnstalleerd die door Adobe &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL) wordt verstrekt.
 
 ### Standaardwachtwoorden voor de AEM- en OSGi-console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-De Adobe adviseert na installatie dat u het wachtwoord voor de bevoorrechte [**AEM** `admin` rekeningen ](#changing-the-aem-admin-password) (op alle instanties) verandert.
+De Adobe adviseert na installatie dat u het wachtwoord voor de bevoorrechte [**AEM** `admin` rekeningen &#x200B;](#changing-the-aem-admin-password) (op alle instanties) verandert.
 
 Deze rekeningen omvatten:
 
@@ -65,9 +65,9 @@ Deze twee rekeningen gebruiken afzonderlijke geloofsbrieven en het hebben van ve
 
 #### Het AEM-beheerderswachtwoord wijzigen {#changing-the-aem-admin-password}
 
-Het wachtwoord voor de AEM admin rekening kan via de [ Verrichtingen van de Granite - Gebruikers ](/help/sites-administering/granite-user-group-admin.md) console worden veranderd.
+Het wachtwoord voor de AEM admin rekening kan via de [&#x200B; Verrichtingen van de Granite - Gebruikers &#x200B;](/help/sites-administering/granite-user-group-admin.md) console worden veranderd.
 
-Hier kunt u de `admin` rekening uitgeven en [ veranderen het wachtwoord ](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
+Hier kunt u de `admin` rekening uitgeven en [&#x200B; veranderen het wachtwoord &#x200B;](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
@@ -80,18 +80,18 @@ Naast de AEM `admin` -account kan het niet wijzigen van het standaardwachtwoord 
 * Belichting van de server met een standaardwachtwoord tijdens opstarten en afsluiten (wat minuten kan duren voor grote servers);
 * Belichting van de server wanneer de opslagplaats is neer/herstart bundel - en OSGI loopt.
 
-Voor meer informatie bij het veranderen van het wachtwoord van de Webconsole, zie [ Veranderend het OSGi wachtwoord van het Webconsole admin ](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) hieronder.
+Voor meer informatie bij het veranderen van het wachtwoord van de Webconsole, zie [&#x200B; Veranderend het OSGi wachtwoord van het Webconsole admin &#x200B;](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) hieronder.
 
 #### Het beheerwachtwoord voor de OSGi-webconsole wijzigen {#changing-the-osgi-web-console-admin-password}
 
-Wijzig het wachtwoord dat wordt gebruikt voor toegang tot de webconsole. Gebruik een [ configuratie OSGI ](/help/sites-deploying/configuring-osgi.md) om de volgende eigenschappen van de **Console van het Beheer van de Felix van Apache OSGi** bij te werken:
+Wijzig het wachtwoord dat wordt gebruikt voor toegang tot de webconsole. Gebruik een [&#x200B; configuratie OSGI &#x200B;](/help/sites-deploying/configuring-osgi.md) om de volgende eigenschappen van de **Console van het Beheer van de Felix van Apache OSGi** bij te werken:
 
 * **Naam van de Gebruiker** en **Wachtwoord**, de geloofsbrieven voor de toegang tot van de Console van het Beheer van het Web van de Felix van Apache zelf.
 Het wachtwoord moet *na* de aanvankelijke installatie worden veranderd om de veiligheid van uw instantie te verzekeren.
 
 >[!NOTE]
 >
->Zie [ configuratie OSGI ](/help/sites-deploying/configuring-osgi.md) voor volledige details van het vormen van montages OSGi.
+>Zie [&#x200B; configuratie OSGI &#x200B;](/help/sites-deploying/configuring-osgi.md) voor volledige details van het vormen van montages OSGi.
 
 **om het OSGi wachtwoord van het Webconsole te veranderen admin**:
 
@@ -100,7 +100,7 @@ Bijvoorbeeld bij `<server>:<port>/system/console/configMgr` .
 1. Navigeer aan, en open, de ingang voor **Apache Felix OSGi de Console van het Beheer**.
 1. Verander de **gebruikersnaam** en **wachtwoord**.
 
-   ![ chlimage_1-3 ](assets/chlimage_1-3.png)
+   ![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.png)
 
 1. Selecteer **sparen**.
 
@@ -110,11 +110,11 @@ Adobe raadt aan aangepaste fouthandlerpagina&#39;s te definiëren, met name voor
 
 >[!NOTE]
 >
->Zie [ hoe ik douanemanuscripten of foutenmanagers ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=nl-NL) voor meer details kan tot stand brengen.
+>Zie [&#x200B; hoe ik douanemanuscripten of foutenmanagers &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=nl-NL) voor meer details kan tot stand brengen.
 
 ### Dispatcher-beveiligingscontrolelijst voltooien {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. De Adobe adviseert dat u de [ veiligheid checklist van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL) voltooit.
+AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. De Adobe adviseert dat u de [&#x200B; veiligheid checklist van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=nl-NL) voltooit.
 
 >[!CAUTION]
 >
@@ -124,7 +124,7 @@ AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. De Adobe advis
 
 ### Gebruikers voor replicatie en transport configureren {#configure-replication-and-transport-users}
 
-Een standaardinstallatie van AEM specificeert `admin` als gebruiker voor vervoergeloofsbrieven binnen de standaard [ replicatieagenten ](/help/sites-deploying/replication.md). Ook, wordt de admin gebruiker gebruikt aan bron de replicatie op het auteurssysteem.
+Een standaardinstallatie van AEM specificeert `admin` als gebruiker voor vervoergeloofsbrieven binnen de standaard [&#x200B; replicatieagenten &#x200B;](/help/sites-deploying/replication.md). Ook, wordt de admin gebruiker gebruikt aan bron de replicatie op het auteurssysteem.
 
 Met het oog op de veiligheid moeten beide aspecten worden gewijzigd om rekening te houden met het specifieke gebruiksgeval in kwestie, waarbij de volgende twee aspecten in acht moeten worden genomen:
 
@@ -138,7 +138,7 @@ Met het oog op de veiligheid moeten beide aspecten worden gewijzigd om rekening 
 
 AEM 6 introduceert het nieuwe Dashboard van Verrichtingen, dat op het helpen van systeemexploitanten problemen oplossen en de gezondheid van een geval controleert.
 
-Het dashboard bevat ook een verzameling veiligheidscontroles. U wordt aangeraden de status van alle beveiligingscontroles te controleren voordat u live gaat met uw productieexemplaar. Voor meer informatie, raadpleeg de [ documentatie van het Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md).
+Het dashboard bevat ook een verzameling veiligheidscontroles. U wordt aangeraden de status van alle beveiligingscontroles te controleren voordat u live gaat met uw productieexemplaar. Voor meer informatie, raadpleeg de [&#x200B; documentatie van het Dashboard van Verrichtingen &#x200B;](/help/sites-administering/operations-dashboard.md).
 
 ### Controleren of voorbeeldinhoud aanwezig is {#check-if-example-content-is-present}
 
@@ -146,9 +146,9 @@ Alle voorbeeldinhoud en -gebruikers (bijvoorbeeld het Geometrixx-project en de o
 
 >[!NOTE]
 >
->De steekproef `We.Retail` toepassingen worden verwijderd als deze instantie op [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) loopt. Als dit scenario niet het geval is, kunt u de steekproefinhoud desinstalleren door naar de Manager van het Pakket te gaan, dan zoekend, en desinstalleer, alle `We.Retail` pakketten.
+>De steekproef `We.Retail` toepassingen worden verwijderd als deze instantie op [&#x200B; Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md) loopt. Als dit scenario niet het geval is, kunt u de steekproefinhoud desinstalleren door naar de Manager van het Pakket te gaan, dan zoekend, en desinstalleer, alle `We.Retail` pakketten.
 
-Zie [ Werk met Pakketten ](package-manager.md).
+Zie [&#x200B; Werk met Pakketten &#x200B;](package-manager.md).
 
 ### Controleren of de CRX-ontwikkelingsbundels aanwezig zijn {#check-if-the-crx-development-bundles-are-present}
 
@@ -160,7 +160,7 @@ Deze ontwikkelingsOSGi- bundels zouden op zowel auteur moeten worden gedesinstal
 
 ### Controleren of de ontwikkelingsbundel Sling aanwezig is {#check-if-the-sling-development-bundle-is-present}
 
-De [ AEM Hulpmiddelen van de Ontwikkelaar ](/help/sites-developing/aem-eclipse.md) stellen Apache die de Installatie van de Steun van de Tooling van de Tooling van de Tooling (org.apache.sling.tooling.support.install) opstelt.
+De [&#x200B; AEM Hulpmiddelen van de Ontwikkelaar &#x200B;](/help/sites-developing/aem-eclipse.md) stellen Apache die de Installatie van de Steun van de Tooling van de Tooling van de Tooling (org.apache.sling.tooling.support.install) opstelt.
 
 Deze bundel OSGi zou op zowel auteur moeten worden gedesinstalleerd als productieve systemen publiceren alvorens hen toegankelijk te maken.
 
@@ -168,7 +168,7 @@ Deze bundel OSGi zou op zowel auteur moeten worden gedesinstalleerd als producti
 
 #### Het CSRF-beschermingskader {#the-csrf-protection-framework}
 
-AEM 6.1 schepen met een mechanisme dat de hulp tegen de aanvallen van de Versmeding van het Verzoek van de Deposito&#39;s van de Deposito&#39;s beschermt, genoemd het **Kader van de Bescherming CSRF**. Voor meer informatie over hoe te om het te gebruiken, raadpleeg de [ documentatie ](/help/sites-developing/csrf-protection.md).
+AEM 6.1 schepen met een mechanisme dat de hulp tegen de aanvallen van de Versmeding van het Verzoek van de Deposito&#39;s van de Deposito&#39;s beschermt, genoemd het **Kader van de Bescherming CSRF**. Voor meer informatie over hoe te om het te gebruiken, raadpleeg de [&#x200B; documentatie &#x200B;](/help/sites-developing/csrf-protection.md).
 
 #### Het filter Verschuivende verwijzing {#the-sling-referrer-filter}
 
@@ -219,37 +219,37 @@ Sommige instellingen van OSGI worden standaard ingesteld om foutopsporing in de 
 
 >[!NOTE]
 >
->Alle montages hieronder, behalve **de Dag CQ WCM zuivert filter**, worden automatisch behandeld door de [ Klaar Wijze van de Productie ](/help/sites-administering/production-ready.md). Als dusdanig, adviseert de Adobe dat u alle montages alvorens uw geval in een productieve milieu te opstellen controleert.
+>Alle montages hieronder, behalve **de Dag CQ WCM zuivert filter**, worden automatisch behandeld door de [&#x200B; Klaar Wijze van de Productie &#x200B;](/help/sites-administering/production-ready.md). Als dusdanig, adviseert de Adobe dat u alle montages alvorens uw geval in een productieve milieu te opstellen controleert.
 
 Voor elk van de volgende services moeten de opgegeven instellingen worden gewijzigd:
 
-* [ de Manager van de Bibliotheek van de HTML van de Adobe Granite ](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
+* [&#x200B; de Manager van de Bibliotheek van de HTML van de Adobe Granite &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
    * laat **toe Minify** (om CRLF en whitespace karakters te verwijderen).
    * laat **Gzip** toe (om dossiers toe te staan om met één verzoek worden gecomprimeerd en worden betreden).
    * maak **Debug** onbruikbaar
    * maak **Timing** onbruikbaar
 
-* [ Dag CQ WCM zuivert filter ](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
+* [&#x200B; Dag CQ WCM zuivert filter &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
    * uncheck **laat** toe
 
-* [ de Filter van CQ WCM van de Dag ](/help/sites-deploying/osgi-configuration-settings.md):
+* [&#x200B; de Filter van CQ WCM van de Dag &#x200B;](/help/sites-deploying/osgi-configuration-settings.md):
 
    * op publiceren slechts, plaats **Wijze WCM** aan &quot;gehandicapt&quot;
 
-* [ Apache Sling JavaScript Handler ](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
+* [&#x200B; Apache Sling JavaScript Handler &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
    * maak **onbruikbaar produceren zuivert Info**
 
-* [ Apache het Verdelen van JSP Manuscript Handler ](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
+* [&#x200B; Apache het Verdelen van JSP Manuscript Handler &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
    * maak **onbruikbaar produceren zuivert Info**
    * maak **Toegewezen Inhoud** onbruikbaar
 
-Zie [ de Montages van de Configuratie OSGi ](/help/sites-deploying/osgi-configuration-settings.md).
+Zie [&#x200B; de Montages van de Configuratie OSGi &#x200B;](/help/sites-deploying/osgi-configuration-settings.md).
 
-Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 ## Verdere lezingen {#further-readings}
 
@@ -281,7 +281,7 @@ Sling is *inhoud-centric*. De verwerking wordt geconcentreerd op de inhoud aange
 * Het eerste doel is de bron (JCR-knooppunt) die de inhoud bevat.
 * Ten tweede bevindt de renderer, of het script, zich in de eigenschappen resource met bepaalde onderdelen van de aanvraag (bijvoorbeeld kiezers en/of de extensie).
 
-Zie [ het Verwerking van het Verzoek van de Verzending ](/help/sites-developing/the-basics.md#sling-request-processing) voor meer informatie.
+Zie [&#x200B; het Verwerking van het Verzoek van de Verzending &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing) voor meer informatie.
 
 Deze aanpak maakt Sling krachtig en flexibel, maar zoals altijd is het de flexibiliteit die zorgvuldig moet worden beheerd.
 
@@ -306,9 +306,9 @@ Om misbruik van DosS te helpen voorkomen, kunt u het volgende doen:
 
      **JSON Max resultaten** ( `json.maximumresults`)
 
-     in de configuratie voor [ Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Wanneer deze limiet wordt overschreden, wordt de rendering samengevouwen. De standaardwaarde voor Verdelen binnen AEM is `1000` .
+     in de configuratie voor [&#x200B; Apache Sling GET Servlet &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Wanneer deze limiet wordt overschreden, wordt de rendering samengevouwen. De standaardwaarde voor Verdelen binnen AEM is `1000` .
 
-   * Als preventieve maatregel, zou u de andere standaardrenderers (HTML, gewone teksten, XML) moeten onbruikbaar maken. Opnieuw, door [ Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) te vormen.
+   * Als preventieve maatregel, zou u de andere standaardrenderers (HTML, gewone teksten, XML) moeten onbruikbaar maken. Opnieuw, door [&#x200B; Apache Sling GET Servlet &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) te vormen.
 
    >[!CAUTION]
    >
@@ -339,7 +339,7 @@ U kunt dit probleem verhelpen door de volgende stappen uit te voeren:
 
 Met de standaardserver voor het downloaden van middelen kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige, downloadverzoeken afgeven om ZIP-bestanden met elementen te maken. Door grote ZIP-archieven te maken, kunnen de server en het netwerk worden overbelast. Om het potentiële DoS-risico (Denial of Service) dat door dit gedrag wordt veroorzaakt, te beperken, wordt de `AssetDownloadServlet` OSGi-component standaard uitgeschakeld in [!DNL Experience Manager] -publicatie-instantie. Deze is standaard ingeschakeld voor de [!DNL Experience Manager] -instantie.
 
-Als u de downloadmogelijkheden niet nodig hebt, schakelt u de servlet uit bij het ontwerpen en publiceren van implementaties. Als uw opstelling vereist dat het vermogen van de activadownload wordt toegelaten, zie [ de activa van de Download van de Ervaring van de Adobe beheren ](/help/assets/download-assets-from-aem.md) voor meer informatie. Bovendien kunt u een maximale downloadlimiet definiëren die uw implementatie kan ondersteunen.
+Als u de downloadmogelijkheden niet nodig hebt, schakelt u de servlet uit bij het ontwerpen en publiceren van implementaties. Als uw opstelling vereist dat het vermogen van de activadownload wordt toegelaten, zie [&#x200B; de activa van de Download van de Ervaring van de Adobe beheren &#x200B;](/help/assets/download-assets-from-aem.md) voor meer informatie. Bovendien kunt u een maximale downloadlimiet definiëren die uw implementatie kan ondersteunen.
 
 ### WebDAV uitschakelen {#disable-webdav}
 
@@ -387,7 +387,7 @@ Hoewel niet geadviseerd, kunt u het onbruikbaar maken voor het geval u de oude i
 
 >[!NOTE]
 >
->Voor meer informatie, zie de documentatie van Oak over [ Vergunnbare Generatie van de Naam van de Knoop ](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+>Voor meer informatie, zie de documentatie van Oak over [&#x200B; Vergunnbare Generatie van de Naam van de Knoop &#x200B;](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
 ### Verhardend pakket anonieme machtigingen {#anonymous-permission-hardening-package}
 
@@ -395,15 +395,15 @@ Standaard worden AEM systeemmetagegevens, zoals `jcr:createdBy` of `jcr:lastModi
 
 Net als alle gegevens in de opslagplaats worden deze eigenschappen gemedieerd door de Oak-machtigingenstapel. De toegang tot deze rechten dient te worden beperkt overeenkomstig het beginsel van de minst bevoorrechte behandeling.
 
-Om dit te steunen, verstrekt de Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan [ worden gedownload ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en op alle gesteunde versies van AEM worden geïnstalleerd.
+Om dit te steunen, verstrekt de Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan [&#x200B; worden gedownload &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en op alle gesteunde versies van AEM worden geïnstalleerd.
 
 Om de veranderingen te illustreren, kunnen wij de knoopeigenschappen vergelijken die anoniem kunnen worden bekeken alvorens het pakket te installeren:
 
-![ alvorens Pakket ](/help/sites-administering/assets/before_resized.png) te installeren
+![&#x200B; alvorens Pakket &#x200B;](/help/sites-administering/assets/before_resized.png) te installeren
 
 waarbij de knoppen zichtbaar zijn na de installatie van het pakket, waarbij `jcr:createdBy` en `jcr:lastModifiedBy` niet zichtbaar zijn:
 
-![ na het Installeren van Pakket ](/help/sites-administering/assets/after_resized.png)
+![&#x200B; na het Installeren van Pakket &#x200B;](/help/sites-administering/assets/after_resized.png)
 
 Zie de opmerkingen bij de pakketrelease voor meer informatie.
 
@@ -411,7 +411,7 @@ Zie de opmerkingen bij de pakketrelease voor meer informatie.
 
 Om klikaanvallen te voorkomen, adviseert de Adobe dat u uw webserver vormt om `X-FRAME-OPTIONS` kopbal te verstrekken die aan `SAMEORIGIN` wordt geplaatst.
 
-Voor meer informatie bij klikjacking, zie de [ plaats van OWASP ](https://www.owasp.org/index.php/Clickjacking).
+Voor meer informatie bij klikjacking, zie de [&#x200B; plaats van OWASP &#x200B;](https://www.owasp.org/index.php/Clickjacking).
 
 ### Zorg ervoor dat u de coderingstoetsen op de juiste wijze dupliceert als dat nodig is {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
@@ -446,7 +446,7 @@ Meer specifiek, moet u het volgende doen:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Plak de twee eerder gekopieerde bestanden.
-1. [ verfrist de Bundel van Crypto ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
+1. [&#x200B; verfrist de Bundel van Crypto &#x200B;](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
 1. Herhaal bovenstaande stappen voor alle instanties waaraan u de toets wilt repliceren.
 
 #### Replicatietoetsen voor AEM 6.2 en oudere versies {#replicating-keys-for-aem-and-older-versions}
@@ -466,4 +466,4 @@ De Adobe beveelt aan dat u een penetratietest van uw AEM infrastructuur uitvoert
 
 ### Aanbevolen werkwijzen voor ontwikkeling {#development-best-practices}
 
-Het is kritiek dat de nieuwe ontwikkeling de [ Beste praktijken van de Veiligheid ](/help/sites-developing/security.md) volgt om ervoor te zorgen dat uw AEM milieu veilig blijft.
+Het is kritiek dat de nieuwe ontwikkeling de [&#x200B; Beste praktijken van de Veiligheid &#x200B;](/help/sites-developing/security.md) volgt om ervoor te zorgen dat uw AEM milieu veilig blijft.

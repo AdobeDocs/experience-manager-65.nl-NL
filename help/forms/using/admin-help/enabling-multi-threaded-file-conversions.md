@@ -56,7 +56,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
 ### Aanvullende configuratie vereist voor OpenOffice op Linux® of Solaris™ {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Gebruikersaccounts toevoegen. (Zie [ een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen.)
+1. Gebruikersaccounts toevoegen. (Zie [&#x200B; een gebruikersrekening &#x200B;](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen.)
 1. Vervolgens moet u het bestand /etc/sudoers wijzigen. De standaardmachtigingen voor dit bestand zijn 440. Wijzig de machtiging voor dit bestand in schrijfbaar.
 1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de Forms-server uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
 
@@ -69,7 +69,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [ een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen
+   >Zorg ervoor dat u gebruiker van het systeem en PDFG gebruikersrollen aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om een rol PDFG aan een gebruiker toe te wijzen, zie [&#x200B; een gebruikersrekening &#x200B;](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen
 
 1. Zoek en becommentariëer deze regel ook in het bestand /etc/sudoers door een hekje (#) aan het begin van de regel toe te voegen:
 
@@ -80,7 +80,7 @@ Als u OpenOffice, Microsoft® Word, of Microsoft® PowerPoint op de Server 2008 
    Hiermee kunt u Linux®-gebruikers toevoegen.
 
 1. Wijzig de machtiging voor het bestand e-mail/submenu&#39;s weer in 440.
-1. Sta alle gebruikers toe die u via [ toevoegde een gebruikersrekening ](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegde om verbindingen aan de Server van Forms te maken. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de Forms Server, gebruikt u de volgende opdracht
+1. Sta alle gebruikers toe die u via [&#x200B; toevoegde een gebruikersrekening &#x200B;](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegde om verbindingen aan de Server van Forms te maken. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de Forms Server, gebruikt u de volgende opdracht
 
    `xhost +local:user1@`
 

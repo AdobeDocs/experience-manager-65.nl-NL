@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Forms-toepassingen en -taken beheren in AEM Postvak In{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. Als u een Forms-workflow als toepassing beschikbaar wilt maken in Inbox, maakt u een workflowtoepassing. Voor meer informatie over werkschematoepassing en andere manieren om de werkschema&#39;s van Forms te lanceren, zie [ Lancering een Forms-centric werkschema op OSGi ](../../forms/using/aem-forms-workflow.md#launch).
+Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. Als u een Forms-workflow als toepassing beschikbaar wilt maken in Inbox, maakt u een workflowtoepassing. Voor meer informatie over werkschematoepassing en andere manieren om de werkschema&#39;s van Forms te lanceren, zie [&#x200B; Lancering een Forms-centric werkschema op OSGi &#x200B;](../../forms/using/aem-forms-workflow.md#launch).
 
 Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
-De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over mening en filters, zie [ Uw Inbox ](/help/sites-authoring/inbox.md).
+De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over mening en filters, zie [&#x200B; Uw Inbox &#x200B;](/help/sites-authoring/inbox.md).
 
 Samenvattend kunt u met Inbox een toepassing maken en toegewezen taken beheren.
 
@@ -46,17 +46,17 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
 1. Selecteer deze optie om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de taak worden bovenaan weergegeven.
 
-   ![ selecteren-taak ](assets/select-task.png)
+   ![&#x200B; selecteren-taak &#x200B;](assets/select-task.png)
 
 1. Voer een van de volgende handelingen uit:
 
    * Selecteer **[!UICONTROL Delegate]** als u de taak wilt delegeren. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en selecteer **[!UICONTROL OK]** .
 
-   ![ afgevaardigde ](assets/delegate.png)
+   ![&#x200B; afgevaardigde &#x200B;](assets/delegate.png)
 
    * Selecteer **[!UICONTROL Open]** om de taak op te eisen. Het dialoogvenster Toewijzen aan zelf wordt geopend. Selecteer **[!UICONTROL Proceed]** om de taak te claimen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
 
-   ![ eis ](assets/claim.png)
+   ![&#x200B; eis &#x200B;](assets/claim.png)
 
 ### Details weergeven en handelingen uitvoeren voor taken {#view-details-and-perform-actions-on-tasks}
 
@@ -69,7 +69,7 @@ Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitv
    >
    >Als een taak aan een groep wordt toegewezen, moet u beweren het in gedetailleerde mening kan openen.
 
-![ taak-details ](assets/task-details.png)
+![&#x200B; taak-details &#x200B;](assets/task-details.png)
 
 De gedetailleerde taakmening omvat de volgende secties:
 
@@ -80,7 +80,7 @@ De gedetailleerde taakmening omvat de volgende secties:
 
 #### Taakdetails {#task-details}
 
-In de sectie Taakdetails wordt informatie over de taak weergegeven. De getoonde informatie hangt van de configuratiemontages van [ af wijst taakstap ](/help/sites-developing/workflows-step-ref.md) in het werkschema toe. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
+In de sectie Taakdetails wordt informatie over de taak weergegeven. De getoonde informatie hangt van de configuratiemontages van [&#x200B; af wijst taakstap &#x200B;](/help/sites-developing/workflows-step-ref.md) in het werkschema toe. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
 
 #### Formulier {#form}
 
@@ -88,15 +88,15 @@ Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulie
 
 #### Workflowdetails {#workflow-details}
 
-Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De stadia voor een werkschema worden bepaald in [ wijs taakstap ](/help/sites-developing/workflows-step-ref.md) van het bijbehorende werkschema toe.
+Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De stadia voor een werkschema worden bepaald in [&#x200B; wijs taakstap &#x200B;](/help/sites-developing/workflows-step-ref.md) van het bijbehorende werkschema toe.
 
 Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt **[!UICONTROL View Details]** selecteren voor een voltooid werkgebied om details over dat werkgebied te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
 
-![ werkschema-details ](assets/workflow-details.png)
+![&#x200B; werkschema-details &#x200B;](assets/workflow-details.png)
 
 #### Werkbalk Handelingen {#actions-toolbar}
 
-Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Afgevaardigde standaardacties zijn, worden andere beschikbare acties gevormd in [ toewijzen taakstap ](/help/sites-developing/workflows-step-ref.md). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
+Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Afgevaardigde standaardacties zijn, worden andere beschikbare acties gevormd in [&#x200B; toewijzen taakstap &#x200B;](/help/sites-developing/workflows-step-ref.md). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
 
 Terwijl u aan de taak werkt, gaat het verder in de workflow.
 
@@ -104,22 +104,22 @@ Terwijl u aan de taak werkt, gaat het verder in de workflow.
 
 AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status en begin- en einddatum. Voltooide taken weergeven:
 
-1. In AEM Inbox, uitgezochte ![ knevel-zij-paneel1 ](assets/toggle-side-panel1.png) om de filterselecteur te openen.
+1. In AEM Inbox, uitgezochte ![&#x200B; knevel-zij-paneel1 &#x200B;](assets/toggle-side-panel1.png) om de filterselecteur te openen.
 1. Selecteer **[!UICONTROL Task Status]** accordion en selecteer **[!UICONTROL Complete]** . Alle voltooide taken worden weergegeven.
 
-   ![ filter ](assets/filter.png)
+   ![&#x200B; filter &#x200B;](assets/filter.png)
 
 1. Selecteer deze optie om een taak te selecteren en klik op **[!UICONTROL Open]** .
 
-De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor adaptieve vorm, toont de taak de read-only adaptieve vorm of zijn document van PDF van verslag zoals gevormd in de Vorm/het lusje van het Document van de [ werkschemastap van de Taak toewijzen ](/help/sites-developing/workflows-step-ref.md).
+De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor adaptieve vorm, toont de taak de read-only adaptieve vorm of zijn document van PDF van verslag zoals gevormd in de Vorm/het lusje van het Document van de [&#x200B; werkschemastap van de Taak toewijzen &#x200B;](/help/sites-developing/workflows-step-ref.md).
 
 In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen actie, taakstatus, begindatum en einddatum.
 
-![ voltooid-taak ](assets/completed-task.png)
+![&#x200B; voltooid-taak &#x200B;](assets/completed-task.png)
 
 Op het tabblad **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Selecteer **[!UICONTROL View details]** voor een stap voor meer informatie.
 
-![ volledig-taak-werkschema ](assets/completed-task-workflow.png)
+![&#x200B; volledig-taak-werkschema &#x200B;](assets/completed-task-workflow.png)
 
 ## Problemen oplossen {#troubleshooting-workflows}
 
@@ -140,7 +140,7 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices door middel van een AEM pakket. U kunt een [ AEM Archetype ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL) project gebruiken om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen Archetype:
+   * Implementeer de indices door middel van een AEM pakket. U kunt een [&#x200B; AEM Archetype &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=nl-NL) project gebruiken om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen Archetype:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +150,8 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [ creeer een Index van het Bezit en plaats het aan waar ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL#the-property-index).
+1. [&#x200B; creeer een Index van het Bezit en plaats het aan waar &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL#the-property-index).
 
-1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [ re-index de bewaarplaats ](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [&#x200B; re-index de bewaarplaats &#x200B;](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
 https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=nl-NL

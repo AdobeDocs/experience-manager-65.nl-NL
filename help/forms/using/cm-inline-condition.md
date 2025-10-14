@@ -34,7 +34,7 @@ Zie voor meer informatie:
 
 Als u een zin, alinea of tekenreeks in een interactieve communicatie wilt conditionaliseren, kunt u een regel maken in het desbetreffende tekstdocumentfragment. In het volgende voorbeeld wordt een regel gebruikt om alleen aan de Amerikaanse ontvangers van de interactieve communicatie een gratis nummer weer te geven.
 
-Voor meer informatie, zie tot regel in tekst in [ Teksten in Interactieve Mededelingen ](../../forms/using/texts-interactive-communications.md) leiden.
+Voor meer informatie, zie tot regel in tekst in [&#x200B; Teksten in Interactieve Mededelingen &#x200B;](../../forms/using/texts-interactive-communications.md) leiden.
 
 Zodra u het tekstfragment in een Interactieve Communicatie omvat en de Agent gebruikt de Agent UI om een Interactieve Mededeling voor te bereiden, worden de (model van vormgegevens) gegevens voor de ontvangers geëvalueerd en de tekst wordt getoond slechts aan de ontvangers in de V.S.
 
@@ -48,11 +48,11 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
 1. In de relevante tekstmodule, selecteer het deel van tekst dat u wilt conditionaliseren en **Voorwaarde** selecteren.
 
-   ![ 1_selecttext ](assets/1_selecttext.png)
+   ![&#x200B; 1_selecttext &#x200B;](assets/1_selecttext.png)
 
    Het dialoogvenster Voorwaarde wordt weergegeven met een lege voorwaarde.
 
-   ![ 2_conditiondialog ](assets/2_conditiondialog.png)
+   ![&#x200B; 2_conditiondialog &#x200B;](assets/2_conditiondialog.png)
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Voor meer informatie bij het creëren van de uitdrukking, zie **Creërend uitdrukkingen en verre functies met uitdrukkingsbouwer** in [ de Bouwer van de Uitdrukking ](../../forms/using/expression-builder.md). De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Voor meer informatie, zie [ Woordenboek van Gegevens ](../../forms/using/data-dictionary.md).
+   Voor meer informatie bij het creëren van de uitdrukking, zie **Creërend uitdrukkingen en verre functies met uitdrukkingsbouwer** in [&#x200B; de Bouwer van de Uitdrukking &#x200B;](../../forms/using/expression-builder.md). De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Voor meer informatie, zie [&#x200B; Woordenboek van Gegevens &#x200B;](../../forms/using/data-dictionary.md).
 
    Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. U kunt de handgreep selecteren om het pop-upmenu van de voorwaarde weer te geven. Hiermee kunt u de voorwaarde bewerken of verwijderen.
 
-   ![&#128279;](assets/3_hoverhandle.png) ![ ](assets/4_editconditionremoveconditionpopup.png)
+   ![&#128279;](assets/3_hoverhandle.png) ![&#x200B; &#x200B;](assets/4_editconditionremoveconditionpopup.png)
 
 1. Voeg een vergelijkbare voorwaarde in door de tekst te selecteren `Ma'am` .
 
@@ -83,9 +83,9 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
 
-   Voor meer informatie, zie [ Woordenboek van Gegevens ](../../forms/using/data-dictionary.md).
+   Voor meer informatie, zie [&#x200B; Woordenboek van Gegevens &#x200B;](../../forms/using/data-dictionary.md).
 
-   ![ 5_letteroutput ](assets/5_letteroutput.png)
+   ![&#x200B; 5_letteroutput &#x200B;](assets/5_letteroutput.png)
 
 ## Herhalen {#repeat}
 
@@ -99,7 +99,7 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling om de
 
 1. Voeg in een tekstdocumentfragment dat is gebaseerd op een formuliergegevensmodel de relevante formuliergegevensmodelobjecten in (en ingesloten tekst die is vereist voor de labels, zoals in dit voorbeeld):
 
-   ![ 1_elementstext ](assets/1_elementstext.png)
+   ![&#x200B; 1_elementstext &#x200B;](assets/1_elementstext.png)
 
    >[!NOTE]
    >
@@ -107,13 +107,13 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling om de
 
 1. Selecteer de inhoud waarop u een herhaling wilt toepassen.
 
-   ![ 2_selection ](assets/2_selection.png)
+   ![&#x200B; 2_selection &#x200B;](assets/2_selection.png)
 
 1. Selecteer Herhalen.
 
    Het dialoogvenster Herhalen wordt weergegeven.
 
-   ![ 3_repeatdialog ](assets/3_repeatdialog.png)
+   ![&#x200B; 3_repeatdialog &#x200B;](assets/3_repeatdialog.png)
 
 1. Selecteer Regeleinde als scheidingsteken en selecteer, indien nodig, Voorwaarde toevoegen om een regel te maken. U kunt tekst ook als scheidingsteken gebruiken en de teksttekens opgeven die als scheidingsteken moeten worden gebruikt.
 
@@ -125,17 +125,17 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling om de
    >
    >In dit voorbeeld wordt ervan uitgegaan dat de Agent de instructie eind maart 2018 zal maken. Anders kunt u een andere regel maken om transacties vóór 2018-04-01 op te nemen om transacties na maart 2018 uit te sluiten.
 
-   ![ 4_createrule ](assets/4_createrule.png)
+   ![&#x200B; 4_createrule &#x200B;](assets/4_createrule.png)
 
 1. Sla de voorwaarde/regel op en sla de herhaling op. Voorwaardelijke herhaling wordt toegepast op de geselecteerde inhoud.
 
-   ![ 5_onmouseoverconditionrule ](assets/5_onmouseoverconditionrule.png)
+   ![&#x200B; 5_onmouseoverconditionrule &#x200B;](assets/5_onmouseoverconditionrule.png)
 
    Als u de muis erboven plaatst, worden in het tekstdocumentfragment de voorwaarde en het scheidingsteken weergegeven die worden gebruikt in de herhaling die op de inhoud is toegepast.
 
 1. Sla het tekstdocumentfragment op en bekijk een voorvertoning van de relevante interactieve communicatie. Afhankelijk van de gegevens in het formuliergegevensmodel geeft de herhaling die op de elementen is toegepast, de transactiedetails weer zoals in het voorbeeld:
 
-   ![ screen_shot_2018-03-09at155516copy ](assets/screen_shot_2018-03-09at155516copy.png)
+   ![&#x200B; screen_shot_2018-03-09at155516copy &#x200B;](assets/screen_shot_2018-03-09at155516copy.png)
 
 ### Voorbeeld: Herhaling in een letter gebruiken om een lijst met creditcardtransacties op te maken, te structureren en weer te geven {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
@@ -154,7 +154,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
 1. Sluit de tekst in de DD-elementen in om de instructie leesbaarder te maken, zoals:
 
-   ![ 1_repeat ](assets/1_repeat.png)
+   ![&#x200B; 1_repeat &#x200B;](assets/1_repeat.png)
 
    ```javascript
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
@@ -162,17 +162,17 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    De taak om een instructie met een goede indeling weer te geven, is echter nog niet voltooid. Als u een brief teruggeeft die op het tot dusver verrichte werk wordt gebaseerd, verschijnt het als volgt:
 
-   ![ 1_1renderwithoutrepeat ](assets/1_1renderwithoutrepeat.png)
+   ![&#x200B; 1_1renderwithoutrepeat &#x200B;](assets/1_1renderwithoutrepeat.png)
 
    Als u de statische tekst samen met de DD-elementen wilt herhalen, moet u een herhaling toepassen, zoals in de volgende stappen wordt uitgelegd.
 
 1. Selecteer de statische tekst en de DD-elementen die u wilt herhalen, zoals hieronder wordt getoond:
 
-   ![ 2_repeat_selecttext ](assets/2_repeat_selecttext.png)
+   ![&#x200B; 2_repeat_selecttext &#x200B;](assets/2_repeat_selecttext.png)
 
 1. Selecteer **Herhaal**. Het dialoogvenster Herhalen wordt weergegeven met een lege inline voorwaarde.
 
-   ![ 3_repeat_dialog ](assets/3_repeat_dialog.png)
+   ![&#x200B; 3_repeat_dialog &#x200B;](assets/3_repeat_dialog.png)
 
 1. Voeg zo nodig een voorwaarde in om de transacties selectief te renderen, zoals het renderen van transactiebedragen groter dan 50 cent:
 
@@ -189,20 +189,20 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    Nadat de voorwaarde is ingevoegd, wordt de tekst met de herhaling rood gemarkeerd en wordt er een greep aan de linkerkant weergegeven. U kunt de aanwijzer boven de greep links van de herhaling plaatsen om de herhalingsconstructie weer te geven.
 
-   ![ 4_repeat_hoverdetail ](assets/4_repeat_hoverdetail.png)
+   ![&#x200B; 4_repeat_hoverdetail &#x200B;](assets/4_repeat_hoverdetail.png)
 
    U kunt de handgreep selecteren om het pop-upmenu van de herhaling weer te geven. Hiermee kunt u de herhalingsconstructie bewerken of verwijderen.
 
-   ![ 5_repeateditremove ](assets/5_repeateditremove.png)
+   ![&#x200B; 5_repeateditremove &#x200B;](assets/5_repeateditremove.png)
 
 1. Geef een voorvertoning van de relevante letter weer. U ziet dat de tekst volgens herhaling wordt weergegeven. U kunt de waarde van DD-elementen invoeren met:
 
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
 
-   Voor meer informatie, zie [ Woordenboek van Gegevens ](https://helpx.adobe.com/nl/aem-forms/6-2/data-dictionary.html).
+   Voor meer informatie, zie [&#x200B; Woordenboek van Gegevens &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-2/data-dictionary.html).
 
-   ![ 6_repeatOutputPreview ](assets/6_repeatoutputpreview.png)
+   ![&#x200B; 6_repeatOutputPreview &#x200B;](assets/6_repeatoutputpreview.png)
 
    De statische tekst wordt herhaald met de transactiedetails. Herhalende statische tekst wordt vergemakkelijkt door de herhaling die op de tekst in deze procedure wordt toegepast. De voorwaarde, ${DD_creditcard_TransactionAmount > 0.5}, zorgt ervoor dat de transacties onder USD.5 niet in de brief worden teruggegeven.
 
@@ -220,7 +220,7 @@ Hierna volgt bijvoorbeeld een herhaling (in rood opgemaakt) binnen een voorwaard
 
 Terwijl de herhaling de creditcardtransacties teruggeeft, zorgt de voorwaarde ${DD_creditcard_nooftransactions > 0} ervoor dat de herhalingsconstructie slechts wordt teruggegeven als er minstens één transactie is.
 
-![ repeatwitincondition ](assets/repeatwitincondition.png)
+![&#x200B; repeatwitincondition &#x200B;](assets/repeatwitincondition.png)
 
 Op dezelfde manier kunt u, afhankelijk van uw vereiste, tot stand brengen:
 
@@ -232,6 +232,6 @@ Op dezelfde manier kunt u, afhankelijk van uw vereiste, tot stand brengen:
 
 Mogelijk moet u lege inline-voorwaarden invoegen en later tekst en DD-elementen insluiten. Met Correspondence Management kunt u dat doen.
 
-![ emptycondition ](assets/emptycondition.png)
+![&#x200B; emptycondition &#x200B;](assets/emptycondition.png)
 
 Het wordt echter aanbevolen om indien mogelijk eerst de tekst en de DD-elementen in de tekstmodule in te voegen met de gewenste opmaak, zoals opsommingstekens, en nadien een inline-voorwaarde toe te passen.

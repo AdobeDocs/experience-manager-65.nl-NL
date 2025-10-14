@@ -20,13 +20,13 @@ AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle c
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
-1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+1. Open [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de sectie **[!UICONTROL Filters]** :
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
 1. Als u het broncodearchief wilt downloaden, opent u `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in uw browser.\
@@ -34,11 +34,11 @@ Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
 In de volgende afbeelding wordt de geëxtraheerde inhoud van de `adobe-lc-mobileworkspace-src-<version>.zip` weergegeven.
 
-![ mws-content-1 ](assets/mws-content-1.png)
+![&#x200B; mws-content-1 &#x200B;](assets/mws-content-1.png)
 
 In de volgende afbeelding wordt de mapstructuur van de map `windows` in de map `src` weergegeven.
 
-![ win-dir ](assets/win-dir.png)
+![&#x200B; win-dir &#x200B;](assets/win-dir.png)
 
 ## Het milieu instellen {#setting-up-the-environment}
 
@@ -70,7 +70,7 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 1. Selecteer Windows-AnyCPU, Windows-x64 of Windows-x86 op basis van uw platform. Windows-AnyCPU wordt aanbevolen.
 1. In de Ontdekkingsreiziger van de Oplossing van Visual Studio, klik het project **CordovaApp.Windows** met de rechtermuisknop aan en selecteer **Opslag > Create AppPackages**.
 
-   ![ createapppackages ](assets/createapppackages.png)
+   ![&#x200B; createapppackages &#x200B;](assets/createapppackages.png)
 
    De wizard App Packages maken wordt weergegeven.
 
@@ -78,15 +78,15 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 
    Als u de fout `Retarget to windows 8.1 required` ontmoet, klik de fout en in pop-up menu met de rechtermuisknop aan, uitgezochte **Winst aan Vensters 8.1**.
 
-   ![ retarget-solution ](assets/retarget-solution.png)
+   ![&#x200B; retarget-solution &#x200B;](assets/retarget-solution.png)
 
 1. In Create App Packages tovenaar, selecteer weer of niet wilt u uw app aan de venstersopslag uploaden en dan **daarna** klikken.
 
-   ![ createapppackageswizard1 ](assets/createapppackageswizard1.png)
+   ![&#x200B; createapppackageswizard1 &#x200B;](assets/createapppackageswizard1.png)
 
 1. Breng de gewenste wijzigingen aan in de parameters, zoals de versie en uitvoerlocatie van de build van de app.
 
-   ![ createapppackageswizard2 ](assets/createapppackageswizard2.png)
+   ![&#x200B; createapppackageswizard2 &#x200B;](assets/createapppackageswizard2.png)
 
 1. Nadat het project is gemaakt, kunt u de app installeren met:
 
@@ -148,14 +148,14 @@ Voor apparaten die geen domeinverbinding hebben, is de sideladende sleutel van d
 
 Voor Windows 8.1 Home Edition, is er geen groepsbeleid, wordt de onderneming zijladen niet toegestaan, en u kunt zich niet bij het met het ondernemingsdomein aansluiten. Implementeer de app op een Windows 8.1 Home Edition-apparaat met een ontwikkelaarslicentie.
 
-Voor meer informatie, klik [ hier ](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
+Voor meer informatie, klik [&#x200B; hier &#x200B;](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
 ## Het opstellen van een app die Visual Studio gebruikt {#deploying-an-app-using-visual-studio}
 
 Om app op Vensters te installeren gebruikend Visual Studio:
 
 1. Sluit het apparaat aan met extern foutopsporingsprogramma.\
-   Voor meer informatie, zie [ apps van de Opslag van Vensters van de Looppas op een verre machine ](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
+   Voor meer informatie, zie [&#x200B; apps van de Opslag van Vensters van de Looppas op een verre machine &#x200B;](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
 1. Met uw open app in Visual Studio, kies Vensters-x64, Vensters-x86, of Vensters-AnyCPU van de lijst van de Platforms van de Oplossing, en selecteer **Verre Machine**.
 1. Uw app wordt geïmplementeerd op de externe computer.

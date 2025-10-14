@@ -101,11 +101,11 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
 
 ### Gebruikersinterface selecteren {#selecting-your-ui}
 
-Zie [ Selecterend Uw UI ](/help/sites-authoring/select-ui.md) voor informatie over het vormen van uw systeem zoals vereist.
+Zie [&#x200B; Selecterend Uw UI &#x200B;](/help/sites-authoring/select-ui.md) voor informatie over het vormen van uw systeem zoals vereist.
 
 ### UI-status voor aanraking {#touch-enabled-ui-status}
 
-Voor details van de verhogingen die aan touch-Toegelaten UI in AEM 6.5 worden aangebracht zie [ wat ](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
+Voor details van de verhogingen die aan touch-Toegelaten UI in AEM 6.5 worden aangebracht zie [&#x200B; wat &#x200B;](/help/release-notes/release-notes.md#what-s-new) in de Nota&#39;s van de Versie Nieuw is.
 
 Een volledig overzicht ziet de [&#128279;](/help/release-notes/touch-ui-features-status.md) pagina van de Status van de Eigenschap van 0&rbrace; Aanraakinterface
 
@@ -113,17 +113,17 @@ Een volledig overzicht ziet de [&#128279;](/help/release-notes/touch-ui-features
 
 Voor achtergrondinformatie over basisverwerking:
 
-* [ Authoring Pagina&#39;s ](/help/sites-authoring/page-authoring.md).
+* [&#x200B; Authoring Pagina&#39;s &#x200B;](/help/sites-authoring/page-authoring.md).
 
 Voor gedetailleerde ontwikkelingsinformatie:
 
-* [ Aanraakgevoelige architectuur UI ](/help/sites-developing/touch-ui-concepts.md).
-* Gebruik de [ Hulpmiddelen van de Modernisering van AEM ](/help/sites-developing/modernization-tools.md) om component uit te zetten geeft dialogen van klassieke UI in aanraking-toegelaten UI uit.
+* [&#x200B; Aanraakgevoelige architectuur UI &#x200B;](/help/sites-developing/touch-ui-concepts.md).
+* Gebruik de [&#x200B; Hulpmiddelen van de Modernisering van AEM &#x200B;](/help/sites-developing/modernization-tools.md) om component uit te zetten geeft dialogen van klassieke UI in aanraking-toegelaten UI uit.
 
-* [ Structuur van aanraking-toegelaten UI ](/help/sites-developing/touch-ui-structure.md).
+* [&#x200B; Structuur van aanraking-toegelaten UI &#x200B;](/help/sites-developing/touch-ui-structure.md).
 
-* [ die de consoles in aanraking-toegelaten UI aanpassen ](/help/sites-developing/customizing-consoles-touch.md) (omvat steekproefcode).
+* [&#x200B; die de consoles in aanraking-toegelaten UI aanpassen &#x200B;](/help/sites-developing/customizing-consoles-touch.md) (omvat steekproefcode).
 
-* [ het Aanpassen van pagina authoring in touch-enabled UI ](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
+* [&#x200B; het Aanpassen van pagina authoring in touch-enabled UI &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
 
 * {de documentatie van 0} granite UI [&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).

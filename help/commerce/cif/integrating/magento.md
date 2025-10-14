@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Integratie van AEM en Adobe Commerce (Magento) met Commerce integration framework {#aem-commerce-framework}
 
-De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Commerce integration framework (CIF). CIF laat AEM toe om tot direct toegang te hebben en met de handelsinstantie te communiceren gebruikend Adobe Commerce [ GraphQL APIs ](https://devdocs.magento.com/guides/v2.4/graphql/).
+De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Commerce integration framework (CIF). CIF laat AEM toe om tot direct toegang te hebben en met de handelsinstantie te communiceren gebruikend Adobe Commerce [&#x200B; GraphQL APIs &#x200B;](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
@@ -25,23 +25,23 @@ De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met het Comm
 
 De architectuur ziet er als volgt uit:
 
-![ CIF het Overzicht van de Architectuur ](../assets/AEM_Magento_Architecture.png)
+![&#x200B; CIF het Overzicht van de Architectuur &#x200B;](../assets/AEM_Magento_Architecture.png)
 
 Binnen CIF, is er steun voor server-kant en cliënt-zijcommunicatie patronen.
-De server-kant APIs vraag wordt uitgevoerd gebruikend de bouwstijl-binnen, generische [ cliënt van GraphQL ](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met a [ reeks geproduceerde gegevensmodellen ](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van handelsGraphQL. Daarnaast kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
+De server-kant APIs vraag wordt uitgevoerd gebruikend de bouwstijl-binnen, generische [&#x200B; cliënt van GraphQL &#x200B;](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met a [&#x200B; reeks geproduceerde gegevensmodellen &#x200B;](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van handelsGraphQL. Daarnaast kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
 
-Voor de cliënt-zijcomponenten, die gebruikend [ React ](https://reactjs.org/) bouwen, wordt de [ Cliënt van Apollo ](https://www.apollographql.com/docs/react/) gebruikt.
+Voor de cliënt-zijcomponenten, die gebruikend [&#x200B; React &#x200B;](https://reactjs.org/) bouwen, wordt de [&#x200B; Cliënt van Apollo &#x200B;](https://www.apollographql.com/docs/react/) gebruikt.
 
 ## AEM CIF Core Component Architecture {#cif-core-components}
 
-![ AEM CIF de Architectuur van de Component van de Kern ](../assets/cif-component-architecture.jpg)
+![&#x200B; AEM CIF de Architectuur van de Component van de Kern &#x200B;](../assets/cif-component-architecture.jpg)
 
-[ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals [ AEM de Componenten van de Kern WCM ](https://github.com/adobe/aem-core-wcm-components).
+[&#x200B; AEM CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components) volgen zeer gelijkaardige ontwerppatronen en beste praktijken zoals [&#x200B; AEM de Componenten van de Kern WCM &#x200B;](https://github.com/adobe/aem-core-wcm-components).
 
 De bedrijfslogica en de achtergrondcommunicatie met Adobe Commerce voor de AEM CIF Core Components wordt geïmplementeerd in Sling Models. Als deze logica moet worden aangepast om aan projectspecifieke vereisten te voldoen, kan het delegatiepatroon voor Sling Models worden gebruikt.
 
 >[!TIP]
 >
->[ het Aanpassen AEM CIF de pagina van de Componenten van de Kern ](../customizing/customize-cif-components.md) heeft een gedetailleerd voorbeeld en beste praktijken op hoe te om CIF Componenten van de Kern aan te passen.
+>[&#x200B; het Aanpassen AEM CIF de pagina van de Componenten van de Kern &#x200B;](../customizing/customize-cif-components.md) heeft een gedetailleerd voorbeeld en beste praktijken op hoe te om CIF Componenten van de Kern aan te passen.
 
 Binnen projecten, AEM CIF de Componenten van de Kern en de componenten van het douaneproject gemakkelijk de gevormde cliënt voor een opslag van Adobe Commerce verbonden aan een AEM pagina via het Verdelen van context-Aware configuratie terugwinnen.

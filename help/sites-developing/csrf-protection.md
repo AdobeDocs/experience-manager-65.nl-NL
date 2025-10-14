@@ -34,17 +34,17 @@ Elke component die afhankelijk is van `granite.jquery` , kan automatisch profite
 
 ### De crypto-sleutel repliceren {#replicating-crypto-keys}
 
-Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [ het Repliceren van de sleutel HMAC ](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer details.
+Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [&#x200B; het Repliceren van de sleutel HMAC &#x200B;](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer details.
 
 >[!NOTE]
 >
 >Zorg ervoor u ook de noodzakelijke de configuratieveranderingen van Dispatcher aanbrengt om het Kader van de Bescherming te gebruiken CSRF:
 >
->* [ Vormend Adobe Experience Manager Dispatcher om Aanvallen te verhinderen CSRF ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
->* [ het Overzicht van Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher)
+>* [&#x200B; Vormend Adobe Experience Manager Dispatcher om Aanvallen te verhinderen CSRF &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [&#x200B; het Overzicht van Dispatcher &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast toevoegt;**&quot;aan manifest om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Voor meer informatie, raadpleeg deze [ verbinding ](https://www.w3.org/TR/offline-webapps/).
+>Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast toevoegt;**&quot;aan manifest om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Voor meer informatie, raadpleeg deze [&#x200B; verbinding &#x200B;](https://www.w3.org/TR/offline-webapps/).
 >
->Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de [ pagina van het Verzoek van de Versmeding van de Versmeding van de Departerie OWASP ](https://owasp.org/www-community/attacks/csrf).
+>Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de [&#x200B; pagina van het Verzoek van de Versmeding van de Versmeding van de Departerie OWASP &#x200B;](https://owasp.org/www-community/attacks/csrf).

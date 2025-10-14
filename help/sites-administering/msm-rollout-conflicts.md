@@ -76,7 +76,7 @@ In de volgende secties gebruikt u het voorbeeld van een nieuwe pagina `b` die zo
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
-Dit wordt gedaan gebruikend de [ configuratie OSGi ](/help/sites-deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**:
+Dit wordt gedaan gebruikend de [&#x200B; configuratie OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) van **de Manager van de Uitvoer van CQ WCM van de Dag**:
 
 * **de conflicten van de handvat met manueel gecreeerde Pagina&#39;s**:
 
@@ -84,7 +84,7 @@ Dit wordt gedaan gebruikend de [ configuratie OSGi ](/help/sites-deploying/confi
 
   Ingesteld op true als de rollout manager conflicten moet verwerken van een pagina die in de live kopie is gemaakt met een naam die in de blauwdruk voorkomt.
 
-AEM heeft [ vooraf bepaald gedrag wanneer het conflictbeheer ](#behavior-when-conflict-handling-deactivated) is gedeactiveerd.
+AEM heeft [&#x200B; vooraf bepaald gedrag wanneer het conflictbeheer &#x200B;](#behavior-when-conflict-handling-deactivated) is gedeactiveerd.
 
 ## Conflicthandlers {#conflict-handlers}
 
@@ -92,11 +92,11 @@ AEM gebruikt conflicthandlers om eventuele paginaconflicten op te lossen die bes
 
 AEM biedt:
 
-* De [ standaardconflictmanager ](#default-conflict-handler):
+* De [&#x200B; standaardconflictmanager &#x200B;](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
-* De mogelijkheid om a [ aangepaste manager ](#customized-handlers) uit te voeren.
+* De mogelijkheid om a [&#x200B; aangepaste manager &#x200B;](#customized-handlers) uit te voeren.
 * Het de dienstrangschikkingsmechanisme dat u de prioriteit van elke individuele manager laat plaatsen. De dienst met het hoogste rangschikken wordt gebruikt.
 
 ### Standaardconflicthandler {#default-conflict-handler}
@@ -158,7 +158,7 @@ Aangepaste conflicthandlers kunnen het volgende hebben:
 
 * Benoemd op basis van uw vereisten.
 * Ontwikkeld/gevormd volgens uw vereisten; bijvoorbeeld, kunt u een manager ontwikkelen zodat de levende exemplaarpagina belangrijkheid wordt gegeven.
-* Ontworpen om worden gevormd gebruikend de [ configuratie OSGi ](/help/sites-deploying/configuring-osgi.md); in het bijzonder:
+* Ontworpen om worden gevormd gebruikend de [&#x200B; configuratie OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md); in het bijzonder:
 
    * **Rangschikking van de Dienst**:
 
@@ -168,7 +168,7 @@ Aangepaste conflicthandlers kunnen het volgende hebben:
 
 ### Gedrag wanneer Conflict afhandelen gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u manueel [ conflicten behandeling ](#rollout-manager-and-conflict-handling) deactiveert, dan neemt AEM geen actie op om het even welke conflicterende pagina&#39;s (de niet-conflicterende pagina&#39;s worden opgesteld zoals verwacht).
+Als u manueel [&#x200B; conflicten behandeling &#x200B;](#rollout-manager-and-conflict-handling) deactiveert, dan neemt AEM geen actie op om het even welke conflicterende pagina&#39;s (de niet-conflicterende pagina&#39;s worden opgesteld zoals verwacht).
 
 >[!CAUTION]
 >
@@ -209,4 +209,4 @@ In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `
 
 ### Servicebeoordelingen {#service-rankings}
 
-De [ OSGi ](https://www.osgi.org/) dienst rangschikt kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.
+De [&#x200B; OSGi &#x200B;](https://www.osgi.org/) dienst rangschikt kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.

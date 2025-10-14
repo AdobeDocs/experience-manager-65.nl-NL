@@ -40,7 +40,7 @@ In dit scenario ziet u hoe u een aangepaste eigenschap kunt toevoegen aan alle e
 >
 >Als u al een aangepaste eigenschap hebt toegevoegd, wordt de eigenschap weergegeven op de pagina voor het maken van elementen. Zie Aangepaste eigenschappen bij het maken van elementen en de pagina&#39;s Eigenschappen tonen/verbergen om een dergelijke eigenschap te verbergen.
 
-![ Bezit van de Douane dat aan alle activatypes wordt toegevoegd ](assets/lcoationofrecipientsui.png)
+![&#x200B; Bezit van de Douane dat aan alle activatypes wordt toegevoegd &#x200B;](assets/lcoationofrecipientsui.png)
 
 Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle elementtypen en letters:
 
@@ -51,7 +51,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-      ![ knoop van de Bedekking ](assets/itemsoverlaynode.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/itemsoverlaynode.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -61,7 +61,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
       **de Types van Knoop van de Gelijke:** Geselecteerd
 
-      ![ knoop van de Bedekking ](assets/cmmetapropertiesoverlaynode.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/cmmetapropertiesoverlaynode.png)
 
    1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
@@ -71,7 +71,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    1. Klik met de rechtermuisknop op de map Items en selecteer **Maken** > **Knooppunt maken** .
 
-      ![ creeer knoop in CRX ](assets/itemscreatenode.png)
+      ![&#x200B; creeer knoop in CRX &#x200B;](assets/itemscreatenode.png)
 
    1. Zorg ervoor dat de Create dialoog van de Knoop de volgende waarden heeft en klik **O.K.**:
 
@@ -79,7 +79,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
       **Type:** niet:ongestructureerd
 
-      ![ creeer knoop: GeoLocation ](assets/geographicallocationcreatenode.png)
+      ![&#x200B; creeer knoop: GeoLocation &#x200B;](assets/geographicallocationcreatenode.png)
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier GeoLocation). CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg de volgende eigenschappen toe aan het knooppunt (hier GeoLocation):
@@ -99,7 +99,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
    >
    >Mogelijk moet u de browsercache wissen voordat de aanpassing in de gebruikersinterface wordt weergegeven.
 
-   ![ Bezit van de Douane dat aan alle activa ](assets/lcoationofrecipientsui-1.png) wordt toegevoegd
+   ![&#x200B; Bezit van de Douane dat aan alle activa &#x200B;](assets/lcoationofrecipientsui-1.png) wordt toegevoegd
 
    >[!NOTE]
    >
@@ -173,17 +173,17 @@ Maak een knooppunt voor elk van de eigenschappen (velden) waarvoor u een vervolg
          </tbody>
    </table>
 
-   ![ customizationdropdownvaluescrxde ](assets/customizationdropdownvaluescrxde.png)
+   ![&#x200B; customizationdropdownvaluescrxde &#x200B;](assets/customizationdropdownvaluescrxde.png)
 
 De aangepaste vervolgkeuzelijst wordt als volgt weergegeven in de eigenschappen van elementen:
 
-![ drop-down_customization ](assets/drop-down_customization.png)
+![&#x200B; drop-down_customization &#x200B;](assets/drop-down_customization.png)
 
 ### Scenario: tabblad Algemeen voor alle typen elementen {#scenario-common-tab-for-all-asset-types}
 
 In dit scenario ziet u hoe u een aangepast tabblad, Ontvangers, kunt toevoegen aan alle elementtypen (tekst, lijst, voorwaarde en layoutfragmenten) en aan de letters. Op het tabblad Ontvangers kunt u alle aangepaste eigenschappen die relevant zijn voor de ontvangers plaatsen.
 
-![ Aangepast lusje dat voor alle activatypes wordt toegevoegd ](assets/recipientstab.png)
+![&#x200B; Aangepast lusje dat voor alle activatypes wordt toegevoegd &#x200B;](assets/recipientstab.png)
 
 Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw elementen:
 
@@ -194,7 +194,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
-      ![ knoop van de Bedekking ](assets/cmmetadatapropertiesoverlaynode.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/cmmetadatapropertiesoverlaynode.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -206,7 +206,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-      ![ de omslagstructuur van de Bedekking die in CRX ](assets/cmmetadatapropertiesappsfolder.png) wordt gecreeerd
+      ![&#x200B; de omslagstructuur van de Bedekking die in CRX &#x200B;](assets/cmmetadatapropertiesappsfolder.png) wordt gecreeerd
 
       Klik **sparen allen**.
 
@@ -214,7 +214,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    1. Klik met de rechtermuisknop op de map cmmetadataproperties en selecteer **Maken** > **Knop maken** .
 
-      ![ creeer knoop ](assets/cmmetadatapropertiescreatenode.png)
+      ![&#x200B; creeer knoop &#x200B;](assets/cmmetadatapropertiescreatenode.png)
 
    1. Zorg ervoor dat de Create dialoog van de Knoop de volgende waarden heeft en klik **O.K.**:
 
@@ -375,7 +375,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
    >
    >Mogelijk moet u de browsercache wissen voordat de aanpassing in de gebruikersinterface wordt weergegeven.
 
-   ![ Aangepast lusje dat aan brieven ](assets/recipientstab-1.png) wordt toegevoegd
+   ![&#x200B; Aangepast lusje dat aan brieven &#x200B;](assets/recipientstab-1.png) wordt toegevoegd
 
 ### Scenario: aangepaste eigenschappen toevoegen voor specifieke elementtypen {#scenario-adding-custom-properties-for-specific-asset-types}
 
@@ -388,7 +388,7 @@ In dit scenario ziet u hoe u een eigenschap aan een bepaald elementtype kunt toe
 * Gegevenswoordenboek
 * Letter
 
-Als u bijvoorbeeld alleen de tekstelementen wilt bewerken, wilt u een eigenschap, Locatie van ontvangers, toevoegen om aan te geven voor welk geografisch gebied een element relevant is.  ![ Bezit van de Douane dat aan activa ](assets/newtabui.png) wordt toegevoegd
+Als u bijvoorbeeld alleen de tekstelementen wilt bewerken, wilt u een eigenschap, Locatie van ontvangers, toevoegen om aan te geven voor welk geografisch gebied een element relevant is.  ![&#x200B; Bezit van de Douane dat aan activa &#x200B;](assets/newtabui.png) wordt toegevoegd
 
 Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen:
 
@@ -409,7 +409,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/text/items/tabs/items`
 
-      ![ knoop van de Bedekking ](assets/textitemstabsitemsoverlaynode1.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/textitemstabsitemsoverlaynode1.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -514,7 +514,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
    >
    >Mogelijk moet u de browsercache wissen voordat de aanpassing in de gebruikersinterface wordt weergegeven.
 
-   ![ Bezit van de Douane dat aan een specifiek bezit wordt toegevoegd ](assets/newtabui-1.png)
+   ![&#x200B; Bezit van de Douane dat aan een specifiek bezit wordt toegevoegd &#x200B;](assets/newtabui-1.png)
 
 ### Aangepaste eigenschappen weergeven op de pagina voor het maken van elementen {#display-custom-properties-on-the-asset-creation-page}
 
@@ -576,7 +576,7 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
  </tbody>
 </table>
 
-![ customfieldAppeinginmainproperties ](assets/customfieldappearinginmainproperties.png)
+![&#x200B; customfieldAppeinginmainproperties &#x200B;](assets/customfieldappearinginmainproperties.png)
 
 Aangepaste eigenschap, taal, die wordt weergegeven in de gebruikersinterface voor het maken van een letter
 
@@ -731,7 +731,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    Zo kunt u bijvoorbeeld met het scenario Scenario: Aangepaste eigenschappen toevoegen voor specifieke elementtypen die u een aangepaste eigenschap toevoegt aan tekstelementen, en alleen aangepaste eigenschappen invoeren voor tekstelementen. Als u die aangepaste eigenschap echter weergeeft in de gebruikersinterface, wordt de kolom weergegeven voor alle elementtypen.
 
-   ![ custompropertyinlistview ](assets/custompropertyinlistview.png)
+   ![&#x200B; custompropertyinlistview &#x200B;](assets/custompropertyinlistview.png)
 
 1. (Optioneel) Standaard wordt de nieuwe kolom weergegeven als de laatste kolom in de gebruikersinterface. Als u de kolom op een specifieke positie wilt weergeven, voegt u de volgende eigenschap toe aan het kolomknooppunt:
 

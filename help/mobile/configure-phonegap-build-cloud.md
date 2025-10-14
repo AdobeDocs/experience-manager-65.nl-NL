@@ -26,7 +26,7 @@ Alle gesteunde platforms die binnen de **worden bepaald leiden App** tegel worde
 
 U kunt een externe build naar `https://build.phonegap.com` duwen of de bron downloaden om lokaal te bouwen met PhoneGap CLI op `https://docs.phonegap.com/references/phonegap-cli/` .
 
-![ PhoneGap Build Tile ](assets/chlimage_1-60.png)
+![&#x200B; PhoneGap Build Tile &#x200B;](assets/chlimage_1-60.png)
 
 ## De Cloud Service configureren {#configuring-the-cloud-service}
 
@@ -34,7 +34,7 @@ Om uit PhoneGap Build voordeel te halen, moet u de Cloud Service van AEM PhoneGa
 
 Als u momenteel geen account hebt, navigeert u naar `https://build.phonegap.com` en meldt u zich aan! Als u een Adobe Creative Cloud-lidmaatschap hebt, hebt u mogelijk ondersteuning voor maximaal 25 persoonlijke apps (apps zonder open bron).
 
-Zodra u hebt geverifieerd uw rekening van PhoneGap Build actief is, navigeer aan uw Console van het Beheer van de Wolk van de AEM, specifiek de [ Cloud Service van PhoneGap Build ](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Zodra u hebt geverifieerd uw rekening van PhoneGap Build actief is, navigeer aan uw Console van het Beheer van de Wolk van de AEM, specifiek de [&#x200B; Cloud Service van PhoneGap Build &#x200B;](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
 Gebruik **beheer Cloud Servicen** tegel om een nieuwe configuratie van de wolkendienst te vormen.
 
@@ -46,25 +46,25 @@ Volg onderstaande stappen om cloudservices voor uw app te configureren:
 
 1. Klik de hoogste-juiste hoek van **beheren Cloud Servicen** tegel.
 
-   ![ chlimage_1-61 ](assets/chlimage_1-61.png)
+   ![&#x200B; chlimage_1-61 &#x200B;](assets/chlimage_1-61.png)
 
 1. Kies **PhoneGap Build** optie van **toevoegen of het scherm van de Cloud Service** uitgeven.
 
    Klik op **Next**.
 
-   ![ chlimage_1-62 ](assets/chlimage_1-62.png)
+   ![&#x200B; chlimage_1-62 &#x200B;](assets/chlimage_1-62.png)
 
 1. Voer uw gegevens in zodat u een cloudconfiguratie kunt maken.
 
    Zodra het wordt geverifieerd, klik **voorleggen**. Deze gevormde wolkenconfiguratie toont nu in **beheert Cloud Servicen** tegel.
 
-   ![ chlimage_1-63 ](assets/chlimage_1-63.png)
+   ![&#x200B; chlimage_1-63 &#x200B;](assets/chlimage_1-63.png)
 
 ### Uw toepassing samenstellen met PhoneGap Build {#building-your-application-with-phonegap-build}
 
 Zodra u de wolkendiensten hebt gevormd, kunt u uw toepassing met **PhoneGap Build** tegel bouwen. Klik de top-juiste hoek zodat kunt u van **kiezen bouwt Verre** of **download Source** opties.
 
-![ chlimage_1-64 ](assets/chlimage_1-64.png)
+![&#x200B; chlimage_1-64 &#x200B;](assets/chlimage_1-64.png)
 
 Om ver aan te halen bouwt met Adobe PhoneGap Build, klik **Verre Bouwstijl**.
 

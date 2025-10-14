@@ -24,7 +24,7 @@ AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van be
 * Gecontroleerde map gebruiken
 * E-mail gebruiken
 
-Voor meer informatie over het creëren van het werkschemaproces van AEM Forms JEE, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_65).
+Voor meer informatie over het creëren van het werkschemaproces van AEM Forms JEE, zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
@@ -61,7 +61,7 @@ Voer de volgende stappen uit zodat u procesinstantie-id&#39;s kunt identificeren
    De query retourneert taken die door de opgegeven `initiator`_ `principal_id` zijn gestart. De taken zijn van twee typen:
 
    * **Voltooide taken**: Deze taken zijn voorgelegd en tonen een alfanumerieke waarde op het `process_instance_id` gebied. Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
-   * **in werking gestelde maar niet volledige Taken**: Deze taken hebben in werking gesteld maar nog niet voorgelegd. De waarde op het `process_instance_id` gebied voor deze taken is **0** (nul). In dit geval, neem nota van overeenkomstige taak IDs en zie [ Werk met wezen taken ](#orphan).
+   * **in werking gestelde maar niet volledige Taken**: Deze taken hebben in werking gesteld maar nog niet voorgelegd. De waarde op het `process_instance_id` gebied voor deze taken is **0** (nul). In dit geval, neem nota van overeenkomstige taak IDs en zie [&#x200B; Werk met wezen taken &#x200B;](#orphan).
 
 1. (**voor werkschemadeelnemers**) voer het volgende bevel uit om procesinstantie IDs terug te winnen verbonden aan belangrijkste identiteitskaart van de procesdeelnemer voor de initiatiefnemer van de `tb_assignment` gegevensbestandlijst.
 
@@ -73,9 +73,9 @@ Voer de volgende stappen uit zodat u procesinstantie-id&#39;s kunt identificeren
 
    Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
 
-   Voor wezen taken of taken waar `process_instance_id` 0 (nul) is, neem nota van overeenkomstige taak IDs en zie [ Werk met wezen taken ](#orphan).
+   Voor wezen taken of taken waar `process_instance_id` 0 (nul) is, neem nota van overeenkomstige taak IDs en zie [&#x200B; Werk met wezen taken &#x200B;](#orphan).
 
-1. Volg de instructies in [ zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie ](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
+1. Volg de instructies in [&#x200B; zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie &#x200B;](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
 
 ### Id&#39;s van procesinstanties identificeren wanneer gebruikersgegevens worden opgeslagen in primitieve variabelen {#primitive}
 
@@ -111,7 +111,7 @@ Voer de volgende stappen uit zodat u kunt bepalen of een werkschema dat gegevens
 
    De query retourneert alle procesinstantie-id&#39;s die aan de opgegeven `user_ID` zijn gekoppeld.
 
-1. Volg de instructies in [ zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie ](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
+1. Volg de instructies in [&#x200B; zuivert gebruikersgegevens van werkschemainstanties die op de sectie van identiteitskaarts van de procesinstantie &#x200B;](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) worden gebaseerd zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie IDs schrappen.
 
 ### Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s {#purge}
 
@@ -127,7 +127,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
 1. Maak een instantie van de openbare `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager` ) met behulp van een `ServiceClientFactory` -instantie met de juiste verbindingsinstellingen.
 
-   Voor meer informatie, zie Java™ API verwijzing voor [ ProcessManager van de Klasse ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Voor meer informatie, zie Java™ API verwijzing voor [&#x200B; ProcessManager van de Klasse &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controleer de status van de workflowinstantie. Als de status anders is dan 2 (COMPLETE) of 4 (TERMINATED), beëindigt u de instantie eerst door de volgende methode aan te roepen:
 
@@ -141,7 +141,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
 ### Werken met wezen {#orphan}
 
-Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. In dit geval, is `process_instance_id` **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt taken IDs van de `tb_task` lijst voor een gebruiker identificeren zoals die in [ wordt beschreven identificeer procesinstantie IDs wanneer werkschemaminitiator of deelnemer ](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant) gekend is.
+Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. In dit geval, is `process_instance_id` **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt taken IDs van de `tb_task` lijst voor een gebruiker identificeren zoals die in [&#x200B; wordt beschreven identificeer procesinstantie IDs wanneer werkschemaminitiator of deelnemer &#x200B;](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant) gekend is.
 
 Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehorende bestanden en gegevens te wissen met een wezen-taak uit GDS en de database.
 

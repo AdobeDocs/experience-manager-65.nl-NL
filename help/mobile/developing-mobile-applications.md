@@ -37,7 +37,7 @@ AEM integreert met de dienst van Adobe PhoneGap Build (`https://build.phonegap.c
 
 ## Apps maken {#creating-apps}
 
-De ontwikkelaars kunnen de [ AEM Uitrusting van de Aanzet PhoneGap ](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra middelen gebruiken die in [ https://github.com/adobe-marketing-cloud-apps ](https://github.com/adobe-marketing-cloud-apps) worden gevonden om AEM toepassingen met PhoneGap, met inbegrip van een verwijzing inheemse app die Cordova Webviews in werking stelt.
+De ontwikkelaars kunnen de [&#x200B; AEM Uitrusting van de Aanzet PhoneGap &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra middelen gebruiken die in [&#x200B; https://github.com/adobe-marketing-cloud-apps &#x200B;](https://github.com/adobe-marketing-cloud-apps) worden gevonden om AEM toepassingen met PhoneGap, met inbegrip van een verwijzing inheemse app die Cordova Webviews in werking stelt.
 
 De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het gebruik van de startkit:
 
@@ -49,7 +49,7 @@ De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het geb
 
 >[!NOTE]
 >
->De extra bron van de verwijzingsimplementatie, met inbegrip van laboratoria, kan op GitHub [ hier ](https://github.com/adobe-marketing-cloud-apps) en, de &quot;keuken-goot&quot;bron [ hier ](https://github.com/blefebvre/aem-phonegap-kitchen-sink) worden gevonden.
+>De extra bron van de verwijzingsimplementatie, met inbegrip van laboratoria, kan op GitHub [&#x200B; hier &#x200B;](https://github.com/adobe-marketing-cloud-apps) en, de &quot;keuken-goot&quot;bron [&#x200B; hier &#x200B;](https://github.com/blefebvre/aem-phonegap-kitchen-sink) worden gevonden.
 
 ## Ontwikkelen voor IOS 9 en HTTP-hosts {#developing-for-ios-and-http-hosts}
 
@@ -70,7 +70,7 @@ IOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-app
 
 >[!NOTE]
 >
->Voor meer detail op &quot;de Veiligheid van het Vervoer van de Toepassing&quot;, zie de volgende sectie van [ Apple iOS9- prerelease docs ](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en dit [ Stack Overflow bespreking ](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Voor meer detail op &quot;de Veiligheid van het Vervoer van de Toepassing&quot;, zie de volgende sectie van [&#x200B; Apple iOS9- prerelease docs &#x200B;](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en dit [&#x200B; Stack Overflow bespreking &#x200B;](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Mobiele toepassingen ontwikkelen in AEM {#developing-mobile-applications-in-aem-1}
 

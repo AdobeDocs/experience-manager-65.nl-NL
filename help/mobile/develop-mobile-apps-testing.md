@@ -20,7 +20,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Gezien het grote aantal apparaten op de markt en de apparaten die worden vrijgegeven, is het testen van uw Apps noodzakelijk geworden. Dit is een gebied waarop functionaliteit en bruikbaarheid lage revisies kunnen opleveren op een App Store, maar één fout kan ertoe leiden dat uw app wordt verwijderd. In uw testplannen en kwaliteitsborging moet zorgvuldig aandacht worden besteed. De volgende koppeling heeft betrekking op veel van de onderwerpen die in het algemeen moeten worden behandeld, zoals het identificeren van uw omgeving, het definiëren van testgevallen, typen tests, veronderstellingen en betrokkenheid van de klant. Ook worden de hulpmiddelen besproken om in de testende inspanning te helpen. De interne hulpmiddelen, zoals [ Hobbes ](/help/sites-developing/hobbes.md), kunnen met web-based het testen UI helpen. [ de Dag van de Hoek ](/help/sites-developing/tough-day.md) kan uw instanties met een gesimuleerde lading benadrukken. Als uw testomgeving al ervaring heeft met hulpmiddelen van derden, zoals Selenium, kunnen deze ook worden gebruikt.
+Gezien het grote aantal apparaten op de markt en de apparaten die worden vrijgegeven, is het testen van uw Apps noodzakelijk geworden. Dit is een gebied waarop functionaliteit en bruikbaarheid lage revisies kunnen opleveren op een App Store, maar één fout kan ertoe leiden dat uw app wordt verwijderd. In uw testplannen en kwaliteitsborging moet zorgvuldig aandacht worden besteed. De volgende koppeling heeft betrekking op veel van de onderwerpen die in het algemeen moeten worden behandeld, zoals het identificeren van uw omgeving, het definiëren van testgevallen, typen tests, veronderstellingen en betrokkenheid van de klant. Ook worden de hulpmiddelen besproken om in de testende inspanning te helpen. De interne hulpmiddelen, zoals [&#x200B; Hobbes &#x200B;](/help/sites-developing/hobbes.md), kunnen met web-based het testen UI helpen. [&#x200B; de Dag van de Hoek &#x200B;](/help/sites-developing/tough-day.md) kan uw instanties met een gesimuleerde lading benadrukken. Als uw testomgeving al ervaring heeft met hulpmiddelen van derden, zoals Selenium, kunnen deze ook worden gebruikt.
 
 Bij het ontwikkelen van een mobiele app zijn er veel nieuwe problemen die specifiek zijn voor apparaten die samen met de traditionele tests moeten worden aangepakt.
 
@@ -39,7 +39,7 @@ Deze vragen moeten tijdens uw geautomatiseerde en handmatige tests worden beantw
 
 Er moet enige mate van geautomatiseerde tests worden uitgevoerd om de verschillende schermgrootten, geheugenbeperkingen, invoermethoden en besturingssystemen te bestrijken. Niet alleen bestrijkt het veel van de testgevallen, maar het kan regressietests versnellen wanneer nieuwe eigenschappen of apparaten worden geïntroduceerd. In het ideale geval moeten uw automatiseringsprogramma&#39;s dubbel werk verminderen of beperken. Gebruik gereedschappen of frameworks zodat uw testwerkzaamheden op alle platforms van toepassing zijn. In het volgende diagram ziet u een vereenvoudigde structuur van een testomgeving voor het testen van gebruikersinterface op internet en voor het testen van mobiele apps. Links in het diagram ziet u een reeks Selenium-knooppunten met browsers. SeleniumGrid kan gemeenschappelijke, web-based tests UI aan om het even welk van deze knopen landbouwbedrijf. De Selenium-hub kan ook verbinding maken met Appium voor het testen van apps voor verschillende platforms. Alleen getoonde simulatoren zijn simulatoren, maar u kunt adb, voor Android™ en Xcode-hulpprogramma&#39;s voor iOS-apparaten opnemen. De verbindingen worden verstrekt later in dit document waar u specifieke details voor de vermelde hulpmiddelen kunt vinden.
 
-![ chlimage_1 ](assets/chlimage_1.jpeg)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.jpeg)
 
 ## Handmatig testen {#manual-testing}
 
@@ -67,28 +67,28 @@ Er is een groot aantal gereedschappen beschikbaar voor het testen van mobiele ap
 * SeleniumGrid leidt tests over knopen voor parallel testen.
 * Met de Selenium IDE kunt u het schrijven van testcase verminderen.
 
-Voor meer informatie, zie [ https://www.selenium.dev/ ](https://www.selenium.dev/).
+Voor meer informatie, zie [&#x200B; https://www.selenium.dev/ &#x200B;](https://www.selenium.dev/).
 
 **Testdroid**
 
 * Een testservice op basis van de cloud met continue integratie en echte apparaattests.
 * Inbegrepen is een Crawler van de App die apparatenverenigbaarheid controleert, logboeken analyseert, meningen oversteekt, screenshots neemt, en prestaties controleert.
 
-Voor meer informatie, zie [ https://testdroid.com/ ](https://testdroid.com/).
+Voor meer informatie, zie [&#x200B; https://testdroid.com/ &#x200B;](https://testdroid.com/).
 
 **Appium**
 
 * Appium is een populair platformonafhankelijk raamwerk voor het automatiseren van mobiele tests.
 * Bovendien is een inspecteur inbegrepen met verslagmogelijkheden om codetestgevallen te helpen.
 
-Voor meer informatie, zie [ https://appium.io/ ](https://appium.io/).
+Voor meer informatie, zie [&#x200B; https://appium.io/ &#x200B;](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs biedt tests op basis van cloud&#39;s en integreert deze met continue integratie.
 * Tests worden automatisch uitgevoerd in de cloud-omgeving of u kunt een bepaald apparaat of platform starten en handmatig testen uitvoeren om problemen met foutopsporing te verhelpen.
 
-Voor meer informatie, zie [ https://saucelabs.com/ ](https://saucelabs.com/).
+Voor meer informatie, zie [&#x200B; https://saucelabs.com/ &#x200B;](https://saucelabs.com/).
 
 <!-- **AppTestNow**
 
@@ -101,10 +101,10 @@ For more information, see [https://apptestnow.com/](https://apptestnow.com/). --
 
 * HockeyApp valt onder de handmatige tests waarbij de mobiele app naar een persoonlijke app-winkel wordt gestuurd waar de testers de app kunnen downloaden en uitproberen.
 
-Voor meer informatie, zie [ https://hockeyapp.net/features/ ](https://hockeyapp.net/features/).
+Voor meer informatie, zie [&#x200B; https://hockeyapp.net/features/ &#x200B;](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Hoewel Jenkins geen testinstrument is, is het een doorlopend integratieframework dat de ruggengraat vormt voor geautomatiseerde tests. Er zijn talloze plug-ins van derden beschikbaar om de functionaliteit uit te breiden. De insteekmodule SeleniumGrid biedt bijvoorbeeld een UI voor het beheren van de Selenium-hub en -knooppunten.
 
-Voor meer informatie, zie [ https://www.jenkins.io/ ](https://www.jenkins.io/) en [ https://plugins.jenkins.io/ ](https://plugins.jenkins.io/).
+Voor meer informatie, zie [&#x200B; https://www.jenkins.io/ &#x200B;](https://www.jenkins.io/) en [&#x200B; https://plugins.jenkins.io/ &#x200B;](https://plugins.jenkins.io/).

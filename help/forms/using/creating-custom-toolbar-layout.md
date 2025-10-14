@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Wanneer u een adaptief formulier maakt, kunt u een werkbalklay-out voor het formulier opgeven. De werkbalkindeling definieert de opdrachten en de indeling van de werkbalk op het formulier.
 
-De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen waarmee u uw clientcode in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Voor gedetailleerde informatie, zie [ hoe de cliënt-zijbibliotheken in AEM werken.](/help/sites-developing/clientlibs.md)
+De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen waarmee u uw clientcode in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Voor gedetailleerde informatie, zie [&#x200B; hoe de cliënt-zijbibliotheken in AEM werken.](/help/sites-developing/clientlibs.md)
 
-![ lay-out van de Steekproef van de toolbar ](assets/default_toolbar_layout.png)
+![&#x200B; lay-out van de Steekproef van de toolbar &#x200B;](assets/default_toolbar_layout.png)
 
 Voorbeeldindeling van de werkbalk
 
 Aangepaste formulieren bieden een set out-of-the-box-indelingen:
 
-![ de lay-outs van de Toolbar beschikbaar uit-van-de-doos ](assets/toolbar1.png)
+![&#x200B; de lay-outs van de Toolbar beschikbaar uit-van-de-doos &#x200B;](assets/toolbar1.png)
 
 Werkbalklay-outs beschikbaar buiten de box
 
@@ -42,7 +42,7 @@ Het bijgevoegde inhoudspakket bevat de volledige hieronder beschreven code. Nada
 
 CustomToolbarLayoutDemo.zip
 
-[ krijgt Dossier ](assets/customtoolbarlayoutdemo.zip)
+[&#x200B; krijgt Dossier &#x200B;](assets/customtoolbarlayoutdemo.zip)
 Aangepaste werkbalkindeling demo
 
 ## Een aangepaste werkbalklay-out maken {#layout-1}
@@ -69,13 +69,13 @@ Aangepaste werkbalkindeling demo
 
    De eigenschap `guideComponentType` van het knooppunt bepaalt het lay-outtype. In dit geval is het indelingstype een werkbalk en wordt het daarom weergegeven in het keuzemenu voor de werkbalkindeling.
 
-   ![ knoop A met relevante beschrijving ](assets/toolbar3.png)
+   ![&#x200B; knoop A met relevante beschrijving &#x200B;](assets/toolbar3.png)
 
    Een knooppunt met relevante beschrijving
 
    Uw nieuwe lay-out van de douanetoolbar wordt getoond in de **Aangepaste de dialoogvakje van de Toolbar van de Vorm**.
 
-   ![ Lijst van beschikbare toolbarlay-outs ](assets/toolbar4.png)
+   ![&#x200B; Lijst van beschikbare toolbarlay-outs &#x200B;](assets/toolbar4.png)
 
    Lijst met beschikbare werkbalkindelingen
 
@@ -87,7 +87,7 @@ Aangepaste werkbalkindeling demo
 
    Voeg clientlib (javascript en css) in de `/etc/customlayout` knoop toe en neem de verwijzing van clientlib in `customToolbarLayout.jsp` op.
 
-   ![ Weg van het customToolbarLayout.css- dossier ](assets/toolbar_3.png)
+   ![&#x200B; Weg van het customToolbarLayout.css- dossier &#x200B;](assets/toolbar_3.png)
 
    Het pad van het bestand customToolbarLayout.css
 
@@ -230,6 +230,6 @@ Aangepaste werkbalkindeling demo
 >
 >De beschrijving die u in de vorige stap hebt bijgewerkt, wordt weergegeven in de vervolgkeuzelijst Indeling.
 
-![ mening van de Desktop van de toolbar van de douanelay-out ](assets/toolbar_1.png)
+![&#x200B; mening van de Desktop van de toolbar van de douanelay-out &#x200B;](assets/toolbar_1.png)
 
 Bureaubladweergave van de werkbalk met de aangepaste layout

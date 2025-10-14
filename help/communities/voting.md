@@ -26,19 +26,19 @@ Gebruik de componentbrowser om een component `Voting` in de modus Auteur aan een
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-voting.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Voting` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](essentials-voting.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Voting` component verschijnt.
 
-![ stem-component ](assets/voting-component.png)
+![&#x200B; stem-component &#x200B;](assets/voting-component.png)
 
 ## Stemmen configureren {#configuring-voting}
 
 Selecteer de geplaatste component `Voting` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Geef onder het tabblad **[!UICONTROL Texts & Labels]** de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
 
-![ stem-etiket ](assets/voting-label.png)
+![&#x200B; stem-etiket &#x200B;](assets/voting-label.png)
 
 * **[!UICONTROL Positive Response Label]**
 
@@ -64,4 +64,4 @@ Anonieme stemming wordt niet ondersteund. Sitebezoekers moeten zich registreren 
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ Stemende Belangrijkste ](essentials-voting.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; Stemende Belangrijkste &#x200B;](essentials-voting.md) pagina voor ontwikkelaars worden gevonden.

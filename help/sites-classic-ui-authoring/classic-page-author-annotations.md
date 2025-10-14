@@ -45,7 +45,7 @@ Afhankelijk van het alineaontwerp is annotatie beschikbaar als een optie in het 
 
 In één van beide geval, uitgezochte **Annoteert**. Er wordt een gekleurde notitie toegepast op de alinea. U bevindt zich direct in de modus Bewerken, zodat u rechtstreeks tekst kunt toevoegen:
 
-![ chlimage_1-137 ](assets/chlimage_1-137.png)
+![&#x200B; chlimage_1-137 &#x200B;](assets/chlimage_1-137.png)
 
 U kunt de annotatie naar een nieuwe positie op de pagina verplaatsen. Klik op het bovenste randgebied en houd de annotatie ingedrukt en sleep deze tegelijkertijd naar de nieuwe positie. Dit kan overal op de pagina zijn, hoewel het vaak zinvol is om de pagina op een of andere manier verbonden te houden met de alinea.
 
@@ -81,7 +81,7 @@ Met de drie pictogrammen linksboven kunt u de annotatie minimaliseren (samen met
 
 Schetsen zijn een functie van annotaties waarmee u overal in het browservenster eenvoudige lijnafbeeldingen kunt maken (zichtbaar gedeelte):
 
-![ chlimage_1-138 ](assets/chlimage_1-138.png)
+![&#x200B; chlimage_1-138 &#x200B;](assets/chlimage_1-138.png)
 
 * De curseur verandert in een dwarraad wanneer u op schetswijze bent. U kunt meerdere afzonderlijke lijnen tekenen.
 * De schetslijn weerspiegelt de annotatiekleur en kan een van de volgende zijn:

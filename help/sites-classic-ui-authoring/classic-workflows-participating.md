@@ -50,11 +50,11 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * De **kolom van de Status** van de console van Websites wijst erop wanneer een pagina in een werkschema is:
 
-  ![ werkstroom status-1 ](assets/workflowstatus-1.png)
+  ![&#x200B; werkstroom status-1 &#x200B;](assets/workflowstatus-1.png)
 
 * Wanneer u, of een groep die u tot behoort, een het werkpunt als deel van een werkschema wordt toegewezen, verschijnt het het werkpunt in uw Inbox van het Werkschema van de AEM.
 
-  ![ workflowinbox ](assets/workflowinbox.png)
+  ![&#x200B; workflowinbox &#x200B;](assets/workflowinbox.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
@@ -63,7 +63,7 @@ Nadat u de aangegeven actie hebt uitgevoerd, kunt u het werkitem voltooien, zoda
 1. Selecteer de werkschemastap en klik de **Volledige** knoop in de hoogste navigatiebar.
 1. In de resulterende dialoog, selecteer de **Volgende Stap**; namelijk de stap volgende uit te voeren. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Commentaar** kan ook zijn ingegaan.
 
-   ![ werkflowcomplete ](assets/workflowcomplete.png)
+   ![&#x200B; werkflowcomplete &#x200B;](assets/workflowcomplete.png)
 
    Het aantal vermelde stappen is afhankelijk van het ontwerp van het workflowmodel.
 
@@ -76,7 +76,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren.
 1. Klik de **Afgevaardigde** knoop in de hoogste navigatiebar.
 1. In de dialoog, gebruik de drop-down lijst om de **Gebruiker** te selecteren om het het werkpunt aan te delegeren. U kunt a **Commentaar** ook toevoegen.
 
-   ![ workflowdelegate ](assets/workflowdelegate.png)
+   ![&#x200B; workflowdelegate &#x200B;](assets/workflowdelegate.png)
 
 1. Klik **O.K.** om de actie te bevestigen.
 
@@ -87,6 +87,6 @@ Gebruik de volgende procedure om terug te gaan.
 1. Klik op de knop Stap terug in de bovenste navigatiebalk.
 1. Selecteer in het resulterende dialoogvenster de vorige stap, dat wil zeggen de volgende stap, ook al is het een stap die eerder in de workflow plaatsvindt. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven.
 
-   ![ screen_shot_2018-08-10at155325 ](assets/screen_shot_2018-08-10at155325.jpg)
+   ![&#x200B; screen_shot_2018-08-10at155325 &#x200B;](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Klik op OK om de handeling te bevestigen.

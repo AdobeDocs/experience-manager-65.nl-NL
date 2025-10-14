@@ -40,7 +40,7 @@ Het Beheer van de correspondentie stelt APIs bloot om brieveninstanties door de 
 
 ### getAllLetterInstances gebruiken {#using-nbsp-getallletterinstances}
 
-De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API keert een lijst van [ terug LetterInstanceVO ](https://helpx.adobe.com/nl/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) voorwerpen, die voor het halen van extra informatie van de brieveninstantie kunnen worden gebruikt.
+De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API keert een lijst van [&#x200B; terug LetterInstanceVO &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) voorwerpen, die voor het halen van extra informatie van de brieveninstantie kunnen worden gebruikt.
 
 **Syntaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
 

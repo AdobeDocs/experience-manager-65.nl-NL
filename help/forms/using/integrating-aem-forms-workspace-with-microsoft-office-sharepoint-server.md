@@ -51,7 +51,7 @@ Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te i
    >
    >Het Deel van het Web van de Kijker van de Pagina verschijnt onder **een Deel van het Web** knoop die u in stap 3 zoals aangetoond in de volgende illustratie (Figuur 1) klikte:
 
-   ![ de doos van het Deel van het Web van de Kijker van de Pagina in de server van SharePoint van Microsoft Office.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
+   ![&#x200B; de doos van het Deel van het Web van de Kijker van de Pagina in de server van SharePoint van Microsoft Office.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
    Figuur 1. - Het vak Webonderdeel van paginaviewer op de Microsoft Office SharePoint-server.
 
@@ -69,6 +69,6 @@ Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te i
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, ziet uw SharePoint-site eruit zoals in de volgende afbeelding (Afbeelding 2):
 
-![ AEM Forms Workspace geïntegreerd met de Server van SharePoint van Microsoft Office ](assets/aem-forms-workspace.jpg)
+![&#x200B; AEM Forms Workspace geïntegreerd met de Server van SharePoint van Microsoft Office &#x200B;](assets/aem-forms-workspace.jpg)
 
 Afbeelding 2 - AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server

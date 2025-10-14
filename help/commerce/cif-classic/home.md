@@ -19,10 +19,10 @@ Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Klassiek.
 
 >[!NOTE]
 >
->CIF Klassiek is afgekeurd en verwijderd vanaf AEM 6.5 SP 22.  Gelieve te [ contactKlantenondersteuning van de Adobe ](https://experienceleague.adobe.com/nl?support-solution=General#support) als u een verenigbaarheidspakket nodig hebt.
+>CIF Klassiek is afgekeurd en verwijderd vanaf AEM 6.5 SP 22.  Gelieve te [&#x200B; contactKlantenondersteuning van de Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General#support) als u een verenigbaarheidspakket nodig hebt.
 >
->* De nieuwe projecten zouden [ AEM CIF ](/help/commerce/cif/introduction.md) moeten gebruiken.
->* De bestaande CIF Klassiek zou [ aan AEM ](/help/commerce/cif/migration.md) moeten migreren.
+>* De nieuwe projecten zouden [&#x200B; AEM CIF &#x200B;](/help/commerce/cif/introduction.md) moeten gebruiken.
+>* De bestaande CIF Klassiek zou [&#x200B; aan AEM &#x200B;](/help/commerce/cif/migration.md) moeten migreren.
 
 ## Belangrijke CIF Klassieke artikelen {#key-articles}
 

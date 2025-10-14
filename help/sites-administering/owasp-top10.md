@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # OWASP Top 10{#owasp-top}
 
-Het [ Open Project van de Veiligheid van de Toepassing van het Web ](https://owasp.org/) (OWASP) handhaaft een lijst van wat zij als de [ Hoogste Tien Veiligheidsrisico&#39;s van de Toepassing van het Web ](https://owasp.org/www-project-top-ten/) beschouwen.
+Het [&#x200B; Open Project van de Veiligheid van de Toepassing van het Web &#x200B;](https://owasp.org/) (OWASP) handhaaft een lijst van wat zij als de [&#x200B; Hoogste Tien Veiligheidsrisico&#39;s van de Toepassing van het Web &#x200B;](https://owasp.org/www-project-top-ten/) beschouwen.
 
 Deze worden hieronder vermeld, samen met een uitleg van hoe CRX ermee omgaat.
 
@@ -30,13 +30,13 @@ Deze worden hieronder vermeld, samen met een uitleg van hoe CRX ermee omgaat.
 
 ## 2. XSS (Cross-Site Scripting) {#cross-site-scripting-xss}
 
-De algemene matigingspraktijk moet al output van gebruiker-geproduceerde inhoud coderen gebruikend een server-kantXSS beschermingsbibliotheek die op [&#128279;](https://owasp.org/www-project-java-encoder/) wordt gebaseerd Codeur van het ASPIS 1&rbrace; en [ AntiSamy ](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+De algemene matigingspraktijk moet al output van gebruiker-geproduceerde inhoud coderen gebruikend een server-kantXSS beschermingsbibliotheek die op [&#128279;](https://owasp.org/www-project-java-encoder/) wordt gebaseerd Codeur van het ASPIS 1&rbrace; en [&#x200B; AntiSamy &#x200B;](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 XSS is een hoogste prioriteit tijdens zowel het testen als de ontwikkeling, en om het even welke gevonden kwesties worden (typisch) onmiddellijk opgelost.
 
 ## 3. Verbroken verificatie en sessiebeheer {#broken-authentication-and-session-management}
 
-AEM gebruikt geluid en bewezen authentificatietechnieken, die op [ Apache Jasrabbit ](https://jackrabbit.apache.org/jcr/index.html) en [ Apache Sling ](https://sling.apache.org/) vertrouwen. Browser/HTTP-sessies worden niet gebruikt in AEM.
+AEM gebruikt geluid en bewezen authentificatietechnieken, die op [&#x200B; Apache Jasrabbit &#x200B;](https://jackrabbit.apache.org/jcr/index.html) en [&#x200B; Apache Sling &#x200B;](https://sling.apache.org/) vertrouwen. Browser/HTTP-sessies worden niet gebruikt in AEM.
 
 ## 4. Onveilige verwijzingen naar directe objecten {#insecure-direct-object-references}
 
@@ -50,9 +50,9 @@ Bovendien AEM schepen met een verwijzing-kopbal gebaseerde filter, die aan *slec
 
 ## 6. Onjuiste beveiliging {#security-misconfiguration}
 
-Het is onmogelijk te garanderen dat alle software altijd correct is geconfigureerd. De Adobe streeft er echter naar zoveel mogelijk begeleiding te bieden en de configuratie zo eenvoudig mogelijk te maken. Voorts AEM schepen met [ geïntegreerde Gezondheidscontroles van de Veiligheid ](/help/sites-administering/operations-dashboard.md) die u helpen veiligheidsconfiguratie in een blik controleren.
+Het is onmogelijk te garanderen dat alle software altijd correct is geconfigureerd. De Adobe streeft er echter naar zoveel mogelijk begeleiding te bieden en de configuratie zo eenvoudig mogelijk te maken. Voorts AEM schepen met [&#x200B; geïntegreerde Gezondheidscontroles van de Veiligheid &#x200B;](/help/sites-administering/operations-dashboard.md) die u helpen veiligheidsconfiguratie in een blik controleren.
 
-Herzie de [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor meer informatie die u van geleidelijke het verharden instructies voorziet.
+Herzie de [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md) voor meer informatie die u van geleidelijke het verharden instructies voorziet.
 
 ## 7. Onveilige cryptografische opslag {#insecure-cryptographic-storage}
 
@@ -62,7 +62,7 @@ Gevoelige gegevens zoals referenties van derden worden in gecodeerde vorm opgesl
 
 ## 8. Kan URL-toegang niet beperken {#failure-to-restrict-url-access}
 
-De bewaarplaats staat het plaatsen van [ nauwkeurig gegrainde voorrechten (zoals die door JCR worden gespecificeerd) ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) voor om het even welke bepaalde gebruiker of groep op om het even welke bepaalde weg, door toegangsbeheeringangen toe. Toegangsbeperkingen worden afgedwongen door de opslagplaats.
+De bewaarplaats staat het plaatsen van [&#x200B; nauwkeurig gegrainde voorrechten (zoals die door JCR worden gespecificeerd) &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) voor om het even welke bepaalde gebruiker of groep op om het even welke bepaalde weg, door toegangsbeheeringangen toe. Toegangsbeperkingen worden afgedwongen door de opslagplaats.
 
 ## 9. Onvoldoende bescherming van de Laag van het Vervoer {#insufficient-transport-layer-protection}
 

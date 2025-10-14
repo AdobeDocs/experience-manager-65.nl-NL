@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Zelfstudie: Publish uw adaptieve formulier {#tutorial-publish-your-adaptive-form}
 
-![ Hero-beeld ](do-not-localize/13-publish-your-adaptive-form-small.png)
+![&#x200B; Hero-beeld &#x200B;](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [&#x200B; creeert Uw Eerste AanpassingsVorm &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 Nadat het aangepaste formulier gereed is, kunt u het publiceren en beschikbaar maken voor eindgebruikers. De eindgebruikers kunnen het gepubliceerde formulier openen op elk apparaat en in de internetbrowser. Wanneer een adaptief formulier wordt gepubliceerd, worden het formulier en de bijbehorende inhoud gekopieerd van een AEM auteur naar een AEM publicatie-exemplaar. Het formulier wordt via het publicatieexemplaar beschikbaar gesteld voor de eindgebruiker.
 
@@ -31,8 +31,8 @@ U kunt op de volgende manieren een adaptief formulier publiceren:
 
 ## Voordat u begint {#before-you-start}
 
-* **[opstelling AEM Forms publiceert instantie ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: De publiceer instantie is een openbaar onder ogen ziende instantie van AEM [!DNL Forms] die op publicatiewijze lopen. In een productieomgeving bevindt de publicatie-instantie zich buiten de firewall van de organisatie.
-* **[de replicatie van de opstelling en omgekeerde replicatie ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-deploying/replication.html)**: De replicatie kopieert inhoud van de auteursinstantie aan publiceer instantie en keert gebruikersinput (bijvoorbeeld, vorminput) van terug publiceer instantie aan de auteursinstantie.
+* **[opstelling AEM Forms publiceert instantie &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: De publiceer instantie is een openbaar onder ogen ziende instantie van AEM [!DNL Forms] die op publicatiewijze lopen. In een productieomgeving bevindt de publicatie-instantie zich buiten de firewall van de organisatie.
+* **[de replicatie van de opstelling en omgekeerde replicatie &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-deploying/replication.html)**: De replicatie kopieert inhoud van de auteursinstantie aan publiceer instantie en keert gebruikersinput (bijvoorbeeld, vorminput) van terug publiceer instantie aan de auteursinstantie.
 
 ## Het adaptieve formulier Publish als AEM pagina {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -50,27 +50,27 @@ AEM [!DNL Forms] kunnen formulierontwikkelaars adaptieve formulieren naadloos in
 
 AEM [!DNL Forms] levert een component, AEM [!DNL Forms] Container, voor het insluiten van een adaptief formulier op een AEM [!DNL Sites] -pagina. De component is standaard niet zichtbaar in AEM [!DNL Sites] -container. Voer de volgende stappen uit om de AEM [!DNL Forms] Container-component in te schakelen en het adaptieve formulier in te sluiten in een AEM [!DNL Sites] Pagina:
 
-1. Maak en open een pagina in de website Web.Retail voor bewerking. Bijvoorbeeld, [ https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html ](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Het aangepaste formulier wordt ingesloten op de pagina [!DNL Sites] .
+1. Maak en open een pagina in de website Web.Retail voor bewerking. Bijvoorbeeld, [&#x200B; https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html &#x200B;](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Het aangepaste formulier wordt ingesloten op de pagina [!DNL Sites] .
 
-   U kunt het adaptieve formulier ook insluiten in een bestaande Web.Retail [!DNL Site's] -pagina. Bijvoorbeeld, ONDER Amerikaanse pagina [ https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html ](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Hiermee bespaart u de tijd om een pagina te maken. In de onderstaande stappen wordt de nieuwe pagina gebruikt.
+   U kunt het adaptieve formulier ook insluiten in een bestaande Web.Retail [!DNL Site's] -pagina. Bijvoorbeeld, ONDER Amerikaanse pagina [&#x200B; https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html &#x200B;](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Hiermee bespaart u de tijd om een pagina te maken. In de onderstaande stappen wordt de nieuwe pagina gebruikt.
 
-   De website We.Retail wordt verzonden met AEM. Als u niet de wij.Retail geïnstalleerde plaats hebt, zie [ Wij.Retail de Implementatie van de Verwijzing ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/we-retail.html) installeren de plaats.
+   De website We.Retail wordt verzonden met AEM. Als u niet de wij.Retail geïnstalleerde plaats hebt, zie [&#x200B; Wij.Retail de Implementatie van de Verwijzing &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/we-retail.html) installeren de plaats.
 
-1. Selecteer ![ eigenschappen ](assets/properties.png) paginainformatie en selecteer de **[!UICONTROL Edit Template]** optie in de pas gecreëerde Web.Retail plaatspagina. De sjabloon van de pagina wordt geopend op een nieuw tabblad van de browser.
-1. Selecteer binnen de **[!UICONTROL layout container]** doos en selecteer ![ terugkoppel ](assets/feedmanagement.png). In het **[!UICONTROL Allowed Components]** lusje, breid **[!UICONTROL General]** accordion uit, selecteer de **[!UICONTROL AEM Form]** optie, en selecteer ![ save_icon ](assets/save_icon.svg). De AEM [!DNL Forms] Container-component is ingeschakeld voor de pagina.
+1. Selecteer ![&#x200B; eigenschappen &#x200B;](assets/properties.png) paginainformatie en selecteer de **[!UICONTROL Edit Template]** optie in de pas gecreëerde Web.Retail plaatspagina. De sjabloon van de pagina wordt geopend op een nieuw tabblad van de browser.
+1. Selecteer binnen de **[!UICONTROL layout container]** doos en selecteer ![&#x200B; terugkoppel &#x200B;](assets/feedmanagement.png). In het **[!UICONTROL Allowed Components]** lusje, breid **[!UICONTROL General]** accordion uit, selecteer de **[!UICONTROL AEM Form]** optie, en selecteer ![&#x200B; save_icon &#x200B;](assets/save_icon.svg). De AEM [!DNL Forms] Container-component is ingeschakeld voor de pagina.
 
 1. Open het browsertabblad met AEM [!DNL Sites] -pagina die is geopend in stap 1. Selecteer het vak **[!UICONTROL Drag components here]** en selecteer **+.** Selecteer **[!UICONTROL AEM Form]** in het vak **[!UICONTROL Insert New Component]** . De component **[!UICONTROL AEM Forms Container]** wordt toegevoegd aan de pagina.
-1. Selecteer de **[!UICONTROL AEM Forms container]** component en selecteer ![ vorm-pictogram ](assets/configure-icon.svg). Er wordt een dialoogvenster weergegeven met eigenschappen van AEM [!DNL Forms] Container. Blader in het veld **[!UICONTROL Asset Path]** naar het adaptieve formulier voor het verzendadres en de update. Selecteer ![ save_icon ](assets/save_icon.svg). Het adaptieve formulier is ingesloten op de pagina.
+1. Selecteer de **[!UICONTROL AEM Forms container]** component en selecteer ![&#x200B; vorm-pictogram &#x200B;](assets/configure-icon.svg). Er wordt een dialoogvenster weergegeven met eigenschappen van AEM [!DNL Forms] Container. Blader in het veld **[!UICONTROL Asset Path]** naar het adaptieve formulier voor het verzendadres en de update. Selecteer ![&#x200B; save_icon &#x200B;](assets/save_icon.svg). Het adaptieve formulier is ingesloten op de pagina.
 1. Publish zowel het adaptieve formulier als de [!DNL Sites] pagina. Hieronder volgen enkele punten die u in overweging wilt nemen:
 
    * Als u de pagina AEM [!DNL Sites] voor het eerst publiceert en deze een ingesloten formulier bevat, publiceert u de pagina [!DNL Sites] en het ingesloten formulier.
    * Als u alleen het ingesloten formulier op een gepubliceerde sitepagina wijzigt, publiceert u het oorspronkelijke formulier en de wijzigingen worden weerspiegeld in de gepubliceerde sitepagina. De gepubliceerde sitepagina bevat een verwijzing naar het formulier en de pagina hoeft niet opnieuw te worden gepubliceerd.
    * Als u de pagina [!DNL Sites] en het ingesloten formulier wijzigt, publiceert u de pagina [!DNL Sites] en het formulier opnieuw.
 
-     ![ bed-in-a-plaats-plaatsen ](assets/embed-in-aem-sites.png) in
+     ![&#x200B; bed-in-a-plaats-plaatsen &#x200B;](assets/embed-in-aem-sites.png) in
 
    Formulier Verzendadres en factuuradres wijzigen toegevoegd aan een AEM [!DNL Sites] pagina.
 
 ## Het adaptieve formulier insluiten in een externe webpagina {#embed-the-adaptive-form-in-an-external-webpage}
 
-U kunt een adaptief formulier insluiten in een externe webpagina (een niet-AEM webpagina die buiten AEM wordt gehost) door een paar regels JavaScript in de externe webpagina in te voegen. De JavaScript-code verzendt een HTTP-aanvraag naar de AEM [!DNL Forms] -server voor het adaptieve formulier en de gerelateerde bronnen en voegt het adaptieve formulier toe aan de webpagina. Voor gedetailleerde stappen, zie [ de adaptieve vorm aan een externe Web-pagina ](/help/forms/using/embed-adaptive-form-external-web-page.md) inbedden.
+U kunt een adaptief formulier insluiten in een externe webpagina (een niet-AEM webpagina die buiten AEM wordt gehost) door een paar regels JavaScript in de externe webpagina in te voegen. De JavaScript-code verzendt een HTTP-aanvraag naar de AEM [!DNL Forms] -server voor het adaptieve formulier en de gerelateerde bronnen en voegt het adaptieve formulier toe aan de webpagina. Voor gedetailleerde stappen, zie [&#x200B; de adaptieve vorm aan een externe Web-pagina &#x200B;](/help/forms/using/embed-adaptive-form-external-web-page.md) inbedden.

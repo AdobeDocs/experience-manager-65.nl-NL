@@ -49,7 +49,7 @@ De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om
 
 ## Scriptbesturingselementen {#script-controls}
 
-Het omslaggedrag verschilt echter afhankelijk van als [ HTML ](/help/sites-developing/decoration-tag.md#htl) of [ JSP ](/help/sites-developing/decoration-tag.md#jsp) wordt gebruikt om het element te omvatten.
+Het omslaggedrag verschilt echter afhankelijk van als [&#x200B; HTML &#x200B;](/help/sites-developing/decoration-tag.md#htl) of [&#x200B; JSP &#x200B;](/help/sites-developing/decoration-tag.md#jsp) wordt gebruikt om het element te omvatten.
 
 ### HTL {#htl}
 
@@ -65,13 +65,13 @@ Het gedrag van de omslag kan ook volledig worden geregeld.
 
 Het is mogelijk om het gedrag van de omsluitende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Voor verdere informatie over het ontwikkelen in HTML zie de [ documentatie HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL).
+Voor verdere informatie over het ontwikkelen in HTML zie de [&#x200B; documentatie HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL).
 
 #### Beslissingsboom {#decision-tree}
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
-![ chlimage_1-75 ](assets/chlimage_1-75a.png)
+![&#x200B; chlimage_1-75 &#x200B;](assets/chlimage_1-75a.png)
 
 #### Gevallen gebruiken {#use-cases}
 
@@ -151,4 +151,4 @@ Wanneer het omvatten van een component die `cq:includ` e of `sling:include` gebr
 
 De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` en `decorationTagName` het gedrag van de omslag beïnvloeden.
 
-![ chlimage_1-3 ](assets/chlimage_1-3a.jpeg)
+![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3a.jpeg)

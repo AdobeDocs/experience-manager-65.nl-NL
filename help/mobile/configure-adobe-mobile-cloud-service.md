@@ -23,7 +23,7 @@ ht-degree: 0%
 
 De **Mobiele Tegel van Metriek** op het bevelcentrum verstrekt analyses in real time voor uw mobiele toepassing.
 
-De [ Mobiele Analytics van de Adobe ](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt ter beschikking gesteld door een elektrisch toestel PhoneGap. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
+De [&#x200B; Mobiele Analytics van de Adobe &#x200B;](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt ter beschikking gesteld door een elektrisch toestel PhoneGap. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
@@ -38,7 +38,7 @@ Adobe Mobile Analytics SDK biedt het volgende:
 >
 >De **Analyseer de vertoningen van Metriek** Tile in het dashboard, slechts als u de wolkendiensten hebt gevormd.
 
-![ chlimage_1-22 ](assets/chlimage_1-22.png)
+![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22.png)
 
 Metrische tegel AEM Command Center
 
@@ -48,30 +48,30 @@ Als u gebruik wilt maken van de Adobe Mobile Services Analytics, moet u de AEM M
 
 1. Klik op het hoogste rechterzijpictogram om de Cloud Servicen van **toe te voegen of uit te geven beheert Cloud Servicen** tegel van app dashboard.
 
-   ![ chlimage_1-23 ](assets/chlimage_1-23.png)
+   ![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23.png)
 
 1. **voeg of geef Cloud Servicen** het schermvertoningen toe uit. Selecteer **de Mobiele Diensten van de Adobe Mobiele** en klik **daarna**.
 
-   ![ chlimage_1-24 ](assets/chlimage_1-24.png)
+   ![&#x200B; chlimage_1-24 &#x200B;](assets/chlimage_1-24.png)
 
 1. Kies een bestaande configuratie van de **Mobiele Diensten** of kies **creeer Configuratie** om te creëren.
 
    Voor nieuwe configuratie, ga de **Mobiele Eigenschappen van de Diensten** in en klik **verifieer.**
 
-   ![ chlimage_1-25 ](assets/chlimage_1-25.png)
+   ![&#x200B; chlimage_1-25 &#x200B;](assets/chlimage_1-25.png)
 
    Als de geloofsbrieven worden geverifieerd, verifieert **&#x200B;**&#x200B;knoopveranderingen in **Geverifieerd**. U kunt een mobiele dienst selecteren app van **een Mobiele Dienst van de App**.
 
    Klik **voorleggen** voor vestiging uw configuratie.
 
-   ![ chlimage_1-26 ](assets/chlimage_1-26.png)
+   ![&#x200B; chlimage_1-26 &#x200B;](assets/chlimage_1-26.png)
 
 1. Als u een cloudconfiguratie hebt ingesteld, kunt u deze ook in het dashboard weergeven.
 
-   ![ chlimage_1-27 ](assets/chlimage_1-27.png)
+   ![&#x200B; chlimage_1-27 &#x200B;](assets/chlimage_1-27.png)
 
    >[!NOTE]
    >
    >Zodra u opstelling uw wolkenconfiguratie, kunt u **Analyseer Metriek** Tegel in uw app dashboard bekijken.
 
-   ![ chlimage_1-28 ](assets/chlimage_1-28.png)
+   ![&#x200B; chlimage_1-28 &#x200B;](assets/chlimage_1-28.png)

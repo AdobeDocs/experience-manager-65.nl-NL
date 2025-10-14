@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Met de JMX-console kunt u services op de CRX-server controleren en beheren. In de volgende secties wordt een overzicht gegeven van de kenmerken en bewerkingen die via het JMX-framework worden weergegeven.
 
-Voor informatie over hoe te om de consolecontroles te gebruiken, zie [ Gebruikend de Console JMX ](#using-the-jmx-console). Voor achtergrondinformatie over JMX, zie de [ pagina van de Uitbreidingen van het Beheer van Java van de Uitbreidingen (JMX) Technologie ](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) op de website van het Oracle.
+Voor informatie over hoe te om de consolecontroles te gebruiken, zie [&#x200B; Gebruikend de Console JMX &#x200B;](#using-the-jmx-console). Voor achtergrondinformatie over JMX, zie de [&#x200B; pagina van de Uitbreidingen van het Beheer van Java van de Uitbreidingen (JMX) Technologie &#x200B;](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) op de website van het Oracle.
 
-Voor informatie over het creëren van MBans om uw diensten te beheren gebruikend de Console JMX, zie [ Integrerend de Diensten met de Console JMX ](/help/sites-developing/jmx-integration.md).
+Voor informatie over het creëren van MBans om uw diensten te beheren gebruikend de Console JMX, zie [&#x200B; Integrerend de Diensten met de Console JMX &#x200B;](/help/sites-developing/jmx-integration.md).
 
 ## Workflowonderhoud {#workflow-maintenance}
 
@@ -34,7 +34,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
 >[!NOTE]
 >
->Zie de [ werkschemaconsole ](/help/sites-administering/workflows-administering.md) voor extra werkschemabeleidshulpmiddelen en beschrijvingen van mogelijke statussen van de werkschemainstantie.
+>Zie de [&#x200B; werkschemaconsole &#x200B;](/help/sites-administering/workflows-administering.md) voor extra werkschemabeleidshulpmiddelen en beschrijvingen van mogelijke statussen van de werkschemainstantie.
 
 ### Bewerkingen {#operations}
 
@@ -886,14 +886,14 @@ MBeans die met de dienst OSGi worden opgesteld stelt de dienstattributen en verr
 
 De belangrijkste pagina van de console JMX omvat een lijst van de diensten. Elke rij in de lijst vertegenwoordigt de dienst die door een MBean wordt blootgesteld.
 
-1. Open de webconsole en klik op het tabblad JMX. ([ http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Open de webconsole en klik op het tabblad JMX. ([&#x200B; http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Klik een celwaarde voor de dienst om de attributen en de verrichtingen voor de dienst te zien.
 3. Als u een kenmerkwaarde wilt wijzigen, klikt u op de waarde, geeft u de waarde op in het dialoogvenster dat verschijnt en klikt u op Opslaan.
 4. Als u een servicebewerking wilt aanroepen, klikt u op de naam van de bewerking, geeft u in het dialoogvenster argumentwaarden op en klikt u op Invoke.
 
 ## Externe JMX-toepassingen gebruiken voor bewaking {#using-external-jmx-applications-for-monitoring}
 
-CRX staat externe toepassingen toe om met Beheerde Bonen (MBeans) via [ de Uitbreidingen van het Beheer van Java (JMX) ](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html) in wisselwerking te staan. Gebruikend generische consoles zoals [ JConsole ](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) of domein-specifieke controletoepassingen, staat het krijgen en het plaatsen van de configuraties en eigenschappen van CRX, en de controle van prestaties en middelgebruik toe.
+CRX staat externe toepassingen toe om met Beheerde Bonen (MBeans) via [&#x200B; de Uitbreidingen van het Beheer van Java (JMX) &#x200B;](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html) in wisselwerking te staan. Gebruikend generische consoles zoals [&#x200B; JConsole &#x200B;](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) of domein-specifieke controletoepassingen, staat het krijgen en het plaatsen van de configuraties en eigenschappen van CRX, en de controle van prestaties en middelgebruik toe.
 
 ### Verbinding maken met CRX via JConsole {#using-jconsole-to-connect-to-crx}
 
@@ -910,7 +910,7 @@ JConsole wordt gestart en het JConsole-venster wordt weergegeven.
 
 JConsole zal een lijst van lokale processen van de Virtuele Machine van Java tonen. De lijst bevat twee snelstartprocessen. Selecteer het &#39;KINDERproces&#39; in de lijst met lokale processen (meestal het proces met de hogere PID).
 
-![ screen_shot_2012-03-26at114557am ](assets/screen_shot_2012-03-26at114557am.png)
+![&#x200B; screen_shot_2012-03-26at114557am &#x200B;](assets/screen_shot_2012-03-26at114557am.png)
 
 ### Verbinding maken met een CRX-proces op afstand {#connecting-to-a-remote-crx-process}
 
@@ -926,7 +926,7 @@ Wanneer u de JMX-agent inschakelt voor externe controle, gebruikt deze standaard
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-Zie de [ relevante documentatie JMX ](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) voor gedetailleerde instructies bij vestiging een wachtwoorddossier.
+Zie de [&#x200B; relevante documentatie JMX &#x200B;](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) voor gedetailleerde instructies bij vestiging een wachtwoorddossier.
 
 Voorbeeld:
 
@@ -941,10 +941,10 @@ $ java
 
 Nadat u verbinding hebt gemaakt met het quickstart-proces, biedt JConsole een reeks algemene controlemiddelen voor de JVM waarin CRX wordt uitgevoerd.
 
-![ screen_shot_2012-03-26at115056am ](assets/screen_shot_2012-03-26at115056am.png)
+![&#x200B; screen_shot_2012-03-26at115056am &#x200B;](assets/screen_shot_2012-03-26at115056am.png)
 
 Om tot CRX toegang te hebben intern controle en configuratieopties, ga naar het lusje MBans, en van de hiërarchische inhoudsboom op de linkerzijde, selecteer de sectie van Attributen of van Verrichtingen die u geinteresseerd bent in. Bijvoorbeeld de sectie com.adobe.granite/Repository/Operations.
 
 Selecteer in die sectie het gewenste kenmerk of de gewenste bewerking in het linkerdeelvenster.
 
-![ screen_shot_2012-03-26at115728am ](assets/screen_shot_2012-03-26at115728am.png)
+![&#x200B; screen_shot_2012-03-26at115728am &#x200B;](assets/screen_shot_2012-03-26at115728am.png)

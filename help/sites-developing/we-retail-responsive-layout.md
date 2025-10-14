@@ -28,22 +28,22 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 1. Schakelaar aan **Voorproef** om de pagina te zien aangezien het aan een bezoeker van de website zou worden teruggegeven. De rol neer aan de inhoud van het artikel *Aloha spirits in Noord Noorwegen*.
 
-   ![ chlimage_1-178 ](assets/chlimage_1-178.png)
+   ![&#x200B; chlimage_1-178 &#x200B;](assets/chlimage_1-178.png)
 
 1. Wijzig de grootte van het browservenster en bekijk hoe de lay-out dynamisch wordt aangepast aan de grootte van het venster.
 
-   ![ chlimage_1-179 ](assets/chlimage_1-179.png)
+   ![&#x200B; chlimage_1-179 &#x200B;](assets/chlimage_1-179.png)
 
 1. Schakel over naar de modus Lay-out. De emulatorwerkbalk wordt automatisch weergegeven, zodat u de lay-out per doelapparaat kunt plannen.
 
    Als u een component selecteert, worden zwevende en verborgen opties in het bewerkingsmenu weergegeven, samen met formaatgrepen voor de component.
 
-   ![ chlimage_1-180 ](assets/chlimage_1-180.png)
+   ![&#x200B; chlimage_1-180 &#x200B;](assets/chlimage_1-180.png)
 
 1. Als u de formaatgreep van de component vastgrijpt en sleept, wordt automatisch het layoutraster weergegeven om u te helpen met het wijzigen van de grootte.
 
-   ![ chlimage_1-181 ](assets/chlimage_1-181.png)
+   ![&#x200B; chlimage_1-181 &#x200B;](assets/chlimage_1-181.png)
 
 ## Aanvullende informatie {#further-information}
 
-Voor meer informatie, zie het auteursdocument [ Responsieve Lay-out ](/help/sites-authoring/responsive-layout.md) of het beheerderdocument [ het Vormen de Container van de Lay-out en de Wijze van de Lay-out ](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.
+Voor meer informatie, zie het auteursdocument [&#x200B; Responsieve Lay-out &#x200B;](/help/sites-authoring/responsive-layout.md) of het beheerderdocument [&#x200B; het Vormen de Container van de Lay-out en de Wijze van de Lay-out &#x200B;](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.

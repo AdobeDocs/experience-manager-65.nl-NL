@@ -92,7 +92,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
+>Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 

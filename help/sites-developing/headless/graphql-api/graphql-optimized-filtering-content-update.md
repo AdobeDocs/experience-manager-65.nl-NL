@@ -18,7 +18,7 @@ Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een proce
 
 >[!NOTE]
 >
->Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [ volgen het Optimaliseren van de Vragen van GraphQL ](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [&#x200B; volgen het Optimaliseren van de Vragen van GraphQL &#x200B;](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 ## Vereisten {#prerequisites}
 
@@ -28,7 +28,7 @@ Zorg ervoor dat u minimaal over de 6.5.17.0 release van AEM beschikt.
 
 Voer de volgende stappen uit om de procedure uit te voeren:
 
-1. [ vorm de montages OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
+1. [&#x200B; vorm de montages OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
 
    ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1&rbrace; OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ")] (assets/cfm-graphql-update-01.png "
 

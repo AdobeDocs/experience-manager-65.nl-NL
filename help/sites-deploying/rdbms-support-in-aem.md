@@ -25,7 +25,7 @@ Ondersteuning voor relationele databasedruk in AEM wordt geïmplementeerd via Do
 
 Deze API bestaat uit een Java API die is gebaseerd op de API van Mongo Java. Er wordt ook een implementatie van een BlobStore-API geleverd. Standaard worden klodders opgeslagen in de database.
 
-Voor meer informatie over de implementatiedetails, zie [ RDBDocumentStore ](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) en [ RDBBlobStore ](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentatie.
+Voor meer informatie over de implementatiedetails, zie [&#x200B; RDBDocumentStore &#x200B;](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) en [&#x200B; RDBBlobStore &#x200B;](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentatie.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Voor meer informatie over de implementatiedetails, zie [ RDBDocumentStore ](http
 
 ## Ondersteunde databases {#supported-databases}
 
-Voor meer informatie over het niveau van de Relationele steun van het Gegevensbestand in AEM, zie de [ pagina van Technische Vereisten ](/help/sites-deploying/technical-requirements.md).
+Voor meer informatie over het niveau van de Relationele steun van het Gegevensbestand in AEM, zie de [&#x200B; pagina van Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
 
 ## Configuratiestappen {#configuration-steps}
 
@@ -41,7 +41,7 @@ De gegevensopslagruimte wordt gemaakt door de `DocumentNodeStoreService` OSGi-se
 
 Om het te werken, moet een gegevensbron met AEM worden gevormd. Dit gebeurt via het `org.apache.sling.datasource.DataSourceFactory.config` -bestand. De bestuurders JDBC voor het respectieve gegevensbestand moeten afzonderlijk als bundels OSGi binnen de lokale configuratie worden verstrekt.
 
-Voor stappen bij het creëren van bundels OSGi voor bestuurders JDBC, zie deze [ documentatie ](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) op de website van Apache Sling.
+Voor stappen bij het creëren van bundels OSGi voor bestuurders JDBC, zie deze [&#x200B; documentatie &#x200B;](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) op de website van Apache Sling.
 
 Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te configureren met RDB-persistentie:
 
@@ -58,7 +58,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
 
    >[!NOTE]
    >
-   >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elk gesteund gegevensbestand, zie [ de Opties van de Configuratie van Source van Gegevens ](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
+   >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elk gesteund gegevensbestand, zie [&#x200B; de Opties van de Configuratie van Source van Gegevens &#x200B;](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
 1. Bereid daarna de bundels JDBC OSGi voor die met AEM moeten worden gebruikt:
 

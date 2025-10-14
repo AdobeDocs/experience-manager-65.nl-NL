@@ -158,11 +158,11 @@ In de AEM Forms-werkruimte:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **het Zuiveren in IE**: Om de werkruimte van AEM Forms in IE te zuiveren, zie: [ https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie ](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **het Zuiveren in IE**: Om de werkruimte van AEM Forms in IE te zuiveren, zie: [&#x200B; https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie &#x200B;](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **het Zuiveren in Chrome**: Om debugger in Chrome te openen, gebruik de kortere weg: Ctrl+Shift+I. Voor meer informatie, zie: [ https://developer.chrome.com/docs/extensions/mv3/tut_debugging/ ](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **het Zuiveren in Chrome**: Om debugger in Chrome te openen, gebruik de kortere weg: Ctrl+Shift+I. Voor meer informatie, zie: [&#x200B; https://developer.chrome.com/docs/extensions/mv3/tut_debugging/ &#x200B;](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
-* **het Zuiveren in Firefox**: Verscheidene toe:voegen-ons zijn beschikbaar om manuscripten en stijlen in Firefox te zuiveren. Bijvoorbeeld, is het Vuurwerk één dergelijk het zuiveren nut ([ https://getfirebug.com ](https://getfirebug.com)).
+* **het Zuiveren in Firefox**: Verscheidene toe:voegen-ons zijn beschikbaar om manuscripten en stijlen in Firefox te zuiveren. Bijvoorbeeld, is het Vuurwerk één dergelijk het zuiveren nut ([&#x200B; https://getfirebug.com &#x200B;](https://getfirebug.com)).
 
 ## Veelgestelde vragen {#faqs}
 

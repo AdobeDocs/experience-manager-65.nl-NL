@@ -24,12 +24,12 @@ Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige pu
 
 >[!NOTE]
 >
->De theorie achter lanceringen wordt beschreven in detail onder [ Lanceringen ](/help/sites-authoring/launches.md) in de standaard auteursdocumentatie.
+>De theorie achter lanceringen wordt beschreven in detail onder [&#x200B; Lanceringen &#x200B;](/help/sites-authoring/launches.md) in de standaard auteursdocumentatie.
 >
->De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen met [ worden gevonden Creërend Lanceringen ](/help/sites-classic-ui-authoring/classic-launches-creating.md), [ het Uitgeven Lancjes ](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [ Bevorderend Lanceringen ](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen met [&#x200B; worden gevonden Creërend Lanceringen &#x200B;](/help/sites-classic-ui-authoring/classic-launches-creating.md), [&#x200B; het Uitgeven Lancjes &#x200B;](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [&#x200B; Bevorderend Lanceringen &#x200B;](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Meerdere bronvertakkingen voor een lancering is niet mogelijk in klassieke UI.
 
-De console van Lanceringen kan direct met [ http://localhost:4502/libs/launches/content/admin.html ](http://localhost:4502/libs/launches/content/admin.html) worden betreden
+De console van Lanceringen kan direct met [&#x200B; http://localhost:4502/libs/launches/content/admin.html &#x200B;](http://localhost:4502/libs/launches/content/admin.html) worden betreden

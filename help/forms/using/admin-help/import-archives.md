@@ -43,12 +43,12 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Als u Configure klikt, vormt de Configure pagina van Eindpunten, waar u om het even welke veranderingen kunt aanbrengen die u vereist:
 
    * Om een eindpunt anders te noemen of zijn beschrijving uit te geven, klik het.
-   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [ Vormende eindpunten van de Manager van de Taak ](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [ Gecontroleerde montages van het omslageindpunt ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [ E-mail eindpuntmontages ](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [&#x200B; Vormende eindpunten van de Manager van de Taak &#x200B;](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [&#x200B; Gecontroleerde montages van het omslageindpunt &#x200B;](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [&#x200B; E-mail eindpuntmontages &#x200B;](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [ het Verwijderen van eindpuntmontages ](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [&#x200B; het Verwijderen van eindpuntmontages &#x200B;](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 
@@ -110,12 +110,12 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. De Configure pagina van Eindpunten verschijnt, waar u om het even welke veranderingen kunt aanbrengen die u vereist:
 
    * Om een eindpunt anders te noemen of zijn beschrijving uit te geven, klik het.
-   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [ Vormende eindpunten van de Manager van de Taak ](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [ Gecontroleerde montages van het omslageindpunt ](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [ E-mail eindpuntmontages ](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Als u een taakbeheereindpunt wilt toevoegen, klikt u op TaskManager toevoegen. Voor details over de montages van de Manager van de Taak, zie [&#x200B; Vormende eindpunten van de Manager van de Taak &#x200B;](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Als u een eindpunt van een gecontroleerde map wilt toevoegen, klikt u op Controlemap toevoegen. Voor details over de Gecontroleerde montages van de Omslag, zie [&#x200B; Gecontroleerde montages van het omslageindpunt &#x200B;](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Als u een e-maileindpunt wilt toevoegen, klikt u op E-mail toevoegen. Voor details over de E-mailmontages, zie [&#x200B; E-mail eindpuntmontages &#x200B;](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Om een EJB eindpunt toe te voegen, voegt de klik EJB toe en specificeert een naam en een beschrijving voor het eindpunt.
    * Om een SOAP eindpunt toe te voegen, voegt de klik SOAP toe en specificeert een naam en een beschrijving voor het eindpunt.
-   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [ het Verwijderen van eindpuntmontages ](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Als u een eindpunt voor verwijderen wilt toevoegen, klikt u op Verwijdering toevoegen. Voor details over de Verwijderende montages, zie [&#x200B; het Verwijderen van eindpuntmontages &#x200B;](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 

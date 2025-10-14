@@ -35,7 +35,7 @@ Deze sectie beschrijft hoe te met de BulkRedacteur in de **console van Hulpmidde
 
 >[!CAUTION]
 >
->Met de [ afschrijving van Klassieke UI ](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, is de Redacteur van het Bulk ook afgekeurd en zo is de Adobe niet van plan om de Redacteur van het Bulk verder te verbeteren.
+>Met de [&#x200B; afschrijving van Klassieke UI &#x200B;](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, is de Redacteur van het Bulk ook afgekeurd en zo is de Adobe niet van plan om de Redacteur van het Bulk verder te verbeteren.
 
 ## Voorbeeld van hoofdletters/kleine letters voor de Bulkeditor {#example-use-case-for-the-bulk-editor}
 
@@ -46,11 +46,11 @@ Een voorbeeld om een dergelijk gebruiksgeval te illustreren is opgenomen in de w
 1. Navigeer aan de **pagina van de Steun** en dan aan het **Tevredenheid van de Dienst van de Klant** onderzoek.
 1. **geeft** het **Begin van Vorm** paragraaf uit. In de dialoogdoos, klik het **Geavanceerde** lusje, breid de **Configuratie van de Actie** uit, dan klik **Gegevens van de Mening...**.
 
-   ![ het onderzoeksvoorbeeld van de Tevredenheid van de Klant ](assets/custsatsurvey.png)
+   ![&#x200B; het onderzoeksvoorbeeld van de Tevredenheid van de Klant &#x200B;](assets/custsatsurvey.png)
 
 1. De Bulkeditor is volledig aanpasbaar, maar in dit voorbeeld staat de Bulkeditor gebruikers niet toe de inhoud te bewerken, maar laat ze de informatie alleen exporteren naar een spreadsheet.
 
-   ![ Bulk redacteursconsole ](assets/bulkeditor.png)
+   ![&#x200B; Bulk redacteursconsole &#x200B;](assets/bulkeditor.png)
 
 ## De Bulkeditor gebruiken {#how-to-use-the-bulk-editor}
 
@@ -100,16 +100,16 @@ De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
 
 Bijvoorbeeld:
 
-![ de opties van de redacteursfilter van de Bulk ](assets/searchfilter.png)
+![&#x200B; de opties van de redacteursfilter van de Bulk &#x200B;](assets/searchfilter.png)
 
 1. Klik **Onderzoek**. De resultaten worden weergegeven in de Bulk-editor.
 In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcriteria geretourneerd en weergegeven met de gevraagde kolommen.
 
-   ![ Bulk redacteursresultaten ](assets/chlimage_1-39.png)
+   ![&#x200B; Bulk redacteursresultaten &#x200B;](assets/chlimage_1-39.png)
 
 1. Dubbelklik op een cel zodat u wijzigingen kunt aanbrengen.
 
-   ![ het Uitgeven in bulk ](assets/srchresultedit.png)
+   ![&#x200B; het Uitgeven in bulk &#x200B;](assets/srchresultedit.png)
 
 1. Klik **sparen** om uw veranderingen (**sparen** knoop wordt geactiveerd nadat u een cel) hebt uitgegeven.
 
@@ -131,19 +131,19 @@ Exporteer inhoud indien nodig naar een Excel-werkblad om wijzigingen aan te bren
 
 Inhoud exporteren:
 
-1. Onderzoek naar inhoud zoals die in [ wordt beschreven het Zoeken en het Uitgeven Inhoud ](#searching-and-editing-content).
+1. Onderzoek naar inhoud zoals die in [&#x200B; wordt beschreven het Zoeken en het Uitgeven Inhoud &#x200B;](#searching-and-editing-content).
 1. Klik **Uitvoer** zodat kunt u de veranderingen in een lusje-gescheiden spreadsheet van Excel uitvoeren. AEM WCM vraagt u waar u het bestand wilt downloaden.
 
    >[!NOTE]
    >
-   >Door gebrek, worden de veranderingen gecodeerd in [ vensters-1252 ](https://en.wikipedia.org/wiki/Windows-1252) (die ook als CP-1252 wordt bekend). U kunt UTF-8 controleren om de wijzigingen in UTF-8 te exporteren.
+   >Door gebrek, worden de veranderingen gecodeerd in [&#x200B; vensters-1252 &#x200B;](https://en.wikipedia.org/wiki/Windows-1252) (die ook als CP-1252 wordt bekend). U kunt UTF-8 controleren om de wijzigingen in UTF-8 te exporteren.
 
-   ![ het Uitvoeren resultaten ](assets/srchrsesultexport.png)
+   ![&#x200B; het Uitvoeren resultaten &#x200B;](assets/srchrsesultexport.png)
 
 1. Selecteer de locatie en bevestig dat u het bestand wilt downloaden.
 1. Nadat u het bestand hebt gedownload, kunt u het openen vanuit uw spreadsheetprogramma, bijvoorbeeld Microsoft® Excel. Het spreadsheetprogramma importeert het bestand en zet het om in een spreadsheetindeling.
 
-   ![ Geëxporteerde resultaten in een spreadsheet ](assets/exportinexcel.png)
+   ![&#x200B; Geëxporteerde resultaten in een spreadsheet &#x200B;](assets/exportinexcel.png)
 
 ### Inhoud importeren {#importing-content}
 

@@ -30,7 +30,7 @@ De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobi
 >
 >Het dashboard is een reeks handige tegels die een overzicht geven van de inhoud, metagegevens en de verbindingsstatus van AEM Mobile On-Demand van de app.
 >
->Zie [ het Dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor details.
+>Zie [&#x200B; het Dashboard van de Toepassing van AEM Mobile &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor details.
 
 **om app te creëren op bestelling:**
 
@@ -43,7 +43,7 @@ De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobi
 1. Indien gekend, ga wolkenconfig details in, anders klik **creëren**.
 1. Klik **Gedaan** om uw nieuwe AEM Mobile app in de catalogus te bekijken.
 
-![ chlimage_1 ](assets/chlimage_1.gif)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.gif)
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingss
 
 Wanneer u een On-Demand-app maakt vanaf het dashboard van de toepassing, bestaat de volgende stap uit het koppelen van uw app aan de cloudconfiguratie.
 
-Zie [ Associerend uw app aan de Configuratie van de Wolk ](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer details.
+Zie [&#x200B; Associerend uw app aan de Configuratie van de Wolk &#x200B;](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer details.
 
 ### Aan de slag {#getting-ahead}
 

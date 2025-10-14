@@ -18,12 +18,12 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 ## Overzicht {#overview}
 
-Met de HTTP-API van [!DNL Assets] kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven in `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [ steun voor de Fragmenten van de Inhoud ](/help/assets/assets-api-content-fragments.md).
+Met de HTTP-API van [!DNL Assets] kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Inhoudsfragmenten. Deze wordt weergegeven in `/api/assets` en wordt geïmplementeerd als REST API. Het omvat [&#x200B; steun voor de Fragmenten van de Inhoud &#x200B;](/help/assets/assets-api-content-fragments.md).
 
 De API openen:
 
@@ -36,19 +36,19 @@ Na [!UICONTROL Off Time] zijn een element en de bijbehorende uitvoeringen niet b
 
 >[!CAUTION]
 >
->[ HTTP API werkt de meta-gegevenseigenschappen ](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de naamruimte `dc` bij.
+>[&#x200B; HTTP API werkt de meta-gegevenseigenschappen &#x200B;](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de naamruimte `dc` bij.
 
 ## Inhoudsfragmenten {#content-fragments}
 
-A [ inhoudsfragment ](/help/assets/content-fragments/content-fragments.md) is een speciaal type van activa. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
+A [&#x200B; inhoudsfragment &#x200B;](/help/assets/content-fragments/content-fragments.md) is een speciaal type van activa. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` -elementen (zoals afbeeldingen of documenten), zijn er enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
-Voor verdere informatie zie [ de Steun van de Fragmenten van de Inhoud in Experience Manager Assets HTTP API ](/help/assets/assets-api-content-fragments.md).
+Voor verdere informatie zie [&#x200B; de Steun van de Fragmenten van de Inhoud in Experience Manager Assets HTTP API &#x200B;](/help/assets/assets-api-content-fragments.md).
 
 ## Gegevensmodel {#data-model}
 
 De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot.
 
-Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie [ Modellen van de Gegevens van het Fragment van de Inhoud ](/help/assets/assets-api-content-fragments.md#content-fragments) voor verdere informatie.
+Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie [&#x200B; Modellen van de Gegevens van het Fragment van de Inhoud &#x200B;](/help/assets/assets-api-content-fragments.md#content-fragments) voor verdere informatie.
 
 ### Mappen {#folders}
 
@@ -79,7 +79,7 @@ In Experience Manager bevat een element de volgende elementen:
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of [!DNL Adobe InDesign] -bestanden zijn.
 * Optionele opmerkingen.
 
-Voor informatie over elementen in de Fragmenten van de Inhoud zie [ de Steun van de Fragmenten van de Inhoud in HTTP van Experience Manager Assets API ](/help/assets/assets-api-content-fragments.md#content-fragments).
+Voor informatie over elementen in de Fragmenten van de Inhoud zie [&#x200B; de Steun van de Fragmenten van de Inhoud in HTTP van Experience Manager Assets API &#x200B;](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 In [!DNL Experience Manager] heeft een map de volgende componenten:
 
@@ -89,21 +89,21 @@ In [!DNL Experience Manager] heeft een map de volgende componenten:
 
 De [!DNL Assets] HTTP API bevat de volgende functies:
 
-* [ wint een omslaglijst ](#retrieve-a-folder-listing) terug.
-* [ creeer een omslag ](#create-a-folder).
-* [ creeer een activa ](#create-an-asset).
-* [ de activa binaire van de Update &lbrace;](#update-asset-binary).
-* [ de activameta-gegevens van de Update ](#update-asset-metadata).
-* [ creeer een activa vertoning ](#create-an-asset-rendition).
-* [ werk een activavertoning ](#update-an-asset-rendition) bij.
-* [ creeer een activacommentaar ](#create-an-asset-comment).
-* [ Kopieer een omslag of activa ](#copy-a-folder-or-asset).
-* [ Beweeg een omslag of activa ](#move-a-folder-or-asset).
-* [ Schrap een omslag, activa, of vertoning ](#delete-a-folder-asset-or-rendition).
+* [&#x200B; wint een omslaglijst &#x200B;](#retrieve-a-folder-listing) terug.
+* [&#x200B; creeer een omslag &#x200B;](#create-a-folder).
+* [&#x200B; creeer een activa &#x200B;](#create-an-asset).
+* [&#x200B; de activa binaire van de Update &lbrace;](#update-asset-binary).
+* [&#x200B; de activameta-gegevens van de Update &#x200B;](#update-asset-metadata).
+* [&#x200B; creeer een activa vertoning &#x200B;](#create-an-asset-rendition).
+* [&#x200B; werk een activavertoning &#x200B;](#update-an-asset-rendition) bij.
+* [&#x200B; creeer een activacommentaar &#x200B;](#create-an-asset-comment).
+* [&#x200B; Kopieer een omslag of activa &#x200B;](#copy-a-folder-or-asset).
+* [&#x200B; Beweeg een omslag of activa &#x200B;](#move-a-folder-or-asset).
+* [&#x200B; Schrap een omslag, activa, of vertoning &#x200B;](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notatie weggelaten. In feite correleert de aantekening met [ Herstel ](https://github.com/micha/resty) dat een manuscriptomslag voor `cURL` is.
+>Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notatie weggelaten. In feite correleert de aantekening met [&#x200B; Herstel &#x200B;](https://github.com/micha/resty) dat een manuscriptomslag voor `cURL` is.
 
 **Eerste vereisten**
 
@@ -318,6 +318,6 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 ## Tips en beperkingen {#tips-best-practices-limitations}
 
-* [ HTTP API werkt de meta-gegevenseigenschappen ](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de naamruimte `dc` bij.
+* [&#x200B; HTTP API werkt de meta-gegevenseigenschappen &#x200B;](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de naamruimte `dc` bij.
 
 * Assets HTTP API retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.

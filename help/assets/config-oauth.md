@@ -23,11 +23,11 @@ Een open vergunningsconfiguratie wordt vereist om de toestemming aan de [!DNL Ad
 
 ## OAuth-configuratie voor de nieuwe AMS-gebruikers {#oauth-config-existing-ams-users}
 
-Verwijs naar [ configuratie van de slimme inhoudsdiensten ](#integrate-adobe-io) voor de configuratie van de diensten OAuth voor een nieuwe gebruiker. Zodra gedaan, volg deze [ stappen ](#prereqs-config-oauth-onprem).
+Verwijs naar [&#x200B; configuratie van de slimme inhoudsdiensten &#x200B;](#integrate-adobe-io) voor de configuratie van de diensten OAuth voor een nieuwe gebruiker. Zodra gedaan, volg deze [&#x200B; stappen &#x200B;](#prereqs-config-oauth-onprem).
 
 >[!NOTE]
 >
->Indien vereist, kunt u een steunkaartje na het [ steunproces ](https://experienceleague.adobe.com/nl?lang=en&amp;support-tab=home#support) voorleggen.
+>Indien vereist, kunt u een steunkaartje na het [&#x200B; steunproces &#x200B;](https://experienceleague.adobe.com/nl?lang=en&support-tab=home#support) voorleggen.
 
 ## OAuth-configuratie voor de bestaande AMS-gebruikers {#oauth-config-new-ams-users}
 
@@ -37,14 +37,14 @@ Voordat u een van de stappen in deze methode uitvoert, moet u het volgende imple
 
 Een configuratie OAuth vereist de volgende eerste vereisten:
 
-* Creeer een nieuwe integratie OAuth in [ Developer Console ](https://developer.adobe.com/console/user/servicesandapis). Gebruik de eigenschappen `ClientID` , `ClientSecret` , `OrgID` en andere eigenschappen in de onderstaande stappen:
+* Creeer een nieuwe integratie OAuth in [&#x200B; Developer Console &#x200B;](https://developer.adobe.com/console/user/servicesandapis). Gebruik de eigenschappen `ClientID` , `ClientSecret` , `OrgID` en andere eigenschappen in de onderstaande stappen:
 * De volgende bestanden zijn te vinden op dit pad `/apps/system/config in crx/de` :
    * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### OAuth-configuratie voor de bestaande AMS- en On prem-gebruikers {#steps-config-oauth-onprem}
 
-De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [ steunproces voorleggen ](https://experienceleague.adobe.com/nl?lang=en&amp;support-tab=home#support).
+De hieronder stappen kunnen door systeemadmin in **CRXDE** worden uitgevoerd. De klant van AMS kan uit aan de vertegenwoordiger van de Adobe bereiken of een steunkaartje na het [&#x200B; steunproces voorleggen &#x200B;](https://experienceleague.adobe.com/nl?lang=en&support-tab=home#support).
 
 1. Voeg de onderstaande eigenschappen toe of werk deze bij in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` :
 
@@ -89,7 +89,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
 >[!NOTE]
 >
->Als de fout `unsupported_grant_type` optreedt, installeert u de hotfix voor graniet. Verwijs naar [ migratie van de Rekening van de Dienst (JWT) naar de geloofsbrieven van Server-aan-Server van OAuth ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24660).
+>Als de fout `unsupported_grant_type` optreedt, installeert u de hotfix voor graniet. Verwijs naar [&#x200B; migratie van de Rekening van de Dienst (JWT) naar de geloofsbrieven van Server-aan-Server van OAuth &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24660).
 
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
 
@@ -99,11 +99,11 @@ Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
 <!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
 
-1. Om een openbare sleutel te produceren, [ creeer een Slimme 1&rbrace; configuratie van de Dienst van de Inhoud &lbrace;in [!DNL Experience Manager]. ](#oauth-config) [ Download een openbaar certificaat ](#oauth-config) voor integratie OAuth.
+1. Om een openbare sleutel te produceren, [&#x200B; creeer een Slimme 1&rbrace; configuratie van de Dienst van de Inhoud &lbrace;in [!DNL Experience Manager]. &#x200B;](#oauth-config) [&#x200B; Download een openbaar certificaat &#x200B;](#oauth-config) voor integratie OAuth.
 
-1. *[niet toepasselijk als u een bestaande gebruiker]* [ bent creeer een integratie in Adobe Developer Console ](#create-adobe-i-o-integration).
+1. *[niet toepasselijk als u een bestaande gebruiker]* [&#x200B; bent creeer een integratie in Adobe Developer Console &#x200B;](#create-adobe-i-o-integration).
 
-1. [ vorm uw plaatsing ](#configure-smart-content-service) gebruikend de API sleutel en andere geloofsbrieven van Adobe Developer Console.
+1. [&#x200B; vorm uw plaatsing &#x200B;](#configure-smart-content-service) gebruikend de API sleutel en andere geloofsbrieven van Adobe Developer Console.
 
 1. [Test de configuratie](#validate-the-configuration).
 
@@ -132,17 +132,17 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op de Adobe Developer
 
    Laat de overige velden voorlopig leeg (later te verstrekken). Klik op **[!UICONTROL OK]**.
 
-   ![ Experience Manager de Slimme dialoog van de Dienst van de Inhoud om de inhoudsdienst URL ](assets/aem_scs12.png) te verstrekken
+   ![&#x200B; Experience Manager de Slimme dialoog van de Dienst van de Inhoud om de inhoudsdienst URL &#x200B;](assets/aem_scs12.png) te verstrekken
 
    *Cijfer: De slimme dialoog van de Dienst van de Inhoud om de inhoudsdienst URL* te verstrekken
 
    >[!NOTE]
    >
-   >De URL die als [!UICONTROL Service URL] wordt opgegeven, is niet toegankelijk via de browser en genereert een fout van 404. De configuratie werkt OK met dezelfde waarde als de parameter [!UICONTROL Service URL] . Voor het algemene de dienststatus en onderhoudsprogramma, zie [ https://status.adobe.com ](https://status.adobe.com).
+   >De URL die als [!UICONTROL Service URL] wordt opgegeven, is niet toegankelijk via de browser en genereert een fout van 404. De configuratie werkt OK met dezelfde waarde als de parameter [!UICONTROL Service URL] . Voor het algemene de dienststatus en onderhoudsprogramma, zie [&#x200B; https://status.adobe.com &#x200B;](https://status.adobe.com).
 
 1. Klik op **[!UICONTROL Download Public Certificate for OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt` . Bovendien hoeft u dit certificaat niet meer te uploaden naar de Adobe Developer-console.
 
-   ![ een vertegenwoordiging van de montages die voor de slimme het etiketteren dienst ](assets/smart-tags-download-public-cert1.png) worden gecreeerd
+   ![&#x200B; een vertegenwoordiging van de montages die voor de slimme het etiketteren dienst &#x200B;](assets/smart-tags-download-public-cert1.png) worden gecreeerd
 
    *Cijfer: Montages voor de slimme het etiketteren dienst.*
 
@@ -150,7 +150,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op de Adobe Developer
 
 Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in Adobe Developer Console om [!UICONTROL API Key] (gegenereerd in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), [!UICONTROL TECHNICAL ACCOUNT ID] , [!UICONTROL ORGANIZATION ID] en [!UICONTROL CLIENT SECRET] for [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager] te verkrijgen.
 
-1. Toegang [ https://developer.adobe.com/console/ ](https://developer.adobe.com/console/) in browser. Selecteer het gewenste account en verifieer dat de bijbehorende organisatierol is ingesteld op systeembeheerder.
+1. Toegang [&#x200B; https://developer.adobe.com/console/ &#x200B;](https://developer.adobe.com/console/) in browser. Selecteer het gewenste account en verifieer dat de bijbehorende organisatierol is ingesteld op systeembeheerder.
 
 1. Maak een project een geef het de gewenste naam. Klik op **[!UICONTROL Add API]**.
 
@@ -172,7 +172,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
    *Figure: Details of integration in Adobe Developer Console*
 -->
 
-![ oauth config ](assets/oauth-config.png)
+![&#x200B; oauth config &#x200B;](assets/oauth-config.png)
 *Cijfer: Gevormde OAuth Server-aan-Server in Adobe Developer Console*
 
 ## Slimme-inhoudsservice configureren {#configure-smart-content-service}
@@ -185,7 +185,7 @@ Als u de integratie wilt configureren, gebruikt u de waarden van de velden [!UIC
 
 1. Gebruik in het dialoogvenster **[!UICONTROL AEM Smart Content Service]** de vooraf ingevulde waarden voor de velden **[!UICONTROL Service URL]** en **[!UICONTROL Authorization Server]**.
 
-1. Voor de gebieden [!UICONTROL Api Key], [!UICONTROL Technical Account ID], [!UICONTROL Organization ID], en [!UICONTROL Client Secret], kopieer en gebruik de volgende waarden die in [ worden geproduceerd de integratie van Adobe Developer Console ](#create-adobe-i-o-integration).
+1. Voor de gebieden [!UICONTROL Api Key], [!UICONTROL Technical Account ID], [!UICONTROL Organization ID], en [!UICONTROL Client Secret], kopieer en gebruik de volgende waarden die in [&#x200B; worden geproduceerd de integratie van Adobe Developer Console &#x200B;](#create-adobe-i-o-integration).
 
    | [!UICONTROL Assets Smart Tagging Service Settings] | [!DNL Adobe Developer Console] integratievelden |
    |--- |--- |
@@ -196,6 +196,6 @@ Als u de integratie wilt configureren, gebruikt u de waarden van de velden [!UIC
 
 >[!MORELIKETHIS]
 >
->* [ Overzicht en hoe te om Slimme Markeringen ](enhanced-smart-tags.md) te trainen
->* [ vorm slimme het etiketteren ](config-smart-tagging.md)
->* [ Videozelfstudie over slimme markeringen ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL)
+>* [&#x200B; Overzicht en hoe te om Slimme Markeringen &#x200B;](enhanced-smart-tags.md) te trainen
+>* [&#x200B; vorm slimme het etiketteren &#x200B;](config-smart-tagging.md)
+>* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=nl-NL)

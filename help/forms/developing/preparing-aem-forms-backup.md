@@ -43,11 +43,11 @@ U kunt deze taken uitvoeren met behulp van de service Back-up en herstel:
 
 >[!NOTE]
 >
->Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Voor meer informatie over de Steun en herstelt dienst, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Steun en herstelt dienst, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Back-upmodus activeren op de Forms-server {#entering-backup-mode-on-the-forms-server}
 
@@ -57,11 +57,11 @@ U gaat reservewijze in om voor hete steunen van een Server van Forms toe te staa
 * De tijd voor de reserveprocedure om te voltooien.
 * Een vlag om erop te wijzen of om op ononderbroken reservewijze te zijn, die slechts nuttig is als u het rollen steunen uitvoert.
 
-Voordat u toepassingen gaat schrijven om in de back-upmodus te gaan, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de Forms-server in de back-upmodus hebt gezet. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).
+Voordat u toepassingen gaat schrijven om in de back-upmodus te gaan, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de Forms-server in de back-upmodus hebt gezet. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Voor meer informatie over de Steun en herstelt dienst, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Steun en herstelt dienst, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -78,7 +78,7 @@ Voer de volgende stappen uit om een toepassing te maken die de back-upmodus acti
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk om in uw project op te nemen voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt BackupService API**
 
@@ -86,7 +86,7 @@ Als u de back-upmodus programmatisch wilt verlaten, maakt u een BackupService-cl
 
 **besluit op een uniek etiket, bepaal de hoeveelheid tijd om de steun uit te voeren, en besluit of om op ononderbroken reservewijze te zijn**
 
-Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of u de Forms-server in de back-upmodus wilt laten staan. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of u de Forms-server in de back-upmodus wilt laten staan. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **ga reservewijze** binnen
 
@@ -118,7 +118,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
    U gebruikt een `ServiceClientFactory` -object en het BackupService client-API-object samen.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `BackupService` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn
@@ -182,11 +182,11 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
 U verlaat de back-upmodus, zodat de Forms-server de bestanden hervat van de GDS (Global Document Storage) op de Forms-server.
 
-Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).
+Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor AEM Forms, zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Voor meer informatie over de Steun en herstelt dienst, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Steun en herstelt dienst, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -201,7 +201,7 @@ Voer de volgende stappen uit om de back-upmodus te verlaten:
 
 Neem alle benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt BackupService API**
 
@@ -233,7 +233,7 @@ Maak een back-upmodus met de API voor back-up en herstel (Java):
 
    U gebruikt een `ServiceClientFactory` -object en het BackupService client-API-object samen.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `BackupService` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object als parameter door te geven.
 
 1. Back-upmodus openen

@@ -64,7 +64,7 @@ Als u een workflow of versie voor uw elementen nodig hebt, moet u eerst uploaden
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Dynamic Media Classic. Hieronder vindt u de aanbevolen workflow:
 
-1. In de Desktop app van Dynamic Media Classic, [ opstelling een geplande FTP uploadend en het coderen aan Dynamic Media Classic (systeem geautomatiseerd) ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-options).
+1. In de Desktop app van Dynamic Media Classic, [&#x200B; opstelling een geplande FTP uploadend en het coderen aan Dynamic Media Classic (systeem geautomatiseerd) &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=nl-NL#upload-options).
 1. In Experience Manager hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Dynamic Media Classic]** van de Inhoudszoeker.
 1. Auteur met het Dynamic Media Classic-videoonderdeel.
 
@@ -75,13 +75,13 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
    >[!NOTE]
    >
-   >Het tabblad **[!UICONTROL Video]** wordt niet weergegeven als de pagina geen cloudconfiguratie heeft. Zie [ Dynamic Media Classic voor WCM ](#enablingscene7forwcm) toelaten.
+   >Het tabblad **[!UICONTROL Video]** wordt niet weergegeven als de pagina geen cloudconfiguratie heeft. Zie [&#x200B; Dynamic Media Classic voor WCM &#x200B;](#enablingscene7forwcm) toelaten.
 
 1. Selecteer het adaptieve videocoderingsprofiel, een uit-van-de-doos enig videocoderingsprofiel, of een profiel van de douanevideocodering.
 
    >[!NOTE]
    >
-   >Voor meer informatie over wat video vooraf instelt betekent, zie [ Video vooraf instelt voor het coderen van videodossiers ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
+   >Voor meer informatie over wat video vooraf instelt betekent, zie [&#x200B; Video vooraf instelt voor het coderen van videodossiers &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=nl-NL#video-presets-for-encoding-video-files).
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 
@@ -91,7 +91,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
 Werk de viewer- en coderingsvoorinstellingen voor video in Experience Manager bij als de voorinstellingen in Dynamic Media Classic zijn bijgewerkt. In zulk geval, navigeer aan de configuratie van Dynamic Media Classic in de wolkenconfiguratie en selecteer **Update de kijker en het coderen vooraf instelt**.
 
-![ chlimage_1-131 ](assets/chlimage_1-131.png)
+![&#x200B; chlimage_1-131 &#x200B;](assets/chlimage_1-131.png)
 
 ### Uw primaire bronvideo uploaden {#uploading-your-master-video}
 
@@ -114,7 +114,7 @@ De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-
 
 De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
-![ chlimage_1-132 ](assets/chlimage_1-132.png)
+![&#x200B; chlimage_1-132 &#x200B;](assets/chlimage_1-132.png)
 
 >[!NOTE]
 >
@@ -152,11 +152,11 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 1. Maak een Dynamic Media Classic-videoprofiel. Selecteer **[!UICONTROL Create Page]** in het menu **[!UICONTROL New]** .
 1. Selecteer de Dynamic Media Classic Video profile sjabloon. Geef de nieuwe pagina met videoprofielen een naam en selecteer **[!UICONTROL Create]** .
 
-   ![ chlimage_1-133 ](assets/chlimage_1-133.png)
+   ![&#x200B; chlimage_1-133 &#x200B;](assets/chlimage_1-133.png)
 
 1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloudconfiguratie. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
 
-   ![ chlimage_1-134 ](assets/chlimage_1-134.png)
+   ![&#x200B; chlimage_1-134 &#x200B;](assets/chlimage_1-134.png)
 
    | Eigenschap | Beschrijving |
    |---|---|

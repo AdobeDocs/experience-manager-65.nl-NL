@@ -39,4 +39,4 @@ Op een standaardinstallatie, wordt het hier gevonden: **[|Show me|](http://local
 
 In de **sectie van Verrichtingen** van de pagina, vindt u twee methodes: **`traversalCheck`** en **`consistencyCheck`**. Als u een controle wilt uitvoeren, klikt u op de bewerking en voert u de gewenste parameters in.
 
-![ chlimage_1-117 ](assets/chlimage_1-117.png)
+![&#x200B; chlimage_1-117 &#x200B;](assets/chlimage_1-117.png)

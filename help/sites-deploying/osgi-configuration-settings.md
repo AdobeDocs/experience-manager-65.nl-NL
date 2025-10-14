@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # OSGi-configuratie-instellingen{#osgi-configuration-settings}
 
-[ OSGi ](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
+[&#x200B; OSGi &#x200B;](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
 OSGi &quot;*verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare, en samenwerkingscomponenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
 
-Deze functionaliteit maakt eenvoudig beheer van bundels mogelijk, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie de [ Specificatie OSGi ](https://docs.osgi.org/specification/)) is bevat in één van de diverse bundels. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke bundels te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Deze functionaliteit maakt eenvoudig beheer van bundels mogelijk, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie de [&#x200B; Specificatie OSGi &#x200B;](https://docs.osgi.org/specification/)) is bevat in één van de diverse bundels. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke bundels te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn relevant voor projectimplementatie. Niet alle instellingen in de lijst hoeven te worden aangepast. Sommige instellingen worden vermeld om u te helpen begrijpen hoe AEM werkt.
 
@@ -37,7 +37,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 >[!NOTE]
 >
->Het gereedschap van Diff van de Configuratie OSGi, een deel van [ AEM Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=nl-NL), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
+>Het gereedschap van Diff van de Configuratie OSGi, een deel van [&#x200B; AEM Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=nl-NL), kan worden gebruikt om van de standaard configuraties OSGi een lijst te maken.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 **CRX Sling Client Repository** vormt toegang tot de onderliggende inhoudsbewaarplaats.
 
-* Het **Wachtwoord Admin** zou na installatie moeten worden veranderd om de [ veiligheid ](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
+* Het **Wachtwoord Admin** zou na installatie moeten worden veranderd om de [&#x200B; veiligheid &#x200B;](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
 * Andere wijzigingen zouden niet nodig moeten zijn en er moet zorgvuldig op worden gelet dat ze de toegang tot de opslagplaats kunnen beïnvloeden.
 
 **Apache Felix OSGi de Console van het Beheer** vormt:
@@ -67,7 +67,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 >Ben zeker om het volgende te vormen:
 >
 >**Naam van de Gebruiker** en **Wachtwoord**, de geloofsbrieven voor de toegang tot van de Console van het Beheer van het Web van de Felix van Apache zelf.
->Het wachtwoord moet na de aanvankelijke installatie worden veranderd om de [ veiligheid ](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
+>Het wachtwoord moet na de aanvankelijke installatie worden veranderd om de [&#x200B; veiligheid &#x200B;](/help/sites-administering/security-checklist.md) van uw instantie te verzekeren.
 
 >[!NOTE]
 >
@@ -75,9 +75,9 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 **Apache die Aanpasbare Logger van de Gegevens van het Verzoek plaatst** vormt:
 
-* **de Naam van het Logboek** en **Formaat van het Logboek** om de plaats en het formaat van verzoek en toegangsregistreren (gebrek: `request.log`) te vormen. Dit logbestand is van essentieel belang voor het analyseren van de prestaties of foutopsporingsfunctionaliteit in verband met de webketen. Het is met [ Apache Sling Logger van het Verzoek ](#apacheslingrequestlogger) in paren gerangschikt.
+* **de Naam van het Logboek** en **Formaat van het Logboek** om de plaats en het formaat van verzoek en toegangsregistreren (gebrek: `request.log`) te vormen. Dit logbestand is van essentieel belang voor het analyseren van de prestaties of foutopsporingsfunctionaliteit in verband met de webketen. Het is met [&#x200B; Apache Sling Logger van het Verzoek &#x200B;](#apacheslingrequestlogger) in paren gerangschikt.
 
-Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
+Zie [&#x200B; AEM het Registreren &#x200B;](/help/sites-deploying/configure-logging.md) en [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache die Gebeurtenis verbinden pool** vormt:
 
@@ -98,7 +98,7 @@ Schakel JSON niet uit.
 
 >[!NOTE]
 >
->Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [&#x200B; Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md) in werking stelt.
 
 **Apache Sling JavaScript Handler** vormt montages voor de compilatie van.java- dossiers als manuscripten (servlets).
 
@@ -135,7 +135,7 @@ Met name voor productiegevallen:
 
 >[!NOTE]
 >
->Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [&#x200B; Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md) in werking stelt.
 
 **Apache die Logging Configuratie** vormt:
 
@@ -145,7 +145,7 @@ Met name voor productiegevallen:
 
 * **Patroon van het Bericht** bepaalt het formaat van de logboekberichten.
 
-Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md#global-logging) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
+Zie [&#x200B; AEM het Registreren &#x200B;](/help/sites-deploying/configure-logging.md#global-logging) en [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache het Verdelen Logboekconfiguratie van het Logboekregistratie (de Configuratie van de Fabriek)** vormt:
 
@@ -157,7 +157,7 @@ Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md#global-lo
 * Dergelijke configuraties zijn nuttig tijdens ontwikkeling; bijvoorbeeld, om TRACE berichten voor de specifieke dienst in een specifiek logboekdossier te registreren.
 * Dergelijke configuraties zijn nuttig in een productiemilieu; bijvoorbeeld, om berichten over de specifieke dienst te hebben die aan een individueel logboekdossier voor gemakkelijkere controle wordt geregistreerd.
 
-Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
+Zie [&#x200B; AEM het Registreren &#x200B;](/help/sites-deploying/configure-logging.md) en [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache het Verdelen de Configuratie van de Schrijver van de Registratie (de Configuratie van de Fabriek)** vormt:
 
@@ -169,7 +169,7 @@ Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het
 * Dergelijke configuraties zijn nuttig tijdens ontwikkeling; bijvoorbeeld, om TRACE berichten voor de specifieke dienst in een specifiek logboekdossier te registreren.
 * Dergelijke configuraties zijn nuttig in een productiemilieu; bijvoorbeeld, om berichten over de specifieke dienst te hebben die aan een individueel logboekdossier voor gemakkelijkere controle wordt geregistreerd.
 
-Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
+Zie [&#x200B; AEM het Registreren &#x200B;](/help/sites-deploying/configure-logging.md) en [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache die HoofdServlet** vormt:
 
@@ -187,7 +187,7 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u laat vormen:
 * of een lege verwijzingskoptekst is toegestaan
 * en een lijst met servers die naast de serverhost zijn toegestaan.
 
-Zie de [ Controlelijst van de Veiligheid - Kwesties met de Versmeding van het Verzoek van de Verkeer van de Verkeer van de Verkeer van de Plaats ](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.
+Zie de [&#x200B; Controlelijst van de Veiligheid - Kwesties met de Versmeding van het Verzoek van de Verkeer van de Verkeer van de Verkeer van de Plaats &#x200B;](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.
 
 >[!NOTE]
 >
@@ -200,9 +200,9 @@ Zie de [ Controlelijst van de Veiligheid - Kwesties met de Versmeding van het Ve
 
 * **laat Logboek van de Toegang** toe, om toe te laten of onbruikbaar te maken.
 
-Gepaureerd met [ Apache Sling Aanpasbare Logger van de Gegevens van het Verzoek ](#apacheslingcustomizablerequestdatalogger).
+Gepaureerd met [&#x200B; Apache Sling Aanpasbare Logger van de Gegevens van het Verzoek &#x200B;](#apacheslingcustomizablerequestdatalogger).
 
-Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het Sling Registreren ](https://sling.apache.org/documentation/development/logging.html).
+Zie [&#x200B; AEM het Registreren &#x200B;](/help/sites-deploying/configure-logging.md) en [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache het Verdelen van de Factory van de Resolver van het Middel** vormt centrale aspecten van het Verdelen van middelresolutie:
 
@@ -216,7 +216,7 @@ Zie [ AEM het Registreren ](/help/sites-deploying/configure-logging.md) en [ het
 
 * Gebruik uw lokale installatie (bijvoorbeeld gebruik `https://localhost:4502/system/console/jcrresolver`) om te bepalen welke Resolver van Middel actief is.
 
-Zie: [ https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution ](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
+Zie: [&#x200B; https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution &#x200B;](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
 >[!CAUTION]
 >
@@ -273,15 +273,15 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 
 >[!CAUTION]
 >
->Wanneer het veranderen van het plaatsen voor of **&#x200B;**&#x200B;of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [ artikel van de Kennisbank ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=nl-NL) voor details.
+>Wanneer het veranderen van het plaatsen voor of **&#x200B;**&#x200B;of **Gzip**, schrap de inhoud van cliëntlibgeheime voorgeheugen. Zie [&#x200B; artikel van de Kennisbank &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=nl-NL) voor details.
 
 >[!NOTE]
 >
->Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [&#x200B; Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md) in werking stelt.
 
 **De Handler van de Authentificatie van de Kopbal van HTTP van de Dag CQ** montages van het Systeem voor de basisauthentificatiemethode van het HTTP- verzoek.
 
-Wanneer het gebruiken van [ gesloten gebruikersgroepen ](/help/sites-administering/cug.md), kunt u, onder anderen, het volgende vormen:
+Wanneer het gebruiken van [&#x200B; gesloten gebruikersgroepen &#x200B;](/help/sites-administering/cug.md), kunt u, onder anderen, het volgende vormen:
 
 * **Uitspraak van HTTP**
 * De **Standaard Login Pagina**
@@ -373,7 +373,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 >[!NOTE]
 >
->Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [ Productie Klaar Wijze ](/help/sites-administering/production-ready.md) in werking stelt.
+>Dit het plaatsen wordt automatisch gevormd voor productieinstanties als u AEM in [&#x200B; Productie Klaar Wijze &#x200B;](/help/sites-administering/production-ready.md) in werking stelt.
 
 **Vorm van de Configurator van de Controle van de Verbinding van 0&rbrace; Dag CQ WCM:**
 
@@ -397,7 +397,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 >[!NOTE]
 >
->Zie [ de Indrukking van de Pagina ](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
+>Zie [&#x200B; de Indrukking van de Pagina &#x200B;](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
 
 **CQ van de Dag CQ de Statistieken van de Pagina WCM** voor publiceer instantie vormen:
 
@@ -407,7 +407,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 >[!NOTE]
 >
->Zie [ de Indrukking van de Pagina ](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
+>Zie [&#x200B; de Indrukking van de Pagina &#x200B;](/help/sites-deploying/configuring.md#enabling-page-impressions) voor meer informatie.
 
 **Controle van de Manager van de Versie van WCM van 0&rbrace; Dag CQ WCM als, en hoe, de versies in uw systeem worden beheerd:**
 
@@ -456,7 +456,7 @@ De totale stroom is als volgt:
 
 De stroom tussen browser van de gebruiker, CDN, en AEM kan als volgt worden visualiseerd.
 
-![ chlimage_1-8 ](assets/chlimage_1-8.png)
+![&#x200B; chlimage_1-8 &#x200B;](assets/chlimage_1-8.png)
 
 >[!NOTE]
 >

@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Meerdere categorieën en productpagina&#39;s maken
 
-[ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) verstrekt inhoudsauteurs de capaciteit om extra categorie en productpagina&#39;s tot stand te brengen. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
+[&#x200B; AEM CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components) verstrekt inhoudsauteurs de capaciteit om extra categorie en productpagina&#39;s tot stand te brengen. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 U kunt meer informatie over dit onderwerp van het volgende middel vinden:
 
-- [ AEM CIF de Componenten van de Kern - de Configuratie van de meerdere cataloguspagina ](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [&#x200B; AEM CIF de Componenten van de Kern - de Configuratie van de meerdere cataloguspagina &#x200B;](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)

@@ -37,9 +37,9 @@ Voer de volgende stappen uit om de functie voor automatisch opslaan te gebruiken
 
 1. Login aan app, en navigeer aan **Montages > Algemeen**.
 1. In het Algemene scherm, gebruik de **optie van de Frequentie Autosave** om de intervallen te selecteren waarmee u app de ingevoerde gegevens wilt bewaren.
-   [![ plaatsend autosave frequentie ](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
+   [![&#x200B; plaatsend autosave frequentie &#x200B;](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. Wanneer u de app opnieuw opstart en u bij dezelfde gebruiker aanmeldt, wordt u gevraagd om uw taak te herstellen met het dialoogvenster Niet-opgeslagen taak herstellen. Klik **O.K.** in het Herstellen Unsaved dialoog van de Taak om het werken met de bewaarde taak te hervatten. U kunt **klikken annuleert** om de bewaarde gegevens te schrappen die aan laatste teweeggebracht autosave beantwoorden en beginnen met het werken met een nieuwe taak.
 
    Wanneer u **O.K.** klikt, wordt de taak hersteld met de gegevens die aan recentste autosave beantwoorden die vóór app wordt teweeggebracht vastliep. Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
-   [![ het krijgen van een taak teruggekregen ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** A werk-in-ondergang vorm **B.** App gesloten forcously **C.** App opnieuw begonnen met Herstel Unsaved de dialoog van de Taak **D.** Vorm hersteld met originele gegevens
+   [![&#x200B; het krijgen van een taak teruggekregen &#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** A werk-in-ondergang vorm **B.** App gesloten forcously **C.** App opnieuw begonnen met Herstel Unsaved de dialoog van de Taak **D.** Vorm hersteld met originele gegevens

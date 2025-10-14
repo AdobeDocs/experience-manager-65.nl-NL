@@ -17,15 +17,15 @@ ht-degree: 0%
 
 # Zelfstudie: Een formuliergegevensmodel maken in AEM Forms{#tutorial-create-form-data-model}
 
-![ 04-creeer-vorm-gegeven-model-hoofd ](assets/04-create-form-data-model-main.png)
+![&#x200B; 04-creeer-vorm-gegeven-model-hoofd &#x200B;](assets/04-create-form-data-model-main.png)
 
-Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [&#x200B; creeer uw eerste Interactieve Communicatie &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 ## Over de zelfstudie {#about-the-tutorial}
 
 Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, op SOAP gebaseerde webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Voor meer informatie over de integratie van vormgegevens en model van vormgegevens, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
+Voor meer informatie over de integratie van vormgegevens en model van vormgegevens, zie [&#x200B; de Integratie van Gegevens van AEM Forms &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
 
 Deze zelfstudie begeleidt u door de stappen om een formuliergegevensmodel voor te bereiden, te maken, te configureren en aan een interactieve communicatie te koppelen. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -37,7 +37,7 @@ Deze zelfstudie begeleidt u door de stappen om een formuliergegevensmodel voor t
 
 Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 
-![ het gegevensmodel van de Vorm ](assets/form_data_model_callouts_new.png)
+![&#x200B; het gegevensmodel van de Vorm &#x200B;](assets/form_data_model_callouts_new.png)
 
 **A.** Vormde gegevensbronnen **B.** De schema&#39;s van de Gegevensbron **C.** Beschikbare diensten **D.** de modelvoorwerpen van Gegevens **E.** Vormde diensten
 
@@ -45,15 +45,15 @@ Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 
 Voordat u begint, moet u het volgende doen:
 
-* MySQL gegevensbestand met steekproefgegevens zoals die in [ worden verklaard opstelling de gegevensbestand ](../../forms/using/create-form-data-model0.md#step-set-up-the-database) sectie.
-* OSGi bundel voor MySQL JDBC bestuurder zoals die in [ wordt verklaard die de Bestuurder van het Gegevensbestand JDBC bundelt ](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* MySQL gegevensbestand met steekproefgegevens zoals die in [&#x200B; worden verklaard opstelling de gegevensbestand &#x200B;](../../forms/using/create-form-data-model0.md#step-set-up-the-database) sectie.
+* OSGi bundel voor MySQL JDBC bestuurder zoals die in [&#x200B; wordt verklaard die de Bestuurder van het Gegevensbestand JDBC bundelt &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Stap 1: De database instellen {#step-set-up-the-database}
 
 Een gegevensbestand is essentieel om een Interactieve Mededeling tot stand te brengen. Deze zelfstudie gebruikt een database voor het weergeven van het formuliergegevensmodel en persistentiemogelijkheden van interactieve communicatie. Opstelling een gegevensbestand dat klant, rekeningen, en vraaglijsten bevat.
 De volgende afbeelding illustreert voorbeeldgegevens voor de klantentabel:
 
-![ sample_data_cust ](assets/sample_data_cust.png)
+![&#x200B; sample_data_cust &#x200B;](assets/sample_data_cust.png)
 
 Gebruik de volgende verklaring DDL om de **klant** lijst in gegevensbestand tot stand te brengen.
 
@@ -113,20 +113,20 @@ De **rekeningen** lijst omvat de rekeningsdetails zoals rekeningsdatum, rekening
 
 ## Stap 2: Vorm MySQL gegevensbestand als gegevensbron {#step-configure-mysql-database-as-data-source}
 
-U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zult u het gegevensbestand vormen MySQL dat met steekproefgegevens wordt gevormd en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [ de Integratie van Gegevens van AEM Forms ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
+U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zult u het gegevensbestand vormen MySQL dat met steekproefgegevens wordt gevormd en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [&#x200B; de Integratie van Gegevens van AEM Forms &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html).
 
 Ga als volgt te werk om uw MySQL-database te configureren:
 
 1. Installeer het JDBC-stuurprogramma voor MySQL-database als een OSGi-bundel:
 
-   1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. Het gebrek URL is [ https://localhost:4502/system/console/bundles ](https://localhost:4502/system/console/bundles).
+   1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. Het gebrek URL is [&#x200B; https://localhost:4502/system/console/bundles &#x200B;](https://localhost:4502/system/console/bundles).
    1. Selecteer **installeren/bijwerken**. Een **uploadt/installeert bundels** dialoog verschijnt.
 
    1. Selecteer **verkies Dossier** om te doorbladeren en de MySQL JDBC bestuurder OSGi bundel te selecteren. Selecteer **Bundel van het Begin** en **verfrissen Pakketten**, en selecteren **installeer** of **Update**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
-   1. Ga naar AEM Webconsole in [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr).
+   1. Ga naar AEM Webconsole in [&#x200B; https://localhost:4502/system/console/configMgr &#x200B;](https://localhost:4502/system/console/configMgr).
    1. Bepaal de plaats van **Apache die Verbinding Gepoold DataSource** configuratie. Selecteer deze optie om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
@@ -147,15 +147,15 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
       * **Isolatie van de Transactie**: Plaats de waarde aan **READ_COMTED**.
 
-   Verlaat andere eigenschappen met standaard [ waarden ](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en selecteer **sparen**.
+   Verlaat andere eigenschappen met standaard [&#x200B; waarden &#x200B;](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en selecteer **sparen**.
 
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
-   ![ configuratie Apache ](assets/apache_configuration_new.png)
+   ![&#x200B; configuratie Apache &#x200B;](assets/apache_configuration_new.png)
 
 ## Stap 3: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
-AEM Forms verstrekt een intuïtief gebruikersinterface om [ tot een wijze van vormgegevens ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) l van gevormde gegevensbronnen te leiden. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
+AEM Forms verstrekt een intuïtief gebruikersinterface om [&#x200B; tot een wijze van vormgegevens &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) l van gevormde gegevensbronnen te leiden. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
@@ -164,7 +164,7 @@ Ga als volgt te werk om het formuliergegevensmodel te maken:
 1. In de Create Tovenaar van het Gegevensmodel van de Vorm, specificeer a **naam** voor het model van vormgegevens. Bijvoorbeeld, **FDM_Create_First_IC**. Selecteer **daarna**.
 1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteer **MySQL** gegevensbron en selecteer **creeer**.
 
-   ![ MYSQL datasource ](assets/fdm_mysql_data_source_new.png)
+   ![&#x200B; MYSQL datasource &#x200B;](assets/fdm_mysql_data_source_new.png)
 
 1. Klik **Gedaan**. Het **FDM_Create_First_IC** model van vormgegevens wordt gecreeerd.
 
@@ -180,12 +180,12 @@ Het formuliergegevensmodel configureren omvat:
 
 ### Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
-1. Op AEM auteursinstantie, navigeer aan **Forms** > **Integraties van Gegevens**. Het gebrek URL is [ https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm ](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Op AEM auteursinstantie, navigeer aan **Forms** > **Integraties van Gegevens**. Het gebrek URL is [&#x200B; https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm &#x200B;](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Het **FDM_Create_First_IC** model van vormgegevens u vroeger creeerde is hier vermeld. Selecteer het en selecteer **uitgeven**.
 
    De geselecteerde gegevensbron **MySQL** wordt getoond in de **Bronnen van Gegevens** ruit.
 
-   ![ MYSQL gegevensbron voor FDM ](assets/mysql_fdm_new.png)
+   ![&#x200B; MYSQL gegevensbron voor FDM &#x200B;](assets/mysql_fdm_new.png)
 
 1. Breid **MySQL** gegevensbronboom uit. Selecteer de volgende voorwerpen en de diensten van het gegevensmodel van **teleca** schema:
 
@@ -202,11 +202,11 @@ Het formuliergegevensmodel configureren omvat:
 
    Selecteer **toevoegen Geselecteerde** om geselecteerde voorwerpen en de diensten van het gegevensmodel aan het model van vormgegevens toe te voegen.
 
-   ![ Uitgezochte de objecten van het gegevensmodel diensten ](assets/select_data_model_object_services_new.png)
+   ![&#x200B; Uitgezochte de objecten van het gegevensmodel diensten &#x200B;](assets/select_data_model_object_services_new.png)
 
    De rekeningen, de vraag, en het modelvoorwerpen van klantengegevens worden getoond in de juiste ruit in het **Model** lusje. De krijgen en bijwerken diensten worden getoond in de **Diensten** tabel.
 
-   ![ modelvoorwerpen van Gegevens ](assets/data_model_objects_new.png)
+   ![&#x200B; modelvoorwerpen van Gegevens &#x200B;](assets/data_model_objects_new.png)
 
 ### Berekende onderliggende eigenschappen maken voor gegevensmodelobject {#create-computed-child-properties-for-data-model-object}
 
@@ -215,7 +215,7 @@ Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op ba
 Gebaseerd op het gebruiksgeval, creeer het **gebruiksheadingen** kind gegevens verwerkt bezit in het **rekeningen** gegevensmodelvoorwerp gebruikend de volgende wiskundige uitdrukking:
 
 * gebruikskosten = gesprekskosten + gesprekskosten + sms-tarieven + mobiele internettarieven + roaming nationaal + roaming internationaal + VAS (al deze eigenschappen zijn te vinden in het factuurgegevensmodelobject)
-Voor meer informatie over het **kind gegevens verwerkte bezit 0&rbrace; gebruikslasten &lbrace;, zie [ Plan de Interactieve Mededeling ](/help/forms/using/planning-interactive-communications.md).**
+Voor meer informatie over het **kind gegevens verwerkte bezit 0&rbrace; gebruikslasten &lbrace;, zie [&#x200B; Plan de Interactieve Mededeling &#x200B;](/help/forms/using/planning-interactive-communications.md).**
 
 Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het modelobject van rekeningen te maken:
 
@@ -226,19 +226,19 @@ Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het m
    1. Laat **Berekend** toe.
    1. Selecteer **Vloeiend** als type en selecteer **Gedaan** om het kindbezit aan het **rekeningen** gegevensmodelvoorwerp toe te voegen.
 
-   ![ creeer kindbezit ](assets/create_child_property_new.png)
+   ![&#x200B; creeer kindbezit &#x200B;](assets/create_child_property_new.png)
 
 1. Selecteer **uitgeven Regel** om de Redacteur van de Regel te openen.
 1. Selecteer **Maken**. Het **Vastgestelde de regelvenster van de Waarde** opent.
 1. Van Uitgezochte drop-down Optie, uitgezochte **Wiskundige Uitdrukking**.
 
-   ![ de ladingsregel van het Gebruik redacteur ](assets/usage_charges_rule_editor_new.png)
+   ![&#x200B; de ladingsregel van het Gebruik redacteur &#x200B;](assets/usage_charges_rule_editor_new.png)
 
 1. In de wiskundige uitdrukking, uitgezochte **callloads** en **confcallladings** als eerste en tweede voorwerpen, respectievelijk. Selecteer **plus** als exploitant. Selecteer binnen de wiskundige uitdrukking en selecteer **Uitdrukking** uitbreiden om **vlekken** toe te voegen, **onderlinge verbindings van netwerkenheffingen**, **roamingnational**, **roamingintnl**, en **vas** voorwerpen aan de uitdrukking.
 
    De volgende afbeelding toont de wiskundige expressie in de regeleditor:
 
-   ![ de ladingsregel van het Gebruik ](assets/usage_charges_rule_all_new.png)
+   ![&#x200B; de ladingsregel van het Gebruik &#x200B;](assets/usage_charges_rule_all_new.png)
 
 1. Selecteer **Gereed**. De regel wordt gecreeerd in de Redacteur van de Regel.
 1. Selecteer **dicht** om het venster van de Redacteur van de Regel te sluiten.
@@ -270,7 +270,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
 
    * Selecteer **toevoegen** om het **klant** gegevensmodelvoorwerp aan **vraag** gegevensmodelvoorwerp te verbinden gebruikend een bezit. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. Het **toevoegt Argument** dialoogvakje opent.
 
-   ![ voeg vereniging ](assets/add_association_new.png) toe
+   ![&#x200B; voeg vereniging &#x200B;](assets/add_association_new.png) toe
 
 1. In **voeg de dialoogdoos van het Argument** toe:
 
@@ -284,11 +284,11 @@ Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zij
 
    * Selecteer **toevoegen**.
 
-   ![ voeg vereniging voor een argument ](assets/add_association_argument_new.png) toe
+   ![&#x200B; voeg vereniging voor een argument &#x200B;](assets/add_association_argument_new.png) toe
 
    Het mobilenumbezitsvertoningen in de **sectie van Argumenten**.
 
-   ![ voeg argumentvereniging ](assets/add_argument_association_new.png) toe
+   ![&#x200B; voeg argumentvereniging &#x200B;](assets/add_argument_association_new.png) toe
 
 1. Selecteer **Gedaan** om een 1:n vereniging tussen klant en vraag de modelvoorwerpen van gegevens tot stand te brengen.
 
@@ -311,11 +311,11 @@ De rekeningen en de objecten van het klantengegevensmodel zijn verbonden gebruik
 
    * Selecteer **Gedaan** om een band tussen het billplan en de eigenschappen van het klantplan tot stand te brengen.
 
-   ![ voeg vereniging voor klantenrekening ](assets/add_association_customer_bills_new.png) toe
+   ![&#x200B; voeg vereniging voor klantenrekening &#x200B;](assets/add_association_customer_bills_new.png) toe
 
    In de volgende afbeelding ziet u de koppelingen tussen de gegevensmodelobjecten en de eigenschappen die worden gebruikt om koppelingen tussen deze objecten te maken:
 
-   ![ fdm_association ](assets/fdm_associations.gif)
+   ![&#x200B; fdm_association &#x200B;](assets/fdm_associations.gif)
 
 ### Eigenschappen van gegevensmodelobjecten bewerken {#edit-data-model-object-properties}
 
@@ -339,7 +339,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
 
 1. Selecteer **Gedaan** om de eigenschappen te bewaren.
 
-   ![ vormt de diensten ](assets/configure_services_customer_new.png)
+   ![&#x200B; vormt de diensten &#x200B;](assets/configure_services_customer_new.png)
 
 1. Selecteer de controledoos bij de bovenkant van **vraag** gegevensmodelvoorwerp om het te selecteren en **te selecteren geeft Eigenschappen** uit. Het **geeft Eigenschappen** ruit uit opent.
 1. Maak het **Hoogste Modelvoorwerp van het Niveau** voor **vraag** gegevensmodelvoorwerp onbruikbaar.
@@ -358,7 +358,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
 
    * Selecteer **Gedaan** om de eigenschappen te bewaren.
 
-   ![ geeft eigenschappen ](assets/edit_properties_get_details_new.png) uit
+   ![&#x200B; geeft eigenschappen &#x200B;](assets/edit_properties_get_details_new.png) uit
 
 1. Selecteer de **update** dienst en selecteer **Eigenschappen** uitgeven. Het **geeft Eigenschappen** ruit uit opent.
 1. In **geef Eigenschappen** ruit uit:
@@ -383,7 +383,7 @@ Voer de volgende handelingen uit om de test uit te voeren:
 
    De klantgegevens die aan de opgegeven eigenschap mobileEnum zijn gekoppeld, worden opgehaald en weergegeven in de sectie Uitvoer, zoals hieronder wordt weergegeven. Sluit het dialoogvenster.
 
-   ![ het gegevensmodel van de Test ](assets/test_data_model_new.png)
+   ![&#x200B; het gegevensmodel van de Test &#x200B;](assets/test_data_model_new.png)
 
 1. Ga naar de **Diensten** tabel.
 1. Selecteer **krijgen** dienst en selecteren **de Dienst van de Test.**
@@ -391,7 +391,7 @@ Voer de volgende handelingen uit om de test uit te voeren:
 
    De klantgegevens die aan de opgegeven eigenschap mobileEnum zijn gekoppeld, worden opgehaald en weergegeven in de sectie Uitvoer, zoals hieronder wordt weergegeven. Sluit het dialoogvenster.
 
-   ![ de dienst van de Test ](assets/test_service_new.png)
+   ![&#x200B; de dienst van de Test &#x200B;](assets/test_service_new.png)
 
 ### Voorbeeldgegevens bewerken en opslaan {#edit-and-save-sample-data}
 
@@ -401,6 +401,6 @@ Voer de volgende handelingen uit om voorbeeldgegevens te genereren, te bewerken 
 
 1. Voor de pagina van het vormgegevensmodel, uitgezocht **geef de Gegevens van de Steekproef** uit. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
 
-   ![ geef steekproefgegevens ](assets/edit_sample_data_new.png) uit
+   ![&#x200B; geef steekproefgegevens &#x200B;](assets/edit_sample_data_new.png) uit
 
 1. In **geef het venster van de Gegevens van de Steekproef** uit, geef gegevens, zoals vereist uit, en selecteer **sparen**. Sluit het venster.

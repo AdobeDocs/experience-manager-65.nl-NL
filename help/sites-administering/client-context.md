@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Context van de cliënt is vervangen door ContextHub. Voor meer details, zie de verwante [ configuratie ](/help/sites-developing/ch-configuring.md) en [ ontwikkelaar ](/help/sites-developing/contexthub.md) documentatie.
+>De Context van de cliënt is vervangen door ContextHub. Voor meer details, zie de verwante [&#x200B; configuratie &#x200B;](/help/sites-developing/ch-configuring.md) en [&#x200B; ontwikkelaar &#x200B;](/help/sites-developing/contexthub.md) documentatie.
 
 De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend gebruikend **Ctrl-Alt-c** (vensters) of **controle-optie-c** (Mac):
 
-![ een steekproef van het venster van de Context van de Cliënt ](assets/clientcontext_alisonparker.png)
+![&#x200B; een steekproef van het venster van de Context van de Cliënt &#x200B;](assets/clientcontext_alisonparker.png)
 
 In zowel de publicatie- als de auteursomgeving wordt informatie weergegeven over:
 
@@ -38,20 +38,20 @@ In zowel de publicatie- als de auteursomgeving wordt informatie weergegeven over
 
 Met de pictogrammen (alleen beschikbaar in de auteursomgeving) kunt u de details van de clientcontext configureren:
 
-![ Edit, Laad, en de pictogrammen van het Terugstellen van het venster van de Context van de Cliënt ](do-not-localize/clientcontext_icons.png)
+![&#x200B; Edit, Laad, en de pictogrammen van het Terugstellen van het venster van de Context van de Cliënt &#x200B;](do-not-localize/clientcontext_icons.png)
 
 * **geeft** uit
-Een nieuwe pagina opent, latend u [ uitgeeft, toevoegt, of verwijdert een profielbezit ](#editingprofiledetails).
+Een nieuwe pagina opent, latend u [&#x200B; uitgeeft, toevoegt, of verwijdert een profielbezit &#x200B;](#editingprofiledetails).
 
 * **Lading**
-U kunt [ van een lijst van profielen selecteren en het profiel laden ](#loading-a-new-user-profile) u wilt testen.
+U kunt [&#x200B; van een lijst van profielen selecteren en het profiel laden &#x200B;](#loading-a-new-user-profile) u wilt testen.
 
 * **Terugstellen**
-U kunt [ het profiel ](#resetting-the-profile-to-the-current-user) aan dat van de huidige gebruiker terugstellen.
+U kunt [&#x200B; het profiel &#x200B;](#resetting-the-profile-to-the-current-user) aan dat van de huidige gebruiker terugstellen.
 
 ## Beschikbare clientcontextcomponenten {#available-client-context-components}
 
-De context van de Cliënt kan de volgende eigenschappen ([ afhankelijk van tonen wat gebruikend uitgeeft ](#adding-a-property-component) is geselecteerd):
+De context van de Cliënt kan de volgende eigenschappen ([&#x200B; afhankelijk van tonen wat gebruikend uitgeeft &#x200B;](#adding-a-property-component) is geselecteerd):
 
 **toont de Informatie van de Opslag van 0&rbrace; de volgende cliënt-zijinformatie:**
 
@@ -83,7 +83,7 @@ De component Algemene opslageigenschappen bevat een standaardrenderer met de gec
 
 **Geolocation** toont de breedte en de lengte van de cliënt. De HTML5-geolocatie-API wordt gebruikt om in de browser te zoeken naar de huidige locatie. Dit leidt ertoe dat een pop-up aan de bezoeker wordt getoond, waar browser hen vraagt of komen zij overeen om hun plaats te delen.
 
-Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de component een Google API om een kaart als miniatuur weer te geven. De component is onderworpen aan de Google API [ gebruiksgrenzen ](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
+Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de component een Google API om een kaart als miniatuur weer te geven. De component is onderworpen aan de Google API [&#x200B; gebruiksgrenzen &#x200B;](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de componen
 
 De norm JSONP is een aanvulling aan JSON die de omzeiling van het zelfde oorsprongbeleid toestaat (die het voor een Web app onmogelijk maakt om met servers te communiceren die op een ander domein zijn). Het bestaat uit het verpakken van het JSON-object in een functieaanroep om het te kunnen laden als een `<script>` van het andere domein (een toegestane uitzondering op hetzelfde oorsprongbeleid).
 
-De opslag JSONP is als een andere opslag, maar het laadt informatie die uit een ander domein zonder de behoefte komt om een volmacht voor die informatie over het huidige domein te hebben. Zie het voorbeeld in [ Opstellend Gegevens in de Context van de Cliënt via JSONP ](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+De opslag JSONP is als een andere opslag, maar het laadt informatie die uit een ander domein zonder de behoefte komt om een volmacht voor die informatie over het huidige domein te hebben. Zie het voorbeeld in [&#x200B; Opstellend Gegevens in de Context van de Cliënt via JSONP &#x200B;](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Hiermee wordt bijvoorbeeld aangegeven of de muis zich momenteel op het linker- o
 
 Deze zittingsopslag heeft geen standaardcomponent van de cliëntcontext.
 
-Voor extra informatie, zie [ Context van de Cliënt in Detail ](/help/sites-developing/client-context.md).
+Voor extra informatie, zie [&#x200B; Context van de Cliënt in Detail &#x200B;](/help/sites-developing/client-context.md).
 
 >[!NOTE]
 >
@@ -145,17 +145,17 @@ U kunt het profiel als volgt wijzigen:
 * [het pictogram load gebruiken](#loading-a-new-visitor-profile-with-the-load-profile-icon)
 * [met de selectieregelaar](#loadinganewvisitorprofilewiththeselectionslider)
 
-Wanneer gebeëindigd kunt u [ het profiel ](#resetting-the-profile-to-the-current-user) terugstellen.
+Wanneer gebeëindigd kunt u [&#x200B; het profiel &#x200B;](#resetting-the-profile-to-the-current-user) terugstellen.
 
 #### Een nieuw bezoekersprofiel laden met het pictogram Profiel laden {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Klik op het pictogram Profiel laden:
 
-   ![ het pictogram van het Profiel van de Lading van de Context van de Cliënt ](do-not-localize/clientcontext_loadprofile.png)
+   ![&#x200B; het pictogram van het Profiel van de Lading van de Context van de Cliënt &#x200B;](do-not-localize/clientcontext_loadprofile.png)
 
 1. Hiermee wordt het dialoogvenster geopend waarin u het profiel kunt selecteren dat u wilt laden:
 
-   ![ de dialoog van de Lader van het Profiel die drop-down toont om een profiel te selecteren ](assets/clientcontext_profileloader.png)
+   ![&#x200B; de dialoog van de Lader van het Profiel die drop-down toont om een profiel te selecteren &#x200B;](assets/clientcontext_profileloader.png)
 
 1. Klik **O.K.** om te laden.
 
@@ -165,7 +165,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, u kunt met de pijlen navigeren en de beschikbare profielen weergeven:
 
-   ![ de gebruikersselecteur ](assets/clientcontext_profileselector.png)
+   ![&#x200B; de gebruikersselecteur &#x200B;](assets/clientcontext_profileselector.png)
 
 1. Klik op het profiel dat u wilt laden. Klik buiten de kiezer om de details te sluiten wanneer deze zijn geladen.
 
@@ -173,13 +173,13 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Gebruik het pictogram Herstellen om het profiel in de context van de Cliënt aan dat van de huidige gebruiker terug te keren:
 
-   ![ het terugstellingspictogram ](do-not-localize/clientcontext_resetprofile.png)
+   ![&#x200B; het terugstellingspictogram &#x200B;](do-not-localize/clientcontext_resetprofile.png)
 
 ### Het browserplatform wijzigen {#changing-the-browser-platform}
 
 1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend en u kunt met de pijlen navigeren naar de beschikbare platformen/browsers.
 
-   ![ Browser platformselecteur ](assets/clientcontext_browserplatform.png)
+   ![&#x200B; Browser platformselecteur &#x200B;](assets/clientcontext_browserplatform.png)
 
 1. Klik op de platformbrowser die u wilt laden. Klik buiten de kiezer om de details te sluiten wanneer deze zijn geladen.
 
@@ -187,7 +187,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het geolocatiepictogram. Er wordt een uitgevouwen kaart geopend en u kunt de markering naar een nieuwe locatie slepen:
 
-   ![ Geolocation detail ](assets/clientcontext_geomocationrelocate.png)
+   ![&#x200B; Geolocation detail &#x200B;](assets/clientcontext_geomocationrelocate.png)
 
 1. Klik buiten de kaart om deze te sluiten.
 
@@ -195,7 +195,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het gedeelte Tagwolk van de clientcontext. Het dialoogvenster wordt geopend, waar u tags kunt selecteren:
 
-   ![ de wolkendialoog van de Markering ](assets/clientcontext_tagselection.png)
+   ![&#x200B; de wolkendialoog van de Markering &#x200B;](assets/clientcontext_tagselection.png)
 
 1. Klik op OK om te laden in de clientcontext.
 
@@ -205,15 +205,15 @@ Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaald
 
 ### Eigenschappendetails bewerken {#editing-property-details}
 
-Als u een clientcontext bewerkt, kunt u de waarden van bepaalde eigenschappen instellen (of opnieuw instellen). Dit laat u specifieke scenario&#39;s (met name nuttig voor [ segmentatie ](/help/sites-administering/campaign-segmentation.md) en [ campagnes ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)) testen.
+Als u een clientcontext bewerkt, kunt u de waarden van bepaalde eigenschappen instellen (of opnieuw instellen). Dit laat u specifieke scenario&#39;s (met name nuttig voor [&#x200B; segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md) en [&#x200B; campagnes &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)) testen.
 
-![ Uitgevend de Context van de Cliënt ](assets/clientcontext_alisonparker_edit.png)
+![&#x200B; Uitgevend de Context van de Cliënt &#x200B;](assets/clientcontext_alisonparker_edit.png)
 
 ### Een component Property toevoegen {#adding-a-property-component}
 
 Nadat u de **het ontwerppagina van de ClientContext** hebt geopend, kunt u **ook** een volledig nieuw bezit toevoegen gebruikend de beschikbare componenten (de componenten zijn vermeld op zowel sidekick als van de **Nieuwe dialoog van de Component van het Tussenvoegsel** die na een dubbel-klik de **componenten of de activa van de Belemmering hier** doos) wordt geopend:
 
-![ Toevoegend een bezit aan het venster van de Context van de Cliënt ](assets/clientcontext_alisonparker_new.png)
+![&#x200B; Toevoegend een bezit aan het venster van de Context van de Cliënt &#x200B;](assets/clientcontext_alisonparker_new.png)
 
 ### Een component Property verwijderen {#removing-a-property-component}
 
@@ -223,21 +223,21 @@ Nadat u de **pagina van het het ontwerpontwerp van de ClientContext** hebt geope
 
 Volg dit voorbeeld om de JSONP component van de de contextopslag van de Opslag te gebruiken om externe gegevens aan de Context van de Cliënt toe te voegen. Maak vervolgens een segment op basis van de informatie uit die gegevens. Het voorbeeld gebruikt de dienst JSONP die WIPmania.com verstrekt. De service retourneert informatie over de geolocatie op basis van het IP-adres van de webclient.
 
-In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie [ Toevoegend de Context van de Cliënt aan een Pagina ](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie [&#x200B; Toevoegend de Context van de Cliënt aan een Pagina &#x200B;](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### De JSONP Store-component toevoegen {#add-the-jsonp-store-component}
 
 Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebruik het om geolocatieinformatie over de Webcliënt terug te winnen en op te slaan.
 
-1. Open de Engelse homepage van de site Geometrixx Outdoors op de AEM auteur. ([ https://localhost:4502/content/geometrixx-outdoors/en.html ](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open de Engelse homepage van de site Geometrixx Outdoors op de AEM auteur. ([&#x200B; https://localhost:4502/content/geometrixx-outdoors/en.html &#x200B;](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Druk op Ctrl+Alt+c (vensters) of Control+Option+c (Mac) om de clientcontext te openen.
 1. Klik op het bewerkingspictogram boven aan Client Context om Client Context Designer te openen.
 
-   ![ het pictogram van de Verbinding ](do-not-localize/chlimage_1.png)
+   ![&#x200B; het pictogram van de Verbinding &#x200B;](do-not-localize/chlimage_1.png)
 
 1. Sleep de JSONP Store-component naar Client-context.
 
-   ![ het slepen en het laten vallen van de component van de JSONP Winkel in de Context van de Cliënt ](assets/chlimage_1-4.jpeg)
+   ![&#x200B; het slepen en het laten vallen van de component van de JSONP Winkel in de Context van de Cliënt &#x200B;](assets/chlimage_1-4.jpeg)
 
 1. Dubbelklik op de component om het dialoogvenster Bewerken te openen.
 1. Voer in het vak URL JSONP-service de volgende URL in en klik op Opslag zoeken:
@@ -246,12 +246,12 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
 
    De component roept de dienst JSONP en maakt een lijst van alle eigenschappen die de teruggekeerde gegevens bevat. De eigenschappen die in de lijst zijn zijn die die in de Context van de Cliënt beschikbaar zullen zijn.
 
-   ![ de eigenschappen van de Dienst JSONP ](assets/chlimage_1-40.png)
+   ![&#x200B; de eigenschappen van de Dienst JSONP &#x200B;](assets/chlimage_1-40.png)
 
 1. Klik op OK.
 1. Ga terug naar de startpagina van Geometrixx Outdoors en vernieuw de pagina. De Context van de cliënt omvat nu de informatie van de component van de Winkel JSONP.
 
-   ![ Voorbeeld van de component JSONP bevolkt met gegevens ](assets/chlimage_1-41.png)
+   ![&#x200B; Voorbeeld van de component JSONP bevolkt met gegevens &#x200B;](assets/chlimage_1-41.png)
 
 ### Het segment maken {#create-the-segment}
 
@@ -272,7 +272,7 @@ Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcompon
 1. Klik met de rechtermuisknop op het wintersegment en klik op Openen.
 1. Sleep het Algemene bezit van de Opslag aan het gebrek EN container.
 
-   ![ Toevoegend een component aan de segmentredacteur ](assets/chlimage_1-5.jpeg)
+   ![&#x200B; Toevoegend een component aan de segmentredacteur &#x200B;](assets/chlimage_1-5.jpeg)
 
 1. Dubbelklik op de component om het dialoogvenster Bewerken te openen, geef de volgende eigenschapswaarden op en klik op OK:
 

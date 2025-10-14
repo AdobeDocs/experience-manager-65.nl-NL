@@ -25,7 +25,7 @@ ht-degree: 0%
 
 De Forms-service kan formulieren weergeven die zijn gebaseerd op fragmenten die u met Designer maakt. A *fragment* is een herbruikbaar deel van een vorm en opgeslagen als afzonderlijk XDP dossier dat in veelvoudige vormontwerpen kan worden opgenomen. Een fragment kan bijvoorbeeld een adresblok of juridische tekst bevatten.
 
-Met fragmenten kunt u het maken en onderhouden van grote aantallen formulieren vereenvoudigen en versnellen. Bij het maken van een formulier voegt u een verwijzing in naar het gewenste fragment en het fragment wordt in het formulier weergegeven. De fragmentverwijzing bevat een subformulier dat naar het fysieke XDP-bestand verwijst. Voor informatie over het creëren van vormontwerpen die op fragmenten worden gebaseerd, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63)
+Met fragmenten kunt u het maken en onderhouden van grote aantallen formulieren vereenvoudigen en versnellen. Bij het maken van een formulier voegt u een verwijzing in naar het gewenste fragment en het fragment wordt in het formulier weergegeven. De fragmentverwijzing bevat een subformulier dat naar het fysieke XDP-bestand verwijst. Voor informatie over het creëren van vormontwerpen die op fragmenten worden gebaseerd, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Een fragment kan meerdere subformulieren bevatten die zijn ondergebracht in een gekozen subformulierset. De gekozen subformuliersets bepalen de weergave van subformulieren op basis van de gegevensstroom van een gegevensverbinding. U gebruikt voorwaardelijke instructies om te bepalen welk subformulier uit de set wordt weergegeven in het geleverde formulier. Elk subformulier in een set kan bijvoorbeeld informatie voor een bepaalde geografische locatie bevatten en het weergegeven subformulier kan worden bepaald op basis van de locatie van de gebruiker.
 
@@ -41,17 +41,17 @@ Hier volgen enkele voordelen van het gebruik van fragmenten:
 
 ### Een formulierontwerp samenstellen dat is samengesteld met fragmenten {#assembling-a-form-design-assembled-using-fragments}
 
-U kunt een formulierontwerp samenstellen om aan de Forms-service door te geven op basis van meerdere fragmenten. Als u meerdere fragmenten wilt samenstellen, gebruikt u de Assembler-service. Om een voorbeeld te zien van het gebruiken van de dienst van de Assemblage om een vormontwerp tot stand te brengen dat door een andere diensten van Forms (de dienst van de Output) wordt gebruikt, zie [ Creërend de Documenten van de PDF gebruikend Fragments ](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). In plaats van de service Uitvoer te gebruiken, kunt u dezelfde workflow uitvoeren met de Forms-service.
+U kunt een formulierontwerp samenstellen om aan de Forms-service door te geven op basis van meerdere fragmenten. Als u meerdere fragmenten wilt samenstellen, gebruikt u de Assembler-service. Om een voorbeeld te zien van het gebruiken van de dienst van de Assemblage om een vormontwerp tot stand te brengen dat door een andere diensten van Forms (de dienst van de Output) wordt gebruikt, zie [&#x200B; Creërend de Documenten van de PDF gebruikend Fragments &#x200B;](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). In plaats van de service Uitvoer te gebruiken, kunt u dezelfde workflow uitvoeren met de Forms-service.
 
 Wanneer u de Assembler-service gebruikt, geeft u een formulierontwerp door dat is samengesteld met fragmenten. Het formulierontwerp dat is gemaakt, verwijst niet naar andere fragmenten. In dit onderwerp wordt daarentegen het doorgeven van een formulierontwerp besproken dat naar andere fragmenten verwijst naar de Forms-service. Het formulierontwerp is echter niet samengesteld door Assembler. Het is gemaakt in Designer.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor informatie over het creëren van een web-based toepassing die vormen teruggeeft die op fragmenten worden gebaseerd, zie [ Creërend de Toepassingen van het Web die Forms ](/help/forms/developing/creating-web-applications-renders-forms.md) teruggeven.
+>Voor informatie over het creëren van een web-based toepassing die vormen teruggeeft die op fragmenten worden gebaseerd, zie [&#x200B; Creërend de Toepassingen van het Web die Forms &#x200B;](/help/forms/developing/creating-web-applications-renders-forms.md) teruggeven.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -75,13 +75,13 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 Als u een formulier wilt genereren op basis van fragmenten, moet u ervoor zorgen dat de Forms-service zowel het formulier als de fragmenten (de XDP-bestanden) kan vinden waarnaar het formulierontwerp verwijst. Stel bijvoorbeeld dat het formulier de naam PO.xdp heeft en dat dit formulier twee fragmenten gebruikt: FooterUS.xdp en FooterCanada.xdp. In dit geval moet de Forms-service alle drie XDP-bestanden kunnen vinden.
 
-U kunt een formulier en de bijbehorende fragmenten ordenen door het formulier op één locatie en de fragmenten op een andere locatie te plaatsen, of u kunt alle XDP-bestanden op dezelfde locatie plaatsen. In deze sectie wordt ervan uitgegaan dat alle XDP-bestanden zich in de AEM Forms-opslagplaats bevinden. Voor informatie over het plaatsen van XDP dossiers in de bewaarplaats van AEM Forms, zie [ het Schrijven Middelen ](/help/forms/developing/aem-forms-repository.md#writing-resources).
+U kunt een formulier en de bijbehorende fragmenten ordenen door het formulier op één locatie en de fragmenten op een andere locatie te plaatsen, of u kunt alle XDP-bestanden op dezelfde locatie plaatsen. In deze sectie wordt ervan uitgegaan dat alle XDP-bestanden zich in de AEM Forms-opslagplaats bevinden. Voor informatie over het plaatsen van XDP dossiers in de bewaarplaats van AEM Forms, zie [&#x200B; het Schrijven Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Bij het genereren van een formulier op basis van fragmenten moet u alleen naar het formulier zelf verwijzen en niet naar de fragmenten. U moet bijvoorbeeld naar PO.xdp verwijzen en niet naar FooterUS.xdp of FooterCanada.xdp. Plaats de fragmenten op een locatie waar de Forms-service ze kan vinden.
 
 **geef de vorm** terug
 
-Een formulier dat is gebaseerd op fragmenten, kan op dezelfde manier worden gegenereerd als niet-gefragmenteerde formulieren. U kunt het formulier dus weergeven als PDF-, HTML- of formulierhulplijnen (afgekeurd). In het voorbeeld in deze sectie wordt een formulier op basis van fragmenten weergegeven als een interactief PDF-formulier. (Zie [ teruggevend Interactieve PDF forms ](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Een formulier dat is gebaseerd op fragmenten, kan op dezelfde manier worden gegenereerd als niet-gefragmenteerde formulieren. U kunt het formulier dus weergeven als PDF-, HTML- of formulierhulplijnen (afgekeurd). In het voorbeeld in deze sectie wordt een formulier op basis van fragmenten weergegeven als een interactief PDF-formulier. (Zie [&#x200B; teruggevend Interactieve PDF forms &#x200B;](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **schrijf de stroom van vormgegevens aan cliëntWeb browser**
 

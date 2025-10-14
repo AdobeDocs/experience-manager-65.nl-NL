@@ -22,9 +22,9 @@ De workflowconsole biedt verschillende gereedschappen voor het beheer van workfl
 
 >[!NOTE]
 >
->De [ console JMX ](/help/sites-administering/jmx-console.md#workflow-maintenance) verstrekt extra verrichtingen van het werkschemagehoud.
+>De [&#x200B; console JMX &#x200B;](/help/sites-administering/jmx-console.md#workflow-maintenance) verstrekt extra verrichtingen van het werkschemagehoud.
 
-Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [ globale navigatie ](/help/sites-authoring/basic-handling.md#global-navigation) om de **ruit van Hulpmiddelen** te openen, dan uitgezocht **Werkschema**:
+Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Gebruik de [&#x200B; globale navigatie &#x200B;](/help/sites-authoring/basic-handling.md#global-navigation) om de **ruit van Hulpmiddelen** te openen, dan uitgezocht **Werkschema**:
 
 * **Modellen**: Beheer werkschemadefinities
 * **Instanties**: De mening en beheert het runnen werkschemainstanties
@@ -38,7 +38,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 1. Selecteer **Instanties** zodat kunt u de lijst van werkschemainstanties tonen momenteel lopend.
 
-   ![ wf-96 ](assets/wf-96.png)
+   ![&#x200B; wf-96 &#x200B;](assets/wf-96.png)
 
 <!--
 ## Search Workflow Instances {#search-workflow-instances}
@@ -67,18 +67,18 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 1. Selecteer **Instanties** zodat kunt u de lijst van werkschemainstanties tonen momenteel lopend.
 
-   ![ wf-96-1 ](assets/wf-96-1.png)
+   ![&#x200B; wf-96-1 &#x200B;](assets/wf-96-1.png)
 
 1. Selecteer een specifiek punt, dan gebruik **beëindigt**, **Schorsing**, of **hervat**, zoals aangewezen; bevestiging, en/of verdere details worden vereist:
 
-   ![ wf-97-1 ](assets/wf-97-1.png)
+   ![&#x200B; wf-97-1 &#x200B;](assets/wf-97-1.png)
 
 ## Gearchiveerde workflows weergeven {#viewing-archived-workflows}
 
 1. Gebruikend de uitgezochte Navigatie **Hulpmiddelen**, toen **Werkschema**.
 1. Selecteer **Archief** zodat kunt u de lijst van werkschemainstanties tonen die met succes voltooiden.
 
-   ![ wf-98 ](assets/wf-98.png)
+   ![&#x200B; wf-98 &#x200B;](assets/wf-98.png)
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 1. Selecteer een specifiek punt, dan **Open Geschiedenis** om meer details te zien:
 
-   ![ wf-99 ](assets/wf-99.png)
+   ![&#x200B; wf-99 &#x200B;](assets/wf-99.png)
 
 ## Fouten in werkstroominstantie herstellen {#fixing-workflow-instance-failures}
 
@@ -111,7 +111,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 1. Selecteer **Gebreken** zodat kunt u de lijst van werkschemainstanties tonen die niet met succes voltooiden.
 1. Selecteer een specifiek item en voer de gewenste actie uit:
 
-   ![ wf-47 ](assets/wf-47.png)
+   ![&#x200B; wf-47 &#x200B;](assets/wf-47.png)
 
 ## Regelmatig leegmaken van workflowinstanties {#regular-purging-of-workflow-instances}
 
@@ -121,7 +121,7 @@ Vorm **de Configuratie van de Wrijving van het Werkschema van 0&rbrace; Adobe gr
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel opschoont wanneer deze langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
-Om de dienst te vormen, kunt u de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) gebruiken of [ een configuratie OSGi aan de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) toevoegen. In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
+Om de dienst te vormen, kunt u de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) gebruiken of [&#x200B; een configuratie OSGi aan de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) toevoegen. In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Om de dienst te vormen, kunt u de [ Console van het Web ](/help/sites-deploying/
 
 ## De maximale grootte van het Postvak IN instellen {#setting-the-maximum-size-of-the-inbox}
 
-U kunt de maximumgrootte van inbox plaatsen door de **Dienst van het Werkschema van de Adobe te vormen Granite**, gebruikend de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [ voegt een configuratie OSGi aan de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) toe. De volgende lijst beschrijft het bezit dat u voor één van beide methode vormt.
+U kunt de maximumgrootte van inbox plaatsen door de **Dienst van het Werkschema van de Adobe te vormen Granite**, gebruikend de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [&#x200B; voegt een configuratie OSGi aan de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) toe. De volgende lijst beschrijft het bezit dat u voor één van beide methode vormt.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Het bezit *userMetadataPersistenceEnabled* wordt opgeslagen op *jcr:inhoudsknoop
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
-![ werkschema-externalize-config ](assets/workflow-externalize-config.png)
+![&#x200B; werkschema-externalize-config &#x200B;](assets/workflow-externalize-config.png)
 
 ### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
 

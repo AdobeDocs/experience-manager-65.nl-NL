@@ -33,12 +33,12 @@ Dankzij het eenvoudige en lichte contract dat door AEM wordt vereist en tussen S
 
 Dit artikel illustreert het voorbeeld van de weercomponent op het Web.Retail steekproefSPA van het Dagboek.
 
-U zou met de [ structuur van een toepassing van het KUUROORD voor AEM ](/help/sites-developing/spa-getting-started-react.md) vóór het lezen van dit artikel vertrouwd moeten zijn.
+U zou met de [&#x200B; structuur van een toepassing van het KUUROORD voor AEM &#x200B;](/help/sites-developing/spa-getting-started-react.md) vóór het lezen van dit artikel vertrouwd moeten zijn.
 
 >[!CAUTION]
->Dit document gebruikt [ Wij.Retail app van het Dagboek ](https://github.com/adobe/aem-sample-we-retail-journal) slechts voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
+>Dit document gebruikt [&#x200B; Wij.Retail app van het Dagboek &#x200B;](https://github.com/adobe/aem-sample-we-retail-journal) slechts voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
 >
->Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+>Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## De component Weer {#the-weather-component}
 
@@ -46,27 +46,27 @@ De weercomponent staat linksboven in de app Web.Retail Journal. Het toont het hu
 
 ### De widget Weer gebruiken {#using-the-weather-widget}
 
-![ screen_shot_2018-06-08at143224 ](assets/screen_shot_2018-06-08at143224.png)
+![&#x200B; screen_shot_2018-06-08at143224 &#x200B;](assets/screen_shot_2018-06-08at143224.png)
 
 Wanneer het ontwerpen van inhoud van het KUUROORD in de Redacteur van het KUUROORD, verschijnt de weercomponent zoals een andere component van AEM, volledig met een toolbar, en is editable.
 
-![ screen_shot_2018-06-08at143304 ](assets/screen_shot_2018-06-08at143304.png)
+![&#x200B; screen_shot_2018-06-08at143304 &#x200B;](assets/screen_shot_2018-06-08at143304.png)
 
 De stad kan in een dialoog worden bijgewerkt enkel als een andere component van AEM.
 
-![ screen_shot_2018-06-08at143446 ](assets/screen_shot_2018-06-08at143446.png)
+![&#x200B; screen_shot_2018-06-08at143446 &#x200B;](assets/screen_shot_2018-06-08at143446.png)
 
 De wijziging blijft bestaan en de component wordt automatisch bijgewerkt met nieuwe weergegevens.
 
-![ screen_shot_2018-06-08at143524 ](assets/screen_shot_2018-06-08at143524.png)
+![&#x200B; screen_shot_2018-06-08at143524 &#x200B;](assets/screen_shot_2018-06-08at143524.png)
 
 ### Implementatie van weercomponent {#weather-component-implementation}
 
-De weercomponent is gebaseerd op een openbaar beschikbare component van het Reageren, genoemd [ Reageer Open Weer ](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail steekproeftoepassing van het Dagboek van het Dagboek te werken SPA.
+De weercomponent is gebaseerd op een openbaar beschikbare component van het Reageren, genoemd [&#x200B; Reageer Open Weer &#x200B;](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail steekproeftoepassing van het Dagboek van het Dagboek te werken SPA.
 
 Hieronder vindt u fragmenten uit de NPM-documentatie van het gebruik van de component React Open Weather.
 
-![ screen_shot_2018-06-08at144723 ](assets/screen_shot_2018-06-08at144723.png) ![ screen_shot_2018-06-08at144215 ](assets/screen_shot_2018-06-08at144215.png)
+![&#x200B; screen_shot_2018-06-08at144723 &#x200B;](assets/screen_shot_2018-06-08at144723.png) ![&#x200B; screen_shot_2018-06-08at144215 &#x200B;](assets/screen_shot_2018-06-08at144215.png)
 
 Het herzien van de code van de aangepaste weercomponent ( `Weather.js`) in de toepassing van het Dagboek Wij.Retail:
 
@@ -130,4 +130,4 @@ Hoewel een achterste deelcomponent reeds moet bestaan, kan de voorste-eindontwik
 
 ## Volgende stap {#next-step}
 
-Voor verdere informatie over het ontwikkelen van SPAs voor AEM zie het artikel [ Ontwikkelend SPAs voor AEM ](/help/sites-developing/spa-architecture.md).
+Voor verdere informatie over het ontwikkelen van SPAs voor AEM zie het artikel [&#x200B; Ontwikkelend SPAs voor AEM &#x200B;](/help/sites-developing/spa-architecture.md).

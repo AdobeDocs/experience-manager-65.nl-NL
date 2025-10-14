@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Een adaptief formulier maken met behulp van een set adaptieve formulieren{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -37,7 +37,7 @@ Functies zoals onafhankelijk schrijven en laden zorgen voor betere prestaties da
 
 ## Achter de schermen {#behind-the-scenes}
 
-U kunt op XSD gebaseerde adaptieve formulieren en fragmenten toevoegen in het bovenliggende formulier. De structuur van de oudervorm is het zelfde als [ om het even welke adaptieve vorm ](../../forms/using/prepopulate-adaptive-form-fields.md). Wanneer u een adaptief formulier toevoegt als een onderliggend formulier, wordt het als een deelvenster toegevoegd in het bovenliggende formulier. Gegevens van een gebonden onderliggend formulier worden opgeslagen onder de `data` -basis van de `afBoundData` -sectie van het XML-schema van het bovenliggende formulier.
+U kunt op XSD gebaseerde adaptieve formulieren en fragmenten toevoegen in het bovenliggende formulier. De structuur van de oudervorm is het zelfde als [&#x200B; om het even welke adaptieve vorm &#x200B;](../../forms/using/prepopulate-adaptive-form-fields.md). Wanneer u een adaptief formulier toevoegt als een onderliggend formulier, wordt het als een deelvenster toegevoegd in het bovenliggende formulier. Gegevens van een gebonden onderliggend formulier worden opgeslagen onder de `data` -basis van de `afBoundData` -sectie van het XML-schema van het bovenliggende formulier.
 
 Uw klanten vullen bijvoorbeeld een toepassingsformulier in. De eerste twee velden van het formulier zijn naam en identiteit. De XML is:
 
@@ -140,8 +140,8 @@ U kunt een adaptief formulier meerdere keren als een onderliggend formulier toev
 Voer de volgende stappen uit om een adaptief formulier toe te voegen als een onderliggend formulier met behulp van de middelenbrowser.
 
 1. Open het bovenliggende formulier in de bewerkingsmodus.
-1. In sidebar, klik **Assets** ![ activa-browser ](assets/assets-browser.png). Onder Assets, uitgezochte **Aangepaste Vorm** van drop-down.
-   [![ Selecterend adaptieve vorm onder Assets ](assets/asset.png)](assets/asset-1.png)
+1. In sidebar, klik **Assets** ![&#x200B; activa-browser &#x200B;](assets/assets-browser.png). Onder Assets, uitgezochte **Aangepaste Vorm** van drop-down.
+   [![&#x200B; Selecterend adaptieve vorm onder Assets &#x200B;](assets/asset.png)](assets/asset-1.png)
 
 1. Sleep het adaptieve formulier dat u wilt toevoegen als een onderliggend formulier.
-   [![ belemmering-daling de adaptieve vorm in uw plaats ](assets/drag-drop.png)](assets/drag-drop-1.png) de adaptieve vorm u neerzet wordt toegevoegd als kindvorm.
+   [![&#x200B; belemmering-daling de adaptieve vorm in uw plaats &#x200B;](assets/drag-drop.png)](assets/drag-drop-1.png) de adaptieve vorm u neerzet wordt toegevoegd als kindvorm.

@@ -34,7 +34,7 @@ CRXDE Lite wordt aanbevolen als u geen directe toegang hebt tot de AEM server. O
 
 >[!NOTE]
 >
->De Adobe adviseert dat u [ AEM de Hulpmiddelen van de Ontwikkelaar voor Verduistering ](/help/sites-developing/aem-eclipse.md) en [ AEM de Uitbreiding van de Haakjes van HTML ](/help/sites-developing/aem-brackets.md) tijdens projectontwikkeling gebruikt.
+>De Adobe adviseert dat u [&#x200B; AEM de Hulpmiddelen van de Ontwikkelaar voor Verduistering &#x200B;](/help/sites-developing/aem-eclipse.md) en [&#x200B; AEM de Uitbreiding van de Haakjes van HTML &#x200B;](/help/sites-developing/aem-brackets.md) tijdens projectontwikkeling gebruikt.
 
 ## Aan de slag met CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -48,7 +48,7 @@ Ga als volgt te werk om aan de slag te gaan met CRXDE Lite:
 
 De gebruikersinterface van CRXDE Lite ziet er als volgt uit in uw browser:
 
-![ chlimage_1-18 ](assets/crx-interface.jpg)
+![&#x200B; chlimage_1-18 &#x200B;](assets/crx-interface.jpg)
 
 U kunt nu CRXDE Lite gebruiken om uw toepassing te ontwikkelen.
 
@@ -175,7 +175,7 @@ Het leidt tot:
 
 * Een onderliggende node van het type `cq:PageContent` met eigenschappen voor pagina-inhoud
 
-U kunt eigenschappen aan uw malplaatje toevoegen: zie [ Creërend een Bezit ](#creating-a-property) sectie.
+U kunt eigenschappen aan uw malplaatje toevoegen: zie [&#x200B; Creërend een Bezit &#x200B;](#creating-a-property) sectie.
 
 ## Een component maken {#creating-a-component}
 
@@ -219,7 +219,7 @@ Er wordt een dialoogvenster gemaakt met de volgende structuur:
 
 U kunt het dialoogvenster nu aan uw wensen aanpassen door eigenschappen te wijzigen of knooppunten te maken.
 
-U kunt een dialoogvenster ook bewerken met de Dialoogeditor. Als u dubbelklikt op het dialoogvenster in CRXDE Lite, wordt de editor weergegeven. Zie [ Redacteur van de Dialoog ](/help/sites-developing/dialog-editor.md) voor meer details.
+U kunt een dialoogvenster ook bewerken met de Dialoogeditor. Als u dubbelklikt op het dialoogvenster in CRXDE Lite, wordt de editor weergegeven. Zie [&#x200B; Redacteur van de Dialoog &#x200B;](/help/sites-developing/dialog-editor.md) voor meer details.
 
 ## Een knooppunt maken {#creating-a-node}
 
@@ -263,7 +263,7 @@ Een script maken:
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 
-Met CRXDE Lite, kunt u knooptype definities in [ invoeren en/of uitvoeren CND (Compacte Namespace en de Definitie van het Type van Knoop) ](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Met CRXDE Lite, kunt u knooptype definities in [&#x200B; invoeren en/of uitvoeren CND (Compacte Namespace en de Definitie van het Type van Knoop) &#x200B;](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Een definitie van het knooppunttype exporteren:
 
@@ -302,4 +302,4 @@ U kunt:
 
 >[!NOTE]
 >
->Zie [ Gebruikers, Groepen, en het Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
+>Zie [&#x200B; Gebruikers, Groepen, en het Beleid van de Rechten van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.

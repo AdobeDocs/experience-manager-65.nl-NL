@@ -22,13 +22,13 @@ ht-degree: 0%
 
 De component `Social Tag Cloud` markeert de tags die door leden van de gemeenschap zijn toegepast bij het plaatsen van inhoud. Dit is een manier om trending onderwerpen te identificeren en bezoekers van de site in staat te stellen snel gelabelde inhoud te zoeken.
 
-Voor een andere manier om huidige tendensen te identificeren, bezoek [ Trends van de Activiteit ](trends.md).
+Voor een andere manier om huidige tendensen te identificeren, bezoek [&#x200B; Trends van de Activiteit &#x200B;](trends.md).
 
 Op deze pagina worden de dialooginstellingen van de component `Social Tag Cloud` gedocumenteerd en wordt de gebruikerservaring beschreven.
 
 Voor gedetailleerde informatie voor ontwikkelaars, zie {de Hoofdzaak van de Markering 0} [&#128279;](tag.md).
 
-Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+Zie [&#x200B; het Beheer Markeringen &#x200B;](../../help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
 
 ## Een sociale-tagcloud toevoegen {#adding-a-social-tag-cloud}
 
@@ -36,19 +36,19 @@ Als u een component `Social Tag Cloud` in de ontwerpmodus aan een pagina wilt to
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](tag.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Social Tag Cloud` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](tag.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Social Tag Cloud` component verschijnt:
 
-![ sociaal-markering ](assets/social-tag.png)
+![&#x200B; sociaal-markering &#x200B;](assets/social-tag.png)
 
 ## Cloud voor sociale tags configureren {#configuring-social-tag-cloud}
 
 Selecteer de geplaatste component `Social Tag Cloud` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Geef onder het tabblad **[!UICONTROL Social Tag Cloud]** op welke tags u wilt weergeven en, als de tags actieve koppelingen zijn, de locatie van de pagina voor de zoekresultaten:
 
-![ sociaal-markering-wolk ](assets/social-tag-cloud.png)
+![&#x200B; sociaal-markering-wolk &#x200B;](assets/social-tag-cloud.png)
 
 * **[!UICONTROL Social Tags to Display]**
 Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
@@ -72,11 +72,11 @@ Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
 
 ## Weergave van sociale-tagcloud wijzigen {#change-display-of-social-tag-cloud}
 
-Om de vertoning van de **Sociale Wolk van de Markering** uit te geven, ga [ Wijze van het Ontwerp ](../../help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Social Tag Cloud` component tweemaal om een dialoog met een extra lusje te openen.
+Om de vertoning van de **Sociale Wolk van de Markering** uit te geven, ga [&#x200B; Wijze van het Ontwerp &#x200B;](../../help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Social Tag Cloud` component tweemaal om een dialoog met een extra lusje te openen.
 
 Geef met het tabblad **[!UICONTROL Social Tag Cloud (Design)]** op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
 
-![ sociaal-markering-wolk-ontwerp ](assets/social-tag-cloud-design.png)
+![&#x200B; sociaal-markering-wolk-ontwerp &#x200B;](assets/social-tag-cloud-design.png)
 
 * **[!UICONTROL Show full title paths]**
 
@@ -120,6 +120,6 @@ Geef met het tabblad **[!UICONTROL Social Tag Cloud (Design)]** op hoe tags moet
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ pagina van de Hoofdzaak van de Markering ](tag.md) voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; pagina van de Hoofdzaak van de Markering &#x200B;](tag.md) voor ontwikkelaars worden gevonden.
 
-Zie [ Tags Gebruiker Gegenereerde Inhoud ](tag-ugc.md) (UGC) voor informatie over het creëren van en het beheren van markeringen.
+Zie [&#x200B; Tags Gebruiker Gegenereerde Inhoud &#x200B;](tag-ugc.md) (UGC) voor informatie over het creëren van en het beheren van markeringen.

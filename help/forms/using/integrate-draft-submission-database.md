@@ -26,7 +26,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst van beschikbare pakketten, zie de [ versies van AEM Forms ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
+>* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst van beschikbare pakketten, zie de [&#x200B; versies van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) artikel.
 >* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
@@ -327,7 +327,7 @@ Het volgende ZIP-bestand bevat `FormsPortalSampleDataServiceImpl` en `FormsPorta
 
 De implementatie van de database van Forms Portal maakt gebruik van extra metagegevenstabel. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
 
-Voer de volgende stappen uit om [ een cliëntbibliotheek ](/help/sites-developing/clientlibs.md) tot stand te brengen en het manuscript te gebruiken:
+Voer de volgende stappen uit om [&#x200B; een cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md) tot stand te brengen en het manuscript te gebruiken:
 
 1. Meld u aan bij CRXDE en navigeer naar /etc/clientlibs/
 1. Creeer een knoop van type **cq:ClientLibraryFolder** en verstrek naam van de knoop. Bijvoorbeeld `validation` .

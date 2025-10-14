@@ -69,19 +69,19 @@ U kunt deze taken uitvoeren met de service Uitvoer:
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten maken {#creating-pdf-documents}
 
 Met de service Uitvoer kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens die u opgeeft. Het PDF-document dat door de Output-service wordt gemaakt, is geen interactief PDF-document. Een gebruiker kan geen formuliergegevens invoeren of wijzigen.
 
-Als u een PDF-document wilt maken dat is bedoeld voor langdurige opslag, is het raadzaam een PDF/A-document te maken. (Zie [ Creërend PDF/A Documenten ](creating-document-output-streams.md#creating-pdf-a-documents).)
+Als u een PDF-document wilt maken dat is bedoeld voor langdurige opslag, is het raadzaam een PDF/A-document te maken. (Zie [&#x200B; Creërend PDF/A Documenten &#x200B;](creating-document-output-streams.md#creating-pdf-a-documents).)
 
-Met de Forms-service kunt u een interactief PDF-formulier maken waarmee een gebruiker gegevens kan invoeren. (Zie [ teruggevend Interactieve PDF forms ](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+Met de Forms-service kunt u een interactief PDF-formulier maken waarmee een gebruiker gegevens kan invoeren. (Zie [&#x200B; teruggevend Interactieve PDF forms &#x200B;](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -119,7 +119,7 @@ Als u gegevens wilt samenvoegen met het formulierontwerp, moet u verwijzen naar 
 
 Bekijk het volgende voorbeeld van een aanvraagformulier voor een lening.
 
-![ cp_cp_loanformdata ](assets/cp_cp_loanformdata.png)
+![&#x200B; cp_cp_loanformdata &#x200B;](assets/cp_cp_loanformdata.png)
 
 Als u gegevens wilt samenvoegen in dit formulierontwerp, moet u een XML-gegevensbron maken die overeenkomt met het formulier. De volgende XML vertegenwoordigt een XDP XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassing.
 
@@ -170,7 +170,7 @@ Als u een gecodeerd Acrobat-formulier als invoer gebruikt, kunt u de instelling 
 
 >[!NOTE]
 >
->Als u geen renderingopties opgeeft, worden standaardwaarden gebruikt. Zie de klasseverwijzing van `RenderOptionsSpec` voor informatie over het renderen van runtime-opties. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+>Als u geen renderingopties opgeeft, worden standaardwaarden gebruikt. Zie de klasseverwijzing van `RenderOptionsSpec` voor informatie over het renderen van runtime-opties. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 **produceer een document van de PDF**
 
@@ -178,7 +178,7 @@ Nadat u naar een geldige XML-gegevensbron met formuliergegevens hebt verwezen en
 
 Wanneer u een PDF-document genereert, geeft u de URI-waarden op die de Output-service nodig heeft om een PDF-document te maken. Een formulierontwerp kan worden opgeslagen op locaties als het serverbestandssysteem of als onderdeel van een AEM Forms-toepassing. Naar een formulierontwerp (of andere bronnen zoals een afbeeldingsbestand) dat als onderdeel van een Forms-toepassing bestaat, kan worden verwezen met de URI-waarde van de basisinhoud `repository:///` . Bijvoorbeeld, overweeg het volgende vormontwerp genoemd *Loan.xdp* binnen een toepassing van Forms genoemd *Toepassingen/FormsApplication* wordt gevestigd:
 
-![ cp_cp_formrepository ](assets/cp_cp_formrepository.png)
+![&#x200B; cp_cp_formrepository &#x200B;](assets/cp_cp_formrepository.png)
 
 Als u toegang wilt krijgen tot het bestand Loan.xdp dat in de vorige afbeelding wordt weergegeven, geeft u `repository:///Applications/FormsApplication/1.0/FormsFolder/` op als de derde parameter die wordt doorgegeven aan de methode `OutputClient` object `generatePDFOutput` . Specificeer de vormnaam (*Loan.xdp*) als tweede parameter die tot de `OutputClient` wordt overgegaan methode van objecten `generatePDFOutput`.
 
@@ -190,7 +190,7 @@ Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, pla
 
 >[!NOTE]
 >
->Om een volledig snel begin te zien dat tot een document van de PDF leidt door naar XDP in een toepassing van Forms te verwijzen, zie [ Snel Begin (wijze EJB): Creërend een document van de PDF dat op een toepassing XDP dossier wordt gebaseerd gebruikend Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Om een volledig snel begin te zien dat tot een document van de PDF leidt door naar XDP in een toepassing van Forms te verwijzen, zie [&#x200B; Snel Begin (wijze EJB): Creërend een document van de PDF dat op een toepassing XDP dossier wordt gebaseerd gebruikend Java API &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **wint de resultaten van de verrichting** terug
 
@@ -242,7 +242,7 @@ Een PDF-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt de linearzed optie van de PDF niet plaatsen door de `setLinearizedPDF` methode van het voorwerp `RenderOptionsSpec` te gebruiken als het document van de inputPDF wordt verklaard of digitaal ondertekend. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >U kunt de linearzed optie van de PDF niet plaatsen door de `setLinearizedPDF` methode van het voorwerp `RenderOptionsSpec` te gebruiken als het document van de inputPDF wordt verklaard of digitaal ondertekend. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Een PDF-document genereren.
 
@@ -259,7 +259,7 @@ Een PDF-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA-PDF-formulier. (Zie [ digitaal het Ondertekenen en het Certificeren Documenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA-PDF-formulier. (Zie [&#x200B; digitaal het Ondertekenen en het Certificeren Documenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -267,7 +267,7 @@ Een PDF-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF-document maken door de methode `generatePDFOutput2` van het object `OutputClient` aan te roepen. (Zie [ het overgaan van Documenten in Inhoudsdiensten (afgekeurd) aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >U kunt ook een PDF-document maken door de methode `generatePDFOutput2` van het object `OutputClient` aan te roepen. (Zie [&#x200B; het overgaan van Documenten in Inhoudsdiensten (afgekeurd) aan de Dienst van de Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Haal de resultaten van de bewerking op.
 
@@ -338,7 +338,7 @@ Maak een PDF-document met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt de optie Gelineariseerde PDF niet instellen met het lid `linearizedPDF` van het `RenderOptionsSpec` -object als het invoer-PDF-document is gecertificeerd of digitaal is ondertekend. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >U kunt de optie Gelineariseerde PDF niet instellen met het lid `linearizedPDF` van het `RenderOptionsSpec` -object als het invoer-PDF-document is gecertificeerd of digitaal is ondertekend. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Een PDF-document genereren.
 
@@ -356,11 +356,11 @@ Maak een PDF-document met de Output API (webservice):
 
    >[!NOTE]
    >
-   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA-PDF-formulier. (Zie [ digitaal het Ondertekenen en het Certificeren Documenten ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA-PDF-formulier. (Zie [&#x200B; digitaal het Ondertekenen en het Certificeren Documenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >U kunt ook een PDF-document maken door de methode `generatePDFOutput2` van het object `OutputClient` aan te roepen. (Zie [ het overgaan van Documenten in Inhoudsdiensten (afgekeurd) aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >U kunt ook een PDF-document maken door de methode `generatePDFOutput2` van het object `OutputClient` aan te roepen. (Zie [&#x200B; het overgaan van Documenten in Inhoudsdiensten (afgekeurd) aan de Dienst van de Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Haal de resultaten van de bewerking op.
 
@@ -389,21 +389,21 @@ De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk a en b. 
 
 Hoewel PDF/A de norm voor het archiveren van PDF- documenten is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. De PDF/A-standaard heeft tot doel een bestand van het type PDF te maken dat gedurende een lange periode kan worden opgeslagen en voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
 
-Uw organisatie moet haar eigen behoeften, de tijdsduur beoordelen u van plan bent om het document te houden, dossiergrootte overwegingen, en uw eigen archiveringsstrategie te bepalen. U kunt programmatically bepalen als een document van PDF PDF/A volgzaam is door de dienst te gebruiken DocConverter. (Zie [ programmatically het bepalen van PDF/A Complichtigheid ](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Uw organisatie moet haar eigen behoeften, de tijdsduur beoordelen u van plan bent om het document te houden, dossiergrootte overwegingen, en uw eigen archiveringsstrategie te bepalen. U kunt programmatically bepalen als een document van PDF PDF/A volgzaam is door de dienst te gebruiken DocConverter. (Zie [&#x200B; programmatically het bepalen van PDF/A Complichtigheid &#x200B;](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 Een PDF/A-document moet het font gebruiken dat is opgegeven in het formulierontwerp en fonts kunnen niet worden vervangen. Als een lettertype dat zich in een PDF-document bevindt, niet beschikbaar is in het besturingssysteem van de host (OS), treedt daarom een uitzondering op.
 
 Wanneer een PDF/A-document in Acrobat wordt geopend, wordt een bericht weergegeven waarin wordt bevestigd dat het document een PDF/A-document is, zoals in de volgende afbeelding wordt getoond.
 
-![ cp_cp_pdfamessage ](assets/cp_cp_pdfamessage.png)
+![&#x200B; cp_cp_pdfamessage &#x200B;](assets/cp_cp_pdfamessage.png)
 
 >[!NOTE]
 >
->De website van AIIM heeft een PDF/A FAQ- sectie die u in [ https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml ](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml) kunt toegang hebben.
+>De website van AIIM heeft een PDF/A FAQ- sectie die u in [&#x200B; https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml &#x200B;](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml) kunt toegang hebben.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_65).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_65).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -525,7 +525,7 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt een PDF /A document ook tot stand brengen door de `generatePDFOutput` 2 methode van objecten `OutputClient` aan te halen. (Zie [ het overgaan van Documenten in de Vervangen Inhoudsdiensten aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt een PDF /A document ook tot stand brengen door de `generatePDFOutput` 2 methode van objecten `OutputClient` aan te halen. (Zie [&#x200B; het overgaan van Documenten in de Vervangen Inhoudsdiensten aan de Dienst van de Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -545,7 +545,7 @@ Een PDF/A-document maken met de Output API (Java):
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[ plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+[&#x200B; plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ### Een PDF/A-document maken met de webservice-API {#create-a-pdf-a-document-using-the-web-service-api}
 
@@ -611,7 +611,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt een PDF /A document ook tot stand brengen door de `generatePDFOutput` 2 methode van objecten `OutputClient` aan te halen. (Zie [ het overgaan van Documenten in de Vervangen Inhoudsdiensten aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt een PDF /A document ook tot stand brengen door de `generatePDFOutput` 2 methode van objecten `OutputClient` aan te halen. (Zie [&#x200B; het overgaan van Documenten in de Vervangen Inhoudsdiensten aan de Dienst van de Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -638,7 +638,7 @@ U kunt Loan.xdp via programmacode ophalen uit Content Services (afgekeurd) en he
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -698,7 +698,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 1. Maak een Output- en een Document Management Client API-object.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `OutputClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
    * Maak een `DocumentManagementServiceClientImpl` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
@@ -823,7 +823,7 @@ De Output-service genereert een niet-interactief PDF-formulier dat is gebaseerd 
 
 Een voordeel van het doorgeven van een `com.adobe.idp.Document` -object aan de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie retourneren. U kunt dus een `com.adobe.idp.Document` -instantie ophalen uit een andere servicebewerking en deze renderen. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in de AEM Forms-opslagplaats, zoals in de volgende afbeelding wordt getoond.
 
-![ pd_pd_formrepository ](assets/pd_pd_formrepository.png)
+![&#x200B; pd_pd_formrepository &#x200B;](assets/pd_pd_formrepository.png)
 
 De ** omslag FormsFolder is een user-defined plaats in de bewaarplaats van AEM Forms (deze plaats is een voorbeeld en bestaat niet door gebrek). In dit voorbeeld bevindt het formulierontwerp met de naam Loan.xdp zich in deze map. Naast het formulierontwerp kunnen ook andere formulierelementen, zoals afbeeldingen, op deze locatie worden opgeslagen. Het pad naar een resource in de AEM Forms-opslagplaats is:
 
@@ -833,13 +833,13 @@ U kunt Loan.xdp via programmacode ophalen uit de AEM Forms-opslagplaats en deze 
 
 U kunt op twee manieren een PDF maken op basis van een XDP-bestand in de opslagplaats. U kunt de XDP-locatie doorgeven via verwijzing of u kunt de XDP-locatie via programmacode ophalen uit de opslagplaats en deze doorgeven aan de Output-service in een XDP-bestand.
 
-[ Snel Begin (wijze EJB): Creërend een document dat van PDF op een toepassing XDP dossier gebruikend Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) wordt gebaseerd (toont hoe te om de plaats van het XDP dossier door verwijzing over te gaan).
+[&#x200B; Snel Begin (wijze EJB): Creërend een document dat van PDF op een toepassing XDP dossier gebruikend Java API &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) wordt gebaseerd (toont hoe te om de plaats van het XDP dossier door verwijzing over te gaan).
 
-[ Snelle Begin (wijze EJB): Het overgaan van een document in de Bewaarplaats van AEM Forms tot de dienst van de Output die Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) gebruikt (toont hoe te om het XDP dossier van de Bewaarplaats van AEM Forms programmatically terug te winnen en het tot de dienst van de Output binnen a `com.adobe.idp.Document` instantie over te gaan). (In deze sectie wordt besproken hoe deze taak moet worden uitgevoerd)
+[&#x200B; Snelle Begin (wijze EJB): Het overgaan van een document in de Bewaarplaats van AEM Forms tot de dienst van de Output die Java API &#x200B;](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) gebruikt (toont hoe te om het XDP dossier van de Bewaarplaats van AEM Forms programmatically terug te winnen en het tot de dienst van de Output binnen a `com.adobe.idp.Document` instantie over te gaan). (In deze sectie wordt besproken hoe deze taak moet worden uitgevoerd)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -861,7 +861,7 @@ Voordat u programmatisch een uitvoerservice-API-bewerking kunt uitvoeren, maakt 
 
 **wint het vormontwerp van de Bewaarplaats van AEM Forms terug**
 
-Haal het XDP-bestand op uit de AEM Forms Repository met behulp van de Repository API. (Zie [ Leesmiddelen ](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+Haal het XDP-bestand op uit de AEM Forms Repository met behulp van de Repository API. (Zie [&#x200B; Leesmiddelen &#x200B;](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` -instantie (of een `BLOB` -instantie als u webservices gebruikt). Vervolgens kunt u de instantie `com.adobe.idp.Document` doorgeven aan de service Uitvoer.
 
@@ -899,7 +899,7 @@ Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van
 
 1. Maak een Output- en een Document Management Client API-object.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `OutputClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
    * Maak een `DocumentManagementServiceClientImpl` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
@@ -942,9 +942,9 @@ Met de services Uitvoer en Samenstellen kunt u een uitvoerstream maken, zoals ee
 
 Deze workflow wordt in de volgende afbeelding getoond.
 
-![ cp_cp_outputassemblefragments ](assets/cp_cp_outputassemblefragments.png)
+![&#x200B; cp_cp_outputassemblefragments &#x200B;](assets/cp_cp_outputassemblefragments.png)
 
-Vóór het lezen *Creërend de Documenten van de PDF gebruikend Fragments*, wordt het geadviseerd dat u vertrouwd met het gebruiken van de dienst van de Assembler wordt om veelvoudige XDP documenten samen te stellen. (Zie [ het Samenstellen Veelvoudige XDP Fragments ](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+Vóór het lezen *Creërend de Documenten van de PDF gebruikend Fragments*, wordt het geadviseerd dat u vertrouwd met het gebruiken van de dienst van de Assembler wordt om veelvoudige XDP documenten samen te stellen. (Zie [&#x200B; het Samenstellen Veelvoudige XDP Fragments &#x200B;](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 >[!NOTE]
 >
@@ -952,7 +952,7 @@ Vóór het lezen *Creërend de Documenten van de PDF gebruikend Fragments*, word
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -1057,7 +1057,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[ plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+[&#x200B; plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ### Een PDF-document maken op basis van fragmenten met de webservice-API {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}
 
@@ -1155,11 +1155,11 @@ Met de service Uitvoer kunt u XML-gegevens samenvoegen met een formulierontwerp 
 
 >[!NOTE]
 >
->Voor informatie over het verzenden van drukstromen naar printers, zie [ Verzendende Streams van de Druk aan Printers ](creating-document-output-streams.md#sending-print-streams-to-printers).
+>Voor informatie over het verzenden van drukstromen naar printers, zie [&#x200B; Verzendende Streams van de Druk aan Printers &#x200B;](creating-document-output-streams.md#sending-print-streams-to-printers).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -1184,7 +1184,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. (Zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. (Zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
 **creeer een voorwerp van de Cliënt van de Output**
 
@@ -1200,7 +1200,7 @@ Als u naar een bestand wilt afdrukken, moet u de runtime-optie voor de bestands-
 
 >[!NOTE]
 >
->Er zijn optionele uitvoeringsopties die u kunt definiëren. Voor informatie over alle opties die u kunt plaatsen, zie de `PrintedOutputOptionsSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Er zijn optionele uitvoeringsopties die u kunt definiëren. Voor informatie over alle opties die u kunt plaatsen, zie de `PrintedOutputOptionsSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Druk de drukstroom aan een dossier**
 
@@ -1277,7 +1277,7 @@ Afdrukken naar een bestand met de Output API (Java):
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[ plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+[&#x200B; plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ### Afdrukken naar bestanden met de webservice-API {#print-to-files-using-the-web-service-api}
 
@@ -1364,7 +1364,7 @@ Met de Output-service kunt u XML-gegevens samenvoegen met een formulierontwerp e
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-6}
 
@@ -1644,7 +1644,7 @@ In de volgende afbeelding ziet u ook hoe de uitvoerservice een XML-gegevensbesta
 
 In de volgende afbeelding ziet u hoe de uitvoerservice een XML-gegevensbestand verwerkt dat meerdere records bevat. Veronderstel dat u de dienst van de Output opdraagt om een afzonderlijk document van PDF voor elk gegevensverslag tot stand te brengen. In dit geval genereert de Output-service een apart PDF-document voor elke gegevensrecord.
 
-![ cm_outputbatchmany ](assets/cm_outputbatchmany.png)
+![&#x200B; cm_outputbatchmany &#x200B;](assets/cm_outputbatchmany.png)
 
 De volgende XML-gegevens laten een voorbeeld zien van een gegevensbestand dat drie gegevensrecords bevat.
 
@@ -1703,7 +1703,7 @@ Het XML-element dat elk gegevensrecord start en beëindigt, is `LoanRecord` . Na
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-7}
 
@@ -1941,11 +1941,11 @@ U kunt zoekregels maken die ertoe leiden dat de uitvoerservice invoergegevens co
 
 Daarnaast kan de Output-service documentpakketten genereren, waarbij de gegevensset meerdere records bevat en elke record overeenkomt met een formulierontwerp en er één document wordt gegenereerd dat uit meerdere formulierontwerpen bestaat.
 
-![ cs_outputbatchmanyformdesigns2 ](assets/cs_outputbatchmanyformdesigns2.png)
+![&#x200B; cs_outputbatchmanyformdesigns2 &#x200B;](assets/cs_outputbatchmanyformdesigns2.png)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -2157,7 +2157,7 @@ Maak zoekregels met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt de optie Gelineariseerde PDF niet instellen met het lid `linearizedPDF` van het `RenderOptionsSpec` -object als het invoer-PDF-document is gecertificeerd of digitaal is ondertekend. Voor informatie, zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
+   >U kunt de optie Gelineariseerde PDF niet instellen met het lid `linearizedPDF` van het `RenderOptionsSpec` -object als het invoer-PDF-document is gecertificeerd of digitaal is ondertekend. Voor informatie, zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
 
 1. Een PDF-document genereren
 
@@ -2175,7 +2175,7 @@ Maak zoekregels met de Output API (webservice):
 
    >[!NOTE]
    >
-   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een XFA-PDF-formulier dat is ondertekend, gecertificeerd of gebruiksrechten bevat. Voor informatie over gebruiksrechten, zie [ Toepassend de Rechten van het Gebruik op de Documenten van de PDF ](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Wanneer u een PDF-document genereert door de methode `generatePDFOutput` aan te roepen, kunt u geen gegevens samenvoegen met een XFA-PDF-formulier dat is ondertekend, gecertificeerd of gebruiksrechten bevat. Voor informatie over gebruiksrechten, zie [&#x200B; Toepassend de Rechten van het Gebruik op de Documenten van de PDF &#x200B;](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. De resultaten van de bewerking ophalen
 
@@ -2205,7 +2205,7 @@ Als u probeert een PDF af te vlakken die een niet-interactief PDF-document is, w
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-9}
 
@@ -2229,7 +2229,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt van de Output**
 

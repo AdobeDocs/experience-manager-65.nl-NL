@@ -43,7 +43,7 @@ De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt d
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -77,7 +77,7 @@ Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Documen
 
 >[!NOTE]
 >
->Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets` . Voor informatie over architectuur XFA, ga naar [ https://www.pdfa.org/norm-refs/XFA-3_3.pdf ](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
+>Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets` . Voor informatie over architectuur XFA, ga naar [&#x200B; https://www.pdfa.org/norm-refs/XFA-3_3.pdf &#x200B;](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **schrijf de stroom van vormgegevens aan cliëntWeb browser**
 

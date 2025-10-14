@@ -39,23 +39,23 @@ Een Dynamic Media-component/viewer toevoegen aan een pagina:
 
    >[!NOTE]
    >
-   >Zie [ Vormende Componenten op de Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) voor meer informatie.
+   >Zie [&#x200B; Vormende Componenten op de Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) voor meer informatie.
 
 1. Ga terug naar de modus **[!UICONTROL Edit]** door op het potloodpictogram in de [!UICONTROL Sidekick] te klikken.
 1. Sleep de component **[!UICONTROL Dynamic Media]** of **[!UICONTROL Interactive Media]** van de groep **[!UICONTROL Other]** in het hulpstuk naar de pagina op de gewenste locatie.
 1. Selecteer **[!UICONTROL Edit]** zodat de component wordt geopend.
-1. [ geef de component ](#dynamic-media-component) zonodig uit.
+1. [&#x200B; geef de component &#x200B;](#dynamic-media-component) zonodig uit.
 1. Selecteer **[!UICONTROL OK]** zodat de wijzigingen worden opgeslagen.
 
 ## Dynamic Media-componenten {#dynamic-media-components}
 
 [!UICONTROL Dynamic Media] en [!UICONTROL Interactive Media] zijn beschikbaar in [!UICONTROL Sidekick] onder **[!UICONTROL Dynamic Media]** . U gebruikt de component **[!UICONTROL Interactive Media]** voor alle interactieve elementen, zoals interactieve video, interactieve afbeeldingen of carrouselsets. Gebruik de component **[!UICONTROL Dynamic Media]** voor alle andere Dynamic Media-componenten.
 
-![ chlimage_1-71 ](assets/chlimage_1-71a.png)
+![&#x200B; chlimage_1-71 &#x200B;](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten in de ontwerpmodus worden geselecteerd voordat ze kunnen worden gebruikt. [ nadat zij op de wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
+>Deze componenten zijn niet standaard beschikbaar en moeten in de ontwerpmodus worden geselecteerd voordat ze kunnen worden gebruikt. [&#x200B; nadat zij op de wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
 
 ### Dynamic Media-component {#dynamic-media-component}
 
@@ -65,7 +65,7 @@ De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding
 >
 >Wanneer u de component [!UICONTROL Dynamic Media] toevoegt en **[!UICONTROL Dynamic Media Settings]** leeg is of wanneer u een element niet correct kunt toevoegen, controleert u het volgende:
 >
->* U hebt [ toegelaten Dynamic Media ](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
+>* U hebt [&#x200B; toegelaten Dynamic Media &#x200B;](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
 >* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat Dynamic Media is ingeschakeld, hebben geen TIFF-bestand met piramide.
 >
 
@@ -75,25 +75,25 @@ Met de component [!UICONTROL Dynamic Media] kunt u dynamische afbeeldingen toevo
 
 U kunt de viewervoorinstelling, afbeeldingsvoorinstelling of afbeeldingsindeling ook rechtstreeks in de component configureren. Als u een afbeelding responsief wilt maken, kunt u de onderbrekingspunten instellen of een responsieve voorinstelling voor de afbeelding toepassen.
 
-![ chlimage_1-72 ](assets/chlimage_1-72a.png)
+![&#x200B; chlimage_1-72 &#x200B;](assets/chlimage_1-72a.png)
 
 U kunt de volgende Dynamic Media-instellingen bewerken door in de component op **[!UICONTROL Edit]** te klikken en vervolgens op de tab **[!UICONTROL Dynamic Media Settings]** te klikken.
 
-![ chlimage_1-73 ](assets/chlimage_1-73a.png)
+![&#x200B; chlimage_1-73 &#x200B;](assets/chlimage_1-73a.png)
 
 >[!NOTE]
 >
 >Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u een vaste grootte wilt maken, stelt u deze in in de component op het tabblad **[!UICONTROL Advanced]** met de eigenschappen **[!UICONTROL Width]** en **[!UICONTROL Height]** .
 
-**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [ het Leiden Kijker stelt ](/help/assets/managing-viewer-presets.md) vooraf in. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
+**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [&#x200B; het Leiden Kijker stelt &#x200B;](/help/assets/managing-viewer-presets.md) vooraf in. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
 Deze optie is alleen beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt. De weergegeven viewervoorinstellingen zijn slim. Er worden dus alleen relevante voorinstellingen voor viewers weergegeven.
 
-**[!UICONTROL Image preset]** - Selecteer een bestaande voorinstelling voor afbeeldingen in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [ het Leiden Beeld vooraf instelt ](/help/assets/managing-image-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
+**[!UICONTROL Image preset]** - Selecteer een bestaande voorinstelling voor afbeeldingen in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [&#x200B; het Leiden Beeld vooraf instelt &#x200B;](/help/assets/managing-image-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze bevelen worden beschreven in [ het Leiden Beeld vooraf instelt ](/help/assets/managing-viewer-presets.md) en de [ verwijzing van het Bevel ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=nl-NL).
+**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze bevelen worden beschreven in [&#x200B; het Leiden Beeld vooraf instelt &#x200B;](/help/assets/managing-viewer-presets.md) en de [&#x200B; verwijzing van het Bevel &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=nl-NL).
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
@@ -119,7 +119,7 @@ Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde me
 
 Gebruik de component **[!UICONTROL Dynamic Media]** om dynamische video toe te voegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-![ chlimage_1-74 ](assets/chlimage_1-74a.png)
+![&#x200B; chlimage_1-74 &#x200B;](assets/chlimage_1-74a.png)
 
 U kunt de volgende [!UICONTROL Dynamic Media Settings] bewerken door op **[!UICONTROL Edit]** in de component te klikken.
 
@@ -127,7 +127,7 @@ U kunt de volgende [!UICONTROL Dynamic Media Settings] bewerken door op **[!UICO
 >
 >De Dynamic Media-videocomponent is standaard adaptief. Als u een vaste grootte wilt maken, stelt u deze in de component in met de tabbladen **[!UICONTROL Width]** en **[!UICONTROL Height]** **[!UICONTROL Advanced]** .
 
-**[!UICONTROL Viewer preset]** - Selecteer een bestaande voorinstelling voor een videoviewer in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [ het Leiden Kijker stelt ](/help/assets/managing-viewer-presets.md) vooraf in.
+**[!UICONTROL Viewer preset]** - Selecteer een bestaande voorinstelling voor een videoviewer in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [&#x200B; het Leiden Kijker stelt &#x200B;](/help/assets/managing-viewer-presets.md) vooraf in.
 
 U kunt de volgende [!UICONTROL Advanced] -instellingen bewerken door op **[!UICONTROL Edit]** in de component te klikken.
 
@@ -137,9 +137,9 @@ U kunt de volgende [!UICONTROL Advanced] -instellingen bewerken door op **[!UICO
 
 #### Beveiligde video leveren {#how-to-delivery-secure-video}
 
-In Experience Manager 6.2, wanneer u [ FP-13480 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installeert, kunt u controleren of een video over een veilige SSL verbinding (HTTPS) of een onveilige verbinding (HTTP) wordt geleverd. Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. Omgekeerd geldt dat als de webpagina zich op HTTP bevindt, de video via HTTP wordt geleverd. Gewoonlijk is dit standaardgedrag prima en hoeft de configuratie niet te worden gewijzigd. U kunt dit standaardgedrag echter overschrijven. Voeg `VideoPlayer.ssl=on` toe aan het einde van een URL-pad of aan de lijst met andere parameters voor viewerconfiguratie in een ingesloten codefragment. Beide acties dwingen de veilige videoverzending.
+In Experience Manager 6.2, wanneer u [&#x200B; FP-13480 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installeert, kunt u controleren of een video over een veilige SSL verbinding (HTTPS) of een onveilige verbinding (HTTP) wordt geleverd. Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. Omgekeerd geldt dat als de webpagina zich op HTTP bevindt, de video via HTTP wordt geleverd. Gewoonlijk is dit standaardgedrag prima en hoeft de configuratie niet te worden gewijzigd. U kunt dit standaardgedrag echter overschrijven. Voeg `VideoPlayer.ssl=on` toe aan het einde van een URL-pad of aan de lijst met andere parameters voor viewerconfiguratie in een ingesloten codefragment. Beide acties dwingen de veilige videoverzending.
 
-Voor meer informatie over veilige videolevering en het gebruiken van het `VideoPlayer.ssl` configuratieattribuut in uw weg URL, zie [ Veilige VideoLevering ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=nl-NL) in de Gids van de Verwijzing van Kijkers. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
+Voor meer informatie over veilige videolevering en het gebruiken van het `VideoPlayer.ssl` configuratieattribuut in uw weg URL, zie [&#x200B; Veilige VideoLevering &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=nl-NL) in de Gids van de Verwijzing van Kijkers. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
 
 ### Interactieve media-component {#interactive-media-component}
 
@@ -147,11 +147,11 @@ De interactieve component van Media is voor die activa die interactiviteit op he
 
 De component [!UICONTROL Interactive Media] is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. Bovendien reageert de viewer snel. De grootte van het scherm verandert dus automatisch op basis van de schermgrootte. Alle viewers zijn op HTML5 gebaseerde viewers.
 
-![ chlimage_1-75 ](assets/chlimage_1-75a.png)
+![&#x200B; chlimage_1-75 &#x200B;](assets/chlimage_1-75a.png)
 
 U kunt de volgende **[!UICONTROL General]** -instellingen bewerken door op **[!UICONTROL Edit]** in de component te klikken.
 
-**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie [ vooraf instelt van de Kijker beheren ](/help/assets/managing-viewer-presets.md).
+**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie [&#x200B; vooraf instelt van de Kijker beheren &#x200B;](/help/assets/managing-viewer-presets.md).
 
 **[!UICONTROL Title]** - Wijzig de titel van de video.
 

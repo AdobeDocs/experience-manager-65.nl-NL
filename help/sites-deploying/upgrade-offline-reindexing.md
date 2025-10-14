@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Een van de belangrijkste uitdagingen bij het upgraden van Adobe Experience Manager is de downtime die aan de auteursomgeving is gekoppeld wanneer een upgrade op locatie wordt uitgevoerd. Inhoudsauteurs hebben tijdens een upgrade geen toegang tot de omgeving. Daarom is het wenselijk om de hoeveelheid tijd te minimaliseren het neemt om de verbetering uit te voeren. Voor grote opslagruimten, met name AEM Assets-projecten, die doorgaans over grote gegevensopslagruimten en een hoog niveau van uploads per uur beschikken, neemt het opnieuw indexeren van Oak-indexen een aanzienlijk percentage van de upgradetijd in beslag.
 
-Deze sectie beschrijft hoe te om Oak-in werking gesteld hulpmiddel te gebruiken om de bewaarplaats **opnieuw te indexeren alvorens** de verbetering uit te voeren, waarbij de hoeveelheid onderbreking tijdens de daadwerkelijke verbetering wordt verminderd. De voorgestelde stappen kunnen op [ worden toegepast Lucene ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indexen voor versies AEM 6.4 en hoger.
+Deze sectie beschrijft hoe te om Oak-in werking gesteld hulpmiddel te gebruiken om de bewaarplaats **opnieuw te indexeren alvorens** de verbetering uit te voeren, waarbij de hoeveelheid onderbreking tijdens de daadwerkelijke verbetering wordt verminderd. De voorgestelde stappen kunnen op [&#x200B; worden toegepast Lucene &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html) indexen voor versies AEM 6.4 en hoger.
 
 ## Overzicht {#overview}
 
@@ -32,9 +32,9 @@ Het probleem waarmee de meeste klanten tijdens een upgrade worden geconfronteerd
 
 ## Benadering {#approach}
 
-![ off-line-redexing-verbetering-tekst-extractie ](assets/offline-reindexing-upgrade-process.png)
+![&#x200B; off-line-redexing-verbetering-tekst-extractie &#x200B;](assets/offline-reindexing-upgrade-process.png)
 
-Het idee moet de index vóór de verbetering, tegen de indexdefinities van de doel AEM versie tot stand brengen gebruikend het [ Oak-in werking gestelde ](/help/sites-deploying/indexing-via-the-oak-run-jar.md) hulpmiddel. In het bovenstaande diagram wordt de methode voor het offline opnieuw indexeren weergegeven.
+Het idee moet de index vóór de verbetering, tegen de indexdefinities van de doel AEM versie tot stand brengen gebruikend het [&#x200B; Oak-in werking gestelde &#x200B;](/help/sites-deploying/indexing-via-the-oak-run-jar.md) hulpmiddel. In het bovenstaande diagram wordt de methode voor het offline opnieuw indexeren weergegeven.
 
 Bovendien is dit de orde van de stappen zoals die in de benadering worden beschreven:
 
@@ -47,7 +47,7 @@ Bovendien is dit de orde van de stappen zoals die in de benadering worden beschr
 
 Om volledige indexering in AEM toe te laten, wordt de tekst van binaire getallen zoals PDF gehaald en aan de index toegevoegd. Dit is meestal een kostbare stap in het indexeringsproces. Tekstomloop is een optimaliseringsstap die vooral wordt aanbevolen voor het opnieuw indexeren van opslagplaatsen voor elementen, omdat er een groot aantal binaire bestanden wordt opgeslagen.
 
-![ off-line-redexing-verbetering-tekst-extractie ](assets/offline-reindexing-upgrade-text-extraction.png)
+![&#x200B; off-line-redexing-verbetering-tekst-extractie &#x200B;](assets/offline-reindexing-upgrade-text-extraction.png)
 
 Tekst van binaire bestanden die in het systeem zijn opgeslagen, kan met het gereedschap eikenuitvoering worden uitgepakt met de tikabibliotheek. Een kloon van de productiesystemen kan vóór verbetering worden genomen en voor dit tekstextractieproces worden gebruikt. Dit proces leidt dan tot de tekstopslag, door de volgende stappen te gaan:
 
@@ -95,11 +95,11 @@ Waar `datastore path` het pad naar de binaire gegevensopslag is.
 
 De gemaakte tekstopslag kan in de toekomst worden bijgewerkt en opnieuw worden gebruikt voor herindexeringsscenario&#39;s.
 
-Voor meer details rond het proces van de tekstextractie, zie de [ Oak-in werking gestelde documentatie ](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
+Voor meer details rond het proces van de tekstextractie, zie de [&#x200B; Oak-in werking gestelde documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
 
 ### Offline opnieuw indexeren {#offline-reindexing}
 
-![ off-line-redexing-verbetering-off-line-redexing ](assets/offline-reindexing-upgrade-offline-reindexing.png)
+![&#x200B; off-line-redexing-verbetering-off-line-redexing &#x200B;](assets/offline-reindexing-upgrade-offline-reindexing.png)
 
 Creeer offline de index van Lucene vóór de verbetering. Als het gebruiken van MongoMK, wordt het geadviseerd om het op één van de knopen te leiden MongoMk, aangezien dit netwerkoverheadkosten vermijdt.
 
@@ -113,7 +113,7 @@ Om de indexdefinitie van de **bron** AEM instantie te dumpen, stel dit bevel in 
 
 >[!NOTE]
 >
->Voor meer details over het dumpen van indexdefinities, raadpleeg de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
+>Voor meer details over het dumpen van indexdefinities, raadpleeg de [&#x200B; documentatie van Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
 
 ```
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
@@ -164,11 +164,11 @@ Het gebruik van de parameter `--doc-traversal-mode` is handig bij MongoMK-instal
 
 Als er MongoMK is, kan dit proces worden versneld als deze stap in een instantie dichter bij de instantie MongoDB wordt uitgevoerd. Als de looppas op de zelfde machine, netwerkoverheadkosten kan worden vermeden.
 
-De extra technische details kunnen in de [ eiken-looppas documentatie voor het indexeren ](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html) worden gevonden.
+De extra technische details kunnen in de [&#x200B; eiken-looppas documentatie voor het indexeren &#x200B;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html) worden gevonden.
 
 ### Indexen importeren {#importing-indexes}
 
-Met AEM 6.4 en nieuwere versies, heeft AEM de ingebouwde capaciteit om indexen van schijf op startopeenvolging in te voeren. De map `<repository>/indexing-result/indexes` wordt tijdens het opstarten gecontroleerd op de aanwezigheid van indexgegevens. U kunt de vooraf gecreëerde index in de bovengenoemde plaats tijdens het [ verbeteringsproces ](in-place-upgrade.md#performing-the-upgrade) kopiëren alvorens met de nieuwe versie van het **doel** AEM jar te beginnen. AEM importeert het in de opslagplaats en verwijdert het overeenkomstige controlepunt uit het systeem. Een herindex wordt dus volledig vermeden.
+Met AEM 6.4 en nieuwere versies, heeft AEM de ingebouwde capaciteit om indexen van schijf op startopeenvolging in te voeren. De map `<repository>/indexing-result/indexes` wordt tijdens het opstarten gecontroleerd op de aanwezigheid van indexgegevens. U kunt de vooraf gecreëerde index in de bovengenoemde plaats tijdens het [&#x200B; verbeteringsproces &#x200B;](in-place-upgrade.md#performing-the-upgrade) kopiëren alvorens met de nieuwe versie van het **doel** AEM jar te beginnen. AEM importeert het in de opslagplaats en verwijdert het overeenkomstige controlepunt uit het systeem. Een herindex wordt dus volledig vermeden.
 
 ## Aanvullende tips en probleemoplossing {#troubleshooting}
 
@@ -180,7 +180,7 @@ U wordt aangeraden het productiesysteem te klonen en de offline index te maken m
 
 ### Een runbook en proefversie voorbereiden {#prepare-a-runbook-and-trial-run}
 
-Het wordt geadviseerd om a [ runbook ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=nl-NL#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
+Het wordt geadviseerd om a [&#x200B; runbook &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=nl-NL#building-the-upgrade-and-rollback-runbook) voor te bereiden en een paar proeven uit te voeren alvorens de verbetering in productie in werking te stellen.
 
 ### Doc Traversal Mode with Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

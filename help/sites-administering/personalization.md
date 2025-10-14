@@ -108,7 +108,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 >[!TIP]
 >
->Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [ Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
+>Het effect van Personalization op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden besproken verder in het document [&#x200B; Optimalisering van Prestaties.](/help/sites-deploying/configuring-performance.md)
 
 #### Nauwkeurigheid van de regels {#accuracy}
 
@@ -170,9 +170,9 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 
 ## Personalization en Community Content {#personalization-and-community-content}
 
-Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in publiceer milieu is ingegaan dat uit veelvoudige AEM instanties bestaat (a [ landbouwbedrijf ](/help/communities/topologies.md) publiceert), is één belangrijke kwestie hoe te om UGC over alle instanties te synchroniseren geweest.
+Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in publiceer milieu is ingegaan dat uit veelvoudige AEM instanties bestaat (a [&#x200B; landbouwbedrijf &#x200B;](/help/communities/topologies.md) publiceert), is één belangrijke kwestie hoe te om UGC over alle instanties te synchroniseren geweest.
 
-Met [ AEM Communities 6.1 ](/help/communities/overview.md) uitbreiding, wordt deze kwestie opgelost door a [ gemeenschappelijke opslag voor UGC ](/help/communities/working-with-srp.md) te gebruiken. Met betrekking tot personalisatie, omvat de Gemeenschappen [ Sociale Login ](/help/communities/social-login.md) - de capaciteit om de optie voor plaatsbezoekers te verstrekken om binnen met Facebook en Twitter te ondertekenen.
+Met [&#x200B; AEM Communities 6.1 &#x200B;](/help/communities/overview.md) uitbreiding, wordt deze kwestie opgelost door a [&#x200B; gemeenschappelijke opslag voor UGC &#x200B;](/help/communities/working-with-srp.md) te gebruiken. Met betrekking tot personalisatie, omvat de Gemeenschappen [&#x200B; Sociale Login &#x200B;](/help/communities/social-login.md) - de capaciteit om de optie voor plaatsbezoekers te verstrekken om binnen met Facebook en Twitter te ondertekenen.
 
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 

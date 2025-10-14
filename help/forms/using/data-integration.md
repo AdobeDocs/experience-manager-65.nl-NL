@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # [!DNL AEM Forms] Gegevensintegratie {#aem-forms-data-integration}
 
-![ held-beeld ](do-not-localize/data-integration.png)
+![&#x200B; held-beeld &#x200B;](do-not-localize/data-integration.png)
 
 De infrastructuur van de onderneming omvat verschillende back-end systemen of gegevensbronnen zoals gegevensbestanden, Webdiensten, de diensten van REST, de diensten van OData, en de oplossingen van CRM. Samengesteld, maken zij een informatiesysteem dat gegevens aan ondernemingstoepassingen dient om zaken van dag tot dag uit te voeren. Anderzijds leggen toepassingen gegevens vast en sturen deze terug naar bijgewerkte gegevensbronnen.
 
@@ -28,7 +28,7 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 ## Overzicht van gegevensintegratie {#data-integration-overview}
 
-![ aem-vormen-gegeven-integratie ](assets/aem-forms-data-integeration.png)
+![&#x200B; aem-vormen-gegeven-integratie &#x200B;](assets/aem-forms-data-integeration.png)
 
 [!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms] . Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is genoemd geworden vormgegevensmodel, een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel kunt u:
 

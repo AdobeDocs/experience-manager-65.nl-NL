@@ -48,13 +48,13 @@ De modellen van het werkschema erven een standaard toegangsbeheerlijst (ACL) voo
 
 >[!NOTE]
 >
->Voor informatie over het gebruiken van CRXDE Lite om ACLs te vormen, zie [ het Juiste Beheer van de Toegang ](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Voor informatie over het gebruiken van CRXDE Lite om ACLs te vormen, zie [&#x200B; het Juiste Beheer van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ### Pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen toe {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
 Als het werkschemamodel binnen `/var/workflow/models` wordt opgeslagen, dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
 
-1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [ http://localhost:4502/crx/de ](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [&#x200B; http://localhost:4502/crx/de &#x200B;](http://localhost:4502/crx/de)).
 1. Selecteer in de nodestructuur het knooppunt voor de map workflowmodellen:
 
    `/var/workflow/models`
@@ -68,11 +68,11 @@ Als het werkschemamodel binnen `/var/workflow/models` wordt opgeslagen, dan kunt
    * **Bevoegdheden**: `jcr:read`
    * **rep:glob**: verwijzing naar het specifieke werkschema
 
-   ![ wf-108 ](assets/wf-108.png)
+   ![&#x200B; wf-108 &#x200B;](assets/wf-108.png)
 
    De **lijst van het Toegangsbeheer** omvat nu de beperking voor `content-authors` op het `prototype-wfm-01` werkschemamodel.
 
-   ![ wf-109 ](assets/wf-109.png)
+   ![&#x200B; wf-109 &#x200B;](assets/wf-109.png)
 
 1. Klik **sparen allen**.
 
@@ -80,7 +80,7 @@ Als het werkschemamodel binnen `/var/workflow/models` wordt opgeslagen, dan kunt
 
 ### Creeer een subfolder in /var/workflow/modellen en pas ACL op dat toe {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Uw [ ontwikkelingsteam kan tot de werkschema&#39;s in subfolder ](/help/sites-developing/workflows-models.md#creating-a-new-workflow) van leiden
+Uw [&#x200B; ontwikkelingsteam kan tot de werkschema&#39;s in subfolder &#x200B;](/help/sites-developing/workflows-models.md#creating-a-new-workflow) van leiden
 
 `/var/workflow/models`
 
@@ -90,7 +90,7 @@ Vergelijkbaar met de DAM-workflows die zijn opgeslagen onder
 
 U kunt ACL aan de omslag zelf dan toevoegen.
 
-1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [ http://localhost:4502/crx/de ](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [&#x200B; http://localhost:4502/crx/de &#x200B;](http://localhost:4502/crx/de)).
 1. Selecteer in de knooppuntenstructuur het knooppunt voor de afzonderlijke map in de map met workflowmodellen, bijvoorbeeld:
 
    `/var/workflow/models/prototypes`
@@ -106,13 +106,13 @@ U kunt ACL aan de omslag zelf dan toevoegen.
 
    >[!NOTE]
    >
-   >Zoals met [ ACL voor het specifieke werkschemamodel op /var/workflow/models ](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) toepassen kunt u rep omvatten:glob om toegang tot een specifiek werkschema te beperken.
+   >Zoals met [&#x200B; ACL voor het specifieke werkschemamodel op /var/workflow/models &#x200B;](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) toepassen kunt u rep omvatten:glob om toegang tot een specifiek werkschema te beperken.
 
-   ![ wf-110 ](assets/wf-110.png)
+   ![&#x200B; wf-110 &#x200B;](assets/wf-110.png)
 
    De **lijst van het Toegangsbeheer** omvat nu de beperking voor `content-authors` op de `prototypes` omslag.
 
-   ![ wf-111 ](assets/wf-111.png)
+   ![&#x200B; wf-111 &#x200B;](assets/wf-111.png)
 
 1. Klik **sparen allen**.
 

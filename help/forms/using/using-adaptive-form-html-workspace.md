@@ -57,32 +57,32 @@ HTML Workspace biedt naast de besturingselementen voor mobiele formulieren ook e
 
 1. Ga naar **Dossier > Nieuw > Toepassing** of gebruik de bestaande toepassing om een toepassing tot stand te brengen.
 
-   ![ creeer nieuwe toepassing ](assets/create_new_appl.png)
+   ![&#x200B; creeer nieuwe toepassing &#x200B;](assets/create_new_appl.png)
 
    Toepassing maken
 
 1. Maak een proces of gebruik een bestaand proces in de toepassing.
 
-   ![ creeer nieuw proces ](assets/create_new_process.png)
+   ![&#x200B; creeer nieuw proces &#x200B;](assets/create_new_process.png)
 
    Proces maken
 
 1. Creeer een Punt van het Begin of wijs Taak toe en klik het tweemaal.
 1. Selecteer **[!UICONTROL use a CRX asset]** onder de sectie **[!UICONTROL Presentation & Data]** en klik op de ellipsen vóór het element.
 
-   ![ Gebruik een activa van CRX ](assets/use_crx_asset.png)
+   ![&#x200B; Gebruik een activa van CRX &#x200B;](assets/use_crx_asset.png)
 
    CRX-middelen gebruiken
 
 1. Selecteer het adaptieve formulier dat is gemaakt via de gebruikersinterface van Assets beheren en klik op **[!UICONTROL OK]** .
 
-   ![ selecteer een adaptieve vorm ](assets/selecting_form.png)
+   ![&#x200B; selecteer een adaptieve vorm &#x200B;](assets/selecting_form.png)
 
    Een adaptief formulier selecteren
 
    >[!NOTE]
    >
-   >Voor details rond het creëren van een adaptieve vorm, zie [ Creërend een adaptieve vorm ](../../forms/using/creating-adaptive-form.md).
+   >Voor details rond het creëren van een adaptieve vorm, zie [&#x200B; Creërend een adaptieve vorm &#x200B;](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Voor details rond het creëren van een proces, zie [ Creërend en het leiden processen ](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Voor details rond het creëren van een proces, zie [&#x200B; Creërend en het leiden processen &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

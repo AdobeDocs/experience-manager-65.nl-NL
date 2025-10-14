@@ -30,10 +30,10 @@ U kunt bijvoorbeeld de volgende speciale tekens invoegen:
 
 U kunt speciale tekens in letters invoegen:
 
-* In de [ tekstredacteur ](/help/forms/using/document-fragments.md#createtext)
-* In een [ editable, gealigneerde module in een correspondentie ](../../forms/using/create-correspondence.md#managecontent)
+* In de [&#x200B; tekstredacteur &#x200B;](/help/forms/using/document-fragments.md#createtext)
+* In een [&#x200B; editable, gealigneerde module in een correspondentie &#x200B;](../../forms/using/create-correspondence.md#managecontent)
 
-![ speciCharacsinlinemodule ](assets/specialcharactersinlinemodule.png)
+![&#x200B; speciCharacsinlinemodule &#x200B;](assets/specialcharactersinlinemodule.png)
 
 De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen door deze aan te passen. In dit artikel vindt u instructies voor het toevoegen van ondersteuning voor extra, aangepaste speciale tekens.
 

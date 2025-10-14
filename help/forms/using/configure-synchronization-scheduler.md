@@ -38,13 +38,13 @@ U kunt **gebruiken synchroniseer Assets van de optie van de Bewaarplaats** om de
 
 1. Meld u aan bij AEM Forms. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/` .
 
-   ![ AEM Forms gebruikersinterface ](assets/aem_forms_ui.png)
+   ![&#x200B; AEM Forms gebruikersinterface &#x200B;](assets/aem_forms_ui.png)
 
    **Cijfer:** *gebruikersinterface van AEM Forms*
 
 1. Klik het {![&#128279;](assets/aem6forms_sync.png) pictogram 0} aem6forms_sync in de toolbar.  Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
 
-   ![ de dialoogdoos van de Synchronisatie ](assets/migrate-and-syncronize.png)
+   ![&#x200B; de dialoogdoos van de Synchronisatie &#x200B;](assets/migrate-and-syncronize.png)
 
    **Cijfer:** *de dialoogdoos van de Synchronisatie*
 
@@ -56,6 +56,6 @@ Als de onlangs gecreeerde toepassing en een omslag bij /content/dam/formsanddocu
 
 U lost het conflict op door de naam van de toepassing te wijzigen en de elementen handmatig te synchroniseren.
 
-![ Conflicten in de dialoogdoos van de activasynchronisatie ](assets/sync-conflict.png)
+![&#x200B; Conflicten in de dialoogdoos van de activasynchronisatie &#x200B;](assets/sync-conflict.png)
 
 **Cijfer:** *Conflicten in de dialoogdoos van de activasynchronisatie*

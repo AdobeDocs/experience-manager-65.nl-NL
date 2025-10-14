@@ -105,7 +105,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Ontwerp**
 
-  Wijs op het [ ontwerp ](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
+  Wijs op het [&#x200B; ontwerp &#x200B;](/help/sites-developing/designer.md) dat voor deze pagina moet worden gebruikt.
 
 * **Alias**
 
@@ -113,7 +113,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **laat Gesloten Groep van de Gebruiker toe**
 
-  Laat (of maakt) gebruik van [ gesloten gebruikersgroepen ](/help/sites-administering/cug.md) (CUGs) toe onbruikbaar.
+  Laat (of maakt) gebruik van [&#x200B; gesloten gebruikersgroepen &#x200B;](/help/sites-administering/cug.md) (CUGs) toe onbruikbaar.
 
 * **Login Pagina**
 
@@ -149,31 +149,31 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Cloud Servicen**
 
-  Bepaal eigenschappen voor [ wolkendiensten ](/help/sites-developing/extending-cloud-config.md).
+  Bepaal eigenschappen voor [&#x200B; wolkendiensten &#x200B;](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalization {#personalization}
 
 * **Personalization**
 
-  Selecteer a [ Merk om een werkingsgebied voor het richten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te specificeren.
+  Selecteer a [&#x200B; Merk om een werkingsgebied voor het richten &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te specificeren.
 
 ### Machtigingen {#permissions}
 
 * **Toestemmingen** (aanraking-geoptimaliseerde UI)
 
-  Bekijk de [ efficiënte toestemmingen en voeg nieuwe toestemmingen ](/help/sites-administering/user-group-ac-admin.md) toe.
+  Bekijk de [&#x200B; efficiënte toestemmingen en voeg nieuwe toestemmingen &#x200B;](/help/sites-administering/user-group-ac-admin.md) toe.
 
 ### Blauwdruk {#blueprint}
 
 * **Vervaging**
 
-  Bepaal eigenschappen voor een pagina van de Vervaging binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+  Bepaal eigenschappen voor een pagina van de Vervaging binnen [&#x200B; multi-site beheer &#x200B;](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-  Bepaal eigenschappen voor een Levende pagina van het Exemplaar binnen [ multi-site beheer ](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+  Bepaal eigenschappen voor een Levende pagina van het Exemplaar binnen [&#x200B; multi-site beheer &#x200B;](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 

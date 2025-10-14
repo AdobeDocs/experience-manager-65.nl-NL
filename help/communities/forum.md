@@ -45,17 +45,17 @@ En sleep het naar zijn plaats op een pagina waar het forum zou moeten verschijne
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-forum.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Forum` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/essentials-forum.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Forum` component verschijnt:
 
-![ forum-component ](assets/forum-component.png)
+![&#x200B; forum-component &#x200B;](assets/forum-component.png)
 
 ### Een forum configureren {#configuring-a-forum}
 
 Selecteer de geplaatste component `Forum` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
-![ forum-config ](assets/forum-config.png)
+![&#x200B; forum-config &#x200B;](assets/forum-config.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -100,7 +100,7 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen en antwo
 
 * **toestaat na**
 
-  Als gecontroleerd, omvat de volgende eigenschap voor forumposten, die leden [ toestaat om ](/help/communities/notifications.md) van nieuwe posten worden op de hoogte gebracht. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, omvat de volgende eigenschap voor forumposten, die leden [&#x200B; toestaat om &#x200B;](/help/communities/notifications.md) van nieuwe posten worden op de hoogte gebracht. De optie Standaard is uitgeschakeld.
 
 * **het Draaien** toestaan
 
@@ -108,11 +108,11 @@ Onder het **lusje van Montages**, specificeer montages voor onderwerpen en antwo
 
 * **sta Aanbevolen Inhoud** toe
 
-  Als gecontroleerd, is het idee identificeerbaar als [ gekenmerkte inhoud ](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, is het idee identificeerbaar als [&#x200B; gekenmerkte inhoud &#x200B;](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
 * **staat E-mailAbonnementen** toe
 
-  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([ abonnement ](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [ gevormde e-mail ](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([&#x200B; abonnement &#x200B;](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [&#x200B; gevormde e-mail &#x200B;](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Max de Grootte van het Dossier**
 
@@ -143,7 +143,7 @@ Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum a
 
 * **Badges van de Vertoning**
 
-  Als gecontroleerd, vertoning verdiende en toegewezen [ badges ](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, vertoning verdiende en toegewezen [&#x200B; badges &#x200B;](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
 
 * **staat Geprivilegieerde Leden** toe
 
@@ -175,7 +175,7 @@ Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum a
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen en de antwoorden (user-generated inhoud) worden beheerd. Voor meer informatie, zie [ het Matigen van Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen en de antwoorden (user-generated inhoud) worden beheerd. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
 * **ontken Post**
 
@@ -251,8 +251,8 @@ Onder het **lusje van de Montages van de Soort**, specificeer hoe de geposte com
 
 Meer informatie kan op de [&#128279;](/help/communities/essentials-forum.md) pagina van de Hoofdzaak van het Forum  voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte onderwerpen en commentaren, zie [&#x200B; het Modereren van Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van geposte onderwerpen en commentaren, zie [ Tags Gebruiker-Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [&#x200B; Tags Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).
 
-Voor vertaling van geposte onderwerpen en commentaren, zie [ Vertaal Gebruiker-Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
+Voor vertaling van geposte onderwerpen en commentaren, zie [&#x200B; Vertaal Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/translate-ugc.md).

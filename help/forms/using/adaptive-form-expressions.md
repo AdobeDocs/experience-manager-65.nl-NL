@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Adaptieve formulierexpressies{#adaptive-form-expressions}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Adaptieve formulieren bieden een geoptimaliseerde en vereenvoudigde manier van invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven om verschillende gedragingen toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst van adaptieve vormklassen, gebeurtenissen, voorwerpen, en openbare APIs, zie [&#x200B; API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -31,12 +31,12 @@ JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn g
 
 ## Aanbevolen werkwijzen voor expressies waarbij het deelvenster wordt herhaald {#best-practices-for-expressions-involving-repeating-panel}
 
-Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden toegevoegd of verwijderd met behulp van API voor scripts of vooraf ingevulde gegevens. Voor gedetailleerde informatie over het gebruiken van het herhalen van paneel, zie [ het creëren van vormen met herhaalbare secties ](/help/forms/using/creating-forms-repeatable-sections.md).
+Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden toegevoegd of verwijderd met behulp van API voor scripts of vooraf ingevulde gegevens. Voor gedetailleerde informatie over het gebruiken van het herhalen van paneel, zie [&#x200B; het creëren van vormen met herhaalbare secties &#x200B;](/help/forms/using/creating-forms-repeatable-sections.md).
 
 * Als u een herhalend deelvenster wilt maken, opent u in het dialoogvenster van het deelvenster de instellingen en stelt u de waarde van het maximale telveld in op meer dan 1.
 * De minimale telwaarde van de herhalingsinstellingen van het deelvenster kan een of meer zijn, maar mag niet meer zijn dan de maximale telwaarde.
 * Wanneer een expressie verwijst naar een veld van een herhalend deelvenster, worden de veldnamen in de expressie omgezet naar het dichtstbijzijnde herhalende element.
-* Adaptieve formulieren bieden een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen ](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+* Adaptieve formulieren bieden een aantal speciale functies om de berekening voor herhaalbare deelvensters, zoals som, telling, min, max, filter en nog veel meer, te vereenvoudigen. Voor de volledige lijst van functies, zie [&#x200B; API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * API&#39;s voor het manipuleren van instanties van herhalende deelvensters zijn:
 
    * Een deelvensterinstantie toevoegen: `panel1.instanceManager.addInstance()`
@@ -51,11 +51,11 @@ In adaptieve formulieren kunt u expressies schrijven om gedrag toe te voegen, zo
 * **[de uitdrukkingen van de Toegang](#access-expression-enablement-expression)**: om een gebied toe te laten/onbruikbaar te maken.
 * **[berekent uitdrukkingen](#calculate-expression)**: aan auto-compute waarde van een gebied.
 * **[klik uitdrukking](#click-expression)**: om acties op klikgebeurtenis van een knoop te behandelen.
-* **[Manuscript van de Initialisatie ](#initialization-script):** voer een actie op initialisering van een gebied uit.
+* **[Manuscript van de Initialisatie &#x200B;](#initialization-script):** voer een actie op initialisering van een gebied uit.
 * **[uitdrukking van Opties](#options-expression)**: een drop-down lijst dynamisch vullen.
 * **[Summiere uitdrukking](#summary)**: om de titel van een accordeon dynamisch gegevens te verwerken.
 * **[bevestigt uitdrukkingen](#validate-expression)**: om een gebied te bevestigen.
-* **[de Waarde verbindt Manuscript ](#value-commit-script):** om de componenten van een vorm te veranderen nadat de waarde van een gebied wordt veranderd.
+* **[de Waarde verbindt Manuscript &#x200B;](#value-commit-script):** om de componenten van een vorm te veranderen nadat de waarde van een gebied wordt veranderd.
 * **[de uitdrukking van het Zichtbaarheid](#visibility-expression)**: om zicht van een gebied en een paneel te controleren.
 * **[de voltooiingsuitdrukking van de Stap](#step-completion-expression)**: om een gebruiker te verhinderen naar volgende stap van een tovenaar te gaan.
 
@@ -82,7 +82,7 @@ De expressie calculate wordt gebruikt om de waarde van een veld automatisch te b
 
 ### Klikken op uitdrukking {#click-expression}
 
-De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [ GuideBridge APIs.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop worden uitgevoerd. GuideBridge beschikt over API&#39;s die verschillende functies kunnen uitvoeren, zoals verzenden, valideren die samen met de klikexpressie worden gebruikt. Voor volledige lijst van APIs, zie [&#x200B; GuideBridge APIs.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 **is op** van toepassing: De gebieden van de knoop
 
@@ -117,7 +117,7 @@ De optiesuitdrukking wordt gebruikt om opties van een drop-down lijstgebied dyna
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Wanneer de waarde van **marital_status** gebiedsveranderingen, de uitdrukking wordt opnieuw teweeggebracht. U kunt dropdown van de dienst van REST ook bevolken. Voor gedetailleerde informatie, zie [ dynamisch het bevolken dropdowns ](../../forms/using/dynamically-populate-dropdowns.md).
+Wanneer de waarde van **marital_status** gebiedsveranderingen, de uitdrukking wordt opnieuw teweeggebracht. U kunt dropdown van de dienst van REST ook bevolken. Voor gedetailleerde informatie, zie [&#x200B; dynamisch het bevolken dropdowns &#x200B;](../../forms/using/dynamically-populate-dropdowns.md).
 
 ### Samenvattingsexpressie {#summary}
 
@@ -199,11 +199,11 @@ Om een component verplicht te maken, in **geeft** dialoog van de component uit, 
 
 ### Validatiepatronen {#validation-patterns}
 
-Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepatroon, in **te selecteren geef** dialoog van de component uit, bepaal de plaats van de **sectie van de Patronen** en selecteer **patronen**. U kunt uw eigen patroon van de douanebevestiging in de tekstvakje van het a **Patroon** tot stand brengen. De validatiestatus is teruggekeerd **Waar** slechts als het gevulde gegeven aan het bevestigingspatroon volgzaam is, anders **Vals** is teruggekeerd. Om uw eigen patroon van de douanebevestiging te schrijven, zie [ de componentensteun van het Beeld voor vormen HTML5 ](/help/forms/using/picture-clause-support.md).
+Er zijn meerdere validatiepatronen beschikbaar voor een veld. Om een validatiepatroon, in **te selecteren geef** dialoog van de component uit, bepaal de plaats van de **sectie van de Patronen** en selecteer **patronen**. U kunt uw eigen patroon van de douanebevestiging in de tekstvakje van het a **Patroon** tot stand brengen. De validatiestatus is teruggekeerd **Waar** slechts als het gevulde gegeven aan het bevestigingspatroon volgzaam is, anders **Vals** is teruggekeerd. Om uw eigen patroon van de douanebevestiging te schrijven, zie [&#x200B; de componentensteun van het Beeld voor vormen HTML5 &#x200B;](/help/forms/using/picture-clause-support.md).
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [ Uitdrukking ](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze uitdrukkingen worden geschreven binnen **gebied van het Manuscript van de Bevestiging** van het **3&rbrace; lusje van het Manuscript van** geeft **dialoog van de component uit.** De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Voor informatie over hoe te om dergelijke uitdrukkingen te schrijven, zie [&#x200B; Uitdrukking &#x200B;](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p) bevestigen.
 
 ## Aanvullende informatie {#additional-information}
 
@@ -213,7 +213,7 @@ U kunt de indeling weergeven gebruiken om de gegevens in verschillende indelinge
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
-GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met adaptieve formulieren in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [ de Bibliotheek API van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interactie met adaptieve formulieren in het geheugenmodel in een browser. Voor gedetailleerde inleiding aan Gids Bridge API, klassenmethodes, blootgestelde gebeurtenissen, zie [&#x200B; de Bibliotheek API van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de geb
 
 #### GuideBridge-gebeurtenissen {#guidebridge-events}
 
-GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [ API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpagina. Externe scripts kunnen naar deze gebeurtenissen luisteren en verschillende bewerkingen uitvoeren. Als de gebruikersnaam in een formulier bijvoorbeeld wordt gewijzigd, verandert ook de naam die in de koptekst van de pagina wordt weergegeven. Voor meer details over dergelijke gebeurtenissen, zie [&#x200B; API van de Bibliotheek van JavaScript verwijzing voor adaptieve vormen.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 Gebruik de volgende code om handlers te registreren:
 
@@ -273,7 +273,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Aangepaste patronen maken voor een veld {#creating-custom-patterns-for-a-field}
 
-Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen voor validatie- of weergaveindelingen leveren. U kunt niet alleen patronen uit het vak gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een adaptieve formuliercomponent. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de aangepaste formulieren. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. Voor details over de definitie of het formaat van het Patroon, zie [ de componentensteun van het Beeld voor vormen HTML5 ](/help/forms/using/picture-clause-support.md).
+Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen voor validatie- of weergaveindelingen leveren. U kunt niet alleen patronen uit het vak gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een adaptieve formuliercomponent. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de aangepaste formulieren. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. Voor details over de definitie of het formaat van het Patroon, zie [&#x200B; de componentensteun van het Beeld voor vormen HTML5 &#x200B;](/help/forms/using/picture-clause-support.md).
 
 Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
@@ -285,6 +285,6 @@ Voer de volgende stappen uit om een aangepast patroon te maken voor een specifie
 &quot;
 1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het knooppunt `textboxpatterns` . Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1` ) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999- 9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptief Forms gebruikt.
 
-   ![ Creërend douanepatronen voor gebieden in CrxDe ](assets/creating-custom-patterns.png)
+   ![&#x200B; Creërend douanepatronen voor gebieden in CrxDe &#x200B;](assets/creating-custom-patterns.png)
 
    Aangepaste patronen maken

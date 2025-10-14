@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit document maakt deel uit van [ Begonnen het Worden met Mobiele (AEM) Gids van Adobe Experience Manager ](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
+>Dit document maakt deel uit van [&#x200B; Begonnen het Worden met Mobiele (AEM) Gids van Adobe Experience Manager &#x200B;](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
 
 Gebruik Content Sync om inhoud te verpakken zodat deze kan worden gebruikt in systeemeigen mobiele toepassingen. Pagina&#39;s die in AEM zijn gemaakt, kunnen als toepassingsinhoud worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina&#39;s zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
 
@@ -44,7 +44,7 @@ De volgende reeks stappen illustreert een typisch geval van gebruik voor de Sync
 
 >[!NOTE]
 >
->Om meer informatie over richtlijnen te krijgen voor het ontwikkelen van de handlers van de Synchronisatie van de Inhoud uit de doos app handlers zien, zie [ het Ontwikkelen van de Handlers van de Synchronisatie van de Inhoud ](/help/mobile/contentsync-app-handlers.md).
+>Om meer informatie over richtlijnen te krijgen voor het ontwikkelen van de handlers van de Synchronisatie van de Inhoud uit de doos app handlers zien, zie [&#x200B; het Ontwikkelen van de Handlers van de Synchronisatie van de Inhoud &#x200B;](/help/mobile/contentsync-app-handlers.md).
 
 ## Inhoud voor inhoudssynchronisatie configureren {#configuring-the-content-sync-content}
 
@@ -75,9 +75,9 @@ Wanneer AEM is geïnstalleerd, kunnen leden van de beheerdersgroep standaard dow
 
 De dienst van de Manager van de Synchronisatie van de Inhoud van de Dag CQ bepaalt toegang tot de Synchronisatie van de Inhoud. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
 
-Als u [ de dienst vormt gebruikend de Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
+Als u [&#x200B; de dienst vormt gebruikend de Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
 
-Als u [ vormt in de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), gebruik de volgende informatie over de dienst:
+Als u [&#x200B; vormt in de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), gebruik de volgende informatie over de dienst:
 
 * PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Eigenschapnaam: contentsync.fallback.authorizable
@@ -174,7 +174,7 @@ Elke eigenschap kan een van de volgende waarden hebben:
 
 * `REWRITE_RELATIVE` : herschrijft het pad met een relatieve positie ten opzichte van het bestand page.html op het bestandssysteem.
 
-* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [ dienst ExternalAlizer ](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [&#x200B; dienst ExternalAlizer &#x200B;](/help/sites-developing/externalizer.md).
 
 De AEM dienst riep **PathRewriterTransformerFactory** laat u de specifieke html attributen vormen die zullen worden herschreven. De service kan worden geconfigureerd in de webconsole en heeft een configuratie voor elke eigenschap van de node `rewrite` : `clientlibs` , `images` en `links` .
 
@@ -249,7 +249,7 @@ De console is toegankelijk op:
 
 Het ziet er als volgt uit:
 
-![ chlimage_1 ](assets/chlimage_1.png)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.png)
 
 ### Uitbreiding van het raamwerk voor contentsynchronisatie {#extending-the-content-sync-framework}
 
@@ -260,7 +260,7 @@ Voor elk configuratietype, is er de Handler van de Update van de a *Inhoud*, die
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface die alle updatehandlers moeten implementeren
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Een abstracte klasse die het teruggeven van middelen gebruikend het Verkopen vereenvoudigt
 
-Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend de [ Gemaakt SCR gestopt insteekmodule ](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) of gebruikend markeringen JavaDoc of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
+Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend de [&#x200B; Gemaakt SCR gestopt insteekmodule &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) of gebruikend markeringen JavaDoc of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
 
 ```java
 /*

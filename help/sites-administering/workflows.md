@@ -37,14 +37,14 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >
 >Zie voor meer informatie:
 >
->* Het toepassen van en het deelnemen aan werkschema&#39;s: [ Werkend met Werkschema&#39;s ](/help/sites-authoring/workflows.md).
->* Creërend werkschemamodellen en het uitbreiden van werkschemamogelijkheden: [ het Ontwikkelen en het Uitbreiden van Werkschema&#39;s ](/help/sites-developing/workflows.md).
->* Het verbeteren van de prestaties van werkschema&#39;s die significante servermiddelen gebruiken: [ Gelijktijdige Verwerking van het Werkschema ](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+>* Het toepassen van en het deelnemen aan werkschema&#39;s: [&#x200B; Werkend met Werkschema&#39;s &#x200B;](/help/sites-authoring/workflows.md).
+>* Creërend werkschemamodellen en het uitbreiden van werkschemamogelijkheden: [&#x200B; het Ontwikkelen en het Uitbreiden van Werkschema&#39;s &#x200B;](/help/sites-developing/workflows.md).
+>* Het verbeteren van de prestaties van werkschema&#39;s die significante servermiddelen gebruiken: [&#x200B; Gelijktijdige Verwerking van het Werkschema &#x200B;](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 ## Workflowmodellen en -instanties {#workflow-models-and-instances}
 
-[ modellen van het Werkschema ](/help/sites-developing/workflows.md#model) in AEM zijn de vertegenwoordiging en implementatie van bedrijfsprocessen:
+[&#x200B; modellen van het Werkschema &#x200B;](/help/sites-developing/workflows.md#model) in AEM zijn de vertegenwoordiging en implementatie van bedrijfsprocessen:
 
 * Doorgaans handelen ze op pagina&#39;s of elementen om een specifiek resultaat te bereiken.
 * Deze pagina&#39;s en/of middelen worden de werkstroomlading genoemd.
@@ -55,7 +55,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [ het Ontwikkelen en het Uitbreiden Workflows - Modellen ](/help/sites-developing/workflows.md#model) voor verdere details.
+>De uitgevoerde stappen zijn die die door het werkschemamodel *in de tijd worden bepaald dat de instantie* wordt geproduceerd. Zie [&#x200B; het Ontwikkelen en het Uitbreiden Workflows - Modellen &#x200B;](/help/sites-developing/workflows.md#model) voor verdere details.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 

@@ -172,7 +172,7 @@ Met de Bulk-editor kunt u de rijen toevoegen, wijzigen, verwijderen, filteren en
 De broncode van de component Product List is beschikbaar in de gegevensopslagruimte op /apps/geometrixx/components/productlist en bestaat uit verschillende onderdelen, zoals alle Adobe Experience Manager-componenten (AEM):
 
 * HTML-rendering: de rendering wordt uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een lijst van HTML.
-* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat het voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die op het raster of op de zoekopdracht worden uitgevoerd. Zie [ de configuratieeigenschappen van de Redacteur van het Bulk ](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
+* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat het voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die op het raster of op de zoekopdracht worden uitgevoerd. Zie [&#x200B; de configuratieeigenschappen van de Redacteur van het Bulk &#x200B;](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
 
 Hier volgt een XML-weergave van de subknooppunten van het dialoogvenster:
 

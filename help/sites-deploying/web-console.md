@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Webconsole{#web-console}
 
-De console van het Web in Adobe Experience Manager (AEM) is gebaseerd op de [ Console van het Beheer van het Web van Apache Felix ](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
+De console van het Web in Adobe Experience Manager (AEM) is gebaseerd op de [&#x200B; Console van het Beheer van het Web van Apache Felix &#x200B;](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ De console van het Web in Adobe Experience Manager (AEM) is gebaseerd op de [ Co
 
 De console van het Web biedt een selectie lusjes voor het handhaven van de bundels OSGi aan, die omvatten:
 
-* [ Configuratie ](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen
-* [ Bundels ](#bundles): gebruikt voor het installeren van bundels
-* [ Componenten ](#components): gebruikt voor het controleren van het statuut van componenten die voor AEM worden vereist
+* [&#x200B; Configuratie &#x200B;](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen
+* [&#x200B; Bundels &#x200B;](#bundles): gebruikt voor het installeren van bundels
+* [&#x200B; Componenten &#x200B;](#components): gebruikt voor het controleren van het statuut van componenten die voor AEM worden vereist
 
 Alle aangebrachte wijzigingen worden onmiddellijk toegepast op het actieve systeem. U hoeft de computer niet opnieuw op te starten.
 
@@ -58,7 +58,7 @@ Het **lusje van de Configuratie** kan door één van beide worden betreden:
 
 Er wordt een lijst met configuraties weergegeven:
 
-![ screen_shot_2012-02-15at52308pm ](assets/screen_shot_2012-02-15at52308pm.png)
+![&#x200B; screen_shot_2012-02-15at52308pm &#x200B;](assets/screen_shot_2012-02-15at52308pm.png)
 
 Er zijn twee soorten configuraties beschikbaar bij de drop-down lijsten op dit scherm:
 
@@ -75,7 +75,7 @@ Hiermee kunt u een instantie maken van het vereiste functieobject.
 
 Als u een item in de lijst selecteert, worden de parameters met betrekking tot die configuratie weergegeven:
 
-![ chlimage_1-21 ](assets/chlimage_1-21a.png)
+![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-21a.png)
 
 Vervolgens kunt u de parameters naar wens bijwerken en:
 
@@ -115,7 +115,7 @@ Het **lusje van Bundels** is het mechanisme om de bundels te installeren OSGi di
 
 Er wordt een lijst met bundels weergegeven:
 
-![ screen_shot_2012-02-15at44740pm ](assets/screen_shot_2012-02-15at44740pm.png)
+![&#x200B; screen_shot_2012-02-15at44740pm &#x200B;](assets/screen_shot_2012-02-15at44740pm.png)
 
 Met dit tabblad kunt u:
 
@@ -167,11 +167,11 @@ Het **lusje van Componenten** laat u toelaten en/of de diverse componenten onbru
 
 Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogrammen beschikbaar waarmee u configuratiedetails voor een specifieke component kunt inschakelen, uitschakelen of (waar van toepassing) openen.
 
-![ screen_shot_2012-02-15at52144pm ](assets/screen_shot_2012-02-15at52144pm.png)
+![&#x200B; screen_shot_2012-02-15at52144pm &#x200B;](assets/screen_shot_2012-02-15at52144pm.png)
 
 Wanneer u op de naam van een bepaalde component klikt, wordt meer informatie over de status weergegeven. Hier kunt u de component ook in-, uitschakelen of opnieuw laden.
 
-![ chlimage_1-22 ](assets/chlimage_1-22a.png)
+![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >

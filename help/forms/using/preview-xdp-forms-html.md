@@ -54,7 +54,7 @@ Voer de volgende configuraties uit om Designer in staat te stellen een voorbeeld
 
 ### Beveiligde modus uitschakelen {#disable-protected-mode}
 
-De [ beschermde wijze ](../../forms/using/get-xdp-pdf-documents-aem.md) is, door gebrek. Houd het ingeschakeld voor de productieomgevingen. U kunt deze uitschakelen voor een ontwikkelomgeving om een voorvertoning van HTML5 Forms weer te geven in Designer. Voer de volgende stappen uit om het uit te schakelen:
+De [&#x200B; beschermde wijze &#x200B;](../../forms/using/get-xdp-pdf-documents-aem.md) is, door gebrek. Houd het ingeschakeld voor de productieomgevingen. U kunt deze uitschakelen voor een ontwikkelomgeving om een voorvertoning van HTML5 Forms weer te geven in Designer. Voer de volgende stappen uit om het uit te schakelen:
 
 1. Meld u als beheerder aan bij AEM webconsole.
 
@@ -87,7 +87,7 @@ De [ beschermde wijze ](../../forms/using/get-xdp-pdf-documents-aem.md) is, door
    >
    >Zorg ervoor dat de AEM Forms-server actief is. De voorproef van HTML verbindt met de server van CRX ** produceren een voorproef.
 
-   ![ AEM Forms Designer-opties ](assets/server_options.png)
+   ![&#x200B; AEM Forms Designer-opties &#x200B;](assets/server_options.png)
 
    AEM Forms Designer-opties
 
@@ -111,7 +111,7 @@ De [ beschermde wijze ](../../forms/using/get-xdp-pdf-documents-aem.md) is, door
 
 Met Designer kunt u een voorbeeld van een formulier bekijken en het formulier testen met XML-voorbeeldgegevens. Het wordt aanbevolen om regelmatig uw formulier te testen met voorbeeldgegevens om te controleren of het formulier correct wordt weergegeven.
 
-Als u geen voorbeeldgegevens hebt, kan Designer deze maken of deze zelf maken. (Zie [ om steekproefgegevens automatisch te produceren om uw vorm ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) voor te vertonen en [ om steekproefgegevens tot stand te brengen om uw vorm ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2) voor te vertonen.)
+Als u geen voorbeeldgegevens hebt, kan Designer deze maken of deze zelf maken. (Zie [&#x200B; om steekproefgegevens automatisch te produceren om uw vorm &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) voor te vertonen en [&#x200B; om steekproefgegevens tot stand te brengen om uw vorm &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2) voor te vertonen.)
 
 Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken die de juiste ruimte biedt voor elk object om de samengevoegde gegevens weer te geven.
 

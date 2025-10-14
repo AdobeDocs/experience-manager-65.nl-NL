@@ -37,11 +37,11 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
 
 1. Opstelling een Web-pagina door a **videocomponent** van sidekick te slepen en een playable **video als activa** voor de component toe te voegen
 
-1. [ creeer een configuratie en kader van Adobe Analytics ](/help/sites-administering/adobeanalytics.md).
+1. [&#x200B; creeer een configuratie en kader van Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md).
 
    * De voorbeelden in de secties die volgen gebruiken de naam **my-sc-configuration** voor de configuratie en **video** voor het kader.
 
-1. Voor de kaderpagina, selecteer RSID en plaats het gebruik aan allen. ([ https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. Voor de kaderpagina, selecteer RSID en plaats het gebruik aan allen. ([&#x200B; https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Sleep de component Video van de categorie Algemeen in Sidekick naar het framework.
 1. Selecteer een methode voor bijhouden:
 
@@ -139,9 +139,9 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
 
 1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
-   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
+   Voor informatie over het optimaliseren van de afbeeldingen, zie [&#x200B; het Meten Video in Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
 
-1. [ voeg het kader ](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
+1. [&#x200B; voeg het kader &#x200B;](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
 1. Om de opstelling op **wijze van de Voorproef** te testen, speel de video om de vraag van Adobe Analytics te krijgen om teweeg te brengen.
 
 De volgende voorbeelden van Adobe Analytics-volggegevens zijn van toepassing op het bijhouden van mijlpaden met gebruik van trackverschuivingen van 4,8,16,20 en 24, en de volgende toewijzingen voor de CQ-variabelen:
@@ -217,7 +217,7 @@ De volgende voorbeelden van Adobe Analytics-volggegevens zijn van toepassing op 
 
 In dit voorbeeld wordt de component Video als volgt weergegeven op de frameworkpagina:
 
-![ video1 ](assets/video1.png)
+![&#x200B; video1 &#x200B;](assets/video1.png)
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ In dit voorbeeld wordt de component Video als volgt weergegeven op de frameworkp
 
 De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
-![ chlimage_1-128 ](assets/chlimage_1-128.png)
+![&#x200B; chlimage_1-128 &#x200B;](assets/chlimage_1-128.png)
 
 *dit is de **eerste vraag**&#x200B;die aan Adobe Analytics wordt gemaakt die de volgende waarden bevatten:*
 
@@ -233,7 +233,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 * *props2-4, samen met eVar2 en eVar3 die contentType (video) en segment (1 :O: 1-4) bevatten*
 * *event3 die aan eventdata.events.a.media.view in kaart werd gebracht.*
 
-![ chlimage_1-129 ](assets/chlimage_1-129.png)
+![&#x200B; chlimage_1-129 &#x200B;](assets/chlimage_1-129.png)
 
 *dit is de **derde vraag**&#x200B;die aan Adobe Analytics wordt gemaakt:*
 
@@ -248,7 +248,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 De methode Niet-verouderde mijlpalen is vergelijkbaar met de methode Mijlpalen, behalve dat mijlpalen worden gedefinieerd met percentages van de lengte van de sporen. De gemeenschappelijke waarden zijn als volgt:
 
 * Wanneer een videoplayback een mijlpaal overgaat, roept de pagina Adobe Analytics aan om de gebeurtenis te volgen.
-* De [ statische reeks variabelen van CQ ](#cqvars) die voor afbeelding met eigenschappen van Adobe Analytics worden bepaald.
+* De [&#x200B; statische reeks variabelen van CQ &#x200B;](#cqvars) die voor afbeelding met eigenschappen van Adobe Analytics worden bepaald.
 * Voor elke mijlpaal die u definieert, maakt de component een CQ-variabele die u kunt toewijzen aan een Adobe Analytics-eigenschap.
 
 De naam van deze CQ-variabelen gebruikt de volgende indeling:
@@ -274,9 +274,9 @@ eventdata.events.milestoneXX
 
 1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
-   Voor informatie over het optimaliseren van de afbeeldingen, zie [ het Meten Video in Adobe Analytics ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
+   Voor informatie over het optimaliseren van de afbeeldingen, zie [&#x200B; het Meten Video in Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL) gids.
 
-1. [ voeg het kader ](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
+1. [&#x200B; voeg het kader &#x200B;](/help/sites-administering/adobeanalytics.md) aan de pagina toe.
 1. Om de opstelling op **wijze van de Voorproef** te testen, speel de video om de vraag van Adobe Analytics te krijgen om teweeg te brengen.
 
 ## Legacy-mijlpalen {#legacy-milestones}
@@ -320,7 +320,7 @@ Deze methode is gelijkaardig aan de methode van Mijlpalen met het verschil dat d
 
    **vraag van de Steekproef** aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
-   ![ lmilestone1 ](assets/lmilestones1.png)
+   ![&#x200B; lmilestone1 &#x200B;](assets/lmilestones1.png)
 
    *de **pev3**&#x200B;variabele die in de vraag wordt verzonden bevat de volgende informatie:*
 
@@ -377,10 +377,10 @@ Wanneer het gebruiken van de **&#x200B; erfenisseconden** methode, worden de vra
 
    De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
-   ![ seconden ](assets/lseconds.png)
+   ![&#x200B; seconden &#x200B;](assets/lseconds.png)
 
-   *de vraag is gelijkaardig aan de vraag van de Mondiale Oudheid hierboven. Zie de informatie over pev3 die onder [ wordt verstrekt Integrerend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md).*
+   *de vraag is gelijkaardig aan de vraag van de Mondiale Oudheid hierboven. Zie de informatie over pev3 die onder [&#x200B; wordt verstrekt Integrerend met Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md).*
 
 **Verwijzingen die in dit leerprogramma worden gebruikt:**
 
-[ 0 ] [ https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL)
+[ 0 ] [&#x200B; https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=nl-NL)

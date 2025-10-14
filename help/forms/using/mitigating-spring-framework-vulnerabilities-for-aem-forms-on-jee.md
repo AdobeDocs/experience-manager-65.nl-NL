@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Dit document biedt richtlijnen voor het verhelpen van twee kritieke kwetsbaarheden in het lentekader die van invloed zijn op AEM Forms op JEE:
 
-- **[CVE-2024-38819 ](https://spring.io/security/cve-2024-38819)**: De kwetsbaarheid van de traversal van de weg in functionele Webkaders
-- **[CVE-2024-38820 ](https://spring.io/security/cve-2024-38820)**: De Gevallengevoelige Uitzondering van de Geval van DataBinder van het Kader van het Kader van het Leer Gevoelige
+- **[CVE-2024-38819 &#x200B;](https://spring.io/security/cve-2024-38819)**: De kwetsbaarheid van de traversal van de weg in functionele Webkaders
+- **[CVE-2024-38820 &#x200B;](https://spring.io/security/cve-2024-38820)**: De Gevallengevoelige Uitzondering van de Geval van DataBinder van het Kader van het Kader van het Leer Gevoelige
 
 ## Betrokken versies
 
@@ -34,9 +34,9 @@ Dit document biedt richtlijnen voor het verhelpen van twee kritieke kwetsbaarhed
 
 | AEM Forms-versie | Vereiste actie |
 |-------------------|-----------------|
-| 6.5.22.0 | 1. [ Download hotfix voor uw milieu ](/help/release-notes/aem-forms-hotfix.md). </br> 2. Om deze moeilijke situatie te installeren, volg de instructies om het Pak van de Dienst op een Vorm van AEM op JEE [&#128279;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) te installeren. |
-| 6.5.17.0 - 6.5.21.0 | [ pas handmatige matigingsstappen ](#manual-mitigation-steps) toe. |
-| 6.5 - 6.5.16.0 | 1. [ installeer het recentste de dienstpak ](/help/release-notes/release-notes.md)<br> 2. [ voert de aangewezen oplossing ](#version-specific-solutions) uit die op uw bijgewerkte versie wordt gebaseerd. |
+| 6.5.22.0 | 1. [&#x200B; Download hotfix voor uw milieu &#x200B;](/help/release-notes/aem-forms-hotfix.md). </br> 2. Om deze moeilijke situatie te installeren, volg de instructies om het Pak van de Dienst op een Vorm van AEM op JEE [&#128279;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md) te installeren. |
+| 6.5.17.0 - 6.5.21.0 | [&#x200B; pas handmatige matigingsstappen &#x200B;](#manual-mitigation-steps) toe. |
+| 6.5 - 6.5.16.0 | 1. [&#x200B; installeer het recentste de dienstpak &#x200B;](/help/release-notes/release-notes.md)<br> 2. [&#x200B; voert de aangewezen oplossing &#x200B;](#version-specific-solutions) uit die op uw bijgewerkte versie wordt gebaseerd. |
 
 > **Nota**: AEM Forms steunt officieel slechts de zes meest recente de dienstpakken. Gebruikers met een oudere versie dienen eerst een upgrade uit te voeren naar het nieuwste servicepakket en vervolgens de vereiste hotfix te installeren.
 
@@ -88,7 +88,7 @@ Bij het werken met een standalone plaatsing:
    - `spring-jcl-<version>.jar` → `spring-jcl-6.1.14.jar`
    - `spring-web-<version>.jar` → `spring-web-6.1.14.jar`
 
-   Om de nieuwere JAR dossiers te krijgen, download het voorjaar-6.1.14-jars.zip- dossier van [ de Distributie van de Software van Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/spring-6.1.14-jars.zip) en haal het dossier van het PIT om tot de bijgewerkte JAR dossiers van het Kader van de Lente toegang te hebben.
+   Om de nieuwere JAR dossiers te krijgen, download het voorjaar-6.1.14-jars.zip- dossier van [&#x200B; de Distributie van de Software van Adobe &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/spring-6.1.14-jars.zip) en haal het dossier van het PIT om tot de bijgewerkte JAR dossiers van het Kader van de Lente toegang te hebben.
 
    1. Werk de bestanden MANIFEST.MF bij in de volgende JAR-bestanden:
    - `geode-server-all-<version>.jar`

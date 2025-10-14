@@ -30,11 +30,11 @@ Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk
 >
 >Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Voor details, zie [ Vestiging AEM Mobile On-demand Services ](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
+>Voor details, zie [&#x200B; Vestiging AEM Mobile On-demand Services &#x200B;](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
 
 Om Mobiele Cloud Servicen op bestelling te vormen, klik de hoogste versnelling op de hoogste juiste hoek van de **Beheer de tegel van de Verbinding** van uw app dashboard.
 
-U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [ het Dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer details.
+U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [&#x200B; het Dashboard van de Toepassing van AEM Mobile &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer details.
 
 ### Koppeling naar cloudconfiguratie instellen {#setting-up-link-to-cloud-configuration}
 
@@ -42,34 +42,34 @@ U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [
 >
 >Zorg ervoor dat u een bestaande configuratie voor on-demand clients en cloud hebt.
 >
->Voor details, zie [ Vestiging AEM Mobile On-demand Services ](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
+>Voor details, zie [&#x200B; Vestiging AEM Mobile On-demand Services &#x200B;](/help/mobile/aem-mobile-setup.md) in de Administering sectie.
 
 In de volgende stappen wordt beschreven hoe u een koppeling naar de cloudconfiguratie instelt:
 
 1. Van **Mobiel**, kies **Apps** en toen uw Mobiele On-Demand app van de catalogus.
 1. Klik het tandwielpictogram op **leiden de tegel van de Verbinding**.
 
-   ![ chlimage_1-65 ](assets/chlimage_1-65.png)
+   ![&#x200B; chlimage_1-65 &#x200B;](assets/chlimage_1-65.png)
 
 1. Ga reeds bestaande configuratie in of creeer door de **Titel van de Configuratie** in te gaan, **Identiteitskaart van het Apparaat**, en **Symbolisch van het Apparaat**.
 
-   ![ chlimage_1-66 ](assets/chlimage_1-66.png)
+   ![&#x200B; chlimage_1-66 &#x200B;](assets/chlimage_1-66.png)
 
 1. Zodra uw **Identiteitskaart van het Apparaat** en **Symbolisch van het Apparaat** worden geverifieerd, kies uw project On-Demand van de lijst.
 
    Klik **voorleggen**.
 
-   ![ chlimage_1-67 ](assets/chlimage_1-67.png)
+   ![&#x200B; chlimage_1-67 &#x200B;](assets/chlimage_1-67.png)
 
    De **beheert de tegel van de Verbinding** toont uw Configuratie van de Wolk.
 
-   ![ chlimage_1-68 ](assets/chlimage_1-68.png)
+   ![&#x200B; chlimage_1-68 &#x200B;](assets/chlimage_1-68.png)
 
    >[!CAUTION]
    >
    >Als u probeert om te veranderen welk project deze App met wordt geassocieerd, terwijl het schakelen van project in het dashboard, zult u een waarschuwing voor de kwesties van de inhoudintegriteit zoals aangetoond in het hieronder cijfer ontvangen:
 
-   ![ chlimage_1-69 ](assets/chlimage_1-69.png)
+   ![&#x200B; chlimage_1-69 &#x200B;](assets/chlimage_1-69.png)
 
 ### De volgende stappen {#the-next-steps}
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 De zoekfunctie werkt met verschillende andere functies, zoals forums, om inhoud te kunnen zoeken.
 
-Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [ Onderzoek ](#search) en [ Resultaten van het Onderzoek ](#search-results).
+Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [&#x200B; Onderzoek &#x200B;](#search) en [&#x200B; Resultaten van het Onderzoek &#x200B;](#search-results).
 
 De pagina die de component `Search Results` bevat, ondersteunt zowel het zoeken als het weergeven van resultaten.
 
@@ -38,17 +38,17 @@ Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search` -component.
 
-![ toe:voegen-onderzoek ](assets/add-search.png)
+![&#x200B; toe:voegen-onderzoek &#x200B;](assets/add-search.png)
 
 ### De toegevoegde zoekopdracht configureren {#configure-the-added-search}
 
 Selecteer de geplaatste component `Search` die u wilt openen en selecteer het pictogram `Configure` waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ confgirue ](assets/configure-new.png)
+![&#x200B; confgirue &#x200B;](assets/configure-new.png)
 
 Geef onder het tabblad **[!UICONTROL Search Settings]** op hoe wordt gezocht in welke paden een query wordt ingevoerd door een bezoeker.
 
-![ onderzoek-montages ](assets/search-settings.png)
+![&#x200B; onderzoek-montages &#x200B;](assets/search-settings.png)
 
 * **[!UICONTROL Search Paths]**
 Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
@@ -74,17 +74,17 @@ Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search Result` -component:
 
-![ onderzoek-resultaat ](assets/search-result1.png)
+![&#x200B; onderzoek-resultaat &#x200B;](assets/search-result1.png)
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
 Selecteer de geplaatste component `Search Results` die u wilt openen en selecteer het pictogram `Configure` waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Onder het tabblad **[!UICONTROL Search Result Settings]** kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
 
-![ onderzoek-resultaat-montages ](assets/search-result-settings.png)
+![&#x200B; onderzoek-resultaat-montages &#x200B;](assets/search-result-settings.png)
 
 * **[!UICONTROL Search Results Per Page]**
 
@@ -96,4 +96,4 @@ Onder het tabblad **[!UICONTROL Search Result Settings]** kunt u opgeven welke p
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ Hoofdzaak van het Onderzoek ](search-implementation.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; Hoofdzaak van het Onderzoek &#x200B;](search-implementation.md) pagina voor ontwikkelaars worden gevonden.

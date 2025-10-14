@@ -25,7 +25,7 @@ Overweeg de volgende gebruiksgevallen waarin u de standaard Help-URL wilt wijzig
 * Voor het bieden van gelokaliseerde hulp in een taal van uw keus.
 * Voor het aanbieden van aangepaste Help-inhoud voor uw aangepaste werkruimte.
 
-Om URL van de online documentatie bij te werken, volg de [ Algemene Stappen van aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md) en toen de volgende stappen.
+Om URL van de online documentatie bij te werken, volg de [&#x200B; Algemene Stappen van aanpassing &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md) en toen de volgende stappen.
 
 1. Kopieer het bestand `userinfo.html` van `/libs/ws/js/runtime/templates` naar `/apps/ws/js/runtime/templates` .
 1. Wijzigen:

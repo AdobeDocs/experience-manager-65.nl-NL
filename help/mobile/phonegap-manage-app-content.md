@@ -20,7 +20,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Het beheren van app inhoud vereist een collectieve inspanning van [ ontwikkelaars ](#developer), inhoud [ auteurs ](#author), en [ beheerders ](#administrator). Auteurs bewerken pagina&#39;s op basis van sjablonen en componenten die door ontwikkelaars van apps worden gegenereerd.
+Het beheren van app inhoud vereist een collectieve inspanning van [&#x200B; ontwikkelaars &#x200B;](#developer), inhoud [&#x200B; auteurs &#x200B;](#author), en [&#x200B; beheerders &#x200B;](#administrator). Auteurs bewerken pagina&#39;s op basis van sjablonen en componenten die door ontwikkelaars van apps worden gegenereerd.
 
 Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 
@@ -28,7 +28,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 >
 >**Vereiste**:
 >
->In [ het Opstellen en het Onderhouden ](/help/sites-deploying/deploy.md), werden de ontwikkelaars vertrouwd met systeemcomponenten en malplaatjes in Adobe Experience Manager (AEM).
+>In [&#x200B; het Opstellen en het Onderhouden &#x200B;](/help/sites-deploying/deploy.md), werden de ontwikkelaars vertrouwd met systeemcomponenten en malplaatjes in Adobe Experience Manager (AEM).
 
 ## De pagina-inhoudtegel beheren {#the-manage-page-content-tile}
 
@@ -36,7 +36,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 >
 >Als u geen out-of-the-box toepassingsmalplaatje gebruikt, om nieuwe toepassingsinhoud toe te laten om OTA worden gepubliceerd, moet u een manager van de Synchronisatie van de Inhoud vormen.
 >
->Zie [ Mobiel met de Synchronisatie van de Inhoud ](/help/mobile/phonegap-contentsync.md) in de sectie van de Ontwikkelaar voor meer details.
+>Zie [&#x200B; Mobiel met de Synchronisatie van de Inhoud &#x200B;](/help/mobile/phonegap-contentsync.md) in de sectie van de Ontwikkelaar voor meer details.
 
 Hier kunt u inhoud maken, bewerken en verwijderen in AEM Mobile, net als in AEM Sites.
 
@@ -44,19 +44,19 @@ De **beheert de tegel van de Inhoud van de Pagina** toont het aantal pagina&#39;
 
 Zodra de inhoud is bijgewerkt, kunnen de beheerders een ladload van de inhoudsupdate over-de-Luchtvaart (OTA) aan klanten door de **publiceren beheert de tegel van de Pakketten van de Inhoud.**
 
-![ chlimage_1-161 ](assets/chlimage_1-161.png)
+![&#x200B; chlimage_1-161 &#x200B;](assets/chlimage_1-161.png)
 
 Selecteer een van de weergegeven inhoudspakketten om inhoud te maken of te bewerken, zoals het maken, bewerken of verwijderen van pagina&#39;s, het wijzigen van de navigatie en de paginavolgorde, het maken of bijwerken van inhoud zoals kopiëren (tekst) en media.
 
 Nota *alles is inhoud*, betekenend toepassingsstijlen, exemplaar (tekst), media, pagina&#39;s, navigatie en, richten van inhoud kan allen worden uitgegeven en worden bijgewerkt OTA, zonder een reis aan een toepassingsopslag.
 
-Om de inhoud van AEM Mobile uit te geven, *AEM auteurs *zal een stevig inzicht in AEM inhoud het uitgeven interface nodig hebben: [ Authoring pagina&#39;s in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Om de inhoud van AEM Mobile uit te geven, *AEM auteurs *zal een stevig inzicht in AEM inhoud het uitgeven interface nodig hebben: [&#x200B; Authoring pagina&#39;s in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## De tegel Inhoud-pakketten beheren {#the-manage-content-packages-tile}
 
 Hier, *AEM Beheerders* kunnen hun apps snel en gemakkelijk bijwerken om het aansprekende ervaringen en bijgewerkte inhoud te leveren om merkbetrokkenheid te drijven en bedrijfsdoelstellingen te ontmoeten allen zonder de behoefte aan een ontwikkelaar of een App store opnieuw voorlegging.
 
-![ chlimage_1-162 ](assets/chlimage_1-162.png)
+![&#x200B; chlimage_1-162 &#x200B;](assets/chlimage_1-162.png)
 
 Zodra *AEM de Auteurs* inhoud door Manage Content Tile hebben toegevoegd of gewijzigd, *AEM de Beheerders* kunnen die veranderingen uit aan klanten met een update van de Pakketten van de Inhoud duwen.
 
@@ -66,11 +66,11 @@ De actie van het Pakket van de Inhoud staat de *AEM Auteur* toe om paginacontent
 
 Selecteer een inhoudspakket uit de tegel, in dit voorbeeld het Engelse pakket. Bericht dat een de dialoogdoos van de inhoudsupdate van de relevante *Configuratie van de Synchronisatie van de Inhoud* een lijst maakt. Als de toepassingsinhoud sinds een vorige update is gewijzigd, zal de status *in afwachting van* tonen, zoals hieronder getoond.
 
-![ chlimage_1-163 ](assets/chlimage_1-163.png)
+![&#x200B; chlimage_1-163 &#x200B;](assets/chlimage_1-163.png)
 
 Daarna, selecteer de **actie van het Stadium** bij het hoogste recht aan het creëren van de inhoudsupdate. Voeg de juiste updategegevens toe en druk op Gereed.
 
-![ chlimage_1-164 ](assets/chlimage_1-164.png)
+![&#x200B; chlimage_1-164 &#x200B;](assets/chlimage_1-164.png)
 
 De *manager van de Synchronisatie van de Inhoud* leidt dan tot de vereiste pakketten door een delta (een pakket van *te vormen slechts* wat is veranderd). Zodra dit pakket met update-inhoud is voltooid, wordt het gefaseerd bijgewerkt, zoals hieronder wordt weergegeven.
 
@@ -80,13 +80,13 @@ Door een update van de inhoud te organiseren, kunnen verschillende updates worde
 >
 >De gefaseerde inhoud kan worden geverifieerd met de app AEM verifiëren voordat deze wordt gepubliceerd.
 >
->Zie [ Mobiele QuickStart voor AEM verifiëren ](/help/mobile/phonegap-mobile-quickstart.md) voor meer details over AEM verifieer app.
+>Zie [&#x200B; Mobiele QuickStart voor AEM verifiëren &#x200B;](/help/mobile/phonegap-mobile-quickstart.md) voor meer details over AEM verifieer app.
 
-![ chlimage_1-165 ](assets/chlimage_1-165.png)
+![&#x200B; chlimage_1-165 &#x200B;](assets/chlimage_1-165.png)
 
 Wanneer klaar om nieuwe inhoud aan uw toepassingsgebruikers met de Synchronisatie van de Inhoud OTA te leveren, uitgezochte **Publish** zoals hieronder getoond.
 
-![ chlimage_1-166 ](assets/chlimage_1-166.png)
+![&#x200B; chlimage_1-166 &#x200B;](assets/chlimage_1-166.png)
 
 ### De volgende stappen {#the-next-steps}
 

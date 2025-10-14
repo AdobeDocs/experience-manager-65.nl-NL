@@ -22,13 +22,13 @@ AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle c
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
-1. Open [ Distributie van de Software ](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
+1. Open [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Selecteer **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In de sectie **[!UICONTROL Filters]** :
    1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]** .
    2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
 1. Selecteer de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en selecteer **[!UICONTROL Download]** .
-1. Open [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Open [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=nl-NL) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]** .
 
 1. Als u het broncodearchief wilt downloaden, opent u `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in uw browser.
@@ -36,7 +36,7 @@ Het bronpakket wordt gedownload op uw apparaat.
 
 In de volgende afbeelding wordt de geëxtraheerde inhoud van de `adobe-lc-mobileworkspace-src-<version>.zip` weergegeven.
 
-![ mws-content ](assets/mws-content.png)
+![&#x200B; mws-content &#x200B;](assets/mws-content.png)
 
 In de volgende tabel wordt de inhoud van de map `adobe-lc-mobileworkspace-src-[version]/ios` beschreven.
 
@@ -65,7 +65,7 @@ In de volgende tabel wordt de inhoud van de map `adobe-lc-mobileworkspace-src-[v
  </tbody>
 </table>
 
-Voor gedetailleerde informatie over het Ondertekenen van de Code en het toevoegen van apparaten aan het Portaal van de Levering van iOS, zie [ de Ondertekenende Opstelling van de Code van iOS, Proces, en het Oplossen van problemen ](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
+Voor gedetailleerde informatie over het Ondertekenen van de Code en het toevoegen van apparaten aan het Portaal van de Levering van iOS, zie [&#x200B; de Ondertekenende Opstelling van de Code van iOS, Proces, en het Oplossen van problemen &#x200B;](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
 
 ## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
@@ -80,11 +80,11 @@ Voor gedetailleerde informatie over het Ondertekenen van de Code en het toevoege
 1. Klik **AEM Forms**, onder **DOELEN**, uitgezochte **AEM Forms**. Selecteer het **Bouw Montages** lusje, bepaal de plaats van de **Code die de sectie van de Entitlement** ondertekenen, en in zuivert en maakt gebieden van de Versie één van het volgende:
 
    * Laat de velden ongespecificeerd om een standaard Mobile Workspace-app te maken
-   * Specificeer de gebieden aan zoals verklaard in [ Bouwend een Veilige app van AEM Forms voor iOS ](/help/forms/using/building-secure-mobile-workspace-app.md) om een veilige app van AEM Forms te bouwen.
+   * Specificeer de gebieden aan zoals verklaard in [&#x200B; Bouwend een Veilige app van AEM Forms voor iOS &#x200B;](/help/forms/using/building-secure-mobile-workspace-app.md) om een veilige app van AEM Forms te bouwen.
 
 1. In het **bouwt Montages** lusje, klik **allen** en klik dan **Gecombineerd**.
 1. Van de **lijst van Montages**, breid **Code die** ondertekenen uit.
-1. Voor **Code het Ondertekenen Identiteit**, selecteer de aangewezen handtekening. Voor gedetailleerde informatie over, creërend nieuwe handtekeningen, zie [ Creërend en Downloadend de Profielen van de Levering van de Ontwikkeling ](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
+1. Voor **Code het Ondertekenen Identiteit**, selecteer de aangewezen handtekening. Voor gedetailleerde informatie over, creërend nieuwe handtekeningen, zie [&#x200B; Creërend en Downloadend de Profielen van de Levering van de Ontwikkeling &#x200B;](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
 1. Zorg ervoor dat de zelfde handtekening voor **wordt geselecteerd zuivert**, **Versie**, en **om het even welke iOS SDK**.
 1. Vervang de volgende code in het `AEM Forms-info.plist` -bestand:
 
@@ -130,7 +130,7 @@ Voor gedetailleerde informatie over het Ondertekenen van de Code en het toevoege
 1. Sluit een iPad met provisioning aan op een Mac-computer.
 1. Selecteer het provisioned apparaat voor het **AEM Forms** project.
 
-   ![ ipad ](assets/ipad.png)
+   ![&#x200B; ipad &#x200B;](assets/ipad.png)
 
    Er is een apparaat met provisioning, iPad Air 2, geselecteerd.
 
@@ -139,12 +139,12 @@ Voor gedetailleerde informatie over het Ondertekenen van de Code en het toevoege
 
 ## Het installatieprogramma voor de AEM Forms-app maken {#build-the-installer-for-the-mobile-workspace-app}
 
-U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Voor meer informatie over het dossier van de bezitslijst, zie [ Ongeveer de Dossiers van de Lijst van het Bezit van de Informatie ](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
+U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Voor meer informatie over het dossier van de bezitslijst, zie [&#x200B; Ongeveer de Dossiers van de Lijst van het Bezit van de Informatie &#x200B;](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
-1. Sluit een iPad met provisioning aan op een Mac-computer. Voor gedetailleerde informatie over levering een iPad, zie [ Creërend en het Downloaden van de Profielen van de Levering van de Ontwikkeling ](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
+1. Sluit een iPad met provisioning aan op een Mac-computer. Voor gedetailleerde informatie over levering een iPad, zie [&#x200B; Creërend en het Downloaden van de Profielen van de Levering van de Ontwikkeling &#x200B;](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. Selecteer het provisioned apparaat voor het **AEM Forms** project.
 
-   ![ iPad-1 ](assets/ipad-1.png)
+   ![&#x200B; iPad-1 &#x200B;](assets/ipad-1.png)
 
    Er is een apparaat met provisioning, iPad Air 2, geselecteerd.
 

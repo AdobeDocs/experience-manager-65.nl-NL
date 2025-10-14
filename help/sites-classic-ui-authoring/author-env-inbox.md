@@ -24,7 +24,7 @@ U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems
 U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het type meldingen:
 
 * In de volgende sectie wordt een postvak weergegeven waarin de meldingen worden weergegeven die u ontvangt als gevolg van abonnementen.
-* Een gespecialiseerde inbox voor werkschemapunten wordt beschreven in [ Deelnemend in het ](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document van Werkschema&#39;s.
+* Een gespecialiseerde inbox voor werkschemapunten wordt beschreven in [&#x200B; Deelnemend in het &#x200B;](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document van Werkschema&#39;s.
 
 ## Je meldingen bekijken {#viewing-your-notifications}
 
@@ -32,7 +32,7 @@ Om uw meldingen weer te geven:
 
 1. Open het bericht in doos: in de **&#x200B;**&#x200B;console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
-   ![ screen_shot_2012-02-08at105226am ](assets/screen_shot_2012-02-08at105226am.png)
+   ![&#x200B; screen_shot_2012-02-08at105226am &#x200B;](assets/screen_shot_2012-02-08at105226am.png)
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ Om uw meldingen weer te geven:
    * [Abonneren op meldingen](#subscribing-to-notifications)
    * [Je meldingen verwerken](#processing-your-notifications)
 
-   ![ chlimage_1-4 ](assets/chlimage_1-4.jpeg)
+   ![&#x200B; chlimage_1-4 &#x200B;](assets/chlimage_1-4.jpeg)
 
 ## Abonneren op meldingen {#subscribing-to-notifications}
 
@@ -54,7 +54,7 @@ Abonneren op meldingen:
 
 1. Open het bericht in doos: in de **&#x200B;**&#x200B;console Websites, klik de gebruikersknoop in de hoogste juiste hoek en selecteer **Inbox van het Bericht**.
 
-   ![ screen_shot_2012-02-08at105226am-1 ](assets/screen_shot_2012-02-08at105226am-1.png)
+   ![&#x200B; screen_shot_2012-02-08at105226am-1 &#x200B;](assets/screen_shot_2012-02-08at105226am-1.png)
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Abonneren op meldingen:
 
 1. Klik **vormen...** in de upper-left hoek om de configuratiedialoog te openen.
 
-   ![ screen_shot_2012-02-08at111056am ](assets/screen_shot_2012-02-08at111056am.png)
+   ![&#x200B; screen_shot_2012-02-08at111056am &#x200B;](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Selecteer het berichtkanaal:
 
@@ -74,7 +74,7 @@ Abonneren op meldingen:
 
    >[!NOTE]
    >
-   >Er moeten enkele instellingen zijn geconfigureerd om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie [ Vormend E-mailBericht ](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te vormen.
+   >Er moeten enkele instellingen zijn geconfigureerd om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie [&#x200B; Vormend E-mailBericht &#x200B;](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te vormen.
 
 1. Selecteer de paginahandelingen waarvan u een melding wilt ontvangen:
 
@@ -104,10 +104,10 @@ Om slechts voor acties op de pagina op de hoogte te worden gebracht die door de 
 
 ## Je meldingen verwerken {#processing-your-notifications}
 
-Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [ uw berichten ](#viewing-your-notifications) bekijken, dan de vereiste berichten selecteren aan:
+Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM Postvak IN, wordt uw postvak IN gevuld met meldingen. U kunt [&#x200B; uw berichten &#x200B;](#viewing-your-notifications) bekijken, dan de vereiste berichten selecteren aan:
 
 * Accepteer het door **te klikken goedkeurt**: de waarde in **Gelezen** kolom wordt geplaatst aan **waar**.
 
 * Elimineer het door **Schrapping** te klikken.
 
-![ chlimage_1-5 ](assets/chlimage_1-5.jpeg)
+![&#x200B; chlimage_1-5 &#x200B;](assets/chlimage_1-5.jpeg)

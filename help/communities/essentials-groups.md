@@ -20,7 +20,7 @@ ht-degree: 0%
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Vanaf de Gemeenschappen [ eigenschappak 1 ](deploy-communities.md#latestfeaturepack), is het mogelijk voor groepen worden genesteld binnen andere groepen.
+Vanaf de Gemeenschappen [&#x200B; eigenschappak 1 &#x200B;](deploy-communities.md#latestfeaturepack), is het mogelijk voor groepen worden genesteld binnen andere groepen.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -78,23 +78,23 @@ Vanaf de Gemeenschappen [ eigenschappak 1 ](deploy-communities.md#latestfeaturep
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ Communautaire Groep API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [&#x200B; Communautaire Groep API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [ Eindpunten van de Groep van de Gemeenschap ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [&#x200B; Eindpunten van de Groep van de Gemeenschap &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Functie Groepen {#groups-function}
 
-Een communautaire plaatsstructuur die de functie van a [ Groepen ](functions.md#groups-function) omvat steunt de verwezenlijking van nieuw `community groups` van publiceren en auteursmilieu&#39;s. De gemaakte community-groep bevat een `community groups member list` -component waarin de leden van de groep worden vermeld.
+Een communautaire plaatsstructuur die de functie van a [&#x200B; Groepen &#x200B;](functions.md#groups-function) omvat steunt de verwezenlijking van nieuw `community groups` van publiceren en auteursmilieu&#39;s. De gemaakte community-groep bevat een `community groups member list` -component waarin de leden van de groep worden vermeld.
 
-Één of meerdere [ malplaatjes van de communautaire groep ](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd. Dit is waar wanneer de functie aan a [ malplaatje van de communautaire plaats ](sites.md) of binnen een malplaatje van de communautaire groep wordt toegevoegd.
+Één of meerdere [&#x200B; malplaatjes van de communautaire groep &#x200B;](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd. Dit is waar wanneer de functie aan a [&#x200B; malplaatje van de communautaire plaats &#x200B;](sites.md) of binnen een malplaatje van de communautaire groep wordt toegevoegd.
 
-Het opnemen van meerdere groepssjablonen resulteert in een keuze. Dat wil zeggen, de keuze van het ontwerp dat wordt voorgesteld aan de geautoriseerde gebruiker op het moment dat een community-groep wordt gemaakt voor de community-site. Zie de sectie op [ communautaire groepen ](creating-groups.md) voor auteurs.
+Het opnemen van meerdere groepssjablonen resulteert in een keuze. Dat wil zeggen, de keuze van het ontwerp dat wordt voorgesteld aan de geautoriseerde gebruiker op het moment dat een community-groep wordt gemaakt voor de community-site. Zie de sectie op [&#x200B; communautaire groepen &#x200B;](creating-groups.md) voor auteurs.
 
 ### Geneste groepen {#nested-groups}
 
-Vanaf de Gemeenschappen [ FP1 ](deploy-communities.md#latestfeaturepack), is het mogelijk voor een functie van Groepen om binnen een groepsmalplaatje worden omvat, waarbij het toestaan voor genestelde groepen (subCommunities).
+Vanaf de Gemeenschappen [&#x200B; FP1 &#x200B;](deploy-communities.md#latestfeaturepack), is het mogelijk voor een functie van Groepen om binnen een groepsmalplaatje worden omvat, waarbij het toestaan voor genestelde groepen (subCommunities).
 
 Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omvat, is het mogelijk:
 

@@ -39,11 +39,11 @@ De standaardinstellingen voor de cache van AEM Forms zijn mogelijk niet geschikt
 * **grootte van het Geheime voorgeheugen** (in termen van aantal vormen): Zoals vereist
 * **Max de Grootte van Objecten**: Zoals vereist
 
-![ Mobiele Configuraties van Forms ](assets/snap.png)
+![&#x200B; Mobiele Configuraties van Forms &#x200B;](assets/snap.png)
 
 >[!NOTE]
 >
->Als u AEM Dispatcher gebruikt om adaptieve formulieren in cache te plaatsen, wordt ook het adaptieve formulier in cache geplaatst dat formulieren met voorgevulde gegevens bevat. Als dergelijke formulieren worden aangeboden in het cachegeheugen van AEM Dispatcher, kan dit ertoe leiden dat voorgevulde of opgevulde gegevens aan de gebruikers worden doorgegeven. Gebruik dus AEM Dispatcher om adaptieve formulieren die geen voorgevulde gegevens gebruiken in cache op te slaan. Bovendien maakt een Dispatcher-cache cachefragmenten in de cache niet automatisch ongeldig. Gebruik het dus niet om formulierfragmenten in de cache op te slaan. Voor dergelijke vormen en fragmenten, gebruik [ Adaptief vormengeheime voorgeheugen ](../../forms/using/configure-adaptive-forms-cache.md).
+>Als u AEM Dispatcher gebruikt om adaptieve formulieren in cache te plaatsen, wordt ook het adaptieve formulier in cache geplaatst dat formulieren met voorgevulde gegevens bevat. Als dergelijke formulieren worden aangeboden in het cachegeheugen van AEM Dispatcher, kan dit ertoe leiden dat voorgevulde of opgevulde gegevens aan de gebruikers worden doorgegeven. Gebruik dus AEM Dispatcher om adaptieve formulieren die geen voorgevulde gegevens gebruiken in cache op te slaan. Bovendien maakt een Dispatcher-cache cachefragmenten in de cache niet automatisch ongeldig. Gebruik het dus niet om formulierfragmenten in de cache op te slaan. Voor dergelijke vormen en fragmenten, gebruik [&#x200B; Adaptief vormengeheime voorgeheugen &#x200B;](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## JVM-parameters {#jvm-parameters}
 

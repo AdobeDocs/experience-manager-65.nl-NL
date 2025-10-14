@@ -38,18 +38,18 @@ Als er meerdere handtekeningvelden in een PDF-document staan, is het raadzaam de
 
 U kunt deze taken uitvoeren met de service Handtekening:
 
-* Digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document. (Zie [ Toevoegend de Gebieden van de Handtekening ](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Haal de namen van handtekeningvelden op in een PDF-document. (Zie [ het Terugwinnen van de Namen van het Gebied van de Handtekening ](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
-* Handtekeningvelden wijzigen. (Zie [ Wijzend de Gebieden van de Handtekening ](digitally-signing-certifying-documents.md#modifying-signature-fields).)
-* PDF-documenten digitaal ondertekenen. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
-* PDF-documenten certificeren. (Zie [ Certificerend de Documenten van PDF ](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Digitale handtekeningen valideren in een PDF-document. (Zie [ Verifying Digital Signatures ](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Alle digitale handtekeningen in een PDF-document valideren. (Zie [ Verifying Multiple Digital Signatures ](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Een digitale handtekening verwijderen uit een handtekeningveld. (Zie [ het Verwijderen van Digitale Handtekeningen ](digitally-signing-certifying-documents.md#removing-digital-signatures).)
+* Digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document. (Zie [&#x200B; Toevoegend de Gebieden van de Handtekening &#x200B;](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* Haal de namen van handtekeningvelden op in een PDF-document. (Zie [&#x200B; het Terugwinnen van de Namen van het Gebied van de Handtekening &#x200B;](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Handtekeningvelden wijzigen. (Zie [&#x200B; Wijzend de Gebieden van de Handtekening &#x200B;](digitally-signing-certifying-documents.md#modifying-signature-fields).)
+* PDF-documenten digitaal ondertekenen. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* PDF-documenten certificeren. (Zie [&#x200B; Certificerend de Documenten van PDF &#x200B;](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+* Digitale handtekeningen valideren in een PDF-document. (Zie [&#x200B; Verifying Digital Signatures &#x200B;](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Alle digitale handtekeningen in een PDF-document valideren. (Zie [&#x200B; Verifying Multiple Digital Signatures &#x200B;](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Een digitale handtekening verwijderen uit een handtekeningveld. (Zie [&#x200B; het Verwijderen van Digitale Handtekeningen &#x200B;](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Handtekeningvelden toevoegen {#adding-signature-fields}
 
@@ -59,7 +59,7 @@ U kunt een handtekeningveld programmatisch toevoegen met de Java API of de API v
 
 >[!NOTE]
 >
->Bij sommige documenttypen voor PDF kunt u geen handtekeningveld programmatisch toevoegen. Voor meer informatie over de dienst van de Handtekening en het toevoegen van handtekeningsgebieden, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Bij sommige documenttypen voor PDF kunt u geen handtekeningveld programmatisch toevoegen. Voor meer informatie over de dienst van de Handtekening en het toevoegen van handtekeningsgebieden, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -219,7 +219,7 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63)
+>Voor meer informatie over de dienst van de Handtekening, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -242,7 +242,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 
@@ -359,7 +359,7 @@ In deze sectie wordt uitgelegd hoe u een handtekeningveld kunt wijzigen door de 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening en het wijzigen van handtekeningsgebieden, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening en het wijzigen van handtekeningsgebieden, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -384,7 +384,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Including de bibliotheekdossiers van Java van de LiveCycle ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Including de bibliotheekdossiers van Java van de LiveCycle &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 
@@ -401,9 +401,9 @@ Als u een handtekeningveld wilt wijzigen, wijst u waarden toe aan het bijbehoren
 U kunt de volgende zaadwaardewoordenboekwaarden instellen:
 
 * **Controle van de Herziening**: Specificeert of de herroepingscontrole wordt uitgevoerd wanneer een handtekening op het handtekeningsgebied wordt toegepast.
-* **opties van het Certificaat**: Wijst waarden aan het woordenboek van de certificaatzaadwaarde toe. Voordat u certificaatopties opgeeft, is het raadzaam bekend te raken met een certificaatzaadwaardewoordenboek. (Zie [ Verwijzing van de PDF ](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **opties van het Certificaat**: Wijst waarden aan het woordenboek van de certificaatzaadwaarde toe. Voordat u certificaatopties opgeeft, is het raadzaam bekend te raken met een certificaatzaadwaardewoordenboek. (Zie [&#x200B; Verwijzing van de PDF &#x200B;](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
 * **de opties van de Samenvatting**: Wijst samenvattingsalgoritmen toe die voor het ondertekenen worden gebruikt. Geldige waarden zijn SHA1, SHA256, SHA384, SHA512 en RIPEMD160.
-* **Filter**: Specificeert de filter die met het handtekeningsgebied wordt gebruikt. U kunt bijvoorbeeld het filter Adobe.PPKLite gebruiken. (Zie [ Verwijzing van de PDF ](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Filter**: Specificeert de filter die met het handtekeningsgebied wordt gebruikt. U kunt bijvoorbeeld het filter Adobe.PPKLite gebruiken. (Zie [&#x200B; Verwijzing van de PDF &#x200B;](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
 * **de opties van de Vlag**: Specificeert de vlagwaarden die met dit handtekeningsgebied worden geassocieerd. De waarde 1 houdt in dat een ondertekenaar alleen de opgegeven waarden voor het item moet gebruiken. De waarde 0 houdt in dat andere waarden zijn toegestaan. Hier zijn de posities van het Beetje:
 
    * **1 (Filter):** De handtekeningsmanager die moet worden gebruikt om het handtekeningsgebied te ondertekenen
@@ -466,7 +466,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
 
    >[!NOTE]
    >
-   >Zie de klasseverwijzing van `PDFSeedValueOptionSpec` voor informatie over alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+   >Zie de klasseverwijzing van `PDFSeedValueOptionSpec` voor informatie over alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 1. Het handtekeningveld wijzigen
 
@@ -528,7 +528,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Zie de klasseverwijzing van `PDFSeedValueOptionSpec` voor informatie over alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+   >Zie de klasseverwijzing van `PDFSeedValueOptionSpec` voor informatie over alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 1. Het handtekeningveld wijzigen
 
@@ -561,7 +561,7 @@ De documenten van PDF worden ondertekend door middel van openbare-sleuteltechnol
 
 >[!NOTE]
 >
->Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [ het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken ](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [&#x200B; het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken &#x200B;](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 U kunt PDF-documenten programmatisch digitaal ondertekenen. Bij het digitaal ondertekenen van een PDF-document moet u verwijzen naar een beveiligingsreferentie die in AEM Forms bestaat. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
@@ -575,15 +575,15 @@ Voor informatie over de behandeling van de veiligheidsreferentie, zie *het Insta
 
 >[!NOTE]
 >
->Er zijn verschillen tussen ondertekenings- en certificeringsdocumenten. (Zie [ Certificerend de Documenten van PDF ](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+>Er zijn verschillen tussen ondertekenings- en certificeringsdocumenten. (Zie [&#x200B; Certificerend de Documenten van PDF &#x200B;](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 >[!NOTE]
 >
->Niet alle PDF-documenten ondersteunen ondertekening. Voor meer informatie over de dienst van de Handtekening en digitaal het ondertekenen van documenten, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Niet alle PDF-documenten ondersteunen ondertekening. Voor meer informatie over de dienst van de Handtekening en digitaal het ondertekenen van documenten, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->De handtekeningservice ondersteunt geen XDP-bestanden met ingesloten PDF-gegevens als invoer voor een bewerking, zoals certificering van een document. Deze actie leidt ertoe dat de handtekeningservice een `PDFOperationException` genereert. Om dit probleem op te lossen, zet het XDP-bestand om in een PDF-bestand met behulp van de service Hulpprogramma&#39;s voor PDF en geeft u het geconverteerde PDF-bestand vervolgens door aan een handtekeningservice-bewerking. (Zie [ Werkend met Hulpmiddelen van de PDF ](/help/forms/developing/pdf-utilities.md#working-with-pdf-utilities).)
+>De handtekeningservice ondersteunt geen XDP-bestanden met ingesloten PDF-gegevens als invoer voor een bewerking, zoals certificering van een document. Deze actie leidt ertoe dat de handtekeningservice een `PDFOperationException` genereert. Om dit probleem op te lossen, zet het XDP-bestand om in een PDF-bestand met behulp van de service Hulpprogramma&#39;s voor PDF en geeft u het geconverteerde PDF-bestand vervolgens door aan een handtekeningservice-bewerking. (Zie [&#x200B; Werkend met Hulpmiddelen van de PDF &#x200B;](/help/forms/developing/pdf-utilities.md#working-with-pdf-utilities).)
 
 **nCipher nShield HSM credential**
 
@@ -661,7 +661,7 @@ U kunt ook opgeven of een intrekkingscontrole moet worden uitgevoerd die bepaalt
 
 Als u de intrekkingscontrole op een certificaat wilt uitvoeren, kunt u een URL naar een server met een certificaatintrekkingslijst (CRL) opgeven met behulp van een `CRLOptionSpec` -object. Als u echter een intrekkingscontrole wilt uitvoeren en u geen URL opgeeft naar een CRL-server, verkrijgt de ondertekeningsservice de URL van het certificaat.
 
-In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Doorgaans wordt de intrekkingscontrole sneller uitgevoerd wanneer een OCSP-server wordt gebruikt in tegenstelling tot een CRL-server. (Zie &quot;Online Protocol van de Status van het Certificaat&quot;in [ https://tools.ietf.org/html/rfc2560 ](https://tools.ietf.org/html/rfc2560).)
+In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Doorgaans wordt de intrekkingscontrole sneller uitgevoerd wanneer een OCSP-server wordt gebruikt in tegenstelling tot een CRL-server. (Zie &quot;Online Protocol van de Status van het Certificaat&quot;in [&#x200B; https://tools.ietf.org/html/rfc2560 &#x200B;](https://tools.ietf.org/html/rfc2560).)
 
 U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Ondertekening gebruikend de Toepassingen en de Diensten van de Adobe gebruikt. Bijvoorbeeld, als de server OCSP eerst in de Toepassingen en de Diensten van de Adobe wordt geplaatst, dan wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd. (Zie &quot;Certificaten en gegevens beheren met Betrouwbaarheidsopslag&quot; in de Help van AAC).
 
@@ -731,7 +731,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
    * Een `java.lang.Boolean` -object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar.
    * Een `OCSPOptionSpec` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
    * Een `CRLPreferences` -object dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
-   * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn. Voor meer informatie, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn. Voor meer informatie, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
    De methode `sign` retourneert een `com.adobe.idp.Document` -object dat het ondertekende PDF-document vertegenwoordigt.
 
@@ -797,7 +797,7 @@ U kunt als volgt een PDF-document digitaal ondertekenen met de handtekening-API 
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
    * Een `PDFSignatureAppearanceOptions` -object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
    * Een `System.Boolean` -object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false` .
-   * Een `OCSPOptionSpec` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Een `OCSPOptionSpec` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Een `CRLPreferences` -object dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
    * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn.
 
@@ -829,13 +829,13 @@ Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u e
 
 >[!NOTE]
 >
->Voordat u een interactief formulier digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [ het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken ](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een interactief formulier digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [&#x200B; het Invoeren Referenties door de Manager API van het Vertrouwen te gebruiken &#x200B;](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 Wanneer u de Forms Service API gebruikt, stelt u de runtime-optie `GenerateServerAppearance` in op `true` . Met deze uitvoeringsoptie blijft de weergave van het formulier dat op de server wordt gegenereerd geldig wanneer het in Acrobat of Adobe Reader wordt geopend. Het wordt aanbevolen deze uitvoeringsoptie in te stellen wanneer u een interactief formulier genereert ter ondertekening met de Forms API.
 
 >[!NOTE]
 >
->Voordat u interactieve Forms voor digitaal ondertekenen leest, is het raadzaam bekend te zijn met het ondertekenen van PDF-documenten. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+>Voordat u interactieve Forms voor digitaal ondertekenen leest, is het raadzaam bekend te zijn met het ondertekenen van PDF-documenten. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -860,7 +860,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een Forms en de cliënt van Handtekeningen**
 
@@ -1044,7 +1044,7 @@ Een interactief formulier digitaal ondertekenen met de API voor Forms en handtek
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
    * Een `PDFSignatureAppearanceOptions` -object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
    * Een `System.Boolean` -object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false` .
-   * Een `OCSPPreferences` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Een `OCSPPreferences` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Een `CRLPreferences` -object dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
    * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn.
 
@@ -1091,7 +1091,7 @@ Nadat u deze configuratiewaarde aan het cknfastrc dossier toevoegt, kan de nieuw
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening en het certificeren van een document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening en het certificeren van een document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -1115,7 +1115,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 
@@ -1123,13 +1123,13 @@ Voordat u een handtekeningbewerking programmatisch kunt uitvoeren, moet u een ha
 
 **krijg het document van de PDF om te verklaren**
 
-Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. Voor informatie over programmatically het toevoegen van een handtekeningsgebied, zie [ Toevoegend de Gebieden van de Handtekening ](digitally-signing-certifying-documents.md#adding-signature-fields).
+Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. Voor informatie over programmatically het toevoegen van een handtekeningsgebied, zie [&#x200B; Toevoegend de Gebieden van de Handtekening &#x200B;](digitally-signing-certifying-documents.md#adding-signature-fields).
 
 **certificeer het document van de PDF**
 
 Als u een PDF-document wilt certificeren, hebt u de volgende invoerwaarden nodig die door de service Handtekening worden gebruikt voor de certificering van een PDF-document:
 
-* **PDF document**: Een document van de PDF dat een handtekeningsgebied bevat, dat een vormgebied is dat een grafische vertegenwoordiging van de verklaarde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. (Zie [ Toevoegend de Gebieden van de Handtekening ](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* **PDF document**: Een document van de PDF dat een handtekeningsgebied bevat, dat een vormgebied is dat een grafische vertegenwoordiging van de verklaarde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. (Zie [&#x200B; Toevoegend de Gebieden van de Handtekening &#x200B;](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * **het gebiedsnaam van de Handtekening**: Volledig - gekwalificeerde naam van het handtekeningsgebied dat wordt verklaard. De volgende waarde is een voorbeeld: `form1[0].#subform[1].SignatureField3[3]` . Wanneer u een XFA-formulierveld gebruikt, kunt u ook de gedeeltelijke naam van het handtekeningveld gebruiken: `SignatureField3[3]` . Als een null-waarde wordt doorgegeven voor de veldnaam, wordt dynamisch een onzichtbaar handtekeningveld gemaakt en gecertificeerd.
 * **de referentie van de Veiligheid**: Een referentie die wordt gebruikt om het document van de PDF te certificeren. Deze veiligheidsreferentie bevat een wachtwoord en een alias, die een alias moeten aanpassen die in de referentie verschijnt die binnen de Credential dienst wordt gevestigd. De alias is een verwijzing naar een werkelijke referentie die kan voorkomen in een PKCS#12-bestand (met de extensie .pfx) of een hardwarebeveiligingsmodule (HSM).
 * **algoritme van de Hash**: Een knoeiboelalgoritme om het document van de PDF te gebruiken te mengen.
@@ -1193,9 +1193,9 @@ Een PDF-document certificeren met de handtekening-API (Java):
    * Een tekenreekswaarde die een uitleg geeft van welke handelingen de handtekening ongeldig maken.
    * Een `java.lang.Boolean` -object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false` .
    * Een `java.lang.Boolean` -object dat opgeeft of het handtekeningveld dat wordt gecertificeerd, is vergrendeld. Als het veld is vergrendeld, wordt het handtekeningveld gemarkeerd als alleen-lezen, kunnen de eigenschappen ervan niet worden gewijzigd en kan het niet worden gewist door iedereen die niet de vereiste machtigingen heeft. De standaardwaarde is `false` .
-   * Een `OCSPPreferences` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Een `OCSPPreferences` -object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Voor informatie over dit voorwerp, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Een `CRLPreferences` -object dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet is uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
-   * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` -object hebt gemaakt, kunt u de URL van de TSP-server instellen door de methode `TSPPreferences` object `setTspServerURL` aan te roepen. Deze parameter is optioneel en kan `null` zijn. Voor meer informatie, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Een `TSPPreferences` -object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` -object hebt gemaakt, kunt u de URL van de TSP-server instellen door de methode `TSPPreferences` object `setTspServerURL` aan te roepen. Deze parameter is optioneel en kan `null` zijn. Voor meer informatie, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
    De methode `certify` retourneert een `com.adobe.idp.Document` -object dat het gecertificeerde PDF-document vertegenwoordigt.
 
@@ -1293,13 +1293,13 @@ Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een o
 
 Stel dat de identiteit van de ondertekenaar onbekend is. Wanneer u het PDF-document opent in Acrobat, wordt in een waarschuwingsbericht aangegeven dat de identiteit van de ondertekenaar onbekend is, zoals in de volgende afbeelding wordt getoond.
 
-![ vd_vd_verivrog ](assets/vd_vd_verifysig.png)
+![&#x200B; vd_vd_verivrog &#x200B;](assets/vd_vd_verifysig.png)
 
 Op dezelfde manier kunt u, wanneer u programmatisch een digitale handtekening verifieert, de status van de identiteit van de ondertekenaar bepalen. Als u bijvoorbeeld de digitale handtekening verifieert in het document dat in de vorige illustratie wordt weergegeven, resulteert dit in het feit dat de identiteit van de ondertekenaar onbekend is.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening en het verifiëren van digitale handtekeningen, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening en het verifiëren van digitale handtekeningen, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-6}
 
@@ -1325,7 +1325,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 
@@ -1343,13 +1343,13 @@ Stel de volgende PKI-runtimeopties in die de handtekeningservice gebruikt bij he
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Voor informatie over de verschillende tijdwaarden, zie de `VerificationTime` opsommingswaarde in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Voor informatie over de verschillende tijdwaarden, zie de `VerificationTime` opsommingswaarde in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Voor informatie over de herroeping-controlerende opties, zie de `RevocationCheckStyle` opsommingswaarde in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Voor informatie over de herroeping-controlerende opties, zie de `RevocationCheckStyle` opsommingswaarde in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Als u intrekkingscontrole wilt uitvoeren op een certificaat, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met behulp van een `CRLOptionSpec` -object. Als u echter geen URL opgeeft naar de CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
 
-In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in tegenstelling tot een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [ Online Protocol van de Status van het Certificaat ](https://tools.ietf.org/html/rfc2560).)
+In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in tegenstelling tot een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [&#x200B; Online Protocol van de Status van het Certificaat &#x200B;](https://tools.ietf.org/html/rfc2560).)
 
 U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Ondertekening door de Toepassingen en de Diensten van de Adobe te gebruiken gebruikt. Bijvoorbeeld, als de server OCSP eerst in de Toepassingen en de Diensten van de Adobe wordt geplaatst, dan wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd.
 
@@ -1373,7 +1373,7 @@ De service Handtekening beperkt standaard de tijd die een document na de validat
 
 >[!NOTE]
 >
->Voor andere waarden die u wanneer het verifiëren van een handtekening vereist, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor andere waarden die u wanneer het verifiëren van een handtekening vereist, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **bepaal het statuut van de handtekening**
 
@@ -1524,7 +1524,7 @@ AEM Forms biedt de mogelijkheid om alle digitale handtekeningen in een PDF-docum
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening en het verifiëren van digitale handtekeningen, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening en het verifiëren van digitale handtekeningen, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-7}
 
@@ -1549,7 +1549,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 
@@ -1567,13 +1567,13 @@ Stel de volgende PKI-runtimeopties in die de handtekeningservice gebruikt bij he
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Voor informatie over de verschillende tijdwaarden, zie de `VerificationTime` opsommingswaarde in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Voor informatie over de verschillende tijdwaarden, zie de `VerificationTime` opsommingswaarde in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Voor informatie over de herroeping-controlerende opties, zie de `RevocationCheckStyle` opsommingswaarde in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Voor informatie over de herroeping-controlerende opties, zie de `RevocationCheckStyle` opsommingswaarde in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Als u intrekkingscontrole wilt uitvoeren op een certificaat, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met behulp van een `CRLOptionSpec` -object. Als u echter geen URL opgeeft naar een CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
 
-In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in plaats van een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [ Online Protocol van de Status van het Certificaat ](https://tools.ietf.org/html/rfc2560).)
+In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in plaats van een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [&#x200B; Online Protocol van de Status van het Certificaat &#x200B;](https://tools.ietf.org/html/rfc2560).)
 
 U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Ondertekening door de Toepassingen en de Diensten van de Adobe te gebruiken gebruikt. Bijvoorbeeld, als de OCSP server eerst in de Toepassingen en de Diensten van de Adobe wordt geplaatst, wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd.
 
@@ -1599,7 +1599,7 @@ Als u alle digitale handtekeningen in een PDF-document wilt verifiëren, haalt u
 
 **Interactief door alle handtekeningen**
 
-Doorloop elke handtekening. Dat wil zeggen dat voor elke handtekening de digitale handtekening wordt geverifieerd en dat de identiteit van de ondertekenaar en de status van elke handtekening worden gecontroleerd. (Zie [ Verifying Digital Signatures ](#verify-digital-signatures-using-the-java-api).)
+Doorloop elke handtekening. Dat wil zeggen dat voor elke handtekening de digitale handtekening wordt geverifieerd en dat de identiteit van de ondertekenaar en de status van elke handtekening worden gecontroleerd. (Zie [&#x200B; Verifying Digital Signatures &#x200B;](#verify-digital-signatures-using-the-java-api).)
 
 >[!NOTE]
 >
@@ -1734,7 +1734,7 @@ Digitale handtekeningen moeten uit een handtekeningveld worden verwijderd voorda
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Handtekening, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1758,7 +1758,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Handtekening**
 

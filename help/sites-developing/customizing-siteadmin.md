@@ -25,9 +25,9 @@ De console van het Beleid van Websites kan worden uitgebreid om douanekolommen t
 
 Deze geleidelijke zelfstudie verklaart hoe te om een nieuwe kolom in de console van het Beleid van Websites te tonen door de `ListInfoProvider` interface uit te voeren. Het bestaat uit de volgende stappen:
 
-1. [ Creërend de dienst OSGI ](#creating-the-osgi-service) en opstellend de bundel die het aan de AEM server bevat.
-1. (facultatief) [ Testen de nieuwe dienst ](#testing-the-new-service) door een vraag uit te geven JSON om het voorwerp te verzoeken JSON dat wordt gebruikt om de console te bouwen.
-1. [ Weergevend de nieuwe kolom ](#displaying-the-new-column) door de knoopstructuur van de console in de bewaarplaats uit te breiden.
+1. [&#x200B; Creërend de dienst OSGI &#x200B;](#creating-the-osgi-service) en opstellend de bundel die het aan de AEM server bevat.
+1. (facultatief) [&#x200B; Testen de nieuwe dienst &#x200B;](#testing-the-new-service) door een vraag uit te geven JSON om het voorwerp te verzoeken JSON dat wordt gebruikt om de console te bouwen.
+1. [&#x200B; Weergevend de nieuwe kolom &#x200B;](#displaying-the-new-column) door de knoopstructuur van de console in de bewaarplaats uit te breiden.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ De voorbeeldimplementatie is hieronder:
 
 Om de dienst te creëren OSGI:
 
-1. In CRXDE Lite, [ creeer een bundel ](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. In CRXDE Lite, [&#x200B; creeer een bundel &#x200B;](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Voeg de voorbeeldcode hieronder toe.
 1. Bouw de bundel.
 
@@ -109,22 +109,22 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* Uw implementatie moet op basis van het ingediende verzoek en/of de bron beslissen of de informatie al dan niet aan het JSON-object moet worden toegevoegd.
 >* Als uw `ListInfoProvider` -implementatie een eigenschap definieert die bestaat in het reactieobject, wordt de waarde ervan overschreven door de eigenschap die u opgeeft.
 >
->  U kunt [ dienst gebruiken rangschikkend ](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) om de uitvoeringsorde van veelvoudige `ListInfoProvider` implementaties te beheren.
+>  U kunt [&#x200B; dienst gebruiken rangschikkend &#x200B;](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) om de uitvoeringsorde van veelvoudige `ListInfoProvider` implementaties te beheren.
 
 ### De nieuwe service testen {#testing-the-new-service}
 
 Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een vraag van Ajax uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de map `/content/geometrixx` bladert, wordt het volgende verzoek naar de AEM server verzonden om de console te maken:
 
-[ https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[&#x200B; https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Om ervoor te zorgen dat de nieuwe dienst na het hebben opgesteld de bundel die het bevat loopt:
 
 1. Verwijs uw browser naar de volgende URL:
-   [ https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [&#x200B; https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. In de reactie moeten de nieuwe eigenschappen als volgt worden weergegeven:
 
-![ screen_shot_2012-02-13at163046 ](assets/screen_shot_2012-02-13at163046.png)
+![&#x200B; screen_shot_2012-02-13at163046 &#x200B;](assets/screen_shot_2012-02-13at163046.png)
 
 ### De nieuwe kolom weergeven {#displaying-the-new-column}
 
@@ -165,11 +165,11 @@ Hierdoor wordt de rasterconfiguratie actief voor alle websites van Geometrixx.
 Als u dit wilt doorsturen naar uw versie van sitebeheerder op `/apps/wcm/core/content/siteadmin` , definieert u de eigenschap `sling:vanityOrder` voor een hogere waarde dan die welke is gedefinieerd op `/libs/wcm/core/content/siteadmin` . De standaardwaarde is 300, dus om het even wat hoger is is geschikt.
 
 1. Ga naar de console van het Beleid van Websites en navigeer aan de plaats van de Geometrixx:
-   [ https://localhost:4502/siteadmin#/content/geometrixx ](https://localhost:4502/siteadmin#/content/geometrixx).
+   [&#x200B; https://localhost:4502/siteadmin#/content/geometrixx &#x200B;](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. De nieuwe kolom riep **Begonnen** is beschikbaar, tonend douaneinformatie als volgt:
 
-![ screen_shot_2012-02-14at104602 ](assets/screen_shot_2012-02-14at104602.png)
+![&#x200B; screen_shot_2012-02-14at104602 &#x200B;](assets/screen_shot_2012-02-14at104602.png)
 
 >[!CAUTION]
 >
@@ -177,4 +177,4 @@ Als u dit wilt doorsturen naar uw versie van sitebeheerder op `/apps/wcm/core/co
 
 ### Voorbeeldpakket {#sample-package}
 
-Het resultaat van dit leerprogramma is beschikbaar in [ het Aanpassen van het pakket van de Console van het Beleid van Websites ](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) op het Aandeel van het Pakket.
+Het resultaat van dit leerprogramma is beschikbaar in [&#x200B; het Aanpassen van het pakket van de Console van het Beleid van Websites &#x200B;](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) op het Aandeel van het Pakket.

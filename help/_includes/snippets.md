@@ -11,10 +11,10 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De redacteur van het KUUROORD [ is afgekeurd voor nieuwe projecten.](/help/sites-developing/spa-editor-deprecation.md) Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
+>De redacteur van het KUUROORD [&#x200B; is afgekeurd voor nieuwe projecten.](/help/sites-developing/spa-editor-deprecation.md) Het blijft door Adobe ondersteund voor bestaande projecten, maar mag niet worden gebruikt voor nieuwe projecten. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
->* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
->* [ de Redacteur van het Fragment van de Inhoud ](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
 
 ## Universele editor heeft de voorkeur boven mobiel {#ue-over-mobile}
 
@@ -22,5 +22,5 @@ ht-degree: 0%
 >
 >Nieuwe installaties van AEM 6.5 ondersteunen de functionaliteit van AEM Mobile Apps niet. De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 >
->* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
->* [ de Redacteur van het Fragment van de Inhoud ](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor visueel het uitgeven van hoofdloze inhoud.
+>* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven van hoofdloze inhoud.

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze pagina schetst de verbeteringsprocedure voor AEM 6.5. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [ de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing ](/help/sites-deploying/app-server-upgrade.md).
+>Deze pagina schetst de verbeteringsprocedure voor AEM 6.5. Als u een installatie hebt die aan een toepassingsserver wordt opgesteld, zie [&#x200B; de Stappen van de Verbetering voor de Installaties van de Server van de Toepassing &#x200B;](/help/sites-deploying/app-server-upgrade.md).
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [ Bevorderend Code en Aanpassingen ](/help/sites-deploying/upgrading-code-and-customizations.md) en [ pre-Verbeterde Taken van het Onderhoud ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor de nieuwe versie van AEM. Zie hoe de Detector van het Patroon u kan helpen de ingewikkeldheid van uw upgarde schatten en ook de sectie van het Bereik en van de Vereisten van de Verbetering van [ zien die Uw Verbetering ](/help/sites-deploying/upgrade-planning.md) voor meer informatie plannen.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [&#x200B; Bevorderend Code en Aanpassingen &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) en [&#x200B; pre-Verbeterde Taken van het Onderhoud &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor de nieuwe versie van AEM. Zie hoe de Detector van het Patroon u kan helpen de ingewikkeldheid van uw upgarde schatten en ook de sectie van het Bereik en van de Vereisten van de Verbetering van [&#x200B; zien die Uw Verbetering &#x200B;](/help/sites-deploying/upgrade-planning.md) voor meer informatie plannen.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
@@ -45,7 +45,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratie van opslagplaats voor inhoud {#content-repository-migration}
 
-Deze migratie is niet vereist als u een upgrade uitvoert vanaf AEM 6.3. Voor versies ouder dan 6.3, verstrekt de Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van Oak in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Voor meer informatie over wat de voordelen van het nieuwe formaat van Tar van het Segment zijn, zie [ migrerend aan de Veelgestelde vragen van Tar van het Segment van Oak ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Deze migratie is niet vereist als u een upgrade uitvoert vanaf AEM 6.3. Voor versies ouder dan 6.3, verstrekt de Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van Oak in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Voor meer informatie over wat de voordelen van het nieuwe formaat van Tar van het Segment zijn, zie [&#x200B; migrerend aan de Veelgestelde vragen van Tar van het Segment van Oak &#x200B;](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 De werkelijke migratie wordt uitgevoerd met het standaard AEM QuickStart-jar-bestand, uitgevoerd met een nieuwe `-x crx2oak` -optie die het crx2oak-gereedschap uitvoert om de upgrade te vereenvoudigen en robuuster te maken.
 
@@ -117,7 +117,7 @@ Waar `<<YOUR_PROFILE>>` en `<<ADDITIONAL_FLAGS>>` worden vervangen door het prof
 
 * Als u de upgrade uitvoert op een Windows-systeem waar Java-geheugentoewijzing niet correct wordt verwerkt, voegt u de parameter `--disable-mmap` toe aan de opdracht.
 
-Voor extra instructies bij het gebruiken van het crx2oak hulpmiddel, zie het Gebruiken van het [ CRX2Oak Hulpmiddel van de Migratie ](/help/sites-deploying/using-crx2oak.md). U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De locatie in de installatiemap van AEM is: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar` . De nieuwste versie van het CRX2Oak migratiehulpmiddel is beschikbaar voor download van de Bewaarplaats van de Adobe bij: [ https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/ ](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Voor extra instructies bij het gebruiken van het crx2oak hulpmiddel, zie het Gebruiken van het [&#x200B; CRX2Oak Hulpmiddel van de Migratie &#x200B;](/help/sites-deploying/using-crx2oak.md). U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De locatie in de installatiemap van AEM is: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar` . De nieuwste versie van het CRX2Oak migratiehulpmiddel is beschikbaar voor download van de Bewaarplaats van de Adobe bij: [&#x200B; https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/ &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Als de migratie is voltooid, wordt het gereedschap afgesloten met de afsluitcode nul. Controleer bovendien op WAARSCHUWING- en FOUTberichten in het `upgrade.log` -bestand, dat zich onder `crx-quickstart/logs` in de installatiemap van AEM bevindt, omdat deze kunnen wijzen op niet-fatale fouten die tijdens de migratie zijn opgetreden.
 
@@ -157,17 +157,17 @@ Waar `/path/to/datastore` het pad naar de datastore van het bestand vertegenwoor
 
 1. Verwijder eventuele potten onder `crx-quickstart/install` die zijn gekoppeld aan een eerdere versie van de S3-connector.
 
-1. Download de recentste versie van de schakelaar 1.10.x S3 van [ https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/ ](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Download de recentste versie van de schakelaar 1.10.x S3 van [&#x200B; https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/ &#x200B;](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
 1. Extraheer het pakket naar een tijdelijke map en kopieer de inhoud van `jcr_root/libs/system/install` naar de map `crx-quickstart/install` .
 
 ### Bepaal het correcte bevel van het verbeteringsbegin {#determining-the-correct-upgrade-start-command}
 
-Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor bevordering aan 6.5, zie andere inhoudsherstructurering en migratieopties in [ Uitgestelde Migratie van de Inhoud ](/help/sites-deploying/lazy-content-migration.md) die u met het verbeteringsbevel kunt kiezen.
+Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor bevordering aan 6.5, zie andere inhoudsherstructurering en migratieopties in [&#x200B; Uitgestelde Migratie van de Inhoud &#x200B;](/help/sites-deploying/lazy-content-migration.md) die u met het verbeteringsbevel kunt kiezen.
 
 >[!IMPORTANT]
 >
->Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM. Voor meer informatie, zie [ Java 11 Overwegingen ](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM. Voor meer informatie, zie [&#x200B; Java 11 Overwegingen &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, etc. te omvatten. Om deze reden, adviseert de Adobe na deze procedure om het juiste verbeteringsbevel te bepalen:
 
@@ -193,8 +193,8 @@ Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal
 
 ## Bijgewerkte Codebase implementeren {#deploy-upgraded-codebase}
 
-Zodra het op zijn plaats verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [ de Code en de pagina van Aanpassingen van de Verbetering ](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
+Zodra het op zijn plaats verbeteringsproces is voltooid, zou de bijgewerkte codebasis moeten worden opgesteld. De stappen voor het bijwerken van de codebasis om in de doelversie van AEM te werken kunnen in [&#x200B; de Code en de pagina van Aanpassingen van de Verbetering &#x200B;](/help/sites-deploying/upgrading-code-and-customizations.md) worden gevonden.
 
 ## Post-upgradecontroles en probleemoplossing uitvoeren {#perform-post-upgrade-check-troubleshooting}
 
-Zie [ de Controles van de Verbetering van Post en het Oplossen van problemen ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+Zie [&#x200B; de Controles van de Verbetering van Post en het Oplossen van problemen &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

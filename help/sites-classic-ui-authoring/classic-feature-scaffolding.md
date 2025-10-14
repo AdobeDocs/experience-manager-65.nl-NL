@@ -25,7 +25,7 @@ Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die
 
 >[!NOTE]
 >
->Het filtreren (in klassieke UI) [ respecteert overerving MSM ](#scaffolding-with-msm-inheritance).
+>Het filtreren (in klassieke UI) [&#x200B; respecteert overerving MSM &#x200B;](#scaffolding-with-msm-inheritance).
 
 ## Hoe structuur werkt {#how-scaffolding-works}
 
@@ -35,11 +35,11 @@ Steunen worden opgeslagen in de **console van Hulpmiddelen** van plaats admin.
 * Onder dit, klik **Geometrixx**.
 * Onder **Geometrixx**, vindt u a *steile pagina* geroepen **Nieuws**. Dubbelklik om deze pagina te openen.
 
-![ howscaffbles_work ](assets/howscaffolds_work.png)
+![&#x200B; howscaffbles_work &#x200B;](assets/howscaffolds_work.png)
 
 Het substraat bestaat uit een vorm met een gebied voor elk stuk van inhoud dat omhoog de te creëren pagina en vier belangrijke parameters zal maken die door de **Eigenschappen van de Pagina** van de steigerpagina worden betreden.
 
-![ pageprops ](assets/pageprops.png)
+![&#x200B; pageprops &#x200B;](assets/pageprops.png)
 
 De basispagina-eigenschappen zijn:
 
@@ -67,11 +67,11 @@ Ga naar de **Eigenschappen van de Pagina** van de nieuwe pagina en plaats de *Te
 
 Vervolgens moet u de structuur definiëren van de pagina die dit subbestand maakt. Om dit te doen, ga in **[ontwerpwijze](/help/sites-authoring/page-authoring.md#sidekick)** op de steigerpagina. Een verbinding verschijnt, latend u het subold in de **dialoogredacteur** uitgeven.
 
-![ cq5_dialog_editor ](assets/cq5_dialog_editor.png)
+![&#x200B; cq5_dialog_editor &#x200B;](assets/cq5_dialog_editor.png)
 
 Met de dialoogeditor geeft u de eigenschappen op die worden gemaakt wanneer een nieuwe pagina wordt gemaakt met dit subbestand.
 
-De dialoogdefinitie voor een basiswerk gelijkaardig aan dat van een component (zie [ Componenten ](/help/sites-developing/components.md)). Er zijn echter enkele belangrijke verschillen van toepassing:
+De dialoogdefinitie voor een basiswerk gelijkaardig aan dat van een component (zie [&#x200B; Componenten &#x200B;](/help/sites-developing/components.md)). Er zijn echter enkele belangrijke verschillen van toepassing:
 
 * De de dialoogdefinities van de component worden teruggegeven als normale dialoogvakjes (zoals aangetoond in de middelste ruit van de dialoogredacteur, bijvoorbeeld) terwijl de gesegmenteerde dialoogdefinities, hoewel zij als normale dialoogvakjes in de dialoogredacteur verschijnen, op de basispagina als basisvorm (zoals aangetoond in het **Vernieuwen** hierboven) worden teruggegeven.
 * De dialoogvensters van de component verstrekken gebieden voor slechts die waarden nodig om de inhoud van één enkele specifieke component te bepalen. Een basisdialoogvenster moet velden bevatten voor elke eigenschap in elke alinea van de pagina die moet worden gemaakt.
@@ -81,11 +81,11 @@ Een blik op de voorbeeld **het steile dialoog van het News** in de dialoogredact
 
 Nu, klik de dialoog van het de dialoogvakje **Dialoog > Comité van het Lusje > Tekst > Tekst**, als dit:
 
-![ textedit ](assets/textedit.png)
+![&#x200B; textedit &#x200B;](assets/textedit.png)
 
 De eigenschappenlijst voor dit veld wordt als volgt weergegeven aan de rechterkant van de dialoogeditor:
 
-![ list_of_properties ](assets/list_of_properties.png)
+![&#x200B; list_of_properties &#x200B;](assets/list_of_properties.png)
 
 Let op de eigenschap name voor dit veld. Het heeft de waarde
 
@@ -102,11 +102,11 @@ In een normaal componentendialoog zou u deze informatie niet moeten specificeren
 
 Als u deze twee gegevens wilt opgeven, gebruikt u verborgen velden. Klik het eerste verborgen gebied **Dialoog > Comité van het Lusje > Tekst > Verborgen**, als dit:
 
-![ verborgen ](assets/hidden.png)
+![&#x200B; verborgen &#x200B;](assets/hidden.png)
 
 De eigenschappen van dit verborgen veld zijn als volgt:
 
-![ hidden_list_props ](assets/hidden_list_props.png)
+![&#x200B; hidden_list_props &#x200B;](assets/hidden_list_props.png)
 
 De eigenschap name van dit verborgen veld is
 
@@ -118,15 +118,15 @@ Omdat we weten dat de tekst moet worden geïnterpreteerd als tekst met opmaak, g
 
 >[!CAUTION]
 >
->De dialoogredacteur staat de gebruiker toe om de waarden van *bestaande* eigenschappen in de dialoogdefinitie te veranderen. Om een nieuw bezit toe te voegen, moet de gebruiker [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md) gebruiken. Bijvoorbeeld, wanneer een nieuw verborgen gebied aan een dialoogdefinitie met de dialoogredacteur wordt toegevoegd heeft het geen a *waarde* bezit (namelijk een bezit met de naam &quot;waarde&quot;). Als voor het verborgen veld in kwestie een standaardeigenschap moet worden ingesteld, moet deze eigenschap handmatig worden toegevoegd met een van de CRX-gereedschappen. De waarde kan niet worden toegevoegd met de dialoogeditor zelf. Als de eigenschap echter aanwezig is, kan de waarde ervan worden bewerkt in de dialoogeditor.
+>De dialoogredacteur staat de gebruiker toe om de waarden van *bestaande* eigenschappen in de dialoogdefinitie te veranderen. Om een nieuw bezit toe te voegen, moet de gebruiker [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md) gebruiken. Bijvoorbeeld, wanneer een nieuw verborgen gebied aan een dialoogdefinitie met de dialoogredacteur wordt toegevoegd heeft het geen a *waarde* bezit (namelijk een bezit met de naam &quot;waarde&quot;). Als voor het verborgen veld in kwestie een standaardeigenschap moet worden ingesteld, moet deze eigenschap handmatig worden toegevoegd met een van de CRX-gereedschappen. De waarde kan niet worden toegevoegd met de dialoogeditor zelf. Als de eigenschap echter aanwezig is, kan de waarde ervan worden bewerkt in de dialoogeditor.
 
 Het tweede verborgen veld kan worden weergegeven door er als volgt op te klikken:
 
-![ hidden2 ](assets/hidden2.png)
+![&#x200B; hidden2 &#x200B;](assets/hidden2.png)
 
 De eigenschappen van dit verborgen veld zijn als volgt:
 
-![ hidden_list_props2 ](assets/hidden_list_props2.png)
+![&#x200B; hidden_list_props2 &#x200B;](assets/hidden_list_props2.png)
 
 De eigenschap name van dit verborgen veld is
 
@@ -149,18 +149,18 @@ Wanneer u een pagina op **het Omzetten van de Basisvolgorde** wijze (gebruikend 
 
 Hierin ziet u dat de component niet kan worden bewerkt, totdat de overerving wordt geannuleerd.
 
-![ chlimage_1 ](assets/chlimage_1.jpeg)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.jpeg)
 
 >[!NOTE]
 >
->Dit is vergelijkbaar met [ geërfte componenten wanneer het uitgeven van paginacontent ](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
+>Dit is vergelijkbaar met [&#x200B; geërfte componenten wanneer het uitgeven van paginacontent &#x200B;](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
 Als u op het vergrendelingssymbool of het afbeeldingspictogram klikt, kunt u de overerving verbreken:
 
 * het symbool verandert in een open hangslot.
 * als de vergrendeling eenmaal is opgeheven, kunt u de inhoud bewerken.
 
-![ chlimage_1-1 ](assets/chlimage_1-1.jpeg)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.jpeg)
 
 Na ontgrendelen kunt u de overerving herstellen door op het ontgrendelde hangslotsymbool te klikken. Alle bewerkingen die u hebt aangebracht, gaan hierdoor verloren.
 

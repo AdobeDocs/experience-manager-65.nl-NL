@@ -38,11 +38,11 @@ Overweeg de volgende workflow met drie AEM Forms-services:
 
 Het volgende diagram biedt een visuele weergave van deze workflow.
 
-![ cd_cd_finsrv_architectuur_xml_pdf1 ](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
+![&#x200B; cd_cd_finsrv_architectuur_xml_pdf1 &#x200B;](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
 Nadat de gebruiker het formulier vanuit de clientwebbrowser heeft verzonden, wordt het niet-interactieve PDF-document opgeslagen in Content Services (afgekeurd). In de volgende afbeelding ziet u een PDF-document dat is opgeslagen in Content Services (afgekeurd).
 
-![ cd_cd_cs_gui ](assets/cd_cd_cs_gui.png)
+![&#x200B; cd_cd_cs_gui &#x200B;](assets/cd_cd_cs_gui.png)
 
 ### Overzicht van de stappen {#summary-of-steps}
 

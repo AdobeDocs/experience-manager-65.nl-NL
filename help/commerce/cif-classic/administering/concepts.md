@@ -33,14 +33,14 @@ Dit betekent dat:
 >
 >Het eCommerce-kader kan worden gebruikt met:
 >
->* [ Adobe Commerce ](/help/commerce/cif/integrating/magento.md)
->* [ Commerce Cloud VAN SAP ](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
->* [ Salesforce Commerce Cloud ](https://github.com/adobe/commerce-salesforce)
+>* [&#x200B; Adobe Commerce &#x200B;](/help/commerce/cif/integrating/magento.md)
+>* [&#x200B; Commerce Cloud VAN SAP &#x200B;](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+>* [&#x200B; Salesforce Commerce Cloud &#x200B;](https://github.com/adobe/commerce-salesforce)
 >
 
 >[!CAUTION]
 >
->Het [ eCommerce integratiekader ](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) is een AEM toe:voegen-aan.
+>Het [&#x200B; eCommerce integratiekader &#x200B;](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) is een AEM toe:voegen-aan.
 >
 >Uw vertegenwoordiger kan alle gegevens verstrekken, afhankelijk van de betreffende motor.
 
@@ -105,11 +105,11 @@ Er zijn ook verschillende zoekopties beschikbaar.
 
 Het integratieframework biedt de API, een reeks componenten om functionaliteit te illustreren en verschillende extensies om voorbeelden van verbindingsmethoden te geven:
 
-![ chlimage_1-4 ](/help/sites-administering/assets/chlimage_1-4.png)
+![&#x200B; chlimage_1-4 &#x200B;](/help/sites-administering/assets/chlimage_1-4.png)
 
 Het framework biedt u toegang tot functies zoals:
 
-![ chlimage_1-5 ](/help/sites-administering/assets/chlimage_1-5.png)
+![&#x200B; chlimage_1-5 &#x200B;](/help/sites-administering/assets/chlimage_1-5.png)
 
 ### Implementaties {#implementations}
 
@@ -126,9 +126,9 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >
 >AEM eCommerce die wordt uitgevoerd binnen AEM met behulp van generieke ontwikkeling op basis van JCR is:
 >
->* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens te controleren, winkelwagentjes te kopen en uit te checken met de bestaande programma&#39;s voor het weergeven en op de markt brengen van gegevens. In dit geval, wordt het productgegevensbestand opgeslagen in de bewaarplaats inheems aan AEM (de implementatie van de Adobe van [ JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens te controleren, winkelwagentjes te kopen en uit te checken met de bestaande programma&#39;s voor het weergeven en op de markt brengen van gegevens. In dit geval, wordt het productgegevensbestand opgeslagen in de bewaarplaats inheems aan AEM (de implementatie van de Adobe van [&#x200B; JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
->  De standaard AEM installatie bevat de grondbeginselen van de [ generische implementatie eCommerce ](/help/commerce/cif-classic/administering/generic.md).
+>  De standaard AEM installatie bevat de grondbeginselen van de [&#x200B; generische implementatie eCommerce &#x200B;](/help/commerce/cif-classic/administering/generic.md).
 
 ### Commerce-providers {#commerce-providers}
 
@@ -150,7 +150,7 @@ Hoewel gewoonlijk moet een project hun eigen, aangepaste, handelsleverancier ont
 >
 >De Geometrixx-importeurs gebruiken CSV-bestanden. De opmerkingen boven hun implementatie bevatten een beschrijving van het geaccepteerde schema (met aangepaste eigenschappen toegestaan).
 
-[ ProductServicesManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) handhaaft (door [ OSGi ](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst van implementaties van [ ProductImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [ CatalogBluprintImporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in het **dropdown gebied van de Importer** Importer/van de Leverancier van Commerce &lbrace;van de tovenaar van de Importeur (gebruikend het `commerceProvider` bezit als naam).
+[&#x200B; ProductServicesManager &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) handhaaft (door [&#x200B; OSGi &#x200B;](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst van implementaties van [&#x200B; ProductImporter &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [&#x200B; CatalogBluprintImporter &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. Deze worden vermeld in het **dropdown gebied van de Importer** Importer/van de Leverancier van Commerce &lbrace;van de tovenaar van de Importeur (gebruikend het `commerceProvider` bezit als naam).
 
 Wanneer een specifieke importeur/handelsleverancier beschikbaar is in de vervolgkeuzelijst, moeten eventuele aanvullende gegevens die hij nodig heeft, worden gedefinieerd (afhankelijk van het type importeur) in:
 
@@ -190,7 +190,7 @@ Het geïntegreerde systeem voorziet voor de volgende rollen om de gegevens te ha
 
 Hoewel de daadwerkelijke plaats van uw implementatie kan afhangen; bijvoorbeeld, algemeen of met een eCommerce motor:
 
-![ chlimage_1-6 ](/help/sites-administering/assets/chlimage_1-6.png)
+![&#x200B; chlimage_1-6 &#x200B;](/help/sites-administering/assets/chlimage_1-6.png)
 
 ## Producten {#products}
 
@@ -221,7 +221,7 @@ Productgegevens kunnen zijn:
 * rechtstreeks in AEM (algemeen) worden onderhouden.
 * in de eCommerce-engine worden onderhouden en in AEM beschikbaar worden gesteld.
 
-  Afhankelijk van het gegevenstype wordt het [ gesynchroniseerd ](#catalog-maintenance-data-synchronization) zonodig, of direct betreden; bijvoorbeeld, worden de hoogst volatiele en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elk paginaverzoek om ervoor te zorgen zij altijd bijgewerkt zijn.
+  Afhankelijk van het gegevenstype wordt het [&#x200B; gesynchroniseerd &#x200B;](#catalog-maintenance-data-synchronization) zonodig, of direct betreden; bijvoorbeeld, worden de hoogst volatiele en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elk paginaverzoek om ervoor te zorgen zij altijd bijgewerkt zijn.
 
 In één van beide geval, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de **Produkten** console worden gezien. Hier wordt op de kaart en in de lijst informatie over een product weergegeven, zoals:
 
@@ -229,13 +229,13 @@ In één van beide geval, wanneer de productgegevens zijn ingegaan/in AEM ingevo
 * de SKU-code
 * wanneer laatst gewijzigd
 
-![ chlimage_1-7 ](/help/sites-administering/assets/chlimage_1-7.png)
+![&#x200B; chlimage_1-7 &#x200B;](/help/sites-administering/assets/chlimage_1-7.png)
 
 ### Productvarianten {#product-variants}
 
 Voor geschikte producten kan ook informatie over varianten worden bewaard. Voor kledingstukken worden de verschillende beschikbare kleuren bijvoorbeeld als varianten bewaard:
 
-![ elektronische productvarianten ](/help/sites-administering/assets/ecommerceproductvariants.png)
+![&#x200B; elektronische productvarianten &#x200B;](/help/sites-administering/assets/ecommerceproductvariants.png)
 
 ### Productkenmerken {#product-attributes}
 
@@ -297,7 +297,7 @@ In een catalogus worden productgegevens gegroepeerd voor zowel beheer als repres
 
 AEM ondersteunt productinhoud in meerdere talen. Wanneer gegevens worden aangevraagd, haalt het integratieframework de taal op uit de huidige structuur (bijvoorbeeld `en_US` voor pagina&#39;s onder `/content/geometrixx-outdoors/en_US` ).
 
-Voor een meertalige opslag, kunt u uw catalogus voor elke taalboom individueel invoeren (of het kopiëren met [ MSM ](/help/sites-administering/msm.md)).
+Voor een meertalige opslag, kunt u uw catalogus voor elke taalboom individueel invoeren (of het kopiëren met [&#x200B; MSM &#x200B;](/help/sites-administering/msm.md)).
 
 #### Catalogi voor meerdere merken {#catalogs-for-multiple-brands}
 
@@ -318,8 +318,8 @@ Afhankelijk van uw implementatie kunt u de vereiste productgegevens voor uw basi
 
 Verdere wijzigingen van de productgegevens zijn onvermijdelijk:
 
-* voor de generische implementatie, kunnen deze met de [ productredacteur ](/help/commerce/cif-classic/administering/generic.md#editing-product-information) worden beheerd
-* wanneer het gebruiken van een [ eCommerce motor moeten de veranderingen worden gesynchroniseerd ](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* voor de generische implementatie, kunnen deze met de [&#x200B; productredacteur &#x200B;](/help/commerce/cif-classic/administering/generic.md#editing-product-information) worden beheerd
+* wanneer het gebruiken van een [&#x200B; eCommerce motor moeten de veranderingen worden gesynchroniseerd &#x200B;](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### Gegevenssynchronisatie met een eCommerce-engine (aan de gang) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
@@ -329,7 +329,7 @@ Bij gebruik van een eCommerce-motor worden de productgegevens daar bewaard en mo
 
 Dit kan afhankelijk zijn van het type gegevens:
 
-* A [ periodieke synchronisatie wordt gebruikt samen met een gegevensvoer van veranderingen ](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
+* A [&#x200B; periodieke synchronisatie wordt gebruikt samen met een gegevensvoer van veranderingen &#x200B;](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
   Daarnaast kunt u specifieke updates selecteren voor een express-update.
 
@@ -341,7 +341,7 @@ Het importeren van een grote catalogus met een groot aantal producten (meer dan 
 
 U kunt kiezen uit verschillende strategieën om deze problemen op te lossen:
 
-* [ Emmering ](#bucketing) - om voor het grote aantal knopen te behandelen
+* [&#x200B; Emmering &#x200B;](#bucketing) - om voor het grote aantal knopen te behandelen
 * [Middelen na verwerking naar een specifieke instantie verplaatsen](#offload-asset-post-processing-to-a-dedicated-instance)
 * [Alleen productgegevens importeren](#only-import-product-data)
 * [Throttling importeren en opslaan in batch](#import-throttling-and-batch-saves)
@@ -366,13 +366,13 @@ In dit scenario worden twee auteur-instanties ingesteld:
 
    Importeert en nabewerkt productactiva van PIM, en herhaalt deze dan terug naar de hoofdauteur instantie voor gebruik.
 
-![ diagram van de Architectuur ](/help/sites-administering/assets/chlimage_1-8.png)
+![&#x200B; diagram van de Architectuur &#x200B;](/help/sites-administering/assets/chlimage_1-8.png)
 
 #### Alleen productgegevens importeren {#only-import-product-data}
 
 Als producten geen te importeren elementen (afbeeldingen) bevatten, kunt u de productgegevens importeren zonder dat dit wordt beïnvloed door de naverwerking van het element.
 
-![ diagram van de Architectuur ](/help/sites-administering/assets/chlimage_1-9.png)
+![&#x200B; diagram van de Architectuur &#x200B;](/help/sites-administering/assets/chlimage_1-9.png)
 
 #### Prestatietesten {#performance-testing}
 
@@ -440,7 +440,7 @@ Voor alle implementaties kunt u de volgende punten in acht nemen:
 * In uw technische stapel, plan factorized inhoudstoegangsmodel en de diensten. Dit is een algemene beste praktijk, maar is hier nog belangrijker, aangezien u, in optimalisatiefasen, toepassingsgeheime voorgeheugens voor gegevens kunt toevoegen die vaak worden gelezen (en dat u niet het bundelgeheime voorgeheugen met wilt vullen).
 
   Bijvoorbeeld, is het attributenbeheer vaak een goede kandidaat voor caching aangezien het gegevens betreft die door de invoer van producten worden bijgewerkt.
-* Overweeg gebruik van [ volmachtspagina&#39;s ](#proxy-pages).
+* Overweeg gebruik van [&#x200B; volmachtspagina&#39;s &#x200B;](#proxy-pages).
 
 ### Sectiepagina&#39;s catalogus {#catalog-section-pages}
 
@@ -450,7 +450,7 @@ De secties van de Catalogus verstrekken u, bijvoorbeeld:
 * links naar de afzonderlijke producten van die categorie
 * links naar de andere categorieën
 
-![ ecommerce_categoryrunning ](/help/sites-administering/assets/ecommerce_categoryrunning.png)
+![&#x200B; ecommerce_categoryrunning &#x200B;](/help/sites-administering/assets/ecommerce_categoryrunning.png)
 
 ### Productpagina&#39;s {#product-pages}
 
@@ -458,7 +458,7 @@ Productpagina&#39;s bevatten uitgebreide informatie over afzonderlijke producten
 
 De pagina&#39;s van het product zijn AEM pagina&#39;s die de **component van het Product** gebruiken; bijvoorbeeld, binnen het **het product van Commerce** malplaatje:
 
-![ ecommerce_nairobirunnersgreen ](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
+![&#x200B; ecommerce_nairobirunnersgreen &#x200B;](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
 De component Product biedt:
 
@@ -552,10 +552,10 @@ Promoties worden niet door productinformatiemanagers onderhouden, maar door mark
    * renderers en dialoogvensters voor bevorderingsbeheer
    * subcomponenten voor het teruggeven en het uitgeven configuratieparameters specifiek voor de promotiehandlers
 
-In AEM zijn de bevorderingen ook geïntegreerd in [ Campaign Management ](/help/sites-authoring/personalization.md):
+In AEM zijn de bevorderingen ook geïntegreerd in [&#x200B; Campaign Management &#x200B;](/help/sites-authoring/personalization.md):
 
-* a [ campagne ](/help/sites-authoring/personalization.md) specificeert de aan/uit tijden
-* [ ervaringen ](/help/sites-authoring/personalization.md) *binnen* de campagne wordt gebruikt om activa (laserpagina&#39;s, bevorderingen, etc.) volgens het publiekssegment te groeperen zij beantwoorden aan
+* a [&#x200B; campagne &#x200B;](/help/sites-authoring/personalization.md) specificeert de aan/uit tijden
+* [&#x200B; ervaringen &#x200B;](/help/sites-authoring/personalization.md) *binnen* de campagne wordt gebruikt om activa (laserpagina&#39;s, bevorderingen, etc.) volgens het publiekssegment te groeperen zij beantwoorden aan
 
 Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de campagne:
 
@@ -577,7 +577,7 @@ Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de ca
 
 >[!NOTE]
 >
->[ hybris bevorderingen ](https://www.hybris.com/modules/promotion) en [ hybris vouchers ](https://www.hybris.com/en/modules/voucher) behandelen alles dat het winkelwagentje beïnvloedt en met het tarief verwant is. Promotie-specifieke marketing inhoud (zoals banners, enzovoort.) maakt geen deel uit van de hybris promotie.
+>[&#x200B; hybris bevorderingen &#x200B;](https://www.hybris.com/modules/promotion) en [&#x200B; hybris vouchers &#x200B;](https://www.hybris.com/en/modules/voucher) behandelen alles dat het winkelwagentje beïnvloedt en met het tarief verwant is. Promotie-specifieke marketing inhoud (zoals banners, enzovoort.) maakt geen deel uit van de hybris promotie.
 
 ## Personalization {#personalization}
 
@@ -585,7 +585,7 @@ Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de ca
 
 Wanneer een winkel zich registreert, moeten de rekeninggegevens worden gesynchroniseerd tussen AEM en de eCommerce-engine. Gevoelige gegevens worden onafhankelijk opgeslagen, maar profielen worden gedeeld:
 
-![ chlimage_1-10 ](/help/sites-administering/assets/chlimage_1-10.png)
+![&#x200B; chlimage_1-10 &#x200B;](/help/sites-administering/assets/chlimage_1-10.png)
 
 Het precieze mechanisme kan van het scenario afhangen:
 
@@ -614,7 +614,7 @@ Wanneer u een eCommerce-engine gebruikt, slaat AEM alleen de account-id en het w
 
 Vaak is aanmelding vereist voor de winkelwagentje. Hiervoor is registratie (Account maken) vereist, zodat een klantspecifieke account kan worden gemaakt.
 
-![ chlimage_1-11 ](/help/sites-administering/assets/chlimage_1-11.png)
+![&#x200B; chlimage_1-11 &#x200B;](/help/sites-administering/assets/chlimage_1-11.png)
 
 >[!NOTE]
 >
@@ -624,7 +624,7 @@ Vaak is aanmelding vereist voor de winkelwagentje. Hiervoor is registratie (Acco
 
 Na aanmelding kan de winkels zich aanmelden met hun account, zodat hun acties kunnen worden bijgehouden en hun bestellingen kunnen worden uitgevoerd.
 
-![ chlimage_1-12 ](/help/sites-administering/assets/chlimage_1-12.png)
+![&#x200B; chlimage_1-12 &#x200B;](/help/sites-administering/assets/chlimage_1-12.png)
 
 ### Single Sign-On {#single-sign-on}
 
@@ -636,7 +636,7 @@ Transactiegegevens van de eCommerce-engine worden gecombineerd met persoonlijke 
 
 Er is een pagina waarop u eenvoudig uw accountgegevens kunt beheren. U kunt tot het toegang hebben door **Mijn Rekening** bij de bovenkant van een pagina van de Geometrixx te klikken, of door aan `/content/geometrixx-outdoors/en/user/account.html` te navigeren.
 
-![ chlimage_1-13 ](/help/sites-administering/assets/chlimage_1-13.png)
+![&#x200B; chlimage_1-13 &#x200B;](/help/sites-administering/assets/chlimage_1-13.png)
 
 ### Adresboek {#address-book}
 
@@ -652,7 +652,7 @@ U kunt kiezen welk adres u als gebrek wilt.
 
 De component van het adresboek is bereikbaar van de **Mijn pagina van de Rekening** door **Boek van het Adres** te klikken of door aan `/content/geometrixx-outdoors/en/user/account/address-book.html` te navigeren.
 
-![ chlimage_1-14 ](/help/sites-administering/assets/chlimage_1-14.png)
+![&#x200B; chlimage_1-14 &#x200B;](/help/sites-administering/assets/chlimage_1-14.png)
 
 U kunt **klikken toevoegt nieuw adres...** om een adres in uw adresboek toe te voegen. Het opent een vorm die u kunt invullen en dan **klikken voegt adres** toe.
 
@@ -662,7 +662,7 @@ U kunt **klikken toevoegt nieuw adres...** om een adres in uw adresboek toe te v
 
 Het adresboek wordt gebruikt wanneer u uw winkelwagen &quot;uitcheckt&quot;:
 
-![ chlimage_1-15 ](/help/sites-administering/assets/chlimage_1-15.png)
+![&#x200B; chlimage_1-15 &#x200B;](/help/sites-administering/assets/chlimage_1-15.png)
 
 Adressen blijven hieronder `user_home/profile/addresses` staan.
 Voor Alison Parker, bijvoorbeeld, zou het onder /home/users/geometrixx/aparker@geometrixx.info/profile/adressen zijn
@@ -710,7 +710,7 @@ Het winkelwagentje biedt:
    * het aantal/de hoeveelheid afzonderlijke items bijwerken
    * afzonderlijke items verwijderen
 
-![ ecommerce_shoppingcart ](/help/sites-administering/assets/ecommerce_shoppingcart.png)
+![&#x200B; ecommerce_shoppingcart &#x200B;](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
 Het winkelwagentje wordt opgeslagen op basis van de gebruikte motor:
 
@@ -822,7 +822,7 @@ Wanneer de orde binnen AEM de console van de Orde wordt gehouden toont het volge
 * op het moment dat de order werd geplaatst
 * de status
 
-![ chlimage_1-16 ](/help/sites-administering/assets/chlimage_1-16.png)
+![&#x200B; chlimage_1-16 &#x200B;](/help/sites-administering/assets/chlimage_1-16.png)
 
 ### Volgorde bijhouden {#order-tracking}
 
@@ -836,7 +836,7 @@ Na ontvangst van de levering van de bestelling willen kopers wellicht ook de ges
 
 De eCommerce-engine beheert de naleving en tracering van bestellingen. De informatie kan worden getoond door AEM te gebruiken de component van de Geschiedenis van de Orde, die alle relevante details, met inbegrip van de toegepaste bonnen en promoties toont. Bijvoorbeeld:
 
-![ chlimage_1-17 ](/help/sites-administering/assets/chlimage_1-17.png)
+![&#x200B; chlimage_1-17 &#x200B;](/help/sites-administering/assets/chlimage_1-17.png)
 
 ## Afhandeling {#checkout}
 
@@ -852,11 +852,11 @@ PGB-compatibiliteit (Payment Card Industry) kan worden bereikt.
 
 ### Bevestiging van bestelling {#confirmation-of-order}
 
-De orde wordt bevestigd op het scherm en kan met het [ orde volgen ](#order-tracking) worden gevolgd.
+De orde wordt bevestigd op het scherm en kan met het [&#x200B; orde volgen &#x200B;](#order-tracking) worden gevolgd.
 
 ## Zoeken {#search-features}
 
-![ chlimage_1-18 ](/help/sites-administering/assets/chlimage_1-18.png)
+![&#x200B; chlimage_1-18 &#x200B;](/help/sites-administering/assets/chlimage_1-18.png)
 
 Aangezien AEM standaardpagina&#39;s voor producten gebruikt, kunt u de standaardzoekcomponent gebruiken om een zoekpagina te maken.
 

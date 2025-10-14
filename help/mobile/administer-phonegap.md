@@ -26,7 +26,7 @@ Nadat u de mobiele toepassing hebt gemaakt met gebruik van HTML5 en PhoneGap, ku
 
 Met het AEM Apps Control Center kunt u uw mobiele toepassing maken en implementeren, toepassingsmetagegevens maken en bewerken voordat u uw mobiele toepassing publiceert, gezamenlijk nieuwe en relevante inhoud beheren en deze vaak publiceren zonder dat u de verzendingsprocessen van de winkel van de toepassing opnieuw hoeft te bekijken en de levenscyclus en gebruikswaarden van de toepassing moet analyseren om de conversie van klanten en de loyaliteit van het merk te verbeteren.
 
-Om uw toepassing van AEM Mobile te bouwen, zie de [ Bouwend Mobiele pagina van Toepassingen ](/help/mobile/building-app-mobile-phonegap.md), in de sectie van Ontwikkelaars.
+Om uw toepassing van AEM Mobile te bouwen, zie de [&#x200B; Bouwend Mobiele pagina van Toepassingen &#x200B;](/help/mobile/building-app-mobile-phonegap.md), in de sectie van Ontwikkelaars.
 
 Om uw milieu te vestigen en met het Centrum van de Controle te beginnen,
 
@@ -35,11 +35,11 @@ Om uw milieu te vestigen en met het Centrum van de Controle te beginnen,
 1. [Adobe PhoneGap Build-Cloud Service configureren](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Uw Adobe Analytics Cloud-service configureren](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
-Voor leren over de Diensten van de Inhoud van de inhoudsdiensten, zie [ het Beheer de Diensten van de Inhoud ](/help/mobile/developing-content-services.md).
+Voor leren over de Diensten van de Inhoud van de inhoudsdiensten, zie [&#x200B; het Beheer de Diensten van de Inhoud &#x200B;](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->*AEM verifieer* is een snelle en gemakkelijke manier om uw AEM mobiele toepassingen op om het even welk iOS of Android™ mobiel apparaat in werking te stellen. *AEM verifieer* is een mobiele app, op uw apparaat en u verbindt het met de server die de snelstart in werking stelt om een lijst van te bekijken apps te krijgen. Klik [ hier ](/help/mobile/phonegap-mobile-quickstart.md) om de details te bekijken.
+>*AEM verifieer* is een snelle en gemakkelijke manier om uw AEM mobiele toepassingen op om het even welk iOS of Android™ mobiel apparaat in werking te stellen. *AEM verifieer* is een mobiele app, op uw apparaat en u verbindt het met de server die de snelstart in werking stelt om een lijst van te bekijken apps te krijgen. Klik [&#x200B; hier &#x200B;](/help/mobile/phonegap-mobile-quickstart.md) om de details te bekijken.
 
 ## Aanvullende bronnen {#additional-resources}
 

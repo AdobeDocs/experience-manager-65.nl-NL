@@ -30,13 +30,13 @@ Op AEM instantie Auteur, van globale navigatie:
    * Selecteer de kaartafbeelding.
    * Selecteer ** geen pictogram.
 
-Het resultaat moet de [ console van Groepen ](/help/communities/groups.md) bereiken:
+Het resultaat moet de [&#x200B; console van Groepen &#x200B;](/help/communities/groups.md) bereiken:
 
-![ creeer-groep ](assets/create-group.png)
+![&#x200B; creeer-groep &#x200B;](assets/create-group.png)
 
 De groepfunctie wordt weergegeven als een map waarin instanties van groepen worden gemaakt. Selecteer de map Groepen om deze te openen. De groep die op Publish is gemaakt, is zichtbaar.
 
-![ creeer-new-group ](assets/create-new-group.png)
+![&#x200B; creeer-new-group &#x200B;](assets/create-new-group.png)
 
 ## Hoofdartgroep maken {#create-main-arts-group}
 
@@ -56,7 +56,7 @@ Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
    * **[!UICONTROL Template]**: vervolgkeuzelijst om te selecteren `Reference Group`
    * Selecteren **[!UICONTROL Next]**
 
-![ Geneste communautaire groepen ](assets/parent-to-nestedgroup.png)
+![&#x200B; Geneste communautaire groepen &#x200B;](assets/parent-to-nestedgroup.png)
 
 Doorloop de andere deelvensters met deze instellingen:
 
@@ -86,17 +86,17 @@ Doorloop de andere deelvensters met deze instellingen:
 
 De map `groups` bevat nu twee groepen (de pagina vernieuwen).
 
-![ Nesten van de groepen ](assets/create-community-group.png)
+![&#x200B; Nesten van de groepen &#x200B;](assets/create-community-group.png)
 
 #### Publish-groep {#publish-group}
 
 Voordat u groepen maakt die in de `arts` -groep zijn genest, plaatst u de aanwijzer boven de `arts` -kaart en selecteert u het publicatiepictogram om deze te publiceren.
 
-![ publiceren-plaats ](assets/publish-site.png)
+![&#x200B; publiceren-plaats &#x200B;](assets/publish-site.png)
 
 Wacht op bevestiging dat de groep is gepubliceerd.
 
-![ groep-gepubliceerde ](assets/group-published.png)
+![&#x200B; groep-gepubliceerde &#x200B;](assets/group-published.png)
 
 De `arts` -groep moet ook een `groups` -map bevatten, maar een map die leeg is en waarin nieuwe groepen kunnen worden gemaakt. Navigeer naar de map met kunstgroepen en maak drie geneste groepen, elk met een andere lidmaatschapsinstelling:
 
@@ -119,7 +119,7 @@ De `arts` -groep moet ook een `groups` -map bevatten, maar een map die leeg is e
    * Titel: `Art History`
    * Naam: `history`
    * Sjabloon: `Reference Group`
-   * Lidmaatschap: selecteer `Restricted Membership` , een geheime groep die alleen zichtbaar is voor uitgenodigde leden. Als voorbeeld, nodig [ demogebruiker ](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com` uit.
+   * Lidmaatschap: selecteer `Restricted Membership` , een geheime groep die alleen zichtbaar is voor uitgenodigde leden. Als voorbeeld, nodig [&#x200B; demogebruiker &#x200B;](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com` uit.
 
 Vernieuw de pagina zodat u alle drie geneste groepen (subgemeenschappen) kunt zien.
 
@@ -131,11 +131,11 @@ Om aan de genestelde groepen van de console van Plaatsen van Gemeenschappen te n
 * Selecteren **[!UICONTROL arts card]**
 * Selecteer de map **[!UICONTROL Groups]**
 
-![ create-new-group2 ](assets/create-new-group2.png)
+![&#x200B; create-new-group2 &#x200B;](assets/create-new-group2.png)
 
 ## Groepen publiceren {#publishing-groups}
 
-![ publiceren-plaats ](assets/publish-site.png)
+![&#x200B; publiceren-plaats &#x200B;](assets/publish-site.png)
 
 Na publicatie van de hoofdsite van de community:
 
@@ -147,11 +147,11 @@ Na publicatie van de hoofdsite van de community:
 
    * Alle groepen moeten van boven naar beneden worden gepubliceerd.
 
-![ groep-gepubliceerde ](assets/group-published.png)
+![&#x200B; groep-gepubliceerde &#x200B;](assets/group-published.png)
 
 ## Ervaring met Publish {#experience-on-publish}
 
-Het is mogelijk om de verschillende groepen te ervaren wanneer binnen ondertekend, bijvoorbeeld, met de [ demogebruikers ](/help/communities/tutorials.md#demo-users) die voor worden gebruikt:
+Het is mogelijk om de verschillende groepen te ervaren wanneer binnen ondertekend, bijvoorbeeld, met de [&#x200B; demogebruikers &#x200B;](/help/communities/tutorials.md#demo-users) die voor worden gebruikt:
 
 * Lidmaatschap van illustratie/historiegroep: `emily.andrews@mailinator.com/password`
    * De beperkte (geheime) groep, kunst/geschiedenis, is zichtbaar:
@@ -164,4 +164,4 @@ Het is mogelijk om de verschillende groepen te ervaren wanneer binnen onderteken
    * Deelnemen aan beperkte (open) groepen.
    * Kan beperkte (geheime) groepen niet zien.
 
-Heb toegang tot de leden van Gemeenschappen [ en Groepen consoles ](/help/communities/members.md) op auteur om andere gebruikers aan diverse lidgroepen toe te voegen die aan de communautaire groepen beantwoorden.
+Heb toegang tot de leden van Gemeenschappen [&#x200B; en Groepen consoles &#x200B;](/help/communities/members.md) op auteur om andere gebruikers aan diverse lidgroepen toe te voegen die aan de communautaire groepen beantwoorden.

@@ -22,7 +22,7 @@ Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakov
 
 In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
-1. Creeer een Assign proces van de Taak in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [ Help Workbench ](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Creeer een Assign proces van de Taak in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [&#x200B; Help Workbench &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >

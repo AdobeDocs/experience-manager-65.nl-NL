@@ -40,7 +40,7 @@ Controleer of u de operator **`aemserver`** in Adobe Campaign Classic hebt gecon
 
 Controleer de bron van de HTML en bevestig dat u URL van de cliëntmachine kunt openen. Als de URL `localhost:4503` bevat, wijzigt u de configuratie van Day CQ Link Externalzer op de AEM auteurinstantie. Laat het naar een publicatie-instantie verwijzen die kan worden bereikt vanaf de Adobe Campaign Classic-consolemachine.
 
-Zie [ Vormend de Externalzer.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
+Zie [&#x200B; Vormend de Externalzer.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
 
 ## Als u geen verbinding kunt maken van AEM naar Adobe Campaign Classic  {#if-you-cannot-connect-from-aem-to-adobe-campaign}
 
@@ -58,7 +58,7 @@ Als u dit probleem wilt verhelpen, wijzigt u het volgende in `$CAMPAIGN_HOME/con
 
 In Adobe Campaign Classic, zorg ervoor dat u geen het slepen schuine streep (`/`) na het havenaantal hebt.
 
-![ Adobe Campaign Classic - verzeker geen het slepen schuine streep na havenaantal ](assets/chlimage_1-149.png)
+![&#x200B; Adobe Campaign Classic - verzeker geen het slepen schuine streep na havenaantal &#x200B;](assets/chlimage_1-149.png)
 
 ## Als u een waarschuwing over setlocale ontvangt {#if-you-get-a-warning-about-your-setlocale}
 
@@ -132,7 +132,7 @@ Ga als volgt te werk om dit probleem op te lossen:
 * De AEM Dispatcher of reverse-proxy moet zo zijn geconfigureerd dat het oorspronkelijke protocol als header wordt doorgegeven.
 * Het **SSL Filter van de Dienst Http van de Felix van Apache** in de configuratie OSGi van AEM moet met de vereiste kopbalmontages worden gevormd.
    * `https://<host>:<port>/system/console/configMgr`
-   * Zie [ https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+   * Zie [&#x200B; https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Een aangepaste sjabloon kan niet worden geselecteerd in Pagina-eigenschappen {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
@@ -144,4 +144,4 @@ De fout `com.day.cq.mcm.campaign.servlets.util.ParameterMapper` wordt mogelijk w
 
 Deze fout treedt op als de eigenschap `acMapping` op een andere waarde dan `recipient.firstName` is ingesteld, er wordt een lege waarde gemaakt in Adobe Campaign Manager.
 
-Als deze fout gebeurt, installeer eigenschappak 6576 voor AEM van [ het Aandeel van het Pakket ](/help/sites-administering/package-manager.md#package-share).
+Als deze fout gebeurt, installeer eigenschappak 6576 voor AEM van [&#x200B; het Aandeel van het Pakket &#x200B;](/help/sites-administering/package-manager.md#package-share).

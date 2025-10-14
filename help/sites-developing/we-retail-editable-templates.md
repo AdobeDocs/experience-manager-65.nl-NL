@@ -34,13 +34,13 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    In de structuurmodus van de pagina kunt u de structuur van de sjabloon wijzigen. Dit geldt bijvoorbeeld voor de componenten die zijn toegestaan in de lay-outcontainer.
 
-   ![ chlimage_1-138 ](assets/chlimage_1-138.png)
+   ![&#x200B; chlimage_1-138 &#x200B;](assets/chlimage_1-138.png)
 
 1. Configureer het beleid voor de container van de layout om te definiëren welke componenten zijn toegestaan in de container.
 
    Het beleid is het equivalent van ontwerpconfiguraties.
 
-   ![ chlimage_1-139 ](assets/chlimage_1-139.png)
+   ![&#x200B; chlimage_1-139 &#x200B;](assets/chlimage_1-139.png)
 
 1. In het dialoogvenster Ontwerp van de container voor lay-outs kunt u
 
@@ -48,7 +48,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    * Selecteer welke componenten zijn toegestaan in de container
    * De standaardcomponenten definiëren die moeten worden geplaatst wanneer een element naar de container wordt gesleept
 
-   ![ chlimage_1-140 ](assets/chlimage_1-140.png)
+   ![&#x200B; chlimage_1-140 &#x200B;](assets/chlimage_1-140.png)
 
 1. In de sjablooneditor kunt u het beleid van de tekstcomponent in de lay-outcontainer bewerken.
 
@@ -64,7 +64,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    Vele componenten die op de kerncomponenten worden gebaseerd staan de configuratie van opties op componentenniveau door de editable malplaatjes toe, die de behoefte aan aanpassing door ontwikkelaars verwijderen.
 
-   ![ chlimage_1-141 ](assets/chlimage_1-141.png)
+   ![&#x200B; chlimage_1-141 &#x200B;](assets/chlimage_1-141.png)
 
 1. Terug in de malplaatjeredacteur, kunt u de wijzeselecteur gebruiken om in **Aanvankelijke wijze van de Inhoud** te veranderen om te bepalen welke inhoud op de pagina wordt vereist.
 
@@ -72,6 +72,6 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
 ## Meer informatie {#more-information}
 
-Voor verdere informatie zie het auteursdocument [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md) of de Malplaatjes van het ontwikkelaarsdocument van de Pagina [ - editable ](/help/sites-developing/page-templates-editable.md) voor volledige technische details op editable malplaatjes.
+Voor verdere informatie zie het auteursdocument [&#x200B; Creërend de Malplaatjes van de Pagina &#x200B;](/help/sites-authoring/templates.md) of de Malplaatjes van het ontwikkelaarsdocument van de Pagina [&#x200B; - editable &#x200B;](/help/sites-developing/page-templates-editable.md) voor volledige technische details op editable malplaatjes.
 
-U kunt ook wensen om [ kerncomponenten ](/help/sites-developing/we-retail-core-components.md) te onderzoeken. Zie het auteursdocument [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [ het Ontwikkelen van de Componenten van de Kern ](https://helpx.adobe.com/nl/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+U kunt ook wensen om [&#x200B; kerncomponenten &#x200B;](/help/sites-developing/we-retail-core-components.md) te onderzoeken. Zie het auteursdocument [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [&#x200B; het Ontwikkelen van de Componenten van de Kern &#x200B;](https://helpx.adobe.com/nl/experience-manager/core-components/using/developing.html) voor een technisch overzicht.

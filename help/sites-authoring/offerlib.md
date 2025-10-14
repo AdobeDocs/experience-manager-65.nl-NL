@@ -30,11 +30,11 @@ De console van Aanbiedingen organiseert aanbiedingen door merk. Elk merk bevat e
 
 Maak een merk waaraan uw aanbiedingen zijn gekoppeld. Open een merk in de console van Aanbiedingen om tot zijn aanbiedingsbibliotheek toegang te hebben waar u omslagen en aanbiedingen kunt tot stand brengen.
 
-Wanneer u een merk gebruikend de console van Aanbiedingen creeert, verschijnt het ook in de [ console van Activiteiten ](/help/sites-authoring/activitylib.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
+Wanneer u een merk gebruikend de console van Aanbiedingen creeert, verschijnt het ook in de [&#x200B; console van Activiteiten &#x200B;](/help/sites-authoring/activitylib.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
 
 1. In de console van de Navigatie, klik **Personalization** > **Aanbiedingen**.
 
-   ![ scherm-shot_2019-03-05at124139-1 ](assets/screen-shot_2019-03-05at124139-1.png)
+   ![&#x200B; scherm-shot_2019-03-05at124139-1 &#x200B;](assets/screen-shot_2019-03-05at124139-1.png)
 
 1. Klik **creeer** en dan **creeer** **Merk**.
 1. Selecteer het merkmalplaatje en klik **daarna**.
@@ -48,12 +48,12 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 1. Open in de console Aanbiedingen de locatie waar u de map wilt maken. Open bijvoorbeeld het merk om een map op hoofdniveau te maken of open een andere map in de bibliotheek.
 1. Klik **creeer** > **creeer Omslag of Aanbieding**.
 
-   ![ scherm-shot_2019-03-05at124557 ](assets/screen-shot_2019-03-05at124557.png)
+   ![&#x200B; scherm-shot_2019-03-05at124557 &#x200B;](assets/screen-shot_2019-03-05at124557.png)
 
 1. Selecteer **Omslag** en klik **daarna**.
 1. Typ een titel voor de map zoals u deze wilt weergeven in de aanbiedingsbibliotheek en typ of selecteer tags.
 
-   ![ chlimage_1-172 ](assets/chlimage_1-172.png)
+   ![&#x200B; chlimage_1-172 &#x200B;](assets/chlimage_1-172.png)
 
 1. Klik **creëren**.
 
@@ -66,7 +66,7 @@ Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
 1. Klik **creeer** > **creeer Omslag of Aanbieding**.
 
-   ![ scherm-shot_2019-03-05at124557-1 ](assets/screen-shot_2019-03-05at124557-1.png)
+   ![&#x200B; scherm-shot_2019-03-05at124557-1 &#x200B;](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. Selecteer het **malplaatje van de Pagina van 0&rbrace; Aanbieding &lbrace;en klik dan** daarna **.**
 1. Typ een titel voor de aanbieding en selecteer of typ naar keuze één of meerdere markeringen aan vennoot met de aanbieding, dan klik **creeer**.
@@ -101,7 +101,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
 
 Zoek naar voorstellen van om het even welk merk gebruikend sleutelwoorden om de titel te passen.
 
-![ scherm-shot_2019-03-05at124731 ](assets/screen-shot_2019-03-05at124731.png)
+![&#x200B; scherm-shot_2019-03-05at124731 &#x200B;](assets/screen-shot_2019-03-05at124731.png)
 
 De huidige zoekcriteria worden naast de zoekresultaten weergegeven. U kunt de resultaten ook in oplopende of aflopende volgorde op kolom sorteren. U kunt een onderzoek van om het even welke omslag van om het even welke aanbiedingsbibliotheek uitvoeren. De zoekresultaten zijn hetzelfde, ongeacht de huidige map.
 

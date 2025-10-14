@@ -24,16 +24,16 @@ In de component Concepten en verzendingen worden alle formulieren weergegeven di
 
 De component Concepten en verzendingen heeft twee tabbladen: Concepten en verzendingen.
 
-Om voorlegging van een adaptieve vorm toe te laten om in het voorleggingslusje te verschijnen, plaats **voorlegt actie** aan **[het Portaal van Forms Actie ](../../forms/using/configuring-submit-actions.md) voorlegt. U kunt ook** de optie Forms Portal verzenden inschakelen. Telkens wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+Om voorlegging van een adaptieve vorm toe te laten om in het voorleggingslusje te verschijnen, plaats **voorlegt actie** aan **[het Portaal van Forms Actie &#x200B;](../../forms/using/configuring-submit-actions.md) voorlegt. U kunt ook** de optie Forms Portal verzenden inschakelen. Telkens wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
 De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker **sparen** op een adaptieve vorm klikt, wordt de vorm toegevoegd aan de concepten tabel.
 
 Voer de volgende stappen uit om een component Concepten en verzendingen toe te voegen en te configureren:
 
 1. De belemmering-en-daling de **componenten van Concepten &amp; van Verzending** onder de categorie van de Diensten van het Document in componentenbrowser op uw pagina.
-1. Selecteer de component en selecteer dan ![ settings_icon ](assets/settings_icon.png) om de Edit dialoog voor de component te openen.
+1. Selecteer de component en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png) om de Edit dialoog voor de component te openen.
 
-   ![ Concepten &amp; component van de Verzending ](assets/drafts-submissions-edit.png)
+   ![&#x200B; Concepten &amp; component van de Verzending &#x200B;](assets/drafts-submissions-edit.png)
 
 1. In de Edit dialoog, specificeer de volgende details en selecteer **Gedaan** om de montages te bewaren.
 
@@ -98,9 +98,9 @@ Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van
 
 Met Forms Portal kunt u gegevens opslaan in een lokale AEM opslagplaats, een externe AEM opslagplaats of een database. Met AEM Forms kunt u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen aanpassen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
-Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties vervangen, die in [ worden beschreven het Vormen de opslagdiensten voor concepten en voorlegging ](/help/forms/using/configuring-draft-submission-storage.md) artikel, met douaneimplementaties worden beschreven om standaardfunctionaliteit te vervangen. Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie [ Aanpassen van de diensten van het Ontwerp en van de Gegevens van de Verzending ](/help/forms/using/custom-draft-submission-data-services.md) en [ de opslag van de Douane voor concepten en verzendingscomponent.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties vervangen, die in [&#x200B; worden beschreven het Vormen de opslagdiensten voor concepten en voorlegging &#x200B;](/help/forms/using/configuring-draft-submission-storage.md) artikel, met douaneimplementaties worden beschreven om standaardfunctionaliteit te vervangen. Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie [&#x200B; Aanpassen van de diensten van het Ontwerp en van de Gegevens van de Verzending &#x200B;](/help/forms/using/custom-draft-submission-data-services.md) en [&#x200B; de opslag van de Douane voor concepten en verzendingscomponent.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-De documentatie van AEM Forms verstrekt a [ Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand ](integrate-draft-submission-database.md). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
+De documentatie van AEM Forms verstrekt a [&#x200B; Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand &#x200B;](integrate-draft-submission-database.md). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
 
 ## Verwante artikelen
 

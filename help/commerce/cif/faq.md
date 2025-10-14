@@ -20,7 +20,7 @@ Adobe heeft de GraphQL API&#39;s van Adobe Commerce aangenomen als de officiële
 
 ## 2. Kunnen de activa van het Product (beelden) van AEM worden opgeslagen en van verwijzingen voorzien via Adobe Commerce admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op de [ markt ](https://marketplace.magento.com/partner/bounteous_ecomm).
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op de [&#x200B; markt &#x200B;](https://marketplace.magento.com/partner/bounteous_ecomm).
 
 Als tussenoplossing kunt u ook productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt deel uit van AEM Assets en werkt op dezelfde manier.
 
@@ -50,7 +50,7 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## 9. Hoe werkt cachevalidatie voor AEM Dispatcher met AEM en handel?
 
-Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan om de datum op de client weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL)
+Adobe raadt aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raadt de Adobe aan om de datum op de client weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenbevestiging, zie [&#x200B; AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=nl-NL)
 
 ## 10. Is er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
@@ -70,7 +70,7 @@ Adobe beveelt aan om marketinggerelateerde gegevens en inhoud in AEM te beheren.
 
 ## 14. Hoe verzekert een bedrijf naleving PCI wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [ naleving PCI ](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/products/magento/pci-compliance.html)
 
 ## 15. Als ik gebruik van AEM- en Adobe Commerce-cloudversies, is deze gezamenlijke oplossing compatibel met PCI?
 
@@ -78,4 +78,4 @@ Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzo
 
 ## 16. Hoe kan ik een proeflicentie voor I/O-runtime aanvragen?
 
-Zie [ het Krijgen Toegang ](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) voor details van het verzoeken van een proefvergunning om I/O Runtime te gebruiken.
+Zie [&#x200B; het Krijgen Toegang &#x200B;](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) voor details van het verzoeken van een proefvergunning om I/O Runtime te gebruiken.

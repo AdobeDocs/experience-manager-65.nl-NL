@@ -28,11 +28,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Snel begint met programmeren met AEM formulieren zijn gebaseerd op de Forms-server als u een ander besturingssysteem gebruikt, zoals UNIX, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel begint met programmeren met AEM formulieren zijn gebaseerd op de Forms-server als u een ander besturingssysteem gebruikt, zoals UNIX, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): XMP metagegevens exporteren met de Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd en opgeslagen. (Zie [ het Uitvoeren Meta-gegevens van de Documenten van PDF ](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd en opgeslagen. (Zie [&#x200B; het Uitvoeren Meta-gegevens van de Documenten van PDF &#x200B;](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
 
 ## Snel starten (SOAP modus): XMP metagegevens importeren met de Java API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het document van XML dat de meta-gegevens bevat om in het document van de PDF in te voeren is gebaseerd op een dossier van XML genoemd *LoanMetaData.xml*. Voor informatie over dit dossier van XML, zie [ het Invoeren Meta-gegevens in de Documenten van PDF ](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het document van XML dat de meta-gegevens bevat om in het document van de PDF in te voeren is gebaseerd op een dossier van XML genoemd *LoanMetaData.xml*. Voor informatie over dit dossier van XML, zie [&#x200B; het Invoeren Meta-gegevens in de Documenten van PDF &#x200B;](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*

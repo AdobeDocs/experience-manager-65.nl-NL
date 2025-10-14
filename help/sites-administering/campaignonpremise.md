@@ -25,7 +25,7 @@ Dankzij deze integratie kunnen AEM en Adobe Campaign Classic onafhankelijk worde
 
 >[!INFO]
 >
->In dit document wordt beschreven hoe u Adobe Campaign Classic kunt integreren met AEM 6.5. Voor andere integratie van de Campagne zie het document [ Integrerend AEM 6.5 met Adobe Campaign.](campaign.md)
+>In dit document wordt beschreven hoe u Adobe Campaign Classic kunt integreren met AEM 6.5. Voor andere integratie van de Campagne zie het document [&#x200B; Integrerend AEM 6.5 met Adobe Campaign.](campaign.md)
 
 ## Integratiestappen {#integration-steps}
 
@@ -44,7 +44,7 @@ Dit document leidt u door elk van deze stappen in detail.
 
 * Toegang tot Adobe Campaign Classic voor beheerders
    * Om de integratie uit te voeren, hebt u een werkende instantie van Adobe Campaign Classic, met inbegrip van een gevormd gegevensbestand nodig.
-   * Als u extra details op nodig hebt om Adobe Campaign Classic op te zetten en te vormen zie de [ documentatie van Adobe Campaign Classic, ](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=nl-NL) vooral de gids van de Installatie en van de Configuratie.
+   * Als u extra details op nodig hebt om Adobe Campaign Classic op te zetten en te vormen zie de [&#x200B; documentatie van Adobe Campaign Classic, &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=nl-NL) vooral de gids van de Installatie en van de Configuratie.
 * Toegang tot AEM beheerder
 
 ## Het AEM integratiepakket in de campagne installeren {#install-package}
@@ -55,17 +55,17 @@ Het **AEM het pakket van de Integratie** in Adobe Campaign omvat verscheidene st
 
 1. Selecteer **Hulpmiddelen** > **Geavanceerd** > **het pakket van de Invoer..**.
 
-   ![ het pakket van de Invoer ](assets/import-package.png)
+   ![&#x200B; het pakket van de Invoer &#x200B;](assets/import-package.png)
 
 1. Klik **installeer een standaardpakket** en klik dan **daarna**.
 
 1. Controleer het **AEM het pakket van de Integratie**.
 
-   ![ installeer een standaardpakket ](assets/select-package.png)
+   ![&#x200B; installeer een standaardpakket &#x200B;](assets/select-package.png)
 
 1. Klik **daarna**, en dan **Begin** om met de installatie te beginnen.
 
-   ![ de vooruitgang van de Installatie ](assets/installation.png)
+   ![&#x200B; de vooruitgang van de Installatie &#x200B;](assets/installation.png)
 
 1. Klik **dicht** wanneer de installatie voltooit.
 
@@ -85,7 +85,7 @@ Het integratiepakket maakt automatisch de operator `aemserver` die AEM gebruikt 
 
 1. Op **geef** lusje van de exploitant uit, selecteer het **sub-lusje van de Rechten van de Toegang** en klik dan **uitgeven de toegangsparameters...** verbinding.
 
-   ![ plaats veiligheidsstreek ](assets/access-rights.png)
+   ![&#x200B; plaats veiligheidsstreek &#x200B;](assets/access-rights.png)
 
 1. Selecteer de aangewezen veiligheidsstreek en bepaal zonodig het vertrouwde op IP masker.
 
@@ -119,7 +119,7 @@ Het integratiepakket maakt automatisch de operator `aemserver` die AEM gebruikt 
    >
    >Door gebrek, is er geen veiligheidsstreek die voor de exploitant wordt gevormd. Als u AEM verbinding wilt maken met Adobe Campaign, moet u een zone selecteren zoals in de vorige stappen wordt beschreven.
    >
-   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Voor meer over dit onderwerp, zie de [ documentatie van Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=nl-NL)
+   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Voor meer over dit onderwerp, zie de [&#x200B; documentatie van Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=nl-NL)
 
 1. In de cliënt van de Campagne, terugkeer aan de `aemserver` exploitant en selecteer het **Algemene** lusje.
 
@@ -131,25 +131,25 @@ Het integratiepakket maakt automatisch de operator `aemserver` die AEM gebruikt 
 
 ## Campagne-integratie configureren in AEM {#campaign-integration}
 
-AEM gebruikt [ de exploitant u reeds opstelling in Campagne ](#create-operator) om met Campagne te communiceren
+AEM gebruikt [&#x200B; de exploitant u reeds opstelling in Campagne &#x200B;](#create-operator) om met Campagne te communiceren
 
 1. Meld u als beheerder aan bij de AEM ontwerpinstantie.
 
 1. Van het globale spoor van de navigatiekant, uitgezochte **Hulpmiddelen** > **Cloud Servicen** > **Verouderde Cloud Servicen** > **Adobe Campaign**, dan klik **nu** vormen.
 
-   ![ vorm Adobe Campaign ](assets/configure-campaign-service.png)
+   ![&#x200B; vorm Adobe Campaign &#x200B;](assets/configure-campaign-service.png)
 
 1. In de dialoog, creeer een de dienstconfiguratie van de Campagne door a **Titel** in te gaan en **te klikken creeert**.
 
-   ![ vorm de dialoog van de Campagne ](assets/configure-campaign-dialog.png)
+   ![&#x200B; vorm de dialoog van de Campagne &#x200B;](assets/configure-campaign-dialog.png)
 
 1. Er wordt een nieuw venster en dialoogvenster geopend om de configuratie te bewerken. Verstrek de noodzakelijke informatie.
 
-   * **Gebruikersnaam** - dit is [ de het pakketexploitant van de Integratie van Adobe Campaign AEM die in de vorige stap wordt gecreeerd.](#create-operator) Standaard is dit `aemserver` .
-   * **Wachtwoord** - dit is het wachtwoord voor [ de het pakketexploitant van de Integratie van Adobe Campaign AEM die in de vorige stap wordt gecreeerd.](#create-operator)
+   * **Gebruikersnaam** - dit is [&#x200B; de het pakketexploitant van de Integratie van Adobe Campaign AEM die in de vorige stap wordt gecreeerd.](#create-operator) Standaard is dit `aemserver` .
+   * **Wachtwoord** - dit is het wachtwoord voor [&#x200B; de het pakketexploitant van de Integratie van Adobe Campaign AEM die in de vorige stap wordt gecreeerd.](#create-operator)
    * **API Eind Punt** - dit is de instantieURL van Adobe Campaign.
 
-   ![ vorm Adobe Campaign in AEM ](assets/configure-campaign.png)
+   ![&#x200B; vorm Adobe Campaign in AEM &#x200B;](assets/configure-campaign.png)
 
 1. Selecteer **verbinden met Adobe Campaign** om de verbinding te verifiëren en dan **O.K.** te klikken.
 
@@ -171,13 +171,13 @@ Om replicatie van uw AEM auteursinstantie aan te vormen publiceer instantie:
 
 1. Van het globale spoor van de navigatiekant, uitgezochte **Hulpmiddelen** > **Plaatsing** > **Replicatie** > **Agenten op auteur**, dan klik **StandaardAgent (publiceren)**.
 
-   ![ vorm replicatieagent ](assets/acc-replication-config.png)
+   ![&#x200B; vorm replicatieagent &#x200B;](assets/acc-replication-config.png)
 
 1. Klik **uitgeven** dan selecteren het **Vervoer** lusje.
 
 1. Vorm het **gebied van URI** door de standaard `localhost` waarde met het IP adres van de AEM het publiceren instantie te vervangen.
 
-   ![ het lusje van het Vervoer ](assets/acc-transport-tab.png)
+   ![&#x200B; het lusje van het Vervoer &#x200B;](assets/acc-transport-tab.png)
 
 1. Klik **O.K.** om de veranderingen in de agentenmontages te bewaren.
 
@@ -191,13 +191,13 @@ U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagn
 
 ## De AEM ExternalAlizer configureren {#externalizer}
 
-[ ExternalAlizer ](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. Vorm het zodat de integratie van de Campagne werkt.
+[&#x200B; ExternalAlizer &#x200B;](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. Vorm het zodat de integratie van de Campagne werkt.
 
 1. Meld u als beheerder aan bij de AEM-ontwerpinstantie.
 1. Van het globale spoor van de navigatiekant, uitgezochte **Hulpmiddelen** > **Verrichtingen** > **Console van het Web** > **Configuratie OSGi** en onderzoek naar **de verbindingExternalzer van CQ van de Dag**.
 1. Door gebrek is de laatste ingang op het **gebied van Domeinen** voorgenomen voor publiceer instantie. Wijzig de URL van de standaardinstelling `http://localhost:4503` in de openbaar beschikbare publicatie-instantie.
 
-   ![ Vormend de Externalzer ](assets/acc-externalizer-config.png)
+   ![&#x200B; Vormend de Externalzer &#x200B;](assets/acc-externalizer-config.png)
 
 1. Klik **sparen**.
 
@@ -223,7 +223,7 @@ Campagne kan alleen communiceren met AEM als u een wachtwoord instelt voor de ge
 
 ## De externe AEM-account configureren in de campagne {#acc-setup}
 
-Wanneer [ het installeren van het **AEM 2&rbrace; pakket van de Integratie &lbrace;in Campagne, ](#install-package) een externe rekening wordt gecreeerd voor AEM.** Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk is.
+Wanneer [&#x200B; het installeren van het **AEM 2&rbrace; pakket van de Integratie &lbrace;in Campagne, &#x200B;](#install-package) een externe rekening wordt gecreeerd voor AEM.** Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk is.
 
 1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
@@ -231,7 +231,7 @@ Wanneer [ het installeren van het **AEM 2&rbrace; pakket van de Integratie &lbra
 
 1. In de explorator, navigeer aan het **Beleid** > **Platform** > **Externe Rekeningen** knoop.
 
-   ![ Externe rekeningen ](assets/external-accounts.png)
+   ![&#x200B; Externe rekeningen &#x200B;](assets/external-accounts.png)
 
 1. Zoek de externe AEM. Standaard heeft het de volgende waarden:
 
@@ -239,13 +239,13 @@ Wanneer [ het installeren van het **AEM 2&rbrace; pakket van de Integratie &lbra
    * **Etiket** - `AEM Instance`
    * **Interne Naam** - `aemInstance`
 
-1. Op het **Algemene** lusje van deze rekening, ga de gebruikersinformatie in die u in de [ vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker ](#set-campaign-remote-password) bepaalde.
+1. Op het **Algemene** lusje van deze rekening, ga de gebruikersinformatie in die u in de [&#x200B; vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker &#x200B;](#set-campaign-remote-password) bepaalde.
 
    * **Server** - het adres van de AEM auteurserver
       * De AEM auteurserver moet van de de serverinstantie van Adobe Campaign Classic bereikbaar zijn.
       * Zorg ervoor dat het serveradres **niet** in een het slepen schuine streep beëindigt.
-   * **Rekening** - door gebrek, is dit de `campaign-remote` gebruiker die u in AEM in de [ Vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker ](#set-campaign-remote-password) plaatst.
-   * **Wachtwoord** - Dit wachtwoord is het zelfde als de `campaign-remote` gebruiker die u in AEM in de [ Vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker ](#set-campaign-remote-password) plaatst.
+   * **Rekening** - door gebrek, is dit de `campaign-remote` gebruiker die u in AEM in de [&#x200B; Vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker &#x200B;](#set-campaign-remote-password) plaatst.
+   * **Wachtwoord** - Dit wachtwoord is het zelfde als de `campaign-remote` gebruiker die u in AEM in de [&#x200B; Vastgestelde campagne-verre stap van het Wachtwoord van de Gebruiker &#x200B;](#set-campaign-remote-password) plaatst.
 
 1. Selecteer **Toegelaten** checkbox.
 
@@ -257,4 +257,4 @@ Adobe Campaign kan nu communiceren met AEM.
 
 Met zowel Adobe Campaign Classic als AEM geconfigureerd is de integratie nu voltooid.
 
-U kunt nu leren hoe te om een nieuwsbrief in Adobe Experience Manager tot stand te brengen door met [ dit document voort te gaan.](/help/sites-authoring/campaign.md)
+U kunt nu leren hoe te om een nieuwsbrief in Adobe Experience Manager tot stand te brengen door met [&#x200B; dit document voort te gaan.](/help/sites-authoring/campaign.md)

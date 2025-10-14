@@ -29,9 +29,9 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 
 ## De HBS-scripts wijzigen {#modify-the-hbs-scripts}
 
-Gebruikend [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md):
+Gebruikend [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Open [/apps/custom/components/comments/comment/**comment.hbs** ](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Open [/apps/custom/components/comments/comment/**comment.hbs** &#x200B;](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Plaats een opmerking bij de tag die de avatar bevat voor een commentaarbericht (~ regel 21):
 
@@ -41,7 +41,7 @@ Gebruikend [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Open [/apps/custom/components/comments/**comments.hbs** ](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Open [/apps/custom/components/comments/**comments.hbs** &#x200B;](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Verwijder de commentaarmarkering die de avatar voor de volgende commentaaringang (~ lijn 44) omvat:
 
@@ -69,9 +69,9 @@ Een manier om dit te doen is:
 
 ### Gewijzigde opmerking weergeven op gepubliceerde voorbeeldpagina {#view-modified-comment-on-published-sample-page}
 
-[ Verblijvend de ervaring ](/help/communities/extend-sample-page.md#publish-sample-page) op publiceer instantie, nog binnen ondertekend als de zelfde gebruiker, is het nu mogelijk om de pagina in het publicatiemilieu te verfrissen om de wijziging te bekijken om avatar te verwijderen:
+[&#x200B; Verblijvend de ervaring &#x200B;](/help/communities/extend-sample-page.md#publish-sample-page) op publiceer instantie, nog binnen ondertekend als de zelfde gebruiker, is het nu mogelijk om de pagina in het publicatiemilieu te verfrissen om de wijziging te bekijken om avatar te verwijderen:
 
-![ mening-gewijzigd-inhoud ](assets/view-modified-content.png)
+![&#x200B; mening-gewijzigd-inhoud &#x200B;](assets/view-modified-content.png)
 
 ### Voorbeeld van extensiepakket voor opmerkingen {#sample-comment-extension-package}
 

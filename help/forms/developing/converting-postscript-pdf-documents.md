@@ -26,7 +26,7 @@ De Distiller® service zet PostScript®-, Encapsulated PostScript (EPS)- en PRN-
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Distiller, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Distiller, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PostScript converteren naar PDF-documenten {#converting-postscript-to-pdf-documents-inner}
 
@@ -34,7 +34,7 @@ In dit onderwerp wordt beschreven hoe u de Distiller Service API (Java en webser
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Distiller, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Distiller, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >

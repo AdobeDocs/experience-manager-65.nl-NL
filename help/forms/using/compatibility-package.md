@@ -21,26 +21,26 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Om brieven in AEM Forms 6.5 te blijven gebruiken, moet u het recentste [ pakket van de Verenigbaarheid AEMFD ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) installeren.
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Om brieven in AEM Forms 6.5 te blijven gebruiken, moet u het recentste [&#x200B; pakket van de Verenigbaarheid AEMFD &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) installeren.
 
-Het pakket van de Verenigbaarheid AEMFD laat u [ ook de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5 gebruiken:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Het pakket van de Verenigbaarheid AEMFD laat u [&#x200B; ook de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5 gebruiken:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Documentfragmenten
 * Letters
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
-Voor meer informatie, zie [ Assets compatibel gemaakt met AEM Forms 6.5 door het pakket van de Verenigbaarheid ](../../forms/using/compatibility-package.md#assetsmadecompatible) te installeren.
+Voor meer informatie, zie [&#x200B; Assets compatibel gemaakt met AEM Forms 6.5 door het pakket van de Verenigbaarheid &#x200B;](../../forms/using/compatibility-package.md#assetsmadecompatible) te installeren.
 
 ## Voeg ondersteuning toe voor AEM Forms 6.4-, 6.3- en 6.2-middelen in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.5:
 
-Zorg ervoor dat u [ AEM het pakket van de Verenigbaarheid ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd hebt.
+Zorg ervoor dat u [&#x200B; AEM het pakket van de Verenigbaarheid &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd hebt.
 
-1. Installeer het recentste 6.5 [ pakket van de Verenigbaarheid ](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html).
+1. Installeer het recentste 6.5 [&#x200B; pakket van de Verenigbaarheid &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html).
 
-   Voor meer informatie bij het uploaden en het installeren van het pakket, zie [ hoe te met pakketten ](/help/sites-administering/package-manager.md) werken.
+   Voor meer informatie bij het uploaden en het installeren van het pakket, zie [&#x200B; hoe te met pakketten &#x200B;](/help/sites-administering/package-manager.md) werken.
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
 1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.5.
@@ -49,7 +49,7 @@ Zorg ervoor dat u [ AEM het pakket van de Verenigbaarheid ](https://helpx.adobe.
    >
    > Het wordt aanbevolen de SDK opnieuw te starten met de opdracht &#39;Ctrl + C&#39;. Het opnieuw opstarten van de AEM SDK met behulp van alternatieve methoden, bijvoorbeeld het stoppen van Java-processen, kan leiden tot inconsistenties in de AEM ontwikkelomgeving.
 
-   Voor meer informatie, zie [ migratienut ](../../forms/using/migration-utility.md).
+   Voor meer informatie, zie [&#x200B; migratienut &#x200B;](../../forms/using/migration-utility.md).
 
 ## Assets is compatibel gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
 

@@ -23,13 +23,13 @@ U kunt ook extra tabbladen toevoegen aan het deelvenster [!DNL Assets] Beheer.
 
 >[!CAUTION]
 >
->Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassing, zie [ onderzoeksfacetten ](/help/assets/search-facets.md).
+>Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassing, zie [&#x200B; onderzoeksfacetten &#x200B;](/help/assets/search-facets.md).
 
 ## Bedekking {#overlaying}
 
 Als u de vooraf geconfigureerde voorspelling wilt bedekken, kopieert u de node `facets` van `/libs/dam/content/search/searchpanel` naar `/apps/dam/content/search/searchpanel/` of geeft u een andere eigenschap `facetURL` op in de configuratie `searchpanel` (de standaardwaarde is `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json` ).
 
-![ screen_shot_2012-06-05at113619am ](assets/screen_shot_2012-06-05at113619am.png)
+![&#x200B; screen_shot_2012-06-05at113619am &#x200B;](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ U kunt extra zoektabbladen toevoegen door deze te configureren in de beheerinter
 
 ## Aangepaste voorspelling maken {#creating-custom-predicates}
 
-[!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [ creeer en vorm een pagina van het Aandeel van Activa ](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [&#x200B; creeer en vorm een pagina van het Aandeel van Activa &#x200B;](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruiken van reeds bestaande predikaten, [!DNL Experience Manager] kunnen de ontwikkelaars hun eigen predikaten ook creëren gebruikend [ de Bouwer van de Vraag API ](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, [!DNL Experience Manager] kunnen de ontwikkelaars hun eigen predikaten ook creëren gebruikend [&#x200B; de Bouwer van de Vraag API &#x200B;](/help/sites-developing/querybuilder-api.md).
 
-Het creëren van douane voorspelt vereist basiskennis over het [ kader Widgets ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Het creëren van douane voorspelt vereist basiskennis over het [&#x200B; kader Widgets &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor voorbeelden vindt u in **/libs/cq/search/components/predicates** .
 
@@ -298,6 +298,6 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
-De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager Assets] wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [ Creërend en Vormend een Pagina van het Aandeel van Activa ](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager Assets] wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [&#x200B; Creërend en Vormend een Pagina van het Aandeel van Activa &#x200B;](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
 Naast het gebruik van reeds bestaande lenzen kunnen ontwikkelaars van [!DNL Experience Manager] ook hun eigen lenzen maken.

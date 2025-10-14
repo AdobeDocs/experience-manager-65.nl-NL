@@ -39,19 +39,19 @@ Wanneer u daarentegen twee of meer invoerdocumenten van de PDF naar de Assembler
 
 Dit DDX-document bevat het `NoXFA` -element, dat de Assembler-service opgeeft een niet-interactief PDF-document te retourneren.
 
-De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder dat de Output-service onderdeel is van de installatie van AEM formulieren als het invoerdocument is gebaseerd op een Acrobat-formulier of een statisch XFA-formulier. Als het invoerdocument echter een dynamisch XFA-formulier is, moet de uitvoerservice onderdeel zijn van de installatie van AEM formulieren. Als de Output-service geen onderdeel is van de installatie van AEM formulieren wanneer een dynamisch XFA-formulier wordt samengesteld, wordt een uitzondering gegenereerd. Zie [ Creërend de Streams van de Output van het Document ](/help/forms/developing/creating-document-output-streams.md).
+De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder dat de Output-service onderdeel is van de installatie van AEM formulieren als het invoerdocument is gebaseerd op een Acrobat-formulier of een statisch XFA-formulier. Als het invoerdocument echter een dynamisch XFA-formulier is, moet de uitvoerservice onderdeel zijn van de installatie van AEM formulieren. Als de Output-service geen onderdeel is van de installatie van AEM formulieren wanneer een dynamisch XFA-formulier wordt samengesteld, wordt een uitzondering gegenereerd. Zie [&#x200B; Creërend de Streams van de Output van het Document &#x200B;](/help/forms/developing/creating-document-output-streams.md).
 
 >[!NOTE]
 >
->Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [ Programmatiatically het assembleren van de Documenten van PDF ](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [&#x200B; Programmatiatically het assembleren van de Documenten van PDF &#x200B;](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 

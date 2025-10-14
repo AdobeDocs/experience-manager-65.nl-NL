@@ -46,7 +46,7 @@ De volgende basisfactoren moeten in aanmerking worden genomen:
 
 ## Architectuur {#architecture}
 
-Een standaardinstelling voor AEM bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. De gedetailleerde overwegingen voor beide milieu&#39;s worden beschreven in het [ auteursmilieu ](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [ publiceren milieu ](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) secties.
+Een standaardinstelling voor AEM bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. De gedetailleerde overwegingen voor beide milieu&#39;s worden beschreven in het [&#x200B; auteursmilieu &#x200B;](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [&#x200B; publiceren milieu &#x200B;](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) secties.
 
 In een typisch projectopstelling, hebt u verscheidene milieu&#39;s waarop aan de fasen van het werkgebiedproject:
 
@@ -71,7 +71,7 @@ Bovendien kunnen de omgevingen variëren, variërend van een systeem met één s
 
 In de volgende secties wordt uitgelegd hoe u de hardwarevereisten kunt berekenen, rekening houdend met verschillende overwegingen. Voor grote systemen, stelt de Adobe voor dat u een eenvoudige reeks interne benchmarktests op een verwijzingsconfiguratie uitvoert.
 
-Optimalisering van prestaties is een fundamentele taak die moet worden uitgevoerd voordat benchmarking voor een specifiek project kan worden uitgevoerd. Zorg ervoor om het advies toe te passen dat in de [ documentatie van de Optimalisering van Prestaties ](/help/sites-deploying/configuring-performance.md) wordt verstrekt alvorens om het even welke benchmarktests uit te voeren en hun resultaten voor om het even welke hardware rangschikkende berekeningen te gebruiken.
+Optimalisering van prestaties is een fundamentele taak die moet worden uitgevoerd voordat benchmarking voor een specifiek project kan worden uitgevoerd. Zorg ervoor om het advies toe te passen dat in de [&#x200B; documentatie van de Optimalisering van Prestaties &#x200B;](/help/sites-deploying/configuring-performance.md) wordt verstrekt alvorens om het even welke benchmarktests uit te voeren en hun resultaten voor om het even welke hardware rangschikkende berekeningen te gebruiken.
 
 De vereisten voor het aanpassen van de hardwaregrootte voor gevallen van geavanceerd gebruik moeten gebaseerd zijn op een gedetailleerde prestatiebeoordeling van het project. Kenmerken van gevallen van geavanceerd gebruik waarvoor uitzonderlijke hardwarebronnen nodig zijn, zijn onder meer combinaties van:
 
@@ -102,12 +102,12 @@ Een faalveilige website wordt opgesteld op minstens twee afzonderlijke systemen.
 
 **de middelen van het Systeem scalability**
 
-Terwijl alle systemen actief zijn, zijn er betere computerprestaties beschikbaar. Die extra prestaties hoeven niet lineair te zijn met het aantal clusterknooppunten, aangezien de relatie sterk afhankelijk is van de technische omgeving. Zie [ documentatie van de Cluster ](/help/sites-deploying/recommended-deploys.md) voor meer informatie.
+Terwijl alle systemen actief zijn, zijn er betere computerprestaties beschikbaar. Die extra prestaties hoeven niet lineair te zijn met het aantal clusterknooppunten, aangezien de relatie sterk afhankelijk is van de technische omgeving. Zie [&#x200B; documentatie van de Cluster &#x200B;](/help/sites-deploying/recommended-deploys.md) voor meer informatie.
 
 De schatting van het aantal clusterknooppunten dat nodig is, is gebaseerd op de basisvereisten en de specifieke gebruiksgevallen van het specifieke webproject:
 
 * Vanuit het perspectief van mislukken-veiligheid, is het noodzakelijk om, voor alle milieu&#39;s te bepalen hoe kritieke mislukking en de tijd van de mislukkingscompensatie is gebaseerd op hoe lang het voor een clusterknoop vergt om terug te krijgen.
-* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor. Het in evenwicht brengen van de lading kan voor verrichtingen worden gevestigd die tot het systeem slechts toegang hebben om gelezen verrichtingen te verwerken; zie [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) voor details.
+* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor. Het in evenwicht brengen van de lading kan voor verrichtingen worden gevestigd die tot het systeem slechts toegang hebben om gelezen verrichtingen te verwerken; zie [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) voor details.
 
 ### Hardware Recommendations {#hardware-recommendations}
 
@@ -121,7 +121,7 @@ Naast de berekening voor een standaardwebtoepassing, moet u rekening houden met 
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16GB van hoop toe en vorm het [!UICONTROL DAM Update Asset] werkschema om het [ Camera Raw pakket ](/help/assets/camera-raw.md) voor het opnemen van ruwe beelden te gebruiken.
+Wijs minstens 16GB van hoop toe en vorm het [!UICONTROL DAM Update Asset] werkschema om het [&#x200B; Camera Raw pakket &#x200B;](/help/assets/camera-raw.md) voor het opnemen van ruwe beelden te gebruiken.
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Wijs minstens 16GB van hoop toe en vorm het [!UICONTROL DAM Update Asset] werksc
 
 >[!NOTE]
 >
->Zie ook de [ Gids van de Prestaties van Assets ](/help/sites-deploying/assets-performance-sizing.md).
+>Zie ook de [&#x200B; Gids van de Prestaties van Assets &#x200B;](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Beheer van meerdere sites {#multi-site-manager}
 

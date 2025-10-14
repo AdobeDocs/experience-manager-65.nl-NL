@@ -32,7 +32,7 @@ Als u een back-up moet maken van een kleine hoeveelheid inhoud die verloren gaat
 * U kunt de gegevens van een ander systeem ophalen via een pakket
 * of u herstelt de back-up op een tijdelijk systeem, maakt een inhoudspakket en implementeert dit op het systeem, waar deze inhoud ontbreekt.
 
-Voor details, zie [ Steun van het Pakket ](/help/sites-administering/backup-and-restore.md#package-backup) hieronder.
+Voor details, zie [&#x200B; Steun van het Pakket &#x200B;](/help/sites-administering/backup-and-restore.md#package-backup) hieronder.
 
 ## Timing {#timing}
 
@@ -71,7 +71,7 @@ In elk geval maakt de back-up een afbeelding (of opname) van de opslagplaats. Ve
 
 >[!CAUTION]
 >
->Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM met MongoDB gebruikt, zie documentatie over hoe te om [ MongoDB inheemse reservehulpmiddelen ](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/) te gebruiken.
+>Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM met MongoDB gebruikt, zie documentatie over hoe te om [&#x200B; MongoDB inheemse reservehulpmiddelen &#x200B;](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/) te gebruiken.
 
 ### AEM online back-up {#aem-online-backup}
 
@@ -79,7 +79,7 @@ Met een online back-up van uw opslagplaats kunt u back-upbestanden maken, downlo
 
 >[!CAUTION]
 >
->AEM Online Steun niet gelijktijdig met [ in werking stellen de Inzameling van het huisvuil van de Datastore ](/help/sites-administering/data-store-garbage-collection.md) of [ Opruiming van de Revisie ](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
+>AEM Online Steun niet gelijktijdig met [&#x200B; in werking stellen de Inzameling van het huisvuil van de Datastore &#x200B;](/help/sites-administering/data-store-garbage-collection.md) of [&#x200B; Opruiming van de Revisie &#x200B;](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
 
 Wanneer het beginnen van een steun kunt u a **Weg van het Doel** en/of a **Vertraging** specificeren.
 
@@ -111,7 +111,7 @@ Een vertraging van 1 milliseconde resulteert doorgaans in 10% CPU-gebruik en een
 
 >[!NOTE]
 >
->Zie [ hoe AEM Online Steun ](#how-aem-online-backup-works) voor interne details van het proces werkt.
+>Zie [&#x200B; hoe AEM Online Steun &#x200B;](#how-aem-online-backup-works) voor interne details van het proces werkt.
 
 Een back-up maken:
 
@@ -120,11 +120,11 @@ Een back-up maken:
 1. Ga naar **Hulpmiddelen - Verrichtingen - Steun.**
 1. Klik **creëren**. De back-upconsole wordt geopend.
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1a.png)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1a.png)
 
 1. Voor de reserveconsole, specificeer de **[Weg van het Doel](#aem-online-backup)** en **[Vertraging](#aem-online-backup)**.
 
-   ![ chlimage_1-2 ](assets/chlimage_1-2a.png)
+   ![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2a.png)
 
    >[!NOTE]
    >
@@ -141,7 +141,7 @@ Een back-up maken:
 
 1. Wanneer de back-up is voltooid, worden de ZIP-bestanden weergegeven in het back-upvenster.
 
-   ![ chlimage_1-3 ](assets/chlimage_1-3a.png)
+   ![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3a.png)
 
    >[!NOTE]
    >
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->Een steun kan ook worden teweeggebracht [ gebruikend MBans die door AEM ](/help/sites-administering/jmx-console.md) wordt verstrekt.
+>Een steun kan ook worden teweeggebracht [&#x200B; gebruikend MBans die door AEM &#x200B;](/help/sites-administering/jmx-console.md) wordt verstrekt.
 
 ### Back-up van bestandssysteemmomentopname {#filesystem-snapshot-backup}
 
@@ -250,7 +250,7 @@ U kunt een back-up als volgt herstellen:
 
 Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, waarmee u back-ups kunt maken van inhoud en deze weer kunt terugzetten. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
 
-Voor details op de eigenschappen en de nadelen van elk van deze individuele inhouds pakketformaten, zie [ hoe te met Pakketten ](/help/sites-administering/package-manager.md) werken.
+Voor details op de eigenschappen en de nadelen van elk van deze individuele inhouds pakketformaten, zie [&#x200B; hoe te met Pakketten &#x200B;](/help/sites-administering/package-manager.md) werken.
 
 ### Bereik van back-up {#scope-of-backup}
 

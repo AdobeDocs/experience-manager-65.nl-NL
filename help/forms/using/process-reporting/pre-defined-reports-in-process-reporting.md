@@ -35,11 +35,11 @@ Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer d
 1. Om de lijst van vooraf bepaalde rapporten in Proces Meldend te bekijken, op het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
 1. Klik de **Lange Lange Lange Lopende knoop van Processen** rapport.
 
-   ![ long_running_node ](assets/long_running_node.png)
+   ![&#x200B; long_running_node &#x200B;](assets/long_running_node.png)
 
    Wanneer u een rapport selecteert, wordt het **paneel van de Parameters van het Rapport** getoond rechts van de boommening.
 
-   ![ lang lopend de parameters van het procesrapport ](assets/report_parameters_panel.png)
+   ![&#x200B; lang lopend de parameters van het procesrapport &#x200B;](assets/report_parameters_panel.png)
 
    Parameters:
 
@@ -51,7 +51,7 @@ Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer d
 
    Het rapport toont in het **paneel van het Rapport** op het recht van het **Proces Meldend** venster.
 
-   ![ long_running_processes ](assets/long_running_processes.png)
+   ![&#x200B; long_running_processes &#x200B;](assets/long_running_processes.png)
 
    Gebruik de opties in de hogere juiste hoek van het **paneel van het Rapport** om de volgende verrichtingen op het rapport uit te voeren.
 
@@ -68,11 +68,11 @@ In het rapport Procesduur wordt het aantal instanties van een Forms-proces weerg
 1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
 1. Klik de **rapportknoop van de Duur van 0&rbrace; Processen &lbrace;.**
 
-   ![ process_duration_node ](assets/process_duration_node.png)
+   ![&#x200B; process_duration_node &#x200B;](assets/process_duration_node.png)
 
    Wanneer u een rapport selecteert, wordt het **paneel van de Parameters van het Rapport** getoond rechts van de boommening.
 
-   ![ lang lopend de parameters van het procesrapport ](assets/process_duration_params.png)
+   ![&#x200B; lang lopend de parameters van het procesrapport &#x200B;](assets/process_duration_params.png)
 
    Parameters:
 
@@ -82,7 +82,7 @@ In het rapport Procesduur wordt het aantal instanties van een Forms-proces weerg
 
    Het rapportvertoningen in het **paneel van het Rapport** op het recht van het Proces Meldend venster.
 
-   ![ process_duration_report ](assets/process_duration_report.png)
+   ![&#x200B; process_duration_report &#x200B;](assets/process_duration_report.png)
 
    Gebruik de opties in de hogere juiste hoek van het **paneel van het Rapport** om de volgende verrichtingen op het rapport uit te voeren.
 
@@ -99,11 +99,11 @@ Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces da
 1. Om de vooraf bepaalde rapporten in Proces Meldend te bekijken, over het **Proces Meldend** boommening, klik de **3&rbrace; knoop van Rapporten &lbrace;.**
 1. Klik de **rapportknoop van het Volume van het 0&rbrace; Werkschema &lbrace;.**
 
-   ![ workflow_volume_node ](assets/workflow_volume_node.png)
+   ![&#x200B; workflow_volume_node &#x200B;](assets/workflow_volume_node.png)
 
    Wanneer u een rapport selecteert, wordt het **paneel van de Parameters van het Rapport** getoond rechts van de boommening.
 
-   ![ lang lopend de parameters van het procesrapport ](assets/workflow_volume_params.png)
+   ![&#x200B; lang lopend de parameters van het procesrapport &#x200B;](assets/workflow_volume_params.png)
 
    Parameters:
 
@@ -117,7 +117,7 @@ Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces da
 
    Het rapport toont in het **paneel van het Rapport** op het recht van het **Proces Meldend** venster.
 
-   ![ workflow_volume_report ](assets/workflow_volume_report.png)
+   ![&#x200B; workflow_volume_report &#x200B;](assets/workflow_volume_report.png)
 
    Gebruik de opties in de hogere juiste hoek van het **paneel van het Rapport** om de volgende verrichtingen op het rapport uit te voeren.
 

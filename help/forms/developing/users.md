@@ -30,15 +30,15 @@ U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die
 
 Met Gebruikersbeheer kunt u rollen en machtigingen toewijzen, verwijderen en bepalen. Het laat u ook toe om, domeinen, gebruikers, en groepen toe te wijzen te verwijderen en te vragen. Tot slot kunt u Gebruikersbeheer gebruiken om gebruikers voor authentiek te verklaren.
 
-In [ Toevoegend Gebruikers ](users.md#adding-users) u zult begrijpen hoe te gebruikers programmatically toe te voegen. In deze sectie wordt de directoryservice-API gebruikt.
+In [&#x200B; Toevoegend Gebruikers &#x200B;](users.md#adding-users) u zult begrijpen hoe te gebruikers programmatically toe te voegen. In deze sectie wordt de directoryservice-API gebruikt.
 
-In [ het Schrappen van Gebruikers ](users.md#deleting-users) zult u begrijpen hoe te gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
+In [&#x200B; het Schrappen van Gebruikers &#x200B;](users.md#deleting-users) zult u begrijpen hoe te gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
 
-In [ het Leiden Gebruikers en Groepen ](users.md#managing-users-and-groups) zult u het verschil tussen een lokale gebruiker en een foldergebruiker begrijpen, en voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om gebruikers en groepen programmatically te beheren. In deze sectie wordt de directoryservice-API gebruikt.
+In [&#x200B; het Leiden Gebruikers en Groepen &#x200B;](users.md#managing-users-and-groups) zult u het verschil tussen een lokale gebruiker en een foldergebruiker begrijpen, en voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om gebruikers en groepen programmatically te beheren. In deze sectie wordt de directoryservice-API gebruikt.
 
-In [ het Leiden Rollen en Toestemmingen ](users.md#managing-roles-and-permissions) zult u over de systeemrollen en toestemmingen leren en wat u programmatically kunt doen om hen te verhogen, en voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om rollen en toestemmingen programmatically te beheren. Deze sectie gebruikt zowel de API van de Dienst van de Manager van de Folder als de Dienst API van de Manager van de Vergunning.
+In [&#x200B; het Leiden Rollen en Toestemmingen &#x200B;](users.md#managing-roles-and-permissions) zult u over de systeemrollen en toestemmingen leren en wat u programmatically kunt doen om hen te verhogen, en voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om rollen en toestemmingen programmatically te beheren. Deze sectie gebruikt zowel de API van de Dienst van de Manager van de Folder als de Dienst API van de Manager van de Vergunning.
 
-In [ voor authentiek verklaren Gebruikers ](users.md#authenticating-users) zult u voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om gebruikers programmatically voor authentiek te verklaren. Deze sectie gebruikt de Service API van de Manager van de Vergunning.
+In [&#x200B; voor authentiek verklaren Gebruikers &#x200B;](users.md#authenticating-users) zult u voorbeelden van zien hoe te om Java en de Webdienst APIs te gebruiken om gebruikers programmatically voor authentiek te verklaren. Deze sectie gebruikt de Service API van de Manager van de Vergunning.
 
 **Begrijpend het authentificatieproces**
 
@@ -46,7 +46,7 @@ Gebruikersbeheer biedt ingebouwde verificatiefunctionaliteit en biedt u ook de m
 
 Het volgende diagram toont de interactie onder een eind - gebruiker die aan login, Gebruikersbeheer, en de authentificatieleverancier probeert.
 
-![ mu_mu_umauth_process ](assets/mu_mu_umauth_process.png)
+![&#x200B; mu_mu_umauth_process &#x200B;](assets/mu_mu_umauth_process.png)
 
 De volgende lijst beschrijft elke stap van het authentificatieproces.
 
@@ -383,7 +383,7 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 
 ## Groepen maken {#creating-groups}
 
-U kunt de API voor directoryservice (Java en webservice) gebruiken om AEM Forms-groepen programmatisch te maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie [ het Leiden Gebruikers en Groepen ](users.md#managing-users-and-groups).)
+U kunt de API voor directoryservice (Java en webservice) gebruiken om AEM Forms-groepen programmatisch te maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie [&#x200B; het Leiden Gebruikers en Groepen &#x200B;](users.md#managing-users-and-groups).)
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -406,7 +406,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt DirectoryManagerService**
 
@@ -537,11 +537,11 @@ Voer de volgende taken uit om gebruikers, groepen en domeinen programmatisch te 
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   Maak een `DirectoryManagerServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat. Voor informatie, zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Maak een `DirectoryManagerServiceClient` -object door de constructor ervan te gebruiken en een `ServiceClientFactory` -object door te geven dat verbindingseigenschappen bevat. Voor informatie, zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Roep de juiste gebruikers- of groepsbewerkingen aan.
 
@@ -569,8 +569,8 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 1. Inclusief projectbestanden.
 
-   * Creeer een Microsoft .NET cliëntassemblage die de Manager WSDL van de Folder verbruikt. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [ Creërend een .NET cliëntassemblage die het coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
+   * Creeer een Microsoft .NET cliëntassemblage die de Manager WSDL van de Folder verbruikt. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [&#x200B; Creërend een .NET cliëntassemblage die het coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
 
 1. Creeer een cliënt DirectoryManagerService.
 
@@ -582,7 +582,7 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
    >[!NOTE]
    >
-   >Als het maximale aantal resultaten niet is opgegeven in het zoekfilter (via het `PrincipalSearchFilter.resultsMax` -veld), worden maximaal 1000 resultaten geretourneerd. Dit gedrag is anders dan wat er gebeurt met de Java API, waarbij 10 resultaten het standaardmaximum zijn. Zoekmethoden zoals `findGroupMembers` leveren ook alleen resultaten op als het maximale aantal resultaten is opgegeven in het zoekfilter (bijvoorbeeld via het `GroupMembershipSearchFilter.resultsMax` -veld). Dit geldt voor alle zoekfilters die overerven van de klasse `GenericSearchFilter` . Voor meer informatie, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   >Als het maximale aantal resultaten niet is opgegeven in het zoekfilter (via het `PrincipalSearchFilter.resultsMax` -veld), worden maximaal 1000 resultaten geretourneerd. Dit gedrag is anders dan wat er gebeurt met de Java API, waarbij 10 resultaten het standaardmaximum zijn. Zoekmethoden zoals `findGroupMembers` leveren ook alleen resultaten op als het maximale aantal resultaten is opgegeven in het zoekfilter (bijvoorbeeld via het `GroupMembershipSearchFilter.resultsMax` -veld). Dit geldt voor alle zoekfilters die overerven van de klasse `GenericSearchFilter` . Voor meer informatie, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
    Aangezien de geretourneerde waarde in dit geval een `object[]` bevattende `Principal` -objecten is, doorloopt u het resultaat en cast u de `Principal` -objecten naar `User` - of `Group` -objecten.
 
@@ -729,7 +729,7 @@ Als de authentificatie succesvol is, heeft de toepassing toegang tot een beveili
 
 Het volgende diagram toont de logische stroom van de toepassing.
 
-![ au_au_umauth_process ](assets/au_au_umauth_process.png)
+![&#x200B; au_au_umauth_process &#x200B;](assets/au_au_umauth_process.png)
 
 De volgende lijst beschrijft de stappen in dit diagram
 
@@ -828,8 +828,8 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 1. Inclusief projectbestanden.
 
-   * Creeer een Microsoft .NET cliëntassemblage die de Manager WSDL van de Authentificatie verbruikt. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie &quot;Verwijzend de .NET cliëntassemblage&quot;in [ het Aanhalen van AEM Forms gebruikend het Coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Creeer een Microsoft .NET cliëntassemblage die de Manager WSDL van de Authentificatie verbruikt. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie &quot;Verwijzend de .NET cliëntassemblage&quot;in [&#x200B; het Aanhalen van AEM Forms gebruikend het Coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Maak een AuthenticationManagerService-client.
 
@@ -855,7 +855,7 @@ U kunt gebruikers programmatically synchroniseren door de API van het Beheer van
 
 In het volgende diagram ziet u hoe AEM Forms synchroniseert met een gebruikersinterface.
 
-![ ps_ps_umauth_sync ](assets/ps_ps_umauth_sync.png)
+![&#x200B; ps_ps_umauth_sync &#x200B;](assets/ps_ps_umauth_sync.png)
 
 De volgende lijst beschrijft de stappen in dit diagram
 
@@ -906,7 +906,7 @@ Voordat u gebruikers programmatisch kunt synchroniseren, moet u een `UserManager
 
 **specificeer het ondernemingsdomein**
 
-Voordat u een synchronisatiebewerking uitvoert met de API voor gebruikersbeheer, geeft u het ondernemingsdomein op waartoe gebruikers behoren. U kunt een of meerdere ondernemingsdomeinen opgeven. Alvorens u een synchronisatieverrichting programmatically kunt uitvoeren, moet u een ondernemingsdomein opstelling gebruikend de Console van het Beleid. (Zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Voordat u een synchronisatiebewerking uitvoert met de API voor gebruikersbeheer, geeft u het ondernemingsdomein op waartoe gebruikers behoren. U kunt een of meerdere ondernemingsdomeinen opgeven. Alvorens u een synchronisatieverrichting programmatically kunt uitvoeren, moet u een ondernemingsdomein opstelling gebruikend de Console van het Beleid. (Zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **haalt de synchronisatieverrichting** aan
 

@@ -30,7 +30,7 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Componenten van de Kern sinds [ versie 1.1.0 van de Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
+>De hier beschreven functionaliteit is beschikbaar voor alle Componenten van de Kern sinds [&#x200B; versie 1.1.0 van de Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
@@ -48,7 +48,7 @@ Binnen AEM wordt de levering bereikt met de extensie selector `model` en `.json`
 
 1. Levert inhoud zoals:
 
-   ![ chlimage_1-192 ](assets/chlimage_1-192.png)
+   ![&#x200B; chlimage_1-192 &#x200B;](assets/chlimage_1-192.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
@@ -66,15 +66,15 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 * Levert inhoud zoals:
 
-  ![ chlimage_1-193 ](assets/chlimage_1-193.png)
+  ![&#x200B; chlimage_1-193 &#x200B;](assets/chlimage_1-193.png)
 
   >[!NOTE]
   >
-  >U kunt [ uw eigen componenten ](/help/sites-developing/json-exporter-components.md) aanpassen om tot dit gegeven toegang te hebben en te gebruiken.
+  >U kunt [&#x200B; uw eigen componenten &#x200B;](/help/sites-developing/json-exporter-components.md) aanpassen om tot dit gegeven toegang te hebben en te gebruiken.
 
   >[!NOTE]
   >
-  >Hoewel niet een standaardimplementatie, [ veelvoudige selecteurs worden gesteund, ](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
+  >Hoewel niet een standaardimplementatie, [&#x200B; veelvoudige selecteurs worden gesteund, &#x200B;](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
@@ -86,7 +86,7 @@ Zie ook:
 
 * Modellen voor verkopen:
 
-   * [ het Verdelen Modellen - het associëren van een modelklasse met een middeltype sinds 130 ](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [&#x200B; het Verdelen Modellen - het associëren van een modelklasse met een middeltype sinds 130 &#x200B;](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM met JSON:
 
@@ -96,10 +96,10 @@ Zie ook:
 
 Zie voor meer informatie:
 
-* Het [ onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets ](/help/assets/content-fragments/content-fragments.md)
+* Het [&#x200B; onderwerp van de Fragmenten van de Inhoud in de gebruikersgids van Assets &#x200B;](/help/assets/content-fragments/content-fragments.md)
 
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [ component van het Fragment van de Inhoud ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en de [&#x200B; component van het Fragment van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=nl-NL)

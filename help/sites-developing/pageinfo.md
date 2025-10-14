@@ -34,7 +34,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* Systeemeigen mobiele toepassingen
 >* Andere kanalen en aanraakpunten buiten AEM
 >
->Zie het document [ JSON Exporter voor de Diensten van de Inhoud ](/help/sites-developing/json-exporter.md).
+>Zie het document [&#x200B; JSON Exporter voor de Diensten van de Inhoud &#x200B;](/help/sites-developing/json-exporter.md).
 
 ## Paginainformatieproviders {#page-information-providers}
 
@@ -45,11 +45,11 @@ Paginacomponenten kunnen worden gekoppeld aan een of meer `com.day.cq.wcm.api.Pa
 1. Het PageInfo-servlet roept elke PageInfoProvider aan die aan de component is gekoppeld.
 1. De servlet aggregeert de meta-gegevens die elke PageInfoProvider terugkeert en voegt de meta-gegevens aan de reactie van HTTP in een voorwerp JSON toe.
 
-![ chlimage_1-2 ](assets/chlimage_1-2a.png)
+![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
->Net als PageInfoProviders gebruikt u ListInfoProviders om lijsten met informatie in JSON-indeling bij te werken. (Zie [ Aanpassen van de Console van het Beleid van Websites ](/help/sites-developing/customizing-siteadmin.md).)
+>Net als PageInfoProviders gebruikt u ListInfoProviders om lijsten met informatie in JSON-indeling bij te werken. (Zie [&#x200B; Aanpassen van de Console van het Beleid van Websites &#x200B;](/help/sites-developing/customizing-siteadmin.md).)
 
 ## Standaardpaginainformatieproviders {#default-page-information-providers}
 
@@ -494,11 +494,11 @@ De service past het cumulatieve resultaat van alle filters toe. De volgende filt
 
 >[!NOTE]
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 Bijvoorbeeld, om de dienst te vormen gebruikend CRXDE Lite:
 
-1. Open CRXDE Lite ([ http://localhost:4502/crx/de ](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite ([&#x200B; http://localhost:4502/crx/de &#x200B;](http://localhost:4502/crx/de)).
 1. Maak een knooppunt in de configuratiemap van uw toepassing:
 
    * Naam: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -554,7 +554,7 @@ Voor bronnen die uw component van de toepassingspagina als `sling:resourceType` 
 
 ### Voorbeeld van implementatie van PageInfoProvider {#example-pageinfoprovider-implementation}
 
-De volgende klasse van Java voert [ PageInfoProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) uit en keert gepubliceerde URL van het huidige paginamiddel terug.
+De volgende klasse van Java voert [&#x200B; PageInfoProvider &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) uit en keert gepubliceerde URL van het huidige paginamiddel terug.
 
 ```java
 package com.adobe.example;
@@ -603,7 +603,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 
 In het volgende voorbeeld, in CRXDE Lite, wordt de paginacomponent getoond die is geconfigureerd om de PageUrlInfoProvider-service te gebruiken:
 
-![ chlimage_1-3 ](assets/chlimage_1-3a.png)
+![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3a.png)
 
 De PageUrlInfoProvider-service retourneert de volgende gegevens voor het knooppunt `/content/we-retail/us/en` :
 

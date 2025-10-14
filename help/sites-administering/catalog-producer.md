@@ -24,13 +24,13 @@ Met de Adobe Experience Manager (AEM) Assets Catalog Producer, kunt u catalogi v
 
 ## Integreren met InDesign-server {#integrating-with-indesign-server}
 
-Als deel van het integratieproces, vorm het **DAM de werkschema van de Activa van de Update**, dat voor integratie met InDesign geschikt is. Bovendien vorm een volmachtsarbeider voor de server van het InDesign. Voor details, zie [ Integrerend AEM Assets met InDesign Server ](/help/assets/indesign.md).
+Als deel van het integratieproces, vorm het **DAM de werkschema van de Activa van de Update**, dat voor integratie met InDesign geschikt is. Bovendien vorm een volmachtsarbeider voor de server van het InDesign. Voor details, zie [&#x200B; Integrerend AEM Assets met InDesign Server &#x200B;](/help/assets/indesign.md).
 
 >[!NOTE]
 >
->U kunt sjablonen voor InDesigns genereren op basis van InDesigns voordat u ze importeert in AEM Assets. Voor details, zie [ Werkend met dossiers en malplaatjes ](https://helpx.adobe.com/nl/indesign/using/files-templates.html).
+>U kunt sjablonen voor InDesigns genereren op basis van InDesigns voordat u ze importeert in AEM Assets. Voor details, zie [&#x200B; Werkend met dossiers en malplaatjes &#x200B;](https://helpx.adobe.com/nl/indesign/using/files-templates.html).
 >
->U kunt de elementen in uw sjablonen van InDesigns toewijzen aan XML-labels. De toegewezen labels worden als eigenschappen weergegeven wanneer u in Catalog Producer producteigenschappen toewijst aan sjablooneigenschappen. Om over XML te leren etiketterend in de dossiers van het InDesign, zie [ het Etiketteren inhoud voor XML ](https://helpx.adobe.com/nl/indesign/using/tagging-content-xml.html).
+>U kunt de elementen in uw sjablonen van InDesigns toewijzen aan XML-labels. De toegewezen labels worden als eigenschappen weergegeven wanneer u in Catalog Producer producteigenschappen toewijst aan sjablooneigenschappen. Om over XML te leren etiketterend in de dossiers van het InDesign, zie [&#x200B; het Etiketteren inhoud voor XML &#x200B;](https://helpx.adobe.com/nl/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
 1. In de **pagina van Catalogi**, klik **&#x200B;**&#x200B;van de toolbar creëren, en selecteer dan **Catalogus** van de lijst.
 1. In **creeer de pagina van de Catalogus**, ga een naam en een beschrijving (facultatief) voor de catalogus in en specificeer markeringen, als om het even welk. U kunt ook een miniatuurafbeelding toevoegen voor de catalogus.
 
-   ![ create_catalog ](assets/create_catalog.png)
+   ![&#x200B; create_catalog &#x200B;](assets/create_catalog.png)
 
 1. Klik **sparen**. Er verschijnt een bevestigingsvenster met de melding dat de catalogus is gemaakt. Klik **Gedaan** om de dialoog te sluiten.
 1. Om de catalogus te openen u creeerde, klik het van de **pagina van Catalogi**.
@@ -63,7 +63,7 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
 
 1. Herhaal stap 6-9 om meer pagina&#39;s te maken. Om gelijkaardige pagina&#39;s voor andere producten tot stand te brengen, selecteer de pagina en klik **creeer gelijkaardige pagina&#39;s** pictogram van de toolbar.
 
-   ![ create_similar_pages ](assets/create_similar_pages.png)
+   ![&#x200B; create_similar_pages &#x200B;](assets/create_similar_pages.png)
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
 
    Klik het Add pictogram, selecteer producten van de productkiezer, en klik dan **Uitgezocht** van de toolbar.
 
-   ![ select_product ](assets/select_product.png)
+   ![&#x200B; select_product &#x200B;](assets/select_product.png)
 
 1. Van de toolbar, leidt de klik **tot**. Klik **Gedaan** om de dialoog te sluiten. Vergelijkbare pagina&#39;s worden opgenomen in uw catalogus.
 1. Om het even welk bestaand dossier van het InDesign aan uw catalogus toe te voegen, **creeer** van de toolbar, en kies **toevoegen aan bestaande pagina** optie.
@@ -79,11 +79,11 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
 
    Als de metagegevens van de producten waarnaar u verwijst in de cataloguspagina&#39;s worden gewijzigd, worden de wijzigingen niet automatisch doorgevoerd in de cataloguspagina&#39;s. Een banner geëtiketteerd **Stale** verschijnt op de productbeelden in de het van verwijzingen voorzien cataloguspagina&#39;s, erop wijzend dat de meta-gegevens voor de referenced producten niet bijgewerkt zijn.
 
-   ![ chlimage_1-117 ](assets/chlimage_1-117a.png)
+   ![&#x200B; chlimage_1-117 &#x200B;](assets/chlimage_1-117a.png)
 
    Om ervoor te zorgen dat de productbeelden op de recentste meta-gegevensveranderingen wijzen, selecteer de pagina in de console van de Catalogus en klik het **pagina van de Update** pictogram van de toolbar.
 
-   ![ chlimage_1-118 ](assets/chlimage_1-118a.png)
+   ![&#x200B; chlimage_1-118 &#x200B;](assets/chlimage_1-118a.png)
 
    >[!NOTE]
    >
@@ -94,11 +94,11 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
 1. Klik **daarna**. Om een bestaand dossier van het InDesign als omslagpagina toe te voegen, **doorbladert** naast **kiezen de doos van de Pagina van de Omslag**, en specificeert de weg voor het malplaatje van de omslagpagina.
 1. Klik **sparen**, en klik dan **Gedaan** om de bevestigingsdialoog te sluiten.
 Bij het selecteren van de **Gereed** optie, opent een dialoogdoos om te selecteren of u.pdf vertoning wilt.
-   ![ uitvoer naar pdf ](assets/CatalogPDF.png)
+   ![&#x200B; uitvoer naar pdf &#x200B;](assets/CatalogPDF.png)
 Als de optie Acrobat(PDF) is geselecteerd, wordt naast indesign-uitvoering een pdf-uitvoering gemaakt in **/jcr:content/renditions** . U kunt alle uitvoeringen downloaden door het selectievakje Uitvoeringen te selecteren in het dialoogvenster Downloaden.
 
 1. Om een voorproef voor de catalogus te produceren u creeerde, het in de **console van Catalogi** te selecteren, en dan het **pictogram van de Voorproef** van de toolbar te klikken.
 
-   ![ chlimage_1-119 ](assets/chlimage_1-119a.png)
+   ![&#x200B; chlimage_1-119 &#x200B;](assets/chlimage_1-119a.png)
 
    Bekijk de pagina&#39;s in de catalogus in de voorvertoning. Klik **dicht** om de voorproef te sluiten.

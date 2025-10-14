@@ -20,25 +20,25 @@ ht-degree: 0%
 
 # Stijl AEM CIF Core-componenten {#style-aem-cif-core-components}
 
-Het [ Project van CIF Venia ](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [ de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U zult ook een stijl tot stand brengen gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0&rbrace; Product.**
+Het [&#x200B; Project van CIF Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) is een basis van de verwijzingscode voor het gebruiken van [&#x200B; de Componenten van de Kern van CIF &#x200B;](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie inspecteert u het Venia-referentieproject en begrijpt u hoe CSS en JavaScript die door AEM CIF Core-componenten worden gebruikt, zijn geordend. U zult ook een stijl tot stand brengen gebruikend CSS om de standaardstijl van de **component bij te werken van de Teaser van het 0&rbrace; Product.**
 
 >[!TIP]
 >
->Gebruik het [ archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
+>Gebruik het [&#x200B; archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
 
 ## Wat u gaat maken
 
 In deze zelfstudie wordt een nieuwe stijl geïmplementeerd voor de component Product Teaser die op een kaart lijkt. De lessen die in de zelfstudie zijn geleerd, kunnen worden toegepast op andere CIF Core-componenten.
 
-![ wat u ](../assets/style-cif-component/what-you-will-build.png) zult bouwen
+![&#x200B; wat u &#x200B;](../assets/style-cif-component/what-you-will-build.png) zult bouwen
 
 ## Vereisten {#prerequisites}
 
-U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. Herzie de vereisten en de stappen voor [ vestiging een lokale ontwikkeling met AEM ](../develop.md).
+U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. Herzie de vereisten en de stappen voor [&#x200B; vestiging een lokale ontwikkeling met AEM &#x200B;](../develop.md).
 
 ## Het Venia-project klonen {#clone-venia-project}
 
-Wij klonen het [ Project van Venia ](https://github.com/adobe/aem-cif-guides-venia) en treden dan de standaardstijlen met voeten.
+Wij klonen het [&#x200B; Project van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) en treden dan de standaardstijlen met voeten.
 
 >[!NOTE]
 >
@@ -59,33 +59,33 @@ Wij klonen het [ Project van Venia ](https://github.com/adobe/aem-cif-guides-ven
 
 1. Voeg de noodzakelijke configuraties OSGi toe om uw instantie van AEM met een instantie van Adobe Commerce te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
 
-1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Navigeer aan `US` > `Home` pagina bij: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Op dit moment hebt u een werkende versie van een winkel die is verbonden met een Adobe Commerce-instantie. Navigeer aan `US` > `Home` pagina bij: [&#x200B; http://localhost:4502/editor.html/content/venia/us/en.html &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Je moet zien dat de winkel het Venia-thema gebruikt. Als u het hoofdmenu van de winkel uitbreidt, ziet u verschillende categorieën die aangeven dat de verbinding met Adobe Commerce werkt.
 
-   ![ Storefront die met het Thema van Venia wordt gevormd ](../assets/style-cif-component/venia-store-configured.png)
+   ![&#x200B; Storefront die met het Thema van Venia wordt gevormd &#x200B;](../assets/style-cif-component/venia-store-configured.png)
 
 ## Client Libraries en ui.frontend Module {#introduction-to-client-libraries}
 
-CSS en JavaScript verantwoordelijk voor het teruggeven van het thema/de stijlen van de storefront wordt beheerd in AEM door a [ cliëntbibliotheek ](/help/sites-developing/clientlibs.md) of clientlibs voor kort. Clientbibliotheken bieden een mechanisme om CSS en JavaScript in de code van een project te organiseren en vervolgens op de pagina te leveren.
+CSS en JavaScript verantwoordelijk voor het teruggeven van het thema/de stijlen van de storefront wordt beheerd in AEM door a [&#x200B; cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md) of clientlibs voor kort. Clientbibliotheken bieden een mechanisme om CSS en JavaScript in de code van een project te organiseren en vervolgens op de pagina te leveren.
 
 Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core Components door de CSS die door deze clientbibliotheken wordt beheerd toe te voegen en te overschrijven. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is essentieel.
 
-[ ui.frontend ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) is een specifiek [ webpack ](https://webpack.js.org/) project om alle front-end activa voor een project te beheren. Dit staat front-end ontwikkelaars toe om het even welk aantal talen en technologieën zoals [ te gebruiken TypeScript ](https://www.typescriptlang.org/), [ Volgen ](https://sass-lang.com/) en veel meer.
+[&#x200B; ui.frontend &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=nl-NL) is een specifiek [&#x200B; webpack &#x200B;](https://webpack.js.org/) project om alle front-end activa voor een project te beheren. Dit staat front-end ontwikkelaars toe om het even welk aantal talen en technologieën zoals [&#x200B; te gebruiken TypeScript &#x200B;](https://www.typescriptlang.org/), [&#x200B; Volgen &#x200B;](https://sass-lang.com/) en veel meer.
 
-De `ui.frontend` module is ook een GMaven module en geïntegreerd met het grotere project door een module NPM te gebruiken [ aem-client-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator). Tijdens een build kopieert `aem-clientlib-generator` de gecompileerde CSS- en JavaScript-bestanden naar een clientbibliotheek in de module `ui.apps` .
+De `ui.frontend` module is ook een GMaven module en geïntegreerd met het grotere project door een module NPM te gebruiken [&#x200B; aem-client-clientlib-generator &#x200B;](https://github.com/wcm-io-frontend/aem-clientlib-generator). Tijdens een build kopieert `aem-clientlib-generator` de gecompileerde CSS- en JavaScript-bestanden naar een clientbibliotheek in de module `ui.apps` .
 
-![ ui.frontend aan ui.apps architectuur ](../assets/style-cif-component/ui-frontend-architecture.png)
+![&#x200B; ui.frontend aan ui.apps architectuur &#x200B;](../assets/style-cif-component/ui-frontend-architecture.png)
 
 *Gecompileerde CSS en JavaScript worden gekopieerd van de `ui.frontend` module in de `ui.apps` module als cliëntbibliotheek tijdens een Maven bouwt*
 
 ## Teastijl bijwerken {#ui-frontend-module}
 
-Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [ winde van uw keus ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [ winde van de Code van Visual Studio ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code).
+Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de module `ui.frontend` en de clientbibliotheken werken. Gebruik [&#x200B; winde van uw keus &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#set-up-the-development-ide) om het project van Venia in te voeren. De gebruikte schermafbeeldingen zijn van [&#x200B; winde van de Code van Visual Studio &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=nl-NL#microsoft-visual-studio-code).
 
 1. Navigeer en breid **ui.frontend** module uit en breid de omslaghiërarchie aan uit: `ui.frontend/src/main/styles/commerce`
 
-   ![ ui.frontend handelsomslag ](../assets/style-cif-component/ui-frontend-commerce-folder.png)
+   ![&#x200B; ui.frontend handelsomslag &#x200B;](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
    Merk op dat er veelvoudige dossiers van de Klasse (`.scss`) onder de omslag zijn. Dit zijn de Commerce-specifieke stijlen voor elk van de Commerce-componenten.
 
@@ -133,7 +133,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
 1. Controleer het bestand `ui.frontend/dist/clientlib-site/site.css` :
 
-   ![ Gecompileerde Plaats CSS ](../assets/style-cif-component/comiled-site-css.png)
+   ![&#x200B; Gecompileerde Plaats CSS &#x200B;](../assets/style-cif-component/comiled-site-css.png)
 
    Het dossier is de gecompileerde en geminificeerde versie van alle dossiers van de Klasse in het project.
 
@@ -160,11 +160,11 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
    ...
    ```
 
-   Dit is het configuratiedossier voor [ aem-client-clientlib-generator ](https://github.com/wcm-io-frontend/aem-clientlib-generator) en bepaalt waar en hoe gecompileerde CSS en JavaScript in een de cliëntbibliotheek van AEM zal omzetten.
+   Dit is het configuratiedossier voor [&#x200B; aem-client-clientlib-generator &#x200B;](https://github.com/wcm-io-frontend/aem-clientlib-generator) en bepaalt waar en hoe gecompileerde CSS en JavaScript in een de cliëntbibliotheek van AEM zal omzetten.
 
 1. inspecteer het bestand in de module `ui.apps` : `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`
 
-   ![ Gecompileerde Plaats CSS in ui.apps ](../assets/style-cif-component/comiled-css-ui-apps.png)
+   ![&#x200B; Gecompileerde Plaats CSS in ui.apps &#x200B;](../assets/style-cif-component/comiled-css-ui-apps.png)
 
    Hiermee wordt het `site.css` -bestand naar het `ui.apps` -project gekopieerd. Het maakt nu deel uit van een clientbibliotheek met de naam `clientlib-site` en een categorie `venia.site` . Zodra het bestand deel uitmaakt van de module `ui.apps` , kan het worden geïmplementeerd in AEM.
 
@@ -174,19 +174,19 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
 1. Inspecteer dan de andere cliëntbibliotheken die door het project worden geproduceerd:
 
-   ![ Andere cliëntbibliotheken ](../assets/style-cif-component/other-clientlibs.png)
+   ![&#x200B; Andere cliëntbibliotheken &#x200B;](../assets/style-cif-component/other-clientlibs.png)
 
    Deze clientbibliotheken worden niet beheerd door de module `ui.frontend` . In plaats daarvan bevatten deze clientbibliotheken CSS- en JavaScript-afhankelijkheden die door Adobe worden geleverd. De definitie voor deze clientbibliotheken staat in het `.content.xml` -bestand onder elke map.
 
-   **client-base** - dit is een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [ de Componenten van de Kern van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) inbedt. De categorie is `venia.base` .
+   **client-base** - dit is een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) inbedt. De categorie is `venia.base` .
 
-   **client-cif** - dit is ook een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [ de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components) inbedt. De categorie is `venia.cif` .
+   **client-cif** - dit is ook een lege cliëntbibliotheek die eenvoudig de noodzakelijke gebiedsdelen van [&#x200B; de Componenten van de Kern van AEM CIF &#x200B;](https://github.com/adobe/aem-core-cif-components) inbedt. De categorie is `venia.cif` .
 
-   **clientlib-net** - dit omvat CSS nodig om AEM toe te laten de Responsieve eigenschap van het Net. Het gebruiken van het net van AEM laat [ Wijze van de Lay-out ](/help/sites-authoring/responsive-layout.md) in de Redacteur van AEM toe en geeft inhoudsauteurs de capaciteit resize componenten. De categorie is `venia.grid` en is ingesloten in de `venia.base` -bibliotheek.
+   **clientlib-net** - dit omvat CSS nodig om AEM toe te laten de Responsieve eigenschap van het Net. Het gebruiken van het net van AEM laat [&#x200B; Wijze van de Lay-out &#x200B;](/help/sites-authoring/responsive-layout.md) in de Redacteur van AEM toe en geeft inhoudsauteurs de capaciteit resize componenten. De categorie is `venia.grid` en is ingesloten in de `venia.base` -bibliotheek.
 
 1. Controleer de bestanden `customheaderlibs.html` en `customfooterlibs.html` beneath `ui.apps/src/main/content/jcr_root/apps/venia/components/page` :
 
-   ![ de manuscripten van de Kopbal en van de Voettekst van de Douane ](../assets/style-cif-component/custom-header-footer-script.png)
+   ![&#x200B; de manuscripten van de Kopbal en van de Voettekst van de Douane &#x200B;](../assets/style-cif-component/custom-header-footer-script.png)
 
    Deze manuscripten omvatten **venia.base** en **venia.cif** bibliotheken als deel van alle pagina&#39;s.
 
@@ -205,15 +205,15 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
 Nu de code-updates zijn geïmplementeerd, voegt u met de AEM-ontwerpgereedschappen een nieuw exemplaar van de component Product Teaser toe aan de startpagina van de site. Hierdoor kunnen we de bijgewerkte stijlen bekijken.
 
-1. Open een nieuw browser lusje en navigeer aan de **Pagina van het Huis** van de plaats: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Open een nieuw browser lusje en navigeer aan de **Pagina van het Huis** van de plaats: [&#x200B; http://localhost:4502/editor.html/content/venia/us/en.html &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Breid de Vinder van Activa (de zijspoor) op **uit geeft** wijze uit. Schakelaar de filter van Activa aan **Producten**.
 
-   ![ breid de Vinder en de filter van Activa door Producten ](../assets/style-cif-component/drag-drop-product-page.png) uit
+   ![&#x200B; breid de Vinder en de filter van Activa door Producten &#x200B;](../assets/style-cif-component/drag-drop-product-page.png) uit
 
 1. Sleep een nieuw product naar de startpagina in de container van de hoofdlay-out:
 
-   ![ Teaser van het Product met roze grens ](../assets/style-cif-component/pink-border-product-teaser.png)
+   ![&#x200B; Teaser van het Product met roze grens &#x200B;](../assets/style-cif-component/pink-border-product-teaser.png)
 
    U moet zien dat de Product Teaser nu een helderroze rand heeft die is gebaseerd op de eerder gemaakte CSS-regelwijziging.
 
@@ -221,11 +221,11 @@ Nu de code-updates zijn geïmplementeerd, voegt u met de AEM-ontwerpgereedschapp
 
 Controleer vervolgens de opname van de clientbibliotheken op de pagina.
 
-1. Navigeer aan de **Pagina van het Huis** van de plaats: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigeer aan de **Pagina van het Huis** van de plaats: [&#x200B; http://localhost:4502/editor.html/content/venia/us/en.html &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Selecteer het **menu van de Informatie van de Pagina** en klik **Mening zoals Gepubliceerd**:
 
-   ![ Mening zoals Gepubliceerd ](../assets/style-cif-component/view-as-published.png)
+   ![&#x200B; Mening zoals Gepubliceerd &#x200B;](../assets/style-cif-component/view-as-published.png)
 
    Hierdoor wordt de pagina geopend zonder dat de AEM-auteur JavaScript is geladen, zoals deze op de gepubliceerde site wordt weergegeven. De URL bevat de queryparameter `?wcmmode=disabled` . Bij het ontwikkelen van CSS en JavaScript is het een goede gewoonte om deze parameter te gebruiken om de pagina te vereenvoudigen zonder dat er iets hoeft te gebeuren van de auteur van AEM.
 
@@ -249,19 +249,19 @@ Controleer vervolgens de opname van de clientbibliotheken op de pagina.
    </html>
    ```
 
-   De bibliotheken van de cliënt wanneer geleverd aan de pagina worden vooraf bepaald met `/etc.clientlibs` en via a [ volmacht ](/help/sites-developing/clientlibs.md) gediend om het even wat binnen te vermijden blootstellend gevoelig `/apps` of `/libs`.
+   De bibliotheken van de cliënt wanneer geleverd aan de pagina worden vooraf bepaald met `/etc.clientlibs` en via a [&#x200B; volmacht &#x200B;](/help/sites-developing/clientlibs.md) gediend om het even wat binnen te vermijden blootstellend gevoelig `/apps` of `/libs`.
 
    Opmerking `venia/clientlibs/clientlib-site.min.css` en `venia/clientlibs/clientlib-site.min.js` . Dit zijn de gecompileerde CSS- en JavaScript-bestanden die zijn afgeleid van de module `ui.frontend` .
 
 ## Opname van clientbibliotheek met paginasjablonen {#client-library-inclusion-pagetemplates}
 
-Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientzijde. Inspecteer daarna hoe het geproduceerde project de `clientlib-site` bibliotheken via [ Malplaatjes van de Pagina ](/help/sites-developing/templates.md) omvat.
+Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientzijde. Inspecteer daarna hoe het geproduceerde project de `clientlib-site` bibliotheken via [&#x200B; Malplaatjes van de Pagina &#x200B;](/help/sites-developing/templates.md) omvat.
 
-1. Navigeer aan de **Pagina van het Huis** van de plaats binnen de Redacteur van AEM: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigeer aan de **Pagina van het Huis** van de plaats binnen de Redacteur van AEM: [&#x200B; http://localhost:4502/editor.html/content/venia/us/en.html &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Selecteer het **menu van de Informatie van de Pagina** en klik **uitgeven Malplaatje**:
 
-   ![ geef het malplaatje ](../assets/style-cif-component/edit-template.png) uit
+   ![&#x200B; geef het malplaatje &#x200B;](../assets/style-cif-component/edit-template.png) uit
 
    Dit opent het **Bestemmende malplaatje van de Pagina** het **Huis** pagina is gebaseerd op.
 
@@ -271,11 +271,11 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
 1. In de hogere linkerhoek, selecteer het **pictogram van de Informatie van de Pagina** en klik **Beleid van de Pagina**.
 
-   ![ het menupunt van het beleid van de Pagina ](../assets/style-cif-component/page-policy-menu.png)
+   ![&#x200B; het menupunt van het beleid van de Pagina &#x200B;](../assets/style-cif-component/page-policy-menu.png)
 
 1. Hiermee opent u het paginabeleid voor de sjabloon Openingspagina:
 
-   ![ Beleid van de Pagina - landende pagina ](../assets/style-cif-component/page-policy-properties.png)
+   ![&#x200B; Beleid van de Pagina - landende pagina &#x200B;](../assets/style-cif-component/page-policy-properties.png)
 
    Aan de rechterkant kunt u een lijst van cliëntbibliotheken **categorieën** zien die op alle pagina&#39;s zullen worden omvat die dit malplaatje gebruiken.
 
@@ -292,13 +292,13 @@ In de vorige oefening, werd een update gemaakt aan een dossier van de Klasse in 
 
 Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript vanuit de lokale instantie van AEM geleverd, maar kan de ontwikkelaar de stijlen en JavaScript in de module `ui.frontend` wijzigen.
 
-1. In browser navigeer aan het **Huis** pagina en **Mening zoals Gepubliceerd**: [ http://localhost:4502/content/venia/us/en.html?wcmmode=disabled ](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. In browser navigeer aan het **Huis** pagina en **Mening zoals Gepubliceerd**: [&#x200B; http://localhost:4502/content/venia/us/en.html?wcmmode=disabled &#x200B;](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
 
 1. Bekijk de bron van de pagina en **exemplaar** onbewerkte HTML van de pagina.
 
 1. Ga terug naar de IDE van uw keuze onder de module `ui.frontend` om het bestand te openen: `ui.frontend/src/main/static/index.html`
 
-   ![ Statisch dossier van HTML ](../assets/style-cif-component/static-index-html.png)
+   ![&#x200B; Statisch dossier van HTML &#x200B;](../assets/style-cif-component/static-index-html.png)
 
 1. Overschrijf de inhoud van `index.html` en **deeg** HTML in de vorige stap wordt gekopieerd die.
 
@@ -326,15 +326,15 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript v
    $ npm start
    ```
 
-   Dit begint webpack-dev-server op [ http://localhost:8080/](http://localhost:8080/)
+   Dit begint webpack-dev-server op [&#x200B; http://localhost:8080/](http://localhost:8080/)
 
    >[!CAUTION]
    >
    >Als er een fout met betrekking tot Voldoende antwoorden optreedt, stopt u de server en voert u de opdracht `npm rebuild node-sass` uit. Herhaal de bovenstaande stappen. Dit kan gebeuren als u een andere versie van `npm` en `node` hebt opgegeven in het project `aem-cif-guides-venia/pom.xml` .
 
-1. Navigeer aan [ http://localhost:8080/ ](http://localhost:8080/) in een nieuw lusje met zelfde browser zoals het programma geopende instantie van AEM. U moet de startpagina van Venia zien via de webpack-dev-server:
+1. Navigeer aan [&#x200B; http://localhost:8080/ &#x200B;](http://localhost:8080/) in een nieuw lusje met zelfde browser zoals het programma geopende instantie van AEM. U moet de startpagina van Venia zien via de webpack-dev-server:
 
-   ![ WebPack dev server op haven 80 ](../assets/style-cif-component/webpack-dev-server-port80.png)
+   ![&#x200B; WebPack dev server op haven 80 &#x200B;](../assets/style-cif-component/webpack-dev-server-port80.png)
 
    Laat de webpack-dev-server actief. Het wordt gebruikt in de volgende oefening.
 
@@ -433,9 +433,9 @@ Terugkeer aan winde en het geproduceerde project.
 
    De kaartstijl wordt nu weerspiegeld in de webpack-dev-server:
 
-   ![ het teaserveranderingen van de Server van de Dev van de Pakket Dev ](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
+   ![&#x200B; het teaserveranderingen van de Server van de Dev van de Pakket Dev &#x200B;](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   De wijzigingen zijn echter nog niet geïmplementeerd in AEM. U kunt [ het oplossingsdossier hier ](../assets/style-cif-component/_productteaser.scss) downloaden.
+   De wijzigingen zijn echter nog niet geïmplementeerd in AEM. U kunt [&#x200B; het oplossingsdossier hier &#x200B;](../assets/style-cif-component/_productteaser.scss) downloaden.
 
 1. Implementeer de updates voor AEM met behulp van uw Maven-vaardigheden via een opdrachtregelterminal:
 
@@ -445,27 +445,27 @@ Terugkeer aan winde en het geproduceerde project.
    ```
 
    >[!NOTE]
-   >Er zijn extra [ Opstelling van winde en Hulpmiddelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL#set-up-an-integrated-development-environment) die projectdossiers rechtstreeks aan een lokale instantie van AEM kunnen synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
+   >Er zijn extra [&#x200B; Opstelling van winde en Hulpmiddelen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=nl-NL#set-up-an-integrated-development-environment) die projectdossiers rechtstreeks aan een lokale instantie van AEM kunnen synchroniseren zonder het moeten een volledige Gemaakt bouwstijl uitvoeren.
 
 ## Bijgewerkte producttaser weergeven {#view-updated-product-teaser}
 
 Nadat de code voor het project aan AEM wordt opgesteld, zou u de veranderingen in de Teaser van het Product moeten kunnen zien.
 
-1. Keer aan uw browser terug en vernieuw de Homepage: [ http://localhost:4502/editor.html/content/venia/us/en.html ](http://localhost:4502/editor.html/content/venia/us/en.html). De bijgewerkte stijlen voor productgummeters moeten worden toegepast.
+1. Keer aan uw browser terug en vernieuw de Homepage: [&#x200B; http://localhost:4502/editor.html/content/venia/us/en.html &#x200B;](http://localhost:4502/editor.html/content/venia/us/en.html). De bijgewerkte stijlen voor productgummeters moeten worden toegepast.
 
-   ![ Bijgewerkte stijl van de Teaser van het Product ](../assets/style-cif-component/product-teaser-new-style.png)
+   ![&#x200B; Bijgewerkte stijl van de Teaser van het Product &#x200B;](../assets/style-cif-component/product-teaser-new-style.png)
 
 1. Experimenteer door extra Product teasers toe te voegen. Gebruik de modus Lay-out om de breedte en verschuiving van de componenten te wijzigen en meerdere trappen in een rij weer te geven.
 
-   ![ Veelvoudige Teasers van het Product ](../assets/style-cif-component/multiple-teasers-final.png)
+   ![&#x200B; Veelvoudige Teasers van het Product &#x200B;](../assets/style-cif-component/multiple-teasers-final.png)
 
 ## Problemen oplossen {#troubleshooting}
 
-U kunt in [ CRXDE-Lite ](http://localhost:4502/crx/de/index.jsp) verifiëren dat het bijgewerkte CSS dossier is opgesteld: [ http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css ](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+U kunt in [&#x200B; CRXDE-Lite &#x200B;](http://localhost:4502/crx/de/index.jsp) verifiëren dat het bijgewerkte CSS dossier is opgesteld: [&#x200B; http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css &#x200B;](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 Wanneer u nieuwe CSS- en/of JavaScript-bestanden implementeert, is het ook belangrijk ervoor te zorgen dat de browser geen bestanden met een vaste naam levert. U kunt dit voorkomen door de browsercache te wissen of een nieuwe browsersessie te starten.
 
-AEM probeert ook clientbibliotheken in cache te plaatsen voor prestaties. Soms, na een codeplaatsing worden de oudere dossiers gediend. U kunt het geheime voorgeheugen van de cliëntbibliotheek van AEM manueel ongeldig maken gebruikend het [ hulpmiddel van de Bibliotheken van de Cliënt van de Rebuild ](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *ongeldig maken Caches is de aangewezen methode als u vermoedt AEM een oude versie van een cliëntbibliotheek in het voorgeheugen ondergebracht heeft. Het opnieuw bouwen van Bibliotheken is inefficiënt en tijdrovend.*
+AEM probeert ook clientbibliotheken in cache te plaatsen voor prestaties. Soms, na een codeplaatsing worden de oudere dossiers gediend. U kunt het geheime voorgeheugen van de cliëntbibliotheek van AEM manueel ongeldig maken gebruikend het [&#x200B; hulpmiddel van de Bibliotheken van de Cliënt van de Rebuild &#x200B;](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *ongeldig maken Caches is de aangewezen methode als u vermoedt AEM een oude versie van een cliëntbibliotheek in het voorgeheugen ondergebracht heeft. Het opnieuw bouwen van Bibliotheken is inefficiënt en tijdrovend.*
 
 ## Gefeliciteerd {#congratulations}
 
@@ -473,15 +473,15 @@ U hebt uw eerste AEM CIF Core Component vormgegeven en u hebt een webpack-ontwik
 
 ## Bonus Challenge {#bonus-challenge}
 
-Gebruik het [ systeem van de Stijl van AEM ](/help/sites-authoring/style-system.md) om twee stijlen tot stand te brengen die door een inhoudsauteur kunnen worden in- en uitgeschakeld. [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
+Gebruik het [&#x200B; systeem van de Stijl van AEM &#x200B;](/help/sites-authoring/style-system.md) om twee stijlen tot stand te brengen die door een inhoudsauteur kunnen worden in- en uitgeschakeld. [&#x200B; het Ontwikkelen met het Systeem van de Stijl &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL) omvat gedetailleerde stappen en informatie over hoe te om dit te verwezenlijken.
 
-![ Uitdaging van de Bonus - stijlSysteem ](../assets/style-cif-component/bonus-challenge.png)
+![&#x200B; Uitdaging van de Bonus - stijlSysteem &#x200B;](../assets/style-cif-component/bonus-challenge.png)
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype)
-* [ de Componenten van de Kern van AEM CIF ](https://github.com/adobe/aem-core-cif-components)
-* [ opstelling een Lokale Milieu van de Ontwikkeling van AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL)
+* [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype)
+* [&#x200B; de Componenten van de Kern van AEM CIF &#x200B;](https://github.com/adobe/aem-core-cif-components)
+* [&#x200B; opstelling een Lokale Milieu van de Ontwikkeling van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=nl-NL)
 * [Client-Side bibliotheken](/help/sites-developing/clientlibs.md)
-* [ Begonnen het worden met AEM Sites ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
-* [ het Ontwikkelen met het Systeem van de Stijl ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL)
+* [&#x200B; Begonnen het worden met AEM Sites &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL)
+* [&#x200B; het Ontwikkelen met het Systeem van de Stijl &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=nl-NL)

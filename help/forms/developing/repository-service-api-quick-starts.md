@@ -48,7 +48,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 De meeste AEM Forms-opslagplaats begint snel met interactie met een toepassing met de naam `Applications/FormsApplication,`, zoals in de volgende afbeelding wordt getoond.
 
-De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication` . (Zie [ Snel Begin (SOAP wijze): Creërend een omslag gebruikend Java API ](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication` . (Zie [&#x200B; Snel Begin (SOAP wijze): Creërend een omslag gebruikend Java API &#x200B;](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Het pad naar een resource in de AEM Forms-opslagplaats is:
 
@@ -60,11 +60,11 @@ Het pad naar een resource in de AEM Forms-opslagplaats is:
 
 >[!NOTE]
 >
->Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Voor informatie over het creëren van een toepassing die Workbench gebruikt, zie [ Begonnen het worden met procesontwerp ](https://www.adobe.com/go/learn_aemforms_workbench_65).
+>Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Voor informatie over het creëren van een toepassing die Workbench gebruikt, zie [&#x200B; Begonnen het worden met procesontwerp &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Snel starten (SOAP modus): een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java leidt tot een omslag genoemd *FormsFolder* in de volgende plaats `/Applications/FormsApplication/1.0/`. (Zie [ Creërend Omslagen ](/help/forms/developing/aem-forms-repository.md#creating-folders).)
+Het volgende de codevoorbeeld van Java leidt tot een omslag genoemd *FormsFolder* in de volgende plaats `/Applications/FormsApplication/1.0/`. (Zie [&#x200B; Creërend Omslagen &#x200B;](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
 ```java
  /*
@@ -170,7 +170,7 @@ Het volgende de codevoorbeeld van Java leidt tot een omslag genoemd *FormsFolder
 
 ## Snel starten (SOAP modus): een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java schrijft een middel genoemd *loan.xdp* in de bewaarplaats. De bron wordt toegevoegd aan de locatie `/Applications/FormsApplication/1.0/FormsFolder` . (Zie [ schrijvend Middelen ](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+Het volgende de codevoorbeeld van Java schrijft een middel genoemd *loan.xdp* in de bewaarplaats. De bron wordt toegevoegd aan de locatie `/Applications/FormsApplication/1.0/FormsFolder` . (Zie [&#x200B; schrijvend Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```java
  /*
@@ -298,7 +298,7 @@ Het volgende de codevoorbeeld van Java schrijft een middel genoemd *loan.xdp* in
 
 ## Snel starten (SOAP modus): bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Applications/FormsApplication/1.0/FormsFolder` bevinden. (Zie [ het Lijst Middelen ](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Applications/FormsApplication/1.0/FormsFolder` bevinden. (Zie [&#x200B; het Lijst Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*
@@ -397,7 +397,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Appli
 
 ## Snel starten (SOAP modus): Een bron lezen met de Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java leest een middel genoemd *Loan.xdp* van de bewaarplaats. Het XDP-bestand staat in `/Applications/FormsApplication/1.0/FormsFolder/` . (Zie [ Leesmiddelen ](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+Het volgende de codevoorbeeld van Java leest een middel genoemd *Loan.xdp* van de bewaarplaats. Het XDP-bestand staat in `/Applications/FormsApplication/1.0/FormsFolder/` . (Zie [&#x200B; Leesmiddelen &#x200B;](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```java
  /*
@@ -498,7 +498,7 @@ Het volgende de codevoorbeeld van Java leest een middel genoemd *Loan.xdp* van d
 
 ## Snel starten (SOAP modus): Een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-Het volgende Java-codevoorbeeld wordt `/Applications/FormsApplication/1.0/FormsFolder` bijgewerkt door de beschrijving ervan te wijzigen. (Zie [ Bijwerkend Middelen ](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+Het volgende Java-codevoorbeeld wordt `/Applications/FormsApplication/1.0/FormsFolder` bijgewerkt door de beschrijving ervan te wijzigen. (Zie [&#x200B; Bijwerkend Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```java
  /*
@@ -610,7 +610,7 @@ Het volgende Java-codevoorbeeld wordt `/Applications/FormsApplication/1.0/FormsF
 
 ## Snel starten (SOAP modus): zoeken naar bronnen met de Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder` . (Zie [ zoekend naar Middelen ](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
+In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder` . (Zie [&#x200B; zoekend naar Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
 ```java
  /*
@@ -734,7 +734,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
 
 ## Snel starten (SOAP modus): relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de AEM Forms-opslagplaats. (Zie [ Creërend de Verhoudingen van het Middel ](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
+In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de AEM Forms-opslagplaats. (Zie [&#x200B; Creërend de Verhoudingen van het Middel &#x200B;](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
 ```java
  /*
@@ -875,7 +875,7 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
 
 ## Snel starten (SOAP modus): Een bron vergrendelen met de Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp vergrendeld. (Zie [ het Vergrendelen Middelen ](/help/forms/developing/aem-forms-repository.md#locking-resources).)
+In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp vergrendeld. (Zie [&#x200B; het Vergrendelen Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
 ```java
  /*
@@ -1101,7 +1101,7 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
 
 ## Snel starten (SOAP modus): een bron verwijderen met de Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/FormsApplication/1.0/FormsFolder` . Als dit XDP-bestand zich niet in deze map bevindt, wordt een uitzondering gegenereerd. (Zie [ Deleting Middelen ](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
+In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/FormsApplication/1.0/FormsFolder` . Als dit XDP-bestand zich niet in deze map bevindt, wordt een uitzondering gegenereerd. (Zie [&#x200B; Deleting Middelen &#x200B;](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
 ```java
  /*

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Forms-werkruimtecomponenten integreren in webtoepassingen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-U kunt de werkruimte van AEM Forms [ componenten ](/help/forms/using/description-reusable-components.md) in uw eigen Webtoepassing gebruiken. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimtendev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie gebruikt opnieuw `UserInfo` -, `FilterList` - en `TaskList` -componenten in een webportal.
+U kunt de werkruimte van AEM Forms [&#x200B; componenten &#x200B;](/help/forms/using/description-reusable-components.md) in uw eigen Webtoepassing gebruiken. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimtendev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie gebruikt opnieuw `UserInfo` -, `FilterList` - en `TaskList` -componenten in een webportal.
 
 1. Meld u aan bij de CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de/` . Zorg ervoor dat u een AEM Forms-ontwikkelpakket voor werkruimten hebt geïnstalleerd.
 1. Maak een pad `/apps/sampleApplication/wscomponents` .

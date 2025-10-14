@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Adobe Experience Manager (AEM) Forms verstrekt het [ vermogen van de Redacteur van het Thema ](/help/forms/using/themes.md) om adaptieve vormen [ thema&#39;s ](/help/forms/using/themes.md) tot stand te brengen en te wijzigen. Voer de stappen uit die in dit artikel worden vermeld slechts als u van een versie hebt bevorderd die [ Redacteur van het Thema ](/help/forms/using/themes.md) niet heeft en u een bestaande investering in thema&#39;s hebt die gebruikend Minder/CSS dossiers (pre-thema redacteursmethode) worden gecreeerd.
+>Adobe Experience Manager (AEM) Forms verstrekt het [&#x200B; vermogen van de Redacteur van het Thema &#x200B;](/help/forms/using/themes.md) om adaptieve vormen [&#x200B; thema&#39;s &#x200B;](/help/forms/using/themes.md) tot stand te brengen en te wijzigen. Voer de stappen uit die in dit artikel worden vermeld slechts als u van een versie hebt bevorderd die [&#x200B; Redacteur van het Thema &#x200B;](/help/forms/using/themes.md) niet heeft en u een bestaande investering in thema&#39;s hebt die gebruikend Minder/CSS dossiers (pre-thema redacteursmethode) worden gecreeerd.
 
 ## Vereisten {#prerequisites}
 
 * Kennis van het LESS-framework (Leaner CSS)
 * Een clientbibliotheek maken in Adobe Experience Manager
-* [ Creërend een adaptief vormmalplaatje ](/help/forms/using/custom-adaptive-forms-templates.md) voor het gebruiken van het thema u creeert
+* [&#x200B; Creërend een adaptief vormmalplaatje &#x200B;](/help/forms/using/custom-adaptive-forms-templates.md) voor het gebruiken van het thema u creeert
 
 ## Adaptief formulierthema {#adaptive-form-theme}
 
@@ -33,7 +33,7 @@ Een **adaptief vormthema** is een AEM cliëntbibliotheek die u gebruikt om de st
 
 U creeert een **adaptieve malplaatje** en past het thema op het malplaatje toe. U kunt dit douanemalplaatje dan gebruiken om een **adaptieve vorm** tot stand te brengen.
 
-![ Aangepaste Vorm en de Bibliotheek van de Cliënt ](assets/hierarchy.png)
+![&#x200B; Aangepaste Vorm en de Bibliotheek van de Cliënt &#x200B;](assets/hierarchy.png)
 
 ## Een adaptief formulierthema maken {#to-create-an-adaptive-form-theme}
 
@@ -43,7 +43,7 @@ U creeert een **adaptieve malplaatje** en past het thema op het malplaatje toe. 
 >
 >Als u deze stappen met de namen uitvoert, zou het resulterende malplaatje aan de volgende momentopname gelijkaardig moeten lijken:
 
-![ bos de Adaptieve momentopname van de Vorm ](assets/thumbnail.png)
+![&#x200B; bos de Adaptieve momentopname van de Vorm &#x200B;](assets/thumbnail.png)
 **Figuur:** *Steekproef van het Thema van het Bos*
 
 1. Creeer een knoop van type `cq:ClientLibraryFolder` onder de `/apps` knoop.
@@ -56,7 +56,7 @@ U creeert een **adaptieve malplaatje** en past het thema op het malplaatje toe. 
 
    Stel de eigenschap bijvoorbeeld in op: `af.theme.forest` .
 
-   ![ momentopname van de bewaarplaats van CRX ](assets/3-2.png)
+   ![&#x200B; momentopname van de bewaarplaats van CRX &#x200B;](assets/3-2.png)
 
 1. Voeg twee mappen, `less` en `css` , en een bestand `css.txt` toe aan het knooppunt dat in stap 1 wordt gemaakt:
 
@@ -207,13 +207,13 @@ U creeert een **adaptieve malplaatje** en past het thema op het malplaatje toe. 
 
 Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen uit om dit thema in een adaptieve vorm te gebruiken:
 
-1. Om het thema te omvatten dat in [ wordt gecreeerd om een adaptieve sectie van het vormthema ](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) tot stand te brengen, creeer een douanepagina van type `cq:Component`.
+1. Om het thema te omvatten dat in [&#x200B; wordt gecreeerd om een adaptieve sectie van het vormthema &#x200B;](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) tot stand te brengen, creeer een douanepagina van type `cq:Component`.
 
    Bijvoorbeeld: `/apps/myAfCustomizations/myAfPages/forestPage`
 
    1. Voeg een eigenschap `sling:resourceSuperType` toe en stel de waarde ervan in als `fd/af/components/page/base` .
 
-      ![ momentopname van de bewaarplaats van CRX ](assets/1-2.png)
+      ![&#x200B; momentopname van de bewaarplaats van CRX &#x200B;](assets/1-2.png)
 
    1. Als u een thema op de pagina wilt gebruiken, moet u een bestand library.jsp dat met voeten wordt getreden, aan het knooppunt toevoegen.
 
@@ -230,6 +230,6 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
 
 1. Maak een aangepaste sjabloon (bijvoorbeeld: `/apps/myAfCustomizations/myAfTemplates/forestTemplate` ) waarvan de jcr:content verwijst naar een aangepaste pagina die in de vorige stap is gemaakt (bijvoorbeeld: `myAfCustomizations/myAfPages/forestPage)` .
 
-   ![ momentopname van de bewaarplaats van CRX ](assets/2-1.png)
+   ![&#x200B; momentopname van de bewaarplaats van CRX &#x200B;](assets/2-1.png)
 
 1. Maak een adaptief formulier met de sjabloon die u in de vorige stap hebt gemaakt. De vormgeving van het adaptieve formulier wordt bepaald door het thema dat is gemaakt in de sectie Voor het maken van een adaptief formulierthema van dit artikel.

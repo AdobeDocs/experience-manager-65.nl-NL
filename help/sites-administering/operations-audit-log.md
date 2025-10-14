@@ -24,7 +24,7 @@ Het onderhoud van het controlelogboek omvat verscheidene delen van functionalite
 
 Het wordt uitgevoerd als configureerbare wekelijkse onderhoudstaak en is toegankelijk via de de monitorconsole van het Dashboard van Verrichtingen.
 
-Voor meer informatie, zie de [ Documentatie van het Dashboard van Verrichtingen ](/help/sites-administering/operations-dashboard.md).
+Voor meer informatie, zie de [&#x200B; Documentatie van het Dashboard van Verrichtingen &#x200B;](/help/sites-administering/operations-dashboard.md).
 
 Er zijn drie typen opties voor het opschonen van controlelogbestanden:
 
@@ -42,7 +42,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
 
 1. Zoek naar een punt genoemd **de regel van de Woorden van het Logboek van de controle van Pagina&#39;s** en klik het.
 
-   ![ chlimage_1-365 ](assets/chlimage_1-365.png)
+   ![&#x200B; chlimage_1-365 &#x200B;](assets/chlimage_1-365.png)
 
 1. Vervolgens configureert u de zuiveringsplanner op basis van uw vereisten. De beschikbare opties zijn:
 
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
 
 1. U zult de onderhoudstaak reeds aanwezig onder de **kaart van het Onderhoud van AuditLog** vinden.
 
-   ![ chlimage_1-366 ](assets/chlimage_1-366.png)
+   ![&#x200B; chlimage_1-366 &#x200B;](assets/chlimage_1-366.png)
 
 1. U kunt of de datum van de volgende uitvoering inspecteren, het vormen, of het manueel uitvoeren door de spelknoop te drukken.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Programmatische interactie met Workflows{#interacting-with-workflows-programmatically}
 
-Wanneer [ het aanpassen en het uitbreiden van uw werkschema&#39;s ](/help/sites-developing/workflows-customizing-extending.md) u tot werkschemavoorwerpen kunt toegang hebben:
+Wanneer [&#x200B; het aanpassen en het uitbreiden van uw werkschema&#39;s &#x200B;](/help/sites-developing/workflows-customizing-extending.md) u tot werkschemavoorwerpen kunt toegang hebben:
 
 * [De Java API voor de workflow gebruiken](#using-the-workflow-java-api)
 * [Workflowobjecten verkrijgen in ECMA-scripts](#obtaining-workflow-objects-in-ecma-scripts)
@@ -26,7 +26,7 @@ Wanneer [ het aanpassen en het uitbreiden van uw werkschema&#39;s ](/help/sites-
 
 ## De Java API voor de workflow gebruiken {#using-the-workflow-java-api}
 
-De workflow-Java API bestaat uit het [`com.adobe.granite.workflow` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) -pakket en diverse subpakketten. Het belangrijkste lid van de API is de `com.adobe.granite.workflow.WorkflowSession` -klasse. De klasse `WorkflowSession` biedt toegang tot workflowobjecten tijdens het ontwerpen en uitvoeren:
+De workflow-Java API bestaat uit het [`com.adobe.granite.workflow` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) -pakket en diverse subpakketten. Het belangrijkste lid van de API is de `com.adobe.granite.workflow.WorkflowSession` -klasse. De klasse `WorkflowSession` biedt toegang tot workflowobjecten tijdens het ontwerpen en uitvoeren:
 
 * workflowmodellen
 * werkartikelen
@@ -47,7 +47,7 @@ De volgende tabel bevat koppelingen naar de referentiedocumentatie van verschill
 
 ## Workflowobjecten verkrijgen in ECMA-scripts {#obtaining-workflow-objects-in-ecma-scripts}
 
-Zoals die in [ van het Manuscript ](/help/sites-developing/the-basics.md#locating-the-script) wordt beschreven, verstrekt AEM (via Apache Sling) een ECMA manuscriptmotor die server-kant manuscripten ECMA uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper` ](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) klasse is onmiddellijk beschikbaar aan uw manuscripten als `sling` variabele.
+Zoals die in [&#x200B; van het Manuscript &#x200B;](/help/sites-developing/the-basics.md#locating-the-script) wordt beschreven, verstrekt AEM (via Apache Sling) een ECMA manuscriptmotor die server-kant manuscripten ECMA uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper` &#x200B;](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) klasse is onmiddellijk beschikbaar aan uw manuscripten als `sling` variabele.
 
 De klasse `ScriptHelper` biedt toegang tot de klasse `SlingHttpServletRequest` die u kunt gebruiken om uiteindelijk het object `WorkflowSession` te verkrijgen, bijvoorbeeld:
 
@@ -399,7 +399,7 @@ De `uri` die in de resultaten wordt weergegeven, kan als de instantie `id` in an
 
 >[!NOTE]
 >
->Dit `curl` bevel kan met om het even welk [ werkschemastatus ](/help/sites-administering/workflows.md#workflow-status-and-actions) in plaats van `RUNNING` worden gebruikt.
+>Dit `curl` bevel kan met om het even welk [&#x200B; werkschemastatus &#x200B;](/help/sites-administering/workflows.md#workflow-status-and-actions) in plaats van `RUNNING` worden gebruikt.
 
 ### Hoe te om de Titel van het Werkschema te veranderen {#how-to-change-the-workflow-title}
 
@@ -439,7 +439,7 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 
 >[!NOTE]
 >
->Zie ook [ het Leiden de Modellen van het Werkschema ](#managing-workflow-models).
+>Zie ook [&#x200B; het Leiden de Modellen van het Werkschema &#x200B;](#managing-workflow-models).
 
 ### Een WorkflowSession-object verkrijgen {#obtaining-a-workflowsession-object}
 
@@ -502,7 +502,7 @@ Bij het maken van een model:
 
   >[!NOTE]
   >
-  >Zie [ hoe te van alle Modellen van het Werkschema een lijst maken ](#how-to-list-all-workflow-models).
+  >Zie [&#x200B; hoe te van alle Modellen van het Werkschema een lijst maken &#x200B;](#how-to-list-all-workflow-models).
 
 #### Workflowmodellen maken, lezen of verwijderen - Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -558,7 +558,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### Systeemworkflows filteren bij het controleren van workflowstatus {#filtering-out-system-workflows-when-checking-workflow-status}
 
-U kunt [ WorkflowStatus API ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) gebruiken om informatie over het werkschemastatuut van een knoop terug te winnen.
+U kunt [&#x200B; WorkflowStatus API &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) gebruiken om informatie over het werkschemastatuut van een knoop terug te winnen.
 
 Verschillende methoden hebben de parameter:
 
@@ -566,7 +566,7 @@ Verschillende methoden hebben de parameter:
 
 Deze parameter kan worden ingesteld op `true` om aan te geven dat systeemworkflows moeten worden uitgesloten van de relevante resultaten.
 
-U [ kunt de configuratie OSGi ](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** bijwerken die het werkschema `Models` specificeert om als systeemwerkschema&#39;s worden beschouwd. De standaardworkflowmodellen (runtime) zijn:
+U [&#x200B; kunt de configuratie OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** bijwerken die het werkschema `Models` specificeert om als systeemwerkschema&#39;s worden beschouwd. De standaardworkflowmodellen (runtime) zijn:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
@@ -651,7 +651,7 @@ wfSession.terminateWorkflow(workflow);
 
   >[!NOTE]
   >
-  >Zie [ hoe te om een Lijst van alle Lopende Werkschema&#39;s ](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun IDs te krijgen voor het vermelden van instanties met een specifieke status.
+  >Zie [&#x200B; hoe te om een Lijst van alle Lopende Werkschema&#39;s &#x200B;](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun IDs te krijgen voor het vermelden van instanties met een specifieke status.
 
 * **Opschorting een werkschema**
 
@@ -809,7 +809,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Luisteren naar workflowgebeurtenissen {#listening-for-workflow-events}
 
-Gebruik het OSGi gebeurteniskader om op gebeurtenissen te luisteren die de [`com.adobe.granite.workflow.event.WorkflowEvent` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) klasse bepaalt. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. De methode `getWorkItem` retourneert bijvoorbeeld het `WorkItem` -object voor het werkitem dat bij de gebeurtenis is betrokken.
+Gebruik het OSGi gebeurteniskader om op gebeurtenissen te luisteren die de [`com.adobe.granite.workflow.event.WorkflowEvent` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) klasse bepaalt. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. De methode `getWorkItem` retourneert bijvoorbeeld het `WorkItem` -object voor het werkitem dat bij de gebeurtenis is betrokken.
 
 De volgende voorbeeldcode definieert een service die luistert naar workflowgebeurtenissen en taken uitvoert op basis van het type gebeurtenis.
 

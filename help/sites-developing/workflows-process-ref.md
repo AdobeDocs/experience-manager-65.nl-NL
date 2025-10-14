@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Referentie workflowproces{#workflow-process-reference}
 
-AEM biedt verschillende processtappen die kunnen worden gebruikt voor het maken van workflowmodellen. De het processtappen van de douane kunnen ook voor taken worden toegevoegd die niet door de ingebouwde stappen worden behandeld (zie [ Creërend de Modellen van het Werkschema ](/help/sites-developing/workflows-models.md)).
+AEM biedt verschillende processtappen die kunnen worden gebruikt voor het maken van workflowmodellen. De het processtappen van de douane kunnen ook voor taken worden toegevoegd die niet door de ingebouwde stappen worden behandeld (zie [&#x200B; Creërend de Modellen van het Werkschema &#x200B;](/help/sites-developing/workflows-models.md)).
 
 ## Proceskenmerken {#process-characteristics}
 
@@ -76,7 +76,7 @@ De geadviseerde manier om dit te doen is een de dienstgebruiker te gebruiken die
 >
 >In vorige versies, werd de admin zitting overgegaan tot de `WorkflowProcess` implementaties en kon dan volledige toegang tot de bewaarplaats hebben zonder het moeten specifieke ACLs bepalen.
 >
->De toestemmingen worden nu bepaald zoals hierboven ([ Toestemmingen ](#permissions)). Net als de aanbevolen methode voor het bijwerken van uw implementatie.
+>De toestemmingen worden nu bepaald zoals hierboven ([&#x200B; Toestemmingen &#x200B;](#permissions)). Net als de aanbevolen methode voor het bijwerken van uw implementatie.
 >
 >Een kortetermijnoplossing is ook beschikbaar voor achterwaartse compatibiliteitsdoeleinden wanneer codeveranderingen niet haalbaar zijn:
 >

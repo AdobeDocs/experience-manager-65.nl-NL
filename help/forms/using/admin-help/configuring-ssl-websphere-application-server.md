@@ -24,7 +24,7 @@ Deze sectie bevat de volgende stappen om SSL te configureren met uw IBM WebSpher
 
 Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in het lokale OS gebruikersregister hebben dat toestemming heeft om het systeem te beheren:
 
-* (Vensters) creeer een gebruiker van Vensters die deel van de groep van Beheerders uitmaakt en het voorrecht heeft om als deel van het werkende systeem te handelen. (Zie [ een gebruiker van Vensters voor WebSphere ](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere) tot stand brengen.)
+* (Vensters) creeer een gebruiker van Vensters die deel van de groep van Beheerders uitmaakt en het voorrecht heeft om als deel van het werkende systeem te handelen. (Zie [&#x200B; een gebruiker van Vensters voor WebSphere &#x200B;](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere) tot stand brengen.)
 * (Linux, UNIX) De gebruiker kan een wortelgebruiker of een andere gebruiker zijn die wortelvoorrechten heeft. Wanneer u SSL op WebSphere inschakelt, gebruikt u de serveridentificatie en het wachtwoord van deze gebruiker.
 
 ### Een Linux- of UNIX-gebruiker voor WebSphere maken {#create-a-linux-or-unix-user-for-websphere}

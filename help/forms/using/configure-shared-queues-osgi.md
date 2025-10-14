@@ -33,8 +33,8 @@ Met AEM Postvak IN kunt u een enkele of alle items in uw postvak IN delen met ee
 
 Voer de volgende stappen uit om alle items in een Postvak IN te delen met een andere gebruiker:
 
-1. Meld u aan bij uw AEM. Selecteer het ![ Inbox ](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
-1. Selecteer het ![ pictogram van de Selecteur van de Mening ](assets/viewlist.svg) of ![ van de Selecteur van de Mening ](assets/calendar.svg) naast de **[!UICONTROL Create]** knoop en selecteer **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
+1. Meld u aan bij uw AEM. Selecteer het ![&#x200B; Inbox &#x200B;](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Selecteer het ![&#x200B; pictogram van de Selecteur van de Mening &#x200B;](assets/viewlist.svg) of ![&#x200B; van de Selecteur van de Mening &#x200B;](assets/calendar.svg) naast de **[!UICONTROL Create]** knoop en selecteer **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
 1. Open het tabblad **[!UICONTROL Share]** in het dialoogvenster met instellingen.
 1. Voer in het tekstvak **[!UICONTROL Grant access of your Inbox items]** de naam van een gebruiker in en selecteer **[!UICONTROL Grant]** . Herhaal deze stap om meer gebruikers toe te voegen. Alle gebruikers met toegang tot uw punten verschijnen onder de **sectie van de Gebruikersnaam**.
 1. Selecteer **[!UICONTROL Save]** .
@@ -47,7 +47,7 @@ Voer de volgende stappen uit om alle items in een Postvak IN te delen met een an
 
 Voer de volgende stappen uit om een Inbox-item met een andere gebruiker te delen:
 
-1. Meld u aan bij uw AEM. Selecteer het ![ Inbox ](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Meld u aan bij uw AEM. Selecteer het ![&#x200B; Inbox &#x200B;](assets/bell.svg) pictogram en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
 1. Selecteer een item en selecteer **[!UICONTROL Share]** . Er wordt een dialoogvenster weergegeven.
 1. Typ de naam van een gebruiker in het tekstvak Gebruikers toevoegen om dit item te delen en selecteer **[!UICONTROL Add]** . Herhaal deze stap om meer gebruikers toe te voegen. Alle gebruikers met toegang tot uw items worden weergegeven onder de sectie **[!UICONTROL Username]** .
 1. Selecteer **[!UICONTROL Save]** .
@@ -61,8 +61,8 @@ Voer de volgende stappen uit om een Inbox-item met een andere gebruiker te delen
 
 U kunt toegang tot de items in het Postvak IN van een andere gebruiker aanvragen. Zodra de toegang wordt verleend, kunt u bekijken, eisen, en aangewezen acties op gedeelde punten nemen. Voer de volgende stappen uit om toegang tot Inbox-items van een andere gebruiker aan te vragen:
 
-1. Meld u aan bij uw AEM. Selecteer het ![ pictogram van de Selecteur van de Mening ](assets/bell.svg) en selecteer **[!UICONTROL View All]**.
-1. Selecteer het ![ pictogram van de Selecteur van de Mening ](assets/viewlist.svg) of ![ van de Selecteur van de Mening ](assets/calendar.svg) naast de **[!UICONTROL Create]** knoop en selecteer **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
+1. Meld u aan bij uw AEM. Selecteer het ![&#x200B; pictogram van de Selecteur van de Mening &#x200B;](assets/bell.svg) en selecteer **[!UICONTROL View All]**.
+1. Selecteer het ![&#x200B; pictogram van de Selecteur van de Mening &#x200B;](assets/viewlist.svg) of ![&#x200B; van de Selecteur van de Mening &#x200B;](assets/calendar.svg) naast de **[!UICONTROL Create]** knoop en selecteer **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
 1. Voer in het tekstvak **[!UICONTROL Request access to Inbox items of the user]** de naam van een gebruiker in en selecteer **[!UICONTROL Request]** . Een verzoek wordt verzonden naar de gebruiker en de status van het verzoek wordt getoond tegen de naam van de gebruiker. Herhaal deze stap om meer gebruikers toe te voegen.
 1. Selecteer **[!UICONTROL Save]**. Het verzoek wordt verzonden als Inbox punt aan de gebruikers. De gebruiker kan het item selecteren en Goedkeuren of Afwijzen selecteren om de toegang te verlenen of af te wijzen.
 
@@ -71,8 +71,8 @@ U kunt toegang tot de items in het Postvak IN van een andere gebruiker aanvragen
 
 U kunt pas aan een gedeeld item beginnen te werken nadat u dit hebt opgeëist. Hiermee voorkomt u dat meerdere gebruikers aan één item werken. Voer de volgende stappen uit om een object te claimen:
 
-1. Meld u aan bij uw AEM. Selecteer het Inbox ![ pictogram Inbox ](assets/bell.svg) en selecteer **[!UICONTROL View All]**.
-1. Selecteer het ![ slechts Inhoud ](assets/railleft.svg) pictogram om de filterselecteur te openen.
+1. Meld u aan bij uw AEM. Selecteer het Inbox ![&#x200B; pictogram Inbox &#x200B;](assets/bell.svg) en selecteer **[!UICONTROL View All]**.
+1. Selecteer het ![&#x200B; slechts Inhoud &#x200B;](assets/railleft.svg) pictogram om de filterselecteur te openen.
 1. Selecteer de vervolgkeuzelijst **[!UICONTROL Select Assignee]** om gebruikers weer te geven en te selecteren die hun Postvak IN-items met u hebben gedeeld.
 1. Selecteer een item en selecteer **[!UICONTROL Claim]** . Het item wordt toegevoegd aan je Postvak IN.
 
@@ -82,7 +82,7 @@ U kunt alleen aan een gedeeld item werken nadat u dit hebt opgeëist. Andere geb
 
 Voer de volgende stappen uit om een item vrij te geven:
 
-1. Meld u aan bij uw AEM. Selecteer het Inbox ![ pictogram Inbox ](assets/bell.svg) en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Meld u aan bij uw AEM. Selecteer het Inbox ![&#x200B; pictogram Inbox &#x200B;](assets/bell.svg) en selecteer **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
 1. Selecteer het item dat u wilt vrijgeven en selecteer **[!UICONTROL UnClaim]** . Het item wordt weer aan de pool toegevoegd. Anderen kunnen nu een claim indienen op het object.
 
 ## Beperkingen {#limitations}

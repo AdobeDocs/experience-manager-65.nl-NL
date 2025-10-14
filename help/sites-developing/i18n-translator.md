@@ -24,7 +24,7 @@ AEM biedt een console voor het beheer van de verschillende vertalingen van tekst
 
 Gebruik het gereedschap Vertaler voor het beheren van Engelse tekenreeksen en de bijbehorende vertalingen. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
 
-Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina of gebruiker geproduceerde inhoud wilt vertalen, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md) en [ Vertaling van Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
+Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina of gebruiker geproduceerde inhoud wilt vertalen, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md) en [&#x200B; Vertaling van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor he
 
 De vertaler geeft een overzicht van de teksten die in AEM met de verschillende taalvertalingen naast elkaar worden gebruikt:
 
-![ chlimage_1-205 ](assets/chlimage_1-205.png)
+![&#x200B; chlimage_1-205 &#x200B;](assets/chlimage_1-205.png)
 
 U kunt de Engelse en vertaalde teksten zoeken, filteren en bewerken. U kunt woordenboeken ook exporteren naar de XLIFF-indeling om ze te vertalen en de vertalingen vervolgens weer importeren in de woordenboeken.
 
@@ -46,19 +46,19 @@ Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen a
 
 1. Klik **Vertaal Woordenboek**.
 
-   ![ chlimage_1-206 ](assets/chlimage_1-206.png)
+   ![&#x200B; chlimage_1-206 &#x200B;](assets/chlimage_1-206.png)
 
 1. Selecteer de optie Maken of Toevoegen, afhankelijk van uw behoefte. Er wordt een dialoogvenster geopend.
 
-   ![ chlimage_1-207 ](assets/chlimage_1-207.png)
+   ![&#x200B; chlimage_1-207 &#x200B;](assets/chlimage_1-207.png)
 
-1. Vul de velden naar wens in en klik op OK. ![ chlimage_1-208 ](assets/chlimage_1-208.png)
+1. Vul de velden naar wens in en klik op OK. ![&#x200B; chlimage_1-208 &#x200B;](assets/chlimage_1-208.png)
 
 1. U kunt **O.K.** nu klikken of het Woordenboek van het Doel zien.
 
    >[!NOTE]
    >
-   >Voor meer informatie over vertaalprojecten, lees [ het Leiden de Projecten van de Vertaling ](/help/sites-administering/tc-manage.md).
+   >Voor meer informatie over vertaalprojecten, lees [&#x200B; het Leiden de Projecten van de Vertaling &#x200B;](/help/sites-administering/tc-manage.md).
 
 ## Woordenboek maken {#creating-a-dictionary}
 
@@ -82,7 +82,7 @@ Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nada
 
    >[!NOTE]
    >
-   >Dit is de structuur van de [ Verschuivende i18n module ](https://sling.apache.org/site/internationalization-support.html).
+   >Dit is de structuur van de [&#x200B; Verschuivende i18n module &#x200B;](https://sling.apache.org/site/internationalization-support.html).
 
 1. Het opnieuw laden van de vertaler en het woordenboekpad (bijvoorbeeld `/apps/myProject/i18n` ) is beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
 
@@ -120,7 +120,7 @@ Neem variabelen op in de gelokaliseerde tekenreeks om contextuele betekenis in e
 
 Om variabelen in het gelokaliseerde koord te omvatten, plaats gehaakte indexen bij de plaats van de variabelen in het eerste argument van de methode get. Gebruik de lokalisatiehint om de waarden te beschrijven. De vertaler moet de betekenis van de variabelen begrijpen omdat de verschillende talen verschillende zinsstructuren gebruiken.
 
-Merk op dat [ de code die om het vertaalde koord ](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) verzoekt waarden voor de geïndexeerde variabelen volgens de context verstrekt.
+Merk op dat [&#x200B; de code die om het vertaalde koord &#x200B;](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) verzoekt waarden voor de geïndexeerde variabelen volgens de context verstrekt.
 
 De volgende tekenreeks wordt bijvoorbeeld weergegeven wanneer een gebruiker zich aanmeldt bij een website en wordt opgenomen in het woordenboek:
 
@@ -139,13 +139,13 @@ Gebruik de volgende procedure om een tekenreeks toe te voegen.
 1. Selecteer in de vervolgkeuzelijst Woordenboeken het woordenboek waaraan u een tekenreeks toevoegt. In het vervolgkeuzemenu worden woordenboeken weergegeven door hun pad in de betreffende map.
 1. Klik boven de tabel Tekenreeksen en vertalingen op Toevoegen.
 
-   ![ chlimage_1-209 ](assets/chlimage_1-209.png)
+   ![&#x200B; chlimage_1-209 &#x200B;](assets/chlimage_1-209.png)
 
 1. Typ de Engelse tekenreeks in het vak Tekenreeks van het dialoogvenster Tekenreeks toevoegen. Typ indien nodig een vertaaltip voor de vertaler in het vak Opmerking.
 1. Klik op OK.
 1. Klik op Opslaan.
 
-   ![ chlimage_1-210 ](assets/chlimage_1-210.png)
+   ![&#x200B; chlimage_1-210 &#x200B;](assets/chlimage_1-210.png)
 
 Gebruik de volgende procedure om een tekenreeks in een woordenboek te wijzigen.
 
@@ -153,23 +153,23 @@ Gebruik de volgende procedure om een tekenreeks in een woordenboek te wijzigen.
 1. Dubbelklik op de tekenreeks die u wilt wijzigen.
 1. Selecteer Tekenreeks of Opmerking wijzigen in het dialoogvenster Tekenreeks bewerken (er wordt een kopie gemaakt).
 
-   ![ chlimage_1-211 ](assets/chlimage_1-211.png)
+   ![&#x200B; chlimage_1-211 &#x200B;](assets/chlimage_1-211.png)
 
 1. Wijzig de tekenreeks of de opmerking en klik op OK.
 1. Klik op Opslaan.
 
-   ![ chlimage_1-212 ](assets/chlimage_1-212.png)
+   ![&#x200B; chlimage_1-212 &#x200B;](assets/chlimage_1-212.png)
 
 Gebruik de volgende procedure om een tekenreeks uit een woordenboek te verwijderen.
 
 1. Selecteer in het vervolgkeuzemenu Woordenboeken het woordenboek waaruit u een tekenreeks verwijdert.
 1. Klik verwijderen.
 
-   ![ chlimage_1-213 ](assets/chlimage_1-213.png)
+   ![&#x200B; chlimage_1-213 &#x200B;](assets/chlimage_1-213.png)
 
 1. Klik op Opslaan.
 
-   ![ chlimage_1-214 ](assets/chlimage_1-214.png)
+   ![&#x200B; chlimage_1-214 &#x200B;](assets/chlimage_1-214.png)
 
 ### Zoeken naar tekenreeksen {#searching-for-strings}
 
@@ -187,7 +187,7 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 * **heeft Commentaar**: toon punten die commentaren voor vertalers hebben.
 * **Ontbrekende Vertalingen:** toon punten waar minstens één taal geen vertaling heeft.
 
-![ chlimage_1-215 ](assets/chlimage_1-215.png)
+![&#x200B; chlimage_1-215 &#x200B;](assets/chlimage_1-215.png)
 
 1. Selecteer de filteropties op de zoekbalk.
 1. Klik op Filter om met de opties te filteren.
@@ -195,9 +195,9 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 
 ### Vertaalde tekenreeksen bewerken {#editing-translated-strings}
 
-Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt [ het woordenboek ](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) ook uitvoeren om het door een derde vertaald te hebben.
+Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt [&#x200B; het woordenboek &#x200B;](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) ook uitvoeren om het door een derde vertaald te hebben.
 
-1. Selecteer [ uw project specifieke woordenboek ](#creating-a-dictionary) aangezien het de weg in de bewaarplaats die de vertalingen houdt specificeert. Bijvoorbeeld, selecteer **Woordenboeken** als:
+1. Selecteer [&#x200B; uw project specifieke woordenboek &#x200B;](#creating-a-dictionary) aangezien het de weg in de bewaarplaats die de vertalingen houdt specificeert. Bijvoorbeeld, selecteer **Woordenboeken** als:
 
    `/apps/myProject/i18n`
 
@@ -211,11 +211,11 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
 
    * Dubbelklik op de gewenste taal voor de vereiste tekenreeks om die ene tekst te bewerken:
 
-   ![ chlimage_1-216 ](assets/chlimage_1-216.png)
+   ![&#x200B; chlimage_1-216 &#x200B;](assets/chlimage_1-216.png)
 
    * Dubbelklik het **Koord** of **3&rbrace; gebieden van de Commentaar &lbrace;voor het vereiste koord om** te openen geef koord **dialoog uit, geef de vertaling(en) zoals vereist uit, dan klik O.K.** **om de dialoog te sluiten:**
 
-   ![ chlimage_1-217 ](assets/chlimage_1-217.png)
+   ![&#x200B; chlimage_1-217 &#x200B;](assets/chlimage_1-217.png)
 
 1. Klik **sparen** in de toolbar om uw veranderingen vast te leggen.
 
@@ -234,7 +234,7 @@ Exporteer een woordenboek naar een XLIFF-bestand, zodat een service van derden d
 * Exporteer een woordenboek en neem het Engels en de vertaalde termen voor een taal op.
 * Exporteer enkele of alle Engelse tekenreeksen.
 
-Wanneer u een XLIFF-bestand exporteert en een taal opneemt, moet de knooppuntstructuur van het woordenboek in de opslagplaats die taal bevatten. Als de taal niet is opgenomen, treden fouten op. Als u bijvoorbeeld het Franse XLIFF-bestand wilt exporteren, moet de map dictionary het onderliggende knooppunt `mix:language` met de naam `fr` bevatten. (Zie [ Creërend een Woordenboek ](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
+Wanneer u een XLIFF-bestand exporteert en een taal opneemt, moet de knooppuntstructuur van het woordenboek in de opslagplaats die taal bevatten. Als de taal niet is opgenomen, treden fouten op. Als u bijvoorbeeld het Franse XLIFF-bestand wilt exporteren, moet de map dictionary het onderliggende knooppunt `mix:language` met de naam `fr` bevatten. (Zie [&#x200B; Creërend een Woordenboek &#x200B;](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
 
 Gebruik de volgende procedure om een XLIFF-bestand voor een bepaalde taal te exporteren.
 
@@ -303,7 +303,7 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
    >[!NOTE]
    >
-   >De vertaler zal slechts vertalingen voor talen bewaren die eigenlijk [ in het woordenboek ](#creating-a-dictionary) (namelijk onder de woordenboekweg zoals `/apps/myProject/i18n`) aanwezig zijn.
+   >De vertaler zal slechts vertalingen voor talen bewaren die eigenlijk [&#x200B; in het woordenboek &#x200B;](#creating-a-dictionary) (namelijk onder de woordenboekweg zoals `/apps/myProject/i18n`) aanwezig zijn.
    >
    >Zorg ervoor dat deze overeenkomen met de talen die worden weergegeven in het raster.
 
@@ -385,4 +385,4 @@ Ook het testen van woordenboektekenreeksen moet worden uitgevoerd als onderdeel 
 
 >[!NOTE]
 >
->Wanneer het gebruiken van Dispatcher, moet u [ ongeldig maken caching pagina&#39;s ](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html) om nieuwe dicationaire koorden in teruggegeven componentenkoorden te omvatten.
+>Wanneer het gebruiken van Dispatcher, moet u [&#x200B; ongeldig maken caching pagina&#39;s &#x200B;](https://helpx.adobe.com/nl/experience-manager/dispatcher/using/page-invalidate.html) om nieuwe dicationaire koorden in teruggegeven componentenkoorden te omvatten.

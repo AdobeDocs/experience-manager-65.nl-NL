@@ -37,11 +37,11 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
    >
    >De gebruikersinterface van de agent werkt slechts als geselecteerde Interactieve Communicatie een drukkanaal heeft.
 
-   ![ openagentiui ](assets/openagentiui.png)
+   ![&#x200B; openagentiui &#x200B;](assets/openagentiui.png)
 
    Gebaseerd op de inhoud en de eigenschappen van de Interactieve Mededeling, verschijnt de agent UI met de volgende drie lusjes: Gegevens, Inhoud, en Bijlage.
 
-   ![ agentuitabs ](assets/agentuitabs.png)
+   ![&#x200B; agentuitabs &#x200B;](assets/agentuitabs.png)
 
    Ga door met het invoeren van gegevens, het beheren van de inhoud en het beheren van de bijlagen.
 
@@ -57,17 +57,17 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 1. Selecteer **[!UICONTROL Content]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
 
-   ![ agentuicontenttab ](assets/agentuicontenttab.png)
+   ![&#x200B; agentuicontenttab &#x200B;](assets/agentuicontenttab.png)
 
 1. Bewerk de documentfragmenten desgewenst op het tabblad Inhoud. Als u het relevante fragment in de inhoudshiërarchie de focus wilt geven, kunt u de desbetreffende regel of alinea in de voorvertoning Interactieve communicatie selecteren of het fragment rechtstreeks in de inhoudshiërarchie selecteren.
 
    Het documentfragment met de regel &quot;Nu online betalen...&quot; wordt bijvoorbeeld geselecteerd in de voorvertoning in de onderstaande afbeelding en hetzelfde documentfragment is geselecteerd op het tabblad Inhoud.
 
-   ![ contentmodulefocus ](assets/contentmodulefocus.png)
+   ![&#x200B; contentmodulefocus &#x200B;](assets/contentmodulefocus.png)
 
-   Op de Inhoud of het lusje van Gegevens, door Hoogtepunt Geselecteerde Modules in Inhoud ( ![ te tikken benadrukte geselecteerde modulesincontentcr ](assets/highlightselectedmodulesincontentccr.png)) op hogere linkerzijde van de voorproef, kunt u functionaliteit onbruikbaar maken of toelaten om naar het documentfragment te gaan wanneer de relevante tekst, de paragraaf, of het gegevensgebied in de voorproef wordt aangewezen of wordt geselecteerd.
+   Op de Inhoud of het lusje van Gegevens, door Hoogtepunt Geselecteerde Modules in Inhoud ( ![&#x200B; te tikken benadrukte geselecteerde modulesincontentcr &#x200B;](assets/highlightselectedmodulesincontentccr.png)) op hogere linkerzijde van de voorproef, kunt u functionaliteit onbruikbaar maken of toelaten om naar het documentfragment te gaan wanneer de relevante tekst, de paragraaf, of het gegevensgebied in de voorproef wordt aangewezen of wordt geselecteerd.
 
-   De fragmenten die door de agent kunnen worden uitgegeven terwijl het creëren van de Interactieve Mededeling hebben de Edit Geselecteerde Inhoud ( ![ iconeditselected content ](assets/iconeditselectedcontent.png)) pictogram. Selecteer het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
+   De fragmenten die door de agent kunnen worden uitgegeven terwijl het creëren van de Interactieve Mededeling hebben de Edit Geselecteerde Inhoud ( ![&#x200B; iconeditselected content &#x200B;](assets/iconeditselectedcontent.png)) pictogram. Selecteer het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
 
    * [Opmaakopties](#formattingtext)
 
@@ -77,13 +77,13 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
 
-   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [ Acties en info beschikbaar in het gebruikersinterface van de Agent ](#actionsagentui).
+   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [&#x200B; Acties en info beschikbaar in het gebruikersinterface van de Agent &#x200B;](#actionsagentui).
 
-1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![ pagina-einde vóór ](assets/pagebreakbeforeafter.png) ).
+1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![&#x200B; pagina-einde vóór &#x200B;](assets/pagebreakbeforeafter.png) ).
 
    Een expliciete plaatsaanduiding voor een pagina-einde wordt ingevoegd in de interactieve communicatie. Zie het afdrukvoorbeeld voor informatie over de invloed van een expliciet pagina-einde op de interactieve communicatie.
 
-   ![ explicipagebreak ](assets/explicitpagebreak.png)
+   ![&#x200B; explicipagebreak &#x200B;](assets/explicitpagebreak.png)
 
    Ga verder met het beheer van de bijlagen van de interactieve communicatie.
 
@@ -93,9 +93,9 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid selecteren om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
 
-   ![ attachmentsagentui ](assets/attachmentsagentui.png)
+   ![&#x200B; attachmentsagentui &#x200B;](assets/attachmentsagentui.png)
 
-1. Selecteer het pictogram van de Toegang van de Bibliotheek ( ![ bibliotheektoegang ](assets/libraryaccess.png)) om tot de Bibliotheek van de Inhoud toegang te hebben om activa DAM als gehechtheid op te nemen.
+1. Selecteer het pictogram van de Toegang van de Bibliotheek ( ![&#x200B; bibliotheektoegang &#x200B;](assets/libraryaccess.png)) om tot de Bibliotheek van de Inhoud toegang te hebben om activa DAM als gehechtheid op te nemen.
 
    >[!NOTE]
    >
@@ -110,15 +110,15 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 Tijdens het bewerken van een tekstfragment in de gebruikersinterface van de agent verandert de werkbalk afhankelijk van het type bewerkingen dat u wilt uitvoeren: Lettertype, Alinea of Lijst:
 
-![ typeofformingtoolbar ](assets/typeofformattingtoolbar.png) ![ de toolbar van de Doopvont ](do-not-localize/fonttoolbar.png)
+![&#x200B; typeofformingtoolbar &#x200B;](assets/typeofformattingtoolbar.png) ![&#x200B; de toolbar van de Doopvont &#x200B;](do-not-localize/fonttoolbar.png)
 
 Font, werkbalk
 
-![ de toolbar van de Paragraaf ](do-not-localize/paragraphtoolbar.png)
+![&#x200B; de toolbar van de Paragraaf &#x200B;](do-not-localize/paragraphtoolbar.png)
 
 Alinea, werkbalk
 
-![ de toolbar van de Lijst ](do-not-localize/listtoolbar.png)
+![&#x200B; de toolbar van de Lijst &#x200B;](do-not-localize/listtoolbar.png)
 
 Lijst, werkbalk
 
@@ -126,15 +126,15 @@ Lijst, werkbalk
 
 Als u\gedeelten van tekst in een bewerkbaar fragment wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
-![ highlightTextagentui ](assets/highlighttextagentui.png)
+![&#x200B; highlightTextagentui &#x200B;](assets/highlighttextagentui.png)
 
 ### Opgemaakte tekst plakken {#pasteformattedtext}
 
-![ geplakte tekst ](assets/pastedtext.png)
+![&#x200B; geplakte tekst &#x200B;](assets/pastedtext.png)
 
 ### Speciale tekens in tekst invoegen {#specialcharacters}
 
-De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. Admin kan [ steun voor meer/douane speciale karakters door aanpassing ](/help/forms/using/custom-special-characters.md) toevoegen.
+De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. Admin kan [&#x200B; steun voor meer/douane speciale karakters door aanpassing &#x200B;](/help/forms/using/custom-special-characters.md) toevoegen.
 
 #### Oplevering van bijlage {#attachmentdelivery}
 
@@ -146,7 +146,7 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 
 ### Documentfragmenten {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **omhoog/onderaan pijlen**: Pijlen om documentfragmenten omhoog of omlaag in de Interactieve Mededeling te bewegen.
 * **Schrapping**: Indien toegestaan, schrap het documentfragment van de Interactieve Mededeling.
@@ -154,16 +154,16 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 * **Inspringen**: Verhoog of verklein paragraaf van een documentfragment.
 * **de Onderbreking van de Pagina na** (van toepassing op kindfragmenten van doelgebied): voegt pagina onderbreking na het documentfragment in.
 
-![ docfragoptions ](assets/docfragoptions.png)
+![&#x200B; docfragoptions &#x200B;](assets/docfragoptions.png)
 
-* Bewerken (alleen tekstfragmenten): RTF-editor openen voor het bewerken van het tekstdocumentfragment. Voor meer informatie, zie [ Formatterende tekst ](#formattingtext).
+* Bewerken (alleen tekstfragmenten): RTF-editor openen voor het bewerken van het tekstdocumentfragment. Voor meer informatie, zie [&#x200B; Formatterende tekst &#x200B;](#formattingtext).
 
 * Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
 * Niet-gevulde waarden (info): geeft het aantal niet-gevulde variabelen in het documentfragment aan.
 
 ### Documentfragmenten weergeven {#list-document-fragments}
 
-![ listoptions ](assets/listoptions.png)
+![&#x200B; listoptions &#x200B;](assets/listoptions.png)
 
 * Lege regel invoegen: voegt nieuwe lege regel in.
 * Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
@@ -180,11 +180,11 @@ Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve
 
 De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Voer [ ccrDocumentInstance ](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interface van de Dienstverlener uit (SPI).
+1. Voer [&#x200B; ccrDocumentInstance &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interface van de Dienstverlener uit (SPI).
 
    SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren. Deze instructies veronderstellen dat u vroegere kennis op hoe te om een bundel te bouwen OSGi gebruikend een Geweven project hebt.
 
-   Voor de implementatie van steekproefSPI, zie [ de implementatie van crDocumentInstance SPI van de Steekproef crDocumentInstance ](#sample-ccrDocumentInstance-spi).
+   Voor de implementatie van steekproefSPI, zie [&#x200B; de implementatie van crDocumentInstance SPI van de Steekproef crDocumentInstance &#x200B;](#sample-ccrDocumentInstance-spi).
 1. Open `http://<hostname>:<port>/ system/console/bundles` en selecteer **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Verifieer dat het statuut van het geuploade pakket als **Actieve** toont. Begin de server opnieuw als het statuut van het pakket niet als **Actieve** toont.
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr` .
 1. Selecteer **[!UICONTROL Create Correspondence Configuration]** .

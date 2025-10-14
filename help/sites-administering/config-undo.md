@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Ongedaan maken configureren voor paginabewerking{#configuring-undo-for-page-editing}
 
-De [ dienst OSGi ](/help/sites-deploying/configuring-osgi.md) **Dag CQ WCM maakt Configuratie** ongedaan ( `com.day.cq.wcm.undo.UndoConfigService`) blootstelt verscheidene eigenschappen die het gedrag van ongedaan controleren en opnieuw bevelen voor het uitgeven van pagina&#39;s.
+De [&#x200B; dienst OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) **Dag CQ WCM maakt Configuratie** ongedaan ( `com.day.cq.wcm.undo.UndoConfigService`) blootstelt verscheidene eigenschappen die het gedrag van ongedaan controleren en opnieuw bevelen voor het uitgeven van pagina&#39;s.
 
 ## Standaardconfiguratie {#default-configuration}
 
@@ -40,7 +40,7 @@ U kunt deze OSGi de diensteigenschappen voor uw eigen instantie vormen.
 
 >[!NOTE]
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de console van het Web, die door de naam van de overeenkomstige parameter OSGi, samen met een beschrijving en de standaardwaarde (waar aangewezen) wordt gevolgd:
 

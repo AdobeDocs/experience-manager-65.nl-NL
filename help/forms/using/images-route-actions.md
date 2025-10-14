@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Afbeeldingen aanpassen die worden gebruikt in routehandelingen {#customize-images-used-in-route-actions}
 
-Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen uit die in [ worden beschreven Algemene Stappen van aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md) door de stappen worden gevolgd die in dit artikel worden beschreven.
+Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen uit die in [&#x200B; worden beschreven Algemene Stappen van aanpassing &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md) door de stappen worden gevolgd die in dit artikel worden beschreven.
 
 ## Afbeeldingen voor routeacties {#images-for-route-actions}
 
@@ -29,7 +29,7 @@ Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen 
 
    >[!NOTE]
    >
-   >Voor meer informatie, zie [ Toegang WebDAV ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
+   >Voor meer informatie, zie [&#x200B; Toegang WebDAV &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Om de beelden aan te passen die in routeacties worden gebruikt, voer de stappen 
 
 ## Taaklijstactie pop-up {#task-list-task-action-popup}
 
-1. Creeer pop-up de actie van de taaklijst, zie [ de werkruimtecode van AEM Forms bouwen ](introduction-customizing-html-workspace.md#building-html-workspace-code). Hiervoor moet het ontwikkelingspakket worden gebruikt.
+1. Creeer pop-up de actie van de taaklijst, zie [&#x200B; de werkruimtecode van AEM Forms bouwen &#x200B;](introduction-customizing-html-workspace.md#building-html-workspace-code). Hiervoor moet het ontwikkelingspakket worden gebruikt.
 
 1. Kopieer `/libs/ws/js/runtime/templates/task.html` naar `/apps/ws/js/runtime/templates/task.html` .
 

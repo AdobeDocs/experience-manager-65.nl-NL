@@ -27,13 +27,13 @@ De service Hulpprogramma&#39;s voor PDF kan PDF- en XDP-bestandsindelingen conve
 U kunt deze taken uitvoeren met behulp van de service Hulpprogramma&#39;s PDF:
 
 * PDF-documenten converteren naar XDP-documenten.
-* XDP-documenten converteren naar PDF-documenten. (Zie [ Converterend XDP Documenten in de Documenten van PDF ](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
-* Eigenschappen van PDF-document ophalen. (Zie [ het Terugwinnen van de Eigenschappen van het Document van PDF ](pdf-utilities.md#retrieving-pdf-document-properties).)
-* Sla een PDF-document op en optimaliseer het voor snelle webweergave. (Zie [ Plaatsend het Document van PDF sparen Wijzen ](pdf-utilities.md#setting-pdf-document-save-modes).)
+* XDP-documenten converteren naar PDF-documenten. (Zie [&#x200B; Converterend XDP Documenten in de Documenten van PDF &#x200B;](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
+* Eigenschappen van PDF-document ophalen. (Zie [&#x200B; het Terugwinnen van de Eigenschappen van het Document van PDF &#x200B;](pdf-utilities.md#retrieving-pdf-document-properties).)
+* Sla een PDF-document op en optimaliseer het voor snelle webweergave. (Zie [&#x200B; Plaatsend het Document van PDF sparen Wijzen &#x200B;](pdf-utilities.md#setting-pdf-document-save-modes).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten converteren naar XDP-documenten {#converting-pdf-documents-into-xdp-documents}
 
@@ -41,7 +41,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u PD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -128,7 +128,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u XD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -215,7 +215,7 @@ Met de Java-API&#39;s voor hulpprogramma&#39;s voor PDF en webservices kunt u PD
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63)
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -312,7 +312,7 @@ Met de Java- en webservice-API&#39;s van de PDF Utilities kunt u een opslagmodus
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -449,7 +449,7 @@ U kunt de Java API&#39;s voor hulpprogramma&#39;s voor PDF gebruiken om PDF-docu
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Hulpmiddelen van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 

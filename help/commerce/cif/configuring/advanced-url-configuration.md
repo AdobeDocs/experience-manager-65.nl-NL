@@ -22,9 +22,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt. Zie [ SEO en de Beste praktijken van het Beheer URL ](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=nl-NL) voor extra informatie.
+>SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt. Zie [&#x200B; SEO en de Beste praktijken van het Beheer URL &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=nl-NL) voor extra informatie.
 
-[ AEM CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [ het Schipen Afbeelding ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
+[&#x200B; AEM CIF de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-core-cif-components) verstrekt geavanceerde configuraties om URLs voor product en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om de `UrlProvider` Dienst en eigenschappen van [&#x200B; het Schipen Afbeelding &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs voor product en categoriepagina&#39;s aan te passen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -46,7 +46,7 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-Als er de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) is:
+Als er de [&#x200B; opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) is:
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
 * `{{sku}}` wordt bijvoorbeeld vervangen door de SKU van het product `VP09`
@@ -65,7 +65,7 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 * `{{page}}.html/{{url_path}}.html` (standaardwaarde)
 * `{{page}}.html/{{url_key}}.html`
 
-Als er de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) is:
+Als er de [&#x200B; opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) is:
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
 * `{{url_key}}` wordt vervangen door de eigenschap `url_key` van de categorie
@@ -79,7 +79,7 @@ Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgema
 
 ### Specifieke categorie-/productpagina&#39;s {#specific-pages}
 
-Het is mogelijk om [ veelvoudige categorie en productpagina&#39;s ](multi-template-usage.md) voor slechts een specifieke ondergroep van categorieën of producten van een catalogus tot stand te brengen.
+Het is mogelijk om [&#x200B; veelvoudige categorie en productpagina&#39;s &#x200B;](multi-template-usage.md) voor slechts een specifieke ondergroep van categorieën of producten van een catalogus tot stand te brengen.
 
 `UrlProvider` is vooraf geconfigureerd om diepgaande koppelingen naar dergelijke pagina&#39;s te genereren op instanties van de auteurslaag. Dit is handig voor editors die in de modus Voorbeeld door een site bladeren, naar een specifiek product of een bepaalde categoriepagina navigeren en terugschakelen naar de modus Bewerken om de pagina te bewerken.
 
@@ -87,17 +87,17 @@ Bij publicatie-klasseninstanties daarentegen moeten URL&#39;s van cataloguspagin
 
 ## Aangepaste URL-indelingen {#custom-url-format}
 
-Om een formaat van douaneURL te verstrekken dat een project of [`ProductUrlFormat` ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat` ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface kan uitvoeren en de implementatie als dienst kan registreren OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er veelvoudige geregistreerde implementaties zijn, vervangt één met de hogere de dienstrangschikking degenen met de lagere de dienstrangschikking.
+Om een formaat van douaneURL te verstrekken dat een project of [`ProductUrlFormat` &#x200B;](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat` &#x200B;](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface kan uitvoeren en de implementatie als dienst kan registreren OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er veelvoudige geregistreerde implementaties zijn, vervangt één met de hogere de dienstrangschikking degenen met de lagere de dienstrangschikking.
 
 De de formaatimplementaties van douaneURL moeten een paar methodes uitvoeren om een URL van bepaalde parameters te bouwen, en een URL te ontleden om de zelfde parameters respectievelijk terug te keren.
 
 ## Combineren met Sling Mappings {#sling-mapping}
 
-Naast `UrlProvider`, is het ook mogelijk om [ het Schuiven Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van de AEM verstrekt ook [ een voorbeeldconfiguratie ](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen voor haven 4503 (te vormen publiceert) en 80 (Dispatcher).
+Naast `UrlProvider`, is het ook mogelijk om [&#x200B; het Schuiven Mappings &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van de AEM verstrekt ook [&#x200B; een voorbeeldconfiguratie &#x200B;](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen voor haven 4503 (te vormen publiceert) en 80 (Dispatcher).
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module te gebruiken. Het [ AEM Archieftype van het Project ](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basis[ omvat herschrijft regels ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module te gebruiken. Het [&#x200B; AEM Archieftype van het Project &#x200B;](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basis[&#x200B; omvat herschrijft regels &#x200B;](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de geproduceerde grootte.
 
 ## Voorbeeld
 
@@ -109,6 +109,6 @@ Het [&#128279;](https://github.com/adobe/aem-cif-guides-venia) project van de op
 
 ## Aanvullende bronnen
 
-* [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-* [ AEM Middel in kaart brengen ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=nl-NL)
-* [ Sling Mappings ](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+* [&#x200B; de opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
+* [&#x200B; AEM Middel in kaart brengen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=nl-NL)
+* [&#x200B; Sling Mappings &#x200B;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

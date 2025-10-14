@@ -55,28 +55,28 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ QnA API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [&#x200B; QnA API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [ QnA Eindpunten ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [&#x200B; QnA Eindpunten &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### QnA-functie {#qna-function}
 
-Een communautaire plaatsstructuur die de [ functie QnA ](functions.md#qna-function) omvat heeft een gevormde `QnA` component, en montages die moderatie en het etiketteren beïnvloeden. De functie QnA steunt het identificeren van a [ bevoorrechte gebruikersgroep van het lidlid ](users.md#privileged-members-group).
+Een communautaire plaatsstructuur die de [&#x200B; functie QnA &#x200B;](functions.md#qna-function) omvat heeft een gevormde `QnA` component, en montages die moderatie en het etiketteren beïnvloeden. De functie QnA steunt het identificeren van a [&#x200B; bevoorrechte gebruikersgroep van het lidlid &#x200B;](users.md#privileged-members-group).
 
 ### Toegang tot berichten van het Forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [ het Modereren van user-Generated Inhoud ](moderate-ugc.md).
+Zie [&#x200B; het Modereren van user-Generated Inhoud &#x200B;](moderate-ugc.md).
 
-Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [&#x200B; gemeenschappelijke opslag &#x200B;](working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - inleiding en overzicht van het opslagruimtegebruik.
-* [ SRP en Hoofdzaak UGC ](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
-* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
-* [ SocialUtils Refactoring ](socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.
+* [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](srp.md) - inleiding en overzicht van het opslagruimtegebruik.
+* [&#x200B; SRP en Hoofdzaak UGC &#x200B;](srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [&#x200B; die tot UGC met SRP &#x200B;](accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
+* [&#x200B; SocialUtils Refactoring &#x200B;](socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.

@@ -26,15 +26,15 @@ Het analyseren van langzame prestaties op Authoring instantie kan complex worden
 
 De volgende beslisboom verstrekt begeleiding om het knelpunt te versmallen.
 
-![ chlimage_1-75 ](assets/chlimage_1-75.png)
+![&#x200B; chlimage_1-75 &#x200B;](assets/chlimage_1-75.png)
 
 ## Basisoptimalisatie {#basic-optimization}
 
-![ chlimage_1-76 ](assets/chlimage_1-76.png)
+![&#x200B; chlimage_1-76 &#x200B;](assets/chlimage_1-76.png)
 
 ## Logbestanden en auditlogbestanden configureren {#configuring-log-files-and-audit-logs}
 
-AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Voor informatie, zie het [ Werken met de Verslagen van de Controle en de sectie van de Dossiers van het Logboek ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Voor informatie, zie het [&#x200B; Werken met de Verslagen van de Controle en de sectie van de Dossiers van het Logboek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## De optie Uitvouwen gebruiken {#using-the-verbose-option}
 
@@ -67,7 +67,7 @@ Ga als volgt te werk om problemen op te lossen:
 
 >[!NOTE]
 >
->Zie ook [ Geheugenproblemen ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL) analyseren.
+>Zie ook [&#x200B; Geheugenproblemen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL) analyseren.
 
 
 CRX zelf heeft een laag geheugenverbruik. Als de toepassing die in CRX wordt uitgevoerd grotere geheugenvereisten heeft of geheugenintensieve bewerkingen aanvraagt (bijvoorbeeld grote transacties), moet de JVM-instantie waarin CRX wordt uitgevoerd, worden gestart met de juiste geheugeninstellingen.

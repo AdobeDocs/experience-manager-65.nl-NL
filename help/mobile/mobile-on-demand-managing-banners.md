@@ -30,9 +30,9 @@ Banners vertegenwoordigen doorgaans grafische promotionele koppelingen.
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
+>* [&#x200B; overwegingen van het Ontwerp &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ Creërend Banners ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-banners.html)
+>* [&#x200B; Creërend Banners &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Een banner maken {#creating-a-banner}
@@ -46,7 +46,7 @@ De algemene workflow voor het maken van een artikel is als volgt:
 1. Wanneer klaar, klik **creëren**.
 1. Uw nieuwe banner verschijnt in de **Manage Banners** tegel.
 
-![ chlimage_1-6 ](assets/chlimage_1-6.gif)
+![&#x200B; chlimage_1-6 &#x200B;](assets/chlimage_1-6.gif)
 
 ## Een nieuwe banner importeren {#importing-a-new-banner}
 
@@ -108,7 +108,7 @@ De algemene workflow voor het uploaden van een banner:
 1. Selecteer **uploaden** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw banner(s) worden nu geüpload naar Mobile On-Demand.
 
-![ chlimage_1-7 ](assets/chlimage_1-7.gif)
+![&#x200B; chlimage_1-7 &#x200B;](assets/chlimage_1-7.gif)
 
 ## Een banner verwijderen {#deleting-a-banner}
 

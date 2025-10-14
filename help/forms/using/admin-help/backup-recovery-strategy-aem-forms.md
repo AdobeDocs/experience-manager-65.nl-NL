@@ -38,14 +38,14 @@ De back-upstrategie voor AEM formulieren omvat twee typen back-ups:
 
 >[!NOTE]
 >
->Als Content Services (Afgekeurd) is geïnstalleerd, maakt u ook een back-up van de hoofdmap van de Content Storage Root. Zie [ de folder van de Wortel van de Opslag van de Inhoud (de Diensten van de Inhoud slechts) ](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
+>Als Content Services (Afgekeurd) is geïnstalleerd, maakt u ook een back-up van de hoofdmap van de Content Storage Root. Zie [&#x200B; de folder van de Wortel van de Opslag van de Inhoud (de Diensten van de Inhoud slechts) &#x200B;](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 De database wordt gebruikt om formulierartefacten, serviceconfiguraties, processtatus en databaseverwijzingen naar GDS-bestanden op te slaan. Als u de opslag van documenten in de database hebt ingeschakeld, worden permanente gegevens en documenten in de GDS ook in de database opgeslagen. U kunt een back-up van de database maken en deze herstellen met de volgende methoden:
 
 * **reservewijze van de Momentopname** wijst erop dat het AEM vormensysteem op reservewijze of voor een gespecificeerd aantal notulen is, waarna reservemodus niet meer wordt toegelaten. U kunt een van de volgende opties gebruiken om de back-upmodus voor momentopnamen in of uit te schakelen. Na een terugwinningsscenario, zou de wijze van de momentopname steun niet moeten worden toegelaten.
 
    * Gebruik de pagina Back-upinstellingen in de beheerconsole. Schakel het selectievakje Bewerken in veilige back-upmodus in om de modus voor momentopnamen in te schakelen. Schakel het selectievakje uit om de modus voor momentopnamen af te sluiten.
-   * Gebruik het manuscript LCBackupMode (zie [ file het gegevensbestand, GDS, en de folders van de Root van de Opslag van de Inhoud ](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Als u de modus voor momentopnamen wilt afsluiten, stelt u in het scriptargument de parameter `continuousCoverage` in op `false` of gebruikt u de optie `leaveContinuousCoverage` .
+   * Gebruik het manuscript LCBackupMode (zie [&#x200B; file het gegevensbestand, GDS, en de folders van de Root van de Opslag van de Inhoud &#x200B;](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Als u de modus voor momentopnamen wilt afsluiten, stelt u in het scriptargument de parameter `continuousCoverage` in op `false` of gebruikt u de optie `leaveContinuousCoverage` .
    * Gebruik de meegeleverde API voor back-up/herstel. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **Rolling reserve** wijze wijst erop dat het systeem altijd op reservewijze is, met een nieuwe reservewijzesessie die wordt in werking gesteld zodra de vorige zitting wordt vrijgegeven. Er is geen time-out gekoppeld aan de schuifmodus. Wanneer het manuscript LCBackupMode of APIs worden geroepen om het rollen reservewijze te verlaten, begint een nieuwe het rollen reservewijze zitting. Deze modus is handig voor het ondersteunen van continue back-ups, maar nog steeds voor het verwijderen van oude en overbodige documenten uit de GDS-directory. De modus Rolling Backup wordt niet ondersteund via de pagina Backup and Recovery. Na een terugwinningsscenario, wordt het rollen reservewijze nog toegelaten. U kunt de modus voor continue back-up (schuifmodus) verlaten door het LCBackupMode-script te gebruiken met de optie `leaveContinuousCoverage` .
@@ -109,6 +109,6 @@ Gebruik het `LCSetGDS` manuscript in de `[*aem-forms root]*\sdk\misc\Foundation\
 
 >[!NOTE]
 >
->Deze omstandigheid is de enige waaronder u dit script moet gebruiken om de GDS-locatie te wijzigen. Als u de GDS-locatie wilt wijzigen terwijl AEM formulieren worden uitgevoerd, gebruikt u de beheerconsole. (Zie [ algemene AEM vormmontages ](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*. vormen) *
+>Deze omstandigheid is de enige waaronder u dit script moet gebruiken om de GDS-locatie te wijzigen. Als u de GDS-locatie wilt wijzigen terwijl AEM formulieren worden uitgevoerd, gebruikt u de beheerconsole. (Zie [&#x200B; algemene AEM vormmontages &#x200B;](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*. vormen) *
 
 Nadat u het GDS-pad hebt ingesteld, start u de Forms-server in de onderhoudsmodus en gebruikt u de beheerconsole om de resterende bestandsysteempaden voor het nieuwe knooppunt bij te werken. Nadat u hebt gecontroleerd of alle benodigde configuraties zijn bijgewerkt, start u AEM formulieren opnieuw en test u deze.

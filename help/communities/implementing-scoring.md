@@ -26,13 +26,13 @@ Met de functie AEM Communities scoring en badges kunnen leden van de gemeenschap
 
 De belangrijkste aspecten van scoring en badges zijn:
 
-* [ Wijs badges ](#assign-and-revoke-badges) toe om de rol van een lid in de gemeenschap te identificeren.
+* [&#x200B; Wijs badges &#x200B;](#assign-and-revoke-badges) toe om de rol van een lid in de gemeenschap te identificeren.
 
-* [ Basis toewijst van badges ](#enable-scoring) aan leden om hun participatie (hoeveelheid gecreeerde inhoud) aan te moedigen.
+* [&#x200B; Basis toewijst van badges &#x200B;](#enable-scoring) aan leden om hun participatie (hoeveelheid gecreeerde inhoud) aan te moedigen.
 
-* [ Geavanceerde toewijzing van badges ](/help/communities/advanced.md) om leden als deskundigen (kwaliteit van gecreeerde inhoud) te identificeren.
+* [&#x200B; Geavanceerde toewijzing van badges &#x200B;](/help/communities/advanced.md) om leden als deskundigen (kwaliteit van gecreeerde inhoud) te identificeren.
 
-**Nota** dat het verlenen van badges [ niet door gebrek ](/help/communities/implementing-scoring.md#main-pars-text-237875536) wordt toegelaten.
+**Nota** dat het verlenen van badges [&#x200B; niet door gebrek &#x200B;](/help/communities/implementing-scoring.md#main-pars-text-237875536) wordt toegelaten.
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ De console van de Banden van Gemeenschappen [&#128279;](/help/communities/badges
 
 Op rollen gebaseerde badges worden door een beheerder toegewezen aan leden van de community op basis van hun rol in de community.
 
-De toegewezen (en toegekende) badges worden opgeslagen in geselecteerde [ SRP ](/help/communities/srp.md) en zijn niet direct toegankelijk. Totdat een GUI beschikbaar is, is het enige middel om op rol-gebaseerde badges toe te wijzen dit met code of cURL. Voor cURL instructies, zie de sectie die [ wordt genoemd Wijs en trek Badges ](#assign-and-revoke-badges) terug.
+De toegewezen (en toegekende) badges worden opgeslagen in geselecteerde [&#x200B; SRP &#x200B;](/help/communities/srp.md) en zijn niet direct toegankelijk. Totdat een GUI beschikbaar is, is het enige middel om op rol-gebaseerde badges toe te wijzen dit met code of cURL. Voor cURL instructies, zie de sectie die [&#x200B; wordt genoemd Wijs en trek Badges &#x200B;](#assign-and-revoke-badges) terug.
 
 In de release zijn drie badges op basis van rollen opgenomen:
 
@@ -71,7 +71,7 @@ In de release zijn drie badges op basis van rollen opgenomen:
 * **bevoorrecht lid**
   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-  ![ toegewezen-badges ](assets/assigned-badges.png)
+  ![&#x200B; toegewezen-badges &#x200B;](assets/assigned-badges.png)
 
 ### Toegewezen badges {#awarded-badges}
 
@@ -80,7 +80,7 @@ Op basis van beloningen ontvangen de leden van de gemeenschap een toegangspasje 
 Om badges als beloning voor activiteit te laten verschijnen, moeten er twee dingen gebeuren:
 
 * Het badging moet [&#128279;](#enableforcomponent) voor de eigenschapcomponent worden toegelaten.
-* Het scoren en het merkteken de regels moeten [ worden toegepast ](#applytopage) op de pagina (of voorvader) waarop de component wordt geplaatst.
+* Het scoren en het merkteken de regels moeten [&#x200B; worden toegepast &#x200B;](#applytopage) op de pagina (of voorvader) waarop de component wordt geplaatst.
 
 De release bevat drie beloningsbadges:
 
@@ -93,17 +93,17 @@ De release bevat drie beloningsbadges:
 * **bronze**
   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-  ![ verlenen-badges ](assets/awarded-badges.png)
+  ![&#x200B; verlenen-badges &#x200B;](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Scoreregels kunnen worden geconfigureerd om negatieve punten toe te wijzen voor posten die als onjuist zijn gemarkeerd en beïnvloeden zo de score. Als een badge echter eenmaal is behaald, wordt deze niet automatisch verwijderd vanwege wijzigingen in de score- of scoringregel.
 >
->Toegewezen badges kunnen op dezelfde wijze worden ingetrokken als toegewezen badges. Zie [ Wijs en trek Badges ](#assign-and-revoke-badges) sectie toe. De toekomstige verbeteringen zullen een UI omvatten om de badges van leden te beheren.
+>Toegewezen badges kunnen op dezelfde wijze worden ingetrokken als toegewezen badges. Zie [&#x200B; Wijs en trek Badges &#x200B;](#assign-and-revoke-badges) sectie toe. De toekomstige verbeteringen zullen een UI omvatten om de badges van leden te beheren.
 
 ### Aangepaste badges {#custom-badges}
 
-De badges van de douane kunnen worden geïnstalleerd gebruikend de [ console van Badges ](/help/communities/badges.md) en of toegewezen of in het badging regels gespecificeerd.
+De badges van de douane kunnen worden geïnstalleerd gebruikend de [&#x200B; console van Badges &#x200B;](/help/communities/badges.md) en of toegewezen of in het badging regels gespecificeerd.
 
 Wanneer deze vanaf de Badges-console zijn geïnstalleerd, worden aangepaste badges automatisch naar de publicatieomgeving gerepliceerd.
 
@@ -111,13 +111,13 @@ Wanneer deze vanaf de Badges-console zijn geïnstalleerd, worden aangepaste badg
 
 Scores is niet standaard ingeschakeld. De basisstappen voor het opzetten en mogelijk maken van scoring en toekenning van badges zijn:
 
-* Identificeer regels voor het verdienen van punten ([ het scoren regels ](#scoring-rules)).
-* Voor punten die per het schrapen regels worden verzameld, wijs [ badges ](#badges) toe ([ badging regels ](#badging-rules)).
+* Identificeer regels voor het verdienen van punten ([&#x200B; het scoren regels &#x200B;](#scoring-rules)).
+* Voor punten die per het schrapen regels worden verzameld, wijs [&#x200B; badges &#x200B;](#badges) toe ([&#x200B; badging regels &#x200B;](#badging-rules)).
 
-* [ pas het scoring en het merkingsregels op een communautaire plaats ](#apply-rules-to-content) toe.
-* [ laat het badging voor communautaire eigenschappen ](#enable-badges-for-component) toe.
+* [&#x200B; pas het scoring en het merkingsregels op een communautaire plaats &#x200B;](#apply-rules-to-content) toe.
+* [&#x200B; laat het badging voor communautaire eigenschappen &#x200B;](#enable-badges-for-component) toe.
 
-Zie de [ Snelle sectie van de Test ](#quick-test) om het scoren voor een communautaire plaats toe te laten gebruikend het gebrek het scoren en het badging regels voor forums en commentaren.
+Zie de [&#x200B; Snelle sectie van de Test &#x200B;](#quick-test) om het scoren voor een communautaire plaats toe te laten gebruikend het gebrek het scoren en het badging regels voor forums en commentaren.
 
 ### Regels toepassen op inhoud {#apply-rules-to-content}
 
@@ -131,22 +131,22 @@ Als het knooppunt van het type `cq:Page` is (aanbevolen), voegt u met behulp van
 
 | **Bezit** | **Type** | **Beschrijving** |
 |---|---|---|
-| badgingRules | String | een matrixlijst van [ badging regels ](#badging-rules) |
-| scoringRules | String | een serielijst van [ het scoren regels ](#scoring-rules) |
+| badgingRules | String | een matrixlijst van [&#x200B; badging regels &#x200B;](#badging-rules) |
+| scoringRules | String | een serielijst van [&#x200B; het scoren regels &#x200B;](#scoring-rules) |
 
 >[!NOTE]
 >
->Als een het scoren regel geen effect op het verlenen van badges lijkt te hebben, zorg ervoor de het scoren regel niet door het scoringRules bezit van de merkingsregel is geblokkeerd. Zie de sectie genoemd [ het Badging Regels ](#badging-rules).
+>Als een het scoren regel geen effect op het verlenen van badges lijkt te hebben, zorg ervoor de het scoren regel niet door het scoringRules bezit van de merkingsregel is geblokkeerd. Zie de sectie genoemd [&#x200B; het Badging Regels &#x200B;](#badging-rules).
 
 ### Badges voor component inschakelen {#enable-badges-for-component}
 
-De het scoren en het inkleuren regels zijn in feite slechts voor instanties van componenten die merkend hebben toegelaten door de componentenconfiguratie in [ auteurswijze ](/help/communities/author-communities.md) uit te geven.
+De het scoren en het inkleuren regels zijn in feite slechts voor instanties van componenten die merkend hebben toegelaten door de componentenconfiguratie in [&#x200B; auteurswijze &#x200B;](/help/communities/author-communities.md) uit te geven.
 
-Een Booleaanse eigenschap, `allowBadges` , schakelt de weergave van badges voor een componentinstantie in of uit. Het is configureerbaar in de [ component geeft dialoog ](/help/communities/author-communities.md) voor forum uit, QnA, en commentaarcomponenten door een checkbox geëtiketteerd **Badges van de Vertoning**.
+Een Booleaanse eigenschap, `allowBadges` , schakelt de weergave van badges voor een componentinstantie in of uit. Het is configureerbaar in de [&#x200B; component geeft dialoog &#x200B;](/help/communities/author-communities.md) voor forum uit, QnA, en commentaarcomponenten door een checkbox geëtiketteerd **Badges van de Vertoning**.
 
 #### Voorbeeld: allowBadges voor instantie van de component Forum {#example-allowbadges-for-forum-component-instance}
 
-![ toe:laten-badges-component ](assets/enable-badges-component.png)
+![&#x200B; toe:laten-badges-component &#x200B;](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ De naam van de onderregel volgt typisch het patroon van het gebruiken van a *ond
 * member-comment-create
 * lid-ondervraagden
 
-Subrules zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content` knoop die [ werkwoorden en onderwerpen ](#topics-and-verbs) specificeren.
+Subrules zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content` knoop die [&#x200B; werkwoorden en onderwerpen &#x200B;](#topics-and-verbs) specificeren.
 
 <table>
  <tbody>
@@ -270,7 +270,7 @@ Subrules zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content` 
 
 ### Inclusief rangtelregels en subregels {#included-scoring-rules-and-sub-rules}
 
-Omvat in de versie zijn twee het scoren regels voor de [ Functie van het Forum ](/help/communities/functions.md#forum-function) (elk voor het Forum en de componenten van Commentaren van de eigenschap van het Forum):
+Omvat in de versie zijn twee het scoren regels voor de [&#x200B; Functie van het Forum &#x200B;](/help/communities/functions.md#forum-function) (elk voor het Forum en de componenten van Commentaren van de eigenschap van het Forum):
 
 1. /libs/settings/community/scoring/rules/comments-scoring
 
@@ -326,7 +326,7 @@ De regels voor badging bestaan uit een verplichte eigenschap `thresholds` die ee
 
    * Een gouden badge wordt toegekend wanneer 80 punten zijn verzameld.
 
-De regels van de Badging zijn gepareerd met het scoring regels, die bepalen hoe de punten zich ophopen. Zie de sectie genoemd [ Regels op Inhoud ](#apply-rules-to-content) toepassen.
+De regels van de Badging zijn gepareerd met het scoring regels, die bepalen hoe de punten zich ophopen. Zie de sectie genoemd [&#x200B; Regels op Inhoud &#x200B;](#apply-rules-to-content) toepassen.
 
 De eigenschap `scoringRules` op een badging-regel beperkt eenvoudig welke scoring-regels met die bepaalde badging-regel kunnen worden gekoppeld.
 
@@ -334,7 +334,7 @@ De eigenschap `scoringRules` op een badging-regel beperkt eenvoudig welke scorin
 >
 >Tips en trucs: maak badge-afbeeldingen die uniek zijn voor elke AEM.
 
-![ badging-regel-configuratie ](assets/badging-rule-configuration.png)
+![&#x200B; badging-regel-configuratie &#x200B;](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -368,7 +368,7 @@ De eigenschap `scoringRules` op een badging-regel beperkt eenvoudig welke scorin
 
 ### Ingesloten Badgingregels {#included-badging-rules}
 
-Omvat in de versie zijn twee het Badging Regels die aan de [ Forums en Commentaren het Scoren Regels ](#includedscoringrules) beantwoorden.
+Omvat in de versie zijn twee het Badging Regels die aan de [&#x200B; Forums en Commentaren het Scoren Regels &#x200B;](#includedscoringrules) beantwoorden.
 
 * `/libs/settings/community/badging/rules/comments-badging`
 
@@ -387,7 +387,7 @@ Wijzigingen of toevoegingen aan badgingregels of afbeeldingen die in de ontwerpo
 
 ## Badges toewijzen en intrekken {#assign-and-revoke-badges}
 
-De badges kunnen aan leden worden toegewezen die of de [ ledenconsole ](/help/communities/members.md#badges-tab) gebruiken of programmatically cURL bevelen gebruiken.
+De badges kunnen aan leden worden toegewezen die of de [&#x200B; ledenconsole &#x200B;](/help/communities/members.md#badges-tab) gebruiken of programmatically cURL bevelen gebruiken.
 
 De volgende cURL-opdrachten tonen wat nodig is voor een HTTP-aanvraag voor het toewijzen en intrekken van badges. De basisindeling is:
 
@@ -413,8 +413,8 @@ bijvoorbeeld https://&lt;server>:&lt;port>/home/users/community/riley/profile.so
 >
 >*lid-profiel-url*:
 >
->* Kan naar een auteursinstantie verwijzen als de [ Dienst van de Tunnel ](/help/communities/users.md#tunnel-service) wordt toegelaten.
->* Kan een obscure, willekeurige naam zijn - zie [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) betreffende machtigbare identiteitskaart.
+>* Kan naar een auteursinstantie verwijzen als de [&#x200B; Dienst van de Tunnel &#x200B;](/help/communities/users.md#tunnel-service) wordt toegelaten.
+>* Kan een obscure, willekeurige naam zijn - zie [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) betreffende machtigbare identiteitskaart.
 
 ### Voorbeelden: {#examples}
 
@@ -444,11 +444,11 @@ Wanneer leden communiceren met functies van gemeenschappen, worden gebeurtenisse
 
 De instantie SocialEvent van een component registreert de gebeurtenissen als `actions` die voor een `topic` voorkomen. De SocialEvent bevat een methode om een `verb` te retourneren die aan de handeling is gekoppeld. Er is een *n-1* verhouding tussen `actions` en `verbs`.
 
-Voor de geleverde gemeenschappen componenten, beschrijven de volgende lijsten `verbs` die voor elk `topic` beschikbaar voor gebruik in [ het scoren subrules ](#scoring-sub-rules) worden bepaald.
+Voor de geleverde gemeenschappen componenten, beschrijven de volgende lijsten `verbs` die voor elk `topic` beschikbaar voor gebruik in [&#x200B; het scoren subrules &#x200B;](#scoring-sub-rules) worden bepaald.
 
 >[!NOTE]
 >
->Een nieuwe booleaanse eigenschap, `allowBadges` , schakelt de weergave van badges voor een componentinstantie in of uit. Het is configureerbaar in bijgewerkte [ component geeft dialogen ](/help/communities/author-communities.md) door een checkbox geëtiketteerd **Badges van de Vertoning** uit.
+>Een nieuwe booleaanse eigenschap, `allowBadges` , schakelt de weergave van badges voor een componentinstantie in of uit. Het is configureerbaar in bijgewerkte [&#x200B; component geeft dialogen &#x200B;](/help/communities/author-communities.md) door een checkbox geëtiketteerd **Badges van de Vertoning** uit.
 
 **[Component van de Kalender](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/agenda
@@ -561,13 +561,13 @@ Voor ondersteuning van scoring moet de methode `getVerb()` worden overschreven d
 
 Als op de inhoud van de website wel scoring- en badgingregels zijn toegepast, maar er geen badges worden toegekend voor activiteiten, moet u ervoor zorgen dat badges zijn ingeschakeld voor de instantie van die component.
 
-Zie [ Badges voor Component ](#enable-badges-for-component) toelaten.
+Zie [&#x200B; Badges voor Component &#x200B;](#enable-badges-for-component) toelaten.
 
 ### Scoreregel heeft geen effect {#scoring-rule-has-no-effect}
 
 Als op de inhoud van de website scoring- en badingregels zijn toegepast en badges worden toegekend voor bepaalde acties, maar niet voor andere, controleert u of de regel voor badging de scoringregels waarop deze van toepassing is, niet heeft beperkt.
 
-Zie het `scoringRules` bezit van [ het Badging Regels ](#badging-rules).
+Zie het `scoringRules` bezit van [&#x200B; het Badging Regels &#x200B;](#badging-rules).
 
 ### Hoofdlettergevoelig (typ) {#case-sensitive-typo}
 
@@ -577,7 +577,7 @@ Als de functie niet naar behoren werkt, controleert u of de gegevens correct zij
 
 ## Snel testen {#quick-test}
 
-Het is mogelijk om het scoren en het tekenen snel te proberen gebruikend [ Begonnen het Leerprogramma ](/help/communities/getting-started.md) (verbind) plaats:
+Het is mogelijk om het scoren en het tekenen snel te proberen gebruikend [&#x200B; Begonnen het Leerprogramma &#x200B;](/help/communities/getting-started.md) (verbind) plaats:
 
 * Toegang tot CRXDE Lite bij auteur.
 * Blader naar de basispagina:
@@ -608,7 +608,7 @@ Het is mogelijk om het scoren en het tekenen snel te proberen gebruikend [ Begon
 
 * Selecteer **sparen allen**.
 
-![ test-scoring-badging ](assets/test-scoring-badging.png)
+![&#x200B; test-scoring-badging &#x200B;](assets/test-scoring-badging.png)
 
 Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van badges toestaan:
 
@@ -623,9 +623,9 @@ Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van bad
    * **Type**: `Boolean`
    * **Waarde**: `true`
 
-![ test-forum-component ](assets/test-forum-component.png)
+![&#x200B; test-forum-component &#x200B;](assets/test-forum-component.png)
 
-Daarna, [ herpubliceer ](/help/communities/sites-console.md#publishing-the-site) de communautaire plaats.
+Daarna, [&#x200B; herpubliceer &#x200B;](/help/communities/sites-console.md#publishing-the-site) de communautaire plaats.
 
 Tot slot:
 
@@ -640,12 +640,12 @@ Tot slot:
 
 Dit zou het lid van de gemeenschap een bronzen badge moeten verdienen die met hun forumpost zichtbaar is omdat de eerste drempel van de forums-badging regel een score van 1 is.
 
-![ bronzebadge ](assets/bronzebadge.png)
+![&#x200B; bronzebadge &#x200B;](assets/bronzebadge.png)
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ het Scoren van de Hoofdzaak van Badges ](/help/communities/configure-scoring.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; het Scoren van de Hoofdzaak van Badges &#x200B;](/help/communities/configure-scoring.md) pagina voor ontwikkelaars worden gevonden.
 
-Voor informatie over de geavanceerde het scoren motor, zie [ Geavanceerde het Scoreren en Badges ](/help/communities/advanced.md).
+Voor informatie over de geavanceerde het scoren motor, zie [&#x200B; Geavanceerde het Scoreren en Badges &#x200B;](/help/communities/advanced.md).
 
-De configureerbare component van Leaderboard [&#128279;](/help/communities/enabling-leaderboard.md) en [ functie ](/help/communities/functions.md#leaderboard-function) vereenvoudigt de vertoning van leden en hun scores op een communautaire plaats.
+De configureerbare component van Leaderboard [&#128279;](/help/communities/enabling-leaderboard.md) en [&#x200B; functie &#x200B;](/help/communities/functions.md#leaderboard-function) vereenvoudigt de vertoning van leden en hun scores op een communautaire plaats.

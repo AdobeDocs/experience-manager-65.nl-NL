@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe consoles in de moderne interface met aanraakbediening kunnen worden aangepast. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en de [ pagina auteursfunctionaliteit ](/help/sites-developing/customizing-page-authoring-touch.md)) van uw auteursinstantie aan te passen.
+AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en de [&#x200B; pagina auteursfunctionaliteit &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md)) van uw auteursinstantie aan te passen.
 
 * Clientlibs
 Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u onder `/apps.` uw eigen clientlib maken. Deze kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
@@ -37,9 +37,9 @@ Deze kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te 
 >
 >Zie voor meer informatie:
 >
->* Het gebruiken van en het creëren van [ clientlibs ](/help/sites-developing/clientlibs.md).
->* Het gebruiken van en het creëren van [ bekledingen ](/help/sites-developing/overlays.md).
->* [ Graniet ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* Het gebruiken van en het creëren van [&#x200B; clientlibs &#x200B;](/help/sites-developing/clientlibs.md).
+>* Het gebruiken van en het creëren van [&#x200B; bekledingen &#x200B;](/help/sites-developing/overlays.md).
+>* [&#x200B; Graniet &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 
 
@@ -64,7 +64,7 @@ De volgende locatie in de `/libs` -structuur kan bijvoorbeeld worden bedekt:
 
 >[!NOTE]
 >
->Zie het artikel van de Kennisbank, [ het Oplossen van problemen AEM TouchUI ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
+>Zie het artikel van de Kennisbank, [&#x200B; het Oplossen van problemen AEM TouchUI &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-16935), voor verdere uiteinden en hulpmiddelen.
 
 ## De standaardweergave voor een console aanpassen {#customizing-the-default-view-for-a-console}
 
@@ -146,11 +146,11 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
    * Voeg uw nieuwe kolommen toe - of verwijder bestaande kolommen.
 
-   Zie [ Gebruikend Bedekkingen (en de het Verschuiven Fusie van het Middel) ](/help/sites-developing/overlays.md) voor meer informatie.
+   Zie [&#x200B; Gebruikend Bedekkingen (en de het Verschuiven Fusie van het Middel) &#x200B;](/help/sites-developing/overlays.md) voor meer informatie.
 
 1. Optioneel:
 
-   * Als u extra gegevens wilt stoppen, moet u a [ PageInforProvider ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
+   * Als u extra gegevens wilt stoppen, moet u a [&#x200B; PageInforProvider &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met a schrijven
 
      `pageInfoProviderType` eigenschap.
 
@@ -162,4 +162,4 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 Wanneer het gebruiken van een console, is een gemeenschappelijk gebruiksgeval wanneer de gebruiker uit middelen (bijvoorbeeld, pagina&#39;s, componenten, activa, etc.) moet selecteren. Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
-Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [ het Aanpassen van de Authoring van de Pagina - het Filtreren Middelen ](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor details.
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [&#x200B; het Aanpassen van de Authoring van de Pagina - het Filtreren Middelen &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor details.

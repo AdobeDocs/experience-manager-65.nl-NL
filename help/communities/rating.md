@@ -26,19 +26,19 @@ Als u een component `Rating` in de modus Schrijven aan een pagina wilt toevoegen
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](rating-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Rating` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](rating-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Rating` component verschijnt.
 
-![ classificatie ](assets/rating.png)
+![&#x200B; classificatie &#x200B;](assets/rating.png)
 
 ## Classificatie configureren {#configuring-rating}
 
 Selecteer de geplaatste component `Rating` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
 Onder het tabblad **[!UICONTROL Texts & Labels]** geeft u de interne id voor de waardering op.
 
-![ tallyname ](assets/tallyname.png)
+![&#x200B; tallyname &#x200B;](assets/tallyname.png)
 
 **[!UICONTROL Tally Name]**
 (*Vereist*) Een eenvoudige naam voor `Rating` die uniek deze instantie identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.

@@ -24,7 +24,7 @@ Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobie
 
 Hebben uw gebruikers toegang tot alle inhoud? Verlaten ze de app en zo ja, waar? Hoe vaak blijven ze in de app en hoe vaak komen ze terug om de app te gebruiken? Welke veranderingen kunt u introduceren en dan die verhoging behoud meten? Hoe zit het met crashsnelheden? crasht uw app voor uw gebruikers?
 
-Haal voordeel uit [ Mobiele Analytics van de App ](https://business.adobe.com/products/analytics/mobile-marketing.html) in uw (AEM) Apps van Adobe Experience Manager door met [ de Mobiele Diensten van de Adobe te integreren ](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Haal voordeel uit [&#x200B; Mobiele Analytics van de App &#x200B;](https://business.adobe.com/products/analytics/mobile-marketing.html) in uw (AEM) Apps van Adobe Experience Manager door met [&#x200B; de Mobiele Diensten van de Adobe te integreren &#x200B;](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
 Instrueer uw AEM-apps om te volgen, rapporteren en te begrijpen hoe uw gebruikers omgaan met uw mobiele app en inhoud en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in app en crashsnelheid.
 
@@ -64,7 +64,7 @@ Voor elk platform moet ADBMobileConfig naar een specifieke locatie worden gekopi
 
 Als het bouwen met CLI PhoneGap dit met cordova kan worden gedaan bouwen hamanuscripten. Dit kan in buitenGeometrixx App in worden gezien:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Voor iOS moet het dossier aan de folder van Middelen van het XCode- project **&#x200B;**&#x200B;worden gekopieerd (bijvoorbeeld, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor verdere details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI, zie [ Drie haken uw Cordova/het projectbehoeften van PhoneGap ](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Voor iOS moet het dossier aan de folder van Middelen van het XCode- project **&#x200B;**&#x200B;worden gekopieerd (bijvoorbeeld, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor verdere details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI, zie [&#x200B; Drie haken uw Cordova/het projectbehoeften van PhoneGap &#x200B;](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////
@@ -101,7 +101,7 @@ Nadat u deze stappen hebt uitgevoerd, wordt uw app ingeschakeld om alle levenscy
 
 ### Instrueer uw code voor volledige toepassingsspatiëring {#instrument-your-code-for-full-app-tracking}
 
-Er zijn verscheidene het volgen APIs die in [ wordt verstrekt de Insteekmodule van AMS Phonegap API.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
+Er zijn verscheidene het volgen APIs die in [&#x200B; wordt verstrekt de Insteekmodule van AMS Phonegap API.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
 Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarnaar uw gebruikers navigeren in uw app, waarin de besturingselementen het meest worden gebruikt. De gemakkelijkste manier om uw app voor tracering te gebruiken, is met behulp van de API&#39;s voor Analytics die door de AMS-plug-in worden geleverd.
 

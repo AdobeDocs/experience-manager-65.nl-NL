@@ -20,13 +20,13 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Een AEM Mobile-project omvat een aantal verschillende inhoudssoorten, waaronder pagina&#39;s, JavaScript- en CSS-clientbibliotheken, herbruikbare AEM componenten, configuraties voor inhoudssynchronisatie en inhoud van de shell van de PhoneGap-app. Het baseren van uw nieuwe AEM Mobile app op de [ Uitrusting van de Aanzet ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) is een goede manier om alle verschillende types van inhoud in onze geadviseerde structuur te krijgen om zowel portabiliteit als onderhoudbaarheid op de lange termijn te verlichten.
+Een AEM Mobile-project omvat een aantal verschillende inhoudssoorten, waaronder pagina&#39;s, JavaScript- en CSS-clientbibliotheken, herbruikbare AEM componenten, configuraties voor inhoudssynchronisatie en inhoud van de shell van de PhoneGap-app. Het baseren van uw nieuwe AEM Mobile app op de [&#x200B; Uitrusting van de Aanzet &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) is een goede manier om alle verschillende types van inhoud in onze geadviseerde structuur te krijgen om zowel portabiliteit als onderhoudbaarheid op de lange termijn te verlichten.
 
 ## Pagina-inhoud {#page-content}
 
 De pagina&#39;s van uw toepassing moeten zich onder /content/mobileapps bevinden, anders worden ze niet herkend door de AEM Mobile-console.
 
-![ chlimage_1-52 ](assets/chlimage_1-52.png)
+![&#x200B; chlimage_1-52 &#x200B;](assets/chlimage_1-52.png)
 
 Volgens AEM conventie moet de eerste pagina van uw app een omleiding zijn naar een van de onderliggende items die als standaardtaal van de app fungeren (en in zowel de gevallen Geometrixx als Starter Kit). De landinstellingspagina op hoofdniveau overerft doorgaans de &#39;splash-page&#39;-component (/libs/mobileapps/components/splash-page) die zorgt voor de initialisatie die nodig is voor de installatie van updates voor de synchronisatie van over-the-air inhoud (contentInit-code vindt u op /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
@@ -52,8 +52,8 @@ Als uw clientcode nauw aan een specifieke component is gekoppeld, plaatst u die 
 
 Elke app van AEM Mobile bevat een folder die gastheren de configuratiedossiers die door de interface van de bevellijn PhoneGap [&#128279;](https://github.com/phonegap/phonegap-cli) worden gebruikt en PhoneGap bouwt bij `https://build.phonegap.com/` om uw Webinhoud in een runnable toepassing te veranderen. In het voorbeeld Geometrixx bevindt deze map (content/content/phonegap/geometrixx-outdoor/shell/jcr:content/page-app/app-content) zich als onderdeel van de Shell; een ontwerpbeslissing omdat deze alleen inhoud bevat die niet via de lucht kan worden bijgewerkt, zoals plug-ins die betrekking hebben op apparaat-API&#39;s en de configuratie van de app zelf.
 
-In deze folder, vindt u ook sommige [ haken Cordova ](https://cordova.apache.org/docs/en/dev/guide/appdev/hooks/index.html#Hooks%20Guide) die kunnen worden gebruikt om stoppen te installeren, middeldossiers in hun platform-specifieke plaatsen, en andere acties te plaatsen die als deel van de bouwstijl zouden moeten worden uitgevoerd. Opmerking: als alternatief voor het downloaden van elke insteekmodule als onderdeel van de build, kunt u het patroon van de Kitchen Sink-app volgen en broncode voor insteekmodules opnemen <!-- THIS URL IS 404 (https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) --> met de rest van uw app-project.
+In deze folder, vindt u ook sommige [&#x200B; haken Cordova &#x200B;](https://cordova.apache.org/docs/en/dev/guide/appdev/hooks/index.html#Hooks%20Guide) die kunnen worden gebruikt om stoppen te installeren, middeldossiers in hun platform-specifieke plaatsen, en andere acties te plaatsen die als deel van de bouwstijl zouden moeten worden uitgevoerd. Opmerking: als alternatief voor het downloaden van elke insteekmodule als onderdeel van de build, kunt u het patroon van de Kitchen Sink-app volgen en broncode voor insteekmodules opnemen <!-- THIS URL IS 404 (https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) --> met de rest van uw app-project.
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u over de Structuur van app leert, zie [ Creërend en het Uitgeven van Apps gebruikend de Console van de App ](/help/mobile/phonegap-apps-console.md).
+Nadat u over de Structuur van app leert, zie [&#x200B; Creërend en het Uitgeven van Apps gebruikend de Console van de App &#x200B;](/help/mobile/phonegap-apps-console.md).

@@ -29,7 +29,7 @@ Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek:
 
 ## Opslagconfiguratieconsole {#storage-configuration-console}
 
-![ jsrp-configuration ](assets/jsrp-configuration.png)
+![&#x200B; jsrp-configuration &#x200B;](assets/jsrp-configuration.png)
 
 In de auteuromgeving, om de console van de opslagconfiguratie te bereiken.
 
@@ -40,9 +40,9 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 * Selecteer een optie
 * Passend configureren
 
-   * Zie details voor [ selecterend MSRP ](msrp.md#select-msrp)
-   * Zie details voor [ selecterend DSRP ](dsrp.md#select-dsrp)
-   * Zie details voor [ selecterend ASRP ](asrp.md#select-asrp)
+   * Zie details voor [&#x200B; selecterend MSRP &#x200B;](msrp.md#select-msrp)
+   * Zie details voor [&#x200B; selecterend DSRP &#x200B;](dsrp.md#select-dsrp)
+   * Zie details voor [&#x200B; selecterend ASRP &#x200B;](asrp.md#select-asrp)
 
 * Selecteer **[!UICONTROL Submit]** .
 
@@ -56,4 +56,4 @@ Bezoek {de Opslag van 0} JCR [&#128279;](jsrp.md) voor extra informatie.
 
 >[!NOTE]
 >
->De afwezigheid van de knoop `srpc` onder `/etc/socialconfig` wijst op de standaard [ opslag JCR ](jsrp.md).
+>De afwezigheid van de knoop `srpc` onder `/etc/socialconfig` wijst op de standaard [&#x200B; opslag JCR &#x200B;](jsrp.md).

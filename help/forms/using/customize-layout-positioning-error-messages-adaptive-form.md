@@ -33,20 +33,20 @@ Ga als volgt te werk om een aangepaste indeling toe te passen op een veld:
 
 ### Lay-out van één veld aanpassen {#customize-layout-of-a-single-field}
 
-1. Open de vorm op **wijze van de Stijl**. Om de vorm op stijlwijze te openen, op de paginaboolbar selecteren ![ canvas-drop-down ](assets/canvas-drop-down.png) > **Stijl**.
-1. In sidebar, onder **Objecten van de Vorm**, selecteer het gebied en selecteer uitgeven knoop ![ uitgeven-knoop ](assets/edit-button.png).
+1. Open de vorm op **wijze van de Stijl**. Om de vorm op stijlwijze te openen, op de paginaboolbar selecteren ![&#x200B; canvas-drop-down &#x200B;](assets/canvas-drop-down.png) > **Stijl**.
+1. In sidebar, onder **Objecten van de Vorm**, selecteer het gebied en selecteer uitgeven knoop ![&#x200B; uitgeven-knoop &#x200B;](assets/edit-button.png).
 1. Selecteer de status van het veld dat u wilt aanpassen en geef de opmaak voor die status op.
 
-   ![ het specificeren van gealigneerde het stileren van een gebied ](assets/edit-error-state.png)
+   ![&#x200B; het specificeren van gealigneerde het stileren van een gebied &#x200B;](assets/edit-error-state.png)
 
 ### De indeling van alle velden van een formulier aanpassen {#customize-layout-of-all-the-fields-of-a-form}
 
-Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u de opmaak van formuliercomponenten op één locatie opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Voor meer informatie over thema&#39;s, zie [ Thema&#39;s in AEM Forms ](../../forms/using/themes.md).
+Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u de opmaak van formuliercomponenten op één locatie opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Voor meer informatie over thema&#39;s, zie [&#x200B; Thema&#39;s in AEM Forms &#x200B;](../../forms/using/themes.md).
 
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
 1. Open het formulier in de bewerkingsmodus.
-1. Op geef wijze uit, selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/field-level.png) > **Aangepaste Container van de Vorm**, en selecteer dan ![ cmp ](assets/cmppr.png).
+1. Op geef wijze uit, selecteer een component, dan uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **Aangepaste Container van de Vorm**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 1. Selecteer in het zijpaneel onder Adaptief formulierthema het thema dat u hebt gemaakt met de Thema-editor.
 
 ## Een aangepaste veldindeling maken {#create-a-custom-field-layout}

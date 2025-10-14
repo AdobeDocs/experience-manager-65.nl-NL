@@ -22,7 +22,7 @@ Samen met de overgang aan Oak in AEM 6, werden sommige belangrijke veranderingen
 
 Dit artikel schetst wanneer om indexen tot stand te brengen en wanneer zij niet nodig zijn, trucs om het gebruiken van vragen te vermijden wanneer zij niet noodzakelijk zijn, en uiteinden voor het optimaliseren van uw indexen en vragen om zo optimaal mogelijk te presteren.
 
-Ook, zorg ervoor om de [ documentatie van Oak te lezen bij het schrijven van vragen en indexen ](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in de vragen van Oak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
+Ook, zorg ervoor om de [&#x200B; documentatie van Oak te lezen bij het schrijven van vragen en indexen &#x200B;](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in de vragen van Oak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
 
 ## Wanneer moet u query&#39;s gebruiken? {#when-to-use-queries}
 
@@ -66,7 +66,7 @@ Als de gegevens of de inhoud regelmatig zullen veranderen, kan de vraag op een p
 
 ## Zoekopdrachtoptimalisatie {#query-optimization}
 
-Wanneer het runnen van een vraag die geen index gebruikt, worden de waarschuwingen geregistreerd betreffende knoop traversal. Als dit een vraag is die vaak zal lopen, creeer een index. Om te bepalen welke index een bepaalde vraag gebruikt, wordt het [ Uitleg hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) geadviseerd. Voor extra informatie, kan het registreren van de FOUTOPSPORING voor de relevante onderzoek APIs worden toegelaten.
+Wanneer het runnen van een vraag die geen index gebruikt, worden de waarschuwingen geregistreerd betreffende knoop traversal. Als dit een vraag is die vaak zal lopen, creeer een index. Om te bepalen welke index een bepaalde vraag gebruikt, wordt het [&#x200B; Uitleg hulpmiddel van de Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query) geadviseerd. Voor extra informatie, kan het registreren van de FOUTOPSPORING voor de relevante onderzoek APIs worden toegelaten.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Wanneer het runnen van complexe vragen, kunnen er gevallen zijn waarin het onder
 
 AEM staat het schrijven van vragen op één van drie manieren toe:
 
-* Via [ QueryBuilder APIs ](/help/sites-developing/querybuilder-api.md) (geadviseerd)
+* Via [&#x200B; QueryBuilder APIs &#x200B;](/help/sites-developing/querybuilder-api.md) (geadviseerd)
 * XPath gebruiken (aanbevolen)
 * SQL2 gebruiken
 
@@ -84,11 +84,11 @@ Terwijl alle vragen in SQL2 alvorens worden in werking gesteld worden omgezet, i
 
 >[!NOTE]
 >
->Wanneer het gebruiken van QueryBuilder, bepaalt het de resultaattelling door gebrek, die in Oak langzamer is dan vorige versies van Jackrabbit. Om dit te compenseren, kunt u de [ radenTotal parameter ](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) gebruiken.
+>Wanneer het gebruiken van QueryBuilder, bepaalt het de resultaattelling door gebrek, die in Oak langzamer is dan vorige versies van Jackrabbit. Om dit te compenseren, kunt u de [&#x200B; radenTotal parameter &#x200B;](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) gebruiken.
 
 ### Het gereedschap Uitleg query {#the-explain-query-tool}
 
-Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Om deze activiteit toe te laten, kunt u het [ Uitleg hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) gebruiken dat deel van het Dashboard van Verrichtingen uitmaakt. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
+Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Om deze activiteit toe te laten, kunt u het [&#x200B; Uitleg hulpmiddel van de Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#explain-query) gebruiken dat deel van het Dashboard van Verrichtingen uitmaakt. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
 
 ### FOUTOPSPORING VOOR VRAGEN {#debug-logging-for-queries}
 
@@ -100,7 +100,7 @@ Om wat extra informatie over te krijgen hoe Oak kiest welke te gebruiken index e
 
 Zorg ervoor om dit registreerapparaat te verwijderen wanneer u het zuiveren van uw vraag hebt gebeëindigd. Het neigt naar een grote hoeveelheid activiteit en kan uiteindelijk uw schijf vullen met logboekdossiers.
 
-Voor meer informatie over hoe te om dit te doen, zie de [ het Registreren documentatie ](/help/sites-deploying/configure-logging.md).
+Voor meer informatie over hoe te om dit te doen, zie de [&#x200B; het Registreren documentatie &#x200B;](/help/sites-deploying/configure-logging.md).
 
 ### Indexstatistieken {#index-statistics}
 
@@ -112,7 +112,7 @@ Zodra u aan de console JMX wordt het programma geopend, voer een onderzoek naar 
 
 Voor vraagstatistieken, bekijk de genoemde MBean **Statistieken van de Vraag van Oak**.
 
-Als u in uw indexen zou willen graven gebruikend een hulpmiddel als [ Luke ](https://code.google.com/archive/p/luke/), moet u de console van Oak gebruiken om de index van `NodeStore` aan een folder van het filesystem te dumpen. Voor instructies op hoe te om dit te doen, lees de [ documentatie van Lucene ](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Als u in uw indexen zou willen graven gebruikend een hulpmiddel als [&#x200B; Luke &#x200B;](https://code.google.com/archive/p/luke/), moet u de console van Oak gebruiken om de index van `NodeStore` aan een folder van het filesystem te dumpen. Voor instructies op hoe te om dit te doen, lees de [&#x200B; documentatie van Lucene &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Hiervoor hebt u toegang tot `https://server:port/oak:index.tidy.-1.json` nodig
 
@@ -145,7 +145,7 @@ De aanbevolen waarden zijn:
 
 In AEM 6.3, zijn de bovengenoemde twee parameters preconfigured uit-van-de-doos, en kunnen via OSGi QueryEngineSettings worden voortgeduurd.
 
-Meer informatie beschikbaar onder: [ https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
+Meer informatie beschikbaar onder: [&#x200B; https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Tips voor het maken van efficiënte indexen {#tips-for-creating-efficient-indexes}
 
@@ -161,7 +161,7 @@ Bovendien zijn indexen alleen nuttig als de gegevens in de index uniek genoeg zi
 
 Lucene-indexen werden geïntroduceerd in Oak 1.0.9 en bieden krachtige optimalisaties voor de eigenschapsindexen die werden geïntroduceerd bij de eerste introductie van AEM 6. Wanneer u besluit of u Lucene-indexen of eigenschapsindexen wilt gebruiken, moet u rekening houden met het volgende:
 
-* Lucene-indexen bieden veel meer functies dan eigenschapindexen. Een eigenschapindex kan bijvoorbeeld slechts één eigenschap indexeren, terwijl een Lucene-index er veel kan bevatten. Voor meer informatie over alle eigenschappen beschikbaar in de indexen van Lucene, raadpleeg de [ documentatie ](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Lucene-indexen bieden veel meer functies dan eigenschapindexen. Een eigenschapindex kan bijvoorbeeld slechts één eigenschap indexeren, terwijl een Lucene-index er veel kan bevatten. Voor meer informatie over alle eigenschappen beschikbaar in de indexen van Lucene, raadpleeg de [&#x200B; documentatie &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Lucene-indexen zijn asynchroon. Hoewel dit een aanzienlijke prestatieverhoging biedt, kan het ook een vertraging veroorzaken tussen wanneer gegevens naar de gegevensopslagplaats worden geschreven en wanneer de index wordt bijgewerkt. Als het essentieel is om vragen te hebben 100% nauwkeurige resultaten terugkeren, zou een bezitsindex worden vereist.
 * Door asynchroon te zijn, kunnen de indexen van Lucene geen uniciteitsbeperkingen afdwingen. Als dit wordt vereist, dan moet een bezitsindex op zijn plaats worden gebracht.
 
@@ -171,7 +171,7 @@ In het algemeen, wordt het geadviseerd u de indexen van Lucene tenzij er een dwi
 
 AEM ondersteunt standaard ook Solr-indexering. Dit wordt gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr zou moeten worden overwogen wanneer de AEM instanties niet de capaciteit van cpu hebben om het aantal vragen te behandelen die in onderzoek intensieve plaatsingen zoals onderzoek gedreven websites met een hoog aantal gezamenlijke gebruikers worden vereist. Alternatief, kan Solr in een op kruipper-gebaseerde benadering worden uitgevoerd om enkele meer geavanceerde eigenschappen van het platform te gebruiken.
 
-Solr indexen kunnen worden gevormd om ingebed op de AEM server voor ontwikkelingsmilieu&#39;s in werking te stellen of aan een verre instantie kunnen worden geoffload om onderzoeksscalability op de productie en het opvoeren milieu&#39;s te verbeteren. Hoewel het offloaden van onderzoek scalability verbetert, introduceert het latentie en wegens dit, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de Solr integratie te vormen en hoe te om zonne indexen tot stand te brengen zie de [ Vragen van Oak en het Indexeren documentatie ](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
+Solr indexen kunnen worden gevormd om ingebed op de AEM server voor ontwikkelingsmilieu&#39;s in werking te stellen of aan een verre instantie kunnen worden geoffload om onderzoeksscalability op de productie en het opvoeren milieu&#39;s te verbeteren. Hoewel het offloaden van onderzoek scalability verbetert, introduceert het latentie en wegens dit, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de Solr integratie te vormen en hoe te om zonne indexen tot stand te brengen zie de [&#x200B; Vragen van Oak en het Indexeren documentatie &#x200B;](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
 >[!NOTE]
 >
@@ -210,11 +210,11 @@ Wanneer u een index op een MongoDB-instantie verwijdert, zijn de verwijderingsko
 
 >[!NOTE]
 >
->Voor meer informatie over eak-mongo.js, zie de [ sectie van de Hulpmiddelen van de Lijn van het Bevel ](https://jackrabbit.apache.org/oak/docs/command_line.html) van de documentatie van Oak.
+>Voor meer informatie over eak-mongo.js, zie de [&#x200B; sectie van de Hulpmiddelen van de Lijn van het Bevel &#x200B;](https://jackrabbit.apache.org/oak/docs/command_line.html) van de documentatie van Oak.
 
 ### Het JCR-query-controleblad {#jcrquerycheatsheet}
 
-Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [ JCR- Cheat Sheet van de Vraag ](assets/JCR_query_cheatsheet-v1.1.pdf) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling. Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
+Om de verwezenlijking van efficiënte vragen JCR en indexdefinities te steunen, is het [&#x200B; JCR- Cheat Sheet van de Vraag &#x200B;](assets/JCR_query_cheatsheet-v1.1.pdf) beschikbaar voor download en gebruik als verwijzing tijdens ontwikkeling. Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van Oak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
 
 ## Opnieuw indexeren {#re-indexing}
 
@@ -229,7 +229,7 @@ Herindexering van Oak-indexen moet worden vermeden, tenzij daarvoor in onderstaa
 >Voorafgaand aan het raadplegen van de lijsten hieronder om te bepalen als het opnieuw indexeren nuttig is, **&#x200B;**&#x200B;verifieert altijd:
 >
 >* de vraag correct is
->* de vraag lost aan de verwachte index op (gebruikend [ Verklaar Vraag ](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
+>* de vraag lost aan de verwachte index op (gebruikend [&#x200B; Verklaar Vraag &#x200B;](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* het indexeringsproces is voltooid
 >
 
@@ -249,7 +249,7 @@ De volgende details en resoluties zijn mogelijk:
 * Is van toepassing op/if:
 
    * Alle Oak-versies
-   * Slechts [ bezitsindexen ](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+   * Slechts [&#x200B; bezitsindexen &#x200B;](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * Symptomen:
 
@@ -262,7 +262,7 @@ De volgende details en resoluties zijn mogelijk:
 
 * Hoe oplossen:
 
-   * [ herindexeer ](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) de luceenindex
+   * [&#x200B; herindexeer &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) de luceenindex
    * U kunt ook op de ontbrekende knooppunten tikken (een goedaardige schrijfbewerking uitvoeren)
 
       * Vereist handmatige aanrakingen of aangepaste code
@@ -274,7 +274,7 @@ De volgende details en resoluties zijn mogelijk:
 * Is van toepassing op/if:
 
    * Alle Oak-versies
-   * Slechts [ lucene indexen ](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Slechts [&#x200B; lucene indexen &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptomen:
 
@@ -290,15 +290,15 @@ De volgende details en resoluties zijn mogelijk:
 
    * Oak-versies ouder dan 1.6:
 
-      * [ herindexeer ](#how-to-re-index) de luceenindex
+      * [&#x200B; herindexeer &#x200B;](#how-to-re-index) de luceenindex
 
    * Oak 1.6+
 
       * Als de wijzigingen de bestaande inhoud niet beïnvloeden, hoeft u alleen de inhoud te vernieuwen
 
-         * [ verfrist zich ](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) de lucene index door [ te plaatsen:queryIndexDefinition ]@refresh=true
+         * [&#x200B; verfrist zich &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) de lucene index door [ te plaatsen:queryIndexDefinition ]@refresh=true
 
-      * Anders, [ herdex ](#how-to-re-index) de lucene index
+      * Anders, [&#x200B; herdex &#x200B;](#how-to-re-index) de lucene index
 
          * Opmerking: de indexstatus van de laatste goede herindexering (of eerste indexering) wordt gebruikt totdat een nieuwe herindexering wordt geactiveerd.
 
@@ -318,7 +318,7 @@ De volgende details en resoluties zijn mogelijk:
 * Is van toepassing op/if:
 
    * Alle Oak-versies
-   * Slechts [ lucene indexen ](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Slechts [&#x200B; lucene indexen &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptomen:
 
@@ -332,12 +332,12 @@ De volgende details en resoluties zijn mogelijk:
 
    * Een doorlopende controle in de repository uitvoeren, bijvoorbeeld:
 
-     [ http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+     [&#x200B; http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
      het doorlopen van de gegevensopslagruimte bepaalt of andere binaire bestanden (behalve lucene-bestanden) ontbreken
 
    * Als binaire getallen anders dan lucene-indexen ontbreken, kunt u terugzetten vanaf een back-up
-   * Anders, [ herdex ](#how-to-re-index) *alle* lucene indexen
+   * Anders, [&#x200B; herdex &#x200B;](#how-to-re-index) *alle* lucene indexen
    * Opmerking:
 
      Deze voorwaarde is indicatief van een misconfigured datastore die in OM HET EVEN WELK binair getal (bijvoorbeeld, activa binaries) kan resulteren om te gaan missen.
@@ -349,7 +349,7 @@ De volgende details en resoluties zijn mogelijk:
 * Is van toepassing op/if:
 
    * Alle Oak-versies
-   * Slechts [ lucene indexen ](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Slechts [&#x200B; lucene indexen &#x200B;](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptomen:
 
@@ -371,18 +371,18 @@ De volgende details en resoluties zijn mogelijk:
 
    * Als dit het probleem niet verhelpt en de uitzonderingen `AsyncIndexUpdate` blijven bestaan:
 
-      1. [ herindexeer ](#how-to-re-index) de foutenindex
+      1. [&#x200B; herindexeer &#x200B;](#how-to-re-index) de foutenindex
       1. Ook dossier een [&#128279;](https://helpx.adobe.com/nl/support.html) kaartje van de Steun van de Adobe 0&rbrace; &lbrace;
 
 ### Opnieuw indexeren {#how-to-re-index}
 
 >[!NOTE]
 >
->In AEM 6.5, [ oak-run.jar is de ENIGE gesteunde methode ](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op de bewaarplaatsen MongoMK of RDBMK.
+>In AEM 6.5, [&#x200B; oak-run.jar is de ENIGE gesteunde methode &#x200B;](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op de bewaarplaatsen MongoMK of RDBMK.
 
 #### Eigenschapindexen opnieuw indexeren {#re-indexing-property-indexes}
 
-* Gebruik [ eak-run.jar ](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) om de bezitsindex opnieuw te indexeren
+* Gebruik [&#x200B; eak-run.jar &#x200B;](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) om de bezitsindex opnieuw te indexeren
 * De eigenschap async-redex instellen op true op de index van de eigenschap
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
@@ -391,18 +391,18 @@ De volgende details en resoluties zijn mogelijk:
 
   bijvoorbeeld:
 
-  [ http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
+  [&#x200B; http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
 #### indexen van eigenschappen van Lucene opnieuw indexeren {#re-indexing-lucene-property-indexes}
 
-* Gebruik [ eak-run.jar om ](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) de index van het Bezit van Lucene opnieuw te indexeren.
+* Gebruik [&#x200B; eak-run.jar om &#x200B;](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) de index van het Bezit van Lucene opnieuw te indexeren.
 * Stel de eigenschap async-redex in op true op de index van de eigenschap lucene
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
->De voorafgaande sectie vat en kaders de Oak opnieuw indexerende begeleiding van de [ documentatie van Apache Oak ](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van AEM samen.
+>De voorafgaande sectie vat en kaders de Oak opnieuw indexerende begeleiding van de [&#x200B; documentatie van Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van AEM samen.
 
 ### Tekstvoorextractie van binaire tekens {#text-pre-extraction-of-binaries}
 
@@ -437,7 +437,7 @@ Onder normale verrichting van AEM, bijvoorbeeld, zal het uploaden van Assets via
 * De inhoud (binaire bestanden) waaruit tekst vooraf kan worden geëxtraheerd, moet zich in de opslagplaats bevinden
 * Een onderhoudsvenster voor het genereren van het CSV-bestand EN voor het uitvoeren van de laatste nieuwe configuratie
 * Oak-versie: 1.0.18+, 1.2.3+
-* [ eak-run.jar ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/) versie 1.7.4+
+* [&#x200B; eak-run.jar &#x200B;](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/) versie 1.7.4+
 * Een bestandssysteemmap/-share voor het opslaan van geëxtraheerde tekst die toegankelijk is via de indexering AEM instanties
 
    * De OSGi-config van de preextractie van de Tekst vereist een weg van het dossiersysteem aan de gehaalde tekstdossiers, zodat moeten zij direct van de AEM instantie (lokale aandrijving of het dossier delen onderstel) toegankelijk zijn
@@ -446,11 +446,11 @@ Onder normale verrichting van AEM, bijvoorbeeld, zal het uploaden van Assets via
 
 >[!NOTE]
 >
->***de eik-looppas.jar bevelen hieronder worden geschetst worden volledig opgesomd in [ https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html ](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
+>***de eik-looppas.jar bevelen hieronder worden geschetst worden volledig opgesomd in [&#x200B; https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html &#x200B;](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
 >
 >Het bovenstaande diagram en de onderstaande stappen dienen als toelichting en aanvulling op de technische tekstvoorbereidingsstappen die in de documentatie van Apache Oak worden beschreven.
 
-![ de pre-extractieprocesstroom van de Tekst ](assets/chlimage_1-139.png)
+![&#x200B; de pre-extractieprocesstroom van de Tekst &#x200B;](assets/chlimage_1-139.png)
 
 **produceer lijst van inhoud aan preextract**
 
@@ -480,6 +480,6 @@ Aan vooraf geëxtraheerde tekst kan stapsgewijs worden toegevoegd. De voorextrac
 
 *Looppas die (Stappen 3a-b) opnieuw indexeert tijdens een onderhoud/laag-gebruiksperiode aangezien de Opslag van de Knoop tijdens deze verrichting wordt overgestoken, die significante lading op het systeem kan veroorzaken.*
 
-3 bis. [ opnieuw indexeert ](#how-to-re-index) van de indexen van Lucene wordt aangehaald in AEM.
+3 bis. [&#x200B; opnieuw indexeert &#x200B;](#how-to-re-index) van de indexen van Lucene wordt aangehaald in AEM.
 
 3 ter. De Apache Jackrabbit Oak DataStore PreExtractedTextProvider OSGi config (geconfigureerd om te wijzen naar de uitgenomen tekst via een bestandssysteempad) geeft Oak de opdracht om volledige tekst uit de uitgenomen bestanden te betrekken en vermijdt direct het raken en verwerken van de gegevens die zijn opgeslagen in de opslagplaats.

@@ -34,7 +34,7 @@ U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Samenstellen: klik hier op Configuraties beheren en stel de service voor het samenstellen van build.phonegap.com in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analytics: Klik beheert configuraties en opstelling uw [ Adobe Mobiele Diensten de clouddienst van SDK ](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik beheert configuraties en opstelling uw [&#x200B; Adobe Mobiele Diensten de clouddienst van SDK &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=nl-NL). Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 ## App-sjablonen gebruiken {#using-app-templates}
 
@@ -45,22 +45,22 @@ Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u ee
 
 U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om deze functie te kunnen gebruiken.
 
-Het meest recente pakket met voorbeelden van AEM Apps bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. Alternatief, kunt u [ StarterKit ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) installeren die ook een malplaatje verstrekt.
+Het meest recente pakket met voorbeelden van AEM Apps bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. Alternatief, kunt u [&#x200B; StarterKit &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) installeren die ook een malplaatje verstrekt.
 
 Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 1. Navigeer naar de AEM Mobile-toepassingscatalogus: &lt;*server-url*>aem/apps.html/content/mobileapps
 1. Selecteer **creëren** en kies dan **App** zoals hieronder getoond
 
-![ chlimage_1-158 ](assets/chlimage_1-158.png)
+![&#x200B; chlimage_1-158 &#x200B;](assets/chlimage_1-158.png)
 
-Selecteer een toepassingssjabloon die u van een AEM ontwikkelaar kunt krijgen. Zie [ Structuur van een app van AEM Mobile ](/help/mobile/phonegap-structure-an-app.md) voor ontwikkelaarshulp.
+Selecteer een toepassingssjabloon die u van een AEM ontwikkelaar kunt krijgen. Zie [&#x200B; Structuur van een app van AEM Mobile &#x200B;](/help/mobile/phonegap-structure-an-app.md) voor ontwikkelaarshulp.
 
-![ chlimage_1-159 ](assets/chlimage_1-159.png)
+![&#x200B; chlimage_1-159 &#x200B;](assets/chlimage_1-159.png)
 
 Vul de details van de nieuwe app zo nodig in, inclusief de mogelijkheid om de miniatuurafbeelding te wijzigen. Deze waarden kunnen later van de **worden uitgegeven leiden App** tegel.
 
-![ chlimage_1-160 ](assets/chlimage_1-160.png)
+![&#x200B; chlimage_1-160 &#x200B;](assets/chlimage_1-160.png)
 
 ## De volgende stappen {#the-next-steps}
 

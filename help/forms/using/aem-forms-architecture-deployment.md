@@ -20,14 +20,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 ## Architectuur {#architecture}
 
 AEM Forms is een toepassing die in AEM wordt geïmplementeerd als een AEM. Het pakket wordt ook wel AEM Forms-add-onpakket genoemd. Het AEM Forms add-on pakket bevat beide services (API-providers), die worden geïmplementeerd in de AEM OSGi-container, en servlets of JSPs (die zowel front-end als REST API-functionaliteit biedt) die worden beheerd door het AEM Sling-framework. Het volgende diagram toont deze opstelling:
 
-![ architectuur ](assets/architecture.png)
+![&#x200B; architectuur &#x200B;](assets/architecture.png)
 
 De architectuur voor AEM Forms omvat de volgende componenten:
 
@@ -39,7 +39,7 @@ De architectuur voor AEM Forms omvat de volgende componenten:
    * **Vertoning en vooraan de voorzijde van de voorlegging van de Vorm**: Een eind - gebruiker die interface voor gebruik door het eind - gebruikers van AEM Forms (bijvoorbeeld, burgers die tot een overheidswebsite toegang hebben) wordt gericht. Dit biedt formulieruitvoering (weergaveformulier in een webbrowser) en verzendfuncties.
    * **REST APIs**: JSPs en servlets voeren een ondergroep van vormdiensten voor ver gebruik door op HTTP-Gebaseerde cliënten, zoals de vormen mobiele SDK uit.
 
-**AEM Forms op OSGi:** AEM Forms op milieu OSGi is standaard AEM Auteur of AEM Publish met het pakket van AEM Forms op het wordt opgesteld dat. U kunt AEM Forms op OSGi in a [ één enkel servermilieu, Farm, en gegroepeerde montages ](/help/sites-deploying/recommended-deploys.md) in werking stellen. Clusterinstellingen zijn alleen beschikbaar voor AEM auteur-instanties.
+**AEM Forms op OSGi:** AEM Forms op milieu OSGi is standaard AEM Auteur of AEM Publish met het pakket van AEM Forms op het wordt opgesteld dat. U kunt AEM Forms op OSGi in a [&#x200B; één enkel servermilieu, Farm, en gegroepeerde montages &#x200B;](/help/sites-deploying/recommended-deploys.md) in werking stellen. Clusterinstellingen zijn alleen beschikbaar voor AEM auteur-instanties.
 
 **AEM Forms op JEE:** AEM Forms op JEE is de server die van AEM Forms op de stapel JEE loopt. Deze heeft AEM Auteur met AEM Forms add-on pakketten en extra AEM Forms JEE-mogelijkheden die op één JEE-stapel worden geïmplementeerd die op een toepassingsserver wordt uitgevoerd. U kunt AEM Forms op JEE in enig-server en gegroepeerde montages in werking stellen. AEM Forms on JEE is alleen vereist voor het uitvoeren van documentbeveiliging, procesbeheer en voor klanten van LiveCycles die upgraden naar AEM Forms. Hier volgen enkele aanvullende scenario&#39;s voor het gebruik van AEM Forms op JEE:
 
@@ -53,13 +53,13 @@ AEM Forms on JEE biedt ook de volgende ondersteunende diensten aan de AEM compon
 
 De AEM Forms-ontwerpgebruikersinterface ondersteunt het maken van Document of Record (DOR), PDF forms en HTML5 Forms niet. Dergelijke middelen worden ontworpen met behulp van de stand-alone toepassing van Forms Designer en individueel geupload aan AEM Forms Manager. Voor AEM Forms op JEE kunnen formulieren ook worden ontworpen als toepassingsmiddelen (in AEM Forms Workbench) en worden geïmplementeerd in AEM Forms op de JEE-server.
 
-AEM Forms op OSGi en AEM Forms op JEE hebben beide workflowmogelijkheden. U kunt basisworkflows voor diverse taken op de AEM formulieren op OSGi snel bouwen en implementeren, zonder dat u de volledige Process Management-capaciteit van AEM Forms op JEE hoeft te installeren. Er is één of ander verschil in de [ eigenschappen van vorm-centric werkschema op AEM Forms op OSGi en vermogen van het Beheer van het Proces van AEM Forms op JEE ](capabilities-osgi-jee-workflows.md). De ontwikkeling en het beheer van Form-centric werkschema&#39;s op AEM Forms op OSGi gebruikt de vertrouwde AEM van het Werkschema en AEM Inbox mogelijkheden.
+AEM Forms op OSGi en AEM Forms op JEE hebben beide workflowmogelijkheden. U kunt basisworkflows voor diverse taken op de AEM formulieren op OSGi snel bouwen en implementeren, zonder dat u de volledige Process Management-capaciteit van AEM Forms op JEE hoeft te installeren. Er is één of ander verschil in de [&#x200B; eigenschappen van vorm-centric werkschema op AEM Forms op OSGi en vermogen van het Beheer van het Proces van AEM Forms op JEE &#x200B;](capabilities-osgi-jee-workflows.md). De ontwikkeling en het beheer van Form-centric werkschema&#39;s op AEM Forms op OSGi gebruikt de vertrouwde AEM van het Werkschema en AEM Inbox mogelijkheden.
 
 ## Terminologie {#terminologies}
 
 In de volgende afbeelding worden verschillende AEM configuraties van formulierservers en hun componenten weergegeven die worden gebruikt bij een gebruikelijke AEM Forms-implementatie:
 
-![ aem_forms_-_recommendedtopologie ](assets/aem_forms_-_recommendedtopology.png)
+![&#x200B; aem_forms_-_recommendedtopologie &#x200B;](assets/aem_forms_-_recommendedtopology.png)
 
 **Auteur:** een auteursinstantie is een server van AEM Forms die op de standaardwijze van de de looppas van de Auteur loopt. Het kan AEM Forms op JEE of AEM Forms op milieu OSGi zijn. Het is bedoeld voor interne gebruikers, formulieren en interactieve communicatieontwerpers, en ontwikkelaars. Het maakt de volgende functies mogelijk:
 
@@ -69,7 +69,7 @@ In de volgende afbeelding worden verschillende AEM configuraties van formulierse
 **Publish:** publiceer instantie is een server van AEM Forms die op de standaard de looppaswijze van Publish loopt. Publish-instanties zijn bedoeld voor eindgebruikers van op formulieren gebaseerde toepassingen, bijvoorbeeld gebruikers die een openbare website openen en formulieren verzenden. Het maakt de volgende functies mogelijk:
 
 * Forms renderen en verzenden voor eindgebruikers.
-* Het vervoer van ruwe ingediende formuliergegevens naar verwerkingsinstanties voor verdere verwerking en opslag in het definitieve registratiesysteem. De standaardimplementatie die in AEM Forms wordt verstrekt bereikt dit gebruikend de omgekeerde replicatiemogelijkheden van AEM. Er is ook een alternatieve implementatie beschikbaar voor het rechtstreeks verplaatsen van formuliergegevens naar verwerkingsservers in plaats van deze eerst lokaal op te slaan (de laatste is een noodzakelijke voorwaarde voor het activeren van reverse-replicatie). Klanten die zorgen over opslag van potentieel gevoelige gegevens hebben over publiceren instanties kunnen binnen voor deze [ alternatieve implementatie ](/help/forms/using/configuring-draft-submission-storage.md) gaan, aangezien de verwerkingsinstanties typisch in een veiligere streek liggen.
+* Het vervoer van ruwe ingediende formuliergegevens naar verwerkingsinstanties voor verdere verwerking en opslag in het definitieve registratiesysteem. De standaardimplementatie die in AEM Forms wordt verstrekt bereikt dit gebruikend de omgekeerde replicatiemogelijkheden van AEM. Er is ook een alternatieve implementatie beschikbaar voor het rechtstreeks verplaatsen van formuliergegevens naar verwerkingsservers in plaats van deze eerst lokaal op te slaan (de laatste is een noodzakelijke voorwaarde voor het activeren van reverse-replicatie). Klanten die zorgen over opslag van potentieel gevoelige gegevens hebben over publiceren instanties kunnen binnen voor deze [&#x200B; alternatieve implementatie &#x200B;](/help/forms/using/configuring-draft-submission-storage.md) gaan, aangezien de verwerkingsinstanties typisch in een veiligere streek liggen.
 * Renderen en verzenden van interactieve communicatie en letters: bij publicatie-instanties wordt een interactieve communicatie en brief weergegeven en de bijbehorende gegevens worden naar verwerkingsinstanties verzonden voor opslag en naverwerking. De gegevens kunnen lokaal op een publicatie-instantie worden opgeslagen en later worden gerepliceerd naar een verwerkingsinstantie (de standaardoptie), of rechtstreeks naar een verwerkingsinstantie worden geduwd zonder op de publicatie-instantie op te slaan. De laatstgenoemde implementatie is nuttig voor veiligheid-bewuste klanten.
 
 **Verwerking:** Een geval van AEM Forms die op de wijze van de de looppas van de Auteur met geen gebruikers loopt die aan de vorm-manager groep worden toegewezen. U kunt AEM Forms op JEE of AEM Forms op OSGi als verwerkingsinstantie opstellen. De gebruikers worden niet toegewezen om ervoor te zorgen dat de activiteiten van de creatie en het beheer van de vorm niet op de instantie van de Verwerking worden uitgevoerd en slechts op de instantie van de Auteur voorkomen. Een verwerkingsinstantie schakelt de volgende functies in:
@@ -100,7 +100,7 @@ AEM Forms-klanten die alleen documentservices of documentbeveiligingsmogelijkhed
 
 Hoewel AEM Forms u in staat stelt alle functies van één server in te stellen en uit te voeren, moet u toch capaciteitsplanning, taakverdeling en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Als u bijvoorbeeld in een omgeving met de service PDF Generator duizenden pagina&#39;s per dag wilt converteren en digitale handtekeningen wilt toevoegen om de toegang tot documenten te beperken, maakt u aparte AEM Forms-servers voor de service PDF Generator en de mogelijkheden voor digitale handtekeningen. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
 
-![ basis-eigenschappen ](assets/basic-features.png)
+![&#x200B; basis-eigenschappen &#x200B;](assets/basic-features.png)
 
 ### Topologie voor het gebruik van AEM Forms-procesbeheer {#topology-for-using-aem-forms-process-management}
 
@@ -110,7 +110,7 @@ Als u van LiveCycle ES4 bevordert, spiegelt deze topologie dicht met wat u reeds
 
 De opslag van formuliergegevens is een gegevensopslagruimte van derden die wordt gebruikt voor de opslag van de uiteindelijke verwerkte gegevens van formulieren en interactieve communicatie. Dit is een facultatief element in de topologie. U kunt er ook voor kiezen om een verwerkingsinstantie in te stellen en de opslagplaats ervan te gebruiken als het uiteindelijke systeem van gegevensbestanden, indien nodig.
 
-![ topologie_for_usinghtmlworkspaceandformsapp ](assets/topology_for_usinghtmlworkspaceandformsapp.png)
+![&#x200B; topologie_for_usinghtmlworkspaceandformsapp &#x200B;](assets/topology_for_usinghtmlworkspaceandformsapp.png)
 
 De topologie wordt aanbevolen voor klanten die AEM Forms op JEE-server willen gebruiken voor procesbeheermogelijkheden (HTML Workspace) zonder gebruik te maken van naverwerking, adaptieve formulieren, HTML5-formulieren en interactieve communicatiemogelijkheden.
 
@@ -118,7 +118,7 @@ De topologie wordt aanbevolen voor klanten die AEM Forms op JEE-server willen ge
 
 AEM Forms-klanten die AEM Forms-mogelijkheden voor het vastleggen van gegevens willen gebruiken, bijvoorbeeld adaptieve formulieren, HTML5 Forms, PDF forms, kunnen een soortgelijke topologie hebben als hieronder wordt weergegeven. Deze topologie wordt ook geadviseerd voor het gebruiken van interactieve communicatie mogelijkheden van AEM Forms.
 
-![ topologie-voor-gebruiken-vormen-osgi-modules ](assets/topology-for-using-forms-osgi-modules.png)
+![&#x200B; topologie-voor-gebruiken-vormen-osgi-modules &#x200B;](assets/topology-for-using-forms-osgi-modules.png)
 
 U kunt de volgende veranderingen/aanpassingen aan de bovengenoemde topologie aanbrengen:
 
@@ -133,13 +133,13 @@ U kunt de volgende veranderingen/aanpassingen aan de bovengenoemde topologie aan
 
 AEM Forms-klanten die AEM Forms-mogelijkheden voor het vastleggen van gegevens willen gebruiken, bijvoorbeeld adaptieve formulieren, HTML5 Forms, PDF forms, kunnen een soortgelijke topologie hebben als hieronder wordt weergegeven. Deze topologie wordt ook geadviseerd voor het gebruiken van interactieve mededelingen en Forms-Centric Workflows op vermogen OSGi, bijvoorbeeld, voor het gebruiken van AEM Inbox en de App van AEM Forms voor bedrijfsproceswerkschema&#39;s.
 
-![ interactief-gebruik-case-af-cm-osgi-workflow ](assets/interactive-use-cases-af-cm-osgi-workflow.png)
+![&#x200B; interactief-gebruik-case-af-cm-osgi-workflow &#x200B;](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 
 ### Topologie voor het gebruiken van gelete op omslagmogelijkheden voor off-line partijverwerking {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
 AEM Forms-klanten die gecontroleerde mappen voor batchverwerking willen gebruiken, kunnen een soortgelijke topologie hebben als hieronder wordt weergegeven. De topologie toont een gegroepeerd milieu maar u besluit om één enkel geval of een landbouwbedrijf van de servers van AEM Forms afhankelijk van de lading te gebruiken. De gegevensbron van derden is uw eigen systeem-van-verslag. Deze functie fungeert als invoerbron voor Gecontroleerde mappen. De topologie toont ook output in de vorm van een gedrukt dossier. U kunt de uitvoerinhoud ook opslaan in een bestandssysteem, verzenden via e-mail en andere aangepaste methoden gebruiken om uitvoer te verbruiken.
 
-![ off-line-batch-verwerking-via-gecontroleerd-omslagen ](assets/offline-batch-processing-via-watched-folders.png)
+![&#x200B; off-line-batch-verwerking-via-gecontroleerd-omslagen &#x200B;](assets/offline-batch-processing-via-watched-folders.png)
 
 ### Topologie voor het gebruiken van de mogelijkheden van de documentdiensten voor off-line API-Gebaseerde verwerking {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
@@ -147,4 +147,4 @@ De klanten van AEM Forms die van plan zijn om slechts het vermogen van de docume
 
 Hoewel u met AEM Forms alle functies van één server kunt instellen en uitvoeren, moet u capaciteitsplanning uitvoeren, taakverdeling toepassen en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Voor een omgeving die bijvoorbeeld gebruikmaakt van de service PDF Generator om duizenden pagina&#39;s per dag om te zetten en meerdere adaptieve formulieren om gegevens vast te leggen, stelt u afzonderlijke AEM Forms-servers in voor de service PDF Generator en de mogelijkheden voor adaptieve formulieren. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
 
-![ off-line-api-based-processing ](assets/offline-api-based-processing.png)
+![&#x200B; off-line-api-based-processing &#x200B;](assets/offline-api-based-processing.png)

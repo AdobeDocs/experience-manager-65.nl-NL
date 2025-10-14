@@ -29,20 +29,20 @@ Voor het toevoegen van geschreven AEM pagina&#39;s aan uw Hybride-app is coördi
 
 Om de verklaring gemakkelijker te kunnen volgen, wordt het AEM Experience Cloud gebruikt: AEM Mobile Hybrid Reference om de concepten uit te leggen. De Hybride Reference-app bestaat uit een welkomstpagina met een zijmenu.
 
-![ chlimage_1-76 ](assets/chlimage_1-76.png)
+![&#x200B; chlimage_1-76 &#x200B;](assets/chlimage_1-76.png)
 
-In dit voorbeeld wordt de welkomstpagina van de toepassing gemaakt. Het bekijken van de bron [ https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75 ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). De ontwikkelaar van de app heeft een welkomstpagina gedefinieerd en een sjabloon verschaft voor de pagina die door de app wordt weergegeven. Op deze pagina moeten de ontwikkelaar van de app en AEM ontwikkelaar coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Dit pad is belangrijk, omdat de AEM ontwikkelaar zijn welkomstpagina in de AEM-opslagplaats met hetzelfde pad zal samenstellen.
+In dit voorbeeld wordt de welkomstpagina van de toepassing gemaakt. Het bekijken van de bron [&#x200B; https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75 &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). De ontwikkelaar van de app heeft een welkomstpagina gedefinieerd en een sjabloon verschaft voor de pagina die door de app wordt weergegeven. Op deze pagina moeten de ontwikkelaar van de app en AEM ontwikkelaar coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Dit pad is belangrijk, omdat de AEM ontwikkelaar zijn welkomstpagina in de AEM-opslagplaats met hetzelfde pad zal samenstellen.
 
-![ chlimage_1-77 ](assets/chlimage_1-77.png)
+![&#x200B; chlimage_1-77 &#x200B;](assets/chlimage_1-77.png)
 
 Het is belangrijk dat de hybride app en de AEM geschreven inhoud hetzelfde pad gebruiken omdat deze afhankelijk zijn van de mogelijkheid om inhoud te bedekken met Content Sync om nieuwe pagina&#39;s toe te voegen aan de Hybride app. Wanneer de hybride app in AEM wordt geïmporteerd als onderdeel van het importproces, worden configuraties voor Content Sync ingesteld.
 
-![ chlimage_1-78 ](assets/chlimage_1-78.png)
+![&#x200B; chlimage_1-78 &#x200B;](assets/chlimage_1-78.png)
 
 Wanneer u &#39;Source downloaden&#39; van het dashboard van de app gebruikt, worden deze ContentSync-scripts uitgevoerd om een archief van uw Hybrid App samen te stellen.
 
-![ chlimage_1-79 ](assets/chlimage_1-79.png)
+![&#x200B; chlimage_1-79 &#x200B;](assets/chlimage_1-79.png)
 
 ContentSync wordt eerst in &#39;shell&#39; van de app opgehaald, waar alle toepassingen die inhoud van de Hybrid-app hebben ontwikkeld, worden opgeslagen. Vervolgens wordt de inhoud van de app opgehaald. Als er nu pagina&#39;s in de shell zijn die hetzelfde pad hebben als in &#39;content&#39;, worden de pagina&#39;s onder &#39;shell&#39; (vervangen) door de pagina&#39;s onder &#39;content&#39;. Als in het voorbeeld van de Hybride Reference App een pagina wordt gemaakt in AEM die hetzelfde pad heeft als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;, bedekt deze pagina de pagina die deel uitmaakte van de Hybride Reference-app. Het bedekt het met wat er op die locatie AEM is. De overlay wordt verzorgd door ContentSync. Voor iemand die de app gebruikt, zien de updates voor de app met AEM geschreven inhoud er dus naadloos uit en hoeven de app niet opnieuw te worden samengesteld. Als u de app uitvoert, wordt de welkomstpagina daarom als volgt weergegeven:
 
-![ chlimage_1-80 ](assets/chlimage_1-80.png)
+![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-80.png)

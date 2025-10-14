@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Het AEM team bij Adobe werkte nauw met het open-bronproject [ NotSoSerial ](https://github.com/kantega/notsoserial) om in het verlichten van de kwetsbaarheden te helpen die in **worden beschreven CVE-2015-7501**. NotSoSerial is vergunning gegeven onder de [ Apache 2 vergunning ](https://www.apache.org/licenses/LICENSE-2.0) en omvat de code van ASM die onder zijn eigen [ wordt vergunning gegeven BSD-als vergunning ](https://asm.ow2.io/).
+Het AEM team bij Adobe werkte nauw met het open-bronproject [&#x200B; NotSoSerial &#x200B;](https://github.com/kantega/notsoserial) om in het verlichten van de kwetsbaarheden te helpen die in **worden beschreven CVE-2015-7501**. NotSoSerial is vergunning gegeven onder de [&#x200B; Apache 2 vergunning &#x200B;](https://www.apache.org/licenses/LICENSE-2.0) en omvat de code van ASM die onder zijn eigen [&#x200B; wordt vergunning gegeven BSD-als vergunning &#x200B;](https://asm.ow2.io/).
 
 De agent jar inbegrepen met dit pakket is de gewijzigde distributie van Adobe van NotSoSerial.
 
@@ -28,7 +28,7 @@ NotSoSerial is een Java™-oplossing voor een Java™-probleem en is niet AEM-sp
 
 Door gebrek, voert de agent een lijst van gewezen personen controle tegen huidige bekende kwetsbare klassen uit. Deze lijst van gewezen personen is bedoeld om u tegen de huidige lijst van exploitaties te beschermen die dit type van kwetsbaarheid gebruiken.
 
-De lijst van gewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in [ te volgen die de sectie van de Agent ](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel vormen.
+De lijst van gewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in [&#x200B; te volgen die de sectie van de Agent &#x200B;](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel vormen.
 
 De agent is bedoeld om de recentste bekende kwetsbare klassen te helpen verlichten. Als uw project niet-vertrouwde gegevens deserializing, kan het nog kwetsbaar aan ontkenning van de dienstaanvallen, uit geheugenaanvallen, en onbekende toekomstige deserialization exploiteert.
 
@@ -106,7 +106,7 @@ U kunt de configuratie van de deserialization agent verifiëren door aan URL te 
 
 Nadat u tot URL toegang hebt, wordt een lijst van gezondheidscontroles met betrekking tot de agent getoond. U kunt bepalen of de agent correct wordt geactiveerd door te controleren of de gezondheidscontroles voldoende zijn. Als zij ontbreken, moet u de agent manueel laden.
 
-Voor meer informatie over het oplossen van problemenkwesties met de agent, zie [ Behandelende Fouten met Dynamische Agent die ](#handling-errors-with-dynamic-agent-loading) hieronder laadt.
+Voor meer informatie over het oplossen van problemenkwesties met de agent, zie [&#x200B; Behandelende Fouten met Dynamische Agent die &#x200B;](#handling-errors-with-dynamic-agent-loading) hieronder laadt.
 
 >[!NOTE]
 >
@@ -134,8 +134,8 @@ Ga als volgt te werk om de agent handmatig te laden:
 
 1. De JVM stoppen en opnieuw starten;
 
-1. Verifieer opnieuw de activering van de agent door de hierboven beschreven stappen in [ te volgen die de Activering van de Agent ](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation) verifiëren.
+1. Verifieer opnieuw de activering van de agent door de hierboven beschreven stappen in [&#x200B; te volgen die de Activering van de Agent &#x200B;](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation) verifiëren.
 
 ## Andere overwegingen {#other-considerations}
 
-Als u op IBM® JVM loopt, herzie de documentatie over steun voor Java™ Band API bij [ deze plaats ](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).
+Als u op IBM® JVM loopt, herzie de documentatie over steun voor Java™ Band API bij [&#x200B; deze plaats &#x200B;](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).

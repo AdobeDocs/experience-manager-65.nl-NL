@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Gebruikend een reeks primaire bronactiva, produceert de software en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk.
+[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Gebruikend een reeks primaire bronactiva, produceert de software en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk.
 
 De software biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. De workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing worden op unieke wijze geïntegreerd om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
@@ -28,7 +28,7 @@ De software biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien 
 
 ## Wat u met de software kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met de software kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [ Werk met digitale activa ](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
+Met de software kunt u uw elementen beheren voordat u ze publiceert. Hoe te met activa in het algemeen te werken is in detail behandeld in [&#x200B; Werk met digitale activa &#x200B;](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
@@ -45,11 +45,11 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Elementen beheren](managing-assets.md)
 * [Aangepaste pop-ups maken met Snelle weergave](custom-pop-ups.md)
 
-Zie ook [ Opstelling Dynamic Media ](administering-dynamic-media.md).
+Zie ook [&#x200B; Opstelling Dynamic Media &#x200B;](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Om de verschillen te begrijpen tussen het gebruiken van Dynamic Media en het integreren van Dynamic Media Classic met Adobe Experience Manager, zie [ de integratie van Dynamic Media Classic tegenover Dynamic Media ](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Om de verschillen te begrijpen tussen het gebruiken van Dynamic Media en het integreren van Dynamic Media Classic met Adobe Experience Manager, zie [&#x200B; de integratie van Dynamic Media Classic tegenover Dynamic Media &#x200B;](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media ingeschakeld en Dynamic Media uitgeschakeld {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -65,26 +65,26 @@ Wanneer u een beeldactiva selecteert, is de mening van de activa verschillend me
 
 Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]** ) zijn beschikbaar wanneer de software is ingeschakeld.
 
-![ chlimage_1-358 ](assets/chlimage_1-358.png)
+![&#x200B; chlimage_1-358 &#x200B;](assets/chlimage_1-358.png)
 
 ### Afbeeldingssets, spelensets, gemengde mediasets {#image-sets-spins-sets-mixed-media-sets}
 
 Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als de software is ingeschakeld.
 
-![ chlimage_1-359 ](assets/chlimage_1-359.png)
+![&#x200B; chlimage_1-359 &#x200B;](assets/chlimage_1-359.png)
 
 ### PTIFF-uitvoeringen {#ptiff-renditions}
 
 Tot de elementen die geschikt zijn voor Dynamic Media behoren `pyramid.tiffs` .
 
-![ chlimage_1-360 ](assets/chlimage_1-360.png)
+![&#x200B; chlimage_1-360 &#x200B;](assets/chlimage_1-360.png)
 
 ### Weergave van element wijzigen {#asset-views-change}
 
 Als de software is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook klikken om in te zoomen op een bepaald gebied. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Als de software ingeschakeld is, ziet het er als volgt uit:
 
-![ chlimage_1-361 ](assets/chlimage_1-361.png)
+![&#x200B; chlimage_1-361 &#x200B;](assets/chlimage_1-361.png)
 
 Als de software is uitgeschakeld, kunt u in- en uitzoomen en terugkeren naar de oorspronkelijke grootte:
 
-![ chlimage_1-362 ](assets/chlimage_1-362.png)
+![&#x200B; chlimage_1-362 &#x200B;](assets/chlimage_1-362.png)

@@ -25,7 +25,7 @@ AEM Forms 6.5 ondersteunt de volgende CAPTCHA-oplossingen:
 
 * [Turnstile Captcha](/help/forms/using/integrate-adaptive-forms-turnstile.md)
 * [Google reCAPTCHA](/help/forms/using/captcha-adaptive-forms.md)
-* [ hCaptcha ](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+* [&#x200B; hCaptcha &#x200B;](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
 
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
@@ -38,7 +38,7 @@ Cloudflare Turnstile Captcha is een veiligheidsmaatregel die tot doel heeft form
 
 ### Vereisten om de AEM Forms-omgeving te integreren met Turnstile Captcha {#prerequisite}
 
-Om Turnstile voor AEM Forms te vormen, moet u [ Turnstile sitekey en geheime sleutel ](https://developers.cloudflare.com/turnstile/get-started/) van de Website van Turnstile verkrijgen.
+Om Turnstile voor AEM Forms te vormen, moet u [&#x200B; Turnstile sitekey en geheime sleutel &#x200B;](https://developers.cloudflare.com/turnstile/get-started/) van de Website van Turnstile verkrijgen.
 
 ### Draaien configureren {#steps-to-configure-hcaptcha}
 
@@ -58,18 +58,18 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
          1. Klik op **[!UICONTROL Save & Close]** om de configuratie op te slaan.
 
 1. Configureer uw Cloud Servicen:
-   1. Op uw AEM auteursinstantie, ga ![ hulpmiddelen-1 ](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en klik **[!UICONTROL Turnstile]**.
+   1. Op uw AEM auteursinstantie, ga ![&#x200B; hulpmiddelen-1 &#x200B;](assets/tools-1.png) > **[!UICONTROL Cloud Services]** en klik **[!UICONTROL Turnstile]**.
 
-      ![ Draai in Cloud Servicen ](assets/turnstile-in-ui.png)
+      ![&#x200B; Draai in Cloud Servicen &#x200B;](assets/turnstile-in-ui.png)
    1. Selecteer een configuratiecontainer, gecreeerd of bijgewerkt, zoals die in de vorige sectie wordt beschreven. Klik op **[!UICONTROL Create]**.
 
-      ![ Turnstile van de Configuratie ](assets/config-hcaptcha.png)
+      ![&#x200B; Turnstile van de Configuratie &#x200B;](assets/config-hcaptcha.png)
    1. Geef **[!UICONTROL Widget Type]** op als beheerd, niet-interactief of onzichtbaar.
    1. Geef andere gegevens op, zoals **[!UICONTROL Title]** , **[!UICONTROL Name]** .
-   1. Specificeer **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de Dienst van de Draai [ in voorwaarde wordt verkregen die ](#prerequisite).
+   1. Specificeer **[!UICONTROL Site Key]**, en **[!UICONTROL Secret Key]** voor de Dienst van de Draai [&#x200B; in voorwaarde wordt verkregen die &#x200B;](#prerequisite).
    1. Klik op **[!UICONTROL Create]**.
 
-      ![ vorm de Cloud Service om uw milieu van AEM Forms met Turnstile te verbinden ](assets/config-turntstile.png)
+      ![&#x200B; vorm de Cloud Service om uw milieu van AEM Forms met Turnstile te verbinden &#x200B;](assets/config-turntstile.png)
 
    >[!NOTE]
    > Gebruikers hoeven de URL voor JavaScript-validatie aan de clientzijde en de URL voor validatie aan de serverzijde niet aan te passen, omdat deze al zijn voorgevuld voor Microsoft-validatie.
@@ -83,16 +83,16 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Properties]** . Selecteer in **[!UICONTROL Configuration Container]** de configuratiecontainer die de Cloud Configuration bevat die AEM Forms met Turnstile verbindt.
 1. Klik op **[!UICONTROL Save & Close]**.
 
-   Als u geen Container van de Configuratie hebt om de dienst te vormen Captcha, zie sectie [ Draaien ](#configure-turnstile-steps-to-configure-hcaptcha) om te leren hoe te om een Container van de Configuratie tot stand te brengen.
+   Als u geen Container van de Configuratie hebt om de dienst te vormen Captcha, zie sectie [&#x200B; Draaien &#x200B;](#configure-turnstile-steps-to-configure-hcaptcha) om te leren hoe te om een Container van de Configuratie tot stand te brengen.
 
-   ![ Uitgezochte Container van de Configuratie ](assets/captcha-properties.png)
+   ![&#x200B; Uitgezochte Container van de Configuratie &#x200B;](assets/captcha-properties.png)
 
 1. Selecteer een adaptief formulier en klik op **[!UICONTROL Edit]** om het aangepaste formulier te openen in de editor.
 1. Sleep de component **[!UICONTROL Captcha]** vanuit de componentbrowser naar het adaptieve formulier.
-1. Selecteer de **[!UICONTROL Captcha]** component en klik eigenschappen ![ pictogram van Eigenschappen ](assets/configure-icon.svg). Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
+1. Selecteer de **[!UICONTROL Captcha]** component en klik eigenschappen ![&#x200B; pictogram van Eigenschappen &#x200B;](assets/configure-icon.svg). Hiermee wordt het dialoogvenster met eigenschappen geopend. Geef de volgende eigenschappen op:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
-   ![ de Draai van de Wolk v1 ](assets/turnstile-setting-v1.png)
+   ![&#x200B; de Draai van de Wolk v1 &#x200B;](assets/turnstile-setting-v1.png)
 
    * **[!UICONTROL Title]:** specificeer de titel voor uw component Captcha. U kunt een formuliercomponent gemakkelijk herkennen met de unieke titel ervan, zowel in het formulier als in de regeleditor.
    * **[!UICONTROL Configuration Settings]:** selecteer een Cloud-configuratie die voor Turnstile is geconfigureerd.
@@ -101,7 +101,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
    * **[!UICONTROL Configuration Settings]:** selecteer uw Configuratie van de Wolk die voor Turnstile® wordt gevormd.
 
      >[!NOTE]
-     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie [ uw milieu van AEM Forms met Turnstile ](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de Dienst van de Draai verbindt.
+     >U kunt voor een vergelijkbaar doel meerdere Cloud Configurations in uw omgeving gebruiken. Kies de service dus zorgvuldig. Als geen de dienst vermeld is, zie [&#x200B; uw milieu van AEM Forms met Turnstile &#x200B;](#connect-your-forms-environment-with-turnstile-service) verbinden om te leren hoe te om een Cloud Service tot stand te brengen die uw milieu van AEM Forms met de Dienst van de Draai verbindt.
 
    * **[!UICONTROL Error Message]:** Geef het foutbericht op dat aan de gebruiker moet worden weergegeven wanneer het verzenden van Captcha is mislukt.
    * **Grootte Captcha:** U kunt de vertoningsgrootte van de hCaptcha® uitdagingsdialoog selecteren. Gebruik de optie **[!UICONTROL Compact]** om een klein formaat weer te geven en de optie **[!UICONTROL Normal]** om een relatief groot hCaptcha®-uitdagingsdialoogvenster weer te geven.
@@ -111,7 +111,7 @@ Voer de volgende stappen uit om AEM Forms te integreren met de Turnstile-service
 
 Alleen legitieme formulieren waarin de invuller van het formulier de uitdaging van de Turnstile-service met succes heeft verholpen, kunnen nu worden verzonden.
 
-![ Veranderlijke Uitdaging ](assets/turnstile-challenge.png)
+![&#x200B; Veranderlijke Uitdaging &#x200B;](assets/turnstile-challenge.png)
 
 
 ## Veelgestelde vragen

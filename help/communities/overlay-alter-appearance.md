@@ -64,7 +64,7 @@ Selecteer in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Deploym
 
 Voer bij Beginpad `/apps/social/commons` in en selecteer **[!UICONTROL Activate]** .
 
-![ verifieer-inhoud-malplaatje ](assets/verify-content-template.png)
+![&#x200B; verifieer-inhoud-malplaatje &#x200B;](assets/verify-content-template.png)
 
 ### Resultaten weergeven {#view-results}
 
@@ -72,4 +72,4 @@ Als u zich als beheerder, bijvoorbeeld, https://localhost:4503/crx/de als admin/
 
 Als u zich afmeldt en zich vervolgens aanmeldt als `aaron.mcdonald@mailinator.com/password` en de pagina vernieuwt, ziet u dat een avatar niet wordt weergegeven met de geposte opmerking. In plaats daarvan wordt een eenvoudige &#39;xxx&#39; weergegeven.
 
-![ creeer-malplaatje-component ](assets/create-template-component.png)
+![&#x200B; creeer-malplaatje-component &#x200B;](assets/create-template-component.png)

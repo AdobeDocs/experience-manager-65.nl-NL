@@ -28,7 +28,7 @@ Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u
 1. Gebruikend **toon Configuraties**, open het vereiste kader van Adobe Analytics.
 1. Vouw de **sectie van de Configuratie van het Spoor van de Verbinding** uit en vorm zoals vereist (deze pagina verstrekt verdere details):
 
-   ![ het kader van Analytics ](assets/aa-08.png)
+   ![&#x200B; het kader van Analytics &#x200B;](assets/aa-08.png)
 
 ## Bestandsdownloads volgen {#tracking-file-downloads}
 
@@ -59,7 +59,7 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 
 Downloadtracering inschakelen voor uw Adobe Analytics-framework:
 
-1. [ open het kader van Adobe Analytics en breid de Verbinding die sectie van de Configuratie ](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
+1. [&#x200B; open het kader van Adobe Analytics en breid de Verbinding die sectie van de Configuratie &#x200B;](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
 1. Laat **Downloads van het Spoor** toe.
 1. In het **vakje van de Types van Dossier van de Download**, typ de filename uitbreidingen voor de types van dossiers die u gevolgd wilt.
 
@@ -69,7 +69,7 @@ U kunt het klikken van externe verbindingen (uitgangsverbindingen) op uw pagina&
 
 Externe koppelingen voor uw Adobe Analytics-framework volgen:
 
-1. [ open het kader van Adobe Analytics en breid de **Verbinding die sectie van de Configuratie** ](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
+1. [&#x200B; open het kader van Adobe Analytics en breid de **Verbinding die sectie van de Configuratie** &#x200B;](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
 1. Configureer de volgende eigenschappen volgens uw vereisten.
 
 Eigenschappen voor het bijhouden wanneer op externe koppelingen wordt geklikt:
@@ -115,7 +115,7 @@ De frameworktoewijzingen bepalen de gebeurtenis- en de veranderlijke waarden. U 
 
 Om veranderlijke gegevens met verbinding te verzenden klikt:
 
-1. [ open het kader van Adobe Analytics en breid de Verbinding die sectie van de Configuratie ](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
+1. [&#x200B; open het kader van Adobe Analytics en breid de Verbinding die sectie van de Configuratie &#x200B;](#configuring-link-tracking-for-an-adobe-analytics-framework) volgen uit.
 1. Configureer de volgende eigenschappen volgens uw vereisten.
 
 Eigenschappen voor het verzenden van variabele gegevens met koppelingsklikken:
@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Configuratie voorbeeldkoppeling bijhouden {#example-link-tracking-configuration}
 
-Voer de volgende procedures uit om het gedrag van het verbinden volgen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [ Debugger van Adobe Marketing Cloud ](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=nl-NL).
+Voer de volgende procedures uit om het gedrag van het verbinden volgen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [&#x200B; Debugger van Adobe Marketing Cloud &#x200B;](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=nl-NL).
 
 ### Algemene configuratie {#general-configuration}
 
@@ -236,7 +236,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
 
 De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing Cloud Debugger:
 
-![ Debugger van Adobe Marketing Cloud ](assets/aa-leavequerysearch-blank.png)
+![&#x200B; Debugger van Adobe Marketing Cloud &#x200B;](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +250,7 @@ De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing C
 
 De vraagdetails die in Foutopsporing van Adobe Marketing Cloud verschijnen zijn gelijkaardig aan het volgende voorbeeld:
 
-![ Debugger van Adobe Marketing Cloud opnieuw ](assets/aa-leavequerysearch-active.png)
+![&#x200B; Debugger van Adobe Marketing Cloud opnieuw &#x200B;](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -264,9 +264,9 @@ Bij het bijhouden van ad-hockoppelingen kunt u downloadkoppelingen, externe kopp
 
 Als u ad-hockoppelingen wilt bijhouden, moet u:
 
-* [ associeer de pagina die de **2&rbrace; component van de Tekst &lbrace;met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework) bevat.**
-* [ vorm het kader van Adobe Analytics om ad-hoc verbinding het volgen ](#enabling-ad-hoc-link-tracking) toe te laten.
-* [ vorm Verbinding het Volgen voor een component van de Tekst ](#configuring-link-tracking-for-a-text-component).
+* [&#x200B; associeer de pagina die de **2&rbrace; component van de Tekst &lbrace;met het kader &#x200B;](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework) bevat.**
+* [&#x200B; vorm het kader van Adobe Analytics om ad-hoc verbinding het volgen &#x200B;](#enabling-ad-hoc-link-tracking) toe te laten.
+* [&#x200B; vorm Verbinding het Volgen voor een component van de Tekst &#x200B;](#configuring-link-tracking-for-a-text-component).
 
 ### Ad-hockoppelingen bijhouden inschakelen {#enabling-ad-hoc-link-tracking}
 
@@ -314,8 +314,8 @@ Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen 
 
 Alvorens u ad hoc verbinding het volgen voor **componenten van de Tekst** kunt vormen zelf, moeten de volgende configuraties reeds uitgevoerd zijn:
 
-* Het [ kader van Adobe Analytics wordt gevormd om ad hoc verbinding het volgen ](#enabling-ad-hoc-link-tracking) toe te laten.
-* De [ pagina die de **2&rbrace; component van de Tekst &lbrace;bevat wordt geassocieerd met het kader ](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).**
+* Het [&#x200B; kader van Adobe Analytics wordt gevormd om ad hoc verbinding het volgen &#x200B;](#enabling-ad-hoc-link-tracking) toe te laten.
+* De [&#x200B; pagina die de **2&rbrace; component van de Tekst &lbrace;bevat wordt geassocieerd met het kader &#x200B;](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).**
 
 Gebruik de volgende procedure om verbinding het volgen voor de component van de a **Tekst** te vormen:
 
@@ -323,7 +323,7 @@ Gebruik de volgende procedure om verbinding het volgen voor de component van de 
 
 1. Selecteer de tekst die u als hypertekst wilt gebruiken en klik op de knop Hyperlink.
 
-   ![ het pictogram van de Verbinding ](do-not-localize/chlimage_1.png)
+   ![&#x200B; het pictogram van de Verbinding &#x200B;](do-not-localize/chlimage_1.png)
 
 1. Voeg de doel-URL toe in het vak Koppelen naar en vouw vervolgens het gebied Koppeling bijhouden uit.
 
@@ -333,7 +333,7 @@ Gebruik de volgende procedure om verbinding het volgen voor de component van de 
    >
    >Het zal slechts worden toegelaten wanneer u een geldige Verbinding in RTE hebt geselecteerd.
 
-   ![ Toelatend verbinding het volgen ](assets/aa-17.png)
+   ![&#x200B; Toelatend verbinding het volgen &#x200B;](assets/aa-17.png)
 
 1. Laat **het Volgen van de Verbinding van de Douane toe** om de verbinding het volgen configuratie van het kader van Adobe Analytics met voeten te treden en verbinding het volgen voor de huidige verbinding toe te laten.
 

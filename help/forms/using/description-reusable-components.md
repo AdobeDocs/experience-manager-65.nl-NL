@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
 
-De werkruimte van AEM Forms bestaat uit [ herbruikbare ](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [ omslagstructuur ](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier bij plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen van JavaScript worden geluisterd die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+De werkruimte van AEM Forms bestaat uit [&#x200B; herbruikbare &#x200B;](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [&#x200B; omslagstructuur &#x200B;](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier bij plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen van JavaScript worden geluisterd die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 

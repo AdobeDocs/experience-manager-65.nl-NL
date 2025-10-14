@@ -22,13 +22,13 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 
 In Adobe Experience Manager (AEM) kan een tag een eigenschap zijn van
 
-* een inhoudsknoop voor een pagina (zie [ Gebruikend Markeringen ](/help/sites-authoring/tags.md))
+* een inhoudsknoop voor een pagina (zie [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-authoring/tags.md))
 
-* een meta-gegevensknoop voor een activa (zie [ het Leiden Meta-gegevens voor Digitale Assets ](/help/assets/metadata.md))
+* een meta-gegevensknoop voor een activa (zie [&#x200B; het Leiden Meta-gegevens voor Digitale Assets &#x200B;](/help/assets/metadata.md))
 
 Naast pagina&#39;s en elementen worden tags gebruikt voor AEM Communities-functies
 
-* gebruiker produceerde inhoud (zie [ Tagend UGC) ](/help/communities/tag-ugc.md)
+* gebruiker produceerde inhoud (zie [&#x200B; Tagend UGC) &#x200B;](/help/communities/tag-ugc.md)
 
 * De Middelen van Enablement (zie {de Middelen van 0} Tagging Enablement [&#128279;](/help/communities/functions.md#catalog-function))
 
@@ -50,8 +50,8 @@ Enkele eigenschappen van markeringen binnen AEM omvatten:
    * Een tag die geen containertag is, wordt aangeduid als een bladtag
    * Een tagnaamruimte is een bladtag of een containertag
 
-* De markeringen worden gebruikt door de [ component van het Onderzoek ](https://helpx.adobe.com/nl/experience-manager/core-components/using/quick-search.html) om het vinden van inhoud te vergemakkelijken.
-* De markeringen worden gebruikt door de [ component van het Teaser ](https://helpx.adobe.com/nl/experience-manager/core-components/using/teaser.html), die de de markeringswolk van een gebruiker controleert om gerichte inhoud te verstrekken.
+* De markeringen worden gebruikt door de [&#x200B; component van het Onderzoek &#x200B;](https://helpx.adobe.com/nl/experience-manager/core-components/using/quick-search.html) om het vinden van inhoud te vergemakkelijken.
+* De markeringen worden gebruikt door de [&#x200B; component van het Teaser &#x200B;](https://helpx.adobe.com/nl/experience-manager/core-components/using/teaser.html), die de de markeringswolk van een gebruiker controleert om gerichte inhoud te verstrekken.
 * Als labelen een belangrijk aspect van uw inhoud is
 
    * zorg ervoor dat de labels worden verpakt met de pagina&#39;s die deze gebruiken
@@ -73,21 +73,21 @@ De tagconsole openen:
    * select **`General`**
    * select **`Tagging`**
 
-![ managing_tags_usingthetagasministrationconsole ](assets/managing_tags_usingthetagasministrationconsolea.png)
+![&#x200B; managing_tags_usingthetagasministrationconsole &#x200B;](assets/managing_tags_usingthetagasministrationconsolea.png)
 
 ### Een naamruimte maken {#creating-a-namespace}
 
 Als u een naamruimte wilt maken, selecteert u het pictogram **`Create Namespace`** .
 
-De naamruimte is zelf een tag en bevat geen subtags. Nochtans, om een taxonomie te blijven creëren, [ creeer subtags ](#creating-tags), die beurtelings of bladmarkeringen of containermarkeringen kunnen zijn.
+De naamruimte is zelf een tag en bevat geen subtags. Nochtans, om een taxonomie te blijven creëren, [&#x200B; creeer subtags &#x200B;](#creating-tags), die beurtelings of bladmarkeringen of containermarkeringen kunnen zijn.
 
-![ chlimage_1-183 ](assets/chlimage_1-183a.png) ![ creating_tags_andnamespaces ](assets/creating_tags_andnamespacesa.png)
+![&#x200B; chlimage_1-183 &#x200B;](assets/chlimage_1-183a.png) ![&#x200B; creating_tags_andnamespaces &#x200B;](assets/creating_tags_andnamespacesa.png)
 
 * **Titel**
   *(vereist)* Een vertoningstitel voor namespace.
 
 * **Naam**
-  *(facultatief)* Een naam voor namespace. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [ TagID ](/help/sites-developing/framework.md#tagid).
+  *(facultatief)* Een naam voor namespace. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [&#x200B; TagID &#x200B;](/help/sites-developing/framework.md#tagid).
 
 * **Beschrijving**
   *(facultatief)* Een beschrijving van namespace.
@@ -110,11 +110,11 @@ Als u een naamruimte of andere tag selecteert, worden de volgende bewerkingen be
 * [Publiceren ongedaan maken](#unpublishing-tags)
 * [Verwijderen](#deleting-tags)
 
-![ chlimage_1-184 ](assets/chlimage_1-184.png)
+![&#x200B; chlimage_1-184 &#x200B;](assets/chlimage_1-184.png)
 
 Wanneer het browservenster niet breed genoeg is om alle pictogrammen weer te geven, worden de meest rechtse pictogrammen gegroepeerd onder een **`... More`** -pictogram. Hierin wordt een vervolgkeuzelijst van de verborgen bewerkingspictogrammen weergegeven wanneer deze zijn geselecteerd.
 
-![ chlimage_1-185 ](assets/chlimage_1-185.png)
+![&#x200B; chlimage_1-185 &#x200B;](assets/chlimage_1-185.png)
 
 ### Een naamruimtetag selecteren {#selecting-a-namespace-tag}
 
@@ -122,45 +122,45 @@ Wanneer deze optie voor het eerst is geselecteerd en de naamruimte geen tags bev
 
 Als u de tag voor bewerkingen wilt selecteren en meerdere selecties wilt maken, selecteert u alleen het pictogram naast de titel. Als u de titel selecteert, worden alleen eigenschappen weergegeven of wordt de tag geopend om de inhoud ervan weer te geven.
 
-![ chlimage_1-186 ](assets/chlimage_1-186.png) ![ chlimage_1-187 ](assets/chlimage_1-187.png)
+![&#x200B; chlimage_1-186 &#x200B;](assets/chlimage_1-186.png) ![&#x200B; chlimage_1-187 &#x200B;](assets/chlimage_1-187.png)
 
 ### Tageigenschappen weergeven {#viewing-tag-properties}
 
-![ chlimage_1-188 ](assets/chlimage_1-188.png)
+![&#x200B; chlimage_1-188 &#x200B;](assets/chlimage_1-188.png)
 
 Wanneer een naamruimte of andere tag wordt geselecteerd en u het pictogram **`View Properties`** selecteert, wordt informatie over `name` , het tijdstip van de laatste bewerking en het aantal verwijzingen weergegeven. Indien gepubliceerd, wordt de tijd het laatst werd gepubliceerd en identiteitskaart van de uitgever getoond. Deze informatie wordt in een kolom links van de tagkolommen weergegeven.
 
-![ chlimage_1-189 ](assets/chlimage_1-189.png)
+![&#x200B; chlimage_1-189 &#x200B;](assets/chlimage_1-189.png)
 
 ### Tagverwijzingen weergeven {#showing-tag-references}
 
-![ chlimage_1-190 ](assets/chlimage_1-190.png)
+![&#x200B; chlimage_1-190 &#x200B;](assets/chlimage_1-190.png)
 
 Wanneer een namespace of andere markering wordt geselecteerd, die zal het **pictogram van Verwijzingen** selecteren de inhoud identificeren waarop de markering is toegepast.
 
 De eerste weergave is een aantal toegepaste labels.
 
-![ chlimage_1-191 ](assets/chlimage_1-191.png)
+![&#x200B; chlimage_1-191 &#x200B;](assets/chlimage_1-191.png)
 
 Als u de pijl rechts van de telling selecteert, worden de referentienamen weergegeven.
 
 Het pad naar de verwijzing wordt weergegeven als knopinfo wanneer u de muisaanwijzer op een verwijzing plaatst.
 
-![ chlimage_1-192 ](assets/chlimage_1-192.png)
+![&#x200B; chlimage_1-192 &#x200B;](assets/chlimage_1-192.png)
 
 ### Tags maken {#creating-tags}
 
-![ chlimage_1-193 ](assets/chlimage_1-193.png)
+![&#x200B; chlimage_1-193 &#x200B;](assets/chlimage_1-193.png)
 
 Wanneer een naamruimte of andere tag is geselecteerd (door het pictogram naast de titel te selecteren), kan een onderliggende tag voor de huidige tag worden gemaakt door het pictogram **`Create Tag`** te selecteren.
 
-![ chlimage_1-194 ](assets/chlimage_1-194.png)
+![&#x200B; chlimage_1-194 &#x200B;](assets/chlimage_1-194.png)
 
 * **Titel**
 *(vereist) *A display title for the tag.
 
 * **Naam**
-*(optioneel) *Een naam voor de tag. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [ TagID ](/help/sites-developing/framework.md#tagid).
+*(optioneel) *Een naam voor de tag. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [&#x200B; TagID &#x200B;](/help/sites-developing/framework.md#tagid).
 
 * **Beschrijving**
 *(optioneel) *Een beschrijving van de tag.
@@ -171,19 +171,19 @@ Zodra de vereiste informatie is ingevoerd
 
 ### Tags bewerken {#editing-tags}
 
-![ chlimage_1-195 ](assets/chlimage_1-195.png)
+![&#x200B; chlimage_1-195 &#x200B;](assets/chlimage_1-195.png)
 
 Wanneer een namespace of een andere markering wordt geselecteerd, is het mogelijk om de Titel, Beschrijving te veranderen, en localisaties van de Titel te verstrekken door het **`Edit`**&#x200B;pictogram te selecteren.
 
 Nadat wordt aangebracht uitgeeft, uitgezocht **sparen**.
 
-Voor details over het toevoegen van taalvertalingen, zie de sectie over [ het Leiden Markeringen in Verschillende Talen ](#managing-tags-in-different-languages).
+Voor details over het toevoegen van taalvertalingen, zie de sectie over [&#x200B; het Leiden Markeringen in Verschillende Talen &#x200B;](#managing-tags-in-different-languages).
 
-![ chlimage_1-196 ](assets/chlimage_1-196.png)
+![&#x200B; chlimage_1-196 &#x200B;](assets/chlimage_1-196.png)
 
 ### Labels verplaatsen {#moving-tags}
 
-![ chlimage_1-197 ](assets/chlimage_1-197.png)
+![&#x200B; chlimage_1-197 &#x200B;](assets/chlimage_1-197.png)
 
 Wanneer een naamruimte of een andere tag wordt geselecteerd en u het pictogram **`Move`** selecteert, kunnen tagbeheerders en -ontwikkelaars de taxonomie opschonen door de tag naar een nieuwe locatie te verplaatsen of de naam ervan te wijzigen. Wanneer de geselecteerde tag een containertag is, worden bij het verplaatsen van de tag ook alle onderliggende tags verplaatst.
 
@@ -191,7 +191,7 @@ Wanneer een naamruimte of een andere tag wordt geselecteerd en u het pictogram *
 >
 >Het wordt geadviseerd dat de Auteurs slechts worden toegestaan [&#128279;](#editing-tags) uit te geven de markering `title`, om geen markeringen te bewegen of anders te noemen.
 
-![ chlimage_1-198 ](assets/chlimage_1-198.png)
+![&#x200B; chlimage_1-198 &#x200B;](assets/chlimage_1-198.png)
 
 * **Weg**
   *(alleen-lezen)* Het huidige pad naar de geselecteerde tag.
@@ -206,13 +206,13 @@ Toont aanvankelijk huidig `name` van de markering. Een nieuw `name` kan zijn ing
 
 ### Tags samenvoegen {#merging-tags}
 
-![ chlimage_1-199 ](assets/chlimage_1-199.png)
+![&#x200B; chlimage_1-199 &#x200B;](assets/chlimage_1-199.png)
 
 U kunt tags samenvoegen wanneer een taxonomie duplicaten bevat. Wanneer label A wordt samengevoegd met label B, worden alle pagina&#39;s met label A getagd met label B en is label A niet meer beschikbaar voor auteurs.
 
 Wanneer een namespace of een andere markering wordt geselecteerd, die het **pictogram van de Fusie** selecteert opent een paneel waar de weg om in samen te voegen kan worden geselecteerd.
 
-![ chlimage_1-200 ](assets/chlimage_1-200.png)
+![&#x200B; chlimage_1-200 &#x200B;](assets/chlimage_1-200.png)
 
 * **Weg**
   *(alleen-lezen)* Het pad van de geselecteerde tag die moet worden samengevoegd met een andere tag.
@@ -228,36 +228,36 @@ Blader naar het pad van de tag waarin u wilt samenvoegen.
 
 ### Codes publiceren {#publishing-tags}
 
-![ chlimage_1-201 ](assets/chlimage_1-201.png)
+![&#x200B; chlimage_1-201 &#x200B;](assets/chlimage_1-201.png)
 
 Wanneer een namespace of andere markering wordt geselecteerd, die het **pictogram van Publish** selecteren om de markering in te activeren publiceert milieu. Net als bij pagina-inhoud wordt alleen de geselecteerde tag gepubliceerd, ongeacht of het een containertag is of niet.
 
-Om een taxonomie (a namespace en sub-markeringen) te publiceren, moet de beste praktijk a [ pakket ](/help/sites-administering/package-manager.md) van namespace (zie [ Knoop van de Wortel van de Taxonomie ](/help/sites-developing/framework.md#taxonomy-root-node)) tot stand brengen. Ben zeker om [ toestemmingen ](#setting-tag-permissions) op namespace toe te passen alvorens het pakket te creëren.
+Om een taxonomie (a namespace en sub-markeringen) te publiceren, moet de beste praktijk a [&#x200B; pakket &#x200B;](/help/sites-administering/package-manager.md) van namespace (zie [&#x200B; Knoop van de Wortel van de Taxonomie &#x200B;](/help/sites-developing/framework.md#taxonomy-root-node)) tot stand brengen. Ben zeker om [&#x200B; toestemmingen &#x200B;](#setting-tag-permissions) op namespace toe te passen alvorens het pakket te creëren.
 
 ### Publicatie van labels ongedaan maken {#unpublishing-tags}
 
-![ chlimage_1-202 ](assets/chlimage_1-202.png)
+![&#x200B; chlimage_1-202 &#x200B;](assets/chlimage_1-202.png)
 
 Wanneer een namespace of een andere markering wordt geselecteerd, zal het selecteren **unpublish** pictogram de markering in het auteursmilieu deactiveren en het verwijderen uit het publicatiemilieu. Gelijkaardig aan de `Delete` verrichting, als de geselecteerde markering een containermarkering is, zullen alle zijn kindmarkeringen in het auteursmilieu worden gedeactiveerd en uit het publicatiemilieu worden verwijderd.
 
 ### Tags verwijderen {#deleting-tags}
 
-![ chlimage_1-203 ](assets/chlimage_1-203.png)
+![&#x200B; chlimage_1-203 &#x200B;](assets/chlimage_1-203.png)
 
 Wanneer een namespace of andere markering wordt geselecteerd, zal het selecteren van **Schrapping** pictogram permanent de markering uit het auteursmilieu verwijderen. Als de tag is gepubliceerd, wordt deze ook verwijderd uit de publicatieomgeving. Als de geselecteerde tag een containertag is, worden ook alle onderliggende tags verwijderd.
 
 ## Tagmachtigingen instellen {#setting-tag-permissions}
 
-De toestemmingen van de markering zijn [ &quot;veilig (door gebrek)&quot;](/help/sites-administering/production-ready.md); een beste praktijken voor het publicatiemilieu dat leestoestemming vereist om uitdrukkelijk voor markeringen worden toegestaan. Dit gebeurt in eerste instantie door een pakket van de tagnaamruimte te maken nadat de machtigingen bij de auteur zijn ingesteld en het pakket op alle publicatieinstanties te installeren.
+De toestemmingen van de markering zijn [&#x200B; &quot;veilig (door gebrek)&quot;](/help/sites-administering/production-ready.md); een beste praktijken voor het publicatiemilieu dat leestoestemming vereist om uitdrukkelijk voor markeringen worden toegestaan. Dit gebeurt in eerste instantie door een pakket van de tagnaamruimte te maken nadat de machtigingen bij de auteur zijn ingesteld en het pakket op alle publicatieinstanties te installeren.
 
 * op instantie van auteur
 
    * aanmelden met beheerdersrechten
-   * toegang tot de [ Console van de Veiligheid ](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+   * toegang tot de [&#x200B; Console van de Veiligheid &#x200B;](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * blader bijvoorbeeld naar http://localhost:4502/useradmin
 
-   * in de linkerruit, selecteer de groep (of de gebruiker) waarvoor [ leest toestemming ](/help/sites-administering/security.md#permissions) moet worden verleend
+   * in de linkerruit, selecteer de groep (of de gebruiker) waarvoor [&#x200B; leest toestemming &#x200B;](/help/sites-administering/security.md#permissions) moet worden verleend
    * Zoek in het rechterdeelvenster het **Pad &#x200B;** naar de tagnaamruimte
 
       * bijvoorbeeld, `/content/cq:tags/mycommunity`
@@ -265,11 +265,11 @@ De toestemmingen van de markering zijn [ &quot;veilig (door gebrek)&quot;](/help
    * selecteer `checkbox` in de **Gelezen** kolom
    * selecteren **sparen**
 
-![ chlimage_1-204 ](assets/chlimage_1-204.png)
+![&#x200B; chlimage_1-204 &#x200B;](assets/chlimage_1-204.png)
 
 * ervoor zorgen dat alle publicatieexemplaren dezelfde machtigingen hebben
 
-   * één benadering moet [ een pakket ](/help/sites-administering/package-manager.md#package-manager) van namespace op auteur tot stand brengen
+   * één benadering moet [&#x200B; een pakket &#x200B;](/help/sites-administering/package-manager.md#package-manager) van namespace op auteur tot stand brengen
 
       * op `Advanced` , voor `AC Handling` select `Overwrite`
 
@@ -285,7 +285,7 @@ Het `title` bezit van een markering kan in veelvoudige talen worden vertaald. Zo
 
 Het volgende beschrijft hoe te om `title` van de markering **Dieren** van Engels in Duits en Frans te vertalen.
 
-Begin door de markering onder de **Fotografie van de Voorraad** te selecteren namespace en het pictogram **&#x200B; `Edit` &#x200B;** te selecteren (zie [ het Uitgeven van Markeringen ](#editing-tags) sectie).
+Begin door de markering onder de **Fotografie van de Voorraad** te selecteren namespace en het pictogram **&#x200B; `Edit` &#x200B;** te selecteren (zie [&#x200B; het Uitgeven van Markeringen &#x200B;](#editing-tags) sectie).
 
 In het deelvenster Tag bewerken kunt u talen kiezen waarin de titel van de tag moet worden gelokaliseerd.
 
@@ -293,13 +293,13 @@ Terwijl elke taal is geselecteerd, wordt een tekstinvoervak weergegeven waarin d
 
 Zodra alle vertalingen zijn ingegaan, uitgezocht **sparen** om uit te gaan geef wijze uit.
 
-![ chlimage_1-205 ](assets/chlimage_1-205.png)
+![&#x200B; chlimage_1-205 &#x200B;](assets/chlimage_1-205.png)
 
-In het algemeen wordt de taal die voor de tag wordt gekozen, ontleend aan de paginataal, indien beschikbaar. Wanneer de [`tag` widget ](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal die voor de tag wordt gekozen, ontleend aan de paginataal, indien beschikbaar. Wanneer de [`tag` widget &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 In plaats van de instelling voor de paginataal te gebruiken, gebruikt de Tagingconsole de taalinstelling van de gebruiker. In de Tagingconsole wordt voor de tag &#39;Dieren&#39; de tag &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in zijn gebruikerseigenschappen instelt op Frans.
 
-Om een nieuwe taal aan de dialoog toe te voegen, zie [ Toevoegend een Nieuwe Taal aan de Edit Dialoog van de Markering ](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
+Om een nieuwe taal aan de dialoog toe te voegen, zie [&#x200B; Toevoegend een Nieuwe Taal aan de Edit Dialoog van de Markering &#x200B;](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
 
 >[!NOTE]
 >

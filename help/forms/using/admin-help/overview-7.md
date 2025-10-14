@@ -24,8 +24,8 @@ Met de Forms-service kunt u interactieve gegevensvastleggingsclienttoepassingen 
 * als HTML in verschillende browseromgevingen, inclusief een compatibele XHTML 1.0-rendering
 * als formulierhulplijnen in verschillende browseromgevingen die Adobe Flash Player ondersteunen.
 
-Voor extra informatie over de dienst van Forms, zie [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor extra informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Met de Forms-pagina in de beheerconsole kunt u het gedrag van de Forms-service configureren. Deze instellingen zijn van toepassing op alle aanroepen van de service. Alle parameters die via de SDK voor AEM formulieren worden verzonden, overschrijven de instellingen die in de beheerconsole zijn ingesteld. Ze hebben echter alleen invloed op die specifieke aanroep.
 
-Klik op Opslaan nadat u de Forms-instellingen in de beheerconsole hebt gewijzigd. De wijzigingen worden van kracht als u de server niet opnieuw hoeft te starten. Het kan echter zijn dat u de Forms-service moet stoppen en opnieuw opstarten wanneer u de instellingen voor de cachemodus configureert. (Zie [ Beginnend en tegenhoudend de diensten ](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+Klik op Opslaan nadat u de Forms-instellingen in de beheerconsole hebt gewijzigd. De wijzigingen worden van kracht als u de server niet opnieuw hoeft te starten. Het kan echter zijn dat u de Forms-service moet stoppen en opnieuw opstarten wanneer u de instellingen voor de cachemodus configureert. (Zie [&#x200B; Beginnend en tegenhoudend de diensten &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)

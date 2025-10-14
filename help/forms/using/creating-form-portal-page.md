@@ -20,14 +20,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
-Met Forms Portal-componenten kunnen webontwikkelaars componenten gebruiken voor het maken en aanpassen van een formulierportal op websites die zijn ontworpen met Adobe Experience Manager (AEM). Voor een snel overzicht van vormenportaal, zie [ Inleiding aan het publiceren van vormen op een portaal ](../../forms/using/introduction-publishing-forms.md).
+Met Forms Portal-componenten kunnen webontwikkelaars componenten gebruiken voor het maken en aanpassen van een formulierportal op websites die zijn ontworpen met Adobe Experience Manager (AEM). Voor een snel overzicht van vormenportaal, zie [&#x200B; Inleiding aan het publiceren van vormen op een portaal &#x200B;](../../forms/using/introduction-publishing-forms.md).
 
 ## Vereisten {#prerequisites}
 
-Forms Portal-componenten zijn niet standaard beschikbaar voor gebruik. Zorg ervoor dat de volgende categorieën van de vormenportcomponent zoals die in [ worden beschreven toelatend vormen portalcomponenten ](/help/forms/using/enabling-forms-portal-components.md) worden toegelaten.
+Forms Portal-componenten zijn niet standaard beschikbaar voor gebruik. Zorg ervoor dat de volgende categorieën van de vormenportcomponent zoals die in [&#x200B; worden beschreven toelatend vormen portalcomponenten &#x200B;](/help/forms/using/enabling-forms-portal-components.md) worden toegelaten.
 
 **de Diensten van het Document** omvat Onderzoek &amp; van de Registratie, Verbinding, en de componenten van Concepten en van Verzending.
 
@@ -35,7 +35,7 @@ Forms Portal-componenten zijn niet standaard beschikbaar voor gebruik. Zorg ervo
 
 Zodra zij op een AEM plaatspagina worden toegelaten, zijn deze componentencategorieën beschikbaar voor gebruik in componentenbrowser.
 
-![ de poortcomponenten van AEM Forms in componentenbrowser ](assets/component-categories.png)
+![&#x200B; de poortcomponenten van AEM Forms in componentenbrowser &#x200B;](assets/component-categories.png)
 
 Componentcategorieën van Forms Portal
 
@@ -48,7 +48,7 @@ De component Search &amp; Lister, beschikbaar onder de componentencategorie van 
 
 U kunt de component Search &amp; Lister van de de componentencategorie van de Diensten van het Document in componentenbrowser op de pagina slepen. Wanneer de component wordt toegevoegd, ziet deze er ongeveer als volgt uit.
 
-![ Onderzoek &amp; de Component van de Registratie in een pagina ](assets/fp-grid-viw.png)
+![&#x200B; Onderzoek &amp; de Component van de Registratie in een pagina &#x200B;](assets/fp-grid-viw.png)
 
 Component zoeken en labelen op een pagina met rasterlay-out
 
@@ -56,9 +56,9 @@ Component zoeken en labelen op een pagina met rasterlay-out
 
 Het deelvenster Lijst is een gebied waarin uw formulieren worden weergegeven. De component Zoeken en register bevat verschillende configuratieopties waarmee u de weergave van formulieren in het deelvenster Lijst kunt bepalen.
 
-Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL &#x200B; Edit Component]** wordt geopend.
+Om de ruit van de Lijst te vormen, selecteer de component van het Onderzoek en van de Registratie en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png). Het dialoogvenster **[!UICONTROL &#x200B; Edit Component]** wordt geopend.
 
-![ ruit van de Lijst op geeft wijze uit ](assets/edit-list.png)
+![&#x200B; ruit van de Lijst op geeft wijze uit &#x200B;](assets/edit-list.png)
 
 Het deelvenster Lijst in de bewerkingsmodus
 
@@ -165,7 +165,7 @@ In het deelvenster Zoeken kunt u de componenten Datumvoorspelling, Volledig voor
 
 **Uiteinde:** *u kunt de lijst van vormen controleren die op uw vormenportaal op vooraf ingestelde criteria wordt getoond en de onderzoeksfunctionaliteit voor eind - gebruikers verbergen. Als u de lijst met formulieren wilt beheren, gebruikt u de componenten Predicate om zoekfilters toe te passen. U kunt de standaardfilterwaarden ook specificeren en het onderzoek van het lusje van de Vertoning van de Edit dialoog van de Component onbruikbaar maken.*
 
-![ het Comité van het Onderzoek met Datum, Volledige Tekst, Eigenschappen, en het Predicate van Markeringen ](assets/search-with-predicates.png)
+![&#x200B; het Comité van het Onderzoek met Datum, Volledige Tekst, Eigenschappen, en het Predicate van Markeringen &#x200B;](assets/search-with-predicates.png)
 
 Deelvenster Zoeken met datum, volledige tekst, eigenschappen en voorspelling van tags
 
@@ -175,7 +175,7 @@ Met de component Datumvoorspelling kunt u zoeken op de weergegeven formulieren d
 
 De component Date Predicate configureren:
 
-1. Selecteer de component en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef het volgende op:
 
    * **Type:** de enige beschikbare optie is **Laatste Gewijzigde Datum**
@@ -194,7 +194,7 @@ De component Full Text Predicate implementeert het zoeken naar volledige tekst o
 
 De component Full Text Predicate configureren:
 
-1. Selecteer de component en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Specificeer de titel op het **Belangrijkste gebied van de Titel**.
 1. Selecteer **O.K.**
 
@@ -204,7 +204,7 @@ De component Properties Predicate implementeert het zoeken naar formulieren op b
 
 De component Properties Predicate configureren:
 
-1. Selecteer de component en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef op het tabblad Algemeen het zoeklabel op. De standaardwaarde is **Eigenschappen**
 
 1. In het lusje van Opties, voeg **Punt toe.**
@@ -220,7 +220,7 @@ De component Voorspelfunctie voor tags implementeert het zoeken naar formulieren
 
 U configureert als volgt de component Tags voorspellen:
 
-1. Selecteer de component en selecteer dan ![ settings_icon ](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
+1. Selecteer de component en selecteer dan ![&#x200B; settings_icon &#x200B;](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Selecteer de knop met de pijl omlaag naast het veld Codes.
 1. Selecteer de juiste tags
 1. Selecteer **OK**
@@ -231,9 +231,9 @@ De geselecteerde labels worden samen met de selectievakjes voor selectie weergeg
 
 Als u formulieren op een pagina wilt weergeven, voegt u de component **[!UICONTROL Search & Lister]** toe aan de pagina en configureert u de component **[!UICONTROL List Pane]** . Als u wilt dat eindgebruikers formulieren met datum, tekst en tags kunnen doorzoeken, voegt u een **[!UICONTROL Search Pane]** -component toe.
 
-Als u een formulier vanaf een willekeurige locatie op de pagina wilt koppelen, gebruikt u de component Koppeling. Voor meer informatie over verbindingscomponent, zie [ Inbeddend verbindingscomponent in een pagina ](../../forms/using/embedding-link-component-page.md).
+Als u een formulier vanaf een willekeurige locatie op de pagina wilt koppelen, gebruikt u de component Koppeling. Voor meer informatie over verbindingscomponent, zie [&#x200B; Inbeddend verbindingscomponent in een pagina &#x200B;](../../forms/using/embedding-link-component-page.md).
 
-Gebruik de component **[!UICONTROL Drafts and Submissions]** als u de formulieren in een concept-status en de formulieren die al zijn verzonden, wilt weergeven. Voor meer informatie, zie [ Aanpassen Concepten en de component van Verzending ](../../forms/using/draft-submission-component.md).
+Gebruik de component **[!UICONTROL Drafts and Submissions]** als u de formulieren in een concept-status en de formulieren die al zijn verzonden, wilt weergeven. Voor meer informatie, zie [&#x200B; Aanpassen Concepten en de component van Verzending &#x200B;](../../forms/using/draft-submission-component.md).
 
 ## Geschikt voor mobiele apparaten {#mobile-device-friendliness}
 
@@ -241,17 +241,17 @@ De component Forms Portal Search &amp; Lister is gebruiksvriendelijk voor mobiel
 
 In de volgende afbeelding ziet u de component Search &amp; Lister wanneer deze wordt geopend op een mobiel apparaat:
 
-![ Schermafbeelding van de component van het Onderzoek en van het ister ](assets/search_lister.png)
+![&#x200B; Schermafbeelding van de component van het Onderzoek en van het ister &#x200B;](assets/search_lister.png)
 
 Onderdeel Zoeken en bibliotheken
 
 ## De pagina&#39;s van een portal voor formulieren aanpassen {#customizing-a-forms-portal-page-br}
 
-U kunt een pagina voor een portal Formulieren aanpassen om de pagina een andere weergave te geven. U kunt ook metagegevens toevoegen om de zoekervaring te verbeteren, de lay-out van de pagina te wijzigen en aangepaste CSS-stijlen toe te voegen. Voor meer informatie, zie [ Aanpassende malplaatjes voor de Componenten van Forms Portal ](../../forms/using/customizing-templates-forms-portal-components.md).
+U kunt een pagina voor een portal Formulieren aanpassen om de pagina een andere weergave te geven. U kunt ook metagegevens toevoegen om de zoekervaring te verbeteren, de lay-out van de pagina te wijzigen en aangepaste CSS-stijlen toe te voegen. Voor meer informatie, zie [&#x200B; Aanpassende malplaatjes voor de Componenten van Forms Portal &#x200B;](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Met de gebruikersinterface van AEM Forms kunt u aangepaste metagegevens toevoegen aan formulieren. Aangepaste metagegevens zijn handig voor het weergeven van lijsten en het zoeken in formulieren voor eindgebruikers. Voor meer informatie over meta-gegevens van de Douane, zie [ Aanpassende malplaatjes voor de Componenten van Forms Portal ](../../forms/using/customizing-templates-forms-portal-components.md).
+Met de gebruikersinterface van AEM Forms kunt u aangepaste metagegevens toevoegen aan formulieren. Aangepaste metagegevens zijn handig voor het weergeven van lijsten en het zoeken in formulieren voor eindgebruikers. Voor meer informatie over meta-gegevens van de Douane, zie [&#x200B; Aanpassende malplaatjes voor de Componenten van Forms Portal &#x200B;](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Het portal Formulieren biedt renderacties. U kunt de portal Formulieren aanpassen om meer acties toe te voegen. Voor gedetailleerde informatie, zie [ Toevoegend douaneactie op de punten van de vormlijst.](../../forms/using/add-custom-action-form-lister.md)
+Het portal Formulieren biedt renderacties. U kunt de portal Formulieren aanpassen om meer acties toe te voegen. Voor gedetailleerde informatie, zie [&#x200B; Toevoegend douaneactie op de punten van de vormlijst.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Verwante artikelen
 

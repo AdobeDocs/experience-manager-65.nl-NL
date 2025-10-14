@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Voor het programmatisch werken met tags of het uitbreiden van tags binnen een aangepaste AEM toepassing, wordt op deze pagina het gebruik van de optie
 
-* [ Tagging API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [&#x200B; Tagging API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 Dat heeft invloed op de
 
@@ -28,12 +28,12 @@ Dat heeft invloed op de
 
 Zie voor gerelateerde informatie over labelen:
 
-* [ Beherend Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* [ Gebruikend Markeringen ](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud.
+* [&#x200B; Beherend Markeringen &#x200B;](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* [&#x200B; Gebruikend Markeringen &#x200B;](/help/sites-authoring/tags.md) voor informatie over het etiketteren van inhoud.
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-De implementatie van het [ etiketterende kader ](/help/sites-developing/framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [ com.day.cq.tagging ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
+De implementatie van het [&#x200B; etiketterende kader &#x200B;](/help/sites-developing/framework.md) in AEM staat beheer van markeringen en markeringsinhoud toe gebruikend JCR API. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen zijn in het [&#x200B; com.day.cq.tagging &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
 
 * JcrTagManagerFactory - retourneert een op JCR gebaseerde implementatie van een `TagManager` . Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
@@ -150,13 +150,13 @@ De zoekopdracht naar tags en het tagoverzicht werkt als volgt:
 
 ## Tags in verschillende talen {#tags-in-different-languages}
 
-Zoals die in de documentatie voor het beheer van markeringen wordt beschreven, in de sectie [ het Leiden Markeringen in Verschillende Talen ](/help/sites-administering/tags.md#managing-tags-in-different-languages), kan een markering `title` in verschillende talen worden bepaald. Vervolgens wordt een taalgevoelige eigenschap toegevoegd aan het tagknooppunt. Deze eigenschap heeft de notatie `jcr:title.<locale>` , bijvoorbeeld `jcr:title.fr` voor de Franse vertaling. De `<locale>` moet een tekenreeks met de landinstelling ISO met kleine letters zijn en &quot;_&quot; gebruiken in plaats van &quot;-&quot;, bijvoorbeeld: `de_ch` .
+Zoals die in de documentatie voor het beheer van markeringen wordt beschreven, in de sectie [&#x200B; het Leiden Markeringen in Verschillende Talen &#x200B;](/help/sites-administering/tags.md#managing-tags-in-different-languages), kan een markering `title` in verschillende talen worden bepaald. Vervolgens wordt een taalgevoelige eigenschap toegevoegd aan het tagknooppunt. Deze eigenschap heeft de notatie `jcr:title.<locale>` , bijvoorbeeld `jcr:title.fr` voor de Franse vertaling. De `<locale>` moet een tekenreeks met de landinstelling ISO met kleine letters zijn en &quot;_&quot; gebruiken in plaats van &quot;-&quot;, bijvoorbeeld: `de_ch` .
 
 Wanneer de **Dieren** markering aan de **Producten** pagina wordt toegevoegd, wordt de waarde `stockphotography:animals` toegevoegd aan het bezit `cq:tags` van de knoop /content/geometrixx/en/products/jcr:content. Er wordt naar de vertaling verwezen vanuit het tagknooppunt.
 
 De server-side API heeft gelokaliseerde `title` -gerelateerde methoden:
 
-* [ com.day.cq.tagging.Tag ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [&#x200B; com.day.cq.tagging.Tag &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
    * getLocalizedTitle(Locale locale)
    * getLocalizedTitlePaths()
@@ -164,7 +164,7 @@ De server-side API heeft gelokaliseerde `title` -gerelateerde methoden:
    * getTitle(landinstelling)
    * getTitlePath(landinstelling)
 
-* [ com.day.cq.tagging.TagManager ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [&#x200B; com.day.cq.tagging.TagManager &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, landinstelling)
    * createTagByTitle(String tagTitlePath, landinstelling)
@@ -180,7 +180,7 @@ In AEM kan de taal worden verkregen via de paginataal of via de taal van de gebr
 
    * `slingRequest.getLocale()`
 
-`currentPage` en `slingRequest` zijn beschikbaar in JSP door [ &lt;cq:definedObjects> ](/help/sites-developing/taglib.md) markering.
+`currentPage` en `slingRequest` zijn beschikbaar in JSP door [&#x200B; &lt;cq:definedObjects> &#x200B;](/help/sites-developing/taglib.md) markering.
 
 Voor het etiketteren, hangt de localisatie van de context als markering `titles` in de paginataal, in de gebruikerstaal, of in een andere taal kan worden getoond.
 

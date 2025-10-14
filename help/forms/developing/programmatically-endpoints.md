@@ -43,19 +43,19 @@ U kunt eindpunten TaskManager in groepen organiseren genoemd *categorieën*. Dez
 
 U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
 
-* EJB-eindpunten toevoegen. (Zie [ Toevoegend EJB Eindpunten ](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Voeg SOAP eindpunten toe. (Zie [ Toevoegend SOAP Eindpunten ](programmatically-endpoints.md#adding-soap-endpoints).)
-* Voeg gecontroleerde eindpunten van de Omslag toe (zie [ toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).)
-* E-maileindpunten toevoegen. (Zie [ Toevoegend E-maileindpunten ](programmatically-endpoints.md#adding-email-endpoints).)
-* Voeg eindpunten voor verwijderen toe. (Zie [ toevoegend het Verwijderen Eindpunten ](programmatically-endpoints.md#adding-remoting-endpoints).)
-* Voeg eindpunten TaskManager toe (zie [ Toevoegend Eindpunten TaskManager ](programmatically-endpoints.md#adding-taskmanager-endpoints).)
-* Wijzig eindpunten (zie [ Wijzend Eindpunten ](programmatically-endpoints.md#modifying-endpoints).)
-* Verwijder eindpunten (zie [ Verwijderend Eindpunten ](programmatically-endpoints.md#removing-endpoints).)
-* Haal informatie van de eindpuntschakelaar terug (zie [ het Terugwinnen van de Informatie van de Verbinding van Eindpunten ](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+* EJB-eindpunten toevoegen. (Zie [&#x200B; Toevoegend EJB Eindpunten &#x200B;](programmatically-endpoints.md#adding-ejb-endpoints).)
+* Voeg SOAP eindpunten toe. (Zie [&#x200B; Toevoegend SOAP Eindpunten &#x200B;](programmatically-endpoints.md#adding-soap-endpoints).)
+* Voeg gecontroleerde eindpunten van de Omslag toe (zie [&#x200B; toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).)
+* E-maileindpunten toevoegen. (Zie [&#x200B; Toevoegend E-maileindpunten &#x200B;](programmatically-endpoints.md#adding-email-endpoints).)
+* Voeg eindpunten voor verwijderen toe. (Zie [&#x200B; toevoegend het Verwijderen Eindpunten &#x200B;](programmatically-endpoints.md#adding-remoting-endpoints).)
+* Voeg eindpunten TaskManager toe (zie [&#x200B; Toevoegend Eindpunten TaskManager &#x200B;](programmatically-endpoints.md#adding-taskmanager-endpoints).)
+* Wijzig eindpunten (zie [&#x200B; Wijzend Eindpunten &#x200B;](programmatically-endpoints.md#modifying-endpoints).)
+* Verwijder eindpunten (zie [&#x200B; Verwijderend Eindpunten &#x200B;](programmatically-endpoints.md#removing-endpoints).)
+* Haal informatie van de eindpuntschakelaar terug (zie [&#x200B; het Terugwinnen van de Informatie van de Verbinding van Eindpunten &#x200B;](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ## EJB-eindpunten toevoegen {#adding-ejb-endpoints}
 
-U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. De volgende JAR-besta
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -189,7 +189,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Deze JAR-bestanden zijn vereist om een SOAP eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het SOAP eindpunt gebruikt om de dienst aan te halen. Voor informatie over de dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Deze JAR-bestanden zijn vereist om een SOAP eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het SOAP eindpunt gebruikt om de dienst aan te halen. Voor informatie over de dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -265,9 +265,9 @@ Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
 
 U kunt programmatically een Gecontroleerd eindpunt van de Omslag aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Gecontroleerd eindpunt van de Omslag toe te voegen, laat u gebruikers toe om een dossier (zoals een dossier van PDF) in een omslag te plaatsen. Wanneer het dossier in de omslag wordt geplaatst, wordt de gevormde dienst dan aangehaald en manipuleert het dossier. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in een opgegeven uitvoermap. Een gecontroleerde map is geconfigureerd om te worden gescand met een vast interval of met een uitsnijdschema, zoals elke maandag, woensdag en vrijdag om 12.00 uur.
 
-Voor de doeleinden van programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondig proces genoemd *EncryptDocument*. (Zie [ Begrijpend de Processen van AEM Forms ](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+Voor de doeleinden van programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondig proces genoemd *EncryptDocument*. (Zie [&#x200B; Begrijpend de Processen van AEM Forms &#x200B;](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
-![ aw_aw_encryptdocumentprocess ](assets/aw_aw_encryptdocumentprocess.png)
+![&#x200B; aw_aw_encryptdocumentprocess &#x200B;](assets/aw_aw_encryptdocumentprocess.png)
 
 Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
@@ -299,7 +299,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -420,7 +420,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
    >[!NOTE]
    >
-   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst, zie het de codevoorbeeld van Java dat bij [ wordt gevestigd QuickStart: het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
+   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst, zie het de codevoorbeeld van Java dat bij [&#x200B; wordt gevestigd QuickStart: het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
 
 1. Definieer invoerparameterwaarden.
 
@@ -463,7 +463,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 ### Configuratiewaarden van gecontroleerde map, constant bestand {#watched-folder-configuration-values-constant-file}
 
-[ QuickStart: Het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een Gecontroleerd eindpunt van de Omslag. De volgende Java-code vertegenwoordigt het constante bestand.
+[&#x200B; QuickStart: Het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een Gecontroleerd eindpunt van de Omslag. De volgende Java-code vertegenwoordigt het constante bestand.
 
 ```java
  /**
@@ -498,9 +498,9 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 U kunt programmatically een eindpunt E-mail aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een e-maileindpunt toe te voegen, laat u gebruikers toe om een e-mailbericht met één of meerdere dossiergehechtheid naar een gespecificeerde e-mailrekening te verzenden. Dan vormen de de dienstverrichting wordt aangehaald en manipuleert de dossiers. Nadat de service de opgegeven bewerking heeft uitgevoerd, stuurt het een e-mailbericht naar de afzender met de gewijzigde bestanden als bestandsbijlagen.
 
-Voor het programmatically toevoegen van een E-mail eindpunt aan de dienst, overweeg het volgende kortstondig proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie [ Begrijpend de Processen van AEM Forms ](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Voor het programmatically toevoegen van een E-mail eindpunt aan de dienst, overweeg het volgende kortstondig proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie [&#x200B; Begrijpend de Processen van AEM Forms &#x200B;](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
-![ ae_ae_encryptdocumentprocess ](assets/ae_ae_encryptdocumentprocess.png)
+![&#x200B; ae_ae_encryptdocumentprocess &#x200B;](assets/ae_ae_encryptdocumentprocess.png)
 
 Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Met dit proces wordt het PDF-document versleuteld met een wachtwoord en wordt het met een wachtwoord gecodeerde PDF als uitvoerwaarde geretourneerd. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
@@ -532,7 +532,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -665,7 +665,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
    >[!NOTE]
    >
-   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst die in deze sectie wordt geïntroduceerd, zie het de codevoorbeeld van Java dat bij [ wordt gevestigd QuickStart: het toevoegen van een E-maileindpunt gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
+   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst die in deze sectie wordt geïntroduceerd, zie het de codevoorbeeld van Java dat bij [&#x200B; wordt gevestigd QuickStart: het toevoegen van een E-maileindpunt gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
 
 1. Definieer invoerparameterwaarden.
 
@@ -708,7 +708,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
 ### Constante bestand voor waarden van e-mailconfiguratie {#email-configuration-values-constant-file}
 
-[ QuickStart: Het toevoegen van een E-maileindpunt gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een e-maileindpunt. De volgende Java-code vertegenwoordigt het constante bestand.
+[&#x200B; QuickStart: Het toevoegen van een E-maileindpunt gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een e-maileindpunt. De volgende Java-code vertegenwoordigt het constante bestand.
 
 ```java
  /**
@@ -752,11 +752,11 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 >
 >LiveCycle Remoting-API&#39;s zijn vervangen voor AEM formulieren op JEE.
 
-U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een toepassing van Flex toe om de dienst aan te halen door het remoting te gebruiken. (Zie [ het Aanhalen van AEM Forms die (voor AEM vormen wordt afgekeurd) AEM Forms verwijdert ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een toepassing van Flex toe om de dienst aan te halen door het remoting te gebruiken. (Zie [&#x200B; het Aanhalen van AEM Forms die (voor AEM vormen wordt afgekeurd) AEM Forms verwijdert &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Voor de doeleinden van programmatically het toevoegen van een Verwijderend eindpunt aan de dienst, overweeg het volgende kortstondige proces genoemd *EncryptDocument*.
 
-![ ar_ar_encryptdocumentprocess ](assets/ar_ar_encryptdocumentprocess.png)
+![&#x200B; ar_ar_encryptdocumentprocess &#x200B;](assets/ar_ar_encryptdocumentprocess.png)
 
 Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
@@ -787,7 +787,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -889,7 +889,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -982,7 +982,7 @@ Voeg een eindpunt TaskManager door Java API toe te gebruiken:
 
 ## Eindpunten wijzigen {#modifying-endpoints}
 
-U kunt een bestaand eindpunt programmatically wijzigen door AEM Forms Java API te gebruiken. Door een eindpunt te wijzigen, kunt u het gedrag van het eindpunt veranderen. Denk bijvoorbeeld aan een eindpunt van een gecontroleerde map dat een map opgeeft die als controlemap wordt gebruikt. U kunt configuratiewaarden programmatically wijzigen die tot het Gecontroleerde eindpunt van de Omslag behoren, resulterend in een andere omslag die als gecontroleerde omslag functioneert. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).
+U kunt een bestaand eindpunt programmatically wijzigen door AEM Forms Java API te gebruiken. Door een eindpunt te wijzigen, kunt u het gedrag van het eindpunt veranderen. Denk bijvoorbeeld aan een eindpunt van een gecontroleerde map dat een map opgeeft die als controlemap wordt gebruikt. U kunt configuratiewaarden programmatically wijzigen die tot het Gecontroleerde eindpunt van de Omslag behoren, resulterend in een andere omslag die als gecontroleerde omslag functioneert. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 Om aan te tonen hoe te om een eindpunt te wijzigen, wijzigt deze sectie een Gecontroleerd eindpunt van de Omslag door de omslag te veranderen die zich als gecontroleerde omslag gedraagt.
 
@@ -1010,7 +1010,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -1018,21 +1018,21 @@ Als u een eindpunt programmatisch wilt wijzigen, moet u een `EndpointRegistryCli
 
 **wint het eindpunt terug om** te wijzigen
 
-Alvorens u een eindpunt kunt wijzigen, moet u het terugwinnen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
+Alvorens u een eindpunt kunt wijzigen, moet u het terugwinnen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 U kunt een eindpunt terugwinnen door een lijst van eindpunten terug te winnen. U kunt dan door de lijst herhalen, zoekend naar het specifieke eindpunt om te verwijderen. Bijvoorbeeld, kunt u van een eindpunt de plaats bepalen door de dienst te bepalen die aan het eindpunt en het type van eindpunt beantwoordt. Wanneer u van het eindpunt de plaats bepaalt, kunt u het wijzigen.
 
 **specificeer nieuwe configuratiewaarden**
 
-Wanneer het wijzigen van een eindpunt, specificeer nieuwe configuratiewaarden. Bijvoorbeeld, om een Gecontroleerd eindpunt van de Omslag te wijzigen, terugstel alle Gecontroleerde waarden van de de eindpuntconfiguratie van de Omslag, niet alleen degenen die u wilt wijzigen. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).
+Wanneer het wijzigen van een eindpunt, specificeer nieuwe configuratiewaarden. Bijvoorbeeld, om een Gecontroleerd eindpunt van de Omslag te wijzigen, terugstel alle Gecontroleerde waarden van de de eindpuntconfiguratie van de Omslag, niet alleen degenen die u wilt wijzigen. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 >[!NOTE]
 >
->Voor informatie over configuratiewaarden die tot een E-mail- eindpunt behoren, zie [ Toevoegend E-mail Eindpunten ](programmatically-endpoints.md#adding-email-endpoints).
+>Voor informatie over configuratiewaarden die tot een E-mail- eindpunt behoren, zie [&#x200B; Toevoegend E-mail Eindpunten &#x200B;](programmatically-endpoints.md#adding-email-endpoints).
 
 >[!NOTE]
 >
->U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer één. (Zie [ Verwijderend Eindpunten ](programmatically-endpoints.md#removing-endpoints).)
+>U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer één. (Zie [&#x200B; Verwijderend Eindpunten &#x200B;](programmatically-endpoints.md#removing-endpoints).)
 
 **zie ook**
 
@@ -1057,7 +1057,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 1. Haal het eindpunt op dat u wilt wijzigen.
 
-   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `getEndpoints` van het object `EndpointRegistryClient` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` -waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is. Voor informatie over a `PagingFilter` voorwerp, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `getEndpoints` van het object `EndpointRegistryClient` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` -waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is. Voor informatie over a `PagingFilter` voorwerp, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Doorloop het `java.util.List` -object om te bepalen of het eindpunten heeft. Als er eindpunten zijn, is elk element een `EndPoint` -instantie.
    * Bepaal de service die overeenkomt met een eindpunt door de methode `getServiceId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
    * Bepaal het type eindpunt door de methode `getConnectorId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Als het eindpunt bijvoorbeeld een Gecontroleerd mapeindpunt is, retourneert deze methode `WatchedFolder` .
@@ -1112,7 +1112,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -1120,7 +1120,7 @@ Als u een eindpunt programmatisch wilt verwijderen, moet u een `EndpointRegistry
 
 **wint het eindpunt terug om** te verwijderen
 
-Voordat u een eindpunt kunt verwijderen, moet u het ophalen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
+Voordat u een eindpunt kunt verwijderen, moet u het ophalen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 U kunt een eindpunt terugwinnen door een lijst van eindpunten terug te winnen. U kunt dan door de lijst herhalen, zoekend naar het specifieke eindpunt om te verwijderen. Bijvoorbeeld, kunt u van een eindpunt de plaats bepalen door de dienst te bepalen die aan het eindpunt en het type van eindpunt beantwoordt. Wanneer u het eindpunt zoekt, kunt u het verwijderen.
 
@@ -1174,7 +1174,7 @@ Een eindpunt verwijderen met de Java API:
 
 U kunt informatie over eindpuntschakelaars programmatically terugwinnen gebruikend AEM Forms API. Een schakelaar laat een eindpunt toe om de dienst aan te halen gebruikend diverse aanroepingsmethodes. Bijvoorbeeld, laat een Gecontroleerde schakelaar van de Omslag een eindpunt toe om de dienst aan te halen gebruikend gecontroleerde omslagen. Door programmatically het terugwinnen van informatie over eindpuntschakelaars, kunt u configuratiewaarden terugwinnen verbonden aan een schakelaar zoals welke configuratiewaarden worden vereist en welke facultatieve zijn.
 
-Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, wint deze sectie informatie over een Gecontroleerde schakelaar van de Omslag terug. (Zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).)
+Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, wint deze sectie informatie over een Gecontroleerde schakelaar van de Omslag terug. (Zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
@@ -1182,7 +1182,7 @@ Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, w
 
 >[!NOTE]
 >
->Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+>Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1204,7 +1204,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt ConnectorRegistry**
 

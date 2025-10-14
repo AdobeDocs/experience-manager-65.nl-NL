@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Concepten van de gebruikersinterface voor Adobe Experience Manager Touch{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager (AEM) kenmerkt een aanraking-toegelaten UI met [ ontvankelijk ontwerp ](/help/sites-authoring/responsive-layout.md) voor het auteursmilieu dat wordt ontworpen om op zowel aanraak als Desktopapparaten te werken.
+Adobe Experience Manager (AEM) kenmerkt een aanraking-toegelaten UI met [&#x200B; ontvankelijk ontwerp &#x200B;](/help/sites-authoring/responsive-layout.md) voor het auteursmilieu dat wordt ontworpen om op zowel aanraak als Desktopapparaten te werken.
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ De interface met aanraakbediening bevat:
    * Gebruikt een responsief ontwerp (het scherm wordt automatisch aangepast aan uw apparaat en/of venstergrootte)
    * Gebruikt oneindig schuiven (geen paginering meer, alle punten zijn vermeld in één venster)
 
-![ chlimage_1-79 ](assets/chlimage_1-79.png)
+![&#x200B; chlimage_1-79 &#x200B;](assets/chlimage_1-79.png)
 
 >[!NOTE]
 >
->Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen wordt de functionaliteit echter teruggezet naar de klassieke interface. Zie [ de Status van de Eigenschap van de Aanraak UI ](/help/release-notes/touch-ui-features-status.md) voor meer informatie.
+>Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen wordt de functionaliteit echter teruggezet naar de klassieke interface. Zie [&#x200B; de Status van de Eigenschap van de Aanraak UI &#x200B;](/help/release-notes/touch-ui-features-status.md) voor meer informatie.
 
 De interface met aanraakbediening is ontworpen door Adobe voor consistentie in de gebruikerservaring van meerdere producten. Het is gebaseerd op:
 
@@ -68,13 +68,13 @@ De basisbeginselen van de interface met aanraakbediening zijn:
 * Ingesloten tests opnemen
 * Onderste ontwerp om ervoor te zorgen dat deze beginselen op elk element en elke component worden toegepast
 
-Voor een verder overzicht van de aanraking-Toegelaten structuur UI, zie [ Structuur van de AEM aanraking-Toegelaten UI ](/help/sites-developing/touch-ui-structure.md).
+Voor een verder overzicht van de aanraking-Toegelaten structuur UI, zie [&#x200B; Structuur van de AEM aanraking-Toegelaten UI &#x200B;](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM {#aem-technology-stack}
 
 AEM gebruikt het Granite-platform als basis en het Granite-platform bevat onder andere de Java™ Content Repository.
 
-![ chlimage_1-80 ](assets/chlimage_1-80.png)
+![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-80.png)
 
 ## Graniet {#granite}
 
@@ -108,10 +108,10 @@ Deze voldoen aan de eisen:
 * Uitbreidbaar
 * Eenvoudig te overschrijven
 
-![ chlimage_1-81 ](assets/chlimage_1-81.png)
+![&#x200B; chlimage_1-81 &#x200B;](assets/chlimage_1-81.png)
 GraniteUI.pdf
 
-[ krijgt Dossier ](assets/graniteui.pdf)
+[&#x200B; krijgt Dossier &#x200B;](assets/graniteui.pdf)
 De graniet-interface:
 
 * Gebruikt de RESTful-architectuur van Sling
@@ -122,9 +122,9 @@ De graniet-interface:
 * Is ontworpen voor zowel mobiele apparaten als desktopapparaten (respecteert eerst mobiel)
 * Kan worden gebruikt in elk platform/product/project op basis van graniet, bijvoorbeeld AEM
 
-![ chlimage_1-82 ](assets/chlimage_1-82.png)
+![&#x200B; chlimage_1-82 &#x200B;](assets/chlimage_1-82.png)
 
-* [ de Componenten van de Stichting UI van Granite ](#granite-ui-foundation-components)
+* [&#x200B; de Componenten van de Stichting UI van Granite &#x200B;](#granite-ui-foundation-components)
 Deze bibliotheek met basiscomponenten kan door andere bibliotheken worden gebruikt of uitgebreid.
 * [Algemene UI-componenten](#granite-ui-administration-components)
 
@@ -135,17 +135,17 @@ De cliënt-server mededeling in granite UI bestaat uit hypertext, niet voorwerpe
 * De server verrijkt de HTML met semantische gegevens
 * De client verrijkt de hypertekst met hypermedia (interactie)
 
-![ chlimage_1-83 ](assets/chlimage_1-83.png)
+![&#x200B; chlimage_1-83 &#x200B;](assets/chlimage_1-83.png)
 
 #### Client-kant {#client-side}
 
-Hierbij wordt een uitbreiding van de woordenlijst HTML gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een gelijkaardige benadering van [ WAI-ARIA ](https://www.w3.org/TR/wai-aria/) en [ microformats ](https://microformats.org/).
+Hierbij wordt een uitbreiding van de woordenlijst HTML gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een gelijkaardige benadering van [&#x200B; WAI-ARIA &#x200B;](https://www.w3.org/TR/wai-aria/) en [&#x200B; microformats &#x200B;](https://microformats.org/).
 
 Het bestaat voornamelijk uit een verzameling interactiepatronen (bijvoorbeeld het asynchroon verzenden van een formulier) die worden geïnterpreteerd door JS- en CSS-codes die op de client worden uitgevoerd. De rol van de client-kant bestaat uit het verbeteren van de opmaak (gegeven als de hypermediapliteit van de server) voor interactiviteit.
 
 De client-kant is onafhankelijk van servertechnologie. Zolang de server de aangewezen prijsverhoging geeft, kan de cliënt-kant zijn rol vervullen.
 
-Momenteel worden JS en CSS codes geleverd als Granite [ clientlibs ](/help/sites-developing/clientlibs.md) onder de categorie:
+Momenteel worden JS en CSS codes geleverd als Granite [&#x200B; clientlibs &#x200B;](/help/sites-developing/clientlibs.md) onder de categorie:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -200,7 +200,7 @@ De verschillen tussen de gebruikersinterface van Granite en ExtJS (die voor de k
 
 ### Graniet UI Foundation-componenten {#granite-ui-foundation-components}
 
-De [ de stichtingscomponenten van UI van Granite ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
+De [&#x200B; de stichtingscomponenten van UI van Granite &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
 
 * Knop
 * Hyperlink
@@ -257,7 +257,7 @@ Wanneer het bevorderen van code ExtJS om granite UI te gebruiken, verstrekt de v
 
 ### Algemene UI-componenten {#granite-ui-administration-components}
 
-De [ componenten van het beleid van Granite UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) bouwen op de stichtingscomponenten voort om generische bouwstenen te verstrekken die om het even welke beleidstoepassing kan uitvoeren. Deze omvatten onder meer:
+De [&#x200B; componenten van het beleid van Granite UI &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) bouwen op de stichtingscomponenten voort om generische bouwstenen te verstrekken die om het even welke beleidstoepassing kan uitvoeren. Deze omvatten onder meer:
 
 * Algemene navigatiebalk
 * Rail (skelet)
@@ -277,7 +277,7 @@ Implementatie:
 
 CoralUI.pdf
 
-[ krijgt Dossier ](assets/coralui.pdf)
+[&#x200B; krijgt Dossier &#x200B;](assets/coralui.pdf)
 CUI (Coral UI) is een implementatie van de visuele stijl van de Adobe voor de interface met aanraakbediening die is ontworpen om consistentie in de gebruikerservaring op meerdere producten te bieden. Koraal UI verstrekt alles dat u de visuele stijl moet aannemen die op het auteursmilieu wordt gebruikt.
 
 >[!CAUTION]
@@ -302,7 +302,7 @@ CUI (Coral UI) is een implementatie van de visuele stijl van de Adobe voor de in
 
 De koraalinterface is een verzameling bouwstenen voor het ontwikkelen van webtoepassingen.
 
-![ chlimage_1-84 ](assets/chlimage_1-84.png)
+![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-84.png)
 
 Ontworpen om modulair van het begin te zijn, vormt elke module een afzonderlijke laag die op zijn primaire rol wordt gebaseerd. Hoewel de lagen zijn ontworpen om elkaar te steunen, kunnen zij ook onafhankelijk worden gebruikt indien nodig. Hierdoor is het mogelijk om de gebruikerservaring van Coral te implementeren in elke omgeving die geschikt is voor HTML.
 
@@ -314,7 +314,7 @@ De HTML-elementen bieden een gemeenschappelijke look en feel voor alle UI-basise
 
 Op het eenvoudigste niveau is een HTML-element een HTML-tag met een toegewezen klassenaam. Complexere elementen kunnen bestaan uit meerdere tags, die binnen elkaar zijn genest (op een specifieke manier).
 
-De CSS wordt gebruikt om het daadwerkelijke uiterlijk te geven. Om het mogelijk te maken om het blik-en-gevoel (bijvoorbeeld, voor het geval van branding) gemakkelijk aan te passen, worden de daadwerkelijke stijlwaarden verklaard als variabelen die door [ LESS ](https://lesscss.org/) pre-bewerker tijdens runtime worden uitgebreid.
+De CSS wordt gebruikt om het daadwerkelijke uiterlijk te geven. Om het mogelijk te maken om het blik-en-gevoel (bijvoorbeeld, voor het geval van branding) gemakkelijk aan te passen, worden de daadwerkelijke stijlwaarden verklaard als variabelen die door [&#x200B; LESS &#x200B;](https://lesscss.org/) pre-bewerker tijdens runtime worden uitgebreid.
 
 Doel:
 
@@ -323,7 +323,7 @@ Doel:
 
 Implementatie:
 
-* HTML markeringen met stijlen die door [ worden geïnspireerd Bootstrap ](https://twitter.github.com/bootstrap/)
+* HTML markeringen met stijlen die door [&#x200B; worden geïnspireerd Bootstrap &#x200B;](https://twitter.github.com/bootstrap/)
 * Klassen worden gedefinieerd in LESS-bestanden
 * Pictogrammen worden gedefinieerd als fontsprites
 
@@ -336,7 +336,7 @@ De markering:
 
 Wordt weergegeven als:
 
-![ chlimage_1-85 ](assets/chlimage_1-85.png)
+![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-85.png)
 
 De look-and-feel wordt gedefinieerd in LESS, gekoppeld aan een element met een speciale klassenaam (het volgende extract is verkort omwille van de beknoptheid):
 
@@ -427,7 +427,7 @@ $('.cards').cardlayout ();
 
 Dit wordt weergegeven als:
 
-![ chlimage_1-86 ](assets/chlimage_1-86.png)
+![&#x200B; chlimage_1-86 &#x200B;](assets/chlimage_1-86.png)
 
 Met de plug-in `cardLayout` worden de omsloten `UL` -elementen ingedeeld op basis van hun respectieve hoogten en waarbij ook rekening wordt gehouden met de breedte van het bovenliggende element.
 
@@ -478,7 +478,7 @@ De plug-in geeft HTML-markeringen uit (deze markering gebruikt basiselementen, d
 
 Dit wordt weergegeven als:
 
-![ chlimage_1-87 ](assets/chlimage_1-87.png)
+![&#x200B; chlimage_1-87 &#x200B;](assets/chlimage_1-87.png)
 
 ### Hulpprogrammabibliotheek {#utility-library}
 

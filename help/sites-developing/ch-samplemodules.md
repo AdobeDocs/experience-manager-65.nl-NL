@@ -24,7 +24,7 @@ ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossing
 * Waar u de broncode kunt vinden, zodat u deze kunt openen voor leerdoeleinden.
 * Hoe te om de module UI te vormen.
 
-Voor informatie over het toevoegen van modules UI aan ContextHub, zie [ Toevoegend een Module UI ](ch-configuring.md#adding-a-ui-module). Voor informatie over het ontwikkelen van modules UI, zie [ Creërend de Types van Module ContextHub UI ](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+Voor informatie over het toevoegen van modules UI aan ContextHub, zie [&#x200B; Toevoegend een Module UI &#x200B;](ch-configuring.md#adding-a-ui-module). Voor informatie over het ontwikkelen van modules UI, zie [&#x200B; Creërend de Types van Module ContextHub UI &#x200B;](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 ## Type module contextthub.base {#contexthub-base-ui-module-type}
 
@@ -45,12 +45,12 @@ De broncode bevindt zich in /libs/granite/contexthub/code/ui/container/js/Contex
 Configureer de contexthub.base UI-module met behulp van een JavaScript-object in JSON-indeling. Omvat om het even welke volgende eigenschappen om de eigenschappen van de UI module te vormen:
 
 * **beeld:** Een URL aan een beeld om als pictogram te tonen.
-* **pictogram:** de naam van het pictogram van a [ Koraal UI ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
+* **pictogram:** de naam van het pictogram van a [&#x200B; Koraal UI &#x200B;](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
 
 * **titel:** een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
 * **volledig scherm:** een booleaanse waarde die erop wijst of de module UI volledig-schermwijze steunt. Gebruik `true` om het volledige scherm te ondersteunen en `false` om de modus Volledig scherm te voorkomen.
 
-* **malplaatje:** A [ 3&rbrace; malplaatje Handlebars &lbrace;dat de inhoud specificeert in de toolbar ContextHub terug te geven. ](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
+* **malplaatje:** A [&#x200B; 3&rbrace; malplaatje Handlebars &lbrace;dat de inhoud specificeert in de toolbar ContextHub terug te geven. &#x200B;](https://handlebarsjs.com/) Gebruik maximaal twee `<p>` -tags.
 
 * **storeMapping:** een sleutel/opslagafbeelding. Gebruik de sleutel in malplaatjes Handlebar om tot de bijbehorende ContextHub opslaggegevens toegang te hebben.
 * **lijst:** een serie van punten om als lijst in popover te tonen wanneer de module UI wordt geklikt. Als u dit item opneemt, neemt u geen popoverTemplate op. De waarde is een array van objecten met de volgende toetsen:
@@ -70,7 +70,7 @@ Configureer de contexthub.base UI-module met behulp van een JavaScript-object in
 
 ### Voorbeeld {#example}
 
-Het volgende voorbeeld vormt een module van contexthub.base UI aan vertoningsinformatie van a [ contexthub.emulators ](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) opslag. Het item `template` demonstreert hoe u gegevens kunt ophalen uit de winkel met behulp van de sleutel die het item `storeMapping` vaststelt.
+Het volgende voorbeeld vormt een module van contexthub.base UI aan vertoningsinformatie van a [&#x200B; contexthub.emulators &#x200B;](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) opslag. Het item `template` demonstreert hoe u gegevens kunt ophalen uit de winkel met behulp van de sleutel die het item `storeMapping` vaststelt.
 
 ```xml
 {
@@ -83,13 +83,13 @@ Het volgende voorbeeld vormt een module van contexthub.base UI aan vertoningsinf
 }
 ```
 
-![ chlimage_1-76 ](assets/chlimage_1-76a.png)
+![&#x200B; chlimage_1-76 &#x200B;](assets/chlimage_1-76a.png)
 
 ## Type van module contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
 In de UI-module contextthub.browserinfo wordt informatie over de webbrowser en het besturingssysteem van de client weergegeven. De informatie wordt verkregen van de surferinfo opslag, die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) opslagkandidaat 0} wordt gebaseerd contexthub.surferinfo.
 
-![ chlimage_1-77 ](assets/chlimage_1-77a.png)
+![&#x200B; chlimage_1-77 &#x200B;](assets/chlimage_1-77a.png)
 
 De broncode voor de module UI bevindt zich in /libs/granite/contexthub/components/modules/browserinfo. Hoewel contextthub.browserinfo de contexthub.base UI-module uitbreidt, overschrijft of biedt deze geen extra functies. De implementatie biedt een standaardconfiguratie voor het renderen van browserinformatie.
 
@@ -110,7 +110,7 @@ Voor instanties van de module Contextthub.browserinfo UI is geen waarde vereist 
 
 De contexthub.datetime UI module toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) opslagkandidaat 0} contextthub.datetime &lbrace;gebaseerd is.
 
-![ chlimage_1-78 ](assets/chlimage_1-78a.png)
+![&#x200B; chlimage_1-78 &#x200B;](assets/chlimage_1-78a.png)
 
 De module verstrekt een popover vorm die u toelaat om de datum en de tijd in de opslag te veranderen.
 
@@ -135,7 +135,7 @@ Voor instanties van de module Contextthub.datetime UI is geen waarde vereist voo
 
 In de module contexthub.location UI worden de lengte en breedte van de client weergegeven. De module biedt een pop-up die een Google-kaart weergeeft waarop u kunt klikken om de huidige locatie te wijzigen. De module verkrijgt informatie van een opslag ContextHub genoemd geolocation die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) opslagkandidaat 0} contexthub.geolocation gebaseerd is.
 
-![ chlimage_1-80 ](assets/chlimage_1-80a.png)
+![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-80a.png)
 
 De bron van de UI-module bevindt zich op /etc/cloudsettings/default/contexthub/geolocation.
 
@@ -176,9 +176,9 @@ Instanties van de module contexthub.location UI vereisen geen waarde voor de Con
 
 ## contexthub.screen-orientation UI Module Type {#contexthub-screen-orientation-ui-module-type}
 
-In de UI-module contextthub.screen-orientation wordt de huidige schermoriëntatie van de client weergegeven. Hoewel standaard uitgeschakeld, biedt de module een pop-up waarmee u een richting kunt selecteren. De module verkrijgt informatie van een opslag ContextHub genoemd mededingers die op [ granite.emulators ](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) opslagkandidaat gebaseerd is.
+In de UI-module contextthub.screen-orientation wordt de huidige schermoriëntatie van de client weergegeven. Hoewel standaard uitgeschakeld, biedt de module een pop-up waarmee u een richting kunt selecteren. De module verkrijgt informatie van een opslag ContextHub genoemd mededingers die op [&#x200B; granite.emulators &#x200B;](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) opslagkandidaat gebaseerd is.
 
-![ chlimage_1-81 ](assets/chlimage_1-81a.png)
+![&#x200B; chlimage_1-81 &#x200B;](assets/chlimage_1-81a.png)
 
 De bron van de module UI bevindt zich bij /libs/granite/contexthub/components/modules/screen-orientation.
 
@@ -202,7 +202,7 @@ Instanties van de contexthub.screen-orientation UI module vereisen geen waarde v
 
 In de module Contextthub.tagcloud UI wordt informatie over tags weergegeven. In de werkbalk wordt in de gebruikersinterface het aantal codes weergegeven. De pop-up onthult een geëtiketteerde wolk en een texbox voor het toevoegen van nieuwe markeringen. De module UI verkrijgt informatie van een opslag ContextHub genoemd tagcloud die op de {[&#128279;](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) opslagkandidaat 0} contexthub.tagcloud gebaseerd is.
 
-![ chlimage_1-82 ](assets/chlimage_1-82a.png)
+![&#x200B; chlimage_1-82 &#x200B;](assets/chlimage_1-82a.png)
 
 De bron van de UI-module bevindt zich op /libs/granite/contexthub/components/modules/tagcloud.
 
@@ -226,7 +226,7 @@ Voor instanties van de module Contextthub.tagcloud UI is geen waarde vereist voo
 
 De granite.profile module ContextHub UI toont de vertoningsnaam van de huidige gebruiker. De pop-up openbaart de login naam van de gebruiker en laat u toe om de waarde van de vertoningsnaam te veranderen. De module UI verkrijgt informatie van een opslag ContextHub genoemd profiel dat op de {[&#128279;](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) opslagkandidaat 0} granite.profile gebaseerd is.
 
-![ chlimage_1-83 ](assets/chlimage_1-83a.png)
+![&#x200B; chlimage_1-83 &#x200B;](assets/chlimage_1-83a.png)
 
 De bron van de module UI is in /libs/granite/contexthub/components/modules/profile.
 

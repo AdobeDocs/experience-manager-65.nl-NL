@@ -27,7 +27,7 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 1. Selecteer de optie **[!UICONTROL Repository]** . Klik in de lijst **[!UICONTROL Access Control]** op **[!UICONTROL +]** om een item toe te voegen. Klik nogmaals op **[!UICONTROL +]** .
 1. Onderzoek en selecteer **PERM_WORKSPACE_USER** Belangrijk.
 
-   ![ Uitgezochte PERM_WORKSPACE_USER hoofd als deel van de generische stappen om HTML Workspace ](assets/perm_workspace_user.png) aan te passen
+   ![&#x200B; Uitgezochte PERM_WORKSPACE_USER hoofd als deel van de generische stappen om HTML Workspace &#x200B;](assets/perm_workspace_user.png) aan te passen
 
 1. Geef `jcr:read` bevoegdheid aan Opdrachtgever.
 1. Klik op **[!UICONTROL Save All]**.

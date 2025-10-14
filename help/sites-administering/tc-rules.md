@@ -29,7 +29,7 @@ Het bestand is van toepassing op alle vertaalprojecten.
 
 >[!NOTE]
 >
->Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [ Gemeenschappelijke Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) voor meer details.
+>Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [&#x200B; Gemeenschappelijke Herstructurering van de Bewaarplaats in AEM 6.5 &#x200B;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) voor meer details.
 
 De regels omvatten de volgende informatie:
 
@@ -38,9 +38,9 @@ De regels omvatten de volgende informatie:
 
 U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle AEM basistekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de node `/content` en de eigenschap `text` voor de component `foundation/components/text` identificeren.
 
-Er is a [ console ](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
+Er is a [&#x200B; console &#x200B;](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md).
+Voor een overzicht van de eigenschappen van de inhoudsomzetting in AEM, zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md).
 
 >[!NOTE]
 >
@@ -152,19 +152,19 @@ Toegang tot dit bestand:
 
 1. Navigeer aan **Hulpmiddelen** en toen **Algemeen**.
 
-   ![ chlimage_1-55 ](assets/chlimage_1-55.jpeg)
+   ![&#x200B; chlimage_1-55 &#x200B;](assets/chlimage_1-55.jpeg)
 
 1. Selecteer **de Configuratie van de Vertaling**.
 
-   ![ chlimage_1-56 ](assets/chlimage_1-56.jpeg)
+   ![&#x200B; chlimage_1-56 &#x200B;](assets/chlimage_1-56.jpeg)
 
 Van hier, kunt u **context** toevoegen. Hiermee kunt u een pad toevoegen.
 
-![ chlimage_1-57 ](assets/chlimage_1-57.jpeg)
+![&#x200B; chlimage_1-57 &#x200B;](assets/chlimage_1-57.jpeg)
 
 Dan moet u uw context selecteren en dan **klikken geeft** uit. Hiermee opent u de Editor voor vertaalregels.
 
-![ chlimage_1-58 ](assets/chlimage_1-58.jpeg)
+![&#x200B; chlimage_1-58 &#x200B;](assets/chlimage_1-58.jpeg)
 
 Er zijn vier kenmerken die u kunt wijzigen via de gebruikersinterface: `isDeep` , `inherit` , `translate` en `updateDestinationLanguage` .
 
@@ -174,7 +174,7 @@ Onderliggende knooppunten worden bijvoorbeeld toegevoegd aan een vertaaltaak, ze
 
 In de Redacteur, kunt u controleren/uncheck **is Diep** in de **Filters** tabel.
 
-![ chlimage_1-59 ](assets/chlimage_1-59.jpeg)
+![&#x200B; chlimage_1-59 &#x200B;](assets/chlimage_1-59.jpeg)
 
 Hier is een voorbeeld van resulterende xml wanneer **Diep** is ongecontroleerd in UI:
 
@@ -188,7 +188,7 @@ Hier is een voorbeeld van resulterende xml wanneer **Diep** is ongecontroleerd i
 
 In UI, kunt u controleren/uncheck **erven** in **Eigenschappen** tabel.
 
-![ chlimage_1-60 ](assets/chlimage_1-60.jpeg)
+![&#x200B; chlimage_1-60 &#x200B;](assets/chlimage_1-60.jpeg)
 
 **vertaal** het vertaalattribuut wordt gebruikt eenvoudig om te specificeren al dan niet om een bezit te vertalen.
 
@@ -200,7 +200,7 @@ In UI, kunt u controleren/uncheck **&#x200B;**&#x200B;in het **lusje van Eigensc
 
 Voor meer duidelijkheid over het verschil tussen `updateDestinationLanguage` en `translate` is dit een eenvoudig voorbeeld van een context met slechts twee regels:
 
-![ chlimage_1-61 ](assets/chlimage_1-61.jpeg)
+![&#x200B; chlimage_1-61 &#x200B;](assets/chlimage_1-61.jpeg)
 
 Het resultaat in de xml ziet er als volgt uit:
 

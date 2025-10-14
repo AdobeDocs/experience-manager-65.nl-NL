@@ -22,7 +22,7 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [&#x200B; Verwijzing van de Diensten &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Bij het instellen van een connector voor EMC Documentum moeten de serververbinding en de gegevens van de opslagplaats worden geconfigureerd.
 

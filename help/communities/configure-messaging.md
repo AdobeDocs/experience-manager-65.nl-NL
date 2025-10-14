@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Communities communityleden toe om met elkaar meer privé in wisselwerking te staan.
 
-Deze eigenschap kan worden omvat wanneer a [ communautaire plaats ](/help/communities/overview.md#communitiessites) wordt gecreeerd.
+Deze eigenschap kan worden omvat wanneer a [&#x200B; communautaire plaats &#x200B;](/help/communities/overview.md#communitiessites) wordt gecreeerd.
 
 De overseineneigenschap laat u het volgende doen:
 
 **A** - verzend een bericht naar één of meerdere communautaire leden
 
-**B** - verzend directe berichten in [ bulk aan de groepen van het communautaire lid ](/help/communities/messaging.md#group-messaging)
+**B** - verzend directe berichten in [&#x200B; bulk aan de groepen van het communautaire lid &#x200B;](/help/communities/messaging.md#group-messaging)
 
 **C** - verzend een bericht met gehechtheid
 
@@ -39,14 +39,14 @@ De overseineneigenschap laat u het volgende doen:
 
 **G** - herstel een geschrapt bericht
 
-![ overseinen-sectie ](assets/messaging-section.png)
+![&#x200B; overseinen-sectie &#x200B;](assets/messaging-section.png)
 
-![ herstel-bericht ](assets/restore-message.png)
+![&#x200B; herstel-bericht &#x200B;](assets/restore-message.png)
 
 Om de overseineneigenschap toe te laten en te wijzigen, zie:
 
-* [ vorm Overseinen ](/help/communities/messaging.md) voor beheerders
-* [ Hoofdzaak van het Overseinen ](/help/communities/essentials-messaging.md) voor ontwikkelaars
+* [&#x200B; vorm Overseinen &#x200B;](/help/communities/messaging.md) voor beheerders
+* [&#x200B; Hoofdzaak van het Overseinen &#x200B;](/help/communities/essentials-messaging.md) voor ontwikkelaars
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Wanneer het overseinen voor een communautaire plaats wordt toegelaten, wordt het
 
 ### Berichtlijst configureren (berichtvenster) {#configure-message-list-message-box}
 
-Om de configuratie van de lijst van berichten voor **Inbox** te wijzigen, **Verzonden Punten**, en **afval** pagina&#39;s van de overseineneigenschap, open de plaats in [ auteur geeft wijze ](/help/communities/sites-console.md#authoring-site-content) uit.
+Om de configuratie van de lijst van berichten voor **Inbox** te wijzigen, **Verzonden Punten**, en **afval** pagina&#39;s van de overseineneigenschap, open de plaats in [&#x200B; auteur geeft wijze &#x200B;](/help/communities/sites-console.md#authoring-site-content) uit.
 
 1. Op `Preview` wijze, selecteer de **verbinding van Berichten** om de belangrijkste overseinenpagina te openen. Dan selecteer of **Inbox**, **Verzonden Punten** of **Afval** om de component voor die berichtlijst te vormen.
 
@@ -68,15 +68,15 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 1. Nadat de configuratie is voltooid, moet de overerving worden hersteld door het pictogram `broken link` te selecteren.
 
-![ vorm-bericht-lijst ](assets/configure-message-list.png)
+![&#x200B; vorm-bericht-lijst &#x200B;](assets/configure-message-list.png)
 
 #### Het tabblad Basis {#basic-tab}
 
-![ basis-lusje-messagelist ](assets/basic-tab-messagelist.png)
+![&#x200B; basis-lusje-messagelist &#x200B;](assets/basic-tab-messagelist.png)
 
 * **de selecteur van de Dienst**
 
-  (*Vereiste*) reeks dit aan de waarde van het bezit **`serviceSelector.name`** van de [ Dienst van de Verrichtingen van het Overseinen van AEM Communities ](/help/communities/messaging.md#messaging-operations-service).
+  (*Vereiste*) reeks dit aan de waarde van het bezit **`serviceSelector.name`** van de [&#x200B; Dienst van de Verrichtingen van het Overseinen van AEM Communities &#x200B;](/help/communities/messaging.md#messaging-operations-service).
 
 * **stelt Pagina** samen
 
@@ -96,11 +96,11 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Wegen van de Omslag**
 
-  (*Vereiste*) Verwijzend de waarden die voor **worden geplaatst inbox.path.name** en **sentitems.path.name** in de [ Dienst van de Verrichtingen van het Overseinen van AEM Communities ](/help/communities/messaging.md#messaging-operations-service). Wanneer het vormen voor `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash` twee items met beide waarden toe.
+  (*Vereiste*) Verwijzend de waarden die voor **worden geplaatst inbox.path.name** en **sentitems.path.name** in de [&#x200B; Dienst van de Verrichtingen van het Overseinen van AEM Communities &#x200B;](/help/communities/messaging.md#messaging-operations-service). Wanneer het vormen voor `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash` twee items met beide waarden toe.
 
 #### Tabblad Weergave {#display-tab}
 
-![ vertoning-lusje-bericht-lijst ](assets/display-tab-message-list.png)
+![&#x200B; vertoning-lusje-bericht-lijst &#x200B;](assets/display-tab-message-list.png)
 
 * **Markering Gelezen Knoop**
 
@@ -132,7 +132,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 ### Samenstellingsbericht configureren {#configure-compose-message}
 
-Om de configuratie van de samenstellen berichtpagina te wijzigen, open de plaats in [ auteur geeft wijze ](/help/communities/sites-console.md#authoring-site-content) uit.
+Om de configuratie van de samenstellen berichtpagina te wijzigen, open de plaats in [&#x200B; auteur geeft wijze &#x200B;](/help/communities/sites-console.md#authoring-site-content) uit.
 
 * Op `Preview` wijze, selecteer de **verbinding van Berichten** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht zodat u de pagina `Compose Message` kunt openen.
 
@@ -142,11 +142,11 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * Nadat de configuratie is voltooid, moet de overerving worden hersteld door het pictogram `broken link` te selecteren.
 
-![ config-compose-bericht ](assets/config-compose-message.png)
+![&#x200B; config-compose-bericht &#x200B;](assets/config-compose-message.png)
 
 #### Het tabblad Basis {#basic-tab-1}
 
-![ basis-lusje-compose ](assets/basic-tab-compose.png)
+![&#x200B; basis-lusje-compose &#x200B;](assets/basic-tab-compose.png)
 
 * **Redirect URL**
 
@@ -166,11 +166,11 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **de selecteur van de Dienst**
 
-  (*Vereiste*) reeks dit aan de waarde van het bezit **`serviceSelector.name`** van de [ Dienst van de Verrichtingen van het Overseinen van AEM Communities ](/help/communities/messaging.md#messaging-operations-service).
+  (*Vereiste*) reeks dit aan de waarde van het bezit **`serviceSelector.name`** van de [&#x200B; Dienst van de Verrichtingen van het Overseinen van AEM Communities &#x200B;](/help/communities/messaging.md#messaging-operations-service).
 
 #### Tabblad Weergave {#display-tab-1}
 
-![ vertoning-lusje-compose ](assets/display-tab-compose.png)
+![&#x200B; vertoning-lusje-compose &#x200B;](assets/display-tab-compose.png)
 
 * **toon Onderwerpgebied**
 

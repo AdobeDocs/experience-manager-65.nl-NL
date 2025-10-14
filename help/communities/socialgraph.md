@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De capaciteit voor een communautair lid om [ activiteiten ](activities.md) te volgen en te worden gevolgd wordt gevestigd door twee componenten: `Follow` en `Following`.
+De capaciteit voor een communautair lid om [&#x200B; activiteiten &#x200B;](activities.md) te volgen en te worden gevolgd wordt gevestigd door twee componenten: `Follow` en `Following`.
 
 De component `Follow` moet aan een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor communautaire leden en eigenschappen.
 
-De component `Following` geeft alleen de leden weer die het huidige lid volgen of die door het huidige lid worden gevolgd. Deze sociale grafiek van de verhoudingen tussen leden is inbegrepen in het gebruikersprofiel dat voor a [ wordt gevestigd communautaire plaats ](overview.md#communitiessites).
+De component `Following` geeft alleen de leden weer die het huidige lid volgen of die door het huidige lid worden gevolgd. Deze sociale grafiek van de verhoudingen tussen leden is inbegrepen in het gebruikersprofiel dat voor a [&#x200B; wordt gevestigd communautaire plaats &#x200B;](overview.md#communitiessites).
 
 ## Volgende toevoegen aan een pagina {#adding-following-to-a-page}
 
@@ -32,9 +32,9 @@ Als u een component `Following` wilt toevoegen aan een pagina in de ontwerpmodus
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](essentials-socialgraph.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Following` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](essentials-socialgraph.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Following` component verschijnt:
 
-![ volgend ](assets/following.png)
+![&#x200B; volgend &#x200B;](assets/following.png)
 
 ## Configureren na {#configuring-following}
 

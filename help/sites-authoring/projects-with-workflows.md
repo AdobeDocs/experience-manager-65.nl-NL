@@ -44,7 +44,7 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
->&ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [ Creërend de Kopieën van de Taal voor Assets.](/help/sites-administering/tc-manage.md)
+>&ast; Deze werkschema&#39;s zijn niet begonnen van de **tegel van het Werkschema** in Projecten. Zie [&#x200B; Creërend de Kopieën van de Taal voor Assets.](/help/sites-administering/tc-manage.md)
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -66,7 +66,7 @@ Met deze workflow kunt u een gebruiker om een manuscript vragen en het vervolgen
 1. In de tovenaar van het werkschema selecteert **het Exemplaar van het Verzoek** en klikt **daarna**.
 1. Voer een eigenschapstitel in en een korte samenvatting van wat u vraagt. Voer, indien van toepassing, een doelwoordtelling, taakprioriteit en een vervaldatum in.
 
-   ![ het werkschema van het Exemplaar van het Verzoek ](assets/project-request-copy-workflow.png)
+   ![&#x200B; het werkschema van het Exemplaar van het Verzoek &#x200B;](assets/project-request-copy-workflow.png)
 
 1. Klik **voorleggen**.
 
@@ -74,7 +74,7 @@ De workflow wordt gestart. De taak verschijnt op de **kaart van Taken**.
 
 ## Workflow voor foto&#39;s van producten {#product-photo-shoot-workflow}
 
-De **werkschema&#39;s van de Foto van het Product** (zowel handel als zonder handel) worden behandeld in detail in het document [ Creatieve Projecten ](/help/sites-authoring/managing-product-information.md)
+De **werkschema&#39;s van de Foto van het Product** (zowel handel als zonder handel) worden behandeld in detail in het document [&#x200B; Creatieve Projecten &#x200B;](/help/sites-authoring/managing-product-information.md)
 
 ## Workflow voor projectgoedkeuring {#project-approval-workflow}
 
@@ -84,7 +84,7 @@ In het **werkschema van de Goedkeuring van het Project**, wijst u inhoud aan een
 1. In de tovenaar van het werkschema selecteert **de Goedkeuring van het 0&rbrace; Project en klikt** daarna **.**
 1. Voer een titel in en selecteer aan wie de titel moet worden toegewezen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
-   ![ het goedkeuringswerkschema van het Project ](assets/project-approval-workflow.png)
+   ![&#x200B; het goedkeuringswerkschema van het Project &#x200B;](assets/project-approval-workflow.png)
 
 1. Klik **voorleggen**.
 
@@ -98,7 +98,7 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 1. In de tovenaar van het werkschema selecteert **het Werkschema van de Lancering van het Verzoek** en klikt **daarna**.
 1. Voer een titel in voor de opstart en geef het bronpad op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
-   ![ de lanceringswerkschema van het Verzoek ](assets/project-request-launch-workflow.png)
+   ![&#x200B; de lanceringswerkschema van het Verzoek &#x200B;](assets/project-request-launch-workflow.png)
 
 1. Klik **voorleggen**.
 
@@ -112,7 +112,7 @@ Met deze workflow kunt u een bestemmingspagina aanvragen.
 1. In de tovenaar van het werkschema selecteert **Verzoek het Landen Pagina** en klikt **daarna**.
 1. Voer een titel in voor de openingspagina en het bovenliggende pad. Voer, indien van toepassing, een live datum in of kies een bestand voor de bestemmingspagina.
 
-   ![ het landen van het verzoek paginawerkschema ](assets/project-request-landing-page-workflow.png)
+   ![&#x200B; het landen van het verzoek paginawerkschema &#x200B;](assets/project-request-landing-page-workflow.png)
 
 1. Klik **voorleggen**.
 
@@ -126,7 +126,7 @@ Met deze workflow kunt u een e-mail aanvragen. Het is het zelfde werkschema dat 
 1. In de tovenaar van het werkschema selecteert **E-mail van het Verzoek** en klikt **daarna**.
 1. Voer een e-mailtitel en de campagne- en sjabloonpaden in. Daarnaast kunt u een naam, beschrijving en actieve datum opgeven.
 
-   ![ Verzoek e-mailwerkschema ](assets/project-request-email-workflow.png)
+   ![&#x200B; Verzoek e-mailwerkschema &#x200B;](assets/project-request-email-workflow.png)
 
 1. Klik **voorleggen**.
 
@@ -134,4 +134,4 @@ De workflow wordt gestart. De taak verschijnt op de **kaart van Taken**.
 
 ## Workflow voor taalkopieën maken (en vertalen) voor Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-**creeer het Exemplaar van de Taal** en **creeer en vertaalde werkschema&#39;s van het Exemplaar van de Taal** zijn behandeld in detail in het document [ Creërend de Exemplaren van de Taal voor Assets.](/help/assets/translation-projects.md)
+**creeer het Exemplaar van de Taal** en **creeer en vertaalde werkschema&#39;s van het Exemplaar van de Taal** zijn behandeld in detail in het document [&#x200B; Creërend de Exemplaren van de Taal voor Assets.](/help/assets/translation-projects.md)

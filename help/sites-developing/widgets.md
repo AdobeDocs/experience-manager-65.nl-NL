@@ -23,29 +23,29 @@ ht-degree: 0%
 >
 >Deze pagina beschrijft het gebruik van widgets in de klassieke gebruikersinterface, die in AEM 6.4 is afgekeurd.
 >
->De Adobe adviseert dat u moderne, [ aanraking-toegelaten UI ](/help/sites-developing/touch-ui-concepts.md) gebruikt die op [ Koraal UI ](/help/sites-developing/touch-ui-concepts.md#coral-ui) wordt gebaseerd en [ graniet UI ](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>De Adobe adviseert dat u moderne, [&#x200B; aanraking-toegelaten UI &#x200B;](/help/sites-developing/touch-ui-concepts.md) gebruikt die op [&#x200B; Koraal UI &#x200B;](/help/sites-developing/touch-ui-concepts.md#coral-ui) wordt gebaseerd en [&#x200B; graniet UI &#x200B;](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 De (AEM) Web-based interface van Adobe Experience Manager gebruikt AJAX en andere moderne browser technologieën om het uitgeven WYSIWYG en het formatteren van inhoud door auteurs direct op de Web-pagina toe te laten.
 
-AEM gebruikt [ ExtJS ](https://www.sencha.com/) widget bibliotheek, die de hoogst gepolijst gebruikersinterfaceelementen verstrekt die over alle belangrijkste browsers werken en de verwezenlijking van Desktop-rang ervaringen UI toestaan.
+AEM gebruikt [&#x200B; ExtJS &#x200B;](https://www.sencha.com/) widget bibliotheek, die de hoogst gepolijst gebruikersinterfaceelementen verstrekt die over alle belangrijkste browsers werken en de verwezenlijking van Desktop-rang ervaringen UI toestaan.
 
 Deze widgets zijn opgenomen in AEM en kunnen, naast het gebruik door AEM zelf, worden gebruikt door elke website die met AEM is gemaakt.
 
-Voor een volledige verwijzing van alle beschikbare widgets in AEM, zie de [ widget API documentatie ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) of de [ lijst van bestaande xtypes ](/help/sites-developing/xtypes.md). Bovendien zijn vele voorbeelden die tonen hoe te om het kader te gebruiken ExtJS beschikbaar op de [ Sencha ](https://examples.sencha.com/extjs/7.6.0/) plaats, de eigenaar van het kader.
+Voor een volledige verwijzing van alle beschikbare widgets in AEM, zie de [&#x200B; widget API documentatie &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) of de [&#x200B; lijst van bestaande xtypes &#x200B;](/help/sites-developing/xtypes.md). Bovendien zijn vele voorbeelden die tonen hoe te om het kader te gebruiken ExtJS beschikbaar op de [&#x200B; Sencha &#x200B;](https://examples.sencha.com/extjs/7.6.0/) plaats, de eigenaar van het kader.
 
-Deze pagina biedt inzicht in het gebruik en uitbreiden van widgets. Het beschrijft eerst hoe te [ cliënt-zijcode in een pagina ](#including-the-client-sided-code-in-a-page) omvatten. Vervolgens worden enkele voorbeeldcomponenten beschreven die zijn gemaakt om een aantal basistoepassingen en -extensies te illustreren. Die componenten zijn beschikbaar in **Gebruikend ExtJS Widgets** pakket op **het Aandeel van het Pakket**.
+Deze pagina biedt inzicht in het gebruik en uitbreiden van widgets. Het beschrijft eerst hoe te [&#x200B; cliënt-zijcode in een pagina &#x200B;](#including-the-client-sided-code-in-a-page) omvatten. Vervolgens worden enkele voorbeeldcomponenten beschreven die zijn gemaakt om een aantal basistoepassingen en -extensies te illustreren. Die componenten zijn beschikbaar in **Gebruikend ExtJS Widgets** pakket op **het Aandeel van het Pakket**.
 
 Het pakket bevat voorbeelden van:
 
-* [ Basisdialogen ](#basic-dialogs) die met uit-van-de-doos widgets worden gebouwd.
-* [ Dynamische dialogen ](#dynamic-dialogs) die met uit-van-de-doos widgets en aangepaste logica van JavaScript worden gebouwd.
-* Dialogen die op [ worden gebaseerd douane widgets ](#custom-widgets).
-* A [ boompaneel ](#tree-overview) tonend een boom JCR onder een bepaalde weg.
-* A [ netpaneel ](#grid-overview) tonend gegevens in een in tabelvorm formaat.
+* [&#x200B; Basisdialogen &#x200B;](#basic-dialogs) die met uit-van-de-doos widgets worden gebouwd.
+* [&#x200B; Dynamische dialogen &#x200B;](#dynamic-dialogs) die met uit-van-de-doos widgets en aangepaste logica van JavaScript worden gebouwd.
+* Dialogen die op [&#x200B; worden gebaseerd douane widgets &#x200B;](#custom-widgets).
+* A [&#x200B; boompaneel &#x200B;](#tree-overview) tonend een boom JCR onder een bepaalde weg.
+* A [&#x200B; netpaneel &#x200B;](#grid-overview) tonend gegevens in een in tabelvorm formaat.
 
 >[!NOTE]
 >
->De klassieke UI van Adobe Experience Manager wordt voortgebouwd op [ ExtJS 3.4.0 ](https://extjs.cachefly.net/ext-3.4.0/docs/).
+>De klassieke UI van Adobe Experience Manager wordt voortgebouwd op [&#x200B; ExtJS 3.4.0 &#x200B;](https://extjs.cachefly.net/ext-3.4.0/docs/).
 
 ## De code aan de clientzijde opnemen in een pagina {#including-the-client-sided-code-in-a-page}
 
@@ -127,7 +127,7 @@ in **CRXDE Lite** open het dossier `/apps/geometrixx/components/page/headlibs.js
 
 >[!NOTE]
 >
->De voorbeelden op deze pagina zijn gebaseerd op de inhoud van het Geometrixx-voorbeeld, die niet meer wordt verzonden met AEM, en die is vervangen door We.Retail. Zie de [ Implementatie van de Verwijzing Wij.Retail ](/help/sites-developing/we-retail.md#we-retail-geometrixx) voor hoe te om Geometrixx te downloaden en te installeren.
+>De voorbeelden op deze pagina zijn gebaseerd op de inhoud van het Geometrixx-voorbeeld, die niet meer wordt verzonden met AEM, en die is vervangen door We.Retail. Zie de [&#x200B; Implementatie van de Verwijzing Wij.Retail &#x200B;](/help/sites-developing/we-retail.md#we-retail-geometrixx) voor hoe te om Geometrixx te downloaden en te installeren.
 
 ### Standaarddialoogvensters {#basic-dialogs}
 
@@ -149,7 +149,7 @@ Omvat **1. De component van de dialoog Grondbeginselen** in de steekproefpagina:
 
 De component wordt als volgt weergegeven:
 
-![ chlimage_1-60 ](assets/chlimage_1-60.png)
+![&#x200B; chlimage_1-60 &#x200B;](assets/chlimage_1-60.png)
 
 #### Voorbeeld 1: Volledig dialoogvenster {#example-full-dialog}
 
@@ -165,7 +165,7 @@ Het **Volledige** dialoog toont een venster met drie lusjes, elk lusje die twee 
 
 Het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-01-31at45411pm ](assets/screen_shot_2012-01-31at45411pm.png)
+![&#x200B; screen_shot_2012-01-31at45411pm &#x200B;](assets/screen_shot_2012-01-31at45411pm.png)
 
 #### Voorbeeld 2: Dialoogvenster Eén venster {#example-single-panel-dialog}
 
@@ -190,7 +190,7 @@ Het dialoogvenster Eén deelvenster gebruiken:
    1. Selecteer het knooppunt: `/apps/extjstraining/components/dialogbasics/Copy of singlepanel` en wijzig de naam ervan in `dialog` .
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-01-31at45952pm ](assets/screen_shot_2012-01-31at45952pm.png)
+![&#x200B; screen_shot_2012-01-31at45952pm &#x200B;](assets/screen_shot_2012-01-31at45952pm.png)
 
 #### Voorbeeld 3: Dialoogvenster Meerdere deelvensters {#example-multi-panel-dialog}
 
@@ -209,10 +209,10 @@ Het **MultiPanel** dialoog heeft de zelfde vertoning zoals de **Volledige** dial
 Het dialoogvenster Meerdere deelvensters gebruiken:
 
 1. Vervang de dialoog van de **component van de Grondbeginselen van de Dialoog** met de **MultiPanel** dialoog:
-volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
+volg de stappen die voor [&#x200B; worden beschreven Voorbeeld 2: Enige Dialoog van het Comité &#x200B;](#example-single-panel-dialog)
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-01-31at50119pm ](assets/screen_shot_2012-01-31at50119pm.png)
+![&#x200B; screen_shot_2012-01-31at50119pm &#x200B;](assets/screen_shot_2012-01-31at50119pm.png)
 
 #### Voorbeeld 4: Rich Dialog {#example-rich-dialog}
 
@@ -230,10 +230,10 @@ Het **rijke** dialoog toont een venster met twee lusjes. De eerste tab heeft een
 Om de **Rijke** dialoog te gebruiken:
 
 1. Vervang de dialoog van de **component van de Grondbeginselen van de Dialoog** met de **Rijke** dialoog:
-volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
+volg de stappen die voor [&#x200B; worden beschreven Voorbeeld 2: Enige Dialoog van het Comité &#x200B;](#example-single-panel-dialog)
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-01-31at50429pm ](assets/screen_shot_2012-01-31at50429pm.png) ![ screen_shot_2012-01-31at50519pm ](assets/screen_shot_2012-01-31at50519pm.png)
+![&#x200B; screen_shot_2012-01-31at50429pm &#x200B;](assets/screen_shot_2012-01-31at50429pm.png) ![&#x200B; screen_shot_2012-01-31at50519pm &#x200B;](assets/screen_shot_2012-01-31at50519pm.png)
 
 ### Dynamische dialoogvensters {#dynamic-dialogs}
 
@@ -250,7 +250,7 @@ Om **2 te omvatten. Dynamische Dialoga** component op de steekproefpagina:
 
 De component wordt als volgt weergegeven:
 
-![ chlimage_1-61 ](assets/chlimage_1-61.png)
+![&#x200B; chlimage_1-61 &#x200B;](assets/chlimage_1-61.png)
 
 #### Voorbeeld 1: dialoogvenster Tabs wisselen {#example-switch-tabs-dialog}
 
@@ -290,7 +290,7 @@ De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en JavaScrip
 
 Het wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at114745am ](assets/screen_shot_2012-02-01at114745am.png)
+![&#x200B; screen_shot_2012-02-01at114745am &#x200B;](assets/screen_shot_2012-02-01at114745am.png)
 
 #### Voorbeeld 2: Willekeurig dialoogvenster {#example-arbitrary-dialog}
 
@@ -329,7 +329,7 @@ Om de **Willekeurige** dialoog te gebruiken:
 Voer de stappen uit die worden beschreven in het [dialoogvenster Voorbeeld 2: Eén deelvenster](#example-single-panel-dialog)
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at115300am ](assets/screen_shot_2012-02-01at115300am.png)
+![&#x200B; screen_shot_2012-02-01at115300am &#x200B;](assets/screen_shot_2012-02-01at115300am.png)
 
 #### Voorbeeld 3: Dialoogvenster Velden in-/uitschakelen {#example-toggle-fields-dialog}
 
@@ -362,10 +362,10 @@ op basis van &#39; `show`&#39; wordt de dialogfieldset al dan niet weergegeven
 Om de **dialoog van de Wisselen van Gebieden** te gebruiken, doe het volgende:
 
 1. Vervang de dialoog van de **Dynamische component van de Dialoog** met de **dialoog van de Toggle van de Gebieden**:
-volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
+volg de stappen die voor [&#x200B; worden beschreven Voorbeeld 2: Enige Dialoog van het Comité &#x200B;](#example-single-panel-dialog)
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at115518am ](assets/screen_shot_2012-02-01at115518am.png)
+![&#x200B; screen_shot_2012-02-01at115518am &#x200B;](assets/screen_shot_2012-02-01at115518am.png)
 
 ### Aangepaste widgets {#custom-widgets}
 
@@ -381,7 +381,7 @@ De douanewidgets en de stop worden omvat in de component genoemd **3. Aangepaste
 1. De component geeft een titel, wat tekst en, wanneer u op de **koppeling EIGENSCHAPPEN** klikt, de eigenschappen van de alinea weer die in de opslagplaats zijn opgeslagen. Als u nogmaals klikt, worden de eigenschappen verborgen.
 De component wordt als volgt weergegeven:
 
-![ chlimage_1-62 ](assets/chlimage_1-62.png)
+![&#x200B; chlimage_1-62 &#x200B;](assets/chlimage_1-62.png)
 
 #### Voorbeeld 1: Aangepaste widget voor meerdere velden {#example-custom-multifield-widget}
 
@@ -411,8 +411,8 @@ De aangepaste `multifield` widget (xtype = `ejstcustom`):
 * Breidt de ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` -widget uit.
 * Bevat drie velden: `hiddenField` (TextField), `allowField` (ComboBox) en `otherField` (TextField)
 * Overschrijft `CQ.Ext.Component#initComponent` om de drie velden toe te voegen:
-   * `allowField` is a [ CQ.form.Selection ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) voorwerp van type &quot;uitgezocht&quot;. optionsProvider is een configuratie van het Selection-object die wordt geïnstantieerd met de optionsProvider-configuratie van de CustomWidget die is gedefinieerd in het dialoogvenster
-   * `otherField` is a [ CQ.Ext.form.TextField ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) voorwerp
+   * `allowField` is a [&#x200B; CQ.form.Selection &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) voorwerp van type &quot;uitgezocht&quot;. optionsProvider is een configuratie van het Selection-object die wordt geïnstantieerd met de optionsProvider-configuratie van de CustomWidget die is gedefinieerd in het dialoogvenster
+   * `otherField` is a [&#x200B; CQ.Ext.form.TextField &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) voorwerp
 * Hiermee overschrijft u de methoden `setValue`, `getValue`en `getRawValue` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) om de waarde van CustomWidget in te stellen en op te halen met de volgende indeling:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Registreert zichzelf als xtype &#39; `ejstcustom`&#39;:
@@ -420,7 +420,7 @@ De aangepaste `multifield` widget (xtype = `ejstcustom`):
 
 De **op widget-Gebaseerde de dialoogvertoningen van 0&rbrace; Douane Multifield &lbrace;als volgt:**
 
-![ screen_shot_2012-02-01at115840am ](assets/screen_shot_2012-02-01at115840am.png)
+![&#x200B; screen_shot_2012-02-01at115840am &#x200B;](assets/screen_shot_2012-02-01at115840am.png)
 
 #### Voorbeeld 2: Aangepaste `Treebrowse` widget {#example-custom-treebrowse-widget}
 
@@ -444,7 +444,7 @@ De aangepaste widget voor browsers (xtype = `ejstbrowse`):
 * Breidt ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)` uit.
 * Definieert een bladervenster met de naam `browseWindow` .
 * Overschrijft ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` om het bladervenster weer te geven wanneer op de pijl wordt geklikt.
-* Bepaalt a [ CQ.Ext.tree.TreePanel ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) voorwerp:
+* Bepaalt a [&#x200B; CQ.Ext.tree.TreePanel &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) voorwerp:
    * Het haalt zijn gegevens op door de servlet aan te roepen die bij `/bin/wcm/siteadmin/tree.json` is geregistreerd.
    * De basis is &quot; `apps/extjstraining`&quot;.
 * Definieert een `window` -object ( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` ):
@@ -458,7 +458,7 @@ De aangepaste widget voor browsers (xtype = `ejstbrowse`):
 Om de **op widget-Gebaseerde dialoog van de Aangepaste Treebrowse te gebruiken**:
 
 1. Vervang de dialoog van de **component van de Douane Widgets** met de **dialoog van de Boom van de Douane**:
-volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
+volg de stappen die voor [&#x200B; worden beschreven Voorbeeld 2: Enige Dialoog van het Comité &#x200B;](#example-single-panel-dialog)
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at120104](assets/screen_shot_2012-02-01at120104pm.png)
@@ -495,7 +495,7 @@ De RTE-plug-in:
 Om de **gebaseerde dialoog te gebruiken van de Redacteur van de Tekst van 0&rbrace; Rich (RTE):**
 
 1. Vervang de dialoog van de **component van de Douane Widgets** met de **Rich Text Editor (RTE) stop-in** gebaseerde dialoog:
-volg de stappen die voor [ worden beschreven Voorbeeld 2: Enige Dialoog van het Comité ](#example-single-panel-dialog)
+volg de stappen die voor [&#x200B; worden beschreven Voorbeeld 2: Enige Dialoog van het Comité &#x200B;](#example-single-panel-dialog)
 1. Bewerk de component.
 1. Klik op het laatste pictogram aan de rechterkant (het pictogram met vier pijlen). Ga een weg in en klik **O.K.**:
 Het pad wordt tussen haakjes weergegeven ([ ]).
@@ -523,7 +523,7 @@ Ga als volgt te werk om de **boomstructuuroverzichtscomponent** op de voorbeeldp
 
 De component wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at120639pm ](assets/screen_shot_2012-02-01at120639pm.png)
+![&#x200B; screen_shot_2012-02-01at120639pm &#x200B;](assets/screen_shot_2012-02-01at120639pm.png)
 
 De component Tree Overview:
 
@@ -543,7 +543,7 @@ The component jsp:
 De JavaScript-code die is ingesloten in de JSP van de component:
 
 * Definieert een `tree` -object door te proberen een structuurvenster van de pagina op te halen.
-* Als het venster dat de boom toont niet bestaat, `treePanel` ([ CQ.Ext.tree.TreePanel ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) wordt gecreeerd:
+* Als het venster dat de boom toont niet bestaat, `treePanel` ([&#x200B; CQ.Ext.tree.TreePanel &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) wordt gecreeerd:
    * `treePanel` bevat de gegevens die worden gebruikt om het venster te maken.
    * De gegevens worden teruggewonnen door servlet te roepen die bij wordt geregistreerd:
 
@@ -565,7 +565,7 @@ Het dialoogvenster Component:
   `https://localhost:4502/apps/extjstraining/components/treeoverview/dialog.-1.json`
 * Hieronder wordt weergegeven:
 
-![ screen_shot_2012-02-01at120745pm ](assets/screen_shot_2012-02-01at120745pm.png)
+![&#x200B; screen_shot_2012-02-01at120745pm &#x200B;](assets/screen_shot_2012-02-01at120745pm.png)
 
 ### Rasteroverzicht {#grid-overview}
 
@@ -591,7 +591,7 @@ De component Rasteroverzicht opnemen in de voorbeeldpagina:
 
 De component wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at121109pm ](assets/screen_shot_2012-02-01at121109pm.png)
+![&#x200B; screen_shot_2012-02-01at121109pm &#x200B;](assets/screen_shot_2012-02-01at121109pm.png)
 
 #### Voorbeeld 1: standaardraster {#example-default-grid}
 
@@ -621,7 +621,7 @@ De JavaScript-code die is ingesloten in de JSP van de component:
 
 * Definieert het `grid` -object door te proberen de venstercomponent van de pagina op te halen:
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* Als `grid` niet bestaat, wordt het voorwerp van a [ CQ.Ext.grid.GridPanel ( `gridPanel`) bepaald door de `getGridPanel()` methode (zie hieronder) te roepen. ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) Deze methode wordt gedefinieerd in `defaultgrid.js` .
+* Als `grid` niet bestaat, wordt het voorwerp van a [&#x200B; CQ.Ext.grid.GridPanel ( `gridPanel`) bepaald door de `getGridPanel()` methode (zie hieronder) te roepen. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) Deze methode wordt gedefinieerd in `defaultgrid.js` .
 * `grid` is een ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` -object dat is gebaseerd op het vooraf gedefinieerde GridPanel en wordt weergegeven: `grid.show();`
 * Als `grid` bestaat, wordt deze weergegeven op basis van de breedte, hoogte en gekoppelde eigenschappen die zijn opgehaald uit de opslagplaats.
 
@@ -660,7 +660,7 @@ Van .js dossier schakelen dat in component jsp van verwijzingen wordt voorzien:
 
 De component wordt als volgt weergegeven:
 
-![ screen_shot_2012-02-01at121429pm ](assets/screen_shot_2012-02-01at121429pm.png)
+![&#x200B; screen_shot_2012-02-01at121429pm &#x200B;](assets/screen_shot_2012-02-01at121429pm.png)
 
 De JavaScript-code waarnaar wordt verwezen in de component jsp ( `referencesearch.js` ) definieert de `getGridPanel()` -methode die wordt aangeroepen vanuit de component jsp en retourneert een ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` -object op basis van gegevens die dynamisch worden opgehaald uit de opslagplaats. De logica in `referencesearch.js` definieert enkele dynamische gegevens als basis voor het GridPanel:
 

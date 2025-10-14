@@ -38,7 +38,7 @@ Indien nodig kunt u de HTML-tags gebruiken die worden ondersteund door Adobe Fla
 * &lt;textformat> Tags voor tekstindeling
 * &lt;u> Tag onderstrepen
 
-Voor meer informatie over de gesteunde markeringen, zie de definitie van het `htmlText` bezit voor de klasse TextField in de [ Verwijzing van de Taal van Flex ](https://flex.apache.org/).
+Voor meer informatie over de gesteunde markeringen, zie de definitie van het `htmlText` bezit voor de klasse TextField in de [&#x200B; Verwijzing van de Taal van Flex &#x200B;](https://flex.apache.org/).
 
 ## Bericht van de dag instellen {#set-the-message-of-the-day}
 

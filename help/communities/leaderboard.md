@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Deze pagina bevat de essentiële informatie voor het werken met de functie Lederboard.
 
-Alvorens de leaderboard component op een pagina op te nemen, is het noodzakelijk om [ het Scoren Badges van Gemeenschappen te vormen ](implementing-scoring.md).
+Alvorens de leaderboard component op een pagina op te nemen, is het noodzakelijk om [&#x200B; het Scoren Badges van Gemeenschappen te vormen &#x200B;](implementing-scoring.md).
 
-Zie [ het Scoren en de Hoofdzaak van Badges ](configure-scoring.md).
+Zie [&#x200B; het Scoren en de Hoofdzaak van Badges &#x200B;](configure-scoring.md).
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -59,4 +59,4 @@ Zie [ het Scoren en de Hoofdzaak van Badges ](configure-scoring.md).
 
 ### Functie bestandsbibliotheek {#file-library-function}
 
-Een communautaire plaatsstructuur die de [ functie van Leaderboard ](functions.md#leaderboard-function) omvat, omvat een gevormde `leaderboard` component.
+Een communautaire plaatsstructuur die de [&#x200B; functie van Leaderboard &#x200B;](functions.md#leaderboard-function) omvat, omvat een gevormde `leaderboard` component.

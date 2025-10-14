@@ -16,14 +16,14 @@ ht-degree: 29%
 
 # AEM-moderniseringstools {#modernization-tools}
 
-[ AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/) staan voor de gemakkelijke omzetting van toe:
+[&#x200B; AEM Moderniseringshulpmiddelen &#x200B;](https://opensource.adobe.com/aem-modernize-tools/) staan voor de gemakkelijke omzetting van toe:
 
-* [ Statische malplaatjes ](page-templates-static.md) aan [ editable malplaatjes ](page-templates-editable.md)
-* [ configuraties van het Ontwerp ](page-templates-static.md) aan [ beleid ](page-templates-editable.md)
-* [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) aan [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ Klassieke UI ](website.md) aan [ aanraking-Toegelaten UI ](touch-ui-concepts.md)
+* [&#x200B; Statische malplaatjes &#x200B;](page-templates-static.md) aan [&#x200B; editable malplaatjes &#x200B;](page-templates-editable.md)
+* [&#x200B; configuraties van het Ontwerp &#x200B;](page-templates-static.md) aan [&#x200B; beleid &#x200B;](page-templates-editable.md)
+* [&#x200B; Componenten van de Stichting &#x200B;](/help/sites-authoring/default-components-foundation.md) aan [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Klassieke UI &#x200B;](website.md) aan [&#x200B; aanraking-Toegelaten UI &#x200B;](touch-ui-concepts.md)
 
-Voor verdere informatie over het gebruik van deze hulpmiddelen, [ zie hun documentatie ](https://opensource.adobe.com/aem-modernize-tools/).
+Voor verdere informatie over het gebruik van deze hulpmiddelen, [&#x200B; zie hun documentatie &#x200B;](https://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

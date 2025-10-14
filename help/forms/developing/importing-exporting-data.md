@@ -34,12 +34,12 @@ Formuliergegevens kunnen afhankelijk van het type PDF-formulier in een van de vo
 
 U kunt deze taken uitvoeren met de service Formuliergegevensintegratie:
 
-* Gegevens importeren in PDF forms. Voor informatie, zie [ het Invoeren van de Gegevens van de Vorm ](importing-exporting-data.md#importing-form-data).
-* Gegevens exporteren uit PDF forms. Voor informatie, zie [ het Uitvoeren van de Gegevens van de Vorm ](importing-exporting-data.md#exporting-form-data).
+* Gegevens importeren in PDF forms. Voor informatie, zie [&#x200B; het Invoeren van de Gegevens van de Vorm &#x200B;](importing-exporting-data.md#importing-form-data).
+* Gegevens exporteren uit PDF forms. Voor informatie, zie [&#x200B; het Uitvoeren van de Gegevens van de Vorm &#x200B;](importing-exporting-data.md#exporting-form-data).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Formuliergegevens importeren {#importing-form-data}
 
@@ -47,7 +47,7 @@ U kunt formuliergegevens in interactieve PDF forms importeren met de service For
 
 Als u gegevens wilt importeren in een formulier dat is gemaakt in Designer, moet u verwijzen naar een geldige XML-gegevensbron voor XDP. Neem bijvoorbeeld het volgende voorbeeld van een hypotheekapplicatie.
 
-![ ie_ie_loanformdata ](assets/ie_ie_loanformdata.png)
+![&#x200B; ie_ie_loanformdata &#x200B;](assets/ie_ie_loanformdata.png)
 
 Als u gegevenswaarden in dit formulier wilt importeren, moet u beschikken over een geldige XML-gegevensbron die overeenkomt met het formulier. U kunt geen willekeurige XML-gegevensbron gebruiken om gegevens in een formulier te importeren met de service Formuliergegevensintegratie. Het verschil tussen een willekeurige XML-gegevensbron en een XDP XML-gegevensbron is dat een XDP-gegevensbron voldoet aan de XML Forms Architecture (XFA). De volgende XML vertegenwoordigt een XDP XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassing.
 
@@ -84,7 +84,7 @@ Als u gegevenswaarden in dit formulier wilt importeren, moet u beschikken over e
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -109,11 +109,11 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm**
 
-Voordat u via programmacode gegevens kunt importeren in een PDF formulier-client-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Voordat u via programmacode gegevens kunt importeren in een PDF formulier-client-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Verwijzing a PDF vorm**
 
@@ -261,7 +261,7 @@ U kunt formuliergegevens vanuit een interactief PDF-formulier exporteren met de 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -287,7 +287,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 **creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm**
 
-Voordat u gegevens via programmacode kunt importeren in een PDF formClient-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, [ plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Voordat u gegevens via programmacode kunt importeren in een PDF formClient-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, [&#x200B; plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Verwijzing a PDF vorm**
 

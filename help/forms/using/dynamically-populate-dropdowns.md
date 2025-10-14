@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-* [ Creërend de bundels OSGI ](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [&#x200B; Creërend de bundels OSGI &#x200B;](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [AEM ontwikkelen](/help/sites-developing/components.md)
 * [Aangepast formulier maken](../../forms/using/creating-adaptive-form.md)
 * [Aangepast formulier ontwerpen](../../forms/using/introduction-forms-authoring.md)
@@ -147,14 +147,14 @@ Overweeg een scenario waar u de **drop-down lijst wilt bevolken van de Staat** d
 
 1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan die van het servlet-punt (/apps/populatedropdown).
 
-   ![ creeer een drop-down knoop ](assets/dropdown-node.png)
+   ![&#x200B; creeer een drop-down knoop &#x200B;](assets/dropdown-node.png)
 
 1. Verpak het inhoudsknooppunt en sluit het .jar-bestand in op een bepaalde locatie (bijvoorbeeld /apps/mijnmap/demo/install/). Implementeer hetzelfde bestand op de server.
 1. Maak een adaptief formulier en voeg er twee vervolgkeuzelijsten aan toe: Land en Staat. De lijst Land kan de namen van landen bevatten. In de lijst Frame kunnen dynamisch de namen worden ingevuld van staten voor het land dat u in de eerste lijst selecteert.
 
    Voeg de namen van de landen toe die u wilt weergeven in de lijst Land. Voeg in de lijst Staat een script toe om het te vullen op basis van de naam van het land in de lijst Land.
 
-   ![ het Toevoegen van landnamen ](assets/country-dropdown.png) ![ Toevoegend manuscript om staatsnamen ](assets/state-dropdown.png) ![ land en van de Staat drop-down lijsten te bevolken ](assets/2dropdowns.png)
+   ![&#x200B; het Toevoegen van landnamen &#x200B;](assets/country-dropdown.png) ![&#x200B; Toevoegend manuscript om staatsnamen &#x200B;](assets/state-dropdown.png) ![&#x200B; land en van de Staat drop-down lijsten te bevolken &#x200B;](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

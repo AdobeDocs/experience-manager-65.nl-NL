@@ -20,11 +20,11 @@ ht-degree: 0%
 
 U kunt mens-centric langlevende processen programmatically aanhalen die in Workbench gebruikend deze cliënttoepassingen werden gecreeerd:
 
-* Een Java-clienttoepassing op het web die de Invocation-API gebruikt. (Zie [ het Aanhalen AEM Forms gebruikend Java API ](/help/forms/developing/invoking-aem-forms-using-java.md) (/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
-* Een ASP.NET-toepassing die webservices gebruikt. (Zie [ het aanhalen van AEM Forms die de Diensten van het Web gebruiken ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
-* Een clienttoepassing die is gebouwd met Flex die Remoting gebruikt. (Zie [ het Aanhalen van AEM Forms die (voor AEM vormen) AEM Forms verwijdert ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting) gebruikt.)
+* Een Java-clienttoepassing op het web die de Invocation-API gebruikt. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend Java API &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md) (/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
+* Een ASP.NET-toepassing die webservices gebruikt. (Zie [&#x200B; het aanhalen van AEM Forms die de Diensten van het Web gebruiken &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+* Een clienttoepassing die is gebouwd met Flex die Remoting gebruikt. (Zie [&#x200B; het Aanhalen van AEM Forms die (voor AEM vormen) AEM Forms verwijdert &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting) gebruikt.)
 
-Het proces met lange duur dat wordt aangehaald wordt genoemd *FirstAppSolution/PreLoanProcess*. U kunt dit proces tot stand brengen door het leerprogramma te volgen dat in [ wordt gespecificeerd Creërend Uw Eerste Toepassing van AEM Forms ](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
+Het proces met lange duur dat wordt aangehaald wordt genoemd *FirstAppSolution/PreLoanProcess*. U kunt dit proces tot stand brengen door het leerprogramma te volgen dat in [&#x200B; wordt gespecificeerd Creërend Uw Eerste Toepassing van AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
 
 Een mens-centric proces impliceert een taak die een gebruiker kan antwoorden aan door Workspace te gebruiken. Met Workbench kunt u bijvoorbeeld een proces maken waarmee een bankmanager een leningtoepassing kan goedkeuren of weigeren. De volgende illustratie toont het proces *FirstAppSolution/PreLoanProcess*.
 
@@ -68,7 +68,7 @@ Gebruikend een cliënttoepassing, kunt u *FirstAppSolution/PreLoanProcess* verze
 
 ## Een Java-webtoepassing maken die een menselijk-centrisch proces van lange duur oproept {#creating-a-java-web-application-that-invokes-a-human-centric-long-lived-process}
 
-U kunt een webtoepassing maken die een Java-servlet gebruikt om het `FirstAppSolution/PreLoanProcess` -proces aan te roepen. Als u dit proces vanuit een Java-servlet wilt aanroepen, gebruikt u de API voor aanroepen in de Java-servlet. (Zie [ het Aanhalen van AEM Forms gebruikend Java API ](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
+U kunt een webtoepassing maken die een Java-servlet gebruikt om het `FirstAppSolution/PreLoanProcess` -proces aan te roepen. Als u dit proces vanuit een Java-servlet wilt aanroepen, gebruikt u de API voor aanroepen in de Java-servlet. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Java API &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
 
 In de volgende afbeelding ziet u een clienttoepassing op het web waarmee de naam, telefoon (of e-mail) en waarden worden gepost. Deze waarden worden naar de Java-server verzonden wanneer de gebruiker op de knop Toepassing verzenden klikt.
 
@@ -83,12 +83,12 @@ Java servlet voert de volgende taken uit:
 
 Voer de volgende stappen uit om een Java-webtoepassing te maken die het `FirstAppSolution/PreLoanProcess` -proces oproept:
 
-1. [ creeer een Webproject ](invoking-human-centric-long-lived.md#create-a-web-project).
-1. [ creeer de toepassingslogica van Java voor servlet ](invoking-human-centric-long-lived.md#create-java-application-logic-for-the-servlet).
+1. [&#x200B; creeer een Webproject &#x200B;](invoking-human-centric-long-lived.md#create-a-web-project).
+1. [&#x200B; creeer de toepassingslogica van Java voor servlet &#x200B;](invoking-human-centric-long-lived.md#create-java-application-logic-for-the-servlet).
 1. [De webpagina voor de webtoepassing maken](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application)
-1. [ verpak de Webtoepassing aan een dossier van WAR ](invoking-human-centric-long-lived.md#package-the-web-application-to-a-war-file).
-1. [ stel het dossier van WAR aan de J2EE toepassingsserver op die AEM Forms ](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms) ontvangen.
-1. [ Test uw Webtoepassing ](invoking-human-centric-long-lived.md#test-your-web-application).
+1. [&#x200B; verpak de Webtoepassing aan een dossier van WAR &#x200B;](invoking-human-centric-long-lived.md#package-the-web-application-to-a-war-file).
+1. [&#x200B; stel het dossier van WAR aan de J2EE toepassingsserver op die AEM Forms &#x200B;](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms) ontvangen.
+1. [&#x200B; Test uw Webtoepassing &#x200B;](invoking-human-centric-long-lived.md#test-your-web-application).
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ In de volgende lijst worden de JAR-bestanden weergegeven die in uw webproject mo
 * adobe-usermanager-client.jar
 * J2EE.jar
 
-Voor de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ Voor de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van
 
 >[!NOTE]
 >
->Voor informatie over het creëren van HTML inhoud die SubmitXML Java servlet aanhaalt, zie [ de Web-pagina voor de Webtoepassing ](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application) creëren.
+>Voor informatie over het creëren van HTML inhoud die SubmitXML Java servlet aanhaalt, zie [&#x200B; de Web-pagina voor de Webtoepassing &#x200B;](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application) creëren.
 
 ### Java-toepassingslogica voor de servlet maken {#create-java-application-logic-for-the-servlet}
 
@@ -159,9 +159,9 @@ Normaal gesproken plaatst u geen clientcode in een Java-servlet- `doGet` of `doP
 
 Als u het `FirstAppSolution/PreLoanProcess` -proces wilt aanroepen met de API voor aanroepen, voert u de volgende taken uit:
 
-1. Neem client-JAR-bestanden, zoals adobe-livecycle-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Neem client-JAR-bestanden, zoals adobe-livecycle-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Haal de naam, de telefoon, en de waardewaarden op van de HTML pagina die worden voorgelegd. Gebruik deze waarden om dynamisch een XML-gegevensbron te maken die naar het `FirstAppSolution/PreLoanProcess` -proces wordt verzonden. U kunt `org.w3c.dom` -klassen gebruiken om de XML-gegevensbron te maken (deze toepassingslogica wordt in het volgende codevoorbeeld getoond).
-1. Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+1. Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Maak een `ServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven. Met een `ServiceClient` -object kunt u een servicebewerking aanroepen. Het behandelt taken zoals het lokaliseren van, het verzenden van, en het verpletteren van oproepingsverzoeken.
 1. Maak een `java.util.HashMap` -object met behulp van de constructor.
 1. Roep de methode `put` van het `java.util.HashMap` object aan voor elke invoerparameter die wordt doorgegeven aan het langlevende proces. Zorg ervoor dat u de naam van de invoerparameters van het proces opgeeft. Omdat voor het `FirstAppSolution/PreLoanProcess` -proces één invoerparameter van het type `XML` (genaamd `formData` ) vereist is, hoeft u de methode `put` slechts eenmaal aan te roepen.
@@ -368,7 +368,7 @@ De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met 
  String amount = request.getParameter("amount");
 ```
 
-De volgende HTML code vertegenwoordigt het bestand index.html dat tijdens de installatie van de ontwikkelomgeving is gemaakt. (Zie [ tot een Webproject ](invoking-human-centric-long-lived.md#create-a-web-project) leiden.)
+De volgende HTML code vertegenwoordigt het bestand index.html dat tijdens de installatie van de ontwikkelomgeving is gemaakt. (Zie [&#x200B; tot een Webproject &#x200B;](invoking-human-centric-long-lived.md#create-a-web-project) leiden.)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
@@ -453,7 +453,7 @@ Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbr
 
 ## Een ASP.NET-webtoepassing maken die een menselijk-centrisch proces van lange duur oproept {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
 
-U kunt een ASP.NET-toepassing maken die het `FirstAppSolution/PreLoanProcess` -proces oproept. Gebruik webservices om dit proces aan te roepen vanuit een ASP.NET-toepassing. (Zie [ het Aanhalen van AEM Forms gebruikend de Diensten van het Web ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+U kunt een ASP.NET-toepassing maken die het `FirstAppSolution/PreLoanProcess` -proces oproept. Gebruik webservices om dit proces aan te roepen vanuit een ASP.NET-toepassing. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend de Diensten van het Web &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 In de volgende afbeelding ziet u een ASP.NET-clienttoepassing die gegevens van een eindgebruiker heeft opgehaald. De gegevens worden in een XML-gegevensbron geplaatst en naar het `FirstAppSolution/PreLoanProcess` -proces verzonden wanneer de gebruiker op de knop Toepassing verzenden klikt.
 
@@ -470,9 +470,9 @@ De toepassing ASP.NET voert de volgende taken uit:
 
 Voer de volgende stappen uit om een ASP.NET-toepassing te maken die het proces FirstAppSolution/PreLoanProcess kan aanroepen:
 
-1. [ creeer een ASP.NET Webtoepassing ](invoking-human-centric-long-lived.md#create-an-asp-net-web-application).
-1. [ creeer een pagina van het ASPIS die FirstAppSolution/PreLoanProcess ](invoking-human-centric-long-lived.md#create-an-asp-page-that-invokes-firstappsolution-preloanprocess) aanhaalt.
-1. [ stel de toepassing ASP.NET ](invoking-human-centric-long-lived.md#run-the-asp-net-application) in werking.
+1. [&#x200B; creeer een ASP.NET Webtoepassing &#x200B;](invoking-human-centric-long-lived.md#create-an-asp-net-web-application).
+1. [&#x200B; creeer een pagina van het ASPIS die FirstAppSolution/PreLoanProcess &#x200B;](invoking-human-centric-long-lived.md#create-an-asp-page-that-invokes-firstappsolution-preloanprocess) aanhaalt.
+1. [&#x200B; stel de toepassing ASP.NET &#x200B;](invoking-human-centric-long-lived.md#run-the-asp-net-application) in werking.
 
 ### Een ASP.NET-webtoepassing maken {#create-an-asp-net-web-application}
 
@@ -512,7 +512,7 @@ Bericht onder de Verwijzingen van de Dienst, zijn er twee punten. Het eerste ite
 
 >[!NOTE]
 >
->Vervang `hiro-xp` door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms. De optie `lc_version` zorgt ervoor dat AEM Forms-functionaliteit, zoals MTOM, beschikbaar is. Zonder de `lc_version` optie te specificeren, kunt u geen AEM Forms aanhalen gebruikend MTOM. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
+>Vervang `hiro-xp` door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms. De optie `lc_version` zorgt ervoor dat AEM Forms-functionaliteit, zoals MTOM, beschikbaar is. Zonder de `lc_version` optie te specificeren, kunt u geen AEM Forms aanhalen gebruikend MTOM. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
 ### Maak een ASP-pagina die FirstAppSolution/PreLoanProcess aanroept {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
@@ -829,7 +829,7 @@ waarbij localhost de naam is van de webserver die als host fungeert voor het ASP
 
 ## Een clienttoepassing maken die is gebouwd met Flex en die een menselijk-centrisch proces van lange duur aanroept {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
 
-U kunt een cliënttoepassing tot stand brengen die met Flex wordt gebouwd om het *FirstAppSolution/PreLoanProcess* proces aan te halen. Deze toepassing gebruikt het Verwijderen om het *FirstAppSolution/PreLoanProcess* proces aan te halen. (Zie [ het Aanhalen van AEM Forms die (voor AEM vormen) AEM Forms verwijdert ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting) gebruikt.)
+U kunt een cliënttoepassing tot stand brengen die met Flex wordt gebouwd om het *FirstAppSolution/PreLoanProcess* proces aan te halen. Deze toepassing gebruikt het Verwijderen om het *FirstAppSolution/PreLoanProcess* proces aan te halen. (Zie [&#x200B; het Aanhalen van AEM Forms die (voor AEM vormen) AEM Forms verwijdert &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting) gebruikt.)
 
 In de volgende afbeelding ziet u een clienttoepassing die is gebouwd met Flex en die gegevens van een eindgebruiker verzamelt. De gegevens worden in een XML-gegevensbron geplaatst en naar het proces verzonden.
 
@@ -847,10 +847,10 @@ De clienttoepassing die met Flex is gebouwd, voert de volgende taken uit:
 Voer de volgende stappen uit om een clienttoepassing te maken die met Flex is gebouwd en het proces FirstAppSolution/PreLoanProcess kan aanroepen:
 
 1. Start een nieuw Flex-project.
-1. Neem het bestand adobe-remoting-provider.swc op in het klassenpad van uw project. (Zie [ Met inbegrip van het de bibliotheekdossier van AEM Forms Flex ](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
-1. Maak een `mx:RemoteObject` -instantie via ActionScript of MXML. (Zie [ Creërend mx:instantie RemoteObject ](/help/forms/developing/invoking-aem-forms-using-remoting.md))
-1. Stel een `ChannelSet` -instantie in om te communiceren met AEM Forms en koppel deze aan de `mx:RemoteObject` -instantie. (Zie [ een Kanaal tot AEM Forms ](/help/forms/developing/invoking-aem-forms-using-remoting.md) leiden.)
-1. Roep de methode `login` van de ChannelSet of de methode `setCredentials` van de service aan om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [ Gebruikend enig teken-op ](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Neem het bestand adobe-remoting-provider.swc op in het klassenpad van uw project. (Zie [&#x200B; Met inbegrip van het de bibliotheekdossier van AEM Forms Flex &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+1. Maak een `mx:RemoteObject` -instantie via ActionScript of MXML. (Zie [&#x200B; Creërend mx:instantie RemoteObject &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md))
+1. Stel een `ChannelSet` -instantie in om te communiceren met AEM Forms en koppel deze aan de `mx:RemoteObject` -instantie. (Zie [&#x200B; een Kanaal tot AEM Forms &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md) leiden.)
+1. Roep de methode `login` van de ChannelSet of de methode `setCredentials` van de service aan om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [&#x200B; Gebruikend enig teken-op &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Maak de XML-gegevensbron die u aan het `FirstAppSolution/PreLoanProcess` -proces wilt doorgeven door een XML-instantie te maken. (Deze toepassingslogica wordt getoond in het volgende codevoorbeeld.)
 1. Maak een object van het type Object met behulp van de constructor. Wijs XML aan het voorwerp toe door de naam van de de inputparameter van het proces, zoals aangetoond in de volgende code te specificeren:
 
@@ -861,7 +861,7 @@ Voer de volgende stappen uit om een clienttoepassing te maken die met Flex is ge
     params["formData"]=xml;
    ```
 
-1. Roep het `FirstAppSolution/PreLoanProcess` -proces aan door de methode `mx:RemoteObject` van de instantie `invoke_Async` aan te roepen. Geef `Object` door die de invoerparameter bevat. (Zie [ het overgaan inputwaarden ](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
+1. Roep het `FirstAppSolution/PreLoanProcess` -proces aan door de methode `mx:RemoteObject` van de instantie `invoke_Async` aan te roepen. Geef `Object` door die de invoerparameter bevat. (Zie [&#x200B; het overgaan inputwaarden &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Haal de aanroepings-identificatiewaarde op die door een langdurig proces wordt geretourneerd, zoals in de volgende code wordt getoond:
 
    ```csharp

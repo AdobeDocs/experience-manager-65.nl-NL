@@ -24,15 +24,15 @@ AEM biedt u de mogelijkheid om:
 * verzoek gegevensregistreren; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
 * specifieke instellingen voor de afzonderlijke services, bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
 
-Dit zijn alle [ configuraties OSGi ](/help/sites-deploying/configuring-osgi.md).
+Dit zijn alle [&#x200B; configuraties OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie [ het Sling Registreren ](https://sling.apache.org/site/logging.html) voor verdere informatie.
+>Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie [&#x200B; het Sling Registreren &#x200B;](https://sling.apache.org/site/logging.html) voor verdere informatie.
 
 ## Globale logboekregistratie {#global-logging}
 
-[ Apache Sling Logging Configuratie ](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het wortelregistreerapparaat te vormen. Hiermee worden de algemene instellingen voor aanmelding bij AEM gedefinieerd:
+[&#x200B; Apache Sling Logging Configuratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het wortelregistreerapparaat te vormen. Hiermee worden de algemene instellingen voor aanmelding bij AEM gedefinieerd:
 
 * het registratieniveau
 * de locatie van het centrale logbestand
@@ -130,17 +130,17 @@ De andere paren volgen de standaardconfiguratie:
 
 U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
-1. Creeer een geval van de Configuratie van de Fabriek [ Apache Sling Logging Logger Configuratie ](/help/sites-deploying/osgi-configuration-settings.md).
+1. Creeer een geval van de Configuratie van de Fabriek [&#x200B; Apache Sling Logging Logger Configuratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geef het logbestand op.
    1. Geef de logboekregistratie op.
    1. Configureer de overige parameters naar wens.
 
-1. Creeer een geval van de Configuratie van de Fabriek [ Apache die het Registreren van de Schrijver Configuratie ](/help/sites-deploying/osgi-configuration-settings.md) sloopt.
+1. Creeer een geval van de Configuratie van de Fabriek [&#x200B; Apache die het Registreren van de Schrijver Configuratie &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) sloopt.
 
    1. Geef het logbestand op. Dit moet overeenkomen met het logbestand dat is opgegeven voor de gebruiker.
    1. Configureer de overige parameters naar wens.
 
 >[!NOTE]
 >
->In bepaalde omstandigheden kunt u a [ dossier van het douanelogboek ](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file) willen tot stand brengen.
+>In bepaalde omstandigheden kunt u a [&#x200B; dossier van het douanelogboek &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file) willen tot stand brengen.

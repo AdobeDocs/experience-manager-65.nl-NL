@@ -55,7 +55,7 @@ Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. M
 
 >[!NOTE]
 >
->Zie [ Gebruikend Bedekkingen ](/help/sites-developing/overlays.md) voor meer details.
+>Zie [&#x200B; Gebruikend Bedekkingen &#x200B;](/help/sites-developing/overlays.md) voor meer details.
 
 Bijvoorbeeld:
 
@@ -109,14 +109,14 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 
 >[!NOTE]
 >
->Als u de [ Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u JCR Vragen, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
+>Als u de [&#x200B; Bouwer van de Vraag &#x200B;](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u JCR Vragen, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
 >
 
 ## Beveiligingsoverwegingen {#security-considerations}
 
 >[!NOTE]
 >
->Het is ook nuttig om naar [ veiligheidscontrolelijst ](/help/sites-administering/security-checklist.md) te verwijzen.
+>Het is ook nuttig om naar [&#x200B; veiligheidscontrolelijst &#x200B;](/help/sites-administering/security-checklist.md) te verwijzen.
 
 ### JCR-sessies (Repository) {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#3
 
 AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Ook, kan een firewall van de Webtoepassing, zoals [ mod_security voor Apache ](https://modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
+Ook, kan een firewall van de Webtoepassing, zoals [&#x200B; mod_security voor Apache &#x200B;](https://modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configura
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [ Aanpassen van de Pagina&#39;s van de Fout die door de Handler van de Fout ](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige details worden getoond.
+Zie [&#x200B; Aanpassen van de Pagina&#39;s van de Fout die door de Handler van de Fout &#x200B;](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige details worden getoond.
 
 ### Bestanden openen in het Java™-proces {#open-files-in-the-java-process}
 
-Omdat AEM tot vele dossiers kan toegang hebben, wordt het geadviseerd dat het aantal [ open dossiers voor een proces Java™ ](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM worden gevormd.
+Omdat AEM tot vele dossiers kan toegang hebben, wordt het geadviseerd dat het aantal [&#x200B; open dossiers voor een proces Java™ &#x200B;](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM worden gevormd.
 
 Om dit probleem tot een minimum te beperken, moet bij de ontwikkeling ervoor worden gezorgd dat geopende bestanden correct worden gesloten wanneer dat (zinvol) mogelijk is.

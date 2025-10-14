@@ -46,7 +46,7 @@ U kunt het beste `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resM
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
 
-Het Witboek van beste praktijken [ verscherpt beelden in Adobe Dynamic Media Classic ](/help/assets/assets/sharpening_images.pdf) dat eveneens op Experience Manager van toepassing is.
+Het Witboek van beste praktijken [&#x200B; verscherpt beelden in Adobe Dynamic Media Classic &#x200B;](/help/assets/assets/sharpening_images.pdf) dat eveneens op Experience Manager van toepassing is.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -73,7 +73,7 @@ Er zijn twee methoden voor het verscherpen van afbeeldingen die u kunt gebruiken
 
         Help-onderwerp Experience Manager over het verscherpen van een afbeelding.
 
-        Het Witboek van beste praktijken [ verscherpt beelden in Adobe Dynamic Media Classic ](/help/assets/assets/sharpening_images.pdf).
+        Het Witboek van beste praktijken [&#x200B; verscherpt beelden in Adobe Dynamic Media Classic &#x200B;](/help/assets/assets/sharpening_images.pdf).
 
       * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
@@ -126,4 +126,4 @@ Tijdens het experimenteren kunnen de volgende algemene suggesties nuttig zijn om
 
 * Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
 * U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$` . De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
-* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerde gebruiksgevallen waar er opties zijn om het teruggeven resultaten te stemmen en te optimaliseren, [ Adobe Professional Services ](https://business.adobe.com/customers/consulting-services/main.html) kan u met aangepast inzicht en beste praktijken helpen.
+* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerde gebruiksgevallen waar er opties zijn om het teruggeven resultaten te stemmen en te optimaliseren, [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html) kan u met aangepast inzicht en beste praktijken helpen.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aangepaste actie toevoegen aan formulierbibliotheekitems{#adding-custom-action-on-form-lister-items}
 
-In AEM Forms kunt u een poortpagina maken met de beschikbare formulieren. Standaard kunt u formulieren zoeken en weergeven op een portalpagina. U kunt formulieren openen om uw gegevens in te vullen en te verzenden. Alleen renderacties worden in het vak weergegeven voor formulieren die op een portalpagina worden vermeld. Om meer over de beschikbare acties op een portalpagina te weten te komen, zie [ Creërend een pagina van het vormenportaal ](../../forms/using/creating-form-portal-page.md).
+In AEM Forms kunt u een poortpagina maken met de beschikbare formulieren. Standaard kunt u formulieren zoeken en weergeven op een portalpagina. U kunt formulieren openen om uw gegevens in te vullen en te verzenden. Alleen renderacties worden in het vak weergegeven voor formulieren die op een portalpagina worden vermeld. Om meer over de beschikbare acties op een portalpagina te weten te komen, zie [&#x200B; Creërend een pagina van het vormenportaal &#x200B;](../../forms/using/creating-form-portal-page.md).
 
 U kunt andere opties aan de portalpagina toevoegen. Deze opties of acties kunnen worden aangepast door de sjabloon van het formulierportaal aan te passen.
 
@@ -49,4 +49,4 @@ U kunt vergelijkbare acties toevoegen aan uw aangepaste sjabloon. Als u een Java
 
 Nadat u de wijzigingen in de sjabloon hebt aangebracht, bevat de pagina met de voorbeeldportal een knop waarmee u de koppeling van het formulier via e-mail kunt verzenden, zoals hieronder wordt weergegeven.
 
-![ e-mail ](assets/email.png)
+![&#x200B; e-mail &#x200B;](assets/email.png)

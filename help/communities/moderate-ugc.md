@@ -23,14 +23,14 @@ ht-degree: 0%
 
 Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wordt gemaakt wanneer een lid (dat is aangemeld bij de bezoeker van de site) inhoud van een gepubliceerde communitysite plaatst via interactie met een van de volgende onderdelen van de gemeenschap:
 
-* [ Blog ](/help/communities/blog-feature.md): leden posten een blogartikel of commentaar.
-* [ Kalender ](/help/communities/calendar.md): leden posten een kalendergebeurtenis of een commentaar.
-* [ Commentaren ](/help/communities/comments.md): de leden posten een commentaar of een antwoord op een commentaar.
+* [&#x200B; Blog &#x200B;](/help/communities/blog-feature.md): leden posten een blogartikel of commentaar.
+* [&#x200B; Kalender &#x200B;](/help/communities/calendar.md): leden posten een kalendergebeurtenis of een commentaar.
+* [&#x200B; Commentaren &#x200B;](/help/communities/comments.md): de leden posten een commentaar of een antwoord op een commentaar.
 
-* [ Forum ](/help/communities/forum.md): de leden posten een nieuw onderwerp of antwoorden op een onderwerp.
-* [ Ideatie ](/help/communities/ideation-feature.md): de leden posten een idee of een commentaar.
-* [ QnA ](/help/communities/working-with-qna.md): de leden leiden tot een vraag of beantwoorden een vraag.
-* [ Recensies ](/help/communities/reviews.md): leden posten een commentaar wanneer het classificeren van een punt.
+* [&#x200B; Forum &#x200B;](/help/communities/forum.md): de leden posten een nieuw onderwerp of antwoorden op een onderwerp.
+* [&#x200B; Ideatie &#x200B;](/help/communities/ideation-feature.md): de leden posten een idee of een commentaar.
+* [&#x200B; QnA &#x200B;](/help/communities/working-with-qna.md): de leden leiden tot een vraag of beantwoorden een vraag.
+* [&#x200B; Recensies &#x200B;](/help/communities/reviews.md): leden posten een commentaar wanneer het classificeren van een punt.
 
 Moderatie van UGC is nuttig om positieve bijdragen te herkennen en negatieve (zoals spam en misleidende taal) te beperken. UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
@@ -38,7 +38,7 @@ Moderatie van UGC is nuttig om positieve bijdragen te herkennen en negatieve (zo
 
 * [Moderniseringsconsole](moderation.md)
 
-  De console van de Moderatie is toegankelijk door beheerders en [ communautaire moderatoren ](/help/communities/users.md) in het openbare milieu en door beheerders in het auteursmilieu. Dit is mogelijk wanneer de communautaire inhoud in a [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) wordt opgeslagen.
+  De console van de Moderatie is toegankelijk door beheerders en [&#x200B; communautaire moderatoren &#x200B;](/help/communities/users.md) in het openbare milieu en door beheerders in het auteursmilieu. Dit is mogelijk wanneer de communautaire inhoud in a [&#x200B; gemeenschappelijke opslag &#x200B;](/help/communities/working-with-srp.md) wordt opgeslagen.
 
 * [Moderatie binnen de context](in-context.md)
 
@@ -50,11 +50,11 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
 
 * `Admin`
 
-  Een gebruiker die een lid van [ gemeenschap-beheerders ](users.md) groep is.
+  Een gebruiker die een lid van [&#x200B; gemeenschap-beheerders &#x200B;](users.md) groep is.
 
 * `Moderator`
 
-  Een lid van a [ communautaire moderators ](users.md#publishenvironmentusersandgroups) groep (heeft [ moderatortoestemmingen ](in-context.md#moderatorpermissions)).
+  Een lid van a [&#x200B; communautaire moderators &#x200B;](users.md#publishenvironmentusersandgroups) groep (heeft [&#x200B; moderatortoestemmingen &#x200B;](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
@@ -155,15 +155,15 @@ Het is mogelijk voor een beheerder of communautaire moderator om één of meerde
 
 Door de actie Knippen te selecteren, wordt de inhoud gekopieerd naar een klembord. Meerdere posts kunnen als groep naar de nieuwe locatie worden gekopieerd en verplaatst.
 
-![ cutugc ](assets/cutugc.png)
+![&#x200B; cutugc &#x200B;](assets/cutugc.png)
 
-![ putbackugc ](assets/putbackugc.png)
+![&#x200B; putbackugc &#x200B;](assets/putbackugc.png)
 
 Op de andere locatie, wanneer het klembord inhoud bevat, wordt naast Nieuwe Post een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van te plakken.
 
-![ pasteugc ](assets/pasteugc.png)
+![&#x200B; pasteugc &#x200B;](assets/pasteugc.png)
 
-![ pasteugc1 ](assets/pasteugc1.png)
+![&#x200B; pasteugc1 &#x200B;](assets/pasteugc1.png)
 
 ### Weigeren {#deny}
 
@@ -195,12 +195,12 @@ De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is 
 
 ### Premoderatie {#premoderation}
 
-Wanneer de UGC wordt gepremodereerd, verschijnt de post niet op de gepubliceerde plaats tot goedkeuring door een moderatie actie. Tijdens verwezenlijking van a [ communautaire plaats ](/help/communities/sites-console.md), die de doos [ Inhoud controleert wordt Voorgematigd ](sites-console.md#moderation) laat premoderatie voor de volledige plaats toe. Wanneer de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
+Wanneer de UGC wordt gepremodereerd, verschijnt de post niet op de gepubliceerde plaats tot goedkeuring door een moderatie actie. Tijdens verwezenlijking van a [&#x200B; communautaire plaats &#x200B;](/help/communities/sites-console.md), die de doos [&#x200B; Inhoud controleert wordt Voorgematigd &#x200B;](sites-console.md#moderation) laat premoderatie voor de volledige plaats toe. Wanneer de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
 
-* [ Commentaren ](comments.md) en [ overzichten ](reviews.md)
+* [&#x200B; Commentaren &#x200B;](comments.md) en [&#x200B; overzichten &#x200B;](reviews.md)
 in **[!UICONTROL User Moderation]** > **[!UICONTROL Pre-Moderation]** .
 
-* [ Forum ](/help/communities/forum.md), [ ideatie ](/help/communities/ideation-feature.md), [ QnA ](/help/communities/working-with-qna.md), en [ kalender ](/help/communities/calendar.md)
+* [&#x200B; Forum &#x200B;](/help/communities/forum.md), [&#x200B; ideatie &#x200B;](/help/communities/ideation-feature.md), [&#x200B; QnA &#x200B;](/help/communities/working-with-qna.md), en [&#x200B; kalender &#x200B;](/help/communities/calendar.md)
 in **[!UICONTROL Settings]** > **[!UICONTROL Moderated]** .
 
 ### Spam-detectie {#spam-detection}
@@ -209,22 +209,22 @@ Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukke
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Nochtans, om de standaardspamwoorden aan te passen of uit te breiden, creeer een reeks woorden in de /apps folder na de structuur van de standaardspamwoorden met [ bekleding ](/help/communities/overlay-comments.md).
+Nochtans, om de standaardspamwoorden aan te passen of uit te breiden, creeer een reeks woorden in de /apps folder na de structuur van de standaardspamwoorden met [&#x200B; bekleding &#x200B;](/help/communities/overlay-comments.md).
 
 Een door de gebruiker gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Dit bericht is geclassificeerd als spam&quot;.
 
 De moderator kan zulk een bericht zien en het zelfde merken om toe te staan of te ontkennen om op de plaats te verschijnen. De acties van de modernisering op deze posten kunnen of in-context of door bulkmoderatie UI worden uitgevoerd.
 
-![ spamdetection ](assets/spamdetection.png)
+![&#x200B; spamdetection &#x200B;](assets/spamdetection.png)
 
 Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
-1. Open [ Console van het Web ](https://localhost:4502/system/console/configMgr), door naar `/system/console/configMgr` te gaan.
+1. Open [&#x200B; Console van het Web &#x200B;](https://localhost:4502/system/console/configMgr), door naar `/system/console/configMgr` te gaan.
 
 1. Bepaal de plaats **configuratie van de Moderatie van 0&rbrace; AEM Communities Auto, en geef het uit.**
 1. Voeg de vermelding **[!UICONTROL SpamProcess]** toe.
 
-![ spamprocess ](assets/spamprocess.png)
+![&#x200B; spamprocess &#x200B;](assets/spamprocess.png)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
 ### Sentiment {#sentiment}
 
-De bedoeling wordt berekend gebaseerd op het aantal positieve en negatieve sleutelwoorden ([ watchwords ](#configuringwatchwords)) aanwezig in een post (UGC).
+De bedoeling wordt berekend gebaseerd op het aantal positieve en negatieve sleutelwoorden ([&#x200B; watchwords &#x200B;](#configuringwatchwords)) aanwezig in een post (UGC).
 
 De sentimentanalyse gebruikt een reeks vooraf geconfigureerde regels en berekent het sentiment van de UGC. De standaardregels staan op `/libs/cq/workflow/components/workflow/social/sentiments/rules` .
 
@@ -249,11 +249,11 @@ Als u regels wilt overschrijven of toevoegen, maakt u een set regels in de map /
 
 Zodra geanalyseerd, wordt het sentiment bewaard met UGC.
 
-Van de [ bulkmoderatieconsole ](/help/communities/moderation.md), is het mogelijk om UGC te filtreren en te bekijken gebaseerd op of het sentiment negatief, neutraal, of positief is.
+Van de [&#x200B; bulkmoderatieconsole &#x200B;](/help/communities/moderation.md), is het mogelijk om UGC te filtreren en te bekijken gebaseerd op of het sentiment negatief, neutraal, of positief is.
 
 #### Wachtwoorden {#watchwords}
 
-AEM Communities verstrekt a *controleur van het watchword* als stap in het proces om [ sentiment ](#sentiment) te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
+AEM Communities verstrekt a *controleur van het watchword* als stap in het proces om [&#x200B; sentiment &#x200B;](#sentiment) te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
 #### Sentificatie en wachtwoorden configureren {#configure-sentiment-and-watchwords}
 
@@ -266,11 +266,11 @@ De standaardlijst van wachtwoorden kan als eigenschappen van een knoop in de bew
 sentiment en wachtwoorden configureren:
 
 * Meld u als beheerder aan bij de auteur.
-* Open [ Console van het Web ](https://localhost:4502/system/console/configMgr).
+* Open [&#x200B; Console van het Web &#x200B;](https://localhost:4502/system/console/configMgr).
 * Zoek `sentimentprocess.name` .
 * Selecteer de configuratie zodat u deze kunt openen in de bewerkingsmodus.
 
-![ sentimentprocess ](assets/sentimentprocess.png)
+![&#x200B; sentimentprocess &#x200B;](assets/sentimentprocess.png)
 
 * **Positieve horloges**
 
@@ -290,7 +290,7 @@ sentiment en wachtwoorden configureren:
 
 Hieronder ziet u een voorbeeld van een aangepast item voor de standaardwachtwoorden wanneer `Explicit Path to Watchwords Node` is ingesteld op `/libs/settings/community/watchwords/default` .
 
-![ crxde ](assets/crxde.png)
+![&#x200B; crxde &#x200B;](assets/crxde.png)
 
 ### Moderatormachtigingen {#moderator-permissions}
 

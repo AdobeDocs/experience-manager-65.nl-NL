@@ -18,9 +18,9 @@ Deze handleiding helpt u de gebieden te identificeren die u voor de Experience M
 
 ## CIF-invoegtoepassing
 
-CIF toe:voegen-op is beschikbaar voor AEM 6.5 via het [ portaal van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc layout=list&amp;p.offset=0&amp;p.limit=16). Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service.
+CIF toe:voegen-op is beschikbaar voor AEM 6.5 via het [&#x200B; portaal van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc layout=list&amp;p.offset=0&amp;p.limit=16). Het is compatibel en biedt dezelfde functies als de CIF-invoegtoepassing voor Experience Manager as a Cloud Service.
 
-Zie [ Begonnen het worden met de Inhoud van AEM en Commerce ](getting-started.md).
+Zie [&#x200B; Begonnen het worden met de Inhoud van AEM en Commerce &#x200B;](getting-started.md).
 
 Om projecten te steunen die CIF opstellen, verstrekt Adobe {de Componenten van de Kern van 0} AEM CIF [&#128279;](https://github.com/adobe/aem-core-cif-components).
 
@@ -30,7 +30,7 @@ Het importeren van productcatalogusgegevens wordt niet ondersteund door de invoe
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [ open-source van Magento ](https://business.adobe.com/products/magento/open-source.html).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; open-source van Magento &#x200B;](https://business.adobe.com/products/magento/open-source.html).
 
 ## Ervaringen met productcatalogus met AEM-rendering
 

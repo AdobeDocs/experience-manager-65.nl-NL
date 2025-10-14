@@ -26,7 +26,7 @@ Nadat u AEM Forms 6.5 Service Pack 19 hebt geïnstalleerd, kan een `Connection t
 Het probleem oplossen:
 
 1. Stop uw AEM 6.5 Forms-exemplaar.
-1. De download en installeert [ versie met 64 bits van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022 ](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waar AEM 6.5 Forms geïnstalleerd is.
+1. De download en installeert [&#x200B; versie met 64 bits van Microsoft Visual C++ Redistributable pakketten voor Visual Studio 2015, 2017, 2019, en 2022 &#x200B;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) op de computer waar AEM 6.5 Forms geïnstalleerd is.
 1. Start de AEM Forms-server opnieuw.
 
    >[!NOTE]

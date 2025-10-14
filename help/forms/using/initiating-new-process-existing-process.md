@@ -28,7 +28,7 @@ De volgende stappen zijn nodig om een nieuw proces te starten op basis van besta
    * Selecteer bij Volgen een zoeksjabloon om een lijst met procesinstanties weer te geven. Selecteer de instantie waarvan u de gegevens wilt gebruiken.
    * Selecteer de taak op het tabblad **[!UICONTROL To-Do]** . Klik op de tab **[!UICONTROL History]** en selecteer de taak die de procesinstantie heeft gestart.
 
-   ![ selecteer de taak ](assets/start3_new.png) ![ Uitgezochte de taak ](assets/start1_new.png)
+   ![&#x200B; selecteer de taak &#x200B;](assets/start3_new.png) ![&#x200B; Uitgezochte de taak &#x200B;](assets/start1_new.png)
 
 1. Klik in de werkbalk Taakactie op **[!UICONTROL Start]** . Er wordt een adaptief formulier voor de nieuwe procesinstantie weergegeven met voorgevulde gegevens.
 

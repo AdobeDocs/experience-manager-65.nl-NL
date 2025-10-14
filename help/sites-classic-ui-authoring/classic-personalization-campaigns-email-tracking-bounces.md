@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >De Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
 >
->De aanbeveling moet [ Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) gebruiken.
+>De aanbeveling moet [&#x200B; Adobe Campaign en zijn AEM integratie &#x200B;](/help/sites-administering/campaign.md) gebruiken.
 
 Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM kan die grenzen beheren en kan ophouden verzendend nieuwsbrieven naar die adressen te verzenden nadat de gevormde stuiterteller wordt overschreden. Door gebrek, wordt het stuiterende tarief geplaatst aan 3 maar configureerbaar.
 
@@ -38,7 +38,7 @@ Ga als volgt te werk om de importmodule voor teruggestuurde e-mailberichten te c
 
 1. Klik **toevoegen** om een configuratie tot stand te brengen.
 
-   ![ chlimage_1 ](assets/chlimage_1a.png)
+   ![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1a.png)
 
 1. Voeg een configuratie toe door het type te selecteren en informatie toe te voegen aan opiniepeiling URL zodat kunt u de gastheer en de haven vormen. Bovendien voeg sommige post en protocol-specifieke parameters aan de vraag URL toe. Stel de configuratie in op minstens eenmaal per dag.
 
@@ -66,7 +66,7 @@ Ga als volgt te werk om de importmodule voor teruggestuurde e-mailberichten te c
 
    `imap.flag.SEEN`:false instellen voor nieuwe/onzichtbare berichten, true voor al-gelezen berichten
 
-   Zie [ https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html ](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) voor de volledige lijst van vlaggen.
+   Zie [&#x200B; https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html &#x200B;](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) voor de volledige lijst van vlaggen.
 
    **voorbeelden IMAP:**
 
@@ -87,7 +87,7 @@ Om de nieuwsbrief dienst te vormen:
 
 1. Configureer de service en sla de wijzigingen op wanneer u klaar bent.
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1a.png)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1a.png)
 
    De volgende configuraties kunnen worden ingesteld om het gedrag aan te passen:
 

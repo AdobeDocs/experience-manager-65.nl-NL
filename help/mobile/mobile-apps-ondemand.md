@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
+>Als u geen Adobe Experience Manager (AEM) als uw bron van inhoudsbeheer gebruikt, zie [&#x200B; Hulp van AEM Mobile On-demand Services &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**Vereiste:**
 >
->Alvorens met AEM Mobile On-demand Services te werken en de stappen binnen deze begonnen gids te volgen, zouden de gebruikers met [ AEM ](/help/sites-deploying/deploy.md) vertrouwd moeten zijn.
+>Alvorens met AEM Mobile On-demand Services te werken en de stappen binnen deze begonnen gids te volgen, zouden de gebruikers met [&#x200B; AEM &#x200B;](/help/sites-deploying/deploy.md) vertrouwd moeten zijn.
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
@@ -43,13 +43,13 @@ Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een 
 * [Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Inhoud beheren](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Om over **Diensten van de Inhoud** te leren, zie [ het Overzicht van de Diensten van de Inhoud ](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
+Om over **Diensten van de Inhoud** te leren, zie [&#x200B; het Overzicht van de Diensten van de Inhoud &#x200B;](/help/mobile/develop-content-as-a-service.md) om begonnen te worden.
 
 >[!NOTE]
 >
 >Meer in het algemeen over grondbeginselen van malplaatjes en componenten in AEM leren, zie de volgende middelen:
 >
->* [ Malplaatjes ](/help/sites-developing/templates.md)
+>* [&#x200B; Malplaatjes &#x200B;](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
 >
 

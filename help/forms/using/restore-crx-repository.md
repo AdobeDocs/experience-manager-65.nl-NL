@@ -28,7 +28,7 @@ Maak een back-up van uw CRX-opslagplaats voordat u de onderstaande stappen uitvo
 
 1. Zoek de `oak-core` -bundel en controleer of deze wordt uitgevoerd.
 
-1. Start de `oak-core` -bundel opnieuw als deze niet wordt uitgevoerd. Als ![ de knoop van de Pauze ](/help/forms/using/assets/stop.png) pictogram vóór de `oak-core` bundel aanwezig is, dan wijst het erop dat de bundel in lopende staat is.
+1. Start de `oak-core` -bundel opnieuw als deze niet wordt uitgevoerd. Als ![&#x200B; de knoop van de Pauze &#x200B;](/help/forms/using/assets/stop.png) pictogram vóór de `oak-core` bundel aanwezig is, dan wijst het erop dat de bundel in lopende staat is.
 
 1. Als het probleem nog steeds niet is opgelost, kunt u het herstellen vanaf de CRX-opslagplaats via de back-up of de CRX-opslagplaats opnieuw opbouwen als er geen back-up beschikbaar is.
 

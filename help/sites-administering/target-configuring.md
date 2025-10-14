@@ -22,11 +22,11 @@ U kunt de configuraties van de wizard die u hebt gemaakt tijdens het gebruik van
 
 ## De configuratie van de wizard Inschakelen wijzigen {#modifying-the-opt-in-wizard-configurations}
 
-De [ Opt-binnen tovenaar ](/help/sites-administering/opt-in.md) die [ AEM met Adobe Target ](/help/sites-administering/target.md) automatisch tot stand brengt een de wolkenconfiguratie van het Doel genoemd Provisioned Configuratie van het Doel integreert. De tovenaar creeert ook een kader van het Doel voor de wolkenconfiguratie genoemd Provisioned Kader van het Doel. Indien nodig kunt u de eigenschappen van de cloudconfiguratie en het framework wijzigen.
+De [&#x200B; Opt-binnen tovenaar &#x200B;](/help/sites-administering/opt-in.md) die [&#x200B; AEM met Adobe Target &#x200B;](/help/sites-administering/target.md) automatisch tot stand brengt een de wolkenconfiguratie van het Doel genoemd Provisioned Configuratie van het Doel integreert. De tovenaar creeert ook een kader van het Doel voor de wolkenconfiguratie genoemd Provisioned Kader van het Doel. Indien nodig kunt u de eigenschappen van de cloudconfiguratie en het framework wijzigen.
 
 U kunt Adobe Target ook configureren om Adobe Target te gebruiken als rapportagebron wanneer u inhoud als doel instelt door de A4T Analytics Cloud-configuratie te configureren.
 
-Om van de wolkenconfiguratie en het kader de plaats te bepalen, navigeer aan **Cloud Servicen** via **Hulpmiddelen** > **Plaatsing** > **Wolk**. ([ http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Om van de wolkenconfiguratie en het kader de plaats te bepalen, navigeer aan **Cloud Servicen** via **Hulpmiddelen** > **Plaatsing** > **Wolk**. ([&#x200B; http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 Onder Adobe Target, klik **tonen Configuraties**.
 
 ### Eigenschappen van provisioned Target Configuration {#provisioned-target-configuration-properties}
@@ -40,14 +40,14 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 * **synchroniseer Segmenten van Adobe Target:** Geselecteerd.
 
 * **bibliotheek van de Cliënt:** mbox.js.
-* **Gebruik DTM om cliëntbibliotheek te leveren:** niet geselecteerd. Selecteer deze optie als u [ gebruik DTM ](/help/sites-administering/dtm.md) of een ander systeem van het markeringsbeheer om het mbox.js of dossier te ontvangen AT.js. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
+* **Gebruik DTM om cliëntbibliotheek te leveren:** niet geselecteerd. Selecteer deze optie als u [&#x200B; gebruik DTM &#x200B;](/help/sites-administering/dtm.md) of een ander systeem van het markeringsbeheer om het mbox.js of dossier te ontvangen AT.js. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
 
 * **Douane mbox.js:** niets specificeerde zodat het standaard mbox.js- dossier wordt gebruikt. Geef desgewenst een aangepast bestand mbox.js op dat u wilt gebruiken. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
 * **Douane AT.js:** niets specificeerde zodat het standaard AT.js- dossier wordt gebruikt. Geef zo nodig een aangepast AT.js-bestand op dat u wilt gebruiken. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
 
 >[!NOTE]
 >
->In AEM 6.3, kunt u het dossier van de Bibliotheek van het Doel selecteren, [ AT.JS ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), dat een nieuwe implementatiebibliotheek voor Adobe Target is die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
+>In AEM 6.3, kunt u het dossier van de Bibliotheek van het Doel selecteren, [&#x200B; AT.JS &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), dat een nieuwe implementatiebibliotheek voor Adobe Target is die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen.
 >
 >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 >
@@ -62,9 +62,9 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 
 Het provisioned Kader van het Doel dat de Opt-in tovenaar creeert wordt gevormd om contextgegevens van de opslag van de Gegevens van het Profiel te verzenden. De pagina- en geslachtsgegevensitems van de winkel worden standaard naar Target verzonden. Uw oplossing vereist waarschijnlijk extra parameters om worden verzonden.
 
-![ Voorgenomen Kader van het Doel ](assets/chlimage_1-158.png)
+![&#x200B; Voorgenomen Kader van het Doel &#x200B;](assets/chlimage_1-158.png)
 
-U kunt het kader vormen om extra contextinformatie naar Doel te verzenden zoals die in [ wordt beschreven Toevoegend een Kader van het Doel ](/help/sites-administering/target-configuring.md#adding-a-target-framework).
+U kunt het kader vormen om extra contextinformatie naar Doel te verzenden zoals die in [&#x200B; wordt beschreven Toevoegend een Kader van het Doel &#x200B;](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
 ### A4T Analytics Cloud-configuratie configureren {#configuring-a-t-analytics-cloud-configuration}
 
@@ -88,7 +88,7 @@ Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfigu
    >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
    >1. Navigeer aan **Hulpmiddelen** > **Algemeen** > **CRXDE Lite**.
-   >1. Navigeer aan de [ Dialoog van de Configuratie van de Analyse A4T ](#a4t-analytics-config-dialog) (zie hieronder)
+   >1. Navigeer aan de [&#x200B; Dialoog van de Configuratie van de Analyse A4T &#x200B;](#a4t-analytics-config-dialog) (zie hieronder)
    >1. Plaats het bezit **onbruikbaar maken** aan **vals**.
    >1. Klik **sparen allen**.
 
@@ -98,9 +98,9 @@ Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfigu
 /libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
 ```
 
-![ AdobeTargetSettings ](assets/adobe-target-settings.jpg)
+![&#x200B; AdobeTargetSettings &#x200B;](assets/adobe-target-settings.jpg)
 
-Klik **OK**. Wanneer u inhoud met Adobe Target richt, kunt u uw rapportbron [ selecteren ](/help/sites-authoring/content-targeting-touch.md).
+Klik **OK**. Wanneer u inhoud met Adobe Target richt, kunt u uw rapportbron [&#x200B; selecteren &#x200B;](/help/sites-authoring/content-targeting-touch.md).
 
 ## Handmatig integreren met Adobe Target {#manually-integrating-with-adobe-target}
 
@@ -108,7 +108,7 @@ Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 
 >[!NOTE]
 >
->Het dossier van de Bibliotheek van het Doel, [ AT.JS ](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen. De Adobe adviseert dat u AT.js in plaats van mbox.js als cliëntbibliotheek gebruikt.
+>Het dossier van de Bibliotheek van het Doel, [&#x200B; AT.JS &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die voor zowel typische Webimplementaties als enig-paginatoepassingen wordt ontworpen. De Adobe adviseert dat u AT.js in plaats van mbox.js als cliëntbibliotheek gebruikt.
 >
 >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 >
@@ -131,7 +131,7 @@ U kunt de wolkenconfiguratie vormen om segmenten van Adobe Target te synchronise
 
 Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM tot stand te brengen:
 
-1. Navigeer aan **Cloud Servicen** via het **AEM embleem** > **Hulpmiddelen** > **Cloud Servicen** > **Verouderde Cloud Servicen**. ([ http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Navigeer aan **Cloud Servicen** via het **AEM embleem** > **Hulpmiddelen** > **Cloud Servicen** > **Verouderde Cloud Servicen**. ([&#x200B; http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    De **Cloud Servicen** overzichtspagina opent.
 
@@ -141,13 +141,13 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    1. Geef de configuratie a **Titel**.
    1. Selecteer het **malplaatje van de Configuratie van 0&rbrace; Adobe Target.**
 
-      ![ Configuratie van Adobe Target ](assets/adobe-target-create-configuration.png)
+      ![&#x200B; Configuratie van Adobe Target &#x200B;](assets/adobe-target-create-configuration.png)
 
 1. Klik **creëren**.
 
    Het dialoogvenster Bewerken wordt geopend.
 
-   ![ AdobeTargetSettings ](assets/adobe-target-settings.jpg)
+   ![&#x200B; AdobeTargetSettings &#x200B;](assets/adobe-target-settings.jpg)
 
    >[!NOTE]
    >
@@ -164,12 +164,12 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    * **E-mail**: De rekening e-mail van het Doel.
    * **Wachtwoord**: het de rekeningswachtwoord van het Doel.
    * **API Type**: of REST of XML
-   * **A4T de Configuratie van Analytics Cloud**: Selecteer de configuratie van Analytics Cloud die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. U hebt deze configuratie nodig als u Adobe Analytics gebruikt als de rapportbron wanneer u inhoud als doel instelt. Als u uw wolkenconfiguratie niet ziet, zie nota in [ Vormend Configuratie A4T Analytics Cloud ](#configuring-a-t-analytics-cloud-configuration).
+   * **A4T de Configuratie van Analytics Cloud**: Selecteer de configuratie van Analytics Cloud die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. U hebt deze configuratie nodig als u Adobe Analytics gebruikt als de rapportbron wanneer u inhoud als doel instelt. Als u uw wolkenconfiguratie niet ziet, zie nota in [&#x200B; Vormend Configuratie A4T Analytics Cloud &#x200B;](#configuring-a-t-analytics-cloud-configuration).
 
    * **het nauwkeurige richten van het Gebruik:** Door gebrek wordt dit controlevakje geselecteerd. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
    * **synchroniseer Segmenten van Adobe Target:** selecteer deze optie zodat kunt u segmenten downloaden die in Doel worden bepaald om hen in AEM te gebruiken. Selecteer deze optie als de eigenschap API Type REST is, omdat inline-segmenten niet worden ondersteund en u segmenten van Target moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
    * **de bibliotheek van de Cliënt:** selecteer of u mbox.js of AT.js cliëntbibliotheek wilt.
-   * **Gebruik DTM om cliëntbibliotheek** te leveren - selecteer deze optie om of AT.js of mbox.js van DTM of een ander systeem van het markeringsbeheer te gebruiken. Vorm [ de integratie DTM ](/help/sites-administering/dtm.md) om deze optie te gebruiken. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
+   * **Gebruik DTM om cliëntbibliotheek** te leveren - selecteer deze optie om of AT.js of mbox.js van DTM of een ander systeem van het markeringsbeheer te gebruiken. Vorm [&#x200B; de integratie DTM &#x200B;](/help/sites-administering/dtm.md) om deze optie te gebruiken. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
    * **Douane mbox.js**: Laat leeg als u de doos DTM controleerde of om standaard mbox.js te gebruiken. U kunt ook uw aangepaste mbox.js uploaden. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
    * **Douane AT.js**: Laat leeg als u het DTM vakje controleerde of om het gebrek AT.js te gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
 
@@ -185,22 +185,22 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 
 1. Klik **verbinden met Doel** om de verbinding met Doel te initialiseren. Als de verbinding succesvol is, wordt het bericht **succesvolle Verbinding** getoond. Klik **O.K.** op het bericht en dan **O.K.** op de dialoog.
 
-   Als u niet met Doel kunt verbinden, zie de [ het oplossen van problemen](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie.
+   Als u niet met Doel kunt verbinden, zie de [&#x200B; het oplossen van problemen](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie.
 
 ### Een doelframework toevoegen {#adding-a-target-framework}
 
-Nadat u de de wolkenconfiguratie van het Doel vormt, voeg een kader van het Doel toe. Het kader identificeert de standaardparameters die naar Adobe Target van de beschikbare [ Context van de Cliënt ](/help/sites-administering/client-context.md) of [ ContextHub ](/help/sites-developing/ch-configuring.md) componenten worden verzonden. Het doel gebruikt de parameters om de segmenten te bepalen die op de huidige context van toepassing zijn.
+Nadat u de de wolkenconfiguratie van het Doel vormt, voeg een kader van het Doel toe. Het kader identificeert de standaardparameters die naar Adobe Target van de beschikbare [&#x200B; Context van de Cliënt &#x200B;](/help/sites-administering/client-context.md) of [&#x200B; ContextHub &#x200B;](/help/sites-developing/ch-configuring.md) componenten worden verzonden. Het doel gebruikt de parameters om de segmenten te bepalen die op de huidige context van toepassing zijn.
 
 U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. Meerdere frameworks zijn handig wanneer u een andere set parameters naar Doel moet sturen voor verschillende gedeelten van uw website. Maak een framework voor elke set parameters die u verzendt. Koppel elk gedeelte van uw website aan het juiste framework. Een webpagina kan slechts één framework tegelijk gebruiken.
 
 1. Voor uw de configuratiepagina van het Doel, klik **+** (plusteken) naast Beschikbare Kaders.
 1. In de Create dialoog van het Kader, specificeer a **Titel**, selecteer het **Kader van Adobe Target**, en klik **creeer**.
 
-   ![ creeer de dialoog van het Kader ](assets/chlimage_1-161.png)
+   ![&#x200B; creeer de dialoog van het Kader &#x200B;](assets/chlimage_1-161.png)
 
-   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [ Context van de Cliënt ](/help/sites-administering/client-context.md) of [ ContextHub ](/help/sites-developing/ch-configuring.md) vertegenwoordigen die u in kaart kunt brengen.
+   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [&#x200B; Context van de Cliënt &#x200B;](/help/sites-administering/client-context.md) of [&#x200B; ContextHub &#x200B;](/help/sites-developing/ch-configuring.md) vertegenwoordigen die u in kaart kunt brengen.
 
-   ![ Componenten voor kader ](assets/chlimage_1-162.png)
+   ![&#x200B; Componenten voor kader &#x200B;](assets/chlimage_1-162.png)
 
 1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. Alternatief, sleep de {**component 1} ContextHub van 0&rbrace; aan het kader.**
 
@@ -210,11 +210,11 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel creëren. 
 
    Bijvoorbeeld, om **Gegevens van het Profiel** over uw plaatsbezoekers te gebruiken om uw campagne van het Doel te controleren, sleep de **component van de Gegevens van het Profiel** aan de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
 
-   ![ profielgegevens ](assets/chlimage_1-163.png)
+   ![&#x200B; profielgegevens &#x200B;](assets/chlimage_1-163.png)
 
 1. Selecteer de variabelen die u zichtbaar aan het systeem van Adobe Target wilt maken door het **aandeel** checkbox in de aangewezen kolommen te selecteren.
 
-   ![ Aandeel ](assets/chlimage_1-164.png)
+   ![&#x200B; Aandeel &#x200B;](assets/chlimage_1-164.png)
 
    >[!NOTE]
    >
@@ -224,7 +224,7 @@ Uw framework is gemaakt. Om het kader aan te herhalen publiceer instantie, gebru
 
 ### Activiteiten koppelen aan de doelcloud-configuratie  {#associating-activities-with-the-target-cloud-configuration}
 
-Koppel uw [ AEM activiteiten ](/help/sites-authoring/activitylib.md) met uw de wolkenconfiguratie van het Doel zodat u de activiteiten in [ Adobe Target ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=nl-NL) kunt weerspiegelen.
+Koppel uw [&#x200B; AEM activiteiten &#x200B;](/help/sites-authoring/activitylib.md) met uw de wolkenconfiguratie van het Doel zodat u de activiteiten in [&#x200B; Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=nl-NL) kunt weerspiegelen.
 
 >[!NOTE]
 >
@@ -239,17 +239,17 @@ Koppel uw [ AEM activiteiten ](/help/sites-authoring/activitylib.md) met uw de w
 
 ### Het doelframework koppelen aan uw site {#associating-the-target-framework-with-your-site}
 
-Nadat u een doelframework hebt gemaakt in AEM, kunt u uw webpagina&#39;s aan het framework koppelen. De doelcomponenten op de pagina&#39;s verzenden de door het framework gedefinieerde gegevens naar Adobe Target voor tracering. (Zie [ Inhoud richtend ](/help/sites-authoring/content-targeting-touch.md).)
+Nadat u een doelframework hebt gemaakt in AEM, kunt u uw webpagina&#39;s aan het framework koppelen. De doelcomponenten op de pagina&#39;s verzenden de door het framework gedefinieerde gegevens naar Adobe Target voor tracering. (Zie [&#x200B; Inhoud richtend &#x200B;](/help/sites-authoring/content-targeting-touch.md).)
 
 Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#39;s de koppeling over.
 
 1. In de **console van Plaatsen**, navigeer aan de plaats die u wilt vormen.
-1. Gebruikend of [ snelle acties ](/help/sites-authoring/basic-handling.md#quick-actions) of [ selectiewijze ](/help/sites-authoring/basic-handling.md), selecteer **Eigenschappen van de Mening.**
+1. Gebruikend of [&#x200B; snelle acties &#x200B;](/help/sites-authoring/basic-handling.md#quick-actions) of [&#x200B; selectiewijze &#x200B;](/help/sites-authoring/basic-handling.md), selecteer **Eigenschappen van de Mening.**
 1. Selecteer de **Cloud Servicen** tabel.
 1. Klik **uitgeven**.
 1. Klik **toevoegen Configuratie** onder **Configuraties van de Cloud Service** en selecteer **Adobe Target**.
 
-   ![ voeg Configuratie ](assets/chlimage_1-165.png) toe
+   ![&#x200B; voeg Configuratie &#x200B;](assets/chlimage_1-165.png) toe
 
 1. Selecteer het kader dat u onder **Verwijzing van de Configuratie** wilt.
 
@@ -258,7 +258,7 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
    >Zorg ervoor dat u het specifieke **kader** selecteert dat u en niet de de wolkenconfiguratie creeerde van het Doel waaronder het werd gecreeerd.
 
 1. Klik **Gedaan**.
-1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [ hoe te de Pagina&#39;s van Publish ](/help/sites-authoring/publishing-pages.md).)
+1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [&#x200B; hoe te de Pagina&#39;s van Publish &#x200B;](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    >

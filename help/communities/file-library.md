@@ -38,17 +38,17 @@ En sleep het naar de juiste plaats op een pagina.
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-file-library.md#essentials-for-client-side) inbegrepen zijn, is het hoe de `File Library` component verschijnt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/essentials-file-library.md#essentials-for-client-side) inbegrepen zijn, is het hoe de `File Library` component verschijnt:
 
-![ dossier-library1 ](assets/file-library1.png)
+![&#x200B; dossier-library1 &#x200B;](assets/file-library1.png)
 
 ### Bestandsbibliotheek configureren {#configuring-file-library}
 
 Selecteer de geplaatste component `File Library` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
-![ dossier-library2 ](assets/file-library2.png)
+![&#x200B; dossier-library2 &#x200B;](assets/file-library2.png)
 
 #### Tabblad Opmerkingen {#comments-tab}
 
@@ -100,7 +100,7 @@ Onder het **lusje van Commentaren**, specificeer als en hoe de commentaren voor 
 
 * **toestaat na**
 
-  Als gecontroleerd, omvat de volgende eigenschap voor blogartikelen, die leden [ toestaat om ](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, omvat de volgende eigenschap voor blogartikelen, die leden [&#x200B; toestaat om &#x200B;](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
 
 * **laat Mentie** toe
 
@@ -168,6 +168,6 @@ Instellen als standaard
 
 Meer informatie kan op de [&#128279;](/help/communities/essentials-file-library.md) pagina van de Hoofdzaak van de Bibliotheek van het 0&rbrace; Dossier &lbrace;voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie [ het Modereren van Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte onderwerpen en commentaren, zie [&#x200B; het Modereren van Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van geposte onderwerpen en commentaren, zie [ Tags Gebruiker-Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [&#x200B; Tags Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).

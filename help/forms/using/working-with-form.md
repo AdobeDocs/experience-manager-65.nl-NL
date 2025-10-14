@@ -36,7 +36,7 @@ Als uw AFA (AEM Form Application) Android-app niet synchroniseert, voert u de vo
 1. Selecteer de optie **[!UICONTROL None]** in het vervolgkeuzemenu voor het kenmerk **[!UICONTROL SameSite attribute for the login-token cookie]** .
 1. Klik op **[!UICONTROL Save]**.
 
-![ het Beeld van de Synchronisatie met AFA Android app ](/help/forms/using/assets/afaandroid.png)
+![&#x200B; het Beeld van de Synchronisatie met AFA Android app &#x200B;](/help/forms/using/assets/afaandroid.png)
 
 >[!NOTE]
 >

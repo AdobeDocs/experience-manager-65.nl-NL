@@ -87,14 +87,14 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
  </tbody>
 </table>
 
-Zie ook [ Cliënt-kant Aanpassingen ](/help/communities/client-customize.md)
+Zie ook [&#x200B; Cliënt-kant Aanpassingen &#x200B;](/help/communities/client-customize.md)
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
 * [Berichten configureren](/help/communities/configure-messaging.md)
-* [ cliëntAPIs van het Overseinen ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) voor componenten SCF
-* [ Overseinen APIs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) voor de dienst
-* [ Eindpunten van het Overseinen ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [&#x200B; cliëntAPIs van het Overseinen &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) voor componenten SCF
+* [&#x200B; Overseinen APIs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) voor de dienst
+* [&#x200B; Eindpunten van het Overseinen &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -113,7 +113,7 @@ Zie ook [ Cliënt-kant Aanpassingen ](/help/communities/client-customize.md)
 
 ### Community-site {#community-site}
 
-Een community-sitestructuur die met de wizard is gemaakt, bevat de berichtfunctie wanneer deze is geselecteerd. Zie `User Management` montages van [ de Console van Plaatsen van de Gemeenschap ](/help/communities/sites-console.md#user-management).
+Een community-sitestructuur die met de wizard is gemaakt, bevat de berichtfunctie wanneer deze is geselecteerd. Zie `User Management` montages van [&#x200B; de Console van Plaatsen van de Gemeenschap &#x200B;](/help/communities/sites-console.md#user-management).
 
 ### Voorbeeldcode: bericht ontvangen {#sample-code-message-received-notification}
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # CRXDE Lite inschakelen in AEM{#enabling-crxde-lite-in-aem}
 
-Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, adviseert de veiligheid controlelijst [ onbruikbaar makend WebDAV ](/help/sites-administering/security-checklist.md#disable-webdav) in productiemilieu&#39;s.
+Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, adviseert de veiligheid controlelijst [&#x200B; onbruikbaar makend WebDAV &#x200B;](/help/sites-administering/security-checklist.md#disable-webdav) in productiemilieu&#39;s.
 
 CRXDE Lite is echter afhankelijk van de juiste werking van de `org.apache.sling.jcr.davex` -bundel. Als u WebDAV uitschakelt, wordt CRXDE Lite ook uitgeschakeld.
 
@@ -30,7 +30,7 @@ Wanneer dit gebeurt, wordt bij het bladeren naar `https://serveraddress:4502/crx
 
 Hoewel deze aanbeveling bedoeld is om aanvalsoppervlakken zoveel mogelijk te beperken, hebben systeembeheerders soms toegang tot CRXDE Lite nodig om door inhoud te bladeren of problemen met betrekking tot productieinstanties op te sporen.
 
-U kunt CRXDE Lite met of [ montages OSGi ](#enabling-crxde-lite-osgi) of met het bevel van a [ cURL ](#enabling-crxde-lite-curl) toelaten.
+U kunt CRXDE Lite met of [&#x200B; montages OSGi &#x200B;](#enabling-crxde-lite-osgi) of met het bevel van a [&#x200B; cURL &#x200B;](#enabling-crxde-lite-curl) toelaten.
 
 >[!WARNING]
 >
@@ -49,7 +49,7 @@ Als deze optie is uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaa
 
 1. Klik op het moersleutelpictogram naast het pictogram om de configuratieopties weer te geven:
 
-   ![ chlimage_1-80 ](assets/chlimage_1-80a.png)
+   ![&#x200B; chlimage_1-80 &#x200B;](assets/chlimage_1-80a.png)
 
 1. Maak de volgende configuratie:
 

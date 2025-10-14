@@ -24,14 +24,14 @@ ht-degree: 0%
 
 Voor hybride domeinen is minstens één verificatieprovider vereist en voor ondernemingsdomeinen is minstens één verificatieprovider of directoryprovider vereist.
 
-Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancier met toegelaten SPNEGO en een leverancier LDAP als steun toe. Deze configuratie laat gebruikersauthentificatie met een gebruiker toe - identiteitskaart en wachtwoord als SPNEGO niet werkt. (Zie [ SSO toelaten gebruikend SPNEGO ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
+Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancier met toegelaten SPNEGO en een leverancier LDAP als steun toe. Deze configuratie laat gebruikersauthentificatie met een gebruiker toe - identiteitskaart en wachtwoord als SPNEGO niet werkt. (Zie [&#x200B; SSO toelaten gebruikend SPNEGO &#x200B;](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
 ## Een verificatieprovider toevoegen {#add-an-authentication-provider}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
-1. Klik op een bestaand domein in de lijst. Als u authentificatie voor een nieuw domein toevoegt, zie [ een ondernemingsdomein ](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) toevoegen of [ een hybride domein ](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain) toevoegen.
+1. Klik op een bestaand domein in de lijst. Als u authentificatie voor een nieuw domein toevoegt, zie [&#x200B; een ondernemingsdomein &#x200B;](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) toevoegen of [&#x200B; een hybride domein &#x200B;](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain) toevoegen.
 1. Klik op Verificatie toevoegen en selecteer in de lijst Verificatieprovider een provider, afhankelijk van het verificatiemechanisme dat uw organisatie gebruikt.
-1. Geef aanvullende informatie op die op de pagina vereist is. (Zie [ montages van de Authentificatie ](configuring-authentication-providers.md#authentication-settings).)
+1. Geef aanvullende informatie op die op de pagina vereist is. (Zie [&#x200B; montages van de Authentificatie &#x200B;](configuring-authentication-providers.md#authentication-settings).)
 1. (Optioneel) Klik op Testen om de configuratie te testen.
 1. Klik op OK en vervolgens nogmaals op OK.
 
@@ -39,7 +39,7 @@ Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancie
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het desbetreffende domein in de lijst.
-1. Selecteer op de pagina die wordt weergegeven de juiste verificatieprovider in de lijst en breng de gewenste wijzigingen aan. (Zie [ montages van de Authentificatie ](configuring-authentication-providers.md#authentication-settings).)
+1. Selecteer op de pagina die wordt weergegeven de juiste verificatieprovider in de lijst en breng de gewenste wijzigingen aan. (Zie [&#x200B; montages van de Authentificatie &#x200B;](configuring-authentication-providers.md#authentication-settings).)
 1. Klik op OK.
 
 ## Een verificatieprovider verwijderen {#delete-an-authentication-provider}
@@ -99,7 +99,7 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en authen
 
 ### SAML-instellingen {#saml-settings}
 
-Als u authentificatie voor een onderneming of een hybride domein vormt en authentificatie van SAML selecteert, zijn de volgende montages beschikbaar. Voor informatie over extra montages SAML, zie [ de dienstleveranciersmontages van SAML ](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings) vormen.
+Als u authentificatie voor een onderneming of een hybride domein vormt en authentificatie van SAML selecteert, zijn de volgende montages beschikbaar. Voor informatie over extra montages SAML, zie [&#x200B; de dienstleveranciersmontages van SAML &#x200B;](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings) vormen.
 
 **Selecteer een SAML-identiteitsprovider-metagegevens
 te importeren bestand:** klik op Bladeren om een metagegevensbestand voor een SAML-identiteitsprovider te selecteren dat is gegenereerd van uw IDP en klik vervolgens op Importeren. De details van IDP worden getoond.
@@ -150,7 +150,7 @@ Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek w
 
 ### Eenmalige provisioning voor een domein inschakelen {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Schrijf een de dienstcontainer die de interfaces IdentityCreator en AssignmentProvider uitvoert. (Zie [ Programmering met AEM vormen ](https://www.adobe.com/go/learn_aemforms_programming_63).)
+1. Schrijf een de dienstcontainer die de interfaces IdentityCreator en AssignmentProvider uitvoert. (Zie [&#x200B; Programmering met AEM vormen &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Implementeer de servicecontainer op de Forms-server.
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 
@@ -161,5 +161,5 @@ Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek w
 
    ***nota &#x200B;**: Als Enable enkel in checkbox van de Levering van de Tijd mist, klik Huis > Montages > de Configuratie van het Beheer van de Gebruiker > de Geavanceerde Attributen van het Systeem en klik dan opnieuw laden.*
 
-1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [ het Vormen authentificatieleveranciers ](configuring-authentication-providers.md#configuring-authentication-providers).)
+1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [&#x200B; het Vormen authentificatieleveranciers &#x200B;](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Sla het domein op.

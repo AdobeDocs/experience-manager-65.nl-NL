@@ -21,10 +21,10 @@ ht-degree: 0%
 
 AEM stuurt e-mailmeldingen naar gebruikers die:
 
-* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld, wijziging of replicatie. De [ Inbox van het Bericht ](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) sectie beschrijft hoe te aan dergelijke gebeurtenissen in te tekenen.
+* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld, wijziging of replicatie. De [&#x200B; Inbox van het Bericht &#x200B;](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) sectie beschrijft hoe te aan dergelijke gebeurtenissen in te tekenen.
 
 * Hebt u zich geabonneerd op forumgebeurtenissen.
-* Een stap in een werkstroom uitvoeren. De [ sectie van de Stap van de Deelnemer ](/help/sites-developing/workflows-step-ref.md#participant-step) beschrijft hoe te om e-mailbericht in een werkschema teweeg te brengen.
+* Een stap in een werkstroom uitvoeren. De [&#x200B; sectie van de Stap van de Deelnemer &#x200B;](/help/sites-developing/workflows-step-ref.md#participant-step) beschrijft hoe te om e-mailbericht in een werkschema teweeg te brengen.
 
 Voorwaarden:
 
@@ -35,11 +35,11 @@ Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de 
 
 >[!NOTE]
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 ## De e-mailservice configureren {#configuring-the-mail-service}
 
-Voor AEM om e-mail te kunnen verzenden, moet de **Dienst van de Post van CQ van de Dag** behoorlijk worden gevormd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Voor AEM om e-mail te kunnen verzenden, moet de **Dienst van de Post van CQ van de Dag** behoorlijk worden gevormd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende beperkingen zijn van toepassing:
 
@@ -54,7 +54,7 @@ Om u te helpen een kwestie met de **Dienst van de Post van de Dag CQ** zuiveren,
 
 De configuratie kijkt als volgt in de console van het Web:
 
-![ het de configuratievenster van de Dienst OSGi van de Post van de Dag CQ ](assets/chlimage_1-276.png)
+![&#x200B; het de configuratievenster van de Dienst OSGi van de Post van de Dag CQ &#x200B;](assets/chlimage_1-276.png)
 
 ## Het kanaal voor e-mailmeldingen configureren {#configuring-the-email-notification-channel}
 
@@ -88,7 +88,7 @@ Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van 
 
 De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
-![ Het de configuratievenster van de Dienst van het Bericht van het Werkschema van de Dag CQ E-mail ](assets/chlimage_1-277.png)
+![&#x200B; Het de configuratievenster van de Dienst van het Bericht van het Werkschema van de Dag CQ E-mail &#x200B;](assets/chlimage_1-277.png)
 
 ### E-mailsjablonen voor paginamelding {#email-templates-for-page-notification}
 
@@ -119,7 +119,7 @@ This is an automatically generated message. Please do not reply.
 
 U kunt als volgt de Engelse e-mailsjabloon voor paginabeldingen aanpassen:
 
-1. Creeer een bedekking voor [ de berichten van de Pagina ](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+1. Creeer een bedekking voor [&#x200B; de berichten van de Pagina &#x200B;](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
 1. Open het bestand:
 
@@ -183,7 +183,7 @@ This is an automatically generated message. Please do not reply.
 
 U kunt als volgt de Engelse e-mailsjabloon voor workflowgebeurtenismeldingen aanpassen:
 
-1. Creeer een bedekking voor [ berichten van het Werkschema ](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
+1. Creeer een bedekking voor [&#x200B; berichten van het Werkschema &#x200B;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 1. Open het bestand:
 
@@ -205,7 +205,7 @@ subject=<text_1>
 >
 >Waar `<text_x>` een combinatie van statische tekst en dynamische tekenreeksvariabelen kan zijn. Elke regel van een `<text_x>` -item moet worden beëindigd met een backslash ( `\` ), behalve de laatste instantie wanneer de afwezigheid van de backslash het einde van de tekenreeksvariabele `<text_x>` aangeeft.
 >
->Meer informatie over het malplaatjeformaat kan in [ worden gevonden javadocs van Properties.load () ](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) methode.
+>Meer informatie over het malplaatjeformaat kan in [&#x200B; worden gevonden javadocs van Properties.load () &#x200B;](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) methode.
 
 De methode `${payload.path.open}` onthult het pad naar de lading van het werkitem. Voor een pagina in Sites zou `payload.path.open` bijvoorbeeld vergelijkbaar zijn met `/bin/wcmcommand?cmd=open&path=…` .; dit is zonder de servernaam, en daarom voegt de malplaatje dit met `${host.prefix}` voor.
 
@@ -243,7 +243,7 @@ De volgende variabelen kunnen binnen het e-mailmalplaatje worden gebruikt:
 
 Een sjabloon toevoegen voor een nieuwe taal:
 
-1. Creeer een [ bekleding ](/help/sites-developing/overlays.md) zoals aangewezen.
+1. Creeer een [&#x200B; bekleding &#x200B;](/help/sites-developing/overlays.md) zoals aangewezen.
 
    * [Paginameldingen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
    * [Workflowmeldingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
@@ -260,7 +260,7 @@ Een sjabloon toevoegen voor een nieuwe taal:
 
 Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailberichten van AEM ontvangen. Voer de volgende stappen uit om e-mailmeldingen te configureren.
 
-1. Vorm de e-maildienst, zoals hierboven beschreven in [ Vormend de Dienst van de Post ](/help/sites-administering/notification.md#configuring-the-mail-service).
+1. Vorm de e-maildienst, zoals hierboven beschreven in [&#x200B; Vormend de Dienst van de Post &#x200B;](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Meld u als beheerder aan bij AEM. Klik **Hulpmiddelen** > **Verrichtingen** > **Console van het Web** om de Configuratie van de Console van het Web te openen.
 1. Bewerk **DAM Server van de Inzameling van het Middel van de Dag CQ DAM**. Selecteer **verzenden e-mail**. Klik **sparen**.
 
@@ -326,7 +326,7 @@ Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![ het CQ de configuratievenster van de Aannemer SMTP Oauth2 van de Leverancier ](assets/oauth-smtpprov2.png)
+![&#x200B; het CQ de configuratievenster van de Aannemer SMTP Oauth2 van de Leverancier &#x200B;](assets/oauth-smtpprov2.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 
@@ -336,7 +336,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Druk het pictogram van het Spel links van de componenten
 
-   ![ Lijst van componenten die OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator tonen ](assets/oauth-components-play.png)
+   ![&#x200B; Lijst van componenten die OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator tonen &#x200B;](assets/oauth-components-play.png)
 
 Bevestig ten slotte de configuratie door:
 
@@ -350,11 +350,11 @@ Bevestig ten slotte de configuratie door:
 
 ### Microsoft Outlook {#microsoft-outlook}
 
-1. Ga naar [ https://portal.azure.com/ ](https://portal.azure.com/) en login.
-1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [ https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview ](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
+1. Ga naar [&#x200B; https://portal.azure.com/ &#x200B;](https://portal.azure.com/) en login.
+1. Onderzoek naar **Azure Actieve Folder** in de onderzoeksbar en klik het resultaat. Alternatief, kunt u direct aan [&#x200B; https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview &#x200B;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) doorbladeren
 1. Klik op **Registratie van de Toepassing** - **Nieuwe Registratie**
 
-   ![ de nieuwe registratieknoop wanneer het vormen van de Vooruitzichten van Microsoft ](assets/oauth-outlook1.png)
+   ![&#x200B; de nieuwe registratieknoop wanneer het vormen van de Vooruitzichten van Microsoft &#x200B;](assets/oauth-outlook1.png)
 
 1. Vul de informatie volgens uw vereisten in, dan klik **Register**
 1. Ga naar pas gecreëerde app, en selecteer **API Toestemmingen**
@@ -401,7 +401,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
    * Controle **OAuth stroom** en klik **sparen**.
 1. Zoek, dan klik **de Wijze SMTP OAuth2 Leverancier van de Aannemer CQ**
 1. Vul de vereiste informatie als volgt in:
-   * Vul in Url van de Vergunning, Symbolische Url en verfris Symbolische URL door hen te construeren zoals die bij [ het eind van deze procedure ](#microsoft-outlook) worden beschreven
+   * Vul in Url van de Vergunning, Symbolische Url en verfris Symbolische URL door hen te construeren zoals die bij [&#x200B; het eind van deze procedure &#x200B;](#microsoft-outlook) worden beschreven
    * Clientid en clientgeheim: configureer deze velden met de waarden die u hebt opgehaald zoals hierboven beschreven.
    * Voeg de volgende Scopes aan de configuratie toe:
       * openhartig
@@ -415,7 +415,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![ de voltooide configuratie van de Wijzer SMTP OAuth2 van CQ &lbrace;](assets/oauth-outlook-smptconfig.png)
+![&#x200B; de voltooide configuratie van de Wijzer SMTP OAuth2 van CQ &lbrace;](assets/oauth-outlook-smptconfig.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 
@@ -425,7 +425,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Druk het pictogram van het Spel links van de componenten
 
-![ een fragment van de componentenlijst die OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator ](assets/oauth-components-play.png) bevat
+![&#x200B; een fragment van de componentenlijst die OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator &#x200B;](assets/oauth-components-play.png) bevat
 
 Bevestig ten slotte de configuratie door:
 

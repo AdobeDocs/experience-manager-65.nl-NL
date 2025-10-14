@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Werken met Assets{#working-with-assets}
 
-Het [ Milieu van de Auteur en de sectie van Hulpmiddelen ](/help/sites-authoring/author-environment-tools.md) verstrekt informatie over het gebruiken [!UICONTROL Content Finder] om activa te vinden en te gebruiken wanneer het uitgeven van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
+Het [&#x200B; Milieu van de Auteur en de sectie van Hulpmiddelen &#x200B;](/help/sites-authoring/author-environment-tools.md) verstrekt informatie over het gebruiken [!UICONTROL Content Finder] om activa te vinden en te gebruiken wanneer het uitgeven van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
 
 * [Dynamic Media Classic-functies aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

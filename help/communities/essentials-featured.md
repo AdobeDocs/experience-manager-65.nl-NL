@@ -58,4 +58,4 @@ In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u 
 
 ### Functie bestandsbibliotheek {#file-library-function}
 
-Een communautaire plaatsstructuur die de [ Aanbevolen functie van de Inhoud ](functions.md#featured-content-function) omvat, omvat een gevormde `featured content` component.
+Een communautaire plaatsstructuur die de [&#x200B; Aanbevolen functie van de Inhoud &#x200B;](functions.md#featured-content-function) omvat, omvat een gevormde `featured content` component.

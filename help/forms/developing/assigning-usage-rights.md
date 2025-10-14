@@ -26,13 +26,13 @@ Met de Acrobat Reader DC Extension Service kan uw organisatie eenvoudig interact
 
 U kunt deze taken uitvoeren met de Acrobat Reader DC-extensieservice:
 
-* Gebruiksrechten toepassen op PDF-documenten. Voor informatie, zie [ Toepassend de Rechten van het Gebruik op de Documenten van de PDF ](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
-* Gebruiksrechten verwijderen uit PDF-documenten. Voor informatie, zie [ Verwijderend de Rechten van het Gebruik van de Documenten van de PDF ](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
-* Retrieve crediteurdetails. Voor informatie, zie [ het Terugwinnen van ReferentieInformatie ](assigning-usage-rights.md#retrieving-credential-information).
+* Gebruiksrechten toepassen op PDF-documenten. Voor informatie, zie [&#x200B; Toepassend de Rechten van het Gebruik op de Documenten van de PDF &#x200B;](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+* Gebruiksrechten verwijderen uit PDF-documenten. Voor informatie, zie [&#x200B; Verwijderend de Rechten van het Gebruik van de Documenten van de PDF &#x200B;](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
+* Retrieve crediteurdetails. Voor informatie, zie [&#x200B; het Terugwinnen van ReferentieInformatie &#x200B;](assigning-usage-rights.md#retrieving-credential-information).
 
 >[!NOTE]
 >
->Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Gebruiksrechten toepassen op PDF-documenten {#applying-usage-rights-to-pdf-documents}
 
@@ -44,7 +44,7 @@ U kunt gebruiksrechten toepassen op PDF-documenten met de Acrobat Reader DC Exte
 
 >[!NOTE]
 >
->Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -226,7 +226,7 @@ U kunt gebruiksrechten verwijderen uit een document waarvoor rechten zijn ingesc
 
 >[!NOTE]
 >
->Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -365,7 +365,7 @@ U kunt informatie ophalen over de referentie die is gebruikt om gebruiksrechten 
 
 >[!NOTE]
 >
->Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de de uitbreidingsdienst van Acrobat Reader DC, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 

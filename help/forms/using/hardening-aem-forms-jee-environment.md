@@ -106,7 +106,7 @@ In de volgende tabel worden enkele mogelijke benaderingen beschreven om beveilig
  </tbody> 
 </table>
 
-Voor extra veiligheidsinformatie voor uw werkend systeem, zie [ &quot;de veiligheidsinformatie van het werkende systeem&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Voor extra veiligheidsinformatie voor uw werkend systeem, zie [&#x200B; &quot;de veiligheidsinformatie van het werkende systeem&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installatie {#installation}
 
@@ -268,11 +268,11 @@ Configuration Manager maakte gebruik van een servlet die op uw toepassingsserver
 
 Met Configuratiebeheer kunt u een Acrobat Reader DC-extensie uploaden die is gecrediteerd aan de AEM Forms in de JEE-vertrouwde opslag. Dit betekent dat de toegang tot de Dienst van de Referentie van de Opslag van het Vertrouwen over verre protocollen (SOAP en EJB) door gebrek is toegelaten. Deze toegang is niet meer noodzakelijk nadat u de credentie van Rechten gebruikend de Manager van de Configuratie hebt geupload of als u besluit om de Console van het Beleid later te gebruiken om geloofsbrieven te beheren.
 
-U kunt verre toegang tot alle diensten van de Opslag van het Vertrouwen onbruikbaar maken door de stappen in de sectie [ te volgen onbruikbaar makend niet-essentiële verre toegang tot de diensten ](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+U kunt verre toegang tot alle diensten van de Opslag van het Vertrouwen onbruikbaar maken door de stappen in de sectie [&#x200B; te volgen onbruikbaar makend niet-essentiële verre toegang tot de diensten &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **maak al niet essentiële anonieme toegang** onbruikbaar
 
-Sommige diensten van de Server van Forms hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als de anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in [ te volgen onbruikbaar makend niet-essentiële anonieme toegang tot de diensten ](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Sommige diensten van de Server van Forms hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als de anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in [&#x200B; te volgen onbruikbaar makend niet-essentiële anonieme toegang tot de diensten &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Het standaardbeheerderswachtwoord wijzigen {#change-the-default-administrator-password}
 
@@ -351,7 +351,7 @@ In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassing
 
 Wanneer het beveiligen van uw gegevensbestand, zou u de maatregelen moeten uitvoeren die door uw gegevensbestandverkoper worden beschreven. U zou een gegevensbestandgebruiker met de minimaal vereiste gegevensbestandtoestemmingen moeten toewijzen die voor gebruik door AEM Forms op JEE worden verleend. Gebruik bijvoorbeeld geen account met databasebeheerdersrechten.
 
-Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNECT, RESOURCE en CREATE VIEW nodig. Voor gelijkaardige vereisten op andere gegevensbestanden, zie [ Voorbereidend om AEM Forms op JEE (Enige Server) te installeren ](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
+Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNECT, RESOURCE en CREATE VIEW nodig. Voor gelijkaardige vereisten op andere gegevensbestanden, zie [&#x200B; Voorbereidend om AEM Forms op JEE (Enige Server) te installeren &#x200B;](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Het vormen geïntegreerde veiligheid voor SQL Server op Vensters voor JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -408,7 +408,7 @@ Als toegevoegde voorzorg, zou u het gebruiken van gegevensbestand verkoper-speci
 * Sleutel voor versleuteling HSM PIN-code opslaan
 * Hashes lokaal gebruikerswachtwoord
 
-Voor informatie over verkoper-specifieke hulpmiddelen, zie [ &quot;de veiligheidsinformatie van het Gegevensbestand&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Voor informatie over verkoper-specifieke hulpmiddelen, zie [&#x200B; &quot;de veiligheidsinformatie van het Gegevensbestand&quot;](https://helpx.adobe.com/nl/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-beveiliging {#ldap-security}
 
@@ -665,7 +665,7 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
 
 Een CSRF-aanval (Cross-Site Request Svervalsing) misbruikt het vertrouwen dat een website heeft voor de gebruiker, om opdrachten door te geven die niet door de gebruiker zijn geautoriseerd en onbedoeld. De aanval wordt opstelling door een verbinding of een manuscript in een Web-pagina, of een URL in een e-mailbericht te omvatten, om tot een andere plaats toegang te hebben waaraan de gebruiker reeds voor authentiek is verklaard.
 
-U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag met een `src` -kenmerk bevatten die een serverscript op de slachtofferwebsite aanwijst. Door het op cookies gebaseerde mechanisme voor sessieverificatie te gebruiken dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Voor meer voorbeelden, zie [ https://owasp.org/www-community/attacks/csrf#Examples ](https://owasp.org/www-community/attacks/csrf#Examples).
+U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag met een `src` -kenmerk bevatten die een serverscript op de slachtofferwebsite aanwijst. Door het op cookies gebaseerde mechanisme voor sessieverificatie te gebruiken dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Voor meer voorbeelden, zie [&#x200B; https://owasp.org/www-community/attacks/csrf#Examples &#x200B;](https://owasp.org/www-community/attacks/csrf#Examples).
 
 De volgende kenmerken komen voor in KVP:
 
@@ -713,7 +713,7 @@ Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane li
 
 **het Leiden Toegestane lijst van de Verwijzing**
 
-U kunt de lijst Toegestane verwijzing beheren via de gebruikersbeheerinterface van de beheerconsole. De gebruikersbeheerinterface biedt u de functionaliteit om de lijst te maken, bewerken of verwijderen. Verwijs naar * [ het verhinderen van aanvallen CSRF ](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sectie van de *beleidshulp* voor meer informatie bij het werken met de Toegestane lijst van de Referentie.
+U kunt de lijst Toegestane verwijzing beheren via de gebruikersbeheerinterface van de beheerconsole. De gebruikersbeheerinterface biedt u de functionaliteit om de lijst te maken, bewerken of verwijderen. Verwijs naar * [&#x200B; het verhinderen van aanvallen CSRF &#x200B;](/help/forms/using/admin-help/preventing-csrf-attacks.md)* sectie van de *beleidshulp* voor meer informatie bij het werken met de Toegestane lijst van de Referentie.
 
 **het Leiden Toegestane Uitzondering van de Referentie en Toegestane lijsten URI**
 
@@ -956,11 +956,11 @@ Voor informatie over havens WebSphere die AEM Forms op JEE vereist, ga naar het 
 
 ### SSL configureren {#configuring-ssl}
 
-Verwijzend naar de fysieke architectuur die in de sectie [ AEM Forms op fysieke architectuur JEE ](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) wordt beschreven, zou u SSL voor alle verbindingen moeten vormen die u van plan bent te gebruiken. Met name moeten alle SOAP verbindingen via SSL worden uitgevoerd om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
+Verwijzend naar de fysieke architectuur die in de sectie [&#x200B; AEM Forms op fysieke architectuur JEE &#x200B;](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) wordt beschreven, zou u SSL voor alle verbindingen moeten vormen die u van plan bent te gebruiken. Met name moeten alle SOAP verbindingen via SSL worden uitgevoerd om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
 
-Voor instructies op hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in de [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_64).
+Voor instructies op hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in de [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Voor instructies op hoe te om certificaten in JVM (de Virtuele Machine van Java) in te voeren die voor een server van AEM Forms worden gevormd, zie de Wederzijdse sectie van de Authentificatie in [ de Hulp van de Werkbench van AEM Forms ](https://www.adobe.com/go/learn_aemforms_workbench_65).
+Voor instructies op hoe te om certificaten in JVM (de Virtuele Machine van Java) in te voeren die voor een server van AEM Forms worden gevormd, zie de Wederzijdse sectie van de Authentificatie in [&#x200B; de Hulp van de Werkbench van AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL-omleiding configureren {#configuring-ssl-redirect}
 

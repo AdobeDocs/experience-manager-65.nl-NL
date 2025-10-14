@@ -99,7 +99,7 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
 1. AEM Forms-app ontwikkelen en uitvoeren op iOS-apparaat of iOS-simulator.
 
-   Voor details bij het bouwen van app voor iOS, zie [ Opstelling het Xcode- project en bouwt iOS app ](/help/forms/using/setup-xcode-project-build-installer.md).
+   Voor details bij het bouwen van app voor iOS, zie [&#x200B; Opstelling het Xcode- project en bouwt iOS app &#x200B;](/help/forms/using/setup-xcode-project-build-installer.md).
 
 ### Voor Android {#for-android-1}
 
@@ -110,7 +110,7 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 1. Werk de waarde voor de toets `app_name` bij.
 1. Maak de AEM Forms-app opnieuw.
 
-   Voor details bij de bouw van app voor Android, zie [ Opstelling het project van de Verduistering en bouwt Android app ](/help/forms/using/setup-eclipse-project-build-installer.md).
+   Voor details bij de bouw van app voor Android, zie [&#x200B; Opstelling het project van de Verduistering en bouwt Android app &#x200B;](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 ### Voor Windows {#for-windows-1}
 
@@ -121,7 +121,7 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 1. Werk de waarde in de tag `<name>...</name>` bij.
 1. Maak de AEM Forms-app opnieuw.
 
-   Voor details bij de bouw van app voor Vensters, zie [ Opstelling het project van Visual Studio en bouw Vensters app ](/help/forms/using/setup-visual-studio-project-build-installer.md).
+   Voor details bij de bouw van app voor Vensters, zie [&#x200B; Opstelling het project van Visual Studio en bouw Vensters app &#x200B;](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
 ## Afbeeldingen op de aanmeldingspagina aanpassen {#customizing-images-on-the-login-page}
 

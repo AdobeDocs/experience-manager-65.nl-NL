@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Exporteren van ervaringsfragmenten naar Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
-U kunt [ Fragmenten van de Ervaring ](/help/sites-authoring/experience-fragments.md) uitvoeren, die in Adobe Experience Manager (AEM), aan Adobe Target (Doel) worden gecreeerd. Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om, ervaringen op schaal te testen en te personaliseren.
+U kunt [&#x200B; Fragmenten van de Ervaring &#x200B;](/help/sites-authoring/experience-fragments.md) uitvoeren, die in Adobe Experience Manager (AEM), aan Adobe Target (Doel) worden gecreeerd. Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om, ervaringen op schaal te testen en te personaliseren.
 
 Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van de Ervaring naar Adobe Target:
 
@@ -27,13 +27,13 @@ Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van d
 * JSON: ondersteuning voor levering van inhoud zonder kop
 * HTML en JSON
 
-AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit wordt gedaan gebruikend Adobe Developer Console, waarvoor AEM [ met Adobe Target moet worden geïntegreerd gebruikend IMS ](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit wordt gedaan gebruikend Adobe Developer Console, waarvoor AEM [&#x200B; met Adobe Target moet worden geïntegreerd gebruikend IMS &#x200B;](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 
 >[!NOTE]
 >
->[ IMS de integratie wordt nu gevormd met S2S OAuth ](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>[&#x200B; IMS de integratie wordt nu gevormd met S2S OAuth &#x200B;](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->De vorige configuraties werden gemaakt met [ geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console ](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
+>De vorige configuraties werden gemaakt met [&#x200B; geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console &#x200B;](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
 
 >[!NOTE]
 >
@@ -47,27 +47,27 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 >
 >Zie ook voor meer informatie:
 >
->* [ de ontwikkeling van Adobe Target ](https://developers.adobetarget.com/)
->* [ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
+>* [&#x200B; de ontwikkeling van Adobe Target &#x200B;](https://developers.adobetarget.com/)
+>* [&#x200B; Componenten van de Kern - de Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
 >
 
 ## Vereisten {#prerequisites}
 
 Er zijn verschillende acties vereist:
 
-1. U moet [ AEM met Adobe Target integreren gebruikend IMS ](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+1. U moet [&#x200B; AEM met Adobe Target integreren gebruikend IMS &#x200B;](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 
    >[!NOTE]
    >
-   >[ IMS de integratie wordt nu gevormd met S2S OAut ](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >[&#x200B; IMS de integratie wordt nu gevormd met S2S OAut &#x200B;](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >De vorige configuraties werden gemaakt met [ geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console ](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
+   >De vorige configuraties werden gemaakt met [&#x200B; geloofsbrieven JWT die nu onderworpen aan verval in Adobe Developer Console &#x200B;](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md) zijn.
 
-1. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u [ de AEM Verbinding Externalzer ](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteursinstantie vormen om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
+1. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u [&#x200B; de AEM Verbinding Externalzer &#x200B;](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteursinstantie vormen om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]
    >
-   >Voor verbinding die niet door het gebrek herschrijft, is de [ Verstrekker van de Verbinding van het Fragment van de Ervaring Rewriter ](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) beschikbaar. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
+   >Voor verbinding die niet door het gebrek herschrijft, is de [&#x200B; Verstrekker van de Verbinding van het Fragment van de Ervaring Rewriter &#x200B;](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) beschikbaar. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
 
 ## Cloudconfiguratie toevoegen {#add-the-cloud-configuration}
 
@@ -100,7 +100,7 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >Zie de kerncomponent:
    >
-   >[ Componenten van de Kern - de Fragmenten van de Ervaring ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
+   >[&#x200B; Componenten van de Kern - de Fragmenten van de Ervaring &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=nl-NL)
 
    Onder **Adobe Target** uitgezocht:
 
@@ -113,13 +113,13 @@ De vereiste opties kunnen in **Eigenschappen van de Pagina** van de vereiste oms
    >
    >Het ExternalAlizer-domein is optioneel.
    >
-   >AEM wordt ExternalAlizer gevormd wanneer u de uitgevoerde inhoud aan specifiek wilt richten ** domein publiceren. Voor meer details, zie [ Vormend de AEM Verbinding Externalzer ](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >AEM wordt ExternalAlizer gevormd wanneer u de uitgevoerde inhoud aan specifiek wilt richten ** domein publiceren. Voor meer details, zie [&#x200B; Vormend de AEM Verbinding Externalzer &#x200B;](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    >Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 
    Bijvoorbeeld voor een map:
 
-   ![ Omslag - Cloud Servicen ](assets/xf-target-integration-01.png " Omslag - Cloud Servicen ")
+   ![&#x200B; Omslag - Cloud Servicen &#x200B;](assets/xf-target-integration-01.png " Omslag - Cloud Servicen ")
 
 1. **sparen &amp; sluit**.
 
@@ -158,7 +158,7 @@ Een ervaringsfragment van AEM naar doel exporteren (nadat u de Cloud-configurati
 
    >[!NOTE]
    >
-   >[ de Diverse details ](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) van de uitvoer kunnen in **Mening van de Lijst** van de console en **Eigenschappen** worden gezien.
+   >[&#x200B; de Diverse details &#x200B;](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) van de uitvoer kunnen in **Mening van de Lijst** van de console en **Eigenschappen** worden gezien.
 
    >[!NOTE]
    >
@@ -166,11 +166,11 @@ Een ervaringsfragment van AEM naar doel exporteren (nadat u de Cloud-configurati
 
 >[!NOTE]
 >
->Alternatief, kunt u de uitvoer van de paginaredacteur uitvoeren, gebruikend vergelijkbare bevelen in het [ menu van de Informatie van de Pagina ](/help/sites-authoring/author-environment-tools.md#page-information).
+>Alternatief, kunt u de uitvoer van de paginaredacteur uitvoeren, gebruikend vergelijkbare bevelen in het [&#x200B; menu van de Informatie van de Pagina &#x200B;](/help/sites-authoring/author-environment-tools.md#page-information).
 
 ## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Bekijk de [ specifieke documentatie van het Doel ](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL) om over te leren wat u daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het Experience Fragment weergegeven op de pagina Offers in Adobe Target. Bekijk de [&#x200B; specifieke documentatie van het Doel &#x200B;](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=nl-NL) om over te leren wat u daar kunt bereiken.
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ Om dergelijke situaties te voorkomen:
 
 De Fragmenten van de ervaring bevatten volledige HTML- markeringen en alle noodzakelijke Bibliotheken van de Cliënt (CSS/JS) om het fragment precies terug te geven aangezien het door de Inhoudsauteur van het Fragment van de Ervaring werd gecreeerd. Dit is bijontwerp.
 
-Wanneer u een Experience Fragment-aanbieding met Adobe Target gebruikt op een pagina die door AEM wordt geleverd, bevat de doelpagina al alle benodigde clientbibliotheken. Bovendien is vreemde html in de Aanbieding van het Fragment van de Ervaring niet nodig één van beide (zie [ Overwegingen ](#considerations)).
+Wanneer u een Experience Fragment-aanbieding met Adobe Target gebruikt op een pagina die door AEM wordt geleverd, bevat de doelpagina al alle benodigde clientbibliotheken. Bovendien is vreemde html in de Aanbieding van het Fragment van de Ervaring niet nodig één van beide (zie [&#x200B; Overwegingen &#x200B;](#considerations)).
 
 Hier volgt een pseudo-voorbeeld van de HTML in een Experience Fragment-aanbieding:
 
@@ -225,7 +225,7 @@ De kiezer van `nocloudconfigs` wordt gedefinieerd met HTML en kan worden bedekt 
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-De `atoffer` selecteur wordt toegepast post-verwerking gebruikend [ het Schipen Rewriter ](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Of kan worden gebruikt om de Bibliotheken van de Cliënt te verwijderen.
+De `atoffer` selecteur wordt toegepast post-verwerking gebruikend [&#x200B; het Schipen Rewriter &#x200B;](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Of kan worden gebruikt om de Bibliotheken van de Cliënt te verwijderen.
 
 ### Voorbeeld {#example}
 
@@ -233,11 +233,11 @@ Laten we hier illustreren hoe u dit kunt doen met `nocloudconfigs` .
 
 >[!NOTE]
 >
->Zie [ Bewerkbare Malplaatjes ](/help/sites-developing/templates.md#editable-templates) voor verdere details.
+>Zie [&#x200B; Bewerkbare Malplaatjes &#x200B;](/help/sites-developing/templates.md#editable-templates) voor verdere details.
 
 #### Bedekkingen {#overlays}
 
-In dit bijzondere voorbeeld, zullen de [ bekledingen ](/help/sites-developing/overlays.md) die worden omvat de Bibliotheken van de Cliënt *en* de vreemde html verwijderen. Aangenomen wordt dat u al het Sjabloontype voor fragmenten uit ervaring hebt gemaakt. De volgende bestanden moeten worden gekopieerd uit `/libs/cq/experience-fragments/components/xfpage/` :
+In dit bijzondere voorbeeld, zullen de [&#x200B; bekledingen &#x200B;](/help/sites-developing/overlays.md) die worden omvat de Bibliotheken van de Cliënt *en* de vreemde html verwijderen. Aangenomen wordt dat u al het Sjabloontype voor fragmenten uit ervaring hebt gemaakt. De volgende bestanden moeten worden gekopieerd uit `/libs/cq/experience-fragments/components/xfpage/` :
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
@@ -247,21 +247,21 @@ In dit bijzondere voorbeeld, zullen de [ bekledingen ](/help/sites-developing/ov
 
 In dit voorbeeld is dit de volgende structuur:
 
-![ malplaatje-Type Bedekkingen ](assets/xf-target-integration-02.png " malplaatje-Type Bedekkingen ")
+![&#x200B; malplaatje-Type Bedekkingen &#x200B;](assets/xf-target-integration-02.png " malplaatje-Type Bedekkingen ")
 
 De inhoud van deze bestanden is als volgt:
 
 * `body.nocloudconfigs.html`
 
-  ![ body.nocloudconfigs.html ](assets/xf-target-integration-03.png " body.nocloudconfigs.html ")
+  ![&#x200B; body.nocloudconfigs.html &#x200B;](assets/xf-target-integration-03.png " body.nocloudconfigs.html ")
 
 * `head.nocloudconfigs.html`
 
-  ![ head.nocloudconfigs.html ](assets/xf-target-integration-04.png " head.nocloudconfigs.html ")
+  ![&#x200B; head.nocloudconfigs.html &#x200B;](assets/xf-target-integration-04.png " head.nocloudconfigs.html ")
 
 * `nocloudconfigs.html`
 
-  ![ nocloudconfigs.html ](assets/xf-target-integration-05.png " nocloudconfigs.html ")
+  ![&#x200B; nocloudconfigs.html &#x200B;](assets/xf-target-integration-05.png " nocloudconfigs.html ")
 
 >[!NOTE]
 >

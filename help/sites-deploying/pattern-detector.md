@@ -30,7 +30,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 ## Instellen {#how-to-set-up}
 
-De Detector van het Patroon wordt afzonderlijk vrijgegeven als a [ één pakket ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) werkend aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. Het kan worden geïnstalleerd gebruikend de [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
+De Detector van het Patroon wordt afzonderlijk vrijgegeven als a [&#x200B; één pakket &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) werkend aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. Het kan worden geïnstalleerd gebruikend de [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md).
 
 ## Hoe wordt het gebruikt {#how-to-use}
 
@@ -50,7 +50,7 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
 1. Ga naar de AEM Console van het Web door aan *https://serveraddress:serverport/system/console/configMgr* te doorbladeren
 1. Selecteer **Status - de Detector van het Patroon** zoals aangetoond in het hieronder beeld:
 
-   ![ screenshot-2018-2-5pattern-detector ](assets/screenshot-2018-2-5pattern-detector.png)
+   ![&#x200B; screenshot-2018-2-5pattern-detector &#x200B;](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **via een reactieve die tekst of regelmatige interface JSON** wordt gebaseerd
 * **Via een reactieve JSON-lijninterface, &#x200B;** dat een afzonderlijk JSON-document in elke regel genereert.
@@ -98,7 +98,7 @@ Dit resulteert in de volgende uitvoer:
 
 ## De JSON-interface afhandelen {#handling-the-json-interface}
 
-Op dezelfde manier kan JSON worden verwerkt gebruikend het [ jq hulpmiddel ](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
+Op dezelfde manier kan JSON worden verwerkt gebruikend het [&#x200B; jq hulpmiddel &#x200B;](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'

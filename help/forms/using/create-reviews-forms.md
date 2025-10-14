@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Revisies maken en beheren op formulieren{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 ## Controleren {#review}
@@ -32,7 +32,7 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
 ## Een revisie instellen {#setting-up-a-review}
 
 1. Navigeer naar de browser met formulieren en selecteer een formulier dat u wilt bekijken.
-1. Als de Vorm geen overzicht lopend heeft, verschijnt het a **Overzicht van het Begin** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram in de bar van de Actie. Klik het **Overzicht van het Begin** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram.
+1. Als de Vorm geen overzicht lopend heeft, verschijnt het a **Overzicht van het Begin** ![&#x200B; aem6forms_review_chat_comment &#x200B;](assets/aem6forms_review_chat_comment.png) pictogram in de bar van de Actie. Klik het **Overzicht van het Begin** ![&#x200B; aem6forms_review_chat_comment &#x200B;](assets/aem6forms_review_chat_comment.png) pictogram.
 1. Voer de volgende gegevens in:
 
    * **Titel**: Verplicht, kan alfanumerieke karakters, koppelteken, en onderstrepingsteken bevatten.
@@ -54,7 +54,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 1. Er wordt een nieuwe revisietaak gemaakt en toegewezen aan de geselecteerde revisor.
 1. Aan alle revisoren wordt een controletaak toegewezen. De taak wordt weergegeven in de sectie Meldingen. Een revisor kan op een melding klikken of naar het Postvak In gaan om de taak te bekijken. Een revisor kan op deze knop klikken om de revisietaak te openen, het formulier weer te geven en opmerkingen toe te voegen.
 
-   ![ Waarschuwing van het Bericht van de Recensent ](assets/review-notification-img.png)
+   ![&#x200B; Waarschuwing van het Bericht van de Recensent &#x200B;](assets/review-notification-img.png)
 
    Waarschuwing revisormelding
 
@@ -69,9 +69,9 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 
 1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
 
-1. Als een vorm een overzicht in uitvoering heeft en u initiator van het overzicht bent, a **beheert revisie** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogrammen verschijnt in de bar van de Actie. Alleen revisieaanvrager kan de revisie beheren (Bijwerken/beëindigen).
+1. Als een vorm een overzicht in uitvoering heeft en u initiator van het overzicht bent, a **beheert revisie** ![&#x200B; aem6forms_review_chat_comment &#x200B;](assets/aem6forms_review_chat_comment.png) pictogrammen verschijnt in de bar van de Actie. Alleen revisieaanvrager kan de revisie beheren (Bijwerken/beëindigen).
 
-   Klik **leiden het Overzicht** ![ aem6forms_review_chat_comment ](assets/aem6forms_review_chat_comment.png) pictogram.
+   Klik **leiden het Overzicht** ![&#x200B; aem6forms_review_chat_comment &#x200B;](assets/aem6forms_review_chat_comment.png) pictogram.
 
    Voor andere gebruikers dan de aanvrager is het pictogram Revisie beheren uitgeschakeld.
 
@@ -96,7 +96,7 @@ Deze sectie beschrijft wat op **Update/Eind van het Overzicht** gebeurt:
 
 1. Als een revisor wordt verwijderd:
 
-   ![ Verwijderend een recensent ](assets/removeduser.png)
+   ![&#x200B; Verwijderend een recensent &#x200B;](assets/removeduser.png)
 
    Een revisor verwijderen
 
@@ -105,7 +105,7 @@ Deze sectie beschrijft wat op **Update/Eind van het Overzicht** gebeurt:
 
 1. Als een controleur wordt toegevoegd:
 
-   ![ Toevoegend een recensent ](assets/addedreviewer.png)
+   ![&#x200B; Toevoegend een recensent &#x200B;](assets/addedreviewer.png)
 
    Een revisor toevoegen
 
@@ -118,4 +118,4 @@ Deze sectie beschrijft wat op **Update/Eind van het Overzicht** gebeurt:
    1. **Initiator**: De taak die aan de initiatiefnemer van het Overzicht wordt toegewezen is duidelijk volledig. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **allen**: De revisie verschijnt in de Vorige sectie van Revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
 
-   ![ volledige overzicht ](assets/review-complete-imgg.png)
+   ![&#x200B; volledige overzicht &#x200B;](assets/review-complete-imgg.png)

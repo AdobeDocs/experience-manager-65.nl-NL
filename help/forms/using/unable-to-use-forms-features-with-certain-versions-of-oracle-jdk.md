@@ -29,9 +29,9 @@ De gebruiker ontmoet de volgende uitzondering:
 
 De uitzondering treedt op wanneer u Experience Manager Forms uitvoert met de versie van Oracle JDK (Java Development Kit) die hoger is dan of gelijk is aan de volgende versies:
 
-* [ JDK7u341 ](https://www.oracle.com/java/technologies/javase/7u341-relnotes.html)
-* [ JDK8u331 ](https://www.oracle.com/java/technologies/javase/8u331-relnotes.html)
-* [ JDK11u15 ](https://www.oracle.com/java/technologies/javase/11-0-15-relnotes.html)
+* [&#x200B; JDK7u341 &#x200B;](https://www.oracle.com/java/technologies/javase/7u341-relnotes.html)
+* [&#x200B; JDK8u331 &#x200B;](https://www.oracle.com/java/technologies/javase/8u331-relnotes.html)
+* [&#x200B; JDK11u15 &#x200B;](https://www.oracle.com/java/technologies/javase/11-0-15-relnotes.html)
 
 Bovengenoemde en latere versies van Java bevatten nieuwe XML-verwerkingslimieten in de JVM (Java Virtual Machine), waardoor bepaalde Forms-specifieke bewerkingen mislukken.
 

@@ -27,7 +27,7 @@ U kunt standaard beginnen SSL/TLS te configureren door te klikken op het betreff
 
 In de lijst, selecteer en open **vorm HTTPS** alarm:
 
-![ chlimage_1-103 ](assets/chlimage_1-103.png)
+![&#x200B; chlimage_1-103 &#x200B;](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -37,19 +37,19 @@ Een de dienstgebruiker riep **ssl-dienst** is gecreeerd voor deze eigenschap. Zo
 
 1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de geloofsbrieven voor de **ssl-dienst** belangrijkste opslag van de systeemgebruiker die de privé sleutel en vertrouwensopslag voor de luisteraar HTTPS zal bevatten.
 
-   ![ chlimage_1-104 ](assets/chlimage_1-104.png)
+   ![&#x200B; chlimage_1-104 &#x200B;](assets/chlimage_1-104.png)
 
 1. Zodra u de geloofsbrieven ingaat, klik **daarna** in de hogere juiste hoek van de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
 
-   ![ chlimage_1-105 ](assets/chlimage_1-105.png)
+   ![&#x200B; chlimage_1-105 &#x200B;](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >Voor info over hoe te om een privé sleutel en een certificaat te produceren om met de tovenaar te gebruiken, zie [ deze procedure ](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
+   >Voor info over hoe te om een privé sleutel en een certificaat te produceren om met de tovenaar te gebruiken, zie [&#x200B; deze procedure &#x200B;](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
 
 1. Geef ten slotte de hostnaam HTTPS en de TCP-poort voor de HTTPS-listener op.
 
-   ![ screen_shot_2018-07-25at31658pm ](assets/screen_shot_2018-07-25at31658pm.png)
+   ![&#x200B; screen_shot_2018-07-25at31658pm &#x200B;](assets/screen_shot_2018-07-25at31658pm.png)
 
 ## SSL/TLS standaard automatiseren {#automating-ssl-tls-by-default}
 
@@ -195,7 +195,7 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
 
 >[!NOTE]
 >
->Zie [ Gebruikend cURL met AEM ](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
+>Zie [&#x200B; Gebruikend cURL met AEM &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
 U kunt de SSL/TLS-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
@@ -237,7 +237,7 @@ U kunt de server een certificaatketen sturen door de parameter certificateFile a
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
 Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer de **1&rbrace; ingangen van het Toetsenarchief &lbrace;van:
-[ http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)**
+[&#x200B; http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)**
 
 ### Een TLS 1.3-verbinding inschakelen {#enabling-tls-connection}
 

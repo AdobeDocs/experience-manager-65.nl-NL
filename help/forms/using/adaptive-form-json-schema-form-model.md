@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Aangepaste formulieren maken met JSON-schema {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -28,11 +28,11 @@ ht-degree: 0%
 Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als formuliermodel is basiskennis van JSON-schema vereist. Het wordt aanbevolen de volgende inhoud vóór dit artikel te lezen.
 
 * [Een adaptief formulier maken](creating-adaptive-form.md)
-* [ JSON Schema ](https://json-schema.org/)
+* [&#x200B; JSON Schema &#x200B;](https://json-schema.org/)
 
 ## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] ondersteunt het maken van een adaptief formulier met een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het Schema JSON u gebruikt zou met [ v4 specificaties ](https://json-schema.org/draft-04/schema) volgzaam moeten zijn.
+[!DNL Adobe Experience Manager Forms] ondersteunt het maken van een adaptief formulier met een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het Schema JSON u gebruikt zou met [&#x200B; v4 specificaties &#x200B;](https://json-schema.org/draft-04/schema) volgzaam moeten zijn.
 
 De belangrijkste eigenschappen van het gebruiken van een Schema JSON zijn:
 
@@ -365,7 +365,7 @@ U kunt **gebruiken aem:afProperties** bezit om het gebied van het Schema van JSO
 
 ## Scripts of expressies configureren voor formulierobjecten  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt vormvoorwerpen pre-vormen om [ een uitdrukking ](adaptive-form-expressions.md) op een vormgebeurtenis te evalueren.
+JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt vormvoorwerpen pre-vormen om [&#x200B; een uitdrukking &#x200B;](adaptive-form-expressions.md) op een vormgebeurtenis te evalueren.
 
 Met de eigenschap aaem:afproperties kunt u aangepaste formulierexpressies of scripts vooraf configureren voor adaptieve formuliercomponenten. Wanneer bijvoorbeeld de gebeurtenis initialize wordt geactiveerd, stelt de onderstaande code de waarde van het telefoonveld in en drukt een waarde af op het logbestand:
 
@@ -385,7 +385,7 @@ Met de eigenschap aaem:afproperties kunt u aangepaste formulierexpressies of scr
 }
 ```
 
-U zou een lid van de [ vorm-macht-gebruikersgroep ](forms-groups-privileges-tasks.md) moeten zijn om manuscripten of uitdrukkingen voor vormvoorwerp te vormen. In de onderstaande tabel staan alle scriptgebeurtenissen die worden ondersteund voor een adaptieve formuliercomponent.
+U zou een lid van de [&#x200B; vorm-macht-gebruikersgroep &#x200B;](forms-groups-privileges-tasks.md) moeten zijn om manuscripten of uitdrukkingen voor vormvoorwerp te vormen. In de onderstaande tabel staan alle scriptgebeurtenissen die worden ondersteund voor een adaptieve formuliercomponent.
 
 <table>
  <tbody>
@@ -590,7 +590,7 @@ U zou een lid van de [ vorm-macht-gebruikersgroep ](forms-groups-privileges-task
  </tbody>
 </table>
 
-Sommige voorbeelden van het gebruik van gebeurtenissen in een JSON verbergen een gebied bij initialize gebeurtenis en vormen waarde van een ander gebied bij waarde begaan gebeurtenis. Voor gedetailleerde informatie over het creëren van uitdrukkingen voor de manuscriptgebeurtenissen, zie [ Aangepaste Uitdrukkingen van de Vorm ](adaptive-form-expressions.md).
+Sommige voorbeelden van het gebruik van gebeurtenissen in een JSON verbergen een gebied bij initialize gebeurtenis en vormen waarde van een ander gebied bij waarde begaan gebeurtenis. Voor gedetailleerde informatie over het creëren van uitdrukkingen voor de manuscriptgebeurtenissen, zie [&#x200B; Aangepaste Uitdrukkingen van de Vorm &#x200B;](adaptive-form-expressions.md).
 
 Hier volgt een voorbeeld van de JSON-code voor eerder vermelde voorbeelden.
 
@@ -741,7 +741,7 @@ Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve F
 1. Schakel het selectievakje **[!UICONTROL Generate Schema Compliant Data]** in.
 1. Sla de instellingen op.
 
-![ adaptieve vorm en interactieve configuratie van het communicatieWebkanaal ](/help/forms/using/assets/af-ic-web-channel-configuration.png)
+![&#x200B; adaptieve vorm en interactieve configuratie van het communicatieWebkanaal &#x200B;](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Niet-ondersteunde constructies  {#non-supported-constructs}
 

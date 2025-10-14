@@ -26,7 +26,7 @@ Wanneer u AEM gebruikt, kunt u een groot aantal verschillende typen inhoud beher
 >
 >Nochtans, {de malplaatjes van 0} Dashboard [&#128279;](#creating-a-dashboard-template) kunnen worden gebruikt om gemeenschappelijke configuratie en lay-out te delen Dashboard.
 
-![ chlimage_1-22 ](assets/chlimage_1-22.jpeg)
+![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22.jpeg)
 
 ## Dashboards beheren {#administering-dashboards}
 
@@ -66,11 +66,11 @@ Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud van
 
 ### Overzicht {#overview}
 
-De componenten van het dashboard zijn niets meer dan regelmatige [ AEM componenten ](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
+De componenten van het dashboard zijn niets meer dan regelmatige [&#x200B; AEM componenten &#x200B;](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
 
 ### Webanalytische rapportagecomponenten {#web-analytics-reporting-components}
 
-AEM schepen met een reeks componenten die veelvoudige metriek van uw [ SiteCatalyst ](/help/sites-administering/adobeanalytics.md) gegevens teruggeven. Die componenten zijn vermeld in de Sidekick onder de **sectie van het dashboard**.
+AEM schepen met een reeks componenten die veelvoudige metriek van uw [&#x200B; SiteCatalyst &#x200B;](/help/sites-administering/adobeanalytics.md) gegevens teruggeven. Die componenten zijn vermeld in de Sidekick onder de **sectie van het dashboard**.
 
 Elke rapportcomponent bevat ten minste drie tabbladen:
 
@@ -109,7 +109,7 @@ Elke component definieert ook specifieke instellingen.
 
 #### Rapport overuren {#overtime-report}
 
-![ chlimage_1-26 ](assets/chlimage_1-26a.png)
+![&#x200B; chlimage_1-26 &#x200B;](assets/chlimage_1-26a.png)
 
 **Eenheid van de Tijd van de Korreligheid van de Datum van 0&rbrace; &lbrace;(bijvoorbeeld, dag, uur).**
 
@@ -119,7 +119,7 @@ Elke component definieert ook specifieke instellingen.
 
 #### Rapport met gerangschikte lijst {#ranked-list-report}
 
-![ chlimage_1-27 ](assets/chlimage_1-27a.png)
+![&#x200B; chlimage_1-27 &#x200B;](assets/chlimage_1-27a.png)
 
 **Elementen** het element dat de metrieke gegevens in de grafiek opsplitst.
 
@@ -129,7 +129,7 @@ Elke component definieert ook specifieke instellingen.
 
 #### Geregistreerd rapport {#ranked-report}
 
-![ chlimage_1-28 ](assets/chlimage_1-28a.png)
+![&#x200B; chlimage_1-28 &#x200B;](assets/chlimage_1-28a.png)
 
 **Metriek** de gebeurtenis u wilt tonen.
 
@@ -139,13 +139,13 @@ Elke component definieert ook specifieke instellingen.
 
 Deze component geeft een grafiek weer met de meer bezochte sectie van een website volgens de volgende configuratie.
 
-![ chlimage_1-29 ](assets/chlimage_1-29a.png)
+![&#x200B; chlimage_1-29 &#x200B;](assets/chlimage_1-29a.png)
 
 **Nr. van hoogste punten** Aantal sectie die door in het rapport wordt getoond.
 
 #### Trend Report {#trended-report}
 
-![ chlimage_1-30 ](assets/chlimage_1-30a.png)
+![&#x200B; chlimage_1-30 &#x200B;](assets/chlimage_1-30a.png)
 
 **Eenheid van de Tijd van de Korreligheid van de Datum van 0&rbrace; &lbrace;(bijvoorbeeld, dag, uur).**
 
@@ -165,7 +165,7 @@ Er is een standaardcomponentengroep `Dashboard` die analytische rapportcomponent
 
 Een sjabloon definieert de standaardinhoud van een nieuw dashboard. U kunt verschillende sjablonen gebruiken voor het maken van verschillende typen dashboards.
 
-Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden opgeslagen onder `/libs/cq/dashboards/templates/` . Zie [ Creërend het Malplaatje van de Inhoud ](/help/sites-developing/website.md#creating-the-contentpage-template) sectie.
+Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden opgeslagen onder `/libs/cq/dashboards/templates/` . Zie [&#x200B; Creërend het Malplaatje van de Inhoud &#x200B;](/help/sites-developing/website.md#creating-the-contentpage-template) sectie.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden op
 
 Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone AEM. Deze sectie beschrijft een voorbeeld van een component die hoogste 10 van contribuanten toont.
 
-![ chlimage_1-31 ](assets/chlimage_1-31a.png)
+![&#x200B; chlimage_1-31 &#x200B;](assets/chlimage_1-31a.png)
 
 De bovenste auteurcomponenten worden opgeslagen in de bewaarplaats bij `/apps/geometrixx-outdoors/components/reporting` en bestaan uit:
 
@@ -183,11 +183,11 @@ De bovenste auteurcomponenten worden opgeslagen in de bewaarplaats bij `/apps/ge
 
 1. een client-side bibliotheek met één `js` -bestand dat de gegevens ophaalt en bestelt, vult vervolgens de tijdelijke aanduiding `html` .
 
-![ chlimage_1-32 ](assets/chlimage_1-32a.png)
+![&#x200B; chlimage_1-32 &#x200B;](assets/chlimage_1-32a.png)
 
-Het volgende dossier van JavaScript wordt bepaald in de `geout.reporting.topauthors` [ Bibliotheek van de Cliënt ](/help/sites-developing/clientlibs.md) als kind van de component zelf.
+Het volgende dossier van JavaScript wordt bepaald in de `geout.reporting.topauthors` [&#x200B; Bibliotheek van de Cliënt &#x200B;](/help/sites-developing/clientlibs.md) als kind van de component zelf.
 
-[ QueryBuilder ](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de bewaarplaats te vragen om `cq:AuditEvent` knopen te lezen. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
+[&#x200B; QueryBuilder &#x200B;](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de bewaarplaats te vragen om `cq:AuditEvent` knopen te lezen. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
 
 #### top_authors.js {#top-authors-js}
 

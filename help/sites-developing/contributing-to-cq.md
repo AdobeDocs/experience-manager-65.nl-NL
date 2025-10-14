@@ -32,19 +32,19 @@ Omdat de paginadynamiek en de interactieve inhoud zeer belangrijk voor de ervari
 
 Op het hoogste niveau zou u een stevig inzicht in moeten hebben:
 
-* het [ HTTP/1.1 protocol ](https://www.ietf.org/rfc/rfc2616.txt)
-* HTML (bij voorkeur [ HTML ](https://html.spec.whatwg.org/))
+* het [&#x200B; HTTP/1.1 protocol &#x200B;](https://www.ietf.org/rfc/rfc2616.txt)
+* HTML (bij voorkeur [&#x200B; HTML &#x200B;](https://html.spec.whatwg.org/))
 * Cascading Style Sheets
 * Extensible Markup Language (XML)
 * Asynchrone JavaScript- en XML-ontwerppatronen (AJAX)
 * JavaScript Object Notation (JSON)
 * het Document Object Model
 * Stateful versus stateless interacties
-* [ Uniform Middel Identifiers ](https://www.ietf.org/rfc/rfc2396.txt)
+* [&#x200B; Uniform Middel Identifiers &#x200B;](https://www.ietf.org/rfc/rfc2396.txt)
 * Browsercookies
 * en andere moderne concepten voor webontwikkeling
 
-De technologiestapel van Adobe Experience Manager is gebaseerd op [ Apache Felix ](https://felix.apache.org/documentation/index.html) container OSGI met [ Apache Sling ](https://sling.apache.org/index.html) Webkader en bedt een Bewaarplaats van de Inhoud Java™ ([ JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) in die op [ wordt gebaseerd Apache Jackrabbit ](https://jackrabbit.apache.org/jcr/jcr-api.html). Maak kennis met deze afzonderlijke projecten en met andere open-source-componenten (bijvoorbeeld Apache Lucene) die worden gebruikt in het gebied waar u een bijdrage wilt leveren.
+De technologiestapel van Adobe Experience Manager is gebaseerd op [&#x200B; Apache Felix &#x200B;](https://felix.apache.org/documentation/index.html) container OSGI met [&#x200B; Apache Sling &#x200B;](https://sling.apache.org/index.html) Webkader en bedt een Bewaarplaats van de Inhoud Java™ ([&#x200B; JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) in die op [&#x200B; wordt gebaseerd Apache Jackrabbit &#x200B;](https://jackrabbit.apache.org/jcr/jcr-api.html). Maak kennis met deze afzonderlijke projecten en met andere open-source-componenten (bijvoorbeeld Apache Lucene) die worden gebruikt in het gebied waar u een bijdrage wilt leveren.
 
 ## Tribunale kennis {#tribal-knowledge}
 
@@ -56,7 +56,7 @@ De inhoud bevat niet alleen alle gegevens die de webtoepassing blijvend maakt. D
 
 ### David&#39;s Model {#david-s-model}
 
-Voor het modelleren van inhoud in een Java™ Content Repository is een totaal andere manier van denken nodig dan wat in de softwareindustrie gebruikelijk is voor het modelleren van gegevens in de relationele wereld. Essentiële lezing voor om het even welke nieuwkomer aan inhoudsbeheer de manier JCR is [ Model van David: Een gids voor inhoud modelleren ](https://wiki.apache.org/jackrabbit/DavidsModel).
+Voor het modelleren van inhoud in een Java™ Content Repository is een totaal andere manier van denken nodig dan wat in de softwareindustrie gebruikelijk is voor het modelleren van gegevens in de relationele wereld. Essentiële lezing voor om het even welke nieuwkomer aan inhoudsbeheer de manier JCR is [&#x200B; Model van David: Een gids voor inhoud modelleren &#x200B;](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### RESTfulness {#restfulness}
 
@@ -64,11 +64,11 @@ De REST-benadering is diep verankerd in wat we doen. Dit betekent onder andere d
 
 REST (REpresentational State Transfer) verwijst naar de software architecturale stijl waarop het World Wide Web is gebaseerd. Het beschrijft de belangrijkste elementen die het Web maken werken, en verstrekt zo een reeks principes voor hoe Web-based software zou moeten worden ontworpen. Bij het ontwerpen van een API die via het web moet worden gebruikt, is het daarom verstandig om deze &#39;best practices&#39; te volgen.
 
-Omdat REST de leidende filosofie achter zoveel van wat wij doen is, moet u het van essentieel belang vinden om goed verdraaid te worden in de grondbeginselen van RESTful design. Een goede plaats om te beginnen is met [ Roy Fielding ](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
+Omdat REST de leidende filosofie achter zoveel van wat wij doen is, moet u het van essentieel belang vinden om goed verdraaid te worden in de grondbeginselen van RESTful design. Een goede plaats om te beginnen is met [&#x200B; Roy Fielding &#x200B;](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
 ### Oplossing voor een aanvraag voor verzending {#sling-request-resolution}
 
-Een belangrijk aspect om te begrijpen over AEM is hoe binnenkomende verzoeken betrekking hebben op inhoud en toepassingsgedrag, hoe inhoud is gestructureerd in de inhoudsopslagplaats en waar AEM zoekt naar de toepassingslogica om de aanvraag af te handelen. Leer over Apache [ Sling URL decomposition ](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html) en de manier het de architecturale stijl van het REST en zijn stateless, cacheable, en gelaagde systeembeperkingen afdwingt.
+Een belangrijk aspect om te begrijpen over AEM is hoe binnenkomende verzoeken betrekking hebben op inhoud en toepassingsgedrag, hoe inhoud is gestructureerd in de inhoudsopslagplaats en waar AEM zoekt naar de toepassingslogica om de aanvraag af te handelen. Leer over Apache [&#x200B; Sling URL decomposition &#x200B;](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html) en de manier het de architecturale stijl van het REST en zijn stateless, cacheable, en gelaagde systeembeperkingen afdwingt.
 
 De belangrijkste aspecten die u moet begrijpen van de aanvraagresolutie van Apache Sling zijn hoe aanvragen primair worden toegewezen aan een specifieke bron in de inhoudsopslagplaats, hoe aanvullende eigenschappen van de aanvraag, samen met eigenschappen van deze inhoudsobjecten, bepalen welke toepassingscode wordt aangeroepen om de inhoud te renderen en hoe code in /apps code in /libs overschrijft.
 
@@ -124,7 +124,7 @@ Achterwaartse compatibiliteit moet ook in aanmerking worden genomen met betrekki
 
 **het Groeperen en lading-in evenwicht brengen** - om beschikbaarheid te verhogen en de prestaties van een milieu van de Productie te verbeteren, is het gemeenschappelijk om veelvoudige Instanties van de Auteur en/of van Publish (in Clusters) te combineren, door of hen ter beschikking te stellen aan verschillende groepen gebruikers of door lading-in evenwicht brengend hen achter een configuratie van Dispatcher.
 
-Het is ook mogelijk om veelvoudige instanties van de inhoudsbewaarplaats te combineren om a *high-availability* oplossing te creëren JCR, die dan met uw AEM oplossing kan worden geïntegreerd om bescherming tegen hardware en softwaremislukking te maximaliseren. Zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) voor verdere informatie.
+Het is ook mogelijk om veelvoudige instanties van de inhoudsbewaarplaats te combineren om a *high-availability* oplossing te creëren JCR, die dan met uw AEM oplossing kan worden geïntegreerd om bescherming tegen hardware en softwaremislukking te maximaliseren. Zie [&#x200B; Geadviseerde Inzet &#x200B;](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) voor verdere informatie.
 
 **Component** - in AEM, is een Component een objecten type, instanties waarvan over het algemeen door hen van, bijvoorbeeld, de Sidekick te slepen en te laten vallen kunnen worden gecreeerd. Bijvoorbeeld, buiten-de-dooscomponenten die met AEM worden verschepen omvatten de de Tekst, Titel, Cloud van de Markering, Carousel, Beeld, en componenten van de Lijst, allen beschikbaar bij de Sidekick bij runtime.
 
@@ -142,9 +142,9 @@ In wezen, is JCR een systeem van knopen en eigenschappen, waarin de knopen van a
 
 JCR heeft verscheidene vooraf bepaalde knooptypes en bezitstypes, maar over het algemeen is het typende systeem flexibel, en (inderdaad) één van de sterke punten van JCR is dat het gestructureerde en ongestructureerde inhoud om met gelijk gemak toelaat worden opgeslagen/worden beheerd. Dat wil zeggen dat JCR zeer gestructureerde gegevens kan verwerken, maar ook willekeurige dynamische gegevensstructuren zonder schemabeperkingen kan verwerken.
 
-JavaDoc voor Java™ API van JCR is beschikbaar bij de [ Stichting van de Software van Apache - JCR API ](https://jackrabbit.apache.org/jcr/jcr-api.html).
+JavaDoc voor Java™ API van JCR is beschikbaar bij de [&#x200B; Stichting van de Software van Apache - JCR API &#x200B;](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
-Alvorens te proberen om JavaDoc of de specificatie JCR zelf te lezen, zou u [ deze verklaring op hoog niveau ](/help/sites-developing/the-basics.md#java-content-repository) van JCR kunnen bekijken zoals die door de Diensten van de Ervaring van de Adobe wordt uitgevoerd.
+Alvorens te proberen om JavaDoc of de specificatie JCR zelf te lezen, zou u [&#x200B; deze verklaring op hoog niveau &#x200B;](/help/sites-developing/the-basics.md#java-content-repository) van JCR kunnen bekijken zoals die door de Diensten van de Ervaring van de Adobe wordt uitgevoerd.
 
 **Multisite Manager (MSM)** - De eigenschap MSM van AEM helpt klanten meertalige en multinationale inhoud behandelen, toelatend hen om gecentraliseerde branding met gelokaliseerde inhoud in evenwicht te brengen.
 

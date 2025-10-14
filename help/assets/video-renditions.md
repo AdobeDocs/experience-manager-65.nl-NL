@@ -28,15 +28,15 @@ Experience Manager Assets biedt afspeelondersteuning voor deze uitvoeringen op d
 
 Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en selecteert u het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Renditions]** in de lijst.
 
-![ chlimage_1-478 ](assets/chlimage_1-478.png)
+![&#x200B; chlimage_1-478 &#x200B;](assets/chlimage_1-478.png)
 
 De lijst met video-uitvoeringen wordt weergegeven in het deelvenster **[!UICONTROL Renditions]** .
 
-![ chlimage_1-479 ](assets/chlimage_1-479.png)
+![&#x200B; chlimage_1-479 &#x200B;](assets/chlimage_1-479.png)
 
-Om de volmachtsserver voor DM-Gecodeerde vertoningen te vormen, [ vormen de diensten van de Wolk van Dynamic Media ](config-dynamic.md).
+Om de volmachtsserver voor DM-Gecodeerde vertoningen te vormen, [&#x200B; vormen de diensten van de Wolk van Dynamic Media &#x200B;](config-dynamic.md).
 
-Om videovertoningen met gewenste parameters te produceren, [ creeer een overeenkomstig videoprofiel ](video-profiles.md).
+Om videovertoningen met gewenste parameters te produceren, [&#x200B; creeer een overeenkomstig videoprofiel &#x200B;](video-profiles.md).
 
 Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt u deze videovoorinstelling opnemen in een verwerkingsprofiel en het verwerkingsprofiel toepassen op een map.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -32,13 +32,13 @@ In AEM Forms 6.5 is een thema een AEM clientbibliotheek waarmee u de stijlen (lo
 
 AEM 6.5-omgeving biedt de onderstaande thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
 
-* [ het thema van Canvas ](https://github.com/adobe/aem-forms-theme-canvas)
-* [ WKND thema ](https://github.com/adobe/aem-forms-theme-wknd)
-* [ EASEL thema ](https://github.com/adobe/aem-forms-theme-easel)
-* [ het thema van FSI ](https://github.com/adobe/aem-forms-theme-fsi)
-* [ thema van de Gezondheidszorg ](https://github.com/adobe/aem-forms-theme-healthcare)
-* [ Openbaar thema ](https://github.com/adobe/aem-forms-theme-public)
-* [ het thema van de Productie ](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [&#x200B; het thema van Canvas &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)
+* [&#x200B; WKND thema &#x200B;](https://github.com/adobe/aem-forms-theme-wknd)
+* [&#x200B; EASEL thema &#x200B;](https://github.com/adobe/aem-forms-theme-easel)
+* [&#x200B; het thema van FSI &#x200B;](https://github.com/adobe/aem-forms-theme-fsi)
+* [&#x200B; thema van de Gezondheidszorg &#x200B;](https://github.com/adobe/aem-forms-theme-healthcare)
+* [&#x200B; Openbaar thema &#x200B;](https://github.com/adobe/aem-forms-theme-public)
+* [&#x200B; het thema van de Productie &#x200B;](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Werken met de structuur van de thema&#39;s {#understanding-structure-of-theme}
 
@@ -50,7 +50,7 @@ Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zo
 
 * `src/components`: De CSS-bestanden in deze map zijn ontworpen voor afzonderlijke AEM kerncomponenten. Elke toegewijde map voor een component bevat een `.scss` -bestand waarmee die component in een adaptief formulier wordt geformatteerd. Het bestand `/src/components/button/_button.scss` bevat bijvoorbeeld stijlinformatie voor de component Adaptive Forms Button.
 
-  ![ Structuur van het Thema van Canvas ](/help/forms/using/assets/component-based-theme-folder-structure.png)
+  ![&#x200B; Structuur van het Thema van Canvas &#x200B;](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
 * `src/resources`: deze map bevat statische bestanden, zoals pictogrammen, logo&#39;s en lettertypen. Deze bronnen worden gebruikt om de visuele elementen en het algehele ontwerp van uw thema te verbeteren.
 
@@ -58,13 +58,13 @@ Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zo
 
 AEM Forms 6.5 biedt de onderstaande thema&#39;s voor Core Components based Adaptive Forms.
 
-* [ het thema van Canvas ](https://github.com/adobe/aem-forms-theme-canvas)
-* [ WKND thema ](https://github.com/adobe/aem-forms-theme-wknd)
-* [ EASEL thema ](https://github.com/adobe/aem-forms-theme-easel)
-* [ Openbaar thema ](https://github.com/adobe/aem-forms-theme-public)
-* [ het thema van de Productie ](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [&#x200B; het thema van Canvas &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)
+* [&#x200B; WKND thema &#x200B;](https://github.com/adobe/aem-forms-theme-wknd)
+* [&#x200B; EASEL thema &#x200B;](https://github.com/adobe/aem-forms-theme-easel)
+* [&#x200B; Openbaar thema &#x200B;](https://github.com/adobe/aem-forms-theme-public)
+* [&#x200B; het thema van de Productie &#x200B;](https://github.com/adobe/aem-forms-theme-manufacturing)
 
-U kunt [ om het even welk van deze thema&#39;s aanpassen om een thema ](#customize-a-theme-core-components) tot stand te brengen.
+U kunt [&#x200B; om het even welk van deze thema&#39;s aanpassen om een thema &#x200B;](#customize-a-theme-core-components) tot stand te brengen.
 
 ## Een thema aanpassen {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -77,11 +77,11 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 
 ### Vereisten om een thema aan te passen {#prerequisites}
 
-* [ laat de Aangepaste Componenten van de Kern van Forms ](/help/forms/using/enable-adaptive-forms-core-components.md) voor uw milieu toe.
+* [&#x200B; laat de Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/using/enable-adaptive-forms-core-components.md) voor uw milieu toe.
 
-* Installeer de recentste versie van [ Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een tool voor automatisering van build dat veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
+* Installeer de recentste versie van [&#x200B; Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een tool voor automatisering van build dat veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 
-* Leer hoe te om a [ cliëntbibliotheek in Adobe Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL) tot stand te brengen. AEM biedt clientbibliotheken, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden.
+* Leer hoe te om a [&#x200B; cliëntbibliotheek in Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=nl-NL) tot stand te brengen. AEM biedt clientbibliotheken, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden.
 
 * Installeer een teksteditor zonder opmaak. Bijvoorbeeld Microsoft® Visual Studio Code. Het gebruiken van een gewone tekstredacteur zoals de Code van Microsoft® Visual Studio verstrekt een gebruikersvriendelijk milieu voor het uitgeven en het wijzigen van themadossiers.
 
@@ -89,7 +89,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 
 ### Overwegingen om een thema aan te passen {#consideration}
 
-* Zorg ervoor dat u [ het project gebruikt Archetype om de Aangepaste Componenten van de Kern van Forms ](/help/forms/using/enable-adaptive-forms-core-components.md) op uw milieu toe te laten om uw thema&#39;s aan te passen.
+* Zorg ervoor dat u [&#x200B; het project gebruikt Archetype om de Aangepaste Componenten van de Kern van Forms &#x200B;](/help/forms/using/enable-adaptive-forms-core-components.md) op uw milieu toe te laten om uw thema&#39;s aan te passen.
 
 * Wanneer u een adaptief formulier publiceert, worden de clientbibliotheken niet automatisch gepubliceerd in de Publish-instantie. Zorg ervoor dat u de clientbibliotheek waarnaar wordt verwezen in een adaptief formulier, handmatig publiceert naar uw Publish-omgeving.
 
@@ -100,9 +100,9 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 Het maken of aanpassen van een thema is een proces met meerdere stappen. Voer de stappen in de lijst uit om het thema te maken/aan te passen:
 
 1. [Een thema klonen](#clone-git-repo-of-theme)
-1. [ pas de verschijning van het thema ](#customize-the-theme) aan
-1. [ Klaar het thema voor lokale plaatsing ](#generate-the-clientlib)
-1. [ stel het thema op een lokaal milieu ](#deploy-the-theme-on-a-local-environment) op
+1. [&#x200B; pas de verschijning van het thema &#x200B;](#customize-the-theme) aan
+1. [&#x200B; Klaar het thema voor lokale plaatsing &#x200B;](#generate-the-clientlib)
+1. [&#x200B; stel het thema op een lokaal milieu &#x200B;](#deploy-the-theme-on-a-local-environment) op
 1. [Het thema inzetten in de productieomgeving](#5-deploy-a-theme-on-your-production-environment)
 
 <!--
@@ -115,9 +115,9 @@ De voorbeelden die in het document worden verstrekt zijn gebaseerd op het **&#x2
 
 Kies een van de volgende thema&#39;s om een thema voor op Core Components gebaseerde Adaptieve Forms te klonen:
 
-* [ het thema van Canvas ](https://github.com/adobe/aem-forms-theme-canvas)
-* [ WKND thema ](https://github.com/adobe/aem-forms-theme-wknd)
-* [ EASEL thema ](https://github.com/adobe/aem-forms-theme-easel)
+* [&#x200B; het thema van Canvas &#x200B;](https://github.com/adobe/aem-forms-theme-canvas)
+* [&#x200B; WKND thema &#x200B;](https://github.com/adobe/aem-forms-theme-wknd)
+* [&#x200B; EASEL thema &#x200B;](https://github.com/adobe/aem-forms-theme-easel)
 
 Voer de volgende instructies uit om een thema te klonen:
 
@@ -156,7 +156,7 @@ Het bestand `variable.scss` bevat de algemene variabelen van het thema. Door dez
 1. Open het `<your-theme-sources>/src/site/_variables.scss` -bestand om het te bewerken.
 1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld rood. Om de foutenkleur van rood in blauw te veranderen, verander de code van de kleurenhexuitdraai van de `$error` variabele. Bijvoorbeeld `$error: #196ee5` .
 
-   ![ Voorbeeld: De kleur van de fout die aan blauw wordt geplaatst ](/help/forms/using/assets/theme-level-changes.png)
+   ![&#x200B; Voorbeeld: De kleur van de fout die aan blauw wordt geplaatst &#x200B;](/help/forms/using/assets/theme-level-changes.png)
 
 1. Sla het bestand op en sluit het.
 
@@ -210,10 +210,10 @@ Om een thema in een AEM instantie op te stellen, moet het in een Bibliotheek van
 
    Wanneer de opdracht met succes is uitgevoerd, wordt een clientbibliotheekmap gemaakt op `themerepo\theme-clientlibs\[yourtheme]` .
 
-   ![ De Generatie van de Bibliotheek van de Cliënt ](/help/forms/using/assets/clientlib_created.png)
+   ![&#x200B; De Generatie van de Bibliotheek van de Cliënt &#x200B;](/help/forms/using/assets/clientlib_created.png)
 
 
-   ![ plaats van de Bibliotheek van de Cliënt ](/help/forms/using/assets/adaptiveform.theme.easel.png)
+   ![&#x200B; plaats van de Bibliotheek van de Cliënt &#x200B;](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
 #### 4. Gebruik het thema in een lokale omgeving {#deploy-the-theme-on-a-local-environment}
 
@@ -229,7 +229,7 @@ Voer de volgende stappen uit om het thema in te zetten in uw lokale ontwikkeling
 
    `mvn clean install`
 
-   ![ Bibliotheek van de Cliënt bouwt ](/help/forms/using/assets/mvndeploy.png)
+   ![&#x200B; Bibliotheek van de Cliënt bouwt &#x200B;](/help/forms/using/assets/mvndeploy.png)
 
 <!--
 
@@ -279,7 +279,7 @@ Nadat u het thema hebt getest in uw lokale ontwikkelomgeving, kunt u doorgaan me
 
 Nadat het pakket is geïnstalleerd, is het thema beschikbaar voor selectie.
 
-![ de Bibliotheek van de Cliënt van het Thema ](/help/forms/using/assets/themeclientlibrary.png)
+![&#x200B; de Bibliotheek van de Cliënt van het Thema &#x200B;](/help/forms/using/assets/themeclientlibrary.png)
 
 >[!NOTE]
 >
@@ -344,4 +344,4 @@ Ongebruikte of ongewenste thema&#39;s verwijderen:
 * [Thema&#39;s maken of aanpassen voor adaptieve Forms op basis van Core Components](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Een sjabloon maken voor Adaptief Forms op basis van Core Components](template-editor.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)
+* [&#x200B; de themasjablonen van de Steekproef en modellen van vormgegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)

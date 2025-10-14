@@ -54,7 +54,7 @@ Bij het testen van AEM zijn enkele specifieke details van bijzonder belang:
 
 **Auteur en de Milieu&#39;s van Publish**
 
-Hoewel behandeld in [ Milieu ](/help/sites-developing/the-basics.md#environments), is het de moeite waard het benadrukken van een beslissende factor van AEM betreffende het testen.
+Hoewel behandeld in [&#x200B; Milieu &#x200B;](/help/sites-developing/the-basics.md#environments), is het de moeite waard het benadrukken van een beslissende factor van AEM betreffende het testen.
 
 AEM twee toepassingen:
 

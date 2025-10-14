@@ -34,7 +34,7 @@ De waarde van de eigenschap `categories` die aan deze clientbibliotheek wordt ge
 
 1. Klik **O.K.**
 
-![ toe:voegen-cliënt-bibliotheek ](assets/add-client-library.png)
+![&#x200B; toe:voegen-cliënt-bibliotheek &#x200B;](assets/add-client-library.png)
 
 In het **lusje van Eigenschappen** voor de nieuwe `clientlibs` knoop, ga het **categorieën** bezit in:
 
@@ -53,7 +53,7 @@ Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. 
 1. Ga **Naam in:** `js.txt`
 1. Klik **sparen allen**
 
-![ clientlibs-css ](assets/clientlibs-css.png)
+![&#x200B; clientlibs-css &#x200B;](assets/clientlibs-css.png)
 
 De eerste regel van css.txt en js.txt identificeert de basislocatie van waaruit de volgende lijsten met bestanden moeten worden gevonden.
 
@@ -74,7 +74,7 @@ Maak vervolgens een bestand onder clientlibs met de naam style.css en stel de in
 
 ### SCF-clips insluiten {#embed-scf-clientlibs}
 
-In het **lusje van Eigenschappen** voor de `clientlibs` knoop, ga het bezit van het multi-waardeKoord **in bed** in. Dit sluit de noodzakelijke [ cliënt-zijbibliotheken (clientlibs) voor componenten SCF ](/help/communities/client-customize.md#clientlibs-for-scf) in. Voor deze zelfstudie worden veel van de clientlibs die nodig zijn voor de onderdelen Communities toegevoegd.
+In het **lusje van Eigenschappen** voor de `clientlibs` knoop, ga het bezit van het multi-waardeKoord **in bed** in. Dit sluit de noodzakelijke [&#x200B; cliënt-zijbibliotheken (clientlibs) voor componenten SCF &#x200B;](/help/communities/client-customize.md#clientlibs-for-scf) in. Voor deze zelfstudie worden veel van de clientlibs die nodig zijn voor de onderdelen Communities toegevoegd.
 
 Dit kan al dan niet de gewenste benadering voor een productiesite zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
 
@@ -102,11 +102,11 @@ Klik op **`+`** na elke vermelding om de volgende clientlib-categorieën toe te 
 
 * Klik **sparen allen**
 
-![ scf-clientlibs ](assets/scf-clientlibs.png)
+![&#x200B; scf-clientlibs &#x200B;](assets/scf-clientlibs.png)
 
 Zo wordt `/etc/designs/an-scf-sandbox/clientlibs` nu weergegeven in de opslagplaats:
 
-![ scf-clientlibs-mening ](assets/scf-clientlibs1.png)
+![&#x200B; scf-clientlibs-mening &#x200B;](assets/scf-clientlibs1.png)
 
 ### Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
@@ -114,11 +114,11 @@ Zonder de categorie `apps.an-scf-sandbox` ClientLibraryFolder op de pagina toe t
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
-![ clientlibs-commentaar ](assets/clientlibs-comment.png)
+![&#x200B; clientlibs-commentaar &#x200B;](assets/clientlibs-comment.png)
 
 Zodra apps.an-scf-sandbox clientlibs is opgenomen, wordt de stijl van de SCF-commentaarcomponent weergegeven:
 
-![ clientlibs-commentaar-gestileerde ](assets/clientlibs-comment1.png)
+![&#x200B; clientlibs-commentaar-gestileerde &#x200B;](assets/clientlibs-comment1.png)
 
 De instructie include behoort tot de sectie `head` van het script van `html` . De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`** .
 
@@ -147,19 +147,19 @@ De instructie include behoort tot de sectie `head` van het script van `html` . D
 
 Laad uw website in de browser en controleer of de achtergrond geen blauwe tint heeft.
 
-[ https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
+[&#x200B; https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![ gemeenschap-spel ](assets/community-play.png)
+![&#x200B; gemeenschap-spel &#x200B;](assets/community-play.png)
 
 ### Uw werk tot nu toe opslaan {#saving-your-work-so-far}
 
 Op dit moment bestaat er een minimalistische zandbak. Het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen uw server kunt uitschakelen als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen. Wijzig vervolgens de naam van de map crx-quickstart/ of verwijder deze, schakel de server in, upload en installeer dit opgeslagen pakket en hoef deze basisstappen niet te herhalen.
 
-Dit pakket bestaat op [ creeer een leerprogramma van de Pagina van de Steekproef ](/help/communities/create-sample-page.md) voor hen die niet kunnen wachten binnen te springen en beginnen speel.
+Dit pakket bestaat op [&#x200B; creeer een leerprogramma van de Pagina van de Steekproef &#x200B;](/help/communities/create-sample-page.md) voor hen die niet kunnen wachten binnen te springen en beginnen speel.
 
 Een pakket maken:
 
-* Van CRXDE Lite, klik het [ pictogram van het Pakket ](https://localhost:4502/crx/packmgr/)
+* Van CRXDE Lite, klik het [&#x200B; pictogram van het Pakket &#x200B;](https://localhost:4502/crx/packmgr/)
 * Klik **Create Pakket**
 
    * Pakketnaam: an-scf-sandbox-minimum-pkg

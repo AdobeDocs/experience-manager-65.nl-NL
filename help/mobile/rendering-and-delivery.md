@@ -19,7 +19,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-De inhoud van Adobe Experience Manager (AEM) kan gemakkelijk als [ het Verzenden StandaardServen ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) worden teruggegeven om [ JSON ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere formaten terug te geven.
+De inhoud van Adobe Experience Manager (AEM) kan gemakkelijk als [&#x200B; het Verzenden StandaardServen &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) worden teruggegeven om [&#x200B; JSON &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere formaten terug te geven.
 
 Die uitleveringen buiten de doos lopen normaal gesproken de opslagplaats en retourneren inhoud.
 
@@ -29,7 +29,7 @@ De Standaard Renderers van de Diensten van de inhoud vullen het hiaat tussen uit
 
 Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
-![ chlimage_1-15 ](assets/chlimage_1-15.png)
+![&#x200B; chlimage_1-15 &#x200B;](assets/chlimage_1-15.png)
 
 ## JSON aanvragen {#requesting-json}
 

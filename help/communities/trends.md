@@ -25,7 +25,7 @@ Met de component `Community Activity List` kunt u trending-informatie over posts
 
 In het document wordt beschreven:
 
-* Toevoegend de `Community Activity List` component aan a [ communautaire plaats ](/help/communities/overview.md#community-sites).
+* Toevoegend de `Community Activity List` component aan a [&#x200B; communautaire plaats &#x200B;](/help/communities/overview.md#community-sites).
 
 * Configuration settings for the `Community Activity List` component.
 
@@ -33,7 +33,7 @@ In het document wordt beschreven:
 
 Gegevens voor de `Community Activity List` zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
 
-Zie [ Configuratie Analytics voor de Eigenschappen van Gemeenschappen ](/help/communities/analytics.md).
+Zie [&#x200B; Configuratie Analytics voor de Eigenschappen van Gemeenschappen &#x200B;](/help/communities/analytics.md).
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
@@ -43,17 +43,17 @@ Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![ gemeenschap-activiteit ](assets/community-activity.png)
+![&#x200B; gemeenschap-activiteit &#x200B;](assets/community-activity.png)
 
 ### Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
 
 Selecteer de geplaatste component `Community Activity List` en selecteer vervolgens het pictogram `Configure` zodat u het dialoogvenster Bewerken kunt openen.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Onder het **lusje van Commentaren**, specificeer als en hoe de commentaren voor geupload dossiers verschijnen:
 
-![ eigenschappen ](assets/activity-list-properties.png)
+![&#x200B; eigenschappen &#x200B;](assets/activity-list-properties.png)
 
 * **Type**
 
@@ -120,4 +120,4 @@ Standaard is ingeschakeld.
 
 **Trending Content** config: Type = Inhoud, Type van Activiteit = Post
 
-![ componenten ](assets/activity-list-components.png)
+![&#x200B; componenten &#x200B;](assets/activity-list-components.png)

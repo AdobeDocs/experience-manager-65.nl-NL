@@ -37,11 +37,11 @@ U kunt een voorbeeld-CSS-bestand ophalen met de FormsIVS-toepassing. Upload het 
 
 >[!NOTE]
 >
->Voordat u een HTML-formulier rendert dat een aangepast CSS-bestand gebruikt, is het belangrijk dat u goed begrijpt hoe HTML-formulieren worden weergegeven. (Zie [ teruggevend Forms als HTML ](/help/forms/developing/rendering-forms-html.md).)
+>Voordat u een HTML-formulier rendert dat een aangepast CSS-bestand gebruikt, is het belangrijk dat u goed begrijpt hoe HTML-formulieren worden weergegeven. (Zie [&#x200B; teruggevend Forms als HTML &#x200B;](/help/forms/developing/rendering-forms-html.md).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -167,7 +167,7 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
    * Een `TransformTo` opsommingswaarde die het voorkeurstype HTML aangeeft. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML` op.
-   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [&#x200B; Prepopulating Forms met Stroombare Lay-outs &#x200B;](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Het `HTMLRenderSpec` -object dat HTML-runtime-opties opslaat.
    * Een tekenreekswaarde die de headerwaarde `HTTP_USER_AGENT` opgeeft, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)` . U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * Een `URLSpec` -object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.

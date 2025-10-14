@@ -79,7 +79,7 @@ U moet expliciet van deelvenster naar deelvenster gaan met de methoden `xfa.host
 
 ## Scripts uitvoeren {#running-scripts}
 
-Een auteur van een formulier geeft aan of een script op de server of de client wordt uitgevoerd. De Forms-service maakt een gedistribueerde omgeving voor gebeurtenisverwerking voor de uitvoering van formulierintelligentie die kan worden gedistribueerd tussen de client en de server met behulp van het attribuut `runAt` . Voor informatie over dit attribuut of het creëren van manuscripten binnen vormontwerpen, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63)
+Een auteur van een formulier geeft aan of een script op de server of de client wordt uitgevoerd. De Forms-service maakt een gedistribueerde omgeving voor gebeurtenisverwerking voor de uitvoering van formulierintelligentie die kan worden gedistribueerd tussen de client en de server met behulp van het attribuut `runAt` . Voor informatie over dit attribuut of het creëren van manuscripten binnen vormontwerpen, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt ook de `Click` -gebeurtenis van een knop instellen om op de server uit te voeren, zodat de client gegevens voor retournering naar de server verzendt. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Als gevolg hiervan moet u deze scripts markeren om te worden uitgevoerd op `server` of `both` .
 
@@ -121,7 +121,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Wanneer u formulierontwerpen maakt die moeten worden gerenderd als HTML, moet u het script beperken tot de XFA-subset voor scripts in JavaScript-taal.
 
-Scripts die op de client worden uitgevoerd of op zowel de client als de server worden uitgevoerd, moeten binnen de XFA-subset worden geschreven. Scripts die op de server worden uitgevoerd, kunnen het volledige XFA-scriptmodel gebruiken en ook FormCalc gebruiken. Voor informatie over het gebruiken van JavaScript, zie [ Designer van Forms ](https://www.adobe.com/go/learn_aemforms_designer_63).
+Scripts die op de client worden uitgevoerd of op zowel de client als de server worden uitgevoerd, moeten binnen de XFA-subset worden geschreven. Scripts die op de server worden uitgevoerd, kunnen het volledige XFA-scriptmodel gebruiken en ook FormCalc gebruiken. Voor informatie over het gebruiken van JavaScript, zie [&#x200B; Designer van Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Wanneer scripts op de client worden uitgevoerd, kan alleen het huidige deelvenster dat wordt weergegeven, een script gebruiken. U kunt bijvoorbeeld geen script uitvoeren op velden in deelvenster A wanneer deelvenster B wordt weergegeven. Wanneer scripts op de server worden uitgevoerd, zijn alle deelvensters toegankelijk.
 
@@ -138,11 +138,11 @@ Forms die wordt weergegeven in een webbrowser (in tegenstelling tot Adobe Reader
 * Als de null-test een fout veroorzaakt en u een veld verlaat zonder een waarde op te geven, wordt een berichtvenster weergegeven en wordt u naar het veld verplaatst nadat u op OK hebt geklikt.
 * Als een null-test een waarschuwing produceert en u een veld verlaat zonder een waarde op te geven, wordt u gevraagd op OK of Annuleren te klikken. U kunt dan doorgaan zonder een waarde op te geven of terug te keren naar het veld om een waarde in te voeren.
 
-Voor meer informatie over een ongeldige test, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+Voor meer informatie over een ongeldige test, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Formulierknoppen {#form-buttons}
 
-Als u op een knop Verzenden klikt, worden formuliergegevens naar de Forms-service verzonden en wordt het einde van de formulierverwerking aangegeven. De `preSubmit` -gebeurtenis kan worden ingesteld op uitvoeren op de client of server. De `preSubmit` -gebeurtenis wordt uitgevoerd voordat het formulier wordt verzonden als dit is geconfigureerd om op de client te worden uitgevoerd. Anders wordt de `preSubmit` -gebeurtenis tijdens het verzenden van het formulier op de server uitgevoerd. Voor meer informatie over de `preSubmit` gebeurtenis, zie [ Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+Als u op een knop Verzenden klikt, worden formuliergegevens naar de Forms-service verzonden en wordt het einde van de formulierverwerking aangegeven. De `preSubmit` -gebeurtenis kan worden ingesteld op uitvoeren op de client of server. De `preSubmit` -gebeurtenis wordt uitgevoerd voordat het formulier wordt verzonden als dit is geconfigureerd om op de client te worden uitgevoerd. Anders wordt de `preSubmit` -gebeurtenis tijdens het verzenden van het formulier op de server uitgevoerd. Voor meer informatie over de `preSubmit` gebeurtenis, zie [&#x200B; Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Als er aan een knop geen clientscript is gekoppeld, worden gegevens naar de server verzonden, worden berekeningen op de server uitgevoerd en wordt het HTML-formulier opnieuw gegenereerd. Als een knop een clientscript bevat, worden er geen gegevens naar de server verzonden en wordt het clientscript in de webbrowser uitgevoerd.
 
@@ -178,7 +178,7 @@ U kunt geen HTML-formulier ondertekenen dat een digitaal handtekeningveld bevat 
 * StaticHTML
 * NoScriptXHTML
 
-Voor informatie over digitaal het ondertekenen van een document, zie [ digitaal het Ondertekenen en het Certificeren Documenten ](/help/forms/developing/digitally-signing-certifying-documents.md)
+Voor informatie over digitaal het ondertekenen van een document, zie [&#x200B; digitaal het Ondertekenen en het Certificeren Documenten &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md)
 
 ## Een XHTML-formulier dat voldoet aan toegankelijkheidsrichtlijnen weergeven {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
@@ -190,7 +190,7 @@ Het wordt aanbevolen om het gebruik van validatieregels voor formuliervelden te 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -335,7 +335,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
 
    * Maak een `HTMLRenderSpec` -object met behulp van de constructor.
    * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode `setHTMLToolbar` van het object `HTMLRenderSpec` aan en geeft u een waarde `HTMLToolbar` enum door. Als u bijvoorbeeld een verticale werkbalk HTML wilt weergeven, geeft u door `HTMLToolbar.Vertical` .
-   * Als u de landinstellingswaarde voor het HTML-formulier wilt instellen, roept u de methode `setLocale` van het object `HTMLRenderSpec` aan en geeft u een tekenreekswaarde door die de landinstellingswaarde opgeeft. Voor meer informatie, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Als u de landinstellingswaarde voor het HTML-formulier wilt instellen, roept u de methode `setLocale` van het object `HTMLRenderSpec` aan en geeft u een tekenreekswaarde door die de landinstellingswaarde opgeeft. Voor meer informatie, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Als u het HTML-formulier wilt renderen binnen volledige HTML-tags, roept u de methode `setOutputType` van het object `HTMLRenderSpec` aan en geeft u `OutputType.FullHTMLTags` door.
 
    >[!NOTE]
@@ -348,11 +348,11 @@ Een HTML-formulier renderen met de Forms API (webservice):
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
    * Een `TransformTo` opsommingswaarde die het voorkeurstype HTML aangeeft. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML` op.
-   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
+   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [&#x200B; Prepopulating Forms met Stroombare Lay-outs &#x200B;](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * Het `HTMLRenderSpec` -object dat HTML-runtime-opties opslaat.
    * Een tekenreekswaarde die de headerwaarde `HTTP_USER_AGENT` opgeeft, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)` . U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
-   * Een `URLSpec` -object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren. (Zie [ de waarden van URI ](/help/forms/developing/rendering-interactive-pdf-forms.md) specificeren.)
-   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen. (Zie [ dossiers aan de vorm ](/help/forms/developing/rendering-interactive-pdf-forms.md) vastmaken.)
+   * Een `URLSpec` -object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren. (Zie [&#x200B; de waarden van URI &#x200B;](/help/forms/developing/rendering-interactive-pdf-forms.md) specificeren.)
+   * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen. (Zie [&#x200B; dossiers aan de vorm &#x200B;](/help/forms/developing/rendering-interactive-pdf-forms.md) vastmaken.)
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` -object dat door de methode wordt gevuld. Met deze parameterwaarde wordt het gerenderde formulier opgeslagen.
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` -object dat door de methode wordt gevuld. In deze parameter worden de XML-uitvoergegevens opgeslagen.
    * Een leeg `javax.xml.rpc.holders.LongHolder` -object dat door de methode wordt gevuld. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.

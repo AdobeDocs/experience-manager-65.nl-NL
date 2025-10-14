@@ -22,7 +22,7 @@ ht-degree: 0%
 
 U kunt een document van de PDF demonteren door het tot de dienst van de Assembler over te gaan. Deze taak is meestal handig wanneer het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies. In de volgende afbeelding wordt DocA opgedeeld in meerdere resulterende documenten, waarbij de bladwijzer van het eerste niveau 1 op een pagina het begin van een nieuw resulterend document aangeeft.
 
-![ pd_pd_pdfsfrombookmarks ](assets/pd_pd_pdfsfrombookmarks.png)
+![&#x200B; pd_pd_pdfsfrombookmarks &#x200B;](assets/pd_pd_pdfsfrombookmarks.png)
 
 Als u een PDF-document wilt demonteren, controleert u of het `PDFsFromBookmarks` -element zich in het DDX-document bevindt. Het element `PDFsFromBookmarks` is een resulterend element en kan slechts een onderliggend element van het element `DDX` zijn. Het heeft geen attribuut `result` omdat het in de generatie van veelvoudige documenten kan resulteren.
 
@@ -41,7 +41,7 @@ Voor deze bespreking, veronderstel het volgende Dx- document wordt gebruikt.
 
 >[!NOTE]
 >
->Alvorens deze sectie te lezen, adviseert men dat u met het assembleren van de documenten van PDF door de dienst van de Assembler vertrouwd bent. (Zie [ Programmatiatically het assembleren van de Documenten van PDF ](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Alvorens deze sectie te lezen, adviseert men dat u met het assembleren van de documenten van PDF door de dienst van de Assembler vertrouwd bent. (Zie [&#x200B; Programmatiatically het assembleren van de Documenten van PDF &#x200B;](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -49,11 +49,11 @@ Voor deze bespreking, veronderstel het volgende Dx- document wordt gebruikt.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 

@@ -24,7 +24,7 @@ Voor informatie over het gebruiken van de Console JMX, zie {de Middelen van de S
 
 Op het Apache Felix-platform implementeert u MBans als OSGi-services. Wanneer een dienst MBean in de Registratie van de Dienst OSGi wordt geregistreerd, registreert de module JMX van Aries automatisch MBean met de Server MBean. De MBean is dan beschikbaar aan de Console JMX die de openbare attributen en de verrichtingen blootstelt.
 
-![ jmxwhiteboard ](assets/jmxwhiteboard.png)
+![&#x200B; jmxwhiteboard &#x200B;](assets/jmxwhiteboard.png)
 
 ## Bezig met het maken van MBans voor CQ5 en CRX {#creating-mbeans-for-cq-and-crx}
 
@@ -42,10 +42,10 @@ Het {[&#128279;](https://helpx.adobe.com/experience-manager/6-5/sites/developing
 
 **Annotaties**
 
-Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (voor volledige informatie, zie [ com.adobe.granite.jmx.annotation JavaDocs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (voor volledige informatie, zie [&#x200B; com.adobe.granite.jmx.annotation JavaDocs &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Beschrijving:** verstrekt een beschrijving van de klasse MBean of de methode. Wanneer gebruikt op de klassendeclaratie, verschijnt de beschrijving op de pagina van de Console JMX voor MBean. Wanneer de beschrijving bij een methode wordt gebruikt, wordt deze weergegeven als zwevende tekst voor het bijbehorende kenmerk of de bijbehorende bewerking.
-* **Effect:** het effect van een methode. De geldige parameterwaarden zijn de gebieden die door [ worden bepaald javax.management.MBeanOperationInfo ](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **Effect:** het effect van een methode. De geldige parameterwaarden zijn de gebieden die door [&#x200B; worden bepaald javax.management.MBeanOperationInfo &#x200B;](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
 
 * **Naam:** specificeert de naam aan vertoning voor een verrichtingsparameter. Gebruik deze aantekening om de daadwerkelijke naam van de methodeparameter met voeten te treden die in de interface wordt gebruikt.
 * **OpenTypeInfo:** specificeert de klasse voor het vertegenwoordigen van samengestelde gegevens of gegevens in tabelvorm in de Console JMX te gebruiken. Voor gebruik met Open MBans
@@ -127,7 +127,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 In de volgende afbeelding ziet u de pagina voor deze MBean in de JMX-console.
 
-![ jmxdescription ](assets/jmxdescription.png)
+![&#x200B; jmxdescription &#x200B;](assets/jmxdescription.png)
 
 ### Registreren van MBeans {#registering-mbeans}
 
@@ -225,7 +225,7 @@ WorkflowMBeanManagerImpl omvat een methode van de componentenactivering. Wanneer
 
 De metagegevens van MBean worden weergegeven in de JMX Console met het domein com.adobe.example, het type workflow_model en Eigenschappen is het pad van het knooppunt voor configuratie van het workflowmodel.
 
-![ jmxworkflowbean ](assets/jmxworkflowmbean.png)
+![&#x200B; jmxworkflowbean &#x200B;](assets/jmxworkflowmbean.png)
 
 ### Het voorbeeld MBean {#the-example-mbean}
 
@@ -431,7 +431,7 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 * Apache Felix Maven Bundle Plugin: maakt de bundel en het manifest
 * Apache Felix Maven SCR Insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
 
-**Nota:** op het tijdstip van het schrijven, is de beven scr stop niet compatibel met de m2e stop voor Eclipse. (Zie [ Felix insect 3170 ](https://issues.apache.org/jira/browse/FELIX-3170).) Om winde van de Verduistering te gebruiken, installeer Geweven en gebruik de interface van de bevellijn om bouwstijlen uit te voeren.
+**Nota:** op het tijdstip van het schrijven, is de beven scr stop niet compatibel met de m2e stop voor Eclipse. (Zie [&#x200B; Felix insect 3170 &#x200B;](https://issues.apache.org/jira/browse/FELIX-3170).) Om winde van de Verduistering te gebruiken, installeer Geweven en gebruik de interface van de bevellijn om bouwstijlen uit te voeren.
 
 #### Voorbeeld-POM-bestand {#example-pom-file}
 

@@ -31,7 +31,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de blogfunctie.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
-De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschikbaar zijn door de [ functie van Blog ](/help/communities/functions.md#blog-function) toe te voegen of door de componenten aan een pagina op auteur toe te voegen geeft wijze uit.
+De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschikbaar zijn door de [&#x200B; functie van Blog &#x200B;](/help/communities/functions.md#blog-function) toe te voegen of door de componenten aan een pagina op auteur toe te voegen geeft wijze uit.
 
 ### Blog {#blog}
 
@@ -78,37 +78,37 @@ De blogeigenschap is samengesteld uit twee belangrijkste componenten die beschik
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ Blog API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [&#x200B; Blog API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [ Blogeindpunten ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [&#x200B; Blogeindpunten &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 
 ### Blogfunctie {#blog-function}
 
-Een communautaire plaatsstructuur die de [ functie Blog ](/help/communities/functions.md#blog-function) omvat heeft `Blog` en `Blog Sidebar` gevormde componenten. De functie Blog steunt het identificeren van a [ bevoorrechte gebruikersgroep van het lidlid ](/help/communities/users.md#privileged-members-group).
+Een communautaire plaatsstructuur die de [&#x200B; functie Blog &#x200B;](/help/communities/functions.md#blog-function) omvat heeft `Blog` en `Blog Sidebar` gevormde componenten. De functie Blog steunt het identificeren van a [&#x200B; bevoorrechte gebruikersgroep van het lidlid &#x200B;](/help/communities/users.md#privileged-members-group).
 
 ### Toegang tot blogberichten (UGC) {#accessing-blog-entries-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [ het Moderteren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Zie [&#x200B; het Moderteren van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [ gemeenschappelijke opslag ](/help/communities/working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
+Vanaf AEM 6.1 Gemeenschappen, omvat het gebruik van a [&#x200B; gemeenschappelijke opslag &#x200B;](/help/communities/working-with-srp.md) voor UGC programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **de plaats en het formaat van UGC in de bewaarplaats zijn onderworpen aan verandering zonder waarschuwing**.
 
 Zie:
 
-* [ Overzicht van de Leverancier van het Middel van de Opslag ](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik.
-* [ SRP en Hoofdzaak UGC ](/help/communities/srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
-* [ die tot UGC met SRP ](/help/communities/accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
-* [ SocialUtils Refactoring ](/help/communities/socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.
+* [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](/help/communities/srp.md) - inleiding en overzicht van het opslagruimtegebruik.
+* [&#x200B; SRP en Hoofdzaak UGC &#x200B;](/help/communities/srp-and-ugc.md) - de nutsmethodes en voorbeelden van SRP.
+* [&#x200B; die tot UGC met SRP &#x200B;](/help/communities/accessing-ugc-with-srp.md) toegang hebben - codeerrichtlijnen.
+* [&#x200B; SocialUtils Refactoring &#x200B;](/help/communities/socialutils.md) - verouderde nutsmethodes in kaart brengen aan huidige SRP nutsmethodes.
 
 ## Primaire uitgever {#primary-publisher}
 
 Wanneer de plaatsing een publicatielandbouwbedrijf is, is het noodzakelijk om een primaire uitgever te identificeren die voor te publiceren artikelen opiniepeilt.
 
-Zie [ Primaire Uitgever ](/help/communities/deploy-communities.md#primary-publisher) voor meer details.
+Zie [&#x200B; Primaire Uitgever &#x200B;](/help/communities/deploy-communities.md#primary-publisher) voor meer details.
 
 ## Rijke media toestaan {#allowing-rich-media}
 
@@ -120,4 +120,4 @@ Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden 
 
 Rijke media wordt ingesloten in een blogartikel door het pictogram `Embed Media from External Sites` te selecteren:
 
-![ media ](assets/media-icon.png)
+![&#x200B; media &#x200B;](assets/media-icon.png)

@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow voor het maken van ontwerpen en verschillen tussen interactieve communicatie en brief.
 
-![ held-beeld ](do-not-localize/correspondence-management.png)
+![&#x200B; held-beeld &#x200B;](do-not-localize/correspondence-management.png)
 
 De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.
 
@@ -37,26 +37,26 @@ Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
 ## Interactieve communicatie maken {#interactive-communication-creation}
 
-![ interactive_communication-01 ](assets/interactive_communication-01.jpg)
+![&#x200B; interactive_communication-01 &#x200B;](assets/interactive_communication-01.jpg)
 
 ### Workflow {#workflow}
 
-Om een Interactieve Mededeling tot stand te brengen, heb de [ bouwstenen ](#buildingblocks) voor Interactieve Communicatie klaar en voltooi dan de volgende stappen:
+Om een Interactieve Mededeling tot stand te brengen, heb de [&#x200B; bouwstenen &#x200B;](#buildingblocks) voor Interactieve Communicatie klaar en voltooi dan de volgende stappen:
 
-1. Kies om [ tot een Interactieve Communicatie ](/help/forms/using/create-interactive-communication.md) te leiden.
+1. Kies om [&#x200B; tot een Interactieve Communicatie &#x200B;](/help/forms/using/create-interactive-communication.md) te leiden.
 
-1. Specificeer het [ model van vormgegevens ](/help/forms/using/data-integration.md), de prefill dienst, en [ druk en Webkanaalmalplaatjes ](/help/forms/using/web-channel-print-channel.md). U kunt het webkanaal genereren via het afdrukkanaal.
+1. Specificeer het [&#x200B; model van vormgegevens &#x200B;](/help/forms/using/data-integration.md), de prefill dienst, en [&#x200B; druk en Webkanaalmalplaatjes &#x200B;](/help/forms/using/web-channel-print-channel.md). U kunt het webkanaal genereren via het afdrukkanaal.
 
-1. Gebruikend de [ belemmering-en-dalingsinterface ](/help/forms/using/introduction-interactive-communication-authoring.md), voeg documentfragmenten, beelden, componenten aan druk en Webkanaal van de Interactieve Mededeling toe zoals vereist.
+1. Gebruikend de [&#x200B; belemmering-en-dalingsinterface &#x200B;](/help/forms/using/introduction-interactive-communication-authoring.md), voeg documentfragmenten, beelden, componenten aan druk en Webkanaal van de Interactieve Mededeling toe zoals vereist.
 1. Vorm de eigenschappen voor de opgenomen componenten, zoals het volgende:
 
    1. [Afbeeldingen](/help/forms/using/create-interactive-communication.md#step2)
-   1. [ Lijsten ](/help/forms/using/create-interactive-communication.md#tables) (met inbegrip van de Fragmenten van de Lay-out)
+   1. [&#x200B; Lijsten &#x200B;](/help/forms/using/create-interactive-communication.md#tables) (met inbegrip van de Fragmenten van de Lay-out)
    1. [Grafieken](/help/forms/using/chart-component-interactive-communications.md)
    1. [Documentfragmenten](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Een voorvertoning weergeven van afdruk- en webkanalen en, indien nodig, Interactieve communicatie.
-1. De agent gebruikt de Agent UI om [ de Interactieve Communicatie ](/help/forms/using/prepare-send-interactive-communication.md) voor te bereiden om het naar het ontvanger/postproces te verzenden.
+1. De agent gebruikt de Agent UI om [&#x200B; de Interactieve Communicatie &#x200B;](/help/forms/using/prepare-send-interactive-communication.md) voor te bereiden om het naar het ontvanger/postproces te verzenden.
 
 ### Bouwstenen {#buildingblocks}
 
@@ -66,7 +66,7 @@ Hieronder vindt u de bouwstenen die nodig zijn voor het maken van interactieve c
 - [Afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md)
 - [Documentfragmenten](/help/forms/using/document-fragments.md)
 - Afbeeldingen
-- [ Thema&#39;s ](/help/forms/using/themes.md) voor het kanaal van het Web
+- [&#x200B; Thema&#39;s &#x200B;](/help/forms/using/themes.md) voor het kanaal van het Web
 
 ## Interactieve communicatie Vs Correspondentenbeheer {#interactive-communications-vs-correspondence-management}
 

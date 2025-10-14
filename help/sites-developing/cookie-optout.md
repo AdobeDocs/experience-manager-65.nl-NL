@@ -29,7 +29,7 @@ Gebruik deze functie om ervoor te zorgen dat uw pagina&#39;s voldoen aan de toes
 
 Configureer de Adobe Granite Opt-Out Service om op te geven hoe cookies op uw webpagina&#39;s worden gebruikt. In de volgende tabel worden de eigenschappen beschreven die u kunt configureren.
 
-Om de dienst te vormen, kunt u de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) gebruiken of [ een configuratie OSGi aan de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) toevoegen. In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt. Voor een configuratie OSGi, is de dienst PID `com.adobe.granite.optout`.
+Om de dienst te vormen, kunt u de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) gebruiken of [&#x200B; een configuratie OSGi aan de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) toevoegen. In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt. Voor een configuratie OSGi, is de dienst PID `com.adobe.granite.optout`.
 
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam | Beschrijving |
 |---|---|---|
@@ -46,7 +46,7 @@ Gebruik client-side JavaScript om de Adobe Granite Opt-Out Service te bellen om 
 * Bepaal of de webbrowser een cookie bevat die aangeeft dat de gebruiker geen toestemming geeft voor het gebruik van cookies voor tracering.
 * Bepaal of een specifieke cookie kan worden gebruikt.
 
-granite.utils [ omslag van de cliëntbibliotheek ](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) verstrekt het voorwerp Granite.OptOutUtil. Voeg de volgende code toe aan de paginakop JSP om een koppeling naar de JavaScript-bibliotheek op te nemen:
+granite.utils [&#x200B; omslag van de cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) verstrekt het voorwerp Granite.OptOutUtil. Voeg de volgende code toe aan de paginakop JSP om een koppeling naar de JavaScript-bibliotheek op te nemen:
 
 `<ui:includeClientLib categories="granite.utils" />`
 

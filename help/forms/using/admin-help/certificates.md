@@ -33,7 +33,7 @@ Alleen X509v3-certificaten worden ondersteund. Dit certificaattype kan in een bi
 
 Certificaten die vereist zijn om de verificatie van een handtekening te voltooien, moeten zich in dezelfde opslagplaats (HSM of database) bevinden.
 
-U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-API. Voor details, zie &quot;het Invoeren van certificaten gebruikend de Manager API van het Vertrouwen&quot;en &quot;het Schrappen van certificaten gebruikend de Manager API van het Vertrouwen&quot;in [ Programmering met AEM vormen ](https://www.adobe.com/go/learn_aemforms_programming_63).
+U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-API. Voor details, zie &quot;het Invoeren van certificaten gebruikend de Manager API van het Vertrouwen&quot;en &quot;het Schrappen van certificaten gebruikend de Manager API van het Vertrouwen&quot;in [&#x200B; Programmering met AEM vormen &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 ## Certificaat importeren {#import-a-certificate}
 

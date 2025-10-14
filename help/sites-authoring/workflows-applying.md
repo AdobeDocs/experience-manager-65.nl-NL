@@ -30,31 +30,31 @@ U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door
 
 Workflows kunnen worden gestart vanaf:
 
-* [ de console van Plaatsen ](#starting-a-workflow-from-the-sites-console).
-* [ wanneer het uitgeven van een pagina, van de Informatie van de Pagina ](#starting-a-workflow-from-the-page-editor).
+* [&#x200B; de console van Plaatsen &#x200B;](#starting-a-workflow-from-the-sites-console).
+* [&#x200B; wanneer het uitgeven van een pagina, van de Informatie van de Pagina &#x200B;](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
 >Zie ook:
 >
->* [ hoe te om werkschema&#39;s op activa toe te passen DAM ](/help/assets/assets-workflow.md).
->* [ Werkend met de Werkschema&#39;s van het Project ](/help/sites-authoring/projects-with-workflows.md).
+>* [&#x200B; hoe te om werkschema&#39;s op activa toe te passen DAM &#x200B;](/help/assets/assets-workflow.md).
+>* [&#x200B; Werkend met de Werkschema&#39;s van het Project &#x200B;](/help/sites-authoring/projects-with-workflows.md).
 >
 
 >[!NOTE]
 >
->AEM de beheerders kunnen [ werkschema&#39;s beginnen gebruikend verscheidene andere methodes ](/help/sites-administering/workflows-starting.md).
+>AEM de beheerders kunnen [&#x200B; werkschema&#39;s beginnen gebruikend verscheidene andere methodes &#x200B;](/help/sites-administering/workflows-starting.md).
 
 ## Een workflow starten vanuit de siteconsole {#starting-a-workflow-from-the-sites-console}
 
 U kunt een workflow starten vanuit:
 
-* [ creeer optie van de toolbar van Plaatsen ](#starting-a-workflow-from-the-sites-toolbar).
-* [ de spoorstaaf van de Chronologie van de console van Plaatsen ](#starting-a-workflow-from-the-timeline).
+* [&#x200B; creeer optie van de toolbar van Plaatsen &#x200B;](#starting-a-workflow-from-the-sites-toolbar).
+* [&#x200B; de spoorstaaf van de Chronologie van de console van Plaatsen &#x200B;](#starting-a-workflow-from-the-timeline).
 
 In beide gevallen moet u:
 
-* [ specificeer de Details van het Werkschema in de Create Tovenaar van het Werkschema ](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [&#x200B; specificeer de Details van het Werkschema in de Create Tovenaar van het Werkschema &#x200B;](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Een workflow starten op de werkbalk Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -64,20 +64,20 @@ U kunt een werkschema van de toolbar van de **console van Plaatsen** beginnen:
 
 1. Van **creeer** optie in de toolbar u **Werkschema** kunt nu selecteren.
 
-   ![ screen_shot_2019-03-06at121237pm ](assets/screen_shot_2019-03-06at121237pm.png)
+   ![&#x200B; screen_shot_2019-03-06at121237pm &#x200B;](assets/screen_shot_2019-03-06at121237pm.png)
 
-1. **creeer de tovenaar van het Werkschema** u [ zal helpen de werkschemadetails ](#specifying-workflow-details-in-the-create-workflow-wizard) specificeren.
+1. **creeer de tovenaar van het Werkschema** u [&#x200B; zal helpen de werkschemadetails &#x200B;](#specifying-workflow-details-in-the-create-workflow-wizard) specificeren.
 
 ### Een workflow starten vanuit de tijdlijn {#starting-a-workflow-from-the-timeline}
 
 Van de **Chronologie** kunt u een werkschema beginnen dat op uw geselecteerde middel moet worden toegepast.
 
-1. [ selecteer het middel ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) en open [ Chronologie ](/help/sites-authoring/basic-handling.md#timeline) (of open Chronologie en selecteer dan het middel).
+1. [&#x200B; selecteer het middel &#x200B;](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) en open [&#x200B; Chronologie &#x200B;](/help/sites-authoring/basic-handling.md#timeline) (of open Chronologie en selecteer dan het middel).
 1. De pijlpunt door het commentaargebied kan worden gebruikt om **Werkschema van het Begin** te openbaren:
 
-   ![ scherm-shot_2019-03-05at120026 ](assets/screen-shot_2019-03-05at120026.png)
+   ![&#x200B; scherm-shot_2019-03-05at120026 &#x200B;](assets/screen-shot_2019-03-05at120026.png)
 
-1. **creeer de tovenaar van het Werkschema** u [ zal helpen de werkschemadetails ](#specifying-workflow-details-in-the-create-workflow-wizard) specificeren.
+1. **creeer de tovenaar van het Werkschema** u [&#x200B; zal helpen de werkschemadetails &#x200B;](#specifying-workflow-details-in-the-create-workflow-wizard) specificeren.
 
 ### Workflowdetails opgeven in de wizard Workflow maken {#specifying-workflow-details-in-the-create-workflow-wizard}
 
@@ -85,8 +85,8 @@ Van de **Chronologie** kunt u een werkschema beginnen dat op uw geselecteerde mi
 
 Na het openen van **creeer de tovenaar van het Werkschema** van of:
 
-* [ creeer optie van de toolbar van Plaatsen ](#starting-a-workflow-from-the-sites-toolbar).
-* [ de spoorstaaf van de Chronologie van de console van Plaatsen ](#starting-a-workflow-from-the-timeline).
+* [&#x200B; creeer optie van de toolbar van Plaatsen &#x200B;](#starting-a-workflow-from-the-sites-toolbar).
+* [&#x200B; de spoorstaaf van de Chronologie van de console van Plaatsen &#x200B;](#starting-a-workflow-from-the-timeline).
 
 U kunt details specificeren:
 
@@ -106,15 +106,15 @@ U kunt details specificeren:
 
    >[!NOTE]
    >
-   >De **optie van het het werkschemapakket van het houden** is beschikbaar wanneer het werkschema voor [ de Multi Steun van het Middel ](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) is gevormd en de veelvoudige middelen zijn geselecteerd.
+   >De **optie van het het werkschemapakket van het houden** is beschikbaar wanneer het werkschema voor [&#x200B; de Multi Steun van het Middel &#x200B;](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) is gevormd en de veelvoudige middelen zijn geselecteerd.
 
    Wanneer volledig, gebruik **daarna** om te werk te gaan.
 
-   ![ wf-52 ](assets/wf-52.png)
+   ![&#x200B; wf-52 &#x200B;](assets/wf-52.png)
 
 1. In de **stap van het Bereik** kunt u selecteren:
 
-   * **voeg Inhoud** toe om [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) te openen en extra middelen te selecteren; wanneer in browser, **Uitgezochte** klik om de inhoud aan de werkschemainstantie toe te voegen.
+   * **voeg Inhoud** toe om [&#x200B; wegbrowser &#x200B;](/help/sites-authoring/author-environment-tools.md#path-browser) te openen en extra middelen te selecteren; wanneer in browser, **Uitgezochte** klik om de inhoud aan de werkschemainstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 
@@ -129,7 +129,7 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
 
       * **verwijder Selectie** om dat middel uit het werkschema te verwijderen.
 
-   ![ wf-53 ](assets/wf-53.png)
+   ![&#x200B; wf-53 &#x200B;](assets/wf-53.png)
 
    >[!NOTE]
    >
@@ -141,4 +141,4 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
 
 Wanneer het uitgeven van een pagina kunt u **Informatie van de Pagina** van de toolbar selecteren. Het drop-down menu heeft het optie **Begin in Werkschema**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, zo nodig met een titel:
 
-![ wf-54 ](assets/wf-54.png)
+![&#x200B; wf-54 &#x200B;](assets/wf-54.png)

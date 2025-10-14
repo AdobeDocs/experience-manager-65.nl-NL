@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Transactierapporten voor AEM Forms bekijken en begrijpen op OSGi{#viewing-and-understanding-transaction-reports}
 
-Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Voor meer informatie, zie [ Overzicht van de Rapporten van de Transactie van AEM Forms ](../../forms/using/transaction-reports-overview.md).
+Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Voor meer informatie, zie [&#x200B; Overzicht van de Rapporten van de Transactie van AEM Forms &#x200B;](../../forms/using/transaction-reports-overview.md).
 
 ## Transactierapporten instellen  {#setting-up-transaction-reports}
 
-De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakket voor AEM formulieren. Voor informatie over het installeren van het toe:voegen-on pakket op alle auteur en publiceer instanties, zie [ Installerend en vormend AEM vormen ](/help/forms/using/installing-configuring-aem-forms-osgi.md). Wanneer u het pakket voor de invoegtoepassing voor AEM formulieren hebt geïnstalleerd, gaat u als volgt te werk:
+De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakket voor AEM formulieren. Voor informatie over het installeren van het toe:voegen-on pakket op alle auteur en publiceer instanties, zie [&#x200B; Installerend en vormend AEM vormen &#x200B;](/help/forms/using/installing-configuring-aem-forms-osgi.md). Wanneer u het pakket voor de invoegtoepassing voor AEM formulieren hebt geïnstalleerd, gaat u als volgt te werk:
 
 * Omgekeerde replicatie inschakelen voor alle publicatievarianten
 * Transactierapporten inschakelen
@@ -37,7 +37,7 @@ De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakke
 
 ### Omgekeerde replicatie inschakelen voor alle publicatievarianten {#enable-reverse-replication-on-all-the-publish-instances}
 
-Transactierapporten gebruiken omgekeerde replicatie om het aantal transacties van publicatieinstanties tot auteur te consolideren. Stel de omgekeerde replicatie in voor alle publicatieexemplaren. Voor gedetailleerde instructies aan opstellings omgekeerde replicatie, zie [ replicatie ](/help/sites-deploying/replication.md).
+Transactierapporten gebruiken omgekeerde replicatie om het aantal transacties van publicatieinstanties tot auteur te consolideren. Stel de omgekeerde replicatie in voor alle publicatieexemplaren. Voor gedetailleerde instructies aan opstellings omgekeerde replicatie, zie [&#x200B; replicatie &#x200B;](/help/sites-deploying/replication.md).
 
 ### Transactierapporten inschakelen {#enable-transaction-reports}
 
@@ -51,7 +51,7 @@ Transactierapporten zijn standaard uitgeschakeld. U kunt de rapporten van AEM Co
 
 ### Rechten opgeven om een transactierapport te bekijken {#provide-rights-to-view-a-transaction-report}
 
-Alleen leden van de groep fd-administrator kunnen transactierapporten weergeven. Om een gebruiker toe te staan om transactierapporten te bekijken, maak gebruikerslid van de fd-beheerder groep. Voor instructies over het maken van een gebruiker een lid van een AEM groep, zie [ Gebruiker, Groep en het Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md).
+Alleen leden van de groep fd-administrator kunnen transactierapporten weergeven. Om een gebruiker toe te staan om transactierapporten te bekijken, maak gebruikerslid van de fd-beheerder groep. Voor instructies over het maken van een gebruiker een lid van een AEM groep, zie [&#x200B; Gebruiker, Groep en het Beleid van de Rechten van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md).
 
 ### (Optioneel) Transactie-uitstelperiode en -uitvakken configureren {#optional-configure-transaction-flush-period-and-outboxes}
 
@@ -78,11 +78,11 @@ U kunt transactierapporten weergeven over auteur- of publicatieinstanties. Het t
 
 AEM Forms geeft transactierapporten weer sinds de geconfigureerde datum, zoals in een samenvattingsrapport hieronder wordt getoond:
 
-![ steekproef-transactie-rapport-auteur ](assets/sample-transaction-report-author.png)
+![&#x200B; steekproef-transactie-rapport-auteur &#x200B;](assets/sample-transaction-report-author.png)
 
 * Gebruik **het Terugstellen van de datum aan vandaag** opties om transactieverslagen terug te stellen. Wanneer u de datum aan vandaag terugstelt, worden alle vorige transactieverslagen verloren. Wanneer u de datum opnieuw instelt op een auteurinstantie, beïnvloedt de verandering geen transactierapporten over de instanties van Publish en omgekeerd.
 * Gebruik **toont transacties van slechts de instanties van Publish** om alle transacties te bekijken die slechts op gevormd voorkwamen publiceren instantie of landbouwbedrijf publiceren.
-* Gebruik de categorieën: **Verwerkt Document**, **Gerenderde Documenten**, en **Voorgelegde Forms** om overeenkomstige transacties te bekijken. Voor het type van transacties die in deze categorieën worden vermeld, zie [ Billable Transactie Rapporten APIs ](../../forms/using/transaction-reports-billable-apis.md).
+* Gebruik de categorieën: **Verwerkt Document**, **Gerenderde Documenten**, en **Voorgelegde Forms** om overeenkomstige transacties te bekijken. Voor het type van transacties die in deze categorieën worden vermeld, zie [&#x200B; Billable Transactie Rapporten APIs &#x200B;](../../forms/using/transaction-reports-billable-apis.md).
 
 ## Logboeken voor transactierapporten weergeven {#view-transaction-reporting-logs}
 

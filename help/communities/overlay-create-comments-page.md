@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Pagina met opmerkingen maken {#create-comments-page}
 
-**[⇐ de Component van Commentaren van de Bedekking ](overlay-comments.md) [ leidt knopen](overlay-create-nodes.md)**
+**[⇐ de Component van Commentaren van de Bedekking &#x200B;](overlay-comments.md) [&#x200B; leidt knopen](overlay-create-nodes.md)**
 
 ## Opmerkingen pagina {#comments-page}
 
-De [ communautaire gids van Componenten ](components-guide.md) laat u gemakkelijk het bedekken van de commentaarcomponent ervaren.
+De [&#x200B; communautaire gids van Componenten &#x200B;](components-guide.md) laat u gemakkelijk het bedekken van de commentaarcomponent ervaren.
 
 Bekijk de pagina op de instantie van de auteur:
 
-* [ http://localhost:4502/editor.html/content/community-components/en/comments.html](http://localhost:4502/editor.html/content/community-components/en/comments.html)
+* [&#x200B; http://localhost:4502/editor.html/content/community-components/en/comments.html](http://localhost:4502/editor.html/content/community-components/en/comments.html)
 
-![ commentaren ](assets/comments.png)
+![&#x200B; commentaren &#x200B;](assets/comments.png)
 
-**[⇐ de Component van Commentaren van de Bedekking ](overlay-comments.md) [ leidt knopen](overlay-create-nodes.md)**
+**[⇐ de Component van Commentaren van de Bedekking &#x200B;](overlay-comments.md) [&#x200B; leidt knopen](overlay-create-nodes.md)**

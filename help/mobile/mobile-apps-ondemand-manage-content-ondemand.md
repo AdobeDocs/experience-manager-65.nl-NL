@@ -34,7 +34,7 @@ Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen,
 
 >[!NOTE]
 >
->Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html) in Online Hulp.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [&#x200B; overwegingen van het Ontwerp voor AEM Mobile apps &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html) in Online Hulp.
 
 ## Inhoud maken en beheren {#creating-and-managing-content}
 
@@ -48,7 +48,7 @@ De volgende onderwerpen beschrijven het creëren en het beheer van inhoud, namel
 
 >[!NOTE]
 >
->Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [ Voorproef met Preflight ](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer details.
+>Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [&#x200B; Voorproef met Preflight &#x200B;](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer details.
 
 ### Aanvullende bronnen {#additional-resources}
 

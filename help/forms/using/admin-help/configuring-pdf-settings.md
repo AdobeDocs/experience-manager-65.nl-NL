@@ -22,12 +22,12 @@ Op de pagina Adobe PDF Settings worden de conversie-instellingen weergegeven die
 
 Op de pagina Adobe PDF Settings kunt u de volgende taken uitvoeren:
 
-* Bekijk de vooraf gedefinieerde PDF-instellingen. (Zie [ Ongeveer de vooraf bepaalde montages van PDF ](configuring-pdf-settings.md#about-the-predefined-pdf-settings).)
-* Maak een PDF-instelling of bewerk een instelling die u eerder hebt gemaakt. (Zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.)
-* Geef de standaardinstellingen voor PDF op. (Zie [ Verandering de standaardmontages ](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings))
-* Upload een bestand met PDF-instellingen naar de server. (Zie [ PDF montages ](configuring-pdf-settings.md#upload-pdf-settings) uploaden.)
-* Aangepaste PDF-instellingen verwijderen. (Zie [ PDF montages van de Schrapping ](configuring-pdf-settings.md#delete-pdf-settings).)
-* Proloog- en epiloogbestanden uploaden en downloaden. (Zie [ Uploading en het downloaden van proloog en epiloogdossiers ](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files).)
+* Bekijk de vooraf gedefinieerde PDF-instellingen. (Zie [&#x200B; Ongeveer de vooraf bepaalde montages van PDF &#x200B;](configuring-pdf-settings.md#about-the-predefined-pdf-settings).)
+* Maak een PDF-instelling of bewerk een instelling die u eerder hebt gemaakt. (Zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.)
+* Geef de standaardinstellingen voor PDF op. (Zie [&#x200B; Verandering de standaardmontages &#x200B;](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings))
+* Upload een bestand met PDF-instellingen naar de server. (Zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#upload-pdf-settings) uploaden.)
+* Aangepaste PDF-instellingen verwijderen. (Zie [&#x200B; PDF montages van de Schrapping &#x200B;](configuring-pdf-settings.md#delete-pdf-settings).)
+* Proloog- en epiloogbestanden uploaden en downloaden. (Zie [&#x200B; Uploading en het downloaden van proloog en epiloogdossiers &#x200B;](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files).)
 
 Adobe PDF-instellingen zijn alleen van toepassing op conversies op basis van PDFMaker. Deze omvatten de volgende omzettingen:
 
@@ -129,7 +129,7 @@ U kunt PDF-instellingen permanent verwijderen als deze niet meer vereist zijn.
 
 ## Algemene opties {#general-options}
 
-Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebruiken voor bestandscompatibiliteit en andere bestands- en apparaatopties. Voor instructies over de toegang tot van de Algemene opties, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebruiken voor bestandscompatibiliteit en andere bestands- en apparaatopties. Voor instructies over de toegang tot van de Algemene opties, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 ### Bestandsopties {#file-options}
 
@@ -218,7 +218,7 @@ Met de opties bij Standaardpaginaformaat geeft u het paginaformaat op dat moet w
 
 ## Afbeeldingsopties {#images-options}
 
-Met de opties bij Afbeeldingen geeft u compressie en resampling voor afbeeldingen op. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. Voor instructies over de toegang tot van de montages van Beelden, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Met de opties bij Afbeeldingen geeft u compressie en resampling voor afbeeldingen op. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. Voor instructies over de toegang tot van de montages van Beelden, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 Met deze opties configureert u afbeeldingen in kleur, grijswaarden en monochroom:
 
@@ -289,7 +289,7 @@ Zorg ervoor dat monochrome afbeeldingen worden gescand als monochroom en niet al
 
 ## Fontopties {#fonts-options}
 
-Met de lettertypeopties geeft u op welke lettertypen u in een PDF-bestand wilt insluiten en of u een subset met tekens wilt insluiten die in het PDF-bestand worden gebruikt. Voor instructies over de toegang tot van de opties van Doopvonten, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Met de lettertypeopties geeft u op welke lettertypen u in een PDF-bestand wilt insluiten en of u een subset met tekens wilt insluiten die in het PDF-bestand worden gebruikt. Voor instructies over de toegang tot van de opties van Doopvonten, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 >[!NOTE]
 >
@@ -324,7 +324,7 @@ Is minder dan:** als u deze optie selecteert, specificeer een drempelpercentage 
 
 ## Kleuropties {#color-options}
 
-Met de kleuropties stelt u alle kleurbeheerinformatie voor de PDF Generator in. Voor instructies over de toegang tot van de opties van de Kleur, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Met de kleuropties stelt u alle kleurbeheerinformatie voor de PDF Generator in. Voor instructies over de toegang tot van de opties van de Kleur, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 ### Adobe Color-instellingen {#adobe-color-settings}
 
@@ -399,9 +399,9 @@ In de traditionele afdrukproductie wordt een halftoon gemaakt door een halftoonr
 
 ## Geavanceerde opties {#advanced-options}
 
-Met de opties Geavanceerd geeft u op welke DSC-opmerkingen (Documentstructuurconventies) u in het PDF-bestand wilt behouden en hoe u andere opties wilt instellen die van invloed zijn op de conversie vanuit PostScript. In een PostScript-bestand bevatten DSC-opmerkingen informatie over het bestand (zoals de brontoepassing, de aanmaakdatum en de afdrukstand). Ze bieden ook structuur voor paginabeschrijvingen in het bestand (zoals instructies voor het begin en einde van een prologsectie). DSC-opmerkingen kunnen handig zijn wanneer uw document wordt afgedrukt of ingedrukt. Voor instructies over de toegang tot van de Geavanceerde opties, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Met de opties Geavanceerd geeft u op welke DSC-opmerkingen (Documentstructuurconventies) u in het PDF-bestand wilt behouden en hoe u andere opties wilt instellen die van invloed zijn op de conversie vanuit PostScript. In een PostScript-bestand bevatten DSC-opmerkingen informatie over het bestand (zoals de brontoepassing, de aanmaakdatum en de afdrukstand). Ze bieden ook structuur voor paginabeschrijvingen in het bestand (zoals instructies voor het begin en einde van een prologsectie). DSC-opmerkingen kunnen handig zijn wanneer uw document wordt afgedrukt of ingedrukt. Voor instructies over de toegang tot van de Geavanceerde opties, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
-Als u werkt met de geavanceerde opties, is het handig om te weten wat de PostScript-taal is en hoe deze wordt vertaald naar PDF. (Zie [ Adobe PostScript 3 ](https://www.adobe.com/products/postscript/main.html).)
+Als u werkt met de geavanceerde opties, is het handig om te weten wat de PostScript-taal is en hoe deze wordt vertaald naar PDF. (Zie [&#x200B; Adobe PostScript 3 &#x200B;](https://www.adobe.com/products/postscript/main.html).)
 
 **staat het Dossier van PostScript toe om de Montages van Adobe PDF met voeten te treden:** gebruikt montages die in een dossier van PostScript in plaats van het huidige de montagesdossier van Adobe PDF worden opgeslagen. Voordat u een PostScript-bestand verwerkt, kunt u parameters in het bestand plaatsen om de volgende aspecten te beheren:
 
@@ -453,7 +453,7 @@ Bestanden die voldoen aan de PDF/A-standaard worden vooral gebruikt voor archive
 >
 >Als u een controlemap instelt voor het maken van bestanden die voldoen aan de PDF/A-standaard, moet u ervoor zorgen dat u geen beveiliging aan de map toevoegt. Codering wordt niet toegestaan door de PDF/A-standaard.
 
-Voor instructies over de toegang tot van de Normen die en nalevingsopties rapporteren, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Voor instructies over de toegang tot van de Normen die en nalevingsopties rapporteren, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 **Norm van de Naleving:** selecteer een norm om een rapport te produceren dat erop wijst of het dossier aan de vereisten voldoet en, als niet, welke problemen werden ontmoet. Wanneer Compatibiliteit op de pagina Algemene instellingen is ingesteld op Acrobat 4.0, zijn de volgende opties ingeschakeld. Als Compatibiliteit is ingesteld op Acrobat 5.0, zijn alleen de Acrobat 5.0-opties beschikbaar om te selecteren. Wanneer Compatibiliteit is ingesteld op een andere optie, worden de volgende opties grijs weergegeven:
 
@@ -511,7 +511,7 @@ Deze opties worden ingeschakeld wanneer Compatibiliteit (in het gedeelte Algemee
 
 ## Oorspronkelijke weergaveopties {#initial-view-options}
 
-Deze opties zijn ingedeeld in drie gebieden: Documentopties, Vensteropties en Interfaceopties. Voor instructies over de toegang tot van de Eerste meningsopties, zie [ PDF montages ](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
+Deze opties zijn ingedeeld in drie gebieden: Documentopties, Vensteropties en Interfaceopties. Voor instructies over de toegang tot van de Eerste meningsopties, zie [&#x200B; PDF montages &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings) toevoegen of uitgeven.
 
 Als u opties wilt gebruiken, selecteert u Instellingen voor beginweergave instellen.
 

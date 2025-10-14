@@ -31,15 +31,15 @@ Deze gids leidt u door de belangrijkste hoofdloze vertaalonderwerpen zodat u na 
 
 Het doel is om u een breed begrip van technologie zonder kop te geven, hoe AEM inhoud zonder kop dient en hoe u het kunt vertalen. Als u met geen van deze onderwerpen vertrouwd bent, is dit uw ideale plaats om te beginnen.
 
-Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de grondkennis van deze reis. Overweeg verwijzend naar onze technische documentatie die onder de [ extra hieronder middelensectie wordt verbonden.](#additional-resources)
+Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de grondkennis van deze reis. Overweeg verwijzend naar onze technische documentatie die onder de [&#x200B; extra hieronder middelensectie wordt verbonden.](#additional-resources)
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[ de Reis van de Documentatie van A ](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[&#x200B; de Reis van de Documentatie van A &#x200B;](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe de Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [ AEM de Reizen van de Zetel ](/help/journey-headless/overview.md) zijn waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [&#x200B; AEM de Reizen van de Zetel &#x200B;](/help/journey-headless/overview.md) zijn waar te beginnen.
 
 ## Publiek {#audience}
 
@@ -56,7 +56,7 @@ Het volgende is de persoon die in deze reis interactie heeft.
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De vertaalspecialist werkt met de beheerder om configuratieveranderingen nodig voor vertaling zoals het installeren van een vertaalschakelaar aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Vertaalspecialisten werken samen met de inhoudarchitect om de organisatie van de inhoud te bepalen zodat het gemakkelijk kan worden vertaald. |
 
-De informatie in deze reis kan voor alle mensen nuttig zijn, maar sommige informatie kan aan bepaalde rollen overbodig zijn. Blijf voor [ aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
+De informatie in deze reis kan voor alle mensen nuttig zijn, maar sommige informatie kan aan bepaalde rollen overbodig zijn. Blijf voor [&#x200B; aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
 
 ## De Headless Translation Reis {#the-journey}
 
@@ -67,16 +67,16 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | AEM doorsnedenloze vertaalreis | Dit document |
-| 1 | [ leer over hoofdloze inhoud en hoe te om het in AEM te vertalen ](learn-about.md) | Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling. |
-| 2 | [ worden begonnen met AEM hoofdloze vertaling ](getting-started.md) | Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalhulpmiddelen werken. |
-| 3 | [ vorm de vertaalintegratie ](configure-connector.md) | Leer hoe u verbinding AEM maken met een vertaalservice. |
-| 4 | [ vorm vertaalregels ](translation-rules.md) | Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren. |
-| 5 | [ vertaal inhoud ](translate-content.md) | Gebruik de vertaalintegratie en de regels om uw inhoud zonder kop te vertalen. |
-| 6 | [ Publish vertaalde inhoud ](publish-content.md) | Leer hoe u uw vertaalde inhoud publiceert en de vertaling bijwerkt wanneer de onderliggende inhoud wordt bijgewerkt. |
+| 1 | [&#x200B; leer over hoofdloze inhoud en hoe te om het in AEM te vertalen &#x200B;](learn-about.md) | Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling. |
+| 2 | [&#x200B; worden begonnen met AEM hoofdloze vertaling &#x200B;](getting-started.md) | Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalhulpmiddelen werken. |
+| 3 | [&#x200B; vorm de vertaalintegratie &#x200B;](configure-connector.md) | Leer hoe u verbinding AEM maken met een vertaalservice. |
+| 4 | [&#x200B; vorm vertaalregels &#x200B;](translation-rules.md) | Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren. |
+| 5 | [&#x200B; vertaal inhoud &#x200B;](translate-content.md) | Gebruik de vertaalintegratie en de regels om uw inhoud zonder kop te vertalen. |
+| 6 | [&#x200B; Publish vertaalde inhoud &#x200B;](publish-content.md) | Leer hoe u uw vertaalde inhoud publiceert en de vertaling bijwerkt wanneer de onderliggende inhoud wordt bijgewerkt. |
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met uw Adobe zonder hoofd-vertaalreis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [ te lezen Leer over hoofdloze inhoud en hoe te om het in AEM ](learn-about.md) te vertalen
+U bent nu klaar om aan de slag te gaan met uw Adobe zonder hoofd-vertaalreis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en het artikel [&#x200B; te lezen Leer over hoofdloze inhoud en hoe te om het in AEM &#x200B;](learn-about.md) te vertalen
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -84,10 +84,10 @@ Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal 
 
 Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
-* [ Koploze het Authoring Journey ](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-* [ Eis van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
-* [ AEM Headless Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
-* [ AEM technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
-   * Een [ Inleiding aan AEM als Zwaartepunt CMS ](/help/sites-developing/headless/introduction.md)
-* [ AEM Headless leerprogramma&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.
-* Het [ AEM Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; Koploze het Authoring Journey &#x200B;](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
+* [&#x200B; Eis van de Architect zonder hoofd &#x200B;](/help/journey-headless/architect/overview.md) - Begin hier voor een inleiding aan de krachtige, en flexibele, headless eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
+* [&#x200B; AEM Headless Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
+* [&#x200B; AEM technische documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
+   * Een [&#x200B; Inleiding aan AEM als Zwaartepunt CMS &#x200B;](/help/sites-developing/headless/introduction.md)
+* [&#x200B; AEM Headless leerprogramma&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.
+* Het [&#x200B; AEM Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

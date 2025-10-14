@@ -41,7 +41,7 @@ In eerdere versies van Adobe Experience Manager (AEM) werden veel API&#39;s via 
 >
 >Het concept `Private` en `Public` in deze context mag niet worden verward met Java™-noties van openbare en particuliere klassen.
 
-![ image2018-2-12_23-52-48 ](assets/image2018-2-12_23-52-48.png)
+![&#x200B; image2018-2-12_23-52-48 &#x200B;](assets/image2018-2-12_23-52-48.png)
 
 #### Inhoudsclassificaties {#content-classifications}
 
@@ -69,15 +69,15 @@ In CRXDE Lite toegepaste mixen tonen inhoudsknooppunten en bomen die zijn gemark
 
 **Openbaar**
 
-![ image2018-2-8_23-34-5 ](assets/image2018-2-8_23-34-5.png)
+![&#x200B; image2018-2-8_23-34-5 &#x200B;](assets/image2018-2-8_23-34-5.png)
 
 **Definitief**
 
-![ image2018-2-8_23-34-56 ](assets/image2018-2-8_23-34-56.png)
+![&#x200B; image2018-2-8_23-34-56 &#x200B;](assets/image2018-2-8_23-34-56.png)
 
 **Intern**
 
-![ image2018-2-8_23-38-23 ](assets/image2018-2-8_23-38-23.png)
+![&#x200B; image2018-2-8_23-38-23 &#x200B;](assets/image2018-2-8_23-38-23.png)
 
 **Controle van de Gezondheid van de Inhoud**
 
@@ -85,7 +85,7 @@ In CRXDE Lite toegepaste mixen tonen inhoudsknooppunten en bomen die zijn gemark
 >
 >Vanaf AEM 6.5 raadt Adobe u aan de patroondetector te gebruiken om schendingen van de toegang tot inhoud te detecteren. Patroondetectorrapporten zijn gedetailleerder, detecteren meer problemen en verminderen de kans op valse positieven.
 >
->Voor meer informatie, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](/help/sites-deploying/pattern-detector.md) beoordelen.
+>Voor meer informatie, zie [&#x200B; die de Complexiteit van de Verbetering met de Detector van het Patroon &#x200B;](/help/sites-deploying/pattern-detector.md) beoordelen.
 
 AEM 6.5 wordt geleverd met een health check om klanten te waarschuwen als overlay- of referentieinhoud wordt gebruikt op een manier die niet in overeenstemming is met de inhoudclassificatie.
 
@@ -98,14 +98,14 @@ Ga als volgt te werk om deze nieuwe health check te openen:
 1. Van het AEM Scherm van het Huis, navigeer aan **Hulpmiddelen > Verrichtingen > de Rapporten van de Gezondheid**
 1. Klik **Sling/de Controle van de Toegang van de Inhoud van Granite**.
 
-   ![ screen_shot_2017-12-14at55648pm ](assets/screen_shot_2017-12-14at55648pm.png)
+   ![&#x200B; screen_shot_2017-12-14at55648pm &#x200B;](assets/screen_shot_2017-12-14at55648pm.png)
 
 Nadat de scan is voltooid, wordt een lijst met waarschuwingen weergegeven waarmee een eindgebruiker op de hoogte wordt gebracht van het beveiligde knooppunt waarnaar niet correct wordt verwezen:
 
-![ screenshot-2018-2-5health rapporten ](assets/screenshot-2018-2-5healthreports.png)
+![&#x200B; screenshot-2018-2-5health rapporten &#x200B;](assets/screenshot-2018-2-5healthreports.png)
 
 Na het herstellen van de schendingen keert het terug naar groene staat:
 
-![ screenshot-2018-2-5health reports-violi ](assets/screenshot-2018-2-5healthreports-violations.png)
+![&#x200B; screenshot-2018-2-5health reports-violi &#x200B;](assets/screenshot-2018-2-5healthreports-violations.png)
 
 De gezondheidscontrole toont informatie die door de achtergronddienst wordt verzameld die asynchroon controleert wanneer een bekleding of middeltype over alle Verschuivende onderzoekspaden wordt gebruikt. Als de inhoudmix onjuist wordt gebruikt, wordt een schending gemeld.

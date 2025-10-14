@@ -31,14 +31,14 @@ Zakelijke gebruikers hebben doorgaans geen kennis nodig van metagegevensrepresen
 
 ### Workflow gegevenswoordenboek {#data-dictionary-workflow}
 
-1. Een auteur [ leidt tot het Woordenboek van Gegevens ](#createdatadictionary) door of een schema of van kras te uploaden.
+1. Een auteur [&#x200B; leidt tot het Woordenboek van Gegevens &#x200B;](#createdatadictionary) door of een schema of van kras te uploaden.
 1. De auteur creeert brief en Interactieve Mededelingen die op het gegevenswoordenboek wordt gebaseerd en associeert de elementen van het gegevenswoordenboek in brief en Interactieve Mededelingen waar nodig.
 1. Een auteur kan het XML-bestand met voorbeeldgegevens downloaden. Dit bestand is gebaseerd op het schema van een gegevenswoordenboek. De auteur kan het XML-bestand met voorbeeldgegevens wijzigen. Dit bestand kan als testgegevens worden gekoppeld aan het gegevenswoordenboek. Hetzelfde wordt gebruikt tijdens de lettertypevoorvertoning.
-1. Terwijl [ previewing een brief ](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), verkiest een Auteur om de brief met gegevens (de Voorproef van de Douane) voor te vertonen. De brief wordt geopend vooraf gevuld met de gegevens die Auteur heeft verstrekt. Dit opent in creeer correspondentieinterface. De agent die deze brief previewing kan de inhoud, de gegevens, en de gehechtheid in deze brief wijzigen en kan de definitieve brief voorleggen. Voor meer informatie bij het creëren van brieven, zie [ correspondentie ](../../forms/using/create-letter.md) creëren.
+1. Terwijl [&#x200B; previewing een brief &#x200B;](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), verkiest een Auteur om de brief met gegevens (de Voorproef van de Douane) voor te vertonen. De brief wordt geopend vooraf gevuld met de gegevens die Auteur heeft verstrekt. Dit opent in creeer correspondentieinterface. De agent die deze brief previewing kan de inhoud, de gegevens, en de gehechtheid in deze brief wijzigen en kan de definitieve brief voorleggen. Voor meer informatie bij het creëren van brieven, zie [&#x200B; correspondentie &#x200B;](../../forms/using/create-letter.md) creëren.
 
 ## Vereiste {#prerequisite}
 
-Installeer het [ Pakket van de Verenigbaarheid ](compatibility-package.md) om de **optie van de Woordenboeken van Gegevens** op de **Forms** pagina te bekijken.
+Installeer het [&#x200B; Pakket van de Verenigbaarheid &#x200B;](compatibility-package.md) om de **optie van de Woordenboeken van Gegevens** op de **Forms** pagina te bekijken.
 
 ## Een gegevenswoordenboek maken {#createdatadictionary}
 
@@ -59,7 +59,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * **Markeringen:** (Facultatief) om douanemarkering tot stand te brengen, ga waarde op tekstgebied in en druk binnengaan. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
    * **Uitgebreide Eigenschappen**: (Facultatieve) Uitgezochte **voegt Gebied** toe om meta-gegevensattributen voor uw gegevenswoordenboek te specificeren. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
 
-   ![ eigenschappen van het woordenboek van Gegevens die in Duits ](do-not-localize/1_ddproperties.png) worden gespecificeerd
+   ![&#x200B; eigenschappen van het woordenboek van Gegevens die in Duits &#x200B;](do-not-localize/1_ddproperties.png) worden gespecificeerd
 
 1. (Facultatief) om een XSD schemadefinitie voor uw gegevenswoordenboek, onder de ruit van de Structuur van het Woordenboek van Gegevens te uploaden, uitgezochte **upload het Schema van XML**. Blader naar XSD dossier, selecteer het, en selecteer **Open**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
 
@@ -74,7 +74,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
    U kunt de drie stippen aan de rechterkant van een element selecteren en een element toevoegen aan de gegevenswoordenboekstructuur.
 
-   ![ 1_2_createanelement ](assets/1_2_createanelement.png)
+   ![&#x200B; 1_2_createanelement &#x200B;](assets/1_2_createanelement.png)
 
    Selecteer Samengesteld element, Verzamelingselement of Primitief element.
 
@@ -94,15 +94,15 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
    Voor informatie over bevestigingen in het Woordenboek van Gegevens, zie {de bevestigingen van de Redacteur van het Woordenboek van 0} Gegevens [&#128279;](#ddvalidations).
 
-   ![ 2_addddpropertiesbasic ](assets/2_addddpropertiesbasic.png)
+   ![&#x200B; 2_addddpropertiesbasic &#x200B;](assets/2_addddpropertiesbasic.png)
 
 1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt **ook selecteren voegt Gebied** toe en breidt de eigenschappen van een element DD uit.
 
-   ![ 3_addddpropertiesadvanced ](assets/3_addddpropertiesadvanced.png)
+   ![&#x200B; 3_addddpropertiesadvanced &#x200B;](assets/3_addddpropertiesadvanced.png)
 
 1. (Facultatief) kunt u om het even welk element verwijderen door de drie punten op de rechterkant van een element te tikken en **te selecteren schrapt**.
 
-   ![ 4_deleteelement ](assets/4_deleteelement.png)
+   ![&#x200B; 4_deleteelement &#x200B;](assets/4_deleteelement.png)
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 1. Selecteer een kop om de naam weer te geven van de elementen die naar het element verwijzen.
 
-   ![ lentcontent ](assets/lentcontent.png)
+   ![&#x200B; lentcontent &#x200B;](assets/lentcontent.png)
 
 1. Selecteer het element om de inhoud van de bovenliggende inhoud voor een ander element weer te geven.
 1. Als u een element wilt weergeven dat naar het element verwijst, selecteert u het op naam. De browser geeft het element, de letter of de interactieve communicatie weer.
@@ -416,7 +416,7 @@ Nadat u een gegevenswoordenboek hebt gemaakt, kunt u dit downloaden als een XML-
 1. Selecteer **Gegevens van de SteekproefXML van de Download**.
 1. Selecteer **O.K.** in het waakzame bericht.
 
-   Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand naar de computer met de naam &lt;data-dictionary-name>-SampleData. Nu kunt u dit dossier in een XML of tekstredacteur uitgeven om gegevensingangen te maken terwijl [ creërend een brief ](../../forms/using/create-letter.md).
+   Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand naar de computer met de naam &lt;data-dictionary-name>-SampleData. Nu kunt u dit dossier in een XML of tekstredacteur uitgeven om gegevensingangen te maken terwijl [&#x200B; creërend een brief &#x200B;](../../forms/using/create-letter.md).
 
 ## Internationalisatie van metagegevens {#internationalization-of-meta-data}
 

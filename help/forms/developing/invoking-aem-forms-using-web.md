@@ -27,17 +27,17 @@ De meeste AEM Forms-services in de servicecontainer zijn geconfigureerd om een w
 
 Met behulp van webservices kunt u dezelfde bewerkingen voor AEM Forms-services uitvoeren als met de Java API. Een voordeel van het gebruik van webservices om AEM Forms-services aan te roepen, is dat u een clienttoepassing kunt maken in een ontwikkelomgeving die SOAP ondersteunt. Een clienttoepassing is niet gebonden aan een specifieke ontwikkelomgeving of programmeertaal. Bijvoorbeeld, kunt u een cliënttoepassing tot stand brengen gebruikend Microsoft Visual Studio .NET en C# als programmeertaal.
 
-De diensten van AEM Forms worden blootgesteld over het SOAP protocol en zijn volgzaam WSI Basic Profile 1.1. De Interoperabiliteit van de Diensten van het Web (WSI) is een open normenorganisatie die Webdienst interoperabiliteit over platforms bevordert. Voor informatie, zie [ https://www.ws-i.org/ ](https://www.ws-i.org).
+De diensten van AEM Forms worden blootgesteld over het SOAP protocol en zijn volgzaam WSI Basic Profile 1.1. De Interoperabiliteit van de Diensten van het Web (WSI) is een open normenorganisatie die Webdienst interoperabiliteit over platforms bevordert. Voor informatie, zie [&#x200B; https://www.ws-i.org/ &#x200B;](https://www.ws-i.org).
 
 AEM Forms ondersteunt de volgende webservicenormen:
 
-* **Codering**: Steunt slechts document en letterlijke het coderen (die aangewezen het coderen volgens het BasisProfiel van WSI) is. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: Vertegenwoordigt een manier om gehechtheid met SOAP verzoeken te coderen. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Vertegenwoordigt een andere manier om gehechtheid met SOAP verzoeken te coderen. (Zie [ het Aanhalen AEM Forms gebruikend SwaRef ](#invoking-aem-forms-using-swaref).)
-* **SOAP met gehechtheid**: Steunt zowel MIME als DIME (de Directe Inkapseling van het Bericht van Internet). Deze protocollen zijn standaardmanieren om gehechtheid over SOAP te verzenden. Microsoft Visual Studio .NET-toepassingen gebruiken DIME. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](#invoking-aem-forms-using-base64-encoding).)
+* **Codering**: Steunt slechts document en letterlijke het coderen (die aangewezen het coderen volgens het BasisProfiel van WSI) is. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](#invoking-aem-forms-using-base64-encoding).)
+* **MTOM**: Vertegenwoordigt een manier om gehechtheid met SOAP verzoeken te coderen. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Vertegenwoordigt een andere manier om gehechtheid met SOAP verzoeken te coderen. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend SwaRef &#x200B;](#invoking-aem-forms-using-swaref).)
+* **SOAP met gehechtheid**: Steunt zowel MIME als DIME (de Directe Inkapseling van het Bericht van Internet). Deze protocollen zijn standaardmanieren om gehechtheid over SOAP te verzenden. Microsoft Visual Studio .NET-toepassingen gebruiken DIME. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](#invoking-aem-forms-using-base64-encoding).)
 * **WS-Veiligheid**: Steunt een het symbolische profiel van het gebruikersnaam wachtwoord, dat een standaardmanier is om gebruikersnamen en wachtwoorden als deel van de SOAP van de Veiligheid van WS te verzenden. AEM Forms ondersteunt ook HTTP-basisverificatie. s
 
-Als u AEM Forms-services wilt aanroepen met behulp van een webservice, maakt u doorgaans een proxybibliotheek die de service WSDL gebruikt. *het aanhalen van AEM Forms die de diensten van het Web gebruiken* sectie gebruikt JAX-WS om de volmachtsklassen van Java tot stand te brengen om de diensten aan te halen. (Zie [ Creërend de volmachtsklassen van Java gebruikend JAX-WS ](#creating-java-proxy-classes-using-jax-ws).)
+Als u AEM Forms-services wilt aanroepen met behulp van een webservice, maakt u doorgaans een proxybibliotheek die de service WSDL gebruikt. *het aanhalen van AEM Forms die de diensten van het Web gebruiken* sectie gebruikt JAX-WS om de volmachtsklassen van Java tot stand te brengen om de diensten aan te halen. (Zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend JAX-WS &#x200B;](#creating-java-proxy-classes-using-jax-ws).)
 
 U kunt de dienst WDSL terugwinnen door de volgende definitie URL te specificeren (de punten tussen haakjes zijn facultatief):
 
@@ -153,7 +153,7 @@ Geef de toepassingsnaam en de procesnaam in de WSDL-definitie op voor toegang to
 
 >[!NOTE]
 >
->Voor informatie over het voorbeeld `MyApplication/EncryptDocument` kortstondig proces, zie [ Kort gewoond procesvoorbeeld ](/help/forms/developing/aem-forms-processes.md).
+>Voor informatie over het voorbeeld `MyApplication/EncryptDocument` kortstondig proces, zie [&#x200B; Kort gewoond procesvoorbeeld &#x200B;](/help/forms/developing/aem-forms-processes.md).
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ Geef de toepassingsnaam en de procesnaam in de WSDL-definitie op voor toegang to
 
 **die tot nieuwe functionaliteit toegang hebben gebruikend de Webdiensten**
 
-Nieuwe AEM Forms-servicefuncties zijn toegankelijk via webservices. In AEM Forms is bijvoorbeeld de mogelijkheid geïntroduceerd om bijlagen te coderen met MTOM. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](#invoking-aem-forms-using-mtom).)
+Nieuwe AEM Forms-servicefuncties zijn toegankelijk via webservices. In AEM Forms is bijvoorbeeld de mogelijkheid geïntroduceerd om bijlagen te coderen met MTOM. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](#invoking-aem-forms-using-mtom).)
 
 Als u toegang wilt tot nieuwe functies die in AEM Forms zijn geïntroduceerd, geeft u het kenmerk `lc_version` op in de WSDL-definitie. Als u bijvoorbeeld toegang wilt krijgen tot nieuwe servicefunctionaliteit (inclusief MTOM-ondersteuning), geeft u de volgende WSDL-definitie op:
 
@@ -179,7 +179,7 @@ Als u toegang wilt tot nieuwe functies die in AEM Forms zijn geïntroduceerd, ge
 
 **de dienstBLOB van het Web gegevenstype**
 
-AEM Forms service WSDL&#39;s definiëren een groot aantal gegevenstypen. Een van de belangrijkste gegevenstypen in een webservice is een `BLOB` -type. Dit gegevenstype wordt toegewezen aan de klasse `com.adobe.idp.Document` wanneer u werkt met AEM Forms Java API&#39;s. (Zie [ het overgaan van gegevens tot de diensten van AEM Forms gebruikend Java API ](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+AEM Forms service WSDL&#39;s definiëren een groot aantal gegevenstypen. Een van de belangrijkste gegevenstypen in een webservice is een `BLOB` -type. Dit gegevenstype wordt toegewezen aan de klasse `com.adobe.idp.Document` wanneer u werkt met AEM Forms Java API&#39;s. (Zie [&#x200B; het overgaan van gegevens tot de diensten van AEM Forms gebruikend Java API &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
 Een `BLOB` -object verzendt en haalt binaire gegevens op (bijvoorbeeld PDF-bestanden, XML-gegevens enzovoort) van en naar AEM Forms-services. Het type `BLOB` wordt als volgt gedefinieerd in een service-WSDL:
 
@@ -214,11 +214,11 @@ Als een AEM Forms-servicebewerking een `BLOB` -type als invoerwaarde vereist, ma
 
 Wijs als volgt waarden toe aan velden die tot de instantie `BLOB` behoren:
 
-* **Base64**: Om gegevens als tekst over te gaan die in een formaat Base64 wordt gecodeerd, plaats de gegevens op het `BLOB.binaryData` gebied en plaats het gegevenstype in het formaat MIME (bijvoorbeeld, `application/pdf`) op het `BLOB.contentType` gebied. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: Om binaire gegevens in een gehechtheid over te gaan MTOM, plaats de gegevens op het `BLOB.MTOM` gebied. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP framework. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Om binaire gegevens in een gehechtheid over te gaan WS-I SwaRef, plaats de gegevens op het `BLOB.swaRef` gebied. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework. (Zie [ het Aanhalen AEM Forms gebruikend SwaRef ](#invoking-aem-forms-using-swaref).)
-* **MIME of DIME gehechtheid**: Om gegevens in een MIME of DIME gehechtheid over te gaan, maak de gegevens aan het SOAP verzoek vast gebruikend inheemse API van het SOAP kader. Stel de id van de bijlage in het veld `BLOB.attachmentID` in. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](#invoking-aem-forms-using-base64-encoding).)
-* **Verre URL**: Als het gegeven op een Webserver wordt ontvangen en over HTTP URL toegankelijk is, plaats HTTP URL op het `BLOB.remoteURL` gebied. (Zie [ het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP ](#invoking-aem-forms-using-blob-data-over-http).)
+* **Base64**: Om gegevens als tekst over te gaan die in een formaat Base64 wordt gecodeerd, plaats de gegevens op het `BLOB.binaryData` gebied en plaats het gegevenstype in het formaat MIME (bijvoorbeeld, `application/pdf`) op het `BLOB.contentType` gebied. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](#invoking-aem-forms-using-base64-encoding).)
+* **MTOM**: Om binaire gegevens in een gehechtheid over te gaan MTOM, plaats de gegevens op het `BLOB.MTOM` gebied. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP framework. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Om binaire gegevens in een gehechtheid over te gaan WS-I SwaRef, plaats de gegevens op het `BLOB.swaRef` gebied. Deze instelling koppelt de gegevens aan de SOAP aanvraag met behulp van het Java JAX-WS-framework. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend SwaRef &#x200B;](#invoking-aem-forms-using-swaref).)
+* **MIME of DIME gehechtheid**: Om gegevens in een MIME of DIME gehechtheid over te gaan, maak de gegevens aan het SOAP verzoek vast gebruikend inheemse API van het SOAP kader. Stel de id van de bijlage in het veld `BLOB.attachmentID` in. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](#invoking-aem-forms-using-base64-encoding).)
+* **Verre URL**: Als het gegeven op een Webserver wordt ontvangen en over HTTP URL toegankelijk is, plaats HTTP URL op het `BLOB.remoteURL` gebied. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP &#x200B;](#invoking-aem-forms-using-blob-data-over-http).)
 
 **Toegang hebbend tot gegevens in BLOB voorwerpen die van de diensten** zijn teruggekeerd
 
@@ -229,7 +229,7 @@ Het transmissieprotocol voor geretourneerde `BLOB` -objecten is afhankelijk van 
 
    * De SOAP eindpuntparameter van de dienst het StandaardProtocol voor de Voorwerpen van de Blob van de Output wordt geplaatst aan Slim.
 
-     Voor elke dienst met een SOAP eindpunt, laat de beleidsconsole u het transmissieprotocol voor om het even welke teruggekeerde blobs specificeren. (Zie [ beleidshulp ](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Voor elke dienst met een SOAP eindpunt, laat de beleidsconsole u het transmissieprotocol voor om het even welke teruggekeerde blobs specificeren. (Zie [&#x200B; beleidshulp &#x200B;](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * AEM Forms-service neemt een of meer documenten op als invoer.
 
@@ -351,7 +351,7 @@ In de volgende tabel worden de gegevenstypen van Java weergegeven en het overeen
 
 U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklassen. Met deze klassen kunt u AEM Forms-services aanroepen. Met Apache Ant kunt u een constructiescript maken waarmee Java-proxyklassen worden gegenereerd door te verwijzen naar een AEM Forms-service WSDL. U kunt JAX-WS-proxybestanden genereren door de volgende stappen uit te voeren:
 
-1. Installeer Apache Ant op de clientcomputer. (Zie [ https://ant.apache.org/bindownload.cgi ](https://ant.apache.org/bindownload.cgi).)
+1. Installeer Apache Ant op de clientcomputer. (Zie [&#x200B; https://ant.apache.org/bindownload.cgi &#x200B;](https://ant.apache.org/bindownload.cgi).)
 
    * Voeg de binmap toe aan het klassepad.
    * Stel de omgevingsvariabele `ANT_HOME` in op de map waarin u Ant hebt geïnstalleerd.
@@ -364,7 +364,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 
    JDK 1.6 omvat het havenprogramma dat in het build.xml- dossier wordt gebruikt. JDK 1.5 omvat dat programma niet.
 
-1. Installeer JAX-WS op de clientcomputer. (Zie [ Java API voor de Diensten van het Web van XML ](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+1. Installeer JAX-WS op de clientcomputer. (Zie [&#x200B; Java API voor de Diensten van het Web van XML &#x200B;](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 1. Gebruik JAX-WS en Apache Ant om Java-proxyklassen te genereren. Maak een Ant-constructiescript om deze taak uit te voeren. Het volgende script is een voorbeeldscript voor Ant-build met de naam build.xml:
 
    ```xml
@@ -446,7 +446,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 
    >[!NOTE]
    >
-   >Alle Java-webservices worden snel gestart (behalve de Forms-service) bij Programmeren met AEM formulieren. U maakt Java-proxybestanden met JAX-WS. Bovendien begint alle Java-webservice snel met SwaRef. (Zie [ het Aanhalen AEM Forms gebruikend SwaRef ](#invoking-aem-forms-using-swaref).)
+   >Alle Java-webservices worden snel gestart (behalve de Forms-service) bij Programmeren met AEM formulieren. U maakt Java-proxybestanden met JAX-WS. Bovendien begint alle Java-webservice snel met SwaRef. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend SwaRef &#x200B;](#invoking-aem-forms-using-swaref).)
 
 **zie ook**
 
@@ -460,21 +460,21 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 
 ## Java-proxyklassen maken met Apache Axis {#creating-java-proxy-classes-using-apache-axis}
 
-Met het hulpprogramma Apache Axis WSDL2Java kunt u een Forms-service converteren naar Java-proxyklassen. Met deze klassen kunt u Forms-servicebewerkingen aanroepen. Met Apache Ant kunt u Axis-bibliotheekbestanden genereren van een service-WSDL. U kunt Apache As bij URL [ https://ws.apache.org/axis/ ](https://ws.apache.org/axis/) downloaden.
+Met het hulpprogramma Apache Axis WSDL2Java kunt u een Forms-service converteren naar Java-proxyklassen. Met deze klassen kunt u Forms-servicebewerkingen aanroepen. Met Apache Ant kunt u Axis-bibliotheekbestanden genereren van een service-WSDL. U kunt Apache As bij URL [&#x200B; https://ws.apache.org/axis/ &#x200B;](https://ws.apache.org/axis/) downloaden.
 
 >[!NOTE]
 >
->De webservice begint snel met het gebruik van Java-proxyklassen die met Apache Axis zijn gemaakt. Met de Forms-webservice Snel begint u ook met het coderingstype Base64. (Zie [ Snelle Begin van de Dienst API van Forms ](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts).)
+>De webservice begint snel met het gebruik van Java-proxyklassen die met Apache Axis zijn gemaakt. Met de Forms-webservice Snel begint u ook met het coderingstype Base64. (Zie [&#x200B; Snelle Begin van de Dienst API van Forms &#x200B;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts).)
 
 U kunt Java-bibliotheekbestanden van de as genereren door de volgende stappen uit te voeren:
 
-1. Installeer Apache Ant op de clientcomputer. Het is beschikbaar in [ https://ant.apache.org/bindownload.cgi ](https://ant.apache.org/bindownload.cgi).
+1. Installeer Apache Ant op de clientcomputer. Het is beschikbaar in [&#x200B; https://ant.apache.org/bindownload.cgi &#x200B;](https://ant.apache.org/bindownload.cgi).
 
    * Voeg de binmap toe aan het klassepad.
    * Stel de omgevingsvariabele `ANT_HOME` in op de map waarin u Ant hebt geïnstalleerd.
 
-1. Installeer Apache Axis 1.4 op de clientcomputer. Het is beschikbaar in [ https://ws.apache.org/axis/ ](https://ws.apache.org/axis/).
-1. Opstelling de klassenweg om de dossiers van Axis JAR in uw cliënt van de Webdienst te gebruiken, zoals die in de installatie van de As instructies in [ https://ws.apache.org/axis/java/install.html ](https://ws.apache.org/axis/java/install.html) wordt beschreven.
+1. Installeer Apache Axis 1.4 op de clientcomputer. Het is beschikbaar in [&#x200B; https://ws.apache.org/axis/ &#x200B;](https://ws.apache.org/axis/).
+1. Opstelling de klassenweg om de dossiers van Axis JAR in uw cliënt van de Webdienst te gebruiken, zoals die in de installatie van de As instructies in [&#x200B; https://ws.apache.org/axis/java/install.html &#x200B;](https://ws.apache.org/axis/java/install.html) wordt beschreven.
 1. Gebruik Apache WSDL2Java in As om Java-proxyklassen te genereren. Maak een Ant-constructiescript om deze taak uit te voeren. Het volgende script is een voorbeeldscript voor Ant-build met de naam build.xml:
 
    ```java
@@ -570,7 +570,7 @@ U kunt de dienst van AEM Forms aanhalen gebruikend het coderen Base64. Base64-co
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -722,7 +722,7 @@ Het gaat hier om het gebruik van MTOM om het volgende kortstondige AEM Forms-pro
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -818,7 +818,7 @@ Neem bijvoorbeeld het `MyApplication/EncryptDocument` -proces dat een onbeveilig
 
 >[!NOTE]
 >
->Bij de meeste AEM Forms-servicebewerkingen wordt snel met MTOM gestart. U kunt deze snelle begin in de overeenkomstige snelle beginsectie van de dienst bekijken. Bijvoorbeeld, om de snelle beginsectie van de Output te zien, zie [ Snelle Start van de Dienst API van de Output ](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>Bij de meeste AEM Forms-servicebewerkingen wordt snel met MTOM gestart. U kunt deze snelle begin in de overeenkomstige snelle beginsectie van de dienst bekijken. Bijvoorbeeld, om de snelle beginsectie van de Output te zien, zie [&#x200B; Snelle Start van de Dienst API van de Output &#x200B;](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
 **zie ook**
 
@@ -830,13 +830,13 @@ Neem bijvoorbeeld het `MyApplication/EncryptDocument` -proces dat een onbeveilig
 
 ## AEM Forms aanroepen met SwaRef {#invoking-aem-forms-using-swaref}
 
-U kunt de diensten van AEM Forms aanhalen gebruikend SwaRef. De inhoud van het XML-element `wsi:swaRef` wordt verzonden als een bijlage binnen een SOAP die de verwijzing naar de bijlage opslaat. Wanneer het aanhalen van de dienst van Forms door SwaRef te gebruiken, creeer de volmachtsklassen van Java door Java API voor de Diensten van het Web van XML te gebruiken (JAX-WS). (Zie [ Java API voor de Diensten van het Web van XML ](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+U kunt de diensten van AEM Forms aanhalen gebruikend SwaRef. De inhoud van het XML-element `wsi:swaRef` wordt verzonden als een bijlage binnen een SOAP die de verwijzing naar de bijlage opslaat. Wanneer het aanhalen van de dienst van Forms door SwaRef te gebruiken, creeer de volmachtsklassen van Java door Java API voor de Diensten van het Web van XML te gebruiken (JAX-WS). (Zie [&#x200B; Java API voor de Diensten van het Web van XML &#x200B;](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 
 De discussie gaat hier over het aanroepen van het volgende kortstondige Forms-proces met de naam `MyApplication/EncryptDocument` door gebruik te maken van SwaRef.
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -859,7 +859,7 @@ Voer de volgende stappen uit om het `MyApplication/EncryptDocument` -proces aan 
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Voor informatie, zie [ Creërend de volmachtsklassen van Java gebruikend JAX-WS ](#creating-java-proxy-classes-using-jax-ws).
+   Voor informatie, zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend JAX-WS &#x200B;](#creating-java-proxy-classes-using-jax-ws).
 
    >[!NOTE]
    >
@@ -907,7 +907,7 @@ Voer de volgende stappen uit om het `MyApplication/EncryptDocument` -proces aan 
 
 >[!NOTE]
 >
->Bij de meeste AEM Forms-servicetransacties wordt SwaRef snel gestart. U kunt deze snelle begin in de overeenkomstige snelle beginsectie van de dienst bekijken. Bijvoorbeeld, om de snelle beginsectie van de Output te zien, zie [ Snelle Start van de Dienst API van de Output ](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>Bij de meeste AEM Forms-servicetransacties wordt SwaRef snel gestart. U kunt deze snelle begin in de overeenkomstige snelle beginsectie van de dienst bekijken. Bijvoorbeeld, om de snelle beginsectie van de Output te zien, zie [&#x200B; Snelle Start van de Dienst API van de Output &#x200B;](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
 **zie ook**
 
@@ -921,7 +921,7 @@ U kunt AEM Forms-services aanroepen met behulp van webservices en BLOB-gegevens 
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u het codevoorbeeld wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -930,11 +930,11 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 >[!NOTE]
 >
->Het wordt aanbevolen bekend te zijn met het gebruik van SOAP Invoking van AEM Forms. (Zie [ het Aanhalen van AEM Forms gebruikend de Diensten van het Web ](#invoking-aem-forms-using-web-services).)
+>Het wordt aanbevolen bekend te zijn met het gebruik van SOAP Invoking van AEM Forms. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend de Diensten van het Web &#x200B;](#invoking-aem-forms-using-web-services).)
 
 ### Creërend een .NET cliëntassemblage die gegevens over HTTP gebruikt {#creating-a-net-client-assembly-that-uses-data-over-http}
 
-Om een cliëntassemblage tot stand te brengen die gegevens over HTTP gebruikt, volg het proces dat in [ wordt gespecificeerd het Aanhalen van AEM Forms gebruikend het coderen Base64 ](#invoking-aem-forms-using-base64-encoding). Wijzig de URL in de proxyklasse echter zodanig dat deze `?blob=http` in plaats van `?blob=base64` bevat. Deze actie zorgt ervoor dat de gegevens over HTTP worden overgegaan. Zoek in de proxyklasse de volgende coderegel:
+Om een cliëntassemblage tot stand te brengen die gegevens over HTTP gebruikt, volg het proces dat in [&#x200B; wordt gespecificeerd het Aanhalen van AEM Forms gebruikend het coderen Base64 &#x200B;](#invoking-aem-forms-using-base64-encoding). Wijzig de URL in de proxyklasse echter zodanig dat deze `?blob=http` in plaats van `?blob=base64` bevat. Deze actie zorgt ervoor dat de gegevens over HTTP worden overgegaan. Zoek in de proxyklasse de volgende coderegel:
 
 ```java
  "http://localhost:8080/soap/services/MyApplication/EncryptDocument";
@@ -982,7 +982,7 @@ U kunt een AEM Forms-service aanroepen met Java-proxyklassen en BLOB-gegevens vi
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Voor informatie, zie [ Creërend de volmachtsklassen van Java gebruikend JAX-WS ](#creating-java-proxy-classes-using-jax-ws).
+   Voor informatie, zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend JAX-WS &#x200B;](#creating-java-proxy-classes-using-jax-ws).
 
    >[!NOTE]
    >
@@ -1035,11 +1035,11 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 1. Verkrijgt het onbeveiligde document van de PDF dat tot het proces wordt overgegaan. Deze handeling is gebaseerd op de bewerking `SetValue` . De invoerparameter voor dit proces is een `document` procesvariabele met de naam `inDoc` .
 1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze handeling is gebaseerd op de bewerking `PasswordEncryptPDF` . Het met wachtwoord gecodeerde PDF-document wordt geretourneerd in een procesvariabele met de naam `outDoc` .
 
-Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u de codevoorbeelden wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Als u de codevoorbeelden wilt volgen, maakt u een proces met de naam `MyApplication/EncryptDocument` met Workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
->Het aanroepen van AEM Forms-servicebewerkingen met DIME is afgekeurd. Het wordt aanbevolen MTOM te gebruiken. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](#invoking-aem-forms-using-mtom).)
+>Het aanroepen van AEM Forms-servicebewerkingen met DIME is afgekeurd. Het wordt aanbevolen MTOM te gebruiken. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](#invoking-aem-forms-using-mtom).)
 
 ### Creërend een .NET project dat DIME gebruikt {#creating-a-net-project-that-uses-dime}
 
@@ -1050,7 +1050,7 @@ Om een .NET project tot stand te brengen dat de dienst van Forms kan aanhalen ge
 
 **Installing de Verbeteringen 2.0 van de Diensten van het Web**
 
-Installeer de Verbeteringen 2.0 van de Diensten van het Web op uw ontwikkelingscomputer en integreer het met Microsoft Visual Studio .NET. U kunt de Verbeteringen 2.0 van de Diensten van het Web van het [ Centrum van de Download van Microsoft downloaden.](https://www.microsoft.com/downloads/search.aspx)
+Installeer de Verbeteringen 2.0 van de Diensten van het Web op uw ontwikkelingscomputer en integreer het met Microsoft Visual Studio .NET. U kunt de Verbeteringen 2.0 van de Diensten van het Web van het [&#x200B; Centrum van de Download van Microsoft downloaden.](https://www.microsoft.com/downloads/search.aspx)
 
 Van deze Web-pagina, onderzoek naar de Verbeteringen van de Diensten van het Web 2.0 en download het op uw ontwikkelingscomputer. Met deze download plaatst u een bestand met de naam Microsoft WSE 2.0 SPI.msi op uw computer. Voer het installatieprogramma uit en volg de online instructies.
 
@@ -1117,13 +1117,13 @@ U kunt een Forms-service aanroepen met DIME. Neem bijvoorbeeld het `MyApplicatio
 
 ### Apache Axis Java-proxyklassen maken die gebruikmaken van DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}
 
-Met het hulpprogramma Apache Axis WSDL2Java kunt u een service-WSDL converteren naar Java-proxyklassen, zodat u servicebewerkingen kunt activeren. Met Apache Ant kunt u Axis-bibliotheekbestanden genereren vanuit een AEM Forms-service WSDL waarmee u de service kunt aanroepen. (Zie [ Creërend de volmachtsklassen van Java gebruikend de As van Apache ](#creating-java-proxy-classes-using-apache-axis).)
+Met het hulpprogramma Apache Axis WSDL2Java kunt u een service-WSDL converteren naar Java-proxyklassen, zodat u servicebewerkingen kunt activeren. Met Apache Ant kunt u Axis-bibliotheekbestanden genereren vanuit een AEM Forms-service WSDL waarmee u de service kunt aanroepen. (Zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend de As van Apache &#x200B;](#creating-java-proxy-classes-using-apache-axis).)
 
 Met het hulpprogramma Apache Axis WSDL2Java worden JAVA-bestanden gegenereerd die methoden bevatten die worden gebruikt om SOAP aanvragen naar een service te verzenden. SOAP verzoeken die door de dienst worden ontvangen worden gedecodeerd door de as-geproduceerde bibliotheken en terug in de methodes en de argumenten teruggezet.
 
 Voer de volgende stappen uit om de service `MyApplication/EncryptDocument` aan te roepen (die in Workbench is ingebouwd) met behulp van door as gegenereerde bibliotheekbestanden en DIME:
 
-1. Maak Java-proxyklassen die de `MyApplication/EncryptDocument` service WSDL gebruiken met Apache Axis. (Zie [ Creërend de volmachtsklassen van Java gebruikend de As van Apache ](#creating-java-proxy-classes-using-apache-axis).)
+1. Maak Java-proxyklassen die de `MyApplication/EncryptDocument` service WSDL gebruiken met Apache Axis. (Zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend de As van Apache &#x200B;](#creating-java-proxy-classes-using-apache-axis).)
 1. Neem de Java-proxyklassen op in het klassepad.
 1. Maak een `MyApplicationEncryptDocumentServiceLocator` -object met behulp van de constructor.
 1. Maak een `URL` -object door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de WSDL-definitie van de AEM Forms-service aangeeft. Zorg ervoor dat u `?blob=dime` opgeeft aan het einde van de URL van het SOAP eindpunt. Gebruik bijvoorbeeld
@@ -1237,7 +1237,7 @@ Daarna, gebruik die bevestiging SAML om het even welke dienst aan te halen die a
 
 ### Het gebruiken van de klassen van de As van Apache en op SAML-Gebaseerde authentificatie {#using-apache-axis-classes-and-saml-based-authentication}
 
-U kunt een AEM Forms-service aanroepen door Java-proxyklassen die zijn gemaakt met de Axis-bibliotheek. (Zie [ Creërend de volmachtsklassen van Java gebruikend de As van Apache ](#creating-java-proxy-classes-using-apache-axis).)
+U kunt een AEM Forms-service aanroepen door Java-proxyklassen die zijn gemaakt met de Axis-bibliotheek. (Zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend de As van Apache &#x200B;](#creating-java-proxy-classes-using-apache-axis).)
 
 Wanneer het gebruiken van AXIS die op SAML-Gebaseerde authentificatie gebruikt, registreer de verzoek en reactiemanager met As. Apache Axis roept de handler aan voordat een aanroepingsverzoek naar AEM Forms wordt verzonden. Maak een Java-klasse die `org.apache.axis.handlers.BasicHandler` uitbreidt om een handler te registreren.
 
@@ -1329,11 +1329,11 @@ Het volgende codevoorbeeld roept de dienst van AEM Forms gebruikend op SAML-Geba
 
 ### Het gebruiken van een .NET cliëntassemblage en op SAML-Gebaseerde authentificatie {#using-a-net-client-assembly-and-saml-based-authentication}
 
-U kunt de dienst van Forms aanhalen door een .NET cliëntassemblage en op SAML-Gebaseerde authentificatie te gebruiken. Om dit te doen, moet u de Verbeteringen 3.0 van de Dienst van het Web (WSE) gebruiken. Voor informatie over het creëren van een .NET cliëntassemblage die WSE gebruikt, zie [ Creërend een .NET project dat DIME ](#creating-a-net-project-that-uses-dime) gebruikt.
+U kunt de dienst van Forms aanhalen door een .NET cliëntassemblage en op SAML-Gebaseerde authentificatie te gebruiken. Om dit te doen, moet u de Verbeteringen 3.0 van de Dienst van het Web (WSE) gebruiken. Voor informatie over het creëren van een .NET cliëntassemblage die WSE gebruikt, zie [&#x200B; Creërend een .NET project dat DIME &#x200B;](#creating-a-net-project-that-uses-dime) gebruikt.
 
 >[!NOTE]
 >
->In de sectie DIME wordt WSE 2.0 gebruikt. Om op SAML-Gebaseerde authentificatie te gebruiken, volg de zelfde instructies die in het DIME onderwerp worden gespecificeerd. Vervang WSE 2.0 echter door WSE 3.0. Installeer de Verbeteringen 3.0 van de Diensten van het Web op uw ontwikkelingscomputer en integreer het met Microsoft Visual Studio .NET. U kunt de Verbeteringen 3.0 van de Diensten van het Web van het [ Centrum van de Download van Microsoft ](https://www.microsoft.com/downloads/search.aspx) downloaden.
+>In de sectie DIME wordt WSE 2.0 gebruikt. Om op SAML-Gebaseerde authentificatie te gebruiken, volg de zelfde instructies die in het DIME onderwerp worden gespecificeerd. Vervang WSE 2.0 echter door WSE 3.0. Installeer de Verbeteringen 3.0 van de Diensten van het Web op uw ontwikkelingscomputer en integreer het met Microsoft Visual Studio .NET. U kunt de Verbeteringen 3.0 van de Diensten van het Web van het [&#x200B; Centrum van de Download van Microsoft &#x200B;](https://www.microsoft.com/downloads/search.aspx) downloaden.
 
 De architectuur WSE gebruikt Beleid, Assertions, en de gegevenstypes SecurityToken. Geef voor een webserviceaanroep kort een beleid op. Een beleid kan meerdere beweringen hebben. Elke bewering kan filters bevatten. Een filter wordt aangehaald in bepaalde stadia in een vraag van de Webdienst en, op dat ogenblik, kunnen zij het SOAP verzoek wijzigen. Voor volledige details, zie de Verbeteringen 3.0 van de Dienst van het Web documentatie.
 
@@ -1483,7 +1483,7 @@ Als u probeert een AEM Forms-servicebewerking, zoals de bewerking PDF genereren 
  </bindings>
 ```
 
-Gebruik dit XML-bestand wanneer u Java-proxybestanden maakt met JAX-WS. (Zie [ Creërend de volmachtsklassen van Java gebruikend JAX-WS ](#creating-java-proxy-classes-using-jax-ws).)
+Gebruik dit XML-bestand wanneer u Java-proxybestanden maakt met JAX-WS. (Zie [&#x200B; Creërend de volmachtsklassen van Java gebruikend JAX-WS &#x200B;](#creating-java-proxy-classes-using-jax-ws).)
 
 Verwijs naar dit dossier van XML wanneer het uitvoeren van het hulpmiddel JAX-WS (wsimport.exe) door - te gebruiken de optie van de bevellijn `b`. Werk het element `wsdlLocation` in het XML-bindingsbestand bij om de URL van AEM Forms op te geven.
 
@@ -1520,7 +1520,7 @@ De volgende lijst specificeert gegevenstypes die niet tussen veelvoudige dienst 
 * `Roles`
 * `BLOB`
 
-Om dit probleem te voorkomen, wordt aanbevolen de gegevenstypen volledig te kwalificeren. Bijvoorbeeld, overweeg een .NET toepassing die zowel de dienst van Forms als de dienst van de Handtekening gebruikend een de dienstverwijzing van verwijzingen voorziet. Beide serviceverwijzingen bevatten een `BLOB` -klasse. Als u een `BLOB` -instantie wilt gebruiken, kwalificeert u het `BLOB` -object volledig wanneer u het declareert. Deze benadering wordt getoond in het volgende codevoorbeeld. Voor informatie over dit codevoorbeeld, zie [ digitaal het Ondertekenen Interactieve Forms ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Om dit probleem te voorkomen, wordt aanbevolen de gegevenstypen volledig te kwalificeren. Bijvoorbeeld, overweeg een .NET toepassing die zowel de dienst van Forms als de dienst van de Handtekening gebruikend een de dienstverwijzing van verwijzingen voorziet. Beide serviceverwijzingen bevatten een `BLOB` -klasse. Als u een `BLOB` -instantie wilt gebruiken, kwalificeert u het `BLOB` -object volledig wanneer u het declareert. Deze benadering wordt getoond in het volgende codevoorbeeld. Voor informatie over dit codevoorbeeld, zie [&#x200B; digitaal het Ondertekenen Interactieve Forms &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 Het volgende C# codevoorbeeld ondertekent een interactief formulier dat door de dienst van Forms wordt teruggegeven. De clienttoepassing heeft twee serviceverwijzingen. De `BLOB` -instantie die aan de Forms-service is gekoppeld, behoort tot de naamruimte `SignInteractiveForm.ServiceReference2` . Op dezelfde manier behoort de instantie `BLOB` die aan de handtekeningservice is gekoppeld, tot de naamruimte `SignInteractiveForm.ServiceReference1` . Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf* .
 

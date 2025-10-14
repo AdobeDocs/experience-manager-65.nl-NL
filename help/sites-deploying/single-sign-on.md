@@ -37,9 +37,9 @@ Geef dezelfde kenmerknaam op voor beide services. Het kenmerk wordt opgenomen in
 
 ## SSO configureren {#configuring-sso}
 
-Om SSO voor een AEM instantie te vormen, vormt u de [ manager van de Authentificatie SSO ](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Om SSO voor een AEM instantie te vormen, vormt u de [&#x200B; manager van de Authentificatie SSO &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+1. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
    Bijvoorbeeld voor NTLM-set:
 
@@ -76,17 +76,17 @@ Om SSO voor een AEM instantie te vormen, vormt u de [ manager van de Authentific
 
 >[!NOTE]
 >
->Enig Sign wordt vaak gebruikt met [ LDAP ](/help/sites-administering/ldap-config.md).
+>Enig Sign wordt vaak gebruikt met [&#x200B; LDAP &#x200B;](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Als u ook [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) met de Server van de Informatie van Microsoft® Internet (IIS) gebruikt, dan wordt de extra configuratie vereist binnen:
+>Als u ook [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) met de Server van de Informatie van Microsoft® Internet (IIS) gebruikt, dan wordt de extra configuratie vereist binnen:
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >In `disp_iis.ini` set:
->(zie [ installerend Dispatcher met de Server van de Informatie van Microsoft® Internet ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL#microsoft-internet-information-server) voor volledige details)
+>(zie [&#x200B; installerend Dispatcher met de Server van de Informatie van Microsoft® Internet &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=nl-NL#microsoft-internet-information-server) voor volledige details)
 >
 >* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
 >* `replaceauthorization=1` (vervangt een header met de naam &quot;Authorization&quot; (behalve &quot;Basic&quot;) door de waarde &quot;Basic&quot; (equivalent))
@@ -104,7 +104,7 @@ U kunt zien welke authentificatiemanager op om het even welke sectie van de inho
 
 De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Als u bijvoorbeeld handler-A configureert voor het pad `/` en handler-B voor het pad `/content` , zal een aanvraag naar `/content/mypage.html` eerst handler-B opvragen.
 
-![ screen_shot_2012-02-15at21006pm ](assets/screen_shot_2012-02-15at21006pm.png)
+![&#x200B; screen_shot_2012-02-15at21006pm &#x200B;](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Voorbeeld {#example}
 

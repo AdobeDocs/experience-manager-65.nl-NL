@@ -31,6 +31,6 @@ Om de dienst van het verwijzingsfilter te vormen:
 * Schakel het veld Lege waarden toestaan in zodat u lege of ontbrekende verwijzingskoppen kunt toestaan.
 * Klik **sparen** om uw veranderingen te bewaren.
 
-![ chlimage_1-58 ](assets/chlimage_1-58a.png)
+![&#x200B; chlimage_1-58 &#x200B;](assets/chlimage_1-58a.png)
 
-Zie de [ Montages van de Configuratie OSGI ](/help/sites-deploying/osgi-configuration-settings.md) en [ Controlelijst van de Veiligheid - Kwesties met de Versmeder van het Verzoek van de Verschuiving van de Intersite ](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.
+Zie de [&#x200B; Montages van de Configuratie OSGI &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) en [&#x200B; Controlelijst van de Veiligheid - Kwesties met de Versmeder van het Verzoek van de Verschuiving van de Intersite &#x200B;](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor verdere details.

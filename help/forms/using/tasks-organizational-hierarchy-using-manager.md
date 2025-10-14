@@ -31,7 +31,7 @@ In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebbe
 
 AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
 
-1. Maak een DSC. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor AEM Forms&quot;onderwerp in [ Programmerend met AEM Forms ](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
+1. Maak een DSC. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor AEM Forms&quot;onderwerp in [&#x200B; Programmerend met AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
 1. In DSC, bepaal nieuw SPI voor hiërarchiebeheer om directe rapporten en hiërarchie binnen de gebruikers van AEM Forms te bepalen. Hier volgt een voorbeeld van een Java™-codefragment.
 
    ```java
@@ -116,6 +116,6 @@ AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de ge
 
 Het volgende scherm illustreert de toegang tot van de taken van directe rapporten en de beschikbare acties.
 
-![ cu_manager_view ](assets/cu_manager_view.png)
+![&#x200B; cu_manager_view &#x200B;](assets/cu_manager_view.png)
 
 De taken van de toegang tot directe rapporten en handelen op de taken

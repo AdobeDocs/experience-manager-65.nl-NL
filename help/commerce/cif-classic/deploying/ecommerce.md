@@ -32,10 +32,10 @@ Adobe biedt twee versies van het Commerce integration framework:
 
 ## Andere implementaties implementeren {#deploying-other-implementations}
 
-Voor AEM en Adobe Commerce, zie [ AEM en de integratie van Adobe Commerce ](/help/commerce/cif/integrating/magento.md) gebruikend het [ Commerce integration framework ](/help/commerce/cif/introduction.md).
+Voor AEM en Adobe Commerce, zie [&#x200B; AEM en de integratie van Adobe Commerce &#x200B;](/help/commerce/cif/integrating/magento.md) gebruikend het [&#x200B; Commerce integration framework &#x200B;](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >
->Voor informatie over concepten en het beheren van eCommerce implementaties, zie [ Administering eCommerce ](/help/commerce/cif-classic/administering/ecommerce.md).
+>Voor informatie over concepten en het beheren van eCommerce implementaties, zie [&#x200B; Administering eCommerce &#x200B;](/help/commerce/cif-classic/administering/ecommerce.md).
 >
->Voor informatie over het uitbreiden van eCommerce mogelijkheden, zie [ Ontwikkelend eCommerce ](/help/commerce/cif-classic/developing/ecommerce.md).
+>Voor informatie over het uitbreiden van eCommerce mogelijkheden, zie [&#x200B; Ontwikkelend eCommerce &#x200B;](/help/commerce/cif-classic/developing/ecommerce.md).

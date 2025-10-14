@@ -17,13 +17,13 @@ ht-degree: 0%
 
 Leer een aangepast thema te maken, afzonderlijke onderdelen op te maken en Webben Fonts in een thema te gebruiken.
 
-![ held-beeld ](do-not-localize/08-style_your_adaptiveformmain.png)
+![&#x200B; held-beeld &#x200B;](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
+Dit leerprogramma is een stap in [&#x200B; creeert Uw Eerste AanpassingsVorm &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeksen. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
 ## Over de zelfstudie  {#about-the-tutorial}
 
-U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt kant-en-klare thema&#39;s toepassen die worden geleverd met de adaptieve formuliereditor of zelf aangepaste thema&#39;s maken. AEM [!DNL Forms] verstrekken a [ themaredacteur ](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/themes.html) om douanethema&#39;s tot stand te brengen. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
+U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt kant-en-klare thema&#39;s toepassen die worden geleverd met de adaptieve formuliereditor of zelf aangepaste thema&#39;s maken. AEM [!DNL Forms] verstrekken a [&#x200B; themaredacteur &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/using/themes.html) om douanethema&#39;s tot stand te brengen. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
 
 Aan het einde van de zelfstudie moet u het volgende kunnen doen:
 
@@ -34,7 +34,7 @@ Aan het einde van de zelfstudie moet u het volgende kunnen doen:
 
 Het formulier moet er ongeveer als volgt uitzien nadat u de zelfstudie hebt voltooid:
 
-![ Vorm met een douanethema ](assets/styled-adaptive-form.png)
+![&#x200B; Vorm met een douanethema &#x200B;](assets/styled-adaptive-form.png)
 
 ## Voordat u begint {#before-you-start}
 
@@ -52,16 +52,16 @@ De adaptieve vormenredacteur verstrekt veelvoudige uit-van-de-doos thema&#39;s. 
 
 1. Open het aangepaste formulier voor bewerking.
 
-   [ http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+   [&#x200B; http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Open eigenschappen van **[!UICONTROL Adaptive Form container]** . Navigeer in de eigenschappenbrowser naar **[!UICONTROL Basic]** > **[!UICONTROL Adaptive Form Theme]** . In het veld **[!UICONTROL Adaptive Form Theme]** worden alle kant-en-klare thema&#39;s en aangepaste thema&#39;s weergegeven. Standaard wordt het thema Canvas toegepast.
-1. Selecteer een thema in het veld **[!UICONTROL Adaptive Form Theme]** . Bijvoorbeeld, **het thema van het Onderzoek**. Selecteer ![ name_6_3_forms_save ](assets/aem_6_3_forms_save.png) zodat kunt u het geselecteerde thema toepassen.
+1. Selecteer een thema in het veld **[!UICONTROL Adaptive Form Theme]** . Bijvoorbeeld, **het thema van het Onderzoek**. Selecteer ![&#x200B; name_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png) zodat kunt u het geselecteerde thema toepassen.
 
-   ![ Aangepaste vorm met het standaardthema ](assets/default-adaptive-form.png)
+   ![&#x200B; Aangepaste vorm met het standaardthema &#x200B;](assets/default-adaptive-form.png)
 
    **Cijfer:** *Aangepaste vorm met het standaardthema*
 
-   ![ Aangepaste vorm met het thema van het Onderzoek ](assets/adaptive-form-with-survey-theme.png)
+   ![&#x200B; Aangepaste vorm met het thema van het Onderzoek &#x200B;](assets/adaptive-form-with-survey-theme.png)
 
    **Figuur:** *Aangepaste vorm met het thema van het Onderzoek*
 
@@ -75,26 +75,26 @@ Voor het hierboven weergegeven ontwerp zijn wijzigingen vereist in de plaatsaand
 
    1. Open het formulier in de formuliereditor.
 
-      [ http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+      [&#x200B; http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Selecteer het embordbeeld in de [!UICONTROL header] component en selecteer ![ cmp ](assets/cmppr.png) **[!UICONTROL properties]**. Selecteer in de eigenschap [!UICONTROL image] de optie X om de bestaande logoafbeelding te verwijderen.
-   1. Selecteer **[!UICONTROL upload]**, selecteer logo.png, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png) om de veranderingen te bewaren. Het beeld werd gedownload in [ alvorens u ](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie begint.
-   1. Selecteer kopbaltekst, `We.Retail`, en selecteer ![ aem_6_3_edit ](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Wijzig de koptekst in `we retail` . Pas vette opmaak alleen toe op `we` in `we retail` .
+   1. Selecteer het embordbeeld in de [!UICONTROL header] component en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) **[!UICONTROL properties]**. Selecteer in de eigenschap [!UICONTROL image] de optie X om de bestaande logoafbeelding te verwijderen.
+   1. Selecteer **[!UICONTROL upload]**, selecteer logo.png, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png) om de veranderingen te bewaren. Het beeld werd gedownload in [&#x200B; alvorens u &#x200B;](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie begint.
+   1. Selecteer kopbaltekst, `We.Retail`, en selecteer ![&#x200B; aem_6_3_edit &#x200B;](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Wijzig de koptekst in `we retail` . Pas vette opmaak alleen toe op `we` in `we retail` .
 
-      ![ wij-retail-logo-text ](assets/we-retail-logo-text.png)
+      ![&#x200B; wij-retail-logo-text &#x200B;](assets/we-retail-logo-text.png)
 
 1. Titel verwijderen en plaatsaanduidingstekst toevoegen:
 
-   1. Selecteer het gebied van identiteitskaart van de Klant en selecteer ![ cmp ](assets/cmppr.png) eigenschappen.
+   1. Selecteer het gebied van identiteitskaart van de Klant en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) eigenschappen.
    1. Kopieer de inhoud van het veld **[!UICONTROL Title]** naar het veld **[!UICONTROL Placeholder Text]** .
-   1. Schrap de inhoud van het **[!UICONTROL Title]** gebied en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+   1. Schrap de inhoud van het **[!UICONTROL Title]** gebied en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
    1. Herhaal de vorige drie stappen voor alle tekstvakken, het numerieke vak en het e-mailveld in het formulier.
 
-      ![ update-adaptive-form ](assets/updated-adaptive-form.png)
+      ![&#x200B; update-adaptive-form &#x200B;](assets/updated-adaptive-form.png)
 
 ## Stap 3: Een aangepast thema maken voor het aangepaste formulier {#step-create-a-custom-theme-for-your-adaptive-form}
 
-U kunt de [ themaredacteur ](/help/forms/using/themes.md) gebruiken om douanethema&#39;s tot stand te brengen. De themaredacteur is een almachtige redacteur WYSIWYG. Het is een visuele methode om CSS op diverse componenten van een adaptieve vorm toe te passen. Het biedt fijnere besturingselementen voor stijlcomponenten en deelvensters van een adaptieve vorm.
+U kunt de [&#x200B; themaredacteur &#x200B;](/help/forms/using/themes.md) gebruiken om douanethema&#39;s tot stand te brengen. De themaredacteur is een almachtige redacteur WYSIWYG. Het is een visuele methode om CSS op diverse componenten van een adaptieve vorm toe te passen. Het biedt fijnere besturingselementen voor stijlcomponenten en deelvensters van een adaptieve vorm.
 
 Een thema is een afzonderlijke entiteit, zoals adaptieve formulieren. Deze bevat stijlen (CSS) voor de componenten en deelvensters van een adaptief formulier. Stijlen omvatten CSS-eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, wordt de opgegeven stijl toegepast op de corresponderende componenten van een adaptief formulier.
 
@@ -102,7 +102,7 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 ### Een thema maken {#create-a-theme}
 
-1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]** . Het gebrek URL is [ http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]** . Het gebrek URL is [&#x200B; http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Selecteer **[!UICONTROL Create]** en selecteer **[!UICONTROL Theme]** . De pagina [!UICONTROL Create Theme] met de velden die nodig zijn om een thema te maken, wordt weergegeven. De velden **[!UICONTROL Title]** en **[!UICONTROL Name]** zijn verplicht:
 
    * **Titel:** specificeer een titel van het thema. Bijvoorbeeld, **Globaal Thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
@@ -110,15 +110,15 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 1. Selecteer **[!UICONTROL Create]**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Selecteer **[!UICONTROL Open]** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor de opmaak gebruikt de themaeditor een adaptief formulier dat niet meer in de doos wordt geleverd bij AEM [!DNL Forms] .
 
-   Voor informatie over het gebruiken van de themaredacteur UI, zie [ Ongeveer de themaredacteur ](/help/forms/using/themes.md#aboutthethemeeditor).
+   Voor informatie over het gebruiken van de themaredacteur UI, zie [&#x200B; Ongeveer de themaredacteur &#x200B;](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Selecteer **[!UICONTROL Theme Options]** ![ thema-opties ](assets/theme-options.png) > **[!UICONTROL Configure]**. Op het **[!UICONTROL Preview Form]** gebied, selecteer **verschepen-adres-toe:voegen-update-vorm** adaptieve vorm, uitgezochte ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png), **[!UICONTROL Save]**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Selecteer **[!UICONTROL Cancel]** om terug te keren naar de themaeditor.
+1. Selecteer **[!UICONTROL Theme Options]** ![&#x200B; thema-opties &#x200B;](assets/theme-options.png) > **[!UICONTROL Configure]**. Op het **[!UICONTROL Preview Form]** gebied, selecteer **verschepen-adres-toe:voegen-update-vorm** adaptieve vorm, uitgezochte ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png), **[!UICONTROL Save]**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Selecteer **[!UICONTROL Cancel]** om terug te keren naar de themaeditor.
 
-   ![ douane-thema ](assets/custom-theme.png)
+   ![&#x200B; douane-thema &#x200B;](assets/custom-theme.png)
 
    **Cijfer:** *de redacteur van het Thema met het verschepen-adres-toe:voegen-update-vorm adaptieve vorm*
 
-   ![ creeer-a-thema ](assets/create-a-theme.png)
+   ![&#x200B; creeer-a-thema &#x200B;](assets/create-a-theme.png)
 
    **Cijfer:** *Aangepaste vorm met de standaardvorm*
 
@@ -126,9 +126,9 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief formulier. Over het algemeen bevat de koptekst het logo en de naam van de organisatie, bevat de voettekst copyrightinformatie en deze blijven in meerdere vormen van een organisatie identiek. De kop- en voettekst van het adaptieve formulier voor het verzendadres-add-update-formulier opmaken:
 
-1. Navigeer in het deelvenster Kiezers naar de optie **[!UICONTROL Header]** > **[!UICONTROL Text]** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Als het paneel niet zichtbaar is, uitgezochte ![ knevel-zij-paneel ](assets/toggle-side-panel.png) Knevel paneel.
+1. Navigeer in het deelvenster Kiezers naar de optie **[!UICONTROL Header]** > **[!UICONTROL Text]** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Als het paneel niet zichtbaar is, uitgezochte ![&#x200B; knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png) Knevel paneel.
 
-1. Plaats de volgende eigenschappen in **[!UICONTROL Text]** accordion en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Plaats de volgende eigenschappen in **[!UICONTROL Text]** accordion en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -136,18 +136,18 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Lettertypekleur | FFFFFF |
    | Tekengrootte | 54 px |
 
-1. Selecteer de [!UICONTROL header] -widget en selecteer **[!UICONTROL Header]** . De opties voor het opmaken van de koptekstwidget worden aan de linkerkant weergegeven. Breid **[!UICONTROL Dimensions & Position]** accordion uit, plaats **[!UICONTROL Height]** aan `120px`, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer de [!UICONTROL header] -widget en selecteer **[!UICONTROL Header]** . De opties voor het opmaken van de koptekstwidget worden aan de linkerkant weergegeven. Breid **[!UICONTROL Dimensions & Position]** accordion uit, plaats **[!UICONTROL Height]** aan `120px`, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 1. Vouw de accordeon **[!UICONTROL Background]** van de koptekstwidget uit, stel de **[!UICONTROL Background Color]** in op `F6921E.`
 
-   Houd de cursor boven **[!UICONTROL Image & Gradient]** > **[!UICONTROL + Add]** en selecteer **[!UICONTROL Image]** . Plaats de volgende eigenschappen en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+   Houd de cursor boven **[!UICONTROL Image & Gradient]** > **[!UICONTROL + Add]** en selecteer **[!UICONTROL Image]** . Plaats de volgende eigenschappen en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
-   | image | Upload header-style.png. Het beeld werd gedownload in [ alvorens u ](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie begint. |
+   | image | Upload header-style.png. Het beeld werd gedownload in [&#x200B; alvorens u &#x200B;](/help/forms/using/style-your-adaptive-form.md#before-you-start) sectie begint. |
    | Positie | Rechts onder |
    | Naast elkaar | Niet herhalen |
 
-1. Selecteer in de themaeditor het logo in de koptekst en selecteer **[!UICONTROL Header Logo]** . Breid de Dimensionen &amp; de accordeon van de Positie uit, plaats de volgende eigenschappen en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer in de themaeditor het logo in de koptekst en selecteer **[!UICONTROL Header Logo]** . Breid de Dimensionen &amp; de accordeon van de Positie uit, plaats de volgende eigenschappen en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -171,13 +171,13 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
     </tbody> 
    </table>
 
-1. Selecteer de voettekstwidget en selecteer **[!UICONTROL Footer]** . Breid **[!UICONTROL Background]** accordion uit, plaats **[!UICONTROL Background Color]** aan `F6921E`, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer de voettekstwidget en selecteer **[!UICONTROL Footer]** . Breid **[!UICONTROL Background]** accordion uit, plaats **[!UICONTROL Background Color]** aan `F6921E`, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
 ### De component voor gegevensvastlegging opmaken en een achtergrond op het adaptieve formulier toepassen {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast te leggen. Bijvoorbeeld tekstvak en numeriek vak. U kunt voor elke component een identieke stijl opgeven voor alle componenten voor het vastleggen van gegevens of een aparte stijl. In deze zelfstudie wordt een identieke stijl toegepast op numerieke vakken (Customer ID, ZIP Code) en tekstvakken (Customer ID, Name, Shipping Address, State, Email). De componenten voor gegevensvastlegging opmaken:
 
-1. Selecteer het veld **[!UICONTROL Customer ID]** en selecteer de optie **[!UICONTROL Field Widget]** . Plaats de volgende eigenschappen en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer het veld **[!UICONTROL Customer ID]** en selecteer de optie **[!UICONTROL Field Widget]** . Plaats de volgende eigenschappen en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -233,15 +233,15 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
     </tbody> 
     </table>
 
-1. Selecteer het lege gebied boven het veld **[!UICONTROL Customer ID]** en selecteer **[!UICONTROL Responsive Panel Container]** . Stel **[!UICONTROL Background]** > **[!UICONTROL Background Color]** in op F1F2F2. Selecteer ![ name_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer het lege gebied boven het veld **[!UICONTROL Customer ID]** en selecteer **[!UICONTROL Responsive Panel Container]** . Stel **[!UICONTROL Background]** > **[!UICONTROL Background Color]** in op F1F2F2. Selecteer ![&#x200B; name_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
-   ![ Responsieve paneelcontainer ](do-not-localize/responsive-panel-container.png)
+   ![&#x200B; Responsieve paneelcontainer &#x200B;](do-not-localize/responsive-panel-container.png)
 
 ### De knoppen opmaken {#style-the-buttons}
 
-U kunt een douanethema gebruiken om een identieke stijl op alle knopen van de adaptieve vorm toe te passen en [ gealigneerd het stileren ](/help/forms/using/inline-style-adaptive-forms.md) om een stijl op een specifieke knoop toe te passen. U kunt als volgt de knoppen opmaken:
+U kunt een douanethema gebruiken om een identieke stijl op alle knopen van de adaptieve vorm toe te passen en [&#x200B; gealigneerd het stileren &#x200B;](/help/forms/using/inline-style-adaptive-forms.md) om een stijl op een specifieke knoop toe te passen. U kunt als volgt de knoppen opmaken:
 
-1. Selecteer de knop **[!UICONTROL Submit]** en selecteer de optie **[!UICONTROL Button]** . Plaats de volgende eigenschappen en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer de knop **[!UICONTROL Submit]** en selecteer de optie **[!UICONTROL Button]** . Plaats de volgende eigenschappen en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -289,27 +289,27 @@ U kunt een douanethema gebruiken om een identieke stijl op alle knopen van de ad
     </tbody> 
    </table>
 
-1. [ pas het douanethema ](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form), Globaal Thema, op uw adaptieve vorm toe. Als de stijl niet op het adaptieve formulier wordt weerspiegeld, maakt u de cache van de browser leeg en probeert u het opnieuw.
+1. [&#x200B; pas het douanethema &#x200B;](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form), Globaal Thema, op uw adaptieve vorm toe. Als de stijl niet op het adaptieve formulier wordt weerspiegeld, maakt u de cache van de browser leeg en probeert u het opnieuw.
 
-   ![ stijl-gegeven-vangst-componenten ](assets/style-data-capture-components.png)
+   ![&#x200B; stijl-gegeven-vangst-componenten &#x200B;](assets/style-data-capture-components.png)
 
 ## Stap 4: afzonderlijke onderdelen opmaken {#step-style-individual-components}
 
 Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke componenten worden opgemaakt in de editor voor adaptieve formulieren.
 
-1. Open het aangepaste formulier voor bewerking. [ http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+1. Open het aangepaste formulier voor bewerking. [&#x200B; http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 1. Selecteer op de bovenste balk de optie **[!UICONTROL Style]** .
 
-   ![ stijl-optie ](assets/style-option.png)
+   ![&#x200B; stijl-optie &#x200B;](assets/style-option.png)
 
-1. Selecteer de **[!UICONTROL Attach]** knoop en selecteer ![ aem_6_3_edit ](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in in de accordeon **[!UICONTROL Dimensions and Position]** :
+1. Selecteer de **[!UICONTROL Attach]** knoop en selecteer ![&#x200B; aem_6_3_edit &#x200B;](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in in de accordeon **[!UICONTROL Dimensions and Position]** :
 
    | Eigenschap | Waarde |
    |---|---|
    | Float | Links |
    | Breedte | 10% |
 
-1. Selecteer de **[!UICONTROL Government approved address proof]** optie en selecteer ![ aem_6_3_edit ](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
+1. Selecteer de **[!UICONTROL Government approved address proof]** optie en selecteer ![&#x200B; aem_6_3_edit &#x200B;](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
 
    <table> 
     <tbody> 
@@ -399,7 +399,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
     </tbody> 
    </table>
 
-1. Selecteer de **[!UICONTROL Submit]** knoop en selecteer ![ aem_6_3_edit ](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
+1. Selecteer de **[!UICONTROL Submit]** knoop en selecteer ![&#x200B; aem_6_3_edit &#x200B;](assets/aem_6_3_edit.png) pictogram. Stel de volgende eigenschappen in:
 
    <table> 
     <tbody> 
@@ -437,14 +437,14 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
     </tbody> 
    </table>
 
-   ![ stiled-adaptive-form-1 ](assets/styled-adaptive-form-1.png)
+   ![&#x200B; stiled-adaptive-form-1 &#x200B;](assets/styled-adaptive-form-1.png)
 
 ## Stap 5: Sectie van de beurs: Het gebruiken van Webben Fonts in een douanethema {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpen. Op alle apparaten waarop het adaptieve formulier wordt weergegeven, worden mogelijk niet de fonts gebruikt om het adaptieve formulier te ontwerpen. U kunt een service voor weblettertypen gebruiken om de vereiste lettertypen aan het doelapparaat te leveren.
 
 [!DNL Adobe Fonts] is een service Webben Fonts. U kunt de service configureren en gebruiken met adaptieve formulieren. U kunt [!DNL Adobe Fonts] als volgt aanpassen:
-1. Blader de [ bibliotheek van de doopvonten van de Adobe ](https://fonts.adobe.com/) en kies doopvont om uw vorm te stileren.
+1. Blader de [&#x200B; bibliotheek van de doopvonten van de Adobe &#x200B;](https://fonts.adobe.com/) en kies doopvont om uw vorm te stileren.
 <!--
 >[!NOTE]
 >
@@ -456,7 +456,7 @@ U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpe
 
 1. Klik op de knop &lt;/> om de familie aan een webproject toe te voegen, voor het geval u een lettertype vindt dat u bevalt.
 
-   ![ selecteren-doopvont-van-doopvont-bibliotheek ](assets/select-font-from-font-library.png)
+   ![&#x200B; selecteren-doopvont-van-doopvont-bibliotheek &#x200B;](assets/select-font-from-font-library.png)
 
    Er verschijnt een dialoogvenster Lettertypen toevoegen aan een webproject.
 
@@ -467,11 +467,11 @@ U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpe
 2. Noem uw Webproject.
 3. Schakel de selectievakjes in om de tekendikten en -stijlen te selecteren die u wilt opnemen.
 
-   ![ voeg een doopvontbibliotheek ](assets/add-a-font-window.png) toe
+   ![&#x200B; voeg een doopvontbibliotheek &#x200B;](assets/add-a-font-window.png) toe
 
 4. Selecteer **klik** om het project tot stand te brengen.
 5. Kopieer de insluitcode en de URL van het scherm.
-   ![ bed code en URL ](assets/font-add-url.png) in
+   ![&#x200B; bed code en URL &#x200B;](assets/font-add-url.png) in
 
 6. Klik **Gedaan** om het venster van het Webproject te sluiten.
 7. Meld u aan bij uw AEM en ga naar de URL `http://server:port/crx/de/index.jsp#`
@@ -479,7 +479,7 @@ U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpe
 9. Ga naar de nieuwe map `clientlibs` en voeg de eigenschappen `allowProxy` en `categories` toe.
 10. Navigeer naar `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` en maak een css-map.
 11. Ga naar de gemaakte CSS-map en maak een bestand. Maak bijvoorbeeld een bestand als `fonts.css` en plak de insluitcode samen met de URL.
-    ![ de structuur van de Omslag ](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![&#x200B; de structuur van de Omslag &#x200B;](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Sla de wijzigingen op.
 
 >[!NOTE]

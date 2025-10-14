@@ -81,7 +81,7 @@ U kunt meerdere notities toevoegen, de geschreven notities bewerken en deze verw
 1. Open een taak en klik het **Nota&#39;s** lusje, als het proces het toestaat.
 1. Typ een titel voor de nota in het **vakje van de Titel**, en typ de tekst van de nota in het **3&rbrace; vakje van de Nota &lbrace;.**
 1. Selecteer het **niveau van Toestemmingen** voor de nota voor andere gebruikers die aan het proces deelnemen.
-1. Klik **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een nota schrappen door **te klikken schrapt** knoop ![ Beeld van een afval kan ](assets/icondelete.png) naast de nota.
+1. Klik **OK**. Een tekstbestand dat uw notitie bevat, wordt aan het formulier gekoppeld. U kunt een notitie bijwerken door erop te klikken en de tekst rechtstreeks te wijzigen. U kunt een nota schrappen door **te klikken schrapt** knoop ![&#x200B; Beeld van een afval kan &#x200B;](assets/icondelete.png) naast de nota.
 
 ### Een bijlage toevoegen {#add-an-attachment}
 
@@ -96,7 +96,7 @@ U kunt ook opmerkingen over de bijlage toevoegen. U kunt een van de volgende toe
 1. Klik het **lusje van Bijlagen** en selecteer **Bijlage**.
 1. Klik **doorbladeren** om het dossier te selecteren om vast te maken.
 1. Selecteer het **niveau van Toestemmingen** voor de gehechtheid voor andere gebruikers die aan het proces deelnemen. Als u **Gelezen** selecteert, kunnen andere gebruikers het dossier plaatselijk bewaren. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
-1. Klik **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een dossier schrappen door het **knoop ![ Beeld van de Schrapping** te klikken ](assets/icondelete.png) naast de gehechtheid.
+1. Klik **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een dossier schrappen door het **knoop ![&#x200B; Beeld van de Schrapping** te klikken &#x200B;](assets/icondelete.png) naast de gehechtheid.
 
 ## Concepten van formulieren opslaan {#saving-draft-copies-of-forms}
 
@@ -104,7 +104,7 @@ Als u een formulier later moet invullen en verzenden, kunt u een conceptkopie va
 
 Nadat u een conceptformulier opnieuw hebt geopend en verzonden, wordt het concept verwijderd uit de categorie Concepten.
 
-Ook, kunt u werkruimte vormen om de informatie die door een gebruiker als ontwerp wordt ingegaan automatisch op te slaan. Voor meer informatie, zie [ het Leiden Voorkeur ](/help/forms/using/getting-started-livecycle-html-workspace.md).
+Ook, kunt u werkruimte vormen om de informatie die door een gebruiker als ontwerp wordt ingegaan automatisch op te slaan. Voor meer informatie, zie [&#x200B; het Leiden Voorkeur &#x200B;](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 >[!NOTE]
 >
@@ -126,6 +126,6 @@ U kunt elk proces toevoegen aan de categorie Favorieten. Door favorieten in te s
 
 >[!NOTE]
 >
->Als u gewoonlijk processen start wanneer u de AEM Forms-werkruimte gebruikt, kunt u bij Locatie starten de categorie Favorieten automatisch weergeven wanneer u de AEM Forms-werkruimte start. Voor meer details, zie het Leiden Voorkeur in [ Begonnen het worden met de werkruimte van AEM Forms ](/help/forms/using/getting-started-livecycle-html-workspace.md).
+>Als u gewoonlijk processen start wanneer u de AEM Forms-werkruimte gebruikt, kunt u bij Locatie starten de categorie Favorieten automatisch weergeven wanneer u de AEM Forms-werkruimte start. Voor meer details, zie het Leiden Voorkeur in [&#x200B; Begonnen het worden met de werkruimte van AEM Forms &#x200B;](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Als u een proces als favoriet wilt markeren, selecteert u de taak in de desbetreffende categorie en klikt u op de holle ster. De ster wordt gouden. Als u de markering van een proces als favoriet wilt opheffen, klikt u nogmaals op de gouden ster.

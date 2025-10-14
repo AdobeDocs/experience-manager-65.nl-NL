@@ -30,12 +30,12 @@ PhoneGap CLI instellen (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.h
 
 Voor iOS: voor de ontwikkeling van iPhones en iPads hebt u Apple Xcode-IDE nodig.
 
-* Download het voor vrije [ hier ](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Download het voor vrije [&#x200B; hier &#x200B;](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1).
 * PhoneGap iOS-platformhulplijn (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Voor Android™: voor de ontwikkeling van iPhones en iPads hebt u Android™ Stuido IDE van Google nodig.
 
-* Download het voor vrije [ hier ](https://developer.android.com/studio).
+* Download het voor vrije [&#x200B; hier &#x200B;](https://developer.android.com/studio).
 * PhoneGap Android™-platformhandleiding (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## De Source downloaden {#download-the-source}
@@ -44,12 +44,12 @@ Wanneer u uw ontwikkelomgeving met succes hebt versneld, downloadt u de bron van
 
 * Klik op de vervolgkeuzelijst PhoneGap Build-tegel.
 
-![ chlimage_1-45 ](assets/chlimage_1-45.png)
+![&#x200B; chlimage_1-45 &#x200B;](assets/chlimage_1-45.png)
 
 * Klik op Source downloaden.
 * Selecteer de gewenste bron in het modaal station van Source downloaden.
 
-![ chlimage_1-46 ](assets/chlimage_1-46.png)
+![&#x200B; chlimage_1-46 &#x200B;](assets/chlimage_1-46.png)
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ De gereedschappen voor ontwikkelaars inschakelen:
 
 * Klik op Geavanceerd in het venster Voorkeuren
 
-![ chlimage_1-47 ](assets/chlimage_1-47.png)
+![&#x200B; chlimage_1-47 &#x200B;](assets/chlimage_1-47.png)
 
 * Schakel &quot;Ontwikkelmenu tonen in menubalk&quot; in
 * Het venster Voorkeuren sluiten
@@ -133,7 +133,7 @@ phonegap run <platform> --emulator
 * Het submenu iOS Simulator selecteren
 * Klik op home.html
 
-![ chlimage_1-48 ](assets/chlimage_1-48.png)
+![&#x200B; chlimage_1-48 &#x200B;](assets/chlimage_1-48.png)
 
 ## Fouten opsporen in JavaScript met Safari&#39;s webcontrole {#debug-javascript-with-safari-s-web-inspector}
 
@@ -144,11 +144,11 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 * Klik op het regelnummer naast een onderbrekingspunt
 * Interactie met apparaat of emulator
 
-![ chlimage_1-49 ](assets/chlimage_1-49.png)
+![&#x200B; chlimage_1-49 &#x200B;](assets/chlimage_1-49.png)
 
 * Gebruik de besturingsknoppen om door te gaan met de uitvoering, stap over, stap in en stap uit de methoden:
 
-![ Vijf verschillende werkende die controleknopen in een horizontale rij worden gericht.](do-not-localize/chlimage_1-4.png)
+![&#x200B; Vijf verschillende werkende die controleknopen in een horizontale rij worden gericht.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
@@ -156,4 +156,4 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u over het Ontwikkelen van Apps met CLI PhoneGap hebt geleerd, zie [ Toegang tot de Eigenschappen van het Apparaat ](/help/mobile/phonegap-access-device-features.md).
+Nadat u over het Ontwikkelen van Apps met CLI PhoneGap hebt geleerd, zie [&#x200B; Toegang tot de Eigenschappen van het Apparaat &#x200B;](/help/mobile/phonegap-access-device-features.md).

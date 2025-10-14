@@ -28,7 +28,7 @@ Het artikel is bedoeld voor consultants, beveiligingsspecialisten, systeemarchit
 
 De volgende afbeelding toont componenten en protocollen die worden gebruikt in een standaard AEM Forms-implementatie, inclusief de juiste firewalltopologie:
 
-![ typisch-architectuur ](assets/typical-architecture.png)
+![&#x200B; typisch-architectuur &#x200B;](assets/typical-architecture.png)
 
 AEM Forms is zeer aanpasbaar en kan in veel verschillende omgevingen werken. Sommige aanbevelingen zijn mogelijk niet van toepassing op uw organisatie.
 
@@ -143,7 +143,7 @@ Standaard slaat de verzendactie van een portal Formulieren met aangepaste formul
 
 U kunt de opslagdienst vormen om over-de-draad naar de verwerkingscluster te verzenden zonder om het even wat plaatselijk op te slaan publiceer knoop. De verwerkingscluster bevindt zich in een veilige zone achter de privéfirewall en de gegevens blijven veilig.
 
-Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Gebruik de referenties van een niet-beheerbare gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Voor meer informatie, zie [ het Vormen de opslagdiensten voor concepten en voorlegging ](/help/forms/using/configuring-draft-submission-storage.md).
+Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Gebruik de referenties van een niet-beheerbare gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Voor meer informatie, zie [&#x200B; het Vormen de opslagdiensten voor concepten en voorlegging &#x200B;](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Beveiligde gegevens die worden verwerkt door FDM (Form Data Model) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -196,4 +196,4 @@ Een verwerkingscluster wordt uitgevoerd in de auteursmodus, maar gebruikt deze n
 
 ### Gebruik AEM beste praktijken om een milieu van AEM Forms te beveiligen {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Voor gedetailleerde instructies, zie [ AEM de documentatie van Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md).
+Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Voor gedetailleerde instructies, zie [&#x200B; AEM de documentatie van Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md).

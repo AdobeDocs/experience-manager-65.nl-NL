@@ -43,7 +43,7 @@ U kunt de volgende gebeurtenissen configureren die moeten worden opgenomen:
 
 ## [!DNL Assets] -gebeurtenissen configureren {#configuring-aem-assets-events-recording}
 
-De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent toegang tot de Recorder die van de Gebeurtenis van Assets. Ga als volgt te werk om de Assets Event Recorder te configureren:
+De [&#x200B; console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md) verleent toegang tot de Recorder die van de Gebeurtenis van Assets. Ga als volgt te werk om de Assets Event Recorder te configureren:
 
 1. Ga naar de **[!UICONTROL Web Console]**
 
@@ -59,4 +59,4 @@ De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent t
 
 ## Opgenomen gebeurtenissen lezen {#reading-recorded-events}
 
-De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt hen programmatically lezen gebruikend [ ActivityManager API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt hen programmatically lezen gebruikend [&#x200B; ActivityManager API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

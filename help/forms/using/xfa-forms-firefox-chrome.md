@@ -38,7 +38,7 @@ Als u op XFA gebaseerde PDF forms wilt gebruiken in Firefox en Chrome, voert u d
 1. Typ PDF in het zoekveld op het tabblad Toepassingen.
 
 1. Voor Portable Document Format (PDF) inhoudssoort in het onderzoeksresultaat, uitgezochte **Gebruik Adobe Acrobat (in Firefox)** van de drop-down lijst van de Actie.
-   ![ gebruik-adobe-acrobat ](/help/forms/using/assets/use-adobe-acrobat.png)
+   ![&#x200B; gebruik-adobe-acrobat &#x200B;](/help/forms/using/assets/use-adobe-acrobat.png)
 1. Klik op OK.
 
 1. Start Firefox opnieuw.
@@ -48,12 +48,12 @@ Als u op XFA gebaseerde PDF forms wilt gebruiken in Firefox en Chrome, voert u d
 1. Ga in Chrome naar chrome://plugins/.
 
 1. Klik op Uitschakelen onder Chrome PDF Viewer en klik op Inschakelen onder Adobe PDF Plug-In.
-   ![ chroom-pdf-viewer ](/help/forms/using/assets/chrome-image.png)
-Voor meer informatie, zie [ insteekmodule Adobe PDF ](https://support.google.com/chrome/?hl=en&amp;visit_id=638803785294106945-2276548125&amp;rd=4&amp;topic=3421431#topic=7439538) documentatie door Google.
+   ![&#x200B; chroom-pdf-viewer &#x200B;](/help/forms/using/assets/chrome-image.png)
+Voor meer informatie, zie [&#x200B; insteekmodule Adobe PDF &#x200B;](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) documentatie door Google.
 
 >[!NOTE]
 > 
 > LiveCycle ES4 biedt ondersteuning voor het weergeven van XFA-formulieren in HTML5, zodat de formulieren kunnen worden geopend in browsers met HTML5-ondersteuning, inclusief formulieren die op mobiele apparaten zoals iPad worden uitgevoerd. De HTML5-uitvoering van de formulieren behoudt de indeling van het formulierontwerp en ondersteunt de meeste formulierlogica (zoals JavaScript, Form Calc en formuliervalidaties) die is ingesloten in de XFA-formuliersjabloon. Op deze manier worden uw technologieinvesteringen in XFA-formulieren eenvoudig overgedragen naar apparaten waarop de Adobe Reader-insteekmodule niet kan worden uitgevoerd.
->Voor meer informatie, zie [ LiveCycle productdocumentatie ](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
+>Voor meer informatie, zie [&#x200B; LiveCycle productdocumentatie &#x200B;](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
 
-[ Juridische Mededelingen ](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [ Online Beleid van de Privacy ](https://www.adobe.com/privacy.html)
+[&#x200B; Juridische Mededelingen &#x200B;](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [&#x200B; Online Beleid van de Privacy &#x200B;](https://www.adobe.com/privacy.html)

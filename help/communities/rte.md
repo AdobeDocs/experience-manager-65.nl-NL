@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Met een Rich Text Editor (RTE) kunt u tekst met opmaak invoeren.
 
-Voor de componenten van Gemeenschappen, terwijl gelijkend op de [ rijke tekstredacteur in het auteursmilieu ](../../help/sites-authoring/rich-text-editor.md), beïnvloedt het tekst ingegaan in het publicatiemilieu.
+Voor de componenten van Gemeenschappen, terwijl gelijkend op de [&#x200B; rijke tekstredacteur in het auteursmilieu &#x200B;](../../help/sites-authoring/rich-text-editor.md), beïnvloedt het tekst ingegaan in het publicatiemilieu.
 
-![ rijk-text-redacteur ](assets/rich-text-editor.png)
+![&#x200B; rijk-text-redacteur &#x200B;](assets/rich-text-editor.png)
 
 ## RTF-editor inschakelen {#enabling-rich-text-editor}
 
-De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Als de component aan een pagina werd toegevoegd of inbegrepen binnen a [ functie ](functions.md), kan RTE of niet door gebrek worden toegelaten.
+De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Als de component aan een pagina werd toegevoegd of inbegrepen binnen a [&#x200B; functie &#x200B;](functions.md), kan RTE of niet door gebrek worden toegelaten.
 
-Als niet toegelaten, ga eenvoudig [ auteur in geef wijze ](sites-console.md#authoring-site-content) uit, selecteer de component voor geef uit, en selecteer `Rich Text Editor` checkbox.
+Als niet toegelaten, ga eenvoudig [&#x200B; auteur in geef wijze &#x200B;](sites-console.md#authoring-site-content) uit, selecteer de component voor geef uit, en selecteer `Rich Text Editor` checkbox.
 
 RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
@@ -45,7 +45,7 @@ RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
 ## Aanpassing {#customization}
 
-De aanpassing van de rijke tekstredacteur is mogelijk aangezien de implementatie op [ CKEditor ](https://ckeditor.com/) wordt gebaseerd.
+De aanpassing van de rijke tekstredacteur is mogelijk aangezien de implementatie op [&#x200B; CKEditor &#x200B;](https://ckeditor.com/) wordt gebaseerd.
 
 De huidige configuratie voor componenten van Communities bevindt zich in de `cq.social.  scf   clientlib` , in de repository op
 

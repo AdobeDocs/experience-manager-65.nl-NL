@@ -19,11 +19,11 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
-![ de Integratie van Gegevens ](do-not-localize/data-integeration.png)
+![&#x200B; de Integratie van Gegevens &#x200B;](do-not-localize/data-integeration.png)
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
@@ -33,7 +33,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 * SOAP webservices
 * OData-diensten
 
-De integratie van gegevens steunt OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, en API Zeer belangrijke authentificatietypen uit-van-de-doos, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op SOAP-Gebaseerd, en de diensten OData in AEM Cloud Servicen worden gevormd, wordt JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel gevormd in AEM Webconsole.
+De integratie van gegevens steunt OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, en API Zeer belangrijke authentificatietypen uit-van-de-doos, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op SOAP-Gebaseerd, en de diensten OData in AEM Cloud Servicen worden gevormd, wordt JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel gevormd in AEM Webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
@@ -117,13 +117,13 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-De RESTful Webdienst kan worden beschreven gebruikend [ de specificaties van de Wagger ](https://swagger.io/specification/) in formaat JSON of YAML in een de definitiedossier van de Wagger. Als u de RESTful-webservice in AEM cloudservices wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
+De RESTful Webdienst kan worden beschreven gebruikend [&#x200B; de specificaties van de Wagger &#x200B;](https://swagger.io/specification/) in formaat JSON of YAML in een de definitiedossier van de Wagger. Als u de RESTful-webservice in AEM cloudservices wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
 
 Doe het volgende de diensten RESTful vormen:
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL RESTful Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de RESTful dienst:
@@ -136,11 +136,11 @@ Doe het volgende de diensten RESTful vormen:
       * Basispad: het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
         Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
 
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, Sleutel API, Douane Authentificatie, of Wederzijdse Authentificatie — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, Sleutel API, Douane Authentificatie, of Wederzijdse Authentificatie — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
 
    Als u **[!UICONTROL API Key]** selecteert als verificatietype, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de vervolgkeuzelijst **[!UICONTROL Location]** en geef de naam van de header of de queryparameter dienovereenkomstig op in het veld **[!UICONTROL Parameter Name]** .
 
-   Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie [ Op certificaat-gebaseerde wederzijdse authentificatie voor RESTful en SOAP Webdiensten ](#mutual-authentication).
+   Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie [&#x200B; Op certificaat-gebaseerde wederzijdse authentificatie voor RESTful en SOAP Webdiensten &#x200B;](#mutual-authentication).
 
 1. Selecteer **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
 
@@ -149,7 +149,7 @@ Doe het volgende de diensten RESTful vormen:
 [!DNL Experience Manager Forms] -formuliergegevensmodel wanneer integratie met RESTful-webservices als gegevensbron HTTP-clientconfiguraties bevat voor optimalisatie van prestaties.
 Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te configureren:
 
-1. Meld u aan bij [!DNL Experience Manager Forms] Instantie auteur als beheerder en ga naar [!DNL Experience Manager] -bundels voor webconsoles. Het gebrek URL is [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr).
+1. Meld u aan bij [!DNL Experience Manager Forms] Instantie auteur als beheerder en ga naar [!DNL Experience Manager] -bundels voor webconsoles. Het gebrek URL is [&#x200B; https://localhost:4502/system/console/configMgr &#x200B;](https://localhost:4502/system/console/configMgr).
 
 1. Selecteer **[!UICONTROL Form Data Model Http Client Configuration for REST data source]** .
 
@@ -171,19 +171,19 @@ Op SOAP gebaseerde Webdiensten worden beschreven gebruikend {de specificaties va
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL SOAP Web Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Geef het volgende op voor de SOAP webservice:
 
    * WSDL-URL voor de webservice.
    * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, de Authentificatie van de Douane, Symbolische X509, of Wederzijdse Authentificatie — om tot de SOAP dienst toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), Basisauthentificatie, de Authentificatie van de Douane, Symbolische X509, of Wederzijdse Authentificatie — om tot de SOAP dienst toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
 
-     Als u **[!UICONTROL X509 Token]** selecteert als het verificatietype, configureert u het X509-certificaat. Voor meer informatie, zie [ de certificaten van de Opstelling ](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Als u **[!UICONTROL X509 Token]** selecteert als het verificatietype, configureert u het X509-certificaat. Voor meer informatie, zie [&#x200B; de certificaten van de Opstelling &#x200B;](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Geef de alias KeyStore voor het X509-certificaat op in het veld **[!UICONTROL Key Alias]** . Geef de tijd in seconden op totdat de verificatieaanvraag geldig blijft in het veld **[!UICONTROL Time To Live]** . Selecteer desgewenst om de berichttekst, de tijdstempelkop of beide te ondertekenen.
 
-     Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie [ Op certificaat-gebaseerde wederzijdse authentificatie voor RESTful en SOAP Webdiensten ](#mutual-authentication).
+     Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie [&#x200B; Op certificaat-gebaseerde wederzijdse authentificatie voor RESTful en SOAP Webdiensten &#x200B;](#mutual-authentication).
 
 1. Selecteer **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP webservice te maken.
 
@@ -193,18 +193,18 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 
 >[!NOTE]
 >
->Het gegevensmodel van de vorm steunt [ OData versie 4 ](https://www.odata.org/documentation/).
+>Het gegevensmodel van de vorm steunt [&#x200B; OData versie 4 &#x200B;](https://www.odata.org/documentation/).
 >Voor geleidelijke gids om Dynamiek 365 van Microsoft, online of op-gebouw te vormen, zie {de Configuratie van de Dynamica OData van 0} Microsoft [&#128279;](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]** . Selecteer deze optie om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
-   Zie [ omslag voor de configuraties van de wolkendienst ](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
+   Zie [&#x200B; omslag voor de configuraties van de wolkendienst &#x200B;](../../forms/using/configure-data-sources.md#cloud-folder) voor informatie over het creëren van en het vormen van een omslag voor de configuraties van de wolkendienst vormen.
 
 1. Selecteer **[!UICONTROL Create]** om **[!UICONTROL Create Data Source Configuration wizard]** te openen. Geef een naam en eventueel een titel voor de configuratie op, selecteer **[!UICONTROL OData Service]** in de vervolgkeuzelijst **[!UICONTROL Service Type]** , blader optioneel naar een miniatuurafbeelding en selecteer een miniatuurafbeelding voor de configuratie en selecteer **[!UICONTROL Next]** .
 1. Specificeer de volgende details voor de dienst OData:
 
    * Service Root URL voor de OData-service die moet worden geconfigureerd.
-   * Selecteer het authentificatietype — niets, OAuth2.0 ([ de Code van de Vergunning ](https://oauth.net/2/grant-types/authorization-code/), [ de Verantwoordelijkheden van de Cliënt ](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0 ([&#x200B; de Code van de Vergunning &#x200B;](https://oauth.net/2/grant-types/authorization-code/), [&#x200B; de Verantwoordelijkheden van de Cliënt &#x200B;](https://oauth.net/2/grant-types/client-credentials/)), BasisAuthentificatie, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
 
    >[!NOTE]
    >
@@ -223,8 +223,8 @@ Wanneer u wederzijdse verificatie inschakelt voor het gegevensmodel van het form
 1. Upload vertrouwenscertificaat naar Global Trust Store. Het certificaat uploaden:
    1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]** .
    1. Vouw de optie **[!UICONTROL Add Certificate from CER file]** uit, selecteer **[!UICONTROL Select Certificate File]** , upload het certificaat en selecteer **[!UICONTROL Submit]** .
-1. Vorm [ SOAP ](#configure-soap-web-services) of [ RESTful ](#configure-restful-web-services) Webdiensten als gegevensbron en selecteer **[!UICONTROL Mutual authentication]** als authentificatietype. Als u meerdere zelfondertekende certificaten configureert voor de gebruiker van `fd-cloudservice` , geeft u de naam van de sleutelalias voor het certificaat op.
+1. Vorm [&#x200B; SOAP &#x200B;](#configure-soap-web-services) of [&#x200B; RESTful &#x200B;](#configure-restful-web-services) Webdiensten als gegevensbron en selecteer **[!UICONTROL Mutual authentication]** als authentificatietype. Als u meerdere zelfondertekende certificaten configureert voor de gebruiker van `fd-cloudservice` , geeft u de naam van de sleutelalias voor het certificaat op.
 
 ## Volgende stappen {#next-steps}
 
-U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [ het model van vormgegevens ](/help/forms/using/create-form-data-models.md) voor details creëren.
+U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [&#x200B; het model van vormgegevens &#x200B;](/help/forms/using/create-form-data-models.md) voor details creëren.

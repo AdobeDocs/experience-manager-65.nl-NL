@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Oorspronkelijke inhoud van sandbox {#initial-sandbox-content}
 
-In deze sectie, creeert u de volgende pagina&#39;s die allen het [ paginamalplaatje ](initial-app.md#createthepagetemplate) gebruiken:
+In deze sectie, creeert u de volgende pagina&#39;s die allen het [&#x200B; paginamalplaatje &#x200B;](initial-app.md#createthepagetemplate) gebruiken:
 
 * SCF Sandbox Site, die wordt omgeleid naar de Engelse versie van de hoofdpagina.
 
@@ -26,25 +26,25 @@ In deze sectie, creeert u de volgende pagina&#39;s die allen het [ paginamalplaa
 
    * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
-Dit leerprogramma delft niet in [ taalexemplaren ](../../help/sites-administering/tc-prep.md). In plaats daarvan, wordt het ontworpen zodat kan de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richten. De conventie is om de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, en &quot;fr&quot; voor Frans.
+Dit leerprogramma delft niet in [&#x200B; taalexemplaren &#x200B;](../../help/sites-administering/tc-prep.md). In plaats daarvan, wordt het ontworpen zodat kan de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richten. De conventie is om de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, en &quot;fr&quot; voor Frans.
 
 ## Eerste pagina&#39;s maken {#create-first-pages}
 
-Nu er a [ paginamalplaatje ](initial-app.md#createthepagetemplate) is, kunt u de wortelpagina van de website in de /content folder vestigen.
+Nu er a [&#x200B; paginamalplaatje &#x200B;](initial-app.md#createthepagetemplate) is, kunt u de wortelpagina van de website in de /content folder vestigen.
 
 1. De standaard-UI biedt momenteel blauwdrukken voor het maken van sites. Aangezien deze zelfstudie een eenvoudige plaats creeert, is klassieke UI nuttig.
 
    Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer de *Schakelaar aan Klassieke UI* pictogram dat verschijnt:
 
-   ![ klassieke-ui ](assets/classic-ui.png)
+   ![&#x200B; klassieke-ui &#x200B;](assets/classic-ui.png)
 
-   De capaciteit om aan klassieke UI over te schakelen moet [ door een beheerder ](../../help/sites-administering/enable-classic-ui.md) worden toegelaten.
+   De capaciteit om aan klassieke UI over te schakelen moet [&#x200B; door een beheerder &#x200B;](../../help/sites-administering/enable-classic-ui.md) worden toegelaten.
 
-1. Van de [ klassieke UI Welkome pagina ](http://localhost:4502/welcome.html), uitgezochte **[!UICONTROL Websites]**.
+1. Van de [&#x200B; klassieke UI Welkome pagina &#x200B;](http://localhost:4502/welcome.html), uitgezochte **[!UICONTROL Websites]**.
 
-   ![ klassieke-ui-website ](assets/classic-ui-website.png)
+   ![&#x200B; klassieke-ui-website &#x200B;](assets/classic-ui-website.png)
 
-   U kunt de klassieke UI voor websites ook rechtstreeks openen door naar [ /site-admin te bladeren.](http://localhost:4502/siteadmin)
+   U kunt de klassieke UI voor websites ook rechtstreeks openen door naar [&#x200B; /site-admin te bladeren.](http://localhost:4502/siteadmin)
 
 1. Selecteer **[!UICONTROL Websites]** in het verkennervenster en selecteer vervolgens op de werkbalk **[!UICONTROL New]** > **[!UICONTROL New Page]** .
 
@@ -55,7 +55,7 @@ Nu er a [ paginamalplaatje ](initial-app.md#createthepagetemplate) is, kunt u de
    * Selecteren **[!UICONTROL An SCF Sandbox Play Template]**
    * Klikken **[!UICONTROL Create]**
 
-   ![ klassiek-ui-creeer-pagina ](assets/classic-ui-create-page.png)
+   ![&#x200B; klassiek-ui-creeer-pagina &#x200B;](assets/classic-ui-create-page.png)
 
 1. Selecteer in het verkenner-venster de pagina die u hebt gemaakt, `/Websites/SCF Sandbox Site` en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]** :
 
@@ -73,11 +73,11 @@ Nu er a [ paginamalplaatje ](initial-app.md#createthepagetemplate) is, kunt u de
 
 1. Zo wordt de website nu weergegeven in de websiteconsole. U ziet dat onderliggende pagina&#39;s van het item dat is geselecteerd in het deelvenster Verkenner, worden weergegeven in het rechterdeelvenster waar ze kunnen worden beheerd.
 
-   ![ klassieke-ui-website-pagina ](assets/classic-ui-website-page.png)
+   ![&#x200B; klassieke-ui-website-pagina &#x200B;](assets/classic-ui-website-page.png)
 
    Dit is de repository weergave van wat er is gemaakt met het gereedschap Website en de sjabloon:
 
-   ![ klassiek-ui-bewaarplaats-mening ](assets/classic-ui-repository-view.png)
+   ![&#x200B; klassiek-ui-bewaarplaats-mening &#x200B;](assets/classic-ui-repository-view.png)
 
 ## Het ontwerppad toevoegen {#add-the-design-path}
 
@@ -98,7 +98,7 @@ Is gedefinieerd, wat de optionele mogelijkheid biedt om met `currentDesign.getPa
 
 De gegevensopslagruimte moet er als volgt uitzien:
 
-![ klassiek-ui-bewaarplaats-weg ](assets/classic-ui-repository-path.png)
+![&#x200B; klassiek-ui-bewaarplaats-weg &#x200B;](assets/classic-ui-repository-path.png)
 
 * Klikken **[!UICONTROL Save All]**
 
@@ -106,4 +106,4 @@ Als er om het even welk probleem is die de configuratie opslaan, login opnieuw e
 
 >[!NOTE]
 >
->Het gebruik van `cq:designPath` is facultatief en is niet verwant met het [ gebruik van clientlibs ](develop-app.md#includeclientlibsintemplate), die als componenten SCF [ clientlibs ](client-customize.md#clientlibs-for-scf) worden vereist om hun JS en CSS te beheren.
+>Het gebruik van `cq:designPath` is facultatief en is niet verwant met het [&#x200B; gebruik van clientlibs &#x200B;](develop-app.md#includeclientlibsintemplate), die als componenten SCF [&#x200B; clientlibs &#x200B;](client-customize.md#clientlibs-for-scf) worden vereist om hun JS en CSS te beheren.

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken.
 
-Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [ het Offloaden Banen ](/help/sites-deploying/offloading.md).
+Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [&#x200B; het Offloaden Banen &#x200B;](/help/sites-deploying/offloading.md).
 
 ## Taaktaken verwerken {#handling-job-payloads}
 
@@ -177,7 +177,7 @@ De klasse MyJobConsumer produceert de volgende logboekberichten voor een inputla
 
 De eigenschap Consumed kan worden waargenomen met behulp van CRXDE Lite:
 
-![ chlimage_1-25 ](assets/chlimage_1-25a.png)
+![&#x200B; chlimage_1-25 &#x200B;](assets/chlimage_1-25a.png)
 
 ## Geweven afhankelijkheden {#maven-dependencies}
 

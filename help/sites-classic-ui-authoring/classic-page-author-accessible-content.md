@@ -25,7 +25,7 @@ ht-degree: 5%
 >
 >Raadpleeg de volgende pagina&#39;s voor meer informatie over AEM en WCAG 2.1:
 >
->* [ AEM en de Richtlijnen van de Toegankelijkheid van het Web ](/help/managing/web-accessibility.md)
+>* [&#x200B; AEM en de Richtlijnen van de Toegankelijkheid van het Web &#x200B;](/help/managing/web-accessibility.md)
 >* [Snelgids voor WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Toegankelijke content maken (WCAG 2.1-compatibiliteit)](/help/sites-authoring/creating-accessible-content.md)
 
@@ -35,8 +35,8 @@ WCAG 2.0 bestaat uit een reeks technologie-onafhankelijke richtlijnen en succesc
 >
 >Zie ook:
 >
->* [ Snelle Gids aan WCAG 2.0 ](/help/managing/qg-wcag.md)
->* [ Vormend de Rich Redacteur van de Tekst voor het veroorzaken van toegankelijke inhoud ](/help/sites-administering/rte-accessible-content.md)
+>* [&#x200B; Snelle Gids aan WCAG 2.0 &#x200B;](/help/managing/qg-wcag.md)
+>* [&#x200B; Vormend de Rich Redacteur van de Tekst voor het veroorzaken van toegankelijke inhoud &#x200B;](/help/sites-administering/rte-accessible-content.md)
 >
 
 Deze richtlijnen worden ingedeeld op basis van drie conformiteitsniveaus: Niveau A (laagste), Niveau AA en Niveau AAA (hoogste). De niveaus worden kort samengevat als volgt gedefinieerd:
@@ -47,7 +47,7 @@ Deze richtlijnen worden ingedeeld op basis van drie conformiteitsniveaus: Niveau
 
 Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
-De volgende sectie stelt de [ WCAG 2.0 Richtlijnen ](https://www.w3.org/TR/WCAG20/#guidelines) met verwante succescriteria voor Niveau A en Niveau AA [ conformiteitsniveaus ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) voor.
+De volgende sectie stelt de [&#x200B; WCAG 2.0 Richtlijnen &#x200B;](https://www.w3.org/TR/WCAG20/#guidelines) met verwante succescriteria voor Niveau A en Niveau AA [&#x200B; conformiteitsniveaus &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) voor.
 
 >[!NOTE]
 >
@@ -57,17 +57,17 @@ De volgende sectie stelt de [ WCAG 2.0 Richtlijnen ](https://www.w3.org/TR/WCAG2
 >
 >In dit document wordt het volgende gebruikt:
 >
->* de korte namen voor [ WCAG 2.0 Richtlijnen ](https://www.w3.org/TR/WCAG20/#guidelines).
->* de nummering die in [ WCAG 2.0 Richtsnoeren ](https://www.w3.org/TR/WCAG20/#guidelines) wordt gebruikt om kruisverwijzingen met de website van WCAG te helpen.
+>* de korte namen voor [&#x200B; WCAG 2.0 Richtlijnen &#x200B;](https://www.w3.org/TR/WCAG20/#guidelines).
+>* de nummering die in [&#x200B; WCAG 2.0 Richtsnoeren &#x200B;](https://www.w3.org/TR/WCAG20/#guidelines) wordt gebruikt om kruisverwijzingen met de website van WCAG te helpen.
 >
 
 ## Beginsel 1: Overdraagbaar {#principle-perceivable}
 
-[ Beginsel 1: Percieable - de Informatie en gebruikersinterfacecomponenten moeten aan gebruikers op manieren presenteerbaar zijn zij kunnen waarnemen.](https://www.w3.org/TR/WCAG20/#perceivable)
+[&#x200B; Beginsel 1: Percieable - de Informatie en gebruikersinterfacecomponenten moeten aan gebruikers op manieren presenteerbaar zijn zij kunnen waarnemen.](https://www.w3.org/TR/WCAG20/#perceivable)
 
 ### Alternatieven voor tekst (1.1) {#text-alternatives}
 
-[ Richtsnoer 1.1 Alternatieven van de Tekst: Verstrek tekstalternatieven voor om het even welke niet-tekstinhoud zodat het in andere vormen kan worden veranderd mensen, zoals grote druk, braille, toespraak, symbolen, of eenvoudigere taal nodig hebben.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[&#x200B; Richtsnoer 1.1 Alternatieven van de Tekst: Verstrek tekstalternatieven voor om het even welke niet-tekstinhoud zodat het in andere vormen kan worden veranderd mensen, zoals grote druk, braille, toespraak, symbolen, of eenvoudigere taal nodig hebben.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 ### Niet-tekstuele inhoud (1.1.1) {#non-text-content}
 
@@ -87,11 +87,11 @@ Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalterna
 
 >[!NOTE]
 >
->Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer u versies van deze componenten voor uw AEM-instantie implementeert, moet uw ontwikkelingsteam dergelijke componenten configureren ter ondersteuning van het attribuut `alt` . Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
+>Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Wanneer u versies van deze componenten voor uw AEM-instantie implementeert, moet uw ontwikkelingsteam dergelijke componenten configureren ter ondersteuning van het attribuut `alt` . Dit zorgt ervoor dat de auteurs het aan de inhoud (zie [&#x200B; Toevoegend Steun voor Extra Elementen en Attributen van HTML &#x200B;](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)) kunnen toevoegen.
 
 Het **gebied van de Tekst van 0&rbrace; Alt &lbrace;is beschikbaar in het** Geavanceerde **beeldeigenschappen lusje van de** de componentendialoog van het Beeld **:**
 
-![ geeft dialoog van de component van het Beeld in klassieke UI uit; toont het gebied van de Tekst van Alt.](assets/chlimage_1-17a.png)
+![&#x200B; geeft dialoog van de component van het Beeld in klassieke UI uit; toont het gebied van de Tekst van Alt.](assets/chlimage_1-17a.png)
 
 AEM voegt een **Tekst van Alt** aan uw beelden door gebrek toe. Voor klassieke UI, zijn er twee verschillende scenario&#39;s voor hoe het standaardattribuut wordt gecreeerd, hoewel de standaardwaarde niet als alternatief kan voldoende zijn en waarschijnlijk op het **Geavanceerde** beeld eigenschappen tabel moet worden uitgegeven:
 
@@ -109,7 +109,7 @@ AEM voegt een **Tekst van Alt** aan uw beelden door gebrek toe. Voor klassieke U
 
 >[!NOTE]
 >
->Als uw beeld puur decoratief is (zie [ Creërend Correcte Alternatieven van de Tekst ](#creating-good-text-alternatives)), kunt u een ruimte op het **Alt** gebied ingaan van de Tekst gebruikend spacebar. Als u dit doet, wordt een leeg `alt` -kenmerk gemaakt, waarmee een schermlezer wordt gevraagd de afbeelding te negeren.
+>Als uw beeld puur decoratief is (zie [&#x200B; Creërend Correcte Alternatieven van de Tekst &#x200B;](#creating-good-text-alternatives)), kunt u een ruimte op het **Alt** gebied ingaan van de Tekst gebruikend spacebar. Als u dit doet, wordt een leeg `alt` -kenmerk gemaakt, waarmee een schermlezer wordt gevraagd de afbeelding te negeren.
 
 #### Alternatieven voor goede tekst maken {#creating-good-text-alternatives}
 
@@ -126,7 +126,7 @@ Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het 
 * Als de niet-tekstuele inhoud zich in een knopelement bevindt en er geen tekst bestaat die deel uitmaakt van dezelfde knop, moet de alternatieve tekst van de afbeelding de functionaliteit van de knop aangeven en de afbeelding niet beschrijven.
 * Het is acceptabel dat aan een afbeelding lege (null) alternatieve tekst wordt gegeven, maar alleen als de afbeelding geen alternatieve tekst heeft. Het is bijvoorbeeld een zuiver decoratieve afbeelding. Of als de equivalente tekst al in de paginatekst staat.
 
-Het [ WW3C- ontwerp: De Technieken van HTML5 om nuttige tekstopties ](https://html.spec.whatwg.org/multipage/images.html#alt) te verstrekken heeft meer details en voorbeelden van aangewezen alternatieve tekstvoorziening voor beelden van verschillende types.
+Het [&#x200B; WW3C- ontwerp: De Technieken van HTML5 om nuttige tekstopties &#x200B;](https://html.spec.whatwg.org/multipage/images.html#alt) te verstrekken heeft meer details en voorbeelden van aangewezen alternatieve tekstvoorziening voor beelden van verschillende types.
 
 Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn onder meer:
 
@@ -142,7 +142,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
   Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Indien noodzakelijk, ook verstrek een meer gedetailleerde beschrijving in tekst gebruikend het **1&rbrace; gebied van de Beschrijving &lbrace;op het** Geavanceerde **beeldeigenschappen tabel.** U kunt de brongegevens ook elders op de pagina of op de site in tabelvorm opgeven.
 
-  ![ Voorbeeld van een grafiek. Hieronder is de beste benadering om een alternatief te verstrekken.](assets/chlimage_1-2a.jpeg)
+  ![&#x200B; Voorbeeld van een grafiek. Hieronder is de beste benadering om een alternatief te verstrekken.](assets/chlimage_1-2a.jpeg)
 
   Als u een alternatief wilt bieden voor dit voorbeelddiagram, voegt u een beknopte `alt` tekst toe aan de afbeelding zelf en volgt u de afbeelding met een alternatief voor volledige tekst.
 
@@ -156,7 +156,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
   >
   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Gebruik de **component van het Beeld**, eerder dan de `img src` hierboven gebruikte verwijzing.
 
-  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3&rbrace; gebieden van de Beschrijving &lbrace;in de de configuratiedialoog van het beeld - zoals in [ gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) ](#how-to-meet-non-text-content) ontmoeten.**
+  In AEM, kunt u een combinatie van de **Tekst van Alt** en **3&rbrace; gebieden van de Beschrijving &lbrace;in de de configuratiedialoog van het beeld - zoals in [&#x200B; gebruiken hoe te - Niet-tekstuele Inhoud (1.1.1) &#x200B;](#how-to-meet-non-text-content) ontmoeten.**
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
@@ -180,18 +180,18 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
   >[!NOTE]
   >
-  >Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. Dit contrast wordt besproken meer in detail in [ Contrast (Minimum) (1.4.3) ](#contrast-minimum).
+  >Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. Dit contrast wordt besproken meer in detail in [&#x200B; Contrast (Minimum) (1.4.3) &#x200B;](#contrast-minimum).
 
 #### Meer informatie - Niet-tekstuele inhoud (1.1.1) {#more-information-non-text-content}
 
-* [ Begrijpend Criteria 1.1.1 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
-* [ hoe te om Criteria 1.1.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
-* [ W3C: Technieken HTML5 om nuttige tekstopties te verstrekken ](https://html.spec.whatwg.org/multipage/images.html#alt)
-* [ W3C verklaring van en alternatieven aan CAPTCHAs ](https://www.w3.org/TR/turingtest/)
+* [&#x200B; Begrijpend Criteria 1.1.1 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
+* [&#x200B; hoe te om Criteria 1.1.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
+* [&#x200B; W3C: Technieken HTML5 om nuttige tekstopties te verstrekken &#x200B;](https://html.spec.whatwg.org/multipage/images.html#alt)
+* [&#x200B; W3C verklaring van en alternatieven aan CAPTCHAs &#x200B;](https://www.w3.org/TR/turingtest/)
 
 ### Op tijd gebaseerde media (1.2) {#time-based-media}
 
-[ Richtsnoer 1.2 op tijd-gebaseerde Media: Verstrek alternatieven voor op tijd-gebaseerde media.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[&#x200B; Richtsnoer 1.2 op tijd-gebaseerde Media: Verstrek alternatieven voor op tijd-gebaseerde media.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 Deze informatie behandelt webinhoud die *op tijd-gebaseerd* is. Dit geldt voor inhoud die de gebruiker kan afspelen (zoals video, audio en bewegende inhoud) en die vooraf kan worden opgenomen of een live stream.
 
@@ -241,8 +241,8 @@ Het invoegen van multimedia, met name Flash-inhoud, in uw AEM-webpagina&#39;s li
 
 #### Meer informatie - Alleen audio en alleen video (vooraf opgenomen) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
-* [ Begrijpend Criteria 1.2.1 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
-* [ hoe te om Criteria 1.2.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
+* [&#x200B; Begrijpend Criteria 1.2.1 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+* [&#x200B; hoe te om Criteria 1.2.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
 
 ### Bijschriften (vooraf opgenomen) (1.2.2) {#captions-pre-recorded}
 
@@ -267,18 +267,18 @@ Bijschriften kunnen:
 
 Gebruik waar mogelijk ondertiteling sluiten. Hiermee kunnen gebruikers zelf kiezen of ze bijschriften willen bekijken.
 
-Voor gesloten titels, creeer en verstrek een gesynchroniseerd titeldossier in een aangewezen formaat, zoals [ SMIL ](https://www.w3.org/AudioVideo/), samen met het videodossier.
+Voor gesloten titels, creeer en verstrek een gesynchroniseerd titeldossier in een aangewezen formaat, zoals [&#x200B; SMIL &#x200B;](https://www.w3.org/AudioVideo/), samen met het videodossier.
 
-Zie de leerprogramma&#39;s in [ Meer Informatie - Bijschriften (pre-Opgenomen) (1.2.2) ](#more-information-captions-pre-recorded). Zorg ervoor dat u een notitie opgeeft om gebruikers te laten weten dat er ondertitels beschikbaar zijn voor de video.
+Zie de leerprogramma&#39;s in [&#x200B; Meer Informatie - Bijschriften (pre-Opgenomen) (1.2.2) &#x200B;](#more-information-captions-pre-recorded). Zorg ervoor dat u een notitie opgeeft om gebruikers te laten weten dat er ondertitels beschikbaar zijn voor de video.
 
 Sluit de tekst in de videotrack in als u open bijschriften moet gebruiken. Deze methode wordt bereikt met videobewerkingstoepassingen waarmee titels kunnen worden bedekt op de video.
 
 #### Meer informatie - Bijschriften (vooraf opgenomen) (1.2.2) {#more-information-captions-pre-recorded}
 
-* [ Begrip Criteria 1.2.2 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
-* [ hoe te om Criteria 1.2.2 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
-* [ W3C: Gesynchroniseerde Multimedia ](https://www.w3.org/AudioVideo/)
-* [ Bijschriften, Transcripties, en Audiobeschrijvingen - door WebAIM ](https://webaim.org/techniques/captions/)
+* [&#x200B; Begrip Criteria 1.2.2 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
+* [&#x200B; hoe te om Criteria 1.2.2 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
+* [&#x200B; W3C: Gesynchroniseerde Multimedia &#x200B;](https://www.w3.org/AudioVideo/)
+* [&#x200B; Bijschriften, Transcripties, en Audiobeschrijvingen - door WebAIM &#x200B;](https://webaim.org/techniques/captions/)
 
 ### Audiobeschrijving of media-alternatief (vooraf opgenomen) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
 
@@ -310,9 +310,9 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
-* [ Begrip Criteria 1.2.3 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
-* [ hoe te om Criteria 1.2.3 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [ Encore CS5 van Adobe ](https://helpx.adobe.com/nl/premiere-pro/using/whats-new.html)
+* [&#x200B; Begrip Criteria 1.2.3 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
+* [&#x200B; hoe te om Criteria 1.2.3 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
+* [&#x200B; Encore CS5 van Adobe &#x200B;](https://helpx.adobe.com/nl/premiere-pro/using/whats-new.html)
 
 ### Bijschriften (live) (1.2.4)  {#captions-live}
 
@@ -322,20 +322,20 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 
 #### Doel - Bijschriften (live) (1.2.4) {#purpose-captions-live}
 
-Dit succescriterium is identiek aan [ (pre-Opgenomen) Bijschriften ](#captions-pre-recorded) in die zin dat het toegankelijkheidsbarrières richt die door mensen worden ervaren die doof of slechthorend zijn, behalve dat dit succescriterium levende presentaties zoals webcasts behandelt.
+Dit succescriterium is identiek aan [&#x200B; (pre-Opgenomen) Bijschriften &#x200B;](#captions-pre-recorded) in die zin dat het toegankelijkheidsbarrières richt die door mensen worden ervaren die doof of slechthorend zijn, behalve dat dit succescriterium levende presentaties zoals webcasts behandelt.
 
 #### Hoe kan ik-Bijschriften (live) ontmoeten (1.2.4) {#how-to-meet-captions-live}
 
-Volg de begeleiding die voor [ wordt verstrekt (pre-Opgenomen) ](#captions-pre-recorded) hierboven. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
+Volg de begeleiding die voor [&#x200B; wordt verstrekt (pre-Opgenomen) &#x200B;](#captions-pre-recorded) hierboven. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
 
 De gedetailleerde instructies zijn voorbij het werkingsgebied van dit document, maar het volgende middel verstrekt nuttige informatie:
 
-* [ WebAIM: Echt - tijd het Behouden ](https://webaim.org/techniques/captions/realtime)
+* [&#x200B; WebAIM: Echt - tijd het Behouden &#x200B;](https://webaim.org/techniques/captions/realtime)
 
 #### Meer informatie - Bijschriften (live) (1.2.4) {#more-information-captions-live}
 
-* [ Begrijpend Criteria 1.2.4 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
-* [ hoe te om Criteria 1.2.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
+* [&#x200B; Begrijpend Criteria 1.2.4 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
+* [&#x200B; hoe te om Criteria 1.2.4 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
 
 ### Audiobeschrijving (vooraf opgenomen) (1.2.5)  {#audio-description-pre-recorded}
 
@@ -345,20 +345,20 @@ De gedetailleerde instructies zijn voorbij het werkingsgebied van dit document, 
 
 #### Doel - Audiobeschrijving (vooraf opgenomen) (1.2.5) {#purpose-audio-description-pre-recorded}
 
-Dit succescriterium is identiek aan [ AudioBeschrijving of Alternatief van Media (pre-Opgenomen) ](#audio-description-or-media-alternative-pre-recorded), behalve dat de auteurs een veel gedetailleerdere audiobeschrijving moeten verstrekken om met Niveau AA in overeenstemming te zijn.
+Dit succescriterium is identiek aan [&#x200B; AudioBeschrijving of Alternatief van Media (pre-Opgenomen) &#x200B;](#audio-description-or-media-alternative-pre-recorded), behalve dat de auteurs een veel gedetailleerdere audiobeschrijving moeten verstrekken om met Niveau AA in overeenstemming te zijn.
 
 #### Hoe kan ik-audiobeschrijving (vooraf opgenomen) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
 
-Volg de begeleiding voor [ wordt verstrekt AudioBeschrijving of Alternatief van Media (pre-Opgenomen) ](#audio-description-or-media-alternative-pre-recorded).
+Volg de begeleiding voor [&#x200B; wordt verstrekt AudioBeschrijving of Alternatief van Media (pre-Opgenomen) &#x200B;](#audio-description-or-media-alternative-pre-recorded).
 
 #### Meer informatie - Audiobeschrijving (vooraf opgenomen) (1.2.5) {#more-information-audio-description-pre-recorded}
 
-* [ Begrijpend Criteria 1.2.5 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
-* [ hoe te om Criteria 1.2.5 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
+* [&#x200B; Begrijpend Criteria 1.2.5 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
+* [&#x200B; hoe te om Criteria 1.2.5 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
 
 ### Aanpasbaar (1.3) {#adaptable}
 
-[ Richtsnoer 1.3 Aangepast: creeer inhoud die op verschillende manieren (bijvoorbeeld, eenvoudigere lay-out) zonder het verliezen van informatie of structuur kan worden voorgesteld.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[&#x200B; Richtsnoer 1.3 Aangepast: creeer inhoud die op verschillende manieren (bijvoorbeeld, eenvoudigere lay-out) zonder het verliezen van informatie of structuur kan worden voorgesteld.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Dit richtsnoer heeft betrekking op de vereisten die nodig zijn ter ondersteuning van personen die:
 
@@ -384,17 +384,17 @@ AEM maakt het eenvoudig om webpagina&#39;s samen te stellen met behulp van de ju
 
 In de volgende afbeelding ziet u tekst die is opgemaakt als alineatekst. In de broncodeweergave die wordt gebruikt, wordt aangegeven dat de tekst de juiste openings- en sluitingstags &lt;p> en &lt;/p> heeft.
 
-![ een voorbeeld van het element van de Paragraaf dat op bron wordt getoond geeft wijze (klassieke UI) uit.](assets/chlimage_1-18a.png)
+![&#x200B; een voorbeeld van het element van de Paragraaf dat op bron wordt getoond geeft wijze (klassieke UI) uit.](assets/chlimage_1-18a.png)
 
 Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **Gebruikend rubrieken:**
 
-  Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [ AEM en Toegankelijkheid ](/help/sites-administering/rte-accessible-content.md)), biedt AEM drie niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
+  Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [&#x200B; AEM en Toegankelijkheid &#x200B;](/help/sites-administering/rte-accessible-content.md)), biedt AEM drie niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
 
   In de volgende afbeelding ziet u een voorbeeld van de verschillende typen koppen.
 
-  ![ Koppen H1 door aan H3 getoond in de drop-down selecteur (klassieke UI).](assets/chlimage_1-19a.png)
+  ![&#x200B; Koppen H1 door aan H3 getoond in de drop-down selecteur (klassieke UI).](assets/chlimage_1-19a.png)
 
 * **benadrukte tekst**:
 
@@ -449,18 +449,18 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
   >[!NOTE]
   >
-  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de eigenschappen van de Lijst** dialoogvakje toe te voegen (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >Door gebrek, zijn deze elementen en attributen niet direct beschikbaar, hoewel het voor de systeembeheerder mogelijk is om steun voor deze waarden in het **de eigenschappen van de Lijst** dialoogvakje toe te voegen (zie [&#x200B; Toevoegend Steun voor Extra Elementen en Attributen van HTML &#x200B;](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   Wanneer het toevoegen van a **Lijst**, kunt u **eigenschappen van de Lijst** vormen gebruikend de dialoog.
 
    * een aangewezen **Titel**.
    * U kunt het beste standaardwaarden voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling** en **Celafstand** verwijderen aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
 
-  ![ de eigenschappendialoog van de Lijst.](assets/chlimage_1-20a.png)
+  ![&#x200B; de eigenschappendialoog van de Lijst.](assets/chlimage_1-20a.png)
 
   U kunt de **eigenschappen van de Cel** dan gebruiken om te kiezen of de cel een gegevens of kopbalcel is en, als een kopbalcel, of het op een rij of een kolom of allebei betrekking heeft:
 
-  ![ de eigenschappendialoog van de Vraag; het plaatsen van een rij (gewoonlijk eerste) als kopbalrij.](assets/chlimage_1-21a.png)
+  ![&#x200B; de eigenschappendialoog van de Vraag; het plaatsen van een rij (gewoonlijk eerste) als kopbalrij.](assets/chlimage_1-21a.png)
 
 * **Complexe Lijsten van Gegevens:**
 
@@ -509,8 +509,8 @@ Zorg ervoor dat uw webpagina&#39;s de juiste structuur hebben door:
 
 #### Meer informatie - Informatie en relaties (1.3.1) {#more-information-info-and-relationships}
 
-* [ Begrijpend Criteria 1.3.1 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
-* [ hoe te om Criteria 1.3.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
+* [&#x200B; Begrijpend Criteria 1.3.1 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+* [&#x200B; hoe te om Criteria 1.3.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
 
 ### Sensorische kenmerken (1.3.3)  {#sensory-characteristics}
 
@@ -526,7 +526,7 @@ Ook informatie die onderscheid moet maken tussen verschillende geluiden (bijvoor
 
 >[!NOTE]
 >
->Voor vereisten met betrekking tot alternatieven aan kleur, zie [ Gebruik van Kleur ](#use-of-color).
+>Voor vereisten met betrekking tot alternatieven aan kleur, zie [&#x200B; Gebruik van Kleur &#x200B;](#use-of-color).
 
 #### Voldoen aan sensorische kenmerken (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -541,12 +541,12 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 
 #### Meer informatie - Sensorische kenmerken (1.3.3) {#more-information-sensory-characteristics}
 
-* [ Begrijpend Criteria 1.3.3 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
-* [ hoe te om Criteria 1.3.3 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding)
+* [&#x200B; Begrijpend Criteria 1.3.3 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+* [&#x200B; hoe te om Criteria 1.3.3 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding)
 
 ### Doorneembaar (1.4) {#distinguishable}
 
-[ Richtsnoer 1.4 onderscheiden: Maak het voor gebruikers gemakkelijker om inhoud te zien en te horen die met inbegrip van het scheiden van voorgrond van achtergrond omvat.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[&#x200B; Richtsnoer 1.4 onderscheiden: Maak het voor gebruikers gemakkelijker om inhoud te zien en te horen die met inbegrip van het scheiden van voorgrond van achtergrond omvat.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
 ### Gebruik van kleur (1.4.1)  {#use-of-color}
 
@@ -556,7 +556,7 @@ Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pag
 
 >[!NOTE]
 >
->Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [ Aangepast (1.3) ](#adaptable); met inbegrip van programmatic toegang tot kleur en andere visuele presentatiecodes.
+>Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [&#x200B; Aangepast (1.3) &#x200B;](#adaptable); met inbegrip van programmatic toegang tot kleur en andere visuele presentatiecodes.
 
 #### Doel - Gebruik van kleur (1.4.1) {#purpose-use-of-color}
 
@@ -597,9 +597,9 @@ Wanneer kleur wordt gebruikt als een actiepunt om informatie te verschaffen, moe
 
 #### Meer informatie - Gebruik van kleur (1.4.1) {#more-information-use-of-color}
 
-* [ Begrijpend Criteria 1.4.1 van het Succes ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [ hoe te om Criteria 1.4.1 van het Succes te ontmoeten ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [ Begeleiding bij vergadering a 3:1 contrastverhouding, die een lijst van &quot;Web veilige&quot;kleuren ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html) bevat
+* [&#x200B; Begrijpend Criteria 1.4.1 van het Succes &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [&#x200B; hoe te om Criteria 1.4.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [&#x200B; Begeleiding bij vergadering a 3:1 contrastverhouding, die een lijst van &quot;Web veilige&quot;kleuren &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html) bevat
 
 ### Contrast (minimaal) (1.4.3) {#contrast-minimum}
 
@@ -630,7 +630,7 @@ Zorg ervoor dat de tekst voldoende contrasteert met de achtergrond. Contrastverh
 * Voor tekst die minimaal 18 punten (of 14 punten vet) groot is, moet de contrastverhouding ten minste 3:1 zijn.
 * Als een achtergrond een patroon krijgt, moet de achtergrond rondom elke tekst worden gearceerd, zodat de verhouding van 4,5:1 of 3:1 behouden blijft.
 
-Om contrastverhoudingen te controleren, gebruik een hulpmiddel van het kleurencontrast, zoals de [ Analysator van het Contrast van de Kleur van de Groep Paciello ](https://www.paciellogroup.com/resources/contrast-analyser.html) of de [ controle van het kleurencontrast WebAIM ](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
+Om contrastverhoudingen te controleren, gebruik een hulpmiddel van het kleurencontrast, zoals de [&#x200B; Analysator van het Contrast van de Kleur van de Groep Paciello &#x200B;](https://www.paciellogroup.com/resources/contrast-analyser.html) of de [&#x200B; controle van het kleurencontrast WebAIM &#x200B;](https://webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
 Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast vereist, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
 
@@ -638,8 +638,8 @@ Als het niet mogelijk is om aan de aanbevolen contrastniveaus te voldoen, geef d
 
 #### Meer informatie - Contrast (minimaal) (1.4.3) {#more-information-contrast-minimum}
 
-* [ Begrijpend Criteria 1.4.3 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-* [ hoe te om Criteria 1.4.3 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
+* [&#x200B; Begrijpend Criteria 1.4.3 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+* [&#x200B; hoe te om Criteria 1.4.3 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
 
 ### Afbeeldingen van tekst (1.4.5) {#images-of-text}
 
@@ -660,16 +660,16 @@ Afbeeldingen van tekst worden vaak gebruikt wanneer de voorkeur wordt gegeven aa
 
 #### Procedure - Afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
 
-Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldingen van tekst te vervangen door equivalente tekst in HTML, zodat de tekst op een aanpasbare manier beschikbaar is. Voor een voorbeeld, zie [ C30: Het gebruiken van CSS om tekst met beelden van tekst te vervangen en gebruikersinterfacecontroles te verstrekken om ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) te schakelen.
+Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldingen van tekst te vervangen door equivalente tekst in HTML, zodat de tekst op een aanpasbare manier beschikbaar is. Voor een voorbeeld, zie [&#x200B; C30: Het gebruiken van CSS om tekst met beelden van tekst te vervangen en gebruikersinterfacecontroles te verstrekken om &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) te schakelen.
 
 #### Meer informatie - Afbeeldingen van tekst (1.4.5) {#more-information-images-of-text}
 
-* [ Begrijpend Criteria 1.4.5 van het Succes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
-* [ hoe te om Criteria 1.4.5 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
+* [&#x200B; Begrijpend Criteria 1.4.5 van het Succes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
+* [&#x200B; hoe te om Criteria 1.4.5 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
 
 ## Beginsel 2: Werkbaar {#principle-operable}
 
-[ Beginsel 2: Operabel - de componenten van het gebruikersinterface en de navigatie moeten operabel zijn.](https://www.w3.org/TR/WCAG20/#operable)
+[&#x200B; Beginsel 2: Operabel - de componenten van het gebruikersinterface en de navigatie moeten operabel zijn.](https://www.w3.org/TR/WCAG20/#operable)
 
 ### Pauzeren, stoppen en verbergen (2.2.2)  {#pause-stop-hide}
 
@@ -689,8 +689,8 @@ er is een mechanisme waarmee de gebruiker de update kan onderbreken, stoppen of 
 
 Opmerkingen zijn:
 
-1. Voor vereisten met betrekking tot het flikkeren of het opvlammen van inhoud, zie [ geen Inhoud op een manier ontwerpen die Bekend om Omzetten (2.3) ](#seizures) te veroorzaken.
-1. Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (ongeacht of deze wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [ Vereiste van de Conformiteit 5: Niet-interferentie ](https://www.w3.org/TR/WCAG20/#cc5).
+1. Voor vereisten met betrekking tot het flikkeren of het opvlammen van inhoud, zie [&#x200B; geen Inhoud op een manier ontwerpen die Bekend om Omzetten (2.3) &#x200B;](#seizures) te veroorzaken.
+1. Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (ongeacht of deze wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [&#x200B; Vereiste van de Conformiteit 5: Niet-interferentie &#x200B;](https://www.w3.org/TR/WCAG20/#cc5).
 1. Inhoud die regelmatig door software wordt bijgewerkt of naar de gebruikersagent wordt gestreamd, is niet verplicht informatie te bewaren of te presenteren die wordt gegenereerd of ontvangen tussen het begin van de pauze- en de hervattingspresentatie, aangezien dit technisch mogelijk is en in veel situaties misleidend kan zijn om dit te doen.
 1. Een animatie die optreedt als onderdeel van een voorlaadfase of een vergelijkbare situatie, kan als essentieel worden beschouwd als er tijdens die fase geen interactie kan optreden voor alle gebruikers en als de voortgang niet wordt aangegeven, gebruikers in verwarring kan brengen of kan leiden tot het vermoeden dat de inhoud is bevroren of gebroken.
 
@@ -710,12 +710,12 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 #### Meer informatie - Pauzeren, Stoppen, Verbergen (2.2.2) {#more-information-pause-stop-hide}
 
-* [ Begrijpend criterium van het Succes 2.2.2 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
-* [ hoe te om Criterium 2.2.2 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
+* [&#x200B; Begrijpend criterium van het Succes 2.2.2 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
+* [&#x200B; hoe te om Criterium 2.2.2 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
 
 ### Convulsies (2.3) {#seizures}
 
-[ Richtsnoer 2.3 Convulsies: Ontwerp geen inhoud op een manier die gekend om convulsies te veroorzaken.](https://www.w3.org/TR/WCAG20/#seizure)
+[&#x200B; Richtsnoer 2.3 Convulsies: Ontwerp geen inhoud op een manier die gekend om convulsies te veroorzaken.](https://www.w3.org/TR/WCAG20/#seizure)
 
 ### Drie instanties of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
 
@@ -725,7 +725,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 >[!NOTE]
 >
->Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [ Vereiste van de Conformiteit 5: Niet-interferentie ](https://www.w3.org/TR/WCAG20/#cc5).
+>Omdat inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (of deze nu wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [&#x200B; Vereiste van de Conformiteit 5: Niet-interferentie &#x200B;](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Doel - Drie instanties of onder de drempelwaarde (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -736,12 +736,12 @@ In bepaalde gevallen kan knipperende inhoud fotosensitieve aanvallen veroorzaken
 Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toegepast:
 
 * ervoor zorgen dat de onderdelen gedurende een periode van één seconde niet meer dan drie keer knipperen;
-* Als de bovengenoemde voorwaarde niet kan worden voldaan aan, dan vertoning het opvlammen inhoud binnen a *klein veilig gebied* in pixel op het scherm. Dit gebied wordt berekend gebruikend een complexe formule, die in [ G176 wordt behandeld: Het houden van het opvlammende gebied klein genoeg ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), zodat zou deze techniek slechts moeten worden gevolgd als het opvlammen inhoud noodzakelijk is.
+* Als de bovengenoemde voorwaarde niet kan worden voldaan aan, dan vertoning het opvlammen inhoud binnen a *klein veilig gebied* in pixel op het scherm. Dit gebied wordt berekend gebruikend een complexe formule, die in [&#x200B; G176 wordt behandeld: Het houden van het opvlammende gebied klein genoeg &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), zodat zou deze techniek slechts moeten worden gevolgd als het opvlammen inhoud noodzakelijk is.
 
 #### Meer informatie - Drie instanties of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [ Begrijpend criterium van het Succes 2.3.1 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [ hoe te om Criterium 2.3.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [&#x200B; Begrijpend criterium van het Succes 2.3.1 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
+* [&#x200B; hoe te om Criterium 2.3.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
 ### Getitelde pagina (2.4.2)  {#page-titled}
 
@@ -761,8 +761,8 @@ U kunt de paginatitel ook uitgeven wanneer het uitgeven van een pagina, die door
 
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
-* [ Begrijpend criterium van het Succes 2.4.2 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
-* [ hoe te om Criterium 2.4.2 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
+* [&#x200B; Begrijpend criterium van het Succes 2.4.2 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
+* [&#x200B; hoe te om Criterium 2.4.2 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
 
 ### Koppelingsdoel (in context) (2.4.4)  {#link-purpose-in-context}
 
@@ -813,7 +813,7 @@ John Smith's publications
 >
 >Het bovengenoemde fragment is een illustratie, wordt het geadviseerd om de **component van het Beeld** te gebruiken.
 
-Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. De vrije verbindingen van de context kunnen in de volgende gevallen worden gebruikt, waarvan de voorbeelden van HTML in [ kunnen worden gevonden hoe te om het Criterium 2.4.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
+Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de verbinding zonder extra context identificeert, wordt erkend dat dit niet altijd mogelijk is. De vrije verbindingen van de context kunnen in de volgende gevallen worden gebruikt, waarvan de voorbeelden van HTML in [&#x200B; kunnen worden gevonden hoe te om het Criterium 2.4.4 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
 * Waar de koppelingstekst deel uitmaakt van een lijst met nauw verwante koppelingen en wanneer het lijstitem dat de koppeling omsluit voldoende context biedt.
 * Waar het doel van een verbinding duidelijk van de *voorafgaande* (niet het volgende) paragraaftekst kan worden geïdentificeerd.
@@ -823,21 +823,21 @@ Hoewel het raadzaam is om koppelingstekst te verstrekken die het doel van de ver
 
 Soms, wanneer er meerdere koppelingen op een pagina staan (die elk de richting van een koppeling in complexe, maar noodzakelijke details aangeven), kan het aangewezen zijn een alternatieve versie van de webpagina op te geven die exact dezelfde inhoud weergeeft, maar waarbij de koppelingstekst niet zo gedetailleerd is.
 
-U kunt scripts ook gebruiken, zodat er een minimale hoeveelheid tekst in de koppeling zelf wordt opgegeven. Maar bij het activeren van een aangewezen controle die aan de bovenkant van de pagina wordt geplaatst, wordt de verbindingstekst *uitgebreid* in verder detail. Een gelijkaardige benadering moet CSS gebruiken ** de volledige verbinding van waargenomen gebruikers verbergen, maar nog het volledig uitvoeren aan de gebruikers van de het schermlezer. Dit valt buiten het werkingsgebied van dit document, maar meer informatie over hoe dit kan worden bereikt kan in [ worden gevonden Meer Informatie - verbind Doel (in Context) (2.4.4) ](#more-information-link-purpose-in-context) sectie.
+U kunt scripts ook gebruiken, zodat er een minimale hoeveelheid tekst in de koppeling zelf wordt opgegeven. Maar bij het activeren van een aangewezen controle die aan de bovenkant van de pagina wordt geplaatst, wordt de verbindingstekst *uitgebreid* in verder detail. Een gelijkaardige benadering moet CSS gebruiken ** de volledige verbinding van waargenomen gebruikers verbergen, maar nog het volledig uitvoeren aan de gebruikers van de het schermlezer. Dit valt buiten het werkingsgebied van dit document, maar meer informatie over hoe dit kan worden bereikt kan in [&#x200B; worden gevonden Meer Informatie - verbind Doel (in Context) (2.4.4) &#x200B;](#more-information-link-purpose-in-context) sectie.
 
 #### Meer informatie - Koppelingsdoel (in context) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [ Begrijpend criterium van het Succes 2.4.4 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-* [ hoe te om Criterium 2.4.4 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
-* [ C7: Het gebruiken van CSS om een gedeelte van de verbindingstekst te verbergen ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+* [&#x200B; Begrijpend criterium van het Succes 2.4.4 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+* [&#x200B; hoe te om Criterium 2.4.4 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
+* [&#x200B; C7: Het gebruiken van CSS om een gedeelte van de verbindingstekst te verbergen &#x200B;](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 
 ## Beginsel 3: begrijpelijk {#principle-understandable}
 
-[ Beginsel 3: Begrip - Informatie en de verrichting van gebruikersinterface moeten begrijpelijk zijn.](https://www.w3.org/TR/WCAG20/#understandable)
+[&#x200B; Beginsel 3: Begrip - Informatie en de verrichting van gebruikersinterface moeten begrijpelijk zijn.](https://www.w3.org/TR/WCAG20/#understandable)
 
 ### Tekstinhoud leesbaar en begrijpelijk maken (3.1) {#make-text-content-readable-and-understandable}
 
-[ Richtsnoer 3.1 Leesbaar: Maak tekstinhoud leesbaar en begrijpelijk.](https://www.w3.org/TR/WCAG20/#meaning)
+[&#x200B; Richtsnoer 3.1 Leesbaar: Maak tekstinhoud leesbaar en begrijpelijk.](https://www.w3.org/TR/WCAG20/#meaning)
 
 ### Taal van pagina (3.1.1) {#language-of-page}
 
@@ -865,9 +865,9 @@ In AEM wordt de standaardtaal van uw pagina ingesteld bij het maken van de pagin
 
 #### Meer informatie - Taal van pagina (3.1.1) {#more-information-language-of-page}
 
-* [ Begrijpend criterium van het Succes 3.1.1 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
-* [ hoe te om Criterium 3.1.1 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
-* De codes zijn gebaseerd op ISO 639-1. Een uitgebreidere lijst van codes voor elke taal kan bij de [ plaats van Scholen W3 ](https://www.w3schools.com/tags/ref_language_codes.asp) worden gevonden.
+* [&#x200B; Begrijpend criterium van het Succes 3.1.1 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+* [&#x200B; hoe te om Criterium 3.1.1 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
+* De codes zijn gebaseerd op ISO 639-1. Een uitgebreidere lijst van codes voor elke taal kan bij de [&#x200B; plaats van Scholen W3 &#x200B;](https://www.w3schools.com/tags/ref_language_codes.asp) worden gevonden.
 
 ### Taal van onderdelen (3.1.2)  {#language-of-parts}
 
@@ -877,7 +877,7 @@ In AEM wordt de standaardtaal van uw pagina ingesteld bij het maken van de pagin
 
 #### Doel - Taal van onderdelen (3.1.2) {#purpose-language-of-parts}
 
-Het doel van dit succescriterium is gelijkaardig aan het succescriterium [ Taal van Pagina ](#language-of-page), behalve dat het op Web-pagina&#39;s van toepassing is die inhoud in veelvoudige talen op één enkele pagina (bijvoorbeeld, wegens citaten of ongewone leningswoorden) bevatten.
+Het doel van dit succescriterium is gelijkaardig aan het succescriterium [&#x200B; Taal van Pagina &#x200B;](#language-of-page), behalve dat het op Web-pagina&#39;s van toepassing is die inhoud in veelvoudige talen op één enkele pagina (bijvoorbeeld, wegens citaten of ongewone leningswoorden) bevatten.
 
 Pagina&#39;s die dit succescriterium toepassen, maken het mogelijk:
 
@@ -909,16 +909,16 @@ Op dezelfde manier kan de browser een ongewoon woord of ongebruikelijke woordgro
 >
 >Het is niet noodzakelijk om dit succescriterium te volgen wanneer het omvatten van namen of steden in verschillende talen, of wanneer het gebruiken van leningswoorden of uitdrukkingen die algemeen in de standaardtaal (zoals *schadenfreude* in het Engels) zijn geworden.
 
-Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [&#x200B; Toevoegend Steun voor Extra Elementen en Attributen van HTML &#x200B;](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Meer informatie - Taal van onderdelen (3.1.2) {#more-information-language-of-parts}
 
-* [ Begrijpend criterium van het Succes 3.1.2 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
-* [ hoe te om Criterium 3.1.2 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
+* [&#x200B; Begrijpend criterium van het Succes 3.1.2 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
+* [&#x200B; hoe te om Criterium 3.1.2 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
 
 ### Gebruikers helpen fouten te voorkomen en te corrigeren (3.3) {#help-users-avoid-and-correct-mistakes}
 
-[ Richtsnoer 3.3 de Hulp van de Input: De gebruikers van de hulp vermijden en verbeteren fouten.](https://www.w3.org/TR/WCAG20/#minimize-error)
+[&#x200B; Richtsnoer 3.3 de Hulp van de Input: De gebruikers van de hulp vermijden en verbeteren fouten.](https://www.w3.org/TR/WCAG20/#minimize-error)
 
 ### Labels of instructies (3.3.2) {#labels-or-instructions}
 
@@ -932,7 +932,7 @@ Het geven van instructies om mensen te helpen vormen in te vullen is een fundame
 
 In AEM, wordt een standaardetiket toegevoegd wanneer u een vormcomponent, zoals a **Gebied van de Tekst**, aan de pagina toevoegt. Deze standaardtitel is afhankelijk van het componenttype. U kunt uw eigen titel op de **Titel en het lusje van de Tekst** toevoegen van uitgeeft dialoog voor dat gebied. Het is belangrijk dat labels gebruikers helpen de gegevens te begrijpen die aan elke formuliercomponent zijn gekoppeld.
 
-![ Titel en het lusje van de Tekst (geef dialoog uit); de titel &quot;Beschrijving&quot;is toegevoegd.](assets/chlimage_1-22a.png)
+![&#x200B; Titel en het lusje van de Tekst (geef dialoog uit); de titel &quot;Beschrijving&quot;is toegevoegd.](assets/chlimage_1-22a.png)
 
 Dit **gebied van de Titel** moet voor gebiedselementen worden gebruikt aangezien het een etiket verstrekt dat aan hulptechnologie beschikbaar is. Alleen het schrijven van een label in tekst naast het veld is niet voldoende.
 
@@ -942,15 +942,15 @@ Voor sommige formuliercomponenten is het ook mogelijk om labels visueel te verbe
 
 Wanneer afbeeldingsknoppen worden gebruikt (bijvoorbeeld de component **Afbeeldingsknop**), bevat het veld **Titel** op het tabblad **Titel en tekst** van het dialoogvenster Bewerken in feite de alternatieve tekst voor de afbeelding in plaats van het label. In het onderstaande voorbeeld heeft de afbeelding met de tekst `Submit` dus alternatieve tekst van `Submit`, toegevoegd met het veld **Titel** in het dialoogvenster Bewerken.
 
-![ knoop van het Beeld met de Alt Tekst die op het gebied van de Titel wordt geplaatst (geef dialoog uit).](assets/chlimage_1-23a.png)
+![&#x200B; knoop van het Beeld met de Alt Tekst die op het gebied van de Titel wordt geplaatst (geef dialoog uit).](assets/chlimage_1-23a.png)
 
 #### Groepen formuliervelden {#groups-of-form-fields}
 
 Waar er een groep verwante controles, zoals **Groep van de Radio** is, kan een titel voor de groep, en individuele controles worden vereist. Wanneer u een set keuzerondjes toevoegt in AEM, wordt in het veld **Titel** deze groepstitel weergegeven, terwijl afzonderlijke titels worden opgegeven wanneer de keuzerondjes (**Items**) worden gemaakt.
 
-![ Toevoegend punten aan de radiagroep. De groepstitel is &#39;Contact me door&#39; - bepaald op het gebied van de Titel.](assets/chlimage_1-24a.png)
+![&#x200B; Toevoegend punten aan de radiagroep. De groepstitel is &#39;Contact me door&#39; - bepaald op het gebied van de Titel.](assets/chlimage_1-24a.png)
 
-Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset` - en `legend` -tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in de **dialoog van de Eigenschappen van het Gebied** verschijnen (zie [ Toevoegend Steun voor Extra Elementen en Attributen van HTML ](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Er is echter geen programmatische koppeling tussen de groepstitel en de keuzerondjes zelf. Sjablooneditors moeten de titel in de benodigde `fieldset` - en `legend` -tags plaatsen om deze koppeling te maken. Dit kan alleen door de broncode van de pagina te bewerken. Alternatief, kan een systeembeheerder steun voor deze elementen toevoegen zodat zij in de **dialoog van de Eigenschappen van het Gebied** verschijnen (zie [&#x200B; Toevoegend Steun voor Extra Elementen en Attributen van HTML &#x200B;](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 
@@ -958,7 +958,7 @@ Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit dui
 
 Als invoer voor een formulierveld verplicht is, maakt u dit duidelijk door het vereiste woord als onderdeel van het label te gebruiken. AEM voegt een sterretje toe wanneer een veld vereist is, maar het is ideaal om het woord `required`in het label zelf op te nemen (in het veld **Titel** in het dialoogvenster Bewerken).
 
-![ Toevoegend extra informatie (het vereiste woord) voor de gebruikers van de het schermlezer op het gebied van de Titel.](assets/chlimage_1-25a.png)
+![&#x200B; Toevoegend extra informatie (het vereiste woord) voor de gebruikers van de het schermlezer op het gebied van de Titel.](assets/chlimage_1-25a.png)
 
 Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velden kunnen vinden. Dit is van bijzonder belang wanneer de gebruiker met een complexe vorm wordt geconfronteerd. Volg de onderstaande conventie:
 
@@ -974,5 +974,5 @@ In eenvoudige formulieren met beperkte functionaliteit kan het correct labelen v
 
 #### Meer informatie - Labels of instructies (3.3.2) {#more-information-labels-or-instructions}
 
-* [ Begrijpend criterium van het Succes 3.3.2 ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
-* [ hoe te om Criterium 3.3.2 van het Succes te ontmoeten ](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)
+* [&#x200B; Begrijpend criterium van het Succes 3.3.2 &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
+* [&#x200B; hoe te om Criterium 3.3.2 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)

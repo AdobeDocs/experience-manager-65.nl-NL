@@ -14,29 +14,29 @@ ht-degree: 0%
 
 # Lesbestand: een adaptief formulier maken {#do-not-publish-tutorial-create-an-adaptive-form}
 
-![ 02-creeer-adaptief-vorm-main-beeld ](assets/02-create-adaptive-form-main-image.png)
+![&#x200B; 02-creeer-adaptief-vorm-main-beeld &#x200B;](assets/02-create-adaptive-form-main-image.png)
 
-Dit leerprogramma is een stap in [ creeert Uw Eerste AanpassingsVorm ](/help/forms/using/create-your-first-adaptive-form.md) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [&#x200B; creeert Uw Eerste AanpassingsVorm &#x200B;](/help/forms/using/create-your-first-adaptive-form.md) reeksen. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 ## Over de zelfstudie {#about-the-tutorial}
 
-Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden. U kunt ook adaptieve formulieren integreren met [!DNL Adobe Analytics] voor gebruiksstatistieken en [!DNL Adobe Campaign] voor campagnebeheer. Voor meer informatie over adaptieve vormmogelijkheden, zie [ Inleiding aan creatie adaptieve vormen ](/help/forms/using/introduction-forms-authoring.md).
+Adaptieve formulieren zijn formulieren van de nieuwe generatie die dynamisch zijn en reageren. U kunt adaptieve formulieren gebruiken om persoonlijke ervaringen te bieden. U kunt ook adaptieve formulieren integreren met [!DNL Adobe Analytics] voor gebruiksstatistieken en [!DNL Adobe Campaign] voor campagnebeheer. Voor meer informatie over adaptieve vormmogelijkheden, zie [&#x200B; Inleiding aan creatie adaptieve vormen &#x200B;](/help/forms/using/introduction-forms-authoring.md).
 
 Het is eenvoudiger om formulieren te maken en te beheren wanneer een correct proces wordt gevolgd. In dit artikel leert u hoe u:
 
-* [ creeer een adaptieve vorm die een klant toestaat om een verzendend adres toe te voegen ](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
+* [&#x200B; creeer een adaptieve vorm die een klant toestaat om een verzendend adres toe te voegen &#x200B;](/help/forms/using/create-adaptive-form.md#step-create-the-adaptive-form)
 
-* [ de gebieden van de Lay-out van een adaptieve vorm aan vertoning en keur informatie van een klant ](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer) goed
+* [&#x200B; de gebieden van de Lay-out van een adaptieve vorm aan vertoning en keur informatie van een klant &#x200B;](/help/forms/using/create-adaptive-form.md#step-add-header-and-footer) goed
 
 * [Verzendactie maken om een e-mail met formulierinhoud te verzenden](/help/forms/using/create-adaptive-form.md#step-add-components-to-capture-and-display-information)
 * [Een adaptief formulier voorvertonen en verzenden](/help/forms/using/create-adaptive-form.md)
 
 Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het volgende:\
-[![ de voorproef van de Vorm in mobiele ](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![&#x200B; de voorproef van de Vorm in mobiele &#x200B;](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Stap 1: Maak het adaptieve formulier {#step-create-the-adaptive-form}
 
-1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** . Het gebrek URL is [ http://localhost:4502/aem/forms.html/content/dam/formsanddocuments ](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** . Het gebrek URL is [&#x200B; http://localhost:4502/aem/forms.html/content/dam/formsanddocuments &#x200B;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Selecteer **[!UICONTROL Create]** en selecteer **[!UICONTROL Adaptive Form]** . Er verschijnt een optie voor het selecteren van een sjabloon. Selecteer de **[!UICONTROL Blank]** -sjabloon en selecteer **[!UICONTROL Next]** .
 
 1. Er verschijnt een optie voor **[!UICONTROL Add Properties]** . De velden **[!UICONTROL Title]** en **[!UICONTROL Name]** zijn verplicht:
@@ -46,32 +46,32 @@ Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het 
 
 1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking. Selecteer **[!UICONTROL Open]** om het nieuwe formulier op een nieuw tabblad te openen. Het formulier wordt geopend voor bewerking. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen aan de behoeften.
 
-   Voor informatie over adaptieve vorm auteursinterface en beschikbare componenten, zie [ Inleiding aan creatie adaptieve vormen ](/help/forms/using/creating-adaptive-form.md).
+   Voor informatie over adaptieve vorm auteursinterface en beschikbare componenten, zie [&#x200B; Inleiding aan creatie adaptieve vormen &#x200B;](/help/forms/using/creating-adaptive-form.md).
 
-   ![ een pas gecreëerde adaptieve vorm.](assets/newly-created-adaptive-form.png)
+   ![&#x200B; een pas gecreëerde adaptieve vorm.](assets/newly-created-adaptive-form.png)
 
 ## Stap 2: kop- en voettekst toevoegen {#step-add-header-and-footer}
 
 AEM [!DNL Forms] biedt veel componenten om informatie weer te geven op een adaptief formulier. De componenten Koptekst en Voettekst geven een formulier een consistent uiterlijk. Een koptekst bevat doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht. Een voettekst bevat doorgaans copyrightinformatie en koppelingen naar andere pagina&#39;s.
 
-1. Selecteer ![ knevel-zij-paneel ](assets/toggle-side-panel.png) > ![ drievoudig ](assets/treeexpandall.png). De componentbrowser wordt geopend. Sleep de component **[!UICONTROL Header]** van de componentbrowser naar het aangepaste formulier.
-1. Selecteer **[!UICONTROL Logo]**. De werkbalk wordt weergegeven. Selecteer ![ aem_6_3_edit ](assets/aem_6_3_edit.png) op de toolbar, type **Wij.Retail**, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer ![&#x200B; knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png) > ![&#x200B; drievoudig &#x200B;](assets/treeexpandall.png). De componentbrowser wordt geopend. Sleep de component **[!UICONTROL Header]** van de componentbrowser naar het aangepaste formulier.
+1. Selecteer **[!UICONTROL Logo]**. De werkbalk wordt weergegeven. Selecteer ![&#x200B; aem_6_3_edit &#x200B;](assets/aem_6_3_edit.png) op de toolbar, type **Wij.Retail**, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
-1. Selecteer Afbeelding. De werkbalk wordt weergegeven. Selecteer ![ cmp ](assets/cmppr.png). De eigenschappenbrowser wordt links van het scherm geopend. **[!UICONTROL Browse]** en uploadt u de afbeelding van het logo. Selecteer ![ name_6_3_forms_save ](assets/aem_6_3_forms_save.png). De afbeelding wordt in de koptekst weergegeven.
+1. Selecteer Afbeelding. De werkbalk wordt weergegeven. Selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). De eigenschappenbrowser wordt links van het scherm geopend. **[!UICONTROL Browse]** en uploadt u de afbeelding van het logo. Selecteer ![&#x200B; name_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png). De afbeelding wordt in de koptekst weergegeven.
 
    U kunt de optie Bestand ophalen selecteren om het logo te downloaden dat in dit artikel wordt gebruikt als u er geen hebt.
 
 [Bestand ophalen](assets/logo.png)
 
-1. Sleep de **[!UICONTROL Footer]** component van ![ drievoudig ](assets/treeexpandall.png) aan de adaptieve vorm. In dit stadium ziet het formulier er als volgt uit:
+1. Sleep de **[!UICONTROL Footer]** component van ![&#x200B; drievoudig &#x200B;](assets/treeexpandall.png) aan de adaptieve vorm. In dit stadium ziet het formulier er als volgt uit:
 
-   ![ adaptive-form-with-headers-and-footers ](assets/adaptive-form-with-headers-and-footers.png)
+   ![&#x200B; adaptive-form-with-headers-and-footers &#x200B;](assets/adaptive-form-with-headers-and-footers.png)
 
 ## Stap 3: Voeg componenten toe aan het vastleggen en weergeven van informatie {#step-add-components-to-capture-and-display-information}
 
-Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt veel componenten om informatie in een adaptieve vorm vast te leggen en weer te geven. U kunt de componenten van ![ drievoudig ](assets/treeexpandall.png) aan een vorm slepen. Om over beschikbare componenten en overeenkomstige functionaliteit te leren, zie [ Inleiding aan auteursadaptieve vormen ](/help/forms/using/introduction-forms-authoring.md).
+Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt veel componenten om informatie in een adaptieve vorm vast te leggen en weer te geven. U kunt de componenten van ![&#x200B; drievoudig &#x200B;](assets/treeexpandall.png) aan een vorm slepen. Om over beschikbare componenten en overeenkomstige functionaliteit te leren, zie [&#x200B; Inleiding aan auteursadaptieve vormen &#x200B;](/help/forms/using/introduction-forms-authoring.md).
 
-1. Sleep de **[!UICONTROL Numeric Box component]** naar het aangepaste formulier. Plaats het voor de voettekstcomponent. Open eigenschappen van de component, verander **[!UICONTROL Title]** van de component in **`Customer ID`**, verander **[!UICONTROL Element Name]** in **`customer_ID`**, laat de **[!UICONTROL Required Field]** optie toe, laat de **[!UICONTROL Use HTML5 Number Input Type]** optie toe, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Sleep de **[!UICONTROL Numeric Box component]** naar het aangepaste formulier. Plaats het voor de voettekstcomponent. Open eigenschappen van de component, verander **[!UICONTROL Title]** van de component in **`Customer ID`**, verander **[!UICONTROL Element Name]** in **`customer_ID`**, laat de **[!UICONTROL Required Field]** optie toe, laat de **[!UICONTROL Use HTML5 Number Input Type]** optie toe, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 1. Sleep drie tekstvakcomponenten naar het aangepaste formulier. Plaats deze voor de voettekstcomponent. Stel de volgende eigenschappen in voor deze tekstvakken.:
 
    <table> 
@@ -109,7 +109,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
     </tbody> 
    </table>
 
-1. Sleep een component **[!UICONTROL Numeric Box]** vóór de voettekstcomponent. Open eigenschappen van de component, vastgestelde waarden die in de hieronder lijst, Uitgezochte ![ worden vermeld aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Sleep een component **[!UICONTROL Numeric Box]** vóór de voettekstcomponent. Open eigenschappen van de component, vastgestelde waarden die in de hieronder lijst, Uitgezochte ![&#x200B; worden vermeld aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -119,7 +119,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
    | Vereist veld | Ingeschakeld |
    | Type weergavepatroon | Geen patroon |
 
-1. Sleep een component **[!UICONTROL Email]** vóór de voettekstcomponent. Open eigenschappen van de component, plaats waarden die in de hieronder lijst worden vermeld, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Sleep een component **[!UICONTROL Email]** vóór de voettekstcomponent. Open eigenschappen van de component, plaats waarden die in de hieronder lijst worden vermeld, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -127,7 +127,7 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
    | Elementnaam | customer_Email |
    | Vereist veld | Ingeschakeld |
 
-1. Sleep een component **[!UICONTROL File Attachment]** vóór de voettekstcomponent. Open eigenschappen van de component, plaats waarden die in de hieronder lijst worden vermeld, en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Sleep een component **[!UICONTROL File Attachment]** vóór de voettekstcomponent. Open eigenschappen van de component, plaats waarden die in de hieronder lijst worden vermeld, en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -150,21 +150,21 @@ Componenten zijn bouwstenen van een adaptief formulier. AEM [!DNL Forms] biedt v
     </tbody> 
    </table>
 
-1. Sleep een component **[!UICONTROL Submit Button]** naar het aangepaste formulier. Plaats het voor de voettekstcomponent. Open eigenschappen van de component, verander de Naam van het Element in `address_addition_update_submit`, uitgezocht ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png). De indeling van het formulier is voltooid en het formulier ziet er als volgt uit:
+1. Sleep een component **[!UICONTROL Submit Button]** naar het aangepaste formulier. Plaats het voor de voettekstcomponent. Open eigenschappen van de component, verander de Naam van het Element in `address_addition_update_submit`, uitgezocht ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png). De indeling van het formulier is voltooid en het formulier ziet er als volgt uit:
 
-   ![ adaptive-form-with-all-the-components ](assets/adaptive-form-with-all-the-components.png)
+   ![&#x200B; adaptive-form-with-all-the-components &#x200B;](assets/adaptive-form-with-all-the-components.png)
 
 ## Stap 4: de verzendactie voor het aangepaste formulier configureren {#step-configure-submit-action-for-the-adaptive-form}
 
-Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden tikt op een adaptief formulier. Met een verzendactie kunt u formuliergegevens opslaan in de lokale gegevensopslagruimte, formuliergegevens verzenden naar een REST-eindpunt, formuliergegevens verzenden als e-mail, enzovoort. Aangepaste formulieren bieden een paar extra verzendacties die buiten de box vallen. Voor gedetailleerde informatie, zie [ Vormend de Submit actie ](/help/forms/using/configuring-submit-actions.md).
+Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden tikt op een adaptief formulier. Met een verzendactie kunt u formuliergegevens opslaan in de lokale gegevensopslagruimte, formuliergegevens verzenden naar een REST-eindpunt, formuliergegevens verzenden als e-mail, enzovoort. Aangepaste formulieren bieden een paar extra verzendacties die buiten de box vallen. Voor gedetailleerde informatie, zie [&#x200B; Vormend de Submit actie &#x200B;](/help/forms/using/configuring-submit-actions.md).
 
 Met de volgende stappen kunt u de handeling voor het verzenden van e-mail configureren en demo-verzendactie van het formulier configureren:
 
-1. De e-mailserver configureren. Voor details, zie [ Vormend E-mailBericht ](/help/sites-administering/notification.md).
+1. De e-mailserver configureren. Voor details, zie [&#x200B; Vormend E-mailBericht &#x200B;](/help/sites-administering/notification.md).
 
 
-1. Selecteer **[!UICONTROL Form Container]** in browser van de Inhoud en selecteer ![ cmp ](assets/cmppr.png). De eigenschappenbrowser wordt aan de linkerkant geopend.
-1. Ga naar **[!UICONTROL Submission]** > **[!UICONTROL Submit Action]** . Selecteer **[!UICONTROL Send Email]**. Specificeer de volgende waarden en selecteer ![ aem_6_3_forms_save ](assets/aem_6_3_forms_save.png).
+1. Selecteer **[!UICONTROL Form Container]** in browser van de Inhoud en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). De eigenschappenbrowser wordt aan de linkerkant geopend.
+1. Ga naar **[!UICONTROL Submission]** > **[!UICONTROL Submit Action]** . Selecteer **[!UICONTROL Send Email]**. Specificeer de volgende waarden en selecteer ![&#x200B; aem_6_3_forms_save &#x200B;](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |--- |--- |
@@ -174,16 +174,16 @@ Met de volgende stappen kunt u de handeling voor het verzenden van e-mail config
    | E-mailsjabloon | Hallo `${customer_Name}`, het volgende adres wordt toegevoegd als het verzendadres voor uw account: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regards, We.Retail |
    | Bijlagen opnemen | Ingeschakeld |
 
-   Uw formulier is klaar. U kunt nu een voorbeeld van het formulier bekijken en de functionaliteit testen. Als u de naam hebt gebruikt die op het leerprogramma wordt vermeld en tot de vorm op de machine toegang heeft die AEM [!DNL Forms] server in werking stelt, dan is de vorm beschikbaar in [ http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html ](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+   Uw formulier is klaar. U kunt nu een voorbeeld van het formulier bekijken en de functionaliteit testen. Als u de naam hebt gebruikt die op het leerprogramma wordt vermeld en tot de vorm op de machine toegang heeft die AEM [!DNL Forms] server in werking stelt, dan is de vorm beschikbaar in [&#x200B; http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html &#x200B;](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 
 ## Stap 5: Het adaptieve formulier voorvertonen en verzenden {#step-preview-and-submit-the-adaptive-form}
 
 Met de **[!UICONTROL Preview option]** kunt u de weergave en het gedrag van een formulier evalueren. U kunt een formulier verzenden in de voorbeeldmodus en ook de validaties controleren die op een formulier zijn toegepast. Als bijvoorbeeld een fout wordt weergegeven wanneer een verplicht veld leeg blijft.
 
-Aangepaste formulieren bieden ook een optie om een formulier voor verschillende apparaten te emuleren. Bijvoorbeeld iPhone, iPad en Desktop. U kunt zowel **[!UICONTROL Preview]** als **[!UICONTROL Emulator]** gebruiken ![ heerser ](assets/ruler.png) opties samen met elkaar om een vorm voor apparaten van verschillende het schermgrootte voor te vertonen.
+Aangepaste formulieren bieden ook een optie om een formulier voor verschillende apparaten te emuleren. Bijvoorbeeld iPhone, iPad en Desktop. U kunt zowel **[!UICONTROL Preview]** als **[!UICONTROL Emulator]** gebruiken ![&#x200B; heerser &#x200B;](assets/ruler.png) opties samen met elkaar om een vorm voor apparaten van verschillende het schermgrootte voor te vertonen.
 
-1. Selecteer de optie **[!UICONTROL Preview]** aan de rechterkant van de formuliereditor. Het formulier wordt geopend in de voorbeeldmodus. Als u de naam gebruikt die op het leerprogramma wordt vermeld, dan voorproef URL van de vorm is [ http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled ](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
-1. Gebruik ![ heerser ](assets/ruler.png) om te bekijken hoe de vorm op diverse apparaten kijkt.
-1. Vul velden van het formulier in en selecteer **[!UICONTROL Submit]** . De vorm wordt voorgelegd en u wordt opnieuw gericht aan gebrek **bedankt** pagina. U kunt ook een aangepaste pagina voor bedankt opgeven. Voor details, zie [ Vormend opnieuw richten pagina ](/help/forms/using/configuring-redirect-page.md).
+1. Selecteer de optie **[!UICONTROL Preview]** aan de rechterkant van de formuliereditor. Het formulier wordt geopend in de voorbeeldmodus. Als u de naam gebruikt die op het leerprogramma wordt vermeld, dan voorproef URL van de vorm is [&#x200B; http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled &#x200B;](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Gebruik ![&#x200B; heerser &#x200B;](assets/ruler.png) om te bekijken hoe de vorm op diverse apparaten kijkt.
+1. Vul velden van het formulier in en selecteer **[!UICONTROL Submit]** . De vorm wordt voorgelegd en u wordt opnieuw gericht aan gebrek **bedankt** pagina. U kunt ook een aangepaste pagina voor bedankt opgeven. Voor details, zie [&#x200B; Vormend opnieuw richten pagina &#x200B;](/help/forms/using/configuring-redirect-page.md).
 
-Het aangepaste formulier voor het toevoegen van een adres is gereed. Als u de naam gebruikt die in het leerprogramma wordt vermeld en tot de vorm op de machine toegang heeft die de server van AEM Forms in werking stelt, dan is de vorm beschikbaar in [ http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html ](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+Het aangepaste formulier voor het toevoegen van een adres is gereed. Als u de naam gebruikt die in het leerprogramma wordt vermeld en tot de vorm op de machine toegang heeft die de server van AEM Forms in werking stelt, dan is de vorm beschikbaar in [&#x200B; http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html &#x200B;](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).

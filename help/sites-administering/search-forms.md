@@ -21,9 +21,9 @@ ht-degree: 1%
 
 Het gebruik **Onderzoek Forms** om de selectie van onderzoeksvoorspelden aan te passen die in de onderzoekspanelen beschikbaar in diverse AEM consoles en/of panelen van het auteursmilieu worden gebruikt. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
-A [ waaier van predikaat ](#predicates-and-their-settings) is beschikbaar uit-van-de-doos. U kunt meerdere voorspelden toevoegen, waaronder (onder andere) de voorspelling van de eigenschap, om te zoeken naar elementen die overeenkomen met één eigenschap die door u is opgegeven. Of de opties verwijzen naar zoekelementen die overeenkomen met een of meer waarden die u voor een bepaalde eigenschap opgeeft.
+A [&#x200B; waaier van predikaat &#x200B;](#predicates-and-their-settings) is beschikbaar uit-van-de-doos. U kunt meerdere voorspelden toevoegen, waaronder (onder andere) de voorspelling van de eigenschap, om te zoeken naar elementen die overeenkomen met één eigenschap die door u is opgegeven. Of de opties verwijzen naar zoekelementen die overeenkomen met een of meer waarden die u voor een bepaalde eigenschap opgeeft.
 
-U kunt [ vormen de onderzoeksvormen ](#configuring-your-search-forms) die binnen diverse consoles en activabrowser worden gebruikt (wanneer het uitgeven van pagina&#39;s). De [ dialogen voor het vormen van deze vormen ](#configuring-your-search-forms) kunnen via worden betreden:
+U kunt [&#x200B; vormen de onderzoeksvormen &#x200B;](#configuring-your-search-forms) die binnen diverse consoles en activabrowser worden gebruikt (wanneer het uitgeven van pagina&#39;s). De [&#x200B; dialogen voor het vormen van deze vormen &#x200B;](#configuring-your-search-forms) kunnen via worden betreden:
 
 * **Hulpmiddelen**
 
@@ -31,9 +31,9 @@ U kunt [ vormen de onderzoeksvormen ](#configuring-your-search-forms) die binnen
 
       * **Onderzoek Forms**
 
-Wanneer u eerst tot deze console toegang hebt, kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Nadat u de configuratie hebt aangepast, verdwijnt het slot tenzij u [ uw aangepaste configuratie ](#deleting-a-configuration-to-reinstate-the-default) schrapt. In dat geval wordt de standaardinstelling (en de hangslotindicator) hersteld.
+Wanneer u eerst tot deze console toegang hebt, kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Nadat u de configuratie hebt aangepast, verdwijnt het slot tenzij u [&#x200B; uw aangepaste configuratie &#x200B;](#deleting-a-configuration-to-reinstate-the-default) schrapt. In dat geval wordt de standaardinstelling (en de hangslotindicator) hersteld.
 
-![ Onderzoek vormenvenster ](assets/chlimage_1-374.png)
+![&#x200B; Onderzoek vormenvenster &#x200B;](assets/chlimage_1-374.png)
 
 ## Configuraties {#configurations}
 
@@ -404,7 +404,7 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik **geef** pictogram uit om de configuratie voor het bijwerken te openen.
-1. Als een nieuwe aanpassing, wilt u waarschijnlijk [ nieuwe voorspellen gebieden toevoegen en de montages ](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist bepalen. Als een bestaande aanpassing, u een bestaand gebied kunt selecteren en [ de montages ](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
+1. Als een nieuwe aanpassing, wilt u waarschijnlijk [&#x200B; nieuwe voorspellen gebieden toevoegen en de montages &#x200B;](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist bepalen. Als een bestaande aanpassing, u een bestaand gebied kunt selecteren en [&#x200B; de montages &#x200B;](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
 1. Selecteer **Gedaan** om de configuratie te bewaren.
 
    >[!NOTE]
@@ -418,10 +418,10 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
-1. [ open de aangepaste configuratie ](#creating-opening-a-customized-configuration) voor het bijwerken.
+1. [&#x200B; open de aangepaste configuratie &#x200B;](#creating-opening-a-customized-configuration) voor het bijwerken.
 1. Als u een gebied wilt toevoegen, open **Uitgezochte Predicate** tabel en sleep vereiste predikaat aan de vereiste plaats. Bijvoorbeeld, het **Predicate van de Waaier van de Datum**:
 
-   ![ Uitgevend een onderzoeksvorm ](assets/chlimage_1-375.png)
+   ![&#x200B; Uitgevend een onderzoeksvorm &#x200B;](assets/chlimage_1-375.png)
 
 1. Afhankelijk van of:
 
@@ -435,7 +435,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    Bijvoorbeeld, de montages voor het **Predicate van de Waaier van de Datum**:
 
-   ![ Eigenschappen voor de Predicate van de Waaier van de Datum ](assets/chlimage_1-376.png)
+   ![&#x200B; Eigenschappen voor de Predicate van de Waaier van de Datum &#x200B;](assets/chlimage_1-376.png)
 
 1. Breng zonodig uw veranderingen aan en bevestig met **Gereed**.
 
@@ -443,20 +443,20 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
 1. Selecteer het pictogram Voorvertoning:
 
-   ![ de onderzoeksvormen van het voorproef ](do-not-localize/chlimage_1-31.png)
+   ![&#x200B; de onderzoeksvormen van het voorproef &#x200B;](do-not-localize/chlimage_1-31.png)
 
 1. Op deze manier worden de zoekformulieren weergegeven zoals ze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
 
-   ![ Previewing de onderzoeksvorm ](assets/chlimage_1-377.png)
+   ![&#x200B; Previewing de onderzoeksvorm &#x200B;](assets/chlimage_1-377.png)
 
 1. **dicht** de voorproef zodat kunt u de configuratie terugkeren en beëindigen.
 
 ### Een voorspelbaar veld verwijderen {#deleting-a-predicate-field}
 
-1. [ open de aangepaste configuratie ](#creating-opening-a-customized-configuration) voor het bijwerken.
+1. [&#x200B; open de aangepaste configuratie &#x200B;](#creating-opening-a-customized-configuration) voor het bijwerken.
 1. Selecteer het voorspelbare gebied (op het recht), open het **lusje van Montages** en selecteer dan het **Schrapping** pictogram (linksonder).
 
-   ![ pictogram van de Schrapping ](do-not-localize/chlimage_1-32.png)
+   ![&#x200B; pictogram van de Schrapping &#x200B;](do-not-localize/chlimage_1-32.png)
 
 1. Een dialoogvenster vraagt om bevestiging van de verwijderactie.
 
@@ -474,7 +474,7 @@ Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
 1. Selecteer de vereiste configuratie (bijvoorbeeld, **Redacteur van de Pagina (het onderzoek van Paragraaf)**) en toen **schrap** pictogram in de toolbar:
 
-   ![ het Schrappen van een vorm ](assets/chlimage_1-378.png)
+   ![&#x200B; het Schrappen van een vorm &#x200B;](assets/chlimage_1-378.png)
 
 1. De aangepaste configuratie wordt verwijderd en de standaardinstelling wordt hersteld (dit wordt aangegeven door het opnieuw verschijnen van het hangslotsymbool in de console).
 
@@ -493,7 +493,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    * `jcr:title` - het veldlabel dat moet worden weergegeven in de zoekrail
    * `value` - de eigenschapswaarde waarop moet worden gezocht
 
-   ![ Toevoegend opties in CRXDE ](assets/chlimage_1-379.png)
+   ![&#x200B; Toevoegend opties in CRXDE &#x200B;](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -526,12 +526,12 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![ Toevoegend bezitspad ](assets/chlimage_1-380.png)
+   ![&#x200B; Toevoegend bezitspad &#x200B;](assets/chlimage_1-380.png)
 
 1. Selecteer **Gedaan** om uw configuratie te bewaren.
 1. Navigeer aan de aangewezen console (in dit voorbeeld, **Plaatsen**) en open het **spoor van het Onderzoek**. De nieuwe zoekformulieren en de verschillende opties zijn zichtbaar. Selecteer de gewenste optie zodat u de zoekresultaten kunt zien:
 
-   ![ de definitieve resultaten ](assets/chlimage_1-381.png)
+   ![&#x200B; de definitieve resultaten &#x200B;](assets/chlimage_1-381.png)
 
 ## Gebruikersmachtigingen {#user-permissions}
 

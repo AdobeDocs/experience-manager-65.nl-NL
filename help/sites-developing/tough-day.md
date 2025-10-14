@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Wat is Hoest Dag 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; is een toepassing waarmee u de grenzen van uw AEM kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt op [ deze opname ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=nl-NL) voor een presentatie van de toepassing letten.
+&quot;Tough Day 2&quot; is een toepassing waarmee u de grenzen van uw AEM kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt op [&#x200B; deze opname &#x200B;](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=nl-NL) voor een presentatie van de toepassing letten.
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## Hoe wordt Tough Day 2 uitgevoerd {#how-to-run-tough-day}
 
-Download de recentste versie van Dag 2 van Hoest van [ Repository van de Adobe ](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM-instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
+Download de recentste versie van Dag 2 van Hoest van [&#x200B; Repository van de Adobe &#x200B;](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM-instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -42,7 +42,7 @@ De standaardsuite die wordt uitgevoerd nadat de parameters zijn toegevoegd, krij
 
 De suite bevat 15% handelingen voor schrijven en 85% handelingen voor lezen.
 
-Tough Day 2 installeert het standaard inhoudspakket om de suite-tests uit te voeren. Dit kan worden vermeden door de `installsamplecontent` parameter aan `false` te plaatsen, maar herinner dat u ook de standaardwegen voor de tests zou moeten veranderen die u van plan bent te lopen. Als de pot zonder parameters in werking wordt gesteld, steekt Dag 2 de [ hulpinformatie ](/help/sites-developing/tough-day.md#getting-help) toont.
+Tough Day 2 installeert het standaard inhoudspakket om de suite-tests uit te voeren. Dit kan worden vermeden door de `installsamplecontent` parameter aan `false` te plaatsen, maar herinner dat u ook de standaardwegen voor de tests zou moeten veranderen die u van plan bent te lopen. Als de pot zonder parameters in werking wordt gesteld, steekt Dag 2 de [&#x200B; hulpinformatie &#x200B;](/help/sites-developing/tough-day.md#getting-help) toont.
 
 U kunt de toepassing doorgaans gebruiken door dit patroon te volgen:
 
@@ -241,7 +241,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de parameter `config` * *. Geef ook de naam van de suite en de werkelijke naam van de test op (niet de naam van de klasse Test). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Voor verdere details op hoe te om testeigenschappen te vinden, lees de [ Veranderende sectie van de Eigenschappen van de Test ](/help/sites-developing/tough-day.md#changing-the-test-properties).
+Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de parameter `config` * *. Geef ook de naam van de suite en de werkelijke naam van de test op (niet de naam van de klasse Test). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Voor verdere details op hoe te om testeigenschappen te vinden, lees de [&#x200B; Veranderende sectie van de Eigenschappen van de Test &#x200B;](/help/sites-developing/tough-day.md#changing-the-test-properties).
 
 In het voorbeeld onder de standaardelementtitel voor `CreatePageTreeTest` (genoemd `UploadAsset`) wordt gewijzigd in &quot;NewAsset&quot;.
 
@@ -403,7 +403,7 @@ Tough Day 2 maakt een logmap in dezelfde map waarin u Dag 2 hebt uitgevoerd. Dez
 * **toughday.log**: bevat berichten met betrekking tot de toepassingsstaat, het zuiveren informatie en globale berichten.
 * **toughday_&lt;testname>.log**: berichten met betrekking tot de gespecificeerde test.
 
-De logboeken worden niet overschreven, de verdere looppas voegt berichten aan de bestaande logboeken toe. De logboeken hebben verscheidene niveaus, voor meer informatie zien de [ loglevel parameter.](#global-parameters).
+De logboeken worden niet overschreven, de verdere looppas voegt berichten aan de bestaande logboeken toe. De logboeken hebben verscheidene niveaus, voor meer informatie zien de [&#x200B; loglevel parameter.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

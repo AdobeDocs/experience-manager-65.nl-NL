@@ -46,11 +46,11 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 >[!NOTE]
 >
->Het gebruik van de trigger Bij wijziging kan van invloed zijn op de prestaties. Zie [ MSM beste praktijken ](/help/sites-administering/msm-best-practices.md#onmodify) voor meer informatie.
+>Het gebruik van de trigger Bij wijziging kan van invloed zijn op de prestaties. Zie [&#x200B; MSM beste praktijken &#x200B;](/help/sites-administering/msm-best-practices.md#onmodify) voor meer informatie.
 
 ### Geïnstalleerde uitrolconfiguraties {#installed-rollout-configurations}
 
-De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [ een rollout configuratie ](#creating-a-rollout-configuration) tot stand brengen.
+De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [&#x200B; een rollout configuratie &#x200B;](#creating-a-rollout-configuration) tot stand brengen.
 
 <table>
  <tbody>
@@ -125,7 +125,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
 
 ### Geïnstalleerde synchronisatiehandelingen {#installed-synchronization-actions}
 
-De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïnstalleerd zijn. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [ een Nieuwe Actie van de Synchronisatie ](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) tot stand brengen.
+De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïnstalleerd zijn. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [&#x200B; een Nieuwe Actie van de Synchronisatie &#x200B;](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) tot stand brengen.
 
 <table>
  <tbody>
@@ -256,10 +256,10 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
 
 ### Een rollout-configuratie maken {#creating-a-rollout-configuration}
 
-U kunt [ een rollout configuratie ](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) tot stand brengen wanneer de geïnstalleerde rollout configuraties niet aan uw toepassingsvereisten voldoen:
+U kunt [&#x200B; een rollout configuratie &#x200B;](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) tot stand brengen wanneer de geïnstalleerde rollout configuraties niet aan uw toepassingsvereisten voldoen:
 
-* [ creeer de rollout configuratie ](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-* [ voegt synchronisatieacties aan de rollout configuratie ](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration) toe.
+* [&#x200B; creeer de rollout configuratie &#x200B;](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
+* [&#x200B; voegt synchronisatieacties aan de rollout configuratie &#x200B;](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration) toe.
 
 De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van rollout configuraties op een blauwdruk of een levende exemplaarpagina.
 
@@ -267,7 +267,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties steunen zodat zij geen specifieke knooptypes en eigenschappen beïnvloeden. Veel eigenschappen en subknooppunten die bijvoorbeeld betrekking hebben op de interne werking van AEM, mogen niet in een live kopie worden opgenomen. Alleen de inhoud die relevant is voor de gebruiker van de pagina moet worden gekopieerd.
 
-Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In de volgende tabel worden de synchronisatiehandelingen weergegeven waarvoor u de knooppunten kunt opgeven die moeten worden uitgesloten. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -312,7 +312,7 @@ In de volgende tabel worden de eigenschappen beschreven die u kunt configureren:
 
 >[!NOTE]
 >
->In aanraking-geoptimaliseerde UI zie ook [ Vormend Msm Locks op de Eigenschappen van de Pagina (aanraking-Geoptimaliseerde UI) ](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
+>In aanraking-geoptimaliseerde UI zie ook [&#x200B; Vormend Msm Locks op de Eigenschappen van de Pagina (aanraking-Geoptimaliseerde UI) &#x200B;](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
 
 #### Actie voor bijwerken van CQ MSM-inhoud - Uitsluitingen {#cq-msm-content-update-action-exclusions}
 
@@ -320,7 +320,7 @@ Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden 
 
 Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (dat wil zeggen niet bijgewerkt) bij rollout:
 
-![ CQ MSM de Actie van de Update van de Inhoud ](assets/chlimage_1.png)
+![&#x200B; CQ MSM de Actie van de Update van de Inhoud &#x200B;](assets/chlimage_1.png)
 
 U kunt de expressies wijzigen die de uitsluitingslijst naar wens definiëren.
 
@@ -332,7 +332,7 @@ Bijvoorbeeld, als u de pagina **Titel** in de veranderingen wilt worden omvat di
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties met betrekking tot het bijwerken van verwijzingen steunen.
 
-Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In de volgende tabel staan de synchronisatiehandelingen waarvoor u de update van de verwijzing kunt opgeven. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -359,10 +359,10 @@ MSM laat u toe om reeksen rollout configuraties te specificeren die algemeen wor
 
 De volgende lijst van plaatsen waar u de rollout configuraties kunt specificeren om te gebruiken beschrijft hoe MSM bepaalt welke rollout configuraties aan gebruik voor een levende kopie:
 
-* **[Levende eigenschappen van de exemplaarpagina ](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** wanneer een levende exemplaarpagina wordt gevormd om één of meerdere rollout configuraties te gebruiken, gebruikt MSM die rollout configuraties.
-* **[eigenschappen van de pagina van de Vervaging ](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de bron van de blauwdruk pagina wordt geassocieerd gebruikt.
+* **[Levende eigenschappen van de exemplaarpagina &#x200B;](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** wanneer een levende exemplaarpagina wordt gevormd om één of meerdere rollout configuraties te gebruiken, gebruikt MSM die rollout configuraties.
+* **[eigenschappen van de pagina van de Vervaging &#x200B;](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de bron van de blauwdruk pagina wordt geassocieerd gebruikt.
 * **Levende eigenschappen van de exemplaarouderpagina van het exemplaar:** wanneer noch de levende exemplaarpagina noch de WebPrint bronpagina met een rollout configuratie worden gevormd, wordt de rollout configuratie die op de levende de ouderpagina van de exemplaarpagina van toepassing is gebruikt.
-* **[gebrek van het Systeem ](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** wanneer de rollout configuratie van de levende ouder van het exemplaar pagina niet kan worden bepaald, wordt de systeem standaardrollout configuratie gebruikt.
+* **[gebrek van het Systeem &#x200B;](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** wanneer de rollout configuratie van de levende ouder van het exemplaar pagina niet kan worden bepaald, wordt de systeem standaardrollout configuratie gebruikt.
 
 Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als broninhoud. Op basis van de blauwdruk wordt een site gemaakt. Elk punt in de volgende lijst beschrijft een verschillend scenario betreffende het gebruik van rollout configuraties:
 
@@ -374,7 +374,7 @@ Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als br
 
 Vorm een levende exemplaarpagina met de rollout configuraties aan gebruik wanneer de bronpagina uit wordt opgerold. Onderliggende pagina&#39;s nemen de configuratie standaard over. Wanneer u de rollout configuratie aan gebruik vormt, treedt u de configuratie met voeten die de levende exemplaarpagina van zijn ouder erft.
 
-U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wanneer u [ het levende exemplaar ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) creeert.
+U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wanneer u [&#x200B; het levende exemplaar &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) creeert.
 
 1. Gebruik de **console van Plaatsen** om de levende exemplaarpagina te selecteren.
 1. Selecteer **Eigenschappen** van de toolbar.
@@ -382,7 +382,7 @@ U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wann
 
    De **sectie van de Configuratie** toont de rollout configuraties die de pagina erft.
 
-   ![ Configuratie ](assets/chlimage_1-1.png)
+   ![&#x200B; Configuratie &#x200B;](assets/chlimage_1-1.png)
 
 1. Indien nodig, pas de **Levende markering van de Overerving van het Exemplaar** aan. Als deze optie is ingeschakeld, is de configuratie van de live kopie effectief voor alle onderliggende elementen.
 
@@ -390,7 +390,7 @@ U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wann
 
    De geselecteerde rollout configuraties verschijnen onder de drop-down lijst.
 
-   ![ Geselecteerde Configuraties van de Output ](assets/chlimage_1-2.png)
+   ![&#x200B; Geselecteerde Configuraties van de Output &#x200B;](assets/chlimage_1-2.png)
 
 1. Klik **sparen**.
 
@@ -413,7 +413,7 @@ Geef een rollout-configuratie op die u als systeemstandaard wilt gebruiken. Om h
 * **Dag CQ WCM de Levende Manager van de Verhouding**
 de service-PID is `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Vorm de dienst gebruikend of de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of de knoop van de a [ bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+Vorm de dienst gebruikend of de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of de knoop van de a [&#x200B; bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * In de Webconsole, is de naam van het bezit om te vormen Standaardrollout config.
 * Met behulp van een opslagplaats-knooppunt is de naam van de eigenschap die moet worden geconfigureerd `liverelationshipmgr.relationsconfig.default` .

@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Het gereedschap VLT gebruiken {#how-to-use-the-vlt-tool}
 
-Het hulpmiddel van FileVault van het Jasrabbit (VLT) is een hulpmiddel dat door [ wordt ontwikkeld de Stichting Apache ](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw dossiersysteem in kaart brengt. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, en configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
+Het hulpmiddel van FileVault van het Jasrabbit (VLT) is een hulpmiddel dat door [&#x200B; wordt ontwikkeld de Stichting Apache &#x200B;](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw dossiersysteem in kaart brengt. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, en configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
 
-U voert het gereedschap VLT uit vanaf de opdrachtregel. Dit document beschrijft hoe te om het hulpmiddel te gebruiken, met inbegrip van hoe te begonnen worden en hulp krijgen, en een lijst van alle [ bevelen ](#vlt-commands) en beschikbare [ opties ](#vlt-global-options).
+U voert het gereedschap VLT uit vanaf de opdrachtregel. Dit document beschrijft hoe te om het hulpmiddel te gebruiken, met inbegrip van hoe te begonnen worden en hulp krijgen, en een lijst van alle [&#x200B; bevelen &#x200B;](#vlt-commands) en beschikbare [&#x200B; opties &#x200B;](#vlt-global-options).
 
 ## Concepten en architectuur {#concepts-and-architecture}
 
-Zie het [ Overzicht FileVault ](https://jackrabbit.apache.org/filevault/overview.html) en [ vault fs ](https://jackrabbit.apache.org/filevault/vaultfs.html) pagina van de officiële [ Apache documentatie van het Dossier van het Jasje van het Dossier ](https://jackrabbit.apache.org/filevault/index.html) voor een grondig overzicht van de concepten en de structuur van het hulpmiddel FileVault.
+Zie het [&#x200B; Overzicht FileVault &#x200B;](https://jackrabbit.apache.org/filevault/overview.html) en [&#x200B; vault fs &#x200B;](https://jackrabbit.apache.org/filevault/vaultfs.html) pagina van de officiële [&#x200B; Apache documentatie van het Dossier van het Jasje van het Dossier &#x200B;](https://jackrabbit.apache.org/filevault/index.html) voor een grondig overzicht van de concepten en de structuur van het hulpmiddel FileVault.
 
 ## Aan de slag met VLT {#getting-started-with-vlt}
 
@@ -40,10 +40,10 @@ Als u VLT wilt gaan gebruiken, moet u het volgende doen:
 
 Als u het gereedschap VLT wilt gebruiken, moet u het eerst installeren. Het is niet standaard geïnstalleerd omdat het een aanvullend gereedschap is. Daarnaast moet u de omgevingsvariabele van uw systeem instellen.
 
-1. Download het FileVault archiefdossier van de [ Geweven artefactenbewaarplaats.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. Download het FileVault archiefdossier van de [&#x200B; Geweven artefactenbewaarplaats.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
-   >De bron van het hulpmiddel VLT is [ beschikbaar op GitHub.](https://github.com/apache/jackrabbit-filevault)
+   >De bron van het hulpmiddel VLT is [&#x200B; beschikbaar op GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extraheer het archief.
 1. Voeg `<archive-dir>/vault-cli-<version>/bin` toe aan uw omgeving `PATH` , zodat de opdrachtbestanden `vlt` of `vlt.bat` naar wens worden geopend. Bijvoorbeeld:
 
@@ -214,7 +214,7 @@ Options:
 
 ## Gemeenschappelijke Taken die in VLT worden uitgevoerd {#common-tasks-performed-in-vlt}
 
-Hier volgen enkele algemene taken die in VLT worden uitgevoerd. Voor gedetailleerde informatie over elk bevel zie de individuele [ bevelen ](#vlt-commands).
+Hier volgen enkele algemene taken die in VLT worden uitgevoerd. Voor gedetailleerde informatie over elk bevel zie de individuele [&#x200B; bevelen &#x200B;](#vlt-commands).
 
 ### Een substructuur uitchecken {#checking-out-a-subtree}
 
@@ -857,7 +857,7 @@ Zodra de dienst in werking stelt kan het met de volgende parameters worden gevor
 >
 >De service kan worden geconfigureerd met de webconsole of een knooppunt `sling:OsgiConfig` (met de naam `com.day.jcr.sync.impl.VaultSyncServiceImpl` ) in de opslagplaats.
 >
->Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [ Vormend OSGi ](/help/sites-deploying/configuring-osgi.md) voor volledige details.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [&#x200B; Vormend OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 #### Mapconfiguratie synchroniseren {#sync-folder-configuration}
 
@@ -866,7 +866,7 @@ In elke synchronisatiemap worden configuratie en status in drie bestanden opgesl
 * `.vlt-sync-config.properties`: configuratiebestand.
 
 * `.vlt-sync.log`: logbestand dat informatie bevat over de bewerkingen die tijdens het synchroniseren zijn uitgevoerd.
-* `.vlt-sync-filter.xml`: filters die definiëren welke delen van de repository worden gesynchroniseerd. Het formaat van dit dossier wordt beschreven door [ Uitvoerend een gefilterde controle ](#performing-a-filtered-checkout) sectie.
+* `.vlt-sync-filter.xml`: filters die definiëren welke delen van de repository worden gesynchroniseerd. Het formaat van dit dossier wordt beschreven door [&#x200B; Uitvoerend een gefilterde controle &#x200B;](#performing-a-filtered-checkout) sectie.
 
 In het bestand `.vlt-sync-config.properties` kunt u de volgende eigenschappen configureren:
 
@@ -891,7 +891,7 @@ Ga als volgt te werk als u een ontwikkelomgeving wilt instellen op basis van een
 
    >[!NOTE]
    >
-   >Met filters kunt u alleen de juiste paden uitchecken. Zie [ Uitvoerend een gefilterde controle ](#performing-a-filtered-checkout) sectie voor informatie.
+   >Met filters kunt u alleen de juiste paden uitchecken. Zie [&#x200B; Uitvoerend een gefilterde controle &#x200B;](#performing-a-filtered-checkout) sectie voor informatie.
 
 1. Ga naar de hoofdmap van uw werkkopie:
 

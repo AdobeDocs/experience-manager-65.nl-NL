@@ -21,20 +21,20 @@ ht-degree: 0%
 De consoles van AEM Communities, die beschikbaar zijn in de auteuromgeving van het globale navigatievenster, verlenen toegang tot administratieve taken zoals:
 
 * [Een community-site maken](sites-console.md)
-* Toevoegend [ groepen ](groups.md) die binnen de plaats worden genest
-* Het beheren van [ malplaatjes van de communautaire plaats ](sites.md)
-* Het leiden [ communautaire leden ](members.md)
-* [ het Moderteren ](moderate-ugc.md) gebruiker-geproduceerde inhoud (UGC)
-* Creeer [ douanebadges ](badges.md)
-* Het vormen van de [ standaardopslag voor UGC ](srp-config.md)
+* Toevoegend [&#x200B; groepen &#x200B;](groups.md) die binnen de plaats worden genest
+* Het beheren van [&#x200B; malplaatjes van de communautaire plaats &#x200B;](sites.md)
+* Het leiden [&#x200B; communautaire leden &#x200B;](members.md)
+* [&#x200B; het Moderteren &#x200B;](moderate-ugc.md) gebruiker-geproduceerde inhoud (UGC)
+* Creeer [&#x200B; douanebadges &#x200B;](badges.md)
+* Het vormen van de [&#x200B; standaardopslag voor UGC &#x200B;](srp-config.md)
 
-Wanneer [ de opslag UGC ](working-with-srp.md) wordt gevormd om een gemeenschappelijke opslag te zijn die door de milieu&#39;s van de Auteur en van Publish wordt gedeeld, de [ moderatieconsole ](moderation.md), beschikbaar bij zowel de milieu&#39;s van de Auteur als van Publish, werkt op een solitaire instantie van UGC.
+Wanneer [&#x200B; de opslag UGC &#x200B;](working-with-srp.md) wordt gevormd om een gemeenschappelijke opslag te zijn die door de milieu&#39;s van de Auteur en van Publish wordt gedeeld, de [&#x200B; moderatieconsole &#x200B;](moderation.md), beschikbaar bij zowel de milieu&#39;s van de Auteur als van Publish, werkt op een solitaire instantie van UGC.
 
 In de auteursomgeving, na het aanmelden met beheerdersrechten, zijn de `Communities` consoles beschikbaar bij de navigatie en hulpmiddelconsoles.
 
 >[!NOTE]
 >
->In het milieu van Publish, toont de a [ communautaire plaats ](sites-console.md) een `Administration` menupunt wanneer het ondertekende binnen lid aangewezen voorrechten heeft.
+>In het milieu van Publish, toont de a [&#x200B; communautaire plaats &#x200B;](sites-console.md) een `Administration` menupunt wanneer het ondertekende binnen lid aangewezen voorrechten heeft.
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
@@ -47,15 +47,15 @@ Selecteer het pictogram `Adobe Experience Manager` in de linkerbovenhoek, zodat 
 
 Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale navigatie selecteer **navigatie, Gemeenschappen**.
 
-![ gemeenschappen ](assets/communities.png)
+![&#x200B; gemeenschappen &#x200B;](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-  De console van Plaatsen is toegankelijk in het milieu van de Auteur voor het creëren van en het leiden van communautaire plaatsen en zijn [ groepen ](groups.md).
+  De console van Plaatsen is toegankelijk in het milieu van de Auteur voor het creëren van en het leiden van communautaire plaatsen en zijn [&#x200B; groepen &#x200B;](groups.md).
 
 * [Moderatie](moderation.md)
 
-  De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het milieu van Publish aan communautaire leden toegewezen de rol van [ communautaire moderator ](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen.
+  De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het milieu van Publish aan communautaire leden toegewezen de rol van [&#x200B; communautaire moderator &#x200B;](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen.
 
 * [Leden, groepen](members.md)
 
@@ -67,4 +67,4 @@ Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale nav
 
 ## Tools Console {#tools-console}
 
-Om tot [ de Hulpmiddelen van Gemeenschappen ](tools.md) (vroeger de beleidsconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**
+Om tot [&#x200B; de Hulpmiddelen van Gemeenschappen &#x200B;](tools.md) (vroeger de beleidsconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

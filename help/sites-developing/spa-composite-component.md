@@ -33,8 +33,8 @@ Dit artikel gebruikt de typische kaartcomponent als zijn geval van het voorbeeld
 De volgende modellen voor het steunen van de composietgebruiksgevallen vereisen de volgende eerste vereisten.
 
 * Uw AEM-ontwikkelingsexemplaar wordt lokaal uitgevoerd op poort 4502 met een voorbeeldproject.
-* U hebt werkende externe Reactie app [ die voor het uitgeven in AEM wordt toegelaten.](spa-edit-external.md)
-* React app wordt geladen in de redacteur van AEM [ gebruikend de component RemotePage.](spa-remote-page.md)
+* U hebt werkende externe Reactie app [&#x200B; die voor het uitgeven in AEM wordt toegelaten.](spa-edit-external.md)
+* React app wordt geladen in de redacteur van AEM [&#x200B; gebruikend de component RemotePage.](spa-remote-page.md)
 
 ## Samengestelde componenten toevoegen aan een SPA {#adding-composite-components}
 
@@ -127,17 +127,17 @@ function Home() {
 
 Hiermee wordt een lege plaatsaanduiding voor een tekst en een afbeelding in de editor weergegeven. Wanneer u waarden voor deze waarden invoert via de editor, worden ze opgeslagen op het opgegeven paginapad, dat wil zeggen `/content/wknd-spa/home` op het hoofdniveau met de namen die zijn opgegeven in `itemPath` .
 
-![ Samengestelde kaartcomponent in de redacteur ](assets/composite-card.png)
+![&#x200B; Samengestelde kaartcomponent in de redacteur &#x200B;](assets/composite-card.png)
 
 ### De component bestaat in uw AEM-project, maar de vereiste inhoud niet. {#content-does-not-exist}
 
 In dit geval is de kaartcomponent al gemaakt in uw AEM-project met titel- en afbeeldingsknooppunten. De kindknopen (tekst en beeld) hebben de overeenkomstige middeltypes.
 
-![ structuur van de Knoop van de kaartcomponent ](assets/composite-node-structure.png)
+![&#x200B; structuur van de Knoop van de kaartcomponent &#x200B;](assets/composite-node-structure.png)
 
 U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
 
-1. Creeer een overeenkomstige component in SPA voor dit. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige het middeltypes van AEM binnen het project van het KUUROORD in kaart worden gebracht. In dit voorbeeld gebruiken wij het zelfde `AEMText` en `AEMImage` componenten zoals gedetailleerd [ in het vorige geval.](#component-does-not-exist)
+1. Creeer een overeenkomstige component in SPA voor dit. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige het middeltypes van AEM binnen het project van het KUUROORD in kaart worden gebracht. In dit voorbeeld gebruiken wij het zelfde `AEMText` en `AEMImage` componenten zoals gedetailleerd [&#x200B; in het vorige geval.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -163,11 +163,11 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Voeg de gecreeerde `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [ in het paginamalplaatje toe.](/help/sites-authoring/templates.md)
+1. Voeg de gecreeerde `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [&#x200B; in het paginamalplaatje toe.](/help/sites-authoring/templates.md)
 
 De component `imagecard` kan nu rechtstreeks aan de container worden toegevoegd in de AEM-editor.
 
-![ Samengestelde kaart in de redacteur ](assets/composite-card.gif)
+![&#x200B; Samengestelde kaart in de redacteur &#x200B;](assets/composite-card.gif)
 
 ### De component en de vereiste inhoud zijn beide aanwezig in uw AEM-project. {#both-exist}
 
@@ -179,6 +179,6 @@ Als de inhoud in AEM bestaat, kan het direct in het KUUROORD worden omvat door d
     itemPath='root/responsivegrid/imagecard' />
 ```
 
-![ Samengestelde weg in knoopstructuur ](assets/composite-path.png)
+![&#x200B; Samengestelde weg in knoopstructuur &#x200B;](assets/composite-path.png)
 
-De component `AEMCard` is het zelfde als bepaald [ in het vorige gebruiksgeval.](#content-does-not-exist) Hier is de inhoud die op de bovenstaande locatie in het AEM-project is gedefinieerd, opgenomen in de SPA.
+De component `AEMCard` is het zelfde als bepaald [&#x200B; in het vorige gebruiksgeval.](#content-does-not-exist) Hier is de inhoud die op de bovenstaande locatie in het AEM-project is gedefinieerd, opgenomen in de SPA.

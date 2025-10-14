@@ -28,7 +28,7 @@ Breidt CQ_Analytics.PersistedSessionStore uit.
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
-Retourneert een sessiearchief met een opgegeven naam. Zie ook [ Toegang hebbend tot een Opslag van de Zitting ](/help/sites-developing/client-context.md#accessing-session-stores).
+Retourneert een sessiearchief met een opgegeven naam. Zie ook [&#x200B; Toegang hebbend tot een Opslag van de Zitting &#x200B;](/help/sites-developing/client-context.md#accessing-session-stores).
 
 **Parameters**
 
@@ -52,7 +52,7 @@ Geen geretourneerde waarde.
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Verstrekt methodes om op de activering en registratie van de zittingsopslag te luisteren. Zie ook [ Controlerend dat een opslag van de Zitting wordt bepaald en ](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized) geïnitialiseerd.
+Verstrekt methodes om op de activering en registratie van de zittingsopslag te luisteren. Zie ook [&#x200B; Controlerend dat een opslag van de Zitting wordt bepaald en &#x200B;](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized) geïnitialiseerd.
 
 ### Methoden {#methods-1}
 
@@ -84,7 +84,7 @@ Geen geretourneerde waarde.
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registreert een callback functie die wordt geroepen wanneer een zittingsopslag wordt geregistreerd. De registergebeurtenis komt voor wanneer een opslag aan [ CQ_Analytics.ClientContextMgr ](#cq-analytics-clientcontextmgr) wordt geregistreerd.
+Registreert een callback functie die wordt geroepen wanneer een zittingsopslag wordt geregistreerd. De registergebeurtenis komt voor wanneer een opslag aan [&#x200B; CQ_Analytics.ClientContextMgr &#x200B;](#cq-analytics-clientcontextmgr) wordt geregistreerd.
 
 **Parameters**
 
@@ -303,7 +303,7 @@ Hiermee worden gebeurtenissen geactiveerd en kunnen andere objecten naar deze ge
 
 #### addListener (gebeurtenis, effect, bereik) {#addlistener-event-fct-scope}
 
-Registreert een listener voor een gebeurtenis. Zie ook [ Creërend een Listener om aan een Update van de Sessieopslag ](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update) te antwoorden.
+Registreert een listener voor een gebeurtenis. Zie ook [&#x200B; Creërend een Listener om aan een Update van de Sessieopslag &#x200B;](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update) te antwoorden.
 
 **Parameters**
 

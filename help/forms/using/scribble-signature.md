@@ -26,7 +26,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 1. Open een formulier in Forms Designer.
 1. Sleep het veld Signature Scribble naar de pagina.
 
-   ![ designer_scripbble ](assets/designer_scribble.png)
+   ![&#x200B; designer_scripbble &#x200B;](assets/designer_scribble.png)
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten en handtekeni
 
 Nadat een veld Handtekeningenkrabbels aan het formulier is toegevoegd en het is gegenereerd, wordt een dialoogvenster geopend wanneer u op het veld klikt of erop tikt. De gebruiker kan met een muis, vinger of stift een handtekening krabbelen in het tekengebied dat wordt aangegeven door een gestippelde rechthoek.
 
-![ geolocation ](assets/geolocation.png)
+![&#x200B; geolocation &#x200B;](assets/geolocation.png)
 
 **A.** Penseel **B.** Gummetje **C.** Geolocatie **D.** Geolocatieinformatie
 
@@ -91,7 +91,7 @@ Het klikken van het **O.K.** pictogram bewaart het manuscript als beeld op het g
 
 Als u op het veld Krabbelen tikt of erop klikt, wordt het dialoogvenster geopend in de modus Alleen-lezen.
 
-![ 3 ](assets/3.png)
+![&#x200B; 3 &#x200B;](assets/3.png)
 
 ### Pengte selecteren {#selecting-pen-size}
 

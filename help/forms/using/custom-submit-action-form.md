@@ -20,20 +20,20 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
-Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [ uit-van-de-doos acties ](../../forms/using/configuring-submit-actions.md) voorleggen die douanetaken tonen u het gebruiken van de user-submitted gegevens kunt uitvoeren. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
+Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [&#x200B; uit-van-de-doos acties &#x200B;](../../forms/using/configuring-submit-actions.md) voorleggen die douanetaken tonen u het gebruiken van de user-submitted gegevens kunt uitvoeren. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
 
 ## Workflow voor een handeling Verzenden {#workflow-for-a-submit-action}
 
 Het stroomschema geeft de workflow weer voor een handeling Verzenden die wordt geactiveerd wanneer u op de knop **[!UICONTROL Submit]** klikt in een adaptief formulier. De bestanden in de component Bestandsbijlage worden geüpload naar de server en de formuliergegevens worden bijgewerkt met de URL&#39;s van de geüploade bestanden. Binnen de client worden de gegevens opgeslagen in de JSON-indeling. De client verzendt een Ajax-aanvraag naar een interne servlet die de opgegeven gegevens in massa neemt en deze in XML-indeling retourneert. De client sorteert deze gegevens met actievelden. De gegevens worden via een handeling Formulier verzenden verzonden naar de uiteindelijke servlet (Guide verzendt servlet). Dan, door:sturen servlet de controle aan de Submit actie. De handeling Verzenden kan het verzoek doorsturen naar een andere kiesbron of de browser omleiden naar een andere URL.
 
-![ Stroomschema die het werkschema voor Submit actie ](assets/diagram1.png) afbeelden
+![&#x200B; Stroomschema die het werkschema voor Submit actie &#x200B;](assets/diagram1.png) afbeelden
 
 ### XML-gegevensindeling {#xml-data-format}
 
-De XML-gegevens worden naar de servlet verzonden met behulp van de aanvraagparameter **`jcr:data`** . Verzendhandelingen hebben toegang tot de parameter om de gegevens te verwerken. In de volgende code wordt de indeling van de XML-gegevens beschreven. De velden die aan het formuliermodel zijn gebonden, worden weergegeven in de sectie **`afBoundData`** . De niet verbindende gebieden verschijnen in de `afUnoundData` sectie. Voor meer informatie over het formaat van het `data.xml` dossier, zie [ Inleiding aan prepopulating adaptieve vormgebieden ](../../forms/using/prepopulate-adaptive-form-fields.md).
+De XML-gegevens worden naar de servlet verzonden met behulp van de aanvraagparameter **`jcr:data`** . Verzendhandelingen hebben toegang tot de parameter om de gegevens te verwerken. In de volgende code wordt de indeling van de XML-gegevens beschreven. De velden die aan het formuliermodel zijn gebonden, worden weergegeven in de sectie **`afBoundData`** . De niet verbindende gebieden verschijnen in de `afUnoundData` sectie. Voor meer informatie over het formaat van het `data.xml` dossier, zie [&#x200B; Inleiding aan prepopulating adaptieve vormgebieden &#x200B;](../../forms/using/prepopulate-adaptive-form-fields.md).
 
 ```xml
 <?xml ?>
@@ -57,7 +57,7 @@ De XML-gegevens worden naar de servlet verzonden met behulp van de aanvraagparam
 
 ### Actievelden {#action-fields}
 
-Een voorlegt actie kan verborgen inputgebieden (gebruikend de HTML [ input ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) markering) aan teruggegeven vorm HTML toevoegen. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de handeling Verzenden kan gebruiken tijdens het verzenden. De invoervelden worden actievelden genoemd.
+Een voorlegt actie kan verborgen inputgebieden (gebruikend de HTML [&#x200B; input &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) markering) aan teruggegeven vorm HTML toevoegen. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de handeling Verzenden kan gebruiken tijdens het verzenden. De invoervelden worden actievelden genoemd.
 
 Met een handeling Verzenden die ook de tijd vastlegt die nodig is om een formulier in te vullen, kunt u bijvoorbeeld de verborgen invoervelden `startTime` en `endTime` toevoegen.
 
@@ -65,9 +65,9 @@ Een script kan de waarden van de velden `startTime` en `endTime` opgeven wanneer
 
 ### Bestandsbijlagen {#file-attachments}
 
-Verzendhandelingen kunnen ook de bestandsbijlagen gebruiken die u uploadt met de component Bestandsbijlage. Verzend actiemanuscripten tot deze dossiers kunnen toegang hebben gebruikend de het laten van [ RequestParameter API ](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). De [ isFormField ](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) methode van de API hulp identificeert zich of de verzoekparameter een dossier of een vormgebied is. U kunt de parameters van het Verzoek in een Submit actie herhalen om de parameters van de Bijlage van het Dossier te identificeren.
+Verzendhandelingen kunnen ook de bestandsbijlagen gebruiken die u uploadt met de component Bestandsbijlage. Verzend actiemanuscripten tot deze dossiers kunnen toegang hebben gebruikend de het laten van [&#x200B; RequestParameter API &#x200B;](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). De [&#x200B; isFormField &#x200B;](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) methode van de API hulp identificeert zich of de verzoekparameter een dossier of een vormgebied is. U kunt de parameters van het Verzoek in een Submit actie herhalen om de parameters van de Bijlage van het Dossier te identificeren.
 
-De volgende voorbeeldcode identificeert de bestandsbijlagen in de aanvraag. Daarna, leest het de gegevens in het dossier gebruikend [ krijg API ](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Ten slotte wordt een object Document gemaakt met behulp van de gegevens en toegevoegd aan een lijst.
+De volgende voorbeeldcode identificeert de bestandsbijlagen in de aanvraag. Daarna, leest het de gegevens in het dossier gebruikend [&#x200B; krijg API &#x200B;](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Ten slotte wordt een object Document gemaakt met behulp van de gegevens en toegevoegd aan een lijst.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -87,7 +87,7 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 
 >[!NOTE]
 >
->Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [ uit-van-de-doos verzendt Acties ](../../forms/using/configuring-submit-actions.md) gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse wegverwijzingen.
+>Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [&#x200B; uit-van-de-doos verzendt Acties &#x200B;](../../forms/using/configuring-submit-actions.md) gebruik Redirect URL om browser van het middel om te leiden dat de voorwaartse wegverwijzingen.
 >
 >U kunt een douane schrijven voorlegt actie die een verzoek aan een middel of servlet door:sturen. De Adobe adviseert dat het manuscript dat middelbehandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
 
@@ -106,23 +106,23 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [ Post ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [ vorm ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL&amp;wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
+Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de handeling Verzenden uit de doos Winkelinhoud (afgekeurd) die de gegevens opslaat in de CRX-opslagplaats. Bovendien verstrekt CQ a [&#x200B; Post &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) API die kan worden gebruikt om e-mails te verzenden. Alvorens de Post API te gebruiken, [&#x200B; vorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL&wcmmode=disabled) de dienst van de Post van Dag CQ door de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagplaats.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
-   ![ Scherenshot die de verwezenlijking van een knoop met het bezit toont:Omslag ](assets/step1.png)
+   ![&#x200B; Scherenshot die de verwezenlijking van een knoop met het bezit toont:Omslag &#x200B;](assets/step1.png)
 
 1. **verstrek de verplichte configuratiegebieden.**
 
    Voeg de configuratie toe die de winkelactie vereist. Kopieer **cq:dialoog** knoop van de actie van de Opslag van /libs/fd/af/components/guidesubmittype/store aan de actiemap bij /apps/custom_submit_action/store_and_email.
 
-   ![ Schermafbeelding die het kopiëren van de dialoogknoop aan de actiemap tonen ](assets/step2.png)
+   ![&#x200B; Schermafbeelding die het kopiëren van de dialoogknoop aan de actiemap tonen &#x200B;](assets/step2.png)
 
 1. **verstrek configuratiegebieden om de auteur voor e-mailconfiguratie te veroorzaken.**
 
    Het adaptieve formulier bevat ook een e-mailactie die e-mailberichten naar gebruikers verzendt. Pas deze actie aan op basis van uw vereisten. Ga naar /libs/fd/af/components/guidesubmittype/email/dialog. Kopieer de knooppunten in het cq:dialog-knooppunt naar cq:dialog-knooppunt van de handeling Verzenden (/apps/custom_submit_action/store_and_email/dialog).
 
-   ![ Aanpassen van de e-mailactie ](assets/step3.png)
+   ![&#x200B; Aanpassen van de e-mailactie &#x200B;](assets/step3.png)
 
 1. **maak de actie beschikbaar in de Aangepaste Vorm geeft dialoog uit.**
 
@@ -136,13 +136,13 @@ Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gege
 
 1. Open een adaptief formulier. Klik **uitgeven** knoop naast **Begin** om de **te openen geef** dialoog van de adaptieve vormcontainer uit. De nieuwe actie wordt getoond in **legt Acties** Lusje voor. Het selecteren van de **Opslag en E-mailActie** toont de configuratie die in de dialoogdoos wordt toegevoegd.
 
-   ![ voorlegt de dialoog van de actieconfiguratie ](assets/store_and_email_submit_action_dialog.jpg)
+   ![&#x200B; voorlegt de dialoog van de actieconfiguratie &#x200B;](assets/store_and_email_submit_action_dialog.jpg)
 
 1. **gebruik de actie om een taak te voltooien.**
 
    Voeg het script post.POST.jsp toe aan uw handeling. (/apps/custom_submit_action/store_and_mail/).
 
-   Voer de handeling uit van de winkel (het script post.POST.jsp). Gebruik [ FormsHelper.runAction ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ verstrekt Je code om de actie Winkel uit te voeren. Voeg de volgende code in uw JSP dossier toe:
+   Voer de handeling uit van de winkel (het script post.POST.jsp). Gebruik [&#x200B; FormsHelper.runAction &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) (java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ verstrekt Je code om de actie Winkel uit te voeren. Voeg de volgende code in uw JSP dossier toe:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -152,7 +152,7 @@ Voer de volgende stappen uit om een aangepaste verzendactie te maken die de gege
 
    `String mailTo = properties.get("mailTo");`
 
-   Tot slot gebruikt u de CQ Mail-API om de e-mail te verzenden. Gebruik de [ klasse SimpleEmail ](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) om het E-mailVoorwerp tot stand te brengen zoals hieronder afgebeeld:
+   Tot slot gebruikt u de CQ Mail-API om de e-mail te verzenden. Gebruik de [&#x200B; klasse SimpleEmail &#x200B;](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) om het E-mailVoorwerp tot stand te brengen zoals hieronder afgebeeld:
 
    >[!NOTE]
    >

@@ -23,7 +23,7 @@ De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan
 
 De mogelijkheid om te volgen voegt nog een reeks activiteiten toe wanneer leden van de gemeenschap belangenverklaringen of andere leden van de gemeenschap volgen.
 
-Alle [ communautaire plaatsen ](/help/communities/overview.md#communitiessites) omvatten een pagina van het gebruikersprofiel voor het ondertekende in lid dat lidactiviteiten op de zelfde manier zal tonen.
+Alle [&#x200B; communautaire plaatsen &#x200B;](/help/communities/overview.md#communitiessites) omvatten een pagina van het gebruikersprofiel voor het ondertekende in lid dat lidactiviteiten op de zelfde manier zal tonen.
 
 ## Concepten {#concepts}
 
@@ -70,12 +70,12 @@ A *[sociale grafiek](/help/communities/essentials-socialgraph.md)* vangt de volg
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [ Streams API van de Activiteit ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [&#x200B; Streams API van de Activiteit &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [ de Listener van de Streams van de Activiteit API ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [&#x200B; de Listener van de Streams van de Activiteit API &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-Een communautaire plaatsstructuur die de [ functie van de Stream van de Activiteit ](/help/communities/functions.md#activity-stream-function) omvat, omvat een gevormde `activity streams` component.
+Een communautaire plaatsstructuur die de [&#x200B; functie van de Stream van de Activiteit &#x200B;](/help/communities/functions.md#activity-stream-function) omvat, omvat een gevormde `activity streams` component.

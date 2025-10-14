@@ -22,11 +22,11 @@ ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorst
 
 >[!NOTE]
 >
->De [ Wij.Retail verwijzingsimplementatie ](/help/sites-developing/we-retail.md) voert ContextHub uit en kan als verwijzing dienen aangezien u ContextHub in uw eigen project integreert.
+>De [&#x200B; Wij.Retail verwijzingsimplementatie &#x200B;](/help/sites-developing/we-retail.md) voert ContextHub uit en kan als verwijzing dienen aangezien u ContextHub in uw eigen project integreert.
 
 >[!CAUTION]
 >
->De weg die de configuratie bevat van steekproefContextHub die door [ wordt gebruikt Wij.Retail verwijzingsimplementatie ](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) zou slechts als verwijzing voor het creëren van uw eigen configuratie moeten worden gebruikt.
+>De weg die de configuratie bevat van steekproefContextHub die door [&#x200B; wordt gebruikt Wij.Retail verwijzingsimplementatie &#x200B;](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) zou slechts als verwijzing voor het creëren van uw eigen configuratie moeten worden gebruikt.
 >
 >Gebruik niet in een project als uw eigen configuratie ContextHub.
 
@@ -36,24 +36,24 @@ De opslag ContextHub handhaaft contextgegevens over de cliënt. De API van Conte
 
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
-* ContextHub verstrekt verscheidene [ types van steekproefopslag ](/help/sites-developing/ch-samplestores.md).
-* Het gebruik AEM consoles aan [ creeert opslag ](ch-configuring.md#creating-a-contexthub-store).
-* De ontwikkelaars kunnen [ tot de types van douaneopslag ](/help/sites-developing/ch-extend.md#creating-custom-store-candidates) leiden.
-* De ontwikkelaars kunnen [ tot opslaggegevens ](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript toegang hebben.
+* ContextHub verstrekt verscheidene [&#x200B; types van steekproefopslag &#x200B;](/help/sites-developing/ch-samplestores.md).
+* Het gebruik AEM consoles aan [&#x200B; creeert opslag &#x200B;](ch-configuring.md#creating-a-contexthub-store).
+* De ontwikkelaars kunnen [&#x200B; tot de types van douaneopslag &#x200B;](/help/sites-developing/ch-extend.md#creating-custom-store-candidates) leiden.
+* De ontwikkelaars kunnen [&#x200B; tot opslaggegevens &#x200B;](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript toegang hebben.
 
 ## Segmentering {#segmentation}
 
-ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt JavaScript API gebruiken om [ bepaalde opgeloste segmenten ](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments) te bepalen.
+ContextHub omvat een segmenteringsmotor die segmenten beheert en bepaalt welke segmenten voor de huidige context worden opgelost. Verschillende segmenten zijn gedefinieerd. U kunt JavaScript API gebruiken om [&#x200B; bepaalde opgeloste segmenten &#x200B;](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments) te bepalen.
 
 ## Presentatie {#presentation}
 
-De [ toolbar ContextHub ](/help/sites-authoring/ch-previewing.md) laat tellers en auteurs toe om opslaggegevens te zien en te manipuleren voor het simuleren van de gebruikerservaring wanneer het ontwerpen van pagina&#39;s. De toolbar bestaat uit groepen modules UI die toegang tot winkels verlenen ContextHub.
+De [&#x200B; toolbar ContextHub &#x200B;](/help/sites-authoring/ch-previewing.md) laat tellers en auteurs toe om opslaggegevens te zien en te manipuleren voor het simuleren van de gebruikerservaring wanneer het ontwerpen van pagina&#39;s. De toolbar bestaat uit groepen modules UI die toegang tot winkels verlenen ContextHub.
 
 Elke module ContextHub UI is een geval van een vooraf bepaald moduletype:
 
-* ContextHub verstrekt verscheidene [ types van steekproefmodule ](/help/sites-developing/ch-samplemodules.md).
-* Het gebruik AEM consoles aan [ voegt modules UI ](ch-configuring.md#adding-a-ui-module) toe, en aan [ groepeert hen in wijzen UI ](ch-configuring.md#adding-a-ui-mode).
+* ContextHub verstrekt verscheidene [&#x200B; types van steekproefmodule &#x200B;](/help/sites-developing/ch-samplemodules.md).
+* Het gebruik AEM consoles aan [&#x200B; voegt modules UI &#x200B;](ch-configuring.md#adding-a-ui-module) toe, en aan [&#x200B; groepeert hen in wijzen UI &#x200B;](ch-configuring.md#adding-a-ui-mode).
 
-* De ontwikkelaars kunnen [ de types van douanemodule ](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) tot stand brengen.
+* De ontwikkelaars kunnen [&#x200B; de types van douanemodule &#x200B;](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) tot stand brengen.
 
-De ontwikkelaars moeten [ de component ContextHub aan de pagina ](/help/sites-developing/ch-adding.md) toevoegen.
+De ontwikkelaars moeten [&#x200B; de component ContextHub aan de pagina &#x200B;](/help/sites-developing/ch-adding.md) toevoegen.

@@ -20,10 +20,10 @@ U kunt [!DNL Adobe Experience Manager Assets] zo configureren dat het type eleme
 1. Open de Webconsole van de Manager van de Configuratie. Toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de service **[!UICONTROL Day CQ DAM Asset Upload Restriction]** in de modus Bewerken. Door gebrek, **staat al MIME** optie toe wordt geselecteerd, die gebruikers toestaat om dossiers van alle types te uploaden MIME.
 
-   ![ chlimage_1-378 ](assets/chlimage_1-378.png)
+   ![&#x200B; chlimage_1-378 &#x200B;](assets/chlimage_1-378.png)
 
 1. Als u gebruikers wilt beperken zodat zij alleen bestanden van bepaalde MIME-typen kunnen uploaden, schakelt u de optie **[!UICONTROL Allow all MIME]** uit en geeft u toegestane MIME-typen op in de velden **[!UICONTROL Allowed Asset MIMEs (regex)]** met behulp van reguliere expressies.
 
-   ![ chlimage_1-379 ](assets/chlimage_1-379.png)
+   ![&#x200B; chlimage_1-379 &#x200B;](assets/chlimage_1-379.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan. Als u MIME-tekenreeksen opgeeft voor toegestane MIME-typen, mislukt de uploadbewerking voor elke asset met MIME-type dat niet overeenkomt met de geconfigureerde MIME-tekenreeksen in deze velden.

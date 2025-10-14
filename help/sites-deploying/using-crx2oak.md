@@ -25,11 +25,11 @@ CRX2Oak is een hulpmiddel dat is ontworpen voor het migreren van gegevens tussen
 Deze kan worden gebruikt om gegevens van oudere CQ-versies die op Apache Jackrabbit 2 zijn gebaseerd, te migreren naar Oak en kan ook worden gebruikt om gegevens te kopiëren tussen Oak-opslagplaatsen.
 
 U kunt de nieuwste versie van crx2oak downloaden van de opslagplaats voor openbare Adoben op deze locatie:
-[ https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+[&#x200B; https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
->Voor meer informatie over Apache Oak en zeer belangrijke concepten (AEM) persistentie van Adobe Experience Manager, zie [ Inleiding aan het AEM Platform ](/help/sites-deploying/platform.md).
+>Voor meer informatie over Apache Oak en zeer belangrijke concepten (AEM) persistentie van Adobe Experience Manager, zie [&#x200B; Inleiding aan het AEM Platform &#x200B;](/help/sites-deploying/platform.md).
 
 ## Gevallen voor migratiegebruik {#migration-use-cases}
 
@@ -43,7 +43,7 @@ Ondersteuning voor migrerende opslagplaatsen die gebruikmaken van externe blob-o
 
 In het onderstaande diagram worden alle mogelijke migratiecombinaties weergegeven die door CRX2Oak worden ondersteund:
 
-![ chlimage_1-151 ](assets/chlimage_1-151.png)
+![&#x200B; chlimage_1-151 &#x200B;](assets/chlimage_1-151.png)
 
 ## Functies {#features}
 
@@ -97,7 +97,7 @@ Als er een deel van de inhoud is die niet op de nieuwe instantie wordt vereist, 
 
 Als gegevens tussen twee opslagplaatsen moeten worden gekopieerd en u een inhoudspad hebt dat op beide instanties verschillend is, kunt u het in de parameter `--merge-path` definiëren. Als u dat doet, kopieert CRX2Oak alleen de nieuwe knooppunten naar de doelopslagplaats en blijven de oude knooppunten op hun plaats.
 
-![ chlimage_1-152 ](assets/chlimage_1-152.png)
+![&#x200B; chlimage_1-152 &#x200B;](assets/chlimage_1-152.png)
 
 #### Versieondersteuning {#version-support}
 
@@ -111,7 +111,7 @@ U kunt ook kiezen of u zwevende versies wilt kopiëren door `--copy-orphaned-ver
 
 Beide parameters ondersteunen ook een datumnotatie `YYYY-MM-DD` voor het geval dat u versies niet later dan een bepaalde datum wilt kopiëren.
 
-![ chlimage_1-153 ](assets/chlimage_1-153.png)
+![&#x200B; chlimage_1-153 &#x200B;](assets/chlimage_1-153.png)
 
 #### Source-versie openen {#open-source-version}
 
@@ -121,7 +121,7 @@ Een open-source versie van CRX2Oak is beschikbaar in de vorm van een eak-upgrade
 * Ondersteuning voor migratieprofiel
 * Ondersteuning voor automatische AEM herconfiguratie
 
-Zie de [ Documentatie Apache ](https://jackrabbit.apache.org/oak/docs/migration.html) voor meer informatie.
+Zie de [&#x200B; Documentatie Apache &#x200B;](https://jackrabbit.apache.org/oak/docs/migration.html) voor meer informatie.
 
 ## Parameters {#parameters}
 
@@ -142,7 +142,7 @@ Zie de [ Documentatie Apache ](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--early-shutdown`: sluit de JCR2-bronopslagplaats af nadat knooppunten zijn gekopieerd en voordat de haken voor vastleggen zijn toegepast
 * `--fail-on-error`: hiermee wordt een fout in de migratie geforceerd als de knooppunten niet van de bronopslagplaats kunnen worden gelezen.
-* `--ldap`: Migreert LDAP-gebruikers van een CQ 5.x-instantie naar een op Oak gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de Oak-configuratie de naam dap heeft. Voor meer informatie, zie de [ documentatie LDAP ](/help/sites-administering/ldap-config.md).
+* `--ldap`: Migreert LDAP-gebruikers van een CQ 5.x-instantie naar een op Oak gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de Oak-configuratie de naam dap heeft. Voor meer informatie, zie de [&#x200B; documentatie LDAP &#x200B;](/help/sites-administering/ldap-config.md).
 
 * `--ldap-config:` Gebruik dit met de parameter `--ldap` voor CQ 5.x-opslagruimten die meerdere LDAP-servers voor verificatie gebruiken. U kunt dit gebruiken om te verwijzen naar de configuratiebestanden van CQ 5.x `ldap_login.conf` of `jaas.conf` . De notatie is `--ldapconfig=path/to/ldap_login.conf` .
 
@@ -215,4 +215,4 @@ java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:2
 
 >[!NOTE]
 >
->Voor meer informatie, zie de documentatie van het Koord van de Verbinding MongoDB op [ Zorgpunten schrijven ](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).
+>Voor meer informatie, zie de documentatie van het Koord van de Verbinding MongoDB op [&#x200B; Zorgpunten schrijven &#x200B;](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).

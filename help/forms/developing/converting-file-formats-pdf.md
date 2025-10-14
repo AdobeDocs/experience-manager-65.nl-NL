@@ -84,7 +84,7 @@ U kunt deze taken verwezenlijken gebruikend de Generate dienst van de PDF:
 
 >[!NOTE]
 >
->Voor meer informatie over de Generate dienst van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Generate dienst van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Word-documenten converteren naar PDF-documenten {#converting-word-documents-to-pdf-documents}
 
@@ -92,11 +92,11 @@ In deze sectie wordt beschreven hoe u met de API PDF genereren een Microsoft Wor
 
 >[!NOTE]
 >
->Voor meer informatie over extra dossierformaten, zie [ Toevoegend Steun voor de Extra Inheemse Formaten van het Dossier ](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>Voor meer informatie over extra dossierformaten, zie [&#x200B; Toevoegend Steun voor de Extra Inheemse Formaten van het Dossier &#x200B;](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
->Voor meer informatie over de Generate dienst van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Generate dienst van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -262,7 +262,7 @@ In deze sectie wordt beschreven hoe u de PDF API genereren kunt gebruiken om HTM
 
 >[!NOTE]
 >
->Voor meer informatie over de Generate dienst van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Generate dienst van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -412,7 +412,7 @@ In deze sectie wordt beschreven hoe u met de API voor het genereren van PDF Java
 
 >[!NOTE]
 >
->Voor meer informatie over de Generate dienst van de PDF, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Generate dienst van de PDF, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -594,7 +594,7 @@ AppMon gebruikt standaard Win32 APIs om met derdetoepassingen in wisselwerking t
 
 Vanwege een beperking met deze Win32 APIs, kan AppMon deze gebeurtenissen UI aan sommige specifieke soorten vensters, zoals floating menu-bars (die in sommige toepassingen zoals TextPad worden gevonden), en bepaalde soorten dialogen niet verzenden de waarvan inhoud niet kan worden teruggewonnen gebruikend Win32 APIs.
 
-Het is gemakkelijk om visueel een drijvende menubalk te identificeren; nochtans zou het niet mogelijk kunnen zijn om de speciale types van dialogen enkel door visuele inspectie te identificeren. U zou een derdetoepassing zoals Microsoft Spy++ (deel van het de ontwikkelomgeving van Microsoft Visuele C++) of zijn gelijkwaardige WinID (die vrij van kosten van [ https://www.dennisbabkin.com/php/download.php?what=WinID ](https://www.dennisbabkin.com/php/download.php?what=WinID) kan worden gedownload) vereisen om een dialoog te onderzoeken om te bepalen als AppMon met het zou kunnen in wisselwerking staan gebruikend standaardWin32 APIs.
+Het is gemakkelijk om visueel een drijvende menubalk te identificeren; nochtans zou het niet mogelijk kunnen zijn om de speciale types van dialogen enkel door visuele inspectie te identificeren. U zou een derdetoepassing zoals Microsoft Spy++ (deel van het de ontwikkelomgeving van Microsoft Visuele C++) of zijn gelijkwaardige WinID (die vrij van kosten van [&#x200B; https://www.dennisbabkin.com/php/download.php?what=WinID &#x200B;](https://www.dennisbabkin.com/php/download.php?what=WinID) kan worden gedownload) vereisen om een dialoog te onderzoeken om te bepalen als AppMon met het zou kunnen in wisselwerking staan gebruikend standaardWin32 APIs.
 
 Als WinID de dialooginhoud zoals tekst, subvensters, vensterklasse ID, etc. kan halen, dan zou AppMon het zelfde ook kunnen doen.
 
@@ -659,7 +659,7 @@ Deze sectie beschrijft de elementen van XML die AppMon van instructies voorzien.
 
 Dit diagram toont de hiërarchie van manuscript en dialoogXML. Een script-XML-bestand voldoet aan het script.xsd-schema, dat (in XML-zin) het window.xsd-schema bevat. Op dezelfde manier voldoet een dialoogXML- dossier aan het dialogs.xsd schema, dat ook het window.xsd schema omvat.
 
-![ as_as_xml_shiërarchie ](assets/as_as_xml_hierarchy.png)
+![&#x200B; as_as_xml_shiërarchie &#x200B;](assets/as_as_xml_hierarchy.png)
 
 Hiërarchie van script en dialoogvenster XML
 
@@ -714,7 +714,7 @@ Als de kenmerken een bijschrift niet identificeren, kunt u in plaats daarvan een
 Wees op de hoogte van deze problemen:
 
 * Met Microsoft Spy++ worden bijschriften weergegeven met behulp van een en-teken (&amp;) om de hot key van het bijschrift te identificeren. Bijvoorbeeld, toont Spy++ de titel voor één de dialoogdoos van de Druk als `Pri&nt`, die erop wijst dat hotkey *n* is. Titels van bijschriften in script- en dialoogvenster-XML-bestanden moeten ampersands weglaten.
-* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`). (Zie [ Gebruikend regelmatige uitdrukkingen in titelattributen ](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`). (Zie [&#x200B; Gebruikend regelmatige uitdrukkingen in titelattributen &#x200B;](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Gebruik tekeneenheden (ook wel escape-reeksen genoemd) voor gereserveerde XML-tekens. Gebruik bijvoorbeeld `&` voor ampersands, `<` en `>` voor kleiner dan en groter dan symbolen, `&apos;` voor apostroffen en `&quot;` voor aanhalingstekens.
 
 Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u de toepassing Microsoft Spy++ moeten installeren.
@@ -729,10 +729,10 @@ Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar
 Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, moet u de component GeneratePDF opnieuw gebruiken. Voer de volgende taken uit om XML-bestanden voor dialoog en script toe te voegen aan het bestand adobe-appmondata.jar:
 
 1. Open met een hulpprogramma zoals WinZip of WinRAR het bestand adobe-livecycle-native-jreliëf-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.mondata jar file.
-1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [ Creërend of wijzigend een dossier van manuscriptXML voor een inheemse toepassing ](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) en [ Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing ](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
+1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [&#x200B; Creërend of wijzigend een dossier van manuscriptXML voor een inheemse toepassing &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) en [&#x200B; Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Open adobe-generatepdf-dsc.jar > adobe-appmondata.jar met een hulpprogramma zoals WinZip of WinRAR.
-1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [ Creërend of wijzigend een dossier van manuscriptXML voor een inheemse toepassing ](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) en [ Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing ](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nadat u de XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, plaatst u het nieuwe bestand adobe-appmondata.jar in het bestand adobe-generatepdf-dsc.jar.
-1. Als u steun voor een extra inheems dossierformaat toevoegde, creeer een variabele van het systeemmilieu die de weg van de toepassing (zie [ Creërend een milieuvariabele om van de inheemse toepassing ](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application) de plaats te bepalen.) verstrekt
+1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [&#x200B; Creërend of wijzigend een dossier van manuscriptXML voor een inheemse toepassing &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application) en [&#x200B; Creërend of wijzigend een extra dossier van dialoogXML voor een inheemse toepassing &#x200B;](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nadat u de XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, plaatst u het nieuwe bestand adobe-appmondata.jar in het bestand adobe-generatepdf-dsc.jar.
+1. Als u steun voor een extra inheems dossierformaat toevoegde, creeer een variabele van het systeemmilieu die de weg van de toepassing (zie [&#x200B; Creërend een milieuvariabele om van de inheemse toepassing &#x200B;](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application) de plaats te bepalen.) verstrekt
 
 **om de component GeneratePDF** opnieuw op te stellen
 
@@ -860,9 +860,9 @@ De naam van het extra dossier van dialoogXML moet het formaat `appmon.[applicati
 
 >[!NOTE]
 >
->Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. De sectie [ die of steun voor een inheems dossierformaat ](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) toevoegt wijzigt beschrijft dergelijke specificaties.
+>Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. De sectie [&#x200B; die of steun voor een inheems dossierformaat &#x200B;](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) toevoegt wijzigt beschrijft dergelijke specificaties.
 
-Volgorde `windowList` -elementen die als onderliggende elementen in een `window` -element worden weergegeven. (Zie [ die tot het venster en windowList elementen ](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements) opdracht geven.)
+Volgorde `windowList` -elementen die als onderliggende elementen in een `window` -element worden weergegeven. (Zie [&#x200B; die tot het venster en windowList elementen &#x200B;](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements) opdracht geven.)
 
 ### Het algemene dialoogvenster-XML-bestand wijzigen {#modifying-the-general-dialog-xml-file}
 

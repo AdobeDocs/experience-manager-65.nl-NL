@@ -22,13 +22,13 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Gebruikersbeheer voert meestal verificatie uit met een gebruikersnaam en wachtwoord. Gebruikersbeheer ondersteunt ook verificatie op basis van certificaten, waarmee u gebruikers kunt verifiëren via Acrobat of gebruikers programmatisch kunt verifiëren. Voor details over het voor authentiek verklaren van gebruikers programmatically, zie [ Programmerend met AEM vormen ](https://www.adobe.com/go/learn_aemforms_programming_63).
+Gebruikersbeheer voert meestal verificatie uit met een gebruikersnaam en wachtwoord. Gebruikersbeheer ondersteunt ook verificatie op basis van certificaten, waarmee u gebruikers kunt verifiëren via Acrobat of gebruikers programmatisch kunt verifiëren. Voor details over het voor authentiek verklaren van gebruikers programmatically, zie [&#x200B; Programmerend met AEM vormen &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 Als u verificatie op basis van certificaten wilt gebruiken, importeert u een certificaat van certificeringsinstanties (CA) dat u vertrouwt in het vertrouwde archief en maakt u vervolgens een certificaattoewijzing.
 
 ## Het CA-certificaat importeren {#import-the-ca-certificate}
 
-Selecteer tijdens het importeren van het certificaat de opties Vertrouwd op certificaatverificatie en Vertrouwen op identiteit en eventuele andere opties die u nodig hebt. Voor details over het invoeren van certificaten, zie [ het Leiden certificaten ](/help/forms/using/admin-help/certificates.md#managing-certificates).
+Selecteer tijdens het importeren van het certificaat de opties Vertrouwd op certificaatverificatie en Vertrouwen op identiteit en eventuele andere opties die u nodig hebt. Voor details over het invoeren van certificaten, zie [&#x200B; het Leiden certificaten &#x200B;](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
 ## Certificaattoewijzing configureren {#configuring-certificate-mapping}
 
@@ -85,7 +85,7 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
 
      **Regex:** smtp: (.&ast;)
 
-   Voor details bij het gebruiken van regelmatige uitdrukkingen, zie [ zelfstudie van Java over regelmatige uitdrukkingen ](https://java.sun.com/docs/books/tutorial/essential/regex/).
+   Voor details bij het gebruiken van regelmatige uitdrukkingen, zie [&#x200B; zelfstudie van Java over regelmatige uitdrukkingen &#x200B;](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. Selecteer in de lijst Voor domein het domein van de gebruiker.
 1. Als u deze configuratie wilt testen, klikt u op Bladeren om een voorbeeldgebruikerscertificaat te uploaden, klikt u op Certificaat testen en klikt u op OK als de configuratie juist is.

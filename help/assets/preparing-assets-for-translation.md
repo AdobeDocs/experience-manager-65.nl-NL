@@ -19,7 +19,7 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 In [!DNL Adobe Experience Manager Assets] worden meertalige middelen opgenomen in mappen, waarbij elke map de elementen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld, */content/dam/it* is de Italiaanse taalwortel voor het Italiaans taalexemplaar. De exemplaren van de taal moeten a [ correct gevormde taalwortel ](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld, */content/dam/it* is de Italiaanse taalwortel voor het Italiaans taalexemplaar. De exemplaren van de taal moeten a [&#x200B; correct gevormde taalwortel &#x200B;](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
 Het taalexemplaar waarvoor u oorspronkelijk activa toevoegt is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
@@ -37,7 +37,7 @@ Het taalexemplaar waarvoor u oorspronkelijk activa toevoegt is de primaire taal.
 
 Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 
-1. Maak de hoofdtaal van uw primaire taal. De hoofdmap voor de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en` . Zorg ervoor dat de taalwortel correct volgens de informatie in [ wordt gevormd creeer een Wortel van de Taal ](preparing-assets-for-translation.md#creating-a-language-root).
+1. Maak de hoofdtaal van uw primaire taal. De hoofdmap voor de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en` . Zorg ervoor dat de taalwortel correct volgens de informatie in [&#x200B; wordt gevormd creeer een Wortel van de Taal &#x200B;](preparing-assets-for-translation.md#creating-a-language-root).
 
 1. Voeg elementen toe aan uw primaire taal.
 1. Creeer de taalwortel van elke doeltaal waarvoor u een taalexemplaar vereist.
@@ -50,11 +50,11 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 1. Klik in de [!DNL Assets] -console op **[!UICONTROL Create]** en kies **[!UICONTROL Folder]** in het menu.
 
-   ![ creeer omslag ](assets/Create-folder.png)
+   ![&#x200B; creeer omslag &#x200B;](assets/Create-folder.png)
 
 1. Typ in het veld **[!UICONTROL Name]** de landcode in de notatie `<language-code>` .
 
-   ![ voeg taalcode in omslag ](assets/Add-language-code-in-folder.png) toe
+   ![&#x200B; voeg taalcode in omslag &#x200B;](assets/Add-language-code-in-folder.png) toe
 
 1. Klik op **[!UICONTROL Create]**. De taalhoofdmap wordt gemaakt in de [!DNL Assets] -console.
 
@@ -65,8 +65,8 @@ De interface [!DNL Experience Manager] biedt een deelvenster **[!UICONTROL Refer
 1. Selecteer in de [!DNL Assets] -console de primaire taal waarvoor u taalkopieën wilt maken.
 1. Selecteer de optie **[!UICONTROL References]** in het linkerspoor om het deelvenster [!UICONTROL Reference] te openen.
 
-   ![ chlimage_1-122 ](assets/chlimage_1-122.png)
+   ![&#x200B; chlimage_1-122 &#x200B;](assets/chlimage_1-122.png)
 
 1. Klik in het venster Referenties op **[!UICONTROL Language Copies]** . In het deelvenster [!UICONTROL Language Copies] worden de taalkopieën van de elementen weergegeven.
 
-   ![ taalexemplaren ](assets/lang-copy2.png)
+   ![&#x200B; taalexemplaren &#x200B;](assets/lang-copy2.png)

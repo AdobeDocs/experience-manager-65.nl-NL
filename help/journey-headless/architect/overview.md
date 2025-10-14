@@ -30,11 +30,11 @@ Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 ## AEM Documentenreizen {#documentation-journeys}
 
-[ de Reis van de Documentatie van A ](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
+[&#x200B; de Reis van de Documentatie van A &#x200B;](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe de Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [ AEM de Reizen van de Zetel ](/help/journey-headless/overview.md) zijn waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [&#x200B; AEM de Reizen van de Zetel &#x200B;](/help/journey-headless/overview.md) zijn waar te beginnen.
 
 ## Publiek {#audience}
 
@@ -53,13 +53,13 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
 | 0 | Reis van architect zonder hoofdinhoud AEM | Dit document |
-| 1 | [ modellering voor Zwaartepunt met AEM - een Inleiding ](introduction.md) | Meer informatie over Headless Technology en wat het betekent voor modellering. |
-| 2 | [ Leer modellerende Grondbeginselen ](basics.md) | Leer de grondbeginselen van modellering met AEM |
-| 3 | [ hoe te om modelstructuren te bouwen ](model-structure.md) | Leer hoe u structuren kunt modelleren met meerdere lagen voor zonder kop |
+| 1 | [&#x200B; modellering voor Zwaartepunt met AEM - een Inleiding &#x200B;](introduction.md) | Meer informatie over Headless Technology en wat het betekent voor modellering. |
+| 2 | [&#x200B; Leer modellerende Grondbeginselen &#x200B;](basics.md) | Leer de grondbeginselen van modellering met AEM |
+| 3 | [&#x200B; hoe te om modelstructuren te bouwen &#x200B;](model-structure.md) | Leer hoe u structuren kunt modelleren met meerdere lagen voor zonder kop |
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en de artikel [ Modellering van de Inhoud voor Zwaartepunt met AEM te lezen - een Inleiding ](introduction.md).
+U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. Wij moedigen u aan om op het volgende deel van de reis voort te gaan en de artikel [&#x200B; Modellering van de Inhoud voor Zwaartepunt met AEM te lezen - een Inleiding &#x200B;](introduction.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -67,10 +67,10 @@ Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal 
 
 Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
-* [ AEM Headless Vertaalreis ](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
-* [ Koploze het Authoring Journey ](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
-* [ AEM Headless Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
-* [ AEM technische documentatie ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
+* [&#x200B; AEM Headless Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een breed inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient, en hoe u het kunt vertalen.
+* [&#x200B; Koploze het Authoring Journey &#x200B;](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
+* [&#x200B; AEM Headless Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele hoofdloze eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
+* [&#x200B; AEM technische documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=nl-NL) - als u reeds een stevig inzicht in AEM en headless technologieën hebt, kunt u onze diepgaande technische documenten direct willen raadplegen.
    * [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
-* [ AEM Headless leerprogramma&#39;s ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.
-* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; AEM Headless leerprogramma&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) - als u verkiest te leren door te doen en technisch gegeneerd bent, neem onze hands-on leerprogramma&#39;s die door API en kader worden georganiseerd, die het creëren van en het gebruiken van toepassingen onderzoeken die op AEM Headless worden voortgebouwd.
+* [&#x200B; AEM het Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)

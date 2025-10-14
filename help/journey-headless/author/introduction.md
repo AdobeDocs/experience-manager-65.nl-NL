@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Ontwerpen voor headless met AEM - Een inleiding {#author-headless-introduction}
 
-In dit deel van [ AEM de Reis van de Auteur van de Inhoud zonder Titel ](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud voor hoofdloze inhoudlevering met Adobe Experience Manager (AEM) te begrijpen.
+In dit deel van [&#x200B; AEM de Reis van de Auteur van de Inhoud zonder Titel &#x200B;](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om auteursinhoud voor hoofdloze inhoudlevering met Adobe Experience Manager (AEM) te begrijpen.
 
 ## Doelstelling {#objective}
 
@@ -74,7 +74,7 @@ Voor AEM de rol van de Architect van de Inhoud (vaak een verschillende persoon) 
 
 ## Volgende functies {#whats-next}
 
-Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de grondbeginselen van het schrijven van de Fragmenten van de Inhoud ](basics.md) leren. Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
+Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [&#x200B; de grondbeginselen van het schrijven van de Fragmenten van de Inhoud &#x200B;](basics.md) leren. Dit zal de basisbehandeling van AEM samen met hoe te om de Fragments van de Inhoud introduceren.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -87,6 +87,6 @@ Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de gr
 
 * [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
 
-* [ AEM het Portaal van de Ontwikkelaar ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
+* [&#x200B; AEM het Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
 
-* [ Tutorials voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [&#x200B; Tutorials voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)

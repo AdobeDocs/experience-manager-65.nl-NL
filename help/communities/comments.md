@@ -42,9 +42,9 @@ en sleep het naar de juiste positie op een pagina, zoals een positie ten opzicht
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-comments.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Comments` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/essentials-comments.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Comments` component verschijnt.
 
-![ commentaren-component ](assets/comments-component.png)
+![&#x200B; commentaren-component &#x200B;](assets/comments-component.png)
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/essentials-com
 
 Selecteer de geplaatste component `Comments` die u wilt openen en selecteer het pictogram `Configure` waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm pictogram ](assets/configure.png)
+![&#x200B; vorm pictogram &#x200B;](assets/configure.png)
 
-![ commentaarmontages ](assets/commentssettings.png)
+![&#x200B; commentaarmontages &#x200B;](assets/commentssettings.png)
 
 #### Tabblad Opmerkingen {#comments-tab}
 
@@ -104,7 +104,7 @@ Onder het **lusje van Commentaren**, specificeer hoe de commentaren door bezoeke
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte commentaren worden geleid. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte commentaren worden geleid. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
 * **pre-Moderatie**
 
@@ -158,11 +158,11 @@ Onder het **lusje van de Montages van de Soort**, specificeer hoe de geposte com
 
 Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Zodra de types van douanemiddel gekend zijn, ga [ Wijze van het Ontwerp ](/help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
+Zodra de types van douanemiddel gekend zijn, ga [&#x200B; Wijze van het Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
 Onder het **lusje van de Types van Middel**, specificeer douane resourceType voor nieuwe instanties van de `Comments or Voting` componenten:
 
-![ middel-type ](assets/resource-type.png)
+![&#x200B; middel-type &#x200B;](assets/resource-type.png)
 
 * **Type van Middel van Commentaar**
 
@@ -178,7 +178,7 @@ Onder het **lusje van de Types van Middel**, specificeer douane resourceType voo
 
 * **Type van Middel van het Systeem van de Commentaar**
 
-  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](/help/communities/scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](/help/communities/handlebars-helpers.md#include) .
+  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](/help/communities/scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper &#x200B;](/help/communities/handlebars-helpers.md#include) .
 
 ### Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -201,8 +201,8 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte opmerkingen lezen, 
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ Hoofdzaak van Commentaren ](/help/communities/essentials-comments.md) pagina voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; Hoofdzaak van Commentaren &#x200B;](/help/communities/essentials-comments.md) pagina voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte commentaren, zie [&#x200B; het Modereren van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor vertaling van geposte commentaren, zie [ Vertaal Door de Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
+Voor vertaling van geposte commentaren, zie [&#x200B; Vertaal Door de Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/translate-ugc.md).

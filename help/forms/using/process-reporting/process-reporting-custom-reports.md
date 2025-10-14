@@ -24,14 +24,14 @@ U kunt REST interface van QueryBuilder gebruiken of de dienst tot stand brengen 
 
 Alvorens om het even welk douanerapport toe te voegen, voer de volgende malplaatjeprocedure uit:
 
-1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik **[de optie van de Synchronisatie ](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** op het Proces Meldend UI.
-1. Het URL-verzoek (de gewenste query wordt ingekapseld) moet een geschikt queryresultaatobject retourneren. Om een vraag tot stand te brengen, kunt u REST interface van [ gebruiken QueryBuilder ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL) om de dienst te creëren OSGi gebruikend QueryBuilder API. U kunt dynamische of statische query&#39;s maken.
+1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik **[de optie van de Synchronisatie &#x200B;](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** op het Proces Meldend UI.
+1. Het URL-verzoek (de gewenste query wordt ingekapseld) moet een geschikt queryresultaatobject retourneren. Om een vraag tot stand te brengen, kunt u REST interface van [&#x200B; gebruiken QueryBuilder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL) om de dienst te creëren OSGi gebruikend QueryBuilder API. U kunt dynamische of statische query&#39;s maken.
 
 1. Maak een aangepaste gebruikersinterface om de resultaten weer te geven. U kunt een stand-alone gebruikersinterface tot stand brengen of resultaat met bestaand Proces opnemen die UI meldt.
 
 ## Het gebruiken van de REST interface van QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Query Builder beschikbaar via een Java API en een REST API. Leer hoe te om [ de interface van het REST van CRX te gebruiken QueryBuilder ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL), alvorens de volgende stappen uit te voeren:
+CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Query Builder beschikbaar via een Java API en een REST API. Leer hoe te om [&#x200B; de interface van het REST van CRX te gebruiken QueryBuilder &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL), alvorens de volgende stappen uit te voeren:
 
 1. Bladeren naar de URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Maak een query op basis van de structuur en knoopeigenschappen van het opslagknooppunt Process Reporting.
@@ -48,7 +48,7 @@ CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Quer
 
 ## De service maken met de API van Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-De voorwaarde om de dienst tot stand te brengen die de bouwer van de Vraag API gebruiken is [ creërend en plaatsend CQ OSGI bundel ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en [ gebruikend de Bouwer van de Vraag API ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL).
+De voorwaarde om de dienst tot stand te brengen die de bouwer van de Vraag API gebruiken is [&#x200B; creërend en plaatsend CQ OSGI bundel &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en [&#x200B; gebruikend de Bouwer van de Vraag API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=nl-NL).
 
 1. Creeer de dienst OSGi met aangewezen aantekeningen. Om tot het gebruik te toegang te hebben QueryBuilder:
 
@@ -64,7 +64,7 @@ De voorwaarde om de dienst tot stand te brengen die de bouwer van de Vraag API g
     predicateGroup.setAllRequired(true);
    ```
 
-1. Voeg predikaten aan pas gecreëerde predikateGroup toe. Enkele nuttige predikaten zijn [ JcrBoolPropertyPredicateEvaluator in 5.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [ JcrPropertyPredicateEvaluator in 5.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [ RangePropertyPredicateEvaluator in 5.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [ DateRangePredicateEvaluator in 5.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en [ TypePredicateEvaluator in 5.3 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
+1. Voeg predikaten aan pas gecreëerde predikateGroup toe. Enkele nuttige predikaten zijn [&#x200B; JcrBoolPropertyPredicateEvaluator in 5.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [&#x200B; JcrPropertyPredicateEvaluator in 5.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [&#x200B; RangePropertyPredicateEvaluator in 5.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [&#x200B; DateRangePredicateEvaluator in 5.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en [&#x200B; TypePredicateEvaluator in 5.3 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
    Voor statische rapporten hardcode de predikaten, terwijl voor dynamische rapporten, de predikaten van het verzoek halen.
 
@@ -423,13 +423,13 @@ Het steekproef `pom.xml` dossier om boven de dienst te bouwen is:
 
 ## Een aparte UI maken  {#creating-a-separate-ui-nbsp}
 
-De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn [ het Verzenden Grondbeginselen in 5.6.1 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [ Creërend een Knoop van CRX ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en het verstrekken van aangewezen [ toegangsvoorrechten ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
+De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn [&#x200B; het Verzenden Grondbeginselen in 5.6.1 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL), [&#x200B; Creërend een Knoop van CRX &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL) en het verstrekken van aangewezen [&#x200B; toegangsvoorrechten &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
 1. Maak een CRX-knooppunt bij het knooppunt `/apps` en geef de juiste toegangsmachtigingen. (PERM_PROCESS_REPORTING_USER)
 1. Definieer de renderer bij het knooppunt `/content` .
 1. Voeg JSP of HTML dossiers aan de knoop toe die in Stap 1 wordt gecreeerd. U kunt ook CSS-bestanden toevoegen.
 
-   ![ een steekproefknoop met JSP en CSS dossiers ](assets/nodewith_jsp_css_new.png)
+   ![&#x200B; een steekproefknoop met JSP en CSS dossiers &#x200B;](assets/nodewith_jsp_css_new.png)
 
    Een voorbeeldknooppunt met JSP- en CSS-bestanden
 
@@ -631,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Het integreren rapport UI in bestaand Proces Meldend UI  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn [ het Verzenden Grondbeginselen ](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [ het Creëren van een Knoop van CRX ](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) en het verstrekken van aangewezen [ toegangsvoorrechten ](/help/sites-developing/developing-with-crxde-lite.md#access-control).
+De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn [&#x200B; het Verzenden Grondbeginselen &#x200B;](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [&#x200B; het Creëren van een Knoop van CRX &#x200B;](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) en het verstrekken van aangewezen [&#x200B; toegangsvoorrechten &#x200B;](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. Maak een aparte interface.
 1. Maak een onderliggend knooppunt `nt:unstructured` bij het knooppunt `/content/process-reporting-runtime/custom-reports` voor elk pluggable rapport.
@@ -642,17 +642,17 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
    * **beschrijving** - specificeert de enige lijnbeschrijving het rapport. U kunt het beschrijvingsveld leeg laten.
    * **pictogram** - specificeert het beeld om het rapport te vertegenwoordigen. U kunt het pictogramveld leeg laten.
 
-   ![ Eigenschappen van knooppunt ](assets/node_properties_new.png)
+   ![&#x200B; Eigenschappen van knooppunt &#x200B;](assets/node_properties_new.png)
 
    Eigenschappen van knooppunt
 
 1. Het rapport UI is geïntegreerd aan het Proces Meldend UI. Nadat u de interface hebt geïntegreerd, ziet de bijgewerkte interface er ongeveer als volgt uit:
 
-   ![ Gebruikersinterface van onlangs toegevoegde douanerapporten ](assets/sampleui_screenshot_new.png)
+   ![&#x200B; Gebruikersinterface van onlangs toegevoegde douanerapporten &#x200B;](assets/sampleui_screenshot_new.png)
 
    Gebruikersinterface van nieuw toegevoegde aangepaste rapporten
 
-   ![ het scherm van Resultaten van de douanerapporten ](assets/jsp_display_new.png)
+   ![&#x200B; het scherm van Resultaten van de douanerapporten &#x200B;](assets/jsp_display_new.png)
 
    Scherm Resultaten van de aangepaste rapporten
 

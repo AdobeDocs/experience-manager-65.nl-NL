@@ -31,17 +31,17 @@ De voorbeeldsite voor demo-demo bevat verschillende taalvertakkingen en gebruikt
              |- zh
 ```
 
-Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. `/content/geometrixx/fr` is bijvoorbeeld de hoofdtaal van de Franse taalkopie. De exemplaren van de taal moeten a [ correct gevormde taalwortel ](/help/sites-administering/tc-prep.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van een bronplaats worden uitgevoerd.
+Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. `/content/geometrixx/fr` is bijvoorbeeld de hoofdtaal van de Franse taalkopie. De exemplaren van de taal moeten a [&#x200B; correct gevormde taalwortel &#x200B;](/help/sites-administering/tc-prep.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van een bronplaats worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald.
 
 Gebruik de volgende stappen om uw site voor te bereiden op vertaling:
 
-1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalsite van de demo-site Engelse Geometrixx is bijvoorbeeld /content/geometrixx/en. Zorg ervoor dat de taalwortel correct volgens de informatie in [ Creërend een Wortel van de Taal ](/help/sites-administering/tc-prep.md#creating-a-language-root) wordt gevormd.
+1. Maak de hoofdmap van de taal van het stramien. De hoofdtaalsite van de demo-site Engelse Geometrixx is bijvoorbeeld /content/geometrixx/en. Zorg ervoor dat de taalwortel correct volgens de informatie in [&#x200B; Creërend een Wortel van de Taal &#x200B;](/help/sites-administering/tc-prep.md#creating-a-language-root) wordt gevormd.
 1. Ontwerp de inhoud van uw taalstramien.
 1. Maak de hoofdmap van elke taalkopie voor uw site. De Franse taalkopie van de voorbeeldsite Geometrixx is bijvoorbeeld /content/geometrixx/fr.
 
-Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [ Creërend een Vertaal Project ](/help/sites-administering/tc-manage.md).) Voor een overzicht van het proces van de inhoudvertaling in AEM, zie [ Vertaalend Inhoud voor Meertalige Websites ](/help/sites-administering/translation.md).
+Nadat u de inhoud hebt voorbereid voor vertaling, kunt u automatisch ontbrekende pagina&#39;s maken in uw taalkopieën en bijbehorende vertaalprojecten. (Zie [&#x200B; Creërend een Vertaal Project &#x200B;](/help/sites-administering/tc-manage.md).) Voor een overzicht van het proces van de inhoudvertaling in AEM, zie [&#x200B; Vertaalend Inhoud voor Meertalige Websites &#x200B;](/help/sites-administering/translation.md).
 
 ## Een hoofdmap voor talen maken {#creating-a-language-root}
 
@@ -55,7 +55,7 @@ Als u de hoofdtaal wilt maken van de taal, maakt u een pagina en gebruikt u een 
 
 U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen.  De hoofdpagina van de Franse taalkopie van de site Geometrixx heeft bijvoorbeeld `fr` als de eigenschap Naam. Het bezit van de Naam wordt gebruikt als naam van de paginaknooppunt in de bewaarplaats, en bepaalt daarom de weg van de pagina. http://localhost:4502/content/geometrixx/fr.html)
 
-In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface gebruikt om een taalkopie van een website te maken. Voor instructies die Klassieke UI gebruiken, zie [ Creërend een Wortel van de Taal Gebruikend Klassieke UI ](/help/sites-administering/tc-lroot-classic.md).
+In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface gebruikt om een taalkopie van een website te maken. Voor instructies die Klassieke UI gebruiken, zie [&#x200B; Creërend een Wortel van de Taal Gebruikend Klassieke UI &#x200B;](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navigeer naar sites.
 1. Klik op de site waarvoor u een taalkopie wilt maken.
@@ -64,12 +64,12 @@ In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface ge
 
 1. Klik op Maken en klik vervolgens op Pagina maken.
 
-   ![ chlimage_1-21 ](assets/chlimage_1-21a.png)
+   ![&#x200B; chlimage_1-21 &#x200B;](assets/chlimage_1-21a.png)
 
 1. Selecteer de paginasjabloon en klik op Volgende.
 1. Typ in het veld Naam de landcode in de notatie `<language-code>` of `<language-code>_<country-code>` , bijvoorbeeld `en` , `en_US` , `en_us` , `en_GB` , `en_gb` . Typ een titel voor de pagina.
 
-   ![ chlimage_1-22 ](assets/chlimage_1-22a.png)
+   ![&#x200B; chlimage_1-22 &#x200B;](assets/chlimage_1-22a.png)
 
 1. Klik op Maken. In de bevestigingsdialoogdoos, klik of **Gedaan** om aan de console van Plaatsen terug te keren, of **Open** om het taalexemplaar te openen.
 
@@ -77,12 +77,12 @@ In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface ge
 
 De interface die is geoptimaliseerd voor aanrakingen biedt een paneel Referenties met een lijst van taalwortels die zijn gemaakt.
 
-![ chlimage_1-23 ](assets/chlimage_1-23a.png)
+![&#x200B; chlimage_1-23 &#x200B;](assets/chlimage_1-23a.png)
 
 In de volgende procedure wordt de geoptimaliseerde interface voor aanrakingen gebruikt om het deelvenster Verwijzingen voor een pagina te openen.
 
 1. Voor de console van Plaatsen, selecteer een pagina van de plaats en klik dan **Verwijzingen**.
 
-   ![ chlimage_1-24 ](assets/chlimage_1-24a.png)
+   ![&#x200B; chlimage_1-24 &#x200B;](assets/chlimage_1-24a.png)
 
 1. In het verwijzingenpaneel, klik {de Kopieën van 0} Taal **.** In het deelvenster Taalkopieën worden de taalkopieën van de website weergegeven.

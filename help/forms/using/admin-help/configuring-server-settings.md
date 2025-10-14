@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Via de pagina Serverinstellingen hebt u toegang tot verschillende instellingen voor de formulierworkflow:
 
-* **e-mailmontages** die uitgaande e-mailberichten, samen met de montages toelaten van de e-mailserver die voor die berichten worden gebruikt. (Zie [ Vormend e-mailmontages ](configuring-server-settings.md#configuring-email-settings).)
-* **het berichtmontages van de Taak** die, de berichten toelaten onbruikbaar maken of wijzigen die in e-mailberichten worden verzonden aan eind - gebruikers en groepen betreffende hun taken. (Zie [ het Vormen berichten voor gebruikers en groepen ](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **het berichtmontages van de Beheerder** die, de berichten toelaten onbruikbaar maken of wijzigen die in e-mailberichten voor administratieve taken worden verzonden. (Zie [ het Vormen berichten voor beheerders ](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **e-mailmontages** die uitgaande e-mailberichten, samen met de montages toelaten van de e-mailserver die voor die berichten worden gebruikt. (Zie [&#x200B; Vormend e-mailmontages &#x200B;](configuring-server-settings.md#configuring-email-settings).)
+* **het berichtmontages van de Taak** die, de berichten toelaten onbruikbaar maken of wijzigen die in e-mailberichten worden verzonden aan eind - gebruikers en groepen betreffende hun taken. (Zie [&#x200B; het Vormen berichten voor gebruikers en groepen &#x200B;](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **het berichtmontages van de Beheerder** die, de berichten toelaten onbruikbaar maken of wijzigen die in e-mailberichten voor administratieve taken worden verzonden. (Zie [&#x200B; het Vormen berichten voor beheerders &#x200B;](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## E-mailinstellingen configureren {#configuring-email-settings}
 
@@ -30,7 +30,7 @@ U kunt een e-mailaccount opgeven voor de Forms Server, waarmee e-mailberichten w
 
 Als u het verzenden van e-mailberichten tussen AEM formulieren en gebruikers wilt inschakelen, configureert u de instellingen voor uitgaande e-mail op de pagina E-mailinstellingen. Uitgaande e-mail moet een server SMTP gebruiken.
 
-Als u wilt dat AEM formulieren binnenkomende e-mailberichten van gebruikers kunnen ontvangen en verwerken, maakt u een e-maileindpunt voor de service Volledige taak. (Zie [ een E-maileindpunt voor de Volledige dienst van de Taak ](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service) creëren.)
+Als u wilt dat AEM formulieren binnenkomende e-mailberichten van gebruikers kunnen ontvangen en verwerken, maakt u een e-maileindpunt voor de service Volledige taak. (Zie [&#x200B; een E-maileindpunt voor de Volledige dienst van de Taak &#x200B;](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service) creëren.)
 
 Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is, hoeft u geen van de opties te configureren op de pagina E-mailinstellingen.
 
@@ -62,7 +62,7 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 >
 >De Flex Workspace is afgekeurd voor de release AEM formulieren.
 
-Standaard bevatten de e-mails die door AEM formulieren worden verzonden koppelingen naar (Vervangen voor AEM formulieren op JEE) Flex Workspace. U kunt AEM formulieren configureren om e-mailberichten met koppelingen naar AEM Forms Workspace te verzenden. Meer over de voordelen van AEM Forms Workspace over (Vervangen voor AEM vormen op JEE) Flex Workspace, zie [ dit ](/help/forms/using/features-html-workspace-available-flex.md) artikel.
+Standaard bevatten de e-mails die door AEM formulieren worden verzonden koppelingen naar (Vervangen voor AEM formulieren op JEE) Flex Workspace. U kunt AEM formulieren configureren om e-mailberichten met koppelingen naar AEM Forms Workspace te verzenden. Meer over de voordelen van AEM Forms Workspace over (Vervangen voor AEM vormen op JEE) Flex Workspace, zie [&#x200B; dit &#x200B;](/help/forms/using/features-html-workspace-available-flex.md) artikel.
 
 1. Klik in de beheerconsole op Home > Services > Formulierwerkstroom > Serverinstellingen > Taakmeldingen.
 1. Taaktoewijzingssjabloon openen.
@@ -96,8 +96,8 @@ U kunt herinneringsberichten naar de toegewezen gebruiker of groep verzenden wan
 1. Klik onder Type bericht op Herinnering (voor gebruikers) of Groep - Herinnering (voor groepen).
 1. Selecteer Herinnering inschakelen of Groep - Herinnering inschakelen.
 1. (Alleen gebruikersmeldingen) Als u een bijlage van het formulier en de bijbehorende gegevens wilt opnemen in het e-mailbericht voor de herinnering, selecteert u Formuliergegevens opnemen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -110,8 +110,8 @@ U kunt taaktoewijzingsmeldingen verzenden naar een gebruiker of groep wanneer aa
 1. Onder het Type van Bericht, klik de Toewijzing van de Taak voor gebruikers of Groep - Taak Toewijzing voor groepen.
 1. Selecteer Taaktoewijzing voor gebruikers inschakelen of Groep inschakelen - Taaktoewijzing voor groepen.
 1. (Alleen gebruikersmeldingen) Als u een bijlage van het formulier en de bijbehorende gegevens wilt opnemen in het e-mailbericht voor de toewijzing van taken, selecteert u Formuliergegevens opnemen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -123,8 +123,8 @@ U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadli
 1. Klik in de beheerconsole op Services > Forms-workflow > Serverinstellingen > Taakmeldingen.
 1. Klik onder Type bericht op Deadline (voor gebruikers) of Group - Deadline (voor groepen).
 1. Selecteer Deadline inschakelen of Groep - deadline inschakelen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -154,8 +154,8 @@ Als een vertakking (of opzettelijk of wegens een fout) ophoudt te werk te gaan, 
 1. Klik onder Meldingstype op Vertakking stilzetten.
 1. Selecteer Geroepen vertakking inschakelen.
 1. Typ in het vak E-mailadres de adressen van de gebruikers die moeten worden gewaarschuwd wanneer een vertakking wordt geplaatst. Gebruik de notatie user@domain.com en scheidt elk adres met een komma. Dit e-mailadres is meestal bestemd voor een beheerder.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -168,8 +168,8 @@ Als een bewerking niet meer actief of vanwege een fout kan worden uitgevoerd, ku
 1. Klik onder Meldingstype op Gestuurde bewerking.
 1. Selecteer Geroepen bewerking inschakelen.
 1. Typ in het vak E-mailadressen de adressen van de gebruikers die moeten worden gewaarschuwd wanneer een bewerking stagneert. Gebruik de notatie user@domain.com en scheidt elk adres met een komma. Dit e-mailadres is meestal bestemd voor een beheerder.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [ het Aanpassen van de inhoud van berichten ](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Voor details over het aanpassen van dit gebied, zie [&#x200B; het Aanpassen van de inhoud van berichten &#x200B;](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Klik op Opslaan.
 
 ## Inhoud van meldingen aanpassen {#customizing-the-content-of-notifications}

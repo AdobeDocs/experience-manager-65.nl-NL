@@ -37,7 +37,7 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 ## Oak {#oak}
 
-[ Oak ](/help/sites-deploying/platform.md) is een scalable en uitvoerende hiërarchische inhoudsbewaarplaats die de stichting van AEM is.
+[&#x200B; Oak &#x200B;](/help/sites-deploying/platform.md) is een scalable en uitvoerende hiërarchische inhoudsbewaarplaats die de stichting van AEM is.
 
 <table>
  <tbody>
@@ -73,9 +73,9 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[ Communautaire Opslag van de Inhoud ](/help/communities/working-with-srp.md) - bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker-geproduceerde inhoud (UGC) en de overwegingen om de onderliggende [ topologie ](/help/communities/topologies.md) te kiezen.
+[&#x200B; Communautaire Opslag van de Inhoud &#x200B;](/help/communities/working-with-srp.md) - bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker-geproduceerde inhoud (UGC) en de overwegingen om de onderliggende [&#x200B; topologie &#x200B;](/help/communities/topologies.md) te kiezen.
 
-[ geadviseerde plaatsingen voor gemeenschappen ](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
+[&#x200B; geadviseerde plaatsingen voor gemeenschappen &#x200B;](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
 ## UI {#ui}
 

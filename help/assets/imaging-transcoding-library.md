@@ -76,7 +76,7 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wijzen gebruikend de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [ Uitbeeldende Transcoding pakket van de Bibliotheek van de Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het gebruikend de Manager van het Pakket. Het pakket is compatibel met [!DNL Experience Manager] 6.5.
+1. Download het [&#x200B; Uitbeeldende Transcoding pakket van de Bibliotheek van de Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het gebruikend de Manager van het Pakket. Het pakket is compatibel met [!DNL Experience Manager] 6.5.
 
 1. Als u een bundle-id voor `com.day.cq.dam.cq-dam-switchengine` wilt weten, meldt u zich aan bij de webconsole en klikt u op **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]** . Als u de bundelconsole wilt openen, opent u ook de URL van `https://[aem_server:[port]/system/console/bundles/` . Zoek `com.day.cq.dam.cq-dam-switchengine` -bundel en de bijbehorende id.
 
@@ -129,11 +129,11 @@ Als u bijvoorbeeld miniaturen voor een TIFF-afbeelding wilt maken met de afbeeld
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
 
-   ![ verandering ](assets/chlimage_1-199.png)
+   ![&#x200B; verandering &#x200B;](assets/chlimage_1-199.png)
 
 1. (Optioneel) Genereer miniaturen van een tussentijdse uitvoering met één opdracht. De tussenliggende vertoning fungeert als bron voor het genereren van statische weergaven en webuitvoeringen. Deze methode is sneller dan de eerdere methode. Met deze methode kunt u echter geen aangepaste parameters op miniaturen toepassen.
 
-   ![ verandering ](assets/chlimage_1-200.png)
+   ![&#x200B; verandering &#x200B;](assets/chlimage_1-200.png)
 
 1. Als u webuitvoeringen wilt genereren, configureert u parameters op het tabblad **[!UICONTROL Web-Enabled Image]** .
 
@@ -143,4 +143,4 @@ Als u de configuratie wilt controleren, uploadt u een TIFF-afbeelding en control
 
 >[!MORELIKETHIS]
 >
->* [ Gesteund MIME typeartikel ](assets-formats.md#supported-image-transcoding-library)
+>* [&#x200B; Gesteund MIME typeartikel &#x200B;](assets-formats.md#supported-image-transcoding-library)

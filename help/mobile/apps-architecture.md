@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps-1}
 
-De componenten van de pagina die u voor uw app creeert zijn gebaseerd op /libs/mobileapps/components/angular/ng-page component ([ open in CRXDE Lite op een lokale server ](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Deze component bevat de volgende JSP manuscripten die uw component of erft of met voeten treedt:
+De componenten van de pagina die u voor uw app creeert zijn gebaseerd op /libs/mobileapps/components/angular/ng-page component ([&#x200B; open in CRXDE Lite op een lokale server &#x200B;](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Deze component bevat de volgende JSP manuscripten die uw component of erft of met voeten treedt:
 
 * ng-page.jsp
 * head.jsp
@@ -72,7 +72,7 @@ Het include-bestand template.jsp wordt opgenomen in een `div` -element dat de `n
 
 **Modus Publish**
 
-In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Content Sync) worden alle pagina&#39;s een app van één pagina (SPA). (Om over SPA te leren, gebruik het leerprogramma van de Angular, specifiek [ https://docs.angularjs.org/tutorial/step_07 ](https://docs.angularjs.org/tutorial/step_07).)
+In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Content Sync) worden alle pagina&#39;s een app van één pagina (SPA). (Om over SPA te leren, gebruik het leerprogramma van de Angular, specifiek [&#x200B; https://docs.angularjs.org/tutorial/step_07 &#x200B;](https://docs.angularjs.org/tutorial/step_07).)
 
 Een SPA bevat slechts één HTML-pagina (een pagina die het element `<html>` bevat). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In de terminologie van de Angular, is het &quot;...een malplaatje dat voor alle meningen in onze toepassing gemeenschappelijk is.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens afspraak is de toepassingspagina op het hoogste niveau het `cq:Page` -knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
 
@@ -222,7 +222,7 @@ Alternatief, als `$scope.wcmMode == false`, resulteert elke navigatiegebeurtenis
 
 ### Details van componentscript {#component-script-details}
 
-![ chlimage_1-36 ](assets/chlimage_1-36.png)
+![&#x200B; chlimage_1-36 &#x200B;](assets/chlimage_1-36.png)
 
 #### ng-component.jsp {#ng-component-jsp}
 
@@ -307,7 +307,7 @@ Dit is een verborgen map die u mogelijk niet ziet, afhankelijk van de huidige be
 
 #### .cordova/haken/ {#cordova-hooks}
 
-Deze folder bevat de [ haken CLI ](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). De mappen in de map hooks bevatten node.js-scripts die op exacte punten worden uitgevoerd tijdens de build.
+Deze folder bevat de [&#x200B; haken CLI &#x200B;](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). De mappen in de map hooks bevatten node.js-scripts die op exacte punten worden uitgevoerd tijdens de build.
 
 #### .cordova/haken/after-platform_add/ {#cordova-hooks-after-platform-add}
 

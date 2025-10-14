@@ -24,12 +24,12 @@ Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welk
 
 Elke Malplaatje stelt u met een selectie van componenten beschikbaar voor gebruik voor.
 
-* De malplaatjes worden opgebouwd van [ Componenten ](/help/sites-developing/components.md);
+* De malplaatjes worden opgebouwd van [&#x200B; Componenten &#x200B;](/help/sites-developing/components.md);
 * Componenten gebruiken widgets en staan toegang tot deze widgets toe. Deze worden gebruikt om de inhoud te renderen.
 
 >[!NOTE]
 >
->Leren hoe te om uw toepassing van Adobe Experience Manager (AEM) te ontwikkelen gebruikend CRXDE Lite, zie [ Ontwikkelen met CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
+>Leren hoe te om uw toepassing van Adobe Experience Manager (AEM) te ontwikkelen gebruikend CRXDE Lite, zie [&#x200B; Ontwikkelen met CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
 
 Een sjabloon is de basis van een pagina.
 
@@ -57,7 +57,7 @@ Deze knoop bevat *jcr:content (cq:PageContent)* knoop die als basis voor de inho
 >
 >Zie de volgende bronnen voor informatie over de basisbeginselen van sjablonen en componenten in AEM:
 >
->* [ Malplaatjes ](/help/sites-developing/templates.md)
+>* [&#x200B; Malplaatjes &#x200B;](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
 >
 

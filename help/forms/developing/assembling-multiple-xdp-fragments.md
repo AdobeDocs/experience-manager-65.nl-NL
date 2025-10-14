@@ -22,19 +22,19 @@ ht-degree: 0%
 
 U kunt meerdere XDP-fragmenten samenvoegen tot één XDP-document. Neem bijvoorbeeld XDP-fragmenten waarin elk XDP-bestand een of meer subformulieren bevat die worden gebruikt om een gezondheidsformulier te maken. De volgende illustratie toont de overzicht mening (vertegenwoordigt het bestand tuc018_template_flowed.xdp dat in *wordt gebruikt die veelvoudige fragmenten samenbrengt XDP* snel begin):
 
-![ am_am_forma ](assets/am_am_forma.png)
+![&#x200B; am_am_forma &#x200B;](assets/am_am_forma.png)
 
 De volgende illustratie toont de patiëntsectie (vertegenwoordigt het bestand tuc018_contact.xdp dat in *wordt gebruikt die veelvoudige fragmenten samenbrengt XDP* snel begin):
 
-![ am_am_formb ](assets/am_am_formb.png)
+![&#x200B; am_am_formb &#x200B;](assets/am_am_formb.png)
 
 De volgende illustratie toont de sectie van de patiëntgezondheid (vertegenwoordigt het bestand tuc018_patient.xdp dat in *wordt gebruikt die veelvoudige fragmenten samenbrengt XDP* snel begin):
 
-![ am_am_formc ](assets/am_am_formc.png)
+![&#x200B; am_am_formc &#x200B;](assets/am_am_formc.png)
 
 Dit fragment bevat twee subforms genoemd *subPatientphysical* en *subPatientHealth*. Beide subformulieren worden vermeld in het DDX-document dat wordt doorgegeven aan de Assembler-service. Met de Assembler-service kunt u al deze XDP-fragmenten combineren in één XDP-document, zoals in de volgende afbeelding wordt getoond.
 
-![ am_am_formd ](assets/am_am_formd.png)
+![&#x200B; am_am_formd &#x200B;](assets/am_am_formd.png)
 
 In het volgende DDX-document worden meerdere XDP-fragmenten samengevoegd in een XDP-document.
 
@@ -78,11 +78,11 @@ Voor elk subformulier kunt u een `XDPContent` -element toevoegen (dit element is
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -204,10 +204,10 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
 
 **zie ook**
 
-[ samenstellend Veelvoudige XDP Fragments ](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[ Snel Begin (SOAP wijze): Het samenbrengen van veelvoudige fragmenten XDP gebruikend Java API ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[ Met inbegrip van de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[&#x200B; samenstellend Veelvoudige XDP Fragments &#x200B;](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[&#x200B; Snel Begin (SOAP wijze): Het samenbrengen van veelvoudige fragmenten XDP gebruikend Java API &#x200B;](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[&#x200B; Met inbegrip van de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Meerdere XDP-fragmenten samenstellen met de webservice-API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -284,5 +284,5 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
 **zie ook**
 
-[ samenstellend Veelvoudige XDP Fragments ](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[ het Aanhalen van AEM Forms die MTOM ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) gebruikt
+[&#x200B; samenstellend Veelvoudige XDP Fragments &#x200B;](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[&#x200B; het Aanhalen van AEM Forms die MTOM &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) gebruikt

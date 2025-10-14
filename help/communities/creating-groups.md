@@ -21,27 +21,27 @@ ht-degree: 0%
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers (leden van de gemeenschap en auteurs) van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Deze capaciteit is aanwezig wanneer de [ groepsfunctie ](/help/communities/functions.md#groups-function) in de [ communautaire plaats ](/help/communities/sites-console.md) structuur aanwezig is.
+Deze capaciteit is aanwezig wanneer de [&#x200B; groepsfunctie &#x200B;](/help/communities/functions.md#groups-function) in de [&#x200B; communautaire plaats &#x200B;](/help/communities/sites-console.md) structuur aanwezig is.
 
-A [ malplaatje van de communautaire groep ](/help/communities/tools-groups.md) verstrekt het ontwerp van de pagina van de communautaire groep wanneer een communautaire groep dynamisch wordt gecreeerd.
+A [&#x200B; malplaatje van de communautaire groep &#x200B;](/help/communities/tools-groups.md) verstrekt het ontwerp van de pagina van de communautaire groep wanneer een communautaire groep dynamisch wordt gecreeerd.
 
 Een of meer groepssjablonen worden geselecteerd voor de groepsfunctie wanneer de functie wordt toegevoegd aan de structuur van een gemeenschapssite of aan een sjabloon voor een gemeenschapssite. Deze lijst van groepsmalplaatjes wordt voorgesteld aan het lid of de auteur die dynamisch tot een groep van binnen de communautaire plaats leidt.
 
 ## Een nieuwe groep maken {#creating-a-new-group}
 
-De capaciteit om een communautaire groep tot stand te brengen baseert zich op het bestaan van een communautaire plaats die de groepsfunctie omvat, zoals die van het [ Malplaatje van de Plaats van de Verwijzing ](/help/communities/sites.md) wordt gecreeerd.
+De capaciteit om een communautaire groep tot stand te brengen baseert zich op het bestaan van een communautaire plaats die de groepsfunctie omvat, zoals die van het [&#x200B; Malplaatje van de Plaats van de Verwijzing &#x200B;](/help/communities/sites.md) wordt gecreeerd.
 
-De voorbeelden die volgen gebruiken de communautaire plaats die van `Reference Site Template` wordt gecreeerd zoals die in [ wordt beschreven Begonnen het Worden met AEM Communities ](/help/communities/getting-started.md) leerprogramma.
+De voorbeelden die volgen gebruiken de communautaire plaats die van `Reference Site Template` wordt gecreeerd zoals die in [&#x200B; wordt beschreven Begonnen het Worden met AEM Communities &#x200B;](/help/communities/getting-started.md) leerprogramma.
 
 Dit is de pagina die op publiceert laadt wanneer het **1&rbrace; menupunt van Groepen &lbrace;wordt geselecteerd:**
 
-![ nieuw-groep ](assets/new-group.png)
+![&#x200B; nieuw-groep &#x200B;](assets/new-group.png)
 
 Wanneer u het **Nieuwe pictogram van de Groep** selecteert, geeft een dialoogdoos uit opent omhoog.
 
 Onder het **lusje van Montages**, verstrekt u de basiseigenschappen van de groep:
 
-![ groep-montages ](assets/group-settings.png)
+![&#x200B; groep-montages &#x200B;](assets/group-settings.png)
 
 * **de Naam van de Groep**
 
@@ -69,21 +69,21 @@ Onder het **lusje van Montages**, verstrekt u de basiseigenschappen van de groep
 
 Onder het **Malplaatje** lusje, kunt u uit de lijst van communautaire groepsmalplaatjes selecteren. Deze sjablonen zijn opgegeven wanneer de functie Groepen is opgenomen in de structuur van de site van de community of in een sjabloon voor een community-site.
 
-![ groep-malplaatje ](assets/group-template.png)
+![&#x200B; groep-malplaatje &#x200B;](assets/group-template.png)
 
 Onder het **lusje van het Beeld**, kunt u een beeld uploaden om voor de groep op de pagina van de Groepen van de communautaire plaats te tonen. De standaardstijlpagina wijzigt de afbeelding in 170 x 90 pixels.
 
-![ groep-beeld ](assets/group-image.png)
+![&#x200B; groep-beeld &#x200B;](assets/group-image.png)
 
 Door **te selecteren creeer Groep**, worden de pagina&#39;s voor de groep gecreeerd gebaseerd op het gekozen malplaatje, en een gebruikersgroep wordt gecreeerd voor lidmaatschap en de pagina van Groepen wordt bijgewerkt om nieuwe subcommunity te tonen.
 
 De pagina Groepen met een nieuwe subcommunity met de naam &quot;Focus Group&quot;, waarvoor een afbeeldingsminiatuur is geüpload, ziet er als volgt uit (nog steeds aangemeld als beheerder van een communitygroep):
 
-![ groep-pagina ](assets/group-page.png)
+![&#x200B; groep-pagina &#x200B;](assets/group-page.png)
 
 Als u de koppeling `Focus Group` selecteert, wordt de pagina Focus Group in de browser geopend. Deze pagina heeft een initiële weergave op basis van de gekozen sjabloon en bevat een submenu onder het menu van de hoofdsite van de community:
 
-![ open-groep-pagina ](assets/open-group-page.png)
+![&#x200B; open-groep-pagina &#x200B;](assets/open-group-page.png)
 
 ### Component Lijst van leden van groep Gemeenschap {#community-group-member-list-component}
 
@@ -93,4 +93,4 @@ De component `Community Group Member List` is bedoeld voor gebruik door ontwikke
 
 Meer informatie kan op de [&#128279;](/help/communities/essentials-groups.md) pagina van de Hoofdzaak van de Groep van de Gemeenschap  voor ontwikkelaars worden gevonden.
 
-Voor andere informatie met betrekking tot communautaire groepen, bezoek [ het Leiden Gebruikers en de Groepen van de Gebruiker ](/help/communities/users.md).
+Voor andere informatie met betrekking tot communautaire groepen, bezoek [&#x200B; het Leiden Gebruikers en de Groepen van de Gebruiker &#x200B;](/help/communities/users.md).

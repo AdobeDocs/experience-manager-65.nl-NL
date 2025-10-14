@@ -48,7 +48,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
       /libs/fd/cm/config/defaultApp/
 
-      ![ knoop van de Bedekking ](assets/1_defaultapp.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/1_defaultapp.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -58,7 +58,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
       **de Types van Knoop van de Gelijke:** Gecontroleerd
 
-      ![ knoop van de Bedekking ](assets/2_defaultappoverlaynode.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/2_defaultappoverlaynode.png)
 
    1. Klik **OK**.
    1. Klik **sparen allen**.
@@ -69,7 +69,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
    1. Klik het acmExtensionsConfig.xml- dossier met de rechtermuisknop aan en selecteer **Exemplaar**.
 
-      ![ ExtensionsConfig.xml van het Exemplaar &lbrace;](assets/3_acmextensionsconfig_xml_copy.png)
+      ![&#x200B; ExtensionsConfig.xml van het Exemplaar &lbrace;](assets/3_acmextensionsconfig_xml_copy.png)
 
    1. Klik met de rechtermuisknop op de **defaultApp** omslag bij &quot;/apps/fd/cm/config/defaultApp/,&quot;en selecteer **Deeg**.
    1. Klik **sparen allen**.
@@ -99,7 +99,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
        </customAction>
    ```
 
-   ![ customAction markering ](assets/5_acmextensionsconfig_xml.png)
+   ![&#x200B; customAction markering &#x200B;](assets/5_acmextensionsconfig_xml.png)
 
    De tag modelExtension heeft een set onderliggende tags van customAction die de handeling, machtigingen en weergave van de actieknop configureren. Hieronder volgt een lijst met aangepasteAction-configuratietags:
 
@@ -172,7 +172,7 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Ad
 
 1. Zoek de bundel Adobe Asset Composer Building Block. Start de bundel opnieuw: klik op Stoppen en klik vervolgens op Start.
 
-   ![ het Blok van de Bouw van de Bouw van Activa van de Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
+   ![&#x200B; het Blok van de Bouw van de Bouw van Activa van de Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nadat u de bundel Adobe Asset Composer Building Block opnieuw hebt gestart, verschijnt de aangepaste knop in de Create Correspondence User Interface. U kunt een letter openen in de gebruikersinterface Correspondentie maken om een voorvertoning van de aangepaste knop weer te geven.
 
@@ -329,7 +329,7 @@ In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het
 * Letter verzenden voor revisieproces LCA (SendLetterForReview.lca)
 
 Download en decomprimeer het bestand components.zip om de bestanden DSCSample.jar en SendLetterForReview.lca op te halen. Gebruik deze bestanden volgens de onderstaande procedures.
-[ krijgt Dossier ](assets/components.zip)
+[&#x200B; krijgt Dossier &#x200B;](assets/components.zip)
 
 #### Vorm de Server van het LiveCycle om het proces LCA in werking te stellen {#configure-the-livecycle-server-to-run-the-lca-process}
 
@@ -364,13 +364,13 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces inschakelt.
 
 1. Als de toepassing SendLetterForReview al aanwezig is, sla de resterende stappen in deze procedure over, anders ga aan de volgende stappen verder.
 
-   ![ SendLetterForReview toepassing in UI ](assets/12_applicationmanagementlc.png)
+   ![&#x200B; SendLetterForReview toepassing in UI &#x200B;](assets/12_applicationmanagementlc.png)
 
 1. Klik **Invoer**.
 
 1. Klik **kiezen Dossier** en selecteren SendLetterForReview.lca.
 
-   ![ Uitgezochte SendLetterForReview.lca- dossier ](assets/14_sendletterforreview_lca.png)
+   ![&#x200B; Uitgezochte SendLetterForReview.lca- dossier &#x200B;](assets/14_sendletterforreview_lca.png)
 
 1. Klik **Voorproef**.
 
@@ -407,7 +407,7 @@ In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen 
 
 Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de server van het LiveCycle. Nadat het DSCSample.jar- dossier aan de server van het LiveCycle wordt geupload, gebruikt de server van de Experience Manager het DSCSample.jar- dossier om tot renderLetter API toegang te hebben.
 
-Voor meer informatie, zie [ Verbindend AEM Forms met het LiveCycle van de Adobe ](/help/forms/using/aem-livecycle-connector.md).
+Voor meer informatie, zie [&#x200B; Verbindend AEM Forms met het LiveCycle van de Adobe &#x200B;](/help/forms/using/aem-livecycle-connector.md).
 
 1. Werk de URL van de server-URL van de Experience Manager in cmsa.properties in DSCSample.jar bij, die zich op de volgende locatie bevindt:
 
@@ -424,11 +424,11 @@ Voor meer informatie, zie [ Verbindend AEM Forms met het LiveCycle van de Adobe 
    >
    >Telkens als u om het even welke veranderingen bij de serverzijde aanbrengt, begin de Server van het LiveCycle opnieuw.
 
-   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer Informatie over renderLetter API, zie [ Interface LetterRenderService ](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer Informatie over renderLetter API, zie [&#x200B; Interface LetterRenderService &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC importeren in LiveCyle {#import-dsc-to-livecyle}
 
-Het bestand DSCSample.jar gebruikt de renderLetter-API om een letter te renderen als PDF bytes van XML-gegevens die door DSC als invoer worden gegeven. Voor meer Informatie over renderLetter en andere APIs, zie [ de Brief geeft Dienst ](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html) terug.
+Het bestand DSCSample.jar gebruikt de renderLetter-API om een letter te renderen als PDF bytes van XML-gegevens die door DSC als invoer worden gegeven. Voor meer Informatie over renderLetter en andere APIs, zie [&#x200B; de Brief geeft Dienst &#x200B;](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html) terug.
 
 1. Start Workbench en meld u aan.
 1. Selecteer **Venster > toont Weergaven > Componenten**. De weergave Componenten wordt toegevoegd aan Workbench ES2.
@@ -448,6 +448,6 @@ Nadat u de actie en de knoop voor het verzenden van de brief voor overzicht hebt
 
 1. Klik **voorleggen**.
 
-![ sendReview ](assets/sendreview.png)
+![&#x200B; sendReview &#x200B;](assets/sendreview.png)
 
 De controleur ontvangt een e-mail van het systeem met de brief als PDF bijlage.

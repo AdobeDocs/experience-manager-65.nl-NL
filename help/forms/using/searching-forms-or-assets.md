@@ -22,7 +22,7 @@ U kunt naar uw formulieren of formulierelementen zoeken met behulp van een teken
 
 Wanneer u een of meer criteria selecteert en ook een tekenreeks opgeeft, wordt het snijpunt van de tekst en criteria geretourneerd als zoekresultaten. De zoekresultaten zijn net zo goed als de metagegevens voor formulieren en middelen die worden verstrekt.
 
-Klik ![ aem6forms_search ](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
+Klik ![&#x200B; aem6forms_search &#x200B;](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
 
 ## Basiszoekopdracht {#basic-search}
 
@@ -47,7 +47,7 @@ Neem van de volgende punten over het basisonderzoek nota:
 
 Naast de query kunt u in de zoekcriteria enkele zoekparameters opgeven om de standaardzoekopdracht efficiënter en gerichter te maken.
 
-![ het gebied van het Onderzoek en parameters of filters van het Onderzoek voor AEM vorm en activa onderzoek ](assets/search_forms_assets.png)
+![&#x200B; het gebied van het Onderzoek en parameters of filters van het Onderzoek voor AEM vorm en activa onderzoek &#x200B;](assets/search_forms_assets.png)
 
 Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen
 

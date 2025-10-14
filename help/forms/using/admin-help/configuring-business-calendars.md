@@ -44,15 +44,15 @@ Als sommige gebruikers in uw organisatie verschillende niet-bedrijfsdagen hebben
 
    **Van Bedrijfs kalender sleutels:** u kunt een bedrijfskalender aan een gebruiker toewijzen die op een sleutel van de bedrijfskalender wordt gebaseerd, die het plaatsen in Gebruikersbeheer wordt gespecificeerd. Vervolgens wijst u de agenda-toets toe aan een zakelijke kalender in de werkstroom voor formulieren.
 
-   De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. Voor details bij vestiging domeinen, zie [ Toevoegend domeinen ](/help/forms/using/admin-help/adding-domains.md#adding-domains).
+   De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. Voor details bij vestiging domeinen, zie [&#x200B; Toevoegend domeinen &#x200B;](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Als u de agenda-toets voor deze gebruikers wilt instellen, voert u in het veld Business Calendar Key een tekenreeks in bij het toevoegen of bewerken van een gebruiker in Gebruikersbeheer. (Zie [ Toevoegend en vormend gebruikers ](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) U brengt dan de sleutels van de bedrijfskalender (de koorden) aan bedrijfscalenders in vormenwerkschema in kaart. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Als u de agenda-toets voor deze gebruikers wilt instellen, voert u in het veld Business Calendar Key een tekenreeks in bij het toevoegen of bewerken van een gebruiker in Gebruikersbeheer. (Zie [&#x200B; Toevoegend en vormend gebruikers &#x200B;](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) U brengt dan de sleutels van de bedrijfskalender (de koorden) aan bedrijfscalenders in vormenwerkschema in kaart. (Zie [&#x200B; de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender &#x200B;](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Hiermee kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [ Vormende folders ](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) U kunt de sleutels van de bedrijfkalender (de waarden die voor het &quot;land&quot;gebied in de folder LDAP worden bepaald) aan bedrijfscalendars in vormenwerkschema dan in kaart brengen. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Hiermee kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [&#x200B; Vormende folders &#x200B;](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) U kunt de sleutels van de bedrijfkalender (de waarden die voor het &quot;land&quot;gebied in de folder LDAP worden bepaald) aan bedrijfscalendars in vormenwerkschema dan in kaart brengen. (Zie [&#x200B; de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender &#x200B;](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-1. Definieer in de formulierwerkstroom een kalender voor elke set gebruikers die dezelfde niet-werkdagen delen. (Zie [ creeer of werk een bedrijfskalender ](configuring-business-calendars.md#create-or-update-a-business-calendar) bij.)
-1. Wijs in de formulierwerkstroom de agenda- of groepslidmaatschappen voor elke kalender toe. (Zie [ de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender ](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
-1. In Workbench kiest de ontwikkelaar of zakelijke kalenders moeten worden gebruikt voor herinneringen, deadlines en escalaties. (Zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+1. Definieer in de formulierwerkstroom een kalender voor elke set gebruikers die dezelfde niet-werkdagen delen. (Zie [&#x200B; creeer of werk een bedrijfskalender &#x200B;](configuring-business-calendars.md#create-or-update-a-business-calendar) bij.)
+1. Wijs in de formulierwerkstroom de agenda- of groepslidmaatschappen voor elke kalender toe. (Zie [&#x200B; de gebruikers en de groepen van de Toewijzing aan een bedrijfskalender &#x200B;](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+1. In Workbench kiest de ontwikkelaar of zakelijke kalenders moeten worden gebruikt voor herinneringen, deadlines en escalaties. (Zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    Als de procesontwikkelaar verkiest om bedrijfscalendars te gebruiken, zullen AEM vormen dynamisch de aangewezen bedrijfskalender selecteren die op het Beheer van de Gebruiker wordt gebaseerd en de bedrijfskalendertoewijzingen die in de Console van het Beleid worden bepaald, of, als geen afbeeldingen bestaan, de standaardkalender zullen gebruiken.
 
@@ -69,7 +69,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
-2. Om een nieuwe bedrijfskalender toe te voegen, klik ![ bus_cal_plus ](assets/bus_cal_plus.png). De tekst *Nieuwe Kalender* verschijnt in de drop-down lijst. Selecteer de tekst en typ een andere naam voor de kalender.
+2. Om een nieuwe bedrijfskalender toe te voegen, klik ![&#x200B; bus_cal_plus &#x200B;](assets/bus_cal_plus.png). De tekst *Nieuwe Kalender* verschijnt in de drop-down lijst. Selecteer de tekst en typ een andere naam voor de kalender.
 
    Als u een bestaande agenda wilt bewerken, selecteert u deze in de vervolgkeuzelijst.
 
@@ -82,7 +82,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
 5. Dubbelklik in de kalender aan de linkerkant op andere niet-werkdagen, zoals feestdagen. Je kunt geen dagen in het verleden selecteren. De niet-werkdagen die u selecteert, worden weergegeven in een lijst aan de rechterkant, waarbij de datum twee keer op één regel wordt weergegeven. Selecteer links de datum waarop u een naam of beschrijving voor de niet-werkdag wilt typen.
 
-   Om een niet-bedrijfsdag uit de lijst te verwijderen, klik ![ bus_cal_trash ](assets/bus_cal_trash.png) naast de dag.
+   Om een niet-bedrijfsdag uit de lijst te verwijderen, klik ![&#x200B; bus_cal_trash &#x200B;](assets/bus_cal_trash.png) naast de dag.
 
 6. [ Facultatief ] als deze kalender de standaardkalender moet zijn, uitgezochte StandaardKalender. De standaardkalender wordt gebruikt wanneer geen andere kalenderafbeelding voor gebruiker-bijbehorende gebeurtenissen bestaat of geen bedrijfskalender voor de Gebeurtenis van de Tijdopnemer of de Wacht Dienst wordt gespecificeerd. U kunt de standaardkalender niet verwijderen.
 7. Wanneer u klaar bent met het definiëren van de niet-werkdagen, selecteert u Kalender ingeschakeld om deze actief te maken en klikt u op Opslaan.
@@ -95,7 +95,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
 ## Gebruikers en groepen toewijzen aan een zakelijke kalender {#mapping-users-and-groups-to-a-business-calendar}
 
-Er zijn twee methodes die u kunt gebruiken om een bedrijfskalender met een gebruiker te associëren. U kunt zakelijke kalenders toewijzen aan gebruikers op basis van een zakelijke kalendersleutel of op basis van de directorygroep waartoe de gebruiker behoort. U gebruikt het tabblad Toewijzing om de methode op te geven die AEM formulieren gebruiken en ook om de agenda-sleutels en -groepen van het bedrijf toe te wijzen aan bedrijfscalenders. Voor details bij het associëren van de sleutels van de bedrijfskalender met gebruikers, zie [ Vestiging veelvoudige bedrijfscalenders ](configuring-business-calendars.md#setting-up-multiple-business-calendars).
+Er zijn twee methodes die u kunt gebruiken om een bedrijfskalender met een gebruiker te associëren. U kunt zakelijke kalenders toewijzen aan gebruikers op basis van een zakelijke kalendersleutel of op basis van de directorygroep waartoe de gebruiker behoort. U gebruikt het tabblad Toewijzing om de methode op te geven die AEM formulieren gebruiken en ook om de agenda-sleutels en -groepen van het bedrijf toe te wijzen aan bedrijfscalenders. Voor details bij het associëren van de sleutels van de bedrijfskalender met gebruikers, zie [&#x200B; Vestiging veelvoudige bedrijfscalenders &#x200B;](configuring-business-calendars.md#setting-up-multiple-business-calendars).
 
 ### Zakelijke kalenders koppelen aan gebruikers op basis van zakelijke kalendersleutels {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
@@ -114,7 +114,7 @@ Er zijn twee methodes die u kunt gebruiken om een bedrijfskalender met een gebru
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Zakelijke kalenders en klik vervolgens op het tabblad Toewijzing.
 1. InSystem gebruikt de lijst, uitgezochte Groepen die door de Server van de Folder worden bepaald.
-1. Selecteer op het tabblad Toewijzing de optie Groepen van directoryservice weergeven. Er wordt een lijst weergegeven met de groepen die zijn gedefinieerd in Gebruikersbeheer. (Zie [ montages van de Folder ](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
+1. Selecteer op het tabblad Toewijzing de optie Groepen van directoryservice weergeven. Er wordt een lijst weergegeven met de groepen die zijn gedefinieerd in Gebruikersbeheer. (Zie [&#x200B; montages van de Folder &#x200B;](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
 
    >[!NOTE]
    >

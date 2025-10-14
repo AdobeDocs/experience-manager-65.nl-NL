@@ -18,25 +18,25 @@ ht-degree: 0%
 
 # Inleiding tot Interactive Communication authoring UI{#introduction-to-interactive-communication-authoring-ui}
 
-Het gebruikersinterface voor creatie [ Interactieve Communicatie ](/help/forms/using/interactive-communications-overview.md) is intuïtief en verstrekt het volgende voor auteursdruk en Webkanaal van de Interactieve Mededeling:
+Het gebruikersinterface voor creatie [&#x200B; Interactieve Communicatie &#x200B;](/help/forms/using/interactive-communications-overview.md) is intuïtief en verstrekt het volgende voor auteursdruk en Webkanaal van de Interactieve Mededeling:
 
 * WYSIWYG-documenteditor voor slepen en neerzetten
 * Geïntegreerde opslagplaats voor middelen - de activa die aan worden geupload en op de server worden gecreeerd zijn beschikbaar in de browser van Activa van Interactive Communication auteursinterface
 
-Wanneer u [ creeert of een bestaande Interactieve Mededeling ](../../forms/using/create-interactive-communication.md) uitgeeft, gebruikt u de volgende elementen van het gebruikersinterface:
+Wanneer u [&#x200B; creeert of een bestaande Interactieve Mededeling &#x200B;](../../forms/using/create-interactive-communication.md) uitgeeft, gebruikt u de volgende elementen van het gebruikersinterface:
 
 * [Zijbalk](#sidebar)
 * [Pagina, werkbalk](#page-toolbar)
 * [Component, werkbalk](#component-toolbar)
 * Inhoudsgebied
 
-![ interactieve mededeling auteursgebruikersinterface ](assets/form-editor.png)
+![&#x200B; interactieve mededeling auteursgebruikersinterface &#x200B;](assets/form-editor.png)
 
 **A.** Sidebar **B.** de toolbar van de Pagina **C.** Inhoudsgebied
 
 ## Zijbalk {#sidebar}
 
-![ Sidebar ](assets/sidebar-comps-2.png)
+![&#x200B; Sidebar &#x200B;](assets/sidebar-comps-2.png)
 
 **A.** browser van het Kanaal **B.** browser van de Inhoud **C.** browser van Eigenschappen **D.** browser van Activa **E.** browser van Componenten 10&rbrace; F.**browser van Gegevensbronnen - het Model van Gegevens** G.**Browser van Gegevensbronnen - HoofdInhoud**
 
@@ -56,7 +56,7 @@ In de inhoudbrowser, kunt u objecten hiërarchie van het document voor het gesel
 * **browser van Eigenschappen**
 
   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien:
-Selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/field-level.png) > **de Container van het Document**, en selecteer dan ![ cmp ](assets/cmppr.png).
+Selecteer een component, dan uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **de Container van het Document**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 
 * **browser van Assets**
 Hiermee kunt u verschillende typen inhoud segmenteren, zoals lay-outfragmenten, afbeeldingen, documenten, pagina&#39;s, video&#39;s. Auteurs kunnen elementen naar de interactieve communicatie slepen.
@@ -85,18 +85,18 @@ Browser van Gegevensbronnen toont de beschikbare gegevensbronnen in het model va
 
 De belangrijkste punten wanneer het werken met interactieve communicatie componenten zijn als volgt:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Om de eigenschappen van een component te vormen, selecteer de component en selecteer ![ cmp ](assets/cmppr.png) om de componenteneigenschappen in browser van Eigenschappen te openen.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![ cmp ](assets/cmppr.png) selecteert, kunt u de naam van de component veranderen door de het gebiedswaarde van de Naam van het Element in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Om de eigenschappen van een component te vormen, selecteer de component en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) om de componenteneigenschappen in browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![&#x200B; cmp &#x200B;](assets/cmppr.png) selecteert, kunt u de naam van de component veranderen door de het gebiedswaarde van de Naam van het Element in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 * U kunt het bezit van de Titel van een Interactieve Component van de Communicatie inline in de redacteur wijzigen zonder browser van Eigenschappen te openen zolang de titel op Interactieve Mededeling zichtbaar is. Daartoe:
 
    1. Selecteer deze optie om een component te selecteren die een eigenschap Titel heeft en waarvan de eigenschap Titel verbergen is uitgeschakeld.
-   1. Selecteer ![ name_6_3_edit ](assets/aem_6_3_edit.png) om de titel editable te maken.
+   1. Selecteer ![&#x200B; name_6_3_edit &#x200B;](assets/aem_6_3_edit.png) om de titel editable te maken.
 
    1. Wijzig de titel en selecteer de Return-toets of selecteer een willekeurige locatie buiten de component om de wijzigingen op te slaan. Selecteer de sleutel van Esc om de veranderingen te verwerpen.
 
 ## Component, werkbalk {#component-toolbar}
 
-![ de toolbaretiketten van de Component ](do-not-localize/component_toolbar_labels_new.png)
+![&#x200B; de toolbaretiketten van de Component &#x200B;](do-not-localize/component_toolbar_labels_new.png)
 
 Wanneer u een component selecteert, ziet u een werkbalk waarmee u ermee kunt werken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
@@ -118,9 +118,9 @@ H. **Groep**: Laat u veelvoudige componenten selecteren als u, meer dan één co
 
 I. **Ouder**: Laat u de ouder van een component selecteren.
 
-J. **Uitdrukking SOM van de Mening:** laat u de [ uitdrukking SOM ](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component bekijken.
+J. **Uitdrukking SOM van de Mening:** laat u de [&#x200B; uitdrukking SOM &#x200B;](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component bekijken.
 
-K: **de voorwerpen van de Groep in Comité:** laat u de componenten in een paneel groeperen om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Voor details, zie [ voorwerpen van de Groep in Comité ](create-interactive-communication.md#groupobjectspanel).
+K: **de voorwerpen van de Groep in Comité:** laat u de componenten in een paneel groeperen om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Voor details, zie [&#x200B; voorwerpen van de Groep in Comité &#x200B;](create-interactive-communication.md#groupobjectspanel).
 
 L. **voegt het Comité van het Kind** toe (voor panelen slechts): Laat u een kindpaneel aan het paneel toevoegen.
 
@@ -132,9 +132,9 @@ Bovendien **vervangt** optie op de toolbar laat u de bestaande component met een
 
 De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de interactieve communicatie kunt weergeven en de eigenschappen van de communicatie kunt wijzigen. U kunt een voorvertoning van de interactieve communicatie weergeven wanneer u deze ontwerpt en wijzigingen daarop aanbrengen. In de paginabooltoolbar, ziet u:
 
-* Knevel zijComité ![ knevel-zij-paneel ](assets/toggle-side-panel.png): Laat u Zijbalk tonen of verbergen.
-* De informatie van de pagina ![ pageinformationad ](assets/pageinformationad.png): Laat u paginaeigenschappen bekijken.
-* Emulator ![ heerser ](assets/ruler.png): Laat u het blik van uw Interactieve Mededeling voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
+* Knevel zijComité ![&#x200B; knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png): Laat u Zijbalk tonen of verbergen.
+* De informatie van de pagina ![&#x200B; pageinformationad &#x200B;](assets/pageinformationad.png): Laat u paginaeigenschappen bekijken.
+* Emulator ![&#x200B; heerser &#x200B;](assets/ruler.png): Laat u het blik van uw Interactieve Mededeling voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
 * Bewerken: hiermee kunt u andere modi selecteren, zoals Bewerken, Stijl, Ontwikkelaar en Ontwerp.
 
    * Bewerken: hiermee kunt u de eigenschappen van de interactieve communicatie en de bijbehorende componenten bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.

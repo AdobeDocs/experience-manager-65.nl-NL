@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Overzicht van componenten{#components-overview}
 
-Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Manager (AEM) zoals die [ die voor pagina creatie ](/help/sites-authoring/default-components-foundation.md) worden gebruikt.
+Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Manager (AEM) zoals die [&#x200B; die voor pagina creatie &#x200B;](/help/sites-authoring/default-components-foundation.md) worden gebruikt.
 
 ## Wat zijn componenten? {#what-exactly-is-a-component}
 
@@ -31,7 +31,7 @@ Deze pagina verstrekt een overzicht van de componenten van Adobe Experience Mana
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten
-* Wordt ontwikkeld gebruikend [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) (geadviseerd) of JSP.
+* Wordt ontwikkeld gebruikend [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL) (geadviseerd) of JSP.
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -49,7 +49,7 @@ Elke AEM component:
 
 ## Buiten-de-box Componenten binnen AEM {#out-of-the-box-components-within-aem}
 
-AEM komt met een verscheidenheid van [ uit-van-de-doos componenten ](/help/sites-authoring/default-components.md) die uitvoerige functionaliteit met inbegrip van verstrekken:
+AEM komt met een verscheidenheid van [&#x200B; uit-van-de-doos componenten &#x200B;](/help/sites-authoring/default-components.md) die uitvoerige functionaliteit met inbegrip van verstrekken:
 
 * Alineasysteem ( `parsys`)
 * Pagina ( `responsivegrid` - alleen interface met aanraakbediening)
@@ -57,28 +57,28 @@ AEM komt met een verscheidenheid van [ uit-van-de-doos componenten ](/help/sites
 * Afbeelding, met bijbehorende tekst
 * Werkbalk
 
-De verstrekte componenten en hun gebruik binnen de [ steekproefWij.Retail websites ](/help/sites-developing/we-retail.md) tonen hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De verstrekte componenten en hun gebruik binnen de [&#x200B; steekproefWij.Retail websites &#x200B;](/help/sites-developing/we-retail.md) tonen hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Basiscomponenten en basiscomponenten {#core-components-and-foundation-components}
 
 Er zijn twee reeksen Adobe-Geleverde AEM beschikbare componenten:
 
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
 
-{de Componenten van 0} Kern **werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan.** De [ Wij.Retail verwijzingsplaats ](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige best-praktijken van componentenontwikkeling vertegenwoordigen.
+{de Componenten van 0} Kern **werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan.** De [&#x200B; Wij.Retail verwijzingsplaats &#x200B;](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige best-praktijken van componentenontwikkeling vertegenwoordigen.
 
 **Componenten van de Stichting** zijn beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
 
 >[!NOTE]
 >
->[ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
+>[&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
 >
->[ AEM Moderniseringshulpmiddelen ](modernization-tools.md) kan de migratie aan de Componenten van de Kern helpen.
+>[&#x200B; AEM Moderniseringshulpmiddelen &#x200B;](modernization-tools.md) kan de migratie aan de Componenten van de Kern helpen.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de [ Console van Componenten ](/help/sites-authoring/default-components-console.md).
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de [&#x200B; Console van Componenten &#x200B;](/help/sites-authoring/default-components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
@@ -105,7 +105,7 @@ De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ont
 * [Componenten voor inhoudsfragmenten](/help/sites-developing/components-content-fragments.md)
 * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)
 * [Internationaliserende componenten](/help/sites-developing/i18n.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
 * [Voorwaarden verbergen gebruiken](/help/sites-developing/hide-conditions.md)
 * Klassieke interface
 

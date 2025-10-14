@@ -32,15 +32,15 @@ Hier volgen de stappen voor het configureren van de **[!UICONTROL AEM DS Setting
 1. Open de Manager van de Configuratie op publiceer instantie gebruikend URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![ AEM de Configuratie van de Console van het Web ](assets/web_configuration_console_new.png)
+   ![&#x200B; AEM de Configuratie van de Console van het Web &#x200B;](assets/web_configuration_console_new.png)
 
 1. Zoek in het **[!UICONTROL Adobe Experience Manager Web Console Configuration]** -venster de optie **[!UICONTROL AEM DS Settings]** en klik erop.
 
-   ![ DS Montages ](assets/ds_settings_new.png)
+   ![&#x200B; DS Montages &#x200B;](assets/ds_settings_new.png)
 
 1. In het **[!UICONTROL AEM DS Settings Service]** -venster worden de algemene configuratie-instellingen voor AEM DS-componenten weergegeven.
 
-   ![ DS de Dienst van Montages ](assets/ds_settings_service_new.png)
+   ![&#x200B; DS de Dienst van Montages &#x200B;](assets/ds_settings_service_new.png)
 
 1. Voeg de volgende informatie in de respectieve gebieden toe:
 

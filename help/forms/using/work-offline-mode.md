@@ -21,13 +21,13 @@ In de offlinemodus van de AEM Forms-app kunt u naadloos werken, zelfs als de app
 
 U begint met het werken aan de AEM Forms-app door uw app te synchroniseren met de AEM Forms-server. Alle aan u toegewezen formulieren worden gedownload in uw app. Voor AEM Forms on JEE worden taken opgehaald op het tabblad Taken en worden hiermee samenhangende formulieren en andere formulieren gestart op het tabblad Forms. Voor AEM Forms op OSGi wordt alleen Forms geladen op het tabblad Forms.
 
-Voor details op hoe te om app te synchroniseren, zie [ Synchronizing app ](/help/forms/using/sync-app.md).
+Voor details op hoe te om app te synchroniseren, zie [&#x200B; Synchronizing app &#x200B;](/help/forms/using/sync-app.md).
 
 ## Forms offline beschikbaar maken {#making-forms-available-offline}
 
 Wanneer u uw toepassing synchroniseert met de AEM Forms-server, worden de formulieren naar uw mobiele apparaat gedownload. De bijlagen die aan het formulier zijn gekoppeld, worden echter standaard niet gedownload. Dit houdt in dat als u online bent, u de bijlagen kunt bekijken. Als u er echter voor wilt zorgen dat u de bijlage kunt weergeven in de offline modus, wijzigt u de standaardinstellingen in uw app.
 
-Als u wilt dat de bijbehorende bijlagen bij elk formulier worden gedownload, stelt u Bijlagen zoeken in op AAN. Voor details, zie [ Bijwerkend algemene montages ](/help/forms/using/update-general-settings.md).
+Als u wilt dat de bijbehorende bijlagen bij elk formulier worden gedownload, stelt u Bijlagen zoeken in op AAN. Voor details, zie [&#x200B; Bijwerkend algemene montages &#x200B;](/help/forms/using/update-general-settings.md).
 
 Aangezien het downloaden van gegevens op het mobiele apparaat de prestaties van het apparaat kan beïnvloeden, wordt de instelling voor Vetbijlagen standaard ingesteld op UIT. De bijlagen worden opgehaald naar het apparaat voor elke taak die van de server wordt gedownload nadat de instelling is bijgewerkt naar ON. Op de off-line wijze, kan een gebruiker aan alle taken dan werken die aan apparaat na het plaatsen van de **gehechtheid van de Ophalen** opties aan. worden gedownload
 

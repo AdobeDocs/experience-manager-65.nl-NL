@@ -31,7 +31,7 @@ Zie het volgende:
 * [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Je Adobe Campaign als doelgroep instellen](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-U moet eerder [ geïntegreerde AEM met Adobe Campaign ](/help/sites-administering/campaign.md) hebben.
+U moet eerder [&#x200B; geïntegreerde AEM met Adobe Campaign &#x200B;](/help/sites-administering/campaign.md) hebben.
 
 Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 

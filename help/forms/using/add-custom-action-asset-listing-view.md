@@ -58,7 +58,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
 
-      ![ creeer knoop ](assets/1_itemscreatenode.png)
+      ![&#x200B; creeer knoop &#x200B;](assets/1_itemscreatenode.png)
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
@@ -68,7 +68,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       **de Types van Knoop van de Gelijke:** Geselecteerd
 
-      ![ knoop van de Bedekking ](assets/2_createnodedownloadflatpdf.png)
+      ![&#x200B; knoop van de Bedekking &#x200B;](assets/2_createnodedownloadflatpdf.png)
 
    1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
@@ -277,9 +277,9 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
    1. Dubbelklik het {**dossier 0} POST.jsp om het in CRX te openen.**
    1. Voeg de volgende code aan POST.jsp- dossier toe en klik **sparen allen**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Voor meer informatie over AEM Forms APIs, zie [ AEM Forms API ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Voor meer informatie over AEM Forms APIs, zie [&#x200B; AEM Forms API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=nl-NL).
 
-      Voor meer informatie over AEM bibliotheken, zie AEM [ Componenten ](/help/sites-developing/components.md).
+      Voor meer informatie over AEM bibliotheken, zie AEM [&#x200B; Componenten &#x200B;](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -356,9 +356,9 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw briev
 1. Klik **Uitgezocht** en klik dan een brief om het te selecteren.
 1. Selecteer **Meer** > **&lt;Download Plat PDF>** (De douanefunctionaliteit die gebruikend de instructies dit artikel wordt gecreeerd). Het dialoogvenster Letter downloaden als PDF wordt weergegeven.
 
-   De naam van het menupunt, functionaliteit, en alt-text is volgens de aanpassing die in [ wordt gecreeerd Scenario: voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden.](#addcommandtoletters)
+   De naam van het menupunt, functionaliteit, en alt-text is volgens de aanpassing die in [&#x200B; wordt gecreeerd Scenario: voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden.](#addcommandtoletters)
 
-   ![ functionaliteit van de Douane: De Platte PDF van de download ](assets/5_downloadflatpdf.png)
+   ![&#x200B; functionaliteit van de Douane: De Platte PDF van de download &#x200B;](assets/5_downloadflatpdf.png)
 
 1. Selecteer in het dialoogvenster Letter downloaden als PDF de XML waaruit u de gegevens in de PDF wilt vullen.
 
@@ -366,6 +366,6 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw briev
    >
    >Alvorens de brief als vlakke PDF te downloaden, kunt u het dossier van XML met de gegevens in de brief tot stand brengen gebruikend **creeer de optie van het Rapport**.
 
-   ![ brief van de Download als PDF ](assets/6_downloadflatpdf.png)
+   ![&#x200B; brief van de Download als PDF &#x200B;](assets/6_downloadflatpdf.png)
 
    De brief wordt gedownload aan uw computer als vlakke PDF.

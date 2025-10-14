@@ -22,7 +22,7 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Met Forms kunt u een aangepast XCI-bestand opgeven dat kan worden gebruikt voor rendering. (Zie [ Vormende plaatsen voor Forms ](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Door gebrek, treedt Forms enkele opties met voeten die in het XCI dossier, met inbegrip van het volgende worden gespecificeerd:
+Met Forms kunt u een aangepast XCI-bestand opgeven dat kan worden gebruikt voor rendering. (Zie [&#x200B; Vormende plaatsen voor Forms &#x200B;](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Door gebrek, treedt Forms enkele opties met voeten die in het XCI dossier, met inbegrip van het volgende worden gespecificeerd:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

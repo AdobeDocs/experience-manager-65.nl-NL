@@ -38,17 +38,17 @@ En sleep het op zijn plaats op een pagina, zoals een positie met betrekking tot 
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Calendar` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Calendar` component verschijnt.
 
-![ kalender-component ](assets/calendar-component.png)
+![&#x200B; kalender-component &#x200B;](assets/calendar-component.png)
 
 ### Kalender configureren {#configuring-calendar}
 
 Selecteer de geplaatste component `Calendar` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
-![ vorm-kalender ](assets/configure-calendar1.png)
+![&#x200B; vorm-kalender &#x200B;](assets/configure-calendar1.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -120,9 +120,9 @@ Onder het **lusje van Montages**, specificeer of om markeringen toe te staan om 
 
 * **sta Aanbevolen Inhoud** toe
 
-  Als gecontroleerd, is het idee identificeerbaar als [ gekenmerkte inhoud ](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, is het idee identificeerbaar als [&#x200B; gekenmerkte inhoud &#x200B;](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
-Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Onder het **lusje van de Moderatie van de Gebruiker**, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -168,7 +168,7 @@ Onder het **gebied van de Markering** lusje, zijn de markeringen die kunnen word
 
 >[!NOTE]
 >
->Bezoek [ Beherende Markeringen ](/help/sites-administering/tags.md) waar u kunt leren hoe te om een markering toe te voegen namespace (taxonomie).
+>Bezoek [&#x200B; Beherende Markeringen &#x200B;](/help/sites-administering/tags.md) waar u kunt leren hoe te om een markering toe te voegen namespace (taxonomie).
 
 #### Tabblad Vertaling {#translation-tab}
 
@@ -188,13 +188,13 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 ### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [ matigingstaken ](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
+Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [&#x200B; matigingstaken &#x200B;](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
-![ moderator-mening ](assets/moderators-view.png)
+![&#x200B; moderator-mening &#x200B;](assets/moderators-view.png)
 
 #### Leden {#members}
 
-Wanneer de ondertekende binnen gebruiker een communautair lid of [ bevoorrecht lid ](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij `New Event` selecteren om een nieuwe kalendergebeurtenis tot stand te brengen en te posten.
+Wanneer de ondertekende binnen gebruiker een communautair lid of [&#x200B; bevoorrecht lid &#x200B;](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij `New Event` selecteren om een nieuwe kalendergebeurtenis tot stand te brengen en te posten.
 
 Zij kunnen met name:
 
@@ -204,22 +204,22 @@ Zij kunnen met name:
 * Verwijder hun eigen agendagebeurtenis of commentaar
 * Andere kalendergebeurtenissen of opmerkingen markeren
 
-![ creeer-gebeurtenis ](assets/configure-calendar2.png)
+![&#x200B; creeer-gebeurtenis &#x200B;](assets/configure-calendar2.png)
 
-![ gebeurtenis-post ](assets/configure-calendar3.png)
+![&#x200B; gebeurtenis-post &#x200B;](assets/configure-calendar3.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenissen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen gebeurtenis of opmerking toevoegen en de gebeurtenissen of opmerkingen van anderen niet markeren.
 
-![ anonieme-gebruiker-mening ](assets/anonymous-user-view1.png)
+![&#x200B; anonieme-gebruiker-mening &#x200B;](assets/anonymous-user-view1.png)
 
 ## Aanvullende informatie {#additional-information}
 
 Meer informatie kan op de [&#128279;](/help/communities/calendar-basics-for-developers.md) pagina van de Hoofdzaak van de Kalender  worden gevonden voor ontwikkelaars.
 
-Voor moderatie van kalendergebeurtenissen en commentaren, zie [ het Mativeren van Gebruiker Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van kalendergebeurtenissen en commentaren, zie [&#x200B; het Mativeren van Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van kalendergebeurtenissen en commentaren, zie [ Tags Gebruiker Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van kalendergebeurtenissen en commentaren, zie [&#x200B; Tags Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).
 
-Voor vertaling van kalendergebeurtenissen en commentaren, zie [ Vertaal Door Gebruiker Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
+Voor vertaling van kalendergebeurtenissen en commentaren, zie [&#x200B; Vertaal Door Gebruiker Gegenereerde Inhoud &#x200B;](/help/communities/translate-ugc.md).

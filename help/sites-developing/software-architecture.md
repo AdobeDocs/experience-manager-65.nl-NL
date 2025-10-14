@@ -62,4 +62,4 @@ Scripts voor gegevensmigratie, maar productiecode, worden slechts eenmaal uitgev
 
 ### Gepubliceerde conventies in POM-bestanden volgen {#follow-published-maven-conventions-in-pom-files}
 
-Apache heeft gepubliceerde stijlovereenkomsten in [ https://maven.apache.org/developers/conventions/code.html ](https://maven.apache.org/developers/conventions/code.html). Het is het beste om deze conventies te volgen, omdat het voor nieuwe middelen gemakkelijker wordt om snel aan de slag te gaan.
+Apache heeft gepubliceerde stijlovereenkomsten in [&#x200B; https://maven.apache.org/developers/conventions/code.html &#x200B;](https://maven.apache.org/developers/conventions/code.html). Het is het beste om deze conventies te volgen, omdat het voor nieuwe middelen gemakkelijker wordt om snel aan de slag te gaan.

@@ -24,7 +24,7 @@ De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
 David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. David is nu een man en vicevoorzitter van Enterprise Technology in Adobe en leidt ook de ontwikkeling van JSR-170, de Java™ Content Repository (JCR) application programming interface (API), de technologiestandaard voor contentbeheer.
 
-De verdere updates kunnen ook op [ https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel ](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel) worden gezien.
+De verdere updates kunnen ook op [&#x200B; https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel &#x200B;](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel) worden gezien.
 
 ## Inleiding van David {#introduction-from-david}
 

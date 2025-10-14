@@ -30,7 +30,7 @@ Wanneer u het jsp manuscript van een component van Granite UI ontwikkelt, wordt 
 <%@include file="/libs/granite/ui/global.jsp"%>
 ```
 
-Globaal verklaart ook de [ Verschuivende bibliotheek ](/help/sites-developing/taglib.md#sling-tag-library).
+Globaal verklaart ook de [&#x200B; Verschuivende bibliotheek &#x200B;](/help/sites-developing/taglib.md#sling-tag-library).
 
 ```xml
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
@@ -633,7 +633,7 @@ l **ogName resourceResolverName**
 
 ## JSTL-tagbibliotheek {#jstl-tag-library}
 
-De [ Bibliotheek van de Markering van de Pagina&#39;s JavaServer Standaard ](https://www.oracle.com/java/technologies/java-server-tag-library.html) bevat vele nuttige en standaardmarkeringen. De kern-, opmaak- en functietags worden gedefinieerd door de `/libs/foundation/global.jsp` , zoals in het volgende fragment wordt getoond.
+De [&#x200B; Bibliotheek van de Markering van de Pagina&#39;s JavaServer Standaard &#x200B;](https://www.oracle.com/java/technologies/java-server-tag-library.html) bevat vele nuttige en standaardmarkeringen. De kern-, opmaak- en functietags worden gedefinieerd door de `/libs/foundation/global.jsp` , zoals in het volgende fragment wordt getoond.
 
 ### Extraheren van /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -643,4 +643,4 @@ De [ Bibliotheek van de Markering van de Pagina&#39;s JavaServer Standaard ](htt
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-Nadat u het `/libs/foundation/global.jsp` -bestand hebt geïmporteerd zoals eerder is beschreven, kunt u de voorvoegsels `c` , `fmt` en `fn` gebruiken om toegang te krijgen tot deze tags. De officiële documentatie van JSTL is beschikbaar bij [ het EE 5 Leerprogramma Java™ - de Bibliotheek van de Markering van de Pagina&#39;s JavaServer Standaard ](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+Nadat u het `/libs/foundation/global.jsp` -bestand hebt geïmporteerd zoals eerder is beschreven, kunt u de voorvoegsels `c` , `fmt` en `fn` gebruiken om toegang te krijgen tot deze tags. De officiële documentatie van JSTL is beschikbaar bij [&#x200B; het EE 5 Leerprogramma Java™ - de Bibliotheek van de Markering van de Pagina&#39;s JavaServer Standaard &#x200B;](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).

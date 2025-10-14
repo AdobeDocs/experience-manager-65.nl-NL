@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Tutorials {#tutorials}
 
-Dit zijn voorbeelden helpen in het leren en het werken met Adobe Experience Manager (AEM) 6.1 Communautair [ sociaal componentenkader (SCF) ](scf.md).
+Dit zijn voorbeelden helpen in het leren en het werken met Adobe Experience Manager (AEM) 6.1 Communautair [&#x200B; sociaal componentenkader (SCF) &#x200B;](scf.md).
 
 ## Aanpassing op de client {#client-side-customization}
 
@@ -34,19 +34,19 @@ Zie ook:
 
 ## Aanpassing op de server {#server-side-customization}
 
-Zie ook [ SCF server-zijaanpassing ](server-customize.md).
+Zie ook [&#x200B; SCF server-zijaanpassing &#x200B;](server-customize.md).
 
-De code van de steekproef is beschikbaar in [ Adobe Experience Cloud GitHub ](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
+De code van de steekproef is beschikbaar in [&#x200B; Adobe Experience Cloud GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
 
-* [ pas Steekproef van de Component SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize) aan
+* [&#x200B; pas Steekproef van de Component SCF &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize) aan
 
-* [ Steekproef van de Component van Bedekking SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [&#x200B; Steekproef van de Component van Bedekking SCF &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [ breid de Steekproef van de Component SCF ](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension) uit
+* [&#x200B; breid de Steekproef van de Component SCF &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension) uit
 
 ## Instructies {#how-to-instructions}
 
-* [ AEM Communities Todo MVC ](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [&#x200B; AEM Communities Todo MVC &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
   ToDo MVC demonstreert hoe u een SCF+SRP-component volledig kunt ontwikkelen.
 
@@ -60,11 +60,11 @@ De code van de steekproef is beschikbaar in [ Adobe Experience Cloud GitHub ](ht
 
 ## Demo-gebruikers {#demo-users}
 
-Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend). En, zolang de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de [ gids van Communautaire Componenten ](components-guide.md).
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend). En, zolang de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de [&#x200B; gids van Communautaire Componenten &#x200B;](components-guide.md).
 
-Navigeer voor een volledig overzicht van de demogebruikers met Rail naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]** . Of gebruik de Klassieke UI [ veiligheidsconsole ](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Navigeer voor een volledig overzicht van de demogebruikers met Rail naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]** . Of gebruik de Klassieke UI [&#x200B; veiligheidsconsole &#x200B;](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Als a [ communautaire plaats ](getting-started.md) is gecreeerd, is het mogelijk demogebruikers aan zijn [ communautaire gebruikersgroepen ](users.md) toe te wijzen.
+Als a [&#x200B; communautaire plaats &#x200B;](getting-started.md) is gecreeerd, is het mogelijk demogebruikers aan zijn [&#x200B; communautaire gebruikersgroepen &#x200B;](users.md) toe te wijzen.
 
 ***gebruiker identiteitskaart* / *wachtwoord***:
 

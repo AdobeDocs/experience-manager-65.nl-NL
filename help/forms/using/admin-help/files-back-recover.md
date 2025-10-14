@@ -36,7 +36,7 @@ De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lang
 
 Invoerdocumenten voor asynchrone aanroep van taken worden ook opgeslagen in de GDS en moeten beschikbaar zijn voor het verwerken van aanvragen. Daarom is het belangrijk dat u de betrouwbaarheid van het bestandssysteem dat de GDS host en een redundante array van onafhankelijke schijven (RAID) of andere technologie gebruikt, als geschikt beschouwt voor uw vereisten op het gebied van kwaliteit en serviceniveau.
 
-De locatie van de GDS wordt bepaald tijdens het installatieproces van AEM formulieren of later met behulp van de beheerconsole. Naast het houden van een high-availability plaats voor GDS, kunt u gegevensbestandopslag voor documenten ook toelaten. Zie [ Reservekopties wanneer het gegevensbestand voor documentopslag ](files-back-recover.md#backup-options-when-database-is-used-for-document-storage) wordt gebruikt.
+De locatie van de GDS wordt bepaald tijdens het installatieproces van AEM formulieren of later met behulp van de beheerconsole. Naast het houden van een high-availability plaats voor GDS, kunt u gegevensbestandopslag voor documenten ook toelaten. Zie [&#x200B; Reservekopties wanneer het gegevensbestand voor documentopslag &#x200B;](files-back-recover.md#backup-options-when-database-is-used-for-document-storage) wordt gebruikt.
 
 ### GDS-locatie {#gds-location}
 
@@ -53,7 +53,7 @@ Als u de GDS-locatie hebt gewijzigd in een andere locatie dan de standaardlocati
 
 In een gegroepeerd milieu, wijst GDS typisch aan een folder die op het netwerk wordt gedeeld en lees/schrijf toegankelijk voor elke clusterknoop is.
 
-De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de oorspronkelijke locatie niet meer beschikbaar is. (Zie [ Veranderend de plaats GDS tijdens terugwinning ](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de oorspronkelijke locatie niet meer beschikbaar is. (Zie [&#x200B; Veranderend de plaats GDS tijdens terugwinning &#x200B;](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Back-upopties wanneer database wordt gebruikt voor documentopslag {#backup-options-when-database-is-used-for-document-storage}
 
@@ -114,13 +114,13 @@ DB2 heeft ingebouwde mogelijkheden aan file een gegevensbestand aan de Manager v
 
 ### Oracle {#oracle}
 
-Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [ Steun van het Oracle: Een Inleiding ](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
+Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [&#x200B; Steun van het Oracle: Een Inleiding &#x200B;](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
 
-[ de Steun en Terugwinning van het Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken om de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en rapportering meer in detail te gebruiken, en het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
+[&#x200B; de Steun en Terugwinning van het Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken om de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en rapportering meer in detail te gebruiken, en het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
 {de Gids van de Gebruiker van het Gegevensbestand van 0} Oracle en van de Terugwinning:[&#128279;](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen.  Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
-[ de Steun en Verwijzing van het Gegevensbestand van het Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
+[&#x200B; de Steun en Verwijzing van het Gegevensbestand van het Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
 
 ### SQL Server {#sql-server}
 
@@ -131,11 +131,11 @@ SQL de Server verstrekt ook twee steun en terugwinningshulpmiddelen:
 * SQL Server Management Studio (GUI)
 * T-SQL (opdrachtregel)
 
-Voor meer informatie, zie [ Steun en herstel ](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Voor meer informatie, zie [&#x200B; Steun en herstel &#x200B;](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
-Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [ Binair registreren MySQL ](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een heet reservehulpmiddel voor MySQL is ook beschikbaar bij software InnoBase. (Zie [ Innobase hete Steun ](https://www.innodb.com/hot-backup/features.md).)
+Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [&#x200B; Binair registreren MySQL &#x200B;](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een heet reservehulpmiddel voor MySQL is ook beschikbaar bij software InnoBase. (Zie [&#x200B; Innobase hete Steun &#x200B;](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand t
 
 U kunt het mysqldump-hulpprogramma gebruiken om de volledige back-up van de database te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd duurt langer. Als u een incrementele back-up wilt maken, moet u de server starten met de optie - `log-bin` , zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met het `FLUSH LOGS SQL` bevel dwingen. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de opdracht `flush-logs` , waarmee het volgende logbestand wordt gemaakt.
 
-Zie [ Samenvatting van de Strategie van de Steun ](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+Zie [&#x200B; Samenvatting van de Strategie van de Steun &#x200B;](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```text
 binlog_format=mixed
@@ -180,7 +180,7 @@ Wanneer u Content Services (Afgekeurd) installeert in een geclusterde omgeving, 
 
 **de folder van de Root van de Index:** een folder die op elke knoop in de cluster wordt gecreeerd, altijd hebbend de zelfde weg en foldernaam
 
-De standaardplaats voor de folder van de Root van de Opslag van de Inhoud is `[GDS root]/lccs_data`, waar `[GDS root]` de plaats is die in [ wordt beschreven GDS plaats ](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
+De standaardplaats voor de folder van de Root van de Opslag van de Inhoud is `[GDS root]/lccs_data`, waar `[GDS root]` de plaats is die in [&#x200B; wordt beschreven GDS plaats &#x200B;](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
 
 /audit.contentstore
 

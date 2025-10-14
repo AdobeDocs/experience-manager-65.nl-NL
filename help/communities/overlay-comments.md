@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Overlay Communities-componenten {#overlay-communities-components}
 
-De bedoeling van [ bedekkend ](/help/communities/client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
+De bedoeling van [&#x200B; bedekkend &#x200B;](/help/communities/client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
 ## Voorbeeld {#example}
 
@@ -35,7 +35,7 @@ Als u opmerkingen wilt bedekken, moet u:
 
 **de berichten van de Bedekking e-mail**
 
-Veronderstel u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [ bedekkend ](/help/communities/client-customize.md#overlays) de malplaatjes bij `/libs/settings/community/templates/email/html`.
+Veronderstel u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [&#x200B; bedekkend &#x200B;](/help/communities/client-customize.md#overlays) de malplaatjes bij `/libs/settings/community/templates/email/html`.
 
 Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). In dergelijke gevallen, voeg een **toe als** voorwaarde voor werkwoord **&#x200B;**&#x200B;in de malplaatjes van de componenten vermeldt waarvoor u **@mtations** steun toeliet.
 

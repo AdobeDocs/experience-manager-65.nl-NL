@@ -87,7 +87,7 @@ Het foutbericht wordt weergegeven wanneer u een AEM Forms-app maakt in Android S
 
 **Resolutie:** klik **herstellen de omslag van de Gradle en hervoeren project** om de kwestie op te lossen.
 
-![ gradle_unsupported_version ](assets/gradle_unsupported_version.png)
+![&#x200B; gradle_unsupported_version &#x200B;](assets/gradle_unsupported_version.png)
 
 ## Compatibiliteitsproblemen met de insteekmodule Gradle en Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
@@ -95,7 +95,7 @@ Het foutbericht wordt weergegeven wanneer u een AEM Forms-app maakt in Android S
 
 Het foutenbericht wordt getoond wanneer u **bouwt APK** optie van **bouwt** menu op het gebruikersinterface van Android Studio.
 
-![ gradle_plugin_compatibility ](assets/gradle_plugin_compatibility.png)
+![&#x200B; gradle_plugin_compatibility &#x200B;](assets/gradle_plugin_compatibility.png)
 
 **Resolutie:** Open **Gradle Scripts** > **gradle-wrapper.properties** dossier en geef het **distributionUrl** bezit uit.
 
@@ -103,4 +103,4 @@ Bijvoorbeeld, adviseert de console van Android Studio degraderend de Versie van 
 
 Selecteer **bouwen** > **APK** opnieuw bouwen om de fout op te lossen en het .apk dossier te produceren.
 
-![ gradle_wrapper_properties ](assets/gradle_wrapper_properties.png)
+![&#x200B; gradle_wrapper_properties &#x200B;](assets/gradle_wrapper_properties.png)

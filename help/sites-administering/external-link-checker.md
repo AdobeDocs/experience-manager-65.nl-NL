@@ -22,43 +22,43 @@ De koppelingencontrole wordt automatisch uitgevoerd om inhoudsauteurs bij te sta
 * Een lijst met alle externe koppelingen in de inhoud weergeven
 * Koppelingtransformaties uitvoeren
 
-De controleur van de Verbinding heeft verscheidene [ configuratieopties ](#configuring) zoals het bepalen van interne bevestiging, toestaand bepaalde verbindingen of verbindingspatters om van bevestiging worden weggelaten, en het herschrijven van verbinding herschrijvend regels.
+De controleur van de Verbinding heeft verscheidene [&#x200B; configuratieopties &#x200B;](#configuring) zoals het bepalen van interne bevestiging, toestaand bepaalde verbindingen of verbindingspatters om van bevestiging worden weggelaten, en het herschrijven van verbinding herschrijvend regels.
 
-De controleur van de Verbinding bevestigt zowel [ interne verbindingen ](#internal) als [ externe verbindingen.](#external)
+De controleur van de Verbinding bevestigt zowel [&#x200B; interne verbindingen &#x200B;](#internal) als [&#x200B; externe verbindingen.](#external)
 
 >[!NOTE]
 >
->Omdat de koppelingencontrole de koppelingen van elke inhoudspagina controleert, kan de koppelingencontrole de prestaties op grote opslagplaatsen beïnvloeden. In dergelijke gevallen, kunt u moeten [ vormen hoe vaak de Controle van de Verbinding ](#configuring) loopt of [ het onbruikbaar maakt.](#disabling)
+>Omdat de koppelingencontrole de koppelingen van elke inhoudspagina controleert, kan de koppelingencontrole de prestaties op grote opslagplaatsen beïnvloeden. In dergelijke gevallen, kunt u moeten [&#x200B; vormen hoe vaak de Controle van de Verbinding &#x200B;](#configuring) loopt of [&#x200B; het onbruikbaar maakt.](#disabling)
 
 ## Interne koppelingencontrole {#internal}
 
 Interne koppelingen zijn koppelingen naar andere inhoud in uw AEM. Interne koppelingen kunnen worden toegevoegd met de padkiezer voor de RTE of met een aangepaste component. Bijvoorbeeld:
 
 * Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing.html` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
+* Bevat een verbinding aan `/content/wknd/us/en/adventures/extreme-ironing.html` in de Component van de a [&#x200B; Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
 
 Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een interne koppeling naar een pagina toevoegt. Als de koppeling ongeldig wordt:
 
 * Deze wordt verwijderd uit de uitgever. De tekst van de koppeling blijft behouden, maar de koppeling zelf wordt verwijderd.
 * Het wordt getoond als gebroken verbinding in de auteursinterface.
 
-![ Gebroken interne verbinding wanneer het ontwerpen van een pagina ](assets/link-checker-invalid-link-internal.png)
+![&#x200B; Gebroken interne verbinding wanneer het ontwerpen van een pagina &#x200B;](assets/link-checker-invalid-link-internal.png)
 
 ## Controleren van externe koppeling {#external}
 
 Externe koppelingen zijn koppelingen naar inhoud buiten de AEM opslagplaats. De externe verbindingen kunnen worden toegevoegd gebruikend RTE of gebruikend een douanecomponent. Bijvoorbeeld:
 
 * Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
-* Bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de a [ Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
+* Bevat een verbinding aan `https://bunwarmerthermalunderwear.com` in de Component van de a [&#x200B; Tekst.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=nl-NL)
 
 Externe koppelingen worden gevalideerd voor syntaxis en door de beschikbaarheid ervan te controleren. Deze controle wordt asynchroon gedaan bij een configureerbare intern. Als de koppelingencontrole een externe koppeling ongeldig vindt:
 
 * Deze wordt verwijderd uit de uitgever. De tekst van de koppeling blijft behouden, maar de koppeling zelf wordt verwijderd.
 * Het wordt getoond als gebroken verbinding in de auteursinterface.
 
-![ Gebroken interne verbinding wanneer het ontwerpen van een pagina ](assets/link-checker-invalid-link-external.png)
+![&#x200B; Gebroken interne verbinding wanneer het ontwerpen van een pagina &#x200B;](assets/link-checker-invalid-link-external.png)
 
-Bovendien verstrekt de [ Externe interface van de Controle van de Verbinding ](#external-link-checker) een overzicht van alle externe verbindingen op uw inhoudspagina&#39;s.
+Bovendien verstrekt de [&#x200B; Externe interface van de Controle van de Verbinding &#x200B;](#external-link-checker) een overzicht van alle externe verbindingen op uw inhoudspagina&#39;s.
 
 ### De externe koppelingencontrole gebruiken {#external-link-checker}
 
@@ -67,7 +67,7 @@ De External Link Checker gebruiken:
 1. Gebruikend **Navigatie**, selecteer **Hulpmiddelen**, toen **Plaatsen**.
 1. Selecteer **Externe Controle van de Verbinding** en een lijst van alle externe verbindingen wordt getoond.
 
-![ het Externe venster van de Controle van de Verbinding ](assets/external-link-checker.png)
+![&#x200B; het Externe venster van de Controle van de Verbinding &#x200B;](assets/external-link-checker.png)
 
 De volgende informatie wordt weergegeven:
 
@@ -77,9 +77,9 @@ De volgende informatie wordt weergegeven:
    * **Ongeldig** - de externe verbinding is niet bereikbaar door de Controle van de Verbinding
 * **URL** - de externe verbinding
 * **Referrer** - de inhoudspagina die de externe verbinding bevat
-   * Dit is slechts bevolkt [ als gevormd.](#configuring)
+   * Dit is slechts bevolkt [&#x200B; als gevormd.](#configuring)
 * **Laatste Gecontroleerde** - de laatste tijd de Controle van de Verbinding bevestigde de externe verbinding
-   * Hoe vaak worden de verbindingen gecontroleerd [ configureerbaar.](#configuring)
+   * Hoe vaak worden de verbindingen gecontroleerd [&#x200B; configureerbaar.](#configuring)
 * **Laatste Status** - de laatste HTML statuscode teruggekeerde toen de Verbinding het laatst controleerde verbinding
 * **Laatste Beschikbare** - Tijd sinds de verbinding laatste beschikbaar aan de Controle van de Verbinding was
 * **Laatste Toegelaten** - tijd sinds de pagina met de externe verbinding werd laatst betreden in de auteursinterface
@@ -91,12 +91,12 @@ U kunt de inhoud van het venster bewerken met de twee knoppen boven aan de lijst
 
 ### De werking van de externe koppelingencontrole {#how-it-works}
 
-Hoewel gemakkelijk te gebruiken, vertrouwt de Externe Controle van de Verbinding op verscheidene diensten en het begrip van hoe zij werken helpt u begrijpen hoe te [ de Controle van de Verbinding ](#configuring) vormen om aan uw behoeften te voldoen.
+Hoewel gemakkelijk te gebruiken, vertrouwt de Externe Controle van de Verbinding op verscheidene diensten en het begrip van hoe zij werken helpt u begrijpen hoe te [&#x200B; de Controle van de Verbinding &#x200B;](#configuring) vormen om aan uw behoeften te voldoen.
 
 1. Wanneer een inhoudsontwerper een koppeling naar een pagina opslaat, wordt een gebeurtenishandler geactiveerd.
 1. De gebeurtenishandler doorloopt alle inhoud onder `/content` en controleert op nieuwe of bijgewerkte koppelingen en voegt deze toe aan een cache voor de koppelingencontrole.
 1. De **Dienst van de Controle van de Verbinding van de Dag CQ** voert dan op een regelmatig programma uit om de ingangen in het geheime voorgeheugen voor geldige syntaxis te controleren.
-1. De syntaxis-bevestigde verbindingen verschijnen dan in het [ Externe venster van de Controle van de Verbinding ](#external-link-checker). Nochtans zullen zij in a **Hangende** staat zijn.
+1. De syntaxis-bevestigde verbindingen verschijnen dan in het [&#x200B; Externe venster van de Controle van de Verbinding &#x200B;](#external-link-checker). Nochtans zullen zij in a **Hangende** staat zijn.
 1. De **Taak van de Controle van de Verbinding van CQ van de Dag CQ** voert dan op een regelmatige basis uit om de verbindingen te bevestigen door een vraag van de GET te maken.
 1. De **Taak van de Controleur van de Verbinding van de Dag CQ** werkt dan de ingangen in het Externe venster van de Controleur van de Verbinding met de resultaten van de vraag van de GET bij.
 
@@ -123,4 +123,4 @@ U kunt de koppelingencontrole volledig uitschakelen. Daartoe:
 
 >[!NOTE]
 >
->Als u verbinding het controleren na aanvang onbruikbaar maakt om uw inhoud tot stand te brengen, kunt u nog ingangen in het [ Externe venster van de Controle van de Verbinding zien ](#external-link-checker), maar zij zullen niet meer worden bijgewerkt.
+>Als u verbinding het controleren na aanvang onbruikbaar maakt om uw inhoud tot stand te brengen, kunt u nog ingangen in het [&#x200B; Externe venster van de Controle van de Verbinding zien &#x200B;](#external-link-checker), maar zij zullen niet meer worden bijgewerkt.

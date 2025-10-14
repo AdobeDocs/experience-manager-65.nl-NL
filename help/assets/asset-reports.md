@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets] -implementatie beoordelen. Met [!DNL Assets] kunt u verschillende rapporten genereren voor uw digitale elementen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
@@ -38,7 +38,7 @@ Ga als volgt te werk om rapporten te genereren:
 * Schakel [!UICONTROL Day CQ DAM Event Recorder] -service in vanuit **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** .
 * Selecteer de activiteiten of gebeurtenissen waarop u wilt rapporteren. Selecteer bijvoorbeeld [!UICONTROL Asset downloaded (DOWNLOADED)] als u rapport over gedownloade elementen wilt genereren.
 
-![ laat activa toe rapporterend in de Console van het Web ](assets/reports-config-day-cq-dam-event-recorder.png)
+![&#x200B; laat activa toe rapporterend in de Console van het Web &#x200B;](assets/reports-config-day-cq-dam-event-recorder.png)
 
 ## Rapporten genereren {#generate-reports}
 
@@ -58,12 +58,12 @@ Ga als volgt te werk om rapporten te genereren:
 
 1. Klik in de interface [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]** .
 
-   ![ pagina van Hulpmiddelen om activa te navigeren rapport ](assets/AssetsReportNavigation.png)
+   ![&#x200B; pagina van Hulpmiddelen om activa te navigeren rapport &#x200B;](assets/AssetsReportNavigation.png)
 
 1. Klik op de pagina [!UICONTROL Asset Reports] op **[!UICONTROL Create]** op de werkbalk.
 1. Kies op de pagina **[!UICONTROL Create Report]** het rapport dat u wilt maken en klik op **[!UICONTROL Next]** .
 
-   ![ Uitgezochte rapporttype ](assets/choose_report.png)
+   ![&#x200B; Uitgezochte rapporttype &#x200B;](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ Ga als volgt te werk om rapporten te genereren:
 
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam` . U kunt een ander pad opgeven.
 
-   ![ Pagina om rapportdetails toe te voegen ](assets/report_configuration.png)
+   ![&#x200B; Pagina om rapportdetails toe te voegen &#x200B;](assets/report_configuration.png)
 
    Kies het datumbereik voor uw rapport.
 
@@ -91,33 +91,33 @@ Ga als volgt te werk om rapporten te genereren:
    >
    >Het rapport **[!UICONTROL Disk Usage]** bevat geen datumbereikvelden omdat het alleen het huidige gebruik van schijfruimte aangeeft.
 
-   ![ pagina van Details van het rapport van het Gebruik van de Schijf ](assets/disk_usage_configuration.png)
+   ![&#x200B; pagina van Details van het rapport van het Gebruik van de Schijf &#x200B;](assets/disk_usage_configuration.png)
 
    Wanneer u het **[!UICONTROL Files]** -rapport maakt, kunt u submappen opnemen of uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
 
-   ![ pagina van Details van het rapport van Dossiers ](assets/files_report.png)
+   ![&#x200B; pagina van Details van het rapport van Dossiers &#x200B;](assets/files_report.png)
 
    Het **[!UICONTROL Link Share]** -rapport geeft URL&#39;s weer naar elementen die vanuit [!DNL Assets] met externe gebruikers worden gedeeld. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
 
    Het rapport **[!UICONTROL Link Share]** bevat geen opties voor submappen en uitvoeringen omdat het alleen de gedeelde URL&#39;s publiceert die onder `/var/dam/share` worden weergegeven.
 
-   ![ pagina van Details van het rapport van het Aandeel van de Verbinding ](assets/link_share.png)
+   ![&#x200B; pagina van Details van het rapport van het Aandeel van de Verbinding &#x200B;](assets/link_share.png)
 
 1. Klik op **[!UICONTROL Next]** op de werkbalk.
 
 1. Op de pagina **[!UICONTROL Configure Columns]** zijn er kolommen geselecteerd die standaard in het rapport worden weergegeven. U kunt meer kolommen selecteren. Annuleer de selectie van een kolom om deze uit te sluiten in het rapport.
 
-   ![ Uitgezocht of annuleer de selectie van rapportkolommen ](assets/configure_columns.png)
+   ![&#x200B; Uitgezocht of annuleer de selectie van rapportkolommen &#x200B;](assets/configure_columns.png)
 
    Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het binaire element onder het knooppunt `jcr:content` in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
 
-   ![ Uitgezocht of annuleer de selectie van rapportkolommen ](assets/custom_columns.png)
+   ![&#x200B; Uitgezocht of annuleer de selectie van rapportkolommen &#x200B;](assets/custom_columns.png)
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 1. Op de pagina [!UICONTROL Asset Reports] is de status van het genereren van het rapport gebaseerd op de huidige status van de rapporttaak, bijvoorbeeld [!UICONTROL Success] , [!UICONTROL Failed] , [!UICONTROL Queued] of [!UICONTROL Scheduled] . Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op **[!UICONTROL View]** op de werkbalk klikken.
 
    <!--![A generated report](assets/report_page.png)-->
-   [ status van het Rapport ](assets/report-status.JPG)
+   [&#x200B; status van het Rapport &#x200B;](assets/report-status.JPG)
 
    Klik op **[!UICONTROL Download]** op de werkbalk om het rapport in de CSV-indeling te downloaden.
 
@@ -143,11 +143,11 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. Als u een aangepaste kolom wilt weergeven, geeft u de naam op van de kolom onder **[!UICONTROL Custom Columns]**.
 
-   ![ specificeer naam voor douanekolom van rapport ](assets/custom_columns-1.png)
+   ![&#x200B; specificeer naam voor douanekolom van rapport &#x200B;](assets/custom_columns-1.png)
 
 1. Voeg het eigenschapspad onder het knooppunt `jcr:content` in CRXDE toe met de padkiezer voor eigenschappen. U kunt ook het pad typen in het veld Pad eigenschap.
 
-   ![ kaart de bezitspad van wegen in jcr:inhoud ](assets/property_picker.png)
+   ![&#x200B; kaart de bezitspad van wegen in jcr:inhoud &#x200B;](assets/property_picker.png)
 
    Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaalt u stap 5 en 6.
 

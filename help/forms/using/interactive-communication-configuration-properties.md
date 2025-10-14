@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Interactieve communicatie configuratieeigenschappen{#interactive-communications-configuration-properties}
 
-De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van het [ toe:voegen-op ](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket van AEM Forms worden gevormd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de **pagina van de Configuratie van de Console van het Web 0&rbrace; Adobe Experience Manager.**
+De interactieve Mededelingen omvat eigenschappen die automatisch na het installeren van het [&#x200B; toe:voegen-op &#x200B;](../../forms/using/installing-configuring-aem-forms-osgi.md) pakket van AEM Forms worden gevormd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de **pagina van de Configuratie van de Console van het Web 0&rbrace; Adobe Experience Manager.**
 
 Open de **pagina van de Configuratie van de Console van het Web van Adobe Experience Manager** gebruikend volgende URL:
 

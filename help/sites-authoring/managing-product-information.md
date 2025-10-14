@@ -40,15 +40,15 @@ Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvere
 
 1. In de **console van Projecten**, klik **creeer** en kies dan **Project** van de lijst creëren.
 
-   ![ creeer projectknoop ](assets/chlimage_1-132a.png)
+   ![&#x200B; creeer projectknoop &#x200B;](assets/chlimage_1-132a.png)
 
 1. In **creeer Project** pagina, selecteer het **malplaatje van het Project van de Foto van het Product** en klik daarna **&#x200B;**.
 
-   ![ tovenaar van het Project ](assets/chlimage_1-133a.png)
+   ![&#x200B; tovenaar van het Project &#x200B;](assets/chlimage_1-133a.png)
 
 1. Voer de projectdetails in, inclusief titel, beschrijving en vervaldatum. Voeg gebruikers toe en wijs diverse rollen aan hen toe. U kunt ook een miniatuur toevoegen voor het project.
 
-   ![ de details van het Project ](assets/chlimage_1-134a.png)
+   ![&#x200B; de details van het Project &#x200B;](assets/chlimage_1-134a.png)
 
 1. Klik **creëren**. Een bevestigingsbericht deelt mee dat het project wordt gecreeerd.
 1. Klik **Gedaan** om aan de **Projecten** console terug te keren. Alternatief, klik **Open** om de activa binnen het project te bekijken.
@@ -57,7 +57,7 @@ Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvere
 
 Om een verzoek van de fotospruit in werking te stellen, klik een project en klik dan **voeg het Werk** binnen de pagina van de projectdetails toe om een werkschema te beginnen.
 
-![ voeg het werk ](assets/chlimage_1-135a.png) toe
+![&#x200B; voeg het werk &#x200B;](assets/chlimage_1-135a.png) toe
 
 Het Project van de Opname van de Foto van het A **Product** omvat de volgende uit-van-de-doos werkschema&#39;s:
 
@@ -108,11 +108,11 @@ De taakkaart bevat de volgende gegevens:
 * Percentage actieve taken
 * Percentage voltooide taken
 
-![ kaart van Taken ](assets/chlimage_1-136a.png)
+![&#x200B; kaart van Taken &#x200B;](assets/chlimage_1-136a.png)
 
 De takenlijst bevat gedetailleerde informatie over de huidige actieve workflowtaak voor het project. Klik op de taakkaart om de lijst weer te geven. In de takenlijst worden ook metagegevens weergegeven, zoals begindatum, vervaldatum, toewijzing, prioriteit en status van de taak.
 
-![ lijst van de Taak ](assets/chlimage_1-137a.png)
+![&#x200B; lijst van de Taak &#x200B;](assets/chlimage_1-137a.png)
 
 ## Workflowconfiguratie {#workflow-configuration}
 
@@ -123,11 +123,11 @@ Om het **werkschema van de Foto van het Product te vormen**:
 1. Navigeer aan **Hulpmiddelen** > **Werkschema&#39;s**, en selecteer dan de **Modellen** tegel om de **Modellen van het Werkschema** pagina te openen.
 1. Selecteer het **werkschema van de Foto van het 0&rbrace; Product van de Foto, en selecteer** uitgeven **pictogram van de toolbar om het op uit te geven wijze te openen.**
 
-   ![ Model van de Opname van de Foto van het Product ](assets/chlimage_1-138a.png)
+   ![&#x200B; Model van de Opname van de Foto van het Product &#x200B;](assets/chlimage_1-138a.png)
 
 1. In de **pagina van het Werkschema van de Opname van de Foto van het 0&rbrace; Product &lbrace;, open een projecttaak.** Bijvoorbeeld, open de **Upload Opname van de Lijst** taak.
 
-   ![ geef model ](assets/project-photo-shoot-workflow-model.png) uit
+   ![&#x200B; geef model &#x200B;](assets/project-photo-shoot-workflow-model.png) uit
 
 1. Klik het **lusje van de Taak** om het volgende te vormen:
 
@@ -150,16 +150,16 @@ In deze sectie wordt beschreven hoe u het beheer van productinformatie kunt inte
 1. Navigeer aan een project van de productfoto ontspruit, en klik **voeg het pictogram van het Werk** op de **werkschema&#39;s** kaart toe.
 1. Selecteer de **Opname van de Foto van het Product (de Integratie van Commerce)** werkschemakaart om het **Opname van de Foto van het Product te beginnen (de Integratie van Commerce)** werkschema. Als de productinformatie niet beschikbaar onder `/etc/commerce` is, selecteer het **Web van de Foto van het Product** werkschema en begin het **Opname van de Foto van het Product** werkschema.
 
-   ![ tovenaar van het Werkschema ](assets/chlimage_1-140a.png)
+   ![&#x200B; tovenaar van het Werkschema &#x200B;](assets/chlimage_1-140a.png)
 
 1. Klik **daarna** om het werkschema in het project in werking te stellen.
 1. Voer workflowgegevens in op de volgende pagina.
 
-   ![ details van het Werkschema ](assets/chlimage_1-141a.png)
+   ![&#x200B; details van het Werkschema &#x200B;](assets/chlimage_1-141a.png)
 
 1. Klik **voorleggen** om het fotoontsproten werkschema te beginnen. De pagina met projectdetails voor het fotoopnameproject wordt weergegeven.
 
-   ![ pagina van het Project met nieuw werkschema ](assets/chlimage_1-142a.png)
+   ![&#x200B; pagina van het Project met nieuw werkschema &#x200B;](assets/chlimage_1-142a.png)
 
 ### Workflowtaken {#workflow-tasks-details}
 
@@ -169,35 +169,35 @@ De workflow voor fotograferen bevat verschillende taken. Elke taak wordt toegewe
 
 **creeer de taak van de Lijst van de Opname** laat de projecteigenaar toe om producten te selecteren waarvoor beelden worden vereist. Op basis van de optie die de gebruiker heeft geselecteerd, wordt een CSV-bestand gegenereerd dat basisproductinformatie bevat.
 
-1. In de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [ Kaart van Taken ](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. In de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [&#x200B; Kaart van Taken &#x200B;](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 
-   ![ kaart van Taken ](assets/chlimage_1-143a.png)
+   ![&#x200B; kaart van Taken &#x200B;](assets/chlimage_1-143a.png)
 
 1. Selecteer de **Create Opnamelijst** taak, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ Het openen de taak van de opnamelijst ](assets/chlimage_1-144a.png)
+   ![&#x200B; Het openen de taak van de opnamelijst &#x200B;](assets/chlimage_1-144a.png)
 
 1. Herzie de taakdetails en klik dan **creeer de knoop van de Lijst van de Opname**.
 
-   ![ de taakdetails van de de ophef lijst ](assets/chlimage_1-145a.png)
+   ![&#x200B; de taakdetails van de de ophef lijst &#x200B;](assets/chlimage_1-145a.png)
 
 1. Selecteer producten waarvoor productgegevens bestaan zonder gekoppelde afbeeldingen.
 
-   ![ Selecterend producten ](assets/chlimage_1-146a.png)
+   ![&#x200B; Selecterend producten &#x200B;](assets/chlimage_1-146a.png)
 
 1. Klik **toevoegen aan de Opnamelijst** knoop om een Csv- dossier tot stand te brengen dat een lijst van al dergelijke producten bevat. Een bericht bevestigt dat de opnamelijst voor de geselecteerde producten wordt gecreeerd. Klik **dicht** om het werkschema te voltooien.
 
 1. Nadat u een ontsproten lijst creeert, verschijnt de **verbinding van de Lijst van het Opname van de Mening**. Om meer producten aan de ontsproten lijst toe te voegen, klik **toevoegen aan de Opnamelijst**. In dit geval worden de gegevens toegevoegd aan de oorspronkelijk gemaakte opnamelijst.
 
-   ![ toevoegt aan ontsproten lijst ](assets/chlimage_1-147a.png)
+   ![&#x200B; toevoegt aan ontsproten lijst &#x200B;](assets/chlimage_1-147a.png)
 
 1. Klik **Lijst van de Opname van de Mening** om de nieuwe ontsproten lijst te bekijken.
 
-   ![ Van de Mening ontsproten lijst ](assets/chlimage_1-148a.png)
+   ![&#x200B; Van de Mening ontsproten lijst &#x200B;](assets/chlimage_1-148a.png)
 
    Om de bestaande gegevens uit te geven of nieuwe gegevens toe te voegen, **uitgeeft** van de toolbar. Slechts zijn **Product &#x200B;** en **Beschrijving** gebieden editable.
 
-   ![ geeft ontsproten lijst ](assets/chlimage_1-149a.png) uit
+   ![&#x200B; geeft ontsproten lijst &#x200B;](assets/chlimage_1-149a.png) uit
 
    Nadat u het dossier bijwerkt, klik **sparen** op toolbar om het dossier te bewaren.
 
@@ -219,19 +219,19 @@ De productlijst of het Csv- dossier kan gebieden, zoals **Categorie, Product, Id
 
 Een product kan tot een bepaalde categorie behoren. De productcategorie kan in CSV onder de **kolom van de Categorie** worden vermeld. Het **gebied van het Product** bevat de naam van het product. Op het **gebied van de Beschrijving**, ga de productbeschrijving of de instructies voor de fotograaf in.
 
-1. In de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [ Kaart van Taken ](#tracking-project-progress) om de lijst van taken in het werkschema te bekijken.
+1. In de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [&#x200B; Kaart van Taken &#x200B;](#tracking-project-progress) om de lijst van taken in het werkschema te bekijken.
 1. Selecteer de **Upload de taak van de Lijst van de Opname**, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ Upload ontsproten lijst ](assets/chlimage_1-150a.png)
+   ![&#x200B; Upload ontsproten lijst &#x200B;](assets/chlimage_1-150a.png)
 
 1. Herzie de taakdetails en klik dan de **Upload Opgenomen knoop van de Lijst**.
 
-   ![ Uploading ontsproten lijst ](assets/chlimage_1-151a.png)
+   ![&#x200B; Uploading ontsproten lijst &#x200B;](assets/chlimage_1-151a.png)
 
 1. Klik **uploadt de knoop van de Lijst van de Opname** om het Csv- dossier te uploaden. De workflow herkent dit bestand als een bron die moet worden gebruikt om productgegevens te extraheren voor de volgende taak.
 1. Upload een CSV-bestand met productinformatie in de juiste indeling. De **Mening Geüploade verbinding van Assets** verschijnt onder de kaart nadat het Csv- dossier wordt geupload.
 
-   ![ upload productinformatie ](assets/chlimage_1-152a.png)
+   ![&#x200B; upload productinformatie &#x200B;](assets/chlimage_1-152a.png)
 
    Klik het **Volledige** pictogram om de taak te voltooien.
 
@@ -245,10 +245,10 @@ De naam van te uploaden beelden moet met `<ProductId_>` beginnen waar `ProductId
 
 U kunt de afbeeldingen rechtstreeks uploaden of een ZIP-bestand met de afbeeldingen uploaden. Op basis van hun namen worden de afbeeldingen in de desbetreffende productmappen in de fotoopnamemap geplaatst.
 
-1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [ Kaart van de Taak ](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [&#x200B; Kaart van de Taak &#x200B;](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 1. Selecteer de **Upload de taak van de Foto van de Foto**, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ upload fotospruit ](assets/chlimage_1-153a.png)
+   ![&#x200B; upload fotospruit &#x200B;](assets/chlimage_1-153a.png)
 
 1. Klik **upload de Fotofoto** en upload de foto ontspruit beelden.
 1. Klik het **Volledige** pictogram van de toolbar om de taak te voltooien.
@@ -257,18 +257,18 @@ U kunt de afbeeldingen rechtstreeks uploaden of een ZIP-bestand met de afbeeldin
 
 Als u het uitgeven rechten hebt, voer de **taak van de Opname van de Foto van de Terugkeer** uit om de beelden uit te geven die aan de omslag van de fotospruit worden geupload.
 
-1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-juiste [ Kaart van de Taak ](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-juiste [&#x200B; Kaart van de Taak &#x200B;](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 1. Selecteer de **taak van de Opname van de Foto van de Winst**, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ retoucheer fotospruit ](assets/chlimage_1-154a.png)
+   ![&#x200B; retoucheer fotospruit &#x200B;](assets/chlimage_1-154a.png)
 
 1. Klik de **Mening Geüploade verbinding van Assets** in de **pagina van de Foto van de Retoucheren** om de geuploade beelden te doorbladeren.
 
-   ![ Mening uploadde activa ](assets/chlimage_1-155a.png)
+   ![&#x200B; Mening uploadde activa &#x200B;](assets/chlimage_1-155a.png)
 
    Bewerk de afbeeldingen indien nodig met een Adobe Creative Cloud-toepassing.
 
-   ![ geef activa ](assets/chlimage_1-156a.png) uit
+   ![&#x200B; geef activa &#x200B;](assets/chlimage_1-156a.png) uit
 
 1. Klik het **Volledige** pictogram van de toolbar om de taak te voltooien.
 
@@ -276,18 +276,18 @@ Als u het uitgeven rechten hebt, voer de **taak van de Opname van de Foto van de
 
 In deze taak bekijkt u de foto&#39;s die door een fotograaf zijn geüpload en markeert u de afbeeldingen zoals deze zijn goedgekeurd voor gebruik.
 
-1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [ Kaart van de Taak ](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [&#x200B; Kaart van de Taak &#x200B;](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 1. Selecteer de **Controle &amp; keur** taak goed, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ Overzicht en keurt ](assets/chlimage_1-157a.png) goed
+   ![&#x200B; Overzicht en keurt &#x200B;](assets/chlimage_1-157a.png) goed
 
 1. In de **Overzicht &amp; keurt** pagina goed, wijs de overzichtstaak aan een rol toe en klik dan **Overzicht** beginnen de geuploade productbeelden te herzien.
 
-   ![ Begin het herzien activa ](assets/chlimage_1-158a.png)
+   ![&#x200B; Begin het herzien activa &#x200B;](assets/chlimage_1-158a.png)
 
 1. Selecteer een productbeeld, en klik **goedkeuren** pictogram van de toolbar om het te merken zoals goedgekeurd. Zodra u een afbeelding hebt goedgekeurd, wordt er een goedgekeurde banner weergegeven.
 
-   ![ goedkeurend een beeld ](assets/chlimage_1-159a.png)
+   ![&#x200B; goedkeurend een beeld &#x200B;](assets/chlimage_1-159a.png)
 
 1. Klik **Voltooid**. De goedgekeurde afbeeldingen zijn gekoppeld aan de lege elementen die zijn gemaakt.
 
@@ -307,18 +307,18 @@ Creative Project koppelt goedgekeurde elementen aan het product waarnaar wordt v
 
 Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, zodat deze beschikbaar zijn voor gebruik.
 
-1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [ Kaart van de Taak ](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
+1. Onder de projectomslag, klik de ellipsenknoop bij het bodem-recht van de [&#x200B; Kaart van de Taak &#x200B;](#tracking-project-progress) om het taakpunt in het werkschema te bekijken.
 1. Selecteer de **Beweging aan Productie** taak, en klik dan het **Open** pictogram van de toolbar.
 
-   ![ Beweging aan productie ](assets/chlimage_1-160a.png)
+   ![&#x200B; Beweging aan productie &#x200B;](assets/chlimage_1-160a.png)
 
 1. Om de goedgekeurde activa voor de fotospruit te bekijken alvorens hen aan productie klaar omslag te bewegen, klik de **Mening Goedgekeurde verbinding van Assets** onder de projectduimnagel op de **beweging aan de 3&rbrace; taakpagina van de Productie &lbrace;.**
 
-   ![ Beweging aan de pagina van de productietaak ](assets/chlimage_1-161a.png)
+   ![&#x200B; Beweging aan de pagina van de productietaak &#x200B;](assets/chlimage_1-161a.png)
 
 1. Ga de weg van de productie-klaar omslag in het **Beweging aan** gebied in.
 
-   ![ Beweging aan weg ](assets/chlimage_1-162a.png)
+   ![&#x200B; Beweging aan weg &#x200B;](assets/chlimage_1-162a.png)
 
 1. Klik **Beweging aan Productie**. Sluit het bevestigingsbericht. De elementen worden naar het genoemde pad verplaatst en er wordt automatisch een centrifugeset gemaakt voor de goedgekeurde elementen voor elk product op basis van de maphiërarchie.
 
@@ -326,7 +326,7 @@ Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, 
 
 ## Metagegevens van DAM-element weergeven {#viewing-dam-asset-metadata}
 
-Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [ Pagina van Eigenschappen ](/help/assets/manage-assets.md#editing-properties) van de goedgekeurde activa heeft nu een extra **Gegevens van het Product** (verbonden productinformatie) tabel. Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Klik **uitgeven** pictogram om een activa bezit bij te werken. De productgerelateerde informatie blijft alleen-lezen.
+Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [&#x200B; Pagina van Eigenschappen &#x200B;](/help/assets/manage-assets.md#editing-properties) van de goedgekeurde activa heeft nu een extra **Gegevens van het Product** (verbonden productinformatie) tabel. Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Klik **uitgeven** pictogram om een activa bezit bij te werken. De productgerelateerde informatie blijft alleen-lezen.
 
 Klik op de koppeling die wordt weergegeven om naar de pagina met productdetails in de productconsole te gaan waaraan het element is gekoppeld.
 
@@ -338,16 +338,16 @@ U kunt de **werkschema&#39;s aanpassen van de Foto van het Project** die op uw v
 1. Selecteer de **Opname van de Foto van het Product (de Integratie van Commerce)** werkschema of het **Opname van de Foto van het Product** werkschema en klik **uitgeven** van de toolbar om het werkschema op uit te geven wijze te openen.
 1. Open het zijpaneel en bepaal de plaats van **creëren Rol Gebaseerde stap van de Taak van het Project** en sleep het aan het werkschema.
 
-   ![ creeer op rol-gebaseerde projecttaak ](assets/project-model-role-based.png)
+   ![&#x200B; creeer op rol-gebaseerde projecttaak &#x200B;](assets/project-model-role-based.png)
 
 1. Open de **Rol Gebaseerde 1&rbrace; stap van de Taak.**
 1. Op het **lusje van de Taak**, verstrek een naam voor de taak die in de taaklijst zal tonen. U kunt de taak aan een rol ook toewijzen, de standaardprioriteit plaatsen, een beschrijving verstrekken, en een tijd specificeren wanneer de taak verschuldigd is.
 
-   ![ vorm werkschemastap ](assets/project-task-step.png)
+   ![&#x200B; vorm werkschemastap &#x200B;](assets/project-task-step.png)
 
 1. Voor **Verpletterend** lusje, specificeer de acties voor de taak. Om veelvoudige acties toe te voegen, klik **Punt** verbinding toevoegen.
 
-   ![ Verpletterend lusje ](assets/project-task-step-routing.png)
+   ![&#x200B; Verpletterend lusje &#x200B;](assets/project-task-step-routing.png)
 
 1. Na het toevoegen van de opties klikt O.K. **om de veranderingen in de stap toe te voegen.**
 
@@ -381,15 +381,15 @@ U kunt de **werkschema&#39;s aanpassen van de Foto van het Project** die op uw v
 
    >[!TIP]
    >
-   >Voor details over het scripting in werkschemastappen, zie [ het bepalen van een Regel voor OF Splitst ](/help/sites-developing/workflows-models.md).
+   >Voor details over het scripting in werkschemastappen, zie [&#x200B; het bepalen van een Regel voor OF Splitst &#x200B;](/help/sites-developing/workflows-models.md).
 
-   ![ ga naar manuscript ](assets/project-workflow-goto.png)
+   ![&#x200B; ga naar manuscript &#x200B;](assets/project-workflow-goto.png)
 
 1. Klik **OK**.
 
 1. Klik **Synchronisatie** om het werkschema te bewaren.
 
-Een nieuwe taak komt nu omhoog nadat de [ Beweging aan de taak van de Productie ](#move-to-production-task) wordt voltooid en aan de eigenaar toegewezen.
+Een nieuwe taak komt nu omhoog nadat de [&#x200B; Beweging aan de taak van de Productie &#x200B;](#move-to-production-task) wordt voltooid en aan de eigenaar toegewezen.
 
 De gebruiker in de **rol van de Eigenaar** kan de taak voltooien en een actie (van de lijst van acties selecteren die in de configuraties van de werkschemasstap worden toegevoegd) van de lijst in commentaarpopup worden toegevoegd.
 

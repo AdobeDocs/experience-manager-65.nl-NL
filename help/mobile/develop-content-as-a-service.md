@@ -33,7 +33,7 @@ Er zijn drie belangrijke soorten materiaal die de Diensten van de Inhoud leveren
 1. **verpakte inhoud van HTML (HTML/CSS/JS)**
 1. **Onafhankelijke inhoud van het Kanaal**
 
-![ chlimage_1-154 ](assets/chlimage_1-154.png)
+![&#x200B; chlimage_1-154 &#x200B;](assets/chlimage_1-154.png)
 
 ## Assets {#assets}
 
@@ -63,7 +63,7 @@ De workflow voor elementen ziet er als volgt uit:
 
 Het volgende diagram toont het **Werkschema van de Verwijzing van Assets**:
 
-![ chlimage_1-155 ](assets/chlimage_1-155.png)
+![&#x200B; chlimage_1-155 &#x200B;](assets/chlimage_1-155.png)
 
 ### Assets beheren {#managing-assets}
 
@@ -97,7 +97,7 @@ Een toepassingsontwikkelaar kan een lijst met beschikbare middelen krijgen door 
 
 Het resultaat is een object in JSON-indeling dat een lijst met de elementen in de map &quot;icons&quot; bevat.
 
-![ chlimage_1-156 ](assets/chlimage_1-156.png)
+![&#x200B; chlimage_1-156 &#x200B;](assets/chlimage_1-156.png)
 
 #### Een afbeelding ophalen {#getting-an-image}
 
@@ -116,7 +116,7 @@ De volgende opties worden overwogen:
 * **Zip dossier:** om de beste kans te hebben om behoorlijk op het apparaat te tonen, de van verwijzingen voorzien materiaal-css van de pagina, JavaScript, activa, etc. zijn inbegrepen in één enkel samengeperst dossier met de reactie. De verwijzingen in de pagina van de HTML kunnen worden aangepast om een relatieve weg aan deze dossiers te gebruiken.
 * **Streaming:** die manifest van de vereiste dossiers van AEM krijgen. Gebruik vervolgens dat manifest om alle bestanden (HTML, CSS, JS, enzovoort) met volgende aanvragen aan te vragen.
 
-![ chlimage_1-157 ](assets/chlimage_1-157.png)
+![&#x200B; chlimage_1-157 &#x200B;](assets/chlimage_1-157.png)
 
 ## Kanaalonafhankelijke inhoud {#channel-independent-content}
 

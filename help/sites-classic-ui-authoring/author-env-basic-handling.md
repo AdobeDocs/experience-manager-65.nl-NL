@@ -23,16 +23,16 @@ ht-degree: 0%
 >* Deze pagina is ontworpen om een overzicht te geven van de basisafhandeling bij gebruik van de Adobe Experience Manager (AEM)-auteursomgeving. Het gebruikt de **console van Plaatsen** als basis.
 >
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
->* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [ het gebruiken consoles ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [ het uitgeven pagina&#39;s ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [&#x200B; het gebruiken consoles &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [&#x200B; het uitgeven pagina&#39;s &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## Het welkomstscherm {#the-welcome-screen}
 
-De klassieke UI verstrekt een selectie van consoles, gebruikend bekende mechanismen voor het navigeren en het in werking stellen van acties, met inbegrip van klik, dubbelklik, en [ contextmenu&#39;s ](#context-menus).
+De klassieke UI verstrekt een selectie van consoles, gebruikend bekende mechanismen voor het navigeren en het in werking stellen van acties, met inbegrip van klik, dubbelklik, en [&#x200B; contextmenu&#39;s &#x200B;](#context-menus).
 
 Na aanmelding wordt het welkomstscherm weergegeven. Het verstrekt een lijst van verbindingen aan consoles en de diensten:
 
-![ screen_shot_2012-01-30at61745pm ](assets/screen_shot_2012-01-30at61745pm.png)
+![&#x200B; screen_shot_2012-01-30at61745pm &#x200B;](assets/screen_shot_2012-01-30at61745pm.png)
 
 ## Consoles {#consoles}
 
@@ -101,15 +101,15 @@ Van hier kunt u uw pagina&#39;s [&#128279;](/help/sites-authoring/managing-pages
 >
 >De basisafhandeling is voor alle consoles hetzelfde. Deze sectie concentreert zich op de **&#x200B;**&#x200B;console van Websites aangezien het de primaire console is die wanneer het ontwerpen wordt gebruikt.
 
-![ chlimage_1-9 ](assets/chlimage_1-9a.png)
+![&#x200B; chlimage_1-9 &#x200B;](assets/chlimage_1-9a.png)
 
 ## Toegang tot Help {#accessing-help}
 
 Op diverse consoles (bijvoorbeeld, Websites), is de knoop van de Hulp van de a **&#x200B;**&#x200B;beschikbaar. Het klikken van **Hulp** opent of het Aandeel van het Pakket of de documentatieplaats.
 
-![ chlimage_1-10 ](assets/chlimage_1-10a.png)
+![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10a.png)
 
-Wanneer het uitgeven van een pagina, heeft [ hulplid ook een knoop voor de toegang tot van hulp ](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Wanneer het uitgeven van een pagina, heeft [&#x200B; hulplid ook een knoop voor de toegang tot van hulp &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigeren met de websiteconsole {#navigating-with-the-websites-console}
 
@@ -141,13 +141,13 @@ De **Websites** console maakt een lijst van uw pagina&#39;s van inhoud in een bo
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Zie [ SiteAdmin in CQ Widget API ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer details.
+>Zie [&#x200B; SiteAdmin in CQ Widget API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer details.
 
 ## Pagina-informatie op de websiteconsole {#page-information-on-the-websites-console}
 
 De juiste ruit van de **&#x200B;**&#x200B;console Websites verstrekt een lijstmening met informatie over pagina&#39;s:
 
-![ pagina-info ](assets/page-info.png)
+![&#x200B; pagina-info &#x200B;](assets/page-info.png)
 
 De volgende velden zijn beschikbaar; een subset van deze velden wordt standaard weergegeven:
 
@@ -227,4 +227,4 @@ De kleuren naast pagina&#39;s in **Gepubliceerde** en **Gewijzigde** kolommen wi
 
 In de klassieke gebruikersinterface worden bekende mechanismen gebruikt voor het navigeren en starten van handelingen, waaronder klikken en dubbelklikken. Afhankelijk van de huidige situatie is er ook een reeks contextmenu&#39;s beschikbaar (geopend met de rechtermuisknop):
 
-![ chlimage_1-11 ](assets/chlimage_1-11a.png)
+![&#x200B; chlimage_1-11 &#x200B;](assets/chlimage_1-11a.png)

@@ -19,14 +19,14 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
-U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomatiseerd, zich herhalend proces. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [ diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica ](/help/sites-developing/workflows-models.md#extending-aem) te bereiken.
+U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomatiseerd, zich herhalend proces. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [&#x200B; diverse AEM stappen van het Werkschema in een model omvatten om de bedrijfslogica &#x200B;](/help/sites-developing/workflows-models.md#extending-aem) te bereiken.
 
 ## Stappen Forms Workflow {#forms-workflow-steps}
 
-Forms Workflows voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Forms Workflow gebruiken om documentservices te starten, te integreren met de Adobe Sign-handtekeningworkflow en andere AEM Forms-bewerkingen uit te voeren. U vereist [ toe:voegen-op van AEM Forms ](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een werkschema te gebruiken.
+Forms Workflows voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Forms Workflow gebruiken om documentservices te starten, te integreren met de Adobe Sign-handtekeningworkflow en andere AEM Forms-bewerkingen uit te voeren. U vereist [&#x200B; toe:voegen-op van AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een werkschema te gebruiken.
 
 Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel een op Adaptive Forms gebaseerde Forms-gerichte workflow bouwen op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne processen en bedrijfsprocessen binnen de firewall.
 
@@ -75,7 +75,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
       * **kies input JSON:** selecteer een inputJSON dossier gebruikend een weg die met lading of opgeslagen in een variabele van Document, JSON, of het gegevenstype van het Model van de Gegevens van de Vorm met betrekking tot lading is. Deze optie is beschikbaar als u Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
       * **kies een douane prefill dienst:** selecteer de prefill dienst om de gegevens terug te winnen en het Interactieve Communicatie het kanaaldocument van het Web of de Agent UI vooraf in te vullen.
       * **gebruik de prefill dienst van de interactieve hierboven geselecteerde mededeling:** gebruik deze optie om de prefill dienst van de Interactieve Communicatie te gebruiken die in de Van het Gebruik Interactieve Communicatie drop-down lijst wordt bepaald.
-      * **Toewijzing van Attributen van het Verzoek:** gebruik de sectie van de Toewijzing van het Attributen van het Verzoek om de [ naam en de waarde van de verzoekattributen ](../../forms/using/work-with-form-data-model.md#bindargument) te bepalen. Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van een aanvraagkenmerk definiëren met een letterlijke waarde of een variabele van het gegevenstype String.\
+      * **Toewijzing van Attributen van het Verzoek:** gebruik de sectie van de Toewijzing van het Attributen van het Verzoek om de [&#x200B; naam en de waarde van de verzoekattributen &#x200B;](../../forms/using/work-with-form-data-model.md#bindargument) te bepalen. Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van een aanvraagkenmerk definiëren met een letterlijke waarde of een variabele van het gegevenstype String.\
         De prefill dienst en de opties van de verzoekkenmerkafbeelding zijn beschikbaar slechts als u het Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
 
 * **voorgelegde informatie:** De volgende hieronder vermelde gebieden dienen als outputplaatsen aan de taak:
@@ -86,10 +86,10 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
    * **sparen de gegevens van het Kanaal van het Web gebruikend:** sparen het de gegevensdossier van het Kanaal van het Web gebruikend een weg die met betrekking tot de lading is of het opslaat in een variabele van Document, JSON, of het gegevenstype van het Model van de Gegevens van de Vorm. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
    * **sparen het document van de PDF gebruikend:** sparen het document van de PDF gebruikend een weg die met betrekking tot de nuttige lading is of het opslaat in een variabele van het gegevenstype van het Document. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
-   * **sparen lay-outmalplaatje gebruikend:** sparen het lay-outmalplaatje gebruikend een weg die met betrekking tot de lading is of het opslaat in een variabele van het gegevenstype van het Document. Het [ lay-outmalplaatje ](../../forms/using/layout-design-details.md) verwijst naar een XDP dossier dat u gebruikend Forms Designer creeert. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
+   * **sparen lay-outmalplaatje gebruikend:** sparen het lay-outmalplaatje gebruikend een weg die met betrekking tot de lading is of het opslaat in een variabele van het gegevenstype van het Document. Het [&#x200B; lay-outmalplaatje &#x200B;](../../forms/using/layout-design-details.md) verwijst naar een XDP dossier dat u gebruikend Forms Designer creeert. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
 
 * **toewijzen de Wijs opties toe:** specificeer de methode om de taak aan een gebruiker toe te wijzen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM gebruiker of groep.
-* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [ dynamisch een werkschema toewijzen aan de gebruikers ](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [ Creërend een stap van de Dynamische Deelnemer van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&amp;CID=RedirectAEMCommunityKautuk)
+* **Kiezer van de Deelnemer:** de optie is beschikbaar wanneer **dynamisch aan een gebruiker of een groep** optie op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [&#x200B; dynamisch een werkschema toewijzen aan de gebruikers &#x200B;](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [&#x200B; Creërend een stap van de Dynamische Deelnemer van Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL&CID=RedirectAEMCommunityKautuk)
 
 * **Deelnemers:** het gebied is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** optie op het **de Chooser van de Deelnemer** gebied wordt geselecteerd. In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
@@ -138,9 +138,9 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 ## E-mailstap verzenden {#send-email-step}
 
-Met de stap E-mail kunt u bijvoorbeeld een e-mailbericht verzenden met een recorddocument, een koppeling naar een adaptief formulier, een koppeling naar een interactieve communicatie of een bijgevoegd PDF-document. Verzend E-mailstap steunt [ HTML e-mail ](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
+Met de stap E-mail kunt u bijvoorbeeld een e-mailbericht verzenden met een recorddocument, een koppeling naar een adaptief formulier, een koppeling naar een interactieve communicatie of een bijgevoegd PDF-document. Verzend E-mailstap steunt [&#x200B; HTML e-mail &#x200B;](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
 
-In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Alvorens de e-mailstap te gebruiken, zorg ervoor dat de [ e-maildienst ](../../forms/using/aem-forms-workflow.md) wordt gevormd. De e-mailstap heeft de volgende eigenschappen:
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Alvorens de e-mailstap te gebruiken, zorg ervoor dat de [&#x200B; e-maildienst &#x200B;](../../forms/using/aem-forms-workflow.md) wordt gevormd. De e-mailstap heeft de volgende eigenschappen:
 
 **Titel:** Titel van de staphulp identificeert de stap in de werkschemaredacteur.
 
@@ -156,7 +156,7 @@ In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te ver
 
 **Metagegevens van het Malplaatje van de E-mail:** De waarde van de variabelen van het e-mailmalplaatje kan een user-specified waarde, de weg van een activa op de auteur of de publicatieserver, beeld, of een bezit van werkschemagegevens zijn.
 
-* **Letterlijk:** gebruik de optie wanneer u de nauwkeurige te specificeren waarde kent. Bijvoorbeeld, [ example@example.com ](mailto:example@example.com).
+* **Letterlijk:** gebruik de optie wanneer u de nauwkeurige te specificeren waarde kent. Bijvoorbeeld, [&#x200B; example@example.com &#x200B;](mailto:example@example.com).
 
 * **Metagegevens van het Werkschema:** gebruik de optie wanneer de te gebruiken waarde in een bezit van werkschemagegevens wordt bewaard. Nadat u de optie hebt geselecteerd, typt u de naam van de eigenschap metadata in het lege tekstvak onder de optie Metagegevens werkstroom. Bijvoorbeeld emailAddress.
 * **Middel URL:** gebruik de optie om een Webverbinding van een interactieve mededeling aan e-mail in te bedden. Nadat u de optie hebt geselecteerd, bladert u door de interactieve communicatie die u wilt insluiten en kiest u deze. Het element kan zich op de auteur of de publicatieserver bevinden.
@@ -193,7 +193,7 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 ## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
-U kunt [ Integratie van Gegevens van AEM Forms gebruiken ](../../forms/using/data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. Met AEM Forms Data Integration kunt u een formuliergegevensmodel maken dat verschillende services omvat voor het ophalen, optellen en bijwerken van gegevens in de geconfigureerde database. U kunt de **aanhalen stap van de Dienst van het Gegevensmodel** gebruiken om een model van vormgegevens (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen om gegevensbronnen te verdelen.
+U kunt [&#x200B; Integratie van Gegevens van AEM Forms gebruiken &#x200B;](../../forms/using/data-integration.md) om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. Met AEM Forms Data Integration kunt u een formuliergegevensmodel maken dat verschillende services omvat voor het ophalen, optellen en bijwerken van gegevens in de geconfigureerde database. U kunt de **aanhalen stap van de Dienst van het Gegevensmodel** gebruiken om een model van vormgegevens (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen om gegevensbronnen te verdelen.
 
 Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbestandlijst en het dossier JSON gebruikt als voorbeeld:
 
@@ -284,7 +284,7 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
 
 * **Landinstelling:** specificeer de taal voor de e-mail en verificatieopties. U kunt of de scène in een variabele van het gegevenstype van het Koord opslaan of **Letterlijk** selecteren om de scène van de lijst van beschikbare opties te kiezen. Definieer de landinstellingscode terwijl u de waarde voor de landinstelling in een variabele opslaat. Bijvoorbeeld, specificeer **en_US** voor Engels en **fr_FR** voor Frans.
 
-* **de Configuratie van de Wolk van Adobe Sign**: Kies een Configuratie van de Wolk van Adobe Sign. Als u geen Adobe Sign voor AEM Forms hebt gevormd, zie [ Adobe Sign met AEM Forms ](../../forms/using/adobe-sign-integration-adaptive-forms.md) integreren.
+* **de Configuratie van de Wolk van Adobe Sign**: Kies een Configuratie van de Wolk van Adobe Sign. Als u geen Adobe Sign voor AEM Forms hebt gevormd, zie [&#x200B; Adobe Sign met AEM Forms &#x200B;](../../forms/using/adobe-sign-integration-adaptive-forms.md) integreren.
 
 * **Uitgezochte Te ondertekenen Document gebruikend:** u kunt een document van een plaats met betrekking tot de lading kiezen, gebruik lading als document, specificeren een absolute weg van het document, of het document terugwinnen dat in een variabele van het gegevenstype van het Document wordt opgeslagen.
 
@@ -323,7 +323,7 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
 
 AEM Document Services is een set services voor het maken, samenstellen en beveiligen van PDF-documenten. AEM Forms biedt een aparte AEM Workflowstap voor elke documentservice.
 
-Net als bij andere AEM Forms Workflowstappen, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen AEM Document Services. Voor meer informatie bij het creëren van en het beheren van variabelen, zie [ Variabelen in AEM werkschema&#39;s ](../../forms/using/variable-in-aem-workflows.md).
+Net als bij andere AEM Forms Workflowstappen, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen AEM Document Services. Voor meer informatie bij het creëren van en het beheren van variabelen, zie [&#x200B; Variabelen in AEM werkschema&#39;s &#x200B;](../../forms/using/variable-in-aem-workflows.md).
 
 ### Tijdstempel document toepassen {#apply-document-time-stamp-step}
 
@@ -461,7 +461,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 * **[!UICONTROL Locale]** - Geeft de taal aan die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
    * **om servergebrek** te gebruiken:
-(Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms-server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [ Hulp van Designer ](https://www.adobe.com/go/learn_aemforms_designer_65).)
+(Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms-server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [&#x200B; Hulp van Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
    * **om douanewaarde** te gebruiken:
 Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.

@@ -81,13 +81,13 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
 
 1. De structuur in het deelvenster Verkenner van CRXDE Lite moet er nu ongeveer als volgt uitzien:
 
-   ![ crxde-malplaatje ](assets/crxde-template.png)
+   ![&#x200B; crxde-malplaatje &#x200B;](assets/crxde-template.png)
 
 ## De ontwerpmap instellen (/etc/designs) {#setup-the-design-directory-etc-designs}
 
 De map /etc/designs bevat de afbeeldingen, scripts en stijlpagina&#39;s die samen met de pagina-inhoud moeten worden gedownload.
 
-1. Om het hulpmiddel van Designer in Klassieke UI te gebruiken, doorblader aan [ https://&lt;server>:&lt;port>/miscadmin ](http://localhost:4502/miscadmin).
+1. Om het hulpmiddel van Designer in Klassieke UI te gebruiken, doorblader aan [&#x200B; https://&lt;server>:&lt;port>/miscadmin &#x200B;](http://localhost:4502/miscadmin).
 
    Opmerking: als u CRXDE Lite gebruikt om een knooppunt van het type `cq:Page` te maken, worden Toegangsbeheer en replicatie niet ingesteld op de standaardinstellingen voor een pagina.
 
@@ -101,7 +101,7 @@ De map /etc/designs bevat de afbeeldingen, scripts en stijlpagina&#39;s die same
 
    Klik op **[!UICONTROL Create]**.
 
-   ![ ontwerp-malplaatje ](assets/design-template.png)
+   ![&#x200B; ontwerp-malplaatje &#x200B;](assets/design-template.png)
 
 1. Vernieuw het verkennervenster als de map &quot;An SCF Sandbox&quot; niet wordt weergegeven.
 
@@ -109,10 +109,10 @@ De map /etc/designs bevat de afbeeldingen, scripts en stijlpagina&#39;s die same
 
    In de rechterbenedenruit van CRXDE, kunt u het lusje van Eigenschappen, het lusje van het Toegangsbeheer, en het lusje van de Replicatie bekijken om te zien wat werd bepaald gebruikend het Malplaatje van de Pagina van het Ontwerp.
 
-   ![ crxde-configure-malplaatje ](assets/crxde-configure-template.png)
+   ![&#x200B; crxde-configure-malplaatje &#x200B;](assets/crxde-configure-template.png)
 
 ## De inhoudsdirectory (/inhoud) instellen {#setup-the-content-directory-content}
 
 De map /content in de opslagplaats is de locatie waar de website-inhoud zich bevindt. De paden onder /content bestaan uit de paden van de URL voor browserverzoeken.
 
-*nadat* het [ malplaatje ](initial-app.md#createthepagetemplate) als deel van de aanvankelijke toepassing wordt gecreeerd, kan de aanvankelijke paginacontent worden gecreeerd gebaseerd op het malplaatje... [**pagina**](initial-app.md).
+*nadat* het [&#x200B; malplaatje &#x200B;](initial-app.md#createthepagetemplate) als deel van de aanvankelijke toepassing wordt gecreeerd, kan de aanvankelijke paginacontent worden gecreeerd gebaseerd op het malplaatje... [**pagina**](initial-app.md).

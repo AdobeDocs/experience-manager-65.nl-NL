@@ -54,7 +54,7 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-Meer informatie over de Mobiele profielen van de Vorm kan bij [ worden gevonden Creërend een douaneprofiel ](/help/forms/using/custom-profile.md).
+Meer informatie over de Mobiele profielen van de Vorm kan bij [&#x200B; worden gevonden Creërend een douaneprofiel &#x200B;](/help/forms/using/custom-profile.md).
 
 ## Nieuwe HTML-formulieren renderen en verzenden {#new-html-form-render-amp-submit-processes}
 
@@ -96,13 +96,13 @@ Met de standaardservices Renderen en Verzenden kunt u ondersteuning inschakelen 
 
 Met dit proces wordt een XDP-formulier naadloos weergegeven op meerdere platforms. Het proces wint de gebruikersagent van `taskContext` terug, en gebruikt de gegevens om het proces te roepen om of HTML of PDF terug te geven.
 
-![ gebrek-geef-vorm ](assets/default-render-form.png)
+![&#x200B; gebrek-geef-vorm &#x200B;](assets/default-render-form.png)
 
 ### Standaardformulier verzenden {#default-submit-form}
 
 Met dit proces wordt een XDP-formulier naadloos verzonden naar meerdere platforms. Het wint de gebruikersagent van `taskContext` terug en gebruikt de gegevens om het proces te roepen om of HTML of PDF te verzenden.
 
-![ gebrek-voorlegt-vorm ](assets/default-submit-form.png)
+![&#x200B; gebrek-voorlegt-vorm &#x200B;](assets/default-submit-form.png)
 
 ## De weergave van mobiele formulieren wijzigen van PDF naar HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
@@ -129,7 +129,7 @@ Het standaard-actieprofiel heeft het XDP-formulier weergegeven als PDF. Dit gedr
 
 Enkele vaak gestelde vragen over actieprofielen zijn als volgt:
 
-![ gen_question_b_20 ](assets/gen_question_b_20.png) **wat teruggeeft/processen zal voorleggen uit de doos beschikbaar zijn?**
+![&#x200B; gen_question_b_20 &#x200B;](assets/gen_question_b_20.png) **wat teruggeeft/processen zal voorleggen uit de doos beschikbaar zijn?**
 
 * Handleiding voor renderen (hulplijnen zijn afgekeurd)
 * Formulierhulplijn renderen
@@ -140,21 +140,21 @@ Enkele vaak gestelde vragen over actieprofielen zijn als volgt:
 
 Equivalente verzendprocessen.
 
-![ gen_question_b_20 ](assets/gen_question_b_20.png) **Welke Profielen van de Actie uit de doos beschikbaar zullen zijn?**
+![&#x200B; gen_question_b_20 &#x200B;](assets/gen_question_b_20.png) **Welke Profielen van de Actie uit de doos beschikbaar zullen zijn?**
 
 Voor XDP Forms:
 
 * Standaard (renderen/verzenden met de nieuwe processen Standaard renderen/verzenden)
 
-![ gen_question_b_20 ](assets/gen_question_b_20.png) **wat door de procesontwerper moet worden gedaan om de vorm toe te laten om in HTML op een apparaat, en in PDF op een Desktop worden teruggegeven?**
+![&#x200B; gen_question_b_20 &#x200B;](assets/gen_question_b_20.png) **wat door de procesontwerper moet worden gedaan om de vorm toe te laten om in HTML op een apparaat, en in PDF op een Desktop worden teruggegeven?**
 
 Niets. Het standaardprofiel van de Actie wordt automatisch gekozen, en de wijze van het teruggeven wordt ook behandeld, automatisch.
 
-![ gen_question_b_20 ](assets/gen_question_b_20.png) **wat moet worden gedaan om de vorm toe te laten om in HTML op een Desktop worden teruggegeven?**
+![&#x200B; gen_question_b_20 &#x200B;](assets/gen_question_b_20.png) **wat moet worden gedaan om de vorm toe te laten om in HTML op een Desktop worden teruggegeven?**
 
 De gebruiker moet het keuzerondje HTML selecteren voor het standaardprofiel.
 
-![ gen_question_b_20 ](assets/gen_question_b_20.png) **zal er om het even welk verbeteringseffect op het veranderen van het standaardgedrag van het actieprofiel zijn?**
+![&#x200B; gen_question_b_20 &#x200B;](assets/gen_question_b_20.png) **zal er om het even welk verbeteringseffect op het veranderen van het standaardgedrag van het actieprofiel zijn?**
 
 Ja, omdat de vorige renderings- en verzendservices die aan het standaardactieprofiel zijn gekoppeld verschillend waren, worden deze beschouwd als een aanpassing van de bestaande formulieren. Bij het klikken **herstel Gebreken**, geeft het gebrek terug en legt de diensten voor in plaats daarvan worden geplaatst.
 

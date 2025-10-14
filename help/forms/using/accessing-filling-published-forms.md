@@ -24,15 +24,15 @@ Dit leidt vaak tot problemen met het beheer van de installatie- en productievert
 
 Forms Portal verlaagt beheerkosten en productievertragingen. Webontwikkelaars beschikken over componenten om een Forms Portal te maken en aan te passen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 
-Voor meer informatie over het Portaal van Forms en zijn eigenschappen, zie [ Inleiding aan het publiceren van vormen op een portaal ](/help/forms/using/introduction-publishing-forms.md).
+Voor meer informatie over het Portaal van Forms en zijn eigenschappen, zie [&#x200B; Inleiding aan het publiceren van vormen op een portaal &#x200B;](/help/forms/using/introduction-publishing-forms.md).
 
 ## Aan de slag met Forms Portal {#getting-started-with-forms-portal}
 
-Navigeer naar de gepubliceerde pagina Forms Portal. Voor meer informatie over het creëren van een Poortpagina van Forms, zie [ Creërend een Poortpagina van Forms ](../../forms/using/creating-form-portal-page.md).
+Navigeer naar de gepubliceerde pagina Forms Portal. Voor meer informatie over het creëren van een Poortpagina van Forms, zie [&#x200B; Creërend een Poortpagina van Forms &#x200B;](../../forms/using/creating-form-portal-page.md).
 
 De component Search en Lister van Forms Portal geeft de formulieren weer die beschikbaar zijn in de Publish-versie van de AEM server. Deze lijst bevat alle formulieren of formulieren die in het filter zijn gedefinieerd op het moment dat de pagina Forms Portal wordt gemaakt. Een Forms Portal-pagina ziet er ongeveer zo uit als in de volgende afbeelding:
 
-![ Pagina met voorbeeldformulieren ](assets/forms-portal-page.png)
+![&#x200B; Pagina met voorbeeldformulieren &#x200B;](assets/forms-portal-page.png)
 
 Een voorbeeld van een Forms Portal-pagina
 
@@ -55,7 +55,7 @@ U kunt op de pagina Forms Portal naar formulieren zoeken met de volgende opties:
 
 Met zoeken in volledige tekst kunt u formulieren zoeken en weergeven op basis van de opgegeven trefwoorden.
 
-![ een geavanceerde onderzoeksdialoog ](assets/search-panel.png)
+![&#x200B; een geavanceerde onderzoeksdialoog &#x200B;](assets/search-panel.png)
 
 Een geavanceerd zoekdialoogvenster
 
@@ -65,7 +65,7 @@ In de kolom Label worden formulieren weergegeven op basis van de zoekparameters.
 
 ### Een formulier invullen {#filling-a-form}
 
-![ de steekproefadaptieve vorm van A ](assets/filling_a_form.png)
+![&#x200B; de steekproefadaptieve vorm van A &#x200B;](assets/filling_a_form.png)
 
 Een voorbeeld van een adaptief formulier
 
@@ -83,9 +83,9 @@ Nadat het invullen van het formulier is voltooid, verzendt de gebruiker de formu
 
 >[!NOTE]
 >
->Verzonden formulieren worden alleen weergegeven op het tabblad Verzonden Forms als de verzendactie voor het adaptieve formulier is geconfigureerd als Forms Portal Handeling verzenden. Voor meer informatie over voorlegt acties, zie [ Vormend de Submit actie ](../../forms/using/configuring-submit-actions.md).
+>Verzonden formulieren worden alleen weergegeven op het tabblad Verzonden Forms als de verzendactie voor het adaptieve formulier is geconfigureerd als Forms Portal Handeling verzenden. Voor meer informatie over voorlegt acties, zie [&#x200B; Vormend de Submit actie &#x200B;](../../forms/using/configuring-submit-actions.md).
 
-![ Concepten &amp; voorleggingscomponent ](assets/draft-submission.png)
+![&#x200B; Concepten &amp; voorleggingscomponent &#x200B;](assets/draft-submission.png)
 
 Concepten en verzendingen
 
@@ -93,8 +93,8 @@ Concepten en verzendingen
 
 Er zijn bepaalde formulieren die u vaak moet invullen en verzenden. Het formulier voor het indienen van een individuele belastingaangifte wordt bijvoorbeeld elk jaar ingediend. In dergelijke gevallen verandert een deel van de informatie telkens wanneer u het formulier invult, maar het grootste deel ervan, zoals de persoonlijke gegevens en de familiedetails, verandert niet. U moet echter nog steeds het volledige formulier helemaal opnieuw invullen.
 
-AEM Forms kan u helpen het invullen van formulieren te optimaliseren en de tijd die nodig is om een formulier in te vullen en opnieuw te verzenden, aanzienlijk te verkorten. Eindgebruikers kunnen een nieuw formulier starten met gegevens uit een verzonden formulier. Deze functionaliteit wordt gebouwd in de [ componenten van Concepten en van Verzending ](../../forms/using/draft-submission-component.md). Wanneer u de component Concepten en Verzending toevoegt aan uw Forms Portal-pagina en deze publiceert, zien eindgebruikers een optie op de tabbladen Verzenden Forms en Concept Forms. Met deze optie kunt u een nieuw formulier starten met gegevens uit een verzonden formulier. Deze optie wordt in de volgende afbeelding gemarkeerd.
+AEM Forms kan u helpen het invullen van formulieren te optimaliseren en de tijd die nodig is om een formulier in te vullen en opnieuw te verzenden, aanzienlijk te verkorten. Eindgebruikers kunnen een nieuw formulier starten met gegevens uit een verzonden formulier. Deze functionaliteit wordt gebouwd in de [&#x200B; componenten van Concepten en van Verzending &#x200B;](../../forms/using/draft-submission-component.md). Wanneer u de component Concepten en Verzending toevoegt aan uw Forms Portal-pagina en deze publiceert, zien eindgebruikers een optie op de tabbladen Verzenden Forms en Concept Forms. Met deze optie kunt u een nieuw formulier starten met gegevens uit een verzonden formulier. Deze optie wordt in de volgende afbeelding gemarkeerd.
 
-![ begin-a-new-form ](assets/start-a-new-form.png)
+![&#x200B; begin-a-new-form &#x200B;](assets/start-a-new-form.png)
 
 Wanneer u op de knop klikt om een nieuw formulier te starten, wordt een nieuw formulier geopend met gegevens uit het bijbehorende verzonden formulier. U kunt de gegevens nu naar wens controleren en bijwerken en het formulier verzenden.

@@ -33,7 +33,7 @@ U kunt Experience Fragments gebruiken:
 
 * Als een auteur delen van een pagina (een fragment van een ervaring) opnieuw wil gebruiken, moet hij of zij dat fragment kopiëren en plakken. Het maken en onderhouden van deze kopiëren/plakken-ervaringen kost veel tijd en is vaak het gevolg van gebruikersfouten. De Fragmenten van de ervaring elimineren de behoefte aan exemplaar/deeg.
 * Om de hoofdloze CMS-use-case te ondersteunen. Auteurs willen AEM alleen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden zou deze ervaring gebruiken en vervolgens leveren aan de eindgebruiker.
-* Met [ Multisite Beheer (MSM) ](/help/sites-administering/msm.md); als Fragment van de Ervaring maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
+* Met [&#x200B; Multisite Beheer (MSM) &#x200B;](/help/sites-administering/msm.md); als Fragment van de Ervaring maakt deel uit van een pagina. Dit geldt zowel voor de afzonderlijke fragmenten als voor de mappen waarin deze zich bevinden.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 
 * Wanneer u Omnichannel Commerce gebruikt.
 
-   * Het delen van handel-verwante inhoud op [ sociale media ](/help/sites-developing/experience-fragments.md#social-variations) kanalen bij schaal
+   * Het delen van handel-verwante inhoud op [&#x200B; sociale media &#x200B;](/help/sites-developing/experience-fragments.md#social-variations) kanalen bij schaal
    * Transactie van aanraakpunten maken
 
 ## Fragmenten voor uw ervaring ordenen {#organizing-your-experience-fragments}
@@ -71,7 +71,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 Het wordt aanbevolen:
 * mappen gebruiken om uw fragmenten van de ervaring te ordenen,
 
-* [ vormt de toegestane malplaatjes op deze omslagen ](#configure-allowed-templates-folder).
+* [&#x200B; vormt de toegestane malplaatjes op deze omslagen &#x200B;](#configure-allowed-templates-folder).
 
 Door mappen te maken kunt u:
 
@@ -85,7 +85,7 @@ Door mappen te maken kunt u:
 
   >[!NOTE]
   >
-  >U kunt de [ malplaatjeredacteur ](/help/sites-authoring/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
+  >U kunt de [&#x200B; malplaatjeredacteur &#x200B;](/help/sites-authoring/templates.md) gebruiken om uw eigen malplaatje tot stand te brengen.
 
 Het WKND-project structureert een aantal Experience Fragments volgens `Contributors` . De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
 
@@ -93,19 +93,19 @@ Zie:
 
 `http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
 
-![ Omslagen voor de Fragmenten van de Ervaring ](/help/sites-authoring/assets/xf-folders.png)
+![&#x200B; Omslagen voor de Fragmenten van de Ervaring &#x200B;](/help/sites-authoring/assets/xf-folders.png)
 
 ## Het creëren van en het Vormen van een Omslag voor uw Fragmenten van de Ervaring {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
 Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vormen wordt het geadviseerd:
 
-1. [ creeer een omslag ](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
+1. [&#x200B; creeer een omslag &#x200B;](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
 
-1. [ vormt de toegestane malplaatjes van het Fragment van de Ervaring voor die omslag ](#configure-allowed-templates-folder).
+1. [&#x200B; vormt de toegestane malplaatjes van het Fragment van de Ervaring voor die omslag &#x200B;](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->Het is ook mogelijk om de [ Toegestane Malplaatjes voor uw instantie ](#configure-allowed-templates-instance) te vormen, maar deze methode wordt **niet** geadviseerd aangezien de waarden op verbetering kunnen worden beschreven.
+>Het is ook mogelijk om de [&#x200B; Toegestane Malplaatjes voor uw instantie &#x200B;](#configure-allowed-templates-instance) te vormen, maar deze methode wordt **niet** geadviseerd aangezien de waarden op verbetering kunnen worden beschreven.
 
 ### Configureer de toegestane sjablonen voor uw map {#configure-allowed-templates-folder}
 
@@ -125,11 +125,11 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
    Zie:
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![ Eigenschappen van het Fragment van de Ervaring - Toegestane Malplaatjes ](/help/sites-authoring/assets/xf-folders-templates.png)
+   ![&#x200B; Eigenschappen van het Fragment van de Ervaring - Toegestane Malplaatjes &#x200B;](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    >
-   >Zie [ Malplaatjes voor de Fragmenten van de Ervaring ](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
+   >Zie [&#x200B; Malplaatjes voor de Fragmenten van de Ervaring &#x200B;](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
 
 1. Selecteer **sparen en Sluiten**.
 
@@ -145,15 +145,15 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 1. Selecteer **de opties van de Configuratie**:
 
-   ![ knoop van de Configuratie ](assets/ef-02.png)
+   ![&#x200B; knoop van de Configuratie &#x200B;](assets/ef-02.png)
 
 1. Specificeer de vereiste malplaatjes in **vormen de Fragmenten van de Ervaring** dialoog:
 
-   ![ vorm de Fragmenten van de Ervaring ](assets/ef-01.png)
+   ![&#x200B; vorm de Fragmenten van de Ervaring &#x200B;](assets/ef-01.png)
 
    >[!NOTE]
    >
-   >Zie [ Malplaatjes voor de Fragmenten van de Ervaring ](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
+   >Zie [&#x200B; Malplaatjes voor de Fragmenten van de Ervaring &#x200B;](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments) voor verdere details.
 
 1. Selecteer **sparen**.
 
@@ -163,23 +163,23 @@ Een ervaringsfragment maken:
 
 1. Selecteer Fragmenten van de Ervaring van de Globale Navigatie.
 
-   ![ xf-01 ](assets/xf-01.png)
+   ![&#x200B; xf-01 &#x200B;](assets/xf-01.png)
 
 1. Navigeer aan de vereiste omslag en selecteer **creeer**.
 
-   ![ xf-02 ](assets/xf-02.png)
+   ![&#x200B; xf-02 &#x200B;](assets/xf-02.png)
 
 1. Selecteer **Fragment van de Ervaring** om **te openen creeer de tovenaar van het Fragment van de Ervaring**.
 
    Selecteer de vereiste **sjabloon** en kies vervolgens **Volgende**:
 
-   ![ xf-03 ](assets/xf-03.png)
+   ![&#x200B; xf-03 &#x200B;](assets/xf-03.png)
 
 1. Voer de **Eigenschappen** voor uw **Experience-fragment** in.
 
    A **Titel** is verplicht. Als de **Naam** leeg wordt verlaten zal het uit de **Titel** worden afgeleid.
 
-   ![ xf-04 ](assets/xf-04.png)
+   ![&#x200B; xf-04 &#x200B;](assets/xf-04.png)
 
    >[!NOTE]
    >
@@ -201,13 +201,13 @@ De Experience Fragment Editor biedt u vergelijkbare mogelijkheden als de normale
 
 >[!NOTE]
 >
->Zie [ het Uitgeven van de Inhoud van de Pagina ](/help/sites-authoring/editing-content.md) voor meer informatie over hoe te om de paginaredacteur te gebruiken.
+>Zie [&#x200B; het Uitgeven van de Inhoud van de Pagina &#x200B;](/help/sites-authoring/editing-content.md) voor meer informatie over hoe te om de paginaredacteur te gebruiken.
 
 De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kunt maken:
 
-1. De belemmering en laat vallen a **Taser** van [ Browser van Componenten ](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. De belemmering en laat vallen a **Taser** van [&#x200B; Browser van Componenten &#x200B;](/help/sites-authoring/author-environment-tools.md#components-browser).
 
-   ![ xf-05 ](assets/xf-05.png)
+   ![&#x200B; xf-05 &#x200B;](assets/xf-05.png)
 
 1. Selecteer **[vormen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** van de componententoolbar.
 1. Voeg de **asset** toe en definieer desgewenst de **eigenschappen**.
@@ -218,15 +218,15 @@ De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kun
 
 U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk van uw behoeften:
 
-1. Open uw fragment voor [ het uitgeven ](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Open uw fragment voor [&#x200B; het uitgeven &#x200B;](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Open het **lusje van Variaties**.
 
-   ![ xf-authoring-06 ](assets/xf-authoring-06.png)
+   ![&#x200B; xf-authoring-06 &#x200B;](assets/xf-authoring-06.png)
 
 1. **creeer** laat u tot stand brengen:
 
    * **Variatie**
-   * **Verandering als [ levend-exemplaar](/help/sites-administering/msm.md#live-copies)**.
+   * **Verandering als [&#x200B; levend-exemplaar](/help/sites-administering/msm.md#live-copies)**.
 
      >[!NOTE]
      >
@@ -240,11 +240,11 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
    * **Beschrijving**
    * **de markeringen van de Variatie**
 
-   ![ xf-06 ](assets/xf-06.png)
+   ![&#x200B; xf-06 &#x200B;](assets/xf-06.png)
 
 1. Bevestig met **Gedaan** (het tikpictogram), wordt de nieuwe variatie getoond in het paneel:
 
-   ![ xf-07 ](assets/xf-07.png)
+   ![&#x200B; xf-07 &#x200B;](assets/xf-07.png)
 
 ## Uw ervaringsfragment gebruiken {#using-your-experience-fragment}
 
@@ -256,18 +256,18 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
    >
    >De pagina moet zijn gebaseerd op een bewerkbare sjabloon.
 
-   Bijvoorbeeld: [ https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Bijvoorbeeld: [&#x200B; https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Maak een instantie van de component Experience Fragment door de component van de browser Components naar het alineasysteem van de pagina te slepen:
 
-   ![ xf-08 ](assets/xf-08.png)
+   ![&#x200B; xf-08 &#x200B;](assets/xf-08.png)
 
 1. Voeg het daadwerkelijke Fragment van de Ervaring aan de componenteninstantie toe; of:
 
    * Sleep het vereiste fragment uit de Assets-browser en zet het neer op de component
    * Selecteer **vormen** van de componententoolbar en specificeer het te gebruiken fragment, bevestig met **Gedaan** (tikken)
 
-   ![ xf-09 ](assets/xf-09.png)
+   ![&#x200B; xf-09 &#x200B;](assets/xf-09.png)
 
    >[!NOTE]
    >
@@ -283,19 +283,19 @@ Een bouwblok maken:
 
 1. In de redacteur van het Fragment van de Ervaring, selecteer de componenten u wilt hergebruiken:
 
-   ![ xf-10 ](assets/xf-10.png)
+   ![&#x200B; xf-10 &#x200B;](assets/xf-10.png)
 
 1. Van de componententoolbar, uitgezochte **Bekeerling aan bouwsteen**:
 
-   ![ xf-authoring-13-icon ](assets/xf-authoring-13-icon.png)
+   ![&#x200B; xf-authoring-13-icon &#x200B;](assets/xf-authoring-13-icon.png)
 
 1. Voer de naam van de **bouwsteen** in en bevestig dit met **Converteren**:
 
-   ![ xf-11 ](assets/xf-11.png)
+   ![&#x200B; xf-11 &#x200B;](assets/xf-11.png)
 
 1. Het **Blok van de Bouw** wordt getoond in het lusje, en kan in het paragraafsysteem worden geselecteerd:
 
-   ![ xf-12 ](assets/xf-12.png)
+   ![&#x200B; xf-12 &#x200B;](assets/xf-12.png)
 
 #### Een bouwblok beheren {#managing-a-building-block}
 
@@ -305,7 +305,7 @@ Uw bouwsteen is zichtbaar in de **Blokken van de Bouw** tabel. Voor elk blok zij
 * Naam wijzigen
 * Verwijderen
 
-![ xf-13 ](assets/xf-13.png)
+![&#x200B; xf-13 &#x200B;](assets/xf-13.png)
 
 #### Een bouwsteen gebruiken {#using-a-building-block}
 
@@ -315,13 +315,13 @@ U kunt de bouwsteen naar het alineasysteem van om het even welk fragment slepen,
 
 Details van het fragment kunt u zien:
 
-1. De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een [ uitvoer naar Doel ](/help/sites-administering/experience-fragments-target.md):**
+1. De details worden getoond in alle meningen van de **console van Fragmenten van de 1&rbrace; Ervaring, met de** Mening van de Lijst **met inbegrip van details van een [&#x200B; uitvoer naar Doel &#x200B;](/help/sites-administering/experience-fragments-target.md):**
 
-   ![ ef-03 ](assets/ef-03.png)
+   ![&#x200B; ef-03 &#x200B;](assets/ef-03.png)
 
 1. Wanneer u **Eigenschappen** van het Fragment van de Ervaring opent:
 
-   ![ ef-04 ](assets/ef-04.png)
+   ![&#x200B; ef-04 &#x200B;](assets/ef-04.png)
 
    De eigenschappen zijn beschikbaar op verschillende tabbladen:
 
@@ -332,7 +332,7 @@ Details van het fragment kunt u zien:
    >
    >Als u **Eigenschappen opent** tijdens het bewerken van een Experience-fragment, worden de juiste [Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) weergegeven.
 
-   ![ ef-05 ](assets/ef-05.png)
+   ![&#x200B; ef-05 &#x200B;](assets/ef-05.png)
 
    * **Basis**
 
@@ -368,10 +368,10 @@ Met de kiezer `.plain.` in de URL hebt u vanuit de browser toegang tot de uitvoe
 
 >[!NOTE]
 >
->Hoewel dit direct beschikbaar van browser is, [ het primaire doel is andere toepassingen (bijvoorbeeld, derdeWeb apps, douane mobiele implementaties) toe te staan om tot de inhoud van het Fragment van de Ervaring direct toegang te hebben, gebruikend slechts URL ](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+>Hoewel dit direct beschikbaar van browser is, [&#x200B; het primaire doel is andere toepassingen (bijvoorbeeld, derdeWeb apps, douane mobiele implementaties) toe te staan om tot de inhoud van het Fragment van de Ervaring direct toegang te hebben, gebruikend slechts URL &#x200B;](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exporteren van ervaringsfragmenten {#exporting-experience-fragments}
 
 Standaard worden Experience Fragments geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
 
-Voor export naar Adobe Target kan JSON ook worden gebruikt. Zie [ Integratie van het Doel met de Fragmenten van de Ervaring ](/help/sites-administering/experience-fragments-target.md) voor volledige informatie.
+Voor export naar Adobe Target kan JSON ook worden gebruikt. Zie [&#x200B; Integratie van het Doel met de Fragmenten van de Ervaring &#x200B;](/help/sites-administering/experience-fragments-target.md) voor volledige informatie.

@@ -28,7 +28,7 @@ Deze eigenschap voegt de faciliteit toe om een nieuw beheerderwachtwoord voor de
 
 >[!CAUTION]
 >
->De functie is niet van toepassing op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Voor meer informatie, zie de relevante [ sectie van Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
+>De functie is niet van toepassing op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Voor meer informatie, zie de relevante [&#x200B; sectie van Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
 ## Hoe gebruik ik het? {#how-do-i-use-it}
 
@@ -42,7 +42,7 @@ java -jar aem6.3.jar
 
 Nadat u de instantie via de opdrachtregel hebt uitgevoerd, kunt u het beheerderswachtwoord tijdens het installatieproces wijzigen:
 
-![ chlimage_1-116 ](assets/chlimage_1-116a.png)
+![&#x200B; chlimage_1-116 &#x200B;](assets/chlimage_1-116a.png)
 
 >[!NOTE]
 >

@@ -24,7 +24,7 @@ Als u een [!DNL Adobe Experience Manager Assets] gebruiker bent, wordt Lichtbak 
 1. Selecteer in de gebruikersinterface van [!DNL Assets] de elementen die u aan Lichtbak wilt toevoegen.
 1. Sleep de elementen naar de **[!UICONTROL Drop in Lightbox]** -zone. Laat de muisknop los wanneer de dropzone actief wordt en verandert het label in **[!UICONTROL Drop to Add]** .
 
-   ![ add_to_lightbox ](assets/add_to_lightbox.png)
+   ![&#x200B; add_to_lightbox &#x200B;](assets/add_to_lightbox.png)
 
 1. Klik in het dialoogvenster op **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
 1. Ga naar de console Verzamelingen om Lichtbak weer te geven.

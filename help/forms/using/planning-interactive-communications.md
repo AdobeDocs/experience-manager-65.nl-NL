@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Plan de anatomie voor uw Interactieve Communicatie
 
-![ 02-creeer-adaptief-vorm-main-beeld ](assets/02-create-adaptive-form-main-image.png)
+![&#x200B; 02-creeer-adaptief-vorm-main-beeld &#x200B;](assets/02-create-adaptive-form-main-image.png)
 
-Dit leerprogramma is een stap in [ creeer uw eerste Interactieve Communicatie ](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Dit leerprogramma is een stap in [&#x200B; creeer uw eerste Interactieve Communicatie &#x200B;](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van de Interactieve Mededeling te voltooien. Experts met onderwerpen van afdelingen zoals juridische afdeling, financiën, ondersteuning of marketing kunnen u helpen de inhoud te voltooien. Nadat de inhoud wordt voltooid, moet u het analyseren om de diverse activatypes te identificeren die worden vereist om de Interactieve Mededeling tot stand te brengen.
 
@@ -40,7 +40,7 @@ Een interactieve communicatie omvat de volgende elementen:
 
 ## Anatomie van de interactieve communicatie {#anatomy-of-the-interactive-communication}
 
-Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de details hebben die in de [ worden vermeld die Overwegingen van de Planning ](/help/forms/using/planning-interactive-communications.md#planning-considerations) sectie. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
+Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de details hebben die in de [&#x200B; worden vermeld die Overwegingen van de Planning &#x200B;](/help/forms/using/planning-interactive-communications.md#planning-considerations) sectie. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
 
 De anatomie bevat gegevens met de volgende invoermodi:
 
@@ -50,7 +50,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Voor meer informatie, zie [ het model van vormgegevens ](/help/forms/using/create-form-data-model0.md) creëren.
+In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Voor meer informatie, zie [&#x200B; het model van vormgegevens &#x200B;](/help/forms/using/create-form-data-model0.md) creëren.
 
 De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van interactieve communicatie:
 

@@ -22,11 +22,11 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 >[!NOTE]
 >
->Wanneer het ervaren van problemen het ook de moeite waard is controlerend de lijst van [ Bekende Kwesties ](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
+>Wanneer het ervaren van problemen het ook de moeite waard is controlerend de lijst van [&#x200B; Bekende Kwesties &#x200B;](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
 
 >[!NOTE]
 >
->De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen problemen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in [ AEM van het Oplossen van problemen (voor Beheerders) ](/help/sites-administering/troubleshoot.md) worden beschreven. Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
+>De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen problemen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in [&#x200B; AEM van het Oplossen van problemen (voor Beheerders) &#x200B;](/help/sites-administering/troubleshoot.md) worden beschreven. Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 

@@ -31,12 +31,12 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >
 >Meer informatie over het werken met MSM is te vinden in de artikelen in de Knowledge Base:
 >
->* [ het Oplossen van problemen MSM en Veelgestelde vragen ](troubleshoot-msm.md)
+>* [&#x200B; het Oplossen van problemen MSM en Veelgestelde vragen &#x200B;](troubleshoot-msm.md)
 >
 
 >[!NOTE]
 >
->U kunt de [ component van de Verwijzing ](/help/sites-authoring/default-components-foundation.md#reference) ook gebruiken om één enkele pagina of paragraaf opnieuw te gebruiken. Houd echter rekening met:
+>U kunt de [&#x200B; component van de Verwijzing &#x200B;](/help/sites-authoring/default-components-foundation.md#reference) ook gebruiken om één enkele pagina of paragraaf opnieuw te gebruiken. Houd echter rekening met:
 >
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
 >* {de componenten van 0} Kern [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) worden nu geadviseerd over de stichtingscomponenten.
@@ -44,7 +44,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 
 ## Live Copy-bronnen en configuraties voor blauwdrukken {#live-copy-sources-and-blueprint-configurations}
 
-Houd in mening dat een levend exemplaar gebruikend of [ regelmatige pagina&#39;s ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) of a [ de configuratie van de blauwdruk ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) kan worden gecreeerd. Beide zijn geldige gebruiksgevallen.
+Houd in mening dat een levend exemplaar gebruikend of [&#x200B; regelmatige pagina&#39;s &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) of a [&#x200B; de configuratie van de blauwdruk &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) kan worden gecreeerd. Beide zijn geldige gebruiksgevallen.
 
 De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 
@@ -79,19 +79,19 @@ Om het nesten van componenten te steunen zodat de plaatselijk toegevoegde compon
 
 U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van live kopieën:
 
-* Wanneer [ creërend een Levend Exemplaar ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* Wanneer [&#x200B; creërend een Levend Exemplaar &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
   Dit kan als generischere benadering worden beschouwd, toestaand u om levende exemplaren van om het even welke pagina tot stand te brengen. De inhoudsstructuur van een live kopie komt exact overeen met de bron.
 
-* Wanneer [ het creëren van een Plaats ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* Wanneer [&#x200B; het creëren van een Plaats &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
   Dit is een meer gespecialiseerde benadering, vooral voor het creëren van websites met een meertalige structuur.
 
 Houd rekening met het volgende wanneer u een site maakt:
 
-* Om een plaats tot stand te brengen, hebt u de configuratie van de a [ blauwdruk ](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations) nodig.
+* Om een plaats tot stand te brengen, hebt u de configuratie van de a [&#x200B; blauwdruk &#x200B;](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations) nodig.
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
-* Zodra a [ nieuwe plaats is gecreeerd als levende exemplaar ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruikend **creeer**, dan **Plaats**), zijn de eerste twee niveaus van dit levende exemplaar *ondiep*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
+* Zodra a [&#x200B; nieuwe plaats is gecreeerd als levende exemplaar &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruikend **creeer**, dan **Plaats**), zijn de eerste twee niveaus van dit levende exemplaar *ondiep*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 
   Het helpt voorkomen:
 
@@ -118,7 +118,7 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
    * Bijvoorbeeld, van de Franse taalmeester aan landspecifieke plaatsen, zoals Frankrijk/Frans, Canada/Frans, Zwitserland/Frans.
 
-Voor meer informatie zie [ Vertaal Inhoud voor Meertalige Plaatsen ](/help/sites-administering/translation.md) en [ de Beste praktijken van de Vertaling ](/help/sites-administering/tc-bp.md).
+Voor meer informatie zie [&#x200B; Vertaal Inhoud voor Meertalige Plaatsen &#x200B;](/help/sites-administering/translation.md) en [&#x200B; de Beste praktijken van de Vertaling &#x200B;](/help/sites-administering/tc-bp.md).
 
 ## Structuurwijzigingen en rollouts {#structure-changes-and-rollouts}
 
@@ -136,7 +136,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 >[!NOTE]
 >
->Dit zal slechts met [ op de trekker van de Output ](/help/sites-administering/msm-sync.md#rollout-triggers) werken.
+>Dit zal slechts met [&#x200B; op de trekker van de Output &#x200B;](/help/sites-administering/msm-sync.md#rollout-triggers) werken.
 
 * Een aangepaste rollout-configuratie maken:
 
@@ -164,14 +164,14 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van rollouts kan verreikende gevolgen hebben. Als beste praktijken, zou u ** zorgvuldig vóór, bijvoorbeeld moeten plannen:
 
-* het automatiseren van rollouts; bijvoorbeeld, met [ onModify trekkers ](#onmodify),
-* het aanpassen [ knooptypes/eigenschappen ](#node-types-properties),
+* het automatiseren van rollouts; bijvoorbeeld, met [&#x200B; onModify trekkers &#x200B;](#onmodify),
+* het aanpassen [&#x200B; knooptypes/eigenschappen &#x200B;](#node-types-properties),
 * volgende workflows starten,
 * inhoud activeren als onderdeel van rollouts.
 
 ### onModify {#onmodify}
 
-Wanneer het gebruiken van de [ rollout trekker ](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` zou u moeten overwegen:
+Wanneer het gebruiken van de [&#x200B; rollout trekker &#x200B;](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` zou u moeten overwegen:
 
 * Het automatiseren van rollouts met `onModify` trekkers kan een negatief effect op auteursprestaties hebben aangezien zij rollouts na *elke* pagineringswijziging teweegbrengen.
 
@@ -188,7 +188,7 @@ Daarom wordt geadviseerd dat u *slechts* gebruik `onModify` trekkers veroorzaakt
 
 Houd er rekening mee dat:
 
-* Naast het aanpassen van rollout acties, laat MSM u knoopeigenschappen ook aanpassen die worden opgesteld. De [ configuratie MSM OSGi laat u knooptypes ](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) van het worden gekopieerd uit de bron aan het levende exemplaar uitsluiten.
+* Naast het aanpassen van rollout acties, laat MSM u knoopeigenschappen ook aanpassen die worden opgesteld. De [&#x200B; configuratie MSM OSGi laat u knooptypes &#x200B;](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) van het worden gekopieerd uit de bron aan het levende exemplaar uitsluiten.
 
 ## Aanvullende informatie {#further-information}
 

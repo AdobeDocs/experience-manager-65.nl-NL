@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Als onbekend met de leverancier van het opslagmiddel (SRP) en zijn verhouding aan gebruiker-geproduceerde inhoud (UGC), bezoek {de Opslag van de Inhoud van de Gemeenschap 1} en [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md).[&#128279;](working-with-srp.md)
+Als onbekend met de leverancier van het opslagmiddel (SRP) en zijn verhouding aan gebruiker-geproduceerde inhoud (UGC), bezoek {de Opslag van de Inhoud van de Gemeenschap 1} en [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](srp.md).[&#128279;](working-with-srp.md)
 
 Deze sectie van de documentatie verstrekt wat essentiële informatie over SRP en UGC.
 
@@ -36,13 +36,13 @@ SRP API is geen abstracte klasse, het is een interface. Een aangepaste implement
 
 De middelen om SRP API te gebruiken zijn door verstrekte nut, zoals die gevonden in het pakket SocialResourceUtilities.
 
-Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open hulpmiddel van Source beschikbaar is. Zie [ Bevorderend aan AEM Communities 6.3 ](upgrade.md).
+Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open hulpmiddel van Source beschikbaar is. Zie [&#x200B; Bevorderend aan AEM Communities 6.3 &#x200B;](upgrade.md).
 
 >[!NOTE]
 >
 >Historisch, werden de nut voor de toegang tot van UGC gevonden in het pakket SocialUtils, dat niet meer bestaat.
 >
->Voor vervangingsnut, zie [ Refactoring SocialUtils ](socialutils.md).
+>Voor vervangingsnut, zie [&#x200B; Refactoring SocialUtils &#x200B;](socialutils.md).
 
 ## Hulpprogrammamethode voor toegang tot UGC {#utility-method-to-access-ugc}
 
@@ -63,13 +63,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Voor andere vervangingen SocialUtils, zie [ Refactoring SocialUtils ](socialutils.md).
+Voor andere vervangingen SocialUtils, zie [&#x200B; Refactoring SocialUtils &#x200B;](socialutils.md).
 
-Voor coderingsrichtsnoeren, bezoek [ Toegang tot UGC met SRP ](accessing-ugc-with-srp.md).
+Voor coderingsrichtsnoeren, bezoek [&#x200B; Toegang tot UGC met SRP &#x200B;](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->De weg resourceToUGCStoragePath () keert is *niet* geschikt voor [ ACL die ](srp.md#for-access-control-acls) controleert.
+>De weg resourceToUGCStoragePath () keert is *niet* geschikt voor [&#x200B; ACL die &#x200B;](srp.md#for-access-control-acls) controleert.
 
 ## De Methode van het nut om tot ACLs toegang te hebben {#utility-method-to-access-acls}
 
@@ -96,30 +96,30 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->De weg die door resourceToACLPath () is teruggekeerd is *niet* geschikt voor [ de toegang tot van UGC ](#utility-method-to-access-acls) zelf.
+>De weg die door resourceToACLPath () is teruggekeerd is *niet* geschikt voor [&#x200B; de toegang tot van UGC &#x200B;](#utility-method-to-access-acls) zelf.
 
 ## UGC-gerelateerde opslaglocaties {#ugc-related-storage-locations}
 
-De volgende beschrijvingen van opslagplaats kunnen van hulp zijn wanneer het ontwikkelen met JSRP of misschien MSRP. Er is momenteel geen UI om tot UGC toegang te hebben die in ASRP wordt opgeslagen, aangezien er voor JSRP ([ CRXDE Lite ](../../help/sites-developing/developing-with-crxde-lite.md)) en MSRP (hulpmiddelen MongoDB) is.
+De volgende beschrijvingen van opslagplaats kunnen van hulp zijn wanneer het ontwikkelen met JSRP of misschien MSRP. Er is momenteel geen UI om tot UGC toegang te hebben die in ASRP wordt opgeslagen, aangezien er voor JSRP ([&#x200B; CRXDE Lite &#x200B;](../../help/sites-developing/developing-with-crxde-lite.md)) en MSRP (hulpmiddelen MongoDB) is.
 
 **plaats van de Component**
 
 Wanneer een lid UGC in het publicatiemilieu ingaat, communiceren zij met een component als deel van een AEM plaats.
 
-Een voorbeeld van zulk een component is de [ commentaarcomponent ](http://localhost:4502/content/community-components/en/comments.html) die in de [ Communautaire Plaats van de Gids van Componenten ](components-guide.md) bestaat. Het pad naar het knooppunt met opmerkingen in de lokale opslagplaats is:
+Een voorbeeld van zulk een component is de [&#x200B; commentaarcomponent &#x200B;](http://localhost:4502/content/community-components/en/comments.html) die in de [&#x200B; Communautaire Plaats van de Gids van Componenten &#x200B;](components-guide.md) bestaat. Het pad naar het knooppunt met opmerkingen in de lokale opslagplaats is:
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **de knoopplaats van de Schaduw**
 
-De verwezenlijking van UGC leidt ook tot de knoop van de a [ schaduw ](srp.md#about-shadow-nodes-in-jcr) waarop noodzakelijke ACLs wordt toegepast. Het pad naar het corresponderende schaduwknooppunt in de lokale opslagruimte is het resultaat van het voorzetten van het hoofdpad van het schaduwknooppunt naar het componentpad:
+De verwezenlijking van UGC leidt ook tot de knoop van de a [&#x200B; schaduw &#x200B;](srp.md#about-shadow-nodes-in-jcr) waarop noodzakelijke ACLs wordt toegepast. Het pad naar het corresponderende schaduwknooppunt in de lokale opslagruimte is het resultaat van het voorzetten van het hoofdpad van het schaduwknooppunt naar het componentpad:
 
 * Basispad = `/content/usergenerated`
 * Commentaar schaduwknooppunt = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **plaats UGC**
 
-UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betreden gebruikend een [ nutsmethode ](#utility-method-to-access-ugc) die SRP API aanhaalt.
+UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betreden gebruikend een [&#x200B; nutsmethode &#x200B;](#utility-method-to-access-ugc) die SRP API aanhaalt.
 
 * Basispad = `/content/usergenerated/asi/srp-choice`
 * UGC-knooppunt voor JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
@@ -128,6 +128,6 @@ UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betre
 
 ## Gerelateerde informatie {#related-information}
 
-* [ Overzicht van de Leverancier van het Middel van de Opslag ](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
-* [ die tot UGC met SRP ](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
-* [ SocialUtils Refactoring ](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.
+* [&#x200B; Overzicht van de Leverancier van het Middel van de Opslag &#x200B;](srp.md) - Inleiding en overzicht van het opslagruimtegebruik.
+* [&#x200B; die tot UGC met SRP &#x200B;](accessing-ugc-with-srp.md) toegang hebben - de richtlijnen van de Codering.
+* [&#x200B; SocialUtils Refactoring &#x200B;](socialutils.md) - de Afgekeurde nutsmethodes van de afbeelding aan huidige SRP hulpprogrammamethodes.

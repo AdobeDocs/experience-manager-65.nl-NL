@@ -22,7 +22,7 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Connector voor IBM® Content Manager zorgt voor communicatie tussen AEM formulieren en IBM® Content Manager. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [ Verwijzing van de Diensten ](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector voor IBM® Content Manager zorgt voor communicatie tussen AEM formulieren en IBM® Content Manager. Voor extra achtergrondinformatie, zie &quot;Connectors voor ECM&quot;in [&#x200B; Verwijzing van de Diensten &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## De verbinding met IBM® Content Manager configureren {#configure-the-ibm-content-manager-connection}
 

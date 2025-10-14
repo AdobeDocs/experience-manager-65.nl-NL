@@ -18,20 +18,20 @@ ht-degree: 0%
 
 # De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen{#grant-rule-editor-access-to-select-user-groups}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
+<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
 U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptive Forms. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
 
-Met AEM Forms kunt u op basis van hun rol of functie de toegang tot regeleditors beperken. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u de [ gebruikersgroepen ](/help/sites-administering/security.md) specificeren die tot de regelredacteur kunnen bekijken en toegang hebben.
+Met AEM Forms kunt u op basis van hun rol of functie de toegang tot regeleditors beperken. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u de [&#x200B; gebruikersgroepen &#x200B;](/help/sites-administering/security.md) specificeren die tot de regelredacteur kunnen bekijken en toegang hebben.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. In de auteursinstantie, klik ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![ hamer ](assets/hammer.png) > Verrichtingen > de Console van het Web. De webconsole wordt in een nieuw venster geopend.
+1. In de auteursinstantie, klik ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) Adobe Experience Manager > Hulpmiddelen ![&#x200B; hamer &#x200B;](assets/hammer.png) > Verrichtingen > de Console van het Web. De webconsole wordt in een nieuw venster geopend.
 
-   ![ 1-2 ](assets/1-2.png)
+   ![&#x200B; 1-2 &#x200B;](assets/1-2.png)
 
 1. Zoek en klik in het venster Webconsole op **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** . **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** wordt weergegeven. Verander geen waarde en klik **sparen**.
 
@@ -46,16 +46,16 @@ Met AEM Forms kunt u op basis van hun rol of functie de toegang tot regeleditors
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
-   ![ creeer Gebruiker ](assets/create_user_new.png)
+   ![&#x200B; creeer Gebruiker &#x200B;](assets/create_user_new.png)
 
-   Nu, wanneer een gebruiker die geen deel van de gespecificeerde gebruikersgroep (hier RuleEditorsUserGroup) uitmaakt een gebied tikt, geeft het pictogram van de Regel uit ( ![ uitgeven-rules1 ](assets/edit-rules1.png)) niet beschikbaar voor hen in de componententoolbar:
+   Nu, wanneer een gebruiker die geen deel van de gespecificeerde gebruikersgroep (hier RuleEditorsUserGroup) uitmaakt een gebied tikt, geeft het pictogram van de Regel uit ( ![&#x200B; uitgeven-rules1 &#x200B;](assets/edit-rules1.png)) niet beschikbaar voor hen in de componententoolbar:
 
-   ![ componentStoolbarwithre ](assets/componentstoolbarwithre.png)
+   ![&#x200B; componentStoolbarwithre &#x200B;](assets/componentstoolbarwithre.png)
 
    De toolbar van componenten zoals zichtbaar aan een gebruiker met de toegang van de regelredacteur
 
-   ![ componentStoolbarwithoutre ](assets/componentstoolbarwithoutre.png)
+   ![&#x200B; componentStoolbarwithoutre &#x200B;](assets/componentstoolbarwithoutre.png)
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [ Beleid van de Gebruiker en Veiligheid ](/help/sites-administering/security.md).
+   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [&#x200B; Beleid van de Gebruiker en Veiligheid &#x200B;](/help/sites-administering/security.md).

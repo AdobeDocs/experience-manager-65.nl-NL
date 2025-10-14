@@ -22,7 +22,7 @@ Als u probeert een element te uploaden dat voorkomt in [!DNL Adobe Experience Ma
 1. Bewerk de configuratie voor de servlet **[!UICONTROL Day CQ DAM Create Asset]** .
 1. Selecteer de optie **[!UICONTROL detect duplicate]** en klik op **[!UICONTROL Save]** .
 
-   ![ Uitgezocht ontdekt dubbele optie in servlet ](assets/chlimage_1-377.png)
+   ![&#x200B; Uitgezocht ontdekt dubbele optie in servlet &#x200B;](assets/chlimage_1-377.png)
 
    *Cijfer: Selecteer ontdekt dubbele optie in servlet.*
 
@@ -30,5 +30,5 @@ De functie Dupliceren detecteren is nu ingeschakeld in [!DNL Assets] . Wanneer e
 
 >[!MORELIKETHIS]
 >
->* [ Dupliceer activa in bestaande bewaarplaats (een leerprogramma van een communautair lid) ](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [ ontdekt dubbele activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=nl-NL)
+>* [&#x200B; Dupliceer activa in bestaande bewaarplaats (een leerprogramma van een communautair lid) &#x200B;](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [&#x200B; ontdekt dubbele activa in AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=nl-NL)

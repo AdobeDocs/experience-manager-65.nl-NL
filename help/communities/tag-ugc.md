@@ -38,11 +38,11 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 
 ## Tags beheren {#administering-tags}
 
-Zie [ het Beheer Markeringen ](../../help/sites-administering/tags.md#tagging-console) voor het creëren van en het beheren van markeringsnamespaces en taxonomieën.
+Zie [&#x200B; het Beheer Markeringen &#x200B;](../../help/sites-administering/tags.md#tagging-console) voor het creëren van en het beheren van markeringsnamespaces en taxonomieën.
 
-Zie [ Hoofdzaak van de Markering ](tag.md) voor ontwikkelaarinformatie.
+Zie [&#x200B; Hoofdzaak van de Markering &#x200B;](tag.md) voor ontwikkelaarinformatie.
 
-Zie [ Gebruikend de Wolk van de Sociale Markering ](tagcloud.md) voor het toevoegen van een component van de Wolk van de Sociale Markering aan een pagina om het zoeken naar geposte UGC te vergemakkelijken gebruikend de toegepaste markeringen.
+Zie [&#x200B; Gebruikend de Wolk van de Sociale Markering &#x200B;](tagcloud.md) voor het toevoegen van een component van de Wolk van de Sociale Markering aan een pagina om het zoeken naar geposte UGC te vergemakkelijken gebruikend de toegepaste markeringen.
 
 ### Tagmachtigingen {#tag-permissions}
 
@@ -50,8 +50,8 @@ De standaardmachtigingen zijn ingesteld om te voorkomen dat tagnaamruimten worde
 
 Omdat tags worden toegepast op UGC in de publicatieomgeving, moet leesmachtigingen zijn ingeschakeld voor leden van de community om tags te kunnen selecteren die moeten worden toegepast.
 
-Zie [ Plaatsende Toestemmingen van de Markering ](../../help/sites-administering/tags.md#setting-tag-permissions).
+Zie [&#x200B; Plaatsende Toestemmingen van de Markering &#x200B;](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Hieronder wordt beschreven hoe de optie wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members` .
 
-![ markering-toestemmingen ](assets/tag-permissions.png)
+![&#x200B; markering-toestemmingen &#x200B;](assets/tag-permissions.png)

@@ -16,17 +16,17 @@ ht-degree: 0%
 
 # Correspondentenbeheer | Gebruikersgegevens verwerken {#correspondence-management-handling-user-data}
 
-Met AEM Forms Correspondence Management kunt u veilige en persoonlijke klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Voor meer informatie over het creëren van correspondentie, zie [ Correspondentie ](/help/forms/using/create-correspondence.md) creëren.
+Met AEM Forms Correspondence Management kunt u veilige en persoonlijke klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Voor meer informatie over het creëren van correspondentie, zie [&#x200B; Correspondentie &#x200B;](/help/forms/using/create-correspondence.md) creëren.
 
 Wanneer een zakelijke gebruiker of een agent een correspondentie opslaat als concept of deze verzendt, wordt een letterinstantie opgeslagen in de AEM-opslagplaats. De brieveninstantie omvat brievengegevens en meta-gegevens.
 
 >[!NOTE]
 >
->In AEM 6.5 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.5 Forms. Voor meer informatie, zie [ pakket van de Verenigbaarheid ](/help/forms/using/compatibility-package.md).
+>In AEM 6.5 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.5 Forms. Voor meer informatie, zie [&#x200B; pakket van de Verenigbaarheid &#x200B;](/help/forms/using/compatibility-package.md).
 
 ## Gebruikersgegevens en gegevensopslag {#data}
 
-In het Correspondentiebeheer worden gegevens voor concept en verzonden brieven alleen in AEM opslagplaats opgeslagen als de publicatie-instantie is geconfigureerd voor het beheren van brievenexemplaren. Voor meer informatie over de configuratie, zie [ de configuratieeigenschappen van het Beheer van de Correspondentie ](/help/forms/using/cm-configuration-properties.md).
+In het Correspondentiebeheer worden gegevens voor concept en verzonden brieven alleen in AEM opslagplaats opgeslagen als de publicatie-instantie is geconfigureerd voor het beheren van brievenexemplaren. Voor meer informatie over de configuratie, zie [&#x200B; de configuratieeigenschappen van het Beheer van de Correspondentie &#x200B;](/help/forms/using/cm-configuration-properties.md).
 
 Afhankelijk van de persistentie van de gegevensopslag die voor uw AEM plaatsing wordt gevormd, worden de concepten en de voorgelegde brievengegevens opgeslagen bij de volgende plaatsen.
 
@@ -71,9 +71,9 @@ U kunt tot ontwerp en voorgelegde brievengegevens in de gevormde gegevensopslag 
 
 ### Gebruikersgegevens openen {#access-user-data}
 
-Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Voor meer informatie, zie [ APIs om tot brieveninstanties ](/help/forms/using/cm-apis-to-access-letter-instances.md) toegang te hebben.
+Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Voor meer informatie, zie [&#x200B; APIs om tot brieveninstanties &#x200B;](/help/forms/using/cm-apis-to-access-letter-instances.md) toegang te hebben.
 
-U kunt ook met CRXDE Lite naar de letter-instantie in AEM repository navigeren. Zie [ gegevens van de Gebruiker en gegevensopslag ](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en bewaarplaats.
+U kunt ook met CRXDE Lite naar de letter-instantie in AEM repository navigeren. Zie [&#x200B; gegevens van de Gebruiker en gegevensopslag &#x200B;](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en bewaarplaats.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 

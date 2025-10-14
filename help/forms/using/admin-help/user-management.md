@@ -24,15 +24,15 @@ ht-degree: 0%
 
 Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die door Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
-Voor informatie over het verbeteren van het gegevensbestand en de prestaties van de foldersynchronisatie voor DB2, zie [ IBM DB2 gegevensbestand: Lopende bevelen voor regelmatig onderhoud ](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Voor informatie over het verbeteren van het gegevensbestand en de prestaties van de foldersynchronisatie voor DB2, zie [&#x200B; IBM DB2 gegevensbestand: Lopende bevelen voor regelmatig onderhoud &#x200B;](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie [ Gebruikersbeheer voor een SSL-Toegelaten server LDAP ](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server) vormen.)
+Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie [&#x200B; Gebruikersbeheer voor een SSL-Toegelaten server LDAP &#x200B;](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server) vormen.)
 
 ## Gebruikersrechten instellen voor gebruik met Documentbeveiliging {#setting-user-privileges-for-use-with-document-security}
 
-Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie [ Creërend en vormend rollen ](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie [&#x200B; Creërend en vormend rollen &#x200B;](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de beleidsgebruiker te bekijken, moet een superbeheerder of beheerder van de beleidsreeks domeinen (die in Beheer van de Gebruiker worden gecreeerd) selecteren en toevoegen aan de zichtbare gebruiker en groepslijst voor elke gemaakte beleidsreeks.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De adaptieve vormen gebruiken het [ verschijningskader ](/help/forms/using/introduction-widgets.md) om u te helpen douaneverschijningen voor adaptieve vormgebieden tot stand brengen en een verschillende gebruikerservaring verstrekken. Vervang bijvoorbeeld keuzerondjes en selectievakjes door schakelknoppen of gebruik aangepaste jQuery-plug-ins om gebruikersinvoer in velden zoals telefoonnummers of e-mailadressen te beperken.
+De adaptieve vormen gebruiken het [&#x200B; verschijningskader &#x200B;](/help/forms/using/introduction-widgets.md) om u te helpen douaneverschijningen voor adaptieve vormgebieden tot stand brengen en een verschillende gebruikerservaring verstrekken. Vervang bijvoorbeeld keuzerondjes en selectievakjes door schakelknoppen of gebruik aangepaste jQuery-plug-ins om gebruikersinvoer in velden zoals telefoonnummers of e-mailadressen te beperken.
 
 In dit document wordt uitgelegd hoe u met een jQuery-insteekmodule deze alternatieve ervaringen voor adaptieve formuliervelden kunt maken. Daarnaast wordt een voorbeeld weergegeven voor het maken van een aangepaste weergave voor numerieke veldcomponenten die worden weergegeven als een numerieke stapfunctie of schuifregelaar.
 
@@ -163,7 +163,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    * De methode `getEventMap` wijst gebeurtenissen toe die door de widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen voor de standaardwidget toe en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
    * De `showDisplayValue` en `showValue` passen de weergave- en bewerkingsafbeeldingsvoorwaarde toe en kunnen worden overschreven voor een ander gedrag.
 
-   * De `getCommitValue` methode wordt geroepen door het adaptieve vormenkader wanneer de `commit` gebeurtenis voorkomt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Voor meer informatie, zie [ Aangepaste Uitdrukkingen van Forms ](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * De `getCommitValue` methode wordt geroepen door het adaptieve vormenkader wanneer de `commit` gebeurtenis voorkomt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Voor meer informatie, zie [&#x200B; Aangepaste Uitdrukkingen van Forms &#x200B;](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * Het sjabloonbestand biedt voorbeeldimplementatie voor verschillende methoden. Verwijder methoden die niet moeten worden uitgebreid.
 
@@ -226,11 +226,11 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
    1. Klik op **[!UICONTROL Finish]**.
 
-      ![ eclipse-screenshot ](assets/eclipse-screenshot.png)
+      ![&#x200B; eclipse-screenshot &#x200B;](assets/eclipse-screenshot.png)
 
 1. Selecteer de widget die voor de aangepaste weergave moet worden gebruikt. In dit voorbeeld wordt de volgende numerieke stepper-widget gebruikt:
 
-   [ https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
+   [&#x200B; https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
    Controleer in het Eclipse-project de insteekcode in het `plugin.js` -bestand om te controleren of deze voldoet aan de vereisten voor de weergave. In dit voorbeeld voldoet de weergave aan de volgende vereisten:
 

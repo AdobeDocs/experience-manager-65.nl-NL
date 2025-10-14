@@ -25,7 +25,7 @@ U kunt een PDF-Portfolio samenstellen met de API voor Java samenstellen en webse
 
 De volgende illustratie is een het schermschot van een portefeuille met *op een lay-out van de de stijlstijl van het Beeld*.
 
-![ ap_ap_portfolio ](assets/ap_ap_portfolio.png)
+![&#x200B; ap_ap_portfolio &#x200B;](assets/ap_ap_portfolio.png)
 
 Het maken van een PDF-Portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
 
@@ -55,11 +55,11 @@ Het DXX-document moet een `Portfolio` -tag met een geneste `Navigator` -tag beva
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
-* [ Eerste Stappen voor Auteurs ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
+* [&#x200B; Eerste Stappen voor Auteurs &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
 
 >[!NOTE]
 >

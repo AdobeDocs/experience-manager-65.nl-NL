@@ -17,7 +17,7 @@ ht-degree: 12%
 
 De Asset Editor is de pagina die wordt geopend wanneer op een element wordt geklikt dat via Asset Share wordt gevonden, zodat de gebruiker deze aspecten van het element kan bewerken, zoals metagegevens, miniaturen, titels en tags.
 
-De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in [ Creërend en Vormend een Pagina van de Redacteur van Activa ](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in [&#x200B; Creërend en Vormend een Pagina van de Redacteur van Activa &#x200B;](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
 Naast het gebruik van reeds bestaande editorcomponenten, kunnen [!DNL Adobe Experience Manager] ontwikkelaars ook hun eigen componenten tot stand brengen.
 
@@ -69,8 +69,8 @@ De Asset Editor gebruikt de Formulierkiezer, waarmee u bronnen - in dit geval el
 
 Bijvoorbeeld:
 
-* Onbewerkte formulierpagina: [ http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* Middel dat in de vormpagina wordt geladen: [ http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html ](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Onbewerkte formulierpagina: [&#x200B; http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* Middel dat in de vormpagina wordt geladen: [&#x200B; http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html &#x200B;](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 De voorbeeldhandgrepen in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) doen het volgende:
 
@@ -205,7 +205,7 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
 
 ## Opties voor metagegevens wijzigen {#modifying-metadata-options}
 
-U kunt namespaces beschikbaar in de [ meta-gegevensvorm ](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) wijzigen.
+U kunt namespaces beschikbaar in de [&#x200B; meta-gegevensvorm &#x200B;](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) wijzigen.
 
 De momenteel beschikbare metagegevens worden gedefinieerd in `/libs/dam/options/metadata` :
 

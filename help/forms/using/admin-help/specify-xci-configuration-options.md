@@ -22,7 +22,7 @@ ht-degree: 0%
 > 
 > Zorg ervoor dat de gebruiker beheerdersrechten heeft om toegang te krijgen tot de beheerdersconsole.
 
-Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. Zie [ dossierplaatsen voor Output ](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output) specificeren.
+Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. Zie [&#x200B; dossierplaatsen voor Output &#x200B;](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output) specificeren.
 
 Standaard overschrijft Output enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 

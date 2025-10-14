@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM heeft een opt-in procedure om u te helpen met Adobe Analytics en Adobe Target integreren. Dit is beschikbaar uit-van-de-doos, als vooraf geladen taak die aan de groep van de beheerdergebruiker wordt toegewezen.
 
-Wanneer u login als beheerder deze taak (**Vormend Analytics &amp; het richten**) is beschikbaar bij [ Inbox ](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Gebaseerd op de geloofsbrieven u levert, helpt het u deze diensten vormen en integreren.
+Wanneer u login als beheerder deze taak (**Vormend Analytics &amp; het richten**) is beschikbaar bij [&#x200B; Inbox &#x200B;](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Gebaseerd op de geloofsbrieven u levert, helpt het u deze diensten vormen en integreren.
 
 U hebt de volgende opties voor het configureren van de integratie:
 
@@ -30,7 +30,7 @@ U hebt de volgende opties voor het configureren van de integratie:
 
 * Sluit af van de integratie.
 
-  Overweeg deze optie als u verkiest [ manueel de integratie ](/help/sites-administering/marketing-cloud.md) te vormen. Zie ook [ Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM ](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  Overweeg deze optie als u verkiest [&#x200B; manueel de integratie &#x200B;](/help/sites-administering/marketing-cloud.md) te vormen. Zie ook [&#x200B; Integrerend AEM met Adobe Target en Adobe Analytics gebruikend DTM &#x200B;](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configureer de instelling en provisioning met behulp van een script.
 
@@ -45,7 +45,7 @@ Voor beide opties moet u de gegevens van de gebruikersaccount opgeven en de pagi
 
 >[!NOTE]
 >
->U kunt desgewenst informatie over Analytics en Target-account opgeven met behulp van een eigenschappenbestand dat wordt gelezen bij het opstarten van de server. Zie [ het verstrekken van de Informatie van de Rekening die een Dossier van Eigenschappen ](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file) gebruikt.
+>U kunt desgewenst informatie over Analytics en Target-account opgeven met behulp van een eigenschappenbestand dat wordt gelezen bij het opstarten van de server. Zie [&#x200B; het verstrekken van de Informatie van de Rekening die een Dossier van Eigenschappen &#x200B;](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file) gebruikt.
 
 Wanneer u zich bij de integratie aanmeldt, voert AEM de volgende taken uit:
 
@@ -55,15 +55,15 @@ Wanneer u zich bij de integratie aanmeldt, voert AEM de volgende taken uit:
 
 >[!NOTE]
 >
->AT.js is de standaardcliëntbibliotheek. Dit wordt gevormd onder uw [ configuratie van de de dienstensectoren van de doelwolk ](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
+>AT.js is de standaardcliëntbibliotheek. Dit wordt gevormd onder uw [&#x200B; configuratie van de de dienstensectoren van de doelwolk &#x200B;](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
 >
 >De Adobe adviseert dat u AT.js als cliëntbibliotheek gebruikt.
 
 Als u zich wilt aanmelden bij de vooraf geladen taak die buiten het vak valt:
 
-1. Van uw [ Inbox, selecteer en **open** de Configure Analytics &amp; het richten ](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
+1. Van uw [&#x200B; Inbox, selecteer en **open** de Configure Analytics &amp; het richten &#x200B;](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
 
-   ![ optin-01 ](assets/optin-01.png)
+   ![&#x200B; optin-01 &#x200B;](assets/optin-01.png)
 
 1. Voor Analytics:
 
@@ -92,11 +92,11 @@ Sluit de integratie met Analytics en Target af als u:
 * Niet met deze producten integreren.
 * Voorkeur om de integratie manueel te vormen.
 
-  Voor informatie over het vormen van de integratie manueel, zie [ Integrerend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md) en [ Integrerend met Adobe Target ](/help/sites-administering/target.md).
+  Voor informatie over het vormen van de integratie manueel, zie [&#x200B; Integrerend met Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md) en [&#x200B; Integrerend met Adobe Target &#x200B;](/help/sites-administering/target.md).
 
 Als u wilt afmelden, moet u de vooraf geladen taak voltooien:
 
-* Van uw [ Inbox, selecteer en **Volledig** vormen Analytics &amp; het richten ](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
+* Van uw [&#x200B; Inbox, selecteer en **Volledig** vormen Analytics &amp; het richten &#x200B;](/help/sites-authoring/inbox.md#taking-action-on-an-item) taak.
 
 ## Accountinformatie opgeven met een eigenschappenbestand {#providing-account-information-using-a-properties-file}
 
@@ -142,17 +142,17 @@ In de volgende procedure wordt beschreven hoe u zich bij de integratie kunt aanm
 
 1. Voeg de eigenschapswaarden toe volgens uw Analytics- en/of Target-accounts.
 1. Start of start de server opnieuw op en meld u vervolgens aan met een beheerdersaccount.
-1. Open Configure Analytics &amp; het richten taak zoals die in [ wordt beschreven Vormend de Integratie ](/help/sites-administering/opt-in.md#configuring-the-integration). In plaats van om uw accountgegevens te vragen, gebruikt de wizard de waarden uit het `.properties` -bestand.
+1. Open Configure Analytics &amp; het richten taak zoals die in [&#x200B; wordt beschreven Vormend de Integratie &#x200B;](/help/sites-administering/opt-in.md#configuring-the-integration). In plaats van om uw accountgegevens te vragen, gebruikt de wizard de waarden uit het `.properties` -bestand.
 
    Selecteer **toevoegen** voor de aangewezen dienst, dan met de tovenaar verdergaan.
 
-   ![ optin-02 ](assets/optin-02.png)
+   ![&#x200B; optin-02 &#x200B;](assets/optin-02.png)
 
 ## Informatie over de cloudconfiguraties {#about-the-cloud-configurations}
 
 Wanneer u de integratie met Analytics en Target configureert, AEM automatisch de vereiste cloudconfiguraties en -frameworks. De cloudconfiguratie van Analytics heet bijvoorbeeld Provisioned Analytics Account.
 
-U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie [ Gegevens van de Component van de Toewijzing met de Eigenschappen van Adobe Analytics ](/help/sites-administering/adobeanalytics-mapping.md) en [ een Kader van het Doel ](/help/sites-administering/target.md) toevoegen.)
+U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie [&#x200B; Gegevens van de Component van de Toewijzing met de Eigenschappen van Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics-mapping.md) en [&#x200B; een Kader van het Doel &#x200B;](/help/sites-administering/target.md) toevoegen.)
 
 >[!NOTE]
 >

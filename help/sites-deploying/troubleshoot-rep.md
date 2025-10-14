@@ -100,7 +100,7 @@ In het algemeen moeten paginamachtigingen niet door de auteur worden gerepliceer
 
 Soms wordt de replicatiewachtrij geblokkeerd wanneer wordt geprobeerd naamruimtegegevens te repliceren van de auteurinstantie naar de publicatieinstantie. Dit gebeurt omdat de replicatiegebruiker geen `jcr:namespaceManagement` bevoegdheid heeft. Om dit probleem te voorkomen, moet u ervoor zorgen dat:
 
-* De replicatiegebruiker (zoals die onder [ wordt gevormd Vervoer ](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Gebruiker) bestaat ook op de instantie van Publish.
+* De replicatiegebruiker (zoals die onder [&#x200B; wordt gevormd Vervoer &#x200B;](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Gebruiker) bestaat ook op de instantie van Publish.
 * De gebruiker heeft lees- en schrijfrechten op het pad waar de inhoud is geïnstalleerd.
 * De gebruiker heeft `jcr:namespaceManagement` bevoegdheden op het niveau van de gegevensopslagruimte. U kunt deze bevoegdheid als volgt toekennen:
 

@@ -29,9 +29,9 @@ AEM Mobile maakt deel uit van het Adobe Experience Manager multi-channel digital
 AEM Mobile biedt meerdere methoden voor het maken van apps. De drie verschillende manieren waarop u apps kunt maken zijn:
 
 * **[Gebruikend de Diensten op bestelling met AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Gebruikend de Diensten op bestelling zonder AEM ](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Gebruikend de Diensten op bestelling zonder AEM &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Gebruikend de Onderneming van Adobe PhoneGap met AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Als u aan Adobe Experience Manager nieuw bent, kunt u door [ willen lopen Begonnen het worden met AEM ](/help/sites-deploying/deploy.md).
+>Als u aan Adobe Experience Manager nieuw bent, kunt u door [&#x200B; willen lopen Begonnen het worden met AEM &#x200B;](/help/sites-deploying/deploy.md).

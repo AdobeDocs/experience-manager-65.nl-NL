@@ -210,4 +210,4 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 
 >[!NOTE]
 >
->Om met de toepassingsontwikkeling van AEM Mobile te beginnen, klik [ hier ](/help/mobile/getting-started-aem-mobile.md).
+>Om met de toepassingsontwikkeling van AEM Mobile te beginnen, klik [&#x200B; hier &#x200B;](/help/mobile/getting-started-aem-mobile.md).

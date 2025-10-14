@@ -22,7 +22,7 @@ De *globale documentopslag (GDS)* folder is een folder die wordt gebruikt om lan
 
 Bestanden met een lange levensduur kunnen vertrouwelijke gebruikersgegevens bevatten. Deze informatie kan speciale geloofsbrieven vereisen wanneer betreden door de AEM vormen APIs of gebruikersinterfaces te gebruiken. Het is belangrijk dat de GDS-map correct wordt beveiligd via het besturingssysteem. Alleen de beheerdersaccount die wordt gebruikt om de toepassingsserver uit te voeren, moet lees-/schrijftoegang hebben tot de GDS-map.
 
-Naast het selecteren van een veilige, hoogst beschikbare folder voor GDS, kunt u ook verkiezen om documentopslag in het gegevensbestand toe te laten. Zelfs als u de AEM-formulierdatabase gebruikt voor documentopslag, vereist AEM formulieren nog steeds de GDS-map. (Zie [ Reservekopties wanneer het gegevensbestand voor documentopslag ](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage) wordt gebruikt.)
+Naast het selecteren van een veilige, hoogst beschikbare folder voor GDS, kunt u ook verkiezen om documentopslag in het gegevensbestand toe te laten. Zelfs als u de AEM-formulierdatabase gebruikt voor documentopslag, vereist AEM formulieren nog steeds de GDS-map. (Zie [&#x200B; Reservekopties wanneer het gegevensbestand voor documentopslag &#x200B;](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage) wordt gebruikt.)
 
 AEM toepassingsgegevens van formulieren bevinden zich in de GDS-map en de AEM formulierdatabase. In de volgende tabel worden de gegevens en de locaties beschreven.
 
@@ -105,4 +105,4 @@ Modules en AEM formulierarchiefbestanden worden verpakt in JAR-bestanden. Omdat 
 
 >[!NOTE]
 >
->Alvorens u de de dienstcontainers opstelt, zorg ervoor dat u creeerde en de folder GDS vormde. (Zie [ Vormend de GDS folder ](global-document-storage-directory.md#configuring-the-gds-directory))
+>Alvorens u de de dienstcontainers opstelt, zorg ervoor dat u creeerde en de folder GDS vormde. (Zie [&#x200B; Vormend de GDS folder &#x200B;](global-document-storage-directory.md#configuring-the-gds-directory))

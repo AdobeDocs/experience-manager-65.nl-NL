@@ -27,19 +27,19 @@ Standaard worden alle geüploade elementen verwerkt met behulp van de [!UICONTRO
 
 Zie **[!UICONTROL Tools > Workflow > Models]** in [!DNL Experience Manager] voor meer informatie over de verschillende workflowmodellen die standaard beschikbaar zijn.
 
-![ Sommige van het standaardwerkschema ](assets/aem-default-workflows.png)
+![&#x200B; Sommige van het standaardwerkschema &#x200B;](assets/aem-default-workflows.png)
 
 *Cijfer: Sommige standaardwerkschema&#39;s beschikbaar in [!DNL Experience Manager].*
 
 ## Workflows toepassen om elementen te verwerken {#applying-workflows-to-assets}
 
-Workflows toepassen op digitale elementen is hetzelfde als voor websitepagina&#39;s. Voor een volledige gids op om werkschema&#39;s tot stand te brengen en te gebruiken, zie [ werkschema&#39;s van het begin ](/help/sites-authoring/workflows-participating.md).
+Workflows toepassen op digitale elementen is hetzelfde als voor websitepagina&#39;s. Voor een volledige gids op om werkschema&#39;s tot stand te brengen en te gebruiken, zie [&#x200B; werkschema&#39;s van het begin &#x200B;](/help/sites-authoring/workflows-participating.md).
 
 Gebruik workflows in digitale elementen om het element te activeren of watermerken te maken. Veel van de workflows voor elementen worden automatisch ingeschakeld. De workflow die automatisch een uitvoering maakt nadat een afbeelding is bewerkt, wordt bijvoorbeeld automatisch ingeschakeld.
 
 >[!NOTE]
 >
->Als een werkschema beschikbaar in Klassieke UI niet beschikbaar in aanraking-Toegelaten UI zoals [!UICONTROL Request to Activate] en [!UICONTROL Request to Deactivate] is, zie [ werkschemamodellen ](/help/sites-developing/workflows-models.md#classic2touchui) maken.
+>Als een werkschema beschikbaar in Klassieke UI niet beschikbaar in aanraking-Toegelaten UI zoals [!UICONTROL Request to Activate] en [!UICONTROL Request to Deactivate] is, zie [&#x200B; werkschemamodellen &#x200B;](/help/sites-developing/workflows-models.md#classic2touchui) maken.
 
 ## Een workflow toepassen op een element {#apply-a-workflow-to-an-asset}
 
@@ -50,7 +50,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
 1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en klik op het element om de elementpagina te openen. Selecteer **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
 
-   ![ chronologie-1 ](assets/timeline.png)
+   ![&#x200B; chronologie-1 &#x200B;](assets/timeline.png)
 
 1. Klik op **[!UICONTROL Actions]** onder aan om de lijst met acties te openen die beschikbaar zijn voor het element.
 
@@ -60,33 +60,33 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
 1. (Optioneel) Geef een titel op voor de workflow die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 
-   ![ uitgezocht werkschema, verstrek een titel en klik begin ](assets/start-workflow.png)
+   ![&#x200B; uitgezocht werkschema, verstrek een titel en klik begin &#x200B;](assets/start-workflow.png)
 
 1. Klik op **[!UICONTROL Start]** en vervolgens op **[!UICONTROL Proceed]** . Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
-   ![ chlimage_1-256 ](assets/chlimage_1-52.png)
+   ![&#x200B; chlimage_1-256 &#x200B;](assets/chlimage_1-52.png)
 
 ## Een workflow toepassen op meerdere elementen {#applying-a-workflow-to-multiple-assets}
 
 1. Navigeer in de [!DNL Assets] -console naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer **[!UICONTROL Timeline]** in het menu om de tijdlijn weer te geven.
 
-   ![ screen_shot_2019-03-06at123325pm ](assets/chlimage_1-136.png)
+   ![&#x200B; screen_shot_2019-03-06at123325pm &#x200B;](assets/chlimage_1-136.png)
 
-1. Klik **[!UICONTROL Actions]** ![ chevron omhoog ](assets/do-not-localize/chevron-up-icon.png) bij de bodem.
+1. Klik **[!UICONTROL Actions]** ![&#x200B; chevron omhoog &#x200B;](assets/do-not-localize/chevron-up-icon.png) bij de bodem.
 1. Klik op **[!UICONTROL Start Workflow]**. Selecteer in het dialoogvenster **[!UICONTROL Start Workflow]** een workflowmodel in de lijst.
 
-   ![ begin werkschema ](assets/start-workflow.png)
+   ![&#x200B; begin werkschema &#x200B;](assets/start-workflow.png)
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle elementen die u hebt geselecteerd.
 
 ## Een workflow toepassen op meerdere mappen {#applying-a-workflow-to-multiple-folders}
 
-De procedure voor het toepassen van een workflow op meerdere mappen is vergelijkbaar met de procedure voor het toepassen van een workflow op meerdere elementen. Selecteer de omslagen in de [!DNL Assets] interface, en voer stappen 2-7 van de procedure [ een werkschema op veelvoudige activa ](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets) toe.
+De procedure voor het toepassen van een workflow op meerdere mappen is vergelijkbaar met de procedure voor het toepassen van een workflow op meerdere elementen. Selecteer de omslagen in de [!DNL Assets] interface, en voer stappen 2-7 van de procedure [&#x200B; een werkschema op veelvoudige activa &#x200B;](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets) toe.
 
 ## Een workflow toepassen op een verzameling {#applying-a-workflow-to-a-collection}
 
-Zie [ een werkschema op een inzameling ](/help/assets/manage-collections.md#running-a-workflow-on-a-collection) toepassen.
+Zie [&#x200B; een werkschema op een inzameling &#x200B;](/help/assets/manage-collections.md#running-a-workflow-on-a-collection) toepassen.
 
 ## Een workflow automatisch starten om elementen voorwaardelijk te verwerken {#auto-execute-workflow-on-some-assets}
 
@@ -95,7 +95,7 @@ Beheerders kunnen de workflow zodanig configureren dat elementen automatisch wor
 Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat deze uitvoert. Een werkstroomopstarter bewaakt wijzigingen in de inhoudsopslagplaats en voert de werkstroom uit wanneer aan de vooraf gedefinieerde voorwaarden is voldaan. Beheerders kunnen toegang verlenen tot marketers om de workflows te maken en de starcher te configureren. Gebruikers kunnen de standaardworkflow van [!UICONTROL DAM Update Asset] wijzigen en zo de extra stappen toevoegen die nodig zijn om specifieke elementen te verwerken. De workflow wordt uitgevoerd op alle nieuw geüploade elementen. Gebruik een van de volgende methoden om de uitvoering van de extra stappen voor specifieke elementen te beperken:
 
 * Maak een kopie van de [!UICONTROL DAM Update Asset] -workflow en wijzig deze om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
-* De extra verwerkingsstappen kunnen worden toegevoegd gebruikend [ OF ](/help/sites-developing/workflows-step-ref.md#or-split) zoals voorwaardelijk toepasselijk op zo vele omslagen zoals vereist.
+* De extra verwerkingsstappen kunnen worden toegevoegd gebruikend [&#x200B; OF &#x200B;](/help/sites-developing/workflows-step-ref.md#or-split) zoals voorwaardelijk toepasselijk op zo vele omslagen zoals vereist.
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
@@ -104,7 +104,7 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 
 >[!MORELIKETHIS]
 >
->* [ ben en deel aan werkschema&#39;s ](/help/sites-authoring/workflows.md) van toepassing
->* [ creeer werkschemamodellen en breid werkschemafunctionaliteit uit ](/help/sites-developing/workflows.md)
->* [ Methoden om werkschema&#39;s uit te voeren ](/help/sites-administering/workflows-starting.md)
->* [ Beste praktijken van het Werkschema ](/help/sites-developing/workflows-best-practices.md)
+>* [&#x200B; ben en deel aan werkschema&#39;s &#x200B;](/help/sites-authoring/workflows.md) van toepassing
+>* [&#x200B; creeer werkschemamodellen en breid werkschemafunctionaliteit uit &#x200B;](/help/sites-developing/workflows.md)
+>* [&#x200B; Methoden om werkschema&#39;s uit te voeren &#x200B;](/help/sites-administering/workflows-starting.md)
+>* [&#x200B; Beste praktijken van het Werkschema &#x200B;](/help/sites-developing/workflows-best-practices.md)

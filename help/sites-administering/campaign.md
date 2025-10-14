@@ -27,7 +27,7 @@ Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren 
 >
 >In dit document wordt beschreven hoe Adobe Campaign wordt geïntegreerd met AEM 6.5, de oplossing op locatie of de oplossing die door AMS wordt gehost AEM.
 >
->Voor details bij het integreren van Adobe Campaign met AEM as a Cloud Service, ziet de wolk-inheemse AEM oplossing, [ dit document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=nl-NL)
+>Voor details bij het integreren van Adobe Campaign met AEM as a Cloud Service, ziet de wolk-inheemse AEM oplossing, [&#x200B; dit document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=nl-NL)
 
 ## Integreren met Adobe Campaign Classic {#acc}
 
@@ -35,21 +35,21 @@ Er zijn verschillende Adobe Campaign Classic-versies (ACC). De ondersteuning voo
 
 | ACC-versie | Integratie met AEM 6.5 <br> op locaties | Integratie met AEM 6.5 <br> AMS |
 |---|---|---|
-| [ v7 ](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=nl-NL) | Ondersteund | Ondersteund |
-| [ v8 de Console van de Cliënt ](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=nl-NL) | Ondersteund | Ondersteund |
+| [&#x200B; v7 &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=nl-NL) | Ondersteund | Ondersteund |
+| [&#x200B; v8 de Console van de Cliënt &#x200B;](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=nl-NL) | Ondersteund | Ondersteund |
 
 In de volgende documentatie wordt beschreven hoe u AEM kunt integreren met Adobe Campaign Classic.
 
-* [ Integrerend met Adobe Campaign Classic ](/help/sites-administering/campaignonpremise.md) - leer de geleidelijke details bij het vormen van de integratie.
+* [&#x200B; Integrerend met Adobe Campaign Classic &#x200B;](/help/sites-administering/campaignonpremise.md) - leer de geleidelijke details bij het vormen van de integratie.
 
 In de volgende aanvullende documentatie wordt beschreven hoe u de integratie kunt gebruiken.
 
-* [ de Componenten van de Kern E-mail ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL) - Leer over de standaard e-mailcomponenten die u aan de inhoud van de Campagne van de auteur in AEM kunt gebruiken.
-* [ het Oplossen van problemen Uw Integratie van Adobe Campaign Classic ](/help/sites-administering/troubleshooting-campaignintegration.md) - Leer hoe te om de gemeenschappelijkste kwesties met de integratie AEM-ACC te bevestigen.
+* [&#x200B; de Componenten van de Kern E-mail &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL) - Leer over de standaard e-mailcomponenten die u aan de inhoud van de Campagne van de auteur in AEM kunt gebruiken.
+* [&#x200B; het Oplossen van problemen Uw Integratie van Adobe Campaign Classic &#x200B;](/help/sites-administering/troubleshooting-campaignintegration.md) - Leer hoe te om de gemeenschappelijkste kwesties met de integratie AEM-ACC te bevestigen.
 
 ## Integreren met Adobe Campaign Standard {#acs}
 
-De integratie van [ Adobe Campaign Standard ](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl-NL) (ACS) met AEM hangt van af als AEM op-gebouw op in Adobe wordt geïnstalleerd beheert de Diensten (AMS).
+De integratie van [&#x200B; Adobe Campaign Standard &#x200B;](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=nl-NL) (ACS) met AEM hangt van af als AEM op-gebouw op in Adobe wordt geïnstalleerd beheert de Diensten (AMS).
 
 | Integratie met AEM 6.5 <br> op locaties | Integratie met AEM 6.5 <br> AMS |
 |---|---|
@@ -62,4 +62,4 @@ In de volgende documentatie wordt beschreven hoe u AEM kunt integreren met Adobe
 
 In de volgende aanvullende documentatie wordt beschreven hoe u de integratie kunt gebruiken.
 
-* [ de Componenten van de Kern E-mail ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)
+* [&#x200B; de Componenten van de Kern E-mail &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=nl-NL)

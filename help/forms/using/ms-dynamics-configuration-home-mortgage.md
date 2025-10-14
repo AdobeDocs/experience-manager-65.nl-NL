@@ -22,7 +22,7 @@ Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken via adaptieve for
 
 Microsoft® Dynamics 365 is een ERP-software (Customer Relationship Management) en een ERP-software (Customer Relationship Management) die bedrijfsoplossingen biedt voor het maken en beheren van klantaccounts, contactpersonen, leads, mogelijkheden en gevallen.
 
-AEM Forms verleent de wolkendienst om Dynamiek 365 met [ de module van de Integratie van Gegevens van Forms ](/help/forms/using/data-integration.md) te integreren. Alvorens u de de toepassingsanalyse van de Kortere pas van het Huis met het scenario van de Dynamiek Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
+AEM Forms verleent de wolkendienst om Dynamiek 365 met [&#x200B; de module van de Integratie van Gegevens van Forms &#x200B;](/help/forms/using/data-integration.md) te integreren. Alvorens u de de toepassingsanalyse van de Kortere pas van het Huis met het scenario van de Dynamiek Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
 
 ## Vereisten {#prerequisites}
 
@@ -42,13 +42,13 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 1. Schuif omlaag naar de rekenmachine voor de beginmeter.
 1. Markeer het deelvenster van de rechterkolom (rekenmachine) en selecteer dit om het pop-upmenu weer te geven. Selecteer Configureren in het pop-upmenu. Het dialoogvenster AEM Forms-container bewerken wordt geopend.
 
-   ![ calculatorconfigpanel ](assets/calculatorconfigurepanel.png)
+   ![&#x200B; calculatorconfigpanel &#x200B;](assets/calculatorconfigurepanel.png)
 
 1. In de Edit dialoog van de Container van AEM Forms, doorblader de activa weg en selecteer huis-hypotheek-calculator bij de volgende weg en selecteer **bevestigen**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
-   ![ selectassetpath ](assets/selectassetpath.png)
+   ![&#x200B; selectassetpath &#x200B;](assets/selectassetpath.png)
 
 1. Selecteer **Gereed**.
 1. Publish de bewerkte pagina.

@@ -24,13 +24,13 @@ Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet 
 
 ContextHub-winkels worden gemaakt van geregistreerde winkelkandidaten. Als u een aangepaste winkel wilt maken, maakt en registreert u een winkelkandidaat.
 
-Het dossier van JavaScript dat de code omvat die leidt en registreert de opslagkandidaat moet in de omslag van de a [ cliëntbibliotheek ](/help/sites-developing/clientlibs.md#creating-client-library-folders) worden omvat. De categorie van de map moet overeenkomen met het volgende patroon:
+Het dossier van JavaScript dat de code omvat die leidt en registreert de opslagkandidaat moet in de omslag van de a [&#x200B; cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md#creating-client-library-folders) worden omvat. De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```xml
 contexthub.store.[storeType]
 ```
 
-Het `[storeType]` -gedeelte van de categorie is de `storeType` waarmee de winkelkandidaat is geregistreerd. (Zie [ registrerend een Kandidaat van de Winkel ContextHub ](/help/sites-developing/ch-extend.md#registering-a-contexthub-store-candidate)). Voor het storeType van `contexthub.mystore` moet de categorie van de clientbibliotheekmap bijvoorbeeld `contexthub.store.contexthub.mystore` zijn.
+Het `[storeType]` -gedeelte van de categorie is de `storeType` waarmee de winkelkandidaat is geregistreerd. (Zie [&#x200B; registrerend een Kandidaat van de Winkel ContextHub &#x200B;](/help/sites-developing/ch-extend.md#registering-a-contexthub-store-candidate)). Voor het storeType van `contexthub.mystore` moet de categorie van de clientbibliotheekmap bijvoorbeeld `contexthub.store.contexthub.mystore` zijn.
 
 ### Een ContextHub Store-kandidaat maken {#creating-a-contexthub-store-candidate}
 
@@ -50,7 +50,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-Realistisch, bepalen uw kandidaten van de douaneopslag extra functies of treden de aanvankelijke configuratie van de opslag met voeten. Verscheidene [ de kandidaten van de steekproefopslag ](/help/sites-developing/ch-samplestores.md) zijn geïnstalleerd in de bewaarplaats hieronder `/libs/granite/contexthub/components/stores`. Als u van deze voorbeelden wilt leren, opent u de JavaScript-bestanden met CRXDE Lite.
+Realistisch, bepalen uw kandidaten van de douaneopslag extra functies of treden de aanvankelijke configuratie van de opslag met voeten. Verscheidene [&#x200B; de kandidaten van de steekproefopslag &#x200B;](/help/sites-developing/ch-samplestores.md) zijn geïnstalleerd in de bewaarplaats hieronder `/libs/granite/contexthub/components/stores`. Als u van deze voorbeelden wilt leren, opent u de JavaScript-bestanden met CRXDE Lite.
 
 ### Registreren van een ContextHub Store-kandidaat {#registering-a-contexthub-store-candidate}
 
@@ -65,11 +65,11 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-Gewoonlijk is slechts één kandidaat nodig en kan de prioriteit worden ingesteld op `0` . Maar als u geinteresseerd bent, kunt u over [ geavanceerdere registraties leren, ](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) die één van weinig opslagimplementaties om toestaat worden gekozen gebaseerd op de voorwaarde van JavaScript (`applies`) en kandidaatprioriteit.
+Gewoonlijk is slechts één kandidaat nodig en kan de prioriteit worden ingesteld op `0` . Maar als u geinteresseerd bent, kunt u over [&#x200B; geavanceerdere registraties leren, &#x200B;](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) die één van weinig opslagimplementaties om toestaat worden gekozen gebaseerd op de voorwaarde van JavaScript (`applies`) en kandidaatprioriteit.
 
 ## ContextHub UI-moduletypen maken {#creating-contexthub-ui-module-types}
 
-Creeer de moduletypes van douane UI wanneer degenen die [ met ContextHub ](/help/sites-developing/ch-samplemodules.md) worden geïnstalleerd niet aan uw vereisten voldoen. Als u een type UI-module wilt maken, maakt u een renderer voor een UI-module door de klasse `ContextHub.UI.BaseModuleRenderer` uit te breiden en deze vervolgens te registreren bij `ContextHub.UI` .
+Creeer de moduletypes van douane UI wanneer degenen die [&#x200B; met ContextHub &#x200B;](/help/sites-developing/ch-samplemodules.md) worden geïnstalleerd niet aan uw vereisten voldoen. Als u een type UI-module wilt maken, maakt u een renderer voor een UI-module door de klasse `ContextHub.UI.BaseModuleRenderer` uit te breiden en deze vervolgens te registreren bij `ContextHub.UI` .
 
 Als u een renderer voor een UI-module wilt maken, maakt u een `Class` -object dat de logica bevat die de UI-module rendert. De klasse moet minimaal de volgende handelingen uitvoeren:
 
@@ -106,7 +106,7 @@ Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme fun
 }());
 ```
 
-Het dossier van JavaScript dat de code omvat die tot en registreert renderer moet in de omslag van de a [ cliëntbibliotheek ](/help/sites-developing/clientlibs.md#creating-client-library-folders) worden omvat. De categorie van de map moet overeenkomen met het volgende patroon:
+Het dossier van JavaScript dat de code omvat die tot en registreert renderer moet in de omslag van de a [&#x200B; cliëntbibliotheek &#x200B;](/help/sites-developing/clientlibs.md#creating-client-library-folders) worden omvat. De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```xml
 contexthub.module.[moduleType]

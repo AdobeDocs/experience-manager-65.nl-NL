@@ -39,7 +39,7 @@ Onthoud dat u apparaatgroepen instelt:
 
 ## Configuratie {#configuration}
 
-De adaptieve teruggevende selecteurs kunnen voor bestaande apparatengroepen of aan [ groepen worden gevormd die u zelf hebt gecreeerd.](/help/sites-developing/mobile.md#device-groups)
+De adaptieve teruggevende selecteurs kunnen voor bestaande apparatengroepen of aan [&#x200B; groepen worden gevormd die u zelf hebt gecreeerd.](/help/sites-developing/mobile.md#device-groups)
 
 Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vormen om een adaptieve teruggevende selecteur als deel van het **malplaatje van de Pagina van de Ervaring** binnen Wij.Retail te hebben.
 
@@ -47,11 +47,11 @@ Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vorm
 
    Plaats de optie **maak Mededinger** onbruikbaar en bewaar.
 
-   ![ chlimage_1-157 ](assets/chlimage_1-157.png)
+   ![&#x200B; chlimage_1-157 &#x200B;](assets/chlimage_1-157.png)
 
 1. De selecteur is beschikbaar voor **BlackBerry®** en **iPhone 4** op voorwaarde dat de slimme Telefoon van de apparatengroep **&#x200B;**&#x200B;aan het malplaatje en de paginastructuren in de volgende stappen wordt toegevoegd.
 
-   ![ chlimage_1-158 ](assets/chlimage_1-158.png)
+   ![&#x200B; chlimage_1-158 &#x200B;](assets/chlimage_1-158.png)
 
 1. Met CRXDE Lite kunt u de apparaatgroep gebruiken voor uw sjabloon door deze toe te voegen aan de eigenschap voor een tekenreeks met meerdere waarden `cq:deviceGroups` op de structuur van uw sjabloon.
 
@@ -61,7 +61,7 @@ Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vorm
 
    `/conf/we-retail/settings/wcm/templates/experience-page/structure/jcr:content`
 
-   ![ chlimage_1-159 ](assets/chlimage_1-159.png)
+   ![&#x200B; chlimage_1-159 &#x200B;](assets/chlimage_1-159.png)
 
 1. Met CRXDE Lite kunt u toestaan dat de apparaatgroep op uw site wordt gebruikt door deze toe te voegen aan de eigenschap multi-value string `cq:deviceGroups` op de structuur van uw site.
 
@@ -71,12 +71,12 @@ Voor dit voorbeeld, gaat u de bestaande apparatengroep **Slimme Telefoons** vorm
 
    `/content/we-retail/jcr:content`
 
-   ![ chlimage_1-160 ](assets/chlimage_1-160.png)
+   ![&#x200B; chlimage_1-160 &#x200B;](assets/chlimage_1-160.png)
 
-Nu wanneer het gebruiken van de [ mededinger ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de paginaredacteur (zoals wanneer [ wijzigend de lay-out ](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de gevormde apparatengroep kiest, wordt de pagina teruggegeven met een selecteur als deel van URL.
+Nu wanneer het gebruiken van de [&#x200B; mededinger &#x200B;](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de paginaredacteur (zoals wanneer [&#x200B; wijzigend de lay-out &#x200B;](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de gevormde apparatengroep kiest, wordt de pagina teruggegeven met een selecteur als deel van URL.
 
 In dit voorbeeld, wanneer het uitgeven van een pagina die op het **malplaatje van de Pagina van de Ervaring** wordt gebaseerd, en het kiezen van iPhone 4 in de mededinger, wordt de pagina teruggegeven met inbegrip van selecteur als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
 
 De pagina kan ook rechtstreeks worden aangeroepen met deze kiezer.
 
-![ chlimage_1-161 ](assets/chlimage_1-161.png)
+![&#x200B; chlimage_1-161 &#x200B;](assets/chlimage_1-161.png)

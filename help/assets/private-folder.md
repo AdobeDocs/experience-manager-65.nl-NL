@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 In de gebruikersinterface van [!DNL Adobe Experience Manager Assets] kunt u een persoonlijke map maken die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de elementen in de map weergeven of de elementen bewerken.
@@ -33,17 +33,17 @@ Persoonlijke map maken en delen:
 
 1. Klik in de [!DNL Assets] -console op **[!UICONTROL Create]** op de werkbalk en kies vervolgens **[!UICONTROL Folder]** in het menu.
 
-   ![ creeer activa omslag ](assets/Create-folder.png)
+   ![&#x200B; creeer activa omslag &#x200B;](assets/Create-folder.png)
 
 1. Voer in het dialoogvenster **[!UICONTROL Create Folder]** een titel en naam (optioneel) voor de map in en selecteer de optie **[!UICONTROL Private]** .
 
 1. Klik op **[!UICONTROL Create]**. Er wordt een persoonlijke map gemaakt.
 
-   ![ chlimage_1-413 ](assets/chlimage_1-413.png)
+   ![&#x200B; chlimage_1-413 &#x200B;](assets/chlimage_1-413.png)
 
 1. Als u de map wilt delen met andere gebruikers en de gebruikers rechten wilt toewijzen, selecteert u de map en klikt u op **[!UICONTROL Properties]** op de werkbalk.
 
-   ![ info optie ](assets/do-not-localize/info-circle-icon.png)
+   ![&#x200B; info optie &#x200B;](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >
@@ -51,7 +51,7 @@ Persoonlijke map maken en delen:
 
 1. Selecteer op de pagina **[!UICONTROL Folder Properties]** een gebruiker in de lijst **[!UICONTROL Add User]** , wijs een rol toe aan de gebruiker in uw persoonlijke map en klik op **[!UICONTROL Add]** .
 
-   ![ chlimage_1-415 ](assets/chlimage_1-415.png)
+   ![&#x200B; chlimage_1-415 &#x200B;](assets/chlimage_1-415.png)
 
    >[!NOTE]
    >
@@ -65,23 +65,23 @@ Persoonlijke map maken en delen:
 1. Klik op **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
 1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan bij [!DNL Assets] met de referenties van de gebruiker om het bericht weer te geven.
 
-   ![ chlimage_1-416 ](assets/chlimage_1-416.png)
+   ![&#x200B; chlimage_1-416 &#x200B;](assets/chlimage_1-416.png)
 
 1. Klik op [!UICONTROL Notifications] om een lijst met meldingen te openen.
 
-   ![ Lijst van berichten ](assets/Assets-Notification.png)
+   ![&#x200B; Lijst van berichten &#x200B;](assets/Assets-Notification.png)
 
 1. Klik op de vermelding voor de privémap die door de beheerder wordt gedeeld om de map te openen.
 
 >[!NOTE]
 >
->Om een privé omslag tot stand te brengen, vereist u Gelezen en wijzigt [ toegangsbeheertoestemmingen ](/help/sites-administering/security.md#permissions-in-aem) op de ouderomslag waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze machtigingen standaard niet voor u ingeschakeld op `/content/dam` . In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
+>Om een privé omslag tot stand te brengen, vereist u Gelezen en wijzigt [&#x200B; toegangsbeheertoestemmingen &#x200B;](/help/sites-administering/security.md#permissions-in-aem) op de ouderomslag waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze machtigingen standaard niet voor u ingeschakeld op `/content/dam` . In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
 
 ## Verwijderen van persoonlijke map {#delete-private-folder}
 
 U kunt een map verwijderen door de map te selecteren en de optie [!UICONTROL Delete] te selecteren in het bovenste menu of door de Backspace-toets op het toetsenbord te gebruiken.
 
-![ schrappingsoptie in hoogste menu ](assets/delete-option.png)
+![&#x200B; schrappingsoptie in hoogste menu &#x200B;](assets/delete-option.png)
 
 >[!CAUTION]
 >

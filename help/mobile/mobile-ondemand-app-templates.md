@@ -25,11 +25,11 @@ We.Unlimited App is een voorbeeldsjabloon die de shell van een volledig configur
 
 Als u deze voorbeeldsjabloon selecteert wanneer u een app maakt, wordt een dashboard met uitgebreide AEM Mobile-functies weergegeven.
 
-![ chlimage_1-70 ](assets/chlimage_1-70.png)
+![&#x200B; chlimage_1-70 &#x200B;](assets/chlimage_1-70.png)
 
 >[!NOTE]
 >
->Om uw toepassing en mobiele toepassingsinhoud van het Centrum van de Controle van de Apps van AEM Mobile te beheren, zie het [ dashboard van de Toepassing van AEM Mobile ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Om uw toepassing en mobiele toepassingsinhoud van het Centrum van de Controle van de Apps van AEM Mobile te beheren, zie het [&#x200B; dashboard van de Toepassing van AEM Mobile &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## App-sjablonen maken {#creating-app-templates}
 
@@ -81,7 +81,7 @@ Het artikel Onbeperkt is een voorbeeldsjabloon die een gebruikelijke lay-out van
 1. Klik **daarna** om de details voor sociaal het delen in te gaan.
 1. Klik **creëren** om het proces te beëindigen om een artikel te creëren gebruikend de steekproef. U of klikt **Gedaan** of **geeft Artikel** uit om de eigenschappen van dit artikel uit te geven.
 
-![ chlimage_1-71 ](assets/chlimage_1-71.png)
+![&#x200B; chlimage_1-71 &#x200B;](assets/chlimage_1-71.png)
 
 ### Componenten toevoegen aan artikel {#adding-components-to-article}
 
@@ -89,11 +89,11 @@ Nadat een auteur is gemaakt, kan hij of zij de inhoud van een artikel bewerken d
 
 Selecteer een artikel u wilt uitgeven, dan klik **uitgeven** om componenten aan het artikel toe te voegen.
 
-![ chlimage_1-72 ](assets/chlimage_1-72.png) ![ chlimage_1-73 ](assets/chlimage_1-73.png)
+![&#x200B; chlimage_1-72 &#x200B;](assets/chlimage_1-72.png) ![&#x200B; chlimage_1-73 &#x200B;](assets/chlimage_1-73.png)
 
 Kies &quot;**+**&quot;op het linkerpaneel om componenten aan uw artikel toe te voegen.
 
-![ chlimage_1-74 ](assets/chlimage_1-74.png)
+![&#x200B; chlimage_1-74 &#x200B;](assets/chlimage_1-74.png)
 
 ### Sjablonen voor gebruik buiten de box maken {#creating-out-of-the-box-templates}
 
@@ -137,7 +137,7 @@ Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele 
 1. Selecteer het **lusje van Componenten**
 1. Sleep een van de beschikbare componenten naar de pagina
 
-![ chlimage_1-75 ](assets/chlimage_1-75.png)
+![&#x200B; chlimage_1-75 &#x200B;](assets/chlimage_1-75.png)
 
 **om een bestaande component uit te geven:**
 
@@ -146,11 +146,11 @@ Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele 
 
 >[!NOTE]
 >
->U kunt tot een component in AEM leiden en het zelfde aanpassen gebruikend [ Ontwikkelen met CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md). Zodra u de bestaande component als uw vereisten hebt aangepast, kunt u het in uw pagina toevoegen gebruikend **uitgeeft** optie onder **leidt Artikelen** zoals aangetoond in het cijfer hierboven.
+>U kunt tot een component in AEM leiden en het zelfde aanpassen gebruikend [&#x200B; Ontwikkelen met CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Zodra u de bestaande component als uw vereisten hebt aangepast, kunt u het in uw pagina toevoegen gebruikend **uitgeeft** optie onder **leidt Artikelen** zoals aangetoond in het cijfer hierboven.
 
 >[!NOTE]
 >
->Verwijs naar [ Beste praktijken voor de Ontwikkeling van Malplaatjes en van Componenten ](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
+>Verwijs naar [&#x200B; Beste praktijken voor de Ontwikkeling van Malplaatjes en van Componenten &#x200B;](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### De volgende stappen {#the-next-steps}
 

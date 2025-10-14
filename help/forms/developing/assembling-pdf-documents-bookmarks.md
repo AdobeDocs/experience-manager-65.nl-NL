@@ -43,7 +43,7 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
 
 In dit DDX-document wordt de waarde `Loan.pdf` toegewezen aan het bronkenmerk. Dit DDX-document geeft aan dat één PDF-document wordt doorgegeven aan de Assembler-service. Wanneer u een PDF-document samenstelt met bladwijzers, moet u een XML-bladwijzerdocument opgeven dat de bladwijzers in het resulterende document beschrijft. Als u een XML-bladwijzerdocument wilt opgeven, moet u controleren of het element `Bookmarks` is opgegeven in uw DDX-document.
 
-In dit voorbeeld-DDX-document geeft het `Bookmarks` -element `doc2` op als de waarde. Deze waarde geeft aan dat de invoerkaart die aan de Assembler-service wordt doorgegeven, een sleutel met de naam `doc2` bevat. De waarde van de `doc2` -toets is een `com.adobe.idp.Document` -waarde die het XML-bladwijzerdocument vertegenwoordigt. (Zie &quot;Taal van Bladwijzers&quot;in de [ Dienst van de Assembler en Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).)
+In dit voorbeeld-DDX-document geeft het `Bookmarks` -element `doc2` op als de waarde. Deze waarde geeft aan dat de invoerkaart die aan de Assembler-service wordt doorgegeven, een sleutel met de naam `doc2` bevat. De waarde van de `doc2` -toets is een `com.adobe.idp.Document` -waarde die het XML-bladwijzerdocument vertegenwoordigt. (Zie &quot;Taal van Bladwijzers&quot;in de [&#x200B; Dienst van de Assembler en Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).)
 
 In dit onderwerp wordt de volgende XML-bladwijzertaal gebruikt om een PDF-document met bladwijzers samen te stellen.
 
@@ -73,25 +73,25 @@ In dit XML-bladwijzerdocument ziet u het element Handeling dat de handeling defi
 
 >[!NOTE]
 >
->Voor volledige details over gesteunde acties, zie &quot; `Action` element&quot;in de [ Dienst van de Assembler en Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor volledige details over gesteunde acties, zie &quot; `Action` element&quot;in de [&#x200B; Dienst van de Assembler en Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 Op basis van het DDX-document dat in deze sectie is opgegeven en het XML-bladwijzerbestand als invoer, stelt de Assembler-service een PDF-document samen dat de volgende bladwijzers bevat.
 
-![ aw_aw_bmark ](assets/aw_aw_bmark.png)
+![&#x200B; aw_aw_bmark &#x200B;](assets/aw_aw_bmark.png)
 
 Wanneer een gebruiker op *klikt Open de 1&rbrace; referentie van de Details van de Lening {, wordt LoanDetails.pdf geopend.* Eveneens, wanneer de gebruiker op de *1} bookmark van de Lancering NotePad &lbrace;klikt, is NotePad begonnen.*
 
 >[!NOTE]
 >
->Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [ Programmatiatically het assembleren van de Documenten van PDF ](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [&#x200B; Programmatiatically het assembleren van de Documenten van PDF &#x200B;](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -119,7 +119,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Assembler van de PDF**
 
@@ -146,7 +146,7 @@ Als u een PDF wilt samenstellen die nieuwe bladwijzers bevat, moet u naar een XM
 
 >[!NOTE]
 >
->Zie &quot;Taal van Bladwijzers&quot;in de [ Dienst van de Assembler en Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Zie &quot;Taal van Bladwijzers&quot;in de [&#x200B; Dienst van de Assembler en Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 **voeg het document van PDF en het document van referentieXML aan een inzameling van de Kaart** toe
 
@@ -154,7 +154,7 @@ Voeg zowel het PDF-document toe waaraan bladwijzers worden toegevoegd als het XM
 
 **vastgestelde runtime opties**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie de `AssemblerOptionSpec` klassenverwijzing in [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie de `AssemblerOptionSpec` klassenverwijzing in [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **assembleer het document van de PDF**
 
@@ -162,7 +162,7 @@ Als u een PDF-document wilt samenstellen dat nieuwe bladwijzers bevat, gebruikt 
 
 **sparen het document van de PDF dat referenties** bevat
 
-Extraheer de resultaten van het geretourneerde object Map en sla het bijbehorende PDF-document op. (Zie &quot;de resultaten&quot;in [ Programmatiatically Assemblbling PDF Documenten ](/help/forms/developing/programmatically-assembling-pdf-documents.md) trekken.)
+Extraheer de resultaten van het geretourneerde object Map en sla het bijbehorende PDF-document op. (Zie &quot;de resultaten&quot;in [&#x200B; Programmatiatically Assemblbling PDF Documenten &#x200B;](/help/forms/developing/programmatically-assembling-pdf-documents.md) trekken.)
 
 **zie ook**
 
@@ -182,7 +182,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `AssemblerServiceClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Verwijs naar een bestaand DDX-document.

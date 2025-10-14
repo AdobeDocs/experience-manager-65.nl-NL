@@ -23,8 +23,8 @@ ht-degree: 0%
 
 AEM biedt:
 
-* [ een kader voor het testen van component UI ](/help/sites-developing/hobbes.md).
-* [ een mechanisme om componenten ](/help/sites-developing/developer-mode.md) te testen en te zuiveren.
+* [&#x200B; een kader voor het testen van component UI &#x200B;](/help/sites-developing/hobbes.md).
+* [&#x200B; een mechanisme om componenten &#x200B;](/help/sites-developing/developer-mode.md) te testen en te zuiveren.
 
 Hieronder vindt u twee Open Source-testprogramma&#39;s:
 
@@ -32,13 +32,13 @@ Hieronder vindt u twee Open Source-testprogramma&#39;s:
 
 Selenium wordt gebruikt voor functietests in een browser met één gebruiker per activiteit. Het registreert teststappen (kliks) als of HTML lijsten of klassen Java™.
 
-Voor meer informatie, zie [ https://www.selenium.dev/ ](https://www.selenium.dev/).
+Voor meer informatie, zie [&#x200B; https://www.selenium.dev/ &#x200B;](https://www.selenium.dev/).
 
 **JMeter**
 
 JMeter wordt gebruikt om verzoeken bij te houden en kan worden gebruikt voor functionele, prestatie- en stresstests.
 
-Voor meer informatie, zie [ https://jmeter.apache.org/ ](https://jmeter.apache.org/).
+Voor meer informatie, zie [&#x200B; https://jmeter.apache.org/ &#x200B;](https://jmeter.apache.org/).
 
 Er zijn ook veel bedrijfseigen instrumenten voor het automatiseren van tests en het beheren van testplannen.
 

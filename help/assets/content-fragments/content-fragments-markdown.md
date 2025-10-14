@@ -14,9 +14,9 @@ ht-degree: 3%
 
 # Markering {#markdown}
 
-Wanneer u [ creatie ](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u gemakkelijk te laten schrijven zonder kop inhoud:
+Wanneer u [&#x200B; creatie &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de redacteur van het inhoudsfragment *prijsdown* syntaxis om u gemakkelijk te laten schrijven zonder kop inhoud:
 
-![ markdown redacteur ](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![&#x200B; markdown redacteur &#x200B;](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 U kunt het volgende definiëren:
 

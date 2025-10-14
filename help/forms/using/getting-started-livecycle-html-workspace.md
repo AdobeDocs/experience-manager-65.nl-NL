@@ -62,11 +62,11 @@ Wanneer u in de AEM Forms-werkruimte navigeert met een toetsenbord, voldoet de n
 
 U kunt de verschillende voorkeuren voor de AEM Forms-werkruimte in de volgende categorieën instellen:
 
-**uit Bureau:** plaats voorkeur om te controleren hoe de taken aan andere mensen worden toegewezen terwijl u uit het bureau bent. Zie [ Plaatsende uit-van-bureauvoorkeur ](todo-lists.md#setting-out-of-office-preferences).
+**uit Bureau:** plaats voorkeur om te controleren hoe de taken aan andere mensen worden toegewezen terwijl u uit het bureau bent. Zie [&#x200B; Plaatsende uit-van-bureauvoorkeur &#x200B;](todo-lists.md#setting-out-of-office-preferences).
 
-**Lijsten:** plaats voorkeur voor het delen van uw te doen lijst met andere gebruikers of voor het verzoeken van toegang tot de lijst van een andere gebruiker. Zie [ Werkend met taken van groep en gedeelde rijen ](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Lijsten:** plaats voorkeur voor het delen van uw te doen lijst met andere gebruikers of voor het verzoeken van toegang tot de lijst van een andere gebruiker. Zie [&#x200B; Werkend met taken van groep en gedeelde rijen &#x200B;](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Montages UI:** plaats voorkeur voor hoe u met de werkruimte van AEM Forms in wisselwerking staat. Zie [ plaatsen gebruikersinterfacevoorkeur ](#set-user-interface-preferences).
+**Montages UI:** plaats voorkeur voor hoe u met de werkruimte van AEM Forms in wisselwerking staat. Zie [&#x200B; plaatsen gebruikersinterfacevoorkeur &#x200B;](#set-user-interface-preferences).
 
 ### Gebruikersinterfacevoorkeuren instellen {#set-user-interface-preferences}
 

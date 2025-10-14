@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Ondersteuning voor zelfde site-cookie voor AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
-Sinds versie 80, Chrome, en later Safari, introduceerde een nieuw model voor koekjesveiligheid. Deze modus is ontworpen om beveiligingsinstellingen te introduceren voor de beschikbaarheid van cookies op sites van derden, via een instelling die `SameSite` wordt genoemd. Voor meer gedetailleerde informatie, zie dit [ web.dev - Cookies SameSite verklaarde ](https://web.dev/samesite-cookies-explained/) artikel.
+Sinds versie 80, Chrome, en later Safari, introduceerde een nieuw model voor koekjesveiligheid. Deze modus is ontworpen om beveiligingsinstellingen te introduceren voor de beschikbaarheid van cookies op sites van derden, via een instelling die `SameSite` wordt genoemd. Voor meer gedetailleerde informatie, zie dit [&#x200B; web.dev - Cookies SameSite verklaarde &#x200B;](https://web.dev/samesite-cookies-explained/) artikel.
 
 De standaardwaarde van dit plaatsen (`SameSite=Lax`) zou authentificatie tussen AEM instanties of de diensten kunnen veroorzaken om niet te werken. Dit komt doordat de domeinen of URL-structuren van deze services mogelijk niet onder de beperkingen van dit cookiebeleid vallen.
 
@@ -34,6 +34,6 @@ U kunt de instelling toevoegen door de volgende stappen uit te voeren:
 1. Ga naar de webconsole op `http://serveraddress:serverport/system/console/configMgr`
 1. Onderzoek naar en klik de **Adobe granite Symbolische Handler van de Authentificatie**
 1. Plaats het **SameSite attribuut voor het login-symbolische koekje** aan `None`, zoals aangetoond in het hieronder beeld
-   ![ gelijk ](assets/samesite1.png)
+   ![&#x200B; gelijk &#x200B;](assets/samesite1.png)
 1. Klik op Opslaan
 1. Zodra deze instelling is bijgewerkt en gebruikers zijn afgemeld en opnieuw zijn aangemeld, wordt voor `login-token` -cookies het kenmerk `None` ingesteld en worden deze opgenomen in intersite aanvragen.

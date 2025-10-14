@@ -30,7 +30,7 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 >[!NOTE]
 >
->AEM de beheerders kunnen werkschema&#39;s beginnen gebruikend [ verscheidene andere methodes ](/help/sites-administering/workflows-starting.md).
+>AEM de beheerders kunnen werkschema&#39;s beginnen gebruikend [&#x200B; verscheidene andere methodes &#x200B;](/help/sites-administering/workflows-starting.md).
 
 ## Workflows toepassen {#applying-workflows}
 
@@ -38,11 +38,11 @@ Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagin
 
 De **kolom van de Status** in de **&#x200B;**&#x200B;console van Websites wijst erop of een werkschema op een pagina is toegepast:
 
-![ workflowstatus ](assets/workflowstatus.png)
+![&#x200B; workflowstatus &#x200B;](assets/workflowstatus.png)
 
 ### Een workflow starten vanuit de websiteconsole {#starting-a-workflow-from-the-websites-console}
 
-1. Open de websiteconsole. ([ http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
+1. Open de websiteconsole. ([&#x200B; http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
 1. Selecteer in de boomstructuur Websites het bovenliggende element van de pagina waarop u de workflow wilt toepassen.
 1. Selecteer de pagina in de paginalijst en klik op Workflow.
 1. Selecteer in het dialoogvenster Workflow starten de workflow die u wilt toepassen. Voer eventueel een opmerking en een titel in. Klik vervolgens op Start.
@@ -54,6 +54,6 @@ De **kolom van de Status** in de **&#x200B;**&#x200B;console van Websites wijst 
 1. Selecteer het tabblad Werkstroom in de Sidekick.
 1. Breid de **dialoog van het Werkschema** uit, toestaand u om het **Werkschema** te selecteren en naar keuze **Titel van het Werkschema** en **Commentaar** in te gaan.
 
-   ![ workflowstartsidekick ](assets/workflowstartsidekick.png)
+   ![&#x200B; workflowstartsidekick &#x200B;](assets/workflowstartsidekick.png)
 
 1. Klik **Werkschema van het Begin** om een nieuwe werkschemainstantie met de eigenschappen te beginnen u en de huidige pagina als nuttige lading vormde. De workflow wordt nu uitgevoerd.

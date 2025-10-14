@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Wanneer leden met de eigenschappen van de Gemeenschappen in wisselwerking staan, worden de gebeurtenissen OSGi verzonden die asynchrone luisteraars, zoals berichten of gamificatie (het scoren en het merken) kunnen teweegbrengen.
 
-De instantie van een component [ SocialEvent ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) registreert de gebeurtenissen als `actions` die voor a `topic` voorkomen. De SocialEvent bevat een methode om een `verb` te retourneren die aan de handeling is gekoppeld. Er is een *n-1* verhouding tussen `actions` en `verbs`.
+De instantie van een component [&#x200B; SocialEvent &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) registreert de gebeurtenissen als `actions` die voor a `topic` voorkomen. De SocialEvent bevat een methode om een `verb` te retourneren die aan de handeling is gekoppeld. Er is een *n-1* verhouding tussen `actions` en `verbs`.
 
 Voor de Community-componenten die in de release worden geleverd, worden in de volgende tabellen de `verbs` gedefinieerd voor elke `topic` die beschikbaar is voor gebruik.
 
 ## Onderwerpen en werven {#topics-and-verbs}
 
-[ Component van de Kalender ](calendar-basics-for-developers.md)
+[&#x200B; Component van de Kalender &#x200B;](calendar-basics-for-developers.md)
 SocialEvent `topic`= com/adobe/cq/social/agenda
 
 | **Verb** | **Beschrijving** |
@@ -38,7 +38,7 @@ SocialEvent `topic`= com/adobe/cq/social/agenda
 | BIJWERKEN | De agendagebeurtenis of de opmerking van het lid wordt bewerkt |
 | DELETE | De agendagebeurtenis of de opmerking van het lid wordt verwijderd |
 
-[ Component van Commentaren ](essentials-comments.md)
+[&#x200B; Component van Commentaren &#x200B;](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschrijving** |
@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | BIJWERKEN | Opmerking van lid wordt bewerkt |
 | DELETE | Opmerking van lid wordt verwijderd |
 
-[ de Component van de Bibliotheek van het Dossier ](essentials-file-library.md)
+[&#x200B; de Component van de Bibliotheek van het Dossier &#x200B;](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Beschrijving** |
@@ -58,7 +58,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | BIJWERKEN | Lid werkt een omslag of een dossier bij |
 | DELETE | Lid verwijdert een map of bestand |
 
-[ Component van het Forum ](essentials-forum.md)
+[&#x200B; Component van het Forum &#x200B;](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschrijving** |
@@ -68,7 +68,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | BIJWERKEN | Het onderwerp of antwoord van het forum van het lid wordt bewerkt |
 | DELETE | Het onderwerp of de reactie van het lid in het forum wordt geschrapt |
 
-[ Component van het Dagboek ](blog-developer-basics.md)
+[&#x200B; Component van het Dagboek &#x200B;](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journaal
 
 | **Verb** | **Beschrijving** |
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journaal
 | BIJWERKEN | Blogartikel of commentaar van lid wordt bewerkt |
 | DELETE | Blogartikel of commentaar van lid wordt verwijderd |
 
-[ Component QnA ](qna-essentials.md)
+[&#x200B; Component QnA &#x200B;](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** | **Beschrijving** |
@@ -90,7 +90,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | SELECTEREN OPHEFFEN | Het antwoord van het lid is niet geselecteerd |
 | DELETE | Vraag of antwoord van lid wordt verwijderd |
 
-[ Component van Revisies ](reviews-basics.md)
+[&#x200B; Component van Revisies &#x200B;](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschrijving** |
@@ -99,7 +99,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 | BIJWERKEN | Revisie van lid wordt bewerkt |
 | DELETE | Herziening door lid wordt verwijderd |
 
-[ de Component van de Classificatie ](rating-basics.md)
+[&#x200B; de Component van de Classificatie &#x200B;](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
@@ -107,7 +107,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | WAARDERING TOEVOEGEN | De inhoud van het lid is vervangen |
 | RATING VERWIJDEREN | De inhoud van het lid is verlaagd |
 
-[ Stemende Component ](essentials-voting.md)
+[&#x200B; Stemende Component &#x200B;](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
@@ -129,7 +129,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Gebeurtenissen voor aangepaste componenten {#events-for-custom-components}
 
-Voor een douanecomponent, moet de [ abstracte klasse SocialEvent ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) worden uitgebreid om de gebeurtenissen van de component te registreren zoals `actions` die voor a `topic` voorkomen.
+Voor een douanecomponent, moet de [&#x200B; abstracte klasse SocialEvent &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) worden uitgebreid om de gebeurtenissen van de component te registreren zoals `actions` die voor a `topic` voorkomen.
 
 De douanegebeurtenis zou de methode `getVerb()` met voeten treden zodat aangewezen `verb` voor elke `action` is teruggekeerd. De `verb` die voor een actie wordt geretourneerd, kan een algemene instructie zijn (zoals `POST` ) of een speciale instructie voor de component (zoals `ADD RATING` ). Er is een *n-1* verhouding tussen `actions` en `verbs`.
 
@@ -139,10 +139,10 @@ De douanegebeurtenis zou de methode `getVerb()` met voeten treden zodat aangewez
 
 ### Pseudo-code voor gebeurtenis Custom Component {#pseudo-code-for-custom-component-event}
 
-[ org.osgi.service.event.Event ](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
-[ com.adobe.cq.social.scf.core.SocialEvent ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
-[ com.adobe.granite.activity.streams.ObjectTypes ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
-[ com.adobe.granite.activity streams.Verbs ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
+[&#x200B; org.osgi.service.event.Event &#x200B;](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
+[&#x200B; com.adobe.cq.social.scf.core.SocialEvent &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
+[&#x200B; com.adobe.granite.activity.streams.ObjectTypes &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
+[&#x200B; com.adobe.granite.activity streams.Verbs &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
 package com.mycompany.recipe;
@@ -246,7 +246,7 @@ In het volgende pseudo-codevoorbeeld worden DELETE-gebeurtenissen voor de compon
 
 ### Pseudo-code voor EventListener {#pseudo-code-for-eventlistener}
 
-Vereist [ recentste eigenschappak ](deploy-communities.md#latestfeaturepack).
+Vereist [&#x200B; recentste eigenschappak &#x200B;](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

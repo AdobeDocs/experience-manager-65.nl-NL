@@ -29,26 +29,26 @@ In het volgende architectuurdiagram wordt beschreven hoe de modus Dynamic Media 
 Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire bronactiva en synchrone met Dynamic Media voor activaverwerking en het publiceren:
 
 1. Wanneer het primaire bronelement naar de Experience Manager wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment verwerkt Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding.
-(In de modus Dynamic Media - Scene7 is de standaardgrootte voor het uploaden van bestanden 2 GB of minder. Als u uploadbestanden wilt inschakelen met een bestandsgrootte van 2 GB tot 15 GB, raadpleegt u [ (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB ](#optional-config-dms7-assets-larger-than-2gb) .)
+(In de modus Dynamic Media - Scene7 is de standaardgrootte voor het uploaden van bestanden 2 GB of minder. Als u uploadbestanden wilt inschakelen met een bestandsgrootte van 2 GB tot 15 GB, raadpleegt u [&#x200B; (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB &#x200B;](#optional-config-dms7-assets-larger-than-2gb) .)
 1. Nadat de vertoningen worden geproduceerd, kan de Experience Manager tot de verre vertoningen van Dynamic Media veilig toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie van de Experience Manager).
 1. Nadat de inhoud klaar is om te worden gepubliceerd en goedgekeurd, brengt het de dienst van Dynamic Media teweeg om inhoud uit te duwen naar leveringsservers en geheim voorgeheugeninhoud bij CDN (het Netwerk van de Levering van de Inhoud) in het voorgeheugen op.
 
-![ chlimage_1-550 ](assets/chlimage_1-550.png)
+![&#x200B; chlimage_1-550 &#x200B;](assets/chlimage_1-550.png)
 
 >[!IMPORTANT]
 >
 >Voor de volgende lijst met functies moet u de CDN uit de doos gebruiken die is gebundeld met Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functies.
 >
 >* [Smart Imaging](/help/assets/imaging-faq.md)
->* [ de ongeldigverklaring van het Geheime voorgeheugen ](/help/assets/invalidate-cdn-cache-dynamic-media.md)
->* [ Hotlink bescherming ](/help/assets/hotlink-protection.md)
->* [ HTTP/2 levering van inhoud ](/help/assets/http2.md)
+>* [&#x200B; de ongeldigverklaring van het Geheime voorgeheugen &#x200B;](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [&#x200B; Hotlink bescherming &#x200B;](/help/assets/hotlink-protection.md)
+>* [&#x200B; HTTP/2 levering van inhoud &#x200B;](/help/assets/http2.md)
 >* URL omleiden op CDN-niveau
 >* Akamai ChinaCDN (voor optimale levering in China)
 
 ## Dynamic Media inschakelen in Scene7-modus {#enabling-dynamic-media-in-scene-mode}
 
-[ Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van Dynamic Media-functies, moet u deze inschakelen.
+[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van Dynamic Media-functies, moet u deze inschakelen.
 
 >[!WARNING]
 >
@@ -80,9 +80,9 @@ Als u aangepaste viewervoorinstellingen en -configuraties die u van `/etc` hebt 
 
 De installatie van eigenschappak 18912 is facultatief **.
 
-Met Feature Pack 18912 kunt u middelen bulksgewijs importeren via FTP of elementen migreren van de Dynamic Media - Hybride modus of Dynamic Media Classic naar de Dynamic Media - Scene7 modus op Experience Manager. Het is beschikbaar bij [ Adobe Professional Services ](https://business.adobe.com/customers/consulting-services/main.html).
+Met Feature Pack 18912 kunt u middelen bulksgewijs importeren via FTP of elementen migreren van de Dynamic Media - Hybride modus of Dynamic Media Classic naar de Dynamic Media - Scene7 modus op Experience Manager. Het is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html).
 
-Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-migrate.md) voor meer informatie installeren.
+Zie [&#x200B; eigenschappak 18912 voor bulkactiva migratie &#x200B;](/help/assets/bulk-ingest-migrate.md) voor meer informatie installeren.
 
 ## Een Dynamic Media-configuratie maken in Cloud Servicen {#configuring-dynamic-media-cloud-services}
 
@@ -115,7 +115,7 @@ Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-mi
 
    Als u **[!UICONTROL Cancel]** hebt geselecteerd in het dialoogvenster **[!UICONTROL Change Password]** , moet u nog steeds een nieuw wachtwoord invoeren wanneer u de nieuwe Dynamic Media-configuratie opslaat.
 
-   Zie ook [ Verandering het wachtwoord in Dynamic Media ](#change-dm-password).
+   Zie ook [&#x200B; Verandering het wachtwoord in Dynamic Media &#x200B;](#change-dm-password).
 
 1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
@@ -127,7 +127,7 @@ Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-mi
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
-     Zie ook [ Dynamic Media bedrijf alias rekening ](/help/assets/dm-alias-account.md) vormen.
+     Zie ook [&#x200B; Dynamic Media bedrijf alias rekening &#x200B;](/help/assets/dm-alias-account.md) vormen.
 
    * **[!UICONTROL Company Root Folder Path]**
 
@@ -135,9 +135,9 @@ Zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-mi
       * **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en direct de URL/Embed-URL verschaft. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
       * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL-/insluitkoppeling wordt opgegeven.<br><!-- CQDOC-17478, Added March 9, 2021--> vanaf Experience Manager 6.5.8, weerspiegelt de instantie van Publish van de Experience Manager nauwkeurige de meta-gegevenswaarden van Dynamic Media, zoals `dam:scene7Domain` en `dam:scene7FileStatus` in **[!UICONTROL Upon Activation]** publicatiemodus slechts. Installeer Service Pack 8 en start vervolgens Experience Manager opnieuw om deze functionaliteit in te schakelen. Ga naar Sling Config Manager. Zoek de configuratie voor `Scene7ActivationJobConsumer Component` of maak nieuwe). Selecteer het selectievakje **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** en selecteer vervolgens **[!UICONTROL Save]** .
 
-        ![ Replicate Metadata na het publiceren van Dynamic Media checkbox ](assets-dm/replicate-metadata-setting.png)
+        ![&#x200B; Replicate Metadata na het publiceren van Dynamic Media checkbox &#x200B;](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Selective Publish]** Met deze optie kunt u bepalen welke mappen in Dynamic Media worden gepubliceerd. Hiermee kunt u functies gebruiken, zoals Slim uitsnijden of Dynamische uitvoeringen, of bepalen welke mappen uitsluitend in Experience Manager worden gepubliceerd voor voorvertoning. Die zelfde activa worden *niet* gepubliceerd in Dynamic Media voor levering in het openbare domein.<br> u kunt deze optie hier in **[!UICONTROL Dynamic Media Cloud Configuration]** plaatsen of, als u verkiest, kunt u verkiezen om deze optie op het omslagniveau, in een omslag te plaatsen **[!UICONTROL Properties]**.<br> zie [ Werk met Selectieve Publish in Dynamic Media ](/help/assets/selective-publishing.md).<br> als u later deze configuratie verandert, of u het later op het omslagniveau verandert, beïnvloeden die veranderingen slechts nieuwe activa die u van dat punt door:sturen uploadt. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]** .
+      * **[!UICONTROL Selective Publish]** Met deze optie kunt u bepalen welke mappen in Dynamic Media worden gepubliceerd. Hiermee kunt u functies gebruiken, zoals Slim uitsnijden of Dynamische uitvoeringen, of bepalen welke mappen uitsluitend in Experience Manager worden gepubliceerd voor voorvertoning. Die zelfde activa worden *niet* gepubliceerd in Dynamic Media voor levering in het openbare domein.<br> u kunt deze optie hier in **[!UICONTROL Dynamic Media Cloud Configuration]** plaatsen of, als u verkiest, kunt u verkiezen om deze optie op het omslagniveau, in een omslag te plaatsen **[!UICONTROL Properties]**.<br> zie [&#x200B; Werk met Selectieve Publish in Dynamic Media &#x200B;](/help/assets/selective-publishing.md).<br> als u later deze configuratie verandert, of u het later op het omslagniveau verandert, beïnvloeden die veranderingen slechts nieuwe activa die u van dat punt door:sturen uploadt. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]** .
 
    * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Met andere woorden, nadat uitvoeringen zijn gegenereerd, kan Experience Manager de externe Dynamic Media-uitvoeringen veilig openen en bekijken (er worden geen binaire bestanden teruggestuurd naar de instantie Experience Manager).
 Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert de Adobe dat u dit het plaatsen zoals gespecificeerd verlaat.
@@ -147,7 +147,7 @@ Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een spe
    * **[!UICONTROL Dynamic Media sync mode]**
       * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u eerst een elementmap en vervolgens op de werkbalk **[!UICONTROL Properties]** . Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. *Herinner me: deze drie opties zijn niet beschikbaar als u **[!UICONTROL Sync all content]**&#x200B;vroeger selecteerde.* zie ook [ Werk met Selectieve Publish op het omslagniveau in Dynamic Media ](/help/assets/selective-publishing.md).
+Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u eerst een elementmap en vervolgens op de werkbalk **[!UICONTROL Properties]** . Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Selecteer **[!UICONTROL Save]** als u klaar bent. *Herinner me: deze drie opties zijn niet beschikbaar als u **[!UICONTROL Sync all content]**&#x200B;vroeger selecteerde.* zie ook [&#x200B; Werk met Selectieve Publish op het omslagniveau in Dynamic Media &#x200B;](/help/assets/selective-publishing.md).
          * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde voor de map. In plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont dit als knopinfo.
          * **[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
@@ -159,9 +159,9 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
    >Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
 1. Selecteer **[!UICONTROL Save]** .
-1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de auteur van de Experience Manager een op token gebaseerde validatie en wordt daarom standaard de Dynamic Media-inhoud voorvertoond door de auteur van de Experience Manager. Nochtans, kunt u &quot;lijst van gewenste personen&quot;meer IPs om gebruikers toegang tot veilig voorproefinhoud te verlenen. Aan opstelling deze actie in Experience Manager, zie [ de Opstelling van Dynamic Media Publish voor de Server van het Beeld - het lusje van de Veiligheid vormen ](/help/assets/dm-publish-settings.md#security-tab).
+1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de auteur van de Experience Manager een op token gebaseerde validatie en wordt daarom standaard de Dynamic Media-inhoud voorvertoond door de auteur van de Experience Manager. Nochtans, kunt u &quot;lijst van gewenste personen&quot;meer IPs om gebruikers toegang tot veilig voorproefinhoud te verlenen. Aan opstelling deze actie in Experience Manager, zie [&#x200B; de Opstelling van Dynamic Media Publish voor de Server van het Beeld - het lusje van de Veiligheid vormen &#x200B;](/help/assets/dm-publish-settings.md#security-tab).
 
-Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [ (Facultatief) vormen Geavanceerde Montages in Dynamic Media - de wijze van Scene7 ](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [&#x200B; (Facultatief) vormen Geavanceerde Montages in Dynamic Media - de wijze van Scene7 &#x200B;](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -226,11 +226,11 @@ Wanneer u Dynamic Media - de wijze van Scene7 op AEM in werking stelt, stuurt he
 
 1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** .
 
-   ![ 2019-08-02_16-13-14 ](assets/2019-08-02_16-13-14.png)
+   ![&#x200B; 2019-08-02_16-13-14 &#x200B;](assets/2019-08-02_16-13-14.png)
 
 1. Er wordt een nieuw browsertabblad geopend voor de pagina **[!UICONTROL Adobe Experience Manager Web Console Configuration]** .
 
-   ![ 2019-08-02_16-17-29 ](assets/2019-08-02_16-17-29.png)
+   ![&#x200B; 2019-08-02_16-17-29 &#x200B;](assets/2019-08-02_16-17-29.png)
 
 1. Voor de pagina, scrol aan de naam *Adobe CQ Scene7 PlatformServer*.
 
@@ -241,7 +241,7 @@ Wanneer u Dynamic Media - de wijze van Scene7 op AEM in werking stelt, stuurt he
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Als deze instelling is ingeschakeld, wordt de toestemming voor het opslaan gedurende 120 seconden (standaard twee minuten) in cache geplaatst.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Als deze instelling is ingeschakeld, wordt de toegang van een gebruiker gevalideerd terwijl deze elementen voorvertoont via Dynamic Media Image Server.
 
-   ![ laat de montages van de Lijst van het Toegangsbeheer op Dynamic Media toe - de wijze van Scene7 ](/help/assets/assets-dm/acl.png)
+   ![&#x200B; laat de montages van de Lijst van het Toegangsbeheer op Dynamic Media toe - de wijze van Scene7 &#x200B;](/help/assets/assets-dm/acl.png)
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbenedenhoek van de pagina.
 
@@ -252,14 +252,14 @@ In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploa
 Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
 
 * U moet Experience Manager 6.5 met Service Pack 6.5.4.0 of later in Dynamic Media - Scene7 wijze in werking stellen.
-* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* ](https://business.adobe.com/products/experience-manager/managed-services.html) klanten.
+* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* &#x200B;](https://business.adobe.com/products/experience-manager/managed-services.html) klanten.
 * Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3 of Microsoft® Azure Blob-opslag.
 
   >[!NOTE]
   >
   >Configureer de opslag van Azure Blob met een toegangstoets en een geheime sleutel omdat deze grote uploadfunctie niet wordt ondersteund met AzureSas in de opslagconfiguratie van Blob.
 
-* De download van de Toegang van Oak [ de Directe Binaire ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) wordt toegelaten (het 2&rbrace; Directe Binaire upload van de Toegang van Oak *wordt niet vereist).*
+* De download van de Toegang van Oak [&#x200B; de Directe Binaire &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) wordt toegelaten (het 2&rbrace; Directe Binaire upload van de Toegang van Oak *wordt niet vereist).*
 
   Om het Directe Binaire downloaden van de Toegang toe te laten, plaats bezit `presignedHttpDownloadURIExpirySeconds > 0` in de datastore configuratie. De waarde moet lang genoeg zijn om grotere binaire bestanden te downloaden en het opnieuw te proberen.
 
@@ -280,11 +280,11 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
 
 1. Klik in de linkertrack met de rechtermuisknop `fileupload` en selecteer vervolgens in het pop-upmenu **[!UICONTROL Overlay Node]** .
 
-   ![ de optie van de Knoop van de Bedekking ](/help/assets/assets-dm/uploadassets15gb_a.png)
+   ![&#x200B; de optie van de Knoop van de Bedekking &#x200B;](/help/assets/assets-dm/uploadassets15gb_a.png)
 
 1. Schakel in het dialoogvenster Overlay-knooppunt het selectievakje **[!UICONTROL Match Node Types]** in om de optie in te schakelen (inschakelen) en selecteer vervolgens **[!UICONTROL OK]** .
 
-   ![ de dialoogdoos van de Knoop van de Bedekking ](/help/assets/assets-dm/uploadassets15gb_b.png)
+   ![&#x200B; de dialoogdoos van de Knoop van de Bedekking &#x200B;](/help/assets/assets-dm/uploadassets15gb_b.png)
 
 1. Voer in het venster CRXDE Lite een van de volgende handelingen uit:
 
@@ -299,7 +299,7 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
 1. Voer de juiste waarde in bytes in zodat u de maximale uploadgrootte kunt instellen. Als u bijvoorbeeld de limiet voor het uploaden van elementen wilt verhogen tot 10 GB, typt u `10737418240` in het veld Waarde.
 U kunt een waarde tot 15 GB (`2013265920` bytes) ingaan. In dit geval worden geüploade elementen die groter zijn dan 15 GB niet geüpload.
 
-   ![ de grenswaarde van de Grootte ](/help/assets/assets-dm/uploadassets15gb_c.png)
+   ![&#x200B; de grenswaarde van de Grootte &#x200B;](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van het CRXDE Lite-venster.
 
@@ -316,7 +316,7 @@ U kunt een waarde tot 15 GB (`2013265920` bytes) ingaan. In dit geval worden ge�
 
 1. In het dialoogvenster **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** stelt u in het veld **[!UICONTROL Max Timeout]** de waarde in op `18000` seconden (vijf uur). De standaardwaarde is 10800 seconden (drie uur).
 
-   ![ Max onderbrekingswaarde ](/help/assets/assets-dm/uploadassets15gb_d.png)
+   ![&#x200B; Max onderbrekingswaarde &#x200B;](/help/assets/assets-dm/uploadassets15gb_d.png)
 
 1. Selecteer **[!UICONTROL Save]** in de rechterbenedenhoek van het dialoogvenster.
 
@@ -341,29 +341,29 @@ U kunt een waarde tot 15 GB (`2013265920` bytes) ingaan. In dit geval worden ge�
 * [Kleurbeheer configureren](#configuring-color-management)
 * [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats)
 * [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats)
-* [ creeer partijreeks vooraf instelt aan auto-produceerde de Reeksen van het Beeld en Reeksen van de Rotatie ](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (gedaan in het gebruikersinterface van Dynamic Media Classic)
+* [&#x200B; creeer partijreeks vooraf instelt aan auto-produceerde de Reeksen van het Beeld en Reeksen van de Rotatie &#x200B;](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (gedaan in het gebruikersinterface van Dynamic Media Classic)
 
 #### Dynamic Media Publish Setup (-instelling voor imageserver) configureren {#publishing-setup-for-image-server}
 
 Op de pagina Dynamic Media Publish Setup worden standaardinstellingen vastgelegd die bepalen hoe elementen van Adobe Dynamic Media-servers worden geleverd aan websites of toepassingen.
 
-Zie [ Dynamic Media Publish Opstelling voor de Server van het Beeld vormen ](/help/assets/dm-publish-settings.md).
+Zie [&#x200B; Dynamic Media Publish Opstelling voor de Server van het Beeld vormen &#x200B;](/help/assets/dm-publish-settings.md).
 
 #### Algemene instellingen van Dynamic Media configureren {#configuring-application-general-settings}
 
 Configureer de Dynamic Media **[!UICONTROL Publish Server Name]** URL en de **[!UICONTROL Origin Server Name]** URL. U kunt ook **[!UICONTROL Upload to Application]** instellingen opgeven en **[!UICONTROL Default Upload Options]** allemaal op basis van uw specifieke gebruiksscenario.
 
-Zie [ Dynamic Media Algemene Montages ](/help/assets/dm-general-settings.md) vormen.
+Zie [&#x200B; Dynamic Media Algemene Montages &#x200B;](/help/assets/dm-general-settings.md) vormen.
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
 Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte.
 
-Zie [ Beeld vormen vooraf instelt ](/help/assets/managing-image-presets.md).
+Zie [&#x200B; Beeld vormen vooraf instelt &#x200B;](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
 >
->Standaard geeft het systeem 15 uitvoeringen weer wanneer u voorinstellingen voor **[!UICONTROL Renditions]** en 15 viewers selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de Gedetailleerde weergave van het element. U kunt deze limiet verhogen. Zie [ verhogen het aantal beeld vooraf instelt dat de vertoning ](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [ het aantal kijker verhoogt vooraf instelt dat vertoning ](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Standaard geeft het systeem 15 uitvoeringen weer wanneer u voorinstellingen voor **[!UICONTROL Renditions]** en 15 viewers selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de Gedetailleerde weergave van het element. U kunt deze limiet verhogen. Zie [&#x200B; verhogen het aantal beeld vooraf instelt dat de vertoning &#x200B;](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [&#x200B; het aantal kijker verhoogt vooraf instelt dat vertoning &#x200B;](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### MIME-typen bewerken voor ondersteunde indelingen {#editing-mime-types-for-supported-formats}
 
@@ -372,9 +372,9 @@ U kunt bepalen welke elementtypen door Dynamic Media worden verwerkt en geavance
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
 * Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated-PostScript® (.EPS).
-* [ de videoprofielen ](/help/assets/video-profiles.md) en [ Beeldende profielen ](/help/assets/image-profiles.md) kunnen worden gebruikt om verwerking van video&#39;s en beelden te bepalen, respectievelijk.
+* [&#x200B; de videoprofielen &#x200B;](/help/assets/video-profiles.md) en [&#x200B; Beeldende profielen &#x200B;](/help/assets/image-profiles.md) kunnen worden gebruikt om verwerking van video&#39;s en beelden te bepalen, respectievelijk.
 
-Zie [ Uploading Assets ](/help/assets/manage-assets.md#uploading-assets).
+Zie [&#x200B; Uploading Assets &#x200B;](/help/assets/manage-assets.md#uploading-assets).
 
 **om MIME types voor gesteunde formaten uit te geven:**
 
@@ -383,14 +383,14 @@ Zie [ Uploading Assets ](/help/assets/manage-assets.md#uploading-assets).
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-   ![ MIME types ](assets/mimetypes.png)
+   ![&#x200B; MIME types &#x200B;](assets/mimetypes.png)
 
 1. Selecteer een mime-type onder de map mimeTypes.
 1. Aan de rechterkant van de pagina CRXDE Lite, in het onderste gedeelte:
 
    * Dubbelklik op het veld **[!UICONTROL enabled]** . Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd naar Dynamic Media voor verwerking. Als u wilt uitsluiten dat dit elementtype mime wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false]** .
 
-   * Dubbelselecteer **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [ Gesteunde Types van MIME ](/help/assets/assets-formats.md#supported-mime-types) voor een lijst van toegelaten waarden van de verwerkingsparameter die u voor een bepaald mime type kunt gebruiken.
+   * Dubbelselecteer **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [&#x200B; Gesteunde Types van MIME &#x200B;](/help/assets/assets-formats.md#supported-mime-types) voor een lijst van toegelaten waarden van de verwerkingsparameter die u voor een bepaald mime type kunt gebruiken.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -407,25 +407,25 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** .
 
-   ![ 2019-08-02_16-13-14 ](assets/2019-08-02_16-13-14.png)
+   ![&#x200B; 2019-08-02_16-13-14 &#x200B;](assets/2019-08-02_16-13-14.png)
 
 1. Er wordt een nieuw browsertabblad geopend voor de pagina **[!UICONTROL Adobe Experience Manager Web Console Configuration]** .
 
-   ![ 2019-08-02_16-17-29 ](assets/2019-08-02_16-17-29.png)
+   ![&#x200B; 2019-08-02_16-17-29 &#x200B;](assets/2019-08-02_16-17-29.png)
 
 1. Schuif op de pagina omlaag naar de naam *Adobe CQ Scene7 Asset MIME type Service*, zoals u in de volgende schermafbeelding ziet. Selecteer rechts van de naam het pictogram **[!UICONTROL Edit the configuration values]** (potlood).
 
-   ![ 2019-08-02_16-44-56 ](assets/2019-08-02_16-44-56.png)
+   ![&#x200B; 2019-08-02_16-44-56 &#x200B;](assets/2019-08-02_16-44-56.png)
 
 1. Voor **Adobe CQ Scene7 het typeDienst van het MIME van Activa** pagina, selecteer om het even welk plusteken pictogram &lt;+>. De plaats in de lijst waar u het plusteken selecteert om het nieuwe mime type toe te voegen is triviaal.
 
-   ![ 2019-08-02_16-27-27 ](assets/2019-08-02_16-27-27.png)
+   ![&#x200B; 2019-08-02_16-27-27 &#x200B;](assets/2019-08-02_16-27-27.png)
 
 1. Typ `DWG=image/vnd.dwg` in het lege tekstveld dat u zojuist hebt toegevoegd.
 
    Het voorbeeld `DWG=image/vnd.dwg` is alleen bedoeld voor demonstratiedoeleinden. Het MIME-type dat u hier toevoegt, kan elke andere niet-ondersteunde indeling hebben.
 
-   ![ 2019-08-02_16-36-36 ](assets/2019-08-02_16-36-36.png)
+   ![&#x200B; 2019-08-02_16-36-36 &#x200B;](assets/2019-08-02_16-36-36.png)
 
 1. Selecteer **[!UICONTROL Save]** rechtsonder op de pagina.
 
@@ -434,7 +434,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 1. Keer terug naar het browser lusje dat uw open console van de Experience Manager heeft.
 1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
 
-   ![ 2019-08-02_16-55-41 ](assets/2019-08-02_16-55-41.png)
+   ![&#x200B; 2019-08-02_16-55-41 &#x200B;](assets/2019-08-02_16-55-41.png)
 
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
@@ -442,12 +442,12 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 1. Sleep het mime-type `image_vnd.dwg` en zet dit direct boven `image_` in de boomstructuur neer, zoals in de volgende schermafbeelding wordt getoond.
 
-   ![ crxdelite_cqdoc-14627 ](assets/crxdelite_cqdoc-14627.png)
+   ![&#x200B; crxdelite_cqdoc-14627 &#x200B;](assets/crxdelite_cqdoc-14627.png)
 
 1. Zorg dat het mime-type `image_vnd.dwg` nog steeds is geselecteerd en gebruik de tab **[!UICONTROL Properties]** in de rij **[!UICONTROL enabled]** onder de kolomkop **[!UICONTROL Value]** de waarde om de vervolgkeuzelijst **[!UICONTROL Value]** te openen.
 1. Typ `false` in het veld (of selecteer **[!UICONTROL false]** in de vervolgkeuzelijst).
 
-   ![ 2019-08-02_16-60-30 ](assets/2019-08-02_16-60-30.png)
+   ![&#x200B; 2019-08-02_16-60-30 &#x200B;](assets/2019-08-02_16-60-30.png)
 
 1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van de pagina CRXDE Lite.
 
@@ -471,7 +471,7 @@ Er zijn twee elementen beschikbaar voor definitie, Identieke en Basisnaam. Met d
 
 **om gebrek te vormen noemend:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Uw aanmeldingsgegevens en aanmeldingsgegevens zijn door de Adobe opgegeven op het moment van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 
@@ -505,7 +505,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **om een Vooraf ingestelde Partij tot stand te brengen:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Uw aanmeldingsgegevens en aanmeldingsgegevens zijn door de Adobe opgegeven op het moment van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 
@@ -553,7 +553,7 @@ spin-01-01
 
 Met deze informatie kunt u het recept voor Type batch-set als volgt maken:
 
-![ chlimage_1-560 ](assets/chlimage_1-560.png)
+![&#x200B; chlimage_1-560 &#x200B;](assets/chlimage_1-560.png)
 
 De groepering voor het gedeelde element naamdeel van de centrifugeset wordt toegevoegd aan het veld **[!UICONTROL Match]** (zoals gemarkeerd). Het variabele gedeelte van de elementnaam dat de rij en kolom bevat, wordt toegevoegd aan respectievelijk de velden **[!UICONTROL Row]** en **[!UICONTROL Column]** .
 
@@ -561,7 +561,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
 **om een Reeks van de Partij tot stand te brengen vooraf instelt voor de auto-generatie van een 2D Reeks van de Spin:**
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Uw aanmeldingsgegevens en aanmeldingsgegevens zijn door de Adobe opgegeven op het moment van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 
@@ -648,7 +648,7 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Om om het even welk van deze parameters bij te werken, volg de stappen in [ toelatend MIME op type-gebaseerde Assets/Dynamic Media Classic steun van de taakparameter ](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) uploadt.
+Om om het even welk van deze parameters bij te werken, volg de stappen in [&#x200B; toelatend MIME op type-gebaseerde Assets/Dynamic Media Classic steun van de taakparameter &#x200B;](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) uploadt.
 
 #### De voorlopige wachtrij voor graniet bijwerken {#updating-the-granite-transient-workflow-queue}
 
@@ -656,7 +656,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 **om de Granite tijdelijke werkschemarij bij te werken:**
 
-1. Navigeer aan [ https://localhost:4502/system/console/configMgr ](https://localhost:4502/system/console/configMgr) en onderzoek naar **Rij: De Rij van het Werkschema van de Overgang van de Graniet van de Overgang**.
+1. Navigeer aan [&#x200B; https://localhost:4502/system/console/configMgr &#x200B;](https://localhost:4502/system/console/configMgr) en onderzoek naar **Rij: De Rij van het Werkschema van de Overgang van de Graniet van de Overgang**.
 
    >[!NOTE]
    >
@@ -670,7 +670,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
    Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
 
-![ chlimage_1 ](assets/chlimage_1.jpeg)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -690,7 +690,7 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
    U kunt de functie Maximum aantal parallelle taken verhogen om voldoende ondersteuning te bieden voor het zwaar uploaden van bestanden naar Dynamic Media. De exacte waarde is afhankelijk van de hardwarecapaciteit. In bepaalde scenario&#39;s - dat wil zeggen een eerste migratie of een eenmalige bulkupload - kunt u een grote waarde gebruiken. Houd er echter rekening mee dat het gebruik van een grote waarde (bijvoorbeeld twee keer het aantal cores) negatieve gevolgen kan hebben voor andere gelijktijdige activiteiten. Als dusdanig, test en pas de waarde aan die op uw bepaald gebruiksgeval wordt gebaseerd.
 
-   ![ chlimage_1-1 ](assets/chlimage_1-1.jpeg)
+   ![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -709,7 +709,7 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
    In de meeste gevallen is de instelling 2100 voldoende.
 
-   ![ chlimage_1-2 ](assets/chlimage_1-2.jpeg)
+   ![&#x200B; chlimage_1-2 &#x200B;](assets/chlimage_1-2.jpeg)
 
 1. Selecteer **[!UICONTROL Save]** .
 
@@ -739,7 +739,7 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
 1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** .
 1. Navigeer in de linkermapstructuur naar `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` om de filters te bekijken.
 
-   ![ chlimage_1-17 ](assets/chlimage_1-2.png)
+   ![&#x200B; chlimage_1-17 &#x200B;](assets/chlimage_1-2.png)
 
 1. Als u het Mime-type voor het filter wilt definiëren, gaat u als volgt naar het Mime-type:
 
@@ -747,7 +747,7 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
 
    De volgende afbeelding is een voorbeeld van het pad van een element naar `dc:format` .
 
-   ![ chlimage_1-18 ](assets/chlimage_1-3.png)
+   ![&#x200B; chlimage_1-18 &#x200B;](assets/chlimage_1-3.png)
 
    De `dc:format` voor het element `Fiji Red.jpg` is `image/jpeg` .
 
@@ -769,6 +769,6 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
 
    De volgende afbeelding is een voorbeeld van de uitvoeringen van een element.
 
-   ![ chlimage_1-4 ](assets/chlimage_1-4.png)
+   ![&#x200B; chlimage_1-4 &#x200B;](assets/chlimage_1-4.png)
 
    Als u alleen het origineel wilt repliceren, voert u `+original` in.

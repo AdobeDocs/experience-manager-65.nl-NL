@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Standaard worden in de lijst Taak-weergavenaam en -beschrijving van de AEM Forms-werkruimte weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
 
-![ A blik bij de HTML Workspace aan-doet lusje die standaardconfiguratie tonen ](assets/html-todo-list.png)
+![&#x200B; A blik bij de HTML Workspace aan-doet lusje die standaardconfiguratie tonen &#x200B;](assets/html-todo-list.png)
 
 In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om informatie toe te voegen voor elke taak in de lijst AanDoe.
 
@@ -28,11 +28,11 @@ In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om info
 
 U kunt de informatie toevoegen die beschikbaar is in `task.json` die door de server wordt verzonden. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
 
-Voor meer informatie over de beschrijving van het Voorwerp JSON, zie [ dit ](/help/forms/using/html-workspace-json-object-description.md) artikel.
+Voor meer informatie over de beschrijving van het Voorwerp JSON, zie [&#x200B; dit &#x200B;](/help/forms/using/html-workspace-json-object-description.md) artikel.
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Volg de [ Algemene stappen voor de werkruimte van AEM Forms aanpassing ](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Volg de [&#x200B; Algemene stappen voor de werkruimte van AEM Forms aanpassing &#x200B;](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Als u aanvullende informatie voor een taak wilt weergeven, moeten de corresponderende sleutel-waardeparen binnen het taakblok van `translation.json` worden toegevoegd.
 
    Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels:

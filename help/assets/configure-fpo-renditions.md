@@ -18,10 +18,10 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
-Wanneer het plaatsen van grote activa van Experience Manager in de documenten van Adobe InDesign, moet een creatieve beroeps op een aanzienlijke tijd wachten nadat zij [ activa ](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html) plaatsen. Ondertussen wordt de gebruiker verhinderd InDesign te gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in documenten van het InDesign plaatsen om mee te beginnen. Wanneer de uiteindelijke uitvoer vereist is, bijvoorbeeld voor drukwerk- en publicatieworkflows, vervangen de oorspronkelijke elementen met volledige resolutie de tijdelijke uitvoering op de achtergrond. Deze asynchrone update op de achtergrond versnelt het ontwerpproces om de productiviteit te verhogen en belemmert het creatieve proces niet.
+Wanneer het plaatsen van grote activa van Experience Manager in de documenten van Adobe InDesign, moet een creatieve beroeps op een aanzienlijke tijd wachten nadat zij [&#x200B; activa &#x200B;](https://helpx.adobe.com/nl/indesign/using/placing-graphics.html) plaatsen. Ondertussen wordt de gebruiker verhinderd InDesign te gebruiken. Dit onderbreekt de creatieve stroom en beïnvloedt de gebruikerservaring negatief. Met Adobe kunt u tijdelijk kleine uitvoeringen in documenten van het InDesign plaatsen om mee te beginnen. Wanneer de uiteindelijke uitvoer vereist is, bijvoorbeeld voor drukwerk- en publicatieworkflows, vervangen de oorspronkelijke elementen met volledige resolutie de tijdelijke uitvoering op de achtergrond. Deze asynchrone update op de achtergrond versnelt het ontwerpproces om de productiviteit te verhogen en belemmert het creatieve proces niet.
 
 Adobe Experience Manager (AEM) biedt uitvoeringen die alleen voor plaatsing worden gebruikt (FPO). Deze FPO-uitvoeringen hebben een kleine bestandsgrootte maar hebben dezelfde hoogte-breedteverhouding. Als een FPO-uitvoering niet beschikbaar is voor een element, gebruikt Adobe InDesign in plaats daarvan het oorspronkelijke element. Dit fallback-mechanisme zorgt ervoor dat de creatieve workflow zonder onderbrekingen doorgaat.
 
@@ -29,12 +29,12 @@ Adobe Experience Manager (AEM) biedt uitvoeringen die alleen voor plaatsing word
 
 Met Experience Manager kunnen veel methoden afbeeldingen verwerken die kunnen worden gebruikt om de FPO-uitvoeringen te genereren. De twee gemeenschappelijkste methodes moeten in-gebouwde werkschema&#39;s van de Experience Manager gebruiken en ImageMagick gebruiken. Met behulp van deze twee methoden configureert u het genereren van vertoningen van nieuw geüploade elementen en van de elementen die in de Experience Manager aanwezig zijn.
 
-U kunt ImageMagick gebruiken om afbeeldingen te verwerken, inclusief om FPO-uitvoeringen te genereren. Dergelijke vertoningen worden gedownsampled, dat wil zeggen, de pixelafmetingen van de vertoning worden proportioneel verminderd als de oorspronkelijke afbeelding een PPI heeft die groter is dan 72. Zie [ installeren en vormen ImageMagick om met Experience Manager Assets ](best-practices-for-imagemagick.md) te werken.
+U kunt ImageMagick gebruiken om afbeeldingen te verwerken, inclusief om FPO-uitvoeringen te genereren. Dergelijke vertoningen worden gedownsampled, dat wil zeggen, de pixelafmetingen van de vertoning worden proportioneel verminderd als de oorspronkelijke afbeelding een PPI heeft die groter is dan 72. Zie [&#x200B; installeren en vormen ImageMagick om met Experience Manager Assets &#x200B;](best-practices-for-imagemagick.md) te werken.
 
 |  | De ingebouwde workflow van Experience Managers gebruiken | De ImageMagick-workflow gebruiken | Opmerkingen |
 |--- |--- |---|--- |
-| Voor nieuwe activa | Laat FPO vertoning toe ([ hulp ](#generate-renditions-of-new-assets-using-aem-workflow)) | Voeg bevel-lijn ImageMagick in het werkschema van de Experience Manager ([ hulp ](#generate-renditions-of-new-assets-using-imagemagick)) toe | Experience Manager voert de DAM Update Assets-workflow uit voor elke upload. |
-| Voor bestaande activa | Laat FPO vertoning in een nieuw, specifiek Experience Manager werkschema toe ([ hulp ](#generate-renditions-of-existing-assets-using-aem-workflow)) | Voeg bevel-lijn ImageMagick in een nieuw, specifiek Experience Manager werkschema ([ hulp ](#generate-renditions-of-existing-assets-using-imagemagick)) toe | FPO-uitvoeringen van de bestaande activa kunnen op aanvraag of in bulk worden gemaakt. |
+| Voor nieuwe activa | Laat FPO vertoning toe ([&#x200B; hulp &#x200B;](#generate-renditions-of-new-assets-using-aem-workflow)) | Voeg bevel-lijn ImageMagick in het werkschema van de Experience Manager ([&#x200B; hulp &#x200B;](#generate-renditions-of-new-assets-using-imagemagick)) toe | Experience Manager voert de DAM Update Assets-workflow uit voor elke upload. |
+| Voor bestaande activa | Laat FPO vertoning in een nieuw, specifiek Experience Manager werkschema toe ([&#x200B; hulp &#x200B;](#generate-renditions-of-existing-assets-using-aem-workflow)) | Voeg bevel-lijn ImageMagick in een nieuw, specifiek Experience Manager werkschema ([&#x200B; hulp &#x200B;](#generate-renditions-of-existing-assets-using-imagemagick)) toe | FPO-uitvoeringen van de bestaande activa kunnen op aanvraag of in bulk worden gemaakt. |
 
 >[!CAUTION]
 >
@@ -50,7 +50,7 @@ Hier volgen de stappen voor het configureren van het workflowmodel voor DAM Upda
 
 1. Klik op het tabblad **[!UICONTROL FPO Rendition]**. Selecteer **[!UICONTROL Enable FPO rendition creation]** .
 
-   ![ fpo_rendition_damupdateasset_model ](assets/fpo_rendition_damupdateasset_model.png)
+   ![&#x200B; fpo_rendition_damupdateasset_model &#x200B;](assets/fpo_rendition_damupdateasset_model.png)
 
 1. Pas de waarden van **[!UICONTROL Quality]** aan en voeg **[!UICONTROL Format List]** naar wens toe of wijzig deze. Standaard wordt de lijst met MIME-typen die de FPO-uitvoering moet genereren ingesteld op pjpeg, jpeg, jpg, gif, png, x-png en tiff. Klik op **[!UICONTROL Done]**.
 
@@ -82,7 +82,7 @@ In Experience Manager wordt de DAM Update Asset-workflow uitgevoerd wanneer een 
 
 1. Voeg op het tabblad **[!UICONTROL Arguments]** relevante **[!UICONTROL Mime Types]** toe voor een lijst met bestandsindelingen waarop de opdracht van toepassing is.
 
-   ![ imagemagick-mimetype ](assets/imagemagick-mimetype.png)
+   ![&#x200B; imagemagick-mimetype &#x200B;](assets/imagemagick-mimetype.png)
 
 1. Voeg op het tabblad **[!UICONTROL Arguments]** in de sectie **[!UICONTROL Commands]** een relevante opdracht ImageMagick toe om FPO-uitvoeringen te genereren.
 
@@ -92,7 +92,7 @@ In Experience Manager wordt de DAM Update Asset-workflow uitgevoerd wanneer een 
 
 1. Klik op **[!UICONTROL Sync]** om de wijzigingen te activeren.
 
-Voor gedetailleerde informatie over de mogelijkheden van de bevellijn ImageMagick, zie [ https://imagemagick.org ](https://imagemagick.org).
+Voor gedetailleerde informatie over de mogelijkheden van de bevellijn ImageMagick, zie [&#x200B; https://imagemagick.org &#x200B;](https://imagemagick.org).
 
 ## Uitvoeringen van bestaande elementen genereren met behulp van de workflow Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 
@@ -110,7 +110,7 @@ Als u een Experience Manager-workflow wilt gebruiken om FPO-uitvoering van de be
 
 1. Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek en zoek naar een stap met een procesminiatuur.
 
-1. Selecteer **[!UICONTROL Process Thumbnails]** en klik op **[!UICONTROL Configure]** . Volg de [ configuratie om vertoning van nieuwe activa te produceren gebruikend het werkschema van de Experience Manager ](#generate-renditions-of-new-assets-using-aem-workflow).
+1. Selecteer **[!UICONTROL Process Thumbnails]** en klik op **[!UICONTROL Configure]** . Volg de [&#x200B; configuratie om vertoning van nieuwe activa te produceren gebruikend het werkschema van de Experience Manager &#x200B;](#generate-renditions-of-new-assets-using-aem-workflow).
 
 1. Klik op **[!UICONTROL Sync]** om de wijzigingen te activeren.
 
@@ -119,9 +119,9 @@ Als u een Experience Manager-workflow wilt gebruiken om FPO-uitvoering van de be
 
 Om ImageMagick verwerkingsmogelijkheden te gebruiken om vertoning FPO van de bestaande activa te produceren, creeer een specifiek werkschemamodel dat de ImageMagick bevellijn gebruikt om dit te doen.
 
-1. Volg stap 1 aan stap 3 van [ configuratie om vertoning van bestaande activa te produceren gebruikend het werkschema van de Experience Manager ](#generate-renditions-of-existing-assets-using-aem-workflow) sectie.
+1. Volg stap 1 aan stap 3 van [&#x200B; configuratie om vertoning van bestaande activa te produceren gebruikend het werkschema van de Experience Manager &#x200B;](#generate-renditions-of-existing-assets-using-aem-workflow) sectie.
 
-1. Volg stap 4 aan stap 8 van [ configuratie om vertoning van nieuwe activa te produceren gebruikend ](#generate-renditions-of-new-assets-using-imagemagick) sectie ImageMagick.
+1. Volg stap 4 aan stap 8 van [&#x200B; configuratie om vertoning van nieuwe activa te produceren gebruikend &#x200B;](#generate-renditions-of-new-assets-using-imagemagick) sectie ImageMagick.
 
 
 ## FPO-uitvoeringen weergeven {#view-fpo-renditions}
@@ -130,12 +130,12 @@ U kunt de gegenereerde FPO-uitvoeringen controleren nadat de workflow is voltooi
 
 Klik op **[!UICONTROL FPO rendition]** om de voorvertoning te laden. U kunt ook met de rechtermuisknop op de vertoning klikken en deze opslaan in uw bestandssysteem.
 
-![ rendition_list ](assets/rendition_list.png)
+![&#x200B; rendition_list &#x200B;](assets/rendition_list.png)
 
 
 ## Tips en beperkingen {#tips-limitations}
 
 * Om op beeldMagick-Gebaseerde configuratie te gebruiken, installeer ImageMagick op de zelfde machine zoals Experience Manager.
 * Om FPO vertoningen van vele activa of van de volledige bewaarplaats te produceren, plan en voer de werkschema&#39;s tijdens laag-verkeersduur uit. Het genereren van FPO-uitvoeringen voor een groot aantal elementen is een activiteit die veel resources vereist en de Experience Manager-servers moeten over voldoende verwerkingskracht en geheugen beschikken.
-* Voor prestaties en scalability, zie [ Fine-tune ImageMagick ](performance-tuning-guidelines.md).
-* Voor generische bevellijn behandeling van activa, zie [ manager van de bevellijn om activa ](media-handlers.md) te verwerken.
+* Voor prestaties en scalability, zie [&#x200B; Fine-tune ImageMagick &#x200B;](performance-tuning-guidelines.md).
+* Voor generische bevellijn behandeling van activa, zie [&#x200B; manager van de bevellijn om activa &#x200B;](media-handlers.md) te verwerken.

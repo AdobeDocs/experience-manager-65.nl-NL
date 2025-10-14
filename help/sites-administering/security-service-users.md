@@ -23,13 +23,13 @@ ht-degree: 0%
 
 De belangrijkste manier om een beheersessie of resourceoplosser in AEM op te halen was met de methoden `SlingRepository.loginAdministrative()` en `ResourceResolverFactory.getAdministrativeResourceResolver()` van Sling.
 
-Nochtans, werden geen van beide methodes ontworpen rond het [ beginsel van minste voorrecht ](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Het maakt het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en de overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid aanwezig is in een dergelijke service, leidt dit vaak tot escalaties met bevoegdheden voor de `admin` -gebruiker, zelfs als de code zelf geen beheerdersrechten nodig zou hebben om te werken.
+Nochtans, werden geen van beide methodes ontworpen rond het [&#x200B; beginsel van minste voorrecht &#x200B;](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Het maakt het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en de overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid aanwezig is in een dergelijke service, leidt dit vaak tot escalaties met bevoegdheden voor de `admin` -gebruiker, zelfs als de code zelf geen beheerdersrechten nodig zou hebben om te werken.
 
 ## Admin-sessies uitfaseren {#how-to-phase-out-admin-sessions}
 
 ### Prioriteit 0: Is de functie actief/nodig/verwijderd? {#priority-is-the-feature-active-needed-derelict}
 
-Er kunnen zich gevallen voordoen waarin de beheersessie niet wordt gebruikt of de functie volledig is uitgeschakeld. Als zo met uw implementatie, zorg ervoor u de eigenschap geheel verwijdert of het met [ NOP code ](https://en.wikipedia.org/wiki/NOP) past.
+Er kunnen zich gevallen voordoen waarin de beheersessie niet wordt gebruikt of de functie volledig is uitgeschakeld. Als zo met uw implementatie, zorg ervoor u de eigenschap geheel verwijdert of het met [&#x200B; NOP code &#x200B;](https://en.wikipedia.org/wiki/NOP) past.
 
 ### Prioriteit 1: De aanvraagsessie gebruiken {#priority-use-the-request-session}
 
@@ -73,7 +73,7 @@ Of u toegangsbeheer terwijl het herstructureren van inhoud toepast of wanneer u 
 
 * In plaats van bijvoorbeeld `jcr:read` toe te passen op `/apps` , past u deze alleen toe op `/apps/*/components/*/analytics` .
 
-* Gebruik [ beperkingen ](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
+* Gebruik [&#x200B; beperkingen &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)
 
 * ACLs voor knooptypes toepassen
 * Machtigingen beperken
@@ -130,11 +130,11 @@ U kunt servicegebruikers maken door:
 1. Het programma openen als admin door het **Login** te drukken verbinding in de hogere linkerhoek van het scherm.
 1. Maak vervolgens een systeemgebruiker en geef deze een naam. Als u de gebruiker als systeemgebruiker wilt maken, stelt u het tussenliggende pad in als `system` en voegt u optionele submappen toe, afhankelijk van uw behoeften:
 
-   ![ chlimage_1-102 ](assets/chlimage_1-102a.png)
+   ![&#x200B; chlimage_1-102 &#x200B;](assets/chlimage_1-102a.png)
 
 1. Controleer of het systeemgebruikersknooppunt er als volgt uitziet:
 
-   ![ chlimage_1-103 ](assets/chlimage_1-103a.png)
+   ![&#x200B; chlimage_1-103 &#x200B;](assets/chlimage_1-103a.png)
 
    >[!NOTE]
    >
@@ -153,7 +153,7 @@ Wanneer u het corresponderende .content.xml toevoegt aan de inhoud van uw bundel
 
 ## Het toevoegen van een configuratieamendement aan de configuratie ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen, creeer een fabrieksconfiguratie voor de [`ServiceUserMapper` ](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) dienst. Om dit modulair te houden, kan zulk configuratie worden verstrekt gebruikend het [ Sling wijzigt mechanisme ](https://issues.apache.org/jira/browse/SLING-3578). De geadviseerde manier om dergelijke configuraties met uw bundel te installeren is door [ het Verdelen Begeleidende Inhoud te gebruiken die ](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) laadt:
+Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen, creeer een fabrieksconfiguratie voor de [`ServiceUserMapper` &#x200B;](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) dienst. Om dit modulair te houden, kan zulk configuratie worden verstrekt gebruikend het [&#x200B; Sling wijzigt mechanisme &#x200B;](https://issues.apache.org/jira/browse/SLING-3578). De geadviseerde manier om dergelijke configuraties met uw bundel te installeren is door [&#x200B; het Verdelen Begeleidende Inhoud te gebruiken die &#x200B;](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) laadt:
 
 1. Een submap SLING-INF/content maken onder de map src/main/resources van uw bundel
 1. Maak in deze map een bestand met de naam org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique name for your factory configuration>.xml met de inhoud van uw fabrieksconfiguratie (inclusief alle toewijzingen voor gebruikers van subservices). Voorbeeld:
@@ -244,7 +244,7 @@ De derde aanpak is de voorkeurstechniek.
 
 Binnen de implementaties van het werkschemaproces, wordt de overeenkomstige gebruikerszitting die het werkschema teweegbracht verloren. Dit leidt tot werkschemaprocessen die vaak administratieve zittingen gebruiken om hun werk uit te voeren.
 
-Om deze kwesties te bevestigen, wordt het geadviseerd dat de zelfde benaderingen die in [ worden vermeld de Gebeurtenissen van de Verwerking, Preprocessoren van de Replicatie en Banen ](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) worden gebruikt.
+Om deze kwesties te bevestigen, wordt het geadviseerd dat de zelfde benaderingen die in [&#x200B; worden vermeld de Gebeurtenissen van de Verwerking, Preprocessoren van de Replicatie en Banen &#x200B;](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) worden gebruikt.
 
 ## Verkoopprocessors en verwijderde POSTEN {#sling-post-processors-and-deleted-pages}
 

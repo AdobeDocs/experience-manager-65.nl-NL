@@ -34,7 +34,7 @@ De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campag
 
 Segmenten maken:
 
-1. Open de [ segmentation console ](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Open de [&#x200B; segmentation console &#x200B;](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
 1. Creeer een pagina en ga een titel in - bijvoorbeeld, **AC Segmenten** - en selecteer het **Segment (Adobe Campaign)** malplaatje.
 1. Selecteer de gemaakte pagina in de structuurweergave aan de linkerkant.
 1. Creeer een segment, bijvoorbeeld, richtend mannelijke gebruikers, door een pagina onder het segment te creëren u genoemd Mannelijk creeerde en het **Segment (Adobe Campaign)** malplaatje selecteert.

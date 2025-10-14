@@ -20,17 +20,17 @@ ht-degree: 0%
 
 HTML5-formulieren worden gegenereerd met HTML5-functies en de opmaak van het gegenereerde formulier wordt uitgevoerd met CSS. De standaardweergave van een HTML5-formulier is vergelijkbaar met de uitvoering van de PDF. Ontwikkelaars kunnen aangepaste CSS gebruiken om de standaardweergave van HTML5-formulieren te wijzigen.
 
-Dit artikel verstrekt geleidelijke informatie om stijl van een vorm te veranderen HTML5 en [ Inleiding aan het artikel van Stijlen ](/help/forms/using/css-styles.md) bevat gedetailleerde informatie over diverse het stileren aspecten van vormen HTML5. Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
+Dit artikel verstrekt geleidelijke informatie om stijl van een vorm te veranderen HTML5 en [&#x200B; Inleiding aan het artikel van Stijlen &#x200B;](/help/forms/using/css-styles.md) bevat gedetailleerde informatie over diverse het stileren aspecten van vormen HTML5. Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
 
 De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aangepaste stijlen.
 
-![ beelden-002-klein ](assets/pictures-002-small.png)
+![&#x200B; beelden-002-klein &#x200B;](assets/pictures-002-small.png)
 
 ## Uw formulieren opmaken {#style-your-forms}
 
 1. **kies een profiel om douanestijlen** toe te voegen
 
-   Heb toegang tot de interface van CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en creeer een profiel of kies een bestaand profiel. Om te weten hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/using/custom-profile.md)
+   Heb toegang tot de interface van CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en creeer een profiel of kies een bestaand profiel. Om te weten hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/using/custom-profile.md)
 
 1. **creeer een CSS stijlblad voor het stileren van de HTML5 vormen**
 
@@ -42,7 +42,7 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
    1. Open vanuit het navigatievenster het CSS-bestand dat u hebt gemaakt.
    1. Definieer de CSS-klassen van de componenten die u wilt opmaken en voeg stijlen toe in die klassen.
 
-   Om te weten welke CSS klassen om voor een bepaalde component in uw HTML5 vormen tot stand te brengen, zie [ Inleiding aan Stijlen ](/help/forms/using/css-styles.md).
+   Om te weten welke CSS klassen om voor een bepaalde component in uw HTML5 vormen tot stand te brengen, zie [&#x200B; Inleiding aan Stijlen &#x200B;](/help/forms/using/css-styles.md).
 
 1. **omvat het stijlblad in Renderer van het Profiel**
 

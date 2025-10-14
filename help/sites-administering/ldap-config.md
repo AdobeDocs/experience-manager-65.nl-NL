@@ -41,9 +41,9 @@ Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen O
 
 >[!NOTE]
 >
->Controle [ de Externe Login Module van Oak - voor authentiek verklaren met LDAP en voorbij ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=nl-NL) om Externe Login Modules te duiken.
+>Controle [&#x200B; de Externe Login Module van Oak - voor authentiek verklaren met LDAP en voorbij &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=nl-NL) om Externe Login Modules te duiken.
 >
->Om een voorbeeld te lezen van het vormen van Experience Manager met Apache DS, zie [ het Vormen Adobe Experience Manager 6.5 om de Dienst van de Folder te gebruiken Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Om een voorbeeld te lezen van het vormen van Experience Manager met Apache DS, zie [&#x200B; het Vormen Adobe Experience Manager 6.5 om de Dienst van de Folder te gebruiken Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## De LDAP-identiteitsprovider configureren {#configuring-the-ldap-identity-provider}
 
@@ -209,7 +209,7 @@ De externe login module wordt gevestigd onder **Apache Jackrabbit Oak Externe Lo
 
 >[!NOTE]
 >
->De Apache Jackrabbit Oak External Login Module implementeert de Java™ Authentication and Authorization Servi (JAAS)-specificaties. Zie de [ officiële Gids van de Verwijzing van de Veiligheid Java™ van het Oracle ](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
+>De Apache Jackrabbit Oak External Login Module implementeert de Java™ Authentication and Authorization Servi (JAAS)-specificaties. Zie de [&#x200B; officiële Gids van de Verwijzing van de Veiligheid Java™ van het Oracle &#x200B;](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
 
 Zijn baan moet bepalen welke Leverancier van de Identiteit en de Handler van de Synchronisatie aan gebruik, effectief binden de twee modules.
 
@@ -230,7 +230,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 AEM 6 kan worden gevormd om met LDAP over SSL voor authentiek te verklaren door de hieronder procedure te volgen:
 
-1. Controle het **SSL van het Gebruik** of **gebruiken TLS** checkboxes wanneer het vormen van de [ LDAP Identiteitsleverancier ](#configuring-the-ldap-identity-provider).
+1. Controle het **SSL van het Gebruik** of **gebruiken TLS** checkboxes wanneer het vormen van de [&#x200B; LDAP Identiteitsleverancier &#x200B;](#configuring-the-ldap-identity-provider).
 1. Configureer de synchronisatiehandler en de module Externe aanmelding naar wens.
 1. Installeer indien nodig de SSL-certificaten in uw Java™ VM. U kunt deze installatie uitvoeren met behulp van het hulpprogramma:
 
@@ -298,7 +298,7 @@ Als een gebruiker wordt verwijderd uit een groep op de LDAP-server, wordt de wij
 
 AEM detecteert en verwerkt het leegmaken van gebruikers van externe groepen met behulp van de eigenschap `rep:externalId` . Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
 
-Zie de documentatie van Apache Oak op [ de Synchronisatie van de Gebruiker en van de Groep ](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+Zie de documentatie van Apache Oak op [&#x200B; de Synchronisatie van de Gebruiker en van de Groep &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Bekende problemen {#known-issues}
 

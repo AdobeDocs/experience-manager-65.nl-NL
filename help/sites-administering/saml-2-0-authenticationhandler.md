@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
-AEM schepen met a [ SAML ](https://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager steunt het [&#128279;](https://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie van 0&rbrace; SAML &lbrace;(Web-SSO profiel) gebruikend de `HTTP POST` band.
+AEM schepen met a [&#x200B; SAML &#x200B;](https://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager steunt het [&#128279;](https://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie van 0&rbrace; SAML &lbrace;(Web-SSO profiel) gebruikend de `HTTP POST` band.
 
 Het steunt:
 
@@ -31,11 +31,11 @@ Deze handler slaat het gecodeerde SAML-antwoordbericht op in het user-node ( `us
 
 >[!NOTE]
 >
->Zie [ een demonstratie van AEM en integratie SAML ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=nl-NL).
+>Zie [&#x200B; een demonstratie van AEM en integratie SAML &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=nl-NL).
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
-De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [ SAML ](https://saml.xml.org/saml-specifications) 2.0 de configuratie van de Handler van de Authentificatie geroepen **Adobe granite SAML 2.0 de Handler van de Authentificatie**. De volgende eigenschappen kunnen worden ingesteld.
+De [&#x200B; console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [&#x200B; SAML &#x200B;](https://saml.xml.org/saml-specifications) 2.0 de configuratie van de Handler van de Authentificatie geroepen **Adobe granite SAML 2.0 de Handler van de Authentificatie**. De volgende eigenschappen kunnen worden ingesteld.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent t
 
 >[!NOTE]
 >
->SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [ Toevoegend het certificaat IdP aan de ](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) sectie TrustStore voor meer informatie.
+>SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [&#x200B; Toevoegend het certificaat IdP aan de &#x200B;](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) sectie TrustStore voor meer informatie.
 
 **weg van de Weg** Bewaarplaats waarvoor deze authentificatiemanager door het Sling zou moeten worden gebruikt. Als dit leeg is, zal de authentificatiemanager worden onbruikbaar gemaakt.
 
@@ -59,7 +59,7 @@ De [ console van het Web ](/help/sites-deploying/configuring-osgi.md) verleent t
 
 >[!CAUTION]
 >
->De hostname van de Leverancier van de Identiteit moet aan de **Apache Verschuivende Filter** OSGi configuratie worden toegevoegd. Zie de [ console van het Web ](/help/sites-deploying/configuring-osgi.md) sectie voor meer informatie.
+>De hostname van de Leverancier van de Identiteit moet aan de **Apache Verschuivende Filter** OSGi configuratie worden toegevoegd. Zie de [&#x200B; console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md) sectie voor meer informatie.
 
 {identiteitskaart van de Entiteit van de Leverancier van 0} **identiteitskaart die uniek deze dienstverlener met de identiteitsleverancier identificeert.** Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
 
@@ -99,7 +99,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 1. Upload het IdP-certificaat.
 1. Noteer het certificaat Alias. De alias is **[!UICONTROL admin#1436172864930]** in het onderstaande voorbeeld.
 
-   ![ chlimage_1-372 ](assets/chlimage_1-372.png)
+   ![&#x200B; chlimage_1-372 &#x200B;](assets/chlimage_1-372.png)
 
 ## De sleutel en certificaatketen van de Serviceleverancier toevoegen aan het AEM sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
@@ -107,7 +107,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 >
 >De onderstaande stappen zijn verplicht, anders wordt de volgende uitzondering gegenereerd: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. Ga naar: [ http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
+1. Ga naar: [&#x200B; http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Bewerk de gebruiker `authentication-service` .
 1. Creeer een KeyStore door **te klikken Create KeyStore** onder **de Montages van de Rekening**.
 
@@ -127,7 +127,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 1. Upload het certificaatdossier door **Uitgezochte Dossiers van de Keten van het Certificaat te klikken**.
 1. Een alias toewijzen, zoals hieronder wordt getoond:
 
-   ![ chlimage_1-373 ](assets/chlimage_1-373.png)
+   ![&#x200B; chlimage_1-373 &#x200B;](assets/chlimage_1-373.png)
 
 ## Vorm Logger voor SAML {#configure-a-logger-for-saml}
 

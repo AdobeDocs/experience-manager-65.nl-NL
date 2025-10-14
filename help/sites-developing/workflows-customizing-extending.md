@@ -25,7 +25,7 @@ Het maken van een aangepaste workflowstap omvat de volgende activiteiten:
 * Ontwikkel de component van de werkschemastap.
 * Voer de step functionaliteit als dienst OSGi of een manuscript ECMA uit.
 
-U kunt ook [ met uw werkschema&#39;s van uw programma&#39;s en manuscripten ](/help/sites-developing/workflows-program-interaction.md) in wisselwerking staan.
+U kunt ook [&#x200B; met uw werkschema&#39;s van uw programma&#39;s en manuscripten &#x200B;](/help/sites-developing/workflows-program-interaction.md) in wisselwerking staan.
 
 ## Workflowstapcomponenten - De basisbeginselen {#workflow-step-components-the-basics}
 
@@ -36,9 +36,9 @@ Een workflowcomponent definieert de vormgeving en het gedrag van de stap bij het
 * Het dialoogvenster Bewerken voor het configureren van componenteigenschappen.
 * De service of het script dat wordt uitgevoerd bij uitvoering.
 
-Zoals met [ alle componenten ](/help/sites-developing/components.md), erven de componenten van de werkschemastap van de component die voor het `sling:resourceSuperType` bezit wordt gespecificeerd. In het volgende diagram wordt de hiërarchie getoond van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram omvat ook de **Stap van het Proces**, **Stap van de Deelnemer**, en **Dynamische Stap van de Deelnemer** componenten, aangezien dit de gemeenschappelijkste (en basis) uitgangspunt voor het ontwikkelen van de componenten van de douanestap zijn.
+Zoals met [&#x200B; alle componenten &#x200B;](/help/sites-developing/components.md), erven de componenten van de werkschemastap van de component die voor het `sling:resourceSuperType` bezit wordt gespecificeerd. In het volgende diagram wordt de hiërarchie getoond van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram omvat ook de **Stap van het Proces**, **Stap van de Deelnemer**, en **Dynamische Stap van de Deelnemer** componenten, aangezien dit de gemeenschappelijkste (en basis) uitgangspunt voor het ontwikkelen van de componenten van de douanestap zijn.
 
-![ aem_wf_componentinherit ](assets/aem_wf_componentinherit.png)
+![&#x200B; aem_wf_componentinherit &#x200B;](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ De `/libs/cq/workflow/components/model/step` component is de meest dichtbijgeleg
 
   Met het script `step.jsp` wordt de titel van de step-component weergegeven wanneer deze aan een model wordt toegevoegd.
 
-  ![ wf-22-1 ](assets/wf-22-1.png)
+  ![&#x200B; wf-22-1 &#x200B;](assets/wf-22-1.png)
 
 * [cq:dialoogvenster](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
@@ -66,7 +66,7 @@ De `/libs/cq/workflow/components/model/step` component is de meest dichtbijgeleg
    * **Gemeenschappelijk**: voor het uitgeven van de titel en de beschrijving.
    * **Geavanceerd**: voor het uitgeven van eigenschappen van het e-mailbericht.
 
-  ![ wf-44 ](assets/wf-44.png) ![ wf-45 ](assets/wf-45.png)
+  ![&#x200B; wf-44 &#x200B;](assets/wf-44.png) ![&#x200B; wf-45 &#x200B;](assets/wf-45.png)
 
   >[!NOTE]
   >
@@ -76,9 +76,9 @@ De `/libs/cq/workflow/components/model/step` component is de meest dichtbijgeleg
 
 De volgende objecten zijn beschikbaar (afhankelijk van het type stap) in ECMA-scripts:
 
-* [ WorkItem ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
-* [ WorkflowSession ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
-* [ WorkflowData ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* [&#x200B; WorkItem &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
+* [&#x200B; WorkflowSession &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [&#x200B; WorkflowData &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args` : array met de procesargumenten.
 
 * `sling` : voor toegang tot andere osgi-services.
@@ -96,7 +96,7 @@ Zowel `Workflow` als `WorkflowData` -metagegevens worden over de gehele workflow
 
 ## Aangepaste workflowonderdelen maken {#creating-custom-workflow-step-components}
 
-De de stapcomponenten van het werkschema kunnen [ worden gecreeerd op de zelfde manier zoals een andere component ](/help/sites-developing/components.md).
+De de stapcomponenten van het werkschema kunnen [&#x200B; worden gecreeerd op de zelfde manier zoals een andere component &#x200B;](/help/sites-developing/components.md).
 
 Voeg de volgende eigenschap toe aan het knooppunt `cq:Component` om van een van de (bestaande) basisstapcomponenten over te nemen:
 
@@ -131,7 +131,7 @@ Gebruik de volgende procedure om standaardwaarden voor de **Titel** en **3&rbrac
 
    >[!NOTE]
    >
-   >Voor meer informatie over cq:editConfig knoop, zie [ Vormend het Edit Gedrag van een Component ](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   >Voor meer informatie over cq:editConfig knoop, zie [&#x200B; Vormend het Edit Gedrag van een Component &#x200B;](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Voeg onder het knooppunt `cq:EditConfig` het volgende knooppunt toe:
 
@@ -147,7 +147,7 @@ Gebruik de volgende procedure om standaardwaarden voor de **Titel** en **3&rbrac
 
 >[!NOTE]
 >
->Zie [ Blijvend en Toegang hebbend tot Gegevens ](#persisting-and-accessing-data). Met name, voor informatie over de toegang tot van de bezitswaarde bij runtime, zie [ Toegang tot de Waarden van het Bezit van de Dialoog bij Runtime ](#accessing-dialog-property-values-at-runtime).
+>Zie [&#x200B; Blijvend en Toegang hebbend tot Gegevens &#x200B;](#persisting-and-accessing-data). Met name, voor informatie over de toegang tot van de bezitswaarde bij runtime, zie [&#x200B; Toegang tot de Waarden van het Bezit van de Dialoog bij Runtime &#x200B;](#accessing-dialog-property-values-at-runtime).
 
 De eigenschap name van `cq:Widget` -items geeft het JCR-knooppunt op dat de waarde van de widget opslaat. Wanneer widgets in het dialoogvenster met workflowstapcomponenten waarden opslaan onder het knooppunt `./metaData` , wordt de waarde toegevoegd aan de workflow `MetaDataMap` .
 
@@ -180,7 +180,7 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
    * Naam: `cq:editConfig`
    * Type: `cq:EditConfig`
 
-   Voor meer informatie over cq:editConfig knoop, zie [ Vormend het Edit Gedrag van een Component ](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   Voor meer informatie over cq:editConfig knoop, zie [&#x200B; Vormend het Edit Gedrag van een Component &#x200B;](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Voeg onder het knooppunt cq:EditConfig het volgende knooppunt toe:
 
@@ -203,19 +203,19 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
 
 ### Forms en dialoogvensters toevoegen aan stappen van deelnemers {#adding-forms-and-dialogs-to-participant-steps}
 
-Pas uw component van de deelnemersstap aan om eigenschappen te verstrekken die in de [ Stap van de Stap van de Deelnemer van de Vorm ](/help/sites-developing/workflows-step-ref.md#form-participant-step) en [ 3&rbrace; componenten van de Stap van de Deelnemer van de Dialoog worden gevonden:](/help/sites-developing/workflows-step-ref.md#dialog-participant-step)
+Pas uw component van de deelnemersstap aan om eigenschappen te verstrekken die in de [&#x200B; Stap van de Stap van de Deelnemer van de Vorm &#x200B;](/help/sites-developing/workflows-step-ref.md#form-participant-step) en [&#x200B; 3&rbrace; componenten van de Stap van de Deelnemer van de Dialoog worden gevonden:](/help/sites-developing/workflows-step-ref.md#dialog-participant-step)
 
 * Een formulier presenteren aan de gebruiker wanneer deze het gegenereerde werkitem opent.
 * Presenteer een aangepast dialoogvenster aan de gebruiker wanneer deze het gegenereerde werkitem voltooit.
 
-Voer de volgende procedure op uw nieuwe component (zie [ Creërend de Componenten van de Stap van het Werkschema van de Douane ](#creating-custom-workflow-step-components)) uit:
+Voer de volgende procedure op uw nieuwe component (zie [&#x200B; Creërend de Componenten van de Stap van het Werkschema van de Douane &#x200B;](#creating-custom-workflow-step-components)) uit:
 
 1. Voeg onder het knooppunt `cq:Component` het volgende knooppunt toe:
 
    * Naam: `cq:editConfig`
    * Type: `cq:EditConfig`
 
-   Voor meer informatie over cq:editConfig knoop, zie [ Vormend het Edit Gedrag van een Component ](/help/sites-developing/components-basics.md#edit-behavior).
+   Voor meer informatie over cq:editConfig knoop, zie [&#x200B; Vormend het Edit Gedrag van een Component &#x200B;](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Voeg onder het knooppunt cq:EditConfig het volgende knooppunt toe:
 
@@ -257,7 +257,7 @@ Voeg onder het knooppunt `cq:Component` een knooppunt `cq:EditConfig` toe. Hiero
 
 U kunt werkschemagegevens gebruiken om informatie voort te zetten die tijdens het leven van het werkschema - en tussen stappen wordt vereist. Een algemene vereiste voor workflowstappen is dat gegevens voor toekomstig gebruik behouden blijven of dat de blijvend gegevens uit eerdere stappen worden opgehaald.
 
-Metagegevens van werkstromen worden opgeslagen in een [`MetaDataMap`](#metadatamaps) -object. De Java API biedt de methode [`Workflow.getWorkflowData` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) om een [`WorkflowData` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -object te retourneren dat het juiste `MetaDataMap` -object biedt. Dit `WorkflowData` `MetaDataMap` -object is beschikbaar voor de OSGi-service of het ECMA-script van een step-component.
+Metagegevens van werkstromen worden opgeslagen in een [`MetaDataMap`](#metadatamaps) -object. De Java API biedt de methode [`Workflow.getWorkflowData` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) om een [`WorkflowData` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) -object te retourneren dat het juiste `MetaDataMap` -object biedt. Dit `WorkflowData` `MetaDataMap` -object is beschikbaar voor de OSGi-service of het ECMA-script van een step-component.
 
 #### Java {#java}
 
@@ -307,7 +307,7 @@ Het `MetaDataMap` -object van workflowinstanties is handig voor het opslaan en o
 
 >[!NOTE]
 >
->Voor informatie over het vormen van de componentendialoog om eigenschappen als werkschemameta-gegevens op te slaan, zie [ het Opslaan van de Waarden van het Bezit in de Meta-gegevens van het Werkschema ](#saving-property-values-in-workflow-metadata).
+>Voor informatie over het vormen van de componentendialoog om eigenschappen als werkschemameta-gegevens op te slaan, zie [&#x200B; het Opslaan van de Waarden van het Bezit in de Meta-gegevens van het Werkschema &#x200B;](#saving-property-values-in-workflow-metadata).
 
 De workflow `MetaDataMap` is beschikbaar voor Java- en ECMA-scriptprocesimplementaties:
 
@@ -321,7 +321,7 @@ De Edit dialoog van de **component van de Stap van het Proces 0&rbrace; &lbrace;
 
 In het volgende diagram, is de waarde van het **bezit van Argumenten** `argument1, argument2`:
 
-![ wf-24 ](assets/wf-24.png)
+![&#x200B; wf-24 &#x200B;](assets/wf-24.png)
 
 #### Java {#java-1}
 
@@ -374,13 +374,13 @@ Wanneer de processtappen tijdens het proces van een werkschema zijn begonnen, ve
 
 >[!NOTE]
 >
->Voor informatie over het associëren van uw component van de Stap van het Proces met de dienst of het manuscript, zie [ Stap van het Proces ](/help/sites-developing/workflows-step-ref.md#process-step) of [ met voeten tredend de Implementatie van de Stap ](#overriding-the-step-implementation).
+>Voor informatie over het associëren van uw component van de Stap van het Proces met de dienst of het manuscript, zie [&#x200B; Stap van het Proces &#x200B;](/help/sites-developing/workflows-step-ref.md#process-step) of [&#x200B; met voeten tredend de Implementatie van de Stap &#x200B;](#overriding-the-step-implementation).
 
 ### Een processtap implementeren met een Java-klasse {#implementing-a-process-step-with-a-java-class}
 
 Een processtap definiëren als een OSGI-servicecomponent (Java-bundel):
 
-1. Maak de bundel en plaats deze in de OSGI-container. Verwijs naar de documentatie over het creëren van een bundel met [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md) of [ Verduistering ](/help/sites-developing/howto-projects-eclipse.md).
+1. Maak de bundel en plaats deze in de OSGI-container. Verwijs naar de documentatie over het creëren van een bundel met [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md) of [&#x200B; Verduistering &#x200B;](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -550,7 +550,7 @@ U kunt de dienst of een manuscript ontwikkelen ECMA dat de deelnemer volgens de 
 
 >[!NOTE]
 >
->Voor informatie over het associëren van uw **Dynamische component van de Stap van de Deelnemer** met de dienst of het manuscript, zie [ Dynamische Stap van de Deelnemer ](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) of [ met voeten tredend de Implementatie van de Stap ](#persisting-and-accessing-data).
+>Voor informatie over het associëren van uw **Dynamische component van de Stap van de Deelnemer** met de dienst of het manuscript, zie [&#x200B; Dynamische Stap van de Deelnemer &#x200B;](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) of [&#x200B; met voeten tredend de Implementatie van de Stap &#x200B;](#persisting-and-accessing-data).
 
 ### Een kiezer voor deelnemers ontwikkelen met een Java-klasse {#developing-a-participant-chooser-using-a-java-class}
 
@@ -652,11 +652,11 @@ function getParticipant() {
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | De naam die moet worden weergegeven in het dialoogvenster Bewerken. |
 
-1. Bewerk de [ Dynamische instantie van de Stap van de Deelnemer ](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) en specificeer het te gebruiken manuscript.
+1. Bewerk de [&#x200B; Dynamische instantie van de Stap van de Deelnemer &#x200B;](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) en specificeer het te gebruiken manuscript.
 
 ## Workflowpakketten verwerken {#handling-workflow-packages}
 
-[ de pakketten van het Werkschema ](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) kunnen tot een werkschema voor verwerking worden overgegaan. Workflowpakketten bevatten verwijzingen naar bronnen zoals pagina&#39;s en elementen.
+[&#x200B; de pakketten van het Werkschema &#x200B;](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) kunnen tot een werkschema voor verwerking worden overgegaan. Workflowpakketten bevatten verwijzingen naar bronnen zoals pagina&#39;s en elementen.
 
 >[!NOTE]
 >
@@ -808,7 +808,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    Hier is het resultaat van onze voorbeeld aangepaste stap:
 
-   ![ wf-34 ](assets/wf-34.png)
+   ![&#x200B; wf-34 &#x200B;](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -832,7 +832,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    * `cq:icon`
 
-     Gebruikt om het pictogram van het a [ Koraal ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) voor de stap te specificeren.
+     Gebruikt om het pictogram van het a [&#x200B; Koraal &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) voor de stap te specificeren.
 
    * `componentGroup`
 
@@ -845,23 +845,23 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
       * WCM-workflow
       * Workflow
 
-   ![ wf-35 ](assets/wf-35.png)
+   ![&#x200B; wf-35 &#x200B;](assets/wf-35.png)
 
 1. U kunt nu een workflowmodel openen voor bewerking. In de stappen browser kunt u filteren om **Mijn Stap van de Douane te zien**:
 
-   ![ wf-36 ](assets/wf-36.png)
+   ![&#x200B; wf-36 &#x200B;](assets/wf-36.png)
 
    Het slepen **Mijn Stap van de Douane** op de modelvertoningen de kaart:
 
-   ![ wf-37 ](assets/wf-37.png)
+   ![&#x200B; wf-37 &#x200B;](assets/wf-37.png)
 
    Als er geen `cq:icon` is gedefinieerd voor de stap, wordt een standaardpictogram weergegeven met de eerste twee letters van de titel. Bijvoorbeeld:
 
-   ![ wf-38 ](assets/wf-38.png)
+   ![&#x200B; wf-38 &#x200B;](assets/wf-38.png)
 
 #### Het bepalen van Stap vormt Dialoogvenster {#defining-the-step-configure-dialog}
 
-Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **&#x200B;**&#x200B;dialoog als volgt:
+Na [&#x200B; Creërend de BasisStap &#x200B;](#creating-the-basic-step), bepaal de stap **&#x200B;**&#x200B;dialoog als volgt:
 
 1. Configureer de eigenschappen op het knooppunt `cq:editConfig` als volgt:
 
@@ -875,7 +875,7 @@ Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **&#x200
 
      Stel dit naar wens in.
 
-   ![ wf-39 ](assets/wf-39.png)
+   ![&#x200B; wf-39 &#x200B;](assets/wf-39.png)
 
 1. Configureer de eigenschappen op het knooppunt `cq:formsParameter` als volgt:
 
@@ -887,7 +887,7 @@ Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **&#x200
 
    * U kunt ook uw eigen aangepaste eigenschappen definiëren.
 
-   ![ wf-40 ](assets/wf-40.png)
+   ![&#x200B; wf-40 &#x200B;](assets/wf-40.png)
 
 1. Configureer de eigenschappen op het knooppunt `cq:listeners` .
 
@@ -906,11 +906,11 @@ Na [ Creërend de BasisStap ](#creating-the-basic-step), bepaal de stap **&#x200
 
    In dit voorbeeld is overerving geactiveerd zodat we het knooppunt `cq:listeners` kunnen verwijderen en de stap blijft correct.
 
-   ![ wf-41 ](assets/wf-41.png)
+   ![&#x200B; wf-41 &#x200B;](assets/wf-41.png)
 
 1. U kunt nu een instantie van uw stap toevoegen aan een workflowmodel. Wanneer u **&#x200B;**&#x200B;vormt de stap u de dialoog zult zien:
 
-   ![ wf-42 ](assets/wf-42.png) ![ wf-43 ](assets/wf-43.png)
+   ![&#x200B; wf-42 &#x200B;](assets/wf-42.png) ![&#x200B; wf-43 &#x200B;](assets/wf-43.png)
 
 #### Sampleopmaak die in dit voorbeeld wordt gebruikt {#sample-markup-used-in-this-example}
 
@@ -1031,7 +1031,7 @@ Het voorbeeld `_cq_dialog/.content.xml` dat in dit voorbeeld wordt gebruikt:
 >
 >Dialoogvensters van de klassieke UI-modeleditor werken nog steeds met de standaardinterface-editor met aanraakbediening.
 >
->Hoewel AEM [ moderniseringshulpmiddelen ](/help/sites-developing/modernization-tools.md) heeft als u uw klassieke UI geleidelijke dialogen aan standaardUI dialogen wilt bevorderen. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
+>Hoewel AEM [&#x200B; moderniseringshulpmiddelen &#x200B;](/help/sites-developing/modernization-tools.md) heeft als u uw klassieke UI geleidelijke dialogen aan standaardUI dialogen wilt bevorderen. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
 >* Als een bijgewerkt dialoogvenster leeg is, kunt u dialoogvensters in `/libs` bekijken die soortgelijke functionaliteit hebben als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
 >

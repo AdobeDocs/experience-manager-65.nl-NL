@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Onderdelen{#components}
 
-Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Zij zijn beschikbaar wanneer [ het uitgeven van een pagina ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en door belangrijkste functioneel gebied (namelijk componentengroep) aan hulp het filtreren gegroepeerd.
+Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Zij zijn beschikbaar wanneer [&#x200B; het uitgeven van een pagina &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en door belangrijkste functioneel gebied (namelijk componentengroep) aan hulp het filtreren gegroepeerd.
 
 >[!CAUTION]
 >
@@ -41,4 +41,4 @@ De volgende pagina&#39;s bevatten snelle koppelingen naar enkele van de belangri
 
 ## Ontwerpmodus gebruiken om componenten te configureren {#using-design-mode-to-configure-components}
 
-Naast de componenten waartoe auteurs via het hulpprogramma toegang hebben in een standaardinstallatie, zijn er ook verschillende andere componenten beschikbaar. U kunt [ wijze van het Ontwerp ](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) gebruiken om deze toe te laten/onbruikbaar te maken en parameters voor specifieke componenten uit te geven.
+Naast de componenten waartoe auteurs via het hulpprogramma toegang hebben in een standaardinstallatie, zijn er ook verschillende andere componenten beschikbaar. U kunt [&#x200B; wijze van het Ontwerp &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) gebruiken om deze toe te laten/onbruikbaar te maken en parameters voor specifieke componenten uit te geven.

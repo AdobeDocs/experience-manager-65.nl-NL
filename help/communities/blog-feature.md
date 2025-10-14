@@ -30,11 +30,11 @@ De blogfunctie biedt het volgende:
 * Maken van blogartikelen en commentaar op Publish
 * RTF-bewerking
 * Inline-afbeeldingen (met ondersteuning voor slepen en neerzetten)
-* Ingesloten sociale voorzien van een netwerkinhoud ([ bed steun ](/help/communities/blog-developer-basics.md#allowing-rich-media) in)
+* Ingesloten sociale voorzien van een netwerkinhoud ([&#x200B; bed steun &#x200B;](/help/communities/blog-developer-basics.md#allowing-rich-media) in)
 * Conceptmodus
 * Gepland publiceren
-* Samenstellen namens (a [ bevoorrecht lid ](/help/communities/users.md#privileged-members-group) kan inhoud namens een verschillend communautair lid tot stand brengen)
-* [ In-context en bulkmoderatie ](/help/communities/moderate-ugc.md) van blogartikelen en commentaren
+* Samenstellen namens (a [&#x200B; bevoorrecht lid &#x200B;](/help/communities/users.md#privileged-members-group) kan inhoud namens een verschillend communautair lid tot stand brengen)
+* [&#x200B; In-context en bulkmoderatie &#x200B;](/help/communities/moderate-ugc.md) van blogartikelen en commentaren
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
@@ -58,17 +58,17 @@ En sleep ze naar de juiste plaats op een pagina waarop de blog moet worden weerg
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](/help/communities/basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](/help/communities/blog-developer-basics.md#essentials-for-client-side) inbegrepen zijn, verschijnt de `Blog` component als volgt:
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](/help/communities/blog-developer-basics.md#essentials-for-client-side) inbegrepen zijn, verschijnt de `Blog` component als volgt:
 
-![ toe:voegen-blog-component ](assets/add-blog-component.png)
+![&#x200B; toe:voegen-blog-component &#x200B;](assets/add-blog-component.png)
 
 ### Blog configureren {#configuring-blog}
 
 Selecteer de geplaatste component `Blog` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
-![ Blogmontages ](assets/blog-configure.png)
+![&#x200B; Blogmontages &#x200B;](assets/blog-configure.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -166,21 +166,21 @@ Onder het **lusje van Montages**, specificeer de basiseigenschappen van blog:
 
 * **toestaat na**
 
-  Als gecontroleerd, omvat de volgende eigenschap voor blogartikelen, die leden [ toestaat om ](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, omvat de volgende eigenschap voor blogartikelen, die leden [&#x200B; toestaat om &#x200B;](/help/communities/notifications.md) van nieuwe posten op de hoogte worden gebracht. De optie Standaard is uitgeschakeld.
 
 * **staat E-mailAbonnementen** toe
 
-  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([ abonnement ](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [ gevormde e-mail ](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, sta leden toe om van nieuwe posten door e-mail ([&#x200B; abonnement &#x200B;](/help/communities/subscriptions.md)) op de hoogte te worden gebracht. Vereist `Allow Following` worden gecontroleerd en [&#x200B; gevormde e-mail &#x200B;](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Badges van de Vertoning**
 
-  Als gecontroleerd, vertoning verdiende en toegewezen [ badges ](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, vertoning verdiende en toegewezen [&#x200B; badges &#x200B;](/help/communities/implementing-scoring.md) met de blogingang van een lid. De optie Standaard is uitgeschakeld.
 
 * **krijgt geen antwoorden op het vermelden van de Pagina**
 
 * **sta Aanbevolen Inhoud** toe
 
-  Als gecontroleerd, wordt het idee geïdentificeerd als [ gekenmerkte inhoud ](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+  Als gecontroleerd, wordt het idee geïdentificeerd als [&#x200B; gekenmerkte inhoud &#x200B;](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
 * **laat Mentie** toe
 
@@ -244,7 +244,7 @@ Wanneer u dubbelklikt op de component `Blog Sidebar` , wordt een dialoogvenster 
 
 Onder het **lusje van de Montages van de Zijbalk van het Dagboek**, specificeer het datumformaat voor archieven en welk type van ingangen in sidebar te tonen:
 
-![ blog-component-sidebar ](assets/blog-component-sidebar.png)
+![&#x200B; blog-component-sidebar &#x200B;](assets/blog-component-sidebar.png)
 
 * **formaat van de Datum**
 
@@ -298,13 +298,13 @@ De blogartikelen worden op het desbetreffende tabblad (Gepubliceerd, Concepten o
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [ matigingstaken ](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle blogartikelen en commentaren uitvoeren die aan een blog worden gepost.
+Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [&#x200B; matigingstaken &#x200B;](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle blogartikelen en commentaren uitvoeren die aan een blog worden gepost.
 
-![ moderator-homepage ](assets/moderator-homepage.png)
+![&#x200B; moderator-homepage &#x200B;](assets/moderator-homepage.png)
 
 #### Leden {#members}
 
-Wanneer de ondertekende in gebruiker een communautair lid of [ bevoorrecht lid ](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij `New Article` selecteren om een nieuw blogartikel tot stand te brengen en te posten.
+Wanneer de ondertekende in gebruiker een communautair lid of [&#x200B; bevoorrecht lid &#x200B;](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij `New Article` selecteren om een nieuw blogartikel tot stand te brengen en te posten.
 
 Zij kunnen met name:
 
@@ -315,22 +315,22 @@ Zij kunnen met name:
 * Hun eigen blogartikel of commentaar verwijderen
 * Blogartikelen of opmerkingen van anderen markeren
 
-![ lid-homepage ](assets/member-homepage.png)
+![&#x200B; lid-homepage &#x200B;](assets/member-homepage.png)
 
-![ creeer-blog ](assets/create-blog.png)
+![&#x200B; creeer-blog &#x200B;](assets/create-blog.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en opmerkingen lezen, deze vertalen als ze worden ondersteund, maar mogen geen blogartikel of commentaar toevoegen en de artikelen of opmerkingen van anderen niet markeren.
 
-![ anonieme-gebruiker-mening ](assets/anonymous-user-view.png)
+![&#x200B; anonieme-gebruiker-mening &#x200B;](assets/anonymous-user-view.png)
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de [ pagina van de Hoofdzaak van Blog ](/help/communities/blog-developer-basics.md) voor ontwikkelaars worden gevonden.
+Meer informatie kan op de [&#x200B; pagina van de Hoofdzaak van Blog &#x200B;](/help/communities/blog-developer-basics.md) voor ontwikkelaars worden gevonden.
 
-Voor moderatie van blogingangen en commentaren, zie [ Modererend Gebruiker-Gegenereerde Inhoud ](/help/communities/moderate-ugc.md).
+Voor moderatie van blogingangen en commentaren, zie [&#x200B; Modererend Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van blogingangen en commentaren, zie [ Tags Gebruiker-Gegenereerde Inhoud ](/help/communities/tag-ugc.md).
+Voor het etiketteren van blogingangen en commentaren, zie [&#x200B; Tags Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/tag-ugc.md).
 
-Voor vertaling van blogingangen en commentaren, zie [ Vertaal Gebruiker-Gegenereerde Inhoud ](/help/communities/translate-ugc.md).
+Voor vertaling van blogingangen en commentaren, zie [&#x200B; Vertaal Gebruiker-Gegenereerde Inhoud &#x200B;](/help/communities/translate-ugc.md).

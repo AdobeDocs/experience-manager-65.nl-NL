@@ -25,48 +25,48 @@ In deze sectie van de documentatie wordt beschreven hoe u clientbibliotheken (cl
 
 Zie voor basisinformatie het volgende:
 
-* [ Gebruikend cliënt-Kant Bibliotheken ](/help/sites-developing/clientlibs.md) die gebruiksdetails en het zuiveren hulpmiddelen verstrekt
-* [ Clientlibs voor SCF ](/help/communities/client-customize.md#clientlibs) die nuttige informatie wanneer het aanpassen van componenten SCF verstrekt
+* [&#x200B; Gebruikend cliënt-Kant Bibliotheken &#x200B;](/help/sites-developing/clientlibs.md) die gebruiksdetails en het zuiveren hulpmiddelen verstrekt
+* [&#x200B; Clientlibs voor SCF &#x200B;](/help/communities/client-customize.md#clientlibs) die nuttige informatie wanneer het aanpassen van componenten SCF verstrekt
 
 
 ## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
 
 Clientlibs zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
-Wanneer er a [ communautaire functie ](/help/communities/functions.md) voor een eigenschap bestaat, zijn alle noodzakelijke componenten en configuraties, met inbegrip van de vereiste clientlibs, aanwezig in de communautaire plaats. Alleen als de auteurs extra componenten ter beschikking moeten hebben, moeten er extra clientlibs worden toegevoegd.
+Wanneer er a [&#x200B; communautaire functie &#x200B;](/help/communities/functions.md) voor een eigenschap bestaat, zijn alle noodzakelijke componenten en configuraties, met inbegrip van de vereiste clientlibs, aanwezig in de communautaire plaats. Alleen als de auteurs extra componenten ter beschikking moeten hebben, moeten er extra clientlibs worden toegevoegd.
 
-Wanneer de vereiste clientlibs ontbreken, [ toevoegend een component van Gemeenschappen aan een pagina ](/help/communities/author-communities.md) in de fouten van JavaScript en een onverwachte verschijning kon resulteren.
+Wanneer de vereiste clientlibs ontbreken, [&#x200B; toevoegend een component van Gemeenschappen aan een pagina &#x200B;](/help/communities/author-communities.md) in de fouten van JavaScript en een onverwachte verschijning kon resulteren.
 
 ### Voorbeeld: Geplaatste revisies zonder Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![ geplaatst-overzichten ](assets/placed-reviews.png)
+![&#x200B; geplaatst-overzichten &#x200B;](assets/placed-reviews.png)
 
 ### Voorbeeld: Geplaatste revisies met clips {#example-placed-reviews-with-clientlibs}
 
-![ revisies-clientlibs ](assets/reviews-clientlibs.png)
+![&#x200B; revisies-clientlibs &#x200B;](assets/reviews-clientlibs.png)
 
 ## Vereiste clients identificeren {#identifying-required-clientlibs}
 
 De essentiële eigenschapinformatie voor ontwikkelaars identificeert de vereiste clientlibs.
 
-Bovendien van een AEM instantie, die aan de [ Communautaire Gids van Componenten ](/help/communities/components-guide.md) doorbladert verleent toegang tot een lijst van cliëntlib categorieën die voor een component worden vereist.
+Bovendien van een AEM instantie, die aan de [&#x200B; Communautaire Gids van Componenten &#x200B;](/help/communities/components-guide.md) doorbladert verleent toegang tot een lijst van cliëntlib categorieën die voor een component worden vereist.
 
-Bijvoorbeeld, bij de bovenkant van de [ pagina van Revisies ](https://localhost:4502/content/community-components/en/reviews.html) de vereiste vermelde clientlibs zijn
+Bijvoorbeeld, bij de bovenkant van de [&#x200B; pagina van Revisies &#x200B;](https://localhost:4502/content/community-components/en/reviews.html) de vereiste vermelde clientlibs zijn
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![ clientlibs-overzichten ](assets/clientlibs-reviews.png)
+![&#x200B; clientlibs-overzichten &#x200B;](assets/clientlibs-reviews.png)
 
 ## Vereiste clips toevoegen {#adding-required-clientlibs}
 
 Wanneer u een Gemeenschapscomponent aan een pagina wilt toevoegen, moet u de vereiste clientlibs voor de component toevoegen als deze nog niet aanwezig is.
 
-Gebruik [ CRXDE|Lite ](#using-crxde-lite) om een bestaande clientlibslist voor een communautaire plaatspagina te wijzigen.
+Gebruik [&#x200B; CRXDE|Lite &#x200B;](#using-crxde-lite) om een bestaande clientlibslist voor een communautaire plaatspagina te wijzigen.
 
-Om een clientlib voor een communautaire plaats toe te voegen door [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md) te gebruiken:
+Om een clientlib voor een communautaire plaats toe te voegen door [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md) te gebruiken:
 
-* Blader naar [ https://&lt;server>:&lt;port>/crx/de ](https://localhost:4502/crx/de).
+* Blader naar [&#x200B; https://&lt;server>:&lt;port>/crx/de &#x200B;](https://localhost:4502/crx/de).
 * Zoek het knooppunt `clientlibslist` voor de pagina waaraan u de component wilt toevoegen:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
@@ -89,6 +89,6 @@ Om een clientlib voor een communautaire plaats toe te voegen door [ CRXDE Lite ]
 >
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
 
-Gebruikend [ Begonnen het Worden met AEM Communities ](/help/communities/getting-started.md) voorbeeld, waar `site-name` ** is in dienst neemt, is dit hoe de clientliblist zou verschijnen als het toevoegen van de revisiecomponent:
+Gebruikend [&#x200B; Begonnen het Worden met AEM Communities &#x200B;](/help/communities/getting-started.md) voorbeeld, waar `site-name` ** is in dienst neemt, is dit hoe de clientliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
-![ overzicht-component ](assets/review-component.png)
+![&#x200B; overzicht-component &#x200B;](assets/review-component.png)

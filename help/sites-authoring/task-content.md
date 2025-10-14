@@ -41,7 +41,7 @@ Als een project om het even welke verwante taken heeft, wordt een taaktegel geto
 * Percentage actieve taken
 * Percentage achterstallige taken
 
-![ de tegel van Taken ](assets/project-tile-tasks.png)
+![&#x200B; de tegel van Taken &#x200B;](assets/project-tile-tasks.png)
 
 ### Het bekijken van of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -51,13 +51,13 @@ Naast het volgen van vooruitgang, kunt u meer informatie over het project willen
 
 Klik op de knop met de ellips rechtsonder in de takentegel om uw Postvak IN weer te geven dat op de taken met betrekking tot het project is gefilterd. De taakdetails worden getoond samen met meta-gegevens zoals vervaldatum, ontvanger, prioriteit, en status.
 
-![ de taak van het Project inbox ](assets/project-tasks.png)
+![&#x200B; de taak van het Project inbox &#x200B;](assets/project-tasks.png)
 
 #### Taakdetails {#task-details}
 
 Voor meer informatie over een bepaalde taak, in inbox, klik de taak om het dan te selecteren **Open** in de toolbar te klikken.
 
-![ het detail van de Taak ](assets/project-task-detail.png)
+![&#x200B; het detail van de Taak &#x200B;](assets/project-task-detail.png)
 
 U kunt details aan de taak weergeven, bewerken of toevoegen via verschillende tabbladen.
 
@@ -76,7 +76,7 @@ Een taak toevoegen:
 1. Klik naar beneden chevron bij het hoogste recht van de tegel en selecteer **creëren Taak**.
 1. In **voeg het venster van de Taak** toe, verstrek taakdetails zoals prioriteit, toegewezen persoon, en vervaldatum.
 
-   ![ Toevoegend een taak ](assets/project-add-task.png)
+   ![&#x200B; Toevoegend een taak &#x200B;](assets/project-add-task.png)
 
 1. Klik **voorleggen**.
 
@@ -86,6 +86,6 @@ In plaats van toegang tot van uw projecttaken van het project zelf, kunt u tot h
 
 Vanuit het Postvak IN kunt u de taken openen en de taakstatus instellen. De taken verschijnen ook in uw inbox wanneer zij aan een gebruikersgroep worden toegewezen die u tot behoort. In dat geval kan elk lid van de groep het werk uitvoeren en de taak voltooien.
 
-![ Inbox ](assets/project-inbox.png)
+![&#x200B; Inbox &#x200B;](assets/project-inbox.png)
 
-Om een taak te voltooien, selecteer de taak en klik **Volledig** in de toolbar. Voeg informatie aan de taak toe en klik dan **Gereed**. Zie [ Uw Inbox ](/help/sites-authoring/inbox.md) voor meer informatie.
+Om een taak te voltooien, selecteer de taak en klik **Volledig** in de toolbar. Voeg informatie aan de taak toe en klik dan **Gereed**. Zie [&#x200B; Uw Inbox &#x200B;](/help/sites-authoring/inbox.md) voor meer informatie.

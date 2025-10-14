@@ -30,7 +30,7 @@ David&#39;s Model werd jaren geleden geschreven door David Nuescheler, maar de i
 * Bestanden zijn bestanden.
 * Id&#39;s zijn slecht.
 
-Het Model van David kan op de wiki van het Jasje in [ https://wiki.apache.org/jackrabbit/DavidsModel ](https://wiki.apache.org/jackrabbit/DavidsModel) worden gevonden.
+Het Model van David kan op de wiki van het Jasje in [&#x200B; https://wiki.apache.org/jackrabbit/DavidsModel &#x200B;](https://wiki.apache.org/jackrabbit/DavidsModel) worden gevonden.
 
 ### Alles is inhoud {#everything-is-content}
 

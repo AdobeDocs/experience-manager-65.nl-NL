@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[ het Leven van de Adobe is officieel eind-van-dienst vanaf 30 November, 2021 ](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=nl-NL).
+>[&#x200B; het Leven van de Adobe is officieel eind-van-dienst vanaf 30 November, 2021 &#x200B;](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=nl-NL).
 
 <!--
 Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.

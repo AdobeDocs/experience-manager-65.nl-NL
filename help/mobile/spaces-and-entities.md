@@ -37,19 +37,19 @@ Voor de eerste gebruiker, die geen inhoudsdiensten om met ruimten heeft gevormd 
 >
 >Controleer **toelaten AEM de Diensten van de Inhoud** om met Plaatsen te werken en het in uw de toepassingsdashboard van AEM Mobile toe te laten.
 >
->Zie [ het Beheer de Diensten van de Inhoud ](/help/mobile/developing-content-services.md) voor meer details.
+>Zie [&#x200B; het Beheer de Diensten van de Inhoud &#x200B;](/help/mobile/developing-content-services.md) voor meer details.
 
 Nadat u de spaties in het dashboard hebt geconfigureerd, voert u de volgende stappen uit om spaties te maken:
 
 1. Kies **Spaties** van de Diensten van de Inhoud.
 
-   ![ chlimage_1-83 ](assets/chlimage_1-83.png)
+   ![&#x200B; chlimage_1-83 &#x200B;](assets/chlimage_1-83.png)
 
 1. Kies **creeer** om een ruimte tot stand te brengen. Ga **Titel 0&rbrace;,** Naam **, en** Beschrijving **voor de ruimte in.**
 
    Klik **creëren**.
 
-   ![ chlimage_1-84 ](assets/chlimage_1-84.png)
+   ![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-84.png)
 
 ## Een spatie beheren {#managing-a-space}
 
@@ -57,7 +57,7 @@ Nadat u een spatie hebt gemaakt, klikt u links om de ruimte in de lijst te beher
 
 U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de ruimte en de inhoud ervan publiceren naar een AEM-publicatie-instantie.
 
-![ chlimage_1-85 ](assets/chlimage_1-85.png)
+![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-85.png)
 
 **het Bekijken en het Uitgeven Eigenschappen van een Ruimte**
 
@@ -76,7 +76,7 @@ U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de rui
 >
 >De volgende afbeelding illustreert de acties die kunnen worden uitgevoerd nadat u de ruimte hebt gepubliceerd.
 
-![ chlimage_1-86 ](assets/chlimage_1-86.png)
+![&#x200B; chlimage_1-86 &#x200B;](assets/chlimage_1-86.png)
 
 ## Werken met mappen in een spatie {#working-with-folders-in-a-space}
 
@@ -86,11 +86,11 @@ De ruimten kunnen omslagen omvatten om ruimteinhoud en activa verder te organise
 
 1. Klik op de ruimte in de lijst in de ruimteconsole en klik **creeer Omslag**
 
-   ![ chlimage_1-87 ](assets/chlimage_1-87.png)
+   ![&#x200B; chlimage_1-87 &#x200B;](assets/chlimage_1-87.png)
 
 1. Ga de **Titel**, **Naam in,** en **Beschrijving** voor de omslag
 
-   ![ chlimage_1-88 ](assets/chlimage_1-88.png)
+   ![&#x200B; chlimage_1-88 &#x200B;](assets/chlimage_1-88.png)
 
 1. Klik **creëren** om de omslag in een ruimte tot stand te brengen
 
@@ -112,7 +112,7 @@ Het **bezit van het Exemplaar van de Taal 0&rbrace; &lbrace;staat auteurs toe om
 
    Klik **creëren** en kies **Exemplaar van de Taal**.
 
-   ![ chlimage_1-89 ](assets/chlimage_1-89.png)
+   ![&#x200B; chlimage_1-89 &#x200B;](assets/chlimage_1-89.png)
 
    >[!NOTE]
    >
@@ -122,11 +122,11 @@ Het **bezit van het Exemplaar van de Taal 0&rbrace; &lbrace;staat auteurs toe om
 
    Klik **creëren**.
 
-   ![ chlimage_1-90 ](assets/chlimage_1-90.png)
+   ![&#x200B; chlimage_1-90 &#x200B;](assets/chlimage_1-90.png)
 
 1. Zodra u een Exemplaar van de Taal creeert, verschijnt het in uw ruimte in **Stramienen van de Taal**.
 
-   ![ chlimage_1-91 ](assets/chlimage_1-91.png)
+   ![&#x200B; chlimage_1-91 &#x200B;](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
@@ -159,21 +159,21 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    U kunt desgewenst naar de map navigeren door op de titel van de map in de lijst te klikken.
 
-   ![ chlimage_1-92 ](assets/chlimage_1-92.png)
+   ![&#x200B; chlimage_1-92 &#x200B;](assets/chlimage_1-92.png)
 
 1. Kies het model voor de entiteit. Dit is het type entiteit dat u wilt maken. Klik op Volgende.
 
-   ![ chlimage_1-93 ](assets/chlimage_1-93.png)
+   ![&#x200B; chlimage_1-93 &#x200B;](assets/chlimage_1-93.png)
 
    >[!NOTE]
    >
    >U hebt de optie om het **Model van Assets**, **Model van Pagina&#39;s**, of een model van entiteitstype te kiezen u vóór creeerde.
    >
-   >Zie [ Creërend een Model ](/help/mobile/administer-mobile-apps.md), om uw douaneentiteit tot stand te brengen.
+   >Zie [&#x200B; Creërend een Model &#x200B;](/help/mobile/administer-mobile-apps.md), om uw douaneentiteit tot stand te brengen.
 
 1. Ga a **Titel**, **Naam**, **Beschrijving**, en **Markeringen** voor de entiteit in. Klik **creëren**.
 
-   ![ chlimage_1-94 ](assets/chlimage_1-94.png)
+   ![&#x200B; chlimage_1-94 &#x200B;](assets/chlimage_1-94.png)
 
    Zodra u wordt gedaan, verschijnt de entiteit in de nakomelingen van uw ruimte.
 
@@ -181,11 +181,11 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
 1. Nadat u een entiteit hebt gemaakt, gaat u naar de map of ruimte en kiest u uw entiteit in de ruimteconsole die u wilt bewerken.
 
-   ![ chlimage_1-95 ](assets/chlimage_1-95.png)
+   ![&#x200B; chlimage_1-95 &#x200B;](assets/chlimage_1-95.png)
 
 1. Selecteer een entiteit voor het uitgeven en klik **uitgeven**.
 
-   ![ chlimage_1-96 ](assets/chlimage_1-96.png)
+   ![&#x200B; chlimage_1-96 &#x200B;](assets/chlimage_1-96.png)
 
    >[!CAUTION]
    >
@@ -193,25 +193,25 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    ***als u het malplaatje voor het creëren van de entiteit als Modellen van Assets*** kiest, die op **klikken geeft** uit laat u activa zoals aangetoond in het hieronder cijfer toevoegen:
 
-   ![ chlimage_1-97 ](assets/chlimage_1-97.png)
+   ![&#x200B; chlimage_1-97 &#x200B;](assets/chlimage_1-97.png)
 
    Alternatief, kunt u **Voorproef** klikken om de verbindingsverbinding te bekijken.
 
-   ![ chlimage_1-98 ](assets/chlimage_1-98.png)
+   ![&#x200B; chlimage_1-98 &#x200B;](assets/chlimage_1-98.png)
 
    ***als u het malplaatje voor het creëren van de entiteit als Modellen van Pagina&#39;s*** kiest, die op **klikken geeft** uit laat u activa zoals aangetoond in het hieronder cijfer toevoegen:
 
-   ![ chlimage_1-99 ](assets/chlimage_1-99.png)
+   ![&#x200B; chlimage_1-99 &#x200B;](assets/chlimage_1-99.png)
 
    Klik op het pictogram in de **Weg** om activa toe te voegen
 
-   ![ chlimage_1-100 ](assets/chlimage_1-100.png)
+   ![&#x200B; chlimage_1-100 &#x200B;](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
    >Als u een entiteit hebt toegevoegd, moet deze worden opgeslagen om de koppeling Voorvertoning te kunnen gebruiken. Om de voorproef te bekijken, klik **sparen**. Het klikken op de **Voorproef** toont de json van de toegevoegde activa, zoals aangetoond in het hieronder cijfer:
 
-   ![ chlimage_1-101 ](assets/chlimage_1-101.png)
+   ![&#x200B; chlimage_1-101 &#x200B;](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
@@ -219,17 +219,17 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    Bovendien, selecteer een entiteit van de lijst van de ruimteconsole en klik **Eigenschappen** om de eigenschappen voor een bepaalde entiteit te bekijken en uit te geven.
 
-   ![ chlimage_1-102 ](assets/chlimage_1-102.png)
+   ![&#x200B; chlimage_1-102 &#x200B;](assets/chlimage_1-102.png)
 
    U kunt de titel, beschrijving, tags bewerken en de elementen aan de entiteit toevoegen.
 
-   ![ chlimage_1-103 ](assets/chlimage_1-103.png)
+   ![&#x200B; chlimage_1-103 &#x200B;](assets/chlimage_1-103.png)
 
 ### Entiteiten verwijderen {#removing-an-entity}
 
 1. Entiteiten in de lijst met ruimte-inhoud selecteren
 
-   ![ chlimage_1-104 ](assets/chlimage_1-104.png)
+   ![&#x200B; chlimage_1-104 &#x200B;](assets/chlimage_1-104.png)
 
 1. Klik **Schrapping** van de toolbar om de specifieke entiteit uit de ruimte te verwijderen
 
@@ -239,7 +239,7 @@ U hebt de optie om **de Boom van Publish** of **Snelle Publish** te kiezen om uw
 
 1. Selecteer een entiteit in de lijst met ruimteconsole en klik op **Publish Tree &#x200B;** om die entiteit en de onderliggende items te publiceren.
 
-   ![ chlimage_1-105 ](assets/chlimage_1-105.png)
+   ![&#x200B; chlimage_1-105 &#x200B;](assets/chlimage_1-105.png)
 
    **of**,
 

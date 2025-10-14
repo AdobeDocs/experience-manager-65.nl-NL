@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Foutdialoogvensters aanpassen {#customizing-error-dialogs}
 
-In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer de [ Algemene stappen voor de aanpassing van de de werkruimte van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md) uit die door de hieronder stappen wordt gevolgd om foutendialogen aan te passen.
+In de werkruimte van AEM Forms kunt u dialoogvensters met fouten aanpassen. Voer de [&#x200B; Algemene stappen voor de aanpassing van de de werkruimte van AEM Forms &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md) uit die door de hieronder stappen wordt gevolgd om foutendialogen aan te passen.
 
 ## Tekst aanpassen {#customizing-text}
 

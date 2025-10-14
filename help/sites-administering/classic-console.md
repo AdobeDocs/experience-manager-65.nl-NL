@@ -24,16 +24,16 @@ Deze sectie is voor de Classic UI Tagging Console.
 
 >[!NOTE]
 >
->Zie [ Beherende Markeringen ](/help/sites-administering/tags.md#tagging-console) voor details van de aanraking-geoptimaliseerde Console van het Tags van UI.
+>Zie [&#x200B; Beherende Markeringen &#x200B;](/help/sites-administering/tags.md#tagging-console) voor details van de aanraking-geoptimaliseerde Console van het Tags van UI.
 
 De klassieke UI-tagingconsole openen:
 
 * op auteur
 * aanmelden met beheerdersrechten
 * naar de console bladeren
-bijvoorbeeld, [ https://localhost:4502/tagging](https://localhost:4502/tagging)
+bijvoorbeeld, [&#x200B; https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![ Klassiek consolevenster ](assets/managing_tags_usingthetagasministrationconsole.png)
+![&#x200B; Klassiek consolevenster &#x200B;](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Tags en naamruimten maken {#creating-tags-and-namespaces}
 
@@ -41,11 +41,11 @@ bijvoorbeeld, [ https://localhost:4502/tagging](https://localhost:4502/tagging)
 
    Als u **Markeringen** selecteert kunt u tot een namespace leiden:
 
-   ![ Creërend een dialoog van de naamruimte ](assets/creating_tags_andnamespaces.png)
+   ![&#x200B; Creërend een dialoog van de naamruimte &#x200B;](assets/creating_tags_andnamespaces.png)
 
    Als u een namespace (bijvoorbeeld, **Demo**) selecteert kunt u een markering binnen dat namespace tot stand brengen:
 
-   ![ Creërend een markeringsdialoog ](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![&#x200B; Creërend een markeringsdialoog &#x200B;](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In beide gevallen voert u
 
@@ -90,7 +90,7 @@ u wordt aangeraden deze speciale tekens niet te gebruiken:
 
 **Lijst** opent een nieuw venster dat de wegen van alle pagina&#39;s toont gebruikend de benadrukte markering:
 
-![ Vindend waar de markeringen ](assets/list_showing_wheretagsarereferenced.png) van verwijzingen worden voorzien
+![&#x200B; Vindend waar de markeringen &#x200B;](assets/list_showing_wheretagsarereferenced.png) van verwijzingen worden voorzien
 
 ## Labels verplaatsen {#moving-tags}
 
@@ -107,11 +107,11 @@ Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of d
 
 De **dialoog van de Markering van de Beweging** kijkt als volgt:
 
-![ Bewegend een markering ](assets/move_tag.png)
+![&#x200B; Bewegend een markering &#x200B;](assets/move_tag.png)
 
 >[!NOTE]
 >
->Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig, zouden de Auteurs slechts [ de markeringstitels ](#editing-tags) moeten veranderen.
+>Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig, zouden de Auteurs slechts [&#x200B; de markeringstitels &#x200B;](#editing-tags) moeten veranderen.
 
 ## Tags samenvoegen {#merging-tags}
 
@@ -129,7 +129,7 @@ Een tag samenvoegen in een andere tag:
 
 De **dialoog van de Markering van de Fusie** kijkt als volgt:
 
-![ het samenvoegen van een markering ](assets/mergetag.png)
+![&#x200B; het samenvoegen van een markering &#x200B;](assets/mergetag.png)
 
 ## Gebruik van tags tellen {#counting-usage-of-tags}
 
@@ -158,11 +158,11 @@ De volgende procedure toont hoe te om `title` van de markering **Dieren** in het
 
 Het dialoogvenster ziet er als volgt uit:
 
-![ Uitgevend een markering ](assets/edit_tag.png)
+![&#x200B; Uitgevend een markering &#x200B;](assets/edit_tag.png)
 
 In de tagconsole wordt de taalinstelling van de gebruiker gebruikt. Voor de tag Animal wordt &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in gebruikerseigenschappen instelt op Frans.
 
-Om een nieuwe taal aan de dialoog toe te voegen, zie de sectie [ Toevoegend een Nieuwe Taal aan de Edit Dialoog van de Markering ](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in het **Tags toevoegen voor de sectie van Ontwikkelaars**.
+Om een nieuwe taal aan de dialoog toe te voegen, zie de sectie [&#x200B; Toevoegend een Nieuwe Taal aan de Edit Dialoog van de Markering &#x200B;](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in het **Tags toevoegen voor de sectie van Ontwikkelaars**.
 
 ### Tagtitels weergeven in Pagina-eigenschappen in een opgegeven taal {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
@@ -175,11 +175,11 @@ Door gebrek wordt de markering `titles` in de paginaeigenschappen getoond in de 
 
    Selecteer de **Dieren** (**Animaux**) markering en selecteer buiten de dialoog om het te sluiten en de markering toe te voegen aan de paginaeigenschappen.
 
-   ![ Uitgevend een andere markering ](assets/french_tag.png)
+   ![&#x200B; Uitgevend een andere markering &#x200B;](assets/french_tag.png)
 
 Door gebrek, toont de de dialoogdoos van de Eigenschappen van de Pagina de markering `titles` volgens de paginataal.
 
-In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [`tag` widget ](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [`tag` widget &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 >[!NOTE]
 >

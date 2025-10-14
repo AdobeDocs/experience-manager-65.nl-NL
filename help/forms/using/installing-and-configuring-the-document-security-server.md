@@ -23,36 +23,36 @@ U kunt documenten beschermen door beleid te gebruiken. De vertrouwelijkheidsmont
 
 Het beleid wordt opgeslagen op de server van de Veiligheid van het Document; u past het beleid op documenten door uw cliënttoepassing toe. Wanneer u een beleid op een document toepast, beschermen de vertrouwelijkheidsmontages die in het beleid worden gespecificeerd de informatie die het document bevat. U kunt het document dat met een beleid is beveiligd, verspreiden onder ontvangers die door het beleid zijn gemachtigd.
 
-Documentbeveiliging biedt ook clients, viewers en indexeerders om documenten te beveiligen, beveiligde documenten weer te geven en beveiligde documenten te indexeren. Voor gedetailleerde informatie over documentveiligheid, zie [ over documentveiligheid ](/help/forms/using/admin-help/document-security.md).
+Documentbeveiliging biedt ook clients, viewers en indexeerders om documenten te beveiligen, beveiligde documenten weer te geven en beveiligde documenten te indexeren. Voor gedetailleerde informatie over documentveiligheid, zie [&#x200B; over documentveiligheid &#x200B;](/help/forms/using/admin-help/document-security.md).
 
 ## Implementatietopologie  {#deployment-topology}
 
-De beveiligingsmogelijkheden voor documenten zijn alleen beschikbaar in AEM Forms op JEE. U hebt één instantie van AEM Forms op JEE nodig. Indien nodig kunt u ook een cluster of farm van AEM Forms-servers maken. De volgende topologie is indicatieve topologie om het vermogen van de documentveiligheid in werking te stellen. Voor gedetailleerde informatie over de topologie, zie [ Architectuur en plaatsingstopologieën voor AEM Forms ](aem-forms-architecture-deployment.md).
+De beveiligingsmogelijkheden voor documenten zijn alleen beschikbaar in AEM Forms op JEE. U hebt één instantie van AEM Forms op JEE nodig. Indien nodig kunt u ook een cluster of farm van AEM Forms-servers maken. De volgende topologie is indicatieve topologie om het vermogen van de documentveiligheid in werking te stellen. Voor gedetailleerde informatie over de topologie, zie [&#x200B; Architectuur en plaatsingstopologieën voor AEM Forms &#x200B;](aem-forms-architecture-deployment.md).
 
 <!--fix above link-->
 
-![ de topologie van de de veiligheidsserver van het Document ](do-not-localize/document-security-server_topology.png)
+![&#x200B; de topologie van de de veiligheidsserver van het Document &#x200B;](do-not-localize/document-security-server_topology.png)
 
 In het volgende diagram ziet u de typische architectuur voor AEM Forms Document Security:
 
-![ de veiligheid typische milieu van het Document ](do-not-localize/document-security-typical-environment.png)
+![&#x200B; de veiligheid typische milieu van het Document &#x200B;](do-not-localize/document-security-typical-environment.png)
 
 ## AEM Forms installeren op JEE {#installing-aem-forms-on-jee}
 
 Voer de volgende stappen uit om AEM Forms op JEE te installeren en te configureren:
 
-1. Download AEM 6.5 Forms op de installateur van JEE van de [ Vergunnende Website van de Adobe (LWS) ](https://licensing.adobe.com/). U hebt een geldig onderhouds- en ondersteuningscontract nodig om het installatieprogramma te downloaden.
-1. Lees [ AEM Forms op JEE Ondersteunde documenten van Platforms ](/help/forms/using/aem-forms-jee-supported-platforms.md) en zorg ervoor dat de software, de hardware, de werkende systemen, toepassingsserver, gegevensbestanden, JDKs, en andere infrastructuur klaar hebben om AEM Forms op JEE te installeren.
-1. (De niet-Turnkey installaties slechts) lezen [ Voorbereidend om één enkele server van AEM Forms ](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) of [ Voorbereidend om de servercluster van AEM Forms ](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) te installeren en uw milieu klaar te maken om AEM Forms op JEE te installeren en te vormen.
+1. Download AEM 6.5 Forms op de installateur van JEE van de [&#x200B; Vergunnende Website van de Adobe (LWS) &#x200B;](https://licensing.adobe.com/). U hebt een geldig onderhouds- en ondersteuningscontract nodig om het installatieprogramma te downloaden.
+1. Lees [&#x200B; AEM Forms op JEE Ondersteunde documenten van Platforms &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) en zorg ervoor dat de software, de hardware, de werkende systemen, toepassingsserver, gegevensbestanden, JDKs, en andere infrastructuur klaar hebben om AEM Forms op JEE te installeren.
+1. (De niet-Turnkey installaties slechts) lezen [&#x200B; Voorbereidend om één enkele server van AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) of [&#x200B; Voorbereidend om de servercluster van AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) te installeren en uw milieu klaar te maken om AEM Forms op JEE te installeren en te vormen.
 1. Kies afhankelijk van uw omgeving en toepassingsserver een van de volgende documenten en volg de instructies om de installatie te voltooien
 
-   * [ het installeren van en het opstellen van AEM Forms op JEE gebruikend turnkey JBoss ](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-   * [ Installerend en plaatsend AEM Forms op JEE voor JBoss ](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
-   * [ Installerend en plaatsend AEM Forms op JEE voor WebLogic ](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-   * [ Installerend en het opstellen van AEM Forms op JEE voor WebSphere ](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-   * [ Vormend AEM Forms op JEE op cluster JBoss ](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-   * [ Vormend AEM Forms op JEE op cluster WebLogic ](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-   * [ Vormend AEM Forms op JEE op cluster WebSphere ](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+   * [&#x200B; het installeren van en het opstellen van AEM Forms op JEE gebruikend turnkey JBoss &#x200B;](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+   * [&#x200B; Installerend en plaatsend AEM Forms op JEE voor JBoss &#x200B;](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
+   * [&#x200B; Installerend en plaatsend AEM Forms op JEE voor WebLogic &#x200B;](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+   * [&#x200B; Installerend en het opstellen van AEM Forms op JEE voor WebSphere &#x200B;](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+   * [&#x200B; Vormend AEM Forms op JEE op cluster JBoss &#x200B;](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+   * [&#x200B; Vormend AEM Forms op JEE op cluster WebLogic &#x200B;](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
+   * [&#x200B; Vormend AEM Forms op JEE op cluster WebSphere &#x200B;](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
 
    >[!NOTE]
    >

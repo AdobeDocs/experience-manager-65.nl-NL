@@ -70,7 +70,7 @@ In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte
 
 Voer de volgende stappen uit om de eigenschap `description` van de procesinstantie in de procesinstantiekaart weer te geven.
 
-1. Volg de [ Algemene stappen voor de werkruimte van AEM Forms aanpassing ](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Volg de [&#x200B; Algemene stappen voor de werkruimte van AEM Forms aanpassing &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Ga als volgt te werk:
 
    1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klik **sparen allen**.

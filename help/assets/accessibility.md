@@ -37,14 +37,14 @@ Met [!DNL Adobe Experience Manager] kunnen makers van inhoud en uitgevers op int
 
 [!DNL Experience Manager] biedt verschillende ondersteuningsniveaus voor de volgende standaarden:
 
-* [ de Richtlijnen van de Toegankelijkheid van de Inhoud van het Web (WCAG) 2.1 ](https://www.w3.org/TR/WCAG/).
-* [ Herzien Sectie 508 van de Wet van de Herstel ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
-* [ Initiatief van de Toegankelijkheid - Toegankelijke Rijke Toepassingen van Internet (WAI-ARIA) door W3C ](https://www.w3.org/WAI/standards-guidelines/aria/).
-* [ EN 301 549 ](https://en.wikipedia.org/wiki/EN_301_549).
+* [&#x200B; de Richtlijnen van de Toegankelijkheid van de Inhoud van het Web (WCAG) 2.1 &#x200B;](https://www.w3.org/TR/WCAG/).
+* [&#x200B; Herzien Sectie 508 van de Wet van de Herstel &#x200B;](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
+* [&#x200B; Initiatief van de Toegankelijkheid - Toegankelijke Rijke Toepassingen van Internet (WAI-ARIA) door W3C &#x200B;](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [&#x200B; EN 301 549 &#x200B;](https://en.wikipedia.org/wiki/EN_301_549).
 
-Om een rapport met details van het niveau van naleving te lezen, zie [ het rapport van de conformiteit van de Toegankelijkheid ](https://www.adobe.com/accessibility/compliance.html) (ACR) pagina.
+Om een rapport met details van het niveau van naleving te lezen, zie [&#x200B; het rapport van de conformiteit van de Toegankelijkheid &#x200B;](https://www.adobe.com/accessibility/compliance.html) (ACR) pagina.
 
-Om te weten hoe [!DNL Dynamic Media] toegankelijk is, zie [ toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+Om te weten hoe [!DNL Dynamic Media] toegankelijk is, zie [&#x200B; toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Hulptechnologieën {#at-support}
 
@@ -60,7 +60,7 @@ Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang t
 
 In [!DNL Experience Manager] voldoen de toegankelijkheidsfuncties aan twee belangrijke vereisten van [!DNL Experience Manager] -gebruikers en hun klanten.
 
-* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. Personen met een handicap gebruiken de inhoud met behulp van ondersteunende hulpmiddelen. Voor details, zie [ richtlijnen van de Webtoegankelijkheid ](/help/managing/web-accessibility.md).
+* Voor inhoudsontwerpers en makers zijn er functies om toegankelijke inhoud te maken en te publiceren die op hun beurt door hun klanten en websitebezoekers wordt gebruikt. Personen met een handicap gebruiken de inhoud met behulp van ondersteunende hulpmiddelen. Voor details, zie [&#x200B; richtlijnen van de Webtoegankelijkheid &#x200B;](/help/managing/web-accessibility.md).
 * Met [!DNL Experience Manager] hebben gebruikers en beheerders met een handicap ook toegang tot de gebruikersinterface en besturingselementen voor het maken en beheren van inhoud. Personen met een handicap kunnen ondersteunende hulpmiddelen gebruiken om door de [!DNL Assets] -mogelijkheden te navigeren, te gebruiken en deze te beheren.
 
 De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden regelmatig bijgewerkt om de naleving van wereldwijde standaarden te verbeteren. De CRUD-bewerkingen in [!DNL Assets] hebben een bepaalde mate van toegankelijkheid die in deze bewerkingen is ingebouwd. DAM-workflows, zoals het toevoegen, beheren, zoeken en distribueren van elementen, zijn toegankelijk via sneltoetsen, schermlezertekst, kleurcontrast, enzovoort.
@@ -79,7 +79,7 @@ Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geacti
 
 ### Sneltoetsen in [!DNL Assets] {#keyboard-shortcuts}
 
-De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] consoles, zijn ook van toepassing op [!DNL Assets] . Zie [ toetsenbordkortere weg voor Consoles ](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Zie [ toelaten of onbruikbaar maken de toetsenbordkortere weg ](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] consoles, zijn ook van toepassing op [!DNL Assets] . Zie [&#x200B; toetsenbordkortere weg voor Consoles &#x200B;](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Zie [&#x200B; toelaten of onbruikbaar maken de toetsenbordkortere weg &#x200B;](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 | Gebruikersinterface of scenario | Sneltoets | Handeling |
 |---|---|---|
@@ -164,7 +164,7 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 
 Veel taken voor middelenbeheer, zoals CRUD-bewerkingen, het downloaden van middelen en het toevoegen van metagegevens, zijn in verschillende mate toegankelijk. Met [!DNL Assets] kunt u de taken uitvoeren met behulp van verschillende ondersteunende hulpmiddelen, zoals een schermlezer en een toetsenbord.
 
-Zie een videodemonstratie van hoe te om een toetsenbord te gebruiken om [ de bewaarplaats te doorbladeren en activa ](https://youtu.be/K3dgqMRQJys) te downloaden.
+Zie een videodemonstratie van hoe te om een toetsenbord te gebruiken om [&#x200B; de bewaarplaats te doorbladeren en activa &#x200B;](https://youtu.be/K3dgqMRQJys) te downloaden.
 
 Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en beheerders worden gedaan verbeteren de volgende eigenschappen toegankelijkheid:
 
@@ -176,7 +176,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 
 ## Digitale middelen zoeken {#search-assets}
 
-Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor snelheid van inhoud maken deel uit van de kernfunctionaliteit van [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` gebruiken of `Tab` samen met schermlezers gebruiken om snel de zoekoptie te zoeken. De het schermlezer beperkt de naam van de optie als &quot;Knoop van het Onderzoek&quot;wanneer de nadruk op de onderzoeksoptie ![ onderzoeksoptie ](assets/do-not-localize/search_icon.png) is. Gebruikers kunnen `Return` selecteren om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties die door [!DNL Experience Manager Assets] worden aangeboden. Gebruikers kunnen een combinatie van pijltoetsen, `Return` en `Tab` gebruiken om toegang te krijgen tot de verschillende opties om een zoekopdracht te activeren.
+Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen voor snelheid van inhoud maken deel uit van de kernfunctionaliteit van [!DNL Assets] . Als u een zoekopdracht wilt starten vanaf de zoekbalk, kunnen gebruikers de sneltoets `/` gebruiken of `Tab` samen met schermlezers gebruiken om snel de zoekoptie te zoeken. De het schermlezer beperkt de naam van de optie als &quot;Knoop van het Onderzoek&quot;wanneer de nadruk op de onderzoeksoptie ![&#x200B; onderzoeksoptie &#x200B;](assets/do-not-localize/search_icon.png) is. Gebruikers kunnen `Return` selecteren om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties die door [!DNL Experience Manager Assets] worden aangeboden. Gebruikers kunnen een combinatie van pijltoetsen, `Return` en `Tab` gebruiken om toegang te krijgen tot de verschillende opties om een zoekopdracht te activeren.
 
 De zoekfunctionaliteit is toegankelijk via de volgende functies:
 
@@ -220,12 +220,12 @@ Bij het delen van elementen verbeteren de volgende functies de toegankelijkheid:
 
 Gebruik de volgende methoden om feedback te geven, vragen te stellen en productverbeteringen aan te vragen met betrekking tot toegankelijkheid:
 
-* Vul de vorm in [ www.adobe.com/accessibility/feedback.html ](https://www.adobe.com/accessibility/feedback.html).
+* Vul de vorm in [&#x200B; www.adobe.com/accessibility/feedback.html &#x200B;](https://www.adobe.com/accessibility/feedback.html).
 * E-mail ons op access@adobe.com.
 
 >[!MORELIKETHIS]
 >
->* [ eigenschappen van de Toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [ nota&#39;s van de Versie van verhogingen die in elke versie van Service Pack ](/help/release-notes/release-notes.md) worden gedaan.
->* [[!DNL Adobe Experience Manager]  toegankelijkheidsbegeleiding ](/help/managing/web-accessibility.md).
->* [ de rapporten van de Overeenstemming (ACR) en VPAT lijst voor de oplossingen van de Adobe ](https://www.adobe.com/accessibility/compliance.html).
+>* [&#x200B; eigenschappen van de Toegankelijkheid in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [&#x200B; nota&#39;s van de Versie van verhogingen die in elke versie van Service Pack &#x200B;](/help/release-notes/release-notes.md) worden gedaan.
+>* [[!DNL Adobe Experience Manager]  toegankelijkheidsbegeleiding &#x200B;](/help/managing/web-accessibility.md).
+>* [&#x200B; de rapporten van de Overeenstemming (ACR) en VPAT lijst voor de oplossingen van de Adobe &#x200B;](https://www.adobe.com/accessibility/compliance.html).

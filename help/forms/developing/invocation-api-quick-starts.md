@@ -111,11 +111,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->Snel aan de slag met Programmeren met AEM formulieren is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel aan de slag met Programmeren met AEM formulieren is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten: Een kortstondig proces aanroepen met de API voor aanroepen {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
-In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. Dit proces wordt synchroon aangeroepen. De invoerparameter voor dit proces krijgt de naam `inDoc` . De uitvoerparameter voor dit proces krijgt de naam `outDoc` . Het met wachtwoord gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam `EncryptLoan.pdf` . (Zie [ het Aanhalen van een kortstondig proces gebruikend de Inroeping API ](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
+In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. Dit proces wordt synchroon aangeroepen. De invoerparameter voor dit proces krijgt de naam `inDoc` . De uitvoerparameter voor dit proces krijgt de naam `outDoc` . Het met wachtwoord gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam `EncryptLoan.pdf` . (Zie [&#x200B; het Aanhalen van een kortstondig proces gebruikend de Inroeping API &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
 ```java
  /*
@@ -229,7 +229,7 @@ In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyA
 
 ## Snel Begin: Het aanhalen van de dienst die base64 in een project van Microsoft .NET gebruikt {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend het coderen Base64 aan. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend het coderen Base64 aan. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd *EncryptedPDF.pdf* wordt bewaard.
 
@@ -310,7 +310,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel starten: een service aanroepen met Java-proxybestanden en Base64-codering {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met Java-proxybestanden die zijn gemaakt met JAX-WS en Base64-codering. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met Java-proxybestanden die zijn gemaakt met JAX-WS en Base64-codering. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms. Het proces keert een wachtwoord-gecodeerd document van PDF terug dat als PDF dossier genoemd *EncryptedDocument.pdf* wordt bewaard.
 
@@ -396,11 +396,11 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel starten: Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Verouderd voor AEM formulieren) AEM Forms Remoting {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
-In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. (Zie [ het Aanhalen van AEM Forms die (voor AEM vormen wordt afgekeurd) AEM Forms verwijdert ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. (Zie [&#x200B; het Aanhalen van AEM Forms die (voor AEM vormen wordt afgekeurd) AEM Forms verwijdert &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 >[!NOTE]
 >
->Deze snelle start roept een AEM Forms-proces aan en uploadt een onbeveiligd document. Voor deze snelle start moet AEM Forms zijn geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om AEM Forms te vormen om onveilige documenten goed te keuren, zie [ Vormend AEM Forms om veilige en onveilige documenten ](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
+>Deze snelle start roept een AEM Forms-proces aan en uploadt een onbeveiligd document. Voor deze snelle start moet AEM Forms zijn geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om AEM Forms te vormen om onveilige documenten goed te keuren, zie [&#x200B; Vormend AEM Forms om veilige en onveilige documenten &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -553,7 +553,7 @@ In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyA
 
 ## Snel Begin: Het aanhalen van de dienst die DIME in een .NET project gebruikt {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend Dime aan. (Zie [ het Aanhalen van AEM Forms gebruikend Base64 het coderen ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend Dime aan. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend Base64 het coderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *map.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend DIME. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd *mapEncrypt.pdf* wordt bewaard.
 
@@ -658,7 +658,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel starten: Een service aanroepen met DIME in een Java-project {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met behulp van DIME. (Zie [ het Aanhalen van AEM Forms gebruikend DIME ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met behulp van DIME. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend DIME &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend DIME. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd *EncryptLoan.pdf* wordt bewaard.
 
@@ -759,7 +759,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel starten: Een service aanroepen met BLOB-gegevens via HTTP in een Java-project {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen waarbij gegevens via HTTP worden gebruikt. (Zie [ het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen waarbij gegevens via HTTP worden gebruikt. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend SOAP over HTTP. Het PDF-bestand bevindt zich op de volgende URL: `https://'[server]:[port]'/FormsQS` . Het proces keert een wachtwoord-gecodeerd document van PDF terug dat als PDF dossier genoemd *EncryptedDocument.pdf* wordt bewaard.
 
@@ -834,7 +834,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel Begin: Het aanhalen van de dienst die gegevens BLOB over HTTP in een .NET project gebruikt {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend gegevens over HTTP aan. (Zie [ het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een Microsoft .NET project gebruikend gegevens over HTTP aan. (Zie [&#x200B; het Aanhalen van AEM Forms gebruikend BLOB gegevens over HTTP &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend BLOB over HTTP. Het proces keert een wachtwoord-gecodeerd document van de PDF terug dat als PDF dossier genoemd *EncryptedPDF.pdf* wordt bewaard.
 
@@ -934,7 +934,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel Begin: Het aanhalen van de dienst die MTOM in een .NET project gebruikt {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend MTOM aan. (Zie [ het Aanhalen AEM Forms gebruikend MTOM ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
+Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend MTOM aan. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend MTOM &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
 Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd genoemd *loan.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend MTOM. Het proces keert een wachtwoord-gecodeerd document van PDF terug dat als PDF dossier genoemd *EncryptedDocument.pdf* wordt bewaard.
 
@@ -1024,7 +1024,7 @@ Een onbeveiligd document van PDF dat op een dossier van PDF wordt gebaseerd geno
 
 ## Snel starten: Een service aanroepen met SwaRef in een Java-project {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen vanuit een Java-project. Dit Java-project gebruikt proxyklassen die zijn gemaakt met JAX-WS en SwaRef als het coderingstype. (Zie [ het Aanhalen AEM Forms gebruikend SwaRef ](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen vanuit een Java-project. Dit Java-project gebruikt proxyklassen die zijn gemaakt met JAX-WS en SwaRef als het coderingstype. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend SwaRef &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
 
 Een onbeveiligd die document van PDF op een PDF dossier wordt gebaseerd genoemd *Loan.pdf* wordt overgegaan tot het proces van AEM Forms gebruikend SwaRef. Het gecodeerde document van de PDF wordt bewaard als PDF dossier genoemd *EncryptedDocument.pdf*.
 

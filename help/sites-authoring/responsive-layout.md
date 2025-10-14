@@ -25,7 +25,7 @@ Adobe Experience Manager laat u een ontvankelijke lay-out voor uw pagina&#39;s r
 >
 >Dit document biedt een overzicht van de functies van de container voor lay-out die beschikbaar zijn voor auteurs van inhoud.
 >
->Voor plaatsbeheerders en ontwikkelaars, wordt de details van hoe te om de lay-outcontainer voor uw plaatsen te vormen beschreven in het document [ Vormende de Container van de Lay-out en de Wijze van de Lay-out.](/help/sites-authoring/responsive-layout.md)
+>Voor plaatsbeheerders en ontwikkelaars, wordt de details van hoe te om de lay-outcontainer voor uw plaatsen te vormen beschreven in het document [&#x200B; Vormende de Container van de Lay-out en de Wijze van de Lay-out.](/help/sites-authoring/responsive-layout.md)
 
 ## Overzicht {#overview}
 
@@ -50,7 +50,7 @@ AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een 
 
 * **[&#128279;](#adding-a-layout-container-and-its-content-edit-mode)component van de Container van 0&rbrace; Lay-out**
 
-  Deze component is beschikbaar in [ componentenbrowser ](/help/sites-authoring/author-environment-tools.md#components-browser) en verstrekt een net-paragraaf systeem om u toe te laten en componenten binnen een ontvankelijk net plaatsen. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
+  Deze component is beschikbaar in [&#x200B; componentenbrowser &#x200B;](/help/sites-authoring/author-environment-tools.md#components-browser) en verstrekt een net-paragraaf systeem om u toe te laten en componenten binnen een ontvankelijk net plaatsen. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
 * [**Lay-outmodus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
@@ -71,11 +71,11 @@ Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagra
 
 >[!NOTE]
 >
->Adobe verstrekt [ documentatie GitHub ](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net van AEM buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische modellen van HTML voor een toekomstige plaats van AEM.
+>Adobe verstrekt [&#x200B; documentatie GitHub &#x200B;](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) van de ontvankelijke lay-out als verwijzing die aan front-end ontwikkelaars kan worden gegeven die hen toestaan om het net van AEM buiten AEM te gebruiken, bijvoorbeeld, wanneer het creëren van statische modellen van HTML voor een toekomstige plaats van AEM.
 
 >[!NOTE]
 >
->Het gebruik van de bovenstaande mechanismen wordt ingeschakeld door configuratie op de sjabloon. Zie [ Vormend Responsieve Lay-out ](/help/sites-administering/configuring-responsive-layout.md) voor verdere informatie.
+>Het gebruik van de bovenstaande mechanismen wordt ingeschakeld door configuratie op de sjabloon. Zie [&#x200B; Vormend Responsieve Lay-out &#x200B;](/help/sites-administering/configuring-responsive-layout.md) voor verdere informatie.
 
 ## Lay-outdefinities, Apparaatemulatie en Onderbrekingspunten {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -101,7 +101,7 @@ Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor de defi
 
 Bijvoorbeeld, wanneer u het apparaat **iPhone 6 plus** (die met een breedte van 540 pixel wordt bepaald) voor wedijver en lay-out selecteert, zal de breekpunt **Telefoon** (die als 768 pixel wordt bepaald) ook worden geactiveerd. Om het even welke lay-outveranderingen u voor **iPhone 6** aanbrengt zullen op andere apparaten onder het **breekpunt van Telefoons**, zoals **iPhone 5** (die als 320 pixel wordt bepaald) van toepassing zijn.
 
-![ screen_shot_2018-03-23at084058 ](assets/screen_shot_2018-03-23at084058.png)
+![&#x200B; screen_shot_2018-03-23at084058 &#x200B;](assets/screen_shot_2018-03-23at084058.png)
 
 ## Een apparaat selecteren om te emuleren {#selecting-a-device-to-emulate}
 
@@ -111,41 +111,41 @@ Bijvoorbeeld, wanneer u het apparaat **iPhone 6 plus** (die met een breedte van 
 
 1. Selecteer het **pictogram van de Mededinger** van de hoogste toolbar:
 
-   ![ Emulator ](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![&#x200B; Emulator &#x200B;](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. De emulatorwerkbalk wordt geopend.
 
-   ![ screen_shot_2018-03-23at084551 ](assets/screen_shot_2018-03-23at084551.png)
+   ![&#x200B; screen_shot_2018-03-23at084551 &#x200B;](assets/screen_shot_2018-03-23at084551.png)
 
    Op de emulatorwerkbalk worden extra layoutopties weergegeven:
 
    * **roteer apparaat** - laat u een apparaat van verticale (staande) richtlijn aan horizontale (landschaps) richtlijn roteren en omgekeerd.
 
-     ![ roteer apparaat ](do-not-localize/screen_shot_2018-03-23at084612.png) ![ roteer apparaat ](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![&#x200B; roteer apparaat &#x200B;](do-not-localize/screen_shot_2018-03-23at084612.png) ![&#x200B; roteer apparaat &#x200B;](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Uitgezochte Apparaat** - bepaal een specifiek apparaat om van een lijst (zie volgende stap voor details) na te streven
 
-     ![ Uitgezochte apparaat ](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![&#x200B; Uitgezochte apparaat &#x200B;](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
    * Gebruik het pictogram Apparaat selecteren en selecteer een keuze in een vervolgkeuzelijst.
    * Klik op de apparaatindicator op de emulatorwerkbalk.
 
-   ![ screen_shot_2018-03-23at084818 ](assets/screen_shot_2018-03-23at084818.png)
+   ![&#x200B; screen_shot_2018-03-23at084818 &#x200B;](assets/screen_shot_2018-03-23at084818.png)
 
 1. Nadat een specifiek apparaat is geselecteerd, kunt u:
 
    * Zie de actieve teller voor het geselecteerde apparaat, zoals **iPad.**
-   * Zie de actieve teller voor het aangewezen [ breekpunt ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) zoals **Tablet.**
+   * Zie de actieve teller voor het aangewezen [&#x200B; breekpunt &#x200B;](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) zoals **Tablet.**
 
-   ![ screen_shot_2018-03-23at084932 ](assets/screen_shot_2018-03-23at084932.png)
+   ![&#x200B; screen_shot_2018-03-23at084932 &#x200B;](assets/screen_shot_2018-03-23at084932.png)
 
    * De blauwe gestippelde lijn vertegenwoordigt de *plooi* voor het geselecteerde apparaat (hier een **iPhone 6**).
 
-   ![ screen_shot_2018-03-23at084947 ](assets/screen_shot_2018-03-23at084947.png)
+   ![&#x200B; screen_shot_2018-03-23at084947 &#x200B;](assets/screen_shot_2018-03-23at084947.png)
 
-   * De vouw kan ook als de onderbreking van de paginalijn (niet om met de [ breekpunten ](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) worden verward) voor de inhoud worden beschouwd. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
+   * De vouw kan ook als de onderbreking van de paginalijn (niet om met de [&#x200B; breekpunten &#x200B;](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) worden verward) voor de inhoud worden beschouwd. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
    * De lijn voor de vouwlijn wordt niet weergegeven als de hoogte van het geëmuleerde apparaat groter is dan de schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
 
@@ -159,12 +159,12 @@ A **de Container van de Lay-out** is een paragraafsysteem dat:
 
 >[!NOTE]
 >
->Als niet reeds beschikbaar, moet de **Container van de Lay-out** uitdrukkelijk [ voor een paragraafsysteem/pagina ](/help/sites-administering/configuring-responsive-layout.md) (bijvoorbeeld, door [**wijze van het Ontwerp** ](/help/sites-authoring/default-components-designmode.md) te gebruiken) worden geactiveerd.
+>Als niet reeds beschikbaar, moet de **Container van de Lay-out** uitdrukkelijk [&#x200B; voor een paragraafsysteem/pagina &#x200B;](/help/sites-administering/configuring-responsive-layout.md) (bijvoorbeeld, door [**wijze van het Ontwerp** &#x200B;](/help/sites-authoring/default-components-designmode.md) te gebruiken) worden geactiveerd.
 
 1. De **lay-outcontainer** is beschikbaar als standaardcomponent in de [componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser). Van hieruit kunt u het naar de vereiste locatie op de pagina slepen waarna u de tijdelijke aanduiding **Componenten hierheen slepen** zult zien.
 1. Vervolgens kunt u componenten aan de lay-outcontainer toevoegen. Deze componenten bevatten de werkelijke inhoud:
 
-   ![ screen_shot_2018-03-23at085500 ](assets/screen_shot_2018-03-23at085500.png)
+   ![&#x200B; screen_shot_2018-03-23at085500 &#x200B;](assets/screen_shot_2018-03-23at085500.png)
 
 ## Handeling selecteren en uitvoeren in een container Layout (modus Bewerken) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
@@ -176,11 +176,11 @@ Zoals met andere componenten, kunt u selecteren en dan actie (besnoeiing, exempl
 
 1. Als u de muisaanwijzer boven de tijdelijke aanduiding voor het raster houdt of deze selecteert, wordt het actiemenu weergegeven.
 
-   ![ screen_shot_2018-03-23at085357 ](assets/screen_shot_2018-03-23at085357.png)
+   ![&#x200B; screen_shot_2018-03-23at085357 &#x200B;](assets/screen_shot_2018-03-23at085357.png)
 
    U moet de **Ouder** optie selecteren.
 
-   ![ Bovenliggende optie ](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![&#x200B; Bovenliggende optie &#x200B;](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Als de lay-outcomponent wordt genest, die de **Ouder** optie selecteren stelt een drop-down selectie voor, die u toestaat om de genestelde lay-outcontainer of zijn ouder(s) te selecteren.
 
@@ -190,17 +190,17 @@ Zoals met andere componenten, kunt u selecteren en dan actie (besnoeiing, exempl
    * De op één na laagste geneste lay-outcontainer zal in donkergrijs zijn.
    * Elke volgende container zal een lichtere grijstint hebben.
 
-   ![ screen_shot_2018-03-23at085636 ](assets/screen_shot_2018-03-23at085636.png)
+   ![&#x200B; screen_shot_2018-03-23at085636 &#x200B;](assets/screen_shot_2018-03-23at085636.png)
 
 1. Hierdoor wordt het volledige raster met de inhoud gemarkeerd. De actietoolbar wordt getoond, van waar u een actie zoals **Schrapping kunt selecteren.**
 
-   ![ screen_shot_2018-03-23at085724 ](assets/screen_shot_2018-03-23at085724.png)
+   ![&#x200B; screen_shot_2018-03-23at085724 &#x200B;](assets/screen_shot_2018-03-23at085724.png)
 
 ## Indelingen definiëren (modus Indeling) {#defining-layouts-layout-mode}
 
 >[!NOTE]
 >
->U kunt een afzonderlijke lay-out voor elk [ breekpunt ](#layout-definitions-device-emulation-and-breakpoints) (zoals die door geëmuleerd apparatentype en richtlijn wordt bepaald) bepalen.
+>U kunt een afzonderlijke lay-out voor elk [&#x200B; breekpunt &#x200B;](#layout-definitions-device-emulation-and-breakpoints) (zoals die door geëmuleerd apparatentype en richtlijn wordt bepaald) bepalen.
 
 Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay-out wordt uitgevoerd moet u de **wijze van de Lay-out** gebruiken.
 
@@ -211,7 +211,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
    * Selecteer de modus **Lay-out** op dezelfde manier als wanneer u schakelt naar de modus **Bewerken** of de modus **Targeting**.
    * De modus **Lay-out** is permanent en u verlaat de modus **Lay-out** pas wanneer u een andere modus selecteert via de moduskiezer.
 
-* Wanneer [ het uitgeven van een individuele component.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Wanneer [&#x200B; het uitgeven van een individuele component.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * Door de **optie van de Lay-out** in het snelle actiemenu van de component te gebruiken, kunt u op **Lay-out** wijze schakelen.
    * **de wijze van de Lay-out 1&rbrace; blijft terwijl het uitgeven van de component en keert terug naar** geef **wijze uit zodra de nadruk in een andere component verandert.**
@@ -220,7 +220,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
 * Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Bij het wijzigen van de grootte wordt het achtergrondraster weergegeven als hulpmiddel bij de uitlijning:
 
-  ![ screen_shot_2018-03-23at090140 ](assets/screen_shot_2018-03-23at090140.png)
+  ![&#x200B; screen_shot_2018-03-23at090140 &#x200B;](assets/screen_shot_2018-03-23at090140.png)
 
   >[!NOTE]
   >
@@ -240,7 +240,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
      De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
 
-  ![ screen_shot_2018-03-23at090246 ](assets/screen_shot_2018-03-23at090246.png)
+  ![&#x200B; screen_shot_2018-03-23at090246 &#x200B;](assets/screen_shot_2018-03-23at090246.png)
 
 * Op **Lay-out** wijze kunt u op de **componenten van de Belemmering hier** klikken om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
 
@@ -248,23 +248,23 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
    * **Ouder** - selecteer de oudercomponent.
 
-     ![ Ouder ](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![&#x200B; Ouder &#x200B;](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **toon verborgen componenten** - openbaart alle of individuele componenten. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
 
-     ![ toon verborgen componenten ](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![&#x200B; toon verborgen componenten &#x200B;](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **keert breekpuntlay-out** terug - keer aan de standaardlay-out terug. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
 
-     ![ de breekpuntlay-out van de Terugkeer ](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![&#x200B; de breekpuntlay-out van de Terugkeer &#x200B;](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Vloeiend aan nieuwe lijn** - beweeg de component omhoog een positie als het uit elkaar plaatsen toestaat.
 
-     ![ screen_shot_2018-03-23at090829 ](assets/screen_shot_2018-03-23at090829.png)
+     ![&#x200B; screen_shot_2018-03-23at090829 &#x200B;](assets/screen_shot_2018-03-23at090829.png)
 
    * **de component van de Huid** - verberg de huidige component.
 
-     ![ de component van de Huid ](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![&#x200B; de component van de Huid &#x200B;](do-not-localize/screen_shot_2018-03-23at090834.png)
 
      >[!NOTE]
      >
@@ -273,10 +273,10 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
    * **unhide componenten**
 Selecteer de oudercomponenten om de actietoolbar met **te tonen verborgen componenten** optie. In dit voorbeeld zijn twee componenten verborgen.
 
-     ![ screen_shot_2018-03-23at091200 ](assets/screen_shot_2018-03-23at091200.png)
+     ![&#x200B; screen_shot_2018-03-23at091200 &#x200B;](assets/screen_shot_2018-03-23at091200.png)
 
   Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
 
-  ![ screen_shot_2018-03-23at091224 ](assets/screen_shot_2018-03-23at091224.png)
+  ![&#x200B; screen_shot_2018-03-23at091224 &#x200B;](assets/screen_shot_2018-03-23at091224.png)
 
   Het selecteren **herstelt alle** zal alle verborgen componenten onthullen.

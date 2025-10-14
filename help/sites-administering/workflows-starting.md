@@ -22,26 +22,26 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 
 * Handmatig:
 
-   * Van a [ Model van het Werkschema ](#workflow-models).
-   * Gebruikend een werkschemapakket voor [ partijverwerking ](#workflow-packages-for-batch-processing).
+   * Van a [&#x200B; Model van het Werkschema &#x200B;](#workflow-models).
+   * Gebruikend een werkschemapakket voor [&#x200B; partijverwerking &#x200B;](#workflow-packages-for-batch-processing).
 
 * Automatisch:
 
-   * In antwoord op knoopveranderingen; [ gebruikend een Lanceertoestel ](#workflows-launchers).
+   * In antwoord op knoopveranderingen; [&#x200B; gebruikend een Lanceertoestel &#x200B;](#workflows-launchers).
 
 >[!NOTE]
 >
 >Andere methoden zijn ook beschikbaar voor auteurs; zie voor meer informatie:
 >
 >* [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
->* [ hoe te om werkschema&#39;s op activa toe te passen DAM ](/help/assets/assets-workflow.md)
->* [ AEM Forms ](https://helpx.adobe.com/nl/aem-forms/6-2/aem-workflows-submit-process-form.html)
->* [ de Projecten van de Vertaling ](/help/sites-administering/tc-manage.md)
+>* [&#x200B; hoe te om werkschema&#39;s op activa toe te passen DAM &#x200B;](/help/assets/assets-workflow.md)
+>* [&#x200B; AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [&#x200B; de Projecten van de Vertaling &#x200B;](/help/sites-administering/tc-manage.md)
 >
 
 ## Workflowmodellen {#workflow-models}
 
-U kunt een werkschema [ beginnen dat op één van de modellen ](/help/sites-administering/workflows.md#workflow-models-and-instances) op de console van de Modellen van het Werkschema wordt gebaseerd. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
+U kunt een werkschema [&#x200B; beginnen dat op één van de modellen &#x200B;](/help/sites-administering/workflows.md#workflow-models-and-instances) op de console van de Modellen van het Werkschema wordt gebaseerd. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
 
 ## Startprogramma&#39;s voor workflows {#workflows-launchers}
 
@@ -69,7 +69,7 @@ Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaald
 
 De standaardinstallatie bevat verschillende definities. Deze worden gebruikt voor taken op het gebied van digitaal middelenbeheer en sociale samenwerking:
 
-![ wf-100 ](assets/wf-100.png)
+![&#x200B; wf-100 &#x200B;](assets/wf-100.png)
 
 ## Workflowpakketten voor batchverwerking {#workflow-packages-for-batch-processing}
 
@@ -88,7 +88,7 @@ Een workflowpakket:
 1. Navigeer aan de **Modellen** console gebruikend **Hulpmiddelen**, **Werkschema**, toen **Modellen**.
 1. Selecteer de workflow (in overeenstemming met de consoleweergave). U kunt desgewenst ook Zoeken (linksboven) gebruiken:
 
-   ![ wf-103 ](assets/wf-103.png)
+   ![&#x200B; wf-103 &#x200B;](assets/wf-103.png)
 
    >[!NOTE]
    >
@@ -109,14 +109,14 @@ Een workflowpakket:
 
      Een optionele opmerking waarmee u details van dit exemplaar kunt aangeven.
 
-   ![ wf-104 ](assets/wf-104.png)
+   ![&#x200B; wf-104 &#x200B;](assets/wf-104.png)
 
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
 1. Navigeer aan de **console van de Lanceertoestellen van het 0&rbrace; Werkschema gebruikend** Hulpmiddelen **,** Werkschema **, toen** Lanceertoestellen **.**
 1. Selecteer **creeer**, dan **voegt Lanceertoestel** toe om de dialoogdoos te openen:
 
-   ![ wf-105 ](assets/wf-105.png)
+   ![&#x200B; wf-105 &#x200B;](assets/wf-105.png)
 
    * **Type van Gebeurtenis**
 

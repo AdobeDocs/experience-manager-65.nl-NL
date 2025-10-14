@@ -94,4 +94,4 @@ Als de knoppen voor directe acties van de AEM Forms-werkruimte zichtbaar zijn, w
 
 Een Flex-toepassing kan bijvoorbeeld `ExternalInterface.addCallback('getMessage', listener)` definiëren ter ondersteuning van deze communicatie. Als de toepassing van derden het verzenden van formulieren via eigen knoppen wil verwerken, moet u `hideDirectActions = true() in the runtimeMap` opgeven en kunt u deze listener overslaan. Deze constructie is dus optioneel.
 
-U kunt meer over de integratie van de derdetoepassing betreffende het Beheer van de Correspondentie bij [ het Integreren van het Beheer van de Correspondentie in de werkruimte van AEM Forms ](/help/forms/using/integrating-correspondence-management-html-workspace.md) lezen.
+U kunt meer over de integratie van de derdetoepassing betreffende het Beheer van de Correspondentie bij [&#x200B; het Integreren van het Beheer van de Correspondentie in de werkruimte van AEM Forms &#x200B;](/help/forms/using/integrating-correspondence-management-html-workspace.md) lezen.

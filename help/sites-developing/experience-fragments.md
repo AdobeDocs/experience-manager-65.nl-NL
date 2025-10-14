@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## De basisbeginselen {#the-basics}
 
-Een [ Fragment van de Ervaring ](/help/sites-authoring/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien.
+Een [&#x200B; Fragment van de Ervaring &#x200B;](/help/sites-authoring/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s van verwijzingen kunnen worden voorzien.
 
 Een Master- en/of varianttoepassing van het fragment van de ervaring:
 
@@ -51,11 +51,11 @@ Bijvoorbeeld:
 >
 >Koppelingen verwijzen altijd naar de publicatie-instantie. Ze worden door derden gebruikt, dus de koppeling wordt altijd aangeroepen vanuit het Publish-exemplaar, niet vanuit de Auteur-instantie.
 >
->Voor verdere informatie zie [ het externaliseren URLs ](/help/sites-developing/externalizer.md).
+>Voor verdere informatie zie [&#x200B; het externaliseren URLs &#x200B;](/help/sites-developing/externalizer.md).
 
-![ xf-14 ](assets/xf-14.png)
+![&#x200B; xf-14 &#x200B;](assets/xf-14.png)
 
-De gewone vertoningsselecteur gebruikt een transformator in tegenstelling tot extra manuscripten; [ Verschuivende Rewriter ](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
+De gewone vertoningsselecteur gebruikt een transformator in tegenstelling tot extra manuscripten; [&#x200B; Verschuivende Rewriter &#x200B;](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -70,7 +70,7 @@ De uitvoering van de HTML wordt gegenereerd met behulp van de Sling Rewriter Pip
    * Een lijst met HTML-tags die zijn toegestaan in de uiteindelijke uitvoering.
    * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link en script
 
-Het wordt geadviseerd om rewriter te vormen gebruikend een bekleding. Zie [ Bedekkingen ](/help/sites-developing/overlays.md)
+Het wordt geadviseerd om rewriter te vormen gebruikend een bekleding. Zie [&#x200B; Bedekkingen &#x200B;](/help/sites-developing/overlays.md)
 
 ## Sociale variaties {#social-variations}
 
@@ -99,11 +99,11 @@ Componenten die geen gebruik maken van deze conventie worden niet in aanmerking 
 
 >[!CAUTION]
 >
->***slechts*** [ editable malplaatjes ](/help/sites-developing/page-templates-editable.md) wordt gesteund voor de Fragmenten van de Ervaring.
+>***slechts*** [&#x200B; editable malplaatjes &#x200B;](/help/sites-developing/page-templates-editable.md) wordt gesteund voor de Fragmenten van de Ervaring.
 >
 >De Fragmenten van de ervaring kunnen slechts op pagina&#39;s worden gebruikt die op editable malplaatjes gebaseerd zijn.
 
-Wanneer het ontwikkelen van een nieuw malplaatje voor de Fragmenten van de Ervaring, kunt u de standaardpraktijken voor een [ editable malplaatje ](/help/sites-developing/page-templates-editable.md) volgen.
+Wanneer het ontwikkelen van een nieuw malplaatje voor de Fragmenten van de Ervaring, kunt u de standaardpraktijken voor een [&#x200B; editable malplaatje &#x200B;](/help/sites-developing/page-templates-editable.md) volgen.
 
 Om een malplaatje van het ervaringsfragment tot stand te brengen dat door **wordt ontdekt creeer de tovenaar van het Fragment van de Ervaring**, moet u één van deze regelreeksen volgen:
 
@@ -118,7 +118,7 @@ Om een malplaatje van het ervaringsfragment tot stand te brengen dat door **word
       `experience-fragments`
 Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-fragments, aangezien de eigenschap `cq:allowedTemplates` van deze map alle sjablonen bevat die een naam hebben die begint met `experience-fragment` . Klanten kunnen deze eigenschap bijwerken en hun eigen naamgevingsschema of sjabloonlocaties opnemen.
 
-1. [ Toegestane malplaatjes ](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) kunnen in de console van de Fragmenten van de Ervaring worden gevormd.
+1. [&#x200B; Toegestane malplaatjes &#x200B;](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) kunnen in de console van de Fragmenten van de Ervaring worden gevormd.
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -130,9 +130,9 @@ Hierdoor kunnen gebruikers ervaringsfragmenten maken in /content/experience-frag
 
 ## Componenten voor ervaringsfragmenten {#components-for-experience-fragments}
 
-[ ontwikkelend componenten ](/help/sites-developing/components.md) voor gebruik met/in de Fragmenten van de Ervaring volgen standaardpraktijken.
+[&#x200B; ontwikkelend componenten &#x200B;](/help/sites-developing/components.md) voor gebruik met/in de Fragmenten van de Ervaring volgen standaardpraktijken.
 
-De enige extra configuratie moet ervoor zorgen dat de componenten [ op het malplaatje worden toegestaan, wordt dit bereikt met het Beleid van de Inhoud ](/help/sites-developing/page-templates-editable.md#content-policies).
+De enige extra configuratie moet ervoor zorgen dat de componenten [&#x200B; op het malplaatje worden toegestaan, wordt dit bereikt met het Beleid van de Inhoud &#x200B;](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## De Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -145,13 +145,13 @@ Een van de gebruiksgevallen voor dergelijke groepen is het insluiten van inhoud 
 
 ### Standaardkoppeling herschrijven {#default-link-rewriting}
 
-Gebruikend de [ Uitvoer aan de eigenschap van het Doel ](/help/sites-administering/experience-fragments-target.md), kunt u:
+Gebruikend de [&#x200B; Uitvoer aan de eigenschap van het Doel &#x200B;](/help/sites-administering/experience-fragments-target.md), kunt u:
 
 * een fragment van de Ervaring tot stand brengen,
 * er componenten aan toevoegen,
 * en exporteer het vervolgens als een Adobe Target-aanbieding in de indeling HTML of JSON.
 
-Deze eigenschap kan [ op een auteursinstantie van AEM ](/help/sites-administering/experience-fragments-target.md#Prerequisites) worden toegelaten. Het vereist een geldige Configuratie van Adobe Target, en configuraties voor de Verbinding Externalzer.
+Deze eigenschap kan [&#x200B; op een auteursinstantie van AEM &#x200B;](/help/sites-administering/experience-fragments-target.md#Prerequisites) worden toegelaten. Het vereist een geldige Configuratie van Adobe Target, en configuraties voor de Verbinding Externalzer.
 
 De Verbinding ExternalAlizer wordt gebruikt om correcte URLs te bepalen nodig wanneer het creëren van de versie van de HTML van het Voorstel van het Doel, dat dan naar Adobe Target wordt verzonden. Dit is noodzakelijk aangezien Adobe Target vereist dat alle verbindingen binnen de Aanbieding van de HTML van het Doel openbaar kunnen worden betreden; dit betekent dat om het even welke middelen de verbindingen, en het Fragment van de Ervaring zelf, moeten worden gepubliceerd alvorens zij kunnen worden gebruikt.
 
@@ -189,9 +189,9 @@ Voor deze gebruiksgevallen AEM verstrekt de Interface van de Leverancier van de 
 
 >[!NOTE]
 >
->Deze interface werd geïntroduceerd in [ AEM 6.5 SP1 (6.5.1.0) ](/help/release-notes/previous/6-5-1.md).
+>Deze interface werd geïntroduceerd in [&#x200B; AEM 6.5 SP1 (6.5.1.0) &#x200B;](/help/release-notes/previous/6-5-1.md).
 
-Voor meer gecompliceerde gevallen, die niet door het [ gebrek ](#default-link-rewriting) worden behandeld, biedt AEM de Interface van de Leverancier van de Verbinding Rewriter aan. Dit is een `ConsumerType` -interface die u als service in uw bundels kunt implementeren. Het omzeilt de aanpassingen AEM op interne verbindingen van een aanbieding van de HTML zoals die van een Fragment van de Ervaring worden teruggegeven uitvoeren. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
+Voor meer gecompliceerde gevallen, die niet door het [&#x200B; gebrek &#x200B;](#default-link-rewriting) worden behandeld, biedt AEM de Interface van de Leverancier van de Verbinding Rewriter aan. Dit is een `ConsumerType` -interface die u als service in uw bundels kunt implementeren. Het omzeilt de aanpassingen AEM op interne verbindingen van een aanbieding van de HTML zoals die van een Fragment van de Ervaring worden teruggegeven uitvoeren. Met deze interface kunt u het herschrijven van interne HTML-koppelingen aanpassen aan uw bedrijfsbehoeften.
 
 Voorbeelden van gebruiksgevallen om deze interface als dienst uit te voeren omvatten:
 
@@ -325,7 +325,7 @@ Wij willen bijvoorbeeld het `/etc.clientlibs` -gedeelte van de URL verwijderen e
 
 >[!NOTE]
 >
->Voor meer informatie over hoe te om een middeloplosser door een de dienstgebruiker te krijgen zie [ Gebruikers van de Dienst in AEM ](/help/sites-administering/security-service-users.md).
+>Voor meer informatie over hoe te om een middeloplosser door een de dienstgebruiker te krijgen zie [&#x200B; Gebruikers van de Dienst in AEM &#x200B;](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;

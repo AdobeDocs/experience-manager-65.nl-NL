@@ -26,15 +26,15 @@ Hoewel de clienttoepassing vereiste toepassingslogica bevat om SSO-verificatie u
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, wordt u aangeraden AEM Forms aan te roepen met Remoting. (Zie [ het Aanhalen AEM Forms gebruikend AEM Forms Verwijderend ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+>Voordat u deze sectie leest, wordt u aangeraden AEM Forms aan te roepen met Remoting. (Zie [&#x200B; het Aanhalen AEM Forms gebruikend AEM Forms Verwijderend &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker met SSO voor authentiek wordt verklaard. (Voor informatie over dit proces zoals zijn input en outputwaarden, zie [ Kort levend procesvoorbeeld ](/help/forms/developing/aem-forms-processes.md).)
+Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker met SSO voor authentiek wordt verklaard. (Voor informatie over dit proces zoals zijn input en outputwaarden, zie [&#x200B; Kort levend procesvoorbeeld &#x200B;](/help/forms/developing/aem-forms-processes.md).)
 
-![ cf_cf_encryptdocumentprocess2 ](assets/cf_cf_encryptdocumentprocess2.png)
+![&#x200B; cf_cf_encryptdocumentprocess2 &#x200B;](assets/cf_cf_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [ Gebruikend Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [&#x200B; Gebruikend Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 De clienttoepassing die met Flash Builder is gemaakt, communiceert met de beveiligingsserver van de User Manager die op `/um/login` en `/um/logout` is geconfigureerd. De clienttoepassing verzendt dus tijdens het opstarten een aanvraag naar de `/um/login` URL om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
 
@@ -98,7 +98,7 @@ Bij ontvangst van deze aanvraag verwijdert de beveiligingsserver van de gebruike
 
 Om aan te tonen hoe te om een cliënttoepassing tot stand te brengen die authentificatie SSO uitvoert, wordt een voorbeeldcliënttoepassing gecreeerd. In de volgende afbeelding ziet u de stappen die de clienttoepassing uitvoert om een gebruiker te verifiëren met behulp van SSO.
 
-![ cf_cf_flexsso ](assets/cf_cf_flexsso.png)
+![&#x200B; cf_cf_flexsso &#x200B;](assets/cf_cf_flexsso.png)
 
 In de vorige illustratie wordt de toepassingsstroom beschreven die plaatsvindt wanneer de clienttoepassing wordt gestart.
 
@@ -112,23 +112,23 @@ In de vorige illustratie wordt de toepassingsstroom beschreven die plaatsvindt w
 
 De clienttoepassing bestaat uit de volgende bestanden:
 
-* `SSOStandalone.mxml`: Het MXML hoofdbestand dat de clienttoepassing vertegenwoordigt. (Zie [ Creërend het SSOStandalone.mxml- dossier ](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file).)
-* `um/ISSOManager.as`: bewerkingen met betrekking tot Single Sign On (SSO) beschikbaar maken. (Zie [ Creërend het ISSOManager.as- dossier ](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
-* `um/SSOEvent.as`: `SSOEvent` wordt verzonden voor SSO-gerelateerde gebeurtenissen. (Zie [ Creërend het SSOEvent.as- dossier ](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
-* `um/SSOManager.as`: beheert de bewerkingen met betrekking tot SSO en verzendt de juiste gebeurtenissen. (Zie [ Creërend het SSOManager.as- dossier ](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file).)
-* `um/UserManager.as`: Bevat toepassingslogica die de dienst van de Manager van de Authentificatie gebruikend zijn WSDL aanhaalt. (Zie [ Creërend het dossier UserManager.as ](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
-* `views/login.mxml`: vertegenwoordigt het aanmeldingsscherm. (Zie [ Creërend het login.mxml- dossier ](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
-* `views/logout.mxml` - Vertegenwoordigt het aanmeldingsscherm. (Zie [ Creërend het logout.mxml- dossier ](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
-* `views/progress.mxml` : geeft een voortgangsweergave aan. (Zie [ Creërend het progress.mxml- dossier ](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
-* `views/remoting.mxml`: geeft de weergave aan die het kortstondige AEM Forms-proces MyApplication/EncryptDocument aanroept door het verwijderen. (Zie [ Creërend het remoting.mxml- dossier ](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file).)
+* `SSOStandalone.mxml`: Het MXML hoofdbestand dat de clienttoepassing vertegenwoordigt. (Zie [&#x200B; Creërend het SSOStandalone.mxml- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file).)
+* `um/ISSOManager.as`: bewerkingen met betrekking tot Single Sign On (SSO) beschikbaar maken. (Zie [&#x200B; Creërend het ISSOManager.as- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
+* `um/SSOEvent.as`: `SSOEvent` wordt verzonden voor SSO-gerelateerde gebeurtenissen. (Zie [&#x200B; Creërend het SSOEvent.as- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
+* `um/SSOManager.as`: beheert de bewerkingen met betrekking tot SSO en verzendt de juiste gebeurtenissen. (Zie [&#x200B; Creërend het SSOManager.as- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file).)
+* `um/UserManager.as`: Bevat toepassingslogica die de dienst van de Manager van de Authentificatie gebruikend zijn WSDL aanhaalt. (Zie [&#x200B; Creërend het dossier UserManager.as &#x200B;](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
+* `views/login.mxml`: vertegenwoordigt het aanmeldingsscherm. (Zie [&#x200B; Creërend het login.mxml- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
+* `views/logout.mxml` - Vertegenwoordigt het aanmeldingsscherm. (Zie [&#x200B; Creërend het logout.mxml- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
+* `views/progress.mxml` : geeft een voortgangsweergave aan. (Zie [&#x200B; Creërend het progress.mxml- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
+* `views/remoting.mxml`: geeft de weergave aan die het kortstondige AEM Forms-proces MyApplication/EncryptDocument aanroept door het verwijderen. (Zie [&#x200B; Creërend het remoting.mxml- dossier &#x200B;](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file).)
 
 In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
-![ cf_cf_sso_project ](assets/cf_cf_sso_project.png)
+![&#x200B; cf_cf_sso_project &#x200B;](assets/cf_cf_sso_project.png)
 
 >[!NOTE]
 >
->Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Zorg er ook voor dat u het bestand adobe-remoting-provider.swc toevoegt aan het klassepad van uw project. (Zie [ Met inbegrip van het de bibliotheekdossier van AEM Forms Flex ](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Zorg er ook voor dat u het bestand adobe-remoting-provider.swc toevoegt aan het klassepad van uw project. (Zie [&#x200B; Met inbegrip van het de bibliotheekdossier van AEM Forms Flex &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Het bestand SSOStandalone.mxml maken {#creating-the-ssostandalone-mxml-file}
 
@@ -670,7 +670,7 @@ De volgende code vertegenwoordigt het progress.mxml- dossier.
 
 ### Het bestand remoting.mxml maken {#creating-the-remoting-mxml-file}
 
-De volgende code vertegenwoordigt het bestand remoting.mxml dat het `MyApplication/EncryptDocument` -proces aanroept. Omdat een document wordt doorgegeven aan het proces, bevindt de toepassingslogica die verantwoordelijk is voor het doorgeven van een beveiligd document aan AEM Forms zich in dit bestand. (Zie [ het overgaan van veilige documenten om processen aan te halen gebruikend het Verwijderen ](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+De volgende code vertegenwoordigt het bestand remoting.mxml dat het `MyApplication/EncryptDocument` -proces aanroept. Omdat een document wordt doorgegeven aan het proces, bevindt de toepassingslogica die verantwoordelijk is voor het doorgeven van een beveiligd document aan AEM Forms zich in dit bestand. (Zie [&#x200B; het overgaan van veilige documenten om processen aan te halen gebruikend het Verwijderen &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

@@ -24,13 +24,13 @@ Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Hand
 
 De implementatie omvat een client-side en een server-side definitie. Ontwikkelaars kunnen ook aangepaste hulplijnen maken.
 
-De douaneSCF helpers die met AEM Communities worden geleverd worden bepaald in de [ cliëntbibliotheek ](../../help/sites-developing/clientlibs.md):
+De douaneSCF helpers die met AEM Communities worden geleverd worden bepaald in de [&#x200B; cliëntbibliotheek &#x200B;](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->Ben zeker om het [ recentste de eigenschappak van Gemeenschappen ](deploy-communities.md#latestfeaturepack) te installeren.
+>Ben zeker om het [&#x200B; recentste de eigenschappak van Gemeenschappen &#x200B;](deploy-communities.md#latestfeaturepack) te installeren.
 
 ## Afkorting {#abbreviate}
 
@@ -180,7 +180,7 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Een blokhelper die de huidige waarde van [ WCM wijze ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) tegen een koord gescheiden lijst van wijzen test.
+Een blokhelper die de huidige waarde van [&#x200B; WCM wijze &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) tegen een koord gescheiden lijst van wijzen test.
 
 ### Parameters {#parameters-4}
 
@@ -190,7 +190,7 @@ Een blokhelper die de huidige waarde van [ WCM wijze ](https://developer.adobe.c
 
 * **wijze**: Koord
 
-  (Facultatief) een komma-gescheiden lijst van [ wijzen WCM ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) om als reeks te testen.
+  (Facultatief) een komma-gescheiden lijst van [&#x200B; wijzen WCM &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) om als reeks te testen.
 
 ### Voorbeeld {#example-2}
 
@@ -206,7 +206,7 @@ Een blokhelper die de huidige waarde van [ WCM wijze ](https://developer.adobe.c
 
 Deze hulp treedt helper &quot;i18n&quot;van Handlebars met voeten.
 
-Zie ook [ Internationaliserend Koorden in de Code van JavaScript ](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Zie ook [&#x200B; Internationaliserend Koorden in de Code van JavaScript &#x200B;](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parameters {#parameters-5}
 
@@ -233,11 +233,11 @@ Zie ook [ Internationaliserend Koorden in de Code van JavaScript ](../../help/si
 
 Een hulpmiddel om een component als niet bestaand middel in een malplaatje te omvatten.
 
-Deze methode laat het middel programmatically worden aangepast gemakkelijker dan voor een middel dat als knoop JCR wordt toegevoegd mogelijk is. Zie [ toevoegen of omvatten een Component van Gemeenschappen ](scf.md#add-or-include-a-communities-component).
+Deze methode laat het middel programmatically worden aangepast gemakkelijker dan voor een middel dat als knoop JCR wordt toegevoegd mogelijk is. Zie [&#x200B; toevoegen of omvatten een Component van Gemeenschappen &#x200B;](scf.md#add-or-include-a-communities-component).
 
 Er zijn slechts enkele onderdelen van de Gemeenschappen beschikbaar die u wilt opnemen. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [ cq:omvat ](../../help/sites-developing/taglib.md) voor manuscripten JSP.
+Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [&#x200B; cq:omvat &#x200B;](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
 ### Parameters {#parameters-6}
 
@@ -277,7 +277,7 @@ Bevat een nieuwe commentaarcomponent op `this.id` + /comments.
 
 Een helper die een AEM HTML- cliëntbibliotheek omvat, die een js, een css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in het Handlebars-script.
 
-Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [ ui:includeClientLib ](../../help/sites-developing/taglib.md) voor manuscripten JSP.
+Deze helper, aangewezen slechts op server-kant, verstrekt functionaliteit gelijkend op [&#x200B; ui:includeClientLib &#x200B;](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
 ### Parameters {#parameters-7}
 
@@ -523,7 +523,7 @@ Aangepaste helpers moeten aan de serverzijde en client-kant worden geïmplemente
 
 ### Aangepaste hulp op de server {#server-side-custom-helpers}
 
-Om een hulp van douaneSCF op server-kant uit te voeren en te registreren, voer eenvoudig de interface Java™ [ TemplateHelper ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html) uit, maak het een [ OSGi Dienst ](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
+Om een hulp van douaneSCF op server-kant uit te voeren en te registreren, voer eenvoudig de interface Java™ [&#x200B; TemplateHelper &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html) uit, maak het een [&#x200B; OSGi Dienst &#x200B;](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
 
 Bijvoorbeeld:
 
@@ -594,7 +594,7 @@ Clilib moet:
 
 * Neem een afhankelijkheid van `cq.social.scf` op.
 * Laden nadat handgrepen zijn geladen.
-* Ben [ inbegrepen ](clientlibs.md).
+* Ben [&#x200B; inbegrepen &#x200B;](clientlibs.md).
 
 Opmerking: de SCF-hulplijnen worden gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js` .
 

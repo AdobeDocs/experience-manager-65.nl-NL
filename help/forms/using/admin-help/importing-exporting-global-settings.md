@@ -30,7 +30,7 @@ U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren
 
 U kunt bijvoorbeeld van een ontwikkelomgeving naar een productieomgeving gaan door de definities van zoeksjablonen en globale instellingen van de ene omgeving te exporteren en deze in de andere omgeving te importeren.
 
-Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellingen in een XML- of teksteditor wijzigen. De enige instellingen die u wilt bewerken zijn echter de instellingen JChannelConnectionProperties, formViewOnly en specialRoutes. Voor meer informatie, zie [ globale montages van Workspace ](importing-exporting-global-settings.md#workspace-global-settings).
+Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellingen in een XML- of teksteditor wijzigen. De enige instellingen die u wilt bewerken zijn echter de instellingen JChannelConnectionProperties, formViewOnly en specialRoutes. Voor meer informatie, zie [&#x200B; globale montages van Workspace &#x200B;](importing-exporting-global-settings.md#workspace-global-settings).
 
 
 >[!NOTE]

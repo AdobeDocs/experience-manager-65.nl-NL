@@ -44,17 +44,17 @@ Een ander voorbeeldscenario waar de eigenschap GraphQl in het voorgeheugen onder
 venia/components/structure/navigation:true:10:600
 ```
 
-Wanneer het overwegen van de [ opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia) wordt gebruikt. Neem nota van het gebruik van de naam van de componentenvolmacht `venia/components/structure/navigation`, en **niet** de naam van de CIF navigatiecomponent (`core/cif/components/structure/navigation/v1/navigation`).
+Wanneer het overwegen van de [&#x200B; opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia) wordt gebruikt. Neem nota van het gebruik van de naam van de componentenvolmacht `venia/components/structure/navigation`, en **niet** de naam van de CIF navigatiecomponent (`core/cif/components/structure/navigation/v1/navigation`).
 
 Caching voor andere componenten zou op projectbasis, gewoonlijk in coördinatie met caching moeten worden bepaald die op het niveau van Dispatcher wordt gevormd. Herinner dat er geen actieve ongeldigverklaring van deze geheime voorgeheugens is, zodat zou de caching duur zorgvuldig moeten worden geplaatst. Er zijn geen standaardwaarden die overeenkomen met alle mogelijke projecten en gebruiksgevallen. Zorg ervoor dat u een caching strategie op het projectniveau bepaalt die het best de vereisten van uw project aanpast.
 
 ## Dispatcher Caching {#dispatcher}
 
-Het in cache plaatsen AEM pagina&#39;s of fragmenten in [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Dit is een kernonderdeel van de cachestrategie voor AEM Dispatcher.
+Het in cache plaatsen AEM pagina&#39;s of fragmenten in [&#x200B; AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Dit is een kernonderdeel van de cachestrategie voor AEM Dispatcher.
 
 Naast zuivere AEM beheerde inhoud CIF een pagina kan typisch handelsgegevens tonen die dynamisch van Adobe Commerce via GraphQL wordt opgehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen, bijvoorbeeld, als sommige productgegevens (zoals naam of prijs) in Adobe Commerce veranderen.
 
-Om ervoor te zorgen dat de CIF pagina&#39;s voor een beperkte hoeveelheid tijd in AEM Dispatcher kunnen worden in het voorgeheugen ondergebracht, adviseren wij daarom het gebruik van [ Op tijd gebaseerde Invalidatie van het Geheime voorgeheugen ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-time-based-cache-invalidation-enablettl) (die ook als op TTL-Gebaseerd caching wordt bekend) wanneer het in het voorgeheugen onderbrengen CIF pagina&#39;s in de AEM Dispatcher. Deze eigenschap kan in AEM met het gebruiken van het extra [ ACS AEM Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket worden gevormd.
+Om ervoor te zorgen dat de CIF pagina&#39;s voor een beperkte hoeveelheid tijd in AEM Dispatcher kunnen worden in het voorgeheugen ondergebracht, adviseren wij daarom het gebruik van [&#x200B; Op tijd gebaseerde Invalidatie van het Geheime voorgeheugen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-time-based-cache-invalidation-enablettl) (die ook als op TTL-Gebaseerd caching wordt bekend) wanneer het in het voorgeheugen onderbrengen CIF pagina&#39;s in de AEM Dispatcher. Deze eigenschap kan in AEM met het gebruiken van het extra [&#x200B; ACS AEM Commons &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket worden gevormd.
 
 Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvoudige caching duur voor geselecteerde AEM pagina&#39;s. Dit zorgt ervoor dat CIF pagina&#39;s slechts in het voorgeheugen ondergebracht in AEM Dispatcher tot de gevormde duur zijn en dat de inhoud vaak zal worden bijgewerkt.
 
@@ -64,6 +64,6 @@ Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvou
 
 ## Aanvullende bronnen
 
-- [ de opslag van de Verwijzing van Venia ](https://github.com/adobe/aem-cif-guides-venia)
-- [ GraphQL caching configuratie ](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [ AEM Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)
+- [&#x200B; de opslag van de Verwijzing van Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)
+- [&#x200B; GraphQL caching configuratie &#x200B;](https://github.com/adobe/commerce-cif-graphql-client#caching)
+- [&#x200B; AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)

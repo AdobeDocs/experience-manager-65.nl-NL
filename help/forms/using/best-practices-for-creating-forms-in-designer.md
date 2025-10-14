@@ -69,7 +69,7 @@ Gerelateerde controlepunten
 
 ## Formuliereigenschappen configureren om toegankelijkheidsinformatie te genereren {#configure-form-properties}
 
-Voor een vorm om toegankelijk te zijn, moet het [ waarneembaar ](https://www.w3.org/TR/WCAG20/#perceivable) door ondersteunende technologie zijn. De meeste schermlezers overwegen bijvoorbeeld niet de visuele indeling van het formulier, maar de onderliggende structuur.
+Voor een vorm om toegankelijk te zijn, moet het [&#x200B; waarneembaar &#x200B;](https://www.w3.org/TR/WCAG20/#perceivable) door ondersteunende technologie zijn. De meeste schermlezers overwegen bijvoorbeeld niet de visuele indeling van het formulier, maar de onderliggende structuur.
 
 Als u deze onderliggende structuur wilt implementeren met LiveCycle Designer, moet u een PDF-formulier maken met toegankelijkheidsinformatie (ook wel codes genoemd), zodat de schermlezer of andere ondersteunende hulpmiddelen de tekst en onderdelen van het formulier kunnen lezen. In een formulier met toegankelijkheidsinformatie bevat elk element informatie over de eigen structuur, plus informatie over hoe het verwant is aan of afhankelijk is van andere elementen. Alleen in PDF-bestanden waarin toegankelijkheidsinformatie is opgenomen, kunnen schermlezers de inhoud van een document nauwkeurig identificeren en beschrijven.
 
@@ -96,7 +96,7 @@ In LiveCycle Designer is deze optie standaard ingeschakeld.
 
 Wanneer u uw formulieren ontwerpt, gebruikt u ontwikkelingsobjecten op de tabbladen die beschikbaar zijn in de LiveCycle Designer Object Library. U kunt dit deelvenster weergeven door Venster > Objectbibliotheek te kiezen of op Shift+F12 te drukken (zie Figuur 1).
 
-![ het Comité van de Bibliotheek van Objecten ](/help/forms/using/assets/image-1.png)
+![&#x200B; het Comité van de Bibliotheek van Objecten &#x200B;](/help/forms/using/assets/image-1.png)
 
 Figuur 1: **het Comité van de Bibliotheek van Objecten**
 
@@ -123,7 +123,7 @@ Als u ervoor kiest afbeeldingen te gebruiken, geef dan tekstbeschrijvingen op vo
 
 U kunt tekstbeschrijvingen opgeven met de teksteigenschappen Knopinfo of Aangepast scherm Reader in het palet Toegankelijkheid of via tekstvelden, bijschriften en objectnamen, zoals opgegeven in de optie Naam op het tabblad Binding. Figuur 2 toont bijvoorbeeld een voorbeeld van een afbeelding met de tekst &#39;Adobe Reader ophalen&#39;. Aangezien een schermlezer geen tekst kan lezen die deel uitmaakt van een afbeelding, moet u een tekstalternatief opnemen in het veld Tekst aangepaste Reader scherm in het palet Toegankelijkheid voor dit object. In de meeste gevallen moet de alternatieve tekst hetzelfde zijn als de tekst die in de afbeelding zichtbaar is (zie Figuur 2).
 
-![ die alternatieve tekst voor een beeld specificeren gebruikend het palet van de Toegankelijkheid ](/help/forms/using/assets/image-2.png)
+![&#x200B; die alternatieve tekst voor een beeld specificeren gebruikend het palet van de Toegankelijkheid &#x200B;](/help/forms/using/assets/image-2.png)
 
 Figuur 2: **specificerend alternatieve tekst voor een beeld gebruikend het palet van de Toegankelijkheid**
 
@@ -161,7 +161,7 @@ Voer de volgende stappen uit om het palet Toegankelijkheid te gebruiken:
 1. Geef het palet Toegankelijkheid weer door Venster > Toegankelijkheid te kiezen of door op Shift+F6 te drukken.
 1. Selecteer een object in het formulier. In het palet worden de toegankelijkheidseigenschappen van het object weergegeven.
 
-![ het palet van de Toegankelijkheid ](/help/forms/using/assets/image-3.png)
+![&#x200B; het palet van de Toegankelijkheid &#x200B;](/help/forms/using/assets/image-3.png)
 
 Figuur 3: **het palet van de Toegankelijkheid**
 
@@ -192,7 +192,7 @@ Houd rekening met het volgende wanneer u het palet Toegankelijkheid gebruikt voo
 
 Figuur 4 toont een voorbeeld van een tekstgebied met een visuele titel die voor sommige gebruikers van het schermlezer onduidelijk kan zijn. In dit voorbeeld is Aangepast scherm Readers Tekst ingesteld op Aantal pagina&#39;s en is de voorkeur voor Readers scherm ingesteld op Aangepaste tekst. Hierdoor wordt de werkelijke (visuele) bijschrifttekst (&quot;# pagina&#39;s&quot;) niet gebruikt door de schermlezer. U kunt ook een knopinfo opgeven.
 
-![ specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is ](/help/forms/using/assets/image-4.png)
+![&#x200B; specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is &#x200B;](/help/forms/using/assets/image-4.png)
 
 Figuur 4: **specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is**
 
@@ -230,7 +230,7 @@ Wanneer u een object maakt, plaatst LiveCycle Designer automatisch het bijschrif
 
 Het voorbeeld in Figuur 5 toont een tekstvakje met een titel boven het. De positie in het palet Indeling is ingesteld op Boven. De standaardlocatie van het bijschrift bevindt zich links van het tekstvak.
 
-![ Veranderende ondertitel die het palet van de Lay-out plaatst ](/help/forms/using/assets/image-5.png)
+![&#x200B; Veranderende ondertitel die het palet van de Lay-out plaatst &#x200B;](/help/forms/using/assets/image-5.png)
 
 Figuur 5: **Veranderende ondertitel die het palet van de Lay-out** plaatst
 
@@ -281,7 +281,7 @@ De volgende tekenreeks wordt in het vak Binding weergegeven: $record.tooltip.dp_
 
 Gebruikers van ondersteunende hulpmiddelen kunnen verschillende methoden gebruiken om gekoppelde tekst te lezen. Gebruikers van schermlezers gebruiken bijvoorbeeld vaak een lijst met koppelingen, zoals in Figuur 6, om snel de beschikbare koppelingen op een pagina te scannen.
 
-![ de de dialoogdoos van de Lijst van Verbindingen JAWS ](/help/forms/using/assets/image-6.png)
+![&#x200B; de de dialoogdoos van de Lijst van Verbindingen JAWS &#x200B;](/help/forms/using/assets/image-6.png)
 
 Figuur 6: **de dialoogdoos van de Lijst van de Verbindingen van JAWS**
 
@@ -330,7 +330,7 @@ Voor eenvoudige formulieren (formulieren met een indeling van links naar rechts 
 
 Alle objecten worden weergegeven met een nummer in de rechterbovenhoek dat de plaats van het object in de standaardtabvolgorde aangeeft. De interactieve objecten in deze reeks vormen de tabvolgorde. In Figuur 7 ziet u de leesvolgorde van een basisformulier.
 
-![ Visualisatie van de standaard lezingsorde voor een typische orde vorm ](/help/forms/using/assets/image-7.png)
+![&#x200B; Visualisatie van de standaard lezingsorde voor een typische orde vorm &#x200B;](/help/forms/using/assets/image-7.png)
 
 Figuur 7: **Visualisatie van de standaardlezingsorde voor een typische orde vorm**
 
@@ -343,7 +343,7 @@ U kunt ervoor kiezen alleen interactieve formulierbesturingselementen (die de ta
 
 In een complex formulier kan het moeilijk zijn om te zien hoe de tabvolgorde van het ene object naar het andere loopt. Met visuele hulpmiddelen kunt u de tabvolgorde op het formulier weergeven. Wanneer u de aanwijzer boven het object houdt terwijl de visuele hulpmiddelen zijn ingeschakeld, geven blauwe pijlen de tabvolgorde voor de twee voorgaande en twee volgende objecten in de tabvolgorde weer (zie Figuur 8).
 
-![ Visuele hulpmiddelen benadrukken de lusjeorde ](/help/forms/using/assets/image-8.png)
+![&#x200B; Visuele hulpmiddelen benadrukken de lusjeorde &#x200B;](/help/forms/using/assets/image-8.png)
 
 Figuur 8: **Visuele hulpmiddelen benadrukken de lusjeorde**
 
@@ -355,7 +355,7 @@ Gebruik de volgende methoden om visuele hulpmiddelen in te schakelen:
 
 U kunt de standaardtabvolgorde wijzigen door de coördinaten van een object naar een andere locatie te verplaatsen. In Figuur 9 vindt het veld Productnaam bijvoorbeeld plaats in de tabvolgorde vóór het veld Hoeveelheid. Als u deze volgorde wilt wijzigen, kunt u het veld Productnaam verplaatsen zodat het onder of rechts van het veld Hoeveelheid wordt geplaatst.
 
-![ De standaardlusjeorde wordt verlaten aan recht ](/help/forms/using/assets/image-9.png)
+![&#x200B; De standaardlusjeorde wordt verlaten aan recht &#x200B;](/help/forms/using/assets/image-9.png)
 
 Figuur 9: **de standaardlusjeorde wordt verlaten aan recht**
 
@@ -368,7 +368,7 @@ U kunt de positie van een object als volgt wijzigen:
 
 U kunt de coördinaten van een object nauwkeuriger wijzigen met het palet Indeling (weergegeven in Figuur 10). Met dit palet kunt u de X- en Y-coördinaten en de breedte en hoogte van het object opgeven.
 
-![ Gebruikend coördinaten om een voorwerp met het palet van de Lay-out nauwkeurig te plaatsen ](/help/forms/using/assets/image-10.png)
+![&#x200B; Gebruikend coördinaten om een voorwerp met het palet van de Lay-out nauwkeurig te plaatsen &#x200B;](/help/forms/using/assets/image-10.png)
 
 Figuur 10: **Gebruikend coördinaten om een voorwerp met het palet van de Lay-out** precies te plaatsen
 
@@ -384,7 +384,7 @@ Zoals hierboven vermeld, kunt u met subformulieren groepen objecten invoegen die
 
 Wanneer twee subformulieren met veldobjecten naast elkaar worden geplaatst, doorloopt de tabvolgorde de velden in het eerste subformulier voordat naar het volgende subformulier wordt gegaan. Dit wordt geïllustreerd in Figuur 11, waar twee subformulieren worden gebruikt om een op kolom gebaseerde standaardtabvolgorde te maken.
 
-![ Standaard lusjeorde gebruikend subforms ](/help/forms/using/assets/image-11.png)
+![&#x200B; Standaard lusjeorde gebruikend subforms &#x200B;](/help/forms/using/assets/image-11.png)
 
 Figuur 11: **Standaard lusjeorde gebruikend subforms**
 
@@ -395,7 +395,7 @@ Subformulieren, keuzerondjes en inhoudsgebieden beïnvloeden samen met de vertic
 U kunt de standaardtabvolgorde wijzigen wanneer u een andere volgorde in het formulier nodig hebt en de wijziging kan niet worden bereikt door plaatsing of groepering in subformulieren. Als u de standaardtabvolgorde wilt wijzigen, kunt u een aangepaste tabvolgorde maken met het palet Tabvolgorde.
 Met het palet Tabvolgorde (zie Figuur 12) kunt u de volgorde controleren en wijzigen waarin objecten in het formulier worden gelezen met behulp van ondersteunende hulpmiddelen en worden genavigeerd door de Tab-toets van de gebruiker.
 
-![ het palet van de Orde van het Lusje ](/help/forms/using/assets/image-12.png)
+![&#x200B; het palet van de Orde van het Lusje &#x200B;](/help/forms/using/assets/image-12.png)
 
 Figuur 12: **het palet van de Orde van het Lusje**
 
@@ -471,7 +471,7 @@ Informatie die uitsluitend in kleur wordt weergegeven (kleuren met semantische b
 
 Figuur 13 toont bijvoorbeeld een formulierveld met een rood bijschrift (opgegeven met het palet Font) om aan te geven dat het formulierveld verplicht is. In dit voorbeeld is de kleur de enige indicator voor het verschil tussen de vereiste en optionele invoervelden, waardoor het voor blinde gebruikers of gebruikers met bepaalde typen kleurenblindheid onmogelijk is ze te onderscheiden.
 
-![ Gebruikend kleur alleen om informatie ](/help/forms/using/assets/image-13.png) te vervoeren
+![&#x200B; Gebruikend kleur alleen om informatie &#x200B;](/help/forms/using/assets/image-13.png) te vervoeren
 
 Figuur 13: **Gebruikend kleur alleen om informatie** te vervoeren
 
@@ -486,7 +486,7 @@ Houd er bij het opgeven van beschrijvingen of instructies aan de gebruiker van h
 
 Veel gebruikers met een visuele handicap vertrouwen op een hoog contrast tussen tekst en de achtergrond voor het lezen van formulieren. Wanneer het contrast tussen de achtergrondkleur en de voorgrondkleur onvoldoende is, kan een formulier voor sommige gebruikers moeilijk of zelfs onmogelijk leesbaar worden. In Figuur 14 ziet u een voorbeeld van een formulier met onvoldoende contrast.
 
-![ Vorm van A met ontoereikend kleurencontrast ](/help/forms/using/assets/image-14.png)
+![&#x200B; Vorm van A met ontoereikend kleurencontrast &#x200B;](/help/forms/using/assets/image-14.png)
 
 Figuur 14: **Vorm van A met ontoereikend kleurencontrast**
 
@@ -598,7 +598,7 @@ Met slimme velden kunt u bepaalde formulieren gemakkelijker invullen. Een formul
 
 Met het palet Toegankelijkheid kunt u rollen toewijzen aan objecten op basis van de bestemming van het object. Deze rollen kunnen worden toegepast om rubrieken op verschillende niveaus tot stand te brengen.
 
-![ die een kopbalrol in het palet van de Toegankelijkheid specificeren ](/help/forms/using/assets/image-15.png)
+![&#x200B; die een kopbalrol in het palet van de Toegankelijkheid specificeren &#x200B;](/help/forms/using/assets/image-15.png)
 Figuur 15: **specificerend een koprol in het palet van de Toegankelijkheid**
 
 Ga als volgt te werk om een kop in uw formulier te maken:
@@ -615,7 +615,7 @@ Met de meeste schermlezers kunnen gebruikers op basis van hun niveau snel navige
    * Rubriek niveau 3: Persoonlijke gegevens
    * Koptekst niveau 3: Adres
 
-![ Structurerend een vorm gebruikend rubrieken ](/help/forms/using/assets/image-16.png)
+![&#x200B; Structurerend een vorm gebruikend rubrieken &#x200B;](/help/forms/using/assets/image-16.png)
 
 Figuur 16: **Structurerend een vorm gebruikend rubrieken**
 
@@ -689,7 +689,7 @@ Houd bij het ontwerpen van scripts voor toegankelijkheid rekening met de volgend
 ## Controleer of alle audio- en video-inhoud toegankelijk is{#ensure-audio-video-accessible}
 
 Als uw formulieren audio- of video-inhoud bevatten, inclusief audio- en videoclips, moet u ervoor zorgen dat deze inhoud toegankelijk is. Zorg er in het bijzonder voor dat videoclips die in formulieren zijn opgenomen, bijschriften (ook wel ondertitels genoemd) bevatten voor doven en moeilijke gehoorgebruikers en videobeschrijvingen voor blinde gebruikers. Voor audiobestanden die niet met video-inhoud zijn gesynchroniseerd, volstaat een eenvoudige transcriptie.
-Voor Flash gebaseerde media, raadpleeg [ verbinding ](/help/forms/using/best-practices-for-creating-forms-in-designer.md) voor informatie bij het verstrekken van titels.
+Voor Flash gebaseerde media, raadpleeg [&#x200B; verbinding &#x200B;](/help/forms/using/best-practices-for-creating-forms-in-designer.md) voor informatie bij het verstrekken van titels.
 
 **Verwante controlepunten**:
 * § 508 § 194.22
@@ -722,7 +722,7 @@ De eigenschap Landinstelling van een formulier instellen:
 2. Selecteer de juiste taal voor de landinstelling van het formulier (zie Figuur 17)
 3. Klik op OK
 
-![ Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm ](/help/forms/using/assets/image-17.png)
+![&#x200B; Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm &#x200B;](/help/forms/using/assets/image-17.png)
 
 Figuur 17: **Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm**
 
@@ -731,7 +731,7 @@ U kunt als volgt de eigenschap Lokaal instellen van het subformulier op hoofdniv
 1. Geef het palet Object weer door Venster > Object te kiezen
 1. Selecteer in het palet Object het tabblad Veld en selecteer in de lijst Landinstelling de taal die voor het object moet worden gebruikt (zie Figuur 18). Houd er bij het toepassen van verschillende landinstellingen op afzonderlijke objecten rekening mee dat de objecten in tabellen en subformulieren automatisch dezelfde landinstelling krijgen als de tabel en het subformulier.
 
-![ Veranderend de scène van een voorwerp ](/help/forms/using/assets/image-18.png)
+![&#x200B; Veranderend de scène van een voorwerp &#x200B;](/help/forms/using/assets/image-18.png)
 
 Figuur 18: **Veranderend de scène van een voorwerp**
 

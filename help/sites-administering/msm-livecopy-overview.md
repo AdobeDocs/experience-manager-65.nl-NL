@@ -39,10 +39,10 @@ U kunt het Live Copy-overzicht openen via het volgende:
 
 Het **Levende Overzicht van het Exemplaar** kan van het **3&rbrace; zijpaneel van Verwijzingen van de** Sites **console worden geopend:**
 
-1. In de **console van Plaatsen**, [ navigeer aan uw blauwdruk pagina en selecteer het ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. In de **console van Plaatsen**, [&#x200B; navigeer aan uw blauwdruk pagina en selecteer het &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open het **[paneel van Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteer **Levende Exemplaren**.
 
-   ![ het paneel van Verwijzingen - Levende exemplaren ](assets/chlimage_1-359.png)
+   ![&#x200B; het paneel van Verwijzingen - Levende exemplaren &#x200B;](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Het **Levende Overzicht van het Exemplaar** kan worden geopend wanneer het bekij
 1. Open **Eigenschappen** voor de aangewezen blauwdrukpagina.
 1. Open het **lusje van de Vervaging** - de **Levende optie van het Overzicht van het Exemplaar** wordt getoond in de hoogste toolbar:
 
-   ![ lusje van de Vervaging - het Levende Overzicht van het Exemplaar ](assets/chlimage_1-360.png)
+   ![&#x200B; lusje van de Vervaging - het Levende Overzicht van het Exemplaar &#x200B;](assets/chlimage_1-360.png)
 
 1. Selecteer **Levend Overzicht van het Exemplaar** om het overzicht van alle levende exemplaren met betrekking tot de huidige blauwdruk te tonen en te gebruiken.
 
@@ -69,13 +69,13 @@ Het **Levende Overzicht van het Exemplaar** kan worden geopend wanneer het bekij
 Het **Levende Overzicht van het Exemplaar** kan ook worden gebruikt om acties op het levende exemplaar uit te voeren:
 
 1. Open het **Levende Overzicht van het Exemplaar**.
-1. Selecteer de vereiste blauwdruk of pagina voor live kopiëren. De werkbalk wordt bijgewerkt en toont de beschikbare acties. De [ beschikbare acties ](/help/sites-administering/msm.md#terms-used) hangen van af of u a [ blauwdruk ](#actions-for-a-blueprint-page) of [ levende exemplaar ](#actions-for-a-live-copy-page) pagina selecteert:
+1. Selecteer de vereiste blauwdruk of pagina voor live kopiëren. De werkbalk wordt bijgewerkt en toont de beschikbare acties. De [&#x200B; beschikbare acties &#x200B;](/help/sites-administering/msm.md#terms-used) hangen van af of u a [&#x200B; blauwdruk &#x200B;](#actions-for-a-blueprint-page) of [&#x200B; levende exemplaar &#x200B;](#actions-for-a-live-copy-page) pagina selecteert:
 
 ### Handelingen voor een vervagingspagina {#actions-for-a-blueprint-page}
 
 Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
-![ Geselecteerde Vervaging - beschikbare acties ](assets/chlimage_1-361.png)
+![&#x200B; Geselecteerde Vervaging - beschikbare acties &#x200B;](assets/chlimage_1-361.png)
 
 * Bewerken
 
@@ -89,7 +89,7 @@ Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
 Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties beschikbaar:
 
-![ Levende geselecteerde exemplaarpagina van het exemplaar - beschikbare acties ](assets/chlimage_1-362.png)
+![&#x200B; Levende geselecteerde exemplaarpagina van het exemplaar - beschikbare acties &#x200B;](assets/chlimage_1-362.png)
 
 * Bewerken
 
@@ -130,10 +130,10 @@ De **console van de Status van de Verhouding** heeft twee lusjes die een waaier 
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en de live kopie:
 
-![ de statusinformatie van de Verhouding ](assets/chlimage_1-363.png)
+![&#x200B; de statusinformatie van de Verhouding &#x200B;](assets/chlimage_1-363.png)
 
 ### Informatie over live kopiëren {#live-copy-information}
 
 Op dit tabblad kunt u de configuratie van de live kopie weergeven en bewerken:
 
-![ Levende exemplaarinformatie ](assets/chlimage_1-364.png)
+![&#x200B; Levende exemplaarinformatie &#x200B;](assets/chlimage_1-364.png)

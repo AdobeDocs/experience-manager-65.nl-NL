@@ -25,7 +25,7 @@ Voor AEM Communities-functies moeten bezoekers van de site vaak worden geregistr
 
 ### Leden (gebruikers) op Publish {#members-users-on-publish}
 
-Gebruikend de leden van Gemeenschappen en de Groepen consoles, leden en lidgroepen die in *worden geregistreerd publiceren* milieu kunnen van het *auteur* milieu worden gecreeerd en worden geleid. Dit is slechts mogelijk wanneer de [ tunneldienst ](deploy-communities.md#tunnel-service-on-author) wordt toegelaten.
+Gebruikend de leden van Gemeenschappen en de Groepen consoles, leden en lidgroepen die in *worden geregistreerd publiceren* milieu kunnen van het *auteur* milieu worden gecreeerd en worden geleid. Dit is slechts mogelijk wanneer de [&#x200B; tunneldienst &#x200B;](deploy-communities.md#tunnel-service-on-author) wordt toegelaten.
 
 ### Gebruikers op auteur {#users-on-author}
 
@@ -36,7 +36,7 @@ Voor het beheren van gebruikers en groepen die in het *auteur* milieu worden ger
 
 >[!NOTE]
 >
->Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zullen niet aanwezig zijn wanneer het lopen met [ geen runtimeContent ](../../help/sites-administering/production-ready.md).
+>Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zullen niet aanwezig zijn wanneer het lopen met [&#x200B; geen runtimeContent &#x200B;](../../help/sites-administering/production-ready.md).
 
 ## Ledenconsole {#members-console}
 
@@ -46,18 +46,18 @@ In het auteursmilieu, om de console van Leden te bereiken voor het beheren van l
 
 >[!CAUTION]
 >
->Het zal niet mogelijk zijn om de console van Leden te gebruiken als de [ tunneldienst ](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+>Het zal niet mogelijk zijn om de console van Leden te gebruiken als de [&#x200B; tunneldienst &#x200B;](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
 
-![ De lidconsole ](assets/member-console1.png)
+![&#x200B; De lidconsole &#x200B;](assets/member-console1.png)
 
 ### Zoeken {#search-features}
 
 Selecteer het pictogram van het zijpaneel aan de linkerkant van de koptekst van `Members` om het paneel van de onderzoekskant van knevel te voorzien.
 
-![ het zijpaneelpictogram van het Onderzoek.](assets/leftpanel-icon.png)
+![&#x200B; het zijpaneelpictogram van het Onderzoek.](assets/leftpanel-icon.png)
 
 
-![ de opties van de Filter voor de lidconsole ](assets/member-console2.png)
+![&#x200B; de opties van de Filter voor de lidconsole &#x200B;](assets/member-console2.png)
 
 Selecteer het zoekpictogram aan de linkerkant van de koptekst van `Members` om het venster met de zoekzijde te sluiten.
 
@@ -77,7 +77,7 @@ De kolomkoppen zijn
 
 Selecteer `Create Member` om een gebruiker in de publicatieomgeving te maken.
 
-![ het Create Nieuwe venster van het Lid ](assets/create-member1.png)
+![&#x200B; het Create Nieuwe venster van het Lid &#x200B;](assets/create-member1.png)
 
 ### ALGEMEEN - Gegevens van de leden {#general-member-details}
 
@@ -152,32 +152,32 @@ Het lid kan aan een of meer ledengroepen worden toegevoegd. Voer eerst tekst in 
 
 Met het deelvenster `BADGES` kunt u handmatig badges toewijzen en intrekken. De badges kunnen voor toegewezen rollen en badges zijn typisch verdiend.
 
-Zie ook [ het Scoren en Badges ](implementing-scoring.md).
+Zie ook [&#x200B; het Scoren en Badges &#x200B;](implementing-scoring.md).
 
-![ het Edit venster van de Montages van het Lidmaatschap ](assets/create-member2.png)
+![&#x200B; het Edit venster van de Montages van het Lidmaatschap &#x200B;](assets/create-member2.png)
 
 * **[!UICONTROL Add badges]**
-   * Begin het typen om van [ beschikbare badges ](badges.md) te selecteren. Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
+   * Begin het typen om van [&#x200B; beschikbare badges &#x200B;](badges.md) te selecteren. Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
    * Er kunnen meerdere badges en sites worden gekozen.
 * **[!UICONTROL Remove badges]**
    * Selecteer het prullenbakpictogram naast een badge om het te verwijderen.
 
 ## Groepsconsole {#groups-console}
 
-De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is met name nuttig voor [ Geprivilegieerde lidgroepen ](users.md#privilegedmembersgroups).
+De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is met name nuttig voor [&#x200B; Geprivilegieerde lidgroepen &#x200B;](users.md#privilegedmembersgroups).
 
 De console Groepen openen:
 * Selecteer **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]** bij globale navigatie.
 
 >[!CAUTION]
 >
->Het zal niet mogelijk zijn om de console van Groepen te gebruiken als de [ tunneldienst ](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+>Het zal niet mogelijk zijn om de console van Groepen te gebruiken als de [&#x200B; tunneldienst &#x200B;](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
 
 ### Nieuwe groep maken {#create-new-group}
 
 Selecteer `Add Group` om een groep te maken in de publicatieomgeving.
 
-![ het Create Nieuwe venster van de Groep ](assets/group-console1.png)
+![&#x200B; het Create Nieuwe venster van de Groep &#x200B;](assets/group-console1.png)
 
 De vereiste gebieden voor het creëren van een publish-zij lidgroep zijn:
 
@@ -205,8 +205,8 @@ De vereiste gebieden voor het creëren van een publish-zij lidgroep zijn:
 
 ## Geautoriseerde beheerders {#authorized-administrators}
 
-Wanneer het werken met leden in de de ledenconsole van Gemeenschappen, is het noodzakelijk om binnen als gebruiker met aangewezen toestemmingen worden ondertekend, en voor de replicatieagent die door de [ tunneldienst ](deploy-communities.md#tunnel-service-on-author) wordt gebruikt correct worden gevormd.
+Wanneer het werken met leden in de de ledenconsole van Gemeenschappen, is het noodzakelijk om binnen als gebruiker met aangewezen toestemmingen worden ondertekend, en voor de replicatieagent die door de [&#x200B; tunneldienst &#x200B;](deploy-communities.md#tunnel-service-on-author) wordt gebruikt correct worden gevormd.
 
 Als u zich niet hebt aangemeld als `admin` , moet de aangemelde gebruiker lid zijn van de gebruikersgroep van `administrators` .
 
-Zie ook [ de Agenten van de Replicatie op Auteur ](deploy-communities.md#replication-agents-on-author).
+Zie ook [&#x200B; de Agenten van de Replicatie op Auteur &#x200B;](deploy-communities.md#replication-agents-on-author).

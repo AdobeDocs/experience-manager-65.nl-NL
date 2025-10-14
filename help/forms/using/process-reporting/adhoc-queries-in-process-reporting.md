@@ -48,20 +48,20 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
 
 1. Om de opgeslagen vragen van het Proces/van het Onderzoek van de Taak te bekijken of een vraag tot stand te brengen, klik **Adhoc Vragen** en klik dan **Proces/het Onderzoek van de Taak**.
 
-   ![ search_nodes ](assets/search_nodes.png)
+   ![&#x200B; search_nodes &#x200B;](assets/search_nodes.png)
 
    Het **Mijn paneel van Filters** wordt getoond rechts van de boommening.
 
    In het **Mijn paneel van Filters**, kunt u nieuwe ad hoc vragen tot stand brengen en klikken om eerder bewaarde vragen uit te voeren.
 
-   ![ my_filters_panel ](assets/my_filters_panel.png)
+   ![&#x200B; my_filters_panel &#x200B;](assets/my_filters_panel.png)
 
 1. Om een bestaande vraag uit te voeren, klikt u eenvoudig de vraag in het **Mijn paneel van Filters**.
 1. Om een vraag tot stand te brengen, voegt de klik **&#x200B;**&#x200B;toe (+).
 
    **creeer het paneelvertoningen van de Filter**.
 
-   ![ create_filter_panel ](assets/create_filter_panel.png)
+   ![&#x200B; create_filter_panel &#x200B;](assets/create_filter_panel.png)
 
    Een query bestaat uit een of meer queryfilters. Als u een filter wilt maken, voegt u een filterrij toe aan de query. Standaard wordt één filterrij aan de query toegevoegd.
 
@@ -69,7 +69,7 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
 
    1. Selecteer een veld.
 
-      ![ filter_field ](assets/filter_field.png)
+      ![&#x200B; filter_field &#x200B;](assets/filter_field.png)
 
       >[!NOTE]
       >
@@ -77,7 +77,7 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
 
    1. Selecteer een voorwaarde.
 
-      ![ filter_condition ](assets/filter_condition.png)
+      ![&#x200B; filter_condition &#x200B;](assets/filter_condition.png)
 
       >[!NOTE]
       >
@@ -85,13 +85,13 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
 
    1. Voer een waarde in.
 
-      ![ filter_value ](assets/filter_value.png)
+      ![&#x200B; filter_value &#x200B;](assets/filter_value.png)
 
    1. Om een andere filter aan de vraag toe te voegen, klik **toevoegen (+)** op het recht van de filterrij.
 
       Om een filter uit de vraag te verwijderen, klik **Schrapping (-)** op het recht van de filterrij.
 
-      ![ filter_add_del ](assets/filter_add_del.png)
+      ![&#x200B; filter_add_del &#x200B;](assets/filter_add_del.png)
 
 Nadat u een vraag creeert, gebruik de opties in de hogere juiste hoek van **creeer het paneel van de Filter** om:
 
@@ -101,20 +101,20 @@ Nadat u een vraag creeert, gebruik de opties in de hogere juiste hoek van **cree
 
 ### Opties in het deelvenster Mijn filters {#options-in-my-filters-panel}
 
-Gebruik de opties in het **Mijn paneel van Filters** **&#x200B;**&#x200B;![ lc_pr_add_filter ](assets/lc_pr_add_filter.png) toevoegen, **&#x200B;**&#x200B;![ lc_pr_delete_filter ](assets/lc_pr_delete_filter.png), of **Schrapping** ![ lc_pr_edit_filter ](assets/lc_pr_edit_filter.png) een ad-hoc vraag.
+Gebruik de opties in het **Mijn paneel van Filters** **&#x200B;**&#x200B;![&#x200B; lc_pr_add_filter &#x200B;](assets/lc_pr_add_filter.png) toevoegen, **&#x200B;**&#x200B;![&#x200B; lc_pr_delete_filter &#x200B;](assets/lc_pr_delete_filter.png), of **Schrapping** ![&#x200B; lc_pr_edit_filter &#x200B;](assets/lc_pr_edit_filter.png) een ad-hoc vraag.
 
-![ my_filters_options ](assets/my_filters_options.png)
+![&#x200B; my_filters_options &#x200B;](assets/my_filters_options.png)
 
 ### Een zoekquery uitvoeren {#to-execute-a-search-query}
 
 1. Om een vraag uit te voeren, klik de filter in het **Mijn paneel van Filters** of klik de **Looppas** knoop als u creeert of een filter uitgeeft.
 1. De resultaten van de vraagvertoning in het **paneel van het Rapport** van het **Proces Meldend** venster.
 
-   ![ process_search_result ](assets/process_search_result.png)
+   ![&#x200B; process_search_result &#x200B;](assets/process_search_result.png)
 
    U kunt de onderzoeksresultaten met de hulp van het pagineringspaneel pagineren dat bij de bodem van het rapport wordt getoond.
 
-   ![ process_result_pgn ](assets/process_result_pgn.png)
+   ![&#x200B; process_result_pgn &#x200B;](assets/process_result_pgn.png)
 
    In de **drop-down lijst van de Vertoning**, kies het aantal resultaten dat per pagina moet worden getoond.
 
@@ -146,9 +146,9 @@ Gebruik de opties in het **Mijn paneel van Filters** **&#x200B;**&#x200B;![ lc_p
 
    Aangezien het sorteren een knevelverrichting is, klik een gebiedsheader om het resultaat oplopend te sorteren en het opnieuw te klikken om aflopend te sorteren. De huidige sorteervolgorde (oplopend/aflopend) wordt aangegeven door de richting van de donkere pijl naast de kolomkop.
 
-   ![ task_search_result ](assets/task_search_result.png)
+   ![&#x200B; task_search_result &#x200B;](assets/task_search_result.png)
 
-1. Klik de spoorknoop ![ lc_pr_rail_button ](assets/lc_pr_rail_button.png) op upper-left om de **Mijn ruit van Filters** samen te vouwen en breidt de ruimte beschikbaar voor het **Rapport** paneel uit.
+1. Klik de spoorknoop ![&#x200B; lc_pr_rail_button &#x200B;](assets/lc_pr_rail_button.png) op upper-left om de **Mijn ruit van Filters** samen te vouwen en breidt de ruimte beschikbaar voor het **Rapport** paneel uit.
 1. Gebruik de opties in de hogere juiste hoek van het **Rapport &#x200B;** paneel om verrichtingen op het vraagresultaat uit te voeren.
 
    * **verfrist zich**: Verfrist het rapport met recentste gegevens die in de opslag liggen
@@ -174,11 +174,11 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
 #### Van een Proces/Taak het Resultaat {#from-a-process-task-search-result}
 
-1. Een proces-/taakzoekopdracht uitvoeren. Voor details, zie [ om een vraag van het Onderzoek van het Proces uit te voeren ](#to-execute-a-search-query).
+1. Een proces-/taakzoekopdracht uitvoeren. Voor details, zie [&#x200B; om een vraag van het Onderzoek van het Proces uit te voeren &#x200B;](#to-execute-a-search-query).
 
    De proces-id&#39;s die in het resultaat worden weergegeven, zijn aan hyperlinks gekoppeld.
 
-   ![ process_id_list ](assets/process_id_list.png)
+   ![&#x200B; process_id_list &#x200B;](assets/process_id_list.png)
 
 1. Klik op een procesidentiteitskaart in de lijst om de details van dit proces in het **paneel van de Details van het Proces** te bekijken.
 
@@ -190,7 +190,7 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
    **Resultaat van de Details van het Proces**
 
-   ![ process_details ](assets/process_details.png)
+   ![&#x200B; process_details &#x200B;](assets/process_details.png)
 
    **Linkerpaneel:** toont de volgende details van het geselecteerde proces:
 
@@ -222,7 +222,7 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
    **Resultaat van de Details van de Taak**
 
-   ![ task_details ](assets/task_details.png)
+   ![&#x200B; task_details &#x200B;](assets/task_details.png)
 
    **Linkerpaneel:** toont de volgende details van de geselecteerde taak:
 
@@ -251,7 +251,7 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
 1. Klik **terug naar het Onderzoek van het Proces/van de Taak** om naar het onderzoeksresultaat terug te gaan waarvan de proces/taakdetails neer werden geboord.
 
-   ![ back_to_search ](assets/back_to_search.png)
+   ![&#x200B; back_to_search &#x200B;](assets/back_to_search.png)
 
    Nochtans, als de proces/taakdetails door een specifiek proces/taakidentiteitskaart in te gaan werden gevonden, die terug naar het Onderzoek van het Proces/van de Taak klikken neemt u terug naar **Onderzoek van het Proces/van de Taak**, zonder om het even welk onderzoeksresultaat te tonen.
 
@@ -259,11 +259,11 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
 1. Ga naar het **Proces/Details van de Taak** paneel.
 
-   ![ details_nodes ](assets/details_nodes.png)
+   ![&#x200B; details_nodes &#x200B;](assets/details_nodes.png)
 
 1. Voer in het tekstvak Proces/Taak-id de proces-/taak-id in.
 
-   ![ process_details-1 ](assets/process_details-1.png)
+   ![&#x200B; process_details-1 &#x200B;](assets/process_details-1.png)
 
    De gebieden in het **Proces/de Details van de Taak** vraagresultaat zijn gebieden specifiek voor een proces/een taak van AEM Forms.
 

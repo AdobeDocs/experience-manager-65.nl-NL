@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Herstructurering van de opslagplaats van E-Commerce in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan opberggegevensveranderingen die de Oplossing van AEM E-Commerce beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals die op de ouder [&#x200B; Herstructurering van de Bewaarplaats in AEM 6.5 &#x200B;](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan opberggegevensveranderingen die de Oplossing van AEM E-Commerce beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 ## Met 6,5-upgrade {#with-upgrade}
 

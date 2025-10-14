@@ -116,7 +116,7 @@ ht-degree: 6%
 
 * CIF Venia Reference Site is geëxtraheerd uit de CIF Archetype repo en is nu een standalone GitHub-opslagplaats.
 
-* CIF Archetype is samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [ AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) als uitgangspunt.
+* CIF Archetype is samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [&#x200B; AEM Archetype van het Project &#x200B;](https://github.com/adobe/aem-project-archetype) als uitgangspunt.
 
 * Adresboekbeheer is toegevoegd om gebruikers met een aanmelding in staat te stellen hun adressen te beheren.
 
@@ -172,7 +172,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Ondersteuning voor gefactureerd zoeken toegevoegd aan de pagina Zoekpagina en de productlijst zodat kopers zoekresultaten kunnen filteren op basis van productfacetten.
 
-* Nieuwe OSGi-service toegevoegd om PDP/PLP-URL&#39;s voor SEO-doeleinden aan te passen. Voor meer details, zie de [ documentatie ](https://github.com/adobe/aem-core-cif-components).
+* Nieuwe OSGi-service toegevoegd om PDP/PLP-URL&#39;s voor SEO-doeleinden aan te passen. Voor meer details, zie de [&#x200B; documentatie &#x200B;](https://github.com/adobe/aem-core-cif-components).
 
 * Productbinding wordt automatisch gemaakt wanneer een Cloud Configuration wordt gemaakt.
 
@@ -192,7 +192,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 ### Wat is er nieuw? {#what-is-new-april}
 
-* De montages van de configuratie voor CIF Schakelaar zijn verenigd en vereenvoudigd. Voor meer details controle [ Begonnen het Worden ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL) of [ Nieuwe AEM CIF de Opstelling van het Project ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL)
+* De montages van de configuratie voor CIF Schakelaar zijn verenigd en vereenvoudigd. Voor meer details controle [&#x200B; Begonnen het Worden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL) of [&#x200B; Nieuwe AEM CIF de Opstelling van het Project &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=nl-NL)
 
 ### Verbeterde functies {#what-is-improved-april}
 

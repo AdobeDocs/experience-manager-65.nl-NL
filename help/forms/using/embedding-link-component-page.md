@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM componenten. Als de categorie niet vermeld is, volg de stappen die bij [ worden vermeld toelatend vormen portalcomponenten ](/help/forms/using/enabling-forms-portal-components.md).
+De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM componenten. Als de categorie niet vermeld is, volg de stappen die bij [&#x200B; worden vermeld toelatend vormen portalcomponenten &#x200B;](/help/forms/using/enabling-forms-portal-components.md).
 
 ## Component koppelen {#link-component}
 
@@ -28,9 +28,9 @@ Met de component Koppeling kunnen auteurs van formulierportaalpagina&#39;s vanaf
 
 Voer de volgende stappen uit om een component van de Verbinding aan de pagina toe te voegen:
 
-1. Sleep de **component van de Verbinding** op de pagina. Selecteer de component en selecteer ![ cmp ](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
+1. Sleep de **component van de Verbinding** op de pagina. Selecteer de component en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png). Het dialoogvenster Koppelingscomponent bewerken wordt geopend.
 
-   ![ uitgeven-verbinding-component ](assets/edit-link-component.png)
+   ![&#x200B; uitgeven-verbinding-component &#x200B;](assets/edit-link-component.png)
 
 1. In het **lusje van de Vertoning**, specificeer het volgende:
 

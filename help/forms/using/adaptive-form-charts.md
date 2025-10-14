@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Adaptieve formuliergrafieken {#af-charts}
 
-![ Hero_Image ](assets/charts_hero_image.jpg)
+![&#x200B; Hero_Image &#x200B;](assets/charts_hero_image.jpg)
 
 Een grafiek of grafiek is een visuele weergave van gegevens. Zo kunt u grote hoeveelheden informatie samenvoegen tot een eenvoudig te begrijpen visuele indeling, zodat u complexe gegevens beter kunt visualiseren, interpreteren en analyseren.
 AEM Forms add-on package biedt een out-of-the-box component Chart. U kunt in uw adaptieve vormen en documenten voor visuele vertegenwoordiging van tweedimensionale gegevens in **herhaalbare panelen** en **lijsten** gebruiken. Met de component Chart kunt u de volgende typen grafieken toevoegen en configureren:
@@ -44,13 +44,13 @@ De component Chart is beschikbaar in AEM zijbalk, door gebrek. U kunt de compone
 > 
 > Alvorens de grafiek te vormen, zorg ervoor dat het paneel of de lijstrij waarvoor u de grafiek vormt aan herhaalbaar wordt geplaatst. U kunt minimum- en maximumwaarden opgeven voor herhaalbare deelvensters of tabelrijen op het tabblad Herhalingsinstellingen van het dialoogvenster Component bewerken.
 
-Om de grafiek te vormen, klik de component van de Grafiek en klik ![ Montages ](cmppr1.png) om de Edit dialoog van de Grafiek te openen. Het dialoogvenster bevat de tabbladen Titel en tekst, Configuratie, Geavanceerde opties en Opmaak waarmee u de grafiek kunt configureren.
+Om de grafiek te vormen, klik de component van de Grafiek en klik ![&#x200B; Montages &#x200B;](cmppr1.png) om de Edit dialoog van de Grafiek te openen. Het dialoogvenster bevat de tabbladen Titel en tekst, Configuratie, Geavanceerde opties en Opmaak waarmee u de grafiek kunt configureren.
 
 ### Basis {#basic}
 
 Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 
-![ Eigenschappen van de Grafiek ](assets/chart-properties.png)
+![&#x200B; Eigenschappen van de Grafiek &#x200B;](assets/chart-properties.png)
 
 * **naam van het Element**: Een herkenningsteken voor het grafiekelement in JCR inhoudsstructuur. Het is niet zichtbaar op de grafiek maar helpt wanneer het verwijzen naar het element van andere componenten, manuscripten, en uitdrukkingen SOM.
 * **type van Grafiek**: Specificeert het type van grafiek dat u wilt produceren. De beschikbare opties zijn Schijf, Donut, Bar, Kolom, Lijn, Lijn en Punt, Punt, en Gebied. In het voorbeeld is het diagramtype Column.
@@ -79,11 +79,11 @@ Laten we de informatie die op dit tabblad wordt weergegeven in detail begrijpen,
 
 Hiervoor moet u categorieën op de X-as plaatsen en op de Y-as de totale uitgaven in elke categorie.
 
-![ de details van de Verklaring ](assets/statement-details.png)
+![&#x200B; de details van de Verklaring &#x200B;](assets/statement-details.png)
 
 De creditcardverklaring in dit voorbeeld wordt gebruikt is een adaptief vormdocument en de sectie van verklaringsdetails is een lijst, die als volgt op de auteurswijze kijkt.
 
-![ de details van de Verklaring authoring ](assets/statement-details-authoring.png)
+![&#x200B; de details van de Verklaring authoring &#x200B;](assets/statement-details-authoring.png)
 
 Laten we de volgende vereisten en voorwaarden voor het genereren van het diagram in overweging nemen:
 
@@ -95,11 +95,11 @@ Laten we de volgende vereisten en voorwaarden voor het genereren van het diagram
 * De elementnaam voor de tabelcel in de kolom Bedrag is de hoeveelheid. Bovendien is de tabelcel in de kolom Bedrag een numeriek vak.
 * Met de gespecificeerde configuratie, zal de grafiek van de Kolom in het voorbeeld als volgt verschijnen. Elke kleur vertegenwoordigt een categorie en afzonderlijke regelitems of bedragen voor een categorie worden in het diagram opgeteld.
 
-  ![ Grafiek ](assets/chart.png)
+  ![&#x200B; Grafiek &#x200B;](assets/chart.png)
 
 De legenda en de knopinfo worden als volgt weergegeven.
 
-![ legenda tooltip van de Grafiek ](assets/chart-legend-tooltip.png)
+![&#x200B; legenda tooltip van de Grafiek &#x200B;](assets/chart-legend-tooltip.png)
 
 ### Stijlen {#styling}
 
@@ -107,7 +107,7 @@ In de modus Stijl kunt u de breedte configureren, uitgedrukt als percentage van 
 
 Om op het stileren wijze, op de paginagoolbar over te schakelen, **tikken>>Stijl**.
 
-![ eigenschappen van de Grafiek beschikbaar voor het stileren ](assets/chart-styling.png)
+![&#x200B; eigenschappen van de Grafiek beschikbaar voor het stileren &#x200B;](assets/chart-styling.png)
 
 ## Functies in diagram gebruiken {#use-functions}
 
@@ -132,7 +132,7 @@ De volgende functies zijn standaard beschikbaar met de component Chart:
 
 ### Aangepaste functies {#custom-functions}
 
-Naast het gebruiken van de standaardfuncties in grafieken, kunt u [ douanefuncties ](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript schrijven en hen beschikbaar maken in de lijst van functies in de component van de Grafiek.
+Naast het gebruiken van de standaardfuncties in grafieken, kunt u [&#x200B; douanefuncties &#x200B;](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript schrijven en hen beschikbaar maken in de lijst van functies in de component van de Grafiek.
 
 Een functie neemt een array of waarden en een categorienaam als invoer en retourneert een waarde. Bijvoorbeeld:
 
@@ -157,7 +157,7 @@ Zodra u een douanefunctie hebt geschreven, doe het volgende om het voor gebruik 
    * Klik **sparen allen** om de configuratie te bewaren.
    * De functie is nu beschikbaar voor gebruik in de Grafiek.
 
-![ functie van de Douane ](assets/custom-function.png)
+![&#x200B; functie van de Douane &#x200B;](assets/custom-function.png)
 
 
 ## Diagram automatisch vernieuwen {#auto-refresh-chart}
@@ -169,26 +169,26 @@ Een diagram wordt automatisch vernieuwd wanneer gebruikers een van de volgende h
 
 ## Type diagram gebruiken in adaptieve formulierregels {#chart-in-rules}
 
-De eigenschap chartType geeft het type grafiek op. De mogelijke waarden zijn taart, donut, bar, lijn, lijnpunt, punt, en gebied. Het is een scriptable bezit, wat betekent u het in [ aanpassende vormregels ](/help/forms/using/rule-editor.md) kunt gebruiken om grafiekconfiguraties te manipuleren. Laten we het begrijpen met behulp van een voorbeeld.
+De eigenschap chartType geeft het type grafiek op. De mogelijke waarden zijn taart, donut, bar, lijn, lijnpunt, punt, en gebied. Het is een scriptable bezit, wat betekent u het in [&#x200B; aanpassende vormregels &#x200B;](/help/forms/using/rule-editor.md) kunt gebruiken om grafiekconfiguraties te manipuleren. Laten we het begrijpen met behulp van een voorbeeld.
 
 Bedenk dat u een grafiek van de Kolom vormde. U wilt gebruikers echter ook een optie bieden waarmee u een ander diagramtype in een vervolgkeuzelijst kunt selecteren en het diagram opnieuw kunt tekenen. U kunt dit bereiken gebruikend het chartType bezit in een regel als volgt:
 
 1. Sleep een vervolgkeuzelijstcomponent vanuit AEM zijbalk op het adaptieve formulier.
-1. Selecteer de component en tik ![ Montages ](cmppr1.png).
+1. Selecteer de component en tik ![&#x200B; Montages &#x200B;](cmppr1.png).
 1. Geef een titel op voor de vervolgkeuzelijst. Bijvoorbeeld, selecteer grafiektype.
 1. Voeg ondersteunde diagramtypen toe in de sectie Items om de vervolgkeuzelijst te vullen. Klik **Gedaan**.
-   ![ Selecterend grafiek drop-down ](chart-drop-down.png)
+   ![&#x200B; Selecterend grafiek drop-down &#x200B;](chart-drop-down.png)
 
-1. Selecteer de drop-down component en tik ![ tekst van Alt ](rule_editor_icon.png). In de regelredacteur, schrijf een regel in de visuele regelredacteur zoals hieronder getoond.
-   ![ plaatsende grafiekregels ](assets/chart-rules.png)
+1. Selecteer de drop-down component en tik ![&#x200B; tekst van Alt &#x200B;](rule_editor_icon.png). In de regelredacteur, schrijf een regel in de visuele regelredacteur zoals hieronder getoond.
+   ![&#x200B; plaatsende grafiekregels &#x200B;](assets/chart-rules.png)
 
    In dit voorbeeld, is de elementnaam van de grafiekcomponent **myChart**.
 
    Alternatief, kunt u de volgende regels in de coderedacteur schrijven.
 
-   ![ de regels van de Grafiek ](assets/chart-code-rule.png)
+   ![&#x200B; de regels van de Grafiek &#x200B;](assets/chart-code-rule.png)
 
-   Voor meer informatie over het schrijven van regels, zie [ de redacteur van de Regel ](/help/forms/using/rule-editor.md)
+   Voor meer informatie over het schrijven van regels, zie [&#x200B; de redacteur van de Regel &#x200B;](/help/forms/using/rule-editor.md)
 
 1. Klik op Gereed om de regel op te slaan.
 

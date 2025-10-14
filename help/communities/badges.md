@@ -39,15 +39,15 @@ Navigeer in de ontwerpomgeving naar de Badges-console:
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
-![ badges-homepage ](assets/badges-homepage.png)
+![&#x200B; badges-homepage &#x200B;](assets/badges-homepage.png)
 
 ## Badge maken {#create-badge}
 
 Een badge wordt gemaakt door een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) te uploaden en een naam te geven. De badge-afbeelding wordt opgeslagen in de gegevensopslagruimte op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
-Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [ gebruikerssynchronisatie ](/help/communities/sync.md) te vormen.
+Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [&#x200B; gebruikerssynchronisatie &#x200B;](/help/communities/sync.md) te vormen.
 
-![ creeer-badge ](assets/create-badge.png)
+![&#x200B; creeer-badge &#x200B;](assets/create-badge.png)
 
 * **upload Beeld**
 
@@ -67,6 +67,6 @@ Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakeli
 
 ## Aanvullende informatie {#additional-information}
 
-Voor details bij vestiging het scoren en het intekenen van regels, zie [ het Scoreren en Badges ](/help/communities/implementing-scoring.md).
+Voor details bij vestiging het scoren en het intekenen van regels, zie [&#x200B; het Scoreren en Badges &#x200B;](/help/communities/implementing-scoring.md).
 
 Voor het beheren van badges voor leden, zie {de Console van 0} Leden [&#128279;](/help/communities/members.md).

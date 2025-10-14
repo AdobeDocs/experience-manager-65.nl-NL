@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer het uitgeven van pagina&#39;s, anderen op het [ gebruik van consoles ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing wanneer het uitgeven van pagina&#39;s, anderen op het [&#x200B; gebruik van consoles &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommigen zijn van toepassing 
  </tbody>
 </table>
 
-Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [ consoles ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+Diverse toetsenbordkortere weg is ook beschikbaar voor Desktopgebruikers wanneer het gebruiken van de [&#x200B; consoles &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 ## Sneltoetsen voor ontwikkeling {#keyboard-shortcuts-for-development}
 

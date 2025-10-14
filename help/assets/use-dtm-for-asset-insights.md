@@ -19,31 +19,31 @@ Adobe Dynamic Tag Management is een hulpmiddel waarmee u uw digitale marketingto
 
 >[!CAUTION]
 >
->Adobe DTM wordt afgekeurd ten gunste van [!DNL Adobe Experience Platform] en zal spoedig [ eind van leven ](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. De Adobe adviseert dat u  [!DNL Adobe Experience Platform]  voor activa inzichten [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=nl-NL) gebruikt.
+>Adobe DTM wordt afgekeurd ten gunste van [!DNL Adobe Experience Platform] en zal spoedig [&#x200B; eind van leven &#x200B;](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. De Adobe adviseert dat u  [!DNL Adobe Experience Platform]  voor activa inzichten [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=nl-NL) gebruikt.
 
 Voer deze stappen uit om Assets Insights in te schakelen via DTM.
 
 1. Klik op het logo Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]** .
 1. [Implementatie van Experience Managers configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   Het API teken zou beschikbaar moeten zijn zodra u login aan [ https://dtm.adobe.com ](https://dtm.adobe.com/) en bezoek **[!UICONTROL Account Settings]** in het gebruikersprofiel. Deze stap is niet vereist vanuit het standpunt van Assets Insights, omdat de integratie van Experience Manager Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
+   Het API teken zou beschikbaar moeten zijn zodra u login aan [&#x200B; https://dtm.adobe.com &#x200B;](https://dtm.adobe.com/) en bezoek **[!UICONTROL Account Settings]** in het gebruikersprofiel. Deze stap is niet vereist vanuit het standpunt van Assets Insights, omdat de integratie van Experience Manager Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
 
-1. Logon aan [ https://dtm.adobe.com ](https://dtm.adobe.com/), en selecteer een bedrijf, zoals aangewezen.
+1. Logon aan [&#x200B; https://dtm.adobe.com &#x200B;](https://dtm.adobe.com/), en selecteer een bedrijf, zoals aangewezen.
 1. Een bestaande webeigenschap maken of openen
 
    * Selecteer de tab **[!UICONTROL Web Properties]** en klik op **[!UICONTROL Add Property]** .
 
-   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]** . Zie [ documentatie ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL).
+   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]** . Zie [&#x200B; documentatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=nl-NL).
 
-   ![ creeer uitgeven Webbezit ](assets/Create-edit-web-property.png)
+   ![&#x200B; creeer uitgeven Webbezit &#x200B;](assets/Create-edit-web-property.png)
 
 1. Selecteer op het tabblad **[!UICONTROL Rules]** de optie **[!UICONTROL Page Load Rules]** in het navigatiegebied en klik op **[!UICONTROL Create New Rule]** .
 
-   ![ chlimage_1-58 ](assets/chlimage_1-194.png)
+   ![&#x200B; chlimage_1-58 &#x200B;](assets/chlimage_1-194.png)
 
 1. Vouw **[!UICONTROL JavaScript /Third Party Tags]** uit. Klik vervolgens op **[!UICONTROL Add New Script]** op het tabblad **[!UICONTROL Sequential HTML]** om het dialoogvenster Script te openen.
 
-   ![ chlimage_1-59 ](assets/chlimage_1-195.png)
+   ![&#x200B; chlimage_1-59 &#x200B;](assets/chlimage_1-195.png)
 
 1. Klik op het logo Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** .
 1. Klik op **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze in het scriptdialoogvenster dat u in stap 6 hebt geopend. Sla de wijzigingen op.
@@ -57,17 +57,17 @@ Voer deze stappen uit om Assets Insights in te schakelen via DTM.
 
 1. Toegang `https://dtm.adobe.com`. Klik op **[!UICONTROL Overview]** in de webeigenschap en klik op **[!UICONTROL Add Tool]** of open een bestaand Adobe Analytics-gereedschap. Tijdens het maken van het gereedschap kunt u **[!UICONTROL Configuration Method]** instellen op **[!UICONTROL Automatic]** .
 
-   ![ voeg het hulpmiddel van Adobe Analytics toe ](assets/Add-Adobe-Analytics-Tool.png)
+   ![&#x200B; voeg het hulpmiddel van Adobe Analytics toe &#x200B;](assets/Add-Adobe-Analytics-Tool.png)
 
    Selecteer de gewenste opties voor het rapport Staging/Productie.
 
 1. Vouw **[!UICONTROL Library Management]** uit en controleer of **[!UICONTROL Load Library at]** is ingesteld op **[!UICONTROL Page Top]** .
 
-   ![ chlimage_1-61 ](assets/chlimage_1-197.png)
+   ![&#x200B; chlimage_1-61 &#x200B;](assets/chlimage_1-197.png)
 
 1. Vouw **[!UICONTROL Customize Page Code]** uit en klik op **[!UICONTROL Open Editor]** .
 
-   ![ chlimage_1-62 ](assets/chlimage_1-198.png)
+   ![&#x200B; chlimage_1-62 &#x200B;](assets/chlimage_1-198.png)
 
 1. Plak de volgende code in het venster:
 

@@ -39,20 +39,20 @@ Voor de duidelijkheid bespreken de volgende twee secties hoe te met de documente
 
 U kunt deze taken uitvoeren met de documentbeveiligingsservice:
 
-* Beleid maken. Voor informatie, zie [ Creërend Beleid ](protecting-documents-policies.md#creating-policies).
-* Beleid wijzigen. Voor informatie, zie [ Wijzend Beleid ](protecting-documents-policies.md#modifying-policies).
-* Beleid verwijderen. Voor informatie, zie [ het Schrappen van Beleid ](protecting-documents-policies.md#deleting-policies).
-* Beleid toepassen op PDF-documenten. Voor informatie, zie [ Toepassend Beleid op de Documenten van de PDF ](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* Beleid verwijderen uit PDF-documenten. Voor informatie, zie [ Verwijderend Beleid uit de Documenten van de PDF ](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Met een beleid beveiligde documenten van Inspect. Voor informatie, zie [ Inspecterend Beleid Beschermde Documenten van de PDF ](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* Toegang tot PDF-documenten intrekken. Voor informatie, zie [ het Herroepen Toegang tot Documenten ](protecting-documents-policies.md#revoking-access-to-documents).
-* Toegang tot ingetrokken documenten opnieuw instellen. Voor informatie, zie [ Wederopstellend Toegang tot Geherroepen Documenten ](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
-* Watermerken maken. Voor informatie, zie [ Creërend Watermerken ](protecting-documents-policies.md#creating-watermarks).
-* Zoeken naar gebeurtenissen. Voor informatie, zie [ zoekend naar Gebeurtenissen ](protecting-documents-policies.md#searching-for-events).
+* Beleid maken. Voor informatie, zie [&#x200B; Creërend Beleid &#x200B;](protecting-documents-policies.md#creating-policies).
+* Beleid wijzigen. Voor informatie, zie [&#x200B; Wijzend Beleid &#x200B;](protecting-documents-policies.md#modifying-policies).
+* Beleid verwijderen. Voor informatie, zie [&#x200B; het Schrappen van Beleid &#x200B;](protecting-documents-policies.md#deleting-policies).
+* Beleid toepassen op PDF-documenten. Voor informatie, zie [&#x200B; Toepassend Beleid op de Documenten van de PDF &#x200B;](protecting-documents-policies.md#applying-policies-to-pdf-documents).
+* Beleid verwijderen uit PDF-documenten. Voor informatie, zie [&#x200B; Verwijderend Beleid uit de Documenten van de PDF &#x200B;](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Met een beleid beveiligde documenten van Inspect. Voor informatie, zie [&#x200B; Inspecterend Beleid Beschermde Documenten van de PDF &#x200B;](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
+* Toegang tot PDF-documenten intrekken. Voor informatie, zie [&#x200B; het Herroepen Toegang tot Documenten &#x200B;](protecting-documents-policies.md#revoking-access-to-documents).
+* Toegang tot ingetrokken documenten opnieuw instellen. Voor informatie, zie [&#x200B; Wederopstellend Toegang tot Geherroepen Documenten &#x200B;](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
+* Watermerken maken. Voor informatie, zie [&#x200B; Creërend Watermerken &#x200B;](protecting-documents-policies.md#creating-watermarks).
+* Zoeken naar gebeurtenissen. Voor informatie, zie [&#x200B; zoekend naar Gebeurtenissen &#x200B;](protecting-documents-policies.md#searching-for-events).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Beleid maken {#creating-policies}
 
@@ -133,7 +133,7 @@ Wanneer u een beleid maakt met de webservice-API, verwijst u naar een bestaand X
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -164,7 +164,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar
 * jbossall-client.jar (gebruik een ander JAR-bestand als AEM Forms niet is geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt API van de Veiligheid van het Document**
 
@@ -195,7 +195,7 @@ Wanneer u de optie `NoEncryption` opgeeft, kunt u de optie `PlaintextMetadata` n
 
 >[!NOTE]
 >
->Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in de [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **creeer een beleidsingang**
 
@@ -333,7 +333,7 @@ Als u beleidskenmerken wilt wijzigen met behulp van een webservice (bijvoorbeeld
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -365,7 +365,7 @@ Wanneer u de offline leaseperiode van een beleid wijzigt met behulp van een webs
 
 >[!NOTE]
 >
->Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in de [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **werk het beleid** bij
 
@@ -458,7 +458,7 @@ U kunt een bestaand beleid verwijderen met de Java API voor documentbeveiliging 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -557,7 +557,7 @@ U kunt het gebruik van een document dat met een beleid is beveiligd controleren 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -720,7 +720,7 @@ U kunt een beleid verwijderen uit een document dat met een beleid is beveiligd o
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -859,7 +859,7 @@ De mogelijkheid om de toegang tot een document in te trekken biedt extra beveili
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -1001,7 +1001,7 @@ U kunt de toegang tot een ingetrokken PDF-document opnieuw instellen, zodat alle
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-6}
 
@@ -1129,7 +1129,7 @@ U kunt deze taak niet uitvoeren als uw versie van LiveCycle 8.x of een vroegere 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-7}
 
@@ -1176,11 +1176,11 @@ Inspect a policy-protected PDF document by using the Document Security Service A
 
 1. Inclusief projectbestanden.
 
-   Neem JAR-bestanden voor clients, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Neem JAR-bestanden voor clients, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de plaats van deze dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Maak een `RightsManagementClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
 1. Haal een document op dat met een beleid is beveiligd en dat u wilt inspecteren.
@@ -1268,7 +1268,7 @@ Watermerken helpen de veiligheid van een document te waarborgen door het documen
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1489,7 +1489,7 @@ Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige docu
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-9}
 
@@ -1523,7 +1523,7 @@ Als u een bestaand watermerk wilt wijzigen, wijzigt u de waarde van een of meer 
 
 >[!NOTE]
 >
->Voor informatie over de namen van de watermerkattributen, zie [ Creërend Watermerken ](protecting-documents-policies.md#creating-watermarks).
+>Voor informatie over de namen van de watermerkattributen, zie [&#x200B; Creërend Watermerken &#x200B;](protecting-documents-policies.md#creating-watermarks).
 
 **werk het watermerk** bij
 
@@ -1633,7 +1633,7 @@ U kunt zoeken naar specifieke gebeurtenissen met behulp van de Rights Management
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van het Rights Management, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van het Rights Management, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-10}
 
@@ -1957,7 +1957,7 @@ U kunt het gebruik van een beleid-beschermd document van Word controleren nadat 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-11}
 
@@ -2112,7 +2112,7 @@ U kunt een beleid uit een beleid-beschermd document van Word verwijderen om veil
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-12}
 

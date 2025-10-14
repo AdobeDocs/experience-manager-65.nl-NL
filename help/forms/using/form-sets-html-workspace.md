@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Werken met indelingen in de AEM Forms-werkruimte{#working-with-formsets-in-aem-forms-workspace}
 
-Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Voor meer info over formsets en hoe te om hen te plaatsen, zie [ Formset in AEM Forms ](../../forms/using/formset-in-aem-forms.md).
+Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Voor meer info over formsets en hoe te om hen te plaatsen, zie [&#x200B; Formset in AEM Forms &#x200B;](../../forms/using/formset-in-aem-forms.md).
 
 De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formulieren die betrekking hebben op een service of proces worden gegroepeerd om een bedrijfsproces te automatiseren en aan de eindgebruikers worden gepresenteerd. In dat geval kunnen de gebruikers de gehele set als één geheel invullen en hoeven afzonderlijke formulieren of processen niet te worden opgeslagen, verzonden en bijgehouden.
 
 ## Een formulierset koppelen aan het beginpunt in een AEM Forms-werkruimte-app {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
-1. Maak de workflow voor het bedrijfsproces in Workbench. Voor meer informatie, zie [ hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+1. Maak de workflow voor het bedrijfsproces in Workbench. Voor meer informatie, zie [&#x200B; hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).
 1. Van de proceseigenschappen van het startpunt, uitgezochte **Gebruik een Activa van CRX** in Presentatie &amp; Gegevens.
 
-   ![ 1-3 ](assets/1-3.png)
+   ![&#x200B; 1-3 &#x200B;](assets/1-3.png)
 
-1. Klik ![ doorbladeren ](assets/browse.png) (doorbladeren) naast de de activaweg van CRX. Het dialoogvenster Formulierelement selecteren wordt geopend.
+1. Klik ![&#x200B; doorbladeren &#x200B;](assets/browse.png) (doorbladeren) naast de de activaweg van CRX. Het dialoogvenster Formulierelement selecteren wordt geopend.
 
-   ![ 2-1 ](assets/2-1.png)
+   ![&#x200B; 2-1 &#x200B;](assets/2-1.png)
 
 1. Klik het **Formatteren** lusje, selecteer de relevante formset van de lijst, en klik dan O.K. **&#x200B;**.
 
@@ -52,7 +52,7 @@ De volgende bewerkingen worden ondersteund in de indeling in de AEM Forms-werkru
 * Notities toevoegen
 * Tussen formulieren in een formulierset navigeren met de knoppen Vorige of Volgende
 
-![ 3-1 ](assets/3-1.png)
+![&#x200B; 3-1 &#x200B;](assets/3-1.png)
 
 >[!NOTE]
 >

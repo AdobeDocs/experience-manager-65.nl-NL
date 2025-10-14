@@ -37,4 +37,4 @@ De Fragmenten van de inhoud zijn een eigenschap van Adobe Experience Manager die
 
 ## Gerelateerde bronnen {#related}
 
-Het is ook mogelijk een volledige sjabloon aan te passen voor een specifieke set producten of categorieën. Leer hoe te door [ veelvoudige categorie en productpagina&#39;s ](/help/commerce/cif/configuring/multi-template-usage.md) tot stand te brengen.
+Het is ook mogelijk een volledige sjabloon aan te passen voor een specifieke set producten of categorieën. Leer hoe te door [&#x200B; veelvoudige categorie en productpagina&#39;s &#x200B;](/help/commerce/cif/configuring/multi-template-usage.md) tot stand te brengen.

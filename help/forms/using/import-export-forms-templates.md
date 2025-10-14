@@ -22,7 +22,7 @@ U kunt formulieren en gerelateerde elementen, thema&#39;s, gegevenswoordenboeken
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms zijn de structuur en paden van de crx-repository veranderd. Als u elementen uit een vorige versie importeert naar AEM 6.4 Forms en het formulier afhankelijk is van de oudere structuur, moet u de afhankelijkheden handmatig exporteren. Voor details van veranderingen in de structuur en de wegen van de bewaarplaats, zie [ Herstructurering van de Bewaarplaats in AEM ](/help/sites-deploying/repository-restructuring.md).
+>* In AEM 6.4 Forms zijn de structuur en paden van de crx-repository veranderd. Als u elementen uit een vorige versie importeert naar AEM 6.4 Forms en het formulier afhankelijk is van de oudere structuur, moet u de afhankelijkheden handmatig exporteren. Voor details van veranderingen in de structuur en de wegen van de bewaarplaats, zie [&#x200B; Herstructurering van de Bewaarplaats in AEM &#x200B;](/help/sites-deploying/repository-restructuring.md).
 >
 
 ## Forms- en documentmiddelen downloaden of uploaden {#download-or-upload-forms-amp-documents-assets}
@@ -31,14 +31,14 @@ Met de AEM Forms-gebruikersinterface kunt u elementen van een AEM instantie expo
 
 Exporteren en importeren via de gebruikersinterface van AEM Forms wordt ondersteund voor alle elementen, behalve voor adaptieve formuliersjablonen en beleid voor adaptieve formulierinhoud. Bij het exporteren van een adaptief formulier uit de gebruikersinterface van AEM Forms worden de gerelateerde aangepaste formuliersjabloon en het inhoudsbeleid daarom niet automatisch geëxporteerd als andere gerelateerde elementen.
 
-Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Voor informatie over het creëren van en het installeren van pakketten, zie [ Werkend met pakketten ](/help/sites-administering/package-manager.md).
+Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Voor informatie over het creëren van en het installeren van pakketten, zie [&#x200B; Werkend met pakketten &#x200B;](/help/sites-administering/package-manager.md).
 
 ### Forms- en Documenten downloaden {#download-forms-amp-documents-assets}
 
 Forms en Documenten downloaden:
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/compass.png) pictogram> Forms > Forms &amp; Documenten.
+1. Selecteer Experience Manager ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) pictogram > navigatie ![&#x200B; kompas &#x200B;](assets/compass.png) pictogram> Forms > Forms &amp; Documenten.
 1. Selecteer de vormactiva en selecteer het **pictogram van de Download**.
 1. In de Activa(s) van de Download, kies één van de volgende opties, en selecteer **Download**.
 
@@ -61,7 +61,7 @@ Forms en Documenten uploaden:
 <!--[!VIDEO](https://vimeo.com/)-->
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/compass.png) pictogram> Forms> Forms &amp; Documenten.
+1. Selecteer Experience Manager ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) pictogram > navigatie ![&#x200B; kompas &#x200B;](assets/compass.png) pictogram> Forms> Forms &amp; Documenten.
 1. Selecteer **creëren** > **Dossier uploadt**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
 1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Selecteer **Open**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
@@ -75,7 +75,7 @@ Forms en Documenten uploaden:
 
 ## Een thema downloaden of uploaden {#downloading-or-uploading-a-theme}
 
-Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Voor meer informatie over thema&#39;s, zie [ Thema&#39;s in AEM Forms ](../../forms/using/themes.md).
+Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Voor meer informatie over thema&#39;s, zie [&#x200B; Thema&#39;s in AEM Forms &#x200B;](../../forms/using/themes.md).
 
 ### Een thema downloaden {#downloading-a-theme}
 
@@ -84,7 +84,7 @@ U kunt thema&#39;s in AEM Forms exporteren die u kunt gebruiken in andere projec
 Een thema downloaden:
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/compass.png) pictogram> Forms> Thema&#39;s.
+1. Selecteer Experience Manager ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) pictogram > navigatie ![&#x200B; kompas &#x200B;](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. Selecteer het thema en selecteer **Download**. Het thema wordt gedownload als een archief (.zip-bestand).
 
 ### Een thema uploaden {#uploading-a-theme}
@@ -99,7 +99,7 @@ Een thema uploaden:
 Het geüploade thema is beschikbaar op de themapagina.
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Selecteer Experience Manager ![ adobeexperienceManager ](assets/adobeexperiencemanager.png) pictogram > navigatie ![ kompas ](assets/compass.png) pictogram> Forms> Thema&#39;s.
+1. Selecteer Experience Manager ![&#x200B; adobeexperienceManager &#x200B;](assets/adobeexperiencemanager.png) pictogram > navigatie ![&#x200B; kompas &#x200B;](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. Klik **creëren** > **Dossier uploadt**. In het Dossier uploadt herinnering, doorblader en selecteer een themapakket op uw computer en klik **uploadt**. Het thema wordt geüpload.
 
 ## Importeren en exporteren van activa in Correspondentenbeheer {#import-and-export-assets-in-correspondence-management}
@@ -113,7 +113,7 @@ Als u elementen, zoals gegevenswoordenboeken, letters en documentfragmenten, wil
 1. Selecteer **Download**.
 1. Correspondentiebeheer geeft het dialoogvenster Asset(s) downloaden weer met een lijst met elementen in de exportlijst.
 
-   ![ uitvoer ](assets/export.png)
+   ![&#x200B; uitvoer &#x200B;](assets/export.png)
 
 1. Om de gebiedsdelen te bekijken die worden uitgevoerd, uitgezocht los op. Of ga naar de volgende stap. Zelfs als u geen oplossing selecteert, worden de gebiedsdelen nog uitgevoerd.
 1. Om het .cmp- dossier te downloaden, uitgezochte **O.K.**.
@@ -125,20 +125,20 @@ Als u elementen, zoals gegevenswoordenboeken, letters en documentfragmenten, wil
 
 Gebruik deze optie om alle Correspondence Management-elementen en gerelateerde afhankelijkheden als een pakket te downloaden van een AEM formulierexemplaar.
 
-Als Correspondence Management bijvoorbeeld een brief heeft waarin een afbeelding en tekst worden gebruikt, bevat het gedownloade pakket ook de afbeelding en de tekst die betrekking hebben op de brief. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload. Zodra u het pakket (.cmp) hebt gedownload, kunt u [ het pakket in een verschillende instantie van AEM Forms invoeren ](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Als Correspondence Management bijvoorbeeld een brief heeft waarin een afbeelding en tekst worden gebruikt, bevat het gedownloade pakket ook de afbeelding en de tekst die betrekking hebben op de brief. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload. Zodra u het pakket (.cmp) hebt gedownload, kunt u [&#x200B; het pakket in een verschillende instantie van AEM Forms invoeren &#x200B;](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
 Voer de volgende stappen uit om alle Correspondence Management-elementen en gerelateerde afhankelijkheden als een pakket te downloaden:
 
 1. Meld u aan bij de AEM Forms-server als gebruiker van een formulier.
 1. Selecteer **Adobe Experience Manager** in de Globale bar van de Navigatie.
-1. Selecteer hulpmiddelen ( ![ hulpmiddelen ](assets/tools.png)) en selecteer dan **Forms**.
+1. Selecteer hulpmiddelen ( ![&#x200B; hulpmiddelen &#x200B;](assets/tools.png)) en selecteer dan **Forms**.
 1. Selecteer **het Beheer Assets van de Correspondentie van de Uitvoer**.
 
-   ![ publiceren-cmp-activa-1 ](assets/publish-cmp-assets-1.png)
+   ![&#x200B; publiceren-cmp-activa-1 &#x200B;](assets/publish-cmp-assets-1.png)
 
    ( &quot;De pagina Exporteren naar alle correspondentiebeheerpagina van Assets wordt weergegeven. Deze pagina bevat de informatie over de laatste keer dat het exportproces is gestart en een koppeling om het laatst geëxporteerde pakket te downloaden.
 
-   ![ export-last-looppas-details ](assets/export-last-run-details.png)
+   ![&#x200B; export-last-looppas-details &#x200B;](assets/export-last-run-details.png)
 
 1. Selecteer **Uitvoer** en, in het bevestig bericht, uitgezochte **O.K.**.
 
@@ -150,7 +150,7 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen en gere
 
 1. Selecteer de **Uitgevoerde Verbinding van het Pakket van de Download** om het pakketdossier te downloaden.
 
-   Om de activa in het pakket aan een andere instantie van het Beheer van de Correspondentie toe te voegen, [ voer het pakket in een instantie van AEM Forms ](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p) in.
+   Om de activa in het pakket aan een andere instantie van het Beheer van de Correspondentie toe te voegen, [&#x200B; voer het pakket in een instantie van AEM Forms &#x200B;](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p) in.
 
 ### Documentfragmenten, letters en/of gegevenswoordenboeken importeren in Correspondentenbeheer {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
@@ -158,7 +158,7 @@ U kunt elementen importeren die naar een .cmp-bestand worden geëxporteerd. Een 
 
 >[!NOTE]
 >
->Meld u aan met een beheerdersaccount wanneer u oude Correspondence Management-middelen importeert voor migratie. Voor meer informatie over het Migreren van oude activa van het Beheer van de Correspondentie, zie [ de activa van het Beheer van de Correspondentie aan AEM 6.1 vormen ](/help/forms/using/migration-utility.md) migreren.
+>Meld u aan met een beheerdersaccount wanneer u oude Correspondence Management-middelen importeert voor migratie. Voor meer informatie over het Migreren van oude activa van het Beheer van de Correspondentie, zie [&#x200B; de activa van het Beheer van de Correspondentie aan AEM 6.1 vormen &#x200B;](/help/forms/using/migration-utility.md) migreren.
 
 1. Voor het gegevenswoordenboek, de brieven, of de pagina van documentfragmenten, uitgezochte **leidt tot > het Dossier uploadt** en selecteert het .cmp- dossier.
 1. Het Correspondentiebeheer geeft het dialoogvenster Assets importeren weer met de lijst met geïmporteerde elementen. Selecteer **Invoer**.
@@ -212,11 +212,11 @@ Voer de volgende stappen uit om een map te maken:
 
 1. Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
 
-   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![ aem6forms_error_alert ](assets/aem6forms_error_alert.png) pictogram te bewegen dat naast het naamgebied verschijnt.
+   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![&#x200B; aem6forms_error_alert &#x200B;](assets/aem6forms_error_alert.png) pictogram te bewegen dat naast het naamgebied verschijnt.
 
    U kunt de nieuwe map selecteren en naar de map gaan en elementen of mappen in de map maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
 
-   ![ editdeletedownloadafolder ](assets/editdeletedownloadafolder.png)
+   ![&#x200B; editdeletedownloadafolder &#x200B;](assets/editdeletedownloadafolder.png)
 
 ### Kopieën maken van een of meer elementen of letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -225,7 +225,7 @@ Met bestaande elementen en letters kunt u snel elementen en letters maken met ve
 Voer de volgende stappen uit om kopieën van elementen en letters te maken:
 
 1. Selecteer een of meer elementen/letters op de betreffende pagina Assets of Letters. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [ Omslagen en het organiseren van activa ](#folders-and-organizing-assets).
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [&#x200B; Omslagen en het organiseren van activa &#x200B;](#folders-and-organizing-assets).
 1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Het systeem genereert automatisch namen en titels voor de nieuwe kopieën van elementen/letters, maar u kunt de titels en namen van de elementen/letters bewerken.
 
    Als u de elementen/letters op dezelfde plaats kopieert en plakt, wordt het achtervoegsel &quot;-CopyXX&quot; toegevoegd aan de bestaande naam van het element/de letter. Als er geen titel voor het gekopieerde element/de gekopieerde letter bestond, blijft het automatisch gegenereerde titelveld leeg.
@@ -237,13 +237,13 @@ Voer de volgende stappen uit om kopieën van elementen en letters te maken:
 
 Met de gebruikersinterface van AEM Forms kunt u zoeken in uw inhoud. Gebruikend de hoogste bar, kunt u Onderzoek **[A]** selecteren om uw inhoud naar middelen zoals activa en documenten te zoeken.
 
-Wanneer u naar elementen zoekt, geeft AEM Forms het zijpaneel weer. U kunt ook selecteren ![ activa-browser-inhoud-slechts ](assets/assets-browser-content-only.png) > filter **[B]** om het zijpaneel aan te halen. Met de verschillende filters in het zijpaneel kunt u de zoekopdracht beperken. In het zijpaneel kunt u ook uw zoekopdrachten opslaan.
+Wanneer u naar elementen zoekt, geeft AEM Forms het zijpaneel weer. U kunt ook selecteren ![&#x200B; activa-browser-inhoud-slechts &#x200B;](assets/assets-browser-content-only.png) > filter **[B]** om het zijpaneel aan te halen. Met de verschillende filters in het zijpaneel kunt u de zoekopdracht beperken. In het zijpaneel kunt u ook uw zoekopdrachten opslaan.
 
-![ search_topbar ](assets/search_topbar.png)
+![&#x200B; search_topbar &#x200B;](assets/search_topbar.png)
 
 **A.** Onderzoek **B.** Filter
 
-![ Kant paneel - Filters ](assets/search_sidepanel.png)
+![&#x200B; Kant paneel - Filters &#x200B;](assets/search_sidepanel.png)
 
 Zijpaneel - Filters
 
@@ -255,4 +255,4 @@ In het zijpaneel kunt u de volgende opties gebruiken om de zoekresultaten te bep
 
 In het zijpaneel kunt u ook uw zoekinstellingen opslaan met namen van uw keuze.
 
-Voor meer informatie en instructies bij het gebruiken van onderzoek, filters, bewaard onderzoek, en zijpaneel, zie [ Onderzoek ](/help/sites-authoring/search.md).
+Voor meer informatie en instructies bij het gebruiken van onderzoek, filters, bewaard onderzoek, en zijpaneel, zie [&#x200B; Onderzoek &#x200B;](/help/sites-authoring/search.md).

@@ -26,20 +26,20 @@ Standaard worden in het scherm Home alle formulieren weergegeven, inclusief star
 
 Het volgende cijfer is geannoteerd met vraag-outs aan de essentiële componenten op het standaardscherm van het Huis.
 
-![ Forms app homescherm ](assets/home-screen-1.png)
+![&#x200B; Forms app homescherm &#x200B;](assets/home-screen-1.png)
 
 <!--Click to enlarge
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **knoop van het Menu**: Selecteer de **knoop van het Menu** om aan Taken, Forms, Outbox, en Montages te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle bewaarde vormen en concepten in Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing [ wordt gesynchroniseerd met de server ](../../forms/using/sync-app.md) . Voor informatie over Montages, zie [ de Algemene Montages van de Update ](../../forms/using/update-general-settings.md).
+1. **knoop van het Menu**: Selecteer de **knoop van het Menu** om aan Taken, Forms, Outbox, en Montages te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle bewaarde vormen en concepten in Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing [&#x200B; wordt gesynchroniseerd met de server &#x200B;](../../forms/using/sync-app.md) . Voor informatie over Montages, zie [&#x200B; de Algemene Montages van de Update &#x200B;](../../forms/using/update-general-settings.md).
 1. **Taak of Vorm**: Selecteer de vermelde taak of de vorm u wilt werken met.
 1. **Horizontale Ellipse**: Wijst erop dat de acties voor de vorm beschikbaar zijn. Tikken op de ellips geeft de handelingen en beschrijving weer die de auteur heeft opgegeven. De **optie van het Ontwerp van de Schrapping** en **Volledige** is zichtbaar wanneer u de ellips selecteert.
 1. **verfrist pictogram**: Selecteer verfrissen pictogram zodat kunt u uw app met de Server van AEM Forms synchroniseren.
 
 ### Het startscherm aanpassen {#customizing-the-home-screen}
 
-![ Algemene Montages ](assets/gen-settings.png)
+![&#x200B; Algemene Montages &#x200B;](assets/gen-settings.png)
 
 U kunt het standaardscherm van het Huis van app of van de **[Algemene Montages](../../forms/using/update-general-settings.md)** van app veranderen, of van het **Voorkeur** lusje op HTML Workspace.
 

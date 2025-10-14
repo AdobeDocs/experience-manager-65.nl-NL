@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Gebruikend een model van vormgegevens**
-  [ de integratie van Gegevens ](../../forms/using/data-integration.md) laat u entiteiten en de diensten van verschillende gegevensbronnen in aan een model integreren van vormgegevens dat u kunt gebruiken om adaptieve vormen tot stand te brengen. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+  [&#x200B; de integratie van Gegevens &#x200B;](../../forms/using/data-integration.md) laat u entiteiten en de diensten van verschillende gegevensbronnen in aan een model integreren van vormgegevens dat u kunt gebruiken om adaptieve vormen tot stand te brengen. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
 * **Gebruikend een Malplaatje van de Vorm XDP**
 Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
@@ -40,7 +40,7 @@ De schema&#39;s van XML en JSON vertegenwoordigen de structuur waarin de gegeven
 * **Gebruikend niets of zonder een vormmodel**
 Voor adaptieve formulieren die met deze optie worden gemaakt, wordt geen formuliermodel gebruikt. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
-Voor meer informatie over het creëren van een adaptieve vorm, zie [ Creërend een adaptieve vorm ](../../forms/using/creating-adaptive-form.md).
+Voor meer informatie over het creëren van een adaptieve vorm, zie [&#x200B; Creërend een adaptieve vorm &#x200B;](../../forms/using/creating-adaptive-form.md).
 
 ## UI voor het schrijven van adaptieve formulieren {#adaptive-form-authoring-ui}
 
@@ -57,7 +57,7 @@ Wanneer u een bestaand adaptief formulier maakt of bewerkt, gebruikt u de volgen
 * [Component, werkbalk](#component-toolbar)
 * [Aangepaste formulierpagina](#af-page)
 
-![ Aanpassings vorm authoring UI ](assets/formeditor.png)
+![&#x200B; Aanpassings vorm authoring UI &#x200B;](assets/formeditor.png)
 
 **A.** Sidebar **B.** de toolbar van de Pagina **C.** Aangepaste vormpagina
 
@@ -70,7 +70,7 @@ Met de zijbalk kunt u
 * Zoek, bekijk en gebruik middelen in uw AEM DAM-opslagplaats (Digital Asset Management).
 * Voeg componenten toe aan uw formulier.
 
-![ Sidebar ](assets/sidebar-comps.png)
+![&#x200B; Sidebar &#x200B;](assets/sidebar-comps.png)
 
 **A.** browser van de Inhoud **B.** browser van Eigenschappen **C.** browser van Assets **D.** Browser van Componenten
 
@@ -94,7 +94,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen worden gewijzigd op basis van een component. Eigenschappen van de adaptieve formuliercontainer weergeven:
 
-  Selecteer een component, dan uitgezocht ![ gebied-niveau ](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![ cmp ](assets/cmppr.png).
+  Selecteer een component, dan uitgezocht ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
 
 * **browser van Assets**
 
@@ -279,14 +279,14 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
 U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formuliercomponenten:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Om de eigenschappen van een component te vormen, selecteer de component en selecteer ![ cmp ](assets/cmppr.png) om de componenteneigenschappen in browser van Eigenschappen te openen.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![ cmp ](assets/cmppr.png) selecteert, kunt u de naam van de component veranderen door de **[!UICONTROL Element Name]** gebiedswaarde in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Om de eigenschappen van een component te vormen, selecteer de component en selecteer ![&#x200B; cmp &#x200B;](assets/cmppr.png) om de componenteneigenschappen in browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![&#x200B; cmp &#x200B;](assets/cmppr.png) selecteert, kunt u de naam van de component veranderen door de **[!UICONTROL Element Name]** gebiedswaarde in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 
 * U kunt de eigenschap Titel van een adaptieve formuliercomponent inline wijzigen in de formuliereditor zonder de browser Eigenschappen te openen, zolang de titel maar zichtbaar is op het formulier. Daartoe:
 
    1. Selecteer deze optie om een component te selecteren die een eigenschap **[!UICONTROL Title]** heeft en waarvan de eigenschap **[!UICONTROL Hide title]** is uitgeschakeld.
 
-   1. Selecteer ![ name_6_3_edit ](assets/aem_6_3_edit.png) om de titel editable te maken.
+   1. Selecteer ![&#x200B; name_6_3_edit &#x200B;](assets/aem_6_3_edit.png) om de titel editable te maken.
 
    1. Wijzig de titel en selecteer de Return-toets of selecteer een willekeurige locatie buiten de component om de wijzigingen op te slaan. Selecteer de sleutel van Esc om de veranderingen te verwerpen.
 
@@ -307,7 +307,7 @@ U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formulie
 
 * Om gebruikers toe te laten om een PDF vast te maken gebruikend browser Safari, zorg ervoor dat **application/pdf** aan het Ondersteunde bezit van de Types van Dossier van de component van de gehechtheid van het Dossier wordt toegevoegd. De adaptieve vormen die met vorige versie van AEM Forms worden gecreeerd kunnen **.pdf** in plaats van **application/pdf** in het Ondersteunde bezit van de Types van Dossier bevatten.
 
-Voor meer beste praktijken rond adaptieve vormen, zie [ Beste praktijken voor het werken met adaptieve vormen ](/help/forms/using/adaptive-forms-best-practices.md).
+Voor meer beste praktijken rond adaptieve vormen, zie [&#x200B; Beste praktijken voor het werken met adaptieve vormen &#x200B;](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
@@ -317,11 +317,11 @@ Voor meer beste praktijken rond adaptieve vormen, zie [ Beste praktijken voor he
 
 De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van het formulier kunt bekijken, de eigenschappen van het formulier kunt wijzigen en de indeling van het formulier kunt bewerken. U kunt een voorbeeld van het formulier bekijken wanneer u het maakt en de wijzigingen daarop aanbrengen. In de paginabooltoolbar, ziet u:
 
-* **Knevel Zijpaneel** ![ knevel-zij-paneel ](assets/toggle-side-panel.png): Laat u Zijbalk tonen of verbergen.
+* **Knevel Zijpaneel** ![&#x200B; knevel-zij-paneel &#x200B;](assets/toggle-side-panel.png): Laat u Zijbalk tonen of verbergen.
 
-* **de informatie van de Pagina** ![ thema-opties ](assets/theme-options.png): Laat u paginaeigenschappen bekijken, publiceren/unpublish een vorm, een vormwerkschema beginnen, en de vorm in klassieke UI openen.
+* **de informatie van de Pagina** ![&#x200B; thema-opties &#x200B;](assets/theme-options.png): Laat u paginaeigenschappen bekijken, publiceren/unpublish een vorm, een vormwerkschema beginnen, en de vorm in klassieke UI openen.
 
-* **Emulator** ![ heerser ](assets/ruler.png): Laat u het blik van uw vorm voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
+* **Emulator** ![&#x200B; heerser &#x200B;](assets/ruler.png): Laat u het blik van uw vorm voor verschillende vertoningsgrootte zoals tabletten en telefoons emuleren.
 
 * **geeft** uit: Laat u andere wijzen zoals: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]**, en **[!UICONTROL Design]** selecteren.
 
@@ -339,7 +339,7 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 ### Component, werkbalk {#component-toolbar}
 
-![ de toolbar van de Component in de aanraking UI ](assets/component-toolbar.png)
+![&#x200B; de toolbar van de Component in de aanraking UI &#x200B;](assets/component-toolbar.png)
 
 Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt bewerken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
@@ -355,7 +355,7 @@ E. **Tussenvoegsel**: Laat u een component boven de geselecteerde component opne
 
 F. **Deeg**: Laat u de component kleven u knipt of gebruikend de hierboven beschreven opties kopieerde.
 
-G. **geeft regels** uit: Laat u de regelredacteur openen. Voor meer informatie, zie [ Redacteur van de Regel ](../../forms/using/rule-editor.md).
+G. **geeft regels** uit: Laat u de regelredacteur openen. Voor meer informatie, zie [&#x200B; Redacteur van de Regel &#x200B;](../../forms/using/rule-editor.md).
 
 H. **Groep**: Laat u veelvoudige componenten selecteren als u, meer dan één component samen knippen kopiëren of wilt kleven.
 
@@ -380,7 +380,7 @@ J. **anderen**: Verstrekt meer opties om met de geselecteerde component te werke
 
 De aangepaste formulierpagina is het daadwerkelijke formulier. Dit is net als elke andere WCM-pagina die is gemodelleerd als de WCM `cq:Page` -component. In de volgende afbeelding ziet u de inhoudsstructuur van een adaptief formulier.
 
-![ de structuur van de inhoud van een adaptieve vormWCM pagina ](assets/afstructure.png)
+![&#x200B; de structuur van de inhoud van een adaptieve vormWCM pagina &#x200B;](assets/afstructure.png)
 
 De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 

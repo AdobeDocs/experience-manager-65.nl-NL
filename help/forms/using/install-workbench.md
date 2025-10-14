@@ -68,7 +68,7 @@ In de volgende afbeelding ziet u de Workbench-installatie, inclusief:
 >
 >Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg de documentatie bij de installatie van AEM Forms on JEE voor meer informatie.
 
-![ gebrek-geef-vorm ](assets/installing-workbench.png)
+![&#x200B; gebrek-geef-vorm &#x200B;](assets/installing-workbench.png)
 
 ## Systeemvereisten {#system-prerequisites}
 
@@ -100,7 +100,7 @@ Schijfruimte voor installatie:
 
 ### Ondersteunde platforms {#supported-platforms}
 
-Zie de volledige lijst van gesteunde platforms voor Workbench bij [ AEM Forms Ondersteunde Platforms ](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst van gesteunde platforms voor Workbench bij [&#x200B; AEM Forms Ondersteunde Platforms &#x200B;](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Designer-installatieoverwegingen {#designer-installation-considerations}
 

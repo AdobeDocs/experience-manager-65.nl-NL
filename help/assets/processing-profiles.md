@@ -54,7 +54,7 @@ U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking
 
 U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Het 1&rbrace; werkschema van Assets van het opnieuw verwerken &lbrace;op een omslag, worden de activa gegroepeerd in partijen, dan verzonden naar de server van Dynamic Media voor verwerking._ Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt op Experience Manager. Als de partij groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
 
-Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
+Zie [&#x200B; aanpassen de partijgrootte van het herproceswerkschema &#x200B;](#adjusting-load).
 
 >[!NOTE]
 >
@@ -79,13 +79,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]** .
 1. Selecteer in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, het karatpictogram ( **^** ).
 
-   ![ opnieuw verwerken activa werkschema 1 ](/help/assets/assets/reprocess-assets1.png)
+   ![&#x200B; opnieuw verwerken activa werkschema 1 &#x200B;](/help/assets/assets/reprocess-assets1.png)
 
 1. Selecteer **[!UICONTROL Start Workflow]** .
 1. Kies **[!UICONTROL Dynamic Media Reprocess]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]** .
 1. (Facultatief) op **ga titel van werkschemagebied** in, ga een naam voor het werkschema in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![ opnieuw verwerken activa 2 ](/help/assets/assets/reprocess-assets2.png)
+   ![&#x200B; opnieuw verwerken activa 2 &#x200B;](/help/assets/assets/reprocess-assets2.png)
 
 1. Selecteer **[!UICONTROL Start]** en selecteer vervolgens **[!UICONTROL Confirm]** .
 
@@ -100,13 +100,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 1. Selecteer in Experience Manager **[!UICONTROL Adobe Experience Manager]** om toegang te krijgen tot de algemene navigatieconsole en selecteer vervolgens het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** .
 1. Selecteer **[!UICONTROL Dynamic Media Reprocess]** op de pagina Workflowmodellen in Kaartweergave of Lijstweergave.
 
-   ![ pagina van de Modellen van het Werkschema van het Werkschema met Dynamic Media die werkschema in de Mening van de Kaart wordt geselecteerd ](/help/assets/assets-dm/reprocess-assets7.png)
+   ![&#x200B; pagina van de Modellen van het Werkschema van het Werkschema met Dynamic Media die werkschema in de Mening van de Kaart wordt geselecteerd &#x200B;](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Selecteer **[!UICONTROL Edit]** op de werkbalk. Een nieuw browsertabblad opent de pagina Dynamic Media Reprocess workflowmodel.
 1. Selecteer in de rechterbovenhoek van de Dynamic Media Reprocess workflowpagina **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
 1. Selecteer in de workflow de component Scene7 Batch Upload (-batch uploaden) om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** op de werkbalk.
 
-   ![ de Partij van Scene7 uploadt component ](/help/assets/assets-dm/reprocess-assets8.png)
+   ![&#x200B; de Partij van Scene7 uploadt component &#x200B;](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** het volgende in:
    * Voer in de tekstvelden **[!UICONTROL Title]** en **[!UICONTROL Description]** desgewenst een nieuwe titel en beschrijving in voor de taak.
@@ -116,13 +116,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
    * Voer in de **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
    * Selecteer **[!UICONTROL Advance on timeout]** als u wilt doorgaan wanneer de time-out is bereikt. Annuleer de selectie als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
-   ![ de dialoogdoos van Eigenschappen ](/help/assets/assets-dm/reprocess-assets3.png)
+   ![&#x200B; de dialoogdoos van Eigenschappen &#x200B;](/help/assets/assets-dm/reprocess-assets3.png)
 
 1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** .
 
 1. Selecteer **[!UICONTROL Sync]** in de rechterbovenhoek van de pagina Dynamic Media Reprocess workflowmodel. Wanneer u **[!UICONTROL Synced]** ziet, wordt het runtimemodel van de workflow gesynchroniseerd en kunt u elementen in een map opnieuw verwerken.
 
-   ![ synchroniseer het werkschemamodel ](/help/assets/assets-dm/reprocess-assets1.png)
+   ![&#x200B; synchroniseer het werkschemamodel &#x200B;](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Sluit het browsertabblad waarin het workflowmodel voor opnieuw verwerken van Dynamic Media wordt weergegeven.
 

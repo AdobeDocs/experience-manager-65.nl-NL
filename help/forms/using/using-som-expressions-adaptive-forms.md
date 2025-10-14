@@ -24,26 +24,26 @@ U kunt een scriptobjectmodel (SOM) gebruiken om te verwijzen naar waarden, eigen
 
 In de volgende afbeelding ziet u een knooppuntstructuur waarnaar een adaptief formulier wordt geconverteerd wanneer u componenten aan een formulier toevoegt. U kunt bijvoorbeeld een deelvenster toevoegen aan het hoofddeelvenster en een keuzerondje in het deelvenster dat tijdens de runtime wordt getransformeerd naar DOM. De SOM-expressie voor het veld keuzerondje in adaptieve vorm wordt opgegeven als `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]` .
 
-![ boom DOM ](assets/hierarchy.png)
+![&#x200B; boom DOM &#x200B;](assets/hierarchy.png)
 
 DOM-structuur
 
 Een SOM-expressie voor een element in een adaptieve vorm wordt vooraf ingesteld door `guide[0].guide1[0]` . De positie van een component in de hiërarchie van de knoopstructuur wordt gebruikt om zijn uitdrukking SOM af te leiden.
 
-![ BLOEM met twee radioknopen ](assets/hierarchy_radio_button.png)
+![&#x200B; BLOEM met twee radioknopen &#x200B;](assets/hierarchy_radio_button.png)
 
 DOM-structuur met twee keuzerondjes
 
 De SOM-expressie verandert wanneer u de positie van de keuzerondjes in het adaptieve formulier wijzigt. In de ontwerpmodus kunt u de SOM-expressie van een veld of element in AEM Forms weergeven met de optie SOM-expressie weergeven. De optie wordt weergegeven in het deelvenster en wanneer u met de rechtermuisknop op het veld of element klikt.
 
-![ het Extraheren van de Uitdrukkingen SOM in een Aangepaste vorm ](assets/som-expressions.png)
+![&#x200B; het Extraheren van de Uitdrukkingen SOM in een Aangepaste vorm &#x200B;](assets/som-expressions.png)
 
 SOM-expressies extraheren in een adaptieve vorm
 
 In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenster. Met deze functie kunnen auteurs van adaptieve formulieren scripts schrijven.
 
-![ het Extraheren van uitdrukkingen SOM gebruikend paneeltoolbar ](assets/som-expression.png)
+![&#x200B; het Extraheren van uitdrukkingen SOM gebruikend paneeltoolbar &#x200B;](assets/som-expression.png)
 
 SOM-expressies extraheren met de werkbalk van het deelvenster
 
-Sommige APIs die in [ worden vermeld GuideBridge ](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebruikt de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus` API in `guideBridge` .
+Sommige APIs die in [&#x200B; worden vermeld GuideBridge &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebruikt de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus` API in `guideBridge` .

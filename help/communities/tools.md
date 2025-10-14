@@ -23,16 +23,16 @@ Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
 * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** .
 
-  ![ gemeenschappen ](assets/communities-home.png)
+  ![&#x200B; gemeenschappen &#x200B;](assets/communities-home.png)
 
-* [ Malplaatjes van de Plaats ](sites.md) - Console voor de verwezenlijking en het beheer van het plaatssjabloon.
+* [&#x200B; Malplaatjes van de Plaats &#x200B;](sites.md) - Console voor de verwezenlijking en het beheer van het plaatssjabloon.
 
-* [ Malplaatjes van de Groep ](tools-groups.md) - Console voor de verwezenlijking en het beheer van het groepsmalplaatje.
+* [&#x200B; Malplaatjes van de Groep &#x200B;](tools-groups.md) - Console voor de verwezenlijking en het beheer van het groepsmalplaatje.
 
-* [ Communautaire Functies ](functions.md) - Console voor de verwezenlijking van de communautaire functie en beheer.
+* [&#x200B; Communautaire Functies &#x200B;](functions.md) - Console voor de verwezenlijking van de communautaire functie en beheer.
 
-* [ Configuratie van de Opslag ](srp-config.md) - Console voor configuratie en selectie van [ standaardSRP ](working-with-srp.md).
+* [&#x200B; Configuratie van de Opslag &#x200B;](srp-config.md) - Console voor configuratie en selectie van [&#x200B; standaardSRP &#x200B;](working-with-srp.md).
 
-* [ Gids van de Component ](components-guide.md) - opent een interactieve plaats die voor het experimenteren met toestaat hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
+* [&#x200B; Gids van de Component &#x200B;](components-guide.md) - opent een interactieve plaats die voor het experimenteren met toestaat hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
 
-* [ Badges ](badges.md) - Console van waar de douanebadges voor gebruik in [ het scoren en het badging regels ](implementing-scoring.md) kunnen worden toegevoegd
+* [&#x200B; Badges &#x200B;](badges.md) - Console van waar de douanebadges voor gebruik in [&#x200B; het scoren en het badging regels &#x200B;](implementing-scoring.md) kunnen worden toegevoegd

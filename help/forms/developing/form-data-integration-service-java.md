@@ -28,11 +28,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 >[!NOTE]
 >
->De snelle Begin in Programmering met AEM vormen is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin in Programmering met AEM vormen is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP modus): formuliergegevens importeren met de Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-formulier. Het gegeven is in een dossier van XML genoemd *Loan_data.xml* en de vorm van PDF wordt bewaard als PDF dossier genoemd *ResultLoanForm.pdf*. (Zie [ het Invoeren van de Gegevens van de Vorm ](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-formulier. Het gegeven is in een dossier van XML genoemd *Loan_data.xml* en de vorm van PDF wordt bewaard als PDF dossier genoemd *ResultLoanForm.pdf*. (Zie [&#x200B; het Invoeren van de Gegevens van de Vorm &#x200B;](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -134,7 +134,7 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
 
 ## Snel starten (SOAP modus): formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De vormgegevens worden bewaard als dossier van XML genoemd *Loan_data.xml*. (Zie [ het Uitvoeren van de Gegevens van de Vorm ](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De vormgegevens worden bewaard als dossier van XML genoemd *Loan_data.xml*. (Zie [&#x200B; het Uitvoeren van de Gegevens van de Vorm &#x200B;](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

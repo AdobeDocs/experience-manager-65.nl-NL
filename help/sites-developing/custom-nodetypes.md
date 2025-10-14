@@ -20,8 +20,8 @@ ht-degree: 0%
 
 Omdat Adobe Experience Manager (AEM) is gebaseerd op Sling en een JCR-opslagplaats gebruikt, zijn de knooppunttypen die door beide worden aangeboden, beschikbaar voor gebruik:
 
-* [ de Types van Knoop JCR ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [ Sling de Types van Knoop ](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [&#x200B; de Types van Knoop JCR &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [&#x200B; Sling de Types van Knoop &#x200B;](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Naast deze knooptypes, verstrekt AEM een waaier van types van douaneknoop.
 
@@ -491,7 +491,7 @@ Opiniepeilingconfiguratie.
 * `@prop source (String) mandatory` - Data source URI. Vereist en mag niet leeg zijn.
 * `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Optioneel en standaard ingesteld op het knooppunt cq:PollConfig.
 * `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gepoll. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
-* [ Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager ](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [&#x200B; Creërend de Diensten van de Importeur van Gegevens van de Douane voor Adobe Experience Manager &#x200B;](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definitie**
 

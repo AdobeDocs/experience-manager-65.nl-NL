@@ -23,7 +23,7 @@ ht-degree: 0%
 >`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten worden kwaliteitsborgd om de Adobe van steunniveaus aan te passen.
 >
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [ Gesteunde sectie van Platforms ](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [&#x200B; Gesteunde sectie van Platforms &#x200B;](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) om over de specifieke steunniveaus te lezen die voor de individuele toepassingsservers worden verstrekt.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -97,7 +97,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 ### WebSphere® 8.5 {#websphere}
 
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
+Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 **Voorbereiding van de Server**
 
@@ -126,7 +126,7 @@ Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) 
 
 #### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
+Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 **bereidt server JBoss®** voor
 
@@ -150,7 +150,7 @@ Als u de implementatiescanner gebruikt om de AEM webtoepassing te installeren, i
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
+Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
@@ -158,7 +158,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 * In `${myDomain}/config/config.xml` voeg aan de veiligheid-configuratie sectie toe:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [ https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd ](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [&#x200B; https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd &#x200B;](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
 
 * VM-geheugeninstellingen verhogen:
 
@@ -185,7 +185,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Alvorens een plaatsing leest de [ Algemene Beschrijving ](#general-description) hierboven.
+Alvorens een plaatsing leest de [&#x200B; Algemene Beschrijving &#x200B;](#general-description) hierboven.
 
 * **bereidt de Server van Tomcat voor**
 

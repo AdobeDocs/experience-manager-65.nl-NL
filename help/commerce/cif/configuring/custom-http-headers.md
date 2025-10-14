@@ -37,7 +37,7 @@ De componenten die de bovenstaande cloudserviceconfiguratie gebruiken, verzenden
 
 ## Beperkingen {#restrictions}
 
-Terwijl de dienst voor om het even welke kopbalnamen om toestaat worden bepaald, met inbegrip van de standaarddegenen, zijn zij niet beschikbaar voor het vormen. Met andere woorden, u kunt de standaard HTTP-headers niet overschrijven met deze functie. Een lijst van beperkte kopbalnamen kan onder [ worden gevonden mdn- Webdocumenten - de kopballen van HTTP ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Daarnaast zijn er nog twee headers die niet kunnen worden gebruikt:
+Terwijl de dienst voor om het even welke kopbalnamen om toestaat worden bepaald, met inbegrip van de standaarddegenen, zijn zij niet beschikbaar voor het vormen. Met andere woorden, u kunt de standaard HTTP-headers niet overschrijven met deze functie. Een lijst van beperkte kopbalnamen kan onder [&#x200B; worden gevonden mdn- Webdocumenten - de kopballen van HTTP &#x200B;](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Daarnaast zijn er nog twee headers die niet kunnen worden gebruikt:
 
 * &quot;Winkel&quot; - wordt door CIF gebruikt om de Adobe Commerce-winkel te identificeren
 * &quot;Voorvertoning-versie&quot; - wordt gebruikt door CIF om gefaseerde producten op te halen

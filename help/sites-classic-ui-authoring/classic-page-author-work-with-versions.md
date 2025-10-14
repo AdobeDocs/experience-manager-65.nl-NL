@@ -32,7 +32,7 @@ Een versie van een pagina maken:
 1. Open in uw browser de pagina waarvoor u een versie wilt maken.
 1. In de Sidekick, selecteer het **Versioning** lusje, toen **creeer Versie** subtab.
 
-   ![ screen_shot_2012-02-14at40259pm ](assets/screen_shot_2012-02-14at40259pm.png)
+   ![&#x200B; screen_shot_2012-02-14at40259pm &#x200B;](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Ga a **Commentaar** (facultatief) in.
 1. Om een etiket aan de (facultatieve) versie te plaatsen, klik **Meer >>** knoop en plaats het **Etiket** om de versie te noemen. Als het label niet is ingesteld, wordt de versie automatisch verhoogd.
@@ -50,7 +50,7 @@ De pagina herstellen naar een vorige versie:
 1. Open de pagina waarvoor u een vorige versie wilt herstellen.
 1. In sidekick, selecteer het **Versioning** lusje, toen **herstelt Versie** subtab.
 
-   ![ screen_shot_2012-02-14at42949pm ](assets/screen_shot_2012-02-14at42949pm.png)
+   ![&#x200B; screen_shot_2012-02-14at42949pm &#x200B;](assets/screen_shot_2012-02-14at42949pm.png)
 
 1. Selecteer de versie die u wilt herstellen en **selecteren herstelt**.
 
@@ -61,11 +61,11 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 1. In de **console van Websites**, navigeer aan de pagina u het wilt herstellen en selecteren.
 1. Van het hoogste menu, uitgezochte **Hulpmiddelen**, dan **herstel**:
 
-   ![ screen_shot_2012-02-08at41326pm ](assets/screen_shot_2012-02-08at41326pm.png)
+   ![&#x200B; screen_shot_2012-02-08at41326pm &#x200B;](assets/screen_shot_2012-02-08at41326pm.png)
 
 1. Het selecteren van **herstelt Versie..** maakt een lijst van versies van documenten in de huidige omslag. Zelfs als een pagina is verwijderd, wordt de laatste versie weergegeven:
 
-   ![ screen_shot_2012-02-08at45743pm ](assets/screen_shot_2012-02-08at45743pm.png)
+   ![&#x200B; screen_shot_2012-02-08at45743pm &#x200B;](assets/screen_shot_2012-02-08at45743pm.png)
 
 1. Selecteer de versie die u wilt herstellen en **klikken herstelt**. AEM herstelt de versies (of bomen) die u selecteert.
 
@@ -77,7 +77,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 1. Van het hoogste menu, uitgezochte **Hulpmiddelen**, dan **herstel**.
 1. Het selecteren van **herstelt Boom..** opent de dialoogdoos zodat kunt u de boom selecteren die u wilt herstellen:
 
-   ![ screen_shot_2012-02-08at45743pm-1 ](assets/screen_shot_2012-02-08at45743pm-1.png)
+   ![&#x200B; screen_shot_2012-02-08at45743pm-1 &#x200B;](assets/screen_shot_2012-02-08at45743pm-1.png)
 
 1. Klik **herstellen**. AEM herstelt de structuur die u hebt geselecteerd.
 
@@ -88,7 +88,7 @@ De huidige versie van de pagina vergelijken met een vorige versie:
 1. Open in uw browser de pagina die u met een vorige versie wilt vergelijken.
 1. In de Sidekick, selecteer het **Versioning** lusje, dan **herstelt Versio** op subtab.
 
-   ![ screen_shot_2012-02-14at42949pm-1 ](assets/screen_shot_2012-02-14at42949pm-1.png)
+   ![&#x200B; screen_shot_2012-02-14at42949pm-1 &#x200B;](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Selecteer de versie die u wilt vergelijken en de **Diff** knoop klikken.
 1. De verschillen tussen de huidige versie en de geselecteerde versie worden als volgt weergegeven:
@@ -97,7 +97,7 @@ De huidige versie van de pagina vergelijken met een vorige versie:
    * De toegevoegde tekst is groen en gemarkeerd.
    * Afbeeldingen die zijn toegevoegd of verwijderd, zijn groene afbeeldingen.
 
-   ![ chlimage_1-75 ](assets/chlimage_1-75.png)
+   ![&#x200B; chlimage_1-75 &#x200B;](assets/chlimage_1-75.png)
 
 1. In de Sidekick, selecteer **herstelt Versie** subtab en klik **&lt;&lt;Back** knoop om de huidige versie te tonen.
 
@@ -126,7 +126,7 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
 1. Open het **Versioning** lusje en klik dan **Tijdverdraaiing** (dichtbij de bodem van sidekick). Het volgende dialoogvenster wordt weergegeven:
 
-   ![ chlimage_1-76 ](assets/chlimage_1-76.png)
+   ![&#x200B; chlimage_1-76 &#x200B;](assets/chlimage_1-76.png)
 
 1. Gebruikend de datum en de tijdselecteurs specificeren de datum/de tijd u wilt en **gaat** klikken.
 
@@ -142,14 +142,14 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
    >[!NOTE]
    >
-   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat manueel doen gebruikend [ herstellen ](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat manueel doen gebruikend [&#x200B; herstellen &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Klik op de volgende pagina als u de pagina hebt bekeken:
 
    * **Tijdlijn van de Uitgang** om weg te gaan en aan de huidige auteurspagina terug te keren.
-   * [ toon Chronologie ](#using-the-timewarp-timeline) zodat kunt u de chronologie bekijken.
+   * [&#x200B; toon Chronologie &#x200B;](#using-the-timewarp-timeline) zodat kunt u de chronologie bekijken.
 
-   ![ chlimage_1-77 ](assets/chlimage_1-77.png)
+   ![&#x200B; chlimage_1-77 &#x200B;](assets/chlimage_1-77.png)
 
 ### De tijdlijn Tijdlijn Tijdlijn gebruiken {#using-the-timewarp-timeline}
 
@@ -161,11 +161,11 @@ Als u de tijdlijn van het document wilt weergeven:
 
    1. Open het **Versioning** lusje, en klik dan **Timewarp** (dichtbij de bodem van sidekick).
 
-   1. Gebruik het sidekick dialoogvakje dat na [ wordt getoond gebruikend de Kalender van de Verdraaiing van de Tijd ](#using-the-timewarp-calendar).
+   1. Gebruik het sidekick dialoogvakje dat na [&#x200B; wordt getoond gebruikend de Kalender van de Verdraaiing van de Tijd &#x200B;](#using-the-timewarp-calendar).
 
 1. Klik **tonen Chronologie** - de chronologie van het document verschijnt; bijvoorbeeld:
 
-   ![ chlimage_1-78 ](assets/chlimage_1-78.png)
+   ![&#x200B; chlimage_1-78 &#x200B;](assets/chlimage_1-78.png)
 
 1. Selecteer en verplaats (houd ingedrukt en sleep) de tijdlijn om door de tijdlijn van het document te gaan.
 
@@ -173,7 +173,7 @@ Als u de tijdlijn van het document wilt weergeven:
 Wanneer een pagina wordt geactiveerd, wordt een nieuwe regel gestart. Telkens wanneer het document wordt bewerkt, wordt er een nieuwe kleur weergegeven.
 In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt tijdens het tijdsbestek van de eerste groene versie. De gele lijn geeft aan dat de pagina ergens in de rode versie is bewerkt, enzovoort.
 
-   ![ chlimage_1-79 ](assets/chlimage_1-79.png)
+   ![&#x200B; chlimage_1-79 &#x200B;](assets/chlimage_1-79.png)
 
 1. Klik:
 
@@ -188,7 +188,7 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **Tijdverdraaiing gebruikt paginaversies** - als u aan een pagina navigeert die is verwijderd/geschrapt uit de bewaarplaats het behoorlijk teruggegeven als de oude versies van de pagina nog in de bewaarplaats beschikbaar zijn.
 * **Verwijderde versies beïnvloeden Timewarp** - als de versies uit de bewaarplaats dan worden verwijderd kan de Timewarp niet de correcte mening tonen.
 
-* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat manueel doen gebruikend [ herstellen ](#main-pars-title-1).
+* **Tijdverdraaiing is read-only** - u kunt niet de oude versie van de pagina uitgeven. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat manueel doen gebruikend [&#x200B; herstellen &#x200B;](#main-pars-title-1).
 
 * **Tijdverdraaiing is slechts gebaseerd op paginacontent** - als elementen-zoals code, css, en beeld activa-voor het teruggeven van de website zijn veranderd, verschilt de mening van wat het oorspronkelijk was. De reden hiervoor is dat deze items niet zijn geautoriseerd in de gegevensopslagruimte.
 

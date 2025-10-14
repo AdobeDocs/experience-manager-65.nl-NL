@@ -32,7 +32,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 1. [De component toevoegen aan de DOM](#dynamically-add-component-to-dom)
 
-1. [ Sideload de component ](#sideload-by-invoking-scf) gebruikend één van twee methodes:
+1. [&#x200B; Sideload de component &#x200B;](#sideload-by-invoking-scf) gebruikend één van twee methodes:
 
 * [Dynamische insluiting](#dynamic-inclusion)
    * Alle dynamisch toegevoegde componenten versterken
@@ -41,7 +41,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 >[!NOTE]
 >
->Sideloading van [ niet-bestaande middelen ](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
+>Sideloading van [&#x200B; niet-bestaande middelen &#x200B;](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
 
 ## Component dynamisch toevoegen aan DOM {#dynamically-add-component-to-dom}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 U kunt de Rich Text Editor in Adobe Experience Manager zodanig configureren dat deze meerdere op zijn plaats geplaatste editors heeft. Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen.
 
-![ een specifieke op zijn plaats redacteur ](assets/rte-inplace-editor.png)
+![&#x200B; een specifieke op zijn plaats redacteur &#x200B;](assets/rte-inplace-editor.png)
 
 ## Meerdere editors configureren {#configure-multiple-editors}
 
@@ -88,7 +88,7 @@ Voer de volgende stappen uit om meerdere editors te configureren:
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie [ de Rijke Redacteur van de Tekst ](/help/sites-administering/rich-text-editor.md) vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. De Adobe adviseert creërend de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
+De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie [&#x200B; de Rijke Redacteur van de Tekst &#x200B;](/help/sites-administering/rich-text-editor.md) vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. De Adobe adviseert creërend de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
 
 ```xml
     texttext
@@ -113,12 +113,12 @@ De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aang
 
 ## Codevoorbeelden {#code-samples}
 
-U kunt de code van deze pagina op [ aem-authoring-hybrideditors project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors) vinden. U kunt het volledige project als [ aZIP archief ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip) downloaden.
+U kunt de code van deze pagina op [&#x200B; aem-authoring-hybrideditors project op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors) vinden. U kunt het volledige project als [&#x200B; aZIP archief &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip) downloaden.
 
 ## Een interne editor toevoegen {#add-an-in-place-editor}
 
-Voor algemene informatie over het toevoegen van een op zijn plaats redacteur zie het document [ pagina creatie ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) aanpassen.
+Voor algemene informatie over het toevoegen van een op zijn plaats redacteur zie het document [&#x200B; pagina creatie &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) aanpassen.
 
 >[!MORELIKETHIS]
 >
->* [ vormt Rich Text Editor in Experience Manager ](/help/sites-administering/rich-text-editor.md).
+>* [&#x200B; vormt Rich Text Editor in Experience Manager &#x200B;](/help/sites-administering/rich-text-editor.md).

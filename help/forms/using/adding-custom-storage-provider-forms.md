@@ -25,10 +25,10 @@ Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het conce
 
 ## Vereisten  {#prerequisites}
 
-* Laat [ Forms Portal componenten ](/help/forms/using/enabling-forms-portal-components.md) toe
-* Creeer a [ de Portaalpagina van Forms ](/help/forms/using/creating-form-portal-page.md)
-* Laat [ adaptieve vormen voor Forms Portal ](/help/forms/using/draft-submission-component.md) toe
-* Leer [ implementatiedetails van douaneopslag ](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Laat [&#x200B; Forms Portal componenten &#x200B;](/help/forms/using/enabling-forms-portal-components.md) toe
+* Creeer a [&#x200B; de Portaalpagina van Forms &#x200B;](/help/forms/using/creating-form-portal-page.md)
+* Laat [&#x200B; adaptieve vormen voor Forms Portal &#x200B;](/help/forms/using/draft-submission-component.md) toe
+* Leer [&#x200B; implementatiedetails van douaneopslag &#x200B;](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Conceptgegevensservice {#draft-data-service}
 

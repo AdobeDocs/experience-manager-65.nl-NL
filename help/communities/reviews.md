@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Overzicht van revisies en revisies gebruiken (weergave) {#using-reviews-and-reviews-summary-display}
 
-De `Reviews` component is een samenstelling van [ Commentaren ](comments.md) en [ de componenten van de Classificatie ](rating.md) klaar voor gebruik.
+De `Reviews` component is een samenstelling van [&#x200B; Commentaren &#x200B;](comments.md) en [&#x200B; de componenten van de Classificatie &#x200B;](rating.md) klaar voor gebruik.
 
 De component `Reviews Summary (Display)` geeft een overzicht van een actieve of gesloten instantie van een component `Reviews` voor weergave elders op de site.
 
@@ -32,19 +32,19 @@ Als u een `Reviews` -component in de ontwerpmodus aan een pagina wilt toevoegen,
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews` component verschijnt.
 
-![ creeer-overzicht ](assets/create-review.png)
+![&#x200B; creeer-overzicht &#x200B;](assets/create-review.png)
 
 ## Revisies configureren {#configuring-reviews}
 
 Selecteer de geplaatste component `Reviews` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vorm-nieuw ](assets/configure-new.png)
+![&#x200B; vorm-nieuw &#x200B;](assets/configure-new.png)
 
 Geef onder het tabblad **[!UICONTROL Allowed Ratings]** de volledige lijst met classificaties op die aan de leden moeten worden weergegeven. De eerste classificatie moet een algemene/algemene classificatie zijn, aangezien het de classificatie is die de gemiddelde classificatie voor de `Review Summary (Display)` component verstrekt. De volgende twee classificaties in de standaardconfiguratie moeten een andere titel krijgen dan &quot;Subrating 1&quot; of &quot;Subrating 2&quot;.
 
-![ toegestaan-classificatie ](assets/configure-review1.png)
+![&#x200B; toegestaan-classificatie &#x200B;](assets/configure-review1.png)
 
 * **[!UICONTROL Allowed Ratings]**
 
@@ -58,7 +58,7 @@ Voer onder het tabblad **[!UICONTROL Required Ratings]** opnieuw items in uit de
 
 Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als een item vereist is en niet is gemarkeerd, wordt een bericht weergegeven aan het lid en wordt de verzending geweigerd totdat alle vereiste beoordelingen zijn gemarkeerd.
 
-![ vereiste-classificatie ](assets/configure-review2.png)
+![&#x200B; vereiste-classificatie &#x200B;](assets/configure-review2.png)
 
 * **[!UICONTROL Required Ratings]**
 
@@ -74,7 +74,7 @@ Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als e
 
 Geef onder het tabblad **[!UICONTROL Reviews]** op hoe revisies worden verwerkt.
 
-![ overzichten ](assets/configure-review3.png)
+![&#x200B; overzichten &#x200B;](assets/configure-review3.png)
 
 * **[!UICONTROL Allow Replies]**
 
@@ -108,9 +108,9 @@ Geef onder het tabblad **[!UICONTROL Reviews]** op hoe revisies worden verwerkt.
 
   Indien ingeschakeld, neemt u de functie Stemmen op voor een onderwerp. De optie Standaard is uitgeschakeld.
 
-Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte revisies worden beheerd. Voor meer informatie, zie [ het Matigen van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte revisies worden beheerd. Voor meer informatie, zie [&#x200B; het Matigen van Gebruiker Gegenereerde Inhoud &#x200B;](moderate-ugc.md).
 
-![ gebruiker-moderatie ](assets/configure-review4.png)
+![&#x200B; gebruiker-moderatie &#x200B;](assets/configure-review4.png)
 
 * **[!UICONTROL Pre-Moderation]**
 
@@ -158,9 +158,9 @@ En sleep de revisie naar de juiste plaats op een pagina waarop een overzicht van
 
 Voor noodzakelijke informatie, bezoek {de Grondbeginselen van de Componenten van 0} Gemeenschappen [&#128279;](basics.md).
 
-Wanneer de [ vereiste cliënt-zijbibliotheken ](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews Summary (Display)` component verschijnt.
+Wanneer de [&#x200B; vereiste cliënt-zijbibliotheken &#x200B;](reviews-basics.md#essentials-for-client-side) inbegrepen zijn, is dit hoe de `Reviews Summary (Display)` component verschijnt.
 
-![ overzicht-samenvatting ](assets/configure-review5.png)
+![&#x200B; overzicht-samenvatting &#x200B;](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -170,15 +170,15 @@ Wanneer de [ vereiste cliënt-zijbibliotheken ](reviews-basics.md#essentials-for
 
 Selecteer de geplaatste component `Reviews Summary (Display)` , zodat u het pictogram `Configure` kunt openen en selecteren waarmee het dialoogvenster Bewerken wordt geopend.
 
-![ vormen ](assets/configure-new.png)
+![&#x200B; vormen &#x200B;](assets/configure-new.png)
 
 Onder de tab **[!UICONTROL Review Summary]**
 
-![ overzicht-samenvatting ](assets/configure-review6.png)
+![&#x200B; overzicht-samenvatting &#x200B;](assets/configure-review6.png)
 
 * `Review Path`
 
-  Ga of doorblader aan de geplaatste instantie van de `reviews` component in zodat kunt u, bijvoorbeeld, als toegevoegd aan de Web-pagina van de [ plaats van de Ingenieur van de Geometrixx, ](getting-started.md) de weg zijn:
+  Ga of doorblader aan de geplaatste instantie van de `reviews` component in zodat kunt u, bijvoorbeeld, als toegevoegd aan de Web-pagina van de [&#x200B; plaats van de Ingenieur van de Geometrixx, &#x200B;](getting-started.md) de weg zijn:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -192,11 +192,11 @@ De component Reviews gebruikt het opmerkingensysteem.
 
 Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Wanneer de types van douanemiddel gekend zijn, ga [ Wijze van het Ontwerp ](../../help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra tabel te openen.
+Wanneer de types van douanemiddel gekend zijn, ga [&#x200B; Wijze van het Ontwerp &#x200B;](../../help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra tabel te openen.
 
 Geef onder het tabblad **[!UICONTROL Resource Types]** het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting` -componenten:
 
-![ commentaren-stemgerechtigde ](assets/configure-review7.png)
+![&#x200B; commentaren-stemgerechtigde &#x200B;](assets/configure-review7.png)
 
 * **[!UICONTROL Comment Resource Type]**
 
@@ -212,7 +212,7 @@ Geef onder het tabblad **[!UICONTROL Resource Types]** het aangepaste resourceTy
 
 * **[!UICONTROL Comment System Resource Type]**
 
-  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper ](handlebars-helpers.md#include) .
+  Navigeer aan resourceType van een uitgebreide `comments` component (het Systeem van de Commentaar) in /apps. Laat leeg tenzij het paginamalplaatje [&#128279;](scf.md#add-or-include-a-communities-component) dynamisch omvat het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper &#x200B;](handlebars-helpers.md#include) .
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -239,6 +239,6 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte revisies lezen, dez
 
 Meer informatie kan op de [&#128279;](reviews-basics.md) pagina van de Hoofdzaak van het Overzicht  &lbrace;voor ontwikkelaars worden gevonden.
 
-Voor moderatie van geposte commentaren, zie [ het Modereren van Gebruiker Gegenereerde Inhoud ](moderate-ugc.md).
+Voor moderatie van geposte commentaren, zie [&#x200B; het Modereren van Gebruiker Gegenereerde Inhoud &#x200B;](moderate-ugc.md).
 
-Voor vertaling van geposte commentaren, zie [ Vertaal Door de Gebruiker Gegenereerde Inhoud ](translate-ugc.md).
+Voor vertaling van geposte commentaren, zie [&#x200B; Vertaal Door de Gebruiker Gegenereerde Inhoud &#x200B;](translate-ugc.md).

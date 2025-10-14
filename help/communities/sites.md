@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Sitesjablonen {#site-templates}
 
-De console van de Malplaatjes van de Plaats is gelijkaardig aan de [ console van de Malplaatjes van de Groep ](tools-groups.md), die op functies van belang aan communautaire groepen wordt geconcentreerd.
+De console van de Malplaatjes van de Plaats is gelijkaardig aan de [&#x200B; console van de Malplaatjes van de Groep &#x200B;](tools-groups.md), die op functies van belang aan communautaire groepen wordt geconcentreerd.
 
 >[!NOTE]
 >
->De consoles voor de verwezenlijking van [ communautaire plaatsen ](sites-console.md), [ communautaire plaatssjablonen ](sites.md), [ communautaire groepsmalplaatjes ](tools-groups.md), en [ communautaire functies ](functions.md) zijn voor gebruik slechts in het auteursmilieu.
+>De consoles voor de verwezenlijking van [&#x200B; communautaire plaatsen &#x200B;](sites-console.md), [&#x200B; communautaire plaatssjablonen &#x200B;](sites.md), [&#x200B; communautaire groepsmalplaatjes &#x200B;](tools-groups.md), en [&#x200B; communautaire functies &#x200B;](functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
 ## Sitesjabloonconsole {#site-templates-console}
 
@@ -30,9 +30,9 @@ In het milieu van de Auteur, om de console van communautaire plaatsen te bereike
 
 * Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Site Templates]**
 
-Deze console toont de malplaatjes waarvan de a [ communautaire plaats ](sites-console.md) kan worden gecreeerd en nieuwe plaatssjablonen om worden gecreeerd toe te laten.
+Deze console toont de malplaatjes waarvan de a [&#x200B; communautaire plaats &#x200B;](sites-console.md) kan worden gecreeerd en nieuwe plaatssjablonen om worden gecreeerd toe te laten.
 
-![ plaats-malplaatje ](assets/site-template.png)
+![&#x200B; plaats-malplaatje &#x200B;](assets/site-template.png)
 
 ## Sitesjabloon maken {#create-site-template}
 
@@ -42,7 +42,7 @@ Hiermee wordt het deelvenster Site-editor geopend dat drie subdeelvensters bevat
 
 ### Basisinformatie {#basic-info}
 
-![ plaats-malplaatje-basicinfo ](assets/site-template-basicinfo.png)
+![&#x200B; plaats-malplaatje-basicinfo &#x200B;](assets/site-template-basicinfo.png)
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
@@ -60,17 +60,17 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 
 ### Miniatuur {#thumbnail}
 
-![ plaats-duimnagel ](assets/site-thumbnail.png)
+![&#x200B; plaats-duimnagel &#x200B;](assets/site-thumbnail.png)
 
 (Optioneel) Selecteer het pictogram Afbeelding uploaden om een miniatuur weer te geven met de naam en beschrijving voor de makers van gemeenschapssites.
 
 ### Structuur {#structure}
 
-![ plaats-structuur ](assets/site-structure.png)
+![&#x200B; plaats-structuur &#x200B;](assets/site-structure.png)
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
 
-Als u bijvoorbeeld een homepage wilt, sleept u de functie Pagina uit de bibliotheek en zet u de pagina onder de sjabloonbuilder neer. Dit leidt tot het openen van het dialoogvenster voor paginaconfiguratie. Zie de [ functieconsole ](functions.md) voor informatie over de configuratievensters.
+Als u bijvoorbeeld een homepage wilt, sleept u de functie Pagina uit de bibliotheek en zet u de pagina onder de sjabloonbuilder neer. Dit leidt tot het openen van het dialoogvenster voor paginaconfiguratie. Zie de [&#x200B; functieconsole &#x200B;](functions.md) voor informatie over de configuratievensters.
 
 U kunt doorgaan met slepen en neerzetten van alle andere communityfuncties die voor een communitysite op basis van deze sjabloon zijn gewenst.
 
@@ -80,9 +80,9 @@ De paginafunctie biedt een lege pagina. Met de functie Groepen kunt u een groeps
 >
 >De functie van Groepen moet *niet de eerste of enige* functie in de plaatsstructuur zijn.
 >
->Om het even welke andere functie, zoals de [ paginafunctie ](functions.md#page-function), moet worden omvat en eerst vermeld.
+>Om het even welke andere functie, zoals de [&#x200B; paginafunctie &#x200B;](functions.md#page-function), moet worden omvat en eerst vermeld.
 
-![ plaats-redacteur ](assets/site-editor.png)
+![&#x200B; plaats-redacteur &#x200B;](assets/site-editor.png)
 
 ### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
 
@@ -92,14 +92,14 @@ Wanneer het omvatten van een functie van Groepen in het plaatssjabloon, vereist 
 >
 >De functie van Groepen moet *niet de eerste of enige* functie in de plaatsstructuur zijn.
 
-![ plaats-functies ](assets/site-functions.png)
+![&#x200B; plaats-functies &#x200B;](assets/site-functions.png)
 
 Door twee of meer groepsmalplaatjes te selecteren, wordt een keus verstrekt aan de groepsbeheerder wanneer eigenlijk het creëren van een groep in de gemeenschap.
 
-![ plaats-functie ](assets/site-functions1.png)
+![&#x200B; plaats-functie &#x200B;](assets/site-functions1.png)
 
 ## Sitesjabloon bewerken {#edit-site-template}
 
-Wanneer het bekijken van plaatsmalplaatjes in de belangrijkste [ console van de Malplaatjes van de Plaats ](#site-templates-console), is het mogelijk om een bestaand plaatsmalplaatje voor uitgeven te selecteren.
+Wanneer het bekijken van plaatsmalplaatjes in de belangrijkste [&#x200B; console van de Malplaatjes van de Plaats &#x200B;](#site-templates-console), is het mogelijk om een bestaand plaatsmalplaatje voor uitgeven te selecteren.
 
-Dit proces verstrekt de zelfde panelen zoals [ creërend een plaatsmalplaatje ](#create-site-template).
+Dit proces verstrekt de zelfde panelen zoals [&#x200B; creërend een plaatsmalplaatje &#x200B;](#create-site-template).

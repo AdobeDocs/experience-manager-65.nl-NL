@@ -25,9 +25,9 @@ De basisstructuur van een formulier is:
 * Formulierelementen
 * Einde van formulier
 
-Al deze worden gerealiseerd met een reeks standaard [ componenten van de Vorm ](/help/sites-authoring/default-components.md#form), beschikbaar in een standaard AEM installatie.
+Al deze worden gerealiseerd met een reeks standaard [&#x200B; componenten van de Vorm &#x200B;](/help/sites-authoring/default-components.md#form), beschikbaar in een standaard AEM installatie.
 
-Naast [ het ontwikkelen van nieuwe componenten ](/help/sites-developing/developing-components-samples.md) voor gebruik op uw vormen kunt u ook:
+Naast [&#x200B; het ontwikkelen van nieuwe componenten &#x200B;](/help/sites-developing/developing-components-samples.md) voor gebruik op uw vormen kunt u ook:
 
 * [Uw formulier vooraf laden met waarden](#preloading-form-values)
 * [(bepaalde) velden met meerdere waarden vooraf laden](#preloading-form-fields-with-multiple-values)
@@ -35,11 +35,11 @@ Naast [ het ontwikkelen van nieuwe componenten ](/help/sites-developing/developi
 * [Nieuwe beperkingen ontwikkelen](#developing-your-own-form-constraints)
 * [Specifieke formuliervelden weergeven of verbergen](#showing-and-hiding-form-components)
 
-[ Gebruikend manuscripten ](#developing-scripts-for-use-with-forms) om functionaliteit waar nodig uit te breiden.
+[&#x200B; Gebruikend manuscripten &#x200B;](#developing-scripts-for-use-with-forms) om functionaliteit waar nodig uit te breiden.
 
 >[!NOTE]
 >
->Dit document concentreert zich bij het ontwikkelen van vormen gebruikend de [ Componenten van de Stichting ](/help/sites-authoring/default-components-foundation.md) in klassieke UI. De Adobe adviseert gebruikend de nieuwe [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en [ Verberg Voorwaarden ](/help/sites-developing/hide-conditions.md) voor vormontwikkeling in touch-Toegelaten UI.
+>Dit document concentreert zich bij het ontwikkelen van vormen gebruikend de [&#x200B; Componenten van de Stichting &#x200B;](/help/sites-authoring/default-components-foundation.md) in klassieke UI. De Adobe adviseert gebruikend de nieuwe [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) en [&#x200B; Verberg Voorwaarden &#x200B;](/help/sites-developing/hide-conditions.md) voor vormontwikkeling in touch-Toegelaten UI.
 
 ## Formulierwaarden vooraf laden {#preloading-form-values}
 
@@ -51,7 +51,7 @@ Dit is een optioneel veld dat het pad naar een knooppunt in de repository aangee
 
 >[!NOTE]
 >
->A [ vormactie ](#developing-your-own-form-actions) kan het middel ook plaatsen waarvan om de aanvankelijke waarden te laden. Dit gebeurt met `FormsHelper#setFormLoadResource` inside `init.jsp` .
+>A [&#x200B; vormactie &#x200B;](#developing-your-own-form-actions) kan het middel ook plaatsen waarvan om de aanvankelijke waarden te laden. Dit gebeurt met `FormsHelper#setFormLoadResource` inside `init.jsp` .
 >
 >Alleen als dit niet is ingesteld, wordt het formulier door de auteur ingevuld in de padset die in het beginformulieronderdeel is ingesteld.
 
@@ -59,7 +59,7 @@ Dit is een optioneel veld dat het pad naar een knooppunt in de repository aangee
 
 De diverse vormgebieden hebben ook de **Pad van de Lading van Punten**, opnieuw een facultatieve weg die aan een knoop in de bewaarplaats richt.
 
-De **Weg van Punten laden** is de weg aan knoopeigenschappen die wordt gebruikt om vooraf bepaalde waarden in dat specifieke gebied op de vorm te laden, bijvoorbeeld, a [ drop-down lijst ](/help/sites-authoring/default-components-foundation.md#dropdown-list), [ de groep van de controledoos ](/help/sites-authoring/default-components-foundation.md#checkbox-group) of [ radiagroep ](/help/sites-authoring/default-components-foundation.md#radio-group).
+De **Weg van Punten laden** is de weg aan knoopeigenschappen die wordt gebruikt om vooraf bepaalde waarden in dat specifieke gebied op de vorm te laden, bijvoorbeeld, a [&#x200B; drop-down lijst &#x200B;](/help/sites-authoring/default-components-foundation.md#dropdown-list), [&#x200B; de groep van de controledoos &#x200B;](/help/sites-authoring/default-components-foundation.md#checkbox-group) of [&#x200B; radiagroep &#x200B;](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Voorbeeld - Een vervolgkeuzelijst met meerdere waarden vooraf laden {#example-preloading-a-dropdown-list-with-multiple-values}
 
@@ -97,7 +97,7 @@ Een reeks acties wordt voorzien van een standaard AEM installatie, deze kunnen o
 
 en in de **lijst van het Type van Actie** van de **Vorm** component:
 
-![ chlimage_1-8 ](assets/chlimage_1-8.png)
+![&#x200B; chlimage_1-8 &#x200B;](assets/chlimage_1-8.png)
 
 In deze sectie wordt beschreven hoe u uw eigen formulieractie voor opname in deze lijst kunt ontwikkelen.
 
@@ -191,8 +191,8 @@ Dit script kan worden gebruikt om opschoning uit te voeren.
 
 Beperkingen kunnen op twee niveaus worden opgelegd:
 
-* Voor [ individuele gebieden (zie de volgende procedure) ](#constraints-for-individual-fields)
-* Als [ vorm-globale bevestiging ](#form-global-constraints)
+* Voor [&#x200B; individuele gebieden (zie de volgende procedure) &#x200B;](#constraints-for-individual-fields)
+* Als [&#x200B; vorm-globale bevestiging &#x200B;](#form-global-constraints)
 
 #### Restricties voor afzonderlijke velden {#constraints-for-individual-fields}
 
@@ -250,7 +250,7 @@ Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld al
 
 Gebruik **uitgeven tonen/verberg Regels** dialoogdoos om de voorwaarden te specificeren waaronder een vormcomponent wordt getoond of verborgen.
 
-![ showhideeditor ](assets/showhideeditor.png)
+![&#x200B; showhideeditor &#x200B;](assets/showhideeditor.png)
 
 Gebruik de velden boven in het dialoogvenster om de volgende informatie op te geven:
 
@@ -265,7 +265,7 @@ Onder deze velden worden een of meer voorwaarden weergegeven. Een voorwaarde ver
 
 Een component Groep keuzerondjes met de titel `Receive email notifications?` * * bevat bijvoorbeeld keuzerondjes `Yes` en `No` . Een component van het Gebied van de Tekst met de titel van `Email Address` gebruikt de volgende voorwaarde zodat het zichtbaar is als `Yes` wordt geselecteerd:
 
-![ showhidCondition ](assets/showhidecondition.png)
+![&#x200B; showhidCondition &#x200B;](assets/showhidecondition.png)
 
 In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om naar velden te verwijzen. In het vorige voorbeeld is de eigenschap Element Name van de component Radio Group ingesteld op `contact` . De volgende code is de equivalente JavaScript-code voor dat voorbeeld:
 
@@ -289,7 +289,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
 
    Bijvoorbeeld:
 
-   ![ chlimage_1-9 ](assets/chlimage_1-9.png)
+   ![&#x200B; chlimage_1-9 &#x200B;](assets/chlimage_1-9.png)
 
 1. Klik **O.K.** om de definitie te bewaren.
 
@@ -297,7 +297,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
 
    Klik **O.K.** om alle veranderingen te bewaren.
 
-   ![ chlimage_1-10 ](assets/chlimage_1-10.png)
+   ![&#x200B; chlimage_1-10 &#x200B;](assets/chlimage_1-10.png)
 
    >[!CAUTION]
    >
@@ -315,7 +315,7 @@ Wanneer de configuratie Tonen/verbergen ongeldig is, wordt de configuratie allee
 
 ### Scripts ontwikkelen voor gebruik met Forms {#developing-scripts-for-use-with-forms}
 
-Voor meer informatie over de API elementen die wanneer het schrijven van manuscripten kunnen worden gebruikt zien [ javadocs met betrekking tot vormen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Voor meer informatie over de API elementen die wanneer het schrijven van manuscripten kunnen worden gebruikt zien [&#x200B; javadocs met betrekking tot vormen &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 U kunt dit gebruiken voor handelingen zoals het aanroepen van een service voordat het formulier wordt verzonden en het annuleren van de service als dit mislukt:
 

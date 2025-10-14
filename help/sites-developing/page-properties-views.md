@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
-Elke pagina heeft een reeks [ eigenschappen ](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden bekeken en worden uitgegeven; sommige worden vereist wanneer het creëren van de pagina (creeer mening), anderen kunnen (geef mening uit) in een recentere fase worden bekeken en worden uitgegeven. Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog` ) van de juiste paginacomponent.
+Elke pagina heeft een reeks [&#x200B; eigenschappen &#x200B;](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden bekeken en worden uitgegeven; sommige worden vereist wanneer het creëren van de pagina (creeer mening), anderen kunnen (geef mening uit) in een recentere fase worden bekeken en worden uitgegeven. Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog` ) van de juiste paginacomponent.
 
 >[!CAUTION]
 >
@@ -50,16 +50,16 @@ Bijvoorbeeld, zie de montages voor gebieden die onder **worden gegroepeerd Meer 
 
 >[!TIP]
 >
->Zie het [ Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=nl-NL) voor een gids aan het aanpassen van paginaeigenschappen.
+>Zie het [&#x200B; Uitbreiden van de zelfstudie van de Eigenschappen van de Pagina &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=nl-NL) voor een gids aan het aanpassen van paginaeigenschappen.
 
 ## De pagina-eigenschappen configureren {#configuring-your-page-properties}
 
 U kunt ook de beschikbare velden configureren door het dialoogvenster van de paginacomponent te configureren en de juiste knoopeigenschappen toe te passen.
 
-Bijvoorbeeld, door gebrek leidt [**tot de tovenaar van de Pagina** ](/help/sites-authoring/managing-pages.md#creating-a-new-page) de gebieden die onder **Meer Titels en Beschrijving** worden gegroepeerd. Om deze te verbergen vormt u:
+Bijvoorbeeld, door gebrek leidt [**tot de tovenaar van de Pagina** &#x200B;](/help/sites-authoring/managing-pages.md#creating-a-new-page) de gebieden die onder **Meer Titels en Beschrijving** worden gegroepeerd. Om deze te verbergen vormt u:
 
 1. Maak uw paginacomponent onder `/apps` .
-1. Creeer een opheffing (gebruikend *diff van de dialoog* die door [ wordt verstrekt het Verspreiden van de Fusie van het Middel ](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
+1. Creeer een opheffing (gebruikend *diff van de dialoog* die door [&#x200B; wordt verstrekt het Verspreiden van de Fusie van het Middel &#x200B;](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -102,14 +102,14 @@ Bijvoorbeeld, door gebrek leidt [**tot de tovenaar van de Pagina** ](/help/sites
 
 >[!NOTE]
 >
->Wanneer het vormen van paginaeigenschappen voor gebruik met levende exemplaren zie [ het Vormen Msm op de Eigenschappen van de Pagina ](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer details.
+>Wanneer het vormen van paginaeigenschappen voor gebruik met levende exemplaren zie [&#x200B; het Vormen Msm op de Eigenschappen van de Pagina &#x200B;](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer details.
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}
 
-Deze steekproef toont de dialoog afschuivende techniek van de [ Verteller van het Middel Sling ](/help/sites-developing/sling-resource-merger.md) aan; met inbegrip van gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van zowel `cq:showOnCreate` als `cq:hideOnEdit` .
+Deze steekproef toont de dialoog afschuivende techniek van de [&#x200B; Verteller van het Middel Sling &#x200B;](/help/sites-developing/sling-resource-merger.md) aan; met inbegrip van gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van zowel `cq:showOnCreate` als `cq:hideOnEdit` .
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [ open aem-auteurs-uitbreiding-pagina-dialoog project op GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [&#x200B; open aem-auteurs-uitbreiding-pagina-dialoog project op GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

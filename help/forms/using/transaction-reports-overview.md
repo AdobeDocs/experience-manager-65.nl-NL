@@ -27,11 +27,11 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 
 For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
-Transactieopname is standaard uitgeschakeld. U kunt [ transactieopname ](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) van AEM Console van het Web toelaten. U kunt transactierapporten weergeven over auteur-, verwerkings- of publicatieinstanties. Transactierapporten weergeven over auteur- of verwerkingsinstanties voor een geaggregeerde som van alle transacties. De transactierapporten van de mening over publiceer instanties voor een telling van alle transacties die slechts op dat publicatiegeval plaatsvinden van waar het rapport in werking wordt gesteld.
+Transactieopname is standaard uitgeschakeld. U kunt [&#x200B; transactieopname &#x200B;](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) van AEM Console van het Web toelaten. U kunt transactierapporten weergeven over auteur-, verwerkings- of publicatieinstanties. Transactierapporten weergeven over auteur- of verwerkingsinstanties voor een geaggregeerde som van alle transacties. De transactierapporten van de mening over publiceer instanties voor een telling van alle transacties die slechts op dat publicatiegeval plaatsvinden van waar het rapport in werking wordt gesteld.
 
 Ontwerp geen inhoud (maak adaptieve formulieren, interactieve communicatie, thema&#39;s en andere ontwerpactiviteiten) en verwerkt geen documenten (gebruik workflows, documentservices en andere verwerkingsactiviteiten) op hetzelfde AEM. Houd de transactieopname uitgeschakeld voor AEM Forms-servers die worden gebruikt om inhoud te schrijven. Laat de transactieopname ingeschakeld voor AEM Forms-servers die worden gebruikt om documenten te verwerken.
 
-![ steekproef-transactie-rapport-auteur-1 ](assets/sample-transaction-report-author-1.png)
+![&#x200B; steekproef-transactie-rapport-auteur-1 &#x200B;](assets/sample-transaction-report-author-1.png)
 
 Een transactie blijft in de buffer voor een gespecificeerde periode (de tijd van de Buffer van de Duw + omgekeerde replicatietijd). Door gebrek, vergt het ongeveer 90 seconden voor de transactietelling om in het transactierapport te weerspiegelen.
 
@@ -39,11 +39,11 @@ Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebrui
 
 ## Ondersteunde topologie {#supported-topology}
 
-Transactierapporten zijn alleen beschikbaar in AEM Forms op OSGi-omgeving. Het steunt auteur-publiceren, auteur-verwerkings-publiceer, en slechts verwerkingstopologieën. Bijvoorbeeld, topologieën, zie [ Architectuur en plaatsingstopologieën voor AEM Forms ](../../forms/using/transaction-reports-overview.md).
+Transactierapporten zijn alleen beschikbaar in AEM Forms op OSGi-omgeving. Het steunt auteur-publiceren, auteur-verwerkings-publiceer, en slechts verwerkingstopologieën. Bijvoorbeeld, topologieën, zie [&#x200B; Architectuur en plaatsingstopologieën voor AEM Forms &#x200B;](../../forms/using/transaction-reports-overview.md).
 
 Het aantal transacties wordt omgekeerd herhaald van publicatieinstanties naar auteur- of verwerkingsinstanties. Een indicatieve auteur-publiceer topologie wordt hieronder getoond:
 
-![ eenvoudig-auteur-publish-topologie ](assets/simple-author-publish-topology.png)
+![&#x200B; eenvoudig-auteur-publish-topologie &#x200B;](assets/simple-author-publish-topology.png)
 
 >[!NOTE]
 >

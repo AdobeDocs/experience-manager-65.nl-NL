@@ -25,13 +25,13 @@ Met AEM Forms kunt u de titel van een map wijzigen. De titel is niet gelijk aan 
 
 U kunt op een van de volgende manieren een map maken in AEM Forms:
 
-* Upload een dossier van het PIT dat activa in de gewenste omslagstructuur (zie, [ het Krijgen van documenten XDP en PDF in AEM Forms ](/help/forms/using/get-xdp-pdf-documents-aem.md) bevat)
+* Upload een dossier van het PIT dat activa in de gewenste omslagstructuur (zie, [&#x200B; het Krijgen van documenten XDP en PDF in AEM Forms &#x200B;](/help/forms/using/get-xdp-pdf-documents-aem.md) bevat)
 
 * Lege map maken
 
 1. Meld u aan bij de gebruikersinterface van AEM Forms op `https://<server>:<port>/aem/forms.html` .
 1. Navigeer naar de locatie waaronder u een map wilt maken.
-1. Klik ![ aem6forms_add ](assets/aem6forms_add.png) pictogram in de toolbar en selecteer dan **[!UICONTROL Create Folder]**.
+1. Klik ![&#x200B; aem6forms_add &#x200B;](assets/aem6forms_add.png) pictogram in de toolbar en selecteer dan **[!UICONTROL Create Folder]**.
 
 1. Voer de volgende gegevens in:
 
@@ -46,11 +46,11 @@ U kunt op een van de volgende manieren een map maken in AEM Forms:
 
    Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
 
-   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![ aem6forms_error_alert ](assets/aem6forms_error_alert.png) pictogram te bewegen dat naast het naamgebied verschijnt.
+   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutenbericht bekijken door over het fout ![&#x200B; aem6forms_error_alert &#x200B;](assets/aem6forms_error_alert.png) pictogram te bewegen dat naast het naamgebied verschijnt.
 
 ### De maptitel bewerken {#edit-the-folder-title-br}
 
 1. Selecteer de map waarvan u de titel wilt bewerken.
-1. Klik uitgeven ![ aem6forms_edit ](assets/aem6forms_edit.png) pictogram in de toolbar.
+1. Klik uitgeven ![&#x200B; aem6forms_edit &#x200B;](assets/aem6forms_edit.png) pictogram in de toolbar.
 1. Voer de nieuwe titel in. Het tekstveld wordt vooraf gevuld met de huidige waarde van de maptitel. U kunt de waarde wijzigen in een nieuwe waarde.
 1. Klik op **[!UICONTROL Submit].**

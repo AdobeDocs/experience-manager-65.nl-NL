@@ -29,15 +29,15 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
 1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** te bladeren of door rechtstreeks naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` te bladeren
 
-   ![ useradmin2 ](assets/useradmin2.png)
+   ![&#x200B; useradmin2 &#x200B;](assets/useradmin2.png)
 
 1. Zoek vervolgens naar de desbetreffende gebruiker door de naam in de zoekbalk boven aan de pagina te typen:
 
-   ![ gebruikersonderzoek ](assets/usersearch.png)
+   ![&#x200B; gebruikersonderzoek &#x200B;](assets/usersearch.png)
 
 1. Open ten slotte het gebruikersprofiel door erop te klikken en controleer het vervolgens onder de tab **[!UICONTROL Details]** .
 
-   ![ userprofile_small ](assets/userprofile_small.png)
+   ![&#x200B; userprofile_small &#x200B;](assets/userprofile_small.png)
 
 ### HTTP-API {#http-api}
 
@@ -79,32 +79,32 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 1. Druk op de knop Uitschakelen in het bovenste menu om de gebruiker uit te schakelen:
 
-   ![ gebruikersdisable ](assets/userdisable.png)
+   ![&#x200B; gebruikersdisable &#x200B;](assets/userdisable.png)
 
 1. Bevestig ten slotte de actie:
 
-   ![ image2018-2-6_1-40-58 ](assets/image2018-2-6_1-40-58.png)
+   ![&#x200B; image2018-2-6_1-40-58 &#x200B;](assets/image2018-2-6_1-40-58.png)
 
    De gebruikersinterface geeft aan dat de gebruiker is gedeactiveerd door de profielkaart te verslepen en er een vergrendeling aan toe te voegen:
 
-   ![ gehandicapte gebruiker ](assets/disableduser.png)
+   ![&#x200B; gehandicapte gebruiker &#x200B;](assets/disableduser.png)
 
 ### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 
 1. Meld u aan bij CRXDE Lite en zoek vervolgens naar `[!UICONTROL userId]` :
 
-   ![ image2018-2-6_1-57-11 ](assets/image2018-2-6_1-57-11.png)
+   ![&#x200B; image2018-2-6_1-57-11 &#x200B;](assets/image2018-2-6_1-57-11.png)
 
 1. Open het gebruikersknooppunt dat zich standaard onder `[!UICONTROL /home/users]` bevindt:
 
-   ![ image2018-2-6_1-58-25 ](assets/image2018-2-6_1-58-25.png)
+   ![&#x200B; image2018-2-6_1-58-25 &#x200B;](assets/image2018-2-6_1-58-25.png)
 
 1. Verwijder profielknooppunten en alle onderliggende knooppunten. Afhankelijk van de AEM versie zijn er twee indelingen voor de profielknooppunten:
 
    1. Het standaard privéprofiel onder `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]` voor nieuwe profielen die zijn gemaakt met AEM 6.5.
 
-   ![ image2018-2-6_2-0-4 ](assets/image2018-2-6_2-0-4.png)
+   ![&#x200B; image2018-2-6_2-0-4 &#x200B;](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP-API {#http-api-1}
 

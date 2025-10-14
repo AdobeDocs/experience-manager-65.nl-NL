@@ -27,11 +27,11 @@ Een startpunt roept een proces aan dat in Workbench wordt gecreeerd. Het is geko
 
 Om een proces van Adobe Experience Manager (AEM) in werking te stellen Forms app, moet u een uitgangspunt van type **Workspace** in uw proces hebben. U moet ook de optie **[!UICONTROL Visible in Mobile Workspace]** selecteren voor het startpunt.
 
-![ mws_startpoint_select_option ](assets/mws_startpoint_select_option.png)
+![&#x200B; mws_startpoint_select_option &#x200B;](assets/mws_startpoint_select_option.png)
 
 **om een proces te beginnen dat in Workbench wordt bepaald**
 
-1. Om de Startpunten te bekijken beschikbaar in AEM Forms app, ga naar [ het scherm van het Huis ](../../forms/using/home-screen.md).
+1. Om de Startpunten te bekijken beschikbaar in AEM Forms app, ga naar [&#x200B; het scherm van het Huis &#x200B;](../../forms/using/home-screen.md).
 1. Standaard wordt de lijst **[!UICONTROL All Forms]** weergegeven op het scherm **[!UICONTROL Home]** .
 
    Het startpunt is gekoppeld aan een formulier. Selecteer het startpunt voor het formulier in de lijst om het te openen.
@@ -40,7 +40,7 @@ Om een proces van Adobe Experience Manager (AEM) in werking te stellen Forms app
 
 1. Voer de details in het **[!UICONTROL Startpoint]** -formulier in.
 
-   U kunt annotaties aan deze taak toevoegen gebruikend de [ gehechtheid ](../../forms/using/add-attachments.md) knoop.
+   U kunt annotaties aan deze taak toevoegen gebruikend de [&#x200B; gehechtheid &#x200B;](../../forms/using/add-attachments.md) knoop.
 
 1. Nadat u het formulier hebt ingevuld, selecteert u de knop **[!UICONTROL Submit]** .
 
@@ -48,4 +48,4 @@ Als de app offline is, worden het formulier en de bijbehorende gegevens opgeslag
 
 Als de app online is, wordt de taak gesynchroniseerd met de AEM Forms-server en toegewezen aan de gebruiker die in het proces is opgegeven.
 
-Om met de taak in uw taaklijst te werken, zie [ Openend een taak ](/help/forms/using/open-task.md).
+Om met de taak in uw taaklijst te werken, zie [&#x200B; Openend een taak &#x200B;](/help/forms/using/open-task.md).

@@ -29,7 +29,7 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 
 ## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
-Alle componenten van de Campagne volgen de beste praktijken die in [ worden geschetst Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van de Adobe [ HTML ](https://helpx.adobe.com/nl/experience-manager/htl/using/overview.html).
+Alle componenten van de Campagne volgen de beste praktijken die in [&#x200B; worden geschetst Beste praktijken voor E-mailMalplaatjes &#x200B;](/help/sites-administering/best-practices-for-email-templates.md) en zijn gebaseerd op de de prijsverhogingstaal van de Adobe [&#x200B; HTML &#x200B;](https://helpx.adobe.com/nl/experience-manager/htl/using/overview.html).
 
 Wanneer u een nieuwsbrief/e-mail opent die om met Adobe Campaign wordt gevormd te integreren, zou u de volgende componenten in de **Newsletter van Adobe Campaign** sectie moeten zien:
 
@@ -43,7 +43,7 @@ Wanneer u een nieuwsbrief/e-mail opent die om met Adobe Campaign wordt gevormd t
 
 Een beschrijving van deze componenten vindt u in de volgende sectie.
 
-![ chlimage_1-81 ](assets/chlimage_1-81.png)
+![&#x200B; chlimage_1-81 &#x200B;](assets/chlimage_1-81.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -54,7 +54,7 @@ De kopcomponent kan:
 
 U geeft direct de **Kop (Campagne) uit** component. Laat leeg als u de paginatitel wilt gebruiken.
 
-![ chlimage_1-82 ](assets/chlimage_1-82.png)
+![&#x200B; chlimage_1-82 &#x200B;](assets/chlimage_1-82.png)
 
 U kunt het volgende configureren:
 
@@ -66,7 +66,7 @@ Het niveau van de rubriek op basis van de grootten 1-4 van de rubriek HTML.
 
 In het volgende voorbeeld ziet u een component Kop (Campagne) die wordt weergegeven.
 
-![ chlimage_1-83 ](assets/chlimage_1-83.png)
+![&#x200B; chlimage_1-83 &#x200B;](assets/chlimage_1-83.png)
 
 ### Afbeelding (campagne) {#image-campaign}
 
@@ -74,9 +74,9 @@ In de afbeeldings-(campagne)component wordt een afbeelding en de bijbehorende te
 
 U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbeeld uitsnijden, roteren, koppeling/titel/tekst toevoegen).
 
-U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbeeld uitsnijden, roteren, koppeling/titel/tekst toevoegen). U kunt of een beeld van de [ Vinder van de Inhoud ](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) direct slepen en laten vallen op de component of zijn Edit dialoog. U kunt ook dubbelklikken in het centrale gedeelte van het dialoogvenster Bewerken om door uw lokale bestandssysteem te bladeren en een afbeelding te uploaden. Op de twee tabbladen van het dialoogvenster Bewerken staan ook alle definities en bewerkingen van de afbeelding:
+U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbeeld uitsnijden, roteren, koppeling/titel/tekst toevoegen). U kunt of een beeld van de [&#x200B; Vinder van de Inhoud &#x200B;](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) direct slepen en laten vallen op de component of zijn Edit dialoog. U kunt ook dubbelklikken in het centrale gedeelte van het dialoogvenster Bewerken om door uw lokale bestandssysteem te bladeren en een afbeelding te uploaden. Op de twee tabbladen van het dialoogvenster Bewerken staan ook alle definities en bewerkingen van de afbeelding:
 
-![ chlimage_1-84 ](assets/chlimage_1-84.png)
+![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-84.png)
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
@@ -118,13 +118,13 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 In het volgende voorbeeld ziet u een component Image (Campaign) die wordt weergegeven.
 
-![ chlimage_1-85 ](assets/chlimage_1-85.png)
+![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-85.png)
 
 ### Koppeling (campagne) {#link-campaign}
 
 Met de component Koppeling (Campagne) kunt u een koppeling naar uw nieuwsbrief toevoegen. Deze component is alleen beschikbaar in de klassieke gebruikersinterface, hoewel u er een kunt toevoegen in de gebruikersinterface met geoptimaliseerde aanrakingen en deze kunt openen in de compatibiliteitsmodus.
 
-![ chlimage_1-86 ](assets/chlimage_1-86.png)
+![&#x200B; chlimage_1-86 &#x200B;](assets/chlimage_1-86.png)
 
 U kunt het volgende in de **Vertoning** vormen, **Info URL**, of **Geavanceerde** lusjes:
 
@@ -149,7 +149,7 @@ Voeg aanvullende URL-parameters toe. Klik op Item toevoegen om meerdere items to
 
 In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergegeven.
 
-![ chlimage_1-87 ](assets/chlimage_1-87.png)
+![&#x200B; chlimage_1-87 &#x200B;](assets/chlimage_1-87.png)
 
 ### Gerichte referentie (campagne) {#targeted-reference-campaign}
 
@@ -163,7 +163,7 @@ Klik op het vervolgkeuzemenu om naar de alinea te navigeren waarnaar u wilt verw
 
 Met de component Tekst en afbeelding (campagne) voegt u een tekstblok en een afbeelding toe.
 
-![ chlimage_1-88 ](assets/chlimage_1-88.png)
+![&#x200B; chlimage_1-88 &#x200B;](assets/chlimage_1-88.png)
 
 Net als bij de componenten Text &amp; Personalization (Campaign) en Image (Campaign) kunt u het volgende configureren:
 
@@ -200,17 +200,17 @@ Hiermee stelt u de hoogte en breedte van de afbeelding in.
 
 In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die wordt weergegeven.
 
-![ chlimage_1-89 ](assets/chlimage_1-89.png)
+![&#x200B; chlimage_1-89 &#x200B;](assets/chlimage_1-89.png)
 
 ### Tekst en Personalization (campagne) {#text-personalization-campaign}
 
-De component van de Tekst &amp; van Personalization (Campagne) laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [ Rich redacteur van de Tekst ](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Bovendien laat deze component u contextgebieden en verpersoonlijkingsblokken beschikbaar van Adobe Campaign gebruiken; zie ook [ het Opnemen van Personalization ](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+De component van de Tekst &amp; van Personalization (Campagne) laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [&#x200B; Rich redacteur van de Tekst &#x200B;](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Bovendien laat deze component u contextgebieden en verpersoonlijkingsblokken beschikbaar van Adobe Campaign gebruiken; zie ook [&#x200B; het Opnemen van Personalization &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 Met de selectie van pictogrammen kunt u de tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
 
 Voeg tekst toe zoals u normaal gesproken zou doen in de RTF-editor. U kunt personalisatie toevoegen door het vervolgkeuzemenu van Adobe Campaign te selecteren en de gewenste velden te selecteren.
 
-![ chlimage_1-90 ](assets/chlimage_1-90.png)
+![&#x200B; chlimage_1-90 &#x200B;](assets/chlimage_1-90.png)
 
 U voegt de tekst- en contextvelden of verpersoonlijkingsblokken toe om de inhoud te maken. Selecteer vervolgens Client Context om de gegevens in de persoonlijke profielen te testen. Nadat u een persoon hebt geselecteerd, worden de aanpassingsvelden automatisch vervangen door gegevens uit het geselecteerde profiel.
 
@@ -220,9 +220,9 @@ U voegt de tekst- en contextvelden of verpersoonlijkingsblokken toe om de inhoud
 
 ## Adobe Campaign-formuliercomponenten {#adobe-campaign-form-components}
 
-Met Adobe Campaign-componenten kunt u een formulier maken dat gebruikers invullen om zich te abonneren op een nieuwsbrief, zich af te melden bij een nieuwsbrief of hun gebruikersprofielen bij te werken. Zie [ Creërend Adobe Campaign Forms ](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md) voor meer informatie.
+Met Adobe Campaign-componenten kunt u een formulier maken dat gebruikers invullen om zich te abonneren op een nieuwsbrief, zich af te melden bij een nieuwsbrief of hun gebruikersprofielen bij te werken. Zie [&#x200B; Creërend Adobe Campaign Forms &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md) voor meer informatie.
 
-Elk componentveld kan worden gekoppeld aan een Adobe Campaign-databaseveld. De beschikbare gebieden verschillen volgens het type van gegevens zij bevatten zoals die in de sectie [ Componenten en het Type van Gegevens ](#components-and-data-type) worden beschreven. Als u het schema voor ontvangers in Adobe Campaign uitbreidt, zijn de nieuwe velden beschikbaar in de componenten waarvan de gegevenstypen overeenkomen.
+Elk componentveld kan worden gekoppeld aan een Adobe Campaign-databaseveld. De beschikbare gebieden verschillen volgens het type van gegevens zij bevatten zoals die in de sectie [&#x200B; Componenten en het Type van Gegevens &#x200B;](#components-and-data-type) worden beschreven. Als u het schema voor ontvangers in Adobe Campaign uitbreidt, zijn de nieuwe velden beschikbaar in de componenten waarvan de gegevenstypen overeenkomen.
 
 Wanneer u een vorm opent die om met Adobe Campaign wordt gevormd te integreren, ziet u de volgende componenten in de **Adobe Campaign** sectie:
 
@@ -321,17 +321,17 @@ Voer de CSS-klassen in die u voor deze component wilt gebruiken.
 
 Met de component CheckBox (Campagne) kan de gebruiker Adobe Campaign-profielvelden wijzigen die van een Booleaans gegevenstype zijn. U kunt bijvoorbeeld een component CheckBox (Campagne) hebben waarmee de ontvanger kan opgeven dat hij of zij niet via een kanaal mag worden benaderd.
 
-U kunt [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components) in de component vormen Checkbox (Campagne).
+U kunt [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components) in de component vormen Checkbox (Campagne).
 
 In het volgende voorbeeld ziet u een component CheckBox (Campagne) die wordt weergegeven.
 
-![ chlimage_1-91 ](assets/chlimage_1-91.png)
+![&#x200B; chlimage_1-91 &#x200B;](assets/chlimage_1-91.png)
 
 ### Datumveld (campagne) en Datumveld/HTML 5 (campagne) {#date-field-campaign-and-date-field-html-campaign}
 
 Gebruik het datumveld om ontvangers toe te staan naar een datum te gaan, bijvoorbeeld als u wilt dat de ontvangers hun geboortedatum opgeven. De datumnotatie komt overeen met de notatie die wordt gebruikt in uw Adobe Campaign-exemplaar.
 
-Naast [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components), kunt u het volgende vormen:
+Naast [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components), kunt u het volgende vormen:
 
 * **Beperkingen - Beperking** - u kunt selecteren - **niets** of **Datum** om de beperking van een datum of geen beperking toe te voegen. Als u datum selecteert, moeten de antwoordgebruikers in het veld een datumnotatie invoeren.
 
@@ -340,7 +340,7 @@ Naast [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign
 
 In het volgende voorbeeld wordt een component Date Field (Campaign) weergegeven met de breedte aangepast.
 
-![ chlimage_1-92 ](assets/chlimage_1-92.png)
+![&#x200B; chlimage_1-92 &#x200B;](assets/chlimage_1-92.png)
 
 ### Gecodeerde primaire sleutel (campagne) {#encrypted-primary-key-campaign}
 
@@ -355,7 +355,7 @@ U kunt het volgende in de Encrypted Primaire (Campagne) component vormen:
 
 In het volgende voorbeeld ziet u een component Encrypted Primary Key (Campaign) die wordt weergegeven.
 
-![ chlimage_1-93 ](assets/chlimage_1-93.png)
+![&#x200B; chlimage_1-93 &#x200B;](assets/chlimage_1-93.png)
 
 ### Foutweergave (campagne) {#error-display-campaign}
 
@@ -363,7 +363,7 @@ Met deze component kunt u back-endfouten weergeven. De foutafhandeling van het f
 
 In het volgende voorbeeld ziet u een component Error Display (Campaign) die wordt weergegeven.
 
-![ chlimage_1-94 ](assets/chlimage_1-94.png)
+![&#x200B; chlimage_1-94 &#x200B;](assets/chlimage_1-94.png)
 
 ### Verborgen afstemmingssleutel (campagne) {#hidden-reconciliation-key-campaign}
 
@@ -376,13 +376,13 @@ U kunt het volgende configureren in de component Verborgen afstemmingssleutel (C
 
 In het volgende voorbeeld ziet u een component Verborgen afstemmingssleutel (Campagne) die wordt weergegeven.
 
-![ chlimage_1-95 ](assets/chlimage_1-95.png)
+![&#x200B; chlimage_1-95 &#x200B;](assets/chlimage_1-95.png)
 
 ### Numeriek veld (campagne) {#numeric-field-campaign}
 
 Gebruik het numerieke veld om ontvangers toe te staan getallen in te voeren, bijvoorbeeld hun leeftijd.
 
-Naast [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components), kunt u het volgende vormen:
+Naast [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components), kunt u het volgende vormen:
 
 * **Beperkingen - Beperking** drop-down
 U kunt selecteren - **niets** of **Numeriek -** om de beperking van of een aantal of geen beperking toe te voegen. Als u een getal selecteert, moeten de antwoordgebruikers een numeriek getal invoeren in het veld.
@@ -392,17 +392,17 @@ U kunt selecteren - **niets** of **Numeriek -** om de beperking van of een aanta
 
 In het volgende voorbeeld wordt een component Numeriek veld (Campagne) weergegeven met de geconfigureerde breedte.
 
-![ chlimage_1-96 ](assets/chlimage_1-96.png)
+![&#x200B; chlimage_1-96 &#x200B;](assets/chlimage_1-96.png)
 
 ### Optieveld (campagne) {#option-field-campaign}
 
 In deze vervolgkeuzelijst kunt u een optie selecteren, bijvoorbeeld het geslacht of de status van een ontvanger.
 
-U kunt [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components) op het Gebied van de Optie (Campagne) component vormen. Als u de vervolgkeuzelijst wilt vullen, selecteert u het desbetreffende veld in de personalisatievelden van Adobe Campaign door op het Adobe Campaign-symbool te klikken of erop te tikken en naar het veld te navigeren.
+U kunt [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components) op het Gebied van de Optie (Campagne) component vormen. Als u de vervolgkeuzelijst wilt vullen, selecteert u het desbetreffende veld in de personalisatievelden van Adobe Campaign door op het Adobe Campaign-symbool te klikken of erop te tikken en naar het veld te navigeren.
 
 In het volgende voorbeeld ziet u een component Option Field (Campaign) die wordt weergegeven.
 
-![ chlimage_1-97 ](assets/chlimage_1-97.png)
+![&#x200B; chlimage_1-97 &#x200B;](assets/chlimage_1-97.png)
 
 ### Checklist voor abonnementen (campagne) {#subscriptions-checklist-campaign}
 
@@ -414,17 +414,17 @@ Wanneer deze component aan een formulier wordt toegevoegd, worden alle beschikba
 >
 >De component controleert niet welke services de gebruiker al heeft geabonneerd op of zich niet heeft geabonneerd op.
 
-U kunt [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components) in de component van Checklist van Abonnementen (Campagne) vormen. (Er zijn geen Adobe Campaign-configuraties beschikbaar voor deze component.)
+U kunt [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components) in de component van Checklist van Abonnementen (Campagne) vormen. (Er zijn geen Adobe Campaign-configuraties beschikbaar voor deze component.)
 
 In het volgende voorbeeld ziet u een component Subscriptions Checklist (Campaign) die wordt weergegeven.
 
-![ chlimage_1-98 ](assets/chlimage_1-98.png)
+![&#x200B; chlimage_1-98 &#x200B;](assets/chlimage_1-98.png)
 
 ### Tekstveld (campagne) {#text-field-campaign}
 
 De component van het Gebied van de Tekst (Campagne) die u tekenreekstype gegevens, zoals een voornaam, een familienaam, een adres, een e-mailadres, enz. laat ingaan.
 
-Naast [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign ](#settings-common-to-most-components), kunt u het volgende vormen:
+Naast [&#x200B; montages gemeenschappelijk voor de meeste componenten van Adobe Campaign &#x200B;](#settings-common-to-most-components), kunt u het volgende vormen:
 
 * **Beperkingen - Beperking** - drop-down - u kunt selecteren - **niets**, **E-mail**, **Naam** (geen umlauts) om de beperking van of een e-mailadres, naam, of geen beperking toe te voegen. Als u e-mail selecteert, moeten de antwoordgebruikers in het veld een e-mailadres zijn. Als u een naam selecteert, moet deze een naam zijn (umlauts zijn niet toegestaan).
 
@@ -433,4 +433,4 @@ Naast [ montages gemeenschappelijk voor de meeste componenten van Adobe Campaign
 
 In het volgende voorbeeld ziet u een component Text Field (Campaign) die wordt weergegeven.
 
-![ chlimage_1-99 ](assets/chlimage_1-99.png)
+![&#x200B; chlimage_1-99 &#x200B;](assets/chlimage_1-99.png)

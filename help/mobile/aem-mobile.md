@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Als u niet de Ervaring gebruikt van de Adobe leidt (AEM) als uw bron van inhoudsbeheer, zie [ Hulp van AEM Mobile On-demand Services ](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
+>Als u niet de Ervaring gebruikt van de Adobe leidt (AEM) als uw bron van inhoudsbeheer, zie [&#x200B; Hulp van AEM Mobile On-demand Services &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/topics.html).
 
 ## AEM-beheerder {#aem-administrator}
 
@@ -30,17 +30,17 @@ ht-degree: 0%
 >
 >**Vereiste:**
 >
->Alvorens u met vestiging uw milieu voor AEM Mobile On-demand Services begint, zie [ het Dashboard van de Toepassing van AEM Mobile of het Centrum van de Controle ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Alvorens u met vestiging uw milieu voor AEM Mobile On-demand Services begint, zie [&#x200B; het Dashboard van de Toepassing van AEM Mobile of het Centrum van de Controle &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een toepassing aan de catalogus van AEM Mobile, of door een toepassing te creëren gebruikend de aanmaaktovenaar, of door een bestaande toepassing in te voeren. AEM beheerders die een app gebruikend AEM Mobile *creatietovenaar* creeren typisch één van de gewenste toepassingsmalplaatjes of van Adobe uit-van-de-doos verwijzingssteekproeven of (gewoonlijk) een douane app malplaatje creëren door *AEM ontwikkelaars.*
 
 >[!NOTE]
 >
->Voor meer informatie bij vestiging AEM Groepen en Toestemmingen, klik [ Creërend de Rollen van de Gebruiker en het Verlenen van Toegang ](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in Online Hulp.
+>Voor meer informatie bij vestiging AEM Groepen en Toestemmingen, klik [&#x200B; Creërend de Rollen van de Gebruiker en het Verlenen van Toegang &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/account-admin-dps.html) in Online Hulp.
 
 Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app maakt met AEM Mobile On-demand Services:
 
-* [ Vestiging AEM Mobile ](/help/mobile/aem-mobile-setup.md) die behandelt
+* [&#x200B; Vestiging AEM Mobile &#x200B;](/help/mobile/aem-mobile-setup.md) die behandelt
 
    * AEM Mobile-provisioning
    * Projecten maken voor AEM Mobile

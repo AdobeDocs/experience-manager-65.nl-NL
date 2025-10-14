@@ -25,11 +25,11 @@ ht-degree: 0%
 
 U kunt de levering van PDF-inhoud optimaliseren en de mogelijkheid van de Forms-service om netwerkbelasting te verwerken verbeteren door de renderingmogelijkheden aan de clientzijde van Acrobat of Adobe Reader te gebruiken. Dit proces wordt het weergeven van een formulier op de client genoemd. Als u een formulier op de client wilt genereren, moet het clientapparaat (meestal een webbrowser) Acrobat 7.0 of Adobe Reader 7.0 of hoger gebruiken.
 
-Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt weergegeven, tenzij het basissubformulier het kenmerk `restoreState` bevat dat is ingesteld op `auto` . Voor meer informatie over dit attribuut, zie [ Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
+Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt weergegeven, tenzij het basissubformulier het kenmerk `restoreState` bevat dat is ingesteld op `auto` . Voor meer informatie over dit attribuut, zie [&#x200B; Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -160,7 +160,7 @@ Een formulier op de client renderen met de Forms API (webservice):
    Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` .
-   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [ Prepopulating Forms met Stroombare Lay-outs ](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Een `BLOB` -object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef `null` door als u geen gegevens wilt samenvoegen. (Zie [&#x200B; Prepopulating Forms met Stroombare Lay-outs &#x200B;](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Een `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat die vereist zijn om een formulier op de client te genereren.
    * Een `URLSpec` -object dat URI-waarden bevat die door de Forms-service worden vereist.
    * Een `java.util.HashMap` -object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.

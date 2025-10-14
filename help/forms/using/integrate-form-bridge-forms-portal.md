@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Form Bridge integreren met aangepaste portal voor HTML5-formulieren{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge is een HTML5-API voor formulierbridge waarmee u met een formulier kunt communiceren. Voor de verwijzing FormBridge API, zie [ FormBridge API verwijzing ](/help/forms/using/form-bridge-apis.md).
+FormBridge is een HTML5-API voor formulierbridge waarmee u met een formulier kunt communiceren. Voor de verwijzing FormBridge API, zie [&#x200B; FormBridge API verwijzing &#x200B;](/help/forms/using/form-bridge-apis.md).
 
 U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de pagina HTML op te halen of in te stellen en het formulier te verzenden. U kunt bijvoorbeeld de API gebruiken om een wizards-achtige ervaring op te bouwen.
 
@@ -32,7 +32,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Voor details op hoe te om een profiel tot stand te brengen, zie [ Creërend een Profiel ](/help/forms/using/custom-profile.md).
+      Voor details op hoe te om een profiel tot stand te brengen, zie [&#x200B; Creërend een Profiel &#x200B;](/help/forms/using/custom-profile.md).
 
 1. **wijzig het Profiel van de HTML**
 
@@ -85,7 +85,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >
    >De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
-   ![ portaal ](assets/portal.jpg)
+   ![&#x200B; portaal &#x200B;](assets/portal.jpg)
 
    De linkerkant is een deel van de **pagina van de HTML**. De juiste kant die de gebieden bevat is de **xfa vorm**.
 

@@ -23,7 +23,7 @@ In Adobe Experience Manager (AEM), is **externalizer** de dienst OSGI die u prog
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Deze pagina verklaart hoe te om de **dienst te vormen Externalzer** en hoe te om het te gebruiken. Voor meer details, zie [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Deze pagina verklaart hoe te om de **dienst te vormen Externalzer** en hoe te om het te gebruiken. Voor meer details, zie [&#x200B; JavaDocs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## De service ExternalAlizer configureren {#configuring-the-externalizer-service}
 
@@ -41,7 +41,7 @@ Om een domeinafbeelding voor de **Externalalizer** dienst te bepalen:
    >
    >De directe koppeling naar de configuratie is `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-   ![ aem-externalizer-01 ](assets/aem-externalizer-01.png)
+   ![&#x200B; aem-externalizer-01 &#x200B;](assets/aem-externalizer-01.png)
 
 1. Bepaal de afbeelding van a **Domeinen**: een afbeelding bestaat uit een unieke naam die in de code kan worden gebruikt om naar het domein, een ruimte, en het domein te verwijzen:
 
@@ -74,7 +74,7 @@ Om een domeinafbeelding voor de **Externalalizer** dienst te bepalen:
 
 >[!NOTE]
 >
->De Adobe adviseert dat u [ de configuratie aan de bewaarplaats ](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository) toevoegt.
+>De Adobe adviseert dat u [&#x200B; de configuratie aan de bewaarplaats &#x200B;](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository) toevoegt.
 
 ### De service ExternalAlizer gebruiken {#using-the-externalizer-service}
 
@@ -128,4 +128,4 @@ Deze sectie toont een paar voorbeelden van hoe de **&#x200B;**&#x200B;dienst Ext
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. U kunt meer voorbeelden in [ JavaDocs ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html) vinden.
+1. U kunt meer voorbeelden in [&#x200B; JavaDocs &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html) vinden.

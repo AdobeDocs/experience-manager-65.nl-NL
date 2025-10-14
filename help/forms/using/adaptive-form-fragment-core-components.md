@@ -19,7 +19,7 @@ ht-degree: 0%
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | Dit artikel |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=nl-NL) |
 
 Hoewel elk formulier voor een bepaald doel is ontworpen, zijn er in de meeste vormen enkele gangbare segmenten, zoals het verstrekken van persoonlijke gegevens zoals naam en adres, familiedetails en inkomstengegevens. Formulierontwikkelaars moeten deze algemene segmenten telkens maken wanneer een nieuw formulier wordt gemaakt.
 
@@ -31,7 +31,7 @@ U kunt een fragment meerdere keren aan een document toevoegen en eigenschappen v
 
 >[!NOTE]
 >
-> U kunt uw fragmentervaring voor gebruikers met [ gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> U kunt uw fragmentervaring voor gebruikers met [&#x200B; gemakkelijk aanpassen vormt dialoog en de dialoog van het Ontwerp van de component van het Fragment van de Vorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 
 ## Een formulierfragment maken {#create-a-fragment}
@@ -49,7 +49,7 @@ U kunt een adaptief formulierfragment helemaal zelf maken of een deelvenster in 
 
 1. Klik om het **Model van de Vorm** lusje te openen, en van **Uitgezocht van** drop-down menu, selecteer één van de volgende modellen voor het fragment:
 
-   ![ modeltype van vertoningen in het Modellusje van de Vorm ](assets/create-af-1-1.png)
+   ![&#x200B; modeltype van vertoningen in het Modellusje van de Vorm &#x200B;](assets/create-af-1-1.png)
 
    * **Geen**: hiermee geeft u op dat het fragment helemaal opnieuw moet worden gemaakt zonder een formuliermodel te gebruiken.
 
@@ -60,7 +60,7 @@ U kunt een adaptief formulierfragment helemaal zelf maken of een deelvenster in 
    * **Schema**: geeft aan dat het fragment moet worden gemaakt met behulp van een XML- of JSON-schema dat naar AEM Forms wordt geüpload. U kunt vanuit de beschikbare XML- of JSON-schema&#39;s het formuliermodel voor het fragment uploaden of selecteren. Wanneer u een XML-schema selecteert, kunt u ook een adaptief formulierfragment maken door in het keuzemenu **[!UICONTROL XML Schema Complex Type]** een complexType te selecteren dat aanwezig is in het geselecteerde schema. Wanneer u een JSON-schema selecteert, kunt u ook een adaptief formulierfragment maken door in het keuzemenu **[!UICONTROL JSON Schema Definitions]** een schemadefinitie te selecteren die aanwezig is in het geselecteerde schema.
    * **Model van de Gegevens van de Vorm**: Specificeert om het fragment tot stand te brengen gebruikend een model van vormgegevens. U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel. Vervolgkeuzelijst Formuliergegevensmodeldefinities uitvouwen. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel weergegeven. Selecteer een gegevensmodelobject in de lijst.
 
-   ![ Model van de Gegevens van de Vorm ](assets/create-af-3.png)
+   ![&#x200B; Model van de Gegevens van de Vorm &#x200B;](assets/create-af-3.png)
 
 
 
@@ -79,7 +79,7 @@ Een adaptief formulierfragment toevoegen aan een adaptief formulier:
 1. Voeg de **Aangepaste component van het Fragment van de Vorm** aan de vorm toe.
 1. Klik **Assets** inhoudsbrowser sidebar. Selecteer in de middelenbrowser onder de paden de **optie Adaptieve formulierfragmenten** . Alle Adaptieve Forms-fragmenten die beschikbaar zijn voor uw formulier, worden weergegeven, afhankelijk van het formuliermodel.
 
-   ![ selecteer de Aangepaste optie van de Fragmenten van de Vorm ](assets/adaptive-forms-fragments.png)
+   ![&#x200B; selecteer de Aangepaste optie van de Fragmenten van de Vorm &#x200B;](assets/adaptive-forms-fragments.png)
 
 1. De belemmering-en-daling een Adaptief fragment van de Vorm op de **Aangepaste component van het Fragment van de Vorm** op uw Aangepaste Vorm.
 
@@ -91,7 +91,7 @@ Het fragment Adaptief formulier wordt toegevoegd met verwijzing naar het adaptie
 
 ### Een fragment insluiten in Adaptieve vorm {#embed-a-fragment-in-adaptive-form}
 
-U kunt verkiezen om een Adaptief fragment van de Vorm in een Aangepaste Vorm in te bedden door ![ te klikken inbedt ](assets/Smock_Import_18_N.svg) pictogram de paneeltoolbar van het toegevoegde fragment
+U kunt verkiezen om een Adaptief fragment van de Vorm in een Aangepaste Vorm in te bedden door ![&#x200B; te klikken inbedt &#x200B;](assets/Smock_Import_18_N.svg) pictogram de paneeltoolbar van het toegevoegde fragment
 
 Het ingesloten fragment is niet meer gekoppeld aan het zelfstandige fragment. U kunt de componenten in het ingesloten fragment bewerken vanuit het adaptieve formulier.
 
@@ -207,4 +207,4 @@ Verwijs naar adaptieve formulierfragmenten die u kunt gebruiken om uw formulier 
 * [Thema&#39;s maken of aanpassen voor adaptieve Forms op basis van Core Components](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Een sjabloon maken voor Adaptief Forms op basis van Core Components](template-editor.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [ de themasjablonen van de Steekproef en modellen van vormgegevens ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)
+* [&#x200B; de themasjablonen van de Steekproef en modellen van vormgegevens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=nl-NL)

@@ -18,7 +18,7 @@ Gebruik de functie Structuur van de Content Fragment Editor in AEM om uw inhoud 
 
 In de Inhoudsfragmenteditor kunt u het pictogram van de boomstructuur selecteren:
 
-![ de Structuur van het Fragment van de Inhoud Boom ](assets/cfm-structuretree-01.png)
+![&#x200B; de Structuur van het Fragment van de Inhoud Boom &#x200B;](assets/cfm-structuretree-01.png)
 
 Hiermee wordt een representatie van de structuur van het fragment geopend in het linkerdeelvenster. Hiermee kunt u navigeren door fragmenten waarnaar wordt verwezen en naar fragmenten. Als u een verwijzing selecteert, wordt dat fragment geopend voor bewerking.
 
@@ -26,4 +26,4 @@ Hiermee wordt een representatie van de structuur van het fragment geopend in het
 >
 >Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
 
-![ de Structuur van het Fragment van de Inhoud Boom ](assets/cfm-structuretree-02.png)
+![&#x200B; de Structuur van het Fragment van de Inhoud Boom &#x200B;](assets/cfm-structuretree-02.png)

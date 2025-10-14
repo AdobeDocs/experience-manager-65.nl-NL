@@ -85,7 +85,7 @@ Wanneer u een taak opent vanuit uw lijst Aan-doe, als uw lijst wordt gedeeld, ku
    >
    >U kunt een taak ook op elk tabblad vergrendelen of ontgrendelen wanneer de taak is geopend.
 
-   ![ lock_task ](assets/lock_task.png)
+   ![&#x200B; lock_task &#x200B;](assets/lock_task.png)
 
    Het menu Alle opties op een taak
 
@@ -189,22 +189,22 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
    Het dialoogvenster Opslaan als concept wordt geopend. De standaardnaam van het concept is de taaknaam uit de taaksjabloon.
 
-   ![ saveasdraftDialog ](assets/saveasdraftdialog.png)
+   ![&#x200B; saveasdraftDialog &#x200B;](assets/saveasdraftdialog.png)
 
    >[!NOTE]
    >
    >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd, periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. Als er automatisch wordt opgeslagen, wordt de standaardnaam van de taak automatisch gebruikt.
    >
    >
-   >Voor meer informatie, zie sparen Ontwerp periodiek in [ het Leiden Voorkeur ](/help/forms/using/getting-started-livecycle-html-workspace.md).
+   >Voor meer informatie, zie sparen Ontwerp periodiek in [&#x200B; het Leiden Voorkeur &#x200B;](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 1. In sparen als dialoog van het Ontwerp, specificeer een unieke naam voor de taak en selecteer **O.K.**.
 
-   ![ saveasdraftdialog_name ](assets/saveasdraftdialog_name.png)
+   ![&#x200B; saveasdraftdialog_name &#x200B;](assets/saveasdraftdialog_name.png)
 
    Het concept wordt met de opgegeven naam opgeslagen. De taak blijft in de lijst Aan/Uit en alle wijzigingen die u in het formulier hebt aangebracht, worden opgeslagen in de map Concepten. In de lijst Aan kunt u bovendien naar het concept zoeken met de naam van het concept om het werken aan het concept te hervatten.
 
-   ![ zoekfortask ](assets/searchfortask.png)
+   ![&#x200B; zoekfortask &#x200B;](assets/searchfortask.png)
 
 ## Taken voltooien {#completing-tasks}
 
@@ -264,11 +264,11 @@ U kunt meerdere taken verzenden vanuit de lijst Aan taak. Slechts kunnen de take
 
 1. Selecteer taken voor bulkgoedkeuring. De veelvoudige taken van het zelfde proces, met de zelfde taaknamen, en de zelfde routeopties kunnen worden geselecteerd. Zodra u één taak voor goedkeuring selecteert, slechts blijven de taken met het zelfde proces, met de zelfde taaknamen, en de zelfde routeopties toegelaten. De rest is uitgeschakeld.
 
-   ![ 1_bulkapproval ](assets/1_bulkapproval.png)
+   ![&#x200B; 1_bulkapproval &#x200B;](assets/1_bulkapproval.png)
 
 1. Klik op de optie Verzenden. De geselecteerde taken worden verzonden.
 
-   ![ bulkapproval ](assets/bulkapproval.png)
+   ![&#x200B; bulkapproval &#x200B;](assets/bulkapproval.png)
 
 ## Deelnemen aan taken via e-mail {#participating-in-tasks-through-email}
 
@@ -280,7 +280,7 @@ De e-mailberichten kunnen een koppeling bevatten waarmee de taak in de AEM Forms
 
 >[!NOTE]
 >
->* Om de werkruimte te vormen om de aangewezen e-mailmalplaatjes te gebruiken, zie de [ Gids van de Beheerder van AEM Forms JEE ](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>* Om de werkruimte te vormen om de aangewezen e-mailmalplaatjes te gebruiken, zie de [&#x200B; Gids van de Beheerder van AEM Forms JEE &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
 >* Als concepten worden doorgestuurd nadat de taak in de AEM Forms-werkruimte is verzonden, worden e-mailmeldingen verzonden. Als concepten vanuit het startpunt van de AEM Forms-werkruimte worden doorgestuurd, worden geen e-mailmeldingen verzonden.
 

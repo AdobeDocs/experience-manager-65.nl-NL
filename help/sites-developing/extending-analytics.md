@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikkelaar moet u mogelijk:
 
-* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan met [ gebeurtenissen van de Douane worden gedaan.](#custom-events)
-* [ waarden van de Toegang in ContextHub ](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [ voegt verslagcallbacks ](#adding-record-callbacks) toe.
+* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan met [&#x200B; gebeurtenissen van de Douane worden gedaan.](#custom-events)
+* [&#x200B; waarden van de Toegang in ContextHub &#x200B;](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+* [&#x200B; voegt verslagcallbacks &#x200B;](#adding-record-callbacks) toe.
 
 >[!NOTE]
 >
->Deze informatie is fundamenteel generisch, maar het gebruikt [ Adobe Analytics ](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
+>Deze informatie is fundamenteel generisch, maar het gebruikt [&#x200B; Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
 >
->Voor algemene informatie bij het ontwikkelen van componenten en dialoogdozen, zie [ het Ontwikkelen Componenten ](/help/sites-developing/components.md).
+>Voor algemene informatie bij het ontwikkelen van componenten en dialoogdozen, zie [&#x200B; het Ontwikkelen Componenten &#x200B;](/help/sites-developing/components.md).
 
 ## Aangepaste gebeurtenissen {#custom-events}
 
@@ -59,7 +59,7 @@ Een voorbeeld zou als kunnen kijken:
 </span>
 ```
 
-Bij het laden van de pagina worden alle `data-tracking` -kenmerken verzameld en toegevoegd aan de gebeurteniswinkel van de ContextHub, waar ze kunnen worden toegewezen aan Adobe Analytics-gebeurtenissen. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [ Verbindend met Adobe Analytics ](/help/sites-administering/adobeanalytics.md) voor meer details over kaartgebeurtenissen.
+Bij het laden van de pagina worden alle `data-tracking` -kenmerken verzameld en toegevoegd aan de gebeurteniswinkel van de ContextHub, waar ze kunnen worden toegewezen aan Adobe Analytics-gebeurtenissen. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [&#x200B; Verbindend met Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics.md) voor meer details over kaartgebeurtenissen.
 
 ### Aangepaste gebeurtenissen bijhouden na laden van pagina {#tracking-custom-events-after-page-load}
 
@@ -105,7 +105,7 @@ Opslagspecifiek:
 
 >[!NOTE]
 >
->Zie ook de volledige [ Verwijzing van ContextHub API ](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Zie ook de volledige [&#x200B; Verwijzing van ContextHub API &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Recordcallbacks toevoegen {#adding-record-callbacks}
 

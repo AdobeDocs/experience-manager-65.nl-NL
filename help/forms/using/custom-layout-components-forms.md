@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Vereiste {#prerequisite}
 
-Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie [ Veranderende Lay-out van het Comité ](../../forms/using/layout-capabilities-adaptive-forms.md).
+Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie [&#x200B; Veranderende Lay-out van het Comité &#x200B;](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Indelingsonderdeel van deelvenster Adaptief formulier {#adaptive-form-panel-layout-component}
 
@@ -34,7 +34,7 @@ Met de component Indeling van het deelvenster Adaptief formulier bepaalt u hoe a
 
 qtip
 
-![ Lay-out CRX DE Momentopname van het Comité van de Douane ](assets/custom_layout_new.png)
+![&#x200B; Lay-out CRX DE Momentopname van het Comité van de Douane &#x200B;](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ qtip
 
 1. Open een adaptief formulier in de ontwerpmodus. De door u gedefinieerde deelvensterlay-out wordt toegevoegd aan de lijst voor het configureren van deelvensterlay-outs.
 
-   ![ de lay-out van het Comité van de Douane toont omhoog in de lijst van de paneellay-out ](assets/auth-layt.png) ![ Schermschot van adaptieve vorm, gebruikend de lay-out van het douanepaneel ](assets/s1.png) ![ het tonen van knevelfunctionaliteit van de douanelay-out ](assets/s2.png)
+   ![&#x200B; de lay-out van het Comité van de Douane toont omhoog in de lijst van de paneellay-out &#x200B;](assets/auth-layt.png) ![&#x200B; Schermschot van adaptieve vorm, gebruikend de lay-out van het douanepaneel &#x200B;](assets/s1.png) ![&#x200B; het tonen van knevelfunctionaliteit van de douanelay-out &#x200B;](assets/s2.png)
 
 Voorbeeld-ZIP voor een aangepaste deelvensterindeling en een adaptief formulier dat deze gebruikt.
 

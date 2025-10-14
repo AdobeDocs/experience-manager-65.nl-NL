@@ -32,7 +32,7 @@ Naast het gebruik van de specifieke functie Voorvertoning voor video, centrifuge
 >
 >Wanneer u op een webpage (Plaatsen) in Adobe Experience Manager bent, kunt u geen voorproef activa op **uitgeven** wijze. Ga naar de modus Voorbeeld door op **[!UICONTROL Preview]** in de rechterbovenhoek van de pagina te klikken.
 
-Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [ Kijker beheren vooraf instelt ](/help/assets/managing-viewer-presets.md).
+Om kijkersvoorinstellingen in of onbruikbaar te maken in het gebruikersinterface, zie [&#x200B; Kijker beheren vooraf instelt &#x200B;](/help/assets/managing-viewer-presets.md).
 
 **aan voorproefactiva die de softwareinterface gebruiken:**
 

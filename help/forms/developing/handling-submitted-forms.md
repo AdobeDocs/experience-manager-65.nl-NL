@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Web-based toepassingen die een gebruiker toelaten om interactieve vormen in te vullen vereisen dat de gegevens terug naar de server worden voorgelegd. Met de Forms-service kunt u de gegevens ophalen die de gebruiker in een interactief formulier heeft ingevoerd. Nadat u de gegevens hebt opgehaald, kunt u de gegevens verwerken om aan uw bedrijfsvereisten te voldoen. U kunt de gegevens bijvoorbeeld opslaan in een database, de gegevens naar een andere toepassing verzenden, de gegevens naar een andere service verzenden, de gegevens in een formulierontwerp samenvoegen, de gegevens weergeven in een webbrowser, enzovoort.
 
-Formuliergegevens worden naar de Forms-service verzonden als XML- of PDF-gegevens. Dit is een optie die in Designer is ingesteld. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat wordt verzonden als PDF-gegevens, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als een PDF-bestand of het formulier verzenden naar een andere service. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en vervolgens de formuliergegevens wilt gebruiken om een PDF-document te maken, roept u een andere AEM Forms-bewerking op. (Zie [ Creërend de Documenten van PDF met Voorgelegde Gegevens van XML ](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Formuliergegevens worden naar de Forms-service verzonden als XML- of PDF-gegevens. Dit is een optie die in Designer is ingesteld. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat wordt verzonden als PDF-gegevens, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als een PDF-bestand of het formulier verzenden naar een andere service. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en vervolgens de formuliergegevens wilt gebruiken om een PDF-document te maken, roept u een andere AEM Forms-bewerking op. (Zie [&#x200B; Creërend de Documenten van PDF met Voorgelegde Gegevens van XML &#x200B;](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 In het volgende diagram worden gegevens weergegeven die vanuit een interactief formulier dat in een webbrowser wordt weergegeven, worden verzonden naar een Java Server met de naam `HandleData` .
 
-![ hs_hs_handlesubmit ](assets/hs_hs_handlesubmit.png)
+![&#x200B; hs_hs_handlesubmit &#x200B;](assets/hs_hs_handlesubmit.png)
 
 De volgende lijst verklaart de stappen in het diagram.
 
@@ -58,24 +58,24 @@ De volgende lijst verklaart de stappen in het diagram.
 
 Wanneer formuliergegevens als XML worden verzonden, kunt u XML-gegevens ophalen die de verzonden gegevens vertegenwoordigen. Alle formuliervelden worden weergegeven als knooppunten in een XML-schema. De knoopwaarden komen overeen met de waarden die de gebruiker heeft ingevuld. Neem bijvoorbeeld een leningformulier waarin elk veld in het formulier wordt weergegeven als een knooppunt in de XML-gegevens. De waarde van elk knooppunt komt overeen met de waarde die een gebruiker invult. Stel dat een gebruiker het leningformulier vult met gegevens die in het volgende formulier worden getoond.
 
-![ hs_hs_loanformdata ](assets/hs_hs_loanformdata.png)
+![&#x200B; hs_hs_loanformdata &#x200B;](assets/hs_hs_loanformdata.png)
 
 In de volgende afbeelding ziet u de overeenkomstige XML-gegevens die zijn opgehaald met de Forms Service Client API.
 
-![ hs_hs_loandata ](assets/hs_hs_loandata.png)
+![&#x200B; hs_hs_loandata &#x200B;](assets/hs_hs_loandata.png)
 
 De velden in het leningformulier. Deze waarden kunnen worden opgehaald
 Java XML-klassen gebruiken.
 
 >[!NOTE]
 >
->Gegevens die als XML-gegevens moeten worden verzonden, moeten correct zijn geconfigureerd in Designer. Als u het formulierontwerp correct wilt configureren voor het verzenden van XML-gegevens, moet u ervoor zorgen dat de knop Verzenden die zich in het formulierontwerp bevindt, is ingesteld op het verzenden van XML-gegevens. Voor informatie over het plaatsen van de Submit knoop om de gegevens van XML voor te leggen, zie [ AEM Forms Designer ](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Gegevens die als XML-gegevens moeten worden verzonden, moeten correct zijn geconfigureerd in Designer. Als u het formulierontwerp correct wilt configureren voor het verzenden van XML-gegevens, moet u ervoor zorgen dat de knop Verzenden die zich in het formulierontwerp bevindt, is ingesteld op het verzenden van XML-gegevens. Voor informatie over het plaatsen van de Submit knoop om de gegevens van XML voor te leggen, zie [&#x200B; AEM Forms Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Ingediende PDF-gegevens verwerken {#handling-submitted-pdf-data}
 
 Neem bijvoorbeeld een webtoepassing die de Forms-service oproept. Nadat de Forms-service een interactief PDF-formulier heeft gerenderd naar een clientwebbrowser, vult de gebruiker het formulier in en verzendt het terug als PDF-gegevens. Wanneer de Forms-service de PDF-gegevens ontvangt, kunnen de PDF-gegevens naar een andere service worden verzonden of worden opgeslagen als een PDF-bestand. Het volgende diagram toont de logische stroom van de toepassing.
 
-![ hs_hs_savingforms ](assets/hs_hs_savingforms.png)
+![&#x200B; hs_hs_savingforms &#x200B;](assets/hs_hs_savingforms.png)
 
 In de volgende tabel worden de stappen in dit diagram beschreven.
 
@@ -112,7 +112,7 @@ Als formuliergegevens worden verzonden als UTF-16-URL-gegevens, vereist de clien
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Forms, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van Forms, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -164,7 +164,7 @@ De Forms-service retourneert de volgende waarden om aan te geven of de verwerkin
 
 >[!NOTE]
 >
->Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie [ Berekend de Gegevens van de Vorm ](/help/forms/developing/calculating-form-data.md#calculating-form-data).
+>Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie [&#x200B; Berekend de Gegevens van de Vorm &#x200B;](/help/forms/developing/calculating-form-data.md#calculating-form-data).
 
 **bepaalt als de vormvoorlegging dossiergehechtheid** bevat
 

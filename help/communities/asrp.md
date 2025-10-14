@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Wanneer AEM Communities wordt gevormd om ASRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
-Zie ook [ Kenmerken van Opties SRP ](/help/communities/working-with-srp.md#characteristics-of-srp-options) en [ Aanbevolen Topologieën ](/help/communities/topologies.md).
+Zie ook [&#x200B; Kenmerken van Opties SRP &#x200B;](/help/communities/working-with-srp.md#characteristics-of-srp-options) en [&#x200B; Aanbevolen Topologieën &#x200B;](/help/communities/topologies.md).
 
 ## Vereisten {#requirements}
 
@@ -42,13 +42,13 @@ De consument en geheime sleutels worden gedeeld over alle rapportseries voor een
 
 ### Selecteer ASRP {#select-asrp}
 
-De [ console van de Configuratie van de Opslag ](/help/communities/srp-config.md) staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
+De [&#x200B; console van de Configuratie van de Opslag &#x200B;](/help/communities/srp-config.md) staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
 
 **op AEM instantie van de Auteur:**
 
 * Navigeer vanuit de globale navigatie naar **[!UICONTROL Tools > Communities > Storage Configuration]** en selecteer **[!UICONTROL Adobe Storage Resource Provider (ASRP)]** .
 
-![ asrp-gebrek ](assets/asrp-default.png)
+![&#x200B; asrp-gebrek &#x200B;](assets/asrp-default.png)
 
 De volgende informatie is afkomstig uit het inrichtingsproces:
 
@@ -69,23 +69,23 @@ Na het voorleggen van de configuratie, test de verbinding:
 
   Voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag.
 
-* Zorg ervoor dat de plaats URLs voor profielgegevens van het Centrum van Gegevens door [ het externaliseren verbindingen ](#externalize-links) routable zijn.
+* Zorg ervoor dat de plaats URLs voor profielgegevens van het Centrum van Gegevens door [&#x200B; het externaliseren verbindingen &#x200B;](#externalize-links) routable zijn.
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutels worden alleen correct gecodeerd/gedecodeerd als de primaire Crypto-sleutel van Granite op alle AEM gelijk is.
 
-Volg de instructies bij [ Repliceer Crypto Sleutel ](/help/communities/deploy-communities.md#replicate-the-crypto-key).
+Volg de instructies bij [&#x200B; Repliceer Crypto Sleutel &#x200B;](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
 ### Koppelingen extern maken {#externalize-links}
 
-Voor correcte profiel en de verbindingen van het profielbeeld, ben zeker om [ behoorlijk te vormen de Verbinding uiterlijk ](/help/sites-developing/externalizer.md).
+Voor correcte profiel en de verbindingen van het profielbeeld, ben zeker om [&#x200B; behoorlijk te vormen de Verbinding uiterlijk &#x200B;](/help/sites-developing/externalizer.md).
 
 Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van Gegevens (eindpunt ASRP) routable zijn.
 
 ### Tijdsynchronisatie {#time-synchronization}
 
-Opdat authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met het [ Protocol van de Tijd van het Netwerk (NTP) ](https://www.ntp.org/).
+Opdat authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met het [&#x200B; Protocol van de Tijd van het Netwerk (NTP) &#x200B;](https://www.ntp.org/).
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
@@ -105,11 +105,11 @@ Op AEM instantie Auteur:
 
 >[!CAUTION]
 >
->Als u ASRP op een gepubliceerde communautaire plaats toelaat, is om het even welke UGC die reeds in [ JCR ](/help/communities/jsrp.md) wordt opgeslagen niet meer zichtbaar, aangezien er geen synchronisatie van gegevens tussen opslag op locatie en wolkenopslag is.
+>Als u ASRP op een gepubliceerde communautaire plaats toelaat, is om het even welke UGC die reeds in [&#x200B; JCR &#x200B;](/help/communities/jsrp.md) wordt opgeslagen niet meer zichtbaar, aangezien er geen synchronisatie van gegevens tussen opslag op locatie en wolkenopslag is.
 
-**`AEM Communities Extension`** werd eerder in AEM 6.0 sociale gemeenschappen geïntroduceerd als cloudservice. Vanaf AEM 6.1 Gemeenschappen, is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezochte ASRP van de [ console van de opslagconfiguratie ](/help/communities/srp-config.md).
+**`AEM Communities Extension`** werd eerder in AEM 6.0 sociale gemeenschappen geïntroduceerd als cloudservice. Vanaf AEM 6.1 Gemeenschappen, is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezochte ASRP van de [&#x200B; console van de opslagconfiguratie &#x200B;](/help/communities/srp-config.md).
 
-Wegens de nieuwe opslagstructuur, is het noodzakelijk om de [ verbetering ](/help/communities/upgrade.md#adobe-cloud-storage) instructies te volgen wanneer bevordering van sociale gemeenschappen aan Gemeenschappen.
+Wegens de nieuwe opslagstructuur, is het noodzakelijk om de [&#x200B; verbetering &#x200B;](/help/communities/upgrade.md#adobe-cloud-storage) instructies te volgen wanneer bevordering van sociale gemeenschappen aan Gemeenschappen.
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
@@ -122,13 +122,13 @@ Voor informatie betreffende *gebruikers*, *gebruikersprofielen* en *gebruikersgr
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als bevordering van een bestaande AEM 6.0 sociale communautaire plaats, ben zeker om de [ verbeteringsinstructies ](/help/communities/upgrade.md#adobe-cloud-storage) te volgen, anders lijkt UGC te worden verloren.
+Als bevordering van een bestaande AEM 6.0 sociale communautaire plaats, ben zeker om de [&#x200B; verbeteringsinstructies &#x200B;](/help/communities/upgrade.md#adobe-cloud-storage) te volgen, anders lijkt UGC te worden verloren.
 
 ### Verificatiefouten {#authentication-errors}
 
 Als het ontvangen van authentificatiefouten tegen het Centrum URL van Gegevens, en AEM error.log berichten over stabiele timestamps bevat, dan verifieer dat tijdsynchronisatie plaatsvindt.
 
-Gebruik een hulpmiddel zoals het [ Protocol van de Tijd van het Netwerk (NTP) ](https://www.ntp.org/) om alle AEM auteur te synchroniseren en servers te publiceren.
+Gebruik een hulpmiddel zoals het [&#x200B; Protocol van de Tijd van het Netwerk (NTP) &#x200B;](https://www.ntp.org/) om alle AEM auteur te synchroniseren en servers te publiceren.
 
 ### Nieuwe inhoud wordt niet weergegeven in zoekopdrachten {#new-content-does-not-appear-in-searches}
 
@@ -142,7 +142,7 @@ Zorg ervoor dat ASRP is gevormd om de standaardleverancier te zijn door de confi
 
 Ga bij alle auteurs en publiceer AEM instanties terug naar de opslagconfiguratieconsole of controleer de AEM opslagplaats.
 
-In JCR, als [/conf/global/settings/community ](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+In JCR, als [/conf/global/settings/community &#x200B;](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Bevat geen [ srpc ](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) knoop, betekent het dat de opslagleverancier JSRP is.
-* Als de srpc knoop bestaat en [ standaardconfiguratie ](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) knoop bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.
+* Bevat geen [&#x200B; srpc &#x200B;](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) knoop, betekent het dat de opslagleverancier JSRP is.
+* Als de srpc knoop bestaat en [&#x200B; standaardconfiguratie &#x200B;](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) knoop bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.

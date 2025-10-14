@@ -24,9 +24,9 @@ De volgende onderwerpen beschrijven hoe te om specifieke AEM plaatsingstaken te 
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [ hoe te Werkschema&#39;s en het Logboek van de Controle zuiveren ](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [&#x200B; hoe te Werkschema&#39;s en het Logboek van de Controle zuiveren &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
-* [ Prestaties die uitlijnen uiteinden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
+* [&#x200B; Prestaties die uitlijnen uiteinden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL)
 
 * [Functies uit het welkomstscherm verwijderen](/help/sites-developing/customizing-the-welcome-console.md)
 

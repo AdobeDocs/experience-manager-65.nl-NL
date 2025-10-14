@@ -25,7 +25,7 @@ Met Bates-nummering kunt u PDF-documenten samenstellen die unieke pagina-id&#39;
 
 In de volgende afbeelding ziet u een PDF-document dat een unieke id bevat in de koptekst van het document.
 
-![ au_au_batesnumber ](assets/au_au_batesnumber.png)
+![&#x200B; au_au_batesnumber &#x200B;](assets/au_au_batesnumber.png)
 
 In het kader van deze beschrijving wordt de unieke pagina-id in de koptekst van een document geplaatst. Stel dat het volgende DDX-document wordt gebruikt.
 
@@ -50,15 +50,15 @@ Dit DX- document voegt twee PDF documenten genoemd *map.pdf* en *richtingen.pdf*
 
 >[!NOTE]
 >
->Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. In deze sectie worden de concepten niet besproken, zoals het maken van een verzamelingsobject dat invoerdocumenten bevat of het extraheren van de resultaten van het geretourneerde verzamelingsobject. (Zie [ Programmatiatically het assembleren van de Documenten van PDF ](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. In deze sectie worden de concepten niet besproken, zoals het maken van een verzamelingsobject dat invoerdocumenten bevat of het extraheren van de resultaten van het geretourneerde verzamelingsobject. (Zie [&#x200B; Programmatiatically het assembleren van de Documenten van PDF &#x200B;](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een document DDX, zie [ de Dienst van de Assembler en de Verwijzing DDX ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een document DDX, zie [&#x200B; de Dienst van de Assembler en de Verwijzing DDX &#x200B;](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -84,7 +84,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een cliënt van de Assembler van de PDF**
 
@@ -112,7 +112,7 @@ De dienst van de Assembler keert een inzamelingsvoorwerp terug dat de baanresult
 
 >[!NOTE]
 >
->Een verzamelingsobject wordt geretourneerd wanneer u de bewerking `invokeDDX` aanroept. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van de PDF doorgeeft aan de Assembler-service. Als u echter slechts één invoerdocument van de PDF doorgeeft aan de service Assembler, moet u de bewerking `invokeOneDocument` aanroepen. Voor informatie over het gebruiken van deze verrichting, zie [ Assemblbling de Documenten van de PDF ](/help/forms/developing/assembling-encrypted-pdf-documents.md).
+>Een verzamelingsobject wordt geretourneerd wanneer u de bewerking `invokeDDX` aanroept. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van de PDF doorgeeft aan de Assembler-service. Als u echter slechts één invoerdocument van de PDF doorgeeft aan de service Assembler, moet u de bewerking `invokeOneDocument` aanroepen. Voor informatie over het gebruiken van deze verrichting, zie [&#x200B; Assemblbling de Documenten van de PDF &#x200B;](/help/forms/developing/assembling-encrypted-pdf-documents.md).
 
 **zie ook**
 

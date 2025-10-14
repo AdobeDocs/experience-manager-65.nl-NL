@@ -41,17 +41,17 @@ De Adobe Analytics-account moet:
 >
 >Het verstrekken van **voorrechten van de Beheerder** (binnen Adobe Analytics) is niet genoeg om een gebruiker toe te staan om van AEM met Adobe Analytics te verbinden. De rekening moet ook **voorrechten hebben van de Toegang van de Dienst van het 0&rbrace; Web.**
 
-![ chlimage_1-67 ](assets/chlimage_1-67.png)
+![&#x200B; chlimage_1-67 &#x200B;](assets/chlimage_1-67.png)
 
 Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt aanmelden. In een van de volgende gevallen:
 
-* [ het Teken van Adobe Experience Cloud ](https://experience.adobe.com/#/@login/home)
+* [&#x200B; het Teken van Adobe Experience Cloud &#x200B;](https://experience.adobe.com/#/@login/home)
 
-* [ het Teken van Adobe Analytics ](https://sc.omniture.com/login/)
+* [&#x200B; het Teken van Adobe Analytics &#x200B;](https://sc.omniture.com/login/)
 
 ### AEM configureren voor het gebruik van uw Adobe Analytics-datacenters {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [ gegevenscentra ](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=nl-NL) verzamelen, verwerken, en slaan gegevens verbonden aan uw het rapportreeks van Adobe Analytics op. Configureer AEM om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportenpakket. Het datacenter wordt vermeld in uw contract. Neem voor deze informatie contact op met een beheerder in uw organisatie.
+Adobe Analytics [&#x200B; gegevenscentra &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=nl-NL) verzamelen, verwerken, en slaan gegevens verbonden aan uw het rapportreeks van Adobe Analytics op. Configureer AEM om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportenpakket. Het datacenter wordt vermeld in uw contract. Neem voor deze informatie contact op met een beheerder in uw organisatie.
 
 Gebruik indien nodig het volgende om naar het juiste datacenter te worden geleid: `https://api.omniture.com/` .
 
@@ -63,11 +63,11 @@ Als uw organisatie gegevensinzameling of herwinning van een specifiek gegevensce
 | Singapore | `https://api4.omniture.com/` |
 | Oregon | `https://api5.omniture.com/` |
 
-Gebruik de [ Console van het Web om de bundel OSGi ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) te vormen **Adobe AEM de Cliënt van HTTP van Analytics**. Voeg het **Centrum URL van Gegevens** voor het gegevenscentrum toe dat gastheren een rapportreeks waarvoor uw AEM pagina&#39;s gegevens verzamelen.
+Gebruik de [&#x200B; Console van het Web om de bundel OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) te vormen **Adobe AEM de Cliënt van HTTP van Analytics**. Voeg het **Centrum URL van Gegevens** voor het gegevenscentrum toe dat gastheren een rapportreeks waarvoor uw AEM pagina&#39;s gegevens verzamelen.
 
-![ a-07 ](assets/aa-07.png)
+![&#x200B; a-07 &#x200B;](assets/aa-07.png)
 
-1. Open de webconsole in uw webbrowser. ([ https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Open de webconsole in uw webbrowser. ([&#x200B; https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Voer uw referenties in om toegang te krijgen tot de console.
 
    >[!NOTE]
@@ -86,7 +86,7 @@ Gebruik de [ Console van het Web om de bundel OSGi ](/help/sites-deploying/confi
 >
 >Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
+>De [&#x200B; insteekmodule ActivityMap die door Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
 
 ## Configureren voor de Activity Map {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Gebruik de [ Console van het Web om de bundel OSGi ](/help/sites-deploying/confi
 >
 >Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
+>De [&#x200B; insteekmodule ActivityMap die door Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
 
 ## Een Adobe Analytics-framework maken {#creating-a-adobe-analytics-framework}
 
@@ -132,7 +132,7 @@ Voor identiteitskaart van de Reeks van het Rapport (RSID) die u gebruikt, kunt u
 
 1. Om de serverinstanties te selecteren die u informatie naar de Reeks van het Rapport wilt verzenden, gebruik de **drop-down Wijze van de Looppas** (naast Reeks van het Rapport identiteitskaart).
 
-   ![ a-framework-01 ](assets/aa-framework-01.png)
+   ![&#x200B; a-framework-01 &#x200B;](assets/aa-framework-01.png)
 
 1. Om het kader beschikbaar te maken op het publiceren geval van uw plaats, op het **lusje van de Pagina** van hulplid, klik **Activate Kader.**
 
@@ -146,7 +146,7 @@ Met het raamsysteem kunt u de serverinstellingen binnen elk Adobe Analytics-fram
 
 Begin door het paneel te openen. Druk de benedenwaartse pijl naast **Servers**:
 
-![ server_001 ](assets/server_001.png)
+![&#x200B; server_001 &#x200B;](assets/server_001.png)
 
 * **het Volgen Server**
 
@@ -183,14 +183,14 @@ Afstammingen van de pagina nemen de koppeling met het framework over. Wanneer u 
 1. Selecteer **sparen &amp; Sluiten**.
 1. Om de pagina en om het even welke verbonden configuraties/dossiers te activeren, **[Publish](/help/sites-authoring/publishing-pages.md)** de pagina.
 1. De definitieve stap is de pagina op te bezoeken publiceert instantie en onderzoek naar een sleutelwoord (bijvoorbeeld, augplant) gebruikend de **component van het Onderzoek**.
-1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld, [ Debugger van Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL).
+1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld, [&#x200B; Debugger van Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=nl-NL).
 1. Gebruikend het voorgelegde voorbeeld, zou de vraag de ingegane waarde (d.w.z., augplant) in eVar7 moeten bevatten en de gebeurtenislijst zou event3 moeten bevatten.
 
 ### Paginaweergaven {#page-views}
 
 Wanneer een pagina aan een kader van Adobe Analytics wordt geassocieerd, kan het aantal paginameningen in de mening van de Lijst van de console van Plaatsen worden getoond.
 
-Zie [ het zien van de Gegevens van de Analytics van de Pagina ](/help/sites-authoring/page-analytics-using.md) voor verdere details.
+Zie [&#x200B; het zien van de Gegevens van de Analytics van de Pagina &#x200B;](/help/sites-authoring/page-analytics-using.md) voor verdere details.
 
 ### Het Interval van de Invoer vormen {#configuring-the-import-interval}
 
@@ -208,7 +208,7 @@ De standaardwaarde is `10000` . Aangezien dit in milliseconden is beantwoordt he
 A `cron` expression to determine the frequency for fetching the Analytics Report.
 De standaardwaarde is `0 0 0/12 * * ?` ; dit komt overeen met 12 opgehaalde gegevens per uur.
 
-Om deze dienst te vormen OSGi, kunt u of de [ Console van het Web ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [ osgiConfig knoop in de bewaarplaats ](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) gebruiken (de dienst PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+Om deze dienst te vormen OSGi, kunt u of de [&#x200B; Console van het Web &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [&#x200B; osgiConfig knoop in de bewaarplaats &#x200B;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) gebruiken (de dienst PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
 ## Adobe Analytics-configuraties en/of frameworks bewerken {#editing-adobe-analytics-configurations-and-or-frameworks}
 
@@ -218,6 +218,6 @@ Wanneer het uitgeven van een configuratie van Adobe Analytics, druk **uitgeven**
 
 ## Adobe Analytics-frameworks verwijderen {#deleting-adobe-analytics-frameworks}
 
-Om een kader van Adobe Analytics te schrappen, open eerst [ het voor het uitgeven ](#editing-adobe-analytics-configurations-and-or-frameworks).
+Om een kader van Adobe Analytics te schrappen, open eerst [&#x200B; het voor het uitgeven &#x200B;](#editing-adobe-analytics-configurations-and-or-frameworks).
 
 Dan selecteer **Kader van de Schrapping** van het **Pagina** lusje van sidekick.

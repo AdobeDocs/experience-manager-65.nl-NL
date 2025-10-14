@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Forms Repositoregeling Herstructurering in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de Oplossing van AEM Forms beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals die op de ouder [&#x200B; Herstructurering van de Bewaarplaats in AEM 6.5 &#x200B;](/help/sites-deploying/repository-restructuring.md) pagina wordt beschreven, zouden de klanten die aan AEM 6.5 worden bevorderd deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de Oplossing van AEM Forms beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **met 6.5 Verbetering**
 
@@ -95,7 +95,7 @@ Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/
 | **Vorige plaats** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nieuwe plaats** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **begeleiding van de Herstructurering** | Het [ Uitgestelde nut van de Migratie van de Inhoud ](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
+| **begeleiding van de Herstructurering** | Het [&#x200B; Uitgestelde nut van de Migratie van de Inhoud &#x200B;](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
 | **Nota&#39;s** | NVT |
 
 ### Configuraties van Recaptcha-Cloud Servicen {#recaptcha-cloud-service-configurations}
@@ -103,7 +103,7 @@ Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/
 | **Vorige plaats** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nieuwe plaats** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **begeleiding van de Herstructurering** | Het [ Uitgestelde nut van de Migratie van de Inhoud ](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
+| **begeleiding van de Herstructurering** | Het [&#x200B; Uitgestelde nut van de Migratie van de Inhoud &#x200B;](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
 | **Nota&#39;s** | NVT |
 
 ### Configuraties van Typekit-Cloud Servicen {#typekit-cloud-service-configurations}
@@ -111,7 +111,7 @@ Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/
 | **Vorige plaats** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nieuwe plaats** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **begeleiding van de Herstructurering** | Het [ Uitgestelde nut van de Migratie van de Inhoud ](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
+| **begeleiding van de Herstructurering** | Het [&#x200B; Uitgestelde nut van de Migratie van de Inhoud &#x200B;](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
 | **Nota&#39;s** | NVT |
 
 ### Dic {#misc-1}
@@ -119,7 +119,7 @@ Zoals die op de ouder [ Herstructurering van de Bewaarplaats in AEM 6.5 ](/help/
 | **Vorige plaats** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nieuwe plaats** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **begeleiding van de Herstructurering** | Het [ Uitgestelde nut van de Migratie van de Inhoud ](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
+| **begeleiding van de Herstructurering** | Het [&#x200B; Uitgestelde nut van de Migratie van de Inhoud &#x200B;](/help/sites-deploying/lazy-content-migration.md) dat van de Migratie UI van Forms moet worden teweeggebracht. |
 | **Nota&#39;s** | NVT |
 
 | **Vorige plaats** | `/etc/designs/fd/fp` |

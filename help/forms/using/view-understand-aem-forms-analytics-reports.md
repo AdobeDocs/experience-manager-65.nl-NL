@@ -22,11 +22,11 @@ Adobe Experience Manager Forms is geïntegreerd met Adobe Analytics waarmee u pr
 
 ## Analyses instellen {#setting-up-analytics}
 
-De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Voor informatie over het installeren van het toe:voegen-op pakket, zie [ Installerend en het vormen AEM Forms ](../../forms/using/installing-configuring-aem-forms-osgi.md).
+De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Voor informatie over het installeren van het toe:voegen-op pakket, zie [&#x200B; Installerend en het vormen AEM Forms &#x200B;](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Voor informatie over de oplossing, zie [ Adobe Analytics ](https://www.adobe.com/solutions/digital-analytics.html).
+Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Voor informatie over de oplossing, zie [&#x200B; Adobe Analytics &#x200B;](https://www.adobe.com/solutions/digital-analytics.html).
 
-Zodra u het AEM Forms toe:voegen-op pakket en een rekening van Adobe Analytics hebt, integreer de rekening van Adobe Analytics met AEM Forms en laat het volgen op uw vormen of documenten zoals die in [ worden beschreven toe vormen analyses en rapporten ](../../forms/using/configure-analytics-forms-documents.md).
+Zodra u het AEM Forms toe:voegen-op pakket en een rekening van Adobe Analytics hebt, integreer de rekening van Adobe Analytics met AEM Forms en laat het volgen op uw vormen of documenten zoals die in [&#x200B; worden beschreven toe vormen analyses en rapporten &#x200B;](../../forms/using/configure-analytics-forms-documents.md).
 
 ### Hoe gebruikersinteractiegegevens worden vastgelegd {#how-user-interaction-information-is-recorded}
 
@@ -55,13 +55,13 @@ Voer de volgende stappen uit om analyserapporten weer te geven:
 1. Selecteer het formulier waarvoor u de analyserapporten wilt weergeven.
 1. Selecteer **Meer > de Rapporten van de Analyse**.
 
-![ analyticsreport ](assets/analyticsreport.png)
+![&#x200B; analyticsreport &#x200B;](assets/analyticsreport.png)
 
 **A.** het bevel van het Rapport van de Analyse
 
 AEM Forms geeft analyserapporten voor het formulier en voor elk deelvenster in het formulier weer, zoals hieronder wordt weergegeven.
 
-![ Samenvattingsrapport van een adaptieve vorm ](assets/analyticsdashboard_callout.png)
+![&#x200B; Samenvattingsrapport van een adaptieve vorm &#x200B;](assets/analyticsdashboard_callout.png)
 
 **A.** Conversies **B.** Vorm-vlakke samenvatting **C.** Comité-vlakke samenvatting **D.** Browsers van bezoekers - filter **E.** OS van bezoekers - filter **F.** Taal van bezoekers - filter
 
@@ -71,7 +71,7 @@ Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U ku
 >
 >De opties zoals Laatste 7 dagen en Laatste 15 dagen bevatten geen gegevens voor de dag waarop u het analyserapport genereert. Om de gegevens van de huidige dag te omvatten, moet u de datumwaaier met inbegrip van de huidige dag specificeren en dan het rapport in werking stellen.
 
-![ datum-waaier ](assets/date-range.png)
+![&#x200B; datum-waaier &#x200B;](assets/date-range.png)
 
 ### Omzettingen grafiek voor adaptieve en HTML5 vormen {#conversions-graph-for-adaptive-and-html-forms}
 
@@ -81,7 +81,7 @@ De omzettingsgrafiek op formulierniveau geeft u inzicht in hoe het formulier de 
 * **Bezoekers**: Het aantal bezoekers aan de vorm
 * **Voorleggen**: Aantal tijden de vorm wordt voorgelegd
 
-![ omzetting-grafiek ](assets/conversion-graph.png)
+![&#x200B; omzetting-grafiek &#x200B;](assets/conversion-graph.png)
 
 ### Analyserapport voor adaptieve en HTML5-formulieren {#analytics-report-for-adaptive-and-html-forms}
 
@@ -92,9 +92,9 @@ In de overzichtssectie op formulierniveau kunt u zien hoe het formulier de volge
 * **Concepten**: Aantal tijden de vorm is bewaard als ontwerp
 * **Voorleggen**: Aantal tijden de vorm is voorgelegd
 * **Afbreken**: Aantal tijden begonnen de gebruikers de vorm te vullen en dan verlaten zonder de vorm te voltooien
-* **Unieke Bezoekers**: Aantal tijden de vorm wordt &quot;teruggegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers, zie [ Unieke Bezoekers, Bebezoeken, en klantengedrag ](https://helpx.adobe.com/nl/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Unieke Bezoekers**: Aantal tijden de vorm wordt &quot;teruggegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers, zie [&#x200B; Unieke Bezoekers, Bebezoeken, en klantengedrag &#x200B;](https://helpx.adobe.com/nl/analytics/kb/unique-visitors-visitor-behavior.html).
 
-![ Uitgebreide vorm-vlakke samenvattingsanalyse rapport ](assets/analytics-report.png)
+![&#x200B; Uitgebreide vorm-vlakke samenvattingsanalyse rapport &#x200B;](assets/analytics-report.png)
 
 ### Deelvensterrapport {#bottom-summary-report}
 
@@ -108,7 +108,7 @@ In het overzichtsgedeelte op paneelniveau vindt u de volgende informatie over el
 
 U kunt ook details voor elk deelvenster weergeven door in het deelvensterrapport op de naam van een deelvenster te klikken.
 
-![ Gedetailleerd paneelrapport ](assets/panel-report-detailed.png)
+![&#x200B; Gedetailleerd paneelrapport &#x200B;](assets/panel-report-detailed.png)
 
 Het gedetailleerde rapport bevat waarden voor alle velden in het deelvenster.
 
@@ -126,7 +126,7 @@ In de tabellen Browserdistributie, OS Distribution en Taaldistributie worden de 
 
 Als u de analysegegevens verder wilt filteren, klikt u op een item in een van de tabellen. Als u bijvoorbeeld op Google Chrome in de tabel Browser Distribution klikt, wordt het rapport opnieuw weergegeven met de volgende gegevens die relevant zijn voor de Google Chrome-browser:
 
-![ Filter toegepast op Analytics rapport - Google Chrome ](assets/filter-1.png)
+![&#x200B; Filter toegepast op Analytics rapport - Google Chrome &#x200B;](assets/filter-1.png)
 
 Als u het paneelrapport na het toepassen van een filter bekijkt, worden de gegevens van het paneelrapport ook getoond volgens de toegepaste filter.
 
@@ -136,10 +136,10 @@ Nadat een filter is toegepast:
 * De tabel van het toegepaste filter verdwijnt.
 * U kunt op de knop Sluiten (hieronder gemarkeerd) klikken om het toegepaste filter te verwijderen.
 
-![ dicht knoop om de toegepaste filter ](assets/close-filter.png) te verwijderen
+![&#x200B; dicht knoop om de toegepaste filter &#x200B;](assets/close-filter.png) te verwijderen
 
 ### A/B-tests {#a-b-testing}
 
 Als u A/B tests hebt toegelaten en opstelling voor de vorm, heeft de rapportpagina een drop-down u kunt gebruiken om het A/B testende rapport te tonen. In het testrapport A/B worden de prestaties van twee versies van het formulier vergeleken terwijl u het instelt.
 
-Voor meer informatie over het testen A/B, zie [ A/B test voor adaptieve vormen creëren en leiden ](../../forms/using/ab-testing-adaptive-forms.md).
+Voor meer informatie over het testen A/B, zie [&#x200B; A/B test voor adaptieve vormen creëren en leiden &#x200B;](../../forms/using/ab-testing-adaptive-forms.md).

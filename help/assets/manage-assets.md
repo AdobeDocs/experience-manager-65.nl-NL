@@ -19,12 +19,12 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 In [!DNL Adobe Experience Manager Assets] kunt u meer doen dan uw elementen opslaan en beheren. [!DNL Experience Manager] biedt mogelijkheden voor bedrijfsmiddelenbeheer. U kunt elementen bewerken en delen, geavanceerde zoekopdrachten uitvoeren en meerdere uitvoeringen van tientallen ondersteunde bestandsindelingen maken. U kunt ook versies en digitale rechten beheren, de verwerking van elementen automatiseren, metagegevens beheren en besturen, samenwerken met annotaties en nog veel meer.
 
-In dit artikel worden de elementaire taken voor middelenbeheer beschreven, zoals maken of uploaden; updates van metagegevens, kopiëren, verplaatsen en verwijderen, publiceren, verwijderen en zoeken naar elementen. Om het gebruikersinterface te begrijpen, zie [ begonnen worden met activa gebruikersinterface ](/help/sites-authoring/basic-handling.md). Om de Fragmenten van de Inhoud te beheren, zie [ de activa van Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments-managing.md) beheren.
+In dit artikel worden de elementaire taken voor middelenbeheer beschreven, zoals maken of uploaden; updates van metagegevens, kopiëren, verplaatsen en verwijderen, publiceren, verwijderen en zoeken naar elementen. Om het gebruikersinterface te begrijpen, zie [&#x200B; begonnen worden met activa gebruikersinterface &#x200B;](/help/sites-authoring/basic-handling.md). Om de Fragmenten van de Inhoud te beheren, zie [&#x200B; de activa van Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-managing.md) beheren.
 
 ## Mappen maken {#creating-folders}
 
@@ -57,7 +57,7 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 
 >[!NOTE]
 >
->In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. Voor het configureren van het uploaden van middelen groter dan 2 GB tot 15 GB, raadpleegt u [ (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB ](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb) .
+>In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. Voor het configureren van het uploaden van middelen groter dan 2 GB tot 15 GB, raadpleegt u [&#x200B; (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB &#x200B;](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb) .
 
 >[!IMPORTANT]
 >
@@ -67,9 +67,9 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 
 U kunt ervoor kiezen elementen te uploaden naar mappen waaraan al dan niet een verwerkingsprofiel is toegewezen.
 
-Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in de **kolom van het Profiel van de Verwerking**. Zie [ Profielen van de Verwerking ](/help/assets/processing-profiles.md).
+Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in de **kolom van het Profiel van de Verwerking**. Zie [&#x200B; Profielen van de Verwerking &#x200B;](/help/assets/processing-profiles.md).
 
-Alvorens een activa te uploaden, zorg ervoor dat het in a [ formaat ](/help/assets/assets-formats.md) is dat [!DNL Experience Manager Assets] steunt.
+Alvorens een activa te uploaden, zorg ervoor dat het in a [&#x200B; formaat &#x200B;](/help/assets/assets-formats.md) is dat [!DNL Experience Manager Assets] steunt.
 
 1. Navigeer in de gebruikersinterface van [!DNL Assets] naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
@@ -77,13 +77,13 @@ Alvorens een activa te uploaden, zorg ervoor dat het in a [ formaat ](/help/asse
    * Klik op **[!UICONTROL Create]** op de werkbalk. Klik vervolgens op **[!UICONTROL Files]** in het menu. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de gebruikersinterface van [!DNL Assets] . Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
 
-   ![ creeer optie om activa ](assets/create-options.png) te uploaden
+   ![&#x200B; creeer optie om activa &#x200B;](assets/create-options.png) te uploaden
 
    Als u meerdere bestanden wilt selecteren, selecteert u de `Ctrl` - of `Command` -toets en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
 
    U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Klik op **[!UICONTROL Pause]** naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
 
-   ![ uploadt activa voortgangsbar ](assets/upload-progress-bar.png)
+   ![&#x200B; uploadt activa voortgangsbar &#x200B;](assets/upload-progress-bar.png)
 
 De omvang waarboven een actief als een groot actief wordt beschouwd, is configureerbaar. U kunt het systeem bijvoorbeeld zodanig configureren dat elementen van meer dan 1000 MB (in plaats van 500 MB) als grote elementen worden beschouwd. In dit geval wordt **[!UICONTROL Pause]** weergegeven op de voortgangsbalk wanneer bestanden van meer dan 1000 MB worden geüpload.
 
@@ -103,7 +103,7 @@ Ga naar `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.s
 
 >[!CAUTION]
 >
->Het uploaden van de brok wordt teweeggebracht wanneer de standaardwaarde 500 MB is en de brokgrootte 50 MB is. Als u [ Apache Jackrabbit Oak TokenConfiguration ](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=nl-NL) uitgeeft en `timeout configuration` aan minder dan de tijd plaatst het voor activa aan upload neemt, ontmoet u een situatie van de zittingsonderbreking terwijl de activa uploadt lopend is. Wijzig daarom de `chunkUploadMinFileSize` en `chunksize` zodanig dat elke segmentaanvraag de sessie vernieuwt.
+>Het uploaden van de brok wordt teweeggebracht wanneer de standaardwaarde 500 MB is en de brokgrootte 50 MB is. Als u [&#x200B; Apache Jackrabbit Oak TokenConfiguration &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=nl-NL) uitgeeft en `timeout configuration` aan minder dan de tijd plaatst het voor activa aan upload neemt, ontmoet u een situatie van de zittingsonderbreking terwijl de activa uploadt lopend is. Wijzig daarom de `chunkUploadMinFileSize` en `chunksize` zodanig dat elke segmentaanvraag de sessie vernieuwt.
 >
 >Op basis van de time-out bij verlopen van de referentie, de latentie, de bandbreedte en de verwachte gelijktijdige uploads, is de hoogste waarde waarmee u ervoor kunt zorgen dat het volgende wordt gekozen:
 >
@@ -115,7 +115,7 @@ Als u een element uploadt met dezelfde naam als een element dat al beschikbaar i
 
 U kunt een bestaand element vervangen, een andere versie maken of beide behouden door de naam van het nieuwe element dat wordt geüpload te wijzigen. Als u een bestaand element vervangt, worden de metagegevens voor het element en eventuele eerdere wijzigingen (bijvoorbeeld notities aanbrengen of uitsnijden) die u in het bestaande element hebt aangebracht, verwijderd. Als u ervoor kiest beide elementen te behouden, wordt de naam van het nieuwe element gewijzigd in het nummer `1` dat aan de naam wordt toegevoegd.
 
-![ de dialoog van het Conflict van de Naam om het conflict van de activanaam op te lossen ](assets/resolve-naming-conflict.png)
+![&#x200B; de dialoog van het Conflict van de Naam om het conflict van de activanaam op te lossen &#x200B;](assets/resolve-naming-conflict.png)
 
 >[!NOTE]
 >
@@ -127,9 +127,9 @@ Als het element dat u uploadt, bestaat in [!DNL Assets] , wordt in het dialoogve
 
 >[!NOTE]
 >
->Het dialoogvenster [!UICONTROL Duplicates Detected] wordt alleen weergegeven wanneer de functie voor dubbele detectie is ingeschakeld. Om de dubbele opsporingseigenschap toe te laten, zie [ toelaten Dubbele Opsporing ](/help/assets/duplicate-detection.md).
+>Het dialoogvenster [!UICONTROL Duplicates Detected] wordt alleen weergegeven wanneer de functie voor dubbele detectie is ingeschakeld. Om de dubbele opsporingseigenschap toe te laten, zie [&#x200B; toelaten Dubbele Opsporing &#x200B;](/help/assets/duplicate-detection.md).
 
-![ Dubbele Gedetecteerde dialoog van Activa ](assets/duplicate-asset-detected.png)
+![&#x200B; Dubbele Gedetecteerde dialoog van Activa &#x200B;](assets/duplicate-asset-detected.png)
 
 Als u het gedupliceerde element wilt behouden in [!DNL Assets] , klikt u op **[!UICONTROL Keep]** . Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]** .
 
@@ -144,7 +144,7 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet
 
 Voeg geen speciale tekens toe aan de extensies van de bestandsnamen van elementen.
 
-![ uploadt de voortgangsdialoog toont status van met succes geuploade dossiers en dossiers die er niet in slagen te uploaden ](assets/bulk-upload-progress.png)
+![&#x200B; uploadt de voortgangsdialoog toont status van met succes geuploade dossiers en dossiers die er niet in slagen te uploaden &#x200B;](assets/bulk-upload-progress.png)
 
 Daarnaast wordt in de gebruikersinterface van [!DNL Assets] het element weergegeven dat u het laatst hebt geüpload of de map die u het eerst hebt gemaakt.
 
@@ -166,11 +166,11 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 >[!NOTE]
 >
->In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. Voor het configureren van het uploaden van middelen groter dan 2 GB tot 15 GB, raadpleegt u [ (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB ](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb) .
+>In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. Voor het configureren van het uploaden van middelen groter dan 2 GB tot 15 GB, raadpleegt u [&#x200B; (Optioneel) Dynamic Media configureren - Scene7-modus voor het uploaden van middelen groter dan 2 GB &#x200B;](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb) .
 
 >[!NOTE]
 >
->Als u elementen wilt uploaden via FTP in de modus Dynamic Media - Scene7, installeert u Feature Pack 18912 op de auteur-exemplaren van [!DNL Experience Manager] . De Steun van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support) om toegang tot FP-18912 te krijgen en de opstelling van uw rekening van FTP te voltooien.  Voor meer informatie, zie [ eigenschappak 18912 voor bulkactiva migratie ](/help/assets/bulk-ingest-migrate.md) installeren.
+>Als u elementen wilt uploaden via FTP in de modus Dynamic Media - Scene7, installeert u Feature Pack 18912 op de auteur-exemplaren van [!DNL Experience Manager] . De Steun van de Klant van de Adobe van het contact [&#128279;](https://experienceleague.adobe.com/nl?support-solution=General#support) om toegang tot FP-18912 te krijgen en de opstelling van uw rekening van FTP te voltooien.  Voor meer informatie, zie [&#x200B; eigenschappak 18912 voor bulkactiva migratie &#x200B;](/help/assets/bulk-ingest-migrate.md) installeren.
 >
 >Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in [!DNL Experience Manager] zijn opgegeven, genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
@@ -178,7 +178,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
 
-1. Open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=nl-NL#system-requirements-dmc-app), dan login aan uw rekening.
 
    Uw aanmeldingsgegevens en aanmelding zijn door de Adobe opgegeven op het moment van levering. Neem contact op met de Klantenondersteuning van de Adobe als u deze informatie niet hebt.
 
@@ -187,7 +187,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 1. Kies links op de pagina een FTP-map waaruit u bestanden wilt uploaden. Kies rechts op de pagina een doelmap.
 1. Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Job Options]** en stel vervolgens de gewenste opties in op basis van de elementen in de map die u hebt geselecteerd.
 
-   Zie [ de Opties van de Baan van uploaden ](#upload-job-options).
+   Zie [&#x200B; de Opties van de Baan van uploaden &#x200B;](#upload-job-options).
 
    >[!NOTE]
    >
@@ -212,13 +212,13 @@ Als u een uploadtaak die wordt uitgevoerd wilt annuleren, klikt u op **[!UICONTR
 | | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in [!DNL Experience Manager Assets] . |
 | | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten uit te snijden. U kunt ook Bijsnijden kiezen op het menu van het Gewas en deze opties kiezen:<br> **weg Verkleinen Gebaseerd op** <ul><li>**Kleur** - kies de optie van de Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie** - kies de optie van de Transparantie.<br> **Tolerantie** - sleep de schuif om een tolerantie van 0 door 1 te specificeren. Voor het in orde maken die op kleur wordt gebaseerd, specificeer 0 aan gewassenpixel slechts als zij precies de kleur aanpassen u in de hoek van het beeld selecteerde. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br> voor het in orde maken die op transparantie wordt gebaseerd, specificeer 0 aan gewassenpixel slechts als zij transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br> Deze gewassenopties zijn niet-destructief. |
 | | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: de kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimtegegevens bevatten; er is geen kleuromzetting. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: de oorspronkelijke kleuren blijven behouden zonder kleuromzetting op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publish-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Met Aangepast van > naar <br> opent u menu&#39;s, zodat u een optie kunt kiezen voor Omzetten van en Omzetten in kleurruimte. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
-| | Opties voor het bewerken van afbeeldingen | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> zie [ Plaatsende opties voor beeld geeft bij upload ](#setting-image-editing-options-at-upload) uit. |
-| | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> zie [ Plaatsende PostScript en Illustrator uploadt opties ](#setting-postscript-and-illustrator-upload-options). |
-| | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden genoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in [!DNL Experience Manager] .<br> zie [ Plaatsend Photoshop uploadt opties ](#setting-photoshop-upload-options). |
-| | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> eCatalogs wordt niet gesteund in [!DNL Experience Manager]. <br> zie [ Plaatsende PDF uploadopties ](#setting-pdf-upload-options).<br>**Nota**: Het maximumaantal pagina&#39;s voor een PDF dat voor extractie moet worden overwogen is 5000 voor nieuwe uploads. Deze limiet verandert in 100 pagina&#39;s (voor alle PDF) op 31 december 2022. Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md). |
-| | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> zie [ Plaatsende PostScript en Illustrator uploadt opties ](#setting-postscript-and-illustrator-upload-options). |
-| | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> zie [ Plaatsende eVideo uploadt opties ](#setting-evideo-upload-options). |
-| | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> zie [ Vormende Partij plaatsen vooraf instelt aan Auto-produceerde de Reeksen van het Beeld en de Reeksen van de Draai ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) om meer over het creëren van partijreeks te leren vooraf instelt.<br> zie [ Plaatsende Geplaatste Partij vooraf instelt bij upload ](#setting-batch-set-presets-at-upload). |
+| | Opties voor het bewerken van afbeeldingen | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> zie [&#x200B; Plaatsende opties voor beeld geeft bij upload &#x200B;](#setting-image-editing-options-at-upload) uit. |
+| | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> zie [&#x200B; Plaatsende PostScript en Illustrator uploadt opties &#x200B;](#setting-postscript-and-illustrator-upload-options). |
+| | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden genoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in [!DNL Experience Manager] .<br> zie [&#x200B; Plaatsend Photoshop uploadt opties &#x200B;](#setting-photoshop-upload-options). |
+| | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> eCatalogs wordt niet gesteund in [!DNL Experience Manager]. <br> zie [&#x200B; Plaatsende PDF uploadopties &#x200B;](#setting-pdf-upload-options).<br>**Nota**: Het maximumaantal pagina&#39;s voor een PDF dat voor extractie moet worden overwogen is 5000 voor nieuwe uploads. Deze limiet verandert in 100 pagina&#39;s (voor alle PDF) op 31 december 2022. Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitations.md). |
+| | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> zie [&#x200B; Plaatsende PostScript en Illustrator uploadt opties &#x200B;](#setting-postscript-and-illustrator-upload-options). |
+| | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> zie [&#x200B; Plaatsende eVideo uploadt opties &#x200B;](#setting-evideo-upload-options). |
+| | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> zie [&#x200B; Vormende Partij plaatsen vooraf instelt aan Auto-produceerde de Reeksen van het Beeld en de Reeksen van de Draai &#x200B;](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) om meer over het creëren van partijreeks te leren vooraf instelt.<br> zie [&#x200B; Plaatsende Geplaatste Partij vooraf instelt bij upload &#x200B;](#setting-batch-set-presets-at-upload). |
 
 #### Opties instellen voor afbeeldingsbewerkingen tijdens het uploaden {#setting-image-editing-options-at-upload}
 
@@ -326,7 +326,7 @@ U transcodeert een videobestand door een keuze te maken uit verschillende videov
 
 Als u automatisch een set afbeeldingen of een set rotaties wilt maken van geüploade afbeeldingen, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren.
 
-Zie [ Vormende Geplaatst vooraf instelt van de Partij om de Reeksen van het Beeld Auto-Genereren en de Reeksen van de Rotatie ](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) te leren meer over het creëren van partijreeks vooraf instelt.
+Zie [&#x200B; Vormende Geplaatst vooraf instelt van de Partij om de Reeksen van het Beeld Auto-Genereren en de Reeksen van de Rotatie &#x200B;](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) te leren meer over het creëren van partijreeks vooraf instelt.
 
 ### Gestroomde uploads {#streamed-uploads}
 
@@ -344,14 +344,14 @@ Selecteer één ZIP-archief tegelijk, klik op **[!UICONTROL Extract Archive]** e
 
 Nadat de extractie is voltooid, geeft [!DNL Experience Manager] een melding weer in het systeemvak. Terwijl [!DNL Experience Manager] het ZIP-bestand extraheert, kunt u teruggaan naar uw werk zonder de extractie te onderbreken.
 
-![ Bericht van het dossier van het PIT extractie ](assets/Zip-extraction-notification.png)
+![&#x200B; Bericht van het dossier van het PIT extractie &#x200B;](assets/Zip-extraction-notification.png)
 
 Enkele beperkingen van de functie zijn:
 
 * Als er op de bestemming een map met dezelfde naam staat, worden de elementen uit het ZIP-bestand geëxtraheerd naar de bestaande map.
 * Als u de extractie annuleert, worden de reeds geëxtraheerde elementen niet verwijderd.
 * U kunt niet twee ZIP-bestanden tegelijk selecteren en extraheren. U kunt slechts één ZIP-archief tegelijk extraheren.
-* Wanneer het uploaden van een archief van het PIT, als de uploaddialoog een 500 serverfout toont, probeer na het installeren van [ het recentste Pak van de Dienst ](/help/release-notes/release-notes.md) opnieuw.
+* Wanneer het uploaden van een archief van het PIT, als de uploaddialoog een 500 serverfout toont, probeer na het installeren van [&#x200B; het recentste Pak van de Dienst &#x200B;](/help/release-notes/release-notes.md) opnieuw.
 
 ## Elementen voorvertonen {#previewing-assets}
 
@@ -360,9 +360,9 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 1. Navigeer in de gebruikersinterface van [!DNL Assets] naar de locatie van het element waarvan u een voorvertoning wilt weergeven.
 1. Klik op het gewenste element, zodat u het kunt openen.
 
-1. Op de voorproefwijze, zijn de gezoemopties beschikbaar voor [ gesteunde types van Beeld ](/help/assets/assets-formats.md#supported-raster-image-formats) (met interactieve het uitgeven).
+1. Op de voorproefwijze, zijn de gezoemopties beschikbaar voor [&#x200B; gesteunde types van Beeld &#x200B;](/help/assets/assets-formats.md#supported-raster-image-formats) (met interactieve het uitgeven).
 
-   Als u wilt inzoomen op een element, klikt u op `+` (of klikt u op het vergrootglas van het element). Klik op `-` om uit te zoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave. Om de mening aan de originele grootte terug te stellen, klik **[!UICONTROL Reset]** ![ mening van het Terugstellen ](assets/do-not-localize/revert.png).
+   Als u wilt inzoomen op een element, klikt u op `+` (of klikt u op het vergrootglas van het element). Klik op `-` om uit te zoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave. Om de mening aan de originele grootte terug te stellen, klik **[!UICONTROL Reset]** ![&#x200B; mening van het Terugstellen &#x200B;](assets/do-not-localize/revert.png).
 
 **activa van de Voorproef gebruikend toetsenbordsleutels slechts**
 
@@ -384,8 +384,8 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 >[!MORELIKETHIS]
 >
->* [ Voorproef Dynamic Media Assets ](/help/assets/previewing-assets.md).
->* [ subassets van de Mening ](managing-linked-subassets.md#viewing-subassets).
+>* [&#x200B; Voorproef Dynamic Media Assets &#x200B;](/help/assets/previewing-assets.md).
+>* [&#x200B; subassets van de Mening &#x200B;](managing-linked-subassets.md#viewing-subassets).
 
 ## Eigenschappen en metagegevens bewerken {#editing-properties}
 
@@ -393,26 +393,26 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Selecteer het element op de werkbalk en selecteer vervolgens **[!UICONTROL Properties]** , zodat u de eigenschappen van het element kunt bekijken. U kunt ook de handeling **[!UICONTROL Properties]** Snel op de elementenkaart kiezen.
 
-   ![ Snelle actie van Eigenschappen op de mening van de activakaart ](assets/properties_quickaction.png)
+   ![&#x200B; Snelle actie van Eigenschappen op de mening van de activakaart &#x200B;](assets/properties_quickaction.png)
 
 1. Bewerk op de pagina [!UICONTROL Properties] de eigenschappen van de metagegevens onder verschillende tabbladen. Bewerk bijvoorbeeld onder het tabblad **[!UICONTROL Basic]** de titel en beschrijving.
 
    >[!NOTE]
    >
-   >De indeling van de pagina [!UICONTROL Properties] en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Leren hoe te om de lay-out van de [!UICONTROL Properties] pagina te wijzigen, zie [ Schema&#39;s van Meta-gegevens ](/help/assets/metadata-schemas.md).
+   >De indeling van de pagina [!UICONTROL Properties] en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Leren hoe te om de lay-out van de [!UICONTROL Properties] pagina te wijzigen, zie [&#x200B; Schema&#39;s van Meta-gegevens &#x200B;](/help/assets/metadata-schemas.md).
 
 1. Gebruik de datumkiezer naast het veld **[!UICONTROL On Time]** om een bepaalde datum/tijd voor de activering van de asset te plannen.
 
-   ![ de tijdplukker van de Datum of gebruikstoetsenbordsleutels op het gebied van de Tijd om datum en tijd voor activa activering toe te voegen ](assets/datepicker.png)
+   ![&#x200B; de tijdplukker van de Datum of gebruikstoetsenbordsleutels op het gebied van de Tijd om datum en tijd voor activa activering toe te voegen &#x200B;](assets/datepicker.png)
 
    *Cijfer: Gebruik de datumplukker om activa activering te plannen.*
 
 1. Schakel **[!UICONTROL On/Off Time Reached]** in als u de triggers van de replicatieagent wilt bijwerken in de eigenschappen van metagegevens.
-   ![ Montages van de Agent ](assets-dm/Agent-settings.png)
+   ![&#x200B; Montages van de Agent &#x200B;](assets-dm/Agent-settings.png)
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Off Time]** . De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na [!UICONTROL Off Time] zijn een element en de bijbehorende uitvoeringen niet beschikbaar via de [!DNL Assets] -webinterface of via de HTTP-API.
 
-1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]** . Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en selecteert u `Enter` . De nieuwe tag wordt opgeslagen in [!DNL Experience Manager] . [!DNL YouTube] vereist dat codes worden gepubliceerd. Zie [ video&#39;s aan YouTube ](video.md#publishing-videos-to-youtube) publiceren.
+1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]** . Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en selecteert u `Enter` . De nieuwe tag wordt opgeslagen in [!DNL Experience Manager] . [!DNL YouTube] vereist dat codes worden gepubliceerd. Zie [&#x200B; video&#39;s aan YouTube &#x200B;](video.md#publishing-videos-to-youtube) publiceren.
 
    >[!NOTE]
    >
@@ -420,7 +420,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Als u een waardering voor het element wilt opgeven, klikt u op het tabblad **[!UICONTROL Advanced]** en klikt u vervolgens op de gewenste positie op de ster om de gewenste waardering toe te wijzen.
 
-   ![ Geavanceerd lusje in activaEigenschappen om classificatie ](assets/ratings.png) toe te wijzen
+   ![&#x200B; Geavanceerd lusje in activaEigenschappen om classificatie &#x200B;](assets/ratings.png) toe te wijzen
 
    De beoordelingsscore die u aan het element toewijst, wordt onder **[!UICONTROL Your Ratings]** weergegeven. De gemiddelde score voor waardering die het element heeft ontvangen van gebruikers die het element hebben beoordeeld, wordt weergegeven onder **[!UICONTROL Rating]** . Bovendien wordt de opsplitsing van de beoordelingsscores die bijdragen aan de gemiddelde score weergegeven onder **[!UICONTROL Rating Breakdown]** . U kunt middelen zoeken op basis van gemiddelde score.
 
@@ -432,7 +432,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
    * Kanalen/apparaten waardoor het middel werd gebruikt
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt
 
-   Voor meer details, zie [ de Inzichten van Assets ](/help/assets/asset-insights.md).
+   Voor meer details, zie [&#x200B; de Inzichten van Assets &#x200B;](/help/assets/asset-insights.md).
 
 1. Klik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de gebruikersinterface van [!DNL Assets] . De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, waarderingen, enzovoort, worden weergegeven op de elementenkaart in de Kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
@@ -449,7 +449,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer een of meer elementen in de interface van [!DNL Assets] en klik op **[!UICONTROL Copy]** op de werkbalk. Alternatief, selecteer de **[!UICONTROL Copy]** ![ optie van het Exemplaar in toolbar in de interface van Assets ](assets/do-not-localize/copy_icon.png) snelle actie van de activakaart.
+1. Selecteer een of meer elementen in de interface van [!DNL Assets] en klik op **[!UICONTROL Copy]** op de werkbalk. Alternatief, selecteer de **[!UICONTROL Copy]** ![&#x200B; optie van het Exemplaar in toolbar in de interface van Assets &#x200B;](assets/do-not-localize/copy_icon.png) snelle actie van de activakaart.
 
    >[!NOTE]
    >
@@ -461,7 +461,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een element op dezelfde locatie kopieert, genereert [!DNL Experience Manager] automatisch een variatie in de naam. Als u bijvoorbeeld een element met de naam `Square` kopieert, genereert [!DNL Experience Manager] automatisch de titel voor de kopie als `Square1` .
 
-1. Klik de **[!UICONTROL Paste]** ![ optie van het Deeg in de werkbalk van Assets ](assets/do-not-localize/paste.png) activaoptie van de toolbar. Assets wordt vervolgens naar deze locatie gekopieerd.
+1. Klik de **[!UICONTROL Paste]** ![&#x200B; optie van het Deeg in de werkbalk van Assets &#x200B;](assets/do-not-localize/paste.png) activaoptie van de toolbar. Assets wordt vervolgens naar deze locatie gekopieerd.
 
    >[!NOTE]
    >
@@ -472,14 +472,14 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) tijdens het kopiëren van het element niet gedupliceerd. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst.
 Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u desgewenst het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Een verplaatst element wordt opnieuw gepubliceerd als de auteur de optie [!UICONTROL Republish] selecteert wanneer het element wordt verplaatst.
 
-![ u kunt reeds gepubliceerd activa opnieuw publiceren wanneer het bewegen van het ](assets/republish-on-move.png)
+![&#x200B; u kunt reeds gepubliceerd activa opnieuw publiceren wanneer het bewegen van het &#x200B;](assets/republish-on-move.png)
 
 Elementen of mappen verplaatsen:
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
 1. Selecteer het element en klik op de optie **[!UICONTROL Move]** op de werkbalk.
-   ![ optie van de Beweging in de toolbar van Assets ](assets/do-not-localize/move.png)
+   ![&#x200B; optie van de Beweging in de toolbar van Assets &#x200B;](assets/do-not-localize/move.png)
 
 1. Voer een van de volgende handelingen uit in de wizard [!UICONTROL Move Assets] :
 
@@ -517,7 +517,7 @@ U kunt elementen (of mappen) naar een map op hetzelfde niveau verplaatsen door d
 
 Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move Asset] niet geopend. U krijgt daarom niet de optie om de naam van de elementen te wijzigen wanneer u deze verplaatst. Bovendien worden de reeds gepubliceerde elementen opnieuw gepubliceerd wanneer ze door slepen worden verplaatst, zonder dat de gebruiker toestemming moet vragen om ze opnieuw te publiceren.
 
-![ Beweeg activa in het verwant omslagen door activa ](assets/move-by-drag.gif) te slepen
+![&#x200B; Beweeg activa in het verwant omslagen door activa &#x200B;](assets/move-by-drag.gif) te slepen
 
 ## Uitvoeringen beheren {#managing-renditions}
 
@@ -527,7 +527,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 1. Selecteer **[!UICONTROL Renditions]** in de lijst in de interface Experience Manager.
 1. Geef in het deelvenster **[!UICONTROL Renditions]** de lijst weer met uitvoeringen die voor het element zijn gegenereerd.
 
-   ![ het paneel van Uitvoeringen op de pagina van het Detail van Assets ](assets/renditions_panel.png)
+   ![&#x200B; het paneel van Uitvoeringen op de pagina van het Detail van Assets &#x200B;](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -537,11 +537,11 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
    **Schrap een vertoning**
 
-   Selecteer een vertoning van het **[!UICONTROL Renditions]** paneel, en klik dan de **[!UICONTROL Delete Rendition]** ![ Optie om een vertoning ](assets/do-not-localize/deleteoutline.png) optie van de toolbar te schrappen. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u de Experience Manager aanpassen om bepaalde vertoningen te verwijderen of om de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
+   Selecteer een vertoning van het **[!UICONTROL Renditions]** paneel, en klik dan de **[!UICONTROL Delete Rendition]** ![&#x200B; Optie om een vertoning &#x200B;](assets/do-not-localize/deleteoutline.png) optie van de toolbar te schrappen. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u de Experience Manager aanpassen om bepaalde vertoningen te verwijderen of om de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    **upload een nieuwe vertoning**
 
-   Navigeer aan de pagina van elementdetails voor de activa, en klik **[!UICONTROL Add Rendition]** ![ voeg vertoningsoptie toe om nieuwe vertoning ](assets/do-not-localize/add.png) optie in de toolbar te uploaden om een nieuwe vertoning voor de activa te uploaden.
+   Navigeer aan de pagina van elementdetails voor de activa, en klik **[!UICONTROL Add Rendition]** ![&#x200B; voeg vertoningsoptie toe om nieuwe vertoning &#x200B;](assets/do-not-localize/add.png) optie in de toolbar te uploaden om een nieuwe vertoning voor de activa te uploaden.
 
    >[!NOTE]
    >
@@ -553,7 +553,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
    Op dezelfde manier kunt u de afbeelding van de annotatiepagina aanpassen door `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` te bedekken.
 
-   ![ de knoop van de renditionpicker van de Bedekking in CRXDE om het beeld van de pagina van de Annotatie aan te passen ](assets/renditionpicker-node.png)
+   ![&#x200B; de knoop van de renditionpicker van de Bedekking in CRXDE om het beeld van de pagina van de Annotatie aan te passen &#x200B;](assets/renditionpicker-node.png)
 
    Als u vertoningsafmetingen voor een video-element wilt configureren, navigeert u naar het knooppunt `videopicker` in de CRX-opslagplaats op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` , bedekt u het knooppunt en bewerkt u de juiste eigenschap.
 
@@ -561,7 +561,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
    >
    >Videoannotaties worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
-Voor meer informatie over het produceren van en het bekijken van subassets, zie [ subassets ](managing-linked-subassets.md#generate-subassets) beheren.
+Voor meer informatie over het produceren van en het bekijken van subassets, zie [&#x200B; subassets &#x200B;](managing-linked-subassets.md#generate-subassets) beheren.
 
 ## Elementen verwijderen {#deleting-assets}
 
@@ -573,7 +573,7 @@ Middelen of mappen met elementen verwijderen:
 
 1. Navigeer naar de locatie van het element of de map die u wilt verwijderen.
 
-1. Selecteer de activa of de omslag, en klik **[!UICONTROL Delete]** ![ optie van de Schrapping ](assets/do-not-localize/deleteoutline.png) van de toolbar.
+1. Selecteer de activa of de omslag, en klik **[!UICONTROL Delete]** ![&#x200B; optie van de Schrapping &#x200B;](assets/do-not-localize/deleteoutline.png) van de toolbar.
 
    Zodra u de schrapping bevestigt:
 
@@ -594,21 +594,21 @@ Middelen of mappen met elementen verwijderen:
 
 ## Elementen downloaden {#downloading-assets}
 
-Zie [ activa van de Download van Experience Manager ](/help/assets/download-assets-from-aem.md).
+Zie [&#x200B; activa van de Download van Experience Manager &#x200B;](/help/assets/download-assets-from-aem.md).
 
 ## Publish of publiceer elementen {#publish-assets}
 
 Nadat u elementen hebt geüpload, verwerkt of bewerkt op de auteur van [!DNL Experience Manager] , publiceert u het element naar de publicatieserver. Met publicatie wordt het middel openbaar gemaakt. Met de actie Unpublishing is het element van de publicatieserver verwijderd, maar niet van de ontwerpserver.
 
-Voor informatie specifiek voor [!DNL Dynamic Media], zie [ het publiceren  [!DNL Dynamic Media]  activa ](/help/assets/publishing-dynamicmedia-assets.md).
+Voor informatie specifiek voor [!DNL Dynamic Media], zie [&#x200B; het publiceren  [!DNL Dynamic Media]  activa &#x200B;](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer de activa of de omslag die u wilt unpublish, en klik **[!UICONTROL Manage Publication]** ![ leiden publicatieoptie ](assets/do-not-localize/globe-publication.png) optie van de toolbar. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** op de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
+1. Selecteer de activa of de omslag die u wilt unpublish, en klik **[!UICONTROL Manage Publication]** ![&#x200B; leiden publicatieoptie &#x200B;](assets/do-not-localize/globe-publication.png) optie van de toolbar. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** op de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
 1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
-   ![ unpublish actie ](assets/unpublish_action.png)
+   ![&#x200B; unpublish actie &#x200B;](assets/unpublish_action.png)
    *Cijfer: Publish en unpublish opties en de het plannen optie.*
 
 1. Selecteer **[!UICONTROL Now]** om direct op het element te reageren of selecteer **[!UICONTROL Later]** om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
@@ -633,11 +633,11 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Selecteer een map in de interface van [!DNL Assets] en klik op de optie [!UICONTROL Properties] op de werkbalk, zodat u de pagina met eigenschappen kunt weergeven.
 1. Voeg leden of groepen toe onder **[!UICONTROL Closed User Group]** op het tabblad **[!UICONTROL Permissions]** .
 
-   ![ voeg gebruiker in gesloten gebruikersgroep ](assets/add_user.png) toe
+   ![&#x200B; voeg gebruiker in gesloten gebruikersgroep &#x200B;](assets/add_user.png) toe
 
 1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]** . Selecteer vervolgens het pad naar een aanmeldingspagina in [!DNL Experience Manager] en sla de wijzigingen op.
 
-   ![ laat en selecteert login pagina toe om te tonen wanneer de gebruiker tot omslag ](assets/login_page.png) toegang heeft
+   ![&#x200B; laat en selecteert login pagina toe om te tonen wanneer de gebruiker tot omslag &#x200B;](assets/login_page.png) toegang heeft
 
    >[!NOTE]
    >
@@ -650,7 +650,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
 Het zoeken naar middelen staat centraal in het gebruik van een digitaal assetmanagementsysteem. Deze functionaliteit is belangrijk voor creatieve medewerkers, voor een robuust beheer van bedrijfsmiddelen door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
-Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [ onderzoeksactiva in Experience Manager ](search-assets.md).
+Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [&#x200B; onderzoeksactiva in Experience Manager &#x200B;](search-assets.md).
 
 ## Snelle acties {#quick-actions}
 
@@ -669,7 +669,7 @@ In de kaartweergave wordt de optie **[!UICONTROL Select]** als een snelle actie 
 
 Wanneer u in de gebruikersinterface van [!DNL Assets] in een browser door een map of verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie [!UICONTROL Select All] in de rechterbovenhoek. In eerste instantie worden slechts 100 elementen in de kaartweergave geladen en worden 200 in de lijstweergave geladen. Er worden meer elementen in de weergave geladen wanneer u door de pagina met zoekresultaten bladert. Met de optie [!UICONTROL Select All] selecteert u alleen de geladen elementen.
 
-Voor meer informatie, zie [ mening en het selecteren van uw middelen ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Voor meer informatie, zie [&#x200B; mening en het selecteren van uw middelen &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Afbeeldingen bewerken {#editing-images}
 
@@ -683,28 +683,28 @@ Met de bewerkingsgereedschappen in de interface van [!DNL Assets] kunt u kleine 
 
    * Selecteer het element en klik op **[!UICONTROL Edit]** op de werkbalk.
    * Klik op de optie **[!UICONTROL Edit]** die op een element in de kaartweergave wordt weergegeven.
-   * Klik **[!UICONTROL Edit]** van de toolbar ![ uitgeven optie in toolbar ](assets/do-not-localize/edit_icon.png).
+   * Klik **[!UICONTROL Edit]** van de toolbar ![&#x200B; uitgeven optie in toolbar &#x200B;](assets/do-not-localize/edit_icon.png).
 
-1. Om het beeld uit te snijden, klik **[!UICONTROL Crop]** ![ Optie om een beeld ](assets/do-not-localize/crop.png) uit te snijden.
+1. Om het beeld uit te snijden, klik **[!UICONTROL Crop]** ![&#x200B; Optie om een beeld &#x200B;](assets/do-not-localize/crop.png) uit te snijden.
 
 1. Selecteer de gewenste optie in de lijst. Het uitsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
 1. Selecteer het gebied dat u wilt bijsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
 
-1. Gebruik **[!UICONTROL Undo]** ![ ongedaan maken werkbalkoptie ](assets/do-not-localize/undo.png) en **[!UICONTROL Redo]** ![ opnieuw doe de opties van de toolbaroptie ](assets/do-not-localize/redo.png) om aan het uncropped beeld terug te keren of het bebouwde beeld, respectievelijk te behouden.
+1. Gebruik **[!UICONTROL Undo]** ![&#x200B; ongedaan maken werkbalkoptie &#x200B;](assets/do-not-localize/undo.png) en **[!UICONTROL Redo]** ![&#x200B; opnieuw doe de opties van de toolbaroptie &#x200B;](assets/do-not-localize/redo.png) om aan het uncropped beeld terug te keren of het bebouwde beeld, respectievelijk te behouden.
 1. Klik op de desbetreffende optie **[!UICONTROL Rotate]** om de afbeelding rechtsom of linksom te roteren.
 
-   ![ de met de klok mee en anti-wijzerzin roteren opties ](assets/do-not-localize/rotate-options.png)
+   ![&#x200B; de met de klok mee en anti-wijzerzin roteren opties &#x200B;](assets/do-not-localize/rotate-options.png)
 
-1. Klik de aangewezen **[!UICONTROL Flip]** opties als u het beeld ![ horizontaal wilt omdraaien spiegelen horizontale optie ](assets/do-not-localize/flip-horizontal.png) of ![ verticaal ](assets/do-not-localize/flip-vertical.png) weerspiegelen verticale optie.
+1. Klik de aangewezen **[!UICONTROL Flip]** opties als u het beeld ![&#x200B; horizontaal wilt omdraaien spiegelen horizontale optie &#x200B;](assets/do-not-localize/flip-horizontal.png) of ![&#x200B; verticaal &#x200B;](assets/do-not-localize/flip-vertical.png) weerspiegelen verticale optie.
 
-1. Om het beeld te voltooien die, **[!UICONTROL Finish]** ![ uitgeeft optie ](assets/do-not-localize/check-ok-done-icon.png) uitgeeft. Het klikken **beëindigt** begint ook de regeneratie van vertoningen.
+1. Om het beeld te voltooien die, **[!UICONTROL Finish]** ![&#x200B; uitgeeft optie &#x200B;](assets/do-not-localize/check-ok-done-icon.png) uitgeeft. Het klikken **beëindigt** begint ook de regeneratie van vertoningen.
 
 >[!NOTE]
 >
 >Beeldbewerking wordt ondersteund voor de bestandsindelingen BMP, GIF, PNG en JPEG.
 
-U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Voor details, zie [ Toevoegend de Kaarten van het Beeld ](/help/assets/image-maps.md).
+U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Voor details, zie [&#x200B; Toevoegend de Kaarten van het Beeld &#x200B;](/help/assets/image-maps.md).
 
 >[!NOTE]
 >
@@ -714,17 +714,17 @@ U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Voor 
 
 In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen/annotaties, activiteitenlogbestanden en versies.
 
-![ de chronologieingangen van de Soort voor activa ](assets/sort_timeline.gif)
+![&#x200B; de chronologieingangen van de Soort voor activa &#x200B;](assets/sort_timeline.gif)
 
 *Cijfer: De chronologieingangen van de soort voor een activa.*
 
 >[!NOTE]
 >
->In de [ console van Inzamelingen ](/help/assets/manage-collections.md#navigating-the-collections-console), verstrekt de **[!UICONTROL Show All]** lijst opties om commentaren en werkschema&#39;s slechts te bekijken. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
+>In de [&#x200B; console van Inzamelingen &#x200B;](/help/assets/manage-collections.md#navigating-the-collections-console), verstrekt de **[!UICONTROL Show All]** lijst opties om commentaren en werkschema&#39;s slechts te bekijken. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
 
 >[!NOTE]
 >
->De Chronologie bevat verscheidene [ opties specifiek voor inhoudsfragmenten ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>De Chronologie bevat verscheidene [&#x200B; opties specifiek voor inhoudsfragmenten &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Elementen notities aanbrengen {#annotating}
 
@@ -734,7 +734,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
 >[!NOTE]
 >
->Voor de Fragmenten van de Inhoud, [ worden de annotaties gecreeerd in de fragmentredacteur ](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
+>Voor de Fragmenten van de Inhoud, [&#x200B; worden de annotaties gecreeerd in de fragmentredacteur &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
 1. Klik op de optie **[!UICONTROL Annotate]** van een van de volgende opties:
@@ -746,7 +746,7 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
 1. Als u een gebruiker op de hoogte wilt stellen van een aantekening, geeft u het e-mailadres van de gebruiker op en voegt u de opmerking toe. Als u Aaron MacDonald bijvoorbeeld wilt informeren over een annotatie, voert u @aa in. Tips voor alle overeenkomende gebruikers worden weergegeven in een lijst. Selecteer het e-mailadres van Aaron in de lijst zodat u de persoon met de opmerking kunt voorzien van tags. Op dezelfde manier kunt u meer gebruikers overal in de annotatie of ervoor of erna een tag toewijzen.
 
-   ![ specificeer het e-mailadres van de gebruiker en voeg commentaar toe om gebruiker ](assets/annotate-gif.gif) op de hoogte te brengen
+   ![&#x200B; specificeer het e-mailadres van de gebruiker en voeg commentaar toe om gebruiker &#x200B;](assets/annotate-gif.gif) op de hoogte te brengen
 
    >[!NOTE]
    >
@@ -763,15 +763,15 @@ Videoannotaties worden alleen ondersteund in browsers met video-indelingen die c
 
    >[!NOTE]
    >
-   >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [ het leiden videoactiva ](/help/assets/managing-video-assets.md). MXF-video-indeling wordt nog niet ondersteund met videoannotaties.
+   >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Voor details, zie [&#x200B; het leiden videoactiva &#x200B;](/help/assets/managing-video-assets.md). MXF-video-indeling wordt nog niet ondersteund met videoannotaties.
 
 1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, klikt u op de optie Profiel en klikt u op **[!UICONTROL My Preferences]** .
 
-   ![ Uitgezochte optie van het gebruikersprofiel en toen Mijn Voorkeur om de Voorkeur van de Gebruiker te openen ](assets/User-profile-preferences.png)
+   ![&#x200B; Uitgezochte optie van het gebruikersprofiel en toen Mijn Voorkeur om de Voorkeur van de Gebruiker te openen &#x200B;](assets/User-profile-preferences.png)
 
    Geef de gewenste kleur op in het vak **[!UICONTROL Annotation Color]** en klik op **[!UICONTROL Accept]** .
 
-   ![ Uitgezochte annotatiekleur in de Voorkeur van de Gebruiker om de kleur van de Persoon van de Gebruiker te plaatsen ](assets/Annotation-color.png)
+   ![&#x200B; Uitgezochte annotatiekleur in de Voorkeur van de Gebruiker om de kleur van de Persoon van de Gebruiker te plaatsen &#x200B;](assets/Annotation-color.png)
 
 >[!NOTE]
 >
@@ -796,7 +796,7 @@ U kunt slechts één annotatie tegelijk weergeven.
 
    Klik op een opmerking in het deelvenster **[!UICONTROL Timeline]** als u de bijbehorende annotatie in de afbeelding wilt bekijken.
 
-   ![ paneel van de Chronologie aan meningsaantekening op beeld ](assets/timeline-view-annotations.png)
+   ![&#x200B; paneel van de Chronologie aan meningsaantekening op beeld &#x200B;](assets/timeline-view-annotations.png)
 
    Klik op **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
@@ -816,11 +816,11 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op **[!UICONTROL
 1. Voer een van de volgende handelingen uit:
 
    * Als u alle annotaties en de revisiestatus wilt afdrukken, slaat u stap 3 over en gaat u rechtstreeks naar stap 4.
-   * Om specifieke annotaties en overzichtsstatus te drukken, open de [ chronologie ](/help/assets/manage-assets.md#timeline) en ga dan naar stap 3.
+   * Om specifieke annotaties en overzichtsstatus te drukken, open de [&#x200B; chronologie &#x200B;](/help/assets/manage-assets.md#timeline) en ga dan naar stap 3.
 
 1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de tijdlijn.
 
-   ![ selecteer een aantekening van Chronologie om het ](assets/timeline-select-annotations.png) te drukken
+   ![&#x200B; selecteer een aantekening van Chronologie om het &#x200B;](assets/timeline-select-annotations.png) te drukken
 
    Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in de tijdlijn.
 
@@ -832,17 +832,17 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op **[!UICONTROL
 
 1. Klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
-   ![ Annotatie en revisiestatus op geproduceerde PDF ](assets/annotation-status-pdf.png)
+   ![&#x200B; Annotatie en revisiestatus op geproduceerde PDF &#x200B;](assets/annotation-status-pdf.png)
 
-1. De optie van de Download ![ Download voor PDF ](assets/do-not-localize/download.png) of druk ![ drukopties op PDF ](assets/do-not-localize/print.png) de PDF gebruikend de opties bij top-right.
+1. De optie van de Download ![&#x200B; Download voor PDF &#x200B;](assets/do-not-localize/download.png) of druk ![&#x200B; drukopties op PDF &#x200B;](assets/do-not-localize/print.png) de PDF gebruikend de opties bij top-right.
 
    >[!NOTE]
    >
    >Als het element subelementen bevat, kunt u alle subelementen samen met de specifieke paginagewijze annotaties afdrukken.
 
-   Als u de weergave van het gerenderde PDF-bestand wilt bewerken, bijvoorbeeld de lettertypekleur, -grootte en -stijl, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [ het Annoteren ](/help/assets/manage-assets.md#annotating).
+   Als u de weergave van het gerenderde PDF-bestand wilt bewerken, bijvoorbeeld de lettertypekleur, -grootte en -stijl, opent u **[!UICONTROL Annotation PDF configuration]** in Configuration Manager en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Voor informatie rond het veranderen van de doopvontkleur van annotaties, zie [&#x200B; het Annoteren &#x200B;](/help/assets/manage-assets.md#annotating).
 
-   ![ Configuratie om activaannotatie op het document van PDF ](assets/annotation-print-pdf-config.png) te drukken
+   ![&#x200B; Configuratie om activaannotatie op het document van PDF &#x200B;](assets/annotation-print-pdf-config.png) te drukken
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF geeft de wijzigingen weer die u hebt aangebracht.
 
@@ -867,9 +867,9 @@ Hier volgt een voorbeeld van hoe u [!DNL Experience Manager] kunt configureren v
 
 1. Download Google Noto CJK-lettertypen van de volgende koppelingen en sla deze op in de lettertypemap die is geconfigureerd in Font Manager Service.
 
-   * Alles in Één Super CJK doopvont: [ https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
-   * Noto Sans (voor Europese talen): [ https://fonts.google.com/noto](https://fonts.google.com/noto)
-   * Noto doopvonten voor een taal van uw keus: [ https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Alles in Één Super CJK doopvont: [&#x200B; https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (voor Europese talen): [&#x200B; https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Noto doopvonten voor een taal van uw keus: [&#x200B; https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configureer het PDF-bestand voor annotaties door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` . Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
 1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een toepasselijke (door komma&#39;s gescheiden) vermelding toe aan de standaardlettertypefamilie.
@@ -883,13 +883,13 @@ In de volgende gevallen kunt u versies maken in [!DNL Experience Manager] :
 * Upload een element met dezelfde bestandsnaam die op dezelfde locatie bestaat. Dit kan een nieuw element of een gewijzigde versie van hetzelfde element zijn.
 * Bewerk een afbeelding in [!DNL Experience Manager] en sla de wijzigingen op.
 * Bewerk de metagegevens van een element.
-* Gebruik [!DNL Experience Manager] Desktop app om bestaande activa uit te checken, het uit te geven, en [ uploadt uw veranderingen ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#edit-assets-upload-updated-assets).
+* Gebruik [!DNL Experience Manager] Desktop app om bestaande activa uit te checken, het uit te geven, en [&#x200B; uploadt uw veranderingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#edit-assets-upload-updated-assets).
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open in de linkerbovenhoek van de pagina het menu en selecteer **[!UICONTROL Timeline]** .
 
-   ![ van het linkernavigatiemenu, uitgezochte chronologieoptie ](assets/timeline.png)
+   ![&#x200B; van het linkernavigatiemenu, uitgezochte chronologieoptie &#x200B;](assets/timeline.png)
 
    *Cijfer: Open menu van upper-left gebied van pagina en selecteer [!UICONTROL Timeline] optie.*
 
@@ -899,7 +899,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op **[!UICONTROL Save as Version]** om een versie voor het element te maken. Voeg desgewenst een label en opmerking toe.
    * Klik op **[!UICONTROL Create]** om een versie te maken.
 
-     ![ creeer activaversie van sidebar ](assets/create-new-version-from-timeline.png)
+     ![&#x200B; creeer activaversie van sidebar &#x200B;](assets/create-new-version-from-timeline.png)
 
      *Cijfer: Creeer een versie van een activa van [!UICONTROL Timeline] linkerzijbalk.*
 
@@ -915,7 +915,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op een versie van het element. Voeg desgewenst een label en een opmerking toe.
    * Klik op **[!UICONTROL Revert to this Version]**.
 
-     ![ Uitgezochte een versie om aan het terug te keren ](assets/select_version.png)
+     ![&#x200B; Uitgezochte een versie om aan het terug te keren &#x200B;](assets/select_version.png)
 
      *Cijfer: Selecteer een versie en keer aan het terug. Het wordt de huidige versie die dan aan de gebruikers DAM beschikbaar is.*
 
@@ -923,13 +923,13 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op de versie die u met de huidige versie wilt vergelijken.
    * Sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
 
-   ![ schuif van het Gebruik om de geselecteerde versies van een activa met de huidige versie ](assets/version-slider.gif) te vergelijken
+   ![&#x200B; schuif van het Gebruik om de geselecteerde versies van een activa met de huidige versie &#x200B;](assets/version-slider.gif) te vergelijken
 
    *Cijfer: De schuif van het gebruik om de geselecteerde versies van activa met de huidige versie moeiteloos te vergelijken.*
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
-Om een werkschema toe te passen om activa te verwerken, zie [ werkschema beginnen op een activa ](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
+Om een werkschema toe te passen om activa te verwerken, zie [&#x200B; werkschema beginnen op een activa &#x200B;](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Verzamelingen {#collections}
 
@@ -938,7 +938,7 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om gerelat
 * Een verzameling kan elementen van verschillende locaties bevatten, omdat deze alleen verwijzingen naar deze elementen bevatten. Bij elke verzameling blijft de referentiële integriteit van de elementen behouden.
 * U kunt verzamelingen delen met meerdere gebruikers met verschillende machtigingsniveaus, zoals bewerken, weergeven, enzovoort.
 
-Om details van het beheer van de Inzameling te kennen, zie [ digitale activa inzamelingen ](/help/assets/manage-collections.md) beheren.
+Om details van het beheer van de Inzameling te kennen, zie [&#x200B; digitale activa inzamelingen &#x200B;](/help/assets/manage-collections.md) beheren.
 
 ## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Om meer te weten, zie hoe te [ activa doorbladeren DAM gebruikend Desktop app ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) en [ hoe te om de Verbinding van Activa van de Adobe te gebruiken ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Om meer te weten, zie hoe te [&#x200B; activa doorbladeren DAM gebruikend Desktop app &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#browse-search-preview-assets) en [&#x200B; hoe te om de Verbinding van Activa van de Adobe te gebruiken &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

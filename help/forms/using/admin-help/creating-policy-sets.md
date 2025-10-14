@@ -89,7 +89,7 @@ Tijdens het creëren van de beleidsreeks, kunt u de Achterknoop gebruiken om aan
 
 1. Klik op Opslaan.
 
-U kunt nu beleid toevoegen aan uw beleidsset. (Zie [ Creërend en het uitgeven beleid ](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+U kunt nu beleid toevoegen aan uw beleidsset. (Zie [&#x200B; Creërend en het uitgeven beleid &#x200B;](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Een beleidsset bewerken {#edit-a-policy-set}
 
@@ -107,7 +107,7 @@ U kunt nu beleid toevoegen aan uw beleidsset. (Zie [ Creërend en het uitgeven b
 1. Zoek op het tabblad Beleid naar beleid dat u wilt toevoegen aan de beleidsset en maak nieuwe beleidsregels:
 
    * Als u naar een beleid wilt zoeken, selecteert u Beleids-id of Beleidsnaam, typt u de bijbehorende waarde, selecteert u het aantal items dat u wilt weergeven en klikt u op Zoeken.
-   * Voor details over het creëren van een beleid, zie [ Creërend en het uitgeven beleid ](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Voor details over het creëren van een beleid, zie [&#x200B; Creërend en het uitgeven beleid &#x200B;](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Een beleidsset verwijderen {#delete-a-policy-set}
 

@@ -59,7 +59,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
 1. Er wordt een teksteditor geopend en u voert de tekst in. Gebruik de werkbalk boven aan de pagina om de tekst, invoegvoorwaarden, koppeling en pagina-einden op te maken.
 
-   ![ Toolbar ](assets/advancedediting.png)
+   ![&#x200B; Toolbar &#x200B;](assets/advancedediting.png)
 
    * **Verbinding**: De hypertext van het Tussenvoegsel [&#128279;](#insert-hyperlink) verbinding in de tekst.
    * **Herhaal**: Herhaal het element van de drukinzameling in het Woordenboek van Gegevens gebruikend een afbakening.
@@ -69,16 +69,16 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    Er wordt een teksteditor geopend. Voer de tekst in. De werkbalk verandert afhankelijk van het type bewerkingen dat u wilt uitvoeren: Alinea, Uitlijning of Lijst:
 
-   ![ Uitgezochte type van toolbar ](assets/toolbarselection.png)
+   ![&#x200B; Uitgezochte type van toolbar &#x200B;](assets/toolbarselection.png)
 
    Selecteer het type werkbalk: Alinea, Uitlijning of Lijst
 
-   ![ de toolbar van de Paragraaf ](assets/fonteditingtoolbar.png)
+   ![&#x200B; de toolbar van de Paragraaf &#x200B;](assets/fonteditingtoolbar.png)
 
    Alinea, werkbalk
    [&#128279;](assets/paragrapheditingtoolbar.png)![&#128279;](assets/paragrapheditingtoolbar-1.png) de toolbar van de Groepering van de 1&rbrace; Uitlijning
 
-   ![ van de Lijst toolbar ](assets/bulleteditingtoolbar.png)
+   ![&#x200B; van de Lijst toolbar &#x200B;](assets/bulleteditingtoolbar.png)
 
    De werkbalk Lijst (klik om een afbeelding op volledige grootte te openen)
 
@@ -86,15 +86,15 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    U kunt een of meer alinea&#39;s tekst in een bewerkbare tekstmodule kopiëren en plakken. U hebt bijvoorbeeld een MS Word-document met een lijst met geldige verblijfstitels, zoals:
 
-   ![ pastetextmsword-1 ](assets/pastetextmsword-1.png)
+   ![&#x200B; pastetextmsword-1 &#x200B;](assets/pastetextmsword-1.png)
 
    U kunt de tekst rechtstreeks vanuit het MS Word-document naar een bewerkbare tekstmodule kopiëren en plakken. De opmaak, zoals een lijst met opsommingstekens, lettertype en tekstkleur, blijft behouden in de tekstmodule.
 
-   ![ pastetexttextmodule ](assets/pastetexttextmodule.png)
+   ![&#x200B; pastetexttextmodule &#x200B;](assets/pastetexttextmodule.png)
 
    >[!NOTE]
    >
-   >Het formatteren van gekleefde tekst, echter, heeft sommige [ beperkingen ](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Het formatteren van gekleefde tekst, echter, heeft sommige [&#x200B; beperkingen &#x200B;](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 1. Voeg zo nodig speciale tekens in het documentfragment in. U kunt bijvoorbeeld het palet Speciale tekens gebruiken om het volgende in te voegen:
 
@@ -102,38 +102,38 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * Wiskundige symbolen zoals A, Ö, ∂ en ^
    * Interpunctiesymbolen zoals ‟ en &quot;
 
-   ![ specicharacters-1 ](assets/specialcharacters-1.png)
+   ![&#x200B; specicharacters-1 &#x200B;](assets/specialcharacters-1.png)
 
-   Correspondence Management biedt ondersteuning voor 210 speciale tekens. Admin kan [ steun voor meer/douane speciale karakters door aanpassing ](/help/forms/using/custom-special-characters.md) toevoegen.
+   Correspondence Management biedt ondersteuning voor 210 speciale tekens. Admin kan [&#x200B; steun voor meer/douane speciale karakters door aanpassing &#x200B;](/help/forms/using/custom-special-characters.md) toevoegen.
 
 1. Als u\gedeelten van tekst in een bewerkbare inline-module wilt benadrukken, selecteert u de tekst en selecteert u Markeringskleur.
 
-   ![ textbackgroundcolorapplied ](assets/textbackgroundcolorapplied.png)
+   ![&#x200B; textbackgroundcolorapplied &#x200B;](assets/textbackgroundcolorapplied.png)
 
    U kunt of een basiskleur `**[A]**` direct selecteren in het Basispalet van Kleuren of **Uitgezocht** selecteren na het gebruiken van de schuif `**[B]**` om de aangewezen schaduw van de kleur te kiezen.
 
    U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging `**[C]**` te selecteren en vervolgens Selecteren `**[D]**` selecteren om de tekst te markeren.
 
-   ![ textbackgroundcolor-1 ](assets/textbackgroundcolor-1.png)
+   ![&#x200B; textbackgroundcolor-1 &#x200B;](assets/textbackgroundcolor-1.png)
 
 1. Sleep vanuit het gegevensvenster gegevenswoordenboekelementen en plaatsaanduidingselementen naar de tekst.
 
    Aan:
 
-   * Voeg een element van het gegevenswoordenboek in de tekst toe, selecteer een gegevenselement van de lijst, en selecteer Tussenvoegsel ( ![ tussenvoegsel ](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
+   * Voeg een element van het gegevenswoordenboek in de tekst toe, selecteer een gegevenselement van de lijst, en selecteer Tussenvoegsel ( ![&#x200B; tussenvoegsel &#x200B;](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
    * Voeg een plaatsaanduidingselement toe aan de tekst. Selecteer in het deelvenster Gegevenselementen de optie Nieuw maken, voer de details voor het nieuwe gegevenselement in en selecteer Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en kiest u Bewerken.
 
-   ![ Placeholder elementen ](assets/placeholder_elements_in_xmldata.png)
+   ![&#x200B; Placeholder elementen &#x200B;](assets/placeholder_elements_in_xmldata.png)
 
    Plaatsaanduidingselementen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek
 
-   ![ Placeholder elementen in brief ](assets/placeholder_elements_in_text.png)
+   ![&#x200B; Placeholder elementen in brief &#x200B;](assets/placeholder_elements_in_text.png)
 
    Plaatsaanduidingselementwaarden in de CCR-weergave die zijn gevuld met de gegevenswoordenboekvariabelen zoals opgegeven in het bestand met voorbeeldgegevens
 
    Met het @-symbool kunt u ook gegevenswoordenboek en plaatsaanduidingselementen zoeken en toevoegen aan de teksteditor. Plaats de cursor op de plaats waar u het element wilt invoegen. Typ @ gevolgd door de zoekreeks. De teksteditor voert de zoekbewerking uit op alle gegevenswoordenboeken en plaatsaanduidingselementen die beschikbaar zijn in het tekstdocumentfragment. De zoekbewerking haalt de elementen met de zoekreeks op en geeft deze weer als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het element dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
-1. U kunt inline voorwaarden en herhaling gebruiken om uw brief te maken in hoge context en goed gestructureerd. Voor meer informatie over gealigneerde voorwaarde en herhaling, zie [ Gealigneerde voorwaarden en herhaal in brieven ](/help/forms/using/cm-inline-condition.md).
+1. U kunt inline voorwaarden en herhaling gebruiken om uw brief te maken in hoge context en goed gestructureerd. Voor meer informatie over gealigneerde voorwaarde en herhaling, zie [&#x200B; Gealigneerde voorwaarden en herhaal in brieven &#x200B;](/help/forms/using/cm-inline-condition.md).
 1. Selecteer **sparen**.
 
 #### Hyperlink invoegen in tekst {#insert-hyperlink}
@@ -144,9 +144,9 @@ Voer de volgende stappen uit om een hyperlink in een tekstelement te maken:
 
 2. Selecteer **[!UICONTROL Link]**. Selecteer **[!UICONTROL Alt Text]** veld om de bestaande naam of tekst van het gegevensmodel te verwijderen.
 
-3. Specificeer URL en selecteer ![ sparen ](assets/save_icon.svg).
+3. Specificeer URL en selecteer ![&#x200B; sparen &#x200B;](assets/save_icon.svg).
 
-![ creeer hyperlink in tekstactiva ](assets/text-create-hyperlink.png)
+![&#x200B; creeer hyperlink in tekstactiva &#x200B;](assets/text-create-hyperlink.png)
 
 #### Tekst zoeken en vervangen {#searching-and-replacing-text}
 
@@ -247,12 +247,12 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 1. Selecteer **Activa** toevoegen.
 1. Om activa aan de lijst toe te voegen, selecteer hen in de Uitgezochte pagina van Assets en selecteer **Gereed**.
 
-   ![ Uitgezochte activa aan de lijst ](assets/selectassets.png) toe te voegen
+   ![&#x200B; Uitgezochte activa aan de lijst &#x200B;](assets/selectassets.png) toe te voegen
 
 1. De elementen worden toegevoegd aan de pagina Lijstitems.
-Om de orde van de activa binnen de lijst te veranderen, selecteer en houd het pijlpictogram ( ![ dragndrop ](assets/dragndrop.png)) en belemmering-en-daling. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
+Om de orde van de activa binnen de lijst te veranderen, selecteer en houd het pijlpictogram ( ![&#x200B; dragndrop &#x200B;](assets/dragndrop.png)) en belemmering-en-daling. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
 
-   ![ opnieuw ordenen en activa in een lijst vormen ](assets/listitems.png)
+   ![&#x200B; opnieuw ordenen en activa in een lijst vormen &#x200B;](assets/listitems.png)
 
 1. U kunt de volgende opties selecteren om te specificeren hoe de lijst zich in het CCR gebruikersinterface gedraagt:
 
@@ -260,7 +260,7 @@ Om de orde van de activa binnen de lijst te veranderen, selecteer en houd het pi
    * **Orde van het Slot**: Om de orde van de activa in de lijst te sluiten zodat de Aanpasser van Vorderingen niet de orde kan veranderen, uitgezochte Orde van het Slot. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
 
    * **voegt Opsommingstekens** toe: Gebruik deze optie om een kogel of nummeringsstijl op de module toe te passen. U kunt een vooraf ontworpen lijststijl of een aangepaste stijl gebruiken. U kunt ook de tekst opgeven die voor en na elk van de lijstitems moet worden weergegeven.
-   * **de Onderbreking van de Pagina**: Selecteer deze optie ( ![ onderbreking ](assets/break.png)) om een paginaonderbreking tussen de lijstinhoud toe te voegen. Wanneer deze optie niet wordt geselecteerd ( ![ nobreak ](assets/nobreak.png)), als de inhoud van de lijst aan de volgende pagina overvloeit, wordt de volledige lijst verplaatst naar de volgende pagina in plaats van het breken in de pagina tussen de lijst.
+   * **de Onderbreking van de Pagina**: Selecteer deze optie ( ![&#x200B; onderbreking &#x200B;](assets/break.png)) om een paginaonderbreking tussen de lijstinhoud toe te voegen. Wanneer deze optie niet wordt geselecteerd ( ![&#x200B; nobreak &#x200B;](assets/nobreak.png)), als de inhoud van de lijst aan de volgende pagina overvloeit, wordt de volledige lijst verplaatst naar de volgende pagina in plaats van het breken in de pagina tussen de lijst.
 
    * **Configuratie van de Taak**: Gebruik deze optie om minimum en maximumaantal activa te specificeren die aan de lijst kunnen worden toegevoegd.
 
@@ -321,9 +321,9 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 1. U kunt de volgende opties selecteren om op te geven hoe de voorwaarde zich gedraagt bij uitvoering:
 
    * **maak de Veelvoudige Evaluatie van Resultaten onbruikbaar \ toelaten Veelvoudige Evaluatie van Resultaten**: Wanneer deze optie wordt toegelaten (verschijnt als &quot;Veelvoud...&quot;toelaten), worden alle voorwaarden geëvalueerd en het resultaat is de som van alle ware voorwaarden. Als deze optie is uitgeschakeld (wordt &#39;&#39;Meerdere uitschakelen...&#39;&#39; weergegeven), wordt alleen de eerste voorwaarde waarvan is vastgesteld dat deze true is, geëvalueerd en wordt deze de uitvoer van de voorwaarde.
-   * **de Onderbreking van de Pagina**: Selecteer deze optie ( ![ onderbreking ](assets/break.png)) om een paginaonderbreking tussen de modules van de voorwaarden toe te voegen. Wanneer deze optie niet wordt geselecteerd ( ![ nobreak ](assets/nobreak.png)), als een voorwaarde aan de volgende pagina overvloeit, wordt de volledige voorwaarde verplaatst naar de volgende pagina in plaats van het breken in de pagina tussen de voorwaarde.
+   * **de Onderbreking van de Pagina**: Selecteer deze optie ( ![&#x200B; onderbreking &#x200B;](assets/break.png)) om een paginaonderbreking tussen de modules van de voorwaarden toe te voegen. Wanneer deze optie niet wordt geselecteerd ( ![&#x200B; nobreak &#x200B;](assets/nobreak.png)), als een voorwaarde aan de volgende pagina overvloeit, wordt de volledige voorwaarde verplaatst naar de volgende pagina in plaats van het breken in de pagina tussen de voorwaarde.
 
-1. Om de orde van de activa binnen de voorwaarde te veranderen, selecteer en houd het pijlpictogram ( ![ dragndrop ](assets/dragndrop.png)) en belemmering-en-daling. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
+1. Om de orde van de activa binnen de voorwaarde te veranderen, selecteer en houd het pijlpictogram ( ![&#x200B; dragndrop &#x200B;](assets/dragndrop.png)) en belemmering-en-daling. Wanneer de gebruiker een lettertypesjabloon opent in de gebruikersinterface Correspondentie maken, wordt de inhoud samengesteld in de volgorde die u hier hebt gedefinieerd.
 1. Selecteer **Schrapping** om de rij te schrappen. Als u Verwijderen selecteert voor de standaardrij, worden alleen de elementgegevens gewist.
 1. Selecteer **Exemplaar** om een rij te dupliceren.
 1. Selecteer **uitgeven** om de activa te veranderen of de uitdrukking uit te geven.
@@ -331,7 +331,7 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
    Verder:
 
    * Als u het element wilt bijwerken, selecteert u het mappictogram onder de kolom Element.
-   * Als u de expressiebouwer wilt openen om een expressie in te voegen, selecteert u het mappictogram onder de kolom Expressie. Voor meer informatie over de Bouwer van de Uitdrukking, zie [ Bouwer van de Uitdrukking ](/help/forms/using/expression-builder.md).
+   * Als u de expressiebouwer wilt openen om een expressie in te voegen, selecteert u het mappictogram onder de kolom Expressie. Voor meer informatie over de Bouwer van de Uitdrukking, zie [&#x200B; Bouwer van de Uitdrukking &#x200B;](/help/forms/using/expression-builder.md).
 
 ### Tips en trucs {#best-practices-tips-and-tricks-1}
 
@@ -347,13 +347,13 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 
 ## Layoutfragmenten {#layoutfragments}
 
-Een lay-outfragment is gebaseerd op XDPs die in Designer wordt gecreeerd. Voor het creëren van lay-outfragmenten, moet u XDPs tot stand brengen en [ uploadt hen aan AEM Forms ](/help/forms/using/import-export-forms-templates.md).
+Een lay-outfragment is gebaseerd op XDPs die in Designer wordt gecreeerd. Voor het creëren van lay-outfragmenten, moet u XDPs tot stand brengen en [&#x200B; uploadt hen aan AEM Forms &#x200B;](/help/forms/using/import-export-forms-templates.md).
 
 Een of meer lay-outfragmenten kunnen onderdelen van een letter vormen en de grafische lay-out van die onderdelen definiëren. Een indelingsfragment kan typische formuliervelden bevatten, zoals Adres en Referentienummer, en lege subformulieren die doelgebieden aangeven. Bovendien kunt u met layoutfragmenten tabellen maken en deze in letters invoegen.
 
 Doorgaans worden layout-patronen die u opnieuw kunt gebruiken, gezocht in Letters en worden er lay-outfragmenten voor gemaakt. Bijvoorbeeld de aanhef, het adres en het onderwerpgedeelte van de letter, die in dezelfde volgorde staat als meerdere letters. Een ander voorbeeld kan een tabel zijn met een vergelijkbaar aantal rijen en kolommen die in meerdere letters worden gebruikt.
 
-U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. XDP wordt gecreeerd in Designer en [ geupload aan AEM Forms ](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [ Ontwerp van de Lay-out ](/help/forms/using/layout-design-details.md).
+U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. XDP wordt gecreeerd in Designer en [&#x200B; geupload aan AEM Forms &#x200B;](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [&#x200B; Ontwerp van de Lay-out &#x200B;](/help/forms/using/layout-design-details.md).
 
 Met fragmenten die zijn gebonden aan doelgebieden, kan de letter worden gewijzigd op het moment van ontwerpen. U kunt een lay-outfragment met verschillende afmetingen maken en het juiste fragment kan aan het doelgebied worden gebonden. Met layoutfragmenten kunt u ook enkele tabeleigenschappen aanpassen:
 
@@ -390,7 +390,7 @@ Houd rekening met de volgende punten bij het ontwerpen van tabellen:
 
 U kunt fragmenten in een letter nesten. Dit betekent dat u een fragment kunt toevoegen binnen een fragment. De oplossing van het Beheer van de Correspondentie steunt tot vier niveaus van het nesten binnen een brief: **Brief *>* Fragment *>* Fragment *>* Fragment *>* Fragment.**
 
-Voor een gedetailleerd voorbeeld om statische en dynamische lijsten in lay-outfragmenten te gebruiken, zie [ Voorbeeld met steekproefdossiers: het gebruiken van statische en dynamische lijsten in een brief ](#examplewithsamplefiles).
+Voor een gedetailleerd voorbeeld om statische en dynamische lijsten in lay-outfragmenten te gebruiken, zie [&#x200B; Voorbeeld met steekproefdossiers: het gebruiken van statische en dynamische lijsten in een brief &#x200B;](#examplewithsamplefiles).
 
 ### Een lay-outfragment maken {#creating-a-layout-fragment}
 
@@ -417,13 +417,13 @@ Voor een gedetailleerd voorbeeld om statische en dynamische lijsten in lay-outfr
    * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatshaartabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dit geval is het type van extra cellen in uitgebreide kolom hetzelfde als het type van de laatste kolom in die rij en is het type van de cel in extra rij hetzelfde als het type van de laatste cel in die kolom.
    * **verhouding van de Breedte:** verhouding van de breedten van de lijstkolom.
 
-   Voor een gedetailleerd voorbeeld om statische en dynamische lijsten in lay-outfragmenten te gebruiken, zie [ Voorbeeld met steekproefdossiers: het gebruiken van statische en dynamische lijsten in een brief ](#examplewithsamplefiles).
+   Voor een gedetailleerd voorbeeld om statische en dynamische lijsten in lay-outfragmenten te gebruiken, zie [&#x200B; Voorbeeld met steekproefdossiers: het gebruiken van statische en dynamische lijsten in een brief &#x200B;](#examplewithsamplefiles).
 
 1. Selecteer **sparen**.
 
 ### Een XDP uploaden naar Correspondentenbeheer {#upload-an-xdp-to-correspondence-management}
 
-Voor instructies bij het uploaden van/het invoeren van XDP aan het Beheer van de Correspondentie, zie [ het Invoeren van en het uitvoeren van activa naar AEM Forms ](/help/forms/using/import-export-forms-templates.md).
+Voor instructies bij het uploaden van/het invoeren van XDP aan het Beheer van de Correspondentie, zie [&#x200B; het Invoeren van en het uitvoeren van activa naar AEM Forms &#x200B;](/help/forms/using/import-export-forms-templates.md).
 
 ### Tips en trucs {#best-practices-tips-and-tricks-2}
 
@@ -451,7 +451,7 @@ Als de voltooide brief die in Create Correspondence wordt gecreeerd voor het inv
 
 #### Datumnotaties in Designer en Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-Terwijl het ontwerpen van een lay-out in Designer, zorg ervoor dat de formaten voor datumgebieden de datumformaten aanpassen die in de Formaten van de Vertoning van Gegevens in [ worden gespecificeerd de Eigenschappen van de Configuratie van het Beheer van de Correspondentie ](/help/forms/using/cm-configuration-properties.md). Zie &quot;Veldwaarden opmaken en patronen gebruiken&quot; in de Help van Designer voor meer informatie.
+Terwijl het ontwerpen van een lay-out in Designer, zorg ervoor dat de formaten voor datumgebieden de datumformaten aanpassen die in de Formaten van de Vertoning van Gegevens in [&#x200B; worden gespecificeerd de Eigenschappen van de Configuratie van het Beheer van de Correspondentie &#x200B;](/help/forms/using/cm-configuration-properties.md). Zie &quot;Veldwaarden opmaken en patronen gebruiken&quot; in de Help van Designer voor meer informatie.
 
 #### Datumbereiken vastleggen {#capturing-date-ranges}
 
@@ -497,7 +497,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    Voor meer informatie bij het werken met het Woordenboek van Gegevens en testgegevens, zie {het Woordenboek van 0} Gegevens [&#128279;](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
-   ![ de woordenboekstructuur van Gegevens ](assets/dd.jpeg)
+   ![&#x200B; de woordenboekstructuur van Gegevens &#x200B;](assets/dd.jpeg)
 
 [Bestand ophalen](assets/exportpackage_1431709897770.cmp.zip)
 
@@ -508,8 +508,8 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    U kunt ook de statische en dynamische XDP&#39;s gebruiken die bij deze stap zijn gevoegd.
 
-   Voor meer informatie bij het werken met de Fragmenten van de Lay-out, zie [ Fragmenten van de Lay-out ](#layoutfragments).
-Voor meer informatie bij het ontwerpen van lay-outs, zie [ Hulp van Designer ](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Voor meer informatie bij het werken met de Fragmenten van de Lay-out, zie [&#x200B; Fragmenten van de Lay-out &#x200B;](#layoutfragments).
+Voor meer informatie bij het ontwerpen van lay-outs, zie [&#x200B; Hulp van Designer &#x200B;](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
 [Bestand ophalen](assets/static.xdp.zip)
 
@@ -520,35 +520,35 @@ Voor meer informatie bij het ontwerpen van lay-outs, zie [ Hulp van Designer ](h
 
    De velden van deze indeling worden later gebonden aan de geïmporteerde DD en in de letter wordt het aantal rijen dynamisch gemaakt op basis van het aantal records in het bestand met testgegevens (het XML-gegevensbestand dat is gekoppeld aan de DD).
 
-   ![ creeer een scherm van het lay-outfragment ](assets/dynamictableproperties.png)
+   ![&#x200B; creeer een scherm van het lay-outfragment &#x200B;](assets/dynamictableproperties.png)
 
    Klik om een afbeelding op volledige grootte te openen
 
 1. Maak een lay-outfragment op basis van de statische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst statisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    U kunt het aantal kolommen en rijen hier wijzigen. Afhankelijk van wat u in dit scherm kiest, blijft het aantal rijen en kolommen van een statische tabel vast in de letter die met deze indeling wordt gemaakt.
-   [![ creeer een scherm van het lay-outfragment ](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![&#x200B; creeer een scherm van het lay-outfragment &#x200B;](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Maak een letter met beide lay-outfragmenten erin. Wanneer u dynamische XDP in de brief opneemt, plaats de band van zijn gebieden aan de de inzamelingselementen van het Woordenboek van Gegevens.
 
-   Voor meer informatie bij het creëren van Brieven en de malplaatjes van de Brief, zie [ Brief ](/help/forms/using/create-letter.md) creëren.
+   Voor meer informatie bij het creëren van Brieven en de malplaatjes van de Brief, zie [&#x200B; Brief &#x200B;](/help/forms/using/create-letter.md) creëren.
 
 1. Sla de brief op en geef een voorvertoning weer. Wanneer u een voorvertoning van de letter weergeeft, worden de waarden uit het gegevenswoordenboek in de letter weergegeven. Voor de dynamische tabel zijn er drie rijen. Dit komt doordat de testgegevens drie records voor deze rijen hebben.
 
    Voor de statische tabel zijn er evenveel rijen en kolommen als u hebt opgegeven bij het maken van het lay-outfragment.
 
-   ![ Statische lijst in de brief ](assets/statictableletter.png)
+   ![&#x200B; Statische lijst in de brief &#x200B;](assets/statictableletter.png)
 
    Voor de dynamische tabel worden de drie rijen weergegeven op basis van het aantal records in het bestand met testgegevens. Dit is gebeurd omdat u tijdens het toevoegen van de layout aan de letter een binding hebt gemaakt tussen de velden van de dynamische tabel en de verzamelingselementen van het gegevenswoordenboek. De waarden Naam, Adres en Geslacht worden ingevuld in het bestand met testgegevens dat u hebt gebruikt.
 
-   ![ Dynamische lijst in de brief ](assets/dynamictableletter.png)
+   ![&#x200B; Dynamische lijst in de brief &#x200B;](assets/dynamictableletter.png)
 
 ## Een kopie van een documentfragment maken {#create-a-copy-of-a-document-fragment}
 
 Als u snel een documentfragment wilt maken met eigenschappen en inhoud die vergelijkbaar zijn met een bestaand documentfragment, kunt u dit kopiëren en plakken.
 
 1. Selecteer een of meer documentfragmenten in de lijst met documentfragmenten. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [ Omslagen en het organiseren van activa ](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Selecteer Copy. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over omslagen, zie [&#x200B; Omslagen en het organiseren van activa &#x200B;](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Selecteer Plakken. Het dialoogvenster Plakken wordt geopend. Als u de documentfragmenten op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van het documentfragment wilt opslaan.
 1. Selecteer Plakken. De kopie van het documentfragment wordt gemaakt.

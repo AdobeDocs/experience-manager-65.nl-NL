@@ -24,7 +24,7 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
 ## Oplossing {#solution}
 
-1. Download jar als [ java.mail-1.0.jar ](/help/forms/using/java.mail-1.0.jar) en unzip het gedownloade jar dossier om het manifestdossier te verkrijgen.
+1. Download jar als [&#x200B; java.mail-1.0.jar &#x200B;](/help/forms/using/java.mail-1.0.jar) en unzip het gedownloade jar dossier om het manifestdossier te verkrijgen.
 
 1. Gebruik het manifestbestand van `java.mail-1.0.jar` dat u hebt opgehaald uit stap 1 om een aangepast jar-bestand te maken, bijvoorbeeld `java.mail-1.5.jar` .
 
@@ -35,7 +35,7 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
    In het bovengenoemde bevel, *manifest.mf* is de naam van het manifestdossier en *java.mail-1.5.jar* is de naam van het dossier dat na het uitvoeren van bovengenoemd bevel zou worden gecreeerd.
 
-1. Download [ javax.mail-1.5.6.redhat-1.jar ](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
+1. Download [&#x200B; javax.mail-1.5.6.redhat-1.jar &#x200B;](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
 
 1. Navigeer naar `http://<server name>:<port>/lc/system/console/bundles` en verwijder de bundel met de naam `JavaMail API (com.sun.mail.javax.mail) version 1.6.2` .
 

@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Het toelaten van toegang tot een bewaarplaats van CRX impliceert verscheidene onderwerpen:
 
-* [ Rechten van de Toegang ](#how-access-rights-are-evaluated) - de concepten hoe zij worden bepaald en geëvalueerd
-* [ Beleid van de Gebruiker ](#user-administration) - het beheren van de individuele rekeningen die voor toegang worden gebruikt
-* [ Beleid van de Groep ](#group-administration) - vereenvoudig gebruikersbeheer door groepen te vormen
+* [&#x200B; Rechten van de Toegang &#x200B;](#how-access-rights-are-evaluated) - de concepten hoe zij worden bepaald en geëvalueerd
+* [&#x200B; Beleid van de Gebruiker &#x200B;](#user-administration) - het beheren van de individuele rekeningen die voor toegang worden gebruikt
+* [&#x200B; Beleid van de Groep &#x200B;](#group-administration) - vereenvoudig gebruikersbeheer door groepen te vormen
 * [&#128279;](#access-right-management) het Juiste Beheer van de Toegang  - bepalend beleid dat controleert hoe deze gebruikers en groepen tot middelen kunnen toegang hebben
 
 De basiselementen zijn:
@@ -60,7 +60,7 @@ Met CRX kunt u de toegangsrechten configureren voor gebruikers- en groepsaccount
 
 >[!NOTE]
 >
->CRX voert [ toegangsbeheer zoals die door JSR-283 ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) wordt bepaald uit.
+>CRX voert [&#x200B; toegangsbeheer zoals die door JSR-283 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) wordt bepaald uit.
 >
 >Een standaardinstallatie van een gegevensopslagplaats van CRX wordt gevormd om op middel-gebaseerde toegangsbeheerlijsten te gebruiken. Dit is één mogelijke implementatie van JSR-283 toegangsbeheer en één van de implementaties heden met Jackrabbit.
 
@@ -101,7 +101,7 @@ De lijst van toegangsrechten die van toepassing zijn op het onderwerp is samenge
 * de rechten die u rechtstreeks aan de gebruikersaccount toewijst
 * plus alle rechten die zijn toegewezen aan een groep waartoe de gebruiker behoort
 
-![ chlimage_1-56 ](assets/chlimage_1-56.png)
+![&#x200B; chlimage_1-56 &#x200B;](assets/chlimage_1-56.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Wanneer CRX het verzoek behandelt, vergelijkt het het toegangsverzoek van het on
 
 Dus als Linda vraagt om het knooppunt `/features` bij te werken in de volgende repository structuur:
 
-![ chlimage_1-57 ](assets/chlimage_1-57.png)
+![&#x200B; chlimage_1-57 &#x200B;](assets/chlimage_1-57.png)
 
 ### Volgorde van voorrang {#order-of-precedence}
 
@@ -215,7 +215,7 @@ U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialo
 * de **verbinding van het Beleid van de Gebruiker** op de Belangrijkste Console van CRX
 * het **menu van de Veiligheid** van de Ontdekkingsreiziger van CRX
 
-![ chlimage_1-58 ](assets/chlimage_1-58.png)
+![&#x200B; chlimage_1-58 &#x200B;](assets/chlimage_1-58.png)
 
 **Eigenschappen**
 
@@ -241,7 +241,7 @@ U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialo
 
 Hiermee worden alle groepen weergegeven waartoe de account behoort. De kolom Overgenomen geeft het lidmaatschap aan dat is overgeërfd als gevolg van het lidmaatschap van een andere groep.
 
-Het klikken van een GroupID (wanneer beschikbaar) opent het [ Beleid van de Groep ](#group-administration) voor die groep.
+Het klikken van een GroupID (wanneer beschikbaar) opent het [&#x200B; Beleid van de Groep &#x200B;](#group-administration) voor die groep.
 
 **Imitators**
 
@@ -339,7 +339,7 @@ U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialo
 * de **verbinding van het Beleid van de Groep** op de Belangrijkste Console van CRX
 * het **menu van de Veiligheid** van de Ontdekkingsreiziger van CRX
 
-![ chlimage_1-8 ](assets/chlimage_1-8.jpeg)
+![&#x200B; chlimage_1-8 &#x200B;](assets/chlimage_1-8.jpeg)
 
 **Eigenschappen**
 
@@ -441,7 +441,7 @@ Met het **lusje van het Toegangsbeheer** van CRXDE Lite, kunt u het beleid van d
 
 Bijvoorbeeld, voor **Huidige Weg** selecteer het vereiste middel in de linkerruit, het lusje van het Controle van de Toegang in de laag-juiste ruit:
 
-![ crx_acccontrol_tab ](assets/crx_accesscontrol_tab.png)
+![&#x200B; crx_acccontrol_tab &#x200B;](assets/crx_accesscontrol_tab.png)
 
 Het beleid wordt ingedeeld volgens:
 
@@ -481,7 +481,7 @@ Het beleid kan worden geselecteerd voor:
 
   Dit laat u **van het 0&rbrace; Onderzoek &lbrace;voor a** Gebruiker **of** Groep **.** Selecteer het vereiste hoofd van de resulterende lijst, dan klik O.K. **om de waarde terug naar het vorige dialoogvakje te dragen.**
 
-![ crx_acccontrol_selectprincipal ](assets/crx_accesscontrol_selectprincipal.png)
+![&#x200B; crx_acccontrol_selectprincipal &#x200B;](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
@@ -491,7 +491,7 @@ Het beleid kan worden geselecteerd voor:
 
 ### Rechten {#privileges}
 
-De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van een ingang van de toegangscontrole (zie [ Veiligheid API ](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) voor volledige details):
+De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van een ingang van de toegangscontrole (zie [&#x200B; Veiligheid API &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) voor volledige details):
 
 <table>
  <tbody>
@@ -592,11 +592,11 @@ U kunt ook nieuwe rechten registreren:
 
 1. Van de toolbar, uitgezochte **Hulpmiddelen**, toen **Bevoegdheden** om de momenteel geregistreerde voorrechten te tonen.
 
-   ![ ac_privileges ](assets/ac_privileges.png)
+   ![&#x200B; ac_privileges &#x200B;](assets/ac_privileges.png)
 
 1. Gebruik het **pictogram van de Bevoorrecht van het Register** (**+**) zodat kunt u een voorrecht bepalen:
 
-   ![ ac_privilegegeregister ](assets/ac_privilegeregister.png)
+   ![&#x200B; ac_privilegegeregister &#x200B;](assets/ac_privilegeregister.png)
 
 1. Klik **O.K.** om te bewaren. Het voorrecht is nu beschikbaar voor selectie.
 
@@ -606,15 +606,15 @@ U kunt ook nieuwe rechten registreren:
 
 1. Om een nieuw **Lokaal Beleid van het Toegangsbeheer** toe te voegen, klik het **+** pictogram rechts van de **Toepasselijke lijst van het Beleid van het Toegangsbeheer**:
 
-   ![ crx_acccontrol_applicable ](assets/crx_accesscontrol_applicable.png)
+   ![&#x200B; crx_acccontrol_applicable &#x200B;](assets/crx_accesscontrol_applicable.png)
 
 1. Een nieuwe ingang verschijnt onder **Lokaal Beleid van het Toegangsbeheer:**
 
-   ![ crx_acccontrol_newlocal ](assets/crx_accesscontrol_newlocal.png)
+   ![&#x200B; crx_acccontrol_newlocal &#x200B;](assets/crx_accesscontrol_newlocal.png)
 
 1. Klik op het pictogram **+** zodat u een item kunt toevoegen:
 
-   ![ crx_acccontrol_addentry ](assets/crx_accesscontrol_addentry.png)
+   ![&#x200B; crx_acccontrol_addentry &#x200B;](assets/crx_accesscontrol_addentry.png)
 
    >[!NOTE]
    >
@@ -635,7 +635,7 @@ De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 
 1. In de lijst van **Lokaal Beleid van het Toegangsbeheer**, selecteer de vereiste ingang en sleep het aan de nieuwe positie in de lijst.
 
-   ![ crx_acccontrol_reorder ](assets/crx_accesscontrol_reorder.png)
+   ![&#x200B; crx_acccontrol_reorder &#x200B;](assets/crx_accesscontrol_reorder.png)
 
 1. De veranderingen worden getoond in zowel de lijsten voor **Lokale** als **het Effectieve Beleid van het Toegangsbeheer**.
 
@@ -650,4 +650,4 @@ De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 1. Er wordt een nieuw dialoogvenster geopend in het deelvenster rechtsboven. Selecteer de **Weg** en/of **Belangrijkste** die u wilt testen.
 1. Klik **Test** om de resultaten voor uw selectie te zien:
 
-   ![ crx_acccontrol_test ](assets/crx_accesscontrol_test.png)
+   ![&#x200B; crx_acccontrol_test &#x200B;](assets/crx_accesscontrol_test.png)

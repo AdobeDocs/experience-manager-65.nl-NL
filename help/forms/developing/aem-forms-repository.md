@@ -26,13 +26,13 @@ De Repository-service biedt AEM Forms opslagservices en beheerservices voor reso
 
 Bijvoorbeeld, overweeg de volgende toepassing van Forms genoemd *Toepassingen/FormsApplication*:
 
-![ ww_ww_formrepository ](assets/ww_ww_formrepository.png)
+![&#x200B; ww_ww_formrepository &#x200B;](assets/ww_ww_formrepository.png)
 
 Er bevindt zich een bestand met de naam Loan.xdp in de FormsFolder. Als u dit formulierontwerp wilt openen, geeft u het volledige pad op (inclusief versie): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
->Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [ Hulp Workbench ](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Voor informatie over het creëren van een toepassing van Forms die Workbench gebruikt, zie [&#x200B; Hulp Workbench &#x200B;](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Het pad naar een resource in de AEM Forms-opslagplaats is:
 
@@ -46,7 +46,7 @@ De volgende waarden tonen enkele voorbeelden van URI-waarden:
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser `https://[server name]:[server port]/repository` in. U kunt via een webbrowser controleren welke snelstartresultaten worden gekoppeld aan de sectie Werken met AEM Forms Repository. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser. (Zie [ Snelle Begin (SOAP wijze): Het schrijven van een middel gebruikend Java API ](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser `https://[server name]:[server port]/repository` in. U kunt via een webbrowser controleren welke snelstartresultaten worden gekoppeld aan de sectie Werken met AEM Forms Repository. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser. (Zie [&#x200B; Snelle Begin (SOAP wijze): Het schrijven van een middel gebruikend Java API &#x200B;](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 De API van de dataopslag biedt verschillende bewerkingen die u kunt gebruiken om gegevens op te slaan en op te halen uit de dataopslag. Bijvoorbeeld, kunt u een lijst van middelen verkrijgen of specifieke middelen terugwinnen die in de bewaarplaats worden opgeslagen wanneer een middel als deel van de verwerking van een toepassing nodig is.
 
@@ -56,15 +56,15 @@ De API van de dataopslag biedt verschillende bewerkingen die u kunt gebruiken om
 
 Met de Repository-service-API kunt u de volgende taken uitvoeren:
 
-* Maak mappen. Zie [ Creërend Omslagen ](aem-forms-repository.md#creating-folders).
-* Bronnen en hun eigenschappen schrijven. Zie [ schrijvend Middelen ](aem-forms-repository.md#writing-resources).
-* De middelen van de lijst in een bepaalde inzameling of verwant met andere middelen. Zie [ het Lijst Middelen ](aem-forms-repository.md#listing-resources).
-* Bronnen en hun eigenschappen lezen. Zie [ Leesmiddelen ](aem-forms-repository.md#reading-resources).
-* Bronnen en hun eigenschappen bijwerken. Zie [ Bijwerkend Middelen ](aem-forms-repository.md#updating-resources).
-* Zoeken naar bronnen, waaronder hun geschiedenis, gerelateerde bronnen en eigenschappen. Zie [ zoekend naar Middelen ](aem-forms-repository.md#searching-for-resources).
-* Geef relaties tussen bronnen op. Zie [ Creërend de Verhoudingen van het Middel ](aem-forms-repository.md#creating-resource-relationships).
-* Beheer middeltoegangsbeheer, met inbegrip van het sluiten en het ontgrendelen van middelen, en het lezen en het schrijven toegangsbeheerlijsten (ACLs). Zie [ Vergrendelende Middelen ](aem-forms-repository.md#locking-resources).
-* Bronnen en hun eigenschappen verwijderen. Zie [ het schrappen Middelen ](aem-forms-repository.md#deleting-resources).
+* Maak mappen. Zie [&#x200B; Creërend Omslagen &#x200B;](aem-forms-repository.md#creating-folders).
+* Bronnen en hun eigenschappen schrijven. Zie [&#x200B; schrijvend Middelen &#x200B;](aem-forms-repository.md#writing-resources).
+* De middelen van de lijst in een bepaalde inzameling of verwant met andere middelen. Zie [&#x200B; het Lijst Middelen &#x200B;](aem-forms-repository.md#listing-resources).
+* Bronnen en hun eigenschappen lezen. Zie [&#x200B; Leesmiddelen &#x200B;](aem-forms-repository.md#reading-resources).
+* Bronnen en hun eigenschappen bijwerken. Zie [&#x200B; Bijwerkend Middelen &#x200B;](aem-forms-repository.md#updating-resources).
+* Zoeken naar bronnen, waaronder hun geschiedenis, gerelateerde bronnen en eigenschappen. Zie [&#x200B; zoekend naar Middelen &#x200B;](aem-forms-repository.md#searching-for-resources).
+* Geef relaties tussen bronnen op. Zie [&#x200B; Creërend de Verhoudingen van het Middel &#x200B;](aem-forms-repository.md#creating-resource-relationships).
+* Beheer middeltoegangsbeheer, met inbegrip van het sluiten en het ontgrendelen van middelen, en het lezen en het schrijven toegangsbeheerlijsten (ACLs). Zie [&#x200B; Vergrendelende Middelen &#x200B;](aem-forms-repository.md#locking-resources).
+* Bronnen en hun eigenschappen verwijderen. Zie [&#x200B; het schrappen Middelen &#x200B;](aem-forms-repository.md#deleting-resources).
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Met de Repository-service-API kunt u de volgende taken uitvoeren:
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Mappen maken {#creating-folders}
 
@@ -86,7 +86,7 @@ De dossiers erven toegangsbeheerlijsten (ACLs) van omslagen, en subfolders erven
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -217,7 +217,7 @@ U kunt bronnen programmatisch schrijven met de Java API of webservice van de Rep
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -299,7 +299,7 @@ Schrijf een bron met behulp van de Repository Service API (Java):
    * De methode `setDataDocument` van het object `ResourceContent` aanroepen en een object `com.adobe.idp.Document` doorgeven
    * De methode `setSize` van het object `ResourceContent` aanroepen en de grootte van het object `Document` in bytes doorgeven
 
-   Voeg de inhoud aan de bron toe door de methode `setContent` van het object `Resource` aan te roepen en het object `ResourceContent` door te geven. Voor meer informatie, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   Voeg de inhoud aan de bron toe door de methode `setContent` van het object `Resource` aan te roepen en het object `ResourceContent` door te geven. Voor meer informatie, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. De bron naar de doelmap schrijven
 
@@ -370,7 +370,7 @@ De lijstmiddelen werken door verhouding: de middelen zijn leden van omslagen. Li
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -433,7 +433,7 @@ Bronnen weergeven met behulp van de Repository Service API (Java):
 
 **zie ook**
 
-[ het Lijst Middelen ](aem-forms-repository.md#listing-resources).
+[&#x200B; het Lijst Middelen &#x200B;](aem-forms-repository.md#listing-resources).
 
 [Snel starten (SOAP modus): bronnen weergeven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
@@ -466,7 +466,7 @@ Bronnen weergeven met de Repository Service API (webservice):
 
 **zie ook**
 
-[ het Lijst Middelen ](aem-forms-repository.md#listing-resources).
+[&#x200B; het Lijst Middelen &#x200B;](aem-forms-repository.md#listing-resources).
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
@@ -487,7 +487,7 @@ U kunt bronnen programmatisch lezen met de Java API of webservice van de Reposit
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -562,8 +562,8 @@ Een bron lezen met de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt. (Zie [ Creërend een .NET cliëntassemblage die het coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
-   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [ Creërend een .NET cliëntassemblage die het coderen Base64 ](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt. (Zie [&#x200B; Creërend een .NET cliëntassemblage die het coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
+   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [&#x200B; Creërend een .NET cliëntassemblage die het coderen Base64 &#x200B;](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
 
 1. De serviceclient maken
 
@@ -597,7 +597,7 @@ U kunt bronnen programmatisch bijwerken met de Java API of webservice van de Rep
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -618,7 +618,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **wint het middel terug om worden bijgewerkt**
 
-Lees de bron. Voor meer informatie, zie [ Leesmiddelen ](aem-forms-repository.md#reading-resources).
+Lees de bron. Voor meer informatie, zie [&#x200B; Leesmiddelen &#x200B;](aem-forms-repository.md#reading-resources).
 
 **werk het middel** bij
 
@@ -687,7 +687,7 @@ Een bron bijwerken met de Repository API (webservice):
 
 1. De bron ophalen die moet worden bijgewerkt
 
-   Geef de URI op van de bron die moet worden opgehaald en lees de bron. In dit voorbeeld is de URI van de bron `"/testFolder/testResource"` . Voor meer informatie, zie [ Leesmiddelen ](aem-forms-repository.md#reading-resources).
+   Geef de URI op van de bron die moet worden opgehaald en lees de bron. In dit voorbeeld is de URI van de bron `"/testFolder/testResource"` . Voor meer informatie, zie [&#x200B; Leesmiddelen &#x200B;](aem-forms-repository.md#reading-resources).
 
 1. De bron bijwerken
 
@@ -726,7 +726,7 @@ Vervolgens activeert u de methode `searchProperties` van het object `ResourceRep
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -866,7 +866,7 @@ U kunt via programmacode relaties tussen bronnen opgeven met de Java API of webs
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-6}
 
@@ -919,7 +919,7 @@ Relatiebronnen maken met de Java API van de Repository-service: voer de volgende
 
 1. De URI&#39;s opgeven van de bronnen die moeten worden gekoppeld
 
-   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval zijn de URI&#39;s `"/testFolder/testResource1"` en `"/testFolder/testResource2"` omdat de bronnen de naam `testResource1` en `testResource2` hebben en zich in de map met de naam `testFolder` bevinden. De URI&#39;s worden opgeslagen als een `java.lang.String` -object. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [ het Schrijven Middelen ](aem-forms-repository.md#writing-resources).
+   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval zijn de URI&#39;s `"/testFolder/testResource1"` en `"/testFolder/testResource2"` omdat de bronnen de naam `testResource1` en `testResource2` hebben en zich in de map met de naam `testFolder` bevinden. De URI&#39;s worden opgeslagen als een `java.lang.String` -object. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [&#x200B; het Schrijven Middelen &#x200B;](aem-forms-repository.md#writing-resources).
 
 1. De relatie maken
 
@@ -963,7 +963,7 @@ Relatiebronnen maken met de Repository API (webservice):
 
 1. De URI&#39;s opgeven van de bronnen die moeten worden gekoppeld
 
-   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval zijn de URI&#39;s `"/testFolder/testResource1"` en `"/testFolder/testResource2"` omdat de bronnen de naam `testResource1` en `testResource2` hebben en zich in de map met de naam `testFolder` bevinden. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), worden URIs opgeslagen als a `System.String` voorwerpen. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [ het Schrijven Middelen ](aem-forms-repository.md#writing-resources).
+   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval zijn de URI&#39;s `"/testFolder/testResource1"` en `"/testFolder/testResource2"` omdat de bronnen de naam `testResource1` en `testResource2` hebben en zich in de map met de naam `testFolder` bevinden. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), worden URIs opgeslagen als a `System.String` voorwerpen. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [&#x200B; het Schrijven Middelen &#x200B;](aem-forms-repository.md#writing-resources).
 
 1. De relatie maken
 
@@ -999,13 +999,13 @@ U kunt een bron of reeks bronnen vergrendelen voor exclusief gebruik door een be
 
 Wanneer een bron is vergrendeld, wordt een vergrendelingspictogram weergegeven wanneer u het tabblad Bronnen in Workbench bekijkt, zoals in de volgende afbeelding wordt getoond.
 
-![ lr_lr_lockrepository ](assets/lr_lr_lockrepository.png)
+![&#x200B; lr_lr_lockrepository &#x200B;](assets/lr_lr_lockrepository.png)
 
 U kunt de toegang tot bronnen programmatisch beheren met de Java API of webservice van de Repository-service.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-7}
 
@@ -1088,7 +1088,7 @@ Bronnen vergrendelen met de API voor opslagplaats (Java):
 
 1. De bron ontgrendelen
 
-   Roep de methode `unlockResource` van het object `ResourceRepositoryClient` aan en geef de URI van de bron door als parameter. Voor meer informatie, zie de [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   Roep de methode `unlockResource` van het object `ResourceRepositoryClient` aan en geef de URI van de bron door als parameter. Voor meer informatie, zie de [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **zie ook**
 
@@ -1157,7 +1157,7 @@ Een schrappingsverrichting is niet transactie-veilig in systemen ECM. Als u bijv
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [ Verwijzing van de Diensten voor AEM Forms ](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [&#x200B; Verwijzing van de Diensten voor AEM Forms &#x200B;](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1210,7 +1210,7 @@ Verwijder een bron met de Repository API (Java):
 
 1. De URI opgeven van de bron die moet worden verwijderd
 
-   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI van de bron met de naam testResourceToBeDelette in de map met de naam testFolder `/testFolder/testResourceToBeDeleted` . De URI wordt opgeslagen als een `java.lang.String` -object. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [ het Schrijven Middelen ](aem-forms-repository.md#writing-resources).
+   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI van de bron met de naam testResourceToBeDelette in de map met de naam testFolder `/testFolder/testResourceToBeDeleted` . De URI wordt opgeslagen als een `java.lang.String` -object. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [&#x200B; het Schrijven Middelen &#x200B;](aem-forms-repository.md#writing-resources).
 
 1. De bron verwijderen
 
@@ -1241,7 +1241,7 @@ Verwijder een bron met de Repository API (webservice):
 
 1. De URI opgeven van de bron die moet worden verwijderd
 
-   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI `"/testFolder/testResourceToBeDeleted"` omdat de bron met de naam `testResourceToBeDeleted` zich in de map met de naam `testFolder` bevindt. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [ het Schrijven Middelen ](aem-forms-repository.md#writing-resources).
+   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI `"/testFolder/testResourceToBeDeleted"` omdat de bron met de naam `testResourceToBeDeleted` zich in de map met de naam `testFolder` bevindt. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [&#x200B; het Schrijven Middelen &#x200B;](aem-forms-repository.md#writing-resources).
 
 1. De bron verwijderen
 

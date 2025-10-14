@@ -21,11 +21,11 @@ Interactieve communicatie kan via twee kanalen worden aangeboden: afdrukken en w
 
 Auteurs van interactieve communicatie kunnen elementen zoals documentfragmenten en afbeeldingen hergebruiken om zowel afdruk- als webversies van interactieve communicatie te maken.
 
-Één van de eerste vereisten voor [ Creërend een Interactieve Communicatie ](../../forms/using/create-interactive-communication.md) moet de malplaatjes voor druk en/of Webkanaal hebben beschikbaar op de server. Hoewel sjabloonauteurs de webkanaalsjabloon op AEM zelf maken, wordt de XDP-afdruksjabloon gemaakt in Adobe Forms Designer en geüpload naar de server.
+Één van de eerste vereisten voor [&#x200B; Creërend een Interactieve Communicatie &#x200B;](../../forms/using/create-interactive-communication.md) moet de malplaatjes voor druk en/of Webkanaal hebben beschikbaar op de server. Hoewel sjabloonauteurs de webkanaalsjabloon op AEM zelf maken, wordt de XDP-afdruksjabloon gemaakt in Adobe Forms Designer en geüpload naar de server.
 
 ## Kanaal afdrukken {#printchannel}
 
-Het kanaal van de druk van een Interactieve Communicatie gebruikt XFA vormmalplaatje, XDP. Een XDP is ontworpen in Adobe Forms Designer. Voor meer informatie bij het creëren van de malplaatjes van het drukkanaal, zie [ Ontwerp van de Lay-out ](../../forms/using/layout-design-details.md). Als u een sjabloon voor een afdrukkanaal wilt gebruiken in uw interactieve communicatie, moet u de sjabloon uploaden naar de AEM Forms-server.
+Het kanaal van de druk van een Interactieve Communicatie gebruikt XFA vormmalplaatje, XDP. Een XDP is ontworpen in Adobe Forms Designer. Voor meer informatie bij het creëren van de malplaatjes van het drukkanaal, zie [&#x200B; Ontwerp van de Lay-out &#x200B;](../../forms/using/layout-design-details.md). Als u een sjabloon voor een afdrukkanaal wilt gebruiken in uw interactieve communicatie, moet u de sjabloon uploaden naar de AEM Forms-server.
 
 ### Interactieve communicatiekanaalsjabloon uploaden {#upload-interactive-communication-print-channel-template}
 
@@ -39,7 +39,7 @@ Als u de sjabloon wilt uploaden, moet u lid zijn van de gebruikersgroep voor for
 
 ## Webkanaal {#web-channel}
 
-Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Als u andere gebruikers wilt toestaan websjablonen te maken, moet u ze rechten geven. Voor meer informatie, zie [ Gebruiker, Groep en het Beleid van de Rechten van de Toegang ](/help/sites-administering/user-group-ac-admin.md).
+Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Als u andere gebruikers wilt toestaan websjablonen te maken, moet u ze rechten geven. Voor meer informatie, zie [&#x200B; Gebruiker, Groep en het Beleid van de Rechten van de Toegang &#x200B;](/help/sites-administering/user-group-ac-admin.md).
 
 ### Webkanaalsjabloon ontwerpen {#authoring-web-channel-template}
 
@@ -47,9 +47,9 @@ Als u een webkanaalsjabloon wilt maken, moet u eerst een sjabloonmap maken. Nada
 
 Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 
-1. Maak een sjabloonmap om uw interactieve communicatiesweb-sjablonen te behouden, als u dat nog niet hebt. Voor meer informatie, zie de Omslagen van het Malplaatje in [ Malplaatjes van de Pagina - editable ](/help/sites-developing/page-templates-editable.md).
+1. Maak een sjabloonmap om uw interactieve communicatiesweb-sjablonen te behouden, als u dat nog niet hebt. Voor meer informatie, zie de Omslagen van het Malplaatje in [&#x200B; Malplaatjes van de Pagina - editable &#x200B;](/help/sites-developing/page-templates-editable.md).
 
-   1. Selecteer **[!UICONTROL Tools]** ![ hulpmiddelen ](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
+   1. Selecteer **[!UICONTROL Tools]** ![&#x200B; hulpmiddelen &#x200B;](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
       * Zie Browser van de Configuratie [&#128279;](/help/sites-administering/configurations.md) documentatie 0&rbrace; &lbrace;voor meer informatie.
    1. Selecteer **[!UICONTROL Create]** op de pagina Configuration Browser.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map, controleer **[!UICONTROL Editable Templates]** en selecteer **[!UICONTROL Create]** .
@@ -69,13 +69,13 @@ Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 
       De Sjablooneditor wordt weergegeven.
 
-      ![ webchanneltemplate ](assets/webchanneltemplate.png)
+      ![&#x200B; webchanneltemplate &#x200B;](assets/webchanneltemplate.png)
 
-      Bij het maken of bewerken van een sjabloon zijn er verschillende aspecten die een sjabloonauteur kan definiëren. Het maken of bewerken van een sjabloon lijkt op het ontwerpen van pagina&#39;s. Voor meer informatie, zie het Uitgeven Malplaatjes - de Auteurs van het Malplaatje in [ Creërend de Malplaatjes van de Pagina ](/help/sites-authoring/templates.md).
+      Bij het maken of bewerken van een sjabloon zijn er verschillende aspecten die een sjabloonauteur kan definiëren. Het maken of bewerken van een sjabloon lijkt op het ontwerpen van pagina&#39;s. Voor meer informatie, zie het Uitgeven Malplaatjes - de Auteurs van het Malplaatje in [&#x200B; Creërend de Malplaatjes van de Pagina &#x200B;](/help/sites-authoring/templates.md).
 
 1. Schakel de sjabloon in als u het gebruik van deze sjabloon voor interactieve communicatie wilt toestaan.
 
-   1. Selecteer **[!UICONTROL Tools]** ![ hulpmiddelen ](assets/tools.png) > **[!UICONTROL Templates]**.
+   1. Selecteer **[!UICONTROL Tools]** ![&#x200B; hulpmiddelen &#x200B;](assets/tools.png) > **[!UICONTROL Templates]**.
    1. Navigeer naar de desbetreffende sjabloon, selecteer deze en selecteer **[!UICONTROL Enable]** in het waarschuwingsbericht en selecteer **[!UICONTROL Enable]** .
 
       Het malplaatje wordt toegelaten en zijn status wordt getoond zoals Toegelaten. Nu kunt u doorgaan met het maken van een interactieve communicatie waarin u de zojuist gemaakte sjabloon voor webkanalen kunt gebruiken.
@@ -84,4 +84,4 @@ Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 
 Tijdens het ontwerpen van een interactieve communicatie kunnen auteurs deze optie selecteren om het webkanaal synchroon met het afdrukkanaal te maken. Als u het afdrukkanaal gebruikt als stramien voor webkanalen, weet u zeker dat de inhoud, overerving en gegevensbinding van het webkanaal zijn afgeleid van het afdrukkanaal en dat de wijzigingen die in het afdrukkanaal zijn aangebracht, worden weerspiegeld in het webkanaal. De interactieve auteurs van communicatie mogen echter de overerving voor specifieke componenten in het webkanaal onderbreken, indien nodig.
 
-![ het kanaal van de Druk als meester ](assets/create_ic_print_master_new.png) ![ kanaal van het Web met drukkanaal als meester ](assets/create_ic_print_master_web_new.png)
+![&#x200B; het kanaal van de Druk als meester &#x200B;](assets/create_ic_print_master_new.png) ![&#x200B; kanaal van het Web met drukkanaal als meester &#x200B;](assets/create_ic_print_master_web_new.png)

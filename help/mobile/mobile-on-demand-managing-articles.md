@@ -30,9 +30,9 @@ Artikelen vertegenwoordigen de tekst die samen met illustraties wordt gebaseerd 
 >
 >Zie de volgende bronnen in de online Help voor meer informatie over de volgende onderwerpen in AEM Mobile-apps:
 >
->* [ overwegingen van het Ontwerp ](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
+>* [&#x200B; overwegingen van het Ontwerp &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/design-app.html)
 >
->* [ het leiden van Artikelen ](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-articles.html)
+>* [&#x200B; het leiden van Artikelen &#x200B;](https://helpx.adobe.com/nl/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Een artikel maken {#creating-an-article}
@@ -66,7 +66,7 @@ De workflow voor het importeren van een nieuw artikel
 >
 >Koppel eerst een mobiele on-demand-verbinding.
 
-![ chlimage_1-3 ](assets/chlimage_1-3.gif)
+![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.gif)
 
 ## Een artikel bewerken {#editing-an-article}
 
@@ -109,7 +109,7 @@ De algemene workflow voor het uploaden van een artikel:
 1. Selecteer **uploaden** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw artikelen worden nu geüpload naar Mobile On-Demand.
 
-![ chlimage_1-4 ](assets/chlimage_1-4.gif)
+![&#x200B; chlimage_1-4 &#x200B;](assets/chlimage_1-4.gif)
 
 ## Een artikel verwijderen {#deleting-an-article}
 
@@ -125,7 +125,7 @@ De algemene workflow voor het verwijderen van een artikel:
 1. Klik **Schrapping**.
 1. Uw artikel is nu verwijderd uit de lijst.
 
-![ chlimage_1-5 ](assets/chlimage_1-5.gif)
+![&#x200B; chlimage_1-5 &#x200B;](assets/chlimage_1-5.gif)
 
 ### De volgende stappen {#the-next-steps}
 

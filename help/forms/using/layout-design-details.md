@@ -21,7 +21,7 @@ ht-degree: 0%
 XFA-formuliersjablonen of XDP&#39;s zijn de sjablonen voor:
 
 * [Letters](/help/forms/using/create-letter.md)
-* [ het kanaal van de Druk ](/help/forms/using/web-channel-print-channel.md#printchannel) van [ Interactieve Mededelingen ](/help/forms/using/interactive-communications-overview.md)
+* [&#x200B; het kanaal van de Druk &#x200B;](/help/forms/using/web-channel-print-channel.md#printchannel) van [&#x200B; Interactieve Mededelingen &#x200B;](/help/forms/using/interactive-communications-overview.md)
 
 * Layoutfragmenten
 
@@ -31,7 +31,7 @@ Een XDP is ontworpen in Adobe Forms Designer. Dit artikel bevat informatie over 
 
 Een lay-out bepaalt de grafische lay-out van een brief/drukkanaal van een Interactieve Mededeling. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. Maak de indeling in de formulierontwerper en wanneer deze is voltooid, uploadt de Application Specialist de indeling naar AEM server. Van daar, kunt u de lay-out selecteren wanneer het creëren van een correspondentiesjabloon of een drukkanaal van een Interactieve Mededeling.
 
-![ Designer: creeer een lay-out ](assets/claimsubrogationlayout.png)
+![&#x200B; Designer: creeer een lay-out &#x200B;](assets/claimsubrogationlayout.png)
 
 Ga als volgt te werk om lay-outs voor letters/drukkanaal van Interactieve Mededelingen tot stand te brengen:
 
@@ -54,7 +54,7 @@ Nadat u de indeling hebt geanalyseerd die nodig is om uw interactieve communicat
 
 >[!NOTE]
 >
->Voeg inhoud toe aan het kanaal van de Druk van de Interactieve Mededeling in plaats van inhoud toe te voegen aan de subformuliercomponent in het malplaatje XDP. Voeg inhoud aan de doelgebieden in het kanaal van de Druk toe gebruikend [ documentfragmenten, grafieken, beelden ](create-interactive-communication.md#step2), en lay-outfragmenten.
+>Voeg inhoud toe aan het kanaal van de Druk van de Interactieve Mededeling in plaats van inhoud toe te voegen aan de subformuliercomponent in het malplaatje XDP. Voeg inhoud aan de doelgebieden in het kanaal van de Druk toe gebruikend [&#x200B; documentfragmenten, grafieken, beelden &#x200B;](create-interactive-communication.md#step2), en lay-outfragmenten.
 
 Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
@@ -64,12 +64,12 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
 1. Sleep-en-daling de **Subform** component van de **Bibliotheek van Objecten** aan de vorm.
 
-   ![ Component Designer ](assets/subform_component_designer_new.png)
+   ![&#x200B; Component Designer &#x200B;](assets/subform_component_designer_new.png)
 
 1. Selecteer subform om de opties voor subform in het **venster van Objecten** in de juiste ruit te tonen.
 1. Selecteer het **Subform** lusje en selecteer **Overlopen** van de **Inhoud** drop-down lijst. Sleep het linkereindpunt van het subformulier om de lengte aan te passen.
 
-   ![ Gestroomd Subform ](assets/object_subform_flowed_new.png)
+   ![&#x200B; Gestroomd Subform &#x200B;](assets/object_subform_flowed_new.png)
 
 1. In het **Bindende** lusje:
 
@@ -78,14 +78,14 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
 1. Selecteer op dezelfde manier het basissubformulier in het linkerdeelvenster.
 
-   ![ Subform van de Wortel ](assets/root_subform_designer_new.png)
+   ![&#x200B; Subform van de Wortel &#x200B;](assets/root_subform_designer_new.png)
 
 1. Selecteer het **Subform** lusje en selecteer **Overlopen** van de **Inhoud** drop-down lijst. In het **Bindingen** lusje:
 
    1. Specificeer een naam voor subform op het **gebied van de Naam**.
    1. Selecteer **Geen gegevensband** van de **Gegevens die** drop-down lijst binden.
 
-   Herhaal stap 2-5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg [ tekst, documentfragmenten, beelden, en grafieken ](create-interactive-communication.md#step2) aan de doelgebieden slechts terwijl het ontwerpen van de Interactieve Mededeling toe.
+   Herhaal stap 2-5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg [&#x200B; tekst, documentfragmenten, beelden, en grafieken &#x200B;](create-interactive-communication.md#step2) aan de doelgebieden slechts terwijl het ontwerpen van de Interactieve Mededeling toe.
 
 1. Selecteer **Dossier** > **sparen als** om het dossier op het lokale dossiersysteem op te slaan:
 
@@ -100,7 +100,7 @@ Gebruik Afbeeldingsveld of Subformulier in de XDP-sjabloon en voeg een afbeeldin
 
 >[!NOTE]
 >
->Voeg afbeelding toe aan het kanaal Afdrukken van de interactieve communicatie in plaats van afbeelding toe te voegen aan het afbeeldingsveld of de subformuliercomponent in de XDP-sjabloon. Voor meer informatie, zie [ Toevoegend inhoud aan de Interactieve Mededeling ](../../forms/using/create-interactive-communication.md#step2).
+>Voeg afbeelding toe aan het kanaal Afdrukken van de interactieve communicatie in plaats van afbeelding toe te voegen aan het afbeeldingsveld of de subformuliercomponent in de XDP-sjabloon. Voor meer informatie, zie [&#x200B; Toevoegend inhoud aan de Interactieve Mededeling &#x200B;](../../forms/using/create-interactive-communication.md#step2).
 
 Voer de volgende stappen uit om de component van het Gebied van het Beeld in een malplaatje te gebruiken XDP:
 
@@ -117,7 +117,7 @@ Gebruik de component Tabel in Forms Designer om lay-outfragmenten te maken en ge
 
 >[!NOTE]
 >
->Ga tekst in de lijstcellen in of [ creeer band met de modelvoorwerpen van vormgegevens ](create-interactive-communication.md#step2) slechts terwijl het ontwerpen van de Interactieve Mededeling.
+>Ga tekst in de lijstcellen in of [&#x200B; creeer band met de modelvoorwerpen van vormgegevens &#x200B;](create-interactive-communication.md#step2) slechts terwijl het ontwerpen van de Interactieve Mededeling.
 
 Voer de volgende stappen uit om de component van de Lijst in het malplaatje te gebruiken XDP gebruikend Forms Designer:
 
@@ -132,11 +132,11 @@ Voer de volgende stappen uit om de component van de Lijst in het malplaatje te g
 1. Klik de de tekstgebieden van de lijstkopbal in de **Mening van het Ontwerp** en noem hen anders.
 1. De belemmering-en-daling de **component van het Gebied van de Tekst van de** Bibliotheek van Objecten **aan elke lijstcel in de** Mening van het Ontwerp **.** Voer deze stap uit om tabelcellen te kunnen binden aan de formuliergegevensmodelobjecten tijdens het ontwerpen van de interactieve communicatie.
 
-   ![ de gebieden van de Tekst in een lijst ](assets/text_fields_table_new.png)
+   ![&#x200B; de gebieden van de Tekst in een lijst &#x200B;](assets/text_fields_table_new.png)
 
 1. Selecteer de naam van de rij van de linkerruit en selecteer **Voorwerp** > **Bindend** > **Rij voor Elk Punt van Gegevens** herhalen. Voer deze stap uit om ervoor te zorgen dat als een band tussen de lijstcellen van deze rij met de modelvoorwerpen van vormgegevens van inzamelingstype wordt gecreeerd, de lijstrij automatisch voor elk gegevenspunt wordt herhaald beschikbaar in het gegevensbestand.
 
-   Ga tekst in de lijstcellen in of [ creeer band met de modelvoorwerpen van vormgegevens ](create-interactive-communication.md#step2) slechts terwijl het ontwerpen van de Interactieve Mededeling.
+   Ga tekst in de lijstcellen in of [&#x200B; creeer band met de modelvoorwerpen van vormgegevens &#x200B;](create-interactive-communication.md#step2) slechts terwijl het ontwerpen van de Interactieve Mededeling.
 
 1. Selecteer **Dossier** > **sparen als** om het dossier op het lokale dossiersysteem op te slaan:
 

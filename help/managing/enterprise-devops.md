@@ -52,7 +52,7 @@ De ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het
 * realiseren het ontwerp
 * ontwikkelen de services en scripts die nodig zijn voor de implementatie van de vereiste functionaliteit
 
-De configuratie van het [ ontwikkelings ](/help/sites-developing/best-practices.md) milieu kan van diverse factoren afhangen, hoewel het van wordt samengesteld:
+De configuratie van het [&#x200B; ontwikkelings &#x200B;](/help/sites-developing/best-practices.md) milieu kan van diverse factoren afhangen, hoewel het van wordt samengesteld:
 
 * Een geïntegreerd ontwikkelingssysteem met versiebeheer dat dient als een geïntegreerde codebasis. Dit systeem wordt gebruikt om de code van de individuele ontwikkelomgevingen van de verschillende ontwikkelaars samen te voegen en te consolideren.
 * Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Met de juiste intervallen wordt de code gesynchroniseerd met het versiebeheersysteem
@@ -122,7 +122,7 @@ AEM Projecten activeren vaak de implementatie van code:
 * Automatisch: voor overdracht naar de ontwikkelings- en kwaliteitscontroleomgevingen.
 * Handmatig: implementaties in de staging- en productieomgeving worden op een meer beheerste manier uitgevoerd, vaak handmatig; automatisering is echter mogelijk, indien nodig.
 
-![ chlimage_1 ](assets/chlimage_1.png)
+![&#x200B; chlimage_1 &#x200B;](assets/chlimage_1.png)
 
 ## Inhoud verplaatsen {#content-movement}
 
@@ -139,6 +139,6 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 Inhoud kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Tussen verschillende instanties - door ([ AEM replicatie ](/help/sites-deploying/replication.md)) direct te herhalen, de inhoud (gebruikend HTTP, of HTTPS, verbinding).
+* Tussen verschillende instanties - door ([&#x200B; AEM replicatie &#x200B;](/help/sites-deploying/replication.md)) direct te herhalen, de inhoud (gebruikend HTTP, of HTTPS, verbinding).
 
-![ chlimage_1-1 ](assets/chlimage_1-1.png)
+![&#x200B; chlimage_1-1 &#x200B;](assets/chlimage_1-1.png)

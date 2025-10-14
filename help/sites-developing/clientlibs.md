@@ -39,7 +39,7 @@ De standaardmanier om een bibliotheek aan de clientzijde (dat wil zeggen een JS-
 
 Deze aanpak werkt in AEM, maar kan problemen veroorzaken wanneer pagina&#39;s en de bestanddelen ervan complex worden. In dergelijke gevallen bestaat het gevaar dat meerdere exemplaren van dezelfde JS-bibliotheek in de uiteindelijke HTML-uitvoer worden opgenomen. Om dit te vermijden en logische organisatie van cliënt-zijbibliotheken toe te staan AEM gebruikt **cliënt-zijbibliotheekomslagen**.
 
-Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibraryFolder` . Zijn definitie in [ aantekening CND ](https://jackrabbit.apache.org/node-type-notation.html) is
+Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibraryFolder` . Zijn definitie in [&#x200B; aantekening CND &#x200B;](https://jackrabbit.apache.org/node-type-notation.html) is
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder
@@ -49,7 +49,7 @@ Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibra
   - channels (string) multiple
 ```
 
-Door gebrek, `cq:ClientLibraryFolder` knopen kunnen overal binnen `/apps`, `/libs` en `/etc` worden geplaatst onderaan de bewaarplaats (deze gebreken, en andere montages kunnen door het **Granite paneel van de Bibliotheek van HTML van Adobe** van de [ Console van het Systeem ](https://localhost:4502/system/console/configMgr) worden gecontroleerd).
+Door gebrek, `cq:ClientLibraryFolder` knopen kunnen overal binnen `/apps`, `/libs` en `/etc` worden geplaatst onderaan de bewaarplaats (deze gebreken, en andere montages kunnen door het **Granite paneel van de Bibliotheek van HTML van Adobe** van de [&#x200B; Console van het Systeem &#x200B;](https://localhost:4502/system/console/configMgr) worden gecontroleerd).
 
 Elke `cq:ClientLibraryFolder` wordt gevuld met een set JS- en/of CSS-bestanden, samen met enkele ondersteunende bestanden (zie hieronder). De eigenschappen van de `cq:ClientLibraryFolder` worden als volgt geconfigureerd:
 
@@ -58,7 +58,7 @@ Elke `cq:ClientLibraryFolder` wordt gevuld met een set JS- en/of CSS-bestanden, 
 * `dependencies`: Dit is een lijst met andere categorieën in de clientbibliotheek waarvan deze bibliotheekmap afhankelijk is. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te werken, moet op basis van twee `cq:ClientLibraryFolder` nodes `F` en `G` ten minste een van de `categories` of `G` -knooppunten deel uitmaken van de `dependencies` of `F` -lus.
 
 * `embed`: wordt gebruikt om code uit andere bibliotheken in te sluiten. Als knooppunt F knooppunten G en H insluit, is de resulterende HTML een concentratie van inhoud van knooppunten G en H.
-* `allowProxy`: Als een clientbibliotheek zich onder `/apps` bevindt, staat deze eigenschap toegang tot de bibliotheek via een proxyservlet toe. Zie [ het Vestiging van een Omslag van de Bibliotheek van de Cliënt van de Volmacht Servlet ](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
+* `allowProxy`: Als een clientbibliotheek zich onder `/apps` bevindt, staat deze eigenschap toegang tot de bibliotheek via een proxyservlet toe. Zie [&#x200B; het Vestiging van een Omslag van de Bibliotheek van de Cliënt van de Volmacht Servlet &#x200B;](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
 
 ## Verwijzen naar clientbibliotheken {#referencing-client-side-libraries}
 
@@ -66,7 +66,7 @@ Omdat HTML de aangewezen technologie voor het ontwikkelen van AEM plaatsen is, z
 
 ### HTML gebruiken {#using-htl}
 
-In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat door AEM wordt verstrekt, dat door [`data-sly-use` kan worden betreden ](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#use). Er zijn drie sjablonen beschikbaar in dit bestand, dat kan worden aangeroepen via [`data-sly-call` ](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#template-call) :
+In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat door AEM wordt verstrekt, dat door [`data-sly-use` kan worden betreden &#x200B;](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#use). Er zijn drie sjablonen beschikbaar in dit bestand, dat kan worden aangeroepen via [`data-sly-call` &#x200B;](https://helpx.adobe.com/nl/experience-manager/htl/using/block-statements.html#template-call) :
 
 * **css** - laadt slechts de CSS dossiers van de referenced cliëntbibliotheken.
 * **js** - Laadt slechts de dossiers van JavaScript van de referenced cliëntbibliotheken.
@@ -74,7 +74,7 @@ In HTML, worden de cliëntbibliotheken geladen door een helpermalplaatje dat doo
 
 Elke hulpsjabloon verwacht een `categories` optie voor het verwijzen naar de gewenste clientbibliotheken. Deze optie kan ofwel een array van tekenreekswaarden zijn, ofwel een tekenreeks met een lijst met door komma&#39;s gescheiden waarden.
 
-Voor verdere details en voorbeeld van gebruik, zie het document [ Begonnen het worden met de Taal van het Malplaatje van HTML ](https://helpx.adobe.com/nl/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Voor verdere details en voorbeeld van gebruik, zie het document [&#x200B; Begonnen het worden met de Taal van het Malplaatje van HTML &#x200B;](https://helpx.adobe.com/nl/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### JSP gebruiken {#using-jsp}
 
@@ -97,7 +97,7 @@ De gegenereerde HTML-pagina bevat de volgende code:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Voor volledige informatie, met inbegrip van attributen voor het filtreren van JS, CSS, of themabibliotheken, zie [ ui:includeClientLib ](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Voor volledige informatie, met inbegrip van attributen voor het filtreren van JS, CSS, of themabibliotheken, zie [&#x200B; ui:includeClientLib &#x200B;](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
@@ -117,9 +117,9 @@ Clientbibliotheekmappen bevatten de volgende items:
   **Nota:** u subfolders kunt gebruiken om brondossiers te organiseren.
 * Eén `js.txt` -bestand en/of één `css.txt` -bestand dat de bronbestanden identificeert die in de gegenereerde JS- en/of CSS-bestanden moeten worden samengevoegd.
 
-![ clientlibarch ](assets/clientlibarch.png)
+![&#x200B; clientlibarch &#x200B;](assets/clientlibarch.png)
 
-Voor informatie over vereisten die voor cliëntbibliotheken voor widgets specifiek zijn, zie [ Gebruikend en Uitbreidend Widgets ](/help/sites-developing/widgets.md).
+Voor informatie over vereisten die voor cliëntbibliotheken voor widgets specifiek zijn, zie [&#x200B; Gebruikend en Uitbreidend Widgets &#x200B;](/help/sites-developing/widgets.md).
 
 De webclient moet over toegangsrechten voor het knooppunt `cq:ClientLibraryFolder` beschikken. U kunt ook bibliotheken vanuit beveiligde gebieden van de opslagplaats toegankelijk maken (zie Code insluiten vanuit andere bibliotheken, verderop).
 
@@ -163,7 +163,7 @@ Vervolgens stelt u de eigenschap `allowProxy` op `foo` in op true.
 
 ### Een clientbibliotheekmap maken {#create-a-client-library-folder}
 
-1. Open CRXDE Lite in Webbrowser ([ https://localhost:4502/crx/de ](https://localhost:4502/crx/de)).
+1. Open CRXDE Lite in Webbrowser ([&#x200B; https://localhost:4502/crx/de &#x200B;](https://localhost:4502/crx/de)).
 1. Selecteer de omslag waar u van de omslag van de cliëntbibliotheek wilt de plaats bepalen en **klikken creeert > Node** leidt.
 1. Voer een naam in voor het bibliotheekbestand en selecteer `cq:ClientLibraryFolder` in de lijst Type. Klik **O.K.** en klik dan **sparen allen**.
 1. Om de categorie of de categorieën te specificeren dat de bibliotheek tot behoort, selecteer de `cq:ClientLibraryFolder` knoop, voeg het volgende bezit toe, en klik dan **sparen allen**:
@@ -223,7 +223,7 @@ Het insluiten van code is handig voor het verschaffen van toegang tot bibliothek
 
 #### Toepassingsspecifieke clientbibliotheekmappen {#app-specific-client-library-folders}
 
-U kunt het beste alle toepassingsgerelateerde bestanden in hun toepassingsmap onder `/apps` houden. Het wordt ook aanbevolen bezoekers van websites toegang tot de map `/apps` te weigeren. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder `/apps`, en maak het toegankelijk door volmachtsservlet zoals die onder [ van een Omslag van de Bibliotheek van de Cliënt van de Cliënt wordt beschreven en Gebruikend Servlet van de Bibliotheken van de Cliënt van de Volmacht ](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+U kunt het beste alle toepassingsgerelateerde bestanden in hun toepassingsmap onder `/apps` houden. Het wordt ook aanbevolen bezoekers van websites toegang tot de map `/apps` te weigeren. Om aan beide beste praktijken te voldoen, creeer een omslag van de cliëntbibliotheek onder `/apps`, en maak het toegankelijk door volmachtsservlet zoals die onder [&#x200B; van een Omslag van de Bibliotheek van de Cliënt van de Cliënt wordt beschreven en Gebruikend Servlet van de Bibliotheken van de Cliënt van de Volmacht &#x200B;](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluitingsknooppunt `cq:ClientLibraryFolder` en gebruikt u de volgende eigenschapkenmerken:
 
@@ -271,7 +271,7 @@ De volgende categorieën in de clientbibliotheek worden bij AEM meegeleverd. U m
 
 Wanneer u CSS-bestanden insluit, gebruikt de gegenereerde CSS-code paden naar bronnen die relatief zijn ten opzichte van de insluitingsbibliotheek. De openbaar toegankelijke bibliotheek `/etc/client/libraries/myclientlibs/publicmain` sluit bijvoorbeeld de `/apps/myapp/clientlib` -clientbibliotheek in:
 
-![ screen_shot_2012-05-29at20122pm ](assets/screen_shot_2012-05-29at20122pm.png)
+![&#x200B; screen_shot_2012-05-29at20122pm &#x200B;](assets/screen_shot_2012-05-29at20122pm.png)
 
 Het bestand `main.css` bevat de volgende stijl:
 
@@ -322,7 +322,7 @@ De volgende tabel bevat bijvoorbeeld de waarde van de eigenschap `channels` voor
 
 ## Voorprocessors gebruiken {#using-preprocessors}
 
-AEM staat voor pluggable preprocessoren en schepen met steun voor [ Compressor YUI ](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript toe en [ de Compiler van de Sluiting van Google (GCC) ](https://developers.google.com/closure/compiler/) voor JavaScript met YUI die als AEM standaard preprocessor wordt geplaatst.
+AEM staat voor pluggable preprocessoren en schepen met steun voor [&#x200B; Compressor YUI &#x200B;](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) voor CSS en JavaScript toe en [&#x200B; de Compiler van de Sluiting van Google (GCC) &#x200B;](https://developers.google.com/closure/compiler/) voor JavaScript met YUI die als AEM standaard preprocessor wordt geplaatst.
 
 Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
@@ -333,7 +333,7 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 
 >[!NOTE]
 >
->AEM gebruikt standaard de YUI-compressor. Zie de [ documentatie van GitHub van de Compressor van YUI ](https://github.com/yui/yuicompressor/issues) voor een lijst van bekende kwesties. Het schakelen naar GCC-compressor voor bepaalde clientlibs kan een aantal problemen oplossen die tijdens het gebruik van YUI zijn waargenomen.
+>AEM gebruikt standaard de YUI-compressor. Zie de [&#x200B; documentatie van GitHub van de Compressor van YUI &#x200B;](https://github.com/yui/yuicompressor/issues) voor een lijst van bekende kwesties. Het schakelen naar GCC-compressor voor bepaalde clientlibs kan een aantal problemen oplossen die tijdens het gebruik van YUI zijn waargenomen.
 
 >[!CAUTION]
 >
@@ -387,13 +387,13 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-Voor verdere details op opties GCC, zie de [ documentatie GCC ](https://developers.google.com/closure/compiler/docs/compilation_levels).
+Voor verdere details op opties GCC, zie de [&#x200B; documentatie GCC &#x200B;](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 ### Systeemstandaardminiatuur instellen {#set-system-default-minifier}
 
 YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit om dit te wijzigen in GCC.
 
-1. Ga naar de Manager van Configuratie van de Felix van Apache in [ https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+1. Ga naar de Manager van Configuratie van de Felix van Apache in [&#x200B; https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Vind en geef **de Manager van de Bibliotheek van Adobe Granite HTML** uit.
 1. Laat **toe** optie &lbrace;indien niet reeds toegelaten).
 1. Plaats het Standaard van de Bewerker van waarde **JS vormt** aan `min:gcc`.
@@ -410,7 +410,7 @@ AEM biedt verschillende gereedschappen voor foutopsporing en het testen van clie
 
 Als u de oorsprong van ingesloten code wilt traceren of wilt controleren of ingesloten clientbibliotheken de verwachte resultaten opleveren, kunt u de namen zien van de bestanden die bij uitvoering worden ingesloten. Als u de bestandsnamen wilt zien, voegt u de parameter `debugClientLibs=true` toe aan de URL van de webpagina. De gegenereerde bibliotheek bevat `@import` -instructies in plaats van de ingesloten code.
 
-In het voorbeeld in het vorige [ Inbedden Code van Andere Bibliotheken ](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries) sectie, sluit de `/etc/client/libraries/myclientlibs/publicmain` omslag van de cliëntbibliotheek de `/apps/myapp/clientlib` omslag van de cliëntbibliotheek in. Als u de parameter aan de webpagina toevoegt, wordt de volgende koppeling in de broncode van de webpagina gemaakt:
+In het voorbeeld in het vorige [&#x200B; Inbedden Code van Andere Bibliotheken &#x200B;](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries) sectie, sluit de `/etc/client/libraries/myclientlibs/publicmain` omslag van de cliëntbibliotheek de `/apps/myapp/clientlib` omslag van de cliëntbibliotheek in. Als u de parameter aan de webpagina toevoegt, wordt de volgende koppeling in de broncode van de webpagina gemaakt:
 
 ```xml
 <link rel="stylesheet" href="/etc/clientlibs/mycientlibs/publicmain.css">
@@ -460,4 +460,4 @@ De HTML Library Manager-service verwerkt `cq:ClientLibraryFolder` -tags en gener
 * Prestaties verbeteren: witruimte verwijderen en bibliotheken comprimeren.
 * Leesbaarheid verbeteren: spaties opnemen en niet comprimeren.
 
-Voor informatie over het vormen van de dienst, zie [ de Manager van de Bibliotheek van AEM HTML ](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).
+Voor informatie over het vormen van de dienst, zie [&#x200B; de Manager van de Bibliotheek van AEM HTML &#x200B;](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

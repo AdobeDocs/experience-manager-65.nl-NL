@@ -25,7 +25,7 @@ De startpagina van [!DNL Assets] is standaard uitgeschakeld. Voer de volgende st
 1. Open de service **[!UICONTROL Day CQ DAM Event Recorder]** .
 1. Selecteer de **[!UICONTROL Enable this service]** om opname van activiteiten in te schakelen.
 
-   ![ chlimage_1-250 ](assets/chlimage_1-250.png)
+   ![&#x200B; chlimage_1-250 &#x200B;](assets/chlimage_1-250.png)
 
 1. Selecteer in de lijst **[!UICONTROL Event Types]** de gebeurtenissen die moeten worden opgenomen en sla de wijzigingen op.
 
@@ -36,15 +36,15 @@ De startpagina van [!DNL Assets] is standaard uitgeschakeld. Voer de volgende st
 1. Open de service **[!UICONTROL DAM Asset Home Page Feature Flag]** via Configuratiebeheer `https://[aem_server]:[port]/system/console/configMgr` .
 1. Selecteer de optie `isEnabled.name` om de functie Startpagina van [!DNL Assets] in te schakelen. Sla de wijzigingen op.
 
-   ![ chlimage_1-251 ](assets/chlimage_1-251.png)
+   ![&#x200B; chlimage_1-251 &#x200B;](assets/chlimage_1-251.png)
 
 1. Open het dialoogvenster **[!UICONTROL User Preferences]** en selecteer **[!UICONTROL Enable Assets Home Page]** . Sla de wijzigingen op.
 
-   ![ laat activa homepage op de dialoog van de Voorkeur van de Gebruiker toe ](assets/Annotation-color.png)
+   ![&#x200B; laat activa homepage op de dialoog van de Voorkeur van de Gebruiker toe &#x200B;](assets/Annotation-color.png)
 
 Nadat u de startpagina van [!DNL Assets] hebt ingeschakeld, navigeert u naar de gebruikersinterface van [!DNL Assets] via de navigatiepagina of opent u deze rechtstreeks via de URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam` .
 
-![ vorm ervaringsverbinding op het gebruikersinterface van Assets ](assets/config-experience-link.png)
+![&#x200B; vorm ervaringsverbinding op het gebruikersinterface van Assets &#x200B;](assets/config-experience-link.png)
 
 Klik op **[!UICONTROL Click here to configure your experience link]** om uw gebruikersnaam, achtergrondafbeelding en profielafbeelding toe te voegen.
 

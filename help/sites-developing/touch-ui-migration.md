@@ -25,7 +25,7 @@ Als u AEM met klassieke UI hebt gebruikt, neem actie om uw instantie te migreren
 
 >[!NOTE]
 >
->Een dergelijk migratieproject kan grote gevolgen hebben voor uw instantie. Zie [ het Leiden Projecten - Beste praktijken ](/help/managing/best-practices.md) voor geadviseerde richtlijnen.
+>Een dergelijk migratieproject kan grote gevolgen hebben voor uw instantie. Zie [&#x200B; het Leiden Projecten - Beste praktijken &#x200B;](/help/managing/best-practices.md) voor geadviseerde richtlijnen.
 
 ## De basisbeginselen {#the-basics}
 
@@ -115,43 +115,43 @@ De basisbeginselen van de ontwikkeling van de aanraakinterface bieden een solide
 
 Dialoogvensters zijn een belangrijke factor bij het migreren van uw componenten:
 
-* [ het Ontwikkelen AEM Componenten ](/help/sites-developing/developing-components.md) (met aanraking-toegelaten UI)
+* [&#x200B; het Ontwikkelen AEM Componenten &#x200B;](/help/sites-developing/developing-components.md) (met aanraking-toegelaten UI)
 * [Migreren vanuit een klassieke component](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [ AEM Moderniseringshulpmiddelen ](/help/sites-developing/modernization-tools.md) - om u te helpen de dialogen van uw klassieke componenten UI in aanraking UI omzetten
+* [&#x200B; AEM Moderniseringshulpmiddelen &#x200B;](/help/sites-developing/modernization-tools.md) - om u te helpen de dialogen van uw klassieke componenten UI in aanraking UI omzetten
 
    * Er is een compatibiliteitslaag in aanraak UI om een klassiek UI-dialoogvenster te openen binnen een &quot;Touch UI-wrapper&quot;, maar deze heeft beperkte functionaliteit en wordt niet aanbevolen voor de lange termijn.
 
-* [ het Aanpassen van de Gebieden van de Dialoog in Aanraak UI ](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [&#x200B; het Aanpassen van de Gebieden van de Dialoog in Aanraak UI &#x200B;](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Een nieuwe graniet-UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md)
-* [ het Aanpassen van de Authoring van de Pagina ](/help/sites-developing/customizing-page-authoring-touch.md) (met touch-enabled UI)
+* [&#x200B; het Aanpassen van de Authoring van de Pagina &#x200B;](/help/sites-developing/customizing-page-authoring-touch.md) (met touch-enabled UI)
 
 ## Consoles migreren {#migrating-consoles}
 
 U kunt ook de consoles aanpassen:
 
-* [ die Consoles ](/help/sites-developing/customizing-consoles-touch.md) aanpassen (voor touch-Toegelaten UI)
+* [&#x200B; die Consoles &#x200B;](/help/sites-developing/customizing-consoles-touch.md) aanpassen (voor touch-Toegelaten UI)
 
 ## Verwante overwegingen {#related-considerations}
 
 Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface, zijn er verwante problemen die u tegelijkertijd moet overwegen, zoals ook aanbevolen wordt:
 
-* [ Malplaatjes ](/help/sites-developing/templates.md) - [ Bewerkbare malplaatjes ](/help/sites-developing/page-templates-editable.md)
-* [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
-* [ HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
+* [&#x200B; Malplaatjes &#x200B;](/help/sites-developing/templates.md) - [&#x200B; Bewerkbare malplaatjes &#x200B;](/help/sites-developing/page-templates-editable.md)
+* [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL)
+* [&#x200B; HTML &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
 
 >[!NOTE]
 >
->Zie ook [ Ontwikkelen - Beste praktijken ](/help/sites-developing/best-practices.md).
+>Zie ook [&#x200B; Ontwikkelen - Beste praktijken &#x200B;](/help/sites-developing/best-practices.md).
 
 ## Aanvullende bronnen {#further-resources}
 
 Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middelen onder:
 
 * [Gebruikershandleiding ontwikkelen](/help/sites-developing/getting-started.md)
-* [ de Documentatie van graniet UI ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [ AEM 6.5 Tutorials en Video&#39;s van Plaatsen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=nl-NL)
+* [&#x200B; de Documentatie van graniet UI &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [&#x200B; AEM 6.5 Tutorials en Video&#39;s van Plaatsen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=nl-NL)
 * [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](/help/sites-developing/getting-started.md)
-* [ AEM Gems ](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=nl-NL)
+* [&#x200B; AEM Gems &#x200B;](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=nl-NL)
 * [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

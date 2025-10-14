@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[ Steun van het Contact ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support) voor meer informatie of om het flard te verkrijgen.
+>[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support) voor meer informatie of om het flard te verkrijgen.
 
 ## Het installatieprogramma van de patch {#about-the-patch-installer}
 
-Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Zie de recentste [ Nota&#39;s van de Versie van het Pak van de Dienst ](release-notes.md) voor een volledige lijst van vaste kwesties.
+Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Zie de recentste [&#x200B; Nota&#39;s van de Versie van het Pak van de Dienst &#x200B;](release-notes.md) voor een volledige lijst van vaste kwesties.
 
 ## Vereisten voor de installatie van de patch {#prerequisites-to-installing-the-patch}
 
@@ -58,7 +58,7 @@ Navigeer naar de juiste map en typ `./aem65_cfp_install.bin` vanaf een opdrachtp
 1. **[slechts voor Vensters ]:** doe het volgende:
    * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Voer **Manager van de Configuratie** in werking door het {**dossier 3} te gebruiken 2&rbrace; ConfigurationManager.bat in `[aem-forms root]\configurationManager\bin`.**
 
-   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [ ConfigurationManager.lax ](/help/assets/ConfigurationManager.lax) en [ ConfigurationManager_IPV6.lax ](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as-1.4.1.1.jar** met **as-1.4.1.2.jar** in deze twee dossiers.
+   * Of schrap de **optie van de Manager van de Configuratie van het Begin** alvorens u **[!UICONTROL Done]** klikt. Alvorens **Manager van de Configuratie in werking te stellen** gebruikend **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer aan *`<AEMForms_Install_Dir>\configurationManager\bin`* folder en vervang **ConfigurationManager.lax** en **ConfigurationManager_IPV6.lax** met recentste [&#x200B; ConfigurationManager.lax &#x200B;](/help/assets/ConfigurationManager.lax) en [&#x200B; ConfigurationManager_IPV6.lax &#x200B;](/help/assets/ConfigurationManager_IPv6.lax) dossiers, Onderzoek, en vervang **as-1.4.1.1.jar** met **as-1.4.1.2.jar** in deze twee dossiers.
 
    >[!NOTE]
    >
@@ -71,8 +71,8 @@ Navigeer naar de juiste map en typ `./aem65_cfp_install.bin` vanaf een opdrachtp
 
 1. Afhankelijk van uw toepassingsserver, kies één van de volgende documenten en volg de instructies in *het Vormen en het Opstellen van AEM vormen* sectie.
 
-   * [ het Installeren van en het Opstellen van AEM vormen voor JBoss® ](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [ het Installeren van en het Opstellen van AEM vormen voor WebSphere® ](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [&#x200B; het Installeren van en het Opstellen van AEM vormen voor JBoss® &#x200B;](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [&#x200B; het Installeren van en het Opstellen van AEM vormen voor WebSphere® &#x200B;](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Alleen JBoss®) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss®-toepassingsserver.
 
@@ -97,4 +97,4 @@ Als u de authentificatie van SAML gevormd hebt en problemen met grote meta-gegev
 * Documentbeveiliging
 * Foundation JEE
 
-[ Steun van het Contact ](https://experienceleague.adobe.com/nl?support-solution=General&amp;support-tab=home#support)
+[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)

@@ -32,7 +32,7 @@ De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bez
 
 ## Segmentatie gebruiken {#using-segmentation}
 
-De segmenten worden bepaald in [ het Vormen Segmentatie ](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
+De segmenten worden bepaald in [&#x200B; het Vormen Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
 
 ## Gesegmenteerde terminologie {#segmentation-terminology}
 
@@ -66,7 +66,7 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 
 Sommige demografische kenmerken zijn moeilijk te bepalen zonder registratie, maar kunnen worden afgeleid door gedrags- en demografische kenmerken te combineren.
 
-Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [ worden verkregen Google Ad Planner ](https://www.google.com/adplanner/)) plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
+Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [&#x200B; worden verkregen Google Ad Planner &#x200B;](https://www.google.com/adplanner/)) plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
 
 **Subsegment** - een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
 
@@ -80,4 +80,4 @@ Bijvoorbeeld, staat het combineren van verwijzende URL (als gedragseigenschap) m
 
 >[!NOTE]
 >
->Zie [ Segmentatie ](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.
+>Zie [&#x200B; Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.

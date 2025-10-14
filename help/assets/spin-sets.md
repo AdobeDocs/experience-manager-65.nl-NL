@@ -25,11 +25,11 @@ Een centrifugeerset simuleert een kijkervaring van 360 graden. Dynamic Media bie
 
 De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UICONTROL SPINSET]**. Als de Spin-set is gepubliceerd, staat bovendien de publicatiedatum (aangegeven door het pictogram **[!UICONTROL World]** ) op de banner samen met de laatste wijzigingsdatum die wordt aangegeven door het pictogram **[!UICONTROL Pencil]** .
 
-![ chlimage_1- ](assets/chlimage_1-380.png)
+![&#x200B; chlimage_1- &#x200B;](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Voor informatie over het gebruikersinterface van Assets, zie [ activa ](/help/assets/manage-assets.md) beheren.
+>Voor informatie over het gebruikersinterface van Assets, zie [&#x200B; activa &#x200B;](/help/assets/manage-assets.md) beheren.
 
 Wanneer u een reeks van de Rotatie creeert, adviseert de Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
@@ -43,59 +43,59 @@ Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitation
 
 Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
-1. [ uploadt uw beelden voor veelvoudige meningen ](#uploading-assets-for-spin-sets).
+1. [&#x200B; uploadt uw beelden voor veelvoudige meningen &#x200B;](#uploading-assets-for-spin-sets).
 
    U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-   Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
+   Zie [&#x200B; Dynamic Media - de Ondersteunde formaten van het roosterbeeld &#x200B;](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
 
-1. [ creeer een Reeks van de Rotatie ](#creating-spin-sets).
+1. [&#x200B; creeer een Reeks van de Rotatie &#x200B;](#creating-spin-sets).
 
    Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Create > Spin Set]** en geeft u een naam op voor de set, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
-   Zie [ Werk met Kiezers ](/help/assets/working-with-selectors.md).
+   Zie [&#x200B; Werk met Kiezers &#x200B;](/help/assets/working-with-selectors.md).
 
    >[!NOTE]
    >
    >U kunt ook automatisch spinsets maken via [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Belangrijk:** de reeksen van de Partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen en zijn beschikbaar slechts op Dynamic Media - de wijze van Scene7.
 
-1. Opstelling [ de Vastgestelde Kijker van de Rotatie stelt ](/help/assets/managing-viewer-presets.md) vooraf in, zoals nodig.
+1. Opstelling [&#x200B; de Vastgestelde Kijker van de Rotatie stelt &#x200B;](/help/assets/managing-viewer-presets.md) vooraf in, zoals nodig.
 
    Beheerders kunnen viewervoorinstellingen voor spinsets maken of wijzigen. Als u uw spinset wilt weergeven met een viewervoorinstelling, selecteert u de spinset en selecteert u **Viewers** in het vervolgkeuzemenu voor het linkerspoor.
 
    Zie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** als u viewervoorinstellingen wilt maken of bewerken.
 
-   Zie [ vooraf instelt van de kijker toevoegen en uitgeven ](/help/assets/managing-viewer-presets.md).
+   Zie [&#x200B; vooraf instelt van de kijker toevoegen en uitgeven &#x200B;](/help/assets/managing-viewer-presets.md).
 
-1. [ Mening een Reeks van de Draai ](#viewing-spin-sets).
+1. [&#x200B; Mening een Reeks van de Draai &#x200B;](#viewing-spin-sets).
 
    U kunt sets die zijn gemaakt met voorinstellingen voor batchsets op drie verschillende manieren weergeven en openen. (De Reeksen die gebruikend batch worden gecreeerd stellen vooraf in, verschijnen *niet* in het gebruikersinterface.)
 
-1. [ Voorproef een Reeks van de Rotatie ](/help/assets/previewing-assets.md).
+1. [&#x200B; Voorproef een Reeks van de Rotatie &#x200B;](/help/assets/previewing-assets.md).
 
    Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** , dat beschikbaar is in het keuzemenu voor de linkertrack.
 
-1. [ Publish een Reeks van de Draai ](/help/assets/publishing-dynamicmedia-assets.md).
+1. [&#x200B; Publish een Reeks van de Draai &#x200B;](/help/assets/publishing-dynamicmedia-assets.md).
 
-   Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Bovendien moet u [ de vooraf ingestelde kijker ](/help/assets/managing-viewer-presets.md) publiceren.
+   Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Bovendien moet u [&#x200B; de vooraf ingestelde kijker &#x200B;](/help/assets/managing-viewer-presets.md) publiceren.
 
-1. [ Verbinding URLs aan uw Webtoepassing ](/help/assets/linking-urls-to-yourwebapplication.md) of [ bed de Video of Kijker van het Beeld ](/help/assets/embed-code.md) in.
+1. [&#x200B; Verbinding URLs aan uw Webtoepassing &#x200B;](/help/assets/linking-urls-to-yourwebapplication.md) of [&#x200B; bed de Video of Kijker van het Beeld &#x200B;](/help/assets/embed-code.md) in.
 
    Adobe Experience Manager Assets maakt URL-aanroepen voor centrifuges en activeert deze nadat u de centrifuges hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
    Selecteer eerst de spinset en selecteer vervolgens **[!UICONTROL Viewers]** in het vervolgkeuzemenu voor het linkerspoor.
 
-   Zie [ Verbinding een Rek die aan een Web-pagina ](/help/assets/linking-urls-to-yourwebapplication.md) wordt geplaatst en [ bed de Video of Kijker van het Beeld ](/help/assets/embed-code.md) in.
+   Zie [&#x200B; Verbinding een Rek die aan een Web-pagina &#x200B;](/help/assets/linking-urls-to-yourwebapplication.md) wordt geplaatst en [&#x200B; bed de Video of Kijker van het Beeld &#x200B;](/help/assets/embed-code.md) in.
 
-Indien nodig, kunt u [ uitgeven een Reeks van de Draai ](#editing-spin-sets). Bovendien kunt u [ Vastgestelde eigenschappen van de Spin bekijken en wijzigen ](/help/assets/manage-assets.md#editing-properties).
+Indien nodig, kunt u [&#x200B; uitgeven een Reeks van de Draai &#x200B;](#editing-spin-sets). Bovendien kunt u [&#x200B; Vastgestelde eigenschappen van de Spin bekijken en wijzigen &#x200B;](/help/assets/manage-assets.md#editing-properties).
 
 ## Elementen uploaden voor een centrifugeset {#uploading-assets-for-spin-sets}
 
 U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
-U kunt beelden voor de Reeksen van de Rotatie zoals u [ om het even welke andere activa in Experience Manager Assets ](/help/assets/manage-assets.md) uploaden.
+U kunt beelden voor de Reeksen van de Rotatie zoals u [&#x200B; om het even welke andere activa in Experience Manager Assets &#x200B;](/help/assets/manage-assets.md) uploaden.
 
-Zie [ Dynamic Media - de Ondersteunde formaten van het roosterbeeld ](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
+Zie [&#x200B; Dynamic Media - de Ondersteunde formaten van het roosterbeeld &#x200B;](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst van formaten die door de Reeksen van de Rotatie worden gesteund.
 
 ### Richtlijnen voor het vastleggen van afbeeldingen voor uw centrifugeset {#guidelines-for-shooting-spin-set-images}
 
@@ -115,7 +115,7 @@ In deze sectie wordt beschreven hoe u een centrifugeset in Experience Manager ma
 >
 >U kunt ook automatisch spinsets maken via [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Belangrijk:** de reeksen van de Partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen en zijn beschikbaar slechts op Dynamic Media - de wijze van Scene7.
 >
->Zie &quot;Creërend partij vastgestelde vooraf instelt om de Reeksen van het Beeld en Reeksen van de Draai&quot;in [ te produceren vormen Dynamic Media - de wijze van Scene7 ](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Zie &quot;Creërend partij vastgestelde vooraf instelt om de Reeksen van het Beeld en Reeksen van de Draai&quot;in [&#x200B; te produceren vormen Dynamic Media - de wijze van Scene7 &#x200B;](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >
 
 >[!NOTE]
@@ -134,11 +134,11 @@ Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitation
 
 1. Navigeer in Assets naar de plaats waar u een centrifugeset wilt maken, selecteer **[!UICONTROL Create]** en selecteer **[!UICONTROL Spin Set]** . U kunt de set ook maken vanuit een map die uw assets bevat. De Editor van spinset wordt weergegeven.
 
-   ![ 6_5_spinset-createpulldownmenu ](assets/6_5_spinset-createpulldownmenu.png)
+   ![&#x200B; 6_5_spinset-createpulldownmenu &#x200B;](assets/6_5_spinset-createpulldownmenu.png)
 
 1. Voer in het veld **[!UICONTROL Title]** in de Editor voor de centrifugeset een naam in voor de centrifugeset. De naam wordt weergegeven in de banner over de centrifugeset. Voer eventueel een beschrijving in.
 
-   ![ 6_5_spinset-spinseteditortitle ](assets/6_5_spinset-spinseteditortitle.png)
+   ![&#x200B; 6_5_spinset-spinseteditortitle &#x200B;](assets/6_5_spinset-spinseteditortitle.png)
 
    >[!NOTE]
    >
@@ -154,15 +154,15 @@ Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitation
 
    Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
-   Zie [ Werk met Kiezers ](/help/assets/working-with-selectors.md).
+   Zie [&#x200B; Werk met Kiezers &#x200B;](/help/assets/working-with-selectors.md).
 
-   ![ chlimage_1-383 ](assets/chlimage_1-383.png)
+   ![&#x200B; chlimage_1-383 &#x200B;](assets/chlimage_1-383.png)
 
 1. Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. Nadat u elementen hebt toegevoegd, kunt u deze handmatig opnieuw rangschikken of sorteren.
 
    Indien nodig sleept u het pictogram Opnieuw ordenen van een element rechts van de bestandsnaam van het element om de volgorde van de afbeeldingen in de lijst met sets te wijzigen, of omlaag.
 
-   ![ herschikt Kader 11 in de spin die door het aan een nieuwe plaats ](assets/6_5_spinset-reorderassets.png) wordt geplaatst te slepen.
+   ![&#x200B; herschikt Kader 11 in de spin die door het aan een nieuwe plaats &#x200B;](assets/6_5_spinset-reorderassets.png) wordt geplaatst te slepen.
 
    De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie te slepen.
 
@@ -176,27 +176,27 @@ Zie ook {de beperkingen van 0} Dynamic Media [&#128279;](/help/assets/limitation
 
 ## Een centrifugeset weergeven {#viewing-spin-sets}
 
-U kunt spin reeksen of in het gebruikersinterface of het gebruiken van [ partij tot stand brengen vooraf instelt ](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Nochtans, verschijnen de reeksen die gebruikend partij worden gecreeerd vooraf instelt, *niet* in het gebruikersinterface. U hebt op drie verschillende manieren toegang tot sets die zijn gemaakt met voorinstellingen voor batchsets. (Deze methoden zijn ook beschikbaar als u de centrifuges in de gebruikersinterface hebt gemaakt.)
+U kunt spin reeksen of in het gebruikersinterface of het gebruiken van [&#x200B; partij tot stand brengen vooraf instelt &#x200B;](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Nochtans, verschijnen de reeksen die gebruikend partij worden gecreeerd vooraf instelt, *niet* in het gebruikersinterface. U hebt op drie verschillende manieren toegang tot sets die zijn gemaakt met voorinstellingen voor batchsets. (Deze methoden zijn ook beschikbaar als u de centrifuges in de gebruikersinterface hebt gemaakt.)
 
 >[!NOTE]
 >
->U kunt reeksen als gebruikersinterface ook bekijken zoals die in [ worden beschreven geeft de Reeksen van de Rotatie ](#editing-spin-sets) uit.
+>U kunt reeksen als gebruikersinterface ook bekijken zoals die in [&#x200B; worden beschreven geeft de Reeksen van de Rotatie &#x200B;](#editing-spin-sets) uit.
 
 **om een Reeks van de Draai te bekijken:**
 
 1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Selecteer de naam van de set zodat u de volledige set kunt zien.
 
-   ![ chlimage_1-156 ](assets/chlimage_1-384.png)
+   ![&#x200B; chlimage_1-156 &#x200B;](assets/chlimage_1-384.png)
 
 1. Van een lidafbeelding van om het even welke set. Selecteer het menu **[!UICONTROL Sets]** om de sets weer te geven waarvan het element lid is.
 
-   ![ chlimage_1-157 ](assets/chlimage_1-385.png)
+   ![&#x200B; chlimage_1-157 &#x200B;](assets/chlimage_1-385.png)
 
 1. Vanuit de zoekopdracht kunt u **[!UICONTROL Filters]** selecteren, **[!UICONTROL Dynamic Media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
    De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor automatische sets wordt de zoekquery uitgevoerd met behulp van `Starts with` zoekcriteria die verschillen van de zoekopdracht in Experience Managers die is gebaseerd op het gebruik van `Contains` -zoekcriteria. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
 
-   ![ chlimage_1-158 ](assets/chlimage_1-386.png)
+   ![&#x200B; chlimage_1-158 &#x200B;](assets/chlimage_1-386.png)
 
 ## Een centrifugeset bewerken {#editing-spin-sets}
 
@@ -235,8 +235,8 @@ Als u de afbeelding verwijdert die de Experience Manager voor de miniatuur gebru
 
 ## Een voorvertoning van een centrifugeset weergeven {#previewing-spin-sets}
 
-Zie [ activa van de Voorproef ](/help/assets/previewing-assets.md).
+Zie [&#x200B; activa van de Voorproef &#x200B;](/help/assets/previewing-assets.md).
 
 ## Publish a Spin Set {#publishing-spin-sets}
 
-Zie [ de activa van Publish ](/help/assets/publishing-dynamicmedia-assets.md).
+Zie [&#x200B; de activa van Publish &#x200B;](/help/assets/publishing-dynamicmedia-assets.md).

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=nl-NL) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=nl-NL) |
 | AEM 6,5 | Dit artikel |
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit [!DNL Adobe Experience Manager Assets] verzenden. Gedownloade elementen worden opgenomen in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. Er zijn maximaal 500 totale elementen per exporttaak toegestaan.
@@ -53,7 +53,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | **[!UICONTROL Asset(s)]** | Selecteer deze optie als u het element in de oorspronkelijke vorm zonder vertoningen wilt downloaden.<br> de subactiva optie is beschikbaar als het originele activa subactiva heeft. |
    | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Assets heeft een primaire representatie: die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. De optie is beschikbaar als het element uitvoeringen heeft. |
    | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element vanuit AEM wilt downloaden. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
-   | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de vertoningen die u dynamisch wilt tot stand brengen door uit de [ Vooraf ingestelde Beeld ](image-presets.md) lijst te selecteren. <br> bovendien, kunt u de grootte en de eenheid van meting, formaat, kleurenruimte, resolutie, en om het even welke facultatieve beeldbepalingen selecteren zoals het omkeren van het beeld. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
+   | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de vertoningen die u dynamisch wilt tot stand brengen door uit de [&#x200B; Vooraf ingestelde Beeld &#x200B;](image-presets.md) lijst te selecteren. <br> bovendien, kunt u de grootte en de eenheid van meting, formaat, kleurenruimte, resolutie, en om het even welke facultatieve beeldbepalingen selecteren zoals het omkeren van het beeld. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
 
 1. Klik in het dialoogvenster op **[!UICONTROL Download]** .
 
@@ -65,7 +65,7 @@ Met de standaardservlet in [!DNL Experience Manager] kunnen geverifieerde gebrui
 
 Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaal-als implementatie, laat manueel servlet als configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de dagelijkse downloadvereisten. Een hoge waarde kan de prestaties beïnvloeden.
 
-1. Maak een map met een naamgevingsconventie die is gericht op de publicatieruntime (`config.publish`): `/apps/<your-app-name>/config.publish` . Om configuratieeigenschappen voor een looppaswijze te bepalen, zie [ Wijzen van de Looppas ](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
+1. Maak een map met een naamgevingsconventie die is gericht op de publicatieruntime (`config.publish`): `/apps/<your-app-name>/config.publish` . Om configuratieeigenschappen voor een looppaswijze te bepalen, zie [&#x200B; Wijzen van de Looppas &#x200B;](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Maak in de configuratiemap een bestand van het type `nt:file` genaamd `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` .
 1. Vul `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` met de volgende code. Hiermee stelt u een maximale grootte (in bytes) voor het downloaden in als de waarde `asset.download.prezip.maxcontentsize` . In het onderstaande voorbeeld wordt de maximale grootte van de ZIP-download ingesteld op maximaal 100 kB.
 
@@ -80,13 +80,13 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 `Asset Download Servlet` kan op een [!DNL Experience Manager] Publish-instantie worden uitgeschakeld door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [ filtersectie ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-a-filter) toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [&#x200B; filtersectie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#defining-a-filter) toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Om de component OSGi op een instantie van Publish onbruikbaar te maken, heb toegang tot de Console OSGi bij `http://[aem_server]:[port]/system/console/components`. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Disable]** .
 
 >[!MORELIKETHIS]
 >
->* [ de activa van de Download gebruikend Brand Portal ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=nl-NL)
->* [ Download DRM beschermde activa ](drm.md).
->* [ de activa van de Download gebruikend Desktop app van de Experience Manager op de Desktop van Win of van Mac ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#download-assets).
->* [ de activa van de Download gebruikend de Verbinding van Assets van de Adobe van binnen gesteunde apps van Adobe Creative Cloud ](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [&#x200B; de activa van de Download gebruikend Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=nl-NL)
+>* [&#x200B; Download DRM beschermde activa &#x200B;](drm.md).
+>* [&#x200B; de activa van de Download gebruikend Desktop app van de Experience Manager op de Desktop van Win of van Mac &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=nl-NL#download-assets).
+>* [&#x200B; de activa van de Download gebruikend de Verbinding van Assets van de Adobe van binnen gesteunde apps van Adobe Creative Cloud &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

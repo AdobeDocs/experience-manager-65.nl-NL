@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Taakhandelingen aanpassen {#customizing-task-actions}
 
-In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Alvorens de taakacties aan te passen, zorg ervoor dat u de stappen volgt die bij [ worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms ](/help/forms/using/generic-steps-html-workspace-customization.md).
+In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Alvorens de taakacties aan te passen, zorg ervoor dat u de stappen volgt die bij [&#x200B; worden vermeld Algemene stappen voor de werkruimteaanpassing van AEM Forms &#x200B;](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Tekststijl aanpassen {#customizing-text-style}
 
@@ -132,11 +132,11 @@ Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in h
 
 ## Alleen afbeeldingen voor handelingen weergeven {#showing-only-images-for-actions}
 
-Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Voor gedetailleerde informatie, zie [ Beelden voor de Acties van de Route ](/help/forms/using/images-route-actions.md).
+Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Voor gedetailleerde informatie, zie [&#x200B; Beelden voor de Acties van de Route &#x200B;](/help/forms/using/images-route-actions.md).
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie [ de werkruimtecode van AEM Forms bouwen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie [&#x200B; de werkruimtecode van AEM Forms bouwen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieer /libs/ws/js/runtime/templates/task.html aan `/apps/ws/js/runtime/templates/task.html` vervangt het volgende codefragment:
 

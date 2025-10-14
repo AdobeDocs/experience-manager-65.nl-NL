@@ -24,8 +24,8 @@ ht-degree: 0%
 
 Een referentie bevat de gegevens van uw persoonlijke sleutel die nodig zijn voor het ondertekenen of identificeren van documenten. Een certificaat is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM Forms gebruikt certificaten en referenties voor verschillende doeleinden:
 
-* Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie [ Toepassend de Rechten van het Gebruik op de Documenten van PDF ](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* De handtekeningservice krijgt toegang tot certificaten en gegevens tijdens het uitvoeren van bewerkingen, zoals het digitaal ondertekenen van PDF-documenten. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie [&#x200B; Toepassend de Rechten van het Gebruik op de Documenten van PDF &#x200B;](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* De handtekeningservice krijgt toegang tot certificaten en gegevens tijdens het uitvoeren van bewerkingen, zoals het digitaal ondertekenen van PDF-documenten. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 U kunt programmatically met de dienst van de Referentie in wisselwerking staan gebruikend Java API van de Manager van het Vertrouwen. U kunt de volgende taken uitvoeren:
 
@@ -34,15 +34,15 @@ U kunt programmatically met de dienst van de Referentie in wisselwerking staan g
 
 >[!NOTE]
 >
->U kunt certificaten ook importeren en verwijderen met behulp van de beheerconsole. (Zie [ beleidshulp.](https://www.adobe.com/go/learn_aemforms_admin_63))
+>U kunt certificaten ook importeren en verwijderen met behulp van de beheerconsole. (Zie [&#x200B; beleidshulp.](https://www.adobe.com/go/learn_aemforms_admin_63))
 
 ## Referenties importeren met de Betrouwbaarheidsbeheer-API {#importing-credentials-by-using-the-trust-manager-api}
 
-Met de Betrouwbaarheidsbeheer-API kunt u via programmacode een referentie naar AEM Forms importeren. U kunt bijvoorbeeld een referentie importeren die wordt gebruikt om een PDF-document te ondertekenen. (Zie [ digitaal het Ondertekenen van de Documenten van PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Met de Betrouwbaarheidsbeheer-API kunt u via programmacode een referentie naar AEM Forms importeren. U kunt bijvoorbeeld een referentie importeren die wordt gebruikt om een PDF-document te ondertekenen. (Zie [&#x200B; digitaal het Ondertekenen van de Documenten van PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Wanneer u een referentie importeert, geeft u een alias voor de referentie op. De alias wordt gebruikt om een Forms-bewerking uit te voeren waarvoor een referentie vereist is. Zodra ingevoerd, kan een referentie in beleidsconsole worden bekeken, zoals aangetoond in de volgende illustratie. Bericht dat alias voor de referentie *Veilig* is.
 
-![ ww_ww_truststore ](assets/ww_ww_truststore.png)
+![&#x200B; ww_ww_truststore &#x200B;](assets/ww_ww_truststore.png)
 
 >[!NOTE]
 >
@@ -69,11 +69,11 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een credentiedienstcliënt**
 
-Voordat u via programmacode een referentie naar AEM Forms kunt importeren, maakt u een client voor de referentieservice. Voor informatie, zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Voordat u via programmacode een referentie naar AEM Forms kunt importeren, maakt u een client voor de referentieservice. Voor informatie, zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Verwijzing de referentie**
 
@@ -159,11 +159,11 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een credentiedienstcliënt**
 
-Alvorens u een referentie programmatically kunt schrappen, creeer een de dienstcliënt van de Integratie van Gegevens. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Alvorens u een referentie programmatically kunt schrappen, creeer een de dienstcliënt van de Integratie van Gegevens. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Voor informatie, zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **voer de schrappingsverrichting** uit
 

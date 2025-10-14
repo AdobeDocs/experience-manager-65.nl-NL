@@ -23,7 +23,7 @@ AEM Forms-beheerders passen de werkruimte aan om twee verschillende URL&#39;s te
 
 Voer de volgende stappen uit om de AEM Forms-werkruimte te configureren.
 
-1. Installeer het ontwikkelingspakket van de AEM Forms-werkruimte op uw server. Zie [ dev pakket ](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), voor instructies om het tot stand te brengen.
+1. Installeer het ontwikkelingspakket van de AEM Forms-werkruimte op uw server. Zie [&#x200B; dev pakket &#x200B;](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), voor instructies om het tot stand te brengen.
 1. Meld u als beheerder aan bij CRXDE Lite door `https://'[server]:[port]'/lc/crx/de/index.jsp` te openen.
 1. De knooprijen van het exemplaar bij /content en deeg bij /content. Naam knooppunt wijzigen in ws2. Klik op **[!UICONTROL Save all]**. Wijzig in eigenschappen van dit knooppunt de waarde `sling:resourceType` in ws2. Klik op **[!UICONTROL Save all]**.
 

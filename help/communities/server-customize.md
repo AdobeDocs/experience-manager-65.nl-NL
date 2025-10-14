@@ -117,11 +117,11 @@ De `OperationExtension` -klassen zijn aangepaste codefragmenten die in een bewer
 
 ## Voorbeeldcode {#sample-code}
 
-De code van de steekproef is beschikbaar in [ Adobe Experience Cloud GitHub ](https://github.com/Adobe-Marketing-Cloud) bewaarplaats. Zoek naar projecten die met `aem-communities` of `aem-scf` vooraf zijn bepaald.
+De code van de steekproef is beschikbaar in [&#x200B; Adobe Experience Cloud GitHub &#x200B;](https://github.com/Adobe-Marketing-Cloud) bewaarplaats. Zoek naar projecten die met `aem-communities` of `aem-scf` vooraf zijn bepaald.
 
 ## Aanbevolen procedures {#best-practices}
 
-Bekijk de [ sectie van de Richtlijnen van de Codering ](code-guide.md) voor diverse coderingsrichtlijnen en beste praktijken voor de ontwikkelaars van AEM Communities.
+Bekijk de [&#x200B; sectie van de Richtlijnen van de Codering &#x200B;](code-guide.md) voor diverse coderingsrichtlijnen en beste praktijken voor de ontwikkelaars van AEM Communities.
 
 Zie ook {de Leverancier van het Middel van 0} Opslag (SRP) voor UGC [&#128279;](srp.md) om over de toegang tot van gebruiker geproduceerde inhoud te leren.
 

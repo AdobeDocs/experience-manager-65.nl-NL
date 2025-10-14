@@ -18,11 +18,11 @@ Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmen
 
 ## Wat zijn GraphQL en Assets REST API&#39;s? {#what-are-the-apis}
 
-[ nu dat u sommige inhoudsfragmenten hebt gecreeerd, ](create-content-fragment.md) kunt u AEM gebruiken APIs om hen zonder kop te leveren.
+[&#x200B; nu dat u sommige inhoudsfragmenten hebt gecreeerd, &#x200B;](create-content-fragment.md) kunt u AEM gebruiken APIs om hen zonder kop te leveren.
 
-* [ GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) laat u verzoeken tot toegang tot en levering van de Fragmenten van de Inhoud tot stand brengen.
-   * Om dit te gebruiken, [ eindpunten moeten worden bepaald en worden toegelaten in AEM ](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), en indien nodig, geïnstalleerde [ interface GraphiQL ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [ Assets REST API ](/help/assets/assets-api-content-fragments.md) laat u tot stand brengen en wijzigen de Fragmenten van de Inhoud (en andere activa).
+* [&#x200B; GraphQL API &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) laat u verzoeken tot toegang tot en levering van de Fragmenten van de Inhoud tot stand brengen.
+   * Om dit te gebruiken, [&#x200B; eindpunten moeten worden bepaald en worden toegelaten in AEM &#x200B;](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), en indien nodig, geïnstalleerde [&#x200B; interface GraphiQL &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
+* [&#x200B; Assets REST API &#x200B;](/help/assets/assets-api-content-fragments.md) laat u tot stand brengen en wijzigen de Fragmenten van de Inhoud (en andere activa).
 
 De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhoudsfragmenten.
 
@@ -30,7 +30,7 @@ De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhou
 
 De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Denk slechts eens na deze vragen per eindpunt, per model. Voor deze gids Aan de slag kunt u slechts één gids maken.
 
-1. Logboek in AEM en toegang tot de [ interface GraphiQL ](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
+1. Logboek in AEM en toegang tot de [&#x200B; interface GraphiQL &#x200B;](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Bijvoorbeeld: `http://<host>:<port>/aem/graphiql.html` .
 
 1. GraphiQL is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen onophoudelijk als JSON te leveren.
@@ -38,7 +38,7 @@ De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerp
    * De resultaten worden weergegeven in het rechterdeelvenster.
    * De vraagredacteur kenmerkt codevoltooiing en hotkeys om de vraag gemakkelijk uit te voeren.
 
-     ![ GraphiQL redacteur ](assets/graphiql.png)
+     ![&#x200B; GraphiQL redacteur &#x200B;](assets/graphiql.png)
 
 1. Ervan uitgaande dat het model dat u hebt gemaakt `person` is aangeroepen met velden `firstName` , `lastName` en `position` , kunt u een eenvoudige query maken om de inhoud van het inhoudsfragment op te halen.
 
@@ -62,14 +62,14 @@ De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerp
 -->
 
 1. Klik het **Uitvoeren pictogram van de Vraag** (juiste pijl) of gebruik `Ctrl-Enter` hotkey en de resultaten worden getoond als JSON in het juiste paneel.
-   ![ GraphiQL resultaten ](assets/graphiql-results.png)
+   ![&#x200B; GraphiQL resultaten &#x200B;](assets/graphiql-results.png)
 
 1. Klik:
    * **Dokken** bij het hoogste recht van de pagina om in-context documentatie te tonen om u te helpen uw vragen bouwen die aan uw eigen modellen aanpassen.
    * **Geschiedenis** in de hoogste toolbar om vorige vragen te tonen.
    * **sparen als** en **sparen** om uw vragen te bewaren, waarna u hen van het **Persisted paneel van Vragen** en **Publish** kunt een lijst maken en terugwinnen.
 
-     ![ documentatie GraphiQL ](assets/graphiql-documentation.png)
+     ![&#x200B; documentatie GraphiQL &#x200B;](assets/graphiql-documentation.png)
 
 GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten, biedt steun voor vraagvariabelen, en veel meer kunnen leveren.
 

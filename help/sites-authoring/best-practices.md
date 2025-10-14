@@ -69,12 +69,12 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 |  |  |  |
 |---|---|---|
-| Authoring | [ het milieu en de hulpmiddelen van de Auteur ](/help/sites-authoring/author-environment-tools.md) | Geeft een overzicht van de gereedschappen die worden gebruikt voor het schrijven van pagina&#39;s. |
+| Authoring | [&#x200B; het milieu en de hulpmiddelen van de Auteur &#x200B;](/help/sites-authoring/author-environment-tools.md) | Geeft een overzicht van de gereedschappen die worden gebruikt voor het schrijven van pagina&#39;s. |
 | Pagina&#39;s ordenen | [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md) | Geeft een overzicht van hoe u uw pagina&#39;s het beste kunt ordenen, inclusief naamconventies. |
 
 ## Forms {#forms}
 
 |  |  |  |
 |---|---|---|
-| Aangepaste formulieren | [ Beste praktijken voor het werken met adaptieve vormen ](/help/forms/using/adaptive-forms-best-practices.md) | Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen. |
-| HTML5-formulieren | [ Beste praktijken voor het ontwerpen van HTML5 vormen ](/help/forms/using/best-practices-for-html5-forms.md) | Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen. |
+| Aangepaste formulieren | [&#x200B; Beste praktijken voor het werken met adaptieve vormen &#x200B;](/help/forms/using/adaptive-forms-best-practices.md) | Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen. |
+| HTML5-formulieren | [&#x200B; Beste praktijken voor het ontwerpen van HTML5 vormen &#x200B;](/help/forms/using/best-practices-for-html5-forms.md) | Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen. |

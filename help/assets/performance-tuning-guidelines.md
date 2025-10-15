@@ -7,7 +7,7 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
 source-wordcount: '2663'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Hoewel Experience Manager op verschillende platforms wordt ondersteund, heeft Ad
 
 ### Tijdelijke map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux® en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een [&#x200B; letterlijke aandrijving &#x200B;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) voor de tijdelijke omslag worden gebruikt.
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux® en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. Bijvoorbeeld, in Amazon EC2, kan een [ letterlijke aandrijving ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) voor de tijdelijke omslag worden gebruikt.
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux® de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
@@ -86,7 +86,7 @@ Van Experience Manager 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vorm
 
 ### Gedeelde gegevensopslag {#shared-data-stores}
 
-Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen schijfruimte besparen en netwerkproductie in grootschalige implementaties verhogen. Voor meer informatie over de voor- en nadelen van het gebruiken van een gedeelde datastore, zie de [&#x200B; Assets rangschikkende gids &#x200B;](/help/assets/assets-sizing-guide.md).
+Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen schijfruimte besparen en netwerkproductie in grootschalige implementaties verhogen. Voor meer informatie over de voor- en nadelen van het gebruiken van een gedeelde datastore, zie de [ Assets rangschikkende gids ](/help/assets/assets-sizing-guide.md).
 
 ### S3-gegevensopslag {#s-data-store}
 
@@ -115,7 +115,7 @@ accessKey=<snip>
 
 ## Netwerkoptimalisatie {#network-optimization}
 
-Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen bij het identificeren van netwerkknelpunten, zie de [&#x200B; Assets rangschikkende gids &#x200B;](/help/assets/assets-sizing-guide.md). Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie [&#x200B; het netwerkoverwegingen van Assets &#x200B;](/help/assets/assets-network-considerations.md).
+Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen bij het identificeren van netwerkknelpunten, zie de [ Assets rangschikkende gids ](/help/assets/assets-sizing-guide.md). Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie [ het netwerkoverwegingen van Assets ](/help/assets/assets-network-considerations.md).
 
 In de eerste plaats is de optimalisatiestrategie van uw netwerk afhankelijk van de hoeveelheid beschikbare bandbreedte en de belasting van uw [!DNL Experience Manager] -instantie. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten, kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten die in gedachten moeten worden gehouden:
 
@@ -150,7 +150,7 @@ Om werkschemazuivering te vormen, voeg een nieuwe configuratie van de Woorden va
 
 Als het leegmaken te lang duurt, is het wel even uit. Daarom dient u ervoor te zorgen dat uw reinigingstaken zijn voltooid om situaties te voorkomen waarin het leegmaken van werkstromen mislukt als gevolg van het grote aantal werkstromen.
 
-Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u [&#x200B; ACS het Werkschema van AEM van de Gemeenschap Remover &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis uitvoeren. Het verwijdert overbodige, voltooide workflowinstanties onmiddellijk in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
+Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u [ ACS het Werkschema van AEM van de Gemeenschap Remover ](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis uitvoeren. Het verwijdert overbodige, voltooide workflowinstanties onmiddellijk in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
@@ -207,11 +207,11 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 
 >[!CAUTION]
 >
->Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de prestaties van [!DNL Experience Manager] . Voor meer informatie, zie [&#x200B; installeren en vormen ImageMagick &#x200B;](/help/assets/best-practices-for-imagemagick.md).
+>Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de prestaties van [!DNL Experience Manager] . Voor meer informatie, zie [ installeren en vormen ImageMagick ](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
->De bestanden ImageMagick `policy.xml` en `configure.xml` zijn beschikbaar via `/usr/lib64/ImageMagick-&#42;/config/` in plaats van via `/etc/ImageMagick/` . Zie [&#x200B; documentatie ImageMagick &#x200B;](https://www.imagemagick.org/script/resources.php) voor de plaats van de configuratiedossiers.
+>De bestanden ImageMagick `policy.xml` en `configure.xml` zijn beschikbaar via `/usr/lib64/ImageMagick-&#42;/config/` in plaats van via `/etc/ImageMagick/` . Zie documentatie ImageMagick (`https://www.imagemagick.org/script/resources.php` website) voor de plaats van de configuratiedossiers.
 
 Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenondersteuning van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met een medewerker van de klantenondersteuning van Adobe om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen te kiezen voor bedrijfseigen indelingen van Adobe. [!DNL Experience Manager] verwerkt mogelijk geen PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels.
 
@@ -223,7 +223,7 @@ XMP writeback werkt het oorspronkelijke middel bij wanneer de meta-gegevens in [
 * Er wordt een versie van het element gemaakt
 * [!UICONTROL DAM Update Asset] wordt uitgevoerd met het element
 
-De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan om XMP-back-ups uit te schakelen als dit niet verplicht is. Voor meer informatie, zie [&#x200B; XMP schrijven &#x200B;](/help/assets/xmp-writeback.md).
+De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan om XMP-back-ups uit te schakelen als dit niet verplicht is. Voor meer informatie, zie [ XMP schrijven ](/help/assets/xmp-writeback.md).
 
 Als u een grote hoeveelheid metagegevens importeert, kan dit leiden tot een bronintensieve XMP-schrijfactiviteit als de runworkflows-markering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
@@ -243,9 +243,9 @@ Bij het repliceren van elementen naar een groot aantal publicatie-instanties, bi
 
 ## Indexen zoeken {#search-indexes}
 
-Installeer [&#x200B; de recentste Packs van de Dienst &#x200B;](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [&#x200B; prestaties het stemmen uiteinden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) voor sommige indexoptimalisaties.
+Installeer [ de recentste Packs van de Dienst ](/help/release-notes/release-notes.md) en op prestaties betrekking hebbende hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [ prestaties het stemmen uiteinden ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) voor sommige indexoptimalisaties.
 
-Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie de [&#x200B; methodologie voor het analyseren van langzame vragen &#x200B;](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [&#x200B; crefting douaneindexen &#x200B;](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [&#x200B; Beste praktijken voor Vragen en het Indexeren &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie de [ methodologie voor het analyseren van langzame vragen ](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [ crefting douaneindexen ](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [ Beste praktijken voor Vragen en het Indexeren ](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Lucene-indexconfiguraties {#lucene-index-configurations}
 
@@ -258,8 +258,8 @@ Sommige optimalisaties kunnen worden uitgevoerd op Oak-indexconfiguraties die de
 
 Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in de documenten van PDF, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken. Voer de volgende stappen uit om het uitnemen van [!DNL Apache Lucene] -tekst uit te schakelen:
 
-1. Open [!UICONTROL Package Manager] in de interface [!DNL Experience Manager] .
-1. Upload en installeer het pakket beschikbaar bij [&#x200B; disable_indexingbinarytextraction-10.zip &#x200B;](assets/disable_indexingbinarytextextraction-10.zip).
+1. Open [!DNL Experience Manager] in de interface [!UICONTROL Package Manager] .
+1. Upload en installeer het pakket beschikbaar bij [ disable_indexingbinarytextraction-10.zip ](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Totaal raden {#guess-total}
 

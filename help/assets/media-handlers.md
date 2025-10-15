@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2039'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld, duimnagelgeneratie of meta-gegevensextractie.
 
-Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [&#x200B; ingebouwde managers &#x200B;](#default-media-handlers), en de extra degenen kunnen of [&#x200B; worden ontwikkeld douane &#x200B;](#creating-a-new-media-handler) of worden bepaald door het proces aan a [&#x200B; bevel-lijn hulpmiddel &#x200B;](#command-line-based-media-handler) te delegeren.
+Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [ ingebouwde managers ](#default-media-handlers), en de extra degenen kunnen of [ worden ontwikkeld douane ](#creating-a-new-media-handler) of worden bepaald door het proces aan a [ bevel-lijn hulpmiddel ](#command-line-based-media-handler) te delegeren.
 
 Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer een MP3-audiobestand bijvoorbeeld wordt geüpload naar [!DNL Experience Manager] , wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Mediahandlers worden gebruikt bij workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager] . U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden of te maken, media-handlers uit te breiden of te maken of door media-handlers uit te schakelen en in te schakelen.
 
 >[!NOTE]
 >
->Zie de [&#x200B; Ondersteunde formaten van Activa &#x200B;](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
+>Zie de [ Ondersteunde formaten van Activa ](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
@@ -38,7 +38,7 @@ De volgende media-handlers zijn beschikbaar in [!DNL Assets] en verwerken de mee
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [&#x200B; verwerkt gebruikend een derdebibliotheek &#x200B;](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [ verwerkt gebruikend een derdebibliotheek ](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -61,7 +61,7 @@ De actieve media-handlers weergeven:
 1. Klik op `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Er wordt een lijst weergegeven met alle actieve mediamanagers. Bijvoorbeeld:
 
-![&#x200B; chlimage_1-437 &#x200B;](assets/chlimage_1-437.png)
+![ chlimage_1-437 ](assets/chlimage_1-437.png)
 
 ## Mediahandlers gebruiken in workflows om taken uit te voeren op elementen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
@@ -123,7 +123,7 @@ De volgende methoden moeten worden toegepast:
 
 Hier volgt een voorbeeldsjabloon:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot;&ast; @scr.service&ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot;&amp;ast; @scr.service&amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
 
 De interface en de klassen omvatten:
 
@@ -137,7 +137,7 @@ In deze sectie maakt u een specifieke teksthandler die miniaturen met een waterm
 
 Ga als volgt te werk:
 
-Verwijs naar [&#x200B; Hulpmiddelen van de Ontwikkeling &#x200B;](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
+Verwijs naar [ Hulpmiddelen van de Ontwikkeling ](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
 
 Nadat u de volgende procedure hebt uitgevoerd en een TXT-bestand in [!DNL Experience Manager] uploadt, worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
 
@@ -449,10 +449,10 @@ Met [!DNL Experience Manager] kunt u een opdrachtregelprogramma uitvoeren in een
 
 De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen [!DNL Assets] :
 
-* EPS en AI transformatie die [&#x200B; ImageMagick &#x200B;](https://www.imagemagick.org/script/index.php) gebruiken en [&#x200B; Ghostscript &#x200B;](https://www.ghostscript.com/).
-* FLV video transcoderen die [&#x200B; gebruiken mpeg &#x200B;](https://ffmpeg.org/).
-* MP3 het coderen die [&#x200B; LAME &#x200B;](https://lame.sourceforge.io/) gebruiken.
-* Audio verwerkend gebruikend [&#x200B; SOX &#x200B;](https://sourceforge.net/projects/sox/).
+* EPS en AI transformatie die `https://www.imagemagick.org/script/index.php` gebruiken en [ Ghostscript ](https://www.ghostscript.com/).
+* FLV video transcoderen die [ gebruiken mpeg ](https://ffmpeg.org/).
+* MP3 het coderen die [ LAME ](https://lame.sourceforge.io/) gebruiken.
+* Audio verwerkend gebruikend [ SOX ](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
@@ -470,13 +470,13 @@ Het `CommandLineProcess` -proces voert de volgende bewerkingen uit in de vermeld
 
 ### Een voorbeeld met [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-In het volgende voorbeeld ziet u hoe u de opdrachtregelprocesstap zo instelt dat telkens wanneer een element met het e-type miMIME-GIF of -TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] -server, een gespiegelde afbeelding van het origineel wordt gemaakt. Er worden ook nog drie miniaturen van 140 x 100, 48 x 48 en 10 x 250 gemaakt.
+In het volgende voorbeeld ziet u hoe u de opdrachtregelprocesstap zo instelt dat telkens wanneer een element met het MIME-type GIF of TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] -server, een gespiegelde afbeelding van het origineel wordt gemaakt. Er worden ook nog drie miniaturen van 140 x 100, 48 x 48 en 10 x 250 gemaakt.
 
 Gebruik [!DNL ImageMagick] om dit te doen. [!DNL ImageMagick] is een gratis opdrachtregelprogramma waarmee u bitmapafbeeldingen kunt maken, bewerken en samenstellen.
 
 Installeer [!DNL ImageMagick] op de schijf die als host fungeert voor de [!DNL Experience Manager] -server:
 
-1. Installeer [!DNL ImageMagick]: Zie [&#x200B; documentatie ImageMagick &#x200B;](https://www.imagemagick.org/script/download.php).
+1. Installeren [!DNL ImageMagick]: zie `https://www.imagemagick.org/script/download.php` -website.
 1. Stel het gereedschap zo in dat u `convert` kunt uitvoeren vanaf de opdrachtregel.
 1. Voer de volgende opdracht `convert -h` uit op de opdrachtregel om te zien of het gereedschap correct is geïnstalleerd.
 
@@ -486,15 +486,15 @@ Installeer [!DNL ImageMagick] op de schijf die als host fungeert voor de [!DNL E
    >
    >In sommige versies van Windows kan de opdracht Omzetten niet worden uitgevoerd omdat er een conflict optreedt met het native hulpprogramma voor omzetting dat onderdeel is van de installatie van [!DNL Windows] . Geef in dit geval het volledige pad op voor de [!DNL ImageMagick] -software die wordt gebruikt om afbeeldingsbestanden om te zetten in miniaturen. Bijvoorbeeld `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png` .
 
-1. Als u wilt zien of het gereedschap correct wordt uitgevoerd, voegt u een JPG-afbeelding toe aan de werkmap en voert u de opdracht Omzetten `<image-name>.jpg -flip <image-name>-flipped.jpg` uit op de opdrachtregel. Er wordt een gespiegelde afbeelding aan de map toegevoegd. Voeg vervolgens de opdrachtregelprocesstap toe aan de **[!UICONTROL DAM Update Asset]** -workflow.
+1. Als u wilt controleren of het gereedschap correct wordt uitgevoerd, voegt u een JPG-afbeelding toe aan de werkmap en voert u de opdracht Omzetten `<image-name>.jpg -flip <image-name>-flipped.jpg` uit op de opdrachtregel. Er wordt een gespiegelde afbeelding aan de map toegevoegd. Voeg vervolgens de opdrachtregelprocesstap toe aan de **[!UICONTROL DAM Update Asset]** -workflow.
 1. Ga naar de **[!UICONTROL Workflow]** -console.
-1. Bewerk het **[!UICONTROL DAM Update Asset]** -model op het tabblad **[!UICONTROL Models]** .
+1. Bewerk het **[!UICONTROL Models]** -model op het tabblad **[!UICONTROL DAM Update Asset]** .
 1. Wijzig de [!UICONTROL Arguments] van de **[!UICONTROL Web enabled rendition]** -stap in: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg` .
 1. Sla de workflow op.
 
 Voeg een element toe aan `/content/dam` om de gewijzigde workflow te testen.
 
-1. Haal in het bestandssysteem naar keuze een TIFF-afbeelding op. Wijzig de naam in `myImage.tiff` en kopieer deze naar `/content/dam` , bijvoorbeeld met WebDAV.
+1. Haal in het bestandssysteem een TIFF-afbeelding van uw keuze op. Wijzig de naam in `myImage.tiff` en kopieer deze naar `/content/dam` , bijvoorbeeld met WebDAV.
 1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** -console `https://localhost:4502/libs/wcm/core/content/damadmin.html` .
 1. Open het element **[!UICONTROL myImage.tiff]** en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
@@ -514,7 +514,7 @@ Als [!DNL ImageMagick] bijvoorbeeld is geïnstalleerd op de schijf die als host 
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Wanneer de workflow vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` as `mime-types` hebben. Het maakt een gespiegelde afbeelding van het origineel, zet deze om in JPG en maakt drie miniaturen met de afmetingen 140 x 100, 48 x 48 en 10 x 250.
+Wanneer de workflow vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` as `mime-types` hebben. Het maakt een gespiegelde afbeelding van het origineel, zet deze om in JPG en maakt drie miniaturen met de afmetingen 140x100, 48x48 en 10x250.
 
 Gebruik de volgende [!UICONTROL Process Arguments] opties om de drie standaardminiaturen te maken met [!DNL ImageMagick] :
 
@@ -530,4 +530,4 @@ Gebruik de volgende [!UICONTROL Process Arguments] om de voor het web ingeschake
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; activa van het Proces &#x200B;](assets-workflow.md)
+>* [ activa van het Proces ](assets-workflow.md)

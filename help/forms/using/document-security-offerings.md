@@ -37,7 +37,7 @@ De server van de Veiligheid van het Document is de centrale component waardoor d
 
 De server van de Veiligheid van het Document verstrekt een web-based interface (Web-pagina) om beleid tot stand te brengen, beleid-beschermde documenten te beheren, en gebeurtenissen te controleren die met beleid-beschermde documenten worden geassocieerd. Beheerders kunnen ook globale opties configureren, zoals gebruikersverificatie, controle en berichten voor uitgenodigde gebruikers, en uitgenodigde gebruikersaccounts beheren.
 
-De server is opgenomen in de add-on service voor documentbeveiliging van AEM Forms. U kunt AEM Forms [&#x200B; verkoopteam &#x200B;](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) contacteren om de Veiligheid toe:voegen-op van het Document te kopen.
+De server is opgenomen in de add-on service voor documentbeveiliging van AEM Forms. U kunt AEM Forms [&#x200B; verkoopteam &#x200B;](https://business.adobe.com/nl/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) contacteren om de Veiligheid toe:voegen-op van het Document te kopen.
 
 ### Protect-documenten {#protect-documents}
 

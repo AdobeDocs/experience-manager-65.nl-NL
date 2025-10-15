@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Gebruikend een reeks primaire bronactiva, produceert de software en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk.
+[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) hulp levert rijke visuele handel en marketing activa op bestelling, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Gebruikend een reeks primaire bronactiva, produceert de software en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, prestaties-geoptimaliseerd netwerk.
 
 De software biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. De workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing worden op unieke wijze geïntegreerd om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 

@@ -70,7 +70,7 @@ Adobe beveelt aan om marketinggerelateerde gegevens en inhoud in AEM te beheren.
 
 ## 14. Hoe verzekert een bedrijf naleving PCI wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe raadt aan gebruik te maken van abstracte betalingsmethoden. Het doen van dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat de Adobe geen kaarthouddatum, noch de handelsoplossingen houdt of overgaat. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI-Volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over de naleving van Adobe Commerce PCI, zie [&#x200B; naleving PCI &#x200B;](https://business.adobe.com/nl/products/magento/pci-compliance.html)
 
 ## 15. Als ik gebruik van AEM- en Adobe Commerce-cloudversies, is deze gezamenlijke oplossing compatibel met PCI?
 

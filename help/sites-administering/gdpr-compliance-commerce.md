@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR en de CCPA.
 
-De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018. Zie de [&#x200B; pagina GDPR bij het Centrum van de Privacy van de Adobe &#x200B;](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018. Zie de [&#x200B; pagina GDPR bij het Centrum van de Privacy van de Adobe &#x200B;](https://business.adobe.com/nl/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

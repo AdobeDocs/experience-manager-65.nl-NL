@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Dit document maakt deel uit van [&#x200B; Begonnen het worden met de Gids van AEM Mobile &#x200B;](/help/mobile/getting-started-aem-mobile.md), een geadviseerd uitgangspunt voor de verwijzing van AEM Mobile.
 
-De de inhoudsverpersoonlijkingseigenschap van AEM Mobile staat [&#x200B; toe AEM Auteurs &#x200B;](#author) om mobiele app inhoud te personaliseren door [&#x200B; Adobe Target &#x200B;](https://business.adobe.com/products/target/adobe-target.html) te gebruiken. Hierdoor kunnen gebruikers van mobiele toepassingen gerichte aanbiedingen ontvangen. Adobe Experience Manager Mobile biedt de mogelijkheid om inhoud te maken, als doel in te stellen en te leveren die de gebruiker inhoud biedt die specifiek is voor zijn of haar eigen smaak.
+De de inhoudsverpersoonlijkingseigenschap van AEM Mobile staat [&#x200B; toe AEM Auteurs &#x200B;](#author) om mobiele app inhoud te personaliseren door [&#x200B; Adobe Target &#x200B;](https://business.adobe.com/nl/products/target/adobe-target.html) te gebruiken. Hierdoor kunnen gebruikers van mobiele toepassingen gerichte aanbiedingen ontvangen. Adobe Experience Manager Mobile biedt de mogelijkheid om inhoud te maken, als doel in te stellen en te leveren die de gebruiker inhoud biedt die specifiek is voor zijn of haar eigen smaak.
 
 In AEM moeten beheerders en ontwikkelaars eerst de omgeving voorbereiden, zodat auteurs deze inhoud kunnen gaan maken.
 

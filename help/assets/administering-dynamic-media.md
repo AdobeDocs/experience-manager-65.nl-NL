@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Dynamic Media instellen {#setting-up-dynamic-media}
 
-[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[&#x200B; Dynamic Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) helpt u activa beheren door rijke visuele handel en marketing activa op bestelling te leveren, automatisch geschraapt voor consumptie op Web, mobiele, en sociale plaatsen. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 >[!NOTE]
 >

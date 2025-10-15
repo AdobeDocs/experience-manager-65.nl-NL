@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integratie met de Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[&#x200B; Adobe Experience Cloud &#x200B;](https://business.adobe.com/products/marketing-cloud/main.html), omvat krachtige Webanalyse en producten van de websiteoptimalisering die actionable, gegevens en inzichten in real time leveren om succesvolle online initiatieven te drijven. Het biedt een geïntegreerd en open platform voor online bedrijfsoptimalisatie. De cloud bestaat uit geïntegreerde toepassingen voor het verzamelen en onthullen van de kracht van inzicht van de klant om de aankoop, conversie en retentie van de klant en het maken en distribueren van inhoud te optimaliseren.
+[&#x200B; Adobe Experience Cloud &#x200B;](https://business.adobe.com/nl/products/marketing-cloud/main.html), omvat krachtige Webanalyse en producten van de websiteoptimalisering die actionable, gegevens en inzichten in real time leveren om succesvolle online initiatieven te drijven. Het biedt een geïntegreerd en open platform voor online bedrijfsoptimalisatie. De cloud bestaat uit geïntegreerde toepassingen voor het verzamelen en onthullen van de kracht van inzicht van de klant om de aankoop, conversie en retentie van de klant en het maken en distribueren van inhoud te optimaliseren.
 
 Met Adobe Experience Manager (AEM) kunt u naadloos integreren met de volgende producten van de Adobe Experience Cloud:
 
@@ -33,7 +33,7 @@ Bovendien kunt u [&#x200B; AEM met Creative Cloud &#x200B;](/help/assets/aem-cc-
 
 ## Integreren met Adobe Analytics {#integrating-with-adobe-analytics}
 
-[&#x200B; Adobe Analytics &#x200B;](https://business.adobe.com/products/analytics/adobe-analytics.html) is de industrie-leidende oplossing die digitale marketers van één plaats voorziet om, geïntegreerde gegevens van alle online initiatieven over veelvoudige marketing kanalen te meten te analyseren en te optimaliseren. Het verstrekt marketers actionable, real-time Web analytics intelligentie over digitale strategieën en marketing initiatieven. Adobe Analytics helpt marketers snel de meest winstgevende paden te identificeren via een website, gesegmenteerd verkeer om hoogwaardige webbezoekers te vinden, te bepalen waar bezoekers vandaan van de site navigeren en belangrijke succesgegevens voor online marketingcampagnes te identificeren.
+[&#x200B; Adobe Analytics &#x200B;](https://business.adobe.com/nl/products/analytics/adobe-analytics.html) is de industrie-leidende oplossing die digitale marketers van één plaats voorziet om, geïntegreerde gegevens van alle online initiatieven over veelvoudige marketing kanalen te meten te analyseren en te optimaliseren. Het verstrekt marketers actionable, real-time Web analytics intelligentie over digitale strategieën en marketing initiatieven. Adobe Analytics helpt marketers snel de meest winstgevende paden te identificeren via een website, gesegmenteerd verkeer om hoogwaardige webbezoekers te vinden, te bepalen waar bezoekers vandaan van de site navigeren en belangrijke succesgegevens voor online marketingcampagnes te identificeren.
 
 U kunt Adobe Analytics gebruiken om gegevens van uw sites te analyseren.
 
@@ -52,7 +52,7 @@ U kunt [&#x200B; Opt-binnen tovenaar &#x200B;](/help/sites-administering/opt-in.
 
 ## Integreren met Adobe Target {#integrating-with-adobe-target}
 
-[&#x200B; Adobe Target &#x200B;](https://business.adobe.com/products/target/adobe-target.html) wordt gebruikt door marketers om online tests te ontwerpen en uit te voeren, te creëren de segmenten van het publiek ter plekke (die op gedrag worden gebaseerd) en het richten van inhoud en online ervaringen te automatiseren.
+[&#x200B; Adobe Target &#x200B;](https://business.adobe.com/nl/products/target/adobe-target.html) wordt gebruikt door marketers om online tests te ontwerpen en uit te voeren, te creëren de segmenten van het publiek ter plekke (die op gedrag worden gebaseerd) en het richten van inhoud en online ervaringen te automatiseren.
 
 De online consumenten hebben vandaag de dag constant veranderende behoeften en verwachten relevante, zelfs gepersonaliseerde inhoud van de grote verscheidenheid van plaatsen en inhoudsbronnen zij van kunnen kiezen. Om een online publiek te bereiken, is het van essentieel belang dat online marketeers snel identificeren welke aanbiedingen en inhoud relevant en dwingend zijn voor hun publiek. Op basis van deze kennis hebben marketers de mogelijkheid nodig om hun sites voortdurend te ontwikkelen en de juiste inhoud te richten op verschillende doelgroepen.
 
@@ -82,7 +82,7 @@ Voor meer informatie over hoe Adobe Experience Manager met Dynamic Media Classic
 
 ## Integreren met Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[&#x200B; Adobe Dynamische Tag Management &#x200B;](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) geeft marketers intuïtieve hulpmiddelen om een onbeperkt aantal Adobe en derderdetags snel en gemakkelijk te beheren. U hebt meer controle en flexibiliteit om vrijwel alles online te optimaliseren, en tegelijkertijd de afhankelijkheid van IT-bronnen te verminderen.
+[&#x200B; Adobe Dynamische Tag Management &#x200B;](https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html) geeft marketers intuïtieve hulpmiddelen om een onbeperkt aantal Adobe en derderdetags snel en gemakkelijk te beheren. U hebt meer controle en flexibiliteit om vrijwel alles online te optimaliseren, en tegelijkertijd de afhankelijkheid van IT-bronnen te verminderen.
 
 [&#x200B; integreer Adobe Dynamische Tag Management &#x200B;](/help/sites-administering/dtm.md) met AEM zodat u uw Dynamische het Webeigenschappen van Tag Management kunt gebruiken om AEM plaatsen te volgen.
 
@@ -100,6 +100,6 @@ De integratie van de Audience Manager is verwijderd in AEM 6.3.
 
 ## Integreren met Adobe Campaign {#integrating-with-adobe-campaign}
 
-[&#x200B; Adobe Campaign &#x200B;](https://business.adobe.com/products/campaign/adobe-campaign.html) laat u e-mailleveringsinhoud in Adobe Experience Manager direct beheren.
+[&#x200B; Adobe Campaign &#x200B;](https://business.adobe.com/nl/products/campaign/adobe-campaign.html) laat u e-mailleveringsinhoud in Adobe Experience Manager direct beheren.
 
 Voor informatie over hoe AEM met Adobe Campaign integreert, zie [&#x200B; Integrerend met Adobe Campaign &#x200B;](/help/sites-administering/campaignstandard.md).

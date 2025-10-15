@@ -155,7 +155,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   U kunt de [&#x200B; kortere wegsleutel &#x200B;](/help/sites-authoring/keyboard-shortcuts.md) `/` (voorwaartse schuine streep) ook gebruiken om onderzoek van om het even welke console aan te halen.
 
-* [&#x200B; Oplossingen &#x200B;](https://business.adobe.com/)
+* [&#x200B; Oplossingen &#x200B;](https://business.adobe.com/nl/)
 
   ![&#x200B; Oplossingen &#x200B;](do-not-localize/screen_shot_2018-03-23at103552.png)
 

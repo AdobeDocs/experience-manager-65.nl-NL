@@ -24,7 +24,7 @@ Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobie
 
 Hebben uw gebruikers toegang tot alle inhoud? Verlaten ze de app en zo ja, waar? Hoe vaak blijven ze in de app en hoe vaak komen ze terug om de app te gebruiken? Welke veranderingen kunt u introduceren en dan die verhoging behoud meten? Hoe zit het met crashsnelheden? crasht uw app voor uw gebruikers?
 
-Haal voordeel uit [&#x200B; Mobiele Analytics van de App &#x200B;](https://business.adobe.com/products/analytics/mobile-marketing.html) in uw (AEM) Apps van Adobe Experience Manager door met [&#x200B; de Mobiele Diensten van de Adobe te integreren &#x200B;](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Haal voordeel uit [&#x200B; Mobiele Analytics van de App &#x200B;](https://business.adobe.com/nl/products/analytics/mobile-marketing.html) in uw (AEM) Apps van Adobe Experience Manager door met [&#x200B; de Mobiele Diensten van de Adobe te integreren &#x200B;](https://business.adobe.com/nl/products/campaign/mobile-marketing.html).
 
 Instrueer uw AEM-apps om te volgen, rapporteren en te begrijpen hoe uw gebruikers omgaan met uw mobiele app en inhoud en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in app en crashsnelheid.
 

@@ -194,7 +194,7 @@ U kunt ervoor kiezen om Dynamische media alleen te implementeren voor beeldbewer
 
 ## Dynamische media inschakelen {#enabling-dynamic-media}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u Dynamic Media inschakelen met de uitvoermodus `dynamicmedia` , zoals u bijvoorbeeld in de uitvoermodus van `publish` zou doen. Alvorens toe te laten, zorg ervoor om de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) te herzien.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u Dynamic Media inschakelen met de uitvoermodus `dynamicmedia` , zoals u bijvoorbeeld in de uitvoermodus van `publish` zou doen. Alvorens toe te laten, zorg ervoor om de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) te herzien.
 
 >[!NOTE]
 >

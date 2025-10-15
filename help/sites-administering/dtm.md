@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integreren met Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integreer [&#x200B; Dynamische Tag Management van de Adobe &#x200B;](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) met AEM zodat u uw Dynamische het Webeigenschappen van Tag Management kunt gebruiken om AEM plaatsen te volgen. Met Dynamic Tag Management kunnen marketers tags beheren voor het verzamelen van gegevens en gegevens verspreiden over digitale marketingsystemen. Gebruik bijvoorbeeld Dynamic Tag Management om gebruiksgegevens voor uw AEM website te verzamelen en de gegevens voor analyse te verspreiden in Adobe Analytics of Adobe Target.
+Integreer [&#x200B; Dynamische Tag Management van de Adobe &#x200B;](https://business.adobe.com/nl/products/experience-platform/adobe-experience-platform.html) met AEM zodat u uw Dynamische het Webeigenschappen van Tag Management kunt gebruiken om AEM plaatsen te volgen. Met Dynamic Tag Management kunnen marketers tags beheren voor het verzamelen van gegevens en gegevens verspreiden over digitale marketingsystemen. Gebruik bijvoorbeeld Dynamic Tag Management om gebruiksgegevens voor uw AEM website te verzamelen en de gegevens voor analyse te verspreiden in Adobe Analytics of Adobe Target.
 
 Alvorens u integreert, creeer het Dynamische Tag Management [&#x200B; Webbezit &#x200B;](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) dat het domein van uw AEM plaats volgt. [&#x200B; het ontvangen opties &#x200B;](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) van het Webbezit moet worden gevormd zodat u AEM kunt vormen om tot de Dynamische bibliotheken van Tag Management toegang te hebben.
 

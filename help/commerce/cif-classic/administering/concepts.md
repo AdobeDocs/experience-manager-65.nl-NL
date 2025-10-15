@@ -40,7 +40,7 @@ Dit betekent dat:
 
 >[!CAUTION]
 >
->Het [&#x200B; eCommerce integratiekader &#x200B;](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) is een AEM toe:voegen-aan.
+>Het [&#x200B; eCommerce integratiekader &#x200B;](https://business.adobe.com/nl/products/experience-manager/sites/ecommerce-integrations.html) is een AEM toe:voegen-aan.
 >
 >Uw vertegenwoordiger kan alle gegevens verstrekken, afhankelijk van de betreffende motor.
 

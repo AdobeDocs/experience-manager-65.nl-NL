@@ -31,6 +31,6 @@ Controleer om de volgende redenen of u geen op XFA gebaseerd PDF-formulier of ee
 >[!NOTE]
 >
 >LiveCycle ES4 biedt ondersteuning voor het weergeven van XFA-formulieren in HTML5, zodat de formulieren kunnen worden geopend in browsers met HTML5-ondersteuning, inclusief formulieren die op mobiele apparaten zoals iPad worden uitgevoerd. De HTML5-uitvoering van de formulieren behoudt de indeling van het formulierontwerp en ondersteunt de meeste formulierlogica (zoals JavaScript, Form Calc en formuliervalidaties) die is ingesloten in de XFA-formuliersjabloon. Op deze manier worden uw technologieinvesteringen in XFA-formulieren eenvoudig overgedragen naar apparaten waarop de Adobe Reader-insteekmodule niet kan worden uitgevoerd.
->Voor meer informatie, zie Bevorderend aan [&#x200B; LiveCycle productdocumentatie &#x200B;](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
+>Voor meer informatie, zie Bevorderend aan [&#x200B; LiveCycle productdocumentatie &#x200B;](https://business.adobe.com/nl/products/experience-manager/forms/aem-forms.html).
 
 [&#x200B; Juridische Mededelingen &#x200B;](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [&#x200B; Online Beleid van de Privacy &#x200B;](https://www.adobe.com/privacy.html)

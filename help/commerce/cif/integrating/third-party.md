@@ -31,7 +31,7 @@ Als de Experience Manager op aanvraag gegevens ophaalt, zijn real-time API&#39;s
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; Magento open-source &#x200B;](https://business.adobe.com/products/magento/open-source.html).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [&#x200B; Magento open-source &#x200B;](https://business.adobe.com/nl/products/magento/open-source.html).
 
 Het is niet nodig om het volledige schema van GraphQL uit te voeren, enkel de voorwerpen van het schema om de gewenste gebruik-gevallen toe te laten.
 

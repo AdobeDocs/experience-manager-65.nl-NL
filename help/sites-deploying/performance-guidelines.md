@@ -316,7 +316,7 @@ Voor verdere details over de beschikbare configuratieopties, zie [&#x200B; het V
 
 >[!NOTE]
 >
->Adobe raadt u aan de optie te kiezen om AEM in Azure of Amazon Web Services (AWS) te implementeren met behulp van Adobe Managed Services. Klanten profiteren van een team dat de ervaring en vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [&#x200B; extra documentatie op Adobe Managed Services &#x200B;](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe raadt u aan de optie te kiezen om AEM in Azure of Amazon Web Services (AWS) te implementeren met behulp van Adobe Managed Services. Klanten profiteren van een team dat de ervaring en vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [&#x200B; extra documentatie op Adobe Managed Services &#x200B;](https://business.adobe.com/nl/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of werk met een van de partners van de Adobe die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur zij steunen om aan uw specifieke prestaties, lading, scalability, en veiligheidseisen te voldoen.
 >

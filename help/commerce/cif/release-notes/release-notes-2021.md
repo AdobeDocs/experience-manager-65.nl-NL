@@ -131,7 +131,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF ver
    * Visuele indicator voor gefaseerde productgegevens op auteurswijze voor betere zichtbaarheid van aanstaande veranderingen
    * Nieuwe sitemapcomponent voor inhoud- en handelspagina&#39;s
 
-* Steun voor [&#x200B; het ProductAanbeveling van Sensei van Adobe Commerce, aangedreven door Adobe Sensei &#x200B;](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront gebruikend vooraf bepaalde of ter plekke gecreeerde aanbevelingen
+* Steun voor [&#x200B; het ProductAanbeveling van Sensei van Adobe Commerce, aangedreven door Adobe Sensei &#x200B;](https://business.adobe.com/nl/products/magento/product-recommendations.html) in AEM Storefront gebruikend vooraf bepaalde of ter plekke gecreeerde aanbevelingen
 
 ## Releasedatum: juni 2021
 

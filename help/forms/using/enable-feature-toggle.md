@@ -30,7 +30,7 @@ Als u werkt in een AEM 6.5-configuratie, kunt u met de functie schakelen naar:
 
 ## Overwegingen
 
-Vanaf AEM 6.5 SP23, te hoeven u niet om de bundel [ com.adobe.granite.toggle.impl.dev ](http://com.adobe.granite.toggle.impl.dev/) te installeren aangezien het reeds met de toe:voegen-aan Forms geïnstalleerd is.
+Vanaf AEM 6.5 SP23, te hoeven u niet om de bundel [&#x200B; com.adobe.granite.toggle.impl.dev &#x200B;](http://com.adobe.granite.toggle.impl.dev/) te installeren aangezien het reeds met de toe:voegen-aan Forms geïnstalleerd is.
 
 ## Vereisten
 
@@ -38,9 +38,9 @@ Controleer het volgende voordat u functieschakelingen inschakelt in de AEM 6.5-i
 
 * Gebruiker is lid van de `forms-users` -groep.
 
-* Navigeer naar `http://<author-instance-url>:portnumber/system/console/bundles` en controleer of **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** bundel aanwezig is of niet. Voor het geval dat het niet aanwezig [ is download de bundel van de verbinding ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
+* Navigeer naar `http://<author-instance-url>:portnumber/system/console/bundles` en controleer of **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** bundel aanwezig is of niet. Voor het geval dat het niet aanwezig [&#x200B; is download de bundel van de verbinding &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
-![ Toggle van de Eigenschap ](/help/forms/using/assets/feature-toggle-1.1.8.png)
+![&#x200B; Toggle van de Eigenschap &#x200B;](/help/forms/using/assets/feature-toggle-1.1.8.png)
 
 ## Functie in-/uitschakelen {#enable-feature-toggle-65}
 
@@ -49,10 +49,10 @@ De Toggles van de eigenschap voor vroege adopters of nieuwe eigenschappen kunnen
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
 3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
-4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. In de [!UICONTROL Enabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
+4. Klik het pictogram ![&#x200B; potlood-pictogram &#x200B;](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. In de [!UICONTROL Enabled Toggles] sectie, klik ![&#x200B; potlood-pictogram &#x200B;](assets/aem6forms_add.png).
 6. Voeg de functie-schakelings-id toe voor de functie, zoals in de onderstaande afbeelding wordt getoond.
-   ![ voeg knevel ](assets/add_toggle_number_forms.png) toe
+   ![&#x200B; voeg knevel &#x200B;](assets/add_toggle_number_forms.png) toe
 
    >[!NOTE]
    >
@@ -67,10 +67,10 @@ Voer de onderstaande stappen uit om de functieschakeloptie(s) uit te schakelen v
 1. Meld u aan bij uw AEM Forms-exemplaar.
 2. Navigeer naar `http://<author-instance-url>:portnumber/system/console/configMgr` .
 3. Onderzoek naar **de Dynamische Leverancier van de Knevel van Adobe Granite** in de Manager van de Configuratie.
-4. Klik het pictogram ![ potlood-pictogram ](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-5. In de [!UICONTROL Disabled Toggles] sectie, klik ![ potlood-pictogram ](assets/aem6forms_add.png).
+4. Klik het pictogram ![&#x200B; potlood-pictogram &#x200B;](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. In de [!UICONTROL Disabled Toggles] sectie, klik ![&#x200B; potlood-pictogram &#x200B;](assets/aem6forms_add.png).
 6. Voeg het wisselnummer toe voor de functie die moet worden uitgeschakeld.
-   ![ verwijdert knevel ](assets/remove_toggle_feature_forms.png)
+   ![&#x200B; verwijdert knevel &#x200B;](assets/remove_toggle_feature_forms.png)
 7. Klik op Opslaan.
 
 ## Technische overweging

@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,48 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td><strong>Hotfix-downloadkoppeling (AEM-koppeling voor softwaredistributie)</strong></td>
     <td><strong>Opgeloste problemen</strong></td>
   </tr>
+  <tr>
+    <td>
+      <strong> 14 okt., 2025 </strong><br>
+      <em> is op van toepassing:</em> ImgToPdf ontbreekt met AEM Forms SP23 Hotfix3 (109) <br>
+    </td>
+    <td>
+    <ul> Neem contact op met de [Adobe Experience Manager Forms-ondersteuning] (https://business.adobe.com/in/support/main.html) voor een oplossing.
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li> <b> (FORMS-22029): </b> verbetert de betrouwbaarheid van de PDF-conversie door een probleem op te lossen waarbij PDF Generator (PDFG) afbeeldingsbestanden niet naar PDF converteert na een upgrade naar SP23 met Hotfix 3, wat leidt tot onverwachte naverwerkingsfouten.
+      <ul>
+  <tr>
+    <td>
+      <strong> sep 23, 2025 </strong><br>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Reliëf:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Vensters voor server JBoss JEE </a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Linux voor server JBoss JEE </a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Vensters voor de server van de Weblogic JEE </a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Linux voor de server van de Weblogic JEE </a></li>
+    <li><strong>Websfeer:</strong></li>
+    <li>Vensters - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Vensters voor de server van JEE Websphere </a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz"> Hotfix3 voor AEM Service Pack 6.5.23.0 op Linux voor de server van Websphere JEE </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <strong> dit hotfix bevestigt het volgende:</strong> 
+    <li> <b> (FORMS-21378):</b> Verbeterde betrouwbaarheid van formulierverzendingen door een probleem op te lossen waarbij verzending mislukt wanneer Server-Side Validation (SSV) is ingeschakeld en Meta Info is berekend.
+
+<li> <b> (FORMS-21721): </b> Het probleem is verholpen waarbij conversies van PS naar PDF en HTML naar PDF (WebKit) mislukken nadat hotfix 2 boven op 6.5.23.0 is geïmplementeerd. 
+    </li>
+    </ul>
+    </td>    
+  </tr>
+    </ul>
+    </td>
   <tr>
     <td>
       <strong> aug 05, 2025 </strong><br>
@@ -158,10 +200,10 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
     <td>21 juni 2024</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op JBoss JEE server </a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op Weblogic JEE-server </a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op de server van de JEE van de Ruimte van de Websfeer </a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op server OSGi </a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op JBoss JEE server </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op Weblogic JEE-server </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op de server van de JEE van de Ruimte van de Websfeer </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0"> Hotfix voor AEM Service Pack 6.5.21.0 of AEM Forms Service Pack 6.5.22.0 op server OSGi </a> </li>
      </ul>
      </td>
     <td>
@@ -256,19 +298,19 @@ Dit artikel bevat een overzicht van de kritieke oplossingen die zijn geïmplemen
 
 Voer de volgende stappen uit om de hotfix te downloaden en installeren:
 
-1. Download [&#x200B; Hotfix &#x200B;](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
+1. Download [ Hotfix ](#hotfix-for-adaptive-forms) van de verbinding van de Distributie van de Software.
 1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
-1. Upload en installeer het pakket (.zip) via de [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Upload en installeer het pakket (.zip) via de [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Open de bundels voor configuratiebeheer `https://server:host/system/console/bundles`, upload en installeer de bundel (.jar). De hotfix is geïnstalleerd.
 
 ## Een JEE-patch installeren {#download-install-jee-patch}
 
-Voor instructies om een flard te installeren JEE, zie de [&#x200B; documentatie van de Installateur van de Reparatie van AEM Forms JEE &#x200B;](/help/release-notes/jee-patch-installer-65.md).
+Voor instructies om een flard te installeren JEE, zie de [ documentatie van de Installateur van de Reparatie van AEM Forms JEE ](/help/release-notes/jee-patch-installer-65.md).
 
 
 ## Hotfix downloaden en installeren voor conceptversie van brief {#install-hotfix}
 
 Voer de volgende stappen uit om het probleem op te lossen:
 
-1. Download [&#x200B; hotfix &#x200B;](#hotfix-for-adaptive-forms) van het portaal van de Distributie van de Software.
-2. Upload en installeer het pakket (.zip) gebruikend de [&#x200B; Manager van het Pakket van CRX &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Download [ hotfix ](#hotfix-for-adaptive-forms) van het portaal van de Distributie van de Software.
+2. Upload en installeer het pakket (.zip) gebruikend de [ Manager van het Pakket van CRX ](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).

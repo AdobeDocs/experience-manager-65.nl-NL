@@ -74,7 +74,7 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits) 
 
-* [&#x200B; Verhard component van de dossiergehechtheid &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [&#x200B; Verhard component van de dossiergehechtheid &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
 
 * FORMS-20533, FORMS-20532: AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x. De steun werd toegevoegd via a [&#x200B; Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) dat u [&#x200B; kunt downloaden en installeren &#x200B;](/help/release-notes/aem-forms-hotfix.md) om steun voor de recentste versie van Struts toe te voegen.
 
@@ -549,7 +549,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -694,7 +694,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
 
@@ -767,10 +767,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
-* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/nl/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
 >* [&#x200B; Abonneren aan de updates van het de prioritaire product van Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html)

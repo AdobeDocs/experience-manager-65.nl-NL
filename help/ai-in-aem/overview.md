@@ -23,6 +23,6 @@ De [&#x200B; Medewerker AI in Adobe Experience Manager &#x200B;](/help/ai-assist
 
 * [&#x200B; Adobe AI Overzicht &#x200B;](https://www.adobe.com/ai/overview.html)
 
-* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai)
 
-   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/core-services/interface/features/generative-ai#aem)

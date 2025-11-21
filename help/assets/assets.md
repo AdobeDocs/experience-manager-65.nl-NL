@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/overview) |
 | AEM 6.5 | Dit artikel |
 
 AEM [!DNL Assets] is een Digital Asset Management (DAM)-hulpprogramma dat deel uitmaakt van het [!DNL Experience Manager] -platform en waarmee uw onderneming digitale middelen kan beheren en distribueren. Gebruikers in een organisatie kunnen vele typen digitale elementen beheren, opslaan en openen, zoals afbeeldingen, video&#39;s, documenten, audioclips, 3D-bestanden en rijke media voor gebruik op het web, in gedrukte vorm en voor digitale distributie.

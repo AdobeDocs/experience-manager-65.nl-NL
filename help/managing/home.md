@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # AEM 6.5 Gebruikershandleiding voor beheren
 
-Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen, samen met beste praktijken en richtlijnen.
+Ontdek hoe u een AEM-project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen, samen met de beste praktijken en richtlijnen.
 
 ## Belangrijkste artikelen
 

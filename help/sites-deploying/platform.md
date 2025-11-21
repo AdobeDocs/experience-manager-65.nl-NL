@@ -1,5 +1,5 @@
 ---
-title: Inleiding tot het AEM Platform
+title: Inleiding tot het AEM-platform
 description: Leer meer over het AEM-platform en de belangrijkste onderdelen ervan, zoals het installeren en implementeren van Adobe Experience Manager 6.5, en over de architectuur, zoals Adobe Managed Services cloud-implementatie.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,9 +18,9 @@ ht-degree: 3%
 ---
 
 
-# Inleiding tot het AEM Platform{#introduction-to-the-aem-platform}
+# Inleiding tot het AEM-platform{#introduction-to-the-aem-platform}
 
-Het AEM platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
+Het AEM-platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak probeert een schaalbare en krachtige hiërarchische opslagplaats voor inhoud te implementeren die als basis kan dienen voor moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen.
 
@@ -28,7 +28,7 @@ Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als de standaar
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-Oak voert [&#x200B; JSR-283 &#x200B;](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specificatie uit. De belangrijkste ontwerpdoelstellingen zijn:
+Oak voert [ JSR-283 ](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) specificatie uit. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -37,7 +37,7 @@ Oak voert [&#x200B; JSR-283 &#x200B;](https://jcp.org/en/jsr/detail?id=283) (JCR
 
 ## Architectuurconcept {#architecture-concept}
 
-![&#x200B; chlimage_1-84 &#x200B;](assets/chlimage_1-84.png)
+![ chlimage_1-84 ](assets/chlimage_1-84.png)
 
 ### Opslag {#storage}
 
@@ -116,13 +116,13 @@ Bij MongoDB-opslag worden gegevens aan een document toegevoegd met elke wijzigin
 
 Gegevens over actieve en inactieve clusterknooppunten worden in de database bewaard om clusterbewerkingen te vergemakkelijken.
 
-Een standaard AEM clusterinstallatie met MongoDB-opslag:
+Een standaard AEM-clusterinstallatie met MongoDB-opslag:
 
-![&#x200B; chlimage_1-85 &#x200B;](assets/chlimage_1-85.png)
+![ chlimage_1-85 ](assets/chlimage_1-85.png)
 
 ## Wat is er anders dan Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Aangezien Oak achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden wanneer u een op Oak gebaseerde AEM-installatie instelt:
+Aangezien Oak achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een AEM-installatie op Oak:
 
 * Oak maakt niet automatisch indexen. Daarom moeten aangepaste indexen worden gemaakt wanneer dat nodig is.
 * In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weergeven, weerspiegelt een sessie met Oak een stabiele weergave van de opslagplaats vanaf het moment dat de sessie werd verkregen. De reden hiervoor is het MVCC-model waarop Oak is gebaseerd.
@@ -130,9 +130,9 @@ Aangezien Oak achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna
 
 ## Overige documentatie over het platform {#other-platform-related-documentation}
 
-Raadpleeg ook de volgende artikelen voor meer informatie over het AEM platform:
+Raadpleeg ook de volgende artikelen voor meer informatie over het AEM-platform:
 
-* [Knooppuntenopslag en gegevensopslag configureren in AEM 6](/help/sites-deploying/data-store-config.md)
+* [Knooppuntenwinkels en gegevensopslag configureren in AEM 6](/help/sites-deploying/data-store-config.md)
 * [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md)
 * [Opslagelementen in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM met MongoDB](/help/sites-deploying/aem-with-mongodb.md)

@@ -26,7 +26,7 @@ Als je nog nooit in AEM en/of zonder kop bent, is AEM Headless Journey een gewel
 
 ## AEM-documentatiereizen {#documentation-journeys}
 
-[&#x200B; de Reis van de Documentatie van A &#x200B;](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die aan AEM nieuw kan zijn, een bedrijfsprobleem van begin tot eind begrijpen en oplossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of de kennis van AEM.
+[ de Reis van de Documentatie van A ](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer helpt, die aan AEM nieuw kan zijn, een bedrijfsprobleem van begin tot eind begrijpen en oplossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of de kennis van AEM.
 
 Documentatiereizen zijn gebaseerd op de beginselen van best practices, op informatie van Adobe over het meest recente onderzoek, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
 
@@ -46,9 +46,9 @@ De volgende Documentatiereizen zijn beschikbaar voor onderwerpen zonder kop.
 
 | Titel | Beschrijving | Primair publiek |
 |---|---|---|
-| [&#x200B; Zwaardeloze Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md) | Leer meer over technologieën zonder kop, wat ze brengen voor de gebruikerservaring, hoe AEM modellen zonder kop ondersteunt en hoe u uw eigen ontwikkelingsproject zonder kop kunt implementeren van A naar Z. | Ontwikkelaars |
-| [&#x200B; Zwaardeloze Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
-| [&#x200B; Evolutie van de Architect zonder hoofd &#x200B;](/help/journey-headless/architect/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
-| [&#x200B; Headless Authoring Reis &#x200B;](/help/journey-headless/author/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt maken. | Inhoudsmakers en auteurs |
+| [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | Leer meer over technologieën zonder kop, wat ze brengen voor de gebruikerservaring, hoe AEM modellen zonder kop ondersteunt en hoe u uw eigen ontwikkelingsproject zonder kop kunt implementeren van A naar Z. | Ontwikkelaars |
+| [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md) | Leer over headless technologieën, waarom zij in uw project zouden kunnen worden gebruikt, en hoe te om vertaalprojecten in AEM van A tot Z te creëren en bij te werken. | Vertaalspecialisten |
+| [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. | Architecten |
+| [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager as a Cloud Service en hoe u inhoud voor uw project kunt maken. | Inhoudsmakers en auteurs |
 
-Blijf voor [&#x200B; aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)
+Blijf voor [ aanstaande reizen die extra rollen behandelen.](/help/journey-documentation/home.md#journeys)

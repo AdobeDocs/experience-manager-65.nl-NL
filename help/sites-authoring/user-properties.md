@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -23,7 +23,7 @@ AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomg
 
 Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de [&#x200B; optie van de Gebruiker &#x200B;](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
+Begin door tot de [ optie van de Gebruiker ](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -31,25 +31,25 @@ Het **de montagedialoog van de Gebruiker** geeft u toegang tot:
 
 * Imiteren als
 
-   * Met [&#x200B; impersonate als &#x200B;](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+   * Met [ impersonate als ](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
 
 * Profiel
 
-   * Biedt een geschikte verbinding aan uw [&#x200B; gebruikersmontages &#x200B;](/help/sites-administering/security.md) aan)
+   * Biedt een geschikte verbinding aan uw [ gebruikersmontages ](/help/sites-administering/security.md) aan)
 
 * [Mijn voorkeuren](/help/sites-authoring/user-properties.md#my-preferences)
 
    * Verschillende voorkeursinstellingen opgeven die uniek zijn voor uw gebruiker
 
-![&#x200B; screen_shot_2018-03-20at103808 &#x200B;](assets/screen_shot_2018-03-20at103808.png)
+![ screen_shot_2018-03-20at103808 ](assets/screen_shot_2018-03-20at103808.png)
 
 ### Mijn voorkeuren {#my-preferences}
 
-Het **Mijn dialoog van Voorkeur** is toegang via de [&#x200B; gebruiker &#x200B;](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal.
+Het **Mijn dialoog van Voorkeur** is toegang via de [ gebruiker ](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal.
 
 Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
-![&#x200B; scherm-shot_2019-03-05at100322 &#x200B;](assets/screen-shot_2019-03-05at100322.png)
+![ scherm-shot_2019-03-05at100322 ](assets/screen-shot_2019-03-05at100322.png)
 
 * **Taal**
 
@@ -71,7 +71,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **toon Desktopacties voor Assets**
 
-  Voor deze optie is een AEM bureaubladtoepassing vereist.
+  Voor deze optie is een AEM-bureaubladtoepassing vereist.
 
 * **Kleur van de Annotatie**
 
@@ -82,7 +82,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Relatieve Presentatie van de Datum**
 
-  Om de leesbaarheid te verbeteren, worden AEM datums binnen de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+  Om de leesbaarheid te verbeteren, geeft AEM datums binnen de laatste zeven dagen weer als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -99,7 +99,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **laat Kortere weg** toe
 
-  AEM ondersteunt verschillende sneltoetsen die het ontwerpen efficiënter maken.
+  AEM biedt ondersteuning voor verschillende sneltoetsen die het ontwerpen efficiënter maken.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -108,7 +108,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **De Klassieke Ervaring van het Gebruik Authoring**
 
-  Deze optie laat [&#x200B; klassieke UI &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-Gebaseerde pagina authoring toe. Standaard wordt de standaardinterface gebruikt.
+  Deze optie laat [ klassieke UI ](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)-Gebaseerde pagina authoring toe. Standaard wordt de standaardinterface gebruikt.
 
 * **laat de Homepage van Assets** toe
 
@@ -116,4 +116,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Configuratie van de Beeld**
 
-  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [&#x200B; integratie van Adobe Stock &#x200B;](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.
+  Deze optie laat u de aangewezen configuratie van Adobe Stock specificeren en is slechts beschikbaar als uw systeembeheerder [ integratie van Adobe Stock ](/help/assets/aem-assets-adobe-stock.md) heeft toegelaten.

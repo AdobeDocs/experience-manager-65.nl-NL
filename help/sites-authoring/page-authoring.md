@@ -4,8 +4,8 @@ description: De taken die bij het ontwerpen van een inhoudspagina in Adobe Exper
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Pagina&#39;s ontwerpen{#authoring-pages}
 
-Hieronder vindt u twee typen overzicht voor het ontwerpen met AEM:
+Het volgende biedt twee typen overzicht voor het ontwerpen met AEM:
 
-* [&#x200B; Eerste Stappen voor Auteurs &#x200B;](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
+* [ Eerste Stappen voor Auteurs ](/help/sites-authoring/first-steps.md) - een inleiding voor nieuwe auteurs
 
-* [&#x200B; Snelle Gids aan de Authoring Pagina&#39;s &#x200B;](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
+* [ Snelle Gids aan de Authoring Pagina&#39;s ](/help/sites-authoring/qg-page-authoring.md) - een snelle gids (hoog niveau) aan de belangrijkste acties
 
 >[!NOTE]
 >
->In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [&#x200B; Authoring Gids &#x200B;](/help/sites-authoring/first-steps.md) wordt behandeld.
+>In deze sectie worden de taken besproken die bij het ontwerpen van een inhoudspagina betrokken zijn. Er zijn vele extra eigenschappen nauw verwant met pagina creatie, die in andere secties van de [ Authoring Gids ](/help/sites-authoring/first-steps.md) wordt behandeld.
 
 ## Snel overzicht van de functies die worden gebruikt voor het ontwerpen van pagina&#39;s {#quick-overview-of-features-used-for-authoring-pages}
 
@@ -50,4 +50,4 @@ Bij een enkelvoudige of een langzame dubbelklik wordt de juiste werkbalk weergeg
 Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen.
 
 * **Onderzoek aangezien u** typt
-In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die inhoud zoeken via de AEM interface, worden dynamische overeenkomsten weergegeven wanneer u de query typt.
+In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die inhoud zoeken via de AEM-interface, worden dynamische overeenkomsten weergegeven wanneer u de query typt.

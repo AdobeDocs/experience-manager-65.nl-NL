@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
 
-Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdrukken en de functie voor aanraken op basis van de mogelijkheden van de apparaten om een pagina weer te geven. Wanneer de eindgebruiker tot een mobiele pagina toegang heeft, AEM ontdekt het apparaat en verzendt de vertegenwoordiging die aan zijn apparatengroep beantwoordt.
+Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdrukken en de functie voor aanraken op basis van de mogelijkheden van de apparaten om een pagina weer te geven. Wanneer de eindgebruiker tot een mobiele pagina toegang heeft, ontdekt AEM het apparaat en verzendt de vertegenwoordiging die aan zijn apparatengroep beantwoordt.
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [&#x200B; Creërend Levend Exemplaar voor Verschillende Kanalen &#x200B;](/help/sites-administering/msm-livecopy.md).)
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [ Creërend Levend Exemplaar voor Verschillende Kanalen ](/help/sites-administering/msm-livecopy.md).)
 >
->AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [&#x200B; Creërend de Filters van de Groep van het Apparaat &#x200B;](/help/sites-developing/groupfilters.md).)
+>AEM-ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [ Creërend de Filters van de Groep van het Apparaat ](/help/sites-developing/groupfilters.md).)
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
@@ -39,7 +39,7 @@ Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
 De pagina ziet er ongeveer als volgt uit:
 
-![&#x200B; mobileipademu &#x200B;](assets/mobileipademu.png)
+![ mobileipademu ](assets/mobileipademu.png)
 
 >[!NOTE]
 >

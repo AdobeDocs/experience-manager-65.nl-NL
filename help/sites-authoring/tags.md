@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [&#x200B; het Beheer Markeringen &#x200B;](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
-* Zie [&#x200B; Tags voor Ontwikkelaars &#x200B;](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [ het Beheer Markeringen ](/help/sites-administering/tags.md) voor informatie over het creëren van en het leiden van markeringen, en waarop inhoudsmarkeringen zijn toegepast.
+* Zie [ Tags voor Ontwikkelaars ](/help/sites-developing/tags.md) voor informatie over het etiketterende kader en het omvatten van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -35,7 +35,7 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 1. **Verbeterd het Zoeken** - de standaardonderzoekscomponent in AEM omvat globaal gecreeerde markeringen en toegepaste markeringen waarop de filters kunnen worden toegepast om de resultaten aan die te beperken die relevant zijn.
 1. **SEO die** toelaat - de Markeringen die als paginaeigenschappen worden toegepast zullen automatisch in de metatags van de pagina verschijnen die het zichtbaar maken aan onderzoeksmotoren.
 1. **Eenvoudige Verfijning** - de markeringen kunnen eenvoudig van een woord en de aanraking van een knoop worden gecreeerd. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
-1. **Consistentie van de Kern** - het etiketterende systeem is een kerncomponent van AEM en door alle AEM mogelijkheden gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
+1. **Consistentie van de Kern** - het etiketterende systeem is een kerncomponent van AEM en door alle mogelijkheden van AEM gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
 1. **combineert Structuur &amp; Flexibiliteit** - AEM is ideaal voor het werken met gestructureerde informatie, toe te schrijven aan het nesten van pagina&#39;s en wegen. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
@@ -44,9 +44,9 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In het auteursmilieu, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Markeringen/Trefwoorden** gebied in te gaan.
 
-Om [&#x200B; vooraf bepaalde markeringen &#x200B;](/help/sites-administering/tags.md) toe te passen, in het **3&rbrace; venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
+Om [ vooraf bepaalde markeringen ](/help/sites-administering/tags.md) toe te passen, in het **3} venster van de Eigenschappen van de Pagina gebruiken het** gebied van Markeringen **en het** Uitgezochte venster van Markeringen **.** Het **Standaardlusje van Markeringen** is standaardnamespace, wat betekent er geen `namespace-string:` vooraf bepaald aan de taxonomie is.
 
-![&#x200B; Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen &#x200B;](assets/chlimage_1-41.png) te schrappen
+![ Uitgezochte het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen ](assets/chlimage_1-41.png) te schrappen
 
 ### Codes publiceren {#publishing-tags}
 

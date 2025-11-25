@@ -10,10 +10,10 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Gebruik pagina-analysegegevens om de doeltreffendheid van de pagina-inhoud te me
 
 ## Analyse zichtbaar vanuit de console {#analytics-visible-from-the-console}
 
-![&#x200B; pad-01 &#x200B;](assets/spad-01.png)
+![ pad-01 ](assets/spad-01.png)
 
-De analysegegevens van de pagina worden getoond in [&#x200B; Mening van de Lijst &#x200B;](/help/sites-authoring/basic-handling.md#list-view) van de console van Plaatsen. Wanneer de pagina&#39;s in lijstformaat worden getoond, zijn de volgende kolommen beschikbaar door gebrek:
+De analysegegevens van de pagina worden getoond in [ Mening van de Lijst ](/help/sites-authoring/basic-handling.md#list-view) van de console van Plaatsen. Wanneer de pagina&#39;s in lijstformaat worden getoond, zijn de volgende kolommen beschikbaar door gebrek:
 
 * Paginaweergaven
 * Unieke bezoekers
@@ -36,14 +36,14 @@ In elke kolom wordt een waarde voor de lopende rapportageperiode weergegeven en 
 
 >[!NOTE]
 >
->Om de updateperiode te veranderen, [&#x200B; vorm het de invoerinterval &#x200B;](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Om de updateperiode te veranderen, [ vorm het de invoerinterval ](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Open de **console van Plaatsen**; bijvoorbeeld, [&#x200B; https://localhost:4502/sites.html/content &#x200B;](https://localhost:4502/sites.html/content)
-1. In het uiterste recht van de toolbar (hoger-juiste hoek), klik het pictogram om **Mening van de Lijst** te selecteren (het getoonde pictogram zal van de [&#x200B; huidige mening &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) afhangen).
+1. Open de **console van Plaatsen**; bijvoorbeeld, [ https://localhost :4502 /sites.html/content ](https://localhost:4502/sites.html/content)
+1. In het uiterste recht van de toolbar (hoger-juiste hoek), klik het pictogram om **Mening van de Lijst** te selecteren (het getoonde pictogram zal van de [ huidige mening ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) afhangen).
 
 1. Opnieuw, in het uiterste recht van de toolbar (hoger-juiste hoek), klik het pictogram dan selecteren **Montages van de Mening**. Het **vormt de dialoog van Kolommen** opent. Breng om het even welke vereiste veranderingen aan en bevestig met **Update**.
 
-   ![&#x200B; pad-02 &#x200B;](assets/spad-02.png)
+   ![ pad-02 ](assets/spad-02.png)
 
 ### De rapportageperiode selecteren {#selecting-the-reporting-period}
 
@@ -55,7 +55,7 @@ Selecteer de rapportperiode waarvoor de gegevens van Analytics op de console van
 
 De huidige rapportageperiode wordt weergegeven op de werkbalk van de Sites-console (rechts van de bovenste werkbalk). Gebruik de vervolgkeuzelijst om de vereiste rapportageperiode te selecteren.
 
-![&#x200B; a-05 &#x200B;](assets/aa-05.png)
+![ a-05 ](assets/aa-05.png)
 
 ### Beschikbare gegevenskolommen configureren {#configuring-available-data-columns}
 
@@ -67,27 +67,27 @@ Leden van de analytische-beheerders gebruikersgroep kunnen de console van Plaats
 
 1. In de Mening van de Lijst, gebruik de meningsselecteurs (recht van toolbar), de uitgezochte **Montages van de Mening** en dan **voegt de Gegevens van de Analyse van de Douane** toe.
 
-   ![&#x200B; pad-03 &#x200B;](assets/spad-03.png)
+   ![ pad-03 ](assets/spad-03.png)
 
 1. Selecteer de metriek die u aan auteurs in de console van Plaatsen wilt blootstellen, en dan **toevoegen** klikken.
 
    De kolommen die worden weergegeven, worden opgehaald uit Adobe Analytics.
 
-   ![&#x200B; a-16 &#x200B;](assets/aa-16.png)
+   ![ a-16 ](assets/aa-16.png)
 
 ### Inhoudsgegevens van sites openen {#opening-content-insights-from-sites}
 
-Open [&#x200B; Inzicht van de Inhoud &#x200B;](/help/sites-authoring/content-insights.md) van de console van Plaatsen om paginadoeltreffendheid verder te onderzoeken.
+Open [ Inhoud Insight ](/help/sites-authoring/content-insights.md) van de console van Plaatsen om paginadoeltreffendheid verder te onderzoeken.
 
 1. Selecteer in de Sites-console de pagina waarvoor u Inhoudsgegevens wilt weergeven.
-1. Klik op het pictogram Analytics en Recommendations op de werkbalk.
+1. Klik op het pictogram Analytics and Recommendations (Analytics en Aanbevelingen) op de werkbalk.
 
-   ![&#x200B; Analytics en het pictogram van Recommendations &#x200B;](do-not-localize/chlimage_1-14.png)
+   ![ Analytics en het pictogram van Aanbevelingen ](do-not-localize/chlimage_1-14.png)
 
 ## Analyses zichtbaar in de Pagina-editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
->Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
+>Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [&#x200B; insteekmodule ActivityMap die door Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.
+>De [ insteekmodule ActivityMap die door Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) wordt verstrekt zou nu moeten worden gebruikt.

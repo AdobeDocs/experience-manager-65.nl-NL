@@ -1,6 +1,6 @@
 ---
 title: Problemen bij het ontwerpen in AEM oplossen
-description: Sommige problemen die u bij het gebruik van AEM kunt tegenkomen.
+description: Sommige problemen die kunnen optreden bij het gebruik van AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # Problemen met AEM bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
 
-De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
+In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
 
 >[!NOTE]
 >
->Wanneer het ervaren van problemen het ook de moeite waard is controlerend de lijst van [&#x200B; Bekende Kwesties &#x200B;](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
+>Wanneer het ervaren van problemen het ook de moeite waard is controlerend de lijst van [ Bekende Kwesties ](/help/release-notes/release-notes.md) voor uw instantie (versie en de dienstpakken).
 
 >[!NOTE]
 >
->De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen problemen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in [&#x200B; AEM van het Oplossen van problemen (voor Beheerders) &#x200B;](/help/sites-administering/troubleshoot.md) worden beschreven. Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
+>De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen problemen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in [ worden beschreven het Oplossen van problemen AEM (voor Beheerders) ](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u de systeembeheerder over het oplossen van problemen met AEM.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
@@ -46,7 +46,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Voeg `?` toe aan het einde van de pagina-URL. Bijvoorbeeld:
 
       * `http://localhost:4502/sites.html/content?`
-      * Hierdoor wordt de pagina rechtstreeks vanaf AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de Dispatcher-cache moet wissen.
+      * Hiermee wordt de pagina direct bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de Dispatcher-cache moet wissen.
 
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 

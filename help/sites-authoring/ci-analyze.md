@@ -1,6 +1,6 @@
 ---
 title: Paginaprestaties analyseren
-description: Gebruik de pagina Inzicht van inhoud om de prestaties van de pagina te analyseren die u ontwerpt
+description: Gebruik de pagina Content Insight om de prestaties te analyseren van de pagina die u ontwerpt
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Paginaprestaties analyseren{#analyzing-page-performance}
 
-Open de [&#x200B; pagina van het Inzicht van de Inhoud &#x200B;](/help/sites-authoring/content-insights.md) om de prestaties van de pagina te analyseren die u creeert. Configureer de rapportageperiode om uw analyse te concentreren.
+Open de [ pagina van Insight van de Inhoud ](/help/sites-authoring/content-insights.md) om de prestaties van de pagina te analyseren die u creeert. Configureer de rapportageperiode om uw analyse te concentreren.
 
-## Analyses en Recommendations openen voor een pagina {#opening-analytics-and-recommendations-for-a-page}
+## Analyses en aanbevelingen voor een pagina openen {#opening-analytics-and-recommendations-for-a-page}
 
-Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina te zien:
+Gebruik de volgende procedure om de Analytics en Aanbevelingen voor een pagina te zien:
 
 1. Navigeer naar de pagina die u wilt analyseren.
-1. In de toolbar, klik **Analytics en Recommendations**.
+1. In de toolbar, klik **Analytics en Aanbevelingen**.
 
    >[!NOTE]
    >
-   >Analytics en Recommendations voor een pagina verschijnen slechts als u AEM aan [&#x200B; met Adobe Analytics &#x200B;](/help/sites-administering/adobeanalytics-connect.md) hebt gevormd te integreren.
+   >De analyses en de Aanbevelingen voor een pagina verschijnen slechts als u AEM hebt gevormd om [ met Adobe Analytics ](/help/sites-administering/adobeanalytics-connect.md) te integreren.
 
-   ![&#x200B; scherm-shot_2019-03-05at115319 &#x200B;](assets/screen-shot_2019-03-05at115319.png)
+   ![ scherm-shot_2019-03-05at115319 ](assets/screen-shot_2019-03-05at115319.png)
 
 ### Wijziging van de verslagperiode {#changing-the-reporting-period}
 
@@ -41,19 +41,19 @@ Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 * De periode waarin verslag moet worden uitgebracht.
 * De granulariteit van de gegevens.
 
-De gereedschappen voor het wijzigen van de aan de tijd gerelateerde aspecten van de rapporten staan boven aan de pagina Inzicht in inhoud. ![&#x200B; chlimage_1-126 &#x200B;](assets/chlimage_1-126.png)
+De gereedschappen voor het wijzigen van de tijdgerelateerde aspecten van de rapporten staan boven aan de pagina Content Insight. ![ chlimage_1-126 ](assets/chlimage_1-126.png)
 
 #### Wijziging van de verslagperiode {#changing-the-reporting-period-1}
 
-Wijzig de rapportageperiode van de pagina Inhoudscontrole om uw analyse van de pagina-activiteit toe te spitsen op een specifieke periode. Wanneer u de rapportageperiode wijzigt, worden de rapporten automatisch vernieuwd. Het schaduwgebied op het tijdframe vertegenwoordigt de rapportageperiode. De datums in de tijdlijn nemen toe van links naar rechts.
+Wijzig de rapportageperiode van de pagina Content Insight om uw analyse van de pagina-activiteit toe te spitsen op een specifieke periode. Wanneer u de rapportageperiode wijzigt, worden de rapporten automatisch vernieuwd. Het schaduwgebied op het tijdframe vertegenwoordigt de rapportageperiode. De datums in de tijdlijn nemen toe van links naar rechts.
 
-![&#x200B; chlimage_1-127 &#x200B;](assets/chlimage_1-127.png)
+![ chlimage_1-127 ](assets/chlimage_1-127.png)
 
-Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
+De rapportageperiode van een Content Insight-pagina wijzigen:
 
 1. Als de tijdlijn niet boven aan de pagina wordt weergegeven, klikt u op het pictogram Tijdlijn in-/uitschakelen.
 
-   ![&#x200B; Tijdskader van de knevel &#x200B;](do-not-localize/chlimage_1-22.png)
+   ![ Tijdskader van de knevel ](do-not-localize/chlimage_1-22.png)
 
 1. Als u de begindatum van de rapportageperiode wilt wijzigen, sleept u de cirkel die links van het schaduwgebied wordt weergegeven naar de gewenste begindatum.
 
@@ -65,37 +65,37 @@ Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
 Verander de hoeveelheid tijd dat elk gegevenspunt in een rapport overspant. Wanneer u bijvoorbeeld de granulariteit voor week selecteert, geeft elk gegevenspunt in het weergavenrapport het aantal weergaven voor een week aan.
 
-![&#x200B; screen_shot_2017-11-29at141001 &#x200B;](assets/screen_shot_2017-11-29at141001.png)
+![ screen_shot_2017-11-29at141001 ](assets/screen_shot_2017-11-29at141001.png)
 
 De granulariteit beïnvloedt de rapporten die gegevens tegen tijd, zoals de Meningen en de Pagina Gemiddelde Bewerkte Minerapporten plotten. Korreligheid is ook van invloed op de schaal van de tijdlijn.
 
 1. Als het besturingselement voor granulariteit niet wordt weergegeven, klikt u op het pictogram Korreligheid in-/uitschakelen.
 
-   ![&#x200B; chlimage_1-128 &#x200B;](assets/chlimage_1-128.png)
+   ![ chlimage_1-128 ](assets/chlimage_1-128.png)
 
 1. Klik op de gewenste granulariteit. Zodra geselecteerd, werkt het rapport automatisch bij om op granulariteit te wijzen.
 
-### Taken toewijzen voor SEO Recommendations {#assigning-tasks-for-seo-recommendations}
+### Taken toewijzen voor SEO-aanbevelingen {#assigning-tasks-for-seo-recommendations}
 
-Gebruik het SEO Recommendations-rapport om taken te maken waarmee u de zichtbaarheid van pagina&#39;s voor zoekprogramma&#39;s kunt verbeteren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
+Gebruik het rapport SEO Recommendations om taken tot stand te brengen voor het verbeteren van paginazicht aan onderzoeksmotoren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
 
-![&#x200B; chlimage_1-129 &#x200B;](assets/chlimage_1-129.png)
+![ chlimage_1-129 ](assets/chlimage_1-129.png)
 
 De status van de SEO-aanbeveling geeft aan wanneer de taak is gemaakt maar nog niet is voltooid.
 
-![&#x200B; chlimage_1-130 &#x200B;](assets/chlimage_1-130.png)
+![ chlimage_1-130 ](assets/chlimage_1-130.png)
 
-Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie [&#x200B; Werkend met Taken &#x200B;](/help/sites-authoring/task-content.md).
+Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie [ Werkend met Taken ](/help/sites-authoring/task-content.md).
 
 Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
 1. Klik op het informatiepictogram voor de SEO-aanbeveling.
 
-   ![&#x200B; pictogram van de Informatie &#x200B;](do-not-localize/chlimage_1-23.png)
+   ![ pictogram van de Informatie ](do-not-localize/chlimage_1-23.png)
 
 1. Klik op het omcirkelde driehoekje naast het informatiepictogram.
 
-   ![&#x200B; chlimage_1-131 &#x200B;](assets/chlimage_1-131.png)
+   ![ chlimage_1-131 ](assets/chlimage_1-131.png)
 
 1. Vul de formuliervelden die worden weergegeven en selecteer vervolgens Maken:
 

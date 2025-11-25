@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -32,7 +32,7 @@ De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bez
 
 ## Segmentatie gebruiken {#using-segmentation}
 
-De segmenten worden bepaald in [&#x200B; het Vormen Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
+De segmenten worden bepaald in [ het Vormen Segmentatie ](/help/sites-administering/campaign-segmentation.md). Ze worden gebruikt om de werkelijke inhoud te sturen die door een specifiek doelpubliek wordt gezien.
 
 ## Gesegmenteerde terminologie {#segmentation-terminology}
 
@@ -64,7 +64,7 @@ Bij het bespreken van segmentatie wordt de volgende terminologie gebruikt:
 
 **Afgeleide Beetjes** - sommige demografische eigenschappen zijn moeilijk te bepalen zonder registratie, maar kunnen worden afgeleid door gedrag en demografische eigenschappen te combineren.
 
-Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [&#x200B; worden verkregen Google Ad Planner &#x200B;](https://www.google.com/adplanner/)) combineren staan plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
+Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gegevens (die van hulpmiddelen zoals [ worden verkregen Google Ad Planner ](https://www.google.com/adplanner/)) combineren staan plaatseigenaars toe om demografische kenmerken van hun bezoekers af te leiden.
 
 **Subsegment** - een segment kan in verscheidene subsegmenten worden onderverdeeld. Dit wordt gedaan door extra eigenschappen te bepalen.
 
@@ -78,4 +78,4 @@ Bijvoorbeeld, die verwijzende URL (als gedragseigenschap) met demografische gege
 
 >[!NOTE]
 >
->Zie [&#x200B; Segmentatie &#x200B;](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.
+>Zie [ Segmentatie ](/help/sites-administering/campaign-segmentation.md) voor verdere informatie over segmenten in Adobe Experience Manager.

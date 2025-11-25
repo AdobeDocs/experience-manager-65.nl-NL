@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen procedures voor het gebruik van AEM Authoring
-description: Hoe AEM op de meest efficiënte en meest effectieve manier te gebruiken.
+description: Hoe AEM op de meest efficiënte en effectieve manier te gebruiken.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Aanbevolen procedures{#best-practices}
 
-De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
+De beste praktijken beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat verschillende gebieden in AEM.
 
 Op de volgende gebieden is documentatie beschikbaar over de beste praktijken:
 
@@ -36,7 +36,7 @@ In de volgende tabellen worden specifieke documenten beschreven en aan deze docu
 
 ## Assets {#assets}
 
-De beste praktijken rond Assets, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Assets, met inbegrip van het vermogen van Dynamische Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
 
 <table>
  <tbody>
@@ -52,13 +52,13 @@ De beste praktijken rond Assets, met inbegrip van het vermogen van Dynamic Media
   </tr>
   <tr>
    <td>Dynamic Imaging</td>
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamics Imaging</a></td>
-   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Dynamic Media Classic integreert. </p> </td>
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen procedures voor Dynamic Imaging</a></td>
+   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de Dynamische functionaliteit van Media gebruikt of met Dynamic Media Classic integreert. </p> </td>
   </tr>
   <tr>
    <td>Meertalige Assets</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Aanbevolen werkwijzen voor vertaling</a></td>
-   <td>Beschrijft beste praktijken rond efficiënt het vertalen van AEM activa.</td>
+   <td>Beschrijft best practices om AEM-middelen efficiënt te vertalen.</td>
   </tr>
  </tbody>
 </table>
@@ -69,12 +69,12 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 |  |  |  |
 |---|---|---|
-| Authoring | [&#x200B; het milieu en de hulpmiddelen van de Auteur &#x200B;](/help/sites-authoring/author-environment-tools.md) | Geeft een overzicht van de gereedschappen die worden gebruikt voor het schrijven van pagina&#39;s. |
+| Authoring | [ het milieu en de hulpmiddelen van de Auteur ](/help/sites-authoring/author-environment-tools.md) | Geeft een overzicht van de gereedschappen die worden gebruikt voor het schrijven van pagina&#39;s. |
 | Pagina&#39;s ordenen | [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md) | Geeft een overzicht van hoe u uw pagina&#39;s het beste kunt ordenen, inclusief naamconventies. |
 
 ## Forms {#forms}
 
 |  |  |  |
 |---|---|---|
-| Aangepaste formulieren | [&#x200B; Beste praktijken voor het werken met adaptieve vormen &#x200B;](/help/forms/using/adaptive-forms-best-practices.md) | Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen. |
-| HTML5-formulieren | [&#x200B; Beste praktijken voor het ontwerpen van HTML5 vormen &#x200B;](/help/forms/using/best-practices-for-html5-forms.md) | Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen. |
+| Aangepaste formulieren | [ Beste praktijken voor het werken met adaptieve vormen ](/help/forms/using/adaptive-forms-best-practices.md) | Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen. |
+| HTML5-formulieren | [ Beste praktijken voor het ontwerpen van de vormen HTML5 ](/help/forms/using/best-practices-for-html5-forms.md) | Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen. |

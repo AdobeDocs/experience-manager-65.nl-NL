@@ -4,8 +4,8 @@ description: Concepten van ontwerpen en publiceren in Adobe Experience Manager 6
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 AEM biedt u twee omgevingen:
 
 * Auteur
-* Publish
+* Publiceren
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken, zodat uw bezoekers de inhoud kunnen lezen.
 
@@ -28,9 +28,9 @@ De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen
 * Een auteur maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn, bijvoorbeeld pagina&#39;s, middelen, publicaties, enzovoort)
 * die op een gegeven moment op uw website worden gepubliceerd.
 
-![&#x200B; Overzicht van Milieu&#39;s &#x200B;](assets/chlimage_1-132.png)
+![ Overzicht van Milieu&#39;s ](assets/chlimage_1-132.png)
 
-Op het auteursmilieu, wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
+Voor de auteursomgeving, wordt de functionaliteit van AEM beschikbaar gemaakt door twee UIs. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
 ### Auteursomgeving {#author-environment}
 
@@ -58,21 +58,21 @@ Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
 >[!NOTE]
 >
->AEM wordt ook [&#x200B; beheerd &#x200B;](/help/sites-administering/home.md) (voor de meeste taken) van het auteursmilieu.
+>AEM wordt ook [ beheerd ](/help/sites-administering/home.md) (voor de meeste taken) van het auteursmilieu.
 
-#### Publish-omgeving {#publish-environment}
+#### Publicatie-omgeving {#publish-environment}
 
-Wanneer klaar, wordt de inhoud van de AEM plaats gepubliceerd aan **publiceer milieu**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
+Wanneer klaar, wordt de inhoud van de plaats van AEM gepubliceerd aan **publiceer milieu**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
 
 Meestal bevindt de publicatieomgeving zich in de gedemilitariseerde zone, met andere woorden beschikbaar voor het internet, maar niet langer onder volledige bescherming van het interne netwerk.
 
-Wanneer de AEM plaats a [&#x200B; communautaire plaats &#x200B;](/help/communities/overview.md) is, of [&#x200B; componenten van Gemeenschappen &#x200B;](/help/communities/author-communities.md) omvat, kunnen de ondertekende plaatsbezoekers (leden) met de eigenschappen van Gemeenschappen in wisselwerking staan. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die gewoonlijk beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
+Wanneer de plaats van AEM a [ communautaire plaats ](/help/communities/overview.md) is, of [ componenten van Gemeenschappen ](/help/communities/author-communities.md) omvat, kunnen de ondertekende plaatsbezoekers (leden) met de eigenschappen van Gemeenschappen in wisselwerking staan. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die gewoonlijk beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
 
 >[!NOTE]
 >
 >Helaas is er soms sprake van een overlapping in de gebruikte terminologie. Dit kan gebeuren met:
 >
->* **Publish/Unpublish**
+>* **publiceren/unpublish**
 >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
 >
 >* **activeert/deactiveert**
@@ -84,4 +84,4 @@ Wanneer de AEM plaats a [&#x200B; communautaire plaats &#x200B;](/help/communiti
 
 #### Dispatcher {#dispatcher}
 
-Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.

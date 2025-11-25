@@ -9,10 +9,10 @@ docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 7c4be888c392520c82ef7b2172d0eee61fc3ee44
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '896'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikk
 
 A *Lancering* wordt gecreeerd om u toe te staan om veranderingen in voorbereiding op toekomstige publicatie aan te brengen, tezelfdertijd als het handhaven van uw huidige pagina&#39;s. Dit betekent dat u in feite twee versies tegelijk bewerkt: pagina&#39;s die momenteel worden gepubliceerd en een versie van deze pagina&#39;s die in de toekomst tegelijk worden gepubliceerd. Zodra dat tijdstip is bereikt, kunt u de originele pagina&#39;s vervangen en de nieuwe versie publiceren.
 
-U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3&rbrace; pagina&#39;s van de Lancering &lbrace;u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+U creeert a *Lancering*, dan na het uitgeven en het bijwerken van uw *3} pagina&#39;s van de Lancering {u* bevordert *hen terug naar* Source *.* U kunt deze *Source* pagina&#39;s (top-level) dan activeren. Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
@@ -37,7 +37,7 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [&#x200B; schrapt &#x200B;](/help/sites-authoring/launches-creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [&#x200B; de console van Lanceringen &#x200B;](#the-launches-console):
+Deze sectie beschrijft om te creëren, uit te geven en te bevorderen (en indien nodig [ schrapt ](/help/sites-authoring/launches-creating.md#deleting-a-launch)) lanceringspagina&#39;s van binnen de console van Plaatsen of [ de console van Lanceringen ](#the-launches-console):
 
 * [Starten maken](/help/sites-authoring/launches-creating.md)
 * [Starten bewerken](/help/sites-authoring/launches-editing.md)
@@ -56,7 +56,7 @@ Met Launches kunt u:
 
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-  ![&#x200B; Overzicht van lanceringsacties &#x200B;](assets/chlimage_1-111.png)
+  ![ Overzicht van lanceringsacties ](assets/chlimage_1-111.png)
 
 * De startconfiguratie bewerken:
 
@@ -84,14 +84,14 @@ Met Launches kunt u:
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dat wil zeggen als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-  ![&#x200B; Overzicht van updates &#x200B;](assets/chlimage_1-112.png)
+  ![ Overzicht van updates ](assets/chlimage_1-112.png)
 
-* [&#x200B; creeer een genestelde lancering &#x200B;](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
+* [ creeer een genestelde lancering ](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
 
    * De bron is een bestaande opstart.
-   * U kunt [&#x200B; een genestelde lancering &#x200B;](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
+   * U kunt [ een genestelde lancering ](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) aan om het even welk doel bevorderen; dit kan een ouderlancering of de top-level bronpagina&#39;s (Productie) zijn.
 
-  ![&#x200B; Overzicht van genestelde lancering &#x200B;](assets/chlimage_1-113.png)
+  ![ Overzicht van genestelde lancering ](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -115,7 +115,7 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u 
 
 * De **Console van Hulpmiddelen**: **Hulpmiddelen**, **Plaatsen**, **Lanceringen**.
 
-* Of direct met [&#x200B; https://localhost:4502/libs/launches/content/launches.html &#x200B;](https://localhost:4502/libs/launches/content/launches.html)
+* Of direct met [ https://localhost :4502 /libs/launches/content/launches.html ](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Starten in verwijzingen (siteconsole) {#launches-in-references-sites-console}
 
@@ -123,8 +123,8 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u 
 1. Open het **spoor van Verwijzingen** en selecteer de bronpagina.
 1. Selecteer **Lanceringen**, zal de bestaande lancering(en) worden vermeld:
 
-   ![&#x200B; lusje van de Verwijzing - Lanceringen &#x200B;](assets/screen-shot_2019-03-05at121901-1.png)
+   ![ lusje van de Verwijzing - Lanceringen ](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Klik op de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
-   ![&#x200B; Uitgezochte lancering om mogelijke acties te tonen &#x200B;](assets/screen-shot_2019-03-05at121952-1.png)
+   ![ Uitgezochte lancering om mogelijke acties te tonen ](assets/screen-shot_2019-03-05at121952-1.png)

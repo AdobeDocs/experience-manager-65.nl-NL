@@ -1,6 +1,6 @@
 ---
 title: Werken met gerichte inhoud in meerdere sites
-description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
+description: Als u gerichte inhoud, zoals activiteiten, ervaringen en aanbiedingen tussen uw sites moet beheren, kunt u gebruikmaken van geïntegreerde multisite AEM-ondersteuning voor gerichte inhoud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 3%
@@ -18,24 +18,24 @@ ht-degree: 3%
 
 # Werken met gerichte inhoud in meerdere sites{#working-with-targeted-content-in-multisites}
 
-Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen.
+Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM voordeel halen ingebouwde multisite steun voor gerichte inhoud.
 
 >[!NOTE]
 >
->Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Om deze eigenschap te gebruiken, zou u met [&#x200B; Meerdere Manager van de Plaats &#x200B;](/help/sites-administering/msm.md) en de [&#x200B; integratie van Adobe Target &#x200B;](/help/sites-administering/target.md) met AEM vertrouwd moeten zijn.
+>Het werken met ondersteuning voor meerdere sites voor doelgerichte inhoud is een geavanceerde functie. Om deze eigenschap te gebruiken, zou u met [ Meerdere Manager van de Plaats ](/help/sites-administering/msm.md) en de [ integratie van Adobe Target ](/help/sites-administering/target.md) met AEM vertrouwd moeten zijn.
 
 In dit document wordt het volgende beschreven:
 
-* Geeft een kort overzicht van AEM ondersteuning voor meerdere sites voor gerichte inhoud.
+* Geeft een kort overzicht van de AEM-ondersteuning voor meerdere sites voor specifieke inhoud.
 * Beschrijft sommige mogelijke gebruiksscenario&#39;s op hoe u plaatsen (in één merk) kunt verbinden.
 * Verstrekt een voorbeeldanalyse van hoe de marketers deze eigenschap zouden gebruiken.
 * Gedetailleerde instructies voor het implementeren van ondersteuning voor meerdere sites voor gerichte inhoud.
 
 Als u wilt instellen hoe uw sites gepersonaliseerde inhoud delen, moet u de volgende stappen uitvoeren:
 
-1. [&#x200B; creeer een gebied &#x200B;](#creating-new-areas) of [&#x200B; creeer een gebied als levend exemplaar &#x200B;](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina beschikbaar zijn; namelijk de plaats op de pagina waar de component wordt gericht. Als u een gebied maakt, wordt een leeg gebied gemaakt, terwijl u door het maken van een gebied als een live kopie inhoud kunt overnemen in de sitestructuren.
+1. [ creeer een gebied ](#creating-new-areas) of [ creeer een gebied als levend exemplaar ](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina beschikbaar zijn; namelijk de plaats op de pagina waar de component wordt gericht. Als u een gebied maakt, wordt een leeg gebied gemaakt, terwijl u door het maken van een gebied als een live kopie inhoud kunt overnemen in de sitestructuren.
 
-1. [&#x200B; Verbinding uw plaats of pagina &#x200B;](#linking-sites-to-an-area) aan een gebied.
+1. [ Verbinding uw plaats of pagina ](#linking-sites-to-an-area) aan een gebied.
 
 U kunt de overerving op elk gewenst moment opschorten of herstellen. Als u de overerving niet wilt onderbreken, kunt u bovendien lokale ervaringen creëren. Standaard gebruiken alle pagina&#39;s het hoofdgebied, tenzij u anders opgeeft.
 
@@ -43,7 +43,7 @@ U kunt de overerving op elk gewenst moment opschorten of herstellen. Als u de ov
 
 De multisite steun voor gerichte inhoud is beschikbaar uit de doos en laat u gerichte inhoud van de hoofdpagina duwen die u door MSM aan een lokale levende kopie beheert of laat u globale en lokale wijzigingen van dergelijke inhoud beheren.
 
-U beheert dit in een **Gebied**. Gebieden scheiden gerichte inhoud (activiteiten, ervaringen en aanbiedingen) die in verschillende plaatsen wordt gebruikt en verstrekken een op MSM-Gebaseerd mechanisme om de overerving van gerichte inhoud samen met plaatsovererving tot stand te brengen en te beheren. Zo voorkomt u dat u doelgerichte inhoud in overgeërfde sites opnieuw moet maken, zoals was vereist vóór AEM 6.2.
+U beheert dit in een **Gebied**. Gebieden scheiden gerichte inhoud (activiteiten, ervaringen en aanbiedingen) die in verschillende plaatsen wordt gebruikt en verstrekken een op MSM-Gebaseerd mechanisme om de overerving van gerichte inhoud samen met plaatsovererving tot stand te brengen en te beheren. Zo voorkomt u dat u doelgerichte inhoud opnieuw moet maken in overgeërfde sites, zoals was vereist in AEM vóór 6.2.
 
 In een gebied worden alleen activiteiten die met dat gebied verband houden, naar levende exemplaren geduwd. Standaard is het hoofdgebied geselecteerd. Nadat u aanvullende gebieden hebt gemaakt, kunt u deze koppelen aan uw sites of pagina&#39;s om aan te geven welke doelinhoud wordt geduwd.
 
@@ -59,7 +59,7 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 
 ## Gebruik hoofdletters {#use-cases}
 
-U kunt ondersteuning voor meerdere sites instellen voor doelinhoud, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Bovendien in [&#x200B; Voorbeeld: Het richten van Inhoud die op Geogrpahy &#x200B;](#example-targeting-content-based-on-geography) wordt gebaseerd, kunt u een real-world toepassing zien van het richten van inhoud in veelvoudige plaatsen.
+U kunt ondersteuning voor meerdere sites instellen voor doelinhoud, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Bovendien in [ Voorbeeld: Het richten van Inhoud die op Geogrpahy ](#example-targeting-content-based-on-geography) wordt gebaseerd, kunt u een real-world toepassing zien van het richten van inhoud in veelvoudige plaatsen.
 
 Gerichte inhoud wordt verpakt in zogenaamde gebieden, die het bereik voor sites of pagina&#39;s bepalen. Deze gebieden worden op merkniveau gedefinieerd. Eén merk kan meerdere gebieden bevatten. Gebieden kunnen verschillend zijn tussen merken. Hoewel één merk het hoofdgebied kan bevatten en daarom voor alle merken wordt gedeeld, kan een ander merk meerdere merken bevatten (bijvoorbeeld per regio). Merkens hoeven dus niet de reeks gebieden ertussen te weerspiegelen.
 
@@ -82,11 +82,11 @@ Met multisite steun voor gerichte inhoud, kunt u, bijvoorbeeld, twee (of meer) p
 
 U kon **veelvoudige** merken ook hebben die in één plaats worden gebruikt, die complexer dan dit voorbeeld zou kunnen zijn.
 
-![&#x200B; chlimage_1-270 &#x200B;](assets/chlimage_1-270.png)
+![ chlimage_1-270 ](assets/chlimage_1-270.png)
 
 >[!NOTE]
 >
->Voor een meer technische blik bij deze eigenschap, zie [&#x200B; hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd &#x200B;](/help/sites-authoring/technical-multisite-targeted.md).
+>Voor een meer technische blik bij deze eigenschap, zie [ hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd ](/help/sites-authoring/technical-multisite-targeted.md).
 
 ## Voorbeeld: Inhoud als doel instellen op basis van geografie {#example-targeting-content-based-on-geography}
 
@@ -97,7 +97,7 @@ Er zijn vier versies van dezelfde site op basis van geografie:
 * De **Verenigde Staten** plaats is in de hogere linkerhoek en is de hoofdplaats. In dit voorbeeld is deze geopend in de modus Doel.
 * De drie andere versies van deze plaats zijn **Canada**, **Groot-Brittannië**, en **Australië**, die allen levende exemplaren zijn. Deze sites zijn geopend in de modus Voorbeeld.
 
-![&#x200B; chlimage_1-271 &#x200B;](assets/chlimage_1-271.png)
+![ chlimage_1-271 ](assets/chlimage_1-271.png)
 
 Elke site deelt gepersonaliseerde inhoud in geografische regio&#39;s:
 
@@ -105,19 +105,19 @@ Elke site deelt gepersonaliseerde inhoud in geografische regio&#39;s:
 * De grote Brit is verbonden met de Europese ruimte en erft van het hoofdgebied.
 * Australië heeft zijn eigen gepersonaliseerde inhoud, omdat het zich op het zuidelijk halfrond bevindt en seizoensgebonden producten niet van toepassing zouden zijn.
 
-![&#x200B; chlimage_1-272 &#x200B;](assets/chlimage_1-272.png)
+![ chlimage_1-272 ](assets/chlimage_1-272.png)
 
 Voor het noordelijk halfrond hebben we een winteractiviteit gecreëerd, maar in het mannelijke publiek zou de marktmaker in Noord-Amerika een ander beeld voor de winter willen, dus hij of zij verandert het op de Amerikaanse site.
 
-![&#x200B; chlimage_1-273 &#x200B;](assets/chlimage_1-273.png)
+![ chlimage_1-273 ](assets/chlimage_1-273.png)
 
 Nadat u het tabblad hebt vernieuwd, wordt de Canadese site gewijzigd in de nieuwe afbeelding zonder actie van onze kant. Dat gebeurt omdat het de hoofdzone deelt met de Verenigde Staten. In de sites van Groot-Brittannië en Australië verandert het beeld niet.
 
-![&#x200B; chlimage_1-274 &#x200B;](assets/chlimage_1-274.png)
+![ chlimage_1-274 ](assets/chlimage_1-274.png)
 
-De teller zou deze veranderingen in het Europese gebied willen uitrollen en [&#x200B; rolt uit het levende exemplaar &#x200B;](/help/sites-administering/msm-livecopy.md) door **Pagina van de Uitvoer** te tikken of te klikken. Na het verfrissen van de tab heeft de site van Groot-Brittannië de nieuwe afbeelding, aangezien het Europa-gebied overerft van het hoofdgebied (na rollout).
+De teller zou deze veranderingen in het Europese gebied willen uitrollen en [ rolt uit het levende exemplaar ](/help/sites-administering/msm-livecopy.md) door **Pagina van de Uitvoer** te tikken of te klikken. Na het verfrissen van de tab heeft de site van Groot-Brittannië de nieuwe afbeelding, aangezien het Europa-gebied overerft van het hoofdgebied (na rollout).
 
-![&#x200B; chlimage_1-275 &#x200B;](assets/chlimage_1-275.png)
+![ chlimage_1-275 ](assets/chlimage_1-275.png)
 
 De afbeelding op de Australische site blijft ongewijzigd, wat het gewenste gedrag is, omdat het in de zomer in Australië is en de markeerteken die inhoud niet wil wijzigen. De site van Australië verandert niet omdat het een gebied niet deelt met een andere regio en het ook geen live kopie van een andere regio is. De marketeter hoeft zich nooit zorgen te maken dat de doelinhoud van de Australische site wordt overschreven.
 
@@ -127,11 +127,11 @@ U kunt de overerving op elk gewenst moment opschorten of de overerving volledig 
 
 >[!NOTE]
 >
->Voor een meer technische blik bij deze eigenschap, zie [&#x200B; hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd &#x200B;](/help/sites-authoring/technical-multisite-targeted.md).
+>Voor een meer technische blik bij deze eigenschap, zie [ hoe Multisite Beheer voor Gerichte Inhoud wordt gestructureerd ](/help/sites-authoring/technical-multisite-targeted.md).
 
 ### Een gebied maken in plaats van een gebied te maken als livecopie {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM hebt u de mogelijkheid om een gebied te maken of een gebied te maken als een gebied met een bibliotheek. Het creëren van een gebiedsgroepen activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een gebied wanneer u een volledig aparte set doelinhoud wilt maken of wanneer u een set doelinhoud wilt delen.
+In AEM kunt u een gebied maken of een gebied maken als een livecopy. Het creëren van een gebiedsgroepen activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een gebied wanneer u een volledig aparte set doelinhoud wilt maken of wanneer u een set doelinhoud wilt delen.
 
 Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt u de activiteiten willen erven. In dit geval maakt u een gebied als een live kopie, waarbij Y een live kopie van X is en dus ook alle activiteiten overneemt.
 
@@ -141,12 +141,12 @@ Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt 
 
 In het volgende diagram zijn er bijvoorbeeld vier sites waar twee het hoofdgebied delen (en alle activiteiten die deel uitmaken van dat gebied), één site die een gebied heeft dat een live kopie van een gebied is, zodat het de activiteiten deelt bij rollout, en één kant die volledig gescheiden is (en dus een gebied voor zijn activiteiten vereist).
 
-![&#x200B; chlimage_1-276 &#x200B;](assets/chlimage_1-276.png)
+![ chlimage_1-276 ](assets/chlimage_1-276.png)
 
 Om dit in AEM te bereiken, zou u het volgende doen:
 
-* Site A is gekoppeld aan het hoofdgebied - er hoeft geen gebied te worden gemaakt. Stramiengebied is standaard in AEM geselecteerd. Site A en B delen activiteiten, enzovoort.
-* Site B is gekoppeld aan het hoofdgebied - er hoeft geen gebied te worden gemaakt. Stramiengebied is standaard in AEM geselecteerd. Site A en B delen activiteiten, enzovoort.
+* Site A is gekoppeld aan het hoofdgebied - er hoeft geen gebied te worden gemaakt. Hoofdgebied is standaard geselecteerd in AEM. Site A en B delen activiteiten, enzovoort.
+* Site B is gekoppeld aan het hoofdgebied - er hoeft geen gebied te worden gemaakt. Hoofdgebied is standaard geselecteerd in AEM. Site A en B delen activiteiten, enzovoort.
 * Site C koppelt aan Overgenomen gebied. Dit is een live kopie van het hoofdgebied - Gebied maken als actieve kopie waar u een live kopie maakt op basis van het hoofdgebied. Het overerfde Gebied erft activiteiten van het Hoofdgebied bij rollout.
 * Site D maakt koppelingen naar een eigen geïsoleerd gebied - Maak een gebied waar u een geheel nieuw gebied maakt zonder activiteiten die nog niet zijn gedefinieerd. Het geïsoleerde gebied zal geen activiteiten met een andere plaats delen.
 
@@ -163,7 +163,7 @@ Een gebied maken:
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Klik **creeer Gebied**.
 
-   ![&#x200B; chlimage_1-277 &#x200B;](assets/chlimage_1-277.png)
+   ![ chlimage_1-277 ](assets/chlimage_1-277.png)
 
 1. Klik het **pictogram van het Gebied** en klik **daarna**.
 1. Op het **gebied van de Titel**, ga een naam voor het nieuwe gebied in. Selecteer optioneel tags.
@@ -171,7 +171,7 @@ Een gebied maken:
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks in de merkenconsole maken.
 
-   ![&#x200B; chlimage_1-278 &#x200B;](assets/chlimage_1-278.png)
+   ![ chlimage_1-278 ](assets/chlimage_1-278.png)
 
 ## Gebieden maken als actieve kopieën {#creating-areas-as-live-copies}
 
@@ -182,21 +182,21 @@ Een gebied maken als een livecopy:
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Klik **creeer Gebied als Levend Exemplaar**.
 
-   ![&#x200B; chlimage_1-279 &#x200B;](assets/chlimage_1-279.png)
+   ![ chlimage_1-279 ](assets/chlimage_1-279.png)
 
 1. Selecteer het gebied dat u een levend exemplaar van wilt maken en **daarna** klikken.
 
-   ![&#x200B; chlimage_1-280 &#x200B;](assets/chlimage_1-280.png)
+   ![ chlimage_1-280 ](assets/chlimage_1-280.png)
 
 1. Voer in het veld **Naam** een naam in voor de livekopie. Standaard worden subpagina&#39;s opgenomen. Sluit ze uit door het selectievakje **Subpagina&#39;s uitsluiten** in te schakelen.
 
-   ![&#x200B; chlimage_1-281 &#x200B;](assets/chlimage_1-281.png)
+   ![ chlimage_1-281 ](assets/chlimage_1-281.png)
 
 1. In **Rollout vormt** drop-down menu, selecteer de aangewezen configuratie.
 
-   Zie [&#x200B; Geïnstalleerde Configuraties van de Uitvoer &#x200B;](/help/sites-administering/msm-sync.md#installed-rollout-configurations) voor beschrijvingen van elke optie.
+   Zie [ Geïnstalleerde Configuraties van de Uitvoer ](/help/sites-administering/msm-sync.md#installed-rollout-configurations) voor beschrijvingen van elke optie.
 
-   Zie [&#x200B; Creërend en Synchroniserend Levende Kopieën &#x200B;](/help/sites-administering/msm-livecopy.md) voor meer informatie over levende exemplaren.
+   Zie [ Creërend en Synchroniserend Levende Kopieën ](/help/sites-administering/msm-livecopy.md) voor meer informatie over levende exemplaren.
 
    >[!NOTE]
    >
@@ -206,7 +206,7 @@ Een gebied maken als een livecopy:
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks vanuit het merkvenster maken.
 
-   ![&#x200B; chlimage_1-282 &#x200B;](assets/chlimage_1-282.png)
+   ![ chlimage_1-282 ](assets/chlimage_1-282.png)
 
 ## Sites koppelen aan een gebied {#linking-sites-to-an-area}
 
@@ -225,11 +225,11 @@ Een site koppelen aan een gebied:
 1. Klik het **Personalization** lusje.
 1. In het **Merk** menu, selecteer het merk u uw gebied aan wilt verbinden. Nadat u het merk selecteert, zijn de beschikbare gebieden beschikbaar in het **menu van de Verwijzing van het Gebied**.
 
-   ![&#x200B; chlimage_1-283 &#x200B;](assets/chlimage_1-283.png)
+   ![ chlimage_1-283 ](assets/chlimage_1-283.png)
 
-1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0&rbrace; Gebied en klik** sparen **.**
+1. Selecteer het gebied van de **drop-down menu van de Verwijzing van het 0} Gebied en klik** sparen **.**
 
-   ![&#x200B; chlimage_1-284 &#x200B;](assets/chlimage_1-284.png)
+   ![ chlimage_1-284 ](assets/chlimage_1-284.png)
 
 ## Live kopie losmaken of overerving van doelinhoud opschorten {#detaching-live-copy-or-suspending-inheritance-of-targeted-content}
 
@@ -255,14 +255,14 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Klik **Begin richtend**.
 1. Voer een van de volgende handelingen uit om een activiteit op te schorten:
 
-   1. Selecteer een element van de activiteit, zoals het publiek. AEM geeft automatisch een bevestigingsvenster voor Live kopie onderbreken weer. (U kunt livekopieën opschorten door tijdens het doelproces op een element te tikken of te klikken.)
+   1. Selecteer een element van de activiteit, zoals het publiek. AEM geeft automatisch een bevestigingsvak voor Live kopie onderbreken weer. (U kunt livekopieën opschorten door tijdens het doelproces op een element te tikken of te klikken.)
    1. Selecteer **Uitstel Levende Exemplaar** van het drop-down menu in de toolbar op.
 
-   ![&#x200B; chlimage_1-285 &#x200B;](assets/chlimage_1-285.png)
+   ![ chlimage_1-285 ](assets/chlimage_1-285.png)
 
 1. Klik **Onderbreking** om de activiteit op te schorten. Uitgestelde activiteiten worden rood gemarkeerd.
 
-   ![&#x200B; chlimage_1-286 &#x200B;](assets/chlimage_1-286.png)
+   ![ chlimage_1-286 ](assets/chlimage_1-286.png)
 
 ### Overerving breken {#breaking-inheritance}
 
@@ -273,7 +273,7 @@ Overerving van doelinhoud in een activiteit onderbreken:
 1. Selecteer **Livekopie loskoppelen** in het vervolgkeuzemenu op de werkbalk. AEM bevestigt dat u de livekopie wilt loskoppelen.
 1. Klik **losmaken** om het levende exemplaar van de activiteit los te maken. Nadat deze is losgekoppeld, wordt het vervolgkeuzemenu met betrekking tot overerving niet meer weergegeven. De activiteit is nu een lokale activiteit.
 
-   ![&#x200B; chlimage_1-287 &#x200B;](assets/chlimage_1-287.png)
+   ![ chlimage_1-287 ](assets/chlimage_1-287.png)
 
 ## Overerving van doelinhoud herstellen {#restoring-inheritance-of-targeted-content}
 
@@ -285,13 +285,13 @@ Om erfenis van gerichte inhoud in een activiteit te herstellen:
 1. Klik **Begin richtend**.
 1. Selecteer **Livekopie hervatten** in het vervolgkeuzemenu op de werkbalk.
 
-   ![&#x200B; chlimage_1-288 &#x200B;](assets/chlimage_1-288.png)
+   ![ chlimage_1-288 ](assets/chlimage_1-288.png)
 
 1. Klik **hervatten** om te bevestigen dat u levende exemplaarovererving wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
 
 ## Gebieden verwijderen {#deleting-areas}
 
-Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. AEM waarschuwt u alvorens u een gebied kunt schrappen. Als u een gebied verwijdert waaraan een site is gekoppeld, wordt de toewijzing voor dit merk automatisch opnieuw toegewezen aan het hoofdgebied.
+Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. AEM waarschuwt u voordat u een gebied kunt verwijderen. Als u een gebied verwijdert waaraan een site is gekoppeld, wordt de toewijzing voor dit merk automatisch opnieuw toegewezen aan het hoofdgebied.
 
 Een gebied verwijderen:
 

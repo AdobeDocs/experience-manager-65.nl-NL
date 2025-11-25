@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 3%
@@ -27,7 +27,7 @@ De **console van Plaatsen** laat u uw website navigeren en beheren, gebruikend d
 
 Bijvoorbeeld, kolommening:
 
-![&#x200B; haven-01 &#x200B;](assets/ateat-01.png)
+![ haven-01 ](assets/ateat-01.png)
 
 ## Pagina-inhoud bewerken {#editing-page-content}
 
@@ -35,7 +35,7 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
 `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-![&#x200B; haven-02 &#x200B;](assets/ateat-02.png)
+![ haven-02 ](assets/ateat-02.png)
 
 >[!NOTE]
 >
@@ -48,9 +48,9 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 Wanneer het uitgeven van een pagina, **Hulp** kan van worden betreden:
 
 * de [**selecteur van de Informatie van de Pagina**](/help/sites-authoring/editing-page-properties.md#page-properties); dit toont de inleidende dia&#39;s (zoals getoond de eerste keer dat u tot de redacteur toegang hebt).
-* de [&#x200B; configuratiedialoog &#x200B;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) voor specifieke componenten (gebruikend het vraagteken (?) (in de werkbalk van het dialoogvenster); dit toont contextgevoelige Help.
+* de [ configuratiedialoog ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) voor specifieke componenten (gebruikend het vraagteken (?) (in de werkbalk van het dialoogvenster); dit toont contextgevoelige Help.
 
-Verdere [&#x200B; op hulp betrekking hebbende middelen zijn beschikbaar bij consoles &#x200B;](/help/sites-authoring/basic-handling.md#accessing-help).
+Verdere [ op hulp betrekking hebbende middelen zijn beschikbaar bij consoles ](/help/sites-authoring/basic-handling.md#accessing-help).
 
 ## Browser voor componenten {#components-browser}
 
@@ -58,7 +58,7 @@ De componentenbrowser toont alle componenten die voor gebruik op uw huidige pagi
 
 De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser) en de [contentstructuur](/help/sites-authoring/author-environment-tools.md#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
-![&#x200B; haven-03 &#x200B;](assets/ateat-03.png)
+![ haven-03 ](assets/ateat-03.png)
 
 Wanneer u het zijpaneel opent, schuift het open van de linkerkant (selecteer de **Componenten** tabel indien nodig). Wanneer u deze optie opent, kunt u door alle componenten bladeren die beschikbaar zijn voor de pagina.
 
@@ -74,7 +74,7 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
   Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de browser van de component wordt gesloten om de pagina weer te geven), waar u de component kunt plaatsen.
 
-  ![&#x200B; haven-04 &#x200B;](assets/ateat-04.png)
+  ![ haven-04 ](assets/ateat-04.png)
 
 * **apparaat van de Desktop**
 
@@ -82,7 +82,7 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
   Als u een component aan de pagina wilt toevoegen, klikt u op de gewenste component en sleept u deze naar de gewenste locatie.
 
-  ![&#x200B; haven-05 &#x200B;](assets/ateat-05.png)
+  ![ haven-05 ](assets/ateat-05.png)
 
   Componenten worden vertegenwoordigd door
 
@@ -100,25 +100,25 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
   Voor een meer gedetailleerde beschrijving van de component, kunt u het informatiepictogram naast de component in **klikken Componenten** browser (als beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
 
-  ![&#x200B; haven-06 &#x200B;](assets/ateat-06.png)
+  ![ haven-06 ](assets/ateat-06.png)
 
-  Voor zelfs meer informatie over de componenten beschikbaar aan u, zie [&#x200B; Console van de Component &#x200B;](/help/sites-authoring/default-components-console.md).
+  Voor zelfs meer informatie over de componenten beschikbaar aan u, zie [ Console van de Component ](/help/sites-authoring/default-components-console.md).
 
 ## Assets Browser {#assets-browser}
 
-De activa browser toont alle [&#x200B; activa &#x200B;](/help/assets/assets.md) die voor direct gebruik op uw huidige pagina beschikbaar zijn.
+De activa browser toont alle [ activa ](/help/assets/assets.md) die voor direct gebruik op uw huidige pagina beschikbaar zijn.
 
-De activa browser is een lusje binnen het zijpaneel samen met de [&#x200B; componenten doorbladert &#x200B;](/help/sites-authoring/author-environment-tools.md#components-browser) r en [&#x200B; inhoudsboom &#x200B;](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
+De activa browser is een lusje binnen het zijpaneel samen met de [ componenten doorbladert ](/help/sites-authoring/author-environment-tools.md#components-browser) r en [ inhoudsboom ](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
-![&#x200B; haven-03-1 &#x200B;](assets/ateat-03-1.png)
+![ haven-03-1 ](assets/ateat-03-1.png)
 
 Wanneer u het zijpaneel opent, schuift het vanaf de linkerkant open. Selecteer indien nodig het **Assets** lusje.
 
-![&#x200B; haven-07 &#x200B;](assets/ateat-07.png)
+![ haven-07 ](assets/ateat-07.png)
 
 Wanneer de middelenbrowser is geopend, kunt u door alle elementen bladeren die beschikbaar zijn voor uw pagina. Met oneindig schuiven wordt de lijst indien nodig uitgebreid.
 
-![&#x200B; haven-08 &#x200B;](assets/ateat-08.png)
+![ haven-08 ](assets/ateat-08.png)
 
 Als u een element aan de pagina wilt toevoegen, selecteert u het element en sleept u het naar de gewenste locatie. Dit kan zijn:
 
@@ -126,13 +126,13 @@ Als u een element aan de pagina wilt toevoegen, selecteert u het element en slee
 
    * U kunt bijvoorbeeld een element van het type afbeelding naar een afbeeldingscomponent slepen.
 
-* A [&#x200B; placeholder &#x200B;](/help/sites-authoring/editing-content.md#component-placeholder) in het paragraafsysteem om een component van het aangewezen type tot stand te brengen.
+* A [ placeholder ](/help/sites-authoring/editing-content.md#component-placeholder) in het paragraafsysteem om een component van het aangewezen type tot stand te brengen.
 
    * U kunt bijvoorbeeld een element van het type afbeelding naar het alineasysteem slepen om een component Image te maken.
 
 >[!NOTE]
 >
->Dit is beschikbaar voor specifieke elementen en componenttypen. Zie [&#x200B; Invoegend een Component gebruikend Browser van Assets &#x200B;](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) voor meer details.
+>Dit is beschikbaar voor specifieke elementen en componenttypen. Zie [ Invoegend een Component gebruikend Browser van Assets ](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) voor meer details.
 
 Vanuit de bovenste werkbalk van de middelenbrowser kunt u de elementen filteren op:
 
@@ -155,7 +155,7 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt gesloten om de pagina weer te tonen, waar u het element aan de vereiste component kunt toevoegen.
 
-  ![&#x200B; haven-09 &#x200B;](assets/ateat-09.png)
+  ![ haven-09 ](assets/ateat-09.png)
 
 * **apparaat van de Desktop**
 
@@ -163,11 +163,11 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
 
   Als u een element aan uw pagina wilt toevoegen, klikt u op het element en sleept u het naar de gewenste component of locatie.
 
-  ![&#x200B; haven-10 &#x200B;](assets/ateat-10.png)
+  ![ haven-10 ](assets/ateat-10.png)
 
-Als u een activa moet snel veranderen, kunt u de [&#x200B; Redacteur van Activa &#x200B;](/help/assets/manage-assets.md) van activa direct van activabrowser beginnen door het Edit pictogram naast de naam van activa te klikken wordt getoond die.
+Als u een activa moet snel veranderen, kunt u de [ Redacteur van Activa ](/help/assets/manage-assets.md) van activa direct van activabrowser beginnen door het Edit pictogram naast de naam van activa te klikken wordt getoond die.
 
-![&#x200B; Browser van Assets het apparaat van de Desktop &#x200B;](do-not-localize/screen_shot_2018-03-22at142448.png)
+![ Browser van Assets het apparaat van de Desktop ](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Inhoudsstructuur {#content-tree}
 
@@ -175,11 +175,11 @@ De **Boom van de Inhoud** geeft een overzicht van alle componenten op de pagina 
 
 De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met componenten en elementen). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
-![&#x200B; de boom van de Inhoud &#x200B;](do-not-localize/screen_shot_2018-03-22at142042.png)
+![ de boom van de Inhoud ](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Wanneer u het zijpaneel opent, schuift het open (van de linkerkant). Selecteer indien nodig het **lusje van de Boom van de Inhoud**. Wanneer geopend kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Op een complexe pagina is het bovendien gemakkelijker om tussen componenten van de pagina te schakelen.
 
-![&#x200B; haven-11 &#x200B;](assets/ateat-11.png)
+![ haven-11 ](assets/ateat-11.png)
 
 Een pagina kan eenvoudig uit veel van hetzelfde type componenten bestaan, zodat in de structuur van de inhoud (component) beschrijvende tekst (grijs) wordt weergegeven achter de naam van het componenttype (in zwart). De beschrijvende tekst is afkomstig uit gemeenschappelijke eigenschappen van de component, zoals titel of tekst.
 
@@ -187,7 +187,7 @@ Componenttypen worden weergegeven in de taal van de gebruiker, terwijl de tekst 
 
 Als u klikt op het chevron naast een component, wordt dat niveau samengevouwen of uitgebreid.
 
-![&#x200B; screen_shot_2018-03-22at142559 &#x200B;](assets/screen_shot_2018-03-22at142559.png)
+![ screen_shot_2018-03-22at142559 ](assets/screen_shot_2018-03-22at142559.png)
 
 >[!NOTE]
 >
@@ -199,21 +199,21 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-  ![&#x200B; haven-12 &#x200B;](assets/ateat-12.png)
+  ![ haven-12 ](assets/ateat-12.png)
 
   Als de component waarop u klikt bewerkbaar is, wordt er rechts van de naam een moersleutelpictogram weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken geopend voor de component.
 
-  ![&#x200B; het pictogram van de Sleutel - geeft &#x200B;](do-not-localize/screen_shot_2018-03-22at142725.png) uit
+  ![ het pictogram van de Sleutel - geeft ](do-not-localize/screen_shot_2018-03-22at142725.png) uit
 
-* Of een pagina die deel van a [&#x200B; livecopy &#x200B;](/help/sites-administering/msm.md) uitmaakt, waar de componenten van een andere pagina worden geërft; bijvoorbeeld:
+* Of een pagina die deel van a [ livecopy ](/help/sites-administering/msm.md) uitmaakt, waar de componenten van een andere pagina worden geërft; bijvoorbeeld:
 
   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-  ![&#x200B; haven-13 &#x200B;](assets/ateat-13.png)
+  ![ haven-13 ](assets/ateat-13.png)
 
 ## Fragmenten - gekoppelde inhoudsbrowser {#fragments-associated-content-browser}
 
-Als uw pagina de Fragmenten van de Inhoud bevat, dan hebt u toegang tot [&#x200B; browser voor Verwante Inhoud &#x200B;](/help/sites-authoring/content-fragments.md#using-associated-content).
+Als uw pagina de Fragmenten van de Inhoud bevat, dan hebt u toegang tot [ browser voor Verwante Inhoud ](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Verwijzingen {#references}
 
@@ -229,11 +229,11 @@ Als uw pagina de Fragmenten van de Inhoud bevat, dan hebt u toegang tot [&#x200B
 
 Open de vereiste console, dan navigeer aan het vereiste middel en open **Verwijzingen** gebruikend:
 
-![&#x200B; screen_shot_2018-03-22at153653 &#x200B;](assets/screen_shot_2018-03-22at153653.png)
+![ screen_shot_2018-03-22at153653 ](assets/screen_shot_2018-03-22at153653.png)
 
-[&#x200B; Uitgezocht uw vereist middel &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) toont een lijst van verwijzingstypes relevant voor dat middel:
+[ Uitgezocht uw vereist middel ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) toont een lijst van verwijzingstypes relevant voor dat middel:
 
-![&#x200B; haven-22 &#x200B;](assets/ateat-22.png)
+![ haven-22 ](assets/ateat-22.png)
 
 Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties zijn aanvullende acties beschikbaar wanneer u een specifieke verwijzing selecteert, zoals:
 
@@ -243,50 +243,50 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 
 * Instanties van geleende en geleende inhoud gebruikend de **component van de Verwijzing**, van hier kunt u aan het van verwijzingen voorzien/van verwijzingen voorzien pagina navigeren
 
-* [&#x200B; Verwijzingen naar de pagina&#39;s van het Product &#x200B;](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (beschikbaar bij de console Commerce-Producten)
-* [&#x200B; Lanceringen &#x200B;](/help/sites-authoring/launches.md) verleent toegang tot verwante lanceringen.
-* [&#x200B; Levende Exemplaren &#x200B;](/help/sites-administering/msm.md) toont de wegen van alle levende exemplaren die op het geselecteerde middel gebaseerd zijn.
-* [&#x200B; Vervaging &#x200B;](/help/sites-administering/msm-best-practices.md) verstrekt details en diverse acties.
-* [&#x200B; de Exemplaren van Talen &#x200B;](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) verstrekt details en diverse acties.
+* [ Verwijzingen naar de pagina&#39;s van het Product ](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (beschikbaar bij de console Commerce-Producten)
+* [ Lanceringen ](/help/sites-authoring/launches.md) verleent toegang tot verwante lanceringen.
+* [ Levende Exemplaren ](/help/sites-administering/msm.md) toont de wegen van alle levende exemplaren die op het geselecteerde middel gebaseerd zijn.
+* [ Vervaging ](/help/sites-administering/msm-best-practices.md) verstrekt details en diverse acties.
+* [ de Exemplaren van Talen ](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) verstrekt details en diverse acties.
 
 U kunt bijvoorbeeld een verbroken verwijzing herstellen in een component Reference:
 
-![&#x200B; haven-14 &#x200B;](assets/ateat-14.png)
+![ haven-14 ](assets/ateat-14.png)
 
 ## Gebeurtenissen - tijdlijn {#events-timeline}
 
-Voor aangewezen middelen (bijvoorbeeld, kunnen de pagina&#39;s van de **console van Plaatsen**, of activa van de **Assets** console) de [&#x200B; chronologie worden gebruikt om de recente activiteit op om het even welke geselecteerde punten &#x200B;](/help/sites-authoring/basic-handling.md#timeline) te tonen.
+Voor aangewezen middelen (bijvoorbeeld, kunnen de pagina&#39;s van de **console van Plaatsen**, of activa van de **Assets** console) de [ chronologie worden gebruikt om de recente activiteit op om het even welke geselecteerde punten ](/help/sites-authoring/basic-handling.md#timeline) te tonen.
 
 Open de vereiste console, dan navigeer aan het vereiste middel en open **Chronologie**, gebruikend:
 
-![&#x200B; haven-15 &#x200B;](assets/ateat-15.png)
+![ haven-15 ](assets/ateat-15.png)
 
-[&#x200B; selecteer uw vereist middel &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), dan of **toon Alle** of **Activiteiten** om van om het even welke recente acties op de geselecteerde middelen een lijst te maken:
+[ selecteer uw vereist middel ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), dan of **toon Alle** of **Activiteiten** om van om het even welke recente acties op de geselecteerde middelen een lijst te maken:
 
-![&#x200B; haven-16 &#x200B;](assets/ateat-16.png)
+![ haven-16 ](assets/ateat-16.png)
 
 ## Pagina-informatie {#page-information}
 
 Met de knop Pagina-informatie (egalisatiepictogram) opent u een menu dat ook informatie bevat over de laatste bewerking en de laatste publicatie. Afhankelijk van de kenmerken van de pagina, de site en uw exemplaar, zijn mogelijk meer of minder opties beschikbaar:
 
-![&#x200B; haven-17 &#x200B;](assets/ateat-17.png)
+![ haven-17 ](assets/ateat-17.png)
 
 * [Eigenschappen openen](/help/sites-authoring/editing-page-properties.md)
 * [Uitrolpagina](/help/sites-administering/msm.md#msm-from-the-ui)
 * [Workflow starten](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
 * [Pagina vergrendelen](/help/sites-authoring/editing-content.md#locking-a-page)
-* [Publish-pagina](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
+* [Pagina publiceren](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Publicatie van pagina ongedaan maken](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
-* [&#x200B; geeft Malplaatje &#x200B;](/help/sites-authoring/templates.md) uit; wanneer de pagina op een [&#x200B; editable malplaatje &#x200B;](/help/sites-authoring/templates.md#editable-and-static-templates) wordt gebaseerd
+* [ geeft Malplaatje ](/help/sites-authoring/templates.md) uit; wanneer de pagina op een [ editable malplaatje ](/help/sites-authoring/templates.md#editable-and-static-templates) wordt gebaseerd
 
 * [Weergeven als gepubliceerd](/help/sites-authoring/editing-content.md#view-as-published)
-* Mening in Admin; opent de pagina in de [&#x200B; console van plaatsen &#x200B;](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Mening in Admin; opent de pagina in de [ console van plaatsen ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Bijvoorbeeld, wanneer aangewezen, **de Informatie van de Pagina** heeft ook de opties:
 
-* [&#x200B; bevorderen Lanceer &#x200B;](/help/sites-authoring/launches-promoting.md) als de pagina een lancering is
-* [&#x200B; Open in Klassieke UI &#x200B;](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) als deze optie [&#x200B; door een beheerder &#x200B;](/help/sites-administering/enable-classic-ui-editor.md) werd toegelaten
+* [ bevorderen Lanceer ](/help/sites-authoring/launches-promoting.md) als de pagina een lancering is
+* [ Open in Klassieke UI ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) als deze optie [ door een beheerder ](/help/sites-administering/enable-classic-ui-editor.md) werd toegelaten
 
 Bovendien **de Informatie van de Pagina** kan toegang tot analyses en aanbevelingen, wanneer aangewezen verlenen.
 
@@ -294,58 +294,58 @@ Bovendien **de Informatie van de Pagina** kan toegang tot analyses en aanbevelin
 
 Er zijn verschillende modi voor het bewerken van een pagina die verschillende handelingen mogelijk maken:
 
-* [&#x200B; geeft &#x200B;](/help/sites-authoring/editing-content.md) uit - gebruik deze wijze wanneer het uitgeven van de paginainhoud uit.
-* [&#x200B; Lay-out &#x200B;](/help/sites-authoring/responsive-layout.md) - laat u uw ontvankelijke lay-out afhankelijk van het apparaat tot stand brengen en uitgeven (als de pagina op een lay-outcontainer gebaseerd is)
+* [ geeft ](/help/sites-authoring/editing-content.md) uit - gebruik deze wijze wanneer het uitgeven van de paginainhoud uit.
+* [ Lay-out ](/help/sites-authoring/responsive-layout.md) - laat u uw ontvankelijke lay-out afhankelijk van het apparaat tot stand brengen en uitgeven (als de pagina op een lay-outcontainer gebaseerd is)
 
-* [&#x200B; het Schrappen &#x200B;](/help/sites-authoring/scaffolding.md) - hulp u om een grote reeks pagina&#39;s tot stand te brengen die structuur delen maar verschillende inhoud hebben.
-* [&#x200B; Ontwikkelaar &#x200B;](/help/sites-developing/developer-mode.md) - laat u diverse acties uitvoeren (vereist voorrechten). Deze omvatten het inspecteren van de technische details van een pagina en de onderdelen ervan.
+* [ het Schrappen ](/help/sites-authoring/scaffolding.md) - hulp u om een grote reeks pagina&#39;s tot stand te brengen die structuur delen maar verschillende inhoud hebben.
+* [ Ontwikkelaar ](/help/sites-developing/developer-mode.md) - laat u diverse acties uitvoeren (vereist voorrechten). Deze omvatten het inspecteren van de technische details van een pagina en de onderdelen ervan.
 
-* [&#x200B; Ontwerp &#x200B;](/help/sites-authoring/default-components-designmode.md) - laat u componenten voor gebruik op een pagina toelaten/onbruikbaar maken en het ontwerp van de component vormen (als de pagina op a [&#x200B; statische malplaatje &#x200B;](/help/sites-authoring/templates.md#editable-and-static-templates) wordt gebaseerd).
+* [ Ontwerp ](/help/sites-authoring/default-components-designmode.md) - laat u componenten voor gebruik op een pagina toelaten/onbruikbaar maken en het ontwerp van de component vormen (als de pagina op a [ statische malplaatje ](/help/sites-authoring/templates.md#editable-and-static-templates) wordt gebaseerd).
 
-* [&#x200B; het richten &#x200B;](/help/sites-authoring/content-targeting-touch.md) - vergroot inhoudsrelevantie door zich te richten en over alle kanalen te meten.
-* [&#x200B; Activity Map &#x200B;](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - toont de gegevens van Analytics voor de pagina.
+* [ het richten ](/help/sites-authoring/content-targeting-touch.md) - vergroot inhoudsrelevantie door zich te richten en over alle kanalen te meten.
+* [ Activity Map ](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - toont de gegevens van Analytics voor de pagina.
 
-* [&#x200B; Timewarp &#x200B;](/help/sites-authoring/working-with-page-versions.md#timewarp) - laat u een paginastaat op een bepaald punt in tijd bekijken.
-* [&#x200B; Levende Status van het Exemplaar &#x200B;](/help/sites-authoring/editing-content.md#live-copy-status) - staat een snel overzicht van de levende exemplaarstatus toe en welke componenten niet worden/worden geërft.
-* [&#x200B; Voorproef &#x200B;](/help/sites-authoring/editing-content.md#previewing-pages) - wordt gebruikt om de pagina te bekijken aangezien het op publiceert milieu wordt getoond; of het navigeren gebruikend verbindingen in de inhoud.
+* [ Timewarp ](/help/sites-authoring/working-with-page-versions.md#timewarp) - laat u een paginastaat op een bepaald punt in tijd bekijken.
+* [ Levende Status van het Exemplaar ](/help/sites-authoring/editing-content.md#live-copy-status) - staat een snel overzicht van de levende exemplaarstatus toe en welke componenten niet worden/worden geërft.
+* [ Voorproef ](/help/sites-authoring/editing-content.md#previewing-pages) - wordt gebruikt om de pagina te bekijken aangezien het op publiceert milieu wordt getoond; of het navigeren gebruikend verbindingen in de inhoud.
 
-* [&#x200B; annoteert &#x200B;](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of te bekijken.
+* [ annoteert ](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of te bekijken.
 
 U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het daadwerkelijke pictogram verandert om op de wijze te wijzen u momenteel gebruikt:
 
-![&#x200B; haven-18 &#x200B;](assets/ateat-18.png)
+![ haven-18 ](assets/ateat-18.png)
 
 >[!NOTE]
 >
 >* Afhankelijk van de kenmerken van de pagina zijn bepaalde modi mogelijk niet beschikbaar.
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
->* Er is a [&#x200B; toetsenbordkortere weg &#x200B;](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om tussen **Voorproef** en momenteel geselecteerde wijze (bijvoorbeeld, **uitgeven**, en **Lay-out**) van een knevel te voorzien.
+>* Er is a [ toetsenbordkortere weg ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om tussen **Voorproef** en momenteel geselecteerde wijze (bijvoorbeeld, **uitgeven**, en **Lay-out**) van een knevel te voorzien.
 >
 
 ## Padselectie {#path-selection}
 
-Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een weg gemakkelijk te selecteren, [&#x200B; weggebieden &#x200B;](/help/sites-authoring/author-environment-tools.md#path-fields) aanbieden auto-volledig en [&#x200B; wegbrowser &#x200B;](/help/sites-authoring/author-environment-tools.md#path-browser) staat voor robuustere selectie toe.
+Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een weg gemakkelijk te selecteren, [ weggebieden ](/help/sites-authoring/author-environment-tools.md#path-fields) aanbieden auto-volledig en [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) staat voor robuustere selectie toe.
 
 ### Padvelden {#path-fields}
 
-Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten, zie [&#x200B; Componenten voor de Authoring van de Pagina &#x200B;](/help/sites-authoring/default-components.md).
+Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Voor meer informatie over het gebruiken van en het uitgeven van componenten, zie [ Componenten voor de Authoring van de Pagina ](/help/sites-authoring/default-components.md).
 
 Padvelden beschikken nu over de functionaliteit voor automatisch aanvullen en vooruitkijken, zodat u een resource gemakkelijker kunt vinden.
 
-Het klikken van de **Open Dialoog van de Selectie** knoop op het weggebied opent [&#x200B; wegbrowser &#x200B;](/help/sites-authoring/author-environment-tools.md#path-browser) dialoog om voor meer gedetailleerde selectieopties toe te staan.
+Het klikken van de **Open Dialoog van de Selectie** knoop op het weggebied opent [ wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) dialoog om voor meer gedetailleerde selectieopties toe te staan.
 
-![&#x200B; Open de Dialoog van de Selectie &#x200B;](do-not-localize/screen_shot_2018-03-22at154427.png)
+![ Open de Dialoog van de Selectie ](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-U kunt ook in het veld Pad typen en AEM biedt overeenkomende paden terwijl u typt.
+U kunt ook in het veld Pad typen en AEM biedt tijdens het typen overeenkomende paden.
 
-![&#x200B; haven-19 &#x200B;](assets/ateat-19.png)
+![ haven-19 ](assets/ateat-19.png)
 
 ### Padbrowser {#path-browser}
 
-De wegbrowser wordt georganiseerd als de [&#x200B; kolommening &#x200B;](/help/sites-authoring/basic-handling.md#column-view) van de plaatsenconsole, die voor meer gedetailleerde selectie van middelen toestaat.
+De wegbrowser wordt georganiseerd als de [ kolommening ](/help/sites-authoring/basic-handling.md#column-view) van de plaatsenconsole, die voor meer gedetailleerde selectie van middelen toestaat.
 
-![&#x200B; screen_shot_2018-03-22at154521 &#x200B;](assets/screen_shot_2018-03-22at154521.png)
+![ screen_shot_2018-03-22at154521 ](assets/screen_shot_2018-03-22at154521.png)
 
 * Zodra een middel wordt geselecteerd, wordt de **Uitgezochte** knoop bij het hoger-recht van de dialoog actief. Klik om de selectie te bevestigen of **annuleert** om te aborteren.
 * Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik **X** naast het aantal om allen te schrappen.
@@ -353,8 +353,8 @@ De wegbrowser wordt georganiseerd als de [&#x200B; kolommening &#x200B;](/help/s
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik **X** op het onderzoeksgebied om het onderzoek te ontruimen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
-  ![&#x200B; haven-21 &#x200B;](assets/ateat-21.png)
+  ![ haven-21 ](assets/ateat-21.png)
 
 ## Sneltoetsen {#keyboard-shortcuts}
 
-Diverse [&#x200B; toetsenbordkortere weg &#x200B;](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) is beschikbaar.
+Diverse [ toetsenbordkortere weg ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) is beschikbaar.

@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -27,16 +27,16 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!TIP]
 >
->Zie [&#x200B; het Ontwikkelen en Afschuiving van de Pagina &#x200B;](/help/sites-developing/pagediff.md#operation-details) voor meer technische details op deze eigenschap.
+>Zie [ het Ontwikkelen en Afschuiving van de Pagina ](/help/sites-developing/pagediff.md#operation-details) voor meer technische details op deze eigenschap.
 
 ## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [&#x200B; Versies &#x200B;](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met zijn huidige staat
-* [&#x200B; Levende Exemplaren &#x200B;](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Levend Exemplaar met zijn Vervaging
-* [&#x200B; Lanceringen &#x200B;](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lanceer met zijn Source
-* [&#x200B; Kopieën van de Taal &#x200B;](/help/sites-administering/tc-manage.md#comparing-language-copies) - een pagina vóór en na (re-)vertaling
+* [ Versies ](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met zijn huidige staat
+* [ Levende Exemplaren ](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Levend Exemplaar met zijn Vervaging
+* [ Lanceringen ](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lanceer met zijn Source
+* [ Kopieën van de Taal ](/help/sites-administering/tc-manage.md#comparing-language-copies) - een pagina vóór en na (re-)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
@@ -51,16 +51,16 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![&#x200B; Source die in kopbal &#x200B;](assets/chlimage_1-109.png) wordt getoond
+![ Source die in kopbal ](assets/chlimage_1-109.png) wordt getoond
 
-Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
+De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
 **de Veranderingen van de Component**
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**de Veranderingen van de HTML**
+**de Veranderingen van HTML**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -73,15 +73,15 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om dit naar het volledige browservenster te vergroten.
 
-![&#x200B; het Volledige pictogram van de het schermwijze &#x200B;](do-not-localize/chlimage_1-18.png)
+![ het Volledige pictogram van de het schermwijze ](do-not-localize/chlimage_1-18.png)
 
 De geselecteerde zijde vult het gehele venster, maar de balk blijft boven aan de pagina zodat u tussen de twee pagina&#39;s kunt schakelen.
 
-![&#x200B; Bar bij bovenkant laat u tussen pagina&#39;s &#x200B;](assets/chlimage_1-110.png) schakelen
+![ Bar bij bovenkant laat u tussen pagina&#39;s ](assets/chlimage_1-110.png) schakelen
 
 U kunt de volledige schermweergave ook sluiten door op het pictogram Volledig scherm afsluiten te klikken.
 
-![&#x200B; dicht volledig scherm &#x200B;](do-not-localize/chlimage_1-19.png)
+![ dicht volledig scherm ](do-not-localize/chlimage_1-19.png)
 
 U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op de knop Sluiten in de koptekst te klikken.
 
@@ -93,7 +93,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen met afschuiving ervaart, controleer de [&#x200B; Chronologie &#x200B;](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   * Als u problemen met afschuiving ervaart, controleer de [ Chronologie ](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
 
 >[!NOTE]
 >
@@ -101,4 +101,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie de [&#x200B; documentatie van de ontwikkelaar &#x200B;](/help/sites-developing/pagediff.md) van deze eigenschap.
+>Voor meer details over de verrichting van het mechanisme en de beperkingen van de paginascheiding die paginascheiding kunnen beïnvloeden, zie de [ documentatie van de ontwikkelaar ](/help/sites-developing/pagediff.md) van deze eigenschap.

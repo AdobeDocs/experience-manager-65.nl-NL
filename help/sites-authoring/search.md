@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 5%
@@ -23,7 +23,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 >[!NOTE]
 >
->Buiten het auteursmilieu zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de [&#x200B; Bouwer van de Vraag &#x200B;](/help/sites-developing/querybuilder-api.md) en [&#x200B; CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md).
+>Buiten het auteursmilieu zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de [ Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) en [ CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Basisinformatie zoeken {#search-basics}
 
@@ -35,7 +35,7 @@ Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag.
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
-* Bepaal en gebruik a [&#x200B; bewaarde onderzoek &#x200B;](#saved-searches) - gebaseerd op de bovengenoemde criteria.
+* Bepaal en gebruik a [ bewaarde onderzoek ](#saved-searches) - gebaseerd op de bovengenoemde criteria.
 
 >[!NOTE]
 >
@@ -47,22 +47,22 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
 1. Open **Onderzoek** (met het vergrootglas in de toolbar) en ga uw onderzoekstermijn in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
 
-   ![&#x200B; s-01 &#x200B;](assets/s-01.png)
+   ![ s-01 ](assets/s-01.png)
 
    Door gebrek zullen de onderzoeksresultaten tot uw huidige plaats (namelijk console en verwante middeltype) worden beperkt:
 
-   ![&#x200B; screen_shot_2018-03-23at101445 &#x200B;](assets/screen_shot_2018-03-23at101445.png)
+   ![ screen_shot_2018-03-23at101445 ](assets/screen_shot_2018-03-23at101445.png)
 
 1. Indien nodig, kunt u de plaatsfilter (uitgezochte **X** op de filter verwijderen u) over alle consoles/middeltypes zoeken.
 1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
    U kunt of een specifiek middel (voor verdere actie) selecteren, of neer boren door het vereiste middeltype te selecteren; bijvoorbeeld, **Mening Alle Plaatsen**:
 
-   ![&#x200B; scherm-shot_2019-03-05at101900 &#x200B;](assets/screen-shot_2019-03-05at101900.png)
+   ![ scherm-shot_2019-03-05at101900 ](assets/screen-shot_2019-03-05at101900.png)
 
 1. Als u verder naar beneden wilt boren, selecteer het symbool van het Spoorstaaf (linksboven) om het zijpaneel **Filters &amp; Opties** te openen.
 
-   ![&#x200B; Filters &amp; Opties &#x200B;](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![ Filters &amp; Opties ](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
@@ -71,7 +71,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Opgeslagen zoekopdrachten
    * Zoekdirectory
    * Tags
-   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish-status, LiveCopy-status.
+   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publicatiestatus en LiveCopy-status.
 
    >[!NOTE]
    >
@@ -80,15 +80,15 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >
    >
    >    * Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Assets en Communities begrijpelijk gespecialiseerd.
-   >    * Uw instantie als [&#x200B; Onderzoek Forms &#x200B;](/help/sites-administering/search-forms.md) kan worden aangepast (aangewezen aan de plaats binnen AEM).
+   >    * Uw instantie als [ Onderzoek Forms ](/help/sites-administering/search-forms.md) kan worden aangepast (aangewezen aan de plaats binnen AEM).
    >
    >
 
-   ![&#x200B; scherm-shot_2019-03-05at102509 &#x200B;](assets/screen-shot_2019-03-05at102509.png)
+   ![ scherm-shot_2019-03-05at102509 ](assets/screen-shot_2019-03-05at102509.png)
 
 1. U kunt ook extra zoektermen toevoegen:
 
-   ![&#x200B; scherm-shot_2019-03-05at102613 &#x200B;](assets/screen-shot_2019-03-05at102613.png)
+   ![ scherm-shot_2019-03-05at102613 ](assets/screen-shot_2019-03-05at102613.png)
 
 1. Sluit **Zoeken** met de **X** (rechtsboven).
 
@@ -104,15 +104,15 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 1. Bepaal uw onderzoekscriteria en selecteer **sparen**.
 
-   ![&#x200B; scherm-shot_2019-03-05at102613-1 &#x200B;](assets/screen-shot_2019-03-05at102613-1.png)
+   ![ scherm-shot_2019-03-05at102613-1 ](assets/screen-shot_2019-03-05at102613-1.png)
 
 1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
 
-   ![&#x200B; scherm-shot_2019-03-05at102725 &#x200B;](assets/screen-shot_2019-03-05at102725.png)
+   ![ scherm-shot_2019-03-05at102725 ](assets/screen-shot_2019-03-05at102725.png)
 
 1. De volgende keer dat u het deelvenster Zoeken opent, kunt u de opgeslagen zoekopdracht vanuit de kiezer openen:
 
-   ![&#x200B; scherm-shot_2019-03-05at102927 &#x200B;](assets/screen-shot_2019-03-05at102927.png)
+   ![ scherm-shot_2019-03-05at102927 ](assets/screen-shot_2019-03-05at102927.png)
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
@@ -121,4 +121,4 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
-![&#x200B; scherm-shot_2019-03-05at103010 &#x200B;](assets/screen-shot_2019-03-05at103010.png)
+![ scherm-shot_2019-03-05at103010 ](assets/screen-shot_2019-03-05at103010.png)

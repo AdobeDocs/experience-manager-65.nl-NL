@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Werken met workflows{#working-with-workflows}
 
-Met AEM workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op (een of meer) pagina&#39;s en/of elementen.
+Met AEM Workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op (een of meer) pagina&#39;s en/of elementen.
 
 Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
 

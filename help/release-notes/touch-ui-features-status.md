@@ -4,8 +4,8 @@ description: Nota's van de versie specifiek voor  [!DNL Adobe Experience Manager
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Status van TouchUI-functie {#touch-ui-feature-status}
 
-Adobe Experience Manager (AEM) 6.4 vanaf [&#x200B; Klassieke UI wordt afgekeurd &#x200B;](../release-notes/deprecated-removed-features.md). Adobe maakt geen verdere verbeteringen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies in de interface met aanraakbediening te gebruiken.
+Adobe Experience Manager (AEM) 6.4 vanaf [ Klassieke UI wordt afgekeurd ](../release-notes/deprecated-removed-features.md). Adobe maakt geen verdere verbeteringen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies in de interface met aanraakbediening te gebruiken.
 
 Vanaf versie 6.0 introduceerde AEM een nieuwe gebruikersinterface die de &#39;touch-interface&#39; (de zogenaamde &#39;touch-interface&#39;) wordt genoemd en die is uitgelijnd op de [!DNL Adobe Experience Cloud] en de algemene Adobe-richtlijnen voor de gebruikersinterface. Met bijna eigenschappariteit bereikt, is dit de standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI&quot;wordt bedoeld.
 
@@ -46,7 +46,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder (`/siteadmi
 
 | Functie | Status | Opmerking |
 |--- |--- |--- |
-| Navigeren door sitehiërarchie | Voltooid | AEM 6.4 introduceerde de mening van de a [&#x200B; inhoudsboom &#x200B;](/help/sites-authoring/basic-handling.md#content-tree). |
+| Navigeren door sitehiërarchie | Voltooid | AEM 6.4 introduceerde de mening van de a [ inhoudsboom ](/help/sites-authoring/basic-handling.md#content-tree). |
 | Workflow starten | Voltooid |  |
 | Nieuwe pagina maken | Voltooid |  |
 | Nieuwe site maken | Voltooid |  |
@@ -105,18 +105,18 @@ Dit is een lijst van mogelijkheden de klassieke Redacteur van de Pagina UI (`/cf
 | Pagina vergrendelen/ontgrendelen | Voltooid |  |
 | Pagina publiceren | Voltooid |  |
 | Publicatie van pagina ongedaan maken | Voltooid |  |
-| Pagina kopiëren | Verwijderd | Admin van de Plaats van het gebruik aan [&#x200B; exemplaarpagina&#39;s &#x200B;](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
-| Pagina verplaatsen | Verwijderd | Plaats Admin van het gebruik aan [&#x200B; bewegingspagina&#39;s &#x200B;](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
-| Pagina verwijderen | Verwijderd | Het Admin van de Plaats van het gebruik aan [&#x200B; schrapt pagina&#39;s &#x200B;](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Referenties tonen | Verwijderd | Gebruik Plaats Admin om de [&#x200B; gedetailleerde verwijzingslijst &#x200B;](/help/sites-authoring/author-environment-tools.md#references) te zien. |
-| Controlelogboek | Verwijderd | Admin van de Plaats van het gebruik en [&#x200B; open activiteitenspoor &#x200B;](/help/sites-authoring/author-environment-tools.md#events-timeline). |
-| Versie maken | Verwijderd | De Admin van de Plaats van het gebruik om [&#x200B; nieuwe versies &#x200B;](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) tot stand te brengen. |
-| Versie herstellen | Verwijderd | Het gebruik Admin van de Plaats aan [&#x200B; herstelt versies &#x200B;](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| Starten wisselen | Verwijderd | De Admin van de Plaats van het gebruik aan [&#x200B; schakelaar tussen lanceringen &#x200B;](/help/sites-authoring/launches-promoting.md). |
-| Pagina vertalen | Verwijderd | Admin van de Plaats van het gebruik aan [&#x200B; voegt pagina aan vertaalprojecten &#x200B;](/help/sites-administering/tc-manage.md) toe. |
+| Pagina kopiëren | Verwijderd | Admin van de Plaats van het gebruik aan [ exemplaarpagina&#39;s ](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
+| Pagina verplaatsen | Verwijderd | Plaats Admin van het gebruik aan [ bewegingspagina&#39;s ](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
+| Pagina verwijderen | Verwijderd | Het Admin van de Plaats van het gebruik aan [ schrapt pagina&#39;s ](/help/sites-authoring/managing-pages.md#deleting-a-page). |
+| Referenties tonen | Verwijderd | Gebruik Plaats Admin om de [ gedetailleerde verwijzingslijst ](/help/sites-authoring/author-environment-tools.md#references) te zien. |
+| Controlelogboek | Verwijderd | Admin van de Plaats van het gebruik en [ open activiteitenspoor ](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| Versie maken | Verwijderd | De Admin van de Plaats van het gebruik om [ nieuwe versies ](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) tot stand te brengen. |
+| Versie herstellen | Verwijderd | Het gebruik Admin van de Plaats aan [ herstelt versies ](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
+| Starten wisselen | Verwijderd | De Admin van de Plaats van het gebruik aan [ schakelaar tussen lanceringen ](/help/sites-authoring/launches-promoting.md). |
+| Pagina vertalen | Verwijderd | Admin van de Plaats van het gebruik aan [ voegt pagina aan vertaalprojecten ](/help/sites-administering/tc-manage.md) toe. |
 | Tijdlijn verdraaien (kies de datum/tijd en blader door de site zoals deze vervolgens werd weergegeven) | Voltooid |  |
 | Machtigingen instellen | Voltooid |  |
-| Interface voor clientcontext | Vervangen | Gebruik [&#x200B; ContextHub &#x200B;](/help/sites-authoring/ch-previewing.md) UI die door:gaan. |
+| Interface voor clientcontext | Vervangen | Gebruik [ ContextHub ](/help/sites-authoring/ch-previewing.md) UI die door:gaan. |
 | Inhoudszoeker voor de verschillende mediatypen | Voltooid |  |
 | Componentlijst | Voltooid |  |
 | Componenten kopiëren en plakken | Voltooid |  |
@@ -132,7 +132,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
 | Functie | Status | Opmerking |
 |--- |--- |--- |
 | RTF-editor | Voltooid | Geschikt op locatie, in dialoogvenster en op volledig scherm. |
-| RTE-plug-ins in-/uitschakelen | Voltooid | Het kan worden gedaan gebruikend de [&#x200B; Redacteur van het Malplaatje &#x200B;](/help/sites-authoring/templates.md). |
+| RTE-plug-ins in-/uitschakelen | Voltooid | Het kan worden gedaan gebruikend de [ Redacteur van het Malplaatje ](/help/sites-authoring/templates.md). |
 | RTE gebruiken voor normale tekst | Voltooid |  |
 | RTE-plug-in: koppelingen en anker | Voltooid |  |
 | RTE-plug-in: tekentoewijzing | Voltooid |  |
@@ -153,7 +153,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
 | Tabeleditor | Voltooid | Geschikt op locatie, in dialoogvenster en op volledig scherm. |
 | Afbeelding naar tabelcel slepen | Voltooid | In regel bruikbaar |
 | Afbeeldingseditor | Voltooid | Geschikt op locatie, in dialoogvenster en op volledig scherm. |
-| IPE-plug-ins in-/uitschakelen | Voltooid | AEM 6.3 introduceerde een UI in de [&#x200B; Redacteur van het Malplaatje &#x200B;](/help/sites-authoring/templates.md). |
+| IPE-plug-ins in-/uitschakelen | Voltooid | AEM 6.3 introduceerde een UI in de [ Redacteur van het Malplaatje ](/help/sites-authoring/templates.md). |
 | IPE-plug-in: Uitsnijden | Voltooid |  |
 | IPE-plug-in: omdraaien | Voltooid |  |
 | IPE-plug-in: Ongedaan maken/Opnieuw | Voltooid |  |

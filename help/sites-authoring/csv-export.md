@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -52,18 +52,18 @@ ht-degree: 6%
 
 Het resulterende `export.csv` -bestand kan worden geopend in Excel of een andere compatibele toepassing.
 
-![&#x200B; etc-01 &#x200B;](assets/etc-01.png)
+![ etc-01 ](assets/etc-01.png)
 
-Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3&rbrace; console van Plaatsen &lbrace;(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
+Creëer **optie van het Rapport CSV** is beschikbaar wanneer het doorbladeren van de **3} console van Plaatsen {(in de mening van de Lijst): het is een optie van** creeer **drop-down menu:**
 
-![&#x200B; etc-02 &#x200B;](assets/etc-02.png)
+![ etc-02 ](assets/etc-02.png)
 
 Een CSV-export maken:
 
 1. Open de **console van Plaatsen**, navigeer aan de vereiste plaats indien nodig.
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
-   ![&#x200B; etc-03 &#x200B;](assets/etc-03.png)
+   ![ etc-03 ](assets/etc-03.png)
 
 1. Selecteer de eigenschappen die u wilt exporteren.
 1. Selecteer **creeer**.

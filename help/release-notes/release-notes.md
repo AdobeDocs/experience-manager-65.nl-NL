@@ -29,14 +29,14 @@ ht-degree: 0%
 | Versie | 6.5.23.0, hotfix voor GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Datum | 9 september 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL downloaden | [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL downloaden | [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.23.0 {#what-is-included-in-aem-6523}
 
-[!DNL Experience Manager] 6.5.23.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [ installeer dit Pak van de Dienst ](#install) op [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.23.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [&#x200B; installeer dit Pak van de Dienst &#x200B;](#install) op [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
-* [ Toegankelijke Hyperlinks met gemengde tekst die in Statische PDFs ](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf) stileert: De hyperlinks die gemengde tekststijlen in statische PDFs bevatten worden nu geëtiketteerd als één enkel toegankelijk element. Deze verbetering vereenvoudigt de codestructuur, verbetert de navigatie van de schermlezer, en steunt betere toegankelijkheidsnaleving.
+* [&#x200B; Toegankelijke Hyperlinks met gemengde tekst die in Statische PDFs &#x200B;](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf) stileert: De hyperlinks die gemengde tekststijlen in statische PDFs bevatten worden nu geëtiketteerd als één enkel toegankelijk element. Deze verbetering vereenvoudigt de codestructuur, verbetert de navigatie van de schermlezer, en steunt betere toegankelijkheidsnaleving.
 
-* [ Bijgewerkte Gesteunde Matrijs van het Platform ](/help/forms/using/aem-forms-jee-supported-platforms.md)
+* [&#x200B; Bijgewerkte Gesteunde Matrijs van het Platform &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
   De nieuwste versie introduceert updates van de ondersteunde platformmatrix, zodat deze compatibel zijn met nieuwere technologieën.
 
@@ -74,11 +74,11 @@ De belangrijkste functies en verbeteringen in deze release zijn onder andere:
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64-bits) 
 
-* [ Verhard component van de dossiergehechtheid ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
+* [&#x200B; Verhard component van de dossiergehechtheid &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): Als veiligheidsmaatregel, verhindert de component nu voorlegging van dossiers met gewijzigde uitbreidingen die proberen om toegestane dossiertype controles te omzeilen. Dergelijke bestanden worden tijdens de verzending geblokkeerd, zodat alleen geldige bestandstypen worden geaccepteerd.
 
-* FORMS-20533, FORMS-20532: AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u [ kunt downloaden en installeren ](/help/release-notes/aem-forms-hotfix.md) om steun voor de recentste versie van Struts toe te voegen.
+* FORMS-20533, FORMS-20532: AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x. De steun werd toegevoegd via a [&#x200B; Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) dat u [&#x200B; kunt downloaden en installeren &#x200B;](/help/release-notes/aem-forms-hotfix.md) om steun voor de recentste versie van Struts toe te voegen.
 
-* **LC-3922769**: Bepaalde eigenschappen van AEM Forms vereisen nu OpenSSL 3 correct te functioneren. OpenSSL 3 en de bibliotheken `libcrypto.so.3` en `libssl.so.3` moeten op het systeem zijn geïnstalleerd. Aangezien beveiligingsupdates alleen beschikbaar zijn in versie 3.0.14 en hoger en de ondersteuning voor SafeLogic eindigt in februari 2025, is BSAFE verwijderd en wordt OpenSSL 3 nu gebruikt voor beveiligingscompatibiliteit.  Voor platformverenigbaarheid en gedetailleerde vereisten, zie [ Gesteunde Platforms voor AEM Forms op JEE ](/help/forms/using/aem-forms-jee-supported-platforms.md) en [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md).
+* **LC-3922769**: Bepaalde eigenschappen van AEM Forms vereisen nu OpenSSL 3 correct te functioneren. OpenSSL 3 en de bibliotheken `libcrypto.so.3` en `libssl.so.3` moeten op het systeem zijn geïnstalleerd. Aangezien beveiligingsupdates alleen beschikbaar zijn in versie 3.0.14 en hoger en de ondersteuning voor SafeLogic eindigt in februari 2025, is BSAFE verwijderd en wordt OpenSSL 3 nu gebruikt voor beveiligingscompatibiliteit.  Voor platformverenigbaarheid en gedetailleerde vereisten, zie [&#x200B; Gesteunde Platforms voor AEM Forms op JEE &#x200B;](/help/forms/using/aem-forms-jee-supported-platforms.md) en [&#x200B; Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
 
 
   **om OpenSSL 3 installatie te verifiëren:**
@@ -233,11 +233,11 @@ Onverwachte `<br>` -tags corrigeren in de RTF-editor met de Plaintext-plakmodus.
 
 ### [!DNL Assets]{#assets-6523}
 
-* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![ Assets ](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**voor, navigerend aan **[!UICONTROL Search Adobe Stock]**omslag, en het selecteren van een voorraadbeeld:
+* De volgende kwesties komen op [!DNL AEM] op-Premise (6.5.22.0) pagina van de Navigatie na het selecteren van ![&#x200B; Assets &#x200B;](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets]**&#x200B;voor, navigerend aan **[!UICONTROL Search Adobe Stock]**&#x200B;omslag, en het selecteren van een voorraadbeeld:
    * De geselecteerde voorraadafbeelding kan geen licentie krijgen en worden opgeslagen omdat een leeg vervolgkeuzemenu wordt weergegeven wanneer u op **[!UICONTROL License & Save]** klikt.
    * Als u de Stock-afbeelding selecteert of de URL van de voorraadpagina opnieuw invoert, wordt de startpagina van [!DNL AEM] weergegeven, zodat de Adobe Stock-afbeelding niet toegankelijk is. (ASSETS-48687)
 * Problemen tijdens het beheren van mappen als de naam van de map een `/` bevat in de naam op de navigatiepagina [!DNL AEM] Op locatie (6.5.22.0 ). (ASSETS-46740)
-* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![ de mening van de Inzameling ](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
+* Op [!DNL AEM] 6.5, laadt de pagina van elementdetails niet van ![&#x200B; de mening van de Inzameling &#x200B;](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections]**&#x200B;toe te schrijven aan hoog geheugengebruik. (ASSETS-46738)
 * Problemen met integratie met [!DNL InDesign] als `Day CQ DAM Mime Type OSGI` Service identificeren [!DNL InDesign] bestanden onjuist als `x-adobe-indesign` in plaats van `x-indesign` . (ASSETS-45953)
 * [!DNL AEM 6.5.21] -sessilek komt overeen met de workflowstap uit de box **[!UICONTROL Scheduled publish to Brand Portal]** . (ASSETS-44104)
 * **[!UICONTROL Out of Memory (OOM)]** fouten worden in [!DNL AEM] weergegeven bij het verwerken en publiceren van afbeeldingen. Dit probleem is veroorzaakt door vervangen methoden in workflows, zoals **[!DNL Dam Asset update]** en **[!DNL Dynamic Media: Reprocess assets]** . (ASSETS-43343)
@@ -271,7 +271,7 @@ Probleem verholpen met Dynamic Media - hybride implementaties waarbij updates va
 
 **Download Hybride toe:voegen-op pakket**
 
-De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media {** in de Distributie van de Software.
+De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek beschikbaar op de Adobe Software Distribution, met de officiële release van AEM 6.5.23. De gebruikers kunnen het vinden door **AEM 6.5 te zoeken Hybride toe:voegen-on Pakket van Media &lbrace;** in de Distributie van de Software.
 
 
 ### [!DNL Forms]{#forms-6523}
@@ -362,9 +362,9 @@ De invoegtoepassing Hybrid is vanaf donderdag 22 mei 2025 voor het publiek besch
 
 * In AEM Forms 6.5.21.0 treedt de PDFG-conversie als volgt op: (FORMS-16851)(FORMS-14613)
 
-* In AEM Forms 6.5.23.0 is de conversie van PS naar PDF en HTML naar PDF (WebKit) mislukt. Om de kwestie op te lossen, download en installeer Hotfix van [ Hotfixes van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
+* In AEM Forms 6.5.23.0 is de conversie van PS naar PDF en HTML naar PDF (WebKit) mislukt. Om de kwestie op te lossen, download en installeer Hotfix van [&#x200B; Hotfixes van Adobe Experience Manager Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
 
-* In AEM Forms 6.5.23.0 mislukt de conversie van afbeelding naar PDF. Om de kwestie op te lossen, download en installeer Hotfix van [ Hotfixes van Adobe Experience Manager Forms ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-2029)
+* In AEM Forms 6.5.23.0 mislukt de conversie van afbeelding naar PDF. Om de kwestie op te lossen, download en installeer Hotfix van [&#x200B; Hotfixes van Adobe Experience Manager Forms &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-2029)
 
 #### Forms Captcha {#forms-captcha-6523}
 
@@ -494,8 +494,8 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
+* [!DNL Experience Manager] 6.5.23.0 requires [!DNL Experience Manager] 6.5. Zie [&#x200B; verbeteringsdocumentatie &#x200B;](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#x200B; &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.23.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -510,13 +510,13 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 
 1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van de [!DNL Experience Manager] -instantie.
 
-1. Download het Sack van de Dienst van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download het Sack van de Dienst van [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
+1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md).
 
 1. Selecteer het pakket en selecteer vervolgens **[!UICONTROL Install]** .
 
-1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [ de Opslag van Gegevens van Amazon S3 ](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [&#x200B; de Opslag van Gegevens van Amazon S3 &#x200B;](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
 >[!NOTE]
 >
@@ -527,7 +527,7 @@ Oplossing voor een probleem in `EmailNotificationServiceProcessor` waar de metho
 Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Manager] 6.5.23.0 te installeren. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Plaats het pakket in de map `../crx-quickstart/install` wanneer de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
-* Gebruik [ HTTP API van de Manager van het Pakket ](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
+* Gebruik [&#x200B; HTTP API van de Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
 
 >[!NOTE]
 >
@@ -535,7 +535,7 @@ Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Man
 
 **bevestigt de installatie**
 
-Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
+Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
 
 1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks weergegeven `Adobe Experience Manager (6.5.23.0)` onder [!UICONTROL Installed Products] . <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -545,15 +545,15 @@ Om de platforms te kennen die om met deze versie worden verklaard te werken, zie
 
 ### Service Pack installeren voor [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [ de installatieinstructies van het Pak van de Dienst van Experience Manager Forms ](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [&#x200B; de installatieinstructies van het Pak van de Dienst van Experience Manager Forms &#x200B;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
-De klanten die GraphQL gebruiken moeten het [ Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
+De klanten die GraphQL gebruiken moeten het [&#x200B; Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
 
 Zo kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
@@ -565,9 +565,9 @@ Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-
 
 ### UberJar{#uber-jar}
 
-UberJar voor [!DNL Experience Manager] 6.5.23.0 is beschikbaar in de [ Gemaakt Centrale bewaarplaats ](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar voor [!DNL Experience Manager] 6.5.23.0 is beschikbaar in de [&#x200B; Gemaakt Centrale bewaarplaats &#x200B;](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
-Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+Om UberJar in een Geweven project te gebruiken, zie [&#x200B; hoe te om UberJar &#x200B;](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
   <dependency>
@@ -586,16 +586,16 @@ Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/
 
 ## Verouderde en verwijderde functies{#removed-deprecated-features}
 
-Zie [ Vervangen en verwijderde eigenschappen ](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
+Zie [&#x200B; Vervangen en verwijderde eigenschappen &#x200B;](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
 
 ### SPA-editor {#spa-editor}
 
-[ de Redacteur van het KUUROORD ](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.23 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
+[&#x200B; de Redacteur van het KUUROORD &#x200B;](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.23 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
 
 De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 
-* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
-* [ de Redacteur van het Fragment van de Inhoud ](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
+* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
+* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
 
 ## Bekende problemen{#known-issues}
 
@@ -694,7 +694,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6523}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6523}
 
@@ -704,7 +704,7 @@ Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor e
 
 #### Problemen met hotfixes beschikbaar {#aem-forms-issues-with-hotfixes}
 
-Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [ downloaden en Hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
+Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [&#x200B; downloaden en Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
 
 * **FORMS-20203**: Wanneer een gebruiker het kader van Struts van versie 2.5.x aan 6.x bevordert, ontbreekt UI van het Beleid in AEM Forms om alle configuraties, zoals de optie te tonen om een watermerk toe te voegen.
 
@@ -715,7 +715,7 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
 * **FORMS-14521**: Als een gebruiker probeert om een ontwerp brief met opgeslagen gegevens van XML voor te vertonen, wordt het geplakt in `Loading` staat voor sommige specifieke brieven.
 
-* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
+* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Dit levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP23 waren. De steun werd toegevoegd via a [&#x200B; Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
 
 #### Andere bekende problemen {#aem-forms-other-known-issues}
 
@@ -759,18 +759,18 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
 De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten van de Inhoud inbegrepen in deze [!DNL Experience Manager] 6.5 versie van het Service Pack:
 
-* [ Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [ Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [&#x200B; Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [&#x200B; Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.23.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
-* [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
+* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
->* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [&#x200B; Abonneren aan de updates van het de prioritaire product van Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html)

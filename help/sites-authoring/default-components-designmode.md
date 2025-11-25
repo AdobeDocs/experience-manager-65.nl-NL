@@ -16,15 +16,15 @@ ht-degree: 0%
 
 Wanneer een AEM-instantie buiten de box is geïnstalleerd, is er direct een selectie van componenten beschikbaar in de browser van de component.
 
-Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de wijze van het Ontwerp gebruiken om [ toe te laten/onbruikbaar te maken dergelijke componenten ](#enable-disable-components). Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om [ aspecten van het componentenontwerp ](#configuring-the-design-of-a-component) te vormen door de attributenparameters uit te geven.
+Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de wijze van het Ontwerp gebruiken om [&#x200B; toe te laten/onbruikbaar te maken dergelijke componenten &#x200B;](#enable-disable-components). Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om [&#x200B; aspecten van het componentenontwerp &#x200B;](#configuring-the-design-of-a-component) te vormen door de attributenparameters uit te geven.
 
 >[!NOTE]
 >
->Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website. Ze moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden en ervaring, vaak een beheerder of een ontwikkelaar. Zie [ het Ontwikkelen Componenten ](/help/sites-developing/components.md) voor meer informatie.
+>Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website. Ze moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden en ervaring, vaak een beheerder of een ontwikkelaar. Zie [&#x200B; het Ontwikkelen Componenten &#x200B;](/help/sites-developing/components.md) voor meer informatie.
 
 >[!NOTE]
 >
->De ontwerpmodus is alleen beschikbaar voor statische sjablonen. De malplaatjes die met editable malplaatjes worden gecreeerd zouden moeten worden uitgegeven gebruikend de [ malplaatjeredacteur ](/help/sites-authoring/templates.md).
+>De ontwerpmodus is alleen beschikbaar voor statische sjablonen. De malplaatjes die met editable malplaatjes worden gecreeerd zouden moeten worden uitgegeven gebruikend de [&#x200B; malplaatjeredacteur &#x200B;](/help/sites-authoring/templates.md).
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 
 >[!NOTE]
 >
->Zie [ het Ontwikkelen van Componenten ](/help/sites-developing/components.md) en [ Richtlijnen voor het Gebruiken van Malplaatjes en Componenten ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) voor meer informatie over `parsys`.
+>Zie [&#x200B; het Ontwikkelen van Componenten &#x200B;](/help/sites-developing/components.md) en [&#x200B; Richtlijnen voor het Gebruiken van Malplaatjes en Componenten &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) voor meer informatie over `parsys`.
 
 >[!CAUTION]
 >
 >Het bewerken van het ontwerp in de ontwerpmodus, zoals beschreven in dit artikel, is de aanbevolen manier om ontwerpen van statische sjablonen te definiëren
 >
->Het aanpassen van ontwerpen in CRX DE is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag. Zie het ontwikkelaarsdocument [ Malplaatjes van de Pagina - Statisch ](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie.
+>Het aanpassen van ontwerpen in CRX DE is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag. Zie het ontwikkelaarsdocument [&#x200B; Malplaatjes van de Pagina - Statisch &#x200B;](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie.
 
 ## Componenten in-/uitschakelen {#enable-disable-components}
 
@@ -57,27 +57,27 @@ Een component in- of uitschakelen:
 
 1. Selecteer de **wijze van het Ontwerp**.
 
-   ![ screen_shot_2018-03-22at103113 ](assets/screen_shot_2018-03-22at103113.png)
+   ![&#x200B; screen_shot_2018-03-22at103113 &#x200B;](assets/screen_shot_2018-03-22at103113.png)
 
 1. Klik op een component. Wanneer de component is geselecteerd, heeft deze een blauwe rand.
 
-   ![ screen_shot_2018-03-22at103204 ](assets/screen_shot_2018-03-22at103204.png)
+   ![&#x200B; screen_shot_2018-03-22at103204 &#x200B;](assets/screen_shot_2018-03-22at103204.png)
 
 1. Klik het **pictogram van de Ouder**.
 
-   ![ Ouder ](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![&#x200B; Ouder &#x200B;](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Hiermee selecteert u het alineasysteem dat de huidige component bevat.
 
 1. **vormt** pictogram voor het paragraafsysteem wordt getoond in de de actiebar van de ouder.
 
-   ![ vormen ](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![&#x200B; vormen &#x200B;](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Selecteer deze optie om het dialoogvenster weer te geven.
 
 1. In het dialoogvenster kunt u de componenten definiëren die beschikbaar zijn in de componentenbrowser wanneer u de huidige pagina bewerkt.
 
-   ![ screen_shot_2018-03-22at103329 ](assets/screen_shot_2018-03-22at103329.png)
+   ![&#x200B; screen_shot_2018-03-22at103329 &#x200B;](assets/screen_shot_2018-03-22at103329.png)
 
    Het dialoogvenster heeft twee tabbladen:
 
@@ -110,19 +110,19 @@ Een component in- of uitschakelen:
 
 1. Selecteer de **wijze van het Ontwerp**.
 
-   ![ screen_shot_2018-03-22at103113-1 ](assets/screen_shot_2018-03-22at103113-1.png)
+   ![&#x200B; screen_shot_2018-03-22at103113-1 &#x200B;](assets/screen_shot_2018-03-22at103113-1.png)
 
 1. Klik op een component met een blauwe rand. In dit voorbeeld wordt een hoofdafbeeldingscomponent geselecteerd.
 
-   ![ screen_shot_2018-03-22at103434 ](assets/screen_shot_2018-03-22at103434.png)
+   ![&#x200B; screen_shot_2018-03-22at103434 &#x200B;](assets/screen_shot_2018-03-22at103434.png)
 
 1. Gebruik **vormen** pictogram om de dialoog te openen.
 
-   ![ vorm pictogram ](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![&#x200B; vorm pictogram &#x200B;](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    In het ontwerpdialoogvenster kunt u de component configureren op basis van de beschikbare ontwerpparameters.
 
-   ![ screen_shot_2018-03-22at103530 ](assets/screen_shot_2018-03-22at103530.png)
+   ![&#x200B; screen_shot_2018-03-22at103530 &#x200B;](assets/screen_shot_2018-03-22at103530.png)
 
    Het dialoogvenster heeft drie tabbladen:
 
@@ -142,18 +142,18 @@ Een component in- of uitschakelen:
 
    Het **lusje van Stijlen** laat u de CSS klassen en stijlen bepalen die met de component moeten worden gebruikt.
 
-   ![ screen_shot_2018-03-22at103741 ](assets/screen_shot_2018-03-22at103741.png)
+   ![&#x200B; screen_shot_2018-03-22at103741 &#x200B;](assets/screen_shot_2018-03-22at103741.png)
 
    Gebruik **toevoegen** knoop om extra ingangen aan een veelvoudig-ingangs dialooglijst toe te voegen.
 
-   ![ voeg extra ingang ](assets/chlimage_1-94.png) toe
+   ![&#x200B; voeg extra ingang &#x200B;](assets/chlimage_1-94.png) toe
 
    Gebruik het **pictogram van de Schrapping** om een ingang uit een veelvoudig-ingangsdialoog lijst te verwijderen.
 
-   ![ Schrapping ](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![&#x200B; Schrapping &#x200B;](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Gebruik het **pictogram van de Beweging** om de orde van ingangen in een veelvoudig-ingangsdialoog lijst te herschikken.
 
-   ![ Beweging ](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![&#x200B; Beweging &#x200B;](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Klik het **Gereed** pictogram om de dialoog te bewaren en te sluiten.

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In de **console van Projecten**, hebt u toegang tot en beheert uw projecten.
 
-![ de console van Projecten ](assets/projects-console.png)
+![&#x200B; de console van Projecten &#x200B;](assets/projects-console.png)
 
 Gebruikend de console, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of middelverbindingen schrappen.
 
@@ -38,28 +38,28 @@ De gemakkelijkste manier om dit te doen is de **project-gebruikers** groep te ge
 Voer de volgende stappen uit om een project te maken.
 
 1. In de **console van Projecten**, leidt de klik **tot** om **te openen tot de tovenaar van het Project**.
-1. Selecteer een malplaatje en klik **daarna**. U kunt meer over de standaardprojectmalplaatjes [ hier leren.](/help/sites-authoring/projects.md#project-templates)
+1. Selecteer een malplaatje en klik **daarna**. U kunt meer over de standaardprojectmalplaatjes [&#x200B; hier leren.](/help/sites-authoring/projects.md#project-templates)
 
-   ![ creeer de tovenaar van het Project ](assets/create-project-wizard.png)
+   ![&#x200B; creeer de tovenaar van het Project &#x200B;](assets/create-project-wizard.png)
 
 1. Bepaal de **Titel** en **Beschrijving** en voeg het beeld van de a **Duimnagel** indien nodig toe. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren.
 
-   ![ stap van Eigenschappen van tovenaar ](assets/create-project-wizard-properties.png)
+   ![&#x200B; stap van Eigenschappen van tovenaar &#x200B;](assets/create-project-wizard-properties.png)
 
 1. Klik **creëren**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
-De procedure voor het creëren van een project is het zelfde voor alle projectmalplaatjes. Het verschil tussen de types van projecten heeft op beschikbare [ gebruikersrollen ](/help/sites-authoring/projects.md) en [ werkschema&#39;s betrekking.](/help/sites-authoring/projects-with-workflows.md)
+De procedure voor het creëren van een project is het zelfde voor alle projectmalplaatjes. Het verschil tussen de types van projecten heeft op beschikbare [&#x200B; gebruikersrollen &#x200B;](/help/sites-authoring/projects.md) en [&#x200B; werkschema&#39;s betrekking.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Bronnen koppelen aan uw project {#associating-resources-with-your-project}
 
-Met projecten kunt u resources groeperen in één entiteit om deze als geheel te beheren. Daarom moet u middelen aan uw project associëren. Deze middelen worden gegroepeerd binnen het project als **Tegels**. De soorten middelen u kunt toevoegen worden beschreven in [ Tegels van het Project ](/help/sites-authoring/projects.md#project-tiles).
+Met projecten kunt u resources groeperen in één entiteit om deze als geheel te beheren. Daarom moet u middelen aan uw project associëren. Deze middelen worden gegroepeerd binnen het project als **Tegels**. De soorten middelen u kunt toevoegen worden beschreven in [&#x200B; Tegels van het Project &#x200B;](/help/sites-authoring/projects.md#project-tiles).
 
 Om middelen met uw project te associëren:
 
 1. Open uw project van de **Projecten** console.
 1. Klik **toevoegen Tegel** en selecteer de tegel die u aan uw project wilt verbinden. U kunt meerdere typen tegels selecteren.
 
-   ![ voeg tegel ](assets/project-add-tile.png) toe
+   ![&#x200B; voeg tegel &#x200B;](assets/project-add-tile.png) toe
 
 1. Klik **creëren**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
@@ -73,9 +73,9 @@ Items toevoegen aan een tegel:
 
    * De optie is afhankelijk van het type tegel. Bijvoorbeeld, kan het **Taak** voor de **tegel van Taken** of **Werkschema van het Begin** voor de **werkschema&#39;s** tegel zijn.
 
-   ![ Tile chevron ](assets/project-tile-create-task.png)
+   ![&#x200B; Tile chevron &#x200B;](assets/project-tile-create-task.png)
 
-1. Voeg het item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. De tegels van het project worden beschreven [ hier.](/help/sites-authoring/projects.md#project-tiles)
+1. Voeg het item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. De tegels van het project worden beschreven [&#x200B; hier.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Projectinformatie weergeven {#viewing-project-info}
 
@@ -89,28 +89,28 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
 1. Klik op het pictogram met ovalen rechtsonder in de tegel.
 
-   ![ de tegel van Taken ](assets/project-tile-tasks.png)
+   ![&#x200B; de tegel van Taken &#x200B;](assets/project-tile-tasks.png)
 
 1. AEM opent de console voor de types van punten verbonden aan de tegel en filters die op het geselecteerde project worden gebaseerd.
 
-   ![ de taken van het Project ](assets/project-tasks.png)
+   ![&#x200B; de taken van het Project &#x200B;](assets/project-tasks.png)
 
 ### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
 
 De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Voer de volgende stappen uit om de projecttijdlijn weer te geven.
 
 1. In de **console van Projecten**, klik **Chronologie** in de spoorselecteur bij top-left van de console.
-   ![ het Selecteren chronologiewijze ](assets/projects-timeline-rail.png)
+   ![&#x200B; het Selecteren chronologiewijze &#x200B;](assets/projects-timeline-rail.png)
 2. In de console selecteer het project waarvoor u wenst om zijn chronologie te bekijken.
-   ![ de chronologiemening van het Project ](assets/project-timeline-view.png)
+   ![&#x200B; de chronologiemening van het Project &#x200B;](assets/project-timeline-view.png)
 
 Assets wordt in de trein weergegeven. Gebruik de spoorkiezer om terug te keren naar de normale weergave wanneer u klaar bent.
 
 ### Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en [ inactieve projecten van een knevel te voorzien, ](#making-projects-inactive-or-active) in de **console van Projecten**, klik het **** pictogram van de Wisselen Actieve Projecten {in de toolbar.
+Om tussen uw actieve en [&#x200B; inactieve projecten van een knevel te voorzien, &#x200B;](#making-projects-inactive-or-active) in de **console van Projecten**, klik het **&#x200B;**&#x200B;pictogram van de Wisselen Actieve Projecten &lbrace;in de toolbar.
 
-![ Wissel actieve projectenpictogram ](assets/projects-toggle-active.png)
+![&#x200B; Wissel actieve projectenpictogram &#x200B;](assets/projects-toggle-active.png)
 
 Door gebrek toont de console actieve projecten. Klik het **pictogram van de Projecten van de knevel Actieve** eens om aan het bekijken van inactieve projecten over te schakelen. Klik opnieuw het om op actieve projecten terug te schakelen.
 
@@ -124,7 +124,7 @@ U kunt omslagen in de **console van Projecten** tot stand brengen om gelijkaardi
 
 1. In de **Projecten** console klikt **creeer** en dan **creeer Omslag**.
 
-   ![ creeer omslag ](assets/project-create-folder.png)
+   ![&#x200B; creeer omslag &#x200B;](assets/project-create-folder.png)
 
 1. Geef uw omslag een titel en klik **creeer**.
 
@@ -134,15 +134,15 @@ U kunt nu projecten in de map maken. U kunt meerdere mappen maken en ook mappen 
 
 ### Projecten activeren {#making-projects-inactive-or-active}
 
-U kunt een project willen inactief merken als het wordt voltooid maar u wilt nog de informatie over het project houden. [ Inactieve projecten tonen nu ](#viewing-active-inactive-projects) door gebrek in de **Projecten** console.
+U kunt een project willen inactief merken als het wordt voltooid maar u wilt nog de informatie over het project houden. [&#x200B; Inactieve projecten tonen nu &#x200B;](#viewing-active-inactive-projects) door gebrek in de **Projecten** console.
 
 Voer de volgende stappen uit om een project inactief te maken.
 
 1. Open het **venster van de Eigenschappen van het Project** van het project.
    * U kunt dit van de console doen door het project of van binnen het project via de **Info van het Project** tegel te selecteren.
-1. In het **venster van de Eigenschappen van het 0} Project {, verander de** 3} schuif van de Status van het Project {van **Actieve** aan **Inactief**.****
+1. In het **venster van de Eigenschappen van het 0&rbrace; Project {, verander de** 3} schuif van de Status van het Project &lbrace;van **Actieve** aan **Inactief**.**&#x200B;**
 
-   ![ de statusselecteur van het Project in eigenschappen venster ](assets/project-status.png)
+   ![&#x200B; de statusselecteur van het Project in eigenschappen venster &#x200B;](assets/project-status.png)
 
 1. Klik **sparen &amp; Sluiten** om uw veranderingen te bewaren.
 
@@ -158,7 +158,7 @@ Voer de volgende stappen uit om een project te verwijderen.
    * Project Assets-map verwijderen
    * Projectworkflows beëindigen
 
-   ![ Project schrapt opties ](assets/project-delete-options.png)
+   ![&#x200B; Project schrapt opties &#x200B;](assets/project-delete-options.png)
 1. Klik **Schrapping** om het project met de geselecteerde opties te schrappen.
 
-Om meer over groepen te leren die automatisch door projecten worden gecreeerd zie [ Automatische creatie van de Groep ](/help/sites-authoring/projects.md#auto-group-creation) voor details.
+Om meer over groepen te leren die automatisch door projecten worden gecreeerd zie [&#x200B; Automatische creatie van de Groep &#x200B;](/help/sites-authoring/projects.md#auto-group-creation) voor details.

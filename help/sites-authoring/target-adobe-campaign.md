@@ -34,7 +34,7 @@ De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campag
 
 Segmenten maken:
 
-1. Open de [ segmentation console ](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Open de [&#x200B; segmentation console &#x200B;](http://localhost:4502/miscadmin#/etc/segmentation) bij **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
 1. Creeer een pagina en ga een titel in - bijvoorbeeld, **AC Segmenten** - en selecteer het **Segment (Adobe Campaign)** malplaatje.
 1. Selecteer de gemaakte pagina in de structuurweergave aan de linkerkant.
 1. Creeer een segment, bijvoorbeeld, richtend mannelijke gebruikers, door een pagina onder het segment te creëren u genoemd Mannelijk creeerde en het **Segment (Adobe Campaign)** malplaatje selecteert.
@@ -61,7 +61,7 @@ Een campagne maken:
 Zo creëert u ervaringen voor segmenten:
 
 1. Open de **pagina van de Campagne** u creeerde.
-1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3} malplaatje van de Ervaring {.**
+1. Creeer ervaringen voor uw segmenten door **te klikken creëren Pagina** en een titel voor uw pagina in te gaan, bijvoorbeeld, Male aangezien u een ervaring voor het Mannelijke segment creeert, en selecteer het **3&rbrace; malplaatje van de Ervaring &lbrace;.**
 1. Open de pagina voor het maken van ervaring.
 1. Klik **uitgeven**, dan onder Segmenten klikt **Punt** toevoegen.
 1. Ga de weg aan het mannelijke segment, bijvoorbeeld, **/etc/segmentation/ac-segments/man** in en klik **O.K.**. Het volgende bericht zou moeten verschijnen: *de Ervaring wordt gericht op: Mannelijk*

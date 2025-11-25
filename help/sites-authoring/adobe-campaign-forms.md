@@ -38,39 +38,39 @@ Deze formulieren definiëren een URL-parameter die de gecodeerde primaire sleute
 
 Hoewel u deze formulieren onafhankelijk maakt, genereert u doorgaans een gepersonaliseerde koppeling naar een formulierpagina in de nieuwsbrief, zodat ontvangers de koppeling kunnen openen en hun profielgegevens kunnen aanpassen (of ze zich niet abonneren, zich abonneren of hun profiel bijwerken).
 
-Het formulier wordt automatisch bijgewerkt op basis van de gebruiker. Zie [ het Uitgeven van de Inhoud van de Vorm ](#editing-form-content) voor meer informatie.
+Het formulier wordt automatisch bijgewerkt op basis van de gebruiker. Zie [&#x200B; het Uitgeven van de Inhoud van de Vorm &#x200B;](#editing-form-content) voor meer informatie.
 
 ## Een sjabloon beschikbaar maken {#making-a-template-available}
 
 Voordat u formulieren kunt maken die specifiek zijn voor Adobe Campaign, moet u de verschillende sjablonen beschikbaar stellen in uw AEM-toepassing.
 
-Om dit te doen, zie de [ documentatie van Malplaatjes ](/help/sites-developing/templates.md#template-availability).
+Om dit te doen, zie de [&#x200B; documentatie van Malplaatjes &#x200B;](/help/sites-developing/templates.md#template-availability).
 
 ## Een formulier maken {#creating-a-form}
 
-Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanties en Adobe Campaign werkt. Zie [ Integrerend met Adobe Campaign Standard ](/help/sites-administering/campaignstandard.md) of [ Integrerend met Adobe Campaign Classic ](/help/sites-administering/campaignonpremise.md).
+Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanties en Adobe Campaign werkt. Zie [&#x200B; Integrerend met Adobe Campaign Standard &#x200B;](/help/sites-administering/campaignstandard.md) of [&#x200B; Integrerend met Adobe Campaign Classic &#x200B;](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
->Zorg ervoor het **acMapping** bezit op de 2} jcr van de pagina **knoop {aan:content** mapRecipient **of** profiel **wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk wordt geplaatst**
+>Zorg ervoor het **acMapping** bezit op de 2&rbrace; jcr van de pagina **knoop &lbrace;aan:content** mapRecipient **of** profiel **wanneer het gebruiken van Adobe Campaign Classic of Adobe Campaign Standard, respectievelijk wordt geplaatst**
 >
 
 1. Navigeer in AEM in Sites naar de plaats waar u een pagina wilt maken.
 1. Creeer een pagina en selecteer **Profiel van Adobe Campaign Classic** of **Profiel van Adobe Campaign Standard** en klik **daarna**.
 
-   ![ chlimage_1-43 ](assets/chlimage_1-43a.png)
+   ![&#x200B; chlimage_1-43 &#x200B;](assets/chlimage_1-43a.png)
 
    >[!NOTE]
    >
-   >Als het gewenste malplaatje niet beschikbaar is, zie [ Beschikbaarheid van het Malplaatje ](/help/sites-developing/templates.md#template-availability).
+   >Als het gewenste malplaatje niet beschikbaar is, zie [&#x200B; Beschikbaarheid van het Malplaatje &#x200B;](/help/sites-developing/templates.md#template-availability).
 
 1. Op het **gebied van de Naam**, voeg de naam van de pagina toe. Dit moet een geldige JCR-naam zijn.
 1. Op het **gebied van de Titel**, ga een titel in en klik **creeer**.
 1. Open de pagina en selecteer **Open Eigenschappen** en in de Diensten van de Wolk voegen de configuratie van Adobe Campaign toe en selecteren checkmark om uw veranderingen te bewaren.
 
-   ![ chlimage_1-44 ](assets/chlimage_1-44a.png)
+   ![&#x200B; chlimage_1-44 &#x200B;](assets/chlimage_1-44a.png)
 
-1. Op de pagina, in de **component van het Begin van de Vorm**, selecteer het type van vorm het is - **Abonneren, Unsubscribe,** of **sparen Profiel**. U kunt slechts één type per formulier hebben. U kunt [ de inhoud van de vorm ](#editing-form-content) nu uitgeven.
+1. Op de pagina, in de **component van het Begin van de Vorm**, selecteer het type van vorm het is - **Abonneren, Unsubscribe,** of **sparen Profiel**. U kunt slechts één type per formulier hebben. U kunt [&#x200B; de inhoud van de vorm &#x200B;](#editing-form-content) nu uitgeven.
 
 ## Formulierinhoud bewerken {#editing-form-content}
 
@@ -78,17 +78,17 @@ Forms gewijd aan Adobe Campaign heeft specifieke componenten. Deze componenten h
 
 >[!NOTE]
 >
->Als het gewenste malplaatje niet beschikbaar is, zie [ het Maken van een malplaatje beschikbaar.](/help/sites-authoring/campaign.md)
+>Als het gewenste malplaatje niet beschikbaar is, zie [&#x200B; het Maken van een malplaatje beschikbaar.](/help/sites-authoring/campaign.md)
 
-In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Voor meer informatie over een meer algemeen overzicht van hoe te om vormen in Adobe Experience Manager te gebruiken, zie [ componenten Editmode ](/help/sites-authoring/default-components-foundation.md).
+In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Voor meer informatie over een meer algemeen overzicht van hoe te om vormen in Adobe Experience Manager te gebruiken, zie [&#x200B; componenten Editmode &#x200B;](/help/sites-authoring/default-components-foundation.md).
 
 1. Selecteer **Open Eigenschappen** en in de Diensten van de Wolk voegen de configuratie van Adobe Campaign toe en selecteren checkmark om uw veranderingen te bewaren.
 
-   ![ chlimage_1-45 ](assets/chlimage_1-45a.png)
+   ![&#x200B; chlimage_1-45 &#x200B;](assets/chlimage_1-45a.png)
 
 1. Voor de pagina, in de **component van het Begin van de Vorm**, klik het pictogram van de Configuratie.
 
-   ![ chlimage_1-46 ](assets/chlimage_1-46a.png)
+   ![&#x200B; chlimage_1-46 &#x200B;](assets/chlimage_1-46a.png)
 
 1. Klik het **Geavanceerde** lusje en selecteer het type van vorm het is - **Abonneren, Unsubscribe,** of **sparen Profiel** en klik **O.K.** U kunt slechts één type per formulier hebben.
 
@@ -101,20 +101,20 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
 
    Gegenereerde koppelingen naar dit formulier moeten deze URL-parameter gebruiken en er de gecodeerde primaire sleutel van een Adobe Campaign-profiel aan toewijzen. De gecodeerde primaire sleutel moet correct (percent) gecodeerd zijn URL.
 
-   ![ chlimage_1-47 ](assets/chlimage_1-47a.png)
+   ![&#x200B; chlimage_1-47 &#x200B;](assets/chlimage_1-47a.png)
 
-1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign [ voor meer informatie over elke component.](/help/sites-authoring/adobe-campaign-components.md)
+1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie {de Componenten van de Vorm van 0} Adobe Campaign [&#x200B; voor meer informatie over elke component.](/help/sites-authoring/adobe-campaign-components.md)
 1. Klik het pictogram van de Configuratie om de component te openen. Bijvoorbeeld, in **Gebied van de Tekst (Campagne)** component, verander de titel en de tekst.
 
    Klik **Adobe Campaign** om het vormgebied aan een de meta-gegevensvariabele van Adobe Campaign in kaart te brengen. Wanneer u het formulier verzendt, wordt het toegewezen veld bijgewerkt in Adobe Campaign. Alleen velden met overeenkomende typen zijn beschikbaar in de variabele kiezer (bijvoorbeeld tekenreeksvariabelen voor tekstvelden).
 
-   ![ chlimage_1-48 ](assets/chlimage_1-48a.png)
+   ![&#x200B; chlimage_1-48 &#x200B;](assets/chlimage_1-48a.png)
 
    >[!NOTE]
    >
-   >U kunt gebieden toevoegen/verwijderen die in de ontvankelijke lijst door de instructies hier te volgen worden getoond: [ https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/ ](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
+   >U kunt gebieden toevoegen/verwijderen die in de ontvankelijke lijst door de instructies hier te volgen worden getoond: [&#x200B; https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/ &#x200B;](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. Klik **publiceren Pagina**. De pagina wordt geactiveerd op uw site. Je kunt het bekijken door naar je AEM-publicatieexemplaar te gaan. U kunt ook [ een vorm ](#testing-a-form) testen.
+1. Klik **publiceren Pagina**. De pagina wordt geactiveerd op uw site. Je kunt het bekijken door naar je AEM-publicatieexemplaar te gaan. U kunt ook [&#x200B; een vorm &#x200B;](#testing-a-form) testen.
 
    >[!CAUTION]
    >

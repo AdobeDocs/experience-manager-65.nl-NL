@@ -36,7 +36,7 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 
 >[!CAUTION]
 >
->Deze pagina moet met [ het Werken met de Fragmenten van de Inhoud ](/help/assets/content-fragments/content-fragments.md) (en verwante pagina&#39;s) worden gelezen omdat het basisterminologie en concepten, samen met het creëren en het beheren van fragmenten introduceert.
+>Deze pagina moet met [&#x200B; het Werken met de Fragmenten van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments.md) (en verwante pagina&#39;s) worden gelezen omdat het basisterminologie en concepten, samen met het creëren en het beheren van fragmenten introduceert.
 
 Met de inhoudsfragmenten kunt u:
 
@@ -80,9 +80,9 @@ Met de inhoudsfragmenten kunt u:
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-1. Aanvankelijk wordt de inhoud van het **Belangrijkste** Element en **Hoofd** (variatie) getoond. U kunt [ andere elementen en/of variaties ](#selecting-the-element-or-variation) zoals vereist selecteren.
+1. Aanvankelijk wordt de inhoud van het **Belangrijkste** Element en **Hoofd** (variatie) getoond. U kunt [&#x200B; andere elementen en/of variaties &#x200B;](#selecting-the-element-or-variation) zoals vereist selecteren.
 
-   ![ cfm-6420-01 ](assets/cfm-6420-01.png)
+   ![&#x200B; cfm-6420-01 &#x200B;](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
@@ -97,7 +97,7 @@ Met de inhoudsfragmenten kunt u:
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-Open de de dialoogdoos van de Configuratie van het fragment **** zodat kunt u het fragment voor gebruik op de huidige pagina vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+Open de de dialoogdoos van de Configuratie van het fragment **&#x200B;**&#x200B;zodat kunt u het fragment voor gebruik op de huidige pagina vormen. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
 In het aangewezen de dialoogvakje van de Configuratie, kunt u de beschikbare parameters selecteren, die omvatten:
 
@@ -136,7 +136,7 @@ In het aangewezen de dialoogvakje van de Configuratie, kunt u de beschikbare par
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
-U kunt de fragmentbron voor het uitgeven (de activa) openen gebruikend **uitgeeft** pictogram op de componententoolbar. Dit laat u [ uitgeven en het inhoudsfragment ](/help/assets/content-fragments/content-fragments.md) beheren.
+U kunt de fragmentbron voor het uitgeven (de activa) openen gebruikend **uitgeeft** pictogram op de componententoolbar. Dit laat u [&#x200B; uitgeven en het inhoudsfragment &#x200B;](/help/assets/content-fragments/content-fragments.md) beheren.
 
 >[!CAUTION]
 >
@@ -146,23 +146,23 @@ U kunt de fragmentbron voor het uitgeven (de activa) openen gebruikend **uitgeef
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er de componenten van de a **Belemmering hier** placeholder tussen elke paragraaf van HTML (en bij de bovenkant/bodem) van het fragment.
 
-Dit laat u extra inhoud [ binnen-tussen (namelijk in-tussen inhoud) ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) toevoegen de fragmentinhoud (op om het even welke beschikbare punten), zonder het moeten het wortelfragment veranderen.
+Dit laat u extra inhoud [&#x200B; binnen-tussen (namelijk in-tussen inhoud) &#x200B;](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) toevoegen de fragmentinhoud (op om het even welke beschikbare punten), zonder het moeten het wortelfragment veranderen.
 
 Voor tussenliggende inhoud kunt u:
 
-* Voeg componenten van [ browser van Componenten ](/help/sites-authoring/author-environment-tools.md#components-browser) toe.
-* Voeg activa van [ browser van Assets ](/help/sites-authoring/author-environment-tools.md#assets-browser) toe.
-* Het gebruik [ Verwante Inhoud ](#using-associated-content) als bron voor binnen-tussen inhoud.
+* Voeg componenten van [&#x200B; browser van Componenten &#x200B;](/help/sites-authoring/author-environment-tools.md#components-browser) toe.
+* Voeg activa van [&#x200B; browser van Assets &#x200B;](/help/sites-authoring/author-environment-tools.md#assets-browser) toe.
+* Het gebruik [&#x200B; Verwante Inhoud &#x200B;](#using-associated-content) als bron voor binnen-tussen inhoud.
 
 >[!CAUTION]
 >
 >De tussenliggende inhoud is pagina-inhoud. Deze wordt niet opgeslagen in het inhoudsfragment.
 
-![ cfm-6420-02 ](assets/cfm-6420-02.png)
+![&#x200B; cfm-6420-02 &#x200B;](assets/cfm-6420-02.png)
 
 >[!NOTE]
 >
->U kunt visuele activa (beelden) aan het fragment ook [ opnemen zelf ](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>U kunt visuele activa (beelden) aan het fragment ook [&#x200B; opnemen zelf &#x200B;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen.
 
@@ -180,11 +180,11 @@ Voor tussenliggende inhoud kunt u:
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u [ bijbehorende inhoud ](/help/assets/content-fragments/content-fragments-assoc-content.md) met het [ inhoudsfragment ](/help/assets/content-fragments/content-fragments.md) hebt, zijn deze activa beschikbaar van het zijpaneel (nadat u uw fragment op de inhoudspagina plaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
+Als u [&#x200B; bijbehorende inhoud &#x200B;](/help/assets/content-fragments/content-fragments-assoc-content.md) met het [&#x200B; inhoudsfragment &#x200B;](/help/assets/content-fragments/content-fragments.md) hebt, zijn deze activa beschikbaar van het zijpaneel (nadat u uw fragment op de inhoudspagina plaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
 
 >[!NOTE]
 >
->Er zijn diverse methodes om [ visuele activa (bijvoorbeeld, beelden) ](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+>Er zijn diverse methodes om [&#x200B; visuele activa (bijvoorbeeld, beelden) &#x200B;](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ Zodra u een fragment met bijbehorende inhoud aan uw pagina hebt toegevoegd, word
 
 Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de desbetreffende component is gemaakt):
 
-![ cfm-6420-03 ](assets/cfm-6420-03.png)
+![&#x200B; cfm-6420-03 &#x200B;](assets/cfm-6420-03.png)
 
 ### Assets ingevoegd in het fragment {#assets-inserted-into-the-fragment}
 
@@ -213,5 +213,5 @@ Andere wijzigingen, zoals verplaatsen, kopiëren en verwijderen, moeten worden a
 
 Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s kunnen worden gebruikt:
 
-* Een fragment kan na [ worden gepubliceerd creërend het fragment in de console van Assets ](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
+* Een fragment kan na [&#x200B; worden gepubliceerd creërend het fragment in de console van Assets &#x200B;](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Als een *niet gepubliceerd fragment* op een pagina wordt gebruikt die wordt gepubliceerd, kan het fragment ook nu worden gepubliceerd.

@@ -16,18 +16,18 @@ ht-degree: 0%
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
-* [ Tekst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [ Lijst ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [&#x200B; Tekst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [&#x200B; Lijst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Het selecteren van een op tekst-gebaseerde component met één enkele klik zal de [ componententoolbar ](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals met om het even welke component openbaren.
+Het selecteren van een op tekst-gebaseerde component met één enkele klik zal de [&#x200B; componententoolbar &#x200B;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals met om het even welke component openbaren.
 
-![ screen_shot_2018-03-21at163054 ](assets/screen_shot_2018-03-21at163054.png)
+![&#x200B; screen_shot_2018-03-21at163054 &#x200B;](assets/screen_shot_2018-03-21at163054.png)
 
 Als u nogmaals tikt of erop klikt, of de component aanvankelijk selecteert met een langzaam dubbelklikken, wordt ter plekke bewerken geopend met een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
 
-![ screen_shot_2018-03-21at163214 ](assets/screen_shot_2018-03-21at163214.png)
+![&#x200B; screen_shot_2018-03-21at163214 &#x200B;](assets/screen_shot_2018-03-21at163214.png)
 
 Deze werkbalk bevat de volgende opties:
 
@@ -41,11 +41,11 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Voor op tekst-gebaseerde componenten, die de het volledig-schermwijze van de toolbar ![ Volledige het uitgeven van het scherm wijze ](do-not-localize/screen_shot_2018-03-21at163236.png) tikken opent de rijke tekstredacteur en verbergt de rest pagina inhoud.
+Voor op tekst-gebaseerde componenten, die de het volledig-schermwijze van de toolbar ![&#x200B; Volledige het uitgeven van het scherm wijze &#x200B;](do-not-localize/screen_shot_2018-03-21at163236.png) tikken opent de rijke tekstredacteur en verbergt de rest pagina inhoud.
 
-In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [ hangt van de configuratie ](/help/sites-administering/rich-text-editor.md) af.
+In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [&#x200B; hangt van de configuratie &#x200B;](/help/sites-administering/rich-text-editor.md) af.
 
-![ screen_shot_2018-03-21at163248 ](assets/screen_shot_2018-03-21at163248.png)
+![&#x200B; screen_shot_2018-03-21at163248 &#x200B;](assets/screen_shot_2018-03-21at163248.png)
 
 Extra opties voor teksteditors met tekstopmaak zijn:
 
@@ -56,7 +56,7 @@ Extra opties voor teksteditors met tekstopmaak zijn:
 
 Sluit de modus Volledig scherm door op het pictogram Minimaliseren te klikken.
 
-![ screen_shot_2018-03-21at163323 ](assets/screen_shot_2018-03-21at163323.png)
+![&#x200B; screen_shot_2018-03-21at163323 &#x200B;](assets/screen_shot_2018-03-21at163323.png)
 
 >[!NOTE]
 >

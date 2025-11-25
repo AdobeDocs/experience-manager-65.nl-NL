@@ -260,7 +260,7 @@ Zo kunt u de inhoud leveren. U ziet of een nieuwsbrief met één enkele levering
 
 Een pagina die in AEM is gemaakt, koppelen aan een e-mailbericht van Adobe Campaign:
 
-1. Maak een e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Verwijs naar [&#x200B; Creërend e-mails in Adobe Campaign Standard &#x200B;](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) voor meer informatie.
+1. Maak een e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Verwijs naar [&#x200B; Creërend e-mails in Adobe Campaign Standard &#x200B;](https://helpx.adobe.com/nl/campaign/standard/channels/using/creating-an-email.html) voor meer informatie.
 
    ![&#x200B; chlimage_1-36 &#x200B;](assets/chlimage_1-36a.png)
 

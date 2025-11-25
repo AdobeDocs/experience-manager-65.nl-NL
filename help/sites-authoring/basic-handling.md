@@ -122,7 +122,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=nl-NL"> Screens </a> laat u al uw klant-onder ogen ziet schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   U kunt de [&#x200B; kortere wegsleutel &#x200B;](/help/sites-authoring/keyboard-shortcuts.md) `/` (voorwaartse schuine streep) ook gebruiken om onderzoek van om het even welke console aan te halen.
 
-* [&#x200B; Oplossingen &#x200B;](https://business.adobe.com/)
+* [&#x200B; Oplossingen &#x200B;](https://business.adobe.com/nl/)
 
   ![&#x200B; Oplossingen &#x200B;](do-not-localize/screen_shot_2018-03-23at103552.png)
 

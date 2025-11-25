@@ -530,7 +530,7 @@ Gebruik de geavanceerde montages om te bepalen wat **gebeurt nadat** een gebruik
  </tbody>
 </table>
 
-Zie {de documentatie van 0} Adobe Target [&#x200B; voor meer informatie over succesmetriek.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)
+Zie {de documentatie van 0} Adobe Target [&#x200B; voor meer informatie over succesmetriek.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL)
 
 ### Instellingen configureren (AEM-doelen) {#configuring-settings-aem-targeting}
 
@@ -569,13 +569,13 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    ![&#x200B; chlimage_1-33 &#x200B;](assets/chlimage_1-33.png)
 
-1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) over metrische data voor succes.
+1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) over metrische data voor succes.
 
    U kunt de naam van het doel wijzigen door op de drie stippen in de rechterbovenhoek te klikken en **Naam wijzigen** te selecteren.
 
    Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u **Alle velden wissen**.
 
-   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde Montages** om tot die toegang te hebben. Zie definitie van hoe de succesmetriek in vorige lijst worden geteld en [&#x200B; documentatie van Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) zien.
+   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde Montages** om tot die toegang te hebben. Zie definitie van hoe de succesmetriek in vorige lijst worden geteld en [&#x200B; documentatie van Adobe Target &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=nl-NL) zien.
 
    >[!NOTE]
    >

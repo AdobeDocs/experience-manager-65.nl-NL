@@ -90,4 +90,4 @@ Open [&#x200B; Inhoud Insight &#x200B;](/help/sites-authoring/content-insights.m
 >
 >Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van Activity Map te gebruiken die in AEM is opgenomen.
 >
->De [&#x200B; insteekmodule ActivityMap die door Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) wordt verstrekt zou nu moeten worden gebruikt.
+>De [&#x200B; insteekmodule ActivityMap die door Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=nl-NL) wordt verstrekt zou nu moeten worden gebruikt.

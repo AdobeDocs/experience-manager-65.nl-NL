@@ -21,7 +21,7 @@ ht-degree: 0%
 | Versie | 6,5 |
 | Type | Grote release |
 | Algemene beschikbaarheidsdatum | 8 april 2019 |
-| Aanbevolen updates | Zie [&#x200B; recente updates van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html). |
+| Aanbevolen updates | Zie [&#x200B; recente updates van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=nl-NL). |
 
 ### Trivia {#trivia}
 
@@ -118,7 +118,7 @@ Eerste verscheepte als deel van AEM 6.4 SP2, met AEM 6.5 krijgt de steun van het
 
 #### Beheer van inhoud zonder hoofd {#headless-content-management}
 
-AEM kan de inhoud in verschillende indelingen en op verschillende niveaus van de stapel leveren. Sommigen zijn rond sinds 2008 met [&#x200B; het Verdelen GET &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) en [&#x200B; POST Servlet &#x200B;](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) geweest. De Diensten van de inhoud ([&#x200B; het Verdelen ModelExporter &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) werd geïntroduceerd in AEM 6.3 en is de methode die door AEM SJ SDK wordt gebruikt om single-page apps te bevrijden. [&#x200B; HTTP API voor Assets &#x200B;](/help/assets/mac-api-assets.md) is een CRUD API, die voor AEM 6.5 werd uitgebreid.
+AEM kan de inhoud in verschillende indelingen en op verschillende niveaus van de stapel leveren. Sommigen zijn rond sinds 2008 met [&#x200B; het Verdelen GET &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) en [&#x200B; POST Servlet &#x200B;](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) geweest. De Diensten van de inhoud ([&#x200B; het Verdelen ModelExporter &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=nl-NL)) werd geïntroduceerd in AEM 6.3 en is de methode die door AEM SJ SDK wordt gebruikt om single-page apps te bevrijden. [&#x200B; HTTP API voor Assets &#x200B;](/help/assets/mac-api-assets.md) is een CRUD API, die voor AEM 6.5 werd uitgebreid.
 
 Nieuwe HTTP API-mogelijkheden:
 
@@ -140,7 +140,7 @@ Efficiënt ontwerpen, leveren en optimaliseren van ervaringen op alle digitale s
 * Personaliseer door plaats of configuratie van gegevens teweeggebrachte inhoud door dynamische placeholders te gebruiken.
 * Verenigde inzichten gedreven door de integratie van Adobe Analytics in AEM Screens Player
 
-Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Versie in de [&#x200B; Gids van de Gebruiker van AEM Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Versie in de [&#x200B; Gids van de Gebruiker van AEM Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=nl-NL).
 
 #### Component- en sjabloonontwikkeling {#component-amp-template-development}
 
@@ -246,16 +246,16 @@ Voor meer details op veranderingen in AEM Screens - zie de Nota&#39;s van de Ver
 
 * Adobe Target-integratie gebruikt nu de Target Standard API. Eerdere versies van AEM gebruiken de Classic HTTP-API van Target, die nu is afgekeurd.
 * Adobe Target `mbox.js` versie 63 is inbegrepen. Adobe raadt u ten zeerste aan de implementatie over te schakelen op `at.js` v1.x.
-* `at.js` versie 1.5.0 is nu inbegrepen. Adobe adviseert dat u [&#x200B; Adobe Experience Platform Launch &#x200B;](https://business.adobe.com/products/experience-platform/launch.html) aan voorziening `at.js` v1.x in de plaats gebruikt.
+* `at.js` versie 1.5.0 is nu inbegrepen. Adobe adviseert dat u [&#x200B; Adobe Experience Platform Launch &#x200B;](https://business.adobe.com/nl/products/experience-platform/launch.html) aan voorziening `at.js` v1.x in de plaats gebruikt.
 
 #### AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 is opgenomen. Adobe raadt u aan over te schakelen op `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 is opgenomen. Adobe adviseert dat u [&#x200B; Adobe Experience Platform Launch &#x200B;](https://business.adobe.com/products/experience-platform/launch.html) aan voorziening AppMeasurement.js in de plaats gebruikt.
+* `AppMeasurement.js` v1.8.0 is opgenomen. Adobe adviseert dat u [&#x200B; Adobe Experience Platform Launch &#x200B;](https://business.adobe.com/nl/products/experience-platform/launch.html) aan voorziening AppMeasurement.js in de plaats gebruikt.
 
 #### AEM en Commerce {#aem-commerce}
 
-Verbeteringen aan de Commerce integration framework zijn sinds AEM 6.4 sneller beschikbaar. Leer meer van [&#x200B; de Integratie van AEM en van Adobe Commerce Gebruikend Commerce integration framework &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+Verbeteringen aan de Commerce integration framework zijn sinds AEM 6.4 sneller beschikbaar. Leer meer van [&#x200B; de Integratie van AEM en van Adobe Commerce Gebruikend Commerce integration framework &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=nl-NL).
 
 #### Invoegtoepassing Gemeenschappen {#communities-add-on}
 
@@ -332,7 +332,7 @@ Lees verder om de specifieke mogelijkheden en integratie van [!DNL Experience Ma
 
 [!DNL Adobe Asset Link] versterkt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Creatieven hebben toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets] zonder de apps te verlaten waarmee ze het meest vertrouwd zijn. Creatieven kunnen naadloos door elementen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in [!DNL Adobe Photoshop] -, [!DNL Adobe Illustrator] - en [!DNL Adobe InDesign] -apps.
 
-[!DNL Adobe Asset Link] is een deel van [&#x200B; Creative Cloud voor onderneming &#x200B;](https://www.adobe.com/creativecloud/business/enterprise.html) het aanbieden. Voor meer informatie over het, met inbegrip van noodzakelijke configuratie van uw [!DNL Experience Manager] plaatsing, zie [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] is een deel van [&#x200B; Creative Cloud voor onderneming &#x200B;](https://www.adobe.com/creativecloud/business/enterprise.html) het aanbieden. Voor meer informatie over het, met inbegrip van noodzakelijke configuratie van uw [!DNL Experience Manager] plaatsing, zie [&#x200B; de Verbinding van Activa van Adobe &#x200B;](https://helpx.adobe.com/nl/enterprise/using/adobe-asset-link.html).
 
 ![&#x200B; activa van het Onderzoek in Adobe Photoshop &#x200B;](/help/release-notes/assets/asset_search_photoshop.png)
 
@@ -360,7 +360,7 @@ Voor meer info, zie [&#x200B; de activa van Adobe Stock van het Gebruik in Exper
 
 Met [!DNL Experience Manager Assets Brand Portal] kunt u de goedgekeurde middelen eenvoudig aanschaffen, effectief beheren en veilig verspreiden onder externe leveranciers/agentschappen en interne zakelijke gebruikers op verschillende apparaten. Het helpt de efficiëntie van het delen van bedrijfsmiddelen te verbeteren, versnelt de tijd tot aan de markt voor bedrijfsmiddelen en voorkomt het risico van niet-conform gebruik en ongeoorloofde toegang.
 
-Voor meer informatie, zie [&#x200B; wat in Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html) nieuw is.
+Voor meer informatie, zie [&#x200B; wat in Brand Portal &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=nl-NL) nieuw is.
 
 #### Verbonden Assets {#connectedassets}
 
@@ -376,7 +376,7 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 [!DNL Dynamic Media] biedt verbeterde functies voor het schrijven en leveren van geavanceerde media in [!DNL Experience Manager Assets] voor geavanceerde ervaringen die overweldigend en gepersonaliseerd zijn. Door één primaire bron van hoge kwaliteit te uploaden en Adobe te gebruiken voor geavanceerde cloudrendering en viewers, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediastrategie van uw organisatie.
 
-Voor meer details op nieuwe [!DNL Dynamic Media] eigenschappen, zie [&#x200B; Dynamische Nota&#39;s van de Versie van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Voor meer details op nieuwe [!DNL Dynamic Media] eigenschappen, zie [&#x200B; Dynamische Nota&#39;s van de Versie van Media &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=nl-NL).
 
 ##### 360 video-ondersteuning {#video-support}
 
@@ -388,7 +388,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ##### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] -viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Voor extra details, zie {de Gids van de Verwijzing van 0} Kijkers [.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)
+[!DNL Dynamic Media] -viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Voor extra details, zie {de Gids van de Verwijzing van 0} Kijkers [.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=nl-NL)
 
 #### Verbeterde zoekervaring {#experience-enhancement-for-searching}
 
@@ -435,7 +435,7 @@ Zie [&#x200B; Samenvatting van nieuwe eigenschappen en verhogingen in AEM 6.5 Fo
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling, en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
-Adobe heeft de procedures en processen op zijn plaats om inzameling, prioriteitstelling, en het volgen van klant-geconcentreerde insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het [&#x200B; portaal van de Steun van Experience Manager &#x200B;](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is geïntegreerd met de Verbetering van Adobe en het Gebrek die Systeem volgen. De vragen van de klant worden geïdentificeerd en opgelost door het team van de Steun van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
+Adobe heeft de procedures en processen op zijn plaats om inzameling, prioriteitstelling, en het volgen van klant-geconcentreerde insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het [&#x200B; portaal van de Steun van Experience Manager &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#support) is geïntegreerd met de Verbetering van Adobe en het Gebrek die Systeem volgen. De vragen van de klant worden geïdentificeerd en opgelost door het team van de Steun van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
 
 Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgeleverd die in AEM 6.5 worden bevestigd.
 
@@ -445,7 +445,7 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 
 * Zelfstandige QuickStart: `cq-quickstart-6.5.0.jar`.
 * Application Server QuickStart: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 of hoger voor de verschillende webservers en -platforms. Zie [&#x200B; downloadverbinding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Dispatcher 4.3.2 of hoger voor de verschillende webservers en -platforms. Zie [&#x200B; downloadverbinding &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=nl-NL)
 * Plug-in voor winde van de Verduistering ([&#x200B; lees meer en download &#x200B;](/help/sites-developing/aem-eclipse.md))
 
 * Uitbreiding voor de Redacteur van de Code van de Brackets ([&#x200B; lees meer en download &#x200B;](/help/sites-developing/aem-brackets.md))
@@ -478,7 +478,7 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 
 **Forms**
 
-* [&#x200B; Pakketten voor de mogelijkheden van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [&#x200B; Pakketten voor de mogelijkheden van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL)
 * [&#x200B; AEM Forms OSGi Cliënt SDK &#x200B;](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Talen {#languages}
@@ -597,4 +597,4 @@ De volgende sites zijn alleen beschikbaar voor klanten. Neem contact op met uw A
 
 * De updates van het product, de flarden, en de pakketten voor extra functionaliteit op [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [&#x200B; de Steun van de Klant via Admin Console &#x200B;](https://adminconsole.adobe.com/). Voor meer informatie, zie [&#x200B; Nieuwe Ervaring van de Klantenondersteuning van Adobe &#x200B;](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [&#x200B; de Steun van de Klant via Admin Console &#x200B;](https://adminconsole.adobe.com/). Voor meer informatie, zie [&#x200B; Nieuwe Ervaring van de Klantenondersteuning van Adobe &#x200B;](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=nl-NL).

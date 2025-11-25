@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) voor meer informatie of om het flard te verkrijgen.
+>[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support) voor meer informatie of om het flard te verkrijgen.
 
 ## Het installatieprogramma van de patch {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Als u de authentificatie van SAML gevormd hebt en problemen met grote meta-gegev
 * Documentbeveiliging
 * Foundation JEE
 
-[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
+[&#x200B; Steun van het Contact &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support)

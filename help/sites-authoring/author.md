@@ -84,4 +84,4 @@ Wanneer de plaats van AEM a [&#x200B; communautaire plaats &#x200B;](/help/commu
 
 #### Dispatcher {#dispatcher}
 
-Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.
+Om prestaties voor bezoekers aan uw website te optimaliseren, voert **[Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL)** lading het in evenwicht brengen en het in het voorgeheugen onderbrengen uit.

@@ -36,7 +36,7 @@ Alle e-maileindpunten zijn geconfigureerd met een geoorloofde gebruikersnaam en 
 
 Als uw gebruikers documenten met West-Europese taalkarakters in dossier en omzettingswegnamen verzenden, moeten zij een e-mailtoepassing gebruiken die de vereiste het coderen types (Latin1 [ ISO-8859-1 ], West-Europese [ Vensters ], of UTF-8) steunt. Voor meer informatie, zie *Installerend en het Opstellen van de formulieren van AEM* document voor uw toepassingsserver.
 
-Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [ de montages van het standaard e-maileindpunt ](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De de configuratieparameters van de E-mail dienst hebben twee doeleinden:
+Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [&#x200B; de montages van het standaard e-maileindpunt &#x200B;](configuring-email-endpoints.md#configure-default-email-endpoint-settings) vormen.) De de configuratieparameters van de E-mail dienst hebben twee doeleinden:
 
 * Om attributen te vormen die voor alle e-maileindpunten gemeenschappelijk zijn
 * Standaardwaarden opgeven voor alle e-maileindpunten
@@ -65,7 +65,7 @@ U kunt POP3, IMAP, of SMTP vormen om de Veilige Laag van Contactdozen (SSL) voor
 
 U kunt de pagina van het Beheer van de Dienst gebruiken om attributen te vormen die voor alle e-maileindpunten gemeenschappelijk zijn, en standaardwaarden voor alle e-maileindpunten te verstrekken.
 
-Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruikers ontvangt en afhandelt, moet u een e-maileindpunt voor de service Volledige taak maken. Dit e-maileindpunt vereist extra montages, zoals die in [ worden beschreven leidt tot een E-mail eindpunt voor de Volledige dienst van de Taak ](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
+Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruikers ontvangt en afhandelt, moet u een e-maileindpunt voor de service Volledige taak maken. Dit e-maileindpunt vereist extra montages, zoals die in [&#x200B; worden beschreven leidt tot een E-mail eindpunt voor de Volledige dienst van de Taak &#x200B;](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
 ### De standaardwaarden voor e-maileindpunten wijzigen {#change-the-default-values-for-email-endpoints}
 
@@ -89,7 +89,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **Patroon van het Domein:** het patroon van de domeinnaam dat wordt gebruikt om inkomende e-mails te filtreren. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt; e-mail van andere domeinen wordt genegeerd.
 
-**Patroon van het Dossier:** de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) en samengestelde expressies in de naam en de extensie (.``[dD][aA]`` &#39;port&#39;). De standaardwaarde is &amp;ast;.&amp;ast;.
+**Patroon van het Dossier:** de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&ast;.dat, &ast;.xml), specifieke namen (gegevens) en samengestelde expressies in de naam en de extensie (.``[dD][aA]`` &#39;port&#39;). De standaardwaarde is &ast;.&ast;.
 
 **Begeleidende Ontvangers van de Baan:** Één of meerdere e-mailadressen die worden gebruikt om e-mail te verzenden om op succesvolle banen te wijzen. Standaard wordt altijd een bericht met een geslaagde taak verzonden naar de afzender van de oorspronkelijke taak. Er worden maximaal 100 ontvangers ondersteund. Laat dit veld leeg als u deze instelling wilt uitschakelen.
 
@@ -167,7 +167,7 @@ Gebruik de volgende montages om een e-maileindpunt te vormen.
 
 **Patroon van het Domein:** specificeert de domeinpatronen van inkomende e-mail die de leverancier goedkeurt. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt; e-mail van andere domeinen wordt genegeerd.
 
-**Patroon van het Dossier:** specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) of samengestelde expressies in de naam en extensie (&amp;ast;..`[dD][aA]` &#39;port&#39;).
+**Patroon van het Dossier:** specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&ast;.dat, &ast;.xml), specifieke namen (gegevens) of samengestelde expressies in de naam en extensie (&ast;..`[dD][aA]` &#39;port&#39;).
 
 **Begeleidende Ontvangers van de Baan:** Een e-mailadres waarnaar de berichten worden verzonden om op succesvolle banen te wijzen. Standaard wordt altijd een bericht met een geslaagde taak naar de afzender verzonden. Als u de afzender typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, gescheiden door komma&#39;s (,).
 
@@ -235,7 +235,7 @@ De standaardwaarde is asynchroon.
 
 **Letterlijk:** e-mail gebruikt de waarde die op het gebied is ingegaan aangezien het wordt getoond.
 
-**Variabele:** u kunt een koord van het e-mailonderwerp, het lichaam, de kopbal, of het e-mailadres van de afzender in kaart brengen. Gebruik hiervoor een van de volgende trefwoorden: %SUBJECT%, %BODY%, %HEADER% of %SENDER%. Als u bijvoorbeeld %SUBJECT% gebruikt, wordt de inhoud van het e-mailonderwerp gebruikt als invoerparameter. Als u bijlagen wilt ophalen, voert u een bestandspatroon in dat het e-maileindpunt kan gebruiken om de bijgevoegde documenten te selecteren. Als u bijvoorbeeld &amp;ast;.pdf opgeeft, worden alle bijgevoegde documenten met de bestandsnaamextensie .pdf geselecteerd. &amp;amp invoeren;ast; selecteert bijgevoegd document. Als u example.pdf invoert, worden alle gekoppelde documenten met de naam example.pdf geselecteerd.
+**Variabele:** u kunt een koord van het e-mailonderwerp, het lichaam, de kopbal, of het e-mailadres van de afzender in kaart brengen. Gebruik hiervoor een van de volgende trefwoorden: %SUBJECT%, %BODY%, %HEADER% of %SENDER%. Als u bijvoorbeeld %SUBJECT% gebruikt, wordt de inhoud van het e-mailonderwerp gebruikt als invoerparameter. Als u bijlagen wilt ophalen, voert u een bestandspatroon in dat het e-maileindpunt kan gebruiken om de bijgevoegde documenten te selecteren. Als u bijvoorbeeld &ast;.pdf opgeeft, worden alle bijgevoegde documenten met de bestandsnaamextensie .pdf geselecteerd. &amp;amp invoeren;ast; selecteert bijgevoegd document. Als u example.pdf invoert, worden alle gekoppelde documenten met de naam example.pdf geselecteerd.
 
 **Toewijzingen van de Parameter van de Output:** Gebruikt om de output van de dienst en de verrichting te vormen. De volgende tekens in de toewijzingswaarden van de uitvoerparameter worden uitgebreid in de bestandsnaam van de bijlage:
 
@@ -245,7 +245,7 @@ De standaardwaarde is asynchroon.
 
 Elke keer dat de backslash (\) voorkomt, wordt vervangen door %%.
 
-***nota **: Als het bericht van het de dienstverzoek veelvoudige dossiergehechtheid omvat, kunt u niet de %F en %E parameters voor het bezit van de Toewijzingen van de Parameter van de Output van het eindpunt gebruiken. Als de servicereactie meerdere bestandsbijlagen retourneert, kunt u niet dezelfde bestandsnaam voor meerdere bijlagen opgeven. Als u deze aanbevelingen niet volgt, leidt de aangehaalde dienst tot de namen voor de teruggekeerde dossiers, en de namen zijn niet voorspelbaar.*
+***nota &#x200B;**: Als het bericht van het de dienstverzoek veelvoudige dossiergehechtheid omvat, kunt u niet de %F en %E parameters voor het bezit van de Toewijzingen van de Parameter van de Output van het eindpunt gebruiken. Als de servicereactie meerdere bestandsbijlagen retourneert, kunt u niet dezelfde bestandsnaam voor meerdere bijlagen opgeven. Als u deze aanbevelingen niet volgt, leidt de aangehaalde dienst tot de namen voor de teruggekeerde dossiers, en de namen zijn niet voorspelbaar.*
 
 De volgende waarden zijn beschikbaar:
 

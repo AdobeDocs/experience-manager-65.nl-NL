@@ -20,7 +20,7 @@ Documentatiereizen bieden een verhalende structuur binnen de AEM-documentatie do
 
 Een Documentatiereis verbindt vele verschillende en complexe onderwerpen en eigenschappen door een verhaal te verstrekken dat de lezer, die nieuw aan AEM kan zijn, een bedrijfsprobleem van begin tot eind begrijpt en kan oplossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of kennis van AEM.
 
-Documentatiereizen staan in contrast met bestaande technische documenten van AEM die zich voornamelijk richten op één functie en documentatie van taken, waarbij ervan wordt uitgegaan dat ze vertrouwd zijn met AEM. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Documentatiereizen lezers een nieuwe plaats om te beginnen begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Om deze reden, dienen de Reizen van de Documentatie als aanvulling aan en niet als vervanging voor [ AEM die bestaande technische documentatie .](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+Documentatiereizen staan in contrast met bestaande technische documenten van AEM die zich voornamelijk richten op één functie en documentatie van taken, waarbij ervan wordt uitgegaan dat ze vertrouwd zijn met AEM. Door zich op de concepten te concentreren en diepgaande details aan de bestaande technische documentatie uit te stellen, geven de Documentatiereizen lezers een nieuwe plaats om te beginnen begrijpen hoe het platform kan worden gebruikt door beste praktijken te gebruiken om gemeenschappelijke bedrijfsbehoeften en werkschema&#39;s te richten. Om deze reden, dienen de Reizen van de Documentatie als aanvulling aan en niet als vervanging voor [&#x200B; AEM die bestaande technische documentatie .](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 
 ### Leren op verhaal {#narrative}
 
@@ -88,10 +88,10 @@ Er zijn verschillende documentatiereizen die u al hebt. Aangezien elke reis als 
 
 | Reis | Beschrijving |
 |---|---|
-| [ Zwaardeloze Reis van de Ontwikkelaar ](/help/journey-headless/developer/overview.md) | Begin hier om te zien hoe AEM headless ontwikkelingsmodellen steunt en hoe te om uw project van planning, implementatie, te krijgen om te leven. |
-| [ Headless Authoring Reis ](/help/journey-headless/author/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. |
-| [ Evolutie van de Architect zonder hoofd ](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager en hoe u inhoud voor uw project kunt modelleren. |
-| [ Zwaardeloze Vertaalreis ](/help/journey-headless/translation/overview.md) | Begin hier om te zien hoe u uw vertaalprojecten zonder kop in AEM kunt opzetten en beheren. |
+| [&#x200B; Zwaardeloze Reis van de Ontwikkelaar &#x200B;](/help/journey-headless/developer/overview.md) | Begin hier om te zien hoe AEM headless ontwikkelingsmodellen steunt en hoe te om uw project van planning, implementatie, te krijgen om te leven. |
+| [&#x200B; Headless Authoring Reis &#x200B;](/help/journey-headless/author/overview.md) | Begin hier voor een begeleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren. |
+| [&#x200B; Evolutie van de Architect zonder hoofd &#x200B;](/help/journey-headless/architect/overview.md) | Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager en hoe u inhoud voor uw project kunt modelleren. |
+| [&#x200B; Zwaardeloze Vertaalreis &#x200B;](/help/journey-headless/translation/overview.md) | Begin hier om te zien hoe u uw vertaalprojecten zonder kop in AEM kunt opzetten en beheren. |
 
 <!--
 |Journey|Description|

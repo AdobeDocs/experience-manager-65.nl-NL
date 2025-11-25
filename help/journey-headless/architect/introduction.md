@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Content Modeling for Headless met AEM - Een introductie {#architect-headless-introduction}
 
-In dit deel van de [ Journey van de Architect van de Inhoud van AEM Headless ](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om inhoud modellering voor hoofdloze inhoudslevering met Adobe Experience Manager (AEM) te begrijpen.
+In dit deel van de [&#x200B; Journey van de Architect van de Inhoud van AEM Headless &#x200B;](overview.md), kunt u de (basis) concepten en de terminologie noodzakelijk leren om inhoud modellering voor hoofdloze inhoudslevering met Adobe Experience Manager (AEM) te begrijpen.
 
 Met dit document krijgt u inzicht in de inhoud zonder kop, hoe AEM koploze inhoud ondersteunt en hoe inhoud wordt gemodelleerd voor headless inhoud. Na het lezen moet u:
 
@@ -30,7 +30,7 @@ Met dit document krijgt u inzicht in de inhoud zonder kop, hoe AEM koploze inhou
 
 Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van de CMS als centraal punt voor het beheer van ervaringen heeft geleid tot een verbeterde efficiëntie doordat het niet nodig is taken in verschillende systemen te dupliceren.
 
-![ de klassieke volledig-stapel CMS ](/help/journey-headless/developer/assets/full-stack.png)
+![&#x200B; de klassieke volledig-stapel CMS &#x200B;](/help/journey-headless/developer/assets/full-stack.png)
 
 In een CMS met volledige stapel bevindt alle functionaliteit voor het manipuleren van inhoud zich in de CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
@@ -41,7 +41,7 @@ In een CMS met volledige stapel bevindt alle functionaliteit voor het manipulere
 
 Als dus een nieuw kanaal moet worden toegevoegd of ondersteuning voor nieuwe soorten ervaringen is vereist, kunnen een (of meer) nieuwe componenten in de stapel worden ingevoegd en is er slechts één plaats om wijzigingen aan te brengen.
 
-![ Toevoegend een nieuw kanaal aan de stapel ](/help/journey-headless/developer/assets/adding-channel.png)
+![&#x200B; Toevoegend een nieuw kanaal aan de stapel &#x200B;](/help/journey-headless/developer/assets/adding-channel.png)
 
 Nochtans wordt de ingewikkeldheid van de gebiedsdelen binnen de stapel snel duidelijk aangezien andere punten in de stapel moeten worden aangepast om de veranderingen aan te passen.
 
@@ -51,7 +51,7 @@ Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meest
 
 Als we het hebben over een CMS zonder kop, beheert de CMS de inhoud en blijft ze leveren aan de consument. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een headless CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
 
-![ Headless CMS ](/help/journey-headless/developer/assets/headless-cms.png)
+![&#x200B; Headless CMS &#x200B;](/help/journey-headless/developer/assets/headless-cms.png)
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA&#39;s), enzovoort, nemen inhoud van de CMS zonder kop in en leveren hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
@@ -77,7 +77,7 @@ Dit betekent dat uw project zonder kop gestructureerde inhoud voor gebruik in uw
 
 ## Volgende functies {#whats-next}
 
-Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de grondbeginselen van het modelleren met de Modellen van het Fragment van de Inhoud ](basics.md) leren.
+Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [&#x200B; de grondbeginselen van het modelleren met de Modellen van het Fragment van de Inhoud &#x200B;](basics.md) leren.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -85,5 +85,5 @@ Nu u de concepten en de terminologie hebt geleerd, moet de volgende stap [ de gr
    * [Meer informatie over CMS Headless Development](/help/journey-headless/developer/learn-about.md)
    * [Leer hoe u uw inhoud kunt modelleren](/help/journey-headless/developer/model-your-content.md)
 * [Inleiding tot AEM als een CMS zonder kop](/help/sites-developing/headless/introduction.md)
-* [ AEM Developer Portal ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; AEM Developer Portal &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

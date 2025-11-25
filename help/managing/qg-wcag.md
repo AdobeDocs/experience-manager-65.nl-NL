@@ -24,9 +24,9 @@ De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/T
 
 >[!NOTE]
 >
->Aangezien deze documenten de [ bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 ](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
+>Aangezien deze documenten de [&#x200B; bijgewerkte versie van de richtsnoeren werden geschreven, WCAG 2.2 &#x200B;](https://www.w3.org/TR/) werd ter beschikking gesteld in oktober 2023.
 >
->Zie [ Vergelijking met WCAG 2.1 ](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [ Nieuwe Eigenschappen in WCAG 2.2 ](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Zie [&#x200B; Vergelijking met WCAG 2.1 &#x200B;](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) en [&#x200B; Nieuwe Eigenschappen in WCAG 2.2 &#x200B;](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webinhoud om ervoor te zorgen dat de middelen die zij produceren zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap; bijvoorbeeld visuele stoornissen, gehoorverlies, leermoeilijkheden, leeftijdsgerelateerde beperkingen, enz.
 
@@ -149,7 +149,7 @@ Een voorbeeld is te vinden op: [Succescriterium 1.1.1 (&quot;Niet-tekstuele cont
 
 ### Hoe te om WCAG 2.1 te ontmoeten {#how-to-meet-wcag}
 
-De &quot;hoe te&quot;sectie is beschikbaar op [ hoe te WCAG 2.1 ](https://www.w3.org/WAI/WCAG21/quickref/) pagina ontmoeten. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
+De &quot;hoe te&quot;sectie is beschikbaar op [&#x200B; hoe te WCAG 2.1 &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/) pagina ontmoeten. Deze sectie biedt een alternatieve presentatie van WCAG, waardoor lezers de content van de richtlijnen kunnen verfijnen tot de richtlijnen die het meest relevant zijn voor de eigen belangen of omstandigheden van de lezer. Lezers kunnen de technieken voor succescriteria die ze willen bekijken, filteren door bepaalde webcontenttechnologieën op te geven, zoals CSS-opmaakprofielen (Cascading Style Sheets) of scripting, of door bepaalde prioriteitsniveaus op te geven.
 
 Zonder filteren biedt deze bron alle succescriteria gegroepeerd op richtlijn. Voor elk succescriterium wordt het volgende verstrekt:
 

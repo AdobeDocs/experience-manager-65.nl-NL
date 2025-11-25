@@ -17,12 +17,12 @@ AI is een integraal onderdeel van Adobe Experience Manager en wordt gebruikt om 
 
 ## AI-assistent {#ai-assistant}
 
-De [ Medewerker AI in Adobe Experience Manager ](/help/ai-assistant-in-aem.md) biedt een gespreksinterface aan die wordt ontworpen om het vinden van antwoorden aan uw op AEM betrekking hebbende vragen te stroomlijnen.
+De [&#x200B; Medewerker AI in Adobe Experience Manager &#x200B;](/help/ai-assistant-in-aem.md) biedt een gespreksinterface aan die wordt ontworpen om het vinden van antwoorden aan uw op AEM betrekking hebbende vragen te stroomlijnen.
 
 ## Aanvullende informatie {#further-information}
 
-* [ Adobe AI Overzicht ](https://www.adobe.com/ai/overview.html)
+* [&#x200B; Adobe AI Overzicht &#x200B;](https://www.adobe.com/ai/overview.html)
 
-* [ Generatieve AI in de producten van Experience Cloud ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+* [&#x200B; Generatieve AI in de producten van Experience Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [ Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+   * [&#x200B; Generatieve AI in de producten van Experience Cloud - Adobe Experience Manager &#x200B;](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)

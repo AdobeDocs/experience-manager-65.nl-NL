@@ -30,7 +30,7 @@ Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
 Begin door de connectiviteit tussen de individuele cliëntapparaten en het collectieve netwerk te diagrammen. In dit stadium, identificeer gedeelde middelen, zoals WiFi verbindingen, waar de veelvoudige gebruikers tot het zelfde punt of Ethernet schakelaar toegang hebben om activa te uploaden en te downloaden.
 
-![ chlimage_1-353 ](assets/chlimage_1-353.png)
+![&#x200B; chlimage_1-353 &#x200B;](assets/chlimage_1-353.png)
 
 Clientapparaten maken op verschillende manieren verbinding met het bedrijfsnetwerk, zoals gedeelde WiFi, Ethernet met een gedeelde switch en VPN. Het identificeren van en het begrip van chokepoints op dit netwerk is belangrijk voor [!DNL Assets] planning en om het netwerk te wijzigen.
 
@@ -44,13 +44,13 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
-![ chlimage_1-354 ](assets/chlimage_1-354.png)
+![&#x200B; chlimage_1-354 &#x200B;](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukkingspunt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
 ## Uploaden naar internet vanuit het bedrijfsnetwerk en de [!DNL Experience Manager] -omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
-![ chlimage_1-355 ](assets/chlimage_1-355.png)
+![&#x200B; chlimage_1-355 &#x200B;](assets/chlimage_1-355.png)
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding van VPC te overwegen omdat de bandbreedte over Internet als gevolg van piekbelasting of grootschalig leveranciersstroomuitval kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
@@ -66,7 +66,7 @@ Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptuee
 
 ## Topologie van de [!DNL Experience Manager] -omgeving {#topology-of-the-aem-environment}
 
-![ chlimage_1-356 ](assets/chlimage_1-356.png)
+![&#x200B; chlimage_1-356 &#x200B;](assets/chlimage_1-356.png)
 
 Het ontwerpen van de topologie van het [!DNL Experience Manager] milieu vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
@@ -76,7 +76,7 @@ De verzender deelt zijn verbinding 100Mbps met twee entiteiten, de buitenwereld 
 
 De [!DNL Experience Manager] plaatsing deelt zijn verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
 
-Als u het netwerk van het clientapparaat tot de [!DNL Experience Manager] -implementatie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden in de rangschikkende calculator in de [ Assets rangschikkende Gids ](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
+Als u het netwerk van het clientapparaat tot de [!DNL Experience Manager] -implementatie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden in de rangschikkende calculator in de [&#x200B; Assets rangschikkende Gids &#x200B;](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
 
 ## Gedefinieerde workflows van de implementatie van [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
@@ -100,4 +100,4 @@ Hier volgen enkele punten die u in overweging wilt nemen:
 
 Hier volgt een voorbeeld van de klant voor het definiëren van een workflow met middelen.
 
-![ chlimage_1-357 ](assets/chlimage_1-357.png)
+![&#x200B; chlimage_1-357 &#x200B;](assets/chlimage_1-357.png)

@@ -29,7 +29,7 @@ Met selectief publiceren kunt u bijvoorbeeld werken aan elementen voor producten
 
 >[!NOTE]
 >
->*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u ** activa aan en van omslagen verplaatst het waarvan omslagbezit aan **[!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
+>*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u **&#x200B; activa aan en van omslagen verplaatst het waarvan omslagbezit aan &#x200B;** [!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
 
 Als u later besluit de **[!UICONTROL Selective Publish]** -instellingen in een map te wijzigen, hebben deze wijzigingen alleen invloed op nieuwe elementen die u vanaf dat punt uploadt naar die map. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]** .
 
@@ -44,10 +44,10 @@ U kunt **[!UICONTROL Immediately]**, **[!UICONTROL On Activation]** of **[!UICON
 
 Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
 
-* [ publiceert selectief activa aan Dynamische Media of Experience Manager gebruikend leidt Publicatie ](#selective-publish-manage-publication).
-* [ unpublish selectief activa van Dynamische Media of Experience Manager gebruikend leidt Publicatie ](#selective-unpublish-manage-publication).
-* [ publiceer activa aan Dynamische Media of Experience Manager gebruikend Snel publiceren ](#quick-publish-aem-dm).
-* [ publiceert of maakt selectief activa als onderzoeksresultaten ](#selective-publish-unpublish-search-results) ongedaan.
+* [&#x200B; publiceert selectief activa aan Dynamische Media of Experience Manager gebruikend leidt Publicatie &#x200B;](#selective-publish-manage-publication).
+* [&#x200B; unpublish selectief activa van Dynamische Media of Experience Manager gebruikend leidt Publicatie &#x200B;](#selective-unpublish-manage-publication).
+* [&#x200B; publiceer activa aan Dynamische Media of Experience Manager gebruikend Snel publiceren &#x200B;](#quick-publish-aem-dm).
+* [&#x200B; publiceert of maakt selectief activa als onderzoeksresultaten &#x200B;](#selective-publish-unpublish-search-results) ongedaan.
 
 **om selectieve het publiceren op het omslagniveau in Dynamische Media te vormen:**
 
@@ -64,7 +64,7 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
    | **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]** | Voor het publiceren naar dynamische media moet u de elementen synchroniseren met Dynamic Media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardinstelling in de **[!UICONTROL Dynamic Media Configuration]** . |
    | **[!UICONTROL Exclude everything in this folder subtree from Dynamic Media sync]** | Sluit alle elementen in deze substructuur uit van synchroniseren naar dynamische media. |
 
-   ![ selectief niveau van de Omslag publiceert ](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
+   ![&#x200B; selectief niveau van de Omslag publiceert &#x200B;](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
 1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Dynamic Media Publish mode]** . De optie **[!UICONTROL Dynamic Media Publish mode]** is altijd standaard ingesteld op de waarde die is ingesteld in **[!UICONTROL Dynamic Media Configuration]** . U kunt deze standaardwaarde voor **[!UICONTROL Dynamic Media Configuration]** echter handmatig overschrijven met een van de volgende opties.
 
@@ -89,7 +89,7 @@ Voordat u **[!UICONTROL Manage Publication]** kunt gebruiken om elementen select
 * De optie **[!UICONTROL Publish Assets]** in **[!UICONTROL Dynamic Media Configuration]** tot **[!UICONTROL Selective Publish]**
 * Configureerde selectieve publicatie op mapniveau.
 
-Zie [ een Dynamische configuratie van Media ](#configuring-dynamic-media-cloud-services) of [ vormen selectief het publiceren op het omslagniveau in Dynamische Media ](#selective-publish-configure-folder)
+Zie [&#x200B; een Dynamische configuratie van Media &#x200B;](#configuring-dynamic-media-cloud-services) of [&#x200B; vormen selectief het publiceren op het omslagniveau in Dynamische Media &#x200B;](#selective-publish-configure-folder)
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Zie [ een Dynamische configuratie van Media ](#configuring-dynamic-media-cloud-s
 
 >[!NOTE]
 >
->*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u ** activa aan en van omslagen verplaatst het waarvan omslagbezit aan **[!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
+>*het kopiëren* activa aan en van omslagen ontruimt de publicatiestaat van die activa. Nochtans, wanneer u **&#x200B; activa aan en van omslagen verplaatst het waarvan omslagbezit aan &#x200B;** [!UICONTROL Selective Publish]** wordt geplaatst, publiceert staat van die activa wordt gehandhaafd.
 
 **om activa aan Dynamische Media of Experience Manager selectief te publiceren gebruikend Manage Publication:**
 
@@ -181,7 +181,7 @@ U kunt **[!UICONTROL Quick Publish]** gebruiken voor eenvoudige gevallen van act
      >
      >Als **[!UICONTROL Quick Publish]** niet op de werkbalk wordt weergegeven, selecteert u de knop voor weglatingsteken en selecteert u vervolgens **[!UICONTROL Quick Publish]** in het lijstmenu.
 
-     ![ omslag-vlakke Snel publiceren aan Dynamische Media ](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+     ![&#x200B; omslag-vlakke Snel publiceren aan Dynamische Media &#x200B;](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
 1. Selecteer een van de volgende opties in de menulijst van **[!UICONTROL Quick Publish]** .
 
@@ -197,7 +197,7 @@ U kunt **[!UICONTROL Quick Publish]** gebruiken voor eenvoudige gevallen van act
 
 In de zoekresultaten kunt u elementen uit de verschillende elementmappen met verschillende publicatie-instellingen voor Dynamische media weergeven. Wanneer u meerdere elementen selecteert in zoekresultaten en elk element verschillende instellingen voor de publicatiemodus Dynamische media heeft, kunt u **[!UICONTROL Manage Publication]** activeren op de werkbalk om te publiceren of te publiceren.
 
-Zie ook [ activa van het Onderzoek in Experience Manager ](/help/assets/search-assets.md).
+Zie ook [&#x200B; activa van het Onderzoek in Experience Manager &#x200B;](/help/assets/search-assets.md).
 
 **om activa als onderzoeksresultaten selectief te publiceren of unpublish:**
 
@@ -207,7 +207,7 @@ Zie ook [ activa van het Onderzoek in Experience Manager ](/help/assets/search-a
 1. Selecteer in de rechterbovenhoek van de pagina het pictogram **[!UICONTROL List View]** .
 1. Selecteer het pictogram **[!UICONTROL Filters]** in de linkerbovenhoek van de pagina.
 
-   ![ de Mening van de Lijst en Filters in onderzoeksresultaten ](/help/assets/assets-dm/select-publish-search-result.png)
+   ![&#x200B; de Mening van de Lijst en Filters in onderzoeksresultaten &#x200B;](/help/assets/assets-dm/select-publish-search-result.png)
 
 1. Vouw in het linkerdeelvenster **[!UICONTROL Status]** uit en vouw vervolgens de **[!UICONTROL Dynamic Media]** zoekvoorspelling uit.
 1. Gebruik de selectievakjes **[!UICONTROL Published]** en **[!UICONTROL Unpublished]** om de zoekresultaten verder te verfijnen op basis van de gepubliceerde status van Dynamic Media-elementen.
@@ -268,10 +268,10 @@ U kunt **[!UICONTROL Timeline]** met **[!UICONTROL Card view]** , **[!UICONTROL 
 Wanneer u **[!UICONTROL List View]** gebruikt, wordt een extra kolom voor de publicatiestatus **[!UICONTROL Dynamic Media]** weergegeven.
    * In een map die is geconfigureerd voor synchronisatie met Dynamic Media, wordt standaard de kolom **[!UICONTROL Dynamic Media]** weergegeven.
    * Een omslag die *niet* wordt gevormd om aan Dynamische Media te synchroniseren toont niet de Dynamische kolom van Media.
-     ![ de Mening van de Lijst en Chronologie ](/help/assets/assets-dm/selective-publish-status-timeline.png)
+     ![&#x200B; de Mening van de Lijst en Chronologie &#x200B;](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Problemen met selectief publiceren oplossen {#selective-publish-troubleshoot}
 
 Een middel dat niet aan Dynamische Media wordt gesynchroniseerd maar een Dynamische Media heeft publicatieactie teweeggebracht op het resulteert in het volgende foutenbericht en de oplossing:
 
-![ Selectieve publiceer fout ](/help/assets/assets-dm/selective-publish-error.png)
+![&#x200B; Selectieve publiceer fout &#x200B;](/help/assets/assets-dm/selective-publish-error.png)

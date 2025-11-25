@@ -31,6 +31,6 @@ Deze functie is standaard uitgeschakeld. Als u deze functie wilt inschakelen, co
 
 1. Selecteer de optie **[!UICONTROL Detect MIME from content]** om het parseren van geüploade elementen in te schakelen om het MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
 
-   ![ chlimage_1-333 ](assets/chlimage_1-333.png)
+   ![&#x200B; chlimage_1-333 &#x200B;](assets/chlimage_1-333.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.

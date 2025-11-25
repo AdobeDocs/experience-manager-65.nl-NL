@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
 In de vorige stap werd u toegevoegd aan het gebruik van verwijzingen voor CMS-authoring zonder koptekst. U hebt geleerd welke soorten verwijzingen beschikbaar zijn en wat hun doeleinden zijn: Content References, Asset/Media References en Fragmentverwijzingen.
 
@@ -33,15 +33,15 @@ U kunt drie methoden gebruiken om metagegevens en tags toe te voegen:
 
 * Bij het maken van het fragment:
 
-  ![ creeer het Fragment van de Inhoud - verstrek Naam ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+  ![&#x200B; creeer het Fragment van de Inhoud - verstrek Naam &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
 * Het **lusje van Variaties** van de redacteur van het Fragment van de Inhoud laat u vooraf bepaalde **Markeringen** van uw project toevoegen:
 
-  ![ de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska ](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![&#x200B; de Redacteur van het Fragment van de Inhoud - de Rondjes van Alaska &#x200B;](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * Het **lusje van Meta-gegevens** van de redacteur van het Fragment van de Inhoud laat u zowel diverse gebieden van meta-gegevens, als vooraf bepaalde **Markeringen** van uw project toevoegen:
 
-  ![ de Redacteur van het Fragment van de Inhoud - Meta-gegevens ](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+  ![&#x200B; de Redacteur van het Fragment van de Inhoud - Meta-gegevens &#x200B;](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
    * Dit is ook direct toegankelijk gebruikend de **optie van Eigenschappen** in de toolbar van de console van Assets.
 

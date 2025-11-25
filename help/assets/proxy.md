@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
-Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. Als er een [!DNL Assets] -proxy is, kan dit worden gebruikt voor het laden van elementen voor rendering binnen Assets. Bijvoorbeeld, gebruikt de [ IDS volmachtsarbeider ](indesign.md) een [!DNL Adobe InDesign] Server om dossiers voor gebruik in Assets te verwerken.
+Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. Als er een [!DNL Assets] -proxy is, kan dit worden gebruikt voor het laden van elementen voor rendering binnen Assets. Bijvoorbeeld, gebruikt de [&#x200B; IDS volmachtsarbeider &#x200B;](indesign.md) een [!DNL Adobe InDesign] Server om dossiers voor gebruik in Assets te verwerken.
 
 Wanneer de proxy een aparte [!DNL Experience Manager] -instantie is, wordt de belasting van de [!DNL Experience Manager] -ontwerpinstantie(s) verminderd. Standaard voert [!DNL Assets] de elementverwerkingstaken uit in dezelfde JVM (extern via Proxy) om de belasting van de [!DNL Experience Manager] -ontwerpinstantie te verminderen.
 
@@ -73,15 +73,15 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Proxy Worker {#proxy-worker}
 
-Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. De arbeiders verblijven op de volmachtsinstantie en moeten [ uitstellen JobProcessor ](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider worden erkend.
+Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. De arbeiders verblijven op de volmachtsinstantie en moeten [&#x200B; uitstellen JobProcessor &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider worden erkend.
 
 >[!NOTE]
 >
->De worker moet [ uitputtend JobProcessor ](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider te worden erkend.
+>De worker moet [&#x200B; uitputtend JobProcessor &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider te worden erkend.
 
 ### Client-API {#client-api}
 
-[`JobService` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
+[`JobService` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -117,7 +117,7 @@ Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar
 
 >[!NOTE]
 >
->Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server [ en ](indesign.md#configuring-the-proxy-worker-for-indesign-server) configuratie van de Diensten van de Wolk [ voor meer informatie.](../sites-developing/extending-cloud-config.md)
+>Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server [&#x200B; en &#x200B;](indesign.md#configuring-the-proxy-worker-for-indesign-server) configuratie van de Diensten van de Wolk [&#x200B; voor meer informatie.](../sites-developing/extending-cloud-config.md)
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -136,7 +136,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [ IDS volmachtsarbeider ](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van de activa van InDesign uit te besteden.
+De [&#x200B; IDS volmachtsarbeider &#x200B;](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van de activa van InDesign uit te besteden.
 
 U kunt ook uw eigen [!DNL Assets] proxy-worker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw [!DNL Assets] -verwerkingstaken verzendt en uitbesteedt.
 
@@ -156,13 +156,13 @@ Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
 In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven hoe u moet doorgaan:
 
-![ chlimage_1-249 ](assets/chlimage_1-249.png)
+![&#x200B; chlimage_1-249 &#x200B;](assets/chlimage_1-249.png)
 
 >[!NOTE]
 >
 >In de volgende stappen worden InDesign-equivalenten als referentievoorbeelden aangegeven.
 
-1. A [ het Verdelen baan ](https://sling.apache.org/site/eventing-and-jobs.html) wordt gebruikt, zodat moet u een baanonderwerp voor uw gebruiksgeval bepalen.
+1. A [&#x200B; het Verdelen baan &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) wordt gebruikt, zodat moet u een baanonderwerp voor uw gebruiksgeval bepalen.
 
    Zie `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker als voorbeeld.
 

@@ -27,7 +27,7 @@ Met dit document krijgt u inzicht in de inhoud zonder kop, hoe AEM koploze inhou
 
 Sinds de opkomst van gebruiksvriendelijke, grootschalige contentbeheersystemen (CMS&#39;s) hebben organisaties deze als centrale locatie gebruikt voor het beheer van berichten, branding en communicatie. Het gebruik van de CMS als centraal punt voor het beheer van ervaringen heeft geleid tot een verbeterde efficiëntie doordat het niet nodig is taken in verschillende systemen te dupliceren.
 
-![ de klassieke volledig-stapel CMS ](/help/journey-headless/developer/assets/full-stack.png)
+![&#x200B; de klassieke volledig-stapel CMS &#x200B;](/help/journey-headless/developer/assets/full-stack.png)
 
 In een CMS met volledige stapel bevindt alle functionaliteit voor het manipuleren van inhoud zich in de CMS. De functies van het systeem bestaan uit verschillende onderdelen van de CMS-stapel. De full-stack oplossing heeft veel voordelen.
 
@@ -38,7 +38,7 @@ In een CMS met volledige stapel bevindt alle functionaliteit voor het manipulere
 
 Als dus een nieuw kanaal moet worden toegevoegd of ondersteuning voor nieuwe soorten ervaringen is vereist, kunnen een (of meer) nieuwe componenten in de stapel worden ingevoegd en is er slechts één plaats om wijzigingen aan te brengen.
 
-![ Toevoegend een nieuw kanaal aan de stapel ](/help/journey-headless/developer/assets/adding-channel.png)
+![&#x200B; Toevoegend een nieuw kanaal aan de stapel &#x200B;](/help/journey-headless/developer/assets/adding-channel.png)
 
 Nochtans wordt de ingewikkeldheid van de gebiedsdelen binnen de stapel snel duidelijk aangezien andere punten in de stapel moeten worden aangepast om de veranderingen aan te passen.
 
@@ -48,7 +48,7 @@ Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meest
 
 Als we het hebben over een CMS zonder kop, beheert de CMS de inhoud en blijft ze leveren aan de consument. Nochtans, door slechts de **inhoud** op een gestandaardiseerde manier te leveren, weglaat een headless CMS de definitieve output die teruggeeft, verlatend de **presentatie** van de inhoud aan de verbruikende dienst.
 
-![ Headless CMS ](/help/journey-headless/developer/assets/headless-cms.png)
+![&#x200B; Headless CMS &#x200B;](/help/journey-headless/developer/assets/headless-cms.png)
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaringen, progressieve webapps (PWA&#39;s), enzovoort, nemen inhoud van de CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
@@ -74,13 +74,13 @@ Hartelijk dank voor de start van uw AEM-reis zonder hoofd! Nu u dit document lee
 * Begrijp de basisconcepten van inhoud zonder kop levering.
 * Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
 
-Bouw op deze kennis voort en ga uw onophoudelijke vertaalreis van AEM door het document [ te herzien begonnen worden met de hoofdloze vertaling van AEM ](getting-started.md) waar u een overzicht van zult hebben hoe AEM hoofdloze inhoud beheert en zijn vertaalhulpmiddelen te kennen krijgt.
+Bouw op deze kennis voort en ga uw onophoudelijke vertaalreis van AEM door het document [&#x200B; te herzien begonnen worden met de hoofdloze vertaling van AEM &#x200B;](getting-started.md) waar u een overzicht van zult hebben hoe AEM hoofdloze inhoud beheert en zijn vertaalhulpmiddelen te kennen krijgt.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien begonnen wordt met de hoofdloze vertaling van AEM, ](getting-started.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen worden vermeld, maar zij worden niet vereist om op de hoofdloze reis verder te gaan.
+Terwijl het wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [&#x200B; te herzien begonnen wordt met de hoofdloze vertaling van AEM, &#x200B;](getting-started.md) het volgende zijn sommige extra, facultatieve middelen die een diepere duik op sommige die concepten in dit document doen worden vermeld, maar zij worden niet vereist om op de hoofdloze reis verder te gaan.
 
-* [ MSM en Vertaling ](/help/sites-administering/msm-and-translation.md) - de details van de Manager van de Multisite van AEM en hoe het met zijn vertaalhulpmiddelen werkt
-* Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; MSM en Vertaling &#x200B;](/help/sites-administering/msm-and-translation.md) - de details van de Manager van de Multisite van AEM en hoe het met zijn vertaalhulpmiddelen werkt
+* Een [&#x200B; Inleiding aan AEM als Headless CMS &#x200B;](/help/sites-developing/headless/introduction.md)
+* Het [&#x200B; Portaal van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

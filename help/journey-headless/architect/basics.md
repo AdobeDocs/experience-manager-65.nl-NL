@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [ Reis van de Architect van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
+Aan het begin van de [&#x200B; Reis van de Architect van de Inhoud van AEM Headless &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
 
 Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud kunt modelleren voor uw AEM-project zonder kop.
 
@@ -74,7 +74,7 @@ Bijvoorbeeld, bepaal het gebied wachtend de naam van een leraar als **Tekst** en
 
 Bijvoorbeeld:
 
-![ Inhoud die met de Fragmenten van de Inhoud modelleert ](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
+![&#x200B; Inhoud die met de Fragmenten van de Inhoud modelleert &#x200B;](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
 
 ## Gegevenstypen {#data-types}
 
@@ -116,7 +116,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 
-Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0} Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
+Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0&rbrace; Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
 
 Met deze verwijzing kunt u *diverse Modellen van het Fragment van de Inhoud* verbinden om onderlinge verhoudingen te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
 
@@ -148,7 +148,7 @@ U kunt deze interrelaties vertegenwoordigen met fragmentverwijzingen, zoals u (d
 
 ## Volgende functies {#whats-next}
 
-Nu u de grondbeginselen hebt geleerd, is de volgende stap [ te leren over het Creëren van Modellen van het Fragment van de Inhoud in AEM ](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
+Nu u de grondbeginselen hebt geleerd, is de volgende stap [&#x200B; te leren over het Creëren van Modellen van het Fragment van de Inhoud in AEM &#x200B;](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -158,6 +158,6 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap [ te leren over het Cr
 
 * [Concepten ontwerpen](/help/sites-authoring/author.md)
 
-* [ Basis Behandelend ](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
+* [&#x200B; Basis Behandelend &#x200B;](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
 
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)

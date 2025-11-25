@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Verklarende woordenlijst{#glossary}
 
-Deze verklarende woordenlijst maakt een lijst (alfabetisch) details van alle Geleverbare documenten van [ Controlelijst van het Project ](/help/managing/best-practices-checklist.md).
+Deze verklarende woordenlijst maakt een lijst (alfabetisch) details van alle Geleverbare documenten van [&#x200B; Controlelijst van het Project &#x200B;](/help/managing/best-practices-checklist.md).
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ Ervoor zorgen dat de vereiste niveaus van systeemtoegang aan alle rollen zijn ve
 
 ### Adobe Security Checklist {#adobe-security-checklist}
 
-[ Controlelijst van de Veiligheid van Adobe ](/help/sites-administering/security-checklist.md) is officiële controlelijst die wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) bij installatie veilig is. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
+[&#x200B; Controlelijst van de Veiligheid van Adobe &#x200B;](/help/sites-administering/security-checklist.md) is officiële controlelijst die wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) bij installatie veilig is. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Er kunnen details worden geregistreerd, bijvoorbeeld over de geïmplementeerde t
 
 ### AEM Administrator Training {#aem-administrator-training}
 
-Opleiding voor administratief personeel van de oplossing. Zie de [ Diensten van de Opleiding van Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor administratief personeel van de oplossing. Zie de [&#x200B; Diensten van de Opleiding van Adobe &#x200B;](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
 ### AEM Author Training {#aem-author-training}
 
-Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [ Diensten van de Opleiding van Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [&#x200B; Diensten van de Opleiding van Adobe &#x200B;](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
 ### AEM-certificeringsexamen {#aem-certification-exam}
 
-Zorg ervoor dat de aangewezen personen worden geregistreerd om de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) te nemen.
+Zorg ervoor dat de aangewezen personen worden geregistreerd om de relevante [&#x200B; certificatieexamens &#x200B;](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) te nemen.
 
 ### AEM Certified {#aem-certified}
 
-Zorg ervoor dat de aangewezen persoon de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) heeft overgegaan.
+Zorg ervoor dat de aangewezen persoon de relevante [&#x200B; certificatieexamens &#x200B;](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) heeft overgegaan.
 
 ### AEM Technical Training {#aem-technical-training}
 
@@ -92,7 +92,7 @@ De routekaart van de Klant is samengesteld uit mijlpalen op hoog niveau en bedri
 
 ### Definitie toepassingsarchitectuur {#application-architecture-definition}
 
-De [ toepassingsarchitectuur ](/help/managing/best-practices.md#development-preparation) zou het gedrag van de voorgestelde toepassingen duidelijk moeten bepalen.
+De [&#x200B; toepassingsarchitectuur &#x200B;](/help/managing/best-practices.md#development-preparation) zou het gedrag van de voorgestelde toepassingen duidelijk moeten bepalen.
 
 Het is gericht op:
 
@@ -504,7 +504,7 @@ Resultaten van een haalbaarheidsstudie voor zowel AEM als het ontwerp van de opl
 
 ### Eindcontract {#finalized-contract}
 
-Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op het [ Ontwerp van het Contract ](#contract-draft).
+Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op het [&#x200B; Ontwerp van het Contract &#x200B;](#contract-draft).
 
 ### Functionaliteit van de door belanghebbenden aanvaarde oplossing {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -625,7 +625,7 @@ Implementatie van de ontworpen workflows.
 Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoering. De Commissie dient te overwegen:
 
 * Bewerkingen
-*  Onderhoud
+* Onderhoud
 * Compatibiliteit
 * Herbruikbaarheid
 * Beveiliging
@@ -903,7 +903,7 @@ Bepaal het communicatie plan voor zowel bedrijfs belanghebbenden als het project
 
 ### Projectinspanningen - definitieve ramingen {#project-efforts-final-estimates}
 
-De [ aanvankelijke ramingen ](#project-efforts-initial-estimates) waren hoog niveau en gemaakt volgens de vereisten op hoog niveau voor de implementatie.
+De [&#x200B; aanvankelijke ramingen &#x200B;](#project-efforts-initial-estimates) waren hoog niveau en gemaakt volgens de vereisten op hoog niveau voor de implementatie.
 
 Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te verstrekken. De ramingen moeten worden verstrekt door elk geschikt projectleider, met inbegrip van projectbeheer, raadpleging, architectuur, tests, en ontwikkeling.
 
@@ -968,7 +968,7 @@ Deze wordt gebruikt met de Runbook om stappen en controles vóór en na de insta
 
 >[!NOTE]
 >
->Voor een voorbeeld, zie de [ Nota&#39;s van de Versie van AEM ](/help/release-notes/release-notes.md).
+>Voor een voorbeeld, zie de [&#x200B; Nota&#39;s van de Versie van AEM &#x200B;](/help/release-notes/release-notes.md).
 
 ### Release die wordt uitgevoerd op productieomgeving {#release-running-on-production-environment}
 
@@ -1287,7 +1287,7 @@ Het het Testen Concept is het overzicht op hoog niveau van het testen voor het p
 
 ### Testplannen {#testing-plans}
 
-Deze plannen schetsen meer in detail de uitvoering van tests voor elke fase van ontwikkeling en zijn gebaseerd op de [ Teststrategie ](#testing-strategy).
+Deze plannen schetsen meer in detail de uitvoering van tests voor elke fase van ontwikkeling en zijn gebaseerd op de [&#x200B; Teststrategie &#x200B;](#testing-strategy).
 
 ### Testbereik {#testing-scope}
 

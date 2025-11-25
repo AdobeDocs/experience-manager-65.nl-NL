@@ -24,10 +24,10 @@ Er zijn twee soorten eindpunten in AEM:
 
 * Algemeen
    * Beschikbaar voor gebruik door alle sites.
-   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [&#x200B; Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
    * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder de configuraties van Plaatsen zouden moeten worden gedeeld, dan zouden deze onder de globale configuraties van Plaatsen moeten worden gecreeerd.
 * Siteconfiguraties:
-   * Komt overeen met een configuratie van Plaatsen, zoals die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
+   * Komt overeen met een configuratie van Plaatsen, zoals die in [&#x200B; Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
    * Specifiek voor een opgegeven site/project.
    * Een configuratie-specifiek eindpunt van Plaatsen zal de Modellen van het Fragment van de Inhoud van die specifieke configuratie van Plaatsen samen met die van de globale configuratie van Plaatsen gebruiken.
 
@@ -54,11 +54,11 @@ Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
 ## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
 
-Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [ de Fragmenten van de Inhoud - Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [&#x200B; de Fragmenten van de Inhoud - Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Als het [ gebruik van de modellen van het inhoudsfragment niet ](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
+>Als het [&#x200B; gebruik van de modellen van het inhoudsfragment niet &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
 
 Om het overeenkomstige eindpunt toe te laten:
 

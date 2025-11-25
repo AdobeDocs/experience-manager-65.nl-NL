@@ -17,12 +17,12 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | Dit artikel |
 
 [!DNL Adobe Workfront] is een werkbeheertoepassing waarmee u de volledige levenscyclus van het werk op één locatie kunt beheren. Dankzij de integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid en tijd-aan-markt van inhoud verbeteren door het werk en het beheer van digitale elementen intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
 
-De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde bedrijfsprocessen mogelijk met end-to-end workflows en biedt persoonlijke end-to-end clientervaringen en centrale opslag. Adobe biedt een standaardaansluiting en een verbeterde aansluiting om de twee oplossingen te integreren. Zie de gesteunde eigenschappen hieronder voor een vergelijking en zie [ wat in  [!DNL enhanced connector] ](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience) nieuw is.
+De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde bedrijfsprocessen mogelijk met end-to-end workflows en biedt persoonlijke end-to-end clientervaringen en centrale opslag. Adobe biedt een standaardaansluiting en een verbeterde aansluiting om de twee oplossingen te integreren. Zie de gesteunde eigenschappen hieronder voor een vergelijking en zie [&#x200B; wat in  [!DNL enhanced connector] &#x200B;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience) nieuw is.
 
 [!DNL Workfront for Experience Manage enhanced connector] biedt uw organisatie de volgende mogelijkheden:
 
@@ -32,7 +32,7 @@ De [!DNL Workfront for Experience Manager enhanced connector] maakt verbeterde b
 * Stel Workfront-objectstatussen in op basis van configureerbare voorwaarden met Experience Manager-workflows.
 * Publiceer middelen naar de publicatieomgeving van Experience Manager of naar Brand Portal.
 
-Zie de platformsteun en [ eerste vereisten voor de verbeterde schakelaar ](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+Zie de platformsteun en [&#x200B; eerste vereisten voor de verbeterde schakelaar &#x200B;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
@@ -40,9 +40,9 @@ Zie de platformsteun en [ eerste vereisten voor de verbeterde schakelaar ](https
 >
 >* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] vrijgeven die deze connector redundant maken. Als dit gebeurt, kunnen klanten worden gevraagd over te stappen van het gebruik van deze connector.
 >
->* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, navigeer aan de `digital.hoodoo` groep beschikbaar in de linkerruit in [ Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
+>* Adobe ondersteunt verbeterde connectorversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Om de verbeterde schakelaarversie te controleren, navigeer aan de `digital.hoodoo` groep beschikbaar in de linkerruit in [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
->* Zie [ de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar ](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [.](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)
+>* Zie [&#x200B; de certificatieexamen van de Partner voor Workfront voor Experience Manager Assets verbeterde schakelaar &#x200B;](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie {de Gids van het 0} Examen [.](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)
 
 ## Verschillende integraties tussen [!DNL Assets] en [!DNL Workfront] vergelijken {#feature-parity-matrix}
 

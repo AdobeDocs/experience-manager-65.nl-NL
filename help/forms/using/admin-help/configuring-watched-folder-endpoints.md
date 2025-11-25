@@ -27,7 +27,7 @@ Voordat u een gecontroleerd mapeindpunt configureert, configureert u de service 
 * Om attributen te vormen die gemeenschappelijk voor alle gelete op omslageindpunten zijn
 * Standaardwaarden opgeven voor alle eindpunten van de gecontroleerde map
 
-Nadat u de service Gecontroleerde map hebt geconfigureerd, voegt u een eindpunt voor gecontroleerde mappen voor de doelservice toe. Wanneer het toevoegen van het eindpunt, plaatst u waarden, zoals de de dienstnaam en verrichtingsnaam om te roepen wanneer de dossiers of de omslagen in de inputomslag van de gevormde Gecontroleerde dienst van de Omslag worden geplaatst. Voor details bij het vormen van de Gecontroleerde dienst van de Omslag, zie [ Gecontroleerde de dienstmontages van de Omslag ](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+Nadat u de service Gecontroleerde map hebt geconfigureerd, voegt u een eindpunt voor gecontroleerde mappen voor de doelservice toe. Wanneer het toevoegen van het eindpunt, plaatst u waarden, zoals de de dienstnaam en verrichtingsnaam om te roepen wanneer de dossiers of de omslagen in de inputomslag van de gevormde Gecontroleerde dienst van de Omslag worden geplaatst. Voor details bij het vormen van de Gecontroleerde dienst van de Omslag, zie [&#x200B; Gecontroleerde de dienstmontages van de Omslag &#x200B;](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
 
 ## Een controlemap maken {#creating-a-watched-folder}
 
@@ -87,7 +87,7 @@ De service Gecontroleerde map handelt het maken, bijwerken en verwijderen van de
 
 In dit diagram ziet u hoe een aanroepingsverzoek in een gecontroleerde map wordt verwerkt.
 
-![ en_watchedfolder ](assets/en_watchedfolder.png)
+![&#x200B; en_watchedfolder &#x200B;](assets/en_watchedfolder.png)
 
 Het proces om de dienst aan te halen die gecontroleerde omslagen gebruikt is als volgt:
 
@@ -96,10 +96,10 @@ Het proces om de dienst aan te halen die gecontroleerde omslagen gebruikt is als
 1. De provider.file_scan_service voert de volgende taken uit:
 
 
-   * Hiermee wordt de invoermap gescand op bestanden of mappen die overeenkomen met het include-bestandspatroon en worden bestanden of mappen voor het opgegeven bestandspatroon uitgesloten. De oudste bestanden of mappen worden als eerste opgepakt. Bestanden en mappen die ouder zijn dan de wachttijd worden ook opgehaald. In één scan is het aantal bestanden of mappen dat wordt verwerkt, afhankelijk van de grootte van de batch. Voor informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns). Voor informatie over het plaatsen van de partijgrootte, zie [ Gecontroleerde de dienstmontages van de Omslag ](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
-   * Hiermee worden de bestanden of mappen opgehaald voor verwerking. Als de bestanden of mappen niet volledig zijn gedownload, worden ze opgehaald in de volgende scan. Om ervoor te zorgen dat mappen volledig worden gedownload, moeten beheerders een map met een naam maken met het bestandspatroon voor uitsluiten. Nadat de map alle bestanden bevat, moet de naam ervan worden gewijzigd in het patroon dat is opgegeven in het bestandspatroon voor opnemen. Deze stap zorgt ervoor dat de omslag alle noodzakelijke dossiers nodig heeft om de dienst aan te halen. Voor meer informatie over het verzekeren dat de omslagen volledig worden gedownload, zie [ Uiteinden en trucs voor gecontroleerde omslagen ](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Hiermee wordt de invoermap gescand op bestanden of mappen die overeenkomen met het include-bestandspatroon en worden bestanden of mappen voor het opgegeven bestandspatroon uitgesloten. De oudste bestanden of mappen worden als eerste opgepakt. Bestanden en mappen die ouder zijn dan de wachttijd worden ook opgehaald. In één scan is het aantal bestanden of mappen dat wordt verwerkt, afhankelijk van de grootte van de batch. Voor informatie over dossierpatronen, zie [&#x200B; Ongeveer dossierpatronen &#x200B;](configuring-watched-folder-endpoints.md#about-file-patterns). Voor informatie over het plaatsen van de partijgrootte, zie [&#x200B; Gecontroleerde de dienstmontages van de Omslag &#x200B;](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+   * Hiermee worden de bestanden of mappen opgehaald voor verwerking. Als de bestanden of mappen niet volledig zijn gedownload, worden ze opgehaald in de volgende scan. Om ervoor te zorgen dat mappen volledig worden gedownload, moeten beheerders een map met een naam maken met het bestandspatroon voor uitsluiten. Nadat de map alle bestanden bevat, moet de naam ervan worden gewijzigd in het patroon dat is opgegeven in het bestandspatroon voor opnemen. Deze stap zorgt ervoor dat de omslag alle noodzakelijke dossiers nodig heeft om de dienst aan te halen. Voor meer informatie over het verzekeren dat de omslagen volledig worden gedownload, zie [&#x200B; Uiteinden en trucs voor gecontroleerde omslagen &#x200B;](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
    * Hiermee verplaatst u de bestanden of mappen naar de werkgebiedmap nadat u ze hebt geselecteerd voor verwerking.
-   * Hiermee worden de bestanden of mappen in de werkgebiedmap omgezet in de juiste invoer op basis van de parametertoewijzingen voor eindpuntinvoer. Voor voorbeelden van de afbeeldingen van de inputparameter, zie [ Uiteinden en trucs voor gecontroleerde omslagen ](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Hiermee worden de bestanden of mappen in de werkgebiedmap omgezet in de juiste invoer op basis van de parametertoewijzingen voor eindpuntinvoer. Voor voorbeelden van de afbeeldingen van de inputparameter, zie [&#x200B; Uiteinden en trucs voor gecontroleerde omslagen &#x200B;](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 
 1. De doeldienst die voor het eindpunt wordt gevormd wordt of synchroon of asynchroon aangehaald. De doeldienst wordt aangehaald gebruikend de gebruikersnaam en het wachtwoord dat voor het eindpunt wordt gevormd.
@@ -109,7 +109,7 @@ Het proces om de dienst aan te halen die gecontroleerde omslagen gebruikt is als
 
 1. De provider.file_write_results_service handelt de reactie of de mislukking van de aanroeping van de doeldienst af. Wanneer succesvol, wordt de output bewaard aan de resultaatomslag die op de eindpuntconfiguratie wordt gebaseerd. De provider.file_write_results_service bewaart ook de bron als het eindpunt wordt gevormd om de resultaten op succesvolle voltooiing te bewaren.
 
-   Wanneer de aanroeping van de doeldienst in een mislukking resulteert, registreert provider.file_write_results_service de oorzaak van de mislukking in een mislukking.log dossier en plaatst dat dossier in de mislukkingsomslag. De mislukkingsomslag wordt gecreeerd gebaseerd op de configuratieparameters die voor het eindpunt worden gespecificeerd. Wanneer de beheerder de optie Bij mislukken behouden voor de eindpuntconfiguratie instelt, kopieert provider.file_write_results_service ook de bronbestanden naar de mislukkingsmap. Voor informatie over het terugkrijgen van dossiers van de mislukkingsomslag, zie [ de punten van de Mislukking en terugwinning ](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+   Wanneer de aanroeping van de doeldienst in een mislukking resulteert, registreert provider.file_write_results_service de oorzaak van de mislukking in een mislukking.log dossier en plaatst dat dossier in de mislukkingsomslag. De mislukkingsomslag wordt gecreeerd gebaseerd op de configuratieparameters die voor het eindpunt worden gespecificeerd. Wanneer de beheerder de optie Bij mislukken behouden voor de eindpuntconfiguratie instelt, kopieert provider.file_write_results_service ook de bronbestanden naar de mislukkingsmap. Voor informatie over het terugkrijgen van dossiers van de mislukkingsomslag, zie [&#x200B; de punten van de Mislukking en terugwinning &#x200B;](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Instellingen voor het eindpunt van gecontroleerde mappen {#watched-folder-endpoint-settings}
@@ -146,7 +146,7 @@ Wanneer bestanden in de controlemap worden neergezet, worden de bestanden in de 
 
 **wacht Tijd:** de tijd, in milliseconden, om te wachten alvorens u een omslag of een dossier aftasten nadat het wordt gecreeerd. Als de wachttijd bijvoorbeeld 3.600.000 milliseconden (een uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepikt nadat 59 minuten zijn verstreken. De standaardwaarde is 0.
 
-Deze instelling is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Zo voorkomt u dat de gecontroleerde map het bestand scant als het nog geen tien minuten oud is.
+Deze instelling is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&ast;60 &ast;1000 milliseconden. Zo voorkomt u dat de gecontroleerde map het bestand scant als het nog geen tien minuten oud is.
 
 **sluit het Patroon van het Dossier uit:** een puntkomma **;** afgebakende lijst van patronen die een gelete op omslag gebruikt om te bepalen welke dossiers en omslagen om af te tasten en op te nemen. Bestanden of mappen met dit patroon worden niet gescand voor verwerking.
 
@@ -154,31 +154,31 @@ Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. D
 
 U kunt bestandspatronen gebruiken om uit te sluiten:
 
-* Bestanden met specifieke bestandsextensies, bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Bestanden met specifieke namen, bijvoorbeeld gegevens.&amp;ast; zou dossiers en omslagen genoemd *data1*, *data2* uitsluiten, etc.
+* Bestanden met specifieke bestandsextensies, bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf.
+* Bestanden met specifieke namen, bijvoorbeeld gegevens.&ast; zou dossiers en omslagen genoemd *data1*, *data2* uitsluiten, etc.
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
-Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).
+Voor meer informatie over dossierpatronen, zie [&#x200B; Ongeveer dossierpatronen &#x200B;](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**omvat het Patroon van het Dossier:** (Verplicht) een puntkomma **;** afgebakende lijst van patronen die de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers om af te tasten en op te nemen. Als het Include-bestandspatroon bijvoorbeeld input&amp;amp is;ast; worden alle bestanden en mappen opgehaald die overeenkomen met de invoer&amp;ast;. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort.
+**omvat het Patroon van het Dossier:** (Verplicht) een puntkomma **;** afgebakende lijst van patronen die de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers om af te tasten en op te nemen. Als het Include-bestandspatroon bijvoorbeeld input&amp;amp is;ast; worden alle bestanden en mappen opgehaald die overeenkomen met de invoer&ast;. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort.
 
 De standaardwaarde is &amp;ast en geeft alle bestanden en mappen aan.
 
 U kunt bestandspatronen gebruiken om het volgende op te nemen:
 
-* Bestanden met specifieke bestandsextensies, bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Bestanden met specifieke namen, bijvoorbeeld gegevens.&amp;ast; zou dossiers en omslagen genoemd *data1* omvatten, *data2*, etc.
+* Bestanden met specifieke bestandsextensies, bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf.
+* Bestanden met specifieke namen, bijvoorbeeld gegevens.&ast; zou dossiers en omslagen genoemd *data1* omvatten, *data2*, etc.
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
-Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).
+Voor meer informatie over dossierpatronen, zie [&#x200B; Ongeveer dossierpatronen &#x200B;](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
 **Omslag van het Resultaat:** de omslag waar de bewaarde resultaten worden opgeslagen. Als de resultaten niet in deze map worden weergegeven, controleert u de map met foutmeldingen. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. Deze waarde kan een absoluut of relatief pad zijn met de volgende bestandspatronen:
@@ -200,7 +200,7 @@ Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](conf
 
 Als de waarde op 17 juli 2009 bijvoorbeeld 20:00 is en u geeft `C:/Test/WF0/failure/%Y/%M/%D/%H/` op, is de resultaatmap `C:/Test/WF0/failure/2009/07/17/20` .
 
-Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaakt. De standaardwaarde is result/%Y/%M/%D/. Dit is de resultatenmap in de gecontroleerde map. Voor meer informatie over dossierpatronen, zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).
+Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaakt. De standaardwaarde is result/%Y/%M/%D/. Dit is de resultatenmap in de gecontroleerde map. Voor meer informatie over dossierpatronen, zie [&#x200B; Ongeveer dossierpatronen &#x200B;](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De s
 
 **Letterlijk:** de gecontroleerde omslag gebruikt de waarde ingegaan op het gebied aangezien het wordt getoond. Alle basistypen van Java worden ondersteund. Als een API bijvoorbeeld invoer gebruikt zoals String, long, int en Boolean, wordt de tekenreeks omgezet in het juiste type en wordt de service aangeroepen.
 
-**Variabele:** de ingegane waarde is een dossierpatroon dat de gecontroleerde omslag gebruikt om de input te kiezen. Als er bijvoorbeeld de coderingswachtwoordservice is, waarbij het invoerdocument een PDF-bestand moet zijn, kan de gebruiker &amp;ast;.pdf gebruiken als bestandspatroon. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
+**Variabele:** de ingegane waarde is een dossierpatroon dat de gecontroleerde omslag gebruikt om de input te kiezen. Als er bijvoorbeeld de coderingswachtwoordservice is, waarbij het invoerdocument een PDF-bestand moet zijn, kan de gebruiker &ast;.pdf gebruiken als bestandspatroon. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
 
 **Toewijzingen van de Parameter van de Output:** Gebruikt om de output van de dienst en de verrichting te vormen. Welke instellingen beschikbaar zijn, is afhankelijk van de service die het gecontroleerde mapeindpunt gebruikt.
 
@@ -242,13 +242,13 @@ De gecontroleerde output van de Omslag kan één enkel document, een lijst van d
 
 Beheerders kunnen het type bestand opgeven dat een service kan aanroepen. Voor elke gecontroleerde map kunnen meerdere bestandspatronen worden ingesteld. Een bestandspatroon kan een van de volgende bestandseigenschappen zijn:
 
-* Bestanden met specifieke bestandsextensies. Bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Bestanden met specifieke namen. Bijvoorbeeld gegevens.&amp;ast;
+* Bestanden met specifieke bestandsextensies. Bijvoorbeeld &ast;.dat, &ast;.xml, &ast;.pdf
+* Bestanden met specifieke namen. Bijvoorbeeld gegevens.&ast;
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 De beheerder kan het bestandspatroon van de uitvoermap definiëren waarin de resultaten worden opgeslagen. Voor de uitvoermappen (resultaat, behoud en fout) kan de beheerder een van de volgende bestandspatronen opgeven:
 
@@ -270,7 +270,7 @@ Toewijzingen voor uitvoerparameters kunnen ook aanvullende patronen opgeven, zoa
 * %F = Source-bestandsnaam
 * %E = Source-bestandsnaamextensie
 
-Als het toewijzingspatroon van de uitvoerparameter eindigt met &quot;File.separator&quot; (dit is het padscheidingsteken), wordt een map gemaakt en wordt de inhoud naar die map gekopieerd. Als het patroon niet eindigt met &quot;File.separator&quot;, wordt de inhoud (resultaatbestand of -map) met die naam gemaakt. Voor meer informatie over de afbeeldingen van de outputparameter, zie [ Uiteinden en trucs voor gecontroleerde omslagen ](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Als het toewijzingspatroon van de uitvoerparameter eindigt met &quot;File.separator&quot; (dit is het padscheidingsteken), wordt een map gemaakt en wordt de inhoud naar die map gekopieerd. Als het patroon niet eindigt met &quot;File.separator&quot;, wordt de inhoud (resultaatbestand of -map) met die naam gemaakt. Voor meer informatie over de afbeeldingen van de outputparameter, zie [&#x200B; Uiteinden en trucs voor gecontroleerde omslagen &#x200B;](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Over vertragen {#about-throttling}
 
@@ -287,8 +287,8 @@ Gecontroleerde map scant de invoermap bij elk herhalingsinterval, haalt het aant
 Door deze functie voorkomt u dat Gecontroleerde map nieuwe taken aanroept wanneer de vorige taken niet zijn voltooid. Gecontroleerde map detecteert taken die worden uitgevoerd en verwerkt nieuwe taken op basis van de batchgrootte min de taken die worden uitgevoerd. Als het aantal voltooide taken in de tweede aanroep bijvoorbeeld slechts drie is en er nog één taak actief is, worden er door de gecontroleerde map slechts drie extra taken aangeroepen.
 
 * Controlemap is afhankelijk van het aantal bestanden in de werkgebiedmap om te bepalen hoeveel taken worden uitgevoerd. Als bestanden niet worden verwerkt in de werkgebiedmap, worden er geen taken meer aangeroepen in de gecontroleerde map. Als de batchgrootte bijvoorbeeld vier en drie taken is, wordt bij volgende aanroepen slechts één taak aangeroepen als de controlemap vier en drie taken is geïnstalleerd. Er zijn meerdere scenario&#39;s die ertoe kunnen leiden dat bestanden niet worden verwerkt in de werkgebiedmap. Wanneer taken zijn vastgezet, kan de beheerder het proces op de pagina met beheer van de formulierwerkstroom beëindigen, zodat de bestanden uit de werkgebiedmap worden verplaatst met de gecontroleerde map.
-* Als de Forms-server naar beneden gaat voordat de taken kunnen worden aangeroepen door de gecontroleerde map, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Voor informatie, zie [ de punten van de Mislukking en terugwinning ](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Als de Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Voor informatie, zie [ de punten van de Mislukking en terugwinning ](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Als de Forms-server naar beneden gaat voordat de taken kunnen worden aangeroepen door de gecontroleerde map, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Voor informatie, zie [&#x200B; de punten van de Mislukking en terugwinning &#x200B;](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Als de Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Voor informatie, zie [&#x200B; de punten van de Mislukking en terugwinning &#x200B;](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Prestaties en schaalbaarheid {#performance-and-scalability}
@@ -301,7 +301,7 @@ De gecontroleerde Omslag hangt van de dienst van de Planner voor het plannen, he
 
 ## Controlemappen in een cluster {#watched-folders-in-a-cluster}
 
-In een cluster is de gecontroleerde map afhankelijk van de planner van het Kwartet en de taakbeheerservice voor taakverdeling en overname bij storing. Voor meer informatie over de clustergedrag van Kwartz, zie [ Documentatie van Kwartz ](https://www.quartz-scheduler.org/documentation).
+In een cluster is de gecontroleerde map afhankelijk van de planner van het Kwartet en de taakbeheerservice voor taakverdeling en overname bij storing. Voor meer informatie over de clustergedrag van Kwartz, zie [&#x200B; Documentatie van Kwartz &#x200B;](https://www.quartz-scheduler.org/documentation).
 
 De gecontroleerde Omslag voert deze drie belangrijkste taken bij elke opiniepeiling uit:
 
@@ -315,18 +315,18 @@ Het gedrag voor taakverdeling en failover verandert afhankelijk van het feit of 
 
 Voor synchrone aanroepen bepaalt het taakverdelingsmechanisme van het Kwartz welk knooppunt de polling-gebeurtenis krijgt. De knoop die de opiniepeilingsgebeurtenis krijgt zal alle taken uitvoeren: scan de omslag, haalt de doeldienst aan, en behandelt de resultaten.
 
-![ en_synchwatchedfoldercluster ](assets/en_synchwatchedfoldercluster.png)
+![&#x200B; en_synchwatchedfoldercluster &#x200B;](assets/en_synchwatchedfoldercluster.png)
 
-Voor synchrone aanroepen, wanneer één knoop ontbreekt, verzendt de planner van het Kwartz nieuwe opiniepeilingsgebeurtenissen naar andere knopen. Oproepen die op de mislukte knoop begonnen zijn, zullen verloren gaan. Voor meer informatie over hoe te om de dossiers terug te krijgen verbonden aan de ontbroken baan, zie [ de punten van de Mislukking en terugwinning ](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Voor synchrone aanroepen, wanneer één knoop ontbreekt, verzendt de planner van het Kwartz nieuwe opiniepeilingsgebeurtenissen naar andere knopen. Oproepen die op de mislukte knoop begonnen zijn, zullen verloren gaan. Voor meer informatie over hoe te om de dossiers terug te krijgen verbonden aan de ontbroken baan, zie [&#x200B; de punten van de Mislukking en terugwinning &#x200B;](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ### Asynchrone gecontroleerde map in een cluster {#asynchronous-watched-folder-in-a-cluster}
 
 Voor asynchrone aanroepen bepaalt het taakverdelingsmechanisme van het Kwartz welk knooppunt de polling-gebeurtenis krijgt. De knoop die de opiniepeilingsgebeurtenis krijgt zal de inputomslag aftasten en de doeldienst aanhalen door het verzoek in de de dienstrij van de Manager van de Baan te plaatsen. Het taakbeheertaaktaaktaaktaakverdelingsmechanisme bepaalt op zijn beurt welk knooppunt het aanroepingsverzoek zal verwerken. Het is mogelijk dat zelfs alhoewel de knoop A tot het aanroepingsverzoek leidde, de knoop B omhoog verwerkend het verzoek beëindigt. Of het knooppunt dat de aanroepingsaanvraag heeft gestart, kan de aanvraag ook verwerken.
 
-![ nl_asynchwatchedfoldercluster ](assets/en_asynchwatchedfoldercluster.png)
+![&#x200B; nl_asynchwatchedfoldercluster &#x200B;](assets/en_asynchwatchedfoldercluster.png)
 
-Voor asynchrone aanroepen, wanneer één knoop ontbreekt, verzendt de planner van het Kwartz nieuwe opiniepeilingsgebeurtenissen naar andere knopen. Aanroepingsverzoeken die op het mislukte knooppunt zijn gemaakt, worden in de servicewachtrij van Taakbeheer geplaatst en worden voor verwerking naar andere knooppunten verzonden. Bestanden waarvoor geen aanroepingsverzoeken zijn gemaakt, blijven in de werkgebiedmap. Voor meer informatie over hoe te om de dossiers terug te krijgen verbonden aan de ontbroken baan, zie [ de punten van de Mislukking en terugwinning ](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Voor asynchrone aanroepen, wanneer één knoop ontbreekt, verzendt de planner van het Kwartz nieuwe opiniepeilingsgebeurtenissen naar andere knopen. Aanroepingsverzoeken die op het mislukte knooppunt zijn gemaakt, worden in de servicewachtrij van Taakbeheer geplaatst en worden voor verwerking naar andere knooppunten verzonden. Bestanden waarvoor geen aanroepingsverzoeken zijn gemaakt, blijven in de werkgebiedmap. Voor meer informatie over hoe te om de dossiers terug te krijgen verbonden aan de ontbroken baan, zie [&#x200B; de punten van de Mislukking en terugwinning &#x200B;](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Foutpunten en herstel {#failure-points-and-recovery}
@@ -374,11 +374,11 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 * Als u een gecontroleerde omslag op Vensters hebt die beelddossiers verwerkt, specificeer waarden voor de Include optie van het Patroon van het Dossier of van de Uitsluiting van het Patroon van het Dossier om de Vensters auto-geproduceerde Thumbs.db- dossier te verhinderen door de gecontroleerde omslag worden gepolled.
 * Wanneer een uitsnijdexpressie wordt opgegeven, wordt het herhalingsinterval genegeerd. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 * De batch-grootte is het aantal bestanden of mappen dat wordt opgehaald in elke scan van de gecontroleerde map. Als de batchgrootte is ingesteld op twee en tien bestanden of mappen die in de controlemap worden neergezet, worden er slechts twee opgehaald in elke scan. In de volgende scan, die zal plaatsvinden na de tijd die is opgegeven in het herhalingsinterval, worden de volgende twee bestanden opgehaald.
-* Voor bestandspatronen kunnen beheerders reguliere expressies opgeven met extra ondersteuning voor jokertekenpatronen om bestandspatronen op te geven. Gecontroleerde map wijzigt de reguliere expressie ter ondersteuning van jokertekenpatronen zoals &amp;ast;.&amp;ast; of &amp;ast;.pdf. Deze jokertekenpatronen worden niet ondersteund door de reguliere expressies.
+* Voor bestandspatronen kunnen beheerders reguliere expressies opgeven met extra ondersteuning voor jokertekenpatronen om bestandspatronen op te geven. Gecontroleerde map wijzigt de reguliere expressie ter ondersteuning van jokertekenpatronen zoals &ast;.&ast; of &ast;.pdf. Deze jokertekenpatronen worden niet ondersteund door de reguliere expressies.
 * Gecontroleerde map scant de invoermap op de invoer en weet niet of het bronbestand of de bronmap volledig naar de invoermap is gekopieerd voordat het bestand of de map wordt verwerkt. Ga als volgt te werk om ervoor te zorgen dat het bronbestand of de bronmap volledig naar de invoermap van de gecontroleerde map wordt gekopieerd voordat het bestand of de map wordt opgepakt:
 
-   * De Wacht van het gebruik, die de tijd in milliseconden is die de Gecontroleerde Omslag van de laatste gewijzigde tijd wacht. Gebruik deze functie als u grote bestanden wilt verwerken. Als het downloaden van een bestand bijvoorbeeld 10 minuten duurt, geeft u de wachttijd op als 10&amp;ast;60 &amp;ast;1000 milliseconden. Hierdoor wordt voorkomen dat gecontroleerde map het bestand ophaalt als het niet zo oud is als 10 minuten.
-   * Gebruik bestandspatroon uitsluiten en bestandspatroon opnemen. Als het bestandspatroon voor uitsluiten bijvoorbeeld `ex*` is en het bestandspatroon voor opnemen `in*` is, worden met Gecontroleerde map de bestanden opgehaald die beginnen met &#39;in&#39; en worden de bestanden die beginnen met &#39;ex&#39; niet opgepakt. Als u grote bestanden of mappen wilt kopiëren, wijzigt u eerst de naam van het bestand of de map, zodat de naam begint met &quot;ex&quot;. Nadat het bestand of de map met de naam &quot;ex&quot; volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam in &quot;in&amp;ast;&quot;.
+   * De Wacht van het gebruik, die de tijd in milliseconden is die de Gecontroleerde Omslag van de laatste gewijzigde tijd wacht. Gebruik deze functie als u grote bestanden wilt verwerken. Als het downloaden van een bestand bijvoorbeeld 10 minuten duurt, geeft u de wachttijd op als 10&ast;60 &ast;1000 milliseconden. Hierdoor wordt voorkomen dat gecontroleerde map het bestand ophaalt als het niet zo oud is als 10 minuten.
+   * Gebruik bestandspatroon uitsluiten en bestandspatroon opnemen. Als het bestandspatroon voor uitsluiten bijvoorbeeld `ex*` is en het bestandspatroon voor opnemen `in*` is, worden met Gecontroleerde map de bestanden opgehaald die beginnen met &#39;in&#39; en worden de bestanden die beginnen met &#39;ex&#39; niet opgepakt. Als u grote bestanden of mappen wilt kopiëren, wijzigt u eerst de naam van het bestand of de map, zodat de naam begint met &quot;ex&quot;. Nadat het bestand of de map met de naam &quot;ex&quot; volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam in &quot;in&ast;&quot;.
 
 * Gebruik de purgeduur om de resultatenmap schoon te houden. Met Gecontroleerde map worden alle bestanden gewist die ouder zijn dan de duur die in de purgeduur is vermeld. De duur is in dagen.
 * Wanneer u een eindpunt van een gecontroleerde map toevoegt, wordt na het selecteren van de naam van de bewerking de invoerparametertoewijzing gevuld. Voor elke invoer van de bewerking wordt één toewijzingsveld voor de invoerparameter gegenereerd. Hier volgen voorbeelden van invoerparametertoewijzingen:
@@ -397,7 +397,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 
    * Workaround 1
 
-      1. Geef een patroon op voor Bestandspatroon uitsluiten, zoals tijdelijk&amp;ast;.ps.
+      1. Geef een patroon op voor Bestandspatroon uitsluiten, zoals tijdelijk&ast;.ps.
       1. Kopieer bestanden die beginnen met temp (bijvoorbeeld temp1.ps) naar de gecontroleerde map.
       1. Nadat het bestand volledig naar de gecontroleerde map is gekopieerd, wijzigt u de naam van het bestand in overeenstemming met het patroon dat is opgegeven voor Inclusief bestandspatroon. Controlemap verplaatst het voltooide bestand vervolgens naar het werkgebied.
 
@@ -425,9 +425,9 @@ Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecon
 * Voor de beste prestaties bij het verwerken van formulieren met streepjescodes (kleine bestanden) voert u `10` in bij Batchgrootte en `2` bij Herhalingsinterval.
 * Wanneer vele dossiers in de inputomslag worden geplaatst, kunnen de fouten met verborgen dossiers genoemd *thumbs.db* voorkomen. Daarom wordt u aangeraden het Include-bestandspatroon voor de include-bestanden in te stellen op dezelfde waarde die voor de invoervariabele is opgegeven (bijvoorbeeld `*.tiff` ). Hiermee voorkomt u dat de gecontroleerde map de DB-bestanden verwerkt.
 * Een waarde voor Batchgrootte van `5` en Herhalingsinterval van `2` is doorgaans voldoende omdat de service Barcoded Forms meestal ongeveer 0,5 seconden nodig heeft om één streepjescode te verwerken.
-* Gecontroleerde map wacht niet tot de procesengine de taak heeft voltooid voordat nieuwe bestanden of mappen worden opgehaald. De controlemap wordt voortdurend gescand en de doelservice wordt aangeroepen. Dit gedrag kan de motor overbelasten, veroorzakend hulpproblemen en onderbreking. Controleer of u het interval met herhalingen en de grootte van de batch gebruikt om de invoer van de gecontroleerde map te vertragen. U kunt het herhalingsinterval verhogen en de partijgrootte verminderen als meer gecontroleerde omslagen bestaan of throttling op het eindpunt toelaten. Voor informatie over throttling, zie [ Ongeveer throttling ](configuring-watched-folder-endpoints.md#about-throttling).
+* Gecontroleerde map wacht niet tot de procesengine de taak heeft voltooid voordat nieuwe bestanden of mappen worden opgehaald. De controlemap wordt voortdurend gescand en de doelservice wordt aangeroepen. Dit gedrag kan de motor overbelasten, veroorzakend hulpproblemen en onderbreking. Controleer of u het interval met herhalingen en de grootte van de batch gebruikt om de invoer van de gecontroleerde map te vertragen. U kunt het herhalingsinterval verhogen en de partijgrootte verminderen als meer gecontroleerde omslagen bestaan of throttling op het eindpunt toelaten. Voor informatie over throttling, zie [&#x200B; Ongeveer throttling &#x200B;](configuring-watched-folder-endpoints.md#about-throttling).
 * Gecontroleerde map vormt een weerspiegeling van de gebruiker die is opgegeven in de gebruikersnaam en de domeinnaam. Gecontroleerde map roept de service aan als deze gebruiker wanneer deze rechtstreeks wordt aangeroepen of wanneer het proces van korte duur is. Voor een langdurig proces, wordt het proces aangehaald met de context van het Systeem. Beheerders kunnen beleidsregels voor het besturingssysteem voor gecontroleerde mappen instellen om te bepalen welke gebruiker toegang toestaat of weigert.
-* Gebruik bestandspatronen om resultaten, fouten en mappen te ordenen. (Zie [ Ongeveer dossierpatronen ](configuring-watched-folder-endpoints.md#about-file-patterns).)
+* Gebruik bestandspatronen om resultaten, fouten en mappen te ordenen. (Zie [&#x200B; Ongeveer dossierpatronen &#x200B;](configuring-watched-folder-endpoints.md#about-file-patterns).)
 
 * De gecontroleerde omslag baseert zich op de planner van het Kwartz voor het aftasten van de gecontroleerde omslagen. De planner van het Kwartz heeft een draadpool om hen af te tasten. Als het herhalingsinterval voor de gecontroleerde map erg laag is (&lt; 5 seconden) en de batch groot is (> 2), kan er een race plaatsvinden. Wanneer deze voorwaarde zich voordoet, wordt één bestand opgehaald door twee kwartthreads:
 

@@ -23,28 +23,28 @@ Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vere
 
 De beste werkwijzen zijn:
 
-* Een [ interactieve controlelijst ](/help/managing/best-practices-checklist.md) die u uw vooruitgang met deze beste praktijken laat volgen en controleren.
+* Een [&#x200B; interactieve controlelijst &#x200B;](/help/managing/best-practices-checklist.md) die u uw vooruitgang met deze beste praktijken laat volgen en controleren.
 
    * Definieert inputs en te leveren items op basis van fase, mijlpaal en persona.
    * Verstrekt geautomatiseerde overzichten (kwaliteit, gezondheid, en volledigheid) om vooruitgang en project-gezondheid te wijzen.
 
-* Documentatie die op [ wordt gebaseerd checklist ](/help/managing/best-practices-checklist.md) die details:
+* Documentatie die op [&#x200B; wordt gebaseerd checklist &#x200B;](/help/managing/best-practices-checklist.md) die details:
 
-   * [ analyse van het HartStroke van het project van 0}.](#projectheartbeat)
-   * [ Status door het overzicht van de Rol ](#status-by-role).
-   * [ Fases en Mijlpalen ](#phases-and-milestones).
-   * [ Zeer belangrijke Persoon ](#persona) en hun betrokkenheid in elk (relevant) stadium.
-   * A [ Verklarende woordenlijst ](/help/managing/best-practices-glossary.md) van [ Vereiste Documenten en levert ](#required-documents-and-deliverables).
+   * [&#x200B; analyse van het HartStroke van het project van 0&rbrace;.](#projectheartbeat)
+   * [&#x200B; Status door het overzicht van de Rol &#x200B;](#status-by-role).
+   * [&#x200B; Fases en Mijlpalen &#x200B;](#phases-and-milestones).
+   * [&#x200B; Zeer belangrijke Persoon &#x200B;](#persona) en hun betrokkenheid in elk (relevant) stadium.
+   * A [&#x200B; Verklarende woordenlijst &#x200B;](/help/managing/best-practices-glossary.md) van [&#x200B; Vereiste Documenten en levert &#x200B;](#required-documents-and-deliverables).
 
-* [ Verdere verwijzing ](/help/managing/best-practices-further-reference.md) materiaal om meer details op specifieke gebieden te verstrekken.
+* [&#x200B; Verdere verwijzing &#x200B;](/help/managing/best-practices-further-reference.md) materiaal om meer details op specifieke gebieden te verstrekken.
 
 ## Projectkopslagdashboard {#project-heartbeat-dashboard}
 
-Het **aantekenvel van het Hart van het Project van 0} verstrekt een grafisch overzicht van kritieke metriek voor uw project:**
+Het **aantekenvel van het Hart van het Project van 0&rbrace; verstrekt een grafisch overzicht van kritieke metriek voor uw project:**
 
 * **Kwaliteit van de Fase**
 
-   * Wijst op de kwaliteit van [ Vereiste Documenten en levert ](#required-documents-and-deliverables) over het project.
+   * Wijst op de kwaliteit van [&#x200B; Vereiste Documenten en levert &#x200B;](#required-documents-and-deliverables) over het project.
 
 * **Gezondheid van de Fase**
 
@@ -56,13 +56,13 @@ Het **aantekenvel van het Hart van het Project van 0} verstrekt een grafisch ove
 
 ## Status op rol {#status-by-role}
 
-De **Status door Werkblad van de Rol** toont gedetailleerde uitsplitsing van [**Gezondheid**, **Kwaliteit, en **Voltooiing**](#projectheartbeat) door **[Fase](#phases-and-milestones)** en **[Persona](#persona)**.
+De **Status door Werkblad van de Rol** toont gedetailleerde uitsplitsing van [**Gezondheid**, **Kwaliteit, en &#x200B;** Voltooiing&#x200B;**](#projectheartbeat) door &#x200B;** [Fase](#phases-and-milestones)**&#x200B; en &#x200B;** [Persona](#persona)**.
 
 ## Fasen en mijlpalen {#phases-and-milestones}
 
 Het projectplan wordt opgesplitst in afzonderlijke (hoge) fasen.
 
-Elke fase bevat zijn eigen mijlpalen. Voor elk [ persona ](#persona) (of rol), zijn de relevante mijlpalen vermeld, samen met de documenten die worden vereist om de bepaalde te produceren producten.
+Elke fase bevat zijn eigen mijlpalen. Voor elk [&#x200B; persona &#x200B;](#persona) (of rol), zijn de relevante mijlpalen vermeld, samen met de documenten die worden vereist om de bepaalde te produceren producten.
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Zoals altijd, beïnvloedt het aanpassen van om het even welke factoren anderen. 
 
 De vier factoren:
 
-![ projecphase_fourfases ](assets/projectphases_fourphases.png)
+![&#x200B; projecphase_fourfases &#x200B;](assets/projectphases_fourphases.png)
 
 #### Mijlpalen {#milestones}
 
@@ -180,16 +180,16 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   De systeemarchitectuur bepaalt de conceptuele mening van uw systeem; het omvatten van (onder andere):
 
-   * [ structuur van het Systeem ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) voor alle vereiste milieu&#39;s
+   * [&#x200B; structuur van het Systeem &#x200B;](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) voor alle vereiste milieu&#39;s
    * Subsystemen
    * Systemen van derden
    * Interfaces; hardware, software en menselijke interactie
-   * De servers voor elk milieu; zie [ Technische Vereisten ](/help/sites-deploying/technical-requirements.md) en [ Hardware die Richtlijnen rangschikken ](/help/managing/hardware-sizing-guidelines.md)
+   * De servers voor elk milieu; zie [&#x200B; Technische Vereisten &#x200B;](/help/sites-deploying/technical-requirements.md) en [&#x200B; Hardware die Richtlijnen rangschikken &#x200B;](/help/managing/hardware-sizing-guidelines.md)
 
    * Processen voor elke omgeving, bijvoorbeeld vereisten voor implementatie en onderhoud
    * Onderhoudsactiviteiten (GC voor datastore, TarPM-optimalisatie, enzovoort)
-   * [ Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
-   * [ het Groeperen ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) publiceert/auteur deelt
+   * [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
+   * [&#x200B; het Groeperen &#x200B;](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) publiceert/auteur deelt
    * Prestaties voor de client-side (JS minify, concat, css sprites, totaal aantal http-aanvragen, enzovoort)
 
 * **Architectuur van de Toepassing**
@@ -214,12 +214,12 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   De integratie van het systeem vereist u om te plannen (dan uit te voeren):
 
-   * Hoe alle subsystems en [ oplossingsintegratie ](/help/sites-administering/integration.md) worden samengebracht om als één samenhangend systeem te werken
+   * Hoe alle subsystems en [&#x200B; oplossingsintegratie &#x200B;](/help/sites-administering/integration.md) worden samengebracht om als één samenhangend systeem te werken
    * Hoe systemen van derden zijn geïntegreerd; samen met eventuele speciale overwegingen, zoals offline/online, client-side/browser-side of fallover-verwerking wanneer een systeem van derden is uitgevallen
 
 * **Concept van de Test**
 
-  Alvorens ontwikkeling te beginnen, zou u een diepgaand en uitvoerig concept van alle [ het testen ](/help/sites-developing/planning.md) vereisten voor uw project moeten opstellen.
+  Alvorens ontwikkeling te beginnen, zou u een diepgaand en uitvoerig concept van alle [&#x200B; het testen &#x200B;](/help/sites-developing/planning.md) vereisten voor uw project moeten opstellen.
 
   Dit moet onder meer het volgende omvatten:
 
@@ -239,7 +239,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Voor ontwikkeling, zouden alle steunprocessen die worden vereist om, versie, test, en rapportkwesties op te stellen, op zijn plaats moeten worden geplaatst.
 
-  Zie ook het [ Portaal van de Steun van Adobe ](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
+  Zie ook het [&#x200B; Portaal van de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 ### Operationele planning en operaties {#operations-planning-and-operations}
 
@@ -259,7 +259,7 @@ Op een vergelijkbare basis moeten de bewerkingen op de juiste wijze worden gepla
    * Voor gebruikers met minimale bevoegdheden moeten workflows worden gedefinieerd
    * Gebruikers in de groep `editor` mogen geen `admin` -rechten hebben en geen deel uitmaken van de groep `administrators` .
 
-  Voor meer informatie, zie [ Beleid van de Gebruiker en Veiligheid ](/help/sites-administering/security.md).
+  Voor meer informatie, zie [&#x200B; Beleid van de Gebruiker en Veiligheid &#x200B;](/help/sites-administering/security.md).
 
 * **Controle en Onderhoud**
 
@@ -268,7 +268,7 @@ Op een vergelijkbare basis moeten de bewerkingen op de juiste wijze worden gepla
    * Wat moet er worden gecontroleerd?
    * Onderhoudstaken, zowel regelmatig als in bijzondere gevallen
 
-  Zie ook [ Controle en Onderhoud ](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie.
+  Zie ook [&#x200B; Controle en Onderhoud &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie.
 
 * **Migratie**
 
@@ -322,16 +322,16 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
    * Implementatiecadade
    * Integratie/afhankelijkheden van software van derden
    * Beveiligingsinstelling
-   * De prestaties van de basislijn die door de [ tests van de Dag van de Hoek ](/help/sites-developing/tough-day.md) op de productieconfiguratie in werking te stellen worden geverifieerd
-   * Vereisten voor prestatietests; zie [ Beste praktijken voor Kwaliteit Assurance ](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * De prestaties van de basislijn die door de [&#x200B; tests van de Dag van de Hoek &#x200B;](/help/sites-developing/tough-day.md) op de productieconfiguratie in werking te stellen worden geverifieerd
+   * Vereisten voor prestatietests; zie [&#x200B; Beste praktijken voor Kwaliteit Assurance &#x200B;](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integratie**
 
-  Plan, document, en test alle aspecten van het systeem en [ oplossingsintegratie ](/help/sites-administering/integration.md), met inbegrip van:
+  Plan, document, en test alle aspecten van het systeem en [&#x200B; oplossingsintegratie &#x200B;](/help/sites-administering/integration.md), met inbegrip van:
 
    * Een geautomatiseerde teststrategie
-   * Geautomatiseerde processen om [ toepassingen van ontwikkeling te bewegen om te testen, toen productie ](/help/managing/enterprise-devops.md#code-movement)
-   * Geautomatiseerde processen aan [ beweging inhoud van productie aan test en ontwikkeling ](/help/managing/enterprise-devops.md#content-movement)
+   * Geautomatiseerde processen om [&#x200B; toepassingen van ontwikkeling te bewegen om te testen, toen productie &#x200B;](/help/managing/enterprise-devops.md#code-movement)
+   * Geautomatiseerde processen aan [&#x200B; beweging inhoud van productie aan test en ontwikkeling &#x200B;](/help/managing/enterprise-devops.md#content-movement)
 
 * **Migratie**
 
@@ -354,7 +354,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
 
 ### Prestaties en tests {#performance-and-testing}
 
-Zodra de nieuwe toepassing beschikbaar is moet het strenge het testen, zowel voor functionaliteit als [ prestaties ](/help/sites-deploying/configuring-performance.md) ondergaan.
+Zodra de nieuwe toepassing beschikbaar is moet het strenge het testen, zowel voor functionaliteit als [&#x200B; prestaties &#x200B;](/help/sites-deploying/configuring-performance.md) ondergaan.
 
 >[!NOTE]
 >
@@ -366,7 +366,7 @@ Zodra de nieuwe toepassing beschikbaar is moet het strenge het testen, zowel voo
 
 * **de Acceptatietest van de Eindgebruiker**
 
-  [ de acceptatietests van de Gebruiker ](/help/sites-developing/acceptance-signoff.md) (UAT) is essentieel om ervoor te zorgen dat:
+  [&#x200B; de acceptatietests van de Gebruiker &#x200B;](/help/sites-developing/acceptance-signoff.md) (UAT) is essentieel om ervoor te zorgen dat:
 
    * De oplossing voldoet aan de vereisten van de gebruiker/klant
    * De klant/gebruikers accepteren de oplossing (functie, ontwerp en prestaties)
@@ -402,7 +402,7 @@ De introductie van uw nieuwe toepassing moet zorgvuldig worden gepland om ervoor
 
   Ervoor zorgen dat alle betrokken personeelsleden zijn opgeleid.
 
-  Zie [ Adobe Experience Manager ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) in de cursuscatalogus.
+  Zie [&#x200B; Adobe Experience Manager &#x200B;](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) in de cursuscatalogus.
 
 * **Lopende Beheerders**
 
@@ -428,7 +428,7 @@ De introductie van uw nieuwe toepassing moet zorgvuldig worden gepland om ervoor
 
   Om de veiligheid van uw oplossing te verzekeren, voer specifieke penetratietests, samen met een bredere waaier van veiligheidstests uit.
 
-  Zie [ Controlelijst van de Veiligheid ](/help/sites-administering/security-checklist.md) voor meer details.
+  Zie [&#x200B; Controlelijst van de Veiligheid &#x200B;](/help/sites-administering/security-checklist.md) voor meer details.
 
 ### Live gaan {#go-live}
 
@@ -464,7 +464,7 @@ Je wilt dat je Go Live zo vloeiend mogelijk wordt. Nogmaals, de definitieve stap
 
 De checklists zijn ontworpen door personen. Dit zijn de rollen met significant betrokken bij de cyclus van het projectleven.
 
-Er zijn ook sommige [ andere persona ](#other-persona) die bij specifieke taken betrokken zijn.
+Er zijn ook sommige [&#x200B; andere persona &#x200B;](#other-persona) die bij specifieke taken betrokken zijn.
 
 ### Projectsponsor {#project-sponsor}
 
@@ -610,7 +610,7 @@ Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het on
    * [Enterprise DevOps](/help/managing/enterprise-devops.md)
    * [Aanbevolen werkwijzen voor SEO- en URL-beheer](/help/managing/seo-and-url-management.md)
    * [AEM en de Web Accessibility Guidelines](/help/managing/web-accessibility.md)
-   * [ Algemene Verordening van de Bescherming van Gegevens ](/help/managing/data-protection-and-privacy.md)* [ het Opstellen van en het Handhaving van beste praktijken ](/help/sites-deploying/best-practices.md)
+   * [&#x200B; Algemene Verordening van de Bescherming van Gegevens &#x200B;](/help/managing/data-protection-and-privacy.md)* [&#x200B; het Opstellen van en het Handhaving van beste praktijken &#x200B;](/help/sites-deploying/best-practices.md)
 * [Aanbevolen werkwijzen beheren](/help/sites-administering/administer-best-practices.md)
 * [Aanbevolen werkwijzen ontwikkelen](/help/sites-developing/best-practices.md)
 * [Aanbevolen werkwijzen ontwerpen](/help/sites-authoring/best-practices.md)
@@ -628,8 +628,8 @@ Daarnaast zijn de volgende secties van de documentatie van AEM van bijzonder bel
 
       * [Ontwikkeling - de basisbeginselen](/help/sites-developing/the-basics.md)
       * [MSM-concepten](/help/sites-administering/msm.md)
-      * [ Taal van het Malplaatje van HTML (HTML) ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [&#x200B; Taal van het Malplaatje van HTML (HTML) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * Verwante documentatie
 
-   * Adobe Experience Cloud - [ Planning voor Adobe Experience Cloud ](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [&#x200B; Planning voor Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

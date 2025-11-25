@@ -46,7 +46,7 @@ Klanten moeten het volgende hebben om toegang te krijgen tot AI Assistant in AEM
 
 >[!NOTE]
 >
->AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [ overzicht van de Diensten van Adobe Identity Management ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [&#x200B; overzicht van de Diensten van Adobe Identity Management &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **om toegang tot AI Medewerker in AEM te krijgen:**
 
@@ -54,7 +54,7 @@ Klanten moeten het volgende hebben om toegang te krijgen tot AI Assistant in AEM
 
 1. Als u AI Assistant in AEM wilt gebruiken, is toestemming voor toegang tot productkennis via de AI Assistant verplicht. Deze machtiging is standaard ingeschakeld.
 
-   Als u wilt controleren wie tot de Kennis van het Product toegang heeft, verzend een e-mail naar [ aemaiassistant@adobe.com ](mailto:aemaiassistant@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Adobe kan toegangsbeheer op gebruikersniveau inschakelen. Wanneer het wordt toegelaten, kan uw Admin toegang op gebruikersniveau verlenen door de stappen in [ te volgen AI Medewerker in AEM ](/help/ai-assistant-in-aem-admin.md) vormen.
+   Als u wilt controleren wie tot de Kennis van het Product toegang heeft, verzend een e-mail naar [&#x200B; aemaiassistant@adobe.com &#x200B;](mailto:aemaiassistant@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Adobe kan toegangsbeheer op gebruikersniveau inschakelen. Wanneer het wordt toegelaten, kan uw Admin toegang op gebruikersniveau verlenen door de stappen in [&#x200B; te volgen AI Medewerker in AEM &#x200B;](/help/ai-assistant-in-aem-admin.md) vormen.
 
 
 ## Scope {#scope}
@@ -88,7 +88,7 @@ De productkennis omvat concepten en onderwerpen die uit de documentatie van de L
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
-| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen &#x200B;**<br>**Voorbeelden** |
 | Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
 | Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
@@ -141,19 +141,19 @@ U kunt de AI Medewerker in AEM terugstellen en een nieuw gesprek beginnen wannee
 
 1. Vlak de hoger-juiste hoek van het gebruikersinterface van AEM (of van de pagina&#39;s van Cloud Manager of de auteursinstantie van de milieu&#39;s van AEM), klik het **AI Hulp** pictogram.
 
-   ![ AI Hulp pictogram op de toolbar ](/help/assets/assets-ai/ai-assistant-icon.png)
+   ![&#x200B; AI Hulp pictogram op de toolbar &#x200B;](/help/assets/assets-ai/ai-assistant-icon.png)
 
-1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![ verzend pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![&#x200B; verzend pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
    >[!NOTE]
    >
    >Persoonlijke gegevens mogen niet in uw invoer worden opgenomen, omdat het niet nodig is om dit gereedschap te gebruiken.
 
-   ![ vakje van de Tekst bij bodem van het AI Hulppaneel ](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
+   ![&#x200B; vakje van de Tekst bij bodem van het AI Hulppaneel &#x200B;](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
 
-1. Om een nieuw gesprek (nieuw onderwerp of een verandering in het onderwerp) te beginnen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Begin nieuw gesprek**.
+1. Om een nieuw gesprek (nieuw onderwerp of een verandering in het onderwerp) te beginnen, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Begin nieuw gesprek**.
 
-   ![ Begin een nieuw gesprek in AI Medewerker van het ellipspictogram ](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
+   ![&#x200B; Begin een nieuw gesprek in AI Medewerker van het ellipspictogram &#x200B;](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
 
 ### Vragen per categorie detecteren
 
@@ -161,15 +161,15 @@ AI Assistant in AEM bevat een functie voor het opsporen van ontdekkingen waarmee
 
 **om herinneringen door categorie te ontdekken:**
 
-1. In het AI Hulppaneel, klik ![ leren pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) om het snelle ontdekkingspaneel aan te zetten.
+1. In het AI Hulppaneel, klik ![&#x200B; leren pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) om het snelle ontdekkingspaneel aan te zetten.
 
-   ![ Comité dat u herinneringen door categorie in AI Medewerker ](/help/assets/assets-ai/ai-assistant-discover-prompts.png) laat onderzoeken
+   ![&#x200B; Comité dat u herinneringen door categorie in AI Medewerker &#x200B;](/help/assets/assets-ai/ai-assistant-discover-prompts.png) laat onderzoeken
    *Comité die snelle categorieën in AI Medewerker tonen.*
 
 1. Selecteer een categorie om een lijst met verwante vragen weer te geven.
 1. Selecteer een vraag om voorbeelden te zien van de typen vragen die de AI Assistant kan beantwoorden.
 
-1. Om het snelle ontdekkingspaneel te verbergen, klik ![ leer opnieuw pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
+1. Om het snelle ontdekkingspaneel te verbergen, klik ![&#x200B; leer opnieuw pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 
 ### Je feedback delen op AI Assistant in AEM
 
@@ -177,13 +177,13 @@ Met uw invoer verbetert Adobe AI Assistant voor betere prestaties en nauwkeurigh
 
 Deel je feedback op je ervaring met AI Assistant in AEM door de volgende opties te kiezen:
 
-![ duimen omhoog, duimen neer, en vlagpictogrammen ](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
+![&#x200B; duimen omhoog, duimen neer, en vlagpictogrammen &#x200B;](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
 | Klikken | Beschrijving |
 | --- | --- |
-| ![ duimen omhoog buiten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Geef aan wat goed is gegaan en geef positieve feedback. |
-| ![ duimen neer outine pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Geef suggesties voor verbetering. Voeg specifieke opmerkingen toe over uw ervaring, die dagelijks worden gecontroleerd. |
-| ![ het pictogram van de Vlag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Rapporteer problemen of geef gedetailleerde feedback over uw interactie met AI Assistant in AEM. |
+| ![&#x200B; duimen omhoog buiten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Geef aan wat goed is gegaan en geef positieve feedback. |
+| ![&#x200B; duimen neer outine pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Geef suggesties voor verbetering. Voeg specifieke opmerkingen toe over uw ervaring, die dagelijks worden gecontroleerd. |
+| ![&#x200B; het pictogram van de Vlag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Rapporteer problemen of geef gedetailleerde feedback over uw interactie met AI Assistant in AEM. |
 
 ## Veelgestelde vragen over AI Assistant in AEM {#ai-faq}
 

@@ -18,7 +18,7 @@ Lees hoe u uw inhoud zonder kop kunt ordenen en hoe de vertaalhulpmiddelen van A
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de hoofdloze vertaalreis van AEM, [ Leer over hoofdloze inhoud en hoe te in AEM ](learn-about.md) te vertalen u de basistheorie van leerde wat een koploze CMS is en u zou nu moeten:
+In het vorige document van de hoofdloze vertaalreis van AEM, [&#x200B; Leer over hoofdloze inhoud en hoe te in AEM &#x200B;](learn-about.md) te vertalen u de basistheorie van leerde wat een koploze CMS is en u zou nu moeten:
 
 * Begrijp de basisconcepten van inhoud zonder kop levering.
 * Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
@@ -47,7 +47,7 @@ Er zijn verschillende vereisten waaraan u moet voldoen voordat u uw AEM-inhoud z
 
 >[!TIP]
 >
->Als u niet vertrouwd met het gebruiken van een grootscale CMS zoals AEM bent, overweeg het herzien van de [ Basis Behandelende ](/help/sites-authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis, zodat terugkeer aan deze pagina wanneer volledig.
+>Als u niet vertrouwd met het gebruiken van een grootscale CMS zoals AEM bent, overweeg het herzien van de [&#x200B; Basis Behandelende &#x200B;](/help/sites-authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis, zodat terugkeer aan deze pagina wanneer volledig.
 
 ### Gereedschappen {#tools}
 
@@ -88,9 +88,9 @@ Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke 
 1. De **ModelRedacteur van het Fragmentmodel van de Inhoud** opent.
    1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
    1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
-      ![ de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor.png)
+      ![&#x200B; de ModelRedacteur van het Fragment van de Inhoud &#x200B;](assets/content-fragment-model-editor.png)
 1. Klik op een van de velden van het model. AEM markeert het en de details van dat gebied worden getoond in de juiste kolom.
-   ![ de details van de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor-detail.png)
+   ![&#x200B; de details van de ModelRedacteur van het Fragment van de Inhoud &#x200B;](assets/content-fragment-model-editor-detail.png)
 
 Neem nota van de naam van het gebied **Bezit** voor alle gebieden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Naam van het Bezit** wordt vereist om AEM mee te delen welke gebieden van uw inhoud moeten worden vertaald.
 
@@ -183,16 +183,16 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp hoe AEM inhoud zonder kop opslaat.
 * Ben vertrouwd met de vertaalhulpmiddelen van AEM.
 
-Bouw op deze kennis voort en ga uw de hoofdloze vertaalreis van AEM door het document [ opnieuw te bekijken vormen de vertaalintegratie ](configure-connector.md) waar u zult leren hoe te om AEM met de vertaaldienst te verbinden.|
+Bouw op deze kennis voort en ga uw de hoofdloze vertaalreis van AEM door het document [&#x200B; opnieuw te bekijken vormen de vertaalintegratie &#x200B;](configure-connector.md) waar u zult leren hoe te om AEM met de vertaaldienst te verbinden.|
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien de vertaalschakelaar ](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [&#x200B; te herzien de vertaalschakelaar &#x200B;](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [ Basisbehandeling van AEM ](/help/sites-authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
-* [ identificerend Inhoud om ](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
-* [ Vormend het Kader van de Integratie van de Vertaling ](/help/sites-administering/tc-tic.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
-* [ het Leiden Vertaalprojecten ](/help/sites-administering/tc-manage.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
-* Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
-* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
-* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [&#x200B; Basisbehandeling van AEM &#x200B;](/help/sites-authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
+* [&#x200B; identificerend Inhoud om &#x200B;](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
+* [&#x200B; Vormend het Kader van de Integratie van de Vertaling &#x200B;](/help/sites-administering/tc-tic.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
+* [&#x200B; het Leiden Vertaalprojecten &#x200B;](/help/sites-administering/tc-manage.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
+* Een [&#x200B; Inleiding aan AEM als Headless CMS &#x200B;](/help/sites-developing/headless/introduction.md)
+* Het [&#x200B; Portaal van de Ontwikkelaar van AEM &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [&#x200B; Leerprogramma&#39;s voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

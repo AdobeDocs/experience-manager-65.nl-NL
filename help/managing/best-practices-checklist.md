@@ -36,10 +36,10 @@ Het werkblad bevat de volgende werkbladen:
    * Verstrekt instructies op hoe te om spreadsheet, samen met verklaringen van de gebruikte mechanismen te gebruiken.
 * **[Hartslag van het Project](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[Status door Rol](/help/managing/best-practices.md#status-by-role)**
-* Een reeks controlelijsten, volgens [ Persona ](/help/managing/best-practices.md#persona), [ Fase en Mijlsteen ](/help/managing/best-practices.md#phases-and-milestones)
+* Een reeks controlelijsten, volgens [&#x200B; Persona &#x200B;](/help/managing/best-practices.md#persona), [&#x200B; Fase en Mijlsteen &#x200B;](/help/managing/best-practices.md#phases-and-milestones)
 * **Verklarende woordenlijst**
    * De verklarende woordenlijst maakt een lijst van details van alle Geleverbare documenten van de Checklist van het Project.
-   * De [ Verklarende woordenlijst ](/help/managing/best-practices-glossary.md) is ook beschikbaar als deel van de documentatie.
+   * De [&#x200B; Verklarende woordenlijst &#x200B;](/help/managing/best-practices-glossary.md) is ook beschikbaar als deel van de documentatie.
 * **[Persona Definities](/help/managing/best-practices.md#persona)**
 
 ## Controlelijsten gebruiken {#using-the-checklists}

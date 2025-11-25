@@ -24,7 +24,7 @@ In de context van het beheer van inhoud zonder kop in AEM, denk aan een configur
 
 >[!NOTE]
 >
->Als u met [ paginasjablonen in een full-stack implementatie van AEM vertrouwd bent, ](/help/sites-authoring/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
+>Als u met [&#x200B; paginasjablonen in een full-stack implementatie van AEM vertrouwd bent, &#x200B;](/help/sites-authoring/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
@@ -32,12 +32,12 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
 1. Logboek in AEM en van het belangrijkste menu selecteert **Hulpmiddelen > Algemeen > Browser van de Configuratie**.
 1. Verstrek a **Titel** voor uw configuratie.
-   * Een naam zal automatisch worden geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
+   * Een naam zal automatisch worden geproduceerd gebaseerd op de titel en aangepast volgens [&#x200B; AEM noemende overeenkomsten.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
    * **de Blijvende Vragen van GraphQL**
 
-   ![ creeer Configuratie ](assets/create-configuration.png)
+   ![&#x200B; creeer Configuratie &#x200B;](assets/create-configuration.png)
 
 1. Klik **creëren**
 
@@ -49,7 +49,7 @@ U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worde
 
 ## Volgende stappen {#next-steps}
 
-Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
+Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [&#x200B; creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
 
 <!--
 >[!TIP]

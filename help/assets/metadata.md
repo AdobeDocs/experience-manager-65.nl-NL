@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Dit artikel |
 
 <!-- Scope of metadata articles:
@@ -36,13 +36,13 @@ Metagegevens zijn aanvullende informatie over het element die kan worden doorzoc
 
 U kunt de volgende methoden gebruiken om metagegevens toe te voegen aan digitale elementen:
 
-* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [ Acrobat voegt sommige meta-gegevens ](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aan de dossiers van PDF toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [ meta-gegevens van IPTC in Adobe Lightroom ](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
+* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [&#x200B; Acrobat voegt sommige meta-gegevens &#x200B;](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aan de dossiers van PDF toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [&#x200B; meta-gegevens van IPTC in Adobe Lightroom &#x200B;](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
 
-* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u middelen uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [ werken met meta-gegevens in  [!DNL Adobe Bridge] ](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [ paneel van markeringen voor  [!DNL Adobe Bridge] ](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u middelen uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [&#x200B; werken met meta-gegevens in  [!DNL Adobe Bridge] &#x200B;](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [&#x200B; paneel van markeringen voor  [!DNL Adobe Bridge] &#x200B;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets] kunt u metagegevens van elementen handmatig toevoegen of bewerken op de pagina [!UICONTROL Properties] .
 
-* U kunt [ meta-gegevensprofielen ](/help/assets/metadata-config.md#metadata-profiles) functionaliteit van [!DNL Experience Manager Assets] gebruiken om meta-gegevens automatisch toe te voegen wanneer de activa aan DAM worden geupload.
+* U kunt [&#x200B; meta-gegevensprofielen &#x200B;](/help/assets/metadata-config.md#metadata-profiles) functionaliteit van [!DNL Experience Manager Assets] gebruiken om meta-gegevens automatisch toe te voegen wanneer de activa aan DAM worden geupload.
 
 ## Metagegevens toevoegen of bewerken in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
@@ -52,11 +52,11 @@ Voer de volgende stappen uit als u de metagegevens van een element wilt bewerken
 
    * Selecteer het element in de interface van [!DNL Assets] en klik op **[!UICONTROL View Properties]** op de werkbalk.
    * Selecteer in de miniatuur van het element de handeling **[!UICONTROL View Properties]** quick.
-   * Van de activapagina, klik **[!UICONTROL View Properties]** ![ Assets- infopictogram ](assets/do-not-localize/info-circle-icon.png) van de toolbar.
+   * Van de activapagina, klik **[!UICONTROL View Properties]** ![&#x200B; Assets- infopictogram &#x200B;](assets/do-not-localize/info-circle-icon.png) van de toolbar.
 
    Op de elementpagina worden alle metagegevens van het element weergegeven. De metagegevens worden geëxtraheerd wanneer het element wordt geüpload (opgenomen) naar [!DNL Experience Manager] .
 
-   ![ Uitgezochte Eigenschappen van een activa om zijn meta-gegevens ](assets/asset-metadata.png) te bekijken
+   ![&#x200B; Uitgezochte Eigenschappen van een activa om zijn meta-gegevens &#x200B;](assets/asset-metadata.png) te bekijken
 
    *Cijfer: geef of voeg meta-gegevens op activa [!UICONTROL Properties] pagina uit.*
 
@@ -68,7 +68,7 @@ Voer de volgende stappen uit als u de metagegevens van een element wilt bewerken
 
 Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP-gegevens. De workflow voor het terugschrijven van metagegevens voegt de metagegevens toe aan het oorspronkelijke binaire bestand. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title` ), worden overschreven en nieuwe eigenschappen (zoals aangepaste eigenschappen zoals `cq:tags` ) worden toegevoegd aan het schema.
 
-XMP schrijf-terug wordt gesteund en toegelaten voor de platforms en dossierformaten die in [ worden beschreven technische vereisten.](/help/sites-deploying/technical-requirements.md)
+XMP schrijf-terug wordt gesteund en toegelaten voor de platforms en dossierformaten die in [&#x200B; worden beschreven technische vereisten.](/help/sites-deploying/technical-requirements.md)
 
 ## Eigenschappen van metagegevens van meerdere elementen bewerken {#editing-metadata-properties-of-multiple-assets}
 
@@ -77,11 +77,11 @@ Met [!DNL Adobe Enterprise Manager Assets] kunt u de metagegevens van meerdere e
 * Eigenschappen van metagegevens wijzigen in een algemene waarde
 * Tags toevoegen of wijzigen
 
-Om de pagina van meta-gegevenseigenschappen, met inbegrip van het toevoegen van, het wijzigen van, het schrappen van meta-gegevenseigenschappen aan te passen, gebruik de [ schemageditor ](metadata-config.md#folder-metadata-schema).
+Om de pagina van meta-gegevenseigenschappen, met inbegrip van het toevoegen van, het wijzigen van, het schrappen van meta-gegevenseigenschappen aan te passen, gebruik de [&#x200B; schemageditor &#x200B;](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [ bulkupdate de meta-gegevens na het zoeken ](search-assets.md#metadataupdates).
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [&#x200B; bulkupdate de meta-gegevens na het zoeken &#x200B;](search-assets.md#metadataupdates).
 
 1. Navigeer in de gebruikersinterface van [!DNL Assets] naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
@@ -91,7 +91,7 @@ Om de pagina van meta-gegevenseigenschappen, met inbegrip van het toevoegen van,
 1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op **[!UICONTROL Settings]** op de werkbalk en selecteert u een schema. Klik op **[!UICONTROL Save & Close]**.
 1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
 
-![ het schemaschemabulk is van toepassing op veelvoudige activa ](assets/metadata-schema-bulk-edit.gif)
+![&#x200B; het schemaschemabulk is van toepassing op veelvoudige activa &#x200B;](assets/metadata-schema-bulk-edit.gif)
 
 >[!CAUTION]
 >
@@ -110,7 +110,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 1. Ga naar de gebruikersinterface van [!DNL Assets] en klik op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer **[!UICONTROL Metadata]** in het menu.
 1. Klik op **[!UICONTROL Metadata Import]** op de pagina **[!UICONTROL Select File]** . Selecteer het CSV-bestand met de metadata.
-1. Geef de volgende parameters op. Zie een steekproefCSV- dossier bij [ meta-invoer-steekproef-file.csv ](/help/assets/assets/metadata-import-sample-file.csv).
+1. Geef de volgende parameters op. Zie een steekproefCSV- dossier bij [&#x200B; meta-invoer-steekproef-file.csv &#x200B;](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Parameters voor het importeren van metagegevens | Beschrijving |
    |:---|:---|
@@ -145,7 +145,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. Geef in het dialoogvenster [!UICONTROL Metadata Export] een naam op voor het CSV-bestand. Selecteer **[!UICONTROL Include assets in subfolders]** als u metagegevens voor elementen in submappen wilt exporteren.
 
-   ![ Interface en opties om meta-gegevens van alle activa in een omslag ](assets/export_metadata_page.png " Interface en opties uit te voeren om meta-gegevens van alle activa in een omslag ") uit te voeren
+   ![&#x200B; Interface en opties om meta-gegevens van alle activa in een omslag &#x200B;](assets/export_metadata_page.png " Interface en opties uit te voeren om meta-gegevens van alle activa in een omslag ") uit te voeren
 
 1. Selecteer de gewenste opties. Geef een bestandsnaam en zo nodig een datum op.
 
@@ -155,13 +155,13 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Klik op **[!UICONTROL CSV Download]** op de werkbalk om het CSV-bestand met de metagegevens te downloaden. Klik op **[!UICONTROL Close]**.
 
-   ![ Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd ](assets/csv_download.png)
+   ![&#x200B; Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd &#x200B;](assets/csv_download.png)
 
    *Cijfer: Dialoog om het Csv- dossier te downloaden dat meta-gegevens bevat die in bulk worden uitgevoerd.*
 
 ## Metagegevens van verzamelingen bewerken {#collections-metadata}
 
-Voor details, zie [ mening en geef inzamelingsmeta-gegevens ](/help/assets/manage-collections.md#view-edit-collection-metadata) uit en [ geef meta-gegevens van veelvoudige inzamelingen in bulk ](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk) uit.
+Voor details, zie [&#x200B; mening en geef inzamelingsmeta-gegevens &#x200B;](/help/assets/manage-collections.md#view-edit-collection-metadata) uit en [&#x200B; geef meta-gegevens van veelvoudige inzamelingen in bulk &#x200B;](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk) uit.
 
 ## Een metagegevensprofiel toepassen op mappen {#applying-a-metadata-profile-to-folders}
 
@@ -174,17 +174,17 @@ Als u een ander metagegevensprofiel aan een map hebt toegewezen, overschrijft he
 
 Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangeduid met de naam van het profiel dat in de kaartnaam wordt weergegeven.
 
-![ de mening van de Kaart toont het meta-gegevensprofiel dat op een omslag ](assets/metadata-profile-card-view-display.png) wordt toegepast
+![&#x200B; de mening van de Kaart toont het meta-gegevensprofiel dat op een omslag &#x200B;](assets/metadata-profile-card-view-display.png) wordt toegepast
 
 U kunt metagegevensprofielen toepassen op specifieke mappen of op alle elementen.
 
-U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie [ het Opverwerken activa in een omslag nadat u zijn verwerkingsprofiel ](processing-profiles.md#reprocessing-assets) hebt uitgegeven.
+U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie [&#x200B; het Opverwerken activa in een omslag nadat u zijn verwerkingsprofiel &#x200B;](processing-profiles.md#reprocessing-assets) hebt uitgegeven.
 
 U kunt een metadataprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u op beide manieren metadataprofielen kunt toepassen op mappen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [ het Opverwerken activa in een omslag nadat u zijn verwerkingsprofiel ](processing-profiles.md#reprocessing-assets) hebt uitgegeven.
+U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [&#x200B; het Opverwerken activa in een omslag nadat u zijn verwerkingsprofiel &#x200B;](processing-profiles.md#reprocessing-assets) hebt uitgegeven.
 
 ### Metagegevensprofielen toepassen op mappen vanuit de gebruikersinterface van [!UICONTROL Profiles] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
@@ -231,7 +231,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 
 ## Tips en beperkingen {#best-practices-limitations}
 
-* De metagegevensupdates via de gebruikersinterface wijzigen de eigenschappen van de metagegevens in de naamruimte `dc` . Wanneer updates via de HTTP-API worden uitgevoerd, veranderen de eigenschappen van de metagegevens in de naamruimte `jcr` . Zie [ hoe te om meta-gegevens bij te werken gebruikend HTTP API ](/help/assets/mac-api-assets.md#update-asset-metadata).
+* De metagegevensupdates via de gebruikersinterface wijzigen de eigenschappen van de metagegevens in de naamruimte `dc` . Wanneer updates via de HTTP-API worden uitgevoerd, veranderen de eigenschappen van de metagegevens in de naamruimte `jcr` . Zie [&#x200B; hoe te om meta-gegevens bij te werken gebruikend HTTP API &#x200B;](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 * Het CSV-bestand voor het importeren van metagegevens van elementen heeft een zeer specifieke indeling. Als u moeite en tijd wilt besparen en onbedoelde fouten wilt voorkomen, kunt u de CSV-bestanden beginnen te maken met de indeling van een geëxporteerd CSV-bestand.
 
@@ -239,9 +239,9 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 
 >[!MORELIKETHIS]
 >
->* [ concepten van Meta-gegevens en begrip ](metadata-concepts.md).
->* [ geef meta-gegevenseigenschappen van veelvoudige inzamelingen ](manage-collections.md#editing-collection-metadata-in-bulk) uit
->* [ de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [&#x200B; concepten van Meta-gegevens en begrip &#x200B;](metadata-concepts.md).
+>* [&#x200B; geef meta-gegevenseigenschappen van veelvoudige inzamelingen &#x200B;](manage-collections.md#editing-collection-metadata-in-bulk) uit
+>* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

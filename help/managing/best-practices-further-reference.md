@@ -28,12 +28,12 @@ Deze pagina verstrekt verdere details om op de documenten en de principes uit te
 
 ### Functies in AEM {#features-within-aem}
 
-Wanneer het uitvoeren van AEM (in het bijzonder voor het eerst), herzie de [&#x200B; mogelijkheden en de werkschema&#39;s van AEM &#x200B;](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html) om zeker te zijn van welke gebieden u wilt of nodig hebt.
+Wanneer het uitvoeren van AEM (in het bijzonder voor het eerst), herzie de [&#x200B; mogelijkheden en de werkschema&#39;s van AEM &#x200B;](https://business.adobe.com/nl/products/experience-manager/adobe-experience-manager.html) om zeker te zijn van welke gebieden u wilt of nodig hebt.
 
 Houd rekening met de functies van AEM die u gebruikt en de invloed op uw ontwerp, bijvoorbeeld:
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [&#x200B; Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [&#x200B; Screens &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=nl-NL)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Beheer en vertaling van meerdere sites](/help/sites-administering/msm-and-translation.md)

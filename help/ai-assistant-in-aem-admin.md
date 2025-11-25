@@ -53,7 +53,7 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 ## 1 - Een nieuw productprofiel maken in de Adobe Admin Console{#create-profile}
 
-1. Volg de gedetailleerde instructies in [&#x200B; creeer een nieuw productprofiel in Adobe Admin Console &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
+1. Volg de gedetailleerde instructies in [&#x200B; creeer een nieuw productprofiel in Adobe Admin Console &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/create-profile) dat in de documentatie van Experience Platform wordt gevonden.
 
 1. Bij het maken van het nieuwe productprofiel kunt u de volgende voorgestelde waarden voor AI Assistant gebruiken.
 
@@ -69,7 +69,7 @@ Voordat u begint, moet u controleren of aan de volgende voorwaarden is voldaan:
 
 Het proces voor het toewijzen van aangepaste machtigingen aan productprofielen volgt de standaard Adobe Cloud Manager-workflow voor aangepaste machtigingen.
 
-Het artikel van de verwijzing: [&#x200B; wijst douanetoestemmingen aan het nieuwe productprofiel &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
+Het artikel van de verwijzing: [&#x200B; wijst douanetoestemmingen aan het nieuwe productprofiel &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions) toe
 
 1. Klik in de Admin Console op de naam van het zojuist gemaakte productprofiel (`AI Assistant in AEM`)
 
@@ -163,7 +163,7 @@ U kunt de bulkupload-functie in de Admin Console gebruiken.
 
 Deze stap volgt de standaard Adobe Admin Console-workflow voor het toewijzen van productprofielen aan gebruikersgroepen.
 
-Het artikel van de verwijzing: [&#x200B; beheert productprofielen voor ondernemingsgebruikers &#x200B;](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+Het artikel van de verwijzing: [&#x200B; beheert productprofielen voor ondernemingsgebruikers &#x200B;](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html)
 
 1. Terwijl nog in uw Medewerker AI in AEM gebruikersgroep van [&#x200B; 4 - voeg gebruikers aan de gebruikersgroep &#x200B;](#add-users) toe, klik de **Toegewezen productprofielen** tabel.
 1. Klik **toewijzen profiel**.
@@ -198,5 +198,5 @@ Een gebruiker van de toegewezen groep hebben doe het volgende:
 ## Zie ook
 
 * [AI Assistant in AEM](/help/ai-assistant-in-aem.md)
-* [&#x200B; de Toegangscontrole van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
+* [&#x200B; de Toegangscontrole van Adobe Experience Platform &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->

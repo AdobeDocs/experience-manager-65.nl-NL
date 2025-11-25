@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ Metagegevens zijn aanvullende informatie over het element die kan worden doorzoc
 
 U kunt de volgende methoden gebruiken om metagegevens toe te voegen aan digitale elementen:
 
-* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [&#x200B; Acrobat voegt sommige meta-gegevens &#x200B;](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aan de dossiers van PDF toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [&#x200B; meta-gegevens van IPTC in Adobe Lightroom &#x200B;](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
+* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Bijvoorbeeld, [&#x200B; Acrobat voegt sommige meta-gegevens &#x200B;](https://helpx.adobe.com/nl/acrobat/using/pdf-properties-metadata.html) aan de dossiers van PDF toe of een camera voegt sommige basismeta-gegevens aan de foto&#39;s toe. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. Bijvoorbeeld, kunt u [&#x200B; meta-gegevens van IPTC in Adobe Lightroom &#x200B;](https://helpx.adobe.com/nl/lightroom-classic/help/metadata-basics-actions.html) toevoegen.
 
-* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u middelen uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [&#x200B; werken met meta-gegevens in  [!DNL Adobe Bridge] &#x200B;](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [&#x200B; paneel van markeringen voor  [!DNL Adobe Bridge] &#x200B;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u middelen uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te [&#x200B; werken met meta-gegevens in  [!DNL Adobe Bridge] &#x200B;](https://helpx.adobe.com/nl/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en zie het [&#x200B; paneel van markeringen voor  [!DNL Adobe Bridge] &#x200B;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets] kunt u metagegevens van elementen handmatig toevoegen of bewerken op de pagina [!UICONTROL Properties] .
 
@@ -241,7 +241,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 >
 >* [&#x200B; concepten van Meta-gegevens en begrip &#x200B;](metadata-concepts.md).
 >* [&#x200B; geef meta-gegevenseigenschappen van veelvoudige inzamelingen &#x200B;](manage-collections.md#editing-collection-metadata-in-bulk) uit
->* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=nl-NL)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

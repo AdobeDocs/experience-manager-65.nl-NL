@@ -87,7 +87,7 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld `c:\batchprocessing` .
    1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]** .
    1. Selecteer de service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Service Name]** .
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [&#x200B; patroon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
+   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [&#x200B; patroon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=nl-NL#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
 1. Geavanceerde parameters configureren:
    1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
@@ -147,7 +147,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld `c:\batchprocessing` .
    1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]** .
    1. Selecteer de service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Service Name]** .
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [&#x200B; patroon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
+   1. Geef een **[!UICONTROL Output File Pattern]** op. Bijvoorbeeld, specificeert het %F/ [&#x200B; patroon &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=nl-NL#about-file-patterns) de Gecontroleerde Omslag kan inputdossiers in een subfolder van de Gecontroleerde omslag \ inputomslag vinden.
 1. Geavanceerde parameters configureren:
    1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
@@ -176,8 +176,8 @@ U kunt [&#x200B; de Partij API &#x200B;](https://developer.adobe.com/experience-
 Voordat u de Java™-servlet implementeert, moet u ervoor zorgen dat u een interactieve communicatie hebt en dat de bijbehorende gegevensbestanden gereed zijn. Voer de volgende stappen uit, zodat u de Java™ servlet kunt maken en implementeren:
 
 1. Meld u aan bij uw AEM-exemplaar en maak een interactieve communicatie. Om de interactieve mededeling te gebruiken die in de hieronder vermelde steekproefcode wordt vermeld, [&#x200B; klik hier &#x200B;](assets/SimpleMediumIC.zip).
-1. [&#x200B; bouwt en stelt een Project van AEM op gebruikend Apache Maven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) op uw instantie van AEM.
-1. Voeg {versie 6.0.12 van SDK van de Cliënt van 0} AEM Forms of recenter [&#x200B; in de gebiedslijst van POM dossier van uw project van AEM toe. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) Bijvoorbeeld:
+1. [&#x200B; bouwt en stelt een Project van AEM op gebruikend Apache Maven &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=nl-NL) op uw instantie van AEM.
+1. Voeg {versie 6.0.12 van SDK van de Cliënt van 0} AEM Forms of recenter [&#x200B; in de gebiedslijst van POM dossier van uw project van AEM toe. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) Bijvoorbeeld:
 
    ```xml
        <dependency>
@@ -327,7 +327,7 @@ Voordat u de Java™-servlet implementeert, moet u ervoor zorgen dat u een inter
    * Wanneer u de optie WEB opgeeft, wordt een JSON-bestand per record gegenereerd. U kunt het JSON- dossier gebruiken om [&#x200B; een Webmalplaatje &#x200B;](#web-template) vooraf te vullen.
    * Wanneer u zowel de opties AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
 
-1. [&#x200B; Gemaakt Gebruik om de bijgewerkte code aan uw instantie van AEM op te stellen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. [&#x200B; Gemaakt Gebruik om de bijgewerkte code aan uw instantie van AEM op te stellen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=nl-NL).
 1. Als u de interactieve communicatie wilt genereren, roept u de batch-API aan. De batch-API drukt een stroom PDF- en JSON-bestanden af, afhankelijk van het aantal records. U kunt het JSON- dossier gebruiken om [&#x200B; een Webmalplaatje &#x200B;](#web-template) vooraf te vullen. Als u de bovenstaande code gebruikt, wordt de API geïmplementeerd op `http://localhost:4502/bin/batchServlet` . De code drukt een stream van een PDF- en een JSON-bestand af en retourneert deze.
 
 ### Een websjabloon vooraf invullen {#web-template}
@@ -363,4 +363,4 @@ U slaat de gegevens niet alleen op het bestandssysteem op, u slaat JSON-bestande
 
 >[!NOTE]
 >
->Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie [&#x200B; Vormend vooraf ingevulde dienst gebruikend de Manager van de Configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie [&#x200B; Vormend vooraf ingevulde dienst gebruikend de Manager van de Configuratie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=nl-NL).

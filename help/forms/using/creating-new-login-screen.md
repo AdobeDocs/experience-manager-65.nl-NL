@@ -293,7 +293,7 @@ Bijvoorbeeld:
 1. Voeg nieuwe afbeeldingen toe in `/apps/livecycle/core/content/login` . Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeer naar de map `/apps/livecycle/core/content/login` met de webDAV-client. Voor meer informatie, zie [&#x200B; Toegang WebDAV &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navigeer naar de map `/apps/livecycle/core/content/login` met de webDAV-client. Voor meer informatie, zie [&#x200B; Toegang WebDAV &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=nl-NL).
 
    1. Voeg nieuwe afbeeldingen toe.
 

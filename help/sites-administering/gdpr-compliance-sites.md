@@ -50,7 +50,7 @@ AEM heeft de dienst van de a [&#x200B; koekjesopt-out &#x200B;](/help/sites-deve
 
 AEM Sites omvat een optionele integratie met Enhanced Insights van Analytics, die gebruikmaakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Voor verdere informatie bij het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Analytics zie [&#x200B; Adobe Analytics en GDPR &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Voor verdere informatie bij het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Analytics zie [&#x200B; Adobe Analytics en GDPR &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=nl-NL).
 
 ## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
@@ -68,7 +68,7 @@ Deze bezoeker-gegevens worden standaard niet opgeslagen in AEM. AEM stuurt regel
 >
 >Voorafgaand aan Adobe AEM (CQ) 5.6, verstuurde ClientContext (een vroegere versie van ContextHub) de gegevens naar de server, maar bewaarde hen niet.
 >
->Adobe AEM 6.4 en eerdere versies zijn nu EOL en worden niet door deze documentatie gedekt. Zie [&#x200B; Oudere versies van Adobe Experience Manager, CQ, en de documentatie van CRX &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 en eerdere versies zijn nu EOL en worden niet door deze documentatie gedekt. Zie [&#x200B; Oudere versies van Adobe Experience Manager, CQ, en de documentatie van CRX &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
 

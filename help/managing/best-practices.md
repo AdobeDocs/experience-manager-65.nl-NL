@@ -188,7 +188,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Processen voor elke omgeving, bijvoorbeeld vereisten voor implementatie en onderhoud
    * Onderhoudsactiviteiten (GC voor datastore, TarPM-optimalisatie, enzovoort)
-   * [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) caching
+   * [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) caching
    * [&#x200B; het Groeperen &#x200B;](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) publiceert/auteur deelt
    * Prestaties voor de client-side (JS minify, concat, css sprites, totaal aantal http-aanvragen, enzovoort)
 
@@ -239,7 +239,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Voor ontwikkeling, zouden alle steunprocessen die worden vereist om, versie, test, en rapportkwesties op te stellen, op zijn plaats moeten worden geplaatst.
 
-  Zie ook het [&#x200B; Portaal van de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
+  Zie ook het [&#x200B; Portaal van de Steun van Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&support-tab=home#support).
 
 ### Operationele planning en operaties {#operations-planning-and-operations}
 
@@ -628,8 +628,8 @@ Daarnaast zijn de volgende secties van de documentatie van AEM van bijzonder bel
 
       * [Ontwikkeling - de basisbeginselen](/help/sites-developing/the-basics.md)
       * [MSM-concepten](/help/sites-administering/msm.md)
-      * [&#x200B; Taal van het Malplaatje van HTML (HTML) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [&#x200B; Taal van het Malplaatje van HTML (HTML) &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=nl-NL)
 
 * Verwante documentatie
 
-   * Adobe Experience Cloud - [&#x200B; Planning voor Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [&#x200B; Planning voor Adobe Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=nl-NL)

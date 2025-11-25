@@ -40,7 +40,7 @@ En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Ver
 >* Netwerkbandbreedte
 >* DPR (Pixelverhouding apparaat)
 >
->Om te leren hoe gemakkelijk het Momentopname moet gebruiken, speel de [&#x200B; video van de de opleidingsopleiding van de Momentopname &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten en 17 seconden).
+>Om te leren hoe gemakkelijk het Momentopname moet gebruiken, speel de [&#x200B; video van de de opleidingsopleiding van de Momentopname &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten en 17 seconden).
 
 Smart Imaging profiteert van de extra prestatieverhoging door volledig te zijn geïntegreerd met de eersteklas CDN-service (Content Delivery Network) van Adobe. Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
@@ -88,7 +88,7 @@ Als u Omzetting browserformaat inschakelt door `bfc=on` aan de URL van de afbeel
 
 U kunt Smart Imaging uitschakelen door `bfc=off` aan de URL van de afbeelding toe te voegen.
 
-Zie ook [&#x200B; bfc &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Dynamische Beeld van Media die en API teruggeven dienen.
+Zie ook [&#x200B; bfc &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Dynamische Beeld van Media die en API teruggeven dienen.
 
 ### Informatie over dpr-optimalisatie (Device Pixel Ratio) {#dpr}
 
@@ -236,7 +236,7 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
 **om een steungeval tot stand te brengen om Slimme Beeldvorming op uw rekening toe te laten:**
 
-1. [&#x200B; Gebruik Admin Console om de verwezenlijking van een nieuw steungeval &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
+1. [&#x200B; Gebruik Admin Console om de verwezenlijking van een nieuw steungeval &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) te beginnen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * **Primaire contactdetails:**
@@ -255,7 +255,7 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
       * Alle relevante domeinen weergeven, zoals *`company.com`* of *`mycompany.scene7.com`*
       * Smart Imaging ondersteunt zowel algemene als aangepaste domeinen.
-      * Om uw domeinen te identificeren, open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) en teken binnen aan uw bedrijfrekening.
+      * Om uw domeinen te identificeren, open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) en teken binnen aan uw bedrijfrekening.
 
          1. Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** .
          1. Zoek het veld **[!UICONTROL Published Server Name]** om uw domein te bevestigen.

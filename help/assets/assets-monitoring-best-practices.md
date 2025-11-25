@@ -194,7 +194,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 Tijdens het bewakingsproces, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met [!DNL Experience Manager] plaatsingen op te lossen:
 
 * Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Voor meer details, zie [&#x200B; de bewaarplaats &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository) handhaven.
-* Controleer `OutOfMemoryError` logs. Voor meer informatie, zie [&#x200B; Geheugenproblemen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html) analyseren.
+* Controleer `OutOfMemoryError` logs. Voor meer informatie, zie [&#x200B; Geheugenproblemen &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=nl-NL) analyseren.
 
 * Controleer de logboeken om het even welke verwijzingen naar unindexed vragen, boomstamtraversals, of indextraversals. Deze wijzen op unindexed vragen of op ontoereikend geïndexeerde vragen. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [&#x200B; Beste praktijken voor vragen en het indexeren &#x200B;](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.

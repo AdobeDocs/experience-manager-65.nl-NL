@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Assets Insights configureren {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] haalt gebruiksgegevens op over digitale elementen die door websites van derden worden gebruikt vanuit [!DNL Adobe Analytics] . Als u Assets Insights in staat wilt stellen deze gegevens op te halen en inzichten te genereren, moet u eerst de functie configureren voor integratie met [!DNL Adobe Analytics] . Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [&#x200B; Managed Services productbeschrijving &#x200B;](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+[!DNL Adobe Experience Manager Assets] haalt gebruiksgegevens op over digitale elementen die door websites van derden worden gebruikt vanuit [!DNL Adobe Analytics] . Als u Assets Insights in staat wilt stellen deze gegevens op te halen en inzichten te genereren, moet u eerst de functie configureren voor integratie met [!DNL Adobe Analytics] . Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [&#x200B; Managed Services productbeschrijving &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >Voor meer informatie over het oplossen van problemen en het bevestigen van prestatieskwesties, zie ook de [&#x200B; boom van Prestaties &#x200B;](/help/sites-deploying/performance-tree.md).
 >
->Ook, kunt u een artikel van de Kennisbank op [&#x200B; Prestaties herzien richtend Tips &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
+>Ook, kunt u een artikel van de Kennisbank op [&#x200B; Prestaties herzien richtend Tips &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 Een belangrijk probleem is de tijd die uw website nodig heeft om te reageren op bezoekersverzoeken. Hoewel deze waarde voor elke aanvraag varieert, kan een gemiddelde doelwaarde worden bepaald. Zodra deze waarde zowel haalbaar als houdbaar is, kan deze worden gebruikt om de prestaties van de website te controleren en de ontwikkeling van potentiële problemen aan te geven.
 
@@ -41,7 +41,7 @@ Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Hier is h
 >[!NOTE]
 >
 >* Na het vormen voor prestatiesoptimalisering, volg de procedures in [&#x200B; Dag van de Stevige &#x200B;](/help/sites-developing/tough-day.md) om het milieu onder zware lading te testen.
->* Zie ook [&#x200B; het stemmen van Prestaties uiteinden.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* Zie ook [&#x200B; het stemmen van Prestaties uiteinden.](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Methode voor optimalisatie van prestaties {#performance-optimization-methodology}
 
@@ -203,7 +203,7 @@ Bepaalde aspecten van AEM (en/of de onderliggende opslagplaats) kunnen worden ge
 
 >[!NOTE]
 >
->Zie [&#x200B; Optimalisering van Prestaties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>Zie [&#x200B; Optimalisering van Prestaties &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=nl-NL).
 
 ### Indexering zoeken {#search-indexing}
 
@@ -477,7 +477,7 @@ Nadat alle tests zijn afgerond, rapporteren over het volgende:
 
 ## Prestaties optimaliseren bij gebruik van de Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-[&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is Adobe caching en/of lading-in evenwicht brengend hulpmiddel. Als u de Dispatcher gebruikt, kunt u uw website optimaliseren voor de prestaties van de cache.
+[&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) is Adobe caching en/of lading-in evenwicht brengend hulpmiddel. Als u de Dispatcher gebruikt, kunt u uw website optimaliseren voor de prestaties van de cache.
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ De Dispatcher biedt verschillende ingebouwde mechanismen die u kunt gebruiken om
 >
 >In het algemeen, impliceren vele caching strategieën het selecteren van goede URLs en het verlaten van deze extra gegevens.
 >
->Met versie 4.1.11 van Dispatcher kunt u reactiekopballen ook in het voorgeheugen onderbrengen, zie {de Kopballen van de Reactie van HTTP 0} Caching [.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)
+>Met versie 4.1.11 van Dispatcher kunt u reactiekopballen ook in het voorgeheugen onderbrengen, zie {de Kopballen van de Reactie van HTTP 0} Caching [.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)
 >
 
 ### De Dispatcher-cacheverhouding berekenen {#calculating-the-dispatcher-cache-ratio}
@@ -529,7 +529,7 @@ Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen
 
 #### URL-parameters vermijden {#avoid-url-parameters}
 
-Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Bijvoorbeeld, als u een beeldgalerij hebt, wordt volgende URL nooit in het voorgeheugen ondergebracht (tenzij Dispatcher dienovereenkomstig [&#x200B; wordt gevormd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Bijvoorbeeld, als u een beeldgalerij hebt, wordt volgende URL nooit in het voorgeheugen ondergebracht (tenzij Dispatcher dienovereenkomstig [&#x200B; wordt gevormd &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=nl-NL#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -602,22 +602,22 @@ U wordt aangeraden de personalisatie te beperken tot de plaats waar dat nodig is
 * Als u daarentegen een keuze hebt uit tien verschillende startpagina&#39;s, kunt u elk van deze in cache plaatsen, waardoor de prestaties verbeteren.
 
 >[!TIP]
->Voor verdere details bij het vormen van het geheime voorgeheugen van Dispatcher, zie de [&#x200B; Zelfstudie van het Geheime voorgeheugen van AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) en zijn sectie op [&#x200B; Caching Beschermde Inhoud.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>Voor verdere details bij het vormen van het geheime voorgeheugen van Dispatcher, zie de [&#x200B; Zelfstudie van het Geheime voorgeheugen van AEM Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=nl-NL) en zijn sectie op [&#x200B; Caching Beschermde Inhoud.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=nl-NL#dispatcher-tips-and-tricks)
 
 Als u elke pagina personaliseert door de naam van de gebruiker in de titelbar (bijvoorbeeld) te zetten, heeft het een prestatieseffect.
 
 >[!TIP]
->Voor het in het voorgeheugen onderbrengen beveiligde inhoud, zie [&#x200B; In het voorgeheugen onderbrengend Beveiligde Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in de gids van Dispatcher.
+>Voor het in het voorgeheugen onderbrengen beveiligde inhoud, zie [&#x200B; In het voorgeheugen onderbrengend Beveiligde Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=nl-NL) in de gids van Dispatcher.
 
 Met betrekking tot het mengen van beperkte en openbare inhoud op één pagina, overweeg een strategie die serverinclude-bestanden in de Dispatcher gebruikt, of cliëntinclude-bestanden als Ajax in de browser.
 
 >[!TIP]
 >
->Voor het behandelen van gemengde openbare en beperkte inhoud, zie [&#x200B; Opstelling het Verdelen Dynamische omvatten.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>Voor het behandelen van gemengde openbare en beperkte inhoud, zie [&#x200B; Opstelling het Verdelen Dynamische omvatten.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=nl-NL)
 
 #### Vaste verbindingen {#sticky-connections}
 
-[&#x200B; de Vaste verbindingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) zorgen ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Als u alle documenten wilt bewaren waarvoor kleverige verbindingen voor de website nodig zijn, definieert u één map. Probeer er geen andere documenten in op te nemen. Dit scenario beïnvloedt lading-in evenwicht brengend als u gepersonaliseerde pagina&#39;s en zittingsgegevens gebruikt.
+[&#x200B; de Vaste verbindingen &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL#the-benefits-of-load-balancing) zorgen ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Als u alle documenten wilt bewaren waarvoor kleverige verbindingen voor de website nodig zijn, definieert u één map. Probeer er geen andere documenten in op te nemen. Dit scenario beïnvloedt lading-in evenwicht brengend als u gepersonaliseerde pagina&#39;s en zittingsgegevens gebruikt.
 
 #### MIME-typen {#mime-types}
 

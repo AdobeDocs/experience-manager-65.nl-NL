@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 Een variabele in een workflowmodel is een manier om een waarde op te slaan op basis van het gegevenstype. U kunt dan de naam van de variabele in om het even welke werkschemastap gebruiken om de waarde terug te winnen die in de variabele wordt opgeslagen. U kunt veranderlijke namen ook gebruiken om uitdrukkingen te bepalen voor het nemen van verpletterende besluiten.
@@ -44,13 +44,13 @@ De variabelen zijn een uitbreiding van de bestaande [&#x200B; MetaDataMap &#x200
 U maakt variabelen aan de hand van de sectie Variabelen die beschikbaar is in de assistent van het workflowmodel. AEM-workflowvariabelen ondersteunen de volgende gegevenstypen:
 
 * **Primitieve gegevenstypes**: Lang, Dubbel, Van Boole, Datum, en Koord
-* **Complexe gegevenstypes**: [&#x200B; Document &#x200B;](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [&#x200B; XML &#x200B;](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [&#x200B; JSON &#x200B;](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
+* **Complexe gegevenstypes**: [&#x200B; Document &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [&#x200B; XML &#x200B;](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [&#x200B; JSON &#x200B;](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html), en de Modelinstantie van Gegevens van de Vorm.
 
 >[!NOTE]
 >
 >Workflows ondersteunen alleen de ISO8601-indeling voor variabelen van het type Date.
 
-U vereist [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor de gegevenstypes van het Model van Document en van de Gegevens van de Vorm.  Gebruik het gegevenstype ArrayList om variabele verzamelingen te maken. U kunt een variabele ArrayList maken voor alle primitieve en complexe gegevenstypen. Maak bijvoorbeeld een variabele ArrayList en selecteer String als subtype om meerdere tekenreekswaarden op te slaan met de variabele.
+U vereist [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) voor de gegevenstypes van het Model van Document en van de Gegevens van de Vorm.  Gebruik het gegevenstype ArrayList om variabele verzamelingen te maken. U kunt een variabele ArrayList maken voor alle primitieve en complexe gegevenstypen. Maak bijvoorbeeld een variabele ArrayList en selecteer String als subtype om meerdere tekenreekswaarden op te slaan met de variabele.
 
 Voer de volgende stappen uit om een variabele te maken:
 
@@ -210,7 +210,7 @@ Gebruik de volgende API&#39;s in het ECMA-script om waarden voor bestaande varia
 | Formuliergegevensmodel | Packages.com.adobe.name.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.get.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-U vereist [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor de veranderlijke gegevenstypes van het Model van Gegevens van het Document en van de Vorm.
+U vereist [&#x200B; toe:voegen-op pakket van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) voor de veranderlijke gegevenstypes van het Model van Gegevens van het Document en van de Vorm.
 
 **Voorbeeld**
 

@@ -1,53 +1,53 @@
 ---
-title: Ga aan de slag met AEM headless vertaling
-description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalhulpmiddelen werken.
+title: Ga aan de slag met AEM-headless-vertaling
+description: Lees hoe u uw inhoud zonder kop kunt ordenen en hoe de vertaalhulpmiddelen van AEM werken.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
 
 ---
 
-# Ga aan de slag met AEM headless Translation {#getting-started}
+# Aan de slag met AEM Headless Translation {#getting-started}
 
-Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalhulpmiddelen werken.
+Lees hoe u uw inhoud zonder kop kunt ordenen en hoe de vertaalhulpmiddelen van AEM werken.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM hoofdloze vertaalreis, [&#x200B; Leer over hoofdloze inhoud en hoe te in AEM &#x200B;](learn-about.md) te vertalen u de basistheorie van leerde wat een headless CMS is en u zou nu moeten:
+In het vorige document van de hoofdloze vertaalreis van AEM, [ Leer over hoofdloze inhoud en hoe te in AEM ](learn-about.md) te vertalen u de basistheorie van leerde wat een koploze CMS is en u zou nu moeten:
 
 * Begrijp de basisconcepten van inhoud zonder kop levering.
 * Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
 
-Dit artikel bouwt verder op die grondbeginselen zodat u begrijpt hoe AEM inhoud zonder kop opslaat en beheert en hoe u AEM vertaalhulpmiddelen kunt gebruiken om die inhoud te vertalen.
+Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe AEM inhoud zonder kop opslaat en beheert en hoe u met de vertaalhulpmiddelen van AEM die inhoud kunt vertalen.
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe u aan de slag kunt gaan met het vertalen van inhoud zonder kop in AEM. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u aan de slag kunt met het vertalen van inhoud zonder kop in AEM. Na het lezen moet u:
 
 * Begrijp het belang van inhoudsstructuur voor vertaling.
 * Begrijp hoe AEM inhoud zonder kop opslaat.
-* Wees vertrouwd met AEM vertaalhulpmiddelen.
+* Ben vertrouwd met de vertaalhulpmiddelen van AEM.
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn verschillende vereisten waaraan u moet voldoen voordat u inhoud zonder kop gaat vertalen AEM inhoud.
+Er zijn verschillende vereisten waaraan u moet voldoen voordat u uw AEM-inhoud zonder koppen gaat vertalen.
 
 ### Kennis {#knowledge}
 
 * Ervaar het vertalen van inhoud in een CMS
-* Ervaar het gebruiken van de basiseigenschappen van grootschalig CMS
-* Werken met AEM basisverwerking
+* Ervaar de basisfuncties van een grootschalig CMS
+* Werken met AEM-basisverwerking
 * Kennis van de vertaalservice die u gebruikt
 * Basiskennis hebben van de inhoud die u wilt vertalen
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruiken van grote CMS als AEM, overweeg het herzien van de [&#x200B; Basis Behandelende &#x200B;](/help/sites-authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis, zodat terugkeer aan deze pagina wanneer volledig.
+>Als u niet vertrouwd met het gebruiken van een grootscale CMS zoals AEM bent, overweeg het herzien van de [ Basis Behandelende ](/help/sites-authoring/basic-handling.md) documentatie alvorens te werk te gaan. De documentatie van de Basisbehandeling maakt geen deel uit van de reis, zodat terugkeer aan deze pagina wanneer volledig.
 
 ### Gereedschappen {#tools}
 
@@ -57,7 +57,7 @@ Er zijn verschillende vereisten waaraan u moet voldoen voordat u inhoud zonder k
 
 ## Structuur is sleutel {#content-structure}
 
-AEM inhoud, of het nu kranteloze of traditionele webpagina&#39;s zijn, wordt aangedreven door de structuur ervan. AEM stelt weinig vereisten aan de inhoudsstructuur op, maar een zorgvuldige overweging van uw inhoudshiërarchie als onderdeel van de projectplanning kan vertaling veel eenvoudiger maken.
+AEM-inhoud, of het nu krantenloze of traditionele webpagina&#39;s zijn, wordt aangestuurd door de structuur ervan. AEM stelt weinig vereisten aan de inhoudsstructuur op, maar zorgvuldige overweging van uw inhoudshiërarchie als onderdeel van de projectplanning kan vertaling veel eenvoudiger maken.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ AEM inhoud, of het nu kranteloze of traditionele webpagina&#39;s zijn, wordt aan
 
 ## Hoe AEM inhoud zonder kop opslaat {#headless-content-in-aem}
 
-Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud zonder kop beheert. Het is echter nuttig bekend te zijn met de basisbeginselen en -terminologie, aangezien u later AEM vertaalhulpmiddelen gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze gestructureerd is om deze effectief te vertalen.
+Voor de vertaalspecialist is het niet belangrijk om diepgaand te begrijpen hoe AEM inhoud zonder kop beheert. Het is echter handig om de basisbeginselen en -terminologie te kennen, aangezien u later vertaalhulpmiddelen voor AEM gebruikt. Het belangrijkste is dat u uw eigen inhoud begrijpt en hoe deze gestructureerd is om deze effectief te vertalen.
 
 ### Inhoudsmodellen {#content-models}
 
-Om ervoor te zorgen dat inhoud zonder kop consistent wordt geleverd tussen kanalen, regio&#39;s en talen, moet de inhoud zeer gestructureerd zijn. AEM gebruikt Content Models om deze structuur af te dwingen. U kunt Content Models zien als een soort sjabloon of patroon voor het maken van inhoud zonder kop. Omdat elk project zijn eigen behoeften heeft, bepaalt elk project zijn eigen Modellen van het Fragment van de Inhoud. AEM heeft geen vaste eisen of structuur voor dergelijke modellen.
+Om ervoor te zorgen dat inhoud zonder kop consistent wordt geleverd tussen kanalen, regio&#39;s en talen, moet de inhoud zeer gestructureerd zijn. AEM maakt gebruik van Content Models om deze structuur te handhaven. U kunt Content Models zien als een soort sjabloon of patroon voor het maken van inhoud zonder kop. Omdat elk project zijn eigen behoeften heeft, bepaalt elk project zijn eigen Modellen van het Fragment van de Inhoud. AEM heeft geen vaste eisen of structuur voor dergelijke modellen.
 
 De inhoudarchitect werkt in een vroeg stadium van het project om deze structuur te definiëren. Als vertaler moet u nauw samenwerken met de inhoudarchitect om de inhoud te begrijpen en te ordenen.
 
@@ -88,12 +88,11 @@ Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke 
 1. De **ModelRedacteur van het Fragmentmodel van de Inhoud** opent.
    1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
    1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
+      ![ de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor.png)
+1. Klik op een van de velden van het model. AEM markeert het en de details van dat gebied worden getoond in de juiste kolom.
+   ![ de details van de ModelRedacteur van het Fragment van de Inhoud ](assets/content-fragment-model-editor-detail.png)
 
-      ![&#x200B; de ModelRedacteur van het Fragment van de Inhoud &#x200B;](assets/content-fragment-model-editor.png)
-1. Klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
-   ![&#x200B; de details van de ModelRedacteur van het Fragment van de Inhoud &#x200B;](assets/content-fragment-model-editor-detail.png)
-
-Neem nota van de naam van het gebied **Bezit** voor alle gebieden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Naam van het Bezit** wordt vereist om AEM te informeren welke gebieden van uw inhoud moeten worden vertaald.
+Neem nota van de naam van het gebied **Bezit** voor alle gebieden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Naam van het Bezit** wordt vereist om AEM mee te delen welke gebieden van uw inhoud moeten worden vertaald.
 
 >[!TIP]
 >
@@ -105,7 +104,7 @@ Inhoudsmodellen worden door de auteurs van de inhoud gebruikt om de inhoud zonde
 
 Als Content Models de patronen voor de inhoud zijn, zijn de Content Fragments de daadwerkelijke inhoud die op die patronen wordt gebaseerd. De inhoudsfragmenten vertegenwoordigen de inhoud die moet worden vertaald.
 
-Inhoudsfragmenten worden als elementen in AEM beheerd als onderdeel van DAM (Digital Asset Management). Dit is belangrijk omdat ze allemaal onder het pad `/content/dam` staan.
+Inhoudsfragmenten worden in AEM als elementen beheerd in het kader van DAM (Digital Asset Management). Dit is belangrijk omdat ze allemaal onder het pad `/content/dam` staan.
 
 ## Aanbevolen inhoudsstructuur {#recommended-structure}
 
@@ -137,7 +136,7 @@ De vertalingen zouden als sibling omslagen naast de taalwortel met hun omslagnaa
 
 >[!NOTE]
 >
->Over het algemeen is de inhoudsarchitect verantwoordelijk voor het maken van deze taalmappen. Als ze niet worden gecreëerd, kunnen AEM later geen vertaalbanen creëren.
+>Over het algemeen is de inhoudsarchitect verantwoordelijk voor het maken van deze taalmappen. Als ze niet worden gecreëerd, kan AEM later geen vertaalbanen creëren.
 
 De uiteindelijke structuur kan er ongeveer als volgt uitzien.
 
@@ -166,9 +165,9 @@ Let op het specifieke pad van uw inhoud, want dit zal later nodig zijn om uw ver
 >
 >Het wordt hier nader toegelicht om de volledigheid te waarborgen.
 
-## AEM vertaalgereedschappen {#translation-tools}
+## AEM-omzettingsgereedschappen {#translation-tools}
 
-Nu u begrijpt wat Content Fragments zijn en hoe belangrijk de inhoudsstructuur is, kunnen we bekijken hoe we deze inhoud kunnen vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar eenvoudig te begrijpen op hoog niveau.
+Nu u begrijpt wat Content Fragments zijn en hoe belangrijk de inhoudsstructuur is, kunnen we bekijken hoe we deze inhoud kunnen vertalen. De vertaalhulpmiddelen in AEM zijn vrij krachtig, maar zijn eenvoudig te begrijpen op hoog niveau.
 
 * **Schakelaar van de Vertaling** - de schakelaar is het verband tussen AEM en de vertaaldienst die u gebruikt.
 * **de Regels van de Vertaling** - bepaalt welke inhoud onder bijzondere wegen zou moeten worden vertaald.
@@ -182,18 +181,18 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 
 * Begrijp het belang van inhoudsstructuur voor vertaling.
 * Begrijp hoe AEM inhoud zonder kop opslaat.
-* Wees vertrouwd met AEM vertaalhulpmiddelen.
+* Ben vertrouwd met de vertaalhulpmiddelen van AEM.
 
-Bouw op deze kennis voort en ga uw AEM hoofdloze vertaalreis door het document [&#x200B; opnieuw te bekijken vorm de vertaalintegratie &#x200B;](configure-connector.md) waar u zult leren hoe te om AEM met de vertaaldienst te verbinden.|
+Bouw op deze kennis voort en ga uw de hoofdloze vertaalreis van AEM door het document [ opnieuw te bekijken vormen de vertaalintegratie ](configure-connector.md) waar u zult leren hoe te om AEM met de vertaaldienst te verbinden.|
 
 ## Aanvullende bronnen {#additional-resources}
 
-Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [&#x200B; te herzien de vertaalschakelaar &#x200B;](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
+Terwijl wordt geadviseerd dat u zich op het volgende deel van de hoofdloze vertaalreis door het document [ te herzien de vertaalschakelaar ](configure-connector.md) beweegt is het volgende wat extra, facultatieve middelen die een diepere duik op sommige concepten doen in dit document worden vermeld, maar zij worden niet vereist om op de headless reis verder te gaan.
 
-* [&#x200B; AEM Basisbehandeling &#x200B;](/help/sites-authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
-* [&#x200B; identificerend Inhoud om &#x200B;](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
-* [&#x200B; Vormend het Kader van de Integratie van de Vertaling &#x200B;](/help/sites-administering/tc-tic.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
-* [&#x200B; het Leiden de Projecten van de Vertaling &#x200B;](/help/sites-administering/tc-manage.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
-* Een [&#x200B; Inleiding aan AEM als Zwaartepunt CMS &#x200B;](/help/sites-developing/headless/introduction.md)
-* Het [&#x200B; AEM Portaal van de Ontwikkelaar &#x200B;](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=nl-NL)
-* [&#x200B; Tutorials voor Zwaartepunt in AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL)
+* [ Basisbehandeling van AEM ](/help/sites-authoring/basic-handling.md) - leer de grondbeginselen van AEM UI om essentiële taken gemakkelijk te kunnen navigeren en uitvoeren zoals het vinden van uw inhoud.
+* [ identificerend Inhoud om ](/help/sites-administering/tc-rules.md) te vertalen - leer hoe de vertaalregels inhoud identificeren die moet vertalen.
+* [ Vormend het Kader van de Integratie van de Vertaling ](/help/sites-administering/tc-tic.md) - leer hoe te om het Kader van de Integratie van de Vertaling te vormen om met de diensten van de derdevertaling te integreren.
+* [ het Leiden Vertaalprojecten ](/help/sites-administering/tc-manage.md) - leer hoe te om zowel machine als menselijke vertaalprojecten in AEM tot stand te brengen en te leiden.
+* Een [ Inleiding aan AEM als Headless CMS ](/help/sites-developing/headless/introduction.md)
+* Het [ Portaal van de Ontwikkelaar van AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [ Leerprogramma&#39;s voor Zwaartepunt in AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -9,9 +9,9 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 {{ue-over-mobile}}
 
-Artikelen, banners en verzamelingen worden weergegeven als cq:Pagina&#39;s in AEM.
+Artikelen, banners en verzamelingen worden in AEM als cq :Pages weergegeven.
 
-Ze delen dezelfde gemeenschappelijke eigenschappen die in elke cq:pagina worden gevonden, naast diverse hieronder getoonde eigenschappen die de metagegevens van de mobiele on-demand services van Adobe Experience Manager (AEM) vertegenwoordigen en ondersteunende eigenschappen voor integratie.
+Zij delen de zelfde gemeenschappelijke eigenschappen die in om het even welke cq :Page naast verscheidene hieronder getoonde anderen worden gevonden die de mobiele de dienstenmeta-gegevens van de On-Demand van Adobe Experience Manager (AEM) en integratie ondersteunende eigenschappen vertegenwoordigen.
 
 In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud beschreven.
 
@@ -30,12 +30,12 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | **de Naam van het Bezit** | **Type** | **Gebreken of Verwachte Waarden** | **Beschrijving** |
 |---|---|---|---|
-| dps-id | String |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
-| dps-resourceType | String | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
+| dps-id | String |  | toegewezen door AEM Mobile en opgeslagen door AEM na uploaden naar AEM Mobile of geïmporteerd uit AEM Mobile |
+| dps-resourceType | String | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-versie | String |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
 | dps-lastSynced | Datum |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
 | dps-lastUploaded | Datum |  | datum van laatste upload van AEM naar AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | De gebruiker van identiteitskaart die het laatste uploadverzoek van AEM aan AEM Mobile uitvoerde |
+| dps-lastUploadedBy | String :userid |  | ID-gebruiker die het laatste uploadverzoek van AEM naar AEM Mobile heeft uitgevoerd |
 
 ## Eigenschappen van kernmetagegevens {#core-metadata-properties}
 
@@ -79,7 +79,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-readingPosition | String | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | String | van &quot;browsePage&quot;,&quot;contentView&quot;&rbrace; |
+| dps-openDefault | String | van &quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-lay-out | String |  |
 
 ## Inhoudsknooppunten {#content-nodes}
@@ -88,7 +88,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden of Verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| image | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |  |
+| image | jcr:primaryType=nt:unstructured <br> sling :resourceType=foundation/components/image |  |  |
 
 ### Entiteiten {#entities}
 
@@ -96,7 +96,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden van verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:primaryType=nt:unstructured <br> sling :resourceType=foundation/components/image |  |
 
 #### Banners {#banners-1}
 
@@ -108,4 +108,4 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden van verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| achtergrondafbeelding | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |  |
+| achtergrondafbeelding | jcr:primaryType=nt:unstructured <br> sling :resourceType=foundation/components/image |  |  |

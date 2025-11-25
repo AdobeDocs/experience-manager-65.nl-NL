@@ -2,11 +2,11 @@
 title: '[!DNL Assets] proxyontwikkeling'
 description: Een volmacht is een  [!DNL Experience Manager]  instantie die volmachtsarbeiders gebruikt om banen te verwerken. Leer hoe te om een  [!DNL Experience Manager]  volmacht, gesteunde verrichtingen, volmachtscomponenten te vormen, en hoe te om een worker van de douanevolmacht te ontwikkelen.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
-Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processoren die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. Als er een [!DNL Assets] -proxy is, kan dit worden gebruikt voor het laden van elementen voor rendering binnen Assets. Bijvoorbeeld, gebruikt de [&#x200B; IDS volmachtsarbeider &#x200B;](indesign.md) een [!DNL Adobe InDesign] Server om dossiers voor gebruik in Assets te verwerken.
+Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. Als er een [!DNL Assets] -proxy is, kan dit worden gebruikt voor het laden van elementen voor rendering binnen Assets. Bijvoorbeeld, gebruikt de [ IDS volmachtsarbeider ](indesign.md) een [!DNL Adobe InDesign] Server om dossiers voor gebruik in Assets te verwerken.
 
 Wanneer de proxy een aparte [!DNL Experience Manager] -instantie is, wordt de belasting van de [!DNL Experience Manager] -ontwerpinstantie(s) verminderd. Standaard voert [!DNL Assets] de elementverwerkingstaken uit in dezelfde JVM (extern via Proxy) om de belasting van de [!DNL Experience Manager] -ontwerpinstantie te verminderen.
 
@@ -73,15 +73,15 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Proxy Worker {#proxy-worker}
 
-Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. De arbeiders verblijven op de volmachtsinstantie en moeten [&#x200B; uitstellen JobProcessor &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider worden erkend.
+Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. De arbeiders verblijven op de volmachtsinstantie en moeten [ uitstellen JobProcessor ](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider worden erkend.
 
 >[!NOTE]
 >
->De worker moet [&#x200B; uitputtend JobProcessor &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider te worden erkend.
+>De worker moet [ uitputtend JobProcessor ](https://sling.apache.org/site/eventing-and-jobs.html) uitvoeren om als volmachtsarbeider te worden erkend.
 
 ### Client-API {#client-api}
 
-[`JobService` &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
+[`JobService` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -105,7 +105,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  proxyJobService.removeJob(jobId);
 ```
 
-### Cloud Service configuraties {#cloud-service-configurations}
+### Cloud Service-configuraties {#cloud-service-configurations}
 
 <!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
@@ -117,7 +117,7 @@ Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar
 
 >[!NOTE]
 >
->Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server [&#128279;](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [&#x200B; configuratie van Cloud Servicen &#x200B;](../sites-developing/extending-cloud-config.md) voor meer informatie.
+>Zie {de configuratie van de Werknemer van de Volmacht van 0} InDesign Server [ en ](indesign.md#configuring-the-proxy-worker-for-indesign-server) configuratie van de Diensten van de Wolk [ voor meer informatie.](../sites-developing/extending-cloud-config.md)
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -136,7 +136,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [&#x200B; IDS volmachtsarbeider &#x200B;](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van de activa van het InDesign uit te besteden.
+De [ IDS volmachtsarbeider ](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van de activa van InDesign uit te besteden.
 
 U kunt ook uw eigen [!DNL Assets] proxy-worker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw [!DNL Assets] -verwerkingstaken verzendt en uitbesteedt.
 
@@ -156,13 +156,13 @@ Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
 In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven hoe u moet doorgaan:
 
-![&#x200B; chlimage_1-249 &#x200B;](assets/chlimage_1-249.png)
+![ chlimage_1-249 ](assets/chlimage_1-249.png)
 
 >[!NOTE]
 >
->In de volgende stappen worden equivalenten van InDesigns aangegeven als referentievoorbeelden.
+>In de volgende stappen worden InDesign-equivalenten als referentievoorbeelden aangegeven.
 
-1. A [&#x200B; het Verdelen baan &#x200B;](https://sling.apache.org/site/eventing-and-jobs.html) wordt gebruikt, zodat moet u een baanonderwerp voor uw gebruiksgeval bepalen.
+1. A [ het Verdelen baan ](https://sling.apache.org/site/eventing-and-jobs.html) wordt gebruikt, zodat moet u een baanonderwerp voor uw gebruiksgeval bepalen.
 
    Zie `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker als voorbeeld.
 
@@ -188,4 +188,4 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 >
 >Synchronisatie van resultaten:
 >
->Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client (Experience Manager Auteur) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.
+>Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client (Experience Manager Author) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.

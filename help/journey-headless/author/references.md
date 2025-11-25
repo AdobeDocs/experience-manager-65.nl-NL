@@ -1,11 +1,11 @@
 ---
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
-description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
+description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechanica van geneste fragmenten voor Headless CMS Authoring.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [&#x200B; Reis van de Auteur van de Inhoud zonder hoofd &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
+Aan het begin van de [ Reis van de Auteur van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor creatie voor hoofd.
 
-U hebt de grondbeginselen van de Authoring van CMS zonder hoofd geleerd, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
+U hebt de grondbeginselen geleerd van Headless CMS Authoring, met een inleiding tot het ontwerpen met AEMaaCS en in het bijzonder, het ontwerpen van Inhoudsfragmenten.
 
-Dit artikel bouwt op deze voort zodat begrijpt u hoe te om verwijzingen te gebruiken naar auteur uw eigen inhoud voor uw project zonder AEM.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u verwijzingen kunt gebruiken naar auteur uw eigen inhoud voor uw AEM-project zonder kop.
 
 ## Doelstelling {#objective}
 
@@ -38,7 +38,7 @@ Verwijzingen zijn gewoon een mechanisme om uw bronnen aan te sluiten, of het nu 
 
 Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content References en Fragmentverwijzingen), terwijl andere eenvoudig worden toegevoegd als een verwijzing binnen een tekstblok (elementverwijzingen en ad-hocverwijzingen).
 
-![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![ de Fragmenten van de Inhoud - Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Content References {#content-references}
 
@@ -48,7 +48,7 @@ Content Reference do just that - they lets you reference any other content. Hier
 
 Assets (bijvoorbeeld, beelden of media) kan binnen een blok van de Tekst van verwijzingen worden voorzien door de **activa van het Tussenvoegsel** optie te gebruiken. Hiermee opent u een browser waarin u het element kunt selecteren.
 
-![&#x200B; de Fragmenten van de Inhoud - Tussenvoegsel Activa &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![ de Fragmenten van de Inhoud - Tussenvoegsel Activa ](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentverwijzingen {#fragment-references}
 
@@ -80,12 +80,12 @@ Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (
 
 Het ontwerpen van de Verwijzingen van het Fragment is vrij ongecompliceerd (hoewel gewoonlijk zal het gebied niet als **Verwijzing van het Fragment** worden geëtiketteerd). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
 
-![&#x200B; de Fragmenten van de Inhoud - Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![ de Fragmenten van de Inhoud - Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
 * of u meerdere referenties kunt selecteren om toe te voegen
-* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat AEM slechts fragmenten presenteert die op die modellen worden gebaseerd.
+* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat presenteert AEM slechts fragmenten die op die modellen worden gebaseerd.
 
 ### Door geneste fragmenten navigeren {#navigate-nested-fragment}
 
@@ -95,17 +95,17 @@ Gebruikend het **lusje van de Boom van de Structuur** van de Redacteur van het F
 >
 >Met de broodkruimels in het hoofddeelvenster kunt u terugnavigeren naar het beginpunt.
 
-![&#x200B; de Structuur van het Fragment van de Inhoud Boom &#x200B;](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![ de Structuur van het Fragment van de Inhoud Boom ](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Ad-hocverwijzingen {#adhoc-references}
 
 Ad-hocverwijzingen kunnen worden toegevoegd als een eenvoudige koppeling binnen een tekstblok:
 
-![&#x200B; de Fragmenten van de Inhoud - ad hoc Verwijzingen &#x200B;](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![ de Fragmenten van de Inhoud - ad hoc Verwijzingen ](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## Volgende functies {#whats-next}
 
-Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [&#x200B; leren hoe over Meta-gegevens en het Tags &#x200B;](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
+Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd, moet de volgende stap [ leren hoe over Meta-gegevens en het Tags ](metadata-tagging.md). Zo leert en bespreekt u hoe u metagegevens en tags voor de inhoudsfragmenten kunt definiëren.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -128,6 +128,6 @@ Nu u over verwijzingen en structuur in de Fragmenten van de Inhoud hebt geleerd,
 * Aan de slag - hulplijnen
    * [Een Assets-map zonder koppen en een snelstartgids maken](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
+* [AEM Headless Content Architect Reis](/help/journey-headless/architect/overview.md)
 
-* [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md)
+* [AEM Headless Translation Reis](/help/journey-headless/translation/overview.md)

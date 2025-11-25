@@ -2,11 +2,11 @@
 title: MIME-type van activa detecteren met Apache Tika
 description: Laat Tika Apache toe helpen  [!DNL Experience Manager Assets]  het MIME type van activa van de inhoudsstroom tijdens uploadt verrichting in plaats van de dossieruitbreiding ontdekken.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Metadata,Developer Tools,Asset Management
 exl-id: a312466d-8d84-4c94-af85-1549afc61aed
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -31,6 +31,6 @@ Deze functie is standaard uitgeschakeld. Als u deze functie wilt inschakelen, co
 
 1. Selecteer de optie **[!UICONTROL Detect MIME from content]** om het parseren van geüploade elementen in te schakelen om het MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
 
-   ![&#x200B; chlimage_1-333 &#x200B;](assets/chlimage_1-333.png)
+   ![ chlimage_1-333 ](assets/chlimage_1-333.png)
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.

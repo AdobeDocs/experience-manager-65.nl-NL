@@ -1,13 +1,13 @@
 ---
-title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
+title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en -query's
 description: Leer hoe u GraphQL met AEM kunt gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ Leer hoe u GraphQL met AEM kunt gebruiken om inhoud zonder problemen te bedienen
 >
 >* [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 >* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
->* [&#x200B; AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+>* [ AEM GraphQL API voor gebruik met de Fragmenten van de Inhoud ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het nuttig om enkele praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, is het handig om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
-* A [&#x200B; structuur van het Fragment van de steekproefinhoud &#x200B;](#content-fragment-structure-graphql)
+* A [ structuur van het Fragment van de steekproefinhoud ](#content-fragment-structure-graphql)
 
-* En sommige [&#x200B; vragen van de steekproefGraphQL &#x200B;](#graphql-sample-queries), die op de structuur van het het fragmentfragment van de steekproefinhoud (de Modellen van het Fragment van de Inhoud en verwante Fragments van de Inhoud) wordt gebaseerd.
+* En sommige [ vragen van de steekproefGraphQL ](#graphql-sample-queries), die op de structuur van het het fragmentfragment van de steekproefinhoud (de Modellen van het Fragment van de Inhoud en verwante Fragments van de Inhoud) wordt gebaseerd.
 
 
 ## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
@@ -39,13 +39,13 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->Afhankelijk van uw instantie, kunt u tot de [&#x200B; interface toegang hebben GraphiQL inbegrepen met AEM GraphQL API &#x200B;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) voor het voorleggen en het testen van vragen.
+>Afhankelijk van uw instantie, kunt u tot de [ interface toegang hebben GraphiQL inbegrepen met AEM GraphQL API ](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) voor het voorleggen en het testen van vragen.
 >
 >Bijvoorbeeld: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->De steekproefvragen zijn gebaseerd op de [&#x200B; Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL &#x200B;](#content-fragment-structure-graphql)
+>De steekproefvragen zijn gebaseerd op de [ Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL ](#content-fragment-structure-graphql)
 
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
@@ -1647,17 +1647,17 @@ Deze query vraagt om:
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* Één, of meer, [&#x200B; Modellen van het Fragment van de Inhoud van de Steekproef &#x200B;](#sample-content-fragment-models-schemas) - vorm de basis voor de schema&#39;s van GraphQL
+* Één, of meer, [ Modellen van het Fragment van de Inhoud van de Steekproef ](#sample-content-fragment-models-schemas) - vorm de basis voor de schema&#39;s van GraphQL
 
-* [&#x200B; de Fragmenten van de Inhoud van de Steekproef &#x200B;](#sample-content-fragments) die op de bovengenoemde modellen worden gebaseerd
+* [ de Fragmenten van de Inhoud van de Steekproef ](#sample-content-fragments) die op de bovengenoemde modellen worden gebaseerd
 
 ### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
 
 Voor de steekproefvragen, gebruik de volgende Modellen van Inhoud en hun onderlinge verhoudingen (verwijzingen ->):
 
-* [&#x200B; Bedrijf &#x200B;](#model-company)
--> [&#x200B; Persoon &#x200B;](#model-person)
-    -> [&#x200B; Uitreiking &#x200B;](#model-award)
+* [ Bedrijf ](#model-company)
+-> [ Persoon ](#model-person)
+    -> [ Uitreiking ](#model-award)
 
 * [Plaats](#model-city)
 
@@ -1668,8 +1668,8 @@ De basisvelden voor het bedrijf zijn:
 | Veldnaam | Gegevenstype | Referentie |
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel | |
-| CEO | Fragmentverwijzing (enkele) | [&#x200B; Persoon &#x200B;](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [&#x200B; Persoon &#x200B;](#model-person) |
+| CEO | Fragmentverwijzing (enkele) | [ Persoon ](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [ Persoon ](#model-person) |
 
 #### Persoon {#model-person}
 
@@ -1679,7 +1679,7 @@ De velden waarin een persoon wordt gedefinieerd, die ook een werknemer kan zijn:
 |--- |--- |--- |
 | Naam | Tekst met één regel | |
 | Voornaam | Tekst met één regel | |
-| Uitreiking | Fragmentverwijzing (meerdere velden) | [&#x200B; Uitreiking &#x200B;](#model-award) |
+| Uitreiking | Fragmentverwijzing (meerdere velden) | [ Uitreiking ](#model-award) |
 
 #### Uitreiking {#model-award}
 
@@ -1720,7 +1720,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Tussenruimte |  Gameblitz <br> Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Uitsnijden |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
@@ -1738,10 +1738,10 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 
 | Naam | Land | Bevolking | Categorieën |
 |--- |--- |--- |--- |
-| Bazel | Zwitserland | 172258 | stad:emea |
-| Berlin | Duitsland | 3669491 | stad:kapitaal <br> stad:emea |
-| Boekarest | Roemenië | 1821000 |  stad:kapitaal <br> stad:emea |
-| San Francisco |  VS |  883306 |  stad:strand <br> stad:na |
-| San Jose |  VS |  102635 |  plaats:na |
-| Stuttgart |  Duitsland |  634830 |  stad:emea |
-|  Zurich |  Zwitserland |  415367 |  stad:kapitaal <br> stad:emea |
+| Bazel | Zwitserland | 172258 | city:emea |
+| Berlin | Duitsland | 3669491 | stad :capital<br> stad :emea |
+| Boekarest | Roemenië | 1821000 |  stad :capital<br> stad :emea |
+| San Francisco |  VS |  883306 |  stad :beach<br> stad :na |
+| San Jose |  VS |  102635 |  city:na |
+| Stuttgart |  Duitsland |  634830 |  city:emea |
+|  Zurich |  Zwitserland |  415367 |  stad :capital<br> stad :emea |

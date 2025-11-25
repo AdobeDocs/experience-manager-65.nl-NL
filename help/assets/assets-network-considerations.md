@@ -2,11 +2,11 @@
 title: Netwerkoverwegingen en -vereisten
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een  [!DNL Adobe Experience Manager Assets]  plaatsing.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
 Begin door de connectiviteit tussen de individuele cliëntapparaten en het collectieve netwerk te diagrammen. In dit stadium, identificeer gedeelde middelen, zoals WiFi verbindingen, waar de veelvoudige gebruikers tot het zelfde punt of Ethernet schakelaar toegang hebben om activa te uploaden en te downloaden.
 
-![&#x200B; chlimage_1-353 &#x200B;](assets/chlimage_1-353.png)
+![ chlimage_1-353 ](assets/chlimage_1-353.png)
 
 Clientapparaten maken op verschillende manieren verbinding met het bedrijfsnetwerk, zoals gedeelde WiFi, Ethernet met een gedeelde switch en VPN. Het identificeren van en het begrip van chokepoints op dit netwerk is belangrijk voor [!DNL Assets] planning en om het netwerk te wijzigen.
 
@@ -44,15 +44,15 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
-![&#x200B; chlimage_1-354 &#x200B;](assets/chlimage_1-354.png)
+![ chlimage_1-354 ](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukkingspunt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
 ## Uploaden naar internet vanuit het bedrijfsnetwerk en de [!DNL Experience Manager] -omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
-![&#x200B; chlimage_1-355 &#x200B;](assets/chlimage_1-355.png)
+![ chlimage_1-355 ](assets/chlimage_1-355.png)
 
-Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
+Het is belangrijk om onbekende factoren op Internet en de verbinding van VPC te overwegen omdat de bandbreedte over Internet als gevolg van piekbelasting of grootschalig leveranciersstroomuitval kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
 Bij de opstraalverbinding van een collectief netwerk aan Internet, kunnen er andere diensten zijn gebruikend de bandbreedte. Het is belangrijk om te begrijpen hoeveel van de bandbreedte voor Assets kan worden gewijd of worden geprioriteerd. Als een 1 Gbps-koppeling bijvoorbeeld al 80% gebruikt, kunt u maximaal 20% van de bandbreedte toewijzen voor [!DNL Experience Manager Assets] .
 
@@ -66,17 +66,17 @@ Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptuee
 
 ## Topologie van de [!DNL Experience Manager] -omgeving {#topology-of-the-aem-environment}
 
-![&#x200B; chlimage_1-356 &#x200B;](assets/chlimage_1-356.png)
+![ chlimage_1-356 ](assets/chlimage_1-356.png)
 
 Het ontwerpen van de topologie van het [!DNL Experience Manager] milieu vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
-Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en gevormde Dynamic Media.
+Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en Dynamische gevormde Media.
 
 De verzender deelt zijn verbinding 100Mbps met twee entiteiten, de buitenwereld en de [!DNL Experience Manager] plaatsing. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
 
 De [!DNL Experience Manager] plaatsing deelt zijn verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
 
-Als u het netwerk van het clientapparaat tot de [!DNL Experience Manager] -implementatie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden in de rangschikkende calculator in de [&#x200B; Assets rangschikkende Gids &#x200B;](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
+Als u het netwerk van het clientapparaat tot de [!DNL Experience Manager] -implementatie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden in de rangschikkende calculator in de [ Assets rangschikkende Gids ](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
 
 ## Gedefinieerde workflows van de implementatie van [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
@@ -92,7 +92,7 @@ Wanneer het evalueren van de interne werkschematopologie, zou u het volgende moe
 
 Hier volgen enkele punten die u in overweging wilt nemen:
 
-* XMP metagegevens lezen/schrijven
+* XMP-metagegevens lezen/schrijven
 * Automatische activering en replicatie
 * Watermerken
 * Subelement opnemen/pagina uitnemen
@@ -100,4 +100,4 @@ Hier volgen enkele punten die u in overweging wilt nemen:
 
 Hier volgt een voorbeeld van de klant voor het definiëren van een workflow met middelen.
 
-![&#x200B; chlimage_1-357 &#x200B;](assets/chlimage_1-357.png)
+![ chlimage_1-357 ](assets/chlimage_1-357.png)

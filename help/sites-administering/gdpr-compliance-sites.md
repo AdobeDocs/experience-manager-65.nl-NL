@@ -8,8 +8,8 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 0%
@@ -26,49 +26,49 @@ De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de 
 
 AEM Sites is klaar om klanten te helpen bij het nakomen van hun GDPR-verplichtingen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Voor verdere informatie zie de [&#x200B; pagina GDPR bij het Centrum van de Privacy van de Adobe &#x200B;](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Voor verdere informatie zie de [ pagina GDPR bij het Centrum van de Privacy van Adobe ](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Zie [&#x200B; AEM GDPR Gereedheid &#x200B;](/help/managing/data-protection-and-privacy.md) voor verdere details.
+>Zie [ AEM GDPR Gereedheid ](/help/managing/data-protection-and-privacy.md) voor verdere details.
 
 ## Auteursserver {#author-server}
 
-De rekeningen van de gebruiker en inhoud UGC op de auteurserver zijn behandeld in de [&#x200B; documentatie van Platform GDPR &#x200B;](/help/managing/data-protection-and-privacy.md).
+De rekeningen van de gebruiker en inhoud UGC op de auteurserver zijn behandeld in de [ documentatie van Platform GDPR ](/help/managing/data-protection-and-privacy.md).
 
-## Publish Server {#publish-server}
+## Server publiceren {#publish-server}
 
-De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [&#x200B; documentatie van Platform GDPR &#x200B;](/help/managing/data-protection-and-privacy.md).
+De rekeningen van de gebruiker worden gebruikt om bezoekers op de plaats voor authentiek te verklaren, en de inhoud UGC op publiceer server wordt behandeld in de [ documentatie van Platform GDPR ](/help/managing/data-protection-and-privacy.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM heeft de dienst van de a [&#x200B; koekjesopt-out &#x200B;](/help/sites-developing/cookie-optout.md) die voor het beheren van opt-in/opt-out voor gebruikers kan worden gebruikt.
+AEM heeft de dienst van de a [ koekjesopt-out ](/help/sites-developing/cookie-optout.md) die voor het beheren van opt-in/opt-out voor gebruikers kan worden gebruikt.
 
 ## Verbeterde inzichten door Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites omvat een optionele integratie met Enhanced Insights van Analytics, die gebruikmaakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Voor verdere informatie bij het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Analytics zie [&#x200B; Adobe Analytics en GDPR &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=nl-NL).
+Voor verdere informatie bij het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Analytics zie [ Adobe Analytics en GDPR ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites omvat een optionele integratie met Enhanced Personalization by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Voor meer informatie over het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Target zie [&#x200B; Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens &#x200B;](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Voor meer informatie over het beheren van GDPR- gegevensonderwerpverzoeken met betrekking tot Adobe Target zie [ Adobe Target - de Privacy en Algemene Verordening van de Bescherming van Gegevens ](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 
 ## ContextHub {#contexthub}
 
-AEM verstrekt een facultatieve gegevenslaag met [&#x200B; ContextHub &#x200B;](/help/sites-developing/contexthub.md). Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
+AEM verstrekt een facultatieve gegevenslaag met [ ContextHub ](/help/sites-developing/contexthub.md). Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
 
-Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
+Deze bezoeker-gegevens worden standaard niet opgeslagen in AEM. AEM stuurt regels naar de gegevenslaag om personalisatiebeslissingen in de browser te nemen.
 
 >[!NOTE]
 >
->Voorafgaand aan Adobe AEM (CQ) 5.6, verzond de ClientContext (een vroegere versie van ContextHub) de gegevens aan de server, maar bewaarde hen niet.
+>Voorafgaand aan Adobe AEM (CQ) 5.6, verstuurde ClientContext (een vroegere versie van ContextHub) de gegevens naar de server, maar bewaarde hen niet.
 >
->Adobe AEM 6.4 en eerdere versies zijn nu EOL en worden niet door deze documentatie gedekt. Zie [&#x200B; Oudere versies van Adobe Experience Manager, CQ, en de documentatie van CRX &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe AEM 6.4 en eerdere versies zijn nu EOL en worden niet door deze documentatie gedekt. Zie [ Oudere versies van Adobe Experience Manager, CQ, en de documentatie van CRX ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
 

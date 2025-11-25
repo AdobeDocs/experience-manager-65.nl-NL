@@ -1,11 +1,11 @@
 ---
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
-description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloze in AEM 6.5.
+description: Maak een configuratie als eerste stap om in AEM 6.5 aan de slag te gaan met headless.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 # Creërend een Hoofdloze Gids van het Begin van de Configuratie {#creating-configuration}
 
-Als eerste stap om met hoofdloos in AEM 6.5 te worden begonnen, moet u een configuratie tot stand brengen.
+Als eerste stap om in AEM 6.5 aan de slag te gaan met headless, moet u een configuratie tot stand brengen.
 
 ## Wat is een Configuratie? {#what-is-a-configuration}
 
 Browser van de Configuratie verstrekt een generische configuratie API, inhoudsstructuur, resolutiemechanisme voor configuraties in AEM.
 
-In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en de Fragmenten van de Inhoud bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
+In de context van het beheer van inhoud zonder kop in AEM, denk aan een configuratie als werkplaats binnen AEM waar u uw Modellen van de Inhoud kunt tot stand brengen, die de structuur van uw toekomstige inhoud en Contentfragmenten bepalen. U kunt veelvoudige configuraties hebben om deze modellen te scheiden.
 
 >[!NOTE]
 >
->Als u met [&#x200B; paginasjablonen in een volledig-stapel AEM implementatie vertrouwd bent, &#x200B;](/help/sites-authoring/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
+>Als u met [ paginasjablonen in een full-stack implementatie van AEM vertrouwd bent, ](/help/sites-authoring/templates.md) is het gebruik van configuraties voor het beheer van Content Models gelijkaardig.
 
 ## Hoe te om een Configuratie te creëren {#how-to-create-a-configuration}
 
@@ -32,12 +32,12 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
 1. Logboek in AEM en van het belangrijkste menu selecteert **Hulpmiddelen > Algemeen > Browser van de Configuratie**.
 1. Verstrek a **Titel** voor uw configuratie.
-   * Er wordt automatisch een naam gegenereerd op basis van de titel en deze wordt aangepast volgens de naamgevingsconventies van [AEM .](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
+   * Een naam zal automatisch worden geproduceerd gebaseerd op de titel en aangepast volgens [ AEM noemende overeenkomsten.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
    * **de Blijvende Vragen van GraphQL**
 
-   ![&#x200B; creeer Configuratie &#x200B;](assets/create-configuration.png)
+   ![ creeer Configuratie ](assets/create-configuration.png)
 
 1. Klik **creëren**
 
@@ -49,7 +49,7 @@ U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worde
 
 ## Volgende stappen {#next-steps}
 
-Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [&#x200B; creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
+Gebruikend deze configuratie, kunt u zich nu op het tweede deel van begonnen gids bewegen en [ creeer de Modellen van het Fragment van de Inhoud.](create-content-model.md)
 
 <!--
 >[!TIP]

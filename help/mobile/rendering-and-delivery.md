@@ -8,9 +8,9 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-De inhoud van Adobe Experience Manager (AEM) kan gemakkelijk als [&#x200B; het Verzenden StandaardServen &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) worden teruggegeven om [&#x200B; JSON &#x200B;](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere formaten terug te geven.
+De inhoud van Adobe Experience Manager (AEM) kan gemakkelijk als [ het Verzenden StandaardServen ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) worden teruggegeven om [ JSON ](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere formaten terug te geven.
 
 Die uitleveringen buiten de doos lopen normaal gesproken de opslagplaats en retourneren inhoud.
 
@@ -29,11 +29,11 @@ De Standaard Renderers van de Diensten van de inhoud vullen het hiaat tussen uit
 
 Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
-![&#x200B; chlimage_1-15 &#x200B;](assets/chlimage_1-15.png)
+![ chlimage_1-15 ](assets/chlimage_1-15.png)
 
 ## JSON aanvragen {#requesting-json}
 
-Gebruik **&lt;RESOURCE.caas [.&lt;EXPORT-CONFIG ][.&lt;EXPORT-CONFIG ] .json** om JSON aan te vragen.
+Gebruik **&lt;RESOURCE.caas `[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]` .json** om JSON aan te vragen.
 
 <table>
  <tbody>
@@ -60,7 +60,7 @@ U kunt een configuratieknooppunt maken onder */apps/mobileapps/caas/exportConfig
 
 | Node Name | Naam van de configuratie (voor renderingkiezer) |
 |---|---|
-| jcr:primaryType | nt:ongestructureerd |
+| jcr :primaryType | nt:unstructured |
 
 In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
 
@@ -138,7 +138,7 @@ Maak een configuratienode onder */apps/mobileapps/caas/exportConfigs.*
 
 | name | resourceTypeOverrides |
 |---|---|
-| jcr:primaryType | nt:ongestructureerd |
+| jcr :primaryType | nt:unstructured |
 
 In de volgende tabel worden de eigenschappen weergegeven:
 

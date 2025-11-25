@@ -1,24 +1,24 @@
 ---
 title: Basisbeginselen van Content Modeling
-description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
+description: Leer de basis van het modelleren van inhoud voor uw Headless CMS die Inhoudsfragmenten gebruikt.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
 
 ---
 
-# Leer de basisbeginselen van de Content Modeling voor headless met AEM {#content-modeling-headless-basics}
+# Meer informatie over de basisbeginselen van Content Modeling for Headless met AEM {#content-modeling-headless-basics}
 
 ## Het artikel tot nu toe {#story-so-far}
 
-Aan het begin van de [&#x200B; Reis van de Architect van de Inhoud zonder hoofd &#x200B;](overview.md) de [&#x200B; Inleiding &#x200B;](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
+Aan het begin van de [ Reis van de Architect van de Inhoud van AEM Headless ](overview.md) de [ Inleiding ](introduction.md) behandelde de basisconcepten en de terminologie relevant voor het modelleren van inhoud voor hoofd.
 
-Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project zonder AEM kunt modelleren.
+Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud kunt modelleren voor uw AEM-project zonder kop.
 
 ## Doelstelling {#objective}
 
@@ -27,11 +27,11 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project
 
 ## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
-De modellering van de inhoud (Gegevens) is een reeks gevestigde technieken, vaak gebruikt wanneer ontwikkelde relatiedatabases, zodat wat de Modellering van de Inhoud voor AEM Zwaartepunt betekent?
+De modellering van de inhoud (Gegevens) is een reeks gevestigde technieken, vaak gebruikt wanneer ontwikkelde relatiedatabases, zodat wat de Modellering van de Inhoud voor AEM Headless betekent?
 
 ### Waarom? {#why}
 
-Om ervoor te zorgen dat uw toepassing de vereiste inhoud van AEM consistent en efficiënt kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
+Om ervoor te zorgen dat uw toepassing de vereiste inhoud consistent en efficiënt van AEM kan aanvragen en ontvangen, moet deze inhoud gestructureerd zijn.
 
 Dit betekent dat uw toepassing van tevoren de vorm van de reactie en daarom hoe te om het weet te verwerken. Dit is veel gemakkelijker dan het ontvangen van vrije-vorminhoud, die moet worden geparseerd om te bepalen wat het bevat en daarom, hoe het kan worden gebruikt.
 
@@ -46,9 +46,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de Schema&#39;s van AEM GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
 
-Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw Content Fragments, waarbij elke query op een specifiek modeltype is gebaseerd.
+Verzoeken om inhoud worden gedaan met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw inhoudsfragmenten, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
@@ -74,11 +74,11 @@ Bijvoorbeeld, bepaal het gebied wachtend de naam van een leraar als **Tekst** en
 
 Bijvoorbeeld:
 
-![&#x200B; Inhoud die met de Fragmenten van de Inhoud modelleert &#x200B;](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
+![ Inhoud die met de Fragmenten van de Inhoud modelleert ](assets/headless-modeling-01.png " Inhoud met de Fragmenten van de Inhoud ")
 
 ## Gegevenstypen {#data-types}
 
-AEM bevat de volgende gegevenstypen waarmee u uw inhoud kunt modelleren:
+AEM biedt u de volgende gegevenstypen om uw inhoud te modelleren:
 
 * Tekst met één regel
 * Tekst met meerdere regels
@@ -116,7 +116,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ## Structuurniveaus (geneste fragmenten) {#levels-of-structure-nested-fragments}
 
-Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0&rbrace; Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
+Voor inhoud die het **gegevenstype modelleren van de Verwijzing van het 0} Fragment laat u veelvoudige niveaus van structuur en verhoudingen tot stand brengen.**
 
 Met deze verwijzing kunt u *diverse Modellen van het Fragment van de Inhoud* verbinden om onderlinge verhoudingen te vertegenwoordigen. Hierdoor kan de toepassing zonder kop de verbindingen volgen en zo nodig toegang krijgen tot de inhoud.
 
@@ -148,7 +148,7 @@ U kunt deze interrelaties vertegenwoordigen met fragmentverwijzingen, zoals u (d
 
 ## Volgende functies {#whats-next}
 
-Nu u de grondbeginselen hebt geleerd, is de volgende stap [&#x200B; te leren over het Creëren van Modellen van het Fragment van de Inhoud in AEM &#x200B;](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
+Nu u de grondbeginselen hebt geleerd, is de volgende stap [ te leren over het Creëren van Modellen van het Fragment van de Inhoud in AEM ](model-structure.md). Dit zal de diverse beschikbare verwijzingen introduceren en bespreken, en hoe te om niveaus van structuur met de Verwijzingen van het Fragment tot stand te brengen - een zeer belangrijk deel van modellering voor headless.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -158,6 +158,6 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap [&#x200B; te leren ove
 
 * [Concepten ontwerpen](/help/sites-authoring/author.md)
 
-* [&#x200B; Basis Behandelend &#x200B;](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
+* [ Basis Behandelend ](/help/sites-authoring/basic-handling.md) - deze pagina is hoofdzakelijk gebaseerd op de **console van Plaatsen**, maar vele/de meeste eigenschappen zijn ook relevant voor het ontwerpen van **Fragmenten van de Inhoud** onder de **Assets** console.
 
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)

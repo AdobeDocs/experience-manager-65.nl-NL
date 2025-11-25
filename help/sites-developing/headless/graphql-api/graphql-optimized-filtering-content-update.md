@@ -4,10 +4,10 @@ description: Leer hoe u de inhoudsfragmenten voor geoptimaliseerde GraphQL-filte
 exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ Als u de prestaties van uw GraphQL-filters wilt optimaliseren, voert u een proce
 
 >[!NOTE]
 >
->Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [&#x200B; volgen het Optimaliseren van de Vragen van GraphQL &#x200B;](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>Na het bijwerken van uw Fragmenten van de Inhoud, kunt u de aanbevelingen voor [ volgen het Optimaliseren van de Vragen van GraphQL ](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 ## Vereisten {#prerequisites}
 
-Zorg ervoor dat u minimaal over de 6.5.17.0 release van AEM beschikt.
+Zorg ervoor dat u minimaal over de release van 6.5.17.0 AEM beschikt.
 
 ## Inhoudsfragmenten bijwerken {#updating-content-fragments}
 
 Voer de volgende stappen uit om de procedure uit te voeren:
 
-1. [&#x200B; vorm de montages OSGi &#x200B;](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
+1. [ vorm de montages OSGi ](/help/sites-deploying/configuring-osgi.md) voor de **Configuratie van de Baan van de Migratie van het Fragment van de Inhoud**:
 
-   ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1&rbrace; OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ")] (assets/cfm-graphql-update-01.png "
+   ![ OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud 1} OSGi de Configuratie van de Baan van de Migratie van het Fragment van de Inhoud ](assets/cfm-graphql-update-01.png "")
 
 1. Stel deze twee parameters in het dialoogvenster als volgt in:
 

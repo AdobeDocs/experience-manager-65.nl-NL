@@ -1,6 +1,6 @@
 ---
 title: Programmaticaal het leiden Eindpunten
-description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, SOAP eindpunt toe te voegen, gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
+description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, het eindpunt van SOAP toe te voegen, gecontroleerde Omslageindpunten toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen en informatie van de eindpuntschakelaar terug te winnen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10800'
+source-wordcount: '10799'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,12 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
 * SOAP
 * Gecontroleerde map
 * E-mail
-* (Verouderd voor AEM formulieren) Verwijderen
+* (Verouderd voor AEM-formulieren) Verwijderen
 * Taakbeheer
 
 >[!NOTE]
 >
->SOAP, EJB en (Vervangen voor AEM formulieren op JEE) Eindpunten verwijderen worden automatisch gemaakt voor elke geactiveerde service. De SOAP en EJB eindpunten laten SOAP en EJB voor alle de dienstverrichtingen toe.
+>SOAP, EJB en (Verouderd voor AEM-formulieren op JEE) Het verwijderen van eindpunten wordt automatisch gemaakt voor elke geactiveerde service. De eindpunten SOAP en EJB laten SOAP en EJB voor alle de dienstverrichtingen toe.
 
 Een Remoting eindpunt laat de cliënten van Flex toe om verrichtingen op de dienst van AEM Forms aan te halen die het eindpunt aan wordt toegevoegd. Een bestemming van Flex met de zelfde naam zoals het eindpunt wordt gecreeerd en de cliënten van Flex kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
@@ -43,19 +43,19 @@ U kunt eindpunten TaskManager in groepen organiseren genoemd *categorieën*. Dez
 
 U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
 
-* EJB-eindpunten toevoegen. (Zie [&#x200B; Toevoegend EJB Eindpunten &#x200B;](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Voeg SOAP eindpunten toe. (Zie [&#x200B; Toevoegend SOAP Eindpunten &#x200B;](programmatically-endpoints.md#adding-soap-endpoints).)
-* Voeg gecontroleerde eindpunten van de Omslag toe (zie [&#x200B; toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).)
-* E-maileindpunten toevoegen. (Zie [&#x200B; Toevoegend E-maileindpunten &#x200B;](programmatically-endpoints.md#adding-email-endpoints).)
-* Voeg eindpunten voor verwijderen toe. (Zie [&#x200B; toevoegend het Verwijderen Eindpunten &#x200B;](programmatically-endpoints.md#adding-remoting-endpoints).)
-* Voeg eindpunten TaskManager toe (zie [&#x200B; Toevoegend Eindpunten TaskManager &#x200B;](programmatically-endpoints.md#adding-taskmanager-endpoints).)
-* Wijzig eindpunten (zie [&#x200B; Wijzend Eindpunten &#x200B;](programmatically-endpoints.md#modifying-endpoints).)
-* Verwijder eindpunten (zie [&#x200B; Verwijderend Eindpunten &#x200B;](programmatically-endpoints.md#removing-endpoints).)
-* Haal informatie van de eindpuntschakelaar terug (zie [&#x200B; het Terugwinnen van de Informatie van de Verbinding van Eindpunten &#x200B;](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+* EJB-eindpunten toevoegen. (Zie [ Toevoegend EJB Eindpunten ](programmatically-endpoints.md#adding-ejb-endpoints).)
+* SOAP-eindpunten toevoegen. (Zie [ Toevoegend SOAP Eindpunten ](programmatically-endpoints.md#adding-soap-endpoints).)
+* Voeg gecontroleerde eindpunten van de Omslag toe (zie [ toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).)
+* E-maileindpunten toevoegen. (Zie [ Toevoegend E-maileindpunten ](programmatically-endpoints.md#adding-email-endpoints).)
+* Voeg eindpunten voor verwijderen toe. (Zie [ toevoegend het Verwijderen Eindpunten ](programmatically-endpoints.md#adding-remoting-endpoints).)
+* Voeg eindpunten TaskManager toe (zie [ Toevoegend Eindpunten TaskManager ](programmatically-endpoints.md#adding-taskmanager-endpoints).)
+* Wijzig eindpunten (zie [ Wijzend Eindpunten ](programmatically-endpoints.md#modifying-endpoints).)
+* Verwijder eindpunten (zie [ Verwijderend Eindpunten ](programmatically-endpoints.md#removing-endpoints).)
+* Haal informatie van de eindpuntschakelaar terug (zie [ het Terugwinnen van de Informatie van de Verbinding van Eindpunten ](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ## EJB-eindpunten toevoegen {#adding-ejb-endpoints}
 
-U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. De volgende JAR-besta
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -132,15 +132,15 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 1. EJB-eindpuntkenmerken instellen.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `EJB` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` aan te roepen en geef een tekenreekswaarde door die de naam van de bewerking opgeeft. Geef voor SOAP- en EJB-eindpunten een jokerteken ( `*`) op, wat alle bewerkingen impliceert.
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `EJB` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` aan te roepen en geef een tekenreekswaarde door die de naam van de bewerking opgeeft. Voor SOAP- en EJB-eindpunten geeft u een jokerteken ( `*` ) op. Dit houdt in dat alle bewerkingen worden uitgevoerd.
 
 1. Maak een EJB-eindpunt.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe EJB-eindpunt vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe EJB-eindpunt vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
@@ -156,26 +156,26 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## SOAP eindpunten toevoegen {#adding-soap-endpoints}
+## SOAP-eindpunten toevoegen {#adding-soap-endpoints}
 
-U kunt programmatically een SOAP eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een SOAP eindpunt toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de SOAP wijze te gebruiken. Wanneer u de verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u dus de SOAP selecteren.
-
->[!NOTE]
->
->U kunt geen SOAP eindpunt toevoegen door de Webdiensten te gebruiken.
+U kunt programmatically een eindpunt van SOAP aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt van SOAP toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze van SOAP te gebruiken. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de SOAP-modus selecteren.
 
 >[!NOTE]
 >
->Typisch, wordt een SOAP eindpunt toegevoegd aan de dienst door gebrek, echter, kan een SOAP eindpunt aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een SOAP eindpunt werd verwijderd en moet opnieuw worden toegevoegd.
+>U kunt geen eindpunt van SOAP toevoegen door de Webdiensten te gebruiken.
+
+>[!NOTE]
+>
+>Typisch, wordt een eindpunt van SOAP toegevoegd aan de dienst door gebrek, Nochtans, kan een eindpunt van SOAP aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een eindpunt van SOAP werd verwijderd en opnieuw moet worden toegevoegd.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
-Om een SOAP eindpunt aan de dienst toe te voegen, voer de volgende taken uit:
+Om een eindpunt van SOAP aan de dienst toe te voegen, voer de volgende taken uit:
 
 1. Inclusief projectbestanden.
 1. Maak een `EndpointRegistryClient` -object.
-1. Stel SOAP eindpuntkenmerken in.
-1. Maak een SOAP eindpunt.
+1. Eindpuntkenmerken van SOAP instellen.
+1. Maak een SOAP-eindpunt.
 1. Laat het eindpunt toe.
 
 **omvat projectdossiers**
@@ -189,25 +189,25 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Deze JAR-bestanden zijn vereist om een SOAP eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het SOAP eindpunt gebruikt om de dienst aan te halen. Voor informatie over de dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Deze JAR-bestanden zijn vereist om een SOAP-eindpunt te maken. U hebt echter wel JAR-bestanden nodig als u het SOAP-eindpunt gebruikt om de service aan te roepen. Voor informatie over de dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
-Als u programmatisch een SOAP eindpunt aan de service wilt toevoegen, moet u een `EndpointRegistryClient` -object maken.
+Als u programmatisch een SOAP-eindpunt aan een service wilt toevoegen, moet u een `EndpointRegistryClient` -object maken.
 
 **plaats SOAP eindpuntattributen**
 
-Om een SOAP eindpunt aan de dienst toe te voegen, specificeer de volgende waarden:
+Om een eindpunt van SOAP aan de dienst toe te voegen, specificeer de volgende waarden:
 
-* **waarde van het herkenningsteken van de Schakelaar**: Specificeert het type van eindpunt om tot stand te brengen. Als u een SOAP eindpunt wilt maken, geeft u `SOAP` op.
+* **waarde van het herkenningsteken van de Schakelaar**: Specificeert het type van eindpunt om tot stand te brengen. Als u een SOAP-eindpunt wilt maken, geeft u `SOAP` op.
 * **Beschrijving**: Specificeert de eindpuntbeschrijving.
 * **Naam**: Specificeert de eindpuntnaam.
 * **het herkenningsteken van de Dienst**: Specificeert de dienst waartot het eindpunt behoort.
-* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef een jokerteken op ( `*` ) wanneer u een SOAP eindpunt maakt. Als u echter een specifieke bewerking wilt opgeven in plaats van alle servicebewerkingen aan te roepen, geeft u de naam van de bewerking op in plaats van het jokerteken ( `*` ).
+* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef bij het maken van een SOAP-eindpunt een jokerteken op ( `*` ). Als u echter een specifieke bewerking wilt opgeven in plaats van alle servicebewerkingen aan te roepen, geeft u de naam van de bewerking op in plaats van het jokerteken ( `*` ).
 
-**creeer een SOAP eindpunt**
+**creeer een eindpunt van SOAP**
 
-Nadat u SOAP eindpuntattributen plaatst, kunt u een SOAP eindpunt tot stand brengen.
+Nadat u de eindpuntattributen van SOAP plaatst, kunt u een eindpunt van SOAP tot stand brengen.
 
 **laat het eindpunt** toe
 
@@ -215,15 +215,15 @@ Nadat u een eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt to
 
 **zie ook**
 
-[Een SOAP eindpunt toevoegen met de Java API](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Een SOAP-eindpunt toevoegen met de Java API](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Een SOAP eindpunt toevoegen met de Java API {#add-a-soap-endpoint-using-the-java-api}
+### Een SOAP-eindpunt toevoegen met de Java API {#add-a-soap-endpoint-using-the-java-api}
 
-Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
+Voeg een eindpunt van SOAP aan de dienst toe door Java API te gebruiken:
 
 1. Inclusief projectbestanden.
 
@@ -234,18 +234,18 @@ Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
    * Maak een `ServiceClientFactory` -object dat verbindingseigenschappen bevat.
    * Maak een `EndpointRegistryClient` -object door de constructor ervan te gebruiken en het `ServiceClientFactory` -object door te geven.
 
-1. Stel SOAP eindpuntkenmerken in.
+1. Eindpuntkenmerken van SOAP instellen.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `SOAP` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Geef voor SOAP- en EJB-eindpunten een jokerteken ( `*`) op, wat alle bewerkingen impliceert.
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `SOAP` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Voor SOAP- en EJB-eindpunten geeft u een jokerteken ( `*` ) op. Dit houdt in dat alle bewerkingen worden uitgevoerd.
 
-1. Maak een SOAP eindpunt.
+1. Maak een SOAP-eindpunt.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe SOAP-eindpunt vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe SOAP-eindpunt vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
@@ -255,7 +255,7 @@ Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
 
 [Overzicht van de stappen](programmatically-endpoints.md#summary-of-steps)
 
-[QuickStart: een SOAP eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: een SOAP-eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -263,13 +263,13 @@ Voeg een SOAP eindpunt aan de dienst toe door Java API te gebruiken:
 
 ## Eindpunten van gecontroleerde mappen toevoegen {#adding-watched-folder-endpoints}
 
-U kunt programmatically een Gecontroleerd eindpunt van de Omslag aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Gecontroleerd eindpunt van de Omslag toe te voegen, laat u gebruikers toe om een dossier (zoals een dossier van PDF) in een omslag te plaatsen. Wanneer het dossier in de omslag wordt geplaatst, wordt de gevormde dienst dan aangehaald en manipuleert het dossier. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in een opgegeven uitvoermap. Een gecontroleerde map is geconfigureerd om te worden gescand met een vast interval of met een uitsnijdschema, zoals elke maandag, woensdag en vrijdag om 12.00 uur.
+U kunt programmatically een Gecontroleerd eindpunt van de Omslag aan de dienst toevoegen door AEM Forms Java API te gebruiken. Als u een eindpunt van een gecontroleerde map toevoegt, kunnen gebruikers een bestand (zoals een PDF-bestand) in een map plaatsen. Wanneer het dossier in de omslag wordt geplaatst, wordt de gevormde dienst dan aangehaald en manipuleert het dossier. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in een opgegeven uitvoermap. Een gecontroleerde map is geconfigureerd om te worden gescand met een vast interval of met een uitsnijdschema, zoals elke maandag, woensdag en vrijdag om 12.00 uur.
 
-Voor de doeleinden van programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondig proces genoemd *EncryptDocument*. (Zie [&#x200B; Begrijpend de Processen van AEM Forms &#x200B;](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+Voor de doeleinden van programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondig proces genoemd *EncryptDocument*. (Zie [ Begrijpend de Processen van AEM Forms ](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
-![&#x200B; aw_aw_encryptdocumentprocess &#x200B;](assets/aw_aw_encryptdocumentprocess.png)
+![ aw_aw_encryptdocumentprocess ](assets/aw_aw_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
+Dit proces accepteert een onbeveiligd PDF-document als een invoerwaarde en geeft het onbeveiligde PDF-document vervolgens door aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en het met een wachtwoord gecodeerde PDF-document is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -331,7 +331,7 @@ De volgende lijst specificeert configuratiewaarden die wanneer programmatically 
 * **userName**: De gebruikersnaam die wanneer het aanhalen van een doeldienst van de Gecontroleerde Omslag wordt gebruikt. Deze waarde is verplicht. De standaardwaarde is SuperAdmin.
 * **domainName**: Het domein van de gebruiker. Deze waarde is verplicht. De standaardwaarde is DefaultDom.
 * **batchSize**: Het aantal dossiers of omslagen dat per aftasten moet worden opgenomen. Gebruik deze waarde om overbelasting op het systeem te voorkomen. Als u te veel bestanden tegelijk scant, kan dit tot gevolg hebben dat de toepassing vastloopt. De standaardwaarde is 2.
-* **waitTime**: De tijd, in milliseconden, te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&ast;60 &ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog tien minuten niet heeft gewacht. De standaardwaarde is 0.
+* **waitTime**: De tijd, in milliseconden, te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog tien minuten niet heeft gewacht. De standaardwaarde is 0.
 * **excludeFilePattern**: Het patroon dat een gecontroleerde omslag gebruikt om te bepalen welke dossiers en omslagen aan aftasten en op te nemen. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map is die meerdere bestanden bevat. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgepakt door de gecontroleerde map. Met deze stap wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. Als de waarde excludeFilePattern bijvoorbeeld `data*` is, worden niet alle bestanden en mappen opgehaald die overeenkomen met `data*` . Dit omvat bestanden en mappen met de naam `data1` , `data2` , enzovoort. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde map wijzigt de reguliere expressie om jokertekenpatronen zoals `*.*` en `*.pdf` te ondersteunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies.
 * **includeFilePattern**: Het patroon dat de gecontroleerde omslag gebruikt om te bepalen welke omslagen en dossiers aan aftasten en op te nemen. Als deze waarde bijvoorbeeld `*` is, worden alle bestanden en mappen opgehaald die overeenkomen met `input*` . Dit omvat bestanden en mappen met de naam `input1` , `input2` , enzovoort. De standaardwaarde is `*` . Deze waarde geeft alle bestanden en mappen aan. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde map wijzigt de reguliere expressie om jokertekenpatronen zoals `*.*` en `*.pdf` te ondersteunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies. Deze waarde is verplicht.
 * **resultFolderName**: De omslag waar de bewaarde resultaten worden opgeslagen. Deze locatie kan een absoluut of relatief mappad zijn. Als de resultaten niet in deze map worden weergegeven, controleert u de map met foutmeldingen. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. De standaardwaarde is `result/%Y/%M/%D/` . Dit is de resultatenmap in de controlemap.
@@ -405,31 +405,31 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 1. Attributen voor het eindpunt van gecontroleerde map instellen.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `WatchedFolder` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Typisch, wanneer het creëren van een Gecontroleerd eindpunt van de Omslag voor de dienst die uit een proces voortkwam dat in Workbench wordt gecreeerd, wordt de naam van de verrichting aangeroepen.
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `WatchedFolder` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Typisch, wanneer het creëren van een Gecontroleerd eindpunt van de Omslag voor de dienst die uit een proces voortkwam dat in Workbench wordt gecreeerd, wordt de naam van de verrichting aangeroepen.
 
 1. Geef configuratiewaarden op.
 
-   Voor elke configuratiewaarde die moet worden ingesteld voor het eindpunt van de gecontroleerde map, moet u de methode `setConfigParameterAsText` van het object `CreateEndpointInfo` aanroepen. Als u bijvoorbeeld de configuratiewaarde `url` wilt instellen, roept u de methode `CreateEndpointInfo` object `setConfigParameterAsText` aan en geeft u de volgende tekenreekswaarden door:
+   Voor elke configuratiewaarde die moet worden ingesteld voor het eindpunt van de gecontroleerde map, moet u de methode `CreateEndpointInfo` van het object `setConfigParameterAsText` aanroepen. Als u bijvoorbeeld de configuratiewaarde `url` wilt instellen, roept u de methode `CreateEndpointInfo` object `setConfigParameterAsText` aan en geeft u de volgende tekenreekswaarden door:
 
    * Een tekenreekswaarde die de naam van de configuratiewaarde opgeeft. Geef `url` op wanneer u de configuratiewaarde van `url` instelt.
    * Een tekenreeks die de waarde van de configuratiewaarde opgeeft. Geef bij het instellen van de configuratiewaarde van `url` de locatie van de gecontroleerde map op.
 
    >[!NOTE]
    >
-   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst, zie het de codevoorbeeld van Java dat bij [&#x200B; wordt gevestigd QuickStart: het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
+   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst, zie het de codevoorbeeld van Java dat bij [ wordt gevestigd QuickStart: het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
 
 1. Definieer invoerparameterwaarden.
 
-   Definieer een invoerparameterwaarde door de methode `setInputParameterMapping` van het object `CreateEndpointInfo` aan te roepen en de volgende waarden door te geven:
+   Definieer een invoerparameterwaarde door de methode `CreateEndpointInfo` van het object `setInputParameterMapping` aan te roepen en de volgende waarden door te geven:
 
    * Een tekenreekswaarde die de naam van de invoerparameter opgeeft. De naam van de invoerparameter voor de EncryptDocument-service is bijvoorbeeld `InDoc` .
    * Een tekenreeks die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de invoerparameter `InDoc` is bijvoorbeeld `com.adobe.idp.Document` .
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld `variable` opgeven.
-   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &ast;.pdf opgeven als bestandspatroon.
+   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
 
    >[!NOTE]
    >
@@ -437,7 +437,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 1. Definieer een uitvoerparameterwaarde.
 
-   Definieer een uitvoerparameterwaarde door de methode `setOutputParameterMapping` van het object `CreateEndpointInfo` aan te roepen en de volgende waarden door te geven:
+   Definieer een uitvoerparameterwaarde door de methode `CreateEndpointInfo` van het object `setOutputParameterMapping` aan te roepen en de volgende waarden door te geven:
 
    * Een tekenreekswaarde die de naam van de uitvoerparameter opgeeft. De naam van de uitvoerparameter voor de EncryptDocument-service is bijvoorbeeld `SecuredDoc` .
    * Een tekenreeks die het gegevenstype van de uitvoerparameter opgeeft. Het gegevenstype van de uitvoerparameter `SecuredDoc` is bijvoorbeeld `com.adobe.idp.Document` .
@@ -445,11 +445,11 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 1. Maak een eindpunt van een gecontroleerde map.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het eindpunt van de gecontroleerde map vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het eindpunt van de gecontroleerde map vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode `enable` van het object `EndpointRegistryClient` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
+   Schakel het eindpunt in door de methode `EndpointRegistryClient` van het object `enable` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
 
 **zie ook**
 
@@ -463,7 +463,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 ### Configuratiewaarden van gecontroleerde map, constant bestand {#watched-folder-configuration-values-constant-file}
 
-[&#x200B; QuickStart: Het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een Gecontroleerd eindpunt van de Omslag. De volgende Java-code vertegenwoordigt het constante bestand.
+[ QuickStart: Het toevoegen van een Gecontroleerd eindpunt van de Omslag gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een Gecontroleerd eindpunt van de Omslag. De volgende Java-code vertegenwoordigt het constante bestand.
 
 ```java
  /**
@@ -498,11 +498,11 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 U kunt programmatically een eindpunt E-mail aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een e-maileindpunt toe te voegen, laat u gebruikers toe om een e-mailbericht met één of meerdere dossiergehechtheid naar een gespecificeerde e-mailrekening te verzenden. Dan vormen de de dienstverrichting wordt aangehaald en manipuleert de dossiers. Nadat de service de opgegeven bewerking heeft uitgevoerd, stuurt het een e-mailbericht naar de afzender met de gewijzigde bestanden als bestandsbijlagen.
 
-Voor het programmatically toevoegen van een E-mail eindpunt aan de dienst, overweeg het volgende kortstondig proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie [&#x200B; Begrijpend de Processen van AEM Forms &#x200B;](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Voor het programmatically toevoegen van een E-mail eindpunt aan de dienst, overweeg het volgende kortstondig proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie [ Begrijpend de Processen van AEM Forms ](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
-![&#x200B; ae_ae_encryptdocumentprocess &#x200B;](assets/ae_ae_encryptdocumentprocess.png)
+![ ae_ae_encryptdocumentprocess ](assets/ae_ae_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Met dit proces wordt het PDF-document versleuteld met een wachtwoord en wordt het met een wachtwoord gecodeerde PDF als uitvoerwaarde geretourneerd. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
+Dit proces accepteert een onbeveiligd PDF-document als een invoerwaarde en geeft het onbeveiligde PDF-document vervolgens door aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Dit proces codeert het PDF-document met een wachtwoord en retourneert het met een wachtwoord gecodeerde PDF-document als de uitvoerwaarde. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
 >[!NOTE]
 >
@@ -532,7 +532,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -566,7 +566,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **userName**: De gebruikersnaam die wanneer het aanhalen van een doeldienst van e-mail wordt gebruikt. De standaardwaarde is `SuperAdmin` .
 * **domainName**: Een verplichte configuratiewaarde. De standaardwaarde is `DefaultDom` .
 * **domainPattern**: Specificeert de domeinpatronen van inkomende e-mail die de leverancier goedkeurt. Als `adobe.com` bijvoorbeeld wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt en wordt e-mail van andere domeinen genegeerd.
-* **filePattern**: Specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Hiertoe behoren bestanden met specifieke bestandsextensies (&ast;.dat, &ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&ast;..[ dD ][aA] &quot;haven&quot;). De standaardwaarde is `*` .
+* **filePattern**: Specificeert de inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Hiertoe behoren bestanden met specifieke bestandsextensies (&amp;ast;.dat, &amp;ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&amp;ast;..``[dD][aA]`` &#39;port&#39;). De standaardwaarde is `*` .
 * **receivingSuccessfulJob**: Een e-mailadres waarnaar de berichten worden verzonden om op succesvolle banen te wijzen. Standaard wordt altijd een bericht met een geslaagde taak naar de afzender verzonden. Als u `sender` typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. In sommige gevallen wilt u wellicht een proces activeren en geen e-mailmelding van het resultaat. De standaardwaarde is `sender` .
 * **receivingFailedJob**: Een e-mailadres waarnaar de berichten worden verzonden om ontbroken banen te wijzen. Standaard wordt een mislukte taakbericht altijd naar de afzender verzonden. Als u `sender` typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. De standaardwaarde is `sender` .
 * **inboxHost**: De naam van de inbox gastheer of IP adres voor de e-mailleverancier om af te tasten.
@@ -583,7 +583,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **charSet**: Het karakter plaatste dat door de e-mailleverancier wordt gebruikt. De standaardwaarde is `UTF-8` .
 * **smtpSSLEnabled**: Plaats deze waarde om de e-mailleverancier te dwingen om SSL te gebruiken wanneer het verzenden van berichtberichten van resultaten of fouten. Zorg ervoor dat de SMTP-host SSL ondersteunt.
 * **failedJobFolder**: Specificeert een folder waarin om resultaten op te slaan wanneer de SMTP postserver niet operationeel is.
-* **asynchroon**: Wanneer reeks aan synchroon, worden alle inputdocumenten verwerkt en één enkele reactie is teruggekeerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-mail eindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde documenten van PDF bevat. Wanneer alle documenten van PDF met een wachtwoord worden gecodeerd, en als het eindpunt synchroon wordt gevormd, wordt één enkel antwoord e-mailbericht verzonden met alle beveiligde documenten van PDF in bijlage. Als het eindpunt asynchroon wordt gevormd, wordt een afzonderlijk antwoord e-mailbericht verzonden voor elk beveiligd document van PDF. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
+* **asynchroon**: Wanneer reeks aan synchroon, worden alle inputdocumenten verwerkt en één enkele reactie is teruggekeerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-mail eindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde documenten van PDF bevat. Wanneer alle PDF-documenten met een wachtwoord zijn gecodeerd en als het eindpunt synchroon is geconfigureerd, wordt één e-mailbericht met reacties verzonden met alle beveiligde PDF-documenten bijgevoegd. Als het eindpunt asynchroon wordt gevormd, wordt een afzonderlijk reactie-e-mailbericht verzonden voor elk beveiligd PDF-document. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
 
 **bepalen de waarden van de inputparameter**
 
@@ -650,31 +650,31 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 1. Emaileindpuntkenmerken instellen.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `Email` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Typisch, wanneer het creëren van een E-mail eindpunt voor de dienst die van een proces voortkwam dat in Workbench wordt gecreeerd, wordt de naam van de verrichting gefactureerd.
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `Email` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Typisch, wanneer het creëren van een E-mail eindpunt voor de dienst die van een proces voortkwam dat in Workbench wordt gecreeerd, wordt de naam van de verrichting gefactureerd.
 
 1. Geef configuratiewaarden op.
 
-   Voor elke configuratiewaarde die voor het eindpunt E-mail moet worden ingesteld, moet u de methode `setConfigParameterAsText` van het object `CreateEndpointInfo` aanroepen. Als u bijvoorbeeld de configuratiewaarde `smtpHost` wilt instellen, roept u de methode `CreateEndpointInfo` object `setConfigParameterAsText` aan en geeft u de volgende waarden door:
+   Voor elke configuratiewaarde die voor het eindpunt E-mail moet worden ingesteld, moet u de methode `CreateEndpointInfo` van het object `setConfigParameterAsText` aanroepen. Als u bijvoorbeeld de configuratiewaarde `smtpHost` wilt instellen, roept u de methode `CreateEndpointInfo` object `setConfigParameterAsText` aan en geeft u de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van de configuratiewaarde opgeeft. Geef `smtpHost` op wanneer u de configuratiewaarde van `smtpHost` instelt.
    * Een tekenreeks die de waarde van de configuratiewaarde opgeeft. Wanneer u de configuratiewaarde `smtpHost` instelt, geeft u een tekenreekswaarde op die de naam van de SMTP-server opgeeft.
 
    >[!NOTE]
    >
-   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst die in deze sectie wordt geïntroduceerd, zie het de codevoorbeeld van Java dat bij [&#x200B; wordt gevestigd QuickStart: het toevoegen van een E-maileindpunt gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
+   >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst die in deze sectie wordt geïntroduceerd, zie het de codevoorbeeld van Java dat bij [ wordt gevestigd QuickStart: het toevoegen van een E-maileindpunt gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
 
 1. Definieer invoerparameterwaarden.
 
-   Definieer een invoerparameterwaarde door de methode `setInputParameterMapping` van het object `CreateEndpointInfo` aan te roepen en de volgende waarden door te geven:
+   Definieer een invoerparameterwaarde door de methode `CreateEndpointInfo` van het object `setInputParameterMapping` aan te roepen en de volgende waarden door te geven:
 
    * Een tekenreekswaarde die de naam van de invoerparameter opgeeft. De naam van de invoerparameter voor de EncryptDocument-service is bijvoorbeeld `InDoc` .
    * Een tekenreeks die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de invoerparameter `InDoc` is bijvoorbeeld `com.adobe.idp.Document` .
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld `variable` opgeven.
-   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &ast;.pdf opgeven als bestandspatroon.
+   * Een tekenreekswaarde die de toewijzingswaarde opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
 
    >[!NOTE]
    >
@@ -682,7 +682,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
 1. Definieer een uitvoerparameterwaarde.
 
-   Definieer een uitvoerparameterwaarde door de methode `setOutputParameterMapping` van het object `CreateEndpointInfo` aan te roepen en de volgende waarden door te geven:
+   Definieer een uitvoerparameterwaarde door de methode `CreateEndpointInfo` van het object `setOutputParameterMapping` aan te roepen en de volgende waarden door te geven:
 
    * Een tekenreekswaarde die de naam van de uitvoerparameter opgeeft. De naam van de uitvoerparameter voor de EncryptDocument-service is bijvoorbeeld `SecuredDoc` .
    * Een tekenreeks die het gegevenstype van de uitvoerparameter opgeeft. Het gegevenstype van de uitvoerparameter `SecuredDoc` is bijvoorbeeld `com.adobe.idp.Document` .
@@ -690,11 +690,11 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
 1. Maak het eindpunt E-mail.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het eindpunt E-mail vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het eindpunt E-mail vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode `enable` van het object `EndpointRegistryClient` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
+   Schakel het eindpunt in door de methode `EndpointRegistryClient` van het object `enable` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
 
 **zie ook**
 
@@ -708,7 +708,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
 ### Constante bestand voor waarden van e-mailconfiguratie {#email-configuration-values-constant-file}
 
-[&#x200B; QuickStart: Het toevoegen van een E-maileindpunt gebruikend Java API &#x200B;](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een e-maileindpunt. De volgende Java-code vertegenwoordigt het constante bestand.
+[ QuickStart: Het toevoegen van een E-maileindpunt gebruikend Java API ](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) gebruikt een constant dossier dat deel van uw project van Java moet uitmaken om het snelle begin te compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een e-maileindpunt. De volgende Java-code vertegenwoordigt het constante bestand.
 
 ```java
  /**
@@ -750,15 +750,15 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
 >[!NOTE]
 >
->LiveCycle Remoting-API&#39;s zijn vervangen voor AEM formulieren op JEE.
+>API&#39;s van LiveCycle Remoting zijn verouderd voor AEM-formulieren op JEE.
 
-U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een toepassing van Flex toe om de dienst aan te halen door het remoting te gebruiken. (Zie [&#x200B; het Aanhalen van AEM Forms die (voor AEM vormen wordt afgekeurd) AEM Forms verwijdert &#x200B;](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een toepassing van Flex toe om de dienst aan te halen door het remoting te gebruiken. (Zie [ het Aanhalen van AEM Forms die (voor de vormen van AEM wordt afgekeurd) AEM Forms verwijdert ](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Voor de doeleinden van programmatically het toevoegen van een Verwijderend eindpunt aan de dienst, overweeg het volgende kortstondige proces genoemd *EncryptDocument*.
 
-![&#x200B; ar_ar_encryptdocumentprocess &#x200B;](assets/ar_ar_encryptdocumentprocess.png)
+![ ar_ar_encryptdocumentprocess ](assets/ar_ar_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
+Dit proces accepteert een onbeveiligd PDF-document als een invoerwaarde en geeft het onbeveiligde PDF-document vervolgens door aan de `EncryptPDFUsingPassword` -bewerking van de Encryption-service. Het PDF-document wordt versleuteld met een wachtwoord en het met een wachtwoord gecodeerde PDF-document is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document` . De naam van de uitvoerwaarde (het met wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document` .
 
 Om aan te tonen hoe te om een Remoting eindpunt aan de dienst toe te voegen, voegt deze sectie een Remoting eindpunt aan de dienst genoemd EncryptDocument toe.
 
@@ -787,7 +787,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -801,7 +801,7 @@ Om een Remoting eindpunt voor de dienst tot stand te brengen, specificeer de vol
 * **Beschrijving**: Specificeert de beschrijving van het eindpunt.
 * **Naam**: Specificeert de naam van het eindpunt.
 * **het herkenningsteken van de Dienst**: Specificeert de dienst waartot het eindpunt behoort. Als u bijvoorbeeld een eindpunt Verwijderen wilt toevoegen aan het proces dat in deze sectie wordt geïntroduceerd (een proces wordt een service wanneer het binnen Workbench wordt geactiveerd), geeft u `EncryptDocument` op.
-* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef bij het maken van een eindpunt Remoting een jokerteken op (&ast;).
+* **de naam van de Verrichting**: Specificeert de naam van de verrichting die door het eindpunt te gebruiken wordt aangehaald. Geef bij het maken van een eindpunt Remoting een jokerteken op (&amp;ast;).
 
 **creeer een Verwijderend eindpunt**
 
@@ -835,19 +835,19 @@ Voeg een Remoting eindpunt toe door Java API te gebruiken:
 1. Eindpuntkenmerken voor verwijderen instellen.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `Remoting` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` en geef een tekenreekswaarde door die de naam van de bewerking aangeeft. Geef voor een eindpunt Verwijderen een jokerteken op (&ast;).
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `Remoting` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` en geef een tekenreekswaarde door die de naam van de bewerking aangeeft. Geef voor een eindpunt Verwijderen een jokerteken op (&amp;ast;).
 
 1. Maak een eindpunt Verwijderen.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe eindpunt Remoting vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe eindpunt Remoting vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode `enable` van het object `EndpointRegistryClient` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
+   Schakel het eindpunt in door de methode `EndpointRegistryClient` van het object `enable` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
 
 **zie ook**
 
@@ -889,7 +889,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -950,25 +950,25 @@ Voeg een eindpunt TaskManager door Java API toe te gebruiken:
       * Een tekenreekswaarde die de id-waarde van de categorie opgeeft
       * Een tekenreekswaarde die de beschrijving van de categorie opgeeft
 
-   * Maak de categorie door de methode `createEndpointCategory` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointCategoryInfo` door te geven. Deze methode retourneert een `EndpointCategory` -object dat de nieuwe categorie vertegenwoordigt.
+   * Maak de categorie door de methode `EndpointRegistryClient` van het object `createEndpointCategory` aan te roepen en het object `CreateEndpointCategoryInfo` door te geven. Deze methode retourneert een `EndpointCategory` -object dat de nieuwe categorie vertegenwoordigt.
 
 1. Stel de eindpuntkenmerken van TaskManager in.
 
    * Maak een `CreateEndpointInfo` -object met behulp van de constructor.
-   * Geef de waarde van de connector-id op door de methode `setConnectorId` van het object `CreateEndpointInfo` aan te roepen en de tekenreekswaarde door te geven `TaskManagerConnector` .
-   * Geef de beschrijving van het eindpunt op door de methode `setDescription` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
-   * Geef de naam van het eindpunt op door de methode `setName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
-   * Geef de service op waartoe het eindpunt behoort door de methode `setServiceId` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
-   * Geef de categorie op waartoe het eindpunt behoort door de methode `setCategoryId` van het `CreateEndpointInfo` -object aan te roepen en een tekenreekswaarde door te geven die de categorie-id-waarde opgeeft. U kunt de methode `getId` van het `EndpointCategory` -object aanroepen om de id-waarde van deze categorie op te halen.
-   * Geef de bewerking op die wordt aangeroepen door de methode `setOperationName` van het object `CreateEndpointInfo` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Doorgaans is de naam van de bewerking `invoke` wanneer u een `TaskManager` -eindpunt maakt voor een service die afkomstig is van een proces dat in Workbench is gemaakt.
+   * Geef de waarde van de connector-id op door de methode `CreateEndpointInfo` van het object `setConnectorId` aan te roepen en de tekenreekswaarde door te geven `TaskManagerConnector` .
+   * Geef de beschrijving van het eindpunt op door de methode `CreateEndpointInfo` van het object `setDescription` aan te roepen en een tekenreekswaarde door te geven die het eindpunt beschrijft.
+   * Geef de naam van het eindpunt op door de methode `CreateEndpointInfo` van het object `setName` aan te roepen en een tekenreekswaarde door te geven die de naam opgeeft.
+   * Geef de service op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het object `setServiceId` aan te roepen en een tekenreekswaarde door te geven die de servicenaam opgeeft.
+   * Geef de categorie op waartoe het eindpunt behoort door de methode `CreateEndpointInfo` van het `setCategoryId` -object aan te roepen en een tekenreekswaarde door te geven die de categorie-id-waarde opgeeft. U kunt de methode `EndpointCategory` van het `getId` -object aanroepen om de id-waarde van deze categorie op te halen.
+   * Geef de bewerking op die wordt aangeroepen door de methode `CreateEndpointInfo` van het object `setOperationName` aan te roepen en een tekenreekswaarde door te geven die de naam van de bewerking aangeeft. Doorgaans is de naam van de bewerking `TaskManager` wanneer u een `invoke` -eindpunt maakt voor een service die afkomstig is van een proces dat in Workbench is gemaakt.
 
 1. Creeer een eindpunt TaskManager.
 
-   Maak het eindpunt door de methode `createEndpoint` van het object `EndpointRegistryClient` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe TaskManager-eindpunt vertegenwoordigt.
+   Maak het eindpunt door de methode `EndpointRegistryClient` van het object `createEndpoint` aan te roepen en het object `CreateEndpointInfo` door te geven. Deze methode retourneert een `Endpoint` -object dat het nieuwe TaskManager-eindpunt vertegenwoordigt.
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode `enable` van het object `EndpointRegistryClient` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
+   Schakel het eindpunt in door de methode `EndpointRegistryClient` van het object `enable` aan te roepen en het object `Endpoint` door te geven dat door de methode `createEndpoint` is geretourneerd.
 
 **zie ook**
 
@@ -982,7 +982,7 @@ Voeg een eindpunt TaskManager door Java API toe te gebruiken:
 
 ## Eindpunten wijzigen {#modifying-endpoints}
 
-U kunt een bestaand eindpunt programmatically wijzigen door AEM Forms Java API te gebruiken. Door een eindpunt te wijzigen, kunt u het gedrag van het eindpunt veranderen. Denk bijvoorbeeld aan een eindpunt van een gecontroleerde map dat een map opgeeft die als controlemap wordt gebruikt. U kunt configuratiewaarden programmatically wijzigen die tot het Gecontroleerde eindpunt van de Omslag behoren, resulterend in een andere omslag die als gecontroleerde omslag functioneert. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).
+U kunt een bestaand eindpunt programmatically wijzigen door AEM Forms Java API te gebruiken. Door een eindpunt te wijzigen, kunt u het gedrag van het eindpunt veranderen. Denk bijvoorbeeld aan een eindpunt van een gecontroleerde map dat een map opgeeft die als controlemap wordt gebruikt. U kunt configuratiewaarden programmatically wijzigen die tot het Gecontroleerde eindpunt van de Omslag behoren, resulterend in een andere omslag die als gecontroleerde omslag functioneert. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 Om aan te tonen hoe te om een eindpunt te wijzigen, wijzigt deze sectie een Gecontroleerd eindpunt van de Omslag door de omslag te veranderen die zich als gecontroleerde omslag gedraagt.
 
@@ -1010,7 +1010,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -1018,21 +1018,21 @@ Als u een eindpunt programmatisch wilt wijzigen, moet u een `EndpointRegistryCli
 
 **wint het eindpunt terug om** te wijzigen
 
-Alvorens u een eindpunt kunt wijzigen, moet u het terugwinnen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
+Alvorens u een eindpunt kunt wijzigen, moet u het terugwinnen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 U kunt een eindpunt terugwinnen door een lijst van eindpunten terug te winnen. U kunt dan door de lijst herhalen, zoekend naar het specifieke eindpunt om te verwijderen. Bijvoorbeeld, kunt u van een eindpunt de plaats bepalen door de dienst te bepalen die aan het eindpunt en het type van eindpunt beantwoordt. Wanneer u van het eindpunt de plaats bepaalt, kunt u het wijzigen.
 
 **specificeer nieuwe configuratiewaarden**
 
-Wanneer het wijzigen van een eindpunt, specificeer nieuwe configuratiewaarden. Bijvoorbeeld, om een Gecontroleerd eindpunt van de Omslag te wijzigen, terugstel alle Gecontroleerde waarden van de de eindpuntconfiguratie van de Omslag, niet alleen degenen die u wilt wijzigen. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).
+Wanneer het wijzigen van een eindpunt, specificeer nieuwe configuratiewaarden. Bijvoorbeeld, om een Gecontroleerd eindpunt van de Omslag te wijzigen, terugstel alle Gecontroleerde waarden van de de eindpuntconfiguratie van de Omslag, niet alleen degenen die u wilt wijzigen. Voor informatie over configuratiewaarden die tot een Gecontroleerd eindpunt van de Omslag behoren, zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 >[!NOTE]
 >
->Voor informatie over configuratiewaarden die tot een E-mail- eindpunt behoren, zie [&#x200B; Toevoegend E-mail Eindpunten &#x200B;](programmatically-endpoints.md#adding-email-endpoints).
+>Voor informatie over configuratiewaarden die tot een E-mail- eindpunt behoren, zie [ Toevoegend E-mail Eindpunten ](programmatically-endpoints.md#adding-email-endpoints).
 
 >[!NOTE]
 >
->U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer één. (Zie [&#x200B; Verwijderend Eindpunten &#x200B;](programmatically-endpoints.md#removing-endpoints).)
+>U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer één. (Zie [ Verwijderend Eindpunten ](programmatically-endpoints.md#removing-endpoints).)
 
 **zie ook**
 
@@ -1057,20 +1057,20 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 1. Haal het eindpunt op dat u wilt wijzigen.
 
-   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `getEndpoints` van het object `EndpointRegistryClient` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` -waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is. Voor informatie over a `PagingFilter` voorwerp, zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `EndpointRegistryClient` van het object `getEndpoints` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` -waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is. Voor informatie over a `PagingFilter` voorwerp, zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Doorloop het `java.util.List` -object om te bepalen of het eindpunten heeft. Als er eindpunten zijn, is elk element een `EndPoint` -instantie.
-   * Bepaal de service die overeenkomt met een eindpunt door de methode `getServiceId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
-   * Bepaal het type eindpunt door de methode `getConnectorId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Als het eindpunt bijvoorbeeld een Gecontroleerd mapeindpunt is, retourneert deze methode `WatchedFolder` .
+   * Bepaal de service die overeenkomt met een eindpunt door de methode `EndPoint` van het object `getServiceId` aan te roepen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
+   * Bepaal het type eindpunt door de methode `EndPoint` van het object `getConnectorId` aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Als het eindpunt bijvoorbeeld een Gecontroleerd mapeindpunt is, retourneert deze methode `WatchedFolder` .
 
 1. Geef nieuwe configuratiewaarden op.
 
    * Maak een `ModifyEndpointInfo` -object door de constructor ervan aan te roepen.
-   * Roep voor elke configuratiewaarde die moet worden ingesteld de methode `setConfigParameterAsText` van het `ModifyEndpointInfo` -object aan. Als u bijvoorbeeld de waarde voor de url-configuratie wilt instellen, roept u de methode `setConfigParameterAsText` van het `ModifyEndpointInfo` -object op en geeft u de volgende waarden door:
+   * Roep voor elke configuratiewaarde die moet worden ingesteld de methode `ModifyEndpointInfo` van het `setConfigParameterAsText` -object aan. Als u bijvoorbeeld de waarde voor de url-configuratie wilt instellen, roept u de methode `ModifyEndpointInfo` van het `setConfigParameterAsText` -object op en geeft u de volgende waarden door:
 
       * Een tekenreekswaarde die de naam van de configuratiewaarde opgeeft. Als u bijvoorbeeld de configuratiewaarde `url` wilt instellen, geeft u `url` op.
       * Een tekenreeks die de waarde van de configuratiewaarde opgeeft. Als u een waarde voor de configuratiewaarde `url` wilt definiëren, geeft u de locatie van de gecontroleerde map op.
 
-   * Roep de methode `modifyEndpoint` van het object `EndpointRegistryClient` aan en geef het object `ModifyEndpointInfo` door.
+   * Roep de methode `EndpointRegistryClient` van het object `modifyEndpoint` aan en geef het object `ModifyEndpointInfo` door.
 
 **zie ook**
 
@@ -1084,7 +1084,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 ## Eindpunten verwijderen {#removing-endpoints}
 
-U kunt een eindpunt uit de dienst programmatically verwijderen door AEM Forms Java API te gebruiken. Nadat u een eindpunt verwijdert, kan de dienst niet worden aangehaald door de aanroepingsmethode te gebruiken die het eindpunt toeliet. Bijvoorbeeld, als u een SOAP eindpunt uit de dienst verwijdert, kunt u niet de dienst aanhalen door de SOAP wijze te gebruiken.
+U kunt een eindpunt uit de dienst programmatically verwijderen door AEM Forms Java API te gebruiken. Nadat u een eindpunt verwijdert, kan de dienst niet worden aangehaald door de aanroepingsmethode te gebruiken die het eindpunt toeliet. Bijvoorbeeld, als u een eindpunt van SOAP uit de dienst verwijdert, kunt u niet de dienst aanhalen door de wijze van SOAP te gebruiken.
 
 Om aan te tonen hoe te om een eindpunt uit de dienst te verwijderen, verwijdert deze sectie een eindpunt EJB uit de dienst genoemd *EncryptDocument*.
 
@@ -1112,7 +1112,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Voor informatie over de plaats van deze JAR dossiers, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Voor informatie over de plaats van deze JAR dossiers, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt EndpointRegistry**
 
@@ -1120,7 +1120,7 @@ Als u een eindpunt programmatisch wilt verwijderen, moet u een `EndpointRegistry
 
 **wint het eindpunt terug om** te verwijderen
 
-Voordat u een eindpunt kunt verwijderen, moet u het ophalen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [&#x200B; Plaatsende verbindingseigenschappen &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
+Voordat u een eindpunt kunt verwijderen, moet u het ophalen. Om een eindpunt terug te winnen, moet u als gebruiker verbinden die tot een eindpunt kan toegang hebben. U wordt aangeraden verbinding te maken als beheerder. (Zie [ Plaatsende verbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 U kunt een eindpunt terugwinnen door een lijst van eindpunten terug te winnen. U kunt dan door de lijst herhalen, zoekend naar het specifieke eindpunt om te verwijderen. Bijvoorbeeld, kunt u van een eindpunt de plaats bepalen door de dienst te bepalen die aan het eindpunt en het type van eindpunt beantwoordt. Wanneer u het eindpunt zoekt, kunt u het verwijderen.
 
@@ -1151,14 +1151,14 @@ Een eindpunt verwijderen met de Java API:
 
 1. Haal het te verwijderen eindpunt op.
 
-   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `getEndpoints` van het object `EndpointRegistryClient` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt `(PagingFilter)null` doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is.
+   * Haal een lijst op van alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode `EndpointRegistryClient` van het object `getEndpoints` aan te roepen en een object `PagingFilter` door te geven dat als filter fungeert. U kunt `(PagingFilter)null` doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` -object waarbij elk element een `Endpoint` -object is.
    * Doorloop het `java.util.List` -object om te bepalen of het eindpunten heeft. Als er eindpunten zijn, is elk element een `EndPoint` -instantie.
-   * Bepaal de service die overeenkomt met een eindpunt door de methode `getServiceId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
-   * Bepaal het type eindpunt door de methode `getConnectorId` van het object `EndPoint` aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Als het eindpunt bijvoorbeeld een EJB-eindpunt is, retourneert deze methode `EJB` .
+   * Bepaal de service die overeenkomt met een eindpunt door de methode `EndPoint` van het object `getServiceId` aan te roepen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
+   * Bepaal het type eindpunt door de methode `EndPoint` van het object `getConnectorId` aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Als het eindpunt bijvoorbeeld een EJB-eindpunt is, retourneert deze methode `EJB` .
 
 1. Verwijder het eindpunt.
 
-   Verwijder het eindpunt door de methode `remove` van het object `EndpointRegistryClient` aan te roepen en het object `EndPoint` door te geven dat het eindpunt vertegenwoordigt dat moet worden verwijderd.
+   Verwijder het eindpunt door de methode `EndpointRegistryClient` van het object `remove` aan te roepen en het object `EndPoint` door te geven dat het eindpunt vertegenwoordigt dat moet worden verwijderd.
 
 **zie ook**
 
@@ -1174,7 +1174,7 @@ Een eindpunt verwijderen met de Java API:
 
 U kunt informatie over eindpuntschakelaars programmatically terugwinnen gebruikend AEM Forms API. Een schakelaar laat een eindpunt toe om de dienst aan te halen gebruikend diverse aanroepingsmethodes. Bijvoorbeeld, laat een Gecontroleerde schakelaar van de Omslag een eindpunt toe om de dienst aan te halen gebruikend gecontroleerde omslagen. Door programmatically het terugwinnen van informatie over eindpuntschakelaars, kunt u configuratiewaarden terugwinnen verbonden aan een schakelaar zoals welke configuratiewaarden worden vereist en welke facultatieve zijn.
 
-Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, wint deze sectie informatie over een Gecontroleerde schakelaar van de Omslag terug. (Zie [&#x200B; Toevoegend Gecontroleerde Eindpunten van de Omslag &#x200B;](programmatically-endpoints.md#adding-watched-folder-endpoints).)
+Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, wint deze sectie informatie over een Gecontroleerde schakelaar van de Omslag terug. (Zie [ Toevoegend Gecontroleerde Eindpunten van de Omslag ](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
@@ -1182,7 +1182,7 @@ Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, w
 
 >[!NOTE]
 >
->Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [&#x200B; AEM Forms API Verwijzing &#x200B;](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+>Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [ AEM Forms API Verwijzing ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1204,7 +1204,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [&#x200B; Inclusief de bibliotheekdossiers van AEM Forms Java &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de plaats van alle dossiers van AEM Forms JAR, zie [ Inclusief de bibliotheekdossiers van AEM Forms Java ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **creeer een voorwerp van de Cliënt ConnectorRegistry**
 
@@ -1215,7 +1215,7 @@ Maak een `ConnectorRegistryClient` -object om de informatie over de eindpuntaans
 Specificeer het type van schakelaar waarvan om informatie terug te winnen. De volgende types van schakelaars bestaan:
 
 * **EJB**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de wijze EJB.
-* **SOAP**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de SOAP wijze.
+* **SOAP**: Laat een cliënttoepassing toe om de dienst aan te halen gebruikend de wijze van SOAP.
 * **Gecontroleerde Omslag**: Laat gecontroleerde omslagen toe om de dienst aan te halen.
 * **E-mail**: Laat e-mailberichten toe om de dienst aan te halen.
 * **het Verwijderen**: Laat een de cliënttoepassing van Flex toe om de dienst aan te halen.
@@ -1248,12 +1248,12 @@ Haal de informatie van de eindpuntschakelaar door Java API te gebruiken terug:
 
 1. Geef het type aansluiting op.
 
-   Geef het type connector op door de methode `getEndpointDefinition` van het object `ConnectorRegistryClient` aan te roepen en een tekenreekswaarde door te geven die het type connector aangeeft. Als u bijvoorbeeld het verbindingstype Gecontroleerde map wilt opgeven, geeft u de tekenreekswaarde `WatchedFolder` door. Deze methode retourneert een `Endpoint` -object dat overeenkomt met het type connector.
+   Geef het type connector op door de methode `ConnectorRegistryClient` van het object `getEndpointDefinition` aan te roepen en een tekenreekswaarde door te geven die het type connector aangeeft. Als u bijvoorbeeld het verbindingstype Gecontroleerde map wilt opgeven, geeft u de tekenreekswaarde `WatchedFolder` door. Deze methode retourneert een `Endpoint` -object dat overeenkomt met het type connector.
 
 1. Haal configuratiewaarden op.
 
-   * Haal configuratiewaarden op die binnen dit eindpunt zijn gekoppeld door de methode `getConfigParameters` van het object `Endpoint` aan te roepen. Deze methode retourneert een array van `ConfigParameter` -objecten.
-   * Haal informatie over elke configuratiewaarde op door elk element binnen de serie terug te winnen. Elk element is een `ConfigParameter` -object. U kunt bijvoorbeeld bepalen of de configuratiewaarde verplicht of optioneel is door de methode `isRequired` van het object `ConfigParameter` aan te roepen. Als de configuratiewaarde wordt vereist, dan keert deze methode `true` terug.
+   * Haal configuratiewaarden op die binnen dit eindpunt zijn gekoppeld door de methode `Endpoint` van het object `getConfigParameters` aan te roepen. Deze methode retourneert een array van `ConfigParameter` -objecten.
+   * Haal informatie over elke configuratiewaarde op door elk element binnen de serie terug te winnen. Elk element is een `ConfigParameter` -object. U kunt bijvoorbeeld bepalen of de configuratiewaarde verplicht of optioneel is door de methode `ConfigParameter` van het object `isRequired` aan te roepen. Als de configuratiewaarde wordt vereist, dan keert deze methode `true` terug.
 
 **zie ook**
 

@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 
 ## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
 
-| Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Notities |
+|---|---|
 | Boolean checkPermission(ResourceResolver resolver, String path, String action) |  |
 | SocialResourceProvider getSocialResourceProvider(resource) |  |
 | SocialResourceConfiguration getStorageConfig (resource) |  |
@@ -42,8 +42,8 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 | String UGCToResourcePath(String ugcPath) | methodehandtekening gewijzigd |
 | String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | new |
 
-| Methoden in `com.adobe.cq.social.` utilities.resource.api.SocialResourceUtilities |
-|---|
+| Methoden in `com.adobe.cq.social.` utilities.resource.api.SocialResourceUtilities | Notities |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(resource) | vervangt SocialResourceProvider getConfiguredProvider(resource) |
 
 ## SCFUtilities-pakket {#scfutilities-package}

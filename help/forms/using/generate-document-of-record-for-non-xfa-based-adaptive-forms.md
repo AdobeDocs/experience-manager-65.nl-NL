@@ -9,21 +9,21 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4155'
+source-wordcount: '4154'
 ht-degree: 0%
 
 ---
 
 # Document met record genereren voor adaptieve formulieren of adaptieve formulierfragmenten {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6.5 | Dit artikel |
 
 
 ## Overzicht {#overview}
@@ -34,7 +34,7 @@ In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adap
 
 >[!NOTE]
 >
-> De ondersteuning voor het aanpassen van uw fragmenten van het adaptieve formulier en de bijbehorende velden in de Adaptieve Form Editor is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> De ondersteuning voor het aanpassen van uw fragmenten van het adaptieve formulier en de bijbehorende velden in de Adaptive Form Editor is geïntroduceerd met AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -45,10 +45,10 @@ In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adap
 
 Wanneer u een adaptief formulier maakt, kunt u een formuliermodel selecteren. U kunt kiezen uit de volgende opties:
 
-* [&#x200B; Malplaatjes van de Vorm &#x200B;](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+* [ Malplaatjes van de Vorm ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 Hiermee kunt u een XFA-sjabloon selecteren voor het aangepaste formulier. Als u een XFA-sjabloon selecteert, kunt u het bijbehorende XDP-bestand gebruiken voor een recorddocument, zoals hierboven beschreven.
 
-* [&#x200B; Schema van XML &#x200B;](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+* [ Schema van XML ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Hiermee kunt u een XML-schemadefinitie selecteren voor het aangepaste formulier. Wanneer u een XML-schema selecteert voor het aangepaste formulier, kunt u:
 
    * Koppel een XFA-sjabloon voor een record. Zorg ervoor dat de gekoppelde XFA-sjabloon hetzelfde XML-schema gebruikt als het aangepaste formulier
@@ -57,7 +57,7 @@ Hiermee kunt u een XML-schemadefinitie selecteren voor het aangepaste formulier.
 * Geen
 Hiermee kunt u een adaptief formulier maken zonder een formuliermodel. Het recorddocument wordt automatisch gegenereerd voor het aangepaste formulier.
 
-Wanneer u een formuliermodel selecteert, configureert u het document met records met de opties die beschikbaar zijn onder Document of Record Template Configuration. Zie [&#x200B; Document van de Configuratie van het Malplaatje van het Verslag &#x200B;](#document-of-record-template-configuration).
+Wanneer u een formuliermodel selecteert, configureert u het document met records met de opties die beschikbaar zijn onder Document of Record Template Configuration. Zie [ Document van de Configuratie van het Malplaatje van het Verslag ](#document-of-record-template-configuration).
 
 ## Automatisch gegenereerd document van record {#automatically-generated-document-of-record}
 
@@ -81,7 +81,7 @@ Voor het genereren van een recorddocument voor adaptieve formulieren hebt u de v
 
 **malplaatje van de Basis (geadviseerd)** malplaatje XFA (XDP dossier) dat in AEM Designer wordt gecreeerd. De malplaatje van de basis wordt gebruikt om het stileren en het brandmerken informatie voor document van verslagmalplaatje te specificeren.
 
-Zie [&#x200B; malplaatje van de Basis van een document van verslag &#x200B;](#base-template-of-a-document-of-record)
+Zie [ malplaatje van de Basis van een document van verslag ](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Zie [&#x200B; malplaatje van de Basis van een document van verslag &#x200B;](#ba
 
 **Document van verslagmalplaatje** XFA malplaatje (XDP dossier) dat van een adaptieve vorm wordt geproduceerd.
 
-Zie [&#x200B; Document van de Configuratie van het Malplaatje van het Verslag &#x200B;](#document-of-record-template-configuration).
+Zie [ Document van de Configuratie van het Malplaatje van het Verslag ](#document-of-record-template-configuration).
 
 **gegevens van de Vorm** Informatie die in door een gebruiker in de adaptieve vorm wordt gevuld. Het samenvoegt met het document van verslagmalplaatje om het document van verslag te produceren.
 
@@ -210,7 +210,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
 | Aangepast formulieronderdeel | Overeenkomende XFA-component | Notities |
 |---|---|---|
 | Afbeelding | Afbeelding | De gebonden of niet-gebonden componenten TextDraw en Image worden altijd in het recorddocument weergegeven voor een adaptief formulier op basis van XSD, tenzij ze worden uitgesloten met behulp van het document met recordinstellingen. |
-| Tekst | Tekst |
+| Tekst | Tekst |  |
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ De tabelcomponenten voor adaptieve formulieren, zoals koptekst, voettekst en rij
 
 De basissjabloon biedt opmaak- en weergavegegevens voor documenten met een record. Hiermee kunt u de standaardweergave van automatisch gegenereerd document met record aanpassen. U wilt bijvoorbeeld het bedrijfslogo in de koptekst en copyrightinformatie in de voettekst van het document met de record plaatsen. De basispagina van het basissjabloon wordt gebruikt als een basispagina voor documenten met een recordsjabloon. De stramienpagina kan informatie bevatten, zoals paginakoptekst, voettekst en paginanummer, die u kunt toepassen op het recorddocument. U kunt dergelijke informatie op document van verslag toepassen gebruikend basissjabloon voor auto het produceren van document van verslag. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
-Ben zeker u volgt [&#x200B; de overeenkomsten van het het malplaatjesjabloon van de Basis &#x200B;](#base-template-conventions) wanneer u basissjabloon ontwerpt.
+Ben zeker u volgt [ de overeenkomsten van het het malplaatjesjabloon van de Basis ](#base-template-conventions) wanneer u basissjabloon ontwerpt.
 
 ## Basissjabloonconventies {#base-template-conventions}
 
@@ -274,7 +274,7 @@ Configureer het document met de recordsjabloon van uw formulier, zodat uw klante
 
 Voer de volgende stappen uit om een document van verslag voor adaptieve vormen te vormen:
 
-1. In AEM auteursinstantie, klik **Forms > Forms en Documenten.**
+1. In de auteursinstantie van AEM, klik **Forms > Forms en Documenten.**
 1. Selecteer een vorm, en klik **Eigenschappen van de Mening**.
 1. In het venster van Eigenschappen, uitgezochte **Model van de Vorm**.
 U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
@@ -312,11 +312,11 @@ Tijdens het genereren van een recorddocument kunt u de brandinggegevens voor het
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u ervoor zorgen dat de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit als u de brandinggegevens van een recorddocument wilt aanpassen:
 
-1. Selecteer een paneel (wortelpaneel) in het document van verslag en selecteer dan ![&#x200B; vormen &#x200B;](assets/configure.png).
-1. Selecteer ![&#x200B; dortab &#x200B;](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een paneel (wortelpaneel) in het document van verslag en selecteer dan ![ vormen ](assets/configure.png).
+1. Selecteer ![ dortab ](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het document met records. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het recorddocument weergegeven onder de vervolgkeuzelijst Sjabloon.
 
-   ![&#x200B; brandingtemplate &#x200B;](/help/forms/using/assets/brandingtemplateupdate.png)
+   ![ brandingtemplate ](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Als u een aangepaste sjabloon wilt selecteren, bladert u naar een geselecteerde XDP op uw AEM Forms-server. Als u een sjabloon wilt gebruiken die nog niet op uw AEM Forms-server staat, moet u de XDP eerst uploaden naar uw AEM Forms-server.
 
@@ -343,9 +343,9 @@ Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon s
 
   Als de aangepaste XDP-sjabloon die u selecteert meerdere stramienpagina&#39;s bevat, worden de eigenschappen van die pagina&#39;s weergegeven in de **[!UICONTROL content]** -sectie van het tabblad **[!UICONTROL Document of Record]** .
 
-  ![&#x200B; Hoofdpagina Eigenschappen &#x200B;](assets/master-page-properties.png)
+  ![ Hoofdpagina Eigenschappen ](assets/master-page-properties.png)
 
-  Tot de eigenschappen van de basispagina behoren Logo Image, Header Text, Form Title, Disclaimer Label en Disclaimer Text. U kunt adaptieve formulier- of XDP-sjablooneigenschappen toepassen op het Document of Record. AEM Forms past de sjablooneigenschappen standaard toe op het Document of Record. U kunt ook aangepaste waarden definiëren voor de eigenschappen van de basispagina. Voor informatie over hoe te om veelvoudige hoofdpagina&#39;s in een Document van Verslag toe te passen, zie [&#x200B; veelvoudige hoofdpagina&#39;s op een Document van Verslag &#x200B;](#apply-multiple-master-pages-dor) toepassen.
+  Tot de eigenschappen van de basispagina behoren Logo Image, Header Text, Form Title, Disclaimer Label en Disclaimer Text. U kunt adaptieve formulier- of XDP-sjablooneigenschappen toepassen op het Document of Record. AEM Forms past de sjablooneigenschappen standaard toe op het Document of Record. U kunt ook aangepaste waarden definiëren voor de eigenschappen van de basispagina. Voor informatie over hoe te om veelvoudige hoofdpagina&#39;s in een Document van Verslag toe te passen, zie [ veelvoudige hoofdpagina&#39;s op een Document van Verslag ](#apply-multiple-master-pages-dor) toepassen.
 
   >[!NOTE]
   >
@@ -367,15 +367,15 @@ Afhankelijk van het feit of u een standaardsjabloon of een aangepaste sjabloon s
 
 ## Tabel- en kolomindelingen voor deelvensters in document van record {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Het aangepaste formulier kan lang zijn en meerdere formuliervelden bevatten. U wilt een document met records mogelijk niet opslaan als een exacte kopie van het aangepaste formulier. U kunt nu een tabel- of kolomindeling kiezen om een of meer adaptieve formulierdeelvensters op te slaan in het document met de recordindeling PDF.
+Het aangepaste formulier kan lang zijn en meerdere formuliervelden bevatten. U wilt een document met records mogelijk niet opslaan als een exacte kopie van het aangepaste formulier. Nu kunt u een tabel- of kolomindeling kiezen om een of meer adaptieve formuliervensters op te slaan in het document van de PDF-record.
 
 Voordat u een recorddocument genereert, kiest u in de instellingen van een deelvenster de optie Lay-out voor het document van record voor dat deelvenster als tabel of kolom. De velden in het deelvenster worden op basis van de indeling in het recorddocument ingedeeld.
 
-![&#x200B; Gebieden in een paneel dat in een lijstlay-out in het document van verslag &#x200B;](assets/dortablelayout.png) wordt teruggegeven
+![ Gebieden in een paneel dat in een lijstlay-out in het document van verslag ](assets/dortablelayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een tabelindeling in het document met records
 
-![&#x200B; Gebieden in een paneel dat in een kolomlay-out in het document van verslag &#x200B;](assets/dorcolumnlayout.png) wordt teruggegeven
+![ Gebieden in een paneel dat in een kolomlay-out in het document van verslag ](assets/dorcolumnlayout.png) wordt teruggegeven
 
 Velden in een deelvenster die zijn gerenderd in een kolomindeling in het document met records
 
@@ -383,7 +383,7 @@ Velden in een deelvenster die zijn gerenderd in een kolomindeling in het documen
 
 Met documenten met recordinstellingen kunt u opties kiezen die u wilt opnemen in het document met records. Een bank accepteert bijvoorbeeld naam, leeftijd, socialezekerheidsnummer en telefoonnummer in een formulier. Het formulier genereert een bankrekeningnummer en filiaalgegevens. U kunt ervoor kiezen alleen de naam, het socialezekerheidsnummer, de bankrekening en de filiaalgegevens in een document met gegevens weer te geven.
 
-Het document met recordinstellingen van een component is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![&#x200B; cmp &#x200B;](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
+Het document met recordinstellingen van een component is beschikbaar onder de eigenschappen. Om tot de eigenschappen toegang te hebben een component, selecteer de component en klik ![ cmp ](assets/cmppr.png) in de bekleding. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
 
 **het niveaumontages van het Gebied**
 
@@ -415,18 +415,17 @@ Het document met recordinstellingen van een component is beschikbaar onder de ei
   >
   > Pagineringseigenschap is niet beschikbaar voor adaptieve formulierfragmenten.
 
-Voor informatie over hoe te om pagina onderbrekingen toe te passen en veelvoudige hoofdpagina&#39;s in een Document van Verslag toe te passen, zie [&#x200B; paginauze in een Document van Verslag toepassen &#x200B;](#apply-page-breaks-in-dor) en [&#x200B; veelvoudige hoofdpagina&#39;s op een Document van Verslag &#x200B;](#apply-multiple-master-pages-dor) toepassen.
+Voor informatie over hoe te om pagina onderbrekingen toe te passen en veelvoudige hoofdpagina&#39;s in een Document van Verslag toe te passen, zie [ paginauze in een Document van Verslag toepassen ](#apply-page-breaks-in-dor) en [ veelvoudige hoofdpagina&#39;s op een Document van Verslag ](#apply-multiple-master-pages-dor) toepassen.
 
 **het niveau van de Vorm montages**
 
 * **[!UICONTROL BASIC]**
    * **Malplaatje:** u kunt het malplaatjeGebrek of Douane selecteren.
-
-     ![&#x200B; alt tekst &#x200B;](image.png)
+     ![ alt tekst ](image.png)
    * **de Kleur van de Actie:** u kunt de malplaatjeKleur van [!UICONTROL Document of Record] vooraf bepalen.
    * **Familie van de Doopvont:** selecteer het type van Doopvont voor de [!UICONTROL Document of Record] teksten.
    * **omvat ongebonden gebieden in DoR:** het plaatsen van het bezit omvat ongebonden gebieden van Schema gebaseerde adaptieve vorm in [!UICONTROL Document of Record]. Standaard is dit waar.
-   * **sluit gebieden van DoR uit als verborgen:** plaats het bezit om de verborgen gebieden van [!UICONTROL Document of Record] bij vormvoorlegging uit te sluiten. Wanneer u [&#x200B; toelaat verwerk op server &#x200B;](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) opnieuw, compileert de server de verborgen gebieden alvorens die gebieden van [!UICONTROL Document of Record] uit te sluiten
+   * **sluit gebieden van DoR uit als verborgen:** plaats het bezit om de verborgen gebieden van [!UICONTROL Document of Record] bij vormvoorlegging uit te sluiten. Wanneer u [ toelaat verwerk op server ](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) opnieuw, compileert de server de verborgen gebieden alvorens die gebieden van [!UICONTROL Document of Record] uit te sluiten
 * **[!UICONTROL FORM FIELD PROPERTIES]**
    * Als u de optie **voor de component van de Doos van de Controle en van de Keuzerondje tikt, slechts de geselecteerde waarde(n)** toont, zal het output van DoR met slechts geselecteerde waarde(n) produceren.
    * U kunt Scheidingsteken selecteren voor meerdere geselecteerde waarden of u kunt een ander scheidingsteken kiezen.
@@ -434,10 +433,9 @@ Voor informatie over hoe te om pagina onderbrekingen toe te passen en veelvoudig
       * verticaal
       * Horizontaal
       * Hetzelfde als adaptief formulier
-
      >[!NOTE]
      > Verticale en horizontale uitlijning is alleen van toepassing voor     Keuzerondje en selectievakje
-* **[!UICONTROL MASTER PAGE PROPERTIES]** klik voor meer informatie over [&#x200B; eigenschappen van de Hoofdpagina &#x200B;](#master-page-properties-master-page-properties)
+* **[!UICONTROL MASTER PAGE PROPERTIES]** klik voor meer informatie over [ eigenschappen van de Hoofdpagina ](#master-page-properties-master-page-properties)
 
 ## Een pagina-einde toepassen in een document van record {#apply-page-breaks-in-dor}
 
@@ -445,33 +443,33 @@ U kunt pagina-einden in een Document van Verslag toepassen gebruikend veelvoudig
 
 Een pagina-einde toepassen op een document met records:
 
-1. Selecteer het paneel en selecteer ![&#x200B; vormen &#x200B;](/help/forms/using/assets/configure.png)
+1. Selecteer het paneel en selecteer ![ vormen ](/help/forms/using/assets/configure.png)
 1. Vouw **[!UICONTROL Document of Record]** uit om de eigenschappen weer te geven.
 
-1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![&#x200B; Omslag &#x200B;](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL Place]** gebied.
+1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![ Omslag ](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL Place]** gebied.
 1. Selecteer **[!UICONTROL Top of Next page]** en selecteer **[!UICONTROL Select]** . U kunt ook **[!UICONTROL Top of Page]** selecteren, de stramienpagina selecteren en **[!UICONTROL Select]** selecteren om het pagina-einde toe te passen.
-1. Selecteer ![&#x200B; sparen &#x200B;](/help/forms/using/assets/save_icon.png) om de eigenschappen te bewaren.
+1. Selecteer ![ sparen ](/help/forms/using/assets/save_icon.png) om de eigenschappen te bewaren.
 
 Het geselecteerde deelvenster gaat naar de volgende pagina.
 
 ## Meerdere stramienpagina&#39;s toepassen op een document met records {#apply-multiple-master-pages-dor}
 
-Als de aangepaste XDP-sjabloon die u selecteert meerdere stramienpagina&#39;s bevat, worden de eigenschappen van die pagina&#39;s weergegeven in de [!UICONTROL content] -sectie van het tabblad [!UICONTROL Document of Record] . Voor meer informatie, zie [&#x200B; de branding informatie in document van verslag &#x200B;](#customize-the-branding-information-in-document-of-record) aanpassen.
+Als de aangepaste XDP-sjabloon die u selecteert meerdere stramienpagina&#39;s bevat, worden de eigenschappen van die pagina&#39;s weergegeven in de [!UICONTROL content] -sectie van het tabblad [!UICONTROL Document of Record] . Voor meer informatie, zie [ de branding informatie in document van verslag ](#customize-the-branding-information-in-document-of-record) aanpassen.
 
-U kunt meerdere basispagina&#39;s toepassen op een Document of Record door verschillende basispagina&#39;s toe te passen op de componenten van een adaptief formulier. Gebruik de [&#x200B; sectie van de Paginering &#x200B;](#document-of-record-settings) van het Document van de eigenschappen van het Verslag om veelvoudige hoofdpagina&#39;s toe te passen.
+U kunt meerdere basispagina&#39;s toepassen op een Document of Record door verschillende basispagina&#39;s toe te passen op de componenten van een adaptief formulier. Gebruik de [ sectie van de Paginering ](#document-of-record-settings) van het Document van de eigenschappen van het Verslag om veelvoudige hoofdpagina&#39;s toe te passen.
 
 Hieronder ziet u hoe u meerdere stramienpagina&#39;s kunt toepassen op een document met records:
 U uploadt een XDP-sjabloon met vier stramienpagina&#39;s naar de [!DNL AEM Forms] -server. [!DNL AEM Forms] past de sjablooneigenschappen standaard toe op het document of record. [!DNL AEM Forms] past ook de eerste eigenschappen van de basispagina in de sjabloon toe op het Document of Record.
 
 Voer de volgende stappen uit om de eigenschappen van de tweede basispagina toe te passen op een deelvenster en de derde basispagina op de volgende deelvensters:
 
-1. Selecteer het paneel om de tweede hoofdpagina toe te passen en ![&#x200B; te selecteren vorm &#x200B;](assets/cmppr.png).
-1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![&#x200B; Omslag &#x200B;](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL Place]** gebied.
+1. Selecteer het paneel om de tweede hoofdpagina toe te passen en ![ te selecteren vorm ](assets/cmppr.png).
+1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![ Omslag ](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL Place]** gebied.
 1. Selecteer **[!UICONTROL On page]** , selecteer de tweede basispagina en selecteer **[!UICONTROL Select]** .
 AEM Forms past de tweede basispagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
-1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![&#x200B; Omslag &#x200B;](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL After]** gebied.
+1. In de **[!UICONTROL Pagination]** sectie, uitgezochte ![ Omslag ](/help/forms/using/assets/folder-icon.png) op het **[!UICONTROL After]** gebied.
 1. Selecteer **[!UICONTROL Go To page]** , selecteer de derde basispagina en selecteer **[!UICONTROL Select]** .
-1. Selecteer ![&#x200B; sparen &#x200B;](/help/forms/using/assets/save_icon.png) om de eigenschappen te bewaren.
+1. Selecteer ![ sparen ](/help/forms/using/assets/save_icon.png) om de eigenschappen te bewaren.
 AEM Forms past de derde basispagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
 
 >[!NOTE]
@@ -485,7 +483,7 @@ Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan ee
 * Document met recordsjablonen ondersteunt geen RTF-bestanden. Alle RTF-tekst in het statische adaptieve formulier of in de informatie die door de eindgebruiker is ingevuld, wordt daarom als onbewerkte tekst weergegeven in het document met de record.
 * Documentfragmenten in een adaptieve vorm worden niet weergegeven in het recorddocument. Aangepaste formulierfragmenten worden echter ondersteund.
 * Inhoudbinding in document van record die is gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
-* De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Voor meer informatie over localisatie van document van verslag en adaptieve vormen zie [&#x200B; Gebruikend AEM vertaalwerkschema om adaptieve vormen en document van verslag &#x200B;](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) te lokaliseren.
+* De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Voor meer informatie over localisatie van document van verslag en adaptieve vormen zie [ Gebruikend het vertaalwerkschema van AEM om adaptieve vormen en document van verslag ](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) te lokaliseren.
 
 ## Een aangepast XCI-bestand gebruiken
 
@@ -493,8 +491,8 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 
 | XCI, optie | Beschrijving |
 |--- |--- |
-| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Voor informatie over dit woordenboek, zie de [&#x200B; gids van de Verwijzing van de PDF &#x200B;](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Voor informatie over dit woordenboek, zie de [&#x200B; gids van de Verwijzing van de PDF &#x200B;](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Hiermee wordt de maker van het document geïdentificeerd met het item Maker in het documentgegevenswoordenboek. Voor informatie over dit woordenboek, zie de [ gids van de Verwijzing van PDF ](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Hiermee wordt de documentproducent geïdentificeerd met behulp van het Producent-item in het documentinformatiewoordenboek. Voor informatie over dit woordenboek, zie de [ gids van de Verwijzing van PDF ](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Hiermee bepaalt u of de uitvoer één deelvenster is of gepagineerd. |
 | config/present/pdf/compression/level | Hiermee geeft u de mate van compressie op die moet worden gebruikt bij het genereren van een PDF-document. |
 | config/present/pdf/fontInfo/embed | Bepaalt het insluiten van lettertypen in het uitvoerdocument. |
@@ -509,16 +507,16 @@ Met behulp van een XCI-bestand kunt u verschillende eigenschappen van een docume
 | config/present/common/log/to | Controls the location that log data or output data is written to. |
 | config/present/output/to | Controls the location that log data or output data is written to. |
 | config/present/script/currentPage | Hiermee geeft u de eerste pagina op wanneer het document wordt geopend. |
-| config/present/script/exclude | Informeert Forms as a Cloud Service welke gebeurtenissen moeten worden genegeerd. |
-| config/present/pdf/linearized | Controls whether the output PDF document is linearized. |
+| config/present/script/exclude | Hiermee wordt Forms as a Cloud Service geïnformeerd welke gebeurtenissen moeten worden genegeerd. |
+| config/present/pdf/linearized | Bepaalt of het PDF-uitvoerdocument lineair is. |
 | config/present/script/runScripts | Hiermee bepaalt u welke set scripts Forms as a Cloud Service uitvoert. |
-| config/present/pdf/tagged | Controls the include of tags into the output PDF document. Codes, in de context van PDF, zijn aanvullende informatie die in een document is opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
+| config/present/pdf/tagged | Hiermee bepaalt u de opname van codes in het PDF-uitvoerdocument. In de context van PDF zijn codes aanvullende informatie die in een document wordt opgenomen om de logische structuur van het document zichtbaar te maken. Tags zijn handig voor toegankelijkheidshulpmiddelen en voor het opnieuw opmaken. Een paginanummer kan bijvoorbeeld als een artefact worden gecodeerd, zodat een schermlezer het niet in het midden van de tekst activeert. Hoewel codes een document nuttiger maken, verhogen zij ook de grootte van het document en de verwerkingstijd om het tot stand te brengen. |
 | config/present/pdf/fontInfo/alwaysEmbed | Hiermee geeft u een lettertype op dat in het uitvoerdocument wordt ingesloten. |
 | config/present/pdf/fontInfo/neverEmbed | Hiermee geeft u een lettertype op dat nooit in het uitvoerdocument mag worden ingesloten. |
-| config/present/pdf/pdfa/part | Hier geeft u het versienummer op van de PDF/A-specificatie waarmee het document compatibel is. |
+| config/present/pdf/pdfa/part | Hiermee wordt het versienummer opgegeven van de PDF/A-specificatie waarmee het document compatibel is. |
 | config/present/pdf/pdfa/amd | Geeft het wijzigingsniveau van de specificatie PDF/A aan. |
-| config/present/pdf/pdfa/conformance | Hiermee wordt het compatibiliteitsniveau opgegeven met de PDF/A-specificatie. |
-| config/present/pdf/version | Hiermee wordt de versie van het te genereren PDF-document opgegeven |
+| config/present/pdf/pdfa/conformance | Geeft het compatibiliteitsniveau aan met de PDF/A-specificatie. |
+| config/present/pdf/version | Hiermee wordt de versie van het PDF-document opgegeven die moet worden gegenereerd |
 | config/present/pdf/version/map | Geeft de terugvalfonts voor het document aan |
 
 

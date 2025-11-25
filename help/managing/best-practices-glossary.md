@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Verklarende woordenlijst{#glossary}
 
-Deze verklarende woordenlijst maakt een lijst (alfabetisch) details van alle Geleverbare documenten van [&#x200B; Controlelijst van het Project &#x200B;](/help/managing/best-practices-checklist.md).
+Deze verklarende woordenlijst maakt een lijst (alfabetisch) details van alle Geleverbare documenten van [ Controlelijst van het Project ](/help/managing/best-practices-checklist.md).
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
@@ -36,7 +36,7 @@ Acceptatietests worden gebruikt om te bevestigen dat:
 * Gebruikers accepteren de oplossing en kunnen overwegen ermee te werken.
 * De klant accepteert het project.
 
-Hoe eerder u uw acceptatietests plant en ontwerpt, hoe eenvoudiger de definitieve implementatie. Zij zouden samen met de klant en uw team van de Verzekering van de Kwaliteit moeten worden bepaald.
+Hoe eerder u uw acceptatietests plant en ontwerpt, hoe eenvoudiger de definitieve implementatie. Deze moeten samen met de klant en uw Quality Assurance-team worden gedefinieerd.
 
 Hoewel u niet alle details bij het begin van het project kunt bepalen, zouden de aanvankelijke definities moeten worden besproken en worden overeengekomen. De goedkeuringstests zullen waarschijnlijk gebaseerd zijn op de fundamentele eisen (functionele eisen en prestaties).
 
@@ -44,33 +44,33 @@ Hoewel u niet alle details bij het begin van het project kunt bepalen, zouden de
 
 Ervoor zorgen dat de vereiste niveaus van systeemtoegang aan alle rollen zijn verleend.
 
-### Beveiligingschecklist Adobe {#adobe-security-checklist}
+### Adobe Security Checklist {#adobe-security-checklist}
 
-De [&#x200B; Controlelijst van de Veiligheid van de Adobe &#x200B;](/help/sites-administering/security-checklist.md) is officiële controlelijst wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) bij installatie veilig is. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
+[ Controlelijst van de Veiligheid van Adobe ](/help/sites-administering/security-checklist.md) is officiële controlelijst die wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) bij installatie veilig is. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
-Het portaal van de Steun van de Adobe laat implementatiepartners en klanten toe om de AEM implementatie in te stellen als project in het Portaal van de Steun.
+Met het Adobe Support Portal kunnen implementatiepartners en klanten de AEM-implementatie als een project instellen in het Support Portal.
 
-Er kunnen details worden geregistreerd, bijvoorbeeld over de geïmplementeerde technologieën en versies. Deze bieden transparantie tussen de klant en de Adobe.
+Er kunnen details worden geregistreerd, bijvoorbeeld over de geïmplementeerde technologieën en versies. Deze bieden transparantie tussen de klant en Adobe.
 
-### Beheerderstraining AEM {#aem-administrator-training}
+### AEM Administrator Training {#aem-administrator-training}
 
-Opleiding voor administratief personeel van de oplossing. Zie de [&#x200B; Diensten van de Opleiding van de Adobe &#x200B;](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor administratief personeel van de oplossing. Zie de [ Diensten van de Opleiding van Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
-### AEM auteur-training {#aem-author-training}
+### AEM Author Training {#aem-author-training}
 
-Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [&#x200B; Diensten van de Opleiding van de Adobe &#x200B;](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [ Diensten van de Opleiding van Adobe ](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
 
-### Certificeringsexamen AEM {#aem-certification-exam}
+### AEM-certificeringsexamen {#aem-certification-exam}
 
-Zorg ervoor dat de aangewezen personen worden geregistreerd om de relevante [&#x200B; certificatieexamens &#x200B;](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) te nemen.
+Zorg ervoor dat de aangewezen personen worden geregistreerd om de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) te nemen.
 
-### AEM gecertificeerd {#aem-certified}
+### AEM Certified {#aem-certified}
 
-Zorg ervoor dat de aangewezen persoon de relevante [&#x200B; certificatieexamens &#x200B;](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) heeft overgegaan.
+Zorg ervoor dat de aangewezen persoon de relevante [ certificatieexamens ](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) heeft overgegaan.
 
-### Technische training AEM {#aem-technical-training}
+### AEM Technical Training {#aem-technical-training}
 
 Zorg voor technische training voor de juiste persoon, bijvoorbeeld ontwikkelaars, architecten, ingenieurs en praktijkmensen.
 
@@ -92,7 +92,7 @@ De routekaart van de Klant is samengesteld uit mijlpalen op hoog niveau en bedri
 
 ### Definitie toepassingsarchitectuur {#application-architecture-definition}
 
-De [&#x200B; toepassingsarchitectuur &#x200B;](/help/managing/best-practices.md#development-preparation) zou het gedrag van de voorgestelde toepassingen duidelijk moeten bepalen.
+De [ toepassingsarchitectuur ](/help/managing/best-practices.md#development-preparation) zou het gedrag van de voorgestelde toepassingen duidelijk moeten bepalen.
 
 Het is gericht op:
 
@@ -107,9 +107,9 @@ Naast standaard Adobe Experience Manager (AEM) onderhoudstaken moet u andere ope
 
 Zorg ervoor dat uw team bestaat uit personeel met de juiste training. Voor projectteams moet de aanbeveling het volgende hebben:
 
-* minstens één AEM gecertificeerde lead Developer
-* ten minste één AEM gecertificeerde architect
-* minstens 75% van uw ontwikkelaars AEM gecertificeerd;
+* minstens één AEM-gecertificeerde lead Developer
+* ten minste één door AEM gecertificeerde architect
+* minstens 75% van uw ontwikkelaars die door AEM zijn gecertificeerd;
 dit maakt het de gecertificeerde ontwikkelaars mogelijk om ondergeschikte ontwikkelaars te begeleiden en zorgt voor kennisuitwisseling en transparantie
 
 ### Architectuurdiagram {#architecture-diagram}
@@ -142,7 +142,7 @@ Automatiescripts en standaard geautomatiseerde gebruiksgevallen:
 
 ### Geautomatiseerde teststrategie {#automated-testing-strategy}
 
-Deze strategie bepaalt een kader voor herbruikbare geautomatiseerde manuscripten, samen met de benadering die door het team van de Verzekering van de Kwaliteit (QA) wordt gepland. Het schetst het algemene plan voor automatiseringstests helpen verzekeren:
+Deze strategie bepaalt een kader voor herbruikbare geautomatiseerde manuscripten, samen met de benadering die door het team van Quality Assurance (QA) wordt gepland. Het schetst het algemene plan voor automatiseringstests helpen verzekeren:
 
 * een hoger rendement van investeringen (ROI)
 * meer testdekking
@@ -355,7 +355,7 @@ Rapporten van de klant aan de Lood van de Kwaliteit tijdens de periode van de Aa
 
 Aanpassingen en/of toegepaste hotfixes moeten worden gedocumenteerd, aangezien zij toekomstige verbeteringen kunnen beïnvloeden:
 
-* AEM kunnen zwaar worden aangepast aan bedrijfsbehoeften. Aanpassingen die gevolgen kunnen hebben voor de upgrade moeten volledig worden gedocumenteerd. Bijvoorbeeld, om het even welke belangrijke veranderingen in het gebruikersinterface (UI) van AEM.
+* AEM kan sterk op maat van bedrijfsbehoeften worden aangepast. Aanpassingen die gevolgen kunnen hebben voor de upgrade moeten volledig worden gedocumenteerd. Voorbeelden zijn belangrijke wijzigingen in de gebruikersinterface (UI) van AEM.
 * Alle updates die vereist zijn voor de huidige oplossing moeten volledig worden gedocumenteerd; deze kunnen het volgende omvatten:
 
    * cumulatieve fixatiepakketten (GFP)
@@ -504,7 +504,7 @@ Resultaten van een haalbaarheidsstudie voor zowel AEM als het ontwerp van de opl
 
 ### Eindcontract {#finalized-contract}
 
-Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op het [&#x200B; Ontwerp van het Contract &#x200B;](#contract-draft).
+Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op het [ Ontwerp van het Contract ](#contract-draft).
 
 ### Functionaliteit van de door belanghebbenden aanvaarde oplossing {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -528,7 +528,7 @@ Een gelukkig weg is een standaardscenario dat geen uitzonderlijke of foutenvoorw
 
 Oorspronkelijke schattingen van:
 
-* de hardware die nodig is voor AEM installatie
+* de hardware die nodig is voor de basisinstallatie van AEM
 * eventuele aanvullende vereisten, gebaseerd op het ontwerp van de oplossing op hoog niveau
 
 ### Hardware is beschikbaar om aan de vereisten te voldoen {#hardware-will-be-available-to-fulfill-requirements}
@@ -602,7 +602,7 @@ Implementatie van rollen en rechten, gebruikers en groepen.
 
 ### Implementatie - Beveiligingsconcept {#implementation-security-concept}
 
-Tenuitvoerlegging van alle veiligheidsmaatregelen, met inbegrip van de AEM wanbetalingen.
+Tenuitvoerlegging van alle veiligheidsmaatregelen, met inbegrip van de standaardwaarden van AEM.
 
 ### Implementatie - Beveiligingssoftware {#implementation-security-software}
 
@@ -625,7 +625,7 @@ Implementatie van de ontworpen workflows.
 Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoering. De Commissie dient te overwegen:
 
 * Bewerkingen
-* Onderhoud
+*  Onderhoud
 * Compatibiliteit
 * Herbruikbaarheid
 * Beveiliging
@@ -633,9 +633,9 @@ Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoeri
 
 Dit concept schetst ook het kader, de bibliotheken, en andere artefacten die in de oplossing worden gebruikt.
 
-### Ondersteuning van Adoben informeren over de Go Live-planning {#inform-adobe-support-about-the-go-live-schedule}
+### Adobe-ondersteuning informeren over Go Live Schedule {#inform-adobe-support-about-the-go-live-schedule}
 
-Neem contact op met de ondersteuning van de Adobe om ervoor te zorgen dat alle ondersteuning die nodig is, tijdens de live verbinding kan worden ingeschakeld.
+Neem contact op met de Adobe-ondersteuning om ervoor te zorgen dat alle ondersteuning die nodig is, tijdens de live verbinding kan worden ingeschakeld.
 
 ### Aanvankelijke ervaringsontwerpen {#initial-experience-designs}
 
@@ -678,9 +678,9 @@ Een overzicht van de instrumenten die in de implementatie worden gebruikt; de in
 * implementatiehulpmiddelen
 * build-gereedschappen
 
-### Lijst van Gebruikers die Toegang tot het Portaal van de Steun van de Adobe vereisen {#list-of-users-that-require-access-to-adobe-support-portal}
+### Lijst met gebruikers die toegang tot Adobe Support Portal vereisen {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Een lijst van alle gebruikers en rollen die toegang tot het Portaal van de Steun van de Adobe vereisen.
+Een lijst met alle gebruikers en rollen die toegang tot het Adobe Support Portal nodig hebben.
 
 De lijst bestaat gewoonlijk uit de Architect van de Oplossing en/of het personeel van IT van de klant.
 
@@ -692,9 +692,9 @@ Een analyse, samen met de resulterende aanbevelingen, die bepalen wat moet worde
 * mate van granulariteit
 * informatie die voor elke activiteit wordt geregistreerd
 
-### Onderhoudstaken (AEM specifiek) getest en ingeschakeld {#maintenance-tasks-aem-specific-tested-and-enabled}
+### Onderhoudstaken (specifiek voor AEM) getest en ingeschakeld {#maintenance-tasks-aem-specific-tested-and-enabled}
 
-Onderhoudstaken zoals: testen en inschakelen AEM
+Onderhoudstaken van AEM testen en inschakelen, zoals:
 
 * samenpersen
 * systeem schoon
@@ -716,9 +716,9 @@ Een volledige beschrijving van de bestaande inhoud, inhoudsarchitectuur en indel
 
 Ook moet worden aanbevolen hoe de inhoud up-to-date (of zo up-to-date mogelijk) moet blijven gedurende de periode tussen migratie en het daadwerkelijke leven van het nieuwe systeem. Dit kan betekenen dat de inhoud wordt vastgezet, dat er twee keer wordt gepubliceerd of dat er een alfakanaal wordt onderhouden.
 
-### Bewaking - CPU {#monitoring-cpu}
+### Monitoring - CPU {#monitoring-cpu}
 
-Bewaking van het gebruik van de CPU van het systeem door de oplossing:
+Controle op het gebruik van het systeem CPU door de oplossing:
 
 * gemiddelde
 * pieken
@@ -783,7 +783,7 @@ Bewaking van de vastgestelde drempelwaarde van de oplossing, samen met de uitvoe
 
 De controleconcepten die op uw oplossing moeten worden toegepast; het omvatten:
 
-* AEM standaardbewaking
+* AEM-standaardbewaking
 * systeembewaking
 * klantspecifieke monitoringvereisten
 
@@ -873,7 +873,7 @@ Dit wordt vaak gebruikt in het Testen van de Erkenning van de Gebruiker (UAT).
 
 De concepttest (POC) wordt afgezet tegen de vereisten om ervoor te zorgen dat beide op elkaar zijn afgestemd.
 
-### Checklist voor Post-implementatie {#post-deployment-checklist}
+### Checklist voor na implementatie {#post-deployment-checklist}
 
 Een controlelijst om de reeks controles en taken te bepalen na elke plaatsing uit te voeren.
 
@@ -883,7 +883,7 @@ Een controlelijst om de reeks controles en taken te bepalen vóór elke plaatsin
 
 ### Productomgeving testen van basislijnprestaties {#production-environment-baseline-performance-tests}
 
-Het is gebruikelijk om een basistest op een standaardinstallatie van AEM in werking te stellen. Dit wordt vervolgens gebruikt als benchmark om de implementatie en hardware te testen.
+Het is gebruikelijk om een basislijntest op een standaardinstallatie van AEM uit te voeren. Dit wordt vervolgens gebruikt als benchmark om de implementatie en hardware te testen.
 
 ### Klaar voor productieomgeving {#production-environment-ready}
 
@@ -903,7 +903,7 @@ Bepaal het communicatie plan voor zowel bedrijfs belanghebbenden als het project
 
 ### Projectinspanningen - definitieve ramingen {#project-efforts-final-estimates}
 
-De [&#x200B; aanvankelijke ramingen &#x200B;](#project-efforts-initial-estimates) waren hoog niveau en gemaakt volgens de vereisten op hoog niveau voor de implementatie.
+De [ aanvankelijke ramingen ](#project-efforts-initial-estimates) waren hoog niveau en gemaakt volgens de vereisten op hoog niveau voor de implementatie.
 
 Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te verstrekken. De ramingen moeten worden verstrekt door elk geschikt projectleider, met inbegrip van projectbeheer, raadpleging, architectuur, tests, en ontwikkeling.
 
@@ -964,11 +964,11 @@ Opmerkingen bij de release maken deel uit van de documentatie voor de release. D
 * opgeloste kwesties
 * bekende problemen in de release
 
-Deze wordt gebruikt met de Runbook om de installatiestappen en -controles voor en na de installatie uit te voeren.
+Deze wordt gebruikt met de Runbook om stappen en controles vóór en na de installatie uit te voeren.
 
 >[!NOTE]
 >
->Voor een voorbeeld, zie [&#x200B; AEM de Nota&#39;s van de Versie &#x200B;](/help/release-notes/release-notes.md).
+>Voor een voorbeeld, zie de [ Nota&#39;s van de Versie van AEM ](/help/release-notes/release-notes.md).
 
 ### Release die wordt uitgevoerd op productieomgeving {#release-running-on-production-environment}
 
@@ -988,9 +988,9 @@ Gegevens worden nooit in een teerbestand overschreven, het schijfgebruik neemt t
 
 Om de steeds groter wordende omvang van de opslagplaats tegen te gaan, wordt een optimalisatiestrategie opgezet om verouderde gegevens te verwijderen.
 
-### Verzoek om het Sectie van het Project van de Opstelling in het Portaal van de Steun van de Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
+### Verzoek om het Sectie van het Project van de Opstelling in het Portaal van de Steun van Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
 
-Het officiële verzoek om opstelling uw project in het Portaal van de Steun van de Adobe.
+Het officiële verzoek om uw project op te zetten in het Adobe Support Portal.
 
 ### Documentatie over vereisten {#requirements-documentation}
 
@@ -1037,9 +1037,9 @@ Herziening van het concept Rollen en Rechten om ervoor te zorgen dat het aan het
 
 Een gedetailleerde specificatie die op het Concept van Roles en van Rechten wordt gebaseerd.
 
-### Beveiligingsarchitectuur Recommendations {#security-architecture-recommendations}
+### Aanbevelingen voor beveiligingsarchitectuur {#security-architecture-recommendations}
 
-Recommendations had betrekking op de beveiliging van de software- en hardwarearchitectuur.
+Aanbevelingen met betrekking tot beveiliging voor de software- en hardwarearchitectuur.
 
 ### Richtlijnen voor codering op basis van beveiliging {#security-based-coding-guidelines}
 
@@ -1104,7 +1104,7 @@ De Raad van het Overzicht van de Oplossing bestaat uit klantenbelanghebbenden.
 
 De raad van bestuur houdt regelmatig vergaderingen om de thans geldende vereisten en relevante specificaties doorlopend te evalueren. Het doel is te zorgen voor de afstemming op de definitie en criteria van succes en tevens een bijdrage te leveren aan de ontwikkeling van de eisen.
 
-### Oplossing-uitvoering {#solution-runbook}
+### Oplossing Runbook {#solution-runbook}
 
 Installatie-instructies voor de oplossing, samen met elementaire operationele taken die bij de installatie moeten worden uitgevoerd.
 
@@ -1116,11 +1116,11 @@ Het kan ook als een contractuele mijlpaal dienen.
 
 ### Speciaal concept voor functionaliteit {#special-functionality-concept}
 
-Het initiële concept voor elke speciale functionaliteit die buiten het normale bereik van ontwikkeling op het AEM wordt beschouwd.
+Het initiële concept voor elke speciale functionaliteit die buiten het normale bereik van ontwikkeling op het AEM-platform wordt beschouwd.
 
 ### Speciale functionele specificatie {#special-functionality-specification}
 
-Bijzonderheden over alle speciale functies die buiten het normale ontwikkelingsterrein van het AEM worden beschouwd.
+Bijzonderheden over alle speciale functies die buiten het normale ontwikkelingsterrein van het AEM-platform worden beschouwd.
 
 ### Richtlijnen voor specificaties {#specification-guidelines}
 
@@ -1130,7 +1130,7 @@ Om het even welke richtlijnen van de klant over hoe de specificatie zou moeten w
 
 Er moet een duidelijk proces voor de aftekening van specificaties door de klant worden ingevoerd. Dit proces garandeert duidelijkheid en nauwkeurigheid van de reikwijdte van de eisen.
 
-### Personeel geselecteerd voor training AEM beheerder {#staff-selected-for-aem-administrator-training}
+### Personeel geselecteerd voor AEM Administrator Training {#staff-selected-for-aem-administrator-training}
 
 Interne staf die training nodig heeft om de oplossing te kunnen beheren.
 
@@ -1175,9 +1175,9 @@ Deze worden gebruikt om ervoor te zorgen dat aan de criteria voor succes wordt v
 
 Een deel van de verantwoordelijkheid van de Quality Lead is ervoor te zorgen dat er bronnen beschikbaar zijn om gebruikers tijdens het testen te ondersteunen. Bijvoorbeeld om de gebruiker te helpen bij het testen, bij het melden van problemen en bij het valideren van de problemen in de testomgeving.
 
-### Ondersteuningsprocessen en toegang tot ondersteuningsportaal voor Adobe {#support-processes-and-access-to-adobe-support-portal}
+### Ondersteuningsprocessen en toegang tot Adobe Support Portal {#support-processes-and-access-to-adobe-support-portal}
 
-Toegang tot het ondersteuningsportaal voor Adoben is van cruciaal belang voor het indienen van tickets over eventuele productgerelateerde problemen die zich tijdens de implementatie kunnen voordoen.
+Toegang tot het Adobe Support Portal is van cruciaal belang voor het verzenden van tickets over eventuele productgerelateerde problemen die zich tijdens de implementatie kunnen voordoen.
 
 De toegang zou aan zeer belangrijke leden van het team moeten worden toegewezen.
 
@@ -1287,7 +1287,7 @@ Het het Testen Concept is het overzicht op hoog niveau van het testen voor het p
 
 ### Testplannen {#testing-plans}
 
-Deze plannen schetsen meer in detail de uitvoering van tests voor elke fase van ontwikkeling en zijn gebaseerd op de [&#x200B; Teststrategie &#x200B;](#testing-strategy).
+Deze plannen schetsen meer in detail de uitvoering van tests voor elke fase van ontwikkeling en zijn gebaseerd op de [ Teststrategie ](#testing-strategy).
 
 ### Testbereik {#testing-scope}
 
@@ -1360,7 +1360,7 @@ De bevoegde persoon dient te bevestigen dat hij/zij volledig begrijpt:
 
 ### Concept voor URL-afhandeling {#url-handling-concept}
 
-Uw concept voor URL-afhandeling moet betrekking hebben op AEM specifieke URL-functies, zoals:
+Uw concept voor URL-afhandeling moet betrekking hebben op AEM-specifieke URL-functies, zoals:
 
 * vanity-URL&#39;s
 * koppeling extern maken
@@ -1412,7 +1412,7 @@ De specificatie van elke workflow moet (ten minste) het volgende omvatten:
 
 ### Workflows-concept {#workflows-concept}
 
-Met workflows kunt u AEM activiteiten automatiseren. Het concept Workflows bevat contouren:
+Met workflows kunt u AEM-activiteiten automatiseren. Het concept Workflows bevat contouren:
 
 * de processen die automatisering vereisen
-* de diensten en rollen in AEM die zullen worden beïnvloed
+* de betrokken diensten en rollen in AEM

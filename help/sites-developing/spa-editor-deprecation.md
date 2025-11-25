@@ -2,9 +2,9 @@
 title: Veroudering van SPA-editor
 description: Alhoewel de Redacteur van het KUUROORD door Adobe wordt gesteund, leer wat zijn veroudering aan uw project betekent en welke opties u voor toekomstige projecten hebt.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Alhoewel de Redacteur van het KUUROORD door Adobe wordt gesteund, leer wat zijn 
 
 ## Samenvatting {#summary}
 
-Adobe verwierp de Redacteur van het KUUROORD met [&#x200B; versie 6.5.23 van AEM 6.5, &#x200B;](/help/release-notes/release-notes.md#spa-editor) betekenend dat geen verdere verhogingen of updates aan zijn SDKs zullen worden aangebracht. Adobe moedigt u aan om de [&#x200B; Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor om het even welke nieuwe projecten zonder kop te gebruiken om uit de recentste innovaties van AEM voordeel te halen.
+Adobe verwierp de Redacteur van het KUUROORD met [ versie 6.5.23 van AEM 6.5, ](/help/release-notes/release-notes.md#spa-editor) betekenend dat geen verdere verhogingen of updates aan zijn SDKs zullen worden aangebracht. Adobe moedigt u aan om de [ Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor om het even welke nieuwe projecten zonder kop te gebruiken om uit de recentste innovaties van AEM voordeel te halen.
 
 ## Details van de depressie {#details}
 
@@ -29,21 +29,21 @@ De veroudering van de Redacteur van het KUUROORD **betekent geen directe verwijd
 
 De veroudering houdt in dat de volgende SDK&#39;s nu in de vastzetbewerking zijn.
 
-* [&#x200B; Archetype van het Project van AEM &#x200B;](https://github.com/adobe/aem-project-archetype/)
-* [&#x200B; Kern van het Project van AEM SPA SPA &#x200B;](https://github.com/adobe/aem-spa-project-core)
-* [&#x200B; AEM SPA ModelManager van de Pagina &#x200B;](https://github.com/adobe/aem-spa-page-model-manager)
-* [&#x200B; AEM SPA Component Mapping &#x200B;](https://github.com/adobe/aem-spa-component-mapping)
-* [&#x200B; AEM SPA React Editable Componenten &#x200B;](https://github.com/adobe/aem-react-editable-components)
-   * [&#x200B; AEM React de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components)
-   * [&#x200B; AEM React de Basis van de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [&#x200B; AEM React de Componenten SPA van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [&#x200B; AEM React de Voorbeelden van de Componenten van de Kern &#x200B;](https://github.com/adobe/aem-react-core-wcm-components-examples)
-* [&#x200B; AEM SPA Angular Bewerkbare Componenten &#x200B;](https://github.com/adobe/aem-angular-editable-components)
-   * [&#x200B; de Componenten van de Kern van AEM Angular &#x200B;](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [&#x200B; AEM Angular Core Components Base &#x200B;](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [&#x200B; AEM Angular Core Components SPA &#x200B;](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [&#x200B; AEM Angular Core Components Voorbeelden &#x200B;](https://github.com/adobe/aem-angular-core-wcm-components-examples)
-* [&#x200B; de Bewerkbare Componenten van de Waarde van AEM SPA &#x200B;](https://github.com/mavicellc/aem-vue-editable-components)
+* [ Archetype van het Project van AEM ](https://github.com/adobe/aem-project-archetype/)
+* [ Kern van het Project van AEM SPA SPA ](https://github.com/adobe/aem-spa-project-core)
+* [ AEM SPA ModelManager van de Pagina ](https://github.com/adobe/aem-spa-page-model-manager)
+* [ AEM SPA Component Mapping ](https://github.com/adobe/aem-spa-component-mapping)
+* [ AEM SPA React Editable Componenten ](https://github.com/adobe/aem-react-editable-components)
+   * [ AEM React de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components)
+   * [ AEM React de Basis van de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-base)
+   * [ AEM React de Componenten SPA van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-spa)
+   * [ AEM React de Voorbeelden van de Componenten van de Kern ](https://github.com/adobe/aem-react-core-wcm-components-examples)
+* [ AEM SPA Angular Bewerkbare Componenten ](https://github.com/adobe/aem-angular-editable-components)
+   * [ de Componenten van de Kern van AEM Angular ](https://github.com/adobe/aem-angular-core-wcm-components)
+   * [ AEM Angular Core Components Base ](https://github.com/adobe/aem-angular-core-wcm-components-base)
+   * [ AEM Angular Core Components SPA ](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+   * [ AEM Angular Core Components Voorbeelden ](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+* [ de Bewerkbare Componenten van de Waarde van AEM SPA ](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## Alternatieven voor de redacteur van het KUUROORD {#alternatives}
 
@@ -51,7 +51,7 @@ De meest geschikte vervanging voor de Redacteur van het KUUROORD hangt van uw pr
 
 * **[de Universele Redacteur](/help/sites-developing/universal-editor/introduction.md)** is de beste directe vervanging voor de Redacteur van het KUUROORD.
    * De Universele Redacteur is ook een visuele redacteur en werd ontworpen specifiek voor losgemaakte implementaties, die alle ervaring van Adobe van de Redacteur van het KUUROORD opnemen.
-   * De Universele Redacteur is ook [&#x200B; vrijgegeven voor AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) en steunt daarom AMS en gebruiksgevallen op prem naast de Diensten van de Wolk.
+   * De Universele Redacteur is ook [ vrijgegeven voor AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) en steunt daarom AMS en gebruiksgevallen op prem naast de Diensten van de Wolk.
 * **[de Redacteur van het Fragment van de Inhoud](/help/sites-developing/universal-editor/introduction.md)** is een alternatief voor hen die een op vorm-gebaseerde redacteur verkiezen.
    * De Inhoudsfragmenteditor is het meest geschikt wanneer de inhoud is gestructureerd als Inhoudsfragmenten en niet als pagina&#39;s.
 
@@ -65,7 +65,7 @@ De Universele Redacteur biedt vele voordelen aan, die migratie tot het een grote
 * **Toekomst-Bewijs:** roadmap van AEM geeft voorrang aan de Universele Redacteur als visuele redacteur. Als u het aanneemt, hebt u toegang tot de nieuwste innovaties en verbeteringen.
 * **Eenvoudigere Integratie:** Geen AEM-specifieke SDK wordt vereist om de Universele Redacteur te gebruiken, verminderend technologiestapelslot-binnen.
 * **breng Uw Eigen Toepassing:** De Universele Redacteur steunt om het even welk Webkader of architectuur, die goedkeuring toestaat zonder het vereisen van complex refactoring.
-* **Uitbreidbaarheid:** de Universele Redacteur profiteert van een robuust [&#x200B; uitbreidingskader, &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) met inbegrip van integratie met GenAI, Workfront, en meer.
+* **Uitbreidbaarheid:** de Universele Redacteur profiteert van een robuust [ uitbreidingskader, ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) met inbegrip van integratie met GenAI, Workfront, en meer.
 
 Er is geen directe migratieweg van de Redacteur van het KUUROORD aan de Universele Redacteur. Dit is te wijten aan fundamentele verschillen in de twee technologieën.
 
@@ -86,7 +86,7 @@ Houd in mening dat alhoewel er geen directe implementatie van bepaalde eigenscha
 
 De Universal Editor biedt veel meer vrijheid aan implementatoren van webapps, zoals in dit diagram wordt geïllustreerd.
 
-![&#x200B; Universele Vergeleek de architecturen van de Redacteur en van het KUUROORD &#x200B;](assets/spa-editor-vs-ue.png)
+![ Universele Vergeleek de architecturen van de Redacteur en van het KUUROORD ](assets/spa-editor-vs-ue.png)
 
 |  | SPA-editor | Universele editor |
 |---|---|---|

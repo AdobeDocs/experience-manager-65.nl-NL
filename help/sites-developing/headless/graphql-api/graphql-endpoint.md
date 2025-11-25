@@ -4,8 +4,8 @@ description: Leer hoe u GraphQL-eindpunten in Adobe Experience Manager beheert v
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -24,10 +24,10 @@ Er zijn twee soorten eindpunten in AEM:
 
 * Algemeen
    * Beschikbaar voor gebruik door alle sites.
-   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [&#x200B; Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
+   * Dit eindpunt kan alle Modellen van het Fragment van de Inhoud van alle configuraties van Plaatsen gebruiken (die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) worden bepaald).
    * Als er om het even welke Modellen van het Fragment van de Inhoud zijn die onder de configuraties van Plaatsen zouden moeten worden gedeeld, dan zouden deze onder de globale configuraties van Plaatsen moeten worden gecreeerd.
 * Siteconfiguraties:
-   * Komt overeen met een configuratie van Plaatsen, zoals die in [&#x200B; Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
+   * Komt overeen met een configuratie van Plaatsen, zoals die in [ Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) wordt bepaald.
    * Specifiek voor een opgegeven site/project.
    * Een configuratie-specifiek eindpunt van Plaatsen zal de Modellen van het Fragment van de Inhoud van die specifieke configuratie van Plaatsen samen met die van de globale configuratie van Plaatsen gebruiken.
 
@@ -39,7 +39,7 @@ Er zijn twee soorten eindpunten in AEM:
 >
 >De inhoudauteur zou dit scenario moeten controleren; bijvoorbeeld, kan het nuttig zijn om het plaatsen van gedeelde Modellen van het Fragment van de Inhoud onder de Globale configuratie van Plaatsen te overwegen.
 
-Het pad naar de gegevensopslagruimte van de GraphQL voor AEM globale eindpunt is:
+Het globale eindpunt van de GraphQL for AEM is:
 
 `/content/cq:graphql/global/endpoint`
 
@@ -50,15 +50,15 @@ Voor welke toepassing uw toepassing het volgende pad in de aanvraag-URL kan gebr
 Om een eindpunt voor GraphQL voor AEM toe te laten moet u:
 
 * [GraphQL-eindpunt inschakelen](#enabling-graphql-endpoint)
-* [Publish your GraphQL Endpoint](#publishing-graphql-endpoint)
+* [GraphQL-eindpunt publiceren](#publishing-graphql-endpoint)
 
 ## GraphQL Endpoint inschakelen {#enabling-graphql-endpoint}
 
-Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [&#x200B; de Fragmenten van de Inhoud - Browser van de Configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Om een Eindpunt van GraphQL toe te laten moet u eerst een aangewezen configuratie hebben. Zie [ de Fragmenten van de Inhoud - Browser van de Configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Als het [&#x200B; gebruik van de modellen van het inhoudsfragment niet &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
+>Als het [ gebruik van de modellen van het inhoudsfragment niet ](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie zal niet beschikbaar zijn.
 
 Om het overeenkomstige eindpunt toe te laten:
 
@@ -85,7 +85,7 @@ Om het overeenkomstige eindpunt toe te laten:
 
 ## GraphQL Endpoint publiceren {#publishing-graphql-endpoint}
 
-Selecteer het nieuwe eindpunt en **Publish** om het volledig beschikbaar te maken in alle milieu&#39;s.
+Selecteer het nieuwe eindpunt en **publiceer** om het volledig beschikbaar te maken in alle milieu&#39;s.
 
 >[!CAUTION]
 >

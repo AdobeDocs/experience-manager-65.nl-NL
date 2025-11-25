@@ -8,10 +8,10 @@ content-type: reference
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Er zijn controlelijsten voor elke persoon (rol) betrokken bij uw project. Deze d
 
 ## Downloaden {#download}
 
-Controlelijst voor beste praktijken voor AEM project v2
+Checklist voor best practices voor AEM-projecten v2
 
 [Bestand ophalen](assets/aem_project_bp_checklistv2-65.xlsx)
 
@@ -36,10 +36,10 @@ Het werkblad bevat de volgende werkbladen:
    * Verstrekt instructies op hoe te om spreadsheet, samen met verklaringen van de gebruikte mechanismen te gebruiken.
 * **[Hartslag van het Project](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[Status door Rol](/help/managing/best-practices.md#status-by-role)**
-* Een reeks controlelijsten, volgens [&#x200B; Persona &#x200B;](/help/managing/best-practices.md#persona), [&#x200B; Fase en Mijlsteen &#x200B;](/help/managing/best-practices.md#phases-and-milestones)
+* Een reeks controlelijsten, volgens [ Persona ](/help/managing/best-practices.md#persona), [ Fase en Mijlsteen ](/help/managing/best-practices.md#phases-and-milestones)
 * **Verklarende woordenlijst**
    * De verklarende woordenlijst maakt een lijst van details van alle Geleverbare documenten van de Checklist van het Project.
-   * De [&#x200B; Verklarende woordenlijst &#x200B;](/help/managing/best-practices-glossary.md) is ook beschikbaar als deel van de documentatie.
+   * De [ Verklarende woordenlijst ](/help/managing/best-practices-glossary.md) is ook beschikbaar als deel van de documentatie.
 * **[Persona Definities](/help/managing/best-practices.md#persona)**
 
 ## Controlelijsten gebruiken {#using-the-checklists}
@@ -51,6 +51,6 @@ Als u een project van hoge kwaliteit wilt uitvoeren, moet u alle items in de che
 
    >[!NOTE]
    >
-   >Er is geen directe 1:1-relatie tussen de afzonderlijke vereiste documenten en te leveren items.
+   >Er is geen direct 1 :1 verband tussen de individuele vereiste documenten en te leveren punten.
 
 1. Gebaseerd op de statussen van de **[Vereiste Documenten](/help/managing/best-practices.md#required-documents)** en **[levert](/help/managing/best-practices.md#deliverables)**, worden de aantekenaars **[Heartmaatslag van het Project](/help/managing/best-practices.md#project-heartbeat-dashboard)** en **[Status door Rol](/help/managing/best-practices.md#status-by-role)** automatisch bijgewerkt om u een bijgewerkte aanwijzing van de vooruitgang en de gezondheid van uw project te geven.

@@ -29,14 +29,14 @@ ht-degree: 0%
 | Versie | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Datum | 26 november 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL downloaden | [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL downloaden | [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [ installeer dit Pak van de Dienst ](#install) op [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [&#x200B; installeer dit Pak van de Dienst &#x200B;](#install) op [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 * De menu&#39;s van de Kaartweergave respecteren verhoogde tekstspatiëring. Het item Meer handelingen wordt groter en er worden geen afkortingen meer toegepast op labels, waaronder Snel publiceren. Gebruikers die letters, woorden of regelafstand opheffen, behouden volledige labels en toegang tot het toetsenbord. (SITES-24941)
 * De rol &quot;presentatie&quot; die de tabel op de startpagina Sites in de toegankelijkheidsstructuur had verborgen, is verwijderd. De tabel wordt opnieuw correct gelezen. NVDA en JAWS detecteren de tabel, herkennen kopteksten en kondigen koptekstrelaties aan tijdens rij- en kolomnavigatie. (SITES-24942)
 * Het sorteren van feedback in de lijstweergave is expliciet en consistent. Na een sortering stelt de koptekst de volgorde beschikbaar via `aria-sort` . De wijziging wordt aangekondigd, terwijl niet-gesorteerde koppen niet langer een status claimen, waardoor gebruikers van schermlezers gemakkelijker kunnen bijhouden welke kolom de sortering bepaalt. (SITES-24943)
-* De Edit kopbal van de Lay-out stelt niet meer een niet-werkende **** knoop uit. Het besturingselement fungeert nu als een statisch statuslabel en blijft buiten de tabvolgorde zodat gebruikers van het toetsenbord geen toetsaanslag verspillen. Het gebruik **selecteert een andere wijze** om wijzen te veranderen, met duidelijk scherm-lezer terugkoppelt. (SITES-24950)
+* De Edit kopbal van de Lay-out stelt niet meer een niet-werkende **&#x200B;**&#x200B;knoop uit. Het besturingselement fungeert nu als een statisch statuslabel en blijft buiten de tabvolgorde zodat gebruikers van het toetsenbord geen toetsaanslag verspillen. Het gebruik **selecteert een andere wijze** om wijzen te veranderen, met duidelijk scherm-lezer terugkoppelt. (SITES-24950)
 * Op de emulatorwerkbalk worden standaard volledige apparaatnamen weergegeven. Het label wordt niet meer afgebroken tijdens het laden, zodat gebruikers apparaten kunnen lezen en selecteren zonder te raden. De tekst wordt op zuivere wijze geschaald over zoomniveaus en smalle breedten. (SITES-24952)
 * De Emulatorwerkbalk past bij kleine viewports. Bij 320 pixels wordt de weergave zonder clipping weergegeven in de lijst met apparaten. Gebruikers kunnen dus Galaxy S7 en nieuwere modellen selecteren. De lay-out wordt geschaald en omlopen om horizontaal schuiven te voorkomen, zelfs bij een zoompercentage van 400%. (SITES-24953)
 * Schermlezers kondigen het geselecteerde apparaat en de bijbehorende metingen aan in de emulator. De NVDA houdt op met het lezen van de liniaalstroom. De apparaatknop gebruikt een bijgevoegde beschrijving voor de knopinfo-tekst, die ruis en navigatie door hulplijnen vermindert. (SITES-24955)
@@ -150,11 +150,11 @@ ht-degree: 0%
 * De schuifregelaar op de werkbalk Demografie blijft nu actief wanneer auteurs de waarde wijzigen met de pijltoetsen. De focus springt niet meer naar de knop Illustratie, dus gebruikers van het toetsenbord passen de waarde voortdurend aan en schermlezers geven elke wijziging aan. (SITES-25324)
 * Zoek in Assets nu Helder opnieuw plaatsen bij 320 px (ongeveer 400% zoomen). Met het modale model blijven koppen, velden en handelingen leesbaar en niet-overlappend, zodat ontwerpers kunnen zoeken zonder horizontaal schuiven. (SITES-25330)
 * Het deelvenster Assets in de editor volgt een logische focusvolgorde. Toetsenbordgebruikers gaan met de Tab-toets over elke miniatuur en hebben toegang tot de afsluitbesturingselementen van het deelvenster. De wijziging verwijdert skips en verbetert de naleving van WCAG 2.4.3. (SITES-25360)
-* AEM werkt de **Lijsten** en **3} knopen van Paragraaf {in de rijke tekstredacteur van het Taser modale bij om hun uitgevouwen en doen ineenstorten staat bloot te stellen.** Met de knoppen schakelt u nu `aria-expanded` in en wordt de statuswijziging voor schermlezers aangekondigd. Auteurs krijgen duidelijke feedback en raden niet voordat ze de opmaakmenu&#39;s openen of sluiten. (SITES-25365)
+* AEM werkt de **Lijsten** en **3&rbrace; knopen van Paragraaf &lbrace;in de rijke tekstredacteur van het Taser modale bij om hun uitgevouwen en doen ineenstorten staat bloot te stellen.** Met de knoppen schakelt u nu `aria-expanded` in en wordt de statuswijziging voor schermlezers aangekondigd. Auteurs krijgen duidelijke feedback en raden niet voordat ze de opmaakmenu&#39;s openen of sluiten. (SITES-25365)
 * AEM kondigt de laadstatus aan in het modaal Teaser. Het modaal stelt nu een live statusbericht bloot terwijl de inhoud wordt geladen. NVDA en JAWS spreken dus &quot;Laden, een ogenblik geduld.&quot; Auteurs moeten duidelijke feedback ontvangen en geen interactie met het dialoogvenster krijgen voordat het klaar is. (SITES-25366)
 * Verbetert statusoverseinen op het lusje van Activa van de de selectiedialoogdoos van de Verbinding. Wanneer een fout voorkomt, injecteert de component een leesbare statusupdate en houdt toetsenbordnadruk stabiel, latend NVDA/JAWS gebruikers onmiddellijk op de hoogte stellen. (SITES-25368)
 * Het gedrag van de gebruikersinterface in het deelvenster Notitie voor zeer smalle viewports is gecorrigeerd. Bij 320 px, vulden de titel en de Add controle eerder; de toolbar stroomt nu opnieuw en bewaart duidelijke scheiding tussen elementen. Auteurs kunnen de besturingselementen zonder verlies van informatie of functie gebruiken. (SITES-25376)
-* Vaste een het lopen foutenstaat in de **2} Verbindingen &amp; Acties** tabel van de de dialoogdoos van de Taser **{.** Nadat de auteurs **Call to action** en correcte lege of ongeldige gebieden toelaten, ontruimt het lusje zijn fout het stileren en pictogram en verwijdert `aria-invalid`. Schermlezers melden niet langer een fout wanneer de velden zijn gevalideerd. (SITES-25527)
+* Vaste een het lopen foutenstaat in de **2&rbrace; Verbindingen &amp; Acties** tabel van de de dialoogdoos van de Taser **&lbrace;.** Nadat de auteurs **Call to action** en correcte lege of ongeldige gebieden toelaten, ontruimt het lusje zijn fout het stileren en pictogram en verwijdert `aria-invalid`. Schermlezers melden niet langer een fout wanneer de velden zijn gevalideerd. (SITES-25527)
 * Foutafhandeling in Sites Admin-formulieren voldoet nu aan toegankelijkheidsverwachtingen. Wanneer validatie mislukt, wordt de fout direct weergegeven op de pagina, wordt de focus verplaatst naar een bruikbaar berichtdoel en wordt de tekst voor schermlezers beschikbaar gemaakt, zoals JAWS. (SITES-27138)
 * Als u een map in Sites maakt, wordt nu een duidelijk bevestigingsprogramma weergegeven. JAWS kondigt het bericht via het live gebied aan, zodat auteurs direct toegankelijke feedback ontvangen na de actie. (SITES-27141)
 * Probleem verholpen waarbij afbeeldingen in ontwerpdialoogvensters zonder alternatieve tekst werden weergegeven. Het dialoogvenster bevat nu waar nodig beschrijvende alt-tekst en lege alt voor louter visuele elementen, waarmee het gedrag voor JAWS en andere schermlezers wordt hersteld. (SITES-27153)
@@ -435,8 +435,8 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.24.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip).
+* [!DNL Experience Manager] 6.5.24.0 requires [!DNL Experience Manager] 6.5. Zie [&#x200B; verbeteringsdocumentatie &#x200B;](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#x200B; &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.24.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -451,13 +451,13 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 
 1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van de [!DNL Experience Manager] -instantie.
 
-1. Download het Sack van de Dienst van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download het Sack van de Dienst van [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
+1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md).
 
 1. Selecteer het pakket en selecteer vervolgens **[!UICONTROL Install]** .
 
-1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [ de Opslag van Gegevens van Amazon S3 ](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [&#x200B; de Opslag van Gegevens van Amazon S3 &#x200B;](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
 >[!NOTE]
 >
@@ -468,7 +468,7 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Manager] 6.5.24.0 te installeren. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Plaats het pakket in de map `../crx-quickstart/install` wanneer de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
-* Gebruik [ HTTP API van de Manager van het Pakket ](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
+* Gebruik [&#x200B; HTTP API van de Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
 
 >[!NOTE]
 >
@@ -476,7 +476,7 @@ Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Man
 
 **bevestigt de installatie**
 
-Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
+Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
 
 1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks weergegeven `Adobe Experience Manager (6.5.24.0)` onder [!UICONTROL Installed Products] . <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -486,15 +486,15 @@ Om de platforms te kennen die om met deze versie worden verklaard te werken, zie
 
 ### Service Pack installeren voor [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [ de installatieinstructies van het Pak van de Dienst van Experience Manager Forms ](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [&#x200B; de installatieinstructies van het Pak van de Dienst van Experience Manager Forms &#x200B;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
-De klanten die GraphQL gebruiken moeten het [ Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
+De klanten die GraphQL gebruiken moeten het [&#x200B; Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
 
 Zo kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
@@ -506,9 +506,9 @@ Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-
 
 ### UberJar{#uber-jar}
 
-UberJar voor [!DNL Experience Manager] 6.5.24.0 is beschikbaar in de [ Gemaakt Centrale bewaarplaats ](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar voor [!DNL Experience Manager] 6.5.24.0 is beschikbaar in de [&#x200B; Gemaakt Centrale bewaarplaats &#x200B;](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
-Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+Om UberJar in een Geweven project te gebruiken, zie [&#x200B; hoe te om UberJar &#x200B;](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
   <dependency>
@@ -527,16 +527,16 @@ Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/
 
 ## Verouderde en verwijderde functies{#removed-deprecated-features}
 
-Zie [ Vervangen en verwijderde eigenschappen ](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
+Zie [&#x200B; Vervangen en verwijderde eigenschappen &#x200B;](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
 
 ### SPA-editor {#spa-editor}
 
-[ de Redacteur van het KUUROORD ](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.24 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
+[&#x200B; de Redacteur van het KUUROORD &#x200B;](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.24 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
 
 De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 
-* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
-* [ de Redacteur van het Fragment van de Inhoud ](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
+* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
+* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
 
 ## Bekende problemen{#known-issues}
 
@@ -635,7 +635,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6524}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6524}
 
@@ -645,7 +645,7 @@ Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor e
 
 #### Problemen met hotfixes beschikbaar {#aem-forms-issues-with-hotfixes}
 
-Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [ downloaden en Hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
+Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [&#x200B; downloaden en Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
 
 * **FORMS-20203**: Wanneer een gebruiker het kader van Struts van versie 2.5.x aan 6.x bevordert, ontbreekt UI van het Beleid in AEM Forms om alle configuraties, zoals de optie te tonen om een watermerk toe te voegen.
 
@@ -656,7 +656,7 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
 * **FORMS-14521**: Als een gebruiker probeert om een ontwerp brief met opgeslagen gegevens van XML voor te vertonen, wordt het geplakt in `Loading` staat voor sommige specifieke brieven.
 
-* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Deze verbetering levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP24 waren. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
+* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Deze verbetering levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP24 waren. De steun werd toegevoegd via a [&#x200B; Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
 
 #### Andere bekende problemen {#aem-forms-other-known-issues}
 
@@ -700,18 +700,18 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
 De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten van de Inhoud inbegrepen in deze [!DNL Experience Manager] 6.5 versie van het Service Pack:
 
-* [ Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [ Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [&#x200B; Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [&#x200B; Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
-* [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
-* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
+* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
->* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [&#x200B; Abonneren aan de updates van het de prioritaire product van Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html)

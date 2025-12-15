@@ -16,11 +16,11 @@ ht-degree: 6%
 
 Leer hoe u de Assets-console gebruikt om uw AEM Content Fragments, de basis van uw inhoud zonder kop, te beheren.
 
-Na het bepalen van uw [ Modellen van het Fragment van de Inhoud ](#creating-a-content-model) kunt u deze gebruiken om [ uw Fragmenten van de Inhoud ](#creating-a-content-fragment) tot stand te brengen.
+Na het bepalen van uw [&#x200B; Modellen van het Fragment van de Inhoud &#x200B;](#creating-a-content-model) kunt u deze gebruiken om [&#x200B; uw Fragmenten van de Inhoud &#x200B;](#creating-a-content-fragment) tot stand te brengen.
 
-De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) verstrekt diverse [ wijzen ](#modes-in-the-content-fragment-editor) om u toe te laten:
+De [&#x200B; Redacteur van het Fragment van de Inhoud &#x200B;](#opening-the-fragment-editor) verstrekt diverse [&#x200B; wijzen &#x200B;](#modes-in-the-content-fragment-editor) om u toe te laten:
 
-* [ geeft de inhoud ](#editing-the-content-of-your-fragment) uit en [ leidt Variaties ](#creating-and-managing-variations-within-your-fragment)
+* [&#x200B; geeft de inhoud &#x200B;](#editing-the-content-of-your-fragment) uit en [&#x200B; leidt Variaties &#x200B;](#creating-and-managing-variations-within-your-fragment)
 * [Uw fragment notities aanbrengen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inhoud koppelen aan uw fragment](#associating-content-with-your-fragment)
 * [De metagegevens configureren](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -32,12 +32,12 @@ De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) ve
 >
 >Inhoudsfragmenten kunnen worden gebruikt:
 >
->* wanneer het ontwerpen van pagina&#39;s; zie [ het Authoring van de Pagina met de Fragmenten van de Inhoud ](/help/sites-authoring/content-fragments.md).
->* voor [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+>* wanneer het ontwerpen van pagina&#39;s; zie [&#x200B; het Authoring van de Pagina met de Fragmenten van de Inhoud &#x200B;](/help/sites-authoring/content-fragments.md).
+>* voor [&#x200B; Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL &#x200B;](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
 >
->Ben me bewust van de [ Beste praktijken ](/help/assets/content-fragments/content-fragments.md#best-practices) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
+>Ben me bewust van de [&#x200B; Beste praktijken &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ De [ Redacteur van het Fragment van de Inhoud ](#opening-the-fragment-editor) ve
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
-[ de fragmentmodellen van de Inhoud ](/help/assets/content-fragments/content-fragments-models.md) kunnen worden toegelaten en worden gecreeerd, voorafgaand aan het creëren van inhoudsfragmenten met gestructureerde inhoud.
+[&#x200B; de fragmentmodellen van de Inhoud &#x200B;](/help/assets/content-fragments/content-fragments-models.md) kunnen worden toegelaten en worden gecreeerd, voorafgaand aan het creëren van inhoudsfragmenten met gestructureerde inhoud.
 
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
@@ -57,13 +57,13 @@ De methode voor het maken van een inhoudsfragment is:
 1. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 1. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
-   * [ Model ](/help/assets/content-fragments/content-fragments-models.md) - gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld, het **Adventure** model
+   * [&#x200B; Model &#x200B;](/help/assets/content-fragments/content-fragments-models.md) - gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld, het **Adventure** model
 
       * Alle beschikbare modellen worden weergegeven.
 
    Na selectie, gebruik **daarna** te werk te gaan.
 
-   ![ fragmentbasis ](assets/cfm-managing-01.png)
+   ![&#x200B; fragmentbasis &#x200B;](assets/cfm-managing-01.png)
 
 1. Geef in de stap **Eigenschappen** het volgende op:
 
@@ -97,9 +97,9 @@ De methode voor het maken van een inhoudsfragment is:
 In de **Assets** console is een waaier van acties beschikbaar voor uw inhoudsfragmenten, of:
 
 * Vanuit de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
-* Als [ snelle acties ](/help/sites-authoring/basic-handling.md#quick-actions); een ondergroep acties beschikbaar voor de individuele fragmentkaarten.
+* Als [&#x200B; snelle acties &#x200B;](/help/sites-authoring/basic-handling.md#quick-actions); een ondergroep acties beschikbaar voor de individuele fragmentkaarten.
 
-![ acties ](assets/cfm-managing-02.png)
+![&#x200B; acties &#x200B;](assets/cfm-managing-02.png)
 
 Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
@@ -115,7 +115,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 * **geeft** uit
 
-   * Laat u [ het fragment voor het uitgeven van inhoud ](/help/assets/content-fragments/content-fragments-variations.md) samen met zijn elementen, variaties, bijbehorende inhoud en meta-gegevens openen.
+   * Laat u [&#x200B; het fragment voor het uitgeven van inhoud &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) samen met zijn elementen, variaties, bijbehorende inhoud en meta-gegevens openen.
 
 * **beheert Markeringen**
 * **aan Inzameling**
@@ -127,7 +127,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze zijn [ standaardacties voor Assets ](/help/assets/manage-assets.md) en/of [ Desktop app van AEM ](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Veel van deze zijn [&#x200B; standaardacties voor Assets &#x200B;](/help/assets/manage-assets.md) en/of [&#x200B; Desktop app van AEM &#x200B;](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -135,7 +135,7 @@ Uw fragment openen voor bewerken:
 
 >[!CAUTION]
 >
->Om een inhoudsfragment uit te geven hebt u [ de aangewezen toestemmingen ](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+>Om een inhoudsfragment uit te geven hebt u [&#x200B; de aangewezen toestemmingen &#x200B;](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
 >[!CAUTION]
 >
@@ -149,7 +149,7 @@ Uw fragment openen voor bewerken:
 
 1. De fragmenteditor wordt geopend. Breng de gewenste wijzigingen aan:
 
-   ![ fragmentredacteur ](assets/cfm-managing-03.png)
+   ![&#x200B; fragmentredacteur &#x200B;](assets/cfm-managing-03.png)
 
 1. Na het aanbrengen van veranderingen, gebruik **sparen**, **sparen en sluit** of **dicht** zoals vereist.
 
@@ -159,7 +159,7 @@ Uw fragment openen voor bewerken:
 
    >[!NOTE]
    >
-   >Zowel **sparen &amp; dicht** en **dicht** zullen de redacteur weggaan - zie [ sparen, dicht en Versies ](#save-close-and-versions) voor volledige informatie over hoe de diverse opties voor inhoudsfragmenten werken.
+   >Zowel **sparen &amp; dicht** en **dicht** zullen de redacteur weggaan - zie [&#x200B; sparen, dicht en Versies &#x200B;](#save-close-and-versions) voor volledige informatie over hoe de diverse opties voor inhoudsfragmenten werken.
 
 ## Modi en handelingen in de Inhoudsfragmenteditor {#modes-actions-content-fragment-editor}
 
@@ -169,7 +169,7 @@ Er zijn verschillende modi en acties beschikbaar in de Inhoudsfragmenteditor.
 
 Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 
-* Variaties: [ het uitgeven van de inhoud ](#editing-the-content-of-your-fragment) en [ het Leiden uw Variaties ](#creating-and-managing-variations-within-your-fragment)
+* Variaties: [&#x200B; het uitgeven van de inhoud &#x200B;](#editing-the-content-of-your-fragment) en [&#x200B; het Leiden uw Variaties &#x200B;](#creating-and-managing-variations-within-your-fragment)
 
 * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Gekoppelde inhoud](#associating-content-with-your-fragment)
@@ -177,19 +177,19 @@ Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 * [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Voorvertoning](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![ wijzen ](assets/cfm-managing-04.png)
+![&#x200B; wijzen &#x200B;](assets/cfm-managing-04.png)
 
 ### Werkbalkhandelingen in de Inhoudsfragmenteditor {#toolbar-actions-in-the-content-fragment-editor}
 
 Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
-![ wijzen ](assets/cfm-managing-top-toolbar.png)
+![&#x200B; wijzen &#x200B;](assets/cfm-managing-top-toolbar.png)
 
 * Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **sluiten** het bericht.
 
 * Het zijpaneel kan worden verborgen/getoond gebruikend het **pictogram van de Kant van de Knevel**.
 
-* Onder de fragmentnaam kunt u de naam van het [ Model van het Fragment van de Inhoud zien ](/help/assets/content-fragments/content-fragments-models.md) dat voor het creëren van het huidige fragment wordt gebruikt:
+* Onder de fragmentnaam kunt u de naam van het [&#x200B; Model van het Fragment van de Inhoud zien &#x200B;](/help/assets/content-fragments/content-fragments-models.md) dat voor het creëren van het huidige fragment wordt gebruikt:
 
    * De naam is ook een verbinding die de modelredacteur opent.
 
@@ -221,7 +221,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->De versies kunnen ook [ worden gecreeerd, worden vergeleken en van de Chronologie ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) worden teruggedraaid.
+>De versies kunnen ook [&#x200B; worden gecreeerd, worden vergeleken en van de Chronologie &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) worden teruggedraaid.
 
 De editor heeft verschillende opties:
 
@@ -232,7 +232,7 @@ De editor heeft verschillende opties:
 
   >[!CAUTION]
   >
-  >Om een inhoudsfragment uit te geven hebt u [ de aangewezen toestemmingen ](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+  >Om een inhoudsfragment uit te geven hebt u [&#x200B; de aangewezen toestemmingen &#x200B;](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
   >[!NOTE]
   >
@@ -265,27 +265,27 @@ Terwijl het uitgeven van uw inhoudsfragment maakt AEM automatisch versies om erv
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 3. Als de gebruiker de bewerking annuleert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
-4. Als de gebruiker **** selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
+4. Als de gebruiker **&#x200B;**&#x200B;selecteert sparen uitgeeft, blijven de bijgewerkte elementen/de variaties voortbestaan en het teken wordt verwijderd om de het uitgeven zitting te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
-Zodra u uw fragment hebt geopend, kunt u het [ lusje van Variaties ](/help/assets/content-fragments/content-fragments-variations.md) gebruiken om uw inhoud te schrijven.
+Zodra u uw fragment hebt geopend, kunt u het [&#x200B; lusje van Variaties &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) gebruiken om uw inhoud te schrijven.
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Zodra u de Hoofdinhoud hebt gecreeerd, kunt u, [ Variaties ](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud tot stand brengen en leiden.
+Zodra u de Hoofdinhoud hebt gecreeerd, kunt u, [&#x200B; Variaties &#x200B;](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud tot stand brengen en leiden.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt [ inhoud ](/help/assets/content-fragments/content-fragments-assoc-content.md) met een fragment ook associëren. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt [&#x200B; inhoud &#x200B;](/help/assets/content-fragments/content-fragments-assoc-content.md) met een fragment ook associëren. Dit biedt een verbinding zodat elementen (dat wil zeggen afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-U kunt, de eigenschappen van een fragment bekijken en uitgeven gebruikend het [ Meta-gegevens ](/help/assets/content-fragments/content-fragments-metadata.md) lusje.
+U kunt, de eigenschappen van een fragment bekijken en uitgeven gebruikend het [&#x200B; Meta-gegevens &#x200B;](/help/assets/content-fragments/content-fragments-metadata.md) lusje.
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
-Naast de standaardopties, [ verstrekt de Chronologie ](/help/assets/manage-assets.md#timeline) zowel informatie als acties specifiek voor inhoudsfragmenten:
+Naast de standaardopties, [&#x200B; verstrekt de Chronologie &#x200B;](/help/assets/manage-assets.md#timeline) zowel informatie als acties specifiek voor inhoudsfragmenten:
 
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
@@ -318,11 +318,11 @@ Naast de standaardopties, [ verstrekt de Chronologie ](/help/assets/manage-asset
 
 Bijvoorbeeld:
 
-![ chronologie ](assets/cfm-managing-05.png)
+![&#x200B; chronologie &#x200B;](assets/cfm-managing-05.png)
 
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
-**vergelijk met Huidige** actie is beschikbaar bij de [ Chronologie ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
+**vergelijk met Huidige** actie is beschikbaar bij de [&#x200B; Chronologie &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
 Dit wordt geopend:
 
@@ -346,31 +346,31 @@ Zij worden naast elkaar getoond, waarbij:
 >
 >U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
-![ vergelijkend ](assets/cfm-managing-06.png)
+![&#x200B; vergelijkend &#x200B;](assets/cfm-managing-06.png)
 
 ## Een versie herstellen  {#reverting-to-a-version}
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
-* Direct van de [ Chronologie ](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Direct van de [&#x200B; Chronologie &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
   Selecteer de vereiste versie, dan terugkeren **aan deze** actie van Versie.
 
-* Terwijl [ het vergelijken van een versie aan de huidige versie ](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **** aan de geselecteerde versie kunt terugkeren.
+* Terwijl [&#x200B; het vergelijken van een versie aan de huidige versie &#x200B;](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **&#x200B;**&#x200B;aan de geselecteerde versie kunt terugkeren.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
->Als uw fragment op een model gebaseerd is, dan zou u moeten ervoor zorgen dat het [ model ](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) is gepubliceerd.
+>Als uw fragment op een model gebaseerd is, dan zou u moeten ervoor zorgen dat het [&#x200B; model &#x200B;](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) is gepubliceerd.
 >
 >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
-* Na verwezenlijking; het gebruiken van [ acties beschikbaar in de console van Assets ](#actions-for-a-content-fragment-assets-console).
-* Van de [ Redacteur van het Fragment van de Inhoud ](#toolbar-actions-in-the-content-fragment-editor).
-* Wanneer u [ een pagina publiceert die het fragment ](/help/sites-authoring/content-fragments.md#publishing) gebruikt; het fragment zal in de paginaverwijzingen worden vermeld.
+* Na verwezenlijking; het gebruiken van [&#x200B; acties beschikbaar in de console van Assets &#x200B;](#actions-for-a-content-fragment-assets-console).
+* Van de [&#x200B; Redacteur van het Fragment van de Inhoud &#x200B;](#toolbar-actions-in-the-content-fragment-editor).
+* Wanneer u [&#x200B; een pagina publiceert die het fragment &#x200B;](/help/sites-authoring/content-fragments.md#publishing) gebruikt; het fragment zal in de paginaverwijzingen worden vermeld.
 
 >[!CAUTION]
 >

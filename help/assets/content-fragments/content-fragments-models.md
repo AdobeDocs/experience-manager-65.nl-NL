@@ -14,32 +14,32 @@ ht-degree: 1%
 
 # Modellen van inhoudsfragmenten {#content-fragment-models}
 
-De Modellen van het Fragment van de inhoud in AEM bepalen de structuur van inhoud voor uw [ inhoudsfragmenten, ](/help/assets/content-fragments/content-fragments.md) dienend als stichting van uw inhoud zonder kop.
+De Modellen van het Fragment van de inhoud in AEM bepalen de structuur van inhoud voor uw [&#x200B; inhoudsfragmenten, &#x200B;](/help/assets/content-fragments/content-fragments.md) dienend als stichting van uw inhoud zonder kop.
 
 Als u modellen van inhoudsfragmenten wilt gebruiken, kunt u:
 
-1. [ laat de modelfunctionaliteit van het Fragment van de Inhoud voor uw instantie ](/help/assets/content-fragments/content-fragments-configuration-browser.md) toe.
-1. [ creeer ](#creating-a-content-fragment-model), en [ vorm ](#defining-your-content-fragment-model), uw Modellen van het Fragment van de Inhoud.
-1. [ laat uw Modellen van het Fragment van de Inhoud ](#enabling-disabling-a-content-fragment-model) voor gebruik toe wanneer het creëren van de Fragmenten van de Inhoud.
-1. [ sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets ](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
+1. [&#x200B; laat de modelfunctionaliteit van het Fragment van de Inhoud voor uw instantie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md) toe.
+1. [&#x200B; creeer &#x200B;](#creating-a-content-fragment-model), en [&#x200B; vorm &#x200B;](#defining-your-content-fragment-model), uw Modellen van het Fragment van de Inhoud.
+1. [&#x200B; laat uw Modellen van het Fragment van de Inhoud &#x200B;](#enabling-disabling-a-content-fragment-model) voor gebruik toe wanneer het creëren van de Fragmenten van de Inhoud.
+1. [&#x200B; sta uw Modellen van het Fragment van de Inhoud op de vereiste omslagen van Assets &#x200B;](#allowing-content-fragment-models-assets-folder) toe door **Beleid** te vormen.
 
 >[!NOTE]
 >
->Ben me bewust van de [ Beste praktijken ](/help/assets/content-fragments/content-fragments.md#best-practices) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
+>Ben me bewust van de [&#x200B; Beste praktijken &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) wanneer het werken met uw Modellen van het Fragment van de Inhoud en de Fragmenten van de Inhoud.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
 1. Navigeer aan **Hulpmiddelen**, **Assets**, dan open **Modellen van het Fragment van de Inhoud**.
-1. Navigeer aan de omslag aangewezen aan uw [ configuratie ](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navigeer aan de omslag aangewezen aan uw [&#x200B; configuratie &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Het gebruik **creeert** om de tovenaar te openen.
 
    >[!CAUTION]
    >
-   >Als het [ gebruik van de modellen van het inhoudsfragment niet ](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie is niet beschikbaar.
+   >Als het [&#x200B; gebruik van de modellen van het inhoudsfragment niet &#x200B;](/help/assets/content-fragments/content-fragments-configuration-browser.md) is toegelaten, **creeer** optie is niet beschikbaar.
 
-1. Geef de **modeltitel** op. U kunt **Markeringen**, a **Beschrijving** ook toevoegen, en **selecteren laat model** toe [ om het model ](#enabling-disabling-a-content-fragment-model) indien nodig toe te laten.
+1. Geef de **modeltitel** op. U kunt **Markeringen**, a **Beschrijving** ook toevoegen, en **selecteren laat model** toe [&#x200B; om het model &#x200B;](#enabling-disabling-a-content-fragment-model) indien nodig toe te laten.
 
-   ![ titel en beschrijving ](assets/cfm-models-02.png)
+   ![&#x200B; titel en beschrijving &#x200B;](assets/cfm-models-02.png)
 
 1. Het gebruik **creeert** om het lege model te bewaren. Een bericht wijst op het succes van de actie, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Gedaan** om aan de console terug te keren.
 
@@ -66,38 +66,38 @@ Het model van het inhoudsfragment bepaalt effectief de structuur van de resulter
    >
    >Wanneer een gebied zoals **Vereist**, wordt het **Etiket** vermeld in de linkerruit duidelijk met een asterix (**&#42;**).
 
-   ![ eigenschappen ](assets/cfm-models-03.png)
+   ![&#x200B; eigenschappen &#x200B;](assets/cfm-models-03.png)
 
 1. **om een Gebied** toe te voegen
 
    * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
 
-     ![ gegevenstype aan gebied ](assets/cfm-models-04.png)
+     ![&#x200B; gegevenstype aan gebied &#x200B;](assets/cfm-models-04.png)
 
    * Zodra een gebied aan het model is toegevoegd, toont het juiste paneel de **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden bepaald. Hier kunt u definiëren wat voor dat veld is vereist.
 
-      * Vele eigenschappen zijn duidelijk-verklarend, voor extra details zie [ Eigenschappen ](#properties).
+      * Vele eigenschappen zijn duidelijk-verklarend, voor extra details zie [&#x200B; Eigenschappen &#x200B;](#properties).
       * Het typen a **Etiket van het Gebied** auto-voltooit de **Naam van het Bezit** - als leeg, en het kan achteraf manueel worden bijgewerkt.
 
         >[!CAUTION]
         >
-        >Wanneer manueel het bijwerken van de naam van het bezit **** voor een gegevenstype, moeten de namen slechts a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+        >Wanneer manueel het bijwerken van de naam van het bezit **&#x200B;**&#x200B;voor een gegevenstype, moeten de namen slechts a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
         >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
-     ![ gebiedseigenschappen ](assets/cfm-models-05.png)
+     ![&#x200B; gebiedseigenschappen &#x200B;](assets/cfm-models-05.png)
 
 1. **om een Gebied** te verwijderen
 
    Selecteer het vereiste veld en klik op het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
 
-   ![ verwijder ](assets/cfm-models-06.png)
+   ![&#x200B; verwijder &#x200B;](assets/cfm-models-06.png)
 
 1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, al naar gelang de vereisten. Bijvoorbeeld:
 
-   ![ sparen ](assets/cfm-models-07.png)
+   ![&#x200B; sparen &#x200B;](assets/cfm-models-07.png)
 
 1. Selecteer **sparen** om de definitie voort te zetten.
 
@@ -114,7 +114,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
      >
      >Vanwege de prestaties is het niet raadzaam meer dan tien RTF-velden in één model op te nemen.
      >
-     >Indien nodig, wordt het geadviseerd dat u [ genestelde Fragments van de Inhoud ](#fragment-reference-nested-fragments) gebruikt.
+     >Indien nodig, wordt het geadviseerd dat u [&#x200B; genestelde Fragments van de Inhoud &#x200B;](#fragment-reference-nested-fragments) gebruikt.
 
 * **Aantal**
    * Een of meer numerieke velden toevoegen
@@ -127,10 +127,10 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Markeringen**
    * Hiermee kunnen auteurs van fragmenten gebieden met tags openen en selecteren
 * **Verwijzing van de Inhoud**
-   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
+   * Verwijzingen andere inhoud, van om het even welk type; kan worden gebruikt om [&#x200B; te creëren genestelde inhoud &#x200B;](#using-references-to-form-nested-content)
    * Als er naar een afbeelding wordt verwezen, kunt u ervoor kiezen een miniatuur weer te geven
 * **Verwijzing van het Fragment**
-   * Verwijzingen andere inhoudsfragmenten; kan worden gebruikt om [ te creëren genestelde inhoud ](#using-references-to-form-nested-content)
+   * Verwijzingen andere inhoudsfragmenten; kan worden gebruikt om [&#x200B; te creëren genestelde inhoud &#x200B;](#using-references-to-form-nested-content)
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
       * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
       * Een inhoudsfragment maken op basis van het juiste model
@@ -155,7 +155,7 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **de Naam van het Bezit**
 
-  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **** *slechts* a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
+  Wanneer manueel het bijwerken van dit bezit voor een gegevenstype, moeten de namen **&#x200B;**&#x200B;*slechts* a-z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
 
   >[!CAUTION]
   >
@@ -168,7 +168,7 @@ De verschillende opties voor het realiseren/renderen van het veld in een fragmen
 Het ingaan van het Etiket van het a **Gebied** autogenerate a **Naam van het Bezit**, die dan manueel kan worden bijgewerkt, indien nodig.
 
 * **Bevestiging**
-De fundamentele bevestiging is beschikbaar door mechanismen zoals het **Vereiste** bezit. Sommige gegevenstypen hebben aanvullende validatievelden. Zie [ Bevestiging ](#validation) voor verdere details.
+De fundamentele bevestiging is beschikbaar door mechanismen zoals het **Vereiste** bezit. Sommige gegevenstypen hebben aanvullende validatievelden. Zie [&#x200B; Bevestiging &#x200B;](#validation) voor verdere details.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
@@ -185,7 +185,7 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
   Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
-  Bijvoorbeeld, het 1} gebied van de a **Enige lijntekst {in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country``Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
+  Bijvoorbeeld, het 1&rbrace; gebied van de a **Enige lijntekst &lbrace;in het Model van het Fragment van de Inhoud kan niet de waarde** in twee afhankelijke Fragmenten van de Inhoud hebben. `Country` `Japan` Er wordt een waarschuwing weergegeven wanneer de tweede instantie wordt geprobeerd.
 
   >[!NOTE]
   >
@@ -236,7 +236,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Deze methode is van bijzonder belang met [&#x200B; Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL &#x200B;](/help/assets/content-fragments/content-fragments-graphql.md).
    * Het kan voor één verwijzing of veelvoudige verwijzingen (in het resulterende fragment) worden gevormd.
 
 >[!NOTE]
@@ -262,7 +262,7 @@ Naast de standaardeigenschappen kunt u opgeven:
    * Miniatuur tonen
    * Hoogte- en breedtebeperkingen voor afbeeldingen
 
-![ Verwijzing van de Inhoud ](assets/cfm-content-reference.png)
+![&#x200B; Verwijzing van de Inhoud &#x200B;](assets/cfm-content-reference.png)
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
@@ -289,7 +289,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Dit is van bijzonder belang met [ Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL ](/help/assets/content-fragments/content-fragments-graphql.md).
+>Dit is van bijzonder belang met [&#x200B; Hoofdloze Levering van de Inhoud gebruikend de Fragmenten van de Inhoud met GraphQL &#x200B;](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -311,7 +311,7 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
    * **fragmentreferencecomposite** - staat de fragmentauteur toe om een samenstelling te bouwen, door veelvoudige fragmenten te selecteren
 
-  ![ Verwijzing van het Fragment ](assets/cfm-fragment-reference.png)
+  ![&#x200B; Verwijzing van het Fragment &#x200B;](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -341,7 +341,7 @@ U kunt **gebruiken laat** optie van toe of:
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
 
-![ laat een Ontwerp of Gehandicapte Model ](assets/cfm-status-enable.png) toe
+![&#x200B; laat een Ontwerp of Gehandicapte Model &#x200B;](assets/cfm-status-enable.png) toe
 
 ### Een inhoudsfragmentmodel uitschakelen {#disabling-a-content-fragment-model}
 
@@ -358,7 +358,7 @@ Om een Model onbruikbaar te maken dat als **Toegelaten** wordt gemarkeerd, gebru
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
 
-![ maak toegelaten Model ](assets/cfm-status-disable.png) onbruikbaar
+![&#x200B; maak toegelaten Model &#x200B;](assets/cfm-status-disable.png) onbruikbaar
 
 ## Modellen voor inhoudsfragmenten toestaan in uw Assets-map {#allowing-content-fragment-models-assets-folder}
 
@@ -366,7 +366,7 @@ Om inhoudsbeheer uit te voeren, kunt u **Beleid** op een omslag van Assets vorme
 
 >[!NOTE]
 >
->Het mechanisme is gelijkaardig aan [ toestaand paginasjablonen ](/help/sites-authoring/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
+>Het mechanisme is gelijkaardig aan [&#x200B; toestaand paginasjablonen &#x200B;](/help/sites-authoring/templates.md#allowing-a-template-author) voor een pagina, en zijn kinderen, in geavanceerde eigenschappen van een pagina.
 
 Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te vormen**:
 
@@ -386,7 +386,7 @@ Om het **Beleid** voor **toegelaten Modellen van het Fragment van de Inhoud te v
 
      U kunt meerdere modellen toestaan.
 
-   ![ Beleid van het Model van het Fragment van de Inhoud ](assets/cfm-model-policy-assets-folder.png)
+   ![&#x200B; Beleid van het Model van het Fragment van de Inhoud &#x200B;](assets/cfm-model-policy-assets-folder.png)
 
 1. **sparen** om het even welke veranderingen.
 

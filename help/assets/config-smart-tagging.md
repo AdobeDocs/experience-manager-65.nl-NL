@@ -32,7 +32,7 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
 * [&#x200B; integreer met Adobe Developer Console &#x200B;](#integrate-adobe-io).
 * [&#x200B; Lijn de Slimme Dienst van de Inhoud &#x200B;](#training-the-smart-content-service).
 
-* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
+* Installeer het recentste [[!DNL Experience Manager]  Pak van de Dienst &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ## SCS upgrade ter ondersteuning van Oauth voor Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
@@ -151,7 +151,7 @@ U moet een technische IMS accountconfiguratie tot stand brengen gebruikend de hi
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -482,4 +482,4 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 >
 >* [&#x200B; Overzicht en hoe te om Slimme Markeringen &#x200B;](enhanced-smart-tags.md) te trainen
 >* [&#x200B; het Oplossen van problemen slimme markeringen voor geloofsbrieven OAuth &#x200B;](config-oauth.md)
->* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [&#x200B; Videozelfstudie over slimme markeringen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/metadata/image-smart-tags)

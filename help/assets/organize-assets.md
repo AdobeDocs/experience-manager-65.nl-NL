@@ -1,13 +1,13 @@
 ---
 title: Uw digitale middelen organiseren
-description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met Experience Manager.
+description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc., gebruikend Experience Manager.
 contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| Adobe Experience Manager (AEM) as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
+| AEM 6.5 | Dit artikel |
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden uitgebreid besproken in metagegevens in Digital Asset Management.
 
@@ -27,10 +27,10 @@ Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-d
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
-De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over om omslagen tot stand te brengen en te beheren, zie [&#x200B; activa &#x200B;](manage-assets.md) beheren. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over om omslagen tot stand te brengen en te beheren, zie [ activa ](manage-assets.md) beheren. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
 * Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de cyclus waarin de inhoud wordt gemaakt.
-* Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Bijvoorbeeld, kunnen de activa in de volgende types van omslagen worden geplaatst u helpen aangewezen [&#x200B; profielen gebruiken om voor activa te gebruiken die verwerken &#x200B;](processing-profiles.md):
+* Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Bijvoorbeeld, kunnen de activa in de volgende types van omslagen worden geplaatst u helpen aangewezen [ profielen gebruiken om voor activa te gebruiken die verwerken ](processing-profiles.md):
 
    * **de omslagen van de Ontwikkeling**: bevat digitale activa die u momenteel werkt aan.
    * **omslagen van de Cliënt**: bevat digitale activa die op cliënten of projectnamen worden gebaseerd.
@@ -47,13 +47,13 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
-Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en kunstmatige intelligentiealgoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
+Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en kunstmatige intelligentiealgoritmen van Adobe AI gebruiken voor het detecteren van elementen.
 
-[!DNL Adobe Experience Manager Assets] gebruikt een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, het kunstmatige intelligentie- en computerleerframework van de Adobe, dat getraind kan worden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+[!DNL Adobe Experience Manager Assets] gebruikt een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe AI, Adobe-raamwerk voor kunstmatige intelligentie en machinaal leren, dat kan worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
-* [Tags in Experience Manager](/help/sites-authoring/tags.md)
+* [Informatie over tags in Experience Manager](/help/sites-authoring/tags.md)
 * [Metagegevens van elementen bewerken](metadata.md)
 * [Verbeterde slimme tags in Assets](enhanced-smart-tags.md)
 
@@ -61,7 +61,7 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 Met de functie voor het verzamelen van middelen in [!DNL Experience Manager Assets] kunt u de mogelijkheid om elementen te maken, te bewerken en te delen, stroomlijnen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
-Voor meer informatie, zie [&#x200B; inzamelingen &#x200B;](manage-collections.md) beheren.
+Voor meer informatie, zie [ inzamelingen ](manage-collections.md) beheren.
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
@@ -76,7 +76,7 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Profielen om meta-gegevens, beelden, en video&#39;s &#x200B;](processing-profiles.md) te verwerken.
->* [&#x200B; de profielen van Meta-gegevens &#x200B;](/help/assets/metadata-config.md#metadata-profiles).
->* [&#x200B; Videoprofielen &#x200B;](video-profiles.md).
->* [&#x200B; de beeldprofielen van Dynamic Media &#x200B;](image-profiles.md).
+>* [ Profielen om meta-gegevens, beelden, en video&#39;s ](processing-profiles.md) te verwerken.
+>* [ de profielen van Meta-gegevens ](/help/assets/metadata-config.md#metadata-profiles).
+>* [ Videoprofielen ](video-profiles.md).
+>* [ Dynamische het beeldprofielen van Media ](image-profiles.md).

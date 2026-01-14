@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3262'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Smart Imaging past de unieke weergavekenmerken van elke gebruiker toe om de juis
 
 ## Slimme afbeeldingen {#what-is-smart-imaging}
 
-Smart Imaging-technologie past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+Smart Imaging-technologie past Adobe AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot;. De functie verbetert de prestaties van de afbeeldingslevering door de afbeeldingsindeling, grootte en kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
 En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Verf) met verbeterde Smart Imaging, die nu zowel met AVIF als WebP steun wordt geleverd.
 
@@ -32,7 +32,7 @@ En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Ver
 
 >[!TIP]
 >
->Probeer uit en ontdek de voordelen van Dynamische het beeldbepalingen van Media en Slim Beeld, gebruikend Dynamische Momentopname van Media [__ &#x200B;](https://snapshot.scene7.com/).
+>Probeer uit en ontdek de voordelen van Dynamische het beeldbepalingen van Media en Slim Beeld, gebruikend Dynamische Momentopname van Media [__ ](https://snapshot.scene7.com/).
 >
 >Momentopname is een visueel demonstratieprogramma dat is ontworpen om de kracht van dynamische media te illustreren voor geoptimaliseerde en dynamische beeldlevering. Experimenteer met testafbeeldingen of dynamische media-URL&#39;s om de uitvoer van verschillende dynamische media-afbeeldingsmodifiers visueel te bekijken en optimalisaties voor Smart Imaging voor het volgende:
 >
@@ -40,7 +40,7 @@ En nu een betere Google Core Web Vital score voor LCP (Grootste Inhoudelijke Ver
 >* Netwerkbandbreedte
 >* DPR (Pixelverhouding apparaat)
 >
->Om te leren hoe gemakkelijk het Momentopname moet gebruiken, speel de [&#x200B; video van de de opleidingsopleiding van de Momentopname &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten en 17 seconden).
+>Om te leren hoe gemakkelijk het Momentopname moet gebruiken, speel de [ video van de de opleidingsopleiding van de Momentopname ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minuten en 17 seconden).
 
 Smart Imaging profiteert van de extra prestatieverhoging door volledig te zijn geïntegreerd met de eersteklas CDN-service (Content Delivery Network) van Adobe. Deze dienst vindt de optimale route van Internet tussen servers, netwerken, en peerpunten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
@@ -48,16 +48,16 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 
 | Afbeelding (URL) | Miniatuur | Grootte (JPEG) | Grootte (WebP) met slimme beeldverwerking | Grootte (AVIF) met Smart Imaging | % reductie met WebP | % reductie met AVIF |
 |---|---|---|---|---|---|---|
-| [&#x200B; Beeld 1 &#x200B;](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![&#x200B; picture1 &#x200B;](/help/assets/assets-dm/picture1.png) | 145 kB | 106 kB | 90,2 kB | 26,89% | 37,79% |
-| [&#x200B; Beeld 2 &#x200B;](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![&#x200B; picture2 &#x200B;](/help/assets/assets-dm/picture2.png) | 412 kB | 346 kB | 113 kB | 16,01% | 72,57% |
-| [&#x200B; Beeld 3 &#x200B;](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![&#x200B; picture3 &#x200B;](/help/assets/assets-dm/picture3.png) | 221 kB | 189 kB | 87,1 kB | 14,47% | 60,58% |
-| [&#x200B; Beeld 4 &#x200B;](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![&#x200B; picture4 &#x200B;](/help/assets/assets-dm/picture4.png) | 594 kB | 545 kB | 286 kB | 8,25% | 51,85% |
+| [ Beeld 1 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![ picture1 ](/help/assets/assets-dm/picture1.png) | 145 kB | 106 kB | 90,2 kB | 26,89% | 37,79% |
+| [ Beeld 2 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![ picture2 ](/help/assets/assets-dm/picture2.png) | 412 kB | 346 kB | 113 kB | 16,01% | 72,57% |
+| [ Beeld 3 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![ picture3 ](/help/assets/assets-dm/picture3.png) | 221 kB | 189 kB | 87,1 kB | 14,47% | 60,58% |
+| [ Beeld 4 ](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![ picture4 ](/help/assets/assets-dm/picture4.png) | 594 kB | 545 kB | 286 kB | 8,25% | 51,85% |
 
 Evenals in het bovenstaande voerde Adobe ook een test uit met een grotere set monsters. De indeling AVIF gaf een extra reductie van 20% ten opzichte van WebP, wat een reductie van 27% ten opzichte van JPEG mogelijk maakte. Allemaal met dezelfde visuele kwaliteit. In totaal biedt AVIF in vergelijking met JPEG een gemiddelde reductie van 41%.
 
 Vergelijk WebP en AVIF met PNG, kunt u een 84% groottevermindering met WebP en 87% met AVIF zien. En omdat zowel WebP- als AVIF-indelingen transparantie en meerdere afbeeldingsanimaties ondersteunen, is dit een goede vervanging voor transparante PNG- en GIF-bestanden.
 
-Zie ook [&#x200B; Optimalisering van het Beeld met Formaten van het Beeld van Next-gen (WebP en AVIF) &#x200B;](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+Zie ook [ Optimalisering van het Beeld met Formaten van het Beeld van Next-gen (WebP en AVIF) ](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -88,7 +88,7 @@ Als u Omzetting browserformaat inschakelt door `bfc=on` aan de URL van de afbeel
 
 U kunt Smart Imaging uitschakelen door `bfc=off` aan de URL van de afbeelding toe te voegen.
 
-Zie ook [&#x200B; bfc &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Dynamische Beeld van Media die en API teruggeven dienen.
+Zie ook [ bfc ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) in het Dynamische Beeld van Media die en API teruggeven dienen.
 
 ### Informatie over dpr-optimalisatie (Device Pixel Ratio) {#dpr}
 
@@ -113,7 +113,7 @@ Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-head
 | 816 x 500 | 1 | 816 x 500 |
 | 816 x 500 | 2 | 1632 x 1000 |
 
-Zie ook [&#x200B; wanneer het werken met beelden &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [&#x200B; wanneer het werken met Slim Uitsnijden &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Zie ook [ wanneer het werken met beelden ](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [ wanneer het werken met Slim Uitsnijden ](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 ### Informatie over netwerkbandbreedteoptimalisatie {#network}
 
@@ -125,13 +125,13 @@ Uw bedrijf kan optimalisatie van de netwerkbandbreedte voor afzonderlijke afbeel
 |---|---|
 | `network=off` | Hiermee schakelt u netwerkoptimalisatie op individueel afbeeldings-URL-niveau uit. |
 
-DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. IPhone5 met DPR=2 en iPhone12 met `dpr=3` bijvoorbeeld, beide tonen `dpr=2` . Voor apparaten met hoge resolutie is het echter beter `dpr=2` te verzenden dan `dpr=1` te verzenden. De beste manier om deze onnauwkeurigheid te overwinnen, is echter door DPR op de client-side te gebruiken om u 100% nauwkeurige waarden te geven. En het werkt voor elk apparaat, of het nu Apple is of een ander apparaat dat gelanceerd werd. Zie [&#x200B; het Slimme Beelden van het Gebruik met cliënt-kant de Verhouding van het Pixel van het Apparaat &#x200B;](/help/assets/client-side-dpr.md).
+DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. IPhone5 met DPR=2 en iPhone12 met `dpr=3` bijvoorbeeld, beide tonen `dpr=2` . Voor apparaten met hoge resolutie is het echter beter `dpr=2` te verzenden dan `dpr=1` te verzenden. De beste manier om deze onnauwkeurigheid te overwinnen, is echter door DPR op de client-side te gebruiken om u 100% nauwkeurige waarden te geven. En het werkt voor elk apparaat, of het nu Apple is of een ander apparaat dat gelanceerd werd. Zie [ het Slimme Beelden van het Gebruik met cliënt-kant de Verhouding van het Pixel van het Apparaat ](/help/assets/client-side-dpr.md).
 
 ### Extra belangrijke voordelen van Smart Imaging
 
 * Verbeterde Google SEO-classificatie voor webpagina&#39;s die gebruikmaken van de nieuwste Smart Imaging.
 * Hiermee wordt geoptimaliseerde inhoud direct (bij uitvoering) weergegeven.
-* Gebruikt Adobe Sensei-technologie voor conversie op basis van de kwaliteit (`qlt`) die is opgegeven in de afbeeldingsaanvraag.
+* Gebruikt Adobe AI-technologie voor conversie op basis van de kwaliteit (`qlt`) die is opgegeven in de afbeeldingsaanvraag.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
 * Klanten die aangepaste koppen in hun linialen gebruiken, profiteren van de nieuwste functie voor Smart Imaging, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
@@ -159,10 +159,10 @@ Wanneer een consument om een afbeelding vraagt, analyseert Smart Imaging de gebr
 
   | Afbeeldingsindeling | Ondersteunde browsers |
   |---|---|
-  | AVIF | [&#x200B; https://caniuse.com/avif](https://caniuse.com/avif) |
-  | WebP | [&#x200B; https://caniuse.com/webp](https://caniuse.com/webp) |
-  | JPEG 2000 | [&#x200B; https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-  | JPEGXR | [&#x200B; https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | AVIF | [ https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [ https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [ https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [ https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 
 * Voor browsers die deze indelingen niet ondersteunen, wordt de oorspronkelijk aangevraagde afbeeldingsindeling weergegeven.
 
@@ -236,7 +236,7 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
 **om een steungeval tot stand te brengen om Slimme Beeldvorming op uw rekening toe te laten:**
 
-1. [&#x200B; Gebruik Admin Console om de verwezenlijking van een nieuw steungeval &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) te beginnen.
+1. [ Gebruik Admin Console om de verwezenlijking van een nieuw steungeval ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) te beginnen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * **Primaire contactdetails:**
@@ -255,7 +255,7 @@ Geef bij het maken van de draagtas op welke functies voor Smart Imaging u op uw 
 
       * Alle relevante domeinen weergeven, zoals *`company.com`* of *`mycompany.scene7.com`*
       * Smart Imaging ondersteunt zowel algemene als aangepaste domeinen.
-      * Om uw domeinen te identificeren, open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) en teken binnen aan uw bedrijfrekening.
+      * Om uw domeinen te identificeren, open de [ Desktoptoepassing van Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) en teken binnen aan uw bedrijfrekening.
 
          1. Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** .
          1. Zoek het veld **[!UICONTROL Published Server Name]** om uw domein te bevestigen.
@@ -273,7 +273,7 @@ De TTL aanpassen:
       1. Navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]** .
       1. Stel de waarde van **[!UICONTROL Default Client Cache Time To Live]** in op 24 uur of meer.
    1. **voor Dynamische Media op Adobe Experience Manager:**
-      1. Volg [&#x200B; deze instructies &#x200B;](/help/assets/dm-publish-settings.md#common-thumbnail-attributes-tab).
+      1. Volg [ deze instructies ](/help/assets/dm-publish-settings.md#common-thumbnail-attributes-tab).
       1. Stel de waarde **[!UICONTROL Expiration]** in op 24 uur of langer.
 
 +++
@@ -313,7 +313,7 @@ Tijdens de eerste overgang raakten de niet-in cache opgeslagen afbeeldingen rech
 >
 >Niet alle afbeeldingen worden omgezet. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling niet JPEG of PNG is.
 
-![&#x200B; image2017-11-14_15398 &#x200B;](/help/assets/assets/image2017-11-14_15398.png)
+![ image2017-11-14_15398 ](/help/assets/assets/image2017-11-14_15398.png)
 
 +++
 
@@ -321,7 +321,7 @@ Tijdens de eerste overgang raakten de niet-in cache opgeslagen afbeeldingen rech
 
 De koptekst Slimme afbeeldingen bepaalt de voordelen van Slimme afbeeldingen. Wanneer Slimme afbeeldingen is ingeschakeld, kunt u na een verzoek om een afbeelding onder de kop **[!UICONTROL Response Headers]** `-X-Adobe-Smart-Imaging` zien zoals in het volgende gemarkeerde voorbeeld:
 
-![&#x200B; Slimme beeldende kopbal &#x200B;](/help/assets/assets-dm/smart-imaging-header2.png)
+![ Slimme beeldende kopbal ](/help/assets/assets-dm/smart-imaging-header2.png)
 
 Deze koptekst geeft het volgende aan:
 
@@ -352,9 +352,9 @@ Als u terug naar het dienen WebP door gebrek wilt schakelen, creeer een steungev
 
 Ja. U kunt Smart Imaging uitschakelen door een van de volgende opties toe te voegen:
 
-* `bfc=off` om Browser Format Conversion uit te schakelen. Zie ook [&#x200B; Browser de Omzetting van het Formaat &#x200B;](#bfc).
+* `bfc=off` om Browser Format Conversion uit te schakelen. Zie ook [ Browser de Omzetting van het Formaat ](#bfc).
 * `dpr=off` om de pixelverhouding van het apparaat uit te schakelen. Zie ook {de Verhouding van het Pixel van 0} Apparaat [.](#dpr)
-* `network=off` om netwerkbandbreedte uit te schakelen. Zie ook [&#x200B; Bandbreedte van het Netwerk &#x200B;](#network).
+* `network=off` om netwerkbandbreedte uit te schakelen. Zie ook [ Bandbreedte van het Netwerk ](#network).
 
 +++
 

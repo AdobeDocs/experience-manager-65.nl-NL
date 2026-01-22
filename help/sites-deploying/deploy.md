@@ -57,7 +57,7 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [&#x200B; wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [&#x200B; wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=nl-NL)
 
 ## Basisconcepten {#basic-concepts}
 
@@ -130,7 +130,7 @@ Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
 
 **Cloud Manager**: Cloud Manager, een deel van het aanbieden van Adobe Experience Manager Managed Services is een zelfbedieningsportaal dat verder organisaties toelaat om Adobe Experience Manager in de wolk zelf-te beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
 
-Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager [**&#x200B;**.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+Meer over de Manager van de Wolk en zijn middelen leren, zie {de Gids van de Gebruiker van 0} Cloud Manager [**&#x200B;**.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL)
 
 ## Aan de slag {#getting-started}
 
@@ -312,4 +312,4 @@ In het bovenstaande gedeelte hebt u een goed inzicht in de basisbeginselen van A
 * [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [&#x200B; wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [&#x200B; wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=nl-NL)

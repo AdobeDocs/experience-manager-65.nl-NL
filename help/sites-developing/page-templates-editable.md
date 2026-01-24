@@ -55,7 +55,7 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 
 Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [&#x200B; malplaatjeconsole en malplaatjeredacteur &#x200B;](/help/sites-authoring/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
-Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie [&#x200B; Creërend een AEM project gebruikend Lagen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie [&#x200B; Creërend een AEM project gebruikend Lagen &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=nl).
 
 Bij het maken van een bewerkbare sjabloon:
 

@@ -1414,7 +1414,7 @@ De component voor het uploaden van bestanden biedt de gebruiker een mechanisme v
 
 >[!NOTE]
 >
->U kunt een aangepaste uploadcomponent maken om bestanden te uploaden naar een verkoopserver. Voor informatie, zie [&#x200B; Uploading dossiers aan Adobe Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
+>U kunt een aangepaste uploadcomponent maken om bestanden te uploaden naar een verkoopserver. Voor informatie, zie [&#x200B; Uploading dossiers aan Adobe Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=nl).
 
 ### Verborgen veld {#hidden-field}
 

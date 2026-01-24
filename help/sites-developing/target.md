@@ -234,7 +234,7 @@ Als u bijvoorbeeld het aanwijzen van doelen voor de titelcomponenten van de Geom
 >
 >Als u DTM niet gebruikt, stuurt u een bevestiging van de bestelling naar Adobe Target.
 
-Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [&#x200B; een orderConfirmPage Mbox &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) en [&#x200B; Bevestigingsmebox van de Orde - voeg douaneparameters toe.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` is en gebruikt de volgende specifieke parameternamen:
+Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [&#x200B; een orderConfirmPage Mbox &#x200B;](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) en [&#x200B; Bevestigingsmebox van de Orde - voeg douaneparameters toe.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=nl)) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` is en gebruikt de volgende specifieke parameternamen:
 
 * productPurchasedId: een lijst met id&#39;s die de aangekochte producten identificeren.
 * orderId: De id van de bestelling.

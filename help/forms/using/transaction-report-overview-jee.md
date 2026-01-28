@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Transactierapporten voor AEM Forms inschakelen en weergeven op JEE {#transaction-reports-overview}
 
-<span> Het vermogen van de Rapportering van de Transactie wordt geïntroduceerd voor [&#x200B; AEM Forms op JEE van AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms). Deze eigenschap wordt onbruikbaar gemaakt door gebrek en kan van Admin UI worden toegelaten.</span>
+<span> Het vermogen van de Rapportering van de Transactie wordt geïntroduceerd voor [ AEM Forms op JEE van AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms). Deze eigenschap wordt onbruikbaar gemaakt door gebrek en kan van Admin UI worden toegelaten.</span>
 
 Met transactierapporten in AEM Forms op JEE kunt u een telling bijhouden van alle transacties die tijdens de implementatie van AEM Forms zijn uitgevoerd. Het doel is informatie te verschaffen over het gebruik van producten en belanghebbenden in bedrijven te helpen hun digitale verwerkingsvolumes te begrijpen. Voorbeelden van een transactie zijn:
 
@@ -23,7 +23,7 @@ Met transactierapporten in AEM Forms op JEE kunt u een telling bijhouden van all
 * Vertoning van een document
 * Een document omzetten van de ene bestandsindeling naar de andere
 
-Voor meer informatie over wat als een transactie wordt beschouwd, zie [&#x200B; Billable APIs &#x200B;](../../forms/using/transaction-reports-billable-apis-jee.md).
+Voor meer informatie over wat als een transactie wordt beschouwd, zie [ Billable APIs ](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Transactierapporteren inschakelen {#enable-transaction-reporting}
 
@@ -34,7 +34,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
 1. Ga naar **Montages** > **de Montages van het Systeem van de Kern** > **Configuraties**.
 1. Klik checkbox aan **om transactie toe te laten die** rapporteert en **sparen** de montages.
 
-   ![&#x200B; steekproef-transactie-rapport-jee &#x200B;](assets/enable-transaction-jee.png)
+   ![ steekproef-transactie-rapport-jee ](assets/enable-transaction-jee.png)
 
 1. Start de server opnieuw.
 1. Naast de wijzigingen op de server moet u op de client het `adobe-livecycle-client.jar` -bestand in uw project bijwerken als u hetzelfde gebruikt.
@@ -47,7 +47,7 @@ Standaard is het opnemen van transacties uitgeschakeld. Voer de volgende stappen
 
 ## Transactierapport weergeven {#view-transaction-report}
 
-Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door het [&#x200B; transactierapport via dashboard &#x200B;](#transaction-report-dashboard) en een gedetailleerd [&#x200B; transactierapport via logboekdossier &#x200B;](#transaction-report-logfile). Beide worden hieronder uitgelegd:
+Wanneer u transactie het melden toelaat, wordt de informatie over de transactietellingen toegankelijk door het [ transactierapport via dashboard ](#transaction-report-dashboard) en een gedetailleerd [ transactierapport via logboekdossier ](#transaction-report-logfile). Beide worden hieronder uitgelegd:
 
 ### Transactierapport via dashboard {#transaction-report-dashboard}
 
@@ -58,7 +58,7 @@ Transactierapport via het dashboard geeft het totale aantal transacties voor elk
 1. Klik op Health Monitor.
 1. Navigeer aan **Reporter van de Transactie** lusje, klik **Totale Transacties** berekent, nu ziet u dat een cirkeldiagram het aantal PDF forms - voorgelegd, teruggegeven, of omgezet vertegenwoordigt.
 
-![&#x200B; steekproef-transactie-rapport-jee &#x200B;](assets/transaction-piechart.png)
+![ steekproef-transactie-rapport-jee ](assets/transaction-piechart.png)
 
 
 ### Transactierapport via logbestand {#transaction-report-logfile}

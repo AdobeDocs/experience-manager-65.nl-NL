@@ -27,7 +27,7 @@ Neem contact op met de leverancier van het platform voor alle problemen die betr
 
 Minimumeisen voor de installatie van Adobe Experience Manager:
 
-* Geïnstalleerde het Platform Java™, StandaardUitgave JDK, of andere gesteunde [ Virtuele Machines Java™ ](#java-virtual-machines)
+* Geïnstalleerde het Platform Java™, StandaardUitgave JDK, of andere gesteunde [&#x200B; Virtuele Machines Java™ &#x200B;](#java-virtual-machines)
 * Experience Manager Quickstart-bestand (stand-alone JAR of WAR voor implementatie van webtoepassingen)
 
 ### Minimale groottevereisten {#minimum-sizing-requirements}
@@ -39,11 +39,11 @@ Minimumvereisten voor Adobe Experience Manager:
 
 >[!NOTE]
 >
->* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. Zie [ het Opstellen en het Onderhouden ](/help/sites-deploying/deploy.md#default-local-install) voor details.
->* [ AEM Forms toe:voegen-op pakket ](/help/forms/using/installing-configuring-aem-forms-osgi.md) vereist 15 GB van tijdelijke ruimte.
+>* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. Zie [&#x200B; het Opstellen en het Onderhouden &#x200B;](/help/sites-deploying/deploy.md#default-local-install) voor details.
+>* [&#x200B; AEM Forms toe:voegen-op pakket &#x200B;](/help/forms/using/installing-configuring-aem-forms-osgi.md) vereist 15 GB van tijdelijke ruimte.
 >
 
-Voor verdere informatie, zie de [ Rangschikkende Richtlijnen van de Hardware ](/help/managing/hardware-sizing-guidelines.md).
+Voor verdere informatie, zie de [&#x200B; Rangschikkende Richtlijnen van de Hardware &#x200B;](/help/managing/hardware-sizing-guidelines.md).
 
 ### Ondersteuningsniveaus {#support-levels}
 
@@ -92,17 +92,17 @@ Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machi
 |---|---|---|
 | Oracle Java™ SE 21 JDK | Z: Niet ondersteund `[1]` |  |
 | Oracle Java™ SE 17 JDK | Z: Niet ondersteund `[1]` |  |
-| Oracle Java™ SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
+| Oracle Java™ SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [&#x200B; Download &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java™ SE 10 JDK | Z: Niet ondersteund `[1]` |  |
 | Oracle Java™ SE 9 JDK | Z: Niet ondersteund `[1]` |  |
-| Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [ Download ](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
+| Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [&#x200B; Download &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | IBM® J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |  |
 | IBM® J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |  |
 | Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` | |
 | Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` | |
 
-1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10, en Java™ 12 zijn niet-LTS versies door Oracle (zie [ Oracle Java™ SE steunroadmap ](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in een productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. Ondersteuning en distributie van de Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases, wordt rechtstreeks door Adobe ondersteund voor alle AEM-klanten die de Oracle Java™ SE-technologie gebruiken. Zie het [ Java™ steunbeleid voor Adobe Experience Manager ](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Belangrijk: Oracle Java™ 17 en 21 worden gesteund op [ AEM 6.5 LTS ](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10, en Java™ 12 zijn niet-LTS versies door Oracle (zie [&#x200B; Oracle Java™ SE steunroadmap &#x200B;](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in een productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. Ondersteuning en distributie van de Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases, wordt rechtstreeks door Adobe ondersteund voor alle AEM-klanten die de Oracle Java™ SE-technologie gebruiken. Zie het [&#x200B; Java™ steunbeleid voor Adobe Experience Manager &#x200B;](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Belangrijk: Oracle Java™ 17 en 21 worden gesteund op [&#x200B; AEM 6.5 LTS &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE wordt alleen ondersteund in combinatie met WebSphere® Application Server.
 
@@ -149,13 +149,13 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 >[!NOTE]
 >
->Zie [ Opstellend Gemeenschappen ](/help/communities/deploy-communities.md) voor extra informatie betreffende het vermogen van AEM Communities.
+>Zie [&#x200B; Opstellend Gemeenschappen &#x200B;](/help/communities/deploy-communities.md) voor extra informatie betreffende het vermogen van AEM Communities.
 
 >[!NOTE]
 >
->MongoDB is een programma van derden en is niet opgenomen in het AEM-licentiepakket. Voor meer informatie, zie [ MongoDB het verlenen van vergunningen beleid ](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
+>MongoDB is een programma van derden en is niet opgenomen in het AEM-licentiepakket. Voor meer informatie, zie [&#x200B; MongoDB het verlenen van vergunningen beleid &#x200B;](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
 >
->Om optimaal gebruik te kunnen maken van uw AEM-implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat deze profiteert van professionele ondersteuning. Zie [ Geadviseerde Inzet ](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie.
+>Om optimaal gebruik te kunnen maken van uw AEM-implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat deze profiteert van professionele ondersteuning. Zie [&#x200B; Geadviseerde Inzet &#x200B;](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie.
 >
 >De licentie bevat een standaard replicaset, die bestaat uit één primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of de publicatieimplementaties.
 >
@@ -163,7 +163,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 >
 >De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM.
 >
->Voor meer informatie, zie [ MongoDB voor de pagina van Adobe Experience Manager ](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Voor meer informatie, zie [&#x200B; MongoDB voor de pagina van Adobe Experience Manager &#x200B;](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 <!--
 >[!NOTE]
@@ -249,9 +249,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn bijvoorbeeld Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [ Documentatie van Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM-productlijn: Adobe Experience Manager as a Cloud Service. Zie [&#x200B; Documentatie van Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) voor details.
 
-Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [ extra documentatie op Adobe Managed Services ](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+Adobe biedt Adobe Managed Services ook de mogelijkheid AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [&#x200B; extra documentatie op Adobe Managed Services &#x200B;](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 In alle andere gevallen waarin AEM wordt geïmplementeerd in Azure of AWS, of in elke andere cloudcomputeromgeving, is de ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat in een van deze cloudomgevingen wordt uitgevoerd, moet onafhankelijk van elke cloudservice die specifiek is voor de cloud computing-omgeving kunnen worden gereproduceerd. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
 
@@ -259,7 +259,7 @@ Adobe raadt u aan om voor aanbevelingen over het implementeren van AEM in Azure 
 
 ### Dispatcher-platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor caching en taakverdeling. [ Download de recentste versie van Dispatcher ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
+De Dispatcher is de component voor caching en taakverdeling. [&#x200B; Download de recentste versie van Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Voor Experience Manager 6.5 is Dispatcher versie 4.3.2 of hoger vereist.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 
@@ -345,7 +345,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
  </tbody>
 </table>
 
-1. Uitgebreide Versie van de Steun van Firefox [ Leer meer op mozilla.org ](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Uitgebreide Versie van de Steun van Firefox [&#x200B; Leer meer op mozilla.org &#x200B;](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. ondersteuning voor Apple iPad
 
 ### Ondersteunde browsers voor websites {#supported-browsers-for-websites}
@@ -386,7 +386,7 @@ Wanneer een IP adres moet worden gespecificeerd, kunt u (zoals vereist) van het 
 
 ### Vereisten voor AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is standaard uitgeschakeld. Zie hier om [ Dynamische Media ](/help/assets/config-dynamic.md#enabling-dynamic-media) toe te laten.
+AEM Dynamic Media is standaard uitgeschakeld. Zie hier om [&#x200B; Dynamische Media &#x200B;](/help/assets/config-dynamic.md#enabling-dynamic-media) toe te laten.
 
 Als Dynamische media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
 
@@ -445,15 +445,15 @@ Om Dynamische Media op Vensters te gebruiken, installeer Microsoft® Visual Stud
 
 Voor Windows x64:
 
-* Krijg Microsoft® Visual Studio 2010 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=26999 ](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Krijg Microsoft® Visual Studio 2013 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=40784 ](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=48145 ](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Krijg Microsoft® Visual Studio 2010 redistributable in [&#x200B; https://www.microsoft.com/en-us/download/details.aspx?id=26999 &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Krijg Microsoft® Visual Studio 2013 redistributable in [&#x200B; https://www.microsoft.com/en-us/download/details.aspx?id=40784 &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Krijg Microsoft® Visual Studio 2015 redistributable in [&#x200B; https://www.microsoft.com/en-us/download/details.aspx?id=48145 &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Voor Windows x86:
 
-* Krijg Microsoft® Visual Studio 2010 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=26999 ](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Krijg Microsoft® Visual Studio 2013 redistributable in [ https://www.microsoft.com/en-in/download/details.aspx?id=40769 ](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Krijg Microsoft® Visual Studio 2015 redistributable in [ https://www.microsoft.com/en-us/download/details.aspx?id=52685 ](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Krijg Microsoft® Visual Studio 2010 redistributable in [&#x200B; https://www.microsoft.com/en-us/download/details.aspx?id=26999 &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Krijg Microsoft® Visual Studio 2013 redistributable in [&#x200B; https://www.microsoft.com/en-in/download/details.aspx?id=40769 &#x200B;](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* Krijg Microsoft® Visual Studio 2015 redistributable in [&#x200B; https://www.microsoft.com/en-us/download/details.aspx?id=52685 &#x200B;](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -533,4 +533,4 @@ Terugschrijven naar XMP wordt ondersteund en ingeschakeld voor de volgende platf
 
 Voor het XMPFilesProcessor-proces is de bibliotheek GLIBC_2.14 vereist. Gebruik een Linux® kernel die GLIBC_2.14 bevat, bijvoorbeeld Linux® kernel versie 3.1.x. Het verbetert de prestaties voor het verwerken van elementen die een grote hoeveelheid metagegevens bevatten, zoals PSD-bestanden. Als u een vorige versie van GLIBC gebruikt, treedt er een fout op in logs die begint met `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` .
 
-Voor om het even welke vraag met betrekking tot gesteunde formaten of platformversies, de steun van AEM Forms van het contact [ ](https://business.adobe.com/in/support/main.html)
+Voor om het even welke vraag met betrekking tot gesteunde formaten of platformversies, de steun van AEM Forms van het contact [&#x200B; &#x200B;](https://business.adobe.com/in/support/main.html)

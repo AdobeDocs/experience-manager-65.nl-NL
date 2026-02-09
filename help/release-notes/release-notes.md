@@ -506,7 +506,7 @@ Voor instructies om het Service Pack op Experience Manager Forms te installeren,
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
@@ -637,7 +637,7 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6524}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6524}
 
@@ -694,7 +694,7 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
 * **FORMS-21378**: Wanneer server-zijbevestiging (SSV) wordt toegelaten, kunnen de vormbijdragen ontbreken. Neem contact op met Adobe Support voor hulp als dit probleem zich voordoet.
 
-* **FORMS-23703**: Wanneer de `contains` regel zonder een standaardwaarde wordt gevormd, ontbreekt de zijbevestiging van de Server voor een adaptieve vorm. U kunt recentste versie van [&#x200B; AEM Forms 6.5.24.0 Service Pack &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installeren om de kwestie te bevestigen.
+* **FORMS-23703**: Wanneer de `contains` regel zonder een standaardwaarde wordt gevormd, ontbreekt de zijbevestiging van de Server voor een adaptieve vorm. U kunt recentste versie van [&#x200B; AEM Forms 6.5.24.0 Service Pack &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installeren om de kwestie te bevestigen.
 
 * Verbindingen met het formuliergegevensmodel kunnen niet worden geverifieerd omdat de vereiste trefwoorden en het vereiste regex-patroon niet standaard zijn toegestaan. Om de kwestie op te lossen, voeg het volgende via de Manager van de Configuratie (`/system/console/configmgr`) toe:
 
@@ -703,7 +703,7 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: bij conversie van HTML naar PDF (PDFG) kunnen zich periodiek time-outs voordoen. Vervolgens is een nieuwere versie van de invoegtoepassing Forms voor SP24 uitgebracht, die de correctie bevat. Als u deze kwestie ontmoet, werk uw milieu aan [&#x200B; recentste vrijgegeven toe:voegen-on van Forms voor 6.5.24.0 bij &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.**: bij conversie van HTML naar PDF (PDFG) kunnen zich periodiek time-outs voordoen. Vervolgens is een nieuwere versie van de invoegtoepassing Forms voor SP24 uitgebracht, die de correctie bevat. Als u deze kwestie ontmoet, werk uw milieu aan [&#x200B; recentste vrijgegeven toe:voegen-on van Forms voor 6.5.24.0 bij &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (de gehechtheid van het Dossier mist in Assign Taak): Wanneer een vorm met het gebied van de Bijlage van het a **Dossier** aan een Werkschema wordt voorgelegd van AEM dat een **toewijst Taak** stap gebruikt, verschijnen de gehechtheid niet wanneer de taak van Inbox wordt geopend. De bestanden worden correct opgeslagen in de opslagplaats en zijn zichtbaar in CRX. Alleen de interface van de taakstap toewijzen geeft deze niet weer.
 
@@ -723,10 +723,10 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
-* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/nl/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
 >* [&#x200B; Abonneren aan de updates van het de prioritaire product van Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html)

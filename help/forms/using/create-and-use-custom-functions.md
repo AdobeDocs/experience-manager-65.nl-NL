@@ -22,7 +22,7 @@ ht-degree: 0%
 AEM Forms 6.5 introduceerde de capaciteit om de functies van JavaScript te bepalen die in het bepalen van complexe bedrijfsregels kunnen worden gebruikt gebruikend de regelredacteur. AEM Forms biedt een aantal van dergelijke aangepaste functies uit de verpakking, maar u hebt de behoefte om uw eigen aangepaste functies te definiëren en deze in meerdere formulieren te gebruiken.
 
 De aangepaste functies vergroten de mogelijkheden van formulieren door het bewerken en verwerken van ingevoerde gegevens te vergemakkelijken om aan bepaalde vereisten te voldoen. Ze maken het ook mogelijk het formuliergedrag dynamisch te wijzigen op basis van vooraf gedefinieerde criteria.
-In Aanpassings Forms, kunt u douanefuncties binnen de [ regelredacteur van een Aangepaste Vorm ](/help/forms/using/rule-editor.md) gebruiken om specifieke bevestigingsregels voor vormgebieden tot stand te brengen.
+In Aanpassings Forms, kunt u douanefuncties binnen de [&#x200B; regelredacteur van een Aangepaste Vorm &#x200B;](/help/forms/using/rule-editor.md) gebruiken om specifieke bevestigingsregels voor vormgebieden tot stand te brengen.
 Laten we begrijpen hoe een aangepaste functie wordt gebruikt waarbij gebruikers het e-mailadres invoeren. Bovendien moet het ingevoerde e-mailadres een specifieke notatie hebben (het bevat een &#39;@&#39;-symbool en een domeinnaam). Maak een aangepaste functie als &quot;ValidateEmail&quot;, die het e-mailadres als invoer gebruikt en waar retourneert als het geldig en anders onwaar is.
 
 ```javascript
@@ -55,7 +55,7 @@ De voordelen van het gebruik van aangepaste functies in Adaptive Forms zijn:
 
 ## Ondersteunde JS-annotaties
 
-Zorg ervoor dat de aangepaste functie die u schrijft, vergezeld gaat van de `jsdoc` hierboven, voor het geval dat u aangepaste configuratie en beschrijving nodig hebt. Er zijn meerdere manieren om een functie in `JavaScript,` te declareren en met opmerkingen kunt u de functies bijhouden. Voor meer informatie, zie [ usejsdoc.org ](https://jsdoc.app/).
+Zorg ervoor dat de aangepaste functie die u schrijft, vergezeld gaat van de `jsdoc` hierboven, voor het geval dat u aangepaste configuratie en beschrijving nodig hebt. Er zijn meerdere manieren om een functie in `JavaScript,` te declareren en met opmerkingen kunt u de functies bijhouden. Voor meer informatie, zie [&#x200B; usejsdoc.org &#x200B;](https://jsdoc.app/).
 
 Ondersteunde `jsdoc` -tags:
 
@@ -195,7 +195,7 @@ Voer de volgende stappen uit om een aangepaste functie te maken:
 1. Navigeer naar de gemaakte map en maak een knooppunt van het type `cq:ClientLibraryFolder` as `clientlibs` .
 1. Navigeer naar de nieuwe map `clientlibs` en voeg de eigenschappen `allowProxy` en `categories` toe:
 
-   ![ de knoopeigenschappen van de Bibliotheek van de Douane ](/help/forms/using/assets/customlibrary-catproperties.png)
+   ![&#x200B; de knoopeigenschappen van de Bibliotheek van de Douane &#x200B;](/help/forms/using/assets/customlibrary-catproperties.png)
 
    >[!NOTE]
    >
@@ -209,7 +209,7 @@ Voer de volgende stappen uit om een aangepaste functie te maken:
 1. Sla uw wijzigingen op.
 De gemaakte mapstructuur ziet er als volgt uit:
 
-   ![ creeerde de Omslagstructuur van de Bibliotheek van de Cliënt ](/help/forms/using/assets/clientlibrary_folderstructure.png)
+   ![&#x200B; creeerde de Omslagstructuur van de Bibliotheek van de Cliënt &#x200B;](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Dubbelklik op het `functions.js` -bestand om de editor te openen. Het bestand bevat de code voor een aangepaste functie.
 Voeg de volgende code toe aan het JavaScript-bestand om de leeftijd te berekenen op basis van de geboortedatum (JJJJ-MM-DD).
 
@@ -245,7 +245,7 @@ Voeg de volgende code toe aan het JavaScript-bestand om de leeftijd te berekenen
 
 1. Sla het `js.txt` -bestand op.
 
-U kunt naar de volgende [ omslag van de douanefunctie ](/help/forms/using/assets/customfunction.zip) verwijzen. Download en installeer deze map in uw AEM-exemplaar.
+U kunt naar de volgende [&#x200B; omslag van de douanefunctie &#x200B;](/help/forms/using/assets/customfunction.zip) verwijzen. Download en installeer deze map in uw AEM-exemplaar.
 
 Nu kunt u de aangepaste functie in het adaptieve formulier gebruiken door de clientbibliotheek toe te voegen.
 
@@ -258,12 +258,12 @@ Zodra u de clientbibliotheek hebt geïmplementeerd in uw Forms CS-omgeving, gebr
 1. Klik op het pictogram Eigenschappen van de container van de hulplijn. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Open het tabblad **[!UICONTROL Basic]** en selecteer de naam van de **[!UICONTROL client library category]** in de vervolgkeuzelijst (in dit geval selecteert u `customfunctionscategory` ).
 
-   ![ Toevoegend de de cliëntbibliotheek van de douanefunctie ](/help/forms/using//assets/custom-function-category-name-core-component.png)
+   ![&#x200B; Toevoegend de de cliëntbibliotheek van de douanefunctie &#x200B;](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
 1. Klik op **[!UICONTROL Done]** .
 
 Nu, kunt u een regel tot stand brengen om douanefuncties in de regelredacteur te gebruiken:
 
-![ Toevoegend de de cliëntbibliotheek van de douanefunctie ](/help/forms/using//assets/calculateage-customfunction.png)
+![&#x200B; Toevoegend de de cliëntbibliotheek van de douanefunctie &#x200B;](/help/forms/using//assets/calculateage-customfunction.png)
 
-Nu, begrijpen wij hoe te om een douanefunctie te vormen en te gebruiken gebruikend de [ Invoke dienst van de Redacteur van de Regel in AEM Forms ](/help//forms/using/rule-editor.md).
+Nu, begrijpen wij hoe te om een douanefunctie te vormen en te gebruiken gebruikend de [&#x200B; Invoke dienst van de Redacteur van de Regel in AEM Forms &#x200B;](/help//forms/using/rule-editor.md).

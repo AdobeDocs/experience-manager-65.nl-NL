@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11685'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures voor het maken van formulieren in formulierontwerper
 
-Met LiveCycle Designer kunt u rijke formulierinhoud maken en voldoen aan de richtlijnen van Section 508. Deze handleiding bevat een overzicht van de beste praktijken voor het maken van een toegankelijk formulier en richtlijnen voor het implementeren van deze beste praktijken met behulp van LiveCycle Designer. De volgende aanbevolen procedures worden behandeld:
+Met LiveCycle Designer kunt u rijke formulierinhoud maken en voldoen aan de richtlijnen van Section 508. Deze handleiding bevat een overzicht van de aanbevolen procedures voor het maken van een toegankelijk formulier en richtlijnen voor het implementeren van deze aanbevolen procedures met LiveCycle Designer. De volgende aanbevolen procedures worden behandeld:
 
 1. [Formulieren eenvoudig en gebruiksvriendelijk houden](#keep-simple)
 1. [Formuliereigenschappen configureren om toegankelijkheidsinformatie te genereren](#configure-form-properties)
@@ -63,25 +63,25 @@ Gerelateerde controlepunten
    * 14.1 Gebruik de duidelijkste en eenvoudigste taal die geschikt is voor de inhoud van een site.
 * WCAG 2.0
    * 2.2.2 Pauze, Stoppen, Verbergen: voor het verplaatsen, knipperen, schuiven of automatisch bijwerken van gegevens, gelden alle volgende voorwaarden: (Niveau A)
-   * 2.3.1 Drie Flash of onder Drempel: Webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flits is onder de algemene flits en rode flitsdrempels. (Niveau A)
-   * 2.3.2 Drie Flash: De Web-pagina&#39;s bevatten niets die meer dan drie keer in om het even welke tweede periode knippert. (Niveau AAA)
+   * 2.3.1 Drie instanties van Flash of onder de drempelwaarde: webpagina&#39;s bevatten niets dat meer dan drie keer knippert in een periode van één seconde, of de flitser is lager dan de algemene flash- en rode flitsdrempels. (Niveau A)
+   * 2.3.2 Drie instanties: webpagina&#39;s bevatten niets dat in een tweede periode meer dan drie keer knippert. (Niveau AAA)
 
 
 ## Formuliereigenschappen configureren om toegankelijkheidsinformatie te genereren {#configure-form-properties}
 
-Voor een vorm om toegankelijk te zijn, moet het [&#x200B; waarneembaar &#x200B;](https://www.w3.org/TR/WCAG20/#perceivable) door ondersteunende technologie zijn. De meeste schermlezers overwegen bijvoorbeeld niet de visuele indeling van het formulier, maar de onderliggende structuur.
+Voor een vorm om toegankelijk te zijn, moet het [ waarneembaar ](https://www.w3.org/TR/WCAG20/#perceivable) door ondersteunende technologie zijn. De meeste schermlezers overwegen bijvoorbeeld niet de visuele indeling van het formulier, maar de onderliggende structuur.
 
 Als u deze onderliggende structuur wilt implementeren met LiveCycle Designer, moet u een PDF-formulier maken met toegankelijkheidsinformatie (ook wel codes genoemd), zodat de schermlezer of andere ondersteunende hulpmiddelen de tekst en onderdelen van het formulier kunnen lezen. In een formulier met toegankelijkheidsinformatie bevat elk element informatie over de eigen structuur, plus informatie over hoe het verwant is aan of afhankelijk is van andere elementen. Alleen in PDF-bestanden waarin toegankelijkheidsinformatie is opgenomen, kunnen schermlezers de inhoud van een document nauwkeurig identificeren en beschrijven.
 
 Als u een toegankelijk formulier wilt maken, moet u formuliereigenschappen zodanig configureren dat LiveCycle Designer toegankelijkheidsinformatie genereert wanneer het formulierontwerp wordt opgeslagen als een PDF-bestand:
 1. Kies Bestand > Formuliereigenschappen.
-1. Klik op het tabblad Opslagopties en schakel in het gebied PDF de optie Toegankelijkheidsinformatie (codes) genereren voor Acrobat in.
+1. Klik op het tabblad Opslagopties en schakel in het PDF-gebied de optie Toegankelijkheidsinformatie (codes) voor Acrobat genereren in.
 1. Klik op OK.
 
 In LiveCycle Designer is deze optie standaard ingeschakeld.
 
 >[!NOTE]
-> Deze opties zijn alleen van toepassing wanneer u het formulierontwerp opslaat als een PDF-bestand. Ze zijn niet van toepassing op PDF-bestanden die zijn gemaakt met LiveCycle Forms en die configuratieopties hebben die onafhankelijk zijn van deze optie in LiveCycle Designer.
+> Deze opties zijn alleen van toepassing wanneer u het formulierontwerp opslaat als een PDF-bestand. Ze zijn niet van toepassing op PDF-bestanden die zijn gemaakt met LiveCycle Forms en waarvan de configuratieopties onafhankelijk zijn van deze optie in LiveCycle Designer.
 
 **Verwante controlepunten**
 
@@ -94,13 +94,13 @@ In LiveCycle Designer is deze optie standaard ingeschakeld.
 
 ## Kies de juiste besturingselementen {#choose-right-controls}
 
-Wanneer u uw formulieren ontwerpt, gebruikt u ontwikkelingsobjecten op de tabbladen die beschikbaar zijn in de LiveCycle Designer Object Library. U kunt dit deelvenster weergeven door Venster > Objectbibliotheek te kiezen of op Shift+F12 te drukken (zie Figuur 1).
+Wanneer u uw formulieren ontwerpt, gebruikt u ontwikkelingsobjecten op de tabbladen die beschikbaar zijn in LiveCycle Designer Object Library. U kunt dit deelvenster weergeven door Venster > Objectbibliotheek te kiezen of op Shift+F12 te drukken (zie Figuur 1).
 
-![&#x200B; het Comité van de Bibliotheek van Objecten &#x200B;](/help/forms/using/assets/image-1.png)
+![ het Comité van de Bibliotheek van Objecten ](/help/forms/using/assets/image-1.png)
 
 Figuur 1: **het Comité van de Bibliotheek van Objecten**
 
-Als u andere objecten gebruikt, worden deze mogelijk genegeerd door hulpprogramma&#39;s. Als u alleen de standaardobjecten gebruikt, hoeft u alleen nog maar toegankelijkheidseigenschappen te definiëren voor objecten die u zelf hebt gemaakt. Als u wel eigen aangepaste objecten maakt en gebruikt, moet u het palet Toegankelijkheid gebruiken om toegankelijkheidseigenschappen in te stellen, zoals Rol, Knopinfo, Voorrang van Reader scherm en Aangepaste schermtekst. Kies Venster > Toegankelijkheid om het palet Toegankelijkheid weer te geven.
+Als u andere objecten gebruikt, worden deze mogelijk genegeerd door hulpprogramma&#39;s. Als u alleen de standaardobjecten gebruikt, hoeft u alleen nog maar toegankelijkheidseigenschappen te definiëren voor objecten die u zelf hebt gemaakt. Als u zelf aangepaste objecten maakt en gebruikt, moet u het palet Toegankelijkheid gebruiken om toegankelijkheidseigenschappen in te stellen, zoals Rol, Knopinfo, Voorrang Reader scherm en Reader-tekst voor aangepast scherm. Kies Venster > Toegankelijkheid om het palet Toegankelijkheid weer te geven.
 
 **Verwante controlepunten**
 * § 508 § 194.21
@@ -121,9 +121,9 @@ Afbeeldingen kunnen gebruikers met bepaalde handicaps helpen het begrip te verbe
 
 Als u ervoor kiest afbeeldingen te gebruiken, geef dan tekstbeschrijvingen op voor alle afbeeldings- en afbeeldingsveldobjecten. Zorg ervoor dat in de tekst het object en het doel op het formulier worden beschreven. Wanneer u een alternatief voor tekst definieert, leest de schermlezer dit alternatief wanneer de afbeelding wordt aangetroffen. Daarom moet voor een afbeelding met informatie altijd een alternatief voor de tekst zijn opgegeven.
 
-U kunt tekstbeschrijvingen opgeven met de teksteigenschappen Knopinfo of Aangepast scherm Reader in het palet Toegankelijkheid of via tekstvelden, bijschriften en objectnamen, zoals opgegeven in de optie Naam op het tabblad Binding. Figuur 2 toont bijvoorbeeld een voorbeeld van een afbeelding met de tekst &#39;Adobe Reader ophalen&#39;. Aangezien een schermlezer geen tekst kan lezen die deel uitmaakt van een afbeelding, moet u een tekstalternatief opnemen in het veld Tekst aangepaste Reader scherm in het palet Toegankelijkheid voor dit object. In de meeste gevallen moet de alternatieve tekst hetzelfde zijn als de tekst die in de afbeelding zichtbaar is (zie Figuur 2).
+U kunt tekstbeschrijvingen opgeven met de eigenschappen Knopinfo of Reader-tekst voor aangepast scherm in het palet Toegankelijkheid of via tekstvelden, bijschriften en objectnamen, zoals opgegeven in de optie Naam op het tabblad Binding. Figuur 2 toont bijvoorbeeld een voorbeeld van een afbeelding met de tekst &#39;Adobe Reader ophalen&#39;. Aangezien een schermlezer geen tekst kan lezen die deel uitmaakt van een afbeelding, moet u een tekstalternatief opnemen in het veld Reader-tekst voor aangepast scherm in het palet Toegankelijkheid voor dit object. In de meeste gevallen moet de alternatieve tekst hetzelfde zijn als de tekst die in de afbeelding zichtbaar is (zie Figuur 2).
 
-![&#x200B; die alternatieve tekst voor een beeld specificeren gebruikend het palet van de Toegankelijkheid &#x200B;](/help/forms/using/assets/image-2.png)
+![ die alternatieve tekst voor een beeld specificeren gebruikend het palet van de Toegankelijkheid ](/help/forms/using/assets/image-2.png)
 
 Figuur 2: **specificerend alternatieve tekst voor een beeld gebruikend het palet van de Toegankelijkheid**
 
@@ -134,7 +134,7 @@ Houd rekening met het volgende wanneer u de alternatieve tekst opgeeft:
 * Maak geen tekstbeschrijvingen voor statische afbeeldingen die alleen voor decoratie worden gebruikt.
 * Gebruik gescande gegevens niet als achtergrondinformatie. Dit kan gebeuren als een ontwerper een afdrukformulier scant en Adobe LiveCycle Designer gebruikt om nieuwe velden aan het formulier toe te voegen. Schermlezers kunnen de gescande gegevens in deze status niet detecteren.
 
-Wanneer u zuiver decoratieve grafische inhoud in uw formulieren opneemt, moet u ervoor zorgen dat schermlezers de aanwezigheid van de afbeelding niet aankondigen. Voor de meeste schermlezers kunt u dit bereiken door de eigenschap Tekst van Reader scherm in te stellen op Geen in het palet Toegankelijkheid. Als u dit niet doet, kunnen sommige schermlezers de aanwezigheid van een afbeelding aankondigen zonder aan te geven wat de afbeelding vertegenwoordigt. Voor dynamische afbeeldingen, zoals afbeeldingsveldobjecten, moet u ervoor zorgen dat tekstalternatieven correct worden bijgewerkt wanneer de afbeelding wordt gewijzigd. Maak geen tekstbeschrijvingen voor afbeeldingsveldobjecten die alleen voor decoratie worden gebruikt. U kunt de scripttaal FormCalc gebruiken om dynamisch tekstbeschrijvingen toe te wijzen aan een afbeeldingsveldobject. FormCalc is de standaardscripttaal van Adobe LiveCycle Designer. Neem bijvoorbeeld een formulier met een afbeeldingsveld met de naam ImageField1 en de bijbehorende tekst in het afbeeldingstekstknooppunt van de runtime-gegevens. Met scripts kunt u deze tekst in een geschikte gebeurtenis (zoals `form:ready` ) als volgt doorgeven:
+Wanneer u zuiver decoratieve grafische inhoud in uw formulieren opneemt, moet u ervoor zorgen dat schermlezers de aanwezigheid van de afbeelding niet aankondigen. Voor de meeste schermlezers kunt u dit bereiken door de eigenschap Reader-tekst voor scherm in te stellen op Geen in het palet Toegankelijkheid. Als u dit niet doet, kunnen sommige schermlezers de aanwezigheid van een afbeelding aankondigen zonder aan te geven wat de afbeelding vertegenwoordigt. Voor dynamische afbeeldingen, zoals afbeeldingsveldobjecten, moet u ervoor zorgen dat tekstalternatieven correct worden bijgewerkt wanneer de afbeelding wordt gewijzigd. Maak geen tekstbeschrijvingen voor afbeeldingsveldobjecten die alleen voor decoratie worden gebruikt. U kunt de scripttaal FormCalc gebruiken om dynamisch tekstbeschrijvingen toe te wijzen aan een afbeeldingsveldobject. FormCalc is de standaardscripttaal van Adobe LiveCycle Designer. Neem bijvoorbeeld een formulier met een afbeeldingsveld met de naam ImageField1 en de bijbehorende tekst in het afbeeldingstekstknooppunt van de runtime-gegevens. Met scripts kunt u deze tekst in een geschikte gebeurtenis (zoals `form:ready` ) als volgt doorgeven:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -142,7 +142,7 @@ Gerelateerde controlepunten
 * § 508 § 194.22
    * a) Voor elk niet-tekstequivalent moet een tekstequivalent worden opgegeven (bv. via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud).
 * WCAG 1.0
-   * 1.1 Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIFFEN), applets en programmatische objecten, ascii-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video (P1).
+   * 1.1 Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIF&#39;s), applets en programmatische objecten, ascii-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video (P1).
 * WCAG 2.0
    * 1.1.1 Niet-tekstuele inhoud: alle niet-tekstuele inhoud die aan de gebruiker wordt aangeboden, heeft een tekstalternatief dat hetzelfde doel dient, behalve in de situaties hieronder. (Niveau A)
 
@@ -161,19 +161,19 @@ Voer de volgende stappen uit om het palet Toegankelijkheid te gebruiken:
 1. Geef het palet Toegankelijkheid weer door Venster > Toegankelijkheid te kiezen of door op Shift+F6 te drukken.
 1. Selecteer een object in het formulier. In het palet worden de toegankelijkheidseigenschappen van het object weergegeven.
 
-![&#x200B; het palet van de Toegankelijkheid &#x200B;](/help/forms/using/assets/image-3.png)
+![ het palet van de Toegankelijkheid ](/help/forms/using/assets/image-3.png)
 
 Figuur 3: **het palet van de Toegankelijkheid**
 
-Wanneer het formulier wordt opgeslagen als een PDF, zoekt LiveCycle Designer in dat geval in het formulier naar de eigenschappen Eigen tekst, Knopinfo, Bijschrift en Naam, in die volgorde om tekst te zoeken die door schermlezers moet worden gelezen. U kunt deze standaardvolgorde overschrijven met de optie Voorrang van Reader scherm in het palet Toegankelijkheid:
+Wanneer het formulier wordt opgeslagen als een PDF, zoekt LiveCycle Designer het formulier naar de eigenschappen Eigen tekst, Knopinfo, Bijschrift en Naam in die volgorde om tekst te zoeken die door schermlezers kan worden gelezen. U kunt deze standaardvolgorde overschrijven met de optie Voorrang van Reader scherm in het palet Toegankelijkheid:
 
 1. Selecteer het object in het formulierontwerp.
 1. Klik op het palet Toegankelijkheid.
-1. Selecteer een andere optie voor de prioriteit Reader van scherm dan Geen.
+1. Selecteer een andere schermvoorrangsoptie voor Reader dan Geen.
 
 De volgende opties zijn beschikbaar:
 
-* **Tekst van de Douane**, die u in het gebied van de Tekst van de Reader van het Scherm van de Toegankelijkheid van het palet van de Douane plaatst. Met deze optie kunt u alle tekst opgeven die u wilt gebruiken in de hulpprogramma&#39;s, zoals schermlezers. Het gebruik van de instelling Bijschrift is in de meeste gevallen het meest geschikt. Het maken van aangepaste schermtekst moet alleen als een optie worden beschouwd wanneer het gebruik van Bijschrift of een toolTip niet mogelijk is.
+* **de Tekst van de Douane**, die u in het gebied van de Tekst van de Tekst van Reader van het Scherm van de Toegankelijkheid plaatst. Met deze optie kunt u alle tekst opgeven die u wilt gebruiken in de hulpprogramma&#39;s, zoals schermlezers. In de meeste situaties is het beter om de instelling Bijschrift te gebruiken. Het maken van Reader-tekst voor aangepast scherm moet alleen als een optie worden beschouwd wanneer het gebruik van Bijschrift of een toolTip niet mogelijk is.
 * **Uiteinde van het Hulpmiddel**, die u op het gebied van het Uiteinde van het Hulpmiddel van het palet van de Toegankelijkheid plaatst. Voor de meeste objecten wordt knopinfo weergegeven bij uitvoering wanneer de gebruiker de aanwijzer op het object plaatst. Knopinfo wordt alleen weergegeven voor bepaalde alleen-lezen objecten, zoals het object Streepjescode van een papieren formulier, wanneer een schermlezer wordt gebruikt.
 * **Titel**, die LiveCycle Designer zal veroorzaken om het bijbehorende (visuele) etiket van het vormgebied als het schermlezertekst te gebruiken.
 * **Naam**, die u op het Bindende gebied van de Naam van het lusje plaatst. Deze naam mag geen spaties bevatten.
@@ -181,20 +181,20 @@ De volgende opties zijn beschikbaar:
 
 Houd rekening met het volgende wanneer u het palet Toegankelijkheid gebruikt voor formulierbesturingselementlabels:
 
-* Als het bijschrift van het formulierbesturingselement het besturingselement correct beschrijft, is het toegankelijk voor schermlezers. In dit geval laat u zowel de velden Aangepaste tekst als Knopinfo leeg in het palet Toegankelijkheid, of wijzigt u de prioriteit SchermReader in Bijschrift.
-* Wanneer het richten van het schermlezers, is er geen punt om verschillende tekstbeschrijvingen voor de zelfde vormcontrole te specificeren, aangezien slechts één zal worden gebruikt: Het eerste niet lege gebied in de Volgorde van de Reader van het Scherm. Er is bijvoorbeeld geen reden om zowel aangepaste tekst als knopinfo voor een schermlezer op te geven.
-* Standaard leest de schermlezer het bijschrift als er niets is opgegeven in het vak Knopinfo of Aangepast scherm, tekst in de Reader.
+* Als het bijschrift van het formulierbesturingselement het besturingselement correct beschrijft, is het toegankelijk voor schermlezers. In dit geval laat u de velden Aangepaste tekst en Knopinfo leeg in het palet Toegankelijkheid of wijzigt u de voorkeur Reader-scherm in Bijschrift.
+* Bij schermlezers heeft het geen zin verschillende tekstbeschrijvingen op te geven voor hetzelfde formulierbesturingselement, aangezien er slechts één wordt gebruikt: het eerste niet-lege veld in de volgorde Reader-prioriteit scherm. Er is bijvoorbeeld geen reden om zowel aangepaste tekst als knopinfo voor een schermlezer op te geven.
+* Standaard leest de schermlezer het bijschrift als er niets is opgegeven in het vak Knopinfo of Aangepast scherm, Reader-tekst.
 * Gebruik het palet Toegankelijkheid niet om beschrijvingen te maken voor onzichtbare velden of gebieden.
-* Als u een beschrijving moet maken met de opties Knopinfo of Aangepaste Reader tekst, neemt u altijd het bijschrift op dat zichtbaar is op het formulier, behalve wanneer het zichtbare bijschrift geen betekenis heeft, bijvoorbeeld wanneer het bijschrift zelf wordt afgekort. Hierdoor kunnen gebruikers van schermlezers effectief communiceren met andere gebruikers over interface-elementen. Deze verschillende groepen gebruikers kunnen moeilijk hetzelfde interface-element identificeren als de bijschrifttekst afwijkt van de tekst voor Knopinfo of Aangepast scherm Reader.
+* Als u een beschrijving moet maken met de opties Knopinfo of Reader-tekst op Aangepast scherm, moet u altijd het bijschrift opnemen dat zichtbaar is op het formulier, behalve wanneer het zichtbare bijschrift geen betekenis heeft, bijvoorbeeld wanneer het bijschrift zelf wordt afgekort. Hierdoor kunnen gebruikers van schermlezers effectief communiceren met andere gebruikers over interface-elementen. Deze verschillende groepen gebruikers kunnen moeilijk hetzelfde interface-element identificeren als de bijschrifttekst afwijkt van de Reader-tekst voor knopinfo of Aangepast scherm.
 * Voor selectievakjes en besturingselementen voor vervolgkeuzelijsten in tabelcellen kondigt de schermlezer een bijschrift, knopinfo of aangepaste schermlezertekst aan die u voor het object opgeeft. Als u de kolomkop voor de alternatieve tekst voor deze objecten wilt gebruiken wanneer u deze in een tabel plaatst, moet u geen bijschrift, knopinfo of aangepaste schermlezertekst opgeven.
 * Als het besturingselement aanvullende instructies vereist, moet u ervoor zorgen dat deze ook in het tekstalternatief worden opgenomen. Neem voldoende gesproken informatie op voor gebruikers om te weten welke invoer wordt verwacht en hoe het veld correct moet worden ingevuld, maar vervaag gebruikers niet met overbodige informatie.
 * Verstrek onnodige informatie beschrijvend hoe te om controles in werking te stellen - laat de ondersteunende technologieën van de gebruiker dit voor de gebruiker behandelen. Gebruikers kunnen de uitgebreide configuratie aanpassen aan hun comfortniveau.
 
-Figuur 4 toont een voorbeeld van een tekstgebied met een visuele titel die voor sommige gebruikers van het schermlezer onduidelijk kan zijn. In dit voorbeeld is Aangepast scherm Readers Tekst ingesteld op Aantal pagina&#39;s en is de voorkeur voor Readers scherm ingesteld op Aangepaste tekst. Hierdoor wordt de werkelijke (visuele) bijschrifttekst (&quot;# pagina&#39;s&quot;) niet gebruikt door de schermlezer. U kunt ook een knopinfo opgeven.
+Figuur 4 toont een voorbeeld van een tekstgebied met een visuele titel die voor sommige gebruikers van het schermlezer onduidelijk kan zijn. In dit voorbeeld is Reader-tekst voor aangepast scherm ingesteld op Aantal pagina&#39;s en is de voorkeur voor Reader-scherm ingesteld op Eigen tekst. Hierdoor wordt de werkelijke (visuele) bijschrifttekst (&quot;# pagina&#39;s&quot;) niet gebruikt door de schermlezer. U kunt ook een knopinfo opgeven.
 
-![&#x200B; specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is &#x200B;](/help/forms/using/assets/image-4.png)
+![ specificerend de Tekst van Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is ](/help/forms/using/assets/image-4.png)
 
-Figuur 4: **specificerend de Tekst van de Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is**
+Figuur 4: **specificerend de Tekst van Reader van het Scherm van de Douane wanneer het zichtbare etiket ontoereikend is**
 
 ### Keuzerondjes labelen
 
@@ -203,12 +203,12 @@ Wanneer een gebruiker met een visuele handicap met de Tab-toets naar een keuzero
 * Een betekenisvol label voor elk keuzerondje
 Keuzerondjes toegankelijk maken met de bijschriften van de knoppen:
    1. Selecteer in het palet Hiërarchie de uitsluitingsgroep.
-   1. Klik op het palet Toegankelijkheid en typ in het vak Tekst van Reader Aangepast scherm de tekst die u voor de groep wilt lezen. Voor een uitsluitingsgroep die bijvoorbeeld opties voor betaling per creditcard aangeeft, typt u Een betalingsmethode selecteren.
+   1. Klik op het palet Toegankelijkheid en typ in het vak Reader-tekst voor aangepast scherm de tekst die u voor de groep wilt lezen. Voor een uitsluitingsgroep die bijvoorbeeld opties voor betaling per creditcard aangeeft, typt u Een betalingsmethode selecteren.
    1. Als de bijschriften voor elk keuzerondje tekst bevatten die zinvol is wanneer deze door een schermlezer wordt gesproken, selecteert u in het palet Object het tabblad Binding en schakelt u de optie Itemwaarde opgeven uit.
 
   Keuzerondjes toegankelijk maken met een opgegeven itemwaarde:
    1. Selecteer in het palet Hiërarchie de uitsluitingsgroep.
-   1. Klik op het palet Toegankelijkheid en typ in het vak Tekst van Reader Aangepast scherm de tekst die u voor de groep wilt lezen. Voor een uitsluitingsgroep die bijvoorbeeld opties voor betaling per creditcard aangeeft, typt u Een betalingsmethode selecteren.
+   1. Klik op het palet Toegankelijkheid en typ in het vak Reader-tekst voor aangepast scherm de tekst die u voor de groep wilt lezen. Voor een uitsluitingsgroep die bijvoorbeeld opties voor betaling per creditcard aangeeft, typt u Een betalingsmethode selecteren.
    1. Selecteer in het palet Hiërarchie het eerste keuzerondje in de groep.
    1. Klik in het palet Object op het tabblad Veld. Dubbelklik in het gebied Item op het item en typ een betekenisvolle waarde voor het geselecteerde keuzerondje. Voor de eerste knop in een groep betalingsmethoden typt u bijvoorbeeld Contant.
    1. Herhaal stap 3 en 4 voor elk keuzerondje in de uitsluitingsgroep.
@@ -230,7 +230,7 @@ Wanneer u een object maakt, plaatst LiveCycle Designer automatisch het bijschrif
 
 Het voorbeeld in Figuur 5 toont een tekstvakje met een titel boven het. De positie in het palet Indeling is ingesteld op Boven. De standaardlocatie van het bijschrift bevindt zich links van het tekstvak.
 
-![&#x200B; Veranderende ondertitel die het palet van de Lay-out plaatst &#x200B;](/help/forms/using/assets/image-5.png)
+![ Veranderende ondertitel die het palet van de Lay-out plaatst ](/help/forms/using/assets/image-5.png)
 
 Figuur 5: **Veranderende ondertitel die het palet van de Lay-out** plaatst
 
@@ -246,7 +246,7 @@ De volgende lijst verstrekt een overzicht van de regels van de etiketplaatsing v
 | Knop | Het bijschrift wordt automatisch op de knop geplaatst en hoeft niet handmatig te worden geplaatst. Zorg ervoor dat het doel van de knop correct wordt beschreven door de bijschrifttekst. |
 
 
-### Tekst van knopinfo of Aangepast scherm dynamisch vullen
+### Reader-tekst voor knopinfo of Aangepast scherm dynamisch vullen
 
 U kunt ook dynamisch het tekstalternatief van een formulierbesturingselement, zoals de knopinfo, vullen met een waarde uit een gegevensbron. U kunt bijvoorbeeld een aangepaste knopinfo weergeven voor een object in het Frans.
 In het schema waarmee u verbinding maakt, kan het volgende worden gedefinieerd voor knopinfo:
@@ -281,7 +281,7 @@ De volgende tekenreeks wordt in het vak Binding weergegeven: $record.tooltip.dp_
 
 Gebruikers van ondersteunende hulpmiddelen kunnen verschillende methoden gebruiken om gekoppelde tekst te lezen. Gebruikers van schermlezers gebruiken bijvoorbeeld vaak een lijst met koppelingen, zoals in Figuur 6, om snel de beschikbare koppelingen op een pagina te scannen.
 
-![&#x200B; de de dialoogdoos van de Lijst van Verbindingen JAWS &#x200B;](/help/forms/using/assets/image-6.png)
+![ de de dialoogdoos van de Lijst van Verbindingen JAWS ](/help/forms/using/assets/image-6.png)
 
 Figuur 6: **de dialoogdoos van de Lijst van de Verbindingen van JAWS**
 
@@ -316,7 +316,7 @@ De leesvolgorde van het formulier omvat alle statische objecten (zoals tekst en 
 >[!NOTE]
 > In veel gevallen houdt de tabvolgorde nauw verband met de leesvolgorde. Voor de eenvoud wordt de term &quot;tabvolgorde&quot; gebruikt in plaats van &quot;tab- of leesvolgorde&quot; in deze handleiding.
 
-### De standaardtabvolgorde in Designer-formulieren voor LiveCycles
+### De standaardtabvolgorde in LiveCycle Designer-formulieren
 
 De standaardtabvolgorde wordt automatisch gemaakt wanneer u het formulier opslaat als een gecodeerde PDF. In eerste instantie wordt de tabvolgorde in een formulier bepaald op basis van de lokale positie van de objecten met de volgende regels:
 
@@ -330,7 +330,7 @@ Voor eenvoudige formulieren (formulieren met een indeling van links naar rechts 
 
 Alle objecten worden weergegeven met een nummer in de rechterbovenhoek dat de plaats van het object in de standaardtabvolgorde aangeeft. De interactieve objecten in deze reeks vormen de tabvolgorde. In Figuur 7 ziet u de leesvolgorde van een basisformulier.
 
-![&#x200B; Visualisatie van de standaard lezingsorde voor een typische orde vorm &#x200B;](/help/forms/using/assets/image-7.png)
+![ Visualisatie van de standaard lezingsorde voor een typische orde vorm ](/help/forms/using/assets/image-7.png)
 
 Figuur 7: **Visualisatie van de standaardlezingsorde voor een typische orde vorm**
 
@@ -343,7 +343,7 @@ U kunt ervoor kiezen alleen interactieve formulierbesturingselementen (die de ta
 
 In een complex formulier kan het moeilijk zijn om te zien hoe de tabvolgorde van het ene object naar het andere loopt. Met visuele hulpmiddelen kunt u de tabvolgorde op het formulier weergeven. Wanneer u de aanwijzer boven het object houdt terwijl de visuele hulpmiddelen zijn ingeschakeld, geven blauwe pijlen de tabvolgorde voor de twee voorgaande en twee volgende objecten in de tabvolgorde weer (zie Figuur 8).
 
-![&#x200B; Visuele hulpmiddelen benadrukken de lusjeorde &#x200B;](/help/forms/using/assets/image-8.png)
+![ Visuele hulpmiddelen benadrukken de lusjeorde ](/help/forms/using/assets/image-8.png)
 
 Figuur 8: **Visuele hulpmiddelen benadrukken de lusjeorde**
 
@@ -355,7 +355,7 @@ Gebruik de volgende methoden om visuele hulpmiddelen in te schakelen:
 
 U kunt de standaardtabvolgorde wijzigen door de coördinaten van een object naar een andere locatie te verplaatsen. In Figuur 9 vindt het veld Productnaam bijvoorbeeld plaats in de tabvolgorde vóór het veld Hoeveelheid. Als u deze volgorde wilt wijzigen, kunt u het veld Productnaam verplaatsen zodat het onder of rechts van het veld Hoeveelheid wordt geplaatst.
 
-![&#x200B; De standaardlusjeorde wordt verlaten aan recht &#x200B;](/help/forms/using/assets/image-9.png)
+![ De standaardlusjeorde wordt verlaten aan recht ](/help/forms/using/assets/image-9.png)
 
 Figuur 9: **de standaardlusjeorde wordt verlaten aan recht**
 
@@ -368,7 +368,7 @@ U kunt de positie van een object als volgt wijzigen:
 
 U kunt de coördinaten van een object nauwkeuriger wijzigen met het palet Indeling (weergegeven in Figuur 10). Met dit palet kunt u de X- en Y-coördinaten en de breedte en hoogte van het object opgeven.
 
-![&#x200B; Gebruikend coördinaten om een voorwerp met het palet van de Lay-out nauwkeurig te plaatsen &#x200B;](/help/forms/using/assets/image-10.png)
+![ Gebruikend coördinaten om een voorwerp met het palet van de Lay-out nauwkeurig te plaatsen ](/help/forms/using/assets/image-10.png)
 
 Figuur 10: **Gebruikend coördinaten om een voorwerp met het palet van de Lay-out** precies te plaatsen
 
@@ -384,7 +384,7 @@ Zoals hierboven vermeld, kunt u met subformulieren groepen objecten invoegen die
 
 Wanneer twee subformulieren met veldobjecten naast elkaar worden geplaatst, doorloopt de tabvolgorde de velden in het eerste subformulier voordat naar het volgende subformulier wordt gegaan. Dit wordt geïllustreerd in Figuur 11, waar twee subformulieren worden gebruikt om een op kolom gebaseerde standaardtabvolgorde te maken.
 
-![&#x200B; Standaard lusjeorde gebruikend subforms &#x200B;](/help/forms/using/assets/image-11.png)
+![ Standaard lusjeorde gebruikend subforms ](/help/forms/using/assets/image-11.png)
 
 Figuur 11: **Standaard lusjeorde gebruikend subforms**
 
@@ -395,7 +395,7 @@ Subformulieren, keuzerondjes en inhoudsgebieden beïnvloeden samen met de vertic
 U kunt de standaardtabvolgorde wijzigen wanneer u een andere volgorde in het formulier nodig hebt en de wijziging kan niet worden bereikt door plaatsing of groepering in subformulieren. Als u de standaardtabvolgorde wilt wijzigen, kunt u een aangepaste tabvolgorde maken met het palet Tabvolgorde.
 Met het palet Tabvolgorde (zie Figuur 12) kunt u de volgorde controleren en wijzigen waarin objecten in het formulier worden gelezen met behulp van ondersteunende hulpmiddelen en worden genavigeerd door de Tab-toets van de gebruiker.
 
-![&#x200B; het palet van de Orde van het Lusje &#x200B;](/help/forms/using/assets/image-12.png)
+![ het palet van de Orde van het Lusje ](/help/forms/using/assets/image-12.png)
 
 Figuur 12: **het palet van de Orde van het Lusje**
 
@@ -418,7 +418,7 @@ In de lijst staan dezelfde tabvolgordenummers als de nummers die op het formulie
 * Klik in de lijst in het palet Tabvolgorde op het geselecteerde object (of selecteer het en druk op F2) om het nummer naast de objectnaam bewerkbaar te maken. Typ vervolgens het getal dat de nieuwe positie van het object in de tabvolgorde aangeeft en druk op Enter.
 * Selecteer Kopiëren in het menu van het palet Tabvolgorde en selecteer in de lijst het object waarboven u het object wilt plaatsen dat u verplaatst. Selecteer vervolgens Plakken in het menu.
 
-Wanneer u het object naar een nieuwe plaats in de volgorde verplaatst, wijst LiveCycle Designer de tabvolgordenummers opnieuw toe. Hoewel de tabvolgorde voor de objecten op een basispagina wordt weergegeven op het tabblad Ontwerpweergave, kunt u de volgorde voor deze objecten alleen wijzigen op het tabblad Basispagina&#39;s. Als u fragmentverwijzingen gebruikt in uw formulier, is de tabvolgorde binnen een fragment zichtbaar wanneer u de volgorde voor het formulier weergeeft. Als u de tabvolgorde in een fragment wilt wijzigen, moet u het bronbestand van het fragment openen voor bewerking, de wijziging aanbrengen en het bestand opslaan. Deze wijziging is van invloed op alle formulieren die gebruikmaken van dit fragment.
+Wanneer u het object naar een nieuwe plaats in de volgorde verplaatst, wijst LiveCycle Designer de tabvolgordenummers toe. Hoewel de tabvolgorde voor de objecten op een basispagina wordt weergegeven op het tabblad Ontwerpweergave, kunt u de volgorde voor deze objecten alleen wijzigen op het tabblad Basispagina&#39;s. Als u fragmentverwijzingen gebruikt in uw formulier, is de tabvolgorde binnen een fragment zichtbaar wanneer u de volgorde voor het formulier weergeeft. Als u de tabvolgorde in een fragment wilt wijzigen, moet u het bronbestand van het fragment openen voor bewerking, de wijziging aanbrengen en het bestand opslaan. Deze wijziging is van invloed op alle formulieren die gebruikmaken van dit fragment.
 
 Als u besluit dat u de aangepaste tabvolgorde niet wilt gebruiken voor uw formulier, kunt u snel terugkeren naar de automatische (standaard)tabvolgorde door de volgende stappen uit te voeren (wijzigingen in de tabvolgorde gaan verloren):
 1. Selecteer Automatisch in het palet Tabvolgorde.
@@ -440,7 +440,7 @@ Als u besluit dat u de aangepaste tabvolgorde niet wilt gebruiken voor uw formul
 
 Gebruikers moeten het formulier volledig kunnen invullen met alleen het toetsenbord of een equivalent alternatief invoerapparaat. Gebruikers met een beperkte mobiliteit of een visuele handicap hebben misschien geen andere keuze dan het toetsenbord te gebruiken en veel gebruikers die een muis kunnen gebruiken, geven de voorkeur aan invoer via het toetsenbord. Door verschillende invoermethoden toe te staan, maakt u niet alleen toegankelijke formulieren, maar ook formulieren die beter zijn afgestemd op de voorkeuren van alle gebruikers.
 
-In LiveCycle Designer is de eenvoudigste manier om ervoor te zorgen dat uw besturingselementen via het toetsenbord toegankelijk zijn, via de besturingselementen die op het tabblad Algemeen in het palet Objectbibliotheek worden vermeld. Deze besturingselementen reageren standaard op zowel muis- als toetsenbordinvoer. Voor meer informatie, zie sectie 2.3 kiezen de juiste controles in deze gids.
+In LiveCycle Designer kunt u er het eenvoudigst voor zorgen dat uw besturingselementen via het toetsenbord toegankelijk zijn door de besturingselementen te gebruiken die op het tabblad Algemeen in het palet Objectbibliotheek worden weergegeven. Deze besturingselementen reageren standaard op zowel muis- als toetsenbordinvoer. Voor meer informatie, zie sectie 2.3 kiezen de juiste controles in deze gids.
 
 Een ander belangrijk aspect van toetsenbordtoegankelijkheid is ervoor te zorgen dat elk interactief element deel uitmaakt van de tabvolgorde van het formulier. Hierdoor kan de gebruiker de cursor vooruit en achteruit door het formulier verplaatsen met de Tab-toets en de toetscombinatie Shift+Tab. Zorg ervoor dat u een logische tabvolgorde instelt die alle velden en knoppen bevat. Zie sectie 2.6 Zorg ervoor dat de lees- en tabvolgorde in deze handleiding correct zijn voor meer informatie.
 
@@ -471,7 +471,7 @@ Informatie die uitsluitend in kleur wordt weergegeven (kleuren met semantische b
 
 Figuur 13 toont bijvoorbeeld een formulierveld met een rood bijschrift (opgegeven met het palet Font) om aan te geven dat het formulierveld verplicht is. In dit voorbeeld is de kleur de enige indicator voor het verschil tussen de vereiste en optionele invoervelden, waardoor het voor blinde gebruikers of gebruikers met bepaalde typen kleurenblindheid onmogelijk is ze te onderscheiden.
 
-![&#x200B; Gebruikend kleur alleen om informatie &#x200B;](/help/forms/using/assets/image-13.png) te vervoeren
+![ Gebruikend kleur alleen om informatie ](/help/forms/using/assets/image-13.png) te vervoeren
 
 Figuur 13: **Gebruikend kleur alleen om informatie** te vervoeren
 
@@ -486,17 +486,17 @@ Houd er bij het opgeven van beschrijvingen of instructies aan de gebruiker van h
 
 Veel gebruikers met een visuele handicap vertrouwen op een hoog contrast tussen tekst en de achtergrond voor het lezen van formulieren. Wanneer het contrast tussen de achtergrondkleur en de voorgrondkleur onvoldoende is, kan een formulier voor sommige gebruikers moeilijk of zelfs onmogelijk leesbaar worden. In Figuur 14 ziet u een voorbeeld van een formulier met onvoldoende contrast.
 
-![&#x200B; Vorm van A met ontoereikend kleurencontrast &#x200B;](/help/forms/using/assets/image-14.png)
+![ Vorm van A met ontoereikend kleurencontrast ](/help/forms/using/assets/image-14.png)
 
 Figuur 14: **Vorm van A met ontoereikend kleurencontrast**
 
 Het wordt ten zeerste aanbevolen de standaardkleuren voor lettertypen en achtergronden te gebruiken: zwart op een witte achtergrond. Als u deze standaardkleuren moet wijzigen, moet u een geschikte combinatie kiezen van kleuren met veel contrast. Kies een donkere voorgrondkleur voor een lichte achtergrondkleur of andersom. Om zeker te zijn, gebruik een hulpmiddel (zoals de Analysator van het Contrast van de Kleur WAT-C) om te verifiëren dat het contrast voldoende is.
 
-Met Adobe Reader en Adobe Acrobat kunnen gebruikers opgeven of kleuren moeten worden vervangen om aan hun visuele behoeften te voldoen. De gebruikers kunnen hun eigen contrastschema specificeren, of zij kunnen verkiezen om een regeling te gebruiken die door het werkende systeem wordt verstrekt. Bovendien hebben Adobe Reader en Adobe Acrobat een eigen hoog contrastschema dat mogelijk is ingeschakeld. Deze opties zijn alleen succesvol als u altijd standaardkleuren gebruikt.
+Met Adobe Reader en Adobe Acrobat kunnen gebruikers opgeven of kleuren moeten worden vervangen om aan hun visuele behoeften te voldoen. De gebruikers kunnen hun eigen contrastschema specificeren, of zij kunnen verkiezen om een regeling te gebruiken die door het werkende systeem wordt verstrekt. Bovendien hebben Adobe Reader en Adobe Acrobat een eigen hocontrast-schema dat mogelijk is ingeschakeld. Deze opties zijn alleen succesvol als u altijd standaardkleuren gebruikt.
 
 Tijdens het ontwerpen van uw formulier test u het regelmatig met een kleurenschema dat lijkt op de instelling die veel gebruikers met een visuele handicap zullen gebruiken om het formulier in te vullen. Deze praktijk helpt u kwesties vroeg in het ontwerpproces ontdekken en verbeteren.
 
-Recommendations voor het gebruik van kleuren:
+Aanbevelingen voor het gebruik van kleuren:
 * Zorg ervoor dat er geen informatie verloren gaat als de semantische kleur niet zichtbaar is.
 * Als u geen standaardkleuren kunt gebruiken, moet u ervoor zorgen dat de kleuren een hoog contrast hebben, zoals zwart op een lichte (witte) achtergrond. Gedeeltelijk waargenomen gebruikers hebben doorgaans een hoog contrast tussen de tekst en de achtergrond nodig om deze te kunnen lezen.
 * Test de leesbaarheid van uw formulieren door het scherm om te schakelen naar een display met hoog contrast, zowel in Windows als in Adobe Reader of Adobe Acrobat. Mac OSX biedt alleen een eenvoudig grijswaardenfilter voor hoog contrast, dus dit is niet voldoende voor testen.
@@ -511,8 +511,8 @@ Recommendations voor het gebruik van kleuren:
    * 2.2 Zorg ervoor dat de combinaties van de voor- en achtergrondkleur voldoende contrast bieden bij weergave door iemand met een kleurdeficit of bij weergave op een zwart-witscherm. [ Prioriteit 2 voor beelden, Prioriteit 3 voor tekst ] (P2).
 * WCAG 2.0
    * 1.4.1 Gebruik van kleur: kleur wordt niet gebruikt als de enige visuele manier om informatie over te brengen, een handeling aan te geven, een reactie te vragen of een visueel element te onderscheiden. (Niveau A)
-   * 1.4.3 Contrast (minimaal): de visuele weergave van tekst en afbeeldingen van tekst heeft een contrastverhouding van ten minste 4,5:1, behalve voor: (Niveau AA)
-   * 1.4.6 Contrast (uitgebreid): de visuele presentatie van tekst en afbeeldingen van tekst heeft een contrastverhouding van ten minste 7:1, behalve voor de volgende: (Niveau AAA)
+   * 1.4.3 Contrast (Minimum): De visuele presentatie van tekst en beelden van tekst heeft een contrastverhouding van minstens 4.5 :1, behalve het volgende: (Niveau AA)
+   * 1.4.6 Contrast (uitgebreid): De visuele presentatie van tekst en afbeeldingen van tekst heeft een contrastverhouding van minstens 7 :1, behalve de volgende: (Niveau AAA)
 
 
 ## Kopcellen voor tabellen opgeven{#provide-heading-cells}
@@ -583,7 +583,7 @@ Wanneer een formulier lang en complex wordt, wordt het gebruiksgemak ervan sterk
 * Elke kop vertelt de gebruiker van de schermlezer wat in de sectie na de kop kan worden verwacht.
 * Schermlezers bieden snelkoppelingen waarmee u snel tussen de verschillende koppen in het formulier kunt schakelen. Bovendien kunnen gebruikers een lijst met koppen openen, met een overzicht van de documentstructuur en een snelle navigatie.
 
-Het is handiger mechanismen in te stellen waarmee gebruikers andere gebieden van het formulier kunnen overslaan. Met het palet Toegankelijkheid in LiveCycle Designer kunt u een kopstructuur aan het formulier toevoegen.
+Het is handiger mechanismen in te stellen waarmee gebruikers andere gebieden van het formulier kunnen overslaan. Met het palet Toegankelijkheid in LiveCycle Designer kunt u een kopstructuur aan een formulier toevoegen.
 
 ### Schipmechanismen beschikbaar stellen
 
@@ -598,7 +598,7 @@ Met slimme velden kunt u bepaalde formulieren gemakkelijker invullen. Een formul
 
 Met het palet Toegankelijkheid kunt u rollen toewijzen aan objecten op basis van de bestemming van het object. Deze rollen kunnen worden toegepast om rubrieken op verschillende niveaus tot stand te brengen.
 
-![&#x200B; die een kopbalrol in het palet van de Toegankelijkheid specificeren &#x200B;](/help/forms/using/assets/image-15.png)
+![ die een kopbalrol in het palet van de Toegankelijkheid specificeren ](/help/forms/using/assets/image-15.png)
 Figuur 15: **specificerend een koprol in het palet van de Toegankelijkheid**
 
 Ga als volgt te werk om een kop in uw formulier te maken:
@@ -615,7 +615,7 @@ Met de meeste schermlezers kunnen gebruikers op basis van hun niveau snel navige
    * Rubriek niveau 3: Persoonlijke gegevens
    * Koptekst niveau 3: Adres
 
-![&#x200B; Structurerend een vorm gebruikend rubrieken &#x200B;](/help/forms/using/assets/image-16.png)
+![ Structurerend een vorm gebruikend rubrieken ](/help/forms/using/assets/image-16.png)
 
 Figuur 16: **Structurerend een vorm gebruikend rubrieken**
 
@@ -630,7 +630,7 @@ Zorg altijd dat de volgorde van de kopniveaus logisch is. Een subsectie van een 
 
 Soms is het ook handig om lijstitems aan uw formulier toe te voegen. Lijsten zijn handig om verwante items te groeperen en bieden gebruikers van schermlezers de mogelijkheid om te weten hoeveel items zich in een lijst bevinden en er snel voorbij te navigeren. Als u lijsten correct markeert, wordt de structuur van het formulier duidelijker voor schermlezers.
 
-In LiveCycle Designer maakt u lijsten met behulp van subformulieren met de volgende stappen:
+In LiveCycle Designer maakt u lijsten met behulp van subformulieren. Ga hierbij als volgt te werk:
 
 1. Selecteer een subformulier met de inhoud die wordt gemarkeerd als lijstitems.
 1. Selecteer in het palet Toegankelijkheid de optie Lijst als rol.
@@ -689,13 +689,13 @@ Houd bij het ontwerpen van scripts voor toegankelijkheid rekening met de volgend
 ## Controleer of alle audio- en video-inhoud toegankelijk is{#ensure-audio-video-accessible}
 
 Als uw formulieren audio- of video-inhoud bevatten, inclusief audio- en videoclips, moet u ervoor zorgen dat deze inhoud toegankelijk is. Zorg er in het bijzonder voor dat videoclips die in formulieren zijn opgenomen, bijschriften (ook wel ondertitels genoemd) bevatten voor doven en moeilijke gehoorgebruikers en videobeschrijvingen voor blinde gebruikers. Voor audiobestanden die niet met video-inhoud zijn gesynchroniseerd, volstaat een eenvoudige transcriptie.
-Voor Flash gebaseerde media, raadpleeg [&#x200B; verbinding &#x200B;](/help/forms/using/best-practices-for-creating-forms-in-designer.md) voor informatie bij het verstrekken van titels.
+Voor Flits gebaseerde media, raadpleeg [ verbinding ](/help/forms/using/best-practices-for-creating-forms-in-designer.md) voor informatie bij het verstrekken van titels.
 
 **Verwante controlepunten**:
 * § 508 § 194.22
    * b) Equivalente alternatieven voor multimediapresentaties worden gesynchroniseerd met de presentatie.
 * WCAG 1.0
-   * 1.1 Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIFFEN), applets en programmatische objecten, ascii-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video (P1).
+   * 1.1 Geef een tekstequivalent op voor elk niet-tekstelement (bijvoorbeeld via &quot;alt&quot;, &quot;longdesc&quot; of in elementinhoud). Dit omvat: afbeeldingen, grafische voorstellingen van tekst (inclusief symbolen), gebieden met afbeeldingen met hyperlinks, animaties (bijvoorbeeld geanimeerde GIF&#39;s), applets en programmatische objecten, ascii-illustraties, frames, scripts, afbeeldingen die worden gebruikt als lijstopsommingstekens, spacers, grafische knoppen, geluiden (al dan niet met gebruikersinteractie), zelfstandige audiobestanden, audiotracks van video en video (P1).
    * 1.3 Totdat gebruikersagenten automatisch het tekstequivalent van een visueel spoor kunnen lezen, verstrek een auditieve beschrijving van de belangrijke informatie van het visuele spoor van een presentatie van verschillende media (P1).
    * 1.4 Voor elke op tijd gebaseerde multimediapresentatie (bv. een film of animatie) moet u gelijkwaardige alternatieven (bv. bijschriften of auditieve beschrijvingen van de visuele track) synchroniseren met de presentatie (P1).
 * WCAG 2.0
@@ -715,14 +715,14 @@ Formulierinhoud wordt gelezen door ondersteunende hulpmiddelen die taalspecifiek
 
 Als de tekst (of alternatieve tekst) in uw formulieren in meerdere talen wordt weergegeven, moet u de gebieden van het formulier identificeren waarin een overgang van de ene taal naar de andere wordt gemaakt.
 
-In LiveCycle Designer wordt de primaire taal ingesteld door de eigenschap Landinstelling van het formulier en de eigenschap Landinstelling voor het subformulier op hoofdniveau in te stellen. Als u wijzigingen in de primaire taal wilt identificeren, wijzigt u de eigenschap Landinstelling voor elk object dat een andere taal dan de taal van het formulier gebruikt.
+In LiveCycle Designer wordt het instellen van de primaire taal uitgevoerd door de eigenschap Landinstelling van het formulier en de eigenschap Landinstelling voor het subformulier op hoofdniveau in te stellen. Als u wijzigingen in de primaire taal wilt identificeren, wijzigt u de eigenschap Landinstelling voor elk object dat een andere taal dan de taal van het formulier gebruikt.
 
 De eigenschap Landinstelling van een formulier instellen:
 1. Kies Bestand > Formuliereigenschappen en selecteer het tabblad Standaard
 2. Selecteer de juiste taal voor de landinstelling van het formulier (zie Figuur 17)
 3. Klik op OK
 
-![&#x200B; Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm &#x200B;](/help/forms/using/assets/image-17.png)
+![ Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm ](/help/forms/using/assets/image-17.png)
 
 Figuur 17: **Veranderend de Plaats van de Vorm op de de dialoogdoos van de Eigenschappen van de Vorm**
 
@@ -731,7 +731,7 @@ U kunt als volgt de eigenschap Lokaal instellen van het subformulier op hoofdniv
 1. Geef het palet Object weer door Venster > Object te kiezen
 1. Selecteer in het palet Object het tabblad Veld en selecteer in de lijst Landinstelling de taal die voor het object moet worden gebruikt (zie Figuur 18). Houd er bij het toepassen van verschillende landinstellingen op afzonderlijke objecten rekening mee dat de objecten in tabellen en subformulieren automatisch dezelfde landinstelling krijgen als de tabel en het subformulier.
 
-![&#x200B; Veranderend de scène van een voorwerp &#x200B;](/help/forms/using/assets/image-18.png)
+![ Veranderend de scène van een voorwerp ](/help/forms/using/assets/image-18.png)
 
 Figuur 18: **Veranderend de scène van een voorwerp**
 

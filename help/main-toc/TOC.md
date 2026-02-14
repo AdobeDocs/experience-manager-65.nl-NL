@@ -1448,7 +1448,7 @@ ht-degree: 1%
          + De Universal Editor {#universal-editor}
             + [Inleiding](/help/sites-developing/universal-editor/introduction.md)
       + Hybride en SPA AEM Development {#spas}
-         + [&#x200B; Hybride en KUUROORD met AEM &#x200B;](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [&#x200B; Hybride en KUUROORD met AEM &#x200B;](https://business.adobe.com/nl/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Veroudering van SPA-editor](/help/sites-developing/spa-editor-deprecation.md)
          + [Introductie van het KUUROORD en Analyse](/help/sites-developing/spa-walkthrough.md)
          + [SPA WKND-zelfstudie](/help/sites-developing/spa-wknd.md)

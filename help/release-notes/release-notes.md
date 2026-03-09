@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3e1f704d1d0e64deefe157338ab5081521a45c3c
+source-git-commit: 1420f4ee543940b0b95f887d14f9318862219238
 workflow-type: tm+mt
-source-wordcount: '9848'
+source-wordcount: '9758'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,14 @@ ht-degree: 0%
 | Versie | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Datum | 26 november 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL downloaden | [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL downloaden | [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.24.0 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [&#x200B; installeer dit Pak van de Dienst &#x200B;](#install) op [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.24.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd en opgeloste problemen. Het omvat ook prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [ installeer dit Pak van de Dienst ](#install) op [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### Forms
 
-* **Steun voor het overgaan van douaneXCI:** toegevoegde steun voor het overgaan van douaneXCI in parameters van cmdline toepassing xmlformcmd. Hierdoor kunnen gebruikers aangepaste XCI-bestanden opgeven voor het testen, waardoor de flexibiliteit en de controle over het testproces worden verbeterd. (LC-3923248)
+* **Steun voor het overgaan van douaneXCI:** toegevoegde steun voor het overgaan van douaneXCI in parameters van cmdline toepassing xmlformcmd. Met deze functionaliteit kunnen gebruikers aangepaste XCI-bestanden opgeven voor het testen, waardoor de flexibiliteit en controle over het testproces wordt verbeterd. (LC-3923248)
 
 
 ## Opgeloste problemen in Service Pack 24 {#fixed-issues}
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 ### [!DNL Assets] {#assets-sp24}
 
-* Na het bijwerken naar versie 6.5.23.0 leidde het sorteren van mappen op wijzigingsdatum in de Kaartweergave tot problemen bij het zoeken naar onlangs gewijzigde middelen voor on-premise implementaties. (ASSETS-56946)
-* De herhaalde ingangen van het waarschuwingslogboek worden geproduceerd tijdens planneruitvoeringen. (ASSETS-52554)
-* Het sorteren van titels werkt niet in de Lijstweergave. (ASSETS-50716)
-* Het venster Eigenschappen van verzameling wordt niet gesloten, zelfs niet nadat u op de knop Annuleren hebt geklikt. (ASSETS-48504)
+* Na het bijwerken naar versie 6.5.23.0 leidde het sorteren van mappen op wijzigingsdatum in de Kaartweergave tot problemen bij het zoeken naar onlangs gewijzigde middelen voor on-premise implementaties. (Assets-56946)
+* De herhaalde ingangen van het waarschuwingslogboek worden geproduceerd tijdens planneruitvoeringen. (Assets-52554)
+* Het sorteren van titels werkt niet in de Lijstweergave. (Assets-50716)
+* Het venster Eigenschappen van verzameling wordt niet gesloten, zelfs niet nadat u op de knop Annuleren hebt geklikt. (Assets-48504)
 
 * Een *Ongeldige URL* fout komt voor wanneer het proberen om activa in AEM 6.5.22 te annoteren. (NPR-42684)
-* Het Assets Metadata Editor-formulier wordt niet opnieuw geïnitialiseerd nadat er handelingen met betrekking tot de metagegevens zijn uitgevoerd of wanneer de relatie tussen de gegevens is verbroken. (ASSETS-52207)
-* Wanneer elementen van de externe DAM opnieuw worden gesynchroniseerd naar de lokale Sites, wordt de gepubliceerde status van de elementen onjuist bijgewerkt naar `Not published` . (ASSETS-48958)
-* Problemen die zijn opgetreden tijdens een upgrade van SP23 naar 6.5 LTS. (ASSETS-50541)
+* Het Assets Metadata Editor-formulier wordt niet opnieuw geïnitialiseerd nadat er handelingen met betrekking tot de metagegevens zijn uitgevoerd of wanneer de relatie tussen de gegevens is verbroken. (Assets-52207)
+* Wanneer elementen van de externe DAM opnieuw worden gesynchroniseerd naar de lokale Sites, wordt de gepubliceerde status van de elementen onjuist bijgewerkt naar `Not published` . (Assets-48958)
+* Problemen die zijn opgetreden tijdens een upgrade van SP23 naar 6.5 LTS. (Assets-50541)
 
 ### [!DNL Sites]{#sites-6524}
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 * De navigatie van het toetsenbord in de het huispaginaboom van Plaatsen volgt een logische opeenvolging na het gebruiken van **Uitgezocht allen**. De bewegingen van de nadruk van **Uitgezochte allen** aan de volgende controle (Open linkerspoor) in plaats van terug naar het begin van de pagina te springen. (SITES-24307)
 * De titels van de sectie en geven controles in de redacteur van Plaatsen uit antwoorden op toetsenbordnadruk en activering. Toetsenbordgebruikers geven dezelfde titel en handelingen weer die eerder alleen op de muisaanwijzer werden weergegeven. (SITES-24479)
 * De knopen in de redacteur van Plaatsen stellen beschrijvende namen in plaats van generische of ontbrekende etiketten bloot. Hulptechnologieën kondigen de juiste actie aan, die helderheid verbetert en wanklikken vermindert. (SITES-24480)
-* Schermlezers ontvangen een gesproken bericht &quot;Laden&quot; terwijl de weergave Sites wordt vernieuwd. De update voegt een speciale status live regio toe en schrijft de boodschap programmatisch in deze regio, die de voortgang bevestigt zonder de focus te verplaatsen. (SITES-24481)
+* Schermlezers ontvangen een gesproken `Loading` bericht terwijl de weergave Sites wordt vernieuwd. De update voegt een speciale status live regio toe en schrijft de boodschap programmatisch in deze regio, die de voortgang bevestigt zonder de focus te verplaatsen. (SITES-24481)
 * De zijspoor van Assets omvat nu een duidelijke **Dichte** controle en keert nadruk aan de knevelknoop terug. Gebruikers van toetsenborden en schermlezers sluiten het deelvenster direct af in plaats van met de Tab-toets door elk besturingselement te gaan. Door deze wijziging worden toetsaanslagen verminderd en komt het gedrag van het deelvenster overeen. (SITES-24489)
 * De tablijst ARIA in de Sites Page Editor bevat een beschrijvende naam. Schermlezers identificeren het besturingselement nu als een tablijst en lezen het juiste label, zodat gebruikers de juiste set tabbladen kunnen vinden en betrouwbaar tussen de tabbladen kunnen navigeren. (SITES-24492)
 * Door te zoeken in de Editor side rail worden de resultaten nu voor schermlezers bekendgemaakt. Terwijl gebruikers typen, wordt in een live statusbericht het aantal overeenkomsten en updates gerapporteerd zonder de focus te verplaatsen. Toetsenbordgebruikers detecteren de resultaten direct. (SITES-24506)
@@ -95,16 +95,16 @@ ht-degree: 0%
 * Toegankelijkheidsnamen van de lijstweergave zijn gecorrigeerd. De tabel verwijdert `aria-label` uit niet-interactieve elementen en wijst het label toe aan de koppeling of knop die kan worden geactiveerd. Gebruikers van schermlezers horen nu nauwkeurige, niet-gedupliceerde labels in de kolom. (SITES-24515)
 * De plakkoptekst verbergt het modale dialoogvenster voor het gereedschap Taser tijdens het gebruik van de functie voor zoomen met hoge waarde niet. De inhoud blijft leesbaar en kan worden gebruikt bij een zoompercentage van 200% en 400%, met verticale stroom en geen geknipte secties. (SITES-24523)
 * Wanneer u in het zoekveld typt, wordt niet langer een voortijdige aankondiging van het eerste resultaat of een accidentele activering uitgevoerd. De ervaring kondigt nu een beknopt statusbericht met de resultaattelling aan, terwijl de nadruk op het gebied blijft tot de gebruiker aan de lijst navigeert. (SITES-24658)
-* In het tekstveld Alternatieve tekst in het hyperlinkdialoogvenster van de teksteditor wordt nu een programmatisch label weergegeven. Schermlezers kondigen &#39;Alternatieve tekst&#39; aan voor het veld en focussen landen op het correct benoemde besturingselement. Met deze oplossing verbetert u de navigatie voor toetsenbord- en spraakgebruikers. (SITES-24675)
+* In het tekstveld Alternatieve tekst in het hyperlinkdialoogvenster van de teksteditor wordt nu een programmatisch label weergegeven. Schermlezers kondigen `Alternative text` aan voor het veld en richten zich op het correct benoemde besturingselement. Met deze oplossing verbetert u de navigatie voor toetsenbord- en spraakgebruikers. (SITES-24675)
 * Er is een live statusbericht toegevoegd aan de References rail, waarbij wijzigingen onmiddellijk worden aangekondigd. Als u meerdere items selecteert, wordt er een duidelijk bericht over de beschikbaarheid van verwijzingen weergegeven. Dit voorkomt wijzigingen in de stille toestand en reduceert herhalingsacties. (SITES-24678)
-* In het dialoogvenster Afbeelding wordt nu de laadstatus aangekondigd via een live ARIA-regio. Schermlezers horen het bericht &quot;Laden, een ogenblik geduld&quot; terwijl de spinner wordt weergegeven. En, een klaar update wanneer de inhoud eindigt, zodat weten de gebruikers wanneer zij kunnen interactie aangaan. (SITES-24697)
-* In het dialoogvenster Koppelingsselectie wordt nu een actief gebied weergegeven waarin de zoekresultaten worden aangekondigd. Schermlezers horen de status &#39;resultaten bijgewerkt&#39; na elke zoekopdracht zonder de focus te verplaatsen, zodat gebruikers de duidelijke bevestiging krijgen dat de zoekopdracht is voltooid. (SITES-24700)
+* In het dialoogvenster Afbeelding wordt nu de laadstatus aangekondigd via een live ARIA-regio. Schermlezers horen een `Loading, please wait` -bericht terwijl de spinner wordt weergegeven. En, een klaar update wanneer de inhoud eindigt, zodat weten de gebruikers wanneer zij kunnen interactie aangaan. (SITES-24697)
+* In het dialoogvenster Koppelingsselectie wordt nu een actief gebied weergegeven waarin de zoekresultaten worden aangekondigd. Schermlezers horen de `results updated` -status na elke zoekopdracht zonder de focus te verplaatsen, zodat gebruikers de duidelijke bevestiging krijgen dat de zoekopdracht is voltooid. (SITES-24700)
 * Het dialoogvenster Koppelingsselectie wordt nu opnieuw geplaatst bij 320 px. Alle velden en handelingen blijven zichtbaar en kunnen worden gebruikt. De horizontale schuifbalk wordt dan niet meer weergegeven. (SITES-24709)
 * In het dialoogvenster Koppelingsselectie wordt nu hetzelfde label gebruikt voor de schermtekst en de toegankelijke naam voor elk structuuritem. Schermlezers kondigen elk item aan terwijl ze met de pijltoetsen bewegen, inclusief het laatste niveau, zodat er geen sprake is van stille knooppunten en namen die niet overeenkomen. (SITES-24710)
-* Wijzigingsfilters rapporteren nu de toestand als uitgevouwen of samengevouwen. Met de knop wordt `aria-expanded` synchroon met het filterdeelvenster geschakeld en wordt één duidelijke naam (&quot;Filters wijzigen&quot;) weergegeven, waardoor de verwarrende &#39;filter?&#39; wordt verwijderd aankondiging. Gebruikers van schermlezers kunnen het resultaat voorspellen van het activeren van het besturingselement. (SITES-24713)
+* Wijzigingsfilters rapporteren nu de toestand als uitgevouwen of samengevouwen. De knop schakelt `aria-expanded` synchroon met het filterdeelvenster en geeft één duidelijke naam (`Change filters` ) weer, waardoor de verwarrende `filter?` -aankondiging wordt verwijderd. Gebruikers van schermlezers kunnen het resultaat voorspellen van het activeren van het besturingselement. (SITES-24713)
 * De modulaire kopballen behandelen niet meer inhoud bij breedte 320 px. De header wordt losgelaten uit de status van de sticky en de hoofdtekst van het dialoogvenster schuift, zodat alle velden en actieknoppen zichtbaar en bruikbaar blijven. Keyboard gebruikers kunnen elke controle bereiken zonder verlies van nadruk. (SITES-24718)
 * Toepassingsnavigatiekoppelingen geven nu de juiste koppelingssemantiek weer. Schermlezers kondigen elk item aan als een koppeling in plaats van als een lijstitem, dat de toetsenbordnavigatie en spraakcontrole verbetert. De lijstcontainer houdt lijstsemantiek, terwijl de verbindingen de brandbare doelstellingen blijven. (SITES-24719)
-* De resultaatstatus wordt nu aan schermlezers gemeld wanneer filters veranderen. NVDA leest zowel het &quot;X van de resultaten van Y&quot;aantal als het &quot;geen resultaat&quot;bericht. De pagineringsstatus gebruikt een actief gebied dat op zijn plaats bijwerkt, zodat horen de gebruikers bevestiging zonder nadruk te bewegen. (SITES-24720)
+* De resultaatstatus wordt nu aan schermlezers gemeld wanneer filters veranderen. NVDA leest zowel het `X of Y results` aantal als het `no results` bericht. De pagineringsstatus gebruikt een actief gebied dat op zijn plaats bijwerkt, zodat horen de gebruikers bevestiging zonder nadruk te bewegen. (SITES-24720)
 * De centrifugeknop in het dialoogvenster Carrousel kondigt nu één beknopte naam aan voor schermlezers. Het besturingselement herhaalt niet langer zowel het groeplabel als het invoerlabel, waardoor de gebruikers van NVDA minder uitgebreide informatie en verwarring krijgen. (SITES-24725)
 * De zoeklijst in het menu Help bevat de juiste semantiek. De container stelt een lijst voor en elk resultaat blijft een koppeling zonder een conflicterende rol. NVDA en JAWS kondigen de koppelingen correct aan en de navigatie blijft consistent. (SITES-24729)
 * Adobe heeft de pop-up met kleurstalen gecorrigeerd in Gebruikersvoorkeuren zodat NVDA het staal in focus aankondigt, niet het eerder geselecteerde staal. Toetsenbordgebruikers horen nauwkeurige kleurnamen terwijl ze door de lijst gaan en kunnen de juiste selectie bevestigen. (SITES-24739)
@@ -114,20 +114,20 @@ ht-degree: 0%
 * AEM corrigeert de tabvolgorde op de pagina&#39;s van de Assets Editor. De tabvolgorde verplaatst zich nu van de kopbesturingselementen naar de knoppen in de contacthub en ten slotte naar de canvasgereedschappen in een duidelijke volgorde. Schermlezers volgen dezelfde volgorde, waardoor verwarring en snelheden op het toetsenbord worden voorkomen. (SITES-24937)
 * AEM voegt een programmatische naam toe aan de menubalk Kaarthandelingen. De lezers van het scherm kondigen de controle correct aan, en de toespraakgebruikers kunnen het door naam richten. Toetsenbordnavigatie en -focus blijven ongewijzigd. (SITES-24938)
 * De menu&#39;s van de Kaartweergave respecteren verhoogde tekstspatiëring. Het item Meer handelingen wordt groter en er worden geen afkortingen meer toegepast op labels, waaronder Snel publiceren. Gebruikers die letters, woorden of regelafstand opheffen, behouden volledige labels en toegang tot het toetsenbord. (SITES-24941)
-* De rol &quot;presentatie&quot; die de tabel op de startpagina Sites in de toegankelijkheidsstructuur had verborgen, is verwijderd. De tabel wordt opnieuw correct gelezen. NVDA en JAWS detecteren de tabel, herkennen kopteksten en kondigen koptekstrelaties aan tijdens rij- en kolomnavigatie. (SITES-24942)
+* De rol `presentation` die de tabel met de homepage Sites in de toegankelijkheidsstructuur heeft verborgen, is verwijderd. De tabel wordt opnieuw correct gelezen. NVDA en JAWS detecteren de tabel, herkennen kopteksten en kondigen koptekstrelaties aan tijdens rij- en kolomnavigatie. (SITES-24942)
 * Het sorteren van feedback in de lijstweergave is expliciet en consistent. Na een sortering stelt de koptekst de volgorde beschikbaar via `aria-sort` . De wijziging wordt aangekondigd, terwijl niet-gesorteerde koppen niet langer een status claimen, waardoor gebruikers van schermlezers gemakkelijker kunnen bijhouden welke kolom de sortering bepaalt. (SITES-24943)
-* De Edit kopbal van de Lay-out stelt niet meer een niet-werkende **&#x200B;**&#x200B;knoop uit. Het besturingselement fungeert nu als een statisch statuslabel en blijft buiten de tabvolgorde zodat gebruikers van het toetsenbord geen toetsaanslag verspillen. Het gebruik **selecteert een andere wijze** om wijzen te veranderen, met duidelijk scherm-lezer terugkoppelt. (SITES-24950)
+* De Edit kopbal van de Lay-out stelt niet meer een niet-werkende **** knoop uit. Het besturingselement fungeert nu als een statisch statuslabel en blijft buiten de tabvolgorde zodat gebruikers van het toetsenbord geen toetsaanslag verspillen. Het gebruik **selecteert een andere wijze** om wijzen te veranderen, met duidelijk scherm-lezer terugkoppelt. (SITES-24950)
 * Op de emulatorwerkbalk worden standaard volledige apparaatnamen weergegeven. Het label wordt niet meer afgebroken tijdens het laden, zodat gebruikers apparaten kunnen lezen en selecteren zonder te raden. De tekst wordt op zuivere wijze geschaald over zoomniveaus en smalle breedten. (SITES-24952)
 * De Emulatorwerkbalk past bij kleine viewports. Bij 320 pixels wordt de weergave zonder clipping weergegeven in de lijst met apparaten. Gebruikers kunnen dus Galaxy S7 en nieuwere modellen selecteren. De lay-out wordt geschaald en omlopen om horizontaal schuiven te voorkomen, zelfs bij een zoompercentage van 400%. (SITES-24953)
 * Schermlezers kondigen het geselecteerde apparaat en de bijbehorende metingen aan in de emulator. De NVDA houdt op met het lezen van de liniaalstroom. De apparaatknop gebruikt een bijgevoegde beschrijving voor de knopinfo-tekst, die ruis en navigatie door hulplijnen vermindert. (SITES-24955)
 * In de filterbalk wordt elke geselecteerde tag nu behandeld als een actieknop. Toegankelijke namen wissen en focusverwerking verbeteren de aankondigingen en het toetsenbord. (SITES-24980)
-* De updates van de status in de de filtermening van Admin van Plaatsen kondigen aan het schermlezers aan. Wanneer gebruikers van Kaart/Lijst schakelen terwijl de punten laden, spreekt NVDA nu het &quot;gelieve te wachten&quot;bericht door een levend gebied. Deze richtlijn voorkomt extra kliks en verwarring. (SITES-24992)
+* De updates van de status in de de filtermening van Admin van Plaatsen kondigen aan het schermlezers aan. Wanneer gebruikers van Kaart/Lijst schakelen terwijl de punten laden, spreekt NVDA nu het `Please wait` bericht door een levend gebied. Deze richtlijn voorkomt extra kliks en verwarring. (SITES-24992)
 * De toetsenbordfocus beweegt nu in logische volgorde wanneer gebruikers de linkerrail uitbreiden. De nadruk verschuift direct van de linkerspoorknoop aan de uitgebreide inhoud, die de behoefte elimineert om elementen te achterhouden of over te slaan. Deze wijziging verbetert de toegankelijkheid voor schermlezers en toetsenbordgebruikers. (SITES-24998)
 * De lezer van het scherm koppelt voor **uitgeeft** knoop nu de controle. Als u de knop activeert, wordt de actie Bewerken aangekondigd in plaats van een voorvertoningsbericht. Hierdoor wordt de helderheid verbeterd en worden invoerfouten voor niet-muisgebruikers verminderd. (SITES-25208)
-* De bevestigingshandeling in het dialoogvenster Taser wordt correct voor schermlezers weergegeven. De besturingselementen &quot;Bevestigen&quot;, niet de pictogrambeschrijving, geven gebruikers van het toetsenbord en de schermlezer duidelijke aanwijzingen. (SITES-25223)
-* Met de knop Help wordt nu een duidelijke, toegankelijke naam weergegeven. Schermlezers kondigen &quot;Help&quot; aan in plaats van een uitgebreide pictogrambeschrijving. Gebruikers begrijpen de actie en kunnen sneller hulp zoeken. (SITES-25224)
+* De bevestigingshandeling in het dialoogvenster Taser wordt correct voor schermlezers weergegeven. Het besturingselement rapporteert `Confirm` niet de pictogrambeschrijving, waardoor gebruikers van het toetsenbord en de schermlezer duidelijke aanwijzingen krijgen. (SITES-25223)
+* Met de knop Help wordt nu een duidelijke, toegankelijke naam weergegeven. Schermlezers kondigen `Help` aan in plaats van een uitgebreide pictogrambeschrijving. Gebruikers begrijpen de actie en kunnen sneller hulp zoeken. (SITES-25224)
 * De modale vertoningen Timewarp een duidelijke nadrukring op **`Set Date`** en **de verbindingen van de Tijdverdraaiing van de Uitgang**. Gebruikers die met de Tab-toets werken, zien precies waar de focus ligt en vermijden ongewenste acties. De ring handhaaft minstens 3 :1 contrast tegen de achtergrond. (SITES-25232)
-* Schermlezers geven de besturingselementen Annotatie en Annotatie sluiten nu op de juiste wijze aan op de werkbalk Annotatie. NVDA zegt niet langer &quot;Voorvertoning ingedrukt&quot;, wat schrijvers heeft misleid en de verkeerde actie heeft voorgesteld. De aankondiging komt overeen met de ingedrukte knop en zorgt ervoor dat de workflow leeg blijft. (SITES-25234)
+* Schermlezers geven de besturingselementen Annotatie en Annotatie sluiten nu op de juiste wijze aan op de werkbalk Annotatie. NVDA zegt niet langer `Preview button pressed,` , die schrijvers misleid en de verkeerde actie suggereerde. De aankondiging komt overeen met de ingedrukte knop en zorgt ervoor dat de workflow leeg blijft. (SITES-25234)
 * De toetsenbordnavigatie op de werkbalk Annotatie werkt consistent. Bij het openen van de modus springt de focus niet meer naar Afsluiten, maar naar het beginbesturingselement voor het toevoegen van annotaties. Gebruikers navigeren achtereenvolgens door de besturingselementen zonder de Tab-toets om te keren. (SITES-25241)
 * De kleine-schermweergave werkt zoals verwacht in de modus Taser. Het dialoogvenster maakt niet langer een horizontale schuifbalk met een resolutie van 320 px en de werkbalk blijft toegankelijk zonder dat er zijdelings wordt pannen. Deze update helpt slechtzienden die op de pagina inzoomen. (SITES-25242)
 * De weergave op een klein scherm werkt zoals u had verwacht in de modus Afbeelding. Het dialoogvenster maakt niet langer een horizontale schuifbalk met een resolutie van 320 px en de afbeeldingsgereedschappen blijven toegankelijk zonder dat er zijdelings wordt pannen. Deze update verbetert de navigatie voor slechtzienden die op de pagina inzoomen. (SITES-25244)
@@ -137,7 +137,7 @@ ht-degree: 0%
 * Workflows voor annotaties verliezen niet langer de focus. Bij modal wordt de focus aanvankelijk op een betekenisvolle kop geplaatst, wordt voorkomen dat de focus buiten het dialoogvenster valt en wordt de focus na het ontslag hersteld naar de trigger. De schermlezeruitvoer blijft beknopt en relevant. (SITES-25257)
 * Het **de dialoogvakje van de Annotatie van de Schrapping** behandelt nu correct toetsenbordnadruk. Het openen van de dialoogdoos verplaatst nadruk aan zijn rubriek voor scherm-lezercontext, en het sluiten verzendt nadruk terug naar de **knoop van de Annotatie van de Schrapping** die het lanceerde. Gebruikers landen niet langer op niet-verbonden besturingselementen of achter het modaal. (SITES-25258)
 * De tijdverdraaiingsdatumkiezer beheert nu de focus op de juiste wijze. Het drukken `Esc` keert nadruk aan de **Plukker van de Datum** knoop terug, en het kiezen van een datum verplaatst nadruk naar het verbonden inputgebied. Gebruikers van toetsenborden en schermlezers houden context en landen niet achter het modaal. (SITES-25264)
-* De lezers van het scherm kondigen de correcte acties voor **aan annoteert** en **dicht annoteert** knopen. NVDA zegt niet langer &quot;Voorvertoningsknop ingedrukt&quot;; het kondigt de knopnaam aan zodat gebruikers weten wanneer de annotatiemodus begint of eindigt. (SITES-25268)
+* De lezers van het scherm kondigen de correcte acties voor **aan annoteert** en **dicht annoteert** knopen. NVDA zegt niet langer `Preview button pressed`; het kondigt de knoopnaam aan zodat de gebruikers weten wanneer de annotatiemodus begint of beëindigt. (SITES-25268)
 * Het modaal van de Annotatie toont nu een duidelijke **voorlegt** actie. Auteurs kunnen een opmerking toevoegen en deze verzenden met de knop voor het penpictogram of het modaal sluiten met `Esc` zonder de stroom te raden. (SITES-25269)
 * Annotatie-item bevat expliciete actieknoppen. De dialoogdoos stelt **bloot legt** voor om de nota te bewaren en **annuleert** om het te sluiten, zowel toetsenbord toegankelijk als aangekondigd door ondersteunende technologie. Auteurs hoeven niet langer te vertrouwen op het klikken buiten het dialoogvenster of het alleen drukken op `Esc` om te voltooien. (SITES-25281)
 * In de annotatiemodus blijft het toetsenbord nu actief op de overlay en de bijbehorende werkbalk. De pagina achter de overlay krijgt geen focus meer wanneer auteurs op Tab drukken. Gebruikers blijven dus georiënteerd en kunnen door annotaties navigeren zonder naar onderliggende inhoud te springen. (SITES-25282)
@@ -146,16 +146,16 @@ ht-degree: 0%
 * De tabvolgorde in de voorvertoning van de layout gaat nu van de primaire werkbalk naar de werkbalk Demografisch. Gebruikers van toetsenborden en schermlezers kunnen de besturingselementen in een voorspelbare volgorde doorlopen in plaats van naar de secundaire werkbalk te gaan. De wijziging wordt uitgelijnd op de WCAG 2.4.3-focusvolgorde. (SITES-25305)
 * Als u op de pagina zoomt naar 200%, wordt een deel van de werkbalk Demografisch niet meer verborgen. De werkbalksectie beheert overloop en biedt schuiven in een eigen gebied, zodat elk besturingselement zichtbaar blijft en met een hoge vergroting kan worden gebruikt. (SITES-25309)
 * Tekstinvoer op de werkbalk Demografische gegevens geeft nu de juiste toegankelijke namen weer. Elk veld bevat een unieke id met een programmatisch label, zodat schermlezers het doel van het veld bekendmaken en gebruikers door een label kunnen navigeren. Het zichtbare label bevindt zich in de buurt van het besturingselement om de leesbaarheid bij een laag gezichtsvermogen te verbeteren. (SITES-25316)
-* De knop Bewerken kondigt nu de juiste actie aan voor schermlezers op de secundaire werkbalk. Als u deze activeert, wordt &#39;&#39;Bewerken&#39;&#39; weergegeven in plaats van de niet-verwante &#39;&#39;Voorvertoningsknop ingedrukt&#39;&#39;, waardoor verwarring tijdens toetsenbordnavigatie wordt voorkomen. (SITES-25320)
-* De schuifregelaar Illustratie op de werkbalk Demografie geeft nu een juiste toegankelijke naam weer. De lezers van het scherm kondigen &quot;het totaal van de Kar&quot;aan en de toespraak-input hulpmiddelen kunnen de controle door naam richten, verbeterend naleving WCAG 4.1.2 (Naam, Rol, Waarde). (SITES-25322)
+* De knop Bewerken kondigt nu de juiste actie aan voor schermlezers op de secundaire werkbalk. Als u deze activeert, wordt `Edit` weergegeven in plaats van de niet-verwante `Preview button pressed,` , waardoor verwarring tijdens toetsenbordnavigatie wordt voorkomen. (SITES-25320)
+* De schuifregelaar Illustratie op de werkbalk Demografie geeft nu een juiste toegankelijke naam weer. Schermlezers kondigen aan dat `Cart total` en gereedschappen voor spraak-invoer het besturingselement op naam kunnen instellen, waardoor de compatibiliteit met WCAG 4.1.2 (Naam, Rol, Waarde) wordt verbeterd. (SITES-25322)
 * De schuifregelaar op de werkbalk Demografie blijft nu actief wanneer auteurs de waarde wijzigen met de pijltoetsen. De focus springt niet meer naar de knop Illustratie, dus gebruikers van het toetsenbord passen de waarde voortdurend aan en schermlezers geven elke wijziging aan. (SITES-25324)
 * Zoek in Assets nu Helder opnieuw plaatsen bij 320 px (ongeveer 400% zoomen). Met het modale model blijven koppen, velden en handelingen leesbaar en niet-overlappend, zodat ontwerpers kunnen zoeken zonder horizontaal schuiven. (SITES-25330)
 * Het deelvenster Assets in de editor volgt een logische focusvolgorde. Toetsenbordgebruikers gaan met de Tab-toets over elke miniatuur en hebben toegang tot de afsluitbesturingselementen van het deelvenster. De wijziging verwijdert skips en verbetert de naleving van WCAG 2.4.3. (SITES-25360)
-* AEM werkt de **Lijsten** en **3&rbrace; knopen van Paragraaf &lbrace;in de rijke tekstredacteur van het Taser modale bij om hun uitgevouwen en doen ineenstorten staat bloot te stellen.** Met de knoppen schakelt u nu `aria-expanded` in en wordt de statuswijziging voor schermlezers aangekondigd. Auteurs krijgen duidelijke feedback en raden niet voordat ze de opmaakmenu&#39;s openen of sluiten. (SITES-25365)
-* AEM kondigt de laadstatus aan in het modaal Teaser. Het modaal stelt nu een live statusbericht bloot terwijl de inhoud wordt geladen. NVDA en JAWS spreken dus &quot;Laden, een ogenblik geduld.&quot; Auteurs moeten duidelijke feedback ontvangen en geen interactie met het dialoogvenster krijgen voordat het klaar is. (SITES-25366)
+* AEM werkt de **Lijsten** en **3} knopen van Paragraaf {in de rijke tekstredacteur van het Taser modale bij om hun uitgevouwen en doen ineenstorten staat bloot te stellen.** Met de knoppen schakelt u nu `aria-expanded` in en wordt de statuswijziging voor schermlezers aangekondigd. Auteurs krijgen duidelijke feedback en raden niet voordat ze de opmaakmenu&#39;s openen of sluiten. (SITES-25365)
+* AEM kondigt de laadstatus aan in het modaal Teaser. Het modaal stelt nu een live statusbericht bloot terwijl de inhoud wordt geladen, zodat NVDA en JAWS spreken `Loading, please wait.` Auteurs duidelijke feedback moeten ontvangen en interactie met het dialoogvenster moeten vermijden voordat deze gereed is. (SITES-25366)
 * Verbetert statusoverseinen op het lusje van Activa van de de selectiedialoogdoos van de Verbinding. Wanneer een fout voorkomt, injecteert de component een leesbare statusupdate en houdt toetsenbordnadruk stabiel, latend NVDA/JAWS gebruikers onmiddellijk op de hoogte stellen. (SITES-25368)
 * Het gedrag van de gebruikersinterface in het deelvenster Notitie voor zeer smalle viewports is gecorrigeerd. Bij 320 px, vulden de titel en de Add controle eerder; de toolbar stroomt nu opnieuw en bewaart duidelijke scheiding tussen elementen. Auteurs kunnen de besturingselementen zonder verlies van informatie of functie gebruiken. (SITES-25376)
-* Vaste een het lopen foutenstaat in de **2&rbrace; Verbindingen &amp; Acties** tabel van de de dialoogdoos van de Taser **&lbrace;.** Nadat de auteurs **Call to action** en correcte lege of ongeldige gebieden toelaten, ontruimt het lusje zijn fout het stileren en pictogram en verwijdert `aria-invalid`. Schermlezers melden niet langer een fout wanneer de velden zijn gevalideerd. (SITES-25527)
+* Vaste een het lopen foutenstaat in de **2} Verbindingen &amp; Acties** tabel van de de dialoogdoos van de Taser **{.** Nadat de auteurs **Call to action** en correcte lege of ongeldige gebieden toelaten, ontruimt het lusje zijn fout het stileren en pictogram en verwijdert `aria-invalid`. Schermlezers melden niet langer een fout wanneer de velden zijn gevalideerd. (SITES-25527)
 * Foutafhandeling in Sites Admin-formulieren voldoet nu aan toegankelijkheidsverwachtingen. Wanneer validatie mislukt, wordt de fout direct weergegeven op de pagina, wordt de focus verplaatst naar een bruikbaar berichtdoel en wordt de tekst voor schermlezers beschikbaar gemaakt, zoals JAWS. (SITES-27138)
 * Als u een map in Sites maakt, wordt nu een duidelijk bevestigingsprogramma weergegeven. JAWS kondigt het bericht via het live gebied aan, zodat auteurs direct toegankelijke feedback ontvangen na de actie. (SITES-27141)
 * Probleem verholpen waarbij afbeeldingen in ontwerpdialoogvensters zonder alternatieve tekst werden weergegeven. Het dialoogvenster bevat nu waar nodig beschrijvende alt-tekst en lege alt voor louter visuele elementen, waarmee het gedrag voor JAWS en andere schermlezers wordt hersteld. (SITES-27153)
@@ -167,14 +167,14 @@ ht-degree: 0%
 
 * Probleem verholpen met de miniatuurpictogrammen van de map in Sites Admin om zich als decoratieve afbeeldingen te gedragen. De update verwijdert de afbeeldingsrol en past lege alt-tekst toe, zodat de ondersteunende hulpmiddelen pictogrammen negeren en alleen betekenisvolle labels lezen. (SITES-2852)
 * Adobe heeft het kleurcontrast voor de tekst Verwijzingen op de homepage van Sites verhoogd. De tekst voldoet nu aan WCAG 2.1 AA met een verhouding van minstens 4.5 :1 en leest duidelijk op lichte thema&#39;s en heldere schermen. (SITES-24755)
-* Het landmerk References rail kondigt de naam nu aan voor schermlezers. Het gebied stelt een unieke `aria-label` (&quot;References rail&quot;) bloot, die de landmerkennavigatie verbetert en het van andere gebieden onderscheidt. (SITES-24973)
+* Het landmerk References rail kondigt de naam nu aan voor schermlezers. Het gebied stelt uniek `aria-label` (`References rail`) bloot, die landtekennavigatie verbetert en het van andere gebieden onderscheidt. (SITES-24973)
 * De RTE van de Beschrijving blokkeerde voorwaartse navigatie van het Lusje en brak dialoogstroom. Met deze correctie wordt de standaardverplaatsing van het toetsenbord hersteld. Auteurs gaan verder dan het veld met één tab en zorgen dat de selectievolgorde voorspelbaar blijft. (SITES-35228)
 * Authoring-besturingselementen hadden niet-toegankelijke namen en onbewerkte pictogramtekst die door JAWS werd verward. Met deze correctie worden expliciete ARIA-labels en standaardrollen toegevoegd. Mededelingen hebben het juiste geluid en zijn afgestemd op de toegankelijkheidsverwachtingen. (SITES-35227)
-* De vervolgkeuzelijst Categorieën bevatte een specifiek label, dus JAWS sprak een generiek &quot;menu voor afbeeldingsknoppen&quot;. De update noemt de controle &quot;Categorieën&quot;en bepaalt zijn rol. Gebruikers van schermlezers horen een nauwkeurig label en begrijpen welke opties beschikbaar zijn. (SITES-35226)
+* De vervolgkeuzelijst Categorieën bevatte een specifiek label, dus JAWS sprak een algemeen `images button menu.` De update noemt het besturingselement `Categories` en definieert de rol ervan. Gebruikers van schermlezers horen een nauwkeurig label en begrijpen welke opties beschikbaar zijn. (SITES-35226)
 * In het dialoogvenster Eigenschappen wordt een gegevensraster weergegeven dat schermlezers als onbewerkte tekst behandelen. JAWS en NVDA hebben de focus gemist en hebben geen rijen en kolommen aangekondigd. Met deze correctie worden echte tabelsemantiek en ARIA-rollen toegevoegd. Schermlezers herkennen de tabel en volgen de focus op de juiste wijze. (SITES-35225)
 * De teksteditor voor inhoudsfragmenten die met een afgebroken actiebalk is geladen. De geknipte pictogrammen en het overloopmenu werden onbereikbaar. De update corrigeert de lay-out, zodat de volledige werkbalk zichtbaar en toegankelijk blijft. (SITES-33005)
 * Formuliervelden op het tabblad Standaard bevatten geen nuttige fouttekst. In het formulier worden nu duidelijke, inline berichten weergegeven en gekoppeld aan het veld voor schermlezers. Gebruikers van toetsenborden en ondersteunende hulpmiddelen krijgen direct hulp bij het herstellen van invoer. (SITES-32480)
-* In het veld Multifield dat in een aangepaste component wordt gebruikt, worden pictogramknoppen zonder label en een inconsistente tabvolgorde weergegeven. JAWS/NVDA kondigde alleen &quot;knop&quot; aan of overgeslagen besturingselementen, waardoor de toetsenbordbewerking werd geblokkeerd. De update biedt beschrijvende namen voor Add, Remove en Move, normaliseert tabstops en kondigt lijsupdates aan om aan de verwachtingen van ADA te voldoen. (SITES-30660)
+* In het veld Multifield dat in een aangepaste component wordt gebruikt, worden pictogramknoppen zonder label en een inconsistente tabvolgorde weergegeven. JAWS/NVDA kondigde alleen `button` aan of overgeslagen besturingselementen, waardoor de toetsenbordbewerking werd geblokkeerd. De update biedt beschrijvende namen voor Add, Remove en Move, normaliseert tabstops en kondigt lijsupdates aan om aan de verwachtingen van ADA te voldoen. (SITES-30660)
 * Met Snel publiceren wordt nu een duidelijk succesbericht geretourneerd. Het dialoogvenster wordt gesloten, een pop bevestigt de handeling en schermlezers kondigen het bericht aan, zodat auteurs het resultaat niet missen. (SITES-26912)
 * Geen wijziging vereist. Adobe beoordeelde de claim dat het zoekpictogram tekst in de buurt overlapt. De koptekst bevat een label dat aan de klant is toegevoegd. Met vanilla AEM wordt alleen het pictogram weergegeven. Een schone instantie toont de correcte lay-out bij 100% gezoem, zodat werd de bug gesloten aangezien buiten werkingsgebied. (SITES-26910)
 * Bij het maken van paginathema&#39;s wordt de focusstatus niet meer verborgen. De stijlen van Aquatic en van de Dringing geven een verenigbare hoogtepunt op het **Basis** lusje en aangrenzende lusjes tijdens toetsenbordnavigatie terug. Deze verandering herstelt voorspelbare, waarneembare nadrukterugkoppel voor slechtziende gebruikers. (SITES-26907)
@@ -195,12 +195,12 @@ Klassieke UI-selectievakjes hebben hun labels verloren en lege opties weergegeve
 
 #### [!DNL Content Fragments] - Beheer{#sites-admin-6524}
 
-Haakjes in de naam van een inhoudsfragment hebben ertoe geleid dat het deelvenster Verwijzingen een verkeerd gebruik heeft gerapporteerd. Auteurs zagen 0 zelfs wanneer andere fragmenten ernaar verwezen. De correctie corrigeert het parseren van paden voor &quot;(&quot; en &quot;)&quot; en oppervlakken het juiste aantal en de items zonder nul. (SITES-35078)
+Haakjes in de naam van een inhoudsfragment hebben ertoe geleid dat het deelvenster Verwijzingen een verkeerd gebruik heeft gerapporteerd. Auteurs zagen 0 zelfs wanneer andere fragmenten ernaar verwezen. De correctie corrigeert het parseren van paden voor `(` en `)` en oppervlakt het juiste aantal en de items zonder nul. (SITES-35078)
 
 
 #### [!DNL Content Fragments] - Fragmenteditor{#sites-fragments-editor-6524}
 
-* Unpublish failed for Content Fragments wiens DAM path ronde haakjes bevatte. De wizard Publicatie beheren herschreef &quot;(&quot; en &quot;)&quot; en brak het middelenpad. In de correctie blijven de tekens behouden en wordt het juiste item omgezet, zodat de handeling voor het ongedaan maken van de publicatie is voltooid. (SITES-35077)
+* Unpublish failed for Content Fragments wiens DAM path ronde haakjes bevatte. De wizard Publicatie beheren herschreef `(` en `)` en brak het middelenpad. In de correctie blijven de tekens behouden en wordt het juiste item omgezet, zodat de handeling voor het ongedaan maken van de publicatie is voltooid. (SITES-35077)
 * Als u een inhoudsfragment bewerkt en teruggaat naar de Assets-lijst, wordt het fragment of de hele map verborgen. De lijst is niet vernieuwd nadat de editor is gesloten. Met deze correctie wordt de lijst nu op betrouwbare wijze vernieuwd en blijft het bewerkte fragment zichtbaar zonder dat het opnieuw wordt geladen. (SITES-35374)
 
 * De Inhoudsfragmenteditor kan de Polaris Asset Selector niet openen omdat het vereiste IMS-bereik is verwijderd. De moeilijke situatie herstelt het minimale werkingsgebied en herstelt de verbinding van de Levering. Het bladeren en selecteren van middelen werken opnieuw, zonder HTTP 500 fouten. (SITES-35837)
@@ -239,7 +239,7 @@ ContextHub injecteert niet meer een tweede jQuery exemplaar op publicatiepagina&
 * Als u een variant van een ervaringsfragment publiceert, wordt nu een gelokaliseerde foutmelding weergegeven wanneer er geen cloudservice aan de wijziging is gekoppeld. Het bericht wordt in de gebruikersinterface weergegeven in de taal van de gebruiker in plaats van in een tekenreeks met alleen het Engels. (SITES-20293)
 * Bij het exporteren van een Ervingsfragment naar Doel is het bestand vastgelopen met `Attempt to modify attribute at illegal index: -1` . De instrumentatie van vitals van het Web was in conflict met de exporteur en bedorven attributenbehandeling. Met de fix wordt de verwerking van kenmerken verhardd en wordt dat conflict verwijderd. Exporteren is voltooid en het fragment wordt weergegeven in Doel. (SITES-31891)
 
-* De eigenschappen van het Fragment van de ervaring lokaliseren nu de **Verwijzingen** tabel. Labels en kolomkoppen zoals &quot;Pagina&quot;, &quot;Paginapad&quot; en &quot;Titel van variatie&quot; worden weergegeven in de taal van de auteur. Deze wijziging verwijdert alleen-Engelstalige tekenreeksen en zorgt ervoor dat de weergave van eigenschappen consistent blijft voor algemene teams. (SITES-11203)
+* De eigenschappen van het Fragment van de ervaring lokaliseren nu de **Verwijzingen** tabel. Labels en kolomkoppen zoals `Page,` `Page path,` en `Variation title` worden weergegeven in de taal van de auteur. Deze wijziging verwijdert alleen-Engelstalige tekenreeksen en zorgt ervoor dat de weergave van eigenschappen consistent blijft voor algemene teams. (SITES-11203)
 * De **Variaties** > **creeer werkschema** toont nu volledige vertaaltekst. In het dialoogvenster worden lange tekenreeksen in de landinstelling afgehandeld door de inhoud op de juiste wijze om te buigen en te vergroten of te verkleinen. Zo worden bijgesneden of geknipte labels verwijderd. (SITES-19304)
 * De eigenschappen van het Fragment van de ervaring lokaliseren nu de statusetiketten van Sociale Media. Auteurs zien statuswaarden zoals Gepost en Niet gepost in de geselecteerde taal voor alle landinstellingen. Deze wijziging verwijdert alleen-Engelstalige tekenreeksen die tijdens de revisie tot verwarring hebben geleid. (SITES-2014)
 
@@ -274,7 +274,7 @@ ContextHub injecteert niet meer een tweede jQuery exemplaar op publicatiepagina&
 * Als u de inhoudsstructuur op een pagina opent met een Personalization-container, wordt een leeg deelvenster en een null-reference-fout geretourneerd. Auteurs kunnen geen componenten kiezen of configureren. De update verwijdert de fout en schakelt de structuur- en componentinteractie opnieuw in. (SITES-34336)
 * AEM 6.5 SP23 brak wijzeomschakeling in de Redacteur van de Pagina. Het klikken van **Lay-out**, **Ontwikkelaar**, of **het richten** verlaten de redacteur die in **wordt geplakt geeft** wijze uit en gooide een console `TypeError`. De update herstelt de wijzigingen in de werkbalkmodus en wist de fout. (SITES-34536)
 * De Pagina-editor sprong weg van de invoegpositie wanneer auteurs componenten in lange containers toevoegden. In de update worden de timing en de afhandeling van de bedekking ingesteld. De mening houdt zijn plaats en de nieuwe component blijft in zicht en klaar om te vormen. (SITES-32621)
-* Aangepaste labellabels zijn mislukt in de Pagina-editor en de gebruikersinterface heeft altijd &#39;Tags&#39; weergegeven. Het predikaat evalueert nu `fieldLabel` eerst en `labelText` seconde, dan past het gebrek toe. Auteurs zien het label dat ze instellen. (SITES-32278)
+* Aangepaste labellabels zijn mislukt in de Pagina-editor en de gebruikersinterface wordt altijd weergegeven `Tags.` De voorspelling evalueert nu `fieldLabel` eerst en `labelText` seconde en past vervolgens de standaardinstelling toe. Auteurs zien het label dat ze instellen. (SITES-32278)
 * Als u het filter Locatie in Sites annuleert, wordt het pictogram OmniSearch verkeerd uitgelijnd en overlapt u dit met de plaatsaanduidingstekst. Er kon niet op het pictogram worden geklikt. De correctie past het pictogram opnieuw aan en herstelt het raakgebied, zodat de muis en het toetsenbord beide zoekopdrachten activeren. (SITES-30946)
 * Als u Developer kiest, is de pagina in een slechte staat gebleven en is het ontwerpen op die pagina geblokkeerd. Het deelvenster is verdwenen en de gebruikersinterface reageert niet meer. De update herstelt de mode-toggle logica en geheim voorgeheugenbehandeling, die de pagina editable houden en de gegevens van de Ontwikkelaar onmiddellijk tonen. (SITES-30922)
 * Het klikken **Duidelijk** in **Tussenvoegsel Nieuwe Component** verwijdert niet de onderzoeksvraag en verliet de lijst die aan één enkel punt (Accordeon) wordt gefiltreerd. Met de correctie wordt de query opnieuw ingesteld en wordt de lijst vernieuwd. Alle toegestane componenten worden opnieuw weergegeven. (SITES-30921)
@@ -298,7 +298,7 @@ Het vormen van de manager van de Authentificatie van het Teken van de Vraag verw
 
 #### [!DNL Dynamic Media]{#assets-dm-6524}
 
-* De **Uitgezochte Duimnagel** optie voor video&#39;s gedraagt zich nu correct in AEM Assets - Dynamische Media. Met de klik wordt het dialoogvenster geopend en kunt u een miniatuur uit Assets selecteren. Zo voorkomt u het vorige gedrag bij klikken en verwijdert u alleen de beperking tot het uitnemen van videoframes. (ASSETS-58926)
+* De **Uitgezochte Duimnagel** optie voor video&#39;s gedraagt zich nu correct in AEM Assets - Dynamische Media. Met de klik wordt het dialoogvenster geopend en kunt u een miniatuur uit Assets selecteren. Zo voorkomt u het vorige gedrag bij klikken en verwijdert u alleen de beperking tot het uitnemen van videoframes. (Assets-58926)
 
 
 ### [!DNL Forms]{#forms-6524}
@@ -315,28 +315,28 @@ Het vormen van de manager van de Authentificatie van het Teken van de Vraag verw
 * Gebruikers ondervonden toegankelijkheidsproblemen met PDF&#39;s die zijn gegenereerd met AEM Forms Designer 6.5.23 voor niet-Latijnse talen. Padtags zijn niet in een Artefactcontainer geplaatst, waardoor PAC- en schermlezers defect raken. (LC-3923295)
 * Gebruikers ondervonden verbroken hyperlinks in tekstvakken Portable Document Format (PDF) nadat ze een patch hadden uitgevoerd van versie 6.5.21 naar 6.5.23 met de Output Service. (LC-3923290)
 * Gebruikers ondervonden toegankelijkheidsproblemen met DoR-formulieren (Document of Record). Wanneer invoervelden leeg waren, lezen schermlezers alleen de veldbijschriften en niet de waarden, waardoor het voor gebruikers met een handicap moeilijk is om effectief door de formulieren te navigeren. (LC-3923234)
-* Gebruikers kregen te maken met toegankelijkheidsproblemen in DoR PDF forms, waar NVDA &quot;niet beschikbaar&quot; verkeerd leest voor selectievakjes, keuzerondjes en tekstvelden, waarbij het bericht vaak wordt herhaald en verwarring ontstaat voor gebruikers van schermlezers. (LC-3923201)
+* Gebruikers ondervonden toegankelijkheidsproblemen in DoR PDF forms waarbij NVDA `unavailable` onjuist werd aangekondigd voor selectievakjes, keuzerondjes en tekstvelden. Het bericht werd vaak herhaald, veroorzakend verwarring voor de gebruikers van het schermlezer. (LC-3923201)
 * Bij het toevoegen van nieuwe velden hebben gebruikers te maken gehad met een verschil in tabvolgorde in de XDP. De bestaande tabvolgorde is onverwacht gewijzigd, wat invloed heeft op de formuliernavigatie. (LC-3923183, LC-3922630)
 * Gebruikers ondervonden problemen met HTML-rendering. Bij gebruik van de gebeurtenis `docReady` is de gebeurtenis niet correct geactiveerd in HTML, waardoor scripts niet naar behoren werden uitgevoerd. (LC-3923118)
 * Gebruikers hebben problemen ervaren met PDF-renderscripts die niet werken in de AEM Forms Cloud-productieomgeving. (LC-3923082)
 * Gebruikers hebben problemen ervaren met zwevende velden in formulieren. Bij het gebruik van verschillende gegevensbestanden worden zwevende velden correct weergegeven met het ene bestand, maar niet met het andere, ondanks kleine verschillen die geen verband houden met de velden. (LC-3923056)
-* Gebruikers ondervonden een lege Spaanse stramienpagina toen alleen Engelse inhoud was geselecteerd in een XDP (XML-gegevenspakket) met meerdere stramienpagina&#39;s. (LC-3923/09)
-* Gebruikers merkten verouderde copyrightjaargegevens op in de AEM Designer. Dit gebeurde in het pop-up vakje bij opstarten, de &quot;Ongeveer&quot;sectie, en de &quot;Juridische Mededelingen&quot;sectie, die &quot;2003-2024&quot;in plaats van &quot;2003-2025&quot;toont. (LC-3923/05)
-* Gebruikers vonden een lege PDF-pagina bij het gebruik van paginering in AEM Forms Designer. Het probleem is opgetreden bij het selecteren van &quot;Boven aan volgende pagina/Boven aan pagina&quot; voor de WireAdviceHeader, waardoor de lay-out van gegevensherhalingen werd verstoord. (LC-3922997, LC-3922830)
-* Gebruikers ondervonden een probleem waarbij de bestandsoverzichtwaarde voor XML-schemadefinitie (Extensible Markup Language) (XSD) niet bleef bestaan in de 64-bits versie van AEM Forms Designer. (LC-3922924)
+* Gebruikers ondervonden een lege Spaanse primaire pagina wanneer alleen Engelse inhoud was geselecteerd in een XDP (XML-gegevenspakket) met meerdere primaire pagina&#39;s. (LC-3923/09)
+* Gebruikers merkten verouderde copyrightjaargegevens op in de AEM Designer. Deze fout is opgetreden in het pop-upvenster bij het opstarten, de sectie `About` en de sectie `Legal Notices` , die `2003-2024` weergaven in plaats van &quot;2003-2025&quot;. (LC-3923/05)
+* Gebruikers vonden een lege PDF-pagina bij het gebruik van paginering in AEM Forms Designer. Het probleem is opgetreden bij het selecteren van `Top of the Next Page/Top of Page` voor de WireAdviceHeader, waardoor de lay-out van gegevensherhalingen is verstoord. (LC-3922997, LC-3922830)
+* Gebruikers ondervonden een probleem waarbij de digestwaarde van het bestandsoverzicht voor XSD (Extensible Markup Language) in de 64-bits versie van AEM Forms Designer niet bleef bestaan. (LC-3922924)
 * Gebruikers ondervonden instabiele hyperlinkopmaak in AEM Designer 6.5.19, waar hyperlinks in een tekstvak onjuist gebruikte stijlen uit omringende tekst, zoals de opmaak van het eerste teken. (LC-3922376)
-* Gebruikers hebben problemen ervaren met het weergeven van HTML-formulieren via mobiele rendering op MAC met AEM Forms OSGI v6.5.22. (LC-3923058)
+* Gebruikers hebben problemen ervaren met het weergeven van HTML-formulieren via mobiele rendering op Mac met AEM Forms OSGI v6.5.22. (LC-3923058)
 * Gebruikers ondervonden &quot;path object not tagged&quot;-fouten in Portable Document Format-bestanden (PDF) bij het gebruik van geordende of achtergrondvelden in XDP-sjablonen die zijn gemaakt met Designer 6.5.23 en zijn geanalyseerd met PAC 2024. (LC-3923013)
-* Gebruikers hebben een fout ervaren met de achtergrondkleur van de kop &quot;Dati Richiedente&quot; in Portable Application Component (PAC), die het bericht &quot;path object not tagged&quot; ontvangt. (LC-3922912)
+* Gebruikers hebben een fout ervaren met de achtergrondkleur van de kop `Dati Richiedente` in Portable Application Component (PAC) en hebben het bericht ontvangen `path object not tagged.` (LC-3922912)
 * Gebruikers ondervonden een probleem waarbij specifieke sjablonen het bedoelde lettertype vervangen door een versmald lettertype. (LC-3922330)
 
 #### Adaptieve Forms
 
 * Gebruikers die ervaring hebben met ontbrekende opties in de regeleditor. Toen de auteurs regels op aantalinput schreven, waren de de detailopties van de Vraag, UTM, en Browser niet beschikbaar. (FORMS-21660)
 * De gebruikers ondervonden toepassingsneerstortingen wanneer het in wisselwerking staan met OdataResponse toe te schrijven aan een ongeldige wijzeruitzondering. (FORMS-20344)
-* Gebruikers ondervonden problemen bij het maken van regels om een deelvenster weer te geven en focus in te stellen op een element in het deelvenster. De setFocus-regel wordt uitgevoerd vóór de zichtbaarheidsupdate, waardoor de focusactie mislukt. (FORMS-19563)
+* Gebruikers ondervonden problemen bij het maken van regels om een deelvenster weer te geven en focus in te stellen op een element in het deelvenster. De regel setFocus wordt uitgevoerd vóór de zichtbaarheidsupdate, waardoor de focusactie mislukt. (FORMS-19563)
 * Gebruikers ondervonden problemen met de selectie van componenten in AEM Forms Author. Wanneer u in de bewerkingsmodus tussen tabbladen navigeert, konden sommige containers niet worden geselecteerd, zodat identificatie en interactie niet gemakkelijk waren. (FORMS-18525)
-* Gebruikers hebben een fout met de naam Ongeldige URL ervaren bij het aanwijzen van elementen in AEM 6.5.22. (NPR-42684)
+* Gebruikers hebben een `Invalid URL` -fout ervaren tijdens een poging om elementen in AEM 6.5.22 te annoteren. (NPR-42684)
 
 ### Stichting {#foundation-6524}
 
@@ -360,14 +360,14 @@ De Felix Web Console-bundel is bijgewerkt met FELIX-6747. Deze patch verbetert r
 #### Graniet{#foundation-granite-6524}
 
 * Onbewerkte of Engels-slechts koorden verschijnen niet meer in **verwijdert de dialoogdoos van het Toegangsbeheer**. In het dialoogvenster wordt volledig gelokaliseerde inhoud in alle ondersteunde talen weergegeven voor consistente toegankelijkheid. (GRANITE-48479)
-* Het Help-pictogram geeft nu een beknopt label weer aan ondersteunende hulpmiddelen. JAWS leest &quot;Help-knop&quot; en voegt geen overbodige &quot;menu&quot;-tekst meer toe. Deze update brengt de controle in overeenstemming met WCAG 4.1.2 en vereenvoudigt toetsenbord en scherm-lezer gebruik. (GRANITE-55360)
+* Het Help-pictogram geeft nu een beknopt label weer aan ondersteunende hulpmiddelen. JAWS leest `Help button` en voegt geen vreemde `menu` -tekst meer toe. Deze update brengt de controle in overeenstemming met WCAG 4.1.2 en vereenvoudigt toetsenbord en scherm-lezer gebruik. (GRANITE-55360)
 * Herstel de fabriek van de HTML manuscriptmotor na het elimineren van een gebiedsdeellijn in diensten OSGi. De omgevingen beginnen op een schone manier, HTML-rendering werkt in de verschillende pods van de auteur en beheerders ondervinden niet langer opstartfouten of ontbrekende scriptservices. (GRANITE-58276)
 
 * Het vak Zoeken in koptekst bedekt niet langer het pictogram van een vergrootglas op de plaatsaanduidingstekst. De tijdelijke aanduiding wordt weergegeven met de juiste opvulling en blijft volledig leesbaar in alle browsers. (GRANITE-54391)
 * Auteurs zien leesbare labels in de velden Automatisch aanvullen in plaats van onbewerkte waarden in het dialoogvenster. De implementatie houdt de waarde in JCR aan en verbetert de helderheid voor configuraties met één of meerdere selecties die dynamisch opties bron. (GRANITE-57615)
 * De bewerkingsmodus blijft functioneel wanneer htmlLibraryManager.debug is ingesteld op true. De wijziging herstelt de juiste clientlib-resolutie en het laden, zodat ontwikkelaars de foutopsporingsprogramma&#39;s van HTML Library Manager tijdens het ontwerpen kunnen gebruiken. (GRANITE-58002)
 * De bewerkingspagina van de replicatieagent genereert niet langer een JavaScript-fout in de klassieke gebruikersinterface. De pagina wordt geopend, alle tabbladen worden weergegeven en de agentinstellingen worden zonder consolefouten opgeslagen. (GRANITE-58302)
-* Correcteerde gezondheid-status samenvoeging in het Overzicht van het Systeem. De weergave wordt nu bijgewerkt nadat afzonderlijke controles zijn uitgevoerd en het juiste aantal wordt weergegeven. De exploitanten zien &quot;O.K.&quot;wanneer de controles van de Veiligheid en van het Onderhoud overgaan, in plaats van een onjuiste &quot;2 fouten&quot;banner. (GRANITE-61482)
+* Correcteerde gezondheid-status samenvoeging in het Overzicht van het Systeem. De weergave wordt nu bijgewerkt nadat afzonderlijke controles zijn uitgevoerd en het juiste aantal wordt weergegeven. Operatoren zien `OK` wanneer de controles voor beveiliging en onderhoud worden uitgevoerd in plaats van een onjuiste `2 errors` -banner. (GRANITE-61482)
 * De uitvoering van `CodeUpgradeTasks` is gestopt tijdens upgrades van AEM 6.5 LTS (Long Term Support). De upgrade gaat nu door zonder wijzigingen of herconfiguraties in de opslagplaats die door een taak worden geactiveerd. Met deze oplossing wordt het upgrademisico verminderd en vermijdbare downtime voorkomen. (GRANITE-61486)
 * In de ontwerpdialoogvensters wordt in de vereiste velden nu één nauwkeurige validatiefout weergegeven. Het bericht gebruikt het eigen etiket van het gebied wanneer heden, en valt terug naar een generische herinnering wanneer geen etiket bestaat. Gedupliceerde en niet-overeenkomende berichten in verschillende velden worden niet meer weergegeven. (GRANITE-59531)
 * In het dialoogvenster Wizard Pagina maken worden nu de vereiste velden voor elke interactie opnieuw gevalideerd, inclusief tabwijzigingen en bewerkingen met meerdere velden. De **creeer** knoopverblijven gehandicapt tot de auteurs alle vereiste input voltooien, en de tovenaar toont gealigneerde fouten voor ontbrekende waarden. (GRANITE-58826)
@@ -384,9 +384,9 @@ Het publiceren van AEM Target-activiteiten mislukt niet meer wanneer auteurs sta
 
 * De lokalisatie in zh-CN verwijdert een dubbelzinnige uitdrukking in de verwijzing-verzamelende status die tijdens activaverrichtingen zoals Beweging wordt getoond. De gebruikersinterface geeft nu `正在获取对 [[0]] 项的引用` weer, zodat u over een nauwkeurige betekenis en consistente terminologie beschikt. (CQ-4354648)
 * Als u een slimme verzameling maakt, worden opgeslagen zoektrefwoorden niet meer vertaald bij vernieuwen. De auteurs die Engelse termijnen ingaan zien dat die zelfde termijnen worden behouden en de inzameling blijft verenigbare resultaten terugkeren. (NPR-43158)
-* Tekst van afgebroken knopinfo in het deelvenster Afbeelding is gecorrigeerd. De beschrijving &#39;Bijschrift weergeven als pop-up&#39; wordt volledig weergegeven in alle ondersteunde landinstellingen, wat de begeleiding voor niet-Engelse auteurs verbetert. (SITES-10490)
-* In de weergave Sites Admin Column zijn gelokaliseerde labels in het Frans en Spaans afgebroken. &quot;Eindtijd&quot; en &quot;Uit-tijd&quot; leken afgekapt en tonen geen knopinfo. Adobe corrigeerde de vertalingen en herstelde de knopinfo bij aanwijzen, zodat de labels volledig werden gelezen. (SITES-31318)
-* Het **de dialoogvakje van de Beweging** in Plaatsen toonde ruwe i18n sleutels in plaats van leesbare etiketten. Items zoals &quot;Verwijzen naar pagina&#39;s&quot;, &quot;Gemaakt op&quot;, &quot;Gemaakt door&quot; en &quot;Pad&quot; leken onjuist. De correctie koppelt het dialoogvakje aan de correcte woordenboeken en levert vertalingen, met een Engelse reserve. (SITES-30881)
+* Tekst van afgebroken knopinfo in het deelvenster Afbeelding is gecorrigeerd. De beschrijving van `Display caption as pop-up` wordt volledig weergegeven in alle ondersteunde landinstellingen, wat de begeleiding voor niet-Engelse auteurs verbetert. (SITES-10490)
+* In de weergave Sites Admin Column zijn gelokaliseerde labels in het Frans en Spaans afgebroken. `End Time` en `Off Time` leken afgekapt en toonden geen knopinfo. Adobe corrigeerde de vertalingen en herstelde de knopinfo bij aanwijzen, zodat de labels volledig werden gelezen. (SITES-31318)
+* Het **de dialoogvakje van de Beweging** in Plaatsen toonde ruwe i18n sleutels in plaats van leesbare etiketten. Items zoals `Referencing pages,` `Created on,` `Created by,` en `Path` zagen er niet goed uit. De correctie koppelt het dialoogvakje aan de correcte woordenboeken en levert vertalingen, met een Engelse reserve. (SITES-30881)
 
 <!--
 #### Oak {#foundation-oak-6524}
@@ -451,8 +451,8 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.24.0 requires [!DNL Experience Manager] 6.5. Zie [&#x200B; verbeteringsdocumentatie &#x200B;](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
-* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [&#x200B; &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip).
+* [!DNL Experience Manager] 6.5.24.0 requires [!DNL Experience Manager] 6.5. Zie [ verbeteringsdocumentatie ](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
+* De download van het Pak van de Dienst is beschikbaar op de Distributie van de Software van Adobe [ ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip).
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer [!DNL Experience Manager] 6.5.24.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -467,13 +467,13 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 
 1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van de [!DNL Experience Manager] -instantie.
 
-1. Download het Sack van de Dienst van [&#x200B; Distributie van de Software &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download het Sack van de Dienst van [ Distributie van de Software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [&#x200B; Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md).
+1. Open Package Manager en selecteer vervolgens **[!UICONTROL Upload Package]** om het pakket te uploaden. Om meer te weten, zie [ Manager van het Pakket ](/help/sites-administering/package-manager.md).
 
 1. Selecteer het pakket en selecteer vervolgens **[!UICONTROL Install]** .
 
-1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [&#x200B; de Opslag van Gegevens van Amazon S3 &#x200B;](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+1. Om de S3 schakelaar bij te werken, stop de instantie na installatie van het Service Pack, vervang de bestaande schakelaar met een nieuw binair dossier dat in de installatiemap wordt verstrekt, en begin de instantie opnieuw. Zie [ de Opslag van Gegevens van Amazon S3 ](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
 >[!NOTE]
 >
@@ -484,7 +484,7 @@ Het aanzetten van het Verzenden van HoofdServlet **Controle inhoud-Type** treedt
 Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Manager] 6.5.24.0 te installeren. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Plaats het pakket in de map `../crx-quickstart/install` wanneer de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
-* Gebruik [&#x200B; HTTP API van de Manager van het Pakket &#x200B;](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
+* Gebruik [ HTTP API van de Manager van het Pakket ](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` om de geneste pakketten te installeren.
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ Er zijn twee verschillende methoden die u kunt gebruiken om [!DNL Experience Man
 
 **bevestigt de installatie**
 
-Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md).
+Om de platforms te kennen die om met deze versie worden verklaard te werken, zie de [ technische vereisten ](/help/sites-deploying/technical-requirements.md).
 
 1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks weergegeven `Adobe Experience Manager (6.5.24.0)` onder [!UICONTROL Installed Products] . <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -502,15 +502,15 @@ Om de platforms te kennen die om met deze versie worden verklaard te werken, zie
 
 ### Service Pack installeren voor [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [&#x200B; de installatieinstructies van het Pak van de Dienst van Experience Manager Forms &#x200B;](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Voor instructies om het Service Pack op Experience Manager Forms te installeren, zie [ de installatieinstructies van het Pak van de Dienst van Experience Manager Forms ](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
->De Adaptieve eigenschap van Forms, beschikbaar in [&#x200B; AEM 6.5 QuickStart &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De Adaptieve eigenschap van Forms, beschikbaar in [ AEM 6.5 QuickStart ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), wordt ontworpen voor exploratie en evaluatiedoeleinden slechts. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket installeren voor Experience Manager-inhoudsfragmenten{#install-aem-graphql-index-add-on-package}
 
-De klanten die GraphQL gebruiken moeten het [&#x200B; Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
+De klanten die GraphQL gebruiken moeten het [ Fragment van de Inhoud van Experience Manager met het Pakket van de Index van GraphQL 1.1.1 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip) installeren.
 
 Zo kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
@@ -522,9 +522,9 @@ Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-
 
 ### UberJar{#uber-jar}
 
-UberJar voor [!DNL Experience Manager] 6.5.24.0 is beschikbaar in de [&#x200B; Gemaakt Centrale bewaarplaats &#x200B;](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar voor [!DNL Experience Manager] 6.5.24.0 is beschikbaar in de [ Gemaakt Centrale bewaarplaats ](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
-Om UberJar in een Geweven project te gebruiken, zie [&#x200B; hoe te om UberJar &#x200B;](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+Om UberJar in een Geweven project te gebruiken, zie [ hoe te om UberJar ](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
   <dependency>
@@ -543,7 +543,7 @@ Om UberJar in een Geweven project te gebruiken, zie [&#x200B; hoe te om UberJar 
 
 ## Verouderde en verwijderde functies{#removed-deprecated-features}
 
-Zie [&#x200B; Vervangen en verwijderde eigenschappen &#x200B;](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
+Zie [ Vervangen en verwijderde eigenschappen ](/help/release-notes/deprecated-removed-features.md) voor een gedetailleerde lijst van alle eigenschappen afgekeurd of verwijderd voor AEM 6.5.
 
 ### Ondersteuning voor inhoudsfragmenten in de AEM Assets REST API {#cf-support-assets-rest-api}
 
@@ -553,12 +553,12 @@ Adobe is van plan om deze oudere eindpunten beschikbaar te houden tot een einde 
 
 ### SPA-editor {#spa-editor}
 
-[&#x200B; de Redacteur van het KUUROORD &#x200B;](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.24 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
+[ de Redacteur van het KUUROORD ](/help/sites-developing/spa-overview.md) is afgekeurd voor nieuwe projecten die met versie 6.5.24 van AEM 6.5 beginnen. De redacteur van het KUUROORD blijft gesteund voor bestaande projecten, maar zou niet voor nieuwe projecten moeten worden gebruikt.
 
 De voorkeurseditors voor het beheer van inhoud zonder kop in AEM zijn nu:
 
-* [&#x200B; de Universele Redacteur &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
-* [&#x200B; de Redacteur van het Fragment van de Inhoud &#x200B;](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
+* [ de Universele Redacteur ](/help/sites-developing/universal-editor/introduction.md) voor het visuele uitgeven.
+* [ de Redacteur van het Fragment van de Inhoud ](/help/sites-developing/universal-editor/introduction.md) voor op vorm-gebaseerde het uitgeven.
 
 ## Bekende problemen{#known-issues}
 
@@ -643,21 +643,19 @@ U zorgt voor een correcte bewerking door de volgende eigenschappen toe te voegen
 
 ### Bekend probleem voor AEM Sites {#known-issues-aem-sites-6524}
 
-Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [&#x200B; KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor een grote boomstructuur met fragmenten. Zie het [ KB- artikel over Standaard de configuratieopties van de Vraag van GraphQL van de Uitvoerder ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Bekende problemen voor AEM Forms {#known-issues-aem-forms-6524}
 
 * **FORMS-14521** als een gebruiker probeert om een ontwerp brief met opgeslagen gegevens van XML voor te vertonen, wordt het geplakt in `Loading` staat voor sommige specifieke brieven.
 * **FORMS-16603** in de Voorproef van de Druk van de Interactieve Communicatie Agent UI, worden sommige berekende waarden niet correct getoond.
 * **FORMS-15681** wanneer de brief in de Voorproef van de Druk wordt bekeken, wordt de inhoud veranderd. Dat wil zeggen dat sommige spaties verdwijnen en dat bepaalde letters worden vervangen door `x` .
-* **FORMS-15428**: Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die op de dienst van de erfenisAdobe Analytics Cloud gebruikend op referentie-gebaseerde authentificatieophouden werkend vertrouwen. Hierdoor konden de analyseregels niet correct worden uitgevoerd.
+* **FORMS-15428** Na het bijwerken aan AEM Forms Service Pack 20 (6.5.20.0) met Forms toe:voegen-On, configuraties die op de dienst van de erfenisAdobe Analytics Cloud gebruikend op referentie-gebaseerde authentificatieophouden werkend vertrouwen. Hierdoor konden de analyseregels niet correct worden uitgevoerd.
 * **FORMS-16557** in de Voorproef van de Druk van de Interactieve Communicatie Agent UI, wordt het muntsymbool (zoals het dollarteken $) inconsistent getoond voor alle gebiedswaarden. Deze wordt weergegeven voor waarden tot en met 999, maar ontbreekt voor waarden van 1000 en hoger.
 * **FORMS-16575** Om het even welke wijzigingen in genestelde lay-outfragmenten&#39; XDP in een Interactieve Mededeling worden niet weerspiegeld in de redacteur van IC.
 * **FORMS-21378** wanneer de server-zijbevestiging (SSV) wordt toegelaten, de vormvoorlegging kan ontbreken. Neem contact op met Adobe Support voor hulp als dit probleem zich voordoet.
-
-* **FORMS-23722** (de gehechtheid van het Dossier mist in Assign Taak): Wanneer een vorm met het gebied van de Bijlage van het a **Dossier** dat bindref gebruikt wordt voorgelegd aan een Werkschema van AEM dat een **toewijst Taak** stap, verschijnen de gehechtheid niet wanneer de taak van Inbox wordt geopend. De bestanden worden correct opgeslagen in de opslagplaats, maar de interface van de taakstap Toewijzen geeft de bijlagen niet weer.
-
-* **FORMS-23802** (de functies van de Douane laden niet wanneer de vorm in de pagina van Plaatsen is): De functies van de douane werken niet in voorproef of publiceren wanneer de Adaptieve Vorm in een pagina van Plaatsen wordt ingebed en de versie van de aem-vormen-kern-component bibliotheek is minder dan 1.1.76. Er kan een fout optreden zoals `InvalidFormContainerException: No form container found` in de logboeken. Om deze kwestie op te lossen, [&#x200B; download en installeer hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms SP24 (AddOn 6.0.1454).
+* **FORMS-23722** wanneer een vorm die het gebied van de Bijlage van het a **Dossier** bevat dat `bindref` gebruikt wordt voorgelegd aan een Werkschema van AEM met een **Assign Taak** stap, worden de gehechtheid niet getoond. Als gevolg hiervan worden ze niet weergegeven wanneer de taak wordt geopend vanuit het Postvak In. De bestanden worden correct opgeslagen in de opslagplaats, maar de interface van de taakstap Toewijzen geeft de bijlagen niet weer.
+* **FORMS-23802** de functies van de Douane kunnen niet in voorproef laden of publiceren wanneer een Aangepast Vorm in een pagina van Plaatsen wordt ingebed. Deze kwestie komt voor wanneer **aem-vormen-kern-component** bibliotheekversie vroeger is dan 1.1.76. Er kan een fout optreden zoals `InvalidFormContainerException: No form container found` in de logboeken. Om deze kwestie op te lossen, [ download en installeer hotfix ](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms SP24 (AddOn 6.0.1454).
 
 #### Bekende problemen met beschikbare hotfixes {#aem-forms-issues-with-hotfixes}
 
@@ -666,19 +664,19 @@ Voorvertoning van inhoudfragmenten mislukt als gevolg van DoS-beveiliging voor e
 >
 >Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
 
-Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [&#x200B; downloaden en Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
+Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installatie. U kunt [ downloaden en Hotfix ](/help/release-notes/aem-forms-hotfix.md) installeren om deze kwesties op te lossen:
 
 <!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
 
-* **FORMS-23789** (AEM Forms op JEE slechts): De gebruikers ervoeren kwesties met Log4j in AEM Forms op JEE SP24, veroorzakend verstoringen in het registreren en controle voor ondernemingsklanten. Om deze kwestie op te lossen, [&#x200B; download en installeer hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms op het Pak van de Dienst JEE 6.5.24.0.
+* **FORMS-23789** (AEM Forms op JEE slechts): De gebruikers ervoeren kwesties met Log4j in AEM Forms op JEE SP24, veroorzakend verstoringen in het registreren en controle voor ondernemingsklanten. Om deze kwestie op te lossen, [ download en installeer hotfix ](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms op het Pak van de Dienst JEE 6.5.24.0.
 
-* **FORMS-23802** de functies van de Douane laden niet in voorproef of publiceren wanneer de vorm in een pagina van Plaatsen met een oudere versie van aem-vormen-kern-component (&lt;1.1.76) is. Om deze kwestie op te lossen, installeer [&#x200B; AEM Forms AddOn hotfix 6.0.1454 &#x200B;](/help/release-notes/aem-forms-hotfix.md) voor SP24.
+* **FORMS-23802** de functies van de Douane laden niet in voorproef of publiceren wanneer de vorm in een pagina van Plaatsen met een oudere versie van aem-vormen-kern-component (&lt;1.1.76) is. Om deze kwestie op te lossen, installeer [ AEM Forms AddOn hotfix 6.0.1454 ](/help/release-notes/aem-forms-hotfix.md) voor SP24.
 
-* **FORMS-23789** (AEM Forms op JEE slechts): De gebruikers ervoeren kwesties met Log4j in AEM Forms op JEE SP24, veroorzakend verstoringen in het registreren en controle voor ondernemingsklanten. Om deze kwestie op te lossen, [&#x200B; download en installeer hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms op het Pak van de Dienst JEE 6.5.24.0.
+* **FORMS-23789** (AEM Forms op JEE slechts): De gebruikers ervoeren kwesties met Log4j in AEM Forms op JEE SP24, veroorzakend verstoringen in het registreren en controle voor ondernemingsklanten. Om deze kwestie op te lossen, [ download en installeer hotfix ](/help/release-notes/aem-forms-hotfix.md) voor AEM Forms op het Pak van de Dienst JEE 6.5.24.0.
 
-* **FORMS-23802** de functies van de Douane laden niet in voorproef of publiceren wanneer de vorm in een pagina van Plaatsen met een oudere versie van aem-vormen-kern-component (&lt;1.1.76) is. Om deze kwestie op te lossen, installeer [&#x200B; AEM Forms AddOn hotfix 6.0.1454 &#x200B;](/help/release-notes/aem-forms-hotfix.md) voor SP24.
+* **FORMS-23802** de functies van de Douane laden niet in voorproef of publiceren wanneer de vorm in een pagina van Plaatsen met een oudere versie van aem-vormen-kern-component (&lt;1.1.76) is. Om deze kwestie op te lossen, installeer [ AEM Forms AddOn hotfix 6.0.1454 ](/help/release-notes/aem-forms-hotfix.md) voor SP24.
 
-* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Deze verbetering levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP24 waren. De steun werd toegevoegd via a [&#x200B; Hotfix &#x200B;](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
+* AEM Forms bevat nu een upgrade van Struts-versie van 2.5.33 naar 6.x voor de formuliercomponent. Deze verbetering levert eerder gemiste veranderingen van Struts die niet inbegrepen in SP24 waren. De steun werd toegevoegd via a [ Hotfix ](/help/release-notes/aem-forms-hotfix.md) dat u kunt downloaden en installeren om steun voor de recentste versie van Struts toe te voegen.
 
 * **FORMS-14926** na het installeren van AEM Forms JEE Service Pack 21 (6.5.21.0), als u dubbele ingangen van Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` onder de `<AEM_Forms_Installation>/lib/caching/lib` omslag vindt, voer de volgende stappen uit om de kwestie op te lossen:
 
@@ -696,9 +694,9 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
    2. Verwijder de bundel met de naam `com.adobe.granite.ui.commons-5.10.26.jar` .
    3. Start de AEM-server opnieuw.
 
-* **FORMS-23703** wanneer de `contains` regel zonder een standaardwaarde wordt gevormd, ontbreekt de zijbevestiging van de Server voor een adaptieve vorm. U kunt recentste versie van [&#x200B; AEM Forms 6.5.24.0 Service Pack &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installeren om de kwestie te bevestigen.
+* **FORMS-23703** wanneer de `contains` regel zonder een standaardwaarde wordt gevormd, ontbreekt de zijbevestiging van de Server voor een Aangepast Vorm. U kunt de recentste versie van [ AEM Forms 6.5.24.0 Service Pack ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) installeren om de kwestie te bevestigen.
 
-* **GRANITE-63681** de modelschakelaars van de Gegevens van de Vorm kunnen er niet in slagen voor authentiek te verklaren omdat de vereiste sleutelwoorden en regexpatroon niet door gebrek worden toegestaan. Om de kwestie op te lossen, download en installeer hotfix van de [&#x200B; verbinding &#x200B;](/help/release-notes/aem-forms-hotfix.md).
+* **GRANITE-63681** de modelschakelaars van de Gegevens van de Vorm kunnen er niet in slagen voor authentiek te verklaren omdat de vereiste sleutelwoorden en regexpatroon niet door gebrek worden toegestaan. Om de kwestie op te lossen, download en installeer hotfix van de [ verbinding ](/help/release-notes/aem-forms-hotfix.md).
 
   <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
@@ -707,31 +705,31 @@ Voor de volgende problemen is een hotfix beschikbaar voor downloaden en installa
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* **FORMS-23979** de omzetting van HTML-aan-PDF (PDFG) kan intermitterende onderbrekingen ervaren. Vervolgens is een nieuwere versie van de invoegtoepassing Forms voor SP24 uitgebracht, die de correctie bevat. Als u deze kwestie ontmoet, werk uw milieu aan [&#x200B; recentste vrijgegeven toe:voegen-on van Forms voor 6.5.24.0 bij &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979** de omzetting van HTML-aan-PDF (PDFG) kan intermitterende onderbrekingen ervaren. Vervolgens is een nieuwere versie van de invoegtoepassing Forms voor SP24 uitgebracht, die de correctie bevat. Als u deze kwestie ontmoet, werk uw milieu aan [ recentste vrijgegeven Forms toe:voegen voor 6.5.24.0 ](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Na bevordering aan **AEM Forms6.5.24.0**, `server.log` en `error.log` kan met herhaalde berichten worden overstroomd WARN zoals *Veilige ontbroken de verwezenlijking van de parserfabriek* of *attributen van de Veiligheid.. wordt niet gesteund*. De logboeken kunnen met ongeveer **5-10 lijnen per seconde** (honderden MB per uur) groeien, die schijf en blokproductielasten kunnen vullen.
 
-Als u het logvolume wilt verminderen, stelt u het registratieniveau voor `com.adobe.util.XMLSecurityUtil` in op `ERROR` in de configuratie van de toepassingsserver of via het JVM-argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` . Hiermee verbergt u alleen de berichten en corrigeert u de onderliggende oorzaak niet.
+Als u het logvolume wilt verminderen, stelt u het registratieniveau voor `com.adobe.util.XMLSecurityUtil` in op `ERROR` in de configuratie van de toepassingsserver of via het JVM-argument `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR` . Deze functionaliteit verbergt alleen de berichten en corrigeert niet de onderliggende oorzaak.
 
-* **FORMS-23875** in het modelonderzoek van de Gegevens van het Vorm, wordt een markering van HTML getoond in UI zelfs wanneer een relevante entiteit niet aanwezig is. Om de kwestie op te lossen, download en installeer hotfix van [&#x200B; de verbinding &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+* **FORMS-23875** in het modelonderzoek van de Gegevens van het Vorm, wordt een markering van HTML getoond in UI zelfs wanneer een relevante entiteit niet aanwezig is. Om de kwestie op te lossen, download en installeer hotfix van [ de verbinding ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
 De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten van de Inhoud inbegrepen in deze [!DNL Experience Manager] 6.5 versie van het Service Pack:
 
-* [&#x200B; Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [&#x200B; Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Lijst van bundels OSGi inbegrepen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [ Lijst met inhoudspakketten die zijn opgenomen in Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Beperkte websites{#restricted-sites}
 
 Deze websites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
-* [&#x200B; download van het Product bij licensing.adobe.com &#x200B;](https://licensing.adobe.com/)
-* [&#x200B; de Klantenondersteuning van Adobe van het Contact &#x200B;](https://experienceleague.adobe.com/nl/docs/customer-one/using/home).
+* [ download van het Product bij licensing.adobe.com ](https://licensing.adobe.com/)
+* [ de Klantenondersteuning van Adobe van het Contact ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager]  productpagina &#x200B;](https://business.adobe.com/nl/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager]  6.5 documentatie &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65)
->* [&#x200B; Abonneren aan de updates van het de prioritaire product van Adobe &#x200B;](https://www.adobe.com/subscription/priority-product-update.html)
+>* [[!DNL Experience Manager]  productpagina ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager]  6.5 documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [ Abonneren aan de updates van het de prioritaire product van Adobe ](https://www.adobe.com/subscription/priority-product-update.html)
 

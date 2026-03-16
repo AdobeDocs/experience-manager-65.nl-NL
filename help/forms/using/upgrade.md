@@ -1,5 +1,5 @@
 ---
-title: Upgrade naar AEM 6,5 Forms
+title: Upgrade naar AEM 6.5 Forms
 description: U kunt een directe upgrade uitvoeren van AEM 6.3 Forms en AEM 6.4 Forms naar AEM 6.5 Forms.
 content-type: reference
 topic-tags: installing
@@ -9,28 +9,28 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
 
-# Upgrade naar AEM 6,5 Forms {#upgrade-to-aem-forms}
+# Upgrade naar AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM 6.5 | Dit artikel |
 
 
-AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 Forms te leren, zie [&#x200B; Nieuw document van eigenschappen &#x200B;](../../forms/using/whats-new.md).
+AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Om over alle nieuwe mogelijkheden en verhogingen van AEM 6.5 Forms te leren, zie [ Nieuw document van de eigenschapsamenvatting ](../../forms/using/whats-new.md).
 
-U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl de bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
+U kunt uw bestaande installatie van LiveCycle of AEM Forms upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms op OSGi:
 
-![&#x200B; OSGi verbeteringsstroom &#x200B;](do-not-localize/osgi-upgrade-path.png)
+![ OSGi verbeteringsstroom ](do-not-localize/osgi-upgrade-path.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
@@ -39,13 +39,13 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 U kunt een multi-hopverbetering van ook uitvoeren
 
-* AEM 6,0 Forms op OSGi
-* AEM 6.1 Forms over OSGi
+* AEM 6.0 Forms op OSGi
+* AEM 6.1 Forms op OSGi
 * AEM 6.2 Forms over OSGi
 
 In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE weergegeven:
 
-![&#x200B; JEE verbetering 6.5 &#x200B;](do-not-localize/jee-upgrade-6-5.png)
+![ JEE verbetering 6.5 ](do-not-localize/upgradepathjee.png)
 
 
 U kunt een directe upgrade uitvoeren vanaf:
@@ -57,21 +57,21 @@ U kunt een directe upgrade uitvoeren vanaf:
 U kunt een multi-hopverbetering van ook uitvoeren
 
 * LiveCycle ES4 SP1
-* AEM 6,0 Forms in juni
+* AEM 6.0 Forms in JEE
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
 
-AEM 6.5.18.0 Forms op JEE verstrekt twee soorten installateurs: [&#x200B; Volledige installateur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) en [&#x200B; installateur van het Fatch &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
+AEM 6.5.18.0 Forms op JEE verstrekt twee types van installateurs: [ Volledige installateur ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [ installateur van het Reparatie ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Volledige installateur**: U kunt volledige installateur gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
+**Volledige installateur**: U kunt het volledige installatieprogramma gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
 
-**installateur van het Patch**: Het installatieprogramma van het Patch is voor klanten reeds gebruikend AEM versies 6.5.x.x. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
+**installateur van het Patch**: Het installatieprogramma van het Patch is voor klanten reeds gebruikend AEM 6.5.x.x versies. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
 
 In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledige installatieprogramma en het patchinstallatieprogramma.
 
-![&#x200B; Volledige Installateur en de Installateur van het Patch &#x200B;](/help/forms/using/assets/full-and-patch-installer.png)
+![ Volledige Installateur en de Installateur van het Patch ](/help/forms/using/assets/full-and-patch-installer.png)
 
-Verwijs naar [&#x200B; AEM 6.5 Forms Service Pack installatie instructies &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=nl-NL) artikel om het recentste Service Pack voor milieu te installeren JEE.
+Verwijs naar [ AEM 6.5 Forms Service Pack installatie instructies ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) artikel om het recentste Service Pack voor milieu te installeren JEE.
 
 <!--
 [Work in Progress]

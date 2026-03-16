@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 
@@ -61,7 +61,7 @@ U kunt een multi-hopverbetering van ook uitvoeren
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
 
-AEM 6.5.18.0 Forms op JEE verstrekt twee types van installateurs: [&#x200B; Volledige installateur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [&#x200B; installateur van het Reparatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 Forms op JEE verstrekt twee types van installateurs: [&#x200B; Volledige installateur &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL) en [&#x200B; installateur van het Reparatie &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=nl-NL).
 
 **Volledige installateur**: U kunt het volledige installatieprogramma gebruiken om nieuwe instanties van AEM Forms op te zetten of verbeteringen van AEM 6.5.x.x Forms op JEE aan AEM 6.5.18.0 Forms op JEE uit te voeren.
 
@@ -71,7 +71,7 @@ In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledi
 
 ![&#x200B; Volledige Installateur en de Installateur van het Patch &#x200B;](/help/forms/using/assets/full-and-patch-installer.png)
 
-Verwijs naar [&#x200B; AEM 6.5 Forms Service Pack installatie instructies &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) artikel om het recentste Service Pack voor milieu te installeren JEE.
+Verwijs naar [&#x200B; AEM 6.5 Forms Service Pack installatie instructies &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=nl-NL) artikel om het recentste Service Pack voor milieu te installeren JEE.
 
 <!--
 [Work in Progress]

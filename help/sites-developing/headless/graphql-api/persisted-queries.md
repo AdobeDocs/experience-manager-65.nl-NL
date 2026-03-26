@@ -265,7 +265,7 @@ Deze query kan worden uitgevoerd onder een pad `wknd/adventures-by-activity` . O
 
 ## Door uw doorlopende query&#39;s in cache te plaatsen {#caching-persisted-queries}
 
-De geadviseerde vragen worden geadviseerd aangezien zij bij de [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) en de lagen van het Netwerk van de Levering van de Inhoud (CDN) in het voorgeheugen kunnen worden ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
+De geadviseerde vragen worden geadviseerd aangezien zij bij de [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=nl-NL) en de lagen van het Netwerk van de Levering van de Inhoud (CDN) in het voorgeheugen kunnen worden ondergebracht, uiteindelijk verbeterend de prestaties van de het vragen cliënttoepassing.
 
 Standaard maakt AEM de cache ongeldig op basis van de definitie &#39;Tijd naar live&#39; (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 

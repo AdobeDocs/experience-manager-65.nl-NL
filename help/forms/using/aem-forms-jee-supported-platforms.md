@@ -790,7 +790,7 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 ### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
 
-Klik [&#x200B; hier &#x200B;](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van Adobe voor Microsoft® Office te zien.
+Klik [&#x200B; hier &#x200B;](https://www.adobe.com/nl/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van Adobe voor Microsoft® Office te zien.
 
 
 ### Uitzonderingen op clientondersteuning {#exceptions-to-client-support}

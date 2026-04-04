@@ -138,7 +138,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op de Adobe Developer
 
    >[!NOTE]
    >
-   >De URL die als [!UICONTROL Service URL] wordt opgegeven, is niet toegankelijk via de browser en genereert een fout van 404. De configuratie werkt OK met dezelfde waarde als de parameter [!UICONTROL Service URL] . Voor het algemene de dienststatus en onderhoudsprogramma, zie [&#x200B; https://status.adobe.com &#x200B;](https://status.adobe.com).
+   >De URL die als [!UICONTROL Service URL] wordt opgegeven, is niet toegankelijk via de browser en genereert een fout van 404. De configuratie werkt OK met dezelfde waarde als de parameter [!UICONTROL Service URL] . Voor het algemene de dienststatus en onderhoudsprogramma, zie [&#x200B; https://status.adobe.com/nl-nl &#x200B;](https://status.adobe.com/nl-nl).
 
 1. Klik op **[!UICONTROL Download Public Certificate for OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt` . Bovendien hoeft u dit certificaat niet meer te uploaden naar de Adobe Developer-console.
 

@@ -235,7 +235,7 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 * [&#x200B; hoe te om Criteria 1.2.3 van het Succes te ontmoeten &#x200B;](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/nl/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Bijschriften (live) (1.2.4)  {#captions-live}

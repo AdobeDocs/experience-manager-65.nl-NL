@@ -71,7 +71,7 @@ Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Er wo
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] wordt gebruikt voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Voor meer informatie, zie [&#x200B; XMP &#x200B;](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] wordt gebruikt voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Voor meer informatie, zie [&#x200B; XMP &#x200B;](https://www.adobe.com/nl/products/xmp.html).
 
 ### ID3 {#id}
 

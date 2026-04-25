@@ -2,21 +2,21 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Handleiding voor mobiele gebruikers
+user-guide-title: AEM 6.5 Mobile User Guide
 breadcrumb-title: Gids voor mobiele apparaten
-user-guide-description: Maak en beheer content voor mobiele apps.
+user-guide-description: Inhoud maken en beheren voor mobiele apps.
 feature: Mobile
 role: User
 hide: true
-source-git-commit: 829eadb61062f20be74e36b52175627f1f377c50
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 5%
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 
 
-# AEM 6.5 Handleiding voor mobiele gebruikers {#mobile}
+# AEM 6.5 Mobile User Guide {#mobile}
 
 + [Overzicht van de mobiele gebruikershandleiding](home.md)
 + Inleiding tot AEM Mobile {#introduction}
@@ -26,10 +26,10 @@ ht-degree: 5%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR-gereedheid](aem-mobile-gdpr-compliance.md)
    + [Mobiele apps ontwikkelen](develop-mobile-apps.md)
-+ Authoring On-Demand Services-app {#authoring}
++ Authoring On-Demand Services App {#authoring}
    + [Mobiel op aanvraag](mobile-apps-ondemand.md)
    + [Inhoud beheren](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Publish-inhoud publiceren](mobile-on-demand-publishing-unpublishing.md)
+   + [Inhoud publiceren ongedaan maken](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile-toepassingsdashboard](mobile-apps-ondemand-application-dashboard.md)
    + [Handelingen voor het maken en configureren van toepassingen](mobile-apps-ondemand-application-create-configure-action.md)
    + [Artikelen beheren](mobile-on-demand-managing-articles.md)
@@ -59,7 +59,7 @@ ht-degree: 5%
    + [Modellen - overzicht](model-management.md)
    + [Spaties en entiteiten](spaces-and-entities.md)
    + [Verzamelingen beheren](mobile-on-demand-managing-collections.md)
-+ Authoring in Adobe PhoneGap Enterprise {#author-phonegap}
++ Adobe PhoneGap Enterprise ontwerpen {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [App-metagegevens bewerken](phonegap-editmetadata.md)
    + [Toepassingsdefinities](phonegap-app-definitions.md)
@@ -82,7 +82,7 @@ ht-degree: 5%
    + [Apparaatfuncties openen](phonegap-access-device-features.md)
    + [Adobe Analytics toevoegen aan uw mobiele toepassing](phonegap-add-analytics-to-apps.md)
    + [Paginasjablonen voor mobiele apps](phonegap-apps-arch-page-templates.md)
-   + [Adobe Target-Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
+   + [Adobe Target Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
    + [Toepassingen voor één pagina](phonegap-single-page-applications.md)
    + [AEM PhoneGap starten](starting-aem-phonegap-app.md)
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
@@ -90,8 +90,8 @@ ht-degree: 5%
    + [App-prestaties bijhouden met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
 + Adobe PhoneGap Enterprise beheren {#administering-phonegap}
    + [Mobile QuickStart](phonegap-mobile-quickstart.md)
-   + [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](administer-phonegap.md)
-   + [Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)
+   + [Inhoud beheren voor Adobe PhoneGap Enterprise met AEM](administer-phonegap.md)
+   + [Adobe PhoneGap Build Cloud Service configureren](configure-phonegap-build-cloud.md)
    + [Het filter Referrer instellen op Leeg maken](setting-referrer-filter-empty.md)
-   + [Vorm uw Cloud Service van de Diensten van de Adobe Mobiele](configure-adobe-mobile-cloud-service.md)
+   + [Adobe Mobile Services Cloud Service configureren](configure-adobe-mobile-cloud-service.md)
    + [Uw gebruikers en gebruikersgroepen configureren](configure-users-groups.md)

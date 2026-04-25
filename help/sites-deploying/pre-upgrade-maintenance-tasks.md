@@ -10,9 +10,9 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2049'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Bij het uitvoeren van de upgrade moet, naast de activiteiten voor het upgraden v
 
 ## Volledige back-up van AEM maken {#fully-back-up-aem}
 
-Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Voor meer informatie bij het steunen van en het herstellen van een instantie van AEM, zie [&#x200B; Steun en herstel &#x200B;](/help/sites-administering/backup-and-restore.md).
+Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Voor meer informatie bij het steunen van en het herstellen van een instantie van AEM, zie [ Steun en herstel ](/help/sites-administering/backup-and-restore.md).
 
 ## Back-up maken van wijzigingen in /etc {#backup-changes-etc}
 
@@ -56,7 +56,7 @@ Wanneer u AEM start vanuit het jar-bestand, wordt een `quickstart.properties` -b
 
 ## Werkstroom- en controlelogbestanden leegmaken configureren {#configure-wf-audit-purging}
 
-De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. De documentatie voor het vormen werkschemazuiveringstaken kan bij [&#x200B; het Beheer de Instanties van het Werkschema &#x200B;](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kunnen bij [&#x200B; het Onderhoud van het Logboek van de Controle in AEM 6 &#x200B;](/help/sites-administering/operations-audit-log.md) worden gevonden.
+De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. De documentatie voor het vormen werkschemazuiveringstaken kan bij [ het Beheer de Instanties van het Werkschema ](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kunnen bij [ het Onderhoud van het Logboek van de Controle in AEM 6 ](/help/sites-administering/operations-audit-log.md) worden gevonden.
 
 ## De taken vóór de upgrade installeren, configureren en uitvoeren {#install-configure-run-pre-upgrade-tasks}
 
@@ -74,7 +74,8 @@ Alle taken die zijn opgenomen in de optimaliseringsstap vóór de upgrade zijn c
 
 In AEM 6.3 en hoger worden de optimalisatietaken voor het onderhoud vóór de upgrade opgenomen in de snelstartjar.
 
-<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
+<!--
+URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
 If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
@@ -84,19 +85,20 @@ You can find the packages at these locations:
 
 * [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+-->
 
 ### Hoe wordt het gebruikt {#how-to-use-it}
 
 De `PreUpgradeTasksMBean` component OSGI wordt vooraf geconfigureerd met een lijst van pre-upgrade onderhoudstaken die allemaal tegelijk kunnen worden uitgevoerd. U kunt de taken vormen door de hieronder procedure te volgen:
 
-1. Ga naar de Console van het Web door aan *https://serveraddress:serverport/system/console/configMgr* te doorbladeren
+1. Ga naar de Console van het Web door aan *https://serveraddress :serverport te doorbladeren/system/console/configMgr*
 
 1. Onderzoek naar &quot;**preupgradetasks**&quot;, dan klik de eerste passende component. De volledige naam van de component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. Wijzig de lijst met onderhoudstaken die moet worden uitgevoerd zoals hieronder wordt weergegeven:
 
-   ![&#x200B; 1487758925984 &#x200B;](assets/1487758925984.png)
+   ![1487758925984](assets/1487758925984.png)
 
 De takenlijst verschilt afhankelijk van de uitvoeringsmodus die wordt gebruikt om de instantie te starten. Hieronder volgt een beschrijving van de uitvoeringsmodus waarvoor elke onderhoudstaak is ontworpen.
 
@@ -161,11 +163,11 @@ De lijst kan worden bewerkt. U kunt de plus **(+) gebruiken** en minus **(-)** b
 
 **MBean Methods**
 
-De beheerde boonfunctionaliteit kan worden betreden gebruikend de [&#x200B; Console JMX &#x200B;](/help/sites-administering/jmx-console.md).
+De beheerde boonfunctionaliteit kan worden betreden gebruikend de [ Console JMX ](/help/sites-administering/jmx-console.md).
 
 U kunt tot MBeans toegang hebben door:
 
-1. Ga naar de Console JMX in *https://serveraddress:serverport/system/console/jmx*
+1. Ga naar de Console JMX in *https://serveraddress :serverport/system/console/jmx*
 1. Onderzoek naar **PreUpgradeTasks** en klik het resultaat
 
 1. Selecteer om het even welke methode van de **sectie van Verrichtingen** en selecteer **aanhalen** in het volgende venster.
@@ -266,7 +268,8 @@ Als u de aangepaste modules die zijn gedefinieerd in de JAAS-configuratie van `r
                      <param name = "adminId" value ="admin" />
                      <param name = "disableNTLMAuth" value = "true" />
                      <param name = "tokenExpiration" value = "43200000" />
-                     <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
+                     <!--
+param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
                 -->
                  </LoginModule >
          </ Security>
@@ -274,9 +277,9 @@ Als u de aangepaste modules die zijn gedefinieerd in de JAAS-configuratie van `r
 
 >[!NOTE]
 >
->Voor meer informatie, zie [&#x200B; Authentificatie met de Externe Login Module &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
+>Voor meer informatie, zie [ Authentificatie met de Externe Login Module ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 >
->Voor een voorbeeld van `LoginModule` configuratie in AEM 6, zie [&#x200B; Vormend LDAP met AEM 6 &#x200B;](/help/sites-administering/ldap-config.md).
+>Voor een voorbeeld van `LoginModule` configuratie in AEM 6, zie [ Vormend LDAP met AEM 6 ](/help/sites-administering/ldap-config.md).
 
 ## Updates verwijderen uit de map /install {#remove-updates-install-directory}
 
@@ -300,7 +303,7 @@ Schakel geplande OSGi-taken uit die in uw toepassingscode zijn opgenomen.
 >
 >Deze stap is alleen nodig voor TarMK-installaties
 
-Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [&#x200B; het Uitvoeren van de Opruiming van de Offline Revisie &#x200B;](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie bij het in werking stellen van de Opruiming van de Off-line Revisie, zie [ het Uitvoeren van de Opruiming van de Offline Revisie ](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## Verzameling van afval uit datastore uitvoeren {#execute-datastore-garbage-collection}
 
@@ -308,7 +311,7 @@ Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voor
 >
 >Deze stap is alleen nodig voor instanties met crx3
 
-Nadat u de revisie hebt opgeschoond op CRX3-instanties, moet u de afvalverzameling van de datastore uitvoeren om eventuele niet-gerefereerde balken in de gegevensopslag te verwijderen. Voor instructies, zie de documentatie op [&#x200B; de Inzameling van het huisvuil van de Opslag van Gegevens &#x200B;](/help/sites-administering/data-store-garbage-collection.md).
+Nadat u de revisie hebt opgeschoond op CRX3-instanties, moet u de afvalverzameling van de datastore uitvoeren om eventuele niet-gerefereerde balken in de gegevensopslag te verwijderen. Voor instructies, zie de documentatie op [ de Inzameling van het huisvuil van de Opslag van Gegevens ](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Upgrade het databaseschema indien nodig {#upgrade-the-database-schema-if-needed}
 
@@ -321,7 +324,7 @@ Om zulk een scenario te verhinderen te gebeuren, bevorder het schema door het vo
 1. Sluit de AEM-instantie die moet worden bijgewerkt.
 1. Upgrade het databaseschema. Raadpleeg de documentatie bij het databasetype om te zien welke gereedschappen nodig zijn om het resultaat te bereiken.
 
-   Voor meer informatie over hoe Oak schemaverbeteringen behandelt, zie [&#x200B; deze pagina op de website Apache &#x200B;](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   Voor meer informatie over hoe Oak schemaverbeteringen behandelt, zie [ deze pagina op de website Apache ](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Ga door met het upgraden van AEM.
 
@@ -347,7 +350,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 U kunt dit probleem omzeilen door het volgende te doen:
 
 1. De instantie loskoppelen van het productieverkeer
-1. Maak een back-up van een of meer gebruikers die het probleem veroorzaken. U kunt deze taak uitvoeren via Package Manager. Voor meer informatie, zie [&#x200B; hoe te met Pakketten werken.](/help/sites-administering/package-manager.md)
+1. Maak een back-up van een of meer gebruikers die het probleem veroorzaken. U kunt deze taak uitvoeren via Package Manager. Voor meer informatie, zie [ hoe te met Pakketten werken.](/help/sites-administering/package-manager.md)
 1. Verwijder een of meer gebruikers die het probleem veroorzaken. Hieronder volgt een lijst met gebruikers die mogelijk onder deze categorie vallen:
 
    1. `dynamic-media-replication`

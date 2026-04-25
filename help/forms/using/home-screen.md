@@ -9,9 +9,9 @@ exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -26,23 +26,25 @@ Standaard worden in het scherm Home alle formulieren weergegeven, inclusief star
 
 Het volgende cijfer is geannoteerd met vraag-outs aan de essentiële componenten op het standaardscherm van het Huis.
 
-![&#x200B; Forms app homescherm &#x200B;](assets/home-screen-1.png)
+![ Forms app homescherm ](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
-1. **knoop van het Menu**: Selecteer de **knoop van het Menu** om aan Taken, Forms, Outbox, en Montages te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle bewaarde vormen en concepten in Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing [&#x200B; wordt gesynchroniseerd met de server &#x200B;](../../forms/using/sync-app.md) . Voor informatie over Montages, zie [&#x200B; de Algemene Montages van de Update &#x200B;](../../forms/using/update-general-settings.md).
+1. **knoop van het Menu**: Selecteer de **knoop van het Menu** om aan Taken, Forms, Outbox, en Montages te navigeren. Als uw AEM Forms-app is verbonden met een AEM Forms JEE-server, kunt u de optie Taken zien. De optie Taken slaat ook de concepten op die van taken in een proces worden gecreeerd. Voor AEM Forms OSGi-servers is de optie Taken verborgen. De opgeslagen formulieren en concepten worden opgeslagen voordat deze worden gesynchroniseerd met de server. Alle bewaarde vormen en concepten in Postvak UIT worden geüpload naar de AEM Forms-server wanneer de toepassing [ wordt gesynchroniseerd met de server ](../../forms/using/sync-app.md) . Voor informatie over Montages, zie [ de Algemene Montages van de Update ](../../forms/using/update-general-settings.md).
 1. **Taak of Vorm**: Selecteer de vermelde taak of de vorm u wilt werken met.
 1. **Horizontale Ellipse**: Wijst erop dat de acties voor de vorm beschikbaar zijn. Tikken op de ellips geeft de handelingen en beschrijving weer die de auteur heeft opgegeven. De **optie van het Ontwerp van de Schrapping** en **Volledige** is zichtbaar wanneer u de ellips selecteert.
 1. **verfrist pictogram**: Selecteer verfrissen pictogram zodat kunt u uw app met de Server van AEM Forms synchroniseren.
 
 ### Het startscherm aanpassen {#customizing-the-home-screen}
 
-![&#x200B; Algemene Montages &#x200B;](assets/gen-settings.png)
+![ Algemene Montages ](assets/gen-settings.png)
 
 U kunt het standaardscherm van het Huis van app of van de **[Algemene Montages](../../forms/using/update-general-settings.md)** van app veranderen, of van het **Voorkeur** lusje op HTML Workspace.
 
 De wijziging in de instelling voor het startscherm van de app is van invloed op het Basisscherm van de momenteel aangemelde gebruiker of de gebruiker op het huidige mobiele apparaat.
 
-De wijziging die is aangebracht in HTML Workspace heeft echter gevolgen voor alle gebruikers van de AEM Forms-app die zijn aangemeld bij de AEM Forms Server.
+De wijziging die in HTML Workspace is aangebracht, heeft echter gevolgen voor alle gebruikers van de AEM Forms-app die zijn aangemeld bij de AEM Forms Server.

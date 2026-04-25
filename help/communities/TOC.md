@@ -2,40 +2,40 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Gebruikershandleiding voor communities
-breadcrumb-title: Handleiding Communities
+user-guide-title: Gebruikershandleiding voor AEM 6.5
+breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature: Communities
 role: User
 hide: true
-source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 6%
+source-wordcount: '427'
+ht-degree: 0%
 
 ---
 
 
 # Adobe Experience Manager 6.5 Community Guide {#communities}
 
-+ [Handleiding Communities](home.md)
++ [Community Guide](home.md)
 + Inleiding tot AEM Communities {#introduction}
    + [Communitysites](administer-landing.md)
    + [AEM Communities - Overzicht](overview.md)
-   + [&#x200B; Begonnen het worden met AEM Communities &#x200B;](getting-started.md)
+   + [ Begonnen het worden met AEM Communities ](getting-started.md)
    + [Eerste instelling](setup.md)
    + [Auteur van een nieuwe communautaire site](create-site.md)
    + [De gepubliceerde site beleven](published-site.md)
-   + [&#x200B; Authoring geneste groepen &#x200B;](nested-groups.md)
+   + [ Authoring geneste groepen ](nested-groups.md)
 + Implementeren {#deploy}
    + [Gemeenschappen inzetten](deploy-communities.md)
-   + [Opwaarderen naar AEM 6.5 Gemeenschappen](upgrade.md)
+   + [Opwaarderen naar AEM 6.5-gemeenschappen](upgrade.md)
    + [Aanbevolen topologieën voor Gemeenschappen](topologies.md)
    + [Dispatcher for Communities configureren](dispatcher.md)
 + Beheer {#administer}
    + [Gebruikers- en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
    + [Communityconsoles](consoles.md)
-   + [&#x200B; Configuratie van Analytics voor de Eigenschappen van Gemeenschappen &#x200B;](analytics.md)
+   + [ Configuratie van Analytics voor de Eigenschappen van Gemeenschappen ](analytics.md)
    + [Berichten configureren](messaging.md)
    + [Modernisering van communautaire inhoud](moderate-ugc.md)
    + [E-mail configureren](email.md)
@@ -54,8 +54,8 @@ ht-degree: 6%
    + [Groepssjablonen](tools-groups.md)
    + [Communautaire functies](functions.md)
    + [Opslagconfiguratie](srp-config.md)
-   + [&#x200B; Console van Badges &#x200B;](badges.md)
-   + [&#x200B; Console van Rapporten &#x200B;](reports.md)
+   + [ Console van Badges ](badges.md)
+   + [ Console van Rapporten ](reports.md)
    + [MPEG voor Gemeenschappen](ffmpeg.md)
    + [In context Moderatie](in-context.md)
    + [Geavanceerde scores en Badges](advanced.md)
@@ -65,17 +65,17 @@ ht-degree: 6%
    + [DSRP - Relational Database Storage Resource Provider](dsrp.md)
    + [MySQL-configuratie voor DSRP](dsrp-mysql.md)
    + [JSRP - JCR Storage Resource Provider](jsrp.md)
-   + [&#x200B; Solr Configuratie voor SRP &#x200B;](solr.md)
+   + [ Solr Configuratie voor SRP ](solr.md)
    + [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md)
    + [Door de gebruiker gegenereerde inhoud vertalen](translate-ugc.md)
    + [Gebruikerssynchronisatie van gemeenschappen](sync.md)
    + [Limieten voor bijdragen van de lidstaten](limits.md)
-+ Ontwikkeling {#develop}
++ Ontwikkelen {#develop}
    + [Ontwikkelingsgemeenschappen](communities.md)
    + [Framework sociale component](scf.md)
    + [Community Components Guide](components-guide.md)
    + [Componenten, functies en essentiële functies](essentials.md)
-   + [Tutorials](tutorials.md)
+   + [Zelfstudies](tutorials.md)
    + [Problemen oplossen](troubleshooting.md)
    + [Codeerrichtlijnen](code-guide.md)
    + [Aanpassing op de server](server-customize.md)
@@ -83,9 +83,9 @@ ht-degree: 6%
    + [SCF Handlebars Helpers](handlebars-helpers.md)
    + [Overzicht opslagbronprovider](srp.md)
    + [Essentiële elementen voor community-sites](sites-for-developers.md)
-   + [&#x200B; Hoofdzaak van de Stroom van de Activiteit &#x200B;](essentials-activities.md)
+   + [ Hoofdzaak van de Stroom van de Activiteit ](essentials-activities.md)
    + [Grondbeginselen van blogs](blog-developer-basics.md)
-   + [&#x200B; Hoofdzaak van de Kalender &#x200B;](calendar-basics-for-developers.md)
+   + [ Hoofdzaak van de Kalender ](calendar-basics-for-developers.md)
    + [Clientlibs voor Community-componenten](clientlibs.md)
    + [Essentiële opmerkingen](essentials-comments.md)
    + [OSGi Events for Communities Components](events.md)
@@ -132,9 +132,9 @@ ht-degree: 6%
 + Authoring {#authoring}
    + [Community-componenten](author-communities.md)
    + [Grondbeginselen van Community-componenten](basics.md)
-   + [&#x200B; Eigenschap van de Streams van de Activiteit &#x200B;](activities.md)
+   + [ Eigenschap van de Streams van de Activiteit ](activities.md)
    + [Blogonderdeel](blog-feature.md)
-   + [de Eigenschap van 0 Kalender](calendar.md)
+   + ](calendar.md) de Eigenschap van 0} Kalender[
    + [Opmerkingen gebruiken](comments.md)
    + [Functie voor aanbevolen inhoud](featured.md)
    + [Functie bestandsbibliotheek](file-library.md)

@@ -5,9 +5,9 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Ervaar met AEM Forms op JEE Process Management, basisprogrammering van Java™ e
 
 **Extra vereiste andere producten**
 
-De redacteur van Java™ zoals [&#x200B; Eclipse &#x200B;](https://www.eclipse.org/) of [&#x200B; winde van Netbeans &#x200B;](https://netbeans.apache.org/)
+De redacteur van Java™ zoals [ Eclipse ](https://www.eclipse.org/) of [ winde van Netbeans ](https://netbeans.apache.org/)
 
 ## Gebruikersniveau {#user-level}
 
@@ -142,9 +142,11 @@ Het bestand component.xml wordt hier weergegeven:
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>
@@ -196,21 +198,21 @@ Het bestand component.xml wordt hier weergegeven:
 1. Implementeer de component (.JAR-bestand) in JEE-runtime naar de AEM Forms via Workbench.
 1. Start de service vanuit Workbench (zie onderstaande afbeelding).
 
-![&#x200B; Ontwerp van het Proces &#x200B;](assets/process-design.jpg)
+![ Ontwerp van het Proces ](assets/process-design.jpg)
 
 ## De ZIP-service gebruiken in workflows {#using-zip-service-in-workflows}
 
 De bewerking UnzipDocument van de aangepaste service kan nu een documentvariabele als invoer accepteren en een lijst met documentvariabelen als uitvoer retourneren.
 
-![&#x200B; Unzip Document &#x200B;](assets/unzip-doc.jpg)
+![ Unzip Document ](assets/unzip-doc.jpg)
 
 Op dezelfde manier kan de verrichting ZipDocuments van de douanecomponent een lijst van documenten als input goedkeuren, hen als zip dossier comprimeren en het samengeperste document terugkeren.
 
-![&#x200B; Zip Document &#x200B;](assets/zip-doc.jpg)
+![ Zip Document ](assets/zip-doc.jpg)
 
 De volgende werkschemaorchestratie toont hoe te om het bepaalde dossier van het PIT te decomprimeren, het terug naar een ander dossier van het PIT te comprimeren, en output terug te keren (zie hieronder Figuur).
 
-![&#x200B; het Werkschema van het ZIP van het ZIP Unzip &#x200B;](assets/unzip-zip-process.jpg)
+![ het Werkschema van het ZIP van het ZIP Unzip ](assets/unzip-zip-process.jpg)
 
 ## Bepaalde zaken voor zakelijk gebruik {#business-use-cases}
 
@@ -218,9 +220,9 @@ U kunt deze ZIP-service voor de volgende gebruiksgevallen gebruiken:
 
 * Alle bestanden in een bepaalde map zoeken en de bestanden terugsturen als gecomprimeerd document.
 
-* Geef een ZIP-bestand op dat meerdere PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat deze zijn gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
+* Geef een ZIP-bestand op dat meerdere PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat ze zijn gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
 
-* Geef een ZIP-bestand op met een heterogeen type document dat kan worden gedecomprimeerd en geconverteerd als PDF-document met de service PDF genereren.
+* Geef een ZIP-bestand op dat een heterogeen type document bevat dat kan worden gedecomprimeerd en geconverteerd als PDF-document met de service PDF genereren.
 
 * Met beleid wordt een lijst met documenten beveiligd en geretourneerd als een ZIP-bestand.
 

@@ -1,14 +1,14 @@
 ---
 title: AI Assistant in AEM 6.5
-description: Met AI-assistent kunt u antwoorden zoeken en problemen oplossen voor de oplossingen die beschikbaar zijn in Adobe Experience Manager.
+description: Met AI Assistant kunt u zoeken naar antwoorden en problemen oplossen voor de oplossingen die beschikbaar zijn in Adobe Experience Manager.
 solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 2%
+source-wordcount: '1379'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Het is rechtstreeks ingesloten in AEM en toegankelijk vanuit AEM Experience Hub,
 
 De volgende 3 minuten, 25 seconden video levert een geleidelijke analyse van AI Medewerker in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475364/?captions=dut&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Toegang tot AI Assistant in AEM{#get-access}
 
@@ -46,7 +46,7 @@ Klanten moeten het volgende hebben om toegang te krijgen tot AI Assistant in AEM
 
 >[!NOTE]
 >
->AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [&#x200B; overzicht van de Diensten van Adobe Identity Management &#x200B;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>AI Assistant-aanvragen in AEM worden geverifieerd via Adobe Identity Management Services (IMS). Voor details, zie het [ overzicht van de Diensten van Adobe Identity Management ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **om toegang tot AI Medewerker in AEM te krijgen:**
 
@@ -54,10 +54,10 @@ Klanten moeten het volgende hebben om toegang te krijgen tot AI Assistant in AEM
 
 1. Als u AI Assistant in AEM wilt gebruiken, is toestemming voor toegang tot productkennis via de AI Assistant verplicht. Deze machtiging is standaard ingeschakeld.
 
-   Als u wilt controleren wie tot de Kennis van het Product toegang heeft, verzend een e-mail naar [&#x200B; aemaiassistant@adobe.com &#x200B;](mailto:aemaiassistant@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Adobe kan toegangsbeheer op gebruikersniveau inschakelen. Wanneer het wordt toegelaten, kan uw Admin toegang op gebruikersniveau verlenen door de stappen in [&#x200B; te volgen AI Medewerker in AEM &#x200B;](/help/ai-assistant-in-aem-admin.md) vormen.
+   Als u wilt controleren wie tot de Kennis van het Product toegang heeft, verzend een e-mail naar [ aemaiassistant@adobe.com ](mailto:aemaiassistant@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Adobe kan toegangsbeheer op gebruikersniveau inschakelen. Wanneer het wordt toegelaten, kan uw Admin toegang op gebruikersniveau verlenen door de stappen in [ te volgen AI Medewerker in AEM ](/help/ai-assistant-in-aem-admin.md) vormen.
 
 
-## Scope {#scope}
+## Bereik {#scope}
 
 Het huidige bereik van AI Assistant in AEM is gericht op het aanpakken van productkennisvragen voor AEMr. as a Cloud Service. Dit toepassingsgebied omvat uitgebreide steun voor belangrijke gebieden. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
@@ -88,7 +88,7 @@ De productkennis omvat concepten en onderwerpen die uit de documentatie van de L
 | Aanbevolen lessen | <ul><li>Wat is de Universele Redacteur?</li><li>Hoe maak ik een programma in Cloud Manager?</li></ul> |
 | Openbare detectie | <ul><li>Hoe gebruik ik de Universal Editor?</li><li>Is er een manier om inhoud van één milieu aan een andere te kopiëren?</li></ul> |
 | Problemen oplossen | <ul><li>Waarom heb ik geen toegang tot de Universal Editor?</li><li>Waarom mislukt mijn pijpleiding?</li></ul> |
-| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen &#x200B;**<br>**Voorbeelden** |
+| **de kaartverwezenlijking van de Steun** | **Beschikbaar om Admins slechts te steunen **<br>**Voorbeelden** |
 | Geautomatiseerde steun de verwezenlijking van kaartjes het vangen AI Hulp praatjegeschiedenis en context | <ul><li>Maak een ondersteuningsticket voor mij.</li></ul> |
 | Status van ondersteuningsticket ophalen | <ul><li>Toon me alle steunkaartjes die ik heb geopend.</li><li>Toon me de status van kaartje &quot;E—&quot;</li></ul> |
 
@@ -115,7 +115,8 @@ In uw vraag helpt het bijvoorbeeld om de AEM-oplossing die u gebruikt een naam t
 
 ## AI-assistent gebruiken in AEM {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -128,9 +129,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### Een AI-assistent starten in een AEM-gesprek
@@ -141,19 +143,19 @@ U kunt de AI Medewerker in AEM terugstellen en een nieuw gesprek beginnen wannee
 
 1. Vlak de hoger-juiste hoek van het gebruikersinterface van AEM (of van de pagina&#39;s van Cloud Manager of de auteursinstantie van de milieu&#39;s van AEM), klik het **AI Hulp** pictogram.
 
-   ![&#x200B; AI Hulp pictogram op de toolbar &#x200B;](/help/assets/assets-ai/ai-assistant-icon.png)
+   ![ AI Hulp pictogram op de toolbar ](/help/assets/assets-ai/ai-assistant-icon.png)
 
-1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![&#x200B; verzend pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. In het **AI Medewerker** vakje van de paneeltekst dichtbij de bodem, typ uw vraag of herinnering, dan druk `Enter` of klik ![ verzend pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
    >[!NOTE]
    >
    >Persoonlijke gegevens mogen niet in uw invoer worden opgenomen, omdat het niet nodig is om dit gereedschap te gebruiken.
 
-   ![&#x200B; vakje van de Tekst bij bodem van het AI Hulppaneel &#x200B;](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
+   ![ vakje van de Tekst bij bodem van het AI Hulppaneel ](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
 
-1. Om een nieuw gesprek (nieuw onderwerp of een verandering in het onderwerp) te beginnen, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Begin nieuw gesprek**.
+1. Om een nieuw gesprek (nieuw onderwerp of een verandering in het onderwerp) te beginnen, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Begin nieuw gesprek**.
 
-   ![&#x200B; Begin een nieuw gesprek in AI Medewerker van het ellipspictogram &#x200B;](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
+   ![ Begin een nieuw gesprek in AI Medewerker van het ellipspictogram ](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
 
 ### Vragen per categorie detecteren
 
@@ -161,15 +163,15 @@ AI Assistant in AEM bevat een functie voor het opsporen van ontdekkingen waarmee
 
 **om herinneringen door categorie te ontdekken:**
 
-1. In het AI Hulppaneel, klik ![&#x200B; leren pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) om het snelle ontdekkingspaneel aan te zetten.
+1. In het AI Hulppaneel, klik ![ leren pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) om het snelle ontdekkingspaneel aan te zetten.
 
-   ![&#x200B; Comité dat u herinneringen door categorie in AI Medewerker &#x200B;](/help/assets/assets-ai/ai-assistant-discover-prompts.png) laat onderzoeken
+   ![ Comité dat u herinneringen door categorie in AI Medewerker laat onderzoeken](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
    *Comité die snelle categorieën in AI Medewerker tonen.*
 
 1. Selecteer een categorie om een lijst met verwante vragen weer te geven.
 1. Selecteer een vraag om voorbeelden te zien van de typen vragen die de AI Assistant kan beantwoorden.
 
-1. Om het snelle ontdekkingspaneel te verbergen, klik ![&#x200B; leer opnieuw pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
+1. Om het snelle ontdekkingspaneel te verbergen, klik ![ leer opnieuw pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 
 ### Je feedback delen op AI Assistant in AEM
 
@@ -177,13 +179,13 @@ Met uw invoer verbetert Adobe AI Assistant voor betere prestaties en nauwkeurigh
 
 Deel je feedback op je ervaring met AI Assistant in AEM door de volgende opties te kiezen:
 
-![&#x200B; duimen omhoog, duimen neer, en vlagpictogrammen &#x200B;](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
+![ duimen omhoog, duimen neer, en vlagpictogrammen ](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
 | Klikken | Beschrijving |
 | --- | --- |
-| ![&#x200B; duimen omhoog buiten pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Geef aan wat goed is gegaan en geef positieve feedback. |
-| ![&#x200B; duimen neer outine pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Geef suggesties voor verbetering. Voeg specifieke opmerkingen toe over uw ervaring, die dagelijks worden gecontroleerd. |
-| ![&#x200B; het pictogram van de Vlag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Rapporteer problemen of geef gedetailleerde feedback over uw interactie met AI Assistant in AEM. |
+| ![ duimen omhoog buiten pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Geef aan wat goed is gegaan en geef positieve feedback. |
+| ![ duimen neer outine pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Geef suggesties voor verbetering. Voeg specifieke opmerkingen toe over uw ervaring, die dagelijks worden gecontroleerd. |
+| ![ het pictogram van de Vlag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Rapporteer problemen of geef gedetailleerde feedback over uw interactie met AI Assistant in AEM. |
 
 ## Veelgestelde vragen over AI Assistant in AEM {#ai-faq}
 
@@ -198,7 +200,8 @@ Hier volgen antwoorden op enkele veelgestelde vragen over AI Assistant:
 * **gebruikt de AI Medewerker in AEM persoonlijke informatie voor opleidingsgegevens?**\
   Nee. AI Assistant in AEM gebruikt geen persoonlijke informatie voor opleidingsdoeleinden. Vermijd het delen van persoonlijke gegevens over uzelf of anderen, waaronder namen of contactgegevens, met de AI Assistant in AEM.
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

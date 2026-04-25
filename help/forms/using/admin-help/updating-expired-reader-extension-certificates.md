@@ -5,9 +5,9 @@ exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -15,49 +15,49 @@ ht-degree: 0%
 
 # Verlopen van Reader Extensions-certificaten en de gevolgen ervan {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Adobe Experience Manager Forms (AEM Forms)-klanten met Adobe Managed Services- of On-premise Enterprise Base-licenties hebben het recht om Acrobat Reader DC Extensions-service te gebruiken. Met deze service kan een organisatie eenvoudig interactieve PDF-documenten delen door de functionaliteit van Acrobat Reader uit te breiden met extra gebruiksrechten. De service voegt gebruiksrechten toe aan een PDF-document en activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Acrobat Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten waarvoor rechten zijn ingeschakeld genoemd. Een gebruiker die een voor rechten geschikt PDF-document in Acrobat Reader opent, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
+Adobe Experience Manager Forms (AEM Forms)-klanten met Adobe Managed Services- of On-premise Enterprise Base-licenties hebben het recht om Acrobat Reader DC Extensions-service te gebruiken. Met deze service kan een organisatie eenvoudig interactieve PDF-documenten delen door de functionaliteit van Acrobat Reader uit te breiden met extra gebruiksrechten. De service voegt gebruiksrechten toe aan een PDF-document en activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Acrobat Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een PDF-document met ingeschakelde rechten opent in Acrobat Reader, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
 
-Adobe gebruikt een PKI (Public Key Infrastructure) om digitale certificaten af te geven voor gebruik in licenties en functionaliteit. De Adobe heeft certificaten onder de certificaatgezag **Uitwortel CA van de Adobe** uitgeeft, die om op 7 Januari, 2023 wordt geplaatst te verlopen. De vervaldatum van certificaat beïnvloedt PDF documenten niet die gebruikend productiecertificaten worden uitgebreid die van de **gebaseerde certificaten van de Wortel CA van de Adobe** worden uitgegeven (oude certificaten). Alle documenten van de PDF, Reader die met de oude certificaten vóór 7 Januari 2023, met inbegrip van die werden uitgebreid die door uw klanten worden gedownload, zou met alle gebruiksrechten blijven werken die op hen worden toegepast, en vereist geen updates.
+Adobe gebruikt een PKI (Public Key Infrastructure) om digitale certificaten uit te geven voor gebruik in licenties en functionaliteit. Adobe heeft certificaten onder het certificaatgezag **Adobe Root CA** uitgeeft, die op 7 Januari, 2023 wordt geplaatst te verlopen. De vervaldatum van certificaat beïnvloedt geen de documenten van PDF die gebruikend productiecertificaten worden uitgebreid die van de **gebaseerde certificaten van de Wortel CA van Adobe** worden uitgegeven (oude certificaten). Alle PDF-documenten, Reader die vóór 7 januari 2023 zijn uitgebreid met de oude certificaten, inclusief de documenten die door uw klanten zijn gedownload, blijven werken met alle gebruiksrechten die op deze documenten zijn toegepast en hoeven niet te worden bijgewerkt.
 
-Een nieuw certificaatgezag, **de Wortel CA G2 van de Adobe**, en certificaten die op het nieuwe certificaatgezag worden gebaseerd zijn nu beschikbaar. Op of vóór 7 Januari, 2023, begin de nieuwe certificaten te gebruiken — die gebaseerd op **de Wortel CA G2 van de Adobe** — om uw nieuwe documenten van PDF uit te breiden.  U kunt [&#x200B; nieuwe certificaten van de Website van Vergunning van de Adobe verkrijgen &#x200B;](https://licensing.adobe.com/) of de Steun van de Adobe.
+Een nieuw certificaatgezag, **de Wortel CA G2 van Adobe**, en certificaten die op het nieuwe certificaatgezag worden gebaseerd zijn nu beschikbaar. Op of vóór 7 Januari, 2023, begin de nieuwe certificaten te gebruiken — die gebaseerd op **de Wortel CA G2 van de Adobe** — om uw nieuwe documenten van PDF uit te breiden.  U kunt [ nieuwe certificaten van de het Verlenen van vergunningenWebsite van Adobe ](https://licensing.adobe.com/) of de Steun van Adobe verkrijgen.
 
 ## Veelgestelde vragen
 
-**Q. Wat is het verschil tussen een Adobe-basiscertificaat en een Acrobat Reader Extensions-certificaat? Is het basiscertificaat van de Adobe afhankelijk van een Acrobat Reader Extensions-certificaat? Zijn beide certificaten die in Januari 2023 verlopen?**
+**Q. Wat is het verschil tussen een Adobe Root-certificaat en een Acrobat Reader Extensions-certificaat? Is het Adobe Root-certificaat afhankelijk van een Acrobat Reader Extensions-certificaat? Zijn beide certificaten die in Januari 2023 verlopen?**
 
-A. Adobe Root CA is de certificeringsinstantie waarvan een Acrobat Reader Extensions-certificaat wordt uitgegeven. Op 7 januari 2023 verlopen &quot;Adobe Root CA&quot; en alle certificaten die ervan zijn uitgegeven.
+A. Adobe Root CA is de certificeringsinstantie van waaruit een Acrobat Reader Extensions-certificaat wordt uitgegeven. Op 7 januari 2023 verlopen &quot;Adobe Root CA&quot; en alle certificaten die daaruit worden uitgegeven.
 
-**Q. Er is een eerdere mededeling van de Adobe geweest over het verlopen van certificaten en de gevolgen voor het gebruik/openen van PDF-documenten. Moet die mededeling worden genegeerd?**
+**Q. Adobe heeft al eerder meegedeeld dat de geldigheidsduur van certificaten afloopt en dat het gebruik en de opening van PDF-documenten gevolgen hebben. Moet die mededeling worden genegeerd?**
 
-A. Op basis van de herbeoordeling van de situatie blijven alle documenten van de PDF die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die vóór 7 januari 2023 van de oude &quot;Adobe Root CA&quot; zijn afgegeven, ongewijzigd na 7 januari 2023 werken. Als u uw PDF-documenten al hebt bijgewerkt, is er geen wijziging in de ervaring.
+A. Op basis van de herbeoordeling van de situatie blijven alle PDF-documenten die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die zijn uitgegeven door de oude &quot;Adobe Root CA&quot;, ongewijzigd na 7 januari 2023 werken. Als u uw PDF-documenten al hebt bijgewerkt, is er geen wijziging in de ervaring.
 
 **Q. Wie moet ik contacteren als ik extra vragen heb?**
 
-A. U kunt [&#x200B; Steun van de Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager#support) contacteren of een steunkaartje opheffen.
+A. U kunt [ Steun van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) contacteren of een steunkaartje opheffen.
 
 **Q. Wat gebeurt er als ik mijn certificaat niet vóór 7 januari 2023 bijwerk?**
 
-A. Alle documenten van de PDF die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die zijn afgegeven door de oude Adobe Root CA, werken na 7 januari 2023 zonder wijziging. PDF die met evaluatiecertificaten zijn uitgebreid, werken niet meer na de vervaldatum.
+A. Alle PDF-documenten die zijn uitgebreid met productiecertificaten die vóór 7 januari 2023 zijn uitgegeven door de oude Adobe Root CA, werken na 7 januari 2023 ongewijzigd. PDF&#39;s die met evaluatiecertificaten zijn uitgebreid, werken niet meer na de vervaldatum.
 
 **Q. Is de beschrijving van nieuwe certificaten om het even welk verschillend van oude certificaten?**
 
-A. De beschrijving van de nieuwe certificaten van de Uitbreidingen van Acrobat Reader noemt **G3-P24** als programmanaam. In de beschrijving van oudere certificaten (certificaten die op &quot;de Wortel CA van de Adobe&quot;worden gebaseerd), **P24** wordt vermeld als programmanaam.
+A. De beschrijving van de nieuwe certificaten van de Uitbreidingen van Acrobat Reader noemt **G3-P24** als programmanaam. In de beschrijving van oudere certificaten (certificaten die op &quot;Adobe Root CA&quot;worden gebaseerd), **P24** wordt vermeld als programmanaam.
 
 **Q. Hoe verkrijg ik de recentste certificaten?**
 
-A. Alle gerechtigde Klanten van Forms (met actieve vergunning) kunnen de nieuwe certificaten (certificaten downloaden die op &quot;Adobe Root CA G2&quot;worden gebaseerd) van de [&#x200B; Vergunnende Website van de Adobe &#x200B;](https://licensing.adobe.com/). Als u niet het certificaat op de Website van het Verlenen van vergunningen van de Adobe kunt vinden, contacteer [&#x200B; Steun van de Adobe &#x200B;](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager&lang=en#support) of ophef een steunkaartje.
+A. Alle gerechtigde Klanten van Forms (met actieve vergunning) kunnen de nieuwe certificaten (certificaten downloaden die op &quot;Adobe Root CA G2&quot;worden gebaseerd) van de [ Adobe Vergunnende Website ](https://licensing.adobe.com/). Als u niet het certificaat op de Website van het Verlenen van vergunningen van Adobe kunt vinden, contacteer [ Steun van Adobe ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support) of ophef een steunkaartje.
 
-**Q. Blijven mijn PDF documenten uitgebreid met certificaten die zijn uitgegeven door &quot;Adobe Root CA&quot; (de oude certificeringsinstantie) na 7 januari 2023 werken?**
+**Q. Werken mijn PDF-documenten die zijn uitgebreid met certificaten die zijn uitgegeven door &quot;Adobe Root CA&quot; (de oude certificeringsinstantie) nog steeds na 7 januari 2023?**
 
-A. Ja, alle documenten van PDF die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die zijn uitgegeven door de &quot;Adobe Root CA&quot; (de oude certificeringsautoriteit), blijven na 7 januari 2023 ongewijzigd werken. PDF documenten die met evaluatiecertificaten zijn verlengd, werken niet meer na de vervaldatum.
+A. Ja, alle PDF-documenten die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die zijn uitgegeven door de &quot;Adobe Root CA&quot; (de oude certificeringsautoriteit), blijven na 7 januari 2023 zonder wijziging werken. PDF-documenten die met evaluatiecertificaten zijn uitgebreid, werken niet meer na de vervaldatum.
 
-**Q. Welke versie van Adobe Acrobat Reader wordt vereist om de documenten van PDF te blijven gebruiken die met certificaten worden uitgebreid die van &quot;Adobe Root CA&quot;(de oude certificaatautoriteit) worden uitgegeven?**
+**Q. Welke versie van Adobe Acrobat Reader is vereist om PDF-documenten te blijven gebruiken die zijn uitgebreid met certificaten die zijn uitgegeven door &quot;Adobe Root CA&quot; (de oude certificeringsinstantie)?**
 
-A. Adobe Acrobat Reader 2020 of later is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA&quot; (de oude certificeringsinstantie). Dit is de ondersteunde versie van Acrobat Reader op het moment van publicatie van dit document. Als u a [&#x200B; niet-gesteunde versie van Adobe Acrobat &#x200B;](https://helpx.adobe.com/nl/support/programs/eol-matrix.html) gebruikt, adviseert de Adobe dat u [&#x200B; de recentste versie van Adobe Acrobat Reader &#x200B;](https://get.adobe.com/reader/) downloadt en installeert.
+A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA&quot; (de oude certificeringsinstantie). Dit is de ondersteunde versie van Acrobat Reader op het moment van publicatie van dit document. Als u a [ niet-gesteunde versie van Adobe Acrobat ](https://helpx.adobe.com/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
 
-**Q. Welke versie van Adobe Acrobat Reader wordt vereist om de documenten van PDF te blijven gebruiken die met certificaten worden uitgebreid die van &quot;AdobeWortel CA 2&quot;(de nieuwe certificaatautoriteit) worden uitgegeven?**
+**Q. Welke versie van Adobe Acrobat Reader wordt vereist om de documenten van PDF verder te gebruiken die met certificaten worden uitgebreid die van &quot;Adobe Root CA 2&quot;(de nieuwe certificaatautoriteit) worden uitgegeven?**
 
-A. Adobe Acrobat Reader 2020 of later is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA 2&quot; (de nieuwe certificeringsinstantie). Als u a [&#x200B; niet-gesteunde versie van Adobe Acrobat Reader &#x200B;](https://helpx.adobe.com/nl/support/programs/eol-matrix.html) gebruikt, adviseert de Adobe dat u [&#x200B; de recentste versie van Adobe Acrobat Reader &#x200B;](https://get.adobe.com/reader/) downloadt en installeert.
+A. Adobe Acrobat Reader 2020 of hoger is vereist voor het gebruik van PDF-documenten die zijn uitgebreid met &quot;Adobe Root CA 2&quot; (de nieuwe certificeringsinstantie). Als u a [ niet-gesteunde versie van Adobe Acrobat Reader ](https://helpx.adobe.com/support/programs/eol-matrix.html) gebruikt, adviseert Adobe dat u [ de recentste versie van Adobe Acrobat Reader ](https://get.adobe.com/reader/) downloadt en installeert.
 
 **Q. Kan ik een oud certificaat van de Uitbreidingen van Acrobat Reader schrappen en een nieuwe toevoegen op een Server van Adobe Experience Manager Forms terwijl het blijven gebruiken van de bestaande alias?**
 
@@ -65,7 +65,7 @@ A. Ja, u kunt een oud certificaat van de Uitbreidingen van Acrobat Reader schrap
 
 **Q. Kan ik zowel nieuwe als oude Acrobat Reader Extensions-certificaten op een Adobe Experience Manager Forms Server bewaren?**
 
-A. Ja, u kunt beide certificaten maar met verschillende aliassen op een Adobe Experience Manager Forms Server houden. Op 7 januari 2023 kunt u in Post alleen het nieuwe certificaat gebruiken om een PDF-document te Readers.
+A. Ja, u kunt beide certificaten maar met verschillende aliassen op een Adobe Experience Manager Forms Server houden. Vanaf 7 januari 2023 kunt u alleen het nieuwe certificaat gebruiken voor Reader om een PDF-document uit te breiden.
 
 **Q. Kan ik hetzelfde Acrobat Reader Extensions-certificaat importeren in alle Adobe Experience Manager Forms-omgevingen?**
 
@@ -73,7 +73,7 @@ A. Ja, hetzelfde Acrobat Reader Extensions-certificaat kan in meerdere omgevinge
 
 **Q. Hoe kan ik de gebruiksrechten controleren die op een PDF-document zijn toegepast?**
 
-A. U kunt [&#x200B; getDocumentUsageRights &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=nl-NL#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API gebruiken om de informatie over de gebruiksrechten terug te winnen die op een document van de PDF worden toegepast.
+A. U kunt [ getDocumentUsageRights ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API gebruiken om de informatie over de gebruiksrechten terug te winnen die op een document van PDF worden toegepast.
 
 **Q. Hoe kan ik het wachtwoord van een Acrobat Reader Extensions-certificaatbestand wijzigen?**
 
@@ -97,7 +97,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html?lang=nl-NL) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 
@@ -189,4 +189,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=nl-NL).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
+-->

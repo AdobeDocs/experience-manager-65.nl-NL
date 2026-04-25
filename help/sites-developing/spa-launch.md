@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Adobe Experience Platform Launch is de geadviseerde manier om Analytics, Doel, e
 
 ## Zelfstudie {#tutorial}
 
-Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie [&#x200B; dit kennisbasisartikel en leerprogramma &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=nl-NL), die u door de opstelling van de Lancering begeleiden en Experience Cloud uitvoeren die met Angular of Reageren wordt gebouwd.
+Om te begrijpen hoe te om uw KUUROORD met Adobe Experience Platform Launch te integreren, zie [ dit kennisbasisartikel en leerprogramma ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html), die u door de opstelling van de Lancering begeleiden en Experience Cloud uitvoeren die met Angular of Reageren wordt gebouwd.
 
 >[!NOTE]
 >

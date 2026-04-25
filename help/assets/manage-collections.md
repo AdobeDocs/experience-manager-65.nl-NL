@@ -8,10 +8,10 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 10%
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 10%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
+| AEM 6.5 | Dit artikel |
 
 Een verzameling is een set elementen binnen [!DNL Adobe Experience Manager Assets] . Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
 
@@ -40,14 +40,14 @@ Ga in de interface van [!DNL Experience Manager] naar **[!UICONTROL Assets]** > 
 
 ## Een verzameling maken {#creating-a-collection}
 
-U kunt een inzameling of met [&#x200B; statische verwijzingen &#x200B;](#creating-a-collection-with-static-references) tot stand brengen of op a [&#x200B; onderzoek op criteria-gebaseerde filter &#x200B;](#creating-a-smart-collection) worden gebaseerd. U kunt ook een verzameling maken van een lichtbak.
+U kunt een inzameling of met [ statische verwijzingen ](#creating-a-collection-with-static-references) tot stand brengen of op a [ onderzoek op criteria-gebaseerde filter ](#creating-a-smart-collection) worden gebaseerd. U kunt ook een verzameling maken van een lichtbak.
 
 ### Een verzameling met statische verwijzingen maken {#creating-a-collection-with-static-references}
 
 U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzameling met verwijzingen naar elementen, mappen, verzamelingen, centrifuges en afbeeldingssets.
 
 1. Navigeer naar de **[!UICONTROL Collections]** -console.
-1. Klik **[!UICONTROL Create]** op de werkbalk.
+1. Klik in de werkbalk op **[!UICONTROL Create]** .
 1. Voer op de pagina **[!UICONTROL Create Collection]** een titel en een optionele beschrijving in voor de verzameling.
 1. Voeg leden toe aan de verzameling en wijs de juiste machtigingen toe. U kunt ook **[!UICONTROL Public Collection]** selecteren om alle gebruikers toegang te geven tot de verzameling.
 
@@ -56,13 +56,13 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
    >Als u wilt dat leden verzamelingen kunnen delen met andere gebruikers, geeft u de `dam-users` groep leesmachtigingen op het pad `home/users` . Geef gebruikers toestemming op de locatie `/content/dam/collections` om de verzamelingen in pop-uplijsten weer te geven. U kunt de gebruiker ook deel laten uitmaken van een `dam-users` -groep.
 
 1. (Optioneel) Voeg een miniatuurafbeelding toe voor de verzameling.
-1. Klik op **[!UICONTROL Create]** en vervolgens op **[!UICONTROL OK]** om het dialoogvenster te sluiten. Een verzameling met de opgegeven titel en eigenschappen wordt geopend in de console voor verzamelingen.
+1. Klik op **[!UICONTROL Create]** en vervolgens op **[!UICONTROL OK]** om het dialoogvenster te sluiten. Een inzameling met de gespecificeerde titel en de eigenschappen wordt geopend in de console van Inzamelingen.
 
    >[!NOTE]
    >
    >Met [!DNL Experience Manager Assets] kunt u revisietaken voor een verzameling maken, net als bij het maken van revisietaken voor een map met elementen.
 
-   Als u elementen aan de verzameling wilt toevoegen, navigeert u naar de gebruikersinterface van [!DNL Assets] . Voor details, zie [&#x200B; activa aan een inzameling &#x200B;](#adding-assets-to-a-collection) toevoegen.
+   Als u elementen aan de verzameling wilt toevoegen, navigeert u naar de gebruikersinterface van [!DNL Assets] . Voor details, zie [ activa aan een inzameling ](#adding-assets-to-a-collection) toevoegen.
 
 ### Verzamelingen maken met dropzone {#create-collections-using-dropzone}
 
@@ -71,13 +71,13 @@ U kunt elementen vanuit de gebruikersinterface van [!DNL Assets] naar een verzam
 1. Selecteer in de gebruikersinterface van [!DNL Assets] de elementen die u aan een verzameling wilt toevoegen.
 1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** -zone. U kunt ook op **[!UICONTROL To Collection]** op de werkbalk klikken.
 
-   ![&#x200B; drop_in_collection &#x200B;](assets/drop_in_collection.png)
+   ![ drop_in_collection ](assets/drop_in_collection.png)
 
 1. Klik op de werkbalk van de pagina **[!UICONTROL Add To Collection]** op **[!UICONTROL Create Collection]** .
 
-   Als u de elementen aan een bestaande verzameling wilt toevoegen, selecteert u deze op de pagina en klikt u op **[!UICONTROL Add]** . Standaard wordt de laatst bijgewerkte verzameling geselecteerd.
+   Als u de elementen aan een bestaande verzameling wilt toevoegen, selecteert u deze op de pagina en klikt u op **[!UICONTROL Add]** . Standaard is de laatst bijgewerkte verzameling geselecteerd.
 
-1. Geef in het dialoogvenster **[!UICONTROL Create New Collection]** een naam op voor de verzameling. Selecteer **[!UICONTROL Public Collection]** als u de verzameling toegankelijk wilt maken voor alle gebruikers.
+1. Geef in het dialoogvenster **[!UICONTROL Create New Collection]** een naam op voor de verzameling. Selecteer **[!UICONTROL Public Collection]** als u wilt dat de verzameling voor alle gebruikers toegankelijk is.
 1. Klik op **[!UICONTROL Continue]** om de verzameling te maken.
 
 ### Een slimme verzameling maken {#creating-a-smart-collection}
@@ -92,13 +92,13 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
 1. Selecteer in de lijst **[!UICONTROL Files & Folders]** de optie **[!UICONTROL Files]** .
 
-   ![&#x200B; files_option &#x200B;](assets/files_option.png)
+   ![ files_option ](assets/files_option.png)
 
-1. Klik op **[!UICONTROL Save Smart Collection]**.
+1. Klik op **[!UICONTROL Save Smart Collection]** .
 
 1. Geef een naam op voor de verzameling. Selecteer **[!UICONTROL Public]** om de groep DAM-gebruikers met de Viewer-rol toe te voegen aan de slimme verzameling.
 
-   ![&#x200B; save_collection &#x200B;](assets/save_collection.png)
+   ![ save_collection ](assets/save_collection.png)
 
    >[!NOTE]
    >
@@ -108,15 +108,15 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    De nieuwe slimme verzameling wordt ook toegevoegd aan de lijst **[!UICONTROL Saved Searches]** .
 
-   ![&#x200B; collection_lists &#x200B;](assets/collection_listing.png)
+   ![ collection_lists ](assets/collection_listing.png)
 
-   Het label van de optie **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]** . Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Klik **[!UICONTROL Edit Smart Selection]** ![&#x200B; uitgeven slimme inzamelingsoptie &#x200B;](assets/do-not-localize/edit-smart-collection.png).
+   Het label van de optie **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]** . Selecteer **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]** als u de instellingen van de slimme verzameling wilt bewerken. Klik **[!UICONTROL Edit Smart Selection]** ![ uitgeven slimme inzamelingsoptie ](assets/do-not-localize/edit-smart-collection.png).
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
 U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of mappen waarnaar wordt verwezen, bevat. Slimme verzamelingen gebruiken een zoekquery om elementen te vullen. Daarom zijn statische verwijzingen naar elementen en mappen niet op hen van toepassing.
 
-1. In het [!DNL A] bezit gebruikersinterface, selecteer de activa en klik **[!UICONTROL To Collection]** ![&#x200B; toevoegen aan inzameling &#x200B;](assets/do-not-localize/add-to-collection.png) van de toolbar.
+1. In het [!DNL A] bezit gebruikersinterface, selecteer de activa en klik **[!UICONTROL To Collection]** ![ toevoegen aan inzameling ](assets/do-not-localize/add-to-collection.png) van de toolbar.
 U kunt het element ook naar het **[!UICONTROL Drop in Collection]** -gebied op de interface slepen. Voeg de elementen toe wanneer het label van het gebied verandert in **[!UICONTROL Drop to Add]** .
 
 1. Selecteer op de pagina **[!UICONTROL Add To Collection]** de verzameling waaraan u het element wilt toevoegen.
@@ -125,23 +125,23 @@ U kunt het element ook naar het **[!UICONTROL Drop in Collection]** -gebied op d
 
 ## Een slimme verzameling bewerken {#editing-a-smart-collection}
 
-De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [&#x200B; bewaarde onderzoek &#x200B;](#saved-searches) te wijzigen.
+De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [ bewaarde onderzoek ](#saved-searches) te wijzigen.
 
-1. In het [!DNL Assets] gebruikersinterface, klik de 1&rbrace; onderzoeksoptie van de onderzoeksoptie ![&#128279;](assets/do-not-localize/search_icon.png) van de toolbar.
+1. In het [!DNL Assets] gebruikersinterface, klik de 1} onderzoeksoptie van de onderzoeksoptie ](assets/do-not-localize/search_icon.png) van de toolbar.![
 1. Selecteer de `Return` -toets terwijl de cursor in het vak Onderzoek staat.
 1. Open in de interface [!DNL Experience Manager] het deelvenster Filters.
-1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
+1. Selecteer in de lijst **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 
-   ![&#x200B; select_smart_collection &#x200B;](assets/select_smart_collection.png)
+   ![ select_smart_collection ](assets/select_smart_collection.png)
 
 1. Selecteer in de lijst **[!UICONTROL Files & Folders]** de optie **[!UICONTROL Files]** .
-1. Wijzig desgewenst een of meer filters. Klik op **[!UICONTROL Edit Smart Collection]**.
+1. Wijzig desgewenst een of meer filters. Klik op **[!UICONTROL Edit Smart Collection]** .
 
    U kunt ook de naam van de slimme verzameling bewerken.
 
-   ![&#x200B; geef_smart_collectiondialog &#x200B;](assets/edit_smart_collectiondialog.png) uit
+   ![ geef_smart_collectiondialog ](assets/edit_smart_collectiondialog.png) uit
 
-1. Klik op **[!UICONTROL Save]**. Het dialoogvenster **[!UICONTROL Edit Smart Collection]** wordt weergegeven.
+1. Klik op **[!UICONTROL Save]** . Het dialoogvenster **[!UICONTROL Edit Smart Collection]** wordt weergegeven.
 1. Klik op **[!UICONTROL Overwrite]** om de originele slimme verzameling te vervangen door de bewerkte verzameling. U kunt ook **[!UICONTROL Save As]** selecteren om de bewerkte verzameling afzonderlijk op te slaan.
 1. Klik in het bevestigingsdialoogvenster op **[!UICONTROL Save]** om het proces te voltooien.
 
@@ -158,8 +158,8 @@ De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegr
 U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
 
 1. Selecteer twee of meer verzamelingen in de verzamelingsconsole.
-1. Klik **[!UICONTROL Properties]** op de werkbalk.
-1. Bewerk desgewenst de metadata op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**.
+1. Klik in de werkbalk op **[!UICONTROL Properties]** .
+1. Bewerk desgewenst de metagegevens op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** .
 1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, annuleert u de selectie van de resterende verzamelingen in de lijst met verzamelingen. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
    >[!NOTE]
@@ -168,7 +168,7 @@ U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functi
    >* Selecteer boven aan de lijst het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
 
 1. Klik op **[!UICONTROL Save & Close]** op de werkbalk en sluit het bevestigingsvenster.
-1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
+1. Selecteer **[!UICONTROL Append mode]** als u de nieuwe metagegevens wilt toevoegen aan de bestaande metagegevens. Als u deze optie niet selecteert, worden de bestaande metagegevens in de velden vervangen door de nieuwe metagegevens. Klik op **[!UICONTROL Submit]** .
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ Gebruik de Schema-editor om de pagina met metagegevens [!UICONTROL Properties] a
 
 >[!TIP]
 >
->De bulkbewerkingsmethode werkt voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [&#x200B; bulkupdate de meta-gegevens na het zoeken &#x200B;](/help/assets/search-assets.md#metadataupdates).
+>De bulkbewerkingsmethode werkt voor elementen die beschikbaar zijn in een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk aan [ bulkupdate de meta-gegevens na het zoeken ](/help/assets/search-assets.md#metadataupdates).
 
 ## Verzamelingen zoeken {#searching-collections}
 
@@ -197,7 +197,7 @@ In een verzameling is het zoeken in [!DNL Experience Manager] beperkt tot elemen
 U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden toevoegen aan een verzameling.
 
 1. Selecteer een verzameling en klik op **[!UICONTROL Settings]** op de werkbalk. U kunt ook de handeling **[!UICONTROL Settings]** quick uit de verzamelingsminiatuur gebruiken.
-1. Wijzig de verzamelingsinstellingen op de pagina **[!UICONTROL Collection Settings]**. Bijvoorbeeld, wijzig de inzamelingstitel, beschrijvingen, leden, en toestemmingen zoals besproken in [&#x200B; Toevoegend Verzamelingen &#x200B;](#creating-a-collection).
+1. Wijzig de verzamelingsinstellingen op de pagina **[!UICONTROL Collection Settings]** . Bijvoorbeeld, wijzig de inzamelingstitel, beschrijvingen, leden, en toestemmingen zoals besproken in [ Toevoegend Verzamelingen ](#creating-a-collection).
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
@@ -209,14 +209,14 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
    >[!NOTE]
    >
-   >U kunt slimme inzamelingen ook schrappen door [&#x200B; bewaarde onderzoeken &#x200B;](#saved-searches) te schrappen.
+   >U kunt slimme inzamelingen ook schrappen door [ bewaarde onderzoeken ](#saved-searches) te schrappen.
 
 ## Een verzameling downloaden {#downloading-a-collection}
 
 Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
 
 1. Selecteer een of meer verzamelingen die u wilt downloaden in de console Verzamelingen.
-1. Klik **[!UICONTROL Download]** op de werkbalk.
+1. Klik in de werkbalk op **[!UICONTROL Download]** .
 1. Klik in het dialoogvenster **[!UICONTROL Download]** op **[!UICONTROL Download]** . Selecteer **[!UICONTROL Renditions]** als u de uitvoeringen van de elementen in de verzameling wilt downloaden. Selecteer de optie **[!UICONTROL Email]** om een e-mailbericht te verzenden naar de eigenaar van de verzameling.
 
    Wanneer u een verzameling selecteert die u wilt downloaden, wordt de volledige maphiërarchie onder de verzameling gedownload. Selecteer **[!UICONTROL Create separate folder for each asset]** als u elke verzameling die u downloadt, wilt opnemen (inclusief elementen in onderliggende verzamelingen die onder de bovenliggende verzameling zijn genest) in een afzonderlijke map.
@@ -233,7 +233,7 @@ U kunt een verzameling toevoegen aan een andere verzameling, zodat u een geneste
    >
    >De verzameling die het laatst is bijgewerkt, is standaard geselecteerd op de pagina **[!UICONTROL Add To Collection]** .
 
-1. Klik op **[!UICONTROL Add]**. Een bericht bevestigt dat de verzameling wordt toegevoegd aan de doelverzameling op de pagina **[!UICONTROL Select Destination]** . Sluit het bericht om het proces te voltooien.
+1. Klik op **[!UICONTROL Add]** . Een bericht bevestigt dat de verzameling wordt toegevoegd aan de doelverzameling op de pagina **[!UICONTROL Select Destination]** . Sluit het bericht om het proces te voltooien.
 
 >[!NOTE]
 >
@@ -241,26 +241,26 @@ U kunt een verzameling toevoegen aan een andere verzameling, zodat u een geneste
 
 ## Opgeslagen zoekopdrachten {#saved-searches}
 
-In de gebruikersinterface van [!DNL Assets] kunt u elementen zoeken of filteren op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten. Als u deze opslaat als **[!UICONTROL Saved Searches]**, kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filteren. Als u een opgeslagen zoekopdracht maakt, wordt ook een slimme verzameling gemaakt.
+In de gebruikersinterface van [!DNL Assets] kunt u elementen zoeken of filteren op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten. Als u deze opslaat als **[!UICONTROL Saved Searches]** , kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filter. Als u een opgeslagen zoekopdracht maakt, maakt u ook een slimme verzameling.
 
-![&#x200B; saved_search_list &#x200B;](assets/saved_searches_list.png)
+![ saved_search_list ](assets/saved_searches_list.png)
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De query [!UICONTROL Saved Searches] voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/` . Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Saved Searches]** . De query [!UICONTROL Saved Searches] voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/` . Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
 
 >[!NOTE]
 >
 >U kunt slimme verzamelingen op dezelfde manier delen als statische verzamelingen.
 
-Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerken. Voor details, zie [&#x200B; een slimme inzameling &#x200B;](#editing-a-smart-collection) uitgeven.
+Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerken. Voor details, zie [ een slimme inzameling ](#editing-a-smart-collection) uitgeven.
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
-1. In het [!DNL Assets] gebruikersinterface, klik onderzoek ![&#x200B; onderzoeksoptie &#x200B;](assets/do-not-localize/search_icon.png).
+1. In het [!DNL Assets] gebruikersinterface, klik onderzoek ![ onderzoeksoptie ](assets/do-not-localize/search_icon.png).
 1. Selecteer de `Return` -toets terwijl de cursor zich in het veld Onderzoek bevindt.
 1. Open in de interface [!DNL Experience Manager] het deelvenster Filters.
 1. Klik in de lijst **[!UICONTROL Saved Searches]** op **[!UICONTROL Delete]** naast de slimme verzameling die u wilt verwijderen.
 
-   ![&#x200B; select_smart_collection &#x200B;](assets/select_smart_collection.png)
+   ![ select_smart_collection ](assets/select_smart_collection.png)
 
 1. Klik in het dialoogvenster op **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
 
@@ -269,12 +269,12 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
 1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]** . Selecteer een specifieke verzameling als u een workflow op die verzameling wilt uitvoeren.
-1. Open **[!UICONTROL Timeline]** rail. Klik ![&#x200B; chevron omhoog &#x200B;](assets/do-not-localize/chevron-up-icon.png) en klik **[!UICONTROL Start Workflow]**.
+1. Open **[!UICONTROL Timeline]** rail. Klik ![ chevron omhoog ](assets/do-not-localize/chevron-up-icon.png) en klik **[!UICONTROL Start Workflow]**.
 1. Selecteer in de sectie **[!UICONTROL Start Workflow]** een workflowmodel in de lijst. Selecteer bijvoorbeeld het model **[!UICONTROL DAM Update Asset]** .
 1. Voer een titel in voor de workflow en klik op **[!UICONTROL Start]** .
 1. Klik in het dialoogvenster op **[!UICONTROL Proceed]** . De workflow verwerkt alle elementen in de geselecteerde verzameling.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; vorm Experience Manager Assets e-mailberichten &#x200B;](/help/sites-administering/notification.md#assetsconfig)
->* [&#x200B; creeer een overzichtstaak voor Inzamelingen &#x200B;](bulk-approval.md)
+>* [ vorm Experience Manager Assets e-mailberichten ](/help/sites-administering/notification.md#assetsconfig)
+>* [ creeer een overzichtstaak voor Inzamelingen ](bulk-approval.md)

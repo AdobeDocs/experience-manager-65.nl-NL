@@ -8,10 +8,10 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3408'
-ht-degree: 5%
+source-wordcount: '3450'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 5%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
+| AEM 6.5 | Dit artikel |
 
 Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit, enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar om workflows met metagegevens en processen te behouden. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. Met [!DNL Adobe Experience Manager] kunt u gemakkelijk en flexibel metagegevensschema&#39;s maken, onderhouden en toepassen.
 
@@ -28,17 +28,17 @@ In [!DNL Adobe Experience Manager Assets] bevatten schema&#39;s specifieke velde
 
 Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Klik op de optie **[!UICONTROL View Properties]** van de snelle handelingen op het element element in de kaartweergave. Alternatief, selecteer een activa en klik dan **[!UICONTROL Properties]** ![&#x200B; meningseigenschappen &#x200B;](assets/do-not-localize/info-circle-icon.png) van de toolbar.
+1. Klik op de optie **[!UICONTROL View Properties]** van de snelle handelingen op het element element in de kaartweergave. Alternatief, selecteer een activa en klik dan **[!UICONTROL Properties]** ![ meningseigenschappen ](assets/do-not-localize/info-circle-icon.png) van de toolbar.
 
 1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element [!UICONTROL Type] echter niet wijzigen op het tabblad [!UICONTROL Basic] met eigenschappen.
 
-   ![&#x200B; Basis lusje van activaEigenschappen, waar activa type niet kan worden veranderd &#x200B;](assets/asset-properties-basic-tab.png)
+   ![ Basis lusje van activaEigenschappen, waar activa type niet kan worden veranderd ](assets/asset-properties-basic-tab.png)
 
    *Cijfer: Basis lusje op activa [!UICONTROL Properties].*
 
    Zorg ervoor dat slechts één eigenschap aan een veld wordt toegewezen terwijl u het metagegevensschema maakt of bewerkt.
 
-   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [&#x200B; Forms van het Schema van Meta-gegevens &#x200B;](#edit-metadata-schema-forms) voor meer informatie uitgeven. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image` , wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg` . Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [ Forms van het Schema van Meta-gegevens ](#edit-metadata-schema-forms) voor meer informatie uitgeven. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image` , wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg` . Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
 ## Metagegevensschema-formulieren {#default-metadata-schema-forms}
 
@@ -50,14 +50,14 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de i
 |---|---|---|
 | [!UICONTROL default] | | Het basisschema voor metagegevens voor elementen. |
 | | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] -formulier over: | |
-| | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema voor Dynamic Media-video&#39;s. |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Schemaformulier voor Dynamic Media-video&#39;s. |
 | | <ul><li>[!UICONTROL image]</li></ul> | Schema voor afbeeldingen van het MIME-type, zoals `image/jpeg` en `image/png` . <br> Het [!UICONTROL image] -formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: schema voor elementen met subtype [!UICONTROL jpeg] .</li> <li>[!UICONTROL tiff]: schema voor de elementen met subtype TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type, zoals `application/pdf` en `application/zip` . <br>[!UICONTROL pdf]: Schema voor elementen met subtype PDF. |
 | | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor video-elementen van het type MIME, zoals `video/avi` en `video/mp4` . |
 | [!UICONTROL collection] | | Schema voor verzamelingen. |
-| [!UICONTROL contentfragment] | | [&#x200B; vorm van het Schema voor inhoudsfragmenten &#x200B;](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] | | Deze schemavorm heeft op [&#x200B; Adobe Experience Manager Forms &#x200B;](/help/forms/using/introduction-aem-forms.md) betrekking. |
-| [!UICONTROL ugc_contentfragment] | | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in de Experience Manager zijn geïntegreerd. |
+| [!UICONTROL contentfragment] | | [ vorm van het Schema voor inhoudsfragmenten ](/help/sites-developing/customizing-content-fragments.md). |
+| [!UICONTROL forms] | | Deze schemavorm heeft op [ Adobe Experience Manager Forms ](/help/forms/using/introduction-aem-forms.md) betrekking. |
+| [!UICONTROL ugc_contentfragment] | | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in Experience Manager zijn geïntegreerd. |
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
    >[!NOTE]
    >
-   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een malplaatje aanpast, is het niet gesloten ![&#x200B; slot gesloten &#x200B;](assets/do-not-localize/lock_closed_icon.svg).
+   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een malplaatje aanpast, is het niet gesloten ![ slot gesloten ](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Geef in het dialoogvenster de titel van het schema op en klik op **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
@@ -116,9 +116,9 @@ Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewer
 
 Hier volgen voorbeelden van geldige waarden voor een eigenschap:
 
-* `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
+* `./jcr:content/metadata/dc:title`: slaat de waarde op in het metagegevensknooppunt van het element als de eigenschap `dc:title` .
 
-* `./jcr:created`: slaat de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, wordt u aangeraden deze te markeren als Uitschakelen en bewerken. Anders treedt de fout &quot;Wijzigen van asset(s)&quot; op wanneer u de eigenschappen van de asset opslaat.
+* `./jcr:created`: slaat de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, wordt u aangeraden deze als Uitschakelen-bewerking te markeren. Anders treedt de fout &quot;Asset(s) failed to modify&quot; op wanneer u de eigenschappen van het element opslaat.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
@@ -136,23 +136,23 @@ Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevenssch
 >
 >De component [!UICONTROL Hidden Field] bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
 
-Als u de optie **[!UICONTROL Required]** selecteert, kunt u zoeken naar assets waarvoor verplichte metadata ontbreken. Vouw in het deelvenster **[!UICONTROL Filters]** het predicaat **[!UICONTROL Metadata Validation]** uit en selecteer de optie **[!UICONTROL Invalid]**. In de zoekresultaten worden assets weergegeven waarvoor verplichte metadata ontbreken die u via het schemaformulier hebt geconfigureerd.
+Als u de optie **[!UICONTROL Required]** selecteert, kunt u zoeken naar elementen waarin verplichte metagegevens ontbreken. Vouw in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Metadata Validation]** voorspellen uit en selecteer de optie **[!UICONTROL Invalid]** . In de zoekresultaten ontbreken de elementen die u via het schema hebt geconfigureerd.
 
-![&#x200B; Optie die in het predikaat van de Bevestiging van Meta-gegevens van het paneel van Filters wordt geselecteerd &#x200B;](assets/invalid-metadata-predicate.png)
+![ Optie die in het predikaat van de Bevestiging van Meta-gegevens van het paneel van Filters wordt geselecteerd ](assets/invalid-metadata-predicate.png)
 
 Als u de component Contextuele metagegevens toevoegt aan een tabblad van een schemaformulier, wordt de component weergegeven als een lijst op de eigenschappenpagina van elementen waarop het specifieke schema wordt toegepast. De lijst bevat alle andere tabbladen, behalve het tabblad waarop u de component Contextuele metagegevens hebt toegepast. Momenteel biedt deze functie basisfunctionaliteit voor het beheren van de weergave van metagegevens op basis van de context.
 
-![&#x200B; Contextafhankelijke de lijst van meta-gegevenscomponenten van activa eigenschappen &#x200B;](assets/metadata-contextual-component-list.png)
+![ Contextafhankelijke de lijst van meta-gegevenscomponenten van activa eigenschappen ](assets/metadata-contextual-component-list.png)
 
 Als u een tabblad in de eigenschappenpagina wilt weergeven naast het tabblad waarop de component Contextuele metagegevens is toegepast, selecteert u het tabblad in de lijst. Het tabblad wordt toegevoegd aan de pagina met eigenschappen.
 
-![&#x200B; het lusje dat op contextuele meta-gegevenslijst wordt geselecteerd wordt getoond op de pagina van activa eigenschappen &#x200B;](assets/contextual-metadata-asset-properties.png)
+![ het lusje dat op contextuele meta-gegevenslijst wordt geselecteerd wordt getoond op de pagina van activa eigenschappen ](assets/contextual-metadata-asset-properties.png)
 
 *Cijfer: Contextafhankelijke meta-gegevens in activa eigenschappen pagina.*
 
 ### Eigenschappen in JSON-bestand opgeven {#specify-properties-in-json-file}
 
-In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings]** op te geven, kunt u de opties in een JSON-bestand definiëren door overeenkomstige sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON Path]**.
+In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings]** op te geven, kunt u de opties in een JSON-bestand definiëren door corresponderende sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON Path]** .
 
 #### Een tabblad toevoegen aan of verwijderen uit het schemaformulier {#adding-deleting-a-tab-in-the-schema-form}
 
@@ -160,7 +160,7 @@ Met de schema-editor kunt u een tabblad toevoegen of verwijderen. Het standaards
 
 Klik op `+` om een tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1` . U kunt de naam wijzigen via het tabblad **[!UICONTROL Settings]** . Klik op `X` om een tab te verwijderen.
 
-![&#x200B; voeg of schrap een lusje toe gebruikend de Redacteur van het Schema van Meta-gegevens &#x200B;](assets/metadata-schema-form-new-tab.png)
+![ voeg of schrap een lusje toe gebruikend de Redacteur van het Schema van Meta-gegevens ](assets/metadata-schema-form-new-tab.png)
 
 ## Trapsgewijze metagegevens {#cascading-metadata}
 
@@ -193,27 +193,27 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 1. Ga in de [!DNL Experience Manager] -interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]** .
 1. Selecteer op de pagina **[!UICONTROL Schema Forms]** een schema en klik vervolgens op **[!UICONTROL Edit]** in de werkbalk om het schema te bewerken.
 
-   ![&#x200B; select_form &#x200B;](assets/select_form.png)
+   ![ select_form ](assets/select_form.png)
 
 1. (Optioneel) Maak in de Schema-editor voor metagegevens een veld dat u wilt conditionaliseren. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op.
 
    Als u een tabblad wilt maken, klikt u op `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
-   ![&#x200B; add_tab &#x200B;](assets/add_tab.png)
+   ![ add_tab ](assets/add_tab.png)
 
 1. Voeg een vervolgkeuzeveld toe voor het elementtype. Geef een naam- en eigenschapspad op het tabblad **[!UICONTROL Settings]** op. Voeg een optionele beschrijving toe.
 
-   ![&#x200B; asset_type_field &#x200B;](assets/asset_type_field.png)
+   ![ asset_type_field ](assets/asset_type_field.png)
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** , klikt u op **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. U kunt bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding opgeven.
+   * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** , klikt u op **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
    * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Add Through JSON Path]** en geeft u het pad van het JSON-bestand op. [!DNL Experience Manager] haalt de sleutel-waardeparen in real time op wanneer het formulier aan de gebruiker wordt getoond.
 
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
-   ![&#x200B; add_choice &#x200B;](assets/add_choice.png)
+   ![ add_choice ](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -225,28 +225,28 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. (Optioneel) Voeg de andere vereiste velden toe. U kunt bijvoorbeeld de indeling, codec en duur van de video met het elementtype opgeven.
 
-   Op dezelfde manier voegt u afhankelijke velden toe voor andere elementtypen. Voeg bijvoorbeeld het aantal velden en de auteur van de pagina toe voor documentelementen, zoals PDF- en Word-bestanden.
+   Op dezelfde manier voegt u afhankelijke velden toe voor andere elementtypen. Voeg bijvoorbeeld het aantal pagina&#39;s en de auteur van velden toe voor documentelementen, zoals PDF- en Word-bestanden.
 
-   ![&#x200B; video_dependent_fields &#x200B;](assets/video_dependent_fields.png)
+   ![ video_dependent_fields ](assets/video_dependent_fields.png)
 
 1. Als u een afhankelijkheid wilt maken tussen het elementtypeveld en andere velden, kiest u het afhankelijke veld en opent u het tabblad **[!UICONTROL Rules]** .
 
-   ![&#x200B; select_dependentfield &#x200B;](assets/select_dependentfield.png)
+   ![ select_dependentfield ](assets/select_dependentfield.png)
 
-1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]**.
-1. Klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
+1. Kies onder **[!UICONTROL Requirement]** de optie **[!UICONTROL Required, based on new rule]** .
+1. Klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]** . Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![&#x200B; define_rule &#x200B;](assets/define_rule.png)
+   ![ define_rule ](assets/define_rule.png)
 
    >[!NOTE]
    >
    >U kunt regels gebruiken voor vervolgkeuzelijsten met handmatig vooraf gedefinieerde waarden. Vervolgkeuzemenu&#39;s met geconfigureerd JSON-pad kunnen niet worden gebruikt met regels die vooraf gedefinieerde waarden gebruiken om voorwaarden toe te passen. Als de waarden bij uitvoering vanuit JSON worden geladen, is het niet mogelijk een vooraf gedefinieerde regel toe te passen.
 
-1. Kies onder **[!UICONTROL Visibility]** de optie **[!UICONTROL Visible, based on new rule]**.
+1. Kies onder **[!UICONTROL Visibility]** de optie **[!UICONTROL Visible, based on new rule]** .
 
-1. Klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
+1. Klik op **[!UICONTROL Add Rule]** en kies het veld **[!UICONTROL Asset Type]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]** . Klik op **[!UICONTROL Done]** om de wijzigingen op te slaan.
 
-   ![&#x200B; define_visibilityrule &#x200B;](assets/define_visibilityrule.png)
+   ![ define_visibilityrule ](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
@@ -254,19 +254,19 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    >[!NOTE]
    >
-   >U kunt de voorwaarde **[!UICONTROL Requirement]** en de voorwaarde **[!UICONTROL Visibility]** onafhankelijk van elkaar toepassen.
+   >U kunt **[!UICONTROL Requirement]** voorwaarde en **[!UICONTROL Visibility]** voorwaarde onafhankelijk van elkaar toepassen.
 
 1. Maak op dezelfde manier een afhankelijkheid tussen de waarde Video in het veld Type element en andere velden, zoals Codec en Duur.
 1. Herhaal de stappen om documentelementen (PDF en Word) in het veld [!UICONTROL Asset Type] en velden zoals [!UICONTROL Page Count] en [!UICONTROL Author] afhankelijk te maken.
-1. Klik op **[!UICONTROL Save]**. Pas het metagegevensschema toe op een map.
+1. Klik op **[!UICONTROL Save]** . Pas het metagegevensschema toe op een map.
 
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
 
-   ![&#x200B; Cascading meta-gegevens voor Video activa &#x200B;](assets/video_asset.png)
+   ![ Cascading meta-gegevens voor Video activa ](assets/video_asset.png)
 
    *Cijfer: Cascading metadata voor een video.*
 
-   ![&#x200B; Cascading meta-gegevens voor documentactiva &#x200B;](assets/doc_type_fields.png)
+   ![ Cascading meta-gegevens voor documentactiva ](assets/doc_type_fields.png)
 
    *Cijfer: Cascading metadata voor een document.*
 
@@ -278,7 +278,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op V
 
 >[!NOTE]
 >
->* Nadat u douaneveranderingen in een standaardvorm schrapt, sluit het slot ![&#x200B; gesloten &#x200B;](assets/do-not-localize/lock_closed_icon.svg) opnieuw verschijnt vóór de vorm. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
+>* Nadat u douaneveranderingen in een standaardvorm schrapt, sluit het slot ![ gesloten ](assets/do-not-localize/lock_closed_icon.svg) opnieuw verschijnt vóór de vorm. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
 >* U kunt de standaardformulieren voor het metagegevensschema niet verwijderen in [!DNL Assets] .
 
 ## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
@@ -337,16 +337,16 @@ Metagegevensovererving door elementen is gebaseerd op het schema dat wordt toege
 
 1. Voeg op de pagina **[!UICONTROL Metadata Schema Editor]** een tekstveld toe aan het schema. Voeg bijvoorbeeld een veld met het label **[!UICONTROL Category]** toe.
 
-   ![&#x200B; gebied van de Tekst dat aan de Redacteur van de Vorm van het Schema van Meta-gegevens wordt toegevoegd &#x200B;](assets/text-field-metadata-schema-editor.png)
+   ![ gebied van de Tekst dat aan de Redacteur van de Vorm van het Schema van Meta-gegevens wordt toegevoegd ](assets/text-field-metadata-schema-editor.png)
 
    *Cijfer: Het gebied van de tekst dat aan de redacteur van de de vormvorm van het meta-gegevensschema wordt toegevoegd.*
 
-1. Klik op **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** .
+1. Klik op **[!UICONTROL Save]** . Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** .
 1. Klik op **[!UICONTROL Apply to Folder(s)]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
 
 1. Selecteer de map waarop u het gewijzigde schema wilt toepassen en klik op **[!UICONTROL Apply]** .
 
-   ![&#x200B; Uitgezochte omslag om het Schema van Meta-gegevens toe te passen &#x200B;](assets/metadata-schema-select-folder.png)
+   ![ Uitgezochte omslag om het Schema van Meta-gegevens toe te passen ](assets/metadata-schema-select-folder.png)
 
 1. Als op de map het andere metagegevensschema is toegepast, verschijnt er een waarschuwing dat u het bestaande metagegevensschema wilt overschrijven. Klik **overschrijven**.
 1. Klik **O.K.** om het succesbericht te sluiten.
@@ -365,15 +365,15 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 1. Bewerk het aangepaste formulier. Voeg een verplicht veld toe. Voeg bijvoorbeeld een veld **[!UICONTROL Category]** toe en maak het veld verplicht.
 
-   ![&#x200B; voeg verplicht gebied aan meta-gegevensvorm toe door Vereist in het lusje van Regels in de Redacteur van de Vorm van het Schema van Meta-gegevens te selecteren &#x200B;](assets/mandatory-field-metadata-schema-editor.png)
+   ![ voeg verplicht gebied aan meta-gegevensvorm toe door Vereist in het lusje van Regels in de Redacteur van de Vorm van het Schema van Meta-gegevens te selecteren ](assets/mandatory-field-metadata-schema-editor.png)
 
    *Cijfer: Verplicht gebied in de redacteur van de de vormvorm van meta-gegevensschema.*
 
-1. Klik op **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** . Selecteer het formulier en klik op **[!UICONTROL Apply to Folder(s)]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
+1. Klik op **[!UICONTROL Save]** . Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** . Selecteer het formulier en klik op **[!UICONTROL Apply to Folder(s)]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. Op de kaartweergave van het element wordt een bericht voor de ontbrekende metagegevens van het verplichte veld weergegeven.
 
-   ![&#x200B; Bericht voor ontbrekende verplichte meta-gegevens op de mening van de activakaart bij het uploaden van activa in omslag &#x200B;](assets/metadata-missing-info-card-view.png)
+   ![ Bericht voor ontbrekende verplichte meta-gegevens op de mening van de activakaart bij het uploaden van activa in omslag ](assets/metadata-missing-info-card-view.png)
 
 1. (Optioneel) Toegang `https://[aem_server]:[port]/system/console/components/` . Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` in die standaard is uitgeschakeld. Stel een frequentie in waarmee [!DNL Experience Manager] controleert of metagegevens over de elementen geldig zijn. Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan `jcr:content` elementen. [!DNL Experience Manager] gebruikt deze eigenschap om de ongeldige elementen in een zoekresultaat te filteren. Als u na een controle een element toevoegt, wordt het element pas bij de volgende geplande controle gemarkeerd met `hasValidMetadata` . De elementen worden daarom pas na de volgende geplande controle in zoekfilters voor ongeldige metagegevens weergegeven.
 
@@ -381,5 +381,6 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
    >
    >De controles van de meta-gegevensbevestiging zijn middelintensief en kunnen de prestaties van uw systeem beïnvloeden. Plan de controles dienovereenkomstig. Als de server het laden niet aankan, probeert u deze taak uit te schakelen.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De component RemotePage haalt alle noodzakelijke activa van de geproduceerde toe
 * Met de Virtual Front Components kunt u secties markeren als bewerkbaar in de AEM SPA Editor.
 * Samen, kan een SPA die op een verschillend domein wordt ontvangen editable in AEM worden gemaakt.
 
-Zie het artikel [&#x200B; Uitgevend een Externe KUUROORD binnen AEM &#x200B;](spa-edit-external.md) voor meer details over editable, externe SPAs in AEM.
+Zie het artikel [ Uitgevend een Externe KUUROORD binnen AEM ](spa-edit-external.md) voor meer details over editable, externe SPAs in AEM.
 
 ## Vereisten {#requirements}
 
@@ -40,15 +40,15 @@ Zie het artikel [&#x200B; Uitgevend een Externe KUUROORD binnen AEM &#x200B;](sp
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-  ![&#x200B; EnterPoint &#x200B;](assets/asset-manifest-entrypoints.png)
+  ![ EnterPoint ](assets/asset-manifest-entrypoints.png)
 
 * De toepassing moet kunnen initialiseren in een `<div id="root"></div>` onder het body-element. Als er een andere opmaak wordt verwacht voor de app om te instantiëren, moet deze dienovereenkomstig worden aangepast in de HTML-scripts van de proxycomponent met een `sling:resourceSuperType="spa-project-core/components/remotepage` .
 
 ## Beperkingen {#limitations}
 
-* De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [&#x200B; verstrekt.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage is echter alleen getest om te werken met het React-framework (en Next.js via de volgende component op afstand) en biedt daarom geen ondersteuning voor het extern laden van toepassingen vanuit andere frameworks, zoals Angular.
+* De component RemotePage verwacht dat de implementatie activa-manifest zoals hier gevonden [ verstrekt.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage is echter alleen getest om te werken met het React-framework (en Next.js via de component Remote-page-next) en biedt daarom geen ondersteuning voor het extern laden van toepassingen vanuit andere frameworks, zoals Angular.
 * Interne CSS die is gedefinieerd in het HTML-hoofdbestand van de toepassing en inline CSS op het DOM-hoofdknooppunt zijn niet beschikbaar bij externe rendering in AEM.
 
 ## Technische details {#technical-details}
 
-Zoals de rest van het project van AEM SPA, is de Component RemotePage open bron. Voor de volledige technische details van de Component RemotePage, [&#x200B; zie de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Zoals de rest van het project van AEM SPA, is de Component RemotePage open bron. Voor de volledige technische details van de Component RemotePage, [ zie de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

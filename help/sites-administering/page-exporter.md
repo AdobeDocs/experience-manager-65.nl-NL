@@ -1,13 +1,13 @@
 ---
 title: De pagina-exportfunctie
-description: Leer hoe u de pagina-exportfunctie van Adobe Experience Manager (AEM) gebruikt.
+description: Leer hoe u de Adobe Experience Manager (AEM) Page Exporter gebruikt.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Wanneer dit is geconfigureerd, vraagt u een pagina-export vanuit uw browser door
 
 ## Pagina&#39;s exporteren {#exporting-a-page}
 
-In de volgende stappen wordt beschreven hoe u een pagina exporteert en wordt ervan uitgegaan dat er een exportsjabloon voor uw site bestaat. Een exportsjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Om een uitvoermalplaatje tot stand te brengen, zie [&#x200B; Creërend een Configuratie van de Exporteur van de Pagina voor uw Plaats &#x200B;](#creating-a-page-exporter-configuration-for-your-site).
+In de volgende stappen wordt beschreven hoe u een pagina exporteert en wordt ervan uitgegaan dat er een exportsjabloon voor uw site bestaat. Een exportsjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Om een uitvoermalplaatje tot stand te brengen, zie [ Creërend een Configuratie van de Exporteur van de Pagina voor uw Plaats ](#creating-a-page-exporter-configuration-for-your-site).
 
 Een pagina exporteren:
 
@@ -45,10 +45,10 @@ Selecteer het vereiste malplaatje voor uw plaats, dan bevestig met **O.K.**.
 1. Vraag de pagina voor export aan en vervang het achtervoegsel `html` door `export.zip` in de URL.
 
    Bijvoorbeeld:
-   * localhost:4502/content/we-retail/language-masters/en.html
+   * localhost :4502 /content/we-retail/language-masters/en.html
 
    Wordt benaderd door:
-   * localhost:4502/content/we-retail/language-masters/en.export.zip
+   * localhost :4502 /content/we-retail/language-masters/en.export.zip
 
 1. Download het archiefbestand naar uw bestandssysteem.
 
@@ -64,11 +64,11 @@ Selecteer het vereiste malplaatje voor uw plaats, dan bevestig met **O.K.**.
 
 ## Een configuratie voor paginaexportters maken voor uw site {#creating-a-page-exporter-configuration-for-your-site}
 
-De paginaexporteur is gebaseerd op het [&#x200B; kader van de Synchronisatie van de Inhoud &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). De configuraties die in de **dialoog van de Eigenschappen van de Pagina** beschikbaar zijn zijn de uitvoermalplaatjes die de vereiste gebiedsdelen voor een pagina bepalen.
+De paginaexporteur is gebaseerd op het [ kader van de Synchronisatie van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). De configuraties die in de **dialoog van de Eigenschappen van de Pagina** beschikbaar zijn zijn de uitvoermalplaatjes die de vereiste gebiedsdelen voor een pagina bepalen.
 
 Wanneer het exporteren van een pagina wordt geactiveerd, wordt naar de exportsjabloon verwezen. Zowel het paginapad als het ontwerppad worden dynamisch toegepast. Het ZIP-bestand wordt vervolgens gemaakt met de standaardfunctionaliteit voor het synchroniseren van inhoud.
 
-Een installatie buiten de AEM bevat een standaardsjabloon onder `/etc/contentsync/templates/default` .
+Een AEM-installatie buiten de doos bevat een standaardsjabloon onder `/etc/contentsync/templates/default` .
 
 * Deze sjabloon is de fallback-sjabloon wanneer er geen exportsjabloon wordt gevonden in de repository.
 
@@ -87,7 +87,7 @@ De eenvoudigste methode om een sjabloon voor het exporteren van pagina&#39;s te 
 
 Een volledig nieuwe sjabloon maken:
 
-1. In **CRXDE Lite**, creeer een knoop onder `/etc/contentsync/templates`:
+1. In **CRXDE Lite**, creeer hieronder een knoop `/etc/contentsync/templates`:
 
    * `Name`: een naam die geschikt is voor uw site, bijvoorbeeld `<mysite>` . De naam wordt weergegeven in het dialoogvenster Pagina-eigenschappen wanneer u de sjabloon voor het exporteren van pagina&#39;s kiest.
 
@@ -108,9 +108,10 @@ Wanneer uw malplaatje wordt gevormd, maak het beschikbaar:
 
 ### Configuratieknooppunten van pagina-exporteur {#page-exporter-configuration-nodes}
 
-Het malplaatje bestaat uit een knoopstructuur, aangezien het het [&#x200B; kader van de Synchronisatie van de Inhoud &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) gebruikt. Elk knooppunt heeft een eigenschap `type` die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand.
+Het malplaatje bestaat uit een knoopstructuur, aangezien het het [ kader van de Synchronisatie van de Inhoud ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) gebruikt. Elk knooppunt heeft een eigenschap `type` die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 De volgende knooppunten kunnen worden gebruikt om een exportsjabloon te maken:
@@ -178,14 +179,15 @@ Aangepaste configuraties zijn ook mogelijk.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Om aan sommige specifieke vereisten te voldoen, voer de manager van de a [&#x200B; douaneverupdate &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html) uit.
+Om aan sommige specifieke vereisten te voldoen, voer de manager van de a [ douaneverupdate ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html) uit.
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Pagina&#39;s programmatisch exporteren {#programmatically-exporting-a-page}
 
-Om een pagina programmatically uit te voeren, kunt u de [&#x200B; PageExporter &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) dienst gebruiken OSGI. Met deze service kunt u:
+Om een pagina programmatically uit te voeren, kunt u de [ PageExporter ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) dienst gebruiken OSGI. Met deze service kunt u:
 
 * Exporteer een pagina en schrijf naar de HTTP-servletreactie.
 * Exporteer een pagina en sla het ZIP-bestand op een specifieke locatie op.

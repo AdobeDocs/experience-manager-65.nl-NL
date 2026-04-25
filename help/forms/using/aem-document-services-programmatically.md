@@ -1,5 +1,5 @@
 ---
-title: Programmaticaal AEM Document Services gebruiken
+title: AEM Document Services programmatisch gebruiken
 description: Leer hoe u API's van Document Services gebruikt om PDF-documenten digitaal te ondertekenen, te coderen, te coderen en te genereren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,30 +8,30 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '6448'
+source-wordcount: '6595'
 ht-degree: 0%
 
 ---
 
-# Programmaticaal AEM Document Services gebruiken  {#using-aem-document-services-programmatically}
+# AEM Document Services programmatisch gebruiken  {#using-aem-document-services-programmatically}
 
-De steekproeven en de voorbeelden in dit document helpen u begrijpen en gebruiken AEM de Diensten van het Document op een AEM Forms op milieu OSGi. Zie voor voorbeelden en voorbeelden voor AEM Forms over JEE-omgeving
+Met voorbeelden en voorbeelden in dit document kunt u AEM Document Services op een AEM Forms in een OSGi-omgeving begrijpen en gebruiken. Zie voor voorbeelden en voorbeelden voor AEM Forms over JEE-omgeving
 
-* [&#x200B; de Dienst van de Handtekening Java API Snelle Begin &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=nl-NL&#programming-aem-forms-jee)
+* [Handtekeningenservice Java API Snel starten](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
-* [&#x200B; Snelle Begin van de Dienst van de Encryptie Java API &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=nl-NL&#developer-reference)
+* [Coderingsservice Java API Snel starten](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
 
-* [&#x200B; de uitbreidingenDienst Java API Snelle Begin van de Extensie van Acrobat Reader &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=nl-NL&#developer-reference)
+* [Acrobat Reader Extension Service Java API Snel starten](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Vereiste {#prerequisite}
 
-* Alvorens de dienst DocAssurance APIs te gebruiken, [&#x200B; vormt de dienst DocAssurance &#x200B;](/help/forms/using/install-configure-document-services.md).
+* Alvorens de dienst DocAssurance APIs te gebruiken, [ vormt de dienst DocAssurance ](/help/forms/using/install-configure-document-services.md).
 
-* De download en vormt [&#x200B; de Cliënt SDK van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html) met u AEM in kaart gebracht project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen gebruikend AEM de Diensten van het Document zijn beschikbaar in de [&#x200B; Cliënt SDK van AEM Forms &#x200B;](https://helpx.adobe.com/nl/aem-forms/kb/aem-forms-releases.html)
+* De download en vormt [ SDK van de Cliënt van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) met u AEM Gemaakt project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen gebruikend de Diensten van het Document van AEM zijn beschikbaar in de [ Cliënt SDK van AEM Forms ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
-* Leer [&#x200B; hoe te om uw AEM project te bouwen gebruikend Maven &#x200B;](/help/sites-developing/ht-projects-maven.md)
+* Leer [ hoe te om uw project van AEM te bouwen gebruikend Maven ](/help/sites-developing/ht-projects-maven.md)
 
 ## DocAssurance Service {#docassurance-service}
 
@@ -64,14 +64,14 @@ U kunt de volgende verrichtingen uitvoeren gebruikend de dienst DocAssurance:
 * [Digitale handtekeningen verwijderen](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
 
 * [Certificeringshandtekeningveld ophalen](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [Type PDF-codering ophalen](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
+* [PDF-coderingstype ophalen](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
 * [Wachtwoordversleuteling verwijderen](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
 
 * [Certificaatversleuteling verwijderen](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
 
 >[!NOTE]
 >
->Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [&#x200B; https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
+>Al deze diensten gebruiken het voorwerp van het Document als inputparameter waarvoor Javadoc bij URL [ https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html ](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html) kan worden gevonden
 
 ### Een onzichtbaar handtekeningveld toevoegen {#adding-an-invisible-signature-field}
 
@@ -97,7 +97,7 @@ Digitale handtekeningen worden weergegeven in handtekeningvelden. Dit zijn formu
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>Een <code>FieldMDPOptionSpec</code> -object dat de documentvelden voor PDF opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Deze parameter is optioneel en kan de waarde null accepteren.</td>
+   <td>Een <code>FieldMDPOptionSpec</code> -object dat de PDF-documentvelden opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Deze parameter is optioneel en kan de waarde null accepteren.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -237,7 +237,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-U kunt [&#x200B; CAdES &#x200B;](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specificatie voor het ondertekenen van documenten ook gebruiken. Gebruik de volgende steekproefcode aan opstelling ondertekenend formaat aan [&#x200B; CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+U kunt [ CAdES ](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specificatie voor het ondertekenen van documenten ook gebruiken. Gebruik de volgende steekproefcode aan opstelling ondertekenend formaat aan [ CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -286,7 +286,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>Een <code>FieldMDPOptionSpec</code> -object dat de documentvelden voor PDF opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Dit is een optionele parameter en kan null zijn.</td>
+   <td>Een <code>FieldMDPOptionSpec</code> -object dat de PDF-documentvelden opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Dit is een optionele parameter en kan null zijn.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -427,7 +427,7 @@ public class AddSignatureField {
 
 ### Tijdstempel document toepassen {#apply-document-timestamp}
 
-U kunt een document programmatically timestamp zoals per [&#x200B; PAdES 4 &#x200B;](https://en.wikipedia.org/wiki/PAdES) specificaties. U kunt [&#x200B; CAdES &#x200B;](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specificatie voor transactie verwante documenten ook gebruiken.
+U kunt een document programmatically timestamp zoals per [ PAdES 4 ](https://en.wikipedia.org/wiki/PAdES) specificaties. U kunt [ CAdES ](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specificatie voor transactie verwante documenten ook gebruiken.
 
 **Syntaxis**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -462,7 +462,7 @@ U kunt een document programmatically timestamp zoals per [&#x200B; PAdES 4 &#x20
  </tbody>
 </table>
 
-De volgende codesteekproeven voegen een tijdstempel aan een document toe zoals per [&#x200B; PAdES 4 &#x200B;](https://en.wikipedia.org/wiki/PAdES).
+De volgende codesteekproeven voegen een tijdstempel aan een document toe zoals per [ PAdES 4 ](https://en.wikipedia.org/wiki/PAdES).
 
 ```java
 package com.adobe.signatures.test;
@@ -634,7 +634,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Handtekening ophalen {#getting-signature}
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker bent van de namen van handtekeningvelden in een PDF-document of als u de namen wilt verifiëren, haalt u de namen via programmacode op. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]` .
+U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker bent van de namen van de handtekeningvelden in een PDF-document of als u de namen wilt verifiëren, haalt u de namen via programmacode op. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]` .
 
 **Syntaxis**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -1063,11 +1063,11 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document voor documentinvoer PDF <br /> </td>
+   <td>Documentinvoer PDF-document <br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Omvat de argumenten die voor het Coderen van een document van PDF <br /> worden vereist </td>
+   <td>Omvat de argumenten die voor het Coderen van een document van PDF worden vereist <br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -1075,7 +1075,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Bevat de vereiste opties voor Reader Een PDF-document uitbreiden</td>
+   <td>Bevat de opties die vereist zijn voor Reader Extending a PDF document</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1345,13 +1345,13 @@ public class Certify {
 
 ### Documenten beveiligen {#securing-documents}
 
-Met secureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en lezer afzonderlijk of in een willekeurige combinatie in een bepaalde volgorde uitbreiden. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null, wordt aangenomen dat de specifieke verwerking niet vereist is.
+Met secureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null, wordt aangenomen dat de specifieke verwerking niet vereist is.
 
-**het Coderen van de documenten van PDF met wachtwoord**
+**Coderend de documenten van PDF met wachtwoord**
 
-Wanneer u een PDF-document versleutelt met een wachtwoord, moet een gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere AEM Forms Document Services-bewerking wordt gebruikt, moet een met een wachtwoord gecodeerd PDF-document worden ontgrendeld.
+Wanneer u een PDF-document versleutelt met een wachtwoord, moet een gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere AEM Forms Document Services-bewerking wordt gebruikt, moet bovendien een met een wachtwoord gecodeerd PDF-document worden ontgrendeld.
 
-**het Coderen van de documenten van PDF met certificaten**
+**Coderend de documenten van PDF met certificaten**
 
 Met codering op basis van certificaten kunt u een document coderen voor specifieke ontvangers met behulp van technologie voor openbare sleutels.
 
@@ -1370,13 +1370,13 @@ Bovendien bevatten de certificaatintrekkingslijsten (CRL&#39;s) informatie over 
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Trust Store.
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan de AEM Trust Store.
 
 **Toepassend gebruiksrechten op de documenten van PDF**
 
-U kunt gebruiksrechten toepassen op PDF-documenten met de Java Client API en webservice voor Reader Extensions. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
+U kunt gebruiksrechten toepassen op PDF-documenten met de Reader Extensions Java Client API en webservice. Gebruiksrechten hebben betrekking op functies die standaard beschikbaar zijn in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
 
-Voordat u een PDF-document met een certificaat kunt Readers, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM sleutelarchief.
+Voordat u een PDF-document kunt uitbreiden met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Keystore.
 
 **digitaal het ondertekenen van de documenten van PDF**
 
@@ -1384,17 +1384,17 @@ Digitale handtekeningen kunnen op PDF-documenten worden toegepast om een beveili
 
 De technologie die wordt gebruikt om documenten digitaal te ondertekenen, helpt ervoor te zorgen dat zowel de ondertekenaar als de ontvangers duidelijk zijn over wat is ondertekend en er zeker van zijn dat het document niet is gewijzigd sinds het werd ondertekend.
 
-De documenten van PDF worden ondertekend door middel van openbare-sleuteltechnologie. Een ondertekenaar heeft twee sleutels: een openbare sleutel en een persoonlijke sleutel. De persoonlijke sleutel wordt opgeslagen in de referentie van een gebruiker die beschikbaar moet zijn op het moment van ondertekening.
+PDF-documenten worden ondertekend met behulp van technologie voor openbare sleutels. Een ondertekenaar heeft twee sleutels: een openbare sleutel en een persoonlijke sleutel. De persoonlijke sleutel wordt opgeslagen in de referentie van een gebruiker die beschikbaar moet zijn op het moment van ondertekening.
 
 De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat beschikbaar moet zijn aan ontvangers om de handtekening te valideren. Informatie over ingetrokken certificaten vindt u in de certificaatintrekkingslijsten (CRL&#39;s) en de online certificaatstatusprotocollen (OCSP&#39;s) die door de certificeringsinstanties (CA&#39;s) worden verspreid. De tijd van het ondertekenen kan van een vertrouwde op bron worden verkregen die als Tijdstempelinstantie wordt bekend.
 
 >[!NOTE]
 >
->Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM Keystore. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 >[!NOTE]
 >
->AEM Forms steunt ook *[CAdES &#x200B;](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* specificatie voor digitaal het ondertekenen van de documenten van PDF.
+>AEM Forms steunt ook *[CAdES ](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* specificatie voor digitaal het ondertekenen van de documenten van PDF.
 
 **Certificerend de Documenten van PDF**
 
@@ -1418,7 +1418,7 @@ Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belang
 
 >[!NOTE]
 >
->Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM Keystore. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 **Syntaxis**:
 
@@ -1440,11 +1440,11 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document voor documentinvoer PDF <br /> </td>
+   <td>Documentinvoer PDF-document <br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Omvat de argumenten die voor het Coderen van PDF Doc <br /> worden vereist </td>
+   <td>Omvat de argumenten die voor het Coderen van een Doc van PDF <br /> worden vereist </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -1452,7 +1452,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Bevat de opties die vereist zijn voor Reader Een PDF-document uitbreiden</td>
+   <td>Bevat de vereiste opties voor Reader Extending a PDF Doc</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1461,7 +1461,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**Steekproef 1**: Deze steekproef wordt gebruikt om wachtwoordencryptie uit te voeren, die een handtekeningsgebied en Reader certificeert die het document van de PDF uitbreidt.
+**Steekproef 1**: Deze steekproef wordt gebruikt om wachtwoordencryptie uit te voeren, die een handtekeningsgebied certificeert en Reader die het document van PDF uitbreidt.
 
 ```java
 /*************************************************************************
@@ -1763,7 +1763,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Steekproef 2**: Deze steekproef wordt gebruikt om encryptie uit te voeren PKI, ondertekenend een handtekeningsgebied en Reader die het document van PDF uitbreidt.
+**Steekproef 2**: Deze steekproef wordt gebruikt om encryptie uit te voeren PKI, ondertekenend een handtekeningsgebied en Reader Extending het document van PDF.
 
 ```java
 /*************************************************************************
@@ -2092,7 +2092,7 @@ Als het volgende foutbericht wordt weergegeven tijdens het uitbreiden van een PD
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Dit geeft aan dat de service Extensie Reader de JavaScripts die in het document worden gebruikt, niet kan uitvoeren binnen het gedefinieerde time-outinterval.
+Dit geeft aan dat de Reader Extension Service de JavaScripts die in het document worden gebruikt, niet kan uitvoeren binnen het gedefinieerde time-outinterval.
 
 Het time-outinterval dat is gedefinieerd voor de JavaScripts in het PDF-document, beheren met:
 
@@ -2455,7 +2455,7 @@ Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een o
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document-object met PDF <br /> </td>
+   <td>Document, object met PDF <br /> </td>
   </tr>
   <tr>
    <td><code class="code">signatureField
@@ -2481,7 +2481,7 @@ Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een o
  </tbody>
 </table>
 
-Deze voorbeeldcode gebruikt `DocAssuranceService` om een handtekeningveld in een versleuteld PDF-document te verifiëren.
+Deze voorbeeldcode gebruikt `DocAssuranceService` om een handtekeningveld in een gecodeerd PDF-document te verifiëren.
 
 ```java
 /*************************************************************************
@@ -2759,7 +2759,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Meerdere digitale handtekeningen verifiëren {#verifying-multiple-digital-signatures}
 
-Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-document kan meerdere digitale handtekeningen bevatten als het is onderworpen aan een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars vereist zijn. Een financiële transactie vereist bijvoorbeeld handtekeningen van zowel de medewerker van de lening als de beheerder. U kunt de API van de handtekeningenservice gebruiken om alle handtekeningen in het PDF-document te verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, raadt de Adobe u aan deze te verifiëren.
+Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-document kan meerdere digitale handtekeningen bevatten als het is onderworpen aan een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars vereist zijn. Een financiële transactie vereist bijvoorbeeld handtekeningen van zowel de medewerker van de lening als de beheerder. U kunt de API van de handtekeningenservice gebruiken om alle handtekeningen in het PDF-document te verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, raadt Adobe u aan deze te verifiëren.
 
 **Syntaxis**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -2773,7 +2773,7 @@ Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-do
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document-object met PDF <br /> </td>
+   <td>Document, object met PDF <br /> </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
@@ -3071,7 +3071,7 @@ U kunt een nieuwe digitale handtekening alleen op een handtekeningveld toepassen
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document-object met PDF <br /> </td>
+   <td>Document, object met PDF <br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
@@ -3295,7 +3295,7 @@ public class GetCertifyingSignatureField {
 }
 ```
 
-### PDF-versleutelingstype ophalen {#getting-pdf-encryption-type}
+### PDF-coderingstype ophalen {#getting-pdf-encryption-type}
 
 U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, bijvoorbeeld `asform1[0].grantApplication[0].page1[0].SignatureField1[0]` .
 
@@ -3413,7 +3413,7 @@ public class GetPDFEncryption {
 
 ### Wachtwoordversleuteling verwijderen uit PDF {#removing-password-encryption-from-pdf}
 
-Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen zonder een wachtwoord op te geven. Nadat u op een wachtwoord gebaseerde versleuteling uit een PDF-document hebt verwijderd, is het document niet meer beveiligd.
+Verwijder op een wachtwoord gebaseerde codering uit een PDF-document, zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen zonder een wachtwoord op te geven. Nadat u op een wachtwoord gebaseerde versleuteling uit een PDF-document hebt verwijderd, is het document niet meer beveiligd.
 
 **Syntaxis**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3436,7 +3436,7 @@ Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document zodat gebr
  </tbody>
 </table>
 
-In het volgende codevoorbeeld wordt op een wachtwoord gebaseerde codering verwijderd uit een PDF-document.
+In het volgende codevoorbeeld wordt op een wachtwoord gebaseerde codering uit een PDF-document verwijderd.
 
 ```java
     package com.adobe.docassurance.samples;
@@ -3512,7 +3512,7 @@ In het volgende codevoorbeeld wordt op een wachtwoord gebaseerde codering verwij
 
 ### Certificaatversleuteling verwijderen {#removing-certificate-encryption}
 
-U kunt op een certificaat gebaseerde versleuteling verwijderen uit een PDF-document, zodat gebruikers het PDF-document kunnen openen in Adobe Reader of Acrobat. Als u versleuteling wilt verwijderen uit een PDF-document dat is versleuteld met een certificaat, verwijst u naar een persoonlijke sleutel. Nadat u de versleuteling uit een PDF-document hebt verwijderd, is deze niet meer beveiligd.
+U kunt versleuteling op basis van certificaten verwijderen uit een PDF-document, zodat gebruikers het PDF-document kunnen openen in Adobe Reader of Acrobat. Als u versleuteling wilt verwijderen uit een PDF-document dat is versleuteld met een certificaat, verwijst u naar een persoonlijke sleutel. Nadat u de versleuteling uit een PDF-document hebt verwijderd, is deze niet meer beveiligd.
 
 **Syntaxis**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -3530,7 +3530,7 @@ U kunt op een certificaat gebaseerde versleuteling verwijderen uit een PDF-docum
   </tr>
   <tr>
    <td><code>alias</code><br /> </td>
-   <td>De alias die aan de sleutel in Granite Trust Store beantwoordt die wordt gebruikt om op certificaat-gebaseerde encryptie uit het document van de PDF te verwijderen.<br /> </td>
+   <td>De alias die aan de sleutel in Granite Trust Store beantwoordt die wordt gebruikt om op certificaat-gebaseerde encryptie uit het document van PDF te verwijderen.<br /> </td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
@@ -3636,17 +3636,17 @@ In het volgende Java-codevoorbeeld wordt versleuteling op basis van een certific
 
 De uitvoerservice biedt API&#39;s waarmee een XDP-bestand kan worden gerenderd in de indelingen .pdf, .pcl, .zpl en .ps. De service ondersteunt de volgende API&#39;s:
 
-* **[generatePDFOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** produceert een document van de PDF door een vormontwerp met gegevens samen te voegen die op een netwerkplaats, lokaal dossiersysteem, of plaats van HTTP als letterlijke waarden worden opgeslagen.
+* **[generatePDFOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** produceert een document van PDF door een vormontwerp met gegevens samen te voegen die op een netwerkplaats, lokaal dossiersysteem, of plaats van HTTP als letterlijke waarden worden opgeslagen.
 
-* **[generatePDFOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** produceert een document van de PDF door een vormontwerp met gegevens samen te voegen die in een toepassing worden opgeslagen.
-* **[generatePDFOutputBatch &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** voegt een vormontwerp met gegevens samen om een document van de PDF tot stand te brengen. Hiermee wordt eventueel een metagegevensbestand voor elke record gegenereerd of wordt de uitvoer naar een PDF-bestand opgeslagen.
-* **[generatePrintedOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** produceert een PCL, PostScript, of output ZPL van een vormontwerp en een gegevensdossier dat op een netwerkplaats, lokaal dossiersysteem, of plaats van HTTP als letterlijke waarden wordt opgeslagen.
+* **[generatePDFOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** produceert een document van PDF door een vormontwerp met gegevens samen te voegen die in een toepassing worden opgeslagen.
+* **[generatePDFOutputBatch ](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** voegt een vormontwerp met gegevens samen om een document van PDF tot stand te brengen. Hiermee wordt eventueel een metagegevensbestand voor elke record gegenereerd of wordt de uitvoer naar een PDF-bestand opgeslagen.
+* **[generatePrintedOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** produceert een PCL, PostScript, of output ZPL van een vormontwerp en een gegevensdossier dat op een netwerkplaats, lokaal dossiersysteem, of plaats van HTTP als letterlijke waarden wordt opgeslagen.
 
-* **[generatePrintedOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** produceert een PCL, PostScript, en output ZPL van een vormontwerp en een gegevensdossier dat in een toepassing wordt opgeslagen.
+* **[generatePrintedOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** produceert een PCL, PostScript, en output ZPL van een vormontwerp en een gegevensdossier dat in een toepassing wordt opgeslagen.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee wordt eventueel een metagegevensbestand voor elke record gegenereerd of wordt de uitvoer naar een PDF-bestand opgeslagen. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het vormontwerp en de gegevens van XML in een toepassing worden opgeslagen, gebruik [&#x200B; generatePDFOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee wordt eventueel een metagegevensbestand voor elke record gegenereerd of wordt de uitvoer naar een PDF-bestand opgeslagen. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het vormontwerp en de gegevens van XML in een toepassing worden opgeslagen, gebruik [ generatePDFOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
 
 **Syntaxis:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3664,7 +3664,7 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
   </tr>
   <tr>
    <td>data</td>
-   <td>Een dossier van XML dat de gegevens bevat die met het document van de PDF worden samengevoegd.<br /> </td>
+   <td>Een dossier van XML dat de gegevens bevat die met het document van PDF worden samengevoegd.<br /> </td>
   </tr>
   <tr>
    <td>opties</td>
@@ -3753,7 +3753,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gegenereerd door een f
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het vormontwerp en de gegevens van XML in een netwerkplaats, plaatselijk, of een plaats van HTTP als letterlijke waarden worden opgeslagen, gebruik [&#x200B; generatePDFOutput &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het vormontwerp en de gegevens van XML in een netwerkplaats, plaatselijk, of een plaats van HTTP als letterlijke waarden worden opgeslagen, gebruik [ generatePDFOutput ](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
 
 **Syntaxis:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3771,7 +3771,7 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
   </tr>
   <tr>
    <td>data</td>
-   <td>Een dossier van XML dat de gegevens bevat die met het document van de PDF worden samengevoegd.<br /> </td>
+   <td>Een dossier van XML dat de gegevens bevat die met het document van PDF worden samengevoegd.<br /> </td>
   </tr>
   <tr>
    <td>opties</td>
@@ -4295,12 +4295,12 @@ String outputFolder="C:/Output";
 
 De Forms-service biedt API&#39;s voor het importeren en exporteren van gegevens van en naar een interactief PDF-formulier. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat die worden gebruikt voor het weergeven en verzamelen van informatie van gebruikers. De service ondersteunt de volgende API&#39;s:
 
-* **[exportData &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** voert gegevens van een vorm van PDF uit.
-* **[importData &#x200B;](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** voert gegevens in een interactieve Vorm van PDF in.
+* **[exportData ](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** voert gegevens van een vorm van PDF uit.
+* **[importData ](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** voert gegevens in een interactieve Vorm van PDF in.
 
 ### exportData {#exportdata}
 
-Hiermee exporteert u formuliergegevens van een interactief PDF-formulier in XML- en XDP-indeling.
+Hiermee exporteert u formuliergegevens uit een interactief PDF-formulier in XML- en XDP-indeling.
 
 **Syntaxis:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
@@ -4323,7 +4323,7 @@ Hiermee exporteert u formuliergegevens van een interactief PDF-formulier in XML-
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden formuliergegevens geëxporteerd uit een interactief PDF-formulier in XML- en XDP-indeling.
+In het volgende voorbeeld van Java-code worden formuliergegevens uit een interactief PDF-formulier geëxporteerd in XML- en XDP-indeling.
 
 #### Monster {#sample}
 
@@ -4457,25 +4457,25 @@ private File importData(File inDoc, File inXML)
 }
 ```
 
-## PDF Generator-service {#pdfgeneratorservice}
+## PDF Generator Service {#pdfgeneratorservice}
 
-De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen kunnen worden omgezet in PDF. Het zet ook PDF in andere dossierformaten om en optimaliseert de grootte van PDF documenten.
+De PDF Generator-service biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. PDF wordt ook geconverteerd naar andere bestandsindelingen en de grootte van PDF-documenten wordt geoptimaliseerd.
 
 ### GeneratePDFService {#generatepdfservice}
 
-De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (afgekeurd), .jpg, .bmp, .tif, .png, .html, en vele andere dossierformaten om te PDF. Het verstrekt ook APIs om PDF naar diverse dossierformaten uit te voeren en PDF te optimaliseren. De service ondersteunt de volgende API&#39;s:
+De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (afgekeurd), .jpg, .bmp, .tif, .png, .html, en vele andere dossierformaten in PDF om te zetten. Het biedt ook API&#39;s om PDF naar verschillende bestandsindelingen te exporteren en PDF&#39;s te optimaliseren. De service ondersteunt de volgende API&#39;s:
 
-* **createPDF**: Zet een gesteund dossiertype in een document van PDF om. Bestandsindelingen worden ondersteund, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen, kan om het even welk derdegenerisch PDF die toepassingstype produceren ook in API worden gestopt.
-* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG 2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document ( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint-presentatie( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a (sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3a(sRGB), /A-3b(sRGB). U kunt [&#x200B; profielen van de douanePreflight &#x200B;](https://helpx.adobe.com/nl/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
+* **createPDF**: Zet een gesteund dossiertype in een document van PDF om. Bestandsindelingen worden ondersteund, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen kan elk generiek PDF-type dat toepassingen genereert van derden ook worden aangesloten op de API.
+* **exportPDF**: Converteert een document van PDF naar een gesteund dossiertype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling. U kunt een PDF-document exporteren in Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 met CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word-document( doc , docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), / A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB)-indelingen. U kunt [ profielen van de douanePreflight ](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) voor de output van PDF ook specificeren.
 
-* **optimizePDF**: Optimizes het document van de PDF en zet ook een document van de PDF van één type in een andere om. De methode accepteert een PDF-document als invoer.
+* **optimizePDF**: Optimizes het document van PDF en zet ook een document van PDF van één type in een andere om. De methode accepteert een PDF-document als invoer.
 * **htmlToPdf2**: Zet een pagina van HTML in een document van PDF om. De URL van de HTML-pagina wordt als invoer geaccepteerd.
 
 >[!NOTE]
 >
 >De HTMLtoPDF-API is verouderd voor AEM Forms-servers die op het AIX-besturingssysteem worden uitgevoerd.
 
-#### PDF Generator-API beschikbaar voor Microsoft Windows en Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
+#### PDF Generator API beschikbaar voor Microsoft Windows en Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
 <table>
  <tbody>
@@ -4513,9 +4513,9 @@ De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .doc
 
 #### createPDF {#createpdf}
 
-De createPDF-API converteert een ondersteund bestandstype naar een PDF-document. De toepassing ondersteunt verschillende bestandsindelingen, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen, kan om het even welk derdegenerisch PDF die toepassingstype produceren ook in API worden gestopt.
+De createPDF-API converteert een ondersteund bestandstype naar een PDF-document. De toepassing ondersteunt verschillende bestandsindelingen, zoals Microsoft Word, Microsoft PowerPoint, Microsoft Excel en Microsoft Project. Naast deze toepassingen kan elk generiek PDF-type dat toepassingen genereert van derden ook worden aangesloten op de API.
 
-Voor de conversie zijn slechts enkele parameters verplicht. Een invoerdocument is een verplichte parameter. U kunt de veiligheidstoestemmingen, de Montages van de Output van de PDF, en de informatie van Meta-gegevens later op het document van de PDF van de output toepassen.
+Voor de conversie zijn slechts enkele parameters verplicht. Een invoerdocument is een verplichte parameter. U kunt de beveiligingsmachtigingen, PDF Output Settings en Metadata-informatie later toepassen op het PDF-uitvoerdocument.
 
 De service createPDF retourneert een Java.util.Map met resultaten. De kaarttoetsen zijn:
 
@@ -4552,10 +4552,10 @@ De service createPDF genereert de volgende uitzonderingen:
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>PDF-uitvoer voor het omgezette document. U kunt alleen de volgende instellingen toepassen:</p>
+   <td><p>PDF-uitvoer voor het geconverteerde document. U kunt alleen de volgende instellingen toepassen:</p>
     <ul>
      <li>High_Quality_Print <br /> </li>
-     <li>PDFA1b_2005_RGB<br /> </li>
+     <li>PDFA1b_2005_RGB <br /> </li>
      <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001 <br /> </li>
      <li>PDFX3_2002 <br /> </li>
@@ -4570,7 +4570,7 @@ De service createPDF genereert de volgende uitzonderingen:
      <li>Geen beveiliging</li>
      <li>Wachtwoordbeveiliging <br /> </li>
      <li>Certificaatbeveiliging <br /> </li>
-     <li>Adobe Policy Server</li>
+     <li>Adobe-beleidsserver</li>
     </ul> <p>Het is een optionele parameter.</p> </td>
   </tr>
   <tr>
@@ -4648,7 +4648,7 @@ File createPDF(File inputFile, String inputFilename, String fileTypeSettings, St
 
 #### exportPDF {#exportpdf}
 
-Zet een PDF-document om in een ondersteund bestandstype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling.
+Converteert een PDF-document naar een ondersteund bestandstype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling.
 
 De service createPDF retourneert een Java.util.Map met resultaten. De kaarttoetsen zijn:
 
@@ -4745,7 +4745,7 @@ finally {
 
 #### optimizePDF {#optimizepdf}
 
-Met de API OptimizePDF worden PDF-bestanden geoptimaliseerd door de grootte te verkleinen. Het resultaat van deze conversie zijn PDF-bestanden die mogelijk kleiner zijn dan de oorspronkelijke versie. Met deze bewerking worden ook PDF-documenten geconverteerd naar de PDF-versie die is opgegeven in de optimalisatieparameters. Het retourneert een object OptimizePDFResult dat geoptimaliseerde PDF bevat.
+Met de API OptimizePDF worden PDF-bestanden geoptimaliseerd door de grootte ervan te verkleinen. Het resultaat van deze conversie zijn PDF-bestanden die mogelijk kleiner zijn dan de oorspronkelijke versie. Met deze bewerking worden PDF-documenten ook geconverteerd naar de PDF-versie die is opgegeven in de optimalisatieparameters. Het retourneert een OptimizePDFResult-object met geoptimaliseerde PDF.
 
 De service createPDF genereert de volgende uitzonderingen:
 
@@ -4782,7 +4782,7 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld wordt het invoer-PDF-bestand geoptimaliseerd door de grootte ervan te verkleinen.
+In het volgende Java-codevoorbeeld wordt het PDF-invoerbestand geoptimaliseerd door de grootte ervan te beperken.
 
 ```java
 @Reference GeneratePDFService generatePdfService;
@@ -4833,9 +4833,9 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 #### htmlToPdf2 {#htmltopdf}
 
-Hiermee converteert u een HTML-pagina naar een PDF-document. De URL van de HTML-pagina wordt als invoer geaccepteerd.
+Een HTML-pagina wordt omgezet in een PDF-document. De URL van de HTML-pagina wordt als invoer geaccepteerd.
 
-De htmlToPdf2-service retourneert een HtmlToPdfResult-object. U kunt de omgezette PDF verkrijgen via result.getConvertedDocument().
+De htmlToPdf2-service retourneert een HtmlToPdfResult-object. U kunt de geconverteerde PDF verkrijgen via result.getConvertedDocument().
 
 De htmlToPdf2 service genereert de volgende uitzonderingen:
 
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-De Distiller-service converteert PostScript-, Encapsulated PostScript- (EPS) en PRN-bestanden (printertekst) naar PDF-bestanden. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en verklaringen. Door documenten om te zetten in PDF, kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen. De ondersteunde bestandsindelingen zijn .ps, .eps en .prn. De service ondersteunt de volgende API:
+De Distiller-service converteert PostScript-, Encapsulated PostScript- (EPS) en PRN-bestanden (Printer Text) naar PDF-bestanden. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en verklaringen. Door documenten om te zetten in PDF kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen. De ondersteunde bestandsindelingen zijn .ps, .eps en .prn. De service ondersteunt de volgende API:
 
 De service createPDF retourneert een Java.util.Map met resultaten. De kaarttoetsen zijn:
 
@@ -4939,7 +4939,7 @@ De service createPDF genereert de volgende uitzonderingen:
 
 #### createPDF {#createpdf-1}
 
-Zet de ondersteunde indelingen om in PDF-documenten. De methode accepteert bestanden met de indelingen .ps, .eps en .prn als invoer. U kunt specifieke veiligheidstoestemmingen, outputmontages, en de informatie van Meta-gegevens op het document van PDF van de output toepassen.
+Zet de ondersteunde indelingen om in PDF-documenten. De methode accepteert bestanden met de indelingen .ps, .eps en .prn als invoer. U kunt specifieke beveiligingsmachtigingen, uitvoerinstellingen en metagegevens toepassen op het PDF-uitvoerdocument.
 
 **Syntaxis:**
 
@@ -4965,10 +4965,10 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>PDF-uitvoerinstellingen voor het omgezette document. U kunt alleen de volgende instellingen toepassen:</p>
+   <td><p>PDF-uitvoerinstellingen voor het geconverteerde document. U kunt alleen de volgende instellingen toepassen:</p>
     <ul>
      <li>High_Quality_Print <br /> </li>
-     <li>PDFA1b_2005_RGB<br /> </li>
+     <li>PDFA1b_2005_RGB <br /> </li>
      <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001 <br /> </li>
      <li>PDFX3_2002 <br /> </li>
@@ -4983,7 +4983,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Geen beveiliging</li>
      <li>Wachtwoordbeveiliging <br /> </li>
      <li>Certificaatbeveiliging <br /> </li>
-     <li>Adobe Policy Server</li>
+     <li>Adobe-beleidsserver</li>
     </ul> <p>Het is een optionele parameter.</p> </td>
   </tr>
   <tr>
@@ -4997,7 +4997,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden invoerbestanden van het type PostScript (PS), Encapsulated PostScript (EPS) en PRN-bestanden (printertekst) geconverteerd naar PDF-bestanden.
+In het volgende Java-codevoorbeeld worden invoerbestanden van het type PostScript (PS), Encapsulated PostScript (EPS) en printertekstbestanden (PRN) geconverteerd naar PDF-bestanden.
 
 ```java
 @Reference DistillerService distillerService;
@@ -5061,19 +5061,19 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Services voor documenthulpprogramma {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
 #### PDF-documenten automatisch labelen {#auto-tag-api}
 
-De API voor automatische PDF-tags verbetert de toegankelijkheid van PDF door codes toe te voegen aan documenten, zodat wordt voldaan aan toegankelijkheidsnormen. Dit verbetert niet alleen de gebruikerservaring, maar houdt ook de nauwkeurigheid en consistentie in alle documenten in stand. De API voor automatische tags ondersteunt het labelen van de volgende elementen:
+De PDF API voor automatische tags verbetert de toegankelijkheid van PDF door codes toe te voegen aan documenten, zodat wordt voldaan aan toegankelijkheidsnormen. Dit verbetert niet alleen de gebruikerservaring, maar houdt ook de nauwkeurigheid en consistentie in alle documenten in stand. De API voor automatische tags ondersteunt het labelen van de volgende elementen:
 
 * Tekstblokken (alinea&#39;s)
 * Lijsten met opsommingstekens in één operator
 * Inhoudsopgave (inhoudsopgave)
 
-![&#x200B; Auto Tagged PDF document &#x200B;](assets/auto-tag-api.png)
+![ Auto Tagged PDF document ](assets/auto-tag-api.png)
 
-In het volgende Java-codevoorbeeld ziet u hoe u een PDF-bestand omzet in een gecodeerd PDF-document.
+In het volgende Java-codevoorbeeld ziet u hoe u een PDF-bestand omzet in een gelabeld PDF-document.
 
 **Syntaxis**: `Document tag(final Document inDoc)`
 

@@ -6,21 +6,21 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier maken {#creating-an-adaptive-form}
 
-<span class="preview"> de Adobe adviseert gebruikend de moderne en verlengbare gegevens vangen [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=nl-NL) voor [&#x200B; het creëren van nieuwe Aangepaste Forms &#x200B;](/help/forms/using/create-an-adaptive-form-core-components.md) of [&#x200B; het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites &#x200B;](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe adviseert het gebruiken van de moderne en verlengbare gegevens vangt [ Componenten van de Kern ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor [ het creëren van nieuwe Aangepaste Forms ](/help/forms/using/create-an-adaptive-form-core-components.md) of [ het toevoegen van Aangepaste Forms aan de pagina&#39;s van AEM Sites ](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
+| AEM 6.5 | Dit artikel |
 
 ## Een adaptief formulier maken {#strong-create-an-adaptive-form-strong}
 
@@ -28,7 +28,7 @@ Ga als volgt te werk om een adaptief formulier te maken.
 
 1. Toegang krijgen tot [!DNL Experience Manager Forms] instantie Auteur op `https://'[server]:[port]'/<custom-context-if-any>.`
 
-1. Ga uw geloofsbrieven op de Experience Manager login pagina in.
+1. Voer uw referenties in op de Experience Manager-aanmeldingspagina.
 
    Nadat u zich hebt aangemeld, selecteert u in de linkerbovenhoek **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** .
 
@@ -37,7 +37,7 @@ Ga als volgt te werk om een adaptief formulier te maken.
    >Voor een standaardinstallatie is de aanmelding `admin` en is het wachtwoord `admin` .
 
 1. Selecteer **[!UICONTROL Create]** en selecteer **[!UICONTROL Adaptive Form]** .
-1. Er verschijnt een optie voor het selecteren van een sjabloon. Voor meer informatie over malplaatjes, zie [&#x200B; Aangepaste vormmalplaatjes &#x200B;](creating-adaptive-form.md#p-adaptive-form-templates-p). Selecteer een sjabloon om deze te selecteren en selecteer Volgende.
+1. Er verschijnt een optie voor het selecteren van een sjabloon. Voor meer informatie over malplaatjes, zie [ Aangepaste vormmalplaatjes ](creating-adaptive-form.md#p-adaptive-form-templates-p). Selecteer een sjabloon om deze te selecteren en selecteer Volgende.
 1. Er wordt een optie voor &#39;Eigenschappen toevoegen&#39; weergegeven. Geef de waarden op voor de volgende eigenschapvelden. De velden Titel en Naam zijn verplicht:
 
    * **[!UICONTROL Title:]** Hiermee geeft u de weergavenaam van het formulier op. Met de titel kunt u het formulier identificeren in de gebruikersinterface van [!DNL Experience Manager Forms] .
@@ -54,7 +54,7 @@ Ga als volgt te werk om een adaptief formulier te maken.
 
    U kunt deze configureren op het tabblad **[!UICONTROL Form Model]** op de pagina **[!UICONTROL Add Properties]** . Standaard is het geselecteerde formuliermodel **[!UICONTROL None]** .
 
-1. Selecteer **[!UICONTROL Create]**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking.
+1. Selecteer **[!UICONTROL Create]** . Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking.
 
    Wanneer u alle eigenschappen hebt opgegeven, klikt u op **[!UICONTROL Create]** . Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking.
 
@@ -64,7 +64,7 @@ Ga als volgt te werk om een adaptief formulier te maken.
 
    Op basis van het type adaptief formulier worden de formulierelementen die aanwezig zijn in de bijbehorende XFA-formuliersjabloon, het XML-schema of het JSON-schema weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van **[!UICONTROL Content Browser]** in het zijpaneel. U kunt deze elementen ook slepen en neerzetten om het aangepaste formulier samen te stellen.
 
-   Voor informatie over adaptieve vorm auteursinterface en beschikbare componenten, zie [&#x200B; Inleiding aan creatie adaptieve vormen &#x200B;](introduction-forms-authoring.md).
+   Voor informatie over adaptieve vorm auteursinterface en beschikbare componenten, zie [ Inleiding aan creatie adaptieve vormen ](introduction-forms-authoring.md).
 
    >[!NOTE]
    >
@@ -72,29 +72,30 @@ Ga als volgt te werk om een adaptief formulier te maken.
 
 ## Een adaptief formulier maken op basis van een formuliergegevensmodel {#fdm}
 
-[[!DNL Experience Manager Forms]  gegevensintegratie &#x200B;](data-integration.md) laat u veelvoudige gegevensbronnen integreren en hun entiteiten en diensten samenbrengen om een model van vormgegevens tot stand te brengen. Het is een uitbreiding van het JSON-schema. U kunt een formuliergegevensmodel gebruiken om een adaptief formulier te maken. De entiteiten of gegevensmodelobjecten die in een formuliergegevensmodel zijn geconfigureerd, zijn beschikbaar als gegevensmodelobjecten voor het ontwerpen van formulieren. Zij zijn gebonden aan de respectieve gegevensbronnen en worden gebruikt om een formulier vooraf in te vullen en ingediende gegevens terug te schrijven naar de respectieve gegevensbronnen. U kunt ook services bellen die zijn geconfigureerd in een formuliergegevensmodel met behulp van adaptieve formulierregels.
+[[!DNL Experience Manager Forms]  gegevensintegratie ](data-integration.md) laat u veelvoudige gegevensbronnen integreren en hun entiteiten en diensten samenbrengen om een model van vormgegevens tot stand te brengen. Het is een uitbreiding van het JSON-schema. U kunt een formuliergegevensmodel gebruiken om een adaptief formulier te maken. De entiteiten of gegevensmodelobjecten die in een formuliergegevensmodel zijn geconfigureerd, zijn beschikbaar als gegevensmodelobjecten voor het ontwerpen van formulieren. Zij zijn gebonden aan de respectieve gegevensbronnen en worden gebruikt om een formulier vooraf in te vullen en ingediende gegevens terug te schrijven naar de respectieve gegevensbronnen. U kunt ook services bellen die zijn geconfigureerd in een formuliergegevensmodel met behulp van adaptieve formulierregels.
 
 Een formuliergegevensmodel gebruiken voor het maken van een adaptief formulier:
 
 1. Selecteer op het tabblad Formuliermodel in het scherm Eigenschappen toevoegen de optie **[!UICONTROL Form Data Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** .
 
-   ![&#x200B; creeer-af-1-1 &#x200B;](assets/create-af-1-1.png)
+   ![ creeer-af-1-1 ](assets/create-af-1-1.png)
 
 1. Selecteer deze optie om **[!UICONTROL Select Form Data Model]** uit te vouwen. Alle beschikbare formuliergegevensmodellen worden weergegeven.
 
    Selecteer een gegevensmodel.
 
-   ![&#x200B; creeer-af-2-1 &#x200B;](assets/create-af-2-1.png)
+   ![ creeer-af-2-1 ](assets/create-af-2-1.png)
 
 >[!NOTE]
 >
->U kunt ook het gegevensmodel van het formulier wijzigen voor een adaptief formulier. Voor gedetailleerde stappen, zie [&#x200B; Eigenschappen van het Model van de Vorm van een adaptieve vorm &#x200B;](#edit-form-model) uitgeven.
+>U kunt ook het gegevensmodel van het formulier wijzigen voor een adaptief formulier. Voor gedetailleerde stappen, zie [ Eigenschappen van het Model van de Vorm van een adaptieve vorm ](#edit-form-model) uitgeven.
 
 ## Een adaptief formulier maken op basis van een XFA-formuliersjabloon {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
 U kunt uw XFA-formuliersjablonen opnieuw gebruiken om adaptieve formulieren te maken. Als u een XFA-formuliersjabloon opnieuw wilt gebruiken, uploadt en koppelt u dit aan een adaptief formulier. De elementen van het formuliersjabloon (XFA-formulier) worden beschikbaar gesteld voor gebruik in de zoekfunctie voor inhoud op het moment dat het formulier wordt aangepast. Vanuit de Inhoudszoeker kunt u de formuliersjabloonelementen naar het formulier slepen en neerzetten.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -108,7 +109,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   -->
 
 ## Een adaptief formulier maken op basis van het XML- of JSON-schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -133,27 +135,27 @@ Ga als volgt te werk om het XML- of JSON-schema als formuliermodel voor een adap
    >
    >Zorg ervoor dat de naam van het JSON-schema eindigt met **.schema.json** . Bijvoorbeeld: mySchema.schema.json
 
-   ![&#x200B; Selecterend XML of schema JSON &#x200B;](assets/upload-schema.png)
+   ![ Selecterend het schema van XML of van JSON](assets/upload-schema.png)
    **Cijfer:** *Selecterend XML of JSON schema*
 
 1. (Alleen voor het XML-schema) Nadat u een XML-schema hebt geselecteerd of geüpload, geeft u een hoofdelement op van het geselecteerde XSD-bestand dat u wilt toewijzen met het aangepaste formulier.
 
-   ![&#x200B; Selecterend XSD wortelelement &#x200B;](assets/xsd-root-element.png)
+   ![ Selecterend XSD wortelelement](assets/xsd-root-element.png)
    **Cijfer:** *Selecterend XSD wortelelement*
 
 >[!NOTE]
 >
->U kunt het schema ook wijzigen voor een adaptief formulier. Voor gedetailleerde stappen, zie [&#x200B; Eigenschappen van het Model van de Vorm van een adaptieve vorm &#x200B;](#edit-form-model) uitgeven.
+>U kunt het schema ook wijzigen voor een adaptief formulier. Voor gedetailleerde stappen, zie [ Eigenschappen van het Model van de Vorm van een adaptieve vorm ](#edit-form-model) uitgeven.
 
 ## Aangepaste formuliersjablonen {#adaptive-form-templates}
 
 Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
-Daarnaast kunt u de sjablooneditor gebruiken om uw eigen sjablonen te maken. Voor meer informatie over het werken met malplaatjes, zie [&#x200B; Aangepaste vormmalplaatjes &#x200B;](template-editor.md).
+Daarnaast kunt u de sjablooneditor gebruiken om uw eigen sjablonen te maken. Voor meer informatie over het werken met malplaatjes, zie [ Aangepaste vormmalplaatjes ](template-editor.md).
 
 >[!NOTE]
 >
->Als u een adaptief formulier opent dat is gemaakt met de geavanceerde sjabloon voor bewerken, wordt een foutbericht weergegeven. De geavanceerde sjabloon heeft een Signature Step-component en Adobe Sign is er standaard voor ingeschakeld. Creeer en selecteer een [&#x200B; de wolkenconfiguratie van Adobe Sign &#x200B;](adobe-sign-integration-adaptive-forms.md) en [&#x200B; vorm een ondertekenaar &#x200B;](working-with-adobe-sign.md#addsignerstoanadaptiveform) om de fout op te lossen.
+>Als u een adaptief formulier opent dat is gemaakt met de geavanceerde sjabloon voor bewerken, wordt een foutbericht weergegeven. De geavanceerde sjabloon heeft een onderdeel Handtekeningstap en Adobe Sign is standaard ingeschakeld. Creeer en selecteer een [ de wolkenconfiguratie van het Teken van Adobe ](adobe-sign-integration-adaptive-forms.md) en [ vormen een ondertekenaar ](working-with-adobe-sign.md#addsignerstoanadaptiveform) om de fout op te lossen.
 
 ## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model}
 
@@ -180,7 +182,7 @@ Standaard wordt de inhoud van een adaptief formulier opgeslagen op een handeling
 
 De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Automatisch opslaan inschakelen op het tabblad Automatisch opslaan van een adaptief formulier. Het tabblad Automatisch opslaan bevat ook diverse andere configuratieopties. Voer de volgende stappen uit om de optie Automatisch opslaan in te schakelen en te configureren voor een adaptief formulier:
 
-1. Om tot de auto-sparen sectie in de eigenschappen toegang te hebben, selecteer een component, dan ![&#x200B; gebied-niveau &#x200B;](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![&#x200B; cmp &#x200B;](assets/cmppr.png).
+1. Om tot de auto-sparen sectie in de eigenschappen toegang te hebben, selecteer een component, dan ![ gebied-niveau ](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en selecteer dan ![ cmp ](assets/cmppr.png).
 1. In de **[!UICONTROL Auto Save]** sectie, **[!UICONTROL Enable]** de auto-sparen optie.
 1. Geef in het vak **[!UICONTROL Adaptive Form Event]** 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
@@ -201,7 +203,7 @@ De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Aut
 
 1. (Alleen op gebeurtenissen gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor automatisch opslaan op basis van gebeurtenissen te configureren.
 
-   1. In het **[!UICONTROL Auto save after this event]** vakje, specificeer a [&#x200B; GuideBridge &#x200B;](https://helpx.adobe.com/nl/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
+   1. In het **[!UICONTROL Auto save after this event]** vakje, specificeer a [ GuideBridge ](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) gebeurtenis. Het formulier wordt opgeslagen telkens wanneer de expressie de waarde TRUE oplevert.
 
 1. (Optioneel) Als u de inhoud automatisch wilt opslaan voor anonieme gebruikers, selecteert u de optie **[!UICONTROL Enable Autosave for anonymous users]** en klikt u op **[!UICONTROL OK]** .
 
@@ -212,16 +214,16 @@ De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Aut
    >Als u de service wilt configureren, gaat u naar de Adobe Experience Manager-webconsoleconfiguratie op `https://'[server]:[port]'system/console/configMgr` en bewerkt u **[!UICONTROL Forms Common Configuration Service]** om de optie **[!UICONTROL All Users]** in het veld **[!UICONTROL Allow]** te kiezen en slaat u de configuratie op.
 
 
-## Hoe wijzigt u de naam van een AEM adaptief formulier? {#rename-an-AEM-Adaptive-Form}
+## Hoe wijzigt u de naam van een AEM Adaptive Form? {#rename-an-AEM-Adaptive-Form}
 
 Voer de volgende stappen uit om de naam van een adaptief formulier te wijzigen:
 
 1. Selecteer een adaptief formulier in uw AEM Forms-gebruikersinterface.
 1. Klik op **Eigenschappen** die op de hogere spoorstaaf wordt gevestigd.
 
-   ![&#x200B; Eigenschappen &#x200B;](/help/forms/using/assets/rename-form-properties.png)
+   ![ Eigenschappen ](/help/forms/using/assets/rename-form-properties.png)
 
 1. Verander de naam van de vorm op het **lusje van de Titel**, zoals aangetoond in het hieronder beeld.
 1. Klik **sparen en Sluiten**.
 
-   ![&#x200B; noem een AEM Aanpassings Vorm &#x200B;](/help/forms/using/assets/rename-form-title.png) anders
+   ![ noem een Aangepaste Vorm van AEM ](/help/forms/using/assets/rename-form-title.png) anders

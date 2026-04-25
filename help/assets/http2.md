@@ -9,9 +9,9 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f749892bf7fba9889adfc930771178154b92fa5d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor inf
 
 De volgende website beschrijft HTTP/2 en de voordelen ervan op een korte en eenvoudige manier:
 
-[&#x200B; wat u over HTTP/2 &#x200B;](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) moet weten
+[Wat u moet weten over HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Wat zijn de belangrijkste voordelen van de overgang naar HTTP/2 voor de levering van inhoud? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -44,7 +44,8 @@ De eigen tests van Adobe leverden de volgende resultaten op:
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## Mag ik overschakelen op HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
@@ -62,7 +63,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch gedaan voor u.
 
-1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [&#x200B; een steunkaartje &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General&lang=en&support-tab=home#support) openen.
+1. Als u wilt overschakelen op HTTP/2, start u een Adobe Customer Support-aanvraag. Zie [ een steunkaartje ](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support) openen.
 
    1. Geef de volgende informatie op in uw supportverzoek:
 

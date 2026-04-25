@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het proje
 
 ## Architectuur {#architecture}
 
-Voor een gedetailleerde beschrijving, zie de [&#128279;](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de Vervaging van het KUUROORD.
+Voor een gedetailleerde beschrijving, zie de [ ](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sectie PageModelManager van het document van de Vervaging van het KUUROORD.
 
 ## ModelRouter {#modelrouter}
 
@@ -38,11 +38,11 @@ Voor een gedetailleerde beschrijving, zie de [&#128279;](/help/sites-developing/
 
 ## Handmatig versus automatisch model routeren {#manual-vs-automatic-model-routing}
 
-Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. Wanneer nodig `ModelRouter` kan worden onbruikbaar gemaakt of worden gevormd om wegen te negeren gebruikend meta-eigenschappen (zie de sectie van Eigenschappen van Meta van het [&#x200B; document van de Component van de Pagina van het KUUROORD &#x200B;](/help/sites-developing/spa-page-component.md)). Ontwikkelaars aan de voorzijde kunnen vervolgens hun eigen model voor het routeren van lagen implementeren door `PageModelManager` te vragen een bepaald fragment van een model te laden met de functie `getData()` .
+Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zoals elk geautomatiseerd gereedschap ook met beperkingen gepaard gaat. Wanneer nodig `ModelRouter` kan worden onbruikbaar gemaakt of worden gevormd om wegen te negeren gebruikend meta-eigenschappen (zie de sectie van Eigenschappen van Meta van het [ document van de Component van de Pagina van het KUUROORD ](/help/sites-developing/spa-page-component.md)). Ontwikkelaars aan de voorzijde kunnen vervolgens hun eigen model voor het routeren van lagen implementeren door `PageModelManager` te vragen een bepaald fragment van een model te laden met de functie `getData()` .
 
 >[!NOTE]
 >
->Het {[&#128279;](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van Angular het handboek illustreert.  Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
+>Het {](https://github.com/adobe/aem-sample-we-retail-journal) steekproefReageer project van het Dagboek van 0} Wij.Retail illustreert de geautomatiseerde benadering terwijl het project van Angular het handboek illustreert. [Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
 
 >[!CAUTION]
 >

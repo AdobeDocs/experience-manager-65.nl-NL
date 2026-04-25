@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5387'
+source-wordcount: '5533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dit artikel bevat de nieuwste functies van de Rule Editor voor Adaptive Forms Co
 
 Met de functie Regeleditor kunnen zakelijke gebruikers en ontwikkelaars van formulieren regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van de vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
-De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u uitvoert op Adaptief formulierobjecten met Regels zijn:
+De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Enkele belangrijke handelingen die u uitvoert op Adaptief formulier-objecten met Regels zijn:
 
 * Een object tonen of verbergen
 * Een object in- of uitschakelen
@@ -43,11 +43,11 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer,
 
 Een regel volgt doorgaans een van de volgende constructies:
 
-**Voorwaarde-actie** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een handeling om te activeren. De constructie is vergelijkbaar met `if-then statement` die in de programmeertalen.
+**voorwaarde-actie** In deze constructie, bepaalt een regel eerst een voorwaarde die door een actie wordt gevolgd om teweeg te brengen. De constructie is vergelijkbaar met `if-then statement` in de programmeertalen.
 
-In de regeleditor forceert het **type Wanneer-regel** de condition-action-constructie.
+In regelredacteur, **wanneer** regeltype de voorwaarde-actie constructie afdwingt.
 
-**Actie-voorwaarde** In deze constructie definieert een regel eerst een actie die een activering moet activeren, gevolgd door de evaluatievoorwaarden. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
+**actie-Voorwaarde** in deze constructie, bepaalt een regel eerst een actie om te teweegbrengen die door voorwaarden voor evaluatie wordt gevolgd. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
 
 Met de regeltypen Tonen, Verbergen, Inschakelen, Uitschakelen, Waarde instellen en Valideren in de regeleditor kunt u de `action-condition` -regelconstructie afdwingen. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en de tegenovergestelde manier. U kunt de alternatieve standaardhandeling niet wijzigen.
 
@@ -55,11 +55,11 @@ Met de regeltypen Tonen, Verbergen, Inschakelen, Uitschakelen, Waarde instellen 
 >
 >De beschikbare regeltypen, inclusief de voorwaarden en handelingen die u in de regeleditor definieert, zijn ook afhankelijk van het type formulierobject waarop u een regel maakt. In de regeleditor worden alleen geldige regeltypen en opties weergegeven voor het schrijven van voorwaarde- en handelingsinstructies voor een bepaald type formulierobject. U ziet bijvoorbeeld geen typen Valideren en Waarde instellen voor een deelvensterobject.
 
-Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [&#x200B; Beschikbare regeltypes in regelredacteur &#x200B;](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [ Beschikbare regeltypes in regelredacteur ](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 ### Richtlijnen voor het kiezen van een regelconstructie {#guidelines-for-choosing-a-rule-construct}
 
-Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [&#x200B; Beschikbare regeltypes in regelredacteur &#x200B;](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [ Beschikbare regeltypes in regelredacteur ](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
 * Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Bedenk dat u een veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die de voorwaarde retourneert.
 
@@ -95,15 +95,16 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
-De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in regelredacteur, zie [&#x200B; regels &#x200B;](rule-editor.md#p-write-rules-p) schrijven.
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in regelredacteur, zie [ regels ](rule-editor.md#p-write-rules-p) schrijven.
 
 ### [!UICONTROL When] {#whenruletype}
 
-Het **[!UICONTROL When]** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Terwijl het gebruiken van wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [&#x200B; genestelde uitdrukkingen &#x200B;](#nestedexpressions) tot stand te brengen.
+Het **[!UICONTROL When]** regeltype volgt de **voorwaarde-actie-afwisselende actie** regelconstructie, of soms, enkel de **voorwaarde-actie** constructie. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde is voldaan ( `True`). Terwijl het gebruiken van wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [ genestelde uitdrukkingen ](#nestedexpressions) tot stand te brengen.
 
 Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
 
@@ -117,7 +118,7 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Action 2 on Object B;`
 `AND`
-`Action 3 on Object C`
+`Action 3 on Object C`;
 
 `Else, do the following:`
 
@@ -128,11 +129,11 @@ Wanneer u een component met meerdere waarden hebt, zoals keuzerondjes of lijst, 
 
 Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens het creëren van de regel, worden de opties (radioknopen) automatisch teruggewonnen en ter beschikking gesteld van de regelschepper als volgt:
 
-![&#x200B; de multi opties van waardevertoningen &#x200B;](assets/multivaluefcdisplaysoptions.png)
+![ de multi opties van waardevertoningen ](assets/multivaluefcdisplaysoptions.png)
 
 Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. `Clear Value Of` wist de waarde van het opgegeven object. Met `Clear Value of` als optie in de instructie When kunt u complexe voorwaarden maken met meerdere velden. U kunt de instructie Else toevoegen om meer voorwaarden toe te voegen.
 
-![&#x200B; Duidelijke waarde van &#x200B;](assets/clearvalueof.png)
+![ Duidelijke waarde van ](assets/clearvalueof.png)
 
 >[!NOTE]
 >
@@ -158,15 +159,15 @@ Met het regeltype Wanneer kunt u bijvoorbeeld een voorwaarde evalueren voor vers
 
 _
 
-![&#x200B; Toegestane Meerdere gebieden binnen wanneer &#x200B;](/help/forms/using/assets/allowed-multiple-field-when.png)
+![ Toegestane Meerdere gebieden binnen wanneer ](/help/forms/using/assets/allowed-multiple-field-when.png)
 
 
 
 
 ##### Overwegingen bij het gebruik van Meerdere velden toestaan in voorwaardelement
 
-* Zorg ervoor dat de [kerncomponent en de specificatieversie is ingesteld op de nieuwste versie](https://github.com/adobe/aem-core-forms-components/tree/release/650) om deze functie in de regeleditor te kunnen gebruiken.
-* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van die velden wordt gewijzigd.
+* Zorg ervoor dat de [ kerncomponent en specificatieversie aan de recentste versie ](https://github.com/adobe/aem-core-forms-components/tree/release/650) wordt geplaatst om deze eigenschap in de regelredacteur te gebruiken.
+* Als regels worden toegepast op verschillende velden binnen de voorwaarde Wanneer, wordt de regel geactiveerd, zelfs als slechts een van deze velden wordt gewijzigd.
 
 
 <!--
@@ -184,13 +185,14 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39;Wanneer&#39;, volgt u de stappen voor het oplossen van problemen als:
 
 1. Open het formulier in de bewerkingsmodus.
 1. Open de browser Inhoud en selecteer de component **[!UICONTROL Guide Container]** van het adaptieve formulier.
-1. Klik de eigenschappen van de Container van de Gids ![&#x200B; eigenschappen van de Gids &#x200B;](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
+1. Klik de eigenschappen van de Container van de Gids ![ eigenschappen van de Gids ](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer wordt geopend.
 1. Klik op Gereed en sla het dialoogvenster opnieuw op.
 
 **[!UICONTROL Hide]** Verbergt het opgegeven object.
@@ -205,11 +207,11 @@ Als er problemen optreden in de toegestane meerdere velden in de voorwaarde &#39
 
 Naast de service Formuliergegevensmodel kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Nochtans, heeft de modeldienst van de Gegevens van het Vorm vele voordelen en de geadviseerde benadering om de dienst aan te halen.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens ](data-integration.md).[[!DNL Experience Manager Forms] 
 
 **[!UICONTROL Set value of]** Berekent en stelt de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde service Formuliergegevensmodel. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in het gehele FDM-formuliergegevensmodel zijn geconfigureerd op uw [!DNL Experience Manager] -instantie. Als u een service Formuliergegevensmodel kiest, worden meer velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens [&#128279;](data-integration.md).[!DNL Experience Manager Forms] 
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens (FDM), zie {de Integratie van 0} Gegevens ](data-integration.md).[[!DNL Experience Manager Forms] 
 
 Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie. U kunt eigenschap instellen op een van de volgende opties:
 * visible (Boolean)
@@ -228,7 +230,7 @@ Met het regeltype **[!UICONTROL Set Property]** kunt u de waarde van een eigensc
 
 U kunt bijvoorbeeld regels definiëren om het tekstvak weer te geven wanneer op een knop wordt geklikt. U kunt een regel definiëren met behulp van een aangepaste functie, een formulierobject, objecteigenschap of een service-uitvoer.
 
-![&#x200B; plaats Bezit &#x200B;](assets/set_property_rule_new.png)
+![ plaats Bezit ](assets/set_property_rule_new.png)
 
 Als u een regel wilt definiëren die is gebaseerd op een aangepaste functie, selecteert u **[!UICONTROL Function Output]** in de vervolgkeuzelijst en sleept u een aangepaste functie naar het tabblad **[!UICONTROL Functions]** . Als aan de voorwaarde wordt voldaan, wordt het tekstinvoervak weergegeven.
 
@@ -238,7 +240,7 @@ Met de regel Eigenschap instellen die is gebaseerd op een objecteigenschap kunt 
 
 De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het selectievakje op basis van het verbergen of weergeven van een tekstvak in een adaptieve vorm:
 
-![&#x200B; Bezit van Objecten &#x200B;](assets/object_property_set_property_new.png)
+![ Bezit van Objecten ](assets/object_property_set_property_new.png)
 
 **[!UICONTROL Clear Value Of]** Wist de waarde van het opgegeven object.
 
@@ -256,7 +258,9 @@ De volgende afbeelding toont een voorbeeld van het dynamisch inschakelen van het
 
 **[!UICONTROL Function Output]** Definieert een regel op basis van vooraf gedefinieerde functies of aangepaste functies.
 
-**[!UICONTROL Navigate to]** Navigeert naar andere <!--Interactive Communications,--> Adaptieve Forms, andere elementen, zoals afbeeldingen of documentfragmenten, of een externe URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navigate to]** Navigeert naar andere Adaptieve Forms, andere elementen, zoals afbeeldingen of documentfragmenten, of een externe URL.
+<!--Interactive Communications,-->
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Dispatch Event]** Triggert de specifieke acties of gedragingen op basis van vooraf gedefinieerde voorwaarden of gebeurtenissen.
 
@@ -277,19 +281,19 @@ Stel de waarde van Object A in op:
 
 Indien (optioneel):
 
-(Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
+(Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
-In het volgende voorbeeld wordt de waarde van `Question2` as `True` geselecteerd en wordt de waarde van `Result` as ingesteld.`correct`
+In het volgende voorbeeld wordt de waarde `Question2` as `True` geselecteerd en wordt de waarde `Result` ingesteld als `correct` .
 
-![Webservice instellen](assets/set-value-web-service.png)
+![ reeks-waarde-web-dienst ](assets/set-value-web-service.png)
 
-Voorbeeld van Waarderegel instellen met de service Formuliergegevensmodel.
+Voorbeeld van waardenregel instellen met de service Formuliergegevensmodel.
 
 ### [!UICONTROL Show] {#show}
 
-Met het **[!UICONTROL Show]** type regel kunt u een regel schrijven om een formulierobject te tonen of te verbergen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het type Regel weergeven activeert ook de handeling Verbergen wanneer niet aan de voorwaarde wordt voldaan of wordt geretourneerd `False`.
+Met het regeltype **[!UICONTROL Show]** kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of als `False` wordt geretourneerd.
 
-Een typische show-regel is als volgt gestructureerd:
+Een typische Show regel is gestructureerd als volgt:
 
 `Show Object A;`
 
@@ -365,7 +369,7 @@ Een typisch Validate regel is gestructureerd als volgt:
 >
 >Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht in het veld **[!UICONTROL Script validation message]** opgeven in de componenteigenschappen op de zijbalk.
 
-![&#x200B; manuscript-bevestiging &#x200B;](assets/script-validation.png)
+![ manuscript-bevestiging ](assets/script-validation.png)
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -385,7 +389,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Het begrip van de regel redacteur gebruikersinterface {#understanding-the-rule-editor-user-interface}
 
@@ -394,15 +399,15 @@ De redacteur van de regel verstrekt een uitvoerige maar eenvoudige gebruikersint
 Om het gebruikersinterface van de regelredacteur te lanceren:
 
 1. Open een adaptief formulier in de ontwerpmodus.
-1. Selecteer het vormvoorwerp waarvoor u een regel wilt schrijven, en in Toolbar van de Component selecteren ![&#x200B; geef-regels &#x200B;](assets/edit-rules-icon.svg) uit. De gebruikersinterface van de regeleditor wordt weergegeven.
+1. Selecteer het vormvoorwerp waarvoor u een regel wilt schrijven, en in Toolbar van de Component selecteren ![ geef-regels ](assets/edit-rules-icon.svg) uit. De gebruikersinterface van de regeleditor wordt weergegeven.
 
-   ![&#x200B; creeer-regels &#x200B;](assets/create-rules.png)
+   ![ creeer-regels ](assets/create-rules.png)
 
-   Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Voor informatie over het beheren van bestaande regels, zie [&#x200B; regels &#x200B;](rule-editor.md#p-manage-rules-p) leiden.
+   Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Voor informatie over het beheren van bestaande regels, zie [ regels ](rule-editor.md#p-manage-rules-p) leiden.
 
 1. Selecteer **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
 
-   ![&#x200B; de Redacteur UI van de Regel &#x200B;](assets/rule-editor-ui.png)
+   ![ de Redacteur UI van de Regel ](assets/rule-editor-ui.png)
 
 Laten wij elke component van de regelredacteur UI in detail bekijken.
 
@@ -422,13 +427,13 @@ Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of me
 
 Enkele lijst van functies wordt getoond in het cijfer:
 
-![&#x200B; het lusje van Functies &#x200B;](assets/functions.png)
+![ het lusje van Functies ](assets/functions.png)
 
 >[!NOTE]
 >
 >U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Objecten en Functies van Forms.
 
-In de linkerstructuur van de formulierobjecten kunt u de formulierobjecten selecteren om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Voor meer informatie, zie [&#x200B; kopiëren-kleeft regels &#x200B;](rule-editor.md#p-copy-paste-rules-p).
+In de linkerstructuur van de formulierobjecten kunt u de formulierobjecten selecteren om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Voor meer informatie, zie [ kopiëren-kleeft regels ](rule-editor.md#p-copy-paste-rules-p).
 
 ### C. Schakelen tussen formulierobjecten en -functies {#c-form-objects-and-functions-toggle-br}
 
@@ -438,7 +443,7 @@ Met de schakelknop schakelt u, wanneer hierop wordt getikt, de formulierobjecten
 
 De visuele regelredacteur is het gebied op de visuele redacteurswijze van het gebruikersinterface van de regelredacteur waar u regels schrijft. Hiermee kunt u een regeltype selecteren en voorwaarden en handelingen definiëren. Wanneer u voorwaarden en handelingen in een regel definieert, kunt u formulierobjecten en -functies slepen en neerzetten vanuit het deelvenster Formulierobjecten en -functies.
 
-Voor meer informatie over het gebruiken van visuele regelredacteur, zie [&#x200B; regels &#x200B;](rule-editor.md#p-write-rules-p) schrijven.
+Voor meer informatie over het gebruiken van visuele regelredacteur, zie [ regels ](rule-editor.md#p-write-rules-p) schrijven.
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -455,7 +460,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Gereed en annuleer knoppen {#done-and-cancel-buttons}
 
-Met de knop **[!UICONTROL Done]** kunt u een regel opslaan. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Voor meer informatie, zie [&#x200B; regels &#x200B;](rule-editor.md#p-manage-rules-p) leiden.
+Met de knop **[!UICONTROL Done]** kunt u een regel opslaan. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Voor meer informatie, zie [ regels ](rule-editor.md#p-manage-rules-p) leiden.
 
 Met de knop **[!UICONTROL Cancel]** verwijdert u alle wijzigingen die u in een regel hebt aangebracht en sluit u de regeleditor.
 
@@ -469,20 +474,20 @@ Laten we eerst bekijken hoe u regels schrijft met een visuele editor.
 
 Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van het volgende voorbeeldformulier.
 
-![&#x200B; creëren-regel-voorbeeld &#x200B;](assets/create-rule-example.png)
+![ creëren-regel-voorbeeld ](assets/create-rule-example.png)
 
-De sectie Vereisten voor leningen in het voorbeeldformulier voor het aanvraagformulier van een lening vereist dat aanvragers hun burgerlijke staat en salaris opgeven en, indien getrouwd, het salaris van hun echtgenoot. Op basis van de invoer van de gebruiker wordt in de regel het bedrag berekend dat in aanmerking komt voor een lening en wordt dit weergegeven in het veld In aanmerking komende lening. Pas de volgende regels toe om het scenario te implementeren:
+In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het aanvragen van leningen moeten aanvragers hun echtelijke staat, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
 
-* Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de burgerlijke staat getrouwd is.
+* Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
 
 Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **[!UICONTROL Marital Status]** component en selecteer ![&#x200B; geef-regels &#x200B;](assets/edit-rules-icon.svg) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Selecteer de **[!UICONTROL Marital Status]** component en selecteer ![ geef-regels ](assets/edit-rules-icon.svg) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
-   ![&#x200B; schrijven-rules-visual-editor-1 &#x200B;](assets/write-rules-visual-editor-1-cc.png)
+   ![ schrijven-rules-visual-editor-1 ](assets/write-rules-visual-editor-1-cc.png)
 
    Wanneer u de regelredacteur lanceert, wanneer de regel door gebrek wordt geselecteerd. Bovendien wordt het formulierobject (in dit geval de huwelijksstatus) waaruit u de regeleditor hebt gestart, opgegeven in de instructie When.
 
@@ -490,40 +495,42 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Selecteer **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]** . Het veld **[!UICONTROL Enter a String]** wordt weergegeven.
 
-   ![&#x200B; schrijven-rules-visual-editor-2 &#x200B;](assets/write-rules-visual-editor-2-cc.png)
+   ![ schrijven-rules-visual-editor-2 ](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+   -->
 
 1. Op het **[!UICONTROL Enter a String]** gebied in de regel, uitgezocht **Gehuwd** van drop-down menu.
 
-   ![&#x200B; schrijven-rules-visual-editor-4 &#x200B;](assets/write-rules-visual-editor-4-cc.png)
+   ![ schrijven-rules-visual-editor-4 ](assets/write-rules-visual-editor-4-cc.png)
 
    U hebt de voorwaarde gedefinieerd als `When Marital Status is equal to Married` . Definieer vervolgens de actie die moet worden uitgevoerd als deze voorwaarde Waar is.
 
 1. Selecteer in de instructie Vervolgens **[!UICONTROL Show]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** .
 
-   ![&#x200B; schrijven-rules-visual-editor-5 &#x200B;](assets/write-rules-visual-editor-5-cc.png)
+   ![ schrijven-rules-visual-editor-5 ](assets/write-rules-visual-editor-5-cc.png)
 
 1. Sleep het veld **[!UICONTROL Spouse Salary]** naar het tabblad Formulierobjecten in het veld **[!UICONTROL Drop object or select here]** . U kunt ook het veld **[!UICONTROL Drop object or select here]** selecteren en het veld **[!UICONTROL Spouse Salary]** in het pop-upmenu selecteren, waarin alle formulierobjecten in het formulier worden vermeld.
 
-   ![&#x200B; schrijven-rules-visual-editor-6 &#x200B;](assets/write-rules-visual-editor-6-cc.png)
+   ![ schrijven-rules-visual-editor-6 ](assets/write-rules-visual-editor-6-cc.png)
 
    Definieer vervolgens de handeling die moet worden uitgevoerd als deze voorwaarde false is.
 1. Klik op **[!UICONTROL Add Else Section]** om een andere voorwaarde voor het veld **[!UICONTROL Spouse Salary]** toe te voegen, voor het geval u de staat van het huwelijk als één voorwaarde selecteert.
 
-   ![&#x200B; wanneer-anders &#x200B;](assets/when-else.png)
+   ![ wanneer-anders ](assets/when-else.png)
 
 1. Selecteer in de instructie else **[!UICONTROL Hide]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** .
-   ![&#x200B; wanneer-anders &#x200B;](assets/when-else-1.png)
+   ![ wanneer-anders ](assets/when-else-1.png)
 
 1. Sleep het veld **[!UICONTROL Spouse Salary]** naar het tabblad Formulierobjecten in het veld **[!UICONTROL Drop object or select here]** . U kunt ook het veld **[!UICONTROL Drop object or select here]** selecteren en het veld **[!UICONTROL Spouse Salary]** in het pop-upmenu selecteren, waarin alle formulierobjecten in het formulier worden vermeld.
-   ![&#x200B; wanneer-anders &#x200B;](assets/when-else-2.png)
+   ![ wanneer-anders ](assets/when-else-2.png)
 
    De regel wordt als volgt weergegeven in de regeleditor.
 
-   ![&#x200B; schrijven-rules-visual-editor-7 &#x200B;](assets/write-rules-visual-editor-7-cc.png)
+   ![ schrijven-rules-visual-editor-7 ](assets/write-rules-visual-editor-7-cc.png)
 
 
 
@@ -532,25 +539,26 @@ Voer de volgende stappen uit om regels te schrijven:
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
 > Alternatief, kunt u een Show regel op het gebied van de Salaris van de Echtgenote, in plaats van een wanneer regels op het gebied van de Burgerlijke Status, schrijven om het zelfde gedrag uit te voeren.
 
-![&#x200B; schrijven-rules-visual-editor-9 &#x200B;](assets/write-rules-visual-editor-9-cc.png)
+![ schrijven-rules-visual-editor-9 ](assets/write-rules-visual-editor-9-cc.png)
 
 1. Vervolgens schrijft u een regel om het beleenbare bedrag van de lening te berekenen, dat 50% van het totale salaris is, en geeft u dit weer in het veld Beleenbaarheid van de lening. U bereikt dit resultaat door **[!UICONTROL Set value Of]** regels te maken voor het veld Beleenbaarheid van leningen.
 
-   Op auteurswijze, selecteer het **[!UICONTROL Loan Eligibility]** gebied en selecteer ![&#x200B; geef-regels &#x200B;](assets/edit-rules-icon.svg) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
+   Op auteurswijze, selecteer het **[!UICONTROL Loan Eligibility]** gebied en selecteer ![ geef-regels ](assets/edit-rules-icon.svg) uit. Selecteer vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
 1. Selecteer **[!UICONTROL Set Value Of]** regel in de vervolgkeuzelijst met regels.
 
-   ![&#x200B; schrijven-rules-visual-editor-10 &#x200B;](assets/write-rules-visual-editor-10-cc.png)
+   ![ schrijven-rules-visual-editor-10 ](assets/write-rules-visual-editor-10-cc.png)
 
 1. Selecteer **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]** . Er wordt een veld voor het schrijven van wiskundige expressies geopend.
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-11 &#x200B;](assets/write-rules-visual-editor-11-cc.png)
+   ![ schrijven-regels-visueel-redacteur-11 ](assets/write-rules-visual-editor-11-cc.png)
 
 1. In het expressieveld:
 
@@ -560,15 +568,15 @@ Voer de volgende stappen uit om regels te schrijven:
 
    * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **[!UICONTROL Spouse Salary]** gebied in het andere **[!UICONTROL Drop object or select here]** gebied.
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-12 &#x200B;](assets/write-rules-visual-editor-12.png)
+   ![ schrijven-regels-visueel-redacteur-12 ](assets/write-rules-visual-editor-12.png)
 
 1. Selecteer vervolgens in het gemarkeerde gebied rond het expressieveld en selecteer **[!UICONTROL Extend Expression]** .
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-13 &#x200B;](assets/write-rules-visual-editor-13-cc.png)
+   ![ schrijven-regels-visueel-redacteur-13 ](assets/write-rules-visual-editor-13-cc.png)
 
    Selecteer in het veld Uitgebreide expressie **[!UICONTROL divided by]** in het **[!UICONTROL Select Operator]** veld en **[!UICONTROL Number]** in het **[!UICONTROL Select Option]** veld. Geef vervolgens **[!UICONTROL 2]** op in het nummerveld.
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-14 &#x200B;](assets/write-rules-visual-editor-14-cc.png)
+   ![ schrijven-regels-visueel-redacteur-14 ](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
@@ -578,7 +586,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Selecteer **[!UICONTROL Add Condition]** om de instructie When toe te voegen.
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-15 &#x200B;](assets/write-rules-visual-editor-15-cc.png)
+   ![ schrijven-regels-visueel-redacteur-15 ](assets/write-rules-visual-editor-15-cc.png)
 
    In de instructie When:
 
@@ -586,30 +594,31 @@ Voer de volgende stappen uit om regels te schrijven:
 
    * Selecteer **[!UICONTROL is equal to]** in het veld **[!UICONTROL Select Operator]** .
 
-   * Selecteer Tekenreeks in het andere **[!UICONTROL Drop object or select here]** veld en geef **[!UICONTROL Married]** het op in het **[!UICONTROL Enter a String]** veld.
+   * Selecteer String in het andere veld **[!UICONTROL Drop object or select here]** en geef **[!UICONTROL Married]** op in het veld **[!UICONTROL Enter a String]** .
 
-   De regel wordt tenslotte als volgt weergegeven in de regeleditor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
+   De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![ schrijven-regels-visueel-redacteur-16 ](assets/write-rules-visual-editor-16-cc.png)
 
-1. Selecteer **[!UICONTROL Done]**. De regel wordt opgeslagen.
+1. Selecteer **[!UICONTROL Done]** . Het bespaart de regel.
 
 1. Herhaal stap 7 tot en met 14 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
-   ![&#x200B; schrijven-regels-visueel-redacteur-17 &#x200B;](assets/write-rules-visual-editor-17-cc.png)
+   ![ schrijven-regels-visueel-redacteur-17 ](assets/write-rules-visual-editor-17-cc.png)
 
 U kunt ook de regel Waarde instellen van gebruiken om de beleenbaarheid van leningen te berekenen in de regel When die u hebt gemaakt om het veld Salaris van de echtgenoot weer te geven en te verbergen. De resulterende gecombineerde regel wanneer de Status van het Samenhang Enige is verschijnt als volgt in de regelredacteur.
 
-![&#x200B; schrijven-regels-visueel-redacteur-18 &#x200B;](assets/write-rules-visual-editor-18-cc.png)
+![ schrijven-regels-visueel-redacteur-18 ](assets/write-rules-visual-editor-18-cc.png)
 
 U kunt een gecombineerde regel schrijven om de zichtbaarheid van het veld Echtgenloon te bepalen en de beleenbaarheid van de lening berekenen wanneer de huwelijkse staat wordt gehuwd met behulp van de Else voorwaarde.
 
-![&#x200B; schrijven-regels-visueel-redacteur-19 &#x200B;](assets/write-rules-visual-editor-19-cc.png)
+![ schrijven-regels-visueel-redacteur-19 ](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/nl/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -628,7 +637,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Aangepaste functies in regeleditor {#custom-functions}
 
-Naast de uit-van-de-doos functies als *Som van* die onder **Uitvoer van Functies** vermeld zijn, kunt u douanefuncties in uw regelredacteur ook gebruiken. De redacteur van de regel steunt de syntaxis van JavaScript ECMAScript 2019 voor manuscripten en douanefuncties. Voor instructies bij het creëren van douanefuncties, verwijs naar de artikel [&#x200B; Functies van de Douane in Aanpassings Forms &#x200B;](/help/forms/using/create-and-use-custom-functions-core-components.md)
+Naast de uit-van-de-doos functies als *Som van* die onder **Uitvoer van Functies** vermeld zijn, kunt u douanefuncties in uw regelredacteur ook gebruiken. De redacteur van de regel steunt de syntaxis van JavaScript ECMAScript 2019 voor manuscripten en douanefuncties. Voor instructies bij het creëren van douanefuncties, verwijs naar de artikel [ Functies van de Douane in Aanpassings Forms ](/help/forms/using/create-and-use-custom-functions-core-components.md)
 
 <!--
 
@@ -711,7 +720,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=nl-NL#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -805,16 +814,16 @@ var c = {
 
 ## Regels beheren {#manage-rules}
 
-Om het even welke bestaande regels op een vormvoorwerp zijn vermeld wanneer u het voorwerp selecteert en ![&#x200B; uitgezocht geef-rules1 &#x200B;](assets/edit-rules-icon.svg). U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts laat UI u de volledige regelsamenvatting uitbreiden en bekijken, de orde van regels veranderen, regels uitgeven, en regels schrappen.
+Om het even welke bestaande regels op een vormvoorwerp zijn vermeld wanneer u het voorwerp selecteert en ![ uitgezocht geef-rules1 ](assets/edit-rules-icon.svg). U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts laat UI u de volledige regelsamenvatting uitbreiden en bekijken, de orde van regels veranderen, regels uitgeven, en regels schrappen.
 
-![&#x200B; lijst-lijnen &#x200B;](assets/list-rules-cc.png)
+![ lijst-lijnen ](assets/list-rules-cc.png)
 
 U kunt de volgende handelingen op regels uitvoeren:
 
-* **breid/Vouw** samen: De kolom van de Inhoud in de regellijst toont de regelinhoud. Als de volledige regelinhoud niet zichtbaar in de standaardmening is, uitgezocht ![&#x200B; groter-regel-inhoud &#x200B;](assets/Smock_ChevronDown.svg) om het uit te breiden.
+* **breid/Vouw** samen: De kolom van de Inhoud in de regellijst toont de regelinhoud. Als de volledige regelinhoud niet zichtbaar in de standaardmening is, uitgezocht ![ groter-regel-inhoud ](assets/Smock_ChevronDown.svg) om het uit te breiden.
 
 * **opnieuw rangschikt**: Om het even welke nieuwe regel u creeert wordt gestapeld bij de bodem van de regellijst. De regels worden van boven naar beneden uitgevoerd. De regel bij de bovenkant voert eerst gevolgd door andere regels van het zelfde type uit. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
-U kunt de orde van een regel veranderen door ![&#x200B; soort-regels &#x200B;](assets/sort-rules.svg) tegen het te tikken of belemmering-daling het aan de gewenste orde in de lijst.
+U kunt de orde van een regel veranderen door ![ soort-regels ](assets/sort-rules.svg) tegen het te tikken of belemmering-daling het aan de gewenste orde in de lijst.
 
 * **geeft** uit: Om een regel uit te geven, selecteer het controlevakje naast de regeltitel. Er worden opties weergegeven voor het bewerken en verwijderen van de regel. Selecteer **[!UICONTROL Edit]** om de geselecteerde regel te openen in de regeleditor <!-- in visual  or code editor mode depending on the mode used to create the rule --> .
 
@@ -822,7 +831,7 @@ U kunt de orde van een regel veranderen door ![&#x200B; soort-regels &#x200B;](a
 
 * **toelaten/onbruikbaar maken**: Wanneer u gebruik van een regel tijdelijk moet onderbreken, kunt u één of meerdere regels selecteren en **[!UICONTROL Disable]** in de toolbar van Acties selecteren om hen onbruikbaar te maken. Als een regel is uitgeschakeld, wordt deze niet uitgevoerd tijdens de runtime. Als u een uitgeschakelde regel wilt inschakelen, selecteert u deze en selecteert u Inschakelen op de werkbalk Handelingen. De statuskolom van de regel geeft aan of de regel is ingeschakeld of uitgeschakeld.
 
-![&#x200B; maak regel &#x200B;](assets/disablerule-cc.png) onbruikbaar
+![ maak regel ](assets/disablerule-cc.png) onbruikbaar
 
 ## Regels kopiëren en plakken {#copy-paste-rules}
 
@@ -830,15 +839,15 @@ U kunt een regel kopiëren-kleven van één gebied aan andere gelijkaardige gebi
 
 Ga als volgt te werk om regels te kopiëren en te plakken:
 
-1. Selecteer het vormvoorwerp waarvan u een regel wilt kopiëren, en in de componententoolbar uitgezocht ![&#x200B; geef regel &#x200B;](assets/edit-rules-icon.svg) uit. De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
+1. Selecteer het vormvoorwerp waarvan u een regel wilt kopiëren, en in de componententoolbar uitgezocht ![ geef regel ](assets/edit-rules-icon.svg) uit. De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
 
-   ![&#x200B; exemplaarregel &#x200B;](assets/copyrule.png)
+   ![ exemplaarregel ](assets/copyrule.png)
 
-   Voor informatie over het beheren van bestaande regels, zie [&#x200B; regels &#x200B;](rule-editor.md#p-manage-rules-p) leiden.
+   Voor informatie over het beheren van bestaande regels, zie [ regels ](rule-editor.md#p-manage-rules-p) leiden.
 
 1. Schakel het selectievakje naast de titel van de regel in. Er worden opties voor het beheer van de regel weergegeven. Selecteer **[!UICONTROL Copy]** .
 
-   ![&#x200B; copyrule2 &#x200B;](assets/copyrule2.png)
+   ![ copyrule2 ](assets/copyrule2.png)
 
 1. Selecteer een ander formulierobject waarop u de regel wilt plakken en selecteer **[!UICONTROL Paste]** . Bovendien kunt u de regel bewerken om er wijzigingen in aan te brengen.
 
@@ -854,11 +863,11 @@ De redacteur van de regel laat u veelvoudige EN en OF exploitanten gebruiken om 
 
 Hieronder ziet u een voorbeeld van een geneste regel die een bericht weergeeft aan de gebruiker dat hij of zij in aanmerking komt voor de voogdij van een kind als aan de vereiste voorwaarden is voldaan.
 
-![&#x200B; Complexe uitdrukking &#x200B;](assets/complexexpression.png)
+![ Complexe uitdrukking ](assets/complexexpression.png)
 
-U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Selecteer en beweegt over het handvat ( ![&#x200B; handvat &#x200B;](assets/drag-handle.svg)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
+U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Selecteer en beweegt over het handvat ( ![ handvat ](assets/drag-handle.svg)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
 
-![&#x200B; belemmering-en-daling &#x200B;](assets/drag-and-drop.png)
+![ belemmering-en-daling ](assets/drag-and-drop.png)
 
 ## Datumexpressievoorwaarden {#dateexpression}
 
@@ -868,29 +877,31 @@ Na is een voorbeeldvoorwaarde die een statisch tekstvoorwerp toont als de hypoth
 
 Wanneer de hypotheekdatum van het onroerend goed, zoals door de gebruiker ingevuld, in het verleden ligt, geeft het Adaptief formulier een toelichting op de berekening van het inkomen. In de volgende regel wordt de datum die door de gebruiker is ingevuld, vergeleken met de huidige datum en als de datum die door de gebruiker is ingevuld eerder is dan de huidige datum, wordt in het formulier het tekstbericht (Income genoemd) weergegeven.
 
-![&#x200B; de uitdrukkingsvoorwaarde van de Datum &#x200B;](assets/dateexpressioncondition.png)
+![ de uitdrukkingsvoorwaarde van de Datum ](assets/dateexpressioncondition.png)
 
 Wanneer de datum waarop deze is ingevuld, eerder is dan de huidige datum, wordt het tekstbericht (Inkomsten) als volgt weergegeven:
 
-![&#x200B; Voldoet de uitdrukkingsvoorwaarde van de Datum &#x200B;](assets/dateexpressionconditionmet.png)
+![ Voldoet de uitdrukkingsvoorwaarde van de Datum ](assets/dateexpressionconditionmet.png)
 
 ## Aantal vergelijkingsvoorwaarden {#number-comparison-conditions}
 
-Met de Regeleditor kunt u voorwaarden maken waarin twee getallen met elkaar worden vergeleken.
+De redacteur van de regel laat u voorwaarden tot stand brengen die twee aantallen vergelijken.
 
-Hier volgt een voorbeeldvoorwaarde die een statisch tekstobject weergeeft als het aantal maanden dat de aanvrager op het huidige adres verblijft, minder dan 36 is.
+Na is een voorbeeldvoorwaarde die een statisch tekstvoorwerp toont als het aantal maanden een aanvrager op huidige adres minder dan 36 blijft.
 
-![Nummervergelijkingsvoorwaarde](assets/numbercomparisoncondition.png)
+![ de vergelijkingsvoorwaarde van het Aantal ](assets/numbercomparisoncondition.png)
 
-Wanneer de gebruiker tekent voor minder dan 36 maanden op dit woonadres te wonen, toont het formulier een melding dat meer bewijs van verblijf kan worden aangevraagd.
+Wanneer de gebruiker aangeeft minder dan 36 maanden op het huidige woonadres te wonen, wordt in het formulier gemeld dat meer bewijs van verblijf kan worden aangevraagd.
 
-![&#x200B; Meer gevraagde proef &#x200B;](assets/additionalproofrequested.png)
+![ Meer gevraagde proef ](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Voorbeelden van regels {#example}
 
@@ -900,7 +911,7 @@ Bekijk een webservice `GetInterestRates` die het bedrag van de lening, de loopti
 
 De volgende regel toont hoe u de Invoke de dienstactie vormt om het voorbeeldscenario te verwezenlijken.
 
-![&#x200B; voorbeeld-invoke-services &#x200B;](assets/example-invoke-services.png)
+![ voorbeeld-invoke-services ](assets/example-invoke-services.png)
 
 >[!NOTE]
 >
@@ -916,17 +927,19 @@ In een aanvraagformulier voor een lening wilt u vastleggen of de aanvrager van d
 
 Wanneer u wanneer regel op het radioknoop schrijft om dit gedrag uit te voeren, verschijnt de regel als volgt in de visuele regelredacteur.
 
-![&#x200B; wanneer-regel-voorbeeld &#x200B;](assets/when-rule-example.png)
+![ wanneer-regel-voorbeeld ](assets/when-rule-example.png)
 
 Regel in de visuele editor
 
 In de voorbeeldregel, is de verklaring in wanneer sectie de voorwaarde is, die wanneer Waar terugkeert, de acties uitvoert die in de Dan sectie worden gespecificeerd.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Een functie-uitvoer in een regel gebruiken {#using-a-function-output-in-a-rule}
 
@@ -936,31 +949,35 @@ In een inkooporderformulier hebt u de volgende tabel waarin gebruikers hun beste
 * De titel van de cel in de kolom Product Quantity van de herhaalbare rij is Quantity. De elementnaam voor deze cel is `productquantity` .
 * De tweede rij in de tabel is niet-herhaalbaar en de titel van de cel in de kolom Hoeveelheid product in deze rij is Totale hoeveelheid.
 
-![&#x200B; voorbeeld-functie-lijst &#x200B;](assets/example-function-table.png)
+![ voorbeeld-functie-lijst ](assets/example-function-table.png)
 
 **A.** Row1 **B.** Hoeveelheid **C.** Totale Hoeveelheid
 
 Nu, wilt u gespecificeerde hoeveelheden in de kolom van de Hoeveelheid van het Product voor alle producten toevoegen en de som in de Totale cel van de Hoeveelheid tonen. U kunt deze som bereiken door een Set Waarde van regel op de Totale cel van de Hoeveelheid te schrijven zoals hieronder getoond.
 
-![&#x200B; voorbeeld-functie-output &#x200B;](assets/example-function-output.png)
+![ voorbeeld-functie-output ](assets/example-function-output.png)
 
 Regel in de visuele editor
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Een veldwaarde valideren met expressie {#validating-a-field-value-using-expression}
 
 In het inkooporderformulier dat in het vorige voorbeeld wordt beschreven, wilt u de gebruiker beperken om meer dan één hoeveelheid van een product te bestellen waarvan de prijs hoger is dan 10000. Voor deze validatie kunt u een validatieregel schrijven, zoals hieronder wordt weergegeven.
 
-![&#x200B; voorbeeld-validate &#x200B;](assets/example-validate.png)
+![ voorbeeld-validate](assets/example-validate.png)
 Regel in de visuele editor
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

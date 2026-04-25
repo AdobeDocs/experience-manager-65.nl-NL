@@ -7,10 +7,10 @@ role: User
 hide: true
 exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->De [&#x200B; selecteur van Activa &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL) werd genoemd [&#x200B; plukker van Activa &#x200B;](https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Experience Manager].
+>De [ selecteur van Activa ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) werd genoemd [ plukker van Activa ](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in vroegere versies van [!DNL Experience Manager].
 
 Met de elementkiezer kunt u in [!DNL Adobe Experience Manager] Assets door elementen bladeren, zoeken en filteren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 
 Momenteel, kunt u de verzoekparameters `assettype` (*Beeld/Video/Tekst*) en selectie `mode` (*Enige/Veelvoudige*) als contextuele informatie voor de activaselecteur overgaan, die door de selectie intact blijft.
 
-De activaselecteur gebruikt het HTML5 **&#x200B;**&#x200B;bericht Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden.
+De activaselecteur gebruikt het **bericht van HTML5** Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden.
 
 De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren. U kunt echter filters toepassen met behulp van de ervaring van Omngonderzoek om uw zoekopdracht naar bepaalde elementen te verfijnen.
 
@@ -49,18 +49,18 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 1. Ga naar `https://[AEM_server]:[port]/aem/assetpicker` als u de interface van de elementenkiezer wilt openen.
 1. Navigeer naar de gewenste map en selecteer een of meer elementen.
 
-   ![&#x200B; chlimage_1-441 &#x200B;](assets/chlimage_1-441.png)
+   ![ chlimage_1-441 ](assets/chlimage_1-441.png)
 
    U kunt ook naar het gewenste element zoeken in het vak Universeel zoeken en het vervolgens selecteren.
 
-   ![&#x200B; chlimage_1-442 &#x200B;](assets/chlimage_1-442.png)
+   ![ chlimage_1-442 ](assets/chlimage_1-442.png)
 
    Als u via het vak UniverseelZoeken naar elementen zoekt, kunt u verschillende filters in het deelvenster **[!UICONTROL Filters]** selecteren om de zoekopdracht te verfijnen.
 
-   ![&#x200B; chlimage_1-443 &#x200B;](assets/chlimage_1-443.png)
+   ![ chlimage_1-443 ](assets/chlimage_1-443.png)
 
 1. Klik op **[!UICONTROL Select]** op de werkbalk.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Micro-Frontend de Selector van Activa in AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=nl-NL)
+>* [ Micro-Frontend de Selector van Activa in AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

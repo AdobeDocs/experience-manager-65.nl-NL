@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >De standaardmodelkiezer wordt statisch ingesteld bij het aanvragen van de representatie van een component in het verkoopmodel.
 
-## Eigenschappen van meta {#meta-properties}
+## Meta-eigenschappen {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
 * `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. Vervolgens stelt ` [PageModelManager](/help/sites-developing/spa-page-component.md)` het oorspronkelijke toepassingsmodel systematisch opnieuw samen als het invoeren van de toepassing vanaf het hoofdinvoerpunt.
@@ -92,7 +92,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
+>Om het even welk project van AEM zou het [ Archetype van het Project van AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden moeten worden gebaseerd op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 

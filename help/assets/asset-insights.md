@@ -1,16 +1,16 @@
 ---
 title: Assets Insights
-description: Leer hoe u met de functie Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe.
+description: Leer hoe u met de functie Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve Adobe-oplossingen.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 2%
+source-wordcount: '760'
+ht-degree: 0%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 2%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=nl-NL) |
-| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
+| AEM 6.5 | Dit artikel |
 
-Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van de Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
+Met de functie Assets Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve Adobe-oplossingen. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
 
 [!DNL Assets] Met deze inzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
 Als u met [!DNL Assets] inzichten gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Om Assets Insights gebruiksstatistieken voor activa te laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens uit Adobe Analytics. Voor details, zie [&#x200B; de Inzichten van Assets &#x200B;](/help/assets/configure-asset-insights.md) vormen. Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [&#x200B; Managed Services productbeschrijving &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om Assets Insights gebruiksstatistieken voor activa te laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens uit Adobe Analytics. Voor details, zie [ de Inzichten van Assets ](/help/assets/configure-asset-insights.md) vormen. Als u deze functie in een on-premise installatie wilt gebruiken, moet u de [!DNL Adobe Analytics] -licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen een [!DNL Analytics] -licentie die is gebundeld met [!DNL Experience Manager] . Zie [ Managed Services productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -49,26 +49,26 @@ U kunt de Assets Insights-scores bekijken op de metagegevenspagina.
 
    * **Activa**: Het aantal tijden het middel deel van een inzameling of een samengesteld middel maakte
    * **Web &amp; Mobiel**: Het aantal tijden het middel deel van websites en apps maakte
-   * **Sociaal**: Het aantal tijden de activa in oplossingen, zoals Adobe Social en Adobe Campaign werden gebruikt
+   * **Sociale**: Het aantal tijden de activa in oplossingen, zoals Adobe Sociale en Adobe Campaign werden gebruikt
    * **E-mail**: Het aantal tijden de activa in e-mailcampagnes werden gebruikt
 
-   ![&#x200B; usage_statistics &#x200B;](assets/usage_statistics.png)
+   ![ usage_statistics ](assets/usage_statistics.png)
 
    >[!NOTE]
    >
    >Omdat de functie Assets Insights de gegevens van Oplossingen doorgaans periodiek van Adobe Analytics ophaalt, wordt in de sectie Oplossingen mogelijk niet de meest recente gegevens weergegeven. De tijdsperiode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de ophaalbewerking die Assets Insights uitvoert om analysegegevens op te halen.
 
-1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]** . De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
+1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]** . De details, met inbegrip van kliks en impressies worden getoond als trendlijnen van een grafiek.
 
-   ![&#x200B; chlimage_1-3 &#x200B;](assets/chlimage_1-3.jpeg)
+   ![ chlimage_1-3 ](assets/chlimage_1-3.jpeg)
 
    >[!NOTE]
    >
    >In tegenstelling tot de gegevens in de sectie van Oplossingen, toont de sectie van de Statistieken van Prestaties de meest recente gegevens.
 
-1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. Voor meer informatie over hoe te om uw Embed code in derdeWeb-pagina&#39;s te omvatten, zie [&#x200B; Gebruikend de Traceur van de Pagina en bed code in Web-pagina&#39;s &#x200B;](/help/assets/use-page-tracker.md) in.
+1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. Voor meer informatie over hoe te om uw Embed code in derdeWeb-pagina&#39;s te omvatten, zie [ Gebruikend de Traceur van de Pagina en bed code in Web-pagina&#39;s ](/help/assets/use-page-tracker.md) in.
 
-   ![&#x200B; chlimage_1-98 &#x200B;](assets/chlimage_1-303.png)
+   ![ chlimage_1-98 ](assets/chlimage_1-303.png)
 
 ## Samengevoegde statistieken voor afbeeldingen weergeven {#viewing-aggregate-statistics-for-images}
 
@@ -85,6 +85,6 @@ Assets Insights haalt op periodieke wijze gebruiksgegevens voor middelen van Ado
 1. Klik op het logo [!DNL Experience Manager] en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** .
 1. Open de serviceconfiguratie van **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
 
-   ![&#x200B; chlimage_1-99 &#x200B;](assets/chlimage_1-304.png)
+   ![ chlimage_1-99 ](assets/chlimage_1-304.png)
 
 1. Specificeer de gewenste plannerfrequentie en de begintijd voor de baan in de uitdrukking van de bezitsplanner. Sla de wijzigingen op.

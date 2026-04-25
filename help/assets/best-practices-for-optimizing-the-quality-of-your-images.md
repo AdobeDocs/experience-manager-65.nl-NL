@@ -1,6 +1,6 @@
 ---
-title: Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen in Dynamic Media
-description: Leer de beste praktijken voor het optimaliseren van beeldkwaliteit in Dynamic Media
+title: Aanbevolen procedures voor het optimaliseren van de kwaliteit van afbeeldingen in dynamische media
+description: Leer beste praktijken voor het optimaliseren van beeldkwaliteit in Dynamische Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -9,26 +9,26 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 3%
+source-wordcount: '1488'
+ht-degree: 0%
 
 ---
 
-# Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
+# Aanbevolen procedures voor het optimaliseren van de kwaliteit van afbeeldingen in dynamische media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
-Adobe Experience Manager bevat meer dan 100 Dynamic Media-opdrachten voor het leveren van afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
+Adobe Experience Manager bevat meer dan 100 opdrachten voor het leveren van dynamische media-afbeeldingen voor het instellen en optimaliseren van afbeeldingen en het renderen van resultaten. De volgende richtlijnen kunnen u helpen het proces stroomlijnen en goede resultaten snel bereiken gebruikend sommige essentiële bevelen en beste praktijken.
 
 ## Aanbevolen werkwijzen voor afbeeldingsindeling (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG of PNG zijn de beste keuze om afbeeldingen van goede kwaliteit en met beheerbare grootte en gewicht te leveren.
-* Als er geen indelingsopdracht in de URL is opgegeven, wordt Dynamic Media Image Delivery standaard ingesteld op JPG voor levering.
-* JPG comprimeert met een verhouding van 10:1 en levert doorgaans kleinere afbeeldingsbestanden op. PNG wordt gecomprimeerd met een verhouding van ongeveer 2:1, behalve soms wanneer afbeeldingen een witte achtergrond bevatten. PNG-bestanden zijn doorgaans echter groter dan JPG-bestanden.
-* JPG gebruikt compressie met verlies, wat betekent dat afbeeldingselementen (pixels) bij compressie verloren gaan. PNG daarentegen maakt gebruik van compressie zonder verlies.
-* JPG comprimeert foto&#39;s vaak met een betere beeldkwaliteit dan synthetische afbeeldingen met scherpe randen en contrast.
+* Als er geen indelingsopdracht in de URL is opgegeven, wordt bij Dynamische aflevering van mediaafbeelding standaard JPG voor levering gebruikt.
+* JPG comprimeert met een verhouding van 10 :1 en produceert doorgaans kleinere afbeeldingsbestanden. PNG perst bij een verhouding van ongeveer 2 :1, behalve soms, zoals wanneer de beelden een witte achtergrond bevatten. PNG-bestanden zijn doorgaans echter groter dan JPG-bestanden.
+* JPG maakt gebruik van compressie met verlies. Dit betekent dat afbeeldingselementen (pixels) bij compressie verloren gaan. PNG daarentegen maakt gebruik van compressie zonder verlies.
+* In JPG worden foto&#39;s vaak gecomprimeerd met een hogere kwaliteit dan synthetische afbeeldingen met scherpe randen en contrast.
 * Als uw afbeeldingen transparantie bevatten, gebruikt u PNG omdat JPG geen transparantie ondersteunt.
 
 U kunt het beste de afbeeldingsindeling gebruiken door eerst de meest gebruikelijke instelling te gebruiken `&fmt=JPG` .
@@ -44,12 +44,14 @@ U kunt het beste `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resM
 
 ## Aanbevolen procedures voor verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
-Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
+Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te weten te komen over hoe verscherpen en onscherp maskeren werken in Experience Manager door naar de volgende nuttige bronnen te verwijzen:
 
-Het Witboek van beste praktijken [&#x200B; verscherpt beelden in Adobe Dynamic Media Classic &#x200B;](/help/assets/assets/sharpening_images.pdf) dat eveneens op Experience Manager van toepassing is.
+Het Witboek van beste praktijken [ verscherpt beelden in Adobe Dynamic Media Classic ](/help/assets/assets/sharpening_images.pdf) dat eveneens op Experience Manager van toepassing is.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Met Experience Manager kunt u afbeeldingen verscherpen bij inname, bij levering of beide. Gewoonlijk worden afbeeldingen echter verscherpt met slechts één methode of met de andere methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
@@ -67,13 +69,13 @@ Er zijn twee methoden voor het verscherpen van afbeeldingen die u kunt gebruiken
 
       * **[!UICONTROL *drempel *]**(0-255, gevoeligheid van effect.)
 
-            Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. Met de parameter **[!UICONTROL threshold] &#x200B;** kunt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren, voorkomen. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
+             Deze parameter bepaalt hoe verschillend de verscherpte pixel van het omringende gebied moeten zijn alvorens zij als randpixel worden beschouwd en de filter scherpt hen. Met de parameter **[!UICONTROL threshold] ** kunt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren, voorkomen. Bijvoorbeeld, negeert een drempelwaarde van 12 lichte variaties in de helderheid van de huidskleur om &quot;lawaai&quot;te vermijden toe te voegen, terwijl nog toevoegend randcontrast aan hoge contrastgebieden, zoals waar de wimpers huid ontmoeten.
         
         Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
 
-        Help-onderwerp Experience Manager over het verscherpen van een afbeelding.
+        Experience Manager Help-onderwerp over het verscherpen van een afbeelding.
 
-        Het Witboek van beste praktijken [&#x200B; verscherpt beelden in Adobe Dynamic Media Classic &#x200B;](/help/assets/assets/sharpening_images.pdf).
+        Het Witboek van beste praktijken [ verscherpt beelden in Adobe Dynamic Media Classic ](/help/assets/assets/sharpening_images.pdf).
 
       * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
@@ -90,7 +92,7 @@ Laat de monochrome parameter-instelling op 0 staan.
 
 ### Aanbevolen procedures voor JPEG-compressie (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
-* Deze parameter bepaalt JPG coderingskwaliteit. Een hogere waarde betekent een afbeelding van hogere kwaliteit, maar een groot bestand. Een lagere waarde betekent een afbeelding van lagere kwaliteit, maar een kleiner bestand. Het bereik voor deze parameter is 0-100.
+* Deze parameter bepaalt de coderingskwaliteit van JPG. Een hogere waarde betekent een afbeelding van hogere kwaliteit, maar een groot bestand. Een lagere waarde betekent een afbeelding van lagere kwaliteit, maar een kleiner bestand. Het bereik voor deze parameter is 0-100.
 * Stel de parameterwaarde niet in op 100 om te optimaliseren voor kwaliteit. Het verschil tussen een instelling van 90 of 95 en 100 is bijna onwaarneembaar, maar met 100 wordt het afbeeldingsbestand onnodig groter. Stel de `qlt= value` daarom in op 90 of 95 om de kwaliteit te optimaliseren, maar te voorkomen dat afbeeldingsbestanden te groot worden.
 * Als u wilt optimaliseren voor een kleine bestandsgrootte van de afbeelding, maar de afbeeldingskwaliteit op een acceptabel niveau wilt houden, stelt u de waarde `qlt= value` in op 80. Waarden lager dan 70 tot 75 resulteren in een aanzienlijke verslechtering van de beeldkwaliteit.
 * Als beste manier om in het midden te blijven stelt u de `qlt= value` in op 85 om in het midden te blijven.
@@ -99,16 +101,16 @@ Laat de monochrome parameter-instelling op 0 staan.
    * De parameter `qlt=` heeft een tweede instelling waarmee u het downsamplen van RGB-kleuren kunt inschakelen met de waarde `,1` of uitschakelen met de waarde `,0` .
    * Om het eenvoudig te houden, begin met RGB het chromaticiteitdownsampling uitgezet (`,0`). Deze instelling resulteert doorgaans in een betere beeldkwaliteit, vooral bij synthetische afbeeldingen met veel scherpe randen en contrast.
 
-U kunt het beste `&qlt=85,0` gebruiken als JPG compressie.
+U kunt het beste `&qlt=85,0` gebruiken voor JPG-compressie.
 
-## Aanbevolen werkwijzen voor JPEG vergroten/verkleinen (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Aanbevolen procedures voor JPEG-grootten (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize is een nuttige parameter als u wilt waarborgen dat een beeld een bepaalde grootte voor levering aan apparaten niet overschrijdt die beperkte geheugen hebben.
 
 * Deze parameter wordt geplaatst in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Hiermee wordt de maximaal toegestane grootte voor het leveren van de afbeelding gedefinieerd.
-* `&jpegSize=` communiceert met de JPG compressieparameter `&qlt=` . Als de JPG reactie met de opgegeven JPG compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` zoals gedefinieerd. Anders wordt `&qlt=` geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte of totdat het systeem bepaalt dat de afbeelding niet past en een fout retourneert.
+* `&jpegSize=` heeft invloed op de JPG-compressieparameter `&qlt=` . Als de JPG-respons met de opgegeven JPG-compressieparameter (`&qlt=`) de jpegSize-waarde niet overschrijdt, wordt de afbeelding geretourneerd met `&qlt=` zoals gedefinieerd. Anders wordt `&qlt=` geleidelijk verkleind totdat de afbeelding past in de maximaal toegestane grootte of totdat het systeem bepaalt dat de afbeelding niet past en een fout retourneert.
 
-U kunt het beste `&jpegSize=` instellen en de parameter `&qlt=` toevoegen als u JPG afbeeldingen afgeeft aan apparaten met beperkt geheugen.
+U kunt het beste `&jpegSize=` instellen en de parameter `&qlt=` toevoegen als u JPG-afbeeldingen levert aan apparaten met beperkt geheugen.
 
 ## Overzicht van best practices {#best-practices-summary}
 
@@ -125,5 +127,5 @@ Als de verscherpingsresultaten nog steeds niet bevredigend zijn, vergroot u de s
 Tijdens het experimenteren kunnen de volgende algemene suggesties nuttig zijn om uw workflow verder te optimaliseren:
 
 * Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
-* U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$` . De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
-* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerde gebruiksgevallen waar er opties zijn om het teruggeven resultaten te stemmen en te optimaliseren, [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/nl/customers/consulting-services/main.html) kan u met aangepast inzicht en beste praktijken helpen.
+* Houd er rekening mee dat u de opdrachten Dynamische mediabeeldverwerking in een voorinstelling kunt groeperen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$` . De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
+* Experience Manager biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerde gebruiksgevallen waar er opties zijn om het teruggeven resultaten te stemmen en te optimaliseren, [ Adobe Professional Services ](https://business.adobe.com/customers/consulting-services/main.html) kan u met aangepaste insight en beste praktijken helpen.

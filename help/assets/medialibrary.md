@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=nl-NL) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | Dit artikel |
 
 [!DNL Adobe Experience Manager] biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
@@ -36,7 +36,7 @@ Mediabibliotheek wordt geïnstalleerd als onderdeel van sites. Naast de licentie
 
 ## [!DNL Assets] versus mediabibliotheek {#assets-and-media-library}
 
-Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Assets-functionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen Assets-licentie hebben aangeschaft, mogen de geavanceerde DAM-functies echter niet gebruiken. Zonder de vergunning van Assets, slechts zijn de [&#x200B; eigenschappen van de Bibliotheek van Media &#x200B;](#use-media-library) beschikbaar.
+Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Assets-functionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen Assets-licentie hebben aangeschaft, mogen de geavanceerde DAM-functies echter niet gebruiken. Zonder de vergunning van Assets, slechts zijn de [ eigenschappen van de Bibliotheek van Media ](#use-media-library) beschikbaar.
 
 Als u wilt voorkomen dat [!DNL Assets] -functies waarvoor u geen licentie hebt, onbedoeld worden gebruikt, verwijdert u alle [!DNL Assets] -specifieke workflows, componenten, taxonomieën, opties en de [!DNL Assets] -beheerder uit [!DNL Experience Manager] . Zo voorkomt u dat uw gebruikers per ongeluk [!DNL Assets] -functies gebruiken waarvoor u geen licentie hebt verleend.
 
@@ -79,7 +79,8 @@ Als u de functionaliteit van de mediabibliotheek wilt gebruiken, kunt u de stand
 * Activiteitsstroom (tijdlijn).
 * Opmerkingen en annotaties.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -94,6 +95,6 @@ U kunt geen slimme tags, [!DNL Asset] koppeling, [!DNL Asset] kiezer, bulksgewij
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; DAM eigenschappen in  [!DNL Experience Manager Assets] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=nl-NL)
->* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving &#x200B;](https://helpx.adobe.com/nl/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [ DAM eigenschappen in  [!DNL Experience Manager Assets] ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
+>* [[!DNL Experience Manager]  6.5 het productbeschrijving van Managed Services ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager]  6.5 on-premise productbeschrijving ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)

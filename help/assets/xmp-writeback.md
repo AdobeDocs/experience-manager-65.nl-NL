@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 4%
+source-wordcount: '729'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Dit artikel |
 
 Met deze XMP-schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in de metagegevens van de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Assets of wanneer u het element uploadt, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
@@ -27,13 +27,13 @@ Met de XMP-functie voor terugschrijven kunt u de wijzigingen in metagegevens doo
 
 Neem bijvoorbeeld een scenario waarin u de eigenschap [!UICONTROL Title] van het element `Classic Leather` t/m `Nylon` wijzigt.
 
-![&#x200B; meta-gegevens &#x200B;](assets/metadata.png)
+![ meta-gegevens ](assets/metadata.png)
 
 In dit geval slaat [!DNL Experience Manager Assets] de wijzigingen in de eigenschap **[!UICONTROL Title]** op in de parameter `dc:title` voor de metagegevens van de elementen die zijn opgeslagen in de elementenhiërarchie.
 
-![&#x200B; metadata_stored &#x200B;](assets/metadata_stored.png)
+![ metadata_stored ](assets/metadata_stored.png)
 
-[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [&#x200B; hoe te om XMP terug &#x200B;](#enable-xmp-writeback) toe te laten.
+[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [ hoe te om XMP terug ](#enable-xmp-writeback) toe te laten.
 
 ## Terugschrijven naar XMP inschakelen {#enable-xmp-writeback}
 
@@ -43,7 +43,7 @@ Als u wilt dat de wijzigingen in metagegevens kunnen worden doorgegeven aan de u
 1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** -configuratie.
 1. Selecteer de optie **[!UICONTROL Propagate XMP]** en sla de wijzigingen op.
 
-   ![&#x200B; chlimage_1-135 &#x200B;](assets/chlimage_1-346.png)
+   ![ chlimage_1-135 ](assets/chlimage_1-346.png)
 
 ## Terugschrijven van XMP inschakelen voor specifieke uitvoeringen {#enabling-xmp-writeback-for-specific-renditions}
 
@@ -53,11 +53,11 @@ Voer de volgende stappen uit voor de XMP-functie voor het doorgeven van metagege
 
 1. Navigeer in de Experience Manager-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** .
 1. Open vanaf de pagina Modellen het workflowmodel van **[!UICONTROL DAM Metadata Writeback]** .
-1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
+1. Open de stap **[!UICONTROL XMP Writeback Process]** op de pagina met eigenschappen van **[!UICONTROL DAM Metadata Writeback]** .
 1. Klik in het dialoogvenster [!UICONTROL Step Properties] op de tab **[!UICONTROL Process]** .
 1. In het **vakje van Argumenten**, voeg `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` toe, en klik **[!UICONTROL OK]**.
 
-   ![&#x200B; step_properties &#x200B;](assets/step_properties.png)
+   ![ step_properties ](assets/step_properties.png)
 
 1. Sla de wijzigingen op.
 1. Als u de TIFF-piramide voor [!DNL Dynamic Media] -afbeeldingen opnieuw wilt genereren met de nieuwe kenmerken, voegt u de stap **[!UICONTROL Dynamic Media Process Image Assets]** toe aan de [!UICONTROL DAM Metadata Writeback] -workflow.
@@ -70,7 +70,7 @@ De metagegevenswijzigingen worden doorgegeven aan de renditions thumbnail.140.10
 
 >[!NOTE]
 >
->Voor de gesteunde platforms, zie [&#x200B; XMP meta-gegevens schrijven-achtereerste vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Voor de gesteunde platforms, zie [ XMP meta-gegevens schrijven-achtereerste vereisten ](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## XMP-metagegevens filteren {#filtering-xmp-metadata}
 
@@ -88,7 +88,7 @@ Door het filteren van XMP-metagegevens via lijst van gewenste personen verhelpt 
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** -configuratie.
 1. Selecteer **[!UICONTROL Apply Allowlist to XMP Properties]** en geef in het vak **[!UICONTROL Allowed XML Names for XMP filtering]** de eigenschappen op die u wilt importeren als u het filteren wilt toepassen via een lijst van gewenste personen.
 
-   ![&#x200B; chlimage_1-136 &#x200B;](assets/chlimage_1-347.png)
+   ![ chlimage_1-136 ](assets/chlimage_1-347.png)
 
 1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filters hebt toegepast via de lijst van gewenste personen, geeft u de eigenschappen op in het vak **[!UICONTROL Blocked XML Names for XMP filtering]** .
 

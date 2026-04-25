@@ -6,9 +6,9 @@ feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 -->
 
-Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#x200B; factureerbare APIs voor AEM Forms op OSGi &#x200B;](/help/forms/using/transaction-reports-billable-apis.md).
+Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [ factureerbare APIs voor AEM Forms op OSGi ](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Billable Document Services API&#39;s {#billable-document-services-apis}
 
@@ -55,37 +55,37 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Hiermee converteert u het HTML-bestand naar Adobe PDF. </td>
+   <td>Converteert HTML-bestand naar Adobe PDF. </td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Hiermee exporteert u PDF naar ondersteunde bestandstypen. </td>
+   <td>Exporteert PDF naar ondersteunde bestandstypen. </td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
-   <td><p>Hiermee exporteert u PDF naar ondersteunde bestandstypen.</p> </td>
+   <td><p>Exporteert PDF naar ondersteunde bestandstypen.</p> </td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF3</a></td>
-   <td>Hiermee exporteert u PDF naar ondersteunde bestandstypen.</td>
+   <td>Exporteert PDF naar ondersteunde bestandstypen.</td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>Hiermee wordt het HTML-bestand omgezet in PDF.</td>
+   <td>Converteert HTML-bestand naar PDF.</td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Hiermee wordt het HTML-bestand omgezet in PDF.</td>
+   <td>Converteert HTML-bestand naar PDF.</td>
    <td>Conversie <br /> </td>
   </tr>
   <tr>
    <td><a>PDF optimaliseren</a></td>
-   <td>Hiermee optimaliseert u PDF om de bestandsgrootte te beperken door overbodige metagegevens uit te knippen zonder dat dit van invloed is op de kwaliteit.</td>
+   <td>Hiermee optimaliseert u PDF om de bestandsgrootte te reduceren door overbodige metagegevens uit te knippen zonder dat dit van invloed is op de kwaliteit.</td>
    <td>Conversie <br /> </td>
   </tr>
  </tbody>
@@ -145,7 +145,7 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -197,7 +197,8 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -224,7 +225,7 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
 
 -->
 
-### PDF-service converteren {#convert-pdf-service}
+### PDF Service converteren {#convert-pdf-service}
 
 <table>
  <tbody>
@@ -235,17 +236,17 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
   </tr>
   <tr>
    <td><a>toImage2</a></td>
-   <td>Hiermee wordt een PDF-document omgezet in een lijst met afbeeldingsdocumenten. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG, 2K, PNG en TIFF.</td>
+   <td>Hiermee wordt een PDF-document omgezet in een lijst met afbeeldingsdocumenten. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2K, PNG en TIFF.</td>
    <td>Documenten converteren</td>
   </tr>
   <tr>
    <td><a>naarPS2</a></td>
-   <td>Converteert een Flat PDF-bestand naar de PostScript-indeling met behulp van de opties die zijn opgegeven in de optiespecc.</td>
+   <td>Converteert een Flash PDF-bestand naar de PostScript-indeling met gebruik van de opties die zijn opgegeven in de optiespecc.</td>
    <td>Documenten converteren</td>
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>Zet een Flat-PDF-bestand om in de SWF-indeling met behulp van de opties die zijn opgegeven in de optiesspecificatie.</td>
+   <td>Converteert een Flash PDF-bestand naar de SWF-indeling met gebruik van de opties die zijn opgegeven in de optiespecc.</td>
    <td>Documenten converteren</td>
   </tr>
  </tbody>
@@ -307,13 +308,13 @@ Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#
 
 Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u een of meer van de volgende bewerkingen uitvoert:
 1. Conversie van niet-PDF-indelingen naar PDF-indelingen. Bijvoorbeeld, de omzetting van formaat XDP in formaat PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
-1. Omzetten van PDF-indeling naar PDF/A-indeling.
-1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de indeling PDF naar Afbeelding of de conversie van de indeling PDF naar tekst.
+1. Conversie van PDF-indeling naar PDF/A-indeling.
+1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de PDF naar de afbeeldingsindeling of de conversie van de PDF naar de Text-indeling.
 
 >[!NOTE]
 >
 >* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De `invoke API` kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
->* Een enkel PDF-document dat is gemaakt met de assemblerservice, zoals `invoke` en `invokeDDX` , kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de opgegeven <!--DDX--> code.
+>* Eén PDF-document dat is gemaakt met de assemblerservice, zoals `invoke` en `invokeDDX` , kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal getelde transacties is afhankelijk van de opgegeven <!--DDX--> code.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -367,7 +368,8 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u 
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/nl/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

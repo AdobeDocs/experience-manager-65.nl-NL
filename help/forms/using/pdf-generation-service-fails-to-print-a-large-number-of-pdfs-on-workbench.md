@@ -1,27 +1,29 @@
 ---
-title: PDF-generatie kan geen groot aantal PDF afdrukken met WorkBench
-description: Wanneer een klant een groot aantal PDF genereert via services die via WorkBench zijn geïmplementeerd, mislukt de afdrukservice.
+title: PDF Generation kan geen groot aantal PDF's afdrukken met WorkBench
+description: Wanneer een klant een groot aantal PDF's genereert via services die zijn geïmplementeerd via WorkBench, mislukt de afdrukservice.
 exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
-# PDF-generatie kan geen groot aantal PDF afdrukken via WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
+# PDF Generation kan een groot aantal PDF&#39;s niet afdrukken via WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## Probleem {#issue}
 
-Wanneer een klant een groot aantal PDF via de diensten produceert die door WorkBench worden uitgevoerd. De service mislukt als gevolg van onvoldoende geheugen. De fout wordt weergegeven als:
+Wanneer een klant een groot aantal PDF&#39;s genereert via services die via WorkBench zijn geïmplementeerd. De service mislukt als gevolg van onvoldoende geheugen. De fout wordt weergegeven als:
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Dit komt doordat het maximumaantal pagina&#39;s in een afdrukverzoek is beperkt tot ongeveer 1000 pagina&#39;s in Windows. Wanneer een drukoutput wordt geproduceerd, moeten het malplaatje en de gegevens in geheugen worden geladen en de resulterende lay-out wordt opgebouwd in geheugen. Dit betekent dat er grenzen zijn aan de grootte van de einduitvoer. Het proces dat de afdrukuitvoer genereert, is een 32-bits taak, wat betekent dat deze beperkt is tot 2 GB RAM in Windows <!--and 4 GB on UNIX--> .
 
@@ -56,7 +58,7 @@ Omdat het maximale procesgeheugen ons beperkt en het geheugen dat door het proce
 
 Als het formulier veel kleine knooppunten met kleine gegevens bevat, verbruikt het proces meer geheugen (en gaat het dus sneller uit het geheugen) dan een formulier met minder knooppunten (zelfs) met grote gegevens.
 
-Lees het [&#x200B; Bijlage hieronder &#x200B;](#appendix) voor meer informatie, waar de testresultaten op de vorm van de Druk (niet-Gelabelde PDF) worden gebaseerd. Het gebruik van gelabelde PDF-procesgeheugenvereisten neemt toe. De waarde is ook afhankelijk van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
+Lees het [ Bijlage hieronder ](#appendix) voor meer informatie, waar de testresultaten op de vorm van de Druk (niet-Gelabelde PDF) worden gebaseerd. Door het gebruik van gelabelde PDF-procesgeheugenvereisten neemt de geheugenbehoefte toe. Het hangt ook af van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
 
 ### Interactieve Forms {#interactive-forms}
 
@@ -72,16 +74,16 @@ Adobe raadt geen specifieke afbeeldingsindeling aan. Het zou echter mooi zijn al
 
 Hieronder ziet u verschillende varianten voor tabellen die het renderaantal pagina&#39;s versus de gegevensgrootte voor eenvoudige tabel en complexe tabel weergeven.
 
-1. Een tabel met één kolom waarin 5000 pagina&#39;s PDF worden gegenereerd, gegevensbestanden met een grootte van 24 MB en 30 kB.
+1. Een tabel met één kolom waarin 5000 pagina&#39;s PDF&#39;s worden gegenereerd, gegevensbestanden met een bestandsgrootte van 24 MB en 30 kB.
 
-   ![&#x200B; table_single_column &#x200B;](/help/forms/using/assets/table_single_column.png)
+   ![ table_single_column ](/help/forms/using/assets/table_single_column.png)
 
-1. Een tabel met veel kleine kolommen waarin 800 pagina&#39;s PDF worden gegenereerd, is de grootte van het gegevensbestand 4,6 MB en 20 kB records.
-   ![&#x200B; table_many_small_columns &#x200B;](/help/forms/using/assets/table_many_small_columns.png)
+1. Een tabel met veel kleine kolommen waarin 800 pagina&#39;s PDF&#39;s worden gegenereerd, de grootte van het gegevensbestand is 4,6 MB en 20 kB records.
+   ![ table_many_small_columns ](/help/forms/using/assets/table_many_small_columns.png)
 
 1. Een tabel met veel kleine kolommen, maar een groter gegevensbestand vanwege het gebruik van grotere namen voor xmlTag.
-Hier is alles gelijk aan de vorige, maar namen van XML-tags zijn groot gemaakt (zodat het gegevensbestand groter wordt zonder dat de effectieve gegevens toenemen), is het eindresultaat (bovengrens) bijna hetzelfde. De grootte van het gegevensbestand is echter toegenomen van 4,6 MB tot 44,6 MB. Hier worden 800 pagina&#39;s PDF gegenereerd. De grootte van het gegevensbestand is 44,6 MB en 20-K records.
+Hier is alles gelijk aan de vorige, maar namen van XML-tags zijn groot gemaakt (zodat het gegevensbestand groter wordt zonder dat de effectieve gegevens toenemen), is het eindresultaat (bovengrens) bijna hetzelfde. De grootte van het gegevensbestand is echter toegenomen van 4,6 MB tot 44,6 MB. Hier worden 800 pagina&#39;s PDF&#39;s gegenereerd. De bestandsgrootte van het gegevensbestand is 44,6 MB en 20 kB.
 
-   ![&#x200B; table_greater_xml_tagname &#x200B;](/help/forms/using/assets/table_bigger_xml_tagname.png)
+   ![ table_greater_xml_tagname ](/help/forms/using/assets/table_bigger_xml_tagname.png)
 
 Het is dus moeilijk om een algemene bovengrens op de grootte van het gegevensbestand te zetten. Elk formulier is uniek en daarom verschilt het geheugengebruik per formulier.

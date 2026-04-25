@@ -10,9 +10,9 @@ exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 0%
 <table>
  <tbody>
   <tr>
-   <td><strong>Oudere AEM</strong></td>
-   <td><strong>AEM 6,5</strong></td>
+   <td><strong>Oudere AEM-versies</strong></td>
+   <td><strong>AEM 6.5</strong></td>
    <td><strong>Opmerkingen</strong></td>
   </tr>
   <tr>
@@ -53,9 +53,9 @@ ht-degree: 0%
 
 ## Vergelijking van OSGi Services {#comparison-of-osgi-services}
 
-**Oudere AEM Versies**
+**Oudere versies van AEM**
 
-Label: ondersteuning voor gesloten gebruikersgroep (CUG) bij Adobe Granite
+Label: ondersteuning voor Adobe Granite Closed User Group (CUG)
 
 Naam: com.day.cq.auth.impl.CugSupportImpl
 
@@ -74,7 +74,7 @@ Naam: com.day.cq.auth.impl.CugSupportImpl
   ConfigurationPolicy = REQUIRED
 
 * Naam: com.adobe.granite.auth.requirements.impl.RequirementService
-* Label: Adobe graniet-verificatie vereist en Aanmeldingspad-handler
+* Label: Adobe Granite-verificatievereiste en Aanmeldingspad-handler
 
   Naam: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
 
@@ -91,14 +91,15 @@ Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG
 
   Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten als er speciale behoeften zijn.
 
-* De component OSGi die LoginPathProvider uitvoert die een passende login weg aan LoginSelectorHandler blootstelt. Het heeft een verplichte verwijzing naar een RequirementHandler die wordt gebruikt om de waarnemer te registreren die aan veranderde auteisen luistert die in de inhoud door middel van graniet worden opgeslagen:AuthenticationRequired mixin type.
+* De component OSGi die LoginPathProvider uitvoert die een passende login weg aan LoginSelectorHandler blootstelt. Het heeft een verplichte verwijzing naar een RequirementHandler die wordt gebruikt om de waarnemer te registreren die aan veranderde autevereisten luistert die in de inhoud door middel van het graniet :AuthenticationRequired mengen type worden opgeslagen.
 * De component OSGi die RequirementHandler uitvoert die SlingAuthenticator over veranderingen in authrequirements op de hoogte brengt.
 
   Aangezien het configuratiebeleid voor deze component VEREIST is, wordt het slechts geactiveerd als een reeks gesteunde wegen wordt gespecificeerd.
 
   Het toelaten van de dienst lanceert RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

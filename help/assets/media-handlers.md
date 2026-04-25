@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 1%
+source-wordcount: '2082'
+ht-degree: 0%
 
 ---
 
@@ -18,19 +18,20 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld, duimnagelgeneratie of meta-gegevensextractie.
 
-Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [&#x200B; ingebouwde managers &#x200B;](#default-media-handlers), en de extra degenen kunnen of [&#x200B; worden ontwikkeld douane &#x200B;](#creating-a-new-media-handler) of worden bepaald door het proces aan a [&#x200B; bevel-lijn hulpmiddel &#x200B;](#command-line-based-media-handler) te delegeren.
+Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd in termen van een reeks [!DNL Assets] media-handlers. [!DNL Experience Manager] verstrekt sommige [ ingebouwde managers ](#default-media-handlers), en de extra degenen kunnen of [ worden ontwikkeld douane ](#creating-a-new-media-handler) of worden bepaald door het proces aan a [ bevel-lijn hulpmiddel ](#command-line-based-media-handler) te delegeren.
 
 Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer een MP3-audiobestand bijvoorbeeld wordt geüpload naar [!DNL Experience Manager] , wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Mediahandlers worden gebruikt bij workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager] . U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden of te maken, media-handlers uit te breiden of te maken of door media-handlers uit te schakelen en in te schakelen.
 
 >[!NOTE]
 >
->Zie de [&#x200B; Ondersteunde formaten van Activa &#x200B;](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
+>Zie de [ Ondersteunde formaten van Activa ](assets-formats.md) pagina voor een beschrijving van alle formaten die door [!DNL Assets] worden gesteund en eigenschappen voor elk formaat.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
 De volgende media-handlers zijn beschikbaar in [!DNL Assets] en verwerken de meest gebruikte MIME-typen:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
@@ -38,7 +39,7 @@ De volgende media-handlers zijn beschikbaar in [!DNL Assets] en verwerken de mee
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [&#x200B; verwerkt gebruikend een derdebibliotheek &#x200B;](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg <br><b> Belangrijk </b> - een geupload MP3 dossier wordt [ verwerkt gebruikend een derdebibliotheek ](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -58,10 +59,10 @@ Alle managers voeren de volgende taken uit:
 De actieve media-handlers weergeven:
 
 1. Navigeer in uw browser naar `https://localhost:4502/system/console/components` .
-1. Klik op `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. Klik op `com.day.cq.dam.core.impl.store.AssetStoreImpl` .
 1. Er wordt een lijst weergegeven met alle actieve mediamanagers. Bijvoorbeeld:
 
-![&#x200B; chlimage_1-437 &#x200B;](assets/chlimage_1-437.png)
+![ chlimage_1-437 ](assets/chlimage_1-437.png)
 
 ## Mediahandlers gebruiken in workflows om taken uit te voeren op elementen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
@@ -71,7 +72,7 @@ De managers van media zijn de diensten die met werkschema&#39;s worden gebruikt.
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
-In het volgende voorbeeld ziet u hoe u de workflow **[!UICONTROL AEM Assets Synchronization]** kunt verbeteren, zodat er subassets worden gegenereerd voor alle assets behalve PDF-documenten.
+In het volgende voorbeeld ziet u hoe u de **[!UICONTROL AEM Assets Synchronization]** -workflow vergroot, zodat er subelementen worden gegenereerd voor alle elementen behalve PDF-documenten.
 
 ### Een mediafunctie in- of uitschakelen {#disabling-enabling-a-media-handler}
 
@@ -110,7 +111,7 @@ De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: deze interface beschrijft de service die ondersteuning voor specifieke MIME-typen toevoegt. Als u een MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` -klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
-* `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
+* `com.day.cq.dam.core.AbstractSubAssetHandler` -klasse:
    * Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
    * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u van deze klasse hebt geërfd en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de inherit vlag aan waar plaatst.
@@ -123,7 +124,7 @@ De volgende methoden moeten worden toegepast:
 
 Hier volgt een voorbeeldsjabloon:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot;&ast; @scr.service&ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot;&amp;ast; @scr.service&amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
 
 De interface en de klassen omvatten:
 
@@ -137,7 +138,7 @@ In deze sectie maakt u een specifieke teksthandler die miniaturen met een waterm
 
 Ga als volgt te werk:
 
-Verwijs naar [&#x200B; Hulpmiddelen van de Ontwikkeling &#x200B;](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
+Verwijs naar [ Hulpmiddelen van de Ontwikkeling ](../sites-developing/dev-tools.md) om Eclipse met een [!DNL Maven] stop te installeren en op te zetten en voor vestiging de gebiedsdelen die voor het [!DNL Maven] project nodig zijn.
 
 Nadat u de volgende procedure hebt uitgevoerd en een TXT-bestand in [!DNL Experience Manager] uploadt, worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
 
@@ -153,7 +154,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een TXT-bestand in [!DNL Experi
       * Naam: Mijn [!DNL Experience Manager] bundel.
       * Beschrijving: Dit is mijn [!DNL Experience Manager] bundel.
 
-   1. Klik op **[!UICONTROL Finish]**.
+   1. Klik op **[!UICONTROL Finish]** .
 
 1. Stel de [!DNL Java™] -compiler in op versie 1.5:
 
@@ -164,7 +165,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een TXT-bestand in [!DNL Experi
       * Compatibiliteit van gegenereerde .class-bestanden
       * Source-compatibiliteit
 
-   1. Klik op **[!UICONTROL OK]**. Klik in het dialoogvenster op **[!UICONTROL Yes]** .
+   1. Klik op **[!UICONTROL OK]** . Klik in het dialoogvenster op **[!UICONTROL Yes]** .
 
 1. Vervang de code in het `pom.xml` dossier met de volgende code:
 
@@ -449,10 +450,10 @@ Met [!DNL Experience Manager] kunt u een opdrachtregelprogramma uitvoeren in een
 
 De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen [!DNL Assets] :
 
-* EPS en AI transformatie die `https://www.imagemagick.org/script/index.php` gebruiken en [&#x200B; Ghostscript &#x200B;](https://www.ghostscript.com/).
-* FLV video transcoderen die [&#x200B; gebruiken mpeg &#x200B;](https://ffmpeg.org/).
-* MP3 het coderen die [&#x200B; LAME &#x200B;](https://lame.sourceforge.io/) gebruiken.
-* Audio verwerkend gebruikend [&#x200B; SOX &#x200B;](https://sourceforge.net/projects/sox/).
+* EPS en AI transformatie die `https://www.imagemagick.org/script/index.php` gebruiken en [ Ghostscript ](https://www.ghostscript.com/).
+* FLV video transcoderen die [ gebruiken mpeg ](https://ffmpeg.org/).
+* MP3 het coderen die [ LAME ](https://lame.sourceforge.io/) gebruiken.
+* Audio verwerkend gebruikend [ SOX ](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Installeer [!DNL ImageMagick] op de schijf die als host fungeert voor de [!DNL E
 
 1. Als u wilt controleren of het gereedschap correct wordt uitgevoerd, voegt u een JPG-afbeelding toe aan de werkmap en voert u de opdracht Omzetten `<image-name>.jpg -flip <image-name>-flipped.jpg` uit op de opdrachtregel. Er wordt een gespiegelde afbeelding aan de map toegevoegd. Voeg vervolgens de opdrachtregelprocesstap toe aan de **[!UICONTROL DAM Update Asset]** -workflow.
 1. Ga naar de **[!UICONTROL Workflow]** -console.
-1. Bewerk het **[!UICONTROL Models]** -model op het tabblad **[!UICONTROL DAM Update Asset]** .
+1. Bewerk het **[!UICONTROL DAM Update Asset]** -model op het tabblad **[!UICONTROL Models]** .
 1. Wijzig de [!UICONTROL Arguments] van de **[!UICONTROL Web enabled rendition]** -stap in: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg` .
 1. Sla de workflow op.
 
@@ -530,4 +531,4 @@ Gebruik de volgende [!UICONTROL Process Arguments] om de voor het web ingeschake
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; activa van het Proces &#x200B;](assets-workflow.md)
+>* [ activa van het Proces ](assets-workflow.md)

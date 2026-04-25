@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [&#x200B; componenten gebruikt van de Vorm van 0&rbrace; Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (](/help/sites-authoring/adobe-campaign-components.md)) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.`/apps/geometrixx-outdoors/components/page_campaign_profile`
+Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat ](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt van de Vorm van 0} Adobe Campaign door te onderzoeken hoe het malplaatje Geometrixx-outdoor (`/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en richt u aan belangrijke informatie u kunt nodig hebben wanneer het creëren van uw eigen douanemalplaatje.[
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ Als u een aangepaste AEM-paginasjabloon wilt maken met Adobe Campaign-formulierc
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
 
-   ![&#x200B; chlimage_1-201 &#x200B;](assets/chlimage_1-201.png)
+   ![ chlimage_1-201 ](assets/chlimage_1-201.png)
 
 1. **de Montages van ClientContext**
 
@@ -49,7 +49,7 @@ Als u een aangepaste AEM-paginasjabloon wilt maken met Adobe Campaign-formulierc
    * ClientContext wijst naar `/etc/clientcontext/campaign`
    * Er is ook een extra *config* knoop.
 
-   ![&#x200B; chlimage_1-202 &#x200B;](assets/chlimage_1-202.png)
+   ![ chlimage_1-202 ](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
@@ -75,7 +75,7 @@ Als u een aangepaste AEM-paginasjabloon wilt maken met Adobe Campaign-formulierc
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 
-   ![&#x200B; chlimage_1-203 &#x200B;](assets/chlimage_1-203.png)
+   ![ chlimage_1-203 ](assets/chlimage_1-203.png)
 
 1. **montages van het Malplaatje**.
 
@@ -85,4 +85,4 @@ Als u een aangepaste AEM-paginasjabloon wilt maken met Adobe Campaign-formulierc
    |---|---|
    | **acTemplateId** | post |
 
-   ![&#x200B; chlimage_1-204 &#x200B;](assets/chlimage_1-204.png)
+   ![ chlimage_1-204 ](assets/chlimage_1-204.png)

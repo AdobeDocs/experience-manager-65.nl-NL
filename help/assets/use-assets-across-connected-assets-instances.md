@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 
@@ -42,7 +42,7 @@ Voor de [!DNL Sites] -auteurs zijn de externe elementen beschikbaar als alleen-l
 Zorg voor het volgende voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Voor [!DNL Adobe Experience Manager] -implementatietypen is aan een van de ondersteunde criteria voldaan. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] as a Cloud Service. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] als a [!DNL Cloud Service] werkt, zie [&#x200B; Verbonden Assets in Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
+* Voor [!DNL Adobe Experience Manager] -implementatietypen is aan een van de ondersteunde criteria voldaan. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] as a Cloud Service. Voor meer informatie over hoe deze functionaliteit in [!DNL Experience Manager] als a [!DNL Cloud Service] werkt, zie [&#x200B; Verbonden Assets in Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=nl-NL).
 
   | | [!DNL Sites] als een [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] op AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
   |---|---|---|---|
@@ -134,7 +134,7 @@ Voer de volgende stappen uit om Connected Assets en de lokale [!DNL Sites] conne
    >
    >Alle uitvoeringen die beschikbaar zijn op de externe implementatie worden opgehaald, wanneer auteurs middelen ophalen. Als u meer vertoningen van een opgehaald middel wilt tot stand brengen, sla deze configuratiestap over. De [!UICONTROL DAM Update Asset] -workflow wordt geactiveerd en er worden meer uitvoeringen gemaakt. Deze uitvoeringen zijn alleen beschikbaar bij de lokale [!DNL Sites] implementatie en niet bij de externe DAM-implementatie.
 
-1. Voeg de [!DNL Sites] -implementatie toe als een toegestane oorsprong in de CORS-configuratie voor de [!DNL Assets] -implementatie. Voor meer informatie, zie [&#x200B; CORS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) begrijpen.
+1. Voeg de [!DNL Sites] -implementatie toe als een toegestane oorsprong in de CORS-configuratie voor de [!DNL Assets] -implementatie. Voor meer informatie, zie [&#x200B; CORS &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL) begrijpen.
 
 1. Vorm [&#x200B; de zelfde steun van het plaatskoekje &#x200B;](/help/sites-administering/same-site-cookie-support.md).
 
@@ -173,7 +173,7 @@ Bij externe [!DNL Assets] -implementatie selecteert u [!UICONTROL Dynamic Media 
    * Op lokaal [!DNL Sites] selecteert u [!UICONTROL Dynamic Media sync mode] in **[!UICONTROL Disabled by default]** . De [!DNL Sites] -implementatie moet alleen-lezen toegang hebben tot de [!DNL Dynamic Media] -account.
    * Selecteer **[!UICONTROL Selective Publish]** bij Lokaal [!DNL Sites] in de optie **[!UICONTROL Publish Assets]** . Selecteer **[!UICONTROL Sync All Content]** niet.
 
-1. Laat [[!DNL Dynamic Media]  steun in de Component van de Kern van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) toe. Deze eigenschap laat de standaard [&#x200B; component van het Beeld &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) toe om [!DNL Dynamic Media] beelden te tonen wanneer [!DNL Dynamic Media] beelden door auteurs in webpages op lokale [!DNL Sites] plaatsing worden gebruikt.
+1. Laat [[!DNL Dynamic Media]  steun in de Component van de Kern van het Beeld &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=nl-NL#dynamic-media) toe. Deze eigenschap laat de standaard [&#x200B; component van het Beeld &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) toe om [!DNL Dynamic Media] beelden te tonen wanneer [!DNL Dynamic Media] beelden door auteurs in webpages op lokale [!DNL Sites] plaatsing worden gebruikt.
 
 ## Externe elementen gebruiken {#use-remote-assets}
 
@@ -316,7 +316,7 @@ U kunt elementen toevoegen aan de [!DNL Sites] -implementatie, maar deze element
 
 * Om inzicht over activagebruik te krijgen, vorm de [&#x200B; Assets Insight &#x200B;](/help/assets/asset-insights.md) functionaliteit op de [!DNL Sites] instantie.
 
-* U kunt niet de verre activa op de [&#x200B; Component van het Beeld slepen vormt dialoog &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). U kunt het externe element echter rechtstreeks naar de afbeeldingscomponent op de pagina Sites slepen zonder op **[!UICONTROL Configure]** te klikken.
+* U kunt niet de verre activa op de [&#x200B; Component van het Beeld slepen vormt dialoog &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=nl-NL#configure-dialog). U kunt het externe element echter rechtstreeks naar de afbeeldingscomponent op de pagina Sites slepen zonder op **[!UICONTROL Configure]** te klikken.
 
 ### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Wat is inbegrepen in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd, foutoplossingen en verbeteringen op het gebied van prestaties, stabiliteit en beveiliging die zijn geïntroduceerd sinds de eerste beschikbaarheid van 6.5 in april 2019. [&#x200B; installeer dit de dienstpak &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) op Experience Manager 6.5.
+Experience Manager 6.5.19.0 bevat nieuwe functies, belangrijke verbeteringen die door de klant worden aangevraagd, foutoplossingen en verbeteringen op het gebied van prestaties, stabiliteit en beveiliging die zijn geïntroduceerd sinds de eerste beschikbaarheid van 6.5 in april 2019. [&#x200B; installeer dit de dienstpak &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=nl-NL) op Experience Manager 6.5.
 
 ### Nieuwe functies
 
@@ -33,13 +33,13 @@ Experience Manager 6.5.19.0 bevat nieuwe functies, belangrijke verbeteringen die
 
 De verticale tabbladen, Algemene voorwaarden en Selectievakje worden toegevoegd om de schaalbaarheid van formulieren te verbeteren.
 
-* **[CheckBox component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
+* **[CheckBox component &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een checkbox component omvatten. Hiermee kunnen gebruikers binaire keuzes maken door een bepaalde optie te selecteren of te deselecteren. De optie wordt meestal weergegeven als een klein vak waarop u kunt klikken of tikken om te schakelen tussen twee statussen: ingeschakeld en uitgeschakeld. Het selectievakje is een veelgebruikt formulierelement voor een ja/nee- of waar/onwaar-keuze.
 
-* **[de component van de Bepalingen en van de Voorwaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een component van de Voorwaarden en van de Voorwaarden omvatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
+* **[de component van de Bepalingen en van de Voorwaarden &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan nu een component van de Voorwaarden en van de Voorwaarden omvatten. Hiermee kunnen auteurs van formulieren een specifieke sectie in het formulier invoeren waarin gebruikers de voorwaarden, juridische overeenkomsten of het gebruik van een service, product of platform krijgen aangeboden. Deze component is bedoeld om gebruikers te informeren over de regels, regels en verplichtingen waarmee zij instemmen door het formulier in te dienen.
 
   ![&#x200B; Verticale lusjes, Voorwaarden en componenten Checkbox &#x200B;](/help/forms/using/assets/forms-components.png)
 
-* **[Verticale de component van lusjes &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. Het gebruik van verticale tabbladen in een formulier kan de algehele gebruikerservaring verbeteren door de navigatie te vereenvoudigen en de organisatie van formulierinhoud te verbeteren, met name in situaties waarin een formulier meerdere secties of complexe informatie bevat.
+* **[Verticale de component van lusjes &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=nl-NL)**: De adaptieve Forms die op de Componenten van de Kern wordt gebaseerd kan vorminhoud in een verticale lijst van lusjes nu organiseren, die een gestructureerde en navigeerbare lay-out verstrekken. Het gebruik van verticale tabbladen in een formulier kan de algehele gebruikerservaring verbeteren door de navigatie te vereenvoudigen en de organisatie van formulierinhoud te verbeteren, met name in situaties waarin een formulier meerdere secties of complexe informatie bevat.
 
 #### 64-bits versie van AEM Forms Designer
 
@@ -61,12 +61,12 @@ De 64-bits iteratie van XMLFM introduceert verhoogde prestaties, schaalbaarheid 
 
 ## Opgeloste problemen
 
-De release bevat ook oplossingen voor meer dan 20 door de klant gemelde problemen. Voor gedetailleerde lijst van moeilijke situaties inbegrepen in het de dienstpak, zie [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+De release bevat ook oplossingen voor meer dan 20 door de klant gemelde problemen. Voor gedetailleerde lijst van moeilijke situaties inbegrepen in het de dienstpak, zie [&#x200B; versienota&#39;s &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=nl-NL#forms-6519)
 
 
 ## Het de dienstpak installeren
 
-Het de dienstpak brengt nieuwe eigenschappen en insectenmoeilijke situaties voor zowel AEM Forms op JEE als AEM Forms op OSGi. De installatieinstructies hebben veranderingen in vergelijking met vorige de dienstpakken, voor installatieinstructies, zie [&#x200B; de instructies van de de dienstpak van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Het de dienstpak brengt nieuwe eigenschappen en insectenmoeilijke situaties voor zowel AEM Forms op JEE als AEM Forms op OSGi. De installatieinstructies hebben veranderingen in vergelijking met vorige de dienstpakken, voor installatieinstructies, zie [&#x200B; de instructies van de de dienstpak van AEM Forms &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=nl-NL).
 
 
 
@@ -132,7 +132,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/nl/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 
@@ -40,7 +40,7 @@ Met de API kunt u Adobe Experience Manager gebruiken als een CMS zonder kop (Con
 
 Bijvoorbeeld, de Enige Toepassingen van de Pagina (SPA), op kader-gebaseerd of douane, vereisen inhoud die over HTTP API, vaak in formaat JSON wordt verstrekt.
 
-Terwijl [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kunnen dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke malplaatjes van AEM gebaseerd zijn. Niet elke SBZ-ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
+Terwijl [&#x200B; de Componenten van de Kern van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kunnen dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in pagina&#39;s moeten worden ontvangen die op specifieke malplaatjes van AEM gebaseerd zijn. Niet elke SBZ-ontwikkelingsorganisatie heeft directe toegang tot deze kennis.
 
 Dit is wanneer de Assets REST API kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren.
 
@@ -153,8 +153,8 @@ Als de Assets REST API wordt gebruikt binnen een omgeving zonder specifieke veri
 >
 >Zie voor meer informatie:
 >
->* [&#x200B; CORS/AEM verklaarde &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [&#x200B; Video - het Ontwikkelen voor CORS met AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [&#x200B; CORS/AEM verklaarde &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=nl-NL)
+>* [&#x200B; Video - het Ontwikkelen voor CORS met AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=nl-NL)
 >
 
 In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
@@ -395,4 +395,4 @@ Zie hier voor gedetailleerde API-referenties:
 Zie voor meer informatie:
 
 * [Assets HTTP API-documentatie](/help/assets/mac-api-assets.md)
-* [AEM Gem-sessie: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem-sessie: OAuth](https://helpx.adobe.com/nl/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

@@ -41,7 +41,7 @@ Zie ook [&#x200B; een Dynamische Configuratie van Media in de Diensten van de Wo
 
 U begint het vormen van een Dynamische het bedrijf aliasrekening van Media door eerst een geval van de Steun voor te leggen. Deze stap is vereist.
 
-1. [&#x200B; Gebruik Admin Console om een steungeval &#x200B;](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
+1. [&#x200B; Gebruik Admin Console om een steungeval &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * De aliasnaam van het Dynamic Media-bedrijf die u wilt gebruiken. De naam moet *slechts* brieven bevatten (het gemengde toe te staan casing), aantallen, koppeltekens, en onderstrepingstekens.

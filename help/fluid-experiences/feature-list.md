@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zichzelf van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. De krachtige inhoud authoring en levering en de krachtige steun van AEM voor hybride gebruiksgevallen zijn beschikbaar met [&#x200B; volledige AEM Sites, Assets, en de Dynamische oplossingen van Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zichzelf van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. De krachtige inhoud authoring en levering en de krachtige steun van AEM voor hybride gebruiksgevallen zijn beschikbaar met [&#x200B; volledige AEM Sites, Assets, en de Dynamische oplossingen van Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=nl-NL)
 
 In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieerd en een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 
@@ -51,11 +51,11 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 |---|
 | [&#x200B; HTTP API &#x200B;](/help/assets/mac-api-assets.md) |
 | [&#x200B; Gestructureerde inhoudsmodellen &#x200B;](/help/assets/content-fragments/content-fragments.md) |
-| [&#x200B; de diensten van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) |
+| [&#x200B; de diensten van de Inhoud &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=nl-NL) |
 | [&#x200B; de fragmenten van de Ervaring &#x200B;](/help/sites-authoring/experience-fragments.md) |
 | HTTP API voor gestructureerde inhoud (lezen) |
 | HTTP-API voor gestructureerde inhoud (CRUD) |
-| [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
+| [&#x200B; Componenten van de Kern &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=nl-NL) |
 | [&#x200B; Dynamische Media &#x200B;](/help/assets/dynamic-media.md) |
 
 ## Functies voor beheer en integratie {#admin-and-integration-features}
@@ -68,7 +68,7 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 | [&#x200B; de vertaling van de Inhoud &#x200B;](/help/sites-administering/translation.md) |
 | [&#x200B; Controle &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [&#x200B; Steun &#x200B;](/help/sites-administering/backup-and-restore.md) |
-| [&#x200B; Manager van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
+| [&#x200B; Manager van de Wolk &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=nl-NL) |
 | [&#x200B; Integratie PIM &#x200B;](/help/sites-authoring/managing-product-information.md) |
 | [&#x200B; Projecten en taken &#x200B;](/help/sites-authoring/projects.md) |
 | [&#x200B; Werkstromen &#x200B;](/help/sites-administering/workflows-starting.md) |
@@ -84,7 +84,7 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 
 ## Meer informatie {#learn-more}
 
-* [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [AEM Content Service: Wat, Waarom en Hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [Sling-API&#39;s gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=nl-NL)
+* [AEM Content Service: Wat, Waarom en Hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=nl-NL)
+* [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=nl-NL)
+* [Sling-API&#39;s gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=nl-NL#sling-models)

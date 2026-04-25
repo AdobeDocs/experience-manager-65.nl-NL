@@ -41,14 +41,14 @@ In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem
 >Wees voorzichtig bij het gebruik van linialen; u kunt voorkomen dat dynamische media-inhoud op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regels te maken.
-Zie [&#x200B; de vastgestelde verwijzing van de Regel &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Zie [&#x200B; de vastgestelde verwijzing van de Regel &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 
 Zorg er ook voor dat u eerst de regel test die is ingesteld in een testomgeving die geen invloed heeft op uw live productieomgeving.
 Productieomgevingen en staging-omgevingen vereisen doorgaans verschillende logins.
 
-Zie de [&#x200B; Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+Zie de [&#x200B; Desktoptoepassing van Adobe Dynamic Media Classic voor login informatie &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
 <!--
 OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
@@ -58,7 +58,7 @@ OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-st
 
 **om de regelreeksen van XML op te stellen:**
 
-1. Teken binnen aan uw [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+1. Teken binnen aan uw [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/nl/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met Customer Support van Adobe als je deze gegevens niet hebt.
 

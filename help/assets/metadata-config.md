@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 <!--
@@ -120,7 +120,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/nl/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -280,7 +280,7 @@ Voer waarden voor metagegevens in de verschillende velden in en klik op **[!UICO
 >
 >* [&#x200B; concepten van Meta-gegevens en begrip &#x200B;](metadata-concepts.md).
 >* [&#x200B; geeft meta-gegevenseigenschappen van veelvoudige inzamelingen &#x200B;](manage-collections.md#editing-collection-metadata-in-bulk) uit.
->* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [&#x200B; de invoer en de uitvoer van Meta-gegevens in Experience Manager Assets &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=nl-NL).
 >* [&#x200B; Profielen om meta-gegevens, beelden, en video&#39;s &#x200B;](processing-profiles.md) te verwerken.
 >* [&#x200B; Beste praktijken om uw digitale activa te organiseren om verwerkingsprofielen &#x200B;](/help/assets/organize-assets.md) te gebruiken.
 >* [&#x200B; schrijven van XMP &#x200B;](/help/assets/xmp-writeback.md).

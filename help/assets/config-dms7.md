@@ -48,7 +48,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor de primai
 
 ## Dynamische media in Scene7-modus inschakelen {#enabling-dynamic-media-in-scene-mode}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u deze inschakelen.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u deze inschakelen.
 
 >[!WARNING]
 >
@@ -80,14 +80,14 @@ Als u aangepaste viewervoorinstellingen en -configuraties die u van `/etc` hebt 
 
 De installatie van eigenschappak 18912 is facultatief **.
 
-Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7-modus op Experience Manager. Het is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/customers/consulting-services/main.html).
+Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7-modus op Experience Manager. Het is beschikbaar bij [&#x200B; Adobe Professional Services &#x200B;](https://business.adobe.com/nl/customers/consulting-services/main.html).
 
 Zie [&#x200B; eigenschappak 18912 voor bulkactiva migratie &#x200B;](/help/assets/bulk-ingest-migrate.md) voor meer informatie installeren.
 
 ## Dynamische mediaconfiguratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 <!--
-**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -255,7 +255,7 @@ In Dynamische Media - wijze Scene7, is de standaard grootte van het element uplo
 Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
 
 * U moet Experience Manager 6.5 met Service Pack 6.5.4.0 of later op Dynamische Media - wijze Scene7 in werking stellen.
-* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* &#x200B;](https://business.adobe.com/products/experience-manager/managed-services.html) klanten.
+* Deze grote upload eigenschap wordt slechts gesteund voor [*Managed Services* &#x200B;](https://business.adobe.com/nl/products/experience-manager/managed-services.html) klanten.
 * Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3- of Microsoft® Azure Blob-opslag.
 
   >[!NOTE]
@@ -474,7 +474,7 @@ Er zijn twee elementen beschikbaar voor definitie, Identieke en Basisnaam. Met d
 
 **om gebrek te vormen noemend:**
 
-1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met Customer Support van Adobe als je deze gegevens niet hebt.
 
@@ -508,7 +508,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **om een Vooraf ingestelde Partij tot stand te brengen:**
 
-1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met Customer Support van Adobe als je deze gegevens niet hebt.
 
@@ -564,7 +564,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
 **om een Reeks van de Partij tot stand te brengen vooraf instelt voor de auto-generatie van een 2D Reeks van de Spin:**
 
-1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw rekening.
+1. Open de [&#x200B; Desktoptoepassing van Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=nl-NL#getting-started), dan login aan uw rekening.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens opgegeven op het moment van de levering. Neem contact op met Customer Support van Adobe als je deze gegevens niet hebt.
 

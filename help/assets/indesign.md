@@ -25,7 +25,7 @@ Voor het volledig uploaden van bestanden naar [!DNL Experience Manager Assets] d
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [&#x200B; Adobe InDesign &#x200B;](https://www.adobe.com/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [&#x200B; Adobe InDesign Server &#x200B;](https://www.adobe.com/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn motor ExtendScript aanbiedt. De scripts worden geschreven in [!DNL ExtendScript] , wat vergelijkbaar is met [!DNL JavaScript] .
+>[!DNL Adobe InDesign] wordt aangeboden als twee aparte aanbiedingen. [&#x200B; Adobe InDesign &#x200B;](https://www.adobe.com/nl/products/indesign.html) Desktop app die wordt gebruikt om paginalay-outs voor druk en digitale distributie te ontwerpen. [&#x200B; Adobe InDesign Server &#x200B;](https://www.adobe.com/nl/products/indesignserver.html) laat u toe programmatically om geautomatiseerde documenten tot stand te brengen die op wat u met [!DNL InDesign] hebt gecreeerd worden gebaseerd. Het werkt als dienst die een interface aan zijn motor ExtendScript aanbiedt. De scripts worden geschreven in [!DNL ExtendScript] , wat vergelijkbaar is met [!DNL JavaScript] .
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
@@ -240,4 +240,4 @@ U kunt de standaardbeheerdersreferenties (gebruikersnaam en wachtwoord) wijzigen
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Ongeveer Adobe InDesign Server &#x200B;](https://www.adobe.com/products/indesignserver/faq.html)
+>* [&#x200B; Ongeveer Adobe InDesign Server &#x200B;](https://www.adobe.com/nl/products/indesignserver/faq.html)

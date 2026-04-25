@@ -38,7 +38,7 @@ U zou met de [&#x200B; structuur van een toepassing van het KUUROORD voor AEM &#
 >[!CAUTION]
 >Dit document gebruikt [&#x200B; Wij.Retail app van het Dagboek &#x200B;](https://github.com/adobe/aem-sample-we-retail-journal) slechts voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
 >
->Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
+>Om het even welk project van AEM zou het [&#x200B; Archetype van het Project van AEM &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=nl-NL) moeten gebruiken, dat de projecten van het KUUROORD gebruikend React of Angular steunt en het KUUROORD SDK gebruikt.
 
 ## De component Weer {#the-weather-component}
 

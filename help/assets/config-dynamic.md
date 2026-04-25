@@ -196,7 +196,7 @@ U kunt ervoor kiezen om Dynamische media alleen te implementeren voor beeldbewer
 
 ## Dynamische media inschakelen {#enabling-dynamic-media}
 
-[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u Dynamic Media inschakelen met de uitvoermodus `dynamicmedia` , zoals u bijvoorbeeld in de uitvoermodus van `publish` zou doen. Alvorens toe te laten, zorg ervoor om de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) te herzien.
+[&#x200B; Dynamische Media &#x200B;](https://business.adobe.com/nl/products/experience-manager/assets/dynamic-media.html) wordt onbruikbaar gemaakt door gebrek. Als u gebruik wilt maken van de dynamische mediafuncties, moet u Dynamic Media inschakelen met de uitvoermodus `dynamicmedia` , zoals u bijvoorbeeld in de uitvoermodus van `publish` zou doen. Alvorens toe te laten, zorg ervoor om de [&#x200B; technische vereisten &#x200B;](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on) te herzien.
 
 >[!NOTE]
 >
@@ -938,14 +938,14 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
 
 | Eigenschap | Standaardwaarde | Beschrijving |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | Standaardachtergrondkleur. RGB-waarde die wordt gebruikt om elk gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen. Zie ook [&#x200B; BkgColor &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) in het Beeld dat API dient. |
-| `defaultpix` | `300,300` | Standaardweergavegrootte. De server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte, als het verzoek niet uitdrukkelijk de meningsgrootte gebruikend wid=, hei=, of scl= specificeert.<br> gespecificeerd als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.<br> zie ook [&#x200B; DefaultPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) in het Beeld dat API dient.<br> gewoonlijk, echter, gebruikt u een kijker vooraf ingesteld of beeld vooraf ingesteld om de activa te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken. |
-| `defaultthumbpix` | `100,100` | Standaardminiatuurgrootte. Gebruikt in plaats van attribuut::DefaultPix voor duimnagelverzoeken (`req=tmb`).<br> de server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (`req=tmb`) niet uitdrukkelijk de grootte specificeert en niet uitdrukkelijk de meningsgrootte gebruikend `wid=`, `hei=`, of `scl=` specificeert.<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden.<br> is niet op genestelde/ingebedde verzoeken van toepassing.<br> zie ook [&#x200B; DefaultThumbPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) in het Beeld dat API dient. |
-| `expiration` | `36000000` | De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.<br> Echte aantal, 0 of groter. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de Klantenondersteuning als u de cache sneller moet wissen.<br> zie ook [&#x200B; Vervalsing &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in het Beeld dat API dient. |
-| `jpegquality` | `80` | Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.<br> Geheel getal en vlag van het Geheel, die door een komma wordt gescheiden. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 om de downsampling van RGB-chromaticiteit door JPEG-coders uit te schakelen.<br> zie ook [&#x200B; JpegQuality &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) in het Beeld dat API dient. |
-| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br> de server keert een fout terug als een verzoek een antwoordbeeld veroorzaakt waarvan breedte of hoogte groter is dan attributen::MaxPix.<br> zie ook [&#x200B; MaxPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) in het Beeld dat API dient. |
-| `resmode` | `SHARP2` | Standaardmodus voor opnieuw berekenen van pixels. Hiermee geeft u de standaardkenmerken voor resampling en interpolatie op die moeten worden gebruikt voor het schalen van afbeeldingsgegevens.<br> Gebruikt wanneer `resMode=` niet in een verzoek wordt gespecificeerd.<br> Toegestane waarden omvatten `BILIN`, `BICUB`, of `SHARP2`.<br> Enum. Stel dit in op 2 voor de interpolatiemodus `bilin` , 3 voor `bicub` of 4 voor `sharp2` . Gebruik `sharp2` voor de beste resultaten.<br> zie ook [&#x200B; ResMode &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) in het Beeld dat API dient. |
-| `resolution` | `72` | Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.<br> Echte aantal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.<br> zie ook [&#x200B; Resolutie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) in het Beeld dat API dient. |
+| `bkgcolor` | `FFFFFF` | Standaardachtergrondkleur. RGB-waarde die wordt gebruikt om elk gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen. Zie ook [&#x200B; BkgColor &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `defaultpix` | `300,300` | Standaardweergavegrootte. De server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte, als het verzoek niet uitdrukkelijk de meningsgrootte gebruikend wid=, hei=, of scl= specificeert.<br> gespecificeerd als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.<br> zie ook [&#x200B; DefaultPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient.<br> gewoonlijk, echter, gebruikt u een kijker vooraf ingesteld of beeld vooraf ingesteld om de activa te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken. |
+| `defaultthumbpix` | `100,100` | Standaardminiatuurgrootte. Gebruikt in plaats van attribuut::DefaultPix voor duimnagelverzoeken (`req=tmb`).<br> de server beperkt antwoordbeelden om niet groter te zijn dan deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (`req=tmb`) niet uitdrukkelijk de grootte specificeert en niet uitdrukkelijk de meningsgrootte gebruikend `wid=`, `hei=`, of `scl=` specificeert.<br> specificeerde als twee geheel aantallen, 0 of groter, die door een komma wordt gescheiden. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden.<br> is niet op genestelde/ingebedde verzoeken van toepassing.<br> zie ook [&#x200B; DefaultThumbPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `expiration` | `36000000` | De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.<br> Echte aantal, 0 of groter. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de Klantenondersteuning als u de cache sneller moet wissen.<br> zie ook [&#x200B; Vervalsing &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=nl-NL) in het Beeld dat API dient. |
+| `jpegquality` | `80` | Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.<br> Geheel getal en vlag van het Geheel, die door een komma wordt gescheiden. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 om de downsampling van RGB-chromaticiteit door JPEG-coders uit te schakelen.<br> zie ook [&#x200B; JpegQuality &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br> de server keert een fout terug als een verzoek een antwoordbeeld veroorzaakt waarvan breedte of hoogte groter is dan attributen::MaxPix.<br> zie ook [&#x200B; MaxPix &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `resmode` | `SHARP2` | Standaardmodus voor opnieuw berekenen van pixels. Hiermee geeft u de standaardkenmerken voor resampling en interpolatie op die moeten worden gebruikt voor het schalen van afbeeldingsgegevens.<br> Gebruikt wanneer `resMode=` niet in een verzoek wordt gespecificeerd.<br> Toegestane waarden omvatten `BILIN`, `BICUB`, of `SHARP2`.<br> Enum. Stel dit in op 2 voor de interpolatiemodus `bilin` , 3 voor `bicub` of 4 voor `sharp2` . Gebruik `sharp2` voor de beste resultaten.<br> zie ook [&#x200B; ResMode &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
+| `resolution` | `72` | Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.<br> Echte aantal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.<br> zie ook [&#x200B; Resolutie &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=nl-NL#image-serving-api) in het Beeld dat API dient. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Deze waarden vertegenwoordigen een momentopname van videoplaytime en tot [&#x200B; encoding.com &#x200B;](https://www.encoding.com/) overgegaan. Zie [&#x200B; Ongeveer videoduimnagel &#x200B;](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) voor meer informatie. |
 
 ## Dynamisch kleurbeheer voor media configureren {#configuring-dynamic-media-color-management}
@@ -960,9 +960,9 @@ U kunt Dynamisch mediakleurbeheer configureren en voorinstellingen voor afbeeldi
 
 Gevallen voor geavanceerd gebruik kunnen de optie `icc=` handmatig configureren gebruiken om expliciet een kleurprofiel voor de uitvoer te selecteren:
 
-* `icc` - [&#x200B; https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
+* `icc` - [&#x200B; https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=nl-NL &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=nl-NL)
 
-* `iccEmbed` - [&#x200B; https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
+* `iccEmbed` - [&#x200B; https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=nl-NL &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=nl-NL)
 
 >[!NOTE]
 >
@@ -1010,55 +1010,55 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=nl-NL">iccprofilergb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard RGB-kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">icprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=nl-NL">icprofilecmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">icprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=nl-NL">icprofilegray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaardkleurprofiel Grijs.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=nl-NL">iccprofilesrcrgb</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard RGB-kleurprofiel dat wordt gebruikt voor RGB-afbeeldingen zonder ingesloten kleurprofiel</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=nl-NL">iccprofilesrcmyk</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=nl-NL">iccprofilesrcgray</a></td>
    <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard grijskleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpointcompensatie</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=nl-NL">icblackpointcompensatie</a></td>
    <td>Boolean</td>
    <td>Waar</td>
    <td>Hiermee wordt opgegeven of zwartpuntcompensatie wordt toegepast tijdens kleurcorrectie. Adobe raadt aan dat deze instelling is ingeschakeld.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">icdithering</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=nl-NL">icdithering</a></td>
    <td>Boolean</td>
    <td>Onwaar</td>
    <td>Hiermee bepaalt u of dithering wordt toegepast tijdens kleurcorrectie.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=nl-NL">iccrenderintent</a></td>
    <td>String</td>
    <td>relatief</td>
    <td><p>Geeft de render-intentie aan. Acceptabele waarden zijn: <strong> perceptual, relative, saturation, absolute. </strong><i></i>Adobe adviseert <strong> relatieve </strong><i></i> als gebrek.</p> </td>

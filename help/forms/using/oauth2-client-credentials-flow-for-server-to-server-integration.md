@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=nl-NL) |
 | AEM 6.5 | Dit artikel |
 
 U kunt OAuth 2.0 cliëntgeloofsbrieven gebruiken om AEM Forms met de toepassing van Salesforce te integreren. OAuth 2.0 cliëntgeloofsbrieven zijn een standaard en veilige methode voor directe mededeling zonder gebruikersbetrokkenheid.
@@ -36,7 +36,7 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 
 * Creeer a [&#x200B; Salesforce verbonden app met OAuth 2.0 cliëntcredentiële stroom &#x200B;](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) en een API-enige gebruiker voor uw organisatie en verkrijg de consumentensleutel en het consumentengeheim voor app.
 
-* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [&#x200B; tot een dossier van de Swagger &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
+* Zorg ervoor dat het Swagger-bestand op de juiste wijze is geconfigureerd zodat het overeenkomt met de API&#39;s van uw organisatie. Alternatief, kunt u verkiezen om [&#x200B; tot een dossier van de Swagger &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=nl-NL) van het kras te leiden, dat voor gebruik in uw milieu van AEM wordt gemaakt.
 
 >[!NOTE]
 >
@@ -69,4 +69,4 @@ Voordat u de communicatie tussen een Salesforce-toepassing en een AEM-omgeving i
 1. Klik op **[!UICONTROL Test Connection]** .
 1. Klik op de knop **[!UICONTROL Create]** als de verbinding tot stand is gebracht.
 
-Nu, kunt u [&#x200B; tot het Model van de Gegevens van de Vorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.
+Nu, kunt u [&#x200B; tot het Model van de Gegevens van de Vorm &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=nl-NL) leiden om de gevormde gegevensbron met uw Aanpassings Forms te integreren.

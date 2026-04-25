@@ -66,7 +66,7 @@ Een Silverpop-configuratie maken in de gereedschappen:
 1. Selecteer **Hulpmiddelen**, toen **de Configuraties van de Diensten van de Wolk,** toen **Silverpop Ingenieur**.
 1. Klik **Nieuw**.
 
-   ![ chlimage_1-6 ](assets/chlimage_1-6.jpeg)
+   ![&#x200B; chlimage_1-6 &#x200B;](assets/chlimage_1-6.jpeg)
 
 1. In **creeer het venster van de Pagina**, ga **Titel** en naar keuze de **Naam** in, en klik **creeer**.
 1. Voer de configuratiegegevens in zoals beschreven in stap 4 van de vorige procedure. Volg die procedure zodat kunt u voltooien vormend Silverpop.
@@ -75,7 +75,7 @@ Een Silverpop-configuratie maken in de gereedschappen:
 
 Meerdere configuraties toevoegen:
 
-1. Voor de welkomstpagina, klik **de Diensten van de Wolk van 0} {en klik** Silverpop Ingenieur **.** Klik **tonen de knoop van Configuraties** die verschijnt als één of meerdere configuraties Silverpop beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Voor de welkomstpagina, klik **de Diensten van de Wolk van 0&rbrace; &lbrace;en klik** Silverpop Ingenieur **.** Klik **tonen de knoop van Configuraties** die verschijnt als één of meerdere configuraties Silverpop beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
 1. Klik op het **+** -teken naast Beschikbare configuraties. Het opent **leidt tot Configuraties** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie creëren.
 
 ### API-eindpunten configureren voor verbinding met Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}
@@ -92,7 +92,7 @@ De API-eindpunten configureren:
    1. **Naam**: `text`, **Type**: `String`, **Waarde**: `Engage 0`
    1. **Naam**: `value`, **Type**: `String`, **Waarde**: `https://api0.silverpop.com`
 
-   ![ chlimage_1-42 ](assets/chlimage_1-42.png)
+   ![&#x200B; chlimage_1-42 &#x200B;](assets/chlimage_1-42.png)
 
    Klik op Alles opslaan.
 
@@ -116,4 +116,4 @@ De API-eindpunten configureren:
 
 1. Klik **sparen allen**. AEM is nu klaar om verbinding te maken met Silverpop via beveiligde eindpunten.
 
-   ![ chlimage_1-7 ](assets/chlimage_1-7.jpeg)
+   ![&#x200B; chlimage_1-7 &#x200B;](assets/chlimage_1-7.jpeg)

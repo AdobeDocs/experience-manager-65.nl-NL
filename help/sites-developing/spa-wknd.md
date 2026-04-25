@@ -27,4 +27,4 @@ Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwe
 * [Aan de slag met de AEM SPA Editor en Angular](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
 * [Aan de slag met de AEM SPA Editor en Reageren](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2)
 
-Alvorens u met uw eigen project van het KUUROORD voor AEM begint echter, ben zeker om [ het Ontwikkelen SPAs voor AEM ](/help/sites-developing/spa-architecture.md) document ook te herzien.
+Alvorens u met uw eigen project van het KUUROORD voor AEM begint echter, ben zeker om [&#x200B; het Ontwikkelen SPAs voor AEM &#x200B;](/help/sites-developing/spa-architecture.md) document ook te herzien.

@@ -58,7 +58,7 @@ Omdat het maximale procesgeheugen ons beperkt en het geheugen dat door het proce
 
 Als het formulier veel kleine knooppunten met kleine gegevens bevat, verbruikt het proces meer geheugen (en gaat het dus sneller uit het geheugen) dan een formulier met minder knooppunten (zelfs) met grote gegevens.
 
-Lees het [ Bijlage hieronder ](#appendix) voor meer informatie, waar de testresultaten op de vorm van de Druk (niet-Gelabelde PDF) worden gebaseerd. Door het gebruik van gelabelde PDF-procesgeheugenvereisten neemt de geheugenbehoefte toe. Het hangt ook af van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
+Lees het [&#x200B; Bijlage hieronder &#x200B;](#appendix) voor meer informatie, waar de testresultaten op de vorm van de Druk (niet-Gelabelde PDF) worden gebaseerd. Door het gebruik van gelabelde PDF-procesgeheugenvereisten neemt de geheugenbehoefte toe. Het hangt ook af van het aantal velden in het formulier. ruwweg de vereiste voor het procesgeheugen zou iets meer dan 1,5 keer groter zijn dan die van niet-gecodeerde PDF.
 
 ### Interactieve Forms {#interactive-forms}
 
@@ -76,14 +76,14 @@ Hieronder ziet u verschillende varianten voor tabellen die het renderaantal pagi
 
 1. Een tabel met één kolom waarin 5000 pagina&#39;s PDF&#39;s worden gegenereerd, gegevensbestanden met een bestandsgrootte van 24 MB en 30 kB.
 
-   ![ table_single_column ](/help/forms/using/assets/table_single_column.png)
+   ![&#x200B; table_single_column &#x200B;](/help/forms/using/assets/table_single_column.png)
 
 1. Een tabel met veel kleine kolommen waarin 800 pagina&#39;s PDF&#39;s worden gegenereerd, de grootte van het gegevensbestand is 4,6 MB en 20 kB records.
-   ![ table_many_small_columns ](/help/forms/using/assets/table_many_small_columns.png)
+   ![&#x200B; table_many_small_columns &#x200B;](/help/forms/using/assets/table_many_small_columns.png)
 
 1. Een tabel met veel kleine kolommen, maar een groter gegevensbestand vanwege het gebruik van grotere namen voor xmlTag.
 Hier is alles gelijk aan de vorige, maar namen van XML-tags zijn groot gemaakt (zodat het gegevensbestand groter wordt zonder dat de effectieve gegevens toenemen), is het eindresultaat (bovengrens) bijna hetzelfde. De grootte van het gegevensbestand is echter toegenomen van 4,6 MB tot 44,6 MB. Hier worden 800 pagina&#39;s PDF&#39;s gegenereerd. De bestandsgrootte van het gegevensbestand is 44,6 MB en 20 kB.
 
-   ![ table_greater_xml_tagname ](/help/forms/using/assets/table_bigger_xml_tagname.png)
+   ![&#x200B; table_greater_xml_tagname &#x200B;](/help/forms/using/assets/table_bigger_xml_tagname.png)
 
 Het is dus moeilijk om een algemene bovengrens op de grootte van het gegevensbestand te zetten. Elk formulier is uniek en daarom verschilt het geheugengebruik per formulier.

@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Dit artikel is op de afgekeurde componenten van de Stichting van toepassing die AEM e-mailcomponenten baseren.
 >
->De gebruikers worden aangemoedigd om de moderne [ Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>De gebruikers worden aangemoedigd om de moderne [&#x200B; Componenten E-mailcomponenten van de Kern te gebruiken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 
@@ -144,11 +144,11 @@ Om een stevige basis aan te bieden en de verscheidenheid van de mogelijkheden va
 
 Al hebben a **kopbal**, a **footer**, en a **lichaam** sectie. Onder de lichaamssectie, verschilt elk malplaatje in **kolomontwerp** (één, twee, of drie kolommen).
 
-![ Varianten van mogelijke nieuwsbrieven ](assets/chlimage_1-69.png)
+![&#x200B; Varianten van mogelijke nieuwsbrieven &#x200B;](assets/chlimage_1-69.png)
 
 ### Onderdelen {#components}
 
-Er zijn momenteel [ zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes ](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de prijsverhogingstaal van Adobe **HTML**.
+Er zijn momenteel [&#x200B; zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes &#x200B;](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de prijsverhogingstaal van Adobe **HTML**.
 
 | **de naam van de Component** | **de weg van de Component** |
 |---|---|
@@ -164,4 +164,4 @@ Er zijn momenteel [ zeven componenten beschikbaar voor gebruik binnen campagnema
 >
 >Deze componenten zijn geoptimaliseerd voor e-mailinhoud, dat wil zeggen dat ze de beste werkwijzen volgen die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten schendt gewoonlijk deze regels.
 
-Deze componenten worden beschreven in detail in [ de componenten van Adobe Campaign ](/help/sites-authoring/adobe-campaign-components.md).
+Deze componenten worden beschreven in detail in [&#x200B; de componenten van Adobe Campaign &#x200B;](/help/sites-authoring/adobe-campaign-components.md).

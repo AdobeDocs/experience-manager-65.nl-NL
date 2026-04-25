@@ -32,13 +32,13 @@ Met AEM kunt u de volgende niet-Adobe-producten uit de verpakking integreren:
 * YouTube - video delen
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-Bovendien kunt u AEM met [ Adobe Creative Cloud ](/help/assets/aem-cc-integration-best-practices.md) integreren.
+Bovendien kunt u AEM met [&#x200B; Adobe Creative Cloud &#x200B;](/help/assets/aem-cc-integration-best-practices.md) integreren.
 
 ## Integreren met Salesforce {#integrating-with-salesforce}
 
 Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de Social Enterprise leidt.
 
-Voor informatie over het integreren van uw plaats van AEM en Salesforce, zie [ Integrerend met Salesforce ](/help/sites-administering/salesforce.md).
+Voor informatie over het integreren van uw plaats van AEM en Salesforce, zie [&#x200B; Integrerend met Salesforce &#x200B;](/help/sites-administering/salesforce.md).
 
 <!--
 THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
@@ -57,14 +57,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om zeer gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
 
-Voor informatie over het integreren van uw plaats van AEM en ExactTarget, zie [ het Vormen ExactTarget ](/help/sites-administering/exacttarget.md).
+Voor informatie over het integreren van uw plaats van AEM en ExactTarget, zie [&#x200B; het Vormen ExactTarget &#x200B;](/help/sites-administering/exacttarget.md).
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook en Twitter zijn populaire sociale netwerkservices. Dankzij de AEM-integratie met Facebook en Twitter kunnen organisaties een aanmeldingsoptie voor Facebook of Twitter aanbieden voor digitale eigenschappen die in eigendom zijn, en vervolgens de gebruikerservaring aanpassen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
 
-Zie [ Sociale Login ](/help/communities/social-login.md) voor meer informatie.
+Zie [&#x200B; Sociale Login &#x200B;](/help/communities/social-login.md) voor meer informatie.
 
 ## Integreren met andere providers {#integrating-with-other-providers}
 
-AEM laat u met andere externe leveranciers met a [ Generic Fragment van Analytics verbinden.](/help/sites-administering/external-providers.md)
+AEM laat u met andere externe leveranciers met a [&#x200B; Generic Fragment van Analytics verbinden.](/help/sites-administering/external-providers.md)

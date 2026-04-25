@@ -24,7 +24,7 @@ Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en 
 
 >[!NOTE]
 >
->Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [ overwegingen van het Ontwerp voor AEM Mobile apps ](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
+>Meer over ontwerpoverwegingen voor AEM Mobile apps leren, zie [&#x200B; overwegingen van het Ontwerp voor AEM Mobile apps &#x200B;](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Hulp.
 
 ## De inhoud publiceren/publiceren ongedaan maken {#publishing-unpublishing-the-content}
 
@@ -48,7 +48,7 @@ FAIL >>[!NOTE]
 >Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.
 -->
 
-![ chlimage_1-9 ](assets/chlimage_1-9.gif)
+![&#x200B; chlimage_1-9 &#x200B;](assets/chlimage_1-9.gif)
 
 ### De volgende stappen {#the-next-steps}
 
@@ -57,4 +57,4 @@ Als u eenmaal hebt geleerd hoe u inhoud maakt en publiceert, raadpleegt u het vo
 * [AEM Content ontwikkelen voor AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Of, als u nog meer over de auteursonderwerpen wilt leren, zie [ Authoring AEM-inhoud voor AEM Mobile On-demand Services Apps ](/help/mobile/mobile-apps-ondemand.md).
+Of, als u nog meer over de auteursonderwerpen wilt leren, zie [&#x200B; Authoring AEM-inhoud voor AEM Mobile On-demand Services Apps &#x200B;](/help/mobile/mobile-apps-ondemand.md).

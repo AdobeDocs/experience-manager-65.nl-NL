@@ -30,7 +30,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 -->
 
-Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [ factureerbare APIs voor AEM Forms op OSGi ](/help/forms/using/transaction-reports-billable-apis.md).
+Hieronder ziet u de lijst met JEE-factureerbare API&#39;s. Vind de lijst van [&#x200B; factureerbare APIs voor AEM Forms op OSGi &#x200B;](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Billable Document Services API&#39;s {#billable-document-services-apis}
 

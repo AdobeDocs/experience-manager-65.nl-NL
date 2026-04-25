@@ -48,13 +48,13 @@ Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen e
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand verwerkingsprofiel heeft dat u later hebt gewijzigd.
 
-Stel dat u een afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Bij alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter om een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het profiel. Nu, in plaats van het selecteren van en het opnieuw uploaden van de activa aan de omslag over, stelt u eenvoudig het *<!-- *Scene7: Reprocess Assets* --> werkschema in werking van 0} Dynamische Media die opnieuw verwerken.*
+Stel dat u een afbeeldingsprofiel hebt gemaakt en dit aan een map hebt toegewezen. Bij alle afbeeldingselementen die u naar de map hebt geüpload, wordt het afbeeldingsprofiel automatisch toegepast op de elementen. Later besluit u echter om een nieuwe verhouding voor slimme uitsnijden toe te voegen aan het profiel. Nu, in plaats van het selecteren van en het opnieuw uploaden van de activa aan de omslag over, stelt u eenvoudig het *<!-- *Scene7: Reprocess Assets* --> werkschema in werking van 0&rbrace; Dynamische Media die opnieuw verwerken.*
 
 U kunt de herverwerkingsworkflow uitvoeren op een element waarvoor de verwerking de eerste keer is mislukt. Zelfs als u geen verwerkingsprofiel hebt bewerkt of geen verwerkingsprofiel hebt toegepast, kunt u de workflow voor het opnieuw verwerken van een map met middelen op elk moment uitvoeren.
 
 U kunt optioneel de batchgrootte van de workflow voor het opnieuw verwerken aanpassen van een standaard van 50 elementen tot 1000 elementen. Wanneer u _Scene7 in werking stelt: Verwerk Assets_ werkschema op een omslag opnieuw, worden de activa gegroepeerd in partijen, dan verzonden naar de Dynamische server van Media voor verwerking. Na de verwerking worden de metagegevens van elk element in de volledige batchset bijgewerkt in Experience Manager. Als de partij groot is, kan er een vertraging optreden bij de verwerking. Als de batch te klein is, kunnen er te veel ronde overgangen naar de Dynamic Media-server plaatsvinden.
 
-Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
+Zie [&#x200B; aanpassen de partijgrootte van het herproceswerkschema &#x200B;](#adjusting-load).
 
 >[!NOTE]
 >
@@ -79,13 +79,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de pagina de optie **[!UICONTROL Timeline]** .
 1. Selecteer in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, het karatpictogram ( **^** ).
 
-   ![ opnieuw verwerken activa werkschema 1 ](/help/assets/assets/reprocess-assets1.png)
+   ![&#x200B; opnieuw verwerken activa werkschema 1 &#x200B;](/help/assets/assets/reprocess-assets1.png)
 
 1. Selecteer **[!UICONTROL Start Workflow]** .
 1. Kies **[!UICONTROL Dynamic Media Reprocess]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]** .
 1. (Facultatief) op **ga titel van werkschemagebied** in, ga een naam voor het werkschema in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
-   ![ opnieuw verwerken activa 2 ](/help/assets/assets/reprocess-assets2.png)
+   ![&#x200B; opnieuw verwerken activa 2 &#x200B;](/help/assets/assets/reprocess-assets2.png)
 
 1. Selecteer **[!UICONTROL Start]** en selecteer vervolgens **[!UICONTROL Confirm]** .
 
@@ -100,13 +100,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
 1. Selecteer in Experience Manager **[!UICONTROL Adobe Experience Manager]** om de algemene navigatieconsole te openen en selecteer vervolgens het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** .
 1. Selecteer **[!UICONTROL Dynamic Media Reprocess]** op de pagina Workflowmodellen in Kaartweergave of Lijstweergave.
 
-   ![ pagina van de Modellen van het Werkschema van het Werkschema met Dynamische Media die werkschema herverwerken in de Mening van de Kaart wordt geselecteerd ](/help/assets/assets-dm/reprocess-assets7.png)
+   ![&#x200B; pagina van de Modellen van het Werkschema van het Werkschema met Dynamische Media die werkschema herverwerken in de Mening van de Kaart wordt geselecteerd &#x200B;](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Selecteer **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de modelpagina Dynamisch opnieuw verwerken van media geopend.
 1. Selecteer in de rechterbovenhoek van de pagina Dynamische media herverwerken workflow **[!UICONTROL Edit]** om de workflow te &quot;ontgrendelen&quot;.
 1. In het werkschema, selecteer de Partij Scene7 uploadt component om de toolbar te openen, dan uitgezocht **[!UICONTROL Configure]** op de toolbar.
 
-   ![ de Partij Scene7 uploadt component ](/help/assets/assets-dm/reprocess-assets8.png)
+   ![&#x200B; de Partij Scene7 uploadt component &#x200B;](/help/assets/assets-dm/reprocess-assets8.png)
 
 1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** het volgende in:
    * Voer in de tekstvelden **[!UICONTROL Title]** en **[!UICONTROL Description]** desgewenst een nieuwe titel en beschrijving in voor de taak.
@@ -116,13 +116,13 @@ Zie [ aanpassen de partijgrootte van het herproceswerkschema ](#adjusting-load).
    * Voer in de **[!UICONTROL Batch field]** het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
    * Selecteer **[!UICONTROL Advance on timeout]** als u wilt doorgaan wanneer de time-out is bereikt. Annuleer de selectie als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
 
-   ![ de dialoogdoos van Eigenschappen ](/help/assets/assets-dm/reprocess-assets3.png)
+   ![&#x200B; de dialoogdoos van Eigenschappen &#x200B;](/help/assets/assets-dm/reprocess-assets3.png)
 
 1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** .
 
 1. Selecteer **[!UICONTROL Sync]** in de rechterbovenhoek van de modelpagina Dynamische media opnieuw verwerken. Wanneer u **[!UICONTROL Synced]** ziet, wordt het runtimemodel van de workflow gesynchroniseerd en kunt u elementen in een map opnieuw verwerken.
 
-   ![ synchroniseer het werkschemamodel ](/help/assets/assets-dm/reprocess-assets1.png)
+   ![&#x200B; synchroniseer het werkschemamodel &#x200B;](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Sluit het browsertabblad waarin het workflowmodel Dynamische media opnieuw verwerken wordt weergegeven.
 

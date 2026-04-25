@@ -118,79 +118,79 @@ In de volgende secties worden de richtsnoeren van sectie 508 en WCAG aan de in d
 
 | Prioriteit 1 G 2 Controlepunten | Aanbevolen LiveCycle Best practices voor compatibiliteit | Notities |
 | --- | --- | --- |
-| 1.1 [ Alternatieven van de Tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html) | | |
-| 1.1.1 [ Niet-tekstuele Inhoud ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html) | 2.4 Verstrek tekstequivalenten voor beelden | |
+| 1.1 [&#x200B; Alternatieven van de Tekst &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html) | | |
+| 1.1.1 [&#x200B; Niet-tekstuele Inhoud &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html) | 2.4 Verstrek tekstequivalenten voor beelden | |
 | | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| 1.2 [ op tijd-gebaseerde Media ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html) | | |
-| 1.2.1 [ audio-slechts en video-slechts (Vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.2 [ (Vooraf opgenomen) Bijschriften ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.3 [ AudioBeschrijving of Alternatief van Media (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.4 [ Bijschriften (Levend) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.5 [ AudioBeschrijving (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.6 [ Taal van het Teken (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.7 [ Uitgebreide AudioBeschrijving (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.8 [ Alternatieve Media (vooraf opgenomen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.2.9 [ audio-slechts (Levend) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
-| 1.3 [ Aanpasbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
-| 1.3.1 [ Info en Verhoudingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html) | 2.9 Cellen met koppen voor tabellen opgeven | |
-| 1.3.2 [ Betekenisvolle Opeenvolging ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 1.2 [&#x200B; op tijd-gebaseerde Media &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html) | | |
+| 1.2.1 [&#x200B; audio-slechts en video-slechts (Vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.2 [&#x200B; (Vooraf opgenomen) Bijschriften &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.3 [&#x200B; AudioBeschrijving of Alternatief van Media (vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.4 [&#x200B; Bijschriften (Levend) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.5 [&#x200B; AudioBeschrijving (vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.6 [&#x200B; Taal van het Teken (vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.7 [&#x200B; Uitgebreide AudioBeschrijving (vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.8 [&#x200B; Alternatieve Media (vooraf opgenomen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.2.9 [&#x200B; audio-slechts (Levend) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 Zorg ervoor dat alle audio- en video-inhoud toegankelijk is | |
+| 1.3 [&#x200B; Aanpasbaar &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
+| 1.3.1 [&#x200B; Info en Verhoudingen &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html) | 2.9 Cellen met koppen voor tabellen opgeven | |
+| 1.3.2 [&#x200B; Betekenisvolle Opeenvolging &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 1.3.3 [ Sensorische Kenmerken ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4 [ Distinguished ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
-| 1.4.1 [ Gebruik van Kleur ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.2 [ AudioControle ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | Geen specifieke LiveCycle-technieken | |
-| 1.4.3 [ Contrast (Minimum) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.4 [ Resize tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) | Geen specifieke LiveCycle-technieken | |
-| 1.4.5 [ Beelden van Tekst ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | Geen specifieke LiveCycle-technieken | |
-| 1.4.6 [ Contrast (Verbeterd) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8 Kleur verantwoord gebruiken | |
-| 1.4.7 [ Laag of Geen Achtergrond Audio ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Geen specifieke LiveCycle-technieken | |
-| 1.4.9 [ Beelden van Tekst (Geen Uitzondering) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Geen specifieke LiveCycle-technieken | |
-| 2.1 [ Toegankelijk Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
-| 2.1.1 [ Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 1.3.3 [&#x200B; Sensorische Kenmerken &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4 [&#x200B; Distinguished &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
+| 1.4.1 [&#x200B; Gebruik van Kleur &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.2 [&#x200B; AudioControle &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | Geen specifieke LiveCycle-technieken | |
+| 1.4.3 [&#x200B; Contrast (Minimum) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.4 [&#x200B; Resize tekst &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) | Geen specifieke LiveCycle-technieken | |
+| 1.4.5 [&#x200B; Beelden van Tekst &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | Geen specifieke LiveCycle-technieken | |
+| 1.4.6 [&#x200B; Contrast (Verbeterd) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8 Kleur verantwoord gebruiken | |
+| 1.4.7 [&#x200B; Laag of Geen Achtergrond Audio &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Geen specifieke LiveCycle-technieken | |
+| 1.4.9 [&#x200B; Beelden van Tekst (Geen Uitzondering) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Geen specifieke LiveCycle-technieken | |
+| 2.1 [&#x200B; Toegankelijk Toetsenbord &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
+| 2.1.1 [&#x200B; Toetsenbord &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2.1.2 [ Geen Overvul van het Toetsenbord ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html) | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2.1.3 [ Keyboard (Geen Uitzondering) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 2.1.2 [&#x200B; Geen Overvul van het Toetsenbord &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html) | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
+| 2.1.3 [&#x200B; Keyboard (Geen Uitzondering) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
 | | 2.7 Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn | |
-| 2.2 [ genoeg Tijd ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
-| 2.2.1 [ Aanpasbare timing ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | Geen specifieke LiveCycle-technieken | |
-| 2.2.2 [ Pauze, Einde, Verbergen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2.2.3 [ Geen timing ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Geen specifieke LiveCycle-technieken | |
-| 2.2.4 [ Onderbrekingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | Geen specifieke LiveCycle-technieken | |
-| 2.2.5 [ opnieuw voor authentiek makend ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | Geen specifieke LiveCycle-technieken | |
+| 2.2 [&#x200B; genoeg Tijd &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
+| 2.2.1 [&#x200B; Aanpasbare timing &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | Geen specifieke LiveCycle-technieken | |
+| 2.2.2 [&#x200B; Pauze, Einde, Verbergen &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.2.3 [&#x200B; Geen timing &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Geen specifieke LiveCycle-technieken | |
+| 2.2.4 [&#x200B; Onderbrekingen &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | Geen specifieke LiveCycle-technieken | |
+| 2.2.5 [&#x200B; opnieuw voor authentiek makend &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | Geen specifieke LiveCycle-technieken | |
 | 2.3 [ Convulsies ] | | |
-| 2.3.1 [ Drie Knippers of onder Drempel ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2.3.2 [ Drie Flashes ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
-| 2.4 [ Navigable ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
-| 2.4.1 [ Blokken van de Bypass ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 2.4.2 [ Getitelde Pagina ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Geen specifieke LiveCycle-technieken | |
-| 2.4.3 [ Orde van de Nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
-| 2.4.4 [ Doel van de Verbinding (in context) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Geen specifieke LiveCycle-technieken | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
-| 2.4.5 [ Veelvoudige Manieren ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 2.4.6 [ Koppen en Etiketten ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Geef juiste labels voor formulierbesturingselementen</li><li>2.10 Een navigeerbare formulierstructuur bieden</li> | |
-| 2.4.7 [ Zichtbare Nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | Geen specifieke LiveCycle-technieken | De standaardfocus in LiveCycle-formulieren is zichtbaar. |
-| 2.4.8 [ Plaats ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | Geen specifieke LiveCycle-technieken | Niet van toepassing: LiveCycle-formulieren vereisen geen navigatiesystemen. |
-| 2.4.9 [ Doel van de Verbinding (Verbinding slechts) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Geen specifieke LiveCycle-technieken | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
-| 2.4.10 [ Koppen van de Sectie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 3.1 [ Leesbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
-| 3.1.1 [ Taal van Pagina ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
-| 3.1.2 [ Taal van Delen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
-| 3.1.3 [ Ongebruikelijke Woorden ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | Geen specifieke LiveCycle-technieken | |
-| 3.1.4 [ Afkortingen ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | Geen specifieke LiveCycle-technieken | |
-| 3.1.5 [ Leesniveau ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Geen specifieke LiveCycle-technieken | |
-| 3.1.6 [ Uitspraak ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | Geen specifieke LiveCycle-technieken | |
-| 3.2 [ voorspelbaar ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
-| 3.2.1 [ op nadruk ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 Scripts niet verstoren | |
-| 3.2.2 [ op input ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Scripts niet verstoren | |
-| 3.2.3 [ Consistente Navigatie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
-| 3.2.4 [ Consistente Identificatie ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Kies de juiste besturingselementen</li><li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
-| 3.2.5 [ Verandering op Verzoek ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Scripts niet verstoren | |
-| 3.3 [ Hulp van de Input ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
-| 3.3.1 [ Identificatie van de Fout ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  | LiveCycle Designer biedt gereedschappen waarmee u formuliervelden naar wens kunt markeren en waarmee u validatie van formulierinvoer kunt uitvoeren. |
-| 3.3.2 [ Etiketten of Instructies ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5 Geef juiste labels voor formulierbesturingselementen | |
-| 3.3.3 [ Suggestie van de Fout ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | LiveCycle Designer biedt gereedschappen waarmee u formuliervelden naar wens kunt markeren en waarmee u validatie van formulierinvoer kunt uitvoeren. |
-| 3.3.4 [ Preventie van de Fout (Juridisch, Financieel, Gegevens) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | Geen specifieke LiveCycle-technieken | |
-| 3.3.5 [ Hulp ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | Geen specifieke LiveCycle-technieken | |
-| 3.3.6 [ Preventie van de Fout (allen) ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Geen specifieke LiveCycle-technieken | |
-| 4.1 [ Compatibel ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
-| 4.1.1 [ het ontleden ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | Geen specifieke LiveCycle-technieken | |
-| 4.1.2 [ Naam, Rol, Waarde ](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Kies de juiste besturingselementen</li> <li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
+| 2.3.1 [&#x200B; Drie Knippers of onder Drempel &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.3.2 [&#x200B; Drie Flashes &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 Formulieren eenvoudig en gebruiksvriendelijk houden | |
+| 2.4 [&#x200B; Navigable &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
+| 2.4.1 [&#x200B; Blokken van de Bypass &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 2.4.2 [&#x200B; Getitelde Pagina &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Geen specifieke LiveCycle-technieken | |
+| 2.4.3 [&#x200B; Orde van de Nadruk &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Zorg ervoor dat de lees- en tabvolgorde correct zijn | |
+| 2.4.4 [&#x200B; Doel van de Verbinding (in context) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Geen specifieke LiveCycle-technieken | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
+| 2.4.5 [&#x200B; Veelvoudige Manieren &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 2.4.6 [&#x200B; Koppen en Etiketten &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Geef juiste labels voor formulierbesturingselementen</li><li>2.10 Een navigeerbare formulierstructuur bieden</li> | |
+| 2.4.7 [&#x200B; Zichtbare Nadruk &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | Geen specifieke LiveCycle-technieken | De standaardfocus in LiveCycle-formulieren is zichtbaar. |
+| 2.4.8 [&#x200B; Plaats &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | Geen specifieke LiveCycle-technieken | Niet van toepassing: LiveCycle-formulieren vereisen geen navigatiesystemen. |
+| 2.4.9 [&#x200B; Doel van de Verbinding (Verbinding slechts) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Geen specifieke LiveCycle-technieken | Het doel van een koppeling is afhankelijk van de keuze van auteurs voor betekenisvolle tekst voor gekoppelde elementen. |
+| 2.4.10 [&#x200B; Koppen van de Sectie &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 3.1 [&#x200B; Leesbaar &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
+| 3.1.1 [&#x200B; Taal van Pagina &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
+| 3.1.2 [&#x200B; Taal van Delen &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 Identificeer de natuurlijke taal en eventuele taalwijzigingen | |
+| 3.1.3 [&#x200B; Ongebruikelijke Woorden &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | Geen specifieke LiveCycle-technieken | |
+| 3.1.4 [&#x200B; Afkortingen &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | Geen specifieke LiveCycle-technieken | |
+| 3.1.5 [&#x200B; Leesniveau &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Geen specifieke LiveCycle-technieken | |
+| 3.1.6 [&#x200B; Uitspraak &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | Geen specifieke LiveCycle-technieken | |
+| 3.2 [&#x200B; voorspelbaar &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
+| 3.2.1 [&#x200B; op nadruk &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 Scripts niet verstoren | |
+| 3.2.2 [&#x200B; op input &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Scripts niet verstoren | |
+| 3.2.3 [&#x200B; Consistente Navigatie &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 Een navigeerbare formulierstructuur bieden | |
+| 3.2.4 [&#x200B; Consistente Identificatie &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Kies de juiste besturingselementen</li><li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |
+| 3.2.5 [&#x200B; Verandering op Verzoek &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Scripts niet verstoren | |
+| 3.3 [&#x200B; Hulp van de Input &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
+| 3.3.1 [&#x200B; Identificatie van de Fout &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  | LiveCycle Designer biedt gereedschappen waarmee u formuliervelden naar wens kunt markeren en waarmee u validatie van formulierinvoer kunt uitvoeren. |
+| 3.3.2 [&#x200B; Etiketten of Instructies &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5 Geef juiste labels voor formulierbesturingselementen | |
+| 3.3.3 [&#x200B; Suggestie van de Fout &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | LiveCycle Designer biedt gereedschappen waarmee u formuliervelden naar wens kunt markeren en waarmee u validatie van formulierinvoer kunt uitvoeren. |
+| 3.3.4 [&#x200B; Preventie van de Fout (Juridisch, Financieel, Gegevens) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | Geen specifieke LiveCycle-technieken | |
+| 3.3.5 [&#x200B; Hulp &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | Geen specifieke LiveCycle-technieken | |
+| 3.3.6 [&#x200B; Preventie van de Fout (allen) &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Geen specifieke LiveCycle-technieken | |
+| 4.1 [&#x200B; Compatibel &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
+| 4.1.1 [&#x200B; het ontleden &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | Geen specifieke LiveCycle-technieken | |
+| 4.1.2 [&#x200B; Naam, Rol, Waarde &#x200B;](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Kies de juiste besturingselementen</li> <li>2.5 Geef juiste labels voor formulierbesturingselementen</li> | |

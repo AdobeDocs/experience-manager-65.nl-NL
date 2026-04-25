@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[ de Leven van Adobe is officieel eind-van-dienst vanaf 30 November, 2021 ](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
+>[&#x200B; de Leven van Adobe is officieel eind-van-dienst vanaf 30 November, 2021 &#x200B;](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
 <!--
 Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [ klik hier ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
+| AEM as a Cloud Service | [&#x200B; klik hier &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Dit artikel |
 
 Met [!DNL Adobe Experience Manager Assets] kunt u een digitaal watermerk toevoegen aan elementen waarmee gebruikers de authenticiteit en de copyrighteigendom van de elementen kunnen controleren. [!DNL Experience Manager Assets] ondersteunt tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
@@ -30,7 +30,7 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 
 1. Sleep vanuit het zijpaneel de stap **[!UICONTROL Add Watermark]** naar de [!UICONTROL DAM Update Asset] -workflow.
 
-   ![ belemmering de [!UICONTROL Add Watermark] stap en voeg aan het [!UICONTROL DAM Update Asset] werkschema ](assets/add_watermark_step_aem_assets.png) toe
+   ![&#x200B; belemmering de [!UICONTROL Add Watermark] stap en voeg aan het [!UICONTROL DAM Update Asset] werkschema &#x200B;](assets/add_watermark_step_aem_assets.png) toe
 
    *Figuur: Sleep de [!UICONTROL Add Watermark] stap en voeg aan het [!UICONTROL DAM Update Asset] werkschema toe.*
 
@@ -41,14 +41,14 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 1. Open de stap **[!UICONTROL Add Watermark]** om de eigenschappen ervan weer te geven.
 1. Geef op het tabblad **[!UICONTROL Arguments]** geldige waarden op in de verschillende velden, zoals tekst, lettertype, grootte, kleur, positie, richting enzovoort. Klik op **[!UICONTROL Done]** om de wijzigingen te bevestigen.
 
-   ![ Geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
+   ![&#x200B; Geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
    *Cijfer: Verstrek de argumenten in toevoegen watermerkstap in [!DNL Assets].*
 
 1. Sla de **[!UICONTROL DAM Update Asset]** -workflow op met het watermerk.
 1. Upload een voorbeeldelement vanuit de gebruikersinterface van [!DNL Assets] . Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
-Om de documenten van PDF programmatically of met dynamische informatie te voorzien, denk na gebruikend ](/help/forms/using/overview-aem-document-services.md) het aanbieden van de Diensten van het Document van 0} Experience Manager.[
+Om de documenten van PDF programmatically of met dynamische informatie te voorzien, denk na gebruikend [&#128279;](/help/forms/using/overview-aem-document-services.md) het aanbieden van de Diensten van het Document van 0&rbrace; Experience Manager.
 
 ## Tips en beperkingen {#tips-limitations}
 
